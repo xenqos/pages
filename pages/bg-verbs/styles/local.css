@@ -1,0 +1,10 @@
+.clNoBorder > td
+{
+  margin:               0.000rem 0.000rem 0.000rem 0.000rem !important;
+  padding:              0.000rem 1.000rem 0.000rem 0.000rem !important;
+}
+
+.l
+{
+  text-align:           right !important;
+}
