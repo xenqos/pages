@@ -1,0 +1,79 @@
+li a,
+li a:visited
+{
+  color:        #000000 !important;
+  text-decoration:  none;
+}
+
+li a:hover
+{
+  color:        #ff0000 !important;
+  text-decoration:  none;
+}
+
+p
+{
+  text-align:      left;
+}
+
+strong
+{
+  color:        #333333;
+  font-weight:    bold;
+}
+
+b
+{
+  color:        #555555;
+  font-weight:    bold;
+}
+
+.clEn
+{
+  color:        #cc0000;
+}
+.clRu
+{
+  color:        #000088;
+}
+
+.clArticle p
+{
+  margin-bottom:    1.250em;
+}
+
+.clTitle
+{
+  color:        #333333;
+  margin:        0.000em 0.000em 0.625em 0.000em;
+  padding:      0.000em 0.000em 0.000em 0.000em;
+}
+
+.clTitleM
+{
+  color:        #333333;
+  margin:        0.625em 0.000em 0.625em 0.000em;
+  padding:      0.000em 0.000em 0.000em 0.000em;
+}
+
+
+.clExample
+{
+  background-color:  #ffffff;
+  border-left:    0.125em solid #aaaaaa;
+  margin:        0.000em 0.000em 0.000em 1.250em;
+  padding:      0.000em 0.000em 0.000em 0.625em;
+}
+
+.clRemark
+{
+  color:        #000000;
+  font-style:      italic;
+  margin:        1.000em 0.000em 0.000em 0.000em;
+  padding:      0.000em 0.000em 0.000em 0.000em;
+}
+
+.clUnderline
+{
+  border-bottom:    0.063em solid #cccccc;
+}

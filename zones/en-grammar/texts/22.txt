@@ -1,0 +1,54 @@
+## Numerals
+
+# Fractional
+
+### Simple
+
+[|
+|%[m|numerator   ]|числитель  |
+|%[m|denominator ]|знаменатель|
+|%[m|fraction bar]|черта      |
+|]
+
+[!
+если числитель > 1, то знаменатель во множественном числе
+в смешанных числах дробная часть присоединяется к целой союзом and
+!]
+
+[|
+|1/2  |%[m|one half              ]|
+|1/3  |%[m|one third             ]|
+|2/3  |%[m|two thirds            ]|
+|3/8  |%[m|three eights          ]|
+|1/12 |%[m|one-twelfth           ]|
+|1/7  |%[m|one-seventh           ]|
+|5/6  |%[m|five-sixths           ]|
+|8/10 |%[m|eight-tenths          ]|
+|15/16|%[m|fifteen sixteenths    ]|
+|1 1/2|%[m|one and a half        ]|
+|5 1/3|%[m|five and one third    ]|
+|6 1/4|%[m|six and a quarter     ]|
+|7 5/8|%[m|seven and five eighths]|
+|]
+
+[!
+Существительное в единственном числе, если дробь простая. Используется of.
+Существительное во множественном числе, если дробь смешанная.
+!]
+
+[|
+|1/4 mile    |%[m|one quarter of a mile     ]|
+|5 1/8 pounds|%[m|five and one eighth pounds]|
+|]
+
+### Decimal
+
+[|
+|0.1   |%[m|one tenth                   ]|
+|0.2   |%[m|two tenths                  ]|
+|0.6   |%[m|nought point six            ]|
+|8.2   |%[m|eight point two             ]|
+|0.75  |%[m|point seventy five          ]|
+|0.002 |%[m|point oh oh two             ]|
+|3.1416|%[m|three point one four one six]|
+|]
