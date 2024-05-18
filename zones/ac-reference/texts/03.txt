@@ -1,0 +1,114 @@
+## Cards
+
+# Hand Rankings
+
+^[hand-rankings.webp]
+
+### 01.Royal Flush
+&emsp;<q class='h'>10</q>&nbsp;<q class='h'>J</q>&nbsp;<q class='h'>Q</q>&nbsp;<q class='h'>K</q>&nbsp;<q class='h'>A</q>
+
+[|
+|Combinations|4          |
+|Odds        |1 / 649,739|
+|Probability |30,939 to 1|
+|Probability |0.000154%  |
+|]
+
+### 02.Straight Flush
+&emsp;<q class='c'>4</q>&nbsp;<q class='c'>5</q>&nbsp;<q class='c'>6</q>&nbsp;<q class='c'>7</q>&nbsp;<q class='c'>8</q>
+
+[|
+|Combinations|36          |
+|Odds        |1 / 72,192  |
+|Probability |0.00139%    |
+|Probability |3,437.8 to 1|
+|]
+
+### 03.Four Of A Kind
+&emsp;<q class='h'>10</q>&nbsp;<q class='h'>7</q>&nbsp;<q class='s'>7</q>&nbsp;<q class='d'>7</q>&nbsp;<q class='c'>7</q>
+
+[|
+|Combinations|624         |
+|Odds        |1 / 4,165   |
+|Probability |0.0240%     |
+|Probability |594 to 1    |
+|]
+
+### 04.Full House
+&emsp;<q class='h'>J</q>&nbsp;<q class='c'>J</q>&nbsp;<q class='h'>K</q>&nbsp;<q class='s'>K</q>&nbsp;<q class='d'>K</q>
+
+[|
+|Combinations|3,744       |
+|Odds        |1 / 693.17  |
+|Probability |0.1441%     |
+|Probability |37.5 to 1   |
+|]
+
+### 05.Flush
+&emsp;<q class='h'>6</q>&nbsp;<q class='h'>8</q>&nbsp;<q class='h'>Q</q>&nbsp;<q class='h'>3</q>&nbsp;<q class='h'>10</q>
+
+[|
+|Combinations|5,108       |
+|Odds        |1 / 508.8   |
+|Probability |0.1965%     |
+|Probability |32.1 to 1   |
+|]
+
+### 06.Straight
+&emsp;<q class='s'>6</q>&nbsp;<q class='h'>7</q>&nbsp;<q class='c'>8</q>&nbsp;<q class='d'>9</q>&nbsp;<q class='s'>10</q>
+
+[|
+|Combinations|10,200      |
+|Odds        |1 / 253.8   |
+|Probability |0.3925%     |
+|Probability |20.6 to 1   |
+|]
+
+### 07.Three Of A Kind
+&emsp;<q class='h'>7</q>&nbsp;<q class='c'>3</q>&nbsp;<q class='h'>K</q>&nbsp;<q class='s'>K</q>&nbsp;<q class='d'>K</q>
+
+[|
+|Combinations|54,912      |
+|Odds        |1 / 46.33   |
+|Probability |2.1128%     |
+|Probability |19.7 to 1   |
+|]
+
+### 08.Two Pair
+&emsp;<q class='h'>Q</q>&nbsp;<q class='s'>4</q>&nbsp;<q class='h'>4</q>&nbsp;<q class='c'>A</q>&nbsp;<q class='h'>A</q>
+
+[|
+|Combinations|123,552     |
+|Odds        |1 / 20.0    |
+|Probability |4.7539%     |
+|Probability |3.26 to 1   |
+|]
+
+### 09.One Pair
+&emsp;<q class='h'>6</q>&nbsp;<q class='d'>8</q>&nbsp;<q class='h'>Q</q>&nbsp;<q class='s'>5</q>&nbsp;<q class='h '>5</q>
+
+[|
+|Combinations|1,098,240   |
+|Odds        |1 / 1.366   |
+|Probability |42.2569%    |
+|Probability |1.28 to 1   |
+|]
+
+### 10.High Card
+&emsp;<q class='s'>2</q>&nbsp;<q class='c'>4</q>&nbsp;<q class='d'>8</q>&nbsp;<q class='h'>7</q>&nbsp;<q class='h'>A</q>
+
+[|
+|Combinations|1,302,540   |
+|Odds        |1 / 0.995   |
+|Probability |50.1177%    |
+|Probability |4.74 to 1   |
+|]
+
+
+---
+
+[!
+'Tie' is broken using 'Kicker'
+!]
+
+~~
