@@ -1,0 +1,26 @@
+## Game
+
+# Range Notations
+
+### Hero Any Pair
+<q class='z'>22+</q>
+&emsp;<q class='z'>22</q>, <q class='z'>33</q>, <q class='z'>44</q>, <q class='z'>55</q>, <q class='z'>66</q>, <q class='z'>77</q>, <q class='z'>88</q>, <q class='z'>99</q>,
+&emsp;<q class='z'>TT</q>, <q class='z'>JJ</q>, <q class='z'>QQ</q>, <q class='z'>KK</q>, <q class='z'>AA</q>
+
+### Hero Jacks or Better
+<q class='z'>JJ+</q>&ensp;
+&emsp;<q class='z'>JJ</q>, <q class='z'>QQ</q>, <q class='z'>KK</q>, <q class='z'>AA</q>
+
+### Hero KQ or Better
+<q class='z'>KQ+</q>
+&emsp;<q class='z'>KQ</q>, <q class='z'>AJ</q>, <q class='z'>AQ</q>, <q class='z'>AK</q>
+
+### Hero AJ suited or Better
+<q class='z'>AJs+</q>
+&emsp;<q class='z'>AJs</q>, <q class='z'>AQs</q>, <q class='z'>AKs</q>
+
+### Villain Hand Range
+<q class='z'>TT+, KJs+, AJ+</q>&ensp;:
+&emsp;<q class='z'>TT</q>, <q class='z'>JJ</q>, <q class='z'>QQ</q>, <q class='z'>KK</q>, <q class='z'>AA</q>,
+&emsp;<q class='z'>KJs</q>, <q class='z'>KQs</q>,
+&emsp;<q class='z'>AJs</q>, <q class='z'>AJ</q>, <q class='z'>AQs</q>, <q class='z'>AQ</q>, <q class='z'>AKs</q>, <q class='z'>AK</q>,
