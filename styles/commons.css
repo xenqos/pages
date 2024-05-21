@@ -280,15 +280,21 @@ h3 { color: #01478c; font-size: 1.120rem; font-weight: 600; } / * 9.21 * /
 h4 { color: #851f3f; font-size: 1.080rem; font-weight: 600; } / * 9.27 * /
 h5 { color: #104f55; font-size: 1.040rem; font-weight: 600; } / * 9.24 * /
 h6 { color: #584500; font-size: 1.000rem; font-weight: 600; } / * 9.27 * /
+
+h1 { color: #a62b2b; font-size: 1.300rem; font-weight: 600; } / * 7.00 * /
+h2 { color: #196619; font-size: 1.200rem; font-weight: 600; } / * 7.10 * /
+h3 { color: #2a55ac; font-size: 1.120rem; font-weight: 600; } / * 7.02 * /
+h4 { color: #932a93; font-size: 1.080rem; font-weight: 600; } / * 7.02 * /
+h5 { color: #186262; font-size: 1.040rem; font-weight: 600; } / * 7.09 * /
+h6 { color: #486115; font-size: 1.000rem; font-weight: 600; } / * 7.01 * /
 */
 
-h1 { color: #a62b2b; font-size: 1.300rem; font-weight: 600; } /* 7.00 */
-h2 { color: #196619; font-size: 1.200rem; font-weight: 600; } /* 7.10 */
-h3 { color: #2a55ac; font-size: 1.120rem; font-weight: 600; } /* 7.02 */
-h4 { color: #932a93; font-size: 1.080rem; font-weight: 600; } /* 7.02 */
-h5 { color: #186262; font-size: 1.040rem; font-weight: 600; } /* 7.09 */
-h6 { color: #486115; font-size: 1.000rem; font-weight: 600; } /* 7.01 */
-
+h1 { color: #b45050; font-size: 1.300rem; font-weight: 600; } /* 5.00 */
+h2 { color: #1f7f1f; font-size: 1.200rem; font-weight: 600; } /* 5.10 */
+h3 { color: #3a6bcf; font-size: 1.120rem; font-weight: 600; } /* 5.02 */
+h4 { color: #a848a8; font-size: 1.080rem; font-weight: 600; } /* 5.05 */
+h5 { color: #1e7b7b; font-size: 1.040rem; font-weight: 600; } /* 5.03 */
+h6 { color: #5a791b; font-size: 1.000rem; font-weight: 600; } /* 5.02 */
 
 /*-----------------------------------------------------------------------------------------------*/
 /* Links                                                                                         */
