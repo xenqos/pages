@@ -274,21 +274,14 @@ h1, h2, h3, h4, h5, h6
 }
 
 
-h1 { color: #C44200; font-size: 1.300rem; font-weight: 600; } /* 5.09 */
-h2 { color: #088008; font-size: 1.200rem; font-weight: 600; } /* 5.12 */
-h3 { color: #016CD7; font-size: 1.120rem; font-weight: 600; } /* 5.09 */
+h1 { color: #802b00; font-size: 1.300rem; font-weight: 600; } /* 9.28 */
+h2 { color: #045504; font-size: 1.200rem; font-weight: 600; } /* 9.11 */
+h3 { color: #01478c; font-size: 1.120rem; font-weight: 600; } /* 9.21 */
 h4 { color: #851f3f; font-size: 1.080rem; font-weight: 600; } /* 9.27 */
 h5 { color: #104f55; font-size: 1.040rem; font-weight: 600; } /* 9.24 */
 h6 { color: #584500; font-size: 1.000rem; font-weight: 600; } /* 9.27 */
 
 /*
-h1 { color: #802b00; font-size: 1.300rem; font-weight: 600; } / * 9.28 * /
-h2 { color: #045504; font-size: 1.200rem; font-weight: 600; } / * 9.11 * /
-h3 { color: #01478c; font-size: 1.120rem; font-weight: 600; } / * 9.21 * /
-h4 { color: #851f3f; font-size: 1.080rem; font-weight: 600; } / * 9.27 * /
-h5 { color: #104f55; font-size: 1.040rem; font-weight: 600; } / * 9.24 * /
-h6 { color: #584500; font-size: 1.000rem; font-weight: 600; } / * 9.27 * /
-
 h1 { color: #005E00; font-size: 1.300rem; font-weight: 600; } / * 8.07 * /
 h2 { color: #025099; font-size: 1.200rem; font-weight: 600; } / * 8.05 * /
 h3 { color: #893700; font-size: 1.120rem; font-weight: 600; } / * 8.08 * /
