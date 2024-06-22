@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Bitcoin Learning</title>
+  <link rel='stylesheet' type='text/css' media='screen' href='/styles/commons.css'>
+  <link rel="stylesheet" type="text/css" href="../styles/tipped.css">
+  <link rel="stylesheet" type="text/css" href="../styles/jquery-ui.min.css">
+  <link rel="stylesheet" type="text/css" href="../styles/tachyons.min.css">
+  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+  <script type='text/javascript' src='/scripts/commons.js'></script>
+</head>
+<body>
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='/'><span class='clNavHome'><span></a>
+    <a href='../../index.html'><span class='clNavIndex'><span></a>
+    <a href='./46.html'><span class='clNavLeft'><span></a>
+    <a href='../index.html'><span class='clNavUp'><span></a>
+    <a href='./48.html'><span class='clNavRight'><span></a>
+  </div>
+</div>
+
+<div id='idContent'>
+
+<h1>47.P2PKH</h1>
+<p class="subheading">Pay To Pubkey Hash</p>
+
+<figure class="title">
+<a target='_blank' href='../images/47.p2pkh.png'><img class='clImageThumb' src='../images/47.p2pkh.png'></a><br><br>
+
+<p>This script pattern is used to “send” someone bitcoins. It’s the most common script used for locking an output to someone’s public key.</p>
+<p class="note text">
+It is similar to <abbr title="Pay to Pubkey">P2PK</abbr>, but the lock contains the <strong>hash of a public key</strong> instead (and not the public key itself).
+</p>
+<h2>How does P2PKH work?</h2>
+<p>The P2PKH script pattern contains a <code class="publickeyhash">hashed public key</code> surrounded by these opcodes:</p>
+
+<div class='clOverflow'>
+<table class="script">
+<tr>
+<th><a target='_blank' href='../images/47.lock.png'><img class='clImageThumb' src='../images/47.lock.png'></a><br><br> scriptPubKey</th>
+<td class="hex hasaddress" data-address="12higDjoCCNXSA95xZMWUdPvXNmkAduhWv">76a91412ab8dc588ca9d5787dde7eb29569da63c3a238c88ac</td>
+<td class="opcodes hasaddress" data-address="12higDjoCCNXSA95xZMWUdPvXNmkAduhWv"><div class="inline"><code class="opcode">OP_DUP</code> <code class="opcode">OP_HASH160</code> <code class="publickeyhash">12ab8dc588ca9d5787dde7eb29569da63c3a238c</code> <code class="opcode">OP_EQUALVERIFY</code> <code class="opcode">OP_CHECKSIG</code></div></td>
+<td class="type"><abbr title="Pay To Pub Key Hash">P2PKH</abbr></td>
+</tr>
+</table>
+</div>
+
+<p>To solve this script, the owner of the hashed public key above needs to provide the <em>original</em> <code class="publickey">public key</code>, along with a valid <code class="signature">signature</code> for it:</p>
+
+<div class='clOverflow'>
+<table class="script">
+<tr>
+<th><a target='_blank' href='../images/47.key.png'><img class='clImageThumb' src='../images/47.key.png'></a><br><br> scriptSig</th>
+<td class="hex">48304502203f004eeed0cef2715643e2f25a27a28f3c578e94c7f0f6a4df104e7d163f7f8f022100b8b248c1cfd8f77a0365107a9511d759b7544d979dd152a955c867afac0ef7860141044d05240cfbd8a2786eda9dadd520c1609b8593ff8641018d57703d02ba687cf2f187f0cee2221c3afb1b5ff7888caced2423916b61444666ca1216f26181398c</td>
+<td class="opcodes"><div class="inline"><code class="signature">304502203f004eeed0cef2715643e2f25a27a28f3c578e94c7f0f6a4df104e7d163f7f8f022100b8b248c1cfd8f77a0365107a9511d759b7544d979dd152a955c867afac0ef78601</code> <code class="publickey">044d05240cfbd8a2786eda9dadd520c1609b8593ff8641018d57703d02ba687cf2f187f0cee2221c3afb1b5ff7888caced2423916b61444666ca1216f26181398c</code></div></td>
+<td class="nothing"></td>
+</tr>
+</table>
+</div>
+
+<p>In short, when this script runs:</p>
+<ul>
+<li>The original <code class="publickey">public key</code> is <code class="opcode">DUP</code>licated and then <code class="opcode">HASH160</code>’ed.</li>
+<li>This hashed value is compared with the <code class="publickeyhash">hashed public key</code> in the scriptPubKey to make sure it is <code class="opcode">EQUALVERIFY</code>.</li>
+<li>If it matches, the script continues and the <code class="opcode">CHECKSIG</code> checks the <code class="signature">signature</code> against the <code class="publickey">public key</code> (just like a P2PK script).</li>
+</ul>
+<figure class="center">
+<a target='_blank' href='../images/47.p2pkh.gif'><img class='clImageThumb' src='../images/47.p2pkh.gif'></a><br><br>
+
+<h2>Where can you find P2PKH scripts?</h2>
+<p>P2PKH is the default script used by wallets when you want to “send” someone bitcoins, so you can find it in most blocks in the blockchain.</p>
+
+<a target='_blank' href='../images/47.wallet_1address_p2pkh.png'><img class='clImageThumb' src='../images/47.wallet_1address_p2pkh.png'></a><br><br>
+<p class='clFigcaption'>Every time you send bitcoins to an <code class="address">address</code> that starts with a <code class="address"><strong>1</strong></code> you are creating a P2PKH locking script.</p>
+
+
+<p>Here are some interesting transactions that use P2PKH:</p>
+<ul>
+<li><code class="txid">6f7cf9580f1c2dfb3c4d5d043cdbb128c640e3f20161245aa7372e9666168516</code> - First P2PKH Transaction (16th January 2009)</li>
+<li><code class="txid">a1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d</code> - Pizza Transaction (10,000 BTC)</li>
+</ul>
+<h2>Why do we have P2PKH as well as P2PK? </h2>
+
+<blockquote>
+<p>If P2PK does a good job of locking up bitcoins to a public key, why do we have the more complex P2PKH script?</p>
+</blockquote>
+<p>Only Satoshi knows why we started using P2PKH, but the reason probably goes something like this…</p>
+<p><strong>Satoshi wanted a easier way for people to be able to share their public keys with each other.</strong> Satoshi knew that you could make public keys:</p>
+<ul>
+<li><strong>Safer</strong> by adding a checksum (to detect errors)</li>
+<li><strong>Shorter</strong> by converting the public key to base58</li>
+</ul>
+<p>However, the result was still pretty big:</p>
+
+<a target='_blank' href='../images/47.why_p2pkh_uncompressed_address.png'><img class='clImageThumb' src='../images/47.why_p2pkh_uncompressed_address.png'></a><br><br>
+<p class='clFigcaption'>Satoshi was possibly not aware of <em>compressed</em> public keys at the time. This meant that using public keys (and the P2PK locking script) wasn’t very convenient.</p>
+
+<p>Therefore, a solution for getting an <em>even shorter</em> result is to <em>hash</em> the public key first:</p>
+
+<a target='_blank' href='../images/47.why_p2pkh_uncompressed_hash160_address.png'><img class='clImageThumb' src='../images/47.why_p2pkh_uncompressed_hash160_address.png'></a><br><br>
+<p class='clFigcaption'>A hash function is good way to make anything shorter. Hash160 produces a 160-bit result, which is 40 characters long.</p>
+
+<p>So there we have a much <em>shorter version of our public key</em> (we call it an <code class="address">address</code>) that we can easily share with other people. Any wallet software can then take this address and decode it from base58 to get the <code class="publickeyhash">public key hash</code>, which can then be set inside a locking script.</p>
+
+<a target='_blank' href='../images/47.why_p2pkh_address_base58_decode.png'><img class='clImageThumb' src='../images/47.why_p2pkh_address_base58_decode.png'></a><br><br>
+<p class='clFigcaption'>Wallet software decodes addresses to get the <code class="publickeyhash">public key hash</code> from inside it.</p>
+
+<p>Now, the only thing we have to do to make this work is to change the locking mechanism so that we <em>lock an output to the hash of a public key</em>. Then, we provide the <em>original public key</em> we come to unlock it, and the hash of that will be checked before carrying on with the signature check as normal:</p>
+
+<a target='_blank' href='../images/47.why_p2pkh_script_additional_step.png'><img class='clImageThumb' src='../images/47.why_p2pkh_script_additional_step.png'></a><br><br>
+<p class='clFigcaption'>It executes similarly P2PK really – it just checks that the public key when hashed matches what’s in the scriptPubKey first.</p>
+
+<p>It’s a bit more complex from a programming perspective, but it does allow for the use of shorter and more convenient addresses for sending and receiving bitcoins.</p>
+<p>I think Satoshi ultimately had usability in mind for Bitcoin, and that’s why we have P2PKH.</p>
+<h3>Would we still use P2PKH if Satoshi knew about compressed public keys?</h3>
+
+
+<p>Maybe, maybe not. Good question.</p>
+<p>If you base58 encoded a compressed public key you would get an address that is <strong>51 characters</strong> long (as opposed to the <strong>34 characters</strong> you get by hashing it beforehand), so there may not have been as much as an incentive to hashing before creating an address:</p>
+
+<a target='_blank' href='../images/47.why_p2pkh_compressed_address.png'><img class='clImageThumb' src='../images/47.why_p2pkh_compressed_address.png'></a><br><br>
+<p class='clFigcaption'>51 Characters isn’t too bad for passing around.</p>
+
+<p>Nonetheless, P2PKH had become the standard for sending and receiving bitcoins by this point, so that’s why we have stuck with it.</p>
+<p><small>Still, it <em>would</em> have been simpler to have used P2PK from the start.</small></p>
+
+
+</div>
+</div>
+</body>
+</html>

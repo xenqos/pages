@@ -1,0 +1,59 @@
+# Liaison - Interdite
+
+после: vers, envers, avant, selon
+&emsp;%[m|vers elle, vers une heure, envers eux, avant elle, avant une heure]
+&emsp;&emsp;__исключения:__&ensp;%[m|avant-hier, selon eux , selon un membre du groupe]
+
+прилагательные на -rd, -rt
+&emsp;%[m|lourd homme, court enfant, fort arbre]
+&emsp;&emsp;__исключения:__&ensp;%[m|fort utile]
+
+союз et
+&emsp;%[m|nécessaire et utile , mon collègue et ami, et il s’en va]
+
+между существительным и следующим прилагательным
+&emsp;%[m|objet intéressant, palais imposant, amis américains]
+&emsp;&emsp;__исключения:__&ensp;%[m|États-Unis]
+
+между подлежащим существительным и сказуемым глаголом
+&emsp;%[m|ce cas est difficile, , nos amis arrivent, les enfants étaient là]
+
+если глагольная группа начинается с y или en
+&emsp;%[m|l’étudiant en trouve, nos voisins y travaillent]
+
+между глаголом‡ и прилагательным
+&emsp;%[m|il devient énorme, vous paraissez heureux]
+
+между глаголом‡ и инфинитивом
+&emsp;%[m|je vais acheter, il veut écrire, ils voulaient avoir]
+
+между глаголом‡ и прямым дополнением
+&emsp;%[m|je vois un train, il a écrit une longue lettre]
+
+между глаголом и наречием
+&emsp;%[m|je pars immédiatement, venez avec moi, ils arrivent à midi]
+&emsp;&emsp;__исключения:__ глаголы être  и avoir
+
+между существительным или прилагательным и et или ou
+&emsp;%[m|charmant et intelligent, le sujet ou l’objet, est il petit ou grand?]
+
+между инвертированным местоимением и следующим словом
+&emsp;прилагательным: %[m|êtes-vous heureux?, peut-être étaient-ils intelligents]
+&emsp;причастием: %[m|avez-vous entendu?, sont-ils entrés?, peut-être serions-nous invités]
+&emsp;инфинитивом: %[m|voulez-vous entrer?, vont-ils essayer?]
+&emsp;y или en + инфинитивом: %[m|voulez-vous y aller?, peut-être allons-nous en trouver]
+&emsp;прямым или непрямым объектом: %[m|voulez-vous un bonbon?, écrivez-vous à Jean?]
+&emsp;наречием: %[m|en avons-nous assez?, viennent-ils ensemble?, allez-vous à Paris?]
+
+между местоимениями nous, vous, les и следующим словом
+&emsp;%[m|laissez-les entrer, envoyez-nous une lettre, asseyez-vous ici]
+
+между числительным и названием месяца (facultative?)
+&emsp;%[m|le deux octobre, le six août, le vingt avril]
+
+между вопросительным словом и глаголом
+&emsp;%[m|quand arrivent-ils?, comment écrit-on ce mot?, combien avez-vous payé?]
+&emsp;&emsp;__исключения:__&ensp;%[m|comment allez-vous?, quand est-ce que?]
+
+между вопросительным словом и последующим словом в непрямом вопросе
+&emsp;%[m|je ne sais pas comment ils voyagent, je vais demander quand il va partir]

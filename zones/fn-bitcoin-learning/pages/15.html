@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Bitcoin Learning</title>
+  <link rel='stylesheet' type='text/css' media='screen' href='/styles/commons.css'>
+  <link rel='stylesheet' type='text/css' href='../styles/style.css'>
+  <script type='text/javascript' src='/scripts/commons.js'></script>
+</head>
+<body>
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='/'><span class='clNavHome'><span></a>
+    <a href='../../index.html'><span class='clNavIndex'><span></a>
+    <a href='./14.html'><span class='clNavLeft'><span></a>
+    <a href='../index.html'><span class='clNavUp'><span></a>
+    <a href='./16.html'><span class='clNavRight'><span></a>
+  </div>
+</div>
+
+<div id='idContent'>
+
+<h1>15.Keys &amp; Addresses</h1>
+<p class="subheading">Unique numbers used for sending and receiving batches of bitcoins.</p>
+
+<h2>What is a <em>private key</em>, a <em>public key</em>, and an <em>address</em>?</h2>
+<p>To send and receive money in bitcoin you need an “account number” and a “password”.</p>
+<p>In bitcoin we call these a <code class="publickey">public key</code> and a <code class="privatekey">private key</code>.</p>
+
+<a target='_blank' href='../images/15.01-private-public.png'><img class='clImageThumb' src='../images/15.01-private-public.png'></a><br><br>
+<p class='clFigcaption'>Here are your account details. Welcome to Bitcoin.</p>
+
+
+<p>However, this “account number” is awkwardly long <em>number</em>. So to make life easier we create a <em>condensed</em> version of this public key, and we call it our <code class="address">address</code>.</p>
+
+<a target='_blank' href='../images/15.01-private-public-address.png'><img class='clImageThumb' src='../images/15.01-private-public-address.png'></a><br><br>
+<p class='clFigcaption'>You’ll see how hideous the public key is in a moment.</p>
+
+
+<p>And that’s the role of the private key, the public key, and the address.</p>
+<aside class="summary">
+<ul>
+<li>Your <strong><code class="publickey">public key</code></strong> is your <em>account number</em>.</li>
+<li>Your <strong><code class="address">address</code></strong> is your <em>account number</em> too, but it’s a shorter version that people use when sending you bitcoins.</li>
+</ul>
+<hr>
+<ul>
+<li>Your <strong><code class="privatekey">private key</code></strong> is the <em>password</em> that prevents other people from sending bitcoins from your address.</li>
+</ul>
+</aside>
+<h2>Where do keys and addresses come from?</h2>
+<h3>Private Key</h3>
+<p>It all starts with the <code class="privatekey">private key</code>, which is just a <strong>randomly generated number</strong>:</p>
+<p><a target='_blank' href='../images/15.02-random-private.png'><img class='clImageThumb' src='../images/15.02-random-private.png'></a><br><br></p>
+<p>But because this number is so large, computers (and bitcoin) like to work with it in <em>hexadecimal format</em>:</p>
+
+<a target='_blank' href='../images/15.02-random-private-hex.png'><img class='clImageThumb' src='../images/15.02-random-private-hex.png'></a><br><br>
+<p class='clFigcaption'><span class="term">Hexadecimal</span> numbers are shorter than decimal numbers because they also use the letters a,b,c,d,e and f</p>
+
+<p>And there we have a private key… just a big random number (in hexadecimal format).</p>
+
+<div class='clOverflow'>
+<table>
+<tr>
+<th>Private Key</th>
+<td><code class="privatekey">ef235aacf90d9f4aadd8c92e4b2562e1d9eb97f0df9ba3b508258739cb013db2</code></td>
+</tr>
+</table>
+</div>
+
+<p>
+A private key can be any number between 1 and 115792089237316195423570985008687907852837564279074904382605163141518161494336.
+</p>
+
+<h3>Public Key</h3>
+<p>You use your <code class="privatekey">private key</code> to create your <code class="publickey">public key</code>.</p>
+<p>But first of all, this public is going to be seen by other people.
+Therefore, when we use the private key to create our public key, <strong>we don’t want it to be possible for anyone to figure out what our private key was</strong>.</p>
+<p>Because after all, the private key protects our bitcoins.</p>
+
+<a target='_blank' href='../images/15.03-public-private-one-way.png'><img class='clImageThumb' src='../images/15.03-public-private-one-way.png'></a><br><br>
+<p class='clFigcaption'>Even though the public key is made from the private key, we don’t want anyone to be able to work backwards from it.</p>
+
+
+<p>Fortunately we can use a special type of <strong>mathematical function</strong> to achieve this.</p>
+<p>We just shove the private key in to it (which is a number after all), and the function spits out a <span class="term">public key</span> (a new number).</p>
+<p><a target='_blank' href='../images/15.03-public-private-one-way-function.png'><img class='clImageThumb' src='../images/15.03-public-private-one-way-function.png'></a><br><br></p>
+<p>Now, there are two benefits of using this particular function:</p>
+<ol type="1">
+<li>This function returns a public key that is <strong>mathematically connected</strong> to our private key. This will come in handy when we want to send bitcoins in a transaction.</li>
+</ol>
+
+<a target='_blank' href='../images/15.03-public-private-mathematical-fit.png'><img class='clImageThumb' src='../images/15.03-public-private-mathematical-fit.png'></a><br><br>
+<p class='clFigcaption'>It’s like starting with a key and creating a padlock from it.</p>
+
+
+<ol type="1" start="2">
+<li>Even though the public key is connected to the private key, <strong>it’s not possible to figure out what the private key is from the public key</strong>. And this is why we use this particular mathematical function… because it’s a “one-way” function.</li>
+</ol>
+<p>And ta-da, thanks to our random number and this function, we now have a <em>pair of keys</em> that we can use to send and receive money in bitcoin.</p>
+
+<div class='clOverflow'>
+<table>
+<tr>
+<th>Private Key</th>
+<td><code class="privatekey">ef235aacf90d9f4aadd8c92e4b2562e1d9eb97f0df9ba3b508258739cb013db2</code></td>
+</tr>
+<tr>
+<th>Public Key</th>
+<td><code class="publickey">02b4632d08485ff1df2db55b9dafd23347d1c47a457072a1e87be26896549a8737</code></td>
+</tr>
+</table>
+</div>
+
+
+<h3>Address</h3>
+<p>Oh yeah, that public key is hideous isn’t it. Nobody is going to
+enjoy typing that out, so let’s make it more practical and call it an <code class="address">address</code>.</p>
+
+<a target='_blank' href='../images/15.04-public-address-pretty.png'><img class='clImageThumb' src='../images/15.04-public-address-pretty.png'></a><br><br>
+<p class='clFigcaption'>Thank goodness for that!</p>
+
+
+<p>All we’ve done here is compress the public key, and used a format
+that doesn’t make use of any characters that look similar to each other
+when written down (i.e.&nbsp;no “0”, “O”, “I” or “l”).</p>
+<p>So no, it still doesn’t quite roll off the tongue, but it <em>is</em> an improvement.</p>
+<p>And that’s all an address is – a shorter/easier version of the public key.</p>
+
+<div class='clOverflow'>
+<table>
+<tr>
+<th>Private Key</th>
+<td><code class="privatekey">ef235aacf90d9f4aadd8c92e4b2562e1d9eb97f0df9ba3b508258739cb013db2</code></td>
+</tr>
+<tr>
+<th>Public Key</th>
+<td><code class="publickey">02b4632d08485ff1df2db55b9dafd23347d1c47a457072a1e87be26896549a8737</code></td>
+</tr>
+<tr>
+<th>Address</th>
+<td><code class="address">1EUXSxuUVy2PC5enGXR1a3yxbEjNWMHuem</code></td>
+</tr>
+</table>
+</div>
+
+<p class="note text">
+Due to the way the public key has been compressed, it’s not possible to work out the public key from the address.
+</p>
+<h2>Do I have to remember all 3 of these keys?</h2>
+<p>Because your public key and address are worked out <em>from your private key</em>, <strong>you can get away with just saving your private key</strong>.</p>
+
+<a target='_blank' href='../images/15.05-private-source.png'><img class='clImageThumb' src='../images/15.05-private-source.png'></a><br><br>
+<p class='clFigcaption'>Remember, your public key (and address) are worked out from your private key.</p>
+
+
+<p>So if worst comes to worst, if you ever need to send your address to someone, you can just work it out from your private key.</p>
+<p class="note tip">
+In everyday life, it’s practical to keep note of your private key <em>and</em> address, because your address is what you give to people when you want to receive bitcoins.
+</p>
+<h2>What happens if I lose my private key?</h2>
+<p>Well then you’re fu <em>lly out of luck</em>.</p>
+<p><strong>It’s impossible to work out your private key from either your public key or address</strong>, so if you lose your private key, it’s lost.</p>
+<p><a target='_blank' href='../images/15.05-private-lost.png'><img class='clImageThumb' src='../images/15.05-private-lost.png'></a><br><br></p>
+<p>And if you haven’t got the private key for an address, any bitcoins located at that address will be locked there forever.</p>
+<p>How’s that for security?</p>
+<aside class="aside">
+<p>This may seem like an unforgiving system, and that’s because it is.</p>
+On the other hand, it’s refreshing to know that there are no backdoors
+to your money. There is only one key to your bitcoins, and you’re in
+charge of it.
+</aside>
+<p><a target='_blank' href='../images/15.lol-customer-support.png'><img class='clImageThumb' src='../images/15.lol-customer-support.png'></a><br><br></p>
+
+</div>
+</div>
+</body>
+</html>

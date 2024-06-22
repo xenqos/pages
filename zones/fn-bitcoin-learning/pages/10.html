@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Bitcoin Learning</title>
+  <link rel='stylesheet' type='text/css' media='screen' href='/styles/commons.css'>
+  <link rel='stylesheet' type='text/css' href='../styles/style.css'>
+  <script type='text/javascript' src='/scripts/commons.js'></script>
+</head>
+<body>
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='/'><span class='clNavHome'><span></a>
+    <a href='../../index.html'><span class='clNavIndex'><span></a>
+    <a href='./09.html'><span class='clNavLeft'><span></a>
+    <a href='../index.html'><span class='clNavUp'><span></a>
+    <a href='./11.html'><span class='clNavRight'><span></a>
+  </div>
+</div>
+
+<div id='idContent'>
+
+<h1>10.Blocks</h1>
+<p class="subheading">Collections of bitcoin transactions.</p>
+
+<h2>What is a block?</h2>
+<p class="note important">
+A block is a bunch of transactions that have been added to the blockchain.
+</p>
+<h2>How are blocks formed?</h2>
+<p>Blocks are formed by miners.</p>
+<h3>Go on…</h3>
+<p>When you make a bitcoin transaction, it isn’t added to the blockchain straight away. Instead, it is held in a <span class="term">transaction pool</span> (or <dfn>memory pool</dfn>).</p>
+
+<a target='_blank' href='../images/10.01-transaction_pool.png'><img class='clImageThumb' src='../images/10.01-transaction_pool.png'></a><br><br>
+<p class='clFigcaption'>Transaction Pool</p>
+
+
+<p>If you are a miner, your job is to gather transactions from the transaction pool in to a “candidate block”, and to <em>try</em> and add this candidate block to the blockchain.</p>
+
+<a target='_blank' href='../images/10.02-candidate_block.png'><img class='clImageThumb' src='../images/10.02-candidate_block.png'></a><br><br>
+<p class='clFigcaption'>Candidate Block</p>
+
+
+<h3>Block header</h3>
+<p>You also can give each candidate block a <span class="term">block header</span>, which is basically a bunch of <em>metadata</em> about the block.</p>
+
+<a target='_blank' href='../images/10.03-block_header.png'><img class='clImageThumb' src='../images/10.03-block_header.png'></a><br><br>
+<p class='clFigcaption'>Block Header</p>
+
+
+<p>Miners use this metadata when trying to add a block to the blockchain.</p>
+<blockquote>
+<p><strong>metadata</strong> – n.&nbsp;data that describes other data, serving as an informative label.</p>
+</blockquote>
+<aside>
+<h4>Block header fields</h4>
+<p>The details of these fields isn’t important right now, but here’s a quick run-through anyway:</p>
+<dl>
+<dt>Version</dt>
+<dd>Describes the structure of the data inside the block. This is used
+so that computers can read the contents of each block correctly.
+</dd>
+<dt>Last Block</dt>
+<dd>An identification number for the previous block. We are trying to get one of these for the current candidate block.
+</dd>
+<dt>Merkle Root</dt>
+<dd>All of the transactions inside the block hashed together to form a
+single line of text. All of the fields are unique, but it would be fair
+to think of this as the most significant part of the block header.
+</dd>
+<dt>Time</dt>
+<dd>The current time. Always handy.
+</dd>
+<dt>Target</dt>
+<dd>A value that miners work with to try and add candidate block to the
+blockchain. It is set by the bitcoin network, and will make more sense
+in a moment.
+</dd>
+</dl>
+</aside>
+<h2>How are blocks added to the blockchain?</h2>
+<p>To add a candidate block to the blockchain, you <strong>hash the data in the block header</strong> and hope that the result is <em>below a certain target value</em>.</p>
+
+<a target='_blank' href='../images/10.05-block_target.png'><img class='clImageThumb' src='../images/10.05-block_target.png'></a><br><br>
+<p class='clFigcaption'>Block Hash &amp; Target</p>
+
+
+<p>The <span class="term">target</span> is calculated from the <span class="term">difficulty</span>, which is a value set by the bitcoin network to regulate how difficult it is to add a block of transactions to the blockchain.</p>
+<p class="note important">
+Think of the <em>target</em> as the limbo pole for candidate blocks –
+the greater the difficulty, the lower the target, and the more difficult
+ it is to find a block hash that is below this value.
+</p>
+<p>Don’t worry, I know this <span class="term">difficulty</span> and <span class="term">target</span> business is a little confusing at first, but it will make more sense over time.</p>
+<dl class="definition">
+<dt>
+Difficulty
+</dt>
+<dd>
+A value set by the bitcoin network that is designed to regulate how
+quickly blocks are solved. It adjusts every 2016 blocks to try and
+create an average of 10 minutes between blocks.
+</dd>
+</dl>
+<h3>The Nonce</h3>
+<p>I lied. You don’t actually hash the block header on its own. You actually hash it with <em>an extra number</em>.</p>
+
+<a target='_blank' href='../images/10.06-block_nonce.png'><img class='clImageThumb' src='../images/10.06-block_nonce.png'></a><br><br>
+<p class='clFigcaption'>Block Nonce</p>
+
+
+<p>This number is called a nonce, and it’s basically a dummy field that miners use to help them get a block hash below the target value.</p>
+<blockquote>
+<p><strong>nonce</strong> – an arbitrary number used only once in a cryptographic communication.</p>
+</blockquote>
+<p>If the first nonce doesn’t work (starting at 0), <em>keep incrementing it and hashing the block header</em>. Eventually you’ll find a nonce that returns a block hash that is <em>less</em> than the target value.</p>
+
+<a target='_blank' href='../images/10.06-block_nonce_success.png'><img class='clImageThumb' src='../images/10.06-block_nonce_success.png'></a><br><br>
+<p class='clFigcaption'>Block Nonce Success</p>
+
+
+<p class="note text">
+I know these hash values contain letters, but you can still think of
+them as numbers like any other. They’re simply hexadecimal values, and
+computers love working with them.
+</p>
+<h3>Congratulations</h3>
+<p>Once you’ve found nonce that works, the block is “solved” and all of the transactions in this block are added to the blockchain.</p>
+
+<a target='_blank' href='../images/10.07-block_complete.png'><img class='clImageThumb' src='../images/10.07-block_complete.png'></a><br><br>
+<p class='clFigcaption'>Block Complete</p>
+
+
+<p>All miners will now head back to the transaction pool and start work
+on the next candidate block. They will use your successful block hash in
+ their next block header, and the race to add a new block of
+transactions to the blockchain starts again.</p>
+
+
+</div>
+</div>
+</body>
+</html>

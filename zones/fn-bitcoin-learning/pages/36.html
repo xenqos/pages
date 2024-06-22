@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Bitcoin Learning</title>
+  <link rel='stylesheet' type='text/css' media='screen' href='/styles/commons.css'>
+  <link rel="stylesheet" type="text/css" href="../styles/tipped.css">
+  <link rel="stylesheet" type="text/css" href="../styles/jquery-ui.min.css">
+  <link rel="stylesheet" type="text/css" href="../styles/tachyons.min.css">
+  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+  <script type='text/javascript' src='/scripts/commons.js'></script>
+</head>
+<body>
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='/'><span class='clNavHome'><span></a>
+    <a href='../../index.html'><span class='clNavIndex'><span></a>
+    <a href='./35.html'><span class='clNavLeft'><span></a>
+    <a href='../index.html'><span class='clNavUp'><span></a>
+    <a href='./37.html'><span class='clNavRight'><span></a>
+  </div>
+</div>
+
+<div id='idContent'>
+
+<h1>36.Transaction Data</h1>
+
+
+<figure class="center">
+<a target='_blank' href='../images/36.transaction-data.svg'><img class='clImageThumb' src='../images/36.transaction-data.svg'></a><br><br>
+
+<p>A bitcoin transaction is just a bunch of data that describes the movement of bitcoins.</p>
+<p>It takes in inputs, and creates new outputs.</p>
+<h2>Structure</h2>
+<pre class="wrap serialized">
+<span class="version">01000000</span><span class="inputcount">01</span><span class="input"><span class="txid">7967a5185e907a25225574544c31f7b059c1a191d65b53dcc1554d339c4f9efc</span><span class="vout">01000000</span><span class="scriptSigsize">6a</span><span class="scriptSig">47304402206a2eb16b7b92051d0fa38c133e67684ed064effada1d7f925c842da401d4f22702201f196b10e6e4b4a9fff948e5c5d71ec5da53e90529c8dbd122bff2b1d21dc8a90121039b7bcd0824b9a9164f7ba098408e63e5b7e3cf90835cceb19868f54f8961a825</span><span class="sequence">ffffffff</span></span><span class="outputcount">01</span><span class="output"><span class="value">4baf210000000000</span><span class="scriptPubKeysize">19</span><span class="scriptPubKey">76a914db4d1141d0048b1ed15839d0b7a4c488cd368b0e88ac</span></span><span class="locktime">00000000</span>
+</pre>
+<p class="small" style="text-align:right; margin-top:-20px; margin-right:28px;">
+Transaction: <code class="txid">c1b4e695098210a31fe02abffe9005cffc051bbe86ff33e173155bcbdc5821e3</code>
+</p>
+<h3>Fields</h3>
+<table class="structure">
+<thead>
+<tr class="header">
+<th>Field</th>
+<th>Data</th>
+<th>Size</th>
+<th>Description</th>
+</tr>
+</thead>
+<tr>
+<td>Version</td>
+<td><code>01000000</code> </td>
+<td>4 bytes</td>
+<td>Which version of transaction data structure we’re using.</td>
+</tr>
+<tr>
+<td>Input Count</td>
+<td><code>01</code></td>
+<td>Variable</td>
+<td>Indicates the upcoming number of inputs.</td>
+</tr>
+<tr>
+<td>Input(s)</td>
+<td colspan="3">
+<table class="input">
+<thead>
+<tr class="header">
+<th>Field</th>
+<th>Data</th>
+<th>Size</th>
+<th>Description</th>
+</tr>
+</thead>
+<tr>
+<td>TXID</td>
+<td><code>796…efc</code> </td>
+<td>32 bytes</td>
+<td>Refer to an existing transaction.</td>
+</tr>
+<tr>
+<td>VOUT</td>
+<td><code>01000000</code> </td>
+<td>4 bytes</td>
+<td>Select one of its outputs.</td>
+</tr>
+<tr>
+<td>ScriptSig Size</td>
+<td><code>6a</code></td>
+<td>Variable</td>
+<td>Indicates the upcoming size of the unlocking code.</td>
+</tr>
+<tr>
+<td>ScriptSig</td>
+<td><code>473…825</code></td>
+<td></td>
+<td>A script that unlocks the input.</td>
+</tr>
+<tr>
+<td>Sequence</td>
+<td><code>ffffffff</code> </td>
+<td>4 bytes</td>
+<td></td>
+</tr>
+
+</table></td>
+<tr>
+<td>Output Count</td>
+<td><code>01</code></td>
+<td>Variable</td>
+<td>Indicates the upcoming number of outputs.</td>
+</tr>
+<td>Output(s)</td>
+<td colspan="3">
+<table class="output">
+<thead>
+<tr class="header">
+<th>Field</th>
+<th>Data</th>
+<th>Size</th>
+<th>Description</th>
+</tr>
+</thead>
+<tr>
+<td>Value</td>
+<td><code>4baf210000000000</code> </td>
+<td>8 bytes</td>
+<td>The value of the output in satoshis.</td>
+</tr>
+<tr>
+<td>ScriptPubKey Size</td>
+<td><code>19</code></td>
+<td>Variable</td>
+<td>Indicates the upcoming size of the locking code.</td>
+</tr>
+<tr>
+<td>ScriptPubKey</td>
+<td><code>76a9…88ac</code></td>
+<td></td>
+<td>A script that locks the output.</td>
+</tr>
+
+</table></td>
+</tr>
+<tr>
+<td>Locktime</td>
+<td><code>00000000</code> </td>
+<td>4 bytes</td>
+<td>Set a minimum block height or Unix time that this transaction can be included in.</td>
+</tr>
+
+</table>
+<ul>
+<li>All of the data in a transaction is in hexadecimal.</li>
+<li>The following icon indicates that the data is in <strong>reverse byte order</strong>: </li>
+</ul>
+<h2>Diagram</h2>
+<p>A transaction is basically a <strong>series of inputs</strong> and a <strong>series of outputs</strong>.</p>
+<figure class="center">
+<a target='_blank' href='../images/36.transaction-data.gif'><img class='clImageThumb' src='../images/36.transaction-data.gif'></a><br><br>
+
+<p>In further detail; the transaction data tells you <strong>how to unlock existing packages of bitcoins</strong> (from previous transactions), and how to lock them up <em>again</em> in to new packages.</p>
+<h2>Notes</h2>
+<p class="note text">
+A raw transaction is sometimes called a “serialized transaction”, because it’s just a bunch of individual pieces of data zipped up in to one string of data.
+</p>
+<aside class="aside">
+<h3>Field Sizes</h3>
+<p>Nodes on the bitcoin network expect each field to be a certain length. This structured format allows them to run through the transaction data and figure out where each field begins and ends.</p>
+<p>That’s why even though the version number is <strong>1</strong>, it’s stored as <strong>01000000</strong> because a bitcoin node expects a field that is <em>4 bytes</em> in size.</p>
+<p class="note tip">
+If you double the number of bytes, it will give you the number of <em>characters</em> in that field.
+</p>
+<p class="note text">
+The <code>inputcount</code> (and <code>signatures</code>) and <code>outputcount</code> (and <code>lockingscripts</code>) can vary in length, which is why special VarInt fields are used to specify their upcoming sizes.
+</p>
+</aside>
+
+</div>
+</div>
+</body>
+</html>
