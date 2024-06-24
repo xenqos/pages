@@ -1,0 +1,78 @@
+## Pronomen
+
+# Indefinitiv
+
+__весь__
+
+[|
+^    ^m.        ^f.        ^n.        ^p.        ^
+|nom.|%[m|aller]|%[m|alle ]|%[m|alles]|%[m|alle ]|
+|gen.|%[m|alles]|%[m|aller]|%[m|alles]|%[m|aller]|
+|dat.|%[m|allem]|%[m|aller]|%[m|allem]|%[m|allen]|
+|akk.|%[m|allen]|%[m|alle ]|%[m|alles]|%[m|alle ]|
+|]
+
+__кто-то__
+
+[|
+^    ^m.        ^f.        ^n.        ^p.        ^
+|nom.|%[m|einer]|%[m|eine ]|%[m|eines]|%[m|eine ]|
+|gen.|%[m|eines]|%[m|einer]|%[m|eines]|%[m|einer]|
+|dat.|%[m|einem]|%[m|einer]|%[m|einem]|%[m|einen]|
+|akk.|%[m|einen]|%[m|eine ]|%[m|eines]|%[m|eine ]|
+|]
+
+__никто__
+
+[|
+^    ^m.        ^f.        ^n.        ^p.        ^
+|nom.|%[m|keiner]|%[m|keine ]|%[m|keines]|%[m|keine ]|
+|gen.|%[m|keines]|%[m|keiner]|%[m|keines]|%[m|keiner]|
+|dat.|%[m|keinem]|%[m|keiner]|%[m|keinem]|%[m|keinen]|
+|akk.|%[m|keinen]|%[m|keine ]|%[m|keines]|%[m|keine ]|
+|]
+
+__каждый__
+
+[|
+^    ^m.        ^f.        ^n.        ^
+|nom.|%[m|jeder]|%[m|jede ]|%[m|jedes]|
+|gen.|%[m|jedes]|%[m|jeder]|%[m|jedes]|
+|dat.|%[m|jedem]|%[m|jeder]|%[m|jedem]|
+|akk.|%[m|jeden]|%[m|jede ]|%[m|jedes]|
+|]
+
+__некий__
+
+[|
+^    ^m.        ^f.        ^n.        ^p.        ^
+|nom.|%[m|mancher]|%[m|manche ]|%[m|manches]|%[m|manche ]|
+|gen.|%[m|manches]|%[m|mancher]|%[m|manches]|%[m|mancher]|
+|dat.|%[m|manchem]|%[m|mancher]|%[m|manchem]|%[m|manchen]|
+|akk.|%[m|manchen]|%[m|manche ]|%[m|manches]|%[m|manche ]|
+|]
+
+[|
+|nom.|%[m|jemand  ]|%[m|niemand  ]|%[m|jedermann ]|%[m|irgendwer]|
+|gen.|%[m|jemandes]|%[m|niemandes]|%[m|jedermanns]|%[m|         ]|
+|dat.|%[m|jemandem]|%[m|niemandem]|%[m|jedermann ]|%[m|irgendwem]|
+|akk.|%[m|jemanden]|%[m|niemanden]|%[m|jedermann ]|%[m|irgendwen]|
+|]
+
+|einige      ||некоторые
+|etliche     ||некоторые
+|mehrere     ||некоторые
+|ein bisschen||небольшая доля
+|ein paar    ||несколько предметов
+|ein wenig   ||небольшую часть
+|еtwas       ||что-то
+|irgend-     ||неопределённость
+|man         ||неизвестное лицо
+|niemand     ||никто
+|nichts      ||ничто
+|sämtlich    ||весь
+|unsereiner  ||мы, «наши»
+|viel        ||много
+|viele       ||многие
+|wenig       ||мало
+|wenige      ||немногие
