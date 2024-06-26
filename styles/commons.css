@@ -933,11 +933,17 @@ span[class^=clNav]
 
 q.s, q.h, q.c, q.d, q.g, q.b, q.x, q.z
 {
+/*
+  border-radius:        4px;
+  border:               1px solid #888888;
+  padding:              0.000rem 0.400rem 0.100rem 0.400rem ;
+*/
+
   font-family:          serif;
   font-size:            1.000rem;
   font-weight:          600;
   margin:               0.000rem 0.300rem 0.000rem 0.300rem ;
-  padding:              0.000rem 0.000rem 0.000rem 0.000rem ;
+  padding:              0.000rem 0.200rem 0.000rem 0.200rem ;
   white-space:          nowrap;
 }
 
