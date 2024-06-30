@@ -1,0 +1,33 @@
+## Cards
+
+# Hand Rankings
+
+[|
+|Royal Flush|<q class='h'>10</q>&nbsp;<q class='h'>J</q>&nbsp;<q class='h'>Q</q>&nbsp;<q class='h'>K</q>&nbsp;<q class='h'>A</q>|
+|Straight Flush|<q class='c'>4</q>&nbsp;<q class='c'>5</q>&nbsp;<q class='c'>6</q>&nbsp;<q class='c'>7</q>&nbsp;<q class='c'>8</q>|
+|Four Of A Kind|<q class='h'>10</q>&nbsp;<q class='h'>7</q>&nbsp;<q class='s'>7</q>&nbsp;<q class='d'>7</q>&nbsp;<q class='c'>7</q>|
+|Full House|<q class='h'>J</q>&nbsp;<q class='c'>J</q>&nbsp;<q class='h'>K</q>&nbsp;<q class='s'>K</q>&nbsp;<q class='d'>K</q>|
+|Flush|<q class='h'>6</q>&nbsp;<q class='h'>8</q>&nbsp;<q class='h'>Q</q>&nbsp;<q class='h'>3</q>&nbsp;<q class='h'>10</q>|
+|Straight|<q class='s'>6</q>&nbsp;<q class='h'>7</q>&nbsp;<q class='c'>8</q>&nbsp;<q class='d'>9</q>&nbsp;<q class='s'>10</q>|
+|Three Of A Kind|<q class='h'>7</q>&nbsp;<q class='c'>3</q>&nbsp;<q class='h'>K</q>&nbsp;<q class='s'>K</q>&nbsp;<q class='d'>K</q>|
+|Two Pair|<q class='h'>Q</q>&nbsp;<q class='s'>4</q>&nbsp;<q class='h'>4</q>&nbsp;<q class='c'>A</q>&nbsp;<q class='h'>A</q>|
+|One Pair|<q class='h'>6</q>&nbsp;<q class='d'>8</q>&nbsp;<q class='h'>Q</q>&nbsp;<q class='s'>5</q>&nbsp;<q class='h '>5</q>|
+|High Card|<q class='s'>2</q>&nbsp;<q class='c'>4</q>&nbsp;<q class='d'>8</q>&nbsp;<q class='h'>7</q>&nbsp;<q class='h'>A</q>|
+|]
+
+### Number of Combinations
+
+[?
+Royal Flush               4 &nbsp;
+Straight Flush           36 &nbsp;
+Four Of A Kind          624 &nbsp;
+Full House            3,744 &nbsp;
+Flush                 5,108 &nbsp;
+Straight             10,200 &nbsp;
+Three Of A Kind      54,912 &nbsp;
+Two Pair            123,552 &nbsp;
+One Pair          1,098,240 &nbsp;
+High Card         1,302,540 &nbsp;
+?]
+
+^[hand-rankings.webp]

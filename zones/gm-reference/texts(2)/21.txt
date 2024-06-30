@@ -1,0 +1,18 @@
+## Preflop
+
+# Preflop Potentials
+
+### Weak Potential
+<q class='c'>A</q><q class='h'>4</q> - Ace & Weak Kicker
+<q class='d'>K</q><q class='c'>10</q> - Offsuited, Unconnected
+<q class='s'>9</q><q class='c'>6</q> - Random Numbers
+
+### Medium Potential
+<q class='c'>A</q><q class='h'>Q</q> - Ace & Medium Kicker
+<q class='d'>7</q><q class='d'>5</q> - Suited, Unconnected
+<q class='s'>J</q><q class='c'>10</q> - Medium Kickers
+
+### Good Potential
+<q class='c'>A</q><q class='h'>K</q> - Ace & Strong Kicker
+<q class='d'>9</q><q class='d'>8</q> - Suited, Connected
+<q class='s'>6</q><q class='c'>6</q> - Pairs

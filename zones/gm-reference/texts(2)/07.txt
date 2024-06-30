@@ -1,0 +1,59 @@
+## Table
+
+# Positions
+
+### Button (BTN)
+[!
+Acts as Dealer
+Shifts clockwise after each Hand
+!]
+
+### Under the Gun (UTG)
+[!
+First to act Preflop
+Has least information
+Gets maximum pressure
+Relies on Hand strength
+!]
+
+### Under the Gun + 1 (UTG+1)
+[!
+Has minimal information
+Must play relatively tight
+!]
+
+### Under the Gun + 2 (UTG+2)
+[!
+Has minimal information
+Has disadvantageous position after flop
+!]
+
+![blitzpoker|https://www.blitzpoker.com/blogs/poker-table-positions/#:~:text=The%20term%20%E2%80%9Cposition%E2%80%9D%20can,without%20investing%20additional%20chips]
+
+
+### In Position” (IP)
+[!
+Player acting last
+Gathering more information
+Enhanced calculation of odds
+Leveraging free cards
+!]
+
+### Out of Position (OOP)
+[!
+Player acting first
+!]
+
+
+<!--
+|01|Small Blind      |SB   |Early |
+|02|Big Blind        |BB   |Early |
+|03|Under the Gun    |UTG  |Early |
+|04|Under the Gun + 1|UTG+1|Early |
+|05|Under the Gun + 2|UTG+2|Middle|
+|06|Under the Gun + 3|UTG+3|Middle|
+|07|Lojack           |LJ   |Middle|
+|08|Hijack           |HJ   |Late  |
+|09|Cutoff           |CO   |Late  |
+|10|Button           |BTN  |Late  |
+-->
