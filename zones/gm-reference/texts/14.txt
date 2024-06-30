@@ -1,23 +1,16 @@
-## Odds ##
+## Game
 
-## Odds
+# Buy-In
 
-# Combinations Categories
+[!
+Initial 'Buy-In' = 20 - 200 of 'Big Blind'
+!]
 
-[-
-Pairs
-Connected Cards
-Gapped Cards
-Suited Connectors
-Suited Gapped Cards
--]
+e.g.:
 
-[-
-suited
-offsuited / unsuited
--]
-
-[-
-connected
-gapped
--]
+%[m|IF]
+&emsp; ( 'Blinds' = $0.25 / $0.50 )
+%[m|THEN]
+&emsp; 'Buy-In' =
+&emsp;  20 x $0.25 = $10
+&emsp; 200 x $0.50 = $100

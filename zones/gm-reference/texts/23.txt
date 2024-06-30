@@ -1,30 +1,17 @@
-## Miscellanea
+## Post Flop
 
-# Books
+# Play Flop
+
+[!
+71% defined at 'Flop'
+!]
 
 [|
-|  |Sklansky  |David   |1994|The Theory of Poker                                     |
-|  |Sklansky  |David   |1976|Hold’em Poker                                           |
-|x |Brunson   |Doyle   |1978|Super/System 2: A Course in Power Poker                 |
-|x |Brunson   |Doyle   |    |Super System                                            |
-|x |Harrington|Dan     |    |Harrington on Cash Games: Volume I                      |
-|x |Harrington|Dan     |    |Harrington on Cash Games: Volume II                     |
-|  |Jones     |Lee     |1994|Winning Low Limit Hold’em                               |
-|  |Malmuth   |Mason   |1993|Hold’em Poker for Advanced Players                      |
-|  |Malmuth   |Mason   |1996|Poker Essays                                            |
-|  |Caro      |Mike    |1994|The Body Language of Poker (a.k.a. The Book of Tells)   |
-|  |Hansen    |Gus     |2008|Every Hand Revealed                                     |
-|  |Gaines    |Owen    |    |Poker Math That Matters                                 |
-|  |Little    |Jonathan|    |Strategies for Beating Small Stakes Poker Cash Games    |
-|  |Sklansky  |David   |    |Small Stakes Hold ’em: Winning Big with Expert Play     |
-|  |Hardin    |ALton   |    |Essential Poker Math                                    |
-|  |Acevedo   |Michael |    |Modern Poker Theory                                     |
-|  |Janda     |Matthew |    |Applications of No-Limit Hold’em                        |
-|  |Tendler   |Jared   |    |The Mental Game of Poker                                |
-|  |Tendler   |Jared   |    |The Mental Game of Poker 2                              |
-|  |Taylor    |Ian     |    |The Poker Mindset: Essential Attitudes for Poker Success|
-|  |Brunson   |Doyle   |    |The Godfather of Poker                                  |
-|  |Sexton    |Mike    |    |Life’s A Gamble                                         |
-|  |Elwood    |Zachary |    |Reading Poker Tells                                     |
-|  |Elwood    |Zachary |    |Verbal Poker                                            |
+^Hole^Flop^Potential^Action^
+|<q class='c'>4</q><q class='d'>4</q>|<q class='c'>A</q><q class='d'>9</q><q class='s'>4</q>|Great|Bet/Raise|
+|<q class='c'>4</q><q class='d'>4</q>|<q class='c'>K</q><q class='d'>Q</q><q class='s'>7</q>|Bad|Check/Fold|
+|<q class='s'>8</q><q class='s'>7</q>|<q class='c'>T</q><q class='d'>9</q><q class='h'>6</q>|Great|Bet/Raise|
+|<q class='s'>8</q><q class='s'>7</q>|<q class='c'>K</q><q class='d'>5</q><q class='s'>6</q>|Strong Draw|Bet/Raise/Call|
+|<q class='s'>8</q><q class='s'>7</q>|<q class='s'>6</q><q class='d'>2</q><q class='s'>4</q>|Monster Draw|Bet/Raise|
+|<q class='s'>8</q><q class='s'>7</q>|<q class='c'>K</q><q class='d'>9</q><q class='h'>4</q>|Bad|Check/Fold|
 |]
