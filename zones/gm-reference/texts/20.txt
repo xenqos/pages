@@ -13,7 +13,7 @@
 |]
 
 ### Middle Pairs
-<q class='x'>J</q><q class='x'>J</q>,&emsp;<q class='x'>10</q><q class='x'>10</q>
+<q class='x'>J</q><q class='x'>J</q>,&emsp;<q class='x'>T</q><q class='x'>T</q>
 
 [|
 ^Before^Early^Middle^Late^Blinds^
@@ -45,7 +45,7 @@
 
 ### Ace - High to Middle Kicker
 
-<q class='x'>A</q><q class='x'>Q</q>, <q class='x'>A</q><q class='x'>J</q>, <q class='x'>A</q><q class='x'>10</q>
+<q class='x'>A</q><q class='x'>Q</q>, <q class='x'>A</q><q class='x'>J</q>, <q class='x'>A</q><q class='x'>T</q>
 
 [|
 ^Before^Early^Middle^Late^Blinds^
@@ -67,7 +67,7 @@
 
 ### Suited Face Cards
 
-<q class='s'>K</q><q class='s'>Q</q>, <q class='s'>K</q><q class='s'>J</q>, <q class='s'>K</q><q class='s'>10</q>, <q class='s'>Q</q><q class='s'>J</q>, <q class='s'>Q</q><q class='s'>10</q>, <q class='s'>J</q><q class='s'>10</q>
+<q class='s'>K</q><q class='s'>Q</q>, <q class='s'>K</q><q class='s'>J</q>, <q class='s'>K</q><q class='s'>T</q>, <q class='s'>Q</q><q class='s'>J</q>, <q class='s'>Q</q><q class='s'>T</q>, <q class='s'>J</q><q class='s'>T</q>
 
 [|
 ^Before^Early^Middle^Late^Blinds^
@@ -78,7 +78,7 @@
 
 ### OffSuited Face Cards
 
-<q class='x'>K</q><q class='x'>Q</q>, <q class='x'>K</q><q class='x'>J</q>, <q class='x'>K</q><q class='x'>10</q>, <q class='x'>Q</q><q class='x'>J</q>, <q class='x'>Q</q><q class='x'>10</q>, <q class='x'>J</q><q class='x'>10</q>
+<q class='x'>K</q><q class='x'>Q</q>, <q class='x'>K</q><q class='x'>J</q>, <q class='x'>K</q><q class='x'>T</q>, <q class='x'>Q</q><q class='x'>J</q>, <q class='x'>Q</q><q class='x'>T</q>, <q class='x'>J</q><q class='x'>T</q>
 
 [|
 ^Before^Early^Middle^Late^Blinds^
@@ -89,7 +89,7 @@
 
 ### Suited Cards Sequence
 
-<q class='x'>10</q><q class='x'>9</q>&nbsp;-&nbsp;<q class='x'>5</q><q class='x'>4</q>
+<q class='x'>T</q><q class='x'>9</q>&nbsp;-&nbsp;<q class='x'>5</q><q class='x'>4</q>
 
 [|
 ^Before^Early^Middle^Late^Blinds^

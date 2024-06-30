@@ -3,12 +3,12 @@
 # Hand Rankings
 
 [|
-|Royal Flush|<q class='h'>10</q>&nbsp;<q class='h'>J</q>&nbsp;<q class='h'>Q</q>&nbsp;<q class='h'>K</q>&nbsp;<q class='h'>A</q>|
+|Royal Flush|<q class='h'>T</q>&nbsp;<q class='h'>J</q>&nbsp;<q class='h'>Q</q>&nbsp;<q class='h'>K</q>&nbsp;<q class='h'>A</q>|
 |Straight Flush|<q class='c'>4</q>&nbsp;<q class='c'>5</q>&nbsp;<q class='c'>6</q>&nbsp;<q class='c'>7</q>&nbsp;<q class='c'>8</q>|
-|Four Of A Kind|<q class='h'>10</q>&nbsp;<q class='h'>7</q>&nbsp;<q class='s'>7</q>&nbsp;<q class='d'>7</q>&nbsp;<q class='c'>7</q>|
+|Four Of A Kind|<q class='h'>T</q>&nbsp;<q class='h'>7</q>&nbsp;<q class='s'>7</q>&nbsp;<q class='d'>7</q>&nbsp;<q class='c'>7</q>|
 |Full House|<q class='h'>J</q>&nbsp;<q class='c'>J</q>&nbsp;<q class='h'>K</q>&nbsp;<q class='s'>K</q>&nbsp;<q class='d'>K</q>|
-|Flush|<q class='h'>6</q>&nbsp;<q class='h'>8</q>&nbsp;<q class='h'>Q</q>&nbsp;<q class='h'>3</q>&nbsp;<q class='h'>10</q>|
-|Straight|<q class='s'>6</q>&nbsp;<q class='h'>7</q>&nbsp;<q class='c'>8</q>&nbsp;<q class='d'>9</q>&nbsp;<q class='s'>10</q>|
+|Flush|<q class='h'>6</q>&nbsp;<q class='h'>8</q>&nbsp;<q class='h'>Q</q>&nbsp;<q class='h'>3</q>&nbsp;<q class='h'>T</q>|
+|Straight|<q class='s'>6</q>&nbsp;<q class='h'>7</q>&nbsp;<q class='c'>8</q>&nbsp;<q class='d'>9</q>&nbsp;<q class='s'>T</q>|
 |Three Of A Kind|<q class='h'>7</q>&nbsp;<q class='c'>3</q>&nbsp;<q class='h'>K</q>&nbsp;<q class='s'>K</q>&nbsp;<q class='d'>K</q>|
 |Two Pair|<q class='h'>Q</q>&nbsp;<q class='s'>4</q>&nbsp;<q class='h'>4</q>&nbsp;<q class='c'>A</q>&nbsp;<q class='h'>A</q>|
 |One Pair|<q class='h'>6</q>&nbsp;<q class='d'>8</q>&nbsp;<q class='h'>Q</q>&nbsp;<q class='s'>5</q>&nbsp;<q class='h '>5</q>|
