@@ -889,7 +889,7 @@ span[class^=clNav]
   font-size:            1.125rem !important;
 }
 
-.d
+.dvn
 {
   color:                #aa0000 !important;
   font-size:            1.360rem !important;
@@ -930,7 +930,7 @@ q.s, q.h, q.c, q.d, q.g, q.b, q.x, q.z
   font-size:            0.900rem;
   font-weight:          bold;
   line-height:          0.900rem;
-  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
+  margin:               0.000rem 0.100rem 0.000rem 0.100rem;
   padding:              0.100rem 0.160rem 0.100rem 0.220rem;
   white-space:          nowrap;
   vertical-align:       top;
