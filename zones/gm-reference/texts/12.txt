@@ -3,15 +3,32 @@
 # Betting Variations
 
 [|
-|
-FL|Fixed Limit|
-PL|Pot Limit|
-NL|No Limit|
+|FL|Fixed Limit|
+|PL|Pot Limit|
+|NL|No Limit|
 |]
 
 ### Fixed Limit
+[!
 Raise Limit = Big Blind
 Increments of Big Blind
 Turn, River - Betting Amount Doubles
-e.g.: Blinds $1-$2, Betting Limits $2-4$
+e.g.: Blinds $1-$2, Betting Limits $2-$4
 Has maximum of allowable raises (bet + 3 times)
+Spreads may be used for Raise $1-$3
+!]
+
+### Pot Limit
+[!
+Maximum Raise = Size of Pot
+In $1-$2 game maximum raise - $7
+Small Blind $1 + Big Blind $2 + Call $2 + Raise $2 = $7
+Minimum Raise = Size of Previous Bet
+!]
+
+### No Limit
+[!
+Blind structure = $1-$2
+Minimum Raise = Size of Previous Bet
+Maximum = Chips in Stack
+!]
