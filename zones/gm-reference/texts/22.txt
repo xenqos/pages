@@ -1,18 +1,99 @@
 ## Preflop
 
-# Preflop Potentials
+# Play Preflop
 
-### Weak Potential
-<q class='c'>A</q><q class='h'>4</q> - Ace & Weak Kicker
-<q class='d'>K</q><q class='c'>T</q> - Offsuited, Unconnected
-<q class='s'>9</q><q class='c'>6</q> - Random Numbers
+### High Pairs
+<q class='x'>A</q><q class='x'>A</q>,&emsp;<q class='x'>K</q><q class='x'>K</q>,&emsp;<q class='x'>Q</q><q class='x'>Q</q>
 
-### Medium Potential
-<q class='c'>A</q><q class='h'>Q</q> - Ace & Medium Kicker
-<q class='d'>7</q><q class='d'>5</q> - Suited, Unconnected
-<q class='s'>J</q><q class='c'>T</q> - Medium Kickers
+[|
+^Before^Early^Middle^Late^Blinds^
+|All Fold|Raise|Raise|Raise|Raise|
+|One Call|Raise|Raise|Raise|Raise|
+|One Raise|Raise|Raise|Raise|Raise|
+|]
 
-### Good Potential
-<q class='c'>A</q><q class='h'>K</q> - Ace & Strong Kicker
-<q class='d'>9</q><q class='d'>8</q> - Suited, Connected
-<q class='s'>6</q><q class='c'>6</q> - Pairs
+### Middle Pairs
+<q class='x'>J</q><q class='x'>J</q>,&emsp;<q class='x'>T</q><q class='x'>T</q>
+
+[|
+^Before^Early^Middle^Late^Blinds^
+|All Fold|Raise|Raise|Raise|Raise|
+|One Call|Raise|Raise|Raise|Raise|
+|One Raise|Call 20|Call 20|Call 20|Call 20|
+|]
+
+### Low Pairs
+<q class='x'>9</q><q class='x'>9</q>&ensp;-&ensp;<q class='x'>2</q><q class='x'>2</q>
+
+[|
+^Before^Early^Middle^Late^Blinds^
+|All Fold|Fold|Call|Raise|Call|
+|One Call|Fold|Call|Call|Call|
+|One Raise|Call 20|Call 20|Call 20|Call 20|
+|]
+
+### Ace - High Kicker
+
+<q class='x'>A</q><q class='x'>K</q>
+
+[|
+^Before^Early^Middle^Late^Blinds^
+|All Fold|Raise|Raise|Raise|Raise|
+|One Call|Raise|Raise|Raise|Raise|
+|One Raise|Raise|Raise|Raise|Raise|
+|]
+
+### Ace - High to Middle Kicker
+
+<q class='x'>A</q><q class='x'>Q</q>, <q class='x'>A</q><q class='x'>J</q>, <q class='x'>A</q><q class='x'>T</q>
+
+[|
+^Before^Early^Middle^Late^Blinds^
+|All Fold|Fold|Raise|Raise|Raise|
+|One Call|Fold|Fold|Raise|Call|
+|One Raise|Fold|Fold|Fold|Fold|
+|]
+
+### Ace - Small Suited
+
+<q class='x'>A</q><q class='x'>9</q>&nbsp;-&nbsp;<q class='x'>A</q><q class='x'>2</q>
+
+[|
+^Before^Early^Middle^Late^Blinds^
+|All Fold|Fold|Fold|Raise|Raise|
+|One Call|Fold|Fold|Call|Call|
+|One Raise|Fold|Fold|Fold|Fold|
+|]
+
+### Suited Face Cards
+
+<q class='s'>K</q><q class='s'>Q</q>, <q class='s'>K</q><q class='s'>J</q>, <q class='s'>K</q><q class='s'>T</q>, <q class='s'>Q</q><q class='s'>J</q>, <q class='s'>Q</q><q class='s'>T</q>, <q class='s'>J</q><q class='s'>T</q>
+
+[|
+^Before^Early^Middle^Late^Blinds^
+|All Fold|Fold|Fold|Raise|Raise|
+|One Call|Fold|Call|Call|Call|
+|One Raise|Fold|Fold|Fold|Fold|
+|]
+
+### OffSuited Face Cards
+
+<q class='x'>K</q><q class='x'>Q</q>, <q class='x'>K</q><q class='x'>J</q>, <q class='x'>K</q><q class='x'>T</q>, <q class='x'>Q</q><q class='x'>J</q>, <q class='x'>Q</q><q class='x'>T</q>, <q class='x'>J</q><q class='x'>T</q>
+
+[|
+^Before^Early^Middle^Late^Blinds^
+|All Fold|Fold|Fold|Raise|Raise|
+|One Call|Fold|Fold|Fold|Call|
+|One Raise|Fold|Fold|Fold|Fold|
+|]
+
+### Suited Cards Sequence
+
+<q class='x'>T</q><q class='x'>9</q>&nbsp;-&nbsp;<q class='x'>5</q><q class='x'>4</q>
+
+[|
+^Before^Early^Middle^Late^Blinds^
+|All Fold|Fold|Fold|Raise|Fold|
+|One Call|Fold|Call|Call|Call|
+|One Raise|Fold|Fold|Fold|Fold|
+|]
