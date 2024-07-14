@@ -7,19 +7,19 @@
 ### Two Color
 
 [|
-|<q class='s'></q>|Spades  |
-|<q class='h'></q>|Hearts  |
-|<q class='c'></q>|Clubs   |
-|<q class='d'></q>|Diamonds|
+|&[s|]|Spades  |
+|&[h|]|Hearts  |
+|&[c|]|Clubs   |
+|&[d|]|Diamonds|
 |]
 
 ### Four Color
 
 [|
-|<q class='s'></q>|Spades  |
-|<q class='h'></q>|Hearts  |
-|<q class='g'></q>|Clubs   |
-|<q class='b'></q>|Diamonds|
+|&[s|]|Spades  |
+|&[h|]|Hearts  |
+|&[g|]|Clubs   |
+|&[b|]|Diamonds|
 |]
 
 [!

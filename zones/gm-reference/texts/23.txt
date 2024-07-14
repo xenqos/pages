@@ -3,7 +3,7 @@
 # Play Preflop
 
 ### High Pairs
-<q class='x'>A</q><q class='x'>A</q>,&emsp;<q class='x'>K</q><q class='x'>K</q>,&emsp;<q class='x'>Q</q><q class='x'>Q</q>
+&[x|A]&[x|A],&emsp;&[x|K]&[x|K],&emsp;&[x|Q]&[x|Q]
 
 [|
 ^Before^Early^Middle^Late^Blinds^
@@ -13,7 +13,7 @@
 |]
 
 ### Middle Pairs
-<q class='x'>J</q><q class='x'>J</q>,&emsp;<q class='x'>T</q><q class='x'>T</q>
+&[x|J]&[x|J],&emsp;&[x|T]&[x|T]
 
 [|
 ^Before^Early^Middle^Late^Blinds^
@@ -23,7 +23,7 @@
 |]
 
 ### Low Pairs
-<q class='x'>9</q><q class='x'>9</q>&ensp;-&ensp;<q class='x'>2</q><q class='x'>2</q>
+&[x|9]&[x|9]&ensp;-&ensp;&[x|2]&[x|2]
 
 [|
 ^Before^Early^Middle^Late^Blinds^
@@ -34,7 +34,7 @@
 
 ### Ace - High Kicker
 
-<q class='x'>A</q><q class='x'>K</q>
+&[x|A]&[x|K]
 
 [|
 ^Before^Early^Middle^Late^Blinds^
@@ -45,7 +45,7 @@
 
 ### Ace - High to Middle Kicker
 
-<q class='x'>A</q><q class='x'>Q</q>, <q class='x'>A</q><q class='x'>J</q>, <q class='x'>A</q><q class='x'>T</q>
+&[x|A]&[x|Q], &[x|A]&[x|J], &[x|A]&[x|T]
 
 [|
 ^Before^Early^Middle^Late^Blinds^
@@ -56,7 +56,7 @@
 
 ### Ace - Small Suited
 
-<q class='x'>A</q><q class='x'>9</q>&nbsp;-&nbsp;<q class='x'>A</q><q class='x'>2</q>
+&[x|A]&[x|9]&nbsp;-&nbsp;&[x|A]&[x|2]
 
 [|
 ^Before^Early^Middle^Late^Blinds^
@@ -67,7 +67,7 @@
 
 ### Suited Face Cards
 
-<q class='s'>K</q><q class='s'>Q</q>, <q class='s'>K</q><q class='s'>J</q>, <q class='s'>K</q><q class='s'>T</q>, <q class='s'>Q</q><q class='s'>J</q>, <q class='s'>Q</q><q class='s'>T</q>, <q class='s'>J</q><q class='s'>T</q>
+&[s|K]&[s|Q], &[s|K]&[s|J], &[s|K]&[s|T], &[s|Q]&[s|J], &[s|Q]&[s|T], &[s|J]&[s|T]
 
 [|
 ^Before^Early^Middle^Late^Blinds^
@@ -78,7 +78,7 @@
 
 ### OffSuited Face Cards
 
-<q class='x'>K</q><q class='x'>Q</q>, <q class='x'>K</q><q class='x'>J</q>, <q class='x'>K</q><q class='x'>T</q>, <q class='x'>Q</q><q class='x'>J</q>, <q class='x'>Q</q><q class='x'>T</q>, <q class='x'>J</q><q class='x'>T</q>
+&[x|K]&[x|Q], &[x|K]&[x|J], &[x|K]&[x|T], &[x|Q]&[x|J], &[x|Q]&[x|T], &[x|J]&[x|T]
 
 [|
 ^Before^Early^Middle^Late^Blinds^
@@ -89,7 +89,7 @@
 
 ### Suited Cards Sequence
 
-<q class='x'>T</q><q class='x'>9</q>&nbsp;-&nbsp;<q class='x'>5</q><q class='x'>4</q>
+&[x|T]&[x|9]&nbsp;-&nbsp;&[x|5]&[x|4]
 
 [|
 ^Before^Early^Middle^Late^Blinds^

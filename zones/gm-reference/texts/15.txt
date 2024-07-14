@@ -4,11 +4,25 @@
 
 # Outs
 
-### Outs
+[!
+Out - card that improves a hand
+!]
 
-An out is any card that can improve a player’s hand.
-For example, if a player has four cards to a flush, there are nine remaining cards of that suit in the deck.
-Therefore, the player has nine outs to complete their flush.
+### 9 Outs to Flush
+
+[|
+^Hole^Board^Outs^
+|&[d|A]&[d|8]|&[d|2]&[c|3]&[d|4]|&[d|K]&[d|Q]&[d|J]&[d|T]&[d|9]&[d|7]&[d|6]&[d|5]&[d|3]|
+|]
+
+
+### 2 Outs to Straight
+
+[|
+^Hole^Board^Outs^
+|&[d|T]&[s|8]|&[h|7]&[c|3]&[d|9]|&[h|J]&[c|6]|
+|]
+
 
 ### Probability /вероятность/
 [!
