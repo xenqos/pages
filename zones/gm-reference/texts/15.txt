@@ -8,6 +8,12 @@
 Out - a card that improves a hand
 !]
 
+## Terms
+
+
+
+
+
 ### 9 Outs to Flush
 
 [|
@@ -23,6 +29,13 @@ Out - a card that improves a hand
 |]
 
 ### 4 Outs to Full House
+
+[|
+^Hole^Board^Outs^
+|&[c|7]&[c|6]|&[s|6]&[d|7]&[h|A]|&[s|7]&[h|7]&[h|6]&[d|6]|
+|]
+
+### 4 Outs to Inside Straight
 
 [|
 ^Hole^Board^Outs^
