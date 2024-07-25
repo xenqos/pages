@@ -1,84 +1,76 @@
-## Pronomen
+## Местоимение ##
 
-# Possessiv
+## Личные
+
+# Личные
 
 [|
-|%[m|das Pronomen]|pronoun|
+|%[m|ich]|я|
+|%[m|du]|ты|
+|%[m|er], %[m|sie], %[m|es], |он, она, оно|
+|%[m|wir]|мы|
+|%[m|ihr]|вы|
+|%[m|sie]|они|
+|]
+
+### Склонение
+
+##### Единственное число
+
+[|
+|nom.|%[m|ich   ]|я   |
+|gen.|%[m|meiner]|меня|
+|dat.|%[m|mir   ]|мне |
+|akk.|%[m|mich  ]|меня|
 |]
 
 [|
-^    ^s.^p.^
-|1   |%[m|mein]|%[m|unser]|
-|2   |%[m|dein ]|%[m|euer]|
-|3&emsp;m.|%[m|sein ]|%[m|ihr]|
-|3&emsp;f.|%[m|ihr  ]|%[m|ihr]|
-|3&emsp;n.|%[m|sein ]|%[m|ihr]|
-|3&emsp;h.|%[m|   ]|%[m|Ihr]|
+|nom.|%[m|du    ]|ты  |
+|gen.|%[m|deiner]|тебя|
+|dat.|%[m|dir   ]|тебе|
+|akk.|%[m|dich  ]|тебя|
 |]
 
-### Deklination
+[|
+|nom.|%[m|er    ]|он |
+|gen.|%[m|seiner]|его|
+|dat.|%[m|ihm   ]|ему|
+|akk.|%[m|ihn   ]|его|
+|]
 
-##### mein
 [|
-^    ^m.         ^f.         ^n.         ^p.         ^
-|nom.|%[m|mein  ]|%[m|meine ]|%[m|mein ] |%[m|meine ]|
-|gen.|%[m|meines]|%[m|meiner]|%[m|meines]|%[m|meiner]|
-|dat.|%[m|meinem]|%[m|meiner]|%[m|meinem]|%[m|meinen]|
-|akk.|%[m|meinen]|%[m|meine ]|%[m|mein  ]|%[m|meine ]|
-|] ~~
-##### dein
+|nom.|%[m|sie  ]|она |
+|gen.|%[m|ihrer]|её|
+|dat.|%[m|ihr  ]|ей|
+|akk.|%[m|sie  ]|её|
+|]
+
 [|
-^    ^m.         ^f.         ^n.         ^p.         ^
-|nom.|%[m|dein  ]|%[m|deine ]|%[m|dein ] |%[m|deine ]|
-|gen.|%[m|deines]|%[m|deiner]|%[m|deines]|%[m|deiner]|
-|dat.|%[m|deinem]|%[m|deiner]|%[m|deinem]|%[m|deinen]|
-|akk.|%[m|deinen]|%[m|deine ]|%[m|dein  ]|%[m|deine ]|
-|] ~~
-##### sein %[dm|]
+|nom.|%[m|es    ]|оно|
+|gen.|%[m|seiner]|его|
+|dat.|%[m|ihm   ]|ему|
+|akk.|%[m|es    ]|его|
+|]
+
+##### Множественное число
+
 [|
-^    ^m.         ^f.         ^n.         ^p.         ^
-|nom.|%[m|sein  ]|%[m|seine ]|%[m|sein ] |%[m|seine ]|
-|gen.|%[m|seines]|%[m|seiner]|%[m|seines]|%[m|seiner]|
-|dat.|%[m|seinem]|%[m|seiner]|%[m|seinem]|%[m|seinen]|
-|akk.|%[m|seinen]|%[m|seine ]|%[m|sein  ]|%[m|seine ]|
-|] ~~
-##### ihr %[df|]
+|nom.|%[m|wir  ]|мы |
+|gen.|%[m|unser]|нас|
+|dat.|%[m|uns  ]|нам|
+|akk.|%[m|uns  ]|нас|
+|]
+
 [|
-^    ^m.        ^f.        ^n.        ^p.        ^
-|nom.|%[m|ihr  ]|%[m|ihre ]|%[m|ihr  ]|%[m|ihre ]|
-|gen.|%[m|ihres]|%[m|ihrer]|%[m|ihres]|%[m|ihrer]|
-|dat.|%[m|ihrem]|%[m|ihrer]|%[m|ihrem]|%[m|ihren]|
-|akk.|%[m|ihren]|%[m|ihre ]|%[m|ihr  ]|%[m|ihre ]|
-|] ~~
-##### sein %[dn|]
+|nom.|%[m|ihr ]|вы |
+|gen.|%[m|euer]|вас|
+|dat.|%[m|euch]|вам|
+|akk.|%[m|euch]|вас|
+|]
+
 [|
-^    ^m.         ^f.         ^n.         ^p.         ^
-|nom.|%[m|sein  ]|%[m|seine] |%[m|sein  ]|%[m|seine ]|
-|akk.|%[m|seines]|%[m|seiner]|%[m|seines]|%[m|seiner]|
-|dat.|%[m|seinem]|%[m|seiner]|%[m|seinem]|%[m|seinen]|
-|gen.|%[m|seinen]|%[m|seine] |%[m|sein  ]|%[m|seine ]|
-|] ~~
-##### unser
-[|
-^    ^m.            ^f.            ^n.            ^p.            ^
-|nom.|%[m|unser    ]|%[m|uns(e)re ]|%[m|unser    ]|%[m|uns(e)re ]|
-|gen.|%[m|uns(e)res]|%[m|uns(e)rer]|%[m|uns(e)res]|%[m|uns(e)rer]|
-|dat.|%[m|uns(e)rem]|%[m|uns(e)rer]|%[m|uns(e)rem]|%[m|uns(e)ren]|
-|akk.|%[m|uns(e)ren]|%[m|uns(e)re ]|%[m|unser    ]|%[m|uns(e)re ]|
-|] ~~
-##### euer
-[|
-^    ^m.           ^f.           ^n.           ^p.           ^
-|nom.|%[m|euer    ]|%[m|eu(e)re ]|%[m|euer    ]|%[m|eu(e)re ]|
-|gen.|%[m|eu(e)res]|%[m|eu(e)rer]|%[m|eu(e)res]|%[m|eu(e)rer]|
-|dat.|%[m|eu(e)rem]|%[m|eu(e)rer]|%[m|eu(e)rem]|%[m|eu(e)ren]|
-|akk.|%[m|eu(e)ren]|%[m|eu(e)re ]|%[m|euer    ]|%[m|eu(e)re ]|
-|] ~~
-##### ihr
-[|
-^    ^m.        ^f.        ^n.        ^p.        ^
-|nom.|%[m|ihr  ]|%[m|ihre ]|%[m|ihr  ]|%[m|ihre ]|
-|gen.|%[m|ihres]|%[m|ihrer]|%[m|ihres]|%[m|ihrer]|
-|dat.|%[m|ihrem]|%[m|ihrer]|%[m|ihrem]|%[m|ihren]|
-|akk.|%[m|ihren]|%[m|ihre ]|%[m|ihr  ]|%[m|ihre ]|
+|nom.|%[m|sie  ]|они|
+|gen.|%[m|ihrer]|их |
+|dat.|%[m|ihnen]|им |
+|akk.|%[m|sie  ]|их |
 |]

@@ -18,96 +18,57 @@
   <script type='text/javascript' src='../scripts/local.js'></script>
 </head>
 <body onload='fncGetDivState(); fncGetScrollPosition();'>
-
+<audio id='idTrack' src='../sounds/01.mp3' preload='auto'></audio>
 <div id='idPanel'>
 <div id='idTopbar'>
   <div id='idTopbarNavigation'>
     <a href='../../../index.html'><span class='clNavHome'></span></a>
-    <a href='34.html'><span class='clNavLeft'></span></a>
+    <a href='35.html'><span class='clNavLeft'></span></a>
     <a href='../index.html'><span class='clNavUp'></span></a>
     <a href='02.html'><span class='clNavRight'></span></a>
-
+<span class='clNavRewind' onclick='fncRewindTrack(&quot;idTrack&quot;)'></span><span class='clNavPlay' onclick='fncPlayTrack(&quot;idTrack&quot;)'></span>
   </div>
 </div>
 <div id='idContent'>
 
-<h1>Термины</h1>
 
+<h2>Фонетика</h2>
+
+<h1>Гласные</h1>
+
+<h3>Монофтонги</h3>
+<img src='../images/../images/monophthonges.webp'>
 <div class='clOverflow'>
 <table>
 <tr>
-<td><span class='m'>das Fachwort</span>    </td><td>термин         </td></tr>
-<tr><td><span class='m'>der Grammatik</span>   </td><td>грамматика     </td></tr>
-<tr><td><span class='m'>die Orthographie</span></td><td>орфография     </td></tr>
-<tr><td><span class='m'>das Satzzeichen</span> </td><td>знак препинания</td></tr>
-<tr><td><span class='m'>das Alphabet</span>    </td><td>алфавит        </td></tr>
-<tr><td><span class='m'>das Wort</span>        </td><td>слово          </td></tr>
-<tr><td><span class='m'>der Buchstabe</span>   </td><td>буква          </td></tr>
+<td><span class='l'>a </span></td><td><span class='m'>Kamm   </span></td></tr>
+<tr><td><span class='l'>aː</span></td><td><span class='m'>kam    </span></td></tr>
+<tr><td><span class='l'>ɛ </span></td><td><span class='m'>Stelle </span></td></tr>
+<tr><td><span class='l'>ə </span></td><td><span class='m'>bitte  </span></td></tr>
+<tr><td><span class='l'>ɛː</span></td><td><span class='m'>Käse   </span></td></tr>
+<tr><td><span class='l'>eː</span></td><td><span class='m'>stehlen</span></td></tr>
+<tr><td><span class='l'>ɪ </span></td><td><span class='m'>Mitte  </span></td></tr>
+<tr><td><span class='l'>iː</span></td><td><span class='m'>Mieter </span></td></tr>
+<tr><td><span class='l'>ɔ⁠ </span></td><td><span class='m'>offen  </span></td></tr>
+<tr><td><span class='l'>oː</span></td><td><span class='m'>Ofen   </span></td></tr>
+<tr><td><span class='l'>œ⁠ </span></td><td><span class='m'>Hölle  </span></td></tr>
+<tr><td><span class='l'>øː</span></td><td><span class='m'>Höhle  </span></td></tr>
+<tr><td><span class='l'>ʊ </span></td><td><span class='m'>Mutter </span></td></tr>
+<tr><td><span class='l'>uː</span></td><td><span class='m'>Mut    </span></td></tr>
+<tr><td><span class='l'>ʏ </span></td><td><span class='m'>Müller </span></td></tr>
+<tr><td><span class='l'>yː</span></td><td><span class='m'>Mühle  </span></td></tr>
 </table>
 </div>
 
 
+<h3>Дифтонги</h3>
+<img src='../images/../images/diphthonges.webp'>
 <div class='clOverflow'>
 <table>
 <tr>
-<td><span class='m'>das Genus</span>     </td><td>род</td></tr>
-<tr><td><span class='m'>das Geschlecht</span></td><td>пол</td></tr>
-</table>
-</div>
-
-
-<div class='clOverflow'>
-<table>
-<tr>
-<td>m.</td><td><span class='m'>maskulin</span></td><td><span class='m'>das Maskulinum</span></td><td>мужской</td></tr>
-<tr><td>f.</td><td><span class='m'>feminin </span></td><td><span class='m'>das Femininum</span> </td><td>женский</td></tr>
-<tr><td>n.</td><td><span class='m'>neutral </span></td><td><span class='m'>das Neutrum</span>   </td><td>средний</td></tr>
-</table>
-</div>
-
-
-<div class='clOverflow'>
-<table>
-<tr>
-<td>  </td><td><span class='m'>der Numerus</span>    </td><td>число        </td></tr>
-</table>
-</div>
-
-
-<div class='clOverflow'>
-<table>
-<tr>
-<td>s.</td><td><span class='m'>der Singular</span>   </td><td>единственное </td></tr>
-<tr><td>p.</td><td><span class='m'>der Plural</span>     </td><td>множественное</td></tr>
-</table>
-</div>
-
-
-<div class='clOverflow'>
-<table>
-<tr>
-<td><span class='m'>der Kasus</span></td><td>падеж</td></tr>
-<tr><td><span class='m'>der Fall</span> </td><td>падеж</td></tr>
-</table>
-</div>
-
-
-<div class='clOverflow'>
-<table>
-<tr>
-<td>nom.</td><td><span class='m'>der Nominativ</span></td><td>именительный</td></tr>
-<tr><td>gen.</td><td><span class='m'>der Genitiv  </span></td><td>родительный </td></tr>
-<tr><td>dat.</td><td><span class='m'>der Dativ    </span></td><td>дательный   </td></tr>
-<tr><td>acc.</td><td><span class='m'>der Akkusativ</span></td><td>винительный </td></tr>
-</table>
-</div>
-
-
-<div class='clOverflow'>
-<table>
-<tr>
-<td><span class='m'>bestimmte  </span></td><td>definite  </td><td>определённый  </td></tr>
-<tr><td><span class='m'>unbestimmte</span></td><td>indefinite</td><td>неопределённый</td></tr>
+<td><span class='l'>aʊ</span></td><td><span class='m'>Haus   </span></td></tr>
+<tr><td><span class='l'>aɪ̯</span></td><td><span class='m'>Heim   </span></td></tr>
+<tr><td><span class='l'>ɔɪ̯</span></td><td><span class='m'>Eule   </span></td></tr>
 </table>
 </div>
 
