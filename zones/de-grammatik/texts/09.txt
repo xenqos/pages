@@ -1,6 +1,6 @@
-## Substantive
+## Существительные
 
-# Typ II schwache Deklination
+# Typ II - слабое склонение
 
 [|
 |nom.|-%[m|]|
@@ -10,15 +10,8 @@
 |]
 
 [|
-|nom.|%[m|der Held]       |
-|gen.|%[m|des Held]%[b|en]|
-|dat.|%[m|dem Held]%[b|en]|
-|akk.|%[m|den Held]%[b|en]|
-|]
-
-[|
-|nom.|%[m|der Herr]      |
-|gen.|%[m|des Herr]%[b|n]|
-|dat.|%[m|dem Herr]%[b|n]|
-|akk.|%[m|den Herr]%[b|n]|
+|nom.|%[m|der Held]       |%[m|der Herr]      |
+|gen.|%[m|des Held]%[b|en]|%[m|des Herr]%[b|n]|
+|dat.|%[m|dem Held]%[b|en]|%[m|dem Herr]%[b|n]|
+|akk.|%[m|den Held]%[b|en]|%[m|den Herr]%[b|n]|
 |]

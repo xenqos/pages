@@ -1,46 +1,83 @@
-## Zahlwort
+## Числительные ##
 
-# Ordinalzahlen
+## Числительные
+
+# Количественные
 
 [|
-|1st |%[m|erste  ]|
-|2nd |%[m|zweite ]|
-|3rd |%[m|dritte ]|
-|4th |%[m|vierte ]|
-|5th |%[m|fünfte ]|
-|6th |%[m|sechste]|
-|7th |%[m|siebte ]|
-|8th |%[m|achte  ]|
-|9th |%[m|neunte ]|
-|10th|%[m|zehnte ]|
+|0 |%[m|null  ]|
+|1 |%[m|eins  ]|
+|2 |%[m|zwei  ]|
+|3 |%[m|drei  ]|
+|4 |%[m|vier  ]|
+|5 |%[m|fünf  ]|
+|6 |%[m|sechs ]|
+|7 |%[m|sieben]|
+|8 |%[m|acht  ]|
+|9 |%[m|neun  ]|
+|10|%[m|zehn  ]|
 |]
 
 [|
-|11th|%[m|elfte     ]|
-|12th|%[m|zwölfte   ]|
-|13th|%[m|dreizehnte]|
-|14th|%[m|vierzehnte]|
-|15th|%[m|fünfzehnte]|
-|16th|%[m|sechzehnte]|
-|17th|%[m|siebzehnte]|
-|18th|%[m|achtzehnte]|
-|19th|%[m|neunzehnte]|
+|11|%[m|elf     ]|
+|12|%[m|zwölf   ]|
+|13|%[m|dreizehn]|
+|14|%[m|vierzehn]|
+|15|%[m|fünfzehn]|
+|16|%[m|sechzehn]|
+|17|%[m|siebzehn]|
+|18|%[m|achtzehn]|
+|19|%[m|neunzehn]|
 |]
 
 [|
-|20th|%[m|zwanzigste]|
-|30th|%[m|dreißigste]|
-|40th|%[m|vierzigste]|
-|50th|%[m|fünfzigste]|
-|60th|%[m|sechzigste]|
-|70th|%[m|siebzigste]|
-|80th|%[m|achtzigste]|
-|90th|%[m|neunzigste]|
+|21|%[m|einundzwanzig   ]|
+|22|%[m|zweiundzwanzig  ]|
+|23|%[m|dreiundzwanzig  ]|
+|24|%[m|vierundzwanzig  ]|
+|25|%[m|fünfundzwanzig  ]|
+|26|%[m|sechsundzwanzig ]|
+|27|%[m|siebenundzwanzig]|
+|28|%[m|achtundzwanzig  ]|
+|29|%[m|neunundzwanzig  ]|
 |]
 
 [|
-|100th          |%[m|hundertste ]|
-|1,000th        |%[m|tausendste ]|
-|1,000,000th    |%[m|millionste ]|
-|1,000,000,000th|%[m|milliardste]|
+|20|%[m|zwanzig]|
+|30|%[m|dreißig]|
+|40|%[m|vierzig]|
+|50|%[m|fünfzig]|
+|60|%[m|sechzig]|
+|70|%[m|siebzig]|
+|80|%[m|achtzig]|
+|90|%[m|neunzig]|
+|]
+
+[|
+|100|%[m|einhundert   ]|
+|200|%[m|zweihundert  ]|
+|300|%[m|dreihundert  ]|
+|400|%[m|vierhundert  ]|
+|500|%[m|fünfhundert  ]|
+|600|%[m|sechshundert ]|
+|700|%[m|siebenhundert]|
+|800|%[m|achthundert  ]|
+|900|%[m|neunhundert  ]|
+|]
+
+[|
+|1,000|%[m|eintausend   ]|
+|2,000|%[m|zweitausend  ]|
+|3,000|%[m|dreitausend  ]|
+|4,000|%[m|viertausend  ]|
+|5,000|%[m|fünftausend  ]|
+|6,000|%[m|sechstausend ]|
+|7,000|%[m|siebentausend]|
+|8,000|%[m|achttausend  ]|
+|9,000|%[m|neuntausend  ]|
+|]
+
+[|
+|1,000,000    |%[m|eine Million  ]|
+|1,000,000,000|%[m|eine Milliarde]|
 |]

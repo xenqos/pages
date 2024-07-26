@@ -1,76 +1,28 @@
-## Местоимение ##
+## Местоимения ##
 
 ## Личные
 
 # Личные
 
 [|
-|%[m|ich]|я|
-|%[m|du]|ты|
-|%[m|er], %[m|sie], %[m|es], |он, она, оно|
-|%[m|wir]|мы|
-|%[m|ihr]|вы|
-|%[m|sie]|они|
-|]
-
-### Склонение
-
-##### Единственное число
-
-[|
-|nom.|%[m|ich   ]|я   |
-|gen.|%[m|meiner]|меня|
-|dat.|%[m|mir   ]|мне |
-|akk.|%[m|mich  ]|меня|
+^^s.^p.^
+|1|%[m|ich]|%[m|wir]|
+|2|%[m|du]|%[m|ihr]|
+|3|%[m|er], %[m|sie], %[m|es]|%[m|sie]|
 |]
 
 [|
-|nom.|%[m|du    ]|ты  |
-|gen.|%[m|deiner]|тебя|
-|dat.|%[m|dir   ]|тебе|
-|akk.|%[m|dich  ]|тебя|
+^^1^2^3^3^3^
+|nom.|%[m|ich   ]|%[m|du    ]|%[m|er    ]|%[m|sie  ]|%[m|es    ]|
+|gen.|%[m|meiner]|%[m|deiner]|%[m|seiner]|%[m|ihrer]|%[m|seiner]|
+|dat.|%[m|mir   ]|%[m|dir   ]|%[m|ihm   ]|%[m|ihr  ]|%[m|ihm   ]|
+|akk.|%[m|mich  ]|%[m|dich  ]|%[m|ihn   ]|%[m|sie  ]|%[m|es    ]|
 |]
 
 [|
-|nom.|%[m|er    ]|он |
-|gen.|%[m|seiner]|его|
-|dat.|%[m|ihm   ]|ему|
-|akk.|%[m|ihn   ]|его|
-|]
-
-[|
-|nom.|%[m|sie  ]|она |
-|gen.|%[m|ihrer]|её|
-|dat.|%[m|ihr  ]|ей|
-|akk.|%[m|sie  ]|её|
-|]
-
-[|
-|nom.|%[m|es    ]|оно|
-|gen.|%[m|seiner]|его|
-|dat.|%[m|ihm   ]|ему|
-|akk.|%[m|es    ]|его|
-|]
-
-##### Множественное число
-
-[|
-|nom.|%[m|wir  ]|мы |
-|gen.|%[m|unser]|нас|
-|dat.|%[m|uns  ]|нам|
-|akk.|%[m|uns  ]|нас|
-|]
-
-[|
-|nom.|%[m|ihr ]|вы |
-|gen.|%[m|euer]|вас|
-|dat.|%[m|euch]|вам|
-|akk.|%[m|euch]|вас|
-|]
-
-[|
-|nom.|%[m|sie  ]|они|
-|gen.|%[m|ihrer]|их |
-|dat.|%[m|ihnen]|им |
-|akk.|%[m|sie  ]|их |
+^^1^2^3^
+|nom.|%[m|wir  ]|%[m|ihr ]|%[m|sie  ]|
+|gen.|%[m|unser]|%[m|euer]|%[m|ihrer]|
+|dat.|%[m|uns  ]|%[m|euch]|%[m|ihnen]|
+|akk.|%[m|uns  ]|%[m|euch]|%[m|sie  ]|
 |]
