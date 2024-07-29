@@ -1,100 +1,110 @@
 ## Глаголы
 
-# Наклонение
+# Глагольные приставки
 
-[|
-|%[m|der Indikativ ]   |die Wirklichkeitsform|Изъявительное    |
-|%[m|der Konjunktiv I] |die Möglichkeitsform |Сослагательное I |
-|%[m|der Konjunktiv II]|die Möglichkeitsform |Сослагательное II|
-|%[m|der Imperativ ]   |die Befehlsform      |Повелительное    |
-|]
+|ab-|движение от~~отделение~~завершение|
+&emsp;%[m|abfahren] уезжать
+&emsp;%[m|abgeben] отдавать
+&emsp;%[m|abschließen] закрывать
+&emsp;%[m|absagen] отменять
 
-### Indikativ
-&emsp;%[m|das Präsens]
-&emsp;%[m|das Präteritum]
-&emsp;%[m|das Perfekt]
-&emsp;%[m|das Plusquamperfekt]
-&emsp;%[m|das Futur I]
-&emsp;%[m|das Futur II]
+|an-|движение к~~присоединение~~нахождение|
+&emsp;%[m|ankommen] приходить
+&emsp;%[m|anschließen] подключать
+&emsp;%[m|anfangen] начинать
+&emsp;%[m|anwesend sein] присутствовать
 
-### Konjunktiv I
-&emsp;%[m|Präsens]
-&emsp;%[m|Perfekt]
-&emsp;%[m|Futur I]
-&emsp;%[m|Futur II]
+|auf-|движение вверх~~увеличение~~открытие|
+&emsp;%[m|aufstehen] вставать
+&emsp;%[m|aufmachen] открывать
+&emsp;%[m|aufladen] заряжать
+&emsp;%[m|aufpassen] внимать
 
-### Konjunktiv II
-&emsp;%[m|Präteritum]
-&emsp;%[m|Plusquamperfekt]
+|aus-|движение из~~отделение~~завершение|
+&emsp;%[m|ausgehen] выходить
+&emsp;%[m|ausziehen] снимать
+&emsp;%[m|ausschalten] выключать
+&emsp;%[m|ausfüllen] заполнять
 
-### Imperativ
-&emsp;%[m|Präsens]
+|durch-|движение через~~завершение~~проникновение|
+&emsp;%[m|durchgehen] проходить
+&emsp;%[m|durchlesen] читать
+&emsp;%[m|durchdringen] проникать
+&emsp;%[m|durchschauen] понимать
 
-<!--
-# Bedeutung
+|ein-|движение в~~включение~~начало|
+&emsp;%[m|einkommen] входить
+&emsp;%[m|einschalten] включать
+&emsp;%[m|eintragen] записывать
+&emsp;%[m|einsteigen] садиться
 
-### Indikativ
-__Statements of fact, questions, and open conditions.__
+|er-|отделение~~достижение~~изменение|
+&emsp;%[m|erreichen] достигать
+&emsp;%[m|erhalten] получать
+&emsp;%[m|erklären] объяснять
+&emsp;%[m|erschließen] открывать
 
-### Konjunktiv I
-__нереальность, возможность, желание, побуждение, предположение, сомнение, косвенная речь__
+|fort-|движение от~~удаление~~продолжение|
+&emsp;%[m|fortgehen] уходить
+&emsp;%[m|fortfahren] продолжать
+&emsp;%[m|fortsetzen] продлевать
+&emsp;%[m|fortschicken] отправлять
 
-### Konjunktiv II
-__возможное действие в настоящем, будущем, прошлом__
+|gegen-|противопоставление~~движение навстречу~~замена|
+&emsp;%[m|gegenüberstehen] противостоять
+&emsp;%[m|gegenhalten] держать против
+&emsp;%[m|gegensagen] возражать
+&emsp;%[m|gegentauschen] менять
 
-### Partizip
-__Adjective or to form adverbial clauses.__
-%[m|Präsens]
+|her-|движение сюда~~приближение~~принесение|
+&emsp;%[m|herkommen] приходить
+&emsp;%[m|herbringen] приносить
+&emsp;%[m|herstellen] производить
+&emsp;%[m|hervorheben] подчеркивать
 
-__To form perfect tenses and passive voice.__
-%[m|Perfekt]
+|hin-|движение туда~~удаление~~направление|
+&emsp;%[m|hingehen] идти
+&emsp;%[m|hinschreiben] писать
+&emsp;%[m|hinzufügen] добавлять
+&emsp;%[m|hinweisen] указывать
 
-### Imperativ
-__Expressing commands or requests.__
-%[m|Präsens]
+|mit-|совместное действие~~сопровождение~~инструмент|
+&emsp;%[m|mitmachen] участвовать
+&emsp;%[m|mitgehen] идти с
+&emsp;%[m|mitbringen] приносить
+&emsp;%[m|mitteilen] сообщать
 
-### Infinitiv
-__To express purpose, reason, or action without tense or person.__
-%[m|Perfekt]
-%[m|zu + Infinitiv]
+|nach-|движение за~~следование~~повторение|
+&emsp;%[m|nachkommen] следовать
+&emsp;%[m|nachmachen] повторять
+&emsp;%[m|nachdenken] размышлять
+&emsp;%[m|nachsehen] проверять
 
-### Genus Verbi
-%[m|Aktiv]
-%[m|Passiv]
+|nieder-|движение вниз~~падение~~размещение|
+&emsp;%[m|niedergehen] опускаться
+&emsp;%[m|niederschreiben] записывать
+&emsp;%[m|niederlegen] класть
+&emsp;%[m|niederknien] вставать на колени
 
--->
+|um-|движение вокруг~~изменение~~окружение|
+&emsp;%[m|umgehen] ходить вокруг
+&emsp;%[m|umsteigen] пересаживаться
+&emsp;%[m|umstellen] переставлять
+&emsp;%[m|umbauen] перестраивать
 
+|unter-|движение под~~размещение~~подчинение|
+&emsp;%[m|untergehen] заходить
+&emsp;%[m|unterschreiben] подписывать
+&emsp;%[m|unterteilen] разделять
+&emsp;%[m|unterordnen] подчинять
 
-<!--
-# Bedeutung
+|vor-|движение перед~~нахождение впереди~~преимущество|
+&emsp;%[m|vorgehen] идти впереди
+&emsp;%[m|vorstellen] представлять
+&emsp;%[m|vorlesen] читать вслух
+&emsp;%[m|vormerken] записывать
 
-### Indikativ
-__Statements of fact, questions, and open conditions.__
-
-### Konjunktiv I
-__нереальность, возможность, желание, побуждение, предположение, сомнение, косвенная речь__
-
-### Konjunktiv II
-__возможное действие в настоящем, будущем, прошлом__
-
-### Partizip
-__Adjective or to form adverbial clauses.__
-%[m|Präsens]
-
-__To form perfect tenses and passive voice.__
-%[m|Perfekt]
-
-### Imperativ
-__Expressing commands or requests.__
-%[m|Präsens]
-
-### Infinitiv
-__To express purpose, reason, or action without tense or person.__
-%[m|Perfekt]
-%[m|zu + Infinitiv]
-
-### Genus Verbi
-%[m|Aktiv]
-%[m|Passiv]
-
--->
+|weg-|движение от~~удаление~~исчезновение|
+&emsp;%[m|weggehen] уходить
+&emsp;%[m|weglegen] класть
+&emsp;%[m|wegwerfen] отбрасывать

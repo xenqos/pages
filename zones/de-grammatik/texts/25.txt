@@ -1,110 +1,85 @@
-## Глаголы
+## Verben
 
-# Глагольные приставки
+# Konjunktiv II
 
-|ab-|движение от~~отделение~~завершение|
-&emsp;%[m|abfahren] уезжать
-&emsp;%[m|abgeben] отдавать
-&emsp;%[m|abschließen] закрывать
-&emsp;%[m|absagen] отменять
+##### Regelmäßige Präteritum
 
-|an-|движение к~~присоединение~~нахождение|
-&emsp;%[m|ankommen] приходить
-&emsp;%[m|anschließen] подключать
-&emsp;%[m|anfangen] начинать
-&emsp;%[m|anwesend sein] присутствовать
+[|
+|ich| -%[l|te]  |%[m|sagte]  |
+|du | -%[l|test]|%[m|sagtest]|
+|er | -%[l|te]  |%[m|sagte]  |
+|wir| -%[l|ten] |%[m|sagten] |
+|ihr| -%[l|tet] |%[m|sagtet] |
+|sie| -%[l|ten] |%[m|sagten] |
+|]
 
-|auf-|движение вверх~~увеличение~~открытие|
-&emsp;%[m|aufstehen] вставать
-&emsp;%[m|aufmachen] открывать
-&emsp;%[m|aufladen] заряжать
-&emsp;%[m|aufpassen] внимать
+##### Unregelmäßige Präteritum
 
-|aus-|движение из~~отделение~~завершение|
-&emsp;%[m|ausgehen] выходить
-&emsp;%[m|ausziehen] снимать
-&emsp;%[m|ausschalten] выключать
-&emsp;%[m|ausfüllen] заполнять
+[|
+|ich| -%[l|e]  |%[m|sänge]  |
+|du | -%[l|est]|%[m|sängest]|
+|er | -%[l|e]  |%[m|sänge]  |
+|wir| -%[l|en] |%[m|sängen] |
+|ihr| -%[l|et] |%[m|sänget] |
+|sie| -%[l|en] |%[m|sängen] |
+|]
 
-|durch-|движение через~~завершение~~проникновение|
-&emsp;%[m|durchgehen] проходить
-&emsp;%[m|durchlesen] читать
-&emsp;%[m|durchdringen] проникать
-&emsp;%[m|durchschauen] понимать
+##### Plusquamperfekt
 
-|ein-|движение в~~включение~~начало|
-&emsp;%[m|einkommen] входить
-&emsp;%[m|einschalten] включать
-&emsp;%[m|eintragen] записывать
-&emsp;%[m|einsteigen] садиться
+###### Haben + Partizip
 
-|er-|отделение~~достижение~~изменение|
-&emsp;%[m|erreichen] достигать
-&emsp;%[m|erhalten] получать
-&emsp;%[m|erklären] объяснять
-&emsp;%[m|erschließen] открывать
+[|
+|ich|%[m|hätte]  |%[m|gesagt]|
+|du |%[m|hättest]|%[m|gesagt]|
+|er |%[m|hätte]  |%[m|gesagt]|
+|wir|%[m|hätten] |%[m|gesagt]|
+|ihr|%[m|hättet] |%[m|gesagt]|
+|sie|%[m|hätten] |%[m|gesagt]|
+|]
 
-|fort-|движение от~~удаление~~продолжение|
-&emsp;%[m|fortgehen] уходить
-&emsp;%[m|fortfahren] продолжать
-&emsp;%[m|fortsetzen] продлевать
-&emsp;%[m|fortschicken] отправлять
+###### Sein + Partizip
 
-|gegen-|противопоставление~~движение навстречу~~замена|
-&emsp;%[m|gegenüberstehen] противостоять
-&emsp;%[m|gegenhalten] держать против
-&emsp;%[m|gegensagen] возражать
-&emsp;%[m|gegentauschen] менять
+[|
+|ich|%[m|wäre]  |%[m|gerannt]|
+|du |%[m|wär](%[m|e])%[m|st]|%[m|gerannt]|
+|er |%[m|wäre]  |%[m|gerannt]|
+|wir|%[m|wären]|%[m|gerannt]|
+|ihr|%[m|wär](%[m|e])%[m|t] |%[m|gerannt]|
+|sie|%[m|wären]|%[m|gerannt]|
+|]
 
-|her-|движение сюда~~приближение~~принесение|
-&emsp;%[m|herkommen] приходить
-&emsp;%[m|herbringen] приносить
-&emsp;%[m|herstellen] производить
-&emsp;%[m|hervorheben] подчеркивать
 
-|hin-|движение туда~~удаление~~направление|
-&emsp;%[m|hingehen] идти
-&emsp;%[m|hinschreiben] писать
-&emsp;%[m|hinzufügen] добавлять
-&emsp;%[m|hinweisen] указывать
+<!--
 
-|mit-|совместное действие~~сопровождение~~инструмент|
-&emsp;%[m|mitmachen] участвовать
-&emsp;%[m|mitgehen] идти с
-&emsp;%[m|mitbringen] приносить
-&emsp;%[m|mitteilen] сообщать
+### Imperativ
 
-|nach-|движение за~~следование~~повторение|
-&emsp;%[m|nachkommen] следовать
-&emsp;%[m|nachmachen] повторять
-&emsp;%[m|nachdenken] размышлять
-&emsp;%[m|nachsehen] проверять
+##### Präsens
 
-|nieder-|движение вниз~~падение~~размещение|
-&emsp;%[m|niedergehen] опускаться
-&emsp;%[m|niederschreiben] записывать
-&emsp;%[m|niederlegen] класть
-&emsp;%[m|niederknien] вставать на колени
+[|
+|%[m|sei  ]|du |
+|%[m|seien]|wir|
+|%[m|seid ]|ihr|
+|%[m|seien]|Sie|
+|]
 
-|um-|движение вокруг~~изменение~~окружение|
-&emsp;%[m|umgehen] ходить вокруг
-&emsp;%[m|umsteigen] пересаживаться
-&emsp;%[m|umstellen] переставлять
-&emsp;%[m|umbauen] перестраивать
+### Partizip
 
-|unter-|движение под~~размещение~~подчинение|
-&emsp;%[m|untergehen] заходить
-&emsp;%[m|unterschreiben] подписывать
-&emsp;%[m|unterteilen] разделять
-&emsp;%[m|unterordnen] подчинять
+##### Präsens
 
-|vor-|движение перед~~нахождение впереди~~преимущество|
-&emsp;%[m|vorgehen] идти впереди
-&emsp;%[m|vorstellen] представлять
-&emsp;%[m|vorlesen] читать вслух
-&emsp;%[m|vormerken] записывать
+%[m|seiend]
 
-|weg-|движение от~~удаление~~исчезновение|
-&emsp;%[m|weggehen] уходить
-&emsp;%[m|weglegen] класть
-&emsp;%[m|wegwerfen] отбрасывать
+##### Perfekt
+
+%[m|gewesen]
+
+
+### Infinitiv
+
+##### Präsens
+
+%[m|sein]
+
+##### Perfekt
+
+%[m|gewesen sein]
+-->
