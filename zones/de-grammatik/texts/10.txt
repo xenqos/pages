@@ -1,17 +1,17 @@
 ## Существительные
 
-# Typ III - женское склонение
+# Typ IV - смешанное склонение
 
 [|
 |nom.|-%[m|]|
-|gen.|-%[m|]|
-|dat.|-%[m|]|
-|akk.|-%[m|]|
+|gen.|-%[m|ns]|
+|dat.|-%[m|n]|
+|akk.|-%[m|n]|
 |]
 
 [|
-|nom.|%[m|die Nacht]|
-|gen.|%[m|der Nacht]|
-|dat.|%[m|der Nacht]|
-|akk.|%[m|die Nacht]|
+|nom.|%[m|der Name]|
+|gen.|%[m|des Name]%[b|ns]|
+|dat.|%[m|dem Name]%[b|n]|
+|akk.|%[m|den Name]%[b|n]|
 |]

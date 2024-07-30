@@ -1,82 +1,43 @@
 ## Местоимения
 
-# Притяжательные
+# Указательные
 
 [|
-^^s.^p.^
-|1|%[m|mein]                     |%[m|unser]|
-|2|%[m|dein ]                    |%[m|euer]|
-|3|%[m|sein], %[m|ihr], %[m|sein]|%[m|ihr]|
+^^m.^f.^n.^p.^
+|nom.|%[m|der   ]|%[m|die  ]|%[m|das   ]|%[m|die  ]|
+|gen.|%[m|dessen]|%[m|deren]|%[m|dessen]|%[m|deren], %[m|derer]|
+|dat.|%[m|dem   ]|%[m|der  ]|%[m|dem   ]|%[m|denen]|
+|akk.|%[m|den   ]|%[m|die  ]|%[m|das   ]|%[m|die  ]|
 |]
 
-### mein
 [|
-^    ^m.         ^f.         ^n.         ^p.         ^
-|nom.|%[m|mein  ]|%[m|meine ]|%[m|mein ] |%[m|meine ]|
-|gen.|%[m|meines]|%[m|meiner]|%[m|meines]|%[m|meiner]|
-|dat.|%[m|meinem]|%[m|meiner]|%[m|meinem]|%[m|meinen]|
-|akk.|%[m|meinen]|%[m|meine ]|%[m|mein  ]|%[m|meine ]|
+^^m.^f.^n.^p.^
+|nom.|%[m|dieser]|%[m|diese ]|%[m|dieses], %[m|dies]|%[m|diese ]|
+|gen.|%[m|dieses]|%[m|dieser]|%[m|dieses]|%[m|dieser]|
+|dat.|%[m|diesem]|%[m|dieser]|%[m|diesem]|%[m|diesen]|
+|akk.|%[m|diesen]|%[m|diese ]|%[m|dieses], %[m|dies]|%[m|diese ]|
 |]
 
-### dein
 [|
-^    ^m.         ^f.         ^n.         ^p.         ^
-|nom.|%[m|dein  ]|%[m|deine ]|%[m|dein ] |%[m|deine ]|
-|gen.|%[m|deines]|%[m|deiner]|%[m|deines]|%[m|deiner]|
-|dat.|%[m|deinem]|%[m|deiner]|%[m|deinem]|%[m|deinen]|
-|akk.|%[m|deinen]|%[m|deine ]|%[m|dein  ]|%[m|deine ]|
+^^m.^f.^n.^p.^
+|nom.|%[m|jener]|%[m|jene ]|%[m|jenes]|%[m|jene ]|
+|gen.|%[m|jenes]|%[m|jener]|%[m|jenes]|%[m|jener]|
+|dat.|%[m|jenem]|%[m|jener]|%[m|jenem]|%[m|jenen]|
+|akk.|%[m|jenen]|%[m|jene ]|%[m|jenes]|%[m|jene ]|
 |]
 
-### sein %[dm|]
 [|
-^    ^m.         ^f.         ^n.         ^p.         ^
-|nom.|%[m|sein  ]|%[m|seine ]|%[m|sein ] |%[m|seine ]|
-|gen.|%[m|seines]|%[m|seiner]|%[m|seines]|%[m|seiner]|
-|dat.|%[m|seinem]|%[m|seiner]|%[m|seinem]|%[m|seinen]|
-|akk.|%[m|seinen]|%[m|seine ]|%[m|sein  ]|%[m|seine ]|
+^^m.^f.^n.^p.^
+|nom.|%[m|derselbe ]|%[m|dieselbe ]|%[m|dasselbe ]|%[m|dieselben]|
+|gen.|%[m|desselben]|%[m|derselben]|%[m|desselben]|%[m|derselben]|
+|dat.|%[m|demselben]|%[m|derselben]|%[m|demselben]|%[m|denselben]|
+|akk.|%[m|denselben]|%[m|dieselbe ]|%[m|dasselbe ]|%[m|dieselben]|
 |]
 
-### ihr %[df|]
 [|
-^    ^m.        ^f.        ^n.        ^p.        ^
-|nom.|%[m|ihr  ]|%[m|ihre ]|%[m|ihr  ]|%[m|ihre ]|
-|gen.|%[m|ihres]|%[m|ihrer]|%[m|ihres]|%[m|ihrer]|
-|dat.|%[m|ihrem]|%[m|ihrer]|%[m|ihrem]|%[m|ihren]|
-|akk.|%[m|ihren]|%[m|ihre ]|%[m|ihr  ]|%[m|ihre ]|
-|]
-
-### sein %[dn|]
-[|
-^    ^m.         ^f.         ^n.         ^p.         ^
-|nom.|%[m|sein  ]|%[m|seine] |%[m|sein  ]|%[m|seine ]|
-|akk.|%[m|seines]|%[m|seiner]|%[m|seines]|%[m|seiner]|
-|dat.|%[m|seinem]|%[m|seiner]|%[m|seinem]|%[m|seinen]|
-|gen.|%[m|seinen]|%[m|seine] |%[m|sein  ]|%[m|seine ]|
-|]
-
-### unser
-[|
-^    ^m.            ^f.            ^n.            ^p.            ^
-|nom.|%[m|unser    ]|%[m|uns(e)re ]|%[m|unser    ]|%[m|uns(e)re ]|
-|gen.|%[m|uns(e)res]|%[m|uns(e)rer]|%[m|uns(e)res]|%[m|uns(e)rer]|
-|dat.|%[m|uns(e)rem]|%[m|uns(e)rer]|%[m|uns(e)rem]|%[m|uns(e)ren]|
-|akk.|%[m|uns(e)ren]|%[m|uns(e)re ]|%[m|unser    ]|%[m|uns(e)re ]|
-|]
-
-### euer
-[|
-^    ^m.           ^f.           ^n.           ^p.           ^
-|nom.|%[m|euer    ]|%[m|eu(e)re ]|%[m|euer    ]|%[m|eu(e)re ]|
-|gen.|%[m|eu(e)res]|%[m|eu(e)rer]|%[m|eu(e)res]|%[m|eu(e)rer]|
-|dat.|%[m|eu(e)rem]|%[m|eu(e)rer]|%[m|eu(e)rem]|%[m|eu(e)ren]|
-|akk.|%[m|eu(e)ren]|%[m|eu(e)re ]|%[m|euer    ]|%[m|eu(e)re ]|
-|]
-
-### ihr
-[|
-^    ^m.        ^f.        ^n.        ^p.        ^
-|nom.|%[m|ihr  ]|%[m|ihre ]|%[m|ihr  ]|%[m|ihre ]|
-|gen.|%[m|ihres]|%[m|ihrer]|%[m|ihres]|%[m|ihrer]|
-|dat.|%[m|ihrem]|%[m|ihrer]|%[m|ihrem]|%[m|ihren]|
-|akk.|%[m|ihren]|%[m|ihre ]|%[m|ihr  ]|%[m|ihre ]|
+^^m.^f.^n.^p.^
+|nom.|%[m|derjenige ]|%[m|diejenige ]|%[m|dasjenige ]|%[m|diejenigen]|
+|gen.|%[m|desjenigen]|%[m|derjenigen]|%[m|desjenigen]|%[m|derjenigen]|
+|dat.|%[m|demjenigen]|%[m|derjenigen]|%[m|demjenigen]|%[m|denjenigen]|
+|akk.|%[m|denjenigen]|%[m|diejenige ]|%[m|dasjenige ]|%[m|diejenigen]|
 |]
