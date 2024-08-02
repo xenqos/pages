@@ -1,19 +1,13 @@
-## Существительные ##
+## Артикль ##
 
-## Существительные
+## Артикль
 
-# Тип I - сильное склонение
-
-[|
-|nom.|-%[m|]|
-|gen.|-(%[m|e])%[m|s]|
-|dat.|-(%[m|e])|
-|akk.|-%[m|]|
-|]
+# Неопределённый
 
 [|
-|nom.|%[m|das Haus]       |%[m|der Wald]       |
-|gen.|%[m|des Haus]%[b|es]|%[m|des Wald]%[b|es]|
-|dat.|%[m|dem Haus]       |%[m|dem Wald]%[b|e] |
-|akk.|%[m|das Haus]       |%[m|den Wald]       |
+^^m.^f.^n.^
+|nom.|%[m|ein  ]|%[m|eine ]|%[m|ein  ]|
+|gen.|%[m|eines]|%[m|einer]|%[m|eines]|
+|dat.|%[m|einem]|%[m|einer]|%[m|einem]|
+|akk.|%[m|einen]|%[m|eine ]|%[m|ein  ]|
 |]
