@@ -1,58 +1,55 @@
-#### Вспомогательные глаголы ####
+## Verben
 
-## Глаголы
+# Konjunktiv II
 
-# sein
-
-### Indikativ
-
-##### Präsens
+##### Regelmäßige Präteritum
 
 [|
-|ich|%[m|bin ]|
-|du |%[m|bist]|
-|er |%[m|ist ]|
-|wir|%[m|sind]|
-|ihr|%[m|seid]|
-|sie|%[m|sind]|
+|ich| -%[l|te]  |%[m|sagte]  |
+|du | -%[l|test]|%[m|sagtest]|
+|er | -%[l|te]  |%[m|sagte]  |
+|wir| -%[l|ten] |%[m|sagten] |
+|ihr| -%[l|tet] |%[m|sagtet] |
+|sie| -%[l|ten] |%[m|sagten] |
 |]
 
-##### Präteritum
+##### Unregelmäßige Präteritum
 
 [|
-|ich|%[m|war  ]|
-|du |%[m|warst]|
-|er |%[m|war  ]|
-|wir|%[m|waren]|
-|ihr|%[m|wart ]|
-|sie|%[m|waren]|
+|ich| -%[l|e]  |%[m|sänge]  |
+|du | -%[l|est]|%[m|sängest]|
+|er | -%[l|e]  |%[m|sänge]  |
+|wir| -%[l|en] |%[m|sängen] |
+|ihr| -%[l|et] |%[m|sänget] |
+|sie| -%[l|en] |%[m|sängen] |
 |]
 
-### Konjunktiv I
+##### Plusquamperfekt
 
-##### Präsens
+###### Haben + Partizip
 
 [|
-|ich|%[m|sei   ]|
-|du |%[m|seiest]|
-|er |%[m|sei   ]|
-|wir|%[m|seien ]|
-|ihr|%[m|seiet ]|
-|sie|%[m|seien ]|
+|ich|%[m|hätte]  |%[m|gesagt]|
+|du |%[m|hättest]|%[m|gesagt]|
+|er |%[m|hätte]  |%[m|gesagt]|
+|wir|%[m|hätten] |%[m|gesagt]|
+|ihr|%[m|hättet] |%[m|gesagt]|
+|sie|%[m|hätten] |%[m|gesagt]|
 |]
 
-### Konjunktiv II
-
-##### Präteritum
+###### Sein + Partizip
 
 [|
-|ich|%[m|wäre  ]|
-|du |%[m|wärest]|
-|er |%[m|wäre  ]|
-|wir|%[m|wären ]|
-|ihr|%[m|wäret ]|
-|sie|%[m|wären ]|
+|ich|%[m|wäre]  |%[m|gerannt]|
+|du |%[m|wär](%[m|e])%[m|st]|%[m|gerannt]|
+|er |%[m|wäre]  |%[m|gerannt]|
+|wir|%[m|wären]|%[m|gerannt]|
+|ihr|%[m|wär](%[m|e])%[m|t] |%[m|gerannt]|
+|sie|%[m|wären]|%[m|gerannt]|
 |]
+
+
+<!--
 
 ### Imperativ
 
@@ -85,3 +82,4 @@
 ##### Perfekt
 
 %[m|gewesen sein]
+-->

@@ -1,17 +1,19 @@
+## Существительные ##
+
 ## Существительные
 
-# Тип II - слабое склонение
+# Тип I - сильное склонение
 
 [|
 |nom.|-%[m|]|
-|gen.|-(%[m|e])%[m|n]|
-|dat.|-(%[m|e])%[m|n]|
-|akk.|-(%[m|e])%[m|n]|
+|gen.|-(%[m|e])%[m|s]|
+|dat.|-(%[m|e])|
+|akk.|-%[m|]|
 |]
 
 [|
-|nom.|%[m|der Held]       |%[m|der Herr]      |
-|gen.|%[m|des Held]%[b|en]|%[m|des Herr]%[b|n]|
-|dat.|%[m|dem Held]%[b|en]|%[m|dem Herr]%[b|n]|
-|akk.|%[m|den Held]%[b|en]|%[m|den Herr]%[b|n]|
+|nom.|%[m|das Haus]       |%[m|der Wald]       |
+|gen.|%[m|des Haus]%[b|es]|%[m|des Wald]%[b|es]|
+|dat.|%[m|dem Haus]       |%[m|dem Wald]%[b|e] |
+|akk.|%[m|das Haus]       |%[m|den Wald]       |
 |]

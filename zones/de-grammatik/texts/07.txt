@@ -1,38 +1,120 @@
-## Орфография ##
+## Произношение
 
-## Орфография
+# Сочетание согласных
 
-# Алфавит
+%[r|ch]&emsp;/ %[l|x] /
 
-[|
-|%[m|A]|%[m|a]|A       |
-|%[m|B]|%[m|b]|Be      |
-|%[m|C]|%[m|c]|Ce      |
-|%[m|D]|%[m|d]|De      |
-|%[m|E]|%[m|e]|E       |
-|%[m|F]|%[m|f]|Ef      |
-|%[m|G]|%[m|g]|Ge      |
-|%[m|H]|%[m|h]|Ha      |
-|%[m|I]|%[m|i]|I       |
-|%[m|J]|%[m|j]|Jott    |
-|%[m|K]|%[m|k]|Ka      |
-|%[m|L]|%[m|l]|El      |
-|%[m|M]|%[m|m]|Em      |
-|%[m|N]|%[m|n]|En      |
-|%[m|O]|%[m|o]|O       |
-|%[m|P]|%[m|p]|Pe      |
-|%[m|Q]|%[m|q]|Qu      |
-|%[m|R]|%[m|r]|Er      |
-|%[m|S]|%[m|s]|Es      |
-|%[m|T]|%[m|t]|Te      |
-|%[m|U]|%[m|u]|U       |
-|%[m|V]|%[m|v]|Vau     |
-|%[m|W]|%[m|w]|We      |
-|%[m|X]|%[m|x]|Ix      |
-|%[m|Y]|%[m|y]|Ypsilon |
-|%[m|Z]|%[m|z]|Zett    |
-|%[m|Ä]|%[m|ä]|A Umlaut|
-|%[m|Ö]|%[m|ö]|O Umlaut|
-|%[m|Ü]|%[m|ü]|U Umlaut|
-|%[m| ]|%[m|ß]|Eszett  |
+[!
+после %[m|а], %[m|o], %[m|u]
+!]
+
+[|-
+|%[m|acht    ]|восемь|
+|%[m|der Koch]|пoвар |
+|%[m|das Buch]|книга |
 |]
+
+%[r|ch]&emsp;/ %[l|ç] /
+
+[!
+после %[m|e], %[m|i], %[m|ä], %[m|ö], %[m|ü]
+!]
+
+[|-
+|%[m|echt       ]|настоящий|
+|%[m|mich       ]|меня     |
+|%[m|die Dächer ]|крыши    |
+|%[m|die Töchter]|дочери   |
+|%[m|die Bücher ]|книги    |
+|]
+
+%[r|chs]&emsp;/ %[l|ks] /
+
+[|-
+|%[m|sechs    ]|шесть|
+|%[m|wachsen  ]|расти|
+|%[m|der Fuchs]|лиса |
+|]
+
+%[r|ck]&emsp;/ %[l|k] /
+
+[|-
+|%[m|dick    ]|толстый |
+|%[m|packen  ]|паковать|
+|%[m|der Sack]|мешок |
+|]
+
+%[r|dt]&emsp;/ %[l|t] /
+
+[|-
+|%[m|die Stadt   ]|город    |
+|%[m|das Handtuch]|полотенце|
+|]
+
+%[r|ng]&emsp;/ %[l|ŋ] /
+
+[|-
+|%[m|das Ding]|вещь     |
+|%[m|der Ring]|кольцо   |
+|%[m|bringen ]|приносить|
+|]
+
+%[r|pf]&emsp;/ %[l|pf] /
+
+[|-
+|%[m|das Pferd  ]|лошадь  |
+|%[m|der Pfeffer]|перец   |
+|%[m|die Pflanze]|растение|
+|]
+
+%[r|rh]&emsp;/ %[l|r] /
+
+[|-
+|%[m|die Rhetorik]|риторика|
+|%[m|der Rhythmus]|ритм    |
+|%[m|der Rhein   ]|Рейн    |
+|]
+
+%[r|sch]&emsp;/ %[l|ʃ] /
+
+[|-
+|%[m|die Schule]|школа|
+|%[m|der Schnee]|снег |
+|%[m|der Tisch ]|стол |
+|]
+
+%[r|sp]&emsp;/ %[l|ʃp] /
+
+[|-
+|%[m|der Spiegel]|зеркало|
+|%[m|das Spiel  ]|игра   |
+|%[m|die Spur   ]|след   |
+|]
+
+%[r|st]&emsp;/ %[l|ʃt] /
+
+[|-
+|%[m|der Stern ]|звезда|
+|%[m|die Straße]|улица |
+|%[m|die Stadt ]|город |
+|]
+
+%[r|th]&emsp;/ %[l|t] /
+
+[|-
+|%[m|das Thema     ]|тема      |
+|%[m|das Theater   ]|театр     |
+|%[m|die Mathematik]|математика|
+|]
+
+%[r|tz]&emsp;/ %[l|ts] /
+
+[|-
+|%[m|der Platz]|площадь|
+|%[m|die Katze]|кошка  |
+|%[m|setzen   ]|сажать |
+|]
+
+<!--
+
+-->
