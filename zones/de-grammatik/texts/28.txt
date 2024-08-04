@@ -1,38 +1,110 @@
-## Verben
+## Глаголы
 
-# Konjunktiv I
+# Глагольные приставки
 
-##### Präsens
+|ab-|движение от~~отделение~~завершение|
+&emsp;%[m|abfahren] уезжать
+&emsp;%[m|abgeben] отдавать
+&emsp;%[m|abschließen] закрывать
+&emsp;%[m|absagen] отменять
 
-[|
-|ich| -%[l|e]  |%[m|sage]  |%[m|singe]  |
-|du | -%[l|est]|%[m|sagest]|%[m|singest]|
-|er | -%[l|e]  |%[m|sage]  |%[m|singe]  |
-|wir| -%[l|en] |%[m|sagen] |%[m|singen] |
-|ihr| -%[l|et] |%[m|saget] |%[m|singet] |
-|sie| -%[l|en] |%[m|sagen] |%[m|singen] |
-|]
+|an-|движение к~~присоединение~~нахождение|
+&emsp;%[m|ankommen] приходить
+&emsp;%[m|anschließen] подключать
+&emsp;%[m|anfangen] начинать
+&emsp;%[m|anwesend sein] присутствовать
 
-##### Perfekt
+|auf-|движение вверх~~увеличение~~открытие|
+&emsp;%[m|aufstehen] вставать
+&emsp;%[m|aufmachen] открывать
+&emsp;%[m|aufladen] заряжать
+&emsp;%[m|aufpassen] внимать
 
-###### Haben + Partizip
+|aus-|движение из~~отделение~~завершение|
+&emsp;%[m|ausgehen] выходить
+&emsp;%[m|ausziehen] снимать
+&emsp;%[m|ausschalten] выключать
+&emsp;%[m|ausfüllen] заполнять
 
-[|
-|ich|%[m|habe]  |%[m|gesagt]|
-|du |%[m|habest]|%[m|gesagt]|
-|er |%[m|habe]  |%[m|gesagt]|
-|wir|%[m|haben] |%[m|gesagt]|
-|ihr|%[m|habet] |%[m|gesagt]|
-|sie|%[m|haben] |%[m|gesagt]|
-|]
+|durch-|движение через~~завершение~~проникновение|
+&emsp;%[m|durchgehen] проходить
+&emsp;%[m|durchlesen] читать
+&emsp;%[m|durchdringen] проникать
+&emsp;%[m|durchschauen] понимать
 
-###### Sein + Partizip
+|ein-|движение в~~включение~~начало|
+&emsp;%[m|einkommen] входить
+&emsp;%[m|einschalten] включать
+&emsp;%[m|eintragen] записывать
+&emsp;%[m|einsteigen] садиться
 
-[|
-|ich|%[m|sei]     |%[m|gerannt]|
-|du |%[m|sei](%[m|e])%[m|st]|%[m|gerannt]|
-|er |%[m|sei]     |%[m|gerannt]|
-|wir|%[m|seien]   |%[m|gerannt]|
-|ihr|%[m|seiet]   |%[m|gerannt]|
-|sie|%[m|seien]   |%[m|gerannt]|
-|]
+|er-|отделение~~достижение~~изменение|
+&emsp;%[m|erreichen] достигать
+&emsp;%[m|erhalten] получать
+&emsp;%[m|erklären] объяснять
+&emsp;%[m|erschließen] открывать
+
+|fort-|движение от~~удаление~~продолжение|
+&emsp;%[m|fortgehen] уходить
+&emsp;%[m|fortfahren] продолжать
+&emsp;%[m|fortsetzen] продлевать
+&emsp;%[m|fortschicken] отправлять
+
+|gegen-|противопоставление~~движение навстречу~~замена|
+&emsp;%[m|gegenüberstehen] противостоять
+&emsp;%[m|gegenhalten] держать против
+&emsp;%[m|gegensagen] возражать
+&emsp;%[m|gegentauschen] менять
+
+|her-|движение сюда~~приближение~~принесение|
+&emsp;%[m|herkommen] приходить
+&emsp;%[m|herbringen] приносить
+&emsp;%[m|herstellen] производить
+&emsp;%[m|hervorheben] подчеркивать
+
+|hin-|движение туда~~удаление~~направление|
+&emsp;%[m|hingehen] идти
+&emsp;%[m|hinschreiben] писать
+&emsp;%[m|hinzufügen] добавлять
+&emsp;%[m|hinweisen] указывать
+
+|mit-|совместное действие~~сопровождение~~инструмент|
+&emsp;%[m|mitmachen] участвовать
+&emsp;%[m|mitgehen] идти с
+&emsp;%[m|mitbringen] приносить
+&emsp;%[m|mitteilen] сообщать
+
+|nach-|движение за~~следование~~повторение|
+&emsp;%[m|nachkommen] следовать
+&emsp;%[m|nachmachen] повторять
+&emsp;%[m|nachdenken] размышлять
+&emsp;%[m|nachsehen] проверять
+
+|nieder-|движение вниз~~падение~~размещение|
+&emsp;%[m|niedergehen] опускаться
+&emsp;%[m|niederschreiben] записывать
+&emsp;%[m|niederlegen] класть
+&emsp;%[m|niederknien] вставать на колени
+
+|um-|движение вокруг~~изменение~~окружение|
+&emsp;%[m|umgehen] ходить вокруг
+&emsp;%[m|umsteigen] пересаживаться
+&emsp;%[m|umstellen] переставлять
+&emsp;%[m|umbauen] перестраивать
+
+|unter-|движение под~~размещение~~подчинение|
+&emsp;%[m|untergehen] заходить
+&emsp;%[m|unterschreiben] подписывать
+&emsp;%[m|unterteilen] разделять
+&emsp;%[m|unterordnen] подчинять
+
+|vor-|движение перед~~нахождение впереди~~преимущество|
+&emsp;%[m|vorgehen] идти впереди
+&emsp;%[m|vorstellen] представлять
+&emsp;%[m|vorlesen] читать вслух
+&emsp;%[m|vormerken] записывать
+
+|weg-|движение от~~удаление~~исчезновение|
+&emsp;%[m|weggehen] уходить
+&emsp;%[m|weglegen] класть
+&emsp;%[m|wegwerfen] отбрасывать

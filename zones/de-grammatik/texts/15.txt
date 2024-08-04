@@ -1,17 +1,17 @@
 ## Существительные
 
-# Тип IV - смешанное склонение
+# Тип II - слабое склонение
 
 [|
 |nom.|-%[m|]|
-|gen.|-%[m|ns]|
-|dat.|-%[m|n]|
-|akk.|-%[m|n]|
+|gen.|-(%[m|e])%[m|n]|
+|dat.|-(%[m|e])%[m|n]|
+|akk.|-(%[m|e])%[m|n]|
 |]
 
 [|
-|nom.|%[m|der Name]|
-|gen.|%[m|des Name]%[b|ns]|
-|dat.|%[m|dem Name]%[b|n]|
-|akk.|%[m|den Name]%[b|n]|
+|nom.|%[m|der Held]       |%[m|der Herr]      |
+|gen.|%[m|des Held]%[b|en]|%[m|des Herr]%[b|n]|
+|dat.|%[m|dem Held]%[b|en]|%[m|dem Herr]%[b|n]|
+|akk.|%[m|den Held]%[b|en]|%[m|den Herr]%[b|n]|
 |]

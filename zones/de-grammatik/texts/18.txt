@@ -1,43 +1,28 @@
-## Местоимения
+## Местоимения ##
 
-# Указательные
+## Личные
+
+# Личные
 
 [|
-^^m.^f.^n.^p.^
-|nom.|%[m|der   ]|%[m|die  ]|%[m|das   ]|%[m|die  ]|
-|gen.|%[m|dessen]|%[m|deren]|%[m|dessen]|%[m|deren], %[m|derer]|
-|dat.|%[m|dem   ]|%[m|der  ]|%[m|dem   ]|%[m|denen]|
-|akk.|%[m|den   ]|%[m|die  ]|%[m|das   ]|%[m|die  ]|
+^^s.^p.^
+|1|%[m|ich]|%[m|wir]|
+|2|%[m|du]|%[m|ihr]|
+|3|%[m|er], %[m|sie], %[m|es]|%[m|sie]|
 |]
 
 [|
-^^m.^f.^n.^p.^
-|nom.|%[m|dieser]|%[m|diese ]|%[m|dieses], %[m|dies]|%[m|diese ]|
-|gen.|%[m|dieses]|%[m|dieser]|%[m|dieses]|%[m|dieser]|
-|dat.|%[m|diesem]|%[m|dieser]|%[m|diesem]|%[m|diesen]|
-|akk.|%[m|diesen]|%[m|diese ]|%[m|dieses], %[m|dies]|%[m|diese ]|
+^^1^2^3^3^3^
+|nom.|%[m|ich   ]|%[m|du    ]|%[m|er    ]|%[m|sie  ]|%[m|es    ]|
+|gen.|%[m|meiner]|%[m|deiner]|%[m|seiner]|%[m|ihrer]|%[m|seiner]|
+|dat.|%[m|mir   ]|%[m|dir   ]|%[m|ihm   ]|%[m|ihr  ]|%[m|ihm   ]|
+|akk.|%[m|mich  ]|%[m|dich  ]|%[m|ihn   ]|%[m|sie  ]|%[m|es    ]|
 |]
 
 [|
-^^m.^f.^n.^p.^
-|nom.|%[m|jener]|%[m|jene ]|%[m|jenes]|%[m|jene ]|
-|gen.|%[m|jenes]|%[m|jener]|%[m|jenes]|%[m|jener]|
-|dat.|%[m|jenem]|%[m|jener]|%[m|jenem]|%[m|jenen]|
-|akk.|%[m|jenen]|%[m|jene ]|%[m|jenes]|%[m|jene ]|
-|]
-
-[|
-^^m.^f.^n.^p.^
-|nom.|%[m|derselbe ]|%[m|dieselbe ]|%[m|dasselbe ]|%[m|dieselben]|
-|gen.|%[m|desselben]|%[m|derselben]|%[m|desselben]|%[m|derselben]|
-|dat.|%[m|demselben]|%[m|derselben]|%[m|demselben]|%[m|denselben]|
-|akk.|%[m|denselben]|%[m|dieselbe ]|%[m|dasselbe ]|%[m|dieselben]|
-|]
-
-[|
-^^m.^f.^n.^p.^
-|nom.|%[m|derjenige ]|%[m|diejenige ]|%[m|dasjenige ]|%[m|diejenigen]|
-|gen.|%[m|desjenigen]|%[m|derjenigen]|%[m|desjenigen]|%[m|derjenigen]|
-|dat.|%[m|demjenigen]|%[m|derjenigen]|%[m|demjenigen]|%[m|denjenigen]|
-|akk.|%[m|denjenigen]|%[m|diejenige ]|%[m|dasjenige ]|%[m|diejenigen]|
+^^1^2^3^
+|nom.|%[m|wir  ]|%[m|ihr ]|%[m|sie  ]|
+|gen.|%[m|unser]|%[m|euer]|%[m|ihrer]|
+|dat.|%[m|uns  ]|%[m|euch]|%[m|ihnen]|
+|akk.|%[m|uns  ]|%[m|euch]|%[m|sie  ]|
 |]
