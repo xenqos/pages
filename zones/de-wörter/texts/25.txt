@@ -1,21 +1,10 @@
-## Еда
+## Числительные
 
-# Овощи
+# Порядковые 100-ый - миллиардный
 
 [|
-|%[m|die Karotte   ]|морковь        |
-|%[m|die Kartoffel ]|картофель      |
-|%[m|die Zwiebel   ]|лук            |
-|%[m|der Knoblauch ]|чеснок         |
-|%[m|die Tomate    ]|помидор        |
-|%[m|die Gurke     ]|огурец         |
-|%[m|der Paprika   ]|перец          |
-|%[m|der Brokkoli  ]|брокколи       |
-|%[m|der Blumenkohl]|цветная капуста|
-|%[m|der Spinat    ]|шпинат         |
-|%[m|die Erbse     ]|горох          |
-|%[m|der Salat     ]|салат (листья) |
-|%[m|die Aubergine ]|баклажан       |
-|%[m|die Rübe      ]|свекла         |
-|%[m|der Kürbis    ]|тыква          |
+|100-ый           |%[m|der hundertste ]|
+|1,000-ый         |%[m|der tausendste ]|
+|1,000,000-ый     |%[m|der millionste ]|
+|1,000,000,0000-ый|%[m|der milliardste]|
 |]

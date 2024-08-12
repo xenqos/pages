@@ -1,25 +1,15 @@
-## Прилагателные ##
+## Числительные
 
-## Прилагателные
-
-# Цвета
+# Количественные 100 - 900
 
 [|
-|%[m|weiß   ]|белый |
-|%[m|grau   ]|серый |
-|%[m|schwarz]|чёрный|
-|]
-
-[|
-|%[m|rot    ]|красный   |
-|%[m|orange ]|оранжевый |
-|%[m|gelb   ]|жёлтый    |
-|%[m|grün   ]|зелёный   |
-|%[m|blau   ]|синий     |
-|%[m|violett]|фиолетовый|
-|]
-
-[|
-|%[m|rosa ]|розовый   |
-|%[m|braun]|коричневый|
+|100|%[m|einhundert   ]|
+|200|%[m|zweihundert  ]|
+|300|%[m|dreihundert  ]|
+|400|%[m|vierhundert  ]|
+|500|%[m|fünfhundert  ]|
+|600|%[m|sechshundert ]|
+|700|%[m|siebenhundert]|
+|800|%[m|achthundert  ]|
+|900|%[m|neunhundert  ]|
 |]
