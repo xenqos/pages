@@ -3,19 +3,21 @@
 # Фрукты
 
 [|
-|%[m|der Apfel       ]|яблоко   |
-|%[m|die Banane      ]|банан    |
-|%[m|die Orange      ]|апельсин |
-|%[m|die Traube      ]|виноград |
-|%[m|die Erdbeere    ]|клубника |
-|%[m|die Kirsche     ]|вишня    |
-|%[m|die Pflaume     ]|слива    |
-|%[m|die Ananas      ]|ананас   |
-|%[m|die Zitrone     ]|лимон    |
-|%[m|die Wassermelone]|арбуз    |
-|%[m|die Birne       ]|груша    |
-|%[m|die Mango       ]|манго    |
-|%[m|die Kiwi        ]|киви     |
-|%[m|die Grapefruit  ]|грейпфрут|
-|%[m|die Himbeere    ]|малина   |
+|%[m|der Apfel] %[f|-s, Äpfel]   |яблоко   |
+|%[m|die Aprikose] %[f|-, -n]    |абрикос  |
+|%[m|die Pfirsich] %[f|-s, -e]   |персик   |
+|%[m|die Banane] %[f|-, -n]      |банан    |
+|%[m|die Orange] %[f|-, -n]      |апельсин |
+|%[m|die Traube] %[f|-, -n]      |виноград |
+|%[m|die Erdbeere] %[f|-, -n]    |клубника |
+|%[m|die Kirsche] %[f|-, -n]     |вишня    |
+|%[m|die Pflaume] %[f|-, -n]     |слива    |
+|%[m|die Ananas] %[f|-, -(se]    |ананас   |
+|%[m|die Zitrone] %[f|-, -n]     |лимон    |
+|%[m|die Wassermelone] %[f|-, -n]|арбуз    |
+|%[m|die Birne] %[f|-, -n]       |груша    |
+|%[m|die Mango] %[f|-, -s]       |манго    |
+|%[m|die Kiwi] %[f|-s, -s]       |киви     |
+|%[m|die Grapefruit] %[f|-, -s]  |грейпфрут|
+|%[m|die Himbeere] %[f|-, -n]    |малина   |
 |]

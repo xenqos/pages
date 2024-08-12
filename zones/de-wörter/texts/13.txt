@@ -3,19 +3,19 @@
 # Овощи
 
 [|
-|%[m|die Karotte   ]|морковь        |
-|%[m|die Kartoffel ]|картофель      |
-|%[m|die Zwiebel   ]|лук            |
-|%[m|der Knoblauch ]|чеснок         |
-|%[m|die Tomate    ]|помидор        |
-|%[m|die Gurke     ]|огурец         |
-|%[m|der Paprika   ]|перец          |
-|%[m|der Brokkoli  ]|брокколи       |
-|%[m|der Blumenkohl]|цветная капуста|
-|%[m|der Spinat    ]|шпинат         |
-|%[m|die Erbse     ]|горох          |
-|%[m|der Salat     ]|салат (листья) |
-|%[m|die Aubergine ]|баклажан       |
-|%[m|die Rübe      ]|свекла         |
-|%[m|der Kürbis    ]|тыква          |
+|%[m|die Karotte] %[f|-, -n]      |морковь        |
+|%[m|die Kartoffel] %[f|-, -n]    |картофель      |
+|%[m|die Zwiebel] %[f|-, -n]      |лук            |
+|%[m|der Knoblauch] %[f|-(e)s]    |чеснок         |
+|%[m|die Tomate] %[f|-, -n]       |помидор        |
+|%[m|die Gurke] %[f|-, -n]        |огурец         |
+|%[m|der Paprika] %[f|-s, -(s)]   |перец          |
+|%[m|der Brokkoli] %[f|-(s), -(s)]|брокколи       |
+|%[m|der Blumenkohl] %[f|-(e)s]   |цветная капуста|
+|%[m|der Spinat] %[f|-(e)s, -e]   |шпинат         |
+|%[m|die Erbse] %[f|-, -n]        |горох          |
+|%[m|der Salat] %[f|-(e)s, -e]    |салат (листья) |
+|%[m|die Aubergine] %[f|-, -n]    |баклажан       |
+|%[m|die Rübe] %[f|-, -n]         |свекла         |
+|%[m|der Kürbis] %[f|-ses, -se]   |тыква          |
 |]
