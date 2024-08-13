@@ -1,21 +1,23 @@
-## Еда
+## Дом ##
 
-# Овощи
+## Дом
+
+# Квартира
 
 [|
-|%[m|die Karotte] %[f|-, -n]      |морковь        |
-|%[m|die Kartoffel] %[f|-, -n]    |картофель      |
-|%[m|die Zwiebel] %[f|-, -n]      |лук            |
-|%[m|der Knoblauch] %[f|-(e)s]    |чеснок         |
-|%[m|die Tomate] %[f|-, -n]       |помидор        |
-|%[m|die Gurke] %[f|-, -n]        |огурец         |
-|%[m|der Paprika] %[f|-s, -(s)]   |перец          |
-|%[m|der Brokkoli] %[f|-(s), -(s)]|брокколи       |
-|%[m|der Blumenkohl] %[f|-(e)s]   |цветная капуста|
-|%[m|der Spinat] %[f|-(e)s, -e]   |шпинат         |
-|%[m|die Erbse] %[f|-, -n]        |горох          |
-|%[m|der Salat] %[f|-(e)s, -e]    |салат (листья) |
-|%[m|die Aubergine] %[f|-, -n]    |баклажан       |
-|%[m|die Rübe] %[f|-, -n]         |свекла         |
-|%[m|der Kürbis] %[f|-ses, -se]   |тыква          |
+|%[m|das Haus] %[f|-es, Häuser]  |дом     |
+|%[m|die Wohnung] %[f|-, -en]    |квартира|
+|%[m|das Zimmer] %[f|-s, -]      |комната |
+|%[m|die Küche] %[f|-, -n]       |кухня   |
+|%[m|das Badezimmer] %[f|-s, -]  |ванная  |
+|%[m|das Wohnzimmer] %[f|-s, -]  |гостиная|
+|%[m|das Schlafzimmer] %[f|-s, -]|спальня |
+|%[m|der Flur] %[f|-(e)s, -e]    |коридор |
+|%[m|der Balkon] %[f|-s, -s]     |балкон  |
+|%[m|die Treppe] %[f|-, -n]      |лестница|
+|%[m|das Dach] %[f|-(e)s, Dächer]|крыша   |
+|%[m|das Fenster] %[f|-s, -]     |окно    |
+|%[m|die Tür] %[f|-, -en]        |дверь   |
+|%[m|der Garten] %[f|-s, Gärten] |сад     |
+|%[m|der Keller] %[f|-s, -]      |подвал  |
 |]

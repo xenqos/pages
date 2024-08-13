@@ -5,35 +5,16 @@
 # Месяцы
 
 [|
-|%[m|der Januar] %[f|-s, -e]  |январь  |
-|%[m|der Februar] %[f|-s, -e] |февраль |
-|%[m|der März] %[f|-es, -e]   |март    |
-|%[m|der April] %[f|-s, -e]   |апрель  |
-|%[m|der Mai] %[f|-s, -e]     |май     |
-|%[m|der Juni] %[f|-s, -is]   |июнь    |
-|%[m|der Juli] %[f|-s, -is]   |июль    |
-|%[m|der August] %[f|-s, -e]  |август  |
-|%[m|der September] %[f|-s, -]|сентябрь|
-|%[m|der Oktober] %[f|-s, -]  |октябрь |
-|%[m|der November] %[f|-s, -] |ноябрь  |
-|%[m|der Dezember] %[f|-s, -] |декабрь |
+|%[m|der Januar] %[f|-(s), -e]  |январь  |
+|%[m|der Februar] %[f|-(s), -e] |февраль |
+|%[m|der März] %[f|-(es, -e]    |март    |
+|%[m|der April] %[f|-(s), -e]   |апрель  |
+|%[m|der Mai] %[f|-(e)s, -e(n)] |май     |
+|%[m|der Juni] %[f|-(s), -s]    |июнь    |
+|%[m|der Juli] %[f|-(s), -s]    |июль    |
+|%[m|der August] %[f|-(e)s, -e] |август  |
+|%[m|der September] %[f|-(s), -]|сентябрь|
+|%[m|der Oktober] %[f|-(s), -]  |октябрь |
+|%[m|der November] %[f|-(s), -] |ноябрь  |
+|%[m|der Dezember] %[f|-(s), -] |декабрь |
 |]
-
-<!--
-
-[|
-|%[m|der Januar]   |январь  |
-|%[m|der Februar]  |февраль |
-|%[m|der März]     |март    |
-|%[m|der April]    |апрель  |
-|%[m|der Mai]      |май     |
-|%[m|der Juni]     |июнь    |
-|%[m|der Juli]     |июль    |
-|%[m|der August]   |август  |
-|%[m|der September]|сентябрь|
-|%[m|der Oktober]  |октябрь |
-|%[m|der November] |ноябрь  |
-|%[m|der Dezember] |декабрь |
-|]
-
--->

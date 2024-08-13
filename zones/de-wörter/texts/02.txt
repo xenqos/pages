@@ -3,8 +3,8 @@
 # Времена года
 
 [|
-|%[m|der Frühling]|весна|
-|%[m|der Sommer]  |лето |
-|%[m|der Herbst]  |осень|
-|%[m|der Winter]  |зима |
+|%[m|der Frühling]%[f|-s, -e] |весна|
+|%[m|der Sommer]  %[f|-s, -]  |лето |
+|%[m|der Herbst]  %[f|-es, -e]|осень|
+|%[m|der Winter]  %[f|-s, -]  |зима |
 |]
