@@ -18,20 +18,29 @@
   <script type='text/javascript' src='../scripts/local.js'></script>
 </head>
 <body onload='fncGetDivState(); fncGetScrollPosition();'>
-
+<audio id='idTrack' src='../sounds/02.mp3' preload='auto'></audio>
 <div id='idPanel'>
 <div id='idTopbar'>
   <div id='idTopbarNavigation'>
     <a href='../../../index.html'><span class='clNavHome'></span></a>
-    <a href='.html'><span class='clNavLeft'></span></a>
+    <a href='01.html'><span class='clNavLeft'></span></a>
     <a href='../index.html'><span class='clNavUp'></span></a>
-    <a href='.html'><span class='clNavRight'></span></a>
-
+    <a href='03.html'><span class='clNavRight'></span></a>
+<span class='clNavRewind' onclick='fncRewindTrack(&quot;idTrack&quot;)'></span><span class='clNavPlay' onclick='fncPlayTrack(&quot;idTrack&quot;)'></span>
   </div>
 </div>
 <div id='idContent'>
 
-</span>
+## Время
+
+# Времена года
+
+[|
+|%[m|der Frühling]%[f|-s, -e] |весна|
+|%[m|der Sommer]  %[f|-s, -]  |лето |
+|%[m|der Herbst]  %[f|-es, -e]|осень|
+|%[m|der Winter]  %[f|-s, -]  |зима |
+|]
 
 
 </div>

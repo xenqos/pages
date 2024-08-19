@@ -18,20 +18,32 @@
   <script type='text/javascript' src='../scripts/local.js'></script>
 </head>
 <body onload='fncGetDivState(); fncGetScrollPosition();'>
-
+<audio id='idTrack' src='../sounds/05.mp3' preload='auto'></audio>
 <div id='idPanel'>
 <div id='idTopbar'>
   <div id='idTopbarNavigation'>
     <a href='../../../index.html'><span class='clNavHome'></span></a>
-    <a href='.html'><span class='clNavLeft'></span></a>
+    <a href='04.html'><span class='clNavLeft'></span></a>
     <a href='../index.html'><span class='clNavUp'></span></a>
-    <a href='.html'><span class='clNavRight'></span></a>
-
+    <a href='06.html'><span class='clNavRight'></span></a>
+<span class='clNavRewind' onclick='fncRewindTrack(&quot;idTrack&quot;)'></span><span class='clNavPlay' onclick='fncPlayTrack(&quot;idTrack&quot;)'></span>
   </div>
 </div>
 <div id='idContent'>
 
-</span>
+## Время
+
+# Время суток
+
+[|
+|%[m|der Morgen] %[f|-s, -e]          |утро      |
+|%[m|der Tag] %[f|-(e)s, -e]          |день      |
+|%[m|der Mittag] %[f|-s, -e]          |полдень   |
+|%[m|der Nachmittag] %[f|-(e)s, -e]   |послеобеда|
+|%[m|der Abend] %[f|-s, -e]           |вечер     |
+|%[m|die Nacht] %[f|-, Nächte]        |ночь      |
+|%[m|die Mitternacht] %[f|-, ..nächte]|полночь   |
+|]
 
 
 </div>

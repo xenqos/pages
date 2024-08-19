@@ -18,20 +18,32 @@
   <script type='text/javascript' src='../scripts/local.js'></script>
 </head>
 <body onload='fncGetDivState(); fncGetScrollPosition();'>
-
+<audio id='idTrack' src='../sounds/03.mp3' preload='auto'></audio>
 <div id='idPanel'>
 <div id='idTopbar'>
   <div id='idTopbarNavigation'>
     <a href='../../../index.html'><span class='clNavHome'></span></a>
-    <a href='.html'><span class='clNavLeft'></span></a>
+    <a href='02.html'><span class='clNavLeft'></span></a>
     <a href='../index.html'><span class='clNavUp'></span></a>
-    <a href='.html'><span class='clNavRight'></span></a>
-
+    <a href='04.html'><span class='clNavRight'></span></a>
+<span class='clNavRewind' onclick='fncRewindTrack(&quot;idTrack&quot;)'></span><span class='clNavPlay' onclick='fncPlayTrack(&quot;idTrack&quot;)'></span>
   </div>
 </div>
 <div id='idContent'>
 
-</span>
+## Время
+
+# Дни недели
+
+[|
+|%[m|der Montag] %[f|-s, -e]    |понедельник|
+|%[m|der Dienstag] %[f|-s, -e]  |вторник    |
+|%[m|der Mittwoch] %[f|-s, -e]  |среда      |
+|%[m|der Donnerstag] %[f|-s, -e]|четверг    |
+|%[m|der Freitag] %[f|-s, -e]   |пятница    |
+|%[m|der Samstag] %[f|-s, -e]   |суббота    |
+|%[m|der Sonntag] %[f|-s, -e]   |воскресенье|
+|]
 
 
 </div>
