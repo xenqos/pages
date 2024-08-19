@@ -1,0 +1,26 @@
+## Game
+
+# Range Notations
+
+### Hero Any Pair
+&[z|22+]
+&emsp;&[z|22], &[z|33], &[z|44], &[z|55], &[z|66], &[z|77], &[z|88], &[z|99],
+&emsp;&[z|TT], &[z|JJ], &[z|QQ], &[z|KK], &[z|AA]
+
+### Hero Jacks or Better
+&[z|JJ+]&ensp;
+&emsp;&[z|JJ], &[z|QQ], &[z|KK], &[z|AA]
+
+### Hero KQ or Better
+&[z|KQ+]
+&emsp;&[z|KQ], &[z|AJ], &[z|AQ], &[z|AK]
+
+### Hero AJ suited or Better
+&[z|AJs+]
+&emsp;&[z|AJs], &[z|AQs], &[z|AKs]
+
+### Villain Hand Range
+&[z|TT+, KJs+, AJ+]&ensp;:
+&emsp;&[z|TT], &[z|JJ], &[z|QQ], &[z|KK], &[z|AA],
+&emsp;&[z|KJs], &[z|KQs],
+&emsp;&[z|AJs], &[z|AJ], &[z|AQs], &[z|AQ], &[z|AKs], &[z|AK],
