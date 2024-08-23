@@ -7,7 +7,7 @@
 [|
 |%[m|der Januar] %[f|-(s), -e]  |январь  |
 |%[m|der Februar] %[f|-(s), -e] |февраль |
-|%[m|der März] %[f|-(es, -e]    |март    |
+|%[m|der März] %[f|-(es), -e]   |март    |
 |%[m|der April] %[f|-(s), -e]   |апрель  |
 |%[m|der Mai] %[f|-(e)s, -e(n)] |май     |
 |%[m|der Juni] %[f|-(s), -s]    |июнь    |
@@ -18,3 +18,16 @@
 |%[m|der November] %[f|-(s), -] |ноябрь  |
 |%[m|der Dezember] %[f|-(s), -] |декабрь |
 |]
+
+|der Januar   |-(s), -e     |январь
+|der Februar  |-(s), -e     |февраль
+|der März     |-(es, -e     |март
+|der April    |-(s), -e     |апрель
+|der Mai      |-(e)s, -e(n) |май
+|der Juni     |-(s), -s     |июнь
+|der Juli     |-(s), -s     |июль
+|der August   |-(e)s, -e    |август
+|der September|-(s), -      |сентябрь
+|der Oktober  |-(s), -      |октябрь
+|der November |-(s), -      |ноябрь
+|der Dezember |-(s), -      |декабрь
