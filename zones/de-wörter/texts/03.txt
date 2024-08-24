@@ -2,12 +2,10 @@
 
 # Дни недели
 
-[|
-|%[m|der Montag] %[f|-s, -e]    |понедельник|
-|%[m|der Dienstag] %[f|-s, -e]  |вторник    |
-|%[m|der Mittwoch] %[f|-s, -e]  |среда      |
-|%[m|der Donnerstag] %[f|-s, -e]|четверг    |
-|%[m|der Freitag] %[f|-s, -e]   |пятница    |
-|%[m|der Samstag] %[f|-s, -e]   |суббота    |
-|%[m|der Sonntag] %[f|-s, -e]   |воскресенье|
-|]
+|der Montag    |des Montags,     die Montage    |понедельник
+|der Dienstag  |des Dienstags,   die Dienstage  |вторник
+|der Mittwoch  |des Mittwochs,   die Mittwoche  |среда
+|der Donnerstag|des Donnerstags, die Donnerstage|четверг
+|der Freitag   |des Freitags,    die Freitage   |пятница
+|der Samstag   |des Samstags,    die Samstage   |суббота
+|der Sonntag   |des Sonntags,    die Sonntage   |воскресенье

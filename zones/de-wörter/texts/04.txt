@@ -2,9 +2,7 @@
 
 # Указатели дней
 
-[|
-|%[m|vorgestern]|позавчера  |
-|%[m|gestern]   |вчера      |
-|%[m|heute ]    |сегодня    |
-|%[m|übermorgen]|послезавтра|
-|]
+|vorgestern| |позавчера
+|gestern   | |вчера
+|heute     | |сегодня
+|übermorgen| |послезавтра
