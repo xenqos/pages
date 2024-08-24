@@ -4,34 +4,21 @@
 
 # Месяцы
 
-[|
-|%[m|der Januar] %[f|-(s), -e]~~&ensp;%[f|-(s), -e]  |январь  |
-|%[m|der Februar] %[f|-(s), -e] |февраль |
-|%[m|der März] %[f|-(es), -e]   |март    |
-|%[m|der April] %[f|-(s), -e]   |апрель  |
-|%[m|der Mai] %[f|-(e)s, -e(n)] |май     |
-|%[m|der Juni] %[f|-(s), -s]    |июнь    |
-|%[m|der Juli] %[f|-(s), -s]    |июль    |
-|%[m|der August] %[f|-(e)s, -e] |август  |
-|%[m|der September] %[f|-(s), -]|сентябрь|
-|%[m|der Oktober] %[f|-(s), -]  |октябрь |
-|%[m|der November] %[f|-(s), -] |ноябрь  |
-|%[m|der Dezember] %[f|-(s), -] |декабрь |
-|]
+|der Januar   |des Januars,    die Januare  |январь
+|der Februar  |des Februars,   die Februare |февраль
+|der März     |des Märzes,     die Märze    |март
+|der April    |des Aprils,     die Aprile   |апрель
+|der Mai      |des Mais,       die Maie     |май
+|der Juni     |des Junis,      die Junis    |июнь
+|der Juli     |des Julis,      die Julis    |июль
+|der August   |des Augusts,    die Auguste  |август
+|der September|des Septembers, die September|сентябрь
+|der Oktober  |des Oktobers,   die Oktober  |октябрь
+|der November |des Novembers,  die November |ноябрь
+|der Dezember |des Dezembers,  die Dezember |декабрь
 
-|der Januar   |-(s), -e     |январь
-|der Februar  |-(s), -e     |февраль
-|der März     |-(es), -e    |март
-|der April    |-(s), -e     |апрель
-|der Mai      |-(e)s, -e(n) |май
-|der Juni     |-(s), -s     |июнь
-|der Juli     |-(s), -s     |июль
-|der August   |-(e)s, -e    |август
-|der September|-(s), -      |сентябрь
-|der Oktober  |-(s), -      |октябрь
-|der November |-(s), -      |ноябрь
-|der Dezember |-(s), -      |декабрь
-
-|gehen |ging, ist gegangen|идти
-|fahren|fuhr, ist gefahren|ездить
-|schauen|schaute, hat geschaut • auf A|видеть, смотреть
+<!--
+|gehen |ging, sein gegangen|идти
+|fahren|fuhr, sein gefahren|ездить
+|schauen|schaute, haben geschaut • auf Acc|видеть, смотреть
+-->
