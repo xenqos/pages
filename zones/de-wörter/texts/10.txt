@@ -4,20 +4,36 @@
 
 # Посуда
 
+|der Teller      |des Tellers,    die Teller     |тарелка
+|die Tasse       |der Tasse,      die Tassen     |чашка
+|das Glas        |des Glases,     die Gläser     |стакан
+|die Schüssel    |der Schüssel,   die Schüsseln  |миска
+|die Gabel       |der Gabel,      die Gabeln     |вилка
+|das Messer      |des Messers,    die Messer     |нож
+|der Löffel      |des Löffels,    die Löffel     |ложка
+|die Kanne       |der Kanne,      die Kannen     |чайник
+|die Pfanne      |der Pfanne,     die Pfannen    |сковорода
+|der Topf        |des Topfes,     die Töpfe      |кастрюля
+|das Besteck     |des Bestecks,   die Bestecke   |приборы
+|die Serviette   |der Serviette,  die Servietten |салфетка
+|der Becher      |des Bechers,    die Becher     |кружка
+|die Untertasse  |der Untertasse, die Untertassen|блюдце
+|die Platte      |der Platte,     die Platten    |поднос
+
 [|
-|%[m|der Teller] %[f|-s, -]     |тарелка  |
-|%[m|die Tasse] %[f|-, -n]      |чашка    |
-|%[m|das Glas] %[f|-es, Gläser] |стакан   |
-|%[m|die Schüssel] %[f|-, -n]   |миска    |
-|%[m|die Gabel] %[f|-, -n]      |вилка    |
-|%[m|das Messer] %[f|-s, -]     |нож      |
-|%[m|der Löffel] %[f|-s, -]     |ложка    |
-|%[m|die Kanne] %[f|-, -n]      |чайник   |
-|%[m|die Pfanne] %[f|-, -n]     |сковорода|
-|%[m|der Topf] %[f|-(e)s, Töpfe]|кастрюля |
-|%[m|das Besteck] %[f|-(e)s, -e]|приборы  |
-|%[m|die Serviette] %[f|-, -n]  |салфетка |
-|%[m|der Becher] %[f|-s, -]     |кружка   |
-|%[m|die Untertasse] %[f|-, -n] |блюдце   |
-|%[m|die Platte] %[f|-, -n]     |поднос   |
+|%[m|der Teller    ]|%[f|des Tellers,    die Teller     ]|тарелка  |
+|%[m|die Tasse     ]|%[f|der Tasse,      die Tassen     ]|чашка    |
+|%[m|das Glas      ]|%[f|des Glases,     die Gläser     ]|стакан   |
+|%[m|die Schüssel  ]|%[f|der Schüssel,   die Schüsseln  ]|миска    |
+|%[m|die Gabel     ]|%[f|der Gabel,      die Gabeln     ]|вилка    |
+|%[m|das Messer    ]|%[f|des Messers,    die Messer     ]|нож      |
+|%[m|der Löffel    ]|%[f|des Löffels,    die Löffel     ]|ложка    |
+|%[m|die Kanne     ]|%[f|der Kanne,      die Kannen     ]|чайник   |
+|%[m|die Pfanne    ]|%[f|der Pfanne,     die Pfannen    ]|сковорода|
+|%[m|der Topf      ]|%[f|des Topfes,     die Töpfe      ]|кастрюля |
+|%[m|das Besteck   ]|%[f|des Bestecks,   die Bestecke   ]|приборы  |
+|%[m|die Serviette ]|%[f|der Serviette,  die Servietten ]|салфетка |
+|%[m|der Becher    ]|%[f|des Bechers,    die Becher     ]|кружка   |
+|%[m|die Untertasse]|%[f|der Untertasse, die Untertassen]|блюдце   |
+|%[m|die Platte    ]|%[f|der Platte,     die Platten    ]|поднос   |
 |]
