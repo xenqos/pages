@@ -3,14 +3,17 @@
 ## Абстракции
 
 # Формы
-
+---
 |das Quadrat |des Quadrats,  die Quadrate |квадрат
-|der Kreis   |des Kreises,   die Kreise   |круг
-|das Dreieck |des Dreiecks,  die Dreiecke |треугольник
-|das Rechteck|des Rechtecks, die Rechtecke|прямоугольник
-|das Oval    |des Ovals,     die Ovale    |овал
 |der Würfel  |des Würfels,   die Würfel   |куб
+---
+|der Kreis   |des Kreises,   die Kreise   |круг
+|das Oval    |des Ovals,     die Ovale    |овал
+---
 |die Kugel   |der Kugel,     die Kugeln   |сфера
 |der Zylinder|des Zylinders, die Zylinder |цилиндер
 |der Kegel   |des Kegels,    die Kegel    |конус
+---
+|das Dreieck |des Dreiecks,  die Dreiecke |треугольник
+|das Rechteck|des Rechtecks, die Rechtecke|прямоугольник
 |das Achteck |des Achtecks,  die Achtecke |восьмиугольник
