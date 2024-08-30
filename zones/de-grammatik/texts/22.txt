@@ -2,8 +2,8 @@
 
 # Неопределённые 1
 
+---
 ### весь
-
 [|
 ^    ^m.        ^f.        ^n.        ^p.        ^
 |nom.|%[m|aller]|%[m|alle ]|%[m|alles]|%[m|alle ]|
@@ -12,8 +12,8 @@
 |akk.|%[m|allen]|%[m|alle ]|%[m|alles]|%[m|alle ]|
 |]
 
+---
 ### некий
-
 [|
 ^    ^m.        ^f.        ^n.        ^p.        ^
 |nom.|%[m|einer]|%[m|eine ]|%[m|eines]|%[m|eine ]|
@@ -22,8 +22,8 @@
 |akk.|%[m|einen]|%[m|eine ]|%[m|eines]|%[m|eine ]|
 |]
 
+---
 ### никто
-
 [|
 ^    ^m.        ^f.        ^n.        ^p.        ^
 |nom.|%[m|keiner]|%[m|keine ]|%[m|keines]|%[m|keine ]|
@@ -32,8 +32,8 @@
 |akk.|%[m|keinen]|%[m|keine ]|%[m|keines]|%[m|keine ]|
 |]
 
+---
 ### каждый
-
 [|
 ^    ^m.        ^f.        ^n.        ^
 |nom.|%[m|jeder]|%[m|jede ]|%[m|jedes]|
@@ -42,8 +42,8 @@
 |akk.|%[m|jeden]|%[m|jede ]|%[m|jedes]|
 |]
 
+---
 ### некоторый
-
 [|
 ^    ^m.        ^f.        ^n.        ^p.        ^
 |nom.|%[m|mancher]|%[m|manche ]|%[m|manches]|%[m|manche ]|
@@ -52,8 +52,8 @@
 |akk.|%[m|manchen]|%[m|manche ]|%[m|manches]|%[m|manche ]|
 |]
 
+---
 ### кто-то
-
 [|
 |nom.|%[m|jemand  ]|
 |gen.|%[m|jemandes]|
@@ -61,8 +61,8 @@
 |akk.|%[m|jemanden]|
 |]
 
+---
 ### никто
-
 [|
 |nom.|%[m|niemand  ]|
 |gen.|%[m|niemandes]|
@@ -70,8 +70,8 @@
 |akk.|%[m|niemanden]|
 |]
 
+---
 ### каждый
-
 [|
 |nom.|%[m|jedermann ]|
 |gen.|%[m|jedermanns]|
@@ -79,8 +79,8 @@
 |akk.|%[m|jedermann ]|
 |]
 
+---
 ### кто-либо
-
 [|
 |nom.|%[m|irgendwer]|
 |gen.|%[m|         ]|

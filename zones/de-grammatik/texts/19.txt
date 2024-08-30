@@ -10,6 +10,9 @@
 |]
 
 ### mein
+[!
+мой
+!]
 [|
 ^    ^m.         ^f.         ^n.         ^p.         ^
 |nom.|%[m|mein  ]|%[m|meine ]|%[m|mein ] |%[m|meine ]|
@@ -19,6 +22,9 @@
 |]
 
 ### dein
+[!
+твой
+!]
 [|
 ^    ^m.         ^f.         ^n.         ^p.         ^
 |nom.|%[m|dein  ]|%[m|deine ]|%[m|dein ] |%[m|deine ]|
@@ -28,6 +34,9 @@
 |]
 
 ### sein %[dm|]
+[!
+его
+!]
 [|
 ^    ^m.         ^f.         ^n.         ^p.         ^
 |nom.|%[m|sein  ]|%[m|seine ]|%[m|sein ] |%[m|seine ]|
@@ -37,6 +46,9 @@
 |]
 
 ### ihr %[df|]
+[!
+её
+!]
 [|
 ^    ^m.        ^f.        ^n.        ^p.        ^
 |nom.|%[m|ihr  ]|%[m|ihre ]|%[m|ihr  ]|%[m|ihre ]|
@@ -46,6 +58,9 @@
 |]
 
 ### sein %[dn|]
+[!
+его
+!]
 [|
 ^    ^m.         ^f.         ^n.         ^p.         ^
 |nom.|%[m|sein  ]|%[m|seine] |%[m|sein  ]|%[m|seine ]|
@@ -55,6 +70,9 @@
 |]
 
 ### unser
+[!
+наш
+!]
 [|
 ^    ^m.            ^f.            ^n.            ^p.            ^
 |nom.|%[m|unser    ]|%[m|uns(e)re ]|%[m|unser    ]|%[m|uns(e)re ]|
@@ -64,6 +82,9 @@
 |]
 
 ### euer
+[!
+ваш
+!]
 [|
 ^    ^m.           ^f.           ^n.           ^p.           ^
 |nom.|%[m|euer    ]|%[m|eu(e)re ]|%[m|euer    ]|%[m|eu(e)re ]|
@@ -73,6 +94,9 @@
 |]
 
 ### ihr
+[!
+их
+!]
 [|
 ^    ^m.        ^f.        ^n.        ^p.        ^
 |nom.|%[m|ihr  ]|%[m|ihre ]|%[m|ihr  ]|%[m|ihre ]|
