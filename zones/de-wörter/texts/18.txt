@@ -1,17 +1,19 @@
-## Числительные ##
+## Абстракции ##
 
-## Числительные
+## Абстракции
 
-# Количественные 0 - 10
-
-|null  | |0
-|eins  | |1
-|zwei  | |2
-|drei  | |3
-|vier  | |4
-|fünf  | |5
-|sechs | |6
-|sieben| |7
-|acht  | |8
-|neun  | |9
-|zehn  | |10
+# Формы
+---
+|das Quadrat |des Quadrats,  die Quadrate |квадрат
+|der Würfel  |des Würfels,   die Würfel   |куб
+---
+|der Kreis   |des Kreises,   die Kreise   |круг
+|das Oval    |des Ovals,     die Ovale    |овал
+---
+|die Kugel   |der Kugel,     die Kugeln   |сфера
+|der Zylinder|des Zylinders, die Zylinder |цилиндер
+|der Kegel   |des Kegels,    die Kegel    |конус
+---
+|das Dreieck |des Dreiecks,  die Dreiecke |треугольник
+|das Rechteck|des Rechtecks, die Rechtecke|прямоугольник
+|das Achteck |des Achtecks,  die Achtecke |восьмиугольник
