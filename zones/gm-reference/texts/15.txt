@@ -1,6 +1,8 @@
 ## Game
 
-# Buy-In
+# Buy-In & Stack Size
+
+### Buy-In
 
 [!
 Initial 'Buy-In' = 20 - 200 of 'Big Blind'
@@ -14,3 +16,12 @@ e.g.:
 >> 'Buy-In' =
 >> 20 x $0.25 = $10
 >> 200 x $0.50 = $100
+
+### Stack Size
+
+[|
+|Short-stacked |< 25 bb    |
+|Medium-stacked|26 – 50 bb |
+|Big-stacked   |51 – 100 bb|
+|Deep-stacked  |> 101 bb   |
+|]
