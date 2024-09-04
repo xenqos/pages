@@ -1,18 +1,35 @@
-## Preflop
+## GTO ##
 
-# Preflop Potentials
+## Game Theory Optimal - GTO
 
-### Weak Potential
-&[c|A]&[h|4] - Ace & Weak Kicker
-&[d|K]&[c|T] - Offsuited, Unconnected
-&[s|9]&[c|6] - Random Numbers
+# Definition & Principles
 
-### Medium Potential
-&[c|A]&[h|Q] - Ace & Medium Kicker
-&[d|7]&[d|5] - Suited, Unconnected
-&[s|J]&[c|T] - Medium Kickers
+### Definition
 
-### Good Potential
-&[c|A]&[h|K] - Ace & Strong Kicker
-&[d|9]&[d|8] - Suited, Connected
-&[s|6]&[c|6] - Pairs
+[-
+Makes decisions unexploitable by villains.
+Balances hero's range based on mathematical principles.
+Does not rely on reads or tendencies of villains.
+Minimizes losses against any villains's strategy.
+Ensures a profitable play in the long run.
+-]
+
+### Principles
+
+#### Balanced Ranges
+A GTO player maintains a balanced range of hands in various situations (e.g., pre-flop, post-flop).
+This means mixing strong hands with bluffs to prevent opponents from easily exploiting your strategy.
+
+#### Equity and Pot Odds
+Understand the concept of equity (the chance your hand has to win at showdown) and pot odds (the ratio of the current size of the pot to the size of the bet you must call).
+Make decisions based on whether the potential reward justifies the risk.
+
+#### Bet Sizing
+Use various bet sizes to create a balanced strategy. Different sizes can represent different ranges of hands.
+Common sizes include small bets (for value and bluffs) and larger bets (to apply pressure).
+
+#### Indifference Principle
+A GTO strategy aims to make opponents indifferent to their choices. For example, if you are bluffing and value betting at the right frequencies, your opponent cannot profitably call or fold.
+
+#### Exploiting Deviations
+While GTO is about being unexploitable, it’s also important to recognize when opponents deviate from GTO play. Adjust your strategy to exploit their mistakes.
