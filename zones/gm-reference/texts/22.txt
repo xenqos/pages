@@ -2,21 +2,38 @@
 
 ## Preflop
 
-# Chance to Win
+# Starting Hands
 
 [!
 % - chance to win against a random hand
 !]
 
-^[probability-win-random.webp]
-^[probability-win-random-01.webp]
-^[probability-win-random-02.webp]
-^[probability-win-random-03.webp]
-^[probability-win-random-04.webp]
-^[probability-win-random-05.webp]
-^[probability-win-random-06.webp]
+### Early Position
+
+[!
+SB, BB, UTG, UTG+1
+!]
+
+^[hand-grid-early.webp]
+
+### Middle Position
+
+[!
+UTG+2, UTG+3, LJ
+!]
+
+^[hand-grid-middle.webp]
+
+### Late Position
+
+[!
+BTN, CO, HJ
+!]
+
+^[hand-grid-late.webp]
 
 <!--
+https://redsharkpoker.com/starting-poker-hand/
 https://www.mypokercoaching.com/poker-hands-rankings/best-poker-starting-hands/
 http://www.cardfight.com/hand_matchups.html
 https://poker.md/tools/poker-math-and-probability.pdf
