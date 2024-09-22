@@ -1,28 +1,54 @@
 ## Game
 
-# Player Styles
+# Actions
 
-### Loose
+### Check
 [!
-To play many hands
-To play weak hands
+To pass Action
+Not in Preflop
+Does not forfeit right to the pot
 !]
 
-### Passive
+### Fold
 [!
-To call frequently
-To raise rarely
+To discard Hand
+To forfeit right to the pot
 !]
 
-### Tight
+### Bet
 [!
-To play strong hands
-To fold weak hands
+To make a wager
+To place the wager into the pot
 !]
 
-### Agressive
+### Call
 [!
-To bet frequently
-To raise frequently
-To call rarely
+To match the current wager
 !]
+
+### Raise
+[!
+To increase current wager
+At least double size
+!]
+
+### Re-raise
+[!
+To raise current raise
+!]
+
+### Raise Sequences
+[|
+|2bet|The second bet|first raise in a sequence |
+|3bet|The third bet |second raise in a sequence|
+|4bet|The fourth bet|third raise in a sequence |
+|5bet|The fifth bet |fourth raise in a sequence|
+|]
+
+### Types
+[|
+^Aggressive^Passive^
+|Bet  |Call   |
+|Raise|Check  |
+|Re-raise|Fold|
+|]

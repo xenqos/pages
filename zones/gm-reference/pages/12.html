@@ -33,65 +33,42 @@
 
 <h2>Game</h2>
 
-<h1>Betting Rounds</h1>
+<h1>Betting Variations</h1>
 
-<h3>Pre-Flop</h3>
+<div class='clOverflow'>
+<table>
+<tr>
+<td>FL</td><td>Fixed Limit</td></tr>
+<tr><td>PL</td><td>Pot Limit</td></tr>
+<tr><td>NL</td><td>No Limit</td></tr>
+</table>
+</div>
+
+
+<h3>Fixed Limit</h3>
 <blockquote>
-'Small Blind' places small blind<br>
-'Big Blind' places big blind<br>
-'Button' deal 'Hole Cards' starting from left<br>
-If required all players place 'Ante'<br>
-Each player clockwise places: 'Fold' / 'Call' / 'Raise'<br>
+Raise Limit = Big Blind<br>
+Increments of Big Blind<br>
+Turn, River - Betting Amount Doubles<br>
+e.g.: Blinds $1-$2, Betting Limits $2-$4<br>
+Has maximum of allowable raises (bet + 3 times)<br>
+Spreads may be used for Raise $1-$3<br>
 </blockquote>
 
-<ul>
-<li>'Big Blind' = 2 x 'Small Blind'</li>
-<li>'Call' = 'Big Blind'</li>
-</ul>
-
-<h3>Flop</h3>
+<h3>Pot Limit</h3>
 <blockquote>
-'Button' deal 'Flop Community Cards'<br>
-'Small Blind' places: 'Fold' / 'Check' / 'Bet'<br>
-Each player clockwise places: 'Fold' / 'Check' / 'Bet' / 'Call' / 'Raise'<br>
+Maximum Raise = Size of Pot<br>
+In $1-$2 game maximum raise - $7<br>
+Small Blind $1 + Big Blind $2 + Call $2 + Raise $2 = $7<br>
+Minimum Raise = Size of Previous Bet<br>
 </blockquote>
 
-<h3>Turn</h3>
+<h3>No Limit</h3>
 <blockquote>
-'Button' deal 'Turn Community Card'<br>
-'Small Blind' places: 'Fold' / 'Check' / 'Bet'<br>
-Each player clockwise places: 'Fold' / 'Check' / 'Bet' / 'Call' / 'Raise'<br>
+Blind structure = $1-$2<br>
+Minimum Raise = Size of Previous Bet<br>
+Maximum = Chips in Stack<br>
 </blockquote>
-
-<h3>River</h3>
-<blockquote>
-'Button' deal 'River Community Card'<br>
-'Small Blind' places: 'Fold' / 'Check' / 'Bet'<br>
-Each player clockwise places: 'Fold' / 'Check' / 'Bet' / 'Call' / 'Raise'<br>
-</blockquote>
-
-<h3>Showdown</h3>
-<blockquote>
-Show 'Hole Cards'<br>
-The best 'Hand' wins<br>
-</blockquote>
-
-<h4>Raise & Re-raise</h4>
-
-<span class='m'>IF</span><br>
-&emsp; 'Player' raises / re-raises<br>
-<span class='m'>THEN</span><br>
-&emsp; All 'Players' starting from his left clockwise must match 'Raise' / 'Re-raise'<br>
-&emsp; Thus the betting stops at 'Player' to the right of the one who made 'Raise' / 'Re-raise'<br>
-
-<span class='m'>IF</span><br>
-&emsp; 'Players' >= 3 in 'Hand' ('Game')<br>
-<span class='m'>THEN</span><br>
-&emsp; 3-4 'Raise' / 'Re-raise' - allowed<br>
-<span class='m'>ELSEIF</span><br>
-&emsp; 'Players' = 2 are in 'Hand' ('Game')<br>
-<span class='m'>THEN</span><br>
-&emsp; 'Raise' / 'Re-raise' - not limited<br>
 
 
 </div>

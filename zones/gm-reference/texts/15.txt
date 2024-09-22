@@ -1,27 +1,43 @@
-## Game
+## Probability & Odds ##
 
-# Buy-In & Stack Size
+## Probability & Odds
 
-### Buy-In
+# Outs
 
 [!
-Initial 'Buy-In' = 20 - 200 of 'Big Blind'
+Out - a card that improves a hand
 !]
 
-e.g.:
+## Terms
 
-%[m|IF]
->> ( 'Blinds' = $0.25 / $0.50 )
-%[m|THEN]
->> 'Buy-In' =
->> 20 x $0.25 = $10
->> 200 x $0.50 = $100
 
-### Stack Size
+
+
+
+### 9 Outs to Flush
 
 [|
-|Short-stacked |< 25 bb    |
-|Medium-stacked|26 – 50 bb |
-|Big-stacked   |51 – 100 bb|
-|Deep-stacked  |> 101 bb   |
+^Hole^Board^Outs^
+|&[d|A]&[d|8]|&[d|2]&[c|3]&[d|4]|&[d|K]&[d|Q]&[d|J]&[d|T]&[d|9]&[d|7]&[d|6]&[d|5]&[d|3]|
+|]
+
+### 2 Outs to Straight
+
+[|
+^Hole^Board^Outs^
+|&[d|T]&[s|8]|&[h|7]&[c|3]&[d|9]|&[x|J]&[x|6]|
+|]
+
+### 4 Outs to Full House
+
+[|
+^Hole^Board^Outs^
+|&[c|7]&[c|6]|&[s|6]&[d|7]&[h|A]|&[s|7]&[h|7]&[h|6]&[d|6]|
+|]
+
+### 4 Outs to Inside Straight
+
+[|
+^Hole^Board^Outs^
+|&[c|7]&[c|6]|&[s|6]&[d|7]&[h|A]|&[s|7]&[h|7]&[h|6]&[d|6]|
 |]

@@ -1,54 +1,26 @@
 ## Game
 
-# Actions
+# Action Lines
 
-### Check
-[!
-To pass Action
-Not in Preflop
-Does not forfeit right to the pot
-!]
+### Limp/Fold L/F
+>> Enter the pot by limping (calling the big blind) and then folds to a raise.
 
-### Fold
-[!
-To discard Hand
-To forfeit right to the pot
-!]
+### Limp/Raise L/R
+>> Enter the pot by limping and then re-raises after someone else raises.
 
-### Bet
-[!
-To make a wager
-To place the wager into the pot
-!]
+### Check/Fold X/F
+>> Check and then fold to an opponent’s bet.
 
-### Call
-[!
-To match the current wager
-!]
+### Check/Call X/C
+>> Check and then call an opponent’s bet.
 
-### Raise
-[!
-To increase current wager
-At least double size
-!]
+### Check/Raise X/R
+>> Check and then raise an opponent’s bet.
 
-### Re-raise
-[!
-To raise current raise
-!]
+### Bet/Bet B/B
+>> Betting the turn after the opponent called or X/C the flop.
+>> a.k.a. double-barreling or two-barreling.
 
-### Raise Sequences
-[|
-|2bet|The second bet|first raise in a sequence |
-|3bet|The third bet |second raise in a sequence|
-|4bet|The fourth bet|third raise in a sequence |
-|5bet|The fifth bet |fourth raise in a sequence|
-|]
-
-### Types
-[|
-^Aggressive^Passive^
-|Bet  |Call   |
-|Raise|Check  |
-|Re-raise|Fold|
-|]
+### Bet/Bet/Bet B/B/B
+>> Betting the flop, turn, and river after the opponent called or X/C flop and turn.
+>> a.k.a. triple-barreling.

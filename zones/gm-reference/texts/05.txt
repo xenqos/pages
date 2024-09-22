@@ -1,124 +1,23 @@
-## Table ##
-
 ## Table
 
-# Formats
+# Groups
 
-^[table-positions.webp]
+### Early Position (EP)
+[!
+UTG+1, UTG, BB, SB
+Starts left of 'Button'
+First to act after hole cards are dealt
+!]
 
-## 10 Players
+### Middle Position (MP)
+[!
+UTG+2, UTG+3, LJ
+Starts left of UTG+1
+!]
 
-^[table-positions-10.webp]
-
-[|
-|01|Small Blind      |SB   |Early |
-|02|Big Blind        |BB   |Early |
-|03|Under the Gun    |UTG  |Early |
-|04|Under the Gun + 1|UTG+1|Early |
-|05|Under the Gun + 2|UTG+2|Middle|
-|06|Under the Gun + 3|UTG+3|Middle|
-|07|Lojack           |LJ   |Middle|
-|08|Hijack           |HJ   |Late  |
-|09|Cutoff           |CO   |Late  |
-|10|Button           |BTN  |Late  |
-|]
-
-## 9 Players
-
-^[table-positions-09.webp]
-
-[|
-|01|Small Blind      |SB   |Early |
-|02|Big Blind        |BB   |Early |
-|03|Under the Gun    |UTG  |Early |
-|04|Under the Gun + 1|UTG+1|Early |
-|05|Under the Gun + 2|UTG+2|Middle|
-|06|Lojack           |LJ   |Middle|
-|07|Hijack           |HJ   |Late  |
-|08|Cutoff           |CO   |Late  |
-|09|Button           |BTN  |Late  |
-|]
-
-## 8 Players
-
-^[table-positions-08.webp]
-
-[|
-|01|Small Blind      |SB   |Early |
-|02|Big Blind        |BB   |Early |
-|03|Under the Gun    |UTG  |Early |
-|04|Under the Gun + 1|UTG+1|Early |
-|05|Lojack           |LJ   |Middle|
-|06|Hijack           |HJ   |Late  |
-|07|Cutoff           |CO   |Late  |
-|08|Button           |BTN  |Late  |
-|]
-
-## 7 Players
-
-^[table-positions-07.webp]
-
-[|
-|01|Small Blind  |SB |Early |
-|02|Big Blind    |BB |Early |
-|03|Under the Gun|UTG|Early |
-|04|Lojack       |LJ |Middle|
-|05|Hijack       |HJ |Late  |
-|06|Cutoff       |CO |Late  |
-|07|Button       |BTN|Late  |
-|]
-
-## 6 Players
-
-^[table-positions-06.webp]
-
-[|
-|01|Small Blind  |SB   |Early |
-|02|Big Blind    |BB   |Early |
-|03|Under the Gun|UTG  |Early |
-|04|Hijack       |HJ   |Late  |
-|05|Cutoff       |CO   |Late  |
-|06|Button       |BTN  |Late  |
-|]
-
-## 5 Players
-
-^[table-positions-05.webp]
-
-[|
-|01|Small Blind  |SB   |Early |
-|02|Big Blind    |BB   |Early |
-|03|Under the Gun|UTG  |Early |
-|04|Cutoff       |CO   |Late  |
-|05|Button       |BTN  |Late  |
-|]
-
-## 4 Players
-
-^[table-positions-04.webp]
-
-[|
-|01|Small Blind  |SB   |Early |
-|02|Big Blind    |BB   |Early |
-|03|Under the Gun|UTG  |Early |
-|04|Button       |BTN  |Late  |
-|]
-
-## 3 Players
-
-^[table-positions-03.webp]
-
-[|
-|01|Small Blind|SB |
-|02|Big Blind  |BB |
-|04|Button     |BTN|
-|]
-
-## 2 Players (Heads-Up)
-
-^[table-positions-02.webp]
-
-[|
-|01|Small Blind       |SB      |
-|02|Big Blind / Button|BB / BTN|
-|]
+### Late Position (LP)
+[!
+BTN, CO, HJ
+Starts left of LJ
+Has significant advantage
+!]

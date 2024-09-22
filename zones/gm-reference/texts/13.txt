@@ -1,34 +1,48 @@
 ## Game
 
-# Betting Variations
+# Chips
+
+### Home
+^[chip-values-01.webp]
 
 [|
-|FL|Fixed Limit|
-|PL|Pot Limit|
-|NL|No Limit|
+^Color^Value^
+|White|$1  |
+|Red  |$5  |
+|Blue |$10 |
+|Green|$25 |
+|Black|$100|
 |]
 
-### Fixed Limit
-[!
-Raise Limit = Big Blind
-Increments of Big Blind
-Turn, River - Betting Amount Doubles
-e.g.: Blinds $1-$2, Betting Limits $2-$4
-Has maximum of allowable raises (bet + 3 times)
-Spreads may be used for Raise $1-$3
-!]
+### Standard
+^[chip-values-02.webp]
 
-### Pot Limit
-[!
-Maximum Raise = Size of Pot
-In $1-$2 game maximum raise - $7
-Small Blind $1 + Big Blind $2 + Call $2 + Raise $2 = $7
-Minimum Raise = Size of Previous Bet
-!]
+[|
+^Color^Value^
+|White |$1    |
+|Red   |$5    |
+|Orange|$10   |
+|Yellow|$20   |
+|Green |$25   |
+|Black |$100  |
+|Purple|$500  |
+|Maroon|$1,000|
+|]
 
-### No Limit
-[!
-Blind structure = $1-$2
-Minimum Raise = Size of Previous Bet
-Maximum = Chips in Stack
-!]
+## Tournament
+^[chip-values-03.webp]
+
+[|
+^Color^Value^
+|Green             |$25       |
+|Black             |$100      |
+|Light Blue        |$500      |
+|Yellow            |$1000     |
+|Orange            |$5000     |
+|Dark Green        |$25,000   |
+|Lavender          |$100,000  |
+|Beige             |$250,000  |
+|Red (Oversized)   |$500,000  |
+|Yellow (Oversized)|$1,000,000|
+|Purple Oversized  |$5,000,000|
+|]

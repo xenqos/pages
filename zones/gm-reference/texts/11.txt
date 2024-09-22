@@ -1,26 +1,61 @@
 ## Game
 
-# Action Lines
+# Betting Rounds
 
-### Limp/Fold L/F
->> Enter the pot by limping (calling the big blind) and then folds to a raise.
+### Pre-Flop
+[!
+'Small Blind' places small blind
+'Big Blind' places big blind
+'Button' deal 'Hole Cards' starting from left
+If required all players place 'Ante'
+Each player clockwise places: 'Fold' / 'Call' / 'Raise'
+!]
 
-### Limp/Raise L/R
->> Enter the pot by limping and then re-raises after someone else raises.
+[-
+'Big Blind' = 2 x 'Small Blind'
+'Call' = 'Big Blind'
+-]
 
-### Check/Fold X/F
->> Check and then fold to an opponent’s bet.
+### Flop
+[!
+'Button' deal 'Flop Community Cards'
+'Small Blind' places: 'Fold' / 'Check' / 'Bet'
+Each player clockwise places: 'Fold' / 'Check' / 'Bet' / 'Call' / 'Raise'
+!]
 
-### Check/Call X/C
->> Check and then call an opponent’s bet.
+### Turn
+[!
+'Button' deal 'Turn Community Card'
+'Small Blind' places: 'Fold' / 'Check' / 'Bet'
+Each player clockwise places: 'Fold' / 'Check' / 'Bet' / 'Call' / 'Raise'
+!]
 
-### Check/Raise X/R
->> Check and then raise an opponent’s bet.
+### River
+[!
+'Button' deal 'River Community Card'
+'Small Blind' places: 'Fold' / 'Check' / 'Bet'
+Each player clockwise places: 'Fold' / 'Check' / 'Bet' / 'Call' / 'Raise'
+!]
 
-### Bet/Bet B/B
->> Betting the turn after the opponent called or X/C the flop.
->> a.k.a. double-barreling or two-barreling.
+### Showdown
+[!
+Show 'Hole Cards'
+The best 'Hand' wins
+!]
 
-### Bet/Bet/Bet B/B/B
->> Betting the flop, turn, and river after the opponent called or X/C flop and turn.
->> a.k.a. triple-barreling.
+#### Raise & Re-raise
+
+%[m|IF]
+&emsp; 'Player' raises / re-raises
+%[m|THEN]
+&emsp; All 'Players' starting from his left clockwise must match 'Raise' / 'Re-raise'
+&emsp; Thus the betting stops at 'Player' to the right of the one who made 'Raise' / 'Re-raise'
+
+%[m|IF]
+&emsp; 'Players' >= 3 in 'Hand' ('Game')
+%[m|THEN]
+&emsp; 3-4 'Raise' / 'Re-raise' - allowed
+%[m|ELSEIF]
+&emsp; 'Players' = 2 are in 'Hand' ('Game')
+%[m|THEN]
+&emsp; 'Raise' / 'Re-raise' - not limited

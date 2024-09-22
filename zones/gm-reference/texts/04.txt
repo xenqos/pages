@@ -1,22 +1,124 @@
-## Cards
+## Table ##
 
-# Card Manufacturers
+## Table
+
+# Formats
+
+^[table-positions.webp]
+
+## 10 Players
+
+^[table-positions-10.webp]
 
 [|
-^Manufacturer   ^Country^Marketed as   ^Li ^Lm^Wi ^Wm^
-|Bicycle        |US     |Poker         |3.5|88|2.5|63|
-|Cartamundi     |Belgium|Poker         |3.5|88|2.5|63|
-|Cartamundi     |Belgium|Bridge        |3.4|87|2.2|56|
-|Piatnik        |Austria|Poker Pro wide|3.5|88|2.5|63|
-|Piatnik        |Austria|Bridge narrow |3.5|89|2.3|58|
-|Kem            |US     |Poker wide    |3.5|89|2.5|64|
-|Kem            |US     |Bridge narrow |3.5|89|2.2|57|
-|De La Rue 1870 |UK     |not specified |3.7|94|2.5|64|
-|De La Rue 1890 |UK     |not specified |3.5|90|2.4|62|
-|Handa          |Denmark|wide          |3.6|91|2.4|62|
-|Ravensburger   |Germany|Poker         |3.6|92|2.3|59|
-|ASS Altenburger|Germany|Poker, Rummy  |3.6|91|2.3|59|
-|Waddingtons    |UK     |Bridge        |3.5|88|2.3|58|
-|Handa          |Denmark|narrow        |3.4|87|2.2|56|
-|Oberg          |Sweden |Poker         |3.4|87|2.2|56|
+|01|Small Blind      |SB   |Early |
+|02|Big Blind        |BB   |Early |
+|03|Under the Gun    |UTG  |Early |
+|04|Under the Gun + 1|UTG+1|Early |
+|05|Under the Gun + 2|UTG+2|Middle|
+|06|Under the Gun + 3|UTG+3|Middle|
+|07|Lojack           |LJ   |Middle|
+|08|Hijack           |HJ   |Late  |
+|09|Cutoff           |CO   |Late  |
+|10|Button           |BTN  |Late  |
+|]
+
+## 9 Players
+
+^[table-positions-09.webp]
+
+[|
+|01|Small Blind      |SB   |Early |
+|02|Big Blind        |BB   |Early |
+|03|Under the Gun    |UTG  |Early |
+|04|Under the Gun + 1|UTG+1|Early |
+|05|Under the Gun + 2|UTG+2|Middle|
+|06|Lojack           |LJ   |Middle|
+|07|Hijack           |HJ   |Late  |
+|08|Cutoff           |CO   |Late  |
+|09|Button           |BTN  |Late  |
+|]
+
+## 8 Players
+
+^[table-positions-08.webp]
+
+[|
+|01|Small Blind      |SB   |Early |
+|02|Big Blind        |BB   |Early |
+|03|Under the Gun    |UTG  |Early |
+|04|Under the Gun + 1|UTG+1|Early |
+|05|Lojack           |LJ   |Middle|
+|06|Hijack           |HJ   |Late  |
+|07|Cutoff           |CO   |Late  |
+|08|Button           |BTN  |Late  |
+|]
+
+## 7 Players
+
+^[table-positions-07.webp]
+
+[|
+|01|Small Blind  |SB |Early |
+|02|Big Blind    |BB |Early |
+|03|Under the Gun|UTG|Early |
+|04|Lojack       |LJ |Middle|
+|05|Hijack       |HJ |Late  |
+|06|Cutoff       |CO |Late  |
+|07|Button       |BTN|Late  |
+|]
+
+## 6 Players
+
+^[table-positions-06.webp]
+
+[|
+|01|Small Blind  |SB   |Early |
+|02|Big Blind    |BB   |Early |
+|03|Under the Gun|UTG  |Early |
+|04|Hijack       |HJ   |Late  |
+|05|Cutoff       |CO   |Late  |
+|06|Button       |BTN  |Late  |
+|]
+
+## 5 Players
+
+^[table-positions-05.webp]
+
+[|
+|01|Small Blind  |SB   |Early |
+|02|Big Blind    |BB   |Early |
+|03|Under the Gun|UTG  |Early |
+|04|Cutoff       |CO   |Late  |
+|05|Button       |BTN  |Late  |
+|]
+
+## 4 Players
+
+^[table-positions-04.webp]
+
+[|
+|01|Small Blind  |SB   |Early |
+|02|Big Blind    |BB   |Early |
+|03|Under the Gun|UTG  |Early |
+|04|Button       |BTN  |Late  |
+|]
+
+## 3 Players
+
+^[table-positions-03.webp]
+
+[|
+|01|Small Blind|SB |
+|02|Big Blind  |BB |
+|04|Button     |BTN|
+|]
+
+## 2 Players (Heads-Up)
+
+^[table-positions-02.webp]
+
+[|
+|01|Small Blind       |SB      |
+|02|Big Blind / Button|BB / BTN|
 |]

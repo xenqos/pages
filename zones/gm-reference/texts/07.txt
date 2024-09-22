@@ -1,42 +1,22 @@
-## Table
+## Game ##
 
-# Positions
+## Game
 
-### Button (BTN)
+# Types
+
+### Cash Game
 [!
-Acts as Dealer
-Shifts clockwise after each Hand
+Minimum Buy-In set
+Maximum Buy-In set
+Blinds do not change
 !]
 
-### Under the Gun (UTG)
+### Tournament
 [!
-First to act Preflop
-Has least information
-Gets maximum pressure
-Relies on Hand strength
-!]
-
-### Under the Gun + 1 (UTG+1)
-[!
-Has minimal information
-Must play relatively tight
-!]
-
-### Under the Gun + 2 (UTG+2)
-[!
-Has minimal information
-Has disadvantageous position after flop
-!]
-
-### In Position” (IP)
-[!
-Player acting last
-Gathering more information
-Enhanced calculation of odds
-Leveraging free cards
-!]
-
-### Out of Position (OOP)
-[!
-Player acting first
+Buy-In set
+All paid money go to Prize Pool
+Organizer takes percentage of Prize Pool
+Blinds increase over time
+Top 10-15% of finishing players are paid an ascending share from Prize Pool
+Winner gets 25-30% of Prize Pool
 !]
