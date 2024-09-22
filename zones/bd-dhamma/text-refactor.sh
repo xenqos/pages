@@ -1,12 +1,12 @@
 #!/bin/bash
 #-------------------------------------------------------------------------------
 
-dir_prefix="${HOME}/mnt/data/Webpages/zones/de-grammatik"
+dir_prefix="${HOME}/mnt/data/Webpages/zones/gm-reference"
 dir_sounds="${dir_prefix}/sounds"
 dir_sources="${dir_prefix}/sources"
 dir_texts="${dir_prefix}/texts"
 
-number_start=19
+number_start=11
 number_shift=1
 
 #-------------------------------------------------------------------------------
