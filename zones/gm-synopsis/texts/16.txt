@@ -1,49 +1,43 @@
+## Probability & Odds ##
+
 ## Probability & Odds
 
-# Definitions
+# Outs
 
-### Outs
-
-An out is any card that can improve a player’s hand.
-For example, if a player has four cards to a flush, there are nine remaining cards of that suit in the deck.
-Therefore, the player has nine outs to complete their flush.
-
-### Probability /вероятность/
 [!
-Насколько вероятно, что событие произойдет?
-Kоличественная мера вероятности происхождения события.
-Выражается в виде десятичной дроби 0.0 - 1.0
-0 - событие никогда не произойдет
-1 - что оно обязательно произойдет
+Out - a card that improves a hand
 !]
 
-### Odds /шансы/
-[!
-Во сколько раз более вероятно, что событие произойдет, чем не произойдет?
-Oтношение шансов наступления события к шансам его ненаступления
-
-relationship between number of favorable outcomes in a given situation versus the number of unfavorable outcomes.
+## Terms
 
 
-Calculating Odds from Probability
-
-If you have a ratio describing probability, i.e. 33% or 1:2, calculate the odds by dividing the outcome you want over all possible outcomes (1/(1+2) = 1/3), then use the formula Odds = P / (1 - P), in this example O = .33 / (1 - .33) = .5.
 
 
- Determine the number of favorable outcomes in a situation
-  Determine the number of unfavorable outcomes.
 
+### 9 Outs to Flush
 
-  Express odds numerically. Generally, odds are expressed as the ratio of favorable outcomes to unfavorable outcomes, often using a colon. In our example, our odds of success would be 2 : 4 - two chances that we'll win versus four chances that we'll lose. Like a fraction, this can be simplified to 1 : 2 by dividing both terms by the common multiple of 2. This ratio is written (in words) as "one to two odds."[4]
-!]
+[|
+^Hole^Board^Outs^
+|&[d|A]&[d|8]|&[d|2]&[c|3]&[d|4]|&[d|K]&[d|Q]&[d|J]&[d|T]&[d|9]&[d|7]&[d|6]&[d|5]&[d|3]|
+|]
 
-### Pot Odds
+### 2 Outs to Straight
 
-Pot odds refer to the ratio of the current size of the pot to the cost of a contemplated call
+[|
+^Hole^Board^Outs^
+|&[d|T]&[s|8]|&[h|7]&[c|3]&[d|9]|&[x|J]&[x|6]|
+|]
 
-For example, if the pot is $100 and a player needs to call a $20 bet to continue playing, the pot odds are 5 to 1. If the odds of completing the hand are 4 to 1, it would be a profitable decision to call the bet. However, if the odds of completing the hand are 6 to 1, it would be a losing decision to call.
+### 4 Outs to Full House
 
+[|
+^Hole^Board^Outs^
+|&[c|7]&[c|6]|&[s|6]&[d|7]&[h|A]|&[s|7]&[h|7]&[h|6]&[d|6]|
+|]
 
-<!--
-https://www.wikihow.com/Calculate-Odds
--->
+### 4 Outs to Inside Straight
+
+[|
+^Hole^Board^Outs^
+|&[c|7]&[c|6]|&[s|6]&[d|7]&[h|A]|&[s|7]&[h|7]&[h|6]&[d|6]|
+|]

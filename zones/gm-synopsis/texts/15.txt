@@ -1,43 +1,18 @@
-## Probability & Odds ##
+## Game
 
-## Probability & Odds
-
-# Outs
-
-[!
-Out - a card that improves a hand
-!]
-
-## Terms
-
-
-
-
-
-### 9 Outs to Flush
+# Table Stakes
 
 [|
-^Hole^Board^Outs^
-|&[d|A]&[d|8]|&[d|2]&[c|3]&[d|4]|&[d|K]&[d|Q]&[d|J]&[d|T]&[d|9]&[d|7]&[d|6]&[d|5]&[d|3]|
-|]
-
-### 2 Outs to Straight
-
-[|
-^Hole^Board^Outs^
-|&[d|T]&[s|8]|&[h|7]&[c|3]&[d|9]|&[x|J]&[x|6]|
-|]
-
-### 4 Outs to Full House
-
-[|
-^Hole^Board^Outs^
-|&[c|7]&[c|6]|&[s|6]&[d|7]&[h|A]|&[s|7]&[h|7]&[h|6]&[d|6]|
-|]
-
-### 4 Outs to Inside Straight
-
-[|
-^Hole^Board^Outs^
-|&[c|7]&[c|6]|&[s|6]&[d|7]&[h|A]|&[s|7]&[h|7]&[h|6]&[d|6]|
+^Blinds^Name^
+|$0.01/$0.02|2NL   |                     |
+|$0.02/$0.04|4NL   |                     |
+|$0.05/$0.10|10NL  |Lowest stake online  |
+|$0.10/$0.25|25NL  |                     |
+|$0.25/$0.50|50NL  |≤  Micro Stakes      |
+|$0.50/$1.00|100NL |                     |
+|$1/$2      |200NL |Lowest stakes live   |
+|$2/$5      |500NL |                     |
+|$5/10      |1000NL|≥ High Stakes online |
+|$10/$20    |2000NL|                     |
+|$25/$50    |5000NL|                     |
 |]
