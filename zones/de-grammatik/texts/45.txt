@@ -1,34 +1,78 @@
+## Verben
 
-## Глаголы
-
-# können
-
-[!
-мочь - способность, возможность
-!]
-
-### Indikativ
+# Konjunktiv I
 
 ##### Präsens
 
 [|
-|ich|%[m|kann  ]|wir|%[m|können]|
-|du |%[m|kannst]|ihr|%[m|könnt ]|
-|er |%[m|kann  ]|sie|%[m|können]|
+|ich| -%[l|e]  |%[m|sage]  |%[m|singe]  |
+|du | -%[l|est]|%[m|sagest]|%[m|singest]|
+|er | -%[l|e]  |%[m|sage]  |%[m|singe]  |
+|wir| -%[l|en] |%[m|sagen] |%[m|singen] |
+|ihr| -%[l|et] |%[m|saget] |%[m|singet] |
+|sie| -%[l|en] |%[m|sagen] |%[m|singen] |
 |]
 
-##### Präteritum
+##### Perfekt
+
+###### Haben + Partizip
 
 [|
-|ich|%[m|konnte  ]|wir|%[m|konnten ]|
-|du |%[m|konntest]|ihr|%[m|konntet ]|
-|er |%[m|konnte  ]|sie|%[m|konnten ]|
+|ich|%[m|habe]  |%[m|gesagt]|
+|du |%[m|habest]|%[m|gesagt]|
+|er |%[m|habe]  |%[m|gesagt]|
+|wir|%[m|haben] |%[m|gesagt]|
+|ihr|%[m|habet] |%[m|gesagt]|
+|sie|%[m|haben] |%[m|gesagt]|
 |]
 
-##### Konjunktiv
+###### Sein + Partizip
 
-%[m|könnte]
+[|
+|ich|%[m|sei]     |%[m|gerannt]|
+|du |%[m|sei](%[m|e])%[m|st]|%[m|gerannt]|
+|er |%[m|sei]     |%[m|gerannt]|
+|wir|%[m|seien]   |%[m|gerannt]|
+|ihr|%[m|seiet]   |%[m|gerannt]|
+|sie|%[m|seien]   |%[m|gerannt]|
+|]
 
-##### Partizip II
+##### Futur I
 
-%[m|gekonnt]
+[|
+|ich|%[m|werde]  |%[m|sagen]|
+|du |%[m|werdest]|%[m|sagen]|
+|er |%[m|werde]  |%[m|sagen]|
+|wir|%[m|werden] |%[m|sagen]|
+|ihr|%[m|werdet] |%[m|sagen]|
+|sie|%[m|werden] |%[m|sagen]|
+|]
+
+[|
+|ich|%[m|werde]  |%[m|singen]|
+|du |%[m|werdest]|%[m|singen]|
+|er |%[m|werde]  |%[m|singen]|
+|wir|%[m|werden] |%[m|singen]|
+|ihr|%[m|werdet] |%[m|singen]|
+|sie|%[m|werden] |%[m|singen]|
+|]
+
+##### Futur II
+
+[|
+|ich|%[m|werde]  |%[m|gesagt haben]|
+|du |%[m|werdest]|%[m|gesagt haben]|
+|er |%[m|werde]  |%[m|gesagt haben]|
+|wir|%[m|werden] |%[m|gesagt haben]|
+|ihr|%[m|werdet] |%[m|gesagt haben]|
+|sie|%[m|werden] |%[m|gesagt haben]|
+|]
+
+[|
+|ich|%[m|werde]  |%[m|gesungen haben]|
+|du |%[m|werdest]|%[m|gesungen haben]|
+|er |%[m|werde]  |%[m|gesungen haben]|
+|wir|%[m|werden] |%[m|gesungen haben]|
+|ihr|%[m|werdet] |%[m|gesungen haben]|
+|sie|%[m|werden] |%[m|gesungen haben]|
+|]

@@ -1,9 +1,11 @@
+#### Вспомогательные глаголы ####
+
 ## Глаголы
 
-# mögen
+# sein
 
 [!
-нравиться - выражение симпатии, предпочтения
+be · быть
 !]
 
 ### Indikativ
@@ -11,27 +13,66 @@
 ##### Präsens
 
 [|
-|ich|%[m|mag  ]|wir|%[m|mögen]|
-|du |%[m|magst]|ihr|%[m|mögt ]|
-|er |%[m|mag  ]|sie|%[m|mögen]|
+|ich|%[m|bin ]|wir|%[m|sind]|
+|du |%[m|bist]|ihr|%[m|seid]|
+|er |%[m|ist ]|sie|%[m|sind]|
 |]
 
 ##### Präteritum
 
 [|
-|ich|%[m|mochte  ]|wir|%[m|mochten ]|
-|du |%[m|mochtest]|ihr|%[m|mochtet ]|
-|er |%[m|mochte  ]|sie|%[m|mochten ]|
+|ich|%[m|war  ]|wir|%[m|waren]|
+|du |%[m|warst]|ihr|%[m|wart ]|
+|er |%[m|war  ]|sie|%[m|waren]|
 |]
 
-##### Konjunktiv
+### Konjunktiv I
 
-%[m|möchte]
+##### Präsens
 
-##### Partizip II
+[|
+|ich|%[m|sei   ]|wir|%[m|seien ]|
+|du |%[m|seiest]|ihr|%[m|seiet ]|
+|er |%[m|sei   ]|sie|%[m|seien ]|
+|]
 
-%[m|gemocht]
+### Konjunktiv II
 
-<!--
-https://berlinerdeutsch.ru/blog/tpost/fi20szdi21-modalnie-glagoli-i-ih-spryazhenie-v-nast
--->
+##### Präteritum
+
+[|
+|ich|%[m|wäre  ]|wir|%[m|wären ]|
+|du |%[m|wärest]|ihr|%[m|wäret ]|
+|er |%[m|wäre  ]|sie|%[m|wären ]|
+|]
+
+### Imperativ
+
+##### Präsens
+
+[|
+|%[m|sei  ]|du |
+|%[m|seien]|wir|
+|%[m|seid ]|ihr|
+|%[m|seien]|Sie|
+|]
+
+### Partizip
+
+##### Präsens
+
+%[m|seiend]
+
+##### Perfekt
+
+%[m|gewesen]
+
+### Infinitiv
+
+##### Präsens
+
+%[m|sein]
+
+##### Perfekt
+
+%[m|gewesen sein]
