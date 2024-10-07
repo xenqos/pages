@@ -1,9 +1,11 @@
+#### Вспомогательные глаголы ####
+
 ## Глаголы
 
-# sollen
+# sein
 
 [!
-быть должным, быть обязанным
+be · быть
 !]
 
 ### Indikativ
@@ -11,23 +13,66 @@
 ##### Präsens
 
 [|
-|ich|%[m|soll  ]|wir|%[m|sollen]|
-|du |%[m|sollst]|ihr|%[m|sollt ]|
-|er |%[m|soll  ]|sie|%[m|sollen]|
+|ich|%[m|bin ]|wir|%[m|sind]|
+|du |%[m|bist]|ihr|%[m|seid]|
+|er |%[m|ist ]|sie|%[m|sind]|
 |]
 
 ##### Präteritum
 
 [|
-|ich|%[m|sollte  ]|wir|%[m|sollten ]|
-|du |%[m|solltest]|ihr|%[m|solltet ]|
-|er |%[m|sollte  ]|sie|%[m|sollten ]|
+|ich|%[m|war  ]|wir|%[m|waren]|
+|du |%[m|warst]|ihr|%[m|wart ]|
+|er |%[m|war  ]|sie|%[m|waren]|
 |]
 
-##### Konjunktiv
+### Konjunktiv I
 
-%[m|sollte]
+##### Präsens
 
-##### Partizip II
+[|
+|ich|%[m|sei   ]|wir|%[m|seien ]|
+|du |%[m|seiest]|ihr|%[m|seiet ]|
+|er |%[m|sei   ]|sie|%[m|seien ]|
+|]
 
-%[m|gesollt]
+### Konjunktiv II
+
+##### Präteritum
+
+[|
+|ich|%[m|wäre  ]|wir|%[m|wären ]|
+|du |%[m|wärest]|ihr|%[m|wäret ]|
+|er |%[m|wäre  ]|sie|%[m|wären ]|
+|]
+
+### Imperativ
+
+##### Präsens
+
+[|
+|%[m|sei  ]|du |
+|%[m|seien]|wir|
+|%[m|seid ]|ihr|
+|%[m|seien]|Sie|
+|]
+
+### Partizip
+
+##### Präsens
+
+%[m|seiend]
+
+##### Perfekt
+
+%[m|gewesen]
+
+### Infinitiv
+
+##### Präsens
+
+%[m|sein]
+
+##### Perfekt
+
+%[m|gewesen sein]

@@ -1,21 +1,30 @@
 1a   ei - ie - ie
-1b   ei - i  - i
-2    ie - o  - o
-3a   i  - a  - o
-3b   i  - a  - u
-4    e  - a  - o
-5a   e  - a  - e
-5b   i  - a  - e
-6a   a  - u  - a
-6b   e/ä/ö/ü - o o
-7    a  - ie - a
+1b   ei - i - i
+2a   ie - o - o
+2b   i - o  - o
+3a   i - a - o
+3b   i - a - u
+4    e - a - o
+5a   e - a - e
+5b   i - a  - e
+5c   ie - a - e
+6a   a - u  - a
+6c   ä - o - o
+6d   ö - o - o
+6e   ü - o - o
+6f   au - o - o
+7a   a  - ie - a
+7b   a  - ie - a
+7c   a  - i - a
+7d   ä  - i - a
+7e   au - ie - au
+7f   u  - ie - u
 
 #------------------------------------------------------------
 1a   ei - ie - ie
 #------------------------------------------------------------
 |bleiben blieb geblieben|bleibt&emsp;•&emsp;sein|оставаться
 |gedeihen gedieh gediehen|gedeiht&emsp;•&emsp;sein|расти, преуспевать
-|heißen hieß geheißen|heißt&emsp;•&emsp;haben|называться
 |leihen lieh geliehen|leiht&emsp;•&emsp;haben|одалживать
 |meiden mied gemieden|meidet&emsp;•&emsp;haben|избегать
 |preisen pries gepriesen|preist&emsp;•&emsp;haben|хвалить
@@ -162,6 +171,7 @@
 5b   i  - a  - e
 #------------------------------------------------------------
 |bitten bat gebeten|bittet&emsp;•&emsp;haben|просить
+|sitzen saß gesessen|sitzt&emsp;•&emsp;haben|сидеть
 
 
 #------------------------------------------------------------
@@ -237,20 +247,33 @@
 |raten riet geraten|rät&emsp;•&emsp;haben|советовать
 |schlafen schlief geschlafen|schläft&emsp;•&emsp;haben|спать
 
+
 #------------------------------------------------------------
-7b    a  - i - a
+7b    a  - ie - a
+#------------------------------------------------------------
+|heißen hieß geheißen|heißt&emsp;•&emsp;haben|называться
+
+
+#------------------------------------------------------------
+7c    a  - i - a
 #------------------------------------------------------------
 |empfangen empfing empfangen|empfängt&emsp;•&emsp;haben|принимать
 |fangen fing gefangen|fängt&emsp;•&emsp;haben|ловить
 
 
 #------------------------------------------------------------
-7c    ä  - i - a
+7d    ä  - i - a
 #------------------------------------------------------------
 |hängen hing gehangen|hängt&emsp;•&emsp;haben|висеть
 
 
 #------------------------------------------------------------
-7c    au  - ie - aa
+7e    au  - ie - au
 #------------------------------------------------------------
 |laufen lief gelaufen|läuft&emsp;•&emsp;sein|бегать
+
+
+#------------------------------------------------------------
+7f    u  - ie - u
+#------------------------------------------------------------
+|rufen rief gerufen|ruft&emsp;•&emsp;haben|кричать, звать
