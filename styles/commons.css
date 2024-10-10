@@ -73,7 +73,7 @@
   font-style:           italic;
   font-weight:          700;
   src:                  local('Roboto'),
-                        url('./fonts/NotoSans-BoldItalic.woff2') format('woff2');
+                        url('./fonts/Roboto-BoldItalic.woff2') format('woff2');
 }
 
 /*-----------------------------------------------------------------------------------------------*/
@@ -724,7 +724,7 @@ textarea
 .clImageThumb
 {
   height:               auto !important;
-  width:                330px !important;
+  width:                280px !important;
   margin:               0.500rem 0.000rem 0.500rem 0.000rem;
   padding:              0.000rem 0.000rem 0.000rem 0.000rem;
 }
