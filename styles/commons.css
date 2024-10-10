@@ -40,6 +40,44 @@
 
 /*-----------------------------------------------------------------------------------------------*/
 
+@font-face
+{
+  font-family:          'Roboto';
+  font-style:           normal;
+  font-weight:          400;
+  src:                  local('Roboto'),
+                        url('./fonts/Roboto-Regular.woff2') format('woff2');
+}
+
+@font-face
+{
+  font-family:          'Roboto';
+  font-style:           normal;
+  font-weight:          700;
+  src:                  local('Roboto'),
+                        url('./fonts/Roboto-Bold.woff2') format('woff2'),
+}
+
+@font-face
+{
+  font-family:          'Roboto';
+  font-style:           italic;
+  font-weight:          400;
+  src:                  local('Roboto'),
+                        url('./fonts/Roboto-Italic.woff2') format('woff2');
+}
+
+@font-face
+{
+  font-family:          'Roboto';
+  font-style:           italic;
+  font-weight:          700;
+  src:                  local('Roboto'),
+                        url('./fonts/NotoSans-BoldItalic.woff2') format('woff2');
+}
+
+/*-----------------------------------------------------------------------------------------------*/
+
 html { font-size: 16px; }
 
 /*-----------------------------------------------------------------------------------------------*/
@@ -48,7 +86,7 @@ body
 {
   background:           #DBDBDB;
   color:                #000000;
-  font-family:          'Noto Sans', sans-serif !important;
+  font-family:          'Roboto', sans-serif !important;
   font-style:           normal;
   font-size:            100%;
   font-weight:          normal;
