@@ -33,90 +33,49 @@
 
 <h2>GTO</h2>
 
-<h1>Combinatorics</h1>
+<h1>Preflop Combos</h1>
+
+<h6>Paired Hands</h6>
+<q class='s'>A</q><q class='h'>A</q> &nbsp; <q class='s'>A</q><q class='h'>A</q> &nbsp; <q class='s'>A</q><q class='c'>A</q><br>
+<q class='h'>A</q><q class='d'>A</q> &nbsp; <q class='h'>A</q><q class='c'>A</q> &nbsp; <q class='d'>A</q><q class='c'>A</q><br>
+
+<br>
+6 x 13 (squares) = 78<br>
+
+<h6>Unpaired, Suited Hands</h6>
+<q class='s'>A</q><q class='s'>K</q> &nbsp; <q class='h'>A</q><q class='h'>K</q><br>
+<q class='d'>A</q><q class='d'>K</q> &nbsp; <q class='c'>A</q><q class='c'>K</q><br>
+
+<br>
+4 x 78 (squares) = 312<br>
+
+<h6>Unpaired, Offsuited Hands</h6>
+<q class='s'>A</q><q class='h'>K</q> &nbsp; <q class='s'>A</q><q class='d'>K</q> &nbsp; <q class='s'>A</q><q class='c'>K</q><br>
+<q class='h'>A</q><q class='s'>K</q> &nbsp; <q class='h'>A</q><q class='d'>K</q> &nbsp; <q class='h'>A</q><q class='c'>K</q><br>
+<q class='d'>A</q><q class='s'>K</q> &nbsp; <q class='d'>A</q><q class='h'>K</q> &nbsp; <q class='d'>A</q><q class='c'>K</q><br>
+<q class='c'>A</q><q class='s'>K</q> &nbsp; <q class='c'>A</q><q class='h'>K</q> &nbsp; <q class='c'>A</q><q class='d'>K</q><br>
+
+<br>
+12 x 78 (squares) = 936<br>
 
 <blockquote>
-number of combinations between elements<br>
+Total Squares = 13 * 13 = 169<br>
+Total Combos  = 1326<br>
 </blockquote>
 
-<h2>Concepts</h2>
 
-<span class='m'>Set</span><br>
-&ensp;&ensp;&ensp;set of elements<br>
+<h3>Hand Matrix</h3>
 
-<span class='m'>Selection</span><br>
-&ensp;&ensp;&ensp;extracts elements from set<br>
+<a target='_blank' href='../images/preflop-combos.webp'><img class='clImageThumb' src='../images/preflop-combos.webp'></a><br>
 
-<span class='m'>Addition</span><br>
-&ensp;&ensp;&ensp;13<q class='s'></q> + 13<q class='h'></q> + 13<q class='c'></q> + 13<q class='d'></q> = 52<br>
+<a target='_blank' href='../images/hand-grid-template.webp'><img class='clImageThumb' src='../images/hand-grid-template.webp'></a><br>
 
-<span class='m'>Multiplication</span><br>
-&ensp;&ensp;&ensp;13<q class='x'></q> * 4 = 52<br>
+Equity (as %) of starting hands in one-on-one matchups against a random hand<br>
 
-<span class='m'>Factorial</span><br>
-&ensp;&ensp;&ensp;number of ways to order elements<br>
-&ensp;&ensp;&ensp;3! = 3 × 2 × 1 = 6<br>
+<a target='_blank' href='../images/probability-win-random.webp'><img class='clImageThumb' src='../images/probability-win-random.webp'></a><br>
 
-<h2>Formulas</h2>
-
-<h4>Combination</h4>
-Not Ordered<br>
-<img src='../images/combinatorics-combination.webp'><br>
-
-<h4>Arrangement</h4>
-Not Ordered, Whole Set<br>
-<img src='../images/combinatorics-arrangement.webp'><br>
-
-<h4>Permutation</h4>
-Ordered, Partial Set<br>
-<img src='../images/combinatorics-permutation.webp'><br>
-
-<br>
 <!--<br>
-
-https://www.thepokerbank.com/strategy/mathematics/hand-combinations/<br>
-https://wizardofodds.com/games/texas-hold-em/6-player-game/<br>
-
-<br>
-https://blog.gtowizard.com/a-beginners-guide-to-poker-combinatorics/<br>
-https://www.888poker.com/magazine/strategy/poker-combinatorics-guide<br>
-
-https://upswingpoker.com/wp-content/uploads/2018/02/Preflop-Guide-for-RFI-v21-1.pdf<br>
-
-In Texas Hold'em poker, combinatorics plays a crucial role in understanding the probabilities of different hands and outcomes. Here are some key combinatorial principles used in poker:<br>
-
-1. <b>Counting Combinations</b>: The basic principle of combinatorics involves counting the number of ways to choose items from a set. In poker, this is often used to calculate the number of possible hands. For example, the number of ways to choose 2 hole cards from a standard 52-card deck is calculated using combinations: \( C(52, 2) = \frac{52!}{2!(52-2)!} = 1,326 \).<br>
-
-2. <b>Hand Rankings</b>: Understanding the different hand rankings (e.g., pairs, three of a kind, straights, flushes) requires knowledge of how many combinations of cards can form each type of hand. For instance, to calculate the number of ways to make a flush (five cards of the same suit), you would consider the number of ways to choose 5 cards from the 13 available in that suit.<br>
-
-3. <b>Outs and Odds</b>: Players often calculate their &quot;outs,&quot; which are the cards that can improve their hand. Combinatorial principles help determine how many outs are available and the probability of hitting one of those outs on the next card. For example, if a player has four cards to a flush and there are 9 cards of that suit left in the deck, the probability of hitting the flush on the next card can be calculated based on the remaining unseen cards.<br>
-
-4. <b>Pot Odds</b>: Players use combinatorial reasoning to assess pot odds, which compare the size of the pot to the cost of a call. By calculating the probability of completing a winning hand (using combinations of outs), players can make informed decisions about whether to call, raise, or fold.<br>
-
-5. <b>Expected Value (EV)</b>: Combinatorial principles are also used to calculate the expected value of different actions in a hand. By considering the probabilities of various outcomes and their associated payoffs, players can determine the most profitable course of action.<br>
-
-6. <b>Game Theory and Strategy</b>: Advanced players use combinatorial game theory to analyze their opponents' possible hands and strategies. This involves considering the combinations of hands that opponents might hold based on their actions and the community cards.<br>
-
-By applying these combinatorial principles, players can make more informed decisions and improve their overall strategy in Texas Hold'em poker.<br>
-
-<br>
-Yes, there are several websites and tools that generate hand range tables, including Nash equilibrium tables for poker. Here are a few popular options:<br>
-
-1. <b>PokerStrategy</b>: This site offers a variety of resources, including hand range charts and articles on poker strategy. They provide tools for players to understand optimal ranges.<br>
-
-2. <b>Equilab</b>: This is a software tool that allows players to analyze hand ranges and equity. It includes features for creating and visualizing hand ranges, and it can help you understand Nash equilibria in various situations.<br>
-
-3. <b>Flopzilla</b>: Similar to Equilab, Flopzilla is a software tool that helps players analyze hand ranges and board textures. It allows you to input ranges and see how they perform against each other.<br>
-
-4. <b>GTO+</b>: This is a more advanced tool that allows players to study game theory optimal (GTO) strategies. It can generate Nash equilibrium ranges for various situations in poker.<br>
-
-5. <b>PioSolver</b>: This is a powerful solver used by many professional players to analyze poker hands and generate optimal strategies. It can create Nash equilibrium ranges based on specific scenarios.<br>
-
-6. <b>Range Analyzer</b>: Some websites offer online range analyzers that allow you to input specific hands and see the corresponding ranges and equity against other hands.<br>
-
-When using these tools, it's important to have a good understanding of poker strategy and the context in which you're applying the hand ranges.<br>
-
-<br>
+https://www.reddit.com/r/poker/comments/igcn1h/starting_hand_equity_chart/<br>
 -->
 
 

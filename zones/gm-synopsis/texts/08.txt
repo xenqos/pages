@@ -1,28 +1,22 @@
+## Game ##
+
 ## Game
 
-# Player Styles
+# Types
 
-### Loose
+### Cash Game
 [!
-To play many hands
-To play weak hands
+Minimum Buy-In set
+Maximum Buy-In set
+Blinds do not change
 !]
 
-### Passive
+### Tournament
 [!
-To call frequently
-To raise rarely
-!]
-
-### Tight
-[!
-To play strong hands
-To fold weak hands
-!]
-
-### Agressive
-[!
-To bet frequently
-To raise frequently
-To call rarely
+Buy-In set
+All paid money go to Prize Pool
+Organizer takes percentage of Prize Pool
+Blinds increase over time
+Top 10-15% of finishing players are paid an ascending share from Prize Pool
+Winner gets 25-30% of Prize Pool
 !]

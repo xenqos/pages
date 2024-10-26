@@ -1,34 +1,61 @@
 ## Game
 
-# Betting Variations
+# Betting Rounds
 
-[|
-|FL|Fixed Limit|
-|PL|Pot Limit|
-|NL|No Limit|
-|]
-
-### Fixed Limit
+### Pre-Flop
 [!
-Raise Limit = Big Blind
-Increments of Big Blind
-Turn, River - Betting Amount Doubles
-e.g.: Blinds $1-$2, Betting Limits $2-$4
-Has maximum of allowable raises (bet + 3 times)
-Spreads may be used for Raise $1-$3
+'Small Blind' places small blind
+'Big Blind' places big blind
+'Button' deal 'Hole Cards' starting from left
+If required all players place 'Ante'
+Each player clockwise places: 'Fold' / 'Call' / 'Raise'
 !]
 
-### Pot Limit
+[-
+'Big Blind' = 2 x 'Small Blind'
+'Call' = 'Big Blind'
+-]
+
+### Flop
 [!
-Maximum Raise = Size of Pot
-In $1-$2 game maximum raise - $7
-Small Blind $1 + Big Blind $2 + Call $2 + Raise $2 = $7
-Minimum Raise = Size of Previous Bet
+'Button' deal 'Flop Community Cards'
+'Small Blind' places: 'Fold' / 'Check' / 'Bet'
+Each player clockwise places: 'Fold' / 'Check' / 'Bet' / 'Call' / 'Raise'
 !]
 
-### No Limit
+### Turn
 [!
-Blind structure = $1-$2
-Minimum Raise = Size of Previous Bet
-Maximum = Chips in Stack
+'Button' deal 'Turn Community Card'
+'Small Blind' places: 'Fold' / 'Check' / 'Bet'
+Each player clockwise places: 'Fold' / 'Check' / 'Bet' / 'Call' / 'Raise'
 !]
+
+### River
+[!
+'Button' deal 'River Community Card'
+'Small Blind' places: 'Fold' / 'Check' / 'Bet'
+Each player clockwise places: 'Fold' / 'Check' / 'Bet' / 'Call' / 'Raise'
+!]
+
+### Showdown
+[!
+Show 'Hole Cards'
+The best 'Hand' wins
+!]
+
+#### Raise & Re-raise
+
+%[m|IF]
+&emsp; 'Player' raises / re-raises
+%[m|THEN]
+&emsp; All 'Players' starting from his left clockwise must match 'Raise' / 'Re-raise'
+&emsp; Thus the betting stops at 'Player' to the right of the one who made 'Raise' / 'Re-raise'
+
+%[m|IF]
+&emsp; 'Players' >= 3 in 'Hand' ('Game')
+%[m|THEN]
+&emsp; 3-4 'Raise' / 'Re-raise' - allowed
+%[m|ELSEIF]
+&emsp; 'Players' = 2 are in 'Hand' ('Game')
+%[m|THEN]
+&emsp; 'Raise' / 'Re-raise' - not limited
