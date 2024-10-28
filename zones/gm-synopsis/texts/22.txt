@@ -22,13 +22,60 @@ Paired Rainbow
 Trips
 -]
 
+### Dry Flop
+[!
+Cards - unconnected, offsuited
+Favors strong high cards, overpairs
+!]
+
+###### Example
+&[c|2]&[d|7]&[s|Q]
+
+### Wet Flop
+[!
+Cards - connected and/or suited
+Potential for straights and flushes
+!]
+
+###### Example
+&[s|5]&[s|6]&[c|7]
+
+### Connected Flop
+[!
+Cards - sequential or close in rank
+Potential for straights
+!]
+
+###### Example
+&[s|8]&[c|9]&[d|T]
+
+### High Flop
+[!
+Cards - high-ranking
+Favors high pairs or strong hands
+Lead to significant betting and raises
+!]
+
+###### Example
+&[s|A]&[d|K]&[c|Q]
+
+### Low Flop
+[!
+Cards - low-ranking cards
+Favors lower pairs or drawing hands
+Potential for straights and lower sets
+!]
+
+###### Example
+&[c|3]&[d|4]&[c|5]
+
 ### Monotone
 [!
 All three community cards - one suit
-Strong potential for flush drawsflop texture" refers to the characteristics of the three community cards
+Strong potential for flush draws
 !]
 
-#### Example
+###### Example
 &[s|5]&[s|7]&[s|J]
 
 ### Two Tone (Suited)
@@ -37,7 +84,7 @@ Two community cards - one suit, the third card - different suit
 Some potential for flush draws
 !]
 
-#### Example
+###### Example
 &[c|9]&[c|T]&[d|4]
 
 ### Rainbow
@@ -48,7 +95,7 @@ Focus on High Cards and Pairs
 Less Action
 !]
 
-#### Example
+###### Example
 &[c|7]&[h|9]&[s|Q]
 
 ### Paired Rainbow
@@ -58,56 +105,5 @@ Potential for Trips or Full Houses
 Less Flush Potential
 !]
 
-#### Example
+###### Example
 &[c|4]&[h|4]&[s|9]
-
-
-<!--
-
-In Texas Hold'em poker, "flop texture" refers to the characteristics of the three community cards that are dealt face up after the first round of betting. The texture can significantly influence the strength of hands, the potential for drawing hands, and the overall strategy for the remainder of the hand. Flop texture can be categorized based on several factors, including the types of cards (high vs. low), the suits (rainbow vs. suited), and the connectivity (connected vs. unconnected).
-
-Here are some common types of flop textures:
-
-1. **Dry Flop**:
-   - Contains unconnected cards that are not suited.
-   - Example: 2♣ 7♦ Q♠
-   - Typically favors strong high cards or overpairs.
-
-2. **Wet Flop**:
-   - Contains connected cards and/or suited cards, creating potential for straights and flushes.
-   - Example: 5♠ 6♠ 7♣
-   - Often leads to more action due to the potential for strong draws.
-
-3. **Connected Flop**:
-   - Cards that are sequential or close in rank, which can create straight possibilities.
-   - Example: 8♠ 9♣ 10♦
-   - This texture can favor hands that can make straights.
-
-4. **Paired Flop**:
-   - Contains one or more pairs, which can create opportunities for trips or full houses.
-   - Example: 4♠ 4♦ K♣
-   - This texture can lead to strong hands but may also create situations where players are cautious.
-
-5. **Rainbow Flop**:
-   - All three cards are of different suits, reducing the likelihood of a flush.
-   - Example: 3♣ 8♦ J♠
-   - This texture is generally considered less dangerous for players holding high cards.
-
-6. **Suited Flop**:
-   - At least two cards are of the same suit, increasing the potential for flush draws.
-   - Example: 2♠ 5♠ 9♦
-   - This texture can lead to aggressive play due to the potential for flushes.
-
-7. **High Flop**:
-   - Contains high-ranking cards, typically favoring players with high pairs or strong hands.
-   - Example: A♠ K♦ Q♣
-   - This texture can lead to significant betting and raises.
-
-8. **Low Flop**:
-   - Contains low-ranking cards, which may favor players with lower pairs or drawing hands.
-   - Example: 3♣ 4♦ 5♠
-   - This texture can create opportunities for straights and lower sets.
-
-Understanding flop texture is crucial for making informed decisions about betting, raising, or folding based on the potential strength of your hand relative to the community cards.
-
--->
