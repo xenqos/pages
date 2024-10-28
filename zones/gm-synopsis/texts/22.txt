@@ -1,36 +1,113 @@
-## GTO ##
+## Flop ##
 
-## GTO - Game Theory Optimal
+## Flop
 
+# Texture
 
-# Definition & Principles
-
-### Definition
+[!
+Flop Texture - characteristics of community cards
+!]
 
 [-
-Makes decisions unexploitable by villains.
-Balances hero's range based on mathematical principles.
-Does not rely on reads or tendencies of villains.
-Minimizes losses against any villains's strategy.
-Ensures a profitable play in the long run.
+Dry Flop
+Wet Flop
+Connected Flop
+High Flop
+Low Flop
+Monotone
+Two Tone (Suited)
+Paired Two Tone
+Rainbow
+Paired Rainbow
+Trips
 -]
 
-### Principles
+### Monotone
+[!
+All three community cards - one suit
+Strong potential for flush drawsflop texture" refers to the characteristics of the three community cards
+!]
 
-#### Balanced Ranges
-A GTO player maintains a balanced range of hands in various situations (e.g., pre-flop, post-flop).
-This means mixing strong hands with bluffs to prevent opponents from easily exploiting your strategy.
+#### Example
+&[s|5]&[s|7]&[s|J]
 
-#### Equity and Pot Odds
-Understand the concept of equity (the chance your hand has to win at showdown) and pot odds (the ratio of the current size of the pot to the size of the bet you must call).
-Make decisions based on whether the potential reward justifies the risk.
+### Two Tone (Suited)
+[!
+Two community cards - one suit, the third card - different suit
+Some potential for flush draws
+!]
 
-#### Bet Sizing
-Use various bet sizes to create a balanced strategy. Different sizes can represent different ranges of hands.
-Common sizes include small bets (for value and bluffs) and larger bets (to apply pressure).
+#### Example
+&[c|9]&[c|T]&[d|4]
 
-#### Indifference Principle
-A GTO strategy aims to make opponents indifferent to their choices. For example, if you are bluffing and value betting at the right frequencies, your opponent cannot profitably call or fold.
+### Rainbow
+[!
+All three community cards - different suits
+Reduced flush potential
+Focus on High Cards and Pairs
+Less Action
+!]
 
-#### Exploiting Deviations
-While GTO is about being unexploitable, it’s also important to recognize when opponents deviate from GTO play. Adjust your strategy to exploit their mistakes.
+#### Example
+&[c|7]&[h|9]&[s|Q]
+
+### Paired Rainbow
+[!
+One community cards is a pair, two cards - different ranks and suits
+Potential for Trips or Full Houses
+Less Flush Potential
+!]
+
+#### Example
+&[c|4]&[h|4]&[s|9]
+
+
+<!--
+
+In Texas Hold'em poker, "flop texture" refers to the characteristics of the three community cards that are dealt face up after the first round of betting. The texture can significantly influence the strength of hands, the potential for drawing hands, and the overall strategy for the remainder of the hand. Flop texture can be categorized based on several factors, including the types of cards (high vs. low), the suits (rainbow vs. suited), and the connectivity (connected vs. unconnected).
+
+Here are some common types of flop textures:
+
+1. **Dry Flop**:
+   - Contains unconnected cards that are not suited.
+   - Example: 2♣ 7♦ Q♠
+   - Typically favors strong high cards or overpairs.
+
+2. **Wet Flop**:
+   - Contains connected cards and/or suited cards, creating potential for straights and flushes.
+   - Example: 5♠ 6♠ 7♣
+   - Often leads to more action due to the potential for strong draws.
+
+3. **Connected Flop**:
+   - Cards that are sequential or close in rank, which can create straight possibilities.
+   - Example: 8♠ 9♣ 10♦
+   - This texture can favor hands that can make straights.
+
+4. **Paired Flop**:
+   - Contains one or more pairs, which can create opportunities for trips or full houses.
+   - Example: 4♠ 4♦ K♣
+   - This texture can lead to strong hands but may also create situations where players are cautious.
+
+5. **Rainbow Flop**:
+   - All three cards are of different suits, reducing the likelihood of a flush.
+   - Example: 3♣ 8♦ J♠
+   - This texture is generally considered less dangerous for players holding high cards.
+
+6. **Suited Flop**:
+   - At least two cards are of the same suit, increasing the potential for flush draws.
+   - Example: 2♠ 5♠ 9♦
+   - This texture can lead to aggressive play due to the potential for flushes.
+
+7. **High Flop**:
+   - Contains high-ranking cards, typically favoring players with high pairs or strong hands.
+   - Example: A♠ K♦ Q♣
+   - This texture can lead to significant betting and raises.
+
+8. **Low Flop**:
+   - Contains low-ranking cards, which may favor players with lower pairs or drawing hands.
+   - Example: 3♣ 4♦ 5♠
+   - This texture can create opportunities for straights and lower sets.
+
+Understanding flop texture is crucial for making informed decisions about betting, raising, or folding based on the potential strength of your hand relative to the community cards.
+
+-->

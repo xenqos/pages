@@ -33,49 +33,91 @@
 
 <h2>GTO</h2>
 
-<h1>Preflop Combos</h1>
+<h1>Combinatorics</h1>
 
-<h6>Paired Hands</h6>
-<q class='s'>A</q><q class='h'>A</q> &nbsp; <q class='s'>A</q><q class='h'>A</q> &nbsp; <q class='s'>A</q><q class='c'>A</q><br>
-<q class='h'>A</q><q class='d'>A</q> &nbsp; <q class='h'>A</q><q class='c'>A</q> &nbsp; <q class='d'>A</q><q class='c'>A</q><br>
+<h3>Unpaired Hands Combinations</h3>
 
-<br>
-6 x 13 (squares) = 78<br>
+<pre><code>C  = Total Combinations
+A1 = Available Cards for Card 1
+A2 = Available Cards for Card 2
 
-<h6>Unpaired, Suited Hands</h6>
-<q class='s'>A</q><q class='s'>K</q> &nbsp; <q class='h'>A</q><q class='h'>K</q><br>
-<q class='d'>A</q><q class='d'>K</q> &nbsp; <q class='c'>A</q><q class='c'>K</q><br>
-
-<br>
-4 x 78 (squares) = 312<br>
-
-<h6>Unpaired, Offsuited Hands</h6>
-<q class='s'>A</q><q class='h'>K</q> &nbsp; <q class='s'>A</q><q class='d'>K</q> &nbsp; <q class='s'>A</q><q class='c'>K</q><br>
-<q class='h'>A</q><q class='s'>K</q> &nbsp; <q class='h'>A</q><q class='d'>K</q> &nbsp; <q class='h'>A</q><q class='c'>K</q><br>
-<q class='d'>A</q><q class='s'>K</q> &nbsp; <q class='d'>A</q><q class='h'>K</q> &nbsp; <q class='d'>A</q><q class='c'>K</q><br>
-<q class='c'>A</q><q class='s'>K</q> &nbsp; <q class='c'>A</q><q class='h'>K</q> &nbsp; <q class='c'>A</q><q class='d'>K</q><br>
-
-<br>
-12 x 78 (squares) = 936<br>
-
-<blockquote>
-Total Squares = 13 * 13 = 169<br>
-Total Combos  = 1326<br>
-</blockquote>
+C = A1 * A2</code></pre>
 
 
-<h3>Hand Matrix</h3>
+<h3>Paired Hands Combinations</h3>
 
-<a target='_blank' href='../images/preflop-combos.webp'><img class='clImageThumb' src='../images/preflop-combos.webp'></a><br>
+<pre><code>C  = Total Combinations
+A  = Available Cards
 
-<a target='_blank' href='../images/hand-grid-template.webp'><img class='clImageThumb' src='../images/hand-grid-template.webp'></a><br>
+C = ( A * (A - 1) / 2 )</code></pre>
 
-Equity (as %) of starting hands in one-on-one matchups against a random hand<br>
 
-<a target='_blank' href='../images/probability-win-random.webp'><img class='clImageThumb' src='../images/probability-win-random.webp'></a><br>
+<h4>Example</h4>
+
+<div class='clOverflow'>
+<table>
+<tr>
+<th>A</th><th>U</th><th>C</th><th>E</th></tr>
+<tr><td>0</td><td>4</td><td>6</td><td><q class='s'>A</q><q class='h'>A</q>&ensp;<q class='s'>A</q><q class='d'>A</q><br><q class='s'>A</q><q class='c'>A</q>&ensp;<q class='h'>A</q><q class='d'>A</q><br><q class='h'>A</q><q class='c'>A</q>&ensp;<q class='d'>A</q><q class='c'>A</q></td></tr>
+<tr><td>1</td><td>3</td><td>3</td><td><q class='s'>A</q><q class='h'>A</q>&ensp;<q class='s'>A</q><q class='c'>A</q><br><q class='h'>A</q><q class='c'>A</q></td></tr>
+<tr><td>2</td><td>2</td><td>1</td><td><q class='s'>A</q><q class='h'>A</q></td></tr>
+<tr><td>3</td><td>1</td><td>0</td><td></td></tr>
+</table>
+</div>
+
+A = Available<br>
+U = Unavailable<br>
+C = Combos<br>
+E = Example<br>
 
 <!--<br>
-https://www.reddit.com/r/poker/comments/igcn1h/starting_hand_equity_chart/<br>
+
+<h3>Concepts</h3>
+
+<blockquote>
+number of combinations between elements<br>
+</blockquote>
+
+<span class='m'>Set</span><br>
+&ensp;&ensp;&ensp;set of elements<br>
+
+<span class='m'>Selection</span><br>
+&ensp;&ensp;&ensp;extracts elements from set<br>
+
+<span class='m'>Addition</span><br>
+&ensp;&ensp;&ensp;13<q class='s'></q> + 13<q class='h'></q> + 13<q class='c'></q> + 13<q class='d'></q> = 52<br>
+
+<span class='m'>Multiplication</span><br>
+&ensp;&ensp;&ensp;13<q class='x'></q> * 4 = 52<br>
+
+<span class='m'>Factorial</span><br>
+&ensp;&ensp;&ensp;number of ways to order elements<br>
+&ensp;&ensp;&ensp;3! = 3 × 2 × 1 = 6<br>
+
+<h3>Formulas</h3>
+
+<h4>Combination</h4>
+Not Ordered<br>
+<img src='../images/combinatorics-combination.webp'><br>
+
+<h4>Arrangement</h4>
+Not Ordered, Whole Set<br>
+<img src='../images/combinatorics-arrangement.webp'><br>
+
+<h4>Permutation</h4>
+Ordered, Partial Set<br>
+<img src='../images/combinatorics-permutation.webp'><br>
+
+-->
+
+<!--<br>
+
+https://www.thepokerbank.com/strategy/mathematics/hand-combinations/<br>
+https://wizardofodds.com/games/texas-hold-em/6-player-game/<br>
+
+https://www.888poker.com/magazine/strategy/poker-combinatorics-guide<br>
+https://upswingpoker.com/wp-content/uploads/2018/02/Preflop-Guide-for-RFI-v21-1.pdf<br>
+
 -->
 
 

@@ -31,94 +31,41 @@
 </div>
 <div id='idContent'>
 
-<h2>GTO</h2>
 
-<h1>Combinatorics</h1>
-
-<h3>Unpaired Hands Combinations</h3>
-
-<pre><code>C  = Total Combinations
-A1 = Available Cards for Card 1
-A2 = Available Cards for Card 2
-
-C = A1 * A2</code></pre>
+<h2>GTO - Game Theory Optimal</h2>
 
 
-<h3>Paired Hands Combinations</h3>
+<h1>Definition & Principles</h1>
 
-<pre><code>C  = Total Combinations
-A  = Available Cards
+<h3>Definition</h3>
 
-C = ( A * (A - 1) / 2 )</code></pre>
+<ul>
+<li>Makes decisions unexploitable by villains.</li>
+<li>Balances hero's range based on mathematical principles.</li>
+<li>Does not rely on reads or tendencies of villains.</li>
+<li>Minimizes losses against any villains's strategy.</li>
+<li>Ensures a profitable play in the long run.</li>
+</ul>
 
+<h3>Principles</h3>
 
-<h4>Example</h4>
+<h4>Balanced Ranges</h4>
+A GTO player maintains a balanced range of hands in various situations (e.g., pre-flop, post-flop).<br>
+This means mixing strong hands with bluffs to prevent opponents from easily exploiting your strategy.<br>
 
-<div class='clOverflow'>
-<table>
-<tr>
-<th>A</th><th>U</th><th>C</th><th>E</th></tr>
-<tr><td>0</td><td>4</td><td>6</td><td><q class='s'>A</q><q class='h'>A</q>&ensp;<q class='s'>A</q><q class='d'>A</q><br><q class='s'>A</q><q class='c'>A</q>&ensp;<q class='h'>A</q><q class='d'>A</q><br><q class='h'>A</q><q class='c'>A</q>&ensp;<q class='d'>A</q><q class='c'>A</q></td></tr>
-<tr><td>1</td><td>3</td><td>3</td><td><q class='s'>A</q><q class='h'>A</q>&ensp;<q class='s'>A</q><q class='c'>A</q><br><q class='h'>A</q><q class='c'>A</q></td></tr>
-<tr><td>2</td><td>2</td><td>1</td><td><q class='s'>A</q><q class='h'>A</q></td></tr>
-<tr><td>3</td><td>1</td><td>0</td><td></td></tr>
-</table>
-</div>
+<h4>Equity and Pot Odds</h4>
+Understand the concept of equity (the chance your hand has to win at showdown) and pot odds (the ratio of the current size of the pot to the size of the bet you must call).<br>
+Make decisions based on whether the potential reward justifies the risk.<br>
 
-A = Available<br>
-U = Unavailable<br>
-C = Combos<br>
-E = Example<br>
+<h4>Bet Sizing</h4>
+Use various bet sizes to create a balanced strategy. Different sizes can represent different ranges of hands.<br>
+Common sizes include small bets (for value and bluffs) and larger bets (to apply pressure).<br>
 
-<!--<br>
+<h4>Indifference Principle</h4>
+A GTO strategy aims to make opponents indifferent to their choices. For example, if you are bluffing and value betting at the right frequencies, your opponent cannot profitably call or fold.<br>
 
-<h3>Concepts</h3>
-
-<blockquote>
-number of combinations between elements<br>
-</blockquote>
-
-<span class='m'>Set</span><br>
-&ensp;&ensp;&ensp;set of elements<br>
-
-<span class='m'>Selection</span><br>
-&ensp;&ensp;&ensp;extracts elements from set<br>
-
-<span class='m'>Addition</span><br>
-&ensp;&ensp;&ensp;13<q class='s'></q> + 13<q class='h'></q> + 13<q class='c'></q> + 13<q class='d'></q> = 52<br>
-
-<span class='m'>Multiplication</span><br>
-&ensp;&ensp;&ensp;13<q class='x'></q> * 4 = 52<br>
-
-<span class='m'>Factorial</span><br>
-&ensp;&ensp;&ensp;number of ways to order elements<br>
-&ensp;&ensp;&ensp;3! = 3 × 2 × 1 = 6<br>
-
-<h3>Formulas</h3>
-
-<h4>Combination</h4>
-Not Ordered<br>
-<img src='../images/combinatorics-combination.webp'><br>
-
-<h4>Arrangement</h4>
-Not Ordered, Whole Set<br>
-<img src='../images/combinatorics-arrangement.webp'><br>
-
-<h4>Permutation</h4>
-Ordered, Partial Set<br>
-<img src='../images/combinatorics-permutation.webp'><br>
-
--->
-
-<!--<br>
-
-https://www.thepokerbank.com/strategy/mathematics/hand-combinations/<br>
-https://wizardofodds.com/games/texas-hold-em/6-player-game/<br>
-
-https://www.888poker.com/magazine/strategy/poker-combinatorics-guide<br>
-https://upswingpoker.com/wp-content/uploads/2018/02/Preflop-Guide-for-RFI-v21-1.pdf<br>
-
--->
+<h4>Exploiting Deviations</h4>
+While GTO is about being unexploitable, it’s also important to recognize when opponents deviate from GTO play. Adjust your strategy to exploit their mistakes.<br>
 
 
 </div>
