@@ -6,7 +6,7 @@ dir_sounds="${dir_prefix}/sounds"
 dir_sources="${dir_prefix}/sources"
 dir_texts="${dir_prefix}/texts"
 
-number_start=9
+number_start=11
 number_shift=1
 
 #-------------------------------------------------------------------------------

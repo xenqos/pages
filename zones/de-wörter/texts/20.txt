@@ -1,21 +1,19 @@
-## Глаголы ##
+## Абстракции ##
 
-## Глаголы
+## Абстракции
 
-# Движения
-
-|gehen    |ging    gegangen    sein |ходить
-|kommen   |kam     gekommen    sein |приходить
-|fahren   |fuhr    gefahren    sein |возить
-|laufen   |lief    gelaufen    sein |идти, бежать
-|rennen   |rannte  gerannt     sein |бежать, мчаться
-|fliegen  |flog    geflogen    sein |летать
-|reisen   |reiste  gereist     sein |путешествовать
-|springen |sprang  gesprungen  sein |прыгать
-|schwimmen|schwamm geschwommen sein |плавать
-|ziehen   |zog     gezogen     sein |тянуть, тащить
-|steigen  |stieg   gestiegen   sein |подниматься
-|fallen   |fiel    gefallen    sein |падать
-|bringen  |brachte gebracht    haben|приводить
-|verlassen|verließ verlassen   haben|уходить
-|betreten |betrat  betreten    haben|входить
+# Формы
+---
+|das Quadrat |des Quadrats,  die Quadrate |квадрат
+|der Würfel  |des Würfels,   die Würfel   |куб
+---
+|der Kreis   |des Kreises,   die Kreise   |круг
+|das Oval    |des Ovals,     die Ovale    |овал
+---
+|die Kugel   |der Kugel,     die Kugeln   |сфера
+|der Zylinder|des Zylinders, die Zylinder |цилиндер
+|der Kegel   |des Kegels,    die Kegel    |конус
+---
+|das Dreieck |des Dreiecks,  die Dreiecke |треугольник
+|das Rechteck|des Rechtecks, die Rechtecke|прямоугольник
+|das Achteck |des Achtecks,  die Achtecke |восьмиугольник
