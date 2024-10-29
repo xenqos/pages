@@ -20,18 +20,15 @@ Relationship of Favorable-Outcomes to Unfavorable-Outcomes
 
 ### Probability
 
+[!
+Probability Favorable-Outcomes divided by Total-Outcomes
+!]
+
 Chance that a given Outcome will happen
 Expressed in fraction 0.0 - 1.0
 Expressed in percentage 0% - 100%
 0.0 / 0% - Outcome will never happen
 1.0 / 100% - Outcome will always happen
-
-[?
-Probability =
-  Favorable-Outcomes
-  /
-  Total-Outcomes
-?]
 
 ### Odds to Probability
 
@@ -92,5 +89,5 @@ Probability-Of-Winning =
   Total-Outcomes
 
 Probability-Of-Winning =
-2 / 3
+  2 / 3
 ?]
