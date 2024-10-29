@@ -5,9 +5,9 @@
 ### Unpaired Hands Combinations
 
 [?
-C  = Total Combinations
-A1 = Available Cards for Card 1
-A2 = Available Cards for Card 2
+C  - Total Combinations
+A1 - Available Cards for Card 1
+A2 - Available Cards for Card 2
 
 C = A1 * A2
 ?]
@@ -15,8 +15,8 @@ C = A1 * A2
 ### Paired Hands Combinations
 
 [?
-C  = Total Combinations
-A  = Available Cards
+C - Total Combinations
+A - Available Cards
 
 C = ( A * (A - 1) / 2 )
 ?]
@@ -31,10 +31,10 @@ C = ( A * (A - 1) / 2 )
 |3|1|0||
 |]
 
-A = Available
-U = Unavailable
-C = Combos
-E = Example
+A - Available
+U - Unavailable
+C - Combos
+E - Example
 
 <!--
 

@@ -26,33 +26,71 @@ Expressed in percentage 0% - 100%
 0.0 / 0% - Outcome will never happen
 1.0 / 100% - Outcome will always happen
 
-[!
-Probability =  Favorable-Outcomes / Total-Outcomes
-!]
+[?
+Probability =
+  Favorable-Outcomes
+  /
+  Total-Outcomes
+?]
 
 ### Odds to Probability
 
 [?
-Odds = Favorable-Outcomes : Unfavorable-Outcomes
-Odds = 1:2
+Odds =
+  Favorable-Outcomes
+  :
+  Unfavorable-Outcomes
 
-Total-Outcomes = Favorable-Outcomes + Unfavorable-Outcomes
-Total-Outcomes = 1 + 2 = 3
+Odds =
+  1:2
+
+Total-Outcomes =
+  Favorable-Outcomes
+  +
+  Unfavorable-Outcomes
+
+Total-Outcomes =
+  1 + 2 = 3
 
 Total-Probability = 100%
 
-Probability-Of-One-Outcome = Total-Probability / Total-Outcomes
-Probability-Of-One-Outcome = 100% / 3 ≈ 33%
+Probability-Of-One-Outcome =
+  Total-Probability
+  /
+  Total-Outcomes
 
-Probability-Of-Winning = Probability-Of-One-Outcome * Favorable-Outcomes
-Probability-Of-Winning = 33% * 1 = 33%
+Probability-Of-One-Outcome =
+  100% / 3 ≈ 33%
 
-Probability-Of-Winning = Favorable-Outcomes / Total-Outcomes
-Probability-Of-Winning = 1 / 3
+Probability-Of-Winning =
+  Probability-Of-One-Outcome
+  *
+  Favorable-Outcomes
 
-Probability-Of-Loosing = Probability-Of-One-Outcome * Unfavorable-Outcomes
-Probability-Of-Loosing = 33% * 2 = 66%
+Probability-Of-Winning =
+  33% * 1 = 33%
 
-Probability-Of-Winning = Unfavorable-Outcomes / Total-Outcomes
-Probability-Of-Winning = 2 / 3
+Probability-Of-Winning =
+  Favorable-Outcomes
+  /
+  Total-Outcomes
+
+Probability-Of-Winning =
+  1 / 3
+
+Probability-Of-Loosing =
+  Probability-Of-One-Outcome
+  *
+  Unfavorable-Outcomes
+
+Probability-Of-Loosing =
+  33% * 2 = 66%
+
+Probability-Of-Winning =
+  Unfavorable-Outcomes
+  /
+  Total-Outcomes
+
+Probability-Of-Winning =
+2 / 3
 ?]
