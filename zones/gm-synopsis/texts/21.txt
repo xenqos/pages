@@ -1,41 +1,44 @@
-## Preflop ##
+## Game
 
-## Preflop
-
-# Starting Hands
+# Outs
 
 [!
-% - chance to win against a random hand
+Out - Card that makes Hand
+Count Card as Out once
+Blocker - Card that prevents having combinations
 !]
 
-### Early Position
+[|
+^Outs^Cards^Hand^
+|2 |Pair                 |Three of a Kind |
+|4 |Two Pair             |Full House      |
+|4 |Inside Straight      |Straight        |
+|8 |Open-ended Straight  |Straight        |
+|9 |Four Flush           |Flush           |
+|15|Straight & Flush Draw|Straight & Flush|
+|]
 
-[!
-SB, BB, UTG, UTG+1
-!]
+##### Outs Example
 
-^[hand-grid-early.webp]
+^[drawing-hands-outs.webp]
 
-### Middle Position
+##### Odds Example
 
-[!
-UTG+2, UTG+3, LJ
-!]
+^[drawing-odds.webp]
 
-^[hand-grid-middle.webp]
+##### Blocker Example
 
-### Late Position
+Pocket
+&[c|5]&[d|4]
 
-[!
-BTN, CO, HJ
-!]
 
-^[hand-grid-late.webp]
+Flop
+&[h|6]&[s|3]&[h|q]
 
-<!--
-https://redsharkpoker.com/starting-poker-hand/
-https://www.mypokercoaching.com/poker-hands-rankings/best-poker-starting-hands/
-http://www.cardfight.com/hand_matchups.html
-https://poker.md/tools/poker-math-and-probability.pdf
-https://www.pokerlistings.com/online-poker-odds-calculator
--->
+
+Turn
+&[h|2] or &[h|7]
+
+
+Result
+Get Straight; loose Flush; Instead of 8 Outs, only 6.

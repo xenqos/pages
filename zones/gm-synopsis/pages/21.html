@@ -31,46 +31,54 @@
 </div>
 <div id='idContent'>
 
+<h2>Game</h2>
 
-<h2>Preflop</h2>
-
-<h1>Starting Hands</h1>
-
-<blockquote>
-% - chance to win against a random hand<br>
-</blockquote>
-
-<h3>Early Position</h3>
+<h1>Outs</h1>
 
 <blockquote>
-SB, BB, UTG, UTG+1<br>
+Out - Card that makes Hand<br>
+Count Card as Out once<br>
+Blocker - Card that prevents having combinations<br>
 </blockquote>
 
-<a target='_blank' href='../images/hand-grid-early.webp'><img class='clImageThumb' src='../images/hand-grid-early.webp'></a><br>
+<div class='clOverflow'>
+<table>
+<tr>
+<th>Outs</th><th>Cards</th><th>Hand</th></tr>
+<tr><td>2 </td><td>Pair                 </td><td>Three of a Kind </td></tr>
+<tr><td>4 </td><td>Two Pair             </td><td>Full House      </td></tr>
+<tr><td>4 </td><td>Inside Straight      </td><td>Straight        </td></tr>
+<tr><td>8 </td><td>Open-ended Straight  </td><td>Straight        </td></tr>
+<tr><td>9 </td><td>Four Flush           </td><td>Flush           </td></tr>
+<tr><td>15</td><td>Straight & Flush Draw</td><td>Straight & Flush</td></tr>
+</table>
+</div>
 
-<h3>Middle Position</h3>
 
-<blockquote>
-UTG+2, UTG+3, LJ<br>
-</blockquote>
+<h5>Outs Example</h5>
 
-<a target='_blank' href='../images/hand-grid-middle.webp'><img class='clImageThumb' src='../images/hand-grid-middle.webp'></a><br>
+<a target='_blank' href='../images/drawing-hands-outs.webp'><img class='clImageThumb' src='../images/drawing-hands-outs.webp'></a><br>
 
-<h3>Late Position</h3>
+<h5>Odds Example</h5>
 
-<blockquote>
-BTN, CO, HJ<br>
-</blockquote>
+<a target='_blank' href='../images/drawing-odds.webp'><img class='clImageThumb' src='../images/drawing-odds.webp'></a><br>
 
-<a target='_blank' href='../images/hand-grid-late.webp'><img class='clImageThumb' src='../images/hand-grid-late.webp'></a><br>
+<h5>Blocker Example</h5>
 
-<!--<br>
-https://redsharkpoker.com/starting-poker-hand/<br>
-https://www.mypokercoaching.com/poker-hands-rankings/best-poker-starting-hands/<br>
-http://www.cardfight.com/hand_matchups.html<br>
-https://poker.md/tools/poker-math-and-probability.pdf<br>
-https://www.pokerlistings.com/online-poker-odds-calculator<br>
--->
+Pocket<br>
+<q class='c'>5</q><q class='d'>4</q><br>
+
+<br>
+Flop<br>
+<q class='h'>6</q><q class='s'>3</q><q class='h'>q</q><br>
+
+<br>
+Turn<br>
+<q class='h'>2</q> or <q class='h'>7</q><br>
+
+<br>
+Result<br>
+Get Straight; loose Flush; Instead of 8 Outs, only 6.<br>
 
 
 </div>
