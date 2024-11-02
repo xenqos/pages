@@ -21,7 +21,6 @@ input[type=radio]
 
 td
 {
-  border-collapse:      collapse;
   vertical-align:       middle;
 }
 
@@ -138,7 +137,7 @@ td
 
 .range_table
 {
-  border-collapse:      collapse;
+  border-collapse:      separate;
   border-spacing:       0;
 }
 
@@ -157,37 +156,37 @@ td
 .suited
 {
   background-color:     #fdf7ff; /* 1.05 */
-  border-color:         #cccccc;
+  border-color:         #eeeeee;
 }
 
 .offsuit
 {
   background-color:     #f5fdf6; /* 1.04 */
-  border-color:         #cccccc;
+  border-color:         #eeeeee;
 }
 
 .pocketpair
 {
   background-color:     #ebedfd; /* 1.16 */
-  border-color:         #cccccc;
+  border-color:         #eeeeee;
 }
 
 .range_cell.suited.selected
 {
-  background-color:     #ffe6b3; /* 1.22 */ /* #fff4df 1.09 */
-  border-color:         #cccccc;
+  background-color:     #ffffb3; /* 1.04 */
+  border-color:         #eeeeee;
 }
 
 .range_cell.offsuit.selected
 {
-  background-color:     #ffe6b3; /* 1.22 */
-  border-color:         #cccccc;
+  background-color:     #ffffb3;
+  border-color:         #eeeeee;
 }
 
 .range_cell.pocketpair.selected
 {
-  background-color:     #ffe6b3; /* 1.22 */
-  border-color:         #cccccc;
+  background-color:     #ffffb3;
+  border-color:         #eeeeee;
 }
 
 .suited.selected.club,
@@ -195,8 +194,8 @@ td
 .suited.selected.heart,
 .suited.selected.spade
 {
-  background:           linear-gradient(to right,#cccccc 25%,#fdf7ff 25%);
-  border-color:         #cccccc !important
+  background:           linear-gradient(to right,#eeeeee 25%,#fdf7ff 25%);
+  border-color:         #eeeeee !important
 }
 
 .offsuit.selected.club,
@@ -204,8 +203,8 @@ td
 .offsuit.selected.heart,
 .offsuit.selected.spade
 {
-  background:           linear-gradient(to right,#cccccc 50%,#f5fdf6 50%);
-  border-color:         #cccccc !important
+  background:           linear-gradient(to right,#eeeeee 50%,#f5fdf6 50%);
+  border-color:         #eeeeee !important
 }
 
 .pocketpair.selected.club,
@@ -213,13 +212,13 @@ td
 .pocketpair.selected.heart,
 .pocketpair.selected.spade
 {
-  background:           linear-gradient(to right,#cccccc 50%,#ebedfd 50%);
-  border-color:         #cccccc !important
+  background:           linear-gradient(to right,#eeeeee 50%,#ebedfd 50%);
+  border-color:         #eeeeee !important
 }
 
 .subset.selected
 {
-  border-color:         #cccccc !important
+  border-color:         #eeeeee !important
 }
 
 .selected.club:before,
