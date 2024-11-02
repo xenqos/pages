@@ -3536,12 +3536,6 @@ fieldset:disabled a.btn
 
 .btn-success
 {
-/*
-  color: #fff;
-  background-color: #28a745;
-  border-color: #28a745;
-*/
-
   color: #000000;
   background-color: #cccccc;
   border-color: #888888;
@@ -3549,12 +3543,6 @@ fieldset:disabled a.btn
 
 .btn-success:hover
 {
-/*
-  color: #fff;
-  background-color: #218838;
-  border-color: #1e7e34;
-*/
-
   color: #000000;
   background-color: #eeeeee;
   border-color: #888888;
@@ -3689,12 +3677,6 @@ fieldset:disabled a.btn
 
 .btn-danger
 {
-/*
-  color: #fff;
-  background-color: #dc3545;
-  border-color: #dc3545;
-*/
-
   color: #000000;
   background-color: #cccccc;
   border-color: #888888;
@@ -3702,12 +3684,6 @@ fieldset:disabled a.btn
 
 .btn-danger:hover
 {
-/*
-  color: #fff;
-  background-color: #c82333;
-  border-color: #bd2130;
-*/
-
   color: #000000;
   background-color: #eeeeee;
   border-color: #888888;
