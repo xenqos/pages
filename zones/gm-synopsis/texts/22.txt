@@ -1,41 +1,21 @@
-## Preflop ##
+## Probability & Odds
 
-## Preflop
+# Pocket Cards P&O
 
-# Starting Hands
-
-[!
-% - chance to win against a random hand
-!]
-
-### Early Position
-
-[!
-SB, BB, UTG, UTG+1
-!]
-
-^[hand-grid-early.webp]
-
-### Middle Position
-
-[!
-UTG+2, UTG+3, LJ
-!]
-
-^[hand-grid-middle.webp]
-
-### Late Position
-
-[!
-BTN, CO, HJ
-!]
-
-^[hand-grid-late.webp]
-
-<!--
-https://redsharkpoker.com/starting-poker-hand/
-https://www.mypokercoaching.com/poker-hands-rankings/best-poker-starting-hands/
-http://www.cardfight.com/hand_matchups.html
-https://poker.md/tools/poker-math-and-probability.pdf
-https://www.pokerlistings.com/online-poker-odds-calculator
--->
+[?
+AKs (any specific suited cards)  0.30%  330:1 &nbsp;
+AA+ (any specific pair)          0.45%  220:1 &nbsp;
+AA or KK                         0.90%  110:1 &nbsp;
+AKs, KQs, QJs, JTs               1.21%   82:1 &nbsp;
+AK (any specific non-pair)       1.21%   82:1 &nbsp;
+AA, KK, QQ                       1.36%   73:1 &nbsp;
+AA, KK, QQ or JJ                 1.81%   55:1 &nbsp;
+Suited, J+                       1.81%   55:1 &nbsp;
+AA, KK, QQ, JJ, TT               2.26%   43:1 &nbsp;
+Suited cards, 10+                3.02%   33:1 &nbsp;
+Suited connectors                3.92%   26:1 &nbsp;
+Connected cards, 10+             4.83%   20:1 &nbsp;
+Any pair                         6.25%   16:1 &nbsp;
+One or more Aces                16.60%    6:1 &nbsp;
+Two suited cards                24.00%    3:1 &nbsp;
+?]
