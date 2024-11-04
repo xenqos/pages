@@ -2,7 +2,7 @@
 
 body
 {
-  background-color:     #DBDBDB;
+  background-color:     #dbdbdb;
 }
 
 input[type=checkbox]
@@ -156,38 +156,51 @@ td
 
 .suited
 {
-  background-color:     #fdf7ff; /* 1.05 */
-  border-color:         #cccccc;
+  background-color:     #f7eefa; /* 18.57 */
+  border-color:         #aaaaaa;
+  font-family:          monospace;
+  font-weight:          bold;
 }
 
 .offsuit
 {
-  background-color:     #f5fdf6; /* 1.04 */
-  border-color:         #cccccc;
+  background-color:     #e7f6e7; /* 18.73 */
+  border-color:         #aaaaaa;
+  font-family:          monospace;
+  font-weight:          bold;
 }
 
 .pocketpair
 {
-  background-color:     #ebedfd; /* 1.16 */
-  border-color:         #cccccc;
+
+  background-color:     #dae2f4; /* 16.17 */
+  border-color:         #aaaaaa;
+  font-family:          monospace;
+  font-weight:          bold;
 }
 
 .range_cell.suited.selected
 {
-  background-color:     #ffe6b3; /* 1.22 */ /* #fff4df 1.09 */
-  border-color:         #cccccc;
+  background-color:     #ffdd99; /* 16.05 */ /* ranges.js: linear-gradient(to right, #ffdd99 ${r}%, #fdf1d9 ${r}%) */
+  border-color:         #aaaaaa;
+  font-family:          monospace;
+  font-weight:          bold;
 }
 
 .range_cell.offsuit.selected
 {
-  background-color:     #ffe6b3; /* 1.22 */
-  border-color:         #cccccc;
+  background-color:     #ffdd99; /* 16.05 */
+  border-color:         #aaaaaa;
+  font-family:          monospace;
+  font-weight:          bold;
 }
 
 .range_cell.pocketpair.selected
 {
-  background-color:     #ffe6b3; /* 1.22 */
-  border-color:         #cccccc;
+  background-color:     #ffdd99; /* 16.05 */
+  border-color:         #aaaaaa;
+  font-family:          monospace;
+  font-weight:          bold;
 }
 
 .suited.selected.club,
@@ -195,8 +208,8 @@ td
 .suited.selected.heart,
 .suited.selected.spade
 {
-  background:           linear-gradient(to right,#cccccc 25%,#fdf7ff 25%);
-  border-color:         #cccccc !important
+  background:           linear-gradient(to right,#aaaaaa 25%,#fdf7ff 25%);
+  border-color:         #aaaaaa !important
 }
 
 .offsuit.selected.club,
@@ -204,8 +217,8 @@ td
 .offsuit.selected.heart,
 .offsuit.selected.spade
 {
-  background:           linear-gradient(to right,#cccccc 50%,#f5fdf6 50%);
-  border-color:         #cccccc !important
+  background:           linear-gradient(to right,#aaaaaa 50%,#f5fdf6 50%);
+  border-color:         #aaaaaa !important
 }
 
 .pocketpair.selected.club,
@@ -213,13 +226,13 @@ td
 .pocketpair.selected.heart,
 .pocketpair.selected.spade
 {
-  background:           linear-gradient(to right,#cccccc 50%,#ebedfd 50%);
-  border-color:         #cccccc !important
+  background:           linear-gradient(to right,#aaaaaa 50%,#ebedfd 50%);
+  border-color:         #aaaaaa !important
 }
 
 .subset.selected
 {
-  border-color:         #cccccc !important
+  border-color:         #aaaaaa !important
 }
 
 .selected.club:before,
@@ -340,7 +353,7 @@ button.showbutton:before
   width:              24px;
   height:             24px;
   border:             4px solid #007bff;
-  background-color:   #fff;
+  background-color:   #ffffff;
   border-radius:      24px;
   box-shadow:         0 1px 3px rgba(0,0,255,.3);
   cursor:             pointer;

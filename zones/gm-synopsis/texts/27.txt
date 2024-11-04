@@ -2,6 +2,8 @@
 
 # Preflop Combos
 
+![Source|https://www.reddit.com/r/poker/comments/igcn1h/starting_hand_equity_chart/]
+
 ###### Paired Hands
 &[s|A]&[h|A] &nbsp; &[s|A]&[h|A] &nbsp; &[s|A]&[c|A]
 &[h|A]&[d|A] &nbsp; &[h|A]&[c|A] &nbsp; &[d|A]&[c|A]
@@ -38,7 +40,3 @@ Total Combos  = 1326
 Equity (as %) of starting hands in one-on-one matchups against a random hand
 
 ^[probability-win-random.webp]
-
-<!--
-https://www.reddit.com/r/poker/comments/igcn1h/starting_hand_equity_chart/
--->

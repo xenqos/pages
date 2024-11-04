@@ -4861,7 +4861,7 @@
         for (const s of h)
           if (s in a) {
             const r = a[s] / 12 * 100;
-            $(`#0_${s}`).css("background", `linear-gradient(to right, #ffe6b3 ${r}%, #fff4df ${r}%)`)
+            $(`#0_${s}`).css("background", `linear-gradient(to right, #ffdd99 ${r}%, #fdf1d9 ${r}%)`)
           } else $(`#0_${s}`).css("background", "")
       },
       C = function(s) {
