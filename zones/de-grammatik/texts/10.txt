@@ -1,116 +1,95 @@
 ## Произношение
 
-# Сочетание согласных
-
-%[r|ch]&emsp;/ %[l|x] /
+# Двойные согласные
 
 [!
-после %[m|а], %[m|o], %[m|u]
+двойные согласные всегда произносятся как одинарные
 !]
 
+%[r|bb]&emsp;/ %[l|b] /
+
 [|-
-|%[m|acht    ]|восемь|
-|%[m|der Koch]|пoвар |
-|%[m|das Buch]|книга |
+|%[m|die Ebbe     ]|отлив      |
+|%[m|die Robbe    ]|тюлень     |
+|%[m|die Abbildung]|изображение|
 |]
 
-%[r|ch]&emsp;/ %[l|ç] /
-
-[!
-после %[m|e], %[m|i], %[m|ä], %[m|ö], %[m|ü]
-!]
+%[r|dd]&emsp;/ %[l|d] /
 
 [|-
-|%[m|echt       ]|настоящий|
-|%[m|mich       ]|меня     |
-|%[m|die Dächer ]|крыши    |
-|%[m|die Töchter]|дочери   |
-|%[m|die Bücher ]|книги    |
+|%[m|die Kladde]|черновик |
+|%[m|lodderig  ]|небрежный|
+|%[m|muddig    ]|илистый  |
 |]
 
-%[r|chs]&emsp;/ %[l|ks] /
+%[r|ff]&emsp;/ %[l|f] /
 
 [|-
-|%[m|sechs    ]|шесть|
-|%[m|wachsen  ]|расти|
-|%[m|der Fuchs]|лиса |
+|%[m|das Schiff]|корабль |
+|%[m|der Kaffee]|кофе    |
+|%[m|der Affe  ]|обезьяна|
 |]
 
-%[r|ck]&emsp;/ %[l|k] /
+%[r|gg]&emsp;/ %[l|g] /
 
 [|-
-|%[m|dick    ]|толстый |
-|%[m|packen  ]|паковать|
-|%[m|der Sack]|мешок |
+|%[m|die Flagge]|флаг    |
+|%[m|der Roggen]|рожь    |
+|%[m|eggen     ]|боронить|
 |]
 
-%[r|dt]&emsp;/ %[l|t] /
+%[r|ll]&emsp;/ %[l|l] /
 
 [|-
-|%[m|die Stadt   ]|город    |
-|%[m|das Handtuch]|полотенце|
+|%[m|die Halle]|зал     |
+|%[m|der Ball ]|мяч, шар|
+|%[m|die Welle]|волна   |
 |]
 
-%[r|ng]&emsp;/ %[l|ŋ] /
+%[r|mm]&emsp;/ %[l|m] /
 
 [|-
-|%[m|das Ding]|вещь     |
-|%[m|der Ring]|кольцо   |
-|%[m|bringen ]|приносить|
+|%[m|kommen    ]|идти   |
+|%[m|das Zimmer]|комната|
+|%[m|der Kamm  ]|гребень|
 |]
 
-%[r|pf]&emsp;/ %[l|pf] /
+%[r|nn]&emsp;/ %[l|n] /
 
 [|-
-|%[m|das Pferd  ]|лошадь  |
-|%[m|der Pfeffer]|перец   |
-|%[m|die Pflanze]|растение|
+|%[m|die Sonne]|солнце|
+|%[m|kennen   ]|знать |
+|%[m|die Henne]|курица|
 |]
 
-%[r|rh]&emsp;/ %[l|r] /
+%[r|pp]&emsp;/ %[l|p] /
 
 [|-
-|%[m|die Rhetorik]|риторика|
-|%[m|der Rhythmus]|ритм    |
-|%[m|der Rhein   ]|Рейн    |
+|%[m|knapp    ]|тесный|
+|%[m|die Kappe]|шапка |
+|%[m|die Suppe]|суп   |
 |]
 
-%[r|sch]&emsp;/ %[l|ʃ] /
+%[r|ss]&emsp;/ %[l|s] /
 
 [|-
-|%[m|die Schule]|школа|
-|%[m|der Schnee]|снег |
-|%[m|der Tisch ]|стол |
+|%[m|lassen    ]|пустить|
+|%[m|das Wasser]|вода   |
+|%[m|der Kuss  ]|поцелуй|
 |]
 
-%[r|sp]&emsp;/ %[l|ʃp] /
+%[r|ß]&emsp;/ %[l|s] /
 
 [|-
-|%[m|der Spiegel]|зеркало|
-|%[m|das Spiel  ]|игра   |
-|%[m|die Spur   ]|след   |
+|%[m|der Fuß   ]|нога       |
+|%[m|die Straße]|улица      |
+|%[m|der Gruß  ]|приветствие|
 |]
 
-%[r|st]&emsp;/ %[l|ʃt] /
+%[r|tt]&emsp;/ %[l|t] /
 
 [|-
-|%[m|der Stern ]|звезда|
-|%[m|die Straße]|улица |
-|%[m|die Stadt ]|город |
-|]
-
-%[r|th]&emsp;/ %[l|t] /
-
-[|-
-|%[m|das Thema     ]|тема      |
-|%[m|das Theater   ]|театр     |
-|%[m|die Mathematik]|математика|
-|]
-
-%[r|tz]&emsp;/ %[l|ts] /
-
-[|-
-|%[m|der Platz]|площадь|
-|%[m|die Katze]|кошка  |
-|%[m|setzen   ]|сажать |
+|%[m|das Bett  ]|постель |
+|%[m|das Wetter]|погода  |
+|%[m|die Mitte ]|середина|
 |]

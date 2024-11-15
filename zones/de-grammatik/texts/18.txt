@@ -1,21 +1,91 @@
 ## Существительные
 
-# Тип III - женское склонение
+# Тип II - слабое склонение
 
 [|
 |nom.|-%[m|]|
-|gen.|-%[m|]|
-|dat.|-%[m|]|
-|akk.|-%[m|]|
+|gen.|-(%[m|e])%[m|n]|
+|dat.|-(%[m|e])%[m|n]|
+|akk.|-(%[m|e])%[m|n]|
 |]
 
 [|
-|nom.|%[m|die Nacht]|%[m|die Kraft]|%[m|die Tür]|
-|gen.|%[m|der Nacht]|%[m|der Kraft]|%[m|der Tür]|
-|dat.|%[m|der Nacht]|%[m|der Kraft]|%[m|der Tür]|
-|akk.|%[m|die Nacht]|%[m|die Kraft]|%[m|die Tür]|
+|nom.|%[m|der Knabe]      |%[m|der Mensch]       |%[m|der Diplomat]      |
+|gen.|%[m|des Knabe]%[b|n]|%[m|des Mensch]%[b|en]|%[m|des Diplomat]%[b|n]|
+|dat.|%[m|dem Knabe]%[b|n]|%[m|dem Mensch]%[b|en]|%[m|dem Diplomat]%[b|n]|
+|akk.|%[m|den Knabe]%[b|n]|%[m|den Mensch]%[b|en]|%[m|den Diplomat]%[b|n]|
 |]
 
 [!
-Склоняются все имена существительные женского рода.
+Склоняются существительные только мужского рода.
+Преимущественно одушевлённые.
 !]
+
+[!
+Существительные, оканчивающиеся на -%[b|e]:
+!]
+
+[|
+|%[m|der Affe]   |обезьяна |
+|%[m|der Erbe]   |наследник|
+|%[m|der Falke]  |сокол    |
+|%[m|der Hase]   |заяц     |
+|%[m|der Knabe]  |мальчик  |
+|%[m|der Kollege]|коллега  |
+|%[m|der Löwe]   |лев      |
+|%[m|der Neffe]  |племянник|
+|]
+
+[!
+Некоторые односложные имена существительные:
+!]
+
+[|
+|%[m|der Bär]   |медведь |
+|%[m|der Fürst] |князь   |
+|%[m|der Graf]  |граф    |
+|%[m|der Held]  |герой   |
+|%[m|der Herr]  |господин|
+|%[m|der Hirt]  |пастух  |
+|%[m|der Mensch]|человек |
+|%[m|der Narr]  |дурак   |
+|%[m|der Ochs]  |бык     |
+|%[m|der Prinz] |принц   |
+|%[m|der Spatz] |воробей |
+|%[m|der Tor]   |дурак   |
+|%[m|der Zar]   |царь    |
+|]
+
+[!
+Существительные с иностранными суффиксами:
+!]
+-%[b|ant], -%[b|at], -%[b|ent], -%[b|et], -%[b|graph], -%[b|greif], -%[b|ist], -%[b|it], -%[b|ot]
+
+[|
+|%[m|der Aspirant]|аспирант|
+|%[m|der Fotograf]|фотограф|
+|%[m|der Diplomat]|дипломат|
+|%[m|der Pianist] |пианист |
+|]
+
+[!
+Существительные:
+!]
+
+[|
+|%[m|der Architekt]|архитектор|
+|%[m|der Kamerad]  |товарищ   |
+|]
+
+[!
+Несколько существительных иностранного происхождения:
+!]
+
+[|
+|%[m|der Planet]   |планета  |
+|%[m|der Вrilliant]|бриллиант|
+|%[m|der Komet]    |комета   |
+|%[m|der Diamant]  |алмаз    |
+|%[m|der Automat]  |автомат  |
+|%[m|der Foliant]  |фолиант  |
+|]
