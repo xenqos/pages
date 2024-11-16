@@ -1,0 +1,422 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ncx version="2005-1" xmlns="http://www.daisy.org/z3986/2005/ncx/">
+ <head>
+  <meta content="urn:uuid:4abe16e3-13b2-5f87-8e60-7efd7573d9fc" name="dtb:uid" />
+  <meta content="2" name="dtb:depth" />
+  <meta content="0" name="dtb:totalPageCount" />
+  <meta content="0" name="dtb:maxPageNumber" />
+ </head>
+ <docTitle>
+  <text>Lutherbibel 1912</text>
+ </docTitle>
+ <navMap>
+  <navPoint id="navPoint1" playOrder="1">
+   <navLabel>
+    <text>Lutherbibel 1912</text>
+   </navLabel>
+   <content src="cover.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint2" playOrder="2">
+   <navLabel>
+    <text>©?</text>
+   </navLabel>
+   <content src="copyright.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint3" playOrder="3">
+   <navLabel>
+    <text>Das 1. Buch Mose (Genesis)</text>
+   </navLabel>
+   <content src="GEN.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint4" playOrder="4">
+   <navLabel>
+    <text>Das 2. Buch Mose (Exodus)</text>
+   </navLabel>
+   <content src="EXO.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint5" playOrder="5">
+   <navLabel>
+    <text>Das 3. Buch Mose (Levitikus)</text>
+   </navLabel>
+   <content src="LEV.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint6" playOrder="6">
+   <navLabel>
+    <text>Das 4. Buch Mose (Numeri)</text>
+   </navLabel>
+   <content src="NUM.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint7" playOrder="7">
+   <navLabel>
+    <text>Das 5. Buch Mose (Deuteronomium)</text>
+   </navLabel>
+   <content src="DEU.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint8" playOrder="8">
+   <navLabel>
+    <text>Das Buch Josua</text>
+   </navLabel>
+   <content src="JOS.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint9" playOrder="9">
+   <navLabel>
+    <text>Das Buch Richter</text>
+   </navLabel>
+   <content src="JDG.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint10" playOrder="10">
+   <navLabel>
+    <text>Das Buch Ruth</text>
+   </navLabel>
+   <content src="RUT.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint11" playOrder="11">
+   <navLabel>
+    <text>Das erste Buch Samuel</text>
+   </navLabel>
+   <content src="1SA.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint12" playOrder="12">
+   <navLabel>
+    <text>Das zweite Buch Samuel</text>
+   </navLabel>
+   <content src="2SA.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint13" playOrder="13">
+   <navLabel>
+    <text>Das erste Buch der Könige</text>
+   </navLabel>
+   <content src="1KI.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint14" playOrder="14">
+   <navLabel>
+    <text>Das zweite Buch der Könige</text>
+   </navLabel>
+   <content src="2KI.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint15" playOrder="15">
+   <navLabel>
+    <text>Das erste Buch der Chonik</text>
+   </navLabel>
+   <content src="1CH.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint16" playOrder="16">
+   <navLabel>
+    <text>Das zweite Buch der Chonik</text>
+   </navLabel>
+   <content src="2CH.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint17" playOrder="17">
+   <navLabel>
+    <text>Das Buch Esra</text>
+   </navLabel>
+   <content src="EZR.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint18" playOrder="18">
+   <navLabel>
+    <text>Das Buch Nehemia</text>
+   </navLabel>
+   <content src="NEH.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint19" playOrder="19">
+   <navLabel>
+    <text>Das Buch Esther</text>
+   </navLabel>
+   <content src="EST.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint20" playOrder="20">
+   <navLabel>
+    <text>Das Buch Hiob</text>
+   </navLabel>
+   <content src="JOB.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint21" playOrder="21">
+   <navLabel>
+    <text>Die Psalmen</text>
+   </navLabel>
+   <content src="PSA.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint22" playOrder="22">
+   <navLabel>
+    <text>Die Sprüche</text>
+   </navLabel>
+   <content src="PRO.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint23" playOrder="23">
+   <navLabel>
+    <text>Der Prediger</text>
+   </navLabel>
+   <content src="ECC.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint24" playOrder="24">
+   <navLabel>
+    <text>Das Hohelied Salomos</text>
+   </navLabel>
+   <content src="SNG.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint25" playOrder="25">
+   <navLabel>
+    <text>Der Prophet Jesaja</text>
+   </navLabel>
+   <content src="ISA.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint26" playOrder="26">
+   <navLabel>
+    <text>Der Prophet Jeremia</text>
+   </navLabel>
+   <content src="JER.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint27" playOrder="27">
+   <navLabel>
+    <text>Die Klagelieder</text>
+   </navLabel>
+   <content src="LAM.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint28" playOrder="28">
+   <navLabel>
+    <text>Der Prophet Hesekiel</text>
+   </navLabel>
+   <content src="EZK.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint29" playOrder="29">
+   <navLabel>
+    <text>Der Prophet Daniel</text>
+   </navLabel>
+   <content src="DAN.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint30" playOrder="30">
+   <navLabel>
+    <text>Der Prophet Hosea</text>
+   </navLabel>
+   <content src="HOS.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint31" playOrder="31">
+   <navLabel>
+    <text>Der Prophet Joel</text>
+   </navLabel>
+   <content src="JOL.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint32" playOrder="32">
+   <navLabel>
+    <text>Der Prophet Amos</text>
+   </navLabel>
+   <content src="AMO.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint33" playOrder="33">
+   <navLabel>
+    <text>Der Prophet Obadja</text>
+   </navLabel>
+   <content src="OBA.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint34" playOrder="34">
+   <navLabel>
+    <text>Der Prophet Jona</text>
+   </navLabel>
+   <content src="JON.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint35" playOrder="35">
+   <navLabel>
+    <text>Der Prophet Micha</text>
+   </navLabel>
+   <content src="MIC.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint36" playOrder="36">
+   <navLabel>
+    <text>Der Prophet Nahum</text>
+   </navLabel>
+   <content src="NAM.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint37" playOrder="37">
+   <navLabel>
+    <text>Der Prophet Habakuk</text>
+   </navLabel>
+   <content src="HAB.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint38" playOrder="38">
+   <navLabel>
+    <text>Der Prophet Zephanja</text>
+   </navLabel>
+   <content src="ZEP.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint39" playOrder="39">
+   <navLabel>
+    <text>Der Prophet Haggai</text>
+   </navLabel>
+   <content src="HAG.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint40" playOrder="40">
+   <navLabel>
+    <text>Der Prophet Sacharja</text>
+   </navLabel>
+   <content src="ZEC.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint41" playOrder="41">
+   <navLabel>
+    <text>Der Prophet Maleachi</text>
+   </navLabel>
+   <content src="MAL.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint42" playOrder="42">
+   <navLabel>
+    <text>Das Evangelium nach Matthäus</text>
+   </navLabel>
+   <content src="MAT.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint43" playOrder="43">
+   <navLabel>
+    <text>Das Evangelium nach Markus</text>
+   </navLabel>
+   <content src="MRK.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint44" playOrder="44">
+   <navLabel>
+    <text>Das Evangelium nach Lukas</text>
+   </navLabel>
+   <content src="LUK.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint45" playOrder="45">
+   <navLabel>
+    <text>Das Evangelium nach Johannes</text>
+   </navLabel>
+   <content src="JHN.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint46" playOrder="46">
+   <navLabel>
+    <text>Die Apostelgeschichte</text>
+   </navLabel>
+   <content src="ACT.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint47" playOrder="47">
+   <navLabel>
+    <text>Der Brief des Paulus an die Römer</text>
+   </navLabel>
+   <content src="ROM.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint48" playOrder="48">
+   <navLabel>
+    <text>Der erste Brief des Apostels Paulus an die Korinther</text>
+   </navLabel>
+   <content src="1CO.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint49" playOrder="49">
+   <navLabel>
+    <text>Der zweite Brief des Apostels Paulus an die Korinther</text>
+   </navLabel>
+   <content src="2CO.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint50" playOrder="50">
+   <navLabel>
+    <text>Der Brief des Apostels Paulus an die Galater</text>
+   </navLabel>
+   <content src="GAL.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint51" playOrder="51">
+   <navLabel>
+    <text>Der Brief des Apostels Paulus an die Epheser</text>
+   </navLabel>
+   <content src="EPH.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint52" playOrder="52">
+   <navLabel>
+    <text>Der Brief des Apostels Paulus an die Philipper</text>
+   </navLabel>
+   <content src="PHP.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint53" playOrder="53">
+   <navLabel>
+    <text>Der Brief des Apostels Paulus an die Kolosser</text>
+   </navLabel>
+   <content src="COL.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint54" playOrder="54">
+   <navLabel>
+    <text>Der erste Brief des Apostels Paulus an die Thessalonicher</text>
+   </navLabel>
+   <content src="1TH.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint55" playOrder="55">
+   <navLabel>
+    <text>Der zweite Brief des Apostels Paulus an die Thessalonicher</text>
+   </navLabel>
+   <content src="2TH.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint56" playOrder="56">
+   <navLabel>
+    <text>Der erste Brief des Apostels Paulus an Timotheus</text>
+   </navLabel>
+   <content src="1TI.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint57" playOrder="57">
+   <navLabel>
+    <text>Der zweite Brief des Apostels Paulus an Timotheus</text>
+   </navLabel>
+   <content src="2TI.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint58" playOrder="58">
+   <navLabel>
+    <text>Der Brief des Apostels Paulus an Titus</text>
+   </navLabel>
+   <content src="TIT.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint59" playOrder="59">
+   <navLabel>
+    <text>Der Brief des Apostels Paulus an Philemon</text>
+   </navLabel>
+   <content src="PHM.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint60" playOrder="60">
+   <navLabel>
+    <text>Der Brief an die Hebräer</text>
+   </navLabel>
+   <content src="HEB.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint61" playOrder="61">
+   <navLabel>
+    <text>Der Brief des Jakobus</text>
+   </navLabel>
+   <content src="JAS.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint62" playOrder="62">
+   <navLabel>
+    <text>Der erste Brief des Petrus</text>
+   </navLabel>
+   <content src="1PE.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint63" playOrder="63">
+   <navLabel>
+    <text>Der zweite Brief des Petrus</text>
+   </navLabel>
+   <content src="2PE.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint64" playOrder="64">
+   <navLabel>
+    <text>Der erste Brief des Johannes</text>
+   </navLabel>
+   <content src="1JN.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint65" playOrder="65">
+   <navLabel>
+    <text>Der zweite Brief des Johannes</text>
+   </navLabel>
+   <content src="2JN.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint66" playOrder="66">
+   <navLabel>
+    <text>Der dritte Brief des Johannes</text>
+   </navLabel>
+   <content src="3JN.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint67" playOrder="67">
+   <navLabel>
+    <text>Der Brief des Judas</text>
+   </navLabel>
+   <content src="JUD.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint68" playOrder="68">
+   <navLabel>
+    <text>Das Buch der Offenbarung Jesu Christi</text>
+   </navLabel>
+   <content src="REV.xhtml" />
+  </navPoint>
+ </navMap>
+</ncx>
