@@ -1,16 +1,3 @@
-a,
-a:visited
-{
-  color:                #003399 !important;
-  text-decoration:      none;
-}
-
-a:hover
-{
-  color:                #DD0000 !important;
-  text-decoration:      none;
-}
-
 p
 {
   margin:               0.000rem 0.000rem  1.000rem 0.000rem;
@@ -23,10 +10,8 @@ p
   padding:              0.000rem 0.000rem  0.000rem 0.000rem;
 }
 
-h3
+.dpb
 {
-  color:                #aa0000 !important;
-  font-size:            1.200rem;
-  margin:               2.000rem 0.000rem  1.000rem 0.000rem;
+  margin:               0.000rem 0.500rem  0.000rem 0.000rem;
   padding:              0.000rem 0.000rem  0.000rem 0.000rem;
 }
