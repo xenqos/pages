@@ -18,7 +18,7 @@
   <script type='text/javascript' src='../scripts/local.js'></script>
 </head>
 <body onload='fncGetDivState(); fncGetScrollPosition();'>
-
+<audio id='idTrack' src='../sounds/29.mp3' preload='auto'></audio>
 <div id='idPanel'>
 <div id='idTopbar'>
   <div id='idTopbarNavigation'>
@@ -26,28 +26,34 @@
     <a href='28.html'><span class='clNavLeft'></span></a>
     <a href='../index.html'><span class='clNavUp'></span></a>
     <a href='30.html'><span class='clNavRight'></span></a>
-
+<span class='clNavRewind' onclick='fncRewindTrack(&quot;idTrack&quot;)'></span><span class='clNavPlay' onclick='fncPlayTrack(&quot;idTrack&quot;)'></span>
   </div>
 </div>
 <div id='idContent'>
 
 
-<h2>Глаголы</h2>
+<h2>Наречия</h2>
 
-<h1>Времена</h1>
+<h1>Вопросительные</h1>
 
 <div class='clOverflow'>
 <table>
 <tr>
-<td><span class='m'>das Präsens</span>        </td><td>die Gegenwart       </td><td>Настоящее                </td></tr>
-<tr><td><span class='m'>das Präteritum</span>     </td><td>die Vergangenheit   </td><td>Прошедшее                </td></tr>
-<tr><td><span class='m'>das Perfekt</span>        </td><td>die Vorgegenwart    </td><td>Предпрошедшее            </td></tr>
-<tr><td><span class='m'>das Plusquamperfekt</span></td><td>die Vorvergangenheit</td><td>Предпрошедшее в прошлом  </td></tr>
-<tr><td><span class='m'>das Futur I</span>        </td><td>die Zukunft         </td><td>Будущее                  </td></tr>
-<tr><td><span class='m'>das Futur II</span>       </td><td>die Vorzukunft      </td><td>Предварительное в будущем</td></tr>
+<td><span class='m'>wie  </span></td><td>как   </td></tr>
+<tr><td><span class='m'>warum</span></td><td>почему</td></tr>
+<tr><td><span class='m'>wann </span></td><td>когда </td></tr>
+<tr><td><span class='m'>wo   </span></td><td>где   </td></tr>
+<tr><td><span class='m'>wohin</span></td><td>куда  </td></tr>
+<tr><td><span class='m'>woher</span></td><td>откуда</td></tr>
+<tr><td><span class='m'>wieviel</span></td><td>сколько <sup>1</sup></td></tr>
+<tr><td><span class='m'>wie viele</span></td><td>сколько <sup>2</sup></td></tr>
 </table>
 </div>
 
+<blockquote>
+<sup>1</sup> не исчисляемые<br>
+<sup>2</sup> исчисляемые<br>
+</blockquote>
 
 
 </div>

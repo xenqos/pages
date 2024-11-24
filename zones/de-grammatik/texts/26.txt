@@ -2,15 +2,17 @@
 
 # Вопросительные
 ---
-### кто, что
+### Личные
 [|
 |nom.|%[m|wer   ]|%[m|was   ]|кто |что |
 |gen.|%[m|wessen]|%[m|wessen]|кого|чего|
 |dat.|%[m|wem   ]|-          |кому|-   |
 |akk.|%[m|wen   ]|%[m|was   ]|кого|что |
 |]
+
 ---
-### который
+### Указательные
+#### какой, который
 [|
 ^    ^m.          ^f.          ^n.         ^p.         ^
 |nom.|%[m|welcher]|%[m|welche ]|%[m|welches]|%[m|welche ]|
@@ -19,7 +21,7 @@
 |akk.|%[m|welchen]|%[m|welche ]|%[m|welches]|%[m|welche ]|
 |]
 ---
-### что за
+#### что за
 [|
 ^^m.^f.^n.^p.^
 |nom.|%[m|was für ein  ]|%[m|was für eine ]|%[m|was für ein  ]|%[m|was für]|

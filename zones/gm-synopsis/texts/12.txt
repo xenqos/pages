@@ -7,8 +7,8 @@
 'Small Blind' places small blind
 'Big Blind' places big blind
 'Button' deal 'Hole Cards' starting from left
-If required all players place 'Ante'
 Each player clockwise places: 'Fold' / 'Call' / 'Raise'
+'Big Blind' is 'Live Blind' - may 'Call' with no money
 !]
 
 [-
@@ -18,6 +18,7 @@ Each player clockwise places: 'Fold' / 'Call' / 'Raise'
 
 ### Flop
 [!
+'Dealer' burns top card
 'Button' deal 'Flop Community Cards'
 'Small Blind' places: 'Fold' / 'Check' / 'Bet'
 Each player clockwise places: 'Fold' / 'Check' / 'Bet' / 'Call' / 'Raise'
@@ -25,14 +26,16 @@ Each player clockwise places: 'Fold' / 'Check' / 'Bet' / 'Call' / 'Raise'
 
 ### Turn
 [!
-'Button' deal 'Turn Community Card'
+'Dealer' burns top card
+'Button' deal 'Turn Community Card' - 'Fourth Street'
 'Small Blind' places: 'Fold' / 'Check' / 'Bet'
 Each player clockwise places: 'Fold' / 'Check' / 'Bet' / 'Call' / 'Raise'
 !]
 
 ### River
 [!
-'Button' deal 'River Community Card'
+'Dealer' burns top card
+'Button' deal 'River Community Card' - 'Fifth Street'
 'Small Blind' places: 'Fold' / 'Check' / 'Bet'
 Each player clockwise places: 'Fold' / 'Check' / 'Bet' / 'Call' / 'Raise'
 !]
