@@ -1,59 +1,62 @@
-###### Глаголы &nbsp;•&nbsp; Таблицы склонения
+###### Глаголы &nbsp;•&nbsp; Вспомогательные
 
-# Konjunktiv II
+### Вспомогательные глаголы ###
 
-##### Regelmäßige Präteritum
+# sein
 
-[|
-|ich| -%[l|te]  |%[m|sagte]  |
-|du | -%[l|test]|%[m|sagtest]|
-|er | -%[l|te]  |%[m|sagte]  |
-|wir| -%[l|ten] |%[m|sagten] |
-|ihr| -%[l|tet] |%[m|sagtet] |
-|sie| -%[l|ten] |%[m|sagten] |
-|]
+[!
+be · быть
+!]
 
-##### Unregelmäßige Präteritum
+---
 
-[|
-|ich| -%[l|e]  |%[m|sänge]  |
-|du | -%[l|est]|%[m|sängest]|
-|er | -%[l|e]  |%[m|sänge]  |
-|wir| -%[l|en] |%[m|sängen] |
-|ihr| -%[l|et] |%[m|sänget] |
-|sie| -%[l|en] |%[m|sängen] |
-|]
+## Indikativ
 
-##### Plusquamperfekt
-
-###### Haben + Partizip
+### Präsens
 
 [|
-|ich|%[m|hätte]  |%[m|gesagt]|
-|du |%[m|hättest]|%[m|gesagt]|
-|er |%[m|hätte]  |%[m|gesagt]|
-|wir|%[m|hätten] |%[m|gesagt]|
-|ihr|%[m|hättet] |%[m|gesagt]|
-|sie|%[m|hätten] |%[m|gesagt]|
+|ich|%[m|bin ]|wir|%[m|sind]|
+|du |%[m|bist]|ihr|%[m|seid]|
+|er |%[m|ist ]|sie|%[m|sind]|
 |]
 
-###### Sein + Partizip
+### Präteritum
 
 [|
-|ich|%[m|wäre]  |%[m|gerannt]|
-|du |%[m|wär](%[m|e])%[m|st]|%[m|gerannt]|
-|er |%[m|wäre]  |%[m|gerannt]|
-|wir|%[m|wären]|%[m|gerannt]|
-|ihr|%[m|wär](%[m|e])%[m|t] |%[m|gerannt]|
-|sie|%[m|wären]|%[m|gerannt]|
+|ich|%[m|war  ]|wir|%[m|waren]|
+|du |%[m|warst]|ihr|%[m|wart ]|
+|er |%[m|war  ]|sie|%[m|waren]|
 |]
 
+---
 
-<!--
+## Konjunktiv I
 
-### Imperativ
+### Präsens
 
-##### Präsens
+[|
+|ich|%[m|sei   ]|wir|%[m|seien ]|
+|du |%[m|seiest]|ihr|%[m|seiet ]|
+|er |%[m|sei   ]|sie|%[m|seien ]|
+|]
+
+---
+
+## Konjunktiv II
+
+### Präteritum
+
+[|
+|ich|%[m|wäre  ]|wir|%[m|wären ]|
+|du |%[m|wärest]|ihr|%[m|wäret ]|
+|er |%[m|wäre  ]|sie|%[m|wären ]|
+|]
+
+---
+
+## Imperativ
+
+### Präsens
 
 [|
 |%[m|sei  ]|du |
@@ -62,24 +65,28 @@
 |%[m|seien]|Sie|
 |]
 
-### Partizip
+---
 
-##### Präsens
+## Partizip
+
+### Präsens
 
 %[m|seiend]
 
-##### Perfekt
+### Perfekt
 
 %[m|gewesen]
 
+---
 
-### Infinitiv
+## Infinitiv
 
-##### Präsens
+### Präsens
 
 %[m|sein]
 
-##### Perfekt
+### Perfekt
 
 %[m|gewesen sein]
--->
+
+---

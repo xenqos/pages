@@ -18,7 +18,7 @@
   <script type='text/javascript' src='../scripts/local.js'></script>
 </head>
 <body onload='fncGetDivState(); fncGetScrollPosition();'>
-
+<audio id='idTrack' src='../sounds/29.mp3' preload='auto'></audio>
 <div id='idPanel'>
 <div id='idTopbar'>
   <div id='idTopbarNavigation'>
@@ -26,7 +26,7 @@
     <a href='28.html'><span class='clNavLeft'></span></a>
     <a href='../index.html'><span class='clNavUp'></span></a>
     <a href='30.html'><span class='clNavRight'></span></a>
-
+<span class='clNavRewind' onclick='fncRewindTrack(&quot;idTrack&quot;)'></span><span class='clNavPlay' onclick='fncPlayTrack(&quot;idTrack&quot;)'></span>
   </div>
 </div>
 <div id='idContent'>
@@ -52,6 +52,21 @@
 <tr>
 <td><span class='m'>der Konjunktiv I </span></td><td>косвенная речь      </td></tr>
 <tr><td><span class='m'>der Konjunktiv II</span></td><td>условное придаточное</td></tr>
+</table>
+</div>
+
+<hr class='clHr'>
+
+<div class='clOverflow'>
+<table>
+<tr>
+<td><span class='m'>das Tempus</span>         </td><td><span class='m'>die Zeit</span>            </td><td>Время                    </td></tr>
+<tr><td><span class='m'>das Präsens</span>        </td><td><span class='m'>die Gegenwart</span>       </td><td>Настоящее                </td></tr>
+<tr><td><span class='m'>das Präteritum</span>     </td><td><span class='m'>die Vergangenheit</span>   </td><td>Прошедшее                </td></tr>
+<tr><td><span class='m'>das Perfekt</span>        </td><td><span class='m'>die Vorgegenwart</span>    </td><td>Предпрошедшее            </td></tr>
+<tr><td><span class='m'>das Plusquamperfekt</span></td><td><span class='m'>die Vorvergangenheit</span></td><td>Предпрошедшее в прошлом  </td></tr>
+<tr><td><span class='m'>das Futur I</span>        </td><td><span class='m'>die Zukunft</span>         </td><td>Будущее                  </td></tr>
+<tr><td><span class='m'>das Futur II</span>       </td><td><span class='m'>die Vorzukunft</span>      </td><td>Предварительное в будущем</td></tr>
 </table>
 </div>
 

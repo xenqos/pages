@@ -1,128 +1,243 @@
-###### Глаголы
+###### Глаголы &nbsp;•&nbsp; Таблицы склонения
 
-# Глагольные приставки
+### Таблицы склонения ###
 
-|ab-|движение от~~отделение~~завершение|
->> %[m|abfahren] уезжать
->> %[m|abfahren] уезжать
->> %[m|abgeben] отдавать
->> %[m|abschließen] закрывать
->> %[m|absagen] отменять
+# Indikativ
+
+## Präsens
+
+[|
+|ich| -%[l|e] |%[m|sage] |%[m|singe] |
+|du | -%[l|st]|%[m|sagst]|%[m|singst]|
+|er | -%[l|t] |%[m|sagt] |%[m|singt] |
+|wir| -%[l|en]|%[m|sagen]|%[m|singen]|
+|ihr| -%[l|t] |%[m|sagt] |%[m|singt] |
+|sie| -%[l|en]|%[m|sagen]|%[m|singen]|
+|]
+
+## Regelmäßige Präteritum
+
+[|
+|ich| -%[l|te]  |%[m|sagte]  |
+|du | -%[l|test]|%[m|sagtest]|
+|er | -%[l|te]  |%[m|sagte]  |
+|wir| -%[l|ten] |%[m|sagten] |
+|ihr| -%[l|tet] |%[m|sagtet] |
+|sie| -%[l|ten] |%[m|sagten] |
+|]
+
+## Unregelmäßige Präteritum
+
+[|
+|ich| -%[l|-] |%[m|sang]  |
+|du | -%[l|st]|%[m|sangst]|
+|er | -%[l|-] |%[m|sang]  |
+|wir| -%[l|en]|%[m|sangen]|
+|ihr| -%[l|t] |%[m|sangt] |
+|sie| -%[l|en]|%[m|sangen]|
+|]
+
+## Perfekt
+
+### Haben + Partizip
+
+[|
+|ich|%[m|habe] |%[m|gesagt]|
+|du |%[m|hast] |%[m|gesagt]|
+|er |%[m|hat]  |%[m|gesagt]|
+|wir|%[m|haben]|%[m|gesagt]|
+|ihr|%[m|habt] |%[m|gesagt]|
+|sie|%[m|haben]|%[m|gesagt]|
+|]
+
+### Sein + Partizip
+
+[|
+|ich|%[m|bin] |%[m|gerannt]|
+|du |%[m|bist]|%[m|gerannt]|
+|er |%[m|ist] |%[m|gerannt]|
+|wir|%[m|sind]|%[m|gerannt]|
+|ihr|%[m|seid]|%[m|gerannt]|
+|sie|%[m|sind]|%[m|gerannt]|
+|]
+
+## Plusquamperfekt
+
+### Haben + Partizip
+
+[|
+|ich|%[m|hatte]  |%[m|gesagt]|
+|du |%[m|hattest]|%[m|gesagt]|
+|er |%[m|hatte]  |%[m|gesagt]|
+|wir|%[m|hatten] |%[m|gesagt]|
+|ihr|%[m|hattet] |%[m|gesagt]|
+|sie|%[m|hatten] |%[m|gesagt]|
+|]
+
+### Sein + Partizip
+
+[|
+|ich|%[m|war]  |%[m|gerannt]|
+|du |%[m|warst]|%[m|gerannt]|
+|er |%[m|war]  |%[m|gerannt]|
+|wir|%[m|waren]|%[m|gerannt]|
+|ihr|%[m|wart] |%[m|gerannt]|
+|sie|%[m|waren]|%[m|gerannt]|
+|]
+
+## Futur I
+
+[|
+|ich|%[m|werde] |%[m|sagen]|
+|du |%[m|wirst] |%[m|sagen]|
+|er |%[m|wird]  |%[m|sagen]|
+|wir|%[m|werden]|%[m|sagen]|
+|ihr|%[m|werdet]|%[m|sagen]|
+|sie|%[m|werden]|%[m|sagen]|
+|]
+
+[|
+|ich|%[m|werde] |%[m|singen]|
+|du |%[m|wirst] |%[m|singen]|
+|er |%[m|wird]  |%[m|singen]|
+|wir|%[m|werden]|%[m|singen]|
+|ihr|%[m|werdet]|%[m|singen]|
+|sie|%[m|werden]|%[m|singen]|
+|]
+
+## Futur II
+
+[|
+|ich|%[m|werde] |%[m|gesagt haben]|
+|du |%[m|wirst] |%[m|gesagt haben]|
+|er |%[m|wird]  |%[m|gesagt haben]|
+|wir|%[m|werden]|%[m|gesagt haben]|
+|ihr|%[m|werdet]|%[m|gesagt haben]|
+|sie|%[m|werden]|%[m|gesagt haben]|
+|]
+
+[|
+|ich|%[m|werde] |%[m|gesungen haben]|
+|du |%[m|wirst] |%[m|gesungen haben]|
+|er |%[m|wird]  |%[m|gesungen haben]|
+|wir|%[m|werden]|%[m|gesungen haben]|
+|ihr|%[m|werdet]|%[m|gesungen haben]|
+|sie|%[m|werden]|%[m|gesungen haben]|
+|]
+
+## Konjunktiv I
+
+### Präsens
+
+[|
+|ich| -%[l|e]  |%[m|sage]  |%[m|singe]  |
+|du | -%[l|est]|%[m|sagest]|%[m|singest]|
+|er | -%[l|e]  |%[m|sage]  |%[m|singe]  |
+|wir| -%[l|en] |%[m|sagen] |%[m|singen] |
+|ihr| -%[l|et] |%[m|saget] |%[m|singet] |
+|sie| -%[l|en] |%[m|sagen] |%[m|singen] |
+|]
+
+### Perfekt
+
+#### Haben + Partizip
+
+[|
+|ich|%[m|habe]  |%[m|gesagt]|
+|du |%[m|habest]|%[m|gesagt]|
+|er |%[m|habe]  |%[m|gesagt]|
+|wir|%[m|haben] |%[m|gesagt]|
+|ihr|%[m|habet] |%[m|gesagt]|
+|sie|%[m|haben] |%[m|gesagt]|
+|]
+
+#### Sein + Partizip
+
+[|
+|ich|%[m|sei]     |%[m|gerannt]|
+|du |%[m|sei](%[m|e])%[m|st]|%[m|gerannt]|
+|er |%[m|sei]     |%[m|gerannt]|
+|wir|%[m|seien]   |%[m|gerannt]|
+|ihr|%[m|seiet]   |%[m|gerannt]|
+|sie|%[m|seien]   |%[m|gerannt]|
+|]
+
+## Konjunktiv II
+
+### Regelmäßige Präteritum
+
+[|
+|ich| -%[l|te]  |%[m|sagte]  |
+|du | -%[l|test]|%[m|sagtest]|
+|er | -%[l|te]  |%[m|sagte]  |
+|wir| -%[l|ten] |%[m|sagten] |
+|ihr| -%[l|tet] |%[m|sagtet] |
+|sie| -%[l|ten] |%[m|sagten] |
+|]
+
+### Unregelmäßige Präteritum
+
+[|
+|ich| -%[l|e]  |%[m|sänge]  |
+|du | -%[l|est]|%[m|sängest]|
+|er | -%[l|e]  |%[m|sänge]  |
+|wir| -%[l|en] |%[m|sängen] |
+|ihr| -%[l|et] |%[m|sänget] |
+|sie| -%[l|en] |%[m|sängen] |
+|]
+
+### Plusquamperfekt
+
+#### Haben + Partizip
+
+[|
+|ich|%[m|hätte]  |%[m|gesagt]|
+|du |%[m|hättest]|%[m|gesagt]|
+|er |%[m|hätte]  |%[m|gesagt]|
+|wir|%[m|hätten] |%[m|gesagt]|
+|ihr|%[m|hättet] |%[m|gesagt]|
+|sie|%[m|hätten] |%[m|gesagt]|
+|]
+
+#### Sein + Partizip
+
+[|
+|ich|%[m|wäre]  |%[m|gerannt]|
+|du |%[m|wär](%[m|e])%[m|st]|%[m|gerannt]|
+|er |%[m|wäre]  |%[m|gerannt]|
+|wir|%[m|wären]|%[m|gerannt]|
+|ihr|%[m|wär](%[m|e])%[m|t] |%[m|gerannt]|
+|sie|%[m|wären]|%[m|gerannt]|
+|]
+
+## Imperativ
+
+### Präsens
+
+[|
+|%[m|sei  ]|du |
+|%[m|seien]|wir|
+|%[m|seid ]|ihr|
+|%[m|seien]|Sie|
+|]
+
+## Partizip
+
+### Präsens
+
+%[m|seiend]
+
+### Perfekt
+
+%[m|gewesen]
 
 
-|an-|движение к~~присоединение~~нахождение|
->> %[m|ankommen] приходить
->> %[m|anschließen] подключать
->> %[m|anfangen] начинать
->> %[m|anwesend sein] присутствовать
+## Infinitiv
 
+### Präsens
 
-|auf-|движение вверх~~увеличение~~открытие|
->> %[m|aufstehen] вставать
->> %[m|aufmachen] открывать
->> %[m|aufladen] заряжать
->> %[m|aufpassen] внимать
+%[m|sein]
 
+### Perfekt
 
-|aus-|движение из~~отделение~~завершение|
->> %[m|ausgehen] выходить
->> %[m|ausziehen] снимать
->> %[m|ausschalten] выключать
->> %[m|ausfüllen] заполнять
-
-
-|durch-|движение через~~завершение~~проникновение|
->> %[m|durchgehen] проходить
->> %[m|durchlesen] читать
->> %[m|durchdringen] проникать
->> %[m|durchschauen] понимать
-
-
-|ein-|движение в~~включение~~начало|
->> %[m|einkommen] входить
->> %[m|einschalten] включать
->> %[m|eintragen] записывать
->> %[m|einsteigen] садиться
-
-
-|er-|отделение~~достижение~~изменение|
->> %[m|erreichen] достигать
->> %[m|erhalten] получать
->> %[m|erklären] объяснять
->> %[m|erschließen] открывать
-
-
-|fort-|движение от~~удаление~~продолжение|
->> %[m|fortgehen] уходить
->> %[m|fortfahren] продолжать
->> %[m|fortsetzen] продлевать
->> %[m|fortschicken] отправлять
-
-
-|gegen-|противопоставление~~движение навстречу~~замена|
->> %[m|gegenüberstehen] противостоять
->> %[m|gegenhalten] держать против
->> %[m|gegensagen] возражать
->> %[m|gegentauschen] менять
-
-
-|her-|движение сюда~~приближение~~принесение|
->> %[m|herkommen] приходить
->> %[m|herbringen] приносить
->> %[m|herstellen] производить
->> %[m|hervorheben] подчеркивать
-
-
-|hin-|движение туда~~удаление~~направление|
->> %[m|hingehen] идти
->> %[m|hinschreiben] писать
->> %[m|hinzufügen] добавлять
->> %[m|hinweisen] указывать
-
-
-|mit-|совместное действие~~сопровождение~~инструмент|
->> %[m|mitmachen] участвовать
->> %[m|mitgehen] идти с
->> %[m|mitbringen] приносить
->> %[m|mitteilen] сообщать
-
-
-|nach-|движение за~~следование~~повторение|
->> %[m|nachkommen] следовать
->> %[m|nachmachen] повторять
->> %[m|nachdenken] размышлять
->> %[m|nachsehen] проверять
-
-
-|nieder-|движение вниз~~падение~~размещение|
->> %[m|niedergehen] опускаться
->> %[m|niederschreiben] записывать
->> %[m|niederlegen] класть
->> %[m|niederknien] вставать на колени
-
-
-|um-|движение вокруг~~изменение~~окружение|
->> %[m|umgehen] ходить вокруг
->> %[m|umsteigen] пересаживаться
->> %[m|umstellen] переставлять
->> %[m|umbauen] перестраивать
-
-
-|unter-|движение под~~размещение~~подчинение|
->> %[m|untergehen] заходить
->> %[m|unterschreiben] подписывать
->> %[m|unterteilen] разделять
->> %[m|unterordnen] подчинять
-
-
-|vor-|движение перед~~нахождение впереди~~преимущество|
->> %[m|vorgehen] идти впереди
->> %[m|vorstellen] представлять
->> %[m|vorlesen] читать вслух
->> %[m|vormerken] записывать
-
-
-|weg-|движение от~~удаление~~исчезновение|
->> %[m|weggehen] уходить
->> %[m|weglegen] класть
->> %[m|wegwerfen] отбрасывать
+%[m|gewesen sein]

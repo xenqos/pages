@@ -1,15 +1,15 @@
 ###### Местоимения
 
 # Притяжательные
-
+---
 [|
 ^^s.^p.^
 |1|%[m|mein]                     |%[m|unser]|
 |2|%[m|dein ]                    |%[m|euer]|
 |3|%[m|sein], %[m|ihr], %[m|sein]|%[m|ihr]|
 |]
-
-### mein
+---
+## mein
 [!
 мой
 !]
@@ -20,8 +20,8 @@
 |dat.|%[m|meinem]|%[m|meiner]|%[m|meinem]|%[m|meinen]|
 |akk.|%[m|meinen]|%[m|meine ]|%[m|mein  ]|%[m|meine ]|
 |]
-
-### dein
+---
+## dein
 [!
 твой
 !]
@@ -32,8 +32,8 @@
 |dat.|%[m|deinem]|%[m|deiner]|%[m|deinem]|%[m|deinen]|
 |akk.|%[m|deinen]|%[m|deine ]|%[m|dein  ]|%[m|deine ]|
 |]
-
-### sein %[dm|]
+---
+## sein %[dm|]
 [!
 его
 !]
@@ -44,8 +44,8 @@
 |dat.|%[m|seinem]|%[m|seiner]|%[m|seinem]|%[m|seinen]|
 |akk.|%[m|seinen]|%[m|seine ]|%[m|sein  ]|%[m|seine ]|
 |]
-
-### ihr %[df|]
+---
+## ihr %[df|]
 [!
 её
 !]
@@ -56,8 +56,8 @@
 |dat.|%[m|ihrem]|%[m|ihrer]|%[m|ihrem]|%[m|ihren]|
 |akk.|%[m|ihren]|%[m|ihre ]|%[m|ihr  ]|%[m|ihre ]|
 |]
-
-### sein %[dn|]
+---
+## sein %[dn|]
 [!
 его
 !]
@@ -68,8 +68,8 @@
 |dat.|%[m|seinem]|%[m|seiner]|%[m|seinem]|%[m|seinen]|
 |gen.|%[m|seinen]|%[m|seine] |%[m|sein  ]|%[m|seine ]|
 |]
-
-### unser
+---
+## unser
 [!
 наш
 !]
@@ -80,8 +80,8 @@
 |dat.|%[m|uns(e)rem]|%[m|uns(e)rer]|%[m|uns(e)rem]|%[m|uns(e)ren]|
 |akk.|%[m|uns(e)ren]|%[m|uns(e)re ]|%[m|unser    ]|%[m|uns(e)re ]|
 |]
-
-### euer
+---
+## euer
 [!
 ваш
 !]
@@ -92,8 +92,8 @@
 |dat.|%[m|eu(e)rem]|%[m|eu(e)rer]|%[m|eu(e)rem]|%[m|eu(e)ren]|
 |akk.|%[m|eu(e)ren]|%[m|eu(e)re ]|%[m|euer    ]|%[m|eu(e)re ]|
 |]
-
-### ihr
+---
+## ihr
 [!
 их
 !]
@@ -104,3 +104,4 @@
 |dat.|%[m|ihrem]|%[m|ihrer]|%[m|ihrem]|%[m|ihren]|
 |akk.|%[m|ihren]|%[m|ihre ]|%[m|ihr  ]|%[m|ihre ]|
 |]
+---
