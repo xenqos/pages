@@ -1,10 +1,10 @@
 ### Таблицы склонения ###
 
-## Глаголы
+###### Глаголы &nbsp;•&nbsp; Таблицы склонения
 
 # Indikativ
 
-##### Präsens
+## Präsens
 
 [|
 |ich| -%[l|e] |%[m|sage] |%[m|singe] |
@@ -15,7 +15,7 @@
 |sie| -%[l|en]|%[m|sagen]|%[m|singen]|
 |]
 
-##### Regelmäßige Präteritum
+## Regelmäßige Präteritum
 
 [|
 |ich| -%[l|te]  |%[m|sagte]  |
@@ -26,7 +26,7 @@
 |sie| -%[l|ten] |%[m|sagten] |
 |]
 
-##### Unregelmäßige Präteritum
+## Unregelmäßige Präteritum
 
 [|
 |ich| -%[l|-] |%[m|sang]  |
@@ -37,9 +37,9 @@
 |sie| -%[l|en]|%[m|sangen]|
 |]
 
-##### Perfekt
+## Perfekt
 
-###### Haben + Partizip
+### Haben + Partizip
 
 [|
 |ich|%[m|habe] |%[m|gesagt]|
@@ -50,7 +50,7 @@
 |sie|%[m|haben]|%[m|gesagt]|
 |]
 
-###### Sein + Partizip
+### Sein + Partizip
 
 [|
 |ich|%[m|bin] |%[m|gerannt]|
@@ -61,9 +61,9 @@
 |sie|%[m|sind]|%[m|gerannt]|
 |]
 
-##### Plusquamperfekt
+## Plusquamperfekt
 
-###### Haben + Partizip
+### Haben + Partizip
 
 [|
 |ich|%[m|hatte]  |%[m|gesagt]|
@@ -74,7 +74,7 @@
 |sie|%[m|hatten] |%[m|gesagt]|
 |]
 
-###### Sein + Partizip
+### Sein + Partizip
 
 [|
 |ich|%[m|war]  |%[m|gerannt]|
@@ -85,7 +85,7 @@
 |sie|%[m|waren]|%[m|gerannt]|
 |]
 
-##### Futur I
+## Futur I
 
 [|
 |ich|%[m|werde] |%[m|sagen]|
@@ -105,7 +105,7 @@
 |sie|%[m|werden]|%[m|singen]|
 |]
 
-##### Futur II
+## Futur II
 
 [|
 |ich|%[m|werde] |%[m|gesagt haben]|
@@ -125,9 +125,9 @@
 |sie|%[m|werden]|%[m|gesungen haben]|
 |]
 
-### Konjunktiv I
+## Konjunktiv I
 
-##### Präsens
+### Präsens
 
 [|
 |ich| -%[l|e]  |%[m|sage]  |%[m|singe]  |
@@ -138,9 +138,9 @@
 |sie| -%[l|en] |%[m|sagen] |%[m|singen] |
 |]
 
-##### Perfekt
+### Perfekt
 
-###### Haben + Partizip
+#### Haben + Partizip
 
 [|
 |ich|%[m|habe]  |%[m|gesagt]|
@@ -151,7 +151,7 @@
 |sie|%[m|haben] |%[m|gesagt]|
 |]
 
-###### Sein + Partizip
+#### Sein + Partizip
 
 [|
 |ich|%[m|sei]     |%[m|gerannt]|
@@ -162,9 +162,9 @@
 |sie|%[m|seien]   |%[m|gerannt]|
 |]
 
-### Konjunktiv II
+## Konjunktiv II
 
-##### Regelmäßige Präteritum
+### Regelmäßige Präteritum
 
 [|
 |ich| -%[l|te]  |%[m|sagte]  |
@@ -175,7 +175,7 @@
 |sie| -%[l|ten] |%[m|sagten] |
 |]
 
-##### Unregelmäßige Präteritum
+### Unregelmäßige Präteritum
 
 [|
 |ich| -%[l|e]  |%[m|sänge]  |
@@ -186,9 +186,9 @@
 |sie| -%[l|en] |%[m|sängen] |
 |]
 
-##### Plusquamperfekt
+### Plusquamperfekt
 
-###### Haben + Partizip
+#### Haben + Partizip
 
 [|
 |ich|%[m|hätte]  |%[m|gesagt]|
@@ -199,7 +199,7 @@
 |sie|%[m|hätten] |%[m|gesagt]|
 |]
 
-###### Sein + Partizip
+#### Sein + Partizip
 
 [|
 |ich|%[m|wäre]  |%[m|gerannt]|
@@ -210,9 +210,9 @@
 |sie|%[m|wären]|%[m|gerannt]|
 |]
 
-### Imperativ
+## Imperativ
 
-##### Präsens
+### Präsens
 
 [|
 |%[m|sei  ]|du |
@@ -221,23 +221,23 @@
 |%[m|seien]|Sie|
 |]
 
-### Partizip
+## Partizip
 
-##### Präsens
+### Präsens
 
 %[m|seiend]
 
-##### Perfekt
+### Perfekt
 
 %[m|gewesen]
 
 
-### Infinitiv
+## Infinitiv
 
-##### Präsens
+### Präsens
 
 %[m|sein]
 
-##### Perfekt
+### Perfekt
 
 %[m|gewesen sein]
