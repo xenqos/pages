@@ -1,51 +1,34 @@
-###### Термины
+###### Фонетика
 
-# Термины
+## Фонетика ##
 
-## Существительные
+# Гласные
 
+### Монофтонги
+@[../images/monophthonges.webp]
 [|
-|%[m|das Genus]  |%[m|das Geschlecht]|род  |
-|%[m|der Numerus]|%[m|die Zahl]      |число|
-|%[m|der Kasus]  |%[m|der Fall]      |падеж|
+|%[l|a ]|%[m|Kamm   ]|
+|%[l|aː]|%[m|kam    ]|
+|%[l|ɛ ]|%[m|Stelle ]|
+|%[l|ə ]|%[m|bitte  ]|
+|%[l|ɛː]|%[m|Käse   ]|
+|%[l|eː]|%[m|stehlen]|
+|%[l|ɪ ]|%[m|Mitte  ]|
+|%[l|iː]|%[m|Mieter ]|
+|%[l|ɔ⁠ ]|%[m|offen  ]|
+|%[l|oː]|%[m|Ofen   ]|
+|%[l|œ⁠ ]|%[m|Hölle  ]|
+|%[l|øː]|%[m|Höhle  ]|
+|%[l|ʊ ]|%[m|Mutter ]|
+|%[l|uː]|%[m|Mut    ]|
+|%[l|y ]|%[m|Müller ]|
+|%[l|yː]|%[m|Mühle  ]|
 |]
 
-[!
-das Genus, -s, die Genera
-der Numerus, -s, die Numeri
-!]
-
-## Число
-
+### Дифтонги
+@[../images/diphthonges.webp]
 [|
-|%[m|der Singular]|%[m|die Einzahl] |единствнное  |
-|%[m|der Plural]  |%[m|die Mehrzahl]|множественное|
+|%[l|aʊ]|%[m|Haus   ]|
+|%[l|aɪ]|%[m|Heim   ]|
+|%[l|ɔɪ]|%[m|Eule   ]|
 |]
-
-## Род
-
-[|
-|%[m|masculinum]|%[m|männlich]|мужской|
-|%[m|femininum] |%[m|weiblich]|женский|
-|%[m|neutrum]   |%[m|sächlich]|средний|
-|]
-
-[!
-masculinum - masculin
-femininum - feminin
-neutrum - neutral
-!]
-
-## Наклонения
-
-[|
-|%[m|der Modus]|наклонение|
-|%[m|der Indikativ]|изъявительное|
-|%[m|der Konjunktiv]|сослагательное|
-|%[m|der Imperativ]|повелительное|
-|]
-
-[!
-der Konjunktiv I - косвенная речи
-der Konjunktiv II - условное придаточное
-!]

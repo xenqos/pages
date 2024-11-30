@@ -1,38 +1,78 @@
-###### Фонетика
+###### Произношение
 
-# Согласные
+## Произношение ##
 
-[|
-|     |Labial  |Alveolar|Post<br>alveolar|Palatal |Velar  |Glottal |
-|Stop|%[l|b p]|%[l|d t]|||%[l|g k]||
-|Fricative|%[l|v f]|%[l|z s]|%[l|ʃ]|%[l|ç j]||%[l|x]|
-|Affricate|%[l|pf]|%[l|ts]|%[l|tʃ]||||
-|Nasal|%[l|m]|%[l|n]|||%[l|ŋ]||
-|Approximant||%[l|l]|%[l|r]||||
+# Монофтонги - a, o, u
+
+%[r|a]&emsp;/ %[l|a] /
+[|-
+|%[m|alle     ]|весь   |
+|%[m|der Mann ]|мужчина|
+|%[m|die Tasse]|чашка  |
 |]
 
-[|
-|%[l|b] |%[m|Bund], %[m|Nebel]      |
-|%[l|p] |%[m|Puder], %[m|Gruppe]    |
-|%[l|d] |%[m|dann], %[m|Laden]      |
-|%[l|t] |%[m|Tag], %[m|Butter]      |
-|%[l|ɡ​] |%[m|gut], %[m|Auge]        |
-|%[l|k] |%[m|Kobra], %[m|Fokus]     |
-|%[l|v] |%[m|Winter], %[m|Löwe]     |
-|%[l|f] |%[m|Vogel], %[m|Hafen]     |
-|%[l|z] |%[m|Sauer], %[m|Sonne]     |
-|%[l|s] |%[m|Skipper], %[m|Last]    |
-|%[l|ʃ] |%[m|Schule], %[m|Fisch]    |
-|%[l|ç​] |%[m|mich], %[m|dreißig]    |
-|%[l|j] |%[m|jung], %[m|Boje]       |
-|%[l|x] |%[m|Buch], %[m|hoch]       |
-|%[l|pf]|%[m|Pferd], %[m|Apfel]     |
-|%[l|ts]|%[m|Zaun], %[m|Katze]      |
-|%[l|tʃ]|%[m|Deutsch], %[m|Kutsche] |
-|%[l|m] |%[m|Maus], %[m|Dame]       |
-|%[l|n] |%[m|Nord], %[m|Kanne]      |
-|%[l|ŋ] |%[m|Drang], %[m|singen]    |
-|%[l|l] |%[m|Lamm], %[m|alle]       |
-|%[l|r] |%[m|rot], %[m|besser]      |
-|%[l|ʔ] |%[m|beachten], %[m|Reaktor]|
+%[r|a]&emsp;/ %[l|aː] /
+
+[|-
+|%[m|der Rat  ]|совет|
+|%[m|der Abend]|вечер|
+|%[m|haben    ]|иметь|
+|]
+
+%[r|aa]&emsp;/ %[l|aː] /
+
+[|-
+|%[m|das Haar]|волосы|
+|%[m|der Saal]|зал   |
+|%[m|die Saat]|семена|
+|]
+
+%[r|ah]&emsp;/ %[l|aː] /
+
+[|-
+|%[m|der Zahn]|зуб  |
+|%[m|der Hahn]|петух|
+|%[m|das Mahl]|еда  |
+|]
+
+%[r|o]&emsp;/ %[l|ɔ⁠] /
+[|-
+|%[m|der Kopf   ]|голова |
+|%[m|der  Frosch]|лягушка|
+|%[m|das Korn   ]|зерно  |
+|]
+
+%[r|o]&emsp;/ %[l|oː] /
+[|-
+|%[m|das Tor ]|ворота|
+|%[m|der Hof ]|двор  |
+|%[m|das Brot]|хлеб  |
+|]
+
+%[r|oh]&emsp;/ %[l|oː] /
+[|-
+|%[m|roh    ]|сырой   |
+|%[m|das Ohr]|ухо     |
+|%[m|bohren ]|сверлить|
+|]
+
+%[r|u]&emsp;/ %[l|ʊ] /
+[|-
+|%[m|bunt    ]|пёстрый|
+|%[m|der Hund]|собака |
+|%[m|die Lust]|желание|
+|]
+
+%[r|u]&emsp;/ %[l|uː] /
+[|-
+|%[m|der Zug   ]|поезд  |
+|%[m|die Schule]|школа  |
+|%[m|die Blume ]|цветок|
+|]
+
+%[r|uh]&emsp;/ %[l|uː] /
+[|-
+|%[m|der Schuh]|ботинок    |
+|%[m|die Ruhe ]|спокойствие|
+|%[m|die Kuh  ]|корова     |
 |]

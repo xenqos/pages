@@ -9,6 +9,8 @@ dir_texts="${dir_prefix}/texts"
 number_start=29
 number_shift=1
 
+exit 0
+
 #-------------------------------------------------------------------------------
 
 files_refactor()

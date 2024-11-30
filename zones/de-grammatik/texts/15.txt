@@ -1,13 +1,11 @@
 ###### Артикль
 
-## Артикль ##
-
-# Неопределённый
+# Определённый
 
 [|
-^^m.^f.^n.^
-|nom.|%[m|ein  ]|%[m|eine ]|%[m|ein  ]|
-|gen.|%[m|eines]|%[m|einer]|%[m|eines]|
-|dat.|%[m|einem]|%[m|einer]|%[m|einem]|
-|akk.|%[m|einen]|%[m|eine ]|%[m|ein  ]|
+^^m.^f.^n.^p.^
+|nom.|%[m|der]|%[m|die]|%[m|das]|%[m|die]|
+|gen.|%[m|des]|%[m|der]|%[m|des]|%[m|der]|
+|dat.|%[m|dem]|%[m|der]|%[m|dem]|%[m|den]|
+|akk.|%[m|den]|%[m|die]|%[m|das]|%[m|die]|
 |]
