@@ -1,0 +1,82 @@
+## GTO
+
+![Source 1|https://www.thepokerbank.com/strategy/mathematics/hand-combinations/]
+![Source 2|https://wizardofodds.com/games/texas-hold-em/6-player-game/]
+![Source 3|https://www.888poker.com/magazine/strategy/poker-combinatorics-guide]
+![Source 4|https://upswingpoker.com/wp-content/uploads/2018/02/Preflop-Guide-for-RFI-v21-1.pdf]
+
+# Combinatorics
+
+### Unpaired Hands Combinations
+
+[?
+C  - Total Combinations
+A1 - Available Cards for Card 1
+A2 - Available Cards for Card 2
+
+C = A1 * A2
+?]
+
+### Paired Hands Combinations
+
+[?
+C - Total Combinations
+A - Available Cards
+
+C = ( A * (A - 1) / 2 )
+?]
+
+#### Example
+
+[|
+^A^U^C^E^
+|0|4|6|&[s|A]&[h|A]&ensp;&[s|A]&[d|A]~~&[s|A]&[c|A]&ensp;&[h|A]&[d|A]~~&[h|A]&[c|A]&ensp;&[d|A]&[c|A]|
+|1|3|3|&[s|A]&[h|A]&ensp;&[s|A]&[c|A]~~&[h|A]&[c|A]|
+|2|2|1|&[s|A]&[h|A]|
+|3|1|0||
+|]
+
+A - Available
+U - Unavailable
+C - Combos
+E - Example
+
+<!--
+
+### Concepts
+
+[!
+number of combinations between elements
+!]
+
+%[m|Set]
+>>> set of elements
+
+%[m|Selection]
+>>> extracts elements from set
+
+%[m|Addition]
+>>> 13&[s|] + 13&[h|] + 13&[c|] + 13&[d|] = 52
+
+%[m|Multiplication]
+>>> 13&[x|] * 4 = 52
+
+%[m|Factorial]
+>>> number of ways to order elements
+>>> 3! = 3 × 2 × 1 = 6
+
+### Formulas
+
+#### Combination
+Not Ordered
+@[combinatorics-combination.webp]
+
+#### Arrangement
+Not Ordered, Whole Set
+@[combinatorics-arrangement.webp]
+
+#### Permutation
+Ordered, Partial Set
+@[combinatorics-permutation.webp]
+
+-->

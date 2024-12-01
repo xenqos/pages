@@ -1,14 +1,14 @@
-## Table
+###### Table
 
 # Positions
 
-### Button (BTN)
+## Button (BTN)
 [!
 Acts as Dealer
 Shifts clockwise after each Hand
 !]
 
-### Under the Gun (UTG)
+## Under the Gun (UTG)
 [!
 First to act Preflop
 Has least information
@@ -16,19 +16,19 @@ Gets maximum pressure
 Relies on Hand strength
 !]
 
-### Under the Gun + 1 (UTG+1)
+## Under the Gun + 1 (UTG+1)
 [!
 Has minimal information
 Must play relatively tight
 !]
 
-### Under the Gun + 2 (UTG+2)
+## Under the Gun + 2 (UTG+2)
 [!
 Has minimal information
 Has disadvantageous position after flop
 !]
 
-### In Position (IP)
+## In Position (IP)
 [!
 Player acting last
 Gathering more information
@@ -36,7 +36,7 @@ Enhanced calculation of odds
 Leveraging free cards
 !]
 
-### Out of Position (OOP)
+## Out of Position (OOP)
 [!
 Player acting first
 !]

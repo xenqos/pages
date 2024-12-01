@@ -1,8 +1,8 @@
-## Probability & Odds
+###### Probability & Odds
 
 # Range Notations
 
-### Notations
+## Notations
 
 [-
 Hand Matrix
@@ -11,7 +11,7 @@ Range Strand
 Percentage
 -]
 
-### Hand Matrix
+## Hand Matrix
 
 [!
 Matrix of 13 rows x 13 columns
@@ -22,7 +22,7 @@ o - off-suited hands
 
 ^[hand-grid.webp]
 
-### Range Combo
+## Range Combo
 
 [!
 Can be suited and off-suited
@@ -35,6 +35,6 @@ Can be suited and off-suited
 &[s|7] &[c|7]
 &[h|7] &[c|7]
 
-### Range Strand
+## Range Strand
 
 &[z|22+] &[z|JJ+]&ensp; &[z|AJ+]

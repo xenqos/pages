@@ -1,0 +1,40 @@
+## Probability & Odds
+
+# Range Notations
+
+### Notations
+
+[-
+Hand Matrix
+Range Combo
+Range Strand
+Percentage
+-]
+
+### Hand Matrix
+
+[!
+Matrix of 13 rows x 13 columns
+169 starting combinations
+s - suited hands
+o - off-suited hands
+!]
+
+^[hand-grid.webp]
+
+### Range Combo
+
+[!
+Can be suited and off-suited
+!]
+
+&[d|7] &[h|7]
+&[d|7] &[s|7]
+&[d|7] &[c|7]
+&[h|7] &[s|7]
+&[s|7] &[c|7]
+&[h|7] &[c|7]
+
+### Range Strand
+
+&[z|22+] &[z|JJ+]&ensp; &[z|AJ+]

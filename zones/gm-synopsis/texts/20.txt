@@ -1,4 +1,4 @@
-## Probability & Odds
+###### Probability & Odds
 
 # Outs
 
@@ -18,15 +18,15 @@ Blocker - Card that prevents having combinations
 |15|Straight & Flush Draw|Straight & Flush|
 |]
 
-##### Outs Example
+## Outs Example
 
 ^[drawing-hands-outs.webp]
 
-##### Odds Example
+## Odds Example
 
 ^[drawing-odds.webp]
 
-##### Blocker Example
+## Blocker Example
 
 Pocket
 &[c|5]&[d|4]

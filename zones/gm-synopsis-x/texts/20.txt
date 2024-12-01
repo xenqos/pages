@@ -1,0 +1,44 @@
+## Probability & Odds
+
+# Outs
+
+[!
+Out - Card that makes Hand
+Count Card as Out once
+Blocker - Card that prevents having combinations
+!]
+
+[|
+^Outs^Cards^Hand^
+|2 |Pair                 |Three of a Kind |
+|4 |Two Pair             |Full House      |
+|4 |Inside Straight      |Straight        |
+|8 |Open-ended Straight  |Straight        |
+|9 |Four Flush           |Flush           |
+|15|Straight & Flush Draw|Straight & Flush|
+|]
+
+##### Outs Example
+
+^[drawing-hands-outs.webp]
+
+##### Odds Example
+
+^[drawing-odds.webp]
+
+##### Blocker Example
+
+Pocket
+&[c|5]&[d|4]
+
+
+Flop
+&[h|6]&[s|3]&[h|q]
+
+
+Turn
+&[h|2] or &[h|7]
+
+
+Result
+Get Straight; loose Flush; Instead of 8 Outs, only 6.

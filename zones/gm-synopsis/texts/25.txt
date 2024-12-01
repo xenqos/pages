@@ -1,11 +1,14 @@
+###### GTO
+
 ## GTO ##
-
-## GTO - Game Theory Optimal
-
 
 # Definition & Principles
 
-### Definition
+## Definition
+
+[!
+GTO - Game Theory Optimal
+!]
 
 [-
 Makes decisions unexploitable by villains.
@@ -15,22 +18,22 @@ Minimizes losses against any villains's strategy.
 Ensures a profitable play in the long run.
 -]
 
-### Principles
+## Principles
 
-#### Balanced Ranges
+### Balanced Ranges
 A GTO player maintains a balanced range of hands in various situations (e.g., pre-flop, post-flop).
 This means mixing strong hands with bluffs to prevent opponents from easily exploiting your strategy.
 
-#### Equity and Pot Odds
+### Equity and Pot Odds
 Understand the concept of equity (the chance your hand has to win at showdown) and pot odds (the ratio of the current size of the pot to the size of the bet you must call).
 Make decisions based on whether the potential reward justifies the risk.
 
-#### Bet Sizing
+### Bet Sizing
 Use various bet sizes to create a balanced strategy. Different sizes can represent different ranges of hands.
 Common sizes include small bets (for value and bluffs) and larger bets (to apply pressure).
 
-#### Indifference Principle
+### Indifference Principle
 A GTO strategy aims to make opponents indifferent to their choices. For example, if you are bluffing and value betting at the right frequencies, your opponent cannot profitably call or fold.
 
-#### Exploiting Deviations
+### Exploiting Deviations
 While GTO is about being unexploitable, it’s also important to recognize when opponents deviate from GTO play. Adjust your strategy to exploit their mistakes.

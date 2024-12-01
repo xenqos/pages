@@ -1,4 +1,4 @@
-## GTO
+###### GTO
 
 ![Source 1|https://www.thepokerbank.com/strategy/mathematics/hand-combinations/]
 ![Source 2|https://wizardofodds.com/games/texas-hold-em/6-player-game/]
@@ -7,7 +7,7 @@
 
 # Combinatorics
 
-### Unpaired Hands Combinations
+## Unpaired Hands Combinations
 
 [?
 C  - Total Combinations
@@ -17,7 +17,7 @@ A2 - Available Cards for Card 2
 C = A1 * A2
 ?]
 
-### Paired Hands Combinations
+## Paired Hands Combinations
 
 [?
 C - Total Combinations
@@ -26,7 +26,7 @@ A - Available Cards
 C = ( A * (A - 1) / 2 )
 ?]
 
-#### Example
+### Example
 
 [|
 ^A^U^C^E^
@@ -43,7 +43,7 @@ E - Example
 
 <!--
 
-### Concepts
+## Concepts
 
 [!
 number of combinations between elements
@@ -65,17 +65,17 @@ number of combinations between elements
 >>> number of ways to order elements
 >>> 3! = 3 × 2 × 1 = 6
 
-### Formulas
+## Formulas
 
-#### Combination
+### Combination
 Not Ordered
 @[combinatorics-combination.webp]
 
-#### Arrangement
+### Arrangement
 Not Ordered, Whole Set
 @[combinatorics-arrangement.webp]
 
-#### Permutation
+### Permutation
 Ordered, Partial Set
 @[combinatorics-permutation.webp]
 

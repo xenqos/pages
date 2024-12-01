@@ -1,32 +1,32 @@
-## Game
+###### Game
 
 # Player Styles
 
-### Loose
+## Loose
 [!
 To play many hands
 To play weak hands
 !]
 
-### Passive
+## Passive
 [!
 To call frequently
 To raise rarely
 !]
 
-### Tight
+## Tight
 [!
 To play strong hands
 To fold weak hands
 !]
 
-### Agressive
+## Agressive
 [!
 To bet frequently
 To raise frequently
 To call rarely
 !]
 
-#### Guideline
+### Guideline
 IF Table - loose / aggressive THEN play tighter
 If Table - tight / passive THEN play looser

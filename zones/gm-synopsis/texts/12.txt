@@ -1,8 +1,8 @@
-## Game
+###### Game
 
 # Betting Rounds
 
-### Pre-Flop
+## Pre-Flop
 [!
 'Small Blind' places small blind
 'Big Blind' places big blind
@@ -16,7 +16,7 @@ Each player clockwise places: 'Fold' / 'Call' / 'Raise'
 'Call' = 'Big Blind'
 -]
 
-### Flop
+## Flop
 [!
 'Dealer' burns top card
 'Button' deal 'Flop Community Cards'
@@ -24,7 +24,7 @@ Each player clockwise places: 'Fold' / 'Call' / 'Raise'
 Each player clockwise places: 'Fold' / 'Check' / 'Bet' / 'Call' / 'Raise'
 !]
 
-### Turn
+## Turn
 [!
 'Dealer' burns top card
 'Button' deal 'Turn Community Card' - 'Fourth Street'
@@ -32,7 +32,7 @@ Each player clockwise places: 'Fold' / 'Check' / 'Bet' / 'Call' / 'Raise'
 Each player clockwise places: 'Fold' / 'Check' / 'Bet' / 'Call' / 'Raise'
 !]
 
-### River
+## River
 [!
 'Dealer' burns top card
 'Button' deal 'River Community Card' - 'Fifth Street'
@@ -40,13 +40,13 @@ Each player clockwise places: 'Fold' / 'Check' / 'Bet' / 'Call' / 'Raise'
 Each player clockwise places: 'Fold' / 'Check' / 'Bet' / 'Call' / 'Raise'
 !]
 
-### Showdown
+## Showdown
 [!
 Show 'Hole Cards'
 The best 'Hand' wins
 !]
 
-#### Raise & Re-raise
+### Raise & Re-raise
 
 %[m|IF]
 &emsp; 'Player' raises / re-raises
