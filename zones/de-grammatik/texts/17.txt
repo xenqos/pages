@@ -11,7 +11,7 @@
 
 [|
 |nom.|%[m|das Fenster]      |%[m|der Löffel]      |
-|gen.|%[m|des Fenster]%[b|s]|%[m|des Löffel]%[b|s]|
+|gen.|%[m|des Fenster]%[n|s]|%[m|des Löffel]%[n|s]|
 |dat.|%[m|dem Fenster]      |%[m|dem Löffel]      |
 |akk.|%[m|das Fenster]      |%[m|den Löffel]      |
 |]
@@ -83,8 +83,8 @@ __стекло, боль, сосуд__
 
 [|
 |nom.|%[m|das Haus]       |%[m|der Wald]       |
-|gen.|%[m|des Haus]%[b|es]|%[m|des Wald]%[b|es]|
-|dat.|%[m|dem Haus]%[b|e] |%[m|dem Wald]%[b|e] |
+|gen.|%[m|des Haus]%[n|es]|%[m|des Wald]%[n|es]|
+|dat.|%[m|dem Haus]%[n|e] |%[m|dem Wald]%[n|e] |
 |akk.|%[m|das Haus]       |%[m|den Wald]       |
 |]
 

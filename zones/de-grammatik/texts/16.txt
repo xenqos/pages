@@ -11,7 +11,7 @@
 |]
 
 [!
-%[m|das Nomen] - %[m|das Substantiv]
+%[m|das Nomen] - %[n|das Substantiv]
 !]
 ---
 [|
@@ -22,24 +22,24 @@
 |]
 
 [!
-%[m|das Genus] - %[m|das Geschlecht]
+%[m|das Genus] - %[n|das Geschlecht]
 !]
 
 [|
-|%[m|masculinum]|%[m|masculin]|%[m|männlich]|
-|%[m|femininum] |%[m|feminin ]|%[m|weiblich]|
-|%[m|neutrum]   |%[m|neutral ]|%[m|sächlich]|
+|%[m|masculinum]|%[n|masculin]|%[n|männlich]|
+|%[m|femininum] |%[n|feminin ]|%[n|weiblich]|
+|%[m|neutrum]   |%[n|neutral ]|%[n|sächlich]|
 |]
 ---
 [|
 |%[m|die Deklination]|             |склонение|
-|%[m|der Kasus]      |%[m|der Fall]|падеж    |
+|%[m|der Kasus]      |%[n|der Fall]|падеж    |
 |]
 
 [|
-|%[m|der Numerus] |%[m|die Zahl]    |число        |
-|%[m|der Singular]|%[m|die Einzahl] |единствнное  |
-|%[m|der Plural]  |%[m|die Mehrzahl]|множественное|
+|%[m|der Numerus] |%[n|die Zahl]    |число        |
+|%[m|der Singular]|%[n|die Einzahl] |единствнное  |
+|%[m|der Plural]  |%[n|die Mehrzahl]|множественное|
 |]
 
 ---

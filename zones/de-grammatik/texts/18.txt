@@ -11,9 +11,9 @@
 
 [|
 |nom.|%[m|der Knabe]      |%[m|der Mensch]       |%[m|der Diplomat]      |
-|gen.|%[m|des Knabe]%[b|n]|%[m|des Mensch]%[b|en]|%[m|des Diplomat]%[b|n]|
-|dat.|%[m|dem Knabe]%[b|n]|%[m|dem Mensch]%[b|en]|%[m|dem Diplomat]%[b|n]|
-|akk.|%[m|den Knabe]%[b|n]|%[m|den Mensch]%[b|en]|%[m|den Diplomat]%[b|n]|
+|gen.|%[m|des Knabe]%[n|n]|%[m|des Mensch]%[n|en]|%[m|des Diplomat]%[n|n]|
+|dat.|%[m|dem Knabe]%[n|n]|%[m|dem Mensch]%[n|en]|%[m|dem Diplomat]%[n|n]|
+|akk.|%[m|den Knabe]%[n|n]|%[m|den Mensch]%[n|en]|%[m|den Diplomat]%[n|n]|
 |]
 
 [!
@@ -22,7 +22,7 @@
 !]
 
 [!
-Существительные, оканчивающиеся на -%[b|e]:
+Существительные, оканчивающиеся на -%[n|e]:
 !]
 
 [|
@@ -59,7 +59,7 @@
 [!
 Существительные с иностранными суффиксами:
 !]
--%[b|ant], -%[b|at], -%[b|ent], -%[b|et], -%[b|graph], -%[b|greif], -%[b|ist], -%[b|it], -%[b|ot]
+-%[n|ant], -%[n|at], -%[n|ent], -%[n|et], -%[n|graph], -%[n|greif], -%[n|ist], -%[n|it], -%[n|ot]
 
 [|
 |%[m|der Aspirant]|аспирант|

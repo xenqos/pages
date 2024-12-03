@@ -850,23 +850,16 @@ span[class^=clNav]
 .m /* maroon  */  { color:                #aa0000; }
 .e /* emerald */  { color:                #008800; }
 .l /* lapis   */  { color:                #0F8699; }
+
 .r /* red     */  { color:                #ff0000; }
 .g /* green   */  { color:                #00ff00; }
-.b /* blue    */  { color:                #0000ff; }
-.c /* gray    */  { color:                #cccccc; }
-.a /* gray    */  { color:                #aaaaaa; }
-.darkred          { color:                #aa0000; }
+.n /* navy    */  { color:                #000080; }
 
-.m0000
-{
-  color:                #aa0000;
-  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
-  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
-}
+/*-----------------------------------------------------------------------------------------------*/
 
 .g0500
 {
-  color:                #555588;
+  color:                #000080;
   margin:               0.000rem 0.000rem 0.000rem 0.000rem;
   padding:              0.000rem 0.000rem 0.000rem 0.500rem;
 }
@@ -885,32 +878,11 @@ span[class^=clNav]
   padding:              0.000rem 0.000rem 0.000rem 0.000rem;
 }
 
-.m0000-18
-{
-  color:                #aa0000 !important;
-  font-size:            1.125rem !important;
-}
-
 /*-----------------------------------------------------------------------------------------------*/
 
 .tar
 {
   text-align:           right;
-}
-
-/*-----------------------------------------------------------------------------------------------*/
-
-.dpb /* Dark Powder Blue */
-{
-  color:                #003399;
-  font-size:            85%;
-  font-weight:          bold !important;
-  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
-  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
-  text-align:           right;
-  vertical-align:       top;
-  width:                1.000rem;
-  max-width:            1.000rem;
 }
 
 /*-----------------------------------------------------------------------------------------------*/
