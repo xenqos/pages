@@ -12,20 +12,25 @@
 Однажды, Благословенный (Bhagavā) пребывал в Варанаси в Оленьем парке в Исипатане. Там он обратился к группе из пяти бхиккху:
 
 
-%[m|Dve·me, bhikkhave, antā pabbajitena na sevitabbā.]
-В эти два крайности, бхиккху, не следует вдаваться тем, кто ушел из мирской жизни.
+%[m|Dve·me, bhikkhave, antā pabbajitena na sevitabbā:]
+В эти два крайности, бхиккху, не следует вдаваться тем, кто ушел из мирской жизни:
 
-
+<!--
 %[m|Katame dve?]
 Какие два?
+-->
 
 
-%[m|Yo c·āyaṃ kāmesu kāma·sukh·allik·ānuyogo hīno gammo pothujjaniko an·ariyo an·attha·saṃhito, yo c·āyaṃ attakilamath·ānuyogo dukkho an·ariyo an·attha·saṃhito.]
-Одна, это приверженность чувственным удовольствиям (kāma), низменная, вульгарная, пустая, не благая, лишенная пользы; и, другая, это приверженность к самоистязанию, что также dukkha, не приносит блага, лишена пользы.
+%[m|Yo c·āyaṃ kāmesu kāma·sukh·allik·ānuyogo hīno gammo pothujjaniko an·ariyo an·attha·saṃhito;]
+Одна, это приверженность чувственным удовольствиям (kāma), низменная, вульгарная, пустая, не благая, лишенная пользы;
+
+
+%[m|yo c·āyaṃ attakilamath·ānuyogo dukkho an·ariyo an·attha·saṃhito.]
+и, другая, это приверженность к самоистязанию, что также dukkha, не приносит блага, лишена пользы.
 
 
 %[m|Ete kho, bhikkhave, ubho ante an·upagamma majjhimā paṭipadā tathāgatena abhisambuddhā cakkhu·karaṇī ñāṇa·karaṇī upasamāya abhiññāya sambodhāya nibbānāya saṃvattati.]
-Не вдаваясь в эти две крайностей, бхиккху, Tathāgata полностью прозрел в Срединный Путь (majjhima paṭipada),
+Не впадая в эти две крайности, бхиккху, Tathāgata полностью прозрел в Срединный Путь (majjhima paṭipada),
 порождающий видение (cakkhu),
 порождающий знание (ñāṇa),
 и ведущий к успокоению (upasamāya),
@@ -34,7 +39,7 @@
 к Ниббане (Nibbāna).
 
 
-%[m|Katamā ca sā, bhikkhave, majjhimā paṭipadā tathāgatena abhisambuddhā cakkhu·karaṇī ñāṇa·karaṇī upasamāya abhiññāya sambodhāya nibbānāya saṃvattati?
+%[m|Katamā ca sā, bhikkhave, majjhimā paṭipadā tathāgatena abhisambuddhā cakkhu·karaṇī ñāṇa·karaṇī upasamāya abhiññāya sambodhāya nibbānāya saṃvattati.]
 И что же такое, бхиккху, этот Срединный Путь (majjhima paṭipada), к которому полностью прозрел Tathāgata?
 порождающий видение (cakkhu),
 порождающий знание (ñāṇa),
@@ -42,6 +47,7 @@
 к прямому знаню (abhiñña),
 к полному пробуждению (sambodhi),
 к Ниббане (Nibbāna)?
+
 
 %[m|Ayam·eva ariyo aṭṭhaṅgiko maggo, seyyathidaṃ: sammā·diṭṭhi sammā·saṅkappo sammā·vācā sammā·kammanto sammā·ājīvo sammā·vāyāmo sammā·sati sammā·samādhi.]
 Это, бхиккху, Благородный Восьмеричный Путь (ariya aṭṭhaṅgika magga), то есть:
@@ -54,6 +60,7 @@
 Правильная осознанность (sammā·sati),
 Правильная собранность (sammā·samādhi).
 
+
 %[m|Ayaṃ kho sā, bhikkhave, majjhimā paṭipadā tathāgatena abhisambuddhā cakkhu·karaṇī ñāṇa·karaṇī upasamāya abhiññāya sambodhāya nibbānāya saṃvattati.]
 Это, бхиккху, Срединный Путь (majjhima paṭipada), к которому прозрел Tathāgata,
 порождающий видение (cakkhu),
@@ -63,42 +70,57 @@
 к полному пробуждению (sambodhi),
 к Ниббане (Nibbāna).
 
-???
 
-%[m|Idaṃ kho pana, bhikkhave, dukkhaṃ ariya-saccaṃ: Jātipi dukkhā, jarāpi dukkhā, maranampi dukkhaṃ, soka-parideva-dukkha-domanass’upāyāsāpi dukkhā, appiyehi sampayogo dukkho, piyehi vippayogo dukkho, yamp’icchaṃ na labhati tampi dukkhaṃ, saṅkhittena pañcupādānakkhandā dukkhā.]
-Так же, бхиккху, это Благородная Истина (ariya sacca) о страдании (dukkha):
-рождение (jāti) это страдание,
-старость (jarā) это страдание,
-болезнь страдание,
+%[m|Idaṃ kho pana, bhikkhave, dukkhaṃ ariya-saccaṃ:]
+Так же, бхиккху, это Благородная Истина (ariya sacca):
+
+
+%[m|Jātipi dukkhā, jarāpi dukkhā, maranampi dukkhaṃ,]
+рождение (jāti) страдание,
+старость (jarā) страдание,
 смерть (maraṇa) страдание,
+
+
+%[m|soka-parideva-dukkha-domanass’upāyāsāpi dukkhā,]
+Грусть, плач, боль и отчаяние что, страдание
+
+
+%[m|appiyehi sampayogo dukkho, piyehi vippayogo dukkho, yamp’icchaṃ na labhati tampi dukkhaṃ,]
 связь с неприятным страдание,
 разлука с приятным страдание,
-не получить то, что хочется, страдание;
+не получить то, что хочется, страдание,
 
 
-%[m|]
-короче, пять присваиваемых совокупностей (upādāna'k'khandhas) это страдание.
+%[m|saṅkhittena pañcupādānakkhandā dukkhā.]
+кратко - пять присваиваемых совокупностей (upādāna'k'khandhas) страдание.
 
 
-%[m|]
+%[m|Idaṃ kho pana, bhikkhave, dukkha-samudayo ariya-saccaṃ:]
 Так же, бхиккху, это Благородная истина (ariya sacca) о причине (samudaya) страдания (dukkha):
+
+
+%[m|Yā’yaṃ taṇhā ponobbhavikā nandi-rāga-sahagatā tatra-tatrābhinandinī seyyathīdaṃ: kāma-taṇhā, bhava-taṇhā, vibhava-taṇhā.]
 причина в жажде (taṇhā), ведущей к перерождению, жажде наполненной желанием и наслаждением, ищущей удовольствия то здесь то там; то есть:
 жажда чувственных налаждений (kāma-taṇhā),
 жажда существования (bhava-taṇhā)
 и жажда несуществования (vibhava-taṇhā).
 
 
-%[m|]
+%[m|Idaṃ kho pana, bhikkhave, dukkha-nirodho ariya-saccaṃ:]
 Так же, бхиккху, это Благородная истина (ariya sacca) о прекращении (nirodha) страдания (dukkha):
+
+
+%[m|Yo tassā yeva taṇhāya asesa-virāga-nirodho, cāgo, paṭinissaggo, mutti, anālayo.]
 бесстрастие (virāga), прекращение (nirodha), отказ, отречение, оставление и свобода от этой самой жажды (taṇhā).
 
-%[m|]
+
+%[m|Idaṃ kho pana, bhikkhave, dukkha-nirodha-gāminī paṭipadā ariya-saccaṃ:]
 Так же, бхиккху, это Благородная истина (ariya sacca) о пути ведущему (gāminī paṭipada) к прекращению (nirodha) страдания (dukkha):
 
 
+%[m|Ayam-eva ariyo aṭṭhaṅgiko maggo seyyathīdam: sammā-diṭṭhi, sammā-saṅkappo, sammā-vācā, sammā-kammanto, sammā-ājīvo, sammā-vāyāmo, sammā-sati, sammā-samādhi.]
+
 Это тот самый Благородный Восьмеричный Путь (ariya aṭṭhaṅgika magga), то есть:
-
-
 Правильное воззрение (sammā·diṭṭhi),
 Правильное намерение (sammā·saṅkappa),
 Правильная речь (sammā·vācā),
