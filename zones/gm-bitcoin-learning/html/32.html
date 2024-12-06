@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Bitcoin Learning</title>
+  <link rel='stylesheet' type='text/css' media='screen' href='/styles/commons.css'>
+  <link rel='stylesheet' type='text/css' href='../styles/style.css'>
+  <script type='text/javascript' src='/scripts/commons.js'></script>
+</head>
+<body>
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='/'><span class='clNavHome'><span></a>
+    <a href='../../index.html'><span class='clNavIndex'><span></a>
+    <a href='./31.html'><span class='clNavLeft'><span></a>
+    <a href='../index.html'><span class='clNavUp'><span></a>
+    <a href='./33.html'><span class='clNavRight'><span></a>
+  </div>
+</div>
+
+<div id='idContent'>
+
+<h1>32.Bits</h1>
+<p class="subheading">The target in a compact format.</p>
+
+<figure class="center">
+<a target='_blank' href='../images/32.bits.svg'><img class='clImageThumb' src='../images/32.bits.svg'></a><br><br>
+
+<p>The <dfn>bits</dfn> field is a compact way of storing the target in the block header.</p>
+<h2>Example</h2>
+<p>Here’s what the target was when Block 406,800 was mined:</p>
+<pre class="numbers"><code>Target: 0x00000000000000000696f4000000000000000000000000000000000000000000</code></pre>
+<p>And this is the Bits field you’ll find in the block header for it:</p>
+<pre class="numbers"><code>Bits: 0x180696f4</code></pre>
+<h2>Converting Bits</h2>
+<p>Bits is just a shorthand version of the Target.</p>
+<p>It looks alien at first, but it’s basically split in to two parts:</p>
+<ol type="1">
+<li><strong>Exponent</strong>: This gives you the size of the target in bytes.</li>
+<li><strong>Coefficient</strong>: This gives you the initial 3 bytes of the target.</li>
+</ol>
+
+<a target='_blank' href='../images/32.bits-conversion.png'><img class='clImageThumb' src='../images/32.bits-conversion.png'></a><br><br>
+<p class='clFigcaption'>I think of it
+ as using the exponent to calculate how many zeros to write down, then I
+ replace the first 3 bytes with the coefficient.</p>
+
+
+<p>So if you want to find out what the Target was when a block was
+mined, the Bits field will help you work out the (slightly rounded up)
+value of it.</p>
+<p class="note tool">
+Bits -&gt; Target
+</p>
+<p class="note warning">
+Remember that the exponent is a hexadecimal number, so <code>0x18</code> means that’s <code>24</code> bytes in decimal.
+</p>
+<p class="note text">
+The coefficient part taken from the original target is always rounded up. Here’s the current target.
+</p>
+<div class="note text">
+<p>
+The full target is often shown as 32 bytes in length, which is where all
+ those preceding zeros come in. But really all of the following are the
+same number:
+</p>
+<pre class="numbers"><code>Target: 0x00000000000000000696f4000000000000000000000000000000000000000000
+Target: 0x0696f4000000000000000000000000000000000000000000
+Target: 0x696f4000000000000000000000000000000000000000000</code></pre>
+</div>
+<h2>Why have “Bits”?</h2>
+<p><strong>Question</strong>: Why ever would you convert the Target in to “Bits”? Why not just store the full Target in the block header?</p>
+<p><strong>Answer</strong>: Because the block header doesn’t need to store the absolute precision of the full Target, so the Bits format saves on space.</p>
+
+</div>
+</div>
+</body>
+</html>

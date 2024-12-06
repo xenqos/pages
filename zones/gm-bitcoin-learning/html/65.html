@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Bitcoin Learning</title>
+  <link rel='stylesheet' type='text/css' media='screen' href='/styles/commons.css'>
+  <link rel="stylesheet" type="text/css" href="../styles/tipped.css">
+  <link rel="stylesheet" type="text/css" href="../styles/jquery-ui.min.css">
+  <link rel="stylesheet" type="text/css" href="../styles/tachyons.min.css">
+  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+  <script type='text/javascript' src='/scripts/commons.js'></script>
+</head>
+<body>
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='/'><span class='clNavHome'><span></a>
+    <a href='../../index.html'><span class='clNavIndex'><span></a>
+    <a href='./64.html'><span class='clNavLeft'><span></a>
+    <a href='../index.html'><span class='clNavUp'><span></a>
+    <a href='./66.html'><span class='clNavRight'><span></a>
+  </div>
+</div>
+
+<div id='idContent'>
+
+<h1>65.Little-Endian</h1>
+<p class="subheading">The order of bytes that a computer likes to read in.</p>
+
+<p>“Little-endian” refers to the order in which bytes of information can be processed by a computer.</p>
+<p>For example, here’s a hexadecimal number:</p>
+<pre class="numbers"><code>12345678</code></pre>
+<p>And here’s that same number in <strong>little-endian</strong>:</p>
+<pre class="numbers"><code>78563412</code></pre>
+<p>A computer processor will read this number in the same way that we read it as <code>12345678</code>… it’s just two different ways of reading the same thing.</p>
+<p class="note tip">
+Bitcoin likes using little-endian format for some data, so when working with code, you often have to get things in to little-endian format for them to work.
+</p>
+<h2>How does it work?</h2>
+<p>Let’s look at that first number again:</p>
+<pre class="numbers"><code>12345678</code></pre>
+<p>When you read it from left to right, you start with the <em>most-significant</em> value first (i.e starting with <code>10000000</code> and ending with <code>8</code>). So as you’re processing this number in your head, you could say you’re starting with the <strong>big-end</strong> first.</p>
+<p>But if you think about it, it could make just as much sense to start with the <strong>little-end</strong> first.</p>
+<pre class="numbers"><code>87654321</code></pre>
+<p>In this format, you’re <em>working your way up</em> from the least-significant value and finishing with the most-significant value.</p>
+<p>Sure, it’s a complete shift in the way you’re used to reading numbers, but if you’re a computer, this is arguably a much more logical way to do it. And that’s why many computer processors read data the “little-endian” way.</p>
+<p>But wait, this still isn’t the same format as the actual little-endian number from the start…</p>
+<h3>Bytes.</h3>
+<p>Computers read through data in chunks. Or to be more precise, they process data in “bytes”.</p>
+<p>Now, 1 byte is just some space in a computer’s memory, and holds 2 hexadecimal characters. So as you’re reversing the data in to being little-end first, you actually do it <em>1 byte at a time</em>:</p>
+<pre>
+Big Endian:
+             +------+------+------+------+
+Byte Number: |  0   |  1   |  2   |  3   |
+             +------+------+------+------+
+Data:        |  12  |  34  |  56  |  78  |
+             +------+------+------+------+
+
+Little-Endian:
+             +------+------+------+------+
+Byte Number: |  0   |  1   |  2   |  3   |
+             +------+------+------+------+
+Data:        |  78  |  56  |  34  |  12  |
+             +------+------+------+------+
+</pre>
+<p>And so by reversing 2 characters (1 byte) at a time, we get <code>12345678</code> in little-endian:</p>
+<pre class="numbers"><code>78563412</code></pre>
+<p>Ta da.</p>
+<p class="note text">
+So the little end is still first, but you’re taking 1 byte of that little-end at a time (and not simply 1 character at a time).
+</p>
+
+
+<h2>Quickly converting to little-endian.</h2>
+If I want to quickly convert a string of data in to little-endian, I just <strong>swap each pair of characters (working from <em>right-to-left</em>), then reverse the string</strong>.
+</p>
+<aside class="example">
+<pre class="numbers"><code>12345678</code></pre>
+<p>Swap each pair of characters (starting from the right)…</p>
+<pre class="numbers"><code>21436587</code></pre>
+<p>Reverse the whole thing…</p>
+<pre class="numbers"><code>78563412</code></pre>
+</aside>
+<p class="note warning">
+This is just a quick way of getting a string in to little-endian. Whilst it does the job, it’s a superficial way of doing it, and does not benefit your understanding of what’s actually going on with the data.
+</p>
+<p>This tool does the exact same thing:</p>
+<p class="note tool">
+Swap Endian - a basic tool that converts between little-endian and big-endian format (and vice-versa).
+</p>
+
+
+<h2>Why is little-endian used in bitcoin?</h2>
+<p>Because that’s the way Bitcoin was designed.</p>
+<p>It may not be the most user-friendly (or popular<sup>1</sup>) choice, but modern computers almost always use the little-endian format internally, so this decision is a way of improving speed.<sup>2</sup></p>
+<h2>Example of little-endian in bitcoin.</h2>
+<p>The majority of the fields in transaction data are in little-endian format.</p>
+<aside class="example">
+<p>The first 4 bytes (8 characters) of any serialized transaction tells you the <em>version number</em> of that transaction.</p>
+<pre class="wrap"><span style="color:yellow">01000000</span>01528dd30e90e54ff5321758214b86b344c1867140b44e49975934727051158a0a000000008b4830450221008e332006edbbbda724f5955f55e29ec1dd526f9a7f7599b5c801860b3e378e4e02201c3f501bf1f43010e85a25abbd0fc4547491c334744cc4728d86914a59811dd4014104212b6993b785b677e55a886f9353b1d216c939c86b96d5d86e8f3bd8d8ffe2164ecf7c0f6ecc8c525a4850f896af1a7612fb7520ad88f77717ee4c824ab00582ffffffff01f06c3577000000001976a914d1a4db47565243b566b5fc400ff59400ac254cb988ac00000000</pre>
+</pre>
+<pre class="numbers"><code>010000000 = version number (little-endian)
+000000001 = version number (big-endian)</code></pre>
+<p>Or in other words, the format of this transaction is <strong>version 1</strong>.</p>
+</aside>
+<p class="note text">
+Remember, when converting from little-endian to big-endian, swap each pair of characters first, then reverse the string.
+</p>
+<hr>
+<h3>Code</h3>
+<h4>Bash</h4>
+<p>Here’s how you can swap endianness on the command line (using <code>grep</code> to match every 2 characters, <code>tac</code> to reverse the order, then <code>tr</code> to remove the line breaks to give you a string):</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span><span class="bu">echo</span> 12345678 <span class="kw">|</span> <span class="fu">grep</span> -o .. <span class="kw">|</span> <span class="fu">tac</span> <span class="kw">|</span> <span class="bu">echo</span> <span class="va">$(</span><span class="fu">tr</span> -d <span class="st">&#39;\n&#39;</span><span class="va">)</span></span></code></pre></div>
+<h4>PHP</h4>
+<p>Here’s a similar method in PHP (switching every 2 characters again):<sup>3</sup></p>
+<div class="sourceCode"><pre class="sourceCode php"><code class="sourceCode php"><span><span class="co">// converts a string to little-endian</span></span>
+<span><span class="kw">$string</span> = <span class="dv">12345678</span><span class="ot">;</span></span>
+<span><span class="kw">$little</span>-endian = <span class="fu">implode</span><span class="ot">(</span><span class="st">&#39;&#39;</span><span class="ot">,</span> <span class="fu">array_reverse</span><span class="ot">(</span><span class="fu">str_split</span><span class="ot">(</span><span class="kw">$string</span><span class="ot">,</span> <span class="dv">2</span><span class="ot">)));</span></span>
+<span><span class="kw">echo</span> <span class="kw">$little</span>-endian<span class="ot">;</span></span></code></pre></div>
+
+<h3>Little Endian Conversion</h3>
+
+<a target='_blank' href='../images/65.littleendianconversion.gif'><img class='clImageThumb' src='../images/65.littleendianconversion.gif'></a><br><br>
+
+
+</div>
+</div>
+</body>
+</html>

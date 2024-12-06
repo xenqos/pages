@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Bitcoin Learning</title>
+  <link rel='stylesheet' type='text/css' media='screen' href='/styles/commons.css'>
+  <link rel="stylesheet" type="text/css" href="../styles/tipped.css">
+  <link rel="stylesheet" type="text/css" href="../styles/jquery-ui.min.css">
+  <link rel="stylesheet" type="text/css" href="../styles/tachyons.min.css">
+  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+  <script type='text/javascript' src='/scripts/commons.js'></script>
+</head>
+<body>
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='/'><span class='clNavHome'><span></a>
+    <a href='../../index.html'><span class='clNavIndex'><span></a>
+    <a href='./44.html'><span class='clNavLeft'><span></a>
+    <a href='../index.html'><span class='clNavUp'><span></a>
+    <a href='./46.html'><span class='clNavRight'><span></a>
+  </div>
+</div>
+
+<div id='idContent'>
+
+<h1>45.Script</h1>
+<p class="subheading">A mini programming language.</p>
+
+<figure class="center">
+<a target='_blank' href='../images/45.script.png'><img class='clImageThumb' src='../images/45.script.png'></a><br><br>
+
+<p><strong>Script</strong> is a mini programming language used as a <em>locking mechanism</em> for outputs.</p>
+<ul>
+<li>A <strong>locking script</strong> is placed on every output.</li>
+<li>An <strong>unlocking script</strong> must be provided to unlock an output (i.e. when you’re using it as an input).</li>
+</ul>
+<p>If a full script (unlocking + locking) is valid, the output is “unlocked” and can be spent.</p>
+<h2>What is the Script language?</h2>
+<p>Script is a very basic programming language. It consists of two types of things:</p>
+<ul>
+<li><strong>Data</strong> - For example; <em>public keys</em> and <em>signatures</em>.</li>
+<li><strong><code class="opcode">OPCODES</code></strong> - Simple functions that <em>operate</em> on the data.</li>
+</ul>
+<p>Here’s a simple diagram of a typical <abbr title="Pay To Pubkey Hash">P2PKH</abbr> script used in Bitcoin:</p>
+<p><a target='_blank' href='../images/45.example.png'><img class='clImageThumb' src='../images/45.example.png'></a><br><br></p>
+<p class="note tip">
+<strong>Tip:</strong> Here’s a full list of Opcodes.
+</p>
+<h2>How do you run Script?</h2>
+<p class="note important">
+The complete script is run from left-to-right. As it runs, it makes use of a data structure called a “<strong>stack</strong>”.
+</p>
+<ol type="1">
+<li><strong>Data</strong> is always <em>pushed</em> on to the <strong>stack</strong>.</li>
+</ol>
+<p><a target='_blank' href='../images/45.data.gif'><img class='clImageThumb' src='../images/45.data.gif'></a><br><br></p>
+<ol start="2" type="1">
+<li><strong><code class="opcode">OPCODES</code></strong> can <em>pop</em> elements off the stack, do something with them, then optionally “push” new elements on to the <strong>stack</strong>.</li>
+</ol>
+
+<a target='_blank' href='../images/45.opcode.gif'><img class='clImageThumb' src='../images/45.opcode.gif'></a><br><br>
+<p class='clFigcaption'>The <code class="opcode">DUP</code> opcode duplicates the top element on the stack.</p>
+
+
+<h3>What makes a Script valid?</h3>
+<p>A script is valid if the <strong>top and only element left on the stack is a <code class="opcode">1</code> (or greater)</strong>.</p>
+<p><a target='_blank' href='../images/45.validate.gif'><img class='clImageThumb' src='../images/45.validate.gif'></a><br><br></p>
+<div class="note warning">
+<p>The script is invalid if:</p>
+<ol type="1">
+<li>The final <strong>stack is empty</strong></li>
+<li>The top element is on the stack is <code class="opcode">0</code></li>
+<li>There is <strong>more than one element left on the stack</strong> at the end of execution. <sup>1</sup></li>
+<li>The script <strong>exits prematurely</strong> (e.g. <code class="opcode">OP_RETURN</code> in a NULL DATA script).</li>
+</ol>
+</div>
+<h2>Where can you find Script in Bitcoin?</h2>
+<p>A <strong>locking script</strong> is placed on every <strong>output</strong> you create in a transaction:</p>
+<p><a target='_blank' href='../images/45.locking-script.png'><img class='clImageThumb' src='../images/45.locking-script.png'></a><br><br></p>
+<p>An <strong>unlocking script</strong> must be provided for every <strong>input</strong> you want to spend in a transaction:</p>
+<p><a target='_blank' href='../images/45.unlocking-script.png'><img class='clImageThumb' src='../images/45.unlocking-script.png'></a><br><br></p>
+<p>Every node will then combine and run these two scripts to make sure they validate.</p>
+<div class="note tip">
+<p><strong>The Unlocking Script goes first!</strong></p>
+<p>Even though the <code>unlocking script</code> is provided <em>after</em> the initial <code>locking script</code>, we actually put it <strong>first</strong> when we run the both scripts together.</p>
+
+<a target='_blank' href='../images/45.unlocking-first.png'><img class='clImageThumb' src='../images/45.unlocking-first.png'></a><br><br>
+<p class='clFigcaption'>When we run the full script, the unlocking script goes before the locking script.</p>
+
+
+</div>
+
+<h2>Why do we use Script?</h2>
+<ul>
+<li><strong>Question:</strong> Why not just use a simple public key and signature comparison and do away with all this <code class="opcode">OPCODE</code> and stack business?</li>
+<li><strong>Answer:</strong> Because <strong>you can create different types</strong> of locks with <em>different combinations of <code class="opcode">OPCODES</code></em>.</li>
+</ul>
+<p>For example, here are some cool <em>locking scripts</em> you can create:</p>
+<h3>1. Math Puzzle</h3>
+<p>To spend this output, you need to provide <strong>two numbers that add up to 8</strong>.</p>
+
+<a target='_blank' href='../images/45.math.png'><img class='clImageThumb' src='../images/45.math.png'></a><br><br>
+<p class='clFigcaption'>This may not be the most secure locking script in the world.</p>
+
+
+<h3>2. Hash Puzzle</h3>
+<p>Here you just need something that <strong>hashes to the same result</strong> as what’s inside the locking script.</p>
+<p><a target='_blank' href='../images/45.hash.png'><img class='clImageThumb' src='../images/45.hash.png'></a><br><br></p>
+<h3>3. Hash Collision Puzzle</h3>
+<p>This is a cool one. You can unlock it by providing <strong>two different strings of data that produce the same hash result</strong>.</p>
+<p>In other words, it’s acts an incentive to find a “hash collision”.</p>
+
+<a target='_blank' href='../images/45.hash-collision.png'><img class='clImageThumb' src='../images/45.hash-collision.png'></a><br><br>
+<p class='clFigcaption'>The bitcoins that are locked to this script can be found at: <code class="address">35Snmmy3uhaer2gTboc81ayCip4m9DT4ko</code>. However, the script has been wrapped in a <abbr title="P2SH">P2SH</abbr> locking script, so you can’t actually see the original locking script (until someone unlocks them).</p>
+
+
+<p class="note caution" style="margin-top:48px">
+<strong>These locking scripts are non-standard.</strong><sup>2</sup> Whilst these scripts are valid (and can be mined on to the blockchain), typical Bitcoin Core nodes will not relay them from their memory pools, which makes it difficult for them to get mined in the first place.
+</p>
+<h2>Standard Scripts</h2>
+<p>Despite being able to create a variety of different locking scripts with various combinations of <code class="opcode">OPCODES</code>, most nodes will only relay a handful of “standard scripts”:</p>
+<ul>
+<li>P2PK (Pay To Pubkey)</li>
+<li>P2PKH (Pay To Pubkey Hash)</li>
+<li>P2MS (Pay To Multisig)</li>
+<li>P2SH (Pay To Script Hash)</li>
+<li>NULL DATA</li>
+</ul>
+<p><a target='_blank' href='../images/45.standard-scripts.png'><img class='clImageThumb' src='../images/45.standard-scripts.png'></a><br><br></p>
+<h3>
+Why don’t nodes relay non-standard scripts?
+</h3>
+
+
+<p>I know, it’s a shame.</p>
+<p>However, not every combination of <code class="opcode">OPCODE</code> has been tested. So if nodes relayed every non-standard script they received, it would introduce the risk of an attack from someone <strong>spamming the network with scripts that take a long time to verify</strong><sup>3</sup>. This could “clog up” nodes and bring the network to a halt.</p>
+<p>On the other hand, the standard scripts have been thoroughly tested and can be validated quickly. So the whole non-relaying of non-standard transactions is just a <strong>safety measure</strong>.</p>
+<p class="note tip">
+<strong>Non-standard scripts are valid, they are just not <em>actively relayed</em>.</strong> <br><br> Even though a non-standard transaction does not get relayed between memory pools, it can <strong>still be mined in to a block</strong>. Nodes do not relay non-standard transactions because a memory pool can receive a large number of transactions in a short period of time, whereas a block can only hold a limited number of transactions. <br><br> So if you want a transaction with a non-standard script to be added to the blockchain, you either need to send it directly to a miner who will mine it for you, or mine it on to the blockchain yourself.
+</p>
+
+
+<h2>Summary</h2>
+<p>Script is just a mini programming language used in Bitcoin to provide the locking mechanism for outputs.</p>
+<ul>
+<li>Every output is given a “locking script”.</li>
+<li>You must then provide an “unlocking script” in the transaction that wants to spend that output.</li>
+</ul>
+<p>When a node receives the spending transaction, it will combine both of these scripts together and run them. If a <code class="opcode">1</code> is left on the top of the stack after the script has completed (and nothing else), then the script is valid and the output can be spent.</p>
+<blockquote>
+<p>The script is actually a predicate. It’s just an equation that evaluates to true or false. Predicate is a long and unfamiliar word so I called it script. – Satoshi Nakamoto</p>
+</blockquote>
+
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li role="doc-endnote"><p>Is a script spendable if multiple items are left on the stack?↩︎</p></li>
+<li role="doc-endnote"><p><code class="bitcoinsrc">isStandard()</code>↩︎</p></li>
+<li role="doc-endnote"><p>https://bitcoin.stackexchange.com/questions/73728/why-can-non-standard-transactions-be-mined-but-not-relayed/↩︎</p></li>
+</ol>
+</section>
+
+</div>
+</div>
+</body>
+</html>

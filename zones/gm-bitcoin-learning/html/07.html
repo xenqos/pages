@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Bitcoin Learning</title>
+  <link rel='stylesheet' type='text/css' media='screen' href='/styles/commons.css'>
+  <link rel='stylesheet' type='text/css' href='../styles/style.css'>
+  <script type='text/javascript' src='/scripts/commons.js'></script>
+</head>
+<body>
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='/'><span class='clNavHome'><span></a>
+    <a href='../../index.html'><span class='clNavIndex'><span></a>
+    <a href='./06.html'><span class='clNavLeft'><span></a>
+    <a href='../index.html'><span class='clNavUp'><span></a>
+    <a href='./08.html'><span class='clNavRight'><span></a>
+  </div>
+</div>
+
+<div id='idContent'>
+
+<h1>07.Nodes</h1>
+<p class="subheading">Computers running the bitcoin program.</p>
+
+<h2>What is a node?</h2>
+<p>A node is just a <strong>computer that is running the Bitcoin program</strong>. More importantly, it is <em>connected to other computers</em> (running the same program) to create a Network.</p>
+<p><a target='_blank' href='../images/07.05-nodes_network.png'><img class='clImageThumb' src='../images/07.05-nodes_network.png'></a><br><br></p>
+<h2>What does a node do?</h2>
+<p>A node has three jobs:</p>
+<ol type="1">
+<li>Follow rules</li>
+<li>Share information</li>
+<li>Keep a copy of confirmed transactions</li>
+</ol>
+<h3>1. Follow rules</h3>
+<p>Each node (bitcoin client) has been programmed to follow a set of
+rules. By following these rules a node is able to check the transactions
+ it receives and only relay them if everything is cool. If there are any
+ problems, the transaction isn’t passed on.</p>
+
+<a target='_blank' href='../images/07.01-node_rules.png'><img class='clImageThumb' src='../images/07.01-node_rules.png'></a><br><br>
+<p class='clFigcaption'>Your node ain’t gonna be relaying any dodgy transactions.</p>
+
+
+<p>For example, one rule is that a person must own an equal or greater
+amount of bitcoins than they are trying to send. So if your node
+receives a transaction where someone has tried to send more bitcoins
+than they own, the transaction won’t be passed on to other nodes.</p>
+<h3>2. Share information</h3>
+<p>A node’s main job is to share information with other nodes, and the quintessential information a node shares is transactions.</p>
+<p>Now, there are two types of transactions that nodes share:</p>
+<ol type="1">
+<li>Fresh transactions – transactions that have recently entered the network.</li>
+<li>Confirmed transactions – transactions that have been “confirmed” and written to a file. These are shared in <em>blocks</em> of transactions, and not individually.</li>
+</ol>
+
+<a target='_blank' href='../images/07.01-node_transaction_type_sharing.png'><img class='clImageThumb' src='../images/07.01-node_transaction_type_sharing.png'></a><br><br>
+<p class='clFigcaption'>A node shares both “fresh” transactions and blocks of <em>confirmed</em> transactions.</p>
+
+
+<p>Don’t worry about the difference between these two right now. It will all become clear in Mining and Blocks.</p>
+<h3>3. Keep a copy of confirmed transactions</h3>
+<p>As mentioned, each node also keeps blocks of <em>confirmed</em> transactions. These are held together in a file called the blockchain.</p>
+
+<a target='_blank' href='../images/07.02-node_blockchain.png'><img class='clImageThumb' src='../images/07.02-node_blockchain.png'></a><br><br>
+<p class='clFigcaption'>Each node also keeps a copy of the blockchain.</p>
+
+<p>Fresh transactions are bounced around the network until they are
+etched in to the blockchain, which is a ledger of confirmed
+transactions.</p>
+<p>Each node has a copy of the blockchain for safe keeping, and shares it with other nodes if their copy isn’t up to date.</p>
+<p class="note link">
+The process of adding fresh transactions to the blockchain is called Mining.
+</p>
+<aside class="aside">
+<p>I want to mention that each node is <em>autonomous</em>.</p>
+<p>By that I mean that when you run a bitcoin client, the network
+doesn’t “tell you what to do”. Instead, your bitcoin client already
+knows what to do, and it <em>makes it’s own decisions</em>.</p>
+<p>So the entire bitcoin network is made up of nodes <em>making their own decisions</em>, but they each make the same decisions as one another, which makes it a completely <em>decentralised</em> yet powerful network.</p>
+<p class="note text">
+If every other node went offline, your node would be upholding the entire bitcoin network.
+</p>
+</aside>
+<h2>Do I have to be a node to use bitcoin?</h2>
+<p>No.</p>
+<p>You can send and receive bitcoins without having to be a node. You
+just need to get the transaction in to the bitcoin network and you’re
+good to go.</p>
+
+<a target='_blank' href='../images/07.03-nodes_network_insert_transaction.png'><img class='clImageThumb' src='../images/07.03-nodes_network_insert_transaction.png'></a><br><br>
+<p class='clFigcaption'>If you send a message to one node about a transaction, it will eventually propagate the entire network.</p>
+
+
+<p>If you’re using a web wallet for example, they will feed the transactions you make in to the network for you.</p>
+
+</div>
+</div>
+</body>
+</html>
