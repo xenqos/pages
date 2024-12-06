@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, user-scalable=no'>
+  <title>Bitcoin Learning</title>
+  <link rel='icon' type='image/x-icon' href='../../../favicon.ico?v=2'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../images/favicons/favicon-032.png?v=2'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../images/favicons/favicon-128.png?v=2'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../images/favicons/favicon-180.png?v=2'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../images/favicons/favicon-192.png?v=2'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../images/favicons/favicon-512.png?v=2'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../styles/commons.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../styles/book.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../scripts/commons.js'></script>
+  <script type='text/javascript' src='../../../scripts/book.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../index.html'><span class='clNavHome'></span></a>
+    <a href='./34.html'><span class='clNavLeft'><span></a>
+    <a href='../index.html'><span class='clNavUp'><span></a>
+    <a href='./36.html'><span class='clNavRight'><span></a>
+  </div>
+</div>
+
+<div id='idContent'>
+
+<h1>35.TXID</h1>
+<p class="subheading">The hash of a transaction's data.</p>
+
+<figure class="center">
+<a target='_blank' href='../images/35.txid.svg'><img class='clImageThumb' src='../images/35.txid.svg'></a><br><br>
+
+<p>A <code class="txid"><dfn>TXID</dfn></code> (Transaction ID) is basically an <em>identification number</em> for a bitcoin transaction.</p>
+<h4>Examples:</h4>
+<ul>
+<li><code class="txid">f4184fc596403b9d638783cf57adfe4c75c605f6356fbc91338530e9831e9e16</code> - First ever Bitcoin transaction to Hal Finney in 2010.</li>
+<li><code class="txid">a1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d</code> - Pizza transaction for 10,000 BTC in 2010.</li>
+<li><code class="txid">4ce18f49ba153a51bcda9bb80d7f978e3de6e81b5fc326f00465464530c052f4</code> - The transaction containing the first donation I received for making this website.</li>
+</ul>
+<p>A <code class="txid">TXID</code> is always <strong>32 bytes</strong> (64 characters) and hexadecimal.</p>
+<h2>Creating a TXID</h2>
+<p>You get a <code class="txid">TXID</code> by hashing transaction data through SHA256 twice.</p>
+
+<pre class="transaction wrap" style="margin:0 0 12px;">
+0100000001c997a5e56e104102fa209c6a852dd90660a20b2d9c352423edce25857fcd3704000000004847304402204e45e16932b8af514961a1d3a1a25fdf3f4f7732e9d624c6c61548ab5fb8cd410220181522ec8eca07de4860a4acdd12909d831cc56cbbac4622082221a8768d1d0901ffffffff0200ca9a3b00000000434104ae1a62fe09c5f51b13905f07f06b99a2f7159b2225f374cd378d71302fa28414e7aab37397f554a7df5f142c21c1b7303b8a0626f1baded5c72a704f7e6cd84cac00286bee0000000043410411db93e1dcdb8a016b49840f8c53bc1eb68a382e97b1482ecad7b148a6909a5cb2e0eaddfb84ccf9744464f82e160bfa9b8b64f9d4c03f999b8643f656b412a3ac00000000
+</pre>
+<a target='_blank' href='../images/35.sha256.svg'><img class='clImageThumb' src='../images/35.sha256.svg'><br><br></a> <a target='_blank' href='../images/35.sha256.svg'><img class='clImageThumb' src='../images/35.sha256.svg'><br><br></a> <code class="txid">169e1e83e930853391bc6f35f605c6754cfead57cf8387639d3b4096c54f18f4</code>   <em>(Note: <strong>reverse the byte order</strong> first if you want to find this transaction in the blockchain…)</em>
+
+
+<section class="note caution">
+<h3>Searching for TXIDs in the blockchain.</h3>
+<p>If you’ve just hashed some transaction data and want to search for a TXID in the blockchain, you have to search for it in <strong>reverse byte order</strong>.</p>
+<pre><code>txid (original):  169e1e83e930853391bc6f35f605c6754cfead57cf8387639d3b4096c54f18f4
+txid (searching): f4184fc596403b9d638783cf57adfe4c75c605f6356fbc91338530e9831e9e16</code></pre>
+<h4>Why?</h4>
+<p>Because welcome to Bitcoin.</p>
+<blockquote>
+<p>Due to historical accident, the tx and block hashes that bitcoin core uses are byte-reversed. I’m not entirely sure why. May be something like using openssl bignum to store hashes or something like that, then printing them as a number. – Wladimir van der Laan (Bitcoin Core developer)</p>
+</blockquote>
+<p>In other words, this was a slight oversight in the early development of Bitcoin that has now become a standard.</p>
+</section>
+<h2>Where are TXIDs used?</h2>
+<h3>1. Searching the blockchain.</h3>
+<p>If you’ve just made a transaction, you can use the <code class="txid">TXID</code> to find it in the blockchain. For example:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span><span class="ex">bitcoin-cli</span> getrawtransaction 0e3e2357e806b6cdb1f70b54c3a3a17b6714ee1f0e68bebb44a74b1efd512098</span></code></pre></div>
+
+<a target='_blank' href='../images/35.getrawtransaction.png'><img class='clImageThumb' src='../images/35.getrawtransaction.png'></a><br><br>
+<p class='clFigcaption'>The console window in the Bitcoin Core Wallet</p>
+
+
+<p class="note text">
+If you have been given a <code class="txid">TXID</code> by your bitcoin wallet, it’s probably already in its “searchable” format (<em>reverse byte order</em>).
+</p>
+<h3>2. Spending outputs.</h3>
+<p>You use a <code class="txid">TXID</code> when you want to use an existing output as an input in a new transaction.</p>
+
+<a target='_blank' href='../images/35.reference.svg'><img class='clImageThumb' src='../images/35.reference.svg'></a><br><br>
+<p class='clFigcaption'>To refer to an existing output, you use the <code class="txid">txid</code> it was created in, along with the <code>vout</code> number for that transaction.</p>
+
+
+<p>Because after all, a <code class="txid">TXID</code> is a <em>unique identifier</em><sup>1</sup> for a transaction.</p>
+<h2>Notes</h2>
+<aside class="aside">
+<h3>Why hash <em>twice</em>? Why not once?</h3>
+<p>Things often get hashed twice in bitcoin for super-extra security.</p>
+<blockquote>
+<p>SHA-256(SHA-256(x)) was proposed by Ferguson and Schneier in their excellent book “Practical Cryptography” (later updated by Ferguson, Schneier, and Kohno and renamed “Cryptography Engineering”) as a way to make SHA-256 invulnerable to “length-extension” attack. They called it “SHA-256d”. –<br><br> https://crypto.stackexchange.com/questions/779/hashing-or-encrypting-twice-to-increase-security/884#884</p>
+</blockquote>
+</aside>
+<p class="note tip">
+Hash functions like SHA256 are great for creating identification numbers, because they will take in any string of data and always spit out a short yet <strong>unique</strong> result.
+</p>
+
+<h3>Coinbase transactions having the same TXID.</h3>
+<p>There has been a situation where two “different” coinbase transactions had the same TXID.</p>
+<p>These coinbase transactions used the same <code class="address">address</code> when claiming the block reward from two different blocks. This meant that their transaction data was the same, and so the TXIDs were the same also. Here are the transactions and the blocks they were included in:</p>
+<ol type="1">
+<li><code class="txid">e3bf3d07d4b0375638d5f1db5255fe07ba2c4cb067cd81b84ee974b6585fb468</code>
+<ul>
+<li>block 91,722: <code class="blockhash">00000000000271a2dc26e7667f8419f2e15416dc6955e5a6c6cdf3f2574dd08e</code></li>
+<li>block 91,880: <code class="blockhash">00000000000743f190a18c5577a3c2d2a1f610ae9601ac046a38084ccb7cd721</code></li>
+</ul></li>
+<li><code class="txid">d5d27987d2a3dfc724e359870c6644b40e497bdc0589a033220fe15429d88599</code>
+<ul>
+<li>block 91,812: <code class="blockhash">00000000000af0aed4792b1acee3d966af36cf5def14935db8de83d6f9306f2f</code></li>
+<li>block 91,842: <code class="blockhash">00000000000a4d0a398161ffc163c503763b1f4360639393e0e4c8e300e0caec</code></li>
+</ul></li>
+</ol>
+<h4>The Fix.</h4>
+<p>Initially, <strong>BIP 30</strong> introduced a rule that prevented blocks from containing a TXID that already exists. Later, <strong>BIP 34</strong> required coinbase transactions to include the height of the block they were mining in to their transaction data, so that coinbase transactions could be different.</p>
+
+</div>
+</div>
+</body>
+</html>

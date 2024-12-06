@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, user-scalable=no'>
+  <title>Bitcoin Learning</title>
+  <link rel='icon' type='image/x-icon' href='../../../favicon.ico?v=2'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../images/favicons/favicon-032.png?v=2'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../images/favicons/favicon-128.png?v=2'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../images/favicons/favicon-180.png?v=2'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../images/favicons/favicon-192.png?v=2'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../images/favicons/favicon-512.png?v=2'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../styles/commons.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../styles/book.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../scripts/commons.js'></script>
+  <script type='text/javascript' src='../../../scripts/book.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../index.html'><span class='clNavHome'></span></a>
+    <a href='./29.html'><span class='clNavLeft'><span></a>
+    <a href='../index.html'><span class='clNavUp'><span></a>
+    <a href='./31.html'><span class='clNavRight'><span></a>
+  </div>
+</div>
+
+<div id='idContent'>
+
+<h1>30.Block Header</h1>
+<p class="subheading">A summary of the data in the block.</p>
+
+<p>A block header is like the <em>metadata</em> at the top of a block of transactions.</p>
+<p><a target='_blank' href='../images/30.block-header.png'><img class='clImageThumb' src='../images/30.block-header.png'></a><br><br></p>
+<p>The fields in the block header provide a unique summary of the entire block.</p>
+<p><a target='_blank' href='../images/30.block-header-fields.png'><img class='clImageThumb' src='../images/30.block-header-fields.png'></a><br><br></p>
+<h2>Example</h2>
+<p>Here’s the block header for block 123,456:</p>
+
+
+<pre class="blockheader wrap"><span class="version">01000000</span><span class="prevblock">9500c43a25c624520b5100adf82cb9f9da72fd2447a496bc600b000000000000</span><span class="merkleroot">6cd862370395dedf1da2841ccda0fc489e3039de5f1ccddef0e834991a65600e</span><span class="time">a6c8cb4d</span><span class="bits">b3936a1a</span><span class="nonce">e3143991</span>
+</pre>
+<h3>Fields</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tr class="odd">
+<td>Version</td>
+<td>The version of the block.</td>
+</tr>
+<tr class="even">
+<td>Previous Block Hash</td>
+<td>The Block Hash of the block that this block is being built on top of. This is what “chains” the blocks together.</td>
+</tr>
+<tr class="odd">
+<td>Merkle Root</td>
+<td>All of the transactions in this block,
+hashed together. Basically provides a single-line summary of all the
+transactions in this block.</td>
+</tr>
+<tr class="even">
+<td>Time</td>
+<td>When a miner is trying to mine this block, the <em>Unix</em> time at which this block header is being hashed is noted within the block header itself.</td>
+</tr>
+<tr class="odd">
+<td>Bits</td>
+<td>A shortened version of the Target.</td>
+</tr>
+<tr class="even">
+<td>Nonce</td>
+<td>The field that miners change in order to try and get a hash of the block header (a Block Hash) that is below the Target.</td>
+</tr>
+
+</table>
+<h3>Data Structure</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Field</th>
+<th>Size</th>
+<th>Data</th>
+</tr>
+</thead>
+<tr class="odd">
+<td>Version</td>
+<td>4 bytes</td>
+<td>Little-endian</td>
+</tr>
+<tr class="even">
+<td>Previous Block Hash</td>
+<td>32 bytes</td>
+<td>Little-endian</td>
+</tr>
+<tr class="odd">
+<td>Merkle Root</td>
+<td>32 bytes</td>
+<td>Little-endian</td>
+</tr>
+<tr class="even">
+<td>Time</td>
+<td>4 bytes</td>
+<td>Little-endian</td>
+</tr>
+<tr class="odd">
+<td>Bits</td>
+<td>4 bytes</td>
+<td>Little-endian</td>
+</tr>
+<tr class="even">
+<td>Nonce</td>
+<td>4 bytes</td>
+<td>Little-endian</td>
+</tr>
+
+</table>
+
+</div>
+</div>
+</body>
+</html>

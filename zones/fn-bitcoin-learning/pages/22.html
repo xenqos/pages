@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, user-scalable=no'>
+  <title>Bitcoin Learning</title>
+  <link rel='icon' type='image/x-icon' href='../../../favicon.ico?v=2'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../images/favicons/favicon-032.png?v=2'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../images/favicons/favicon-128.png?v=2'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../images/favicons/favicon-180.png?v=2'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../images/favicons/favicon-192.png?v=2'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../images/favicons/favicon-512.png?v=2'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../styles/commons.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../styles/book.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../scripts/commons.js'></script>
+  <script type='text/javascript' src='../../../scripts/book.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../index.html'><span class='clNavHome'></span></a>
+    <a href='./21.html'><span class='clNavLeft'><span></a>
+    <a href='../index.html'><span class='clNavUp'><span></a>
+    <a href='./23.html'><span class='clNavRight'><span></a>
+  </div>
+</div>
+
+<div id='idContent'>
+
+<h1>22.Candidate Block</h1>
+
+<p class="note important">
+A candidate block is a temporary block created using transactions selected from the memory pool.
+</p>
+<p>Nodes (mining nodes) select transactions from their memory pool to form their own candidate blocks.</p>
+
+<a target='_blank' href='../images/22.memory-pool-candidate-block.png'><img class='clImageThumb' src='../images/22.memory-pool-candidate-block.png'></a><br><br>
+<p class='clFigcaption'>Anyone who is mining can choose which transactions to include in their candidate block.</p>
+
+
+<p>Each node then tries to add their candidate block to the blockchain through the process of mining.</p>
+<p><a target='_blank' href='../images/22.candidate-block-blockchain.png'><img class='clImageThumb' src='../images/22.candidate-block-blockchain.png'></a><br><br></p>
+<p>Every block starts life as a candidate block, but only the ones that are successfully mined get added to the blockchain.</p>
+
+</div>
+</div>
+</body>
+</html>

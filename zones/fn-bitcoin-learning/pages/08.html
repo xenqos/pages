@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, user-scalable=no'>
+  <title>Bitcoin Learning</title>
+  <link rel='icon' type='image/x-icon' href='../../../favicon.ico?v=2'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../images/favicons/favicon-032.png?v=2'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../images/favicons/favicon-128.png?v=2'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../images/favicons/favicon-180.png?v=2'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../images/favicons/favicon-192.png?v=2'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../images/favicons/favicon-512.png?v=2'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../styles/commons.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../styles/book.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../scripts/commons.js'></script>
+  <script type='text/javascript' src='../../../scripts/book.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../index.html'><span class='clNavHome'></span></a>
+    <a href='./07.html'><span class='clNavLeft'><span></a>
+    <a href='../index.html'><span class='clNavUp'><span></a>
+    <a href='./09.html'><span class='clNavRight'><span></a>
+  </div>
+</div>
+
+<div id='idContent'>
+
+<h1>08.Mining</h1>
+<p class="subheading">The process of adding blocks to the blockchain.</p>
+
+<h2>What is Mining?</h2>
+<p>Mining is the process of adding transactions to the blockchain.</p>
+<h2>How does it work?</h2>
+<p>Every node on the bitcoin network shares information about new transactions. They store these transactions in their <span class="term">memory pool</span>.</p>
+
+<a target='_blank' href='../images/08.01-network-memory-pool.png'><img class='clImageThumb' src='../images/08.01-network-memory-pool.png'></a><br><br>
+<p class='clFigcaption'>The memory pool is a node’s temporary storage area for transaction data.</p>
+
+
+<p>Each node also has the option to try and “mine” the transactions in their memory pool in to a <strong>file</strong>. This file is a ledger of every bitcoin transaction, and it’s called the <span class="term"><strong>blockchain</strong></span>.</p>
+
+<a target='_blank' href='../images/08.02-node-pool-block.png'><img class='clImageThumb' src='../images/08.02-node-pool-block.png'></a><br><br>
+<p class='clFigcaption'>You could think of the memory pool as “floating” transactions and the blockchain as “archived” transactions.</p>
+
+
+<p class="note important">
+However, to add transactions from the memory pool to the blockchain, a node has to use a lot of computer processing power.
+</p>
+<p>This processing power is forced through the existence of a <em>challenge</em> in the memory pool.</p>
+<h3>What is this challenge?</h3>
+<p>Okay, imagine you’re a node. At any moment in time you can condense
+the transactions in your memory pool in to a single “string” of numbers
+and letters.</p>
+
+<a target='_blank' href='../images/08.03-node-pool-string.png'><img class='clImageThumb' src='../images/08.03-node-pool-string.png'></a><br><br>
+<p class='clFigcaption'>This string represents all of the transactions in your memory pool.</p>
+
+
+<p>Now, your objective is to <span class="term">hash</span> this string with <em>another number</em> to <strong>try and get a new string that begins with a certain number of zeros</strong>.</p>
+
+<a target='_blank' href='../images/08.04-node-pool-string-nonce.png'><img class='clImageThumb' src='../images/08.04-node-pool-string-nonce.png'></a><br><br>
+<p class='clFigcaption'>Most of the time you will get a result that isn’t even close.</p>
+
+
+
+<a target='_blank' href='../images/08.04-node-pool-string-nonce-success.png'><img class='clImageThumb' src='../images/08.04-node-pool-string-nonce-success.png'></a><br><br>
+<p class='clFigcaption'>But if you keep going you may stumble upon a number that works.</p>
+
+
+<p>Now, this sounds easy enough, but it’s actually difficult. It’s
+utterly random, and you can only hope to find a winning result through
+trial and error. And that’s what Mining <em>is</em> – lots of hashing (using lots of your computer’s processing power) and hoping to get lucky.</p>
+<p>But if you are lucky enough to find a successful hash result, the
+transactions in your memory pool get added to the blockchain, and every
+other node on the network adds your block of transactions to their
+blockchain.</p>
+<p>You’ll also receive a 25BTC reward for your effort, as well as
+picking up any fees that were tacked on to the transactions that you
+just added to the blockchain.</p>
+<p><a target='_blank' href='../images/08.04-node-pool-string-nonce-success-reward.png'><img class='clImageThumb' src='../images/08.04-node-pool-string-nonce-success-reward.png'></a><br><br></p>
+<p class="note text">
+The “certain number of zeros” comes from the difficulty.
+ This is set by the network and changes based on the volume of miners –
+the more people mining, the greater the difficulty and the more zeros
+are needed at the start (which makes it harder to find a winning
+result).
+</p>
+<p class="note link">
+This is a slightly simplified version of how blocks are added to the blockchain. For a bit more detail, check out Blocks.
+</p>
+<h2>Why is Mining necessary?</h2>
+<p>Good question. Why not add transactions directly to the blockchain?</p>
+<p class="note important">
+Because mining allows the entire Bitcoin Network to agree on which transactions get “archived”, and this is how you <strong>prevent fraud</strong> in a digital currency.
+</p>
+<h3>Go on…</h3>
+<p>When you make a bitcoin transaction, nodes on the network do not hear
+ about it instantly. Instead, transactions travel across the bitcoin
+network by being passed from one node to the next.</p>
+
+<a target='_blank' href='../images/08.05-network-transaction-propagation.png'><img class='clImageThumb' src='../images/08.05-network-transaction-propagation.png'></a><br><br>
+<p class='clFigcaption'>A fun word for describing the way transactions travel across the network is <em>propagation</em>.</p>
+
+
+<p>However, it’s actually possible to make <em>another</em> transaction using those <em>same</em>
+ bitcoins and insert that transaction in to the network too. For
+example, you could buy a beer with some bitcoins, then quickly attempt
+to buy a slice of pizza with those same bitcoins too.</p>
+<p>In other words, some good ol’ <strong>fraud</strong>.</p>
+
+<a target='_blank' href='../images/08.06-network-transaction-propagation-pizza.png'><img class='clImageThumb' src='../images/08.06-network-transaction-propagation-pizza.png'></a><br><br>
+<p class='clFigcaption'>Some
+ nodes would get the pizza transaction first (and ignore the beer
+transaction), whereas others would get the beer transaction first (and
+ignore the pizza transaction).</p>
+
+
+<p>Yet even though you make the pizza transaction <em>after</em> the
+beer transaction, due to the way transactions travel across the Bitcoin
+Network, the network would be in a disagreement about whether you should
+ get the beer or the pizza.</p>
+<h3>So how does the network decide which transaction to go with?</h3>
+<p>Mining, of course.</p>
+<p class="note important">
+If a node on the network completes the challenge, then it’s the transactions in <em>their memory pool</em> that get added to the blockchain.
+</p>
+
+<a target='_blank' href='../images/08.07-network-transaction-resolution.png'><img class='clImageThumb' src='../images/08.07-network-transaction-resolution.png'></a><br><br>
+<p class='clFigcaption'>If
+ a node with the pizza transaction successfully mines a block, then
+that’s the transaction that gets added to the blockchain, and the beer
+transaction evaporates from the network.</p>
+
+
+It seems like a little unorthodox way to select transactions, I know,
+but this is the solution the bitcoin network uses to reach a <em>consensus</em> when dealing with conflicting information.
+<p></p>
+<p class="note text">
+On the plus side, it only takes about 10 minutes for each new block of
+transactions to be added to the blockchain, so you only need to wait 10
+minutes for a confirmation that bitcoins have “arrived” at a new address
+ (and haven’t been sent to an alternative address).
+</p>
+<h3>Another benefit of Mining.</h3>
+<p class="note important">
+If you want to try and control the blocks (i.e.&nbsp;transactions) that
+get added to the blockchain, you have to compete to solve block puzzles
+with every other mining node on the bitcoin network.
+</p>
+<p>In other words, you need to have a computer with enough processing
+power that is able to out-work the combined processing power of every
+other bitcoin miner.</p>
+<p>Which is entirely possible – you just need to spend a few billion on
+hardware and you’re good to go (although this figure increases with
+every new miner who joins the network).</p>
+<h2>How do I start mining?</h2>
+<p>Fancy a crack at that 25BTC reward eh?</p>
+<p class="note important">
+To start mining, you flick a switch in the bitcoin client.
+</p>
+<p>However, due to the fact that trying to mine bitcoins using the CPU
+on your laptop is horribly inefficient, the “mine” switch has been taken
+ out of the software interface.</p>
+<p>But not worry, because the functionality is still there… you just have to enter a command instead:</p>
+<aside>
+<p>Go to: <code>Help &gt; Debug Window &gt; Console</code></p>
+<p>And enter this command:</p>
+<pre><code>setgenerate true</code></pre>
+<a target='_blank' href='../images/08.setgenerate-true.jpg'><img class='clImageThumb' src='../images/08.setgenerate-true.jpg'></a><br><br>
+</aside>
+<p>This is the command to “turn mining <em>on</em>”. Your client will now <em>generate blocks (of transactions)</em> from the transactions in your memory pool and start hashing them.</p>
+<p>You will know it’s working because your processor will start whizzing
+ as it hashes away at the blocks it generates to try and get a result
+that works.</p>
+<p>It probably won’t solve a block (it would be a miracle), but it’s fun to give it a shot.</p>
+<aside>
+<p>To turn mining off:</p>
+<pre><code>setgenerate false</code></pre>
+</aside>
+
+</div>
+</div>
+</body>
+</html>

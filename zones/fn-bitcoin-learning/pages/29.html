@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, user-scalable=no'>
+  <title>Bitcoin Learning</title>
+  <link rel='icon' type='image/x-icon' href='../../../favicon.ico?v=2'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../images/favicons/favicon-032.png?v=2'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../images/favicons/favicon-128.png?v=2'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../images/favicons/favicon-180.png?v=2'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../images/favicons/favicon-192.png?v=2'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../images/favicons/favicon-512.png?v=2'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../styles/commons.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../styles/book.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../scripts/commons.js'></script>
+  <script type='text/javascript' src='../../../scripts/book.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../index.html'><span class='clNavHome'></span></a>
+    <a href='./28.html'><span class='clNavLeft'><span></a>
+    <a href='../index.html'><span class='clNavUp'><span></a>
+    <a href='./30.html'><span class='clNavRight'><span></a>
+  </div>
+</div>
+
+<div id='idContent'>
+
+<h1>29.blk.dat</h1>
+<p class="subheading">Raw blockchain data files.</p>
+
+<p>The <strong>blk.dat</strong> files in <code>~/.bitcoin/blocks/</code> contain raw block data received by a <em>bitcoin core</em> node.</p>
+<p>These blk.dat files basically store “the blockchain”.</p>
+<h2>How do they work?</h2>
+<p>Every block that your node receives gets appended to a blk.dat file.</p>
+<p>Also, instead of the entire blockchain being stored in one massive file, they are split in to multiple blk*.dat files.</p>
+<dl>
+<dt><code>~/.bitcoin/blocks</code></dt>
+<dd><code>blk00000.dat</code>
+</dd>
+<dd><code>blk00001.dat</code>
+</dd>
+<dd><code>blk00002.dat</code>
+</dd>
+<dd>…
+</dd>
+</dl>
+<p>Your node first adds blocks to <code>blk00000.dat</code>, then when it fills up it moves on to <code>blk00001.dat</code>, then <code>blk00002.dat</code> …and so on.</p>
+<h2>Example</h2>
+<p>The data in blk.dat files is stored in <strong>binary</strong>, and each new block gets appended to the end of the file.</p>
+<p>We can look at the <strong>genesis block</strong> by reading the first <em>293 bytes</em> of <code>blk00000.dat</code>:</p>
+<pre class="blkdat wrap">
+<span class="magic-bytes">f9beb4d9</span><span class="size">1d010000</span><span class="blockheader">0100000000000000000000000000000000000000000000000000000000000000000000003ba3edfd7a7b12b27ac72c3e67768f617fc81bc3888a51323a9fb8aa4b1e5e4a29ab5f49ffff001d1dac2b7c</span><span class="txcount">01</span><span class="transactions">01000000010000000000000000000000000000000000000000000000000000000000000000ffffffff4d04ffff001d0104455468652054696d65732030332f4a616e2f32303039204368616e63656c6c6f72206f6e206272696e6b206f66207365636f6e64206261696c6f757420666f722062616e6b73ffffffff0100f2052a01000000434104678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5fac00000000</span>
+</pre>
+<p><small>(See the od command below for getting hexadecimal data from a binary file.)</small></p>
+<h3>Structure</h3>
+<p>The data above can be split in to five pieces:</p>
+<p><a target='_blank' href='../images/29.blkdat-schema.svg'><img class='clImageThumb' src='../images/29.blkdat-schema.svg'></a><br><br></p>
+<ul>
+<li>The <code>magic bytes</code> and <code>size</code> allow you to figure out where the data for each block starts and ends.</li>
+<li>The <code>block header</code>.</li>
+<li>The <code>tx count</code> <small>(variable integer)</small>, followed by the <code>transaction data</code> for each one.</li>
+</ul>
+<h4>Data</h4>
+<pre><code>[ magic bytes ][    size     ][        block header        ][  tx count  ][          transaction data          ]
+ &lt;- 4 bytes -&gt;  &lt;- 4 bytes -&gt;  &lt;-        80 bytes        -&gt;  &lt;- varint -&gt;  &lt;-            remainder           -&gt;</code></pre>
+<div class="note text">
+<p>The <code>size</code> field is what allowed me to figure out that I needed to read <em>293 bytes</em> to get the whole block.</p>
+<p>The size is given as <code>1d010000</code>, so get this in human format:</p>
+<ol type="1">
+<li>Swap the endianness to get <code>0000011d</code></li>
+<li>Convert to decimal to get <code>285</code></li>
+</ol>
+<p>So in addition to the initial 8 bytes for the <code>magic-bytes</code> + <code>size</code>, I know the size of the upcoming block data is going to be <strong>285 bytes</strong>.</p>
+</div>
+<h2>Notes</h2>
+<h3>1. Blocks are not downloaded in order.</h3>
+<p>If you are parsing the blk.dat files, be aware that blocks are not going to be in order. For example, you may encounter blocks in this order as you run through the file:</p>
+<pre>
+A B C E F <strong>D</strong>
+</pre>
+<div class="note text">
+<p>This is because your bitcoin node will download blocks in parallel to download the blockchain as quickly as possible. Your node will download blocks further ahead of the current one as it goes, instead of waiting to receive each block in order.</p>
+<p>The maximum distance ahead your node will fetch from (or the “maximum out-of-orderness”) is controlled by <code class="bitcoinsrc">BLOCK_DOWNLOAD_WINDOW</code> in the bitcoin source code.</p>
+</div>
+<h3>2. The maximum blk.dat file size is 128MiB <small>(134,217,728 bytes)</small></h3>
+<p>This limit is set by <code class="bitcoinsrc">MAX_BLOCKFILE_SIZE</code></p>
+<h2>Linux Tools</h2>
+<p>As mentioned, the data inside a blk.dat file is <em>binary</em>, so you’re probably not getting to see much sense if you open one up in a text editor. But no matter, because binary data can be easily converted to hexadecimal, and there are two commands for the job:</p>
+<h3>1. <code>od</code></h3>
+<p>This is a simple one. It dumps out the contents of files in your format of choice.</p>
+<pre><code>od -x --endian=big -N 293 -An blk00000.dat</code></pre>
+<ul>
+<li><code>-x</code> &lt;- show hexadecimal</li>
+<li><code>--endian=big</code> &lt;- display bytes in big endian</li>
+<li><code>-N 293</code> &lt;- number of bytes to read</li>
+<li><code>-An</code> &lt;- do not show file offset</li>
+</ul>
+<p class="note text">
+“od” stands for <strong>o</strong>ctal <strong>d</strong>ump, but you dump out data in formats other than octal.
+</p>
+<h3>2. <code>hexdump</code></h3>
+<p>This is similar to od, but it also gives you the option of displaying ascii text from the data (which is handy for looking at messages contained inside transaction data).</p>
+<pre><code>$ hexdump -C -s 8 -n 285 blk00000.dat
+
+00000008  01 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|
+00000018  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|
+00000028  00 00 00 00 3b a3 ed fd  7a 7b 12 b2 7a c7 2c 3e  |....;...z{..z.,&gt;|
+00000038  67 76 8f 61 7f c8 1b c3  88 8a 51 32 3a 9f b8 aa  |gv.a......Q2:...|
+00000048  4b 1e 5e 4a 29 ab 5f 49  ff ff 00 1d 1d ac 2b 7c  |K.^J}._I......+||
+00000058  01 01 00 00 00 01 00 00  00 00 00 00 00 00 00 00  |................|
+00000068  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|
+00000078  00 00 00 00 00 00 ff ff  ff ff 4d 04 ff ff 00 1d  |..........M.....|
+00000088  01 04 45 54 68 65 20 54  69 6d 65 73 20 30 33 2f  |..EThe Times 03/|
+00000098  4a 61 6e 2f 32 30 30 39  20 43 68 61 6e 63 65 6c  |Jan/2009 Chancel|
+000000a8  6c 6f 72 20 6f 6e 20 62  72 69 6e 6b 20 6f 66 20  |lor on brink of |
+000000b8  73 65 63 6f 6e 64 20 62  61 69 6c 6f 75 74 20 66  |second bailout f|
+000000c8  6f 72 20 62 61 6e 6b 73  ff ff ff ff 01 00 f2 05  |or banks........|
+000000d8  2a 01 00 00 00 43 41 04  67 8a fd b0 fe 55 48 27  |*....CA.g....UH&#39;|
+000000e8  19 67 f1 a6 71 30 b7 10  5c d6 a8 28 e0 39 09 a6  |.g..q0..\..(.9..|
+000000f8  79 62 e0 ea 1f 61 de b6  49 f6 bc 3f 4c ef 38 c4  |yb...a..I..?L.8.|
+00000108  f3 55 04 e5 1e c1 12 de  5c 38 4d f7 ba 0b 8d 57  |.U......\8M....W|
+00000118  8a 4c 70 2b 6b f1 1d 5f  ac 00 00 00 00           |.Lp+k.._.....|)
+0000125</code></pre>
+<ul>
+<li><code>-C</code> &lt;- display data in the same byte-order that is used in bitcoin, and also ascii text</li>
+<li><code>-s</code> &lt;- start point (offset in bytes)</li>
+<li><code>-n</code> &lt;- number of bytes to read</li>
+</ul>
+<div class="note tip">
+<p><strong>Show hexadecimal data only.</strong></p>
+<p>You can chain some commands together so that you only get raw hexadecimal data output:</p>
+<pre><code>hexdump -C -s 8 -n 285 blk00000.dat | cut -c 11-58 | tr &#39;\n&#39; &#39; &#39; | tr -d &#39; &#39;</code></pre>
+<ul>
+<li><code>cut -c 11-58</code> &lt;- cuts out anything outside the columns from characters 11 to 58 (on each line)</li>
+<li><code>tr '\n' ' '</code> &lt;- translate new lines in to spaces</li>
+<li><code>tr -d ' '</code> &lt;- deletes all spaces</li>
+</ul>
+</div>
+
+</div>
+</div>
+</body>
+</html>

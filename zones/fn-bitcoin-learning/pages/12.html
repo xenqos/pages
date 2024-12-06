@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, user-scalable=no'>
+  <title>Bitcoin Learning</title>
+  <link rel='icon' type='image/x-icon' href='../../../favicon.ico?v=2'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../images/favicons/favicon-032.png?v=2'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../images/favicons/favicon-128.png?v=2'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../images/favicons/favicon-180.png?v=2'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../images/favicons/favicon-192.png?v=2'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../images/favicons/favicon-512.png?v=2'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../styles/commons.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../styles/book.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../scripts/commons.js'></script>
+  <script type='text/javascript' src='../../../scripts/book.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../index.html'><span class='clNavHome'></span></a>
+    <a href='./11.html'><span class='clNavLeft'><span></a>
+    <a href='../index.html'><span class='clNavUp'><span></a>
+    <a href='./13.html'><span class='clNavRight'><span></a>
+  </div>
+</div>
+
+<div id='idContent'>
+
+<h1>12.Transactions</h1>
+<p class="subheading">Selecting batches of bitcoins and creating new ones from them.</p>
+
+<h2>What is a bitcoin transaction?</h2>
+<p class="note important">
+A bitcoin transaction is a bunch of data.
+</p>
+<p>This data contains information about the <strong>amount</strong> being sent, the account it is being sent <strong>from</strong>, and the account it is being sent <strong>to</strong>.</p>
+<p><a target='_blank' href='../images/12.01-transaction-table.png'><img class='clImageThumb' src='../images/12.01-transaction-table.png'></a><br><br></p>
+<p>This is basic information, so it can be easily represented in a single line of data:</p>
+<p><a target='_blank' href='../images/12.01-transaction-table-data.png'><img class='clImageThumb' src='../images/12.01-transaction-table-data.png'></a><br><br></p>
+<p>And when you “make a transaction”, you just send this <span class="term">transaction data</span> in to the bitcoin network.</p>
+<p><a target='_blank' href='../images/12.01-transaction-table-data-network.png'><img class='clImageThumb' src='../images/12.01-transaction-table-data-network.png'></a><br><br></p>
+<p>Eventually one of the nodes on the network will mine your transaction in to a block, and this block (with your transaction in it) will be added to the file of confirmed transactions (the blockchain).</p>
+<p><a target='_blank' href='../images/12.01-transaction-table-data-network-mined.png'><img class='clImageThumb' src='../images/12.01-transaction-table-data-network-mined.png'></a><br><br></p>
+<p>And that’s all a bitcoin transaction is – feeding a simple line of
+data in to the bitcoin network and waiting for it to be mined in to the blockchain.</p>
+<h2>How does a bitcoin transaction work?</h2>
+<p>A bitcoin <span class="term">address</span> is like an account number that holds bitcoins.</p>
+<p>But when you make a transaction, it’s not like taking an exact amount of coins out of a pot and moving them in to another.</p>
+<p><a target='_blank' href='../images/12.02-pot.png'><img class='clImageThumb' src='../images/12.02-pot.png'></a><br><br></p>
+<p>Instead, an address keeps track of each individual transaction it has received:</p>
+<p><a target='_blank' href='../images/12.02-address1.png'><img class='clImageThumb' src='../images/12.02-address1.png'></a><br><br></p>
+<p>So when you want to send bitcoins to someone else, you grab <em>whole amounts</em> that you have already received, and use them to send a <em>new amount</em> to a new address:</p>
+<p><a target='_blank' href='../images/12.02-address1-address2.png'><img class='clImageThumb' src='../images/12.02-address1-address2.png'></a><br><br></p>
+<p>And when that someone else wants to send bitcoins to another person,
+they will use up the whole amounts they have received in the same way:</p>
+<p><a target='_blank' href='../images/12.02-address1-address2-address3.png'><img class='clImageThumb' src='../images/12.02-address1-address2-address3.png'></a><br><br></p>
+<p>So in effect you receive bitcoins in <em>batches</em>, and you use those batches to create new batches to send to other people.</p>
+<p>That’s how transactions work.</p>
+<h3>Hang on a minute…</h3>
+<p>“What if the total of the batches adds up to more than I want to send?”</p>
+<p>Good question sir. In this instance (which it often is), you just add another <em><span class="term">output</span></em> to the transaction and send the difference back to yourself:</p>
+<p><a target='_blank' href='../images/12.02-address1-address2-change.png'><img class='clImageThumb' src='../images/12.02-address1-address2-change.png'></a><br><br></p>
+<p>This may seem awkward at first, I know, but it’s a precise way of doing it from a programming perspective, so get used to it.</p>
+<p>But all in all…</p>
+<h4>Summary:</h4>
+<ol type="1">
+<li>You have a bitcoin address. Bitcoins arrive at this address in batches, called <span class="term">outputs</span>.</li>
+<li>A bitcoin transaction is the process of using these outputs (as
+inputs in the transaction) to create new outputs that belong to someone
+else’s address.</li>
+<li>All of this can be represented by a single line of data.</li>
+</ol>
+<p><a target='_blank' href='../images/12.02-address1-address2-change-data.png'><img class='clImageThumb' src='../images/12.02-address1-address2-change-data.png'></a><br><br></p>
+<p class="note link">
+For more on how this system of outputs works, check out outputs.
+</p>
+<h2>What prevents someone else from spending my bitcoins?</h2>
+<p>Or in other words…</p>
+<p>“If making a transaction is simply a case of feeding a line of data
+in to the bitcoin network, why can’t someone construct a transaction
+that includes <em>my address</em> and uses it to send bitcoins to <em>their address</em>?”</p>
+<p><strong>Answer:</strong> Because each of the transaction outputs has a lock…</p>
+<p><a target='_blank' href='../images/12.03-output-locks.png'><img class='clImageThumb' src='../images/12.03-output-locks.png'></a><br><br></p>
+<p>And if you create a transaction without first unlocking these outputs, nodes on the bitcoin network will reject the transaction.</p>
+<p><a target='_blank' href='../images/12.03-output-locks-rejected.png'><img class='clImageThumb' src='../images/12.03-output-locks-rejected.png'></a><br><br></p>
+<p>But fortunately for you, your bitcoin address comes with a <span class="term">private key</span>.</p>
+<p><a target='_blank' href='../images/12.03-address-key.png'><img class='clImageThumb' src='../images/12.03-address-key.png'></a><br><br></p>
+<p>So if you want to send bitcoins somewhere, you use this private key to <em>unlock</em> the outputs located at your address.</p>
+<p><a target='_blank' href='../images/12.03-address-key-unlock.png'><img class='clImageThumb' src='../images/12.03-address-key-unlock.png'></a><br><br></p>
+<p>After unlocking all of the outputs you want to use, the transaction
+will be accepted and propagated by nodes on the bitcoin network.</p>
+<p><a target='_blank' href='../images/12.03-output-locks-accepted.png'><img class='clImageThumb' src='../images/12.03-output-locks-accepted.png'></a><br><br></p>
+<p>And that’s how bitcoin transactions work.</p>
+
+</div>
+</div>
+</body>
+</html>

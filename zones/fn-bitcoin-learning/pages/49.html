@@ -1,0 +1,219 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, user-scalable=no'>
+  <title>Bitcoin Learning</title>
+  <link rel='icon' type='image/x-icon' href='../../../favicon.ico?v=2'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../images/favicons/favicon-032.png?v=2'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../images/favicons/favicon-128.png?v=2'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../images/favicons/favicon-180.png?v=2'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../images/favicons/favicon-192.png?v=2'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../images/favicons/favicon-512.png?v=2'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../styles/commons.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../styles/book.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../scripts/commons.js'></script>
+  <script type='text/javascript' src='../../../scripts/book.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../index.html'><span class='clNavHome'></span></a>
+    <a href='./48.html'><span class='clNavLeft'><span></a>
+    <a href='../index.html'><span class='clNavUp'><span></a>
+    <a href='./50.html'><span class='clNavRight'><span></a>
+  </div>
+</div>
+
+<div id='idContent'>
+
+<h1>49.P2SH</h1>
+<p class="subheading">Pay To Script Hash</p>
+
+<a target='_blank' href='../images/49.p2sh.png'><img class='clImageThumb' src='../images/49.p2sh.png'></a><br><br>
+
+<p><abbr title="Pay To Script Hash">P2SH</abbr> was introduced as a standard script in <strong>April 2012</strong>. It allows you to <em>lock bitcoins to the hash of a script</em>, and you then provide that original script when you come unlock those bitcoins.</p>
+<p>It basically allows you to <strong>create your own custom “redeem scripts”, but still be able to share them easily with other people</strong>.</p>
+
+
+<p class="note bip">
+<strong>BIP 16</strong>: Pay to Script Hash (<em>03 January 2012</em>)
+</p>
+<h2>How does P2SH work?</h2>
+<p>The locking script contains the <em>hash</em> of another locking script (the “<code class="scripthash">script hash</code>”), surrounded by the <code class="opcode">HASH160</code> and <code class="opcode">EQUAL</code> opcodes:</p>
+
+<div class='clOverflow'>
+<table class="script">
+<tr>
+<th><a target='_blank' href='../images/49.lock.png'><img class='clImageThumb' src='../images/49.lock.png'></a><br><br> scriptPubKey</th>
+<td class="hex hasaddress" data-address="3CK4fEwbMP7heJarmU4eqA3sMbVJyEnU3V">a914748284390f9e263a4b766a75d0633c50426eb87587</td>
+<td class="opcodes hasaddress" data-address="3CK4fEwbMP7heJarmU4eqA3sMbVJyEnU3V"><div class="inline"><code class="opcode">OP_HASH160</code> <code class="scripthash">748284390f9e263a4b766a75d0633c50426eb875</code> <code class="opcode">OP_EQUAL</code></div></td>
+<td class="type"><abbr title="Pay To Script Hash">P2SH</abbr></td>
+</tr>
+</table>
+</div>
+
+<p>The unlocking script then contains your original custom locking script (the “<code class="redeemscript">redeem script</code>”), preceded by the data/opcodes needed to unlock it:</p>
+
+<div class='clOverflow'>
+<table class="script">
+<tr>
+<th><a target='_blank' href='../images/49.key.png'><img class='clImageThumb' src='../images/49.key.png'></a><br><br> scriptSig</th>
+<td class="hex">00493046022100a07b2821f96658c938fa9c68950af0e69f3b2ce5f8258b3a6ad254d4bc73e11e022100e82fab8df3f7e7a28e91b3609f91e8ebf663af3a4dc2fd2abd954301a5da67e701475121022afc20bf379bc96a2f4e9e63ffceb8652b2b6a097f63fbee6ecec2a49a48010e2103a767c7221e9f15f870f1ad9311f5ab937d79fcaeee15bb2c722bca515581b4c052ae</td>
+<td class="opcodes"><div class="inline"><code class="opcode">OP_0</code> <code class="signature">3046022100a07b2821f96658c938fa9c68950af0e69f3b2ce5f8258b3a6ad254d4bc73e11e022100e82fab8df3f7e7a28e91b3609f91e8ebf663af3a4dc2fd2abd954301a5da67e701</code> <code class="redeemscript" data-script="&lt;code class=&quot;opcode&quot;&gt;OP_1&lt;/code&gt; &lt;code class=&quot;publickey&quot;&gt;022afc20bf379bc96a2f4e9e63ffceb8652b2b6a097f63fbee6ecec2a49a48010e&lt;/code&gt; &lt;code class=&quot;publickey&quot;&gt;03a767c7221e9f15f870f1ad9311f5ab937d79fcaeee15bb2c722bca515581b4c0&lt;/code&gt; &lt;code class=&quot;opcode&quot;&gt;OP_2&lt;/code&gt; &lt;code class=&quot;opcode&quot;&gt;OP_CHECKMULTISIG&lt;/code&gt;">5121022afc20bf379bc96a2f4e9e63ffceb8652b2b6a097f63fbee6ecec2a49a48010e2103a767c7221e9f15f870f1ad9311f5ab937d79fcaeee15bb2c722bca515581b4c052ae</code></div></td>
+<td class="nothing"></td>
+</tr>
+</table>
+</div>
+
+<p>So in the unlocking script above, the <code class="redeemscript">redeem script</code> is a P2MS locking script itself, and the preceding signature is what’s needed to unlock it.</p>
+<h3>Execution.</h3>
+<p class="note caution">
+<strong>Special Form</strong>: The P2SH locking script pattern is recognized as a “special” form, so it gets executed slightly differently to “normal” scripts.
+</p>
+<p>A P2SH script is executed in two parts:</p>
+<ol type="1">
+<li><strong>Standard Execution</strong> - The <code class="redeemscript">redeem script</code> is hashed, and is then checked that it is equal the <code class="scripthash">script hash</code> in the locking script.</li>
+<li><span class="orange"><strong>Redeem Script Execution</strong></span> - This is the special part. The <code class="redeemscript">redeem script</code> is <em>deserialized</em> and ran as if it were a locking script.</li>
+</ol>
+<h4>1. Standard Execution</h4>
+<p>First of all, the entire script is executed as normal:</p>
+
+<a target='_blank' href='../images/49.how-standard.png'><img class='clImageThumb' src='../images/49.how-standard.png'></a><br><br>
+<p class='clFigcaption'>The redeem script gets hashed to make sure it matches the hash in the scriptPubKey.</p>
+
+
+<p>Normally, this is where the script execution would end. However, because of the changes made to bitcoin thanks to BIP 16, we move on to the second step of P2SH script execution…</p>
+<h4 class="orange">2. Redeem Script Execution</h4>
+
+<p>The second part of the script execution is only concerned with the original scriptSig. The <code class="redeemscript">redeem script</code> (which is a data push) is <strong>deserialized</strong> in to its component parts (of opcodes and data).</p>
+<p>You could think of the redeem script as becoming the new locking script:</p>
+<p><a target='_blank' href='../images/49.deserialize.gif'><img class='clImageThumb' src='../images/49.deserialize.gif'></a><br><br></p>
+
+<p>Anyway, after the redeem script has been deserialized, the whole script is run like any standard script. Seeing as the <code class="redeemscript">redeem script</code> in the example above contains a P2MS, here’s how the whole script would run:</p>
+
+<a target='_blank' href='../images/49.p2sh.gif'><img class='clImageThumb' src='../images/49.p2sh.gif'></a><br><br>
+<p class='clFigcaption'>During execution, the stack containing the scriptPubKey actually gets copied before running the first step.</p>
+
+
+<h2>Why do we have P2SH?</h2>
+<p>Because it makes it <strong>easier to share complex locking scripts</strong> with other people.</p>
+<p>Before P2SH, if you wanted a complex locking script (e.g. P2MS) placed on your bitcoins, you would have to give the person “sending” you those bitcoins the <strong>entire locking script</strong>:</p>
+<p><a target='_blank' href='../images/49.why-script.png'><img class='clImageThumb' src='../images/49.why-script.png'></a><br><br></p>
+<p>But with P2SH, instead of giving someone an entire locking script, you can essentially just give them a <strong>hash of your script</strong> instead:</p>
+
+<a target='_blank' href='../images/49.why-script-hash.png'><img class='clImageThumb' src='../images/49.why-script-hash.png'></a><br><br>
+<p class='clFigcaption'>You provide your original script when you unlock the bitcoins later on.</p>
+
+
+<p>As a result, the sender is no longer burdened with the size (or the details) of your locking script.</p>
+<h2>What are the benefits of P2SH?</h2>
+<p>There are a few benefits that come with P2SH:</p>
+<h3>1. Cheaper transaction costs for the sender.</h3>
+
+
+<p>If you want a custom locking script on your bitcoins, the person sending you the bitcoins has to put this script in to the transaction they create:</p>
+
+<a target='_blank' href='../images/49.benefits-transaction-size-p2ms.png'><img class='clImageThumb' src='../images/49.benefits-transaction-size-p2ms.png'></a><br><br>
+<p class='clFigcaption'>Larger locking scripts increase the size of the transaction data, so the sender will have to pay more in transaction fees to accommodate your script.</p>
+
+
+
+<p>However, with P2SH they can create a lock using the hash of your script instead, which is much smaller than the full script:</p>
+<p><a target='_blank' href='../images/49.benefits-transaction-size-p2sh.png'><img class='clImageThumb' src='../images/49.benefits-transaction-size-p2sh.png'></a><br><br></p>
+<p>As a result, the <strong>burden of large locking scripts is no longer on the sender</strong> (and is therefore moved to the <em>receiver</em> instead). This helps to avoid a situation where a sender would be complacent about “sending” bitcoins to a locking script that isn’t one of the simplest and cheapest (e.g. P2PKH).</p>
+
+
+<h3>2. We can use addresses for P2SH locking scripts.</h3>
+
+
+<p>Due to the fact that every P2SH locking script has a uniform structure (thanks to the fixed-size hash, we can easily have a standard <code class="address">address</code> format for it (similar to the P2PKH address format).</p>
+
+<a target='_blank' href='../images/49.encode-p2sh.png'><img class='clImageThumb' src='../images/49.encode-p2sh.png'></a><br><br>
+<p class='clFigcaption'>P2SH addresses start with a <code class="address"><strong>3</strong></code> (thanks to the <code class="numbers">0x05</code> prefix before converting to base58).</p>
+
+
+<p>So instead of having to pass the actual P2SH locking script around, we can shorten it (again) and make it easier to share by converting it to an address.</p>
+
+<a target='_blank' href='../images/49.benefits-address-share.png'><img class='clImageThumb' src='../images/49.benefits-address-share.png'></a><br><br>
+<p class='clFigcaption'>Remember that addresses include a checksum and use base58 characters, so they’re better for sharing than the raw <code class="scripthash">script hash</code>.</p>
+
+
+
+
+<h3>3. P2SH has a little more privacy.</h3>
+
+
+<p>Seeing as a P2SH locking script just contains the hash of another locking script, it’s impossible to know what kind of locking script that hash came from by just looking at it:</p>
+
+<a target='_blank' href='../images/49.benefits-privacy-unknown-script.png'><img class='clImageThumb' src='../images/49.benefits-privacy-unknown-script.png'></a><br><br>
+<p class='clFigcaption'>The <code class="scripthash">script hash</code> could be the hash of any kind of script.</p>
+
+
+<p>As a result, nobody would know if an output “belongs” to one person’s public key, or if it belongs to multiple people.</p>
+<p><small>That’s until someone spends it and reveals the redeem script, of course.</small></p>
+
+
+<h3>4. A smaller UTXO set.</h3>
+
+
+<p>To make the bitcoin program itself run as fast as possible, all of the unspent outputs from transactions (UTXOs) are stored in RAM on your computer.</p>
+
+<a target='_blank' href='../images/49.benefits-utxo-ram.png'><img class='clImageThumb' src='../images/49.benefits-utxo-ram.png'></a><br><br>
+<p class='clFigcaption'>RAM gives you fast access to data, but holds less than your hard drive.</p>
+
+
+<p>These UTXOs also contain the locking scripts (scriptPubKeys), so by using smaller P2SH scripts instead of larger P2MS scripts, you save on the amount of RAM needed to hold the UTXO set.</p>
+<p>If you couldn’t fit the entire UTXO set in RAM, nodes would become slower at validating transactions.</p>
+
+
+<h2>Where can you find P2SH scripts?</h2>
+<p class="note tip">
+Look for the outputs with a <code class="address">3address</code>. You can tell what kind of lock it is (e.g. multisig) by looking at the contents of the <code class="redeemscript">redeem script</code> in the <strong>scriptSig</strong>.
+</p>
+<p>Here’s the first transaction with a P2SH output that has been unlocked: <sup>1</sup></p>
+<ul>
+<li><code class="txid">a0f1aaa2fb4582c89e0511df0374a5a2833bf95f7314f4a51b55b7b71e90ce0f</code> - 1-of-2 Multisig</li>
+</ul>
+<p>Here are some more examples of P2SH being used for multisig:</p>
+<ul>
+<li><code class="txid">40eee3ae1760e3a8532263678cdf64569e6ad06abc133af64f735e52562bccc8</code> - 1-of-1 Multisig</li>
+<li><code class="txid">450c309b70fb3f71b63b10ce60af17499bd21b1db39aa47b19bf22166ee67144</code> - 1-of-2 Multisig</li>
+<li><code class="txid">d3adb18d5e118bb856fbea4b1af936602454b44a98fc6c823aedc858b491fc13</code> - 2-of-3 Multisig</li>
+</ul>
+<p>Here are some examples of P2SH being used for custom (non-standard) <code class="redeemscript">redeem script</code>s:</p>
+<ul>
+<li><code class="txid">bd60553862497ea33fb98f4086308740ed1e5637d5740b36271f7fca2ce7d8f1</code></li>
+<li><code class="txid">7d46745463a28049cb93d2c964320912d9c296c1038cb24cc3716255c397a87f</code></li>
+<li><code class="txid">e901419693926c897f16e4f14e48f51489207b2a087435b8e82801c00c7ab121</code></li>
+<li><code class="txid">2c6c3a1319c3e42b4801dab62e3d3d59c51c3535b8dad20e9580650f114c7026</code> - Peter Todd SHA1 Hash Collision Script</li>
+</ul>
+<h2>What kind of scripts can you put in the redeem script?</h2>
+<p>You can put just about any custom locking script you want as the <code class="redeemscript">redeem script</code>.</p>
+<p>As of <code class="numbers">Bitcoin 0.10.0</code> you are no longer limited to using standard scripts only:</p>
+<blockquote>
+<p>The IsStandard() rules have been almost completely removed for P2SH redemption scripts, allowing applications to make use of any valid script type, such as “n-of-m OR y”, hash-locked oracle addresses, etc. While the Bitcoin protocol has always supported these types of script, actually using them on mainnet has been previously inconvenient as standard Bitcoin Core nodes wouldn’t relay them to miners, nor would most miners include them in blocks they mined. – <em>Bitcoin 0.10.0 Release Notes</em></p>
+</blockquote>
+<p>So if you want some fun with the various <code class="opcode">OPCODES</code>, the <code class="redeemscript">redeem script</code> of a P2SH is where you can have it.</p>
+<p class="note warning">
+Make sure that your non-standard script will end up leaving a <strong>single</strong> <code class="opcode">OP_1</code> left on the stack at the end of execution. <br><br>I created a script once that left <code class="opcode">OP_1</code> <code class="opcode">OP_1</code> <code class="opcode">OP_1</code> on the stack, and even thought the <em>top element</em> was <code class="opcode">OP_1</code>, I got an “<code>Extra items left on stack after execution</code>” error and the transaction wouldn’t be relayed.
+</p>
+<h2>Doesn’t P2SH take up more space in the blockchain overall?</h2>
+<p>Yes, you’re right.</p>
+<p>For example, a complete 2-of-3 multisig script using the simple <strong>P2MS</strong> pattern takes up <strong>253 bytes</strong> in the blockchain:</p>
+<p><a target='_blank' href='../images/49.size-p2ms.png'><img class='clImageThumb' src='../images/49.size-p2ms.png'></a><br><br></p>
+<p>On the other hand, a complete 2-of-3 multisig script using <strong>P2SH</strong> takes up <strong>278 bytes</strong> in the blockchain:</p>
+<p><a target='_blank' href='../images/49.size-p2sh.png'><img class='clImageThumb' src='../images/49.size-p2sh.png'></a><br><br></p>
+<p>So the extra step of locking bitcoins to the hash of a script adds an extra <strong>25 bytes</strong> to the overall script.</p>
+<p>However, there isn’t really any alternative for being able to create addresses for custom locking scripts, so the extra 25 bytes for this convenience is a reasonable price to pay.</p>
+<p><small>Not to mention the other benefits of P2SH.</small></p>
+
+
+</div>
+</div>
+</body>
+</html>

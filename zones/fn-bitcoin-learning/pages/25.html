@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, user-scalable=no'>
+  <title>Bitcoin Learning</title>
+  <link rel='icon' type='image/x-icon' href='../../../favicon.ico?v=2'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../images/favicons/favicon-032.png?v=2'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../images/favicons/favicon-128.png?v=2'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../images/favicons/favicon-180.png?v=2'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../images/favicons/favicon-192.png?v=2'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../images/favicons/favicon-512.png?v=2'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../styles/commons.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../styles/book.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../scripts/commons.js'></script>
+  <script type='text/javascript' src='../../../scripts/book.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../index.html'><span class='clNavHome'></span></a>
+    <a href='./24.html'><span class='clNavLeft'><span></a>
+    <a href='../index.html'><span class='clNavUp'><span></a>
+    <a href='./26.html'><span class='clNavRight'><span></a>
+  </div>
+</div>
+
+<div id='idContent'>
+
+<h1>25.Blockchain</h1>
+<p class="subheading">The file of bitcoin transactions.</p>
+
+<p><a target='_blank' href='../images/25.blockchain.png'><img class='clImageThumb' src='../images/25.blockchain.png'></a><br><br></p>
+<p>The blockchain is a file of transactions. It’s the most significant file that a bitcoin node maintains.</p>
+<p>It is called the “blockchain” because new transactions are added to the file in blocks, and these blocks are built on top of one another to create a <em>chain</em> of blocks. Hence, blockchain.</p>
+<p>But ultimately, the blockchain is <strong>permanent storage for bitcoin transactions</strong>.</p>
+<p><a target='_blank' href='../images/25.node.png'><img class='clImageThumb' src='../images/25.node.png'></a><br><br></p>
+<h2>How do you get a copy of the blockchain?</h2>
+<p><a target='_blank' href='../images/25.download.png'><img class='clImageThumb' src='../images/25.download.png'></a><br><br></p>
+<p>When you run bitcoin, your node will download blocks from other nodes on the network until you have an up-to-date copy of the blockchain.</p>
+<p>When nodes connect to each other, they tell each other the <em>height</em> of their chain (how many blocks they have) during the initial handshake. If another node has more blocks than you, your node will request these blocks from the other nodes until you have a full copy of the blockchain.</p>
+<p>As a result, nodes are constantly communicating with each other to replicate the blockchain across every computer on the network.</p>
+<p class="note tip">
+<strong>Tip:</strong> There is no single or definitive version of “the blockchain”. Every node keeps their own local copy of the blockchain, and the these can vary from computer to computer at any given time.
+</p>
+<p class="note text">
+<strong>Note:</strong> My node’s blockchain is currently <strong>436.37 GB</strong>, so it can take a while to download when you run bitcoin for the first time. This is referred to as the Initial Block Download (or IBD).
+</p>
+<h2>How are new blocks added to the blockchain?</h2>
+<p><a target='_blank' href='../images/25.mining.png'><img class='clImageThumb' src='../images/25.mining.png'></a><br><br></p>
+<p>New blocks of transactions must be mined before they can be added on to the blockchain.</p>
+<p>In short, the process of mining involves collecting transactions from the memory pool in to a candidate block, and then using <em>processing power</em> to produce a block hash that is below a specific target value. This means that any node on the network can mine a new block, but you need to <em>expend energy</em> to be able to do so.</p>
+<p>When a node (or “miner”) successfully mines a new block, they will share it with the other nodes on the network. When other nodes receive this new block, they will add it to their blockchain, and miners will start trying to mine a new block <em>on top</em> of it.</p>
+<p><a target='_blank' href='../images/25.mining-propagation.png'><img class='clImageThumb' src='../images/25.mining-propagation.png'></a><br><br></p>
+<p>As a result, miners are constantly working to extend the blockchain with brand new blocks of transactions.</p>
+<p class="note text">
+<strong>Note:</strong> Due to the <difficulty and processing power required to mine a block, new blocks are added to the blockchain once every <strong>10 minutes</strong> (on average).
+</p>
+<p class="note text">
+<strong>Note:</strong> A node doesn’t have to try and mine new blocks. Instead it can just keep a copy of the blockchain and relay new blocks to other nodes when it receives them.
+</p>
+<h2>Can two blocks be mined at the same time?</h2>
+<p><a target='_blank' href='../images/25.fork.png'><img class='clImageThumb' src='../images/25.fork.png'></a><br><br></p>
+<p>Yes, and this is perfectly normal.</p>
+<p>In this situation, nodes will consider the first block they receive as part of their blockchain, but also keep the second block they receive <em>just in case</em>. However, the second block to arrive (and the transactions inside it) will not be considered as part of their <strong>active</strong> blockchain.</p>
+<p>Consequently, nodes on the network will actually be in disagreement about which of these two blocks belongs at the top of the chain.</p>
+<p>This disagreement is resolved when the next block is mined. The next block will build on top of <em>one</em> of these blocks, creating a new longest chain of blocks, and as a rule <strong>nodes will always adopt the longest known chain of blocks</strong> as their active blockchain.</p>
+<p>As a result, some nodes will perform a chain reorganisation to move out blocks from an old active chain in favour of blocks that make up a new longer chain.</p>
+<p>Therefore, although there may be disagreements at any given time about which block(s) belong at the top of the blockchain, the mining of new blocks and the adoption of the longest chain means that nodes will always end up in agreement.</p>
+
+<a target='_blank' href='../images/25.fork-reorg.png'><img class='clImageThumb' src='../images/25.fork-reorg.png'></a><br><br>
+<p class='clFigcaption'>Nodes always adopt the longest chain of blocks as the accepted version of the blockchain.</p>
+
+
+<h2>Does this mean that blocks in the blockchain can be replaced?</h2>
+<p>Yes.</p>
+<p>Due to the fact that nodes always adopt the longest chain, you could always try and build a new longer chain of blocks to replace an existing one, and every node on the network will adopt it. In effect, this would allow you to “undo” or reverse a bitcoin transaction from the blockchain.</p>
+
+<a target='_blank' href='../images/25.longest-chain.png'><img class='clImageThumb' src='../images/25.longest-chain.png'></a><br><br>
+<p class='clFigcaption'>If you build a new longest chain of blocks other nodes will adopt it.</p>
+
+
+<p>However, the problem is that all miners are incentivised to always be building on to the longest known chain. This means that the combined processing power of miners on the network will be focused on building one single chain, which will be built faster than any chain you could build on your own.</p>
+
+<a target='_blank' href='../images/25.network-power.png'><img class='clImageThumb' src='../images/25.network-power.png'></a><br><br>
+<p class='clFigcaption'>Every other miner is working to extend the current longest chain.</p>
+
+
+<p>In other words, the combined processing power of the network working to build the blockchain helps to protect blocks (and transactions) that have already been mined on to the blockchain.</p>
+<p>So the only way you could perform an intentional chain reorganisation (to “undo” a transaction in an existing block) would be to have more processing power than every other miner combined so that you could out-mine the network and build a longer chain for everyone to adopt.</p>
+<p>This is referred to as a “51% Attack”.</p>
+<h2>Where is the blockchain?</h2>
+<p>The blockchain files can usually be found in the following locations:</p>
+<ul>
+<li><strong>Linux</strong>: <code>~/.bitcoin/blocks/</code></li>
+<li><strong>Mac</strong>: <code>~/Library/Application Support/Bitcoin/</code></li>
+<li><strong>Windows</strong>: <code>C:\Users\[username]\AppData\Roaming\Bitcoin\</code></li>
+</ul>
+<p class="note text">
+<strong>Note:</strong> The blockchain is split in to multiple files named <code>blk00000.dat</code>, <code>blk00001.dat</code>, <code>blk00002.dat</code>, and so on. This is because it’s generally easier to work with smaller files than it is to work with one giant file. <sup>1</sup>
+</p>
+<h2>Summary</h2>
+<p>The blockchain is permanent storage for bitcoin transactions. New transactions are added to the file in <em>blocks</em>, and these blocks are built on top of each other to create a <em>chain</em>.</p>
+<p>New blocks are added to the blockchain through <em>mining</em>, which involves the use of computer processing power. This means that it takes energy to mine a block, but any node on the network can work to try and add the next block on to the chain.</p>
+<p>When a new block is mined, it will be relayed across the network, which nodes will verify and add on to their chain. In this way the blockchain is a constantly growing ledger of transactions, which is distributed across multiple computers on the network.</p>
+<p>Nodes always adopt the longest chain of blocks as the active version of the blockchain, which resolves disagreements about which blocks belong at the top of the chain. This also protects blocks that are already in the blockchain, as it would require large amounts of energy to build a chain that replaces existing blocks in the chain.</p>
+<p>As a result, the blockchain is a regularly updated file of transactions. The system of mining blocks and adopting the longest chain <strong>allows multiple computers over a network to agree on the same set of blocks and transactions</strong> that are considered active, whilst also making it difficult for anyone to make historic changes to the blocks and transactions in the file.</p>
+
+<a target='_blank' href='../images/25.animation.png'><img class='clImageThumb' src='../images/25.animation.png'><br><br></a>
+
+</div>
+</div>
+</body>
+</html>

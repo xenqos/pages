@@ -1,0 +1,320 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, user-scalable=no'>
+  <title>Bitcoin Learning</title>
+  <link rel='icon' type='image/x-icon' href='../../../favicon.ico?v=2'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../images/favicons/favicon-032.png?v=2'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../images/favicons/favicon-128.png?v=2'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../images/favicons/favicon-180.png?v=2'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../images/favicons/favicon-192.png?v=2'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../images/favicons/favicon-512.png?v=2'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../styles/commons.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../styles/book.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../scripts/commons.js'></script>
+  <script type='text/javascript' src='../../../scripts/book.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../index.html'><span class='clNavHome'></span></a>
+    <a href='./61.html'><span class='clNavLeft'><span></a>
+    <a href='../index.html'><span class='clNavUp'><span></a>
+    <a href='./63.html'><span class='clNavRight'><span></a>
+  </div>
+</div>
+
+<div id='idContent'>
+
+<h1>62.Derivation Paths</h1>
+<p class="subheading">How HD wallets derive keys.</p>  <p class="bip inverse">BIP 44, BIP 49, BIP 84</p>
+
+<p>The cool thing about extended keys is that they can derive children, and these child keys can derive more children, and so on. This allows you to create a <strong>tree</strong> of extended keys, with each key having its own unique <strong>derivation path</strong> from the master key.</p>
+<p>You can derive keys in any way you want. But to help with compatibility <em>between wallets</em>, we have a set structure for how we derive keys for use in a hierarchical deterministic wallet.</p>
+<p>The most common derivation paths used are:</p>
+<ul>
+<li><strong>BIP 44</strong>: <code>m/44'/0'/0'</code> (for <code class="address">1addresses</code>)</li>
+<li><strong>BIP 49</strong>: <code>m/49'/0'/0'</code> (for <code class="address">3addresses</code>)</li>
+<li><strong>BIP 84</strong>: <code>m/84'/0'/0'</code> (for <code class="address">bc1addresses</code>)</li>
+</ul>
+
+<h2>1. Notation</h2>
+<p>First of all, we have a basic notation for describing the <strong>derivation path</strong> for a specific extended key. For example:</p>
+<pre><code>m/0/1/3&#39;</code></pre>
+<p><a target='_blank' href='../images/62.notation.png'><img class='clImageThumb' src='../images/62.notation.png'></a><br><br></p>
+<p>The slashes <code>/</code> indicate a new <em>level</em> in the tree (a new child). The numbers (e.g. <code>0</code>) indicate the <em>child number</em> from the parent.</p>
+<p>The only other thing you need to know about the notation is that a <code>'</code> or <code>h</code> indicates a hardened child <code class="extendedprivatekey">extended private key</code> (which means that the public keys it creates cannot be derived by the <code class="extendedpublickey">extended public key</code>):</p>
+<ul>
+<li><code>0</code> - <strong>Normal Child</strong> (index <code>0</code>)</li>
+<li><code>0'</code> - <strong>Hardened Child</strong> (index <code>2147483648</code>)</li>
+</ul>
+<p>This <code>'</code> just saves us having to write the full index numbers for hardened children. For example, <code>3'</code> means index <code>2147483651</code>.</p>
+<p class="note tip">
+<strong>Tip:</strong> You can derive up to <code>4294967296</code> children from a single extended key. The first half are for <em>normal</em> children, and the second half are for <em>hardened</em> children.
+</p>
+<p class="note text">
+<strong>Note:</strong> Deriving <strong><em>hardened</em></strong> children is the <strong>default</strong>. <em>Normal</em> children are only derived when it would be <em>useful</em> to have a corresponding extended public key for deriving the same public keys.
+</p>
+<h2>2. Wallet Structure</h2>
+<p>To help with consistency between wallets, <strong>BIP 44</strong> introduced the following structure:</p>
+<pre><code>m / purpose&#39; / coin_type&#39; / account&#39; / change / index</code></pre>
+
+<a target='_blank' href='../images/62.levels.png'><img class='clImageThumb' src='../images/62.levels.png'></a><br><br>
+<p class='clFigcaption'>The <em>levels</em> in the tree have a meaning.</p>
+
+
+
+<details>
+<summary>
+<code>m</code>: <strong>Master</strong>
+</summary>
+<p>The master key (created from a seed).</p>
+<details>
+<summary>
+<code>m/44'</code>: <strong>Purpose</strong> (hardened)
+</summary>
+<p>This specifies the upcoming wallet structure.</p>
+<p>There are three schemes currently being used by wallets:</p>
+<ul>
+<li><strong>BIP 44</strong></li>
+<li><strong>BIP 49</strong></li>
+<li><strong>BIP 84</strong></li>
+</ul>
+<p class="note tip">
+<strong>Tip:</strong> The number reflects the number of the <span data-tooltip="Bitcoin Improvement Proposal">BIP</span>. New schemes can use different BIP numbers.
+</p>
+<details>
+<summary>
+<code>m/44'/0'</code>: <strong>Coin Type</strong> (hardened)
+</summary>
+<p>The cryptocurrency the keys will be used for.</p>
+<p>Different cryptocurrencies can use the same <code class="privatekey">private keys</code> and <code class="publickey">public keys</code> derived from a seed. So instead of having separate seeds for different currencies (or using the same public keys on different chains), we can use the <em>same seed</em> with <em>different derivation paths</em> instead.</p>
+<pre class="light"><code>0&#39; = Bitcoin
+1&#39; = Bitcoin (Testnet)
+2&#39; = Litecoin
+3&#39; = Dogecoin
+...</code></pre>
+<p>Full list: https://github.com/satoshilabs/slips/blob/master/slip-0044.md</p>
+<p class="note tip">
+This is useful in hardware wallets, where you can have a single seed and use it for holding a variety of different coins.
+</p>
+<details>
+<summary>
+<code>m/44'/0'/0'</code>: <strong>Account</strong> (hardened)
+</summary>
+<p>This allows you to create separate accounts for funds. The default account is <code>0'</code>.</p>
+<p>For example, you can use the same seed yet still create separate “pots” for receiving payments. The coins in these separate accounts will never be mixed.</p>
+<p class="note tip">
+<strong>Tip:</strong> You could obviously create many different accounts at various indexes at this level. But to keep recovery simple, a wallet should create accounts in sequential order, and not create a new account if a previous one has not been used.
+</p>
+<details>
+<summary>
+<code>m/44'/0'/0'/0</code>: <strong>Change</strong>
+</summary>
+<p>The keys and addresses we use are separated in to “Receiving” and “Change”.</p>
+<ul>
+<li><strong>Receiving</strong> = <code>0</code> - Addresses that we will give out to people for receiving payments.</li>
+<li><strong>Change</strong> = <code>1</code> - Addresses we use for sending change back to ourselves when we make transactions.</li>
+</ul>
+<p>This means you will always be able to identify the coins that arrived from external payments.</p>
+<details>
+<summary>
+<code>m/44'/0'/0'/0/0</code>: <strong>Index</strong>
+</summary>
+<p>These are the extended keys that you use for their <code class="privatekey">private keys</code> and <code class="publickey">public keys</code> for actual usage in the wallet.</p>
+</details>
+</details>
+</details>
+</details>
+</details>
+</details>
+<p>So as you can see, the first few levels in the path are just used to structure the hierarchical deterministic wallet in a practical way.</p>
+<p>The actual keys used for addresses are in <strong>lowest level</strong> of the tree.</p>
+
+<h2>3. Derivation Paths</h2>
+<p>Here are some actual derivation paths used by wallets.</p>
+<h3>BIP 32: <code>m/0'/0/0</code> <em>(deprecated)</em></h3>
+
+
+<p>This is the original derivation path specification in BIP 32.</p>
+<p>It just used the first child for <strong>accounts</strong>, and the next two children below for separating <strong>external</strong> and <strong>internal</strong> addresses. The children of these are used for their actual <code class="privatekey">private keys</code> and <code class="publickey">public keys</code> to create <code class="address">addresses</code>.</p>
+<pre><code>m / account&#39; / external / index</code></pre>
+<p><a target='_blank' href='../images/62.bip32.png'><img class='clImageThumb' src='../images/62.bip32.png'></a><br><br></p>
+<p>This is a nice and simple derivation path, but it doesn’t allow for the option of creating alternative derivation path schemes.</p>
+<p>This is where BIP 44, BIP 49, and BIP 84 come in.</p>
+
+
+<h3>BIP 44: <code>m/44'/0'/0'/0/0</code></h3>
+
+
+<p>BIP 44 builds upon the original BIP 32 scheme to include a <strong>purpose</strong><sup>1</sup> (which is like a version number to identify the upcoming scheme), as well as a <strong>coin type</strong> so that the same seed can be used to generate keys for different cryptocurrencies.</p>
+<p>The <code class="publickey">public keys</code> are encoded to <code class="address">1addresses</code> (<span data-tooltip="Pay To Pubkey Hash">P2PKH</span>).</p>
+<p><a target='_blank' href='../images/62.bip44-p2pkh.png'><img class='clImageThumb' src='../images/62.bip44-p2pkh.png'></a><br><br></p>
+
+
+<h3>BIP 49: <code>m/49'/0'/0'/0/0</code></h3>
+
+
+<p>BIP 49 uses the same structure as BIP 44, but is used to indicate that the <code class="publickey">public keys</code> should be encoded in to <code class="address">3addresses</code> (<span data-tooltip="Pay To Witness Pubkey Hash (nested in Pay To Script Hash)">P2WPKH-P2SH</span>).</p>
+<p><a target='_blank' href='../images/62.bip49-p2wpkh-p2sh.png'><img class='clImageThumb' src='../images/62.bip49-p2wpkh-p2sh.png'></a><br><br></p>
+<section class="note text">
+<h4>BIP 49 Serialization</h4>
+<p>The extended keys in the BIP 49 derivation path use the version bytes <code>049d7878</code> “yprv” or <code>049d7cb2</code> “ypub” during serialization. This allows you to identify an extended key when it is part of the BIP 49 scheme.</p>
+<p>For example:</p>
+<pre class="address"><code>yprvABrGsX5C9jant45o1Au7iHH54A8GXQH9SGhK5vkYKPUBDYsFy6KNUWX24moUE6KxoCh2qtZ8UpLaDWQiqt4aPdvvgjszQ4VrbLpfp5patGg</code></pre>
+</section>
+
+
+<h3>BIP 84: <code>m/84'/0'/0'/0/0</code></h3>
+
+
+<p>BIP 84 uses the same structure as BIP 44, but is used to indicate that the <code class="publickey">public keys</code> should be encoded in to <code class="address">bc1addresses</code> (<span data-tooltip="Pay To Witness Pubkey Hash">P2WPKH</span>).</p>
+<p><a target='_blank' href='../images/62.bip84-p2wpkh.png'><img class='clImageThumb' src='../images/62.bip84-p2wpkh.png'></a><br><br></p>
+<section class="note text">
+<h4>BIP 84 Serialization</h4>
+<p>The extended keys in the BIP 84 derivation path use the version bytes <code>04b2430c</code> “zprv” or <code>04b24746</code> “zpub” during serialization. This allows you to identify an extended key when it is part of the BIP 84 scheme.</p>
+<p>For example:</p>
+<pre class="address"><code>zprvAWgYBBk7JR8GjMGuqXgjvNNaE8GiU2GeMPDXsKeRhPr4GegVDkUw6aBA5ym4DzytCqoqbN9gwUh86o2HZaUbBscXZ5aQyyKLs4tKCeThpsa</code></pre>
+</section>
+
+
+<h2>4. Example</h2>
+<p>The following takes a <em>seed</em> (mnemonic sentence or hex) and <em>derivation path</em>, and shows you the <code class="address">address</code> for the <code class="extendedprivatekey">private extended key</code> in that path (along with the next few children too).</p>
+<section class="note tryit">
+<h4>Try it! - Derivation Paths</h4>
+
+<form class="derivationpaths" style="margin-bottom:24px;">
+<div style="margin-bottom:12px">
+<label>Mnemonic or Seed (hex):</label>
+<textarea name="seed" class="seed" type="text" placeholder="Seed" style="display:block; margin:2px 0 2px; width:100%; font-size:16px; padding:8px;">67f93560761e20617de26e0cb84f7234aaf373ed2e66295c3d7397e6d7ebe882ea396d5d293808b0defd7edd2babd4c091ad942e6a9351e6d075a29d4df872af</textarea>
+<div class="seederror red" style="font-size:13px;">
+
+</div>
+</div>
+<div>
+<label>Path:</label> <input name="path" class="path" type="text" placeholder="Path" value="m/44h/0h/0h/0/0" style="display:block; margin:2px 0 2px;">
+<div class="patherror red" style="font-size:13px;">
+
+</div>
+<div class="pathnote grey" style="font-size:13px;">
+<strong>BIP 44:</strong> m / purpose’ / coin type’ / account’ / receving / index
+</div>
+</div>
+</form>
+<p style="margin-bottom:2px">
+Addresses:
+</p>
+<pre class="results"><code>m/44h/0h/0h/0/0: 1AZnveys2k5taGCCF743RtrWGwc58UMeq
+m/44h/0h/0h/0/1: 1AMYJTJyV4o1hwNACJtfdXBW6BiD1f5FXb
+m/44h/0h/0h/0/2: 1NPFFtSiFRatoeUf35rwYb8j8C1u7sVhGa
+m/44h/0h/0h/0/3: 1L44VTYEzWesp8cxnXcPGbUzuwTYoSW9at
+m/44h/0h/0h/0/4: 1FK85vpZavzZu6oBCvBcmD4FWXQT5fVYRu
+m/44h/0h/0h/0/5: 12QaHfWLtyuMwNXuap3FscMY434bw4TS6n
+m/44h/0h/0h/0/6: 1NeFG5BYAR9bnjAG72SDYKvNZBH4kPa8r1
+m/44h/0h/0h/0/7: 1yF3BiHqbQKL4aRfNYHQt4ZpgNagC4nQe
+m/44h/0h/0h/0/8: 144vmUhuAZJsV3m2GsP5Kqp55Pmzwx2gna
+m/44h/0h/0h/0/9: 1DQM5w6C7gNaCKBxQV3rXKftcamRKDPQ2M
+m/44h/0h/0h/0/10: 17XRvBac5xpgMVr6LbsDA56fgsaAed4oEV
+m/44h/0h/0h/0/11: 1BSQC3Qn38UT2WVfcM6LdybkfE7tTGW5M2
+m/44h/0h/0h/0/12: 1KUG4EDePnG97xQNXtuU9Xmp4sThqFvSoS
+m/44h/0h/0h/0/13: 18sXnPcBnXBRFBYbqr85aKPPNpwT4f52a8
+m/44h/0h/0h/0/14: 15S2gpAVvprN1GPE44oXCdtkA4L7yQtBkX
+m/44h/0h/0h/0/15: 1FvC2STfbj7dcr2ApAPhagnSCP5Dmy79nH
+m/44h/0h/0h/0/16: 15VZHWTEjnQuJSvUHzS7K6gmYjNv4A5cVJ
+m/44h/0h/0h/0/17: 1N4S7Z43gb22PDCcpjHhX25cgDSLxegdWm
+m/44h/0h/0h/0/18: 1MzS2BktGqokVM4kDuB6VavjLuib72W2je
+m/44h/0h/0h/0/19: 1GDLeWJ4FcK2uiTFvLshtVcBArA7M9ECxq</code></pre>
+</section>
+
+<p class="note tip">
+<strong>Gap Limit:</strong> When recovering a wallet from a seed, you should only check the <strong>first 20</strong> <em>receiving</em> addresses for a balance. If none have been used in the past, you can consider the <em>account</em> as unused.
+</p>
+<p class="note warning">
+Never enter your <em>actual</em> seed in to a website. Websites can save what you enter and use it to steal your coins.
+</p>
+<h2>5. Code</h2>
+<p>To save on code, these snippets use handy libraries (bitcoin-ruby, hdkeychain) for deriving extended keys.</p>
+<h3>Ruby</h3>
+
+
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby"><span>require <span class="st">&#39;bitcoin&#39;</span> <span class="co"># sum gem install bitcoin-ruby</span></span>
+<span></span>
+<span>seed = <span class="st">&quot;67f93560761e20617de26e0cb84f7234aaf373ed2e66295c3d7397e6d7ebe882ea396d5d293808b0defd7edd2babd4c091ad942e6a9351e6d075a29d4df872af&quot;</span></span>
+<span></span>
+<span><span class="co"># ------</span></span>
+<span><span class="co"># BIP 44</span></span>
+<span><span class="co"># ------</span></span>
+<span><span class="co"># Note: Hardened keys start at 2**31 (the second half of the 2**32 possible children).</span></span>
+<span></span>
+<span>m = <span class="dt">Bitcoin</span>::<span class="dt">ExtKey</span>.generate_master(seed.htb) <span class="co"># convert hex to binary</span></span>
+<span>purpose   = m.derive(<span class="dv">2</span>**<span class="dv">31</span>+<span class="dv">44</span>) <span class="co"># m/44&#39;</span></span>
+<span>coin_type = m.derive(<span class="dv">2</span>**<span class="dv">31</span>+<span class="dv">44</span>).derive(<span class="dv">2</span>**<span class="dv">31</span>+<span class="dv">0</span>) <span class="co"># m/44&#39;/0&#39;</span></span>
+<span>account   = m.derive(<span class="dv">2</span>**<span class="dv">31</span>+<span class="dv">44</span>).derive(<span class="dv">2</span>**<span class="dv">31</span>+<span class="dv">0</span>).derive(<span class="dv">2</span>**<span class="dv">31</span>+<span class="dv">0</span>) <span class="co"># m/44&#39;/0&#39;/0&#39;</span></span>
+<span>receiving = m.derive(<span class="dv">2</span>**<span class="dv">31</span>+<span class="dv">44</span>).derive(<span class="dv">2</span>**<span class="dv">31</span>+<span class="dv">0</span>).derive(<span class="dv">2</span>**<span class="dv">31</span>+<span class="dv">0</span>).derive(<span class="dv">0</span>) <span class="co"># m/44&#39;/0&#39;/0&#39;/0</span></span>
+<span></span>
+<span><span class="dv">20</span>.times <span class="kw">do</span> |i| </span>
+<span>    puts receiving.derive(i).addr <span class="co"># m/44&#39;/0&#39;/0&#39;/0/*</span></span>
+<span><span class="kw">end</span></span></code></pre>
+
+</div>
+<h3>Go</h3>
+
+
+<div class="sourceCode"><pre class="sourceCode go"><code class="sourceCode go"><span><span class="kw">package</span> main</span>
+<span></span>
+<span><span class="kw">import</span> (</span>
+<span>    <span class="st">&quot;encoding/hex&quot;</span> <span class="co">// byte array to hex string</span></span>
+<span>    <span class="st">&quot;fmt&quot;</span></span>
+<span></span>
+<span>    <span class="st">&quot;github.com/btcsuite/btcd/chaincfg&quot;</span> <span class="co">// chaincfg.MainNetParams</span></span>
+<span>    <span class="st">&quot;github.com/btcsuite/btcutil/hdkeychain&quot;</span> <span class="co">// https://godoc.org/github.com/btcsuite/btcutil/hdkeychain</span></span>
+<span>)</span>
+<span></span>
+<span><span class="kw">func</span> main() {</span>
+<span></span>
+<span>    <span class="co">// From Seed</span></span>
+<span>    seedhex := <span class="st">&quot;67f93560761e20617de26e0cb84f7234aaf373ed2e66295c3d7397e6d7ebe882ea396d5d293808b0defd7edd2babd4c091ad942e6a9351e6d075a29d4df872af&quot;</span></span>
+<span>    seed, _ := hex.DecodeString(seedhex) <span class="co">// hex to bytes</span></span>
+<span>    <span class="co">// fmt.Println(&quot;seed: &quot;, seedhex)</span></span>
+<span></span>
+<span>    <span class="co">// Generate Seed</span></span>
+<span>    <span class="co">// seed, _ := hdkeychain.GenerateSeed(uint8(16))</span></span>
+<span>    <span class="co">// fmt.Println(hex.EncodeToString(seed)) // bytes to hex</span></span>
+<span></span>
+<span>    <span class="co">// ------</span></span>
+<span>    <span class="co">// BIP 44</span></span>
+<span>    <span class="co">// ------</span></span>
+<span>    <span class="co">// m</span></span>
+<span>    m, _ := hdkeychain.NewMaster(seed, &amp;chaincfg.MainNetParams)</span>
+<span></span>
+<span>    <span class="co">// m/44h</span></span>
+<span>    purpose, _ := m.Child(hdkeychain.HardenedKeyStart + <span class="dv">44</span>)</span>
+<span></span>
+<span>    <span class="co">// m/44h/0h</span></span>
+<span>    coin, _ := purpose.Child(hdkeychain.HardenedKeyStart + <span class="dv">0</span>)</span>
+<span></span>
+<span>    <span class="co">// m/44h/0h/0h</span></span>
+<span>    account, _ := coin.Child(hdkeychain.HardenedKeyStart + <span class="dv">0</span>)</span>
+<span></span>
+<span>    <span class="co">// m/44h/0h/0h/0</span></span>
+<span>    receiving, _ := account.Child(<span class="dv">0</span>) <span class="co">// 0 = receiving, 1 = change</span></span>
+<span></span>
+<span>    <span class="co">// m/44h/0h/0h/0/*</span></span>
+<span>    <span class="kw">for</span> i := <span class="dv">0</span>; i &lt; <span class="dv">20</span>; i++ {</span>
+<span>        index, _ := receiving.Child(<span class="dt">uint32</span>(i)) <span class="co">// takes an unsigned integer</span></span>
+<span>        address, _ := index.Address(&amp;chaincfg.MainNetParams)</span>
+<span>        fmt.Println(address)</span>
+<span>    }</span>
+<span>}</span></code></pre>
+
+</div>
+
+</div>
+</div>
+</body>
+</html>

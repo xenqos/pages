@@ -1,0 +1,219 @@
+/* ------------------------------------------------------------------------------------------ */
+
+input
+
+{
+  background-color:     #ffffff;
+  border:               inherit;
+  color:                #000000;
+  margin:               0.000em 0.000em 0.000em 0.000em;
+  padding:              0.000em 0.000em 0.000em 0.000em;
+  text-align:           left;
+  width:                100.00%;
+}
+
+
+#idContent
+{
+  margin:               3.000em 0.000em 0.000em 0.000em;
+  padding:              0.000em 0.000em 0.000em 0.000em;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+*
+{
+  font-size:            98.00%;
+  margin:               0px;
+  padding:              0px;
+}
+
+.clear
+{
+  clear:                both;
+}
+
+table
+{
+  border:               1px solid #dddddd;
+  border-collapse:      collapse;
+  margin:               0px auto;
+  width:                100%;
+}
+
+th
+{
+  border-bottom:        1px solid #dddddd;
+  text-align:           center;
+}
+
+td
+{
+  margin:               0.000em 0.000em 0.000em 0.000em;
+  padding:              0.125em 0.125em 0.125em 0.125em;
+  border-bottom:        1px solid #dddddd;
+  vertical-align:       middle !important;
+}
+
+td.description
+{
+  margin:               0.000em 0.000em 0.000em 0.000em;
+  padding:              0.125em 0.125em 0.125em 0.125em;
+  width:                10.00em;
+  vertical-align:       middle !important;
+}
+
+td.type
+{
+  margin:               0.000em 0.000em 0.000em 0.000em;
+  padding:              0.200em 0.125em 0.125em 0.125em;
+  text-align:           center;
+  vertical-align:       middle !important;
+}
+
+td.text
+{
+  text-align:           left;
+}
+
+td.number
+{
+  padding:              0.250em 0.500em 0.000em 0.000em;
+  text-align:           right;
+  width:                0.000em;
+  vertical-align:       middle !important;
+}
+
+td.key
+{
+  padding:              0.000em 0.000em 0.000em 0.000em;
+  text-align:           right;
+  width:                20.00%;
+}
+
+td > span
+{
+  padding-left:         0.500em;
+}
+
+fieldset
+{
+    border:             none;
+}
+
+#passwordHidden,
+#showPassword
+{
+  display:              none;
+}
+
+.failed
+{
+  background-color:     #ffafb2;
+}
+
+.passed
+{
+  background-color:     #afb2ff;
+}
+
+.exceeded
+{
+  background-color:     #afffb2;
+}
+
+.lastChanged
+{
+  background-color:     #ffffcf;
+}
+
+.status
+{
+  width:                1.000em;
+  text-align:           center;
+}
+
+.requirement
+{
+  font-size:            smaller;
+  vertical-align:       text-top;
+  margin-left:          2px;
+}
+
+#complexity.veryweak
+{
+  color:                #ef0000;
+}
+
+#complexity.weak
+{
+  color:                #df2500;
+}
+
+#complexity.fair
+{
+  color:                #dfa200;
+}
+
+#complexity.good
+{
+  color:                #9daf00;
+}
+
+#complexity.strong
+{
+  color:                #09af00;
+}
+
+#passwordDetails
+{
+  width:                100.00%;
+}
+
+.password input
+{
+  color:                #aa0000;
+  border:               0px solid #dddddd;
+  margin:               0.000em 0.000em 0.000em 0.000em;
+  padding:              0.000em 0.000em 0.000em 0.250em;
+  width:                100%;
+  width:                99%;
+}
+
+
+#passwordCriteria
+{
+  width:                100.00%;
+}
+
+#passwordCriteria a
+{
+  color:                #000000;
+}
+
+#passwordCriteria .description
+{
+  white-space:          nowrap;
+}
+
+#legend
+{
+  width:                100.00%;
+}
+
+#XpasswordDetails,
+#XpasswordCriteria,
+#Xlegend
+{
+/*
+  margin:               0.000em 0.000em 0.000em 0.000em !important;
+  padding:              0.000em 0.000em 0.000em 0.000em !important;
+*/
+  overflow-wrap:        normal !important;
+  overflow-x:           auto;
+  overflow-y:           auto;
+  white-space:          pre;
+  word-wrap:            break-word;
+}
+
+/* ------------------------------------------------------------------------------------------ */

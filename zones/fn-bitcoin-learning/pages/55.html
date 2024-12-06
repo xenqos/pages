@@ -1,0 +1,227 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, user-scalable=no'>
+  <title>Bitcoin Learning</title>
+  <link rel='icon' type='image/x-icon' href='../../../favicon.ico?v=2'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../images/favicons/favicon-032.png?v=2'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../images/favicons/favicon-128.png?v=2'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../images/favicons/favicon-180.png?v=2'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../images/favicons/favicon-192.png?v=2'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../images/favicons/favicon-512.png?v=2'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../styles/commons.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../styles/book.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../scripts/commons.js'></script>
+  <script type='text/javascript' src='../../../scripts/book.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../index.html'><span class='clNavHome'></span></a>
+    <a href='./54.html'><span class='clNavLeft'><span></a>
+    <a href='../index.html'><span class='clNavUp'><span></a>
+    <a href='./56.html'><span class='clNavRight'><span></a>
+  </div>
+</div>
+
+<div id='idContent'>
+
+<h1>55.Address</h1>
+<p class="subheading">An easy to share format of a locking script.</p>
+
+<figure class="center">
+<a target='_blank' href='../images/55.address.png'><img class='clImageThumb' src='../images/55.address.png'></a><br><br>
+
+<p>An <strong>address</strong> is what you give to people so that they can “send” you bitcoins.</p>
+<p>When someone receives it, they can create a specific locking script based on the <em>type of address</em> you have given them.</p>
+
+<h2>How do you create an address?</h2>
+<p>Well, that depends on how you’d like your bitcoins to be locked up.</p>
+<p>But in general, an address contains:</p>
+<ol type="1">
+<li>Some <strong>specific data</strong> that you would like included in the lock. For example, your <code class="publickeyhash">public key hash</code>.</li>
+<li>A <strong>prefix</strong> to indicate what kind of lock to create.</li>
+<li>And a <strong>checksum</strong> to help with catching any typos.</li>
+</ol>
+<p>Finally, all of that gets converted to <strong>Base58</strong>, which makes it a little more user-friendly.</p>
+<h3>Pay To PubKey Hash (P2PKH)</h3>
+<p class="note text">
+<strong>P2PKH:</strong> This is a typical address that locks bitcoins to a <code class="publickey">public key</code> (or to be more precise: the <code class="publickeyhash">public key hash</code>).
+</p>
+<p>As mentioned, we append a <strong>prefix</strong> and prepend a <strong>checksum</strong> to our <em>hashed public key</em>, then encode it all in base58.</p>
+<p><a target='_blank' href='../images/55.encode-p2pkh.png'><img class='clImageThumb' src='../images/55.encode-p2pkh.png'></a><br><br></p>
+<p>Now we have an address to give to people.</p>
+<h4>
+Decoded:
+</h4>
+
+
+<p>When someone creates a locking script from this address, they just decode the base58 to <strong>retrieve the hash160</strong> inside it, then <strong>create a P2PKH lock around it</strong>, as follows:</p>
+<p><a target='_blank' href='../images/55.decode-p2pkh.png'><img class='clImageThumb' src='../images/55.decode-p2pkh.png'></a><br><br></p>
+<p>So the <strong>prefix</strong> indicates <em>what kind of lock to create</em>, and the <strong>hash160</strong> tells them <em>what to put inside it</em>.</p>
+
+
+<h3>Pay To Script Hash (P2SH)</h3>
+<p class="note text">
+<strong>P2SH:</strong> This lock includes the <em>hash</em> of a script. We provide the actual locking script later on (when we come to unlock it), which allows us to construct complex locking scripts without others having to worry about the details of it.
+</p>
+<p>Same as before, except this time we’re including the <em>hash of a script</em>, and using the <strong>prefix</strong> <code>05</code> to indicate a P2SH.</p>
+<p><a target='_blank' href='../images/55.encode-p2sh.png'><img class='clImageThumb' src='../images/55.encode-p2sh.png'></a><br><br></p>
+<h4>
+Decoded:
+</h4>
+
+
+<p>And this is what a P2SH looks like:</p>
+<p><a target='_blank' href='../images/55.decode-p2sh.png'><img class='clImageThumb' src='../images/55.decode-p2sh.png'></a><br><br></p>
+
+
+<h2>Prefixes</h2>
+<p>As mentioned, <strong>the prefix you use will indicate the type of locking script to create</strong>.</p>
+<p>Here are a list of common address prefixes:</p>
+
+<p>In Bitcoin, different <em>prefixes</em> are added to data before converting to base58 to influence the leading character of the result. This leading character then helps us to identify what each base58 string represents.</p>
+<p>These are the most common prefixes used in bitcoin:</p>
+
+<table class="f6 dib w-100 overflow-x-auto b--none mv2">
+<caption class="bg-light-blue">Mainnet</caption>
+<thead>
+<tr class="header">
+<th>Prefix (hex)</th>
+<th>Base58 Leading Character</th>
+<th>Represents</th>
+<th>Example</th>
+</tr>
+</thead>
+<tr class="odd">
+<td><code>00</code></td>
+<td>1</td>
+<td>P2PKH Address</td>
+<td><code class="address">1AKDDsfTh8uY4X3ppy1m7jw1fVMBSMkzjP</code></td>
+</tr>
+<tr class="even">
+<td><code>05</code></td>
+<td>3</td>
+<td>P2SH Address</td>
+<td><code class="address">34nSkinWC9rDDJiUY438qQN1JHmGqBHGW7</code></td>
+</tr>
+<tr class="odd">
+<td><code>80</code></td>
+<td>K / L</td>
+<td>WIF Private Key <a target='_blank' href='../images/55.information.png'><img class='clImageThumb' src='../images/55.information.png'></a><br><br>compressed</a> public key."></td>
+<td><code class="address">L4mee2GrpBSckB9SgC9WhHxvtEgKUvgvTiyYcGu38mr9CGKBGp93</code></td>
+</tr>
+<tr class="even">
+<td><code>80</code></td>
+<td>5</td>
+<td>WIF Private Key <a target='_blank' href='../images/55.information.png'><img class='clImageThumb' src='../images/55.information.png'></a><br><br>uncompressed</a> public key."></td>
+<td><code class="address">5KXWNXeaVMwjzMsrKPv8dmdEZuVPmPay4nm5SfVZCjLHoy1B56w</code></td>
+</tr>
+<tr class="odd">
+<td><code>0488ADE4</code></td>
+<td>xprv</td>
+<td>Extended Private Key</td>
+<td><code class="address mw6 db overflow-auto">xprv9tuogRdb5YTgcL3P8Waj7REqDuQx4sXcodQaWTtEVFEp6yRKh1CjrWfXChnhgHeLDuXxo2auDZegMiVMGGxwxcrb2PmiGyCngLxvLeGsZRq</code></td>
+</tr>
+<tr class="even">
+<td><code>0488B21E</code></td>
+<td>xpub</td>
+<td>Extended Public Key</td>
+<td><code class="address mw6 db overflow-auto">xpub67uA5wAUuv1ypp7rEY7jUZBZmwFSULFUArLBJrHr3amnymkUEYWzQJz13zLacZv33sSuxKVmerpZeFExapBNt8HpAqtTtWqDQRAgyqSKUHu</code></td>
+</tr>
+</table>
+
+<table class="f6 dib w-100 overflow-x-auto b--none mv2">
+<caption class="bg-light-green">Testnet</caption>
+<thead>
+<tr class="header">
+<th>Prefix (hex)</th>
+<th>Base58 Leading Character</th>
+<th>Represents</th>
+<th>Example</th>
+</tr>
+</thead>
+<tr class="odd">
+<td><code>6F</code></td>
+<td>m / n</td>
+<td>P2PKH Address</td>
+<td><code class="address">ms2qxPw1Q2nTkm4eMHqe6mM7JAFqAwDhpB</code></td>
+</tr>
+<tr class="even">
+<td><code>C4</code></td>
+<td>2</td>
+<td>P2SH Address</td>
+<td><code class="address">2MwSNRexxm3uhAKF696xq3ztdiqgMj36rJo</code></td>
+</tr>
+<tr class="odd">
+<td><code>EF</code></td>
+<td>c</td>
+<td>WIF Private Key <a target='_blank' href='../images/55.information.png'><img class='clImageThumb' src='../images/55.information.png'></a><br><br>compressed</a> public key."></td>
+<td><code class="address">cV8e6wGiFF8succi4bxe4cTzWTyj9NncXm81ihMYdtW9T1QXV5gS</code></td>
+</tr>
+<tr class="even">
+<td><code>EF</code></td>
+<td>9</td>
+<td>WIF Private Key <a target='_blank' href='../images/55.information.png'><img class='clImageThumb' src='../images/55.information.png'></a><br><br>uncompressed</a> public key."></td>
+<td><code class="address">93J8xGU85b1sxRP8wjp3WNBCDZr6vZ8AQjd2XHr4YU5Lb21jS1L</code></td>
+</tr>
+<tr class="odd">
+<td><code>04358394</code></td>
+<td>tprv</td>
+<td>Extended Private Key</td>
+<td><code class="address mw6 db overflow-auto">tprv9tuogRdb5YTgcL3P8Waj7REqDuQx4sXcodQaWTtEVFEp6yRKh1CjrWfXChnhgHeLDuXxo2auDZegMiVMGGxwxcrb2PmiGyCngLxvLeGsZRq</code></td>
+</tr>
+<tr class="even">
+<td><code>043587CF</code></td>
+<td>tpub</td>
+<td>Extended Public Key</td>
+<td><code class="address mw6 db overflow-auto">tpub67uA5wAUuv1ypp7rEY7jUZBZmwFSULFUArLBJrHr3amnymkUEYWzQJz13zLacZv33sSuxKVmerpZeFExapBNt8HpAqtTtWqDQRAgyqSKUHu</code></td>
+</tr>
+</table>
+
+<p class="note text">The hex prefix <code>00</code> does not naturally get converted to a “1” when encoding to base58. This conversion is performed manually in the code instead.</p>
+<p class="note text">You’ll notice that WIF Private Keys use the same hex prefix, but produce different leading characters. This is because if a private key is used to create a compressed public key (which will produce a different address to an uncompressed public key), we also <em>append</em> a <code>01</code> to it before converting to base58. This extra byte has an effect on the leading character in the base58 result.</p>
+<p class="note text">Extended Keys contain extra metadata alongside the original public and private keys, which is why their base58 strings are much longer.</p>
+<p>https://en.bitcoin.it/wiki/List_of_address_prefixes</p>
+<p class="note tip">
+The prefix will also alter the <em>leading character</em> of an address, so you can tell what kind of locking script has been used by just looking at the address itself.
+</p>
+<h2>Why do we use addresses?</h2>
+<blockquote>
+<p>An address is a short-hand way of writing locking scripts in a human-readable way. - <em>echeveria (on IRC)</em></p>
+</blockquote>
+<p>If we didn’t use addresses, we would have to send other people complete locking scripts, like this:</p>
+<pre class="numbers"><code>76a914662ad25db00e7bb38bc04831ae48b4b446d1269888ac # P2PKH script</code></pre>
+<p>But by using addresses, we can just send something like this instead:</p>
+<pre class="numbers"><code>1AKDDsfTh8uY4X3ppy1m7jw1fVMBSMkzjP</code></pre>
+<p>They both achieve the same result, but addresses give us a more user-friendly format to pass around. Not to mention the fact that they <strong>contain a checksum</strong>, which means that errors can be detected if someone writes an address incorrectly.</p>
+
+<h2>Code</h2>
+<p><strong>Note:</strong> This code requires the checksum.rb and base58_encode.rb functions.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby"><span><span class="kw">def</span> hash160_to_address(hash160, type=<span class="st">:p2pkh</span>)</span>
+<span>  prefixes = {</span>
+<span>    <span class="st">p2pkh: &#39;00&#39;</span>,         <span class="co"># 1address - For standard bitcoin addresses</span></span>
+<span>    <span class="st">p2sh: </span> <span class="st">&#39;05&#39;</span>,         <span class="co"># 3address - For sending to an address that requires multiple signatures (multisig)</span></span>
+<span>    <span class="st">p2pkh_testnet: &#39;6F&#39;</span>, <span class="co"># (m/n)address</span></span>
+<span>    <span class="st">p2sh_testnet: </span> <span class="st">&#39;C4&#39;</span>  <span class="co"># 2address</span></span>
+<span>  }</span>
+<span></span>
+<span>  prefix = prefixes[type]</span>
+<span>  checksum = checksum(prefix + hash160)</span>
+<span>  address = base58_encode(prefix + hash160 + checksum)</span>
+<span></span>
+<span>  <span class="kw">return</span> address</span>
+<span><span class="kw">end</span></span>
+<span></span>
+<span>hash160 = <span class="st">&#39;662ad25db00e7bb38bc04831ae48b4b446d12698&#39;</span></span>
+<span>puts hash160_to_address(hash160) <span class="co"># 1AKDDsfTh8uY4X3ppy1m7jw1fVMBSMkzjP</span></span></code></pre></div>
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, user-scalable=no'>
+  <title>Bitcoin Learning</title>
+  <link rel='icon' type='image/x-icon' href='../../../favicon.ico?v=2'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../images/favicons/favicon-032.png?v=2'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../images/favicons/favicon-128.png?v=2'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../images/favicons/favicon-180.png?v=2'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../images/favicons/favicon-192.png?v=2'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../images/favicons/favicon-512.png?v=2'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../styles/commons.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../styles/book.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../scripts/commons.js'></script>
+  <script type='text/javascript' src='../../../scripts/book.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../index.html'><span class='clNavHome'></span></a>
+    <a href='./49.html'><span class='clNavLeft'><span></a>
+    <a href='../index.html'><span class='clNavUp'><span></a>
+    <a href='./51.html'><span class='clNavRight'><span></a>
+  </div>
+</div>
+
+<div id='idContent'>
+
+<h1>50.NULL DATA</h1>
+<p class="subheading">Storing data in bitcoin transactions.</p>
+
+<a target='_blank' href='../images/50.nulldata.png'><img class='clImageThumb' src='../images/50.nulldata.png'></a><br><br>
+
+<p>NULL DATA is a standard locking script that you can use to <strong>store data on the blockchain</strong>.</p>
+<p class="note warning">
+<strong>WARNING:</strong> This locking script <em>cannot be unlocked</em>, so I wouldn’t use it as a lock for any amount of bitcoins.
+</p>
+<h2>How does it work?</h2>
+<p>The <code class="opcode red">OP_RETURN</code> opcode <strong>immediately ends the execution of the script</strong> and marks it as <span style="color:darkred; font-weight:bold;">invalid</span>.<sup>1</sup></p>
+<p>Therefore, any output with a NULL DATA locking script on it is <strong>unspendable</strong>:</p>
+
+<a target='_blank' href='../images/50.unspendable_output.png'><img class='clImageThumb' src='../images/50.unspendable_output.png'></a><br><br>
+<p class='clFigcaption'>There is no way you can unlock this locking script.</p>
+
+
+<h2>So what’s the use of the NULL DATA locking script?</h2>
+<p>You can use NULL DATA for <strong>data storage</strong>, because the standard script allows for a <em>data push</em> at the end.</p>
+
+<p>So if you want to add some <span data-tooltip="Not representing any specific value.">arbitrary</span> data to a transaction; include an extra (empty) output, and place a NULL DATA locking script on it:</p>
+<p><a target='_blank' href='../images/50.empty_output_store_data.png'><img class='clImageThumb' src='../images/50.empty_output_store_data.png'></a><br><br></p>
+<p class="note text">
+A transaction can only include <strong>one</strong> NULL DATA locking script for it to be considered a <em>standard transaction</em> (meaning that it will be relayed by nodes).
+</p>
+<h3>What data can you store in the NULL DATA script?</h3>
+
+
+<p>You can store up to 80 bytes<sup>2</sup> of any data you want. But most people just encode <strong>text strings</strong> in to it. For example:</p>
+
+<div class='clOverflow'>
+<table class="script">
+<tr>
+<th><a target='_blank' href='../images/50.lock.png'><img class='clImageThumb' src='../images/50.lock.png'></a><br><br> scriptPubKey</th>
+<td class="hex">6a0b68656c6c6f20776f726c64</td>
+<td class="opcodes " data-address><div class="inline"><code class="opcode red">OP_RETURN</code> <code class="hex ascii" data-ascii="hello world">68656c6c6f20776f726c64</code></td>
+<td class="type">NULL DATA</td>
+</tr>
+</table>
+</div>
+
+<h4>How is that a text string?</h4>
+<p>Transaction data is typically represented in hexadecimal format, so it’s not always immediately obvious <em>what</em> the data is by looking at it.</p>
+<p>But if it’s text, so you can read it by converting <em>each byte</em> from hexadecimal to its <em><abbr title=" American Standard Code for Information Interchange">ASCII</abbr> character code</em>:</p>
+<pre><code>hexadecimal = 68656c6c6f20776f726c64
+ascii       = h e l l o   w o r l d</code></pre>
+<details>
+<summary>
+ASCII Character Code Chart
+</summary>
+<a target='_blank' href='../images/50.ascii-table.png'><img class='clImageThumb' src='../images/50.ascii-table.png'></a><br><br>
+</details>
+<p>Of course, you can store up to 80 bytes of any data you want (not just text in the form of ASCII character codes). You just need to know how to <em>decode</em> it to see what it is.</p>
+
+<h2>Where can you find NULL DATA scripts?</h2>
+<p>Anyone can use a NULL DATA script to add some arbitrary data to a transaction, so you can find them scattered around the blockchain.</p>
+<p class="note tip">
+Look for <strong>empty outputs</strong> when browsing the blockchain, as NULL DATA scripts are almost always placed on empty outputs (because the outputs are made unspendable by the lock).
+</p>
+<p>Here are some examples of people using the script to store strings of text (hover over the <code class="hex">data push</code> to see the ASCII text):</p>
+<p><strong>Example 1</strong> - “hello world”</p>
+
+<div class='clOverflow'>
+<table class="script">
+<tr>
+<th><a target='_blank' href='../images/50.lock.png'><img class='clImageThumb' src='../images/50.lock.png'></a><br><br> scriptPubKey</th>
+<td class="hex " data-address>6a0b68656c6c6f20776f726c64</td>
+<td class="opcodes " data-address><div class="inline"><code class="opcode red">OP_RETURN</code> <code class="hex ascii" data-ascii="hello world">68656c6c6f20776f726c64</code></div></td>
+<td class="type">NULL DATA</td>
+</tr>
+</table>
+</div>
+
+<p><strong>Example 2</strong> - “charley loves heidi”</p>
+
+<div class='clOverflow'>
+<table class="script">
+<tr>
+<th><a target='_blank' href='../images/50.lock.png'><img class='clImageThumb' src='../images/50.lock.png'></a><br><br> scriptPubKey</th>
+<td class="hex " data-address>6a13636861726c6579206c6f766573206865696469</td>
+<td class="opcodes " data-address><div class="inline"><code class="opcode red">OP_RETURN</code> <code class="hex ascii" data-ascii="charley loves heidi">636861726c6579206c6f766573206865696469</code></div></td>
+<td class="type">NULL DATA</td>
+</tr>
+</table>
+</div>
+
+
+<p><strong>Example 3</strong> - “家族も友達もみんなが笑顔の毎日がほしい”</p>
+
+<div class='clOverflow'>
+<table class="script">
+<tr>
+<th><a target='_blank' href='../images/50.lock.png'><img class='clImageThumb' src='../images/50.lock.png'></a><br><br> scriptPubKey</th>
+<td class="hex " data-address>6a39e5aeb6e6978fe38282e58f8be98194e38282e381bfe38293e381aae3818ce7ac91e9a194e381aee6af8ee697a5e3818ce381bbe38197e38184</td>
+<td class="opcodes " data-address><div class="inline"><code class="opcode red">OP_RETURN</code> <code class="hex ascii" data-ascii="家族も友達もみんなが笑顔の毎日がほしい">e5aeb6e6978fe38282e58f8be98194e38282e381bfe38293e381aae3818ce7ac91e9a194e381aee6af8ee697a5e3818ce381bbe38197e38184</code></div></td>
+<td class="type">NULL DATA</td>
+</tr>
+</table>
+</div>
+
+
+<h2>Why was NULL DATA introduced as a standard script?</h2>
+<p>The NULL DATA locking script was introduced in <code class="numbers">Bitcoin 0.9.0</code> as a <em>compromise</em> to allow people to include arbitrary data inside transactions.</p>
+<p>You see, before the NULL DATA script came about, people were adding data to transactions by using the existing standard locking scripts. For example, you could always use a P2PKH script and put your arbitrary data inside where the <code class="publickeyhash">hashed public key</code> should go:</p>
+
+<div class='clOverflow'>
+<table class="script">
+<tr>
+<th><a target='_blank' href='../images/50.lock.png'><img class='clImageThumb' src='../images/50.lock.png'></a><br><br> scriptPubKey</th>
+<td class="hex" data-address="111111Lqxn3ZKoWzxhYckyZ8aezqus5V">76a91400000000006c6561726e6d6561626974636f696e88ac</td>
+<td class="opcodes" data-address="111111Lqxn3ZKoWzxhYckyZ8aezqus5V"><div class="inline"><code class="opcode">OP_DUP</code> <code class="opcode">OP_HASH160</code> <code class="publickeyhash ascii" data-ascii="learnmeabitcoin">00000000006c6561726e6d6561626974636f696e</code> <code class="opcode">OP_EQUALVERIFY</code> <code class="opcode">OP_CHECKSIG</code></div></td>
+<td class="type"><abbr title="Pay To Pub Key Hash">P2PKH</abbr></td>
+</tr>
+</table>
+</div>
+
+<p>However, the problem with this approach is that it looks like a standard locking script, so the output would be stored in the UTXO database, which is a waste of RAM as the output is effectively <strong>unspendable</strong>.</p>
+<p>So this is where the NULL DATA comes in:</p>
+
+<div class='clOverflow'>
+<table class="script">
+<tr>
+<th><a target='_blank' href='../images/50.lock.png'><img class='clImageThumb' src='../images/50.lock.png'></a><br><br> scriptPubKey</th>
+<td class="hex" data-address>6a0f6c6561726e6d6561626974636f696e</td>
+<td class="opcodes" data-address><div class="inline"><code class="opcode red">OP_RETURN</code> <code class="hex ascii" data-ascii="learnmeabitcoin">6c6561726e6d6561626974636f696e</code></div></td>
+<td class="type">NULL DATA</td>
+</tr>
+</table>
+</div>
+
+<p>This script contains <code class="opcode red">OP_RETURN</code>, which means it <strong>provably unspendable</strong>. Therefore, there is no need to store it in the UTXO database, which saves on precious RAM space.</p>
+
+<div class="note text">
+<p>Using the blockchain for data storage isn’t ideal, but <strong>you can’t stop people from doing it</strong>. Therefore, the NULL DATA script acts as a more reasonable alternative for data storage than previous methods.</p>
+<blockquote>
+<p>On OP_RETURN: There was been some confusion and misunderstanding in the community, regarding the OP_RETURN feature in 0.9 and data in the blockchain. This change is not an endorsement of storing data in the blockchain. The OP_RETURN change creates a provably-prunable output, to avoid data storage schemes – some of which were already deployed – that were storing arbitrary data such as images as forever-unspendable TX outputs, bloating bitcoin’s UTXO database. <br><br>Bitcoin 0.9.0 Release Notes</p>
+</blockquote>
+</div>
+
+<h2>Notes</h2>
+<h4>OP_RETURN must be evaluated for a script to fail.</h4>
+<p>The <em>presence</em> of the <code class="opcode red">OP_RETURN</code> opcode in a script does not automatically render the script invalid.</p>
+<p>For example, in the script below the <code class="opcode red">OP_RETURN</code> is in a branch that will never be evaluated, and so the script is valid:</p>
+
+<div class='clOverflow'>
+<table class="script">
+<tr>
+<td class="opcodes"><div class="inline"><code class="opcode">OP_1</code> <code class="opcode">OP_IF</code> <code class="opcode">OP_1</code> <code class="opcode">OP_ELSE</code> <code class="opcode red">OP_RETURN</code> <code class="opcode">OP_ENDIF</code></div></td>
+</tr>
+</table>
+</div>
+
+
+</div>
+</div>
+</body>
+</html>
