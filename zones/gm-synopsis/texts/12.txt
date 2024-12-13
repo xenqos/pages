@@ -8,7 +8,10 @@
 'Big Blind' places big blind
 'Button' deal 'Hole Cards' starting from left
 Each player clockwise places: 'Fold' / 'Call' / 'Raise'
-'Big Blind' is 'Live Blind' - may 'Call' with no money
+At 'Big Blind' 'Dealer' asks 'Option?'
+'Big Blind' may 'Check'
+'Big Blind' may 'Raise'
+'Big Blind' is 'Live Blind'
 !]
 
 [-
