@@ -5,10 +5,12 @@
 [|
 |Royal Flush|&[h|T]&nbsp;&[h|J]&nbsp;&[h|Q]&nbsp;&[h|K]&nbsp;&[h|A]|
 |Straight Flush|&[c|4]&nbsp;&[c|5]&nbsp;&[c|6]&nbsp;&[c|7]&nbsp;&[c|8]|
-|Four Of A Kind|&[h|T]&nbsp;&[h|7]&nbsp;&[s|7]&nbsp;&[d|7]&nbsp;&[c|7]|
+|Four Of A Kind&ensp;|&[h|T]&nbsp;&[h|7]&nbsp;&[s|7]&nbsp;&[d|7]&nbsp;&[c|7]|
 |Full House|&[h|J]&nbsp;&[c|J]&nbsp;&[h|K]&nbsp;&[s|K]&nbsp;&[d|K]|
 |Flush|&[h|6]&nbsp;&[h|8]&nbsp;&[h|Q]&nbsp;&[h|3]&nbsp;&[h|T]|
-|||
+|]
+
+[|
 |Straight|&[s|6]&nbsp;&[h|7]&nbsp;&[c|8]&nbsp;&[d|9]&nbsp;&[s|T]|
 |Three Of A Kind|&[h|7]&nbsp;&[c|3]&nbsp;&[h|K]&nbsp;&[s|K]&nbsp;&[d|K]|
 |Two Pair|&[h|Q]&nbsp;&[s|4]&nbsp;&[h|4]&nbsp;&[c|A]&nbsp;&[h|A]|
@@ -26,6 +28,7 @@ Straight Flush           36 &nbsp;
 Four of a Kind          624 &nbsp;
 Full House            3,744 &nbsp;
 Flush                 5,108 &nbsp;
+
 Straight             10,200 &nbsp;
 Three of a Kind      54,912 &nbsp;
 Two Pair            123,552 &nbsp;
@@ -37,14 +40,14 @@ High Card         1,302,540 &nbsp;
 [|
 |Royal Flush|&[h|T]&nbsp;&[h|J]&nbsp;&[h|Q]&nbsp;&[h|K]&nbsp;&[h|A]|
 |Straight Flush|&[c|4]&nbsp;&[c|5]&nbsp;&[c|6]&nbsp;&[c|7]&nbsp;&[c|8]|
-|Four of a Kind|&[h|7]&nbsp;&[s|7]&nbsp;&[d|7]&nbsp;&[c|7]&nbsp;&[h|T]|
-|Full House|&[h|K]&nbsp;&[s|K]&nbsp;&[d|K]&nbsp;&[h|J]&nbsp;&[c|J]|
+|Four Of A Kind|&[h|T]&nbsp;&[h|7]&nbsp;&[s|7]&nbsp;&[d|7]&nbsp;&[c|7]|
+|Full House|&[h|J]&nbsp;&[c|J]&nbsp;&[h|K]&nbsp;&[s|K]&nbsp;&[d|K]|
 |Flush|&[h|6]&nbsp;&[h|8]&nbsp;&[h|Q]&nbsp;&[h|3]&nbsp;&[h|T]|
-|||
+|&nbsp;||
 |Straight|&[s|6]&nbsp;&[h|7]&nbsp;&[c|8]&nbsp;&[d|9]&nbsp;&[s|T]|
-|Three of a Kind|&[h|K]&nbsp;&[s|K]&nbsp;&[d|K]&nbsp;&[h|7]&nbsp;&[c|3]|
-|Two Pair|&[s|4]&nbsp;&[h|4]&nbsp;&[c|A]&nbsp;&[h|A]&nbsp;&[h|Q]|
-|One Pair|&[s|5]&nbsp;&[h|5]&nbsp;&[h|6]&nbsp;&[d|8]&nbsp;&[h|Q]|
-|High Card|&[h|A]&nbsp;&[s|2]&nbsp;&[c|4]&nbsp;&[d|8]&nbsp;&[h|7]|
+|Three Of A Kind|&[h|7]&nbsp;&[c|3]&nbsp;&[h|K]&nbsp;&[s|K]&nbsp;&[d|K]|
+|Two Pair|&[h|Q]&nbsp;&[s|4]&nbsp;&[h|4]&nbsp;&[c|A]&nbsp;&[h|A]|
+|One Pair|&[h|6]&nbsp;&[d|8]&nbsp;&[h|Q]&nbsp;&[s|5]&nbsp;&[h |5]|
+|High Card|&[s|2]&nbsp;&[c|4]&nbsp;&[d|8]&nbsp;&[h|7]&nbsp;&[h|A]|
 |]
 -->
