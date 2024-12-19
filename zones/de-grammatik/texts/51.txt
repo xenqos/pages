@@ -1,53 +1,85 @@
-###### Глаголы &nbsp;•&nbsp; Вспомогательные
+###### Глаголы &nbsp;•&nbsp; Таблицы склонения
 
-# werden
+# Konjunktiv II
 
-[!
-становиться
-!]
-
----
-
-## Indikativ
-
-### Präsens
+## Regelmäßige Präteritum
 
 [|
-|ich|%[m|werde ]|wir|%[m|werden]|
-|du |%[m|wirst ]|ihr|%[m|werdet]|
-|er |%[m|wird  ]|sie|%[m|werden]|
+|ich| -%[l|te]  |%[m|sagte]  |
+|du | -%[l|test]|%[m|sagtest]|
+|er | -%[l|te]  |%[m|sagte]  |
+|wir| -%[l|ten] |%[m|sagten] |
+|ihr| -%[l|tet] |%[m|sagtet] |
+|sie| -%[l|ten] |%[m|sagten] |
 |]
 
-### Präteritum
+## Unregelmäßige Präteritum
 
 [|
-|ich|%[m|wurde  ]|wir|%[m|wurden ]|
-|du |%[m|wurdest]|ihr|%[m|wurdet ]|
-|er |%[m|wurde  ]|sie|%[m|wurden ]|
+|ich| -%[l|e]  |%[m|sänge]  |
+|du | -%[l|est]|%[m|sängest]|
+|er | -%[l|e]  |%[m|sänge]  |
+|wir| -%[l|en] |%[m|sängen] |
+|ihr| -%[l|et] |%[m|sänget] |
+|sie| -%[l|en] |%[m|sängen] |
 |]
 
----
+## Plusquamperfekt
 
-## Konjunktiv I
-
-### Präsens
+### Haben + Partizip
 
 [|
-|ich|%[m|werde  ]|wir|%[m|werden ]|
-|du |%[m|werdest]|ihr|%[m|werdet ]|
-|er |%[m|werde  ]|sie|%[m|werden ]|
+|ich|%[m|hätte]  |%[m|gesagt]|
+|du |%[m|hättest]|%[m|gesagt]|
+|er |%[m|hätte]  |%[m|gesagt]|
+|wir|%[m|hätten] |%[m|gesagt]|
+|ihr|%[m|hättet] |%[m|gesagt]|
+|sie|%[m|hätten] |%[m|gesagt]|
 |]
 
----
-
-## Konjunktiv II
-
-### Präteritum
+### Sein + Partizip
 
 [|
-|ich|%[m|würde  ]|wir|%[m|würden ]|
-|du |%[m|würdest]|ihr|%[m|würdet ]|
-|er |%[m|würde  ]|sie|%[m|würden ]|
+|ich|%[m|wäre]  |%[m|gerannt]|
+|du |%[m|wär](%[m|e])%[m|st]|%[m|gerannt]|
+|er |%[m|wäre]  |%[m|gerannt]|
+|wir|%[m|wären]|%[m|gerannt]|
+|ihr|%[m|wär](%[m|e])%[m|t] |%[m|gerannt]|
+|sie|%[m|wären]|%[m|gerannt]|
 |]
 
----
+
+<!--
+
+### Imperativ
+
+##### Präsens
+
+[|
+|%[m|sei  ]|du |
+|%[m|seien]|wir|
+|%[m|seid ]|ihr|
+|%[m|seien]|Sie|
+|]
+
+### Partizip
+
+##### Präsens
+
+%[m|seiend]
+
+##### Perfekt
+
+%[m|gewesen]
+
+
+### Infinitiv
+
+##### Präsens
+
+%[m|sein]
+
+##### Perfekt
+
+%[m|gewesen sein]
+-->

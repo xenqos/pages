@@ -1,78 +1,40 @@
 ###### Глаголы &nbsp;•&nbsp; Таблицы склонения
 
-# Konjunktiv I
+[!
+%[m|sagen] - говорить
+%[m|singen] - петь
+!]
 
-## Präsens
+# Indikativ Präteritum
 
-[|
-|ich| -%[l|e]  |%[m|sage]  |%[m|singe]  |
-|du | -%[l|est]|%[m|sagest]|%[m|singest]|
-|er | -%[l|e]  |%[m|sage]  |%[m|singe]  |
-|wir| -%[l|en] |%[m|sagen] |%[m|singen] |
-|ihr| -%[l|et] |%[m|saget] |%[m|singet] |
-|sie| -%[l|en] |%[m|sagen] |%[m|singen] |
-|]
-
-## Perfekt
-
-### Haben + Partizip
+## Regelmäßige
 
 [|
-|ich|%[m|habe]  |%[m|gesagt]|
-|du |%[m|habest]|%[m|gesagt]|
-|er |%[m|habe]  |%[m|gesagt]|
-|wir|%[m|haben] |%[m|gesagt]|
-|ihr|%[m|habet] |%[m|gesagt]|
-|sie|%[m|haben] |%[m|gesagt]|
-|]
-
-### Sein + Partizip
-
-[|
-|ich|%[m|sei]     |%[m|gerannt]|
-|du |%[m|sei](%[m|e])%[m|st]|%[m|gerannt]|
-|er |%[m|sei]     |%[m|gerannt]|
-|wir|%[m|seien]   |%[m|gerannt]|
-|ihr|%[m|seiet]   |%[m|gerannt]|
-|sie|%[m|seien]   |%[m|gerannt]|
-|]
-
-## Futur I
-
-[|
-|ich|%[m|werde]  |%[m|sagen]|
-|du |%[m|werdest]|%[m|sagen]|
-|er |%[m|werde]  |%[m|sagen]|
-|wir|%[m|werden] |%[m|sagen]|
-|ihr|%[m|werdet] |%[m|sagen]|
-|sie|%[m|werden] |%[m|sagen]|
+^^s.^p.^
+|1|-%[l|te]  |-%[l|ten]|
+|2|-%[l|test]|-%[l|tet]|
+|3|-%[l|te]  |-%[l|ten]|
 |]
 
 [|
-|ich|%[m|werde]  |%[m|singen]|
-|du |%[m|werdest]|%[m|singen]|
-|er |%[m|werde]  |%[m|singen]|
-|wir|%[m|werden] |%[m|singen]|
-|ihr|%[m|werdet] |%[m|singen]|
-|sie|%[m|werden] |%[m|singen]|
+^^s.^p.^
+|1|%[m|sag]%[l|te]  |%[m|sag]%[l|ten]|
+|2|%[m|sag]%[l|test]|%[m|sag]%[l|tet]|
+|3|%[m|sag]%[l|te]  |%[m|sag]%[l|ten]|
 |]
 
-## Futur II
+## Unregelmäßige
 
 [|
-|ich|%[m|werde]  |%[m|gesagt haben]|
-|du |%[m|werdest]|%[m|gesagt haben]|
-|er |%[m|werde]  |%[m|gesagt haben]|
-|wir|%[m|werden] |%[m|gesagt haben]|
-|ihr|%[m|werdet] |%[m|gesagt haben]|
-|sie|%[m|werden] |%[m|gesagt haben]|
+^^s.^p.^
+|1|-%[l|] |-%[l|en]|
+|2|-%[l|st]|-%[l|t] |
+|3|-%[l|] |-%[l|en]|
 |]
 
 [|
-|ich|%[m|werde]  |%[m|gesungen haben]|
-|du |%[m|werdest]|%[m|gesungen haben]|
-|er |%[m|werde]  |%[m|gesungen haben]|
-|wir|%[m|werden] |%[m|gesungen haben]|
-|ihr|%[m|werdet] |%[m|gesungen haben]|
-|sie|%[m|werden] |%[m|gesungen haben]|
+^^s.^p.^
+|1|%[m|sang]%[l|]  |%[m|sang]%[l|en]|
+|2|%[m|sang]%[l|st]|%[m|sang]%[l|t] |
+|3|%[m|sang]%[l|]  |%[m|sang]%[l|en]|
 |]
