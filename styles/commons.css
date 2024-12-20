@@ -278,8 +278,8 @@ h1, h2, h3, h4, h5, h6
 h1 { color: #995f46; font-size: 1.400rem; font-weight: 600; }
 h2 { color: #367b36; font-size: 1.200rem; font-weight: 600; }
 h3 { color: #4d6db0; font-size: 1.120rem; font-weight: 600; }
-h4 { color: #777425; font-size: 1.040rem; font-weight: 600; }
-h5 { color: #905b90; font-size: 1.040rem; font-weight: 600; }
+h4 { color: #905b90; font-size: 1.040rem; font-weight: 600; }
+h5 { color: #777425; font-size: 1.040rem; font-weight: 600; }
 h6 { color: #427777; font-size: 1.040rem; font-weight: 600; }
 
 /*-----------------------------------------------------------------------------------------------*/
