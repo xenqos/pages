@@ -1,14 +1,10 @@
 ###### Глаголы &nbsp;•&nbsp; Таблицы склонения
 
-[!
-%[m|sagen] - говорить
-%[m|rennen] - бежать
-!]
-
 # Indikativ Plusquamperfekt
 
 ## Haben + Partizip
 
+%[m|sagen] - говорить
 [|
 |ich|%[m|hatte]  |%[m|gesagt]|
 |du |%[m|hattest]|%[m|gesagt]|
@@ -22,6 +18,7 @@
 
 ## Sein + Partizip
 
+%[m|rennen] - бежать
 [|
 |ich|%[m|war]  |%[m|gerannt]|
 |du |%[m|warst]|%[m|gerannt]|
@@ -35,102 +32,6 @@
 
 <!--
 
-
-
-## Futur II
-
-[|
-|ich|%[m|werde] |%[m|gesagt haben]|
-|du |%[m|wirst] |%[m|gesagt haben]|
-|er |%[m|wird]  |%[m|gesagt haben]|
-|]
-[|
-|wir|%[m|werden]|%[m|gesagt haben]|
-|ihr|%[m|werdet]|%[m|gesagt haben]|
-|sie|%[m|werden]|%[m|gesagt haben]|
-|]
-
-[|
-|ich|%[m|werde] |%[m|gesungen haben]|
-|du |%[m|wirst] |%[m|gesungen haben]|
-|er |%[m|wird]  |%[m|gesungen haben]|
-|]
-[|
-|wir|%[m|werden]|%[m|gesungen haben]|
-|ihr|%[m|werdet]|%[m|gesungen haben]|
-|sie|%[m|werden]|%[m|gesungen haben]|
-|]
-
-## Konjunktiv I
-
-### Präsens
-
-[|
-|ich| -%[l|e]  |%[m|sage]  |%[m|singe]  |
-|du | -%[l|est]|%[m|sagest]|%[m|singest]|
-|er | -%[l|e]  |%[m|sage]  |%[m|singe]  |
-|]
-[|
-|wir| -%[l|en] |%[m|sagen] |%[m|singen] |
-|ihr| -%[l|et] |%[m|saget] |%[m|singet] |
-|sie| -%[l|en] |%[m|sagen] |%[m|singen] |
-|]
-
-### Perfekt
-
-#### Haben + Partizip
-
-[|
-|ich|%[m|habe]  |%[m|gesagt]|
-|du |%[m|habest]|%[m|gesagt]|
-|er |%[m|habe]  |%[m|gesagt]|
-|]
-[|
-|wir|%[m|haben] |%[m|gesagt]|
-|ihr|%[m|habet] |%[m|gesagt]|
-|sie|%[m|haben] |%[m|gesagt]|
-|]
-
-#### Sein + Partizip
-
-[|
-|ich|%[m|sei]     |%[m|gerannt]|
-|du |%[m|sei](%[m|e])%[m|st]|%[m|gerannt]|
-|er |%[m|sei]     |%[m|gerannt]|
-|]
-[|
-|wir|%[m|seien]   |%[m|gerannt]|
-|ihr|%[m|seiet]   |%[m|gerannt]|
-|sie|%[m|seien]   |%[m|gerannt]|
-|]
-
-## Konjunktiv II
-
-### Regelmäßige Präteritum
-
-[|
-|ich| -%[l|te]  |%[m|sagte]  |
-|du | -%[l|test]|%[m|sagtest]|
-|er | -%[l|te]  |%[m|sagte]  |
-|]
-[|
-|wir| -%[l|ten] |%[m|sagten] |
-|ihr| -%[l|tet] |%[m|sagtet] |
-|sie| -%[l|ten] |%[m|sagten] |
-|]
-
-### Unregelmäßige Präteritum
-
-[|
-|ich| -%[l|e]  |%[m|sänge]  |
-|du | -%[l|est]|%[m|sängest]|
-|er | -%[l|e]  |%[m|sänge]  |
-|]
-[|
-|wir| -%[l|en] |%[m|sängen] |
-|ihr| -%[l|et] |%[m|sänget] |
-|sie| -%[l|en] |%[m|sängen] |
-|]
 
 ### Plusquamperfekt
 

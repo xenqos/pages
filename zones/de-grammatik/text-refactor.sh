@@ -6,8 +6,8 @@ dir_sounds="${dir_prefix}/sounds"
 dir_sources="${dir_prefix}/sources"
 dir_texts="${dir_prefix}/texts"
 
-number_start=50
-number_shift=2
+number_start=55
+number_shift=1
 
 #
 exit 0

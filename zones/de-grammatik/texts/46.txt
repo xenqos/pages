@@ -3,11 +3,6 @@
 #### Indikativ ####
 ### Таблицы склонения ###
 
-[!
-%[m|sagen] - говорить
-%[m|singen] - петь
-!]
-
 # Indikativ Präsens
 
 [|
@@ -16,14 +11,14 @@
 |2|-%[l|st]|-%[l|t] |
 |3|-%[l|t] |-%[l|en]|
 |]
-
+%[m|sagen] - говорить
 [|
 ^^s.^p.^
 |1|%[m|sag]%[l|e] |%[m|sag]%[l|en]|
 |2|%[m|sag]%[l|st]|%[m|sag]%[l|t] |
 |3|%[m|sag]%[l|t] |%[m|sag]%[l|en]|
 |]
-
+%[m|singen] - петь
 [|
 ^^s.^p.^
 |1|%[m|sing]%[l|e] |%[m|sing]%[l|en]|
