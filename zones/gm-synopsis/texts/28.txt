@@ -1,24 +1,40 @@
-###### Miscellanea
+###### GTO
 
-## Miscellanea ##
+# Preflop Combos
 
-# Card Manufacturers
+## Paired Hands
+&[s|A]&[h|A] &nbsp; &[s|A]&[h|A] &nbsp; &[s|A]&[c|A]
+&[h|A]&[d|A] &nbsp; &[h|A]&[c|A] &nbsp; &[d|A]&[c|A]
 
-[|
-^Manufacturer   ^Country^Marketed as   ^Li ^Lm^Wi ^Wm^
-|Bicycle        |US     |Poker         |3.5|88|2.5|63|
-|Cartamundi     |Belgium|Poker         |3.5|88|2.5|63|
-|Cartamundi     |Belgium|Bridge        |3.4|87|2.2|56|
-|Piatnik        |Austria|Poker Pro wide|3.5|88|2.5|63|
-|Piatnik        |Austria|Bridge narrow |3.5|89|2.3|58|
-|Kem            |US     |Poker wide    |3.5|89|2.5|64|
-|Kem            |US     |Bridge narrow |3.5|89|2.2|57|
-|De La Rue 1870 |UK     |not specified |3.7|94|2.5|64|
-|De La Rue 1890 |UK     |not specified |3.5|90|2.4|62|
-|Handa          |Denmark|wide          |3.6|91|2.4|62|
-|Ravensburger   |Germany|Poker         |3.6|92|2.3|59|
-|ASS Altenburger|Germany|Poker, Rummy  |3.6|91|2.3|59|
-|Waddingtons    |UK     |Bridge        |3.5|88|2.3|58|
-|Handa          |Denmark|narrow        |3.4|87|2.2|56|
-|Oberg          |Sweden |Poker         |3.4|87|2.2|56|
-|]
+
+6 x 13 (squares) = 78
+
+## Unpaired, Suited Hands
+&[s|A]&[s|K] &nbsp; &[h|A]&[h|K]
+&[d|A]&[d|K] &nbsp; &[c|A]&[c|K]
+
+
+4 x 78 (squares) = 312
+
+## Unpaired, Offsuited Hands
+&[s|A]&[h|K] &nbsp; &[s|A]&[d|K] &nbsp; &[s|A]&[c|K]
+&[h|A]&[s|K] &nbsp; &[h|A]&[d|K] &nbsp; &[h|A]&[c|K]
+&[d|A]&[s|K] &nbsp; &[d|A]&[h|K] &nbsp; &[d|A]&[c|K]
+&[c|A]&[s|K] &nbsp; &[c|A]&[h|K] &nbsp; &[c|A]&[d|K]
+
+
+12 x 78 (squares) = 936
+
+[!
+Total Squares = 13 * 13 = 169
+Total Combos  = 1326
+!]
+
+
+## Hand Matrix
+
+^[preflop-combos.webp]
+
+Equity (as %) of starting hands in one-on-one matchups against a random hand
+
+^[probability-win-random.webp]
