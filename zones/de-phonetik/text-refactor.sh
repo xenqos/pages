@@ -1,13 +1,13 @@
 #!/bin/bash
 #-------------------------------------------------------------------------------
 
-dir_prefix="${HOME}/mnt/data/Webpages/zones/de-grammatik"
+dir_prefix="${HOME}/mnt/data/Webpages/zones/de-phonetik"
 dir_sounds="${dir_prefix}/sounds"
 dir_sources="${dir_prefix}/sources"
 dir_texts="${dir_prefix}/texts"
 
-number_start=56
-number_shift=2
+number_start=6
+number_shift=1
 
 #
 exit 0
