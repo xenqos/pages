@@ -1,26 +1,35 @@
-###### Глаголы &nbsp;•&nbsp; Таблицы склонения
+###### Глаголы &nbsp;•&nbsp; Модальные
 
-# Indikativ Futur II
+### Модальные глаголы ###
 
-%[m|sagen] - говорить
+# dürfen
+
+[!
+разрешать - разрешение, запрет
+!]
+
+## Indikativ
+
+### Präsens
+
 [|
-|ich|%[m|werde] |%[m|gesagt haben]|
-|du |%[m|wirst] |%[m|gesagt haben]|
-|er |%[m|wird]  |%[m|gesagt haben]|
+|ich|%[m|darf  ]|wir|%[m|dürfen]|
+|du |%[m|darfst]|ihr|%[m|dürft ]|
+|er |%[m|darf  ]|sie|%[m|dürfen]|
 |]
+
+### Präteritum
+
 [|
-|wir|%[m|werden]|%[m|gesagt haben]|
-|ihr|%[m|werdet]|%[m|gesagt haben]|
-|sie|%[m|werden]|%[m|gesagt haben]|
+|ich|%[m|durfte  ]|wir|%[m|durften ]|
+|du |%[m|durftest]|ihr|%[m|durftet ]|
+|er |%[m|durfte  ]|sie|%[m|durften ]|
 |]
-%[m|singen] - петь
-[|
-|ich|%[m|werde] |%[m|gesungen haben]|
-|du |%[m|wirst] |%[m|gesungen haben]|
-|er |%[m|wird]  |%[m|gesungen haben]|
-|]
-[|
-|wir|%[m|werden]|%[m|gesungen haben]|
-|ihr|%[m|werdet]|%[m|gesungen haben]|
-|sie|%[m|werden]|%[m|gesungen haben]|
-|]
+
+## Konjunktiv
+
+%[m|dürfte]
+
+## Partizip II
+
+%[m|gedurft]

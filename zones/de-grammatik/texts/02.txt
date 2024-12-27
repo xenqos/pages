@@ -1,34 +1,38 @@
-###### Фонетика
+###### Орфография
 
-## Фонетика ##
+## Орфография ##
 
-# Гласные
+# Алфавит
 
-### Монофтонги
-@[../images/monophthonges.webp]
 [|
-|%[l|a ]|%[m|Kamm   ]|
-|%[l|aː]|%[m|kam    ]|
-|%[l|ɛ ]|%[m|Stelle ]|
-|%[l|ə ]|%[m|bitte  ]|
-|%[l|ɛː]|%[m|Käse   ]|
-|%[l|eː]|%[m|stehlen]|
-|%[l|ɪ ]|%[m|Mitte  ]|
-|%[l|iː]|%[m|Mieter ]|
-|%[l|ɔ⁠ ]|%[m|offen  ]|
-|%[l|oː]|%[m|Ofen   ]|
-|%[l|œ⁠ ]|%[m|Hölle  ]|
-|%[l|øː]|%[m|Höhle  ]|
-|%[l|ʊ ]|%[m|Mutter ]|
-|%[l|uː]|%[m|Mut    ]|
-|%[l|y ]|%[m|Müller ]|
-|%[l|yː]|%[m|Mühle  ]|
-|]
-
-### Дифтонги
-@[../images/diphthonges.webp]
-[|
-|%[l|aʊ]|%[m|Haus   ]|
-|%[l|aɪ]|%[m|Heim   ]|
-|%[l|ɔɪ]|%[m|Eule   ]|
+|%[m|A]|%[m|a]|A       |
+|%[m|B]|%[m|b]|Be      |
+|%[m|C]|%[m|c]|Ce      |
+|%[m|D]|%[m|d]|De      |
+|%[m|E]|%[m|e]|E       |
+|%[m|F]|%[m|f]|Ef      |
+|%[m|G]|%[m|g]|Ge      |
+|%[m|H]|%[m|h]|Ha      |
+|%[m|I]|%[m|i]|I       |
+|%[m|J]|%[m|j]|Jott    |
+|%[m|K]|%[m|k]|Ka      |
+|%[m|L]|%[m|l]|El      |
+|%[m|M]|%[m|m]|Em      |
+|%[m|N]|%[m|n]|En      |
+|%[m|O]|%[m|o]|O       |
+|%[m|P]|%[m|p]|Pe      |
+|%[m|Q]|%[m|q]|Qu      |
+|%[m|R]|%[m|r]|Er      |
+|%[m|S]|%[m|s]|Es      |
+|%[m|T]|%[m|t]|Te      |
+|%[m|U]|%[m|u]|U       |
+|%[m|V]|%[m|v]|Vau     |
+|%[m|W]|%[m|w]|We      |
+|%[m|X]|%[m|x]|Ix      |
+|%[m|Y]|%[m|y]|Ypsilon |
+|%[m|Z]|%[m|z]|Zett    |
+|%[m|Ä]|%[m|ä]|A Umlaut|
+|%[m|Ö]|%[m|ö]|O Umlaut|
+|%[m|Ü]|%[m|ü]|U Umlaut|
+|%[m| ]|%[m|ß]|Eszett  |
 |]

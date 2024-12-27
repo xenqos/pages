@@ -1,91 +1,21 @@
-###### Существительные
+###### Наречия
 
-# Тип II - слабое склонение
+## Наречия ##
 
-[|
-|nom.|-%[m|]|
-|gen.|-(%[m|e])%[m|n]|
-|dat.|-(%[m|e])%[m|n]|
-|akk.|-(%[m|e])%[m|n]|
-|]
+# Вопросительные
 
 [|
-|nom.|%[m|der Knabe]      |%[m|der Mensch]       |%[m|der Diplomat]      |
-|gen.|%[m|des Knabe]%[n|n]|%[m|des Mensch]%[n|en]|%[m|des Diplomat]%[n|n]|
-|dat.|%[m|dem Knabe]%[n|n]|%[m|dem Mensch]%[n|en]|%[m|dem Diplomat]%[n|n]|
-|akk.|%[m|den Knabe]%[n|n]|%[m|den Mensch]%[n|en]|%[m|den Diplomat]%[n|n]|
-|]
-
-[!
-Склоняются существительные только мужского рода.
-Преимущественно одушевлённые.
-!]
-
-[!
-Существительные, оканчивающиеся на -%[n|e]:
-!]
-
-[|
-|%[m|der Affe]   |обезьяна |
-|%[m|der Erbe]   |наследник|
-|%[m|der Falke]  |сокол    |
-|%[m|der Hase]   |заяц     |
-|%[m|der Knabe]  |мальчик  |
-|%[m|der Kollege]|коллега  |
-|%[m|der Löwe]   |лев      |
-|%[m|der Neffe]  |племянник|
+|%[m|wie  ]|как   |
+|%[m|warum]|почему|
+|%[m|wann ]|когда |
+|%[m|wo   ]|где   |
+|%[m|wohin]|куда  |
+|%[m|woher]|откуда|
+|%[m|wieviel]|сколько <sup>1</sup>|
+|%[m|wie viele]|сколько <sup>2</sup>|
 |]
 
 [!
-Некоторые односложные имена существительные:
+<sup>1</sup> не исчисляемые
+<sup>2</sup> исчисляемые
 !]
-
-[|
-|%[m|der Bär]   |медведь |
-|%[m|der Fürst] |князь   |
-|%[m|der Graf]  |граф    |
-|%[m|der Held]  |герой   |
-|%[m|der Herr]  |господин|
-|%[m|der Hirt]  |пастух  |
-|%[m|der Mensch]|человек |
-|%[m|der Narr]  |дурак   |
-|%[m|der Ochs]  |бык     |
-|%[m|der Prinz] |принц   |
-|%[m|der Spatz] |воробей |
-|%[m|der Tor]   |дурак   |
-|%[m|der Zar]   |царь    |
-|]
-
-[!
-Существительные с иностранными суффиксами:
-!]
--%[n|ant], -%[n|at], -%[n|ent], -%[n|et], -%[n|graph], -%[n|greif], -%[n|ist], -%[n|it], -%[n|ot]
-
-[|
-|%[m|der Aspirant]|аспирант|
-|%[m|der Fotograf]|фотограф|
-|%[m|der Diplomat]|дипломат|
-|%[m|der Pianist] |пианист |
-|]
-
-[!
-Существительные:
-!]
-
-[|
-|%[m|der Architekt]|архитектор|
-|%[m|der Kamerad]  |товарищ   |
-|]
-
-[!
-Несколько существительных иностранного происхождения:
-!]
-
-[|
-|%[m|der Planet]   |планета  |
-|%[m|der Вrilliant]|бриллиант|
-|%[m|der Komet]    |комета   |
-|%[m|der Diamant]  |алмаз    |
-|%[m|der Automat]  |автомат  |
-|%[m|der Foliant]  |фолиант  |
-|]

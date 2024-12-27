@@ -1,21 +1,29 @@
-###### Существительные
+###### Глаголы
 
-# Тип III - женское склонение
+## Глаголы ##
 
+# Термины
+---
 [|
-|nom.|-%[m|]|
-|gen.|-%[m|]|
-|dat.|-%[m|]|
-|akk.|-%[m|]|
+|%[m|der Modus]        |                          |наклонение       |
+|%[m|der Indikativ]    |%[n|die Wirklichkeitsform]|изъявительное    |
+|%[m|der Konjunktiv I] |%[n|die Möglichkeitsform] |сослагательное I |
+|%[m|der Konjunktiv II]|%[n|die Möglichkeitsform] |сослагательное II|
+|%[m|der Imperativ]    |%[n|die Befehlsform]      |повелительное    |
 |]
 
 [|
-|nom.|%[m|die Nacht]|%[m|die Kraft]|%[m|die Tür]|
-|gen.|%[m|der Nacht]|%[m|der Kraft]|%[m|der Tür]|
-|dat.|%[m|der Nacht]|%[m|der Kraft]|%[m|der Tür]|
-|akk.|%[m|die Nacht]|%[m|die Kraft]|%[m|die Tür]|
+|%[m|der Konjunktiv I ]|косвенная речь      |
+|%[m|der Konjunktiv II]|условное придаточное|
 |]
-
-[!
-Склоняются все имена существительные женского рода.
-!]
+---
+[|
+|%[m|das Tempus]         |%[n|die Zeit]            |время                    |
+|%[m|das Präsens]        |%[n|die Gegenwart]       |настоящее                |
+|%[m|das Präteritum]     |%[n|die Vergangenheit]   |прошедшее                |
+|%[m|das Futur I]        |%[n|die Zukunft]         |будущее                  |
+|%[m|das Perfekt]        |%[n|die Vorgegenwart]    |предпрошедшее            |
+|%[m|das Plusquamperfekt]|%[n|die Vorvergangenheit]|предпрошедшее в прошлом  |
+|%[m|das Futur II]       |%[n|die Vorzukunft]      |предварительное в будущем|
+|]
+---

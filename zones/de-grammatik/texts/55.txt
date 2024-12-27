@@ -1,31 +1,33 @@
-###### Глаголы &nbsp;•&nbsp; Таблицы склонения
+###### Глаголы &nbsp;•&nbsp; Модальные
 
-# Konjunktiv II Plusquamperfekt
+# müssen
 
-## Haben + Partizip
+[!
+быть вынужденным сделать
+!]
 
-%[m|sagen] - говорить
+## Indikativ
+
+### Präsens
+
 [|
-|ich|%[m|hätte]  |%[m|gesagt]|
-|du |%[m|hättest]|%[m|gesagt]|
-|er |%[m|hätte]  |%[m|gesagt]|
-|]
-[|
-|wir|%[m|hätten] |%[m|gesagt]|
-|ihr|%[m|hättet] |%[m|gesagt]|
-|sie|%[m|hätten] |%[m|gesagt]|
+|ich|%[m|muss ]|wir|%[m|müssen]|
+|du |%[m|musst]|ihr|%[m|müsst ]|
+|er |%[m|muss ]|sie|%[m|müssen]|
 |]
 
-## Sein + Partizip
+### Präteritum
 
-%[m|rennen] - бежать
 [|
-|ich|%[m|wäre]  |%[m|gerannt]|
-|du |%[m|wär](%[m|e])%[m|st]|%[m|gerannt]|
-|er |%[m|wäre]  |%[m|gerannt]|
+|ich|%[m|musste  ]|wir|%[m|mussten ]|
+|du |%[m|musstest]|ihr|%[m|musstet ]|
+|er |%[m|musste  ]|sie|%[m|mussten ]|
 |]
-[|
-|wir|%[m|wären]|%[m|gerannt]|
-|ihr|%[m|wär](%[m|e])%[m|t] |%[m|gerannt]|
-|sie|%[m|wären]|%[m|gerannt]|
-|]
+
+## Konjunktiv
+
+%[m|müsste]
+
+## Partizip II
+
+%[m|gemusst]

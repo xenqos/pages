@@ -1,263 +1,91 @@
-###### Произношение
+###### Существительные
 
-# Одиночные согласные
+# Тип II - слабое склонение
 
-%[r|b]&emsp;/ %[l|b] /
-
-[|-
-|%[m|bitte    ]|пожалуйста|
-|%[m|der Ball ]|мяч, шар  |
-|%[m|der Nebel]|туман     |
+[|
+|nom.|-%[m|]|
+|gen.|-(%[m|e])%[m|n]|
+|dat.|-(%[m|e])%[m|n]|
+|akk.|-(%[m|e])%[m|n]|
 |]
 
-%[r|b]&emsp;/ %[l|p] /
+[|
+|nom.|%[m|der Knabe]      |%[m|der Mensch]       |%[m|der Diplomat]      |
+|gen.|%[m|des Knabe]%[n|n]|%[m|des Mensch]%[n|en]|%[m|des Diplomat]%[n|n]|
+|dat.|%[m|dem Knabe]%[n|n]|%[m|dem Mensch]%[n|en]|%[m|dem Diplomat]%[n|n]|
+|akk.|%[m|den Knabe]%[n|n]|%[m|den Mensch]%[n|en]|%[m|den Diplomat]%[n|n]|
+|]
 
 [!
-в конце слова
+Склоняются существительные только мужского рода.
+Преимущественно одушевлённые.
 !]
-
-[|-
-|%[m|halb]|половина|
-|%[m|gelb]|жёлтый  |
-|%[m|taub]|глухой  |
-|]
-
-%[r|d]&emsp;/ %[l|d] /
-
-[|-
-|%[m|dort     ]|там    |
-|%[m|laden    ]|грузить|
-|%[m|die Nadel]|игла   |
-|]
-
-%[r|d]&emsp;/ %[l|t] /
 
 [!
-в конце слова
+Существительные, оканчивающиеся на -%[n|e]:
 !]
 
-[|-
-|%[m|bald    ]|скоро  |
-|%[m|das Bild]|картина|
-|%[m|das Geld]|деньги |
+[|
+|%[m|der Affe]   |обезьяна |
+|%[m|der Erbe]   |наследник|
+|%[m|der Falke]  |сокол    |
+|%[m|der Hase]   |заяц     |
+|%[m|der Knabe]  |мальчик  |
+|%[m|der Kollege]|коллега  |
+|%[m|der Löwe]   |лев      |
+|%[m|der Neffe]  |племянник|
 |]
-
-%[r|f]&emsp;/ %[l|f] /
-
-[|-
-|%[m|frei    ]|свободный|
-|%[m|die Frau]|женщина  |
-|%[m|das Sofa]|диван    |
-|]
-
-%[r|g]&emsp;/ %[l|g] /
-
-[|-
-|%[m|gut      ]|хороший |
-|%[m|der Wagen]|вагон   |
-|%[m|sagen    ]|говорить|
-|]
-
-%[r|g]&emsp;/ %[l|k] /
 
 [!
-в конце слова
+Некоторые односложные имена существительные:
 !]
 
-[|-
-|%[m|der Tag]|день  |
-|%[m|der Weg]|дорога|
-|%[m|der Zug]|поезд |
+[|
+|%[m|der Bär]   |медведь |
+|%[m|der Fürst] |князь   |
+|%[m|der Graf]  |граф    |
+|%[m|der Held]  |герой   |
+|%[m|der Herr]  |господин|
+|%[m|der Hirt]  |пастух  |
+|%[m|der Mensch]|человек |
+|%[m|der Narr]  |дурак   |
+|%[m|der Ochs]  |бык     |
+|%[m|der Prinz] |принц   |
+|%[m|der Spatz] |воробей |
+|%[m|der Tor]   |дурак   |
+|%[m|der Zar]   |царь    |
 |]
-
-%[r|ig]&emsp;/ %[l|ç] /
-
-[|-
-|%[m|lustig ]|весёлый|
-|%[m|fertig ]|готовый|
-|%[m|wichtig]|важный|
-|]
-
-%[r|h]&emsp;/ %[l|x] /
-
-[|-
-|%[m|haben ]|иметь|
-|%[m|halt  ]|стой!|
-|%[m|hallo ]|алло!|
-|]
-
-%[r|h]&emsp;/ %[l|-] /
 
 [!
-удлиняет предыдущую гласную
+Существительные с иностранными суффиксами:
 !]
+-%[n|ant], -%[n|at], -%[n|ent], -%[n|et], -%[n|graph], -%[n|greif], -%[n|ist], -%[n|it], -%[n|ot]
 
-[|-
-|%[m|nah  ]|близкий|
-|%[m|gehen]|идти   |
-|%[m|ruht ]|вольно!|
+[|
+|%[m|der Aspirant]|аспирант|
+|%[m|der Fotograf]|фотограф|
+|%[m|der Diplomat]|дипломат|
+|%[m|der Pianist] |пианист |
 |]
-
-%[r|j]&emsp;/ %[l|j] /
-
-[|-
-|%[m|ja      ]|да     |
-|%[m|junge   ]|молодой|
-|%[m|das Jahr]|год    |
-|]
-
-%[r|k]&emsp;/ %[l|k] /
 
 [!
-/ %[l|k] / произносяться с придыханием - / %[l|kʰ] /
+Существительные:
 !]
 
-[|-
-|%[m|das Kind ]|ребёнок|
-|%[m|dunkel   ]|тёмный |
-|%[m|das Paket]|пакет  |
+[|
+|%[m|der Architekt]|архитектор|
+|%[m|der Kamerad]  |товарищ   |
 |]
-
-%[r|l]&emsp;/ %[l|l] /
-
-[|-
-|%[m|elf      ]|одиннадцать|
-|%[m|die Liebe]|любовь     |
-|%[m|der Schal]|шарф       |
-|]
-
-%[r|m]&emsp;/ %[l|m] /
-
-[|-
-|%[m|machen    ]|делать|
-|%[m|die Kamera]|камера|
-|%[m|die Lampe ]|лампа |
-|]
-
-%[r|n]&emsp;/ %[l|n] /
-
-[|-
-|%[m|der Name  ]|имя   |
-|%[m|der Anfang]|начало|
-|%[m|die Linde ]|липа  |
-|]
-
-%[r|p]&emsp;/ %[l|p] /
 
 [!
-/ %[l|p] / произносяться с придыханием - / %[l|pʰ] /
+Несколько существительных иностранного происхождения:
 !]
 
-[|-
-|%[m|der Punkt ]|точка |
-|%[m|der Pinsel]|кисть |
-|%[m|das Papier]|бумага|
-|]
-
-%[r|qu]&emsp;/ %[l|kv] /
-
-[|-
-|%[m|die Qualität]|качество|
-|%[m|der Quell   ]|источник|
-|%[m|das Aquarium]|аквариум|
-|]
-
-%[r|r]&emsp;/ %[l|r] /
-
-[|-
-|%[m|die Rose ]|роза    |
-|%[m|arbeiten ]|работать|
-|%[m|der Regen]|дождь   |
-|]
-
-%[r|r]&emsp;/ %[l|ə] /
-
-[!
-в конце слова
-!]
-
-[|-
-|%[m|wir       ]|мы  |
-|%[m|das Wasser]|вода|
-|%[m|der Vater ]|отец|
-|]
-
-%[r|s]&emsp;/ %[l|z] /
-
-[!
-перед гласной
-!]
-
-[|-
-|%[m|die Sonne]|солнце|
-|%[m|singen   ]|петь  |
-|%[m|die Sahne]|сливки|
-|]
-
-%[r|s]&emsp;/ %[l|s] /
-
-[!
-в конце слова
-!]
-
-[|-
-|%[m|das Haus]|дом   |
-|%[m|das Glas]|стекло|
-|%[m|der Hals]|шея   |
-|]
-
-%[r|t]&emsp;/ %[l|t] /
-
-[!
-/ %[l|t] / произносяться с придыханием - / %[l|tʰ] /
-!]
-
-[|-
-|%[m|der Tag  ]|день |
-|%[m|das Brot ]|хлеб |
-|%[m|die Karte]|карта|
-|]
-
-%[r|v]&emsp;/ %[l|f] /
-
-[|-
-|%[m|vier     ]|четыре|
-|%[m|voll     ]|полный|
-|%[m|der Vater]|отец  |
-|]
-
-%[r|v]&emsp;/ %[l|v] /
-
-[!
-в иностранных словах
-!]
-
-[|-
-|%[m|die Vase   ]|ваза   |
-|%[m|die Vitrine]|витрина|
-|%[m|der Vulkan ]|вулкан |
-|]
-
-%[r|w]&emsp;/ %[l|v] /
-
-[|-
-|%[m|der Wagen]|вагон |
-|%[m|der Wind ]|ветер |
-|%[m|der Weg  ]|дорога|
-|]
-
-%[r|x]&emsp;/ %[l|ks] /
-
-[|-
-|%[m|der Text  ]|текст  |
-|%[m|das Examen]|экзамен|
-|%[m|das Taxi  ]|такси  |
-|]
-
-%[r|z]&emsp;/ %[l|ts] /
-
-[|-
-|%[m|zahlen  ]|платить|
-|%[m|die Zeit]|время  |
-|%[m|der Zug ]|поезд  |
+[|
+|%[m|der Planet]   |планета  |
+|%[m|der Вrilliant]|бриллиант|
+|%[m|der Komet]    |комета   |
+|%[m|der Diamant]  |алмаз    |
+|%[m|der Automat]  |автомат  |
+|%[m|der Foliant]  |фолиант  |
 |]

@@ -1,33 +1,33 @@
-###### Глаголы &nbsp;•&nbsp; Неличные формы
+###### Глаголы &nbsp;•&nbsp; Модальные
 
-# Partizip II
+# wollen
 
-To Be Done
+[!
+хотеть, желать
+!]
 
-<!--
-%[m|sagen] - говорить
+## Indikativ
+
+### Präsens
+
 [|
-|ich|%[m|hätte]  |%[m|gesagt]|
-|du |%[m|hättest]|%[m|gesagt]|
-|er |%[m|hätte]  |%[m|gesagt]|
-|]
-[|
-|wir|%[m|hätten] |%[m|gesagt]|
-|ihr|%[m|hättet] |%[m|gesagt]|
-|sie|%[m|hätten] |%[m|gesagt]|
+|ich|%[m|will  ]|wir|%[m|wollen]|
+|du |%[m|willst]|ihr|%[m|wollt ]|
+|er |%[m|will  ]|sie|%[m|wollen]|
 |]
 
-## Sein + Partizip
+### Präteritum
 
-%[m|rennen] - бежать
 [|
-|ich|%[m|wäre]  |%[m|gerannt]|
-|du |%[m|wär](%[m|e])%[m|st]|%[m|gerannt]|
-|er |%[m|wäre]  |%[m|gerannt]|
+|ich|%[m|wollte  ]|wir|%[m|wollten ]|
+|du |%[m|wolltest]|ihr|%[m|wolltet ]|
+|er |%[m|wollte  ]|sie|%[m|wollten ]|
 |]
-[|
-|wir|%[m|wären]|%[m|gerannt]|
-|ihr|%[m|wär](%[m|e])%[m|t] |%[m|gerannt]|
-|sie|%[m|wären]|%[m|gerannt]|
-|]
--->
+
+## Konjunktiv
+
+%[m|wollte]
+
+## Partizip II
+
+%[m|gewollt]

@@ -1,78 +1,13 @@
-###### Произношение
+###### Артикль
 
-## Произношение ##
+## Артикль ##
 
-# Монофтонги - a, o, u
+# Неопределённый
 
-%[r|a]&emsp;/ %[l|a] /
-[|-
-|%[m|alle     ]|весь   |
-|%[m|der Mann ]|мужчина|
-|%[m|die Tasse]|чашка  |
-|]
-
-%[r|a]&emsp;/ %[l|aː] /
-
-[|-
-|%[m|der Rat  ]|совет|
-|%[m|der Abend]|вечер|
-|%[m|haben    ]|иметь|
-|]
-
-%[r|aa]&emsp;/ %[l|aː] /
-
-[|-
-|%[m|das Haar]|волосы|
-|%[m|der Saal]|зал   |
-|%[m|die Saat]|семена|
-|]
-
-%[r|ah]&emsp;/ %[l|aː] /
-
-[|-
-|%[m|der Zahn]|зуб  |
-|%[m|der Hahn]|петух|
-|%[m|das Mahl]|еда  |
-|]
-
-%[r|o]&emsp;/ %[l|ɔ⁠] /
-[|-
-|%[m|der Kopf   ]|голова |
-|%[m|der  Frosch]|лягушка|
-|%[m|das Korn   ]|зерно  |
-|]
-
-%[r|o]&emsp;/ %[l|oː] /
-[|-
-|%[m|das Tor ]|ворота|
-|%[m|der Hof ]|двор  |
-|%[m|das Brot]|хлеб  |
-|]
-
-%[r|oh]&emsp;/ %[l|oː] /
-[|-
-|%[m|roh    ]|сырой   |
-|%[m|das Ohr]|ухо     |
-|%[m|bohren ]|сверлить|
-|]
-
-%[r|u]&emsp;/ %[l|ʊ] /
-[|-
-|%[m|bunt    ]|пёстрый|
-|%[m|der Hund]|собака |
-|%[m|die Lust]|желание|
-|]
-
-%[r|u]&emsp;/ %[l|uː] /
-[|-
-|%[m|der Zug   ]|поезд  |
-|%[m|die Schule]|школа  |
-|%[m|die Blume ]|цветок|
-|]
-
-%[r|uh]&emsp;/ %[l|uː] /
-[|-
-|%[m|der Schuh]|ботинок    |
-|%[m|die Ruhe ]|спокойствие|
-|%[m|die Kuh  ]|корова     |
+[|
+^^m.^f.^n.^
+|nom.|%[m|ein  ]|%[m|eine ]|%[m|ein  ]|
+|gen.|%[m|eines]|%[m|einer]|%[m|eines]|
+|dat.|%[m|einem]|%[m|einer]|%[m|einem]|
+|akk.|%[m|einen]|%[m|eine ]|%[m|ein  ]|
 |]

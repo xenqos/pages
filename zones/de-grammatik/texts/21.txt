@@ -1,22 +1,16 @@
-###### Существительные
+###### Глаголы
 
-# Склонение множественного числа
-
-[|
-|nom.|-%[m|]|
-|gen.|-%[m|]|
-|dat.|-%[m|n]|
-|akk.|-%[m|]|
-|]
+# Неличные формы
 
 [|
-|nom.|%[m|die Väter] |%[m|die Bücher] |%[m|die Menschen]|%[m|die Parks]|
-|gen.|%[m|der Väter] |%[m|der Bücher] |%[m|der Menschen]|%[m|der Parks]|
-|dat.|%[m|den Vätern]|%[m|den Büchern]|%[m|den Menschen]|%[m|den Parks]|
-|akk.|%[m|die Väter] |%[m|die Bücher] |%[m|die Menschen]|%[m|die Parks]|
+|%[m|der Infinitiv]                          |Инфинитив            |
+|%[m|das Partizip Präsens] (%[m|Partizip I]) |Причастие настоящее  |
+|%[m|das Partizip Perfekt] (%[m|Partizip II])|Причастие совершенное|
 |]
 
-[!
-Существительные всех родов склоняются одинаково.
-Если во множественном числе суффиксы -(е)n, -s, окончания -n в дательном падеже нет.
-!]
+<!--
+### Partizip
+__Adjective or to form adverbial clauses.__
+%[m|Präsens]
+
+-->

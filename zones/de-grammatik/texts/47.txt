@@ -1,35 +1,33 @@
-###### Глаголы &nbsp;•&nbsp; Таблицы склонения
+###### Глаголы &nbsp;•&nbsp; Неличные формы
 
-# Indikativ Präteritum
+# Partizip II
 
-## Regelmäßige
+To Be Done
 
-[|
-^^s.^p.^
-|1|-%[l|te]  |-%[l|ten]|
-|2|-%[l|test]|-%[l|tet]|
-|3|-%[l|te]  |-%[l|ten]|
-|]
+<!--
 %[m|sagen] - говорить
 [|
-^^s.^p.^
-|1|%[m|sag]%[l|te]  |%[m|sag]%[l|ten]|
-|2|%[m|sag]%[l|test]|%[m|sag]%[l|tet]|
-|3|%[m|sag]%[l|te]  |%[m|sag]%[l|ten]|
+|ich|%[m|hätte]  |%[m|gesagt]|
+|du |%[m|hättest]|%[m|gesagt]|
+|er |%[m|hätte]  |%[m|gesagt]|
+|]
+[|
+|wir|%[m|hätten] |%[m|gesagt]|
+|ihr|%[m|hättet] |%[m|gesagt]|
+|sie|%[m|hätten] |%[m|gesagt]|
 |]
 
-## Unregelmäßige
+## Sein + Partizip
 
+%[m|rennen] - бежать
 [|
-^^s.^p.^
-|1|-%[l|] |-%[l|en]|
-|2|-%[l|st]|-%[l|t] |
-|3|-%[l|] |-%[l|en]|
+|ich|%[m|wäre]  |%[m|gerannt]|
+|du |%[m|wär](%[m|e])%[m|st]|%[m|gerannt]|
+|er |%[m|wäre]  |%[m|gerannt]|
 |]
-%[m|singen] - петь
 [|
-^^s.^p.^
-|1|%[m|sang]%[l|]  |%[m|sang]%[l|en]|
-|2|%[m|sang]%[l|st]|%[m|sang]%[l|t] |
-|3|%[m|sang]%[l|]  |%[m|sang]%[l|en]|
+|wir|%[m|wären]|%[m|gerannt]|
+|ihr|%[m|wär](%[m|e])%[m|t] |%[m|gerannt]|
+|sie|%[m|wären]|%[m|gerannt]|
 |]
+-->

@@ -1,11 +1,31 @@
-###### Артикль
+###### Местоимения
 
-# Определённый
-
+# Вопросительные
+---
+## Личные
+[|
+|nom.|%[m|wer   ]|%[m|was   ]|кто |что |
+|gen.|%[m|wessen]|%[m|wessen]|кого|чего|
+|dat.|%[m|wem   ]|-          |кому|-   |
+|akk.|%[m|wen   ]|%[m|was   ]|кого|что |
+|]
+---
+## Указательные
+### какой, который
+[|
+^    ^m.          ^f.          ^n.         ^p.         ^
+|nom.|%[m|welcher]|%[m|welche ]|%[m|welches]|%[m|welche ]|
+|gen.|%[m|welches]|%[m|welcher]|%[m|welches]|%[m|welcher]|
+|dat.|%[m|welchem]|%[m|welcher]|%[m|welchem]|%[m|welchen]|
+|akk.|%[m|welchen]|%[m|welche ]|%[m|welches]|%[m|welche ]|
+|]
+---
+### что за
 [|
 ^^m.^f.^n.^p.^
-|nom.|%[m|der]|%[m|die]|%[m|das]|%[m|die]|
-|gen.|%[m|des]|%[m|der]|%[m|des]|%[m|der]|
-|dat.|%[m|dem]|%[m|der]|%[m|dem]|%[m|den]|
-|akk.|%[m|den]|%[m|die]|%[m|das]|%[m|die]|
+|nom.|%[m|was für ein  ]|%[m|was für eine ]|%[m|was für ein  ]|%[m|was für]|
+|gen.|%[m|was für eines]|%[m|was für einer]|%[m|was für eines]|-|
+|dat.|%[m|was für einem]|%[m|was für einer]|%[m|was für einem]|%[m|was für]|
+|akk.|%[m|was für einen]|%[m|was für eine ]|%[m|was für ein  ]|%[m|was für]|
 |]
+---

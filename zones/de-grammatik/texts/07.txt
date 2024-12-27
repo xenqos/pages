@@ -1,38 +1,91 @@
-###### Произношение
+###### Существительные
 
-# Дифтонги
+# Тип I - сильное склонение
 
-%[r|аi]&emsp;/ %[l|aɪ] /
-[|-
-|%[m|der Mai   ]|май   |
-|%[m|die Saite ]|струна|
-|%[m|der Kaiser]|кайзер|
+[|
+|nom.|-%[m|]|
+|gen.|-(%[m|e])%[m|s]|
+|dat.|-(%[m|e])|
+|akk.|-%[m|]|
 |]
 
-%[r|аu]&emsp;/ %[l|aʊ] /
-[|-
-|%[m|auch    ]|тоже |
-|%[m|das Haus]|дом  |
-|%[m|grau    ]|серый|
+[|
+|nom.|%[m|das Fenster]      |%[m|der Löffel]      |
+|gen.|%[m|des Fenster]%[n|s]|%[m|des Löffel]%[n|s]|
+|dat.|%[m|dem Fenster]      |%[m|dem Löffel]      |
+|akk.|%[m|das Fenster]      |%[m|den Löffel]      |
 |]
 
-%[r|äu]&emsp;/ %[l|ɔɪ] /
-[|-
-|%[m|die Bäuerin]|крестьянка|
-|%[m|der Käufer ]|покупатель|
-|%[m|der Läufer ]|бегун     |
+[!
+Большинство существительных мужского рода.
+Все существительные среднего рода (кроме das Herz).
+!]
+
+[|
+|%[m|der Vater]  |отец   |
+|%[m|der Mann]   |человек|
+|%[m|das Volk]   |народ  |
+|%[m|das Fenster]|окно   |
 |]
 
-%[r|еi]&emsp;/ %[l|aɪ] /
-[|-
-|%[m|ein     ]|один|
-|%[m|mein    ]|мой |
-|%[m|dеr Reis]|рис |
+[!
+Существительные мужского рода на -us, -ismus окончания -(e)s в родительном падеже не получают:
+!]
+
+[|
+|nom.|%[m|der Kaktus]|%[m|der Realismus]|
+|gen.|%[m|des Kaktus]|%[m|des Realismus]|
+|dat.|%[m|dem Kaktus]|%[m|dem Realismus]|
+|akk.|%[m|den Kaktus]|%[m|den Realismus]|
+|]
+__кактус, реализм__
+
+[!
+Окончание -s в родительном падеже в многосложных существительных:
+!]
+
+[|
+|nom.|%[m|der Garten] |%[m|der Kaufmann] |%[m|das Messer] |
+|gen.|%[m|des Gartens]|%[m|des Kaufmanns]|%[m|des Messers]|
+|dat.|%[m|dem Garten] |%[m|dem Kaufmann] |%[m|dem Messer] |
+|akk.|%[m|den Garten] |%[m|den Kaufmann] |%[m|das Messer] |
+|]
+__сад, торговец, нож__
+
+[!
+Окончание -es получают односложные существительные:
+!]
+
+[|
+|nom.|%[m|der Hund]  |%[m|der Rat]  |%[m|das Buch]  |
+|gen.|%[m|des Hundes]|%[m|des Rates]|%[m|des Buches]|
+|dat.|%[m|dem Hund]  |%[m|dem Rat]  |%[m|dem Buch]  |
+|akk.|%[m|den Hund]  |%[m|den Rat]  |%[m|das Buch]  |
+|]
+__собака, совет, книга__
+
+[!
+Окончание -es получают существительные на -%[l|s], -%[l|ß], -%[l|x], -%[l|z], -%[l|tz]:
+!]
+
+[|
+|nom.|%[m|das Glas]  |%[m|der Schmerz]  |%[m|das Gefäß]  |
+|gen.|%[m|des Glases]|%[m|des Schmerzes]|%[m|des Gefäßes]|
+|dat.|%[m|dem Glas]  |%[m|dem Schmerz]  |%[m|dem Gefäß]  |
+|akk.|%[m|das Glas]  |%[m|den Schmerz]  |%[m|das Gefäß]  |
 |]
 
-%[r|eu]&emsp;/ %[l|ɔɪ] /
-[|-
-|%[m|neun      ]|девять|
-|%[m|der Freund]|друг  |
-|%[m|treu      ]|верный|
+__стекло, боль, сосуд__
+
+[!
+Некоторые односложные существительные сохраняют окончание дательного падежа -%[l|е]:
+!]
+
+[|
+|nom.|%[m|das Haus]       |%[m|der Wald]       |
+|gen.|%[m|des Haus]%[n|es]|%[m|des Wald]%[n|es]|
+|dat.|%[m|dem Haus]%[n|e] |%[m|dem Wald]%[n|e] |
+|akk.|%[m|das Haus]       |%[m|den Wald]       |
 |]
+
+__дом, лес__

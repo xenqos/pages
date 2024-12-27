@@ -1,38 +1,28 @@
-###### Орфография
+###### Местоимения
 
-## Орфография ##
+## Местоимения ##
 
-# Алфавит
+# Личные
 
 [|
-|%[m|A]|%[m|a]|A       |
-|%[m|B]|%[m|b]|Be      |
-|%[m|C]|%[m|c]|Ce      |
-|%[m|D]|%[m|d]|De      |
-|%[m|E]|%[m|e]|E       |
-|%[m|F]|%[m|f]|Ef      |
-|%[m|G]|%[m|g]|Ge      |
-|%[m|H]|%[m|h]|Ha      |
-|%[m|I]|%[m|i]|I       |
-|%[m|J]|%[m|j]|Jott    |
-|%[m|K]|%[m|k]|Ka      |
-|%[m|L]|%[m|l]|El      |
-|%[m|M]|%[m|m]|Em      |
-|%[m|N]|%[m|n]|En      |
-|%[m|O]|%[m|o]|O       |
-|%[m|P]|%[m|p]|Pe      |
-|%[m|Q]|%[m|q]|Qu      |
-|%[m|R]|%[m|r]|Er      |
-|%[m|S]|%[m|s]|Es      |
-|%[m|T]|%[m|t]|Te      |
-|%[m|U]|%[m|u]|U       |
-|%[m|V]|%[m|v]|Vau     |
-|%[m|W]|%[m|w]|We      |
-|%[m|X]|%[m|x]|Ix      |
-|%[m|Y]|%[m|y]|Ypsilon |
-|%[m|Z]|%[m|z]|Zett    |
-|%[m|Ä]|%[m|ä]|A Umlaut|
-|%[m|Ö]|%[m|ö]|O Umlaut|
-|%[m|Ü]|%[m|ü]|U Umlaut|
-|%[m| ]|%[m|ß]|Eszett  |
+^^s.^p.^
+|1|%[m|ich]|%[m|wir]|
+|2|%[m|du]|%[m|ihr]|
+|3|%[m|er], %[m|sie], %[m|es]|%[m|sie]|
+|]
+
+[|
+^^1^2^3^3^3^
+|nom.|%[m|ich   ]|%[m|du    ]|%[m|er    ]|%[m|sie  ]|%[m|es    ]|
+|gen.|%[m|meiner]|%[m|deiner]|%[m|seiner]|%[m|ihrer]|%[m|seiner]|
+|dat.|%[m|mir   ]|%[m|dir   ]|%[m|ihm   ]|%[m|ihr  ]|%[m|ihm   ]|
+|akk.|%[m|mich  ]|%[m|dich  ]|%[m|ihn   ]|%[m|sie  ]|%[m|es    ]|
+|]
+
+[|
+^^1^2^3^
+|nom.|%[m|wir  ]|%[m|ihr ]|%[m|sie  ]|
+|gen.|%[m|unser]|%[m|euer]|%[m|ihrer]|
+|dat.|%[m|uns  ]|%[m|euch]|%[m|ihnen]|
+|akk.|%[m|uns  ]|%[m|euch]|%[m|sie  ]|
 |]
