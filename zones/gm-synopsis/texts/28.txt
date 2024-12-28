@@ -1,40 +1,77 @@
 ###### GTO
 
-# Preflop Combos
+# Combinatorics
 
-## Paired Hands
-&[s|A]&[h|A] &nbsp; &[s|A]&[h|A] &nbsp; &[s|A]&[c|A]
-&[h|A]&[d|A] &nbsp; &[h|A]&[c|A] &nbsp; &[d|A]&[c|A]
+## Unpaired Hands Combinations
 
+[?
+C  - Total Combinations
+A1 - Available Cards for Card 1
+A2 - Available Cards for Card 2
 
-6 x 13 (squares) = 78
+C = A1 * A2
+?]
 
-## Unpaired, Suited Hands
-&[s|A]&[s|K] &nbsp; &[h|A]&[h|K]
-&[d|A]&[d|K] &nbsp; &[c|A]&[c|K]
+## Paired Hands Combinations
 
+[?
+C - Total Combinations
+A - Available Cards
 
-4 x 78 (squares) = 312
+C = ( A * (A - 1) / 2 )
+?]
 
-## Unpaired, Offsuited Hands
-&[s|A]&[h|K] &nbsp; &[s|A]&[d|K] &nbsp; &[s|A]&[c|K]
-&[h|A]&[s|K] &nbsp; &[h|A]&[d|K] &nbsp; &[h|A]&[c|K]
-&[d|A]&[s|K] &nbsp; &[d|A]&[h|K] &nbsp; &[d|A]&[c|K]
-&[c|A]&[s|K] &nbsp; &[c|A]&[h|K] &nbsp; &[c|A]&[d|K]
+### Example
 
+[|
+^A^U^C^E^
+|0|4|6|&[s|A]&[h|A]&ensp;&[s|A]&[d|A]~~&[s|A]&[c|A]&ensp;&[h|A]&[d|A]~~&[h|A]&[c|A]&ensp;&[d|A]&[c|A]|
+|1|3|3|&[s|A]&[h|A]&ensp;&[s|A]&[c|A]~~&[h|A]&[c|A]|
+|2|2|1|&[s|A]&[h|A]|
+|3|1|0||
+|]
 
-12 x 78 (squares) = 936
+A - Available
+U - Unavailable
+C - Combos
+E - Example
+
+<!--
+
+## Concepts
 
 [!
-Total Squares = 13 * 13 = 169
-Total Combos  = 1326
+number of combinations between elements
 !]
 
+%[m|Set]
+>>> set of elements
 
-## Hand Matrix
+%[m|Selection]
+>>> extracts elements from set
 
-^[preflop-combos.webp]
+%[m|Addition]
+>>> 13&[s|] + 13&[h|] + 13&[c|] + 13&[d|] = 52
 
-Equity (as %) of starting hands in one-on-one matchups against a random hand
+%[m|Multiplication]
+>>> 13&[x|] * 4 = 52
 
-^[probability-win-random.webp]
+%[m|Factorial]
+>>> number of ways to order elements
+>>> 3! = 3 × 2 × 1 = 6
+
+## Formulas
+
+### Combination
+Not Ordered
+@[combinatorics-combination.webp]
+
+### Arrangement
+Not Ordered, Whole Set
+@[combinatorics-arrangement.webp]
+
+### Permutation
+Ordered, Partial Set
+@[combinatorics-permutation.webp]
+
+-->

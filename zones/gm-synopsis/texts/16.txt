@@ -3,7 +3,7 @@
 # Table Stakes
 
 [|
-^Blinds^Name^
+^Blinds^Name^Comment^
 |$0.01/$0.02|2NL   |                     |
 |$0.02/$0.04|4NL   |                     |
 |$0.05/$0.10|10NL  |Lowest stake online  |
@@ -16,3 +16,7 @@
 |$10/$20    |2000NL|                     |
 |$25/$50    |5000NL|                     |
 |]
+
+[!
+Number in Name is Big Blind
+!]

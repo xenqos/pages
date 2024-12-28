@@ -1,111 +1,50 @@
-###### Flop
+###### Preflop
 
-## Flop ##
+# Hands - Openpokertools
 
-# Board Texture
+## Starting Hands - Positions
 
-[!
-Board Texture - characteristics of community cards
-!]
+[|
+|Early|Middle|Late|
+|10%|19%|45%|
+|]
 
-[-
-Dry Flop
-Wet Flop
-Connected Flop
-High Flop
-Low Flop
-Monotone
-Two Tone (Suited)
-Paired Two Tone
-Rainbow
-Paired Rainbow
-Trips
--]
+## 6-Max
 
-## Dry Flop
-[!
-Cards - unconnected, offsuited
-Favors strong high cards, overpairs
-!]
+### 6-Max UTG
+^[6-Max-1-UTG.webp]
 
-### Example
-&[c|2]&[d|7]&[s|Q]
+### 6-Max UTG+1
+^[6-Max-2-UTG1.webp]
 
-## Wet Flop
-[!
-Cards - connected and/or suited
-Potential for straights and flushes
-!]
+### 6-Max Cutoff
+^[6-Max-3-CO.webp]
 
-### Example
-&[s|5]&[s|6]&[c|7]
+### 6-Max Button
+^[6-Max-4-BTN.webp]
 
-## Connected Flop
-[!
-Cards - sequential or close in rank
-Potential for straights
-!]
+### 6-Max Small Blind
+^[6-Max-5-SB.webp]
 
-### Example
-&[s|8]&[c|9]&[d|T]
+## 9-Max
 
-## High Flop
-[!
-Cards - high-ranking
-Favors high pairs or strong hands
-Lead to significant betting and raises
-!]
+### 9-Max UTG
+^[9-Max-1-UTG.webp]
 
-### Example
-&[s|A]&[d|K]&[c|Q]
+### 9-Max UTG+2
+^[9-Max-2-UTG2.webp]
 
-## Low Flop
-[!
-Cards - low-ranking cards
-Favors lower pairs or drawing hands
-Potential for straights and lower sets
-!]
+### 9-Max Lojack
+^[9-Max-3-LJ.webp]
 
-### Example
-&[c|3]&[d|4]&[c|5]
+### 9-Max Hijack
+^[9-Max-4-HJ.webp]
 
-## Monotone
-[!
-All three community cards - one suit
-Strong potential for flush draws
-aka Suited Flop
-!]
+### 9-Max Cutoff
+^[9-Max-5-CO.webp]
 
-### Example
-&[s|5]&[s|7]&[s|J]
+### 9-Max Button
+^[9-Max-6-BTN.webp]
 
-## Two Tone (Suited)
-[!
-Two community cards - one suit, the third card - different suit
-Some potential for flush draws
-aka Flush Draw Flop
-!]
-
-### Example
-&[c|9]&[c|T]&[d|4]
-
-## Rainbow
-[!
-All three community cards - different suits
-Reduced flush potential
-Focus on High Cards and Pairs
-Less Action
-!]
-
-### Example
-&[c|7]&[h|9]&[s|Q]
-
-## Paired Rainbow
-[!
-One community cards is a pair, two cards - different ranks and suits
-Potential for Trips or Full Houses
-Less Flush Potential
-!]
-
-### Example
-&[c|4]&[h|4]&[s|9]
+### 9-Max Small Blind
+^[9-Max-7-SB.webp]

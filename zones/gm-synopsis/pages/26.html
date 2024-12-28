@@ -18,7 +18,7 @@
   <script type='text/javascript' src='../scripts/local.js'></script>
 </head>
 <body onload='fncGetDivState(); fncGetScrollPosition();'>
-
+<audio id='idTrack' src='../sounds/26.mp3' preload='auto'></audio>
 <div id='idPanel'>
 <div id='idTopbar'>
   <div id='idTopbarNavigation'>
@@ -26,49 +26,121 @@
     <a href='25.html'><span class='clNavLeft'></span></a>
     <a href='../index.html'><span class='clNavUp'></span></a>
     <a href='27.html'><span class='clNavRight'></span></a>
-
+<span class='clNavRewind' onclick='fncRewindTrack(&quot;idTrack&quot;)'></span><span class='clNavPlay' onclick='fncPlayTrack(&quot;idTrack&quot;)'></span>
   </div>
 </div>
 <div id='idContent'>
 
-<h6>GTO</h6>
+<h6>Flop</h6>
 
 
-<h1>Definition & Principles</h1>
-
-<h2>Definition</h2>
+<h1>Board Texture</h1>
 
 <blockquote>
-GTO - Game Theory Optimal<br>
+Board Texture - characteristics of community cards<br>
 </blockquote>
 
 <ul>
-<li>Makes decisions unexploitable by villains.</li>
-<li>Balances hero's range based on mathematical principles.</li>
-<li>Does not rely on reads or tendencies of villains.</li>
-<li>Minimizes losses against any villains's strategy.</li>
-<li>Ensures a profitable play in the long run.</li>
+<li>Dry Flop</li>
+<li>Wet Flop</li>
+<li>Connected Flop</li>
+<li>High Flop</li>
+<li>Low Flop</li>
+<li>Monotone</li>
+<li>Two Tone (Suited)</li>
+<li>Paired Two Tone</li>
+<li>Rainbow</li>
+<li>Paired Rainbow</li>
+<li>Trips</li>
 </ul>
 
-<h2>Principles</h2>
+<h2>Dry Flop</h2>
+<blockquote>
+Cards - unconnected, offsuited<br>
+Favors strong high cards, overpairs<br>
+</blockquote>
 
-<h3>Balanced Ranges</h3>
-A GTO player maintains a balanced range of hands in various situations (e.g., pre-flop, post-flop).<br>
-This means mixing strong hands with bluffs to prevent opponents from easily exploiting your strategy.<br>
+<h3>Example</h3>
+<q class='c'>2</q><q class='d'>7</q><q class='s'>Q</q><br>
 
-<h3>Equity and Pot Odds</h3>
-Understand the concept of equity (the chance your hand has to win at showdown) and pot odds (the ratio of the current size of the pot to the size of the bet you must call).<br>
-Make decisions based on whether the potential reward justifies the risk.<br>
+<h2>Wet Flop</h2>
+<blockquote>
+Cards - connected and/or suited<br>
+Potential for straights and flushes<br>
+</blockquote>
 
-<h3>Bet Sizing</h3>
-Use various bet sizes to create a balanced strategy. Different sizes can represent different ranges of hands.<br>
-Common sizes include small bets (for value and bluffs) and larger bets (to apply pressure).<br>
+<h3>Example</h3>
+<q class='s'>5</q><q class='s'>6</q><q class='c'>7</q><br>
 
-<h3>Indifference Principle</h3>
-A GTO strategy aims to make opponents indifferent to their choices. For example, if you are bluffing and value betting at the right frequencies, your opponent cannot profitably call or fold.<br>
+<h2>Connected Flop</h2>
+<blockquote>
+Cards - sequential or close in rank<br>
+Potential for straights<br>
+</blockquote>
 
-<h3>Exploiting Deviations</h3>
-While GTO is about being unexploitable, it’s also important to recognize when opponents deviate from GTO play. Adjust your strategy to exploit their mistakes.<br>
+<h3>Example</h3>
+<q class='s'>8</q><q class='c'>9</q><q class='d'>T</q><br>
+
+<h2>High Flop</h2>
+<blockquote>
+Cards - high-ranking<br>
+Favors high pairs or strong hands<br>
+Lead to significant betting and raises<br>
+</blockquote>
+
+<h3>Example</h3>
+<q class='s'>A</q><q class='d'>K</q><q class='c'>Q</q><br>
+
+<h2>Low Flop</h2>
+<blockquote>
+Cards - low-ranking cards<br>
+Favors lower pairs or drawing hands<br>
+Potential for straights and lower sets<br>
+</blockquote>
+
+<h3>Example</h3>
+<q class='c'>3</q><q class='d'>4</q><q class='c'>5</q><br>
+
+<h2>Monotone</h2>
+<blockquote>
+All three community cards - one suit<br>
+Strong potential for flush draws<br>
+aka Suited Flop<br>
+</blockquote>
+
+<h3>Example</h3>
+<q class='s'>5</q><q class='s'>7</q><q class='s'>J</q><br>
+
+<h2>Two Tone (Suited)</h2>
+<blockquote>
+Two community cards - one suit, the third card - different suit<br>
+Some potential for flush draws<br>
+aka Flush Draw Flop<br>
+</blockquote>
+
+<h3>Example</h3>
+<q class='c'>9</q><q class='c'>T</q><q class='d'>4</q><br>
+
+<h2>Rainbow</h2>
+<blockquote>
+All three community cards - different suits<br>
+Reduced flush potential<br>
+Focus on High Cards and Pairs<br>
+Less Action<br>
+</blockquote>
+
+<h3>Example</h3>
+<q class='c'>7</q><q class='h'>9</q><q class='s'>Q</q><br>
+
+<h2>Paired Rainbow</h2>
+<blockquote>
+One community cards is a pair, two cards - different ranks and suits<br>
+Potential for Trips or Full Houses<br>
+Less Flush Potential<br>
+</blockquote>
+
+<h3>Example</h3>
+<q class='c'>4</q><q class='h'>4</q><q class='s'>9</q><br>
 
 
 </div>
