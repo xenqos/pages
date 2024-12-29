@@ -1,111 +1,24 @@
-###### Flop
+###### Preflop
 
-## Flop ##
+# Opening Hands - 9 Max
 
-# Board Texture
+## 9 Max UTG
+^[Opening-9-Max-1-UTG.webp]
 
-[!
-Board Texture - characteristics of community cards
-!]
+## 9 Max UTG+2
+^[Opening-9-Max-2-UTG2.webp]
 
-[-
-Dry Flop
-Wet Flop
-Connected Flop
-High Flop
-Low Flop
-Monotone
-Two Tone (Suited)
-Paired Two Tone
-Rainbow
-Paired Rainbow
-Trips
--]
+## 9 Max Lojack
+^[Opening-9-Max-3-LJ.webp]
 
-## Dry Flop
-[!
-Cards - unconnected, offsuited
-Favors strong high cards, overpairs
-!]
+## 9 Max Hijack
+^[Opening-9-Max-4-HJ.webp]
 
-### Example
-&[c|2]&[d|7]&[s|Q]
+## 9 Max Cutoff
+^[Opening-9-Max-5-CO.webp]
 
-## Wet Flop
-[!
-Cards - connected and/or suited
-Potential for straights and flushes
-!]
+## 9 Max Button
+^[Opening-9-Max-6-BTN.webp]
 
-### Example
-&[s|5]&[s|6]&[c|7]
-
-## Connected Flop
-[!
-Cards - sequential or close in rank
-Potential for straights
-!]
-
-### Example
-&[s|8]&[c|9]&[d|T]
-
-## High Flop
-[!
-Cards - high-ranking
-Favors high pairs or strong hands
-Lead to significant betting and raises
-!]
-
-### Example
-&[s|A]&[d|K]&[c|Q]
-
-## Low Flop
-[!
-Cards - low-ranking cards
-Favors lower pairs or drawing hands
-Potential for straights and lower sets
-!]
-
-### Example
-&[c|3]&[d|4]&[c|5]
-
-## Monotone
-[!
-All three community cards - one suit
-Strong potential for flush draws
-aka Suited Flop
-!]
-
-### Example
-&[s|5]&[s|7]&[s|J]
-
-## Two Tone (Suited)
-[!
-Two community cards - one suit, the third card - different suit
-Some potential for flush draws
-aka Flush Draw Flop
-!]
-
-### Example
-&[c|9]&[c|T]&[d|4]
-
-## Rainbow
-[!
-All three community cards - different suits
-Reduced flush potential
-Focus on High Cards and Pairs
-Less Action
-!]
-
-### Example
-&[c|7]&[h|9]&[s|Q]
-
-## Paired Rainbow
-[!
-One community cards is a pair, two cards - different ranks and suits
-Potential for Trips or Full Houses
-Less Flush Potential
-!]
-
-### Example
-&[c|4]&[h|4]&[s|9]
+## 9 Max Small Blind
+^[Opening-9-Max-7-SB.webp]

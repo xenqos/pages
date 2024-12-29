@@ -1,0 +1,18 @@
+Topic is No Limit Texas Hold'em Poker.
+
+Topic is No Limit Texas Hold'em Poker. Let's assume that the game is 9-max. Let's assume that the betting round is PreFlop. Let's assume that 5 villains have folded. Give optimal ranges for the Hero in the UTG position.
+Change the Hero's position to Button and give optimal ranges.
+
+
+Topic is No Limit Texas Hold'em Poker. Let's assume that the game is 9-max. Let's assume the Hero on UTG. The betting round is Preflop.
+Give optimal opening ranges for the hero and rationalize your choice.
+
+AA,KK,QQ,JJ,TT,99,88,AKs,AKo,AQs,AJs,KQs,T9s,JTs,QJs
+
+AA,AKs,AQs,AJs,ATs,AKo,KK,KQs,KJs,KTs,A5s,AQo,QQ,QJs,QTs,JJ,JTs,J9s,TT,T9s,99,98s,88,77
+
+AA,KK,QQ,JJ,A3s,A4s,A5s,A6s,A7s,A8s,A9s,ATs,AJ,AQ,AK,K9s,KTs,QJs,QTs,JTs,T9s,AJo,AKo,KQo
+
+
+
+Topic is No Limit Texas Hold'em Poker. Suggest Preflop opening ranges for the Hero on UTG in 9-max game.
