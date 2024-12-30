@@ -28,6 +28,42 @@
 |%[m|die Bücher ]|книги    |
 |]
 
+%[r|ch]&emsp;/ %[l|ç] /
+
+[!
+после %[m|ei], %[m|eu], %[m|äu]
+!]
+
+[|-
+|%[m|vielleicht]|возможно|
+|%[m|euch      ]|вас, вам|
+|%[m|der Bäuche]|живот   |
+|]
+
+%[r|ch]&emsp;/ %[l|ç] /
+
+[!
+после %[m|l], %[m|n], %[m|r]
+!]
+
+[|-
+|%[m|die Milch]|молоко|
+|%[m|manchmal ]|иногда|
+|%[m|durch    ]|через |
+|]
+
+%[r|ch]&emsp;/ %[l|ç] /
+
+[!
+в суффиксе -%[m|chen]
+!]
+
+[|-
+|%[m|bisschen   ]|немного|
+|%[m|das Mädchen]|девочка|
+|%[m|das Häschen]|зайчик |
+|]
+
 %[r|chs]&emsp;/ %[l|ks] /
 
 [|-
@@ -59,12 +95,36 @@
 |%[m|bringen ]|приносить|
 |]
 
+%[r|nk]&emsp;/ %[l|ŋk] /
+
+[|-
+|%[m|danke   ]|спасибо|
+|%[m|trinken ]|пить   |
+|%[m|der Funk]|радио  |
+|]
+
 %[r|pf]&emsp;/ %[l|pf] /
 
 [|-
 |%[m|das Pferd  ]|лошадь  |
 |%[m|der Pfeffer]|перец   |
 |%[m|die Pflanze]|растение|
+|]
+
+%[r|ph]&emsp;/ %[l|f] /
+
+[|-
+|%[m|die Phonetik   ]|фонетика  |
+|%[m|die Katastrophe]|катастрофа|
+|%[m|die Philosophie]|философия |
+|]
+
+%[r|qu]&emsp;/ %[l|kv] /
+
+[|-
+|%[m|die Quelle  ]|источник|
+|%[m|das Aquarium]|аквариум|
+|%[m|bequem      ]|удобный |
 |]
 
 %[r|rh]&emsp;/ %[l|r] /
@@ -105,6 +165,14 @@
 |%[m|das Thema     ]|тема      |
 |%[m|das Theater   ]|театр     |
 |%[m|die Mathematik]|математика|
+|]
+
+%[r|tsch]&emsp;/ %[l|ʧ] /
+
+[|-
+|%[m|das Deutsch]|немецкий язык|
+|%[m|tschüss    ]|пока!        |
+|%[m|der Rutsche]|горка        |
 |]
 
 %[r|tz]&emsp;/ %[l|ts] /
