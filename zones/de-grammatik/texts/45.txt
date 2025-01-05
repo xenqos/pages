@@ -1,36 +1,31 @@
 ###### Глаголы &nbsp;•&nbsp; Таблицы склонения
 
-# Konjunktiv II Präteritum
+# Konjunktiv I Perfekt
 
-## Regelmäßige
+## Haben + Partizip
 
 %[m|sagen] - говорить
 [|
-^^s.^p.^
-|1|-%[l|te]  |-%[l|ten]|
-|2|-%[l|test]|-%[l|tet]|
-|3|-%[l|te]  |-%[l|ten]|
+|ich|%[m|habe]  |%[m|gesagt]|
+|du |%[m|habest]|%[m|gesagt]|
+|er |%[m|habe]  |%[m|gesagt]|
 |]
 [|
-^^s.^p.^
-|1|%[m|sag]%[l|te]  |%[m|sag]%[l|ten]|
-|2|%[m|sag]%[l|test]|%[m|sag]%[l|tet]|
-|3|%[m|sag]%[l|te]  |%[m|sag]%[l|ten]|
+|wir|%[m|haben] |%[m|gesagt]|
+|ihr|%[m|habet] |%[m|gesagt]|
+|sie|%[m|haben] |%[m|gesagt]|
 |]
 
-## Unregelmäßige
+## Sein + Partizip
 
 %[m|singen] - петь
 [|
-^^s.^p.^
-|1|-%[l|e]  |-%[l|en]|
-|2|-%[l|est]|-%[l|et] |
-|3|-%[l|e]  |-%[l|en]|
+|ich|%[m|sei]     |%[m|gerannt]|
+|du |%[m|sei](%[m|e])%[m|st]|%[m|gerannt]|
+|er |%[m|sei]     |%[m|gerannt]|
 |]
-
 [|
-^^s.^p.^
-|1|%[m|säng]%[l|e]  |%[m|säng]%[l|en]|
-|2|%[m|säng]%[l|est]|%[m|säng]%[l|et]|
-|3|%[m|säng]%[l|e]  |%[m|säng]%[l|en]|
+|wir|%[m|seien]   |%[m|gerannt]|
+|ihr|%[m|seiet]   |%[m|gerannt]|
+|sie|%[m|seien]   |%[m|gerannt]|
 |]

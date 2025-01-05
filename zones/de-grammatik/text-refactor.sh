@@ -6,11 +6,10 @@ dir_sounds="${dir_prefix}/sounds"
 dir_sources="${dir_prefix}/sources"
 dir_texts="${dir_prefix}/texts"
 
-number_start=36
+number_start=37
 number_shift=1
 
-#
-exit 0
+#exit 0
 
 #-------------------------------------------------------------------------------
 
