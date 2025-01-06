@@ -1,22 +1,33 @@
 ###### Существительные
 
-# Склонение множественного числа
+# Тип IV - смешанное склонение
 
 [|
 |nom.|-%[m|]|
-|gen.|-%[m|]|
+|gen.|-%[m|ns]|
 |dat.|-%[m|n]|
-|akk.|-%[m|]|
+|akk.|-%[m|n]|
 |]
 
 [|
-|nom.|%[m|die Väter] |%[m|die Bücher] |%[m|die Menschen]|%[m|die Parks]|
-|gen.|%[m|der Väter] |%[m|der Bücher] |%[m|der Menschen]|%[m|der Parks]|
-|dat.|%[m|den Vätern]|%[m|den Büchern]|%[m|den Menschen]|%[m|den Parks]|
-|akk.|%[m|die Väter] |%[m|die Bücher] |%[m|die Menschen]|%[m|die Parks]|
+|nom.|%[m|der Name]       |%[m|das Herz]        |
+|gen.|%[m|des Name]%[n|ns]|%[m|des Herz]%[n|ens]|
+|dat.|%[m|dem Name]%[n|n] |%[m|dem Herz]%[n|en] |
+|akk.|%[m|den Name]%[n|n] |%[m|das Herz]        |
 |]
 
 [!
-Существительные всех родов склоняются одинаково.
-Если во множественном числе суффиксы -(е)n, -s, окончания -n в дательном падеже нет.
+Склоняются существительные:
 !]
+
+[|
+|%[m|der Buchstabe]|буква |
+|%[m|der Fels]     |скала |
+|%[m|der Friede]   |мир   |
+|%[m|der Fumke]    |искра |
+|%[m|der Gedanke]  |мысль |
+|%[m|der Name]     |имя   |
+|%[m|der Same]     |семя  |
+|%[m|der Wille]    |воля  |
+|%[m|das Herz]     |сердце|
+|]

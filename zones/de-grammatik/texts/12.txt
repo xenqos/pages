@@ -1,28 +1,22 @@
-###### Местоимения
+###### Существительные
 
-## Местоимения ##
-
-# Личные
+# Склонение множественного числа
 
 [|
-^^s.^p.^
-|1|%[m|ich]|%[m|wir]|
-|2|%[m|du]|%[m|ihr]|
-|3|%[m|er], %[m|sie], %[m|es]|%[m|sie]|
+|nom.|-%[m|]|
+|gen.|-%[m|]|
+|dat.|-%[m|n]|
+|akk.|-%[m|]|
 |]
 
 [|
-^^1^2^3^3^3^
-|nom.|%[m|ich   ]|%[m|du    ]|%[m|er    ]|%[m|sie  ]|%[m|es    ]|
-|gen.|%[m|meiner]|%[m|deiner]|%[m|seiner]|%[m|ihrer]|%[m|seiner]|
-|dat.|%[m|mir   ]|%[m|dir   ]|%[m|ihm   ]|%[m|ihr  ]|%[m|ihm   ]|
-|akk.|%[m|mich  ]|%[m|dich  ]|%[m|ihn   ]|%[m|sie  ]|%[m|es    ]|
+|nom.|%[m|die Väter] |%[m|die Bücher] |%[m|die Menschen]|%[m|die Parks]|
+|gen.|%[m|der Väter] |%[m|der Bücher] |%[m|der Menschen]|%[m|der Parks]|
+|dat.|%[m|den Vätern]|%[m|den Büchern]|%[m|den Menschen]|%[m|den Parks]|
+|akk.|%[m|die Väter] |%[m|die Bücher] |%[m|die Menschen]|%[m|die Parks]|
 |]
 
-[|
-^^1^2^3^
-|nom.|%[m|wir  ]|%[m|ihr ]|%[m|sie  ]|
-|gen.|%[m|unser]|%[m|euer]|%[m|ihrer]|
-|dat.|%[m|uns  ]|%[m|euch]|%[m|ihnen]|
-|akk.|%[m|uns  ]|%[m|euch]|%[m|sie  ]|
-|]
+[!
+Существительные всех родов склоняются одинаково.
+Если во множественном числе суффиксы -(е)n, -s, окончания -n в дательном падеже нет.
+!]

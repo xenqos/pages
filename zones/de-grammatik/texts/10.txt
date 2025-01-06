@@ -1,33 +1,21 @@
 ###### Существительные
 
-# Тип IV - смешанное склонение
+# Тип III - женское склонение
 
 [|
 |nom.|-%[m|]|
-|gen.|-%[m|ns]|
-|dat.|-%[m|n]|
-|akk.|-%[m|n]|
+|gen.|-%[m|]|
+|dat.|-%[m|]|
+|akk.|-%[m|]|
 |]
 
 [|
-|nom.|%[m|der Name]       |%[m|das Herz]        |
-|gen.|%[m|des Name]%[n|ns]|%[m|des Herz]%[n|ens]|
-|dat.|%[m|dem Name]%[n|n] |%[m|dem Herz]%[n|en] |
-|akk.|%[m|den Name]%[n|n] |%[m|das Herz]        |
+|nom.|%[m|die Nacht]|%[m|die Kraft]|%[m|die Tür]|
+|gen.|%[m|der Nacht]|%[m|der Kraft]|%[m|der Tür]|
+|dat.|%[m|der Nacht]|%[m|der Kraft]|%[m|der Tür]|
+|akk.|%[m|die Nacht]|%[m|die Kraft]|%[m|die Tür]|
 |]
 
 [!
-Склоняются существительные:
+Склоняются все имена существительные женского рода.
 !]
-
-[|
-|%[m|der Buchstabe]|буква |
-|%[m|der Fels]     |скала |
-|%[m|der Friede]   |мир   |
-|%[m|der Fumke]    |искра |
-|%[m|der Gedanke]  |мысль |
-|%[m|der Name]     |имя   |
-|%[m|der Same]     |семя  |
-|%[m|der Wille]    |воля  |
-|%[m|das Herz]     |сердце|
-|]
