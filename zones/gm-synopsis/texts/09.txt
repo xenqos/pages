@@ -4,27 +4,27 @@
 
 ## Loose
 [!
-To play many hands
-To play weak hands
+Play many hands
+Play weak hands
 !]
 
 ## Passive
 [!
-To call frequently
-To raise rarely
+Call frequently
+Raise rarely
 !]
 
 ## Tight
 [!
-To play strong hands
-To fold weak hands
+Play strong hands
+Fold weak hands
 !]
 
 ## Aggressive
 [!
-To bet frequently
-To raise frequently
-To call rarely
+Bet frequently
+Raise frequently
+Call rarely
 !]
 
 ## TAG
@@ -34,5 +34,14 @@ Tight Aggressive
 Loose Aggressive
 
 ### Guideline
-IF Table - loose / aggressive THEN play tighter
-If Table - tight / passive THEN play looser
+
+%[m|IF]
+>> Table - Loose / Aggressive
+%[m|THEN]
+>> Play Tighter
+
+
+%[m|IF]
+>> Table - Tight / Passive
+%[m|THEN]
+>> Play Looser

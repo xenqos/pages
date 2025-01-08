@@ -6,7 +6,7 @@
 [!
 'Small Blind' places small blind
 'Big Blind' places big blind
-'Button' deal 'Hole Cards' starting from left
+'Dealer' deal 'Hole Cards' starting from left
 Each player clockwise places: 'Fold' / 'Call' / 'Raise'
 At 'Big Blind' 'Dealer' asks 'Option?'
 'Big Blind' may 'Check'
@@ -22,7 +22,7 @@ At 'Big Blind' 'Dealer' asks 'Option?'
 ## Flop
 [!
 'Dealer' burns top card
-'Button' deal 'Flop Community Cards'
+'Dealer' deal 'Flop Community Cards'
 'Small Blind' places: 'Fold' / 'Check' / 'Bet'
 Each player clockwise places: 'Fold' / 'Check' / 'Bet' / 'Call' / 'Raise'
 !]
@@ -30,7 +30,7 @@ Each player clockwise places: 'Fold' / 'Check' / 'Bet' / 'Call' / 'Raise'
 ## Turn
 [!
 'Dealer' burns top card
-'Button' deal 'Turn Community Card' - 'Fourth Street'
+'Dealer' deal 'Turn Community Card' - 'Fourth Street'
 'Small Blind' places: 'Fold' / 'Check' / 'Bet'
 Each player clockwise places: 'Fold' / 'Check' / 'Bet' / 'Call' / 'Raise'
 !]
@@ -38,7 +38,7 @@ Each player clockwise places: 'Fold' / 'Check' / 'Bet' / 'Call' / 'Raise'
 ## River
 [!
 'Dealer' burns top card
-'Button' deal 'River Community Card' - 'Fifth Street'
+'Dealer' deal 'River Community Card' - 'Fifth Street'
 'Small Blind' places: 'Fold' / 'Check' / 'Bet'
 Each player clockwise places: 'Fold' / 'Check' / 'Bet' / 'Call' / 'Raise'
 !]
@@ -52,17 +52,17 @@ The best 'Hand' wins
 ### Raise & Re-raise
 
 %[m|IF]
-&emsp; 'Player' raises / re-raises
+>> 'Player' raises / re-raises
 %[m|THEN]
-&emsp; All 'Players' starting from his left clockwise must match 'Raise' / 'Re-raise'
-&emsp; Thus the betting stops at 'Player' to the right of the one who made 'Raise' / 'Re-raise'
+>> All 'Players' starting from his left clockwise must match 'Raise' / 'Re-raise'
+>> Thus the betting stops at 'Player' to the right of the one who made 'Raise' / 'Re-raise'
 
 
 %[m|IF]
-&emsp; 'Players' >= 3 in 'Hand' ('Game')
+>> 'Players' >= 3 in 'Hand' ('Game')
 %[m|THEN]
-&emsp; 3-4 'Raise' / 'Re-raise' - allowed
+>> 3-4 'Raise' / 'Re-raise' - allowed
 %[m|ELSEIF]
-&emsp; 'Players' = 2 are in 'Hand' ('Game')
+>> 'Players' = 2 are in 'Hand' ('Game')
 %[m|THEN]
-&emsp; 'Raise' / 'Re-raise' - not limited
+>> 'Raise' / 'Re-raise' - not limited
