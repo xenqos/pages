@@ -18,7 +18,7 @@
   <script type='text/javascript' src='../scripts/local.js'></script>
 </head>
 <body onload='fncGetDivState(); fncGetScrollPosition();'>
-<audio id='idTrack' src='../sounds/03.mp3' preload='auto'></audio>
+
 <div id='idPanel'>
 <div id='idTopbar'>
   <div id='idTopbarNavigation'>
@@ -26,89 +26,52 @@
     <a href='02.html'><span class='clNavLeft'></span></a>
     <a href='../index.html'><span class='clNavUp'></span></a>
     <a href='04.html'><span class='clNavRight'></span></a>
-<span class='clNavRewind' onclick='fncRewindTrack(&quot;idTrack&quot;)'></span><span class='clNavPlay' onclick='fncPlayTrack(&quot;idTrack&quot;)'></span>
+
   </div>
 </div>
 <div id='idContent'>
 
-<h6>От Буквы к Звуку</h6>
+<h6>Правила</h6>
+
+<h1>Слоги</h1>
+
+<blockquote>
+количество слогов = количествo гласных<br>
+дифтонги <span class='m'>ei</span>, <span class='m'>au</span>, <span class='m'>äu</span>, <span class='m'>eu</span>, <span class='m'>ai</span>, <span class='m'>oi</span>, <span class='m'>ui</span> - один слог<br>
+длинные гласные <span class='m'>ie</span>, <span class='m'>oo</span>, <span class='m'>aa</span>, <span class='m'>ee</span> - один слог<br>
+</blockquote>
+
+<ul>
+<li><span class='m'>Sprechsilben</span> - фонетические слоги</li>
+<li><span class='m'>Sprachsilben</span> - словарные слоги</li>
+</ul>
+
+<h2>Открытый</h2>
+
+<blockquote>
+оканчиваются на гласную<br>
+</blockquote>
+
+Vater фа:та<br>
+Leben ле:бен<br>
 
 
-<h1>Монофтонги - a, o, u</h1>
+<h2>Закрытый</h2>
+оканчиваются на согласную (Klas | se, Mund)<br>
 
-<span class='r'>a</span>&emsp;/ <span class='l'>a</span> /<br>
-<div class='clOverflow'><table class='clNoBorder'><tr><td><span class='m'>alle     </span></td><td>весь   </td></tr>
-<tr><td><span class='m'>der Mann </span></td><td>мужчина</td></tr>
-<tr><td><span class='m'>die Tasse</span></td><td>чашка  </td></tr>
-</table>
-</div>
+<h2>Условно-закрытый</h2>
+закрытые слоги, которые «открываются» при изменении формы слова, например во множественном числе (Bal | kon – Bal | ko | ne)<br>
 
-<span class='r'>a</span>&emsp;/ <span class='l'>aː</span> /<br>
+<br>
+Гласные в открытых и условно-закрытых слогах обычно долгие. В закрытых — краткие. Подведём итог:<br>
 
-<div class='clOverflow'><table class='clNoBorder'><tr><td><span class='m'>der Rat  </span></td><td>совет</td></tr>
-<tr><td><span class='m'>der Abend</span></td><td>вечер</td></tr>
-<tr><td><span class='m'>haben    </span></td><td>иметь</td></tr>
-</table>
-</div>
+    Ударные гласные в открытых и условно-закрытых слогах — долгие, а безударные — краткие.<br>
+    Гласные в закрытых слогах вне зависимости от ударения — краткие.<br>
 
-<span class='r'>aa</span>&emsp;/ <span class='l'>aː</span> /<br>
-
-<div class='clOverflow'><table class='clNoBorder'><tr><td><span class='m'>das Haar</span></td><td>волосы</td></tr>
-<tr><td><span class='m'>der Saal</span></td><td>зал   </td></tr>
-<tr><td><span class='m'>die Saat</span></td><td>семена</td></tr>
-</table>
-</div>
-
-<span class='r'>ah</span>&emsp;/ <span class='l'>aː</span> /<br>
-
-<div class='clOverflow'><table class='clNoBorder'><tr><td><span class='m'>der Zahn</span></td><td>зуб  </td></tr>
-<tr><td><span class='m'>der Hahn</span></td><td>петух</td></tr>
-<tr><td><span class='m'>das Mahl</span></td><td>еда  </td></tr>
-</table>
-</div>
-
-<span class='r'>o</span>&emsp;/ <span class='l'>ɔ⁠</span> /<br>
-<div class='clOverflow'><table class='clNoBorder'><tr><td><span class='m'>der Kopf   </span></td><td>голова </td></tr>
-<tr><td><span class='m'>der  Frosch</span></td><td>лягушка</td></tr>
-<tr><td><span class='m'>das Korn   </span></td><td>зерно  </td></tr>
-</table>
-</div>
-
-<span class='r'>o</span>&emsp;/ <span class='l'>oː</span> /<br>
-<div class='clOverflow'><table class='clNoBorder'><tr><td><span class='m'>das Tor </span></td><td>ворота</td></tr>
-<tr><td><span class='m'>der Hof </span></td><td>двор  </td></tr>
-<tr><td><span class='m'>das Brot</span></td><td>хлеб  </td></tr>
-</table>
-</div>
-
-<span class='r'>oh</span>&emsp;/ <span class='l'>oː</span> /<br>
-<div class='clOverflow'><table class='clNoBorder'><tr><td><span class='m'>roh    </span></td><td>сырой   </td></tr>
-<tr><td><span class='m'>das Ohr</span></td><td>ухо     </td></tr>
-<tr><td><span class='m'>bohren </span></td><td>сверлить</td></tr>
-</table>
-</div>
-
-<span class='r'>u</span>&emsp;/ <span class='l'>ʊ</span> /<br>
-<div class='clOverflow'><table class='clNoBorder'><tr><td><span class='m'>bunt    </span></td><td>пёстрый</td></tr>
-<tr><td><span class='m'>der Hund</span></td><td>собака </td></tr>
-<tr><td><span class='m'>die Lust</span></td><td>желание</td></tr>
-</table>
-</div>
-
-<span class='r'>u</span>&emsp;/ <span class='l'>uː</span> /<br>
-<div class='clOverflow'><table class='clNoBorder'><tr><td><span class='m'>der Zug   </span></td><td>поезд  </td></tr>
-<tr><td><span class='m'>die Schule</span></td><td>школа  </td></tr>
-<tr><td><span class='m'>die Blume </span></td><td>цветок</td></tr>
-</table>
-</div>
-
-<span class='r'>uh</span>&emsp;/ <span class='l'>uː</span> /<br>
-<div class='clOverflow'><table class='clNoBorder'><tr><td><span class='m'>der Schuh</span></td><td>ботинок    </td></tr>
-<tr><td><span class='m'>die Ruhe </span></td><td>спокойствие</td></tr>
-<tr><td><span class='m'>die Kuh  </span></td><td>корова     </td></tr>
-</table>
-</div>
-
+<br>
+    Открытый слог (offene Silbe) — слог, который заканчивается на гласный звук или их сочетание. Например: lesen, Schule, haben. 1<br>
+    Закрытый слог (geschlossene Silbe) — слог, который заканчивается на согласный звук или их сочетание. Например: Herbst, Obst, Kopf, ankommen. 1<br>
+    Условно закрытый слог (relativ geschlossene Silbe) — слог, который является закрытым, но при изменении формы слова открывается. Например: malt — malen, macht — machen, Bad — Bäder. 1<br>
 
 
 </div>
