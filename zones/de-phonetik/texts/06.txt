@@ -1,67 +1,76 @@
 ###### От Буквы к Звуку
 
-# Монофтонги - ä, ö, ü
+# Монофтонги - a, o, u
 
-%[r|ä]&emsp;/ %[l|ɛː] /
-
+%[r|a]&emsp;/ %[l|a] /
 [|-
-|%[m|spät    ]|поздний|
-|%[m|der Käse]|сыр    |
-|%[m|der Bär ]|медведь|
+|%[m|alle     ]|весь   |
+|%[m|der Mann ]|мужчина|
+|%[m|die Tasse]|чашка  |
 |]
 
-%[r|äh]&emsp;/ %[l|ɛː] /
+%[r|a]&emsp;/ %[l|aː] /
 
 [|-
-|%[m|währen]|длиться |
-|%[m|zählen]|считать |
-|%[m|wählen]|выбирать|
+|%[m|der Rat  ]|совет|
+|%[m|der Abend]|вечер|
+|%[m|haben    ]|иметь|
 |]
 
-%[r|ö]&emsp;/ %[l|œ⁠] /
+%[r|aa]&emsp;/ %[l|aː] /
 
 [|-
-|%[m|zwölf   ]|двенадцать|
-|%[m|können  ]|мочь      |
-|%[m|köstlich]|ценный    |
+|%[m|das Haar]|волосы|
+|%[m|der Saal]|зал   |
+|%[m|die Saat]|семена|
 |]
 
-%[r|ö]&emsp;/ %[l|øː] /
+%[r|ah]&emsp;/ %[l|aː] /
 
 [|-
-|%[m|schön    ]|красивый|
-|%[m|der König]|король  |
-|%[m|der Löwe ]|лев     |
+|%[m|der Zahn]|зуб  |
+|%[m|der Hahn]|петух|
+|%[m|das Mahl]|еда  |
 |]
 
-%[r|öh]&emsp;/ %[l|øː] /
-
+%[r|o]&emsp;/ %[l|ɔ⁠] /
 [|-
-|%[m|fröhlich ]|весёлый|
-|%[m|die Möhre]|морковь|
-|%[m|die Höhe ]|высота |
+|%[m|der Kopf   ]|голова |
+|%[m|der  Frosch]|лягушка|
+|%[m|das Korn   ]|зерно  |
 |]
 
-%[r|ü]&emsp;/ %[l|y] /
-
+%[r|o]&emsp;/ %[l|oː] /
 [|-
-|%[m|fünf     ]|пять  |
-|%[m|die Mütze]|шапка |
-|%[m|dünn     ]|тонкий|
+|%[m|das Tor ]|ворота|
+|%[m|der Hof ]|двор  |
+|%[m|das Brot]|хлеб  |
 |]
 
-%[r|ü]&emsp;/ %[l|y:] /
-
+%[r|oh]&emsp;/ %[l|oː] /
 [|-
-|%[m|süß  ]|сладкий|
-|%[m|über ]|над    |
-|%[m|lügen]|лгать  |
+|%[m|roh    ]|сырой   |
+|%[m|das Ohr]|ухо     |
+|%[m|bohren ]|сверлить|
 |]
 
-%[r|üh]&emsp;/ %[l|y:] /
-
+%[r|u]&emsp;/ %[l|ʊ] /
 [|-
-|%[m|früh     ]|ранний|
-|%[m|blühen   ]|цвести|
-|%[m|die Bühne]|сцена |
+|%[m|bunt    ]|пёстрый|
+|%[m|der Hund]|собака |
+|%[m|die Lust]|желание|
+|]
+
+%[r|u]&emsp;/ %[l|uː] /
+[|-
+|%[m|der Zug   ]|поезд  |
+|%[m|die Schule]|школа  |
+|%[m|die Blume ]|цветок|
+|]
+
+%[r|uh]&emsp;/ %[l|uː] /
+[|-
+|%[m|der Schuh]|ботинок    |
+|%[m|die Ruhe ]|спокойствие|
+|%[m|die Kuh  ]|корова     |
 |]

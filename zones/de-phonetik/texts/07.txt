@@ -1,113 +1,67 @@
 ###### От Буквы к Звуку
 
-# Монофтонги - e, i
+# Монофтонги - ä, ö, ü
 
-%[r|e]&emsp;/ %[l|ɛ] /
-
-[|-
-|%[m|es   ]|оно   |
-|%[m|etwas]|что-то|
-|%[m|wenn ]|когда |
-|]
-
-%[r|e]&emsp;/ %[l|ɛː] /
+%[r|ä]&emsp;/ %[l|ɛː] /
 
 [|-
-|%[m|geh]|иди!|
-|%[m|er ]|он  |
-|%[m|wer]|кто |
+|%[m|spät    ]|поздний|
+|%[m|der Käse]|сыр    |
+|%[m|der Bär ]|медведь|
 |]
 
-%[r|ee]&emsp;/ %[l|ɛː] /
+%[r|äh]&emsp;/ %[l|ɛː] /
 
 [|-
-|%[m|der See   ]|озеро|
-|%[m|der Schnee]|снег |
-|%[m|die Seele ]|душа |
+|%[m|währen]|длиться |
+|%[m|zählen]|считать |
+|%[m|wählen]|выбирать|
 |]
 
-%[r|eh]&emsp;/ %[l|ɛː] /
+%[r|ö]&emsp;/ %[l|œ⁠] /
 
 [|-
-|%[m|sehen ]|смотреть|
-|%[m|gehen ]|идти    |
-|%[m|stehen]|стоять  |
+|%[m|zwölf   ]|двенадцать|
+|%[m|können  ]|мочь      |
+|%[m|köstlich]|ценный    |
 |]
 
-%[r|i]&emsp;/ %[l|ɪ] /
-[|-
-|%[m|der Tisch ]|стол   |
-|%[m|das Zimmer]|команта|
-|%[m|wissen    ]|знать  |
-|]
-
-%[r|i]&emsp;/ %[l|iː] /
+%[r|ö]&emsp;/ %[l|øː] /
 
 [|-
-|%[m|wir]|мы  |
-|%[m|mir]|мне |
-|%[m|dir]|тебе|
+|%[m|schön    ]|красивый|
+|%[m|der König]|король  |
+|%[m|der Löwe ]|лев     |
 |]
 
-%[r|ie]&emsp;/ %[l|iː] /
+%[r|öh]&emsp;/ %[l|øː] /
+
 [|-
-|%[m|liegen  ]|лежать|
-|%[m|sieben  ]|семь  |
-|%[m|der Sieg]|победа|
+|%[m|fröhlich ]|весёлый|
+|%[m|die Möhre]|морковь|
+|%[m|die Höhe ]|высота |
 |]
 
-%[r|ih]&emsp;/ %[l|iː] /
+%[r|ü]&emsp;/ %[l|y] /
+
 [|-
-|%[m|ihr  ]|ей |
-|%[m|ihm  ]|ему|
-|%[m|ihnen]|им |
+|%[m|fünf     ]|пять  |
+|%[m|die Mütze]|шапка |
+|%[m|dünn     ]|тонкий|
 |]
 
+%[r|ü]&emsp;/ %[l|y:] /
 
-<!--
-In German, the /eː/ sound, represented by the letter "e" in certain contexts, has specific usage rules. Here are some key points regarding its pronunciation and usage:
+[|-
+|%[m|süß  ]|сладкий|
+|%[m|über ]|над    |
+|%[m|lügen]|лгать  |
+|]
 
-    Long "e" in Stressed Syllables: The /eː/ sound typically occurs in stressed syllables, especially in words where "e" is followed by a single consonant and then another vowel (e.g., "sehen" - to see).
+%[r|üh]&emsp;/ %[l|y:] /
 
-    Word Endings: The /eː/ sound often appears in certain word endings, such as:
-        "-e" at the end of infinitives (e.g., "laufen" - to run).
-        "-en" in plural forms of nouns (e.g., "Häuser" - houses).
-
-    Diphthongs: In some cases, the /eː/ sound can be part of a diphthong, particularly in certain dialects or in loanwords.
-
-    Vowel Combinations: The /eː/ sound can also occur in vowel combinations, such as "ee" (e.g., "beeren" - berries) or "ä" in some dialects.
-
-    Loanwords: In loanwords from other languages, the /eː/ sound may be preserved, depending on the original pronunciation (e.g., "Café").
-
-    Regional Variations: Pronunciation can vary by region, and in some dialects, the /eː/ sound may be pronounced differently or replaced by other vowel sounds.
-
-    Contextual Influence: The surrounding consonants and vowels can influence the pronunciation of "e," leading to variations in how /eː/ is articulated.
-
-Understanding these rules can help with proper pronunciation and comprehension of the German language.
-
-Give spelling of the words der, dem, den. What vowel is used in them?
-
-GPT-4o mini
-
-The words "der," "dem," and "den" are all forms of the definite article "the" in German, used for different grammatical cases. Here’s the spelling and the vowel used in each:
-
-    der - The vowel is "e."
-    dem - The vowel is "e."
-    den - The vowel is "e."
-
-In all three words, the vowel used is "e." Each form corresponds to a different case: "der" is nominative masculine, "dem" is dative masculine, and "den" is accusative masculine.
-
-Then you did not list this case in the usage of /eː/, didn't you?
-
-GPT-4o mini
-
-You're correct; I did not specifically mention the usage of the /eː/ sound in the context of the definite articles "der," "dem," and "den."
-
-In these words, the "e" is pronounced as /eː/ in certain dialects and contexts, particularly in more careful or formal speech. Here’s how they fit into the usage of the /eː/ sound:
-
-    der (nominative masculine) - The "e" can be pronounced as /eː/ in some contexts.
-    dem (dative masculine) - The "e" is typically pronounced as /eː/.
-    den (accusative masculine) - The "e" is also pronounced as /eː/.
-
-Thank you for pointing that out! The definite articles are indeed relevant examples of the /eː/ sound in German.
--->
+[|-
+|%[m|früh     ]|ранний|
+|%[m|blühen   ]|цвести|
+|%[m|die Bühne]|сцена |
+|]
