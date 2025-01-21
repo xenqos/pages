@@ -1,38 +1,38 @@
 ###### Preflop
 
 ## Preflop ##
+
 # Combos
 
 ## Paired Hands
-&[s|A]&[h|A] &nbsp; &[s|A]&[h|A] &nbsp; &[s|A]&[c|A]
-&[h|A]&[d|A] &nbsp; &[h|A]&[c|A] &nbsp; &[d|A]&[c|A]
 
+6 combos x 13 ranks = 78
 
-6 x 13 (squares) = 78
+&[s|A]&[h|A] &nbsp; &[s|A]&[c|A] &nbsp; &[h|A]&[c|A]
+&[s|A]&[d|A] &nbsp; &[h|A]&[d|A] &nbsp; &[d|A]&[c|A]
 
 ## Unpaired, Suited Hands
-&[s|A]&[s|K] &nbsp; &[h|A]&[h|K]
-&[d|A]&[d|K] &nbsp; &[c|A]&[c|K]
 
+4 combos x 78 ranks = 312
 
-4 x 78 (squares) = 312
+&[s|A]&[s|K] &nbsp; &[d|A]&[d|K]
+&[h|A]&[h|K] &nbsp; &[c|A]&[c|K]
 
 ## Unpaired, Offsuited Hands
-&[s|A]&[h|K] &nbsp; &[s|A]&[d|K] &nbsp; &[s|A]&[c|K]
-&[h|A]&[s|K] &nbsp; &[h|A]&[d|K] &nbsp; &[h|A]&[c|K]
-&[d|A]&[s|K] &nbsp; &[d|A]&[h|K] &nbsp; &[d|A]&[c|K]
-&[c|A]&[s|K] &nbsp; &[c|A]&[h|K] &nbsp; &[c|A]&[d|K]
 
+12 combos x 78 ranks = 936
 
-12 x 78 (squares) = 936
-
-[!
-Total Squares = 13 * 13 = 169
-Total Combos  = 1326
-!]
-
+&[s|A]&[h|K] &nbsp; &[h|A]&[d|K] &nbsp; &[d|A]&[c|K]
+&[s|A]&[d|K] &nbsp; &[h|A]&[c|K] &nbsp; &[c|A]&[s|K]
+&[s|A]&[c|K] &nbsp; &[d|A]&[s|K] &nbsp; &[c|A]&[h|K]
+&[h|A]&[s|K] &nbsp; &[d|A]&[h|K] &nbsp; &[c|A]&[d|K]
 
 ## Hand Matrix
+
+[!
+Total Ranks = 13 * 13 = 169
+Total Combos  = 78 + 312 + 936 = 1326
+!]
 
 ^[preflop-combos.webp]
 
