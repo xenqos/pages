@@ -36,9 +36,9 @@
 <h1>Outs</h1>
 
 <blockquote>
-Out - Card that makes Hand<br>
+Out - One Card that can improve Hand<br>
 Count Card as Out once<br>
-Blocker - Card that prevents having combinations<br>
+Blocker - One Card that prevents having combinations<br>
 </blockquote>
 
 <div class='clOverflow'>
@@ -48,12 +48,58 @@ Blocker - Card that prevents having combinations<br>
 <tr><td>2 </td><td>Pair                 </td><td>Three of a Kind </td></tr>
 <tr><td>4 </td><td>Two Pair             </td><td>Full House      </td></tr>
 <tr><td>4 </td><td>Inside Straight      </td><td>Straight        </td></tr>
-<tr><td>8 </td><td>Open-ended Straight  </td><td>Straight        </td></tr>
+<tr><td>8 </td><td>Open-Ended Straight  </td><td>Straight        </td></tr>
 <tr><td>9 </td><td>Four Flush           </td><td>Flush           </td></tr>
 <tr><td>15</td><td>Straight & Flush Draw</td><td>Straight & Flush</td></tr>
 </table>
 </div>
 
+<br>
+Flush Draws | 9 outs<br>
+Open-Ended Straight Draws | 8 outs (4 cards on each end)<br>
+Inside Straight Draw (Gutshot) | 4 outs<br>
+Two-Pair to Set | 2 outs<br>
+Pair to Set | 2 outs<br>
+Top Pair to Two Pair | 2 outs<br>
+Overcards | 6 outs (3 of each rank).<br>
+Full House | 3 outs (2 for the pair and 1 for the triplet).<br>
+<br>
+47 cards after Flop<br>
+46 cards after Turn<br>
+
+<h6>Probability of Hitting on Turn (%)</h6>
+<pre><code>Outs / 47 ​× 100</code></pre>
+
+
+<h6>Probability of Not Hitting on Turn (%)</h6>
+<pre><code>(47 - Outs) / 47 ​× 100</code></pre>
+
+
+<h6>Probability of Hitting on River (%)</h6>
+<pre><code>Outs / 46 ​× 100</code></pre>
+
+
+<h6>Probability of Not Hitting on River (%)</h6>
+<pre><code>(46 − Outs / 46)​ × 100</code></pre>
+
+
+<h6>Combined Probability (%)</h6>
+<pre><code>1−((47 - Outs) / 47 ​× (46 − Outs / 46)​) × 100</code></pre>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 <h2>Outs Example</h2>
 

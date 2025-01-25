@@ -3,9 +3,9 @@
 # Outs
 
 [!
-Out - Card that makes Hand
+Out - One Card that can improve Hand
 Count Card as Out once
-Blocker - Card that prevents having combinations
+Blocker - One Card that prevents having combinations
 !]
 
 [|
@@ -13,10 +13,63 @@ Blocker - Card that prevents having combinations
 |2 |Pair                 |Three of a Kind |
 |4 |Two Pair             |Full House      |
 |4 |Inside Straight      |Straight        |
-|8 |Open-ended Straight  |Straight        |
+|8 |Open-Ended Straight  |Straight        |
 |9 |Four Flush           |Flush           |
 |15|Straight & Flush Draw|Straight & Flush|
 |]
+
+
+Flush Draws | 9 outs
+Open-Ended Straight Draws | 8 outs (4 cards on each end)
+Inside Straight Draw (Gutshot) | 4 outs
+Two-Pair to Set | 2 outs
+Pair to Set | 2 outs
+Top Pair to Two Pair | 2 outs
+Overcards | 6 outs (3 of each rank).
+Full House | 3 outs (2 for the pair and 1 for the triplet).
+
+47 cards after Flop
+46 cards after Turn
+
+###### Probability of Hitting on Turn (%)
+[?
+Outs / 47 ​× 100
+?]
+
+###### Probability of Not Hitting on Turn (%)
+[?
+(47 - Outs) / 47 ​× 100
+?]
+
+###### Probability of Hitting on River (%)
+[?
+Outs / 46 ​× 100
+?]
+
+###### Probability of Not Hitting on River (%)
+[?
+(46 − Outs / 46)​ × 100
+?]
+
+###### Combined Probability (%)
+[?
+1−((47 - Outs) / 47 ​× (46 − Outs / 46)​) × 100
+?]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Outs Example
 
