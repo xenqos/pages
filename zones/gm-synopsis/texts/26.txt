@@ -10,23 +10,13 @@ Blocker - One Card that prevents having combinations
 
 [|
 ^Outs^Cards^Hand^
-|2 |Pair                 |Three of a Kind |
-|4 |Two Pair             |Full House      |
-|4 |Inside Straight      |Straight        |
-|8 |Open-Ended Straight  |Straight        |
-|9 |Four Flush           |Flush           |
-|15|Straight & Flush Draw|Straight & Flush|
+|Pair                 |Three of a Kind | 2|
+|Two Pair             |Full House      | 4|
+|Inside Straight      |Straight        | 4|
+|Open-Ended Straight  |Straight        | 8|
+|Four Flush           |Flush           | 9|
+|Straight & Flush Draw|Straight & Flush|15|
 |]
-
-
-Flush Draws | 9 outs
-Open-Ended Straight Draws | 8 outs (4 cards on each end)
-Inside Straight Draw (Gutshot) | 4 outs
-Two-Pair to Set | 2 outs
-Pair to Set | 2 outs
-Top Pair to Two Pair | 2 outs
-Overcards | 6 outs (3 of each rank).
-Full House | 3 outs (2 for the pair and 1 for the triplet).
 
 ## Outs Example
 
@@ -37,14 +27,11 @@ Full House | 3 outs (2 for the pair and 1 for the triplet).
 Pocket
 &[c|5]&[d|4]
 
-
 Flop
 &[h|6]&[s|3]&[h|Q]
 
-
 Turn
 &[h|2] or &[h|7]
-
 
 Result
 Get Straight; loose Flush; Instead of 8 Outs, only 6.
