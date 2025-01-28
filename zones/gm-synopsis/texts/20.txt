@@ -1,97 +1,24 @@
-###### Probability & Odds
+###### Preflop
 
-# Outs
+# Matrices - 9 Max
 
-[!
-Out - One Card that can improve Hand
-Count Card as Out once
-Blocker - One Card that prevents having combinations
-!]
+## 9 Max UTG
+^[Opening-9-Max-1-UTG.webp]
 
-[|
-^Outs^Cards^Hand^
-|2 |Pair                 |Three of a Kind |
-|4 |Two Pair             |Full House      |
-|4 |Inside Straight      |Straight        |
-|8 |Open-Ended Straight  |Straight        |
-|9 |Four Flush           |Flush           |
-|15|Straight & Flush Draw|Straight & Flush|
-|]
+## 9 Max UTG+2
+^[Opening-9-Max-2-UTG2.webp]
 
+## 9 Max Lojack
+^[Opening-9-Max-3-LJ.webp]
 
-Flush Draws | 9 outs
-Open-Ended Straight Draws | 8 outs (4 cards on each end)
-Inside Straight Draw (Gutshot) | 4 outs
-Two-Pair to Set | 2 outs
-Pair to Set | 2 outs
-Top Pair to Two Pair | 2 outs
-Overcards | 6 outs (3 of each rank).
-Full House | 3 outs (2 for the pair and 1 for the triplet).
+## 9 Max Hijack
+^[Opening-9-Max-4-HJ.webp]
 
-47 cards after Flop
-46 cards after Turn
+## 9 Max Cutoff
+^[Opening-9-Max-5-CO.webp]
 
-###### Probability of Hitting on Turn (%)
-[?
-Outs / 47 ​× 100
-?]
+## 9 Max Button
+^[Opening-9-Max-6-BTN.webp]
 
-###### Probability of Not Hitting on Turn (%)
-[?
-(47 - Outs) / 47 ​× 100
-?]
-
-###### Probability of Hitting on River (%)
-[?
-Outs / 46 ​× 100
-?]
-
-###### Probability of Not Hitting on River (%)
-[?
-(46 − Outs / 46)​ × 100
-?]
-
-###### Combined Probability (%)
-[?
-1−((47 - Outs) / 47 ​× (46 − Outs / 46)​) × 100
-?]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Outs Example
-
-^[drawing-hands-outs.webp]
-
-## Odds Example
-
-^[drawing-odds.webp]
-
-## Blocker Example
-
-Pocket
-&[c|5]&[d|4]
-
-
-Flop
-&[h|6]&[s|3]&[h|Q]
-
-
-Turn
-&[h|2] or &[h|7]
-
-
-Result
-Get Straight; loose Flush; Instead of 8 Outs, only 6.
+## 9 Max Small Blind
+^[Opening-9-Max-7-SB.webp]

@@ -31,30 +31,59 @@
 </div>
 <div id='idContent'>
 
-<h6>Preflop</h6>
+<h6>Odds & Probability</h6>
 
-<h1>Opening Hands - 9 Max</h1>
+<h1>Outs Calculation</h1>
 
-<h2>9 Max UTG</h2>
-<a target='_blank' href='../images/Opening-9-Max-1-UTG.webp'><img class='clImageThumb' src='../images/Opening-9-Max-1-UTG.webp'></a><br>
+<blockquote>
+Out - One Card that can improve Hand<br>
+Count Card as Out once<br>
+Blocker - One Card that prevents having combinations<br>
+</blockquote>
 
-<h2>9 Max UTG+2</h2>
-<a target='_blank' href='../images/Opening-9-Max-2-UTG2.webp'><img class='clImageThumb' src='../images/Opening-9-Max-2-UTG2.webp'></a><br>
+<div class='clOverflow'>
+<table>
+<tr>
+<th>Outs</th><th>Cards</th><th>Hand</th></tr>
+<tr><td>2 </td><td>Pair                 </td><td>Three of a Kind </td></tr>
+<tr><td>4 </td><td>Two Pair             </td><td>Full House      </td></tr>
+<tr><td>4 </td><td>Inside Straight      </td><td>Straight        </td></tr>
+<tr><td>8 </td><td>Open-Ended Straight  </td><td>Straight        </td></tr>
+<tr><td>9 </td><td>Four Flush           </td><td>Flush           </td></tr>
+<tr><td>15</td><td>Straight & Flush Draw</td><td>Straight & Flush</td></tr>
+</table>
+</div>
 
-<h2>9 Max Lojack</h2>
-<a target='_blank' href='../images/Opening-9-Max-3-LJ.webp'><img class='clImageThumb' src='../images/Opening-9-Max-3-LJ.webp'></a><br>
+<br>
+Flush Draws | 9 outs<br>
+Open-Ended Straight Draws | 8 outs (4 cards on each end)<br>
+Inside Straight Draw (Gutshot) | 4 outs<br>
+Two-Pair to Set | 2 outs<br>
+Pair to Set | 2 outs<br>
+Top Pair to Two Pair | 2 outs<br>
+Overcards | 6 outs (3 of each rank).<br>
+Full House | 3 outs (2 for the pair and 1 for the triplet).<br>
 
-<h2>9 Max Hijack</h2>
-<a target='_blank' href='../images/Opening-9-Max-4-HJ.webp'><img class='clImageThumb' src='../images/Opening-9-Max-4-HJ.webp'></a><br>
+<h2>Outs Example</h2>
 
-<h2>9 Max Cutoff</h2>
-<a target='_blank' href='../images/Opening-9-Max-5-CO.webp'><img class='clImageThumb' src='../images/Opening-9-Max-5-CO.webp'></a><br>
+<a target='_blank' href='../images/drawing-hands-outs.webp'><img class='clImageThumb' src='../images/drawing-hands-outs.webp'></a><br>
 
-<h2>9 Max Button</h2>
-<a target='_blank' href='../images/Opening-9-Max-6-BTN.webp'><img class='clImageThumb' src='../images/Opening-9-Max-6-BTN.webp'></a><br>
+<h2>Blocker Example</h2>
 
-<h2>9 Max Small Blind</h2>
-<a target='_blank' href='../images/Opening-9-Max-7-SB.webp'><img class='clImageThumb' src='../images/Opening-9-Max-7-SB.webp'></a><br>
+Pocket<br>
+<q class='c'>5</q><q class='d'>4</q><br>
+<br>
+<br>
+Flop<br>
+<q class='h'>6</q><q class='s'>3</q><q class='h'>Q</q><br>
+<br>
+<br>
+Turn<br>
+<q class='h'>2</q> or <q class='h'>7</q><br>
+<br>
+<br>
+Result<br>
+Get Straight; loose Flush; Instead of 8 Outs, only 6.<br>
 
 
 </div>

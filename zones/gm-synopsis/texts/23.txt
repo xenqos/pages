@@ -1,41 +1,111 @@
-###### Preflop
+###### Flop
 
-## Preflop ##
+## Flop ##
 
-# Combos
-
-## Paired Hands
-
-6 combos x 13 ranks = 78
-
-&[s|A]&[h|A] &nbsp; &[s|A]&[c|A] &nbsp; &[h|A]&[c|A]
-&[s|A]&[d|A] &nbsp; &[h|A]&[d|A] &nbsp; &[d|A]&[c|A]
-
-## Unpaired, Suited Hands
-
-4 combos x 78 ranks = 312
-
-&[s|A]&[s|K] &nbsp; &[d|A]&[d|K]
-&[h|A]&[h|K] &nbsp; &[c|A]&[c|K]
-
-## Unpaired, Offsuited Hands
-
-12 combos x 78 ranks = 936
-
-&[s|A]&[h|K] &nbsp; &[h|A]&[d|K] &nbsp; &[d|A]&[c|K]
-&[s|A]&[d|K] &nbsp; &[h|A]&[c|K] &nbsp; &[c|A]&[s|K]
-&[s|A]&[c|K] &nbsp; &[d|A]&[s|K] &nbsp; &[c|A]&[h|K]
-&[h|A]&[s|K] &nbsp; &[d|A]&[h|K] &nbsp; &[c|A]&[d|K]
-
-## Hand Matrix
+# Board Texture
 
 [!
-Total Ranks = 13 * 13 = 169
-Total Combos  = 78 + 312 + 936 = 1326
+Board Texture - characteristics of community cards
 !]
 
-^[preflop-combos.webp]
+[-
+Dry Flop
+Wet Flop
+Connected Flop
+High Flop
+Low Flop
+Monotone
+Two Tone (Suited)
+Paired Two Tone
+Rainbow
+Paired Rainbow
+Trips
+-]
 
-Equity (as %) of starting hands in one-on-one matchups against a random hand
+## Dry Flop
+[!
+Cards - unconnected, offsuit
+Favors strong high cards, overpairs
+!]
 
-^[probability-win-random.webp]
+### Example
+&[c|2]&[d|7]&[s|Q]
+
+## Wet Flop
+[!
+Cards - connected and/or suited
+Potential for straights and flushes
+!]
+
+### Example
+&[s|5]&[s|6]&[c|7]
+
+## Connected Flop
+[!
+Cards - sequential or close in rank
+Potential for straights
+!]
+
+### Example
+&[s|8]&[c|9]&[d|T]
+
+## High Flop
+[!
+Cards - high-ranking
+Favors high pairs or strong hands
+Lead to significant betting and raises
+!]
+
+### Example
+&[s|A]&[d|K]&[c|Q]
+
+## Low Flop
+[!
+Cards - low-ranking cards
+Favors lower pairs or drawing hands
+Potential for straights and lower sets
+!]
+
+### Example
+&[c|3]&[d|4]&[c|5]
+
+## Monotone
+[!
+All three community cards - one suit
+Strong potential for flush draws
+aka Suited Flop
+!]
+
+### Example
+&[s|5]&[s|7]&[s|J]
+
+## Two Tone (Suited)
+[!
+Two community cards - one suit, the third card - different suit
+Some potential for flush draws
+aka Flush Draw Flop
+!]
+
+### Example
+&[c|9]&[c|T]&[d|4]
+
+## Rainbow
+[!
+All three community cards - different suits
+Reduced flush potential
+Focus on High Cards and Pairs
+Less Action
+!]
+
+### Example
+&[c|7]&[h|9]&[s|Q]
+
+## Paired Rainbow
+[!
+One community cards is a pair, two cards - different ranks and suits
+Potential for Trips or Full Houses
+Less Flush Potential
+!]
+
+### Example
+&[c|4]&[h|4]&[s|9]
