@@ -10,13 +10,26 @@ Blocker - One Card that prevents having combinations
 
 [|
 ^Outs^Cards^Hand^
-|Pair                 |Three of a Kind | 2|
 |Two Pair             |Full House      | 4|
 |Inside Straight      |Straight        | 4|
 |Open-Ended Straight  |Straight        | 8|
 |Four Flush           |Flush           | 9|
 |Straight & Flush Draw|Straight & Flush|15|
 |]
+
+[|
+^Type^#^Pocket^Board^Outs^
+|Pair > Set           | 2|&[d|2]&[c|2]|&[d|Q]&[h|4]&[s|9]|&[h|2]&[s|2]~~&nbsp;|
+|Two Pair > Full House| 4|&[h|K]&[s|Q]|&[c|K]&[d|Q]&[s|5]|&[s|K]&[d|K]~~&[h|Q]&[c|Q]|
+|]
+
+<!--
+
+|Inside Straight      |Straight        | 4|
+|Open-Ended Straight  |Straight        | 8|
+|Four Flush           |Flush           | 9|
+|Straight & Flush Draw|Straight & Flush|15|
+-->
 
 ## Outs Example
 
