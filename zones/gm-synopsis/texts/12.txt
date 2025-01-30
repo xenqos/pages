@@ -4,14 +4,15 @@
 
 ## Pre-Flop
 [!
+'Big Blind' is 'Live Blind'
 'Small Blind' places small blind
 'Big Blind' places big blind
 'Dealer' deal 'Hole Cards' starting from left
 Each player clockwise places: 'Fold' / 'Call' / 'Raise'
 At 'Big Blind' 'Dealer' asks 'Option?'
-'Big Blind' may 'Check'
-'Big Blind' may 'Raise'
-'Big Blind' is 'Live Blind'
+'Big Blind' may 'Check' (if nobody Raised)
+'Big Blind' may 'Call'  (if somebody Raised)
+'Big Blind' may 'Raise' (if somebody Raised)
 !]
 
 [-
