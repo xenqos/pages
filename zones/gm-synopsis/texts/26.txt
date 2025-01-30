@@ -17,38 +17,10 @@ Blocker - One Card that prevents having combinations
 |Straight & Flush Draw|Straight & Flush|15|
 |]
 
-[|
-^Type^#^Pocket^Board^Outs^
-|Pair > Set           | 2|&[d|2]&[c|2]|&[d|Q]&[h|4]&[s|9]|&[h|2]&[s|2]~~&nbsp;|
-|High Card > Pair     | 3|&[s|A]&[d|8]|&[c|J]&[s|5]&[d|2]|&[c|A]&[d|A]~~&[h|A]|
-|Two Pair > Full House| 4|&[h|K]&[s|Q]|&[c|K]&[d|Q]&[s|5]|&[s|K]&[d|K]~~&[h|Q]&[c|Q]|
-|]
-
-### Two Pair > Full House
-Outs
-> 4
-Pocket
-> &[h|K]&[s|Q]
-Board
-> &[c|K]&[d|Q]&[s|5]
-Samples
-> &[s|K]&[d|K]&[h|Q]&[c|Q]
-
-
-
-|]
-<!--
-|                     |  |&[ | ]&[ | ]|&[ | ]&[ | ]&[ | ]|&[ | ]&[ | ]~~&[ | ]&[ | ]|
-
-|Inside Straight      |Straight        | 4|
-|Open-Ended Straight  |Straight        | 8|
-|Four Flush           |Flush           | 9|
-|Straight & Flush Draw|Straight & Flush|15|
--->
 
 ## Outs Example
 
-^[drawing-hands-outs.webp]
+^[outs-samples.webp]
 
 ## Blocker Example
 
