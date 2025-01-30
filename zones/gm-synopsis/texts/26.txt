@@ -5,18 +5,25 @@
 [!
 Out - One Card that can improve Hand
 Count Card as Out once
-Blocker - One Card that prevents having combinations
 !]
 
 [|
-^Outs^Cards^Hand^
-|Two Pair             |Full House      | 4|
-|Inside Straight      |Straight        | 4|
-|Open-Ended Straight  |Straight        | 8|
-|Four Flush           |Flush           | 9|
-|Straight & Flush Draw|Straight & Flush|15|
+^Type of Draw^Outs^
+|Pair to Set                    | 2|
+|One Overcard                   | 3|
+|Inside Straight Draw           | 4|
+|Two Pair to Full House         | 4|
+|One Pair to Two Pair or Set    | 5|
+|No Pair to Pair                | 6|
+|Two Overcards to Over Pair     | 6|
+|Set to Full House              | 7|
+|Set to Four of Kind            | 7|
+|Open-Ended Straight            | 8|
+|Flush Draw                     | 9|
+|Inside Straight & Two Overcards|10|
+|Inside Straight Draw & Flush   |12|
+|Open Straight & Flush Draw     |15|
 |]
-
 
 ## Outs Example
 
@@ -24,14 +31,17 @@ Blocker - One Card that prevents having combinations
 
 ## Blocker Example
 
+[!
+Blocker - One Card that prevents having combinations
+!]
+
+### Example
+
 Pocket
-&[c|5]&[d|4]
+&[s|K]
 
 Flop
-&[h|6]&[s|3]&[h|Q]
-
-Turn
-&[h|2] or &[h|7]
+&[s|T]&[s|J]&[s|Q]
 
 Result
-Get Straight; loose Flush; Instead of 8 Outs, only 6.
+Blocker to Flush, Blocker to Straight

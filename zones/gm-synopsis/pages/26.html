@@ -38,18 +38,26 @@
 <blockquote>
 Out - One Card that can improve Hand<br>
 Count Card as Out once<br>
-Blocker - One Card that prevents having combinations<br>
 </blockquote>
 
 <div class='clOverflow'>
 <table>
 <tr>
-<th>Outs</th><th>Cards</th><th>Hand</th></tr>
-<tr><td>Two Pair             </td><td>Full House      </td><td> 4</td></tr>
-<tr><td>Inside Straight      </td><td>Straight        </td><td> 4</td></tr>
-<tr><td>Open-Ended Straight  </td><td>Straight        </td><td> 8</td></tr>
-<tr><td>Four Flush           </td><td>Flush           </td><td> 9</td></tr>
-<tr><td>Straight & Flush Draw</td><td>Straight & Flush</td><td>15</td></tr>
+<th>Type of Draw</th><th>Outs</th></tr>
+<tr><td>Pair to Set                    </td><td> 2</td></tr>
+<tr><td>One Overcard                   </td><td> 3</td></tr>
+<tr><td>Inside Straight Draw           </td><td> 4</td></tr>
+<tr><td>Two Pair to Full House         </td><td> 4</td></tr>
+<tr><td>One Pair to Two Pair or Set    </td><td> 5</td></tr>
+<tr><td>No Pair to Pair                </td><td> 6</td></tr>
+<tr><td>Two Overcards to Over Pair     </td><td> 6</td></tr>
+<tr><td>Set to Full House              </td><td> 7</td></tr>
+<tr><td>Set to Four of Kind            </td><td> 7</td></tr>
+<tr><td>Open-Ended Straight            </td><td> 8</td></tr>
+<tr><td>Flush Draw                     </td><td> 9</td></tr>
+<tr><td>Inside Straight & Two Overcards</td><td>10</td></tr>
+<tr><td>Inside Straight Draw & Flush   </td><td>12</td></tr>
+<tr><td>Open Straight & Flush Draw     </td><td>15</td></tr>
 </table>
 </div>
 
@@ -60,17 +68,20 @@ Blocker - One Card that prevents having combinations<br>
 
 <h2>Blocker Example</h2>
 
+<blockquote>
+Blocker - One Card that prevents having combinations<br>
+</blockquote>
+
+<h3>Example</h3>
+
 Pocket<br>
-<q class='c'>5</q><q class='d'>4</q><br>
+<q class='s'>K</q><br>
 <br>
 Flop<br>
-<q class='h'>6</q><q class='s'>3</q><q class='h'>Q</q><br>
-<br>
-Turn<br>
-<q class='h'>2</q> or <q class='h'>7</q><br>
+<q class='s'>T</q><q class='s'>J</q><q class='s'>Q</q><br>
 <br>
 Result<br>
-Get Straight; loose Flush; Instead of 8 Outs, only 6.<br>
+Blocker to Flush, Blocker to Straight<br>
 
 
 </div>
