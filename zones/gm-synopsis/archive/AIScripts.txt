@@ -15,4 +15,12 @@ AA,KK,QQ,JJ,A3s,A4s,A5s,A6s,A7s,A8s,A9s,ATs,AJ,AQ,AK,K9s,KTs,QJs,QTs,JTs,T9s,AJo
 
 
 
-Topic is No Limit Texas Hold'em Poker. Suggest Preflop opening ranges for the Hero on UTG in 9-max game.
+Topic is Poker No Limit Texas Hold'em. Suggest Preflop opening ranges for the Hero on UTG in 9-max game.
+
+Topic is Poker No Limit Texas Hold'em.
+Create a table for 9-max Texas Hold'em game. The hero's pocket cards is A9s. Include the following positions: UTG, UTG+1, UTG+2, HJ, LJ, CO, BTN, SB, BB. List the actions as "Fold," "Call," and "Raise." Provide the recommended percentages for each action, using single values (maximum percentages). Format the table with headers for each action and align the percentages under the appropriate action. Use just the abbreviations in the first column.
+
+Output a hero's ranges in 9 Max game on UTG. Output all ranges on one line, separatede by comma.
+
+Topic is Poker No Limit Texas Hold'em.
+In 9 Max game. BTN range is: 22+, A2s+, K2s+, Q4s+, J6s+, T6s+, 95s+, 85s+, 74s+, 63s+, 53s+, 43s, 32s, A2o+, K7o+, Q9o+, J9o+, T9o, 98o. SB range is: 22+, A2s+, K2s+, Q3s+, J4s+, T4s+, 94s+, 84s+, 73s+, 63s+, 53s+, 43s, 32s, A2o+, K4o+, Q8o+, J9o+, T9o, 98o. Calculate BB range.
