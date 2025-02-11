@@ -1,111 +1,30 @@
-###### Flop
+###### Preflop
 
-## Flop ##
+# Matrices - Actions
 
-# Board Texture
+## AA,KK,QQ
+^[startint-hand-chart-01.webp]
 
-[!
-Board Texture - characteristics of community cards
-!]
+## JJ,TT
+^[startint-hand-chart-02.webp]
 
-[-
-Dry Flop
-Wet Flop
-Connected Flop
-High Flop
-Low Flop
-Monotone
-Two Tone (Suited)
-Paired Two Tone
-Rainbow
-Paired Rainbow
-Trips
--]
+## 99-22
+^[startint-hand-chart-03.webp]
 
-## Dry Flop
-[!
-Cards - unconnected, offsuit
-Favors strong high cards, overpairs
-!]
+## AKs,AKo
+^[startint-hand-chart-04.webp]
 
-### Example
-&[c|2]&[d|7]&[s|Q]
+## AQs,AQo,AJs
+^[startint-hand-chart-05.webp]
 
-## Wet Flop
-[!
-Cards - connected and/or suited
-Potential for straights and flushes
-!]
+## AJo,ATs,ATo
+^[startint-hand-chart-06.webp]
 
-### Example
-&[s|5]&[s|6]&[c|7]
+## A9s-A2s
+^[startint-hand-chart-07.webp]
 
-## Connected Flop
-[!
-Cards - sequential or close in rank
-Potential for straights
-!]
+## KQs,KQo,KJs,KJo,QJs
+^[startint-hand-chart-08.webp]
 
-### Example
-&[s|8]&[c|9]&[d|T]
-
-## High Flop
-[!
-Cards - high-ranking
-Favors high pairs or strong hands
-Lead to significant betting and raises
-!]
-
-### Example
-&[s|A]&[d|K]&[c|Q]
-
-## Low Flop
-[!
-Cards - low-ranking cards
-Favors lower pairs or drawing hands
-Potential for straights and lower sets
-!]
-
-### Example
-&[c|3]&[d|4]&[c|5]
-
-## Monotone
-[!
-All three community cards - one suit
-Strong potential for flush draws
-aka Suited Flop
-!]
-
-### Example
-&[s|5]&[s|7]&[s|J]
-
-## Two Tone (Suited)
-[!
-Two community cards - one suit, the third card - different suit
-Some potential for flush draws
-aka Flush Draw Flop
-!]
-
-### Example
-&[c|9]&[c|T]&[d|4]
-
-## Rainbow
-[!
-All three community cards - different suits
-Reduced flush potential
-Focus on High Cards and Pairs
-Less Action
-!]
-
-### Example
-&[c|7]&[h|9]&[s|Q]
-
-## Paired Rainbow
-[!
-One community cards is a pair, two cards - different ranks and suits
-Potential for Trips or Full Houses
-Less Flush Potential
-!]
-
-### Example
-&[c|4]&[h|4]&[s|9]
+## KTs,KTo,QJo,QTs,Q9s,JTs,J9s,J8s,T9s,T8s,98s,87s,76s,65s,54s
+^[startint-hand-chart-09.webp]

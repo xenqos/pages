@@ -1,47 +1,10 @@
 ###### Odds & Probability
 
-# Outs Calculation
+# Odds Types
 
-[!
-Out - One Card that can improve Hand
-Count Card as Out once
-!]
-
-[|
-^Type of Draw^Outs^
-|Pair to Set                    | 2|
-|One Overcard                   | 3|
-|Inside Straight Draw           | 4|
-|Two Pair to Full House         | 4|
-|One Pair to Two Pair or Set    | 5|
-|No Pair to Pair                | 6|
-|Two Overcards to Over Pair     | 6|
-|Set to Full House              | 7|
-|Set to Four of Kind            | 7|
-|Open-Ended Straight            | 8|
-|Flush Draw                     | 9|
-|Inside Straight & Two Overcards|10|
-|Inside Straight Draw & Flush   |12|
-|Open Straight & Flush Draw     |15|
-|]
-
-## Outs Example
-
-^[outs-samples.webp]
-
-## Blocker Example
-
-[!
-Blocker - One Card that prevents having combinations
-!]
-
-### Example
-
-Pocket
-&[s|K]
-
-Flop
-&[s|T]&[s|J]&[s|Q]
-
-Result
-Blocker to Flush, Blocker to Straight
+[-
+Pot Odds
+Implied Odds
+Equity
+Pot odds in relation to equity
+-]
