@@ -6,9 +6,15 @@
 
 ## Odds
 
-[!
-Relationship of Favorable-Outcomes to Unfavorable-Outcomes
-!]
+$
+\begin{array}{l}
+OD = {FO : UO} \\
+\\
+\small {OD - Odds} \\
+\small {FO - Favorable\;Outcome} \\
+\small {UO - Unfavorable\;Outcome} \\
+\end{array}
+$
 
 ^[probability-odds-outcomes.webp]
 
@@ -19,10 +25,15 @@ Relationship of Favorable-Outcomes to Unfavorable-Outcomes
 **2:1** - Odds against Winning
 
 ## Probability
-
-[!
-Probability Favorable-Outcomes divided by Total-Outcomes
-!]
+$
+\begin{array}{l}
+PR = \large {FO \over TO} \\
+\\
+\small {PR - Probability} \\
+\small {FO - Favorable\;Outcome} \\
+\small {TO - Total\;Outcomes}
+\end{array}
+$
 
 Chance that a given Outcome will happen
 Expressed in fraction 0.0 - 1.0
@@ -113,28 +124,86 @@ Probability-Of-Winning =
 ## Probability to Odds
 $
 \begin{array}{l}
-OD = \large {TO \over PW} - 1 \\
+OD = \large {TO \over PoW} - 1 \\
 \\
 \small {OD - Odds} \\
 \small {TO - Total\;Probability = 100\%} \\
-\small {PW - Probability\;of\;Winning} \\
+\small {PoW - Probability\;of\;Winning} \\
 \end{array}
 $
 
-
 [?
-Total-Probability = 100%
-
-Odds =
-  Total-Probability
-  /
-  Probability-Of-Winning
-  -
-  1
-
 Probability-Of-Winning = 25%
 Odds = 100% / 25% = 4; 4 – 1 = 3; 1:3
 
 Probability-Of-Winning = 20%
 Odds = 100% / 20% = 5; 5 – 4 = 3; 1:4
 ?]
+
+
+<!--
+
+
+## Odds to Probability
+
+[?
+Odds =
+  Favorable-Outcomes
+  :
+  Unfavorable-Outcomes
+
+Odds =
+  1:2
+
+Total-Outcomes =
+  Favorable-Outcomes
+  +
+  Unfavorable-Outcomes
+
+Total-Outcomes =
+  1 + 2 = 3
+
+Total-Probability = 100%
+
+Probability-Of-One-Outcome =
+  Total-Probability
+  /
+  Total-Outcomes
+
+Probability-Of-One-Outcome =
+  100% / 3 ≈ 33%
+
+Probability-Of-Winning =
+  Probability-Of-One-Outcome
+  *
+  Favorable-Outcomes
+
+Probability-Of-Winning =
+  33% * 1 = 33%
+
+Probability-Of-Winning =
+  Favorable-Outcomes
+  /
+  Total-Outcomes
+
+Probability-Of-Winning =
+  1 / 3
+
+Probability-Of-Loosing =
+  Probability-Of-One-Outcome
+  *
+  Unfavorable-Outcomes
+
+Probability-Of-Loosing =
+  33% * 2 = 66%
+
+Probability-Of-Winning =
+  Unfavorable-Outcomes
+  /
+  Total-Outcomes
+
+Probability-Of-Winning =
+  2 / 3
+?]
+
+-->

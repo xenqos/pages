@@ -16,8 +16,7 @@
   <script type='text/javascript' src='../../../scripts/commons.js'></script>
   <script type='text/javascript' src='../../../scripts/book.js'></script>
   <script type='text/javascript' src='../scripts/local.js'></script>
-
-  <script>MathJax={tex: {inlineMath: [['$', '$'], ['\(\(', '\)\)']], processEscapes: true}};</script>
+  <script>MathJax={tex: {inlineMath: [['$', '$'], ['((', '))']], processEscapes: true}};</script>
   <script id='MathJax-script' async src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'></script>
 </head>
 <body onload='fncGetDivState(); fncGetScrollPosition();'>
@@ -41,10 +40,16 @@
 
 <h2>Odds</h2>
 
-<blockquote>
-Relationship of Favorable-Outcomes to Unfavorable-Outcomes<br>
-</blockquote>
-
+$<br>
+\begin{array}{l}<br>
+OD = {FO : UO} \\<br>
+\\<br>
+\small {OD - Odds} \\<br>
+\small {FO - Favorable\;Outcome} \\<br>
+\small {UO - Unfavorable\;Outcome} \\<br>
+\end{array}<br>
+$<br>
+<br>
 <a target='_blank' href='../images/probability-odds-outcomes.webp'><img class='clImageThumb' src='../images/probability-odds-outcomes.webp'></a><br>
 
 <b>2:4</b> - two to four<br>
@@ -54,11 +59,16 @@ Relationship of Favorable-Outcomes to Unfavorable-Outcomes<br>
 <b>2:1</b> - Odds against Winning<br>
 
 <h2>Probability</h2>
-
-<blockquote>
-Probability Favorable-Outcomes divided by Total-Outcomes<br>
-</blockquote>
-
+$<br>
+\begin{array}{l}<br>
+PR = \large {FO \over TO} \\<br>
+\\<br>
+\small {PR - Probability} \\<br>
+\small {FO - Favorable\;Outcome} \\<br>
+\small {TO - Total\;Outcomes}<br>
+\end{array}<br>
+$<br>
+<br>
 Chance that a given Outcome will happen<br>
 Expressed in fraction 0.0 - 1.0<br>
 Expressed in percentage 0% - 100%<br>
@@ -147,30 +157,85 @@ Probability-Of-Winning =
 <h2>Probability to Odds</h2>
 $<br>
 \begin{array}{l}<br>
-OD = \large {TO \over PW} - 1 \\<br>
+OD = \large {TO \over PoW} - 1 \\<br>
 \\<br>
 \small {OD - Odds} \\<br>
 \small {TO - Total\;Probability = 100\%} \\<br>
-\small {PW - Probability\;of\;Winning} \\<br>
+\small {PoW - Probability\;of\;Winning} \\<br>
 \end{array}<br>
 $<br>
-<br>
 
-<pre><code>Total-Probability = 100%
-
-Odds =
-  Total-Probability
-  /
-  Probability-Of-Winning
-  -
-  1
-
-Probability-Of-Winning = 25%
+<pre><code>Probability-Of-Winning = 25%
 Odds = 100% / 25% = 4; 4 – 1 = 3; 1:3
 
 Probability-Of-Winning = 20%
 Odds = 100% / 20% = 5; 5 – 4 = 3; 1:4</code></pre>
 
+<br>
+<!--<br>
+<br>
+
+<h2>Odds to Probability</h2>
+
+<pre><code>Odds =
+  Favorable-Outcomes
+  :
+  Unfavorable-Outcomes
+
+Odds =
+  1:2
+
+Total-Outcomes =
+  Favorable-Outcomes
+  +
+  Unfavorable-Outcomes
+
+Total-Outcomes =
+  1 + 2 = 3
+
+Total-Probability = 100%
+
+Probability-Of-One-Outcome =
+  Total-Probability
+  /
+  Total-Outcomes
+
+Probability-Of-One-Outcome =
+  100% / 3 ≈ 33%
+
+Probability-Of-Winning =
+  Probability-Of-One-Outcome
+  *
+  Favorable-Outcomes
+
+Probability-Of-Winning =
+  33% * 1 = 33%
+
+Probability-Of-Winning =
+  Favorable-Outcomes
+  /
+  Total-Outcomes
+
+Probability-Of-Winning =
+  1 / 3
+
+Probability-Of-Loosing =
+  Probability-Of-One-Outcome
+  *
+  Unfavorable-Outcomes
+
+Probability-Of-Loosing =
+  33% * 2 = 66%
+
+Probability-Of-Winning =
+  Unfavorable-Outcomes
+  /
+  Total-Outcomes
+
+Probability-Of-Winning =
+  2 / 3</code></pre>
+
+-->
 
 
 </div>
