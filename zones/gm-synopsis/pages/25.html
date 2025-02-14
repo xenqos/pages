@@ -72,9 +72,10 @@ $<br>
 \begin{array}{l}<br>
 OD = {FO : UO} \\<br>
 \small {OD =  1 : 2} \\<br>
+\\<br>
 \small {OD - Odds} \\<br>
-\small {FO - FavorableOutcomes} \\<br>
-\small {UO - UnfavorableOutcomes}<br>
+\small {FO - Favorable\;Outcomes} \\<br>
+\small {UO - Unfavorable\;Outcomes}<br>
 \end{array}<br>
 $<br>
 
@@ -83,9 +84,10 @@ $<br>
 \begin{array}{l}<br>
 TO = {FO + UO} \\<br>
 \small {1 + 2 = 3} \\<br>
-\small {TO - TotalOutcomes} \\<br>
-\small {FO - FavorableOutcomes} \\<br>
-\small {UO - UnfavorableOutcomes}<br>
+\\<br>
+\small {TO - Total\;Outcomes} \\<br>
+\small {FO - Favorable\;Outcomes} \\<br>
+\small {UO - Unfavorable\;Outcomes}<br>
 \end{array}<br>
 $<br>
 
@@ -93,43 +95,39 @@ $<br>
 $<br>
 \begin{array}{l}<br>
 POO = \large {TP \over TO} \\<br>
-\small {1 + 2 = 3} \\<br>
-\small {TO - TotalOutcomes} \\<br>
-\small {FO - FavorableOutcomes} \\<br>
-\small {UO - UnfavorableOutcomes}<br>
+\small {33\% ≈ {100\% \over 3}} \\<br>
+\\<br>
+\small {TO - Total\;Probability = 100\%} \\<br>
+\small {TP - Total\;Probability} \\<br>
+\small {TO - Total\;Outcomes}<br>
 \end{array}<br>
 $<br>
-<br>
-<br>
 
-<pre><code>
-Total-Probability = 100%
+<h3>Probability of Winning</h3>
+$<br>
+\begin{array}{l}<br>
+PW = {POO * FO} \\<br>
+\small {33\% ≈ {33\% * 1}} \\<br>
+\\<br>
+\small {PW - Probability\;of\;Winning} \\<br>
+\small {POO - Probability\;of\;One\;Outcome} \\<br>
+\small {FO - Favorable\;Outcomes}<br>
+\end{array}<br>
+$<br>
 
-Probability-Of-One-Outcome =
-  Total-Probability
-  /
-  Total-Outcomes
+<h3>Probability of Winning</h3>
+$<br>
+\begin{array}{l}<br>
+PW = \large {FO \over TO} \\<br>
+\large {1 \over 3} \\<br>
+\\<br>
+\small {PW - Probability\;of\;Winning} \\<br>
+\small {FO - Favorable\;Outcomes} \\<br>
+\small {TO - Total\;Outcomes}<br>
+\end{array}<br>
+$<br>
 
-Probability-Of-One-Outcome =
-  100% / 3 ≈ 33%
-
-Probability-Of-Winning =
-  Probability-Of-One-Outcome
-  *
-  Favorable-Outcomes
-
-Probability-Of-Winning =
-  33% * 1 = 33%
-
-Probability-Of-Winning =
-  Favorable-Outcomes
-  /
-  Total-Outcomes
-
-Probability-Of-Winning =
-  1 / 3
-
-Probability-Of-Loosing =
+<pre><code>Probability-Of-Loosing =
   Probability-Of-One-Outcome
   *
   Unfavorable-Outcomes
@@ -147,6 +145,16 @@ Probability-Of-Winning =
 
 
 <h2>Probability to Odds</h2>
+$<br>
+\begin{array}{l}<br>
+OD = \large {TO \over PW} - 1 \\<br>
+\\<br>
+\small {OD - Odds} \\<br>
+\small {TO - Total\;Probability = 100\%} \\<br>
+\small {PW - Probability\;of\;Winning} \\<br>
+\end{array}<br>
+$<br>
+<br>
 
 <pre><code>Total-Probability = 100%
 

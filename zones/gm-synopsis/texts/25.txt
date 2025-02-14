@@ -37,9 +37,10 @@ $
 \begin{array}{l}
 OD = {FO : UO} \\
 \small {OD =  1 : 2} \\
+\\
 \small {OD - Odds} \\
-\small {FO - FavorableOutcomes} \\
-\small {UO - UnfavorableOutcomes}
+\small {FO - Favorable\;Outcomes} \\
+\small {UO - Unfavorable\;Outcomes}
 \end{array}
 $
 
@@ -48,9 +49,10 @@ $
 \begin{array}{l}
 TO = {FO + UO} \\
 \small {1 + 2 = 3} \\
-\small {TO - TotalOutcomes} \\
-\small {FO - FavorableOutcomes} \\
-\small {UO - UnfavorableOutcomes}
+\\
+\small {TO - Total\;Outcomes} \\
+\small {FO - Favorable\;Outcomes} \\
+\small {UO - Unfavorable\;Outcomes}
 \end{array}
 $
 
@@ -58,43 +60,39 @@ $
 $
 \begin{array}{l}
 POO = \large {TP \over TO} \\
-\small {1 + 2 = 3} \\
-\small {TO - TotalOutcomes} \\
-\small {FO - FavorableOutcomes} \\
-\small {UO - UnfavorableOutcomes}
+\small {33\% ≈ {100\% \over 3}} \\
+\\
+\small {TO - Total\;Probability = 100\%} \\
+\small {TP - Total\;Probability} \\
+\small {TO - Total\;Outcomes}
 \end{array}
 $
 
+### Probability of Winning
+$
+\begin{array}{l}
+PW = {POO * FO} \\
+\small {33\% ≈ {33\% * 1}} \\
+\\
+\small {PW - Probability\;of\;Winning} \\
+\small {POO - Probability\;of\;One\;Outcome} \\
+\small {FO - Favorable\;Outcomes}
+\end{array}
+$
 
+### Probability of Winning
+$
+\begin{array}{l}
+PW = \large {FO \over TO} \\
+\large {1 \over 3} \\
+\\
+\small {PW - Probability\;of\;Winning} \\
+\small {FO - Favorable\;Outcomes} \\
+\small {TO - Total\;Outcomes}
+\end{array}
+$
 
 [?
-
-Total-Probability = 100%
-
-Probability-Of-One-Outcome =
-  Total-Probability
-  /
-  Total-Outcomes
-
-Probability-Of-One-Outcome =
-  100% / 3 ≈ 33%
-
-Probability-Of-Winning =
-  Probability-Of-One-Outcome
-  *
-  Favorable-Outcomes
-
-Probability-Of-Winning =
-  33% * 1 = 33%
-
-Probability-Of-Winning =
-  Favorable-Outcomes
-  /
-  Total-Outcomes
-
-Probability-Of-Winning =
-  1 / 3
-
 Probability-Of-Loosing =
   Probability-Of-One-Outcome
   *
@@ -113,6 +111,16 @@ Probability-Of-Winning =
 ?]
 
 ## Probability to Odds
+$
+\begin{array}{l}
+OD = \large {TO \over PW} - 1 \\
+\\
+\small {OD - Odds} \\
+\small {TO - Total\;Probability = 100\%} \\
+\small {PW - Probability\;of\;Winning} \\
+\end{array}
+$
+
 
 [?
 Total-Probability = 100%
