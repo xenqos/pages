@@ -32,22 +32,42 @@ Expressed in percentage 0% - 100%
 
 ## Odds to Probability
 
+### Odds
+$
+\begin{array}{l}
+OD = {FO : UO} \\
+\small {OD =  1 : 2} \\
+\small {OD - Odds} \\
+\small {FO - FavorableOutcomes} \\
+\small {UO - UnfavorableOutcomes}
+\end{array}
+$
+
+### Total Outcomes
+$
+\begin{array}{l}
+TO = {FO + UO} \\
+\small {1 + 2 = 3} \\
+\small {TO - TotalOutcomes} \\
+\small {FO - FavorableOutcomes} \\
+\small {UO - UnfavorableOutcomes}
+\end{array}
+$
+
+### Probability of One Outcome
+$
+\begin{array}{l}
+POO = \large {TP \over TO} \\
+\small {1 + 2 = 3} \\
+\small {TO - TotalOutcomes} \\
+\small {FO - FavorableOutcomes} \\
+\small {UO - UnfavorableOutcomes}
+\end{array}
+$
+
+
+
 [?
-Odds =
-  Favorable-Outcomes
-  :
-  Unfavorable-Outcomes
-
-Odds =
-  1:2
-
-Total-Outcomes =
-  Favorable-Outcomes
-  +
-  Unfavorable-Outcomes
-
-Total-Outcomes =
-  1 + 2 = 3
 
 Total-Probability = 100%
 

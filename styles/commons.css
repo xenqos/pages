@@ -942,6 +942,17 @@ q.x::after { content: url("../images/poker/nosuit.svg"); }
 
 /*-----------------------------------------------------------------------------------------------*/
 
+.MathJax
+{
+  letter-spacing: normal; /* Reset letter spacing */
+  word-spacing: normal;   /* Reset word spacing */
+  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+
+}
+
+/*-----------------------------------------------------------------------------------------------*/
+
 @media screen and (width:  800px) { html { font-size: 20px; } }
 @media screen and (width: 1280px) { html { font-size: 20px; } }
 

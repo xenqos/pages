@@ -16,6 +16,9 @@
   <script type='text/javascript' src='../../../scripts/commons.js'></script>
   <script type='text/javascript' src='../../../scripts/book.js'></script>
   <script type='text/javascript' src='../scripts/local.js'></script>
+
+  <script>MathJax={tex: {inlineMath: [['$', '$'], ['\(\(', '\)\)']], processEscapes: true}};</script>
+  <script id='MathJax-script' async src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'></script>
 </head>
 <body onload='fncGetDivState(); fncGetScrollPosition();'>
 
@@ -64,22 +67,42 @@ Expressed in percentage 0% - 100%<br>
 
 <h2>Odds to Probability</h2>
 
-<pre><code>Odds =
-  Favorable-Outcomes
-  :
-  Unfavorable-Outcomes
+<h3>Odds</h3>
+$<br>
+\begin{array}{l}<br>
+OD = {FO : UO} \\<br>
+\small {OD =  1 : 2} \\<br>
+\small {OD - Odds} \\<br>
+\small {FO - FavorableOutcomes} \\<br>
+\small {UO - UnfavorableOutcomes}<br>
+\end{array}<br>
+$<br>
 
-Odds =
-  1:2
+<h3>Total Outcomes</h3>
+$<br>
+\begin{array}{l}<br>
+TO = {FO + UO} \\<br>
+\small {1 + 2 = 3} \\<br>
+\small {TO - TotalOutcomes} \\<br>
+\small {FO - FavorableOutcomes} \\<br>
+\small {UO - UnfavorableOutcomes}<br>
+\end{array}<br>
+$<br>
 
-Total-Outcomes =
-  Favorable-Outcomes
-  +
-  Unfavorable-Outcomes
+<h3>Probability of One Outcome</h3>
+$<br>
+\begin{array}{l}<br>
+POO = \large {TP \over TO} \\<br>
+\small {1 + 2 = 3} \\<br>
+\small {TO - TotalOutcomes} \\<br>
+\small {FO - FavorableOutcomes} \\<br>
+\small {UO - UnfavorableOutcomes}<br>
+\end{array}<br>
+$<br>
+<br>
+<br>
 
-Total-Outcomes =
-  1 + 2 = 3
-
+<pre><code>
 Total-Probability = 100%
 
 Probability-Of-One-Outcome =
