@@ -1,30 +1,7 @@
 ###### Preflop
 
-# Matrices - Actions
+# Matrices - Equity
 
-## AA,KK,QQ
-^[startint-hand-chart-01.webp]
+Equity (as %) of opening hands in one-on-one matchups against a random hand
 
-## JJ,TT
-^[startint-hand-chart-02.webp]
-
-## 99-22
-^[startint-hand-chart-03.webp]
-
-## AKs,AKo
-^[startint-hand-chart-04.webp]
-
-## AQs,AQo,AJs
-^[startint-hand-chart-05.webp]
-
-## AJo,ATs,ATo
-^[startint-hand-chart-06.webp]
-
-## A9s-A2s
-^[startint-hand-chart-07.webp]
-
-## KQs,KQo,KJs,KJo,QJs
-^[startint-hand-chart-08.webp]
-
-## KTs,KTo,QJo,QTs,Q9s,JTs,J9s,J8s,T9s,T8s,98s,87s,76s,65s,54s
-^[startint-hand-chart-09.webp]
+^[probability-win-random.webp]

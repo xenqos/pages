@@ -1,24 +1,34 @@
-###### Miscellanea
+###### GTO
 
-## Miscellanea ##
+# Pot Odds
 
-# Card Manufacturers
+[?
+Pot-Odds = Total-Pot / Hero-Bet
+?]
 
-[|
-^Manufacturer   ^Country^Marketed as   ^Li ^Lm^Wi ^Wm^
-|Bicycle        |US     |Poker         |3.5|88|2.5|63|
-|Cartamundi     |Belgium|Poker         |3.5|88|2.5|63|
-|Cartamundi     |Belgium|Bridge        |3.4|87|2.2|56|
-|Piatnik        |Austria|Poker Pro wide|3.5|88|2.5|63|
-|Piatnik        |Austria|Bridge narrow |3.5|89|2.3|58|
-|Kem            |US     |Poker wide    |3.5|89|2.5|64|
-|Kem            |US     |Bridge narrow |3.5|89|2.2|57|
-|De La Rue 1870 |UK     |not specified |3.7|94|2.5|64|
-|De La Rue 1890 |UK     |not specified |3.5|90|2.4|62|
-|Handa          |Denmark|wide          |3.6|91|2.4|62|
-|Ravensburger   |Germany|Poker         |3.6|92|2.3|59|
-|ASS Altenburger|Germany|Poker, Rummy  |3.6|91|2.3|59|
-|Waddingtons    |UK     |Bridge        |3.5|88|2.3|58|
-|Handa          |Denmark|narrow        |3.4|87|2.2|56|
-|Oberg          |Sweden |Poker         |3.4|87|2.2|56|
-|]
+## Example
+
+[?
+Total-Pot = 20bb Pot + 10bb Bet = 30bb
+Hero-Bet = 10bb
+30bb / 10bb = 3
+3:1
+?]
+
+## Pot Odds Break Even %
+
+[?
+Pot Odds = 3:1 > 3 + 1 = 4
+Break-Even-% = 100% / Pot odds added together)
+100% / 4 = 25%
+?]
+
+## PostFlop Action
+
+[?
+Outs-Probability > Pot-Odds-Break-Even-%
+>>> Call
+
+Outs-Probability < Pot-Odds-Break-Even-%
+>>> Fold
+?]

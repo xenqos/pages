@@ -1,38 +1,47 @@
 ###### Odds & Probability
 
-# Outs Probability
+# Outs Calculation
 
 [!
-47 cards after Flop
-46 cards after Turn
+Out - One Card that can improve Hand
+Count Card as Out once
 !]
 
-###### Probability of Hitting on Turn (%)
-[?
-Outs / 47 ​× 100
-?]
+[|
+^Type of Draw^Outs^
+|Pair to Set                    | 2|
+|One Overcard                   | 3|
+|Inside Straight Draw           | 4|
+|Two Pair to Full House         | 4|
+|One Pair to Two Pair or Set    | 5|
+|No Pair to Pair                | 6|
+|Two Overcards to Over Pair     | 6|
+|Set to Full House              | 7|
+|Set to Four of Kind            | 7|
+|Open-Ended Straight            | 8|
+|Flush Draw                     | 9|
+|Inside Straight & Two Overcards|10|
+|Inside Straight Draw & Flush   |12|
+|Open Straight & Flush Draw     |15|
+|]
 
-###### Probability of Not Hitting on Turn (%)
-[?
-(47 - Outs) / 47 ​× 100
-?]
+## Outs Example
 
-###### Probability of Hitting on River (%)
-[?
-Outs / 46 ​× 100
-?]
+^[outs-samples.webp]
 
-###### Probability of Not Hitting on River (%)
-[?
-(46 − Outs / 46)​ × 100
-?]
+## Blocker Example
 
-###### Combined Probability of Hitting (%)
-[?
-(1 − ((47 - Outs) / 47 ​× (46 − Outs / 46)​)) × 100
-?]
+[!
+Blocker - One Card that prevents having combinations
+!]
 
-###### Combined Probability of Not Hitting (%)
-[?
-((47 - Outs) / 47 ​× (46 − Outs / 46)​) × 100
-?]
+### Example
+
+Pocket
+&[s|K]
+
+Flop
+&[s|T]&[s|J]&[s|Q]
+
+Result
+Blocker to Flush, Blocker to Straight

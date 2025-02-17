@@ -9,8 +9,7 @@ dir_texts="${dir_prefix}/texts"
 number_start=17
 number_shift=1
 
-#
-exit 0
+#exit 0
 
 #-------------------------------------------------------------------------------
 

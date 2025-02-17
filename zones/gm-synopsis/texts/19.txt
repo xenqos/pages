@@ -1,111 +1,40 @@
 ###### Preflop
 
-# Combos
+# Range Notations
+
+## Notations
+
+[-
+Hand Matrix
+Range Combo
+Range Strand
+Percentage
+-]
 
 ## Hand Matrix
 
 [!
-Total Ranks = 13 * 13 = 169
-Total Combos  = 78 + 312 + 936 = 1326
+Matrix of 13 rows x 13 columns
+169 starting combinations
+s - suited hands
+o - off-suited hands
 !]
 
 ^[preflop-combos.webp]
 
-## Paired Hands
-
-6 combos x 13 ranks = 78
-
-&[s|A]&[h|A] &nbsp; &[s|A]&[c|A] &nbsp; &[h|A]&[c|A]
-&[s|A]&[d|A] &nbsp; &[h|A]&[d|A] &nbsp; &[d|A]&[c|A]
-
-## Unpaired, Suited Hands
-
-4 combos x 78 ranks = 312
-
-&[s|A]&[s|K] &nbsp; &[d|A]&[d|K]
-&[h|A]&[h|K] &nbsp; &[c|A]&[c|K]
-
-## Unpaired, Offsuit Hands
-
-12 combos x 78 ranks = 936
-
-&[s|A]&[h|K] &nbsp; &[h|A]&[d|K] &nbsp; &[d|A]&[c|K]
-&[s|A]&[d|K] &nbsp; &[h|A]&[c|K] &nbsp; &[c|A]&[s|K]
-&[s|A]&[c|K] &nbsp; &[d|A]&[s|K] &nbsp; &[c|A]&[h|K]
-&[h|A]&[s|K] &nbsp; &[d|A]&[h|K] &nbsp; &[c|A]&[d|K]
-
-## Combinatorics
-
-### Unpaired Hands Combinations
-
-[?
-C  - Total Combinations
-A1 - Available Cards for Card 1
-A2 - Available Cards for Card 2
-
-C = A1 * A2
-?]
-
-### Paired Hands Combinations
-
-[?
-C - Total Combinations
-A - Available Cards
-
-C = ( A * (A - 1) / 2 )
-?]
-
-#### Example
-
-[|
-^A^U^C^E^
-|0|4|6|&[s|A]&[h|A]&ensp;&[s|A]&[d|A]~~&[s|A]&[c|A]&ensp;&[h|A]&[d|A]~~&[h|A]&[c|A]&ensp;&[d|A]&[c|A]|
-|1|3|3|&[s|A]&[h|A]&ensp;&[s|A]&[c|A]~~&[h|A]&[c|A]|
-|2|2|1|&[s|A]&[h|A]|
-|3|1|0||
-|]
-
-A - Available
-U - Unavailable
-C - Combos
-E - Example
-
-<!--
-
-## Concepts
+## Range Combo
 
 [!
-number of combinations between elements
+Can be suited and offsuit
 !]
 
-%[m|Set]
->>> set of elements
+&[d|7] &[h|7]
+&[d|7] &[s|7]
+&[d|7] &[c|7]
+&[h|7] &[s|7]
+&[s|7] &[c|7]
+&[h|7] &[c|7]
 
-%[m|Selection]
->>> extracts elements from set
+## Range Strand
 
-%[m|Addition]
->>> 13&[s|] + 13&[h|] + 13&[c|] + 13&[d|] = 52
-
-%[m|Multiplication]
->>> 13&[x|] * 4 = 52
-
-%[m|Factorial]
->>> number of ways to order elements
->>> 3! = 3 × 2 × 1 = 6
-
-## Formulas
-
-### Combination
-Not Ordered
-@[combinatorics-combination.webp]
-
-### Arrangement
-Not Ordered, Whole Set
-@[combinatorics-arrangement.webp]
-
-### Permutation
-Ordered, Partial Set
-@[combinatorics-permutation.webp]
-
--->
+&[z|22+] &[z|JJ+]&ensp; &[z|AJ+]
