@@ -1,12 +1,12 @@
 #!/bin/bash
 #-------------------------------------------------------------------------------
 
-dir_prefix="${HOME}/mnt/data/Webpages/zones/bg-words"
+dir_prefix="${HOME}/mnt/data/Webpages/zones/ua-words"
 dir_sounds="${dir_prefix}/sounds"
 dir_sources="${dir_prefix}/sources"
 dir_texts="${dir_prefix}/texts"
 
-number_start=17
+number_start=4
 number_shift=1
 
 #
