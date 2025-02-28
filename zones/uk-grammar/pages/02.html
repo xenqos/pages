@@ -19,7 +19,7 @@
   
 </head>
 <body onload='fncGetDivState(); fncGetScrollPosition();'>
-
+<audio id='idTrack' src='../sounds/02.mp3' preload='auto'></audio>
 <div id='idPanel'>
 <div id='idTopbar'>
   <div id='idTopbarNavigation'>
@@ -27,7 +27,7 @@
     <a href='01.html'><span class='clNavLeft'></span></a>
     <a href='../index.html'><span class='clNavUp'></span></a>
     <a href='03.html'><span class='clNavRight'></span></a>
-
+<span class='clNavRewind' onclick='fncRewindTrack(&quot;idTrack&quot;)'></span><span class='clNavPlay' onclick='fncPlayTrack(&quot;idTrack&quot;)'></span>
   </div>
 </div>
 <div id='idContent'>
@@ -69,8 +69,8 @@
 <div class='clOverflow'>
 <table>
 <tr>
-<td><span class='m'>менi</span>           </td><td>мне         </td></tr>
-<tr><td><span class='m'>тобi</span>           </td><td>тебе        </td></tr>
+<td><span class='m'>мені</span>           </td><td>мне         </td></tr>
+<tr><td><span class='m'>тобі</span>           </td><td>тебе        </td></tr>
 <tr><td><span class='m'>йому, йому, її</span> </td><td>ему, ему, ей</td></tr>
 <tr><td><span class='m'>нам</span>            </td><td>нам         </td></tr>
 <tr><td><span class='m'>вам</span>            </td><td>вам         </td></tr>
@@ -111,8 +111,8 @@
 <div class='clOverflow'>
 <table>
 <tr>
-<td><span class='m'>менi</span>                        </td><td>???       </td></tr>
-<tr><td><span class='m'>тобi</span>                        </td><td>???       </td></tr>
+<td><span class='m'>мені</span>                        </td><td>???       </td></tr>
+<tr><td><span class='m'>тобі</span>                        </td><td>???       </td></tr>
 <tr><td><span class='m'>ньому / нім, ньому /нім, ній</span></td><td>им, им, ею</td></tr>
 <tr><td><span class='m'>нас</span>                         </td><td>нас       </td></tr>
 <tr><td><span class='m'>вас</span>                         </td><td>вас       </td></tr>
