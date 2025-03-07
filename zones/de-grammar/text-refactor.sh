@@ -1,7 +1,7 @@
 #!/bin/bash
 #-------------------------------------------------------------------------------
 
-dir_prefix="${HOME}/mnt/data/Webpages/zones/de-grammatik"
+dir_prefix="${HOME}/mnt/data/Webpages/zones/de-grammar"
 dir_sounds="${dir_prefix}/sounds"
 dir_sources="${dir_prefix}/sources"
 dir_texts="${dir_prefix}/texts"
