@@ -1,27 +1,35 @@
 ###### Глаголы &nbsp;•&nbsp; Таблицы склонения
 
-# Indikativ Perfekt
+# Indikativ Präteritum
 
-## Haben + Partizip
+## Regelmäßige
 
+[|
+^^s.^p.^
+|1|-%[l|te]  |-%[l|ten]|
+|2|-%[l|test]|-%[l|tet]|
+|3|-%[l|te]  |-%[l|ten]|
+|]
 %[m|sagen] - говорить
 [|
-|ich|%[m|habe] |%[m|gesagt]|
-|du |%[m|hast] |%[m|gesagt]|
-|er |%[m|hat]  |%[m|gesagt]|
-|wir|%[m|haben]|%[m|gesagt]|
-|ihr|%[m|habt] |%[m|gesagt]|
-|sie|%[m|haben]|%[m|gesagt]|
+^^s.^p.^
+|1|%[m|sag]%[l|te]  |%[m|sag]%[l|ten]|
+|2|%[m|sag]%[l|test]|%[m|sag]%[l|tet]|
+|3|%[m|sag]%[l|te]  |%[m|sag]%[l|ten]|
 |]
 
-## Sein + Partizip
+## Unregelmäßige
 
-%[m|rennen] - бежать
 [|
-|ich|%[m|bin] |%[m|gerannt]|
-|du |%[m|bist]|%[m|gerannt]|
-|er |%[m|ist] |%[m|gerannt]|
-|wir|%[m|sind]|%[m|gerannt]|
-|ihr|%[m|seid]|%[m|gerannt]|
-|sie|%[m|sind]|%[m|gerannt]|
+^^s.^p.^
+|1|-%[l|] |-%[l|en]|
+|2|-%[l|st]|-%[l|t] |
+|3|-%[l|] |-%[l|en]|
+|]
+%[m|singen] - петь
+[|
+^^s.^p.^
+|1|%[m|sang]%[l|]  |%[m|sang]%[l|en]|
+|2|%[m|sang]%[l|st]|%[m|sang]%[l|t] |
+|3|%[m|sang]%[l|]  |%[m|sang]%[l|en]|
 |]

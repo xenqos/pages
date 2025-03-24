@@ -1,91 +1,80 @@
 ###### Существительные
 
-# Тип I - сильное склонение
+# Падежи
 
 [|
-|nom.|-%[m|]|
-|gen.|-(%[m|e])%[m|s]|
-|dat.|-(%[m|e])|
-|akk.|-%[m|]|
+|%[m|die Deklination]|             |склонение|
+|%[m|der Kasus]      |%[n|der Fall]|падеж    |
 |]
 
 [|
-|nom.|%[m|das Fenster]      |%[m|der Löffel]      |
-|gen.|%[m|des Fenster]%[n|s]|%[m|des Löffel]%[n|s]|
-|dat.|%[m|dem Fenster]      |%[m|dem Löffel]      |
-|akk.|%[m|das Fenster]      |%[m|den Löffel]      |
+|%[m|der Nominativ]|%[l|ˈnoːminaˌtiːf]|%[m|wer, was]|кто, что  |
+|%[m|der Genitiv]  |%[l|ˈɡeːnitiːf]   |%[m|wessen]  |чей       |
+|%[m|der Dativ]    |%[l|ˈdaːtiːf]     |%[m|wem]     |кому, чему|
+|%[m|der Accusativ]|%[l|ˈakuzaˌtiːf]  |%[m|wen, was]|кого, что |
 |]
+
+## Nominativ
+
+Функция - обозначение подлежащего
+
+%[m|Die Katze schläft.]
+>>> Кошка спит.
+%[m|Das Buch ist interessant.]
+>>> Книга интересная.
+%[m|Mein Bruder spielt Fußball.]
+>>> Мой брат играет в футбол.
+%[m|Die Kinder spielen im Park.]
+>>> Дети играют в парке.
+
+## Genitiv
+
+Функция - обозначение признаков существительного, зависящих от другого существительного.
+
+%[m|das Haus des Nachbarn] m.
+>>> дом соседa
+%[m|das Buch des Lehrers] m.
+>>> книга учителя
+%[m|der Klang der Glocke] f.
+>>> звук колокола
+%[m|die Farbe des Autos.] n.
+>>> цвет автомобиля
 
 [!
-Большинство существительных мужского рода.
-Все существительные среднего рода (кроме das Herz).
+Окончание -%[m|es]:
+
+1.если в Nominativ:
+>>> -%[m|s], -%[m|ss], -%[m|ß], -%[m|x], -%[m|tz], -%[m|z]
+2.окончания:
+>>> -%[m|sch], -%[m|tsch], -%[m|st]
+3.если безударное окончание:
+>>> -%[m|el], -%[m|en], -%[m|end], -%[m|em],-%[m|er]
+4.окончания:
+>>> -%[m|lein], -%[m|ling], -%[m|ing], -%[m|ig]
 !]
 
-[|
-|%[m|der Vater]  |отец   |
-|%[m|der Mann]   |человек|
-|%[m|das Volk]   |народ  |
-|%[m|das Fenster]|окно   |
-|]
+## Dativ
 
-[!
-Существительные мужского рода на -us, -ismus окончания -(e)s в родительном падеже не получают:
-!]
+Функция - обозначение получателя того, что дается.
 
-[|
-|nom.|%[m|der Kaktus]|%[m|der Realismus]|
-|gen.|%[m|des Kaktus]|%[m|des Realismus]|
-|dat.|%[m|dem Kaktus]|%[m|dem Realismus]|
-|akk.|%[m|den Kaktus]|%[m|den Realismus]|
-|]
-__кактус, реализм__
+%[m|Ich gebe dem Freund ein Buch.]
+>>> Я даю другу книгу.
+%[m|Sie zeigt der Lehrerin ihre Hausaufgaben.]
+>>> Она показывает учительнице свои домашние задания.
+%[m|Ich gehe mit meinem Bruder ins Kino.
+>>> Я иду в кино с братом.
+%[m|Er spricht über das Wetter.]
+>>> Он говорит о погоде.
 
-[!
-Окончание -s в родительном падеже в многосложных существительных:
-!]
+## Accusativ
 
-[|
-|nom.|%[m|der Garten] |%[m|der Kaufmann] |%[m|das Messer] |
-|gen.|%[m|des Gartens]|%[m|des Kaufmanns]|%[m|des Messers]|
-|dat.|%[m|dem Garten] |%[m|dem Kaufmann] |%[m|dem Messer] |
-|akk.|%[m|den Garten] |%[m|den Kaufmann] |%[m|das Messer] |
-|]
-__сад, торговец, нож__
+Функция - обозначение прямого дополнения
 
-[!
-Окончание -es получают односложные существительные:
-!]
-
-[|
-|nom.|%[m|der Hund]  |%[m|der Rat]  |%[m|das Buch]  |
-|gen.|%[m|des Hundes]|%[m|des Rates]|%[m|des Buches]|
-|dat.|%[m|dem Hund]  |%[m|dem Rat]  |%[m|dem Buch]  |
-|akk.|%[m|den Hund]  |%[m|den Rat]  |%[m|das Buch]  |
-|]
-__собака, совет, книга__
-
-[!
-Окончание -es получают существительные на -%[l|s], -%[l|ß], -%[l|x], -%[l|z], -%[l|tz]:
-!]
-
-[|
-|nom.|%[m|das Glas]  |%[m|der Schmerz]  |%[m|das Gefäß]  |
-|gen.|%[m|des Glases]|%[m|des Schmerzes]|%[m|des Gefäßes]|
-|dat.|%[m|dem Glas]  |%[m|dem Schmerz]  |%[m|dem Gefäß]  |
-|akk.|%[m|das Glas]  |%[m|den Schmerz]  |%[m|das Gefäß]  |
-|]
-
-__стекло, боль, сосуд__
-
-[!
-Некоторые односложные существительные сохраняют окончание дательного падежа -%[l|е]:
-!]
-
-[|
-|nom.|%[m|das Haus]       |%[m|der Wald]       |
-|gen.|%[m|des Haus]%[n|es]|%[m|des Wald]%[n|es]|
-|dat.|%[m|dem Haus]%[n|e] |%[m|dem Wald]%[n|e] |
-|akk.|%[m|das Haus]       |%[m|den Wald]       |
-|]
-
-__дом, лес__
+%[m|Ich sehe den Hund.]
+>>> Я вижу собаку.
+%[m|Sie kauft einen Apfel.]
+>>> Она покупает яблоко.
+%[m|Ich gehe durch den Park.]
+>>> Я иду через парк.
+%[m|Er stellt das Buch auf den Tisch.]
+>>> Он ставит книгу на стол.

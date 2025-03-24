@@ -1,26 +1,29 @@
 ###### Глаголы
 
-# Наклонение
+## Глаголы ##
 
-## Indikativ
+# Термины
+---
 [|
-|%[m|das Präsens]   |%[m|das Perfekt]        |
-|%[m|das Präteritum]|%[m|das Plusquamperfekt]|
-|%[m|das Futur I]   |%[m|das Futur II]       |
+|%[m|der Modus]        |                          |наклонение       |
+|%[m|der Indikativ]    |%[n|die Wirklichkeitsform]|изъявительное    |
+|%[m|der Konjunktiv I] |%[n|die Möglichkeitsform] |сослагательное I |
+|%[m|der Konjunktiv II]|%[n|die Möglichkeitsform] |сослагательное II|
+|%[m|der Imperativ]    |%[n|die Befehlsform]      |повелительное    |
 |]
 
-## Konjunktiv I
 [|
-|%[m|das Präsens]|%[m|das Perfekt] |
-|%[m|das Futur I]|%[m|das Futur II]|
+|%[m|der Konjunktiv I ]|косвенная речь      |
+|%[m|der Konjunktiv II]|условное придаточное|
 |]
-
-## Konjunktiv II
+---
 [|
-|%[m|das Präteritum]|%[m|das Plusquamperfekt]|
+|%[m|das Tempus]         |%[n|die Zeit]            |время                    |
+|%[m|das Präsens]        |%[n|die Gegenwart]       |настоящее                |
+|%[m|das Präteritum]     |%[n|die Vergangenheit]   |прошедшее                |
+|%[m|das Futur I]        |%[n|die Zukunft]         |будущее                  |
+|%[m|das Perfekt]        |%[n|die Vorgegenwart]    |предпрошедшее            |
+|%[m|das Plusquamperfekt]|%[n|die Vorvergangenheit]|предпрошедшее в прошлом  |
+|%[m|das Futur II]       |%[n|die Vorzukunft]      |предварительное в будущем|
 |]
-
-## Imperativ
-[|
-|%[m|das Präsens]|
-|]
+---

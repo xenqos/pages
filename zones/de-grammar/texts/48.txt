@@ -1,31 +1,36 @@
 ###### Глаголы &nbsp;•&nbsp; Таблицы склонения
 
-# Konjunktiv II Plusquamperfekt
+# Konjunktiv II Präteritum
 
-## Haben + Partizip
+## Regelmäßige
 
 %[m|sagen] - говорить
 [|
-|ich|%[m|hätte]  |%[m|gesagt]|
-|du |%[m|hättest]|%[m|gesagt]|
-|er |%[m|hätte]  |%[m|gesagt]|
+^^s.^p.^
+|1|-%[l|te]  |-%[l|ten]|
+|2|-%[l|test]|-%[l|tet]|
+|3|-%[l|te]  |-%[l|ten]|
 |]
 [|
-|wir|%[m|hätten] |%[m|gesagt]|
-|ihr|%[m|hättet] |%[m|gesagt]|
-|sie|%[m|hätten] |%[m|gesagt]|
+^^s.^p.^
+|1|%[m|sag]%[l|te]  |%[m|sag]%[l|ten]|
+|2|%[m|sag]%[l|test]|%[m|sag]%[l|tet]|
+|3|%[m|sag]%[l|te]  |%[m|sag]%[l|ten]|
 |]
 
-## Sein + Partizip
+## Unregelmäßige
 
-%[m|rennen] - бежать
+%[m|singen] - петь
 [|
-|ich|%[m|wäre]  |%[m|gerannt]|
-|du |%[m|wär](%[m|e])%[m|st]|%[m|gerannt]|
-|er |%[m|wäre]  |%[m|gerannt]|
+^^s.^p.^
+|1|-%[l|e]  |-%[l|en]|
+|2|-%[l|est]|-%[l|et] |
+|3|-%[l|e]  |-%[l|en]|
 |]
+
 [|
-|wir|%[m|wären]|%[m|gerannt]|
-|ihr|%[m|wär](%[m|e])%[m|t] |%[m|gerannt]|
-|sie|%[m|wären]|%[m|gerannt]|
+^^s.^p.^
+|1|%[m|säng]%[l|e]  |%[m|säng]%[l|en]|
+|2|%[m|säng]%[l|est]|%[m|säng]%[l|et]|
+|3|%[m|säng]%[l|e]  |%[m|säng]%[l|en]|
 |]

@@ -1,84 +1,27 @@
 ###### Существительные
 
-# Падежи
+# Мужской род
 
+### 1
+-%[m|er], -%[m|ling]
+__безударные суффиксы__
 [|
-|%[m|die Deklination]|             |склонение|
-|%[m|der Kasus]      |%[n|der Fall]|падеж    |
+|%[m|der Lehrer]  |учитель         |
+|%[m|der Fahrer]  |шофер           |
+|%[m|der Maler]   |художник        |
+|%[m|der Lehrling]|ученик у мастера|
 |]
 
-[|
-|%[m|der Nominativ]|%[l|ˈnoːminaˌtiːf]|%[m|wer, was]|кто, что  |
-|%[m|der Genitiv]  |%[l|ˈɡeːnitiːf]   |%[m|wessen]  |чей       |
-|%[m|der Dativ]    |%[l|ˈdaːtiːf]     |%[m|wem]     |кому, чему|
-|%[m|der Accusativ]|%[l|ˈakuzaˌtiːf]  |%[m|wen, was]|кого, что |
-|]
+### 2
 
-## Nominativ
+Существительные – обозначения лиц и деятелей мужского
+пола с суффиксами `ant, `ent, `ist, `loge, `eur, `ääääär (ударные), `or
+зударный):
+der Laborant лаборант, der Student студент, der Polizist полицей%
+ский, der Geologe геолог, der Ingenieur инженер, der Funktionääääär
+функционер, der Doktor доктор.
 
-Функция - обозначение подлежащего
-
-
-%[m|Die Katze schläft.]
->>> Кошка спит.
-%[m|Das Buch ist interessant.]
->>> Книга интересная.
-%[m|Mein Bruder spielt Fußball.]
->>> Мой брат играет в футбол.
-%[m|Die Kinder spielen im Park.]
->>> Дети играют в парке.
-
-## Genitiv
-
-Функция - обозначение признаков существительного, зависящих от другого существительного.
-
-
-%[m|das Haus des Nachbarn] m.
->>> дом соседa
-%[m|das Buch des Lehrers] m.
->>> книга учителя
-%[m|der Klang der Glocke] f.
->>> звук колокола
-%[m|die Farbe des Autos.] n.
->>> цвет автомобиля
-
-[!
-Окончание -%[m|es]:
-
-1.если в Nominativ:
->>> -%[m|s], -%[m|ss], -%[m|ß], -%[m|x], -%[m|tz], -%[m|z]
-2.окончания:
->>> -%[m|sch], -%[m|tsch], -%[m|st]
-3.если безударное окончание:
->>> -%[m|el], -%[m|en], -%[m|end], -%[m|em],-%[m|er]
-4.окончания:
->>> -%[m|lein], -%[m|ling], -%[m|ing], -%[m|ig]
-!]
-
-## Dativ
-
-Функция - обозначение получателя того, что дается.
-
-
-%[m|Ich gebe dem Freund ein Buch.]
->>> Я даю другу книгу.
-%[m|Sie zeigt der Lehrerin ihre Hausaufgaben.]
->>> Она показывает учительнице свои домашние задания.
-%[m|Ich gehe mit meinem Bruder ins Kino.
->>> Я иду в кино с братом.
-%[m|Er spricht über das Wetter.]
->>> Он говорит о погоде.
-
-## Accusativ
-
-Функция - обозначение прямого дополнения
-
-
-%[m|Ich sehe den Hund.]
->>> Я вижу собаку.
-%[m|Sie kauft einen Apfel.]
->>> Она покупает яблоко.
-%[m|Ich gehe durch den Park.]
->>> Я иду через парк.
-%[m|Er stellt das Buch auf den Tisch.]
->>> Он ставит книгу на стол.
+### 3
+Односложные существительные, производные от глаголов:
+der Gang ход (от gehen идти), der Sprung прыжок (от springen пры%
+гать), der Lauf бег; течение (от laufen бежать)
