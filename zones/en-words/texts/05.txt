@@ -1,25 +1,89 @@
-# Цвятовѐ
+# Sound Verbs
 
-|червѐн||красный
-|ора̀нжев||оранжевый
-|жълт||жёлтый
-|зелѐн||зелёный
-|свѐтлосѝн||голубой
-|син||синий
-|пу̀рпурен||фиолетовый
+## Human Sounds
 
-|ро̀зов||розовый
-|кафя̀в||коричневый
+|pant           |panting    |тяжело дышит
+|gasp           |gasping    |тяжело вдыхает
+|sniffle        |sniffling  |сопит, шмыгает носом
+|sob            |sobbing    |всхлипывает
+|sigh           |sighing    |вздыхает
+|gag            |gagging    |давится
+|groan          |groaning   |стонет
+|moan           |moaning    |стонет
+|grunt          |grunting   |ворчать, бормотать
 
-|бял||белый
-|сив||серый
-|чѐрен||чёрный
+|chatter        |chattering |болтать
+|grumble        |grumbling  |жаловаться, роптать
+|mutter         |muttering  |невнятно говорит
+|shout          |shouting   |кричать
+|yell           |yelling    |вопить
+|scream         |screaming  |визжать
+|whimper        |whimpering |хныкает, скулит
+|whistle        |whistling  |свистит
+|giggle         |giggling   |хихикает
+|scoff          |scoffing   |усмехается
 
-|цвят||цвет
-|цвятовѐ||цвета
+## Inhuman sounds:
 
-|﻿ба̀гра||цвет (лит.)
-|﻿ба̀гри||цвета (лит.)
+|knock          |knocking   |стук в дверь (on door)
+|thud           |thudding   |глухой стук; или звук падения тяжёлого предмета (door)
+|creak          |creaking   |скрип (door)
+|squeak         |squeaking  |резкий скрип, писк (door, valve)
+|screech        |screeching |скрип, скрежет (door, brakes)
+|squeal         |squealing  |визг, скрежет (brakes, tires)
 
-|﻿боя̀||краска (вешество)
-|﻿боѝ||краски (вешество)
+|blar           |blaring    |вой, рёв (siren, wind)
+|wail           |wailing    |вой, рёв (siren, wind)
+|beep           |beeping    |гудок, пиканье, бибиканье (machine)
+|hum            |humming    |жужжание; монотонный глухой шум (приборов, машин за окном)
+|whir           |whirring   |вибрирующий шум машин: например, стиралки, вентилятора, вертолёта
+
+|sizzle         |sizzling   |шкворчание, шипение при жарке, сжигании
+|rustle         |rustling   |хруст, шуршание бумаги, листьев под ногами
+|patter         |pattering  |шум дождя, стук капель; лёгкий топот
+|rumble         |rumbling   |грохот, рокот, громыхание (грома, тяжёлых машин); урчание (в животе)
+|rattle         |rattling   |треск, дребезг, грохот (погремушки, трещотки, ключа в личине)
+|clatter        |clattering |сильный грохот: если обрушить полку с посудой, будет именно он.
+
+|clang          |clanging   |лязг, бряцание, металлический звук
+|clank          |clanking   |лязг, бряцание, металлический звук
+|clink          |clinking   |лёгкий звон стекла или металла
+|ding           |dinging    |звон колокола, металла
+|shatter        |shattering |звук разбивающегося стекла (glass)
+
+|pound          |pounding   |тяжёлый удар, например, молотка на аукционе, или стук (сердца, печатной машинки…)
+|clapp          |clapping   |гром; либо аплодисменты
+|bang           |banging    |громкий удар: хлопок дверью, стук в дверь, выстрел, взрыв и т.д.
+|roar           |roaring    |рёв (самолёта, мотоцикла, животного)
+
+## Animal Sounds
+
+|growl          |growling   |рычание (dog)
+|purr           |purring    |мурлыканье (cat)
+|hiss           |hissing    |шипение (cat, snake)
+|buzz           |buzzing    |жужжание (fly)
+
+|croak       |croaking       |кваканье, карканье (frog, bird)
+|caw         |cawing         |карканье (bird)
+|chirp       |chirping       |чириканье, щебет / стрёкот (bird / cricket / grasshopper)
+|hoot        |hooting        |уханье (owl)
+|cluck       |clucking       |кудахтанье, клохтанье (chicken)
+|quack       |quacking       |кряканье (duck)
+|honk        |honking        |гогот (goose)
+
+|grunt       |grunting       |хрюканье (pig)
+|oink        |oinking        |хрюканье (pig)
+|bleat       |bleating       |блеяние (sheep, goat)
+|bray        |braying        |рёв осла (donkey)
+|bellow      |bellowing      |мычание, рёв (cow, bull)
+|neigh       |neighing       |ржание (horse)
+|nicker      |nickering      |ржание (horse)
+|snort       |snorting       |храп, фырканье (horse)
+|hoofbeat    |hoofbeat       |топот копыт
+
+## Sound Quality
+
+|muffled  ||приглушённый
+|garbled  ||искажённый
+|distorted||деформированный
+|slurred  ||неразборчивый, невнятный

@@ -1,3 +1,7 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="en-GB-SoniaNeural">
+<prosody rate="-30%" pitch="0%">
+
 Monday
 Tuesday
 Wednesday
@@ -10,8 +14,10 @@ January
 February
 March
 April
+May
+June
 July
-Auguest
+August
 September
 October
 November
@@ -61,3 +67,7 @@ a quarter past three in the morning
 twenty-five minutes to seven in the evening
 seven minutes past four in the afternoon
 half past eight in the evening
+
+</prosody>
+</voice>
+</speak>
