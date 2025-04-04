@@ -1,26 +1,32 @@
-search for.
-set down.
-set off.
-set up.
-settle down.
-shoot at.
-shoot out.
-shout at.
-show up.
-shut down.
-shut up.
-sit back.
-sit down.
-sit up.
-smell at.
-speak with.
-spread out.
-stand by.
-stand out.
-stand up.
-stick out.
-succeed in.
-suffer from.
-swear at.
-switch off.
-switch on.
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="en-GB-SoniaNeural">
+<prosody rate="-30%" pitch="0%">
+search for
+set down
+set off
+set up
+settle down
+shoot at
+shoot out
+shout at
+show up
+shut down
+shut up
+sit back
+sit down
+sit up
+smell at
+speak with
+spread out
+stand by
+stand out
+stand up
+stick out
+succeed in
+suffer from
+swear at
+switch off
+switch on
+</prosody>
+</voice>
+</speak>
