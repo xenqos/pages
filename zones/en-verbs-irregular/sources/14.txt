@@ -1,3 +1,6 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="en-GB-SoniaNeural">
+<prosody rate="-30%" pitch="0%">
 read, read, read.
 reave, reft, reft.
 rid, rid, rid.
@@ -6,3 +9,6 @@ ring, rang, rung.
 rise, rose, risen.
 rive, rived, riven.
 run, ran, run.
+</prosody>
+</voice>
+</speak>
