@@ -40,8 +40,8 @@ Vowel length is not relevant.
 !]
 
 [|
-|Long  before|%[l|b]|%[l|d]|%[l|g]|%[l|v]|%[l|z]|%[l|zh]|%[l|j ]|%[l|t͟h]|
-|Short before|%[l|p]|%[l|t]|%[l|k]|%[l|f]|%[l|s]|%[l|sh]|%[l|ch]|%[l|th]|
+|Long  before|%[l|b]|%[l|d]|%[l|g]|%[l|v]|%[l|z]|%[l|ʒ]|%[l|ʤ]|%[l|ð]|
+|Short before|%[l|p]|%[l|t]|%[l|k]|%[l|f]|%[l|s]|%[l|ʃ]|%[l|ʧ]|%[l|θ]|
 |]
 
 ## Labialization
@@ -49,22 +49,22 @@ Vowel length is not relevant.
 @[labialization.jpg]
 
 [|
-|%[l|ē ]|Unrounded, stretched         |
-|%[l|i ]|Unrounded, slightly stretched|
+|%[l|iː]|Unrounded, stretched         |
+|%[l|ɪ ]|Unrounded, slightly stretched|
 |%[l|e ]|Unrounded, not stretched     |
-|%[l|a ]|Unrounded, open wide         |
+|%[l|æ ]|Unrounded, open wide         |
 |]
 
 [|
-|%[l|er]|Slightly rounded             |
+|%[l|ɜː]|Slightly rounded             |
 |%[l|ə ]|Unrounded, neutral, relaxed  |
 |]
 
 [|
-|%[l|ü ]|Very rounded                 |
-|%[l|u ]|Moderately rounded           |
-|%[l|ȯ ]|Rounded                      |
-|%[l|ä ]|Unrounded, open wide         |
+|%[l|uː]|Very rounded                 |
+|%[l|ʊ ]|Moderately rounded           |
+|%[l|ɔː]|Rounded                      |
+|%[l|ɑː]|Unrounded, open wide         |
 |]
 
 ## Diphthongs
@@ -74,8 +74,8 @@ Vowel length is not relevant.
 ## Consonants
 
 [|
-|voiced   |%[l|b]|%[l|d]|%[l|g]|%[l|v]|%[l|z]|%[l|zh]|%[l|j ]|%[l|t͟h]|
-|voiceless|%[l|p]|%[l|t]|%[l|k]|%[l|f]|%[l|s]|%[l|sh]|%[l|ch]|%[l|th]|
+|voiced   |%[l|b]|%[l|d]|%[l|g]|%[l|v]|%[l|z]|%[l|ʒ]|%[l|ʤ]|%[l|ð]|
+|voiceless|%[l|p]|%[l|t]|%[l|k]|%[l|f]|%[l|s]|%[l|ʃ]|%[l|ʧ]|%[l|θ]|
 |]
 
 [|
@@ -86,12 +86,8 @@ Vowel length is not relevant.
 [|
 |     |Labial  |Dental  |Alveolar|Post<br>alveolar|Palatal |Velar  |Glottal |
 |Stop|%[l|b p]||%[l|d t]|||%[l|g k]||
-|Fricative|%[l|v f]|%[l|t͟h th]|%[l|z s]|%[l|zh sh]|||%[l|h]|
-|Affricate||||%[l|j ch]||||
+|Fricative|%[l|v f]|%[l|ʧ θ]|%[l|z s]|%[l|ʒ ʃ]|||%[l|h]|
+|Affricate||||%[l|ʤ ʧ]||||
 |Nasal|%[l|m]||%[l|n]|||%[l|ŋ]||
 |Approximant|||%[l|l]|%[l|r]|%[l|j]|%[l|w]||
 |]
-
-## Labiograms
-
-@[labiograms.jpg]
