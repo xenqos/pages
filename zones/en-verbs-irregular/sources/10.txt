@@ -1,6 +1,3 @@
-<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="en-GB-SoniaNeural">
-<prosody rate="-30%" pitch="0%">
 lade, laded, laden.
 lay, laid, laid.
 lead, led, led.
@@ -13,6 +10,3 @@ let, let, let.
 lie, lay, lain.
 light, lit, lit.
 lose, lost, lost.
-</prosody>
-</voice>
-</speak>
