@@ -1,3 +1,6 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="en-CA-ClaraNeural">
+<prosody rate="-30%" pitch="0%">
 take, took, taken.
 teach, taught, taught.
 tear, tore, torn.
@@ -7,3 +10,6 @@ thrive, throve, thrived, thriven, thrived.
 throw, threw, thrown.
 thrust, thrust, thrust.
 tread, trod, trod, trodden.
+</prosody>
+</voice>
+</speak>

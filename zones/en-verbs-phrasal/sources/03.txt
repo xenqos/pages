@@ -1,28 +1,34 @@
-call back.
-calm down.
-care for.
-carry on.
-carry out.
-catch up.
-check in.
-check out.
-clean up.
-come across.
-come along.
-come back.
-come by.
-come down.
-come forward.
-come from.
-come in.
-come off.
-come on.
-come out.
-come over.
-come up.
-complain about.
-connive at.
-consist of.
-count on.
-cut off.
-cut out.
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="en-CA-ClaraNeural">
+<prosody rate="-30%" pitch="0%">
+call back
+calm down
+care for
+carry on
+carry out
+catch up
+check in
+check out
+clean up
+come across
+come along
+come back
+come by
+come down
+come forward
+come from
+come in
+come off
+come on
+come out
+come over
+come up
+complain about
+connive at
+consist of
+count on
+cut off
+cut out
+</prosody>
+</voice>
+</speak>

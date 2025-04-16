@@ -1,4 +1,7 @@
-be, was/were, been.
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="en-CA-ClaraNeural">
+<prosody rate="-30%" pitch="0%">
+be, was, were, been.
 bear, bore, born.
 beat, beat, beaten.
 become, became, become.
@@ -6,7 +9,7 @@ begin, began, begun.
 bend, bent, bent.
 beseech, besought, besought.
 bet, bet, bet.
-bid, bid/bade, bid.
+bid, bid, bade, bid.
 bind, bound, bound.
 bite, bit, bitten.
 bleed, bled, bled.
@@ -20,3 +23,6 @@ burn, burnt, burnt.
 burst, burst, burst.
 bust, bust, bust.
 buy, bought, bought.
+</prosody>
+</voice>
+</speak>
