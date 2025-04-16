@@ -19,7 +19,7 @@
   
 </head>
 <body onload='fncGetDivState(); fncGetScrollPosition();'>
-
+<audio id='idTrack' src='../sounds/06.mp3' preload='auto'></audio>
 <div id='idPanel'>
 <div id='idTopbar'>
   <div id='idTopbarNavigation'>
@@ -27,64 +27,34 @@
     <a href='05.html'><span class='clNavLeft'></span></a>
     <a href='../index.html'><span class='clNavUp'></span></a>
     <a href='07.html'><span class='clNavRight'></span></a>
-
+<span class='clNavRewind' onclick='fncRewindTrack(&quot;idTrack&quot;)'></span><span class='clNavPlay' onclick='fncPlayTrack(&quot;idTrack&quot;)'></span>
   </div>
 </div>
 <div id='idContent'>
 
-<h1>Сво̀йства</h1>
+<h1>Sounds - Human</h1>
 
-<p class='m'>добъ̀р</p><p class='g0500'></p><p class='b1000'>хорошй</p>
-<p class='m'>лош</p><p class='g0500'></p><p class='b1000'>плохой</p>
 <br>
-<p class='m'>бърз</p><p class='g0500'></p><p class='b1000'>быстрый</p>
-<p class='m'>ба̀вен</p><p class='g0500'></p><p class='b1000'>медленный</p>
+<p class='m'>pant   </p><p class='g0500'>panting   </p><p class='b1000'>тяжело дышит</p>
+<p class='m'>gasp   </p><p class='g0500'>gasping   </p><p class='b1000'>тяжело вдыхает</p>
+<p class='m'>sniffle</p><p class='g0500'>sniffling </p><p class='b1000'>сопит, шмыгает носом</p>
+<p class='m'>sob    </p><p class='g0500'>sobbing   </p><p class='b1000'>всхлипывает</p>
+<p class='m'>sigh   </p><p class='g0500'>sighing   </p><p class='b1000'>вздыхает</p>
+<p class='m'>gag    </p><p class='g0500'>gagging   </p><p class='b1000'>давится</p>
+<p class='m'>groan  </p><p class='g0500'>groaning  </p><p class='b1000'>стонет</p>
+<p class='m'>moan   </p><p class='g0500'>moaning   </p><p class='b1000'>стонет</p>
+<p class='m'>grunt  </p><p class='g0500'>grunting  </p><p class='b1000'>ворчать, бормотать</p>
 <br>
-<p class='m'>голя̀м</p><p class='g0500'></p><p class='b1000'>большой</p>
-<p class='m'>ма̀лък</p><p class='g0500'></p><p class='b1000'>маленький</p>
-<br>
-<p class='m'>кру̀пен</p><p class='g0500'></p><p class='b1000'>крупный</p>
-<p class='m'>дрѐбен</p><p class='g0500'></p><p class='b1000'>мелкий</p>
-<br>
-<p class='m'>висо̀к</p><p class='g0500'></p><p class='b1000'>высокий</p>
-<p class='m'>нѝзък</p><p class='g0500'></p><p class='b1000'>низкий</p>
-<br>
-<p class='m'>връ̀хен</p><p class='g0500'></p><p class='b1000'>верхний</p>
-<p class='m'>до̀лен</p><p class='g0500'></p><p class='b1000'>нижний</p>
-<br>
-<p class='m'>дъ̀лъг</p><p class='g0500'></p><p class='b1000'>длинный</p>
-<p class='m'>къс</p><p class='g0500'></p><p class='b1000'>короткий</p>
-<p class='m'>кра̀тък</p><p class='g0500'></p><p class='b1000'>краткий</p>
-<br>
-<p class='m'>крѐпък</p><p class='g0500'></p><p class='b1000'>крепкий</p>
-<p class='m'>сѝлен</p><p class='g0500'></p><p class='b1000'>сильный</p>
-<p class='m'>слаб</p><p class='g0500'></p><p class='b1000'>слабый</p>
-<br>
-<p class='m'>дебѐл</p><p class='g0500'></p><p class='b1000'>толстый</p>
-<p class='m'>тъ̀нък</p><p class='g0500'></p><p class='b1000'>тонкий</p>
-<br>
-<p class='m'>сла̀дък</p><p class='g0500'></p><p class='b1000'>сладкий</p>
-<p class='m'>солѐн</p><p class='g0500'></p><p class='b1000'>солёный</p>
-<p class='m'>кѝсел</p><p class='g0500'></p><p class='b1000'>кислый</p>
-<p class='m'>тръпчѝв</p><p class='g0500'></p><p class='b1000'>терпкий</p>
-<p class='m'>горчѝв</p><p class='g0500'></p><p class='b1000'>горький</p>
-<br>
-<p class='m'>сух</p><p class='g0500'></p><p class='b1000'>сухой</p>
-<p class='m'>мо̀кър</p><p class='g0500'></p><p class='b1000'>мокрый</p>
-<br>
-<p class='m'>горѐщ</p><p class='g0500'></p><p class='b1000'>горячий</p>
-<p class='m'>студѐн</p><p class='g0500'></p><p class='b1000'>холодный</p>
-<p class='m'>то̀пъл</p><p class='g0500'></p><p class='b1000'>теплый</p>
-<p class='m'>прохла̀ден</p><p class='g0500'></p><p class='b1000'>прохладный</p>
-<br>
-<p class='m'>твърд</p><p class='g0500'></p><p class='b1000'>твердый</p>
-<p class='m'>тѐчен</p><p class='g0500'></p><p class='b1000'>жидкий</p>
-<br>
-<p class='m'>о̀стър</p><p class='g0500'></p><p class='b1000'>острый</p>
-<p class='m'>тъп</p><p class='g0500'></p><p class='b1000'>тупой</p>
-<br>
-<p class='m'>гла̀дък</p><p class='g0500'></p><p class='b1000'>гладкий</p>
-<p class='m'>гра̀пав</p><p class='g0500'></p><p class='b1000'>шероховатый</p>
+<p class='m'>chatter</p><p class='g0500'>chattering</p><p class='b1000'>болтать</p>
+<p class='m'>grumble</p><p class='g0500'>grumbling </p><p class='b1000'>жаловаться, роптать</p>
+<p class='m'>mutter </p><p class='g0500'>muttering </p><p class='b1000'>невнятно говорит</p>
+<p class='m'>shout  </p><p class='g0500'>shouting  </p><p class='b1000'>кричать</p>
+<p class='m'>yell   </p><p class='g0500'>yelling   </p><p class='b1000'>вопить</p>
+<p class='m'>scream </p><p class='g0500'>screaming </p><p class='b1000'>визжать</p>
+<p class='m'>whimper</p><p class='g0500'>whimpering</p><p class='b1000'>хныкает, скулит</p>
+<p class='m'>whistle</p><p class='g0500'>whistling </p><p class='b1000'>свистит</p>
+<p class='m'>giggle </p><p class='g0500'>giggling  </p><p class='b1000'>хихикает</p>
+<p class='m'>scoff  </p><p class='g0500'>scoffing  </p><p class='b1000'>усмехается</p>
 
 
 </div>

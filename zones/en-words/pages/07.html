@@ -19,7 +19,7 @@
   
 </head>
 <body onload='fncGetDivState(); fncGetScrollPosition();'>
-
+<audio id='idTrack' src='../sounds/07.mp3' preload='auto'></audio>
 <div id='idPanel'>
 <div id='idTopbar'>
   <div id='idTopbarNavigation'>
@@ -27,28 +27,43 @@
     <a href='06.html'><span class='clNavLeft'></span></a>
     <a href='../index.html'><span class='clNavUp'></span></a>
     <a href='08.html'><span class='clNavRight'></span></a>
-
+<span class='clNavRewind' onclick='fncRewindTrack(&quot;idTrack&quot;)'></span><span class='clNavPlay' onclick='fncPlayTrack(&quot;idTrack&quot;)'></span>
   </div>
 </div>
 <div id='idContent'>
 
-<h1>Колѝчество</h1>
+<h1>Sounds - Inhuman</h1>
 
-<p class='m'>мно̀го</p><p class='g0500'></p><p class='b1000'>много</p>
-<p class='m'>ма̀лко</p><p class='g0500'></p><p class='b1000'>мало</p>
+<p class='m'>knock  </p><p class='g0500'>knocking  </p><p class='b1000'>стук в дверь (on door)</p>
+<p class='m'>thud   </p><p class='g0500'>thudding  </p><p class='b1000'>глухой стук; или звук падения тяжёлого предмета (door)</p>
+<p class='m'>creak  </p><p class='g0500'>creaking  </p><p class='b1000'>скрип (door)</p>
+<p class='m'>squeak </p><p class='g0500'>squeaking </p><p class='b1000'>резкий скрип, писк (door, valve)</p>
+<p class='m'>screech</p><p class='g0500'>screeching</p><p class='b1000'>скрип, скрежет (door, brakes)</p>
+<p class='m'>squeal </p><p class='g0500'>squealing </p><p class='b1000'>визг, скрежет (brakes, tires)</p>
 <br>
-<p class='m'>голя̀ма част от</p><p class='g0500'></p><p class='b1000'>большая часть</p>
-<p class='m'>ма̀лка част от</p><p class='g0500'></p><p class='b1000'>меньшая часть</p>
+<p class='m'>blar   </p><p class='g0500'>blaring   </p><p class='b1000'>вой, рёв (siren, wind)</p>
+<p class='m'>wail   </p><p class='g0500'>wailing   </p><p class='b1000'>вой, рёв (siren, wind)</p>
+<p class='m'>beep   </p><p class='g0500'>beeping   </p><p class='b1000'>гудок, пиканье, бибиканье (machine)</p>
+<p class='m'>hum    </p><p class='g0500'>humming   </p><p class='b1000'>жужжание; монотонный глухой шум (приборов, машин за окном)</p>
+<p class='m'>whir   </p><p class='g0500'>whirring  </p><p class='b1000'>вибрирующий шум машин: например, стиралки, вентилятора, вертолёта</p>
 <br>
-<p class='m'>по̀вече от</p><p class='g0500'></p><p class='b1000'>больше от</p>
-<p class='m'>мъ̀ничко от</p><p class='g0500'></p><p class='b1000'>меньше чем</p>
+<p class='m'>sizzle </p><p class='g0500'>sizzling  </p><p class='b1000'>шкворчание, шипение при жарке, сжигании</p>
+<p class='m'>rustle </p><p class='g0500'>rustling  </p><p class='b1000'>хруст, шуршание бумаги, листьев под ногами</p>
+<p class='m'>patter </p><p class='g0500'>pattering </p><p class='b1000'>шум дождя, стук капель; лёгкий топот</p>
+<p class='m'>rumble </p><p class='g0500'>rumbling  </p><p class='b1000'>грохот, рокот, громыхание (грома, тяжёлых машин); урчание (в животе)</p>
+<p class='m'>rattle </p><p class='g0500'>rattling  </p><p class='b1000'>треск, дребезг, грохот (погремушки, трещотки, ключа в личине)</p>
+<p class='m'>clatter</p><p class='g0500'>clattering</p><p class='b1000'>сильный грохот: если обрушить полку с посудой, будет именно он.</p>
 <br>
-<p class='m'>огро̀мно колѝчество</p><p class='g0500'></p><p class='b1000'>огромное количество</p>
-<p class='m'>многобро̀ен</p><p class='g0500'></p><p class='b1000'>мнгогочисленный</p>
-<p class='m'>ку̀пища</p><p class='g0500'></p><p class='b1000'>куча</p>
+<p class='m'>clang  </p><p class='g0500'>clanging  </p><p class='b1000'>лязг, бряцание, металлический звук</p>
+<p class='m'>clank  </p><p class='g0500'>clanking  </p><p class='b1000'>лязг, бряцание, металлический звук</p>
+<p class='m'>clink  </p><p class='g0500'>clinking  </p><p class='b1000'>лёгкий звон стекла или металла</p>
+<p class='m'>ding   </p><p class='g0500'>dinging   </p><p class='b1000'>звон колокола, металла</p>
+<p class='m'>shatter</p><p class='g0500'>shattering</p><p class='b1000'>звук разбивающегося стекла (glass)</p>
 <br>
-<p class='m'>ня̀колко</p><p class='g0500'></p><p class='b1000'>несколько</p>
-<p class='m'>доста̀тъчно</p><p class='g0500'></p><p class='b1000'>достаточно</p>
+<p class='m'>pound  </p><p class='g0500'>pounding  </p><p class='b1000'>тяжёлый удар, например, молотка на аукционе, или стук (сердца, печатной машинки…)</p>
+<p class='m'>clapp  </p><p class='g0500'>clapping  </p><p class='b1000'>гром; либо аплодисменты</p>
+<p class='m'>bang   </p><p class='g0500'>banging   </p><p class='b1000'>громкий удар: хлопок дверью, стук в дверь, выстрел, взрыв и т.д.</p>
+<p class='m'>roar   </p><p class='g0500'>roaring   </p><p class='b1000'>рёв (самолёта, мотоцикла, животного)</p>
 
 
 </div>

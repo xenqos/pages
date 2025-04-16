@@ -19,7 +19,7 @@
   
 </head>
 <body onload='fncGetDivState(); fncGetScrollPosition();'>
-
+<audio id='idTrack' src='../sounds/05.mp3' preload='auto'></audio>
 <div id='idPanel'>
 <div id='idTopbar'>
   <div id='idTopbarNavigation'>
@@ -27,36 +27,85 @@
     <a href='04.html'><span class='clNavLeft'></span></a>
     <a href='../index.html'><span class='clNavUp'></span></a>
     <a href='06.html'><span class='clNavRight'></span></a>
-
+<span class='clNavRewind' onclick='fncRewindTrack(&quot;idTrack&quot;)'></span><span class='clNavPlay' onclick='fncPlayTrack(&quot;idTrack&quot;)'></span>
   </div>
 </div>
 <div id='idContent'>
 
-<h1>Цвятовѐ</h1>
+<h1>One Letter Change</h1>
 
-<p class='m'>червѐн</p><p class='g0500'></p><p class='b1000'>красный</p>
-<p class='m'>ора̀нжев</p><p class='g0500'></p><p class='b1000'>оранжевый</p>
-<p class='m'>жълт</p><p class='g0500'></p><p class='b1000'>жёлтый</p>
-<p class='m'>зелѐн</p><p class='g0500'></p><p class='b1000'>зелёный</p>
-<p class='m'>свѐтлосѝн</p><p class='g0500'></p><p class='b1000'>голубой</p>
-<p class='m'>син</p><p class='g0500'></p><p class='b1000'>синий</p>
-<p class='m'>пу̀рпурен</p><p class='g0500'></p><p class='b1000'>фиолетовый</p>
-<br>
-<p class='m'>ро̀зов</p><p class='g0500'></p><p class='b1000'>розовый</p>
-<p class='m'>кафя̀в</p><p class='g0500'></p><p class='b1000'>коричневый</p>
-<br>
-<p class='m'>бял</p><p class='g0500'></p><p class='b1000'>белый</p>
-<p class='m'>сив</p><p class='g0500'></p><p class='b1000'>серый</p>
-<p class='m'>чѐрен</p><p class='g0500'></p><p class='b1000'>чёрный</p>
-<br>
-<p class='m'>цвят</p><p class='g0500'></p><p class='b1000'>цвет</p>
-<p class='m'>цвятовѐ</p><p class='g0500'></p><p class='b1000'>цвета</p>
-<br>
-<p class='m'>﻿ба̀гра</p><p class='g0500'></p><p class='b1000'>цвет (лит.)</p>
-<p class='m'>﻿ба̀гри</p><p class='g0500'></p><p class='b1000'>цвета (лит.)</p>
-<br>
-<p class='m'>﻿боя̀</p><p class='g0500'></p><p class='b1000'>краска (вешество)</p>
-<p class='m'>﻿боѝ</p><p class='g0500'></p><p class='b1000'>краски (вешество)</p>
+
+<h2>1</h2>
+
+<p class='m'>bag</p><p class='g0500'></p><p class='b1000'>сумка</p>
+<p class='m'>beg</p><p class='g0500'></p><p class='b1000'>умолять, просить</p>
+<p class='m'>big</p><p class='g0500'></p><p class='b1000'>большой</p>
+<p class='m'>bog</p><p class='g0500'></p><p class='b1000'>болото</p>
+<p class='m'>bug</p><p class='g0500'></p><p class='b1000'>клоп, букашка</p>
+
+<h2>2</h2>
+
+<p class='m'>bat</p><p class='g0500'></p><p class='b1000'>летучая мышь</p>
+<p class='m'>bet</p><p class='g0500'></p><p class='b1000'>пари</p>
+<p class='m'>bit</p><p class='g0500'></p><p class='b1000'>кусочек, мелкая часть</p>
+<p class='m'>bot</p><p class='g0500'></p><p class='b1000'>робот</p>
+<p class='m'>but</p><p class='g0500'></p><p class='b1000'>но</p>
+
+<h2>3</h2>
+
+<p class='m'>last</p><p class='g0500'></p><p class='b1000'>последний</p>
+<p class='m'>lest</p><p class='g0500'></p><p class='b1000'>чтобы не</p>
+<p class='m'>list</p><p class='g0500'></p><p class='b1000'>список</p>
+<p class='m'>lost</p><p class='g0500'></p><p class='b1000'>потерянный</p>
+<p class='m'>lust</p><p class='g0500'></p><p class='b1000'>страсть, похоть</p>
+
+<h2>4</h2>
+
+<p class='m'>pat</p><p class='g0500'></p><p class='b1000'>похлопывать, шлёпать</p>
+<p class='m'>pet</p><p class='g0500'></p><p class='b1000'>питомец, любимец</p>
+<p class='m'>pit</p><p class='g0500'></p><p class='b1000'>яма</p>
+<p class='m'>pot</p><p class='g0500'></p><p class='b1000'>горшок</p>
+<p class='m'>put</p><p class='g0500'></p><p class='b1000'>класть</p>
+
+<h2>5</h2>
+
+<p class='m'>mass</p><p class='g0500'></p><p class='b1000'>масса</p>
+<p class='m'>mess</p><p class='g0500'></p><p class='b1000'>беспорядок</p>
+<p class='m'>miss</p><p class='g0500'></p><p class='b1000'>мисс</p>
+<p class='m'>moss</p><p class='g0500'></p><p class='b1000'>мох</p>
+<p class='m'>muss</p><p class='g0500'></p><p class='b1000'>беспорядок (american)</p>
+
+<h2>6</h2>
+
+<p class='m'>hat</p><p class='g0500'></p><p class='b1000'>шляпа</p>
+<p class='m'>het</p><p class='g0500'></p><p class='b1000'>гетеросексуал (heterosexual)</p>
+<p class='m'>hit</p><p class='g0500'></p><p class='b1000'>ударять</p>
+<p class='m'>hot</p><p class='g0500'></p><p class='b1000'>горячий</p>
+<p class='m'>hut</p><p class='g0500'></p><p class='b1000'>хижина</p>
+
+<h2>7</h2>
+
+<p class='m'>hack</p><p class='g0500'></p><p class='b1000'>взламывать, разрубать</p>
+<p class='m'>heck</p><p class='g0500'></p><p class='b1000'>замена слову hell</p>
+<p class='m'>hick</p><p class='g0500'></p><p class='b1000'>деревенщина</p>
+<p class='m'>hock</p><p class='g0500'></p><p class='b1000'>отдавать в залог собственность</p>
+<p class='m'>huck</p><p class='g0500'></p><p class='b1000'>бросать, швырять</p>
+
+<h2>8</h2>
+
+<p class='m'>gat</p><p class='g0500'></p><p class='b1000'>пистолет, револьвер</p>
+<p class='m'>get</p><p class='g0500'></p><p class='b1000'>получать</p>
+<p class='m'>git</p><p class='g0500'></p><p class='b1000'>неприятный человек, мерзавец</p>
+<p class='m'>got</p><p class='g0500'></p><p class='b1000'>прошедшее время от get</p>
+<p class='m'>gut</p><p class='g0500'></p><p class='b1000'>кишка</p>
+
+<h2>9</h2>
+
+<p class='m'>nab</p><p class='g0500'></p><p class='b1000'>задержать, украсть</p>
+<p class='m'>neb</p><p class='g0500'></p><p class='b1000'>клюв</p>
+<p class='m'>nib</p><p class='g0500'></p><p class='b1000'>кончик шариковой ручки</p>
+<p class='m'>nob</p><p class='g0500'></p><p class='b1000'>голова (slang)</p>
+<p class='m'>nub</p><p class='g0500'></p><p class='b1000'>суть, самое главное</p>
 
 
 </div>

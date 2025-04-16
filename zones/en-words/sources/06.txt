@@ -1,0 +1,28 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="en-CA-ClaraNeural">
+<prosody rate="-30%" pitch="0%">
+pant, panting.
+gasp, gasping.
+sniffle, sniffling.
+sob, sobbing.
+sigh, sighing.
+gag, gagging.
+groan, groaning.
+moan, moaning.
+grunt, grunting.
+
+<break time="800ms"/>
+
+chatter, chattering.
+grumble, grumbling.
+mutter, muttering.
+shout, shouting.
+yell, yelling.
+scream, screaming.
+whimper, whimpering.
+whistle, whistling.
+giggle, giggling.
+scoff, scoffing.
+</prosody>
+</voice>
+</speak>

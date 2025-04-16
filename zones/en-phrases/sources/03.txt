@@ -1,3 +1,6 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="en-CA-ClaraNeural">
+<prosody rate="-30%" pitch="0%">
 everything's cool!
 i'm really buzzing!
 i'm having a really peachy time!
@@ -20,3 +23,6 @@ take to heart.
 strain at the leash.
 sick and tired.
 come to one's senses.
+</prosody>
+</voice>
+</speak>
