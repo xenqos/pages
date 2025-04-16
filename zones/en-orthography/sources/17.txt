@@ -1,3 +1,6 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="en-CA-ClaraNeural">
+<prosody rate="-30%" pitch="0%">
 serious
 series
 here
@@ -11,10 +14,17 @@ pier
 fierce
 bulkier
 
+<break time="800ms"/>
+
 weird
 weir
 eyrie
 
+<break time="800ms"/>
+
 beard
 menhir
 leotard
+</prosody>
+</voice>
+</speak>

@@ -1,29 +1,45 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="en-CA-ClaraNeural">
+<prosody rate="-30%" pitch="0%">
 bad
 face
 far
 care
+
+<break time="800ms"/>
 
 let
 mete
 her
 here
 
+<break time="800ms"/>
+
 win
 wine
 fir
 fire
+
+<break time="800ms"/>
 
 top
 code
 for
 more
 
+<break time="800ms"/>
+
 hug
 huge
 fur
 cure
 
+<break time="800ms"/>
+
 push
 rude
 surf
 sure
+</prosody>
+</voice>
+</speak>
