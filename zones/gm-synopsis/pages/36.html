@@ -19,52 +19,61 @@
   
 </head>
 <body onload='fncGetDivState(); fncGetScrollPosition();'>
-<audio id='idTrack' src='../sounds/01.mp3' preload='auto'></audio>
+
 <div id='idPanel'>
 <div id='idTopbar'>
   <div id='idTopbarNavigation'>
     <a href='../../../index.html'><span class='clNavHome'></span></a>
-    <a href='37.html'><span class='clNavLeft'></span></a>
+    <a href='35.html'><span class='clNavLeft'></span></a>
     <a href='../index.html'><span class='clNavUp'></span></a>
-    <a href='02.html'><span class='clNavRight'></span></a>
-<span class='clNavRewind' onclick='fncRewindTrack(&quot;idTrack&quot;)'></span><span class='clNavPlay' onclick='fncPlayTrack(&quot;idTrack&quot;)'></span>
+    <a href='37.html'><span class='clNavRight'></span></a>
+
   </div>
 </div>
 <div id='idContent'>
 
-<h6>Cards</h6>
+<h6>Miscellanea</h6>
+
+<h1>Arithmetic</h1>
+
+<h2>7,8,9 - Сложение</h2>
+
+<pre><code>округлить 7,8,9 до 10
+вычесть добавку
+
+56+7=56+10-3=63
+47+8=47+10-2=55
+73+9=73+10-1=82</code></pre>
 
 
-<h1>Suits</h1>
+<h2>Сложение двузначных</h2>
 
-<h2>Two Color</h2>
+<h3>Последняя цифра >= 5</h3>
 
-<div class='clOverflow'>
-<table>
-<tr>
-<td><q class='s'></q></td><td>Spades  </td></tr>
-<tr><td><q class='h'></q></td><td>Hearts  </td></tr>
-<tr><td><q class='c'></q></td><td>Clubs   </td></tr>
-<tr><td><q class='d'></q></td><td>Diamonds</td></tr>
-</table>
-</div>
+<pre><code>округлить 5 в сторону увеличения
+выполнить сложение
+вычесть добавку
+
+54+39=54+40-1=93
+26+38=26+40-2=64</code></pre>
 
 
-<h2>Four Color</h2>
+<h3>Последняя цифра < 5</h3>
 
-<div class='clOverflow'>
-<table>
-<tr>
-<td><q class='s'></q></td><td>Spades  </td></tr>
-<tr><td><q class='h'></q></td><td>Hearts  </td></tr>
-<tr><td><q class='g'></q></td><td>Clubs   </td></tr>
-<tr><td><q class='b'></q></td><td>Diamonds</td></tr>
-</table>
-</div>
+<pre><code>складывать по разрядам
+сначала десятки, потом - единицы.
 
-<blockquote>
-All suits have equal value.<br>
-</blockquote>
+57+32=57+30+2=89</code></pre>
+
+
+<h2>Сложение трёхзначных</h2>
+
+<pre><code>разобрать трехзначные числа
+на сотни, десятки, единицы
+поочередно их складывать
+
+249+533=(200+500)+(40+30)+(9+3)=782</code></pre>
+
 
 
 </div>
