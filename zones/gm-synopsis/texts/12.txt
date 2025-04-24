@@ -55,18 +55,18 @@ The best 'Hand' wins
 
 ### Raise & Re-raise
 
-%[m|IF]
->> 'Player' raises / re-raises
-%[m|THEN]
->> All 'Players' starting from his left clockwise must match 'Raise' / 'Re-raise'
->> Thus the betting stops at 'Player' to the right of the one who made 'Raise' / 'Re-raise'
+if
+  'Player' raises / re-raises
+then
+  All 'Players' starting from his left clockwise must match 'Raise' / 'Re-raise'. ~~ Thus the betting stops at 'Player' to the right of the one who made 'Raise' / 'Re-raise'
+endif
 
-
-%[m|IF]
->> 'Players' >= 3 in 'Hand' ('Game')
-%[m|THEN]
->> 3-4 'Raise' / 'Re-raise' - allowed
-%[m|ELSEIF]
->> 'Players' = 2 are in 'Hand' ('Game')
-%[m|THEN]
->> 'Raise' / 'Re-raise' - not limited
+if
+  'Players' >= 3 in 'Hand' ('Game')
+then
+  3-4 'Raise' / 'Re-raise' - allowed
+elseif
+  'Players' = 2 are in 'Hand' ('Game')
+else
+  'Raise' / 'Re-raise' - not limited
+endif

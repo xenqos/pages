@@ -33,15 +33,16 @@ Tight Aggressive
 ## LAG
 Loose Aggressive
 
-### Guideline
+### Guidelines
 
-%[m|IF]
->> Table - Loose / Aggressive
-%[m|THEN]
->> Play Tighter
+if
+  Table - Loose / Aggressive
+then
+  Play Tighter
+endif
 
-
-%[m|IF]
->> Table - Tight / Passive
-%[m|THEN]
->> Play Looser
+if
+  Table - Tight / Passive
+then
+  Play Looser
+endif

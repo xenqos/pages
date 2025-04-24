@@ -10,12 +10,11 @@ Initial 'Buy-In' = 20 - 200 of 'Big Blind'
 
 e.g.:
 
-%[m|IF]
->> ( 'Blinds' = $0.25 / $0.50 )
-%[m|THEN]
->> 'Buy-In' =
->> 20 x $0.25 = $10
->> 200 x $0.50 = $100
+if
+  ( 'Blinds' = $0.25 / $0.50 )
+then
+  'Buy-In' = ~~ 20 x $0.25 = $10 ~~  200 x $0.50 = $100
+endif
 
 ## Stack Size
 

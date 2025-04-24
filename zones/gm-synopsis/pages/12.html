@@ -89,21 +89,23 @@ The best 'Hand' wins<br>
 
 <h3>Raise & Re-raise</h3>
 
-<span class='m'>IF</span><br>
-&ensp;&ensp;'Player' raises / re-raises<br>
-<span class='m'>THEN</span><br>
-&ensp;&ensp;All 'Players' starting from his left clockwise must match 'Raise' / 'Re-raise'<br>
-&ensp;&ensp;Thus the betting stops at 'Player' to the right of the one who made 'Raise' / 'Re-raise'<br>
+<span class='l'>IF</span><br>
+<div class='if-then-else'>  'Player' raises / re-raises</div>
+<span class='l'>THEN</span><br>
+<div class='if-then-else'>  All 'Players' starting from his left clockwise must match 'Raise' / 'Re-raise'. <br> Thus the betting stops at 'Player' to the right of the one who made 'Raise' / 'Re-raise'</div>
+<div class='l'>ENDIF</div>
+
 <br>
-<br>
-<span class='m'>IF</span><br>
-&ensp;&ensp;'Players' >= 3 in 'Hand' ('Game')<br>
-<span class='m'>THEN</span><br>
-&ensp;&ensp;3-4 'Raise' / 'Re-raise' - allowed<br>
-<span class='m'>ELSEIF</span><br>
-&ensp;&ensp;'Players' = 2 are in 'Hand' ('Game')<br>
-<span class='m'>THEN</span><br>
-&ensp;&ensp;'Raise' / 'Re-raise' - not limited<br>
+<span class='l'>IF</span><br>
+<div class='if-then-else'>  'Players' >= 3 in 'Hand' ('Game')</div>
+<span class='l'>THEN</span><br>
+<div class='if-then-else'>  3-4 'Raise' / 'Re-raise' - allowed</div>
+<span class='l'>ELSE IF</span><br>
+<div class='if-then-else'>  'Players' = 2 are in 'Hand' ('Game')</div>
+<span class='l'>ELSE</span><br>
+<div class='if-then-else'>  'Raise' / 'Re-raise' - not limited</div>
+<div class='l'>ENDIF</div>
+
 
 
 </div>
