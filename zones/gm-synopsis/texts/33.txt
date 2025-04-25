@@ -25,10 +25,14 @@ Break-Even-% = 100% / Pot odds added together)
 
 ## PostFlop Action
 
-[?
-Outs-Probability > Pot-Odds-Break-Even-%
->>> Call
+if
+  Outs-Probability > Pot-Odds-Break-Even-%
+then
+  Call
+endif
 
-Outs-Probability < Pot-Odds-Break-Even-%
->>> Fold
-?]
+if
+  Outs-Probability < Pot-Odds-Break-Even-%
+then
+  Fold
+endif

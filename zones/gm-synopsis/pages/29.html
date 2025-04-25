@@ -16,7 +16,8 @@
   <script type='text/javascript' src='../../../scripts/commons.js'></script>
   <script type='text/javascript' src='../../../scripts/book.js'></script>
   <script type='text/javascript' src='../scripts/local.js'></script>
-  
+  <script>MathJax={tex: {inlineMath: [['$', '$'], ['((', '))']], processEscapes: true}};</script>
+  <script id='MathJax-script' async src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'></script>
 </head>
 <body onload='fncGetDivState(); fncGetScrollPosition();'>
 
@@ -42,28 +43,46 @@
 </blockquote>
 
 <h6>Probability of Hitting on Turn (%)</h6>
-<pre><code>Outs / 47 ​× 100</code></pre>
-
+$<br>
+\begin{array}{l}<br>
+\Large {Outs \over {47 \times 100}} \\<br>
+\end{array}<br>
+$<br>
 
 <h6>Probability of Not Hitting on Turn (%)</h6>
-<pre><code>(47 - Outs) / 47 ​× 100</code></pre>
-
+$<br>
+\begin{array}{l}<br>
+\Large {(47 - Outs) \over {47 \times 100}} \\<br>
+\end{array}<br>
+$<br>
 
 <h6>Probability of Hitting on River (%)</h6>
-<pre><code>Outs / 46 ​× 100</code></pre>
-
+$<br>
+\begin{array}{l}<br>
+\Large {Outs \over {46 \times 100}} \\<br>
+\end{array}<br>
+$<br>
 
 <h6>Probability of Not Hitting on River (%)</h6>
-<pre><code>(46 − Outs / 46)​ × 100</code></pre>
-
+$<br>
+\begin{array}{l}<br>
+\Large {(46 - Outs) \over {46 \times 100}} \\<br>
+\end{array}<br>
+$<br>
 
 <h6>Combined Probability of Hitting (%)</h6>
-<pre><code>(1 − ((47 - Outs) / 47 ​× (46 − Outs / 46)​)) × 100</code></pre>
-
+$<br>
+\begin{array}{l}<br>
+\Large {(} \large {1} - \Large {(47 - Outs) \over 47} \times {(46 - Outs) \over 46}) \large {\times 100} \\<br>
+\end{array}<br>
+$<br>
 
 <h6>Combined Probability of Not Hitting (%)</h6>
-<pre><code>((47 - Outs) / 47 ​× (46 − Outs / 46)​) × 100</code></pre>
-
+$<br>
+\begin{array}{l}<br>
+\Large {(47 - Outs) \over 47} \times {(46 - Outs) \over 46} \large {\times 100} \\<br>
+\end{array}<br>
+$<br>
 
 
 </div>

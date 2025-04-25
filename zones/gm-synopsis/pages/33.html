@@ -56,11 +56,18 @@ Break-Even-% = 100% / Pot odds added together)
 
 <h2>PostFlop Action</h2>
 
-<pre><code>Outs-Probability > Pot-Odds-Break-Even-%
-&ensp;&ensp;&ensp;Call
+<span class='l'>IF</span><br>
+<div class='if-then-else'>  Outs-Probability > Pot-Odds-Break-Even-%</div>
+<span class='l'>THEN</span><br>
+<div class='if-then-else'>  Call</div>
+<div class='l'>ENDIF</div>
 
-Outs-Probability < Pot-Odds-Break-Even-%
-&ensp;&ensp;&ensp;Fold</code></pre>
+<br>
+<span class='l'>IF</span><br>
+<div class='if-then-else'>  Outs-Probability < Pot-Odds-Break-Even-%</div>
+<span class='l'>THEN</span><br>
+<div class='if-then-else'>  Fold</div>
+<div class='l'>ENDIF</div>
 
 
 
