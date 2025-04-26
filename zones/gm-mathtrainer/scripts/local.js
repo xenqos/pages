@@ -12,8 +12,8 @@ function fncAddition_01()
   const spanElementY = document.getElementById('idVarY');
   const spanElementZ = document.getElementById('idVarZ');
 
-  spanElementZ.style.color = '#c7c7c7';
-  spanElementZ.style.backgroundColor = '#c7c7c7';
+  spanElementZ.style.color           = '#E0E0E0';
+  spanElementZ.style.backgroundColor = '#E0E0E0';
 
   var X = Math.floor(Math.random() * (99 - 11 + 1)) + 11;
   var Y = Math.floor(Math.random() * (9 - 1 + 1)) + 1;
