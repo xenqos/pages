@@ -13,4 +13,10 @@
   width:                2.600rem !important;
 }
 
+.clFixedWidth
+{
+  display:              inline-block;
+  width:                4.600rem !important;
+}
+
 /*-----------------------------------------------------------------------------------------------*/

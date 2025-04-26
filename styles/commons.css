@@ -971,8 +971,8 @@ q.x::after { content: url("../images/poker/nosuit.svg"); }
 
 .MathJax
 {
-  letter-spacing: normal; /* Reset letter spacing */
-  word-spacing: normal;   /* Reset word spacing */
+  letter-spacing:       normal; /* Reset letter spacing */
+  word-spacing:         normal;   /* Reset word spacing */
   margin:               0.000rem 0.000rem 0.000rem 0.000rem;
   padding:              0.000rem 0.000rem 0.000rem 0.000rem;
 
