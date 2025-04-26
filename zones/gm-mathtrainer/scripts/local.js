@@ -2,21 +2,72 @@
 
 'use strict';
 
-/*-----------------------------------------------------------------------------------------------*/
-/*                                                                                               */
-/*-----------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+
+var strHiddenColor             = '#e0e0e0';
+var strHiddenBackgroundColor   = '#e0e0e0';
+var strRevealedColor           = '#000000';
+var strRevealedBackgroundColor = '#ffffff';
+
+/*--------------------------------------------------------------------------------------------------*/
+/*  Addition 01                                                                                     */
+/*--------------------------------------------------------------------------------------------------*/
 
 function fncAddition_01()
 {
-  const spanElementX = document.getElementById('idVarX');
-  const spanElementY = document.getElementById('idVarY');
-  const spanElementZ = document.getElementById('idVarZ');
+  const spanElementX = document.getElementById('id-A01-X');
+  const spanElementY = document.getElementById('id-A01-Y');
+  const spanElementZ = document.getElementById('id-A01-Z');
 
-  spanElementZ.style.color           = '#E0E0E0';
-  spanElementZ.style.backgroundColor = '#E0E0E0';
+  spanElementZ.style.color           = strHiddenColor;
+  spanElementZ.style.backgroundColor = strHiddenBackgroundColor;
+
+  var X = Math.floor(Math.random() * (99 - 10 + 1)) + 10;
+  var Y = Math.floor(Math.random() * (9 - 1 + 1)) + 1;
+  var Z = X + Y;
+
+  spanElementX.textContent = X;
+  spanElementY.textContent = Y;
+  spanElementZ.textContent = Z;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+/*  Addition 02                                                                                     */
+/*--------------------------------------------------------------------------------------------------*/
+
+function fncAddition_02()
+{
+  const spanElementX = document.getElementById('id-A02-X');
+  const spanElementY = document.getElementById('id-A02-Y');
+  const spanElementZ = document.getElementById('id-A02-Z');
+
+  spanElementZ.style.color           = strHiddenColor;
+  spanElementZ.style.backgroundColor = strHiddenBackgroundColor;
+
+  var X = Math.floor(Math.random() * (99 - 10 + 1)) + 10;
+  var Y = Math.floor(Math.random() * (99 - 10 + 1)) + 10;
+  var Z = X + Y;
+
+  spanElementX.textContent = X;
+  spanElementY.textContent = Y;
+  spanElementZ.textContent = Z;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+/*  Multiplication 01                                                                               */
+/*--------------------------------------------------------------------------------------------------*/
+
+function fncMultiplication_01()
+{
+  const spanElementX = document.getElementById('id-М01-X');
+  const spanElementY = document.getElementById('id-М01-Y');
+  const spanElementZ = document.getElementById('id-М01-Z');
+
+  spanElementZ.style.color           = strHiddenColor;
+  spanElementZ.style.backgroundColor = strHiddenBackgroundColor;
 
   var X = Math.floor(Math.random() * (99 - 11 + 1)) + 11;
-  var Y = Math.floor(Math.random() * (9 - 1 + 1)) + 1;
+  var Y = Math.floor(Math.random() * (9 - 2 + 1)) + 2;
   var Z = X * Y;
 
   spanElementX.textContent = X;
@@ -24,16 +75,26 @@ function fncAddition_01()
   spanElementZ.textContent = Z;
 }
 
+/*--------------------------------------------------------------------------------------------------*/
+/*  Reveal Element                                                                                  */
+/*--------------------------------------------------------------------------------------------------*/
 
-function fncReveal()
+function fncReveal(strId)
 {
-  var spanElement = document.getElementById('idVarZ');
-  spanElement.style.color = '#000000';
-  spanElement.style.backgroundColor = '#ffffff';
+  var spanElement = document.getElementById(strId.id);
+  spanElement.style.color = strRevealedColor;
+  spanElement.style.backgroundColor = strRevealedBackgroundColor;
 }
 
-
 /*--------------------------------------------------------------------------------------------------*/
-//  alert('ZZZ…');
-//  console.log('ZZZ…');
+/*  Populate                                                                                        */
+/*--------------------------------------------------------------------------------------------------*/
+
+function fncPopulate()
+{
+  fncAddition_01();
+  fncAddition_02();
+  fncMultiplication_01();
+}
+
 /*--------------------------------------------------------------------------------------------------*/

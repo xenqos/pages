@@ -1,17 +1,16 @@
 /*-----------------------------------------------------------------------------------------------*/
 
-#idVarZ
+#id-A01-Z,
+#id-A02-Z,
+#id-М01-Z
 {
-  background:           #E0E0E0;
-  color:                #E0E0E0;
+  background:           #e0e0e0;
+  color:                #e0e0e0;
   border-radius:        0.400rem !important;
-  display: inline-block;
+  display:              inline-block;
   margin:               0.000rem 0.000rem 0.000rem 0.000rem;
   padding:              0.000rem 0.000rem 0.000rem 0.000rem;
   width:                2.600rem !important;
-/*
-  visibility:           hidden;
-*/
 }
 
 /*-----------------------------------------------------------------------------------------------*/

@@ -17,7 +17,7 @@
   <script type='text/javascript' src='../../scripts/book.js'></script>
   <script type='text/javascript' src='./scripts/local.js'></script>
 </head>
-<body onload='fncAddition_01();'>
+<body onload='fncPopulate();'>
 <div id='idPanel'>
 <div id='idTopbar'>
   <div id='idTopbarNavigation'>
@@ -28,10 +28,38 @@
 
 <h1>Math Trainer</h1>
 
+<br>
 <div id='idAddition-01'>
-<span id='idVarX'></span>&ensp;×&ensp;<span id='idVarY'></span>&ensp;=&ensp;<span id='idVarZ' onclick='fncReveal();'></span>
+<span id='id-A01-X'></span>
+&ensp;+&ensp;
+<span id='id-A01-Y'></span>
+&ensp;=&ensp;
+<span id='id-A01-Z' onclick='fncReveal(this);'></span>
 <span class='clNavRewind' onclick='fncAddition_01();'></span>
 </div>
+<br>
+
+<br>
+<div id='idAddition-02'>
+<span id='id-A02-X'></span>
+&ensp;+&ensp;
+<span id='id-A02-Y'></span>
+&ensp;=&ensp;
+<span id='id-A02-Z' onclick='fncReveal(this);'></span>
+<span class='clNavRewind' onclick='fncAddition_02();'></span>
+</div>
+<br>
+
+<br>
+<div id='idMultiplication-01'>
+<span id='id-М01-X'></span>
+&ensp;×&ensp;
+<span id='id-М01-Y'></span>
+&ensp;=&ensp;
+<span id='id-М01-Z' onclick='fncReveal(this);'></span>
+<span class='clNavRewind' onclick='fncMultiplication_01();'></span>
+</div>
+<br>
 
 </div>
 </div>
