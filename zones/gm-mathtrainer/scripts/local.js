@@ -54,6 +54,58 @@ function fncAddition_02()
 }
 
 /*--------------------------------------------------------------------------------------------------*/
+/*  Subtraction 01                                                                                  */
+/*--------------------------------------------------------------------------------------------------*/
+
+function fncSubtraction_01()
+{
+  const spanElementX = document.getElementById('id-S01-X');
+  const spanElementY = document.getElementById('id-S01-Y');
+  const spanElementZ = document.getElementById('id-S01-Z');
+
+  spanElementZ.style.color           = strHiddenColor;
+  spanElementZ.style.backgroundColor = strHiddenBackgroundColor;
+
+  var X = Math.floor(Math.random() * (99 - 10 + 1)) + 10;
+  var Y = Math.floor(Math.random() * (9 - 1 + 1)) + 1;
+  var Z = X - Y;
+
+  spanElementX.textContent = X;
+  spanElementY.textContent = Y;
+  spanElementZ.textContent = Z;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+/*  Subtraction 02                                                                                  */
+/*--------------------------------------------------------------------------------------------------*/
+
+function fncSubtraction_02()
+{
+  const spanElementX = document.getElementById('id-S02-X');
+  const spanElementY = document.getElementById('id-S02-Y');
+  const spanElementZ = document.getElementById('id-S02-Z');
+
+  spanElementZ.style.color           = strHiddenColor;
+  spanElementZ.style.backgroundColor = strHiddenBackgroundColor;
+
+  while (true)
+  {
+    var X = Math.floor(Math.random() * (99 - 10 + 1)) + 10;
+    var Y = Math.floor(Math.random() * (99 - 10 + 1)) + 10;
+    var Z = X - Y;
+
+    if (Z >= 0)
+    {
+        break;
+    }
+  }
+
+  spanElementX.textContent = X;
+  spanElementY.textContent = Y;
+  spanElementZ.textContent = Z;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
 /*  Multiplication 01                                                                               */
 /*--------------------------------------------------------------------------------------------------*/
 
@@ -94,6 +146,8 @@ function fncPopulate()
 {
   fncAddition_01();
   fncAddition_02();
+  fncSubtraction_01();
+  fncSubtraction_02();
   fncMultiplication_01();
 }
 
