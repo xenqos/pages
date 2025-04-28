@@ -128,6 +128,30 @@ function fncMultiplication_01()
 }
 
 /*--------------------------------------------------------------------------------------------------*/
+/*  Division 01                                                                               */
+/*--------------------------------------------------------------------------------------------------*/
+
+function fncDivision_01()
+{
+  const spanElementX = document.getElementById('id-D01-X');
+  const spanElementY = document.getElementById('id-D01-Y');
+  const spanElementZ = document.getElementById('id-D01-Z');
+
+  spanElementZ.style.color           = strHiddenColor;
+  spanElementZ.style.backgroundColor = strHiddenBackgroundColor;
+
+  var X = Math.floor(Math.random() * (99 - 11 + 1)) + 11;
+  var Y = Math.floor(Math.random() * (9 - 2 + 1)) + 2;
+  var Z = X / Y;
+
+  Z = Z.toFixed(3);
+
+  spanElementX.textContent = X;
+  spanElementY.textContent = Y;
+  spanElementZ.textContent = Z;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
 /*  Reveal Element                                                                                  */
 /*--------------------------------------------------------------------------------------------------*/
 
@@ -149,6 +173,7 @@ function fncPopulate()
   fncSubtraction_01();
   fncSubtraction_02();
   fncMultiplication_01();
+  fncDivision_01();
 }
 
 /*--------------------------------------------------------------------------------------------------*/

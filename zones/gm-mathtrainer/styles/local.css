@@ -4,15 +4,17 @@
 #id-A02-Z,
 #id-S01-Z,
 #id-S02-Z,
-#id-М01-Z
+#id-М01-Z,
+#id-D01-Z
 {
   background:           #e0e0e0;
   color:                #e0e0e0;
   border-radius:        0.400rem !important;
   display:              inline-block;
+  font-family:          monospace;
   margin:               0.000rem 0.000rem 0.000rem 0.000rem;
   padding:              0.000rem 0.000rem 0.000rem 0.000rem;
-  width:                2.600rem !important;
+  width:                3.600rem !important;
 }
 
 .clFixedWidth
