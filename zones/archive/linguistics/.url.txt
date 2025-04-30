@@ -1,13 +1,16 @@
 https://new.text-to-speech.online/
 https://speechsynthesis.online/
-en_GB SoniaNeural -30%
-en_CA ClaraNeural -30%
-de_DE SeraphinaMultilingualNeural
+en_GB SoniaNeural rate="-30%" volume="0.0dB"
+en_CA ClaraNeural rate="-30%" volume="0.0dB"
+de_DE KatjaNeural rate="-30%" volume="0.0dB" ( 6db = 2times )
 https://cloud.google.com/text-to-speech/docs/ssml
+
+https://ru.wikipedia.org/wiki/%D0%A4%D0%BE%D0%BD%D0%B5%D1%82%D0%B8%D0%BA%D0%B0_%D0%BD%D0%B5%D0%BC%D0%B5%D1%86%D0%BA%D0%BE%D0%B3%D0%BE_%D1%8F%D0%B7%D1%8B%D0%BA%D0%B0
+https://en.wikipedia.org/wiki/Standard_German_phonology
 
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="en-GB-SoniaNeural">
-<prosody rate="-30%" pitch="0%">
+<prosody rate="-30%" volume="0.0dB">
 
 <break time="800ms"/>
 

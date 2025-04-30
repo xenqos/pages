@@ -1,12 +1,30 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="de-DE-SeraphinaMultilingualNeural">
-<prosody rate="-30%" pitch="0%">
-in
-Hilfe
-wissen
-Kino
-Igel
-Bibel
+<prosody rate="-30%" volume="-2.0dB">
+spät
+der Käse
+der Bär
+währen
+zählen
+wählen
+zwölf
+können
+köstlich
+schön
+der König
+der Löwe
+fröhlich
+die Möhre
+die Höhe
+fünf
+die Mütze
+dünn
+süß
+über
+lügen
+früh
+blühen
+die Bühne
 </prosody>
 </voice>
 </speak>

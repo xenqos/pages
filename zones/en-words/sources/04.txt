@@ -1,6 +1,6 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="en-CA-ClaraNeural">
-<prosody rate="-30%" pitch="0%">
+<prosody rate="-30%" volume="0.0dB">
 aggressive
 anxious
 arrogant
