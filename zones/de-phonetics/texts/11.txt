@@ -1,75 +1,72 @@
 ###### От Буквы к Звуку
 
-# i
+# u
 
-/ %[l|iː] /
-
-[!
-в открытом ударном слоге
-!]
+/ %[l|uː] /  
 [|-
-|%[m|der Titel]|звание, титул|
-|%[m|der Igel] |ёж           |
+|%[m|du]   |ты            |
+|%[m|rufen]|кричать, звать|
 |]
 
-[!
-в ударном условно-закрытом слоге
-!]
-[|-
-|%[m|dас Krokodil]|крокодил|
-|%[m|der Stil]    |стиль   |
-|]
-
-[!
-в односложных перед -%[m|r]
-!]
-[|-
-|%[m|wir]|мы |
-|%[m|mir]|мне|
-|]
-
-/ %[l|ɪ] /
+/ %[l|ʊ] /
 
 [!
 в закрытом слоге
 !]
 [|-
-|%[m|bitte    ]|пожалуйста|
-|%[m|die Hilfe]|помощь    |
+|%[m|und] |и      |
+|%[m|bunt]|пёстрый|
 |]
 
-[!
-в окончаниях -%[m|icht], -%[m|ig], -%[m|im], -%[m|in], -%[m|is], -%[m|isch], -%[m|it], -%[m|lich], -%[m|nis], -%[m|ik]
-!]
-[|-
-|%[m|das Dickicht]|чаща, заросли|
-|%[m|schwierig]   |трудный      |
-|%[m|fröhlich]    |весёлый      |
-|]
+## Исключения / %[l|uː] /
 
+%[m|das Buch]
+%[m|die Buche]
+%[m|buk (от backen)]
+%[m|die Dusche]
+%[m|duschen]
+%[m|der Fluch]
+%[m|fluchen]
+%[m|die Geburt]
+%[m|der Hucher]
+%[m|husten]
+%[m|knutschen]
+%[m|der Kuchen]
+%[m|Ludwig]
+%[m|nun]
+%[m|nur]
+%[m|prusten]
+%[m|das Publikum]
+%[m|pusten]
+%[m|plustern]
+%[m|ruchbar]
+%[m|ruchlos]
+%[m|der Schuster]
+%[m|suchen]
+%[m|das Tuch]
+%[m|der Wucherer]
+%[m|wuchern]
+%[m|wuchs (от wachsen)]
+%[m|der Wuchs]
+%[m|wusch (от waschen)]
+%[m|der Wust]
+%[m|zur]
 
-## Исключения / %[l|iː] /
+## Исключения / %[l|ʊ] /
 
-%[m|das Aktiv]
-%[m|Berlin]
-%[m|Emil]
-%[m|Erwin]
-%[m|Island]
-%[m|isländisch]
-%[m|das Kaninchen]
-%[m|die Nische]
-%[m|Paris]
-
-## Исключения / %[l|ɪ] /
-
-%[m|der April]
-%[m|die Himbeere]
-%[m|Irland]
-%[m|das Kapitel]
-%[m|die Krim]
-%[m|die Literatur]
-%[m|Madrid]
-%[m|das Viertel]
-%[m|vierzehn]
-%[m|vierzig]
-%[m|die Zither]
+%[m|der Bruch]
+%[m|die Bucht]
+%[m|die Ducht]
+%[m|die Flucht]
+%[m|die Frucht]
+%[m|der Geruch]
+%[m|der Juchten]
+%[m|der Klub]
+%[m|minus]
+%[m|plus]
+%[m|die Schlucht]
+%[m|schluchzen]
+%[m|der Spruch]
+%[m|die Sucht]
+%[m|das Urteil]
+%[m|zum]

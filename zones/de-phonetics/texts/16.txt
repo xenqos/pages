@@ -1,67 +1,75 @@
 ###### От Буквы к Звуку
 
-# Монофтонги - ä, ö, ü
+# i
 
-%[r|ä]&emsp;/ %[l|ɛː] /
+/ %[l|iː] /
 
+[!
+в открытом ударном слоге
+!]
 [|-
-|%[m|spät    ]|поздний|
-|%[m|der Käse]|сыр    |
-|%[m|der Bär ]|медведь|
+|%[m|der Titel]|звание, титул|
+|%[m|der Igel] |ёж           |
 |]
 
-%[r|äh]&emsp;/ %[l|ɛː] /
-
+[!
+в ударном условно-закрытом слоге
+!]
 [|-
-|%[m|währen]|длиться |
-|%[m|zählen]|считать |
-|%[m|wählen]|выбирать|
+|%[m|dас Krokodil]|крокодил|
+|%[m|der Stil]    |стиль   |
 |]
 
-%[r|ö]&emsp;/ %[l|œ⁠] /
-
+[!
+в односложных перед -%[m|r]
+!]
 [|-
-|%[m|zwölf   ]|двенадцать|
-|%[m|können  ]|мочь      |
-|%[m|köstlich]|ценный    |
+|%[m|wir]|мы |
+|%[m|mir]|мне|
 |]
 
-%[r|ö]&emsp;/ %[l|øː] /
+/ %[l|ɪ] /
 
+[!
+в закрытом слоге
+!]
 [|-
-|%[m|schön    ]|красивый|
-|%[m|der König]|король  |
-|%[m|der Löwe ]|лев     |
+|%[m|bitte    ]|пожалуйста|
+|%[m|die Hilfe]|помощь    |
 |]
 
-%[r|öh]&emsp;/ %[l|øː] /
-
+[!
+в окончаниях -%[m|icht], -%[m|ig], -%[m|im], -%[m|in], -%[m|is], -%[m|isch], -%[m|it], -%[m|lich], -%[m|nis], -%[m|ik]
+!]
 [|-
-|%[m|fröhlich ]|весёлый|
-|%[m|die Möhre]|морковь|
-|%[m|die Höhe ]|высота |
+|%[m|das Dickicht]|чаща, заросли|
+|%[m|schwierig]   |трудный      |
+|%[m|fröhlich]    |весёлый      |
 |]
 
-%[r|ü]&emsp;/ %[l|y] /
 
-[|-
-|%[m|fünf     ]|пять  |
-|%[m|die Mütze]|шапка |
-|%[m|dünn     ]|тонкий|
-|]
+## Исключения / %[l|iː] /
 
-%[r|ü]&emsp;/ %[l|y:] /
+%[m|das Aktiv]
+%[m|Berlin]
+%[m|Emil]
+%[m|Erwin]
+%[m|Island]
+%[m|isländisch]
+%[m|das Kaninchen]
+%[m|die Nische]
+%[m|Paris]
 
-[|-
-|%[m|süß  ]|сладкий|
-|%[m|über ]|над    |
-|%[m|lügen]|лгать  |
-|]
+## Исключения / %[l|ɪ] /
 
-%[r|üh]&emsp;/ %[l|y:] /
-
-[|-
-|%[m|früh     ]|ранний|
-|%[m|blühen   ]|цвести|
-|%[m|die Bühne]|сцена |
-|]
+%[m|der April]
+%[m|die Himbeere]
+%[m|Irland]
+%[m|das Kapitel]
+%[m|die Krim]
+%[m|die Literatur]
+%[m|Madrid]
+%[m|das Viertel]
+%[m|vierzehn]
+%[m|vierzig]
+%[m|die Zither]

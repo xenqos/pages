@@ -1,95 +1,21 @@
 ###### От Буквы к Звуку
 
-# Двойные согласные
+# Монофтонг - y
 
-[!
-двойные согласные всегда произносятся как одинарные
-!]
-
-%[r|bb]&emsp;/ %[l|b] /
+%[r|y]&emsp;/ %[l|yː] /
 
 [|-
-|%[m|die Ebbe     ]|отлив      |
-|%[m|die Robbe    ]|тюлень     |
-|%[m|die Abbildung]|изображение|
+|%[m|Typ  ]|тип|
 |]
 
-%[r|dd]&emsp;/ %[l|d] /
+%[r|y]&emsp;/ %[l|ʏ] /
 
 [|-
-|%[m|die Kladde]|черновик |
-|%[m|lodderig  ]|небрежный|
-|%[m|muddig    ]|илистый  |
+|%[m|Ypsilon]|игрек|
 |]
 
-%[r|ff]&emsp;/ %[l|f] /
+%[r|y]&emsp;/ %[l|ɪ] /
 
 [|-
-|%[m|das Schiff]|корабль |
-|%[m|der Kaffee]|кофе    |
-|%[m|der Affe  ]|обезьяна|
-|]
-
-%[r|gg]&emsp;/ %[l|g] /
-
-[|-
-|%[m|die Flagge]|флаг    |
-|%[m|der Roggen]|рожь    |
-|%[m|eggen     ]|боронить|
-|]
-
-%[r|ll]&emsp;/ %[l|l] /
-
-[|-
-|%[m|die Halle]|зал     |
-|%[m|der Ball ]|мяч, шар|
-|%[m|die Welle]|волна   |
-|]
-
-%[r|mm]&emsp;/ %[l|m] /
-
-[|-
-|%[m|kommen    ]|идти   |
-|%[m|das Zimmer]|комната|
-|%[m|der Kamm  ]|гребень|
-|]
-
-%[r|nn]&emsp;/ %[l|n] /
-
-[|-
-|%[m|die Sonne]|солнце|
-|%[m|kennen   ]|знать |
-|%[m|die Henne]|курица|
-|]
-
-%[r|pp]&emsp;/ %[l|p] /
-
-[|-
-|%[m|knapp    ]|тесный|
-|%[m|die Kappe]|шапка |
-|%[m|die Suppe]|суп   |
-|]
-
-%[r|ss]&emsp;/ %[l|s] /
-
-[|-
-|%[m|lassen    ]|пустить|
-|%[m|das Wasser]|вода   |
-|%[m|der Kuss  ]|поцелуй|
-|]
-
-%[r|ß]&emsp;/ %[l|s] /
-
-[|-
-|%[m|der Fuß   ]|нога       |
-|%[m|die Straße]|улица      |
-|%[m|der Gruß  ]|приветствие|
-|]
-
-%[r|tt]&emsp;/ %[l|t] /
-
-[|-
-|%[m|das Bett  ]|постель |
-|%[m|das Wetter]|погода  |
-|%[m|die Mitte ]|середина|
+|%[m|Hobby   ]|хобби|
 |]

@@ -1,0 +1,142 @@
+/*------------------------------------------------------------------------------------------------*/
+
+td.zh
+{
+  font-family:    'Noto Sans TC Light', 'Noto Serif TC Light', 'Adobe Kaiti Std', 'Adobe 楷体 Std';
+  font-size:      1.500em;
+  line-height:    0.750em;
+  text-align:      left;
+}
+
+td.ru
+{
+  text-align:      left;
+}
+
+td.gr
+{
+  font-family:    'Noto Sans TC Light', 'Noto Serif TC Light', 'Adobe Kaiti Std', 'Adobe 楷体 Std';
+  font-size:      1.750em;
+}
+
+td.hx
+{
+  color:        #000000;
+  font-size:      0.750em;
+}
+
+td.hx img
+{
+  margin:        0.000em 0.000em 0.000em 0.000em;
+  padding:      0.25em 0.25em 0.25em 0.25em;
+  vertical-align:    middle;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+#idSymbol
+{
+  float:        right;
+  margin:        0.000em 0.000em 0.000em 0.000em;
+  padding:      0.000em 0.000em 0.000em 0.000em;
+  text-align:      left;
+  width:        50px;
+}
+
+#idSymbolHanzi
+{
+  font-family:       'Noto Sans CJK', 'Noto Sans CJK TC', 'Noto Serif CJK TC', 'Adobe Kaiti Std';
+  font-size:      1.125em;
+/*
+  font-weight:      400;
+*/
+  line-height:    1.125em;
+  margin:        0.000em 0.000em 0.625em 0.000em;
+  padding:      0.000em 0.000em 0.000em 0.000em;
+  text-align:      left;
+}
+
+#idSymbolPinyin
+{
+  border-top:      1px solid #cccccc;
+  border-bottom:    1px solid #cccccc;
+/*
+  font-family:     'Pfennig' !important;
+*/
+  font-family:     'Noto Sans TC' !important;
+  font-size:      1.000em;
+  line-height:    1.125em;
+  margin:        0.000em 0.000em 0.625em 0.000em;
+  padding:      0.625em 0.000em 1.125em 0.000em;
+  text-align:      left;
+}
+
+#idSymbolSynopsis
+{
+  margin:        0.000em 0.000em 1.125em 0.000em;
+  padding:      0.000em 0.000em 0.000em 0.000em;
+  text-align:      left;
+}
+
+#idSymbolSynopsis ol
+{
+  list-style-position:  outside;
+  margin:        0.000em 0.000em 0.000em 1.250em;
+  padding:      0.000em 0.000em 0.000em 0.000em;
+}
+
+#idSymbolSynopsis li
+{
+  margin:        0.000em 0.000em 0.000em 0.000em;
+  padding:      0.000em 0.000em 0.000em 0.000em;
+}
+
+#idSymbolDescription
+{
+  border-top:      1px solid #cccccc;
+  margin:        0.000em 0.000em 2.000em 0.000em;
+  padding:      0.000em 0.000em 0.000em 0.000em;
+  text-align:      left;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+#idNumberedListText
+{
+  margin:        0.000em 0.000em 0.000em 0.000em;
+  padding:      0.000em 0.000em 0.000em 0.000em;
+  text-align:      left;
+}
+
+#idNumberedListText ol
+{
+  list-style-position:  outside;
+  margin:        0.000em 0.000em 0.000em 0.000em;
+  margin:        0.000em 0.000em 0.000em 0.000em;
+}
+
+#idNumberedListText ul li
+{
+  list-style-position:  outside;
+  list-style-type:    disc;
+  margin:        0.000em 0.000em 0.000em -1.7500em;
+  padding:      0.000em 0.000em 0.000em 0.000em;
+}
+
+#idNumberedListText li
+{
+  margin:        0.000em 0.000em 0.000em 0.000em;
+  padding:      0.000em 0.000em 0.000em 0.000em;
+  list-style-type:  decimal-leading-zero;
+}
+
+/*------------------------------------------------------------------------------------------------*/
+
+#idPanelCosmologyImg
+{
+  display:      block;
+  margin:        0.000em auto 0.000em auto;
+  padding:      0.000em 0.000em 0.000em 0.000em;
+}
+
+/*------------------------------------------------------------------------------------------------*/

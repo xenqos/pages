@@ -1,0 +1,80 @@
+table
+{
+  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+  margin-left:          auto;
+  margin-right:         auto;
+}
+
+td
+{
+  line-height:          4.000rem;
+  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
+  padding:              0.250rem 0.000rem 0.250rem 0.000rem;
+}
+
+table, td
+{
+  border:               none;
+  border-collapse:      collapse;
+  text-align:           right;
+  vertical-align:       top;
+}
+
+#idDateToday
+{
+  color:                #104f55;
+  font-size:            1.400rem;
+  font-weight:          600;
+  margin:               0.500rem 0.000rem 3.000rem 0.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+  margin-left:          auto;
+  margin-right:         auto;
+}
+
+.clSymbol
+{
+  color:                #888888;
+  font-size:            1.400rem;
+  font-weight:          600;
+  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+  text-align:           left;
+}
+
+.clValue
+{
+  font-size:            1.400rem;
+  font-weight:          600;
+  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+}
+
+.clValueDiff
+{
+  font-size:            1.400rem;
+  font-weight:          600;
+  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+}
+
+.clColorUp
+{
+  color:                #009c00;
+}
+
+.clColorDown
+{
+  color:                #c40000;
+}
+
+.clColorBlack
+{
+  color:                #000000;
+}
+
+#idContent
+{
+  background:           #ffffff;
+  text-align:           center;
+}

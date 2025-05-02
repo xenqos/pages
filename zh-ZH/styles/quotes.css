@@ -1,0 +1,92 @@
+body
+{
+  background:           #000000;
+  color:                #ffffff;
+}
+
+table
+{
+  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+  margin-left:          auto;
+  margin-right:         auto;
+}
+
+td
+{
+  line-height:          6.000rem;
+  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
+  padding:              0.250rem 0.500rem 0.250rem 0.500rem;
+}
+
+table, td
+{
+  border:               none;
+  border-collapse:      collapse;
+  color:                #ffffff;
+  text-align:           right;
+  vertical-align:       top;
+}
+
+#idTimeCurrent
+{
+  color:                #cccccc;
+  font-size:            2.000rem;
+  margin:               0.500rem 0.000rem 3.000rem 0.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+  margin-left:          auto;
+  margin-right:         auto;
+}
+
+.clSymbol
+{
+  color:                #cccccc;
+  font-size:            1.500rem;
+  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
+  padding:              0.000rem 1.500rem 0.000rem 0.000rem;
+}
+
+.clValue
+{
+  font-size:            2.600rem;
+  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+}
+
+.clValueDiff
+{
+  font-size:            1.500rem;
+  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 1.500rem;
+}
+
+.clColorUp
+{
+  color:                #00ff00;
+}
+
+.clColorDown
+{
+  color:                #ff0000;
+}
+
+.clColorWhite
+{
+  color:                #eeeeee;
+}
+
+.clColorBlack
+{
+  color:                #000000;
+}
+
+#idTopbar
+{
+  display:              none;
+}
+
+#idContent
+{
+  background:           #000000;
+  text-align:           center;
+}
