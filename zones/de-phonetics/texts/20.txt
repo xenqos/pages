@@ -1,67 +1,53 @@
 ###### От Буквы к Звуку
 
-# Монофтонги - ä, ö, ü
+###  ###
 
-%[r|ä]&emsp;/ %[l|ɛː] /
+# ä
 
+/ %[l|ɛː] /
+
+[!
+в открытом ударном слоге
+!]
 [|-
-|%[m|spät    ]|поздний|
-|%[m|der Käse]|сыр    |
-|%[m|der Bär ]|медведь|
+|%[m|die Väter]|отцы |
+|%[m|die Träne]|слеза|
 |]
 
-%[r|äh]&emsp;/ %[l|ɛː] /
-
+[!
+в условно-закрытом слоге
+!]
 [|-
-|%[m|währen]|длиться |
-|%[m|zählen]|считать |
-|%[m|wählen]|выбирать|
+|%[m|dер Bär]|медведь |
+|%[m|gemäß]  |согласно|
 |]
 
-%[r|ö]&emsp;/ %[l|œ⁠] /
+/ %[l|ɛ] /
 
+[!
+в закрытом слоге
+!]
 [|-
-|%[m|zwölf   ]|двенадцать|
-|%[m|können  ]|мочь      |
-|%[m|köstlich]|ценный    |
+|%[m|ändern]|менять|
+|%[m|fällen]|валить|
 |]
 
-%[r|ö]&emsp;/ %[l|øː] /
+## Исключения / %[l|ɛː] /
 
-[|-
-|%[m|schön    ]|красивый|
-|%[m|der König]|король  |
-|%[m|der Löwe ]|лев     |
-|]
-
-%[r|öh]&emsp;/ %[l|øː] /
-
-[|-
-|%[m|fröhlich ]|весёлый|
-|%[m|die Möhre]|морковь|
-|%[m|die Höhe ]|высота |
-|]
-
-%[r|ü]&emsp;/ %[l|y] /
-
-[|-
-|%[m|fünf     ]|пять  |
-|%[m|die Mütze]|шапка |
-|%[m|dünn     ]|тонкий|
-|]
-
-%[r|ü]&emsp;/ %[l|y:] /
-
-[|-
-|%[m|süß  ]|сладкий|
-|%[m|über ]|над    |
-|%[m|lügen]|лгать  |
-|]
-
-%[r|üh]&emsp;/ %[l|y:] /
-
-[|-
-|%[m|früh     ]|ранний|
-|%[m|blühen   ]|цвести|
-|%[m|die Bühne]|сцена |
-|]
+%[m|die Ärztin]
+%[m|die Ärzte]
+%[m|die Gebärde]
+%[m|gemächlich]
+%[m|das Gemälde]
+%[m|das Gespräch]
+%[m|hätscheln]
+%[m|die Kartätsche]
+%[m|das Mädchen]
+%[m|das Märchen]
+%[m|nächst]
+%[m|nämlich]
+%[m|das Rätsel]
+%[m|das Städtchen]
+%[m|die Städte]
+%[m|tätscheln]
+%[m|zärtlich]

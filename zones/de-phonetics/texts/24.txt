@@ -1,95 +1,40 @@
 ###### От Буквы к Звуку
 
-# Двойные согласные
+(часто встречающиеся ei, au, äu и eu, редко встречающиеся ai, oi и ui)
 
-[!
-двойные согласные всегда произносятся как одинарные
-!]
+# Дифтонги
 
-%[r|bb]&emsp;/ %[l|b] /
-
+%[r|аi]&emsp;/ %[l|aɪ] /
 [|-
-|%[m|die Ebbe     ]|отлив      |
-|%[m|die Robbe    ]|тюлень     |
-|%[m|die Abbildung]|изображение|
+|%[m|der Mai   ]|май   |
+|%[m|die Saite ]|струна|
+|%[m|der Kaiser]|кайзер|
 |]
 
-%[r|dd]&emsp;/ %[l|d] /
-
+%[r|аu]&emsp;/ %[l|aʊ] /
 [|-
-|%[m|die Kladde]|черновик |
-|%[m|lodderig  ]|небрежный|
-|%[m|muddig    ]|илистый  |
+|%[m|auch    ]|тоже |
+|%[m|das Haus]|дом  |
+|%[m|grau    ]|серый|
 |]
 
-%[r|ff]&emsp;/ %[l|f] /
-
+%[r|äu]&emsp;/ %[l|ɔɪ] /
 [|-
-|%[m|das Schiff]|корабль |
-|%[m|der Kaffee]|кофе    |
-|%[m|der Affe  ]|обезьяна|
+|%[m|die Bäuerin]|крестьянка|
+|%[m|der Käufer ]|покупатель|
+|%[m|der Läufer ]|бегун     |
 |]
 
-%[r|gg]&emsp;/ %[l|g] /
-
+%[r|еi]&emsp;/ %[l|aɪ] /
 [|-
-|%[m|die Flagge]|флаг    |
-|%[m|der Roggen]|рожь    |
-|%[m|eggen     ]|боронить|
+|%[m|ein     ]|один|
+|%[m|mein    ]|мой |
+|%[m|dеr Reis]|рис |
 |]
 
-%[r|ll]&emsp;/ %[l|l] /
-
+%[r|eu]&emsp;/ %[l|ɔɪ] /
 [|-
-|%[m|die Halle]|зал     |
-|%[m|der Ball ]|мяч, шар|
-|%[m|die Welle]|волна   |
-|]
-
-%[r|mm]&emsp;/ %[l|m] /
-
-[|-
-|%[m|kommen    ]|идти   |
-|%[m|das Zimmer]|комната|
-|%[m|der Kamm  ]|гребень|
-|]
-
-%[r|nn]&emsp;/ %[l|n] /
-
-[|-
-|%[m|die Sonne]|солнце|
-|%[m|kennen   ]|знать |
-|%[m|die Henne]|курица|
-|]
-
-%[r|pp]&emsp;/ %[l|p] /
-
-[|-
-|%[m|knapp    ]|тесный|
-|%[m|die Kappe]|шапка |
-|%[m|die Suppe]|суп   |
-|]
-
-%[r|ss]&emsp;/ %[l|s] /
-
-[|-
-|%[m|lassen    ]|пустить|
-|%[m|das Wasser]|вода   |
-|%[m|der Kuss  ]|поцелуй|
-|]
-
-%[r|ß]&emsp;/ %[l|s] /
-
-[|-
-|%[m|der Fuß   ]|нога       |
-|%[m|die Straße]|улица      |
-|%[m|der Gruß  ]|приветствие|
-|]
-
-%[r|tt]&emsp;/ %[l|t] /
-
-[|-
-|%[m|das Bett  ]|постель |
-|%[m|das Wetter]|погода  |
-|%[m|die Mitte ]|середина|
+|%[m|neun      ]|девять|
+|%[m|der Freund]|друг  |
+|%[m|treu      ]|верный|
 |]
