@@ -1,81 +1,33 @@
-###### От Буквы к Звуку
+###### От Звука к Букве
 
-## От Буквы к Звуку ##
+## От Звука к Букве ##
+### Гласные ###
 
-# a
+# a &ensp; aː
 
-/ %[l|aː] /
-
-[!
-в открытом ударном слоге
-!]
-
-[|-
-|%[m|da      ]|тут, там|
-|%[m|die Lage]|место   |
-|]
-
-/ %[l|a] /
+## a
 
 [!
-в закрытом слоге
+как в слове «мать»
+рот не открывать широко
 !]
 
-[|-
-|%[m|die Tasche]|карман, сумка|
-|%[m|dер Affe]  |обезьяна     |
+[|
+|%[m|Mann]|мужчина|
+|%[m|was ]|что    |
+|%[m|alle]|все    |
 |]
 
-## Исключения / %[l|aː] /
+## aː
 
-%[m|der Adler]
-%[m|Afrika]
-%[m|Agnes]
-%[m|die Art]
-%[m|artig]
-%[m|der Arzt]
-%[m|der Bart]
-%[m|brach]
-%[m|die Bratsche]
-%[m|das Gemach]
-%[m|Habsburg]
-%[m|habt]
-%[m|das Harz]
-%[m|der Harz]
-%[m|die Jagd]
-%[m|latschen]
-%[m|die Magd]
-%[m|der Makler]
-%[m|nach]
-%[m|der Papst]
-%[m|der Quark]
-%[m|der Quarz]
-%[m|die Schmach]
-%[m|schmachvoll]
-%[m|die Schwarte]
-%[m|sprach]
-%[m|die Sprache]
-%[m|stach]
-%[m|das Ungemach]
-%[m|watscheln]
-%[m|zart]
+[!
+как в слове «красный»
+русская «а» произносится короче, чем долгий звук %[m|aː]
+открыть рот как можно шире
+!]
 
-## Исключения / %[l|a] /
-
-%[m|der Bräutigam]
-%[m|die Gala]
-%[m|die Grammatik]
-%[m|grammatisch]
-%[m|Hamburg]
-%[m|hast]
-%[m|hat]
-%[m|der Januar]
-%[m|der Kakadu]
-%[m|Kanada]
-%[m|der Nektar]
-%[m|der Monat]
-%[m|der Nachbar]
-%[m|Stephan]
-%[m|der Walfisch]
-%[m|die Walnuss]
-%[m|das Walross]
+[|
+|%[m|ja   ]|да      |
+|%[m|Tag  ]|день    |
+|%[m|malen]|рисовать|
+|]

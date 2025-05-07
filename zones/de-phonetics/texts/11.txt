@@ -1,74 +1,27 @@
-###### От Буквы к Звуку
+###### От Звука к Букве
 
-###  ###
+# œ &ensp; øː
 
-# u
-
-/ %[l|uː] /  
-[|-
-|%[m|du]   |ты            |
-|%[m|rufen]|кричать, звать|
-|]
-
-/ %[l|ʊ] /
+## œ
 
 [!
-в закрытом слоге
+смесь звуков / %[l|ɛ] / и / %[l|ɔ] /
 !]
-[|-
-|%[m|und] |и      |
-|%[m|bunt]|пёстрый|
+
+[|
+|%[m|öffnen]|открывать |
+|%[m|zwölf ]|двенадцать|
+|%[m|Löffel]|ложка     |
 |]
 
-## Исключения / %[l|uː] /
+## øː
 
-%[m|das Buch]
-%[m|die Buche]
-%[m|buk (от backen)]
-%[m|die Dusche]
-%[m|duschen]
-%[m|der Fluch]
-%[m|fluchen]
-%[m|die Geburt]
-%[m|der Hucher]
-%[m|husten]
-%[m|knutschen]
-%[m|der Kuchen]
-%[m|Ludwig]
-%[m|nun]
-%[m|nur]
-%[m|prusten]
-%[m|das Publikum]
-%[m|pusten]
-%[m|plustern]
-%[m|ruchbar]
-%[m|ruchlos]
-%[m|der Schuster]
-%[m|suchen]
-%[m|das Tuch]
-%[m|der Wucherer]
-%[m|wuchern]
-%[m|wuchs (от wachsen)]
-%[m|der Wuchs]
-%[m|wusch (от waschen)]
-%[m|der Wust]
-%[m|zur]
+[!
+смесь звуков / %[l|eː] / и / %[l|oː] /
+!]
 
-## Исключения / %[l|ʊ] /
-
-%[m|der Bruch]
-%[m|die Bucht]
-%[m|die Ducht]
-%[m|die Flucht]
-%[m|die Frucht]
-%[m|der Geruch]
-%[m|der Juchten]
-%[m|der Klub]
-%[m|minus]
-%[m|plus]
-%[m|die Schlucht]
-%[m|schluchzen]
-%[m|der Spruch]
-%[m|die Sucht]
-%[m|das Urteil]
-%[m|zum]
+[|
+|%[m|Möwe]|чайка|
+|%[m|Öl  ]|масло|
+|%[m|Fön ]|фен  |
+|]

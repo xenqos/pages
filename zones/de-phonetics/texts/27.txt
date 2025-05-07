@@ -1,44 +1,79 @@
 ###### От Буквы к Звуку
 
-###  ###
+## От Буквы к Звуку ##
 
-# Дифтонги
+# a
 
-__часто встречающиеся__
+/ %[l|aː] /
 
-%[r|аu]&emsp;/ %[l|aʊ] /
+[!
+в открытом ударном слоге
+!]
+
 [|-
-|%[m|auch    ]|тоже |
-|%[m|das Haus]|дом  |
-|%[m|grau    ]|серый|
+|%[m|da      ]|тут, там|
+|%[m|die Lage]|место   |
 |]
 
-%[r|äu]&emsp;/ %[l|ɔɪ] /
+/ %[l|a] /
+
+[!
+в закрытом слоге
+!]
+
 [|-
-|%[m|die Bäuerin]|крестьянка|
-|%[m|der Käufer ]|покупатель|
-|%[m|der Läufer ]|бегун     |
+|%[m|die Tasche]|карман, сумка|
+|%[m|dер Affe]  |обезьяна     |
 |]
 
-%[r|еi]&emsp;/ %[l|aɪ] /
-[|-
-|%[m|ein     ]|один|
-|%[m|mein    ]|мой |
-|%[m|dеr Reis]|рис |
+## Исключения / %[l|aː] /
+
+[|
+|%[m|der Adler]   |орёл          |
+|%[m|das Afrika]  |Африка        |
+|%[m|Agnes]       |Агнес         |
+|%[m|die Art]     |манера        |
+|%[m|artig]       |послушный     |
+|%[m|der Arzt]    |врач          |
+|%[m|der Bart]    |борода        |
+|%[m|brach]       |сломанный     |
+|%[m|die Bratsche]|альт          |
+|%[m|die Habsburg]|Габсбург      |
+|%[m|der Harz]    |смола         |
+|%[m|die Jagd]    |охота         |
+|%[m|die Magd]    |служанка      |
+|%[m|der Makler]  |маклер        |
+|%[m|nach]        |в, на         |
+|%[m|der Papst]   |Папа          |
+|%[m|der Quark]   |творог        |
+|%[m|der Quarz]   |кварц         |
+|%[m|die Schmach] |позор         |
+|%[m|schmachvoll] |постыдный     |
+|%[m|die Schwarte]|корка         |
+|%[m|die Sprache] |язык          |
+|%[m|das Ungemach]|неприятность  |
+|%[m|watscheln]   |переваливаться|
+|%[m|zart]        |нежный        |
 |]
 
-__редко встречающиеся__
+## Исключения / %[l|a] /
 
-%[r|аi]&emsp;/ %[l|aɪ] /
-[|-
-|%[m|der Mai   ]|май   |
-|%[m|die Saite ]|струна|
-|%[m|der Kaiser]|кайзер|
-|]
-
-%[r|eu]&emsp;/ %[l|ɔɪ] /
-[|-
-|%[m|neun      ]|девять|
-|%[m|der Freund]|друг  |
-|%[m|treu      ]|верный|
+[|
+|%[m|der Bräutigam]|жених          |
+|%[m|die Gala]     |парадная одежда|
+|%[m|die Grammatik]|грамматика     |
+|%[m|grammatisch]  |грамматический |
+|%[m|das Hamburg]  |Гамбург        |
+|%[m|hast]         |имеешь         |
+|%[m|hat]          |имеет          |
+|%[m|der Januar]   |январь         |
+|%[m|der Kakadu]   |какаду         |
+|%[m|Kanada]       |Канада         |
+|%[m|der Nektar]   |нектар         |
+|%[m|der Monat]    |месяц          |
+|%[m|der Nachbar]  |сосед          |
+|%[m|Stephan]      |Стефан         |
+|%[m|der Walfisch] |кит            |
+|%[m|die Walnuss]  |грецкий орех   |
+|%[m|das Walross]  |морж           |
 |]

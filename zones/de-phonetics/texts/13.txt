@@ -1,145 +1,27 @@
-###### От Буквы к Звуку
+###### От Звука к Букве
 
-###  ###
+# ʏ &ensp; yː
 
-# e
-
-/ %[l|eː] /
+## ʏ
 
 [!
-в открытом ударном слоге
+Смесь звуков / %[l|ɪ] / и / %[l|ʊ] /
 !]
-[|-
-|%[m|das Leben]|жизнь|
-|%[m|der Regen]|дождь|
+
+[|
+|%[m|küssen]|целовать|
+|%[m|fünf  ]|пять    |
+|%[m|Müll  ]|мусор   |
 |]
+
+## yː
 
 [!
-в условно-открытом слоге
+Смесь звуков / %[l|iː] / и / %[l|uː] /
 !]
-[|-
-|%[m|der Weg]|дорога, путь|
-|%[m|schwer] |дождь       |
+
+[|
+|%[m|müde ]|усталый    |
+|%[m|üben ]|упражняться|
+|%[m|Dübel]|дюбель     |
 |]
-
-[!
-в односложных на -%[m|m], -%[m|n], -%[m|r]
-!]
-[|-
-|%[m|dem]|тому|
-|%[m|wen]|кого|
-|]
-
-/ %[l|ɛ] /
-
-[!
-в закрытом слоге
-!]
-[|-
-|%[m|der Kern]|ядро               |
-|%[m|das Fest]|праздник, торжество|
-|]
-
-[!
-в префиксах %[m|emp]-, %[m|ent]-, %[m|er]-, %[m|ver]-, %[m|zer]-
-!]
-[|-
-|%[m|empfangen]|принимать, получать   |
-|%[m|entdecken]|обнаруживать, находить|
-|]
-
-[!
-в безударном греческом суффиксе -%[m|es]
-!]
-[|-
-|%[m|Aristoteles]|Аристотель|
-|%[m|Achilles]   |Ахилл     |
-|]
-
-/ %[l|ə] /
-
-[!
-в префиксах %[m|be]-, %[m|ge]-
-!]
-[|-
-|%[m|besuchen]|посещать|
-|%[m|gerade]  |прямой  |
-|]
-
-[!
-в суффиксе -%[m|chen]
-!]
-[|-
-|%[m|das Mädchen] |посещать|
-|%[m|das Veilchen]|фиалка  |
-|]
-
-[!
-в суффиксах -%[m|e], -%[m|el], -%[m|er], -%[m|ler], -%[m|ner]
-!]
-[|-
-|%[m|die Hilfe] |помощь         |
-|%[m|der Riegel]|задвижка, засов|
-|]
-
-[!
-в суффиксах -%[m|em], -%[m|et], -%[m|tet], -%[m|test]
-!]
-[|-
-|%[m|diesem]  |этому   |
-|%[m|arbeitet]|работает|
-|]
-
-## Редуцирование / %[l|ə] /
-
-&ensp;&bullet;&ensp;в окончании -en после щелевых звуков и аффрикат [p̮f], [t̮s]: %[m|die Möwen], %[m|heißen], %[m|waschen], %[m|kämpfen], %[m|tanzen], %[m|die Garagen];
-
-&ensp;&bullet;&ensp;в окончании -en после смычно-взрывных звуков: %[m|leben], %[m|die Mappen], %[m|leiden], %[m|reiten], %[m|wegen], %[m|packen];
-
-&ensp;&bullet;&ensp;в окончании -el после смычно-проходных, смычно-щелевых, щелевых, смычно-взрывных звуков: %[m|ähneln], %[m|der Gipfel], %[m|die Tafel], %[m|vermitteln];
-
-## Исключения / %[l|eː] /
-
-%[m|die Beschwerde]
-%[m|Dresden]
-%[m|die Erde]
-%[m|erst]
-%[m|das Erz]
-%[m|Este]
-%[m|Estland]
-%[m|estnisch]
-%[m|Gerhard]
-%[m|die Geste]
-%[m|Hedwig]
-%[m|her]
-%[m|der Herd]
-%[m|die Herde]
-%[m|der (das) Keks]
-%[m|der Krebs]
-%[m|der Kreml]
-%[m|Mecklenburg]
-%[m|nebst]
-%[m|das Pferd]
-%[m|Schleswig]
-%[m|das Schwert]
-%[m|Schwedt]
-%[m|stets]
-%[m|Teplitz]
-%[m|werden]
-%[m|der Wert]
-%[m|wert]
-%[m|das Zebra]
-
-## Исключения / %[l|ɛ] /
-
-%[m|das Billett]
-%[m|der Chef]
-%[m|die Herberge]
-%[m|der Herzog]
-%[m|das Hotel]
-%[m|das Rebhuhn]
-%[m|das Relief]
-%[m|das Requiem]
-%[m|Stephan]
-%[m|der Tibet]
-%[m|weg]
