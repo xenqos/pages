@@ -1,84 +1,16 @@
 ###### Math
 
-# Menthal Rules
-
-## 7,8,9 - Addition
-
-Formulas:
-$x+7=x+10-3$
-$x+8=x+10-2$
-$x+9=x+10-1$
-
-Examples:
-$56+7=56+10-3=63$
-$47+8=47+10-2=55$
-$73+9=73+10-1=82$
-
-## 7,8,9 - Subtraction
-
-Formulas:
-$x-7=x-10+3$
-$x-8=x-10+2$
-$x-9=x-10+1$
-
-Examples:
-$46-7=46-10+3=39$
-$57-8=57-10+2=49$
-$88-9=88+10-1=79$
-
-## 5 - Multiplication
-
-Formulas:
-$x×5 = x÷2×10$
-
-Example:
-$88×5=88÷2×10=440$
-
-## 9 - Multiplication
-Formulas:
-$x × 9 = x × 10 − x$
-
-Examples:
-$13 × 9 = 13 × 10 − 13 = 117$
-
-
-## Addition of Two-Digit Numbers
-
-### The Last Digit >= 5
+# Ratio to Probability
 
 [?
-round up 5
-perform addition
-subtract the increase
-
-54+39=54+40-1=93
-26+38=26+40-2=64
+1:1  = 50%
+1:2  = 33%
+1:3  = 25%
+1:4  = 20%
+1:5  = 17%
+1:6  = 14%
+1:7  = 13%
+1:8  = 11%
+1:9  = 10%
+1:10 =  9%
 ?]
-
-### The Last Digit < 5
-
-[?
-adding by place value
-first tens, then units
-
-57+32=57+30+2=89
-?]
-
-## Addition of Three-Digit Numbers
-
-[?
-break down three-digit numbers
-into hundreds, tens, units
-add them one by one
-
-249+533=(200+500)+(40+30)+(9+3)=782
-?]
-
-
-<!--
-$
-\begin{array}{l}
-\Large {Outs \over {47 \times 100}} \\
-\end{array}
-$
--->
