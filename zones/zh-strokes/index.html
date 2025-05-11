@@ -19,21 +19,21 @@
   <script type='text/javascript' src='../../scripts/jquery-1.11.1.min.js'></script>
   <script type='text/javascript' src='../../scripts/hanzi-writer.min.js'></script>
 </head>
-<body>
+<body onload='fncMain();'>
+<!--
 <audio id='idTrack' src='' preload='auto'></audio>
+-->
 <div id='idPanel'>
 <div id='idTopbar'>
   <div id='idTopbarNavigation'>
     <a href='../../index.html'><span class='clNavHome'></span></a>
-
-    <a href='../{$dir_zones}/{$app_area}/index.html'><span class='clNavIndex'></span></a>
-    <a href='javascript:history.back()'><span class='clNavUp'></span></a>
+    <a href='javascript:history.back()'><span class='clNavLeft'></span></a>
     <span id='idHanziSound' class='clNavSound'></span>
     <span id='idHanziPlay' class='clNavPlay'></span>
     <span id='idHanziQuiz' class='clNavQuiz'></span>
     <span id='idSearchBox'>
-      <form method='get' action="../../hypers/{$app_name}.php">
-        <input id='idHanzi' type='text' name='varHanziId' value='{$hanzi_id}' size='1'>
+      <form method='get' action="./index.html">
+        <input id='idHanzi' type='text' name='varHanziId' value=' ' size='1'>
         <input id='idSearchSubmit' type='submit' value=''>
       </form>
     </span>
@@ -56,22 +56,20 @@
 </svg>
 </div>
 
-{$grid_s2}
-
-<div class='clHanziInfoHeader'>pinyin:</div>
-<div class='clHanziInfoText'>{$hanzi_pinyin}</div>
-<div class='clHanziInfoHeader'>definition:</div>
-<div class='clHanziInfoText'>{$hanzi_definition}</div>
-<div class='clHanziInfoHeader'>radical:</div>
-<div class='clHanziInfoText zh'>{$hanzi_radical}</div>
-<div class='clHanziInfoHeader'>decomposition:</div>
-<div class='clHanziInfoText zh'>{$hanzi_decomposition}</div>
-<div class='clHanziInfoHeader'>character:</div>
-<div class='clHanziInfoText zh'><a href='../../hypers/hanyu-dictionary.php?varEntryId={$hanzi_character}'>{$hanzi_character}</a></div>
-<div class='clHanziInfoHeader'>type:</div>
-<div class='clHanziInfoText'>{$hanzi_etymology_type}</div>
-<div class='clHanziInfoHeader'>hint:</div>
-<div class='clHanziInfoText'>{$hanzi_etymology_hint}</div>
+<div id=''         class='clHanziInfoHeader'>pinyin:</div>
+<div id='idHanziSearch' class='clHanziInfoText'>{$hanzi_pinyin}</div>
+<div id=''         class='clHanziInfoHeader'>definition:</div>
+<div id=''         class='clHanziInfoText'>{$hanzi_definition}</div>
+<div id=''         class='clHanziInfoHeader'>radical:</div>
+<div id=''         class='clHanziInfoText zh'>{$hanzi_radical}</div>
+<div id=''         class='clHanziInfoHeader'>decomposition:</div>
+<div id=''         class='clHanziInfoText zh'>{$hanzi_decomposition}</div>
+<div id=''         class='clHanziInfoHeader'>character:</div>
+<div id=''         class='clHanziInfoText zh'></div>
+<div id=''         class='clHanziInfoHeader'>type:</div>
+<div id=''         class='clHanziInfoText'>{$hanzi_etymology_type}</div>
+<div id=''         class='clHanziInfoHeader'>hint:</div>
+<div id=''         class='clHanziInfoText'>{$hanzi_etymology_hint}</div>
 {$hanzi_pictophonetic}
 <br>
 
