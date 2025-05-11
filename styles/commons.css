@@ -1047,7 +1047,7 @@ q.x::after { content: url("../images/poker/nosuit.svg"); }
   height:               1.000rem;
   line-height:          1.000rem;
   margin:               0.125rem 0.000rem 0.000rem 0.000rem;
-  padding:              0.000rem 0.000rem 0.125rem 0.000rem;
+  padding:              0.000rem 0.500rem 0.125rem 0.500rem;
   vertical-align:       middle;
   text-decoration:      none !important;
   width:                1.000rem;

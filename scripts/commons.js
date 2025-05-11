@@ -214,4 +214,57 @@ function fncPlayFile(strFileName)
   objAudio.play();
 }
 
+/*----------------------------------------------------------------------------------------------------------*/
+/* Chinese Sounds                                                                                           */
+/*----------------------------------------------------------------------------------------------------------*/
+
+var strDirectory = '../sounds/';
+var strDirectoryZh = '../apps/ln/zh-resources/sounds/';
+var strFormat = 'mp3';
+
+var intTimeout = 1000;
+var intTimeoutInitial = 100;
+
+var intCurrentSound = 0;
+
+var arrSounds = new Array();
+
+/*----------------------------------------------------------------------------------------------------------*/
+
+function fncPlaySound(strPhoneme)
+{
+  arrSounds = strPhoneme.split(',');
+  setTimeout('fncPlayNextSound(0);', intTimeoutInitial);
+}
+
+function fncPlayNextSound(intCounter)
+{
+  if (typeof arrSounds[intCounter] === "undefined") { return; }
+
+  var objAudio = document.getElementById('idTrack');
+  var strSound = strDirectory + arrSounds[intCounter] + '.' + strFormat;
+
+  objAudio.setAttribute('src', strSound);
+  objAudio.play();
+  intCounter++;
+  setTimeout('fncPlayNextSound(' + intCounter + ');', intTimeout);
+}
+
+function fncPlayFile(strFileName)
+{
+  var objAudio = document.getElementById('idTrack');
+  var strSound = strDirectory + strPhoneme + '.' + strFormat;
+
+  objAudio.setAttribute('src', strSound);
+  objAudio.play();
+}
+
+function fncPlaySoundZh(strPhoneme)
+{
+  var objAudio = document.getElementById('idTrack');
+  var strSound = strDirectoryZh + strPhoneme + '.' + strFormat;
+  objAudio.setAttribute('src', strSound);
+  objAudio.play();
+}
+
 /*-----------------------------------------------------------------------------------------------*/
