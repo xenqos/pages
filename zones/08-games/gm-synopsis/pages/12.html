@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, user-scalable=no'>
+  <title>Texas Holdem Synopsis</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/commons.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/commons.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+<audio id='idTrack' src='../sounds/12.mp3' preload='auto'></audio>
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'><span></a>
+    <a href='11.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='13.html'><span class='clNavRight'></span></a>
+<span class='clNavRewind' onclick='fncRewindTrack(&quot;idTrack&quot;)'></span><span class='clNavPlay' onclick='fncPlayTrack(&quot;idTrack&quot;)'></span>
+  </div>
+</div>
+<div id='idContent'>
+
+<h6>Game</h6>
+
+<h1>Betting Rounds</h1>
+
+<h2>Pre-Flop</h2>
+<blockquote>
+'Big Blind' is 'Live Blind'<br>
+'Small Blind' places small blind<br>
+'Big Blind' places big blind<br>
+'Dealer' deal 'Hole Cards' starting from left<br>
+Each player clockwise places: 'Fold' / 'Call' / 'Raise'<br>
+At 'Big Blind' 'Dealer' asks 'Option?'<br>
+'Big Blind' may 'Check' (if nobody Raised)<br>
+'Big Blind' may 'Call'  (if somebody Raised)<br>
+'Big Blind' may 'Raise' (if somebody Raised)<br>
+</blockquote>
+
+<ul>
+<li>'Big Blind' = 2 x 'Small Blind'</li>
+<li>'Call' = 'Big Blind'</li>
+</ul>
+
+<h2>Flop</h2>
+<blockquote>
+71.4% of potential cards<br>
+'Dealer' burns top card<br>
+'Dealer' deal 'Flop Community Cards'<br>
+'Small Blind' places: 'Fold' / 'Check' / 'Bet'<br>
+Each player clockwise places: 'Fold' / 'Check' / 'Bet' / 'Call' / 'Raise'<br>
+</blockquote>
+
+<h2>Turn</h2>
+<blockquote>
+14.3% of potential cards<br>
+'Dealer' burns top card<br>
+'Dealer' deal 'Turn Community Card' - 'Fourth Street'<br>
+'Small Blind' places: 'Fold' / 'Check' / 'Bet'<br>
+Each player clockwise places: 'Fold' / 'Check' / 'Bet' / 'Call' / 'Raise'<br>
+</blockquote>
+
+<h2>River</h2>
+<blockquote>
+14.3% of potential cards<br>
+'Dealer' burns top card<br>
+'Dealer' deal 'River Community Card' - 'Fifth Street'<br>
+'Small Blind' places: 'Fold' / 'Check' / 'Bet'<br>
+Each player clockwise places: 'Fold' / 'Check' / 'Bet' / 'Call' / 'Raise'<br>
+</blockquote>
+
+<h2>Showdown</h2>
+<blockquote>
+Show 'Hole Cards'<br>
+The best 'Hand' wins<br>
+</blockquote>
+
+<h3>Raise & Re-raise</h3>
+
+<span class='l'>IF</span><br>
+<div class='if-then-else'>  'Player' raises / re-raises</div>
+<span class='l'>THEN</span><br>
+<div class='if-then-else'>  All 'Players' starting from his left clockwise must match 'Raise' / 'Re-raise'. <br> Thus the betting stops at 'Player' to the right of the one who made 'Raise' / 'Re-raise'</div>
+<div class='l'>ENDIF</div>
+
+<br>
+<span class='l'>IF</span><br>
+<div class='if-then-else'>  'Players' >= 3 in 'Hand' ('Game')</div>
+<span class='l'>THEN</span><br>
+<div class='if-then-else'>  3-4 'Raise' / 'Re-raise' - allowed</div>
+<span class='l'>ELSE IF</span><br>
+<div class='if-then-else'>  'Players' = 2 are in 'Hand' ('Game')</div>
+<span class='l'>ELSE</span><br>
+<div class='if-then-else'>  'Raise' / 'Re-raise' - not limited</div>
+<div class='l'>ENDIF</div>
+
+
+
+</div>
+</div>
+</body>
+</html>

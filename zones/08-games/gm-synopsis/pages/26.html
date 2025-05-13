@@ -1,0 +1,243 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, user-scalable=no'>
+  <title>Texas Holdem Synopsis</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/commons.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/commons.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  <script>MathJax={tex: {inlineMath: [['$', '$'], ['((', '))']], processEscapes: true}};</script>
+  <script id='MathJax-script' async src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'></script>
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'><span></a>
+    <a href='25.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='27.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h6>Odds & Probability</h6>
+
+
+<h1>Definitions</h1>
+
+<h2>Odds</h2>
+
+$<br>
+\begin{array}{l}<br>
+OD = {FO : UO} \\<br>
+\\<br>
+\small {OD - Odds} \\<br>
+\small {FO - Favorable\;Outcome} \\<br>
+\small {UO - Unfavorable\;Outcome} \\<br>
+\end{array}<br>
+$<br>
+<br>
+<a target='_blank' href='../images/probability-odds-outcomes.webp'><img class='clImageThumb' src='../images/probability-odds-outcomes.webp'></a><br>
+
+<b>2:4</b> - two to four<br>
+<b>1:2</b> - one to two<br>
+<br>
+<b>1:2</b> - Odds in Favor of Winning<br>
+<b>2:1</b> - Odds against Winning<br>
+
+<h2>Probability</h2>
+$<br>
+\begin{array}{l}<br>
+PR = \large {FO \over TO} \\<br>
+\\<br>
+\small {PR - Probability} \\<br>
+\small {FO - Favorable\;Outcome} \\<br>
+\small {TO - Total\;Outcomes}<br>
+\end{array}<br>
+$<br>
+<br>
+Chance that a given Outcome will happen<br>
+Expressed in fraction 0.0 - 1.0<br>
+Expressed in percentage 0% - 100%<br>
+0.0 / 0% - Outcome will never happen<br>
+1.0 / 100% - Outcome will always happen<br>
+
+<h2>Odds to Probability</h2>
+
+<h3>Odds</h3>
+$<br>
+\begin{array}{l}<br>
+OD = {FO : UO} \\<br>
+\small {OD =  1 : 2} \\<br>
+\\<br>
+\small {OD - Odds} \\<br>
+\small {FO - Favorable\;Outcomes} \\<br>
+\small {UO - Unfavorable\;Outcomes}<br>
+\end{array}<br>
+$<br>
+
+<h3>Total Outcomes</h3>
+$<br>
+\begin{array}{l}<br>
+TO = {FO + UO} \\<br>
+\small {1 + 2 = 3} \\<br>
+\\<br>
+\small {TO - Total\;Outcomes} \\<br>
+\small {FO - Favorable\;Outcomes} \\<br>
+\small {UO - Unfavorable\;Outcomes}<br>
+\end{array}<br>
+$<br>
+
+<h3>Probability of One Outcome</h3>
+$<br>
+\begin{array}{l}<br>
+POO = \large {TP \over TO} \\<br>
+\small {33\% ≈ {100\% \over 3}} \\<br>
+\\<br>
+\small {TO - Total\;Probability = 100\%} \\<br>
+\small {TP - Total\;Probability} \\<br>
+\small {TO - Total\;Outcomes}<br>
+\end{array}<br>
+$<br>
+
+<h3>Probability of Winning</h3>
+$<br>
+\begin{array}{l}<br>
+PW = {POO * FO} \\<br>
+\small {33\% ≈ {33\% * 1}} \\<br>
+\\<br>
+\small {PW - Probability\;of\;Winning} \\<br>
+\small {POO - Probability\;of\;One\;Outcome} \\<br>
+\small {FO - Favorable\;Outcomes}<br>
+\end{array}<br>
+$<br>
+
+<h3>Probability of Winning</h3>
+$<br>
+\begin{array}{l}<br>
+PW = \large {FO \over TO} \\<br>
+\large {1 \over 3} \\<br>
+\\<br>
+\small {PW - Probability\;of\;Winning} \\<br>
+\small {FO - Favorable\;Outcomes} \\<br>
+\small {TO - Total\;Outcomes}<br>
+\end{array}<br>
+$<br>
+
+<pre><code>Probability-Of-Loosing =
+  Probability-Of-One-Outcome
+  *
+  Unfavorable-Outcomes
+
+Probability-Of-Loosing =
+  33% * 2 = 66%
+
+Probability-Of-Winning =
+  Unfavorable-Outcomes
+  /
+  Total-Outcomes
+
+Probability-Of-Winning =
+  2 / 3</code></pre>
+
+
+<h2>Probability to Odds</h2>
+$<br>
+\begin{array}{l}<br>
+OD = \large {TO \over PoW} - 1 \\<br>
+\\<br>
+\small {OD - Odds} \\<br>
+\small {TO - Total\;Probability = 100\%} \\<br>
+\small {PoW - Probability\;of\;Winning} \\<br>
+\end{array}<br>
+$<br>
+
+<pre><code>Probability-Of-Winning = 25%
+Odds = 100% / 25% = 4; 4 – 1 = 3; 1:3
+
+Probability-Of-Winning = 20%
+Odds = 100% / 20% = 5; 5 – 4 = 3; 1:4</code></pre>
+
+<br>
+<!--<br>
+<br>
+
+<h2>Odds to Probability</h2>
+
+<pre><code>Odds =
+  Favorable-Outcomes
+  :
+  Unfavorable-Outcomes
+
+Odds =
+  1:2
+
+Total-Outcomes =
+  Favorable-Outcomes
+  +
+  Unfavorable-Outcomes
+
+Total-Outcomes =
+  1 + 2 = 3
+
+Total-Probability = 100%
+
+Probability-Of-One-Outcome =
+  Total-Probability
+  /
+  Total-Outcomes
+
+Probability-Of-One-Outcome =
+  100% / 3 ≈ 33%
+
+Probability-Of-Winning =
+  Probability-Of-One-Outcome
+  *
+  Favorable-Outcomes
+
+Probability-Of-Winning =
+  33% * 1 = 33%
+
+Probability-Of-Winning =
+  Favorable-Outcomes
+  /
+  Total-Outcomes
+
+Probability-Of-Winning =
+  1 / 3
+
+Probability-Of-Loosing =
+  Probability-Of-One-Outcome
+  *
+  Unfavorable-Outcomes
+
+Probability-Of-Loosing =
+  33% * 2 = 66%
+
+Probability-Of-Winning =
+  Unfavorable-Outcomes
+  /
+  Total-Outcomes
+
+Probability-Of-Winning =
+  2 / 3</code></pre>
+
+-->
+
+
+</div>
+</div>
+</body>
+</html>
