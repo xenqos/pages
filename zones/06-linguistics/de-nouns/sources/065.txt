@@ -1,22 +1,16 @@
-# B1 - 065 - die Substantive
-
-
-|die Last|der Last&emsp;die Lasten|груз
-
-|das Reisebüro|des Reisebüros&emsp;die Reisebüros|туристическое агентство
-
-|die Minderheit|der Minderheit&emsp;die Minderheiten|меньшинство
-
-|der Patient|des Patienten&emsp;die Patienten|пациент
-
-|das Abenteuer|des Abenteuers&emsp;die Abenteuer|приключение
-
-|das Obst|des Obstes&emsp;die Obste|фрукты
-
-|die Kellnerin|der Kellnerin&emsp;die Kellnerinnen|официантка
-
-|das Band|des Bandes&emsp;die Bänder|лента
-
-|das Missverständnis|des Missverständnisses&emsp;die Missverständnisse|недоразумение
-
-|der Abschluss|des Abschlusses&emsp;die Abschlüsse|завершение
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+die Last, der Last, die Lasten
+das Reisebüro, des Reisebüros, die Reisebüros
+die Minderheit, der Minderheit, die Minderheiten
+der Patient, des Patienten, die Patienten
+das Abenteuer, des Abenteuers, die Abenteuer
+das Obst, des Obstes, die Obste
+die Kellnerin, der Kellnerin, die Kellnerinnen
+das Band, des Bandes, die Bänder
+das Missverständnis, des Missverständnisses, die Missverständnisse
+der Abschluss, des Abschlusses, die Abschlüsse
+</prosody>
+</voice>
+</speak>

@@ -1,22 +1,16 @@
-# C1 - 106 - die Substantive
-
-
-|die Verzögerung|der Verzögerung&emsp;die Verzögerungen|задержка
-
-|die Loyalität|der Loyalität&emsp;die Loyalitäten|лояльность
-
-|die Endgültigkeit|der Endgültigkeit&emsp;die Endgültigkeiten|окончательность
-
-|die Ausbreitung|der Ausbreitung&emsp;die Ausbreitungen|распространение
-
-|die Verhinderung|der Verhinderung&emsp;die Verhinderungen|предотвращение
-
-|die Lenkung|der Lenkung&emsp;die Lenkungen|управление
-
-|die Anschaffung|der Anschaffung&emsp;die Anschaffungen|приобретение
-
-|die Dokumentation|der Dokumentation&emsp;die Dokumentationen|документация
-
-|die Beobachtung|der Beobachtung&emsp;die Beobachtungen|наблюдение
-
-|die Zwischenprüfung|der Zwischenprüfung&emsp;die Zwischenprüfungen|промежуточный экзамен
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+die Verzögerung, der Verzögerung, die Verzögerungen
+die Loyalität, der Loyalität, die Loyalitäten
+die Endgültigkeit, der Endgültigkeit, die Endgültigkeiten
+die Ausbreitung, der Ausbreitung, die Ausbreitungen
+die Verhinderung, der Verhinderung, die Verhinderungen
+die Lenkung, der Lenkung, die Lenkungen
+die Anschaffung, der Anschaffung, die Anschaffungen
+die Dokumentation, der Dokumentation, die Dokumentationen
+die Beobachtung, der Beobachtung, die Beobachtungen
+die Zwischenprüfung, der Zwischenprüfung, die Zwischenprüfungen
+</prosody>
+</voice>
+</speak>

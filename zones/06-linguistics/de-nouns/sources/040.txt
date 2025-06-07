@@ -1,22 +1,16 @@
-# A2 - 040 - die Substantive
-
-
-|die Butter|der Butter&emsp;die Buttern|масло
-
-|das Dokument|des Dokuments&emsp;die Dokumente|документ
-
-|die Ehre|der Ehre&emsp;die Ehren|честь
-
-|die Eisenbahn|der Eisenbahn&emsp;die Eisenbahnen|железная дорога
-
-|der Erwachsene|des Erwachsenen&emsp;die Erwachsenen|взрослый
-
-|die Erzählung|der Erzählung&emsp;die Erzählungen|рассказ
-
-|der Erfolg|des Erfolges&emsp;die Erfolge|успех
-
-|die Erfahrung|der Erfahrung&emsp;die Erfahrungen|опыт
-
-|die Erlaubnis|der Erlaubnis&emsp;die Erlaubnisse|разрешение
-
-|die Fahrkarte|der Fahrkarte&emsp;die Fahrkarten|билет
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+die Butter, der Butter, die Buttern
+das Dokument, des Dokuments, die Dokumente
+die Ehre, der Ehre, die Ehren
+die Eisenbahn, der Eisenbahn, die Eisenbahnen
+der Erwachsene, des Erwachsenen, die Erwachsenen
+die Erzählung, der Erzählung, die Erzählungen
+der Erfolg, des Erfolges, die Erfolge
+die Erfahrung, der Erfahrung, die Erfahrungen
+die Erlaubnis, der Erlaubnis, die Erlaubnisse
+die Fahrkarte, der Fahrkarte, die Fahrkarten
+</prosody>
+</voice>
+</speak>

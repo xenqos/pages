@@ -1,22 +1,16 @@
-# A1 - 004 - die Substantive
-
-
-|die Tante|der Tante&emsp;die Tanten|тетя
-
-|die Mütze|der Mütze&emsp;die Mützen|шапка
-
-|der Belgier|des Belgiers&emsp;die Belgier|бельгиец
-
-|das Arbeitszimmer|des Arbeitszimmers&emsp;die Arbeitszimmer|кабинет
-
-|die Doktorin|der Doktorin&emsp;die Doktorinnen|доктор (женщина)
-
-|der Hafen|des Hafens&emsp;die Häfen|порт
-
-|das Problem|des Problemes&emsp;die Probleme|проблема
-
-|das Alter|des Alters&emsp;die Alter|возраст
-
-|die Suppe|der Suppe&emsp;die Suppen|суп
-
-|die Karte|der Karte&emsp;die Karten|карта
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+die Tante, der Tante, die Tanten
+die Mütze, der Mütze, die Mützen
+der Belgier, des Belgiers, die Belgier
+das Arbeitszimmer, des Arbeitszimmers, die Arbeitszimmer
+die Doktorin, der Doktorin, die Doktorinnen
+der Hafen, des Hafens, die Häfen
+das Problem, des Problemes, die Probleme
+das Alter, des Alters, die Alter
+die Suppe, der Suppe, die Suppen
+die Karte, der Karte, die Karten
+</prosody>
+</voice>
+</speak>

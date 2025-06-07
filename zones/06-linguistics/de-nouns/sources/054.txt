@@ -1,22 +1,16 @@
-# A2 - 054 - die Substantive
-
-
-|der Druck|des Drucks&emsp;die Drücke|давление
-
-|der Eingang|des Eingangs&emsp;die Eingänge|вход
-
-|der Eindruck|des Eindrucks&emsp;die Eindrücke|впечатление
-
-|die Einladung|der Einladung&emsp;die Einladungen|приглашение
-
-|die Einrichtung|der Einrichtung&emsp;die Einrichtungen|учреждение
-
-|der Einwohner|des Einwohners&emsp;die Einwohner|житель
-
-|die Einzelheit|der Einzelheit&emsp;die Einzelheiten|деталь
-
-|der Elternabend|des Elternabends&emsp;die Elternabende|родительское собрание
-
-|die Endung|der Endung&emsp;die Endungen|окончание
-
-|das Engagement|des Engagements&emsp;die Engagements|обязательство
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+der Druck, des Drucks, die Drücke
+der Eingang, des Eingangs, die Eingänge
+der Eindruck, des Eindrucks, die Eindrücke
+die Einladung, der Einladung, die Einladungen
+die Einrichtung, der Einrichtung, die Einrichtungen
+der Einwohner, des Einwohners, die Einwohner
+die Einzelheit, der Einzelheit, die Einzelheiten
+der Elternabend, des Elternabends, die Elternabende
+die Endung, der Endung, die Endungen
+das Engagement, des Engagements, die Engagements
+</prosody>
+</voice>
+</speak>

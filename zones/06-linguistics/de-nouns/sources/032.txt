@@ -1,22 +1,16 @@
-# A1 - 032 - die Substantive
-
-
-|das Tier|des Tieres&emsp;die Tiere|животное
-
-|das Besteck|des Bestecks&emsp;die Bestecke|столовые приборы
-
-|der Schrank|des Schrankes&emsp;die Schränke|шкаф
-
-|der Hund|des Hundes&emsp;die Hunde|собака
-
-|die Katze|der Katze&emsp;die Katzen|кошка
-
-|die Pause|der Pause&emsp;die Pausen|пауза
-
-|der Regen|des Regens&emsp;die Regen|дождь
-
-|die Karte|der Karte&emsp;die Karten|открытка
-
-|der Keller|des Kellers&emsp;die Keller|подвал
-
-|das Sofa|des Sofas&emsp;die Sofas|диван
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+das Tier, des Tieres, die Tiere
+das Besteck, des Bestecks, die Bestecke
+der Schrank, des Schrankes, die Schränke
+der Hund, des Hundes, die Hunde
+die Katze, der Katze, die Katzen
+die Pause, der Pause, die Pausen
+der Regen, des Regens, die Regen
+die Karte, der Karte, die Karten
+der Keller, des Kellers, die Keller
+das Sofa, des Sofas, die Sofas
+</prosody>
+</voice>
+</speak>

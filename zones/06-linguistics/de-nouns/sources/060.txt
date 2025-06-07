@@ -1,22 +1,16 @@
-# A2 - 060 - die Substantive
-
-
-|der Helm|des Helmes&emsp;die Helme|шлем
-
-|der Hersteller|des Herstellers&emsp;die Hersteller|производитель
-
-|das Hochhaus|des Hochhauses&emsp;die Hochhäuser|высотное здание
-
-|das Huhn|des Huhnes&emsp;die Hühner|курица
-
-|der Humor|des Humors&emsp;die Humore|юмор
-
-|die Information|der Information&emsp;die Informationen|информация
-
-|das Instrument|des Instruments&emsp;die Instrumente|инструмент
-
-|das Jahrzehnt|des Jahrzehnts&emsp;die Jahrzehnte|десятилетие
-
-|der Journalist|des Journalisten&emsp;die Journalisten|журналист
-
-|die Jugend|der Jugend&emsp;die Jugenden|молодежь
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+der Helm, des Helmes, die Helme
+der Hersteller, des Herstellers, die Hersteller
+das Hochhaus, des Hochhauses, die Hochhäuser
+das Huhn, des Huhnes, die Hühner
+der Humor, des Humors, die Humore
+die Information, der Information, die Informationen
+das Instrument, des Instruments, die Instrumente
+das Jahrzehnt, des Jahrzehnts, die Jahrzehnte
+der Journalist, des Journalisten, die Journalisten
+die Jugend, der Jugend, die Jugenden
+</prosody>
+</voice>
+</speak>

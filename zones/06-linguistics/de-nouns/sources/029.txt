@@ -1,22 +1,16 @@
-# A1 - 029 - die Substantive
-
-
-|das Frühstück|des Frühstückes&emsp;die Frühstücke|завтрак
-
-|das Restaurant|des Restaurants&emsp;die Restaurants|ресторан
-
-|das Puzzle|des Puzzles&emsp;die Puzzles|пазл
-
-|der Urlaub|des Urlaubes&emsp;die Urlaube|отпуск
-
-|das Leder|des Leders&emsp;die Leder|кожа
-
-|der Roman|des Romans&emsp;die Romane|роман
-
-|die Creme|der Creme&emsp;die Cremes|крем
-
-|die Nacht|der Nacht&emsp;die Nächte|ночь
-
-|der Teddy|des Teddys&emsp;die Teddys|мишка
-
-|der Geburtstag|des Geburtstages&emsp;die Geburtstage|день рождения
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+das Frühstück, des Frühstückes, die Frühstücke
+das Restaurant, des Restaurants, die Restaurants
+das Puzzle, des Puzzles, die Puzzles
+der Urlaub, des Urlaubes, die Urlaube
+das Leder, des Leders, die Leder
+der Roman, des Romans, die Romane
+die Creme, der Creme, die Cremes
+die Nacht, der Nacht, die Nächte
+der Teddy, des Teddys, die Teddys
+der Geburtstag, des Geburtstages, die Geburtstage
+</prosody>
+</voice>
+</speak>

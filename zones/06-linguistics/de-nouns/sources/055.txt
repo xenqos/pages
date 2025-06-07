@@ -1,22 +1,16 @@
-# A2 - 055 - die Substantive
-
-
-|der Enkel|des Enkels&emsp;die Enkel|внук
-
-|der Empfang|des Empfangs&emsp;die Empfänge|прием
-
-|die Erdkunde|der Erdkunde&emsp;die Erdkunden|география
-
-|das Ereignis|des Ereignisses&emsp;die Ereignisse|событие
-
-|das Erfrischungsgetränk|des Erfrischungsgetränkes&emsp;die Erfrischungsgetränke|освежающий напиток
-
-|die Ernährung|der Ernährung&emsp;die Ernährungen|питание
-
-|die Ernte|der Ernte&emsp;die Ernten|урожай
-
-|der Ernst|des Ernstes&emsp;die Ernste|серьезность
-
-|das Erlebnis|des Erlebnisses&emsp;die Erlebnisse|переживание
-
-|das Ergebnis|des Ergebnisses&emsp;die Ergebnisse|результат
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+der Enkel, des Enkels, die Enkel
+der Empfang, des Empfangs, die Empfänge
+die Erdkunde, der Erdkunde, die Erdkunden
+das Ereignis, des Ereignisses, die Ereignisse
+das Erfrischungsgetränk, des Erfrischungsgetränkes, die Erfrischungsgetränke
+die Ernährung, der Ernährung, die Ernährungen
+die Ernte, der Ernte, die Ernten
+der Ernst, des Ernstes, die Ernste
+das Erlebnis, des Erlebnisses, die Erlebnisse
+das Ergebnis, des Ergebnisses, die Ergebnisse
+</prosody>
+</voice>
+</speak>

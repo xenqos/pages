@@ -1,22 +1,16 @@
-# A1 - 011 - die Substantive
-
-
-|das Studium|des Studiums&emsp;die Studien|учеба
-
-|das Wohnzimmer|des Wohnzimmers&emsp;die Wohnzimmer|гостиная
-
-|das Fenster|des Fensters&emsp;die Fenster|окно
-
-|der Herd|des Herdes&emsp;die Herde|плита
-
-|das Taxi|des Taxis&emsp;die Taxis|такси
-
-|der Zaun|des Zaunes&emsp;die Zäune|забор
-
-|die Ehefrau|der Ehefrau&emsp;die Ehefrauen|жена
-
-|das Flugzeug|des Flugzeuges&emsp;die Flugzeuge|самолет
-
-|der Meter|des Meters&emsp;die Meter|метр
-
-|der Junge|des Jungen&emsp;die Jungen|мальчик
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+das Studium, des Studiums, die Studien
+das Wohnzimmer, des Wohnzimmers, die Wohnzimmer
+das Fenster, des Fensters, die Fenster
+der Herd, des Herdes, die Herde
+das Taxi, des Taxis, die Taxis
+der Zaun, des Zaunes, die Zäune
+die Ehefrau, der Ehefrau, die Ehefrauen
+das Flugzeug, des Flugzeuges, die Flugzeuge
+der Meter, des Meters, die Meter
+der Junge, des Jungen, die Jungen
+</prosody>
+</voice>
+</speak>

@@ -1,14 +1,12 @@
-# C1 - 112 - die Substantive
-
-
-|die Konzeption|der Konzeption&emsp;die Konzeptionen|концепция
-
-|die Effizienzsteigerung|der Effizienzsteigerung&emsp;die Effizienzsteigerungen|повышение эффективности
-
-|die Kalkulation|der Kalkulation&emsp;die Kalkulationen|калькуляция
-
-|die Leistungsfähigkeit|der Leistungsfähigkeit&emsp;die Leistungsfähigkeiten|производительность
-
-|die Lieferung|der Lieferung&emsp;die Lieferungen|доставка
-
-|die Finanzierung|der Finanzierung&emsp;die Finanzierungen|финансирование
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+die Konzeption, der Konzeption, die Konzeptionen
+die Effizienzsteigerung, der Effizienzsteigerung, die Effizienzsteigerungen
+die Kalkulation, der Kalkulation, die Kalkulationen
+die Leistungsfähigkeit, der Leistungsfähigkeit, die Leistungsfähigkeiten
+die Lieferung, der Lieferung, die Lieferungen
+die Finanzierung, der Finanzierung, die Finanzierungen
+</prosody>
+</voice>
+</speak>

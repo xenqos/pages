@@ -1,22 +1,16 @@
-# A1 - 012 - die Substantive
-
-
-|der Handwerker|des Handwerkers&emsp;die Handwerker|мастер
-
-|die Stadt|der Stadt&emsp;die Städte|город
-
-|die Waschmaschine|der Waschmaschine&emsp;die Waschmaschinen|стиральная машина
-
-|die Wolke|der Wolke&emsp;die Wolken|облако
-
-|die Tasse|der Tasse&emsp;die Tassen|чашка
-
-|die Mutter|der Mutter&emsp;die Mütter|мать
-
-|der Sommer|des Sommers&emsp;die Sommer|лето
-
-|der Schmuck|des Schmucks&emsp;die Schmucke|украшение
-
-|die Decke|der Decke&emsp;die Decken|одеяло
-
-|der Onkel|des Onkels&emsp;die Onkel|дядя
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+der Handwerker, des Handwerkers, die Handwerker
+die Stadt, der Stadt, die Städte
+die Waschmaschine, der Waschmaschine, die Waschmaschinen
+die Wolke, der Wolke, die Wolken
+die Tasse, der Tasse, die Tassen
+die Mutter, der Mutter, die Mütter
+der Sommer, des Sommers, die Sommer
+der Schmuck, des Schmucks, die Schmucke
+die Decke, der Decke, die Decken
+der Onkel, des Onkels, die Onkel
+</prosody>
+</voice>
+</speak>

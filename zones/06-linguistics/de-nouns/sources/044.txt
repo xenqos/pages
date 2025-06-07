@@ -1,22 +1,16 @@
-# A2 - 044 - die Substantive
-
-
-|der Januar|des Januars&emsp;die Januare|январь
-
-|der Juli|des Julis&emsp;die Julis|июль
-
-|der Juni|des Junis&emsp;die Junis|июнь
-
-|die Jugendherberge|der Jugendherberge&emsp;die Jugendherbergen|молодежный хостел
-
-|der Kakao|des Kakaos&emsp;die Kakaos|какао
-
-|die Kamera|der Kamera&emsp;die Kameras|камера
-
-|der Karneval|des Karnevals&emsp;die Karnevale|карнавал
-
-|die Käse|der Käse&emsp;die Käse|сыр
-
-|die Kellner|der Kellner&emsp;die Kellner|официант
-
-|der Kiosk|des Kioskes&emsp;die Kioske|киоск
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+der Januar, des Januars, die Januare
+der Juli, des Julis, die Julis
+der Juni, des Junis, die Junis
+die Jugendherberge, der Jugendherberge, die Jugendherbergen
+der Kakao, des Kakaos, die Kakaos
+die Kamera, der Kamera, die Kameras
+der Karneval, des Karnevals, die Karnevale
+die Käse, der Käse, die Käse
+die Kellner, der Kellner, die Kellner
+der Kiosk, des Kioskes, die Kioske
+</prosody>
+</voice>
+</speak>

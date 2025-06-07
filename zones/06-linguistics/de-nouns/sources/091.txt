@@ -1,22 +1,16 @@
-# B2 - 091 - die Substantive
-
-
-|die Tendenz|der Tendenz&emsp;die Tendenzen|тенденция
-
-|der Schwerpunkt|des Schwerpunkts&emsp;die Schwerpunkte|основной пункт
-
-|der Gebrauch|des Gebrauchs&emsp;die Gebräuche|использование
-
-|die Anwendung|der Anwendung&emsp;die Anwendungen|применение
-
-|die Behauptung|der Behauptung&emsp;die Behauptungen|утверждение
-
-|die Lage|der Lage&emsp;die Lagen|положение
-
-|das Modell|des Modells&emsp;die Modelle|модель
-
-|die Perspektive|der Perspektive&emsp;die Perspektiven|перспектива
-
-|die Auffassung|der Auffassung&emsp;die Auffassungen|восприятие
-
-|die Entwicklung|der Entwicklung&emsp;die Entwicklungen|развитие
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+die Tendenz, der Tendenz, die Tendenzen
+der Schwerpunkt, des Schwerpunkts, die Schwerpunkte
+der Gebrauch, des Gebrauchs, die Gebräuche
+die Anwendung, der Anwendung, die Anwendungen
+die Behauptung, der Behauptung, die Behauptungen
+die Lage, der Lage, die Lagen
+das Modell, des Modells, die Modelle
+die Perspektive, der Perspektive, die Perspektiven
+die Auffassung, der Auffassung, die Auffassungen
+die Entwicklung, der Entwicklung, die Entwicklungen
+</prosody>
+</voice>
+</speak>

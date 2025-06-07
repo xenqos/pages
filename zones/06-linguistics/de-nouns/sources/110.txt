@@ -1,22 +1,16 @@
-# C1 - 110 - die Substantive
-
-
-|die Abwägung|der Abwägung&emsp;die Abwägungen|взвешивание
-
-|die Beteiligung|der Beteiligung&emsp;die Beteiligungen|участие
-
-|die Lebensqualität|der Lebensqualität&emsp;die Lebensqualitäten|качество жизни
-
-|die Erfassung|der Erfassung&emsp;die Erfassungen|учет
-
-|die Leitung|der Leitung&emsp;die Leitungen|руководство
-
-|die Reihenfolge|der Reihenfolge&emsp;die Reihenfolgen|последовательность
-
-|die Gegenüberstellung|der Gegenüberstellung&emsp;die Gegenüberstellungen|противопоставление
-
-|die Konzentration|der Konzentration&emsp;die Konzentrationen|концентрация
-
-|die Zuweisung|der Zuweisung&emsp;die Zuweisungen|назначение
-
-|die Schätzung|der Schätzung&emsp;die Schätzungen|оценка
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+die Abwägung, der Abwägung, die Abwägungen
+die Beteiligung, der Beteiligung, die Beteiligungen
+die Lebensqualität, der Lebensqualität, die Lebensqualitäten
+die Erfassung, der Erfassung, die Erfassungen
+die Leitung, der Leitung, die Leitungen
+die Reihenfolge, der Reihenfolge, die Reihenfolgen
+die Gegenüberstellung, der Gegenüberstellung, die Gegenüberstellungen
+die Konzentration, der Konzentration, die Konzentrationen
+die Zuweisung, der Zuweisung, die Zuweisungen
+die Schätzung, der Schätzung, die Schätzungen
+</prosody>
+</voice>
+</speak>

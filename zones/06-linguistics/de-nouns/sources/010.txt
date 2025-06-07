@@ -1,22 +1,16 @@
-# A1 - 010 - die Substantive
-
-
-|die Puppe|der Puppe&emsp;die Puppen|кукла
-
-|der Gast|des Gastes&emsp;die Gäste|гость
-
-|die Vase|der Vase&emsp;die Vasen|ваза
-
-|die Gesundheit|der Gesundheit&emsp;die Gesundheiten|здоровье
-
-|das Badezimmer|des Badezimmers&emsp;die Badezimmer|ванная комната
-
-|das Licht|des Lichtes&emsp;die Lichter|свет
-
-|das Kino|des Kinos&emsp;die Kinos|кинотеатр
-
-|der Arzt|des Arztes&emsp;die Ärzte|врач
-
-|der Titel|des Titels&emsp;die Titel|заголовок
-
-|der Ring|des Rings&emsp;die Ringe|кольцо
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+die Puppe, der Puppe, die Puppen
+der Gast, des Gastes, die Gäste
+die Vase, der Vase, die Vasen
+die Gesundheit, der Gesundheit, die Gesundheiten
+das Badezimmer, des Badezimmers, die Badezimmer
+das Licht, des Lichtes, die Lichter
+das Kino, des Kinos, die Kinos
+der Arzt, des Arztes, die Ärzte
+der Titel, des Titels, die Titel
+der Ring, des Rings, die Ringe
+</prosody>
+</voice>
+</speak>

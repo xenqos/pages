@@ -1,22 +1,16 @@
-# B1 - 075 - die Substantive
-
-
-|das Lob|des Lobes&emsp;die Lobe|похвала
-
-|die Akademie|der Akademie&emsp;die Akademien|академия
-
-|der Nagel|des Nagels&emsp;die Nägel|ноготь
-
-|der November|des Novembers&emsp;die November|ноябрь
-
-|das Gedicht|des Gedichtes&emsp;die Gedichte|стихотворение
-
-|die Quelle|der Quelle&emsp;die Quellen|источник
-
-|die Achtung|der Achtung&emsp;die Achtungen|внимание
-
-|die Mehrheit|der Mehrheit&emsp;die Mehrheiten|большинство
-
-|die Ebene|der Ebene&emsp;die Ebenen|уровень
-
-|die Anzeige|der Anzeige&emsp;die Anzeigen|объявление
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+das Lob, des Lobes, die Lobe
+die Akademie, der Akademie, die Akademien
+der Nagel, des Nagels, die Nägel
+der November, des Novembers, die November
+das Gedicht, des Gedichtes, die Gedichte
+die Quelle, der Quelle, die Quellen
+die Achtung, der Achtung, die Achtungen
+die Mehrheit, der Mehrheit, die Mehrheiten
+die Ebene, der Ebene, die Ebenen
+die Anzeige, der Anzeige, die Anzeigen
+</prosody>
+</voice>
+</speak>

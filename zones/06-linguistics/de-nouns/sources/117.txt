@@ -1,22 +1,16 @@
-# C2 - 117 - die Substantive
-
-
-|die Abwertung|der Abwertung&emsp;die Abwertungen|обесценивание
-
-|die Artikulierung|der Artikulierung&emsp;die Artikulierungen|артикуляция
-
-|die Wahrheit|der Wahrheit&emsp;die Wahrheiten|истина
-
-|die Gelassenheit|der Gelassenheit&emsp;die Gelassenheiten|невозмутимость
-
-|die Bewilligung|der Bewilligung&emsp;die Bewilligungen|разрешение
-
-|die Einforderung|der Einforderung&emsp;die Einforderungen|взыскание
-
-|die Anerkennung|der Anerkennung&emsp;die Anerkennungen|признание
-
-|die Annäherung|der Annäherung&emsp;die Annäherungen|приближение
-
-|die Ausstrahlung|der Ausstrahlung&emsp;die Ausstrahlungen|излучение
-
-|die Absonderung|der Absonderung&emsp;die Absonderungen|выделение
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+die Abwertung, der Abwertung, die Abwertungen
+die Artikulierung, der Artikulierung, die Artikulierungen
+die Wahrheit, der Wahrheit, die Wahrheiten
+die Gelassenheit, der Gelassenheit, die Gelassenheiten
+die Bewilligung, der Bewilligung, die Bewilligungen
+die Einforderung, der Einforderung, die Einforderungen
+die Anerkennung, der Anerkennung, die Anerkennungen
+die Annäherung, der Annäherung, die Annäherungen
+die Ausstrahlung, der Ausstrahlung, die Ausstrahlungen
+die Absonderung, der Absonderung, die Absonderungen
+</prosody>
+</voice>
+</speak>

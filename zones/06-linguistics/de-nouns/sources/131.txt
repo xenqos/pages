@@ -1,22 +1,16 @@
-# C2 - 131 - die Substantive
-
-
-|die Introspektion|der Introspektion&emsp;die Introspektionen|самоанализ
-
-|die Exaktheit|der Exaktheit&emsp;die Exaktheiten|точность
-
-|die Auswahlmöglichkeit|der Auswahlmöglichkeit&emsp;die Auswahlmöglichkeiten|возможность выбора
-
-|die Bevorzugung|der Bevorzugung&emsp;die Bevorzugungen|предпочтение
-
-|die Genesung|der Genesung&emsp;die Genesungen|выздоровление
-
-|die Absonderung|der Absonderung&emsp;die Absonderungen|изоляция
-
-|die Beilegung|der Beilegung&emsp;die Beilegungen|урегулирование
-
-|die Problemlösung|der Problemlösung&emsp;die Problemlösungen|решение проблемы
-
-|die Auflösung|der Auflösung&emsp;die Auflösungen|решение
-
-|die Erleichterung|der Erleichterung&emsp;die Erleichterungen|облегчение
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+die Introspektion, der Introspektion, die Introspektionen
+die Exaktheit, der Exaktheit, die Exaktheiten
+die Auswahlmöglichkeit, der Auswahlmöglichkeit, die Auswahlmöglichkeiten
+die Bevorzugung, der Bevorzugung, die Bevorzugungen
+die Genesung, der Genesung, die Genesungen
+die Absonderung, der Absonderung, die Absonderungen
+die Beilegung, der Beilegung, die Beilegungen
+die Problemlösung, der Problemlösung, die Problemlösungen
+die Auflösung, der Auflösung, die Auflösungen
+die Erleichterung, der Erleichterung, die Erleichterungen
+</prosody>
+</voice>
+</speak>

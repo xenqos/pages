@@ -1,22 +1,16 @@
-# A2 - 041 - die Substantive
-
-
-|die Fahrradtour|der Fahrradtour&emsp;die Fahrradtouren|велосипедная прогулка
-
-|die Fahrgemeinschaft|der Fahrgemeinschaft&emsp;die Fahrgemeinschaften|поездка на автомобиле с попутчиками
-
-|der Fall|des Falles&emsp;die Fälle|случай
-
-|das Fernsehprogramm|des Fernsehprogrammes&emsp;die Fernsehprogramme|телепрограмма
-
-|die Feuerwehr|der Feuerwehr&emsp;die Feuerwehren|пожарная охрана
-
-|die Führung|der Führung&emsp;die Führungen|руководство
-
-|das Gebiet|des Gebiets&emsp;die Gebiete|область
-
-|die Gebühr|der Gebühr&emsp;die Gebühren|плата
-
-|die Geburt|der Geburt&emsp;die Geburten|рождение
-
-|die Geige|der Geige&emsp;die Geigen|скрипка
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+die Fahrradtour, der Fahrradtour, die Fahrradtouren
+die Fahrgemeinschaft, der Fahrgemeinschaft, die Fahrgemeinschaften
+der Fall, des Falles, die Fälle
+das Fernsehprogramm, des Fernsehprogrammes, die Fernsehprogramme
+die Feuerwehr, der Feuerwehr, die Feuerwehren
+die Führung, der Führung, die Führungen
+das Gebiet, des Gebiets, die Gebiete
+die Gebühr, der Gebühr, die Gebühren
+die Geburt, der Geburt, die Geburten
+die Geige, der Geige, die Geigen
+</prosody>
+</voice>
+</speak>

@@ -1,22 +1,16 @@
-# A2 - 050 - die Substantive
-
-
-|der August|des Augusts&emsp;die Auguste|август
-
-|der Ausflug|des Ausflugs&emsp;die Ausflüge|экскурсия
-
-|der Ausgang|des Ausgangs&emsp;die Ausgänge|выход
-
-|die Aussicht|der Aussicht&emsp;die Aussichten|перспектива
-
-|die Badewanne|der Badewanne&emsp;die Badewannen|ванна
-
-|das Bankkonto|des Bankkontos&emsp;die Bankkonten|банковский счет
-
-|die Bar|der Bar&emsp;die Bars|бар
-
-|die Basis|der Basis&emsp;die Basen|база
-
-|der Basketball|des Basketballs&emsp;die Basketbälle|баскетбол
-
-|der Bau|des Baus&emsp;die Bauten|строительство
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+der August, des Augusts, die Auguste
+der Ausflug, des Ausflugs, die Ausflüge
+der Ausgang, des Ausgangs, die Ausgänge
+die Aussicht, der Aussicht, die Aussichten
+die Badewanne, der Badewanne, die Badewannen
+das Bankkonto, des Bankkontos, die Bankkonten
+die Bar, der Bar, die Bars
+die Basis, der Basis, die Basen
+der Basketball, des Basketballs, die Basketbälle
+der Bau, des Baus, die Bauten
+</prosody>
+</voice>
+</speak>

@@ -1,22 +1,16 @@
-# A1 - 017 - die Substantive
-
-
-|der Baum|des Baumes&emsp;die Bäume|дерево
-
-|der Bahnhof|des Bahnhofs&emsp;die Bahnhöfe|вокзал
-
-|die Straße|der Straße&emsp;die Straßen|улица
-
-|der Bäcker|des Bäckers&emsp;die Bäcker|пекарь
-
-|der Pullover|des Pullovers&emsp;die Pullover|свитер
-
-|der Schreibtisch|des Schreibtisches&emsp;die Schreibtische|письменный стол
-
-|die Uhr|der Uhr&emsp;die Uhren|часы
-
-|der Saft|des Saftes&emsp;die Säfte|сок
-
-|das Handy|des Handys&emsp;die Handys|мобильный телефон
-
-|das Gemüse|des Gemüses&emsp;die Gemüse|овощи
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+der Baum, des Baumes, die Bäume
+der Bahnhof, des Bahnhofs, die Bahnhöfe
+die Straße, der Straße, die Straßen
+der Bäcker, des Bäckers, die Bäcker
+der Pullover, des Pullovers, die Pullover
+der Schreibtisch, des Schreibtisches, die Schreibtische
+die Uhr, der Uhr, die Uhren
+der Saft, des Saftes, die Säfte
+das Handy, des Handys, die Handys
+das Gemüse, des Gemüses, die Gemüse
+</prosody>
+</voice>
+</speak>

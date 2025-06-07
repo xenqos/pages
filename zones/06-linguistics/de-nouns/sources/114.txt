@@ -1,22 +1,16 @@
-# C2 - 114 - die Substantive
-
-
-|die Hebung|der Hebung&emsp;die Hebungen|подъем
-
-|die Denunziation|der Denunziation&emsp;die Denunziationen|донос
-
-|die Belastbarkeit|der Belastbarkeit&emsp;die Belastbarkeiten|устойчивость
-
-|die Differenzierung|der Differenzierung&emsp;die Differenzierungen|дифференциация
-
-|die Enthaltung|der Enthaltung&emsp;die Enthaltungen|воздержание
-
-|die Beeinträchtigung|der Beeinträchtigung&emsp;die Beeinträchtigungen|ущерб
-
-|die Ermutigung|der Ermutigung&emsp;die Ermutigungen|подбадривание
-
-|die Fokussierung|der Fokussierung&emsp;die Fokussierungen|фокусировка
-
-|die Anklage|der Anklage&emsp;die Anklagen|обвинение
-
-|die Abmagerung|der Abmagerung&emsp;die Abmagerungen|похудение
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+die Hebung, der Hebung, die Hebungen
+die Denunziation, der Denunziation, die Denunziationen
+die Belastbarkeit, der Belastbarkeit, die Belastbarkeiten
+die Differenzierung, der Differenzierung, die Differenzierungen
+die Enthaltung, der Enthaltung, die Enthaltungen
+die Beeinträchtigung, der Beeinträchtigung, die Beeinträchtigungen
+die Ermutigung, der Ermutigung, die Ermutigungen
+die Fokussierung, der Fokussierung, die Fokussierungen
+die Anklage, der Anklage, die Anklagen
+die Abmagerung, der Abmagerung, die Abmagerungen
+</prosody>
+</voice>
+</speak>

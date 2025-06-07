@@ -1,22 +1,16 @@
-# C2 - 132 - die Substantive
-
-
-|die Fragmentierung|der Fragmentierung&emsp;die Fragmentierungen|фрагментация
-
-|die Belebung|der Belebung&emsp;die Belebungen|оживление
-
-|die Diktion|der Diktion&emsp;die Diktionen|дикция
-
-|die Aufhebung|der Aufhebung&emsp;die Aufhebungen|отмена
-
-|die Bejahung|der Bejahung&emsp;die Bejahungen|утверждение
-
-|die Legitimation|der Legitimation&emsp;die Legitimationen|легитимность
-
-|die Ausrichtung|der Ausrichtung&emsp;die Ausrichtungen|ориентация
-
-|die Resilienz|der Resilienz&emsp;die Resilienzen|устойчивость
-
-|die Prägnanz|der Prägnanz&emsp;die Prägnanzen|точность
-
-|die Akzeptanz|der Akzeptanz&emsp;die Akzeptanzen|принятие
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+die Fragmentierung, der Fragmentierung, die Fragmentierungen
+die Belebung, der Belebung, die Belebungen
+die Diktion, der Diktion, die Diktionen
+die Aufhebung, der Aufhebung, die Aufhebungen
+die Bejahung, der Bejahung, die Bejahungen
+die Legitimation, der Legitimation, die Legitimationen
+die Ausrichtung, der Ausrichtung, die Ausrichtungen
+die Resilienz, der Resilienz, die Resilienzen
+die Prägnanz, der Prägnanz, die Prägnanzen
+die Akzeptanz, der Akzeptanz, die Akzeptanzen
+</prosody>
+</voice>
+</speak>

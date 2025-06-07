@@ -1,22 +1,16 @@
-# A1 - 015 - die Substantive
-
-
-|die Lampe|der Lampe&emsp;die Lampen|лампа
-
-|die Orange|der Orange&emsp;die Orangen|апельсин
-
-|das Paar|des Paares&emsp;die Paare|пара
-
-|der Kuchen|des Kuchens&emsp;die Kuchen|пирог
-
-|der Mantel|des Mantels&emsp;die Mäntel|пальто
-
-|die Ecke|der Ecke&emsp;die Ecken|угол
-
-|das Geschenk|des Geschenkes&emsp;die Geschenke|подарок
-
-|das Messer|des Messers&emsp;die Messer|нож
-
-|die Sekunde|der Sekunde&emsp;die Sekunden|секунда
-
-|der Kalender|des Kalenders&emsp;die Kalender|календарь
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+die Lampe, der Lampe, die Lampen
+die Orange, der Orange, die Orangen
+das Paar, des Paares, die Paare
+der Kuchen, des Kuchens, die Kuchen
+der Mantel, des Mantels, die Mäntel
+die Ecke, der Ecke, die Ecken
+das Geschenk, des Geschenkes, die Geschenke
+das Messer, des Messers, die Messer
+die Sekunde, der Sekunde, die Sekunden
+der Kalender, des Kalenders, die Kalender
+</prosody>
+</voice>
+</speak>

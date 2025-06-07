@@ -1,22 +1,16 @@
-# A2 - 053 - die Substantive
-
-
-|der Bikini|des Bikinis&emsp;die Bikinis|бикини
-
-|die Biologie|der Biologie&emsp;die Biologien|биология
-
-|das Blatt|des Blattes&emsp;die Blätter|лист
-
-|das Blut|des Blutes&emsp;die Blute|кровь
-
-|die Blüte|der Blüte&emsp;die Blüten|цветок
-
-|der Buchstabe|des Buchstabens&emsp;die Buchstaben|буква
-
-|der Campingplatz|des Campingplatzes&emsp;die Campingplätze|кемпинг
-
-|der Darm|des Darmes&emsp;die Därme|кишечник
-
-|das Datum|des Datums&emsp;die Daten|дата
-
-|der Donner|des Donners&emsp;die Donner|гром
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+der Bikini, des Bikinis, die Bikinis
+die Biologie, der Biologie, die Biologien
+das Blatt, des Blattes, die Blätter
+das Blut, des Blutes, die Blute
+die Blüte, der Blüte, die Blüten
+der Buchstabe, des Buchstabens, die Buchstaben
+der Campingplatz, des Campingplatzes, die Campingplätze
+der Darm, des Darmes, die Därme
+das Datum, des Datums, die Daten
+der Donner, des Donners, die Donner
+</prosody>
+</voice>
+</speak>

@@ -1,22 +1,16 @@
-# B2 - 078 - die Substantive
-
-
-|die Reaktion|der Reaktion&emsp;die Reaktionen|реакция
-
-|die Identität|der Identität&emsp;die Identitäten|идентичность
-
-|die Sitzung|der Sitzung&emsp;die Sitzungen|заседание
-
-|die Technik|der Technik&emsp;die Techniken|техника
-
-|die Organisation|der Organisation&emsp;die Organisationen|организация
-
-|der Zusammenhang|des Zusammenhangs&emsp;die Zusammenhänge|связь
-
-|die Regierung|der Regierung&emsp;die Regierungen|правительство
-
-|die Kosten|der Kosten&emsp;die Kosten|расходы
-
-|die Zusammenarbeit|der Zusammenarbeit&emsp;die Zusammenarbeiten|сотрудничество
-
-|der Aufwand|des Aufwands&emsp;die Aufwände|затраты
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+die Reaktion, der Reaktion, die Reaktionen
+die Identität, der Identität, die Identitäten
+die Sitzung, der Sitzung, die Sitzungen
+die Technik, der Technik, die Techniken
+die Organisation, der Organisation, die Organisationen
+der Zusammenhang, des Zusammenhangs, die Zusammenhänge
+die Regierung, der Regierung, die Regierungen
+die Kosten, der Kosten, die Kosten
+die Zusammenarbeit, der Zusammenarbeit, die Zusammenarbeiten
+der Aufwand, des Aufwands, die Aufwände
+</prosody>
+</voice>
+</speak>

@@ -1,22 +1,16 @@
-# B2 - 089 - die Substantive
-
-
-|die Herausforderung|der Herausforderung&emsp;die Herausforderungen|вызов
-
-|die Schwäche|der Schwäche&emsp;die Schwächen|слабость
-
-|der Standard|des Standards&emsp;die Standards|стандарт
-
-|die Tabelle|der Tabelle&emsp;die Tabellen|таблица
-
-|der Vorteil|des Vorteils&emsp;die Vorteile|преимущество
-
-|die Leistung|der Leistung&emsp;die Leistungen|достижение
-
-|die Variante|der Variante&emsp;die Varianten|вариант
-
-|die Verordnung|der Verordnung&emsp;die Verordnungen|постановление
-
-|das Konzept|des Konzepts&emsp;die Konzepte|концепция
-
-|die Benutzung|der Benutzung&emsp;die Benutzungen|использование
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+die Herausforderung, der Herausforderung, die Herausforderungen
+die Schwäche, der Schwäche, die Schwächen
+der Standard, des Standards, die Standards
+die Tabelle, der Tabelle, die Tabellen
+der Vorteil, des Vorteils, die Vorteile
+die Leistung, der Leistung, die Leistungen
+die Variante, der Variante, die Varianten
+die Verordnung, der Verordnung, die Verordnungen
+das Konzept, des Konzepts, die Konzepte
+die Benutzung, der Benutzung, die Benutzungen
+</prosody>
+</voice>
+</speak>

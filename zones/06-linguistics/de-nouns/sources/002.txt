@@ -1,22 +1,16 @@
-# A1 - 002 - die Substantive
-
-
-|die Nähe|der Nähe&emsp;die Nähen|близость
-
-|das Café|des Cafés&emsp;die Cafés|кафе
-
-|der Fisch|des Fisches&emsp;die Fische|рыба
-
-|der Kühlschrank|des Kühlschrankes&emsp;die Kühlschränke|холодильник
-
-|der Rat|des Rates&emsp;die Räte|совет
-
-|das Eis|des Eises&emsp;die Eis|мороженое
-
-|die Treppe|der Treppe&emsp;die Treppen|лестница
-
-|die Bank|der Bank&emsp;die Banken|банк
-
-|das Bild|des Bildes&emsp;die Bilder|картина
-
-|der Schnee|des Schnees&emsp;die Schnee|снег
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+die Nähe, der Nähe, die Nähen
+das Café, des Cafés, die Cafés
+der Fisch, des Fisches, die Fische
+der Kühlschrank, des Kühlschrankes, die Kühlschränke
+der Rat, des Rates, die Räte
+das Eis, des Eises, die Eis
+die Treppe, der Treppe, die Treppen
+die Bank, der Bank, die Banken
+das Bild, des Bildes, die Bilder
+der Schnee, des Schnees, die Schnee
+</prosody>
+</voice>
+</speak>

@@ -1,22 +1,16 @@
-# C2 - 120 - die Substantive
-
-
-|die Ausschweifung|der Ausschweifung&emsp;die Ausschweifungen|эксцесс
-
-|die Geheimhaltung|der Geheimhaltung&emsp;die Geheimhaltungen|конфиденциальность
-
-|die Akklimatisierung|der Akklimatisierung&emsp;die Akklimatisierungen|акклиматизация
-
-|die Desillusionierung|der Desillusionierung&emsp;die Desillusionierungen|разочарование
-
-|die Exkursion|der Exkursion&emsp;die Exkursionen|экскурсия
-
-|die Entgegenkommen|des Entgegenkommens&emsp;die Entgegenkommen|уступка
-
-|die Abrechnung|der Abrechnung&emsp;die Abrechnungen|расчет
-
-|die Individuation|der Individuation&emsp;die Individuationen|индивидуализация
-
-|die Hypothese|der Hypothese&emsp;die Hypothesen|гипотеза
-
-|die Übereinstimmung|der Übereinstimmung&emsp;die Übereinstimmungen|соответствие
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+die Ausschweifung, der Ausschweifung, die Ausschweifungen
+die Geheimhaltung, der Geheimhaltung, die Geheimhaltungen
+die Akklimatisierung, der Akklimatisierung, die Akklimatisierungen
+die Desillusionierung, der Desillusionierung, die Desillusionierungen
+die Exkursion, der Exkursion, die Exkursionen
+die Entgegenkommen, des Entgegenkommens, die Entgegenkommen
+die Abrechnung, der Abrechnung, die Abrechnungen
+die Individuation, der Individuation, die Individuationen
+die Hypothese, der Hypothese, die Hypothesen
+die Übereinstimmung, der Übereinstimmung, die Übereinstimmungen
+</prosody>
+</voice>
+</speak>

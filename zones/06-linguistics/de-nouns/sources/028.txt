@@ -1,22 +1,16 @@
-# A1 - 028 - die Substantive
-
-
-|der Cent|des Cents&emsp;die Cents|цент
-
-|die Bibliothek|der Bibliothek&emsp;die Bibliotheken|библиотека
-
-|der Koffer|des Koffers&emsp;die Koffer|чемодан
-
-|der Ehemann|des Ehemanns&emsp;die Ehemänner|муж
-
-|die Bedeutung|der Bedeutung&emsp;die Bedeutungen|значение
-
-|das Genre|des Genres&emsp;die Genres|жанр
-
-|das Herz|des Herzens&emsp;die Herzen|сердце
-
-|die Glühbirne|der Glühbirne&emsp;die Glühbirnen|лампочка
-
-|die Kirsche|der Kirsche&emsp;die Kirschen|вишня
-
-|das Hemd|des Hemdes&emsp;die Hemden|рубашка
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+der Cent, des Cents, die Cents
+die Bibliothek, der Bibliothek, die Bibliotheken
+der Koffer, des Koffers, die Koffer
+der Ehemann, des Ehemanns, die Ehemänner
+die Bedeutung, der Bedeutung, die Bedeutungen
+das Genre, des Genres, die Genres
+das Herz, des Herzens, die Herzen
+die Glühbirne, der Glühbirne, die Glühbirnen
+die Kirsche, der Kirsche, die Kirschen
+das Hemd, des Hemdes, die Hemden
+</prosody>
+</voice>
+</speak>

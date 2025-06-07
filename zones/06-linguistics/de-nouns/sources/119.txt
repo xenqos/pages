@@ -1,22 +1,16 @@
-# C2 - 119 - die Substantive
-
-
-|die Kontinuität|der Kontinuität&emsp;die Kontinuitäten|непрерывность
-
-|die Ehrfurcht|der Ehrfurcht&emsp;die Ehrfurchten|почтение
-
-|die Berichterstattung|der Berichterstattung&emsp;die Berichterstattungen|освещение
-
-|die Hervorhebung|der Hervorhebung&emsp;die Hervorhebungen|подчеркивание
-
-|die Ausarbeitung|der Ausarbeitung&emsp;die Ausarbeitungen|разработка
-
-|die Absperrung|der Absperrung&emsp;die Absperrungen|ограждение
-
-|die Eigenständigkeit|der Eigenständigkeit&emsp;die Eigenständigkeiten|самостоятельность
-
-|die Zuhilfenahme|der Zuhilfenahme&emsp;die Zuhilfenahmen|использование
-
-|die Bestimmung|der Bestimmung&emsp;die Bestimmungen|определение
-
-|die Erwägung|der Erwägung&emsp;die Erwägungen|рассмотрение
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+die Kontinuität, der Kontinuität, die Kontinuitäten
+die Ehrfurcht, der Ehrfurcht, die Ehrfurchten
+die Berichterstattung, der Berichterstattung, die Berichterstattungen
+die Hervorhebung, der Hervorhebung, die Hervorhebungen
+die Ausarbeitung, der Ausarbeitung, die Ausarbeitungen
+die Absperrung, der Absperrung, die Absperrungen
+die Eigenständigkeit, der Eigenständigkeit, die Eigenständigkeiten
+die Zuhilfenahme, der Zuhilfenahme, die Zuhilfenahmen
+die Bestimmung, der Bestimmung, die Bestimmungen
+die Erwägung, der Erwägung, die Erwägungen
+</prosody>
+</voice>
+</speak>

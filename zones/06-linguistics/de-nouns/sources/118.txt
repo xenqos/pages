@@ -1,22 +1,16 @@
-# C2 - 118 - die Substantive
-
-
-|die Ausschreibung|der Ausschreibung&emsp;die Ausschreibungen|тендер
-
-|die Klassifikation|der Klassifikation&emsp;die Klassifikationen|классификация
-
-|die Aussagekraft|der Aussagekraft&emsp;die Aussagekräfte|убедительность
-
-|die Abwicklung|der Abwicklung&emsp;die Abwicklungen|выполнение
-
-|die Aufrüstung|der Aufrüstung&emsp;die Aufrüstungen|вооружение
-
-|die Fremdheit|der Fremdheit&emsp;die Fremdheiten|чуждость
-
-|die Deklaration|der Deklaration&emsp;die Deklarationen|декларация
-
-|die Unabhängigkeit|der Unabhängigkeit&emsp;die Unabhängigkeiten|независимость
-
-|die Furchtlosigkeit|der Furchtlosigkeit&emsp;die Furchtlosigkeiten|бесстрашие
-
-|die Anreicherung|der Anreicherung&emsp;die Anreicherungen|обогащение
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+die Ausschreibung, der Ausschreibung, die Ausschreibungen
+die Klassifikation, der Klassifikation, die Klassifikationen
+die Aussagekraft, der Aussagekraft, die Aussagekräfte
+die Abwicklung, der Abwicklung, die Abwicklungen
+die Aufrüstung, der Aufrüstung, die Aufrüstungen
+die Fremdheit, der Fremdheit, die Fremdheiten
+die Deklaration, der Deklaration, die Deklarationen
+die Unabhängigkeit, der Unabhängigkeit, die Unabhängigkeiten
+die Furchtlosigkeit, der Furchtlosigkeit, die Furchtlosigkeiten
+die Anreicherung, der Anreicherung, die Anreicherungen
+</prosody>
+</voice>
+</speak>

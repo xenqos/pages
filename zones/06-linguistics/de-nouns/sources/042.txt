@@ -1,22 +1,16 @@
-# A2 - 042 - die Substantive
-
-
-|die Gelegenheit|der Gelegenheit&emsp;die Gelegenheiten|возможность
-
-|das Gerät|des Geräts&emsp;die Geräte|прибор
-
-|das Gericht|des Gerichts&emsp;die Gerichte|блюдо
-
-|die Gesellschaft|der Gesellschaft&emsp;die Gesellschaften|общество
-
-|die Gewinner|der Gewinner&emsp;die Gewinner|победитель
-
-|das Gleis|des Gleises&emsp;die Gleise|путь
-
-|die Größe|der Größe&emsp;die Größen|размер
-
-|der Gruß|des Grußes&emsp;die Grüße|приветствие
-
-|der Gürtel|des Gürtels&emsp;die Gürtel|пояс
-
-|die Hähnchen|der Hähnchen&emsp;die Hähnchen|цыпленок
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+die Gelegenheit, der Gelegenheit, die Gelegenheiten
+das Gerät, des Geräts, die Geräte
+das Gericht, des Gerichts, die Gerichte
+die Gesellschaft, der Gesellschaft, die Gesellschaften
+die Gewinner, der Gewinner, die Gewinner
+das Gleis, des Gleises, die Gleise
+die Größe, der Größe, die Größen
+der Gruß, des Grußes, die Grüße
+der Gürtel, des Gürtels, die Gürtel
+die Hähnchen, der Hähnchen, die Hähnchen
+</prosody>
+</voice>
+</speak>

@@ -1,22 +1,16 @@
-# C2 - 128 - die Substantive
-
-
-|die Kapitulation|der Kapitulation&emsp;die Kapitulationen|капитуляция
-
-|die Eigenverantwortung|der Eigenverantwortung&emsp;die Eigenverantwortungen|личная ответственность
-
-|die Approbation|der Approbation&emsp;die Approbationen|утверждение
-
-|die Infragestellung|der Infragestellung&emsp;die Infragestellungen|постановка под сомнение
-
-|die Erhabenheit|der Erhabenheit&emsp;die Erhabenheiten|величие
-
-|die Geduld|der Geduld&emsp;die Gedulden|терпение
-
-|die Apologetik|der Apologetik&emsp;die Apologetiken|апологетика
-
-|die Beharrlichkeit|der Beharrlichkeit&emsp;die Beharrlichkeiten|упорство
-
-|die Echtheit|der Echtheit&emsp;die Echtheiten|подлинность
-
-|die Belehrung|der Belehrung&emsp;die Belehrungen|наставление
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+die Kapitulation, der Kapitulation, die Kapitulationen
+die Eigenverantwortung, der Eigenverantwortung, die Eigenverantwortungen
+die Approbation, der Approbation, die Approbationen
+die Infragestellung, der Infragestellung, die Infragestellungen
+die Erhabenheit, der Erhabenheit, die Erhabenheiten
+die Geduld, der Geduld, die Gedulden
+die Apologetik, der Apologetik, die Apologetiken
+die Beharrlichkeit, der Beharrlichkeit, die Beharrlichkeiten
+die Echtheit, der Echtheit, die Echtheiten
+die Belehrung, der Belehrung, die Belehrungen
+</prosody>
+</voice>
+</speak>

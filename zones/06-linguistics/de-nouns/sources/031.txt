@@ -1,22 +1,16 @@
-# A1 - 031 - die Substantive
-
-
-|die Geschwindigkeit|der Geschwindigkeit&emsp;die Geschwindigkeiten|скорость
-
-|die Insel|der Insel&emsp;die Inseln|остров
-
-|das Dach|des Daches&emsp;die Dächer|крыша
-
-|die Feier|der Feier&emsp;die Feiern|праздник
-
-|die Chefin|der Chefin&emsp;die Chefinnen|начальница
-
-|die Zeitung|der Zeitung&emsp;die Zeitungen|газета
-
-|der Stuhl|des Stuhles&emsp;die Stühle|стул
-
-|das Pferd|des Pferdes&emsp;die Pferde|лошадь
-
-|der Schlüssel|des Schlüssels&emsp;die Schlüssel|ключ
-
-|das Experiment|des Experiments&emsp;die Experimente|эксперимент
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+die Geschwindigkeit, der Geschwindigkeit, die Geschwindigkeiten
+die Insel, der Insel, die Inseln
+das Dach, des Daches, die Dächer
+die Feier, der Feier, die Feiern
+die Chefin, der Chefin, die Chefinnen
+die Zeitung, der Zeitung, die Zeitungen
+der Stuhl, des Stuhles, die Stühle
+das Pferd, des Pferdes, die Pferde
+der Schlüssel, des Schlüssels, die Schlüssel
+das Experiment, des Experiments, die Experimente
+</prosody>
+</voice>
+</speak>

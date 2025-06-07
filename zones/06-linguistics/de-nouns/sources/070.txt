@@ -1,22 +1,16 @@
-# B1 - 070 - die Substantive
-
-
-|die Disko|der Disko&emsp;die Diskos|дискотека
-
-|die Komödie|der Komödie&emsp;die Komödien|комедия
-
-|das Gebirge|des Gebirges&emsp;die Gebirge|горы
-
-|die Qualität|der Qualität&emsp;die Qualitäten|качество
-
-|die Chance|der Chance&emsp;die Chancen|шанс
-
-|die Mode|der Mode&emsp;die Moden|мода
-
-|die Einleitung|der Einleitung&emsp;die Einleitungen|введение
-
-|die Nuss|der Nuss&emsp;die Nüsse|орех
-
-|die Konkurrenz|der Konkurrenz&emsp;die Konkurrenzen|конкуренция
-
-|die Kopie|der Kopie&emsp;die Kopien|копия
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+die Disko, der Disko, die Diskos
+die Komödie, der Komödie, die Komödien
+das Gebirge, des Gebirges, die Gebirge
+die Qualität, der Qualität, die Qualitäten
+die Chance, der Chance, die Chancen
+die Mode, der Mode, die Moden
+die Einleitung, der Einleitung, die Einleitungen
+die Nuss, der Nuss, die Nüsse
+die Konkurrenz, der Konkurrenz, die Konkurrenzen
+die Kopie, der Kopie, die Kopien
+</prosody>
+</voice>
+</speak>

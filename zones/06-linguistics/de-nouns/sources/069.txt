@@ -1,22 +1,16 @@
-# B1 - 069 - die Substantive
-
-
-|die Nase|der Nase&emsp;die Nasen|нос
-
-|die Fantasie|der Fantasie&emsp;die Fantasien|фантазия
-
-|die Notiz|der Notiz&emsp;die Notizen|заметка
-
-|die Bremse|der Bremse&emsp;die Bremsen|тормоз
-
-|der Nachbar|des Nachbarn&emsp;die Nachbarn|сосед
-
-|die Erwiderung|der Erwiderung&emsp;die Erwiderungen|ответ
-
-|die Absicht|der Absicht&emsp;die Absichten|намерение
-
-|der Bach|des Bachs&emsp;die Bäche|ручей
-
-|die Herkunft|der Herkunft&emsp;die Herkünfte|происхождение
-
-|die Nachbarschaft|der Nachbarschaft&emsp;die Nachbarschaften|соседство
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+die Nase, der Nase, die Nasen
+die Fantasie, der Fantasie, die Fantasien
+die Notiz, der Notiz, die Notizen
+die Bremse, der Bremse, die Bremsen
+der Nachbar, des Nachbarn, die Nachbarn
+die Erwiderung, der Erwiderung, die Erwiderungen
+die Absicht, der Absicht, die Absichten
+der Bach, des Bachs, die Bäche
+die Herkunft, der Herkunft, die Herkünfte
+die Nachbarschaft, der Nachbarschaft, die Nachbarschaften
+</prosody>
+</voice>
+</speak>

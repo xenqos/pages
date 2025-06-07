@@ -1,22 +1,16 @@
-# B1 - 071 - die Substantive
-
-
-|der Raum|des Raumes&emsp;die Räume|комната
-
-|das Gebäude|des Gebäudes&emsp;die Gebäude|здание
-
-|der Anteil|des Anteils&emsp;die Anteile|доля
-
-|das Recht|des Rechtes&emsp;die Rechte|право
-
-|der Dozent|des Dozenten&emsp;die Dozenten|преподаватель
-
-|der Antrag|des Antrags&emsp;die Anträge|заявление
-
-|das Eigentum|des Eigentums&emsp;die Eigentümer|собственность
-
-|der Rabatt|des Rabattes&emsp;die Rabatte|скидка
-
-|die Aprikose|der Aprikose&emsp;die Aprikosen|абрикос
-
-|die Backe|der Backe&emsp;die Backen|щека
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+der Raum, des Raumes, die Räume
+das Gebäude, des Gebäudes, die Gebäude
+der Anteil, des Anteils, die Anteile
+das Recht, des Rechtes, die Rechte
+der Dozent, des Dozenten, die Dozenten
+der Antrag, des Antrags, die Anträge
+das Eigentum, des Eigentums, die Eigentümer
+der Rabatt, des Rabattes, die Rabatte
+die Aprikose, der Aprikose, die Aprikosen
+die Backe, der Backe, die Backen
+</prosody>
+</voice>
+</speak>

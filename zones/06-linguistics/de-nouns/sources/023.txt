@@ -1,22 +1,16 @@
-# A1 - 023 - die Substantive
-
-
-|das Glas|des Glases&emsp;die Gläser|стакан
-
-|die Bäckerei|der Bäckerei&emsp;die Bäckereien|пекарня
-
-|der Kaffee|des Kaffees&emsp;die Kaffees|кофе
-
-|die Tür|der Tür&emsp;die Türen|дверь
-
-|die Möglichkeit|der Möglichkeit&emsp;die Möglichkeiten|возможность
-
-|die Familie|der Familie&emsp;die Familien|семья
-
-|der Himmel|des Himmels&emsp;die Himmel|небо
-
-|das Magazin|des Magazins&emsp;die Magazine|журнал
-
-|die Reise|der Reise&emsp;die Reisen|путешествие
-
-|die Luft|der Luft&emsp;die Lüfte|воздух
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+das Glas, des Glases, die Gläser
+die Bäckerei, der Bäckerei, die Bäckereien
+der Kaffee, des Kaffees, die Kaffees
+die Tür, der Tür, die Türen
+die Möglichkeit, der Möglichkeit, die Möglichkeiten
+die Familie, der Familie, die Familien
+der Himmel, des Himmels, die Himmel
+das Magazin, des Magazins, die Magazine
+die Reise, der Reise, die Reisen
+die Luft, der Luft, die Lüfte
+</prosody>
+</voice>
+</speak>

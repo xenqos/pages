@@ -1,22 +1,16 @@
-# C2 - 126 - die Substantive
-
-
-|die Abneigung|der Abneigung&emsp;die Abneigungen|отвращение
-
-|die Linderung|der Linderung&emsp;die Linderungen|облегчение
-
-|die Strukturanalyse|der Strukturanalyse&emsp;die Strukturanalysen|структурный анализ
-
-|die Büchersammlung|der Büchersammlung&emsp;die Büchersammlungen|книжное собрание
-
-|die Ausklammerung|der Ausklammerung&emsp;die Ausklammerungen|исключение
-
-|die Anordnung|der Anordnung&emsp;die Anordnungen|распоряжение
-
-|die Anwendungsmöglichkeit|der Anwendungsmöglichkeit&emsp;die Anwendungsmöglichkeiten|возможность применения
-
-|die Bequemlichkeit|der Bequemlichkeit&emsp;die Bequemlichkeiten|удобство
-
-|die Detonation|der Detonation&emsp;die Detonationen|взрыв
-
-|die Aneignung|der Aneignung&emsp;die Aneignungen|освоение
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+die Abneigung, der Abneigung, die Abneigungen
+die Linderung, der Linderung, die Linderungen
+die Strukturanalyse, der Strukturanalyse, die Strukturanalysen
+die Büchersammlung, der Büchersammlung, die Büchersammlungen
+die Ausklammerung, der Ausklammerung, die Ausklammerungen
+die Anordnung, der Anordnung, die Anordnungen
+die Anwendungsmöglichkeit, der Anwendungsmöglichkeit, die Anwendungsmöglichkeiten
+die Bequemlichkeit, der Bequemlichkeit, die Bequemlichkeiten
+die Detonation, der Detonation, die Detonationen
+die Aneignung, der Aneignung, die Aneignungen
+</prosody>
+</voice>
+</speak>

@@ -1,22 +1,16 @@
-# C1 - 107 - die Substantive
-
-
-|die Berücksichtigung|der Berücksichtigung&emsp;die Berücksichtigungen|принятие во внимание
-
-|die Machbarkeit|der Machbarkeit&emsp;die Machbarkeiten|осуществимость
-
-|die Abkehr|der Abkehr&emsp;die Abkehren|отход
-
-|die Bekanntmachung|der Bekanntmachung&emsp;die Bekanntmachungen|объявление
-
-|die Differenz|der Differenz&emsp;die Differenzen|различие
-
-|die Auswertung|der Auswertung&emsp;die Auswertungen|оценка
-
-|die Anregung|der Anregung&emsp;die Anregungen|стимул
-
-|die Zuversicht|der Zuversicht&emsp;die Zuversichten|уверенность
-
-|der Rückgang|des Rückgangs&emsp;die Rückgänge|снижение
-
-|das Urteil|des Urteils&emsp;die Urteile|приговор
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+die Berücksichtigung, der Berücksichtigung, die Berücksichtigungen
+die Machbarkeit, der Machbarkeit, die Machbarkeiten
+die Abkehr, der Abkehr, die Abkehren
+die Bekanntmachung, der Bekanntmachung, die Bekanntmachungen
+die Differenz, der Differenz, die Differenzen
+die Auswertung, der Auswertung, die Auswertungen
+die Anregung, der Anregung, die Anregungen
+die Zuversicht, der Zuversicht, die Zuversichten
+der Rückgang, des Rückgangs, die Rückgänge
+das Urteil, des Urteils, die Urteile
+</prosody>
+</voice>
+</speak>

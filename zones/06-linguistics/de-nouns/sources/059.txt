@@ -1,22 +1,16 @@
-# A2 - 059 - die Substantive
-
-
-|der Gratulation|des Gratulation&emsp;die Gratulationen|поздравление
-
-|das Gras|des Grases&emsp;die Gräser|трава
-
-|die Grenze|der Grenze&emsp;die Grenzen|граница
-
-|die Grippe|der Grippe&emsp;die Grippen|грипп
-
-|das Hähnchen|des Hähnchens&emsp;die Hähnchen|цыпленок
-
-|der Händler|des Händlers&emsp;die Händler|торговец
-
-|der Hauptbahnhof|des Hauptbahnhofs&emsp;die Hauptbahnhöfe|главный вокзал
-
-|die Hauptstadt|der Hauptstadt&emsp;die Hauptstädte|столица
-
-|das Haustier|des Haustieres&emsp;die Haustiere|домашнее животное
-
-|das Heft|des Heftes&emsp;die Hefte|тетрадь
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+der Gratulation, des Gratulation, die Gratulationen
+das Gras, des Grases, die Gräser
+die Grenze, der Grenze, die Grenzen
+die Grippe, der Grippe, die Grippen
+das Hähnchen, des Hähnchens, die Hähnchen
+der Händler, des Händlers, die Händler
+der Hauptbahnhof, des Hauptbahnhofs, die Hauptbahnhöfe
+die Hauptstadt, der Hauptstadt, die Hauptstädte
+das Haustier, des Haustieres, die Haustiere
+das Heft, des Heftes, die Hefte
+</prosody>
+</voice>
+</speak>

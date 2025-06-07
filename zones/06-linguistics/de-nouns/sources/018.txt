@@ -1,22 +1,16 @@
-# A1 - 018 - die Substantive
-
-
-|die Tastatur|der Tastatur&emsp;die Tastaturen|клавиатура
-
-|das Ende|des Endes&emsp;die Enden|конец
-
-|die Wohnung|der Wohnung&emsp;die Wohnungen|квартира
-
-|der Drucker|des Druckers&emsp;die Drucker|принтер
-
-|die Schule|der Schule&emsp;die Schulen|школа
-
-|das Boot|des Bootes&emsp;die Boote|лодка
-
-|der Tee|des Tees&emsp;die Tees|чай
-
-|die Linie|der Linie&emsp;die Linien|линия
-
-|der Park|des Parks&emsp;die Parks|парк
-
-|der Laptop|des Laptops&emsp;die Laptops|ноутбук
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+die Tastatur, der Tastatur, die Tastaturen
+das Ende, des Endes, die Enden
+die Wohnung, der Wohnung, die Wohnungen
+der Drucker, des Druckers, die Drucker
+die Schule, der Schule, die Schulen
+das Boot, des Bootes, die Boote
+der Tee, des Tees, die Tees
+die Linie, der Linie, die Linien
+der Park, des Parks, die Parks
+der Laptop, des Laptops, die Laptops
+</prosody>
+</voice>
+</speak>

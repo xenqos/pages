@@ -1,22 +1,16 @@
-# A2 - 052 - die Substantive
-
-
-|der Bereich|des Bereichs&emsp;die Bereiche|область
-
-|der Bericht|des Berichts&emsp;die Berichte|отчет
-
-|die Beruhigung|der Beruhigung&emsp;die Beruhigungen|успокоение
-
-|die Berührung|der Berührung&emsp;die Berührungen|прикосновение
-
-|der Besen|des Besens&emsp;die Besen|веник
-
-|der Besitzer|des Besitzers&emsp;die Besitzer|владелец
-
-|die Bestätigung|der Bestätigung&emsp;die Bestätigungen|подтверждение
-
-|der Besuch|des Besuchs&emsp;die Besuche|посещение
-
-|das Bettlaken|des Bettlakens&emsp;die Bettlaken|простыня
-
-|das Bienenhaus|des Bienenhauses&emsp;die Bienenhäuser|улей
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+der Bereich, des Bereichs, die Bereiche
+der Bericht, des Berichts, die Berichte
+die Beruhigung, der Beruhigung, die Beruhigungen
+die Berührung, der Berührung, die Berührungen
+der Besen, des Besens, die Besen
+der Besitzer, des Besitzers, die Besitzer
+die Bestätigung, der Bestätigung, die Bestätigungen
+der Besuch, des Besuchs, die Besuche
+das Bettlaken, des Bettlakens, die Bettlaken
+das Bienenhaus, des Bienenhauses, die Bienenhäuser
+</prosody>
+</voice>
+</speak>

@@ -1,22 +1,16 @@
-# C2 - 130 - die Substantive
-
-
-|die Gleichgültigkeit|der Gleichgültigkeit&emsp;die Gleichgültigkeiten|равнодушие
-
-|die Mäßigung|der Mäßigung&emsp;die Mäßigungen|умеренность
-
-|die Einschreibung|der Einschreibung&emsp;die Einschreibungen|зачисление
-
-|die Ermächtigung|der Ermächtigung&emsp;die Ermächtigungen|уполномочие
-
-|die Komplexität|der Komplexität&emsp;die Komplexitäten|сложность
-
-|die Gebrauchsanweisung|der Gebrauchsanweisung&emsp;die Gebrauchsanweisungen|инструкция по применению
-
-|die Akkumulation|der Akkumulation&emsp;die Akkumulationen|аккумуляция
-
-|die Dystopie|der Dystopie&emsp;die Dystopien|антиутопия
-
-|die Hoffnungslosigkeit|der Hoffnungslosigkeit&emsp;die Hoffnungslosigkeiten|безнадежность
-
-|die Bilanzierung|der Bilanzierung&emsp;die Bilanzierungen|учет
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+die Gleichgültigkeit, der Gleichgültigkeit, die Gleichgültigkeiten
+die Mäßigung, der Mäßigung, die Mäßigungen
+die Einschreibung, der Einschreibung, die Einschreibungen
+die Ermächtigung, der Ermächtigung, die Ermächtigungen
+die Komplexität, der Komplexität, die Komplexitäten
+die Gebrauchsanweisung, der Gebrauchsanweisung, die Gebrauchsanweisungen
+die Akkumulation, der Akkumulation, die Akkumulationen
+die Dystopie, der Dystopie, die Dystopien
+die Hoffnungslosigkeit, der Hoffnungslosigkeit, die Hoffnungslosigkeiten
+die Bilanzierung, der Bilanzierung, die Bilanzierungen
+</prosody>
+</voice>
+</speak>

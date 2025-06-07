@@ -1,22 +1,16 @@
-# A1 - 026 - die Substantive
-
-
-|der Fahrer|des Fahrers&emsp;die Fahrer|водитель
-
-|der Silvester|des Silvesters&emsp;die Silvester|Новый год
-
-|der Flur|des Flures&emsp;die Flure|коридор
-
-|die Küche|der Küche&emsp;die Küchen|кухня
-
-|die Briefmarke|der Briefmarke&emsp;die Briefmarken|марка
-
-|das Bad|des Bades&emsp;die Bäder|ванная
-
-|die Dusche|der Dusche&emsp;die Duschen|душ
-
-|der Berg|des Berges&emsp;die Berge|гора
-
-|die Prüfung|der Prüfung&emsp;die Prüfungen|экзамен
-
-|die Kommode|der Kommode&emsp;die Kommoden|комод
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+der Fahrer, des Fahrers, die Fahrer
+der Silvester, des Silvesters, die Silvester
+der Flur, des Flures, die Flure
+die Küche, der Küche, die Küchen
+die Briefmarke, der Briefmarke, die Briefmarken
+das Bad, des Bades, die Bäder
+die Dusche, der Dusche, die Duschen
+der Berg, des Berges, die Berge
+die Prüfung, der Prüfung, die Prüfungen
+die Kommode, der Kommode, die Kommoden
+</prosody>
+</voice>
+</speak>

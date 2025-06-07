@@ -1,22 +1,16 @@
-# B2 - 098 - die Substantive
-
-
-|die Voraussetzung|der Voraussetzung&emsp;die Voraussetzungen|предпосылка
-
-|die Anstrengung|der Anstrengung&emsp;die Anstrengungen|усилие
-
-|die Freiheit|der Freiheit&emsp;die Freiheiten|свобода
-
-|die Priorität|der Priorität&emsp;die Prioritäten|приоритет
-
-|das Angebot|des Angebots&emsp;die Angebote|предложение
-
-|das Verständnis|des Verständnisses&emsp;die Verständnisse|понимание
-
-|die Klassifizierung|der Klassifizierung&emsp;die Klassifizierungen|классификация
-
-|die Fortbildung|der Fortbildung&emsp;die Fortbildungen|повышение квалификации
-
-|die Nachfolge|der Nachfolge&emsp;die Nachfolgen|наследование
-
-|die Prävention|der Prävention&emsp;die Präventionen|предотвращение
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+die Voraussetzung, der Voraussetzung, die Voraussetzungen
+die Anstrengung, der Anstrengung, die Anstrengungen
+die Freiheit, der Freiheit, die Freiheiten
+die Priorität, der Priorität, die Prioritäten
+das Angebot, des Angebots, die Angebote
+das Verständnis, des Verständnisses, die Verständnisse
+die Klassifizierung, der Klassifizierung, die Klassifizierungen
+die Fortbildung, der Fortbildung, die Fortbildungen
+die Nachfolge, der Nachfolge, die Nachfolgen
+die Prävention, der Prävention, die Präventionen
+</prosody>
+</voice>
+</speak>

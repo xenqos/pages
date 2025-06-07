@@ -1,22 +1,16 @@
-# A1 - 019 - die Substantive
-
-
-|der Ingenieur|des Ingenieurs&emsp;die Ingenieure|инженер
-
-|die Schere|der Schere&emsp;die Scheren|ножницы
-
-|das Wochenende|des Wochenendes&emsp;die Wochenenden|выходные
-
-|das Fach|des Faches&emsp;die Fächer|предмет
-
-|der Cousin|des Cousins&emsp;die Cousins|двоюродный брат
-
-|das Dorf|des Dorfes&emsp;die Dörfer|деревня
-
-|der Dollar|des Dollars&emsp;die Dollars|доллар
-
-|das Zimmer|des Zimmers&emsp;die Zimmer|комната
-
-|das Weihnachten|des Weihnachts&emsp;die Weihnachten|Рождество
-
-|der Freund|des Freundes&emsp;die Freunde|друг
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+der Ingenieur, des Ingenieurs, die Ingenieure
+die Schere, der Schere, die Scheren
+das Wochenende, des Wochenendes, die Wochenenden
+das Fach, des Faches, die Fächer
+der Cousin, des Cousins, die Cousins
+das Dorf, des Dorfes, die Dörfer
+der Dollar, des Dollars, die Dollars
+das Zimmer, des Zimmers, die Zimmer
+das Weihnachten, des Weihnachts, die Weihnachten
+der Freund, des Freundes, die Freunde
+</prosody>
+</voice>
+</speak>

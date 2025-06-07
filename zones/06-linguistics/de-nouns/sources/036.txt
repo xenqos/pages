@@ -1,22 +1,16 @@
-# A2 - 036 - die Substantive
-
-
-|die Agentur|der Agentur&emsp;die Agenturen|агентство
-
-|die Ahnung|der Ahnung&emsp;die Ahnungen|представление
-
-|die Allergie|der Allergie&emsp;die Allergien|аллергия
-
-|das Altenheim|des Altenheimes&emsp;die Altenheime|дом престарелых
-
-|die Alternative|der Alternative&emsp;die Alternativen|альтернатива
-
-|die Ampel|der Ampel&emsp;die Ampeln|светофор
-
-|der Anfänger|des Anfängers&emsp;die Anfänger|новичок
-
-|die Ankunft|der Ankunft&emsp;die Ankünfte|прибытие
-
-|die Anmeldung|der Anmeldung&emsp;die Anmeldungen|регистрация
-
-|der Anruf|des Anrufs&emsp;die Anrufe|звонок
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+die Agentur, der Agentur, die Agenturen
+die Ahnung, der Ahnung, die Ahnungen
+die Allergie, der Allergie, die Allergien
+das Altenheim, des Altenheimes, die Altenheime
+die Alternative, der Alternative, die Alternativen
+die Ampel, der Ampel, die Ampeln
+der Anfänger, des Anfängers, die Anfänger
+die Ankunft, der Ankunft, die Ankünfte
+die Anmeldung, der Anmeldung, die Anmeldungen
+der Anruf, des Anrufs, die Anrufe
+</prosody>
+</voice>
+</speak>

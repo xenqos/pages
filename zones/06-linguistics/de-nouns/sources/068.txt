@@ -1,22 +1,16 @@
-# B1 - 068 - die Substantive
-
-
-|das Klavier|des Klaviers&emsp;die Klaviere|пианино
-
-|der Arm|des Armes&emsp;die Arme|рука
-
-|die Arbeit|der Arbeit&emsp;die Arbeiten|работа
-
-|die Ausbildung|der Ausbildung&emsp;die Ausbildungen|обучение
-
-|der Absatz|des Absatzes&emsp;die Absätze|абзац
-
-|die Entdeckung|der Entdeckung&emsp;die Entdeckungen|открытие
-
-|die Absage|der Absage&emsp;die Absagen|отказ
-
-|die Garantie|der Garantie&emsp;die Garantien|гарантия
-
-|die Partnerschaft|der Partnerschaft&emsp;die Partnerschaften|партнёрство
-
-|die Ausgabe|der Ausgabe&emsp;die Ausgaben|издание
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+das Klavier, des Klaviers, die Klaviere
+der Arm, des Armes, die Arme
+die Arbeit, der Arbeit, die Arbeiten
+die Ausbildung, der Ausbildung, die Ausbildungen
+der Absatz, des Absatzes, die Absätze
+die Entdeckung, der Entdeckung, die Entdeckungen
+die Absage, der Absage, die Absagen
+die Garantie, der Garantie, die Garantien
+die Partnerschaft, der Partnerschaft, die Partnerschaften
+die Ausgabe, der Ausgabe, die Ausgaben
+</prosody>
+</voice>
+</speak>

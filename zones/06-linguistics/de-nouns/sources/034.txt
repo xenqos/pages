@@ -1,22 +1,16 @@
-# A1 - 034 - die Substantive
-
-
-|die Jacke|der Jacke&emsp;die Jacken|куртка
-
-|der Unterricht|des Unterrichtes&emsp;die Unterrichte|урок
-
-|der Bus|des Busses&emsp;die Busse|автобус
-
-|die Entscheidung|der Entscheidung&emsp;die Entscheidungen|решение
-
-|die Maschine|der Maschine&emsp;die Maschinen|машина
-
-|der Direktor|des Direktors&emsp;die Direktoren|директор
-
-|das Fahrrad|des Fahrrades&emsp;die Fahrräder|велосипед
-
-|der Stein|des Steines&emsp;die Steine|камень
-
-|der Mond|des Mondes&emsp;die Monde|луна
-
-|die Energie|der Energie&emsp;die Energien|энергия
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+die Jacke, der Jacke, die Jacken
+der Unterricht, des Unterrichtes, die Unterrichte
+der Bus, des Busses, die Busse
+die Entscheidung, der Entscheidung, die Entscheidungen
+die Maschine, der Maschine, die Maschinen
+der Direktor, des Direktors, die Direktoren
+das Fahrrad, des Fahrrades, die Fahrräder
+der Stein, des Steines, die Steine
+der Mond, des Mondes, die Monde
+die Energie, der Energie, die Energien
+</prosody>
+</voice>
+</speak>

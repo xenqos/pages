@@ -1,22 +1,16 @@
-# B2 - 099 - die Substantive
-
-
-|der Zugang|des Zugangs&emsp;die Zugänge|доступ
-
-|der Trend|des Trends&emsp;die Trends|тренд
-
-|der Zuschauer|des Zuschauers&emsp;die Zuschauer|зритель
-
-|die Äußerung|der Äußerung&emsp;die Äußerungen|выражение
-
-|der Geschmack|des Geschmacks&emsp;die Geschmäcke|вкус
-
-|die Struktur|der Struktur&emsp;die Strukturen|структура
-
-|der Kontakt|des Kontakts&emsp;die Kontakte|контакт
-
-|die Optimierung|der Optimierung&emsp;die Optimierungen|оптимизация
-
-|die Toleranz|der Toleranz&emsp;die Toleranzen|терпимость
-
-|die Prognose|der Prognose&emsp;die Prognosen|прогноз
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+der Zugang, des Zugangs, die Zugänge
+der Trend, des Trends, die Trends
+der Zuschauer, des Zuschauers, die Zuschauer
+die Äußerung, der Äußerung, die Äußerungen
+der Geschmack, des Geschmacks, die Geschmäcke
+die Struktur, der Struktur, die Strukturen
+der Kontakt, des Kontakts, die Kontakte
+die Optimierung, der Optimierung, die Optimierungen
+die Toleranz, der Toleranz, die Toleranzen
+die Prognose, der Prognose, die Prognosen
+</prosody>
+</voice>
+</speak>

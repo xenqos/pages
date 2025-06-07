@@ -1,22 +1,16 @@
-# C2 - 124 - die Substantive
-
-
-|die Benachteiligung|der Benachteiligung&emsp;die Benachteiligungen|дискриминация
-
-|die Blamage|der Blamage&emsp;die Blamagen|позор
-
-|die Betätigung|der Betätigung&emsp;die Betätigungen|приведение в действие
-
-|die Erschöpfung|der Erschöpfung&emsp;die Erschöpfungen|истощение
-
-|die Glaubwürdigkeit|der Glaubwürdigkeit&emsp;die Glaubwürdigkeiten|достоверность
-
-|die Antizipation|der Antizipation&emsp;die Antizipationen|предвосхищение
-
-|die Einkehr|der Einkehr&emsp;die Einkehren|размышление
-
-|die Entfremdung|der Entfremdung&emsp;die Entfremdungen|отчуждение
-
-|die Inbetriebnahme|der Inbetriebnahme&emsp;die Inbetriebnahmen|ввод в эксплуатацию
-
-|die Kompensation|der Kompensation&emsp;die Kompensationen|компенсация
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+die Benachteiligung, der Benachteiligung, die Benachteiligungen
+die Blamage, der Blamage, die Blamagen
+die Betätigung, der Betätigung, die Betätigungen
+die Erschöpfung, der Erschöpfung, die Erschöpfungen
+die Glaubwürdigkeit, der Glaubwürdigkeit, die Glaubwürdigkeiten
+die Antizipation, der Antizipation, die Antizipationen
+die Einkehr, der Einkehr, die Einkehren
+die Entfremdung, der Entfremdung, die Entfremdungen
+die Inbetriebnahme, der Inbetriebnahme, die Inbetriebnahmen
+die Kompensation, der Kompensation, die Kompensationen
+</prosody>
+</voice>
+</speak>

@@ -1,22 +1,16 @@
-# A2 - 062 - die Substantive
-
-
-|die Krankenkasse|der Krankenkasse&emsp;die Krankenkassen|медицинская страховая касса
-
-|das Kreuz|des Kreuzes&emsp;die Kreuze|крест
-
-|die Küste|der Küste&emsp;die Küsten|побережье
-
-|der Lebenslauf|des Lebenslaufs&emsp;die Lebensläufe|биография
-
-|die Lederjacke|der Lederjacke&emsp;die Lederjacken|кожаная куртка
-
-|die Lehrerin|der Lehrerin&emsp;die Lehrerinnen|учительница
-
-|die Leiter|der Leiter&emsp;die Leitern|лестница
-
-|das Lexikon|des Lexikons&emsp;die Lexika|энциклопедия
-
-|die Lizenz|der Lizenz&emsp;die Lizenzen|лицензия
-
-|die Lösung|der Lösung&emsp;die Lösungen|решение
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+die Krankenkasse, der Krankenkasse, die Krankenkassen
+das Kreuz, des Kreuzes, die Kreuze
+die Küste, der Küste, die Küsten
+der Lebenslauf, des Lebenslaufs, die Lebensläufe
+die Lederjacke, der Lederjacke, die Lederjacken
+die Lehrerin, der Lehrerin, die Lehrerinnen
+die Leiter, der Leiter, die Leitern
+das Lexikon, des Lexikons, die Lexika
+die Lizenz, der Lizenz, die Lizenzen
+die Lösung, der Lösung, die Lösungen
+</prosody>
+</voice>
+</speak>

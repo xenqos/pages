@@ -1,22 +1,16 @@
-# B1 - 076 - die Substantive
-
-
-|die Kraft|der Kraft&emsp;die Kräfte|сила
-
-|die Einführung|der Einführung&emsp;die Einführungen|введение
-
-|die Hygiene|der Hygiene&emsp;die Hygienen|гигиена
-
-|das Alphabet|des Alphabets&emsp;die Alphabete|алфавит
-
-|die Freude|der Freude&emsp;die Freuden|радость
-
-|die Anstellung|der Anstellung&emsp;die Anstellungen|трудоустройство
-
-|der Diesel|des Diesels&emsp;die Diesels|дизель
-
-|das Mittel|des Mittels&emsp;die Mittel|средство
-
-|die Kommunikation|der Kommunikation&emsp;die Kommunikationen|коммуникация
-
-|die Nation|der Nation&emsp;die Nationen|нация
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+die Kraft, der Kraft, die Kräfte
+die Einführung, der Einführung, die Einführungen
+die Hygiene, der Hygiene, die Hygienen
+das Alphabet, des Alphabets, die Alphabete
+die Freude, der Freude, die Freuden
+die Anstellung, der Anstellung, die Anstellungen
+der Diesel, des Diesels, die Diesels
+das Mittel, des Mittels, die Mittel
+die Kommunikation, der Kommunikation, die Kommunikationen
+die Nation, der Nation, die Nationen
+</prosody>
+</voice>
+</speak>

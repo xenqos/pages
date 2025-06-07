@@ -1,22 +1,16 @@
-# A1 - 022 - die Substantive
-
-
-|das Kissen|des Kissens&emsp;die Kissen|подушка
-
-|das Kind|des Kindes&emsp;die Kinder|ребенок
-
-|der Kopf|des Kopfes&emsp;die Köpfe|голова
-
-|die Haltestelle|der Haltestelle&emsp;die Haltestellen|остановка
-
-|das Ei|des Eies&emsp;die Eier|яйцо
-
-|die Firma|der Firma&emsp;die Firmen|компания
-
-|das Land|des Landes&emsp;die Länder|страна
-
-|der Bruder|des Bruders&emsp;die Brüder|брат
-
-|das Wasser|des Wassers&emsp;die Wasser|вода
-
-|die Zahl|der Zahl&emsp;die Zahlen|число
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+das Kissen, des Kissens, die Kissen
+das Kind, des Kindes, die Kinder
+der Kopf, des Kopfes, die Köpfe
+die Haltestelle, der Haltestelle, die Haltestellen
+das Ei, des Eies, die Eier
+die Firma, der Firma, die Firmen
+das Land, des Landes, die Länder
+der Bruder, des Bruders, die Brüder
+das Wasser, des Wassers, die Wasser
+die Zahl, der Zahl, die Zahlen
+</prosody>
+</voice>
+</speak>

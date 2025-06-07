@@ -1,22 +1,16 @@
-# C2 - 122 - die Substantive
-
-
-|die Abfassung|der Abfassung&emsp;die Abfassungen|составление
-
-|die Befürwortung|der Befürwortung&emsp;die Befürwortungen|поддержка
-
-|die Allegorie|der Allegorie&emsp;die Allegorien|аллегория
-
-|die Realität|der Realität&emsp;die Realitäten|реальность
-
-|die Einmündung|der Einmündung&emsp;die Einmündungen|впадение
-
-|die Achtsamkeit|der Achtsamkeit&emsp;die Achtsamkeiten|внимательность
-
-|die Abgelegenheit|der Abgelegenheit&emsp;die Abgelegenheit|отдаленность
-
-|die Begebenheit|der Begebenheit&emsp;die Begebenheiten|событие
-
-|die Anstalt|der Anstalt&emsp;die Anstalten|учреждение
-
-|die Gutgläubigkeit|der Gutgläubigkeit&emsp;die Gutgläubigkeiten|доверчивость
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+die Abfassung, der Abfassung, die Abfassungen
+die Befürwortung, der Befürwortung, die Befürwortungen
+die Allegorie, der Allegorie, die Allegorien
+die Realität, der Realität, die Realitäten
+die Einmündung, der Einmündung, die Einmündungen
+die Achtsamkeit, der Achtsamkeit, die Achtsamkeiten
+die Abgelegenheit, der Abgelegenheit, die Abgelegenheit
+die Begebenheit, der Begebenheit, die Begebenheiten
+die Anstalt, der Anstalt, die Anstalten
+die Gutgläubigkeit, der Gutgläubigkeit, die Gutgläubigkeiten
+</prosody>
+</voice>
+</speak>

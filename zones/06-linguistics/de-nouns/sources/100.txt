@@ -1,22 +1,16 @@
-# C1 - 100 - die Substantive
-
-
-|die Erweiterung|der Erweiterung&emsp;die Erweiterungen|расширение
-
-|die Ausstattung|der Ausstattung&emsp;die Ausstattungen|оборудование
-
-|die Feststellung|der Feststellung&emsp;die Feststellungen|констатация
-
-|die Identifikation|der Identifikation&emsp;die Identifikationen|идентификация
-
-|die Logik|der Logik&emsp;die Logiken|логика
-
-|die Einschätzung|der Einschätzung&emsp;die Einschätzungen|оценка
-
-|die Entfaltung|der Entfaltung&emsp;die Entfaltungen|развитие
-
-|die Ausführung|der Ausführung&emsp;die Ausführungen|выполнение
-
-|die Annahme|der Annahme&emsp;die Annahmen|принятие
-
-|die Strukturierung|der Strukturierung&emsp;die Strukturierungen|структурирование
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+die Erweiterung, der Erweiterung, die Erweiterungen
+die Ausstattung, der Ausstattung, die Ausstattungen
+die Feststellung, der Feststellung, die Feststellungen
+die Identifikation, der Identifikation, die Identifikationen
+die Logik, der Logik, die Logiken
+die Einschätzung, der Einschätzung, die Einschätzungen
+die Entfaltung, der Entfaltung, die Entfaltungen
+die Ausführung, der Ausführung, die Ausführungen
+die Annahme, der Annahme, die Annahmen
+die Strukturierung, der Strukturierung, die Strukturierungen
+</prosody>
+</voice>
+</speak>

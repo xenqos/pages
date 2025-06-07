@@ -1,22 +1,16 @@
-# A1 - 016 - die Substantive
-
-
-|das Schwein|des Schweines&emsp;die Schweine|свинья
-
-|das Regal|des Regals&emsp;die Regale|стеллаж
-
-|die Fliege|der Fliege&emsp;die Fliegen|муха
-
-|der Notizblock|des Notizblockes&emsp;die Notizblöcke|блокнот
-
-|die Frucht|der Frucht&emsp;die Früchte|фрукт
-
-|die Klasse|der Klasse&emsp;die Klassen|класс
-
-|der Vater|des Vaters&emsp;die Väter|отец
-
-|der Sport|des Sportes&emsp;die Sporte|спорт
-
-|das Jahr|des Jahres&emsp;die Jahre|год
-
-|die Gardine|der Gardine&emsp;die Gardinen|занавеска
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+das Schwein, des Schweines, die Schweine
+das Regal, des Regals, die Regale
+die Fliege, der Fliege, die Fliegen
+der Notizblock, des Notizblockes, die Notizblöcke
+die Frucht, der Frucht, die Früchte
+die Klasse, der Klasse, die Klassen
+der Vater, des Vaters, die Väter
+der Sport, des Sportes, die Sporte
+das Jahr, des Jahres, die Jahre
+die Gardine, der Gardine, die Gardinen
+</prosody>
+</voice>
+</speak>

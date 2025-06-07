@@ -1,22 +1,16 @@
-# A1 - 008 - die Substantive
-
-
-|das Spielzeug|des Spielzeuges&emsp;die Spielzeuge|игрушка
-
-|das Ladegerät|des Ladegerätes&emsp;die Ladegeräte|зарядное устройство
-
-|die Leidenschaft|der Leidenschaft&emsp;die Leidenschaften|страсть
-
-|die Gabel|der Gabel&emsp;die Gabeln|вилка
-
-|der Winter|des Winters&emsp;die Winter|зима
-
-|der Balkon|des Balkons&emsp;die Balkone|балкон
-
-|die Literatur|der Literatur&emsp;die Literaturen|литература
-
-|das Bier|des Bieres&emsp;die Biere|пиво
-
-|der Schlaf|des Schlafes&emsp;die Schlafe|сон
-
-|der Traum|des Traumes&emsp;die Träume|мечта
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+das Spielzeug, des Spielzeuges, die Spielzeuge
+das Ladegerät, des Ladegerätes, die Ladegeräte
+die Leidenschaft, der Leidenschaft, die Leidenschaften
+die Gabel, der Gabel, die Gabeln
+der Winter, des Winters, die Winter
+der Balkon, des Balkons, die Balkone
+die Literatur, der Literatur, die Literaturen
+das Bier, des Bieres, die Biere
+der Schlaf, des Schlafes, die Schlafe
+der Traum, des Traumes, die Träume
+</prosody>
+</voice>
+</speak>

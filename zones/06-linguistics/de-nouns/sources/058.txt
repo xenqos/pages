@@ -1,22 +1,16 @@
-# A2 - 058 - die Substantive
-
-
-|das Geschirr|des Geschirrs&emsp;die Geschirre|посуда
-
-|das Gesetz|des Gesetzes&emsp;die Gesetze|закон
-
-|das Gesicht|des Gesichtes&emsp;die Gesichter|лицо
-
-|das Gewicht|des Gewichtes&emsp;die Gewichte|вес
-
-|das Gewinnspiel|des Gewinnspieles&emsp;die Gewinnspiele|лотерея
-
-|das Gewürz|des Gewürzes&emsp;die Gewürze|специя
-
-|das Gewächshaus|des Gewächshauses&emsp;die Gewächshäuser|теплица
-
-|das Gleis|des Gleises&emsp;die Gleise|железнодорожный путь
-
-|das Gold|des Goldes&emsp;die Gold|золото
-
-|der Gott|des Gottes&emsp;die Götter|бог
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+das Geschirr, des Geschirrs, die Geschirre
+das Gesetz, des Gesetzes, die Gesetze
+das Gesicht, des Gesichtes, die Gesichter
+das Gewicht, des Gewichtes, die Gewichte
+das Gewinnspiel, des Gewinnspieles, die Gewinnspiele
+das Gewürz, des Gewürzes, die Gewürze
+das Gewächshaus, des Gewächshauses, die Gewächshäuser
+das Gleis, des Gleises, die Gleise
+das Gold, des Goldes, die Gold
+der Gott, des Gottes, die Götter
+</prosody>
+</voice>
+</speak>

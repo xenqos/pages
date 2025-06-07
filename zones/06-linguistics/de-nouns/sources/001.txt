@@ -1,22 +1,16 @@
-# A1 - 001 - die Substantive
-
-
-|der Tisch|des Tisches&emsp;die Tische|стол
-
-|die Bahn|der Bahn&emsp;die Bahnen|поезд
-
-|der Zucker|des Zuckers&emsp;die Zucker|сахар
-
-|das Fieber|des Fiebers&emsp;die Fieber|температура
-
-|das Brot|des Brotes&emsp;die Brote|хлеб
-
-|die Liebe|der Liebe&emsp;die Lieben|любовь
-
-|das Papier|des Papieres&emsp;die Papiere|бумага
-
-|die Band|der Band&emsp;die Bands|группа
-
-|der Helfer|des Helfers&emsp;die Helfer|помощник
-
-|der Vogel|des Vogels&emsp;die Vögel|птица
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+der Tisch, des Tisches, die Tische
+die Bahn, der Bahn, die Bahnen
+der Zucker, des Zuckers, die Zucker
+das Fieber, des Fiebers, die Fieber
+das Brot, des Brotes, die Brote
+die Liebe, der Liebe, die Lieben
+das Papier, des Papieres, die Papiere
+die Band, der Band, die Bands
+der Helfer, des Helfers, die Helfer
+der Vogel, des Vogels, die Vögel
+</prosody>
+</voice>
+</speak>

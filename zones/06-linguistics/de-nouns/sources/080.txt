@@ -1,22 +1,16 @@
-# B2 - 080 - die Substantive
-
-
-|die Nachfrage|der Nachfrage&emsp;die Nachfragen|спрос
-
-|das Verfahren|des Verfahrens&emsp;die Verfahren|процедура
-
-|die Vorstellung|der Vorstellung&emsp;die Vorstellungen|представление
-
-|die Substanz|der Substanz&emsp;die Substanzen|вещество
-
-|die Zugehörigkeit|der Zugehörigkeit&emsp;die Zugehörigkeiten|принадлежность
-
-|die Abhängigkeit|der Abhängigkeit&emsp;die Abhängigkeiten|зависимость
-
-|das Gutachten|des Gutachtens&emsp;die Gutachten|заключение (экспертное)
-
-|der Beitrag|des Beitrags&emsp;die Beiträge|вклад
-
-|der Moment|des Moments&emsp;die Momente|момент
-
-|das Einkommen|des Einkommens&emsp;die Einkommen|доход
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+die Nachfrage, der Nachfrage, die Nachfragen
+das Verfahren, des Verfahrens, die Verfahren
+die Vorstellung, der Vorstellung, die Vorstellungen
+die Substanz, der Substanz, die Substanzen
+die Zugehörigkeit, der Zugehörigkeit, die Zugehörigkeiten
+die Abhängigkeit, der Abhängigkeit, die Abhängigkeiten
+das Gutachten, des Gutachtens, die Gutachten
+der Beitrag, des Beitrags, die Beiträge
+der Moment, des Moments, die Momente
+das Einkommen, des Einkommens, die Einkommen
+</prosody>
+</voice>
+</speak>

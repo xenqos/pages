@@ -1,22 +1,16 @@
-# A2 - 038 - die Substantive
-
-
-|der Aufenthalt|des Aufenthaltes&emsp;die Aufenthalte|пребывание
-
-|der Ausflug|des Ausfluges&emsp;die Ausflüge|экскурсия
-
-|die Ausstellung|der Ausstellung&emsp;die Ausstellungen|выставка
-
-|die Auskunft|der Auskunft&emsp;die Auskünfte|справка
-
-|die Aussage|der Aussage&emsp;die Aussagen|заявление
-
-|der Ausweis|des Ausweises&emsp;die Ausweise|удостоверение
-
-|der Automat|des Automaten&emsp;die Automaten|автомат
-
-|die Banane|der Banane&emsp;die Bananen|банан
-
-|der Benutzername|des Benutzernamens&emsp;die Benutzernamen|имя пользователя
-
-|die Benzin|der Benzin&emsp;die Benzine|бензин
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+der Aufenthalt, des Aufenthaltes, die Aufenthalte
+der Ausflug, des Ausfluges, die Ausflüge
+die Ausstellung, der Ausstellung, die Ausstellungen
+die Auskunft, der Auskunft, die Auskünfte
+die Aussage, der Aussage, die Aussagen
+der Ausweis, des Ausweises, die Ausweise
+der Automat, des Automaten, die Automaten
+die Banane, der Banane, die Bananen
+der Benutzername, des Benutzernamens, die Benutzernamen
+die Benzin, der Benzin, die Benzine
+</prosody>
+</voice>
+</speak>

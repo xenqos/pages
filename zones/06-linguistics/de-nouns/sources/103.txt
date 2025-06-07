@@ -1,22 +1,16 @@
-# C1 - 103 - die Substantive
-
-
-|die Abwechslung|der Abwechslung&emsp;die Abwechslungen|разнообразие
-
-|die Terminologie|der Terminologie&emsp;die Terminologien|терминология
-
-|die Bereitschaft|der Bereitschaft&emsp;die Bereitschaften|готовность
-
-|die Verständigung|der Verständigung&emsp;die Verständigungen|взаимопонимание
-
-|die Erarbeitung|der Erarbeitung&emsp;die Erarbeitungen|разработка
-
-|die Reduzierung|der Reduzierung&emsp;die Reduzierungen|сокращение
-
-|die Entschlossenheit|der Entschlossenheit&emsp;die Entschlossenheiten|решимость
-
-|die Vermeidung|der Vermeidung&emsp;die Vermeidungen|избегание
-
-|die Freizeitgestaltung|der Freizeitgestaltung&emsp;die Freizeitgestaltungen|организация досуга
-
-|die Erhebung|der Erhebung&emsp;die Erhebungen|сбор данных
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+die Abwechslung, der Abwechslung, die Abwechslungen
+die Terminologie, der Terminologie, die Terminologien
+die Bereitschaft, der Bereitschaft, die Bereitschaften
+die Verständigung, der Verständigung, die Verständigungen
+die Erarbeitung, der Erarbeitung, die Erarbeitungen
+die Reduzierung, der Reduzierung, die Reduzierungen
+die Entschlossenheit, der Entschlossenheit, die Entschlossenheiten
+die Vermeidung, der Vermeidung, die Vermeidungen
+die Freizeitgestaltung, der Freizeitgestaltung, die Freizeitgestaltungen
+die Erhebung, der Erhebung, die Erhebungen
+</prosody>
+</voice>
+</speak>

@@ -1,22 +1,16 @@
-# A1 - 009 - die Substantive
-
-
-|der Löffel|des Löffels&emsp;die Löffel|ложка
-
-|das Fest|des Festes&emsp;die Feste|фестиваль
-
-|der Bleistift|des Bleistiftes&emsp;die Bleistifte|карандаш
-
-|der Arbeitsplatz|des Arbeitsplatzes&emsp;die Arbeitsplätze|рабочее место
-
-|der Zahn|des Zahnes&emsp;die Zähne|зуб
-
-|die Milch|der Milch&emsp;die Milche|молоко
-
-|der Krimi|des Krimis&emsp;die Krimis|детектив
-
-|das Brettspiel|des Brettspieles&emsp;die Brettspiele|настольная игра
-
-|der Chef|des Chefs&emsp;die Chefs|начальник
-
-|der Ball|des Balles&emsp;die Bälle|мяч
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+der Löffel, des Löffels, die Löffel
+das Fest, des Festes, die Feste
+der Bleistift, des Bleistiftes, die Bleistifte
+der Arbeitsplatz, des Arbeitsplatzes, die Arbeitsplätze
+der Zahn, des Zahnes, die Zähne
+die Milch, der Milch, die Milche
+der Krimi, des Krimis, die Krimis
+das Brettspiel, des Brettspieles, die Brettspiele
+der Chef, des Chefs, die Chefs
+der Ball, des Balles, die Bälle
+</prosody>
+</voice>
+</speak>

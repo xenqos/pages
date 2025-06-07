@@ -1,22 +1,16 @@
-# A1 - 021 - die Substantive
-
-
-|der Briefkasten|des Briefkastens&emsp;die Briefkästen|почтовый ящик
-
-|der Spiegel|des Spiegels&emsp;die Spiegel|зеркало
-
-|das Lied|des Liedes&emsp;die Lieder|песня
-
-|die Batterie|der Batterie&emsp;die Batterien|батарея
-
-|das Tagebuch|des Tagebuches&emsp;die Tagebücher|дневник
-
-|der König|des Königs&emsp;die Könige|король
-
-|die Kohle|der Kohle&emsp;die Kohlen|уголь
-
-|die Post|der Post&emsp;die Posten|почта
-
-|das Büro|des Büros&emsp;die Büros|офис
-
-|das Thema|des Themas&emsp;die Themen|тема
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+der Briefkasten, des Briefkastens, die Briefkästen
+der Spiegel, des Spiegels, die Spiegel
+das Lied, des Liedes, die Lieder
+die Batterie, der Batterie, die Batterien
+das Tagebuch, des Tagebuches, die Tagebücher
+der König, des Königs, die Könige
+die Kohle, der Kohle, die Kohlen
+die Post, der Post, die Posten
+das Büro, des Büros, die Büros
+das Thema, des Themas, die Themen
+</prosody>
+</voice>
+</speak>

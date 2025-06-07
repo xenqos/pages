@@ -1,22 +1,16 @@
-# A2 - 039 - die Substantive
-
-
-|die Bescheinigung|der Bescheinigung&emsp;die Bescheinigungen|справка
-
-|die Beschreibung|der Beschreibung&emsp;die Beschreibungen|описание
-
-|die Bewegung|der Bewegung&emsp;die Bewegungen|движение
-
-|die Bluse|der Bluse&emsp;die Blusen|блузка
-
-|die Bohne|der Bohne&emsp;die Bohnen|боб
-
-|der Bruch|des Bruchs&emsp;die Brüche|перелом
-
-|die Brieftasche|der Brieftasche&emsp;die Brieftaschen|бумажник
-
-|die Brücke|der Brücke&emsp;die Brücken|мост
-
-|das Brötchen|des Brötchens&emsp;die Brötchen|булочка
-
-|die Brust|der Brust&emsp;die Brüste|грудь
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+die Bescheinigung, der Bescheinigung, die Bescheinigungen
+die Beschreibung, der Beschreibung, die Beschreibungen
+die Bewegung, der Bewegung, die Bewegungen
+die Bluse, der Bluse, die Blusen
+die Bohne, der Bohne, die Bohnen
+der Bruch, des Bruchs, die Brüche
+die Brieftasche, der Brieftasche, die Brieftaschen
+die Brücke, der Brücke, die Brücken
+das Brötchen, des Brötchens, die Brötchen
+die Brust, der Brust, die Brüste
+</prosody>
+</voice>
+</speak>

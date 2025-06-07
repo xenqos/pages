@@ -1,22 +1,16 @@
-# B1 - 074 - die Substantive
-
-
-|die Anrede|der Anrede&emsp;die Anreden|обращение
-
-|der Alleinstehende|des Alleinstehenden&emsp;die Alleinstehenden|одиночка
-
-|die Methode|der Methode&emsp;die Methoden|метод
-
-|die Partei|der Partei&emsp;die Parteien|партия
-
-|die Apfel|des Apfels&emsp;die Äpfel|яблоко
-
-|das Gebäck|des Gebäcks&emsp;die Gebäcke|выпечка
-
-|das Fernsehen|des Fernsehens&emsp;die Fernseher|телевидение
-
-|die Länge|der Länge&emsp;die Längen|длина
-
-|die Nummer|der Nummer&emsp;die Nummern|номер
-
-|der Nachmittag|des Nachmittags&emsp;die Nachmittage|вторая половина дня
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+die Anrede, der Anrede, die Anreden
+der Alleinstehende, des Alleinstehenden, die Alleinstehenden
+die Methode, der Methode, die Methoden
+die Partei, der Partei, die Parteien
+die Apfel, des Apfels, die Äpfel
+das Gebäck, des Gebäcks, die Gebäcke
+das Fernsehen, des Fernsehens, die Fernseher
+die Länge, der Länge, die Längen
+die Nummer, der Nummer, die Nummern
+der Nachmittag, des Nachmittags, die Nachmittage
+</prosody>
+</voice>
+</speak>

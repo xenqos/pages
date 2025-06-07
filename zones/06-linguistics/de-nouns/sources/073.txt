@@ -1,22 +1,16 @@
-# B1 - 073 - die Substantive
-
-
-|die Mahlzeit|der Mahlzeit&emsp;die Mahlzeiten|прием пищи
-
-|der Meister|des Meisters&emsp;die Meister|мастер
-
-|das Parlament|des Parlaments&emsp;die Parlamente|парламент
-
-|die Dose|der Dose&emsp;die Dosen|банка
-
-|die Kufe|der Kufe&emsp;die Kufeni|плоскость (лыжи)
-
-|der Alarm|des Alarms&emsp;die Alarme|сигнал тревоги
-
-|die Ambulanz|der Ambulanz&emsp;die Ambulanzen|скорая помощь
-
-|das Möbel|des Möbels&emsp;die Möbel|мебель
-
-|das Kostüm|des Kostüms&emsp;die Kostüme|костюм
-
-|die Gefahr|der Gefahr&emsp;die Gefahren|опасность
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+die Mahlzeit, der Mahlzeit, die Mahlzeiten
+der Meister, des Meisters, die Meister
+das Parlament, des Parlaments, die Parlamente
+die Dose, der Dose, die Dosen
+die Kufe, der Kufe, die Kufeni
+der Alarm, des Alarms, die Alarme
+die Ambulanz, der Ambulanz, die Ambulanzen
+das Möbel, des Möbels, die Möbel
+das Kostüm, des Kostüms, die Kostüme
+die Gefahr, der Gefahr, die Gefahren
+</prosody>
+</voice>
+</speak>

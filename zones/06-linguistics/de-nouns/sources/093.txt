@@ -1,22 +1,16 @@
-# B2 - 093 - die Substantive
-
-
-|die Infrastruktur|der Infrastruktur&emsp;die Infrastrukturen|инфраструктура
-
-|das Zubehör|des Zubehörs&emsp;die Zubehör|аксессуар
-
-|die Verringerung|der Verringerung&emsp;die Verringerungen|уменьшение
-
-|die Rückkehr|der Rückkehr&emsp;die Rückkehren|возвращение
-
-|die Zusammenfassung|der Zusammenfassung&emsp;die Zusammenfassungen|резюме
-
-|die Zustimmung|der Zustimmung&emsp;die Zustimmungen|согласие
-
-|der Gewinn|des Gewinns&emsp;die Gewinne|прибыль
-
-|der Respekt|des Respekts&emsp;die Respekte|уважение
-
-|die Revolution|der Revolution&emsp;die Revolutionen|революция
-
-|der Wechsel|des Wechsels&emsp;die Wechsel|смена
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+die Infrastruktur, der Infrastruktur, die Infrastrukturen
+das Zubehör, des Zubehörs, die Zubehör
+die Verringerung, der Verringerung, die Verringerungen
+die Rückkehr, der Rückkehr, die Rückkehren
+die Zusammenfassung, der Zusammenfassung, die Zusammenfassungen
+die Zustimmung, der Zustimmung, die Zustimmungen
+der Gewinn, des Gewinns, die Gewinne
+der Respekt, des Respekts, die Respekte
+die Revolution, der Revolution, die Revolutionen
+der Wechsel, des Wechsels, die Wechsel
+</prosody>
+</voice>
+</speak>

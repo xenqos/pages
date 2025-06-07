@@ -1,22 +1,16 @@
-# B2 - 082 - die Substantive
-
-
-|die Forderung|der Forderung&emsp;die Forderungen|требование
-
-|die Bedrohung|der Bedrohung&emsp;die Bedrohungen|угроза
-
-|die Versicherung|der Versicherung&emsp;die Versicherungen|страхование
-
-|die Zufriedenheit|der Zufriedenheit&emsp;die Zufriedenheiten|удовлетворение
-
-|die Veröffentlichung|der Veröffentlichung&emsp;die Veröffentlichungen|публикация
-
-|die Kritik|der Kritik&emsp;die Kritiken|критика
-
-|die Anpassung|der Anpassung&emsp;die Anpassungen|адаптация
-
-|die Behörde|der Behörde&emsp;die Behörden|учреждение
-
-|die Verwaltung|der Verwaltung&emsp;die Verwaltungen|управление
-
-|die Umwelt|der Umwelt&emsp;die Umwelten|окружающая среда
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+die Forderung, der Forderung, die Forderungen
+die Bedrohung, der Bedrohung, die Bedrohungen
+die Versicherung, der Versicherung, die Versicherungen
+die Zufriedenheit, der Zufriedenheit, die Zufriedenheiten
+die Veröffentlichung, der Veröffentlichung, die Veröffentlichungen
+die Kritik, der Kritik, die Kritiken
+die Anpassung, der Anpassung, die Anpassungen
+die Behörde, der Behörde, die Behörden
+die Verwaltung, der Verwaltung, die Verwaltungen
+die Umwelt, der Umwelt, die Umwelten
+</prosody>
+</voice>
+</speak>

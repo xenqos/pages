@@ -1,22 +1,16 @@
-# A1 - 024 - die Substantive
-
-
-|die Krankheit|der Krankheit&emsp;die Krankheiten|болезнь
-
-|die Buchhandlung|der Buchhandlung&emsp;die Buchhandlungen|книжный магазин
-
-|die Party|der Party&emsp;die Partys|вечеринка
-
-|die Frage|der Frage&emsp;die Fragen|вопрос
-
-|der Name|des Namens&emsp;die Namen|имя
-
-|die Ananas|der Ananas&emsp;die Ananas|ананас
-
-|der Bauch|des Bauches&emsp;die Bäuche|живот
-
-|der Sohn|des Sohnes&emsp;die Söhne|сын
-
-|die Zwiebel|der Zwiebel&emsp;die Zwiebeln|лук
-
-|die Couch|der Couch&emsp;die Couchen|диван
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+die Krankheit, der Krankheit, die Krankheiten
+die Buchhandlung, der Buchhandlung, die Buchhandlungen
+die Party, der Party, die Partys
+die Frage, der Frage, die Fragen
+der Name, des Namens, die Namen
+die Ananas, der Ananas, die Ananas
+der Bauch, des Bauches, die Bäuche
+der Sohn, des Sohnes, die Söhne
+die Zwiebel, der Zwiebel, die Zwiebeln
+die Couch, der Couch, die Couchen
+</prosody>
+</voice>
+</speak>

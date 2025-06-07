@@ -1,22 +1,16 @@
-# B2 - 085 - die Substantive
-
-
-|die Beziehung|der Beziehung&emsp;die Beziehungen|отношение
-
-|die Darstellung|der Darstellung&emsp;die Darstellungen|изображение
-
-|die Ursache|der Ursache&emsp;die Ursachen|причина
-
-|das Wachstum|des Wachstums&emsp;die Wachstümer|рост
-
-|der Rückblick|des Rückblicks&emsp;die Rückblicke|взгляд назад
-
-|die Dauer|der Dauer&emsp;die Dauern|продолжительность
-
-|die Theorie|der Theorie&emsp;die Theorien|теория
-
-|die Koordination|der Koordination&emsp;die Koordinationen|координация
-
-|die Zweideutigkeit|der Zweideutigkeit&emsp;die Zweideutigkeiten|двусмысленность
-
-|die Erwartung|der Erwartung&emsp;die Erwartungen|ожидание
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+die Beziehung, der Beziehung, die Beziehungen
+die Darstellung, der Darstellung, die Darstellungen
+die Ursache, der Ursache, die Ursachen
+das Wachstum, des Wachstums, die Wachstümer
+der Rückblick, des Rückblicks, die Rückblicke
+die Dauer, der Dauer, die Dauern
+die Theorie, der Theorie, die Theorien
+die Koordination, der Koordination, die Koordinationen
+die Zweideutigkeit, der Zweideutigkeit, die Zweideutigkeiten
+die Erwartung, der Erwartung, die Erwartungen
+</prosody>
+</voice>
+</speak>

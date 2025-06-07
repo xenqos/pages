@@ -1,22 +1,16 @@
-# A1 - 003 - die Substantive
-
-
-|der Mittag|des Mittags&emsp;die Mittage|полдень
-
-|der Zug|des Zuges&emsp;die Züge|поезд
-
-|die Schwester|der Schwester&emsp;die Schwestern|сестра
-
-|der Vorhang|des Vorhanges&emsp;die Vorhänge|штора
-
-|der Plan|des Plans&emsp;die Pläne|план
-
-|die Autobahn|der Autobahn&emsp;die Autobahnen|автомагистраль
-
-|die Zeitschrift|der Zeitschrift&emsp;die Zeitschriften|журнал
-
-|der Augenarzt|des Augenarztes&emsp;die Augenärzte|окулист
-
-|die Region|der Region&emsp;die Regionen|регион
-
-|der Umschlag|des Umschlages&emsp;die Umschläge|конверт
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+der Mittag, des Mittags, die Mittage
+der Zug, des Zuges, die Züge
+die Schwester, der Schwester, die Schwestern
+der Vorhang, des Vorhanges, die Vorhänge
+der Plan, des Plans, die Pläne
+die Autobahn, der Autobahn, die Autobahnen
+die Zeitschrift, der Zeitschrift, die Zeitschriften
+der Augenarzt, des Augenarztes, die Augenärzte
+die Region, der Region, die Regionen
+der Umschlag, des Umschlages, die Umschläge
+</prosody>
+</voice>
+</speak>

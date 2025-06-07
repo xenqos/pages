@@ -1,22 +1,16 @@
-# A1 - 025 - die Substantive
-
-
-|das Schlafzimmer|des Schlafzimmers&emsp;die Schlafzimmer|спальня
-
-|die Adresse|der Adresse&emsp;die Adressen|адрес
-
-|der Computer|des Computers&emsp;die Computer|компьютер
-
-|der Tiger|des Tigers&emsp;die Tiger|тигр
-
-|die Ferien|der Ferien&emsp;die Ferien|каникулы
-
-|das Bett|des Bettes&emsp;die Betten|кровать
-
-|die Besprechung|der Besprechung&emsp;die Besprechungen|совещание
-
-|die Steckdose|der Steckdose&emsp;die Steckdosen|розетка
-
-|das Auto|des Autos&emsp;die Autos|автомобиль
-
-|die Torte|der Torte&emsp;die Torten|торт
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+das Schlafzimmer, des Schlafzimmers, die Schlafzimmer
+die Adresse, der Adresse, die Adressen
+der Computer, des Computers, die Computer
+der Tiger, des Tigers, die Tiger
+die Ferien, der Ferien, die Ferien
+das Bett, des Bettes, die Betten
+die Besprechung, der Besprechung, die Besprechungen
+die Steckdose, der Steckdose, die Steckdosen
+das Auto, des Autos, die Autos
+die Torte, der Torte, die Torten
+</prosody>
+</voice>
+</speak>

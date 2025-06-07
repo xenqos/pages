@@ -1,22 +1,16 @@
-# B2 - 096 - die Substantive
-
-
-|die Reinheit|der Reinheit&emsp;die Reinheiten|чистота
-
-|die Überprüfung|der Überprüfung&emsp;die Überprüfungen|проверка
-
-|die Sicherheit|der Sicherheit&emsp;die Sicherheiten|безопасность
-
-|die Betrachtung|der Betrachtung&emsp;die Betrachtungen|рассмотрение
-
-|die Bezeichnung|der Bezeichnung&emsp;die Bezeichnungen|обозначение
-
-|die Verbindung|der Verbindung&emsp;die Verbindungen|связь
-
-|der Beweis|des Beweises&emsp;die Beweise|доказательство
-
-|das Verhalten|des Verhaltens&emsp;die Verhaltensweisen|поведение
-
-|das Objekt|des Objekts&emsp;die Objekte|объект
-
-|die Abweichung|der Abweichung&emsp;die Abweichungen|отклонение
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+die Reinheit, der Reinheit, die Reinheiten
+die Überprüfung, der Überprüfung, die Überprüfungen
+die Sicherheit, der Sicherheit, die Sicherheiten
+die Betrachtung, der Betrachtung, die Betrachtungen
+die Bezeichnung, der Bezeichnung, die Bezeichnungen
+die Verbindung, der Verbindung, die Verbindungen
+der Beweis, des Beweises, die Beweise
+das Verhalten, des Verhaltens, die Verhaltensweisen
+das Objekt, des Objekts, die Objekte
+die Abweichung, der Abweichung, die Abweichungen
+</prosody>
+</voice>
+</speak>

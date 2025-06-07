@@ -1,22 +1,16 @@
-# C2 - 123 - die Substantive
-
-
-|die Präsenz|der Präsenz&emsp;die Präsenzen|присутствие
-
-|die Behaglichkeit|der Behaglichkeit&emsp;die Behaglichkeiten|уют
-
-|die Ausweitung|der Ausweitung&emsp;die Ausweitungen|расширение
-
-|die Disposition|der Disposition&emsp;die Dispositionen|расположение
-
-|die Belastbarkeit|der Belastbarkeit&emsp;die Belastbarkeiten|выносливость
-
-|die Demonstration|der Demonstration&emsp;die Demonstrationen|демонстрация
-
-|die Befindlichkeit|der Befindlichkeit&emsp;die Befindlichkeiten|самочувствие
-
-|die Jubiläumsschrift|der Jubiläumsschrift&emsp;die Jubiläumsschriften|юбилейный сборник
-
-|die Profitabilität|der Profitabilität&emsp;die Profitabilitäten|рентабельность
-
-|die Festschreibung|der Festschreibung&emsp;die Festschreibungen|закрепление
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+die Präsenz, der Präsenz, die Präsenzen
+die Behaglichkeit, der Behaglichkeit, die Behaglichkeiten
+die Ausweitung, der Ausweitung, die Ausweitungen
+die Disposition, der Disposition, die Dispositionen
+die Belastbarkeit, der Belastbarkeit, die Belastbarkeiten
+die Demonstration, der Demonstration, die Demonstrationen
+die Befindlichkeit, der Befindlichkeit, die Befindlichkeiten
+die Jubiläumsschrift, der Jubiläumsschrift, die Jubiläumsschriften
+die Profitabilität, der Profitabilität, die Profitabilitäten
+die Festschreibung, der Festschreibung, die Festschreibungen
+</prosody>
+</voice>
+</speak>

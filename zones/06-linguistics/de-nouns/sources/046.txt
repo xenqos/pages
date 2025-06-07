@@ -1,22 +1,16 @@
-# A2 - 046 - die Substantive
-
-
-|die Krankenversicherung|der Krankenversicherung&emsp;die Krankenversicherungen|медицинская страховка
-
-|die Kugel|der Kugel&emsp;die Kugeln|шар
-
-|das Kuh|des Kuhes&emsp;die Kühe|корова
-
-|der Kunde|des Kunden&emsp;die Kunden|клиент
-
-|die Kundin|der Kundin&emsp;die Kundinnen|клиентка
-
-|die Kunst|der Kunst&emsp;die Künste|искусство
-
-|der Künstler|des Künstlers&emsp;die Künstler|художник
-
-|der Laden|des Ladens&emsp;die Läden|магазин
-
-|die Landschaft|der Landschaft&emsp;die Landschaften|пейзаж
-
-|der Lärm|des Lärms&emsp;die Lärme|шум
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+die Krankenversicherung, der Krankenversicherung, die Krankenversicherungen
+die Kugel, der Kugel, die Kugeln
+das Kuh, des Kuhes, die Kühe
+der Kunde, des Kunden, die Kunden
+die Kundin, der Kundin, die Kundinnen
+die Kunst, der Kunst, die Künste
+der Künstler, des Künstlers, die Künstler
+der Laden, des Ladens, die Läden
+die Landschaft, der Landschaft, die Landschaften
+der Lärm, des Lärms, die Lärme
+</prosody>
+</voice>
+</speak>

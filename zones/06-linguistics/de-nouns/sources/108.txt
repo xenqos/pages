@@ -1,22 +1,16 @@
-# C1 - 108 - die Substantive
-
-
-|die Transparenz|der Transparenz&emsp;die Transparenzen|прозрачность
-
-|die Vermittlung|der Vermittlung&emsp;die Vermittlungen|посредничество
-
-|die Einhaltung|der Einhaltung&emsp;die Einhaltungen|соблюдение
-
-|die Produktivität|der Produktivität&emsp;die Produktivitäten|продуктивность
-
-|die Eigeninitiative|der Eigeninitiative&emsp;die Eigeninitiativen|собственная инициатива
-
-|die Beurteilung|der Beurteilung&emsp;die Beurteilungen|оценка
-
-|die Führungskraft|der Führungskraft&emsp;die Führungskräfte|руководитель
-
-|die Bestrebung|der Bestrebung&emsp;die Bestrebungen|стремление
-
-|die Verwirklichung|der Verwirklichung&emsp;die Verwirklichungen|осуществление
-
-|die Ausgangslage|der Ausgangslage&emsp;die Ausgangslagen|исходное положение
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+die Transparenz, der Transparenz, die Transparenzen
+die Vermittlung, der Vermittlung, die Vermittlungen
+die Einhaltung, der Einhaltung, die Einhaltungen
+die Produktivität, der Produktivität, die Produktivitäten
+die Eigeninitiative, der Eigeninitiative, die Eigeninitiativen
+die Beurteilung, der Beurteilung, die Beurteilungen
+die Führungskraft, der Führungskraft, die Führungskräfte
+die Bestrebung, der Bestrebung, die Bestrebungen
+die Verwirklichung, der Verwirklichung, die Verwirklichungen
+die Ausgangslage, der Ausgangslage, die Ausgangslagen
+</prosody>
+</voice>
+</speak>

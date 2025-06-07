@@ -1,22 +1,16 @@
-# B2 - 088 - die Substantive
-
-
-|die Norm|der Norm&emsp;die Normen|норма
-
-|der Prozess|des Prozesses&emsp;die Prozesse|процесс
-
-|die Kooperation|der Kooperation&emsp;die Kooperationen|сотрудничество
-
-|die Grundlage|der Grundlage&emsp;die Grundlagen|основа
-
-|die Wahrnehmung|der Wahrnehmung&emsp;die Wahrnehmungen|восприятие
-
-|die Wiederholung|der Wiederholung&emsp;die Wiederholungen|повторение
-
-|die Relevanz|der Relevanz&emsp;die Relevanzen|значимость
-
-|die Option|der Option&emsp;die Optionen|опция
-
-|der Wettbewerb|des Wettbewerbs&emsp;die Wettbewerbe|соревнование
-
-|die Häufigkeit|der Häufigkeit&emsp;die Häufigkeiten|частота
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+die Norm, der Norm, die Normen
+der Prozess, des Prozesses, die Prozesse
+die Kooperation, der Kooperation, die Kooperationen
+die Grundlage, der Grundlage, die Grundlagen
+die Wahrnehmung, der Wahrnehmung, die Wahrnehmungen
+die Wiederholung, der Wiederholung, die Wiederholungen
+die Relevanz, der Relevanz, die Relevanzen
+die Option, der Option, die Optionen
+der Wettbewerb, des Wettbewerbs, die Wettbewerbe
+die Häufigkeit, der Häufigkeit, die Häufigkeiten
+</prosody>
+</voice>
+</speak>

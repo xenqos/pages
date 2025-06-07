@@ -1,22 +1,16 @@
-# A2 - 051 - die Substantive
-
-
-|der Bauarbeiter|des Bauarbeiters&emsp;die Bauarbeiter|строитель
-
-|die Baustelle|der Baustelle&emsp;die Baustellen|строительная площадка
-
-|der Bauer|des Bauern&emsp;die Bauern|фермер
-
-|der Baumarkt|des Baumarktes&emsp;die Baumärkte|магазин строительных материалов
-
-|der Becher|des Bechers&emsp;die Becher|стакан
-
-|die Bedienung|der Bedienung&emsp;die Bedienungen|обслуживание
-
-|die Beerdigung|der Beerdigung&emsp;die Beerdigungen|похороны
-
-|die Begründung|der Begründung&emsp;die Begründungen|обоснование
-
-|der Beleg|des Beleges&emsp;die Belege|квитанция
-
-|die Beratung|der Beratung&emsp;die Beratungen|консультация
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+der Bauarbeiter, des Bauarbeiters, die Bauarbeiter
+die Baustelle, der Baustelle, die Baustellen
+der Bauer, des Bauern, die Bauern
+der Baumarkt, des Baumarktes, die Baumärkte
+der Becher, des Bechers, die Becher
+die Bedienung, der Bedienung, die Bedienungen
+die Beerdigung, der Beerdigung, die Beerdigungen
+die Begründung, der Begründung, die Begründungen
+der Beleg, des Beleges, die Belege
+die Beratung, der Beratung, die Beratungen
+</prosody>
+</voice>
+</speak>

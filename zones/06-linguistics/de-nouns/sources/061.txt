@@ -1,22 +1,16 @@
-# A2 - 061 - die Substantive
-
-
-|der Kamm|des Kammes&emsp;die Kämme|расческа
-
-|der Kanal|des Kanals&emsp;die Kanäle|канал
-
-|die Kantine|der Kantine&emsp;die Kantinen|столовая
-
-|die Kapelle|der Kapelle&emsp;die Kapellen|часовня
-
-|der Kellner|des Kellners&emsp;die Kellner|официант
-
-|die Kinder|der Kinder&emsp;die Kinder|дети
-
-|die Kirche|der Kirche&emsp;die Kirchen|церковь
-
-|der Kittel|des Kittels&emsp;die Kittel|халат
-
-|der Klavier|des Klaviers&emsp;die Klaviere|пианино
-
-|die Kleidung|der Kleidung&emsp;die Kleidungen|одежда
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+der Kamm, des Kammes, die Kämme
+der Kanal, des Kanals, die Kanäle
+die Kantine, der Kantine, die Kantinen
+die Kapelle, der Kapelle, die Kapellen
+der Kellner, des Kellners, die Kellner
+die Kinder, der Kinder, die Kinder
+die Kirche, der Kirche, die Kirchen
+der Kittel, des Kittels, die Kittel
+der Klavier, des Klaviers, die Klaviere
+die Kleidung, der Kleidung, die Kleidungen
+</prosody>
+</voice>
+</speak>

@@ -1,22 +1,16 @@
-# A2 - 049 - die Substantive
-
-
-|die Anweisung|der Anweisung&emsp;die Anweisungen|указание
-
-|der Anwalt|des Anwalts&emsp;die Anwälte|адвокат
-
-|der Apparat|des Apparates&emsp;die Apparate|аппарат
-
-|das Aquarium|des Aquariums&emsp;die Aquarien|аквариум
-
-|die Arbeitserlaubnis|der Arbeitserlaubnis&emsp;die Arbeitserlaubnisse|разрешение на работу
-
-|das Archiv|des Archivs&emsp;die Archive|архив
-
-|die Architektur|der Architektur&emsp;die Architekturen|архитектура
-
-|der Asphalt|des Asphalts&emsp;die Asphalte|асфальт
-
-|die Astrologie|der Astrologie&emsp;die Astrologien|астрология
-
-|das Atelier|des Ateliers&emsp;die Ateliers|ателье
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+die Anweisung, der Anweisung, die Anweisungen
+der Anwalt, des Anwalts, die Anwälte
+der Apparat, des Apparates, die Apparate
+das Aquarium, des Aquariums, die Aquarien
+die Arbeitserlaubnis, der Arbeitserlaubnis, die Arbeitserlaubnisse
+das Archiv, des Archivs, die Archive
+die Architektur, der Architektur, die Architekturen
+der Asphalt, des Asphalts, die Asphalte
+die Astrologie, der Astrologie, die Astrologien
+das Atelier, des Ateliers, die Ateliers
+</prosody>
+</voice>
+</speak>

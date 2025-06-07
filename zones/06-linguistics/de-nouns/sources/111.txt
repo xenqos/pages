@@ -1,22 +1,16 @@
-# C1 - 111 - die Substantive
-
-
-|die Abgabe|der Abgabe&emsp;die Abgaben|сдача
-
-|die Notwendigkeit|der Notwendigkeit&emsp;die Notwendigkeiten|необходимость
-
-|die Vorgehensweise|der Vorgehensweise&emsp;die Vorgehensweisen|метод
-
-|die Problematik|der Problematik&emsp;die Problematiken|проблематика
-
-|die Festlegung|der Festlegung&emsp;die Festlegungen|определение
-
-|die Innovationskraft|der Innovationskraft&emsp;die Innovationskräfte|инновационная сила
-
-|die Qualitätssicherung|der Qualitätssicherung&emsp;die Qualitätssicherungen|обеспечение качества
-
-|die Errungenschaft|der Errungenschaft&emsp;die Errungenschaften|достижение
-
-|die Leistungskraft|der Leistungskraft&emsp;die Leistungskräfte|производственная мощь
-
-|die Prozessoptimierung|der Prozessoptimierung&emsp;die Prozessoptimierungen|оптимизация процессов
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+die Abgabe, der Abgabe, die Abgaben
+die Notwendigkeit, der Notwendigkeit, die Notwendigkeiten
+die Vorgehensweise, der Vorgehensweise, die Vorgehensweisen
+die Problematik, der Problematik, die Problematiken
+die Festlegung, der Festlegung, die Festlegungen
+die Innovationskraft, der Innovationskraft, die Innovationskräfte
+die Qualitätssicherung, der Qualitätssicherung, die Qualitätssicherungen
+die Errungenschaft, der Errungenschaft, die Errungenschaften
+die Leistungskraft, der Leistungskraft, die Leistungskräfte
+die Prozessoptimierung, der Prozessoptimierung, die Prozessoptimierungen
+</prosody>
+</voice>
+</speak>

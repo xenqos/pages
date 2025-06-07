@@ -1,22 +1,16 @@
-# A2 - 037 - die Substantive
-
-
-|der Anrufbeantworter|des Anrufbeantworters&emsp;die Anrufbeantworter|автоответчик
-
-|die Ansage|der Ansage&emsp;die Ansagen|объявление
-
-|der Anschluss|des Anschlusses&emsp;die Anschlüsse|подключение
-
-|der Anzug|des Anzuges&emsp;die Anzüge|костюм
-
-|die Apotheke|der Apotheke&emsp;die Apotheken|аптека
-
-|der Appetit|des Appetits&emsp;die Appetite|аппетит
-
-|der April|des Aprils&emsp;die Aprile|апрель
-
-|die Arbeitsstelle|der Arbeitsstelle&emsp;die Arbeitsstellen|рабочее место
-
-|die Art|der Art&emsp;die Arten|вид
-
-|der Artikel|des Artikels&emsp;die Artikel|статья
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+der Anrufbeantworter, des Anrufbeantworters, die Anrufbeantworter
+die Ansage, der Ansage, die Ansagen
+der Anschluss, des Anschlusses, die Anschlüsse
+der Anzug, des Anzuges, die Anzüge
+die Apotheke, der Apotheke, die Apotheken
+der Appetit, des Appetits, die Appetite
+der April, des Aprils, die Aprile
+die Arbeitsstelle, der Arbeitsstelle, die Arbeitsstellen
+die Art, der Art, die Arten
+der Artikel, des Artikels, die Artikel
+</prosody>
+</voice>
+</speak>

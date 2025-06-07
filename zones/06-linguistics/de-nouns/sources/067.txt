@@ -1,22 +1,16 @@
-# B1 - 067 - die Substantive
-
-
-|das Gespräch|des Gespräches&emsp;die Gespräche|разговор
-
-|die Kombination|der Kombination&emsp;die Kombinationen|комбинация
-
-|der Ozean|des Ozeans&emsp;die Ozeane|океан
-
-|der Hügel|des Hügels&emsp;die Hügel|холм
-
-|das Einverständnis|des Einverständnisses&emsp;die Einverständnisse|согласие
-
-|der Mittwoch|des Mittwochs&emsp;die Mittwoche|среда
-
-|das Leben|des Lebens&emsp;die Leben|жизнь
-
-|der Magen|des Magens&emsp;die Mägen|желудок
-
-|der Faktor|des Faktors&emsp;die Faktoren|фактор
-
-|der Februar|des Februars&emsp;die Februare|февраль
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+das Gespräch, des Gespräches, die Gespräche
+die Kombination, der Kombination, die Kombinationen
+der Ozean, des Ozeans, die Ozeane
+der Hügel, des Hügels, die Hügel
+das Einverständnis, des Einverständnisses, die Einverständnisse
+der Mittwoch, des Mittwochs, die Mittwoche
+das Leben, des Lebens, die Leben
+der Magen, des Magens, die Mägen
+der Faktor, des Faktors, die Faktoren
+der Februar, des Februars, die Februare
+</prosody>
+</voice>
+</speak>

@@ -1,16 +1,13 @@
-# A1 - 035 - die Substantive
-
-
-|das Auge|des Auges&emsp;die Augen|глаз
-
-|die Bank|der Bank&emsp;die Banken|скамья
-
-|der Schalter|des Schalters&emsp;die Schalter|выключатель
-
-|das Fensterbrett|des Fensterbrettes&emsp;die Fensterbretter|подоконник
-
-|der Fehler|des Fehlers&emsp;die Fehler|ошибка
-
-|der Hammer|des Hammers&emsp;die Hämmer|молоток
-
-|das Buch|des Buches&emsp;die Bücher|книга
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+das Auge, des Auges, die Augen
+die Bank, der Bank, die Banken
+der Schalter, des Schalters, die Schalter
+das Fensterbrett, des Fensterbrettes, die Fensterbretter
+der Fehler, des Fehlers, die Fehler
+der Hammer, des Hammers, die Hämmer
+das Buch, des Buches, die Bücher
+</prosody>
+</voice>
+</speak>
