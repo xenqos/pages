@@ -6,8 +6,8 @@
 
 %[r|b]&emsp;/ %[l|b] /
 [|-
-|%[m|bitte    ]|пожалуйста|
-|%[m|der Ball ]|мяч, шар  |
+|%[m|bitte]    |пожалуйста|
+|%[m|der Ball] |мяч, шар  |
 |%[m|der Nebel]|туман     |
 |]
 
@@ -23,9 +23,9 @@
 
 %[r|c]&emsp;/ %[l|k] /
 [|-
-|%[m|das Café  ]|кафе  |
+|%[m|das Café]  |кафе  |
 |%[m|der Cognac]|коньяк|
-|%[m|das Cuba  ]|куба  |
+|%[m|das Cuba]  |куба  |
 |]
 
 %[r|c]&emsp;/ %[l|ʦ] /
@@ -47,23 +47,23 @@
 в конце слова
 !]
 [|-
-|%[m|bald    ]|скоро  |
+|%[m|bald]    |скоро  |
 |%[m|das Bild]|картина|
 |%[m|das Geld]|деньги |
 |]
 
 %[r|f]&emsp;/ %[l|f] /
 [|-
-|%[m|frei    ]|свободный|
+|%[m|frei]    |свободный|
 |%[m|die Frau]|женщина  |
 |%[m|das Sofa]|диван    |
 |]
 
 %[r|g]&emsp;/ %[l|g] /
 [|-
-|%[m|gut      ]|хороший |
+|%[m|gut]      |хороший |
 |%[m|der Wagen]|вагон   |
-|%[m|sagen    ]|говорить|
+|%[m|sagen]    |говорить|
 |]
 
 %[r|g]&emsp;/ %[l|k] /
@@ -78,16 +78,16 @@
 
 %[r|ig]&emsp;/ %[l|ç] /
 [|-
-|%[m|lustig ]|весёлый|
-|%[m|fertig ]|готовый|
+|%[m|lustig] |весёлый|
+|%[m|fertig] |готовый|
 |%[m|wichtig]|важный|
 |]
 
 %[r|h]&emsp;/ %[l|x] /
 [|-
-|%[m|haben ]|иметь|
-|%[m|halt  ]|стой!|
-|%[m|hallo ]|алло!|
+|%[m|haben]|иметь|
+|%[m|halt] |стой!|
+|%[m|hallo]|алло!|
 |]
 
 %[r|h]&emsp;/ %[l|-] /
@@ -95,15 +95,15 @@
 удлиняет предыдущую гласную
 !]
 [|-
-|%[m|nah  ]|близкий|
+|%[m|nah]  |близкий|
 |%[m|gehen]|идти   |
-|%[m|ruht ]|вольно!|
+|%[m|ruht] |вольно!|
 |]
 
 %[r|j]&emsp;/ %[l|j] /
 [|-
-|%[m|ja      ]|да     |
-|%[m|junge   ]|молодой|
+|%[m|ja]      |да     |
+|%[m|junge]   |молодой|
 |%[m|das Jahr]|год    |
 |]
 
@@ -112,30 +112,30 @@
 / %[l|k] / произносяться с придыханием - / %[l|kʰ] /
 !]
 [|-
-|%[m|das Kind ]|ребёнок|
-|%[m|dunkel   ]|тёмный |
+|%[m|das Kind] |ребёнок|
+|%[m|dunkel]   |тёмный |
 |%[m|das Paket]|пакет  |
 |]
 
 %[r|l]&emsp;/ %[l|l] /
 [|-
-|%[m|elf      ]|одиннадцать|
+|%[m|elf]      |одиннадцать|
 |%[m|die Liebe]|любовь     |
 |%[m|der Schal]|шарф       |
 |]
 
 %[r|m]&emsp;/ %[l|m] /
 [|-
-|%[m|machen    ]|делать|
+|%[m|machen]    |делать|
 |%[m|die Kamera]|камера|
 |%[m|die Lampe ]|лампа |
 |]
 
 %[r|n]&emsp;/ %[l|n] /
 [|-
-|%[m|der Name  ]|имя   |
+|%[m|der Name]  |имя   |
 |%[m|der Anfang]|начало|
-|%[m|die Linde ]|липа  |
+|%[m|die Linde] |липа  |
 |]
 
 %[r|p]&emsp;/ %[l|p] /
@@ -143,7 +143,7 @@
 / %[l|p] / произносяться с придыханием - / %[l|pʰ] /
 !]
 [|-
-|%[m|der Punkt ]|точка |
+|%[m|der Punkt] |точка |
 |%[m|der Pinsel]|кисть |
 |%[m|das Papier]|бумага|
 |]
@@ -151,14 +151,14 @@
 %[r|qu]&emsp;/ %[l|kv] /
 [|-
 |%[m|die Qualität]|качество|
-|%[m|der Quell   ]|источник|
+|%[m|der Quell]   |источник|
 |%[m|das Aquarium]|аквариум|
 |]
 
 %[r|r]&emsp;/ %[l|r] /
 [|-
-|%[m|die Rose ]|роза    |
-|%[m|arbeiten ]|работать|
+|%[m|die Rose] |роза    |
+|%[m|arbeiten] |работать|
 |%[m|der Regen]|дождь   |
 |]
 
@@ -167,9 +167,9 @@
 в конце слова
 !]
 [|-
-|%[m|wir       ]|мы  |
+|%[m|wir]       |мы  |
 |%[m|das Wasser]|вода|
-|%[m|der Vater ]|отец|
+|%[m|der Vater] |отец|
 |]
 
 %[r|s]&emsp;/ %[l|z] /
@@ -178,7 +178,7 @@
 !]
 [|-
 |%[m|die Sonne]|солнце|
-|%[m|singen   ]|петь  |
+|%[m|singen]   |петь  |
 |%[m|die Sahne]|сливки|
 |]
 
@@ -197,15 +197,15 @@
 / %[l|t] / произносяться с придыханием - / %[l|tʰ] /
 !]
 [|-
-|%[m|der Tag  ]|день |
-|%[m|das Brot ]|хлеб |
+|%[m|der Tag]  |день |
+|%[m|das Brot] |хлеб |
 |%[m|die Karte]|карта|
 |]
 
 %[r|v]&emsp;/ %[l|f] /
 [|-
-|%[m|vier     ]|четыре|
-|%[m|voll     ]|полный|
+|%[m|vier]     |четыре|
+|%[m|voll]     |полный|
 |%[m|der Vater]|отец  |
 |]
 
@@ -214,7 +214,7 @@
 в иностранных словах
 !]
 [|-
-|%[m|die Vase   ]|ваза   |
+|%[m|die Vase]   |ваза   |
 |%[m|die Vitrine]|витрина|
 |%[m|der Vulkan ]|вулкан |
 |]
@@ -222,27 +222,27 @@
 %[r|w]&emsp;/ %[l|v] /
 [|-
 |%[m|der Wagen]|вагон |
-|%[m|der Wind ]|ветер |
-|%[m|der Weg  ]|дорога|
+|%[m|der Wind] |ветер |
+|%[m|der Weg]  |дорога|
 |]
 
 %[r|x]&emsp;/ %[l|ks] /
 [|-
-|%[m|der Text  ]|текст  |
+|%[m|der Text]  |текст  |
 |%[m|das Examen]|экзамен|
-|%[m|das Taxi  ]|такси  |
+|%[m|das Taxi]  |такси  |
 |]
 
 %[r|y]&emsp;/ %[l|j] /
 [|-
 |%[m|das Yoga]|йога|
 |%[m|der Yeti]|йети|
-|%[m|der Yen ]|иена|
+|%[m|der Yen] |иена|
 |]
 
 %[r|z]&emsp;/ %[l|ts] /
 [|-
-|%[m|zahlen  ]|платить|
+|%[m|zahlen]  |платить|
 |%[m|die Zeit]|время  |
-|%[m|der Zug ]|поезд  |
+|%[m|der Zug] |поезд  |
 |]
