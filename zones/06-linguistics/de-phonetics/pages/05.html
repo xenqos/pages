@@ -17,7 +17,7 @@
   
 </head>
 <body onload='fncGetDivState(); fncGetScrollPosition();'>
-
+<audio id='idTrack' src='../sounds/05.mp3' preload='auto'></audio>
 <div id='idPanel'>
 <div id='idTopbar'>
   <div id='idTopbarNavigation'>
@@ -26,7 +26,7 @@
     <a href='04.html'><span class='clNavLeft'></span></a>
     <a href='../index.html'><span class='clNavUp'></span></a>
     <a href='06.html'><span class='clNavRight'></span></a>
-
+<span class='clNavRewind' onclick='fncRewindTrack(&quot;idTrack&quot;)'></span><span class='clNavPlay' onclick='fncPlayTrack(&quot;idTrack&quot;)'></span>
   </div>
 </div>
 <div id='idContent'>
@@ -39,7 +39,6 @@
 <h2>a</h2>
 
 <blockquote>
-как в слове «мать»<br>
 рот не открывать широко<br>
 </blockquote>
 
@@ -56,7 +55,6 @@
 <h2>aː</h2>
 
 <blockquote>
-как в слове «красный»<br>
 русская «а» произносится короче, чем долгий звук <span class='m'>aː</span><br>
 открыть рот как можно шире<br>
 </blockquote>
