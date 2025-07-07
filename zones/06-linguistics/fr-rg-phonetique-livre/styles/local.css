@@ -1,0 +1,412 @@
+﻿/*----------------------------------------------------------------------------------------------------*/
+
+code
+{
+  font-family:          NotoSans, sans-serif !important;
+  font-style:           inherit;
+  font-size:            inherit;
+  font-weight:          inherit;
+}
+
+p
+{
+  background-color:     #ffffff;
+  color:                #000000;
+  font-weight:          normal;
+  margin:               0.000em 0.000em 0.000em 0.000em;
+  padding:              0.000em 0.000em 0.625em 0.000em ;
+  text-align:           left;
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+
+div.clMargin
+{
+  border:               0.000em dotted #cccccc;
+  background-color:     #ffffff;
+  color:                #000000;
+  font-weight:          bold;
+  margin:               0.000em 1.000em 0.000em 0.000em;
+  padding:              0.000em 0.000em 0.000em 0.000em;
+  width:                1.125em;
+  float:                left;
+  clear:                left;
+  text-align:           left;
+}
+
+div.clContent
+{
+  background-color:     #ffffff;
+  color:                #000000;
+  font-weight:          normal;
+  margin:               0.000em 0.000em 0.000em 0.000em;
+  padding:              0.000em 0.000em 0.000em 0.000em;
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+
+ol
+{
+  margin-bottom:        0.500em;
+  text-align:           left;
+}
+
+ol.mr
+{
+  margin-top:           -0.25em
+}
+
+ol li
+{
+  color:                #000000;
+  padding:              3px;
+  margin-right:         1.000em;
+}
+
+ul
+{
+  margin-bottom:        0.5em;
+  text-align:           left;
+}
+
+ul li
+{
+  color:                #000000;
+  padding:              0.063em;
+  margin-right:         1.000em;
+}
+
+ul.mr
+{
+  margin-top:           0.100em;
+  margin-bottom:        0.200em;
+  padding-top:          0.000em;
+  padding-bottom:       0.000em;
+}
+
+em
+{
+  font-weight:          bold;
+}
+
+a.clRenvoi
+{
+  color:                #000088;
+  text-decoration:      none;
+  border-bottom:        0.063ем dotted;
+}
+
+a.clRenvoi:hover
+{
+  color:                #ff0000;
+}
+
+p.clRQ
+{
+  color:                #000000;
+  margin-left:          1.250ем;
+  margin-bottom:        0.750em;
+  margin-right:         2.000em;
+  text-align:           left;
+}
+
+p.clRQ code
+{
+  color:                #000000;
+}
+
+p.clRQ em
+{
+  font-style:           bold;
+  color:                #000000;
+}
+
+code
+{
+  color:                #000000;
+}
+
+#idNu
+{
+  color:                #000000;
+  width:                90%;
+  border-collapse:      collapse;
+  margin:               auto;
+  margin-top:           0.5em;
+  margin-bottom:        0.5em;
+}
+
+#idNu td,
+#idNu th
+{
+  border:               0;
+  padding:              0;
+  vertical-align:       top
+}
+
+#idNu th
+{
+  background-color:     #ffffff;
+  color:                #000000;
+  text-align:           left;
+  padding-top:          0.313em;
+  padding-bottom:       0.313em;
+}
+
+#idNu tr.alt td
+{
+  background-color:     #ffffff;
+  color:                #000000;
+}
+
+td code
+{
+  color:                #000000;
+}
+
+
+#idNormal
+{
+  color:                #000000;
+  width:                80%;
+  border-collapse:      collapse;
+  margin:               auto;
+  margin-bottom:        1.5em;
+}
+
+#idNormal tt
+{
+  color:                #000000;
+}
+
+#idNormal td,
+#idNormal th
+{
+  border:               0.063em solid #555555;
+  padding:              0.125em 0.438em 0.125em 0.625em;
+  vertical-align:       top;
+}
+
+#idNormal th
+{
+  background-color:     #ffffff;
+  color:                #000000;
+  text-align:           center;
+  padding-top:          0.125em;
+  padding-bottom:       0.125em;
+}
+
+#idNormal tr.alt td
+{
+  background-color:     #ffffff;
+  color:                #000000;
+}
+
+#idNormal td.alt
+{
+  background-color:     #ffffff;
+  color:                #000000;
+}
+
+#idNormalcenter
+{
+  color:                #000000;
+  width:                80%;
+  border-collapse:      collapse;
+  margin:               auto;
+  margin-bottom:        1.5em;
+}
+
+#idNormalcenter td,
+#idNormal th
+{
+  border:               0.063em solid #555555;
+  padding:              0.125em 0.438em 0.125em 0.625em;
+  text-align:           center
+}
+
+#idNormalcenter th
+{
+  background-color:     #ffffff;
+  color:                #000000;
+  text-align:           center;
+  padding-top:          0.125em;
+  padding-bottom:       0.125em;
+}
+
+#idNormalcenter tr.alt td
+{
+  background-color:     #ffffff;
+  color:                #000000;
+}
+
+#idNormalcenter td.alt
+{
+  background-color:     #ffffff;
+  color:                #000000;
+}
+
+caption
+{
+  padding-top:          0.5em;
+  padding-bottom:       0.5em;
+}
+
+p.clEx code
+{
+  color:                #000000;
+}
+
+p.clEx
+{
+  color:                #000000;
+  margin-left:          2.500em;
+  margin-bottom:        0.75em;
+  margin-right:         2em;
+  text-align:           left;
+}
+
+#idNuex
+{
+  color:                #000000;
+  width:                90%;
+  border-collapse:      collapse;
+  margin:               auto;
+}
+
+#idNuex td,
+#idNuex th
+{
+  border:               0;
+  padding:              0.063em 0.250em 0.063em 0.250em;
+  vertical-align:       top
+}
+
+#idNuex th
+{
+  background-color:     #ffffff;
+  color:                #000000;
+  text-align:           left;
+  padding-top:          0.313em;
+  padding-bottom:       0.250em;
+}
+
+#idNuex tr.alt td
+{
+  background-color:     #ffffff;
+  color:                #000000;
+}
+
+tt
+{
+  color:                #000000;
+}
+
+p.clComtab
+{
+  color:                #000000;
+  text-align:           center;
+  margin:               -0.625em 3em 1em 3em;
+}
+
+strong
+{
+  color:                #000000;
+  font-weight:          bold;
+}
+
+p.clExamr
+{
+  color:                #000000;
+  margin-left:          2.500em;
+  margin-bottom:        0.313em;
+  margin-top:           -0.250em;
+  margin-right:         2em;
+  text-align:           left;
+}
+
+p.clIntroExo
+{
+}
+
+p.clIntroExo code
+{
+  color:                #000000;
+}
+
+#idExo4
+{
+  color:                #000000;
+  width:                90%;
+  border-collapse:      collapse;
+  margin:               auto;
+  margin-top:           0.5em;
+  margin-bottom:        0.5em;
+}
+
+#idExo4 td,
+#idExo4 th
+{
+  width:                25%;
+  border:               0;
+  padding:              0;
+  vertical-align:       top;
+}
+
+#idExo4 th
+{
+  background-color:     #ffffff;
+  color:                #000000;
+  text-align:           left;
+  padding-top:          0.313em;
+  padding-bottom:       0.250em;
+}
+
+#idExo4 tr.alt td
+{
+  background-color:     #ffffff;
+  color:                #000000;
+}
+
+#idExo3
+{
+  color:                #000000;
+  width:                90%;
+  border-collapse:      collapse;
+  margin:               auto;
+  margin-top:           0.5em;
+  margin-bottom:        0.5em;
+}
+
+#idExo3 td,
+#idExo3 th
+{
+/*  width:              30.000em; */
+  color:                #000000;
+  border:               0;
+  padding:              0;
+}
+
+#idExo3 th
+{
+  background-color:     #ffffff;
+  color:                #000000;
+  text-align:           left;
+  padding-top:          0.313em;
+  padding-bottom:       0.250em;
+}
+
+#idExo3 tr.alt td
+{
+  background-color:     #ffffff;
+  color:                #000000;
+}
+
+var
+{
+  background-color:     #ffffff;
+  color:                #000000;
+  font-style:           normal
+}
+
+/*----------------------------------------------------------------------------------------------------*/
