@@ -5,6 +5,7 @@ table, th, td
   border:               none;
 }
 
+
 #idTopbar
 {
   width:                100.00%;
@@ -14,6 +15,46 @@ table, th, td
 #idTopbarNavigation
 {
   width:                100.00% !important;
+}
+
+#idPanelConj
+{
+  max-height:           999999px;
+  margin:               0.500rem auto 0.500rem auto;
+  padding:              0.000rem 0.000rem 1.000rem 0.000rem;
+  text-align:           center;
+  width:                45.000rem;
+}
+
+#idTopbarConj
+{
+  clear:                both;
+  position:             fixed;
+  top:                  0px;
+  left:                 0px;
+  right:                0px;
+  height:               0px;
+  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+  text-align:           center;
+  width:                100.00%;
+  z-index:              100;
+}
+
+#idTopbarNavigationConj
+{
+/*
+  border:               1px solid #eeeeee;
+*/
+  color:                #000000;
+  background-color:     #eeeeee;
+  display:              inline-block;
+  font-size:            1.000rem;
+  font-style:           normal;
+  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
+  padding:              0.500rem 0.500rem 0.500rem 0.500rem;
+  text-align:           left;
+  width:                45.000rem;
 }
 
 /*--------------------------------------------------------------------------------------------------*/
@@ -111,6 +152,8 @@ table, th, td
   color:                #000000;
   font-size:            1.000rem;
   line-height:          1.500rem;
+  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
+  padding:              0.000rem 0.000rem 3.000rem 0.000rem;
 }
 
 .clConj
