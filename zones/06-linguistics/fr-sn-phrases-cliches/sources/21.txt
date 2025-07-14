@@ -1,3 +1,6 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
 Et après?
 Et puis après?
 Pour une fois.
@@ -10,3 +13,6 @@ Si le cœur vous en dit.
 Tant qu'à faire.
 J'en ai vu d'autres...
 Nous en sommes tous là,
+</prosody>
+</voice>
+</speak>

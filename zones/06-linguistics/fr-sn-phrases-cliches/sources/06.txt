@@ -1,3 +1,6 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
 Je m'en rends compte.
 Il le faut bien.
 Comme de juste.
@@ -13,3 +16,6 @@ J'en sais quelque chose.
 C'est clair comme le jour.
 C'est tout dire.
 Je ne le sais que trop.
+</prosody>
+</voice>
+</speak>

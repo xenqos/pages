@@ -1,3 +1,6 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
 Qu'est-ce qui ne va pas?
 Je vous remercie de tout mon cœur.
 J'en serai ravi.
@@ -19,3 +22,6 @@ Comment vous portez-vous?
 Comment ça va?
 J'en suis désolé.
 Quel dommage.
+</prosody>
+</voice>
+</speak>

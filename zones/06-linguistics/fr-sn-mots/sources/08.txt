@@ -1,3 +1,6 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
 Il est sept heures précises.
 Il est sept heures du matin.
 Il est sept heures dix.
@@ -14,3 +17,6 @@ Il est trois heures du matin.
 Il est trois heures de l’après-midi.
 Il est sept heures du soir.
 Il est minuit.
+</prosody>
+</voice>
+</speak>

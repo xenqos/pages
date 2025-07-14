@@ -1,3 +1,6 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
 Qu'est-ce que ça fait?
 Que voulez-vaus que j'y fasse?
 Il fallait s'y attendre. . .
@@ -10,3 +13,6 @@ C'est le moindre de mes soucis.
 Cela revient au même.
 C'est tout comme.
 J'en ai fait mon deuil.
+</prosody>
+</voice>
+</speak>

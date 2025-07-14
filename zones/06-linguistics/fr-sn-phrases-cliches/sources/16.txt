@@ -1,3 +1,6 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
 Que c'est aimable à vous de votre part!
 Que c'est gentil à vous de votre part!
 Servez-vous, s'il vous plaît.
@@ -20,3 +23,6 @@ Ne faites pas de façons.
 Ça va tout doucement.
 Ça ne fait rien.
 Très volontiers.
+</prosody>
+</voice>
+</speak>
