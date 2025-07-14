@@ -1,3 +1,6 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
 Est-ce que vous êtes marié(е) ?
 Est-ce que tu es marié(е)?
 Oui, je suis marié(е).
@@ -16,3 +19,6 @@ Quel est votre métier ?
 Quel est votre travail ?
 Quels sont vos loisirs ?
 Qu’est-ce que vous aimez dans la vie ?
+</prosody>
+</voice>
+</speak>

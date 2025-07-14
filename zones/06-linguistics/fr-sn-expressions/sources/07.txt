@@ -1,3 +1,6 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
 Comment allez-vous ?
 Je vais bien.
 Très bien.
@@ -12,3 +15,6 @@ C'est à vous !
 C'est à toi !
 Taisez-vous !
 Tais-toi !
+</prosody>
+</voice>
+</speak>

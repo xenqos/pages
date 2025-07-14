@@ -3,7 +3,7 @@ https://speechsynthesis.online/
 
 en-CA-ClaraNeural rate="-30%" volume="0.0dB"
 de-DE-KatjaNeural rate="-30%" volume="0.0dB" ( 6db = 2times )
-fr-FR-VivienneNeural rate="-30%" volume="0.0dB"
+fr-FR-VivienneNeural rate="-20%" volume="0.0dB"
 
 https://cloud.google.com/text-to-speech/docs/ssml
 

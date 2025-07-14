@@ -1,3 +1,6 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
 Qu'est-ce que c'est ?
 Qu'est-ce que c'est que ça ?
 Qu'est-ce qu'il y a ?
@@ -8,3 +11,6 @@ Je m'en fiche.
 Ne vous en faites pas.
 Ne t'en fais pas.
 Ce n'est pas grave.
+</prosody>
+</voice>
+</speak>
