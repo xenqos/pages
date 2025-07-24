@@ -883,7 +883,7 @@ span[class^=clNav]
 
 .g0500
 {
-  color:                #000080;
+  color:                #0F8699;
   margin:              -1.000rem 0.000rem 0.000rem 0.000rem;
   padding:              0.000rem 0.000rem 0.000rem 0.500rem;
 }
@@ -972,7 +972,7 @@ q.x::after { content: url("../images/poker/nosuit.svg"); }
 .MathJax
 {
   letter-spacing:       normal; /* Reset letter spacing */
-  word-spacing:         normal;   /* Reset word spacing */
+  word-spacing:         normal; /* Reset word spacing */
   margin:               0.000rem 0.000rem 0.000rem 0.000rem;
   padding:              0.000rem 0.000rem 0.000rem 0.000rem;
 
