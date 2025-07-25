@@ -1,97 +1,105 @@
-# voir
-%[gr|3]%[tr|видеть]
+# vouloir
+%[gr|3]%[tr|хотеть]
 
 ## Indicatif
 
 ### Présent
 
 [|
-|%[m|je]|%[m|vois]|
-|%[m|tu]|%[m|vois]|
-|%[m|il]|%[m|voit]|
-|%[m|nous]|%[m|voyons]|
-|%[m|vous]|%[m|voyez]|
-|%[m|ils]|%[m|voient]|
+|%[n|je]|%[m|veux]|
+|%[n|tu]|%[m|veux]|
+|%[n|il]|%[m|veut]|
+|%[n|nous]|%[m|voulons]|
+|%[n|vous]|%[m|voulez]|
+|%[n|ils]|%[m|veulent]|
 |]
+
 ### Imparfait
 
 [|
-|%[m|je]|%[m|voyais]|
-|%[m|tu]|%[m|voyais]|
-|%[m|il]|%[m|voyait]|
-|%[m|nous]|%[m|voyions]|
-|%[m|vous]|%[m|voyiez]|
-|%[m|ils]|%[m|voyaient]|
+|%[n|je]|%[m|voulais]|
+|%[n|tu]|%[m|voulais]|
+|%[n|il]|%[m|voulait]|
+|%[n|nous]|%[m|voulions]|
+|%[n|vous]|%[m|vouliez]|
+|%[n|ils]|%[m|voulaient]|
 |]
+
 ### Passé simple
 
 [|
-|%[m|je]|%[m|vis]|
-|%[m|tu]|%[m|vis]|
-|%[m|il]|%[m|vit]|
-|%[m|nous]|%[m|vîmes]|
-|%[m|vous]|%[m|vîtes]|
-|%[m|ils]|%[m|virent]|
+|%[n|je]|%[m|voulus]|
+|%[n|tu]|%[m|voulus]|
+|%[n|il]|%[m|voulut]|
+|%[n|nous]|%[m|voulûmes]|
+|%[n|vous]|%[m|voulûtes]|
+|%[n|ils]|%[m|voulurent]|
 |]
+
 ### Futur simple
 
 [|
-|%[m|je]|%[m|verrai]|
-|%[m|tu]|%[m|verras]|
-|%[m|il]|%[m|verra]|
-|%[m|nous]|%[m|verrons]|
-|%[m|vous]|%[m|verrez]|
-|%[m|ils]|%[m|verront]|
+|%[n|je]|%[m|voudrai]|
+|%[n|tu]|%[m|voudras]|
+|%[n|il]|%[m|voudra]|
+|%[n|nous]|%[m|voudrons]|
+|%[n|vous]|%[m|voudrez]|
+|%[n|ils]|%[m|voudront]|
 |]
+
 ## Conditionnel
 
 ### Présent
 
 [|
-|%[m|je]|%[m|verrais]|
-|%[m|tu]|%[m|verrais]|
-|%[m|il]|%[m|verrait]|
-|%[m|nous]|%[m|verrions]|
-|%[m|vous]|%[m|verriez]|
-|%[m|ils]|%[m|verraient]|
+|%[n|je]|%[m|voudrais]|
+|%[n|tu]|%[m|voudrais]|
+|%[n|il]|%[m|voudrait]|
+|%[n|nous]|%[m|voudrions]|
+|%[n|vous]|%[m|voudriez]|
+|%[n|ils]|%[m|voudraient]|
 |]
+
 ## Subjonctif
 
 ### Présent
 
 [|
-|%[m|que je]|%[m|voie]|
-|%[m|que tu]|%[m|voies]|
-|%[m|qu' il]|%[m|voie]|
-|%[m|que nous]|%[m|voyions]|
-|%[m|que vous]|%[m|voyiez]|
-|%[m|qu' ils]|%[m|voient]|
+|%[n|que je]|%[m|veuille]|
+|%[n|que tu]|%[m|veuilles]|
+|%[n|qu' il]|%[m|veuille]|
+|%[n|que nous]|%[m|voulions]|
+|%[n|que vous]|%[m|vouliez]|
+|%[n|qu' ils]|%[m|veuillent]|
 |]
+
 ### Imparfait
 
 [|
-|%[m|que je]|%[m|visse]|
-|%[m|que tu]|%[m|visses]|
-|%[m|qu' il]|%[m|vît]|
-|%[m|que nous]|%[m|vissions]|
-|%[m|que vous]|%[m|vissiez]|
-|%[m|qu' ils]|%[m|vissent]|
+|%[n|que je]|%[m|voulusse]|
+|%[n|que tu]|%[m|voulusses]|
+|%[n|qu' il]|%[m|voulût]|
+|%[n|que nous]|%[m|voulussions]|
+|%[n|que vous]|%[m|voulussiez]|
+|%[n|qu' ils]|%[m|voulussent]|
 |]
+
 ## Impératif
 
 ### Présent
 
 [|
-|%[m|vois]|
-|%[m|voyons]|
-|%[m|voyez]|
+|%[m|veux/veuille]|
+|%[m|voulons]|
+|%[m|voulez/veuillez]|
 |]
+
 ## Participe
 
 ### Présent
 
-%[m|voyant]
+%[m|voulant]
 
 ### Passé
 
-%[m|vu]
+%[m|voulu]

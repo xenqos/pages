@@ -6,107 +6,100 @@
 ### Présent
 
 [|
-|%[m|je]|%[m|dois]|
-|%[m|tu]|%[m|dois]|
-|%[m|il]|%[m|doit]|
-|%[m|nous]|%[m|devons]|
-|%[m|vous]|%[m|devez]|
-|%[m|ils]|%[m|doivent]|
+|%[n|je]|%[m|dois]|
+|%[n|tu]|%[m|dois]|
+|%[n|il]|%[m|doit]|
+|%[n|nous]|%[m|devons]|
+|%[n|vous]|%[m|devez]|
+|%[n|ils]|%[m|doivent]|
 |]
-
 
 ### Imparfait
 
 [|
-|%[m|je]|%[m|devais]|
-|%[m|tu]|%[m|devais]|
-|%[m|il]|%[m|devait]|
-|%[m|nous]|%[m|devions]|
-|%[m|vous]|%[m|deviez]|
-|%[m|ils]|%[m|devaient]|
+|%[n|je]|%[m|devais]|
+|%[n|tu]|%[m|devais]|
+|%[n|il]|%[m|devait]|
+|%[n|nous]|%[m|devions]|
+|%[n|vous]|%[m|deviez]|
+|%[n|ils]|%[m|devaient]|
 |]
-
 
 ### Passé simple
 
 [|
-|%[m|je]|%[m|dus]|
-|%[m|tu]|%[m|dus]|
-|%[m|il]|%[m|dut]|
-|%[m|nous]|%[m|dûmes]|
-|%[m|vous]|%[m|dûtes]|
-|%[m|ils]|%[m|durent]|
+|%[n|je]|%[m|dus]|
+|%[n|tu]|%[m|dus]|
+|%[n|il]|%[m|dut]|
+|%[n|nous]|%[m|dûmes]|
+|%[n|vous]|%[m|dûtes]|
+|%[n|ils]|%[m|durent]|
 |]
-
 
 ### Futur simple
 
 [|
-|%[m|je]|%[m|devrai]|
-|%[m|tu]|%[m|devras]|
-|%[m|il]|%[m|devra]|
-|%[m|nous]|%[m|devrons]|
-|%[m|vous]|%[m|devrez]|
-|%[m|ils]|%[m|devront]|
+|%[n|je]|%[m|devrai]|
+|%[n|tu]|%[m|devras]|
+|%[n|il]|%[m|devra]|
+|%[n|nous]|%[m|devrons]|
+|%[n|vous]|%[m|devrez]|
+|%[n|ils]|%[m|devront]|
 |]
-
 
 ## Conditionnel
 
 ### Présent
 
 [|
-|%[m|je]|%[m|devrais]|
-|%[m|tu]|%[m|devrais]|
-|%[m|il]|%[m|devrait]|
-|%[m|nous]|%[m|devrions]|
-|%[m|vous]|%[m|devriez]|
-|%[m|ils]|%[m|devraient]|
+|%[n|je]|%[m|devrais]|
+|%[n|tu]|%[m|devrais]|
+|%[n|il]|%[m|devrait]|
+|%[n|nous]|%[m|devrions]|
+|%[n|vous]|%[m|devriez]|
+|%[n|ils]|%[m|devraient]|
 |]
-
 
 ## Subjonctif
 
 ### Présent
 
 [|
-|%[m|que je]|%[m|doive]|
-|%[m|que tu]|%[m|doives]|
-|%[m|qu' il]|%[m|doive]|
-|%[m|que nous]|%[m|devions]|
-|%[m|que vous]|%[m|deviez]|
-|%[m|qu' ils]|%[m|doivent]|
+|%[n|que je]|%[m|doive]|
+|%[n|que tu]|%[m|doives]|
+|%[n|qu' il]|%[m|doive]|
+|%[n|que nous]|%[m|devions]|
+|%[n|que vous]|%[m|deviez]|
+|%[n|qu' ils]|%[m|doivent]|
 |]
-
 
 ### Imparfait
 
 [|
-|%[m|que je]|%[m|dusse]|
-|%[m|que tu]|%[m|dusses]|
-|%[m|qu' il]|%[m|dût]|
-|%[m|que nous]|%[m|dussions]|
-|%[m|que vous]|%[m|dussiez]|
-|%[m|qu' ils]|%[m|dussent]|
+|%[n|que je]|%[m|dusse]|
+|%[n|que tu]|%[m|dusses]|
+|%[n|qu' il]|%[m|dût]|
+|%[n|que nous]|%[m|dussions]|
+|%[n|que vous]|%[m|dussiez]|
+|%[n|qu' ils]|%[m|dussent]|
 |]
-
 
 ## Impératif
 
 ### Présent
 
 [|
-|dois|
-|devons|
-|devez|
+|%[m|dois]|
+|%[m|devons]|
+|%[m|devez]|
 |]
 
 ## Participe
 
 ### Présent
 
-devant
+%[m|devant]
 
 ### Passé
 
-dû
+%[m|dû]

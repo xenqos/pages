@@ -6,107 +6,100 @@
 ### Présent
 
 [|
-|%[m|je]|%[m|fais]|
-|%[m|tu]|%[m|fais]|
-|%[m|il]|%[m|fait]|
-|%[m|nous]|%[m|faisons]|
-|%[m|vous]|%[m|faites]|
-|%[m|ils]|%[m|font]|
+|%[n|je]|%[m|fais]|
+|%[n|tu]|%[m|fais]|
+|%[n|il]|%[m|fait]|
+|%[n|nous]|%[m|faisons]|
+|%[n|vous]|%[m|faites]|
+|%[n|ils]|%[m|font]|
 |]
-
 
 ### Imparfait
 
 [|
-|%[m|je]|%[m|faisais]|
-|%[m|tu]|%[m|faisais]|
-|%[m|il]|%[m|faisait]|
-|%[m|nous]|%[m|faisions]|
-|%[m|vous]|%[m|faisiez]|
-|%[m|ils]|%[m|faisaient]|
+|%[n|je]|%[m|faisais]|
+|%[n|tu]|%[m|faisais]|
+|%[n|il]|%[m|faisait]|
+|%[n|nous]|%[m|faisions]|
+|%[n|vous]|%[m|faisiez]|
+|%[n|ils]|%[m|faisaient]|
 |]
-
 
 ### Passé simple
 
 [|
-|%[m|je]|%[m|fis]|
-|%[m|tu]|%[m|fis]|
-|%[m|il]|%[m|fit]|
-|%[m|nous]|%[m|fîmes]|
-|%[m|vous]|%[m|fîtes]|
-|%[m|ils]|%[m|firent]|
+|%[n|je]|%[m|fis]|
+|%[n|tu]|%[m|fis]|
+|%[n|il]|%[m|fit]|
+|%[n|nous]|%[m|fîmes]|
+|%[n|vous]|%[m|fîtes]|
+|%[n|ils]|%[m|firent]|
 |]
-
 
 ### Futur simple
 
 [|
-|%[m|je]|%[m|ferai]|
-|%[m|tu]|%[m|feras]|
-|%[m|il]|%[m|fera]|
-|%[m|nous]|%[m|ferons]|
-|%[m|vous]|%[m|ferez]|
-|%[m|ils]|%[m|feront]|
+|%[n|je]|%[m|ferai]|
+|%[n|tu]|%[m|feras]|
+|%[n|il]|%[m|fera]|
+|%[n|nous]|%[m|ferons]|
+|%[n|vous]|%[m|ferez]|
+|%[n|ils]|%[m|feront]|
 |]
-
 
 ## Conditionnel
 
 ### Présent
 
 [|
-|%[m|je]|%[m|ferais]|
-|%[m|tu]|%[m|ferais]|
-|%[m|il]|%[m|ferait]|
-|%[m|nous]|%[m|ferions]|
-|%[m|vous]|%[m|feriez]|
-|%[m|ils]|%[m|feraient]|
+|%[n|je]|%[m|ferais]|
+|%[n|tu]|%[m|ferais]|
+|%[n|il]|%[m|ferait]|
+|%[n|nous]|%[m|ferions]|
+|%[n|vous]|%[m|feriez]|
+|%[n|ils]|%[m|feraient]|
 |]
-
 
 ## Subjonctif
 
 ### Présent
 
 [|
-|%[m|que je]|%[m|fasse]|
-|%[m|que tu]|%[m|fasses]|
-|%[m|qu' il]|%[m|fasse]|
-|%[m|que nous]|%[m|fassions]|
-|%[m|que vous]|%[m|fassiez]|
-|%[m|qu' ils]|%[m|fassent]|
+|%[n|que je]|%[m|fasse]|
+|%[n|que tu]|%[m|fasses]|
+|%[n|qu' il]|%[m|fasse]|
+|%[n|que nous]|%[m|fassions]|
+|%[n|que vous]|%[m|fassiez]|
+|%[n|qu' ils]|%[m|fassent]|
 |]
-
 
 ### Imparfait
 
 [|
-|%[m|que je]|%[m|fisse]|
-|%[m|que tu]|%[m|fisses]|
-|%[m|qu' il]|%[m|fît]|
-|%[m|que nous]|%[m|fissions]|
-|%[m|que vous]|%[m|fissiez]|
-|%[m|qu' ils]|%[m|fissent]|
+|%[n|que je]|%[m|fisse]|
+|%[n|que tu]|%[m|fisses]|
+|%[n|qu' il]|%[m|fît]|
+|%[n|que nous]|%[m|fissions]|
+|%[n|que vous]|%[m|fissiez]|
+|%[n|qu' ils]|%[m|fissent]|
 |]
-
 
 ## Impératif
 
 ### Présent
 
 [|
-|fais|
-|faisons|
-|faites|
+|%[m|fais]|
+|%[m|faisons]|
+|%[m|faites]|
 |]
 
 ## Participe
 
 ### Présent
 
-faisant
+%[m|faisant]
 
 ### Passé
 
-fait
+%[m|fait]

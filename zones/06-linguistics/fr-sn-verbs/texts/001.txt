@@ -1,97 +1,105 @@
-# être
-%[gr|3]%[tr|быть]
+# avoir
+%[gr|3]%[tr|иметь]
 
 ## Indicatif
 
 ### Présent
 
 [|
-|%[m|je]|%[m|suis]|
-|%[m|tu]|%[m|es]|
-|%[m|il]|%[m|est]|
-|%[m|nous]|%[m|sommes]|
-|%[m|vous]|%[m|êtes]|
-|%[m|ils]|%[m|sont]|
+|%[n|j']|%[m|ai]|
+|%[n|tu]|%[m|as]|
+|%[n|il]|%[m|a]|
+|%[n|nous]|%[m|avons]|
+|%[n|vous]|%[m|avez]|
+|%[n|ils]|%[m|ont]|
 |]
+
 ### Imparfait
 
 [|
-|%[m|j' ]|%[m|étais]|
-|%[m|tu]|%[m|étais]|
-|%[m|il]|%[m|était]|
-|%[m|nous]|%[m|étions]|
-|%[m|vous]|%[m|étiez]|
-|%[m|ils]|%[m|étaient]|
+|%[n|j']|%[m|avais]|
+|%[n|tu]|%[m|avais]|
+|%[n|il]|%[m|avait]|
+|%[n|nous]|%[m|avions]|
+|%[n|vous]|%[m|aviez]|
+|%[n|ils]|%[m|avaient]|
 |]
+
 ### Passé simple
 
 [|
-|%[m|je]|%[m|fus]|
-|%[m|tu]|%[m|fus]|
-|%[m|il]|%[m|fut]|
-|%[m|nous]|%[m|fûmes]|
-|%[m|vous]|%[m|fûtes]|
-|%[m|ils]|%[m|furent]|
+|%[n|j']|%[m|eus]|
+|%[n|tu]|%[m|eus]|
+|%[n|il]|%[m|eut]|
+|%[n|nous]|%[m|eûmes]|
+|%[n|vous]|%[m|eûtes]|
+|%[n|ils]|%[m|eurent]|
 |]
+
 ### Futur simple
 
 [|
-|%[m|je]|%[m|serai]|
-|%[m|tu]|%[m|seras]|
-|%[m|il]|%[m|sera]|
-|%[m|nous]|%[m|serons]|
-|%[m|vous]|%[m|serez]|
-|%[m|ils]|%[m|seront]|
+|%[n|j']|%[m|aurai]|
+|%[n|tu]|%[m|auras]|
+|%[n|il]|%[m|aura]|
+|%[n|nous]|%[m|aurons]|
+|%[n|vous]|%[m|aurez]|
+|%[n|ils]|%[m|auront]|
 |]
+
 ## Conditionnel
 
 ### Présent
 
 [|
-|%[m|je]|%[m|serais]|
-|%[m|tu]|%[m|serais]|
-|%[m|il]|%[m|serait]|
-|%[m|nous]|%[m|serions]|
-|%[m|vous]|%[m|seriez]|
-|%[m|ils]|%[m|seraient]|
+|%[n|j']|%[m|aurais]|
+|%[n|tu]|%[m|aurais]|
+|%[n|il]|%[m|aurait]|
+|%[n|nous]|%[m|aurions]|
+|%[n|vous]|%[m|auriez]|
+|%[n|ils]|%[m|auraient]|
 |]
+
 ## Subjonctif
 
 ### Présent
 
 [|
-|%[m|que je]|%[m|sois]|
-|%[m|que tu]|%[m|sois]|
-|%[m|qu' il]|%[m|soit]|
-|%[m|que nous]|%[m|soyons]|
-|%[m|que vous]|%[m|soyez]|
-|%[m|qu' ils]|%[m|soient]|
+|%[n|que j']|%[m|aie]|
+|%[n|que tu]|%[m|aies]|
+|%[n|qu' il]|%[m|ait]|
+|%[n|que nous]|%[m|ayons]|
+|%[n|que vous]|%[m|ayez]|
+|%[n|qu' ils]|%[m|aient]|
 |]
+
 ### Imparfait
 
 [|
-|%[m|que je]|%[m|fusse]|
-|%[m|que tu]|%[m|fusses]|
-|%[m|qu' il]|%[m|fût]|
-|%[m|que nous]|%[m|fussions]|
-|%[m|que vous]|%[m|fussiez]|
-|%[m|qu' ils]|%[m|fussent]|
+|%[n|que j']|%[m|eusse]|
+|%[n|que tu]|%[m|eusses]|
+|%[n|qu' il]|%[m|eût]|
+|%[n|que nous]|%[m|eussions]|
+|%[n|que vous]|%[m|eussiez]|
+|%[n|qu' ils]|%[m|eussent]|
 |]
+
 ## Impératif
 
 ### Présent
 
 [|
-|%[m|sois]|
-|%[m|soyons]|
-|%[m|soyez]|
+|%[m|aie]|
+|%[m|ayons]|
+|%[m|ayez]|
 |]
+
 ## Participe
 
 ### Présent
 
-%[m|étant]
+%[m|ayant]
 
 ### Passé
 
-%[m|été]
+%[m|eu]

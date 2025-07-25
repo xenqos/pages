@@ -6,107 +6,100 @@
 ### Présent
 
 [|
-|%[m|j']|%[m|ai]|
-|%[m|tu]|%[m|as]|
-|%[m|il]|%[m|a]|
-|%[m|nous]|%[m|avons]|
-|%[m|vous]|%[m|avez]|
-|%[m|ils]|%[m|ont]|
+|%[n|j']|%[m|ai]|
+|%[n|tu]|%[m|as]|
+|%[n|il]|%[m|a]|
+|%[n|nous]|%[m|avons]|
+|%[n|vous]|%[m|avez]|
+|%[n|ils]|%[m|ont]|
 |]
-
 
 ### Imparfait
 
 [|
-|%[m|j']|%[m|avais]|
-|%[m|tu]|%[m|avais]|
-|%[m|il]|%[m|avait]|
-|%[m|nous]|%[m|avions]|
-|%[m|vous]|%[m|aviez]|
-|%[m|ils]|%[m|avaient]|
+|%[n|j']|%[m|avais]|
+|%[n|tu]|%[m|avais]|
+|%[n|il]|%[m|avait]|
+|%[n|nous]|%[m|avions]|
+|%[n|vous]|%[m|aviez]|
+|%[n|ils]|%[m|avaient]|
 |]
-
 
 ### Passé simple
 
 [|
-|%[m|j']|%[m|eus]|
-|%[m|tu]|%[m|eus]|
-|%[m|il]|%[m|eut]|
-|%[m|nous]|%[m|eûmes]|
-|%[m|vous]|%[m|eûtes]|
-|%[m|ils]|%[m|eurent]|
+|%[n|j']|%[m|eus]|
+|%[n|tu]|%[m|eus]|
+|%[n|il]|%[m|eut]|
+|%[n|nous]|%[m|eûmes]|
+|%[n|vous]|%[m|eûtes]|
+|%[n|ils]|%[m|eurent]|
 |]
-
 
 ### Futur simple
 
 [|
-|%[m|j']|%[m|aurai]|
-|%[m|tu]|%[m|auras]|
-|%[m|il]|%[m|aura]|
-|%[m|nous]|%[m|aurons]|
-|%[m|vous]|%[m|aurez]|
-|%[m|ils]|%[m|auront]|
+|%[n|j']|%[m|aurai]|
+|%[n|tu]|%[m|auras]|
+|%[n|il]|%[m|aura]|
+|%[n|nous]|%[m|aurons]|
+|%[n|vous]|%[m|aurez]|
+|%[n|ils]|%[m|auront]|
 |]
-
 
 ## Conditionnel
 
 ### Présent
 
 [|
-|%[m|j']|%[m|aurais]|
-|%[m|tu]|%[m|aurais]|
-|%[m|il]|%[m|aurait]|
-|%[m|nous]|%[m|aurions]|
-|%[m|vous]|%[m|auriez]|
-|%[m|ils]|%[m|auraient]|
+|%[n|j']|%[m|aurais]|
+|%[n|tu]|%[m|aurais]|
+|%[n|il]|%[m|aurait]|
+|%[n|nous]|%[m|aurions]|
+|%[n|vous]|%[m|auriez]|
+|%[n|ils]|%[m|auraient]|
 |]
-
 
 ## Subjonctif
 
 ### Présent
 
 [|
-|%[m|que j']|%[m|aie]|
-|%[m|que tu]|%[m|aies]|
-|%[m|qu' il]|%[m|ait]|
-|%[m|que nous]|%[m|ayons]|
-|%[m|que vous]|%[m|ayez]|
-|%[m|qu' ils]|%[m|aient]|
+|%[n|que j']|%[m|aie]|
+|%[n|que tu]|%[m|aies]|
+|%[n|qu' il]|%[m|ait]|
+|%[n|que nous]|%[m|ayons]|
+|%[n|que vous]|%[m|ayez]|
+|%[n|qu' ils]|%[m|aient]|
 |]
-
 
 ### Imparfait
 
 [|
-|%[m|que j']|%[m|eusse]|
-|%[m|que tu]|%[m|eusses]|
-|%[m|qu' il]|%[m|eût]|
-|%[m|que nous]|%[m|eussions]|
-|%[m|que vous]|%[m|eussiez]|
-|%[m|qu' ils]|%[m|eussent]|
+|%[n|que j']|%[m|eusse]|
+|%[n|que tu]|%[m|eusses]|
+|%[n|qu' il]|%[m|eût]|
+|%[n|que nous]|%[m|eussions]|
+|%[n|que vous]|%[m|eussiez]|
+|%[n|qu' ils]|%[m|eussent]|
 |]
-
 
 ## Impératif
 
 ### Présent
 
 [|
-|aie|
-|ayons|
-|ayez|
+|%[m|aie]|
+|%[m|ayons]|
+|%[m|ayez]|
 |]
 
 ## Participe
 
 ### Présent
 
-ayant
+%[m|ayant]
 
 ### Passé
 
-eu
+%[m|eu]

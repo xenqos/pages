@@ -6,77 +6,84 @@
 ### Présent
 
 [|
-|%[m|je ]|%[m|vais]|
-|%[m|tu]|%[m|vas]|
-|%[m|il]|%[m|va]|
-|%[m|nous]|%[m|allons]|
-|%[m|vous]|%[m|allez]|
-|%[m|ils]|%[m|vont]|
+|%[n|je ]|%[m|vais]|
+|%[n|tu]|%[m|vas]|
+|%[n|il]|%[m|va]|
+|%[n|nous]|%[m|allons]|
+|%[n|vous]|%[m|allez]|
+|%[n|ils]|%[m|vont]|
 |]
+
 ### Imparfait
 
 [|
-|%[m|j']|%[m|allais]|
-|%[m|tu]|%[m|allais]|
-|%[m|il]|%[m|allait]|
-|%[m|nous]|%[m|allions]|
-|%[m|vous]|%[m|alliez]|
-|%[m|ils]|%[m|allaient]|
+|%[n|j']|%[m|allais]|
+|%[n|tu]|%[m|allais]|
+|%[n|il]|%[m|allait]|
+|%[n|nous]|%[m|allions]|
+|%[n|vous]|%[m|alliez]|
+|%[n|ils]|%[m|allaient]|
 |]
+
 ### Passé simple
 
 [|
-|%[m|j']|%[m|allai]|
-|%[m|tu]|%[m|allas]|
-|%[m|il]|%[m|alla]|
-|%[m|nous]|%[m|allâmes]|
-|%[m|vous]|%[m|allâtes]|
-|%[m|ils]|%[m|allèrent]|
+|%[n|j']|%[m|allai]|
+|%[n|tu]|%[m|allas]|
+|%[n|il]|%[m|alla]|
+|%[n|nous]|%[m|allâmes]|
+|%[n|vous]|%[m|allâtes]|
+|%[n|ils]|%[m|allèrent]|
 |]
+
 ### Futur simple
 
 [|
-|%[m|j']|%[m|irai]|
-|%[m|tu]|%[m|iras]|
-|%[m|il]|%[m|ira]|
-|%[m|nous]|%[m|irons]|
-|%[m|vous]|%[m|irez]|
-|%[m|ils]|%[m|iront]|
+|%[n|j']|%[m|irai]|
+|%[n|tu]|%[m|iras]|
+|%[n|il]|%[m|ira]|
+|%[n|nous]|%[m|irons]|
+|%[n|vous]|%[m|irez]|
+|%[n|ils]|%[m|iront]|
 |]
+
 ## Conditionnel
 
 ### Présent
 
 [|
-|%[m|j']|%[m|irais]|
-|%[m|tu]|%[m|irais]|
-|%[m|il]|%[m|irait]|
-|%[m|nous]|%[m|irions]|
-|%[m|vous]|%[m|iriez]|
-|%[m|ils]|%[m|iraient]|
+|%[n|j']|%[m|irais]|
+|%[n|tu]|%[m|irais]|
+|%[n|il]|%[m|irait]|
+|%[n|nous]|%[m|irions]|
+|%[n|vous]|%[m|iriez]|
+|%[n|ils]|%[m|iraient]|
 |]
+
 ## Subjonctif
 
 ### Présent
 
 [|
-|%[m|que j']|%[m|aille]|
-|%[m|que tu]|%[m|ailles]|
-|%[m|qu' il]|%[m|aille]|
-|%[m|que nous]|%[m|allions]|
-|%[m|que vous]|%[m|alliez]|
-|%[m|qu' ils]|%[m|aillent]|
+|%[n|que j']|%[m|aille]|
+|%[n|que tu]|%[m|ailles]|
+|%[n|qu' il]|%[m|aille]|
+|%[n|que nous]|%[m|allions]|
+|%[n|que vous]|%[m|alliez]|
+|%[n|qu' ils]|%[m|aillent]|
 |]
+
 ### Imparfait
 
 [|
-|%[m|que j']|%[m|allasse]|
-|%[m|que tu]|%[m|allasses]|
-|%[m|qu' il]|%[m|allât]|
-|%[m|que nous]|%[m|allassions]|
-|%[m|que vous]|%[m|allassiez]|
-|%[m|qu' ils]|%[m|allassent]|
+|%[n|que j']|%[m|allasse]|
+|%[n|que tu]|%[m|allasses]|
+|%[n|qu' il]|%[m|allât]|
+|%[n|que nous]|%[m|allassions]|
+|%[n|que vous]|%[m|allassiez]|
+|%[n|qu' ils]|%[m|allassent]|
 |]
+
 ## Impératif
 
 ### Présent
@@ -86,6 +93,7 @@
 |%[m|allons]|
 |%[m|allez]|
 |]
+
 ## Participe
 
 ### Présent

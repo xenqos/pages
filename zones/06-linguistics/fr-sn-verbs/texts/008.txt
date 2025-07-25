@@ -1,97 +1,105 @@
-# parler
-%[gr|1]%[tr|говорить]
+# devoir
+%[gr|3]%[tr|должен]
 
 ## Indicatif
 
 ### Présent
 
 [|
-|%[m|je]|%[m|parle]|
-|%[m|tu]|%[m|parles]|
-|%[m|il]|%[m|parle]|
-|%[m|nous]|%[m|parlons]|
-|%[m|vous]|%[m|parlez]|
-|%[m|ils]|%[m|parlent]|
+|%[n|je]|%[m|dois]|
+|%[n|tu]|%[m|dois]|
+|%[n|il]|%[m|doit]|
+|%[n|nous]|%[m|devons]|
+|%[n|vous]|%[m|devez]|
+|%[n|ils]|%[m|doivent]|
 |]
+
 ### Imparfait
 
 [|
-|%[m|je]|%[m|parlais]|
-|%[m|tu]|%[m|parlais]|
-|%[m|il]|%[m|parlait]|
-|%[m|nous]|%[m|parlions]|
-|%[m|vous]|%[m|parliez]|
-|%[m|ils]|%[m|parlaient]|
+|%[n|je]|%[m|devais]|
+|%[n|tu]|%[m|devais]|
+|%[n|il]|%[m|devait]|
+|%[n|nous]|%[m|devions]|
+|%[n|vous]|%[m|deviez]|
+|%[n|ils]|%[m|devaient]|
 |]
+
 ### Passé simple
 
 [|
-|%[m|je]|%[m|parlai]|
-|%[m|tu]|%[m|parlas]|
-|%[m|il]|%[m|parla]|
-|%[m|nous]|%[m|parlâmes]|
-|%[m|vous]|%[m|parlâtes]|
-|%[m|ils]|%[m|parlèrent]|
+|%[n|je]|%[m|dus]|
+|%[n|tu]|%[m|dus]|
+|%[n|il]|%[m|dut]|
+|%[n|nous]|%[m|dûmes]|
+|%[n|vous]|%[m|dûtes]|
+|%[n|ils]|%[m|durent]|
 |]
+
 ### Futur simple
 
 [|
-|%[m|je]|%[m|parlerai]|
-|%[m|tu]|%[m|parleras]|
-|%[m|il]|%[m|parlera]|
-|%[m|nous]|%[m|parlerons]|
-|%[m|vous]|%[m|parlerez]|
-|%[m|ils]|%[m|parleront]|
+|%[n|je]|%[m|devrai]|
+|%[n|tu]|%[m|devras]|
+|%[n|il]|%[m|devra]|
+|%[n|nous]|%[m|devrons]|
+|%[n|vous]|%[m|devrez]|
+|%[n|ils]|%[m|devront]|
 |]
+
 ## Conditionnel
 
 ### Présent
 
 [|
-|%[m|je]|%[m|parlerais]|
-|%[m|tu]|%[m|parlerais]|
-|%[m|il]|%[m|parlerait]|
-|%[m|nous]|%[m|parlerions]|
-|%[m|vous]|%[m|parleriez]|
-|%[m|ils]|%[m|parleraient]|
+|%[n|je]|%[m|devrais]|
+|%[n|tu]|%[m|devrais]|
+|%[n|il]|%[m|devrait]|
+|%[n|nous]|%[m|devrions]|
+|%[n|vous]|%[m|devriez]|
+|%[n|ils]|%[m|devraient]|
 |]
+
 ## Subjonctif
 
 ### Présent
 
 [|
-|%[m|que je]|%[m|parle]|
-|%[m|que tu]|%[m|parles]|
-|%[m|qu' il]|%[m|parle]|
-|%[m|que nous]|%[m|parlions]|
-|%[m|que vous]|%[m|parliez]|
-|%[m|qu' ils]|%[m|parlent]|
+|%[n|que je]|%[m|doive]|
+|%[n|que tu]|%[m|doives]|
+|%[n|qu' il]|%[m|doive]|
+|%[n|que nous]|%[m|devions]|
+|%[n|que vous]|%[m|deviez]|
+|%[n|qu' ils]|%[m|doivent]|
 |]
+
 ### Imparfait
 
 [|
-|%[m|que je]|%[m|parlasse]|
-|%[m|que tu]|%[m|parlasses]|
-|%[m|qu' il]|%[m|parlât]|
-|%[m|que nous]|%[m|parlassions]|
-|%[m|que vous]|%[m|parlassiez]|
-|%[m|qu' ils]|%[m|parlassent]|
+|%[n|que je]|%[m|dusse]|
+|%[n|que tu]|%[m|dusses]|
+|%[n|qu' il]|%[m|dût]|
+|%[n|que nous]|%[m|dussions]|
+|%[n|que vous]|%[m|dussiez]|
+|%[n|qu' ils]|%[m|dussent]|
 |]
+
 ## Impératif
 
 ### Présent
 
 [|
-|%[m|parle]|
-|%[m|parlons]|
-|%[m|parlez]|
+|%[m|dois]|
+|%[m|devons]|
+|%[m|devez]|
 |]
+
 ## Participe
 
 ### Présent
 
-%[m|parlant]
+%[m|devant]
 
 ### Passé
 
-%[m|parlé]
+%[m|dû]

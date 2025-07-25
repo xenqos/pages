@@ -6,107 +6,100 @@
 ### Présent
 
 [|
-|%[m|je]|%[m|sais]|
-|%[m|tu]|%[m|sais]|
-|%[m|il]|%[m|sait]|
-|%[m|nous]|%[m|savons]|
-|%[m|vous]|%[m|savez]|
-|%[m|ils]|%[m|savent]|
+|%[n|je]|%[m|sais]|
+|%[n|tu]|%[m|sais]|
+|%[n|il]|%[m|sait]|
+|%[n|nous]|%[m|savons]|
+|%[n|vous]|%[m|savez]|
+|%[n|ils]|%[m|savent]|
 |]
-
 
 ### Imparfait
 
 [|
-|%[m|je]|%[m|savais]|
-|%[m|tu]|%[m|savais]|
-|%[m|il]|%[m|savait]|
-|%[m|nous]|%[m|savions]|
-|%[m|vous]|%[m|saviez]|
-|%[m|ils]|%[m|savaient]|
+|%[n|je]|%[m|savais]|
+|%[n|tu]|%[m|savais]|
+|%[n|il]|%[m|savait]|
+|%[n|nous]|%[m|savions]|
+|%[n|vous]|%[m|saviez]|
+|%[n|ils]|%[m|savaient]|
 |]
-
 
 ### Passé simple
 
 [|
-|%[m|je]|%[m|sus]|
-|%[m|tu]|%[m|sus]|
-|%[m|il]|%[m|sut]|
-|%[m|nous]|%[m|sûmes]|
-|%[m|vous]|%[m|sûtes]|
-|%[m|ils]|%[m|surent]|
+|%[n|je]|%[m|sus]|
+|%[n|tu]|%[m|sus]|
+|%[n|il]|%[m|sut]|
+|%[n|nous]|%[m|sûmes]|
+|%[n|vous]|%[m|sûtes]|
+|%[n|ils]|%[m|surent]|
 |]
-
 
 ### Futur simple
 
 [|
-|%[m|je]|%[m|saurai]|
-|%[m|tu]|%[m|sauras]|
-|%[m|il]|%[m|saura]|
-|%[m|nous]|%[m|saurons]|
-|%[m|vous]|%[m|saurez]|
-|%[m|ils]|%[m|sauront]|
+|%[n|je]|%[m|saurai]|
+|%[n|tu]|%[m|sauras]|
+|%[n|il]|%[m|saura]|
+|%[n|nous]|%[m|saurons]|
+|%[n|vous]|%[m|saurez]|
+|%[n|ils]|%[m|sauront]|
 |]
-
 
 ## Conditionnel
 
 ### Présent
 
 [|
-|%[m|je]|%[m|saurais]|
-|%[m|tu]|%[m|saurais]|
-|%[m|il]|%[m|saurait]|
-|%[m|nous]|%[m|saurions]|
-|%[m|vous]|%[m|sauriez]|
-|%[m|ils]|%[m|sauraient]|
+|%[n|je]|%[m|saurais]|
+|%[n|tu]|%[m|saurais]|
+|%[n|il]|%[m|saurait]|
+|%[n|nous]|%[m|saurions]|
+|%[n|vous]|%[m|sauriez]|
+|%[n|ils]|%[m|sauraient]|
 |]
-
 
 ## Subjonctif
 
 ### Présent
 
 [|
-|%[m|que je]|%[m|sache]|
-|%[m|que tu]|%[m|saches]|
-|%[m|qu' il]|%[m|sache]|
-|%[m|que nous]|%[m|sachions]|
-|%[m|que vous]|%[m|sachiez]|
-|%[m|qu' ils]|%[m|sachent]|
+|%[n|que je]|%[m|sache]|
+|%[n|que tu]|%[m|saches]|
+|%[n|qu' il]|%[m|sache]|
+|%[n|que nous]|%[m|sachions]|
+|%[n|que vous]|%[m|sachiez]|
+|%[n|qu' ils]|%[m|sachent]|
 |]
-
 
 ### Imparfait
 
 [|
-|%[m|que je]|%[m|susse]|
-|%[m|que tu]|%[m|susses]|
-|%[m|qu' il]|%[m|sût]|
-|%[m|que nous]|%[m|sussions]|
-|%[m|que vous]|%[m|sussiez]|
-|%[m|qu' ils]|%[m|sussent]|
+|%[n|que je]|%[m|susse]|
+|%[n|que tu]|%[m|susses]|
+|%[n|qu' il]|%[m|sût]|
+|%[n|que nous]|%[m|sussions]|
+|%[n|que vous]|%[m|sussiez]|
+|%[n|qu' ils]|%[m|sussent]|
 |]
-
 
 ## Impératif
 
 ### Présent
 
 [|
-|sache|
-|sachons|
-|sachez|
+|%[m|sache]|
+|%[m|sachons]|
+|%[m|sachez]|
 |]
 
 ## Participe
 
 ### Présent
 
-sachant
+%[m|sachant]
 
 ### Passé
 
-su
+%[m|su]

@@ -1,97 +1,105 @@
-# dire
-%[gr|3]%[tr|сказать]
+# pouvoir
+%[gr|3]%[tr|мочь]
 
 ## Indicatif
 
 ### Présent
 
 [|
-|%[m|je]|%[m|dis]|
-|%[m|tu]|%[m|dis]|
-|%[m|il]|%[m|dit]|
-|%[m|nous]|%[m|disons]|
-|%[m|vous]|%[m|dites]|
-|%[m|ils]|%[m|disent]|
+|%[n|je]|%[m|peux]|
+|%[n|tu]|%[m|peux]|
+|%[n|il]|%[m|peut]|
+|%[n|nous]|%[m|pouvons]|
+|%[n|vous]|%[m|pouvez]|
+|%[n|ils]|%[m|peuvent]|
 |]
+
 ### Imparfait
 
 [|
-|%[m|je]|%[m|disais]|
-|%[m|tu]|%[m|disais]|
-|%[m|il]|%[m|disait]|
-|%[m|nous]|%[m|disions]|
-|%[m|vous]|%[m|disiez]|
-|%[m|ils]|%[m|disaient]|
+|%[n|je]|%[m|pouvais]|
+|%[n|tu]|%[m|pouvais]|
+|%[n|il]|%[m|pouvait]|
+|%[n|nous]|%[m|pouvions]|
+|%[n|vous]|%[m|pouviez]|
+|%[n|ils]|%[m|pouvaient]|
 |]
+
 ### Passé simple
 
 [|
-|%[m|je]|%[m|dis]|
-|%[m|tu]|%[m|dis]|
-|%[m|il]|%[m|dit]|
-|%[m|nous]|%[m|dîmes]|
-|%[m|vous]|%[m|dîtes]|
-|%[m|ils]|%[m|dirent]|
+|%[n|je]|%[m|pus]|
+|%[n|tu]|%[m|pus]|
+|%[n|il]|%[m|put]|
+|%[n|nous]|%[m|pûmes]|
+|%[n|vous]|%[m|pûtes]|
+|%[n|ils]|%[m|purent]|
 |]
+
 ### Futur simple
 
 [|
-|%[m|je]|%[m|dirai]|
-|%[m|tu]|%[m|diras]|
-|%[m|il]|%[m|dira]|
-|%[m|nous]|%[m|dirons]|
-|%[m|vous]|%[m|direz]|
-|%[m|ils]|%[m|diront]|
+|%[n|je]|%[m|pourrai]|
+|%[n|tu]|%[m|pourras]|
+|%[n|il]|%[m|pourra]|
+|%[n|nous]|%[m|pourrons]|
+|%[n|vous]|%[m|pourrez]|
+|%[n|ils]|%[m|pourront]|
 |]
+
 ## Conditionnel
 
 ### Présent
 
 [|
-|%[m|je]|%[m|dirais]|
-|%[m|tu]|%[m|dirais]|
-|%[m|il]|%[m|dirait]|
-|%[m|nous]|%[m|dirions]|
-|%[m|vous]|%[m|diriez]|
-|%[m|ils]|%[m|diraient]|
+|%[n|je]|%[m|pourrais]|
+|%[n|tu]|%[m|pourrais]|
+|%[n|il]|%[m|pourrait]|
+|%[n|nous]|%[m|pourrions]|
+|%[n|vous]|%[m|pourriez]|
+|%[n|ils]|%[m|pourraient]|
 |]
+
 ## Subjonctif
 
 ### Présent
 
 [|
-|%[m|que je]|%[m|dise]|
-|%[m|que tu]|%[m|dises]|
-|%[m|qu' il]|%[m|dise]|
-|%[m|que nous]|%[m|disions]|
-|%[m|que vous]|%[m|disiez]|
-|%[m|qu' ils]|%[m|disent]|
+|%[n|que je]|%[m|puisse]|
+|%[n|que tu]|%[m|puisses]|
+|%[n|qu' il]|%[m|puisse]|
+|%[n|que nous]|%[m|puissions]|
+|%[n|que vous]|%[m|puissiez]|
+|%[n|qu' ils]|%[m|puissent]|
 |]
+
 ### Imparfait
 
 [|
-|%[m|que je]|%[m|disse]|
-|%[m|que tu]|%[m|disses]|
-|%[m|qu' il]|%[m|dît]|
-|%[m|que nous]|%[m|dissions]|
-|%[m|que vous]|%[m|dissiez]|
-|%[m|qu' ils]|%[m|dissent]|
+|%[n|que je]|%[m|pusse]|
+|%[n|que tu]|%[m|pusses]|
+|%[n|qu' il]|%[m|pût]|
+|%[n|que nous]|%[m|pussions]|
+|%[n|que vous]|%[m|pussiez]|
+|%[n|qu' ils]|%[m|pussent]|
 |]
+
 ## Impératif
 
 ### Présent
 
 [|
-|%[m|dis]|
-|%[m|disons]|
-|%[m|dites]|
+|%[m|-]|
+|%[m|-]|
+|%[m|-]|
 |]
+
 ## Participe
 
 ### Présent
 
-%[m|disant]
+%[m|pouvant]
 
 ### Passé
 
-%[m|dit]
+%[m|pu]

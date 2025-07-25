@@ -6,88 +6,82 @@
 ### Présent
 
 [|
-|%[m|je]|%[m|viens]|
-|%[m|tu]|%[m|viens]|
-|%[m|il]|%[m|vient]|
-|%[m|nous]|%[m|venons]|
-|%[m|vous]|%[m|venez]|
-|%[m|ils]|%[m|viennent]|
+|%[n|je]|%[m|viens]|
+|%[n|tu]|%[m|viens]|
+|%[n|il]|%[m|vient]|
+|%[n|nous]|%[m|venons]|
+|%[n|vous]|%[m|venez]|
+|%[n|ils]|%[m|viennent]|
 |]
-
 
 ### Imparfait
 
 [|
-|%[m|je]|%[m|venais]|
-|%[m|tu]|%[m|venais]|
-|%[m|il]|%[m|venait]|
-|%[m|nous]|%[m|venions]|
-|%[m|vous]|%[m|veniez]|
-|%[m|ils]|%[m|venaient]|
+|%[n|je]|%[m|venais]|
+|%[n|tu]|%[m|venais]|
+|%[n|il]|%[m|venait]|
+|%[n|nous]|%[m|venions]|
+|%[n|vous]|%[m|veniez]|
+|%[n|ils]|%[m|venaient]|
 |]
-
 
 ### Passé simple
 
 [|
-|%[m|je]|%[m|vins]|
-|%[m|tu]|%[m|vins]|
-|%[m|il]|%[m|vint]|
-|%[m|nous]|%[m|vînmes]|
-|%[m|vous]|%[m|vîntes]|
-|%[m|ils]|%[m|vinrent]|
+|%[n|je]|%[m|vins]|
+|%[n|tu]|%[m|vins]|
+|%[n|il]|%[m|vint]|
+|%[n|nous]|%[m|vînmes]|
+|%[n|vous]|%[m|vîntes]|
+|%[n|ils]|%[m|vinrent]|
 |]
-
 
 ### Futur simple
 
 [|
-|%[m|je]|%[m|viendrai]|
-|%[m|tu]|%[m|viendras]|
-|%[m|il]|%[m|viendra]|
-|%[m|nous]|%[m|viendrons]|
-|%[m|vous]|%[m|viendrez]|
-|%[m|ils]|%[m|viendront]|
+|%[n|je]|%[m|viendrai]|
+|%[n|tu]|%[m|viendras]|
+|%[n|il]|%[m|viendra]|
+|%[n|nous]|%[m|viendrons]|
+|%[n|vous]|%[m|viendrez]|
+|%[n|ils]|%[m|viendront]|
 |]
-
 
 ## Conditionnel
 
 ### Présent
 
 [|
-|%[m|je]|%[m|viendrais]|
-|%[m|tu]|%[m|viendrais]|
-|%[m|il]|%[m|viendrait]|
-|%[m|nous]|%[m|viendrions]|
-|%[m|vous]|%[m|viendriez]|
-|%[m|ils]|%[m|viendraient]|
+|%[n|je]|%[m|viendrais]|
+|%[n|tu]|%[m|viendrais]|
+|%[n|il]|%[m|viendrait]|
+|%[n|nous]|%[m|viendrions]|
+|%[n|vous]|%[m|viendriez]|
+|%[n|ils]|%[m|viendraient]|
 |]
-
 
 ## Subjonctif
 
 ### Présent
 
 [|
-|%[m|que je]|%[m|vienne]|
-|%[m|que tu]|%[m|viennes]|
-|%[m|qu' il]|%[m|vienne]|
-|%[m|que nous]|%[m|venions]|
-|%[m|que vous]|%[m|veniez]|
-|%[m|qu' ils]|%[m|viennent]|
+|%[n|que je]|%[m|vienne]|
+|%[n|que tu]|%[m|viennes]|
+|%[n|qu' il]|%[m|vienne]|
+|%[n|que nous]|%[m|venions]|
+|%[n|que vous]|%[m|veniez]|
+|%[n|qu' ils]|%[m|viennent]|
 |]
-
 
 ### Imparfait
 
 [|
-|%[m|que je]|%[m|vinsse]|
-|%[m|que tu]|%[m|vinsses]|
-|%[m|qu' il]|%[m|vînt]|
-|%[m|que nous]|%[m|vinssions]|
-|%[m|que vous]|%[m|vinssiez]|
-|%[m|qu' ils]|%[m|vinssent]|
+|%[n|que je]|%[m|vinsse]|
+|%[n|que tu]|%[m|vinsses]|
+|%[n|qu' il]|%[m|vînt]|
+|%[n|que nous]|%[m|vinssions]|
+|%[n|que vous]|%[m|vinssiez]|
+|%[n|qu' ils]|%[m|vinssent]|
 |]
 
 
@@ -96,17 +90,17 @@
 ### Présent
 
 [|
-|viens|
-|venons|
-|venez|
+|%[m|viens]|
+|%[m|venons]|
+|%[m|venez]|
 |]
 
 ## Participe
 
 ### Présent
 
-venant
+%[m|venant]
 
 ### Passé
 
-venu
+%[m|venu]
