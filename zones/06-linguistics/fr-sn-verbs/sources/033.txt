@@ -1,0 +1,79 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-10%" pitch="0%">
+
+je donne
+tu donnes
+il donne
+nous donnons
+vous donnez
+ils donnent
+
+<break time="800ms"/>
+
+je donnais
+tu donnais
+il donnait
+nous donnions
+vous donniez
+ils donnaient
+
+<break time="800ms"/>
+
+je donnai
+tu donnas
+il donna
+nous donnâmes
+vous donnâtes
+ils donnèrent
+
+<break time="800ms"/>
+
+je donnerai
+tu donneras
+il donnera
+nous donnerons
+vous donnerez
+ils donneront
+
+<break time="800ms"/>
+
+je donnerais
+tu donnerais
+il donnerait
+nous donnerions
+vous donneriez
+ils donneraient
+
+<break time="800ms"/>
+
+que je donne
+que tu donnes
+qu'il donne
+que nous donnions
+que vous donniez
+qu'ils donnent
+
+<break time="800ms"/>
+
+que je donnasse
+que tu donnasses
+qu'il donnât
+que nous donnassions
+que vous donnassiez
+qu'ils donnassent
+
+<break time="800ms"/>
+
+donne
+donnons
+donnez
+
+<break time="800ms"/>
+
+donnant
+
+donné
+</prosody>
+</voice>
+</speak>

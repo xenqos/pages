@@ -1,0 +1,79 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-10%" pitch="0%">
+
+je suis
+tu es
+il est
+nous sommes
+vous êtes
+ils sont
+
+<break time="800ms"/>
+
+j'étais
+tu étais
+il était
+nous étions
+vous étiez
+ils étaient
+
+<break time="800ms"/>
+
+je fus
+tu fus
+il fut
+nous fûmes
+vous fûtes
+ils furent
+
+<break time="800ms"/>
+
+je serai
+tu seras
+il sera
+nous serons
+vous serez
+ils seront
+
+<break time="800ms"/>
+
+je serais
+tu serais
+il serait
+nous serions
+vous seriez
+ils seraient
+
+<break time="800ms"/>
+
+que je sois
+que tu sois
+qu'il soit
+que nous soyons
+que vous soyez
+qu'ils soient
+
+<break time="800ms"/>
+
+que je fusse
+que tu fusses
+qu'il fût
+que nous fussions
+que vous fussiez
+qu'ils fussent
+
+<break time="800ms"/>
+
+sois
+soyons
+soyez
+
+<break time="800ms"/>
+
+étant
+
+été
+</prosody>
+</voice>
+</speak>

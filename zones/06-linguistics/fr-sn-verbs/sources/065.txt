@@ -1,0 +1,79 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-10%" pitch="0%">
+
+je vends
+tu vends
+il vend
+nous vendons
+vous vendez
+ils vendent
+
+<break time="800ms"/>
+
+je vendais
+tu vendais
+il vendait
+nous vendions
+vous vendiez
+ils vendaient
+
+<break time="800ms"/>
+
+je vendis
+tu vendis
+il vendit
+nous vendîmes
+vous vendîtes
+ils vendirent
+
+<break time="800ms"/>
+
+je vendrai
+tu vendras
+il vendra
+nous vendrons
+vous vendrez
+ils vendront
+
+<break time="800ms"/>
+
+je vendrais
+tu vendrais
+il vendrait
+nous vendrions
+vous vendriez
+ils vendraient
+
+<break time="800ms"/>
+
+que je vende
+que tu vendes
+qu'il vende
+que nous vendions
+que vous vendiez
+qu'ils vendent
+
+<break time="800ms"/>
+
+que je vendisse
+que tu vendisses
+qu'il vendît
+que nous vendissions
+que vous vendissiez
+qu'ils vendissent
+
+<break time="800ms"/>
+
+vends
+vendons
+vendez
+
+<break time="800ms"/>
+
+vendant
+
+vendu
+</prosody>
+</voice>
+</speak>

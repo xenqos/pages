@@ -1,0 +1,79 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-10%" pitch="0%">
+
+je parle
+tu parles
+il parle
+nous parlons
+vous parlez
+ils parlent
+
+<break time="800ms"/>
+
+je parlais
+tu parlais
+il parlait
+nous parlions
+vous parliez
+ils parlaient
+
+<break time="800ms"/>
+
+je parlai
+tu parlas
+il parla
+nous parlâmes
+vous parlâtes
+ils parlèrent
+
+<break time="800ms"/>
+
+je parlerai
+tu parleras
+il parlera
+nous parlerons
+vous parlerez
+ils parleront
+
+<break time="800ms"/>
+
+je parlerais
+tu parlerais
+il parlerait
+nous parlerions
+vous parleriez
+ils parleraient
+
+<break time="800ms"/>
+
+que je parle
+que tu parles
+qu'il parle
+que nous parlions
+que vous parliez
+qu'ils parlent
+
+<break time="800ms"/>
+
+que je parlasse
+que tu parlasses
+qu'il parlât
+que nous parlassions
+que vous parlassiez
+qu'ils parlassent
+
+<break time="800ms"/>
+
+parle
+parlons
+parlez
+
+<break time="800ms"/>
+
+parlant
+
+parlé
+</prosody>
+</voice>
+</speak>

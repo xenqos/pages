@@ -1,0 +1,79 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-10%" pitch="0%">
+
+je sonne
+tu sonnes
+il sonne
+nous sonnons
+vous sonnez
+ils sonnent
+
+<break time="800ms"/>
+
+je sonnais
+tu sonnais
+il sonnait
+nous sonnions
+vous sonniez
+ils sonnaient
+
+<break time="800ms"/>
+
+je sonnai
+tu sonnas
+il sonna
+nous sonnâmes
+vous sonnâtes
+ils sonnèrent
+
+<break time="800ms"/>
+
+je sonnerai
+tu sonneras
+il sonnera
+nous sonnerons
+vous sonnerez
+ils sonneront
+
+<break time="800ms"/>
+
+je sonnerais
+tu sonnerais
+il sonnerait
+nous sonnerions
+vous sonneriez
+ils sonneraient
+
+<break time="800ms"/>
+
+que je sonne
+que tu sonnes
+qu'il sonne
+que nous sonnions
+que vous sonniez
+qu'ils sonnent
+
+<break time="800ms"/>
+
+que je sonnasse
+que tu sonnasses
+qu'il sonnât
+que nous sonnassions
+que vous sonnassiez
+qu'ils sonnassent
+
+<break time="800ms"/>
+
+sonne
+sonnons
+sonnez
+
+<break time="800ms"/>
+
+sonnant
+
+sonné
+</prosody>
+</voice>
+</speak>

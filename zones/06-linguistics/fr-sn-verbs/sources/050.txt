@@ -1,0 +1,79 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-10%" pitch="0%">
+
+je cours
+tu cours
+il court
+nous courons
+vous courez
+ils courent
+
+<break time="800ms"/>
+
+je courais
+tu courais
+il courait
+nous courions
+vous couriez
+ils couraient
+
+<break time="800ms"/>
+
+je courus
+tu courus
+il courut
+nous courûmes
+vous courûtes
+ils coururent
+
+<break time="800ms"/>
+
+je courrai
+tu courras
+il courra
+nous courrons
+vous courrez
+ils courront
+
+<break time="800ms"/>
+
+je courrais
+tu courrais
+il courrait
+nous courrions
+vous courriez
+ils courraient
+
+<break time="800ms"/>
+
+que je coure
+que tu coures
+qu'il coure
+que nous courions
+que vous couriez
+qu'ils courent
+
+<break time="800ms"/>
+
+que je courusse
+que tu courusses
+qu'il courût
+que nous courussions
+que vous courussiez
+qu'ils courussent
+
+<break time="800ms"/>
+
+cours
+courons
+courez
+
+<break time="800ms"/>
+
+courant
+
+couru
+</prosody>
+</voice>
+</speak>

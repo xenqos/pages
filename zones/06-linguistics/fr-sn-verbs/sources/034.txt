@@ -1,0 +1,79 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-10%" pitch="0%">
+
+je change
+tu changes
+il change
+nous changeons
+vous changez
+ils changent
+
+<break time="800ms"/>
+
+je changeais
+tu changeais
+il changeait
+nous changions
+vous changiez
+ils changeaient
+
+<break time="800ms"/>
+
+je changeai
+tu changeas
+il changea
+nous changeâmes
+vous changeâtes
+ils changèrent
+
+<break time="800ms"/>
+
+je changerai
+tu changeras
+il changera
+nous changerons
+vous changerez
+ils changeront
+
+<break time="800ms"/>
+
+je changerais
+tu changerais
+il changerait
+nous changerions
+vous changeriez
+ils changeraient
+
+<break time="800ms"/>
+
+que je change
+que tu changes
+qu'il change
+que nous changions
+que vous changiez
+qu'ils changent
+
+<break time="800ms"/>
+
+que je changeasse
+que tu changeasses
+qu'il changeât
+que nous changeassions
+que vous changeassiez
+qu'ils changeassent
+
+<break time="800ms"/>
+
+change
+changeons
+changez
+
+<break time="800ms"/>
+
+changeant
+
+changé
+</prosody>
+</voice>
+</speak>

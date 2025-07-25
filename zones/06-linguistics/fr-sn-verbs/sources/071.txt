@@ -1,0 +1,79 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-10%" pitch="0%">
+
+je meurs
+tu meurs
+il meurt
+nous mourons
+vous mourez
+ils meurent
+
+<break time="800ms"/>
+
+je mourais
+tu mourais
+il mourait
+nous mourions
+vous mouriez
+ils mouraient
+
+<break time="800ms"/>
+
+je mourus
+tu mourus
+il mourut
+nous mourûmes
+vous mourûtes
+ils moururent
+
+<break time="800ms"/>
+
+je mourrai
+tu mourras
+il mourra
+nous mourrons
+vous mourrez
+ils mourront
+
+<break time="800ms"/>
+
+je mourrais
+tu mourrais
+il mourrait
+nous mourrions
+vous mourriez
+ils mourraient
+
+<break time="800ms"/>
+
+que je meure
+que tu meures
+qu'il meure
+que nous mourions
+que vous mouriez
+qu'ils meurent
+
+<break time="800ms"/>
+
+que je mourusse
+que tu mourusses
+qu'il mourût
+que nous mourussions
+que vous mourussiez
+qu'ils mourussent
+
+<break time="800ms"/>
+
+meurs
+mourons
+mourez
+
+<break time="800ms"/>
+
+mourant
+
+mort
+</prosody>
+</voice>
+</speak>

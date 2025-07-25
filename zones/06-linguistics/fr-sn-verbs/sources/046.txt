@@ -1,0 +1,79 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-10%" pitch="0%">
+
+j'arrive
+tu arrives
+il arrive
+nous arrivons
+vous arrivez
+ils arrivent
+
+<break time="800ms"/>
+
+j'arrivais
+tu arrivais
+il arrivait
+nous arrivions
+vous arriviez
+ils arrivaient
+
+<break time="800ms"/>
+
+j'arrivai
+tu arrivas
+il arriva
+nous arrivâmes
+vous arrivâtes
+ils arrivèrent
+
+<break time="800ms"/>
+
+j'arriverai
+tu arriveras
+il arrivera
+nous arriverons
+vous arriverez
+ils arriveront
+
+<break time="800ms"/>
+
+j'arriverais
+tu arriverais
+il arriverait
+nous arriverions
+vous arriveriez
+ils arriveraient
+
+<break time="800ms"/>
+
+que j'arrive
+que tu arrives
+qu'il arrive
+que nous arrivions
+que vous arriviez
+qu'ils arrivent
+
+<break time="800ms"/>
+
+que j'arrivasse
+que tu arrivasses
+qu'il arrivât
+que nous arrivassions
+que vous arrivassiez
+qu'ils arrivassent
+
+<break time="800ms"/>
+
+arrive
+arrivons
+arrivez
+
+<break time="800ms"/>
+
+arrivant
+
+arrivé
+</prosody>
+</voice>
+</speak>

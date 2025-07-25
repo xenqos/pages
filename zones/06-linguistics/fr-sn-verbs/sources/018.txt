@@ -1,0 +1,79 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-10%" pitch="0%">
+
+je réponds
+tu réponds
+il répond
+nous répondons
+vous répondez
+ils répondent
+
+<break time="800ms"/>
+
+je répondais
+tu répondais
+il répondait
+nous répondions
+vous répondiez
+ils répondaient
+
+<break time="800ms"/>
+
+je répondis
+tu répondis
+il répondit
+nous répondîmes
+vous répondîtes
+ils répondirent
+
+<break time="800ms"/>
+
+je répondrai
+tu répondras
+il répondra
+nous répondrons
+vous répondrez
+ils répondront
+
+<break time="800ms"/>
+
+je répondrais
+tu répondrais
+il répondrait
+nous répondrions
+vous répondriez
+ils répondraient
+
+<break time="800ms"/>
+
+que je réponde
+que tu répondes
+qu'il réponde
+que nous répondions
+que vous répondiez
+qu'ils répondent
+
+<break time="800ms"/>
+
+que je répondisse
+que tu répondisses
+qu'il répondît
+que nous répondissions
+que vous répondissiez
+qu'ils répondissent
+
+<break time="800ms"/>
+
+réponds
+répondons
+répondez
+
+<break time="800ms"/>
+
+répondant
+
+répondu
+</prosody>
+</voice>
+</speak>

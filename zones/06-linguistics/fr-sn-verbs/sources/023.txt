@@ -1,0 +1,79 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-10%" pitch="0%">
+
+je pense
+tu penses
+il pense
+nous pensons
+vous pensez
+ils pensent
+
+<break time="800ms"/>
+
+je pensais
+tu pensais
+il pensait
+nous pensions
+vous pensiez
+ils pensaient
+
+<break time="800ms"/>
+
+je pensai
+tu pensas
+il pensa
+nous pensâmes
+vous pensâtes
+ils pensèrent
+
+<break time="800ms"/>
+
+je penserai
+tu penseras
+il pensera
+nous penserons
+vous penserez
+ils penseront
+
+<break time="800ms"/>
+
+je penserais
+tu penserais
+il penserait
+nous penserions
+vous penseriez
+ils penseraient
+
+<break time="800ms"/>
+
+que je pense
+que tu penses
+qu'il pense
+que nous pensions
+que vous pensiez
+qu'ils pensent
+
+<break time="800ms"/>
+
+que je pensasse
+que tu pensasses
+qu'il pensât
+que nous pensassions
+que vous pensassiez
+qu'ils pensassent
+
+<break time="800ms"/>
+
+pense
+pensons
+pensez
+
+<break time="800ms"/>
+
+pensant
+
+pensé
+</prosody>
+</voice>
+</speak>

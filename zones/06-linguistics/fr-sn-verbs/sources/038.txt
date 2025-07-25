@@ -1,0 +1,79 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-10%" pitch="0%">
+
+je choisis
+tu choisis
+il choisit
+nous choisissons
+vous choisissez
+ils choisissent
+
+<break time="800ms"/>
+
+je choisissais
+tu choisissais
+il choisissait
+nous choisissions
+vous choisissiez
+ils choisissaient
+
+<break time="800ms"/>
+
+je choisis
+tu choisis
+il choisit
+nous choisîmes
+vous choisîtes
+ils choisirent
+
+<break time="800ms"/>
+
+je choisirai
+tu choisiras
+il choisira
+nous choisirons
+vous choisirez
+ils choisiront
+
+<break time="800ms"/>
+
+je choisirais
+tu choisirais
+il choisirait
+nous choisirions
+vous choisiriez
+ils choisiraient
+
+<break time="800ms"/>
+
+que je choisisse
+que tu choisisses
+qu'il choisisse
+que nous choisissions
+que vous choisissiez
+qu'ils choisissent
+
+<break time="800ms"/>
+
+que je choisisse
+que tu choisisses
+qu'il choisît
+que nous choisissions
+que vous choisissiez
+qu'ils choisissent
+
+<break time="800ms"/>
+
+choisis
+choisissons
+choisissez
+
+<break time="800ms"/>
+
+choisissant
+
+choisi
+</prosody>
+</voice>
+</speak>

@@ -1,0 +1,79 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-10%" pitch="0%">
+
+je sors
+tu sors
+il sort
+nous sortons
+vous sortez
+ils sortent
+
+<break time="800ms"/>
+
+je sortais
+tu sortais
+il sortait
+nous sortions
+vous sortiez
+ils sortaient
+
+<break time="800ms"/>
+
+je sortis
+tu sortis
+il sortit
+nous sortîmes
+vous sortîtes
+ils sortirent
+
+<break time="800ms"/>
+
+je sortirai
+tu sortiras
+il sortira
+nous sortirons
+vous sortirez
+ils sortiront
+
+<break time="800ms"/>
+
+je sortirais
+tu sortirais
+il sortirait
+nous sortirions
+vous sortiriez
+ils sortiraient
+
+<break time="800ms"/>
+
+que je sorte
+que tu sortes
+qu'il sorte
+que nous sortions
+que vous sortiez
+qu'ils sortent
+
+<break time="800ms"/>
+
+que je sortisse
+que tu sortisses
+qu'il sortît
+que nous sortissions
+que vous sortissiez
+qu'ils sortissent
+
+<break time="800ms"/>
+
+sors
+sortons
+sortez
+
+<break time="800ms"/>
+
+sortant
+
+sorti
+</prosody>
+</voice>
+</speak>

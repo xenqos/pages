@@ -1,0 +1,79 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-10%" pitch="0%">
+
+je dois
+tu dois
+il doit
+nous devons
+vous devez
+ils doivent
+
+<break time="800ms"/>
+
+je devais
+tu devais
+il devait
+nous devions
+vous deviez
+ils devaient
+
+<break time="800ms"/>
+
+je dus
+tu dus
+il dut
+nous dûmes
+vous dûtes
+ils durent
+
+<break time="800ms"/>
+
+je devrai
+tu devras
+il devra
+nous devrons
+vous devrez
+ils devront
+
+<break time="800ms"/>
+
+je devrais
+tu devrais
+il devrait
+nous devrions
+vous devriez
+ils devraient
+
+<break time="800ms"/>
+
+que je doive
+que tu doives
+qu'il doive
+que nous devions
+que vous deviez
+qu'ils doivent
+
+<break time="800ms"/>
+
+que je dusse
+que tu dusses
+qu'il dût
+que nous dussions
+que vous dussiez
+qu'ils dussent
+
+<break time="800ms"/>
+
+dois
+devons
+devez
+
+<break time="800ms"/>
+
+devant
+
+dû
+</prosody>
+</voice>
+</speak>

@@ -1,0 +1,79 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-10%" pitch="0%">
+
+j'amuse
+tu amuses
+il amuse
+nous amusons
+vous amusez
+ils amusent
+
+<break time="800ms"/>
+
+j'amusais
+tu amusais
+il amusait
+nous amusions
+vous amusiez
+ils amusaient
+
+<break time="800ms"/>
+
+j'amusai
+tu amusas
+il amusa
+nous amusâmes
+vous amusâtes
+ils amusèrent
+
+<break time="800ms"/>
+
+j'amuserai
+tu amuseras
+il amusera
+nous amuserons
+vous amuserez
+ils amuseront
+
+<break time="800ms"/>
+
+j'amuserais
+tu amuserais
+il amuserait
+nous amuserions
+vous amuseriez
+ils amuseraient
+
+<break time="800ms"/>
+
+que j'amuse
+que tu amuses
+qu'il amuse
+que nous amusions
+que vous amusiez
+qu'ils amusent
+
+<break time="800ms"/>
+
+que j'amusasse
+que tu amusasses
+qu'il amusât
+que nous amusassions
+que vous amusassiez
+qu'ils amusassent
+
+<break time="800ms"/>
+
+amuse
+amusons
+amusez
+
+<break time="800ms"/>
+
+amusant
+
+amusé
+</prosody>
+</voice>
+</speak>
