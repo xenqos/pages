@@ -2,16 +2,20 @@
 <voice name="fr-FR-DeniseNeural">
 <prosody rate="-10%" pitch="0%">
 
-j' essaie/essaye
-tu essaies/essayes
-il essaie/essaye
-nous essayons
-vous essayez
-ilzessaient/essayent
+essayer
 
 .
 
-j' essayais
+j'essaye
+tu essayes
+il essaye
+nous essayons
+vous essayez
+ilzessayent
+
+.
+
+j'essayais
 tu essayais
 il essayait
 nous essayions
@@ -20,7 +24,7 @@ ilzessayaient
 
 .
 
-j' essayai
+j'essayai
 tu essayas
 il essaya
 nous essayâmes
@@ -29,34 +33,34 @@ ilzessayèrent
 
 .
 
-j' essaierai/essayerai
-tu essaieras/essayeras
-il essaiera/essayera
-nous essaierons/essayerons
-vous essaierez/essayerez
-ilzessaieront/essayeront
+j'essayerai
+tu essayeras
+il essayera
+nous essayerons
+vous essayerez
+ilzessayeront
 
 .
 
-j' essaierais/essayerais
-tu essaierais/essayerais
-il essaierait/essayerait
-nous essaierions/essayerions
-vous essaieriez/essayeriez
-ilzessaieraient/essayeraient
+j'essayerais
+tu essayerais
+il essayerait
+nous essayerions
+vous essayeriez
+ilzessayeraient
 
 .
 
-que j' essaie/essaye
-que tu essaies/essayes
-qu'il essaie/essaye
+que j'essaye
+que tu essayes
+qu'il essaye
 que nous essayions
 que vous essayiez
-qu'ilzessaient/essayent
+qu'ilzessayent
 
 .
 
-que j' essayasse
+que j'essayasse
 que tu essayasses
 qu'il essayât
 que nous essayassions
@@ -65,7 +69,7 @@ qu'ilzessayassent
 
 .
 
-essaie/essaye
+essaye
 essayons
 essayez
 
