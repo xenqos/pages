@@ -1,0 +1,79 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-10%" pitch="0%">
+
+j'achète
+tu achètes
+il achète
+nous achetons
+vous achetez
+ilzachètent
+
+.
+
+j'achetais
+tu achetais
+il achetait
+nous achetions
+vous achetiez
+ilzachetaient
+
+.
+
+j'achetai
+tu achetas
+il acheta
+nous achetâmes
+vous achetâtes
+ilzachetèrent
+
+.
+
+j'achèterai
+tu achèteras
+il achètera
+nous achèterons
+vous achèterez
+ilzachèteront
+
+.
+
+j'achèterais
+tu achèterais
+il achèterait
+nous achèterions
+vous achèteriez
+ilzachèteraient
+
+.
+
+que j'achète
+que tu achètes
+qu'il achète
+que nous achetions
+que vous achetiez
+qu'ilzachètent
+
+.
+
+que j'achetasse
+que tu achetasses
+qu'il achetât
+que nous achetassions
+que vous achetassiez
+qu'ilzachetassent
+
+.
+
+achète
+achetons
+achetez
+
+.
+
+achetant
+
+acheté
+</prosody>
+</voice>
+</speak>

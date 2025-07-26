@@ -1,0 +1,78 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-10%" pitch="0%">
+
+je travaille
+tu travailles
+il travaille
+nous travaillons
+vous travaillez
+ils travaillent
+
+.
+
+je travaillais
+tu travaillais
+il travaillait
+nous travaillions
+vous travailliez
+ils travaillaient
+
+.
+
+je travaillai
+tu travaillas
+il travailla
+nous travaillâmes
+vous travaillâtes
+ils travaillèrent
+
+.
+
+je travaillerai
+tu travailleras
+il travaillera
+nous travaillerons
+vous travaillerez
+ils travailleront
+
+.
+
+je travaillerais
+tu travaillerais
+il travaillerait
+nous travaillerions
+vous travailleriez
+ils travailleraient
+
+.
+
+que je travaille
+que tu travailles
+qu'il travaille
+que nous travaillions
+que vous travailliez
+qu'ils travaillent
+
+.
+
+que je travaillasse
+que tu travaillasses
+qu'il travaillât
+que nous travaillassions
+que vous travaillassiez
+qu'ils travaillassent
+
+.
+
+travaille
+travaillons
+travaillez
+
+.
+
+travaillant
+travaillé
+</prosody>
+</voice>
+</speak>

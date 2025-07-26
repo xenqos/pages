@@ -1,0 +1,78 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-10%" pitch="0%">
+
+je mange
+tu manges
+il mange
+nous mangeons
+vous mangez
+ils mangent
+
+.
+
+je mangeais
+tu mangeais
+il mangeait
+nous mangions
+vous mangiez
+ils mangeaient
+
+.
+
+je mangeai
+tu mangeas
+il mangea
+nous mangeâmes
+vous mangeâtes
+ils mangèrent
+
+.
+
+je mangerai
+tu mangeras
+il mangera
+nous mangerons
+vous mangerez
+ils mangeront
+
+.
+
+je mangerais
+tu mangerais
+il mangerait
+nous mangerions
+vous mangeriez
+ils mangeraient
+
+.
+
+que je mange
+que tu manges
+qu'il mange
+que nous mangions
+que vous mangiez
+qu'ils mangent
+
+.
+
+que je mangeasse
+que tu mangeasses
+qu'il mangeât
+que nous mangeassions
+que vous mangeassiez
+qu'ils mangeassent
+
+.
+
+mange
+mangeons
+mangez
+
+.
+
+mangeant
+mangé
+</prosody>
+</voice>
+</speak>

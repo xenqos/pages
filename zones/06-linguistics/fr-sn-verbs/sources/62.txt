@@ -1,0 +1,79 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-10%" pitch="0%">
+
+j'ouvre
+tu ouvres
+il ouvre
+nous ouvrons
+vous ouvrez
+ils ouvrent
+
+.
+
+j'ouvrais
+tu ouvrais
+il ouvrait
+nous ouvrions
+vous ouvriez
+ils ouvraient
+
+.
+
+j'ouvris
+tu ouvris
+il ouvrit
+nous ouvrîmes
+vous ouvrîtes
+ils ouvrirent
+
+.
+
+j'ouvrirai
+tu ouvriras
+il ouvrira
+nous ouvrirons
+vous ouvrirez
+ils ouvriront
+
+.
+
+j'ouvrirais
+tu ouvrirais
+il ouvrirait
+nous ouvririons
+vous ouvririez
+ils ouvriraient
+
+.
+
+que j'ouvre
+que tu ouvres
+qu'il ouvre
+que nous ouvrions
+que vous ouvriez
+qu'ils ouvrent
+
+.
+
+que j'ouvrisse
+que tu ouvrisses
+qu'il ouvrît
+que nous ouvrissions
+que vous ouvrissiez
+qu'ils ouvrissent
+
+.
+
+ouvre
+ouvrons
+ouvrez
+
+.
+
+ouvrant
+
+ouvert
+</prosody>
+</voice>
+</speak>

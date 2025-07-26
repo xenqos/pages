@@ -1,0 +1,78 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-10%" pitch="0%">
+
+j' aide
+tu aides
+il aide
+nous aidons
+vous aidez
+ilzaident
+
+.
+
+j' aidais
+tu aidais
+il aidait
+nous aidions
+vous aidiez
+ilzaidaient
+
+.
+
+j' aidai
+tu aidas
+il aida
+nous aidâmes
+vous aidâtes
+ilzaidèrent
+
+.
+
+j' aiderai
+tu aideras
+il aidera
+nous aiderons
+vous aiderez
+ilzaideront
+
+.
+
+j' aiderais
+tu aiderais
+il aiderait
+nous aiderions
+vous aideriez
+ilzaideraient
+
+.
+
+que j' aide
+que tu aides
+qu'il aide
+que nous aidions
+que vous aidiez
+qu'ilzaident
+
+.
+
+que j' aidasse
+que tu aidasses
+qu'il aidât
+que nous aidassions
+que vous aidassiez
+qu'ilzaidassent
+
+.
+
+aide
+aidons
+aidez
+
+.
+
+aidant
+aidé
+</prosody>
+</voice>
+</speak>

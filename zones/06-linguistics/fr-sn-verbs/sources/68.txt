@@ -1,0 +1,79 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-10%" pitch="0%">
+
+je nais
+tu nais
+il naît
+nous naissons
+vous naissez
+ils naissent
+
+.
+
+je naissais
+tu naissais
+il naissait
+nous naissions
+vous naissiez
+ils naissaient
+
+.
+
+je naquis
+tu naquis
+il naquit
+nous naquîmes
+vous naquîtes
+ils naquirent
+
+.
+
+je naîtrai
+tu naîtras
+il naîtra
+nous naîtrons
+vous naîtrez
+ils naîtront
+
+.
+
+je naîtrais
+tu naîtrais
+il naîtrait
+nous naîtrions
+vous naîtriez
+ils naîtraient
+
+.
+
+que je naisse
+que tu naisses
+qu'il naisse
+que nous naissions
+que vous naissiez
+qu'ils naissent
+
+.
+
+que je naquisse
+que tu naquisses
+qu'il naquît
+que nous naquissions
+que vous naquissiez
+qu'ils naquissent
+
+.
+
+nais
+naissons
+naissez
+
+.
+
+naissant
+
+né
+</prosody>
+</voice>
+</speak>

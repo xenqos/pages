@@ -1,0 +1,78 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-10%" pitch="0%">
+
+j' apprends
+tu apprends
+il apprend
+nous apprenons
+vous apprenez
+ilzapprennent
+
+.
+
+j' apprenais
+tu apprenais
+il apprenait
+nous apprenions
+vous appreniez
+ilzapprenaient
+
+.
+
+j' appris
+tu appris
+il apprit
+nous apprîmes
+vous apprîtes
+ilzapprirent
+
+.
+
+j' apprendrai
+tu apprendras
+il apprendra
+nous apprendrons
+vous apprendrez
+ilzapprendront
+
+.
+
+j' apprendrais
+tu apprendrais
+il apprendrait
+nous apprendrions
+vous apprendriez
+ilzapprendraient
+
+.
+
+que j' apprenne
+que tu apprennes
+qu'il apprenne
+que nous apprenions
+que vous appreniez
+qu'ilzapprennent
+
+.
+
+que j' apprisse
+que tu apprisses
+qu'il apprît
+que nous apprissions
+que vous apprissiez
+qu'ilzapprissent
+
+.
+
+apprends
+apprenons
+apprenez
+
+.
+
+apprenant
+appris
+</prosody>
+</voice>
+</speak>

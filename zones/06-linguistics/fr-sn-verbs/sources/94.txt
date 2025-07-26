@@ -1,0 +1,78 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-10%" pitch="0%">
+
+je touche
+tu touches
+il touche
+nous touchons
+vous touchez
+ils touchent
+
+.
+
+je touchais
+tu touchais
+il touchait
+nous touchions
+vous touchiez
+ils touchaient
+
+.
+
+je touchai
+tu touchas
+il toucha
+nous touchâmes
+vous touchâtes
+ils touchèrent
+
+.
+
+je toucherai
+tu toucheras
+il touchera
+nous toucherons
+vous toucherez
+ils toucheront
+
+.
+
+je toucherais
+tu toucherais
+il toucherait
+nous toucherions
+vous toucheriez
+ils toucheraient
+
+.
+
+que je touche
+que tu touches
+qu'il touche
+que nous touchions
+que vous touchiez
+qu'ils touchent
+
+.
+
+que je touchasse
+que tu touchasses
+qu'il touchât
+que nous touchassions
+que vous touchassiez
+qu'ils touchassent
+
+.
+
+touche
+touchons
+touchez
+
+.
+
+touchant
+touché
+</prosody>
+</voice>
+</speak>

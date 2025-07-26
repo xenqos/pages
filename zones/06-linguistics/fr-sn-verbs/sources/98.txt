@@ -1,0 +1,78 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-10%" pitch="0%">
+
+j' habite
+tu habites
+il habite
+nous habitons
+vous habitez
+ils habitent
+
+.
+
+j' habitais
+tu habitais
+il habitait
+nous habitions
+vous habitiez
+ils habitaient
+
+.
+
+j' habitai
+tu habitas
+il habita
+nous habitâmes
+vous habitâtes
+ils habitèrent
+
+.
+
+j' habiterai
+tu habiteras
+il habitera
+nous habiterons
+vous habiterez
+ils habiteront
+
+.
+
+j' habiterais
+tu habiterais
+il habiterait
+nous habiterions
+vous habiteriez
+ils habiteraient
+
+.
+
+que j' habite
+que tu habites
+qu'il habite
+que nous habitions
+que vous habitiez
+qu'ils habitent
+
+.
+
+que j' habitasse
+que tu habitasses
+qu'il habitât
+que nous habitassions
+que vous habitassiez
+qu'ils habitassent
+
+.
+
+habite
+habitons
+habitez
+
+.
+
+habitant
+habité
+</prosody>
+</voice>
+</speak>

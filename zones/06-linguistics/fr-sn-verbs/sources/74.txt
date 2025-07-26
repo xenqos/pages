@@ -1,0 +1,78 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-10%" pitch="0%">
+
+je joue
+tu joues
+il joue
+nous jouons
+vous jouez
+ils jouent
+
+.
+
+je jouais
+tu jouais
+il jouait
+nous jouions
+vous jouiez
+ils jouaient
+
+.
+
+je jouai
+tu jouas
+il joua
+nous jouâmes
+vous jouâtes
+ils jouèrent
+
+.
+
+je jouerai
+tu joueras
+il jouera
+nous jouerons
+vous jouerez
+ils joueront
+
+.
+
+je jouerais
+tu jouerais
+il jouerait
+nous jouerions
+vous joueriez
+ils joueraient
+
+.
+
+que je joue
+que tu joues
+qu'il joue
+que nous jouions
+que vous jouiez
+qu'ils jouent
+
+.
+
+que je jouasse
+que tu jouasses
+qu'il jouât
+que nous jouassions
+que vous jouassiez
+qu'ils jouassent
+
+.
+
+joue
+jouons
+jouez
+
+.
+
+jouant
+joué
+</prosody>
+</voice>
+</speak>
