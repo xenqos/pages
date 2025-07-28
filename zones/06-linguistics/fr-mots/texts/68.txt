@@ -1,68 +1,141 @@
-# Страны и национальности
+# Франция - Департаменты
 
-|l'Afrique (f)||africain/e
-|l'Albanie (f)||albanais/e
-|l'Algérie (f)||algérien/ne
-|l'Amérique (f)||américain/e
-|l'Argentine (f)||argentin/e
-|l'Asie (f)||asiatique
-|l'Australie (f)||australien/ne
-|l'Autriche (f)||autrichien/ne
-|la Belgique||belge
-|la Bosnie||bosniaque
-|le Brésil||brésilien/ne
-|la Bulgarie||bulgare
-|le Cambodge||cambodgien/ne
-|le Canada||canadien/ne
-|la Chine||chinois/e
-|la Croatie||croate
-|la République Tchèque||tchèque
-|le Danemark||danois/e
-|l'Egypte (f)||égyptien/e
-|l'Angleterre (f)||anglais/e
-|l'Estonie||estonien/ne
-|l'Europe (f)||européen/ne
-|la Finlande||finnois/e
-|la France||français/e
-|l'Allemagne (f)||allemand/e
-|la Grande-Bretagne||britannique
-|la Grèce||grec / grecque
-|la Hongrie||hongrois/e
-|l'Islande||islandais/e
-|l'Inde||indien/ne
-|l'Indonésie (f)||indonésien/ne
-|l'Irlande (f)||irlandais/e
-|l'Israël||israëlien/ne, hébreu
-|l'Italie (f)||italien/ne
-|le Japon||japonais/e
-|la Corée||coréen/ne
-|la Lettonie||letton/ne
-|la Lituanie||lituanien/ne
-|le Luxembourg||luxembourgeois/e
-|la Macédoine||macédonien/ne
-|Malte (f)||maltais/e
-|le Maroc||marocain/e
-|les Pays-Bas||néerlandais/e, hollandais/e
-|la Nouvelle-Zélande||néo-zélandais/e
-|la Norvège||norvégien/ne
-|la Pologne||polonais/e
-|le Portugal||portugais/e
-|le Québéc||québécois/e
-|la Roumanie||roumain/e
-|la Russie||russe
-|l'Ecosse||écossais/e
-|le Sénégal||sénégalais/e
-|la Serbie||serbe
-|la Slovaquie||slovaque
-|la Slovénie||slovène
-|l'Espagne (f)||espagnol/e
-|la Suède||suédois/e
-|la Suisse||suisse
-|Taïwan||taïwanais/e
-|la Tunisie||tunisien/ne
-|la Turquie||turc / turcque
-|l'Ukraine||ukrainien/ne
-|la Royaume-Uni||
-|les Etats-Unis||
-|le Vietnam||vietnamien/ne
-|le Pays-de-Galles||gallois/e
+### Alsace
+%[m|67 - Bas-Rhin]
+%[m|68 - Haut-Rhin]
+
+### Aquitaine
+%[m|24 - Dordogne]
+%[m|33 - Gironde]
+%[m|40 - Landes]
+%[m|47 - Lot-et-Garonne]
+%[m|64 - Pyrénées-Atlantiques]
+
+### Auvergne
+%[m|3 - Allier]
+%[m|15 - Cantal]
+%[m|43 - Haute-Loire]
+%[m|63 - Puy-de-Dôme]
+
+### Basse-Normandie
+%[m|14 - Calvados]
+%[m|50 - Manche]
+%[m|61 - Orne]
+
+### Bourgogne
+%[m|21 - Côte-d'Or]
+%[m|58 - Nièvre]
+%[m|71 - Saône-et-Loire]
+%[m|89 - Yonne]
+
+### Bretagne
+%[m|22 - Côtes-d'Armor]
+%[m|29 - Finistère]
+%[m|35 - Ille-et-Vilaine]
+%[m|56 - Morbihan]
+
+### Centre
+%[m|18 - Cher]
+%[m|28 - Eure-et-Loir]
+%[m|36 - Indre]
+%[m|37 - Indre-et-Loire]
+%[m|41 - Loir-et-Cher]
+%[m|45 - Loiret]
+
+### Champagne-Ardenne
+%[m|8 - Ardennes]
+%[m|10 - Aube]
+%[m|51 - Marne]
+%[m|52 - Haute-Marne]
+
+### Corse
+%[m|2A - Corse-du-Sud]
+%[m|2B - Haute-Corse]
+
+### Franche-Comté
+%[m|25 - Doubs]
+%[m|39 - Jura]
+%[m|70 - Haute-Saône]
+%[m|90 - Territoire de Belfort]
+
+### Haute-Normandie
+%[m|27 - Eure]
+%[m|76 - Seine-Maritime]
+
+### Île-de-France
+%[m|75 - Paris]
+%[m|77 - Seine-et-Marne]
+%[m|78 - Yvelines]
+%[m|91 - Essonne]
+%[m|92 - Hauts-de-Seine]
+%[m|93 - Seine-Saint-Denis]
+%[m|94 - Val-de-Marne]
+%[m|95 - Val-d'Oise]
+
+### Languedoc-Roussillon
+<h4>11 - Aude]
+%[m|30 - Gard]
+%[m|34 - Hérault]
+%[m|48 - Lozère]
+%[m|66 - Pyrénées-Orientales]
+
+### Limousin
+%[m|19 - Corrèze]
+%[m|23 - Creuse]
+%[m|87 - Haute-Vienne]
+
+### Lorraine
+%[m|54 - Meurthe-et-Moselle]
+%[m|55 - Meuse]
+%[m|57 - Moselle]
+%[m|88 - Vosges]
+
+### Midi-Pyrénées
+%[m|9 - Ariège]
+%[m|12 - Aveyron]
+%[m|31 - Haute-Garonne]
+%[m|32 - Gers]
+%[m|46 - Lot]
+%[m|65 - Hautes-Pyrénées]
+%[m|81 - Tarn]
+%[m|82 - Tarn-et-Garonne]
+
+### Nord-Pas-de-Calais
+%[m|59 - Nord]
+%[m|62 - Pas-de-Calais]
+
+### Pays de la Loire
+%[m|44 - Loire-Atlantique]
+%[m|49 - Maine-et-Loire]
+%[m|53 - Mayenne]
+%[m|72 - Sarthe]
+%[m|85 - Vendée]
+
+### Picardie
+%[m|2 - Aisne]
+%[m|60 - Oise]
+%[m|80 - Somme]
+
+### Poitou-Charentes
+%[m|16 - Charente]
+%[m|17 - Charente-Maritime]
+%[m|79 - Deux-Sèvres]
+%[m|86 - Vienne]
+
+### Provence-Alpes-Côte d'Azur
+%[m|4 - Alpes-de-Haute-Provence]
+%[m|5 - Hautes-Alpes]
+%[m|6 - Alpes-Maritimes]
+%[m|13 - Bouches-du-Rhône]
+%[m|83 - Var]
+%[m|84 - Vaucluse]
+
+### Rhône-Alpes
+%[m|1 - Ain]
+%[m|7 - Ardèche]
+%[m|26 - Drôme]
+%[m|38 - Isère]
+%[m|42 - Loire]
+%[m|69 - Rhône]
+%[m|73 - Savoie]
+%[m|74 - Haute-Savoie]
