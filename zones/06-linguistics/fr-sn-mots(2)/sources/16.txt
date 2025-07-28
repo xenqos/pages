@@ -1,0 +1,39 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
+au préalable
+avant tout
+et d’abord
+dans un premier temps
+en premier lieu
+tout d’abord
+pour commencer
+premièrement
+
+en dernier lieu
+enfin
+d’une part d’autre part
+pour terminer
+
+à cela s’ajoute que
+au reste
+aussi
+autre aspect de
+de surcroît
+deuxièmement
+d’un autre côté
+également
+et ce n’est pas tout
+il en va de même
+il y a mieux encore
+par ailleurs
+en outre
+ensuite
+bien plus
+de même
+de plus
+mieux pire encore
+et puis
+</prosody>
+</voice>
+</speak>
