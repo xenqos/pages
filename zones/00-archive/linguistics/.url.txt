@@ -6,6 +6,7 @@ https://speechsynthesis.online/
 en-CA-ClaraNeural rate="-30%" volume="0.0dB"
 de-DE-KatjaNeural rate="-30%" volume="0.0dB" ( 6db = 2times )
 fr-FR-DeniseNeural rate="-10%" volume="0.0dB"
+fr-FR-HenriNeural rate="-10%" volume="0.0dB"
 
 https://cloud.google.com/text-to-speech/docs/ssml
 
@@ -28,3 +29,4 @@ https://www.youtube.com/@nemeckij_jazyk_iz_germanii
 
 ffmpeg -i 10.mp3 -af "loudnorm=I=-14:TP=-14:LRA=7" 10-n.mp3
 ffmpeg -i 10.mp3 -af "volume=-4dB" -y 10-n.mp3
+ffmpeg -i $file -ar 16000 -b:a 32k ../sounds/$file
