@@ -1,28 +1,31 @@
-|le matin||утро
-|le jour||день
-|le soir||вечер
-|la nuit||ночь
-|le midi||полдень
-|le minuit||полночь
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
+le matin
+le jour
+le soir
+la nuit
+le midi
+le minuit
 
-|le jour||день
-|la semaine||неделя
-|aujourd'hui||сегодня
-|hier||вчера
-|demain||завтра
-|prochain||следующий
-|prochaine||следующая
-|dernier||последний
-|dernière||последняя
-|avant-hier||позавчера
-|après-demain||послезавтра
-|le lendemain||на другой день
-|la veille||накануне
+le jour
+la semaine
+aujourd'hui
+hier
+demain
+prochain
+prochaine
+dernier
+dernière
+avant-hier
+après-demain
+le lendemain
+la veille
 
-|le an, la année||год
-|le jour, la journée||день
-|le matin, la matinée||утро
-|le soir, la soirée||вечер
+le an, la année
+le jour, la journée
+le matin, la matinée
+le soir, la soirée
 
 Un homme de trente ans.
 Il est arrivé il y a deux jours.
@@ -52,3 +55,6 @@ ma journée
 
 #toute la matinée
 toute la journée
+</prosody>
+</voice>
+</speak>

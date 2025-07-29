@@ -1,14 +1,20 @@
-|toujours||всегда
-|souvent||часто
-|quelquefois||иногда
-|de temps en temps||время от времени
-|tout le temps||все время
-|toute la journée||весь день
-|tous les jours||все дни, каждый день
-|le lundi||по понедельникам
-|le matin||утром
-|l’après-midi||днем (после полудня)
-|le soir||вечером
-|la nuit||ночью
-|par jour||в день
-|par semaine||в неделю
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
+toujours
+souvent
+quelquefois
+de temps en temps
+tout le temps
+toute la journée
+tous les jours
+le lundi
+le matin
+l’après-midi
+le soir
+la nuit
+par jour
+par semaine
+</prosody>
+</voice>
+</speak>

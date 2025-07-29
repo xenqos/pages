@@ -1,30 +1,36 @@
-|l'école||школа
-|l'enseignant||учитель
-|l'enseignante||учительница
-|l'instituteur||учитель начальной школы
-|l'institutrice||учительница начальной школы
-|le professeur||преподаватель
-|le tableau||доска
-|l'élève||ученик
-|l'étudiant||студент
-|le livre||книга
-|le sac à dos||рюкзак
-|le cartable||портфель
-|le casier||шкафчик
-|le globe terrestre||глобус
-|le diplôme||диплом
-|les fournitures scolaires||школьные товары
-|la trousse||пенал
-|le crayon||карандаш
-|le stylo||авторучка
-|la gomme||ластик
-|l'encre||чернила
-|l'encrier||чернильница
-|la colle||клей
-|les ciseaux||ножницы
-|la règle||линейка
-|le surligneur||маркер
-|les crayons de couleur||цветные мелки
-|le marqueur||маркер
-|la feuille||лист бумаги
-|le cahier||тетрадь
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
+l'école
+l'enseignant
+l'enseignante
+l'instituteur
+l'institutrice
+le professeur
+le tableau
+l'élève
+l'étudiant
+le livre
+le sac à dos
+le cartable
+le casier
+le globe terrestre
+le diplôme
+les fournitures scolaires
+la trousse
+le crayon
+le stylo
+la gomme
+l'encre
+l'encrier
+la colle
+les ciseaux
+la règle
+le surligneur
+les crayons de couleur
+le marqueur
+la feuille
+le cahier
+</prosody>
+</voice>
+</speak>

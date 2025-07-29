@@ -1,27 +1,33 @@
-|le chien||собака (м)
-|la chienne||собака (ж)
-|le chat||кот
-|la chatte||кошка
-|le chiot||щенок
-|le chaton||котёнок
-|le cochon||свинья
-|le coq||петух
-|le lapin||кролик
-|la vache||корова
-|le cheval||лошадь
-|le canard||утка
-|la chèvre||козёл
-|l'oiseau||птица
-|le poulet||цыплёнок
-|l'oie||гусь
-|le mouton||овца
-|l'agneau||ягнёнок
-|l'âne||осёл
-|la souris||мышь
-|le cabot||собака (разг.)
-|le clébard||собака (разг.)
-|le minou||кот (разг.)
-|l'abeille||пчела
-|le taureau||бык
-|le papillon||бабочка
-|le veau||телёнок
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
+le chien
+la chienne
+le chat
+la chatte
+le chiot
+le chaton
+le cochon
+le coq
+le lapin
+la vache
+le cheval
+le canard
+la chèvre
+l'oiseau
+le poulet
+l'oie
+le mouton
+l'agneau
+l'âne
+la souris
+le cabot
+le clébard
+le minou
+l'abeille
+le taureau
+le papillon
+le veau
+</prosody>
+</voice>
+</speak>

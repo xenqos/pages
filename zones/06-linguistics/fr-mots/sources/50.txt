@@ -1,24 +1,30 @@
-|la grande surface||универмаг
-|le magasin d'usine||магазин от фабрики
-|la boutique d'articles d'occasion||магазин пользованных вещей
-|le magasin hard discount||магазин со скидками
-|le marché aux puces||блошиный рынок
-|le rayon||секция
-|faire du lèche-vitrine||глазеть на витрины
-|faire les courses||за продуктами
-|la supérette||маленький магазин
-|le supermarché||супермаркет продуктовый
-|l'hypermarché||гипермаркет
-|le centre commercial||торговый центр
-|la cabine d'essayage||примерочная
-|la carte de fidelité||карта лояльности
-|des talons||каблуки
-|des tongs||шлёпанцы
-|le débardeur||безрукавка
-|le balconnet||бюстгальтер с косточками
-|le string||узкие плавки
-|à pois||в горошек
-|à fleurs||в цветочек
-|à frous-frous||с рюшечками
-|à paillettes||с блёстками
-|à rayures||в полосочку
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
+la grande surface
+le magasin d'usine
+la boutique d'articles d'occasion
+le magasin hard discount
+le marché aux puces
+le rayon
+faire du lèche-vitrine
+faire les courses
+la supérette
+le supermarché
+l'hypermarché
+le centre commercial
+la cabine d'essayage
+la carte de fidelité
+des talons
+des tongs
+le débardeur
+le balconnet
+le string
+à pois
+à fleurs
+à frous-frous
+à paillettes
+à rayures
+</prosody>
+</voice>
+</speak>

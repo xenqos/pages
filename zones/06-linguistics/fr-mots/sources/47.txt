@@ -1,25 +1,31 @@
-|un fruit||фрукт
-|une pomme||яблоко
-|un abricot||абрикос
-|une banane||банан
-|une myrtille||черника
-|une cerise||черешня, вишня
-|une noix de coco||кокос
-|une datte||финик
-|une figue||фига, инжир
-|un raisin||виноград
-|un pamplemousse||грейпфрут
-|un citron||лемон
-|un citron vert||лайм
-|un melon||дыня
-|une olive||олива
-|une orange||апельсин
-|une pêche||персик
-|une poire||груша
-|un ananas||ананас
-|une prune||слива
-|un pruneau||чернослив
-|un raisin sec||изюм
-|une framboise||малина
-|une fraise||клубника, земляника
-|une pastèque||арбуз
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
+un fruit
+une pomme
+un abricot
+une banane
+une myrtille
+une cerise
+une noix de coco
+une datte
+une figue
+un raisin
+un pamplemousse
+un citron
+un citron vert
+un melon
+une olive
+une orange
+une pêche
+une poire
+un ananas
+une prune
+un pruneau
+un raisin sec
+une framboise
+une fraise
+une pastèque
+</prosody>
+</voice>
+</speak>

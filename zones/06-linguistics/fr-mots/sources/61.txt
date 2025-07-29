@@ -1,115 +1,121 @@
-|la fourmi||муравей
-|l'antilope||антелопа
-|la chauve-souris||летучая мышь
-|le bec||клюв
-|l'ours||медведь
-|la chenille||гусеница
-|le guépard||гепард
-|le chimpanzé||шимпанзе
-|la griffe||коготь
-|le cafard||таракан
-|le cocon||кокон
-|la vache||корова
-|le crabe||краб
-|l'écrevisse||речной рак
-|le crocodile||крокодил
-|le corbeau||ворон
-|le cerf||олень
-|le chien||собака
-|l'âne||осёл
-|la libellule||стрекоза
-|le canard||утка
-|l'aigle||орёл
-|l'éléphant||слон
-|la plume||перо
-|la nageoire||плавник
-|le poisson||рыба
-|la puce||блоха
-|la mouche||муха
-|le renard||лиса
-|la grenouille||лягушка
-|la branchie||жабры
-|la girafe||жираф
-|la chèvre||коза
-|l'oie||гусь
-|le gorille||горилла
-|la sauterelle||кузнечик
-|le hamster||хомяк
-|le lièvre||заяц
-|la poule||курица
-|la hareng||селёдка
-|le sabot||копыто
-|la corne||рог
-|le cheval||лошадь
-|le colibri||колибри
-|l'iguane||игуана
-|l'insecte||насекомое
-|la méduse||медуза
-|le chaton||котёнок
-|la coccinelle||божья коровка
-|l'agneau||ягнёнок
-|l'alouette||жаворонок
-|le lion||лев
-|le lézard||ящерица
-|la langouste||лангуста
-|le pou||вошь
-|le maquereau||скумбрия
-|la taupe||крот
-|le singe||обезьяна
-|le moustique||москит, комар
-|le papillon de nuit||ночная бабочка
-|la souris||мышь
-|le mulet||мул
-|la moule||мидия
-|le nid||гнездо
-|le rossignol||соловей
-|la pieuvre||спрут, осьминог
-|l'autruche||страус
-|le hibou||сова
-|le bœuf||бык
-|l'huître||устрица
-|le perroquet||попугай
-|la perdrix||куропатка
-|le pingouin||пенгвин
-|le cochon||свинья
-|le pigeon||голубь
-|le brochet||щука
-|le poney||пони
-|le chiot||щенок
-|le lapin||кролик
-|le raton laveur||енот
-|le rat||крыса
-|le coq||петух
-|le saumon||лосось
-|l'écaille||чешуя
-|le scorpion||скорпион
-|la mouette||чайка
-|le phoque||тюлень
-|le requin||акула
-|le mouton||баран
-|la crevette||креветка
-|la limace||слизень
-|l'escargot||улитка
-|le serpent||змея
-|le moineau||воробей
-|l'araignée||паук
-|le calamar||кальмар
-|l'écureuil||белка
-|l'étoile de mer||морская звезда
-|l'hirondelle||ласточка
-|le cygne||лебедь
-|le têtard||головастик
-|la queue||хвост
-|le tigre||тигр
-|le crapaud||жаба
-|la truite||форель
-|le thon||тунец
-|le dindon||индюк
-|la tortue||черепаха
-|la guêpe||оса
-|la belette||ласка
-|la baleine||кит
-|l'aile||крыло
-|le loup||волк
-|le ver||червь
-|le zèbre||зебра
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
+la fourmi
+l'antilope
+la chauve-souris
+le bec
+l'ours
+la chenille
+le guépard
+le chimpanzé
+la griffe
+le cafard
+le cocon
+la vache
+le crabe
+l'écrevisse
+le crocodile
+le corbeau
+le cerf
+le chien
+l'âne
+la libellule
+le canard
+l'aigle
+l'éléphant
+la plume
+la nageoire
+le poisson
+la puce
+la mouche
+le renard
+la grenouille
+la branchie
+la girafe
+la chèvre
+l'oie
+le gorille
+la sauterelle
+le hamster
+le lièvre
+la poule
+la hareng
+le sabot
+la corne
+le cheval
+le colibri
+l'iguane
+l'insecte
+la méduse
+le chaton
+la coccinelle
+l'agneau
+l'alouette
+le lion
+le lézard
+la langouste
+le pou
+le maquereau
+la taupe
+le singe
+le moustique
+le papillon de nuit
+la souris
+le mulet
+la moule
+le nid
+le rossignol
+la pieuvre
+l'autruche
+le hibou
+le bœuf
+l'huître
+le perroquet
+la perdrix
+le pingouin
+le cochon
+le pigeon
+le brochet
+le poney
+le chiot
+le lapin
+le raton laveur
+le rat
+le coq
+le saumon
+l'écaille
+le scorpion
+la mouette
+le phoque
+le requin
+le mouton
+la crevette
+la limace
+l'escargot
+le serpent
+le moineau
+l'araignée
+le calamar
+l'écureuil
+l'étoile de mer
+l'hirondelle
+le cygne
+le têtard
+la queue
+le tigre
+le crapaud
+la truite
+le thon
+le dindon
+la tortue
+la guêpe
+la belette
+la baleine
+l'aile
+le loup
+le ver
+le zèbre
+</prosody>
+</voice>
+</speak>

@@ -1,31 +1,37 @@
-|l'extra-terrestre||пришелец
-|l'astéroïde||астероид
-|l'astronaute||астронавт
-|le gobelet||кубок
-|la comète||комета
-|la constellation||созвездие
-|le tableau de bord||панель управления
-|le cratère||кратер
-|la terre||земля
-|la galaxie||галактика
-|le laboratoire||лаборатория
-|la capsule d'atterrissage||спускаемый аппарат
-|la jeep lunaire||луноход
-|la pluie de météores||метеоритный дождь
-|la lune||луна
-|la nébuleuse||туманность
-|la planète||планета
-|les anneaux||кольца
-|le robot||робот
-|l'automate||автомат
-|la fusée interplanétaire||ракета
-|le satellite||спутник
-|le panneau solaire||солнечная батарея
-|le système solaire||солнечная система
-|la navette spatiale||космический челнок
-|la station spatiale||космическая станция
-|le scaphandre de cosmonaute||скафандр
-|la soucoupe volante||космический корабль
-|l'étoile||звезда
-|le soleil||солнце
-|l'éprouvette||пробирка
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
+l'extra-terrestre
+l'astéroïde
+l'astronaute
+le gobelet
+la comète
+la constellation
+le tableau de bord
+le cratère
+la terre
+la galaxie
+le laboratoire
+la capsule d'atterrissage
+la jeep lunaire
+la pluie de météores
+la lune
+la nébuleuse
+la planète
+les anneaux
+le robot
+l'automate
+la fusée interplanétaire
+le satellite
+le panneau solaire
+le système solaire
+la navette spatiale
+la station spatiale
+le scaphandre de cosmonaute
+la soucoupe volante
+l'étoile
+le soleil
+l'éprouvette
+</prosody>
+</voice>
+</speak>

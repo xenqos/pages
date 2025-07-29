@@ -1,9 +1,15 @@
-|à cette fin||с этой целью
-|afin de…||чтобы; для того, чтобы; с целью
-|afin que…||чтобы; для того, чтобы; с целью
-|dans cette perspective||в этой перспективе
-|dans l’intention de||для, ради
-|de crainte que…||опасаясь, чтобы не
-|de peur que…||опасаясь, чтобы не
-|en vue de||ввиду, для, чтобы, с целью
-|pour que…||чтобы
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
+à cette fin
+afin de
+afin que
+dans cette perspective
+dans l’intention de
+de crainte que
+de peur que
+en vue de
+pour que
+</prosody>
+</voice>
+</speak>

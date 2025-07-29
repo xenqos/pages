@@ -1,17 +1,23 @@
-|juste là||прямо здесь
-|ici||здесь
-|là-bas||там
-|à droite de||справа от
-|à gauche de||слева от
-|tout droit||прямо
-|devant||спереди
-|derrière||сзади
-|en face de||напротив
-|entre||между
-|à côté de||сбоку от
-|au fond de||на краю
-|près de||рядом
-|loin de||далеко от
-|au fond de||в конце
-|en haut de||наверху
-|en bas de||внизу
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
+juste là
+ici
+là-bas
+à droite de
+à gauche de
+tout droit
+devant
+derrière
+en face de
+entre
+à côté de
+au fond de
+près de
+loin de
+au fond de
+en haut de
+en bas de
+</prosody>
+</voice>
+</speak>

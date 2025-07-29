@@ -1,60 +1,66 @@
-|la tête||голова
-|les cheveux||волосы
-|la figure||лицо
-|le visage||лицо
-|la face||лицо
-|le front||лоб
-|la joue||щека
-|l'oreille||ухо
-|l'œil||глаз/глаза
-|les yeux||глаз/глаза
-|la barbe||борода
-|la moustache||усы
-|la bouche||рот
-|la lèvre||губа
-|le nez||нос
-|la langue||язык
-|la dent||зуб
-|le cou||шея
-|les sourcils||брови
-|les cils||ресницы
-|le menton||подбородок
-|la gorge||горло
-|la peau||кожа
-|le sang||кровь
-|l'os||кость
-|l'épaule||плечо
-|la poitrine||грудь
-|la taille||талия
-|le nombril||пупок
-|le dos||спина
-|le cœur||сердце
-|les poumons||лёгкие
-|le cerveau||мозг
-|le foie||печень
-|le rein||почка
-|la vessie||мочевой пузырь
-|la côte||ребро
-|le bras||рука
-|le coude||локоть
-|le poignet||запястье
-|le poing||кулак
-|la main||рука
-|les doigts||пальцы
-|l'estomac||желудок
-|le ventre||желудок
-|les fesses||ягодица
-|le corps||тело
-|la hanche||бедро
-|la jambe||нога
-|le genou||колено
-|le pied||ступня
-|les orteils||пальцы ноги
-|la cheville||лодыжка
-|la cuisse||бедро
-|le tibia||голень
-|le mollet||икра
-|le pouce||большой палец
-|les ongles||ногти
-|le tatouage||тату
-|le piercing||пирсинг
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
+la tête
+les cheveux
+la figure
+le visage
+la face
+le front
+la joue
+l'oreille
+l'œil
+les yeux
+la barbe
+la moustache
+la bouche
+la lèvre
+le nez
+la langue
+la dent
+le cou
+les sourcils
+les cils
+le menton
+la gorge
+la peau
+le sang
+l'os
+l'épaule
+la poitrine
+la taille
+le nombril
+le dos
+le cœur
+les poumons
+le cerveau
+le foie
+le rein
+la vessie
+la côte
+le bras
+le coude
+le poignet
+le poing
+la main
+les doigts
+l'estomac
+le ventre
+les fesses
+le corps
+la hanche
+la jambe
+le genou
+le pied
+les orteils
+la cheville
+la cuisse
+le tibia
+le mollet
+le pouce
+les ongles
+le tatouage
+le piercing
+</prosody>
+</voice>
+</speak>

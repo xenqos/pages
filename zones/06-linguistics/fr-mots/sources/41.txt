@@ -1,17 +1,23 @@
-|les coordonnées||координаты
-|nom||фамилия
-|prénom||имя
-|adresse||адрес
-|date de naissance||дата рождения
-|lieu de naissance||место рождения
-|Fait à ... le||подписано в (городе )… числа
-|l'acte de naissance||свидетельство о рождении
-|le passeport||паспорт
-|le visa||виза
-|la carte de séjour||вид на жительство
-|le récépissé||расписка
-|le formulaire||формуляр
-|la candidature||кандидатура
-|la demande d'inscription||вступительная форма
-|postuler||конкурс на должность
-|s'inscrire à||подача документов в институт
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
+les coordonnées
+nom
+prénom
+adresse
+date de naissance
+lieu de naissance
+Fait à ... le
+l'acte de naissance
+le passeport
+le visa
+la carte de séjour
+le récépissé
+le formulaire
+la candidature
+la demande d'inscription
+postuler
+s'inscrire à
+</prosody>
+</voice>
+</speak>

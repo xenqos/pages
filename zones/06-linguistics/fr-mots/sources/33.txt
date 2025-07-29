@@ -1,48 +1,54 @@
-|la banque||bank
-|le caissier||teller
-|le billet||bill
-|le chèque||check
-|le chéquier||checkbook
-|le guichet automatique||ATM
-|la clé||key
-|la serrure||lock
-|le classeur||filing cabinet
-|le coffre||safety deposit box
-|le coffre-fort||safe
-|le bloc-notes||notepad
-|la carte de crédit||credit card
-|la caméra de surveillance||security camera
-|le gardien||security guard
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
+la banque
+le caissier
+le billet
+le chèque
+le chéquier
+le guichet automatique
+la clé
+la serrure
+le classeur
+le coffre
+le coffre-fort
+le bloc-notes
+la carte de crédit
+la caméra de surveillance
+le gardien
 
-|le compte d'épargne||savings account
-|le compte-chèques||checking account
-|le dépôt||deposit
-|le dépôt direct||direct deposit
-|les espèces||cash
-|du liquide||cash
-|la carte de crédit||credit card
-|l'emprunt||loan
-|la dette||debt
-|le salaire||wages
-|déposer||to deposit
-|remettre||to deposit
-|retirer||to withdraw
-|gagner||to earn
-|dépenser||to spend
+le compte d'épargne
+le compte-chèques
+le dépôt
+le dépôt direct
+les espèces
+du liquide
+la carte de crédit
+l'emprunt
+la dette
+le salaire
+déposer
+remettre
+retirer
+gagner
+dépenser
 
-|la carte bancaire||bank / debit card
-|la carte bleue||bank / debit card
-|le distributeur||ATM
-|le guichet (automatique)||ATM
-|le chèque||check
-|le carnet de chèques||checkbook
-|le bilan||balance
-|le montant||sum, amount
-|le relevé de compte||bank statement
-|le versement||payment
-|le virement||transfer/deposit
-|faire un chèque||to write a check
-|encaisser||to cash a check
-|toucher un chèque||to cash a check
-|payer en espèces||to pay cash
-|faire des économies||to save money
+la carte bancaire
+la carte bleue
+le distributeur
+le guichet automatique
+le chèque
+le carnet de chèques
+le bilan
+le montant
+le relevé de compte
+le versement
+le virement
+faire un chèque
+encaisser
+toucher un chèque
+payer en espèces
+faire des économies
+</prosody>
+</voice>
+</speak>

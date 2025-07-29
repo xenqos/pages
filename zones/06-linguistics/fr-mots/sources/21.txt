@@ -1,25 +1,31 @@
-|le jardin||сад
-|l'arbuste||куст
-|le gazon||газон
-|la pelouse||лужайка
-|le buisson||кустарник
-|l'arbre||дерево
-|la tondeuse à gazon||газонокосилка
-|le tuyau d'arrosage||шланг
-|l'arrosoir||лейка
-|le râteau||грабли
-|la bêche||тяпка
-|le cisaille||clippers
-|la pelle||секатор
-|l'arroseur||разбрызгиватель
-|la serrure||дверной замок
-|le verrou||засов
-|le cadenas||висячий занок
-|la charnière||шарнир,
-|la clé||ключ
-|le porte-clé||брелок
-|le trou de la serrure||замочная скважина
-|la poignée de porte||дверная ручка
-|les tuiles||черепица
-|les bardeaux||черепица
-|l'ardoise||шифер
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
+le jardin
+l'arbuste
+le gazon
+la pelouse
+le buisson
+l'arbre
+la tondeuse à gazon
+le tuyau d'arrosage
+l'arrosoir
+le râteau
+la bêche
+le cisaille
+la pelle
+l'arroseur
+la serrure
+le verrou
+le cadenas
+la charnière
+la clé
+le porte-clé
+le trou de la serrure
+la poignée de porte
+les tuiles
+les bardeaux
+l'ardoise
+</prosody>
+</voice>
+</speak>

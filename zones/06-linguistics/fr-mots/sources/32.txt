@@ -1,21 +1,27 @@
-|sans engagement||pay as you go plan
-|le crédit||кредит
-|recharger votre compte||to recharge your account
-|le forfait||контракт
-|hors forfait||добавочный платёж
-|le plan tarifaire||тарифный план
-|la ligne fixe||наземная линия
-|la messagerie vocale||голосовое сообщение
-|le suivi conso||сумма по счёту
-|épuisé||no credit
-|SMS||СМС
-|MMS||Multimedia message
-|le double appel||call waiting
-|la présentation du numro||caller ID
-|les appels illimités||unlimited calls
-|le code PIN / secret||PIN code
-|la carte SIM||SIM card
-|bloqué||locked
-|télécharger||сгрузить
-|la sonnerie||ringtone
-|le suivi de consommation||контроль за потреблением
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
+sans engagement
+le crédit
+recharger votre compte
+le forfait
+hors forfait
+le plan tarifaire
+la ligne fixe
+la messagerie vocale
+le suivi conso
+épuisé
+SMS
+MMS
+le double appel
+la présentation du numro
+les appels illimités
+le code PIN / secret
+la carte SIM
+bloqué
+télécharger
+la sonnerie
+le suivi de consommation
+</prosody>
+</voice>
+</speak>

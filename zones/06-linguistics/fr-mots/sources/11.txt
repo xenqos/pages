@@ -1,11 +1,17 @@
-|le carré||квадрат
-|le cercle||круг
-|le triangle||треугольник
-|le rectangle||прямоугольник
-|l'ovale||овал
-|le cube||куб
-|la sphère||сфера
-|le cylindre||цилиндер
-|le cône||конус
-|l'octogone||восьмиугольник
-|la boîte||ящик, коробка
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
+le carré
+le cercle
+le triangle
+le rectangle
+l'ovale
+le cube
+la sphère
+le cylindre
+le cône
+l'octogone
+la boîte
+</prosody>
+</voice>
+</speak>

@@ -1,26 +1,32 @@
-|la valise||чемодан
-|les vêtements||одежда
-|le passeport||пасспорт
-|le journal||дневник
-|les chèques de voyage||чеки
-|le dictionnaire||словарь
-|le vol||рейс самолёта
-|les bagages||багаж
-|l'euro||евро
-|le billet||счёт
-|la pièce||монета
-|la monnaie||деньги
-|le centime||сантим
-|l'arrivée||прибытие
-|le départ||отправление
-|Où est||Где…?
-|Où sont||Где…?
-|le bureau de change||обмен валюты
-|le contrôle des passeports||пасспортный контроль
-|la douane||таможня
-|l'entrée||вход
-|les objets trouvés||стол находок
-|les renseignements||информация
-|la sortie||выход
-|les taxis||стоянка такси
-|les toilettes||туалеты
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
+la valise
+les vêtements
+le passeport
+le journal
+les chèques de voyage
+le dictionnaire
+le vol
+les bagages
+l'euro
+le billet
+la pièce
+la monnaie
+le centime
+l'arrivée
+le départ
+Où est
+Où sont
+le bureau de change
+le contrôle des passeports
+la douane
+l'entrée
+les objets trouvés
+les renseignements
+la sortie
+les taxis
+les toilettes
+</prosody>
+</voice>
+</speak>

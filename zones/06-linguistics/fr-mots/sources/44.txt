@@ -1,35 +1,41 @@
-|le petit déjeuner||завтрак
-|le déjeuner||обед, завтрак - Канада, Бельгия, Швейцария
-|le dîner||ужин, обед - Канада, Бельгия, Швейцария
-|le souper||ужин - Канада, Бельгия, Швейцария
-|l'heure de goûter||перекус для детей после школы
-|sucré||сладкая еда
-|salé||солёная/пикантная еда
-|un œuf||яйцо
-|des œufs,||яйца
-|le pain||хлеб
-|le pain de mie||белый хлеб
-|le yaourt||йогурт
-|la glace||десерт
-|parfums||запах (вкус десерта)
-|boules||ложка мороженного
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
+le petit déjeuner
+le déjeuner
+le dîner
+le souper
+l'heure de goûter
+sucré
+salé
+un œuf
+des œufs,
+le pain
+le pain de mie
+le yaourt
+la glace
+parfums
+boules
 
-|à emporter||еда на вынос
-|sur place||есть на месте
+à emporter
+sur place
 
-|la charcuterie||колбасные изделия
-|les crudités||сырые овощи
-|une salade (avec des lardons)||салад с бэконом
-|la soupe à l'oignon||луковый суп
-|la raclette||расплавленный сыр и картофель
-|la tartiflette||тартифлет
-|la fondue||фондю
-|le croque-monsieur||горячий сандвич с сыром и ветчиной
-|le croque-madame||сандвич с сыром, ветчиной, яичницей
-|du bœuf-carottes||тушёное мясо с морковкой
-|un steak-frites||стейк и фрайз
-|les quenelles||фрикадельки
-|végétarien||вегетарианец
-|végétarienne||вегетарианка
-|végétalien||веган (м)
-|végétalienne||веган (ж)
+la charcuterie
+les crudités
+une salade (avec des lardons)
+la soupe à l'oignon
+la raclette
+la tartiflette
+la fondue
+le croque-monsieur
+le croque-madame
+du bœuf-carottes
+un steak-frites
+les quenelles
+végétarien
+végétarienne
+végétalien
+végétalienne
+</prosody>
+</voice>
+</speak>

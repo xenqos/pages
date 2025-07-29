@@ -1,25 +1,31 @@
-|un légume||овощь
-|un artichaut||артишок
-|des asperges||спаржа
-|une betterave||свёкла
-|le brocoli||брокколи
-|un chou||капуста
-|une carotte||морковь
-|un chou-fleur||цветная капуста
-|un céleri||сельдерей
-|le maïs||кукуруза
-|un concombre||огурец
-|une aubergine||баклажан
-|la laitue||салат-латук
-|un champignon||гриб
-|un oignon||лук
-|les pois||горох
-|un piment||перец
-|une pomme de terre||картофель
-|une citrouille||тыква
-|le riz||рис
-|des épinards||шпинат
-|une courge||тыква
-|une tomate||томат
-|un navet||репа
-|des courgettes||кабачок
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
+un légume
+un artichaut
+des asperges
+une betterave
+le brocoli
+un chou
+une carotte
+un chou-fleur
+un céleri
+le maïs
+un concombre
+une aubergine
+la laitue
+un champignon
+un oignon
+les pois
+un piment
+une pomme de terre
+une citrouille
+le riz
+des épinards
+une courge
+une tomate
+un navet
+des courgettes
+</prosody>
+</voice>
+</speak>

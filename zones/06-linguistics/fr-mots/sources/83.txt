@@ -1,8 +1,14 @@
-|à (la) condition de||при условии
-|à supposer que…||если предположить, что
-|du moment que…||раз уж, если так; лишь только
-|étant entendu que…||раз уж
-|moyennant quoi||при условии, что; с тем, чтобы
-|pourvu que…||если только
-|pour autant que…||если только; насколько
-|si||если
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
+à la condition de
+à supposer que…
+du moment que…
+étant entendu que…
+moyennant quoi
+pourvu que…
+pour autant que…
+si
+</prosody>
+</voice>
+</speak>

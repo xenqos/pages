@@ -1,36 +1,42 @@
-|le premier ministre||премьер министр
-|le président||президент
-|le vice-président||вице президент
-|le dictateur||диктатор
-|la nationalité||национальность
-|la communauté||коллектив
-|la société||общество
-|le gouvernement||правительство
-|l'élection||выборы
-|le référendum||референдум
-|le vote||голосование
-|l'environnement||окружающая среда
-|la démocratie||демократия
-|l'anarchie||анархия
-|le capitalisme||капитализм
-|le socialisme||социализм
-|le communisme||коммунизм
-|le citoyen||гражданин
-|le sénateur||сенатор
-|le député||депутат
-|le maire||мэр
-|la loi||закон
-|le projet de loi||проект закона
-|la politique||политика
-|la proposition||предложение
-|la subvention||пособие
-|la législation||законодательство
-|la négociation||переговоры
-|la réglementation||урегулирование
-|démocrate||демократ
-|libéral||либерал
-|libérale||либерал
-|conservateur||консерватор
-|conservatrice||консерватор
-|socialiste||социалист
-|communiste||коммунист
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
+le premier ministre
+le président
+le vice-président
+le dictateur
+la nationalité
+la communauté
+la société
+le gouvernement
+l'élection
+le référendum
+le vote
+l'environnement
+la démocratie
+l'anarchie
+le capitalisme
+le socialisme
+le communisme
+le citoyen
+le sénateur
+le député
+le maire
+la loi
+le projet de loi
+la politique
+la proposition
+la subvention
+la législation
+la négociation
+la réglementation
+démocrate
+libéral
+libérale
+conservateur
+conservatrice
+socialiste
+communiste
+</prosody>
+</voice>
+</speak>

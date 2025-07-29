@@ -1,11 +1,17 @@
-|blond||блондин
-|blonde||блoндинка
-|brun||брюнет
-|brune||брюнетка
-|roux||рыжий
-|rousse||рыжая
-|châtain||шатен
-|bleus||голубые глаза
-|verts||зелёные глаза
-|marron||карие глаза
-|noirs||чёрные глаза
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
+blond
+blonde
+brun
+brune
+roux
+rousse
+châtain
+bleus
+verts
+marron
+noirs
+</prosody>
+</voice>
+</speak>

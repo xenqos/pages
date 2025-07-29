@@ -1,47 +1,53 @@
-|Joyeux Noël !||С Рождеством
-|l’ange||ангел
-|la cloche||колокол
-|la clochette||колокольчик
-|le nœud||узел
-|la boule||шар
-|la bougie||свеча
-|la chandelle||свеча стеариновая
-|la canne en bonbon||конфетная палочка
-|la cheminée||труба
-|la carte de Noël||Christmas card
-|les chansons de Noël||Christmas carols
-|la veille de Noël||Christmas Eve
-|le réveillon de Noël||Christmas Eve dinner
-|le marché de Noël||Christmas market
-|le sapin de Noël||Christmas tree
-|les décorations||украшения
-|le lait de poule||гоголь-моголь
-|le lutin||домовой
-|le sapin artificiel||исскуственная ёлка
-|la guirlande||гирлянда
-|le houx||падуб, остролист
-|la guirlande électrique||электрогирлянда
-|la lumineuse||освещение
-|le gui||омела
-|la crèche||ясли
-|le pôle nord||Севрный Полюс
-|le cadeau||подарок
-|les étiquettes||этикитка
-|le renne||северный олень
-|le bolduc||лента для пакетов
-|le ruban||лента
-|le Père Noël||Пэр Ноэль
-|le bonnet de Noël||Шапка Пэра Ноэля
-|la hotte du Père Noël||Мешок Пэра Ноэля
-|l’atelier du Père Noël||ателье Пэра Ноэля
-|le traineau||сани
-|le grelot||бубенчик
-|la neige||снег
-|le flocon de neige||снежинка
-|le bonhomme de neige||снеговик
-|l’étoile||зведзда
-|la chaussette de Noël||чулок Пэра Ноэля
-|le jouet||игрушка
-|le papier d’emballage||упаковочная бумага
-|la couronne||венок
-|la bûche de Noël||полено Ноэля
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
+Joyeux Noël !
+l’ange
+la cloche
+la clochette
+le nœud
+la boule
+la bougie
+la chandelle
+la canne en bonbon
+la cheminée
+la carte de Noël
+les chansons de Noël
+la veille de Noël
+le réveillon de Noël
+le marché de Noël
+le sapin de Noël
+les décorations
+le lait de poule
+le lutin
+le sapin artificiel
+la guirlande
+le houx
+la guirlande électrique
+la lumineuse
+le gui
+la crèche
+le pôle nord
+le cadeau
+les étiquettes
+le renne
+le bolduc
+le ruban
+le Père Noël
+le bonnet de Noël
+la hotte du Père Noël
+l’atelier du Père Noël
+le traineau
+le grelot
+la neige
+le flocon de neige
+le bonhomme de neige
+l’étoile
+la chaussette de Noël
+le jouet
+le papier d’emballage
+la couronne
+la bûche de Noël
+</prosody>
+</voice>
+</speak>

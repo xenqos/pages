@@ -1,40 +1,46 @@
-|les outils||инструменты
-|la boîte à outils||ящик с инструментами
-|le marteau||молоток
-|le tournevis||отвётка
-|le clou||гвоздь
-|la vis||винт
-|la clé||гаечный ключ
-|la clé à molette||разводной ключ
-|le boulon||болт
-|l'écrou||гайка
-|les pinces||плоскогубцы
-|la scie||пила
-|la lame||лезвие
-|le manche||рукоятка
-|l'enclume||наковальня
-|l'étau||тиски
-|la pelle||лопата
-|la pioche||кирка
-|la perceuse||дрель
-|la mèche||сверло, фитиль
-|le ciseau||резец, долото
-|le mètre||рулетка
-|la tronçonneuse||цепная пила
-|la lime||напильник
-|le bricolage||поделки
-|l'artisanat||кустарные изделия
-|la broderie||вышивка
-|le point de croix||вышивка крестиком
-|la couture||шитьё иголкой
-|l'aiguille||иголка
-|le fil||нитка
-|peindre||раскраска
-|faire des bijoux||изготовление ювелирных изделий
-|le jardinage||садоводство
-|le tricot||вязание
-|la photographie||фотографироеание
-|la menuiserie||столярное ремесло
-|la poterie||гончарные издрлия
-|le dessin||рисование
-|la cuisine||кулинария
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
+les outils
+la boîte à outils
+le marteau
+le tournevis
+le clou
+la vis
+la clé
+la clé à molette
+le boulon
+l'écrou
+les pinces
+la scie
+la lame
+le manche
+l'enclume
+l'étau
+la pelle
+la pioche
+la perceuse
+la mèche
+le ciseau
+le mètre
+la tronçonneuse
+la lime
+le bricolage
+l'artisanat
+la broderie
+le point de croix
+la couture
+l'aiguille
+le fil
+peindre
+faire des bijoux
+le jardinage
+le tricot
+la photographie
+la menuiserie
+la poterie
+le dessin
+la cuisine
+</prosody>
+</voice>
+</speak>

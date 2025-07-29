@@ -1,18 +1,24 @@
-|l'internet||интернет
-|l'internaute||интернет пользователь
-|le réseau||сеть
-|l’adresse Internet||интернет-адрес
-|le site||сайт
-|en-ligne||на линии
-|le lien||линк
-|le signet||закладка
-|le moteur de recherche||поисковая система
-|la binette||смайл
-|le courriel||электронная почта
-|le courrier électronique||электронная почта
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
+l'internet
+l'internaute
+le réseau
+l’adresse Internet
+le site
+en-ligne
+le lien
+le signet
+le moteur de recherche
+la binette
+le courriel
+le courrier électronique
 
-|le navigateur||навигатор (browser)
-|le moteur de recherche||поисковик
-|la salle de tchatche||chat room
-|le forum||форум
-|la page d'accueil||домашняя страница
+le navigateur
+le moteur de recherche
+la salle de tchatche
+le forum
+la page d'accueil
+</prosody>
+</voice>
+</speak>

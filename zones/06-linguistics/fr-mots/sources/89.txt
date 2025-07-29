@@ -1,23 +1,29 @@
-|ainsi||так
-|à savoir||для справки
-|autrement dit||иначе говоря
-|c’est-à-dire||то есть
-|ce qui revient à dire que||это всё равно, что сказать…
-|d’ailleurs||впрочем
-|du reste||впрочем, что до остального
-|en ceci que||из этого исходит / выходит, что
-|en d’autres termes||другими словами
-|en effet||в самом деле; действительно
-|notamment||именно, как раз
-|soit||пусть! Ладно!
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
+ainsi
+à savoir
+autrement dit
+c’est-à-dire
+ce qui revient à dire que
+d’ailleurs
+du reste
+en ceci que
+en d’autres termes
+en effet
+notamment
+soit
 
-|d’après||по (словам кого-л.)
-|selon||по (словам кого-л.)
+d’après
+selon
 
-|autrement dit||иначе говоря
-|bref||короче говоря
-|en d’autres termes||другими словами
+autrement dit
+bref
+en d’autres termes
 
-|ainsi||так
-|par exemple||например
-|prenons le cas de…||возьмем случай…
+ainsi
+par exemple
+prenons le cas de
+</prosody>
+</voice>
+</speak>

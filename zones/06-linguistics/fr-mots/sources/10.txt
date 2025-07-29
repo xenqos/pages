@@ -1,18 +1,24 @@
-|assez de||довольно много
-|une assiette de||тарелка
-|beaucoup de||много
-|une boîte de||ящик
-|une bouteille de||бутылка
-|un kilo de||килограмм
-|un morceau de||кусок
-|un peu de||немного
-|une tasse de||чашка
-|une tranche de||ломтик
-|trop de||слишком много
-|un verre de||стакан
-|une douzaine de||дюжина
-|un paquet de||пакет
-|un panier de||корзина
-|une poignée de||горсть
-|plus de||больше
-|un bouquet de||букет, пучок
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
+assez de
+une assiette de
+beaucoup de
+une boîte de
+une bouteille de
+un kilo de
+un morceau de
+un peu de
+une tasse de
+une tranche de
+trop de
+un verre de
+une douzaine de
+un paquet de
+un panier de
+une poignée de
+plus de
+un bouquet de
+</prosody>
+</voice>
+</speak>

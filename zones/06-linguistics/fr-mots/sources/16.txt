@@ -1,60 +1,66 @@
-|le pyjama||пижама
-|le bijou||драгоценность
-|le collier||колье
-|le jean||джинсы
-|le pantalon||брюки
-|le pull||свитер
-|le col roulé||водолазка
-|l'imperméable||плащ
-|le chemisier||блузка
-|le soutien-gorge||бюстгальтер
-|le jupon||юбка
-|le manteau||пальто
-|des tennis||теннисные ботинки
-|le maillot de bain||купальный костюм
-|le short||шорты
-|le bracelet||браслет
-|le porte-bonheur||амулет
-|le tee-shirt||тенниска
-|le chapeau||шляпа
-|la bague||кольцо
-|la chaînette||цепочка
-|les boucles d'oreilles||серьги
-|l'épingle||булавка
-|la chaussette||носок
-|la chaussure||ботинок
-|la chemise||рубашка
-|l'anorak||анорак
-|des baskets||кроссовки
-|le .mp3ing||одежда для бега
-|la taille||размер
-|le caleçon||кальсоны, трусы
-|le slip||плавки
-|la culotte||трико
-|le smoking||смокинг
-|le nœud papillon||бабочка
-|le gilet||жилет
-|les tongs||шлёпанцы
-|la manche||рукав
-|la poche||карман
-|la foulard||платок
-|le costume||костюм
-|le tailleur||дамский костюм
-|des pantoufles||домашние туфли
-|le blouson||куртка
-|les sous-vêtements||нижнее бельё
-|les gants||перчатки
-|les moufles||рукавица
-|la ceinture||пояс
-|la casquette||фуражка
-|la jupe||юбка
-|la robe||платье
-|la sandale||сандаль
-|des bottes||сапоги
-|la veste||куртка
-|l'écharpe||шарф
-|la cravate||галстук
-|des chaussons||туфли без задников
-|des escarpins||высокие каблуки
-|le bermuda||бермуды
-|la pointure||размер ботинок
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
+le pyjama
+le bijou
+le collier
+le jean
+le pantalon
+le pull
+le col roulé
+l'imperméable
+le chemisier
+le soutien-gorge
+le jupon
+le manteau
+des tennis
+le maillot de bain
+le short
+le bracelet
+le porte-bonheur
+le tee-shirt
+le chapeau
+la bague
+la chaînette
+les boucles d'oreilles
+l'épingle
+la chaussette
+la chaussure
+la chemise
+l'anorak
+des baskets
+le .mp3ing
+la taille
+le caleçon
+le slip
+la culotte
+le smoking
+le nœud papillon
+le gilet
+les tongs
+la manche
+la poche
+la foulard
+le costume
+le tailleur
+des pantoufles
+le blouson
+les sous-vêtements
+les gants
+les moufles
+la ceinture
+la casquette
+la jupe
+la robe
+la sandale
+des bottes
+la veste
+l'écharpe
+la cravate
+des chaussons
+des escarpins
+le bermuda
+la pointure
+</prosody>
+</voice>
+</speak>

@@ -1,11 +1,17 @@
-|à gauche||слева
-|à droite||справа
-|tout droit||прямо
-|le nord||север
-|le sud||юг
-|l'est||восток
-|l'ouest||запад
-|le nord-est||северо-восток
-|le nord-ouest||северо-запад
-|le sud-est||юго-восток
-|le sud-ouest||юго-запад
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
+à gauche
+à droite
+tout droit
+le nord
+le sud
+l'est
+l'ouest
+le nord-est
+le nord-ouest
+le sud-est
+le sud-ouest
+</prosody>
+</voice>
+</speak>

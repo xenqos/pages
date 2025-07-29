@@ -1,30 +1,37 @@
-|la brosse à dents||зубная щётка
-|le dentifrice||зубная паста
-|le fil dentaire||флосс
-|la brosse||щётка для волос
-|le peigne||расчёска
-|le shampooing||шампунь
-|le fer à friser||утюжок для завивки
-|la crème à raser||крем для бритья
-|le rasoir||бритва
-|la mousse||пена
-|la laque||лак для воллос
-|le sèche-cheveux||сушка волос
-|le vernis à ongles||полировка ногтей
-|le mascara||тушь для ресниц
-|le rouge à lèvres||помада
-|la poudre||пудра
-|le savon||мыло
-|le maquillage||макияж
-|le parfum||духи
-|l'eau de Cologne||одеколон
-|le blush||румяна
-|le fond de teint||основа под макияж
-|l'eye liner||подрисовка глаз
-|l'ombre à paupières||тени
-|le bain moussant||пенная ванна
-|le gel douche||гель для душа
-|le déodorant||дезодорант
-|la lotion / la crème||лосьон
-|les serviettes hygiéniques||гигиеническая салфетка
-|les tampons||тампоны
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
+la brosse à dents
+le dentifrice
+le fil dentaire
+la brosse
+le peigne
+le shampooing
+le fer à friser
+la crème à raser
+le rasoir
+la mousse
+la laque
+le sèche-cheveux
+le vernis à ongles
+le mascara
+le rouge à lèvres
+la poudre
+le savon
+le maquillage
+le parfum
+l'eau de Cologne
+le blush
+le fond de teint
+l'eye liner
+l'ombre à paupières
+le bain moussant
+le gel douche
+le déodorant
+la lotion
+la crème
+les serviettes hygiéniques
+les tampons
+</prosody>
+</voice>
+</speak>

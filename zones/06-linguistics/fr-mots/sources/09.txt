@@ -1,10 +1,16 @@
-|haut||высокий
-|bas||низкий
-|long||длинный
-|courte||короткий
-|grand||большой
-|petit||маленький
-|gros||толстый
-|maigre||тонкий
-|large||широкий
-|étroit||узкий
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
+haut
+bas
+long
+courte
+grand
+petit
+gros
+maigre
+large
+étroit
+</prosody>
+</voice>
+</speak>

@@ -1,16 +1,22 @@
-|le mois||месяц
-|l'an||год
-|l'année||год
-|la décennie||десятилетие
-|le siècle||век
-|le millénaire||тысячелетие
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
+le mois
+l'an
+l'année
+la décennie
+le siècle
+le millénaire
 
-|le printemps||весна
-|l'été||лето
-|l'automne||осень
-|l'hiver||зима
+le printemps
+l'été
+l'automne
+l'hiver
 
-|au printemps||весна
-|en été||лето
-|en automne||осень
-|en hiver||зима
+au printemps
+en été
+en automne
+en hiver
+</prosody>
+</voice>
+</speak>

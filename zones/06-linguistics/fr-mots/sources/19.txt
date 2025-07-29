@@ -1,107 +1,115 @@
-|l'air||воздух
-|l'archipel||архипелаг
-|la rive||берег
-|la baie||залив
-|la grange||амбар
-|la plage||пляж
-|la branche||ветка
-|le pont||мост
-|le bouton||бутон
-|le buisson||куст
-|le cap||мыс
-|la caverne||пещера
-|la ville||город
-|le climat||климат
-|le nuage||облако
-|la côte||побережье
-|la comète||комета
-|la constellation||созвездие
-|le pays||страна
-|la campagne||поле, равнина
-|le courant||течение, поток
-|la jonquille||нарцисс
-|la marguerite||ромашка
-|l'obscurité||темнота
-|le désert||пустыня
-|la rosée||роса
-|la poussière||пыль
-|la terre||земля
-|l'est||восток
-|la ferme||ферма
-|le champ||поле
-|la fleur||цветок
-|l'écume||пена
-|le brouillard||туман
-|le feuillage||листва
-|la forêt||лес
-|la gelée||мороз
-|l'herbe||трава
-|le golfe||залив
-|la grêle||град
-|le foin||сено
-|la marée haute||прилив
-|la colline||холм
-|la glace||лёд
-|I'île||остров
-|l'isthme||перешеек
-|la jungle||джунгли
-|le lac||озеро
-|la feuille||лист
-|la lumière||свет
-|l'éclair||молния
-|le lis||лилия
-|la marée basse||отлив
-|le pré||луг
-|la lune||луна
-|la montagne||гора
-|la chaîne de montagnes||горный массив
-|l'embouchure||устье
-|la vase||грязь
-|la nature||природа
-|le nord||север
-|la péninsule||полуостров
-|la plaine||равнина
-|la planète||планета
-|la plante||растение
-|l'étang||пруд
-|le pot de fleurs||цветочный горшок
-|la pluie||дождь
-|l'arc-en-ciel||радуга
-|le fleuve||река
-|le rocher||камень
-|la racine||корень
-|la rose||роза
-|le sable||песок
-|la mer||море
-|l'ombre||тень
-|le ciel||небо
-|la neige||снег
-|la terre||земля, почва
-|le sud||юг
-|la source||источник, родник
-|l'étoile||звезда
-|la tige||ствол
-|l'orage / la tempête||шторм / буря
-|le détroit||пролив
-|le ruisseau||ручей
-|la rue||улица
-|le soleil||солнце
-|le tournesol||подсолнух
-|la fonte||таяние
-|le tonnerre||гром
-|la tornade||торнадо
-|l'arbre||дерево
-|le tronc||ствол
-|la tulipe||тюльпан
-|la vallée||долина
-|la vue||вид
-|l'eau||вода
-|l'eau douce||пресная вода
-|l'eau salée||морская  вода
-|l'arrosoir||лейка
-|la cascade||водопад
-|la vague / l'onde||волна
-|le temps||погода
-|l'ouest||запад
-|le vent||ветер
-|le monde||мир
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
+l'air
+l'archipel
+la rive
+la baie
+la grange
+la plage
+la branche
+le pont
+le bouton
+le buisson
+le cap
+la caverne
+la ville
+le climat
+le nuage
+la côte
+la comète
+la constellation
+le pays
+la campagne
+le courant
+la jonquille
+la marguerite
+l'obscurité
+le désert
+la rosée
+la poussière
+la terre
+l'est
+la ferme
+le champ
+la fleur
+l'écume
+le brouillard
+le feuillage
+la forêt
+la gelée
+l'herbe
+le golfe
+la grêle
+le foin
+la marée haute
+la colline
+la glace
+I'île
+l'isthme
+la jungle
+le lac
+la feuille
+la lumière
+l'éclair
+le lis
+la marée basse
+le pré
+la lune
+la montagne
+la chaîne de montagnes
+l'embouchure
+la vase
+la nature
+le nord
+la péninsule
+la plaine
+la planète
+la plante
+l'étang
+le pot de fleurs
+la pluie
+l'arc-en-ciel
+le fleuve
+le rocher
+la racine
+la rose
+le sable
+la mer
+l'ombre
+le ciel
+la neige
+la terre
+le sud
+la source
+l'étoile
+la tige
+l'orage
+la tempête
+le détroit
+le ruisseau
+la rue
+le soleil
+le tournesol
+la fonte
+le tonnerre
+la tornade
+l'arbre
+le tronc
+la tulipe
+la vallée
+la vue
+l'eau
+l'eau douce
+l'eau salée
+l'arrosoir
+la cascade
+la vague
+l'onde
+le temps
+l'ouest
+le vent
+le monde
+</prosody>
+</voice>
+</speak>

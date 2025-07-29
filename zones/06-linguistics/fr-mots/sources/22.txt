@@ -1,56 +1,62 @@
-|les meubles||мебель
-|l'étagère||этажерка
-|le bureau||бюро
-|la chaise||стул
-|la commode||комод
-|le rideau||занавесь
-|la tringle||карниз
-|les volets||ставни
-|les stores||шторы
-|la fenêtre||окно
-|le lit||кровать
-|le plumard||кровать
-|la porte||дверь
-|le placard||стенной шкаф
-|le tapis||ковёр
-|la lampe||лампа
-|la table de nuit||ночной столик
-|la table (basse)||кофейный столик
-|l'évier||раковина
-|la baignoire||ванна
-|la douche||душ
-|l'oreiller||подушка
-|le miroir||зеркало
-|le plafond||потолок
-|le plancher||пол
-|le fauteuil||кресло
-|la pendule||часы стенные
-|le couvre-lit||постельное покрывало
-|le vase||ваза
-|le lavabo||умывальник
-|le clic-clac||раскладушка
-|le fauteuil à bascule||кресло-качалка
-|le tabouret||табурет
-|le coussin||диванная подушка
-|la moquette||палас
-|le drap||сукно
-|la couverture||покрывало
-|le matelas||матрац
-|les lits superposés||накладная кровать
-|l'abat-jour||абажур
-|le porte-serviettes||вешалка для полотенец
-|la buanderie||прачечная
-|la javel||отбеливатель
-|le panier à linge||корзина для белья
-|la pince à linge||прищепка
-|la planche à repasser||гладильная доска
-|le cintre||вешалка
-|le balai||метла
-|la pelle||совок
-|la serpillière||половая тряпка
-|les ordures||мусор
-|le sac poubelle||мешок для мусора
-|la poubelle||мусорный ящик
-|la tapette à mouche||мухобойка
-|le canapé||кушетка
-|le sofa||софа
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
+les meubles
+l'étagère
+le bureau
+la chaise
+la commode
+le rideau
+la tringle
+les volets
+les stores
+la fenêtre
+le lit
+le plumard
+la porte
+le placard
+le tapis
+la lampe
+la table de nuit
+la table basse
+l'évier
+la baignoire
+la douche
+l'oreiller
+le miroir
+le plafond
+le plancher
+le fauteuil
+la pendule
+le couvre-lit
+le vase
+le lavabo
+le clic-clac
+le fauteuil à bascule
+le tabouret
+le coussin
+la moquette
+le drap
+la couverture
+le matelas
+les lits superposés
+l'abat-jour
+le porte-serviettes
+la buanderie
+la javel
+le panier à linge
+la pince à linge
+la planche à repasser
+le cintre
+le balai
+la pelle
+la serpillière
+les ordures
+le sac poubelle
+la poubelle
+la tapette à mouche
+le canapé
+le sofa
+</prosody>
+</voice>
+</speak>

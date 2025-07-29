@@ -1,17 +1,23 @@
-|le couple||пара
-|le rendez-vous||рандеву
-|la relation||отнпшения
-|le Pacte Civile de Solidarité||гражданский брак
-|les fiançailles||помолвка
-|le mariage||свадьба
-|le faire-part de mariage||объявление о свадьба
-|la lune de miel||медовый месяц
-|se pacser||съехаться
-|se fiancer||помолвиться
-|se marier||жениться
-|rompre||ломать, разбивать
-|quitter||оставлять
-|divorcer||расводиться
-|tromper||обманывать
-|se rencontrer||встречаться
-|se séparer||сепарироваться
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
+le couple
+le rendez-vous
+la relation
+le Pacte Civile de Solidarité
+les fiançailles
+le mariage
+le faire-part de mariage
+la lune de miel
+se pacser
+se fiancer
+se marier
+rompre
+quitter
+divorcer
+tromper
+se rencontrer
+se séparer
+</prosody>
+</voice>
+</speak>

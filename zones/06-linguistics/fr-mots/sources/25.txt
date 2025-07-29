@@ -1,45 +1,51 @@
-|l'ordinateur||компьютер
-|le portable||ноутбук
-|le document||документ
-|l'écran||монитор
-|le clavier||клавиатура
-|la souris||мышь
-|le curseur||курсор
-|la casque||наушники
-|les enceintes||колонки
-|la caméra Web||веб-камера
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
+l'ordinateur
+le portable
+le document
+l'écran
+le clavier
+la souris
+le curseur
+la casque
+les enceintes
+la caméra Web
 
-|l'imprimante||принтер
-|le scanneur||сканер
-|le télécopieur||факс
-|la photocopieuse||копировальная машина
-|la machine à écrire||печатная машинка
+l'imprimante
+le scanneur
+le télécopieur
+la photocopieuse
+la machine à écrire
 
-|le logiciel||софт
-|le dossier||файл
-|le placard||директория
+le logiciel
+le dossier
+le placard
 
-|la carte mémoire||карта памяти
-|la clé USB||флэшка
-|le disque dur externe||внешний диск
-|le cédérom||CD-ROM
-|la disquette||дискета
-|le câble||кабель
+la carte mémoire
+la clé USB
+le disque dur externe
+le cédérom
+la disquette
+le câble
 
-|le fichier||файл
-|le dossier||папка
-|le bureau||рабочий стол
-|les îcones||значки
-|le raccourci||ярлык
-|la fonte||шрифт
+le fichier
+le dossier
+le bureau
+les îcones
+le raccourci
+la fonte
 
-|la pièce jointe||приложение
-|le mot de passe||пароль
+la pièce jointe
+le mot de passe
 
-|la barre de tâche||панель задач
-|la barre d’outils||панель инструментов
-|le pavé numérique||цифровая панель
-|des erreurs||опечатки
-|fautes de frappe||опечатки
-|le correcteur d’orthographie||орфографический редактор
-|le logiciel||программное обеспечение
+la barre de tâche
+la barre d’outils
+le pavé numérique
+des erreurs
+fautes de frappe
+le correcteur d’orthographie
+le logiciel
+</prosody>
+</voice>
+</speak>

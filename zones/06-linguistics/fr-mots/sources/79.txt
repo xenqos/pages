@@ -1,21 +1,27 @@
-|à cause de||по причине, из-за
-|à défaut de||за неимением
-|à force de||в силу
-|ainsi||так, таким образом
-|attendu que||принимая во внимание
-|car||так как
-|c’est que||дело в том,что
-|de ce fait||поэтому, вследствие
-|en effet||в самом деле, действительно
-|en raison de||принимая во внимание, по причине
-|étant donné que||учитывая, что
-|eu égard à||принимая во внимание; имея в виду
-|faute de||за неимением, за отсутствием; из-за
-|grâce à||благодаря
-|non que … mais parce que||не из-за …, но потому что
-|parce que||потому что
-|par le fait que||из-за того,что
-|puisque||потому что
-|sous l’effet que||под влиянием
-|sous pretexte que||под претекстом, под предлогом
-|vu que||ввиду того, что…; так как
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
+à cause de
+à défaut de
+à force de
+ainsi
+attendu que
+car
+c’est que
+de ce fait
+en effet
+en raison de
+étant donné que
+eu égard à
+faute de
+grâce à
+non que mais parce que
+parce que
+par le fait que
+puisque
+sous l’effet que
+sous pretexte que
+vu que
+</prosody>
+</voice>
+</speak>

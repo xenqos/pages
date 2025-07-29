@@ -1,36 +1,42 @@
-|l'électroménager||электроприборы
-|le répondeur||автоответчик
-|la chaîne hi fi||стерео
-|la télévision||телевизор
-|le magnétoscope||магнитофон
-|la télécommande||пульт
-|l'ordinateur||компьютер
-|la radio||радио
-|le frigo||морозилка
-|le réfrigérateur||холодильник
-|le congélateur||производитель льда
-|la cuisinière||кухонная плита
-|le four||печь
-|le lave-vaisselle||посудомоечная машина
-|le four à micro-ondes||микроволновка
-|le thermostat||термостат
-|le climatiseur||кондиционер
-|le ventilateur||вентилятор
-|le batteur électrique||взбиватель
-|le mixeur||миксер
-|l'ouvre-boîtes||открывалка банок
-|le grille-pain||тостер
-|la cafétière||кофеварка
-|le moulin à café||кофемолка
-|la bouilloire||чайник
-|l'interrupteur||выключатель
-|le robinet||кран
-|la canalisation||канализация
-|la machine à laver||моечная машина
-|le lave-linge||моечная машина
-|le sèche-linge||сушка
-|le fer à repasser||утюг
-|l'aspirateur||пылесос
-|le séchoir||сушка
-|le sèche-cheveux||фен
-|le lecteur de DVD||ДВД проигрыватель
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
+l'électroménager
+le répondeur
+la chaîne hi fi
+la télévision
+le magnétoscope
+la télécommande
+l'ordinateur
+la radio
+le frigo
+le réfrigérateur
+le congélateur
+la cuisinière
+le four
+le lave-vaisselle
+le four à micro-ondes
+le thermostat
+le climatiseur
+le ventilateur
+le batteur électrique
+le mixeur
+l'ouvre-boîtes
+le grille-pain
+la cafétière
+le moulin à café
+la bouilloire
+l'interrupteur
+le robinet
+la canalisation
+la machine à laver
+le lave-linge
+le sèche-linge
+le fer à repasser
+l'aspirateur
+le séchoir
+le sèche-cheveux
+le lecteur de DVD
+</prosody>
+</voice>
+</speak>

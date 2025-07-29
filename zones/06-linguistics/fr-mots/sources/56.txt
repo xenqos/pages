@@ -1,55 +1,61 @@
-|l'autel||алтарь
-|l'ange||ангел
-|le baptême||крещение
-|la cloche||колокол
-|la Bible||Библия
-|l'évêque||епископ
-|la béatitude||блаженство
-|le bouddhisme||буддизм
-|le cierge||свеча
-|la cathédrale||кафедральный
-|la chorale||совор
-|le chrétien||христианин
-|la chrétienté||христианство
-|l'église||церковь
-|le couvent||обитель
-|la croix||крест
-|la coupole||купол
-|la foi||вера
-|le jeûne||пост
-|le Dieu||бог
-|l'auréole||ореол
-|l'Evangile||евангелие
-|le ciel||небо
-|le paradis||рай
-|l'enfer||ад
-|l'islam||ислам
-|le juif||еврей
-|la juive||еврейка
-|le judaïsme||иудаизм
-|la messe||месса
-|le minaret||минарет
-|le monastère||монатырь
-|la mosquée||мечеть
-|le moine||монах
-|le musulman||мусульманин
-|la religieuse||монахиня
-|bonne sœur||сестра милосердия
-|l'orgue||орган
-|le pilier||столб, колонна
-|le pape||папа
-|la prière||молитва
-|le prêtre||священник
-|le prophète||пророк
-|le protestant||протестант
-|la religion||религия
-|le curé||священник
-|le chapelet||чётки
-|le saint||святой
-|le sermon||проповедь
-|le pêché||грех
-|la souffrance||страдание
-|le temple||храм
-|le supplice||пытка, казнь
-|le vœu||обет
-|le culte||поклонение
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
+l'autel
+l'ange
+le baptême
+la cloche
+la Bible
+l'évêque
+la béatitude
+le bouddhisme
+le cierge
+la cathédrale
+la chorale
+le chrétien
+la chrétienté
+l'église
+le couvent
+la croix
+la coupole
+la foi
+le jeûne
+le Dieu
+l'auréole
+l'Evangile
+le ciel
+le paradis
+l'enfer
+l'islam
+le juif
+la juive
+le judaïsme
+la messe
+le minaret
+le monastère
+la mosquée
+le moine
+le musulman
+la religieuse
+bonne sœur
+l'orgue
+le pilier
+le pape
+la prière
+le prêtre
+le prophète
+le protestant
+la religion
+le curé
+le chapelet
+le saint
+le sermon
+le pêché
+la souffrance
+le temple
+le supplice
+le vœu
+le culte
+</prosody>
+</voice>
+</speak>

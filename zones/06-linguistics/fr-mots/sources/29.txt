@@ -1,50 +1,57 @@
-|les informations||информация
-|le journal||дневник, газета
-|le magazine d'actualités||киоск
-|l'actualité||текущие события
-|la météo||погода
-|la protestation||протест
-|la manifestation||манифестация
-|le tremblement de terre||землетрясение
-|l'ouragan||ураган
-|l'inondation||наводнение
-|le tsunami / le raz-de-marée||цунами
-|la sécheresse||засуха
-|le cambriolage||ограбление
-|l'agression||агрессия, нападение
-|le délit||правонарушение
-|le vol||воровство
-|les militaires||военные
-|l'armée||армия
-|la marine||флот
-|les forces aériennes||ВВС
-|l'invasion||вторжение
-|la bataille||битва
-|la retraite||отступление
-|le traité||договор
-|la trêve||перемирие
-|la pauvreté||бедность
-|les sans-abri||бездомные
-|le crime||преступление
-|le meurtre||убийство
-|le génocide||геноцид
-|l'émeute||мятеж
-|le couvre-feu||комендантский час
-|le harcèlement||приставание
-|l'épidémie||епидемия
-|la peste||чума, мор
-|le clonage||клонирование
-|la toxicomanie||токсикомания
-|le trafic de drogue||наркотрафик
-|le procès||процесс
-|le témoignage||свидетельство
-|la preuve||доказательство
-|le cessez-le-feu||прекращение огня
-|le revolver||револьвер
-|le fusil||ружьё
-|les troupes||войска
-|le soldat||солдат
-|l'otage||заложник
-|les pertes||потери
-|les vainqueurs||победители
-|les vaincus||побеждённые
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
+les informations
+le journal
+le magazine d'actualités
+l'actualité
+la météo
+la protestation
+la manifestation
+le tremblement de terre
+l'ouragan
+l'inondation
+le tsunami
+le raz-de-marée
+la sécheresse
+le cambriolage
+l'agression
+le délit
+le vol
+les militaires
+l'armée
+la marine
+les forces aériennes
+l'invasion
+la bataille
+la retraite
+le traité
+la trêve
+la pauvreté
+les sans-abri
+le crime
+le meurtre
+le génocide
+l'émeute
+le couvre-feu
+le harcèlement
+l'épidémie
+la peste
+le clonage
+la toxicomanie
+le trafic de drogue
+le procès
+le témoignage
+la preuve
+le cessez-le-feu
+le revolver
+le fusil
+les troupes
+le soldat
+l'otage
+les pertes
+les vainqueurs
+les vaincus
+</prosody>
+</voice>
+</speak>

@@ -1,31 +1,37 @@
-|la correspondance||пересадка
-|le quai||набережная, перрон
-|la voie||путь
-|le wagon-restaurant||вагон рестотан
-|le carrefour||перекрёсток
-|la berline||седан (4 двери)
-|le coupé||купе (2 двери)
-|le break||универсал
-|le cabriolet||откытый автомобиль
-|le camion||грузовик
-|le plan de métro||план метро
-|le carnet||книжка билетов
-|la carte orange||проездной
-|la ligne||линия
-|le ticket||билет
-|la camionnette||van
-|le monospace||minivan
-|le pick-up||pick-up truck
-|le 4x4 (quatre-quatre)||SUV
-|le remorque||буксировка
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
+la correspondance
+le quai
+la voie
+le wagon-restaurant
+le carrefour
+la berline
+le coupé
+le break
+le cabriolet
+le camion
+le plan de métro
+le carnet
+la carte orange
+la ligne
+le ticket
+la camionnette
+le monospace
+le pick-up
+le quatre-quatre
+le remorque
 
-|en vélo||на велосипеде
-|en bus||на автобусе
-|en scooter||на мотороллере
-|en voiture||на машине
-|en moto||на мотоцикле
-|en métro||на метро
-|à pied||пешком
-|en avion||на самолёте
-|en train||на поезде
-|en bateau||на корабле
+en vélo
+en bus
+en scooter
+en voiture
+en moto
+en métro
+à pied
+en avion
+en train
+en bateau
+</prosody>
+</voice>
+</speak>

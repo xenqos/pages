@@ -1,35 +1,41 @@
-|le klaxon||клаксон
-|le capot||капот
-|le frein||тормоз
-|le volant||руль
-|les essuie-glaces||щётки
-|le tableau de bord||приборная доска
-|l'accélérateur||акселератор
-|les phares||фары
-|le pare-brise||лобовое стекло
-|le moteur||мотор
-|le coffre||багажник
-|la carrosserie||кузов
-|le permis de conduire||права
-|l'essence||бензин
-|les feux||светофор
-|l'huile||масло
-|l'enjoliveur||колпак колеса
-|la pompe à air||воздушная помпа
-|le clignotant||поворотник
-|la plaque d'immatriculation||номер
-|le stop||тормозной сигнал
-|la voiture||машина
-|la vitre||окно
-|la portière||дверь
-|le réservoir||бак
-|la roue||колесо
-|le pneu||шина
-|le pare-chocs||тормоз
-|l'aile||крыло
-|la poignée de portière||дверная ручка
-|la climatisation||кондиционер
-|le chauffage||обогреватель
-|la batterie||батарея
-|le bouchon de réservoir d'essence||крышка бака
-|la pompe à essence||бензиновый насос
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
+le klaxon
+le capot
+le frein
+le volant
+les essuie-glaces
+le tableau de bord
+l'accélérateur
+les phares
+le pare-brise
+le moteur
+le coffre
+la carrosserie
+le permis de conduire
+l'essence
+les feux
+l'huile
+l'enjoliveur
+la pompe à air
+le clignotant
+la plaque d'immatriculation
+le stop
+la voiture
+la vitre
+la portière
+le réservoir
+la roue
+le pneu
+le pare-chocs
+l'aile
+la poignée de portière
+la climatisation
+le chauffage
+la batterie
+le bouchon de réservoir d'essence
+la pompe à essence
+</prosody>
+</voice>
+</speak>

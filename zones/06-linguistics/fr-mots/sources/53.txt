@@ -1,32 +1,38 @@
-|l'allergie||аллергия
-|la maladie||болезнь
-|le rhume||насморк
-|la fièvre||горячка
-|la grippe||грипп
-|la migraine||мигрень
-|la bosse||шишка
-|les démangeaisons||зуд
-|l'intoxication||отравление
-|la piqûre||укус
-|l'égratignure||царапина
-|la cicatrice||шрам
-|la croûte||корка, струп
-|l'ampoule||ампула
-|la foulure||растяжение
-|l'otite||воспаление уха
-|enflé/e||опухший
-|le vertige||головокружение
-|les gouttes||капли
-|les pilules||пилюли
-|le cachet||таблетка
-|la pommade||мазь
-|le sparadrap||лейкопластырь
-|l'ordonnance||рецепт
-|les médicaments||медикаменты
-|les vitamines||житамины
-|la pastille||пастилка, леденец
-|les somnifères||снотворное
-|s'écorcher||оцарапаться
-|se fouler||растянуться, вывихнуть
-|s'écraser||разбиться
-|se casser||сломать
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
+l'allergie
+la maladie
+le rhume
+la fièvre
+la grippe
+la migraine
+la bosse
+les démangeaisons
+l'intoxication
+la piqûre
+l'égratignure
+la cicatrice
+la croûte
+l'ampoule
+la foulure
+l'otite
+enflé/e
+le vertige
+les gouttes
+les pilules
+le cachet
+la pommade
+le sparadrap
+l'ordonnance
+les médicaments
+les vitamines
+la pastille
+les somnifères
+s'écorcher
+se fouler
+s'écraser
+se casser
+</prosody>
+</voice>
+</speak>

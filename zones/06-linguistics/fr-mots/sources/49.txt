@@ -1,19 +1,25 @@
-|la viande||мясо
-|du lard||бекон
-|du bacon||бекон
-|le bœuf||говядина
-|le poulet||цыплёнок
-|le canard||утка
-|la chèvre||коза
-|le jambon||ветчина
-|l'agneau||ягнёнок
-|le foie||печень
-|des boulettes de viande||тефтели
-|une côtelette de porc||свинная отбивная
-|le lapin||кролик
-|le steak haché||гамбургер
-|la saucisse||сосиска
-|le saucisson||колбаса
-|la dinde||индейка
-|le veau||телятина
-|le chevreuil||оленина
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
+la viande
+du lard
+du bacon
+le bœuf
+le poulet
+le canard
+la chèvre
+le jambon
+l'agneau
+le foie
+des boulettes de viande
+une côtelette de porc
+le lapin
+le steak haché
+la saucisse
+le saucisson
+la dinde
+le veau
+le chevreuil
+</prosody>
+</voice>
+</speak>

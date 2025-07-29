@@ -1,27 +1,35 @@
-|la frange||чёлка
-|les mèches||частичное осветление
-|le balayage||частичное осветление
-|la coupe de cheveux||стрижка
-|le brushing||укладка
-|bouclés||бигуди
-|ondulés||волнистый
-|frisés / crépus||завитки
-|raides||прямые
-|teints||покрашенные
-|décolorés||осветлённые
-|dégradé||ступенчатая стрижка
-|la natte / les tresses||коса
-|la queue-de-cheval||хвост
-|la barrette||заколка
-|le serre-tête||повязка
-|les pinces à cheveux||клип
-|l'élastique||резинка
-|l'épingle à cheveux||шпилька
-|la coupe en brosse||стрижка ёжиком
-|la boule à zéro||наголо
-|chauve||лысый
-|la raie||пробор
-|se couper les cheveux||подстричься самому
-|se faire couper les cheveux||подстричься у мастера
-|se teindre les cheveux||покраситься самому
-|se faire teindre les cheveux||покраситься у мастера
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
+la frange
+les mèches
+le balayage
+la coupe de cheveux
+le brushing
+bouclés
+ondulés
+frisés
+crépus
+raides
+teints
+décolorés
+dégradé
+la natte
+les tresses
+la queue-de-cheval
+la barrette
+le serre-tête
+les pinces à cheveux
+l'élastique
+l'épingle à cheveux
+la coupe en brosse
+la boule à zéro
+chauve
+la raie
+se couper les cheveux
+se faire couper les cheveux
+se teindre les cheveux
+se faire teindre les cheveux
+</prosody>
+</voice>
+</speak>
