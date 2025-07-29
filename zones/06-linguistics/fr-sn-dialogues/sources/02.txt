@@ -1,0 +1,19 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+
+<voice name="fr-FR-HenriNeural"><prosody rate="-30%" pitch="0%">J'ai entendu dire que la compétition est fixée pour dimanche.</prosody></voice>
+<voice name="fr-FR-DeniseNeural"><prosody rate="-30%" pitch="0%">Exact. J'ai bien besoin de m'entraîner. Pouvez-vous me prêter votre bicyclette?</prosody></voice>
+
+<voice name="fr-FR-HenriNeural"><prosody rate="-30%" pitch="0%">Mais cela va de soi.</prosody></voice>
+<voice name="fr-FR-DeniseNeural"><prosody rate="-30%" pitch="0%">Voyez-vous, la mienne ne marche pas bien.</prosody></voice>
+
+<voice name="fr-FR-HenriNeural"><prosody rate="-30%" pitch="0%">Ah oui?</prosody></voice>
+<voice name="fr-FR-DeniseNeural"><prosody rate="-30%" pitch="0%">Je crains d'avoir une panne.</prosody></voice>
+
+<voice name="fr-FR-HenriNeural"><prosody rate="-30%" pitch="0%">Je me rends compte. La dernière fois je suis tombé et j'ai été rudement handicapé.</prosody></voice>
+<voice name="fr-FR-DeniseNeural"><prosody rate="-30%" pitch="0%">Je vous l'avais bien dit. Vous n'avez pas voulu faire attention à mes paroles.</prosody></voice>
+
+<voice name="fr-FR-HenriNeural"><prosody rate="-30%" pitch="0%">Ah, oui, vous parlez d'or, c'est connu. Tout comme mon frère d'ailleurs. A propos savez-vous qu'actuellement il se prépare à une compétition très importante et qu'il est bien inquiet?</prosody></voice>
+<voice name="fr-FR-DeniseNeural"><prosody rate="-30%" pitch="0%">Je le crois volontiers. Il y a de quoi. Son émule travaille avec acharnement.</prosody></voice>
+
+<voice name="fr-FR-HenriNeural"><prosody rate="-30%" pitch="0%">C'est ce que j'allais dire.</prosody></voice>
+</speak>

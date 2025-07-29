@@ -1,0 +1,14 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+
+<voice name="fr-FR-HenriNeural"><prosody rate="-30%" pitch="0%">Pardon, madame, rue de Vaugirard, s'il vous plaît?</prosody></voice>
+<voice name="fr-FR-DeniseNeural"><prosody rate="-30%" pitch="0%">Excusez, madame, je ne suis pas du quartier, Vous devriez vous adressez à quelqu'un d'autre. A un autre passant.</prosody></voice>
+
+<voice name="fr-FR-HenriNeural"><prosody rate="-30%" pitch="0%">Excusez-moi, monsieur, pourriez-vous me dire comment aller rue de Vaugirard?</prosody></voice>
+<voice name="fr-FR-DeniseNeural"><prosody rate="-30%" pitch="0%">Volontiers, madame. Suivez cette rue, tout droit, cent mètres plus loin vous verrez à votre gauche la rue de Vaugirard.</prosody></voice>
+
+<voice name="fr-FR-HenriNeural"><prosody rate="-30%" pitch="0%">Merci beaucoup, monsieur. Ne pourriez-vous pas me donner encore un petit renseignement? Y-a-t-il une bouche de métro non loin d'ici?</prosody></voice>
+<voice name="fr-FR-DeniseNeural"><prosody rate="-30%" pitch="0%">Il y en a une, juste à l'endroit où vous allez déboucher dans la rue Vaugirard.</prosody></voice>
+
+<voice name="fr-FR-HenriNeural"><prosody rate="-30%" pitch="0%">Merci de votre obligeance, monsieur.</prosody></voice>
+<voice name="fr-FR-DeniseNeural"><prosody rate="-30%" pitch="0%">Je vous en prie, madame.</prosody></voice>
+</speak>

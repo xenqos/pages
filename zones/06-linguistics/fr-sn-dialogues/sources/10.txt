@@ -1,0 +1,24 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+
+<voice name="fr-FR-HenriNeural"><prosody rate="-30%" pitch="0%">Pourquoi n'êtes-vous pas venue en voiture? Ce serait plus commode pour rentrer,</prosody></voice>
+<voice name="fr-FR-DeniseNeural"><prosody rate="-30%" pitch="0%">Je n'ai pas le permis de conduire.</prosody></voice>
+
+<voice name="fr-FR-HenriNeural"><prosody rate="-30%" pitch="0%">Comment cela se fait-il? Vous avez une voiture depuis longtemps.</prosody></voice>
+<voice name="fr-FR-DeniseNeural"><prosody rate="-30%" pitch="0%">Oui, mais ce sont mon père et mon frère qui s'en occupent. Moi, je n'ose pas.</prosody></voice>
+
+<voice name="fr-FR-HenriNeural"><prosody rate="-30%" pitch="0%">Ce n'est pas sorcier, pourtant.</prosody></voice>
+<voice name="fr-FR-DeniseNeural"><prosody rate="-30%" pitch="0%">J'hésite toujours à me mettre au volant. J'ai peur d'écraser quelqu'un ou de tamponner une autre voiture,</prosody></voice>
+
+<voice name="fr-FR-HenriNeural"><prosody rate="-30%" pitch="0%">Ce n'est pas si difficile que ça, il ne faut pas s'en faire un monde. Je me suis inscrite au club des automobilistes à l'âge de 18 ans, et je vous assure que ça a très bien marché. Voulez-vous que je vous emmène demain dans ce club?</prosody></voice>
+<voice name="fr-FR-DeniseNeural"><prosody rate="-30%" pitch="0%">Comme vous y allez! Pourquoi pas? Il n'y a pas à hésiter... Qu'est-ce que j'allais dire?.. Ah, oui, je voulais vous demander si vous prenez part à notre partie de camping?</prosody></voice>
+<voice name="fr-FR-DeniseNeural"><prosody rate="-30%" pitch="0%">Je ne l'ai pas encore décidé, franchement.</prosody></voice>
+
+<voice name="fr-FR-HenriNeural"><prosody rate="-30%" pitch="0%">Qu'est-ce que vous attendez, ma chère? Si c'est non, on ne compte plus sur vous, si c'est oui, préparez pour après-demain votre sac à dos et votre sac à couchage.</prosody></voice>
+<voice name="fr-FR-DeniseNeural"><prosody rate="-30%" pitch="0%">Je ne sais que faire, il faudrait réfléchir.</prosody></voice>
+
+<voice name="fr-FR-HenriNeural"><prosody rate="-30%" pitch="0%">Décidez-vous plus vite! A-t-on jamais vu quelqu'un de plus timoré!</prosody></voice>
+<voice name="fr-FR-DeniseNeural"><prosody rate="-30%" pitch="0%">Croyez-vous que cette partie de camping soit vraiment intéressante?</prosody></voice>
+
+<voice name="fr-FR-HenriNeural"><prosody rate="-30%" pitch="0%">Bien sûr! Nous allons passer par des endroits très pittoresques et célèbres en même temps, par la forêt de N. Cest là que pendant la Grande guerre nationale se tenait l'état-major des partisans qui combattaient dans cette région. Dans un des villages que nous traverserons il y a un musée consacré aux souvenirs de cette époque héroïque. Joignez-vous, à nous, ça vaut le coup.</prosody></voice>
+<voice name="fr-FR-DeniseNeural"><prosody rate="-30%" pitch="0%">C'est évident. Je suis des vôtres.</prosody></voice>
+</speak>

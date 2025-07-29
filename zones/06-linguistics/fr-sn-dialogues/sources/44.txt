@@ -1,0 +1,38 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+
+<voice name="fr-FR-HenriNeural"><prosody rate="-30%" pitch="0%">Dis-donc, Anne, quel est ce sentier que nous avons pris? Il ne nous amène pas à la clairière.</prosody></voice>
+<voice name="fr-FR-DeniseNeural"><prosody rate="-30%" pitch="0%">Je n'en sais rien, vraiment. J'ai l'impression que nous faisons fausse route.</prosody></voice>
+
+<voice name="fr-FR-HenriNeural"><prosody rate="-30%" pitch="0%">C'est bien ce qu'il me semble. Mais rien n'est perdu. Tu n'as qu'à sortir ta boussole qui est dans le sac, nous verrons alors où il faut aller.</prosody></voice>
+<voice name="fr-FR-DeniseNeural"><prosody rate="-30%" pitch="0%">Vois-tu, je n'ai pas ma boussole sur moi.</prosody></voice>
+
+<voice name="fr-FR-HenriNeural"><prosody rate="-30%" pitch="0%">Qu'est-ce que tu me dis là?</prosody></voice>
+<voice name="fr-FR-DeniseNeural"><prosody rate="-30%" pitch="0%">La pure vérité. Elle est abîmée depuis quelques jours et je n'ai pas eu le temps de la réparer.</prosody></voice>
+
+<voice name="fr-FR-HenriNeural"><prosody rate="-30%" pitch="0%">C'est encore ton petit frangin qui, sans doute, a fait des siennes!</prosody></voice>
+<voice name="fr-FR-DeniseNeural"><prosody rate="-30%" pitch="0%">Pas le moins du monde. C'est moi qui l'ai cassée.</prosody></voice>
+
+<voice name="fr-FR-HenriNeural"><prosody rate="-30%" pitch="0%">Comment t'y es-tu prise?</prosody></voice>
+<voice name="fr-FR-DeniseNeural"><prosody rate="-30%" pitch="0%">Je ne sais pas. J'ai enlevé le verre pour nettoyer le cadran, après quoi ça n'a plus marché.</prosody></voice>
+
+<voice name="fr-FR-HenriNeural"><prosody rate="-30%" pitch="0%">Oh, quel malheur!</prosody></voice>
+<voice name="fr-FR-DeniseNeural"><prosody rate="-30%" pitch="0%">Où est le mal?</prosody></voice>
+
+<voice name="fr-FR-HenriNeural"><prosody rate="-30%" pitch="0%">Mais puisqu'il n'y a pas de boussole nous n'arriverons jamais à sortir d'ici.</prosody></voice>
+<voice name="fr-FR-DeniseNeural"><prosody rate="-30%" pitch="0%">N'exagère pas, voyons.</prosody></voice>
+
+<voice name="fr-FR-HenriNeural"><prosody rate="-30%" pitch="0%">De toutes façons, nous serons en retard pour le dîner.</prosody></voice>
+<voice name="fr-FR-DeniseNeural"><prosody rate="-30%" pitch="0%">Qu'est-ce que ça peut faire? On attendra jusqu'au souper.</prosody></voice>
+
+<voice name="fr-FR-HenriNeural"><prosody rate="-30%" pitch="0%">Parle pour toi! Moi, je sens que j'ai déjà l'estomac dans les talons.</prosody></voice>
+<voice name="fr-FR-DeniseNeural"><prosody rate="-30%" pitch="0%">Tu as un bel appétit, c'est vrai. Mais ne te désespères pas, Je suis sûre que nous arriverons bientôt à la clairière si nous tournons à gauche.</prosody></voice>
+
+<voice name="fr-FR-HenriNeural"><prosody rate="-30%" pitch="0%">Comment?</prosody></voice>
+<voice name="fr-FR-DeniseNeural"><prosody rate="-30%" pitch="0%">Je te dis qu'il faut tourner à gauche pour rentrer à la maison.</prosody></voice>
+
+<voice name="fr-FR-HenriNeural"><prosody rate="-30%" pitch="0%">Qu'est-ce* qui te fait dire ça?</prosody></voice>
+<voice name="fr-FR-DeniseNeural"><prosody rate="-30%" pitch="0%">Mon expérience de campeuse chevronnée. Va, tu ne perdras rien à me suivre.</prosody></voice>
+
+<voice name="fr-FR-HenriNeural"><prosody rate="-30%" pitch="0%">Je ne dis pas non. Qui ne risque rien n'a rien.</prosody></voice>
+<voice name="fr-FR-DeniseNeural"><prosody rate="-30%" pitch="0%">Fais-moi confiance. On prendra ce chemin à mes risques et périls.</prosody></voice>
+</speak>

@@ -1,0 +1,17 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+
+<voice name="fr-FR-HenriNeural"><prosody rate="-30%" pitch="0%">Pierre, excuse-moi d'arriver chez toi, sans crier gare.</prosody></voice>
+<voice name="fr-FR-DeniseNeural"><prosody rate="-30%" pitch="0%">Je t'en prie, ne fais pas de façons.</prosody></voice>
+
+<voice name="fr-FR-HenriNeural"><prosody rate="-30%" pitch="0%">Vois-tu, j'ai un grand service à te demander.</prosody></voice>
+<voice name="fr-FR-DeniseNeural"><prosody rate="-30%" pitch="0%">Je suis à ta disposition. Que puis-je faire pour toi?</prosody></voice>
+
+<voice name="fr-FR-HenriNeural"><prosody rate="-30%" pitch="0%">Nous partions à la campagne, mon auto était déjà prête, lorsque tout à coup quelque chose n'a pas marché dans le moteur, et c'est trop tard pour commencer les réparations. Je voulais te prier d'accompagner ma famille à la gare dans la voiture.</prosody></voice>
+<voice name="fr-FR-DeniseNeural"><prosody rate="-30%" pitch="0%">Mais avec le plus grand plaisir. Je vais chez toi de ce pus pour t'aider à descendre les bagages.</prosody></voice>
+
+<voice name="fr-FR-HenriNeural"><prosody rate="-30%" pitch="0%">Je suis désolé de te déranger.</prosody></voice>
+<voice name="fr-FR-DeniseNeural"><prosody rate="-30%" pitch="0%">Du tout, du tout! Seulement, je dois téléphoner à un collègue si tu permets.</prosody></voice>
+
+<voice name="fr-FR-HenriNeural"><prosody rate="-30%" pitch="0%">Mais je t'en prie.</prosody></voice>
+<voice name="fr-FR-DeniseNeural"><prosody rate="-30%" pitch="0%">D'accord. Je suis à toi dans une minute.</prosody></voice>
+</speak>

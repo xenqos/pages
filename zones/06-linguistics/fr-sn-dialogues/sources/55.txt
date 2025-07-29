@@ -1,0 +1,25 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+
+<voice name="fr-FR-HenriNeural"><prosody rate="-30%" pitch="0%">Aimez-vous la nouvelle pièce de Rameau?</prosody></voice>
+<voice name="fr-FR-DeniseNeural"><prosody rate="-30%" pitch="0%">Pas tellement.</prosody></voice>
+
+<voice name="fr-FR-HenriNeural"><prosody rate="-30%" pitch="0%">Avez-vous lu quelque chose sur l'œuvre de Rameau?</prosody></voice>
+<voice name="fr-FR-DeniseNeural"><prosody rate="-30%" pitch="0%">Strictement rien.</prosody></voice>
+
+<voice name="fr-FR-HenriNeural"><prosody rate="-30%" pitch="0%">Il me semble que sa dernière pièce n'est pas des meilleures.</prosody></voice>
+<voice name="fr-FR-DeniseNeural"><prosody rate="-30%" pitch="0%">Loin de là. J'ai entendu dire même que l'année prochaine cette pièce ne sera plus jouée.</prosody></voice>
+
+<voice name="fr-FR-HenriNeural"><prosody rate="-30%" pitch="0%">Je n'en sais rien. Mais c'est bizarre, j'ai toujours cru que vous étiez une des admiratrices de Rameau.</prosody></voice>
+<voice name="fr-FR-DeniseNeural"><prosody rate="-30%" pitch="0%">Absolument pas. Pensez-vous!</prosody></voice>
+
+<voice name="fr-FR-HenriNeural"><prosody rate="-30%" pitch="0%">Je crois que l'acteur qui interprète le rôle principal est le favori du public.</prosody></voice>
+<voice name="fr-FR-DeniseNeural"><prosody rate="-30%" pitch="0%">Vous voulez rire!</prosody></voice>
+
+<voice name="fr-FR-HenriNeural"><prosody rate="-30%" pitch="0%">Voulez-vous que je prenne une place pour vous à l'Oрéга?</prosody></voice>
+<voice name="fr-FR-DeniseNeural"><prosody rate="-30%" pitch="0%">Ce n'est pas la peine, vraiment. Ces derniers temps je suis submergée de travail.</prosody></voice>
+
+<voice name="fr-FR-HenriNeural"><prosody rate="-30%" pitch="0%">C'est bien dommage. J'étais sûr que vous pourriez m'accompagner au théâtre.</prosody></voice>
+<voice name="fr-FR-DeniseNeural"><prosody rate="-30%" pitch="0%">Je regrette. Ne m'en voulez pas, ce n'est pas de ma faute si je suis très prise.</prosody></voice>
+
+<voice name="fr-FR-HenriNeural"><prosody rate="-30%" pitch="0%">Je le comprends parfaitement.</prosody></voice>
+</speak>

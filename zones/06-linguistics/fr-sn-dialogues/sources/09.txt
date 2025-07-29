@@ -1,0 +1,17 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+
+<voice name="fr-FR-HenriNeural"><prosody rate="-30%" pitch="0%">Roger n'est pas en train ce matin. Serait-il malade?</prosody></voice>
+<voice name="fr-FR-DeniseNeural"><prosody rate="-30%" pitch="0%">Je n'en doute pas, ça crève les yeux. Rien qu'à voir ses yeux battus et sa mine de papier mâché on comprend qu'il est malade. Mais qu'est-ce qu'il a au juste? Hier matin il était en pleine forme.</prosody></voice>
+
+<voice name="fr-FR-HenriNeural"><prosody rate="-30%" pitch="0%">Rien de grave, rassure-toi. Il a été invité hier à un souper de gala, organisé par Lucien à l'occasion de son anniversaire. J'y étais, moi aussi. On a beaucoup mangé et bu, surtout Roger qui a bu du cognac, du Champagne et de la bière après.</prosody></voice>
+<voice name="fr-FR-DeniseNeural"><prosody rate="-30%" pitch="0%">Ça c'est tout lui. Toujours la même histoire quand il s'agit de faire la bombe!</prosody></voice>
+
+<voice name="fr-FR-HenriNeural"><prosody rate="-30%" pitch="0%">Plus tard, il a fallu que je l'accompagne jusqu'à la maison, il n'était pas sûr de la direction à prendre.</prosody></voice>
+<voice name="fr-FR-DeniseNeural"><prosody rate="-30%" pitch="0%">Tout se tient. A quelle heure es-tu rentré chez toi?</prosody></voice>
+
+<voice name="fr-FR-HenriNeural"><prosody rate="-30%" pitch="0%">Figure-toi, lorsque j'ai amené Roger chez les siens, sa mère ne m'a pas laissé partir prétendant qu'il était trop tard et que je serais obligé de traverser toute la ville à pied. Elle a eu la gentillesse de m'offrir son hospitalité.</prosody></voice>
+<voice name="fr-FR-DeniseNeural"><prosody rate="-30%" pitch="0%">Alors tu as accepté, sans façon?</prosody></voice>
+
+<voice name="fr-FR-HenriNeural"><prosody rate="-30%" pitch="0%">Mais oui, ca ne se demande pas. Je tombais de fatigue. A part cela, je devais rester pour apaiser la colère des parents de Roger, qui étaient indignés de sa conduite.</prosody></voice>
+<voice name="fr-FR-DeniseNeural"><prosody rate="-30%" pitch="0%">Ça tombe sous le sens.</prosody></voice>
+</speak>
