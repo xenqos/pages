@@ -28,7 +28,8 @@ https://www.youtube.com/@nemeckij_jazyk_iz_germanii</prosody></voice>
 </voice></prosody></voice>
 </speak></prosody></voice>
 
-
-ffmpeg -i 10.mp3 -af "loudnorm=I=-14:TP=-14:LRA=7" 10-n.mp3</prosody></voice>
+ffprobe file.mp3
+ffmpeg -i file.mp3
+ ffmpeg -i 10.mp3 -af "loudnorm=I=-14:TP=-14:LRA=7" 10-n.mp3</prosody></voice>
 ffmpeg -i 10.mp3 -af "volume=-4dB" -y 10-n.mp3</prosody></voice>
 ffmpeg -i $file -ar 16000 -b:a 32k ../sounds/$file</prosody></voice>

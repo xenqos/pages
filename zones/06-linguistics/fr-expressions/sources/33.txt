@@ -1,0 +1,26 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
+Est-ce que je peux vous aider ?
+Je peux vous renseigner .
+Vous désirez ?
+Non, je regarde seulement.
+Je vais réfléchir.
+Quelle est votre taille ?
+Vous faites du combien ?
+Quelle est votre pointure ?
+Vous chaussez du combien ?
+Ça va, la taille ? C’est la bonne taille ?
+C’est trop grand.
+C'est trop serré.
+Ça coûte combien ?
+C'est en solde ?
+Quelle escroquerie !
+Quelle arnaque !
+Avez-vous une carte de fidélité ?
+Vous réglez comment ?
+Vous payez comment ?
+En espèces/par carte bleue.
+</prosody>
+</voice>
+</speak>
