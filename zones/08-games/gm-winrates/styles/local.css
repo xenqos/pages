@@ -1,28 +1,34 @@
 /*-----------------------------------------------------------------------------------------------*/
 
+.clIndex
+{
+  display:              inline-block !important;
+  margin:               0.000rem 0.000rem 2.000rem 0.000rem !important;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem !important;
+}
+
 #idContent
 {
   text-align:           center;
   margin:               0.000rem 0.000rem 0.000rem 0.000rem;
-  padding:              2.000rem 0.000rem 0.000rem 0.000rem;
+  padding:              3.000rem 0.000rem 0.000rem 0.000rem;
 }
 
 /*-----------------------------------------------------------------------------------------------*/
 
-h1
+#idQuestion
 {
+  color:                #995f46;
   font-family:          monospace;
   font-size:            4.000rem;
   margin:               0.000rem 0.000rem 0.000rem 0.000rem;
   padding:              6.000rem 0.000rem 0.000rem 0.000rem;
 }
 
-h2
+#idAnswer
 {
   background:           #e0e0e0;
-  background:           #ffffff;
   color:                #e0e0e0;
-  color:                #367b36;
   border:               1px solid #aaaaaa;
   border-radius:        0.400rem !important;
   display:              inline-block;
