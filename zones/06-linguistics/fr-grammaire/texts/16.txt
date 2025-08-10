@@ -1,71 +1,59 @@
-## Nom ##
+# Liaison - Interdite
 
-# Article - Défini
+после: vers, envers, avant, selon
+&emsp;%[m|vers elle, vers une heure, envers eux, avant elle, avant une heure]
+&emsp;&emsp;__исключения:__&ensp;%[m|avant-hier, selon eux , selon un membre du groupe]
 
-[|
-^  ^s.^p. ^
-|m.|%[m|le]|%[m|les]|
-|f.|%[m|la]|%[m|les]|
-|]
+прилагательные на -rd, -rt
+&emsp;%[m|lourd homme, court enfant, fort arbre]
+&emsp;&emsp;__исключения:__&ensp;%[m|fort utile]
 
-[!
-le, la = l' - перед гласной, h muet
-!]
+союз et
+&emsp;%[m|nécessaire et utile , mon collègue et ami, et il s’en va]
 
-[!
-%[m|à ] + %[m|le ] = %[m|au ]
-%[m|à ] + %[m|les] = %[m|aux]
-%[m|de] + %[m|le ] = %[m|du ]
-%[m|de] + %[m|les] = %[m|des]
-!]
+между существительным и следующим прилагательным
+&emsp;%[m|objet intéressant, palais imposant, amis américains]
+&emsp;&emsp;__исключения:__&ensp;%[m|États-Unis]
 
+между подлежащим существительным и сказуемым глаголом
+&emsp;%[m|ce cas est difficile, , nos amis arrivent, les enfants étaient là]
 
-<!--
-    Если перед существительными стоит притяжательное прилагательное, артикль не употребляется:
-    mon livre, sa femme, ces cahiers
-    Перед именами собственными, обозначающими названия городов, артикль не употребляется:
-    Je vais à Paris.
-    Если существительное, употребленное в роли именной части сказуемого, обозначает профессию, должность или род деятельности, артикль перед ним обычно не ставится:
-    Danielle est pianiste.
-    Michel est architecte.
-    После количественных наречий combien, beaucoup, peu, assez, trop употребляется предлог de, при этом перед именем существительным артикль опускается:
-    Combien de livres avez-vous?
-    J'ai beaucoup de livres.
-    После оборота c'est перед именем существительным употребляется обычно неопределенный артикль:
-    Qu'est-ce que c'est? C'est une chaise.
-    Если имя существительное определено другим именем существительным, указывающим на принадлежность, перед ним ставится определенный артикль:
-    C'est la chaise de Marie.
-    Ce n'est pas la chaise de Marie.
-    Если имя существительное, обозначающее национальность или жителя города, является именной частью составного сказуемого, артикль перед ним опускается:
-    L'ami de Marie est Russe.
-    Claire est Parisienne.
-    Если при существительном, выполняющем функцию именной части сказуемого, имеется определение, существительное употребляется с неопределенным артиклем:
-    Sa soeur est actrice. Sa soeur est une bonne actrice.
-    Перед существительным, являющимся прямым дополнением глагола в отрицательной форме, неопределенный артикль единственного и множественного числа опускается, а вместо него употребляется предлог de.
-    J'ai un frère, mais je n'ai pas de soeur.
-    Il ne fait pas de fautes dans ses dictees.
-    Определенный артикль перед прямым дополнением глагола, стоящего в отрицательной форме, сохраняется:
-    Je n'aime pas les lives de cet écrivain.
-    После существительных, имеющих собирательное значение, а также после существительных, обозначающих количество, употребляется предлог de, а артикль обычно опускается:
-    un groupe de garçons; un kilo de pommes;
-    une semaine de vacances; une quinzaine de phrases.
-    Существительные matin и soir употребляются без артикля: после наречий hier, demain, существительных, обозначающих дни недели, а также после le lendemain:
-    hier soir — вчера вечером
-    le lendemain matin — на другой день утром
-    dimanche soir — в воскресенье вечером
-    При указании адреса перед существительными rue, avenue, boulevard, place артикль не употребляется:
-    J'habite avenue de la Paix. — Я живу на проспекте Мира.
-    J'ai pris le métro place Maïakovski. — Я сел в метро на площади Маяковского.
-    После существительных un cours, une lecon, un manuel, un devoir, un professeur, un examen существительное, обозначающее предмет изучения, дисциплину, употребляется обычно без артикля:
-    une leçon de musique	un devoir d'anglais
-    un manuel de géographie	un professeur de russe
-    Если перед существительным во множественном числе стоит прилагательное, то неопределенный артикль опускается, а вместо него употребляется предлог de:
-    une bell fleur — de belles fleurs
-    une grande fenêtre — de grandes fenêtres.
-    Все существительные, обозначающие названия месяцев, — мужского рода. Они употребляются без артикля.
-    janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre
-    Все существительные, обозначающие названия времен года — мужского рода:
-    l'hiver, le printemps, l'été, l'automne Обратите внимание на отсутствие артикля при употреблении предлогов перед названиями времен года:
-    en hiver, en été, en automne, en printemps.
+если глагольная группа начинается с y или en
+&emsp;%[m|l’étudiant en trouve, nos voisins y travaillent]
 
--->
+между глаголом‡ и прилагательным
+&emsp;%[m|il devient énorme, vous paraissez heureux]
+
+между глаголом‡ и инфинитивом
+&emsp;%[m|je vais acheter, il veut écrire, ils voulaient avoir]
+
+между глаголом‡ и прямым дополнением
+&emsp;%[m|je vois un train, il a écrit une longue lettre]
+
+между глаголом и наречием
+&emsp;%[m|je pars immédiatement, venez avec moi, ils arrivent à midi]
+&emsp;&emsp;__исключения:__ глаголы être  и avoir
+
+между существительным или прилагательным и et или ou
+&emsp;%[m|charmant et intelligent, le sujet ou l’objet, est il petit ou grand?]
+
+между инвертированным местоимением и следующим словом
+&emsp;прилагательным: %[m|êtes-vous heureux?, peut-être étaient-ils intelligents]
+&emsp;причастием: %[m|avez-vous entendu?, sont-ils entrés?, peut-être serions-nous invités]
+&emsp;инфинитивом: %[m|voulez-vous entrer?, vont-ils essayer?]
+&emsp;y или en + инфинитивом: %[m|voulez-vous y aller?, peut-être allons-nous en trouver]
+&emsp;прямым или непрямым объектом: %[m|voulez-vous un bonbon?, écrivez-vous à Jean?]
+&emsp;наречием: %[m|en avons-nous assez?, viennent-ils ensemble?, allez-vous à Paris?]
+
+между местоимениями nous, vous, les и следующим словом
+&emsp;%[m|laissez-les entrer, envoyez-nous une lettre, asseyez-vous ici]
+
+между числительным и названием месяца (facultative?)
+&emsp;%[m|le deux octobre, le six août, le vingt avril]
+
+между вопросительным словом и глаголом
+&emsp;%[m|quand arrivent-ils?, comment écrit-on ce mot?, combien avez-vous payé?]
+&emsp;&emsp;__исключения:__&ensp;%[m|comment allez-vous?, quand est-ce que?]
+
+между вопросительным словом и последующим словом в непрямом вопросе
+&emsp;%[m|je ne sais pas comment ils voyagent, je vais demander quand il va partir]

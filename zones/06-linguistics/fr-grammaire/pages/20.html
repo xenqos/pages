@@ -17,7 +17,7 @@
   
 </head>
 <body onload='fncGetDivState(); fncGetScrollPosition();'>
-<audio id='idTrack' src='../sounds/20.mp3' preload='auto'></audio>
+
 <div id='idPanel'>
 <div id='idTopbar'>
   <div id='idTopbarNavigation'>
@@ -26,103 +26,84 @@
     <a href='19.html'><span class='clNavLeft'></span></a>
     <a href='../index.html'><span class='clNavUp'></span></a>
     <a href='21.html'><span class='clNavRight'></span></a>
-<span class='clNavRewind' onclick='fncRewindTrack(&quot;idTrack&quot;)'></span><span class='clNavPlay' onclick='fncPlayTrack(&quot;idTrack&quot;)'></span>
+
   </div>
 </div>
 <div id='idContent'>
 
-<h1>Pluriel du Noms</h1>
 
-<h2>Règles</h2>
+<h1>Article - Défini</h1>
 
-<h3>добавить -s</h3>
 <div class='clOverflow'>
 <table>
 <tr>
-<td><span class='m'>le livre  </span></td><td><span class='m'>les livres   </span></td></tr>
-<tr><td><span class='m'>le maison </span></td><td><span class='m'>les maisons  </span></td></tr>
-<tr><td><span class='m'>l'étudiant</span></td><td><span class='m'>les étudiants</span></td></tr>
+<th>  </th><th>s.</th><th>p. </th></tr>
+<tr><td>m.</td><td><span class='m'>le</span></td><td><span class='m'>les</span></td></tr>
+<tr><td>f.</td><td><span class='m'>la</span></td><td><span class='m'>les</span></td></tr>
 </table>
 </div>
 
+<blockquote>
+le, la = l' - перед гласной, h muet<br>
+</blockquote>
 
-<h3>-s, -x, -z  - оставить</h3>
-<div class='clOverflow'>
-<table>
-<tr>
-<td><span class='m'>le bras</span></td><td><span class='m'>les bras</span></td></tr>
-<tr><td><span class='m'>la voix</span></td><td><span class='m'>les voix</span></td></tr>
-<tr><td><span class='m'>le nez </span></td><td><span class='m'>les nez </span></td></tr>
-</table>
-</div>
+<blockquote>
+<span class='m'>à </span> + <span class='m'>le </span> = <span class='m'>au </span><br>
+<span class='m'>à </span> + <span class='m'>les</span> = <span class='m'>aux</span><br>
+<span class='m'>de</span> + <span class='m'>le </span> = <span class='m'>du </span><br>
+<span class='m'>de</span> + <span class='m'>les</span> = <span class='m'>des</span><br>
+</blockquote>
 
-
-<h3>-eu,-eau  - добавить -x</h3>
-<div class='clOverflow'>
-<table>
-<tr>
-<td><span class='m'>le feu   </span></td><td><span class='m'>les feux   </span></td></tr>
-<tr><td><span class='m'>le cheveu</span></td><td><span class='m'>les cheveux</span></td></tr>
-<tr><td><span class='m'>l'eau    </span></td><td><span class='m'>les eaux   </span></td></tr>
-</table>
-</div>
-
-
-<h3>-al  изменить на -aux</h3>
-<div class='clOverflow'>
-<table>
-<tr>
-<td><span class='m'>le cheval </span></td><td><span class='m'>les chevaux </span></td></tr>
-<tr><td><span class='m'>la journal</span></td><td><span class='m'>les journaux</span></td></tr>
-<tr><td><span class='m'>le val    </span></td><td><span class='m'>les vaux    </span></td></tr>
-</table>
-</div>
-
-
-<h2>Exception</h2>
-
-<h3>-ou   - добавить -x</h3>
-<div class='clOverflow'>
-<table>
-<tr>
-<td><span class='m'>le bijou  </span></td><td><span class='m'>les bijoux  </span></td></tr>
-<tr><td><span class='m'>le caillou</span></td><td><span class='m'>les cailloux</span></td></tr>
-<tr><td><span class='m'>le chou   </span></td><td><span class='m'>les choux   </span></td></tr>
-<tr><td><span class='m'>le genou  </span></td><td><span class='m'>les genoux  </span></td></tr>
-<tr><td><span class='m'>le pou    </span></td><td><span class='m'>les poux    </span></td></tr>
-<tr><td><span class='m'>le joujou </span></td><td><span class='m'>les joujoux </span></td></tr>
-<tr><td><span class='m'>le hibou  </span></td><td><span class='m'>les hiboux  </span></td></tr>
-</table>
-</div>
-
-
-<h3>-al - добавить -s</h3>
-<div class='clOverflow'>
-<table>
-<tr>
-<td><span class='m'>le bal     </span></td><td><span class='m'>les bals     </span></td></tr>
-<tr><td><span class='m'>le cal     </span></td><td><span class='m'>les cals     </span></td></tr>
-<tr><td><span class='m'>le carnaval</span></td><td><span class='m'>les carnavals</span></td></tr>
-<tr><td><span class='m'>le chacal  </span></td><td><span class='m'>les chacals  </span></td></tr>
-<tr><td><span class='m'>le festival</span></td><td><span class='m'>les festivals</span></td></tr>
-<tr><td><span class='m'>le régal   </span></td><td><span class='m'>les régals   </span></td></tr>
-<tr><td><span class='m'>le récital </span></td><td><span class='m'>les récitals </span></td></tr>
-</table>
-</div>
-
-
-<h2>Irrégulières </h2>
-<div class='clOverflow'>
-<table>
-<tr>
-<td><span class='m'>le os   </span></td><td><span class='m'>les os    </span></td></tr>
-<tr><td><span class='m'>le œil  </span></td><td><span class='m'>les yeux  </span></td></tr>
-<tr><td><span class='m'>le ciel </span></td><td><span class='m'>les cieux </span></td></tr>
-<tr><td><span class='m'>le oeuf </span></td><td><span class='m'>les oeufs </span></td></tr>
-<tr><td><span class='m'>le boeuf</span></td><td><span class='m'>les boeufs</span></td></tr>
-</table>
-</div>
-
+<br>
+<!--<br>
+    Если перед существительными стоит притяжательное прилагательное, артикль не употребляется:<br>
+    mon livre, sa femme, ces cahiers<br>
+    Перед именами собственными, обозначающими названия городов, артикль не употребляется:<br>
+    Je vais à Paris.<br>
+    Если существительное, употребленное в роли именной части сказуемого, обозначает профессию, должность или род деятельности, артикль перед ним обычно не ставится:<br>
+    Danielle est pianiste.<br>
+    Michel est architecte.<br>
+    После количественных наречий combien, beaucoup, peu, assez, trop употребляется предлог de, при этом перед именем существительным артикль опускается:<br>
+    Combien de livres avez-vous?<br>
+    J'ai beaucoup de livres.<br>
+    После оборота c'est перед именем существительным употребляется обычно неопределенный артикль:<br>
+    Qu'est-ce que c'est? C'est une chaise.<br>
+    Если имя существительное определено другим именем существительным, указывающим на принадлежность, перед ним ставится определенный артикль:<br>
+    C'est la chaise de Marie.<br>
+    Ce n'est pas la chaise de Marie.<br>
+    Если имя существительное, обозначающее национальность или жителя города, является именной частью составного сказуемого, артикль перед ним опускается:<br>
+    L'ami de Marie est Russe.<br>
+    Claire est Parisienne.<br>
+    Если при существительном, выполняющем функцию именной части сказуемого, имеется определение, существительное употребляется с неопределенным артиклем:<br>
+    Sa soeur est actrice. Sa soeur est une bonne actrice.<br>
+    Перед существительным, являющимся прямым дополнением глагола в отрицательной форме, неопределенный артикль единственного и множественного числа опускается, а вместо него употребляется предлог de.<br>
+    J'ai un frère, mais je n'ai pas de soeur.<br>
+    Il ne fait pas de fautes dans ses dictees.<br>
+    Определенный артикль перед прямым дополнением глагола, стоящего в отрицательной форме, сохраняется:<br>
+    Je n'aime pas les lives de cet écrivain.<br>
+    После существительных, имеющих собирательное значение, а также после существительных, обозначающих количество, употребляется предлог de, а артикль обычно опускается:<br>
+    un groupe de garçons; un kilo de pommes;<br>
+    une semaine de vacances; une quinzaine de phrases.<br>
+    Существительные matin и soir употребляются без артикля: после наречий hier, demain, существительных, обозначающих дни недели, а также после le lendemain:<br>
+    hier soir — вчера вечером<br>
+    le lendemain matin — на другой день утром<br>
+    dimanche soir — в воскресенье вечером<br>
+    При указании адреса перед существительными rue, avenue, boulevard, place артикль не употребляется:<br>
+    J'habite avenue de la Paix. — Я живу на проспекте Мира.<br>
+    J'ai pris le métro place Maïakovski. — Я сел в метро на площади Маяковского.<br>
+    После существительных un cours, une lecon, un manuel, un devoir, un professeur, un examen существительное, обозначающее предмет изучения, дисциплину, употребляется обычно без артикля:<br>
+    une leçon de musique	un devoir d'anglais<br>
+    un manuel de géographie	un professeur de russe<br>
+    Если перед существительным во множественном числе стоит прилагательное, то неопределенный артикль опускается, а вместо него употребляется предлог de:<br>
+    une bell fleur — de belles fleurs<br>
+    une grande fenêtre — de grandes fenêtres.<br>
+    Все существительные, обозначающие названия месяцев, — мужского рода. Они употребляются без артикля.<br>
+    janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre<br>
+    Все существительные, обозначающие названия времен года — мужского рода:<br>
+    l'hiver, le printemps, l'été, l'automne Обратите внимание на отсутствие артикля при употреблении предлогов перед названиями времен года:<br>
+    en hiver, en été, en automne, en printemps.<br>
+<br>
+-->
 
 
 </div>

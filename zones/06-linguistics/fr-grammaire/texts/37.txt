@@ -1,28 +1,25 @@
-## Numéral
+## Adjectif
 
-# 6, 10
+# Interrogatif
 
-## Произносится -x
+[|
+^  ^s.         ^p.          ^
+|m.|%[m|quel  ]|%[m|quels  ]|
+|f.|%[m|quelle]|%[m|quelles]|
+|]
 
-/%[l|s]/ на конце фразы
-&emsp;%[m|Il y en a six.]
+[!
+качество
+&emsp;%[m|quelle est votre couleur préférée]
+количество
+&emsp;%[m|quelle heure est la longeur de cette rivière]
+порядок
+&emsp;%[m|a quel étage habitez-vous]
+идентихность
+&emsp;%[m|quel est ce livre]
+!]
 
-/%[l|z]/ перед словом на гласную или h muet
-&emsp;%[m|dix euros]
-
-/%[l|s]/ при обозначении цифры
-&emsp;%[m|compter jusqu’à dix]
-
-## Не произносится -x
-
-перед словом на согласную или h aspiré
-&emsp;six cents
-&emsp;dix personnes
-
-## Факультативно
-
-/%[l|s]/ перед месяцами на согласную
-&emsp;%[m|le 10 juin]
-
-/%[l|z]/, /%[l|s]/ перед месяцами на гласную
-&emsp;%[m|le 26 avril]
+[-
+употребляется как относительное прилагательное
+употребляется в восклицательном предложении
+-]

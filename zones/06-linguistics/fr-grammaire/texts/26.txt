@@ -1,39 +1,17 @@
-# Relatif
-
-## Formes simples
-[|
-|%[m|qui ]|
-|%[m|que ]|
-|%[m|quoi]|
-|%[m|dont]|
-|%[m|où  ]|
-|]
-
-[!
-%[m|qui] - подлежащие, антецедент - одушевлёный/неодушевлёный
-%[m|quе] - прямое дополнение, антецедент - одушевлёный/неодушевлёный
-%[m|quoi] - неопределённое, антецедент - %[m|ce]
-%[m|dont] - %[m|de qui, de quoi, duquel, de laquelle, desquels, desquelles]
-%[m|ou] - обстоятельство места/времени, неодушевлённые
-!]
-
-## Formes complexes
+# Réfléchis
 
 [|
-^s.           ^p.       ^
-|%[m|lequel  ]|lequels  |
-|%[m|laquelle]|laquelles|
+|%[m|me  ]|%[m|je          ]|
+|%[m|te  ]|%[m|tu          ]|
+|%[m|se  ]|%[m|il, elle, on]|
+|%[m|nous]|%[m|nous        ]|
+|%[m|vous]|%[m|vous        ]|
+|%[m|se  ]|%[m|ils, elles  ]|
 |]
 
-[!
-%[m|lequel] - прямое дополнение с предлогом, антецедент - одушевлёные/неодушевлёные
-!]
-
-[!
-%[m|à ] + %[m|lequel    ] = %[m|auquel    ]
-%[m|à ] + %[m|lesquels  ] = %[m|auxquel   ]
-%[m|à ] + %[m|lesquelles] = %[m|auxquelles]
-%[m|de] + %[m|lequel    ] = %[m|duquel    ]
-%[m|de] + %[m|lesquels  ] = %[m|desquels  ]
-%[m|de] + %[m|lesquelles] = %[m|desquelles]
-!]
+|Je me lave.||Я мою себя.
+|Tu te réveilles||ты просыпаешся.
+|Il/Elle se lève.||Он/Она встаёт.
+|Nous nous habillons.||Мы одеваемся.
+|Vous vous reposez.||Ты отдыхаешь.
+|Ils/Elles se couchent.||Они ложатся спать.

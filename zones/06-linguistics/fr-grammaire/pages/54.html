@@ -17,7 +17,7 @@
   
 </head>
 <body onload='fncGetDivState(); fncGetScrollPosition();'>
-
+<audio id='idTrack' src='../sounds/54.mp3' preload='auto'></audio>
 <div id='idPanel'>
 <div id='idTopbar'>
   <div id='idTopbarNavigation'>
@@ -26,96 +26,40 @@
     <a href='53.html'><span class='clNavLeft'></span></a>
     <a href='../index.html'><span class='clNavUp'></span></a>
     <a href='55.html'><span class='clNavRight'></span></a>
-
+<span class='clNavRewind' onclick='fncRewindTrack(&quot;idTrack&quot;)'></span><span class='clNavPlay' onclick='fncPlayTrack(&quot;idTrack&quot;)'></span>
   </div>
 </div>
 <div id='idContent'>
 
+<h2>Adverbe</h2>
 
-<h2>Verbe</h2>
+<h1>De Lieu</h1>
 
-<h1>Noms des Temps</h1>
-
-<h3>Indicatif</h3>
-
-<div class='clOverflow'>
-<table>
-<tr>
-<th>Simples                     </th><th>Composés              </th></tr>
-<tr><td><span class='m'>Présent de l'indicatif  </span></td><td><span class='m'>Passé composé   </span></td></tr>
-<tr><td><span class='m'>Imparfait de l'indicatif</span></td><td><span class='m'>Plus-que-parfait</span></td></tr>
-<tr><td><span class='m'>Passé simple            </span></td><td><span class='m'>Passé antérieur </span></td></tr>
-<tr><td><span class='m'>Futur simple            </span></td><td><span class='m'>Futur antérieur </span></td></tr>
-</table>
-</div>
-
-
-<h3>Conditionnel</h3>
-
-<div class='clOverflow'>
-<table>
-<tr>
-<th>Simples                     </th><th>Composés                  </th></tr>
-<tr><td><span class='m'>Présent du conditionnel</span></td><td><span class='m'>Passé du conditionnel</span></td></tr>
-</table>
-</div>
-
-
-<h3>Subjonctif</h3>
-
-<div class='clOverflow'>
-<table>
-<tr>
-<th>Simples                     </th><th>Composés                           </th></tr>
-<tr><td><span class='m'>Présent du subjonctif  </span></td><td><span class='m'>Passé du subjonctif           </span></td></tr>
-<tr><td><span class='m'>Imparfait du subjonctif</span></td><td><span class='m'>Plus-que-parfait du subjonctif</span></td></tr>
-</table>
-</div>
-
-
-<h3>Infinitif</h3>
-
-<div class='clOverflow'>
-<table>
-<tr>
-<th>Simples          </th><th>Composés       </th></tr>
-<tr><td><span class='m'>Infinitif présent</span></td><td><span class='m'>Infinitif passé</span></td></tr>
-</table>
-</div>
-
-
-<h3>Participe</h3>
-
-<div class='clOverflow'>
-<table>
-<tr>
-<th>Simples               </th><th>Composés            </th></tr>
-<tr><td><span class='m'>Participe présent</span></td><td><span class='m'>Participe passé</span></td></tr>
-</table>
-</div>
-
-
-<h3>Gérondif</h3>
-
-<div class='clOverflow'>
-<table>
-<tr>
-<th>Simples              </th><th>Composés           </th></tr>
-<tr><td><span class='m'>Gérondif présent</span></td><td><span class='m'>Gérondif passé</span></td></tr>
-</table>
-</div>
-
-
-<h3>Imperatif</h3>
-
-<div class='clOverflow'>
-<table>
-<tr>
-<th>Simples          </th><th>Composés       </th></tr>
-<tr><td><span class='m'>Imperatif présent</span></td><td><span class='m'>Imperatif passé</span></td></tr>
-</table>
-</div>
-
+<p class='m'>ici       </p><p class='g0500'></p><p class='b1000'>здесь</p>
+<p class='m'>là        </p><p class='g0500'></p><p class='b1000'>там</p>
+<p class='m'>là-bas    </p><p class='g0500'></p><p class='b1000'>там</p>
+<p class='m'>ça et là  </p><p class='g0500'></p><p class='b1000'>там и сям</p>
+<p class='m'>près      </p><p class='g0500'></p><p class='b1000'>близко</p>
+<p class='m'>loin      </p><p class='g0500'></p><p class='b1000'>далеко</p>
+<p class='m'>partout   </p><p class='g0500'></p><p class='b1000'>повсюду</p>
+<p class='m'>nulle part</p><p class='g0500'></p><p class='b1000'>нигде</p>
+<p class='m'>ailleurs  </p><p class='g0500'></p><p class='b1000'>в другом месте</p>
+<p class='m'>devant    </p><p class='g0500'></p><p class='b1000'>спереди</p>
+<p class='m'>derrière  </p><p class='g0500'></p><p class='b1000'>сзади</p>
+<p class='m'>en avant  </p><p class='g0500'></p><p class='b1000'>вперед</p>
+<p class='m'>en arrière</p><p class='g0500'></p><p class='b1000'>назад</p>
+<p class='m'>dedans    </p><p class='g0500'></p><p class='b1000'>внутри</p>
+<p class='m'>dehors    </p><p class='g0500'></p><p class='b1000'>снаружи</p>
+<p class='m'>au-dedans </p><p class='g0500'></p><p class='b1000'>внутри</p>
+<p class='m'>au-dehors </p><p class='g0500'></p><p class='b1000'>снаружи</p>
+<p class='m'>dessus    </p><p class='g0500'></p><p class='b1000'>сверху</p>
+<p class='m'>dessous   </p><p class='g0500'></p><p class='b1000'>снизу</p>
+<p class='m'>au-dessus </p><p class='g0500'></p><p class='b1000'>сверху</p>
+<p class='m'>au-dessous</p><p class='g0500'></p><p class='b1000'>снизу</p>
+<p class='m'>en haut   </p><p class='g0500'></p><p class='b1000'>вверху</p>
+<p class='m'>en bas    </p><p class='g0500'></p><p class='b1000'>внизу</p>
+<p class='m'>à droite  </p><p class='g0500'></p><p class='b1000'>справа</p>
+<p class='m'>à gauche  </p><p class='g0500'></p><p class='b1000'>слева</p>
 
 
 </div>

@@ -1,16 +1,10 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="fr-FR-DeniseNeural">
 <prosody rate="-30%" pitch="0%">
-vingt ans
-vingt-deux
-vingt-trois
-vingt-et-un
-vingt-quatre
-vingt-cinq
-vingt-six
-vingt-sept
-vingt-huit
-vingt-neuf
+Il y en a cinq.
+cinq euros
+cinq cents
+cinq livres
 </prosody>
 </voice>
 </speak>

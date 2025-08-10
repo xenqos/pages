@@ -17,7 +17,7 @@
   
 </head>
 <body onload='fncGetDivState(); fncGetScrollPosition();'>
-<audio id='idTrack' src='../sounds/33.mp3' preload='auto'></audio>
+
 <div id='idPanel'>
 <div id='idTopbar'>
   <div id='idTopbarNavigation'>
@@ -26,254 +26,121 @@
     <a href='32.html'><span class='clNavLeft'></span></a>
     <a href='../index.html'><span class='clNavUp'></span></a>
     <a href='34.html'><span class='clNavRight'></span></a>
-<span class='clNavRewind' onclick='fncRewindTrack(&quot;idTrack&quot;)'></span><span class='clNavPlay' onclick='fncPlayTrack(&quot;idTrack&quot;)'></span>
+
   </div>
 </div>
 <div id='idContent'>
 
+<h2>Adjectif</h2>
 
-<h2>Numéral</h2>
-
-<h1>Cardinal</h1>
+<h1>Dégres de Comparison</h1>
 
 <div class='clOverflow'>
 <table>
 <tr>
-<td>0 </td><td><span class='m'>zéro  </span></td></tr>
-<tr><td>1 </td><td><span class='m'>un    </span></td></tr>
-<tr><td>2 </td><td><span class='m'>deux  </span></td></tr>
-<tr><td>3 </td><td><span class='m'>trois </span></td></tr>
-<tr><td>4 </td><td><span class='m'>quatre</span></td></tr>
-<tr><td>5 </td><td><span class='m'>cinq  </span></td></tr>
-<tr><td>6 </td><td><span class='m'>six   </span></td></tr>
-<tr><td>7 </td><td><span class='m'>sept  </span></td></tr>
-<tr><td>8 </td><td><span class='m'>huit  </span></td></tr>
-<tr><td>9 </td><td><span class='m'>neuf  </span></td></tr>
-<tr><td>10</td><td><span class='m'>dix   </span></td></tr>
+<td><span class='m'>le positif   </span></td><td>положительная</td></tr>
+<tr><td><span class='m'>le comparatif</span></td><td>сравнительная</td></tr>
+<tr><td><span class='m'>le superlatif</span></td><td>превосходная </td></tr>
 </table>
 </div>
 
-<div class='clOverflow'>
-<table>
-<tr>
-<td>11</td><td><span class='m'>onze    </span></td></tr>
-<tr><td>12</td><td><span class='m'>douze   </span></td></tr>
-<tr><td>13</td><td><span class='m'>treize  </span></td></tr>
-<tr><td>14</td><td><span class='m'>quatorze</span></td></tr>
-<tr><td>15</td><td><span class='m'>quinze  </span></td></tr>
-<tr><td>16</td><td><span class='m'>seize   </span></td></tr>
-<tr><td>17</td><td><span class='m'>dix-sept</span></td></tr>
-<tr><td>18</td><td><span class='m'>dix-huit</span></td></tr>
-<tr><td>19</td><td><span class='m'>dix-neuf</span></td></tr>
-</table>
-</div>
+
+<h3>Comparatif</h3>
 
 <div class='clOverflow'>
 <table>
 <tr>
-<td>10</td><td><span class='m'>dix              </span></td></tr>
-<tr><td>20</td><td><span class='m'>vingt            </span></td></tr>
-<tr><td>30</td><td><span class='m'>trente           </span></td></tr>
-<tr><td>40</td><td><span class='m'>quarante         </span></td></tr>
-<tr><td>50</td><td><span class='m'>cinquante        </span></td></tr>
-<tr><td>60</td><td><span class='m'>soixante         </span></td></tr>
-<tr><td>70</td><td><span class='m'>soixante-dix     </span></td></tr>
-<tr><td>80</td><td><span class='m'>quatre-vingts    </span></td></tr>
-<tr><td>90</td><td><span class='m'>quatre-vingts-dix</span></td></tr>
-</table>
-</div>
-
-<div class='clOverflow'>
-<table>
-<tr>
-<td>100</td><td><span class='m'>cent        </span></td></tr>
-<tr><td>200</td><td><span class='m'>deux cents  </span></td></tr>
-<tr><td>300</td><td><span class='m'>trois cents </span></td></tr>
-<tr><td>400</td><td><span class='m'>quatre cents</span></td></tr>
-<tr><td>500</td><td><span class='m'>cinq cents  </span></td></tr>
-<tr><td>600</td><td><span class='m'>six cents   </span></td></tr>
-<tr><td>700</td><td><span class='m'>sept cents  </span></td></tr>
-<tr><td>800</td><td><span class='m'>huit cents  </span></td></tr>
-<tr><td>900</td><td><span class='m'>neuf cents  </span></td></tr>
-</table>
-</div>
-
-<div class='clOverflow'>
-<table>
-<tr>
-<td>1,000        </td><td><span class='m'>mille      </span></td></tr>
-<tr><td>2,000        </td><td><span class='m'>deux mille </span></td></tr>
-<tr><td>3,000        </td><td><span class='m'>trois mille</span></td></tr>
-<tr><td>10,000       </td><td><span class='m'>dix mille  </span></td></tr>
-<tr><td>100,000      </td><td><span class='m'>cent mille </span></td></tr>
-<tr><td>1,000,000    </td><td><span class='m'>million    </span></td></tr>
-<tr><td>1,000,000,000</td><td><span class='m'>milliard   </span></td></tr>
-</table>
-</div>
-
-<div class='clOverflow'>
-<table>
-<tr>
-<td>20</td><td><span class='m'>vingt       </span></td></tr>
-<tr><td>21</td><td><span class='m'>vingt-et-un </span></td></tr>
-<tr><td>22</td><td><span class='m'>vingt-deux  </span></td></tr>
-<tr><td>23</td><td><span class='m'>vingt-trois </span></td></tr>
-<tr><td>24</td><td><span class='m'>vingt-quatre</span></td></tr>
-<tr><td>25</td><td><span class='m'>vingt-cinq  </span></td></tr>
-<tr><td>26</td><td><span class='m'>vingt-six   </span></td></tr>
-<tr><td>27</td><td><span class='m'>vingt-sept  </span></td></tr>
-<tr><td>28</td><td><span class='m'>vingt-huit  </span></td></tr>
-<tr><td>29</td><td><span class='m'>vingt-neuf  </span></td></tr>
-</table>
-</div>
-
-<div class='clOverflow'>
-<table>
-<tr>
-<td>30</td><td><span class='m'>trente       </span></td></tr>
-<tr><td>31</td><td><span class='m'>trente-et-un </span></td></tr>
-<tr><td>32</td><td><span class='m'>trente-deux  </span></td></tr>
-<tr><td>33</td><td><span class='m'>trente-trois </span></td></tr>
-<tr><td>34</td><td><span class='m'>trente-quatre</span></td></tr>
-<tr><td>35</td><td><span class='m'>trente-cinq  </span></td></tr>
-<tr><td>36</td><td><span class='m'>trente-six   </span></td></tr>
-<tr><td>37</td><td><span class='m'>trente-sept  </span></td></tr>
-<tr><td>38</td><td><span class='m'>trente-huit  </span></td></tr>
-<tr><td>39</td><td><span class='m'>trente-neuf  </span></td></tr>
-</table>
-</div>
-
-<div class='clOverflow'>
-<table>
-<tr>
-<td>40</td><td><span class='m'>quarante       </span></td></tr>
-<tr><td>41</td><td><span class='m'>quarante-et-un </span></td></tr>
-<tr><td>42</td><td><span class='m'>quarante-deux  </span></td></tr>
-<tr><td>43</td><td><span class='m'>quarante-trois </span></td></tr>
-<tr><td>44</td><td><span class='m'>quarante-quatre</span></td></tr>
-<tr><td>45</td><td><span class='m'>quarante-cinq  </span></td></tr>
-<tr><td>46</td><td><span class='m'>quarante-six   </span></td></tr>
-<tr><td>47</td><td><span class='m'>quarante-sept  </span></td></tr>
-<tr><td>48</td><td><span class='m'>quarante-huit  </span></td></tr>
-<tr><td>49</td><td><span class='m'>quarante-neuf  </span></td></tr>
-</table>
-</div>
-
-<div class='clOverflow'>
-<table>
-<tr>
-<td>50</td><td><span class='m'>cinqante       </span></td></tr>
-<tr><td>51</td><td><span class='m'>cinqante-et-un </span></td></tr>
-<tr><td>52</td><td><span class='m'>cinqante-deux  </span></td></tr>
-<tr><td>53</td><td><span class='m'>cinqante-trois </span></td></tr>
-<tr><td>54</td><td><span class='m'>cinqante-quatre</span></td></tr>
-<tr><td>55</td><td><span class='m'>cinqante-cinq  </span></td></tr>
-<tr><td>56</td><td><span class='m'>cinqante-six   </span></td></tr>
-<tr><td>57</td><td><span class='m'>cinqante-sept  </span></td></tr>
-<tr><td>58</td><td><span class='m'>cinqante-huit  </span></td></tr>
-<tr><td>59</td><td><span class='m'>cinqante-neuf  </span></td></tr>
-</table>
-</div>
-
-<div class='clOverflow'>
-<table>
-<tr>
-<td>60</td><td><span class='m'>soixante       </span></td></tr>
-<tr><td>61</td><td><span class='m'>soixante-et-un </span></td></tr>
-<tr><td>62</td><td><span class='m'>soixante-deux  </span></td></tr>
-<tr><td>63</td><td><span class='m'>soixante-trois </span></td></tr>
-<tr><td>64</td><td><span class='m'>soixante-quatre</span></td></tr>
-<tr><td>65</td><td><span class='m'>soixante-cinq  </span></td></tr>
-<tr><td>66</td><td><span class='m'>soixante-six   </span></td></tr>
-<tr><td>67</td><td><span class='m'>soixante-sept  </span></td></tr>
-<tr><td>68</td><td><span class='m'>soixante-huit  </span></td></tr>
-<tr><td>69</td><td><span class='m'>soixante-neuf  </span></td></tr>
-</table>
-</div>
-
-<div class='clOverflow'>
-<table>
-<tr>
-<td>70</td><td><span class='m'>soixante-dix     </span></td></tr>
-<tr><td>71</td><td><span class='m'>soixante-onze    </span></td></tr>
-<tr><td>72</td><td><span class='m'>soixante-douze   </span></td></tr>
-<tr><td>73</td><td><span class='m'>soixante-treize  </span></td></tr>
-<tr><td>74</td><td><span class='m'>soixante-quatorze</span></td></tr>
-<tr><td>75</td><td><span class='m'>soixante-quinze  </span></td></tr>
-<tr><td>76</td><td><span class='m'>soixante-seize   </span></td></tr>
-<tr><td>77</td><td><span class='m'>soixante-dix-sept</span></td></tr>
-<tr><td>78</td><td><span class='m'>soixante-dix-huit</span></td></tr>
-<tr><td>79</td><td><span class='m'>soixante-dix-neuf</span></td></tr>
-</table>
-</div>
-
-<div class='clOverflow'>
-<table>
-<tr>
-<td>80</td><td><span class='m'>quatre-vingts       </span></td></tr>
-<tr><td>81</td><td><span class='m'>quatre-vingts-un    </span></td></tr>
-<tr><td>82</td><td><span class='m'>quatre-vingts-deux  </span></td></tr>
-<tr><td>83</td><td><span class='m'>quatre-vingts-trois </span></td></tr>
-<tr><td>84</td><td><span class='m'>quatre-vingts-quatre</span></td></tr>
-<tr><td>85</td><td><span class='m'>quatre-vingts-cinq  </span></td></tr>
-<tr><td>86</td><td><span class='m'>quatre-vingts-six   </span></td></tr>
-<tr><td>87</td><td><span class='m'>quatre-vingts-sept  </span></td></tr>
-<tr><td>88</td><td><span class='m'>quatre-vingts-huit  </span></td></tr>
-<tr><td>89</td><td><span class='m'>quatre-vingts-neuf  </span></td></tr>
-</table>
-</div>
-
-<div class='clOverflow'>
-<table>
-<tr>
-<td>90</td><td><span class='m'>quatre-vingts-dix     </span></td></tr>
-<tr><td>91</td><td><span class='m'>quatre-vingts-onze    </span></td></tr>
-<tr><td>92</td><td><span class='m'>quatre-vingts-douze   </span></td></tr>
-<tr><td>93</td><td><span class='m'>quatre-vingts-treize  </span></td></tr>
-<tr><td>94</td><td><span class='m'>quatre-vingts-quatorze</span></td></tr>
-<tr><td>95</td><td><span class='m'>quatre-vingts-quinze  </span></td></tr>
-<tr><td>96</td><td><span class='m'>quatre-vingts-seize   </span></td></tr>
-<tr><td>97</td><td><span class='m'>quatre-vingts-dix-sept</span></td></tr>
-<tr><td>98</td><td><span class='m'>quatre-vingts-dix-huit</span></td></tr>
-<tr><td>99</td><td><span class='m'>quatre-vingts-dix-neuf</span></td></tr>
+<td>de superiorite</td><td><span class='m'>plus … que … </span></td><td>более </td></tr>
+<tr><td>d'inferiorite </td><td><span class='m'>moins … que …</span></td><td>менее </td></tr>
+<tr><td>d'egalite     </td><td><span class='m'>aussi … que …</span></td><td>так же</td></tr>
 </table>
 </div>
 
 <blockquote>
-m. <span class='m'>un</span><br>
-f. <span class='m'>une</span><br>
+<span class='m'>plus</span>, <span class='m'>moins</span>, <span class='m'>aussi</span> повторяются перед каждым словом<br>
+<span class='m'>que …</span> может не употребляться<br>
+</blockquote>
+
+<h3>Superlatif</h3>
+
+<ul>
+<li>superlatif - le, la, les</li>
+</ul>
+
+<div class='clOverflow'>
+<table>
+<tr>
+<td><span class='m'>le plus … de … </span></td><td>наибольший</td></tr>
+<tr><td><span class='m'>le moins … de …</span></td><td>наименьший</td></tr>
+</table>
+</div>
+
+<blockquote>
+если одно прилагательное стоит перед существительным, другое после, в превосходной степени оба после существительного:<br>
+&ensp;<span class='m'>C'est la chambre la plus grande et la plus claire.</span><br>
 </blockquote>
 
 <blockquote>
-<span class='m'>vingt</span>, <span class='m'>cent</span> во множественном числе<br>
-<br>
-&emsp;без последующего числительного -<span class='m'>s</span>:<br>
-&emsp;<span class='m'>quatre-vingts</span>, <span class='m'>trois cents</span><br>
-<br>
-&emsp;с последующим числительным:<br>
-&emsp;<span class='m'>quatre-vingt-un</span>, <span class='m'>trois cent dix</span><br>
+eсли прилагательное находится после существительного, определенный артикль употребляется дважды: перед существительным и перед прилагательным:<br>
+&ensp;<span class='m'>C'est la règle la plus difficile.</span><br>
+&ensp;<span class='m'>Ce sont les chambres les plus claires et les plus grandes.</span><br>
 </blockquote>
 
-<blockquote>
-существительные образуются с -<span class='m'>aine</span><br>
-&emsp;<span class='m'>une dizaine</span><br>
-&emsp;<span class='m'>une douzaine</span><br>
-&emsp;<span class='m'>une quarantaine</span><br>
-</blockquote>
 
-<blockquote>
-<span class='m'>million</span><br>
-<br>
-изменяется по числам<br>
-&emsp;<span class='m'>un million</span><br>
-&emsp;<span class='m'>deux millions</span><br>
-<br>
-употребляется de перед существительным<br>
-&emsp;<span class='m'>cette ville compte trois millions d'habitants</span><br>
-<br>
-не употребляется de если после <span class='m'>million</span> числительное<br>
-&emsp;<span class='m'>trois millions cinq cent mille habitants</span><br>
-</blockquote>
+<h3>Irrégulier</h3>
+
+<h2>bon</h2>
+<div class='clOverflow'>
+<table>
+<tr>
+<th>Comparatif             </th><th>                </th></tr>
+<tr><td><span class='m'>meilleur  … que … </span></td><td>более хороший   </td></tr>
+<tr><td><span class='m'>moins bon … que … </span></td><td>менее хороший   </td></tr>
+<tr><td><span class='m'>aussi bon … que … </span></td><td>такой же хороший</td></tr>
+</table>
+</div>
+
+<div class='clOverflow'>
+<table>
+<tr>
+<th>Superlatif             </th><th>       </th></tr>
+<tr><td><span class='m'>le meilleur … de … </span></td><td>лучший</td></tr>
+<tr><td><span class='m'>la meilleur … de … </span></td><td>лучшая</td></tr>
+<tr><td><span class='m'>les meilleur … de …</span></td><td>лучшие</td></tr>
+</table>
+</div>
+
+
+<h2>mauvais</h2>
+<div class='clOverflow'>
+<table>
+<tr>
+<th>Comparatif                 </th><th>               </th></tr>
+<tr><td><span class='m'>plus mauvais … que …  </span></td><td>более плохой   </td></tr>
+<tr><td><span class='m'>pire … que …          </span></td><td>более плохой   </td></tr>
+<tr><td><span class='m'>moins mauvais … que … </span></td><td>менее плохой   </td></tr>
+<tr><td><span class='m'>aussi mauvais … que … </span></td><td>такой же плохой</td></tr>
+</table>
+</div>
+
+<div class='clOverflow'>
+<table>
+<tr>
+<th>Superlatif             </th><th>      </th></tr>
+<tr><td><span class='m'>le mauvais … de … </span></td><td>худший</td></tr>
+<tr><td><span class='m'>la mauvais … de … </span></td><td>худшая</td></tr>
+<tr><td><span class='m'>les mauvais … de …</span></td><td>худшие</td></tr>
+<tr><td><span class='m'>le pire … de …    </span></td><td>худший</td></tr>
+<tr><td><span class='m'>la pire … de …    </span></td><td>худшая</td></tr>
+<tr><td><span class='m'>les pire … de …   </span></td><td>худшие</td></tr>
+</table>
+</div>
+
+
+<ul>
+<li>pire - используется редко</li>
+</ul>
+
 
 
 </div>

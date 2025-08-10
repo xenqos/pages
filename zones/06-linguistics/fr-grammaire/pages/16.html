@@ -17,7 +17,7 @@
   
 </head>
 <body onload='fncGetDivState(); fncGetScrollPosition();'>
-
+<audio id='idTrack' src='../sounds/16.mp3' preload='auto'></audio>
 <div id='idPanel'>
 <div id='idTopbar'>
   <div id='idTopbarNavigation'>
@@ -26,84 +26,70 @@
     <a href='15.html'><span class='clNavLeft'></span></a>
     <a href='../index.html'><span class='clNavUp'></span></a>
     <a href='17.html'><span class='clNavRight'></span></a>
-
+<span class='clNavRewind' onclick='fncRewindTrack(&quot;idTrack&quot;)'></span><span class='clNavPlay' onclick='fncPlayTrack(&quot;idTrack&quot;)'></span>
   </div>
 </div>
 <div id='idContent'>
 
+<h1>Liaison - Interdite</h1>
 
-<h1>Article - Défini</h1>
-
-<div class='clOverflow'>
-<table>
-<tr>
-<th>  </th><th>s.</th><th>p. </th></tr>
-<tr><td>m.</td><td><span class='m'>le</span></td><td><span class='m'>les</span></td></tr>
-<tr><td>f.</td><td><span class='m'>la</span></td><td><span class='m'>les</span></td></tr>
-</table>
-</div>
-
-<blockquote>
-le, la = l' - перед гласной, h muet<br>
-</blockquote>
-
-<blockquote>
-<span class='m'>à </span> + <span class='m'>le </span> = <span class='m'>au </span><br>
-<span class='m'>à </span> + <span class='m'>les</span> = <span class='m'>aux</span><br>
-<span class='m'>de</span> + <span class='m'>le </span> = <span class='m'>du </span><br>
-<span class='m'>de</span> + <span class='m'>les</span> = <span class='m'>des</span><br>
-</blockquote>
-
+после: vers, envers, avant, selon<br>
+&emsp;<span class='m'>vers elle, vers une heure, envers eux, avant elle, avant une heure</span><br>
+&emsp;&emsp;<i>исключения:</i>&ensp;<span class='m'>avant-hier, selon eux , selon un membre du groupe</span><br>
 <br>
-<!--<br>
-    Если перед существительными стоит притяжательное прилагательное, артикль не употребляется:<br>
-    mon livre, sa femme, ces cahiers<br>
-    Перед именами собственными, обозначающими названия городов, артикль не употребляется:<br>
-    Je vais à Paris.<br>
-    Если существительное, употребленное в роли именной части сказуемого, обозначает профессию, должность или род деятельности, артикль перед ним обычно не ставится:<br>
-    Danielle est pianiste.<br>
-    Michel est architecte.<br>
-    После количественных наречий combien, beaucoup, peu, assez, trop употребляется предлог de, при этом перед именем существительным артикль опускается:<br>
-    Combien de livres avez-vous?<br>
-    J'ai beaucoup de livres.<br>
-    После оборота c'est перед именем существительным употребляется обычно неопределенный артикль:<br>
-    Qu'est-ce que c'est? C'est une chaise.<br>
-    Если имя существительное определено другим именем существительным, указывающим на принадлежность, перед ним ставится определенный артикль:<br>
-    C'est la chaise de Marie.<br>
-    Ce n'est pas la chaise de Marie.<br>
-    Если имя существительное, обозначающее национальность или жителя города, является именной частью составного сказуемого, артикль перед ним опускается:<br>
-    L'ami de Marie est Russe.<br>
-    Claire est Parisienne.<br>
-    Если при существительном, выполняющем функцию именной части сказуемого, имеется определение, существительное употребляется с неопределенным артиклем:<br>
-    Sa soeur est actrice. Sa soeur est une bonne actrice.<br>
-    Перед существительным, являющимся прямым дополнением глагола в отрицательной форме, неопределенный артикль единственного и множественного числа опускается, а вместо него употребляется предлог de.<br>
-    J'ai un frère, mais je n'ai pas de soeur.<br>
-    Il ne fait pas de fautes dans ses dictees.<br>
-    Определенный артикль перед прямым дополнением глагола, стоящего в отрицательной форме, сохраняется:<br>
-    Je n'aime pas les lives de cet écrivain.<br>
-    После существительных, имеющих собирательное значение, а также после существительных, обозначающих количество, употребляется предлог de, а артикль обычно опускается:<br>
-    un groupe de garçons; un kilo de pommes;<br>
-    une semaine de vacances; une quinzaine de phrases.<br>
-    Существительные matin и soir употребляются без артикля: после наречий hier, demain, существительных, обозначающих дни недели, а также после le lendemain:<br>
-    hier soir — вчера вечером<br>
-    le lendemain matin — на другой день утром<br>
-    dimanche soir — в воскресенье вечером<br>
-    При указании адреса перед существительными rue, avenue, boulevard, place артикль не употребляется:<br>
-    J'habite avenue de la Paix. — Я живу на проспекте Мира.<br>
-    J'ai pris le métro place Maïakovski. — Я сел в метро на площади Маяковского.<br>
-    После существительных un cours, une lecon, un manuel, un devoir, un professeur, un examen существительное, обозначающее предмет изучения, дисциплину, употребляется обычно без артикля:<br>
-    une leçon de musique	un devoir d'anglais<br>
-    un manuel de géographie	un professeur de russe<br>
-    Если перед существительным во множественном числе стоит прилагательное, то неопределенный артикль опускается, а вместо него употребляется предлог de:<br>
-    une bell fleur — de belles fleurs<br>
-    une grande fenêtre — de grandes fenêtres.<br>
-    Все существительные, обозначающие названия месяцев, — мужского рода. Они употребляются без артикля.<br>
-    janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre<br>
-    Все существительные, обозначающие названия времен года — мужского рода:<br>
-    l'hiver, le printemps, l'été, l'automne Обратите внимание на отсутствие артикля при употреблении предлогов перед названиями времен года:<br>
-    en hiver, en été, en automne, en printemps.<br>
+прилагательные на -rd, -rt<br>
+&emsp;<span class='m'>lourd homme, court enfant, fort arbre</span><br>
+&emsp;&emsp;<i>исключения:</i>&ensp;<span class='m'>fort utile</span><br>
 <br>
--->
+союз et<br>
+&emsp;<span class='m'>nécessaire et utile , mon collègue et ami, et il s’en va</span><br>
+<br>
+между существительным и следующим прилагательным<br>
+&emsp;<span class='m'>objet intéressant, palais imposant, amis américains</span><br>
+&emsp;&emsp;<i>исключения:</i>&ensp;<span class='m'>États-Unis</span><br>
+<br>
+между подлежащим существительным и сказуемым глаголом<br>
+&emsp;<span class='m'>ce cas est difficile, , nos amis arrivent, les enfants étaient là</span><br>
+<br>
+если глагольная группа начинается с y или en<br>
+&emsp;<span class='m'>l’étudiant en trouve, nos voisins y travaillent</span><br>
+<br>
+между глаголом‡ и прилагательным<br>
+&emsp;<span class='m'>il devient énorme, vous paraissez heureux</span><br>
+<br>
+между глаголом‡ и инфинитивом<br>
+&emsp;<span class='m'>je vais acheter, il veut écrire, ils voulaient avoir</span><br>
+<br>
+между глаголом‡ и прямым дополнением<br>
+&emsp;<span class='m'>je vois un train, il a écrit une longue lettre</span><br>
+<br>
+между глаголом и наречием<br>
+&emsp;<span class='m'>je pars immédiatement, venez avec moi, ils arrivent à midi</span><br>
+&emsp;&emsp;<i>исключения:</i> глаголы être  и avoir<br>
+<br>
+между существительным или прилагательным и et или ou<br>
+&emsp;<span class='m'>charmant et intelligent, le sujet ou l’objet, est il petit ou grand?</span><br>
+<br>
+между инвертированным местоимением и следующим словом<br>
+&emsp;прилагательным: <span class='m'>êtes-vous heureux?, peut-être étaient-ils intelligents</span><br>
+&emsp;причастием: <span class='m'>avez-vous entendu?, sont-ils entrés?, peut-être serions-nous invités</span><br>
+&emsp;инфинитивом: <span class='m'>voulez-vous entrer?, vont-ils essayer?</span><br>
+&emsp;y или en + инфинитивом: <span class='m'>voulez-vous y aller?, peut-être allons-nous en trouver</span><br>
+&emsp;прямым или непрямым объектом: <span class='m'>voulez-vous un bonbon?, écrivez-vous à Jean?</span><br>
+&emsp;наречием: <span class='m'>en avons-nous assez?, viennent-ils ensemble?, allez-vous à Paris?</span><br>
+<br>
+между местоимениями nous, vous, les и следующим словом<br>
+&emsp;<span class='m'>laissez-les entrer, envoyez-nous une lettre, asseyez-vous ici</span><br>
+<br>
+между числительным и названием месяца (facultative?)<br>
+&emsp;<span class='m'>le deux octobre, le six août, le vingt avril</span><br>
+<br>
+между вопросительным словом и глаголом<br>
+&emsp;<span class='m'>quand arrivent-ils?, comment écrit-on ce mot?, combien avez-vous payé?</span><br>
+&emsp;&emsp;<i>исключения:</i>&ensp;<span class='m'>comment allez-vous?, quand est-ce que?</span><br>
+<br>
+между вопросительным словом и последующим словом в непрямом вопросе<br>
+&emsp;<span class='m'>je ne sais pas comment ils voyagent, je vais demander quand il va partir</span><br>
 
 
 </div>

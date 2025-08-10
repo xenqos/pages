@@ -1,27 +1,13 @@
-## Adverbe
+## Numéral
 
-# De Temps
+# 21, 31, 41, 51, 61, 71
 
-[|
-|%[m|alors        ]|тогда            |
-|%[m|aujourd'hui  ]|сегодня          |
-|%[m|déjà         ]|уже              |
-|%[m|depuis       ]|с тех пор        |
-|%[m|bientôt      ]|скоро            |
-|%[m|maintenant   ]|теперь           |
-|%[m|puis         ]|потом            |
-|%[m|tard         ]|поздно           |
-|%[m|tôt          ]|рано             |
-|%[m|toujours     ]|всегда           |
-|%[m|jamais       ]|никогда          |
-|%[m|après        ]|после            |
-|%[m|avant        ]|перед            |
-|%[m|hier         ]|вчера            |
-|%[m|demain       ]|завтра           |
-|%[m|à présent    ]|в настоящее время|
-|%[m|d'abord      ]|сначала          |
-|%[m|en avance    ]|заранее          |
-|%[m|en retard    ]|позднее          |
-|%[m|tout de suite]|немедленно       |
-|%[m|tantôt       ]|вскоре           |
-|]
+## Liaison между десятком и et
+
+в 21, 31, 41, 51, 61, 71
+&emsp;%[m|vingt-et-un     ]
+&emsp;%[m|trente-et-un    ]
+&emsp;%[m|quarante-et-un  ]
+&emsp;%[m|cinquante-et-un ]
+&emsp;%[m|soixante-et-un  ]
+&emsp;%[m|soixante-et-onze]

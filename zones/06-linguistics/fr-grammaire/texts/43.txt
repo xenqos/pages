@@ -1,13 +1,15 @@
 ## Numéral
 
-# 21, 31, 41, 51, 61, 71
+# 7, 9
 
-## Liaison между десятком и et
+## Произносится -t, -f
 
-в 21, 31, 41, 51, 61, 71
-&emsp;%[m|vingt-et-un     ]
-&emsp;%[m|trente-et-un    ]
-&emsp;%[m|quarante-et-un  ]
-&emsp;%[m|cinquante-et-un ]
-&emsp;%[m|soixante-et-un  ]
-&emsp;%[m|soixante-et-onze]
+всегда
+&emsp;%[m|Il y a sept chansons.]
+&emsp;%[m|Il y a neuf comédiens.]
+
+## Исключение
+
+/%[l|v]/ в %[m|neuf ans], %[m|neuf autres], %[m|neuf heures], %[m|neuf hommes]
+&emsp;%[m|Elle a neuf ans.]
+&emsp;%[m|Il est neuf heures.]

@@ -17,7 +17,7 @@
   
 </head>
 <body onload='fncGetDivState(); fncGetScrollPosition();'>
-
+<audio id='idTrack' src='../sounds/55.mp3' preload='auto'></audio>
 <div id='idPanel'>
 <div id='idTopbar'>
   <div id='idTopbarNavigation'>
@@ -26,192 +26,35 @@
     <a href='54.html'><span class='clNavLeft'></span></a>
     <a href='../index.html'><span class='clNavUp'></span></a>
     <a href='56.html'><span class='clNavRight'></span></a>
-
+<span class='clNavRewind' onclick='fncRewindTrack(&quot;idTrack&quot;)'></span><span class='clNavPlay' onclick='fncPlayTrack(&quot;idTrack&quot;)'></span>
   </div>
 </div>
 <div id='idContent'>
 
-<h2>Verbe</h2>
+<h2>Adverbe</h2>
 
-<h1>Fin des Verbes</h1>
+<h1>Du Procédé et du Mode d'Action</h1>
 
-<h3>Infinitif</h3>
-
-<div class='clOverflow'>
-<table>
-<tr>
-<th>1</th><th>2</th><th>3</th><th>3</th><th>3</th></tr>
-<tr><td><span class='m'>-er </span></td><td><span class='m'>-ir </span></td><td><span class='m'>-ir </span></td><td><span class='m'>-oir</span></td><td><span class='m'>-re </span></td></tr>
-</table>
-</div>
-
-
-<h3>Participe présent</h3>
-
-<div class='clOverflow'>
-<table>
-<tr>
-<th>1</th><th>2</th><th>3</th></tr>
-<tr><td><span class='m'>-ant  </span></td><td><span class='m'>-ssant</span></td><td><span class='m'>-ant</span></td></tr>
-</table>
-</div>
-
-
-<h3>Participe passé</h3>
-
-<div class='clOverflow'>
-<table>
-<tr>
-<th>1</th><th>2</th><th>3</th><th>3</th><th>3</th><th>3</th></tr>
-<tr><td><span class='m'>-é</span></td><td><span class='m'>-i</span></td><td><span class='m'>-i</span></td><td><span class='m'>-u</span></td><td><span class='m'>-s</span></td><td><span class='m'>-t</span></td></tr>
-</table>
-</div>
-
-
-<h3>Présent de l'indicatif</h3>
-
-<div class='clOverflow'>
-<table>
-<tr>
-<th>1</th><th>2</th><th>3</th><th>3</th><th>3</th><th>3</th></tr>
-<tr><td><span class='m'>-e  </span></td><td><span class='m'>-is    </span></td><td><span class='m'>-e  </span></td><td><span class='m'>-s  </span></td><td><span class='m'>-s  </span></td><td><span class='m'>-x  </span></td></tr>
-<tr><td><span class='m'>-es </span></td><td><span class='m'>-is    </span></td><td><span class='m'>-es </span></td><td><span class='m'>-s  </span></td><td><span class='m'>-s  </span></td><td><span class='m'>-x  </span></td></tr>
-<tr><td><span class='m'>-e  </span></td><td><span class='m'>-it    </span></td><td><span class='m'>-e  </span></td><td><span class='m'>-t  </span></td><td><span class='m'>-   </span></td><td><span class='m'>-t  </span></td></tr>
-<tr><td><span class='m'>-ons</span></td><td><span class='m'>-issons</span></td><td><span class='m'>-ons</span></td><td><span class='m'>-ons</span></td><td><span class='m'>-ons</span></td><td><span class='m'>-ons</span></td></tr>
-<tr><td><span class='m'>-ez </span></td><td><span class='m'>-issez </span></td><td><span class='m'>-ez </span></td><td><span class='m'>-ez </span></td><td><span class='m'>-ez </span></td><td><span class='m'>-ez </span></td></tr>
-<tr><td><span class='m'>-ent</span></td><td><span class='m'>-issent</span></td><td><span class='m'>-ent</span></td><td><span class='m'>-ent</span></td><td><span class='m'>-ent</span></td><td><span class='m'>-ent</span></td></tr>
-</table>
-</div>
-
-
-<h3>Imparfait de l'indicatif</h3>
-
-<blockquote>
-убрать -ons из <span class='l'>Présent de l'indicatif</span> 1 лц. мн.ч.<br>
-</blockquote>
-
-<div class='clOverflow'>
-<table>
-<tr>
-<th>1</th><th>2</th><th>3</th></tr>
-<tr><td><span class='m'>-ais  </span></td><td><span class='m'>-issais  </span></td><td><span class='m'>-ais  </span></td></tr>
-<tr><td><span class='m'>-ais  </span></td><td><span class='m'>-issais  </span></td><td><span class='m'>-ais  </span></td></tr>
-<tr><td><span class='m'>-ait  </span></td><td><span class='m'>-issait  </span></td><td><span class='m'>-ait  </span></td></tr>
-<tr><td><span class='m'>-ions </span></td><td><span class='m'>-issions </span></td><td><span class='m'>-ions </span></td></tr>
-<tr><td><span class='m'>-iez  </span></td><td><span class='m'>-issiez  </span></td><td><span class='m'>-iez  </span></td></tr>
-<tr><td><span class='m'>-aient</span></td><td><span class='m'>-issaient</span></td><td><span class='m'>-aient</span></td></tr>
-</table>
-</div>
-
-
-<h3>Passé simple</h3>
-
-<div class='clOverflow'>
-<table>
-<tr>
-<th>1</th><th>2</th><th>3</th><th>3</th><th>3</th></tr>
-<tr><td><span class='m'>-ai   </span></td><td><span class='m'>-is   </span></td><td><span class='m'>-is   </span></td><td><span class='m'>-ins   </span></td><td><span class='m'>-us   </span></td></tr>
-<tr><td><span class='m'>-as   </span></td><td><span class='m'>-is   </span></td><td><span class='m'>-is   </span></td><td><span class='m'>-ins   </span></td><td><span class='m'>-us   </span></td></tr>
-<tr><td><span class='m'>-a    </span></td><td><span class='m'>-it   </span></td><td><span class='m'>-it   </span></td><td><span class='m'>-int   </span></td><td><span class='m'>-ut   </span></td></tr>
-<tr><td><span class='m'>-âmes </span></td><td><span class='m'>-îmes </span></td><td><span class='m'>-îmes </span></td><td><span class='m'>-înmes </span></td><td><span class='m'>-ûmes </span></td></tr>
-<tr><td><span class='m'>-âtes </span></td><td><span class='m'>-îtes </span></td><td><span class='m'>-îtes </span></td><td><span class='m'>-întes </span></td><td><span class='m'>-ûtes </span></td></tr>
-<tr><td><span class='m'>-èrent</span></td><td><span class='m'>-irent</span></td><td><span class='m'>-irent</span></td><td><span class='m'>-inrent</span></td><td><span class='m'>-urent</span></td></tr>
-</table>
-</div>
-
-
-<h3>Futur simple</h3>
-
-<blockquote>
-убрать окончаниe из <span class='l'>Infinitif</span><br>
-</blockquote>
-
-<div class='clOverflow'>
-<table>
-<tr>
-<th>1</th><th>2</th><th>3</th></tr>
-<tr><td><span class='m'>-erai </span></td><td><span class='m'>-irai </span></td><td><span class='m'>-rai </span></td></tr>
-<tr><td><span class='m'>-eras </span></td><td><span class='m'>-iras </span></td><td><span class='m'>-ras </span></td></tr>
-<tr><td><span class='m'>-era  </span></td><td><span class='m'>-ira  </span></td><td><span class='m'>-ra  </span></td></tr>
-<tr><td><span class='m'>-erons</span></td><td><span class='m'>-irons</span></td><td><span class='m'>-rons</span></td></tr>
-<tr><td><span class='m'>-erez </span></td><td><span class='m'>-irez </span></td><td><span class='m'>-rez </span></td></tr>
-<tr><td><span class='m'>-eront</span></td><td><span class='m'>-iront</span></td><td><span class='m'>-ront</span></td></tr>
-</table>
-</div>
-
-
-<h3>Conditionnel</h3>
-
-<blockquote>
-убрать окончаниe из <span class='l'>Infinitif</span><br>
-</blockquote>
-
-<div class='clOverflow'>
-<table>
-<tr>
-<th>1</th><th>2</th><th>3</th></tr>
-<tr><td><span class='m'>-erais  </span></td><td><span class='m'>-irais  </span></td><td><span class='m'>-rais  </span></td></tr>
-<tr><td><span class='m'>-erais  </span></td><td><span class='m'>-irais  </span></td><td><span class='m'>-rais  </span></td></tr>
-<tr><td><span class='m'>-erait  </span></td><td><span class='m'>-irait  </span></td><td><span class='m'>-rait  </span></td></tr>
-<tr><td><span class='m'>-erions </span></td><td><span class='m'>-irions </span></td><td><span class='m'>-rions </span></td></tr>
-<tr><td><span class='m'>-eriez  </span></td><td><span class='m'>-iriez  </span></td><td><span class='m'>-riez  </span></td></tr>
-<tr><td><span class='m'>-eraient</span></td><td><span class='m'>-iraient</span></td><td><span class='m'>-raient</span></td></tr>
-</table>
-</div>
-
-
-<h3>Présent du subjonctif</h3>
-
-<blockquote>
-убрать -ant из <span class='l'>Présent participe</span><br>
-</blockquote>
-
-<div class='clOverflow'>
-<table>
-<tr>
-<th>1</th><th>2</th><th>3</th></tr>
-<tr><td><span class='m'>-e   </span></td><td><span class='m'>-isse   </span></td><td><span class='m'>-e   </span></td></tr>
-<tr><td><span class='m'>-es  </span></td><td><span class='m'>-isses  </span></td><td><span class='m'>-es  </span></td></tr>
-<tr><td><span class='m'>-e   </span></td><td><span class='m'>-isse   </span></td><td><span class='m'>-e   </span></td></tr>
-<tr><td><span class='m'>-ions</span></td><td><span class='m'>-issions</span></td><td><span class='m'>-ions</span></td></tr>
-<tr><td><span class='m'>-iez </span></td><td><span class='m'>-issiez </span></td><td><span class='m'>-iez </span></td></tr>
-<tr><td><span class='m'>-ent </span></td><td><span class='m'>-issent </span></td><td><span class='m'>-ent </span></td></tr>
-</table>
-</div>
-
-
-<h3>Imparfait du subjonctif</h3>
-
-<blockquote>
-убрать -а,-it,-ut из <span class='l'>Passé simple</span> 3 лц. ед.ч.<br>
-</blockquote>
-
-<div class='clOverflow'>
-<table>
-<tr>
-<th>1</th><th>2</th><th>3</th><th>3</th><th>3</th></tr>
-<tr><td><span class='m'>-asse   </span></td><td><span class='m'>-isse   </span></td><td><span class='m'>-isse   </span></td><td><span class='m'>-insse   </span></td><td><span class='m'>-usse   </span></td></tr>
-<tr><td><span class='m'>-asses  </span></td><td><span class='m'>-isses  </span></td><td><span class='m'>-isses  </span></td><td><span class='m'>-insses  </span></td><td><span class='m'>-usses  </span></td></tr>
-<tr><td><span class='m'>-ât     </span></td><td><span class='m'>-ît     </span></td><td><span class='m'>-ît     </span></td><td><span class='m'>-înt     </span></td><td><span class='m'>-ût     </span></td></tr>
-<tr><td><span class='m'>-assions</span></td><td><span class='m'>-issions</span></td><td><span class='m'>-issions</span></td><td><span class='m'>-inssions</span></td><td><span class='m'>-ussions</span></td></tr>
-<tr><td><span class='m'>-assiez </span></td><td><span class='m'>-issiez </span></td><td><span class='m'>-issiez </span></td><td><span class='m'>-inssiez </span></td><td><span class='m'>-ussiez </span></td></tr>
-<tr><td><span class='m'>-assent </span></td><td><span class='m'>-issent </span></td><td><span class='m'>-issent </span></td><td><span class='m'>-inssent </span></td><td><span class='m'>-ussent </span></td></tr>
-</table>
-</div>
-
-
-<h3>Imperatif</h3>
-
-<div class='clOverflow'>
-<table>
-<tr>
-<th>1</th><th>2</th><th>3</th><th>3</th></tr>
-<tr><td><span class='m'>-e  </span></td><td><span class='m'>-s    </span></td><td><span class='m'>-e  </span></td><td><span class='m'>-s  </span></td></tr>
-<tr><td><span class='m'>-ons</span></td><td><span class='m'>-ssons</span></td><td><span class='m'>-ons</span></td><td><span class='m'>-ons</span></td></tr>
-<tr><td><span class='m'>-ez </span></td><td><span class='m'>-ssez </span></td><td><span class='m'>-ez </span></td><td><span class='m'>-ez </span></td></tr>
-</table>
-</div>
-
+<p class='m'>lentement     </p><p class='g0500'></p><p class='b1000'>медленно</p>
+<p class='m'>lourdement    </p><p class='g0500'></p><p class='b1000'>тяжело</p>
+<p class='m'>facilement    </p><p class='g0500'></p><p class='b1000'>легко</p>
+<p class='m'>vraiment      </p><p class='g0500'></p><p class='b1000'>действительно</p>
+<p class='m'>bien          </p><p class='g0500'></p><p class='b1000'>хорошо</p>
+<p class='m'>mal           </p><p class='g0500'></p><p class='b1000'>плохо</p>
+<p class='m'>mieux         </p><p class='g0500'></p><p class='b1000'>лучше</p>
+<p class='m'>pis           </p><p class='g0500'></p><p class='b1000'>хуже</p>
+<p class='m'>vite          </p><p class='g0500'></p><p class='b1000'>скоро</p>
+<p class='m'>rapidement    </p><p class='g0500'></p><p class='b1000'>быстро</p>
+<p class='m'>debout        </p><p class='g0500'></p><p class='b1000'>стоя</p>
+<p class='m'>ainsi         </p><p class='g0500'></p><p class='b1000'>таким образом</p>
+<p class='m'>ensemble      </p><p class='g0500'></p><p class='b1000'>вместе</p>
+<p class='m'>d'ordinaire   </p><p class='g0500'></p><p class='b1000'>обычно</p>
+<p class='m'>à la légère   </p><p class='g0500'></p><p class='b1000'>слегка</p>
+<p class='m'>de même       </p><p class='g0500'></p><p class='b1000'>также</p>
+<p class='m'>à tue-tête    </p><p class='g0500'></p><p class='b1000'>во все горло</p>
+<p class='m'>corps à corps </p><p class='g0500'></p><p class='b1000'>врукопашную</p>
+<p class='m'>nez à nez     </p><p class='g0500'></p><p class='b1000'>нос к носу</p>
+<p class='m'>d'arrache-pied</p><p class='g0500'></p><p class='b1000'>без передышки</p>
 
 
 </div>

@@ -1,53 +1,29 @@
-# Terminaisons de Noms
+# Plus
 
-## Masculin
+## Не произносится
 
-[|
-|-%[m|age ]|%[m|le vitrage  ]|остекление|
-|-%[m|ail ]|%[m|le vitrail  ]|витраж|
-|-%[m|ard ]|%[m|le vieillard]|старик|
-|-%[m|at  ]|%[m|le doctorat ]|доктор наук|
-|-%[m|eau ]|%[m|le manteau  ]|пальто|
-|-%[m|ent ]|%[m|le bâtiment ]|здание|
-|-%[m|er  ]|%[m|le cahier   ]|тетрадь|
-|-%[m|et  ]|%[m|le coffret  ]|шкатулка|
-|-%[m|is  ]|%[m|le paradis  ]|рай|
-|-%[m|isme]|%[m|le tourisme ]|туризм|
-|-%[m|oir ]|%[m|le manoir   ]|усадьба|
-|-%[m|ot  ]|%[m|le matelot  ]|матрос|
-|-%[m|ron ]|%[m|le chaperon ]|шапочка|
-|]
+перед прилагательным / наречием на согласную букву
+&emsp;%[m|Marc est plus courageux que Luc.]
+&emsp;%[m|Marc gagne plus rarement que Luc.]
 
-[!
--%[m|age] - отглагольные существительные
--%[m|er] - также -%[m|ier]
-!]
+## Произносится
 
-## Féminin
+/%[l|z]/ перед прилагательным / наречием на гласную букву или на немое h:
+&emsp;%[m|Marc est plus occupé que Luc.]
+&emsp;%[m|Marc travaille plus intelligemment que Luc.]
 
-[|
-|-%[m|age  ]|%[m|la page       ]|страница|
-|-%[m|ade  ]|%[m|la promenade  ]|прогулка|
-|-%[m|aie  ]|%[m|la chênaie    ]|дубрава|
-|-%[m|aille]|%[m|la trouvaille ]|находка|
-|-%[m|aison]|%[m|la combinaison]|комбинация|
-|-%[m|ance ]|%[m|l'ambiance    ]|окружение|
-|-%[m|ée   ]|%[m|la soirée     ]|вечеринка|
-|-%[m|elle ]|%[m|la poubelle   ]|урна|
-|-%[m|esse ]|%[m|la politesse  ]|вежливость|
-|-%[m|ette ]|%[m|la trompette  ]|труба|
-|-%[m|euse ]|%[m|la vendeuse   ]|продавщица|
-|-%[m|ie   ]|%[m|la boulangerie]|булочная|
-|-%[m|ine  ]|%[m|la pèlerine   ]|накидка|
-|-%[m|ise  ]|%[m|la bêtise     ]|глупость|
-|-%[m|ison ]|%[m|la guérison   ]|выздоровление|
-|-%[m|itude]|%[m|la certitude  ]|уверенность|
-|-%[m|ière ]|%[m|la croisière  ]|плаванье, полет|
-|-%[m|oison]|%[m|la cloison    ]|перегородка|
-|-%[m|ose  ]|%[m|la tuberculose]|туберкулёз|
-|-%[m|otte ]|%[m|la menotte    ]|ручка|
-|-%[m|sion ]|%[m|la passion    ]|увлечение|
-|-%[m|tion ]|%[m|la révolution ]|революция|
-|-%[m|trice]|%[m|l'actrice     ]|актриса|
-|-%[m|ure  ]|%[m|la blessure   ]|рана|
-|]
+перед существительным:
+&emsp;%[m|Marc a plus de travail que Luc.]
+
+после глагола:
+&emsp;%[m|Marc sort plus que Luc.]
+
+## Факультативно
+
+plus … plus
+&emsp;%[m|Plus nous vivons ensemble, plus nous nous aimons.]
+&emsp;%[m|Plus il fait chaud, plus il faut boire.]
+
+ne… plus
+&emsp;%[m|Il n’a plus de temps.]
+&emsp;%[m|Il n’a plus assez de temps.]
