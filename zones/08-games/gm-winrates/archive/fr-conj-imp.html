@@ -1,0 +1,42 @@
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+<div class='clVerb'>{{verb}}</div>
+<div class='clGroup'>{{group}}</div>
+<div class='clTags' id='idTags'>{{Tags}}</div>
+
+<div class='clTable'>
+<table>
+<tr><td class='clPronoun'>2ème sing.</td><td class='clForm'>{{av1}}</td></tr>
+<tr><td class='clPronoun'>1ère plur.</td><td class='clForm'>{{av2}}</td></tr>
+<tr><td class='clPronoun'>2ème plur.</td><td class='clForm'>{{av3}}</td></tr>
+</table>
+</div>
+
+<script type="text/javascript">
+  var objElement;
+  var objElements;
+
+  function changeColor(event)
+  {
+    event.target.style.color = '#000000';
+  }
+
+  objElements = document.querySelectorAll('.clForm');
+
+  objElements.forEach(function(element)
+  {
+    element.addEventListener('touchstart', changeColor);
+    element.addEventListener('click', changeColor);
+  })
+
+  objElement = document.getElementById('idTags');
+  objElement.textContent = objElement.textContent.replace(/-/g, ' ');
+</script>
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+<div class='clVerb'>{{verb}}</div>
+<div class='clGroup'>{{group}}</div>
+<div class='clTranslation'>{{translation}}</div>
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->

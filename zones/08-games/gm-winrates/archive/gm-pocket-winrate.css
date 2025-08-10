@@ -1,0 +1,92 @@
+.card
+{
+  font-family:          sans-serif;
+  font-size:            2.000rem;
+  text-align:           center;
+  color:                black;
+  background-color:     white;
+  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+}
+
+.clHoleSuited
+{
+  background-color:     #FAEDFF;
+  border-radius:        6px;
+  border:               1px solid #aaaaaa;
+  display:              inline-block;
+  font-family:          monospace;
+  font-size:            4.000rem;
+  margin:               2.000rem 0.000rem 0.000rem 0.000rem;
+  padding:              1.000rem 1.000rem 1.000rem 1.000rem;
+  white-space:          nowrap;
+}
+
+.clHoleOffsuit
+{
+  background-color:     #EBFDEE;
+  border-radius:        6px;
+  border:               1px solid #aaaaaa;
+  display:              inline-block;
+  font-family:          monospace;
+  font-size:            4.000rem;
+  margin:               2.000rem 0.000rem 0.000rem 0.000rem;
+  padding:              1.000rem 1.000rem 1.000rem 1.000rem;
+  white-space:          nowrap;
+}
+
+.clHolePair
+{
+  background-color:     #ebedfd;
+  border-radius:        6px;
+  border:               1px solid #aaaaaa;
+  display:              inline-block;
+  font-family:          monospace;
+  font-size:            4.000rem;
+  margin:               2.000rem 0.000rem 0.000rem 0.000rem;
+  padding:              1.000rem 1.000rem 1.000rem 1.000rem;
+  white-space:          nowrap;
+}
+
+.clRate
+{
+  color:                #000000;
+  font-family:          monospace;
+  font-size:            2.000rem;
+  margin:               2.000rem 0.000rem 0.000rem 0.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+  white-space:          nowrap;
+}
+
+.clRank
+{
+  color:                #888888;
+  font-family:          monospace;
+  font-size:            2.000rem;
+  margin:               2.000rem 0.000rem 0.000rem 0.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+  white-space:          nowrap;
+}
+
+.clName
+{
+  color:                #888888;
+  font-family:          monospace;
+  font-size:            2.000rem;
+  margin:               2.000rem 0.000rem 0.000rem 0.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+  white-space:          nowrap;
+}
+
+a,
+a:visited
+{
+  color:                #000000;
+  text-decoration:      none;
+}
+
+a:hover
+{
+  color:                #000000;
+  text-decoration:      none;
+}

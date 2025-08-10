@@ -1,0 +1,168 @@
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+<div id='idCards'>{{Cards}}</div>
+
+<script type='text/javascript' defer>
+  var objElement;
+  var strTextContent;
+
+  objElement = document.getElementById('idCards');
+  strTextContent = objElement.textContent;
+
+  if (strTextContent.includes('s'))
+  {
+    objElement.className = 'clHoleSuited';
+  }
+  else if (strTextContent.includes('o'))
+  {
+    objElement.className = 'clHoleOffsuit';
+  }
+  else if (strTextContent.includes('p'))
+  {
+    objElement.className = 'clHolePair';
+    objElement.textContent = objElement.textContent.replace(/p/g, '');
+  }
+</script>
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+<div id='idCards'>{{Cards}}</div>
+
+<div class='clGame'>9 Max</div>
+
+<div class='clWrapper01'>
+<a href='https://xenqos.github.io/zones/gm-synopsis/images/Pocket-Hands-9-Max-1-UTG.webp'><span class='clPositionFold' id='id9UTG' >{{9UTG}} </span></a>
+<a href='https://xenqos.github.io/zones/gm-synopsis/images/Pocket-Hands-9-Max-2-UTG1.webp'><span class='clPositionFold' id='id9UTG1'>{{9UTG1}}</span></a>
+<a href='https://xenqos.github.io/zones/gm-synopsis/images/Pocket-Hands-9-Max-3-UTG2.webp'><span class='clPositionFold' id='id9UTG2'>{{9UTG2}}</span></a>
+<br>
+<a href='https://xenqos.github.io/zones/gm-synopsis/images/Pocket-Hands-9-Max-4-LJ.webp'><span class='clPositionFold' id='id9LJ'  >{{9LJ}}  </span></a>
+<a href='https://xenqos.github.io/zones/gm-synopsis/images/Pocket-Hands-9-Max-5-HJ.webp'><span class='clPositionFold' id='id9HJ'  >{{9HJ}}  </span></a>
+<a href='https://xenqos.github.io/zones/gm-synopsis/images/Pocket-Hands-9-Max-6-CO.webp'><span class='clPositionFold' id='id9CO'  >{{9CO}}  </span></a>
+<br>
+<a href='https://xenqos.github.io/zones/gm-synopsis/images/Pocket-Hands-9-Max-7-BTN.webp'><span class='clPositionFold' id='id9BTN' >{{9BTN}} </span></a>
+<a href='https://xenqos.github.io/zones/gm-synopsis/images/Pocket-Hands-9-Max-8-SB.webp'><span class='clPositionFold' id='id9SB'  >{{9SB}}  </span></a>
+<a href='https://xenqos.github.io/zones/gm-synopsis/images/Pocket-Hands-9-Max-9-BB.webp'><span class='clPositionFold' id='id9BB'  >{{9BB}}  </span></a>
+</div>
+
+<div class='clGame'>6 Max</div>
+
+<div class='clWrapper02'>
+<a href='https://xenqos.github.io/zones/gm-synopsis/images/Pocket-Hands-6-Max-1-UTG.webp'><span class='clPositionFold' id='id6UTG' >{{6UTG}} </span></a>
+<a href='https://xenqos.github.io/zones/gm-synopsis/images/Pocket-Hands-6-Max-2-UTG1.webp'><span class='clPositionFold' id='id6UTG1'>{{6UTG1}}</span></a>
+<a href='https://xenqos.github.io/zones/gm-synopsis/images/Pocket-Hands-6-Max-3-CO.webp'><span class='clPositionFold' id='id6CO'  >{{6CO}}  </span></a>
+<br>
+<a href='https://xenqos.github.io/zones/gm-synopsis/images/Pocket-Hands-6-Max-4-BTN.webp'><span class='clPositionFold' id='id6BTN' >{{6BTN}} </span></a>
+<a href='https://xenqos.github.io/zones/gm-synopsis/images/Pocket-Hands-6-Max-5-SB.webp'><span class='clPositionFold' id='id6SB'  >{{6SB}}  </span></a>
+<a href='https://xenqos.github.io/zones/gm-synopsis/images/Pocket-Hands-6-Max-6-BB.webp'><span class='clPositionFold' id='id6BB'  >{{6BB}}  </span></a>
+</div>
+
+<div class='clRate'>{{Rate}}%</div>
+
+<!--
+<div class='clRate'>#{{Rank}}</div>
+-->
+
+<script type='text/javascript' defer>
+  var objElement;
+  var strTextContent;
+  var strType;
+
+  objElement = document.getElementById('idCards');
+  strTextContent = objElement.textContent;
+
+  if (strTextContent.includes('s'))
+  {
+    strType = 's';
+    objElement.className = 'clHoleSuited';
+  }
+  else if (strTextContent.includes('o'))
+  {
+    strType = 'o';
+    objElement.className = 'clHoleOffsuit';
+  }
+  else if (strTextContent.includes('p'))
+  {
+    strType = 'p';
+    objElement.className = 'clHolePair';
+    objElement.textContent = objElement.textContent.replace(/p/g, '');
+  }
+
+  objElement = document.getElementById('id9UTG');
+  strTextContent = objElement.textContent;
+  if (strTextContent.includes('C')) { objElement.className = 'clPositionAction'; }
+  objElement.textContent = 'UTG';
+
+  objElement = document.getElementById('id9UTG1');
+  strTextContent = objElement.textContent;
+  if (strTextContent.includes('C')) { objElement.className = 'clPositionAction'; }
+  objElement.textContent = 'UTG1';
+
+  objElement = document.getElementById('id9UTG2');
+  strTextContent = objElement.textContent;
+  if (strTextContent.includes('C')) { objElement.className = 'clPositionAction'; }
+  objElement.textContent = 'UTG2';
+
+  objElement = document.getElementById('id9LJ');
+  strTextContent = objElement.textContent;
+  if (strTextContent.includes('C')) { objElement.className = 'clPositionAction'; }
+  objElement.textContent = 'LJ';
+
+  objElement = document.getElementById('id9HJ');
+  strTextContent = objElement.textContent;
+  if (strTextContent.includes('C')) { objElement.className = 'clPositionAction'; }
+  objElement.textContent = 'HJ';
+
+  objElement = document.getElementById('id9CO');
+  strTextContent = objElement.textContent;
+  if (strTextContent.includes('C')) { objElement.className = 'clPositionAction'; }
+  objElement.textContent = 'CO';
+
+  objElement = document.getElementById('id9BTN');
+  strTextContent = objElement.textContent;
+  if (strTextContent.includes('C')) { objElement.className = 'clPositionAction'; }
+  objElement.textContent = 'BTN';
+
+  objElement = document.getElementById('id9SB');
+  strTextContent = objElement.textContent;
+  if (strTextContent.includes('C')) { objElement.className = 'clPositionAction'; }
+  objElement.textContent = 'SB';
+
+  objElement = document.getElementById('id9BB');
+  strTextContent = objElement.textContent;
+  if (strTextContent.includes('C')) { objElement.className = 'clPositionAction'; }
+  objElement.textContent = 'BB';
+
+
+  objElement = document.getElementById('id6UTG');
+  strTextContent = objElement.textContent;
+  if (strTextContent.includes('C')) { objElement.className = 'clPositionAction'; }
+  objElement.textContent = 'UTG';
+
+  objElement = document.getElementById('id6UTG1');
+  strTextContent = objElement.textContent;
+  if (strTextContent.includes('C')) { objElement.className = 'clPositionAction'; }
+  objElement.textContent = 'UTG1';
+
+    objElement = document.getElementById('id6CO');
+  strTextContent = objElement.textContent;
+  if (strTextContent.includes('C')) { objElement.className = 'clPositionAction'; }
+  objElement.textContent = 'CO';
+
+  objElement = document.getElementById('id6BTN');
+  strTextContent = objElement.textContent;
+  if (strTextContent.includes('C')) { objElement.className = 'clPositionAction'; }
+  objElement.textContent = 'BTN';
+
+  objElement = document.getElementById('id6SB');
+  strTextContent = objElement.textContent;
+  if (strTextContent.includes('C')) { objElement.className = 'clPositionAction'; }
+  objElement.textContent = 'SB';
+
+  objElement = document.getElementById('id6BB');
+  strTextContent = objElement.textContent;
+  if (strTextContent.includes('C')) { objElement.className = 'clPositionAction'; }
+  objElement.textContent = 'BB';
+
+</script>
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->

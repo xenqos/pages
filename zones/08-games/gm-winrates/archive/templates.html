@@ -1,0 +1,60 @@
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+<div id='idPair'>{{Pair}}</div>
+
+<script type='text/javascript' defer>
+  var objElement;
+  var strTextContent;
+
+  objElement = document.getElementById('idPair');
+  strTextContent = objElement.textContent;
+
+  if (strTextContent.includes('s'))
+  {
+    objElement.className = 'clHoleSuited';
+  }
+  else if (strTextContent.includes('o'))
+  {
+    objElement.className = 'clHoleOffsuit';
+  }
+  else if (strTextContent.includes('p'))
+  {
+    objElement.className = 'clHolePair';
+    objElement.textContent = objElement.textContent.replace(/p/g, '');
+  }
+</script>
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+<div id='idPair'>{{Pair}}</div>
+<div class='clRate'>{{Rate}}%</div>
+<div class='clRank'>#{{Rank}}</div>
+<div class='clName'>{{Name}}</div>
+
+<script type='text/javascript' defer>
+  var objElement;
+  var strTextContent;
+  var strType;
+
+  objElement = document.getElementById('idPair');
+  strTextContent = objElement.textContent;
+
+  if (strTextContent.includes('s'))
+  {
+    strType = 's';
+    objElement.className = 'clHoleSuited';
+  }
+  else if (strTextContent.includes('o'))
+  {
+    strType = 'o';
+    objElement.className = 'clHoleOffsuit';
+  }
+  else if (strTextContent.includes('p'))
+  {
+    strType = 'p';
+    objElement.className = 'clHolePair';
+    objElement.textContent = objElement.textContent.replace(/p/g, '');
+  }
+</script>
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->

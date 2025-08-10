@@ -1,11 +1,41 @@
 /*-----------------------------------------------------------------------------------------------*/
 
+#idContent
+{
+  text-align:           center;
+  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
+  padding:              2.000rem 0.000rem 0.000rem 0.000rem;
+}
+
+/*-----------------------------------------------------------------------------------------------*/
+
 h1
 {
-  color:                #995f46;
-  font-size:            1.400rem;
-  font-weight:          600;
-  margin:               1.500rem 0.000rem 1.000rem 0.000rem;
+  font-family:          monospace;
+  font-size:            4.000rem;
+  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
+  padding:              6.000rem 0.000rem 0.000rem 0.000rem;
+}
+
+h2
+{
+  background:           #e0e0e0;
+  background:           #ffffff;
+  color:                #e0e0e0;
+  color:                #367b36;
+  border:               1px solid #aaaaaa;
+  border-radius:        0.400rem !important;
+  display:              inline-block;
+  font-family:          monospace;
+  font-size:            3.000rem;
+  margin:               6.000rem 0.000rem 6.000rem 0.000rem;
+  padding:              2.000rem 0.000rem 2.000rem 0.000rem;
+  width:                18.000rem !important;
+}
+
+h6
+{
+  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
   padding:              0.000rem 0.000rem 0.000rem 0.000rem;
 }
 
