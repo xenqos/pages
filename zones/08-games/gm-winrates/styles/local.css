@@ -3,15 +3,17 @@
 .clIndex
 {
   display:              inline-block !important;
+  font-family:          monospace;
   margin:               0.000rem 0.000rem 2.000rem 0.000rem !important;
   padding:              0.000rem 0.000rem 0.000rem 0.000rem !important;
+  text-align:           left !important;
 }
 
 #idContent
 {
-  text-align:           center;
   margin:               0.000rem 0.000rem 0.000rem 0.000rem;
   padding:              3.000rem 0.000rem 0.000rem 0.000rem;
+  text-align:           center;
 }
 
 /*-----------------------------------------------------------------------------------------------*/
@@ -28,9 +30,9 @@
 #idAnswer
 {
   background:           #e0e0e0;
-  color:                #e0e0e0;
   border:               1px solid #aaaaaa;
   border-radius:        0.400rem !important;
+  color:                #e0e0e0;
   display:              inline-block;
   font-family:          monospace;
   font-size:            3.000rem;
