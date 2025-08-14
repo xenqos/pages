@@ -1,0 +1,58 @@
+## Bitcoin
+
+[|
+|private key   |password      |
+|public key    |account number|
+|account number|address       |
+|]
+
+^[.flowchart.webp]
+
+[-
+wallet &rarr; private key
+private key &rarr; public key (mathematically connected)
+account number &rarr; address (condensed version)
+-]
+
+[|
+|BIP39 |Seed Phrase   |
+|BIP173|SegWit Address|
+|]
+
+![Source|https://river.com/learn/terms/p/p2wpkh/]
+
+[!
+addresses are cross-compatible
+Base58 - binary-to-text encoding schemes (public key &rarr; address)
+!]
+
+## Scripts
+
+[|
+|SegWit|Segregated Witness            |
+|P2WPKH|Pay To Witness Public Key Hash|
+|P2SH  |Pay To Script Hash            |
+|P2PKH |Pay To Pubkey Hash            |
+|]
+
+## Types
+
+[|
+^**1**            ^**2**^**3**^**4**^**5**^
+|Legacy           |Base58|P2PKH |1   |100%|
+|SegWit Compatible|Base58|P2SH  |3   |074%|
+|SegWit Native    |Bech32|P2WPKH|bc1 |084%|
+|Tadpool          |      |      |bc1p|    |
+|Lightning        |      |      |lnbc|    |
+|]
+
+[!
+**1** - type
+**2** - address format
+**3** - script
+**4** - starts with
+**5** - fee
+!]
+
+
+
