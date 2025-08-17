@@ -1,16 +1,31 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="fr-FR-DeniseNeural">
 <prosody rate="-30%" pitch="0%">
-comment?
-où?
-pourquoi?
-quand?
-combien?
-que?
-oui!
-si!
-non!
-pas!
+ici
+là
+là-bas
+ça et là
+près
+loin
+partout
+nulle part
+ailleurs
+devant
+derrière
+en avant
+en arrière
+dedans
+dehors
+au-dedans
+au-dehors
+dessus
+dessous
+au-dessus
+au-dessous
+en haut
+en bas
+à droite
+à gauche
 </prosody>
 </voice>
 </speak>

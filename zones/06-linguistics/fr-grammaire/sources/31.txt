@@ -1,35 +1,41 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="fr-FR-DeniseNeural">
 <prosody rate="-30%" pitch="0%">
-qui
-que
-quoi
-dont
-où
+celui
+celle
+ce
 
-lequel
-laquelle
+ceux
+celles
 
-lequels
-laquelles
+celui-ci
+celle-ci
+ceci
 
-à  lequel
-auquel
+ceux-ci
+celles-ci
 
-à  lesquels
-auxquel
+celui-là
+celle-là
+cela
+ça
 
-à  lesquelles
-auxquelles
+ceux-là
+celles-là
 
-de lequel
-duquel
+celui-là
+celle-là
+cela
+ça
 
-de lesquels
-desquels
+ceux-là
+celles-là
 
-de lesquelles
-desquelles
+icelui
+icelle
+
+iceux
+icelles
 </prosody>
 </voice>
 </speak>

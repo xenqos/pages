@@ -1,85 +1,62 @@
-## Adjectif
+# Démonstratif
 
-# Dégres de Comparison
-
+## Formes simples
 [|
-|%[m|le positif   ]|положительная|
-|%[m|le comparatif]|сравнительная|
-|%[m|le superlatif]|превосходная |
+^s.   ^p.    ^
+|%[m|celui]|%[m|ceux  ]|
+|%[m|celle]|%[m|celles]|
+|%[m|ce   ]|      |
 |]
 
-### Comparatif
-
+## Formes complexes -ci (ближние)
 [|
-|de superiorite|%[m|plus … que … ]|более |
-|d'inferiorite |%[m|moins … que …]|менее |
-|d'egalite     |%[m|aussi … que …]|так же|
+^s.      ^p.       ^
+|%[m|celui-ci]|%[m|ceux-ci  ]|
+|%[m|celle-ci]|%[m|celles-ci]|
+|%[m|ceci    ]|%[m|         ]|
 |]
 
-[!
-%[m|plus], %[m|moins], %[m|aussi] повторяются перед каждым словом
-%[m|que …] может не употребляться
-!]
-
-### Superlatif
-
-[-
-superlatif - le, la, les
--]
-
+## Formes complexes -la (дальние)
 [|
-|%[m|le plus … de … ]|наибольший|
-|%[m|le moins … de …]|наименьший|
+^s.      ^p.       ^
+|%[m|celui-là]|%[m|ceux-là  ]|
+|%[m|celle-là]|%[m|celles-là]|
+|%[m|cela, ça]|%[m|         ]|
 |]
 
 [!
-если одно прилагательное стоит перед существительным, другое после, в превосходной степени оба после существительного:
-&ensp;%[m|C'est la chambre la plus grande et la plus claire.]
+cela, ça - подлежащее, прямое дополнение, косвенное дополнение
+!]
+
+
+## Formes obsolètes
+[|
+^s.      ^p.       ^
+|%[m|icelui]|%[m|iceux  ]|
+|%[m|icelle]|%[m|icelles]|
+|]
+
+[!
+-%[m|ci] - ближний, -%[m|là] - дальний, если предметы в поле зрения
+-%[m|ci] - последний, -%[m|là] - первый, по упоминанию, если предметы вне поля зрения
+-%[m|ci], -%[m|là] - равнозначны, если нет противопоставления
 !]
 
 [!
-eсли прилагательное находится после существительного, определенный артикль употребляется дважды: перед существительным и перед прилагательным:
-&ensp;%[m|C'est la règle la plus difficile.]
-&ensp;%[m|Ce sont les chambres les plus claires et les plus grandes.]
+%[m|ce] употребляется как подлежащие с глаголами:
+%[m|être - c'est vrai]
+%[m|devoir - ce doit être beau]
+%[m|pouvoir - ce pouvait être beau]
+%[m|sembler - ce semble être beau]
 !]
 
+[!
+%[m|ce] и число (глагол согласуется в числе с имменой частью сказуемого):
+%[m|c'est un étudiant]
+%[m|ce sont des étudiants]
+!]
 
-### Irrégulier
-
-## bon
-[|
-^Comparatif             ^                ^
-|%[m|meilleur  … que … ]|более хороший   |
-|%[m|moins bon … que … ]|менее хороший   |
-|%[m|aussi bon … que … ]|такой же хороший|
-|]
-
-[|
-^Superlatif             ^       ^
-|%[m|le meilleur … de … ]|лучший|
-|%[m|la meilleur … de … ]|лучшая|
-|%[m|les meilleur … de …]|лучшие|
-|]
-
-## mauvais
-[|
-^Comparatif                 ^               ^
-|%[m|plus mauvais … que …  ]|более плохой   |
-|%[m|pire … que …          ]|более плохой   |
-|%[m|moins mauvais … que … ]|менее плохой   |
-|%[m|aussi mauvais … que … ]|такой же плохой|
-|]
-
-[|
-^Superlatif             ^      ^
-|%[m|le mauvais … de … ]|худший|
-|%[m|la mauvais … de … ]|худшая|
-|%[m|les mauvais … de …]|худшие|
-|%[m|le pire … de …    ]|худший|
-|%[m|la pire … de …    ]|худшая|
-|%[m|les pire … de …   ]|худшие|
-|]
-
-[-
-pire - используется редко
--]
+[!
+%[m|ceci, cela, ça] - указывают на идею, событие
+%[m|cela, ça] - употребляется чаще
+!]

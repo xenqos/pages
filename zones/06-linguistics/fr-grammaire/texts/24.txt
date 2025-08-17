@@ -1,64 +1,29 @@
-# Pluriel du Noms
+# Plus
 
-## Règles
+## Не произносится
 
-### добавить -s
-[|
-|%[m|le livre  ]|%[m|les livres   ]|
-|%[m|le maison ]|%[m|les maisons  ]|
-|%[m|l'étudiant]|%[m|les étudiants]|
-|]
+перед прилагательным / наречием на согласную букву
+&emsp;%[m|Marc est plus courageux que Luc.]
+&emsp;%[m|Marc gagne plus rarement que Luc.]
 
-### -s, -x, -z  - оставить
-[|
-|%[m|le bras]|%[m|les bras]|
-|%[m|la voix]|%[m|les voix]|
-|%[m|le nez ]|%[m|les nez ]|
-|]
+## Произносится
 
-### -eu,-eau  - добавить -x
-[|
-|%[m|le feu   ]|%[m|les feux   ]|
-|%[m|le cheveu]|%[m|les cheveux]|
-|%[m|l'eau    ]|%[m|les eaux   ]|
-|]
+/%[l|z]/ перед прилагательным / наречием на гласную букву или на немое h:
+&emsp;%[m|Marc est plus occupé que Luc.]
+&emsp;%[m|Marc travaille plus intelligemment que Luc.]
 
-### -al  изменить на -aux
-[|
-|%[m|le cheval ]|%[m|les chevaux ]|
-|%[m|la journal]|%[m|les journaux]|
-|%[m|le val    ]|%[m|les vaux    ]|
-|]
+перед существительным:
+&emsp;%[m|Marc a plus de travail que Luc.]
 
-## Exception
+после глагола:
+&emsp;%[m|Marc sort plus que Luc.]
 
-### -ou   - добавить -x
-[|
-|%[m|le bijou  ]|%[m|les bijoux  ]|
-|%[m|le caillou]|%[m|les cailloux]|
-|%[m|le chou   ]|%[m|les choux   ]|
-|%[m|le genou  ]|%[m|les genoux  ]|
-|%[m|le pou    ]|%[m|les poux    ]|
-|%[m|le joujou ]|%[m|les joujoux ]|
-|%[m|le hibou  ]|%[m|les hiboux  ]|
-|]
+## Факультативно
 
-### -al - добавить -s
-[|
-|%[m|le bal     ]|%[m|les bals     ]|
-|%[m|le cal     ]|%[m|les cals     ]|
-|%[m|le carnaval]|%[m|les carnavals]|
-|%[m|le chacal  ]|%[m|les chacals  ]|
-|%[m|le festival]|%[m|les festivals]|
-|%[m|le régal   ]|%[m|les régals   ]|
-|%[m|le récital ]|%[m|les récitals ]|
-|]
+plus … plus
+&emsp;%[m|Plus nous vivons ensemble, plus nous nous aimons.]
+&emsp;%[m|Plus il fait chaud, plus il faut boire.]
 
-## Irrégulières 
-[|
-|%[m|le os   ]|%[m|les os    ]|
-|%[m|le œil  ]|%[m|les yeux  ]|
-|%[m|le ciel ]|%[m|les cieux ]|
-|%[m|le oeuf ]|%[m|les oeufs ]|
-|%[m|le boeuf]|%[m|les boeufs]|
-|]
+ne… plus
+&emsp;%[m|Il n’a plus de temps.]
+&emsp;%[m|Il n’a plus assez de temps.]

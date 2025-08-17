@@ -1,46 +1,19 @@
-# Possessif
+# Article - Partitif
 
-## Un propriétaire (один владелец)
-
-### Un article
 [|
-^m.       ^f.         ^
-|%[m|le mien]|%[m|la mienne]|
-|%[m|le tien]|%[m|la tienne]|
-|%[m|le sien]|%[m|la sienne]|
-|]
-
-### Plusieurs articles
-[|
-^m.       ^f.         ^
-|%[m|les miens]|%[m|les miennes]|
-|%[m|les tiens]|%[m|les tiennes]|
-|%[m|les siens]|%[m|les siennes]|
-|]
-
-## Plusieurs propriétaires (несколько владельцев)
-
-### Un article
-[|
-^m.       ^f.         ^
-|%[m|le nôtre]|%[m|la nôtre]|
-|%[m|le vôtre]|%[m|la vôtre]|
-|%[m|le leur ]|%[m|la leur ]|
-|]
-
-### Plusieurs articles
-[|
-^m.       ^f.         ^
-|%[m|les nôtres]|%[m|les nôtres]|
-|%[m|les vôtres]|%[m|les vôtres]|
-|%[m|les leurs ]|%[m|les leurs ]|
+^  ^c.   ^v.   ^
+|m.|%[m|du   ]|%[m|de l']|
+|f.|%[m|de la]|%[m|de l']|
 |]
 
 [!
-согласуются в роде и числе с заменяемым существительным
-согласуются в роде и числе с указываемым владельцем
+для обозначения неопределенного количества предмета
+с существительными, обозначающими вещество
+с существительными, обозначающими отвлеченное понятие
 !]
 
 [!
-%[m|notre] [nɔtrə] - %[m|nôtre] [notrə]
+если неисчисляемое существительное - во всем его объеме, употребляется с определенным артиклем
 !]
+
+%[m|La neige est blanche.]

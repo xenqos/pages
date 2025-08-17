@@ -1,15 +1,205 @@
+## Numéral ##
+
 ## Numéral
 
-# 7, 9
+# Cardinal
 
-## Произносится -t, -f
+[|
+|0 |%[m|zéro  ]|
+|1 |%[m|un    ]|
+|2 |%[m|deux  ]|
+|3 |%[m|trois ]|
+|4 |%[m|quatre]|
+|5 |%[m|cinq  ]|
+|6 |%[m|six   ]|
+|7 |%[m|sept  ]|
+|8 |%[m|huit  ]|
+|9 |%[m|neuf  ]|
+|10|%[m|dix   ]|
+|]
 
-всегда
-&emsp;%[m|Il y a sept chansons.]
-&emsp;%[m|Il y a neuf comédiens.]
+[|
+|11|%[m|onze    ]|
+|12|%[m|douze   ]|
+|13|%[m|treize  ]|
+|14|%[m|quatorze]|
+|15|%[m|quinze  ]|
+|16|%[m|seize   ]|
+|17|%[m|dix-sept]|
+|18|%[m|dix-huit]|
+|19|%[m|dix-neuf]|
+|]
 
-## Исключение
+[|
+|10|%[m|dix              ]|
+|20|%[m|vingt            ]|
+|30|%[m|trente           ]|
+|40|%[m|quarante         ]|
+|50|%[m|cinquante        ]|
+|60|%[m|soixante         ]|
+|70|%[m|soixante-dix     ]|
+|80|%[m|quatre-vingts    ]|
+|90|%[m|quatre-vingts-dix]|
+|]
 
-/%[l|v]/ в %[m|neuf ans], %[m|neuf autres], %[m|neuf heures], %[m|neuf hommes]
-&emsp;%[m|Elle a neuf ans.]
-&emsp;%[m|Il est neuf heures.]
+[|
+|100|%[m|cent        ]|
+|200|%[m|deux cents  ]|
+|300|%[m|trois cents ]|
+|400|%[m|quatre cents]|
+|500|%[m|cinq cents  ]|
+|600|%[m|six cents   ]|
+|700|%[m|sept cents  ]|
+|800|%[m|huit cents  ]|
+|900|%[m|neuf cents  ]|
+|]
+
+[|
+|1,000        |%[m|mille      ]|
+|2,000        |%[m|deux mille ]|
+|3,000        |%[m|trois mille]|
+|10,000       |%[m|dix mille  ]|
+|100,000      |%[m|cent mille ]|
+|1,000,000    |%[m|million    ]|
+|1,000,000,000|%[m|milliard   ]|
+|]
+
+[|
+|20|%[m|vingt       ]|
+|21|%[m|vingt-et-un ]|
+|22|%[m|vingt-deux  ]|
+|23|%[m|vingt-trois ]|
+|24|%[m|vingt-quatre]|
+|25|%[m|vingt-cinq  ]|
+|26|%[m|vingt-six   ]|
+|27|%[m|vingt-sept  ]|
+|28|%[m|vingt-huit  ]|
+|29|%[m|vingt-neuf  ]|
+|]
+
+[|
+|30|%[m|trente       ]|
+|31|%[m|trente-et-un ]|
+|32|%[m|trente-deux  ]|
+|33|%[m|trente-trois ]|
+|34|%[m|trente-quatre]|
+|35|%[m|trente-cinq  ]|
+|36|%[m|trente-six   ]|
+|37|%[m|trente-sept  ]|
+|38|%[m|trente-huit  ]|
+|39|%[m|trente-neuf  ]|
+|]
+
+[|
+|40|%[m|quarante       ]|
+|41|%[m|quarante-et-un ]|
+|42|%[m|quarante-deux  ]|
+|43|%[m|quarante-trois ]|
+|44|%[m|quarante-quatre]|
+|45|%[m|quarante-cinq  ]|
+|46|%[m|quarante-six   ]|
+|47|%[m|quarante-sept  ]|
+|48|%[m|quarante-huit  ]|
+|49|%[m|quarante-neuf  ]|
+|]
+
+[|
+|50|%[m|cinqante       ]|
+|51|%[m|cinqante-et-un ]|
+|52|%[m|cinqante-deux  ]|
+|53|%[m|cinqante-trois ]|
+|54|%[m|cinqante-quatre]|
+|55|%[m|cinqante-cinq  ]|
+|56|%[m|cinqante-six   ]|
+|57|%[m|cinqante-sept  ]|
+|58|%[m|cinqante-huit  ]|
+|59|%[m|cinqante-neuf  ]|
+|]
+
+[|
+|60|%[m|soixante       ]|
+|61|%[m|soixante-et-un ]|
+|62|%[m|soixante-deux  ]|
+|63|%[m|soixante-trois ]|
+|64|%[m|soixante-quatre]|
+|65|%[m|soixante-cinq  ]|
+|66|%[m|soixante-six   ]|
+|67|%[m|soixante-sept  ]|
+|68|%[m|soixante-huit  ]|
+|69|%[m|soixante-neuf  ]|
+|]
+
+[|
+|70|%[m|soixante-dix     ]|
+|71|%[m|soixante-onze    ]|
+|72|%[m|soixante-douze   ]|
+|73|%[m|soixante-treize  ]|
+|74|%[m|soixante-quatorze]|
+|75|%[m|soixante-quinze  ]|
+|76|%[m|soixante-seize   ]|
+|77|%[m|soixante-dix-sept]|
+|78|%[m|soixante-dix-huit]|
+|79|%[m|soixante-dix-neuf]|
+|]
+
+[|
+|80|%[m|quatre-vingts       ]|
+|81|%[m|quatre-vingts-un    ]|
+|82|%[m|quatre-vingts-deux  ]|
+|83|%[m|quatre-vingts-trois ]|
+|84|%[m|quatre-vingts-quatre]|
+|85|%[m|quatre-vingts-cinq  ]|
+|86|%[m|quatre-vingts-six   ]|
+|87|%[m|quatre-vingts-sept  ]|
+|88|%[m|quatre-vingts-huit  ]|
+|89|%[m|quatre-vingts-neuf  ]|
+|]
+
+[|
+|90|%[m|quatre-vingts-dix     ]|
+|91|%[m|quatre-vingts-onze    ]|
+|92|%[m|quatre-vingts-douze   ]|
+|93|%[m|quatre-vingts-treize  ]|
+|94|%[m|quatre-vingts-quatorze]|
+|95|%[m|quatre-vingts-quinze  ]|
+|96|%[m|quatre-vingts-seize   ]|
+|97|%[m|quatre-vingts-dix-sept]|
+|98|%[m|quatre-vingts-dix-huit]|
+|99|%[m|quatre-vingts-dix-neuf]|
+|]
+
+[!
+m. %[m|un]
+f. %[m|une]
+!]
+
+[!
+%[m|vingt], %[m|cent] во множественном числе
+
+&emsp;без последующего числительного -%[m|s]:
+&emsp;%[m|quatre-vingts], %[m|trois cents]
+
+&emsp;с последующим числительным:
+&emsp;%[m|quatre-vingt-un], %[m|trois cent dix]
+!]
+
+[!
+существительные образуются с -%[m|aine]
+&emsp;%[m|une dizaine]
+&emsp;%[m|une douzaine]
+&emsp;%[m|une quarantaine]
+!]
+
+[!
+%[m|million]
+
+изменяется по числам
+&emsp;%[m|un million]
+&emsp;%[m|deux millions]
+
+употребляется de перед существительным
+&emsp;%[m|cette ville compte trois millions d'habitants]
+
+не употребляется de если после %[m|million] числительное
+&emsp;%[m|trois millions cinq cent mille habitants]
+!]

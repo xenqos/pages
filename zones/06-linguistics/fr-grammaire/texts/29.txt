@@ -1,51 +1,64 @@
-# Interrogatif
+# Pluriel du Noms
 
-## Formes simples
+## Règles
+
+### добавить -s
 [|
-|%[m|qui ]|
-|%[m|que ]|
-|%[m|quoi]|
+|%[m|le livre  ]|%[m|les livres   ]|
+|%[m|le maison ]|%[m|les maisons  ]|
+|%[m|l'étudiant]|%[m|les étudiants]|
 |]
 
-## Formes complexes
+### -s, -x, -z  - оставить
 [|
-|%[m|lequel  ]|%[m|lequels  ]|
-|%[m|laquelle]|%[m|laquelles]|
+|%[m|le bras]|%[m|les bras]|
+|%[m|la voix]|%[m|les voix]|
+|%[m|le nez ]|%[m|les nez ]|
 |]
 
+### -eu,-eau  - добавить -x
 [|
-|%[m|à ]|+|%[m|lequel    ]|=|%[m|auquel    ]|
-|%[m|à ]|+|%[m|lesquels  ]|=|%[m|auxquel   ]|
-|%[m|à ]|+|%[m|lesquelles]|=|%[m|auxquelles]|
-|%[m|de]|+|%[m|lequel    ]|=|%[m|duquel    ]|
-|%[m|de]|+|%[m|lesquels  ]|=|%[m|desquels  ]|
-|%[m|de]|+|%[m|lesquelles]|=|%[m|desquelles]|
+|%[m|le feu   ]|%[m|les feux   ]|
+|%[m|le cheveu]|%[m|les cheveux]|
+|%[m|l'eau    ]|%[m|les eaux   ]|
 |]
 
+### -al  изменить на -aux
+[|
+|%[m|le cheval ]|%[m|les chevaux ]|
+|%[m|la journal]|%[m|les journaux]|
+|%[m|le val    ]|%[m|les vaux    ]|
+|]
 
-[!
-Простые формы употребляются без антецедента.
-!]
+## Exception
 
-[!
-%[m|qui] - одушевлёные, прямое и косвенное дополнение
-%[m|quе] - неодушевлёные, прямое дополнение
-%[m|quoi] - неодушевлёные, косвенное дополнение с предлогом
-%[m|lequel] - одушевлёные/неодушевлёные, если более одного
-!]
+### -ou   - добавить -x
+[|
+|%[m|le bijou  ]|%[m|les bijoux  ]|
+|%[m|le caillou]|%[m|les cailloux]|
+|%[m|le chou   ]|%[m|les choux   ]|
+|%[m|le genou  ]|%[m|les genoux  ]|
+|%[m|le pou    ]|%[m|les poux    ]|
+|%[m|le joujou ]|%[m|les joujoux ]|
+|%[m|le hibou  ]|%[m|les hiboux  ]|
+|]
 
-[!
-%[m|qui est-ce qui] - вопрос к подлежащему одушевлённому
-%[m|qui est-ce que] - вопрос к прямому дополнению одушевлённому
-!]
+### -al - добавить -s
+[|
+|%[m|le bal     ]|%[m|les bals     ]|
+|%[m|le cal     ]|%[m|les cals     ]|
+|%[m|le carnaval]|%[m|les carnavals]|
+|%[m|le chacal  ]|%[m|les chacals  ]|
+|%[m|le festival]|%[m|les festivals]|
+|%[m|le régal   ]|%[m|les régals   ]|
+|%[m|le récital ]|%[m|les récitals ]|
+|]
 
-[!
-%[m|qu'est-ce qui] - вопрос к подлежащему неодушевлённому
-%[m|qu'est-ce que] - вопрос к прямому дополнению неодушевлённому
-!]
-
-[!
-%[m|qui] (вопрос к прямому дополнению) - с инверсией
-%[m|est-ce que] - без инверсии
-%[m|qui] (подлежащее) + %[m|de] + существительное/местоимение
-!]
+## Irrégulières 
+[|
+|%[m|le os   ]|%[m|les os    ]|
+|%[m|le œil  ]|%[m|les yeux  ]|
+|%[m|le ciel ]|%[m|les cieux ]|
+|%[m|le oeuf ]|%[m|les oeufs ]|
+|%[m|le boeuf]|%[m|les boeufs]|
+|]

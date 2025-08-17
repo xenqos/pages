@@ -1,43 +1,47 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="fr-FR-DeniseNeural">
 <prosody rate="-30%" pitch="0%">
-Temps immédiates.
+aller
+venir
 
-Futur immédiat
+arriver
+partir
 
-je vais finir
-tu vas finir
-il va finir
-nous allons finir
-vous allez finir
-ils vont finir
+passer
+retourner
 
-Futur immédiat dans le passé.
+entrer
+sortir
 
-je allais partir
-tu allais partir
-il allais partir
-nous allions partir
-vous alliez partir
-ils allai partir
+rester
+tomber
 
-Passé immédiat
+monter
+descendre
 
-je viens de finir
-tu viens de finir
-il vient de finir
-nous venons de finir
-vous venez de finir
-ils vienne de finir
+naître
+mourir
 
-Passé immédiat dans le passé.
+allé
+venu
 
-je venais de finir
-tu venais de finir
-il venait de finir
-nous venions de finir
-vous veniez de finir
-ils venai de finir
+arrivé
+parti
+
+passé
+retourné
+
+entré
+sorti
+
+resté
+tombé
+
+monté
+descendu
+
+né
+mort
 </prosody>
 </voice>
 </speak>

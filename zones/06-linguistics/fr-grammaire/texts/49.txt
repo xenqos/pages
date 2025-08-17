@@ -1,23 +1,42 @@
 ## Numéral
 
-# 100
+# 8
 
-## Произносится
+## Произносится -t
 
-/%[l|t]/ перед словом на гласную или h muet
-&emsp;%[m|cent ans]
+/t/ на конце фразы
+&emsp;%[m|Il y en a huit.]
 
-/%[l|z]/ в 200, 300, 400, 500, 600, 700, 800, 900
-&emsp;%[m|deux cents ans  ]
-&emsp;%[m|trois cents ans ]
-&emsp;%[m|quatre cents ans]
-&emsp;%[m|cinq cents ans  ]
-&emsp;%[m|six cents ans   ]
-&emsp;%[m|sept cents ans  ]
-&emsp;%[m|huit cents ans  ]
-&emsp;%[m|neuf cents ans  ]
+/t/ перед словом на гласную или h muet
+&emsp;%[m|huit euros]
+
+/t/ при обозначении цифры
+&emsp;%[m|compter jusqu’à huit]
 
 ## Не произносится -t
 
-/&nbsp;/ в 101
-&emsp;%[m|cent un]
+перед словом на согласную или h aspiré
+&emsp;%[m|huit cents]
+
+## Факультативно
+
+/t/ перед месяцами на согласную
+&emsp;%[m|le huit juin]
+
+перед процентами:
+&emsp;%[m|Il a eu quatre-vingt-huit % à son dernier examen.]
+
+## Élision
+
+не происходит
+&emsp;%[m|Il ne reste <u>que</u> huit jours avant mes vacances.]
+
+## Liaison
+
+происходит только в составе сложного числительного
+&emsp;%[m|dix-huit ans]
+
+не происходит
+&emsp;%[m|quatre-vingt-huit]
+&emsp;%[m|cent huit]
+&emsp;%[m|la huitième station]

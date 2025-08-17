@@ -1,41 +1,41 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="fr-FR-DeniseNeural">
 <prosody rate="-30%" pitch="0%">
-celui
-celle
-ce
+je
+tu
+il
+elle
+nous
+vous
+ils
+elles
 
-ceux
-celles
+me
+te
+le
+la
+nous
+vous
+les
+les
 
-celui-ci
-celle-ci
-ceci
+me
+te
+lui
+lui
+nous
+vous
+leur
+leur
 
-ceux-ci
-celles-ci
-
-celui-là
-celle-là
-cela
-ça
-
-ceux-là
-celles-là
-
-celui-là
-celle-là
-cela
-ça
-
-ceux-là
-celles-là
-
-icelui
-icelle
-
-iceux
-icelles
+moi
+toi
+lui
+elle
+nous
+vous
+eux
+elles
 </prosody>
 </voice>
 </speak>

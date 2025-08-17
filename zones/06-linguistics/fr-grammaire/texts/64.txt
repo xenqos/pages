@@ -1,77 +1,58 @@
+## Verbe ##
+
 ## Verbe
 
-# Temps Immédiates
+# Noms des Temps
 
-### Futur Immédiat
-
-[!
-Будущее время близкое к моменту речи.
-Переводится: собираюсь, намереваюсь, I am going to
-!]
-
-##### aller présent de l'indicatif + infinitif
+### Indicatif
 
 [|
-|%[m|je]  |%[e|vais]  |%[m|finir]|
-|%[m|tu]  |%[e|vas]   |%[m|finir]|
-|%[m|il]  |%[e|va]    |%[m|finir]|
-|%[m|nous]|%[e|allons]|%[m|finir]|
-|%[m|vous]|%[e|allez] |%[m|finir]|
-|%[m|ils] |%[e|vont]  |%[m|finir]|
+^Simples                     ^Composés              ^
+|%[m|Présent de l'indicatif  ]|%[m|Passé composé   ]|
+|%[m|Imparfait de l'indicatif]|%[m|Plus-que-parfait]|
+|%[m|Passé simple            ]|%[m|Passé antérieur ]|
+|%[m|Futur simple            ]|%[m|Futur antérieur ]|
 |]
 
-### Futur Immédiat Dans Le Passé
-
-[!
-Будущее время близкое к моменту речи в прошлом.
-Переводится: собирался, намеревался, I was going to
-!]
-
-##### aller imparfait + infinitif
+### Conditionnel
 
 [|
-|%[m|je]  |%[e|allais]  |%[m|partir]|
-|%[m|tu]  |%[e|allais]  |%[m|partir]|
-|%[m|il]  |%[e|allais]  |%[m|partir]|
-|%[m|nous]|%[e|allions] |%[m|partir]|
-|%[m|vous]|%[e|alliez]  |%[m|partir]|
-|%[m|ils] |%[e|allaient]|%[m|partir]|
+^Simples                     ^Composés                  ^
+|%[m|Présent du conditionnel]|%[m|Passé du conditionnel]|
 |]
 
-
-### Passé Immédiat
-
-[!
-Действие произошедшее непосредственно перед моментом речи.
-Переводится: только что, just happened.
-!]
-
-##### venir présent de l'indicatif + de infinitif
+### Subjonctif
 
 [|
-|%[m|je]  |%[e|viens]   |%[m|de finir]|
-|%[m|tu]  |%[e|viens]   |%[m|de finir]|
-|%[m|il]  |%[e|vient]   |%[m|de finir]|
-|%[m|nous]|%[e|venons]  |%[m|de finir]|
-|%[m|vous]|%[e|venez]   |%[m|de finir]|
-|%[m|ils] |%[e|viennent]|%[m|de finir]|
+^Simples                     ^Composés                           ^
+|%[m|Présent du subjonctif  ]|%[m|Passé du subjonctif           ]|
+|%[m|Imparfait du subjonctif]|%[m|Plus-que-parfait du subjonctif]|
 |]
 
-### Passé Immédiat Dans Le Passé
-
-[!
-Действие произошедшее непосредственно перед моментом речи в прошлом.
-Переводится: только что, just happened.
-Придаточное вводится %[m|quand], %[m|lorsque].
-!]
-
-##### venir imparfait + de infinitif
+### Infinitif
 
 [|
-|%[m|je]  |%[e|venais]   |%[m|de finir]|
-|%[m|tu]  |%[e|venais]   |%[m|de finir]|
-|%[m|il]  |%[e|venait]   |%[m|de finir]|
-|%[m|nous]|%[e|venions]  |%[m|de finir]|
-|%[m|vous]|%[e|veniez]   |%[m|de finir]|
-|%[m|ils] |%[e|venaient]|%[m|de finir]|
+^Simples          ^Composés       ^
+|%[m|Infinitif présent]|%[m|Infinitif passé]|
+|]
+
+### Participe
+
+[|
+^Simples               ^Composés            ^
+|%[m|Participe présent]|%[m|Participe passé]|
+|]
+
+### Gérondif
+
+[|
+^Simples              ^Composés           ^
+|%[m|Gérondif présent]|%[m|Gérondif passé]|
+|]
+
+### Imperatif
+
+[|
+^Simples          ^Composés       ^
+|%[m|Imperatif présent]|%[m|Imperatif passé]|
 |]

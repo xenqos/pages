@@ -17,7 +17,7 @@
   
 </head>
 <body onload='fncGetDivState(); fncGetScrollPosition();'>
-
+<audio id='idTrack' src='../sounds/33.mp3' preload='auto'></audio>
 <div id='idPanel'>
 <div id='idTopbar'>
   <div id='idTopbarNavigation'>
@@ -26,121 +26,87 @@
     <a href='32.html'><span class='clNavLeft'></span></a>
     <a href='../index.html'><span class='clNavUp'></span></a>
     <a href='34.html'><span class='clNavRight'></span></a>
-
+<span class='clNavRewind' onclick='fncRewindTrack(&quot;idTrack&quot;)'></span><span class='clNavPlay' onclick='fncPlayTrack(&quot;idTrack&quot;)'></span>
   </div>
 </div>
 <div id='idContent'>
 
-<h2>Adjectif</h2>
+<h1>Démonstratif</h1>
 
-<h1>Dégres de Comparison</h1>
-
+<h2>Formes simples</h2>
 <div class='clOverflow'>
 <table>
 <tr>
-<td><span class='m'>le positif   </span></td><td>положительная</td></tr>
-<tr><td><span class='m'>le comparatif</span></td><td>сравнительная</td></tr>
-<tr><td><span class='m'>le superlatif</span></td><td>превосходная </td></tr>
+<th>s.   </th><th>p.    </th></tr>
+<tr><td><span class='m'>celui</span></td><td><span class='m'>ceux  </span></td></tr>
+<tr><td><span class='m'>celle</span></td><td><span class='m'>celles</span></td></tr>
+<tr><td><span class='m'>ce   </span></td><td>      </td></tr>
 </table>
 </div>
 
 
-<h3>Comparatif</h3>
-
+<h2>Formes complexes -ci (ближние)</h2>
 <div class='clOverflow'>
 <table>
 <tr>
-<td>de superiorite</td><td><span class='m'>plus … que … </span></td><td>более </td></tr>
-<tr><td>d'inferiorite </td><td><span class='m'>moins … que …</span></td><td>менее </td></tr>
-<tr><td>d'egalite     </td><td><span class='m'>aussi … que …</span></td><td>так же</td></tr>
+<th>s.      </th><th>p.       </th></tr>
+<tr><td><span class='m'>celui-ci</span></td><td><span class='m'>ceux-ci  </span></td></tr>
+<tr><td><span class='m'>celle-ci</span></td><td><span class='m'>celles-ci</span></td></tr>
+<tr><td><span class='m'>ceci    </span></td><td><span class='m'>         </span></td></tr>
 </table>
 </div>
 
-<blockquote>
-<span class='m'>plus</span>, <span class='m'>moins</span>, <span class='m'>aussi</span> повторяются перед каждым словом<br>
-<span class='m'>que …</span> может не употребляться<br>
-</blockquote>
 
-<h3>Superlatif</h3>
-
-<ul>
-<li>superlatif - le, la, les</li>
-</ul>
-
+<h2>Formes complexes -la (дальние)</h2>
 <div class='clOverflow'>
 <table>
 <tr>
-<td><span class='m'>le plus … de … </span></td><td>наибольший</td></tr>
-<tr><td><span class='m'>le moins … de …</span></td><td>наименьший</td></tr>
+<th>s.      </th><th>p.       </th></tr>
+<tr><td><span class='m'>celui-là</span></td><td><span class='m'>ceux-là  </span></td></tr>
+<tr><td><span class='m'>celle-là</span></td><td><span class='m'>celles-là</span></td></tr>
+<tr><td><span class='m'>cela, ça</span></td><td><span class='m'>         </span></td></tr>
 </table>
 </div>
 
 <blockquote>
-если одно прилагательное стоит перед существительным, другое после, в превосходной степени оба после существительного:<br>
-&ensp;<span class='m'>C'est la chambre la plus grande et la plus claire.</span><br>
+cela, ça - подлежащее, прямое дополнение, косвенное дополнение<br>
+</blockquote>
+
+
+<h2>Formes obsolètes</h2>
+<div class='clOverflow'>
+<table>
+<tr>
+<th>s.      </th><th>p.       </th></tr>
+<tr><td><span class='m'>icelui</span></td><td><span class='m'>iceux  </span></td></tr>
+<tr><td><span class='m'>icelle</span></td><td><span class='m'>icelles</span></td></tr>
+</table>
+</div>
+
+<blockquote>
+-<span class='m'>ci</span> - ближний, -<span class='m'>là</span> - дальний, если предметы в поле зрения<br>
+-<span class='m'>ci</span> - последний, -<span class='m'>là</span> - первый, по упоминанию, если предметы вне поля зрения<br>
+-<span class='m'>ci</span>, -<span class='m'>là</span> - равнозначны, если нет противопоставления<br>
 </blockquote>
 
 <blockquote>
-eсли прилагательное находится после существительного, определенный артикль употребляется дважды: перед существительным и перед прилагательным:<br>
-&ensp;<span class='m'>C'est la règle la plus difficile.</span><br>
-&ensp;<span class='m'>Ce sont les chambres les plus claires et les plus grandes.</span><br>
+<span class='m'>ce</span> употребляется как подлежащие с глаголами:<br>
+<span class='m'>être - c'est vrai</span><br>
+<span class='m'>devoir - ce doit être beau</span><br>
+<span class='m'>pouvoir - ce pouvait être beau</span><br>
+<span class='m'>sembler - ce semble être beau</span><br>
 </blockquote>
 
+<blockquote>
+<span class='m'>ce</span> и число (глагол согласуется в числе с имменой частью сказуемого):<br>
+<span class='m'>c'est un étudiant</span><br>
+<span class='m'>ce sont des étudiants</span><br>
+</blockquote>
 
-<h3>Irrégulier</h3>
-
-<h2>bon</h2>
-<div class='clOverflow'>
-<table>
-<tr>
-<th>Comparatif             </th><th>                </th></tr>
-<tr><td><span class='m'>meilleur  … que … </span></td><td>более хороший   </td></tr>
-<tr><td><span class='m'>moins bon … que … </span></td><td>менее хороший   </td></tr>
-<tr><td><span class='m'>aussi bon … que … </span></td><td>такой же хороший</td></tr>
-</table>
-</div>
-
-<div class='clOverflow'>
-<table>
-<tr>
-<th>Superlatif             </th><th>       </th></tr>
-<tr><td><span class='m'>le meilleur … de … </span></td><td>лучший</td></tr>
-<tr><td><span class='m'>la meilleur … de … </span></td><td>лучшая</td></tr>
-<tr><td><span class='m'>les meilleur … de …</span></td><td>лучшие</td></tr>
-</table>
-</div>
-
-
-<h2>mauvais</h2>
-<div class='clOverflow'>
-<table>
-<tr>
-<th>Comparatif                 </th><th>               </th></tr>
-<tr><td><span class='m'>plus mauvais … que …  </span></td><td>более плохой   </td></tr>
-<tr><td><span class='m'>pire … que …          </span></td><td>более плохой   </td></tr>
-<tr><td><span class='m'>moins mauvais … que … </span></td><td>менее плохой   </td></tr>
-<tr><td><span class='m'>aussi mauvais … que … </span></td><td>такой же плохой</td></tr>
-</table>
-</div>
-
-<div class='clOverflow'>
-<table>
-<tr>
-<th>Superlatif             </th><th>      </th></tr>
-<tr><td><span class='m'>le mauvais … de … </span></td><td>худший</td></tr>
-<tr><td><span class='m'>la mauvais … de … </span></td><td>худшая</td></tr>
-<tr><td><span class='m'>les mauvais … de …</span></td><td>худшие</td></tr>
-<tr><td><span class='m'>le pire … de …    </span></td><td>худший</td></tr>
-<tr><td><span class='m'>la pire … de …    </span></td><td>худшая</td></tr>
-<tr><td><span class='m'>les pire … de …   </span></td><td>худшие</td></tr>
-</table>
-</div>
-
-
-<ul>
-<li>pire - используется редко</li>
-</ul>
-
+<blockquote>
+<span class='m'>ceci, cela, ça</span> - указывают на идею, событие<br>
+<span class='m'>cela, ça</span> - употребляется чаще<br>
+</blockquote>
 
 
 </div>

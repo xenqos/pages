@@ -1,43 +1,39 @@
-## Adjectif
+# Relatif
 
-# Possessif
-
-### Un Propriétaire (один владелец)
-
+## Formes simples
 [|
-^s.m.      ^s.f.     ^p.  ^
-|%[m|mon]|%[m|ma]|%[m|mes]|
-|%[m|ton]|%[m|ta]|%[m|tes]|
-|%[m|son]|%[m|sa]|%[m|ses]|
+|%[m|qui ]|
+|%[m|que ]|
+|%[m|quoi]|
+|%[m|dont]|
+|%[m|où  ]|
 |]
-
-### Plusieurs Propriétaires (несколько владельцев)
-
-[|
-^s.           ^p.        ^
-|%[m|le notre]|%[m|nos  ]|
-|%[m|le votre]|%[m|vos  ]|
-|%[m|le leur ]|%[m|leur ]|
-|]
-
-[-
-согласуются в роде и числе с существительным
-согласуются в роде и числе с указываемым владельцем
--]
 
 [!
-%[m|notre] [nɔtrə] - %[m|nôtre] [notrə]
+%[m|qui] - подлежащие, антецедент - одушевлёный/неодушевлёный
+%[m|quе] - прямое дополнение, антецедент - одушевлёный/неодушевлёный
+%[m|quoi] - неопределённое, антецедент - %[m|ce]
+%[m|dont] - %[m|de qui, de quoi, duquel, de laquelle, desquels, desquelles]
+%[m|ou] - обстоятельство места/времени, неодушевлённые
+!]
+
+## Formes complexes
+
+[|
+^s.           ^p.       ^
+|%[m|lequel  ]|lequels  |
+|%[m|laquelle]|laquelles|
+|]
+
+[!
+%[m|lequel] - прямое дополнение с предлогом, антецедент - одушевлёные/неодушевлёные
 !]
 
 [!
-мужской род употребляется перед женским родом на гласную, h muet
-%[m|mon amie]
-%[m|ton habitude]
-%[m|son allusion]
+%[m|à ] + %[m|lequel    ] = %[m|auquel    ]
+%[m|à ] + %[m|lesquels  ] = %[m|auxquel   ]
+%[m|à ] + %[m|lesquelles] = %[m|auxquelles]
+%[m|de] + %[m|lequel    ] = %[m|duquel    ]
+%[m|de] + %[m|lesquels  ] = %[m|desquels  ]
+%[m|de] + %[m|lesquelles] = %[m|desquelles]
 !]
-
-[-
-ставятся перед существительным
-заменяют артикль
-повторяется перед каждым существительным
--]

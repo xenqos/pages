@@ -1,40 +1,74 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="fr-FR-DeniseNeural">
 <prosody rate="-30%" pitch="0%">
-le mien
-le tien
-le sien
+le livre
+les livres
+le maison
+les maisons
+l'étudiant
+les étudiants
 
-la mienne
-la tienne
-la sienne
+le bras
+les bras
+la voix
+les voix
+le nez
+les nez
 
-les miens
-les tiens
-les siens
+le feu
+les feux
+le cheveu
+les cheveux
+l'eau
+les eaux
 
-les miennes
-les tiennes
-les siennes
+le cheval
+les chevaux
+la journal
+les journaux
+le val
+les vaux
 
-le nôtre
-le vôtre
-le leur
+le bijou
+les bijoux
+le caillou
+les cailloux
+le chou
+les choux
+le genou
+les genoux
+le pou
+les poux
+le joujou
+les joujoux
+le hibou
+les hiboux
 
-la nôtre
-la vôtre
-la leur
+le bal
+les bals
+le cal
+les cals
+le carnaval
+les carnavals
+le chacal
+les chacals
+le festival
+les festivals
+le régal
+les régals
+le récital
+les récitals
 
-les nôtres
-les vôtres
-les leurs
-
-les nôtres
-les vôtres
-les leurs
-
-notre
-nôtre
+le os
+les os
+le œil
+les yeux
+le ciel
+les cieux
+le oeuf
+les oeufs
+le boeuf
+les boeufs
 </prosody>
 </voice>
 </speak>

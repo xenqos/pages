@@ -1,16 +1,43 @@
-## Numéral
+## Adjectif
 
-# 5
+# Possessif
 
-## Произносится -q
+### Un Propriétaire (один владелец)
 
-на конце фразы
-&emsp;%[m|Il y en a cinq.]
+[|
+^s.m.      ^s.f.     ^p.  ^
+|%[m|mon]|%[m|ma]|%[m|mes]|
+|%[m|ton]|%[m|ta]|%[m|tes]|
+|%[m|son]|%[m|sa]|%[m|ses]|
+|]
 
-перед словом на гласную или h muet
-&emsp;%[m|cinq euros]
+### Plusieurs Propriétaires (несколько владельцев)
 
-## Факультативно
+[|
+^s.           ^p.        ^
+|%[m|le notre]|%[m|nos  ]|
+|%[m|le votre]|%[m|vos  ]|
+|%[m|le leur ]|%[m|leur ]|
+|]
 
-перед словом на согласную или h aspiré
-&emsp;%[m|cinq cents, cinq livres]
+[-
+согласуются в роде и числе с существительным
+согласуются в роде и числе с указываемым владельцем
+-]
+
+[!
+%[m|notre] [nɔtrə] - %[m|nôtre] [notrə]
+!]
+
+[!
+мужской род употребляется перед женским родом на гласную, h muet
+%[m|mon amie]
+%[m|ton habitude]
+%[m|son allusion]
+!]
+
+[-
+ставятся перед существительным
+заменяют артикль
+повторяется перед каждым существительным
+-]
