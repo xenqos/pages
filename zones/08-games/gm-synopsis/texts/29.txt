@@ -1,50 +1,16 @@
 ###### Odds & Probability
 
-# Outs Probability
+# Hand Ranking O & P
 
-[!
-47 cards after Flop
-46 cards after Turn
-!]
-
-###### Probability of Hitting on Turn (%)
-$
-\begin{array}{l}
-\Large {Outs \over {47 \times 100}} \\
-\end{array}
-$
-
-###### Probability of Not Hitting on Turn (%)
-$
-\begin{array}{l}
-\Large {(47 - Outs) \over {47 \times 100}} \\
-\end{array}
-$
-
-###### Probability of Hitting on River (%)
-$
-\begin{array}{l}
-\Large {Outs \over {46 \times 100}} \\
-\end{array}
-$
-
-###### Probability of Not Hitting on River (%)
-$
-\begin{array}{l}
-\Large {(46 - Outs) \over {46 \times 100}} \\
-\end{array}
-$
-
-###### Combined Probability of Hitting (%)
-$
-\begin{array}{l}
-\Large {(} \large {1} - \Large {(47 - Outs) \over 47} \times {(46 - Outs) \over 46}) \large {\times 100} \\
-\end{array}
-$
-
-###### Combined Probability of Not Hitting (%)
-$
-\begin{array}{l}
-\Large {(47 - Outs) \over 47} \times {(46 - Outs) \over 46} \large {\times 100} \\
-\end{array}
-$
+[?
+Royal Flush       1:649,739.000    0.000154% &nbsp;
+Straight Flush    1:72,192.000     0.001390% &nbsp;
+Four Of A Kind    1:4,165.000      0.024000% &nbsp;
+Full House        1:693.170        0.144100% &nbsp;
+Flush             1:508.800        0.196500% &nbsp;
+Straight          1:253.800        0.392500% &nbsp;
+Three Of A Kind   1:46.330         2.112800% &nbsp;
+Two Pair          1:20.000         4.753900% &nbsp;
+One Pair          1:1.366         42.256900% &nbsp;
+High Card         1:0.995         50.117700% &nbsp;
+?]

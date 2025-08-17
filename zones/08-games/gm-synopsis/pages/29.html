@@ -14,8 +14,7 @@
   <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
   <script type='text/javascript' src='../../../../scripts/global.js'></script>
   <script type='text/javascript' src='../scripts/local.js'></script>
-  <script>MathJax={tex: {inlineMath: [['$', '$'], ['((', '))']], processEscapes: true}};</script>
-  <script id='MathJax-script' async src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'></script>
+  
 </head>
 <body onload='fncGetDivState(); fncGetScrollPosition();'>
 
@@ -34,54 +33,19 @@
 
 <h6>Odds & Probability</h6>
 
-<h1>Outs Probability</h1>
+<h1>Hand Ranking O & P</h1>
 
-<blockquote>
-47 cards after Flop<br>
-46 cards after Turn<br>
-</blockquote>
+<pre><code>Royal Flush       1:649,739.000    0.000154% &nbsp;
+Straight Flush    1:72,192.000     0.001390% &nbsp;
+Four Of A Kind    1:4,165.000      0.024000% &nbsp;
+Full House        1:693.170        0.144100% &nbsp;
+Flush             1:508.800        0.196500% &nbsp;
+Straight          1:253.800        0.392500% &nbsp;
+Three Of A Kind   1:46.330         2.112800% &nbsp;
+Two Pair          1:20.000         4.753900% &nbsp;
+One Pair          1:1.366         42.256900% &nbsp;
+High Card         1:0.995         50.117700% &nbsp;</code></pre>
 
-<h6>Probability of Hitting on Turn (%)</h6>
-$<br>
-\begin{array}{l}<br>
-\Large {Outs \over {47 \times 100}} \\<br>
-\end{array}<br>
-$<br>
-
-<h6>Probability of Not Hitting on Turn (%)</h6>
-$<br>
-\begin{array}{l}<br>
-\Large {(47 - Outs) \over {47 \times 100}} \\<br>
-\end{array}<br>
-$<br>
-
-<h6>Probability of Hitting on River (%)</h6>
-$<br>
-\begin{array}{l}<br>
-\Large {Outs \over {46 \times 100}} \\<br>
-\end{array}<br>
-$<br>
-
-<h6>Probability of Not Hitting on River (%)</h6>
-$<br>
-\begin{array}{l}<br>
-\Large {(46 - Outs) \over {46 \times 100}} \\<br>
-\end{array}<br>
-$<br>
-
-<h6>Combined Probability of Hitting (%)</h6>
-$<br>
-\begin{array}{l}<br>
-\Large {(} \large {1} - \Large {(47 - Outs) \over 47} \times {(46 - Outs) \over 46}) \large {\times 100} \\<br>
-\end{array}<br>
-$<br>
-
-<h6>Combined Probability of Not Hitting (%)</h6>
-$<br>
-\begin{array}{l}<br>
-\Large {(47 - Outs) \over 47} \times {(46 - Outs) \over 46} \large {\times 100} \\<br>
-\end{array}<br>
-$<br>
 
 
 </div>

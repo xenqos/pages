@@ -1,0 +1,16 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+prägen, prägte, geprägt
+scheiden, schied, geschieden
+wiegen, wog, gewogen
+zunehmen, nahm zu, zugenommen
+abschaffen, schaffte ab, abgeschafft
+anwenden, wandte an, angewandt
+aufstellen, stellte auf, aufgestellt
+backen, buk, gebacken
+backen, backte, gebacken
+dringen, drang, gedrungen
+</prosody>
+</voice>
+</speak>

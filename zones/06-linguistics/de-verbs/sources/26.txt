@@ -1,0 +1,16 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+abschließen, schloss ab, abgeschlossen
+antreten, trat an, angetreten
+gelingen, gelang, gelungen
+mögen, mochte, gemocht
+verstoßen, verstieß, verstoßen
+vorbereiten, bereitete vor, vorbereitet
+auslösen, löste aus, ausgelöst
+bearbeiten, bearbeitete, bearbeitet
+biegen, bog, gebogen
+festhalten, hielt fest, festgehalten
+</prosody>
+</voice>
+</speak>

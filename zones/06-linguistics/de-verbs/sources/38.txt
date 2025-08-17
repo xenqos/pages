@@ -1,0 +1,16 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+zugreifen, griff zu, zugegriffen
+abrufen, rief ab, abgerufen
+auflösen, löste auf, aufgelöst
+ausführen, führte aus, ausgeführt
+bemerken, bemerkte, bemerkt
+beschaffen, beschaffte, beschafft
+einbauen, baute ein, eingebaut
+einreichen, reichte ein, eingereicht
+ergreifen, ergriff, ergriffen
+fügen, fügte, gefügt
+</prosody>
+</voice>
+</speak>

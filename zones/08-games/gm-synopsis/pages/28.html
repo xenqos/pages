@@ -14,7 +14,8 @@
   <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
   <script type='text/javascript' src='../../../../scripts/global.js'></script>
   <script type='text/javascript' src='../scripts/local.js'></script>
-  
+  <script>MathJax={tex: {inlineMath: [['$', '$'], ['((', '))']], processEscapes: true}};</script>
+  <script id='MathJax-script' async src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'></script>
 </head>
 <body onload='fncGetDivState(); fncGetScrollPosition();'>
 
@@ -33,55 +34,54 @@
 
 <h6>Odds & Probability</h6>
 
-<h1>Outs Calculation</h1>
+<h1>Outs Probability</h1>
 
 <blockquote>
-Out - One Card that can improve Hand<br>
-Count Card as Out once<br>
+47 cards after Flop<br>
+46 cards after Turn<br>
 </blockquote>
 
-<div class='clOverflow'>
-<table>
-<tr>
-<th>Type of Draw</th><th>Outs</th></tr>
-<tr><td>Pair to Set                    </td><td> 2</td></tr>
-<tr><td>One Overcard                   </td><td> 3</td></tr>
-<tr><td>Inside Straight Draw           </td><td> 4</td></tr>
-<tr><td>Two Pair to Full House         </td><td> 4</td></tr>
-<tr><td>One Pair to Two Pair or Set    </td><td> 5</td></tr>
-<tr><td>No Pair to Pair                </td><td> 6</td></tr>
-<tr><td>Two Overcards to Over Pair     </td><td> 6</td></tr>
-<tr><td>Set to Full House              </td><td> 7</td></tr>
-<tr><td>Set to Four of Kind            </td><td> 7</td></tr>
-<tr><td>Open-Ended Straight            </td><td> 8</td></tr>
-<tr><td>Flush Draw                     </td><td> 9</td></tr>
-<tr><td>Inside Straight & Two Overcards</td><td>10</td></tr>
-<tr><td>Inside Straight Draw & Flush   </td><td>12</td></tr>
-<tr><td>Open Straight & Flush Draw     </td><td>15</td></tr>
-</table>
-</div>
+<h6>Probability of Hitting on Turn (%)</h6>
+$<br>
+\begin{array}{l}<br>
+\Large {Outs \over {47 \times 100}} \\<br>
+\end{array}<br>
+$<br>
 
+<h6>Probability of Not Hitting on Turn (%)</h6>
+$<br>
+\begin{array}{l}<br>
+\Large {(47 - Outs) \over {47 \times 100}} \\<br>
+\end{array}<br>
+$<br>
 
-<h2>Outs Example</h2>
+<h6>Probability of Hitting on River (%)</h6>
+$<br>
+\begin{array}{l}<br>
+\Large {Outs \over {46 \times 100}} \\<br>
+\end{array}<br>
+$<br>
 
-<a target='_blank' href='../images/outs-samples.webp'><img class='clImageThumb' src='../images/outs-samples.webp'></a><br>
+<h6>Probability of Not Hitting on River (%)</h6>
+$<br>
+\begin{array}{l}<br>
+\Large {(46 - Outs) \over {46 \times 100}} \\<br>
+\end{array}<br>
+$<br>
 
-<h2>Blocker Example</h2>
+<h6>Combined Probability of Hitting (%)</h6>
+$<br>
+\begin{array}{l}<br>
+\Large {(} \large {1} - \Large {(47 - Outs) \over 47} \times {(46 - Outs) \over 46}) \large {\times 100} \\<br>
+\end{array}<br>
+$<br>
 
-<blockquote>
-Blocker - One Card that prevents having combinations<br>
-</blockquote>
-
-<h3>Example</h3>
-
-Pocket<br>
-<q class='s'>K</q><br>
-<br>
-Flop<br>
-<q class='s'>T</q><q class='s'>J</q><q class='s'>Q</q><br>
-<br>
-Result<br>
-Blocker to Flush, Blocker to Straight<br>
+<h6>Combined Probability of Not Hitting (%)</h6>
+$<br>
+\begin{array}{l}<br>
+\Large {(47 - Outs) \over 47} \times {(46 - Outs) \over 46} \large {\times 100} \\<br>
+\end{array}<br>
+$<br>
 
 
 </div>
