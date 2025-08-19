@@ -1,0 +1,36 @@
+/*--------------------------------------------------------------------------------------------------*/
+
+body
+{
+  display:      inline-block;
+  background:      #000000;
+  color:        #ffffff;
+  margin:        00px 00px 00px 00px;
+  padding:      00px 00px 10px 00px;
+  width:        100%;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+.clTest1
+{
+  font:        normal 32px Calibri, sans-serif;
+  margin:        00px 00px 00px 00px;
+  padding:      00px 00px 00px 00px;
+  text-align:      center;
+}
+
+.clTest2
+{
+  font:        normal 22px Calibri, sans-serif;
+  margin:        00px 00px 00px 00px;
+  padding:      00px 00px 00px 00px;
+  text-align:      left;
+}
+
+/*------------------------------------------------------------------------------------------------*/

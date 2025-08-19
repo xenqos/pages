@@ -1,0 +1,67 @@
+/*--------------------------------------------------------------------------------------------------*/
+
+body
+{
+  display:      inline-block;
+  background:      #ffffff;
+  color:        #000000;
+
+  font-family:    Calibri, sans-serif;
+  font-size:      135%;
+  font-style:      normal;
+  font-weight:    normal;
+
+  margin:        00px 00px 00px 00px;
+  padding:      00px 00px 10px 00px;
+  width:        100%;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 1280px) and (orientation:landscape)
+{
+  .clTest1
+  {
+    color:      #000000;
+    font-family:  'Droid Sans', sans-serif;
+/*    font-size:    1em; */
+    font-size:    20px;
+  }
+}
+
+/*
+1em = 12pt = 16px = 100%
+*/
+
+@media screen and (max-width: 1280px) and (orientation:portrait)
+{
+  .clTest1
+  {
+    font-size:    1.6em;
+  }
+}
+
+.clTest1
+{
+  margin:        00px 00px 00px 00px;
+  padding:      00px 00px 00px 00px;
+  text-align:      left;
+}
+
+.clTest2
+{
+  font-size:      1em;
+  font-family:    Calibri, sans-serif;
+
+/*  font:        normal 20px Calibri, sans-serif; */
+  margin:        00px 00px 00px 00px;
+  padding:      00px 00px 00px 00px;
+  text-align:      left;
+}
+
+/*------------------------------------------------------------------------------------------------*/

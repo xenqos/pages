@@ -1,0 +1,82 @@
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <style type='text/css'>
+    body
+    {
+      background:  #ffffff;
+      color:    #000000;
+      font-family:    sans-serif !important;
+      font-style:      normal !important;
+      font-weight:    normal !important;
+      min-height:      800px;
+    }
+
+    :focus {outline:none;}
+    ::-moz-focus-inner {border:0;}
+
+    a, a:visited
+    {
+      color:        #000000;
+      display:      inline;
+      text-decoration:  none;
+    }
+
+    a:hover
+    {
+      color:        #ff0000;
+      display:      inline;
+      text-decoration:  none;
+    }
+  </style>
+  <script language='javascript'>
+    function fnShowSizes()
+    {
+      /* Appropriate method */
+      document.getElementById('idClientWidth').innerHTML = document.body.clientWidth;
+      document.getElementById('idClientHeight').innerHTML = document.body.clientHeight;
+
+      document.getElementById('idOffsetWidth').innerHTML = document.body.offsetWidth;
+      document.getElementById('idOffsetHeight').innerHTML = document.body.offsetHeight;
+
+      document.getElementById('idOuterWidth').innerHTML = window.outerWidth;
+      document.getElementById('idOuterHeight').innerHTML = window.outerHeight;
+
+      document.getElementById('idInnerWidth').innerHTML = window.innerWidth;
+      document.getElementById('idInnerHeight').innerHTML = window.innerHeight;
+
+    }
+  </script>
+</head>
+<body onLoad='fnShowSizes()'>
+  <a onClick='location.reload(true)' href='#'>&#8709;</a><br>
+  <br>
+  <table border='0' cellpadding='5' cellspacing='0'>
+  <tr><td>document.body.clientWidth:</td><td><span id='idClientWidth'></span></td></tr>
+  <tr><td>document.body.clientHeight:</td><td><span id='idClientHeight'></span></td></tr>
+  <tr><td colspan='2'>&nbsp;</td></tr>
+  <tr><td>document.body.offsetWidth:</td><td><span id='idOffsetWidth'></span></td></tr>
+  <tr><td>document.body.offsetHeight:</td><td><span id='idOffsetHeight'></span></td></tr>
+  <tr><td colspan='2'>&nbsp;</td></tr>
+  <tr><td>window.outerWidth:</td><td><span id='idOuterWidth'></span></td></tr>
+  <tr><td>window.outerHeight:</td><td><span id='idOuterHeight'></span></td></tr>
+  <tr><td colspan='2'>&nbsp;</td></tr>
+  <tr><td>window.innerWidth *:</td><td><span id='idInnerWidth'></span></td></tr>
+  <tr><td>window.innerHeight *:</td><td><span id='idInnerHeight'></span></td></tr>
+  </table>
+
+
+<!--
+Laptop, Taskbar On        1366x684
+Laptop, Taskbar Off        1366x713
+Laptop, Fullscreen        1366x767
+
+Tablet Portrait, Topbar On    800x1176
+Tablet Portrait, Fullscreen    800x1232
+
+Tablet Landscape, Topbar On    1280x696
+Tablet Landscape, Fullscreen  1280x752
+-->
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+/*--------------------------------------------------------------------------------------------------*/
+
+body
+{
+  display:              inline-block;
+  background:           #ffffff;
+  color:                #00ff00;
+  font-family:          'Noto Sans', sans-serif !important;
+  font-style:           normal;
+  font-size:            1.000rem;
+  font-weight:          normal;
+  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+  width:                100%;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 1280px) and (orientation:landscape)
+{
+  .clTest1
+  {
+    color:              #000000;
+    font-family:        'Noto Sans', sans-serif !important;
+    font-style:         normal;
+    font-size:          2.000rem;
+    font-weight:        normal;
+  }
+}
+
+/*
+1em = 12pt = 16px = 100%
+*/
+
+@media screen and (max-width: 1280px) and (orientation:portrait)
+{
+  .clTest1
+  {
+    font-size:          1.600rem;
+  }
+}
+
+/*-----------------------------------------------------------------------------------------------*/
+
+.clTest1
+{
+  font-family:          'Noto Sans', sans-serif !important;
+  font-style:           normal;
+  font-size:            2.000rem;
+  font-weight:          normal;
+  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+  text-align:           left;
+}
+
+.clTest2
+{
+  font-family:          'Noto Sans', sans-serif !important;
+  font-style:           normal;
+  font-size:            1.000rem;
+  font-weight:          normal;
+  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+  text-align:           left;
+}
+
+
+/*-----------------------------------------------------------------------------------------------*/

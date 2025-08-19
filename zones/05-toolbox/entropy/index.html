@@ -1,0 +1,292 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Password Check</title>
+  <link rel='stylesheet' type='text/css' media='screen' href='/styles/commons.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='/styles/entropy.css'>
+  <script type='text/javascript' src='/scripts/jquery.js'></script>
+  <script type='text/javascript' src='/scripts/jqueryui.js'></script>
+  <script type='text/javascript' src='/scripts/entropy.js'></script>
+  <script type='text/javascript' src='/scripts/commons.js'></script>
+</head>
+<body onLoad='fncGeneratePassword();'>
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='/'><span class='clNavHome'><span></a>
+    <a href='../'><span class='clNavIndex'><span></a>
+    <span class='clNavRewind' onclick='fncReloadPage()'></span>
+  </div>
+</div>
+<div id='idContent'>
+<div id="passwordDetails">
+  <table>
+    <tr class="password">
+      <td class="key">Password&ensp;</td>
+      <td>
+        <form id="passwordForm" action="#">
+        <fieldset>
+          <input type="text" value="" id="password" autocomplete="off" name="password" maxlength="255" onfocus="checkPassword(this.value);" onkeyup="checkPassword(this.value);">
+          <input type="password" value="" id="passwordHidden" name="password" maxlength="255" onkeyup="checkPassword(this.value);">
+        </fieldset>
+        </form>
+      </td>
+    </tr>
+    <tr>
+      <td class="key">Pre R. Score&ensp;</td>
+      <td><span id="beforeRedundancyScore">0</span></td>
+    </tr>
+    <tr>
+      <td class="key">Redundancy&ensp;</td>
+      <td><span id="redundancy">0</span></td>
+    </tr>
+    <tr>
+      <td class="key">Entropy&ensp;</td>
+      <td><span id="entropy">0</span></td>
+    </tr>
+    <tr>
+      <td class="key">Orig. Score&ensp;</td>
+      <td><span id="originalscore">0</span></td>
+    </tr>
+    <tr>
+      <td class="key">Score&ensp;</td>
+      <td><span id="score">0%</span></td>
+    </tr>
+    <tr>
+      <td class="key">Complexity&ensp;</td>
+      <td><span id="complexity">Too Short</span></td>
+    </tr>
+  </table>
+</div>
+
+<br>
+
+<div id="passwordCriteria">
+  <table>
+    <tr>
+      <th class="status">&nbsp;</th>
+      <th class="type">T.</th>
+      <th class="description">Description</th>
+      <th class="minimum number">Min</th>
+      <th class="count number">Cnt</th>
+      <th class="bonus number">Bns</th>
+      <th class="penalty number">Pnl</th>
+      <th class="rating number">Rtn</th>
+    </tr>
+    <tr id="BasicRequirements">
+      <td class="status">&nbsp;</td>
+      <td class="type">T</td>
+      <td class="description"><a href="#" title="Basic Requirements" rel="#BasicRequirementsDesc">Basic Requirements</a></td>
+      <td class="minimum number">&nbsp;</td>
+      <td class="count number">&nbsp;</td>
+      <td class="bonus number">&nbsp;</td>
+      <td class="penalty number">&nbsp;</td>
+      <td class="rating number">&nbsp;</td>
+    </tr>
+    <tr id="PasswordLength">
+      <td class="status">&nbsp;</td>
+      <td class="type">T</td>
+      <td class="description"><a href="#" title="Character Count" rel="#PasswordLengthDesc">Character Count<span class="requirement">*</span></a></td>
+      <td class="minimum number">&nbsp;</td>
+      <td class="count number">&nbsp;</td>
+      <td class="bonus number">&nbsp;</td>
+      <td class="penalty number">&nbsp;</td>
+      <td class="rating number">&nbsp;</td>
+    </tr>
+    <tr id="RecommendedPasswordLength">
+      <td class="status">&nbsp;</td>
+      <td class="type">T</td>
+      <td class="description"><a href="#" title="Recommended Character Count " rel="#RecommendedPasswordLengthDesc">Recomm. Char Count</a></td>
+      <td class="minimum number">&nbsp;</td>
+      <td class="count number">&nbsp;</td>
+      <td class="bonus number">&nbsp;</td>
+      <td class="penalty number">&nbsp;</td>
+      <td class="rating number">&nbsp;</td>
+    </tr>
+    <tr id="LowercaseLetters">
+      <td class="status">&nbsp;</td>
+      <td class="type">T</td>
+      <td class="description"><a href="#" title="Lowercase Letters" rel="#LowercaseLettersDesc">Lowercase Letters<span class="requirement">*</span></a></td>
+      <td class="minimum number">&nbsp;</td>
+      <td class="count number">&nbsp;</td>
+      <td class="bonus number">&nbsp;</td>
+      <td class="penalty number">&nbsp;</td>
+      <td class="rating number">&nbsp;</td>
+    </tr>
+    <tr id="UppercaseLetters">
+      <td class="status">&nbsp;</td>
+      <td class="type">T</td>
+      <td class="description"><a href="#" title="Uppercase Letters" rel="#UppercaseLettersDesc">Uppercase Letters<span class="requirement">*</span></a></td>
+      <td class="minimum number">&nbsp;</td>
+      <td class="count number">&nbsp;</td>
+      <td class="bonus number">&nbsp;</td>
+      <td class="penalty number">&nbsp;</td>
+      <td class="rating number">&nbsp;</td>
+    </tr>
+    <tr id="Numerics">
+      <td class="status">&nbsp;</td>
+      <td class="type">T</td>
+      <td class="description"><a href="#" title="Numerics" rel="#NumericsDesc">Number of Numerics<span class="requirement">*</span></a></td>
+      <td class="minimum number">&nbsp;</td>
+      <td class="count number">&nbsp;</td>
+      <td class="bonus number">&nbsp;</td>
+      <td class="penalty number">&nbsp;</td>
+      <td class="rating number">&nbsp;</td>
+    </tr>
+    <tr id="Symbols">
+      <td class="status">&nbsp;</td>
+      <td class="type">T</td>
+      <td class="description"><a href="#" title="Symbols" rel="#SymbolsDesc">Number of Symbols<span class="requirement">*</span></a></td>
+      <td class="minimum number">&nbsp;</td>
+      <td class="count number">&nbsp;</td>
+      <td class="bonus number">&nbsp;</td>
+      <td class="penalty number">&nbsp;</td>
+      <td class="rating number">&nbsp;</td>
+    </tr>
+    <tr id="MiddleNumerics">
+      <td class="status">&nbsp;</td>
+      <td class="type">T</td>
+      <td class="description"><a href="#" title="Middle Numerics" rel="#MiddleNumericsDesc">Number of Middle Num.</a></td>
+      <td class="minimum number">&nbsp;</td>
+      <td class="count number">&nbsp;</td>
+      <td class="bonus number">&nbsp;</td>
+      <td class="penalty number">&nbsp;</td>
+      <td class="rating number">&nbsp;</td>
+    </tr>
+    <tr id="MiddleSymbols">
+      <td class="status">&nbsp;</td>
+      <td class="type">T</td>
+      <td class="description"><a href="#" title="Middle Symbols" rel="#MiddleSymbolsDesc">Number of Middle Sym.</a></td>
+      <td class="minimum number">&nbsp;</td>
+      <td class="count number">&nbsp;</td>
+      <td class="bonus number">&nbsp;</td>
+      <td class="penalty number">&nbsp;</td>
+      <td class="rating number">&nbsp;</td>
+    </tr>
+    <tr id="SequentialLetters">
+      <td class="status">&nbsp;</td>
+      <td class="type">B</td>
+      <td class="description"><a href="#" title="Sequential Letters" rel="#SequentialLettersDesc">Sequential Letters</a></td>
+      <td class="minimum number">&nbsp;</td>
+      <td class="count number">&nbsp;</td>
+      <td class="bonus number">&nbsp;</td>
+      <td class="penalty number">&nbsp;</td>
+      <td class="rating number">&nbsp;</td>
+    </tr>
+    <tr id="SequentialNumerics">
+      <td class="status">&nbsp;</td>
+      <td class="type">B</td>
+      <td class="description"><a href="#" title="Sequential Numerics" rel="#SequentialNumericsDesc">Sequential Numbers</a></td>
+      <td class="minimum number">&nbsp;</td>
+      <td class="count number">&nbsp;</td>
+      <td class="bonus number">&nbsp;</td>
+      <td class="penalty number">&nbsp;</td>
+      <td class="rating number">&nbsp;</td>
+    </tr>
+    <tr id="KeyboardPatterns">
+      <td class="status">&nbsp;</td>
+      <td class="type">B</td>
+      <td class="description"><a href="#" title="Keyboard Patterns" rel="#KeyboardPatternsDesc">Keyboard Patterns used</a></td>
+      <td class="minimum number">&nbsp;</td>
+      <td class="count number">&nbsp;</td>
+      <td class="bonus number">&nbsp;</td>
+      <td class="penalty number">&nbsp;</td>
+      <td class="rating number">&nbsp;</td>
+    </tr>
+    <tr id="RepeatedSequences">
+      <td class="status">&nbsp;</td>
+      <td class="type">B</td>
+      <td class="description"><a href="#" title="Repeated Sequences" rel="#RepeatedSequencesDesc">Sequence was repeated</a></td>
+      <td class="minimum number">&nbsp;</td>
+      <td class="count number">&nbsp;</td>
+      <td class="bonus number">&nbsp;</td>
+      <td class="penalty number">&nbsp;</td>
+      <td class="rating number">&nbsp;</td>
+    </tr>
+    <tr id="MirroredSequences">
+      <td class="status">&nbsp;</td>
+      <td class="type">B</td>
+      <td class="description"><a href="#" title="Mirrored Sequences" rel="#MirroredSequencesDesc">Sequence was mirrored</a></td>
+      <td class="minimum number">&nbsp;</td>
+      <td class="count number">&nbsp;</td>
+      <td class="bonus number">&nbsp;</td>
+      <td class="penalty number">&nbsp;</td>
+      <td class="rating number">&nbsp;</td>
+    </tr>
+    <tr id="YearPatterns">
+      <td class="status">&nbsp;</td>
+      <td class="type">B</td>
+      <td class="description"><a href="#" title="Found Year Patterns" rel="#YearPatternsDesc">Year patterns found</a></td>
+      <td class="minimum number">&nbsp;</td>
+      <td class="count number">&nbsp;</td>
+      <td class="bonus number">&nbsp;</td>
+      <td class="penalty number">&nbsp;</td>
+      <td class="rating number">&nbsp;</td>
+    </tr>
+    </table>
+</div>
+
+<br>
+
+<div id="legend">
+  <table>
+    <tr>
+      <td class="status failed">&nbsp;</td>
+      <td class="description">&ensp;Failed</td>
+    </tr>
+    <tr>
+      <td class="status passed">&nbsp;</td>
+      <td class="description">&ensp;Passed</td></tr>
+    <tr>
+      <td class="status exceeded">&nbsp;</td>
+      <td class="description">&ensp;Exceeded</td>
+    </tr>
+    <tr>
+      <td class="status lastChanged">&nbsp;</td>
+      <td class="description">&ensp;Last Change</td>
+    </tr>
+    <tr>
+      <td class="status">T</td>
+      <td class="description">&ensp;Triple state criteria: Failed, Passed, Exceeded</td>
+    </tr>
+    <tr>
+      <td class="status">B</td>
+      <td class="description">&ensp;Binary state criteria: Failed, Passed</td>
+    </tr>
+    <tr>
+      <td class="status">*</td>
+      <td class="description">&ensp;Basic Requirement</td>
+    </tr>
+    <tr>
+      <td class="status">&nbsp;</td>
+      <td class="description">&ensp;Pre R. Score - Pre Redundancy Score</td>
+    </tr>
+    <tr>
+      <td class="status">&nbsp;</td>
+      <td class="description">&ensp;Orig. Score - Original Score</td>
+    </tr>
+    <tr>
+      <td class="status">&nbsp;</td>
+      <td class="description">&ensp;Cnt - Count</td>
+    </tr>
+    <tr>
+      <td class="status">&nbsp;</td>
+      <td class="description">&ensp;Bns - Bonus</td>
+    </tr>
+    <tr>
+      <td class="status">&nbsp;</td>
+      <td class="description">&ensp;Pnl - Penalty</td>
+    </tr>
+    <tr>
+      <td class="status">&nbsp;</td>
+      <td class="description">&ensp;Rtn - Rating</td>
+    </tr>
+  </table>
+</div>
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, user-scalable=no'>
+  <title>Viewport</title>
+  <link rel='stylesheet' type='text/css' media='screen' href='/styles/commons.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/viewport.css'>
+  <script type='text/javascript' src='/scripts/commons.js'></script>
+  <script type='text/javascript' src='../scripts/viewport.js'></script>
+</head>
+<body onLoad='fnShowSizes()'>
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='/'><span class='clNavHome'></span></a>
+    <a href='../../'><span class='clNavIndex'><span></a>
+    <a href='../'><span class='clNavUp'><span></a>
+    <span class='clNavRewind' onclick='fncReloadPage()'></span>
+  </div>
+</div>
+<div id='idContent'>
+
+<table class='clNoBorder'>
+
+<tr><td>document.documentElement.clientWidth</td><td><span id='idClientWidth'></span></td></tr>
+<tr><td>document.documentElement.clientHeight</td><td><span id='idClientHeight'></span></td></tr>
+
+<tr><td colspan='2'>&nbsp;</td></tr>
+
+<tr><td>document.documentElement.offsetWidth</td><td><span id='idOffsetWidth'></span></td></tr>
+<tr><td>document.documentElement.offsetHeight</td><td><span id='idOffsetHeight'></span></td></tr>
+
+<tr><td colspan='2'>&nbsp;</td></tr>
+
+<tr><td>window.outerWidth</td><td><span id='idOuterWidth'></span></td></tr>
+<tr><td>window.outerHeight</td><td><span id='idOuterHeight'></span></td></tr>
+
+<tr><td colspan='2'>&nbsp;</td></tr>
+
+<tr><td>window.innerWidth</td><td><span id='idInnerWidth'></span></td></tr>
+<tr><td>window.innerHeight</td><td><span id='idInnerHeight'></span></td></tr>
+
+</table>
+
+<br>
+</div>
+</div>
+</body>
+</html>
+
