@@ -1,0 +1,16 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+der Bauarbeiter, des Bauarbeiters, die Bauarbeiter
+die Baustelle, der Baustelle, die Baustellen
+der Bauer, des Bauern, die Bauern
+der Baumarkt, des Baumarktes, die Baumärkte
+der Becher, des Bechers, die Becher
+die Bedienung, der Bedienung, die Bedienungen
+die Beerdigung, der Beerdigung, die Beerdigungen
+die Begründung, der Begründung, die Begründungen
+der Beleg, des Beleges, die Belege
+die Beratung, der Beratung, die Beratungen
+</prosody>
+</voice>
+</speak>

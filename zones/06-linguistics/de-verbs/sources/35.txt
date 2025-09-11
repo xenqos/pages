@@ -1,0 +1,16 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+verlegen, verlegte, verlegt
+widerstehen, widerstand, widerstanden
+überarbeiten, überarbeitete, überarbeitet
+aufklären, klärte auf, aufgeklärt
+ausüben, übte aus, ausgeübt
+beanspruchen, beanspruchte, beansprucht
+begrenzen, begrenzte, begrenzt
+beheben, behob, behoben
+betonen, betonte, betont
+bezeichnen, bezeichnete, bezeichnet
+</prosody>
+</voice>
+</speak>

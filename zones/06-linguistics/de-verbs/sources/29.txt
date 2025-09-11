@@ -1,0 +1,16 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+zulassen, ließ zu, zugelassen
+zurücktreten, trat zurück, zurückgetreten
+überlassen, überließ, überlassen
+überwinden, überwand, überwunden
+aufrechterhalten, erhielt aufrecht, aufrechterhalten
+speichern, speicherte, gespeichert
+verarbeiten, verarbeitete, verarbeitet
+verursachen, verursachte, verursacht
+wahrnehmen, nahm wahr, wahrgenommen
+zurückkehren, kehrte zurück, zurückgekehrt
+</prosody>
+</voice>
+</speak>
