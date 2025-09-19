@@ -1,0 +1,51 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
+l'ordinateur
+le portable
+le document
+l'écran
+le clavier
+la souris
+le curseur
+la casque
+les enceintes
+la caméra Web
+
+l'imprimante
+le scanneur
+le télécopieur
+la photocopieuse
+la machine à écrire
+
+le logiciel
+le dossier
+le placard
+
+la carte mémoire
+la clé USB
+le disque dur externe
+le cédérom
+la disquette
+le câble
+
+le fichier
+le dossier
+le bureau
+les îcones
+le raccourci
+la fonte
+
+la pièce jointe
+le mot de passe
+
+la barre de tâche
+la barre d’outils
+le pavé numérique
+des erreurs
+fautes de frappe
+le correcteur d’orthographie
+le logiciel
+</prosody>
+</voice>
+</speak>

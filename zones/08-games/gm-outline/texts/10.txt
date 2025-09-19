@@ -13,10 +13,10 @@ Entering the pot by calling the minimum bet (1bb).
 !]
 
 ## Check - X
-
 [!
 Pass Action
-Not used in Preflop
+Preflop only by Big Blind.
+Post if Hero is first to act, or other players before checked
 Does not forfeit right to the pot
 !]
 
@@ -36,6 +36,7 @@ Place the wager into the pot
 [!
 Increase current wager
 At least double size
+Aka 2-bet (BB = 1-bet)
 !]
 
 ## Re-raise
@@ -43,10 +44,74 @@ At least double size
 Raise current raise
 !]
 
+## Raise First In - RFI
+[!
+Player is first in, enters the pot by raising
+Aka open raising
+!]
+
 ## All in, Shove
 [!
 Bet all remaining chips
 !]
+
+---
+
+## Voluntary Put Money in the Pot - VPIP
+When a player enters the pot by either calling or raising. Posting the blinds does not count as VPIP because the blinds are forced (not voluntary) bets.
+
+## Two-bet (2-bet or 2b)
+The blinds are considered as the “First Bet”, then the first person to raise the pot is making a “Second Bet” or “Two Bet”; RFI is a special case of 2bet when there are no limpers.
+
+## Three Bet (3-bet or 3b)
+Making a re-raise, which is to increase the bet after someone else raised.
+
+## Four-bet (4-bet or 4b), 5-bet and any subsequent number of bets
+Refers to the number of bets that have been made during the current betting round.
+
+## Steal
+Raise First In from BN, CO or SB.
+
+## Resteal
+3-betting after someone else steals.
+
+## Isolate
+Raising after someone has entered the pot with the intention of playing heads-up post-flop vs that player.
+
+## Minraise
+When a player raises the minimum allowed, which is two times the last bet amount.
+
+## Minbet
+Making the minimum bet allowed. Post-flop, this is one big blind.
+
+## Overbet
+Making a bet that is larger than the size of the pot.
+
+## Open Shove or Open Jam
+Going all-in when no one else has entered the pot before you.
+
+## 3-bet-Jam, 3-bet-Shove, Reshove, or Rejam
+Moving all-in after someone else has already raised.
+
+## Cold 4-bet
+4-betting when the player making the 4-bet was not the initial raiser. For example: UTG opens to 2bb, BN 3-bets to 5bb and the BB cold 4-bets to 12.5bb.
+
+## Cold Calling - CC
+Calling a single raise when in position, or calling a 3-bet or 4-bet when you have not previously voluntarily put money in the pot. For example, MP opens to 2bb, CO 3-bets to 6bb, BN folds and SB cold calls.
+
+## Squeeze - SQZ
+3-betting after someone raised and someone else called. For example, UTG1 opens to 2bb, CO cold calls, BN squeezes to 9bb.
+
+## Continuation Bet - C-bet
+Post-flop bet made by the player who was the last aggressor in the previous betting round.
+
+## Donk Bet or Lead Out - DK
+When the player who is OOP bets into the aggressor on the previous betting round, denying the option to C-bet.
+
+## Slow Play or Trap
+To play a premium holding in a passive manner, hoping to induce a value-bet from an inferior hand or a bluff.
+
+---
 
 ## Raise Sequences
 [|
@@ -56,7 +121,9 @@ Bet all remaining chips
 |5bet|The fifth bet |fourth raise in a sequence|
 |]
 
-## Types
+---
+
+## Types of Actions
 [|
 ^Aggressive^Passive^
 |Bet  |Call   |

@@ -74,11 +74,51 @@ add them one by one
 249+533=(200+500)+(40+30)+(9+3)=782
 ?]
 
-
 <!--
 $
 \begin{array}{l}
 \Large {Outs \over {47 \times 100}} \\
 \end{array}
 $
+-->
+
+
+<!--
+$
+\large S = P \times r \times n
+$
+
+$
+\begin{align*}
+S   & \quad \text{simple interest}   \\
+P   & \quad \text{principal}         \\
+r   & \quad \text{rate per period}   \\
+n   & \quad \text{number of periods} \\
+\end{align*}
+$
+
+$A$ & $\alpha$ & Alpha & \textipa{/"\ae lf\textschwa/} \\
+$B$ & $\beta$ & Beta & \textipa{/"beIt\textschwa/} \\
+$\Gamma$ & $\gamma$ & Gamma & \textipa{/"g\ae m\textschwa/} \\
+$\Delta$ & $\delta$ & Delta & \textipa{/"dElt\textschwa/} \\
+$E$ & $\epsilon \ \varepsilon$ & Epsilon & \textipa{/"Eps\textbari l\textturnscripta n/} \\
+$Z$ & $\zeta$ & Zeta & \textipa{/"zeIt\textschwa/} \\
+$H$ & $\eta$ & Eta & \textipa{/"eIt\textschwa/} \\
+$\Theta$ & $\theta \ \vartheta$ & Theta & \textipa{/"TeIt\textschwa/} \\
+$I$ & $\iota$ & Iota & \textipa{/aI"o\textupsilon t\textschwa/} \\
+$K$ & $\kappa$ & Kappa & \textipa{/"k\ae p\textschwa/} \\
+$\Lambda$ & $\lambda$ & Lambda & \textipa{/"l\ae md\textschwa/} \\
+$M$ & $\mu$ & Mu & \textipa{/"mu:/} \\
+$N$ & $\nu$ & Nu & \textipa{/"nu:/} \\
+$\Xi$ & $\xi$ & Xi & \textipa{/"zaI/} \\
+$O$ & $o$ & Omicron & \textipa{/"\textturnscripta m\textbari kr\textturnscripta n/} \\
+$\Pi$ & $\pi \ \varpi$ & Pi & \textipa{/"paI/} \\
+$P$ & $\rho \ \varrho$ & Rho & \textipa{/"ro\textupsilon /} \\
+$\Sigma$ & $\sigma \ \varsigma$ & Sigma & \textipa{/"sIgm\textschwa/} \\
+$T$ & $\tau$ & Tau & \textipa{/"ta\textupsilon /} \\
+$\Upsilon$ & $\upsilon$ & Upsilon & \textipa{/"\textupsilon ps\textbari l\textturnscripta n/} \\
+$\Phi$ & $\phi \ \varphi$ & Phi & \textipa{/"faI/} \\
+$X$ & $\chi$ & Chi & \textipa{/"kaI/} \\
+$\Psi$ & $\psi$ & Psi & \textipa{/"saI/} \\
+$\Omega$ & $\omega$ & Omega & \textipa{/o\textupsilon "meIg\textschwa/} \\
 -->

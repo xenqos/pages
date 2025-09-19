@@ -1,0 +1,83 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-10%" pitch="0%">
+
+entendre
+
+.
+
+j'entends
+tu entends
+il entend
+nous entendons
+vous entendez
+ilzentendent
+
+.
+
+j'entendais
+tu entendais
+il entendait
+nous entendions
+vous entendiez
+ilzentendaient
+
+.
+
+j'entendis
+tu entendis
+il entendit
+nous entendîmes
+vous entendîtes
+ilzentendirent
+
+.
+
+j'entendrai
+tu entendras
+il entendra
+nous entendrons
+vous entendrez
+ilzentendront
+
+.
+
+j'entendrais
+tu entendrais
+il entendrait
+nous entendrions
+vous entendriez
+ilzentendraient
+
+.
+
+que j'entende
+que tu entendes
+qu'il entende
+que nous entendions
+que vous entendiez
+qu'ilzentendent
+
+.
+
+que j'entendisse
+que tu entendisses
+qu'il entendît
+que nous entendissions
+que vous entendissiez
+qu'ilzentendissent
+
+.
+
+entends
+entendons
+entendez
+
+.
+
+entendant
+
+entendu
+</prosody>
+</voice>
+</speak>

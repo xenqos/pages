@@ -1,0 +1,83 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-10%" pitch="0%">
+
+appeler
+
+.
+
+j'appelle
+tu appelles
+il appelle
+nous appelons
+vous appelez
+ilzappellent
+
+.
+
+j'appelais
+tu appelais
+il appelait
+nous appelions
+vous appeliez
+ilzappelaient
+
+.
+
+j'appelai
+tu appelas
+il appela
+nous appelâmes
+vous appelâtes
+ilzappelèrent
+
+.
+
+j'appellerai
+tu appelleras
+il appellera
+nous appellerons
+vous appellerez
+ilzappelleront
+
+.
+
+j'appellerais
+tu appellerais
+il appellerait
+nous appellerions
+vous appelleriez
+ilzappelleraient
+
+.
+
+que j'appelle
+que tu appelles
+qu'il appelle
+que nous appelions
+que vous appeliez
+qu'ilzappellent
+
+.
+
+que j'appelasse
+que tu appelasses
+qu'il appelât
+que nous appelassions
+que vous appelassiez
+qu'ilzappelassent
+
+.
+
+appelle
+appelons
+appelez
+
+.
+
+appelant
+
+appelé
+</prosody>
+</voice>
+</speak>

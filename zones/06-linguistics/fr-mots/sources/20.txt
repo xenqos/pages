@@ -1,0 +1,31 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
+la maison
+l'appartement
+la chambre
+le couloir
+la cuisine
+le débarras
+l'escalier
+l'étage
+le living
+le salon
+la penderie
+la pièce
+le rez-de-chaussée
+la salle à manger
+la salle de bains
+la terrasse
+le grenier
+la cheminée
+le toit
+le garage
+l'allée
+le trottoir
+le porche
+le sous-sol
+la cave
+</prosody>
+</voice>
+</speak>

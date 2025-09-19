@@ -1,0 +1,21 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
+la Loire
+la Garonne
+le Rhône
+la Seine
+les Alpes
+le Mont-Blanc
+le Jura
+les Pyrénées
+le Massif Central
+les Vosges
+la mer Méditerranée
+l'océan Atlantique
+la Mer du Nord
+la Manche
+le Golfe de Gascogne
+</prosody>
+</voice>
+</speak>
