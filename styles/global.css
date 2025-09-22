@@ -951,13 +951,13 @@ q.s::after, q.h::after, q.c::after, q.d::after, q.g::after, q.b::after, q.x::aft
   vertical-align:       top;
 }
 
-q.s::after { content: url("../images/poker/spades.svg"); }
-q.h::after { content: url("../images/poker/hearts.svg"); }
-q.c::after { content: url("../images/poker/clubs.svg"); }
-q.d::after { content: url("../images/poker/diamonds.svg"); }
-q.g::after { content: url("../images/poker/clubs-g.svg"); }
-q.b::after { content: url("../images/poker/diamonds-b.svg"); }
-q.x::after { content: url("../images/poker/nosuit.svg"); }
+q.s::after { content: url("../images/suits/spades.svg"); }
+q.h::after { content: url("../images/suits/hearts.svg"); }
+q.c::after { content: url("../images/suits/clubs.svg"); }
+q.d::after { content: url("../images/suits/diamonds.svg"); }
+q.g::after { content: url("../images/suits/clubs-g.svg"); }
+q.b::after { content: url("../images/suits/diamonds-b.svg"); }
+q.x::after { content: url("../images/suits/nosuit.svg"); }
 
 /*-----------------------------------------------------------------------------------------------*/
 
