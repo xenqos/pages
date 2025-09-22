@@ -3,5 +3,14 @@ https://www.fromtexttospeech.com/
 https://new.text-to-speech.online/
 https://speechsynthesis.online/
 
-en-CA-ClaraNeural rate="-30%" volume="0.0dB"
-bg-BG-KalinaNeural rate="100%" volume="0.0dB"
+https://cloud.google.com/text-to-speech/docs/ssml
+https://www.w3.org/TR/speech-synthesis11/#S3.2.4
+
+rate: "x-slow", "slow", "medium", "fast", "x-fast", "default"
+pitch: "x-low", "low", "medium", "high", "x-high", "default"
+volume: "silent", "x-soft", "soft", "medium", "loud", "x-loud", "default"
+
+en-CA-ClaraNeural  rate="-30%" volume="medium"
+fr-CH-ArianeNeural rate="-30%" pitch="low" volume="medium"
+fr-FR-DeniseNeural rate="-30%" volume="medium"
+bg-BG-KalinaNeural rate="100%" volume="medium"
