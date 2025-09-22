@@ -1,42 +1,58 @@
-## Numéral
+## Verbe ##
 
-# 8
+###### Verbe
 
-## Произносится -t
+# Noms des Temps
 
-/t/ на конце фразы
-&emsp;%[m|Il y en a huit.]
+### Indicatif
 
-/t/ перед словом на гласную или h muet
-&emsp;%[m|huit euros]
+[|
+^Simples                     ^Composés              ^
+|%[m|Présent de l'indicatif  ]|%[m|Passé composé   ]|
+|%[m|Imparfait de l'indicatif]|%[m|Plus-que-parfait]|
+|%[m|Passé simple            ]|%[m|Passé antérieur ]|
+|%[m|Futur simple            ]|%[m|Futur antérieur ]|
+|]
 
-/t/ при обозначении цифры
-&emsp;%[m|compter jusqu’à huit]
+### Conditionnel
 
-## Не произносится -t
+[|
+^Simples                     ^Composés                  ^
+|%[m|Présent du conditionnel]|%[m|Passé du conditionnel]|
+|]
 
-перед словом на согласную или h aspiré
-&emsp;%[m|huit cents]
+### Subjonctif
 
-## Факультативно
+[|
+^Simples                     ^Composés                           ^
+|%[m|Présent du subjonctif  ]|%[m|Passé du subjonctif           ]|
+|%[m|Imparfait du subjonctif]|%[m|Plus-que-parfait du subjonctif]|
+|]
 
-/t/ перед месяцами на согласную
-&emsp;%[m|le huit juin]
+### Infinitif
 
-перед процентами:
-&emsp;%[m|Il a eu quatre-vingt-huit % à son dernier examen.]
+[|
+^Simples          ^Composés       ^
+|%[m|Infinitif présent]|%[m|Infinitif passé]|
+|]
 
-## Élision
+### Participe
 
-не происходит
-&emsp;%[m|Il ne reste <u>que</u> huit jours avant mes vacances.]
+[|
+^Simples               ^Composés            ^
+|%[m|Participe présent]|%[m|Participe passé]|
+|]
 
-## Liaison
+### Gérondif
 
-происходит только в составе сложного числительного
-&emsp;%[m|dix-huit ans]
+[|
+^Simples              ^Composés           ^
+|%[m|Gérondif présent]|%[m|Gérondif passé]|
+|]
 
-не происходит
-&emsp;%[m|quatre-vingt-huit]
-&emsp;%[m|cent huit]
-&emsp;%[m|la huitième station]
+### Imperatif
+
+[|
+^Simples          ^Composés       ^
+|%[m|Imperatif présent]|%[m|Imperatif passé]|
+|]

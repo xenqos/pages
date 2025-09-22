@@ -1,26 +1,99 @@
-# Lettre muet - historical
+# Indéfini
 
-|%[m|sept]       ||семь
-|%[m|rompt]      ||ломает
-|%[m|le aspect]  ||внешность
-|%[m|le instinct]||инстинкт
-|%[m|le pied]    ||нога
-|%[m|le nid]     ||гнездо
-|%[m|le rang]    ||ряд
-|%[m|le sang]    ||кровь
-|%[m|le œil]     ||глаз
-|%[m|le fauteuil]||кресло
-|%[m|le ail]     || чеснок
-|%[m|le drap]    ||сукно
-|%[m|le fils]    ||сын
-|%[m|le pouls]   ||пульс
-|%[m|saoul]      ||пьяный
-|%[m|le cul]     ||зад
-|%[m|Renault]    ||Рено
-|%[m|le sirop]   ||сироп;
-|%[m|trop]       ||слишком
-|%[m|le camp]    ||лагерь
-|%[m|le chocolat]||шоколад
-|%[m|le crédit]  ||кредит
-|%[m|le riz]     ||рис
-|%[m|le nez]     ||нос
+## Zéro objets
+
+[|
+|%[m|personne     ]|никто  |
+|%[m|rien         ]|ничто  |
+|%[m|aucun, aucune]|ни один|
+|%[m|nul, nulle   ]|никто  |
+|%[m|pas un       ]|ни один|
+|]
+
+[!
+%[m|personne] - кто-нибудь в вопросе
+%[m|d'aucuns] - некоторые, кое-кто
+%[m|nul] - эквивалент personne (книжное)
+!]
+
+## Objet singulier
+[|
+|%[m|un           ]|один             |
+|%[m|quelqu'un    ]|кто-нибудь, некто|
+|%[m|quelque chose]|что-нибудь, нечто|
+|]
+
+[!
+%[m|un] - выделяет лицо/предмет
+%[m|quelqu'un] - указывает на неизвестное лицо
+%[m|quelque chose] - указывает на неизвестный предмет
+!]
+
+## Objets multiples
+
+[|
+|%[m|plusieurs   ]|некоторые, несколько |
+|%[m|quelques-uns]|некоторые, немногие  |
+|%[m|certains    ]|определённые, кое-кто|
+|]
+
+[!
+%[m|plusieurs] - неопределенное количество
+%[m|quelques-uns] - небольшое количество лиц
+%[m|maints, maintes] - многие (устаревшее)
+!]
+
+## Totalité
+[|
+|%[m|tout  ]|всё|
+|%[m|tous  ]|все|
+|%[m|toutes]|все|
+|]
+
+[!
+%[m|tous] - [tus]
+%[m|tout le monde] - все
+!]
+
+## Distributivité
+[|
+|%[m|chacun ]|каждый|
+|%[m|chacunе]|каждая|
+|]
+
+[!
+%[m|chacun, chacunе] - выделяет каждый предмет
+!]
+
+## Autres pronoms indéfinis
+[|
+|%[m|quiconque]|тот, кто                |
+|%[m|même     ]|тот же, тот же самый    |
+|%[m|autre    ]|другой, иной            |
+|%[m|autrui   ]|другой, чужой           |
+|%[m|tel      ]|такой, таковой, подобный|
+|]
+
+[!
+%[m|quiconque] - относительноe, вводящее придаточное предложение
+%[m|d'autres] - наличие группы трёх лиц
+!]
+
+|quelqu'un||кто-то, кто-нибудь
+|quelque chose||что-то, что-нибудь
+|quelques-uns||кто-то, кто-нибудь (м.р. мн.ч.)
+|quelques-unes||кто-то, кто-нибудь (ж.р. мн.ч.)
+|quelque part||где-то
+|plusieurs||несколько
+|certains...d'autres||некие…другие
+|un autre||другой
+|une autre||другая
+|chacun||каждый
+|chacune||каждая
+|aucun||никакой
+|aucune||никакая
+|n'importe quoi||всё равно что
+|n'importe qui||всё равно кто
+|n'importe où||всё равно где
+|n'importe quand||всё равно когда
+|nulle part||нигде

@@ -1,46 +1,28 @@
-# Possessif
+## Numéral
 
-## Un propriétaire (один владелец)
+# 6, 10
 
-### Un article
-[|
-^m.       ^f.         ^
-|%[m|le mien]|%[m|la mienne]|
-|%[m|le tien]|%[m|la tienne]|
-|%[m|le sien]|%[m|la sienne]|
-|]
+## Произносится -x
 
-### Plusieurs articles
-[|
-^m.       ^f.         ^
-|%[m|les miens]|%[m|les miennes]|
-|%[m|les tiens]|%[m|les tiennes]|
-|%[m|les siens]|%[m|les siennes]|
-|]
+/%[l|s]/ на конце фразы
+&emsp;%[m|Il y en a six.]
 
-## Plusieurs propriétaires (несколько владельцев)
+/%[l|z]/ перед словом на гласную или h muet
+&emsp;%[m|dix euros]
 
-### Un article
-[|
-^m.       ^f.         ^
-|%[m|le nôtre]|%[m|la nôtre]|
-|%[m|le vôtre]|%[m|la vôtre]|
-|%[m|le leur ]|%[m|la leur ]|
-|]
+/%[l|s]/ при обозначении цифры
+&emsp;%[m|compter jusqu’à dix]
 
-### Plusieurs articles
-[|
-^m.       ^f.         ^
-|%[m|les nôtres]|%[m|les nôtres]|
-|%[m|les vôtres]|%[m|les vôtres]|
-|%[m|les leurs ]|%[m|les leurs ]|
-|]
+## Не произносится -x
 
-[!
-согласуются в роде и числе с заменяемым существительным
-согласуются в роде и числе с указываемым владельцем
-!]
+перед словом на согласную или h aspiré
+&emsp;six cents
+&emsp;dix personnes
 
-[!
-%[m|notre] [nɔtrə] - %[m|nôtre] [notrə]
-!]
+## Факультативно
+
+/%[l|s]/ перед месяцами на согласную
+&emsp;%[m|le 10 juin]
+
+/%[l|z]/, /%[l|s]/ перед месяцами на гласную
+&emsp;%[m|le 26 avril]

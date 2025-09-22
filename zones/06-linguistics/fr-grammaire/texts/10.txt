@@ -1,49 +1,71 @@
-## Prononciation ##
+## Nom ##
 
-# Voyelle oral
-
-[|
-|%[l|i]|%[m|vie], %[m|midi], %[m|lit], %[m|riz]|
-|%[l|y]|%[m|rue], %[m|jus], %[m|tissu], %[m|usine]|
-|%[l|e]|%[m|blé], %[m|nez], %[m|cahier], %[m|pied]|
-|%[l|ø]|%[m|jeu], %[m|yeux], %[m|queue], %[m|bleu]|
-|%[l|ɛ]|%[m|lait], %[m|aile], %[m|balai], %[m|reine]|
-|%[l|œ]|%[m|sœur], %[m|œuf], %[m|fleur], %[m|beurre]|
-|%[l|a]|%[m|chat], %[m|ami], %[m|papa], %[m|salade]|
-|%[l|ɑ]|%[m|bas], %[m|âne], %[m|grâce], %[m|château]|
-|%[l|u]|%[m|loup], %[m|cou], %[m|caillou], %[m|outil]|
-|%[l|o]|%[m|eau], %[m|dos], %[m|escargot], %[m|hôtel]|
-|%[l|ɔ]|%[m|sol], %[m|pomme], %[m|cloche], %[m|horloge]|
-|%[l|ə]|%[m|fenêtre], %[m|genou], %[m|cheval], %[m|cerise]|
-|]
-
-## contraste
+# Article - Défini
 
 [|
-|%[m|a]|%[l|ə]|
-|%[m|i]|---|
-|%[m|e]|%[l|ɛ]|
-|%[m|o]|%[l|ɔ]|
-|%[m|u]|---|
+^  ^s.^p. ^
+|m.|%[m|le]|%[m|les]|
+|f.|%[m|la]|%[m|les]|
 |]
 
-[|
-|%[m|a]|%[m|rapporter]|%[l|ə]|reporter|
-|%[m|e]|%[m|des mains]|%[l|ə]|demain  |
-|%[m|e]|%[m|pré      ]|%[l|ɛ]|près    |
-|%[m|o]|%[m|paume    ]|%[l|ɔ]|pomme   |
-|]
+[!
+le, la = l' - перед гласной, h muet
+!]
 
-## rounded - unrounded
+[!
+%[m|à ] + %[m|le ] = %[m|au ]
+%[m|à ] + %[m|les] = %[m|aux]
+%[m|de] + %[m|le ] = %[m|du ]
+%[m|de] + %[m|les] = %[m|des]
+!]
 
-[|
-|%[l|i]|%[l|y]|
-|%[l|e]|%[l|ø]|
-|%[l|ɛ]|%[l|œ]|
-|]
 
-[|
-|%[l|u]|sous |%[l|y]|su   |
-|%[l|ə]|ce   |%[l|ø]|ceux |
-|%[l|ø]|jeûne|%[l|œ]|jeune|
-|]
+<!--
+    Если перед существительными стоит притяжательное прилагательное, артикль не употребляется:
+    mon livre, sa femme, ces cahiers
+    Перед именами собственными, обозначающими названия городов, артикль не употребляется:
+    Je vais à Paris.
+    Если существительное, употребленное в роли именной части сказуемого, обозначает профессию, должность или род деятельности, артикль перед ним обычно не ставится:
+    Danielle est pianiste.
+    Michel est architecte.
+    После количественных наречий combien, beaucoup, peu, assez, trop употребляется предлог de, при этом перед именем существительным артикль опускается:
+    Combien de livres avez-vous?
+    J'ai beaucoup de livres.
+    После оборота c'est перед именем существительным употребляется обычно неопределенный артикль:
+    Qu'est-ce que c'est? C'est une chaise.
+    Если имя существительное определено другим именем существительным, указывающим на принадлежность, перед ним ставится определенный артикль:
+    C'est la chaise de Marie.
+    Ce n'est pas la chaise de Marie.
+    Если имя существительное, обозначающее национальность или жителя города, является именной частью составного сказуемого, артикль перед ним опускается:
+    L'ami de Marie est Russe.
+    Claire est Parisienne.
+    Если при существительном, выполняющем функцию именной части сказуемого, имеется определение, существительное употребляется с неопределенным артиклем:
+    Sa soeur est actrice. Sa soeur est une bonne actrice.
+    Перед существительным, являющимся прямым дополнением глагола в отрицательной форме, неопределенный артикль единственного и множественного числа опускается, а вместо него употребляется предлог de.
+    J'ai un frère, mais je n'ai pas de soeur.
+    Il ne fait pas de fautes dans ses dictees.
+    Определенный артикль перед прямым дополнением глагола, стоящего в отрицательной форме, сохраняется:
+    Je n'aime pas les lives de cet écrivain.
+    После существительных, имеющих собирательное значение, а также после существительных, обозначающих количество, употребляется предлог de, а артикль обычно опускается:
+    un groupe de garçons; un kilo de pommes;
+    une semaine de vacances; une quinzaine de phrases.
+    Существительные matin и soir употребляются без артикля: после наречий hier, demain, существительных, обозначающих дни недели, а также после le lendemain:
+    hier soir — вчера вечером
+    le lendemain matin — на другой день утром
+    dimanche soir — в воскресенье вечером
+    При указании адреса перед существительными rue, avenue, boulevard, place артикль не употребляется:
+    J'habite avenue de la Paix. — Я живу на проспекте Мира.
+    J'ai pris le métro place Maïakovski. — Я сел в метро на площади Маяковского.
+    После существительных un cours, une lecon, un manuel, un devoir, un professeur, un examen существительное, обозначающее предмет изучения, дисциплину, употребляется обычно без артикля:
+    une leçon de musique	un devoir d'anglais
+    un manuel de géographie	un professeur de russe
+    Если перед существительным во множественном числе стоит прилагательное, то неопределенный артикль опускается, а вместо него употребляется предлог de:
+    une bell fleur — de belles fleurs
+    une grande fenêtre — de grandes fenêtres.
+    Все существительные, обозначающие названия месяцев, — мужского рода. Они употребляются без артикля.
+    janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre
+    Все существительные, обозначающие названия времен года — мужского рода:
+    l'hiver, le printemps, l'été, l'automne Обратите внимание на отсутствие артикля при употреблении предлогов перед названиями времен года:
+    en hiver, en été, en automne, en printemps.
+
+-->

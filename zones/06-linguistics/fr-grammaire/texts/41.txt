@@ -1,43 +1,62 @@
-## Adjectif
+## Adverbe ##
 
-# Possessif
+## Adverbe
 
-### Un Propriétaire (один владелец)
+# Dégres de Comparison
 
 [|
-^s.m.      ^s.f.     ^p.  ^
-|%[m|mon]|%[m|ma]|%[m|mes]|
-|%[m|ton]|%[m|ta]|%[m|tes]|
-|%[m|son]|%[m|sa]|%[m|ses]|
+|%[m|le positif   ]|положительная|
+|%[m|le comparatif]|сравнительная|
+|%[m|le superlatif]|превосходная |
 |]
 
-### Plusieurs Propriétaires (несколько владельцев)
+### Comparatif
 
 [|
-^s.           ^p.        ^
-|%[m|le notre]|%[m|nos  ]|
-|%[m|le votre]|%[m|vos  ]|
-|%[m|le leur ]|%[m|leur ]|
+|%[m|plus  … que …]|более |
+|%[m|moins … que …]|менее |
+|%[m|aussi … que …]|так же|
+|]
+
+[|
+|aussi (adj or adv) que||такой же как
+|moins (adj or adv) que||менее чем
+|plus (adj or adv) que||более чем
+|plus de (noun) que||больше чем
+|autant de (noun) que||столько же как и
+|moins de (noun) que||менее чем
+|]
+
+### Superlatif
+
+[|
+|%[m|le plus ]|более всего|
+|%[m|le moins]|менее всего|
+|]
+
+[!
+%[m|le] - всегда
+superlatif может усиливаться %[m|bien], %[m|beaucoup] + %[m|le plus], %[m|le moins]
+!]
+
+### Irrégulier
+
+[|
+|%[m|beaucoup]|%[m|plus    ]|%[m|le plus    ]|много |
+|%[m|peu     ]|%[m|moins   ]|%[m|le moins   ]|мало  |
+|%[m|bien    ]|%[m|mieux   ]|%[m|le mieux   ]|хорошо|
+|%[m|mal     ]|%[m|plus mal]|%[m|le plus mal]|плохо |
+|%[m|mal     ]|%[m|pis     ]|%[m|le pis     ]|плохо |
 |]
 
 [-
-согласуются в роде и числе с существительным
-согласуются в роде и числе с указываемым владельцем
+%[m|pis] - устаревшая форма, используется в устойчивых выражениях (%[m|tant pis])
 -]
 
-[!
-%[m|notre] [nɔtrə] - %[m|nôtre] [notrə]
-!]
+### Bien Comparatif
 
-[!
-мужской род употребляется перед женским родом на гласную, h muet
-%[m|mon amie]
-%[m|ton habitude]
-%[m|son allusion]
-!]
-
-[-
-ставятся перед существительным
-заменяют артикль
-повторяется перед каждым существительным
--]
+[|
+|de superiorite|%[m|plus mieux que]|
+|d'egalite|%[m|aussi bien que]|
+|d'inferiorite|%[m|moins bien que]|
+|]

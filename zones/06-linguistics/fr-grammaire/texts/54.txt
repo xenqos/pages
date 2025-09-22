@@ -1,23 +1,77 @@
-## Numéral
+###### Verbe
 
-# 100
+# Temps Immédiates
 
-## Произносится
+### Futur Immédiat
 
-/%[l|t]/ перед словом на гласную или h muet
-&emsp;%[m|cent ans]
+[!
+Будущее время близкое к моменту речи.
+Переводится: собираюсь, намереваюсь, I am going to
+!]
 
-/%[l|z]/ в 200, 300, 400, 500, 600, 700, 800, 900
-&emsp;%[m|deux cents ans  ]
-&emsp;%[m|trois cents ans ]
-&emsp;%[m|quatre cents ans]
-&emsp;%[m|cinq cents ans  ]
-&emsp;%[m|six cents ans   ]
-&emsp;%[m|sept cents ans  ]
-&emsp;%[m|huit cents ans  ]
-&emsp;%[m|neuf cents ans  ]
+##### aller présent de l'indicatif + infinitif
 
-## Не произносится -t
+[|
+|%[m|je]  |%[e|vais]  |%[m|finir]|
+|%[m|tu]  |%[e|vas]   |%[m|finir]|
+|%[m|il]  |%[e|va]    |%[m|finir]|
+|%[m|nous]|%[e|allons]|%[m|finir]|
+|%[m|vous]|%[e|allez] |%[m|finir]|
+|%[m|ils] |%[e|vont]  |%[m|finir]|
+|]
 
-/&nbsp;/ в 101
-&emsp;%[m|cent un]
+### Futur Immédiat Dans Le Passé
+
+[!
+Будущее время близкое к моменту речи в прошлом.
+Переводится: собирался, намеревался, I was going to
+!]
+
+##### aller imparfait + infinitif
+
+[|
+|%[m|je]  |%[e|allais]  |%[m|partir]|
+|%[m|tu]  |%[e|allais]  |%[m|partir]|
+|%[m|il]  |%[e|allais]  |%[m|partir]|
+|%[m|nous]|%[e|allions] |%[m|partir]|
+|%[m|vous]|%[e|alliez]  |%[m|partir]|
+|%[m|ils] |%[e|allaient]|%[m|partir]|
+|]
+
+
+### Passé Immédiat
+
+[!
+Действие произошедшее непосредственно перед моментом речи.
+Переводится: только что, just happened.
+!]
+
+##### venir présent de l'indicatif + de infinitif
+
+[|
+|%[m|je]  |%[e|viens]   |%[m|de finir]|
+|%[m|tu]  |%[e|viens]   |%[m|de finir]|
+|%[m|il]  |%[e|vient]   |%[m|de finir]|
+|%[m|nous]|%[e|venons]  |%[m|de finir]|
+|%[m|vous]|%[e|venez]   |%[m|de finir]|
+|%[m|ils] |%[e|viennent]|%[m|de finir]|
+|]
+
+### Passé Immédiat Dans Le Passé
+
+[!
+Действие произошедшее непосредственно перед моментом речи в прошлом.
+Переводится: только что, just happened.
+Придаточное вводится %[m|quand], %[m|lorsque].
+!]
+
+##### venir imparfait + de infinitif
+
+[|
+|%[m|je]  |%[e|venais]   |%[m|de finir]|
+|%[m|tu]  |%[e|venais]   |%[m|de finir]|
+|%[m|il]  |%[e|venait]   |%[m|de finir]|
+|%[m|nous]|%[e|venions]  |%[m|de finir]|
+|%[m|vous]|%[e|veniez]   |%[m|de finir]|
+|%[m|ils] |%[e|venaient]|%[m|de finir]|
+|]

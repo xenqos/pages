@@ -17,7 +17,7 @@
   
 </head>
 <body onload='fncGetDivState(); fncGetScrollPosition();'>
-
+<audio id='idTrack' src='../sounds/39.mp3' preload='auto'></audio>
 <div id='idPanel'>
 <div id='idTopbar'>
   <div id='idTopbarNavigation'>
@@ -26,104 +26,34 @@
     <a href='38.html'><span class='clNavLeft'></span></a>
     <a href='../index.html'><span class='clNavUp'></span></a>
     <a href='40.html'><span class='clNavRight'></span></a>
-
+<span class='clNavRewind' onclick='fncRewindTrack(&quot;idTrack&quot;)'></span><span class='clNavPlay' onclick='fncPlayTrack(&quot;idTrack&quot;)'></span>
   </div>
 </div>
 <div id='idContent'>
 
-<h2>Adjectif</h2>
+<h2>Numéral</h2>
 
-<h1>Place de L'Adjectif</h1>
+<h1>100</h1>
 
-<h3>После существительного</h3>
+<h2>Произносится</h2>
 
-Прилагательные:
-<ul>
-<li>относительные</li>
-<li>цвета</li>
-<li>формы</li>
-<li>вкуса</li>
-<li>отглагольные</li>
-<li>причастия</li>
-</ul>
-
-<span class='m'>une porte métallique</span><br>
-<span class='m'>des fleurs rouges</span><br>
-<span class='m'>un visage rond</span><br>
-<span class='m'>des résultats découragantes</span><br>
-<span class='m'>des hommes armées</span><br>
+/<span class='l'>t</span>/ перед словом на гласную или h muet<br>
+&emsp;<span class='m'>cent ans</span><br>
 <br>
-Прилагательные + наречие<br>
-<span class='m'>un livre extêmement gros</span><br>
-<br>
-Прилагательные + дополнение с предлогом<br>
-<span class='m'>un spectacle amusant à voir</span><br>
-<br>
-Прилагательные односложные перед односложным существительным<br>
-<span class='m'>le corps nu</span><br>
-<br>
-Прилагательные многосложныe перед односложным существительным<br>
-<span class='m'>un homme remarquable</span><br>
+/<span class='l'>z</span>/ в 200, 300, 400, 500, 600, 700, 800, 900<br>
+&emsp;<span class='m'>deux cents ans  </span><br>
+&emsp;<span class='m'>trois cents ans </span><br>
+&emsp;<span class='m'>quatre cents ans</span><br>
+&emsp;<span class='m'>cinq cents ans  </span><br>
+&emsp;<span class='m'>six cents ans   </span><br>
+&emsp;<span class='m'>sept cents ans  </span><br>
+&emsp;<span class='m'>huit cents ans  </span><br>
+&emsp;<span class='m'>neuf cents ans  </span><br>
 
-<h3>Перед существительным</h3>
-<span class='l'>petit</span>, <span class='l'>grand</span>, <span class='l'>gross</span>, <span class='l'>jeune</span>, <span class='l'>vieux</span><br>
-<span class='l'>bon</span>, <span class='l'>mauvais</span>, <span class='l'>beau</span>, <span class='l'>joli</span><br>
-<span class='l'>haut</span>, <span class='l'>long</span>, <span class='l'>large</span><br>
-<span class='l'>vrai</span>, <span class='l'>nouveau</span><br>
-<br>
-Прилагательные односложные перед многосложным существительным<br>
-<span class='m'>un bref discours</span><br>
+<h2>Не произносится -t</h2>
 
-<h3>Значение в зависимости от места</h3>
-
-<div class='clOverflow'>
-<table>
-<tr>
-<th>       </th><th>перед       </th><th>после           </th></tr>
-<tr><td><span class='m'>ancien </span></td><td>бывший      </td><td>старший         </td></tr>
-<tr><td><span class='m'>bon    </span></td><td>славный     </td><td>добрый          </td></tr>
-<tr><td><span class='m'>brave  </span></td><td>честный     </td><td>смелый          </td></tr>
-<tr><td><span class='m'>certain</span></td><td>некий       </td><td>достоверный     </td></tr>
-<tr><td><span class='m'>curieux</span></td><td>интересный  </td><td>любопытный      </td></tr>
-<tr><td><span class='m'>dernièr</span></td><td>последний   </td><td>прошлый         </td></tr>
-<tr><td><span class='m'>fier   </span></td><td>отъявленный </td><td>гордый          </td></tr>
-<tr><td><span class='m'>galant </span></td><td>порядочный  </td><td>галантный       </td></tr>
-<tr><td><span class='m'>gentil </span></td><td>послушный   </td><td>любезный        </td></tr>
-<tr><td><span class='m'>grand  </span></td><td>великий     </td><td>высокий         </td></tr>
-<tr><td><span class='m'>gros   </span></td><td>толстая     </td><td>беременная      </td></tr>
-<tr><td><span class='m'>jeune  </span></td><td>молодой     </td><td>неопытный       </td></tr>
-<tr><td><span class='m'>maigre </span></td><td>скверный    </td><td>постный         </td></tr>
-<tr><td><span class='m'>pauvre </span></td><td>бедный      </td><td>малообеспеченный</td></tr>
-<tr><td><span class='m'>petit  </span></td><td>мелкий      </td><td>маленький       </td></tr>
-<tr><td><span class='m'>propre </span></td><td>собственный </td><td>чистый          </td></tr>
-<tr><td><span class='m'>sacré  </span></td><td>чертов      </td><td>священный       </td></tr>
-<tr><td><span class='m'>triste </span></td><td>жалкий      </td><td>грустный        </td></tr>
-<tr><td><span class='m'>unique </span></td><td>единственный</td><td>уникальный      </td></tr>
-<tr><td><span class='m'>vilain </span></td><td>гнусный     </td><td>некрасивый      </td></tr>
-</table>
-</div>
-
-
-<h2>Adjectif antérieur</h2>
-
-<h3>m.s. m.p. f.s. f.p.</h3>
-
-<p class='m'>beau (bel)           beaux        belle       belles</p><p class='g0500'></p><p class='b1000'>красивый</p>
-<p class='m'>bon                  bons         bonne       bonnes</p><p class='g0500'></p><p class='b1000'>хороший</p>
-<p class='m'>cher                 chers        chère       chères</p><p class='g0500'></p><p class='b1000'>дорогой</p>
-<p class='m'>fou (fol)            foux         folle       folles</p><p class='g0500'></p><p class='b1000'>безумный</p>
-<p class='m'>gentil               gentils      gentille    gentilles</p><p class='g0500'></p><p class='b1000'>милый</p>
-<p class='m'>grand                grands       grande      grandes</p><p class='g0500'></p><p class='b1000'>большой</p>
-<p class='m'>gros                 gros         grosse      grosses</p><p class='g0500'></p><p class='b1000'>крупный</p>
-<p class='m'>jeune                jeunes       jeune       jeunes</p><p class='g0500'></p><p class='b1000'>молодой</p>
-<p class='m'>joli                 jolis        jolie       jolies</p><p class='g0500'></p><p class='b1000'>милый</p>
-<p class='m'>long                 longs        longue      longues</p><p class='g0500'></p><p class='b1000'>длинный</p>
-<p class='m'>mauvais              mauvais      mauvaise    mauvaises</p><p class='g0500'></p><p class='b1000'>плохой</p>
-<p class='m'>meilleur             meilleurs    meilleure   meilleures</p><p class='g0500'></p><p class='b1000'>лучший</p>
-<p class='m'>mou (mol)            moux         molle       molles</p><p class='g0500'></p><p class='b1000'>мягкий</p>
-<p class='m'>nouveau (nouvel)     nouveaux     nouvelle    nouvelles</p><p class='g0500'></p><p class='b1000'>новый</p>
-<p class='m'>petit                petits       petite      petites</p><p class='g0500'></p><p class='b1000'>маленький</p>
-<p class='m'>vieux (vieil)        vieux        vieille     vieilles  </p><p class='g0500'></p><p class='b1000'>старый</p>
+/&nbsp;/ в 101<br>
+&emsp;<span class='m'>cent un</span><br>
 
 
 </div>

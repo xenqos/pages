@@ -17,7 +17,7 @@
   
 </head>
 <body onload='fncGetDivState(); fncGetScrollPosition();'>
-<audio id='idTrack' src='../sounds/14.mp3' preload='auto'></audio>
+
 <div id='idPanel'>
 <div id='idTopbar'>
   <div id='idTopbarNavigation'>
@@ -26,27 +26,100 @@
     <a href='13.html'><span class='clNavLeft'></span></a>
     <a href='../index.html'><span class='clNavUp'></span></a>
     <a href='15.html'><span class='clNavRight'></span></a>
-<span class='clNavRewind' onclick='fncRewindTrack(&quot;idTrack&quot;)'></span><span class='clNavPlay' onclick='fncPlayTrack(&quot;idTrack&quot;)'></span>
+
   </div>
 </div>
 <div id='idContent'>
 
-<h1>Liaison - Formes</h1>
+<h1>Pluriel du Noms</h1>
 
+<h2>Règles</h2>
+
+<h3>добавить -s</h3>
 <div class='clOverflow'>
 <table>
 <tr>
-<td>/<span class='l'>n</span>/</td><td><span class='m'>un bon élève</span>                                  </td></tr>
-<tr><td>/<span class='l'>n</span>/</td><td><span class='m'>d’un certain âge, en plein air, le moyen-âge</span>  </td></tr>
-<tr><td>/<span class='l'>n</span>/</td><td><span class='m'>bien aimable, rien à declarer</span>                 </td></tr>
-<tr><td>/<span class='l'>p</span>/</td><td><span class='m'>beaucoup aimé, trop aimable</span>                   </td></tr>
-<tr><td>/<span class='l'>r</span>/</td><td><span class='m'>le dernier arrêt, un léger espoir</span>             </td></tr>
-<tr><td>/<span class='l'>t</span>/</td><td><span class='m'>quand il viendra, que prend-il?, qu’attend-on?</span></td></tr>
-<tr><td>/<span class='l'>t</span>/</td><td><span class='m'>un petit enfant, tout à fait</span>                  </td></tr>
-<tr><td>/<span class='l'>z</span>/</td><td><span class='m'>les innocents, deux enfants</span>                   </td></tr>
-<tr><td>/<span class='l'>z</span>/</td><td><span class='m'>vous avez entendu</span>                             </td></tr>
-<tr><td>/<span class='l'>z</span>/</td><td><span class='m'>chez eux</span>                                      </td></tr>
-<tr><td>/<span class='l'>v</span>/</td><td><span class='m'>neuf heures, neuf ans</span>                         </td></tr>
+<td><span class='m'>le livre  </span></td><td><span class='m'>les livres   </span></td></tr>
+<tr><td><span class='m'>le maison </span></td><td><span class='m'>les maisons  </span></td></tr>
+<tr><td><span class='m'>l'étudiant</span></td><td><span class='m'>les étudiants</span></td></tr>
+</table>
+</div>
+
+
+<h3>-s, -x, -z  - оставить</h3>
+<div class='clOverflow'>
+<table>
+<tr>
+<td><span class='m'>le bras</span></td><td><span class='m'>les bras</span></td></tr>
+<tr><td><span class='m'>la voix</span></td><td><span class='m'>les voix</span></td></tr>
+<tr><td><span class='m'>le nez </span></td><td><span class='m'>les nez </span></td></tr>
+</table>
+</div>
+
+
+<h3>-eu,-eau  - добавить -x</h3>
+<div class='clOverflow'>
+<table>
+<tr>
+<td><span class='m'>le feu   </span></td><td><span class='m'>les feux   </span></td></tr>
+<tr><td><span class='m'>le cheveu</span></td><td><span class='m'>les cheveux</span></td></tr>
+<tr><td><span class='m'>l'eau    </span></td><td><span class='m'>les eaux   </span></td></tr>
+</table>
+</div>
+
+
+<h3>-al  изменить на -aux</h3>
+<div class='clOverflow'>
+<table>
+<tr>
+<td><span class='m'>le cheval </span></td><td><span class='m'>les chevaux </span></td></tr>
+<tr><td><span class='m'>la journal</span></td><td><span class='m'>les journaux</span></td></tr>
+<tr><td><span class='m'>le val    </span></td><td><span class='m'>les vaux    </span></td></tr>
+</table>
+</div>
+
+
+<h2>Exception</h2>
+
+<h3>-ou   - добавить -x</h3>
+<div class='clOverflow'>
+<table>
+<tr>
+<td><span class='m'>le bijou  </span></td><td><span class='m'>les bijoux  </span></td></tr>
+<tr><td><span class='m'>le caillou</span></td><td><span class='m'>les cailloux</span></td></tr>
+<tr><td><span class='m'>le chou   </span></td><td><span class='m'>les choux   </span></td></tr>
+<tr><td><span class='m'>le genou  </span></td><td><span class='m'>les genoux  </span></td></tr>
+<tr><td><span class='m'>le pou    </span></td><td><span class='m'>les poux    </span></td></tr>
+<tr><td><span class='m'>le joujou </span></td><td><span class='m'>les joujoux </span></td></tr>
+<tr><td><span class='m'>le hibou  </span></td><td><span class='m'>les hiboux  </span></td></tr>
+</table>
+</div>
+
+
+<h3>-al - добавить -s</h3>
+<div class='clOverflow'>
+<table>
+<tr>
+<td><span class='m'>le bal     </span></td><td><span class='m'>les bals     </span></td></tr>
+<tr><td><span class='m'>le cal     </span></td><td><span class='m'>les cals     </span></td></tr>
+<tr><td><span class='m'>le carnaval</span></td><td><span class='m'>les carnavals</span></td></tr>
+<tr><td><span class='m'>le chacal  </span></td><td><span class='m'>les chacals  </span></td></tr>
+<tr><td><span class='m'>le festival</span></td><td><span class='m'>les festivals</span></td></tr>
+<tr><td><span class='m'>le régal   </span></td><td><span class='m'>les régals   </span></td></tr>
+<tr><td><span class='m'>le récital </span></td><td><span class='m'>les récitals </span></td></tr>
+</table>
+</div>
+
+
+<h2>Irrégulières </h2>
+<div class='clOverflow'>
+<table>
+<tr>
+<td><span class='m'>le os   </span></td><td><span class='m'>les os    </span></td></tr>
+<tr><td><span class='m'>le œil  </span></td><td><span class='m'>les yeux  </span></td></tr>
+<tr><td><span class='m'>le ciel </span></td><td><span class='m'>les cieux </span></td></tr>
+<tr><td><span class='m'>le oeuf </span></td><td><span class='m'>les oeufs </span></td></tr>
+<tr><td><span class='m'>le boeuf</span></td><td><span class='m'>les boeufs</span></td></tr>
 </table>
 </div>
 

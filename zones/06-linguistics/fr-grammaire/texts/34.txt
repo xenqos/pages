@@ -1,51 +1,42 @@
-# Interrogatif
+## Numéral
 
-## Formes simples
-[|
-|%[m|qui ]|
-|%[m|que ]|
-|%[m|quoi]|
-|]
+# 8
 
-## Formes complexes
-[|
-|%[m|lequel  ]|%[m|lequels  ]|
-|%[m|laquelle]|%[m|laquelles]|
-|]
+## Произносится -t
 
-[|
-|%[m|à ]|+|%[m|lequel    ]|=|%[m|auquel    ]|
-|%[m|à ]|+|%[m|lesquels  ]|=|%[m|auxquel   ]|
-|%[m|à ]|+|%[m|lesquelles]|=|%[m|auxquelles]|
-|%[m|de]|+|%[m|lequel    ]|=|%[m|duquel    ]|
-|%[m|de]|+|%[m|lesquels  ]|=|%[m|desquels  ]|
-|%[m|de]|+|%[m|lesquelles]|=|%[m|desquelles]|
-|]
+/t/ на конце фразы
+&emsp;%[m|Il y en a huit.]
 
+/t/ перед словом на гласную или h muet
+&emsp;%[m|huit euros]
 
-[!
-Простые формы употребляются без антецедента.
-!]
+/t/ при обозначении цифры
+&emsp;%[m|compter jusqu’à huit]
 
-[!
-%[m|qui] - одушевлёные, прямое и косвенное дополнение
-%[m|quе] - неодушевлёные, прямое дополнение
-%[m|quoi] - неодушевлёные, косвенное дополнение с предлогом
-%[m|lequel] - одушевлёные/неодушевлёные, если более одного
-!]
+## Не произносится -t
 
-[!
-%[m|qui est-ce qui] - вопрос к подлежащему одушевлённому
-%[m|qui est-ce que] - вопрос к прямому дополнению одушевлённому
-!]
+перед словом на согласную или h aspiré
+&emsp;%[m|huit cents]
 
-[!
-%[m|qu'est-ce qui] - вопрос к подлежащему неодушевлённому
-%[m|qu'est-ce que] - вопрос к прямому дополнению неодушевлённому
-!]
+## Факультативно
 
-[!
-%[m|qui] (вопрос к прямому дополнению) - с инверсией
-%[m|est-ce que] - без инверсии
-%[m|qui] (подлежащее) + %[m|de] + существительное/местоимение
-!]
+/t/ перед месяцами на согласную
+&emsp;%[m|le huit juin]
+
+перед процентами:
+&emsp;%[m|Il a eu quatre-vingt-huit % à son dernier examen.]
+
+## Élision
+
+не происходит
+&emsp;%[m|Il ne reste <u>que</u> huit jours avant mes vacances.]
+
+## Liaison
+
+происходит только в составе сложного числительного
+&emsp;%[m|dix-huit ans]
+
+не происходит
+&emsp;%[m|quatre-vingt-huit]
+&emsp;%[m|cent huit]
+&emsp;%[m|la huitième station]

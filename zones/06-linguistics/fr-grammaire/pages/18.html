@@ -17,7 +17,7 @@
   
 </head>
 <body onload='fncGetDivState(); fncGetScrollPosition();'>
-
+<audio id='idTrack' src='../sounds/18.mp3' preload='auto'></audio>
 <div id='idPanel'>
 <div id='idTopbar'>
   <div id='idTopbarNavigation'>
@@ -26,53 +26,87 @@
     <a href='17.html'><span class='clNavLeft'></span></a>
     <a href='../index.html'><span class='clNavUp'></span></a>
     <a href='19.html'><span class='clNavRight'></span></a>
-
+<span class='clNavRewind' onclick='fncRewindTrack(&quot;idTrack&quot;)'></span><span class='clNavPlay' onclick='fncPlayTrack(&quot;idTrack&quot;)'></span>
   </div>
 </div>
 <div id='idContent'>
 
-<h1>Lettre muet - c, f, l, r</h1>
+<h1>Démonstratif</h1>
 
-<h2>Непроизносимые c, f, l, r:</h2>
-<p class='m'><span class='m'>blanc</span>     </p><p class='g0500'></p><p class='b1000'>белый</p>
-<p class='m'><span class='m'>franc</span>     </p><p class='g0500'></p><p class='b1000'>вольный,</p>
-<p class='m'><span class='m'>le tabac</span>  </p><p class='g0500'></p><p class='b1000'>табак</p>
-<p class='m'><span class='m'>le estomac</span></p><p class='g0500'></p><p class='b1000'>желудок</p>
-<br>
-<p class='m'><span class='m'>le clef</span>   </p><p class='g0500'></p><p class='b1000'>ключ</p>
-<p class='m'><span class='m'>le cerf</span>   </p><p class='g0500'></p><p class='b1000'>олень</p>
-<p class='m'><span class='m'>le nerf</span>   </p><p class='g0500'></p><p class='b1000'>нерв</p>
-<br>
-<p class='m'><span class='m'>le outil</span>  </p><p class='g0500'></p><p class='b1000'>орудие</p>
-<p class='m'><span class='m'>le sourcil</span></p><p class='g0500'></p><p class='b1000'>бровь</p>
-<p class='m'><span class='m'>gentil</span>    </p><p class='g0500'></p><p class='b1000'>милый</p>
-<p class='m'><span class='m'>le persil</span> </p><p class='g0500'></p><p class='b1000'>петрушка</p>
-<br>
-<p class='m'><span class='m'>parler</span>    </p><p class='g0500'></p><p class='b1000'>говорить</p>
-<p class='m'><span class='m'>chercher</span>  </p><p class='g0500'></p><p class='b1000'>искать</p>
-<p class='m'><span class='m'>habiter</span>   </p><p class='g0500'></p><p class='b1000'>обитать</p>
-<p class='m'><span class='m'>fermer</span>    </p><p class='g0500'></p><p class='b1000'>закрывать</p>
+<h2>Formes simples</h2>
+<div class='clOverflow'>
+<table>
+<tr>
+<th>s.   </th><th>p.    </th></tr>
+<tr><td><span class='m'>celui</span></td><td><span class='m'>ceux  </span></td></tr>
+<tr><td><span class='m'>celle</span></td><td><span class='m'>celles</span></td></tr>
+<tr><td><span class='m'>ce   </span></td><td>      </td></tr>
+</table>
+</div>
 
-<h2>Произносимые c, f, l, r (исключения):</h2>
-<p class='m'><span class='m'>le bouc</span>   </p><p class='g0500'></p><p class='b1000'>козёл</p>
-<p class='m'><span class='m'>le lac</span>    </p><p class='g0500'></p><p class='b1000'>озеро</p>
-<p class='m'><span class='m'>avec</span>      </p><p class='g0500'></p><p class='b1000'>с</p>
-<p class='m'><span class='m'>donc</span>      </p><p class='g0500'></p><p class='b1000'>значит</p>
-<br>
-<p class='m'><span class='m'>le œuf</span>    </p><p class='g0500'></p><p class='b1000'>яйцо</p>
-<p class='m'><span class='m'>sauf</span>      </p><p class='g0500'></p><p class='b1000'>целый</p>
-<p class='m'><span class='m'>neuf</span>      </p><p class='g0500'></p><p class='b1000'>девять</p>
-<p class='m'><span class='m'>actif</span>     </p><p class='g0500'></p><p class='b1000'>деятельный</p>
-<br>
-<p class='m'><span class='m'>le fil</span>    </p><p class='g0500'></p><p class='b1000'>нить</p>
-<p class='m'><span class='m'>le avril</span>  </p><p class='g0500'></p><p class='b1000'>апрель</p>
-<p class='m'><span class='m'>civil</span>     </p><p class='g0500'></p><p class='b1000'>штатский</p>
-<p class='m'><span class='m'>le col</span>    </p><p class='g0500'></p><p class='b1000'>воротник</p>
-<br>
-<p class='m'><span class='m'>car</span>       </p><p class='g0500'></p><p class='b1000'>ибо</p>
-<p class='m'><span class='m'>la mer</span>    </p><p class='g0500'></p><p class='b1000'>море</p>
-<p class='m'><span class='m'>pour</span>      </p><p class='g0500'></p><p class='b1000'>для</p>
-<p class='m'><span class='m'>lehiver</span>   </p><p class='g0500'></p><p class='b1000'>зима</p>
+
+<h2>Formes complexes -ci (ближние)</h2>
+<div class='clOverflow'>
+<table>
+<tr>
+<th>s.      </th><th>p.       </th></tr>
+<tr><td><span class='m'>celui-ci</span></td><td><span class='m'>ceux-ci  </span></td></tr>
+<tr><td><span class='m'>celle-ci</span></td><td><span class='m'>celles-ci</span></td></tr>
+<tr><td><span class='m'>ceci    </span></td><td><span class='m'>         </span></td></tr>
+</table>
+</div>
+
+
+<h2>Formes complexes -la (дальние)</h2>
+<div class='clOverflow'>
+<table>
+<tr>
+<th>s.      </th><th>p.       </th></tr>
+<tr><td><span class='m'>celui-là</span></td><td><span class='m'>ceux-là  </span></td></tr>
+<tr><td><span class='m'>celle-là</span></td><td><span class='m'>celles-là</span></td></tr>
+<tr><td><span class='m'>cela, ça</span></td><td><span class='m'>         </span></td></tr>
+</table>
+</div>
+
+<blockquote>
+cela, ça - подлежащее, прямое дополнение, косвенное дополнение<br>
+</blockquote>
+
+
+<h2>Formes obsolètes</h2>
+<div class='clOverflow'>
+<table>
+<tr>
+<th>s.      </th><th>p.       </th></tr>
+<tr><td><span class='m'>icelui</span></td><td><span class='m'>iceux  </span></td></tr>
+<tr><td><span class='m'>icelle</span></td><td><span class='m'>icelles</span></td></tr>
+</table>
+</div>
+
+<blockquote>
+-<span class='m'>ci</span> - ближний, -<span class='m'>là</span> - дальний, если предметы в поле зрения<br>
+-<span class='m'>ci</span> - последний, -<span class='m'>là</span> - первый, по упоминанию, если предметы вне поля зрения<br>
+-<span class='m'>ci</span>, -<span class='m'>là</span> - равнозначны, если нет противопоставления<br>
+</blockquote>
+
+<blockquote>
+<span class='m'>ce</span> употребляется как подлежащие с глаголами:<br>
+<span class='m'>être - c'est vrai</span><br>
+<span class='m'>devoir - ce doit être beau</span><br>
+<span class='m'>pouvoir - ce pouvait être beau</span><br>
+<span class='m'>sembler - ce semble être beau</span><br>
+</blockquote>
+
+<blockquote>
+<span class='m'>ce</span> и число (глагол согласуется в числе с имменой частью сказуемого):<br>
+<span class='m'>c'est un étudiant</span><br>
+<span class='m'>ce sont des étudiants</span><br>
+</blockquote>
+
+<blockquote>
+<span class='m'>ceci, cela, ça</span> - указывают на идею, событие<br>
+<span class='m'>cela, ça</span> - употребляется чаще<br>
+</blockquote>
 
 
 </div>

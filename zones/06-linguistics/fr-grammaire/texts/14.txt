@@ -1,15 +1,64 @@
-# Liaison - Formes
+# Pluriel du Noms
 
+## Règles
+
+### добавить -s
 [|
-|/%[l|n]/|%[m|un bon élève]                                  |
-|/%[l|n]/|%[m|d’un certain âge, en plein air, le moyen-âge]  |
-|/%[l|n]/|%[m|bien aimable, rien à declarer]                 |
-|/%[l|p]/|%[m|beaucoup aimé, trop aimable]                   |
-|/%[l|r]/|%[m|le dernier arrêt, un léger espoir]             |
-|/%[l|t]/|%[m|quand il viendra, que prend-il?, qu’attend-on?]|
-|/%[l|t]/|%[m|un petit enfant, tout à fait]                  |
-|/%[l|z]/|%[m|les innocents, deux enfants]                   |
-|/%[l|z]/|%[m|vous avez entendu]                             |
-|/%[l|z]/|%[m|chez eux]                                      |
-|/%[l|v]/|%[m|neuf heures, neuf ans]                         |
+|%[m|le livre  ]|%[m|les livres   ]|
+|%[m|le maison ]|%[m|les maisons  ]|
+|%[m|l'étudiant]|%[m|les étudiants]|
+|]
+
+### -s, -x, -z  - оставить
+[|
+|%[m|le bras]|%[m|les bras]|
+|%[m|la voix]|%[m|les voix]|
+|%[m|le nez ]|%[m|les nez ]|
+|]
+
+### -eu,-eau  - добавить -x
+[|
+|%[m|le feu   ]|%[m|les feux   ]|
+|%[m|le cheveu]|%[m|les cheveux]|
+|%[m|l'eau    ]|%[m|les eaux   ]|
+|]
+
+### -al  изменить на -aux
+[|
+|%[m|le cheval ]|%[m|les chevaux ]|
+|%[m|la journal]|%[m|les journaux]|
+|%[m|le val    ]|%[m|les vaux    ]|
+|]
+
+## Exception
+
+### -ou   - добавить -x
+[|
+|%[m|le bijou  ]|%[m|les bijoux  ]|
+|%[m|le caillou]|%[m|les cailloux]|
+|%[m|le chou   ]|%[m|les choux   ]|
+|%[m|le genou  ]|%[m|les genoux  ]|
+|%[m|le pou    ]|%[m|les poux    ]|
+|%[m|le joujou ]|%[m|les joujoux ]|
+|%[m|le hibou  ]|%[m|les hiboux  ]|
+|]
+
+### -al - добавить -s
+[|
+|%[m|le bal     ]|%[m|les bals     ]|
+|%[m|le cal     ]|%[m|les cals     ]|
+|%[m|le carnaval]|%[m|les carnavals]|
+|%[m|le chacal  ]|%[m|les chacals  ]|
+|%[m|le festival]|%[m|les festivals]|
+|%[m|le régal   ]|%[m|les régals   ]|
+|%[m|le récital ]|%[m|les récitals ]|
+|]
+
+## Irrégulières 
+[|
+|%[m|le os   ]|%[m|les os    ]|
+|%[m|le œil  ]|%[m|les yeux  ]|
+|%[m|le ciel ]|%[m|les cieux ]|
+|%[m|le oeuf ]|%[m|les oeufs ]|
+|%[m|le boeuf]|%[m|les boeufs]|
 |]
