@@ -4,77 +4,62 @@
 
 /*--------------------------------------------------------------------------------------------------*/
 
-let numCounter = 0;
-
 const arrSuits = ['S', 'H', 'C', 'D'];
 const arrRanks = ['2', '3', '4', '5', '6', '7', '8', '9', 'T', 'J', 'Q', 'K', 'A'];
-
-let numRankIndex = 0;
-let numRank = 0;
-
-let numSuitIndex = 0;
-let numSuit = 0;
-
-let strCard = '';
-
-let arrHole = [];
-let arrFlop = [];
-let strTurn = '';
+let arrCards = [];
+let booTurn = false;
 
 /*--------------------------------------------------------------------------------------------------*/
 
-function fncDealFlop()
+function fncDealCards()
 {
-  arrHole.length = 0;
-  arrFlop.length = 0;
+  arrCards.length = 0;
 
-  /* Hole */
-
-  for (numCounter = 1; numCounter <= 2; numCounter++)
+  while (arrCards.length < 6)
   {
-    numRankIndex = Math.floor(Math.random() * arrRanks.length);
-    numRank = arrRanks[numRankIndex];
-    numSuitIndex = Math.floor(Math.random() * arrSuits.length);
-    numSuit = arrSuits[numSuitIndex];
-    strCard = numRank + numSuit;
-    arrHole.push(strCard);
+    let numRankIndex = Math.floor(Math.random() * arrRanks.length);
+    let strRank = arrRanks[numRankIndex];
 
-    document.getElementById('idHole' + numCounter).src = '../../../images/cards/' + numRank + numSuit + '.svg';
+    let numSuitIndex = Math.floor(Math.random() * arrSuits.length);
+    let strSuit = arrSuits[numSuitIndex];
+
+    let strCard = strRank + strSuit;
+
+    if (!arrCards.includes(strCard))
+    {
+      arrCards.push(strCard);
+    }
   }
 
-  /* Flop */
-
-  for (numCounter = 1; numCounter <= 3; numCounter++)
+  for (let numCounter = 0; numCounter < arrCards.length; numCounter++)
   {
-    numRankIndex = Math.floor(Math.random() * arrRanks.length);
-    numRank = arrRanks[numRankIndex];
-    numSuitIndex = Math.floor(Math.random() * arrSuits.length);
-    numSuit = arrSuits[numSuitIndex];
-    strCard = numRank + numSuit;
-    arrFlop.push(strCard);
-
-    document.getElementById('idFlop' + numCounter).src = '../../../images/cards/' + numRank + numSuit + '.svg';
+    if (numCounter < 5)
+    {
+      document.getElementById('idCard' + numCounter).src = '../../../images/cards/' + arrCards[numCounter] + '.svg';
+    }
+    else
+    {
+      document.getElementById('idCard' + numCounter).src = '../../../images/cards/back.svg';
+    }
   }
-
-  /* Turn */
-
-  numRankIndex = Math.floor(Math.random() * arrRanks.length);
-  numRank = arrRanks[numRankIndex];
-  numSuitIndex = Math.floor(Math.random() * arrSuits.length);
-  numSuit = arrSuits[numSuitIndex];
-  strTurn = numRank + numSuit;
-
-  document.getElementById('idTurn').src = '../../../images/cards/back.svg';
 }
 
 /*--------------------------------------------------------------------------------------------------*/
 
-function fncDealTurn()
+function fncShowTurn()
 {
-  document.getElementById('idTurn').src = '../../../images/cards/' + strTurn + '.svg';
+  if (booTurn === false)
+  {
+    document.getElementById('idCard5').src = '../../../images/cards/' + arrCards[5] + '.svg';
+    booTurn = true;
+  }
+  else
+  {
+    booTurn = false;
+    fncDealCards();
+  }
 }
 
 /*--------------------------------------------------------------------------------------------------*/
-//  alert('ZZZ…');
 //  console.log('ZZZ…');
 /*--------------------------------------------------------------------------------------------------*/
