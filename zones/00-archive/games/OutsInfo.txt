@@ -1,0 +1,67 @@
+
+Pair to Set
+One Overcard
+Inside Straight Draw
+Two Pair to Full House
+One Pair to Two Pair or Set
+No Pair to Pair
+Two Overcards to Over Pair
+Set to Full House
+Set to Four of Kind
+Open-Ended Straight
+Flush Draw
+Inside Straight & Two Overcards
+Inside Straight Draw & Flush
+Open Straight & Flush Draw
+
+
+1. Drawing Hands
+| Name                               | Outs  |
+| ---------------------------------- | ----- |
+| Flush Draw                         | 9     |
+| Open-Ended Straight (OESD)         | 8     |
+| Gutshot / Inside Straight          | 4     |
+| Straight + Flush Draw (Combo Draw) | 13–15 |
+| Set → Full House / Quads           | 7     |
+| Two Pair → Full House              | 4     |
+
+2. Overcard / Pairing Hands
+| Name                             | Outs |
+| -------------------------------- | ---- |
+| One Overcard                     | 3    |
+| Two Overcards to Overpair        | 6    |
+| No Pair → Pair (using overcards) | 6    |
+| One Pair → Two Pair / Set        | 5    |
+| Pair to Set                      | 2    |
+
+
+Special Cases (context-dependent)
+| Name                            | Comment                                                         |
+| ------------------------------- | --------------------------------------------------------------- |
+| Set to Four of a Kind           | 1 out, but part of “Set to Full House”                          |
+| Inside Straight & Two Overcards | Adds up to 10 outs                                              |
+| Combo Draws                     | Outs must be adjusted to avoid **double-counting** shared cards |
+
+Missing or Optional Additions (if you want exhaustive):
+| Additional Draw                           | Outs                                        | Notes |
+| ----------------------------------------- | ------------------------------------------- | ----- |
+| Backdoor Flush Draw                       | 1% chance (\~1 out); needs two runner cards |       |
+| Backdoor Straight Draw                    | Same as above; rare                         |       |
+| Overpair to Set                           | 2 outs                                      |       |
+| Trips to Full House                       | Similar to Set                              |       |
+| Overcard hitting Top Pair vs. Lower Pairs | 3 outs, context-based                       |       |
+
+
+Final Answer
+
+Your list is very solid and covers nearly all key draw types post-flop. If you're aiming for an exhaustive list, consider adding:
+
+Backdoor draws (flush/straight)
+
+Clarify overlaps, like:
+
+"Set to Full House" includes "Set to Quads"
+
+"One Pair to Two Pair or Set" may double-count "Pair to Set"
+
+Separate combo draws with logic to avoid double-counting outs

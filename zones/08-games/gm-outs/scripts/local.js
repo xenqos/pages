@@ -4,45 +4,74 @@
 
 /*--------------------------------------------------------------------------------------------------*/
 
+let numCounter = 0;
+
 const arrSuits = ['S', 'H', 'C', 'D'];
 const arrRanks = ['2', '3', '4', '5', '6', '7', '8', '9', 'T', 'J', 'Q', 'K', 'A'];
-const arrCards = [];
+
+let numRankIndex = 0;
+let numRank = 0;
+
+let numSuitIndex = 0;
+let numSuit = 0;
+
+let strCard = '';
+
+let arrHole = [];
+let arrFlop = [];
+let strTurn = '';
 
 /*--------------------------------------------------------------------------------------------------*/
 
-function fncGetOuts()
+function fncDealFlop()
 {
-  arrCards.length = 0;
+  arrHole.length = 0;
+  arrFlop.length = 0;
 
-  for (let intCounter = 1; intCounter <= 6; intCounter++)
+  /* Hole */
+
+  for (numCounter = 1; numCounter <= 2; numCounter++)
   {
-    const numRankIndex = Math.floor(Math.random() * arrRanks.length);
-    const numRank = arrRanks[numRankIndex];
+    numRankIndex = Math.floor(Math.random() * arrRanks.length);
+    numRank = arrRanks[numRankIndex];
+    numSuitIndex = Math.floor(Math.random() * arrSuits.length);
+    numSuit = arrSuits[numSuitIndex];
+    strCard = numRank + numSuit;
+    arrHole.push(strCard);
 
-    const numSuitIndex = Math.floor(Math.random() * arrSuits.length);
-    const numSuit = arrSuits[numSuitIndex];
-
-    const strPair = numRank + numSuit;
-    arrCards.push(strPair);
-
-    if (intCounter < 6)
-    {
-      document.getElementById('idCard' + intCounter).src = '../../../images/cards/' + numRank + numSuit + '.svg';
-    }
-    else
-    {
-      document.getElementById('idCard' + intCounter).src = '../../../images/cards/back.svg';
-    }
+    document.getElementById('idHole' + numCounter).src = '../../../images/cards/' + numRank + numSuit + '.svg';
   }
 
-  console.log(arrCards);
+  /* Flop */
+
+  for (numCounter = 1; numCounter <= 3; numCounter++)
+  {
+    numRankIndex = Math.floor(Math.random() * arrRanks.length);
+    numRank = arrRanks[numRankIndex];
+    numSuitIndex = Math.floor(Math.random() * arrSuits.length);
+    numSuit = arrSuits[numSuitIndex];
+    strCard = numRank + numSuit;
+    arrFlop.push(strCard);
+
+    document.getElementById('idFlop' + numCounter).src = '../../../images/cards/' + numRank + numSuit + '.svg';
+  }
+
+  /* Turn */
+
+  numRankIndex = Math.floor(Math.random() * arrRanks.length);
+  numRank = arrRanks[numRankIndex];
+  numSuitIndex = Math.floor(Math.random() * arrSuits.length);
+  numSuit = arrSuits[numSuitIndex];
+  strTurn = numRank + numSuit;
+
+  document.getElementById('idTurn').src = '../../../images/cards/back.svg';
 }
 
 /*--------------------------------------------------------------------------------------------------*/
 
-function fncShowTurn()
+function fncDealTurn()
 {
-  document.getElementById('idCard6').src = '../../../images/cards/' + arrCards[5] + '.svg';
+  document.getElementById('idTurn').src = '../../../images/cards/' + strTurn + '.svg';
 }
 
 /*--------------------------------------------------------------------------------------------------*/
