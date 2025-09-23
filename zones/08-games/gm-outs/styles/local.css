@@ -17,18 +17,21 @@
   padding:              0.600rem 0.600rem 0.200rem 0.600rem;
 }
 
+/*
 .clPokerTable img
 {
   width: 16%;
 }
+*/
 
-/*
 .clCard
 {
+/*
   width:                2.000rem;
-
-}
 */
+  width:                18%;
+}
+
 
 
 #idCard2
