@@ -12,6 +12,7 @@
   border-radius:        0.400rem;
   box-sizing:           border-box;
   display:              inline-block;
+  display:              flex;
   justify-content:      center;
   margin:               0.000rem 0.000rem 0.000rem 0.000rem;
   padding:              0.600rem 0.600rem 0.200rem 0.600rem;
