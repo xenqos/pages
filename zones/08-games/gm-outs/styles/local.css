@@ -9,7 +9,7 @@
 .clPokerTable
 {
   background-color:     #0d6f3a;
-  border-radius:        0.600rem;
+  border-radius:        0.400rem;
   box-sizing:           border-box;
   display:              inline-block;
   justify-content:      center;
@@ -17,14 +17,23 @@
   padding:              0.600rem 0.600rem 0.200rem 0.600rem;
 }
 
+.clPokerTable img
+{
+  width: 16%;
+}
+
+/*
 .clCard
 {
-  width:                3.000rem;
+  width:                2.000rem;
+
 }
+*/
+
 
 #idCard2
 {
-  margin-right:         0.400rem;
+  margin-right:         0.000rem;
 }
 
 
