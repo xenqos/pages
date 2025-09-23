@@ -15,6 +15,7 @@
   justify-content:      center;
   margin:               0.000rem 0.000rem 0.000rem 0.000rem;
   padding:              0.600rem 0.600rem 0.200rem 0.600rem;
+  width:                100%;
 }
 
 /*
@@ -26,18 +27,14 @@
 
 .clCard
 {
-/*
-  width:                2.000rem;
-*/
-  width:                18%;
+  width:                6.000rem;
 }
 
-
-
+/*
 #idCard2
 {
   margin-right:         0.000rem;
 }
-
+*/
 
 /*-----------------------------------------------------------------------------------------------*/
