@@ -1,0 +1,57 @@
+Write Javascript code to count Poker No Limit Texas Hold'em "outs".
+The cards are in the string array arrCards.
+Each card consist of two characters: Rank and Suite.
+Rank = 2,3,4,5,6,7,8,9,T,J,Q,K,A; Suit = S, H, C, D
+The first and the second cards in arrCards are the Hole cards.
+The third, fourth and fifth cards are the Flop cards.
+The sixth card is the Turn card.
+
+Check the arrCards for the potential "outs" according to the list:
+
+One Pair to Set
+One Overcard to Pair
+Inside Straight Draw
+Two Pair to Full House
+One Pair to Two Pair
+No Pair to Pair
+Set to Full House
+Trips to Full House
+Two Overcards to Over Pair
+Set to Full House
+Set to Full Quads
+Set to Four of a Kind
+Open-Ended Straight Draw
+Flush Draw
+Inside Straight Draw & Two Overcards
+Inside Straight Draw & Flush
+Open Straight Draw & Flush Draw
+
+Write script in linear way - no functions.
+Do not use fairly new and obscure Javascript features.
+Use "let" or "const" for defining variables, do not use "var".
+Variables names are three first characters of the variable's type - lowercased.
+Plus the descriptive name of the variable - the first character uppercased.
+For the curly braces use Allman Style (BSD Style).
+
+Place your code in this function:
+
+function fncCountOuts()
+{
+  console.clear()
+
+// Your FULL code goes here.
+}
+
+
+
+There must be two blocks of code:
+The 1st block checks only from arrCards[0] to arrCards[4] - that's after Flop.
+The 2nd block checks from arrCards[0] to arrCards[5] - that's after Turn.
+
+Eliminate double count of outs.
+
+The result of findings must be output using console.log(strOutsName + " - " + numOutsCount).
+Cycle through Outs Names (see above) and output the result.
+If there's no Outs of a Name output console.log(strOutsName + " - 0").
+
+Please output the FULL code. With ALL logic.

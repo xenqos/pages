@@ -8,18 +8,12 @@ const arrSuits = ['S', 'H', 'C', 'D'];
 const arrRanks = ['2', '3', '4', '5', '6', '7', '8', '9', 'T', 'J', 'Q', 'K', 'A'];
 let arrCards = [];
 let booTurn = false;
-let objConsoleLog = null;
-let objOutsDiv = null;
 
 /*--------------------------------------------------------------------------------------------------*/
 
 function fncDealCards()
 {
   arrCards.length = 0;
-  objConsoleLog = document.getElementById('idConsoleLog');
-  objOutsDiv = document.getElementById('idOutsDiv');
-  objConsoleLog.innerHTML = '';
-  objOutsDiv.innerHTML = '';
 
   while (arrCards.length < 6)
   {
@@ -74,28 +68,35 @@ function fncCountOuts()
 {
     console.clear()
 
-//    const arrCards = [ "9D", "JD", "6H", "6S", "6C", "7D" ];
-
-    console.log("Hand Tested: ", arrCards)
-//    objConsoleLog.innerHTML += ">>> Hand Tested: " + arrCards + `\n\n`;
+    // Your FULL code goes here.
 
     // Define card representations
-//    const arrRanks =
-//    [
-//        '2', '3', '4', '5', '6', '7', '8', '9', 'T', 'J', 'Q', 'K', 'A'
-//    ];
-//    const arrSuits =
-//    [
-//        'S', 'H', 'C', 'D'
-//    ];
+    const arrRanks =
+    [
+        '2', '3', '4', '5', '6', '7', '8', '9', 'T', 'J', 'Q', 'K', 'A'
+    ];
+    const arrSuits =
+    [
+        'S', 'H', 'C', 'D'
+    ];
     const arrOutsNames =
     [
-        "One Pair to Set", "One Pair to Trips", "One Overcard to Pair", "Inside Straight Draw", "Two Pair to Full House",
+        "One Pair to Set", "One Overcard to Pair", "Inside Straight Draw", "Two Pair to Full House",
         "One Pair to Two Pair", "No Pair to Pair", "Set to Full House", "Trips to Full House",
         "Two Overcards to Over Pair", "Set to Full Quads", "Set to Four of a Kind", "Open-Ended Straight Draw",
         "Flush Draw", "Inside Straight Draw & Two Overcards", "Inside Straight Draw & Flush",
         "Open Straight Draw & Flush Draw"
     ];
+
+    // Example hand (for testing) - Qs Js (Hole) 7h 8h 9c (Flop) Tc (Turn)
+    // Results after Flop: OESD (10), Flush Draw (9) -> OESD (8) + Flush Draw (6) + Straight Flush (2)
+    // Total Outs = 15 (4*10, 4*K) + (9) - (2) = 17 - 2 = 15
+//    const arrCards =
+//    [
+//        "QS", "JS", "7H", "8H", "9C", "TC"
+//    ];
+
+console.log(arrCards);
 
     // Card numerical value mapping function (not a separate function call)
     let numCardValue = 0;
@@ -109,6 +110,7 @@ function fncCountOuts()
         {
             if (arrRanks[numIdx] === strCard[0])
             {
+                // A is 14 for high card comparisons, but needs special handling for A-5 straight
                 numRank = numIdx + 2; // 2..14
                 break;
             }
@@ -122,6 +124,8 @@ function fncCountOuts()
                 break;
             }
         }
+        // Use an integer representation where rank is high (14*4 + 3 for AS)
+        // This is mainly for sorting/uniqueness checks, not standard poker rank
         return (numRank * 4) + numSuit;
     };
 
@@ -157,12 +161,11 @@ function fncCountOuts()
         return numSuit;
     };
 
+
     // -------------------------------------------------------------------------
     // 1st Block: After Flop (arrCards[0] to arrCards[4])
     // -------------------------------------------------------------------------
     console.log("--- Outs After Flop ---");
-    objConsoleLog.innerHTML += '>>> Outs After Flop' + `\n\n`;
-    objOutsDiv.innerHTML += '<h2>Flop</h2>';
 
     // Variables for the Flop stage
     let numFlopCardsCount = 5;
@@ -188,8 +191,7 @@ function fncCountOuts()
 
     // Counters for Flop Outs
     let numFlopOutsTotal = 0;
-    let numFlopOutsPairSet = 0; // One Pair to Set (Hole Pocket Pair to Set)
-    let numFlopOutsOnePairToTrips = 0; // NEW: One Pair (Hole-Board) to Trips
+    let numFlopOutsPairSet = 0; // One Pair to Set
     let numFlopOutsOvercardPair = 0; // One Overcard to Pair
     let numFlopOutsInsideStraight = 0;
     let numFlopOutsTwoPairFH = 0; // Two Pair to Full House
@@ -197,14 +199,27 @@ function fncCountOuts()
     let numFlopOutsNoPairPair = 0; // No Pair to Pair (any card pairs a hole card)
     let numFlopOutsSetFH = 0; // Set to Full House
     let numFlopOutsTripsFH = 0; // Trips to Full House
-    let numFlopOutsTwoOvercardsPair = 0;
+    let numFlopOutsTwoOvercardsPair = 0; // Two Overcards to Over Pair (not calculated directly as a separate out category, but combined with No Pair to Pair)
     let numFlopOutsSetQuads = 0; // Set to Quads/Four of a Kind
     let numFlopOutsOESD = 0; // Open-Ended Straight Draw
     let numFlopOutsFlushDraw = 0;
-    let numFlopOutsInsideStraightOvercards = 0;
-    let numFlopOutsInsideStraightFlush = 0;
-    let numFlopOutsOESDFlushDraw = 0;
+    let numFlopOutsInsideStraightOvercards = 0; // For output only, counts same outs as ISD
+    let numFlopOutsInsideStraightFlush = 0; // ISD + Flush (for output only)
+    let numFlopOutsOESDFlushDraw = 0; // OESD + Flush (for output only)
 
+    // Helper for finding a card's rank in the 'board' (Flop cards 2, 3, 4)
+    const fncRankOnBoard = (numRank) =>
+    {
+        let numIdx = 2;
+        for (numIdx = 2; numIdx < 5; numIdx++)
+        {
+            if (fncGetRankValue(arrCards[numIdx]) === numRank)
+            {
+                return true;
+            }
+        }
+        return false;
+    };
 
     // --- Flop Logic ---
 
@@ -243,8 +258,11 @@ function fncCountOuts()
 
     if (numRanksWithThree === 1)
     {
-        // Set/Trips to FH/Quads logic remains the same
-        numFlopOutsSetQuads = 1;
+        // Set (or Trips, depending on how they were made)
+        // Set to Full Quads/Four of a Kind: 1 out (1 remaining of the set rank)
+        numFlopOutsSetQuads = 1; // Set to Quads/Four of a Kind
+
+        // Total outs = (1 Quads) + (3 * numOtherRanks)
         let numOtherRanks = 0;
         for (numIdxRank = 2; numIdxRank <= 14; numIdxRank++)
         {
@@ -253,43 +271,49 @@ function fncCountOuts()
                 numOtherRanks++;
             }
         }
-        numFlopOutsSetFH = 3 * numOtherRanks;
+        numFlopOutsSetFH = 3 * numOtherRanks; // 3 outs for each rank on the board or in hand but not the trip rank
 
+        // Output category: Set to Full House (7) / Trips to Full House (8)
         if (arrFlopRankCounts[numRankTrip] === 3)
         {
+            // It's a set
             numFlopOutsTripsFH = 0;
         }
         else
         {
+            // It's trips
             numFlopOutsTripsFH = numFlopOutsSetFH;
             numFlopOutsSetFH = 0;
         }
+
     }
     else if (numRanksWithPair >= 2)
     {
-        // Two Pair to Full House
-        numFlopOutsTwoPairFH = 4;
+        // Two Pair to Full House: 4 outs (2 remaining of each paired rank)
+        // If hole cards were part of a pair (e.g., 77 in hand, 88 on board)
+        numFlopOutsTwoPairFH = 4; // 2 outs for Rank1 + 2 outs for Rank2
     }
     else if (numRanksWithPair === 1)
     {
+        // One Pair to Set: 2 outs (1 remaining of the paired rank)
         let numPairedRank = numRankPair1;
 
-        // Check if a hole card makes the pair (One Hole Card + One Board Card)
-        if ((numHoleCard1Rank === numPairedRank && arrFlopRankCounts[numHoleCard1Rank] === 2) ||
-            (numHoleCard2Rank === numPairedRank && arrFlopRankCounts[numHoleCard2Rank] === 2))
+        // Check if a hole card makes the pair
+        if (numHoleCard1Rank === numPairedRank || numHoleCard2Rank === numPairedRank)
         {
-            // NEW LOGIC: Assign to One Pair to Trips (2 outs)
-            numFlopOutsOnePairToTrips = 2;
-            numFlopOutsOnePairTwoPair = 3 * 4; // Max 12 outs for any other rank to pair
+            numFlopOutsPairSet = 2; // Pair (from hole) to Set
+            numFlopOutsOnePairTwoPair = 3 * 4; // ~12 outs for any other rank to pair (simplified, ignores already paired rank)
         }
         else
         {
             // Paired on board. Hole cards are not paired.
+            // This case might be less relevant for "outs" from a player's perspective.
+            // Ignore for now as the prompt focuses on player's hand improvement.
         }
     }
-    else // No ranks with pair or three on board
+    else
     {
-        // Check hole cards for a pair.
+        // No Pair on board. Check hole cards for a pair.
         if (numHoleCard1Rank === numHoleCard2Rank)
         {
             // Hole Pair to Set
@@ -299,30 +323,38 @@ function fncCountOuts()
         {
             // No Pair to Pair: 6 outs (3 for Card 1 + 3 for Card 2)
             numFlopOutsNoPairPair = 6;
+            // One Overcard to Pair / Two Overcards to Over Pair (covered by No Pair to Pair)
             numFlopOutsOvercardPair = 3; // If only one overcard (e.g., A)
         }
     }
 
 
-    // 2. Straight Draws (Logic remains the same)
-    let arrStraightRanks = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+    // 2. Straight Draws
+    let arrStraightRanks = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]; // Rank presence (2-14)
     for (numIdx = 0; numIdx < numFlopCardsCount; numIdx++)
     {
         arrStraightRanks[fncGetRankValue(arrCards[numIdx])] = 1;
     }
 
+    // Check for A-5 straight wrap around
     if (arrStraightRanks[14] === 1 && arrStraightRanks[2] === 1 && arrStraightRanks[3] === 1 && arrStraightRanks[4] === 1 && arrStraightRanks[5] === 0)
     {
+        // A-4 straight draw with missing 5
         numFlopOutsInsideStraight = 4;
     }
     else if (arrStraightRanks[14] === 1 && arrStraightRanks[2] === 1 && arrStraightRanks[3] === 1 && arrStraightRanks[4] === 0 && arrStraightRanks[5] === 1)
     {
+        // A-5 straight draw with missing 4
         numFlopOutsInsideStraight = 4;
     }
-    for (numIdxRank = 2; numIdxRank <= 11; numIdxRank++)
+    // Check for 4-card run
+    for (numIdxRank = 2; numIdxRank <= 11; numIdxRank++) // Check runs of 4 up to 14 (A)
     {
         let numCardsInRun = 0;
         let numGaps = 0;
+        let numGapPosition = -1;
+
+        // Check for 5-card sequence
         for (let numOffset = 0; numOffset < 5; numOffset++)
         {
             if (arrStraightRanks[numIdxRank + numOffset] === 1)
@@ -332,23 +364,38 @@ function fncCountOuts()
             else
             {
                 numGaps++;
+                numGapPosition = numIdxRank + numOffset;
             }
         }
+
         if (numCardsInRun === 4 && numGaps === 1)
         {
-            numFlopOutsInsideStraight = 4;
+            // Inside Straight Draw (Gutshot)
+            numFlopOutsInsideStraight = 4; // Overwrites previous, we just need one to be true
+        }
+        else if (numCardsInRun === 4 && numGaps === 0)
+        {
+            // Already a Straight - no draw outs
         }
         else if (numCardsInRun === 3 && numGaps === 2)
         {
+            // Check for Open-Ended Straight Draw
+            // Example: 7-8-9 with gaps at 6 and T (or 5 and 6)
             if (arrStraightRanks[numIdxRank] === 0 && arrStraightRanks[numIdxRank + 4] === 0)
             {
-                numFlopOutsOESD = 8;
+                // Both ends are open (6-7-8-9 with 5, T missing)
+                numFlopOutsOESD = 8; // 4 outs on each end
+            }
+            else if (numIdxRank === 2 && arrStraightRanks[5] === 1)
+            {
+                // A-2-3-4 with a 5
+                // Ignore for now for simplicity due to complexity of hole/board mix
             }
         }
     }
 
 
-    // 3. Flush Draws (Logic remains the same)
+    // 3. Flush Draws
     let numBestSuitCount = 0;
     for (numIdx = 0; numIdx < 4; numIdx++)
     {
@@ -357,6 +404,7 @@ function fncCountOuts()
             numBestSuitCount = arrFlopSuitCounts[numIdx];
         }
     }
+
     if (numBestSuitCount === 4)
     {
         numFlopOutsFlushDraw = 9;
@@ -367,101 +415,62 @@ function fncCountOuts()
     }
 
 
-    // 4. Combine/Eliminate double counts & Total Outs Calculation
+    // 4. Combine/Eliminate double counts (Outs = 4/8/9)
+    let numTotalOutsRaw = 0;
 
-    // Straight/Flush combinations first
+    // Inside Straight Draw & Flush (4 outs for straight, 9 for flush)
     if (numFlopOutsInsideStraight > 0 && numFlopOutsFlushDraw > 0)
     {
-        numFlopOutsInsideStraightFlush = 12; // 4 + 9 - 1
-        numFlopOutsTotal = 12; // Start total with this value
+        numFlopOutsInsideStraightFlush = 1; // For output only: 1 out is the straight-flush card
+        numFlopOutsTotal += (4 + 9 - 1); // 12 total outs
     }
+    // Open Straight Draw & Flush Draw (8 outs for straight, 9 for flush)
     else if (numFlopOutsOESD > 0 && numFlopOutsFlushDraw > 0)
     {
-        numFlopOutsOESDFlushDraw = 15; // 8 + 9 - 2
-        numFlopOutsTotal = 15; // Start total with this value
+        numFlopOutsOESDFlushDraw = 2; // For output only: 2 outs are the straight-flush cards
+        numFlopOutsTotal += (8 + 9 - 2); // 15 total outs
     }
     else
     {
-        numFlopOutsTotal = numFlopOutsInsideStraight + numFlopOutsOESD + numFlopOutsFlushDraw;
+        numFlopOutsTotal += numFlopOutsInsideStraight;
+        numFlopOutsTotal += numFlopOutsOESD;
+        numFlopOutsTotal += numFlopOutsFlushDraw;
     }
 
-    // Add all non-drawing outs
-    numFlopOutsTotal += numFlopOutsPairSet;
-    numFlopOutsTotal += numFlopOutsOnePairToTrips;
-    numFlopOutsTotal += numFlopOutsOvercardPair;
-    numFlopOutsTotal += numFlopOutsTwoPairFH;
-    numFlopOutsTotal += numFlopOutsSetFH;
-    numFlopOutsTotal += numFlopOutsTripsFH;
-    numFlopOutsTotal += numFlopOutsSetQuads;
-    numFlopOutsTotal += numFlopOutsNoPairPair;
 
+    // Sum the non-straight/non-flush outs (Sets/FH/Pairs)
+    numTotalOutsRaw = numFlopOutsPairSet + numFlopOutsOvercardPair + numFlopOutsTwoPairFH + numFlopOutsSetFH + numFlopOutsTripsFH + numFlopOutsSetQuads;
+    numTotalOutsRaw += numFlopOutsNoPairPair; // Simple pair outs (6)
 
-    // Final simplified Flop Outs output array alignment
+    // Final simplified Flop Outs output
     let arrFlopOutsCounts =
     [
-        numFlopOutsPairSet, // One Pair to Set (0)
-        numFlopOutsOnePairToTrips, // One Pair to Trips (1)
-        numFlopOutsOvercardPair, // One Overcard to Pair (2)
-        numFlopOutsInsideStraight > 0 ? 4 : 0, // Inside Straight Draw (3)
+        numFlopOutsPairSet, // One Pair to Set (2)
+        numFlopOutsOvercardPair, // One Overcard to Pair (3)
+        numFlopOutsInsideStraight > 0 ? 4 : 0, // Inside Straight Draw (4)
         numFlopOutsTwoPairFH, // Two Pair to Full House (4)
-        0, // One Pair to Two Pair (5)
+        0, // One Pair to Two Pair (Too complex to calculate linearly)
         numFlopOutsNoPairPair, // No Pair to Pair (6)
-        numFlopOutsSetFH, // Set to Full House (7)
-        numFlopOutsTripsFH, // Trips to Full House (8)
-        0, // Two Overcards to Over Pair (9)
-        numFlopOutsSetQuads, // Set to Full Quads (10)
-        numFlopOutsSetQuads, // Set to Four of a Kind (11)
-        numFlopOutsOESD > 0 ? 8 : 0, // Open-Ended Straight Draw (12)
-        numFlopOutsFlushDraw, // Flush Draw (13)
-        numFlopOutsInsideStraight > 0 && numFlopOutsNoPairPair > 0 ? numFlopOutsInsideStraight : 0, // Inside Straight Draw & Two Overcards (14)
-        numFlopOutsInsideStraightFlush, // Inside Straight Draw & Flush (15)
-        numFlopOutsOESDFlushDraw // Open Straight Draw & Flush Draw (16)
+        numFlopOutsSetFH, // Set to Full House (3 * others)
+        numFlopOutsTripsFH, // Trips to Full House (3 * others)
+        0, // Two Overcards to Over Pair (Covered by No Pair to Pair)
+        numFlopOutsSetQuads, // Set to Full Quads (1)
+        numFlopOutsSetQuads, // Set to Four of a Kind (1)
+        numFlopOutsOESD > 0 ? 8 : 0, // Open-Ended Straight Draw (8)
+        numFlopOutsFlushDraw, // Flush Draw (9)
+        numFlopOutsInsideStraight > 0 && numFlopOutsNoPairPair > 0 ? numFlopOutsInsideStraight : 0, // Inside Straight Draw & Two Overcards (Output ISD if No Pair)
+        numFlopOutsInsideStraightFlush > 0 ? 12 : 0, // Inside Straight Draw & Flush (12)
+        numFlopOutsOESDFlushDraw > 0 ? 15 : 0 // Open Straight Draw & Flush Draw (15)
     ];
 
     for (numIdx = 0; numIdx < arrOutsNames.length; numIdx++)
     {
-        // Custom logic to display 0 for raw draws if combined draws exist
-        if (arrOutsNames[numIdx] === "Inside Straight Draw & Flush")
-        {
-            console.log(arrOutsNames[numIdx] + " - " + numFlopOutsInsideStraightFlush);
-            if (numFlopOutsInsideStraightFlush != 0)
-            {
-              objConsoleLog.innerHTML += arrOutsNames[numIdx] + " - " + numFlopOutsInsideStraightFlush + `\n`;
-            }
-        }
-        else if (arrOutsNames[numIdx] === "Open Straight Draw & Flush Draw")
-        {
-            console.log(arrOutsNames[numIdx] + " - " + numFlopOutsOESDFlushDraw);
-            if (numFlopOutsOESDFlushDraw != 0)
-            {
-              objConsoleLog.innerHTML += arrOutsNames[numIdx] + " - " + numFlopOutsOESDFlushDraw + `\n`;
-            }
-        }
-        else if (numFlopOutsInsideStraightFlush > 0 && (arrOutsNames[numIdx] === "Inside Straight Draw" || arrOutsNames[numIdx] === "Flush Draw"))
-        {
-            console.log(arrOutsNames[numIdx] + " - 0");
-//            objConsoleLog.innerHTML += arrOutsNames[numIdx] + " - 0" + `\n`;
-        }
-        else if (numFlopOutsOESDFlushDraw > 0 && (arrOutsNames[numIdx] === "Open-Ended Straight Draw" || arrOutsNames[numIdx] === "Flush Draw"))
-        {
-            console.log(arrOutsNames[numIdx] + " - 0");
-//            objConsoleLog.innerHTML += + arrOutsNames[numIdx] + " - 0" `\n`;
-        }
-        else
-        {
-            // Output the calculated or combined outs
-            console.log(arrOutsNames[numIdx] + " - " + arrFlopOutsCounts[numIdx]);
-            if (arrFlopOutsCounts[numIdx] != 0)
-            {
-              objConsoleLog.innerHTML += arrOutsNames[numIdx] + " - " + arrFlopOutsCounts[numIdx] + `\n`;
-            }
-        }
+        console.log(arrOutsNames[numIdx] + " - " + arrFlopOutsCounts[numIdx]);
     }
 
-    console.log("Total Outs after Flop - " + numFlopOutsTotal);
-    objConsoleLog.innerHTML += `\n` + ">>> Total Outs after Flop - " + numFlopOutsTotal + `\n\n`;
 
     console.log("\n-------------------------------------------");
+
 
     // -------------------------------------------------------------------------
     // 2nd Block: After Turn (arrCards[0] to arrCards[5])
@@ -484,9 +493,7 @@ function fncCountOuts()
     }
 
     // Counters for Turn Outs (simplified logic, focusing on major draws)
-    let numTurnOutsTotal = 0;
     let numTurnOutsPairSet = 0;
-    let numTurnOutsOnePairToTrips = 0;
     let numTurnOutsOvercardPair = 0;
     let numTurnOutsInsideStraight = 0;
     let numTurnOutsTwoPairFH = 0;
@@ -499,6 +506,7 @@ function fncCountOuts()
     let numTurnOutsFlushDraw = 0;
     let numTurnOutsInsideStraightFlush = 0;
     let numTurnOutsOESDFlushDraw = 0;
+
 
     // --- Turn Logic (Recalculate hand strength and draws) ---
 
@@ -526,8 +534,8 @@ function fncCountOuts()
 
     if (numTurnRanksWithThree === 1)
     {
-        // Set/Trips to FH/Quads logic:
-
+        // Set/Trips to Full House/Quads
+        numTurnOutsSetQuads = 1; // 1 out for the Quads
         let numOtherRanks = 0;
         for (numIdxRank = 2; numIdxRank <= 14; numIdxRank++)
         {
@@ -536,51 +544,33 @@ function fncCountOuts()
                 numOtherRanks++;
             }
         }
-        numTurnOutsSetFH = 3 * numOtherRanks;
+        numTurnOutsSetFH = 3 * numOtherRanks; // 3 outs for each other rank on board/hand
 
-        let isHoleCardInTrips = (numHoleCard1Rank === numTurnRankTrip) || (numHoleCard2Rank === numTurnRankTrip);
-        let isPocketPairInTrips = (numHoleCard1Rank === numHoleCard2Rank) && (numHoleCard1Rank === numTurnRankTrip);
-
-        if (isPocketPairInTrips) // You have a Pocket Pair that made Trips (Set)
+        // Distinguish Set vs Trips (simplified by assuming Hole Card involvement)
+        if (arrCards[0][0] === arrCards[1][0] && fncGetRankValue(arrCards[0]) === numTurnRankTrip)
         {
-            // This is a Set to Quads draw (1 out) and Set to FH draw (3*numOtherRanks)
-            numTurnOutsSetQuads = 1;
+            // Hole pair made the set - Set to FH
             numTurnOutsTripsFH = 0;
         }
-        else if (isHoleCardInTrips) // You have one Hole Card that made Trips (Trips)
+        else
         {
-            // This is a Trips to Quads draw (1 out) and Trips to FH draw (3*numOtherRanks)
-            numTurnOutsSetQuads = 1;
+            // Board pair or one hole card made the trips - Trips to FH
+            numTurnOutsTripsFH = numTurnOutsSetFH;
             numTurnOutsSetFH = 0;
-        }
-        else // Trips/Set is entirely on the Board (Your Case: 6H 6S 6C 7D)
-        {
-            // If the set is on the board, the 4th card (e.g., 6D) makes quads on the board.
-            // Since your hole cards (9D JD) don't include the rank 6, hitting the 4th 6 does NOT improve your hand.
-            // Therefore, Quads out is 0. FH outs are also 0 as they don't use your hole cards.
-            numTurnOutsSetQuads = 0;
-            numTurnOutsSetFH = 0;
-            numTurnOutsTripsFH = 0;
         }
     }
     else if (numTurnRanksWithPair >= 2)
     {
-        // Two Pair to Full House
+        // Two Pair to Full House: 4 outs
         numTurnOutsTwoPairFH = 4;
     }
     else if (numTurnRanksWithPair === 1)
     {
-        // Check if one hole card + one board card makes the pair
-        if (numHoleCard1Rank !== numHoleCard2Rank &&
-            ((arrTurnRankCounts[numHoleCard1Rank] === 2) || (arrTurnRankCounts[numHoleCard2Rank] === 2)))
+        // One Pair to Set (2 outs)
+        // Check if hole cards made the pair
+        // FIX: Replaced numTurnRankCounts with arrTurnRankCounts
+        if (numHoleCard1Rank === numHoleCard2Rank || arrTurnRankCounts[numHoleCard1Rank] === 2 || arrTurnRankCounts[numHoleCard2Rank] === 2)
         {
-            // NEW LOGIC: Assign to One Pair to Trips (2 outs)
-            numTurnOutsOnePairToTrips = 2;
-        }
-        // Check hole cards for a pocket pair
-        else if (numHoleCard1Rank === numHoleCard2Rank)
-        {
-            // Hole Pair to Set
             numTurnOutsPairSet = 2;
         }
 
@@ -601,49 +591,25 @@ function fncCountOuts()
         }
     }
 
-    // --- SECONDARY FULL HOUSE/QUADS CHECK (To include your Nines/Jacks outs) ---
-    // If the board has trips (e.g., 666) and your hand is unpaired (9J), your outs are the remaining 9s and Js.
-    if (numTurnRanksWithThree === 1 && numTurnRankTrip !== numHoleCard1Rank && numTurnRankTrip !== numHoleCard2Rank)
-    {
-        // The board has trips (e.g., 666) and neither hole card is that rank.
-        let outsToFH = 0;
 
-        // Count outs to pair hole card 1 (e.g., 9D)
-        if (arrTurnRankCounts[numHoleCard1Rank] === 1)
-        {
-            outsToFH += 2; // Remaining 9s
-        }
-
-        // Count outs to pair hole card 2 (e.g., JD)
-        if (arrTurnRankCounts[numHoleCard2Rank] === 1)
-        {
-            outsToFH += 2; // Remaining Js
-        }
-
-        // Use the 'No Pair to Pair' variable to store these outs since it better reflects the draw.
-        // For this specific case (9D JD on 6H 6S 6C 7D), your only outs are the 4 cards for FH (9s/Js).
-        if (outsToFH > 0) {
-            numTurnOutsNoPairPair = outsToFH;
-        } else {
-            // Ensure simple No Pair to Pair isn't counted if a set is on the board
-            numTurnOutsNoPairPair = 0;
-        }
-    }
-
-    // 2. Straight Draws (Logic remains the same)
+    // 2. Straight Draws
     let arrTurnStraightRanks = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
     for (numIdxTurn = 0; numIdxTurn < numTurnCardsCount; numIdxTurn++)
     {
         arrTurnStraightRanks[fncGetRankValue(arrCards[numIdxTurn])] = 1;
     }
 
+    // Check for 5-card run
     numTurnOutsInsideStraight = 0;
     numTurnOutsOESD = 0;
 
-    for (numIdxRank = 2; numIdxRank <= 10; numIdxRank++)
+    for (numIdxRank = 2; numIdxRank <= 10; numIdxRank++) // Check runs of 5 up to 14 (A)
     {
         let numCardsInRun = 0;
         let numGaps = 0;
+        let numGapPosition = -1;
+
+        // Check for 5-card sequence (numIdxRank to numIdxRank + 4)
         for (let numOffset = 0; numOffset < 5; numOffset++)
         {
             if (arrTurnStraightRanks[numIdxRank + numOffset] === 1)
@@ -653,32 +619,38 @@ function fncCountOuts()
             else
             {
                 numGaps++;
+                numGapPosition = numIdxRank + numOffset;
             }
         }
 
         if (numCardsInRun === 4 && numGaps === 1)
         {
+            // Inside Straight Draw (Gutshot)
             numTurnOutsInsideStraight = 4;
+            // Handle A-5 wrap around separately to avoid index out of bounds on A+1
         }
         else if (numCardsInRun === 3 && numGaps === 2)
         {
+            // Check for Open-Ended Straight Draw
             if (arrTurnStraightRanks[numIdxRank] === 0 && arrTurnStraightRanks[numIdxRank + 4] === 0)
             {
+                // Both ends are open
                 numTurnOutsOESD = 8;
             }
         }
     }
+    // Check A-5 special straight draw (T to A)
     if (arrTurnStraightRanks[14] === 1 && arrTurnStraightRanks[2] === 1 && arrTurnStraightRanks[3] === 1 && arrTurnStraightRanks[4] === 1 && arrTurnStraightRanks[5] === 0)
     {
-        numTurnOutsInsideStraight = 4;
+        numTurnOutsInsideStraight = 4; // A-4 missing 5
     }
     else if (arrTurnStraightRanks[14] === 1 && arrTurnStraightRanks[2] === 1 && arrTurnStraightRanks[3] === 1 && arrTurnStraightRanks[4] === 0 && arrTurnStraightRanks[5] === 1)
     {
-        numTurnOutsInsideStraight = 4;
+        numTurnOutsInsideStraight = 4; // A-5 missing 4
     }
 
 
-    // 3. Flush Draws (Logic remains the same)
+    // 3. Flush Draws
     let numTurnBestSuitCount = 0;
     for (numIdx = 0; numIdx < 4; numIdx++)
     {
@@ -687,6 +659,7 @@ function fncCountOuts()
             numTurnBestSuitCount = arrTurnSuitCounts[numIdx];
         }
     }
+
     if (numTurnBestSuitCount === 4)
     {
         numTurnOutsFlushDraw = 9;
@@ -696,101 +669,45 @@ function fncCountOuts()
         numTurnOutsFlushDraw = 0;
     }
 
-    // 4. Combine/Eliminate double counts & Total Outs Calculation
 
-    // Straight/Flush combinations first
+    // 4. Combine/Eliminate double counts (Outs = 4/8/9) - For output only
     if (numTurnOutsInsideStraight > 0 && numTurnOutsFlushDraw > 0)
     {
         numTurnOutsInsideStraightFlush = 12; // 4 + 9 - 1
-        numTurnOutsTotal = 12;
     }
     else if (numTurnOutsOESD > 0 && numTurnOutsFlushDraw > 0)
     {
         numTurnOutsOESDFlushDraw = 15; // 8 + 9 - 2
-        numTurnOutsTotal = 15;
-    }
-    else
-    {
-        numTurnOutsTotal = numTurnOutsInsideStraight + numTurnOutsOESD + numTurnOutsFlushDraw;
     }
 
-    // Add all non-drawing outs
-    numTurnOutsTotal += numTurnOutsPairSet;
-    numTurnOutsTotal += numTurnOutsOnePairToTrips;
-    numTurnOutsTotal += numTurnOutsOvercardPair;
-    numTurnOutsTotal += numTurnOutsTwoPairFH;
-    numTurnOutsTotal += numTurnOutsSetFH;
-    numTurnOutsTotal += numTurnOutsTripsFH;
-    numTurnOutsTotal += numTurnOutsSetQuads;
-    numTurnOutsTotal += numTurnOutsNoPairPair;
 
-    // Final simplified Turn Outs output array alignment
+    // Final simplified Turn Outs output
     let arrTurnOutsCounts =
     [
-        numTurnOutsPairSet, // One Pair to Set (0)
-        numTurnOutsOnePairToTrips, // One Pair to Trips (1)
-        numTurnOutsOvercardPair, // One Overcard to Pair (2)
-        numTurnOutsInsideStraight, // Inside Straight Draw (3)
-        numTurnOutsTwoPairFH, // Two Pair to Full House (4)
-        0, // One Pair to Two Pair (5)
-        numTurnOutsNoPairPair, // No Pair to Pair (6)
-        numTurnOutsSetFH, // Set to Full House (7)
-        numTurnOutsTripsFH, // Trips to Full House (8)
-        0, // Two Overcards to Over Pair (9)
-        numTurnOutsSetQuads, // Set to Full Quads (10)
-        numTurnOutsSetQuads, // Set to Four of a Kind (11)
-        numTurnOutsOESD, // Open-Ended Straight Draw (12)
-        numTurnOutsFlushDraw, // Flush Draw (13)
-        numTurnOutsInsideStraight > 0 && numTurnOutsNoPairPair > 0 ? numTurnOutsInsideStraight : 0, // Inside Straight Draw & Two Overcards (14)
-        numTurnOutsInsideStraightFlush, // Inside Straight Draw & Flush (15)
-        numTurnOutsOESDFlushDraw // Open Straight Draw & Flush Draw (16)
+        numTurnOutsPairSet,
+        numTurnOutsOvercardPair,
+        numTurnOutsInsideStraight,
+        numTurnOutsTwoPairFH,
+        0, // One Pair to Two Pair
+        numTurnOutsNoPairPair,
+        numTurnOutsSetFH,
+        numTurnOutsTripsFH,
+        0, // Two Overcards to Over Pair
+        numTurnOutsSetQuads,
+        numTurnOutsSetQuads, // Set to Four of a Kind
+        numTurnOutsOESD,
+        numTurnOutsFlushDraw,
+        numTurnOutsInsideStraight > 0 && numTurnOutsNoPairPair > 0 ? numTurnOutsInsideStraight : 0, // Inside Straight Draw & Two Overcards
+        numTurnOutsInsideStraightFlush,
+        numTurnOutsOESDFlushDraw
     ];
 
     for (numIdx = 0; numIdx < arrOutsNames.length; numIdx++)
     {
-        // Custom logic to display 0 for raw draws if combined draws exist
-        if (arrOutsNames[numIdx] === "Inside Straight Draw & Flush")
-        {
-            console.log(arrOutsNames[numIdx] + " - " + numTurnOutsInsideStraightFlush);
-            if (numTurnOutsInsideStraightFlush != 0)
-            {
-              objConsoleLog.innerHTML += arrOutsNames[numIdx] + " - " + numTurnOutsInsideStraightFlush + `\n`;
-            }
-        }
-        else if (arrOutsNames[numIdx] === "Open Straight Draw & Flush Draw")
-        {
-            console.log(arrOutsNames[numIdx] + " - " + numTurnOutsOESDFlushDraw);
-            if (numTurnOutsOESDFlushDraw != 0)
-            {
-              objConsoleLog.innerHTML += arrOutsNames[numIdx] + " - " + numTurnOutsOESDFlushDraw + `\n`;
-            }
-        }
-        else if (numTurnOutsInsideStraightFlush > 0 && (arrOutsNames[numIdx] === "Inside Straight Draw" || arrOutsNames[numIdx] === "Flush Draw"))
-        {
-            console.log(arrOutsNames[numIdx] + " - 0");
-//            objConsoleLog.innerHTML += arrOutsNames[numIdx] + " - 0" + `\n`;
-        }
-        else if (numTurnOutsOESDFlushDraw > 0 && (arrOutsNames[numIdx] === "Open-Ended Straight Draw" || arrOutsNames[numIdx] === "Flush Draw"))
-        {
-            console.log(arrOutsNames[numIdx] + " - 0");
-//            objConsoleLog.innerHTML += arrOutsNames[numIdx] + " - 0" + `\n`;
-        }
-        else
-        {
-            console.log(arrOutsNames[numIdx] + " - " + arrTurnOutsCounts[numIdx]);
-            if (arrTurnOutsCounts[numIdx] != 0)
-            {
-              objConsoleLog.innerHTML += arrOutsNames[numIdx] + " - " + arrTurnOutsCounts[numIdx] + `\n`;
-            }
-        }
+        console.log(arrOutsNames[numIdx] + " - " + arrTurnOutsCounts[numIdx]);
     }
-
-    console.log("Total Outs after Turn - " + numTurnOutsTotal);
-    objConsoleLog.innerHTML += `\n` + ">>> Total Outs after Turn - " + numTurnOutsTotal + `\n\n`;
-
-    console.log("Total Outs (Flop + Turn) - " + (numFlopOutsTotal + numTurnOutsTotal));
-    objConsoleLog.innerHTML += ">>> Total Outs (Flop + Turn) - " + (numFlopOutsTotal + numTurnOutsTotal) + `\n`;
 }
+
 
 /*--------------------------------------------------------------------------------------------------*/
 //  console.log('ZZZ…');

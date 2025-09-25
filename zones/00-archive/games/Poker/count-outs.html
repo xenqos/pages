@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Poker Outs Trainer</title>
+</head>
+<body>
+  <h2>Poker Outs Trainer</h2>
+  <div id="scenario"></div>
+  <input type="number" id="userOuts" placeholder="Enter your outs">
+  <button onclick="checkOuts()">Check</button>
+  <p id="feedback"></p>
+  <button onclick="newScenario()">New Scenario</button>
+
+  <script>
+    const suits = ['♠', '♥', '♦', '♣'];
+    const ranks = ['2', '3', '4', '5', '6', '7', '8', '9', 'T', 'J', 'Q', 'K', 'A'];
+
+    let playerHand = [];
+    let flop = [];
+    let correctOuts = 0;
+
+    function getRandomCard(exclude = []) {
+      let card;
+      do {
+        const rank = ranks[Math.floor(Math.random() * ranks.length)];
+        const suit = suits[Math.floor(Math.random() * suits.length)];
+        card = rank + suit;
+      } while (exclude.includes(card));
+      return card;
+    }
+
+    function newScenario() {
+      let usedCards = [];
+      playerHand = [getRandomCard(usedCards)];
+      usedCards.push(playerHand[0]);
+      playerHand.push(getRandomCard(usedCards));
+      usedCards.push(playerHand[1]);
+
+      flop = [];
+      for (let i = 0; i < 3; i++) {
+        const card = getRandomCard(usedCards);
+        flop.push(card);
+        usedCards.push(card);
+      }
+
+      // Simple draw detection: flush draw
+      const allCards = [...playerHand, ...flop];
+      const suitsCount = {};
+      allCards.forEach(card => {
+        const suit = card[1];
+        suitsCount[suit] = (suitsCount[suit] || 0) + 1;
+      });
+
+      correctOuts = 0;
+      for (let suit in suitsCount) {
+        if (suitsCount[suit] === 4) {
+          correctOuts = 9; // Flush draw (13 total - 4 seen)
+        }
+      }
+
+      document.getElementById('scenario').innerText = `Your Hand: ${playerHand.join(' ')} | Flop: ${flop.join(' ')}\n\nCount your outs to complete a FLUSH.`;
+      document.getElementById('feedback').innerText = '';
+      document.getElementById('userOuts').value = '';
+    }
+
+    function checkOuts() {
+      const userGuess = parseInt(document.getElementById('userOuts').value);
+      if (userGuess === correctOuts) {
+        document.getElementById('feedback').innerText = "✅ Correct!";
+      } else {
+        document.getElementById('feedback').innerText = `❌ Incorrect. The correct number of outs was ${correctOuts}.`;
+      }
+    }
+
+    // Initialize first scenario
+    newScenario();
+  </script>
+</body>
+</html>
