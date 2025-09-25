@@ -91,8 +91,8 @@ function fncCountOuts()
         "Open Straight Draw & Flush Draw"
     ];
 
-    strOutsTable += `<br><br><table><tbody>\n`;
-    strOutsTable += `<tr><td colspan=2>Flop</td></tr>\n`;
+    strOutsTable += `<br><table class='clNoBorder'><tbody>\n`;
+    strOutsTable += `<tr><td colspan=2 class='m'><b>Flop</b></td></tr>\n`;
 
     // Card numerical value mapping function (not a separate function call)
     let numCardValue = 0;
@@ -460,7 +460,7 @@ function fncCountOuts()
     console.log("Total Outs after Flop - " + numFlopOutsTotal);
 //    objConsoleLog.innerHTML += `\n` + ">>> Total Outs after Flop - " + numFlopOutsTotal + `\n\n`;
 //    objOutsDiv.innerHTML += `<h4>Total Outs after Flop - ${numFlopOutsTotal}</h4>`;
-    strOutsTable += `<tr><td>Total after Flop</td><td>${numFlopOutsTotal}</td></tr>\n`;
+    strOutsTable += `<tr><td>Total</td><td class='e'><b>${numFlopOutsTotal}</b></td></tr>\n`;
 
     console.log("\n-------------------------------------------");
 
@@ -470,7 +470,9 @@ function fncCountOuts()
     console.log("--- Outs After Turn ---");
 //    objConsoleLog.innerHTML += `\n` + ">>> Outs After Turn" + `\n\n`;
 //    objOutsDiv.innerHTML += '<h2>Turn</h2>';
-    strOutsTable += `<tr><td colspan=2><strong>Turn</strong></td></tr>\n`;
+//    strOutsTable += `<tr><td colspan=2>&nbsp;</td></tr>\n`;
+    strOutsTable += `<tr><td colspan=2>&nbsp;</td></tr>\n`;
+    strOutsTable += `<tr><td colspan=2 class='m'><b>Turn</b></td></tr>\n`;
 
     // Variables for the Turn stage
     let numTurnCardsCount = 6;
@@ -798,7 +800,8 @@ function fncCountOuts()
     console.log("Total Outs after Turn - " + numTurnOutsTotal);
 //    objConsoleLog.innerHTML += `\n` + ">>> Total Outs after Turn - " + numTurnOutsTotal + `\n\n`;
 //    objOutsDiv.innerHTML += `<h4>Total Outs after Turn - ${numTurnOutsTotal}</h4>`;
-    strOutsTable += `<tr><td>Total after Turn</td><td>${numTurnOutsTotal}</td></tr>\n`;
+//    strOutsTable += `<tr><td>Total after Turn</td><td>${numTurnOutsTotal}</td></tr>\n`;
+    strOutsTable += `<tr><td>Total</td><td class='e'><b>${numTurnOutsTotal}</b></td></tr>\n`;
     strOutsTable += `</tbody></table>\n`;
     strOutsTable += `</div>\n`;
 
