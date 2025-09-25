@@ -10,6 +10,8 @@ let arrCards = [];
 let booTurn = false;
 let objConsoleLog = null;
 let objOutsDiv = null;
+let objOutsTable = null;
+let strOutsTable = '';
 
 /*--------------------------------------------------------------------------------------------------*/
 
@@ -18,8 +20,11 @@ function fncDealCards()
   arrCards.length = 0;
   objConsoleLog = document.getElementById('idConsoleLog');
   objOutsDiv = document.getElementById('idOutsDiv');
+  objOutsTable = document.getElementById('idOutsTable');
   objConsoleLog.innerHTML = '';
   objOutsDiv.innerHTML = '';
+  objOutsTable.innerHTML = '';
+  strOutsTable = '';
 
   while (arrCards.length < 6)
   {
@@ -74,21 +79,9 @@ function fncShowTurn()
 function fncCountOuts()
 {
     console.clear()
-
-//    const arrCards = [ "9D", "JD", "6H", "6S", "6C", "7D" ];
-
     console.log("Hand Tested: ", arrCards)
 //    objConsoleLog.innerHTML += ">>> Hand Tested: " + arrCards + `\n\n`;
 
-    // Define card representations
-//    const arrRanks =
-//    [
-//        '2', '3', '4', '5', '6', '7', '8', '9', 'T', 'J', 'Q', 'K', 'A'
-//    ];
-//    const arrSuits =
-//    [
-//        'S', 'H', 'C', 'D'
-//    ];
     const arrOutsNames =
     [
         "One Pair to Set", "One Pair to Trips", "One Overcard to Pair", "Inside Straight Draw", "Two Pair to Full House",
@@ -97,6 +90,9 @@ function fncCountOuts()
         "Flush Draw", "Inside Straight Draw & Two Overcards", "Inside Straight Draw & Flush",
         "Open Straight Draw & Flush Draw"
     ];
+
+    strOutsTable += `<br><br><table><tbody>\n`;
+    strOutsTable += `<tr><td colspan=2>Flop</td></tr>\n`;
 
     // Card numerical value mapping function (not a separate function call)
     let numCardValue = 0;
@@ -162,8 +158,6 @@ function fncCountOuts()
     // 1st Block: After Flop (arrCards[0] to arrCards[4])
     // -------------------------------------------------------------------------
     console.log("--- Outs After Flop ---");
-//    objConsoleLog.innerHTML += '>>> Outs After Flop' + `\n\n`;
-    objOutsDiv.innerHTML += '<h2>Flop</h2>';
 
     // Variables for the Flop stage
     let numFlopCardsCount = 5;
@@ -348,7 +342,6 @@ function fncCountOuts()
         }
     }
 
-
     // 3. Flush Draws (Logic remains the same)
     let numBestSuitCount = 0;
     for (numIdx = 0; numIdx < 4; numIdx++)
@@ -366,7 +359,6 @@ function fncCountOuts()
     {
         numFlopOutsFlushDraw = 0;
     }
-
 
     // 4. Combine/Eliminate double counts & Total Outs Calculation
 
@@ -428,7 +420,8 @@ function fncCountOuts()
             if (numFlopOutsInsideStraightFlush != 0)
             {
 //              objConsoleLog.innerHTML += arrOutsNames[numIdx] + " - " + numFlopOutsInsideStraightFlush + `\n`;
-              objOutsDiv.innerHTML += `<div>${arrOutsNames[numIdx]} - numFlopOutsInsideStraightFlush</div>`;
+//              objOutsDiv.innerHTML += `<div>${arrOutsNames[numIdx]} - numFlopOutsInsideStraightFlush</div>`;
+              strOutsTable += `<tr><td>${arrOutsNames[numIdx]}</td><td>numFlopOutsInsideStraightFlush</td></tr>\n`;
             }
         }
         else if (arrOutsNames[numIdx] === "Open Straight Draw & Flush Draw")
@@ -437,7 +430,8 @@ function fncCountOuts()
             if (numFlopOutsOESDFlushDraw != 0)
             {
 //              objConsoleLog.innerHTML += arrOutsNames[numIdx] + " - " + numFlopOutsOESDFlushDraw + `\n`;
-              objOutsDiv.innerHTML += `<div>${arrOutsNames[numIdx]} - numFlopOutsOESDFlushDraw</div>`;
+//              objOutsDiv.innerHTML += `<div>${arrOutsNames[numIdx]} - numFlopOutsOESDFlushDraw</div>`;
+              strOutsTable += `<tr><td>${arrOutsNames[numIdx]}</td><td>numFlopOutsOESDFlushDraw</td></tr>\n`;
             }
         }
         else if (numFlopOutsInsideStraightFlush > 0 && (arrOutsNames[numIdx] === "Inside Straight Draw" || arrOutsNames[numIdx] === "Flush Draw"))
@@ -457,14 +451,16 @@ function fncCountOuts()
             if (arrFlopOutsCounts[numIdx] != 0)
             {
 //              objConsoleLog.innerHTML += arrOutsNames[numIdx] + " - " + arrFlopOutsCounts[numIdx] + `\n`;
-              objOutsDiv.innerHTML += `<div>${arrOutsNames[numIdx]} - ${arrFlopOutsCounts[numIdx]}</div>`;
+//              objOutsDiv.innerHTML += `<div>${arrOutsNames[numIdx]} - ${arrFlopOutsCounts[numIdx]}</div>`;
+              strOutsTable += `<tr><td>${arrOutsNames[numIdx]}</td><td>${arrFlopOutsCounts[numIdx]}</td></tr>\n`;
             }
         }
     }
 
     console.log("Total Outs after Flop - " + numFlopOutsTotal);
 //    objConsoleLog.innerHTML += `\n` + ">>> Total Outs after Flop - " + numFlopOutsTotal + `\n\n`;
-    objOutsDiv.innerHTML += `<h4>Total Outs after Flop - ${numFlopOutsTotal}</h4>`;
+//    objOutsDiv.innerHTML += `<h4>Total Outs after Flop - ${numFlopOutsTotal}</h4>`;
+    strOutsTable += `<tr><td>Total after Flop</td><td>${numFlopOutsTotal}</td></tr>\n`;
 
     console.log("\n-------------------------------------------");
 
@@ -473,8 +469,8 @@ function fncCountOuts()
     // -------------------------------------------------------------------------
     console.log("--- Outs After Turn ---");
 //    objConsoleLog.innerHTML += `\n` + ">>> Outs After Turn" + `\n\n`;
-    objOutsDiv.innerHTML += '<h2>Turn</h2>';
-
+//    objOutsDiv.innerHTML += '<h2>Turn</h2>';
+    strOutsTable += `<tr><td colspan=2><strong>Turn</strong></td></tr>\n`;
 
     // Variables for the Turn stage
     let numTurnCardsCount = 6;
@@ -763,7 +759,8 @@ function fncCountOuts()
             if (numTurnOutsInsideStraightFlush != 0)
             {
 //             objConsoleLog.innerHTML += arrOutsNames[numIdx] + " - " + numTurnOutsInsideStraightFlush + `\n`;
-              objOutsDiv.innerHTML += `<div>${arrOutsNames[numIdx]} - ${numTurnOutsInsideStraightFlush}</div>`;
+//              objOutsDiv.innerHTML += `<div>${arrOutsNames[numIdx]} - ${numTurnOutsInsideStraightFlush}</div>`;
+              strOutsTable += `<tr><td>${arrOutsNames[numIdx]}</td><td>${numTurnOutsInsideStraightFlush}</td></tr>\n`;
             }
         }
         else if (arrOutsNames[numIdx] === "Open Straight Draw & Flush Draw")
@@ -772,7 +769,8 @@ function fncCountOuts()
             if (numTurnOutsOESDFlushDraw != 0)
             {
 //              objConsoleLog.innerHTML += arrOutsNames[numIdx] + " - " + numTurnOutsOESDFlushDraw + `\n`;
-              objOutsDiv.innerHTML += `<div>${arrOutsNames[numIdx]} - ${numTurnOutsOESDFlushDraw}</div>`;
+//              objOutsDiv.innerHTML += `<div>${arrOutsNames[numIdx]} - ${numTurnOutsOESDFlushDraw}</div>`;
+              strOutsTable += `<tr><td>${arrOutsNames[numIdx]}</td><td>${numTurnOutsOESDFlushDraw}</td></tr>\n`;
             }
         }
         else if (numTurnOutsInsideStraightFlush > 0 && (arrOutsNames[numIdx] === "Inside Straight Draw" || arrOutsNames[numIdx] === "Flush Draw"))
@@ -791,14 +789,24 @@ function fncCountOuts()
             if (arrTurnOutsCounts[numIdx] != 0)
             {
 //              objConsoleLog.innerHTML += arrOutsNames[numIdx] + " - " + arrTurnOutsCounts[numIdx] + `\n`;
-              objOutsDiv.innerHTML += `<div>${arrOutsNames[numIdx]} - ${arrTurnOutsCounts[numIdx]}</div>`;
+//              objOutsDiv.innerHTML += `<div>${arrOutsNames[numIdx]} - ${arrTurnOutsCounts[numIdx]}</div>`;
+              strOutsTable += `<tr><td>${arrOutsNames[numIdx]}</td><td>${arrTurnOutsCounts[numIdx]}</td></tr>\n`;
             }
         }
     }
 
     console.log("Total Outs after Turn - " + numTurnOutsTotal);
 //    objConsoleLog.innerHTML += `\n` + ">>> Total Outs after Turn - " + numTurnOutsTotal + `\n\n`;
-    objOutsDiv.innerHTML += `<h4>Total Outs after Turn - ${numTurnOutsTotal}</h4>`;
+//    objOutsDiv.innerHTML += `<h4>Total Outs after Turn - ${numTurnOutsTotal}</h4>`;
+    strOutsTable += `<tr><td>Total after Turn</td><td>${numTurnOutsTotal}</td></tr>\n`;
+    strOutsTable += `</tbody></table>\n`;
+    strOutsTable += `</div>\n`;
+
+    objOutsTable.innerHTML += `${strOutsTable}\n`;
+
+//    objOutsDiv.innerHTML += "</tr>";
+//    objOutsDiv.innerHTML += "</table>";
+//    objOutsDiv.innerHTML += "</div>";
 }
 
 /*--------------------------------------------------------------------------------------------------*/
