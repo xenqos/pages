@@ -63,6 +63,7 @@ function fncShowTurn()
   }
   else
   {
+//    sleep(100);
     booTurn = false;
     fncDealCards();
   }
@@ -161,7 +162,7 @@ function fncCountOuts()
     // 1st Block: After Flop (arrCards[0] to arrCards[4])
     // -------------------------------------------------------------------------
     console.log("--- Outs After Flop ---");
-    objConsoleLog.innerHTML += '>>> Outs After Flop' + `\n\n`;
+//    objConsoleLog.innerHTML += '>>> Outs After Flop' + `\n\n`;
     objOutsDiv.innerHTML += '<h2>Flop</h2>';
 
     // Variables for the Flop stage
@@ -426,7 +427,8 @@ function fncCountOuts()
             console.log(arrOutsNames[numIdx] + " - " + numFlopOutsInsideStraightFlush);
             if (numFlopOutsInsideStraightFlush != 0)
             {
-              objConsoleLog.innerHTML += arrOutsNames[numIdx] + " - " + numFlopOutsInsideStraightFlush + `\n`;
+//              objConsoleLog.innerHTML += arrOutsNames[numIdx] + " - " + numFlopOutsInsideStraightFlush + `\n`;
+              objOutsDiv.innerHTML += `<div>${arrOutsNames[numIdx]} - numFlopOutsInsideStraightFlush</div>`;
             }
         }
         else if (arrOutsNames[numIdx] === "Open Straight Draw & Flush Draw")
@@ -434,7 +436,8 @@ function fncCountOuts()
             console.log(arrOutsNames[numIdx] + " - " + numFlopOutsOESDFlushDraw);
             if (numFlopOutsOESDFlushDraw != 0)
             {
-              objConsoleLog.innerHTML += arrOutsNames[numIdx] + " - " + numFlopOutsOESDFlushDraw + `\n`;
+//              objConsoleLog.innerHTML += arrOutsNames[numIdx] + " - " + numFlopOutsOESDFlushDraw + `\n`;
+              objOutsDiv.innerHTML += `<div>${arrOutsNames[numIdx]} - numFlopOutsOESDFlushDraw</div>`;
             }
         }
         else if (numFlopOutsInsideStraightFlush > 0 && (arrOutsNames[numIdx] === "Inside Straight Draw" || arrOutsNames[numIdx] === "Flush Draw"))
@@ -453,13 +456,15 @@ function fncCountOuts()
             console.log(arrOutsNames[numIdx] + " - " + arrFlopOutsCounts[numIdx]);
             if (arrFlopOutsCounts[numIdx] != 0)
             {
-              objConsoleLog.innerHTML += arrOutsNames[numIdx] + " - " + arrFlopOutsCounts[numIdx] + `\n`;
+//              objConsoleLog.innerHTML += arrOutsNames[numIdx] + " - " + arrFlopOutsCounts[numIdx] + `\n`;
+              objOutsDiv.innerHTML += `<div>${arrOutsNames[numIdx]} - ${arrFlopOutsCounts[numIdx]}</div>`;
             }
         }
     }
 
     console.log("Total Outs after Flop - " + numFlopOutsTotal);
-    objConsoleLog.innerHTML += `\n` + ">>> Total Outs after Flop - " + numFlopOutsTotal + `\n\n`;
+//    objConsoleLog.innerHTML += `\n` + ">>> Total Outs after Flop - " + numFlopOutsTotal + `\n\n`;
+    objOutsDiv.innerHTML += `<h4>Total Outs after Flop - ${numFlopOutsTotal}</h4>`;
 
     console.log("\n-------------------------------------------");
 
@@ -467,6 +472,9 @@ function fncCountOuts()
     // 2nd Block: After Turn (arrCards[0] to arrCards[5])
     // -------------------------------------------------------------------------
     console.log("--- Outs After Turn ---");
+//    objConsoleLog.innerHTML += `\n` + ">>> Outs After Turn" + `\n\n`;
+    objOutsDiv.innerHTML += '<h2>Turn</h2>';
+
 
     // Variables for the Turn stage
     let numTurnCardsCount = 6;
@@ -754,7 +762,8 @@ function fncCountOuts()
             console.log(arrOutsNames[numIdx] + " - " + numTurnOutsInsideStraightFlush);
             if (numTurnOutsInsideStraightFlush != 0)
             {
-              objConsoleLog.innerHTML += arrOutsNames[numIdx] + " - " + numTurnOutsInsideStraightFlush + `\n`;
+//             objConsoleLog.innerHTML += arrOutsNames[numIdx] + " - " + numTurnOutsInsideStraightFlush + `\n`;
+              objOutsDiv.innerHTML += `<div>${arrOutsNames[numIdx]} - ${numTurnOutsInsideStraightFlush}</div>`;
             }
         }
         else if (arrOutsNames[numIdx] === "Open Straight Draw & Flush Draw")
@@ -762,7 +771,8 @@ function fncCountOuts()
             console.log(arrOutsNames[numIdx] + " - " + numTurnOutsOESDFlushDraw);
             if (numTurnOutsOESDFlushDraw != 0)
             {
-              objConsoleLog.innerHTML += arrOutsNames[numIdx] + " - " + numTurnOutsOESDFlushDraw + `\n`;
+//              objConsoleLog.innerHTML += arrOutsNames[numIdx] + " - " + numTurnOutsOESDFlushDraw + `\n`;
+              objOutsDiv.innerHTML += `<div>${arrOutsNames[numIdx]} - ${numTurnOutsOESDFlushDraw}</div>`;
             }
         }
         else if (numTurnOutsInsideStraightFlush > 0 && (arrOutsNames[numIdx] === "Inside Straight Draw" || arrOutsNames[numIdx] === "Flush Draw"))
@@ -780,16 +790,15 @@ function fncCountOuts()
             console.log(arrOutsNames[numIdx] + " - " + arrTurnOutsCounts[numIdx]);
             if (arrTurnOutsCounts[numIdx] != 0)
             {
-              objConsoleLog.innerHTML += arrOutsNames[numIdx] + " - " + arrTurnOutsCounts[numIdx] + `\n`;
+//              objConsoleLog.innerHTML += arrOutsNames[numIdx] + " - " + arrTurnOutsCounts[numIdx] + `\n`;
+              objOutsDiv.innerHTML += `<div>${arrOutsNames[numIdx]} - ${arrTurnOutsCounts[numIdx]}</div>`;
             }
         }
     }
 
     console.log("Total Outs after Turn - " + numTurnOutsTotal);
-    objConsoleLog.innerHTML += `\n` + ">>> Total Outs after Turn - " + numTurnOutsTotal + `\n\n`;
-
-    console.log("Total Outs (Flop + Turn) - " + (numFlopOutsTotal + numTurnOutsTotal));
-    objConsoleLog.innerHTML += ">>> Total Outs (Flop + Turn) - " + (numFlopOutsTotal + numTurnOutsTotal) + `\n`;
+//    objConsoleLog.innerHTML += `\n` + ">>> Total Outs after Turn - " + numTurnOutsTotal + `\n\n`;
+    objOutsDiv.innerHTML += `<h4>Total Outs after Turn - ${numTurnOutsTotal}</h4>`;
 }
 
 /*--------------------------------------------------------------------------------------------------*/
