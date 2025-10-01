@@ -1,174 +1,223 @@
-## Verbs
+#  Английские глаголы. Классификация глаголов английского языка. 
 
-# Sequence of Tenses
-
-[|
-|Clause     |Предложение|
-|Principal  |Главное    |
-|Subordinate|Придаточное|
-|]
-
-### Rule 1
-
-[|
-|Principal  |Present|
-|Subordinate|Аny    |
-|]
-
-%[m|He says that he is fine.]
-%[m|He says that he was fine.]
-%[m|He says that he will be fine.]
-
-
-### Rule 2
-
-[|
-|Principal  |Future|
-|Subordinate|Аny   |
-|]
-
-%[m|He will say that he is fine.]
-%[m|He will say that he was fine.]
-%[m|He will say that he will be fine.]
-
-
-### Rule 3
-
-[|
-|Principal  |Past|
-|Subordinate|Past|
-|]
-
-%[m|He said that he would come.]
-%[m|He told me that he had been ill.]
-%[m|I knew that he would not pass.]
-%[m|We noticed that the fan had stopped.]
-
-
-### Rule 4
-
-[|
-|Principal  |Past|
-|Subordinate|Future in the Past|
-|]
-
-%[m|He said he would live in Europe.]
-%[m|He said he would try to help us.]
-
-
-### Rule 5
-
-[|
-|Principal  |Past   |
-|Subordinate|Present|
-|]
+**Глагол** – это самостоятельная часть речи, обозначающая действие или состояние предмета или лица.<br> В английском языке признаком глагола в неопределенной форме является частица **to**.
 
 [!
-Subordinate expresses Universal Truth
+%[m|to sing] – петь
 !]
-
-%[m|Copernicus proved that the earth moves round the sun.]
-%[m|The teacher told us that honesty is the best policy.]
-
-
-### Rule 6
-
-[|
-|Principal  |Past|
-|Subordinate|Any |
-|]
 
 [!
-Subordinate is Adjective Clause
+%[m|to draw] – рисовать
 !]
-
-%[m|Yesterday I met a man who sells balloons.]
-%[m|Yesterday I met a man who sold me a balloon.]
-
-
-### Rule 7
-
-[|
-|Principal  |Past|
-|Subordinate|Any |
-|]
 
 [!
-Subordinate expresses Place, Reason, Comparison
+%[m|to exist] – существовать
 !]
-
-%[m|He didn’t get the job because his English isn’t good.]
-%[m|A village once existed where now lies the city of London.]
-
-
-### Rule 8
-
-[|
-|Principal  |Present / Future|
-|Subordinate|%[m|may]|
-|]
 
 [!
-Subordinate starts with:
-&emsp;%[m|that]
+%[m|to stand] – стоять
 !]
 
-%[m|I study that I may pass.]
-%[m|I will study that I may pass.]
-%[m|We eat that we may live.]
-
-
-### Rule 9
-
-[|
-|Principal  |Past  |
-|Subordinate|%[m|might]|
-|]
+Чаще всего именно глагол является ключевой основой, вокруг которой строится предложение, поэтому глаголы почти во всех языках следуют сложным правилам грамматики и имеют большое число форм.
+<div id="adcom">
+<h2 class="mtitle" data-adcom="">
+Структура английских глаголов</h2>
+По структуре английские глаголы делятся на простые, производные, сложные и составные.
+**Простые** глаголы состоят только из одного корня:
 
 [!
-Subordinate starts with:
-&emsp;%[m|that]
+%[m|walk] – идти
 !]
-
-%[m|I studied that I might pass.]
-%[m|He ate that he might not die.]
-
-
-### Rule 10
-
-[|
-|Principal  |Future |
-|Subordinate|Present|
-|]
 
 [!
-Subordinate starts with:
-&emsp;%[m|when]
-&emsp;%[m|until]
-&emsp;%[m|before]
-&emsp;%[m|after]
+%[m|play] – играть
 !]
-
-%[m|I will call you when dinner is ready.]
-%[m|I shall wait until you return.]
-
-
-### Rule 11
-
-[|
-|Principal  |Any |
-|Subordinate|Past|
-|]
 
 [!
-Sentence contains:
-&emsp;%[m|as if]
-&emsp;%[m|if only]
-&emsp;%[m|it is time]
-&emsp;%[m|wish that]
+%[m|eat] – есть
 !]
 
-%[m|I wish I was a bit taller.]
-%[m|It is time we started working.]
-%[m|He talks as if he knew everything.]
+В **производных** глаголах, кроме корня, есть приставка и/или суффикс:
+
+[!
+%[m|**un**load] – разгружать
+!]
+
+[!
+%[m|**re**read] – перечитать
+!]
+
+[!
+%[m|**re**play] – переиграть
+!]
+
+**Сложные** глаголы состоят из двух основ:
+
+[!
+%[m|underline] – подчёркивать
+!]
+
+[!
+%[m|whitewash] – белить
+!]
+
+[!
+%[m|overtake] – догонять
+!]
+
+**Составные** (фразовые) глаголы состоят из глагола и наречия или предлога:
+
+[!
+%[m|look out] – высматривать
+!]
+
+[!
+%[m|stand up] – выдерживать
+!]
+
+[!
+%[m|pull off] – снимать
+!]
+
+По значению английские глаголы делятся на смысловые и служебные.
+**Смысловые** (самостоятельные) глаголы обладают собственным лексическим значением, они обозначают определенное действие или состояние:
+
+[!
+%[m|I **work** at the zoo.]
+Я работаю в зоопарке.
+!]
+
+**Служебные** глаголы не имеют самостоятельного значения. Они используются только для построения сложных форм глагола или составных сказуемых. В составных сказуемых спрягаются именно служебные глаголы, то
+есть при их помощи можно выразить лицо, число и время:
+
+[!
+%[m|I **am** going] – Я иду
+!]
+
+[!
+%[m|Jim **is** going] – Джим идет
+!]
+
+[!
+%[m|people **were** going] – люди шли
+!]
+
+<h2 class="mtitle">
+Служебные английские глаголы:</h2>
+
+**глаголы-связки**, соединяющие в предложении подлежащее с определенным состоянием (обычно выражаемым дополнением):
+
+[!
+%[m|to be]
+!]
+
+[!
+%[m|to become]
+!]
+
+[!
+%[m|to seem]
+!]
+
+[!
+%[m|to look]
+!]
+
+[!
+и др.
+!]
+
+[!
+%[m|She **got** hungry in the evening.]
+Она проголодалась вечером.
+!]
+
+**вспомогательные глаголы**, которые служат для образования сложных глагольных форм:
+
+[!
+%[m|to be]
+!]
+
+[!
+%[m|to do]
+!]
+
+[!
+%[m|to have]
+!]
+
+[!
+%[m|will]
+!]
+
+[!
+и др.
+!]
+
+[!
+%[m|We **have seen** it before.]
+Мы видели это раньше.
+!]
+
+**модальные глаголы**, которые отражают отношение говорящего к данному действию:
+
+[!
+%[m|can]
+!]
+
+[!
+%[m|may]
+!]
+
+[!
+%[m|must]
+!]
+
+[!
+%[m|need]
+!]
+
+[!
+и др.
+!]
+
+[!
+%[m|He **must** sing loudly.]
+Он должен петь громко.
+!]
+
+<h2 class="mtitle">
+Основные формы английского глагола:</h2>
+
+**инфинитив**
+
+[!
+%[m|to sing] – петь
+!]
+
+[!
+%[m|to travel] – путешествовать
+!]
+
+**прошедшее неопределенное время**
+
+[!
+%[m|sang] – пел
+!]
+
+[!
+%[m|travelled] – путешествовал
+!]
+
+**причастие прошедшего времени** (причастие второе)
+
+[!
+%[m|sung] – спевший
+!]
+
+[!
+%[m|travelled] – путешествовавший
+!]
+
+Иногда их называют соответственно первой, второй и третьей формой английского глагола. Эти основные формы служат для построения всех остальных глагольных форм, простых и сложных.
 

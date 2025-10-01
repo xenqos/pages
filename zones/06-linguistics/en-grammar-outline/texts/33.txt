@@ -1,0 +1,64 @@
+## Verbs
+
+# Categories
+
+### Number
+
+[-
+Singular
+Plural
+-]
+
+### Person
+
+[|
+^^Singular^Plural^
+|1st|%[m|I]|%[m|we  ]|
+|2nd|%[m|you]|%[m|you ]|
+|3rd|%[m|he], %[m|she], %[m|it]|%[m|they]|
+|]
+
+### Third-Person Singular
+
+
+##### Rule 1
+
+most verbs: -%[m|s]
+&emsp;%[m|sings]
+&emsp;%[m|gives]
+&emsp;%[m|takes]
+
+
+##### Rule 2
+
+verbs ending in -o, -s, -ss, -sh, -ch, -tch, -x, -z: -%[m|es]
+&emsp;%[m|goes]
+&emsp;%[m|watches]
+&emsp;%[m|misses]
+&emsp;%[m|rushes]
+&emsp;%[m|mixes]
+&emsp;%[m|buzzes]
+
+
+##### Rule 3
+
+verbs ending in consonant + y: -%[m|ies]
+&emsp;%[m|tries]
+&emsp;%[m|lies]
+
+
+##### Pronunciation
+
+после глухих согласных: %[m|s] - /%[l|s]/
+&emsp;%[m|works]
+&emsp;%[m|stops]
+
+после звонких согласных и гласных: %[m|s] - /%[l|z]/
+&emsp;%[m|says]
+&emsp;%[m|plays]
+&emsp;%[m|falls]
+
+после звонких согласных и гласных: %[m|es] - /%[l|iz]/
+&emsp;%[m|teaches]
+&emsp;%[m|washes]
+&emsp;%[m|studies]

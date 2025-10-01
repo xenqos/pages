@@ -1,0 +1,132 @@
+## Numerals ##
+
+## Numerals
+
+# Rules
+
+[!
+десятки и единицы разделяются дефисом
+!]
+
+%[m|twenty-one]
+%[m|seventy-three]
+
+[!
+тысячи, сотни и десятки, единицы разделяются and
+!]
+
+%[m|one hundred and one]
+%[m|three hundred and eighty-six]
+%[m|four thousand and thirty-four]
+%[m|six thousand seven hundred and thirty-nine]
+
+[!
+сотни, тысячи итд. в единственом числе
+!]
+
+[|
+|200  |%[m|two hundred]   |
+|3,000|%[m|three thousand]|
+|4,000|%[m|four million]  |
+|]
+
+[!
+целая и дробная части разделяются точкой
+!]
+
+%[m|67.14]
+%[m|48.32]
+
+[!
+разряды разделяются запятой
+!]
+
+%[m|1,467]
+%[m|345,845,234]
+
+[!
+между 1,000 и 2,000 числа произносятся сотнями
+!]
+
+[|
+|1,103|%[m|eleven hundred three]        |
+|1,225|%[m|twelve hundred twenty-five]  |
+|1,637|%[m|sixteen hundred thirty-seven]|
+|1,892|%[m|eighteen hundred ninety-two] |
+|]
+
+[!
+телефонные номера, номера кредитных карт и пр. читаются по цифрам
+!]
+
+89 568 90786 &ensp; %[m|eight nine five six eight nine oh seven eight six]
+
+[!
+произношение чисел в случае labels
+!]
+
+[|
+|101|%[m|a hundred and one            ]|%[m|one-oh-one     ]|
+|109|%[m|a hundred and nine           ]|%[m|one-oh-nine    ]|
+|110|%[m|a hundred and ten            ]|%[m|one-one-oh     ]|
+|117|%[m|a hundred and seventeen      ]|%[m|one-one-seven  ]|
+|120|%[m|a hundred and twenty         ]|%[m|one-two-zero   ]|
+|152|%[m|a hundred and fifty-two      ]|%[m|one-five-two   ]|
+|208|%[m|two hundred and eight        ]|%[m|two-oh-eight   ]|
+|394|%[m|three hundred and ninety-four]|%[m|three-nine-four]|
+|]
+
+[!
+произношение больших чисел
+!]
+
+[|
+|1,200,000    |%[m|1.2 million]|%[m|one point two million    ]|
+|3,000,000    |%[m|3 million  ]|%[m|three million            ]|
+|250,000,000  |%[m|250 million]|%[m|two hundred fifty million]|
+|6,400,000,000|%[m|6.4 billion]|%[m|six point four billion   ]|
+|]
+
+[!
+множители (наречия)
+!]
+
+[|
+|%[m|one time   ]|%[m|once  ]|
+|%[m|two times  ]|%[m|twice ]|
+|%[m|three times]|%[m|thrice]|
+|]
+
+[!
+множители (прилагательные)
+!]
+
+[|
+|×1  |%[m|singular   ]|%[m|solitary ]|%[m|one-off   ]|
+|×2  |%[m|twofold    ]|%[m|double   ]|%[m|duplicate ]|
+|×3  |%[m|threefold  ]|%[m|triple   ]|%[m|triplicate]|
+|×4  |%[m|fourfold   ]|%[m|quadruple]|               |
+|×5  |%[m|fivefold   ]|              |               |
+|×6  |%[m|sixfold    ]|              |               |
+|×7  |%[m|sevenfold  ]|              |               |
+|×8  |%[m|eightfold  ]|              |               |
+|×9  |%[m|ninefold   ]|              |               |
+|×10 |%[m|tenfold    ]|              |               |
+|×100|%[m|hundredfold]|              |               |
+|]
+
+[!
+Cardinal Numerals - без артикля; существительное первое, числительное второе.
+!]
+
+%[m|chapter one ]
+%[m|part two    ]
+%[m|lesson three]
+
+[!
+Ordinal Numerals - с артиклем; числительное первое, существительное второе.
+!]
+
+%[m|the first chapter]
+%[m|the second part]
+%[m|the third lesson]

@@ -1,132 +1,61 @@
-## Numerals ##
-
-## Numerals
-
-# Rules
-
-[!
-десятки и единицы разделяются дефисом
-!]
-
-%[m|twenty-one]
-%[m|seventy-three]
+<h1 itemprop="headline" class="title">Вопросительные местоимения в английском языке</h1>
+<meta itemprop="description" content="Особенности употребления вопросительных местоимений в английском языке." />
+<div itemprop="articleBody" class="article dtext">
+К вопросительным относятся следующие местоимения:
 
 [!
-тысячи, сотни и десятки, единицы разделяются and
+<span class="eng" data-audio="/dic_audio/9b/72/1d01c230cc55d7d0.mp3"><i class="sound-icon"></i>who</span> – который, кто
 !]
-
-%[m|one hundred and one]
-%[m|three hundred and eighty-six]
-%[m|four thousand and thirty-four]
-%[m|six thousand seven hundred and thirty-nine]
 
 [!
-сотни, тысячи итд. в единственом числе
+<span class="eng" data-audio="/dic_audio/1e/96/0e862b6e4b463560.mp3"><i class="sound-icon"></i>what</span> – что, какой
 !]
-
-[|
-|200  |%[m|two hundred]   |
-|3,000|%[m|three thousand]|
-|4,000|%[m|four million]  |
-|]
 
 [!
-целая и дробная части разделяются точкой
+<span class="eng" data-audio="/dic_audio/3a/59/9a4afc8886feaf22.mp3"><i class="sound-icon"></i>which</span> – который, кто, какой
 !]
-
-%[m|67.14]
-%[m|48.32]
 
 [!
-разряды разделяются запятой
+<span class="eng" data-audio="/dic_audio/82/81/67146c07a9e2aae0.mp3"><i class="sound-icon"></i>whose</span> – чей, чьё
 !]
-
-%[m|1,467]
-%[m|345,845,234]
 
 [!
-между 1,000 и 2,000 числа произносятся сотнями
+<span class="eng" data-audio="/dic_audio/77/ab/332029ad0eebd210.mp3"><i class="sound-icon"></i>whoever</span> – кто бы ни, который бы ни
 !]
-
-[|
-|1,103|%[m|eleven hundred three]        |
-|1,225|%[m|twelve hundred twenty-five]  |
-|1,637|%[m|sixteen hundred thirty-seven]|
-|1,892|%[m|eighteen hundred ninety-two] |
-|]
 
 [!
-телефонные номера, номера кредитных карт и пр. читаются по цифрам
+<span class="eng" data-audio="/dic_audio/4b/a6/5ee252ae47c82ced.mp3"><i class="sound-icon"></i>whatever</span> – что бы ни, (хоть) что-нибудь
 !]
-
-89 568 90786 &ensp; %[m|eight nine five six eight nine oh seven eight six]
 
 [!
-произношение чисел в случае labels
+<span class="eng" data-audio="/dic_audio/7e/28/b226ad031e4c61da.mp3"><i class="sound-icon"></i>whichever</span> – какой угодно, какой бы ни
 !]
 
-[|
-|101|%[m|a hundred and one            ]|%[m|one-oh-one     ]|
-|109|%[m|a hundred and nine           ]|%[m|one-oh-nine    ]|
-|110|%[m|a hundred and ten            ]|%[m|one-one-oh     ]|
-|117|%[m|a hundred and seventeen      ]|%[m|one-one-seven  ]|
-|120|%[m|a hundred and twenty         ]|%[m|one-two-zero   ]|
-|152|%[m|a hundred and fifty-two      ]|%[m|one-five-two   ]|
-|208|%[m|two hundred and eight        ]|%[m|two-oh-eight   ]|
-|394|%[m|three hundred and ninety-four]|%[m|three-nine-four]|
-|]
+**Вопросительные местоимения** («WH-words») используются для построения специальных вопросов.
+Они обозначают неизвестные спрашивающему лица или предметы, которые должны быть названы в ответе на вопрос.
+<h2 class="mtitle">
+Употребление вопросительных местоимений</h2>
+Из всех этих местоимений только **who** изменяется по падежам и имеет «официально» звучащую форму объектного падежа **whom**, однако в разговорной речи ее использование необязательно.
 
 [!
-произношение больших чисел
+<span class="eng" data-audio="/audio/12/e9/0aeb939e761b529b.mp3"><i class="sound-icon"></i>**Whom** did you invite for your birthday?</span><br>
+Кого ты пригласил на день рождения?
 !]
-
-[|
-|1,200,000    |%[m|1.2 million]|%[m|one point two million    ]|
-|3,000,000    |%[m|3 million  ]|%[m|three million            ]|
-|250,000,000  |%[m|250 million]|%[m|two hundred fifty million]|
-|6,400,000,000|%[m|6.4 billion]|%[m|six point four billion   ]|
-|]
+Местоимение **which**, в отличие от **what**, предполагает выбор между ограниченным набором лиц или предметов:
 
 [!
-множители (наречия)
+<span class="eng" data-audio="/audio/50/23/428f62efbd449c2d.mp3"><i class="sound-icon"></i>I'd paint my room in **blue or yellow**. **Which** of the colours do you like more?</span><br>
+Я бы покрасила свою комнату синим или желтым цветом. Который из этих (двух) цветов тебе нравится больше?
 !]
-
-[|
-|%[m|one time   ]|%[m|once  ]|
-|%[m|two times  ]|%[m|twice ]|
-|%[m|three times]|%[m|thrice]|
-|]
 
 [!
-множители (прилагательные)
+<span class="eng" data-audio="/audio/fa/36/2734838512cbb3f7.mp3"><i class="sound-icon"></i>I have no idea what colour to use in my room. **What** colours do you like?</span>
 !]
-
-[|
-|×1  |%[m|singular   ]|%[m|solitary ]|%[m|one-off   ]|
-|×2  |%[m|twofold    ]|%[m|double   ]|%[m|duplicate ]|
-|×3  |%[m|threefold  ]|%[m|triple   ]|%[m|triplicate]|
-|×4  |%[m|fourfold   ]|%[m|quadruple]|               |
-|×5  |%[m|fivefold   ]|              |               |
-|×6  |%[m|sixfold    ]|              |               |
-|×7  |%[m|sevenfold  ]|              |               |
-|×8  |%[m|eightfold  ]|              |               |
-|×9  |%[m|ninefold   ]|              |               |
-|×10 |%[m|tenfold    ]|              |               |
-|×100|%[m|hundredfold]|              |               |
-|]
+Понятия не имею, в какой цвет покрасить свою комнату. Какие цвета (любые) тебе нравятся?
+Местоимения **whoever**, **whichever** и **whatever** в вопросах передают изумление или негодование:
 
 [!
-Cardinal Numerals - без артикля; существительное первое, числительное второе.
+<span class="eng" data-audio="/audio/64/8f/6a714c50bcab860e.mp3"><i class="sound-icon"></i>**Whatever** is this thing on the floor?</span><br>
+Что это такое на полу?
 !]
 
-%[m|chapter one ]
-%[m|part two    ]
-%[m|lesson three]
-
-[!
-Ordinal Numerals - с артиклем; числительное первое, существительное второе.
-!]
-
-%[m|the first chapter]
-%[m|the second part]
-%[m|the third lesson]
