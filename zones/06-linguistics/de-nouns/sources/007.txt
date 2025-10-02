@@ -1,0 +1,16 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+der Wind, des Windes, die Winde
+die Polizei, der Polizei, die Polizeien
+der Herbst, des Herbstes, die Herbste
+das Wetter, des Wetters, die Wetter
+der Reis, des Reises, die Reise
+der Fernseher, des Fernsehers, die Fernseher
+das Fest, des Festes, die Feste
+der Lehrer, des Lehrers, die Lehrer
+der Student, des Studenten, die Studenten
+der Fußball, des Fußballs, die Fußbälle
+</prosody>
+</voice>
+</speak>

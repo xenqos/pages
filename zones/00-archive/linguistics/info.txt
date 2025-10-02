@@ -11,6 +11,7 @@ pitch: "x-low", "low", "medium", "high", "x-high", "default"
 volume: "silent", "x-soft", "soft", "medium", "loud", "x-loud", "default"
 
 en-CA-ClaraNeural  rate="-30%" volume="medium"
+de-DE-KatjaNeural rate="-30%" volume="0.0dB" ( 6db = 2times )
 fr-CH-ArianeNeural rate="-30%" pitch="low" volume="medium"
 fr-FR-DeniseNeural rate="-30%" volume="medium"
 bg-BG-KalinaNeural rate="100%" volume="medium"

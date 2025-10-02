@@ -1,0 +1,16 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+das Klavier, des Klaviers, die Klaviere
+der Arm, des Armes, die Arme
+die Arbeit, der Arbeit, die Arbeiten
+die Ausbildung, der Ausbildung, die Ausbildungen
+der Absatz, des Absatzes, die Absätze
+die Entdeckung, der Entdeckung, die Entdeckungen
+die Absage, der Absage, die Absagen
+die Garantie, der Garantie, die Garantien
+die Partnerschaft, der Partnerschaft, die Partnerschaften
+die Ausgabe, der Ausgabe, die Ausgaben
+</prosody>
+</voice>
+</speak>

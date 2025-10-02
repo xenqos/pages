@@ -1,0 +1,16 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+der Fahrer, des Fahrers, die Fahrer
+der Silvester, des Silvesters, die Silvester
+der Flur, des Flures, die Flure
+die Küche, der Küche, die Küchen
+die Briefmarke, der Briefmarke, die Briefmarken
+das Bad, des Bades, die Bäder
+die Dusche, der Dusche, die Duschen
+der Berg, des Berges, die Berge
+die Prüfung, der Prüfung, die Prüfungen
+die Kommode, der Kommode, die Kommoden
+</prosody>
+</voice>
+</speak>

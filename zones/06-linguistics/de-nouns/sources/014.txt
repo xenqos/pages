@@ -1,0 +1,16 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+das Tor, des Tores, die Tore
+das Getränk, des Getränkes, die Getränke
+die Gitarre, der Gitarre, die Gitarren
+das Krankenhaus, des Krankenhauses, die Krankenhäuser
+der Bürgermeister, des Bürgermeisters, die Bürgermeister
+der Ton, des Tones, die Töne
+der Empfänger, des Empfängers, die Empfänger
+die Traube, der Traube, die Trauben
+die Liste, der Liste, die Listen
+das Meer, des Meeres, die Meere
+</prosody>
+</voice>
+</speak>

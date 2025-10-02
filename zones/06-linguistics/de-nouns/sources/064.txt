@@ -1,0 +1,16 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+der Montag, des Montags, die Montage
+der Motor, des Motors, die Motoren
+die Münze, der Münze, die Münzen
+der Musiker, des Musikers, die Musiker
+die Musikschule, der Musikschule, die Musikschulen
+die Nadel, der Nadel, die Nadeln
+die Nachricht, der Nachricht, die Nachrichten
+der Nachtisch, des Nachtisches, die Nachtische
+der Nachweis, des Nachweises, die Nachweise
+das Netz, des Netzes, die Netze
+</prosody>
+</voice>
+</speak>
