@@ -34,7 +34,7 @@
 
 Знак препинания в конце прямой речи ставится внутри кавычек:
 
-%[m|…away!”&nbsp;&nbsp;&nbsp;&nbsp; …away.”&nbsp;&nbsp;&nbsp; …away?”]
+%[m|…away!”     …away.”    …away?”]
 **Скобки** используются для включения пояснений и уточнений.
 
 [!
@@ -52,7 +52,7 @@
 **Квадратные скобки** обычно используются в книгах и газетах, где добавляют в цитату некий комментарий или разъяснение, которых там изначально не было:
 
 [!
-%[m|Head of XYZ Inc. added, that “It **[the financial crisis] **poses no threat for the future of the company.”]
+%[m|Head of XYZ Inc. added, that It **the financial crisis** poses no threat for the future of the company.]
 Глава XYZ Inc. добавил, что «он [финансовый кризис] не представляет никакой угрозы для будущего компании».
 !]
 
