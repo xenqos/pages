@@ -4,7 +4,7 @@
 
 [|
 |$=$|equality|$5 = 2+3$|
-|$\ne$| inequality|$5 \ne 4$|
+|$\ne$|inequality|$5 \ne 4$|
 |$>$|greater than|$5 > 4$|
 |$<$|less than|$4 < 5$|
 |$\ge$|greater than or equal to|$5 \ge 4$|
@@ -41,4 +41,6 @@
 |$ppb$ | per-billion | $10ppb \times 30=3 \times 10^{7}$|
 |$ppt$ | per-trillion | $10ppt \times 30=3 \times 10^{10}$|
 
+
+^[pali_canon_structure.webp]
 -->
