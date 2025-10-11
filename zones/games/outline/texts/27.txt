@@ -6,7 +6,7 @@
 
 ## Odds
 
-$
+[$
 \begin{array}{l}
 OD = {FO : UO} \\
 \\
@@ -14,7 +14,7 @@ OD = {FO : UO} \\
 \small {FO - Favorable\;Outcome} \\
 \small {UO - Unfavorable\;Outcome} \\
 \end{array}
-$
+$]
 
 ^[probability-odds-outcomes.webp]
 
@@ -25,7 +25,7 @@ $
 **2:1** - Odds against Winning
 
 ## Probability
-$
+[$
 \begin{array}{l}
 PR = \large {FO \over TO} \\
 \\
@@ -33,7 +33,7 @@ PR = \large {FO \over TO} \\
 \small {FO - Favorable\;Outcome} \\
 \small {TO - Total\;Outcomes}
 \end{array}
-$
+$]
 
 Chance that a given Outcome will happen
 Expressed in fraction 0.0 - 1.0
@@ -44,7 +44,7 @@ Expressed in percentage 0% - 100%
 ## Odds to Probability
 
 ### Odds
-$
+[$
 \begin{array}{l}
 OD = {FO : UO} \\
 \small {OD =  1 : 2} \\
@@ -53,10 +53,10 @@ OD = {FO : UO} \\
 \small {FO - Favorable\;Outcomes} \\
 \small {UO - Unfavorable\;Outcomes}
 \end{array}
-$
+$]
 
 ### Total Outcomes
-$
+[$
 \begin{array}{l}
 TO = {FO + UO} \\
 \small {1 + 2 = 3} \\
@@ -65,10 +65,10 @@ TO = {FO + UO} \\
 \small {FO - Favorable\;Outcomes} \\
 \small {UO - Unfavorable\;Outcomes}
 \end{array}
-$
+$]
 
 ### Probability of One Outcome
-$
+[$
 \begin{array}{l}
 POO = \large {TP \over TO} \\
 \small {33\% ≈ {100\% \over 3}} \\
@@ -77,10 +77,10 @@ POO = \large {TP \over TO} \\
 \small {TP - Total\;Probability} \\
 \small {TO - Total\;Outcomes}
 \end{array}
-$
+$]
 
 ### Probability of Winning
-$
+[$
 \begin{array}{l}
 PW = {POO * FO} \\
 \small {33\% ≈ {33\% * 1}} \\
@@ -89,10 +89,10 @@ PW = {POO * FO} \\
 \small {POO - Probability\;of\;One\;Outcome} \\
 \small {FO - Favorable\;Outcomes}
 \end{array}
-$
+$]
 
 ### Probability of Winning
-$
+[$
 \begin{array}{l}
 PW = \large {FO \over TO} \\
 \large {1 \over 3} \\
@@ -101,7 +101,7 @@ PW = \large {FO \over TO} \\
 \small {FO - Favorable\;Outcomes} \\
 \small {TO - Total\;Outcomes}
 \end{array}
-$
+$]
 
 [?
 Probability-Of-Loosing =
@@ -122,7 +122,7 @@ Probability-Of-Winning =
 ?]
 
 ## Probability to Odds
-$
+[$
 \begin{array}{l}
 OD = \large {TO \over PoW} - 1 \\
 \\
@@ -130,7 +130,7 @@ OD = \large {TO \over PoW} - 1 \\
 \small {TO - Total\;Probability = 100\%} \\
 \small {PoW - Probability\;of\;Winning} \\
 \end{array}
-$
+$]
 
 [?
 Probability-Of-Winning = 25%
@@ -142,7 +142,6 @@ Odds = 100% / 20% = 5; 5 – 4 = 3; 1:4
 
 
 <!--
-
 
 ## Odds to Probability
 

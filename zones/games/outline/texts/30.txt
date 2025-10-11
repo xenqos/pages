@@ -8,43 +8,55 @@
 !]
 
 ###### Probability of Hitting on Turn (%)
-$
+[$
 \begin{array}{l}
 \Large {Outs \over {47 \times 100}} \\
+\\
 \end{array}
-$
+$]
 
 ###### Probability of Not Hitting on Turn (%)
-$
+[$
 \begin{array}{l}
 \Large {(47 - Outs) \over {47 \times 100}} \\
+\\
 \end{array}
-$
+$]
 
 ###### Probability of Hitting on River (%)
-$
+[$
 \begin{array}{l}
 \Large {Outs \over {46 \times 100}} \\
+\\
 \end{array}
-$
+$]
 
 ###### Probability of Not Hitting on River (%)
-$
+[$
 \begin{array}{l}
 \Large {(46 - Outs) \over {46 \times 100}} \\
+\\
 \end{array}
-$
+$]
 
 ###### Combined Probability of Hitting (%)
-$
+[$
 \begin{array}{l}
 \Large {(} \large {1} - \Large {(47 - Outs) \over 47} \times {(46 - Outs) \over 46}) \large {\times 100} \\
+\\
 \end{array}
-$
+$]
 
 ###### Combined Probability of Not Hitting (%)
-$
+[$
 \begin{array}{l}
 \Large {(47 - Outs) \over 47} \times {(46 - Outs) \over 46} \large {\times 100} \\
+\\
 \end{array}
-$
+$]
+
+
+[|
+|$A$|$\alpha$|%[m|alpha]|%[l|ˈælfə]|
+|$B$|$\beta$|%[m|beta]|%[l|ˈbiːtə]|
+|]
