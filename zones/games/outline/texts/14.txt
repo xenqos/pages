@@ -6,7 +6,7 @@
 ^[chip-values-01.webp]
 
 [|
-^Color^Value^
+¦Color¦Value¦
 |White|$1  |
 |Red  |$5  |
 |Blue |$10 |
@@ -18,7 +18,7 @@
 ^[chip-values-02.webp]
 
 [|
-^Color^Value^
+¦Color¦Value¦
 |White |$1    |
 |Red   |$5    |
 |Orange|$10   |
@@ -33,7 +33,7 @@
 ^[chip-values-03.webp]
 
 [|
-^Color^Value^
+¦Color¦Value¦
 |Green             |$25       |
 |Black             |$100      |
 |Light Blue        |$500      |

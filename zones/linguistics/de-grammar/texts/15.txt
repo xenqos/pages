@@ -3,7 +3,7 @@
 # Притяжательные
 ---
 [|
-^^s.^p.^
+¦¦s.¦p.¦
 |1|%[m|mein]                     |%[m|unser]|
 |2|%[m|dein ]                    |%[m|euer]|
 |3|%[m|sein], %[m|ihr], %[m|sein]|%[m|ihr]|
@@ -14,7 +14,7 @@
 мой
 !]
 [|
-^    ^m.         ^f.         ^n.         ^p.         ^
+¦    ¦m.         ¦f.         ¦n.         ¦p.         ¦
 |nom.|%[m|mein  ]|%[m|meine ]|%[m|mein ] |%[m|meine ]|
 |gen.|%[m|meines]|%[m|meiner]|%[m|meines]|%[m|meiner]|
 |dat.|%[m|meinem]|%[m|meiner]|%[m|meinem]|%[m|meinen]|
@@ -26,7 +26,7 @@
 твой
 !]
 [|
-^    ^m.         ^f.         ^n.         ^p.         ^
+¦    ¦m.         ¦f.         ¦n.         ¦p.         ¦
 |nom.|%[m|dein  ]|%[m|deine ]|%[m|dein ] |%[m|deine ]|
 |gen.|%[m|deines]|%[m|deiner]|%[m|deines]|%[m|deiner]|
 |dat.|%[m|deinem]|%[m|deiner]|%[m|deinem]|%[m|deinen]|
@@ -38,7 +38,7 @@
 его
 !]
 [|
-^    ^m.         ^f.         ^n.         ^p.         ^
+¦    ¦m.         ¦f.         ¦n.         ¦p.         ¦
 |nom.|%[m|sein  ]|%[m|seine ]|%[m|sein ] |%[m|seine ]|
 |gen.|%[m|seines]|%[m|seiner]|%[m|seines]|%[m|seiner]|
 |dat.|%[m|seinem]|%[m|seiner]|%[m|seinem]|%[m|seinen]|
@@ -50,7 +50,7 @@
 её
 !]
 [|
-^    ^m.        ^f.        ^n.        ^p.        ^
+¦    ¦m.        ¦f.        ¦n.        ¦p.        ¦
 |nom.|%[m|ihr  ]|%[m|ihre ]|%[m|ihr  ]|%[m|ihre ]|
 |gen.|%[m|ihres]|%[m|ihrer]|%[m|ihres]|%[m|ihrer]|
 |dat.|%[m|ihrem]|%[m|ihrer]|%[m|ihrem]|%[m|ihren]|
@@ -62,7 +62,7 @@
 его
 !]
 [|
-^    ^m.         ^f.         ^n.         ^p.         ^
+¦    ¦m.         ¦f.         ¦n.         ¦p.         ¦
 |nom.|%[m|sein  ]|%[m|seine] |%[m|sein  ]|%[m|seine ]|
 |akk.|%[m|seines]|%[m|seiner]|%[m|seines]|%[m|seiner]|
 |dat.|%[m|seinem]|%[m|seiner]|%[m|seinem]|%[m|seinen]|
@@ -74,7 +74,7 @@
 наш
 !]
 [|
-^    ^m.            ^f.            ^n.            ^p.            ^
+¦    ¦m.            ¦f.            ¦n.            ¦p.            ¦
 |nom.|%[m|unser    ]|%[m|uns(e)re ]|%[m|unser    ]|%[m|uns(e)re ]|
 |gen.|%[m|uns(e)res]|%[m|uns(e)rer]|%[m|uns(e)res]|%[m|uns(e)rer]|
 |dat.|%[m|uns(e)rem]|%[m|uns(e)rer]|%[m|uns(e)rem]|%[m|uns(e)ren]|
@@ -86,7 +86,7 @@
 ваш
 !]
 [|
-^    ^m.           ^f.           ^n.           ^p.           ^
+¦    ¦m.           ¦f.           ¦n.           ¦p.           ¦
 |nom.|%[m|euer    ]|%[m|eu(e)re ]|%[m|euer    ]|%[m|eu(e)re ]|
 |gen.|%[m|eu(e)res]|%[m|eu(e)rer]|%[m|eu(e)res]|%[m|eu(e)rer]|
 |dat.|%[m|eu(e)rem]|%[m|eu(e)rer]|%[m|eu(e)rem]|%[m|eu(e)ren]|
@@ -98,7 +98,7 @@
 их
 !]
 [|
-^    ^m.        ^f.        ^n.        ^p.        ^
+¦    ¦m.        ¦f.        ¦n.        ¦p.        ¦
 |nom.|%[m|ihr  ]|%[m|ihre ]|%[m|ihr  ]|%[m|ihre ]|
 |gen.|%[m|ihres]|%[m|ihrer]|%[m|ihres]|%[m|ihrer]|
 |dat.|%[m|ihrem]|%[m|ihrer]|%[m|ihrem]|%[m|ihren]|
