@@ -14,11 +14,10 @@
   <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
   <script type='text/javascript' src='../../../../scripts/global.js'></script>
   <script type='text/javascript' src='../scripts/local.js'></script>
-  <script>MathJax={tex: {inlineMath: [['$', '$'], ['((', '))']], processEscapes: true}};</script>
-  <script id='MathJax-script' async src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'></script>
+  
 </head>
 <body onload='fncGetDivState(); fncGetScrollPosition();'>
-
+<audio id='idTrack' src='../sounds/02.mp3' preload='auto'></audio>
 <div id='idPanel'>
 <div id='idTopbar'>
   <div id='idTopbarNavigation'>
@@ -27,53 +26,54 @@
     <a href='01.html'><span class='clNavLeft'></span></a>
     <a href='../index.html'><span class='clNavUp'></span></a>
     <a href='03.html'><span class='clNavRight'></span></a>
-
+<span class='clNavRewind' onclick='fncRewindTrack(&quot;idTrack&quot;)'></span><span class='clNavPlay' onclick='fncPlayTrack(&quot;idTrack&quot;)'></span>
   </div>
 </div>
 <div id='idContent'>
 
 <h6>Mathematics &ensp;&bull;&ensp; Terminology</h6>
 
-<h1>Arithmetics</h1>
+<h1>Keyboard Symbols</h1>
 
-<!-- math on -->
 <div class='clOverflow'>
 <table>
 <tr>
-<td>$=$</td><td>equality</td><td>$5 = 2+3$</td></tr>
-<tr><td>$\ne$</td><td>inequality</td><td>$5 \ne 4$</td></tr>
-<tr><td>$>$</td><td>greater than</td><td>$5 > 4$</td></tr>
-<tr><td>$<$</td><td>less than</td><td>$4 < 5$</td></tr>
-<tr><td>$\ge$</td><td>greater than or equal to</td><td>$5 \ge 4$</td></tr>
-<tr><td>$\le$</td><td>less than or equal to</td><td>$4 \le 5$</td></tr>
-<tr><td>$( \ )$</td><td>parentheses precedence</td><td>$2 \, ( 3 + 5 ) = 16$</td></tr>
-<tr><td>$[ \ ]$</td><td>brackets precedence</td><td>$[ ( 1 + 2 ) \, ( 1 + 5 ) ] = 18$</td></tr>
-<tr><td>$+$</td><td>addition</td><td>$1 + 1 = 2$</td></tr>
-<tr><td>$-$</td><td>subtraction</td><td>$2 - 1 = 1$</td></tr>
-<tr><td>$\pm$</td><td>both + and - operations</td><td>$3 \pm 5 = 8 \ and \ -2$</td></tr>
-<tr><td>$\mp$</td><td>both - and + operations</td><td>$3 \mp 5 = -2 \ and \ 8$</td></tr>
-<tr><td>$\ast$</td><td>multiplication</td><td>$2 * 3 = 6$</td></tr>
-<tr><td>$\times$</td><td>multiplication</td><td>$2 \times 3 = 6$</td></tr>
-<tr><td>$\cdot$</td><td>multiplication dot</td><td>$2 \cdot 3 = 6$</td></tr>
-<tr><td>$\div $</td><td>division sign</td><td>$6 \div  2 = 3$</td></tr>
-<tr><td>$/$</td><td>division slash</td><td>$6 / 2 = 3$</td></tr>
-<tr><td>$-$</td><td>division fraction</td><td>$\frac{6}{2} = 3$</td></tr>
-<tr><td>$\mathrm{mod}$</td><td>modulus, remainder</td><td> $7 \pmod{2} = 1$</td></tr>
-<tr><td>$.$</td><td>decimal separator</td><td>$2.56 = 2+56/100$</td></tr>
-<tr><td>$a{}^{b}$ </td><td> power exponent </td><td> $2{}^{3} = 8$</td></tr>
-<tr><td>$a \ \hat{} \ b$ </td><td> caret exponent </td><td> $2 \ \hat{} \ 3 = 8$</td></tr>
-<tr><td>$\sqrt{a}$</td><td>square root</td><td>$\sqrt{9} = \pm 3$</td></tr>
-<tr><td>$\sqrt[3]{a}$</td><td>cube root</td><td>$\sqrt[3]{8} = \pm 2 $</td></tr>
-<tr><td>$\sqrt[4]{a}$</td><td>fourth root</td><td>$\sqrt[4]{16} = \pm 2 $</td></tr>
-<tr><td>$\sqrt[n]{a}$</td><td>n-th root (radical)</td><td>$for \ n = 3 \ \sqrt[n]{8} = \pm 2 $</td></tr>
-<tr><td>$\%$</td><td>percent</td><td>$10 \% \times 30 = 3$</td></tr>
-<tr><td>$\text{‰}$</td><td>per-mille</td><td>$10\text{‰} \times 30 = 0.3$</td></tr>
-<tr><td>$ppm$</td><td>per-million</td><td>$10ppm \times 30=0.0003$</td></tr>
-<tr><td>$ppb$ </td><td> per-billion </td><td> $10ppb \times 30=3 \times 10^{7}$</td></tr>
-<tr><td>$ppt$ </td><td> per-trillion </td><td> $10ppt \times 30=3 \times 10^{10}$</td></tr>
+<td>.</td><td><span class='m'>period, full stop, dot</span></td></tr>
+<tr><td>,</td><td><span class='m'>comma</span></td></tr>
+<tr><td>:</td><td><span class='m'>colon</span> <span class='l'>\ ˈkəulɔn \</span></td></tr>
+<tr><td>;</td><td><span class='m'>semicolon</span> <span class='l'>\ ˌsemɪˈkəulən \</span></td></tr>
+<tr><td>!</td><td><span class='m'>exclamation mark, bang</span></td></tr>
+<tr><td>?</td><td><span class='m'>question mark</span></td></tr>
+<tr><td>*</td><td><span class='m'>star, asterisk</span> <span class='l'>\ ˈæstərɪsk \</span></td></tr>
+<tr><td>-</td><td><span class='m'>minus sign, dash, hyphen</span> <span class='l'>\ ˈhaɪfən  \</span></td></tr>
+<tr><td>+</td><td><span class='m'>plus sign</span></td></tr>
+<tr><td>=</td><td><span class='m'>equal sign</span></td></tr>
+<tr><td>_</td><td><span class='m'>underscore</span> <span class='l'>\ ˌʌndəˈskɔː \</span></td></tr>
+<tr><td>`</td><td><span class='m'>back quote, backtick</span></td></tr>
+<tr><td>&apos;</td><td><span class='m'>single quote, apostrophe</span> <span class='l'>\ əˈpɔstrəfɪ \</span></td></tr>
+<tr><td>&quot;</td><td><span class='m'>double quote, quotation mark</span></td></tr>
+<tr><td>~</td><td><span class='m'>tilde</span> <span class='l'>\ ˈtildə \</span></td></tr>
+<tr><td>@</td><td><span class='m'>at sign</span></td></tr>
+<tr><td>#</td><td><span class='m'>number sign, hash, pound, sharp</span></td></tr>
+<tr><td>$</td><td><span class='m'>dollar sign</span></td></tr>
+<tr><td>%</td><td><span class='m'>percentage sign</span></td></tr>
+<tr><td>&Hat;</td><td><span class='m'>power sign, caret</span> <span class='l'>\ ˈkærət \</span></td></tr>
+<tr><td>&</td><td><span class='m'>ampersand</span> <span class='l'>\ ˈæmpəsænd \</span></td></tr>
+<tr><td>&bsol;</td><td><span class='m'>back slash</span></td></tr>
+<tr><td>/</td><td><span class='m'>forward slash</span></td></tr>
+<tr><td>&verbar;</td><td><span class='m'>vertical bar, pipe</span></td></tr>
+<tr><td>( )</td><td><span class='m'>round brackets, parentheses</span> <span class='l'>\ pəˈrenθəsiːz \</span></td></tr>
+<tr><td>&lsqb; &rsqb;</td><td><span class='m'>square brackets</span></td></tr>
+<tr><td>&lbrace; &rbrace;</td><td><span class='m'>braces, curly brackets</span></td></tr>
+<tr><td>< ></td><td><span class='m'>angle brackets, less/greater than</span></td></tr>
+<tr><td>« »</td><td><span class='m'>angle quotes</span></td></tr>
 </table>
 </div>
 
+Brackets:<br>
+<br>
+<span class='m'>left</span> - <span class='m'>right</span><br>
+<span class='m'>open</span> - <span class='m'>closed</span><br>
 
 
 </div>
