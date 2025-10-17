@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Bitcoin Learning</title>
+  <link rel='stylesheet' type='text/css' media='screen' href='/styles/commons.css'>
+  <link rel="stylesheet" type="text/css" href="../styles/tipped.css">
+  <link rel="stylesheet" type="text/css" href="../styles/jquery-ui.min.css">
+  <link rel="stylesheet" type="text/css" href="../styles/tachyons.min.css">
+  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+  <script type='text/javascript' src='/scripts/commons.js'></script>
+</head>
+<body>
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='/'><span class='clNavHome'><span></a>
+    <a href='../../index.html'><span class='clNavIndex'><span></a>
+    <a href='./38.html'><span class='clNavLeft'><span></a>
+    <a href='../index.html'><span class='clNavUp'><span></a>
+    <a href='./40.html'><span class='clNavRight'><span></a>
+  </div>
+</div>
+
+<div id='idContent'>
+
+<h1>39.scriptPubKey</h1>
+<p class="subheading">The locking mechanism placed on an output.</p>
+
+<p><a target='_blank' href='../images/39.scriptpubkey.png'><img class='clImageThumb' src='../images/39.scriptpubkey.png'></a><br><br></p>
+<p>A <strong>scriptPubKey</strong> (more easily thought of as a “locking script”) is a Script that you put on an output to prevent others from spending it.</p>
+
+<h2>Standard Scripts</h2>
+<p>There are a few set patterns of locking scripts that are commonly used in bitcoin:</p>
+<h4>1. Pay To Pubkey</h4>
+
+<div class='clOverflow'>
+<table class="script" style="margin:20px 0 36px;">
+<tr>
+<td class="hex">4104a9d6840fdd1497b3067b8066db783acf90bf42071a38fe2cf6d2d8a04835d0b5c45716d8d6012ab5d56c7824c39718f7bc7486d389cd0047f53785f9a63c0c9dac</td>
+<td class="opcodes"><code class="publickey">04a9d6840fdd1497b3067b8066db783acf90bf42071a38fe2cf6d2d8a04835d0b5c45716d8d6012ab5d56c7824c39718f7bc7486d389cd0047f53785f9a63c0c9d</code> <code class="opcode">OP_CHECKSIG</code></td>
+</tr>
+</table>
+</div>
+
+<p class="note tip" style="margin-bottom:48px">
+<strong>Tip:</strong> In the raw hex data of the script above, the public key is <em>preceded by a byte</em> to indicate the size of the upcoming public key. For example, <code>0x41</code> means “push the next 65 bytes of script on to the stack”.<br><br> Opcodes between <code>0x01</code> and <code>0x4e</code> are used to indicate the upcoming number of bytes of data to push on to the stack.
+</p>
+<h4>2. Pay To Pubkey Hash</h4>
+
+<div class='clOverflow'>
+<table class="script" style="margin:20px 0 36px;">
+<tr>
+<td class="hex">76a914fde0a08625e327ba400644ad62d5c571d2eec3de88ac</td>
+<td class="opcodes"><code class="opcode">OP_DUP</code> <code class="opcode">OP_HASH160</code> <code class="publickeyhash">fde0a08625e327ba400644ad62d5c571d2eec3de</code> <code class="opcode">OP_EQUALVERIFY</code> <code class="opcode">OP_CHECKSIG</code></td>
+</tr>
+</table>
+</div>
+
+<details>
+<summary>
+Details
+</summary>
+<p>This is the most common locking script. You can only unlock this if you have the <code class="privatekey">private key</code> that corresponds to the <code class="publickey">public key</code>  placed in to the script.</p>
+<p class="note text">
+This is the default locking script used when you make a standard bitcoin transaction. In fact, this locking script is used so often you might think that various “locking scripts” weren’t a thing.
+</p>
+</details>
+<h4>3. Pay To Multisig</h4>
+
+<div class='clOverflow'>
+<table class="script">
+<tr>
+<td class="hex">51210378ee11c3fb97054877a809ce083db292b16d971bcdc6aa4c8f92087133729d8b211283b5fbf5cc62d4399dfa1025c3e306295264494722c5085ceadadf1291f6812521a31752c9f17c628edc4c69c4c0846f8d814b21e046eabe06f9968a037ce0741c7453ae</td>
+<td class="opcodes"><code class="opcode">OP_1</code> <code class="publickey">0378ee11c3fb97054877a809ce083db292b16d971bcdc6aa4c8f92087133729d8b</code> <code class="publickey">1283b5fbf5cc62d4399dfa1025c3e306295264494722c5085ceadadf1291f68125</code> <code class="publickey">a31752c9f17c628edc4c69c4c0846f8d814b21e046eabe06f9968a037ce0741c74</code> <code class="opcode">OP_3</code> <code class="opcode">OP_CHECKMULTISIG</code></td>
+</tr>
+</table>
+</div>
+
+<h4>4. Pay To Script Hash</h4>
+<table class="script" style="margin:20px 0 36px;">
+<tr>
+<td class="hex">
+a91410b0ed2d1698ff0f0ea151cf41988d05b728746a87</td>
+<td class="opcodes">
+<code class="opcode">OP_HASH160</code> <code class="scripthash">10b0ed2d1698ff0f0ea151cf41988d05b728746a</code> <code class="opcode">OP_EQUAL</code></td>
+</tr>
+</table>
+
+<h4>5. NULL DATA</h4>
+<table class="script" style="margin:20px 0 36px;">
+<tr>
+<td class="hex " data-address>
+6a0b68656c6c6f20776f726c64</td>
+<td class="opcodes " data-address>
+<div class="inline">
+<code class="opcode red">OP_RETURN</code> <code class="hex ascii" data-ascii="hello world">68656c6c6f20776f726c64</code>
+</div></td>
+</tr>
+</table>
+
+</div>
+</div>
+</body>
+</html>

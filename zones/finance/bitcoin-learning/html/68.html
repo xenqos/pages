@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Bitcoin Learning</title>
+  <link rel='stylesheet' type='text/css' media='screen' href='/styles/commons.css'>
+  <link rel='stylesheet' type='text/css' href='../styles/style.css'>
+  <script type='text/javascript' src='/scripts/commons.js'></script>
+</head>
+<body>
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='/'><span class='clNavHome'><span></a>
+    <a href='../../index.html'><span class='clNavIndex'><span></a>
+    <a href='./67.html'><span class='clNavLeft'><span></a>
+    <a href='../index.html'><span class='clNavUp'><span></a>
+    <a href='./01.html'><span class='clNavRight'><span></a>
+  </div>
+</div>
+
+<div id='idContent'>
+
+<h1>68.VOUT</h1>
+<p class="subheading">The vector of an output in a bitcoin transaction.</p>
+
+<figure class="center">
+<a target='_blank' href='../images/68.vouts.png'><img class='clImageThumb' src='../images/68.vouts.png'></a><br><br>
+
+<p>A <dfn><strong>vout</strong></dfn> is basically an <em>index number</em> for an <em>output</em> in a transaction.</p>
+<h2>Usage</h2>
+<p>You can use a <code>txid</code> and a <code>vout</code> to uniquely <strong>select an output</strong> to use as an input in a new transaction.</p>
+
+<a target='_blank' href='../images/68.vout-input-reference.png'><img class='clImageThumb' src='../images/68.vout-input-reference.png'></a><br><br>
+<p class='clFigcaption'>Output number 2, please.</p>
+
+
+<h2>Notes</h2>
+<p class="note text">
+In programming, counting starts at 0. So if we want to use the <em>first</em> output of an existing transaction, we put a vout of <strong>0</strong>. (The second output would be 1.)
+</p>
+<p class="note text">
+The “v” in <strong>v</strong>out stands for <strong>vector</strong>, because outputs in the bitcoin source code are stored in a <em>vector data structure</em> (which is basically an array).
+</p>
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Time Series Forcast</title>
+  <link rel='stylesheet' type='text/css' href='/styles/commons.css'>
+  <link rel='stylesheet' type='text/css' href='../styles/local.css'>
+  <script type='text/javascript' src='/scripts/commons.js'></script>
+</head>
+<body>
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='/'><span class='clNavHome'><span></a>
+    <a href='../../index.html'><span class='clNavIndex'><span></a>
+    <a href='./3linebreak.html'><span class='clNavLeft'><span></a>
+    <a href='../index.html'><span class='clNavUp'><span></a>
+    <a href='./tironelevels.html'><span class='clNavRight'><span></a>
+  </div>
+</div>
+
+<div id='idContent'>
+
+
+
+<h1>Time Series Forcast</h1>
+
+<h2>Overview</h2>
+
+<p>The Time Series Forecast indicator displays the statistical trend of a security's price
+over a specified time period.  The trend is based on linear regression analysis. Rather
+than plotting a straight linear regression trendline,
+the Time Series Forecast plots the last point of multiple linear regression trendlines.
+The resulting Time Series Forecast indicator is sometimes referred to as the "moving linear
+regression" indicator or the "regression oscillator."</p>
+
+
+<h2>Interpretation</h2>
+
+<p>The interpretation of a Time Series Forecast is identical to a moving average.  However,
+the Time Series Forecast indicator has two advantages over classic moving averages.</p>
+<p>Unlike a moving average, a Time Series Forecast does not exhibit as much delay when
+adjusting to price changes.  Since the indicator is "fitting" itself to the data rather
+than averaging them, the Time Series Forecast is more responsive to price changes.</p>
+<p>As the name suggests, you can use the Time Series Forecast to forecast the next period's
+price.  This estimate is based on the trend of the security's prices over the period
+specified (e.g., 20 days).  If the current trend continues, the value of the Time Series
+Forecast is a forecast of the next period's price.</p>
+
+
+<h2>Example</h2>
+
+<p>The following chart shows a 50-day Time
+Series Forecast of Microsoft's prices.</p>
+<img src="../images/timeseriesforecast-1.webp"></p>
+
+I've also drawn three 50-day long linear regression
+trendlines.  You can see that the ending point of each trendline is equal to the value of
+the Time Series Forecast.</p>
+
+
+<h2>Calculation</h2>
+
+<p>The Time Series Forecast is determined by calculating a linear regression trendline using
+the "least squares fit" method.  The least squares fit technique fits a trendline to the
+data in the chart by minimizing the distance between the data points and the linear
+regression trendline.  Click here to go to the formula
+for a linear regression trendline.</p>
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Detrended Price Oscillator</title>
+  <link rel='stylesheet' type='text/css' href='/styles/commons.css'>
+  <link rel='stylesheet' type='text/css' href='../styles/local.css'>
+  <script type='text/javascript' src='/scripts/commons.js'></script>
+</head>
+<body>
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='/'><span class='clNavHome'><span></a>
+    <a href='../../index.html'><span class='clNavIndex'><span></a>
+    <a href='./demandind.html'><span class='clNavLeft'><span></a>
+    <a href='../index.html'><span class='clNavUp'><span></a>
+    <a href='./direcmovem.html'><span class='clNavRight'><span></a>
+  </div>
+</div>
+
+<div id='idContent'>
+
+
+
+<h1>Detrended Price Oscillator</h1>
+
+<h2>Overview</h2>
+
+<p>The Detrended Price Oscillator ("DPO") attempts to eliminate the trend in prices. Detrended
+prices allow you to more easily identify cycles and overbought/oversold levels.</p>
+
+
+<h2>Interpretation</h2>
+
+<p>Long-term cycles are made up of a series of short-term cycles.  Analyzing these shorter
+term components of the long-term cycles can be helpful in identifying major turning points
+in the longer term cycle.  The DPO helps you remove these longer-term cycles from
+prices.</p>
+<p>To calculate the DPO, you specify a time period.  Cycles longer than this time period
+are removed from prices, leaving the shorter-term cycles.</p>
+
+
+<h2>Example</h2>
+
+<p>The following chart shows the 20-day
+DPO of Ryder.  You can see that minor peaks in the DPO
+coincided with minor peaks in Ryder's price, but the longer-term price trend during June
+was not reflected in the DPO.  This is because the 20-day DPO removes cycles of more than
+20 days.</p>
+<p><img src="../images/detrendedpriceoscillator.webp"></p>
+
+
+<h2>Calculation</h2>
+
+<p>To calculate the Detrended Price Oscillator, first create an n-period simple moving average
+(where "n" is the number of periods in the moving average).</p>
+
+<P><img src="../images/detrpricoscalc1.webp"></p>
+
+<p>Now, subtract the moving average "(n / 2) + 1" days ago, from the closing price.  The
+result is the DPO.</p>
+
+<P><img src="../images/detrpricoscalc2.webp"></p>
+
+</div>
+</div>
+</body>
+</html>

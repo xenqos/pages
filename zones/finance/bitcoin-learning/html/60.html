@@ -1,0 +1,2586 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Bitcoin Learning</title>
+  <link rel='stylesheet' type='text/css' media='screen' href='/styles/commons.css'>
+  <link rel="stylesheet" type="text/css" href="../styles/tipped.css">
+  <link rel="stylesheet" type="text/css" href="../styles/jquery-ui.min.css">
+  <link rel="stylesheet" type="text/css" href="../styles/tachyons.min.css">
+  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+  <script type='text/javascript' src='/scripts/commons.js'></script>
+</head>
+<body>
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='/'><span class='clNavHome'><span></a>
+    <a href='../../index.html'><span class='clNavIndex'><span></a>
+    <a href='./59.html'><span class='clNavLeft'><span></a>
+    <a href='../index.html'><span class='clNavUp'><span></a>
+    <a href='./61.html'><span class='clNavRight'><span></a>
+  </div>
+</div>
+
+<div id='idContent'>
+
+<h1>60.Mnemonic Seed</h1>
+<p class="subheading">Encoding a random number in to words and using them to create a seed.</p>  <p class="bip inverse">BIP 39</p>
+
+<p>A <strong>mnemonic sentence</strong> (“mnemonic code”, “seed phrase”, “seed words”) is a way of representing a large randomly-generated <em>number</em> as a sequence of words, making it easier for humans to store.</p>
+<p>These words are then used to create a <strong>seed</strong>, which can be used for generating extended keys in a hierarchical deterministic wallet.</p>
+<p class="note text">
+<strong>Note:</strong> In other words, your wallet needs to use a large random number to generate all your keys and addresses, and a mnemonic sentence gives us a convenient way to store this number.
+</p>
+<p class="note warning"><strong>Do not trust seeds generated on websites.</strong> When creating a wallet you should generate your own seed <em>privately</em> on your own computer. I recommend using Electrum</p>
+
+<h2>How do you generate a mnemonic sentence?</h2>
+<p>Three steps:</p>
+<ol type="1">
+<li>Generate Entropy</li>
+<li>Entropy to Mnemonic</li>
+<li>Entropy to Mnemonic</li>
+<li>Mnemonic to Seed</li>
+</ol>
+<h3>1. Generate Entropy</h3>
+
+<a target='_blank' href='../images/60.entropy.gif'><img class='clImageThumb' src='../images/60.entropy.gif'></a><br><br>
+<p class='clFigcaption'>Your entropy should be 128 to 256 bits.</p>
+
+
+<p>To create a mnemonic you first of all need to generate <span data-tooltip="The randomness collected by an operating system.">entropy</span>, which is our source of randomness.</p>
+<p>You can think of entropy is being a very large random number that nobody has ever generated before, or will ever generate in the future. It’s also best to think of this number as a series of bits (e.g. <code>10011010010001...</code>), which is how computers store numbers.</p>
+<p class="note tip">
+<strong>Tip:</strong> A <em>bit</em> (<code>0</code> or <code>1</code>) is the smallest unit of storage on a computer.
+</p>
+<p>The entropy we generate must be a <em>multiple of 32 bits</em>, as that will allow us to split the entropy up in to even chunks and convert to words later on. Furthermore, the entropy should be <strong>between 128 and 256 bits</strong>, as that’s enough to make it impossible for two people to generate the same entropy.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby"><span><span class="co"># -------------------</span></span>
+<span><span class="co"># 1. Generate Entropy</span></span>
+<span><span class="co"># -------------------</span></span>
+<span>require <span class="st">&#39;securerandom&#39;</span> <span class="co"># library for generating bytes of entropy</span></span>
+<span></span>
+<span>bytes = <span class="dt">SecureRandom</span>.random_bytes(<span class="dv">16</span>) <span class="co"># 16 bytes = 128 bits (1 byte = 8 bits)</span></span>
+<span>entropy = bytes.unpack(<span class="st">&quot;B*&quot;</span>).join     <span class="co"># convert bytes to a string of bits (base2)</span></span>
+<span>puts entropy <span class="co">#=&gt; &quot;1010110111011000110010010010111001001011001001010110001011100001&quot;</span></span>
+<span></span>
+<span><span class="co"># Note: For the purposes of the examples on this page, I have actually generated 64 bits of entropy.</span></span>
+<span><span class="co"># For real world use, you should generate 128 to 256 bits (in a multiple of 32 bits).</span></span></code></pre></div>
+<p class="note warning">
+<strong>Caution:</strong> Always use a secure random number generator for you entropy. Do not use your programming language’s default “random” function, as the numbers it produces are not random enough for cryptography.<sup>1</sup>
+</p>
+<h3>2. Entropy to Mnemonic</h3>
+<p>Now that we’ve got our entropy we can encode it in to words.</p>
+<p>First of all, we add a <em>checksum</em> to our entropy to help detect errors (making the final sentence more user-friendly). This checksum is created by hashing the entropy through SHA256, which gives us a unique <em>fingerprint</em> for our entropy. We then take 1 bit of that hash for every 32 bits of entropy, and add it to the end of our entropy.</p>
+<p><a target='_blank' href='../images/60.checksum.png'><img class='clImageThumb' src='../images/60.checksum.png'></a><br><br></p>
+
+<p>Next we split this in to groups of 11 bits, convert these to decimal numbers, and use those numbers to select the corresponding words.</p>
+
+<a target='_blank' href='../images/60.entropy-to-mnemonic.png'><img class='clImageThumb' src='../images/60.entropy-to-mnemonic.png'></a><br><br>
+<p class='clFigcaption'>There are 2048 words in the wordlist.</p>
+
+
+<p>And there we have our mnemonic sentence.</p>
+<p class="note tip">
+<strong>Tip:</strong> An 11-bit number can hold a decimal number between 0-2047 (which is why there are 2048 words in the wordlist).
+</p>
+<p class="note tip">
+<strong>Tip:</strong> By adding 1 bit of checksum to every 32 bits of entropy, we will always end up with a multiple of 33 bits, which we can split up in to equal 11-bit chunks.
+</p>
+<p class="note text">
+<strong>Note:</strong> A mnemonic phrase is usually between <strong>12 and 24 words</strong>.
+</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby"><span><span class="co"># ----------------------</span></span>
+<span><span class="co"># 2. Entropy to Mnemonic</span></span>
+<span><span class="co"># ----------------------</span></span>
+<span>entropy = <span class="st">&quot;1010110111011000110010010010111001001011001001010110001011100001&quot;</span></span>
+<span></span>
+<span><span class="co"># 1. Create checksum</span></span>
+<span>require <span class="st">&#39;digest&#39;</span></span>
+<span>size = entropy.length / <span class="dv">32</span> <span class="co"># number of bits to take from hash of entropy (1 bit checksum for every 32 bits entropy)</span></span>
+<span>sha256 = <span class="dt">Digest</span>::<span class="dt">SHA256</span>.digest([entropy].pack(<span class="st">&quot;B*&quot;</span>)) <span class="co"># hash of entropy (in raw binary)</span></span>
+<span>checksum = sha256.unpack(<span class="st">&quot;B*&quot;</span>).join[<span class="dv">0</span>..size<span class="dv">-1</span>] <span class="co"># get desired number of bits</span></span>
+<span>puts <span class="st">&quot;checksum: </span><span class="ot">#{</span>checksum<span class="ot">}</span><span class="st">&quot;</span></span>
+<span></span>
+<span><span class="co"># 2. Combine</span></span>
+<span>full = entropy + checksum</span>
+<span>puts <span class="st">&quot;combined: </span><span class="ot">#{</span>full<span class="ot">}</span><span class="st">&quot;</span></span>
+<span></span>
+<span><span class="co"># 3. Split in to strings of of 11 bits</span></span>
+<span>pieces = full.scan(<span class="ot">/.{11}/</span>)</span>
+<span></span>
+<span><span class="co"># 4. Get the wordlist as an array</span></span>
+<span>wordlist = <span class="dt">File</span>.readlines(<span class="st">&quot;wordlist.txt&quot;</span>)</span>
+<span></span>
+<span><span class="co"># 5. Convert groups of bits to array of words</span></span>
+<span>puts <span class="st">&quot;words:&quot;</span></span>
+<span>sentence = []</span>
+<span>pieces.each <span class="kw">do</span> |piece|</span>
+<span>  i = piece.to_i(<span class="dv">2</span>)   <span class="co"># convert string of 11 bits to an integer</span></span>
+<span>  word = wordlist[i]  <span class="co"># get the corresponding word from wordlist</span></span>
+<span>  sentence &lt;&lt; word.chomp <span class="co"># add to sentence (removing newline from end of word)</span></span>
+<span>  puts <span class="st">&quot;</span><span class="ot">#{</span>piece<span class="ot">}</span><span class="st"> </span><span class="ot">#{</span>i.to_s.rjust(<span class="dv">4</span>)<span class="ot">}</span><span class="st"> </span><span class="ot">#{</span>word<span class="ot">}</span><span class="st">&quot;</span></span>
+<span><span class="kw">end</span></span>
+<span></span>
+<span>mnemonic = sentence.join(<span class="st">&quot; &quot;</span>)</span>
+<span>puts <span class="st">&quot;mnemonic: </span><span class="ot">#{</span>mnemonic<span class="ot">}</span><span class="st">&quot;</span> <span class="co">#=&gt; &quot;punch shock entire north file identify&quot;</span></span></code></pre></div>
+<p><small>Requires wordlist.txt</small></p>
+<h3>3. Mnemonic to Seed</h3>
+<p>Now that we’ve got our mnemonic sentence, we can convert it to our final seed.</p>
+<p>To create the seed, you put your mnemonic sentence through the <span data-tooltip="Password Based Key Derivation Function 2">PBKDF2</span> function. This basically hashes your mnemonic (+ optional passphrase) multiple times until it produces a final 64 byte (512 bit) result.</p>
+
+<a target='_blank' href='../images/60.mnemonic-to-seed.gif'><img class='clImageThumb' src='../images/60.mnemonic-to-seed.gif'></a><br><br>
+<p class='clFigcaption'>The optional passphrase allows you to modify the final seed.</p>
+
+
+<p>This 64 byte result is your <strong>seed</strong>, which can be used to create the master extended key for a hierarchical deterministic wallet.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby"><span><span class="co"># -------------------</span></span>
+<span><span class="co"># 3. Mnemonic to Seed</span></span>
+<span><span class="co"># -------------------</span></span>
+<span>require <span class="st">&#39;openssl&#39;</span></span>
+<span></span>
+<span>mnemonic = <span class="st">&quot;punch shock entire north file identify&quot;</span></span>
+<span>passphrase = <span class="st">&quot;&quot;</span> <span class="co"># can leave this blank</span></span>
+<span>puts <span class="st">&quot;passphrase: </span><span class="ot">#{</span>passphrase<span class="ot">}</span><span class="st">&quot;</span></span>
+<span></span>
+<span>password = mnemonic</span>
+<span>salt = <span class="st">&quot;mnemonic</span><span class="ot">#{</span>passphrase<span class="ot">}</span><span class="st">&quot;</span> <span class="co"># &quot;mnemonic&quot; is always used in the salt with optional passphrase appended to it</span></span>
+<span>iterations = <span class="dv">2048</span></span>
+<span>keylength = <span class="dv">64</span></span>
+<span>digest = <span class="dt">OpenSSL</span>::<span class="dt">Digest</span>::<span class="dt">SHA512</span>.new</span>
+<span></span>
+<span>result = <span class="dt">OpenSSL</span>::<span class="dt">PKCS5</span>.pbkdf2_hmac(password, salt, iterations, keylength, digest)</span>
+<span>seed = result.unpack(<span class="st">&quot;H*&quot;</span>)[<span class="dv">0</span>] <span class="co"># convert to hexadecimal string</span></span>
+<span>puts <span class="st">&quot;seed: </span><span class="ot">#{</span>seed<span class="ot">}</span><span class="st">&quot;</span> <span class="co">#=&gt; e1ca8d8539fb054eda16c35dcff74c5f88202b88cb03f2824193f4e6c5e87dd2e24a0edb218901c3e71e900d95e9573d9ffbf870b242e927682e381d109ae882</span></span></code></pre></div>
+<pre class="light"><code>PBKDF2 Settings:
+
+Password: Mnemonic Sentence
+Salt: &quot;mnemonic&quot;+(optional passphrase)
+Iterations: 2048
+Algorithm: HMAC-SHA512
+Size: 64 bytes</code></pre>
+
+<h2>PBKDF2 - <small>Password Based Key Derivation Function 2</small></h2>
+<p>PBKDF2 is basically a hash function that is designed to be slow (by hashing the data <em>multiple times</em> before producing the result). This has the benefit of making it more difficult for anyone to brute-force mnemonic sentences to try and get seeds that people have actually used.</p>
+<p>In addition, PBKDF2 also allows you to provide a second input called a <em>salt</em> (“passphrase”, “seed extension”) along with the data you want to hash, which allows you to produce completely different seeds from the same mnemonic sentence.</p>
+<h4>Links.</h4>
+<ul>
+<li>What’s the difference between PBKDF and SHA512?</li>
+<li>What’s the advantage of using PBKDF2 vs SHA256?</li>
+</ul>
+
+
+<h2>Validate Mnemonic</h2>
+
+
+<p>A mnemonic sentence contains a checksum, which means that you can <strong>check if a given mnemonic sentence is valid</strong>.</p>
+<p>To do this, you convert the words in the mnemonic back in to bits, determine the entropy part and the checksum part, and check whether the checksum you create from the entropy matches the checksum in the mnemonic.</p>
+
+<a target='_blank' href='../images/60.validate-mnemonic.png'><img class='clImageThumb' src='../images/60.validate-mnemonic.png'></a><br><br>
+<p class='clFigcaption'>A mnemonic sentence is built using entropy <em>plus</em> a checksum.</p>
+
+
+<p class="note warning">
+<strong>Warning:</strong> <strong>Do not create a mnemonic sentence by randomly generating 12-24 words.</strong> If you just randomly select 12-24 words from the wordlist, the last word you select probably <em>won’t contain the correct checksum</em> for the rest of the words. Therefore, when you try to import it in to a wallet it might tell you that its <em>invalid</em>.
+</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby"><span><span class="co"># -----------------</span></span>
+<span><span class="co"># Validate Mnemonic</span></span>
+<span><span class="co"># -----------------</span></span>
+<span>require <span class="st">&#39;digest&#39;</span></span>
+<span></span>
+<span>mnemonic = <span class="st">&quot;punch shock entire north file identify&quot;</span></span>
+<span>puts <span class="st">&quot;mnemonic: </span><span class="ot">#{</span>mnemonic<span class="ot">}</span><span class="st">&quot;</span></span>
+<span></span>
+<span><span class="co"># Get the wordlist</span></span>
+<span>wordlist = <span class="dt">File</span>.readlines(<span class="st">&quot;wordlist.txt&quot;</span>).map { |word| word.chomp} <span class="co"># remove new lines from end of each word</span></span>
+<span></span>
+<span><span class="co"># Convert mnemonic to binary string</span></span>
+<span>binary = <span class="st">&quot;&quot;</span></span>
+<span>mnemonic.split(<span class="st">&quot; &quot;</span>).each <span class="kw">do</span> |word|</span>
+<span>    i = wordlist.index(word)       <span class="co"># get word index number in wordlist</span></span>
+<span>    bin = i.to_s(<span class="dv">2</span>).rjust(<span class="dv">11</span>, <span class="st">&quot;0&quot;</span>) <span class="co"># convert index number to an 11-bit number</span></span>
+<span>    binary &lt;&lt; bin                  <span class="co"># add to binary string</span></span>
+<span><span class="kw">end</span></span>
+<span>puts <span class="st">&quot;entropy+checksum: </span><span class="ot">#{</span>binary<span class="ot">}</span><span class="st">&quot;</span></span>
+<span></span>
+<span><span class="co"># Get the original entropy and checksum</span></span>
+<span>x = binary.length / <span class="dv">33</span> <span class="co"># for every 33 bits, 1 bit will be checksum</span></span>
+<span>entropy  = binary[<span class="dv">0</span>...-x] <span class="co"># first part is original entropy</span></span>
+<span>checksum = binary[-x..-<span class="dv">1</span>] <span class="co"># last x bits are checksum</span></span>
+<span></span>
+<span><span class="co"># Compute the expected checksum from the entropy</span></span>
+<span>hash = <span class="dt">Digest</span>::<span class="dt">SHA256</span>.digest([entropy].pack(<span class="st">&quot;B*&quot;</span>))</span>
+<span>checksumexpected = hash.unpack(<span class="st">&quot;B*&quot;</span>).join[<span class="dv">0</span>...x]</span>
+<span></span>
+<span><span class="co"># Check the checksum in the mnemonic sentence matches the checksum of the entropy</span></span>
+<span>puts <span class="st">&quot;checksum: </span><span class="ot">#{</span>checksum<span class="ot">}</span><span class="st">&quot;</span></span>
+<span>puts <span class="st">&quot;expected: </span><span class="ot">#{</span>checksumexpected<span class="ot">}</span><span class="st">&quot;</span></span>
+<span>puts <span class="st">&quot;valid: </span><span class="ot">#{</span>checksum == checksumexpected<span class="ot">}</span><span class="st">&quot;</span> <span class="co">#=&gt; true</span></span></code></pre>
+
+<p><small>Requires wordlist.txt</small></p>
+</div>
+<h2>BIP39 Wordlist</h2>
+<p>The words in a mnemonic sentence come from a fixed list of 2048 words (specified by BIP39). The <strong>first 4 letters</strong> of each word is unique in the list.</p>
+<pre class="lightest" style="height:240px">
+abandon
+ability
+able
+about
+above
+absent
+absorb
+abstract
+absurd
+abuse
+access
+accident
+account
+accuse
+achieve
+acid
+acoustic
+acquire
+across
+act
+action
+actor
+actress
+actual
+adapt
+add
+addict
+address
+adjust
+admit
+adult
+advance
+advice
+aerobic
+affair
+afford
+afraid
+again
+age
+agent
+agree
+ahead
+aim
+air
+airport
+aisle
+alarm
+album
+alcohol
+alert
+alien
+all
+alley
+allow
+almost
+alone
+alpha
+already
+also
+alter
+always
+amateur
+amazing
+among
+amount
+amused
+analyst
+anchor
+ancient
+anger
+angle
+angry
+animal
+ankle
+announce
+annual
+another
+answer
+antenna
+antique
+anxiety
+any
+apart
+apology
+appear
+apple
+approve
+april
+arch
+arctic
+area
+arena
+argue
+arm
+armed
+armor
+army
+around
+arrange
+arrest
+arrive
+arrow
+art
+artefact
+artist
+artwork
+ask
+aspect
+assault
+asset
+assist
+assume
+asthma
+athlete
+atom
+attack
+attend
+attitude
+attract
+auction
+audit
+august
+aunt
+author
+auto
+autumn
+average
+avocado
+avoid
+awake
+aware
+away
+awesome
+awful
+awkward
+axis
+baby
+bachelor
+bacon
+badge
+bag
+balance
+balcony
+ball
+bamboo
+banana
+banner
+bar
+barely
+bargain
+barrel
+base
+basic
+basket
+battle
+beach
+bean
+beauty
+because
+become
+beef
+before
+begin
+behave
+behind
+believe
+below
+belt
+bench
+benefit
+best
+betray
+better
+between
+beyond
+bicycle
+bid
+bike
+bind
+biology
+bird
+birth
+bitter
+black
+blade
+blame
+blanket
+blast
+bleak
+bless
+blind
+blood
+blossom
+blouse
+blue
+blur
+blush
+board
+boat
+body
+boil
+bomb
+bone
+bonus
+book
+boost
+border
+boring
+borrow
+boss
+bottom
+bounce
+box
+boy
+bracket
+brain
+brand
+brass
+brave
+bread
+breeze
+brick
+bridge
+brief
+bright
+bring
+brisk
+broccoli
+broken
+bronze
+broom
+brother
+brown
+brush
+bubble
+buddy
+budget
+buffalo
+build
+bulb
+bulk
+bullet
+bundle
+bunker
+burden
+burger
+burst
+bus
+business
+busy
+butter
+buyer
+buzz
+cabbage
+cabin
+cable
+cactus
+cage
+cake
+call
+calm
+camera
+camp
+can
+canal
+cancel
+candy
+cannon
+canoe
+canvas
+canyon
+capable
+capital
+captain
+car
+carbon
+card
+cargo
+carpet
+carry
+cart
+case
+cash
+casino
+castle
+casual
+cat
+catalog
+catch
+category
+cattle
+caught
+cause
+caution
+cave
+ceiling
+celery
+cement
+census
+century
+cereal
+certain
+chair
+chalk
+champion
+change
+chaos
+chapter
+charge
+chase
+chat
+cheap
+check
+cheese
+chef
+cherry
+chest
+chicken
+chief
+child
+chimney
+choice
+choose
+chronic
+chuckle
+chunk
+churn
+cigar
+cinnamon
+circle
+citizen
+city
+civil
+claim
+clap
+clarify
+claw
+clay
+clean
+clerk
+clever
+click
+client
+cliff
+climb
+clinic
+clip
+clock
+clog
+close
+cloth
+cloud
+clown
+club
+clump
+cluster
+clutch
+coach
+coast
+coconut
+code
+coffee
+coil
+coin
+collect
+color
+column
+combine
+come
+comfort
+comic
+common
+company
+concert
+conduct
+confirm
+congress
+connect
+consider
+control
+convince
+cook
+cool
+copper
+copy
+coral
+core
+corn
+correct
+cost
+cotton
+couch
+country
+couple
+course
+cousin
+cover
+coyote
+crack
+cradle
+craft
+cram
+crane
+crash
+crater
+crawl
+crazy
+cream
+credit
+creek
+crew
+cricket
+crime
+crisp
+critic
+crop
+cross
+crouch
+crowd
+crucial
+cruel
+cruise
+crumble
+crunch
+crush
+cry
+crystal
+cube
+culture
+cup
+cupboard
+curious
+current
+curtain
+curve
+cushion
+custom
+cute
+cycle
+dad
+damage
+damp
+dance
+danger
+daring
+dash
+daughter
+dawn
+day
+deal
+debate
+debris
+decade
+december
+decide
+decline
+decorate
+decrease
+deer
+defense
+define
+defy
+degree
+delay
+deliver
+demand
+demise
+denial
+dentist
+deny
+depart
+depend
+deposit
+depth
+deputy
+derive
+describe
+desert
+design
+desk
+despair
+destroy
+detail
+detect
+develop
+device
+devote
+diagram
+dial
+diamond
+diary
+dice
+diesel
+diet
+differ
+digital
+dignity
+dilemma
+dinner
+dinosaur
+direct
+dirt
+disagree
+discover
+disease
+dish
+dismiss
+disorder
+display
+distance
+divert
+divide
+divorce
+dizzy
+doctor
+document
+dog
+doll
+dolphin
+domain
+donate
+donkey
+donor
+door
+dose
+double
+dove
+draft
+dragon
+drama
+drastic
+draw
+dream
+dress
+drift
+drill
+drink
+drip
+drive
+drop
+drum
+dry
+duck
+dumb
+dune
+during
+dust
+dutch
+duty
+dwarf
+dynamic
+eager
+eagle
+early
+earn
+earth
+easily
+east
+easy
+echo
+ecology
+economy
+edge
+edit
+educate
+effort
+egg
+eight
+either
+elbow
+elder
+electric
+elegant
+element
+elephant
+elevator
+elite
+else
+embark
+embody
+embrace
+emerge
+emotion
+employ
+empower
+empty
+enable
+enact
+end
+endless
+endorse
+enemy
+energy
+enforce
+engage
+engine
+enhance
+enjoy
+enlist
+enough
+enrich
+enroll
+ensure
+enter
+entire
+entry
+envelope
+episode
+equal
+equip
+era
+erase
+erode
+erosion
+error
+erupt
+escape
+essay
+essence
+estate
+eternal
+ethics
+evidence
+evil
+evoke
+evolve
+exact
+example
+excess
+exchange
+excite
+exclude
+excuse
+execute
+exercise
+exhaust
+exhibit
+exile
+exist
+exit
+exotic
+expand
+expect
+expire
+explain
+expose
+express
+extend
+extra
+eye
+eyebrow
+fabric
+face
+faculty
+fade
+faint
+faith
+fall
+false
+fame
+family
+famous
+fan
+fancy
+fantasy
+farm
+fashion
+fat
+fatal
+father
+fatigue
+fault
+favorite
+feature
+february
+federal
+fee
+feed
+feel
+female
+fence
+festival
+fetch
+fever
+few
+fiber
+fiction
+field
+figure
+file
+film
+filter
+final
+find
+fine
+finger
+finish
+fire
+firm
+first
+fiscal
+fish
+fit
+fitness
+fix
+flag
+flame
+flash
+flat
+flavor
+flee
+flight
+flip
+float
+flock
+floor
+flower
+fluid
+flush
+fly
+foam
+focus
+fog
+foil
+fold
+follow
+food
+foot
+force
+forest
+forget
+fork
+fortune
+forum
+forward
+fossil
+foster
+found
+fox
+fragile
+frame
+frequent
+fresh
+friend
+fringe
+frog
+front
+frost
+frown
+frozen
+fruit
+fuel
+fun
+funny
+furnace
+fury
+future
+gadget
+gain
+galaxy
+gallery
+game
+gap
+garage
+garbage
+garden
+garlic
+garment
+gas
+gasp
+gate
+gather
+gauge
+gaze
+general
+genius
+genre
+gentle
+genuine
+gesture
+ghost
+giant
+gift
+giggle
+ginger
+giraffe
+girl
+give
+glad
+glance
+glare
+glass
+glide
+glimpse
+globe
+gloom
+glory
+glove
+glow
+glue
+goat
+goddess
+gold
+good
+goose
+gorilla
+gospel
+gossip
+govern
+gown
+grab
+grace
+grain
+grant
+grape
+grass
+gravity
+great
+green
+grid
+grief
+grit
+grocery
+group
+grow
+grunt
+guard
+guess
+guide
+guilt
+guitar
+gun
+gym
+habit
+hair
+half
+hammer
+hamster
+hand
+happy
+harbor
+hard
+harsh
+harvest
+hat
+have
+hawk
+hazard
+head
+health
+heart
+heavy
+hedgehog
+height
+hello
+helmet
+help
+hen
+hero
+hidden
+high
+hill
+hint
+hip
+hire
+history
+hobby
+hockey
+hold
+hole
+holiday
+hollow
+home
+honey
+hood
+hope
+horn
+horror
+horse
+hospital
+host
+hotel
+hour
+hover
+hub
+huge
+human
+humble
+humor
+hundred
+hungry
+hunt
+hurdle
+hurry
+hurt
+husband
+hybrid
+ice
+icon
+idea
+identify
+idle
+ignore
+ill
+illegal
+illness
+image
+imitate
+immense
+immune
+impact
+impose
+improve
+impulse
+inch
+include
+income
+increase
+index
+indicate
+indoor
+industry
+infant
+inflict
+inform
+inhale
+inherit
+initial
+inject
+injury
+inmate
+inner
+innocent
+input
+inquiry
+insane
+insect
+inside
+inspire
+install
+intact
+interest
+into
+invest
+invite
+involve
+iron
+island
+isolate
+issue
+item
+ivory
+jacket
+jaguar
+jar
+jazz
+jealous
+jeans
+jelly
+jewel
+job
+join
+joke
+journey
+joy
+judge
+juice
+jump
+jungle
+junior
+junk
+just
+kangaroo
+keen
+keep
+ketchup
+key
+kick
+kid
+kidney
+kind
+kingdom
+kiss
+kit
+kitchen
+kite
+kitten
+kiwi
+knee
+knife
+knock
+know
+lab
+label
+labor
+ladder
+lady
+lake
+lamp
+language
+laptop
+large
+later
+latin
+laugh
+laundry
+lava
+law
+lawn
+lawsuit
+layer
+lazy
+leader
+leaf
+learn
+leave
+lecture
+left
+leg
+legal
+legend
+leisure
+lemon
+lend
+length
+lens
+leopard
+lesson
+letter
+level
+liar
+liberty
+library
+license
+life
+lift
+light
+like
+limb
+limit
+link
+lion
+liquid
+list
+little
+live
+lizard
+load
+loan
+lobster
+local
+lock
+logic
+lonely
+long
+loop
+lottery
+loud
+lounge
+love
+loyal
+lucky
+luggage
+lumber
+lunar
+lunch
+luxury
+lyrics
+machine
+mad
+magic
+magnet
+maid
+mail
+main
+major
+make
+mammal
+man
+manage
+mandate
+mango
+mansion
+manual
+maple
+marble
+march
+margin
+marine
+market
+marriage
+mask
+mass
+master
+match
+material
+math
+matrix
+matter
+maximum
+maze
+meadow
+mean
+measure
+meat
+mechanic
+medal
+media
+melody
+melt
+member
+memory
+mention
+menu
+mercy
+merge
+merit
+merry
+mesh
+message
+metal
+method
+middle
+midnight
+milk
+million
+mimic
+mind
+minimum
+minor
+minute
+miracle
+mirror
+misery
+miss
+mistake
+mix
+mixed
+mixture
+mobile
+model
+modify
+mom
+moment
+monitor
+monkey
+monster
+month
+moon
+moral
+more
+morning
+mosquito
+mother
+motion
+motor
+mountain
+mouse
+move
+movie
+much
+muffin
+mule
+multiply
+muscle
+museum
+mushroom
+music
+must
+mutual
+myself
+mystery
+myth
+naive
+name
+napkin
+narrow
+nasty
+nation
+nature
+near
+neck
+need
+negative
+neglect
+neither
+nephew
+nerve
+nest
+net
+network
+neutral
+never
+news
+next
+nice
+night
+noble
+noise
+nominee
+noodle
+normal
+north
+nose
+notable
+note
+nothing
+notice
+novel
+now
+nuclear
+number
+nurse
+nut
+oak
+obey
+object
+oblige
+obscure
+observe
+obtain
+obvious
+occur
+ocean
+october
+odor
+off
+offer
+office
+often
+oil
+okay
+old
+olive
+olympic
+omit
+once
+one
+onion
+online
+only
+open
+opera
+opinion
+oppose
+option
+orange
+orbit
+orchard
+order
+ordinary
+organ
+orient
+original
+orphan
+ostrich
+other
+outdoor
+outer
+output
+outside
+oval
+oven
+over
+own
+owner
+oxygen
+oyster
+ozone
+pact
+paddle
+page
+pair
+palace
+palm
+panda
+panel
+panic
+panther
+paper
+parade
+parent
+park
+parrot
+party
+pass
+patch
+path
+patient
+patrol
+pattern
+pause
+pave
+payment
+peace
+peanut
+pear
+peasant
+pelican
+pen
+penalty
+pencil
+people
+pepper
+perfect
+permit
+person
+pet
+phone
+photo
+phrase
+physical
+piano
+picnic
+picture
+piece
+pig
+pigeon
+pill
+pilot
+pink
+pioneer
+pipe
+pistol
+pitch
+pizza
+place
+planet
+plastic
+plate
+play
+please
+pledge
+pluck
+plug
+plunge
+poem
+poet
+point
+polar
+pole
+police
+pond
+pony
+pool
+popular
+portion
+position
+possible
+post
+potato
+pottery
+poverty
+powder
+power
+practice
+praise
+predict
+prefer
+prepare
+present
+pretty
+prevent
+price
+pride
+primary
+print
+priority
+prison
+private
+prize
+problem
+process
+produce
+profit
+program
+project
+promote
+proof
+property
+prosper
+protect
+proud
+provide
+public
+pudding
+pull
+pulp
+pulse
+pumpkin
+punch
+pupil
+puppy
+purchase
+purity
+purpose
+purse
+push
+put
+puzzle
+pyramid
+quality
+quantum
+quarter
+question
+quick
+quit
+quiz
+quote
+rabbit
+raccoon
+race
+rack
+radar
+radio
+rail
+rain
+raise
+rally
+ramp
+ranch
+random
+range
+rapid
+rare
+rate
+rather
+raven
+raw
+razor
+ready
+real
+reason
+rebel
+rebuild
+recall
+receive
+recipe
+record
+recycle
+reduce
+reflect
+reform
+refuse
+region
+regret
+regular
+reject
+relax
+release
+relief
+rely
+remain
+remember
+remind
+remove
+render
+renew
+rent
+reopen
+repair
+repeat
+replace
+report
+require
+rescue
+resemble
+resist
+resource
+response
+result
+retire
+retreat
+return
+reunion
+reveal
+review
+reward
+rhythm
+rib
+ribbon
+rice
+rich
+ride
+ridge
+rifle
+right
+rigid
+ring
+riot
+ripple
+risk
+ritual
+rival
+river
+road
+roast
+robot
+robust
+rocket
+romance
+roof
+rookie
+room
+rose
+rotate
+rough
+round
+route
+royal
+rubber
+rude
+rug
+rule
+run
+runway
+rural
+sad
+saddle
+sadness
+safe
+sail
+salad
+salmon
+salon
+salt
+salute
+same
+sample
+sand
+satisfy
+satoshi
+sauce
+sausage
+save
+say
+scale
+scan
+scare
+scatter
+scene
+scheme
+school
+science
+scissors
+scorpion
+scout
+scrap
+screen
+script
+scrub
+sea
+search
+season
+seat
+second
+secret
+section
+security
+seed
+seek
+segment
+select
+sell
+seminar
+senior
+sense
+sentence
+series
+service
+session
+settle
+setup
+seven
+shadow
+shaft
+shallow
+share
+shed
+shell
+sheriff
+shield
+shift
+shine
+ship
+shiver
+shock
+shoe
+shoot
+shop
+short
+shoulder
+shove
+shrimp
+shrug
+shuffle
+shy
+sibling
+sick
+side
+siege
+sight
+sign
+silent
+silk
+silly
+silver
+similar
+simple
+since
+sing
+siren
+sister
+situate
+six
+size
+skate
+sketch
+ski
+skill
+skin
+skirt
+skull
+slab
+slam
+sleep
+slender
+slice
+slide
+slight
+slim
+slogan
+slot
+slow
+slush
+small
+smart
+smile
+smoke
+smooth
+snack
+snake
+snap
+sniff
+snow
+soap
+soccer
+social
+sock
+soda
+soft
+solar
+soldier
+solid
+solution
+solve
+someone
+song
+soon
+sorry
+sort
+soul
+sound
+soup
+source
+south
+space
+spare
+spatial
+spawn
+speak
+special
+speed
+spell
+spend
+sphere
+spice
+spider
+spike
+spin
+spirit
+split
+spoil
+sponsor
+spoon
+sport
+spot
+spray
+spread
+spring
+spy
+square
+squeeze
+squirrel
+stable
+stadium
+staff
+stage
+stairs
+stamp
+stand
+start
+state
+stay
+steak
+steel
+stem
+step
+stereo
+stick
+still
+sting
+stock
+stomach
+stone
+stool
+story
+stove
+strategy
+street
+strike
+strong
+struggle
+student
+stuff
+stumble
+style
+subject
+submit
+subway
+success
+such
+sudden
+suffer
+sugar
+suggest
+suit
+summer
+sun
+sunny
+sunset
+super
+supply
+supreme
+sure
+surface
+surge
+surprise
+surround
+survey
+suspect
+sustain
+swallow
+swamp
+swap
+swarm
+swear
+sweet
+swift
+swim
+swing
+switch
+sword
+symbol
+symptom
+syrup
+system
+table
+tackle
+tag
+tail
+talent
+talk
+tank
+tape
+target
+task
+taste
+tattoo
+taxi
+teach
+team
+tell
+ten
+tenant
+tennis
+tent
+term
+test
+text
+thank
+that
+theme
+then
+theory
+there
+they
+thing
+this
+thought
+three
+thrive
+throw
+thumb
+thunder
+ticket
+tide
+tiger
+tilt
+timber
+time
+tiny
+tip
+tired
+tissue
+title
+toast
+tobacco
+today
+toddler
+toe
+together
+toilet
+token
+tomato
+tomorrow
+tone
+tongue
+tonight
+tool
+tooth
+top
+topic
+topple
+torch
+tornado
+tortoise
+toss
+total
+tourist
+toward
+tower
+town
+toy
+track
+trade
+traffic
+tragic
+train
+transfer
+trap
+trash
+travel
+tray
+treat
+tree
+trend
+trial
+tribe
+trick
+trigger
+trim
+trip
+trophy
+trouble
+truck
+true
+truly
+trumpet
+trust
+truth
+try
+tube
+tuition
+tumble
+tuna
+tunnel
+turkey
+turn
+turtle
+twelve
+twenty
+twice
+twin
+twist
+two
+type
+typical
+ugly
+umbrella
+unable
+unaware
+uncle
+uncover
+under
+undo
+unfair
+unfold
+unhappy
+uniform
+unique
+unit
+universe
+unknown
+unlock
+until
+unusual
+unveil
+update
+upgrade
+uphold
+upon
+upper
+upset
+urban
+urge
+usage
+use
+used
+useful
+useless
+usual
+utility
+vacant
+vacuum
+vague
+valid
+valley
+valve
+van
+vanish
+vapor
+various
+vast
+vault
+vehicle
+velvet
+vendor
+venture
+venue
+verb
+verify
+version
+very
+vessel
+veteran
+viable
+vibrant
+vicious
+victory
+video
+view
+village
+vintage
+violin
+virtual
+virus
+visa
+visit
+visual
+vital
+vivid
+vocal
+voice
+void
+volcano
+volume
+vote
+voyage
+wage
+wagon
+wait
+walk
+wall
+walnut
+want
+warfare
+warm
+warrior
+wash
+wasp
+waste
+water
+wave
+way
+wealth
+weapon
+wear
+weasel
+weather
+web
+wedding
+weekend
+weird
+welcome
+west
+wet
+whale
+what
+wheat
+wheel
+when
+where
+whip
+whisper
+wide
+width
+wife
+wild
+will
+win
+window
+wine
+wing
+wink
+winner
+winter
+wire
+wisdom
+wise
+wish
+witness
+wolf
+woman
+wonder
+wood
+wool
+word
+work
+world
+worry
+worth
+wrap
+wreck
+wrestle
+wrist
+write
+wrong
+yard
+year
+yellow
+you
+young
+youth
+zebra
+zero
+zone
+zoo
+</pre>
+
+<h2>Summary</h2>
+<p><a target='_blank' href='../images/60.mnemonic-seed.png'><img class='clImageThumb' src='../images/60.mnemonic-seed.png'></a><br><br></p>
+<h2>Code</h2>
+<p>The following code snippets require this wordlist.txt file.</p>
+
+<h3>Ruby</h3>
+
+
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby"><span>require <span class="st">&#39;securerandom&#39;</span></span>
+<span>require <span class="st">&#39;digest&#39;</span></span>
+<span>require <span class="st">&#39;openssl&#39;</span></span>
+<span></span>
+<span><span class="co"># -------------------</span></span>
+<span><span class="co"># 1. Generate Entropy</span></span>
+<span><span class="co"># -------------------</span></span>
+<span>bytes = <span class="dt">SecureRandom</span>.random_bytes(<span class="dv">16</span>) <span class="co"># 16 bytes = 128 bits</span></span>
+<span>entropy = bytes.unpack(<span class="st">&quot;B*&quot;</span>).join</span>
+<span>puts <span class="st">&quot;entropy: </span><span class="ot">#{</span>entropy<span class="ot">}</span><span class="st">&quot;</span></span>
+<span></span>
+<span><span class="co"># ----------------------</span></span>
+<span><span class="co"># 2. Entropy to Mnemonic</span></span>
+<span><span class="co"># ----------------------</span></span>
+<span><span class="co"># 1. Create checksum</span></span>
+<span>size = entropy.length / <span class="dv">32</span> <span class="co"># number of bits to take from hash of entropy (1 bit checksum for every 32 bits entropy)</span></span>
+<span>sha256 = <span class="dt">Digest</span>::<span class="dt">SHA256</span>.digest([entropy].pack(<span class="st">&quot;B*&quot;</span>)) <span class="co"># hash of entropy (in raw binary)</span></span>
+<span>checksum = sha256.unpack(<span class="st">&quot;B*&quot;</span>).join[<span class="dv">0</span>..size<span class="dv">-1</span>] <span class="co"># get desired number of bits</span></span>
+<span>puts <span class="st">&quot;checksum: </span><span class="ot">#{</span>checksum<span class="ot">}</span><span class="st">&quot;</span></span>
+<span></span>
+<span><span class="co"># 2. Combine</span></span>
+<span>full = entropy + checksum</span>
+<span>puts <span class="st">&quot;combined: </span><span class="ot">#{</span>full<span class="ot">}</span><span class="st">&quot;</span></span>
+<span></span>
+<span><span class="co"># 3. Split in to strings of of 11 bits</span></span>
+<span>pieces = full.scan(<span class="ot">/.{11}/</span>)</span>
+<span></span>
+<span><span class="co"># 4. Get the wordlist as an array</span></span>
+<span>wordlist = <span class="dt">File</span>.readlines(<span class="st">&quot;wordlist.txt&quot;</span>)</span>
+<span></span>
+<span><span class="co"># 5. Convert groups of bits to array of words</span></span>
+<span>puts <span class="st">&quot;words:&quot;</span></span>
+<span>sentence = []</span>
+<span>pieces.each <span class="kw">do</span> |piece|</span>
+<span>  i = piece.to_i(<span class="dv">2</span>)   <span class="co"># convert string of 11 bits to an integer</span></span>
+<span>  word = wordlist[i]  <span class="co"># get the corresponding word from wordlist</span></span>
+<span>  sentence &lt;&lt; word.chomp <span class="co"># add to sentence (removing newline from end of word)</span></span>
+<span>  puts <span class="st">&quot;</span><span class="ot">#{</span>piece<span class="ot">}</span><span class="st"> </span><span class="ot">#{</span>i.to_s.rjust(<span class="dv">4</span>)<span class="ot">}</span><span class="st"> </span><span class="ot">#{</span>word<span class="ot">}</span><span class="st">&quot;</span></span>
+<span><span class="kw">end</span></span>
+<span></span>
+<span>mnemonic = sentence.join(<span class="st">&quot; &quot;</span>)</span>
+<span>puts <span class="st">&quot;mnemonic: </span><span class="ot">#{</span>mnemonic<span class="ot">}</span><span class="st">&quot;</span></span>
+<span></span>
+<span><span class="co"># -------------------</span></span>
+<span><span class="co"># 3. Mnemonic to Seed</span></span>
+<span><span class="co"># -------------------</span></span>
+<span>passphrase = <span class="st">&quot;&quot;</span> <span class="co"># can leave this blank</span></span>
+<span>puts <span class="st">&quot;passphrase: </span><span class="ot">#{</span>passphrase<span class="ot">}</span><span class="st">&quot;</span></span>
+<span></span>
+<span>password = mnemonic</span>
+<span>salt = <span class="st">&quot;mnemonic</span><span class="ot">#{</span>passphrase<span class="ot">}</span><span class="st">&quot;</span> <span class="co"># &quot;mnemonic&quot; is always used in the salt with optional passphrase appended to it</span></span>
+<span>iterations = <span class="dv">2048</span></span>
+<span>keylength = <span class="dv">64</span></span>
+<span>digest = <span class="dt">OpenSSL</span>::<span class="dt">Digest</span>::<span class="dt">SHA512</span>.new</span>
+<span></span>
+<span>result = <span class="dt">OpenSSL</span>::<span class="dt">PKCS5</span>.pbkdf2_hmac(password, salt, iterations, keylength, digest) <span class="co"># password, salt, iter, keylen, digest</span></span>
+<span>seed = result.unpack(<span class="st">&quot;H*&quot;</span>)[<span class="dv">0</span>] <span class="co"># convert to hexadecimal string</span></span>
+<span>puts <span class="st">&quot;seed: </span><span class="ot">#{</span>seed<span class="ot">}</span><span class="st">&quot;</span></span></code></pre>
+
+</div>
+<h3>PHP</h3>
+
+
+<div class="sourceCode"><pre class="sourceCode php"><code class="sourceCode php"><span><span class="kw">&lt;?php</span></span>
+<span></span>
+<span><span class="co">// -------------------</span></span>
+<span><span class="co">// 1. Generate Entropy</span></span>
+<span><span class="co">// -------------------</span></span>
+<span></span>
+<span><span class="co">// a. Use Own Entropy (Binary)</span></span>
+<span><span class="co">// $entropy = &quot;0110101001101101101110100111010101010010010111010111110111011101010011110101100011010001111011110100111001100000001101000101101110110000010010001110101101011011101010000010111101100000100101100000111000101000110000001111010010100000101011000000111010001110&quot;;</span></span>
+<span></span>
+<span><span class="co">// b. Use Own Entropy (Hexadecimal)</span></span>
+<span><span class="co">// $hex = &quot;c0ba5a8e914111210f2bd131f3d5e08d&quot;;</span></span>
+<span><span class="co">// $raw = hex2bin($hex); // convert to raw bytes</span></span>
+<span><span class="co">// $length = (strlen($raw)/2)*8*2; // calculate expected number of bits in binary representation (so we can pad result to correct number of bits)</span></span>
+<span><span class="co">// $entropy = str_pad(gmp_strval(gmp_init(bin2hex($raw), 16), 2), $length, &quot;0&quot;, STR_PAD_LEFT);</span></span>
+<span><span class="co">// echo &quot;entropy: $entropy&quot;.PHP_EOL;</span></span>
+<span></span>
+<span><span class="co">// c. Generate Entropy</span></span>
+<span><span class="kw">$length</span>  = <span class="dv">256</span><span class="ot">;</span> <span class="co">// How many bits of entropy you want</span></span>
+<span><span class="kw">$urandom</span> = <span class="fu">fopen</span><span class="ot">(</span><span class="st">&#39;/dev/urandom&#39;</span><span class="ot">,</span> <span class="st">&#39;r&#39;</span><span class="ot">);</span></span>
+<span><span class="kw">$bytes</span>   = <span class="fu">fread</span><span class="ot">(</span><span class="kw">$urandom</span><span class="ot">,</span> <span class="kw">$length</span>/<span class="dv">8</span><span class="ot">);</span>  <span class="co">// Get raw bytes (8 bits in a byte)</span></span>
+<span><span class="kw">$entropy</span> = <span class="fu">str_pad</span><span class="ot">(</span><span class="fu">gmp_strval</span><span class="ot">(</span><span class="fu">gmp_init</span><span class="ot">(</span><span class="fu">bin2hex</span><span class="ot">(</span><span class="kw">$bytes</span><span class="ot">),</span> <span class="dv">16</span><span class="ot">),</span> <span class="dv">2</span><span class="ot">),</span> <span class="kw">$length</span><span class="ot">,</span> <span class="st">&quot;0&quot;</span><span class="ot">,</span> <span class="kw">STR_PAD_LEFT</span><span class="ot">);</span> <span class="co">// Convert to binary (10110111...) (pad zeros)</span></span>
+<span><span class="kw">echo</span> <span class="st">&quot;entropy: </span><span class="kw">$entropy</span><span class="st">&quot;</span>.<span class="kw">PHP_EOL</span><span class="ot">;</span></span>
+<span></span>
+<span><span class="co">// ----------------------</span></span>
+<span><span class="co">// 2. Entropy to Mnemonic</span></span>
+<span><span class="co">// ----------------------</span></span>
+<span></span>
+<span><span class="co">// 1. Create Checksum</span></span>
+<span><span class="kw">$size</span> = <span class="fu">strlen</span><span class="ot">(</span><span class="kw">$entropy</span><span class="ot">)</span> / <span class="dv">32</span><span class="ot">;</span> <span class="co">// 1 bit of checksum for every 32 bits of entropy</span></span>
+<span><span class="kw">$hex</span> = <span class="fu">str_pad</span><span class="ot">(</span><span class="fu">gmp_strval</span><span class="ot">(</span><span class="fu">gmp_init</span><span class="ot">(</span><span class="kw">$entropy</span><span class="ot">,</span> <span class="dv">2</span><span class="ot">),</span> <span class="dv">16</span><span class="ot">),</span> <span class="fu">strlen</span><span class="ot">(</span><span class="kw">$entropy</span><span class="ot">)</span>/<span class="dv">8</span>*<span class="dv">2</span><span class="ot">,</span> <span class="st">&quot;0&quot;</span><span class="ot">,</span> <span class="kw">STR_PAD_LEFT</span><span class="ot">);</span> <span class="co">// convert entropy back to hexadecimal ready to be hashed</span></span>
+<span><span class="kw">$hash</span> = <span class="fu">hash</span><span class="ot">(</span><span class="st">&quot;sha256&quot;</span><span class="ot">,</span> <span class="fu">hex2bin</span><span class="ot">(</span><span class="kw">$hex</span><span class="ot">));</span> <span class="co">// hash raw binary of entropy (bin &gt; hex &gt; rawbinary)</span></span>
+<span><span class="kw">$checksum</span> = <span class="fu">substr</span><span class="ot">(</span><span class="fu">str_pad</span><span class="ot">(</span><span class="fu">gmp_strval</span><span class="ot">(</span><span class="fu">gmp_init</span><span class="ot">(</span><span class="kw">$hash</span><span class="ot">,</span> <span class="dv">16</span><span class="ot">),</span> <span class="dv">2</span><span class="ot">),</span> <span class="dv">256</span><span class="ot">,</span> <span class="st">&quot;0&quot;</span><span class="ot">,</span> <span class="kw">STR_PAD_LEFT</span><span class="ot">),</span> <span class="dv">0</span><span class="ot">,</span> <span class="kw">$size</span><span class="ot">);</span> <span class="co">// hex &gt; dec &gt; bin, pad with zeros, take size bits</span></span>
+<span><span class="kw">echo</span> <span class="st">&quot;checksum: </span><span class="kw">$checksum</span><span class="st">&quot;</span>.<span class="kw">PHP_EOL</span><span class="ot">;</span></span>
+<span></span>
+<span><span class="co">// 2. Combine and split in to groups of 11 bits (32 bits + 1 bit entropy will always be a multiple of 11)</span></span>
+<span><span class="kw">$pieces</span> = <span class="fu">str_split</span><span class="ot">(</span><span class="kw">$entropy</span>.<span class="kw">$checksum</span><span class="ot">,</span> <span class="dv">11</span><span class="ot">);</span></span>
+<span></span>
+<span><span class="co">// 3. Get the wordlist as an array</span></span>
+<span><span class="kw">$wordlist</span> = <span class="fu">file</span><span class="ot">(</span><span class="st">&quot;wordlist.txt&quot;</span><span class="ot">,</span> <span class="kw">FILE_IGNORE_NEW_LINES</span><span class="ot">);</span> <span class="co">// file() reads file in to an array</span></span>
+<span></span>
+<span><span class="co">// 4. Convert groups of 11 bits in to decimal and store the corresponding word</span></span>
+<span><span class="kw">$words</span> = <span class="ot">[];</span></span>
+<span><span class="kw">foreach</span> <span class="ot">(</span><span class="kw">$pieces</span> <span class="kw">as</span> <span class="kw">$piece</span><span class="ot">)</span> {</span>
+<span>    <span class="kw">$i</span> = <span class="fu">bindec</span><span class="ot">(</span><span class="kw">$piece</span><span class="ot">);</span> <span class="co">// e.g. 01101010011 =&gt; 851</span></span>
+<span>    <span class="kw">$words</span><span class="ot">[]</span> = <span class="kw">$wordlist</span><span class="ot">[</span><span class="kw">$i</span><span class="ot">];</span></span>
+<span>}</span>
+<span><span class="kw">$mnemonic</span> = <span class="fu">implode</span><span class="ot">(</span><span class="st">&quot; &quot;</span><span class="ot">,</span> <span class="kw">$words</span><span class="ot">);</span> <span class="co">// Convert to a sentence (string of words separated by spaces)</span></span>
+<span><span class="kw">echo</span> <span class="st">&quot;mnemonic: </span><span class="kw">$mnemonic</span><span class="st">&quot;</span>.<span class="kw">PHP_EOL</span><span class="ot">;</span></span>
+<span></span>
+<span><span class="co">// -------------------</span></span>
+<span><span class="co">// 3. Mnemonic to Seed</span></span>
+<span><span class="co">// -------------------</span></span>
+<span><span class="co">// Password-Based Key Derivation Function 2</span></span>
+<span></span>
+<span><span class="co">// Password   = mnemonic sentence (UTF-8 NFKD)</span></span>
+<span><span class="co">// Salt       = &quot;mnemonic&quot; + passphrase (UTF-8 NFKD)</span></span>
+<span><span class="co">// Iterations = 2048 and HMAC-SHA512</span></span>
+<span><span class="co">// Algorithm  = HMAC-SHA512 (the pseudo-random function)</span></span>
+<span><span class="co">// Length     = 512 bits (64 bytes)</span></span>
+<span></span>
+<span><span class="kw">$passphrase</span> = <span class="st">&quot;TREZOR&quot;</span><span class="ot">;</span> <span class="co">// default is empty string</span></span>
+<span><span class="kw">echo</span> <span class="st">&quot;passphrase: </span><span class="kw">$passphrase</span><span class="st">&quot;</span>.<span class="kw">PHP_EOL</span><span class="ot">;</span></span>
+<span></span>
+<span><span class="kw">$seed</span> = <span class="fu">bin2hex</span><span class="ot">(</span><span class="fu">hash_pbkdf2</span><span class="ot">(</span><span class="st">&quot;sha512&quot;</span><span class="ot">,</span> <span class="kw">$mnemonic</span><span class="ot">,</span> <span class="st">&quot;mnemonic&quot;</span>.<span class="kw">$passphrase</span><span class="ot">,</span> <span class="dv">2048</span><span class="ot">,</span> <span class="dv">64</span><span class="ot">,</span> <span class="kw">true</span><span class="ot">));</span> <span class="co">// algo, password, salt, iterations, length, raw_output</span></span>
+<span><span class="kw">echo</span> <span class="st">&quot;seed: </span><span class="kw">$seed</span><span class="st">&quot;</span>.<span class="kw">PHP_EOL</span><span class="ot">;</span></span></code></pre>
+
+</div>
+<h3>Go</h3>
+
+
+<div class="sourceCode"><pre class="sourceCode go"><code class="sourceCode go"><span><span class="kw">package</span> main</span>
+<span></span>
+<span><span class="kw">import</span> (</span>
+<span>    <span class="st">&quot;crypto/rand&quot;</span>   <span class="co">// generating random bytes for entropy</span></span>
+<span>    <span class="st">&quot;crypto/sha256&quot;</span> <span class="co">// creating checksum</span></span>
+<span>    <span class="st">&quot;crypto/sha512&quot;</span> <span class="co">// hash function used in pbkdf2</span></span>
+<span>    <span class="st">&quot;encoding/hex&quot;</span>  <span class="co">// getting bytes from hex string</span></span>
+<span>    <span class="st">&quot;fmt&quot;</span></span>
+<span>    <span class="st">&quot;io/ioutil&quot;</span> <span class="co">// read wordlist file</span></span>
+<span>    <span class="st">&quot;math/big&quot;</span>  <span class="co">// converting byte slice to integer</span></span>
+<span>    <span class="st">&quot;strings&quot;</span>   <span class="co">// split wordlist file string in to an array of strings</span></span>
+<span></span>
+<span>    <span class="st">&quot;golang.org/x/crypto/pbkdf2&quot;</span></span>
+<span>)</span>
+<span></span>
+<span><span class="kw">func</span> main() {</span>
+<span></span>
+<span>    <span class="co">// ---------------------------------------</span></span>
+<span>    <span class="co">// 1a. Generate Random Bytes (for Entropy)</span></span>
+<span>    <span class="co">// ---------------------------------------</span></span>
+<span></span>
+<span>    <span class="co">// Create empty byte slice and fill with bytes from crypto/rand</span></span>
+<span>    bytes := <span class="bu">make</span>([]<span class="dt">byte</span>, <span class="dv">16</span>) <span class="co">// [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]</span></span>
+<span>    rand.Read(bytes)</span>
+<span>    fmt.Println(<span class="st">&quot;Entropy:&quot;</span>, hex.EncodeToString(bytes))</span>
+<span>    fmt.Println(<span class="st">&quot;Entropy:&quot;</span>, bytes)</span>
+<span>    fmt.Printf(<span class="st">&quot;Entropy: %08b</span><span class="ch">\n</span><span class="st">&quot;</span>, bytes)</span>
+<span>    fmt.Println()</span>
+<span></span>
+<span>    <span class="co">// ----------------------------------------</span></span>
+<span>    <span class="co">// 1b. Use Hexadecimal String (for Entropy)</span></span>
+<span>    <span class="co">// ----------------------------------------</span></span>
+<span></span>
+<span>    <span class="co">// entropy := &quot;7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f&quot;</span></span>
+<span>    <span class="co">// bytes, _ := hex.DecodeString(entropy)</span></span>
+<span>    <span class="co">// fmt.Println(&quot;Entropy:&quot;, entropy)</span></span>
+<span>    <span class="co">// fmt.Println(&quot;Entropy:&quot;, bytes)</span></span>
+<span>    <span class="co">// fmt.Printf(&quot;Entropy: %08b\n&quot;, bytes)</span></span>
+<span>    <span class="co">// fmt.Println()</span></span>
+<span></span>
+<span>    <span class="co">// ------------------</span></span>
+<span>    <span class="co">// 2. Create Checksum</span></span>
+<span>    <span class="co">// ------------------</span></span>
+<span>    <span class="co">// SHA256 the entropy</span></span>
+<span>    h := sha256.New()                        <span class="co">// hash function</span></span>
+<span>    h.Write(bytes)                           <span class="co">// write bytes to hash function</span></span>
+<span>    checksum := h.Sum(<span class="ot">nil</span>)                   <span class="co">// get result as a byte slice</span></span>
+<span>    fmt.Printf(<span class="st">&quot;Checksum: %08b</span><span class="ch">\n</span><span class="st">&quot;</span>, checksum) <span class="co">// 10000101</span></span>
+<span></span>
+<span>    <span class="co">// Get specific number of bits from the checksum</span></span>
+<span>    size := <span class="bu">len</span>(bytes) * <span class="dv">8</span> / <span class="dv">32</span>       <span class="co">// 1 bit for every 32 bits of entropy (1 byte = 8 bits)</span></span>
+<span>    fmt.Println(<span class="st">&quot;Bits Wanted:&quot;</span>, size) <span class="co">// how many bits from the checksum we want</span></span>
+<span>    fmt.Println()</span>
+<span></span>
+<span>    <span class="co">// Convert the byte slice to a big integer (so you can use arithmetic to add bits to the end)</span></span>
+<span>    <span class="co">// Note: You can only add bytes (and not individual bits) to a byte slice, so you need to do bitwise arithmetic instead</span></span>
+<span>    <span class="co">//</span></span>
+<span>    <span class="co">//  entropy ([]byte)</span></span>
+<span>    <span class="co">//     |</span></span>
+<span>    <span class="co">//  762603471227441019646259032069709348664 (big.Int)</span></span>
+<span>    <span class="co">//</span></span>
+<span>    dataBigInt := <span class="bu">new</span>(big.Int).SetBytes(bytes)</span>
+<span>    fmt.Println(<span class="st">&quot;Entropy:         &quot;</span>, dataBigInt)</span>
+<span></span>
+<span>    <span class="co">// Run through the number of bits you want from the checksum, manually adding each bit to the entropy (through arithmetic)</span></span>
+<span>    <span class="kw">for</span> i := <span class="dt">uint8</span>(<span class="dv">0</span>); i &lt; <span class="dt">uint8</span>(size); i++ {</span>
+<span>        <span class="co">// Add a zero bit to the end for every bit of checksum we add</span></span>
+<span>        <span class="co">//</span></span>
+<span>        <span class="co">//          ---&gt;</span></span>
+<span>        <span class="co">//          01001101</span></span>
+<span>        <span class="co">// |entropy|0|</span></span>
+<span>        <span class="co">//</span></span>
+<span>        dataBigInt.Mul(dataBigInt, big.NewInt(<span class="dv">2</span>)) <span class="co">// multiplying an integer by two is like adding a 0 bit to the end</span></span>
+<span></span>
+<span>        <span class="co">// Use bitwise AND mask to check if each bit of the checksum is set</span></span>
+<span>        <span class="co">//</span></span>
+<span>        <span class="co">// checksum[0] = 01001101</span></span>
+<span>        <span class="co">//           AND 10000000 = 0</span></span>
+<span>        <span class="co">//           AND  1000000 = 1000000</span></span>
+<span>        <span class="co">//           AND   100000 = 0</span></span>
+<span>        <span class="co">//           AND    10000 = 0</span></span>
+<span>        <span class="co">//</span></span>
+<span>        mask := <span class="dv">1</span> &lt;&lt; (<span class="dv">7</span> - i)</span>
+<span>        set := <span class="dt">uint8</span>(checksum[<span class="dv">0</span>]) &amp; <span class="dt">uint8</span>(mask) <span class="co">// e.g. 100100100 AND 10000000 = 10000000</span></span>
+<span></span>
+<span>        <span class="kw">if</span> set &gt; <span class="dv">0</span> {</span>
+<span>            <span class="co">// If the bit is set, change the last zero bit to a 1 bit</span></span>
+<span>            <span class="co">//          10001101</span></span>
+<span>            <span class="co">// |entropy|1|</span></span>
+<span>            <span class="co">//</span></span>
+<span>            dataBigInt.Or(dataBigInt, big.NewInt(<span class="dv">1</span>)) <span class="co">// Use bitwise OR to toggle last bit (basically adds 1 to the integer)</span></span>
+<span>        }</span>
+<span>    }</span>
+<span></span>
+<span>    fmt.Println(<span class="st">&quot;Entropy+Checksum:&quot;</span>, dataBigInt)</span>
+<span>    fmt.Println()</span>
+<span></span>
+<span>    <span class="co">// TIP: Adding bits manually using bitwise arithemtic (can&#39;t use bitwise AND or SHIFT on an integer, but maths can do the same)</span></span>
+<span>    <span class="co">// dataBigInt.Mul(dataBigInt, big.NewInt(2)) // add 0 bit to end         = 0  (multiplying by two is like adding a 0 bit)</span></span>
+<span>    <span class="co">// dataBigInt.Or(dataBigInt, big.NewInt(1))  // change 0 bit on end to 1 = 1</span></span>
+<span>    <span class="co">// dataBigInt.Mul(dataBigInt, big.NewInt(2)) // add 0 bit to end         = 10</span></span>
+<span>    <span class="co">// dataBigInt.Mul(dataBigInt, big.NewInt(2)) // add 0 bit to end         = 100</span></span>
+<span>    <span class="co">// dataBigInt.Mul(dataBigInt, big.NewInt(2)) // add 0 bit to end         = 1000</span></span>
+<span></span>
+<span>    <span class="co">// ---------------------------------------</span></span>
+<span>    <span class="co">// 3. Convert Entropy+Checksum to Mnemonic</span></span>
+<span>    <span class="co">// ---------------------------------------</span></span>
+<span></span>
+<span>    <span class="co">// Get array of words from wordlist file</span></span>
+<span>    file, _ := ioutil.ReadFile(<span class="st">&quot;wordlist.txt&quot;</span>)</span>
+<span>    wordlist := strings.Split(<span class="dt">string</span>(file), <span class="st">&quot;</span><span class="ch">\n</span><span class="st">&quot;</span>)</span>
+<span>    <span class="co">// fmt.Println(wordlist[2047])</span></span>
+<span></span>
+<span>    <span class="co">// Work out expected number of word in mnemonic based on how many 11-bit groups there are in entropy+checksum</span></span>
+<span>    pieces := ((<span class="bu">len</span>(bytes) * <span class="dv">8</span>) + size) / <span class="dv">11</span></span>
+<span></span>
+<span>    <span class="co">// Create an array of strings to hold words</span></span>
+<span>    words := <span class="bu">make</span>([]<span class="dt">string</span>, pieces)</span>
+<span></span>
+<span>    <span class="co">// Loop through every 11 bits of entropy+checksum and convert to corresponding word from wordlist</span></span>
+<span>    <span class="kw">for</span> i := pieces - <span class="dv">1</span>; i &gt;= <span class="dv">0</span>; i-- {</span>
+<span></span>
+<span>        <span class="co">// Use bit mask (bitwise AND) to split integer in to 11-bit pieces</span></span>
+<span>        <span class="co">//</span></span>
+<span>        <span class="co">//            right to left          big.NewInt(2047) = bit mask</span></span>
+<span>        <span class="co">//          &lt;----------------          &lt;---------&gt;</span></span>
+<span>        <span class="co">// 11111111111|11111111111|11111111111|11111111111</span></span>
+<span>        <span class="co">//</span></span>
+<span>        word := big.NewInt(<span class="dv">0</span>)                  <span class="co">// hold result of 11 bit mask</span></span>
+<span>        word.And(dataBigInt, big.NewInt(<span class="dv">2047</span>)) <span class="co">// bit mask last 11 bits (2047 = 0b11111111111)</span></span>
+<span></span>
+<span>        <span class="co">// Add corresponding word to array</span></span>
+<span>        <span class="co">//</span></span>
+<span>        <span class="co">// 11100111000 = 1848 = train</span></span>
+<span>        <span class="co">//</span></span>
+<span>        words[i] = wordlist[word.Int64()] <span class="co">// insert word from wordlist in to array (need to convert big.Int to int64)</span></span>
+<span></span>
+<span>        <span class="co">// Remove those 11 bits from end of big integer by bit shifting</span></span>
+<span>        <span class="co">//</span></span>
+<span>        <span class="co">// 11111111111|11111111111|11111111111|11111111111</span></span>
+<span>        <span class="co">//                                    /            - dividing is the same as bit shifting</span></span>
+<span>        <span class="co">//                                    100000000000 = big.NewInt(2048)</span></span>
+<span>        <span class="co">// 11111111111|11111111111|11111111111|</span></span>
+<span>        <span class="co">//</span></span>
+<span>        dataBigInt.Div(dataBigInt, big.NewInt(<span class="dv">2048</span>)) <span class="co">// dividing by 2048 is the same as bit shifting 11 bits</span></span>
+<span></span>
+<span>    }</span>
+<span></span>
+<span>    <span class="co">// Convert array of words in to mnemonic string</span></span>
+<span>    mnemonic := strings.Join(words, <span class="st">&quot; &quot;</span>)</span>
+<span>    fmt.Println(<span class="st">&quot;Mnemonic:&quot;</span>, mnemonic)</span>
+<span>    fmt.Println()</span>
+<span></span>
+<span>    <span class="co">// ------------------------------------</span></span>
+<span>    <span class="co">// 4. Convert Mnemonic Sentence to Seed</span></span>
+<span>    <span class="co">// ------------------------------------</span></span>
+<span>    passphrase := <span class="st">&quot;TREZOR&quot;</span></span>
+<span>    seed := pbkdf2.Key([]<span class="dt">byte</span>(mnemonic), []<span class="dt">byte</span>(<span class="st">&quot;mnemonic&quot;</span>+passphrase), <span class="dv">2048</span>, <span class="dv">64</span>, sha512.New)</span>
+<span>    fmt.Println(<span class="st">&quot;Seed:&quot;</span>, hex.EncodeToString(seed))</span>
+<span></span>
+<span>}</span>
+<span></span>
+<span><span class="co">// Code inspired by: https://github.com/tyler-smith/go-bip39/blob/master/bip39.go</span></span></code></pre>
+
+</div>
+
+
+</div>
+</div>
+</body>
+</html>

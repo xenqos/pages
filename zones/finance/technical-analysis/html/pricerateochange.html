@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Price Rate-Of-Change</title>
+  <link rel='stylesheet' type='text/css' href='/styles/commons.css'>
+  <link rel='stylesheet' type='text/css' href='../styles/local.css'>
+  <script type='text/javascript' src='/scripts/commons.js'></script>
+</head>
+<body>
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='/'><span class='clNavHome'><span></a>
+    <a href='../../index.html'><span class='clNavIndex'><span></a>
+    <a href='./priceosc.html'><span class='clNavLeft'><span></a>
+    <a href='../index.html'><span class='clNavUp'><span></a>
+    <a href='./publicshortrat.html'><span class='clNavRight'><span></a>
+  </div>
+</div>
+
+<div id='idContent'>
+
+
+
+<h1>Price Rate-Of-Change</h1>
+
+<h2>Overview</h2>
+
+<p>The Price Rate-of-Change ("ROC") indicator displays the difference between the current
+price and the price x-time periods ago.  The difference can be displayed in either points
+or as a percentage.  The Momentum indicator displays the same
+information, but expresses it as a ratio.</p>
+
+
+<h2>Interpretation</h2>
+
+<p>It is a well recognized phenomenon that security prices surge ahead and retract in a
+cyclical wave-like motion.  This cyclical action is the result of the changing expectations
+as bulls and bears struggle to control prices.</p>
+<p>The ROC displays the wave-like motion in an oscillator format by measuring the amount
+that prices have changed over a given time period.  As prices increase, the ROC rises; as
+prices fall, the ROC falls.  The greater the change in prices, the greater the change in
+the ROC.</p>
+<p>The time period used to calculate the ROC may range from 1-day (which results in a
+volatile chart showing the daily price change) to 200-days (or longer).  The most popular
+time periods are the 12- and 25-day ROC for short to intermediate-term trading.  These time
+periods were popularized by Gerald Appel and Fred Hitschler in their book,
+Stock Market Trading Systems.</p>
+<p>The 12-day ROC is an excellent short- to intermediate-term overbought/oversold
+indicator.  The higher the ROC, the more overbought the security; the lower the ROC, the
+more likely a rally.  However, as with all overbought/over-sold indicators, it is prudent
+to wait for the market to begin to correct (i.e., turn up or down) before placing your
+trade.  A market that appears overbought may remain overbought for some time.  In fact,
+extremely overbought/oversold readings usually imply a continuation of the current
+trend.</p>
+<p>The 12-day ROC tends to be very cyclical, oscillating back and forth in a fairly regular
+cycle.  Often, price changes can be anticipated by studying the previous cycles of the ROC
+and relating the previous cycles to the current market.</p>
+
+
+<h2>Example</h2>
+
+<p>The following chart shows the 12-day ROC
+of Walgreen expressed in percent.</p>
+<img src="../images/pricerate-of-change-1.webp"></p>
+
+I drew "buy" arrows each time the ROC fell below, and
+then rose above, the oversold level of -6.5.  I drew "sell" arrows each time the ROC rose
+above, and then fell below, the overbought level of +6.5.</p>
+<p>The optimum overbought/oversold levels (e.g., ±6.5) vary depending on the security being
+analyzed and overall market conditions.  I selected ±6.5 by drawing a horizontal line on
+the chart that isolated previous "extreme" levels of Walgreen's 12-day ROC.</p>
+
+
+<h2>Calculation</h2>
+
+<p>When the Rate-of-Change displays the price change in points, it subtracts the price x-time
+periods ago from today's price:</p>
+<P><img src="../images/pricerateochangecalc1.webp"></p>
+<p>When the Rate-of-Change displays the price change as a percentage, it divides the price
+change by price x-time period's ago:</p>
+<P><img src="../images/pricerateochangecalc2.webp"></p>
+
+</div>
+</div>
+</body>
+</html>

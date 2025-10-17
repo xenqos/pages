@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Weighted Close</title>
+  <link rel='stylesheet' type='text/css' href='/styles/commons.css'>
+  <link rel='stylesheet' type='text/css' href='../styles/local.css'>
+  <script type='text/javascript' src='/scripts/commons.js'></script>
+</head>
+<body>
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='/'><span class='clNavHome'><span></a>
+    <a href='../../index.html'><span class='clNavIndex'><span></a>
+    <a href='./volrateochange.html'><span class='clNavLeft'><span></a>
+    <a href='../index.html'><span class='clNavUp'><span></a>
+    <a href='./williamsaccumdistr.html'><span class='clNavRight'><span></a>
+  </div>
+</div>
+
+<div id='idContent'>
+
+
+
+<h1>Weighted Close</h1>
+
+<h2>Overview</h2>
+
+<p>The Weighted Close indicator is simply an average of each day's price.  It gets its name
+from the fact that extra weight is given to the closing price.  The
+Median Price and Typical Price
+are similar indicators.</p>
+
+
+<h2>Interpretation</h2>
+
+<p>When plotting and back-testing moving averages, indicators, trendlines, etc, some investors
+like the simplicity that a line chart offers.  However, line charts that only show the
+closing price can be misleading since they ignore the high and low price.  A Weighted Close
+chart combines the simplicity of the line chart with the scope of a bar chart, by plotting
+a single point for each day that includes the high, low, and closing price.</p>
+
+
+<h2>Example</h2>
+
+<p>The following chart shows the Weighted Close
+plotted on top of a normal high/low/close bar chart of Peoplesoft.</p>
+<img src="../images/weightedclose-1.webp"></p>
+
+
+<h2>Calculation</h2>
+
+<p>The Weighted Close indicator is calculated by multiplying the close by two, adding the high
+and the low to this product, and dividing by four.  The result is the average price with
+extra weight given to the closing price.</p>
+<P><img src="../images/weightedclosecalc.webp"></p>
+
+</div>
+</div>
+</body>
+</html>
