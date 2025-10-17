@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, user-scalable=no'>
+  <title>Technical Analysis</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'><span></a>
+    <a href='099.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='101.html'><span class='clNavRight'></span></a>
+  </div>
+</div>
+<div id='idContent'>
+
+
+<h1>Trade Volume Index</h1>
+
+<h2>Overview</h2>
+
+<p>The Trade Volume Index ("TVI") shows whether a security is being accumulated (purchased) or
+distributed (sold).</p>
+<p>The TVI is designed to be calculated using intraday "tick" price data.  The TVI is based
+on the premise that trades taking place at higher "asking" prices are buy transactions and
+trades at lower "bid" prices are sell transactions.</p>
+
+
+<h2>Interpretation</h2>
+
+<p>The TVI is very similar to On Balance Volume.  The OBV method
+works well with daily prices, but it doesn't work as well with intraday tick prices.  Tick
+prices, especially stock prices, often display trades at the bid or ask price for extended
+periods without changing.  This creates a flat support or resistance level in the chart.
+During these periods of unchanging prices, the TVI continues to accumulate this volume on
+either the buy or sell side, depending on the last price change.</p>
+<p>The TVI helps identify whether a security is being accumulated or distributed.  When the
+TVI is trending up, it shows that trades are taking place at the asking price as buyers
+accumulate the security.  When the TVI is trending down, it shows that trades are taking
+place at the bid price as sellers distribute the security.</p>
+<p>When prices create a flat resistance level and the TVI is rising, look for prices to
+breakout to the upside.  When prices create a flat support level and the TVI is falling,
+look for prices to drop below the support level.</p>
+
+
+<h2>Example</h2>
+
+<p>The following chart shows IBM's tick prices
+and TVI.</p>
+<img src="../images/tradevolume.webp"></p>
+During the 45 minutes leading up to the point labeled "A," prices were locked in
+a tight range between the bid price of 69 1/4 and the asking price of 69 3/8.  During this
+same period, the TVI was trending upward which showed the prices were slowly being
+accumulated.</p>
+
+
+<h2>Calculation</h2>
+
+<p>The Trade Volume Index is calculated by adding each trade's volume to a cumulative total
+when the price moves up by a specified amount, and subtracting the trade's volume when the
+price moves down by a specified amount.  The "specified" amount is called the "Minimum Tick
+Value."</p>
+<p>To calculate the TVI you must first determine if prices are being accumulated or
+distributed:</p>
+<P><img src="../images/tradevolindcalc1.webp"><br>
+<img src="../images/tradevolindcalc2.webp"></p>
+<P><img src="../images/tradevolindcalc3.webp"></p>
+<P><img src="../images/tradevolindcalc4.webp"></p>
+<P><img src="../images/tradevolindcalc5.webp"></p>
+<p>Once you know the direction, you can then calculate the TVI:</p>
+<P><img src="../images/tradevolindcalc6.webp"></p>
+<P><img src="../images/tradevolindcalc7.webp"></p>
+
+</div>
+</div>
+</body>
+</html>

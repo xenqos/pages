@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, user-scalable=no'>
+  <title>Technical Analysis</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'><span></a>
+    <a href='094.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='096.html'><span class='clNavRight'></span></a>
+  </div>
+</div>
+<div id='idContent'>
+
+
+
+<h1>Swing Index</h1>
+
+<h2>Overview</h2>
+
+<p>Developed by Welles Wilder, the Swing Index seeks to isolate the "real" price of a security
+by comparing the relationships between the current prices (i.e., open, high, low, and
+close) and the previous period's prices.</p>
+
+
+<h2>Interpretation</h2>
+
+<p>The Swing Index is primarily used as a component of the
+<i>Accumulation</i> Swing Index.</p>
+
+
+<h2>Example</h2>
+
+<p>The following chart shows the British Pound and the Swing Index.</p>
+<img src="../images/swingindex-1.webp"></p>
+You can see that by
+itself, the Swing Index is an erratic plot.  The value of this indicator develops when it
+is accumulated into the Accumulation Swing Index.</p>
+
+
+<h2>Calculation</h2>
+
+<p>Although it is beyond the scope of this book to completely define the Swing Index, the
+basic formula is shown below.  Step-by-step instructions on calculating the Swing Index are
+provided in Wilder's book,
+New Concepts In Technical Trading Systems.</p>
+
+<P><img src="../images/swingindcalc1.webp"></p>
+
+<p>Where:</p>
+<P><img src="../images/swingindcalc2.webp"></p>
+<p>The following table lists the limit moves for several commodities.  You can get a list
+of limit moves from your broker.</p>
+<p>
+  <table>
+  <tr><TD colspan=2>
+  <B>Table 14</td></tr>
+  <tr><td>Commodity</td>
+      <td>Limit Move</td>
+  </tr>
+  <tr><td>Coffee</td>
+      <td>$0.06</td>
+  </tr>
+  <tr>
+      <td>Gold</td>
+      <td>$75.00</td>
+  </tr>
+  <tr>
+      <td>Heating Oil</td>
+      <td>$0.04</td>
+  </tr>
+  <tr>
+      <td>Hogs</td>
+      <td>$0.015</td>
+  <tr>
+      <td>Soybeans</td>
+      <td>$0.30</td>
+  </tr>
+  <tr>
+      <td>T-Bonds</td>
+      <td>$3.00</td>
+  </tr></table>
+  </p>
+<p>You may need to adjust the limit moves shown in the above table based on the position of
+the decimal in your data.  For example, if the price of corn is quoted as $2.45, the limit
+move would be $0.10.  However, if the price of corn is quoted as $245.00, the limit move
+would be $10.00.</p>
+<p>If the security does not have a limit move (e.g., a stock or some futures), use an
+extremely high value (e.g., $30,000).</p>
+
+</div>
+</div>
+</body>
+</html>

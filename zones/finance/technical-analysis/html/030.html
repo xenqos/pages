@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, user-scalable=no'>
+  <title>Technical Analysis</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'><span></a>
+    <a href='029.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='031.html'><span class='clNavRight'></span></a>
+  </div>
+</div>
+<div id='idContent'>
+
+
+
+<h1>Commodity Channel Index</h1>
+
+<h2>Overview</h2>
+
+<p>The Commodity Channel Index ("CCI") measures the variation of a security's price from its
+statistical mean. High values show that prices are unusually high compared to average
+prices whereas low values indicate that prices are unusually low. Contrary to its name, the
+CCI can be used effectively on any type of security, not just commodities.</p>
+<p>The CCI was developed by Donald Lambert.</p>
+
+
+<h2>Interpretation</h2>
+
+<p>There are two basic methods of interpreting the CCI: looking for divergences and as an
+overbought/oversold indicator.</p>
+<UL>
+<li>A divergence occurs when the security's
+prices are making new highs while the CCI is failing to surpass its previous highs.  This
+classic divergence is usually followed by a correction in the security's price.</li>
+<li>The CCI typically oscillates between ±100.  To use the CCI as an overbought/oversold
+indicator, readings above +100 imply an overbought condition (and a pending price
+correction) while readings below -100 imply an oversold condition (and a pending rally).</li>
+</ul>
+<h2>Example</h2>
+
+<p>The following chart</a> shows the British Pound and its 14-day CCI.  A bullish divergence
+occurred at point "A" (prices were declining as the CCI was advancing).  Prices
+subsequently rallied.  A bearish divergence occurred at point "B" (prices were advancing
+while the CCI was declining).  Prices corrected.  Note too, that each of these divergences
+occurred at extreme levels (i.e., above +100 or below -100) making them even more
+significant.</p>
+<p><img src="../images/commoditychannelindex-1.webp"></p>
+
+
+<h2>Calculation</h2>
+
+<p>A complete explanation of the CCI calculation is beyond the scope of this book.  The
+following are basic steps involved in the calculation:</p>
+
+<OL>
+<li>Add each period's high, low, and close and divide this sum by 3.  This is the
+  typical price.</li>
+
+<li>Calculate an n-period simple moving average of the typical prices computed in
+  Step 1.</li>
+
+<li>For each of the prior n-periods, subtract today's Step 2 value from Step 1's value n
+  days ago.  For example, if you were calculating a 5-day CCI, you would perform five
+  subtractions using today's Step 2 value.</li>
+
+<li>Calculate an n-period simple moving average of the absolute values of each of the
+  results in Step 3.</li>
+
+<li>Multiply the value in Step 4 by 0.015.</li>
+
+<li>Subtract the value from Step 2 from the value in Step 1.</li>
+
+<li>Divide the value in Step 6 by the value in Step 5.</li>
+</OL>
+
+<p>Further details on the contents and interpretation of the CCI can be found in an article
+by Donald Lambert that appeared in the October 1980 issue of <i>Commodities</i> (now known as
+<i>Futures</i>) Magazine.
+
+</div>
+</div>
+</body>
+</html>
