@@ -8,16 +8,16 @@ Play many hands
 Play weak hands
 !]
 
-## Passive
-[!
-Call frequently
-Raise rarely
-!]
-
 ## Tight
 [!
 Play strong hands
 Fold weak hands
+!]
+
+## Passive
+[!
+Call frequently
+Raise rarely
 !]
 
 ## Aggressive
@@ -27,11 +27,11 @@ Raise frequently
 Call rarely
 !]
 
-## TAG
-Tight Aggressive
-
 ## LAG
 Loose Aggressive
+
+## TAG
+Tight Aggressive
 
 ### Guidelines
 
