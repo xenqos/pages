@@ -1,0 +1,11 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
+Je voudrais prendre rendez-vous, s'il vous plaît.
+Où est-ce que vous avez mal ?
+Est-ce que vous êtes allergique à quelque chose ?
+Je me suis écorché la main en tombant.
+Je me suis fait mal.
+</prosody>
+</voice>
+</speak>

@@ -1,0 +1,24 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-30%" pitch="low" volume="medium">
+assez de
+une assiette de
+beaucoup de
+une boîte de
+une bouteille de
+un kilo de
+un morceau de
+un peu de
+une tasse de
+une tranche de
+trop de
+un verre de
+une douzaine de
+un paquet de
+un panier de
+une poignée de
+plus de
+un bouquet de
+</prosody>
+</voice>
+</speak>

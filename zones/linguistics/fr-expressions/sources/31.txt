@@ -1,0 +1,18 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
+Qu'est-ce que vous faites dans la vie ?
+Je suis avocate.
+Je suis professeur.
+Je suis étudiant.
+Où est-ce que vous faites vos études ?
+Je vais à l'université de Michigan.
+Je fais mes études à l'université de Toronto.
+Qu'est-ce que vous étudiez ?
+Quelles matières étudiez-vous ?
+J'étudie les langues étrangères et la linguistique.
+Je fais des mathématiques.
+Ma spécialisation est la biologie.
+</prosody>
+</voice>
+</speak>
