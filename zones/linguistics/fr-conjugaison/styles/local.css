@@ -76,15 +76,15 @@ table, th, td
 .clPanelTop
 {
   border:               0.000rem solid #555555;
-  margin:               3.000rem 0.000rem 0.000rem 0.000rem;
+  margin:               3.000rem 0.000rem 0.000rem 1.200rem;
   padding:              0.000rem 0.000rem 0.000rem 0.000rem;
   width:                100%;
 }
 
 .clPanelBottom
 {
-  margin:              -2.500rem -0.250rem 0.000rem -0.250rem;
-  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+  margin:              -2.500rem -0.250rem 0.000rem 0.600rem;
+  padding:              0.000rem  0.000rem 0.000rem 0.000rem;
   width:                100%;
 }
 
@@ -276,7 +276,7 @@ h3
 
 tr.clConj > td
 {
-  padding-right:         1.600rem;
+  padding-right:         1.000rem;
 }
 
 /*--------------------------------------------------------------------------------------------------*/
