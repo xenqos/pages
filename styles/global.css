@@ -4,6 +4,8 @@
 
 /*-----------------------------------------------------------------------------------------------*/
 
+/*
+
 @font-face
 {
   font-family:          'Roboto';
@@ -40,9 +42,47 @@
                         url('./fonts/Roboto-BoldItalic.woff2') format('woff2');
 }
 
+*/
+
+@font-face
+{
+  font-family:          'Noto Sans';
+  font-style:           normal;
+  font-weight:          400;
+  src:                  local('Noto Sans'),
+                        url('./fonts/NotoSans-Regular.woff2') format('woff2');
+}
+
+@font-face
+{
+  font-family:          'Noto Sans';
+  font-style:           normal;
+  font-weight:          700;
+  src:                  local('Noto Sans'),
+                        url('./fonts/NotoSans-Bold.woff2') format('woff2'),
+}
+
+@font-face
+{
+  font-family:          'Noto Sans';
+  font-style:           italic;
+  font-weight:          400;
+  src:                  local('Noto Sans'),
+                        url('./fonts/NotoSans-Italic.woff2') format('woff2');
+}
+
+@font-face
+{
+  font-family:          'Noto Sans';
+  font-style:           italic;
+  font-weight:          700;
+  src:                  local('Noto Sans'),
+                        url('./fonts/NotoSans-BoldItalic.woff2') format('woff2');
+}
+
 /*-----------------------------------------------------------------------------------------------*/
 
-html { font-size: 16px; }
+html { font-size: 1.060rem; }
 
 /*-----------------------------------------------------------------------------------------------*/
 
@@ -50,7 +90,7 @@ body
 {
   background:           #dbdbdb;
   color:                #000000;
-  font-family:          'Roboto', sans-serif !important;
+  font-family:          'Noto Sans', sans-serif !important;
   font-style:           normal;
   font-size:            100%;
   font-weight:          normal;
