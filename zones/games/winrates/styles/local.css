@@ -31,11 +31,11 @@ h6
   flex-direction:       row;
   justify-content:      center;
   flex-wrap:            wrap;
-  gap:                  1.000rem;
+  gap:                  0.600rem;
 }
 
-.clPanel-01,
-.clPanel-02
+.clPanel1,
+.clPanel2
 {
   display:              flex;
   flex-direction:       column;
@@ -63,7 +63,7 @@ h6
 
 .clCard
 {
-  width:                4.400rem;
+  width:                4.600rem;
 }
 
 #idCard1,
@@ -75,8 +75,9 @@ h6
   padding:              0.000rem 0.040rem 0.000rem 0.040rem;
 }
 
-
-#idAcronym
+#idNameP,
+#idNameS,
+#idNameO
 {
   color:                #995f46;
   font-family:          monospace;
@@ -85,8 +86,9 @@ h6
   padding:              0.000rem 0.000rem 0.000rem 0.000rem;
 }
 
-#idWinRate-01,
-#idWinRate-02
+#idWinRateP,
+#idWinRateS,
+#idWinRateO
 {
   background:           #e0e0e0;
   border:               1px solid #aaaaaa;
