@@ -9,10 +9,20 @@ var strRevealedBackgroundColor = '#ffffff';
 
 /*--------------------------------------------------------------------------------------------------*/
 
-function fncRevealWinRate(objElementAnswer)
+function fncHideHeading()
 {
-  objElementAnswer.style.color           = strRevealedColor;
-  objElementAnswer.style.backgroundColor = strRevealedBackgroundColor;
+  const h1Element = document.querySelector('h1');
+  h1Element.remove();
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+function fncRevealAnswer()
+{
+  const divElementAnswer = document.getElementById('idAnswer');
+
+  divElementAnswer.style.color           = strRevealedColor;
+  divElementAnswer.style.backgroundColor = strRevealedBackgroundColor;
 }
 
 /*--------------------------------------------------------------------------------------------------*/
