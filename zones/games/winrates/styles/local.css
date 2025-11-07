@@ -16,15 +16,28 @@
   text-align:           center;
 }
 
+#idFloor
+{
+  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+  text-align:           center;
+
+  display:              flex;
+  flex-direction:       row;
+  justify-content:      center;
+  flex-wrap:            wrap;
+  gap:                  1.000rem;
+}
+
 /*-----------------------------------------------------------------------------------------------*/
 
 #idQuestion
 {
   color:                #995f46;
   font-family:          monospace;
-  font-size:            4.000rem;
-  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
-  padding:              6.000rem 0.000rem 0.000rem 0.000rem;
+  font-size:            2.000rem;
+  margin:               2.000rem 0.000rem 0.000rem 0.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
 }
 
 #idAnswer
@@ -36,9 +49,9 @@
   display:              inline-block;
   font-family:          monospace;
   font-size:            3.000rem;
-  margin:               6.000rem 0.000rem 6.000rem 0.000rem;
+  margin:               2.000rem 0.000rem 2.000rem 0.000rem;
   padding:              2.000rem 0.000rem 2.000rem 0.000rem;
-  width:                18.000rem !important;
+  width:                8.000rem !important;
 }
 
 h6
@@ -51,11 +64,14 @@ h6
 /* Proto                                                                                         */
 /*-----------------------------------------------------------------------------------------------*/
 
-.clFloor
+.clTable-01,
+.clTable-02
 {
   display:              flex;
+  flex-direction:       column;
+  align-items:          center;
   justify-content:      center;
-  margin:               1.000rem 0.000rem 0.000rem 0.000rem;
+  margin:               2.000rem 0.000rem 0.000rem 0.000rem;
   padding:              0.000rem 0.000rem 0.000rem 0.000rem;
 }
 
@@ -68,14 +84,11 @@ h6
   justify-content:      center;
   margin:               0.000rem 0.000rem 0.000rem 0.000rem;
   padding:              0.800rem 0.600rem 0.740rem 0.600rem;
-/*
-  width:                100%;
-*/
 }
 
 .clCard
 {
-  width:               8.000rem;
+  width:               4.000rem;
 }
 
 #idCard0,
