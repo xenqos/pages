@@ -63,7 +63,7 @@ h6
 
 .clCard
 {
-  width:                4.600rem;
+  width:                4.800rem;
 }
 
 #idCard1,
@@ -72,7 +72,7 @@ h6
 #idCard4
 {
   margin:               0.000rem 0.000rem 0.000rem 0.000rem;
-  padding:              0.000rem 0.040rem 0.000rem 0.040rem;
+  padding:              0.000rem 0.200rem 0.000rem 0.200rem;
 }
 
 #idNameP,
@@ -101,7 +101,5 @@ h6
   padding:              1.000rem 0.000rem 1.000rem 0.000rem;
   width:                4.000rem !important;
 }
-
-
 
 /*-----------------------------------------------------------------------------------------------*/
