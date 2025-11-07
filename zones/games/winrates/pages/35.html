@@ -3,6 +3,7 @@
 <head>
   <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <meta name='hole-cards' content='T9'>
   <title>Win Rates</title>
   <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
   <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
@@ -14,9 +15,8 @@
   <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
   <script type='text/javascript' src='../../../../scripts/global.js'></script>
   <script type='text/javascript' src='../scripts/local.js'></script>
-  
 </head>
-<body onload='fncGetDivState(); fncGetScrollPosition();'>
+<body onload='fncDealCards()'>
 
 <div id='idPanel'>
 <div id='idTopbar'>
@@ -26,16 +26,30 @@
     <a href='34.html'><span class='clNavLeft'></span></a>
     <a href='../index.html'><span class='clNavUp'></span></a>
     <a href='01.html'><span class='clNavRight'></span></a>
-
   </div>
 </div>
 <div id='idContent'>
 
 <h6>Win Rates</h6>
 
-<div id='idQuestion'>T9</div>
-<div id='idAnswer' onclick='fncRevealAnswer();'>38&ensp;&ensp;9</div>
-<script>fncHideHeading();</script>
+<div id='idTable'>
+  <div class='clPanel1'>
+    <div class='clBoard'>
+      <img id='idCard1' class='clCard' onclick='fncDealCards()' src=''>
+      <img id='idCard2' class='clCard' onclick='fncDealCards()' src=''>
+    </div>
+    <div id='idNameS'></div>
+    <div id='idWinRateS' onclick='fncRevealWinRate(this);'></div>
+  </div>
+  <div class='clPanel2'>
+    <div class='clBoard'>
+      <img id='idCard3' class='clCard' onclick='fncDealCards()' src=''>
+      <img id='idCard4' class='clCard' onclick='fncDealCards()' src=''>
+    </div>
+    <div id='idNameO'></div>
+    <div id='idWinRateO' onclick='fncRevealWinRate(this);'></div>
+  </div>
+</div>
 
 </div>
 </div>
