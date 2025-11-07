@@ -77,7 +77,7 @@ function fncDealCards()
     document.getElementById('idWinRateP').style.backgroundColor = strHiddenBackgroundColor;
 
     document.getElementById('idCard1').setAttribute('src', strImagePrefix + strHoleCards[0] + arrTargetSuits[0] + strImageSuffix);
-    document.getElementById('idCard2').setAttribute('src', strImagePrefix + strHoleCards[1] + arrTargetSuits[1] + strImageSuffix);
+    document.getElementById('idCard2').setAttribute('src', strImagePrefix + strHoleCards[1] + arrTargetSuits[0] + strImageSuffix);
   }
   else
   {
