@@ -25,7 +25,7 @@ h6
 #idTable
 {
   margin:               0.000rem 0.000rem 0.000rem 0.000rem;
-  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+  padding:              0.000rem 0.000rem 2.000rem 0.000rem;
   text-align:           center;
   display:              flex;
   flex-direction:       row;
@@ -58,7 +58,7 @@ h6
 
 .clCard
 {
-  width:                4.000rem;
+  width:                4.400rem;
 }
 
 #idCard1,

@@ -14,9 +14,8 @@
   <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
   <script type='text/javascript' src='../../../../scripts/global.js'></script>
   <script type='text/javascript' src='../scripts/local.js'></script>
-  
 </head>
-<body onload='fncGetDivState(); fncGetScrollPosition();'>
+<body onload=''>
 
 <div id='idPanel'>
 <div id='idTopbar'>
@@ -26,16 +25,26 @@
     <a href='35.html'><span class='clNavLeft'></span></a>
     <a href='../index.html'><span class='clNavUp'></span></a>
     <a href='02.html'><span class='clNavRight'></span></a>
-
   </div>
 </div>
 <div id='idContent'>
 
 <h6>Win Rates</h6>
 
-<div id='idQuestion'>AA</div>
-<div id='idAnswer' onclick='fncRevealAnswer();'>86</div>
-<script>fncHideHeading();</script>
+<div id='idTable'>
+  <div class='clPanel-01'>
+    <div class='clBoard'>
+      <img id='idCard1' class='clCard' onclick='fncDealCards()'  src='../../../../images/cards/AH.svg'>
+      <img id='idCard2' class='clCard' onclick='fncDealCards()'  src='../../../../images/cards/AD.svg'>
+    </div>
+    <div id='idAcronym'>AA</div>
+    <div id='idWinRate-01' onclick='fncRevealWinRate(this);'>89</div>
+  </div>
+</div>
+
+<!--
+< script >fncHideHeading();< /script >
+-->
 
 </div>
 </div>

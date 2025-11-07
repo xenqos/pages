@@ -4,6 +4,16 @@
 
 /*--------------------------------------------------------------------------------------------------*/
 
+const winRates =
+{
+  'AA': 86,
+  'KK': 75,
+  'QQ': 69,
+  'JJ': 64
+};
+
+/*--------------------------------------------------------------------------------------------------*/
+
 var strRevealedColor           = '#367b36';
 var strRevealedBackgroundColor = '#ffffff';
 
@@ -13,6 +23,12 @@ function fncRevealWinRate(objElementAnswer)
 {
   objElementAnswer.style.color           = strRevealedColor;
   objElementAnswer.style.backgroundColor = strRevealedBackgroundColor;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+function fncDealCards()
+{
 }
 
 /*--------------------------------------------------------------------------------------------------*/
