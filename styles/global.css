@@ -48,10 +48,21 @@ html { font-size: 1.062rem; }
 
 /*-----------------------------------------------------------------------------------------------*/
 
+:root
+{
+  color-scheme:         light dark;
+}
+
 body
 {
-  background:           #dbdbdb;
+  background-color:     #dbdbdb;
   color:                #000000;
+
+/*
+  background-color:     light-dark(#dbdbdb, #000000);
+  color:                light-dark(black, white);
+*/
+
   font-family:          'Roboto', sans-serif !important;
   font-style:           normal;
   font-size:            100%;
@@ -207,7 +218,7 @@ video
 
 #idContent
 {
-  background:           #ffffff;
+  background-color:     #ffffff;
   max-height:           999999px;
   margin:               1.500rem 0.000rem 0.000rem 0.000rem;
   padding:              1.000rem 1.000rem 1.000rem 1.000rem;
