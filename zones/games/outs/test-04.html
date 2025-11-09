@@ -1,3 +1,71 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Outs</title>
+  <link rel='icon' type='image/x-icon' href='../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../styles/global.css'>
+
+<!-- ------------------------------------------------------------------------------------------- -->
+
+<style>
+/*-----------------------------------------------------------------------------------------------*/
+
+.clFloor
+{
+  display:              flex;
+  justify-content:      center;
+}
+
+.clPokerTable
+{
+  background-color:     #0d6f3a;
+  border-radius:        0.400rem;
+  box-sizing:           border-box;
+/*
+  display:              inline-block;
+*/
+  display:              flex;
+  justify-content:      center;
+  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
+  padding:              0.800rem 0.600rem 0.740rem 0.600rem;
+  width:                100%;
+}
+
+.clCard
+{
+  width:                20%
+}
+
+#idCard0,
+#idCard1,
+#idCard2,
+#idCard3,
+#idCard4,
+#idCard5
+{
+  margin-left:          0.100rem;
+  margin-right:         0.100rem;
+}
+
+/*-----------------------------------------------------------------------------------------------*/
+
+</style>
+
+<!-- ------------------------------------------------------------------------------------------- -->
+
+  <script type='text/javascript' src='../../../scripts/global.js'></script>
+
+<!-- ------------------------------------------------------------------------------------------- -->
+
+<script>
+
 /*--------------------------------------------------------------------------------------------------*/
 
 'use strict';
@@ -43,7 +111,7 @@ function fncDealCards()
   }
 
 // Test Values Begin
-// arrCards = ['7C', 'TD', 'AD', '4S', '4H', '3D'];
+arrCards = ['9C', '2H', 'AS', '3C', 'JD', 'JS'];
 // Test Values End
 
   for (let numCounter = 0; numCounter < arrCards.length; numCounter++)
@@ -294,13 +362,10 @@ function fncCountOuts()
             // Hole Pair to Set
             numFlopOutsPairSet = 2;
         }
-        else // Hole cards are not a pair (e.g., the T7 case)
+        else
         {
             // No Pair to Pair: 6 outs (3 for Card 1 + 3 for Card 2)
             numFlopOutsNoPairPair = 6;
-
-            // NOTE: Logic for 'One Overcard to Pair' may also be here. If so, it should be removed
-            // or zeroed out, as 'No Pair to Pair' covers all pairing outs.
         }
     }
 
@@ -689,17 +754,7 @@ function fncCountOuts()
 
         if (numCardsInRun === 4 && numGaps === 1)
         {
-            // Check if the single missing card (gap) is at either end (OESD) or inside (ISD).
-            if (arrTurnStraightRanks[numIdxRank] === 0 || arrTurnStraightRanks[numIdxRank + 4] === 0)
-            {
-                // Gap is at the end (e.g., X, 4, 5, 6, 7 or 4, 5, 6, 7, X) -> OESD
-                numTurnOutsOESD = 8;
-            }
-            else
-            {
-                // Gap is inside (e.g., 4, 5, X, 7, 8) -> ISD
-                numTurnOutsInsideStraight = 4;
-            }
+            numTurnOutsInsideStraight = 4;
         }
         else if (numCardsInRun === 3 && numGaps === 2)
         {
@@ -754,15 +809,6 @@ function fncCountOuts()
     {
         numTurnOutsTotal = numTurnOutsInsideStraight + numTurnOutsOESD + numTurnOutsFlushDraw;
     }
-
-    // --- REDUNDANCY CATCH (Final filtering before sum) ---
-    // If any strong draw (Straight or Flush) is present, zero out the highly redundant
-    // 'One Overcard to Pair' outs, as they are often incorrectly set or covered by 'No Pair to Pair'.
-    if (numTurnOutsOESD > 0 || numTurnOutsInsideStraight > 0 || numTurnOutsOESDFlushDraw > 0 || numTurnOutsInsideStraightFlush > 0 || numTurnOutsFlushDraw > 0)
-    {
-        numTurnOutsOvercardPair = 0; // Eliminates the incorrect 3 outs for the 7-high hand
-    }
-    // ---------------------------------------------------
 
     // Add all non-drawing outs
     numTurnOutsTotal += numTurnOutsPairSet;
@@ -860,3 +906,57 @@ function fncCountOuts()
 /*--------------------------------------------------------------------------------------------------*/
 //  console.log('ZZZ…');
 /*--------------------------------------------------------------------------------------------------*/
+
+</script>
+
+<!-- ------------------------------------------------------------------------------------------- -->
+</head>
+<body onload='fncDealCards();'>
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../index.html'><span class='clNavIndex'></span></a>
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>Outs</h1>
+
+<div class='clFloor'>
+<div class='clPokerTable'>
+  <img id='idCard0' class='clCard' onclick='fncDealCards()'  src='../../../images/cards/back.svg'>
+  <img id='idCard1' class='clCard' onclick='fncDealCards()'  src='../../../images/cards/back.svg'>
+  <img id='idCard2' class='clCard' onclick='fncDealCards()'  src='../../../images/cards/back.svg'>
+  <img id='idCard3' class='clCard' onclick='fncDealCards()'  src='../../../images/cards/back.svg'>
+  <img id='idCard4' class='clCard' onclick='fncDealCards()'  src='../../../images/cards/back.svg'>
+  <img id='idCard5' class='clCard' onclick='fncShowTurn()'   src='../../../images/cards/back.svg'>
+</div>
+</div>
+
+<!--
+  <img id='idCard0' class='clCard' onclick='fncDealCards()'  src='../../../images/cards/back.svg'>
+  <img id='idCard1' class='clCard' onclick='fncDealCards()'  src='../../../images/cards/back.svg'>
+  <img id='idCard2' class='clCard' onclick='fncDealCards()'  src='../../../images/cards/back.svg'>
+  <img id='idCard3' class='clCard' onclick='fncDealCards()'  src='../../../images/cards/back.svg'>
+  <img id='idCard4' class='clCard' onclick='fncDealCards()'  src='../../../images/cards/back.svg'>
+  <img id='idCard5' class='clCard' onclick='fncShowTurn()'   src='../../../images/cards/back.svg'>
+-->
+
+<div id='idOutsTable'>
+</div>
+
+<div id='idOutsDiv'>
+</div>
+
+<code id='idConsoleLog'>
+</code>
+
+
+
+<br>
+
+</div>
+</div>
+</body>
+</html>
