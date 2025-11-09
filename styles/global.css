@@ -55,14 +55,8 @@ html { font-size: 1.062rem; }
 
 body
 {
-  background-color:     #dbdbdb;
-  color:                #000000;
-
-/*
-  background-color:     light-dark(#dbdbdb, #000000);
-  color:                light-dark(black, white);
-*/
-
+  background-color:     light-dark(#dbdbdb, #111111);
+  color:                light-dark(#000000, #ffffff);
   font-family:          'Roboto', sans-serif !important;
   font-style:           normal;
   font-size:            100%;
@@ -106,8 +100,8 @@ body
 /*
   border:               1px solid #eeeeee;
 */
+  background-color:     light-dark(#eeeeee, #222222);
   color:                #000000;
-  background-color:     #eeeeee;
   display:              inline-block;
   font-size:            1.000rem;
   font-style:           normal;
@@ -119,8 +113,8 @@ body
 
 #idTopbarNavigation > span
 {
+  background-color:     light-dark(#eeeeee, #222222);
   color:                #777777;
-  background-color:     #eeeeee;
   font-size:            1.000rem;
   font-style:           normal;
   text-align:           left;
@@ -218,7 +212,7 @@ video
 
 #idContent
 {
-  background-color:     #ffffff;
+  background-color:     light-dark(#ffffff, #000000);
   max-height:           999999px;
   margin:               1.500rem 0.000rem 0.000rem 0.000rem;
   padding:              1.000rem 1.000rem 1.000rem 1.000rem;
@@ -302,26 +296,26 @@ h6 { color: #427777; font-size: 1.040rem; font-weight: 600; }
 a,
 a:visited
 {
-  color:                #003399;
+  color:                light-dark(#003399, #6699ff);
   text-decoration:      none;
 }
 
 a:hover
 {
-  color:                #DD0000;
+  color:                #dd0000;
   text-decoration:      none;
 }
 
 .clIndex a,
 .clIndex a:visited
 {
-  color:                #000000;
+  color:                light-dark(#000000, #cccccc);
   text-decoration:      none;
 }
 
 .clIndex a:hover
 {
-  color:                #dd0000;
+  color:                light-dark(#dd0000, #ff6666);
   text-decoration:      none;
 }
 
@@ -889,11 +883,6 @@ span[class^=clNav]
 
 /*-----------------------------------------------------------------------------------------------*/
 
-.g0000
-{
-  color:                #aaaaaa;
-}
-
 .g0500
 {
   color:                #0F8699;
@@ -908,12 +897,19 @@ span[class^=clNav]
   padding:              0.000rem 0.000rem 0.000rem 0.000rem;
 }
 
+/*
+.g0000
+{
+  color:                #aaaaaa;
+}
+
 .b0500
 {
   color:                #000000;
   margin:               0.000rem 0.000rem 0.000rem 0.500rem;
   padding:              0.000rem 0.000rem 0.000rem 0.000rem;
 }
+*/
 
 /*-----------------------------------------------------------------------------------------------*/
 
@@ -984,8 +980,8 @@ q.x::after { content: url("../images/suits/nosuit.svg"); }
 
 .MathJax
 {
-  letter-spacing:       normal; /* Reset letter spacing */
-  word-spacing:         normal; /* Reset word spacing */
+  letter-spacing:       normal;
+  word-spacing:         normal;
   margin:               0.000rem 0.000rem 0.000rem 0.000rem;
   padding:              0.000rem 0.000rem 0.000rem 0.000rem;
 
