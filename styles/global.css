@@ -873,7 +873,7 @@ span[class^=clNav]
 /* Colors                                                                                        */
 /*-----------------------------------------------------------------------------------------------*/
 
-.m /* maroon  */  { color:                #aa0000; }
+.m /* maroon  */  { color:                light-dark(#aa0000, #ff9999); }
 .e /* emerald */  { color:                #008800; }
 .l /* lapis   */  { color:                #0F8699; }
 
