@@ -384,7 +384,7 @@ table, th, td
 {
   border:               1px solid #cccccc;
   border-collapse:      collapse;
-  color:                #000000;
+  color:                light-dark(#000000, #ffffff);
   text-align:           left;
   vertical-align:       top;
 }
@@ -873,13 +873,13 @@ span[class^=clNav]
 /* Colors                                                                                        */
 /*-----------------------------------------------------------------------------------------------*/
 
-.m /* maroon  */  { color:                light-dark(#aa0000, #ff9999); }
+.m /* maroon  */  { color:                light-dark(#aa0000, #ffff80); }
 .e /* emerald */  { color:                #008800; }
 .l /* lapis   */  { color:                #0F8699; }
 
 .r /* red     */  { color:                #ff0000; }
 .g /* green   */  { color:                #00ff00; }
-.n /* navy    */  { color:                #000080; }
+.n /* navy    */  { color:                light-dark(#000080, #80aaff); }
 
 /*-----------------------------------------------------------------------------------------------*/
 
