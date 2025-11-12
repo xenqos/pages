@@ -282,12 +282,24 @@ h1, h2, h3, h4, h5, h6
   padding:              0.000rem 0.000rem 0.000rem 0.000rem;
 }
 
+/*
 h1 { color: #995f46; font-size: 1.400rem; font-weight: 600; }
 h2 { color: #367b36; font-size: 1.200rem; font-weight: 600; }
 h3 { color: #4d6db0; font-size: 1.120rem; font-weight: 600; }
 h4 { color: #905b90; font-size: 1.040rem; font-weight: 600; }
 h5 { color: #777425; font-size: 1.040rem; font-weight: 600; }
 h6 { color: #427777; font-size: 1.040rem; font-weight: 600; }
+*/
+
+h1 { color: light-dark(#995f46, #e65c5c); font-size: 1.400rem; font-weight: 600; }
+h2 { color: light-dark(#367b36, #59b359); font-size: 1.200rem; font-weight: 600; }
+h3 { color: light-dark(#367b36, #6e91db); font-size: 1.120rem; font-weight: 600; }
+h4 { color: #905b90; font-size: 1.040rem; font-weight: 600; }
+h5 { color: #777425; font-size: 1.040rem; font-weight: 600; }
+h6 { color: light-dark(#367b36, #66CCCC); font-size: 1.040rem; font-weight: 600; }
+
+
+
 
 /*-----------------------------------------------------------------------------------------------*/
 /* Links                                                                                         */
@@ -874,7 +886,7 @@ span[class^=clNav]
 /*-----------------------------------------------------------------------------------------------*/
 
 .m /* maroon  */  { color:                light-dark(#aa0000, #ffff80); }
-.e /* emerald */  { color:                #008800; }
+.e /* emerald */  { color:                light-dark(#008800, #66CC66); }
 .l /* lapis   */  { color:                #0F8699; }
 
 .r /* red     */  { color:                #ff0000; }
