@@ -276,27 +276,18 @@ div[id^='idDivArticle']
 
 h1, h2, h3, h4, h5, h6
 {
-  color:                #777777;
+  color:                light-dark(#777777, #777777);
   font-weight:          500;
   margin:               1.500rem 0.000rem 1.000rem 0.000rem;
   padding:              0.000rem 0.000rem 0.000rem 0.000rem;
 }
 
-/*
-h1 { color: #995f46; font-size: 1.400rem; font-weight: 600; }
-h2 { color: #367b36; font-size: 1.200rem; font-weight: 600; }
-h3 { color: #4d6db0; font-size: 1.120rem; font-weight: 600; }
-h4 { color: #905b90; font-size: 1.040rem; font-weight: 600; }
-h5 { color: #777425; font-size: 1.040rem; font-weight: 600; }
-h6 { color: #427777; font-size: 1.040rem; font-weight: 600; }
-*/
-
 h1 { color: light-dark(#995f46, #e65c5c); font-size: 1.400rem; font-weight: 600; }
 h2 { color: light-dark(#367b36, #59b359); font-size: 1.200rem; font-weight: 600; }
-h3 { color: light-dark(#367b36, #80A9FF); font-size: 1.120rem; font-weight: 600; }
+h3 { color: light-dark(#4d6db0, #80A9FF); font-size: 1.120rem; font-weight: 600; }
 h4 { color: light-dark(#905b90, #CC7ACC); font-size: 1.040rem; font-weight: 600; }
 h5 { color: light-dark(#777425, #CCC866); font-size: 1.040rem; font-weight: 600; }
-h6 { color: light-dark(#367b36, #66CCCC); font-size: 1.040rem; font-weight: 600; }
+h6 { color: light-dark(#427777, #66CCCC); font-size: 1.040rem; font-weight: 600; }
 
 /*-----------------------------------------------------------------------------------------------*/
 /* Links                                                                                         */
@@ -311,7 +302,7 @@ a:visited
 
 a:hover
 {
-  color:                #dd0000;
+  color:                light-dark(#dd0000, #dd0000);
   text-decoration:      none;
 }
 
@@ -331,10 +322,10 @@ a:hover
 a.clLinkBlue,
 a:visited.clLinkBlue
 {
-  color:                #000077;
+  color:                light-dark(#000077, #000077);
   text-decoration:      none;
 /*
-  color:                #000000;
+  color:                light-dark(#000000, #000000);
   text-decoration-line: underline;
   text-decoration-style: dotted;
 */
@@ -342,10 +333,10 @@ a:visited.clLinkBlue
 
 a:hover.clLinkBlue
 {
-  color:                #dd0000;
+  color:                light-dark(#dd0000, #dd0000);
   text-decoration:      none;
 /*
-  color:                #dd0000;
+  color:                light-dark(#dd0000, #dd0000);
   text-decoration-line: underline;
   text-decoration-style: dotted;
 */
@@ -391,7 +382,7 @@ th, td
 
 table, th, td
 {
-  border:               1px solid #cccccc;
+  border:               1px solid light-dark(#cccccc, #888888);
   border-collapse:      collapse;
   color:                light-dark(#000000, #ffffff);
   text-align:           left;
@@ -400,7 +391,7 @@ table, th, td
 
 th
 {
-  background-color:     #eeeeee;
+  background-color:     light-dark(#eeeeee, #555555);
 }
 
 table.clNoBorder,
@@ -478,7 +469,7 @@ ul li
 
 ul li::before
 {
-  color:                #555555;
+  color:                light-dark(#555555, #555555)
   content:              '•';
   margin:               0.000rem 0.500rem 0.000rem 0.000rem;
   padding:              0.000rem 0.000rem 0.000rem 0.000rem;
@@ -519,19 +510,6 @@ p
   padding:              0.000rem 0.000rem 0.000rem 0.000rem;
 }
 
-/*
-b
-{
-  color:                #000000;
-  font-weight:          700;
-}
-
-i
-{
-  font-style:           italic;
-}
-*/
-
 b
 {
   font-family:          sans-serif;
@@ -570,7 +548,7 @@ button
 
 blockquote
 {
-  border-left:          0.250rem solid #cccccc;
+  border-left:          0.250rem solid light-dark(#cccccc, #cccccc)
   margin:               1.500rem 0.000rem 1.500rem 0.000rem;
   padding:              0.000rem 0.000rem 0.000rem 0.500rem;
 }
