@@ -872,31 +872,17 @@ span[class^=clNav]
 
 .g0500
 {
-  color:                #0F8699;
+  color:                light-dark(#0f8699, #66becc);
   margin:              -1.000rem 0.000rem 0.000rem 0.000rem;
   padding:              0.000rem 0.000rem 0.000rem 0.500rem;
 }
 
 .b1000
 {
-  color:                #000000;
+  color:                light-dark(#000000, #cccccc);
   margin:               0.000rem 0.000rem 1.000rem 1.000rem;
   padding:              0.000rem 0.000rem 0.000rem 0.000rem;
 }
-
-/*
-.g0000
-{
-  color:                #aaaaaa;
-}
-
-.b0500
-{
-  color:                #000000;
-  margin:               0.000rem 0.000rem 0.000rem 0.500rem;
-  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
-}
-*/
 
 /*-----------------------------------------------------------------------------------------------*/
 
