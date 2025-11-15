@@ -897,6 +897,7 @@ span[class^=clNav]
 
 q.s, q.h, q.c, q.d, q.g, q.b, q.x, q.z
 {
+  background-color:     light-dark(#ffffff, #cccccc);
   border-radius:        4px;
   border:               1px solid #aaaaaa;
   display:              inline-block;
