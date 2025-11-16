@@ -36,16 +36,45 @@
 
 ## в префиксах %[m|ent]-, %[m|emp]-, %[m|miss]-
 
+[|
+|%[m|entfernen]    |удалять   |
+|%[m|empfangen]    |принимать |
+|%[m|missverstehen]|непонимать|
+|]
+
 ## в суффиксах -%[m|in], -%[m|nis], -%[m|ismus], -%[m|lich], -%[m|ik], -%[m|ig], -%[m|um], -%[m|isch]
 
+[|
+|%[m|die Lehrerin] |учительница|
+|%[m|das Geheimnis]|тайна      |
+|%[m|der Tourismus]|туризм     |
+|%[m|freundlich]   |дружелюбный|
+|%[m|dir Musik]    |музыка     |
+|%[m|wichtig]      |важный     |
+|%[m|das Zentrum]  |центр      |
+|%[m|typisch]      |типичный   |
+|]
 
 ## перед буквосочетаниями -%[m|pf], -%[m|tz], -%[m|nk], -%[m|ck], -%[m|ch], -%[m|sch]
 
 [|
-|%[m|der Kopf  |голова|
-|%[m|die Katze |кошка |
-|%[m|trank     |выпить|
-|%[m|der Zucker|сахар |
-|%[m|das Buch  |книга |
-|%[m|der Fisch |рыба  |
+|%[m|der Kopf]  |голова|
+|%[m|die Katze] |кошка |
+|%[m|trank]     |выпить|
+|%[m|der Zucker]|сахар |
+|%[m|das Buch]  |книга |
+|%[m|der Fisch] |рыба  |
+|]
+
+__ck = kk__
+__tz = ttz__
+
+## %[m|i], %[m|e], %[m|ä], %[m|ö], %[m|eu] перед -%[m|ch]
+
+[|
+|%[m|das Licht]  |свет     |
+|%[m|echt]       |настоящий|
+|%[m|der Wächter]|охранник |
+|%[m|möchte]     |я хотел  |
+|%[m|leuchten]   |светить  |
 |]

@@ -1,12 +1,48 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="de-DE-KatjaNeural">
 <prosody rate="-30%" pitch="0%">
-die Silbe
-die Sprechsilbe
-die Sprachsilbe
-die Stammsilbe
-die Vorsilbe
-die Nachsilbe
+der Name
+lesen
+wo
+
+der Tag - die Tage
+rot - rotes
+tun - tu
+
+das Haar
+die Idee
+das Boot
+
+die Sieben
+ziehen
+
+ohne
+fahren
+Schuh
+
+die Straße
+grüßen
+bloß
+
+das Zebra
+die Jagd
+der Keks
+
+sichtbar
+sparsam
+das Schicksal
+sprachlos
+das Königtum
+
+die Realität
+die Information
+global
+
+das Buch
+das Tuch
+hoch
+sprechen
+
 </prosody>
 </voice>
 </speak>
