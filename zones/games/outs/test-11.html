@@ -1,0 +1,436 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Outs</title>
+  <link rel='icon' type='image/x-icon' href='../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../styles/global.css'>
+
+<!-- ------------------------------------------------------------------------------------------- -->
+
+<style>
+/*-----------------------------------------------------------------------------------------------*/
+
+.clFloor
+{
+  display:              flex;
+  justify-content:      center;
+}
+
+.clPokerTable
+{
+  background-color:     #0d6f3a;
+  border-radius:        0.400rem;
+  box-sizing:           border-box;
+/*
+  display:              inline-block;
+*/
+  display:              flex;
+  justify-content:      center;
+  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
+  padding:              0.800rem 0.600rem 0.740rem 0.600rem;
+  width:                100%;
+}
+
+.clCard
+{
+  width:                20%
+}
+
+#idCard0,
+#idCard1,
+#idCard2,
+#idCard3,
+#idCard4,
+#idCard5
+{
+  margin-left:          0.100rem;
+  margin-right:         0.100rem;
+}
+
+/*-----------------------------------------------------------------------------------------------*/
+
+</style>
+
+<!-- ------------------------------------------------------------------------------------------- -->
+
+  <script type='text/javascript' src='../../../scripts/global.js'></script>
+
+<!-- ------------------------------------------------------------------------------------------- -->
+
+<script>
+
+/*--------------------------------------------------------------------------------------------------*/
+
+'use strict';
+
+/*--------------------------------------------------------------------------------------------------*/
+
+const arrSuits = ['S', 'H', 'C', 'D'];
+const arrRanks = ['2', '3', '4', '5', '6', '7', '8', '9', 'T', 'J', 'Q', 'K', 'A'];
+let arrCards = [];
+let booTurn = false;
+let objConsoleLog = null;
+let objOutsDiv = null;
+let objOutsTable = null;
+let strOutsTable = '';
+
+/*--------------------------------------------------------------------------------------------------*/
+
+function fncDealCards()
+{
+  arrCards.length = 0;
+  objConsoleLog = document.getElementById('idConsoleLog');
+  objOutsDiv = document.getElementById('idOutsDiv');
+  objOutsTable = document.getElementById('idOutsTable');
+  objConsoleLog.innerHTML = '';
+  objOutsDiv.innerHTML = '';
+  objOutsTable.innerHTML = '';
+  strOutsTable = '';
+
+  while (arrCards.length < 6)
+  {
+    let numRankIndex = Math.floor(Math.random() * arrRanks.length);
+    let strRank = arrRanks[numRankIndex];
+
+    let numSuitIndex = Math.floor(Math.random() * arrSuits.length);
+    let strSuit = arrSuits[numSuitIndex];
+
+    let strCard = strRank + strSuit;
+
+    if (!arrCards.includes(strCard))
+    {
+      arrCards.push(strCard);
+    }
+  }
+
+// Test Values Begin
+// arrCards = ['2H', '7C', '8S', '5D', '4C', 'KS'];
+// Test Values End
+
+  for (let numCounter = 0; numCounter < arrCards.length; numCounter++)
+  {
+    if (numCounter < 5)
+    {
+      document.getElementById('idCard' + numCounter).src = '../../../images/cards/' + arrCards[numCounter] + '.svg';
+    }
+    else
+    {
+      document.getElementById('idCard' + numCounter).src = '../../../images/cards/back.svg';
+    }
+  }
+
+  fncCountOuts();
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+function fncShowTurn()
+{
+  if (booTurn === false)
+  {
+    document.getElementById('idCard5').src = '../../../images/cards/' + arrCards[5] + '.svg';
+    booTurn = true;
+  }
+  else
+  {
+//    sleep(100);
+    booTurn = false;
+    fncDealCards();
+  }
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+function fncCountOuts()
+{
+    console.clear();
+    console.log("Hand Tested: ", arrCards);
+
+    // Clear previous output
+    const objOutsTable = document.getElementById('idOutsTable');
+    let strOutsTable = '<br><table class="clNoBorder"><tbody>';
+
+    const arrOutsNames = [
+        "One Pair to Set", "One Pair to Trips", "One Overcard to Pair", "Inside Straight Draw", "Two Pair to Full House",
+        "One Pair to Two Pair", "No Pair to Pair", "Set to Full House", "Trips to Full House",
+        "Two Overcards to Over Pair", "Set to Quads", "Set to Four of a Kind", "Open-Ended Straight Draw",
+        "Flush Draw", "Inside Straight Draw & Two Overcards", "Inside Straight Draw & Flush",
+        "Open Straight Draw & Flush Draw"
+    ];
+
+    // Helper: Convert card like 'KS' → rank (14), suit index (0-3)
+    const getRank = (c) => '23456789TJQKA'.indexOf(c[0]) + 2;
+    const getSuit = (c) => 'SHCD'.indexOf(c[1]);
+
+    // Process both stages: Flop (5 cards) and Turn (6 cards)
+    const processStage = (numCards, stageName) =>
+    {
+        const isFlop = (stageName === "Flop");
+        const cards = arrCards.slice(0, numCards);
+
+        // Rank & suit counts
+        const rankCount = Array(15).fill(0); // index 2..14
+        const suitCount = Array(4).fill(0);
+        const presentRanks = Array(15).fill(0);
+
+        cards.forEach(c => {
+            const r = getRank(c);
+            const s = getSuit(c);
+            rankCount[r]++;
+            suitCount[s]++;
+            presentRanks[r] = 1;
+        });
+
+        const hole1Rank = getRank(arrCards[0]);
+        const hole2Rank = getRank(arrCards[1]);
+        const isPocketPair = hole1Rank === hole2Rank;
+
+        let outs = {
+            pairToSet: 0,          // Pocket pair → set
+            onePairToTrips: 0,     // You have one card in a paired rank → trips
+            noPairToPair: 0,       // Pair either hole card
+            twoPairToFH: 0,
+            setToFH: 0,
+            tripsToFH: 0,
+            setToQuads: 0,
+            oesd: 0,
+            gutshot: 0,
+            flushDraw: 0
+        };
+
+        // === 1. Made hands & improvement outs ===
+        let pairs = 0, trips = 0, quads = 0;
+        let tripRank = -1;
+
+        for (let r = 2; r <= 14; r++) {
+            if (rankCount[r] === 2) pairs++;
+            if (rankCount[r] === 3) { trips++; tripRank = r; }
+            if (rankCount[r] === 4) quads++;
+        }
+
+        if (trips === 1) {
+            // You have a set or trips?
+            const youHaveSet = isPocketPair && hole1Rank === tripRank;
+            const youHaveTrips = (hole1Rank === tripRank || hole2Rank === tripRank);
+
+            // Always 1 out to quads if you hold at least one of the rank
+            if (youHaveSet || youHaveTrips) outs.setToQuads = 1;
+
+            // Full house outs: 3 × any singleton rank
+            let singletons = 0;
+            for (let r = 2; r <= 14; r++) {
+                if (rankCount[r] === 1) singletons++;
+            }
+            if (youHaveSet) outs.setToFH = 3 * singletons;
+            if (youHaveTrips && !youHaveSet) outs.tripsToFH = 3 * singletons;
+        }
+        else if (pairs >= 2) {
+            outs.twoPairToFH = 4;  // 4 outs to full house
+        }
+        else if (pairs === 1) {
+            // Find which rank is paired
+            let pairedRank = -1;
+            for (let r = 2; r <= 14; r++) if (rankCount[r] === 2) pairedRank = r;
+
+            // Case: one hole card matches the paired rank → you have a pair, 2 outs to trips
+            if (hole1Rank === pairedRank || hole2Rank === pairedRank) {
+                outs.onePairToTrips = 2;
+            }
+        }
+
+        // === 2. Pocket pair or unpaired hole cards ===
+        if (pairs === 0 && trips === 0) {
+            if (isPocketPair) {
+                outs.pairToSet = 2;                    // 2 remaining cards make set
+            } else {
+                // 3 outs each to pair hole cards (minus any already on board)
+                let outs1 = 3 - rankCount[hole1Rank] + 1; // +1 because one is already in hand
+                let outs2 = 3 - rankCount[hole2Rank] + 1;
+                outs.noPairToPair = Math.max(0, outs1) + Math.max(0, outs2);
+            }
+        }
+
+        // Special case: board has trips, you have nothing in it → only your hole card pairs help
+        if (trips === 1 && hole1Rank !== tripRank && hole2Rank !== tripRank) {
+            let fhOuts = 0;
+            if (rankCount[hole1Rank] === 1) fhOuts += 2;  // two remaining to pair it
+            if (rankCount[hole2Rank] === 1) fhOuts += 2;
+            outs.noPairToPair = fhOuts;  // overrides previous value
+        }
+
+        // === 3. Straight draws ===
+        const checkStraightOuts = () =>
+        {
+            let oesd = 0, gutshot = 0;
+
+            // Wheel check
+            if (presentRanks[14] && presentRanks[2] && presentRanks[3] && presentRanks[4] && presentRanks[5]) {
+                if (!presentRanks[6]) oesd += 4;  // A-2-3-4-5 made → not a draw
+            }
+
+            // Main loop: check every 5-card window
+            for (let low = 2; low <= 10; low++) {
+                const window = [low, low+1, low+2, low+3, low+4];
+                let have = 0, gaps = 0;
+                window.forEach(r => { if (presentRanks[r]) have++; else gaps++; });
+
+                if (have === 4 && gaps === 1) {
+                    // Open-ended if gap is at either end
+                    const missing = window.find(r => !presentRanks[r]);
+                    if (missing === low || missing === low+4) oesd += 4;
+                    else gutshot += 4;
+                }
+                if (have === 3 && gaps === 2) {
+                    const missing = window.filter(r => !presentRanks[r]);
+                    if ((missing[0] === low && missing[1] === low+4) ||
+                        (missing[1] === low && missing[0] === low+4)) {
+                        oesd += 8;  // double gutshot / strong draw treated as OESD
+                    }
+                }
+            }
+            return { oesd, gutshot };
+        };
+
+        const straight = checkStraightOuts();
+        outs.oesd = straight.oesd;
+        outs.gutshot = straight.gutshot;
+
+        // === 4. Flush draw ===
+        const maxSuit = Math.max(...suitCount);
+        if (maxSuit === 4) outs.flushDraw = 9;
+        else if (maxSuit === 5) outs.flushDraw = 0; // already made
+
+        // === 5. Combine & calculate total outs ===
+        let totalOuts = 0;
+
+        // Combo draws (straight + flush)
+        if (outs.gutshot > 0 && outs.flushDraw > 0) {
+            totalOuts = 12;  // 4 + 9 - 1 overlap
+        } else if (outs.oesd > 0 && outs.flushDraw > 0) {
+            totalOuts = 15;  // 8 + 9 - 2 overlap
+        } else {
+            totalOuts = outs.oesd + outs.gutshot + outs.flushDraw;
+        }
+
+        // Add non-draw improvements
+        totalOuts += outs.pairToSet + outs.onePairToTrips + outs.noPairToPair +
+                     outs.twoPairToFH + outs.setToFH + outs.tripsToFH + outs.setToQuads;
+
+        // === 6. Build output array ===
+        const outArray = [
+            outs.pairToSet,                     // 0
+            outs.onePairToTrips,                // 1
+            0,                                  // One Overcard to Pair (not tracked separately)
+            outs.gutshot > 0 ? 4 : 0,           // 3 Inside Straight Draw
+            outs.twoPairToFH,                   // 4
+            0,                                  // One Pair to Two Pair (rarely useful)
+            outs.noPairToPair,                  // 6
+            outs.setToFH,                       // 7
+            outs.tripsToFH,                     // 8
+            0,                                  // Two Overcards → Overpair (not tracked)
+            outs.setToQuads,                    // 10
+            outs.setToQuads,                    // 11 (duplicate for display)
+            outs.oesd > 0 ? 8 : 0,              // 12 OESD
+            outs.flushDraw,                     // 13
+            0,                                  // Inside + Overcards (not shown)
+            outs.gutshot > 0 && outs.flushDraw > 0 ? 12 : 0,  // 15
+            outs.oesd > 0 && outs.flushDraw > 0 ? 15 : 0      // 16
+        ];
+
+        // === 7. Render table rows ===
+        strOutsTable += `<tr><td colspan=2 class='m'><b>${stageName}</b></td></tr>`;
+
+        for (let i = 0; i < arrOutsNames.length; i++) {
+            const name = arrOutsNames[i];
+            const val = outArray[i];
+
+            // Hide base draws if combo exists
+            if ((name === "Inside Straight Draw" || name === "Flush Draw") &&
+                (outArray[15] > 0 || outArray[16] > 0)) continue;
+
+            if ((name === "Open-Ended Straight Draw" || name === "Flush Draw") &&
+                outArray[16] > 0) continue;
+
+            if (val > 0) {
+                console.log(`${name} - ${val}`);
+                strOutsTable += `<tr><td>${name}</td><td>${val}</td></tr>`;
+            }
+        }
+
+        console.log(`Total Outs after ${stageName} - ${totalOuts}`);
+        strOutsTable += `<tr><td>Total</td><td class='e'><b>${totalOuts}</b></td></tr>`;
+        if (!isFlop) strOutsTable += `<tr><td colspan=2>&nbsp;</td></tr>`;
+    };
+
+    // === Run both stages ===
+    processStage(5, "Flop");
+    if (arrCards.length >= 6) processStage(6, "Turn");
+
+    strOutsTable += `</tbody></table>`;
+    objOutsTable.innerHTML = strOutsTable;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+//  console.log('ZZZ…');
+/*--------------------------------------------------------------------------------------------------*/
+
+</script>
+
+<!-- ------------------------------------------------------------------------------------------- -->
+</head>
+<body onload='fncDealCards();'>
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../index.html'><span class='clNavIndex'></span></a>
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>Outs</h1>
+
+<div class='clFloor'>
+<div class='clPokerTable'>
+  <img id='idCard0' class='clCard' onclick='fncDealCards()'  src='../../../images/cards/back.svg'>
+  <img id='idCard1' class='clCard' onclick='fncDealCards()'  src='../../../images/cards/back.svg'>
+  <img id='idCard2' class='clCard' onclick='fncDealCards()'  src='../../../images/cards/back.svg'>
+  <img id='idCard3' class='clCard' onclick='fncDealCards()'  src='../../../images/cards/back.svg'>
+  <img id='idCard4' class='clCard' onclick='fncDealCards()'  src='../../../images/cards/back.svg'>
+  <img id='idCard5' class='clCard' onclick='fncShowTurn()'   src='../../../images/cards/back.svg'>
+</div>
+</div>
+
+<!--
+  <img id='idCard0' class='clCard' onclick='fncDealCards()'  src='../../../images/cards/back.svg'>
+  <img id='idCard1' class='clCard' onclick='fncDealCards()'  src='../../../images/cards/back.svg'>
+  <img id='idCard2' class='clCard' onclick='fncDealCards()'  src='../../../images/cards/back.svg'>
+  <img id='idCard3' class='clCard' onclick='fncDealCards()'  src='../../../images/cards/back.svg'>
+  <img id='idCard4' class='clCard' onclick='fncDealCards()'  src='../../../images/cards/back.svg'>
+  <img id='idCard5' class='clCard' onclick='fncShowTurn()'   src='../../../images/cards/back.svg'>
+-->
+
+<div id='idOutsTable'>
+</div>
+
+<div id='idOutsDiv'>
+</div>
+
+<code id='idConsoleLog'>
+</code>
+
+
+
+<br>
+
+</div>
+</div>
+</body>
+</html>
