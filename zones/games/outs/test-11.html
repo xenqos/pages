@@ -131,7 +131,7 @@ function fncDealCards()
 
 /*--------------------------------------------------------------------------------------------------*/
 
-function fncShowTurn()
+async function fncShowTurn()
 {
   if (booTurn === false)
   {
@@ -140,7 +140,7 @@ function fncShowTurn()
   }
   else
   {
-//    sleep(100);
+    console.log('ZZZ…');
     booTurn = false;
     fncDealCards();
   }
@@ -148,7 +148,7 @@ function fncShowTurn()
 
 /*--------------------------------------------------------------------------------------------------*/
 
-function fncCountOuts()
+async function fncCountOuts()
 {
     console.clear();
     console.log("Hand Tested: ", arrCards);
@@ -365,7 +365,7 @@ function fncCountOuts()
         }
 
         console.log(`Total Outs after ${stageName} - ${totalOuts}`);
-        strOutsTable += `<tr><td>Total</td><td class='e'><b>${totalOuts}</b></td></tr>`;
+        strOutsTable += `<tr><td>Total</td><td class='e'><b>${totalOuts}</b><br><br></td></tr>`;
         if (!isFlop) strOutsTable += `<tr><td colspan=2>&nbsp;</td></tr>`;
     };
 
@@ -399,12 +399,12 @@ function fncCountOuts()
 
 <div class='clFloor'>
 <div class='clPokerTable'>
-  <img id='idCard0' class='clCard' onclick='fncDealCards()'  src='../../../images/cards/back.svg'>
-  <img id='idCard1' class='clCard' onclick='fncDealCards()'  src='../../../images/cards/back.svg'>
-  <img id='idCard2' class='clCard' onclick='fncDealCards()'  src='../../../images/cards/back.svg'>
-  <img id='idCard3' class='clCard' onclick='fncDealCards()'  src='../../../images/cards/back.svg'>
-  <img id='idCard4' class='clCard' onclick='fncDealCards()'  src='../../../images/cards/back.svg'>
-  <img id='idCard5' class='clCard' onclick='fncShowTurn()'   src='../../../images/cards/back.svg'>
+  <img id='idCard0' class='clCard' onclick='fncDealCards();'  src='../../../images/cards/back.svg'>
+  <img id='idCard1' class='clCard' onclick='fncDealCards();'  src='../../../images/cards/back.svg'>
+  <img id='idCard2' class='clCard' onclick='fncDealCards();'  src='../../../images/cards/back.svg'>
+  <img id='idCard3' class='clCard' onclick='fncDealCards();'  src='../../../images/cards/back.svg'>
+  <img id='idCard4' class='clCard' onclick='fncDealCards();'  src='../../../images/cards/back.svg'>
+  <img id='idCard5' class='clCard' onclick='fncShowTurn();'   src='../../../images/cards/back.svg'>
 </div>
 </div>
 
@@ -425,8 +425,6 @@ function fncCountOuts()
 
 <code id='idConsoleLog'>
 </code>
-
-
 
 <br>
 
