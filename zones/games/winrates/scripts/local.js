@@ -39,14 +39,15 @@ function fncRevealWinRate(objElementAnswer)
 
 /*--------------------------------------------------------------------------------------------------*/
 
-function fncGetRandomSuits(arrTemp, intNumberOfSuits) {
+function fncGetRandomSuits(arrTemp, intNumberOfSuits)
+{
   const arrSource = [...arrTemp];
   const arrResult = [];
 
   if (intNumberOfSuits > arrSource.length)
   {
     intNumberOfSuits = arrSource.length;
-  }strHiddenColor
+  }
 
   for (let i = 0; i < intNumberOfSuits; i++)
   {
