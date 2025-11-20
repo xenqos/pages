@@ -966,8 +966,8 @@ q.x::after { content: url("../images/suits/nosuit.svg"); }
 
 /*-----------------------------------------------------------------------------------------------*/
 
-@media screen and (width:  800px) { html { font-size: 1.000rem; } }
-@media screen and (width: 1280px) { html { font-size: 1.000rem; } }
+@media screen and (width:  800px) { html { font-size: 20px; } }
+@media screen and (width: 1280px) { html { font-size: 20px; } }
 
 /*
 @media screen and (max-width: 1180px) { #idPanel             { width: 100.00% !important; } }
