@@ -42,11 +42,17 @@
 
 /*-----------------------------------------------------------------------------------------------*/
 
-/* html { font-size: 1.124rem; } */
-
 html
 {
-  font-size:            1.062rem;
+  font-size:            1.000rem;
+  box-sizing:           border-box;
+}
+
+*,
+*:before,
+*:after
+{
+  box-sizing:           inherit;
 }
 
 /*-----------------------------------------------------------------------------------------------*/
@@ -966,18 +972,32 @@ q.x::after { content: url("../images/suits/nosuit.svg"); }
 
 /*-----------------------------------------------------------------------------------------------*/
 
-@media screen and (width:  800px) { html { font-size: 20px; } }
-@media screen and (width: 1280px) { html { font-size: 20px; } }
+@media screen and (min-width: 48rem)
+{
+  html
+  {
+    font-size:          1.000rem;
+  }
+}
 
-/*
-@media screen and (max-width: 1180px) { #idPanel             { width: 100.00% !important; } }
-@media screen and (max-width: 1000px) { #idTopbarNavigation  { width: 100.00% !important; } }
-*/
+@media screen and (min-width: 79rem)
+{
+  #idPanel,
+  #idTopbarNavigation
+  {
+    width:              60%;    /* Or whatever fixed width you prefer on desktop */
+    margin:             0 auto; /* Centers the panel */
+  }
+}
 
-@media screen and (max-width: 1264px) { #idPanel             { width: 100.00% !important; } }
-@media screen and (max-width: 1264px) { #idTopbarNavigation  { width: 100.00% !important; } }
-
-@media screen and (max-width: 1264px) and (orientation : landscape) { #idPanel             { width: 60.00% !important; } }
-@media screen and (max-width: 1264px) and (orientation : landscape) { #idTopbarNavigation  { width: 60.00% !important; } }
+@media screen and (max-width: 79rem) and (orientation: landscape)
+{
+  #idPanel,
+  #idTopbarNavigation
+  {
+    width:              60% !important; /* Prevent full width when phone is sideways */
+    margin:             0 auto;
+  }
+}
 
 /*-----------------------------------------------------------------------------------------------*/
