@@ -1123,3 +1123,21 @@ q.x::after { content: url("../images/suits/nosuit.svg"); }
 @media screen and (max-width: 1264px) and (orientation : landscape) { #idTopbarNavigation  { width: 60.00% !important; } }
 
 /*-----------------------------------------------------------------------------------------------*/
+
+:root {
+  color-scheme: light dark;
+  /* Define default light mode variables here */
+  --text-color: #333;
+  --background-color: #fff;
+}
+
+Add the @media query to define the dark style variables/rules:
+CSS
+
+@media (prefers-color-scheme: dark) {
+  /* This block is only applied when the OS/browser is set to dark mode */
+  :root {
+    --text-color: #f0f0f0;
+    --background-color: #1a1a1a;
+  }
+}
