@@ -1,0 +1,59 @@
+## Acronym
+
+[|
+|SWIFT|Society for Worldwide Interbank Financial Telecommunication|
+|BIC  |Business Identificator Code                                |
+|IBAN |International Bank Account Number                          |
+|BBAN |Basic Bank Acount Number                                   |
+|]
+
+^[.IBANs.webp]
+
+## IBAN (UK, Bulgaria)
+
+[?
+      (22) - total characters
+01-02  (2) - country code
+03-04  (2) - check digits
+05-22 (18) - BBAN
+05-12  (8) - Bank Code
+05-08  (4) - BIC (letters)
+09-14  (6) - Sort Code
+15-22  (8) - Account Number
+?]
+
+## IBAN (France)
+
+[?
+      (27) - total characters
+01-02  (2) - country code
+03-04  (2) - check digits
+05-09  (5) - Bank Identifier
+10-14  (5) - Branch Identifier
+15-25 (11) - Account Number
+26-27  (2) - BBAN check digits
+?]
+
+
+[!
+Paper:
+  divided in groups of 4 characters
+ last group is 2 characters
+
+Electronically:
+ not divided
+
+BG99 9999 9999 9999 9999 99
+!]
+
+![IBAN Check →|https://www.iban.com/iban-checker]
+![Check IBAN (Bulgaria) →|https://www.namerete-bic.info/BIC+DSK+Bank+Sofia+BGSTSA9300+bg.php]
+![Valdate IBAN →|https://www.ibancalculator.com/iban_validieren.html]
+
+## Account Names
+
+[|
+|Nostro|foreign currency in foreign bank                           |
+|Vostro|local currency in foreign bank                             |
+|Loro  |foreign currency to another bank for credit of a third bank|
+|]

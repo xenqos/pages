@@ -1,0 +1,16 @@
+## Decrypt Config File
+
+![Source|https://ibkr.info/article/2320]
+
+[!
+File > Settings > Save Settings
+Help > Troubleshooting > Diagnostics > TWS Layout/Settings
+Export Settings
+!]
+
+[?
+nano jts.ini
+TimeZone=Universal
+TimeZone=Europe/Sofia
+ctrl-o ctrl-x
+?]

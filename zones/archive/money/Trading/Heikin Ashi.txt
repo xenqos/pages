@@ -1,0 +1,22 @@
+## Construction
+
+[?
+HA_Open = ( HA_Open[-1] + HA_Close[-1] ) / 2
+HA_Close = ( Open[0] + High[0] + Low[0] + Close[0] ) / 4
+HA_High = Max( High[0], HA_Open[0], HA_Close[0] )
+HA_Low = Min( Low[0], HA_Open[0], HA_Close[0] )
+?]
+
+HA_Open - The midpoint of the previous period body.
+HA_Close - The average of the current period.
+
+## Interpretation
+
+[-
+Based on two period averages.
+Traditional candlestick patterns are not applicable.
+The absence of a shadow also reflects strength.
+Long upper and lower shadows show indecision.
+Doji and spinning tops indicate indecision.
+Classic chart patterns and trend lines can be used.
+-]

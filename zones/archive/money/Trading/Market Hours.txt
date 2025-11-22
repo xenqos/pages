@@ -1,0 +1,48 @@
+## Stock Exchanges
+
+Source 1: ![Market Hours       |https://market24hclock.com/]
+Source 2: ![Trading Hours      |https://www.tradinghours.com/]
+
+### Standard Time
+
+[|
+^Market   ^MIC ^EET          ^UTC          ^Local             ^
+|Tokyo    |JPX |03:00 - 09:00|12:00 - 06:00|09:00 - 15:00 JST|
+|Zürich   |SIX |09:30 - 18:20|07:30 - 15:20|08:30 - 17:20 CET|
+|Frankfurt|FSX |10:00 - 18:30|08:00 - 19:00|09:00 - 17:30 CET|
+|London   |LSE |10:00 - 18:30|08:00 - 16:30|08:00 - 16:30 GMT|
+|New York |XNYS|16:30 - 23:00|14:30 - 21:00|09:30 - 16:00 EST|
+|]
+
+### Daylight Savings Time
+
+[|
+^Market   ^MIC ^EEDT         ^UTC          ^Local             ^
+|Tokyo    |JPX |03:00 - 09:00|12:00 - 06:00|09:00 - 15:00 JST |
+|Zürich   |SIX |09:30 - 18:20|06:30 - 15:20|08:30 - 17:20 CEST|
+|Frankfurt|FSX |10:00 - 18:30|07:00 - 15:30|09:00 - 17:30 CEST|
+|London   |LSE |10:00 - 18:30|07:00 - 15:30|08:00 - 16:30 BST |
+|New York |XNYS|16:30 - 23:00|13:30 - 20:00|09:30 - 16:00 EDT |
+|]
+
+^[.Market Hours.webp]
+
+__MIC - Market Identification Code__
+
+## Overlap Europe / America
+
+[|
+^   ^Varna        ^UTC          ^
+|ST |16:30 - 18:30|14:30 - 16:30|
+|DST|16:30 - 18:30|13:30 - 15:30|
+|]
+
+### Time Zones
+
+[|
+^Market   ^ST    ^DST   ^
+|Tokyo    |UTC+09|UTC+09|
+|Frankfurt|UTC+01|UTC+02|
+|London   |UTC+00|UTC+01|
+|New York |UTC−05|UTC−04|
+|]

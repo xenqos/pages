@@ -1,0 +1,22 @@
+FX Trade - purchase of one currency and sale of another.
+
+[|
+|EUR        |USD       |
+|Base       |Quote     |
+|Base       |Counter   |
+|Base       |Term      |
+|Transaction|Settlement|
+|Product    |Money     |
+|]
+
+In foreign exchange, the notional amount, also known as the notional principal, or the notional value, is the amount of currency to be sold and bought.
+
+This amount generally does not change and is thus referred to as notional. (finance) Used to indicate an estimate or a reference amount 
+
+Leverage = Notional value ÷ Market Value
+
+Notional Value = Contract Size * Underlying Price
+
+ it is the foreign currency notional that must be fixed.
+
+Equity = Account Balance + Floating Profits (or Losses)

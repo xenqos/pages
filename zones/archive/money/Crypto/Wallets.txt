@@ -1,0 +1,48 @@
+## Attributes
+
+[-
+creates phrase
+generates private keys
+manages public and private keys
+access blockchain
+-]
+
+[!
+contract address
+wallet address
+!]
+
+## Types
+[-
+custodial
+noncustodial
+-]
+
+### Noncustodial
+
+[!
+keys stored in app
+!]
+
+![Electrum|https://electrum.org/]
+![Bitcoin Wallet|https://play.google.com/store/apps/details?id=de.schildbach.wallet]
+![Mycelium|https://wallet.mycelium.com]
+![Wallet Scrutiny|https://walletscrutiny.com/]
+
+### Custodial
+
+[!
+hosted by third party
+third party stores keys
+!]
+
+#### Externally Owned Account
+
+[-
+Externally Owned Accounts = EOA
+do not have Smart Contract Code
+has private key, (user controls access to funds/contracts)
+can initiate transactions
+sign transactions with private key
+-]
+

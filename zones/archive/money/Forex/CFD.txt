@@ -1,0 +1,25 @@
+CFD - Contract for Differences
+
+Source: ![IBKR 2707|https://ibkb.interactivebrokers.com/node/2707]
+
+ESMA - European Securities and Markets Authority.
+
+Source: ![IBKR 3241|https://ibkr.info/article/3241]
+
+MiFID - Markets in Financial Instruments Directive
+
+
+ESMA Margins
+Leverage limits were set by ESMA at different levels depending on the underlying:
+
+3.33% for major currency pairs; Major currency pairs are any combination of USD; CAD; EUR; GBP; CHF; JPY
+
+
+Margin Close Out Rule
+2.1 Maintenance Margin Calculations & Liquidations
+
+ESMA requires IBKR to liquidate CFD positions latest when qualifying equity falls below 50% of the initial margin posted to open the positions. IBKR may close out positions sooner if our risk view is more conservative. Qualifying equity for this purpose includes cash in the F-segment (excluding cash in any other account segment) and unrealized CFD P&L (positive and negative).
+
+The carry interest for IB Forex CFDs is based on a currency-pair specific benchmark and a spread. The benchmark is the difference between the IB benchmark rates for the two currencies. It is calculated as + BM Base currency – BM Quote currency.
+
+It is important to note that the long rate is applied as a credit, the short rate as a debit. Consequently for a long position a positive rate means a credit, a negative rate a charge. However for short positions a positive rate means a charge, a negative rate a credit.

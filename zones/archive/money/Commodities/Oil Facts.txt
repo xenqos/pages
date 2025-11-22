@@ -1,0 +1,37 @@
+## Products
+WTI - Western Texas Intermediate
+Brent
+Urals
+Fateh - OPEC
+
+## Extraction Locations
+WTI - Texas, Louisiana, North Dakota. Stored in Cushing, Oklahoma.
+Brent - North Sea (Brent, Forties, Osberg, Ekofisk)
+Urals - Ural, Volga
+Fateh - Dubai
+
+## API Gravity (Density)
+
+[|
+|> 34°    |light |
+|31° - 33°|medium|
+|< 30°    |heavy |
+|]
+
+## Sulphur Content
+
+[|
+|< 0.5%|sweet|
+|> 1.0%|sour |
+|]
+
+[-
+High API - more valuable
+Low Sulphur - easy to refine
+-]
+
+[|
+|              |WTI  |Brent|Urals|Fateh|
+|API Gravity   |39.6°|38.3°|31.7°|30.4°|
+|Sulfur Content|0.24%|0.37%| 1.7%|2.13%|
+|]

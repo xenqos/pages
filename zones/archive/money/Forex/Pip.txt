@@ -1,0 +1,36 @@
+Source 1: ![IBKR 1267|https://ibkr.info/node/1267#Pip_Value]
+Source 2: ![IBKR 231|https://ibkr.info/node/231]
+Source 3: ![IBKR|https://ibkr.info/node/1267#Pip_Value]
+
+## Definition - fltPipValue
+
+[-
+PIP - Percentage In Point.
+Minimal price change of Quote currency.
+Tick - in other instruments. 
+-]
+
+[|
+|Pip    |0.0001|
+|Pipette|0.00001|
+|]
+
+## Pip Value - fltPipSize
+
+The pip value is an amount of the settlement currency.
+
+### In Quote Currency
+
+[?
+fltPipValue = fltPipSize x intLotSize
+EUR/USD:
+$10.00 = 0.0001 x 100,000
+?]
+
+### In Base Currency
+
+[?
+fltPipValue = fltPipSize x intLotSize / fltExchangeRate
+EUR/USD:
+€7.20 = 0.0001 x 100,000 / 1.3884
+?]
