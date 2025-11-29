@@ -1,0 +1,83 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-10%" pitch="0%">
+
+avoir
+
+.
+
+j'ai
+tu as
+il a
+nous avons
+vous avez
+ils ont
+
+.
+
+j'avais
+tu avais
+il avait
+nous avions
+vous aviez
+ilzavaient
+
+.
+
+j'eus
+tu eus
+il eut
+nous eûmes
+vous eûtes
+ilzeurent
+
+.
+
+j'aurai
+tu auras
+il aura
+nous aurons
+vous aurez
+ilzauront
+
+.
+
+j'aurais
+tu aurais
+il aurait
+nous aurions
+vous auriez
+ilzauraient
+
+.
+
+que j'aie
+que tu aies
+qu'il ait
+que nous ayons
+que vous ayez
+qu'ilzaient
+
+.
+
+que j'eusse
+que tu eusses
+qu'il eût
+que nous eussions
+que vous eussiez
+qu'ilzeussent
+
+.
+
+aie
+ayons
+ayez
+
+.
+
+ayant
+
+eu
+</prosody>
+</voice>
+</speak>

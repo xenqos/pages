@@ -1,0 +1,18 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
+Excusez-moi de vous déranger, monsieur/madame,
+mais j'ai un problème.
+Est-ce que je peux vous poser une question ?
+Qu'est-ce que vous avez dit ?
+Pourriez-vous répéter, s'il vous plaît ?
+Je n'ai pas entendu ce que vous avez dit.
+Comment est-ce qu'on écrit ça ?
+Ça s'écrit comment ?
+Comment est-ce qu'on prononce ça ?
+Ça se prononce comment ?
+Qu'est-ce que ça veut dire?
+Ça veut dire quoi ?
+</prosody>
+</voice>
+</speak>

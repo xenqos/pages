@@ -1,0 +1,83 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-10%" pitch="0%">
+
+écouter
+
+.
+
+j'écoute
+tu écoutes
+il écoute
+nous écoutons
+vous écoutez
+ilzécoutent
+
+.
+
+j'écoutais
+tu écoutais
+il écoutait
+nous écoutions
+vous écoutiez
+ilzécoutaient
+
+.
+
+j'écoutai
+tu écoutas
+il écouta
+nous écoutâmes
+vous écoutâtes
+ilzécoutèrent
+
+.
+
+j'écouterai
+tu écouteras
+il écoutera
+nous écouterons
+vous écouterez
+ilzécouteront
+
+.
+
+j'écouterais
+tu écouterais
+il écouterait
+nous écouterions
+vous écouteriez
+ilzécouteraient
+
+.
+
+que j'écoute
+que tu écoutes
+qu'il écoute
+que nous écoutions
+que vous écoutiez
+qu'ilzécoutent
+
+.
+
+que j'écoutasse
+que tu écoutasses
+qu'il écoutât
+que nous écoutassions
+que vous écoutassiez
+qu'ilzécoutassent
+
+.
+
+écoute
+écoutons
+écoutez
+
+.
+
+écoutant
+
+écouté
+</prosody>
+</voice>
+</speak>
