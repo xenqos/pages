@@ -1,0 +1,56 @@
+There is a function fncIdentifyBoard in the attached index.html file.
+Write a javascript code that identifies the texture of the board:
+
+Dry Flop
+Wet Flop
+Connected Flop
+High Flop
+Low Flop
+Monotone
+Two Tone (Suited)
+Paired Two Tone
+Rainbow
+Paired Rainbow
+Trips
+
+Break board textures down into key categories:
+
+1. Coordination:
+  Wet
+  Dry
+
+  Describe Characteristics
+  Describe Strategy
+
+2. Rank:
+  High Card Board / High Flop
+  Low Card Board / Low Flop"
+
+3. Suitability
+  Rainbow
+  Two-Tone
+  Monotone
+
+4. By Pairing
+  Unpaired Board
+  Paired Rainbow
+  Paired Two-Tone
+  Trips Board
+
+5. Connectivity
+  Connected Flop
+  Disconnected Flop
+
+Output into
+
+<div id='idTextureName'>
+<h2>Name</h2>
+</div>
+
+<div id='idTextureCategory'>
+<h2>Category</h2>
+</div>
+
+<div id='idTextureStrategy'>
+<h2>Strategy</h2>
+</div>

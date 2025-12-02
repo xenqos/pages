@@ -1,0 +1,40 @@
+/*-----------------------------------------------------------------------------------------------*/
+
+.clFloor
+{
+  display:              flex;
+  justify-content:      center;
+}
+
+.clPokerTable
+{
+  background-color:     #0d6f3a;
+  border-radius:        0.400rem;
+  box-sizing:           border-box;
+/*
+  display:              inline-block;
+*/
+  display:              flex;
+  justify-content:      center;
+  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
+  padding:              0.400rem 0.200rem 0.340rem 0.200rem;
+  width:                100%;
+}
+
+.clCard
+{
+  width:                20%
+}
+
+#idCard0,
+#idCard1,
+#idCard2,
+#idCard3,
+#idCard4,
+#idCard5
+{
+  margin-left:          0.100rem;
+  margin-right:         0.100rem;
+}
+
+/*-----------------------------------------------------------------------------------------------*/

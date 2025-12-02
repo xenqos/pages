@@ -1,0 +1,432 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Textures</title>
+  <link rel='icon' type='image/x-icon' href='../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../styles/global.css'>
+
+<!-- ------------------------------------------------------------------------------------------- -->
+
+<style>
+/*-----------------------------------------------------------------------------------------------*/
+
+.clFloor
+{
+  display:              flex;
+  justify-content:      center;
+}
+
+.clPokerTable
+{
+  background-color:     #0d6f3a;
+  border-radius:        0.400rem;
+  box-sizing:           border-box;
+  display:              flex;           /* Changed back to flex */
+  justify-content:      center;
+  padding:              0.5rem;        /* Minimal padding for visual spacing */
+  width:                auto;          /* Let it size based on content */
+}
+
+.clCard
+{
+  width:                7.400rem;          /* Fixed width instead of percentage */
+  margin:               0 0.1rem;      /* Horizontal spacing only */
+}
+
+#idCard0,
+#idCard1,
+#idCard2
+{
+  margin-left:          0.100rem;
+  margin-right:         0.100rem;
+}
+
+/*-----------------------------------------------------------------------------------------------*/
+
+</style>
+
+<!-- ------------------------------------------------------------------------------------------- -->
+
+  <script type='text/javascript' src='../../../scripts/global.js'></script>
+
+<!-- ------------------------------------------------------------------------------------------- -->
+
+<script>
+
+/*--------------------------------------------------------------------------------------------------*/
+
+'use strict';
+
+/*--------------------------------------------------------------------------------------------------*/
+
+const arrSuits = ['S', 'H', 'C', 'D'];
+const arrRanks = ['2', '3', '4', '5', '6', '7', '8', '9', 'T', 'J', 'Q', 'K', 'A'];
+let arrCards = [];
+let booTurn = false;
+let objConsoleLog = null;
+let objOutsDiv = null;
+let objOutsTable = null;
+let strOutsTable = '';
+
+/*--------------------------------------------------------------------------------------------------*/
+
+async function fncDealCards()
+{
+  arrCards.length = 0;
+  objConsoleLog = document.getElementById('idConsoleLog');
+  objConsoleLog.innerHTML = '';
+  strOutsTable = '';
+
+  while (arrCards.length < 3)
+  {
+    let numRankIndex = Math.floor(Math.random() * arrRanks.length);
+    let strRank = arrRanks[numRankIndex];
+
+    let numSuitIndex = Math.floor(Math.random() * arrSuits.length);
+    let strSuit = arrSuits[numSuitIndex];
+
+    let strCard = strRank + strSuit;
+
+    if (!arrCards.includes(strCard))
+    {
+      arrCards.push(strCard);
+    }
+  }
+
+// Test Values Begin
+// arrCards = ['2H', '7C', '8S'];
+// Test Values End
+
+  for (let numCounter = 0; numCounter < arrCards.length; numCounter++)
+  {
+    if (numCounter < 5)
+    {
+      document.getElementById('idCard' + numCounter).src = '../../../images/cards/' + arrCards[numCounter] + '.svg';
+    }
+    else
+    {
+      document.getElementById('idCard' + numCounter).src = '../../../images/cards/back.svg';
+    }
+  }
+
+  fncIdentifyBoard();
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+async function fncIdentifyBoard()
+{
+  console.clear();
+  console.log("Hand Tested: ", arrCards);
+
+  // Extract ranks and suits from the cards
+  const ranks = arrCards.map(card => card.charAt(0));
+  const suits = arrCards.map(card => card.charAt(1));
+
+  // Convert ranks to numeric values
+  const rankValues = ranks.map(rank => {
+    const rankMap = {
+      '2': 2, '3': 3, '4': 4, '5': 5, '6': 6, '7': 7, '8': 8, '9': 9,
+      'T': 10, 'J': 11, 'Q': 12, 'K': 13, 'A': 14
+    };
+    return rankMap[rank];
+  });
+
+  // Sort ranks for connectivity check
+  const sortedRanks = [...rankValues].sort((a, b) => a - b);
+
+  // Analyze board characteristics
+  const texture = analyzeBoardTexture(ranks, suits, rankValues, sortedRanks);
+
+  // Update the HTML with texture information
+  updateTextureDisplay(texture);
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+function analyzeBoardTexture(ranks, suits, rankValues, sortedRanks) {
+  // Suit analysis
+  const suitSet = new Set(suits);
+  const suitCount = suitSet.size;
+
+  // Rank analysis
+  const rankSet = new Set(ranks);
+  const rankCount = rankSet.size;
+  const rankDuplicates = 3 - rankCount; // 0 = unpaired, 1 = paired, 2 = trips
+
+  // Connectivity analysis
+  const gaps = [];
+  for (let i = 1; i < sortedRanks.length; i++) {
+    gaps.push(sortedRanks[i] - sortedRanks[i-1] - 1);
+  }
+  const totalGaps = gaps.reduce((sum, gap) => sum + gap, 0);
+  const isConnected = totalGaps <= 1; // Connected if 0 or 1 gap total
+
+  // High/Low analysis
+  const averageRank = rankValues.reduce((sum, rank) => sum + rank, 0) / 3;
+  const maxRank = Math.max(...rankValues);
+  const minRank = Math.min(...rankValues);
+
+  // Determine coordination (Wet/Dry)
+  let coordination = '';
+  let coordinationDesc = '';
+  let coordinationStrategy = '';
+
+  // Coordination logic
+  const hasHighCards = rankValues.filter(r => r >= 10).length >= 2;
+  const hasBroadway = rankValues.filter(r => r >= 10).length >= 2;
+  const hasGutshot = totalGaps === 1;
+  const hasTwoGapper = totalGaps === 2;
+  const isMonotone = suitCount === 1;
+  const isTwoTone = suitCount === 2;
+
+  if (isMonotone || isTwoTone || hasHighCards || isConnected) {
+    coordination = 'Wet';
+    coordinationDesc = 'Board offers strong drawing potential with flush draws, straight draws, and high card potential.';
+    coordinationStrategy = 'Play aggressively with strong hands and draws. Consider semi-bluffing with draws. Be cautious of possible made hands from opponents.';
+  } else {
+    coordination = 'Dry';
+    coordinationDesc = 'Board has minimal drawing potential, likely consisting of low disconnected cards.';
+    coordinationStrategy = 'Focus on value betting with made hands. Bluffing can be effective. Draws are less valuable.';
+  }
+
+  // Rank category
+  let rankCategory = '';
+  let rankDesc = '';
+  if (averageRank >= 10) {
+    rankCategory = 'High Card Board / High Flop';
+    rankDesc = `Contains high cards (average rank: ${averageRank.toFixed(1)})`;
+  } else if (averageRank <= 7) {
+    rankCategory = 'Low Card Board / Low Flop';
+    rankDesc = `Contains low cards (average rank: ${averageRank.toFixed(1)})`;
+  } else {
+    rankCategory = 'Medium Flop';
+    rankDesc = `Contains medium cards (average rank: ${averageRank.toFixed(1)})`;
+  }
+
+  // Suitability
+  let suitability = '';
+  if (suitCount === 1) {
+    suitability = 'Monotone';
+  } else if (suitCount === 2) {
+    suitability = 'Two-Tone';
+  } else {
+    suitability = 'Rainbow';
+  }
+
+  // Pairing category
+  let pairing = '';
+  if (rankCount === 3) {
+    pairing = 'Unpaired Board';
+  } else if (rankCount === 2 && suitCount === 3) {
+    pairing = 'Paired Rainbow';
+  } else if (rankCount === 2 && suitCount === 2) {
+    pairing = 'Paired Two-Tone';
+  } else if (rankCount === 1) {
+    pairing = 'Trips Board';
+  }
+
+  // Connectivity category
+  let connectivity = isConnected ? 'Connected Flop' : 'Disconnected Flop';
+
+  // Determine texture name
+  let textureName = '';
+
+  // Check for specific texture patterns
+  if (rankCount === 1) {
+    textureName = 'Trips';
+  } else if (suitCount === 1) {
+    textureName = 'Monotone';
+  } else if (suitCount === 2 && rankCount === 3) {
+    textureName = 'Two Tone (Suited)';
+  } else if (suitCount === 3 && rankCount === 2) {
+    textureName = 'Paired Rainbow';
+  } else if (suitCount === 2 && rankCount === 2) {
+    textureName = 'Paired Two Tone';
+  } else if (suitCount === 3 && rankCount === 3) {
+    textureName = 'Rainbow';
+  }
+
+  // Add connectivity qualifier
+  if (isConnected && rankCount === 3 && suitCount === 3) {
+    textureName = 'Connected Flop';
+  } else if (!isConnected && rankCount === 3 && suitCount === 3) {
+    textureName = 'Dry Flop';
+  }
+
+  // Override with coordination if not already set
+  if (!textureName) {
+    if (coordination === 'Wet') {
+      textureName = 'Wet Flop';
+    } else {
+      textureName = 'Dry Flop';
+    }
+  }
+
+  // Add high/low qualifier for certain textures
+  if (textureName === 'Dry Flop' || textureName === 'Wet Flop' || textureName === 'Connected Flop') {
+    if (averageRank >= 10) {
+      textureName = 'High ' + textureName;
+    } else if (averageRank <= 7) {
+      textureName = 'Low ' + textureName;
+    }
+  }
+
+  return {
+    textureName,
+    categories: {
+      coordination: { name: coordination, desc: coordinationDesc, strategy: coordinationStrategy },
+      rank: { name: rankCategory, desc: rankDesc },
+      suitability: { name: suitability },
+      pairing: { name: pairing },
+      connectivity: { name: connectivity }
+    },
+    rawData: {
+      ranks,
+      suits,
+      rankValues,
+      averageRank,
+      suitCount,
+      rankCount,
+      isConnected,
+      totalGaps
+    }
+  };
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+function updateTextureDisplay(texture) {
+  // Update texture name
+  const textureNameDiv = document.getElementById('idTextureName');
+  textureNameDiv.innerHTML = `<h2>${texture.textureName}</h2>`;
+
+  // Update texture category
+  const textureCategoryDiv = document.createElement('div');
+  textureCategoryDiv.id = 'idTextureCategory';
+  textureCategoryDiv.innerHTML = '<h2>Category</h2>';
+
+  // Create category table
+  const categoryTable = document.createElement('table');
+  categoryTable.style.width = '100%';
+  categoryTable.style.borderCollapse = 'collapse';
+  categoryTable.style.marginTop = '1rem';
+
+  // Add coordination category
+  addCategoryRow(categoryTable, 'Coordination',
+    `${texture.categories.coordination.name} - ${texture.categories.coordination.desc}`);
+
+  // Add rank category
+  addCategoryRow(categoryTable, 'Rank',
+    `${texture.categories.rank.name} - ${texture.categories.rank.desc}`);
+
+  // Add suitability category
+  addCategoryRow(categoryTable, 'Suitability', texture.categories.suitability.name);
+
+  // Add pairing category
+  addCategoryRow(categoryTable, 'Pairing', texture.categories.pairing.name);
+
+  // Add connectivity category
+  addCategoryRow(categoryTable, 'Connectivity', texture.categories.connectivity.name);
+
+  textureCategoryDiv.appendChild(categoryTable);
+
+  // Replace or insert the category div
+  const existingCategoryDiv = document.getElementById('idTextureCategory');
+  const strategyDiv = document.getElementById('idTextureStrategy');
+
+  if (existingCategoryDiv) {
+    existingCategoryDiv.replaceWith(textureCategoryDiv);
+  } else {
+    // Insert after texture name div
+    textureNameDiv.after(textureCategoryDiv);
+  }
+
+  // Update strategy
+  strategyDiv.innerHTML = `<h2>Strategy</h2><p>${texture.categories.coordination.strategy}</p>`;
+
+  // Log to console for debugging
+  console.log('Board Texture Analysis:', texture);
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+function addCategoryRow(table, category, value) {
+  const row = document.createElement('tr');
+
+  const catCell = document.createElement('td');
+  catCell.textContent = category;
+  catCell.style.padding = '0.5rem';
+  catCell.style.border = '1px solid #ddd';
+  catCell.style.fontWeight = 'bold';
+  catCell.style.width = '30%';
+
+  const valCell = document.createElement('td');
+  valCell.textContent = value;
+  valCell.style.padding = '0.5rem';
+  valCell.style.border = '1px solid #ddd';
+
+  row.appendChild(catCell);
+  row.appendChild(valCell);
+  table.appendChild(row);
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------------------------*/
+//  console.log('ZZZ…');
+/*--------------------------------------------------------------------------------------------------*/
+
+</script>
+
+<!-- ------------------------------------------------------------------------------------------- -->
+</head>
+<body onload='fncDealCards();'>
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../index.html'><span class='clNavIndex'></span></a>
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>Textures</h1>
+
+<div class='clFloor'>
+<div class='clPokerTable'>
+  <img id='idCard0' class='clCard' onclick='fncDealCards();'  src='../../../images/cards/back.svg'>
+  <img id='idCard1' class='clCard' onclick='fncDealCards();'  src='../../../images/cards/back.svg'>
+  <img id='idCard2' class='clCard' onclick='fncDealCards();'  src='../../../images/cards/back.svg'>
+</div>
+</div>
+
+<div id='idTextureName'>
+<h2>Name</h2>
+</div>
+
+<div id='idTextureCategory'>
+<h2>Category</h2>
+</div>
+
+<div id='idTextureStrategy'>
+<h2>Strategy</h2>
+</div>
+
+
+<code id='idConsoleLog'>
+</code>
+
+<br>
+
+</div>
+</div>
+</body>
+</html>
