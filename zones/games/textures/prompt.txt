@@ -54,3 +54,26 @@ Output into
 <div id='idTextureStrategy'>
 <h2>Strategy</h2>
 </div>
+
+--------------------------------------------------------------------------------
+
+Do not replace innerHtml of <h2>:
+
+<div id='idTextureName'>
+<h2>Name</h2>
+</div>
+
+Keep <h2> and output the name underneath <h2> in <p>
+
+--------------------------------------------------------------------------------
+
+The index-v3.html is attached.
+
+Similar to my previous request:
+
+Do not use <table> for "Category".
+Instead convert the left column to <h3> (Each cell in the left column becomes <h3>).
+Output the right column cell underneath the appropriate left column converted to <h3>.
+
+
+--------------------------------------------------------------------------------
