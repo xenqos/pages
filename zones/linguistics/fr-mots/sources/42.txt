@@ -1,0 +1,17 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-30%" pitch="low" volume="medium">
+bavarder
+bronzer
+faire la grasse matinée
+faire la sieste
+faire une pause
+faire une promenade
+faire un tour
+prendre un bain de soleil
+prendre un verre
+se détendre
+se reposer
+</prosody>
+</voice>
+</speak>

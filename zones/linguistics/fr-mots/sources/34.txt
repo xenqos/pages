@@ -1,0 +1,39 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-30%" pitch="low" volume="medium">
+la poste
+la lettre
+la carte postale
+le timbre
+la cabine téléphonique
+la boîte à lettres
+la fente
+l'adresse
+l'expéditeur
+l'étiquette
+le ruban adhésif
+le paquet
+le cachet de la poste
+l'élastique
+le tampon encreur
+la ficelle
+
+accusé de réception
+avis de réception
+adresse de l'expéditeur
+adresse de réexpédition
+colis
+destinataire
+expéditeur
+envoi en nombre
+imprimés
+lettre recommandée
+mandat cash
+par avion
+port payé
+retour à l'envoyeur
+tarifs postaux
+trier
+</prosody>
+</voice>
+</speak>

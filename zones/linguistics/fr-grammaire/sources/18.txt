@@ -1,0 +1,34 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
+personne
+rien
+aucun
+aucune
+nul
+nulle
+pas un
+
+un
+quelqu'un
+quelque chose
+
+plusieurs
+quelques-uns
+certains
+
+tout
+tous
+toutes
+
+chacun
+chacunе
+
+quiconque
+même
+autre
+autrui
+tel
+</prosody>
+</voice>
+</speak>
