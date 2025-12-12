@@ -25,7 +25,9 @@
 
 .clPokerTable
 {
+/*
   background-color:     #0d6f3a;
+*/
   border-radius:        0.400rem;
   box-sizing:           border-box;
   display:              flex;
@@ -37,10 +39,14 @@
 
 .clCard
 {
-  width:                5rem;
+  width:                20%;
+
+  /*
+  width:                3rem;
   height:               auto;
   margin:               0.000rem 0.000rem 0.000rem 0.000rem;
   padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+  */
 }
 
 #idCard0,
@@ -428,14 +434,18 @@ async function fncCountOuts()
 <h1>Outs</h1>
 
 <div class='clFloor'>
+<!--
 <div class='clPokerTable'>
+-->
   <img id='idCard0' class='clCard' onclick='fncDealCards();'  src='../../../images/cards/back.svg'>
   <img id='idCard1' class='clCard' onclick='fncDealCards();'  src='../../../images/cards/back.svg'>
   <img id='idCard2' class='clCard' onclick='fncDealCards();'  src='../../../images/cards/back.svg'>
   <img id='idCard3' class='clCard' onclick='fncDealCards();'  src='../../../images/cards/back.svg'>
   <img id='idCard4' class='clCard' onclick='fncDealCards();'  src='../../../images/cards/back.svg'>
   <img id='idCard5' class='clCard' onclick='fncShowTurn();'   src='../../../images/cards/back.svg'>
+<!--
 </div>
+-->
 </div>
 
 <!--
