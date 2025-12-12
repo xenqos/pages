@@ -398,11 +398,11 @@ function updateTextureDisplay(objTexture)
 
   // Add coordination category
   addCategoryItem(objCategoryContainer, 'Coordination',
-    `<strong>${objTexture.categories.coordination.name}</strong><br>${objTexture.categories.coordination.desc}`);
+    `${objTexture.categories.coordination.name}<br>${objTexture.categories.coordination.desc}`);
 
   // Add rank category
   addCategoryItem(objCategoryContainer, 'Rank',
-    `<strong>${objTexture.categories.rank.name}</strong><br>${objTexture.categories.rank.desc}`);
+    `${objTexture.categories.rank.name}<br>${objTexture.categories.rank.desc}`);
 
   // Add suitability category
   addCategoryItem(objCategoryContainer, 'Suitability', objTexture.categories.suitability.name);
