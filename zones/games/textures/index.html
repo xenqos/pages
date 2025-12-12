@@ -23,6 +23,7 @@
   justify-content:      center;
 }
 
+/*
 .clPokerTable
 {
   background-color:     #0d6f3a;
@@ -30,16 +31,27 @@
   box-sizing:           border-box;
   display:              inline-flex;
   justify-content:      center;
-  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
-  padding:              0.800rem 0.600rem 0.740rem 0.600rem;
+  padding:              0.5rem;
   width:                auto;
+}
+*/
+
+.clPokerTable
+{
+  background-color:     #0d6f3a;
+  border-radius:        0.400rem;
+  box-sizing:           border-box;
+  display:              flex;
+  justify-content:      center;
+  padding:              0.5rem;
+  width:                max-content;    /* Add this instead of inline-flex */
 }
 
 .clCard
 {
-  width:                6.000rem;
-  height:               auto;
-  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
+  width:                5rem;           /* Changed from 14% to fixed width */
+  height:               auto;           /* Maintain aspect ratio */
+  margin:               0 0.1rem;      /* Horizontal spacing only */
 }
 
 #idCard0,
@@ -52,8 +64,6 @@
 
 .clTexture
 {
-  background-color:     inherit;
-  color:                inherit;
   margin:               0.000rem 0.000rem 0.000rem 1.000rem;
 }
 
@@ -69,8 +79,6 @@ h3
 
 .clStrategy
 {
-  background-color:     inherit;
-  color:                inherit;
   margin:               0.000rem 0.000rem 0.000rem 1.000rem;
 }
 
@@ -474,8 +482,6 @@ function addCategoryItem(objContainer, strCategory, strValue)
 
 <div class='clFloor'>
 <div class='clPokerTable'>
-  <q class='d'>T</q><q class='c'>6</q><q class='h'>3</q></td><td><q class='s'>Q</q></td><td><q class='d'>5</q>
-
   <img id='idCard0' class='clCard' onclick='fncDealCards();'  src='../../../images/cards/back.svg'>
   <img id='idCard1' class='clCard' onclick='fncDealCards();'  src='../../../images/cards/back.svg'>
   <img id='idCard2' class='clCard' onclick='fncDealCards();'  src='../../../images/cards/back.svg'>
