@@ -17,7 +17,7 @@
   
 </head>
 <body onload='fncGetDivState(); fncGetScrollPosition();'>
-
+<audio id='idTrack' src='../sounds/06.mp3' preload='auto'></audio>
 <div id='idPanel'>
 <div id='idTopbar'>
   <div id='idTopbarNavigation'>
@@ -26,7 +26,7 @@
     <a href='05.html'><span class='clNavLeft'></span></a>
     <a href='../index.html'><span class='clNavUp'></span></a>
     <a href='07.html'><span class='clNavRight'></span></a>
-
+<span class='clNavRewind' onclick='fncRewindTrack(&quot;idTrack&quot;)'></span><span class='clNavPlay' onclick='fncPlayTrack(&quot;idTrack&quot;)'></span>
   </div>
 </div>
 <div id='idContent'>
@@ -35,7 +35,7 @@
 
 <h1>Сдвиг согласных</h1>
 
-Якоб Гримм, 500-800 AD<br>
+500-800 AD<br>
 
 <hr class='clHr'>
 
@@ -45,9 +45,9 @@
 <div class='clOverflow'>
 <table>
 <tr>
-<td><span class='m'>two</span></td><td><span class='m'>zwei</span></td></tr>
-<tr><td><span class='m'>ten</span></td><td><span class='m'>zehn</span></td></tr>
-<tr><td><span class='m'>tongue</span></td><td><span class='m'>Zunge</span></td></tr>
+<td>two</td><td><span class='m'>zwei</span></td></tr>
+<tr><td>ten</td><td><span class='m'>zehn</span></td></tr>
+<tr><td>tongue</td><td><span class='m'>Zunge</span></td></tr>
 </table>
 </div>
 
@@ -60,9 +60,9 @@
 <div class='clOverflow'>
 <table>
 <tr>
-<td><span class='m'>water</span></td><td><span class='m'>das Wasser</span></td></tr>
-<tr><td><span class='m'>better</span></td><td><span class='m'>besser</span></td></tr>
-<tr><td><span class='m'>white</span></td><td><span class='m'>weiss</span></td></tr>
+<td>water</td><td><span class='m'>das Wasser</span></td></tr>
+<tr><td>better</td><td><span class='m'>besser</span></td></tr>
+<tr><td>white</td><td><span class='m'>weiss</span></td></tr>
 </table>
 </div>
 
@@ -75,9 +75,9 @@
 <div class='clOverflow'>
 <table>
 <tr>
-<td><span class='m'>that</span></td><td><span class='m'>das</span></td></tr>
-<tr><td><span class='m'>out</span></td><td><span class='m'>aus</span></td></tr>
-<tr><td><span class='m'>it</span></td><td><span class='m'>es</span></td></tr>
+<td>that</td><td><span class='m'>das</span></td></tr>
+<tr><td>out</td><td><span class='m'>aus</span></td></tr>
+<tr><td>it</td><td><span class='m'>es</span></td></tr>
 </table>
 </div>
 
@@ -90,9 +90,9 @@
 <div class='clOverflow'>
 <table>
 <tr>
-<td><span class='m'>pound</span></td><td><span class='m'>das Pfund</span></td></tr>
-<tr><td><span class='m'>plant</span></td><td><span class='m'>die Pflanze</span></td></tr>
-<tr><td><span class='m'>pepper</span></td><td><span class='m'>der Pfeffer</span></td></tr>
+<td>pound</td><td><span class='m'>das Pfund</span></td></tr>
+<tr><td>plant</td><td><span class='m'>die Pflanze</span></td></tr>
+<tr><td>pepper</td><td><span class='m'>der Pfeffer</span></td></tr>
 </table>
 </div>
 
@@ -105,83 +105,74 @@
 <div class='clOverflow'>
 <table>
 <tr>
-<td><span class='m'>open</span></td><td><span class='m'>offen</span></td></tr>
-<tr><td><span class='m'>sleep</span></td><td><span class='m'>schlaffen</span></td></tr>
-<tr><td><span class='m'>help</span></td><td><span class='m'>helffen</span></td></tr>
+<td>open</td><td><span class='m'>offen</span></td></tr>
+<tr><td>sleep</td><td><span class='m'>schlaffen</span></td></tr>
+<tr><td>help</td><td><span class='m'>helffen</span></td></tr>
 </table>
 </div>
 
 
 <hr class='clHr'>
 
-<br>
-<br>
-Proto-Germanic / English / Low German	High German Result	English Example (cognate)	German Example	Shift Type<br>
-p →	pf (initially) or ff (medially)	pound, apple, shop	Pfund, Apfel, Schoff	p → pf / ff<br>
-f (finally/other)	sl eep, sharp	schlafen, scharf<br>
-<br>
-k →	kch (written ch)	key, make, break	Cheis (dial.), machen, brechen	k → kch/ch<br>
-d →	t	day, dander, dodge	Tag, Haut, (ver)decken*	d → t<br>
-θ (th) →	d	thank, thing, thorn	danken, Ding, Dorn	θ (th) → d<br>
-<br>
-<br>
-<br>
-<br>
-Consonant in English Cognate	Typical German Equivalent	Pattern & Example<br>
-p	pf, ff, or f	Pipe → Pfeife, pound → Pfund, shape → schaffen<br>
-<br>
-k	ch (after i, e, ä, ö; else k)	make → machen, break → brechen, book → Buch<br>
-d	t	dark → dunkel (no shift), do → tun (shifted), day → Tag<br>
-th (voiceless /θ/)	d	thank → danken, thin → dünn<br>
-v / f (from older p)	b or f/v (different history)	have / give → haben / geben (not a shift, but a key difference)<br>
-s (often)	s (but pronounced /z/ in English)	sun → Sonne, grass → Gras (spelling reflects older 'ss')<br>
-b	b (mostly unchanged)	book → Buch, bite → beißen<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-1. Voiceless Stops Shifting to Affricates (Word-Initial, After Consonants, or Geminated)<br>
-<br>
-p → pf<br>
-English retains /p/; German shifts to /pf/.<br>
-Examples: English &quot;pipe&quot; → German &quot;Pfeife&quot;; English &quot;pound&quot; → German &quot;Pfund&quot;; English &quot;apple&quot; → German &quot;Apfel&quot; (geminated pp → pf).<br>
-t → ts (often spelled z or tz)<br>
-English retains /t/; German shifts to /ts/.<br>
-Examples: English &quot;water&quot; → German &quot;Wasser&quot; (post-vocalic t → ss, but initial t → z).<br>
-k → kx (often spelled ch, pronounced /x/ or /ç/)<br>
-English retains /k/; German shifts to /kx/ or /x/.<br>
-Examples: English &quot;kin&quot; → German &quot;Kind&quot; (minimal shift here, but see others); English &quot;make&quot; → German &quot;machen&quot;; English &quot;book&quot; → German &quot;Buch&quot;.<br>
-<br>
-2. Voiceless Stops Shifting to Fricatives (Post-Vocalic Position)<br>
-<br>
-p → f<br>
-English retains /p/; German shifts to /f/.<br>
-Examples: English &quot;ship&quot; → German &quot;Schiff&quot;; English &quot;open&quot; → German &quot;offen&quot;.<br>
-t → s (often spelled s or ss)<br>
-English retains /t/; German shifts to /s/.<br>
-Examples: English &quot;foot&quot; → German &quot;Fuß&quot;; English &quot;heart&quot; → German &quot;Herz&quot;.<br>
-k → x (spelled ch)<br>
-English retains /k/; German shifts to /x/.<br>
-Examples: English &quot;break&quot; → German &quot;brechen&quot;; English &quot;speak&quot; → German &quot;sprechen&quot;.<br>
-<br>
-3. Voiced Stops Shifting to Voiceless Stops (Devoicing, More Pronounced in Southern German)<br>
-<br>
-b → p<br>
-English retains /b/; German shifts to /p/.<br>
-Examples: English &quot;bishop&quot; → German &quot;Bischof&quot; (minimal), but see English &quot;rib&quot; → German &quot;Rippe&quot;.<br>
-d → t<br>
-English retains /d/; German shifts to /t/.<br>
-Examples: English &quot;day&quot; → German &quot;Tag&quot;; English &quot;good&quot; → German &quot;gut&quot;.<br>
-g → k<br>
-English retains /g/; German shifts to /k/.<br>
-Examples: English &quot;goose&quot; → German &quot;Gans&quot; (related); English &quot;give&quot; → German &quot;geben&quot; (minimal), but English &quot;guest&quot; → German &quot;Gast&quot; (g remains, but see shifts like English &quot;ridge&quot; → German &quot;Rücken&quot;).<br>
+
+<h2><b>p</b> &emsp;<span class='l'>»</span>&emsp; <b>f</b></h2>
+<i>в концв слова</i><br>
+<div class='clOverflow'>
+<table>
+<tr>
+<td>sharp</td><td><span class='m'>scharf</span></td></tr>
+<tr><td>ripe</td><td><span class='m'>reif</span></td></tr>
+<tr><td>deep</td><td><span class='m'>tief</span></td></tr>
+
+</table>
+</div>
+
+
+<hr class='clHr'>
+
+
+<h2><b>k</b> &emsp;<span class='l'>»</span>&emsp; <b>ch</b></h2>
+<i>после гласной	</i><br>
+<div class='clOverflow'>
+<table>
+<tr>
+<td>make</td><td><span class='m'>machen</span></td></tr>
+<tr><td>break</td><td><span class='m'>brechen</span></td></tr>
+<tr><td>book</td><td><span class='m'>das Buch</span></td></tr>
+</table>
+</div>
+
+
+<hr class='clHr'>
+
+
+<h2><b>d</b> &emsp;<span class='l'>»</span>&emsp; <b>t</b></h2>
+<div class='clOverflow'>
+<table>
+<tr>
+<td>day</td><td><span class='m'>der Tag</span></td></tr>
+<tr><td>door</td><td><span class='m'>die Tür</span></td></tr>
+<tr><td>daughter</td><td><span class='m'>die Tochter</span></td></tr>
+</table>
+</div>
+
+
+<hr class='clHr'>
+
+
+<h2><b>th</b> &emsp;<span class='l'>»</span>&emsp; <b>d</b></h2>
+<div class='clOverflow'>
+<table>
+<tr>
+<td>thank</td><td><span class='m'>danken</span></td></tr>
+<tr><td>thing</td><td><span class='m'>das Ding</span></td></tr>
+<tr><td>three</td><td><span class='m'>drei</span></td></tr>
+</table>
+</div>
+
+
+<hr class='clHr'>
+
 
 
 </div>

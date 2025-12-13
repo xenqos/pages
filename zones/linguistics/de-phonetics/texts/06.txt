@@ -9,9 +9,9 @@
 ## **t** &emsp;%[l|»]&emsp; **z**
 __в начале слова__
 [|
-|%[m|two]|%[m|zwei]|
-|%[m|ten]|%[m|zehn]|
-|%[m|tongue]|%[m|Zunge]|
+|two|%[m|zwei]|
+|ten|%[m|zehn]|
+|tongue|%[m|Zunge]|
 |]
 
 ---
@@ -19,9 +19,9 @@ __в начале слова__
 ## **t**  &emsp;%[l|»]&emsp; **ss**
 __в середине слова__
 [|
-|%[m|water]|%[m|das Wasser]|
-|%[m|better]|%[m|besser]|
-|%[m|white]|%[m|weiss]|
+|water|%[m|das Wasser]|
+|better|%[m|besser]|
+|white|%[m|weiss]|
 |]
 
 ---
@@ -29,9 +29,9 @@ __в середине слова__
 ## **t** &emsp;%[l|»]&emsp; **s**
 __в концв слова__
 [|
-|%[m|that]|%[m|das]|
-|%[m|out]|%[m|aus]|
-|%[m|it]|%[m|es]|
+|that|%[m|das]|
+|out|%[m|aus]|
+|it|%[m|es]|
 |]
 
 ---
@@ -39,9 +39,9 @@ __в концв слова__
 ## **p** &emsp;%[l|»]&emsp; **pf**
 __в начале слова__
 [|
-|%[m|pound]|%[m|das Pfund]|
-|%[m|plant]|%[m|die Pflanze]|
-|%[m|pepper]|%[m|der Pfeffer]|
+|pound|%[m|das Pfund]|
+|plant|%[m|die Pflanze]|
+|pepper|%[m|der Pfeffer]|
 |]
 
 ---
@@ -49,9 +49,9 @@ __в начале слова__
 ## **p** &emsp;%[l|»]&emsp; **ff**
 __в середине слова__
 [|
-|%[m|open]|%[m|offen]|
-|%[m|sleep]|%[m|schlaffen]|
-|%[m|help]|%[m|helffen]|
+|open|%[m|offen]|
+|sleep|%[m|schlaffen]|
+|help|%[m|helffen]|
 |]
 
 ---
@@ -59,9 +59,9 @@ __в середине слова__
 ## **p** &emsp;%[l|»]&emsp; **f**
 __в концв слова__
 [|
-|%[m|sharp]|%[m|scharf]|
-|%[m|ripe]|%[m|reif]|
-|%[m|deep]|%[m|tief]|
+|sharp|%[m|scharf]|
+|ripe|%[m|reif]|
+|deep|%[m|tief]|
 
 |]
 
@@ -70,75 +70,27 @@ __в концв слова__
 ## **k** &emsp;%[l|»]&emsp; **ch**
 __после гласной	__
 [|
-|%[m|make]|%[m|machen]|
-|%[m|break]|%[m|brechen]|
-|%[m|speak]|%[m|sprechen]|
-
+|make|%[m|machen]|
+|break|%[m|brechen]|
+|book|%[m|das Buch]|
 |]
 
 ---
 
-Proto-Germanic / English / Low German	High German Result	English Example (cognate)	German Example	Shift Type
+## **d** &emsp;%[l|»]&emsp; **t**
+[|
+|day|%[m|der Tag]|
+|door|%[m|die Tür]|
+|daughter|%[m|die Tochter]|
+|]
 
-k →	kch (written ch)	key, make, break	Cheis (dial.), machen, brechen	k → kch/ch
-d →	t	day, dander, dodge	Tag, Haut, (ver)decken*	d → t
-θ (th) →	d	thank, thing, thorn	danken, Ding, Dorn	θ (th) → d
+---
 
+## **th** &emsp;%[l|»]&emsp; **d**
+[|
+|thank|%[m|danken]|
+|thing|%[m|das Ding]|
+|three|%[m|drei]|
+|]
 
-
-
-Consonant in English Cognate	Typical German Equivalent	Pattern & Example
-p	pf, ff, or f	Pipe → Pfeife, pound → Pfund, shape → schaffen
-
-k	ch (after i, e, ä, ö; else k)	make → machen, break → brechen, book → Buch
-d	t	dark → dunkel (no shift), do → tun (shifted), day → Tag
-th (voiceless /θ/)	d	thank → danken, thin → dünn
-v / f (from older p)	b or f/v (different history)	have / give → haben / geben (not a shift, but a key difference)
-s (often)	s (but pronounced /z/ in English)	sun → Sonne, grass → Gras (spelling reflects older 'ss')
-b	b (mostly unchanged)	book → Buch, bite → beißen
-
-
-
-
-
-
-
-
-
-
-
-1. Voiceless Stops Shifting to Affricates (Word-Initial, After Consonants, or Geminated)
-
-p → pf
-English retains /p/; German shifts to /pf/.
-Examples: English "pipe" → German "Pfeife"; English "pound" → German "Pfund"; English "apple" → German "Apfel" (geminated pp → pf).
-t → ts (often spelled z or tz)
-English retains /t/; German shifts to /ts/.
-Examples: English "water" → German "Wasser" (post-vocalic t → ss, but initial t → z).
-k → kx (often spelled ch, pronounced /x/ or /ç/)
-English retains /k/; German shifts to /kx/ or /x/.
-Examples: English "kin" → German "Kind" (minimal shift here, but see others); English "make" → German "machen"; English "book" → German "Buch".
-
-2. Voiceless Stops Shifting to Fricatives (Post-Vocalic Position)
-
-p → f
-English retains /p/; German shifts to /f/.
-Examples: English "ship" → German "Schiff"; English "open" → German "offen".
-t → s (often spelled s or ss)
-English retains /t/; German shifts to /s/.
-Examples: English "foot" → German "Fuß"; English "heart" → German "Herz".
-k → x (spelled ch)
-English retains /k/; German shifts to /x/.
-Examples: English "break" → German "brechen"; English "speak" → German "sprechen".
-
-3. Voiced Stops Shifting to Voiceless Stops (Devoicing, More Pronounced in Southern German)
-
-b → p
-English retains /b/; German shifts to /p/.
-Examples: English "bishop" → German "Bischof" (minimal), but see English "rib" → German "Rippe".
-d → t
-English retains /d/; German shifts to /t/.
-Examples: English "day" → German "Tag"; English "good" → German "gut".
-g → k
-English retains /g/; German shifts to /k/.
-Examples: English "goose" → German "Gans" (related); English "give" → German "geben" (minimal), but English "guest" → German "Gast" (g remains, but see shifts like English "ridge" → German "Rücken").
+---
