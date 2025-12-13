@@ -1007,7 +1007,7 @@ span[class^=clNav]
 
 .m /* maroon  */  { color:                light-dark(#aa0000, #ffff80); }
 .e /* emerald */  { color:                light-dark(#008800, #66cc66); }
-.l /* lapis   */  { color:                #0F8699; }
+.l /* lapis   */  { color:                light-dark(#0F8699, #9bf3ff); }
 
 .r /* red     */  { color:                #ff0000; }
 .g /* green   */  { color:                #00ff00; }

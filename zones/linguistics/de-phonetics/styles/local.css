@@ -1,6 +1,6 @@
 .r
 {
-  color:                      #001580;
+  color:                      light-dark(#001580, #c3d5ff);
   font-size:                  1.200rem;
   font-weight:                bold;
 }
