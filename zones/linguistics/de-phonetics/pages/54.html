@@ -17,7 +17,7 @@
   
 </head>
 <body onload='fncGetDivState(); fncGetScrollPosition();'>
-
+<audio id='idTrack' src='../sounds/54.mp3' preload='auto'></audio>
 <div id='idPanel'>
 <div id='idTopbar'>
   <div id='idTopbarNavigation'>
@@ -26,97 +26,171 @@
     <a href='53.html'><span class='clNavLeft'></span></a>
     <a href='../index.html'><span class='clNavUp'></span></a>
     <a href='01.html'><span class='clNavRight'></span></a>
-
+<span class='clNavRewind' onclick='fncRewindTrack(&quot;idTrack&quot;)'></span><span class='clNavPlay' onclick='fncPlayTrack(&quot;idTrack&quot;)'></span>
   </div>
 </div>
 <div id='idContent'>
 
-<h6>Правила</h6>
+<h6>От Буквы к Звуку</h6>
 
-<h1>Закон Гримма</h1>
+<h1>Сочетание согласных</h1>
 
-<h2>t&emsp;<span class='l'>»</span>&emsp;m</h2>
-<i>в начале</i><br>
-<div class='clOverflow'>
-<table>
-<tr>
-<td><span class='m'>two</span></td><td><span class='m'>zwei</span></td></tr>
-<tr><td><span class='m'>ten</span></td><td><span class='m'>zehn</span></td></tr>
-<tr><td><span class='m'>tongue</span></td><td><span class='m'>Zunge</span></td></tr>
+<span class='r'>ch</span>&emsp;/ <span class='l'>x</span> /
+<blockquote>
+после <span class='m'>а</span>, <span class='m'>o</span>, <span class='m'>u</span><br>
+</blockquote>
+<div class='clOverflow'><table class='clNoBorder'><tr><td><span class='m'>acht</span>    </td><td>восемь</td></tr>
+<tr><td><span class='m'>der Koch</span></td><td>пoвар </td></tr>
+<tr><td><span class='m'>das Buch</span></td><td>книга </td></tr>
 </table>
 </div>
 
-The Brothers Grimm famously analyzed the First Sound Shift (Grimm's Law), which set all Germanic languages apart from the rest of Indo-European.<br>
-<br>
-The High German Consonant Shift (Second Sound Shift) happened centuries later and is the direct reason why German consonants like pf, z, ch, and t often correspond to English p, t, k, and d/th in cognate words. This shift defines the difference between High German and its linguistic relatives like English.<br>
-<br>
-Proto-Germanic / English / Low German	High German Result	English Example (cognate)	German Example	Shift Type<br>
-p →	pf (initially) or ff (medially)	pound, apple, shop	Pfund, Apfel, Schoff	p → pf / ff<br>
-	f (finally/other)	sl eep, sharp	schlafen, scharf<br>
-t →	ts (written z) (initially) or ss (medially)	time, out, water, ten	Zeit, ausser, Wasser, zehn	t → ts/z / ss<br>
-	s (finally/other)	that, it	das, es<br>
-k →	kch (written ch)	key, make, break	Cheis (dial.), machen, brechen	k → kch/ch<br>
-d →	t	day, dander, dodge	Tag, Haut, (ver)decken*	d → t<br>
-θ (th) →	d	thank, thing, thorn	danken, Ding, Dorn	θ (th) → d<br>
-<br>
-<br>
-<br>
-<br>
-Consonant in English Cognate	Typical German Equivalent	Pattern & Example<br>
-p	pf, ff, or f	Pipe → Pfeife, pound → Pfund, shape → schaffen<br>
-t	z (ts), ss, or s	to → zu, out → ausser, two → zwei<br>
-k	ch (after i, e, ä, ö; else k)	make → machen, break → brechen, book → Buch<br>
-d	t	dark → dunkel (no shift), do → tun (shifted), day → Tag<br>
-th (voiceless /θ/)	d	thank → danken, thin → dünn<br>
-v / f (from older p)	b or f/v (different history)	have / give → haben / geben (not a shift, but a key difference)<br>
-s (often)	s (but pronounced /z/ in English)	sun → Sonne, grass → Gras (spelling reflects older 'ss')<br>
-b	b (mostly unchanged)	book → Buch, bite → beißen<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-1. Voiceless Stops Shifting to Affricates (Word-Initial, After Consonants, or Geminated)<br>
-<br>
-p → pf<br>
-English retains /p/; German shifts to /pf/.<br>
-Examples: English &quot;pipe&quot; → German &quot;Pfeife&quot;; English &quot;pound&quot; → German &quot;Pfund&quot;; English &quot;apple&quot; → German &quot;Apfel&quot; (geminated pp → pf).<br>
-t → ts (often spelled z or tz)<br>
-English retains /t/; German shifts to /ts/.<br>
-Examples: English &quot;water&quot; → German &quot;Wasser&quot; (post-vocalic t → ss, but initial t → z).<br>
-k → kx (often spelled ch, pronounced /x/ or /ç/)<br>
-English retains /k/; German shifts to /kx/ or /x/.<br>
-Examples: English &quot;kin&quot; → German &quot;Kind&quot; (minimal shift here, but see others); English &quot;make&quot; → German &quot;machen&quot;; English &quot;book&quot; → German &quot;Buch&quot;.<br>
-<br>
-2. Voiceless Stops Shifting to Fricatives (Post-Vocalic Position)<br>
-<br>
-p → f<br>
-English retains /p/; German shifts to /f/.<br>
-Examples: English &quot;ship&quot; → German &quot;Schiff&quot;; English &quot;open&quot; → German &quot;offen&quot;.<br>
-t → s (often spelled s or ss)<br>
-English retains /t/; German shifts to /s/.<br>
-Examples: English &quot;foot&quot; → German &quot;Fuß&quot;; English &quot;heart&quot; → German &quot;Herz&quot;.<br>
-k → x (spelled ch)<br>
-English retains /k/; German shifts to /x/.<br>
-Examples: English &quot;break&quot; → German &quot;brechen&quot;; English &quot;speak&quot; → German &quot;sprechen&quot;.<br>
-<br>
-3. Voiced Stops Shifting to Voiceless Stops (Devoicing, More Pronounced in Southern German)<br>
-<br>
-b → p<br>
-English retains /b/; German shifts to /p/.<br>
-Examples: English &quot;bishop&quot; → German &quot;Bischof&quot; (minimal), but see English &quot;rib&quot; → German &quot;Rippe&quot;.<br>
-d → t<br>
-English retains /d/; German shifts to /t/.<br>
-Examples: English &quot;day&quot; → German &quot;Tag&quot;; English &quot;good&quot; → German &quot;gut&quot;.<br>
-g → k<br>
-English retains /g/; German shifts to /k/.<br>
-Examples: English &quot;goose&quot; → German &quot;Gans&quot; (related); English &quot;give&quot; → German &quot;geben&quot; (minimal), but English &quot;guest&quot; → German &quot;Gast&quot; (g remains, but see shifts like English &quot;ridge&quot; → German &quot;Rücken&quot;).<br>
+<span class='r'>ch</span>&emsp;/ <span class='l'>ç</span> /
+<blockquote>
+после <span class='m'>e</span>, <span class='m'>i</span>, <span class='m'>ä</span>, <span class='m'>ö</span>, <span class='m'>ü</span><br>
+</blockquote>
+<div class='clOverflow'><table class='clNoBorder'><tr><td><span class='m'>echt</span>       </td><td>настоящий</td></tr>
+<tr><td><span class='m'>mich</span>       </td><td>меня     </td></tr>
+<tr><td><span class='m'>die Dächer </span></td><td>крыши    </td></tr>
+<tr><td><span class='m'>die Töchter</span></td><td>дочери   </td></tr>
+<tr><td><span class='m'>die Bücher</span> </td><td>книги    </td></tr>
+</table>
+</div>
+
+<span class='r'>ch</span>&emsp;/ <span class='l'>ç</span> /
+<blockquote>
+после <span class='m'>ei</span>, <span class='m'>eu</span>, <span class='m'>äu</span><br>
+</blockquote>
+<div class='clOverflow'><table class='clNoBorder'><tr><td><span class='m'>vielleicht</span></td><td>возможно</td></tr>
+<tr><td><span class='m'>euch</span>      </td><td>вас, вам</td></tr>
+<tr><td><span class='m'>der Bäuche</span></td><td>живот   </td></tr>
+</table>
+</div>
+
+<span class='r'>ch</span>&emsp;/ <span class='l'>ç</span> /
+<blockquote>
+после <span class='m'>l</span>, <span class='m'>n</span>, <span class='m'>r</span><br>
+</blockquote>
+<div class='clOverflow'><table class='clNoBorder'><tr><td><span class='m'>die Milch</span></td><td>молоко</td></tr>
+<tr><td><span class='m'>manchmal</span> </td><td>иногда</td></tr>
+<tr><td><span class='m'>durch</span>    </td><td>через </td></tr>
+</table>
+</div>
+
+<span class='r'>ch</span>&emsp;/ <span class='l'>ç</span> /
+<blockquote>
+в суффиксе -<span class='m'>chen</span><br>
+</blockquote>
+<div class='clOverflow'><table class='clNoBorder'><tr><td><span class='m'>bisschen</span>   </td><td>немного</td></tr>
+<tr><td><span class='m'>das Mädchen</span></td><td>девочка</td></tr>
+<tr><td><span class='m'>das Häschen</span></td><td>зайчик </td></tr>
+</table>
+</div>
+
+<span class='r'>chs</span>&emsp;/ <span class='l'>ks</span> /<br>
+<div class='clOverflow'><table class='clNoBorder'><tr><td><span class='m'>sechs</span>    </td><td>шесть</td></tr>
+<tr><td><span class='m'>wachsen</span>  </td><td>расти</td></tr>
+<tr><td><span class='m'>der Fuchs</span></td><td>лиса </td></tr>
+</table>
+</div>
+
+<span class='r'>ck</span>&emsp;/ <span class='l'>k</span> /<br>
+<div class='clOverflow'><table class='clNoBorder'><tr><td><span class='m'>dick</span>    </td><td>толстый </td></tr>
+<tr><td><span class='m'>packen</span>  </td><td>паковать</td></tr>
+<tr><td><span class='m'>der Sack</span></td><td>мешок </td></tr>
+</table>
+</div>
+
+<span class='r'>dt</span>&emsp;/ <span class='l'>t</span> /<br>
+<div class='clOverflow'><table class='clNoBorder'><tr><td><span class='m'>die Stadt</span>   </td><td>город    </td></tr>
+<tr><td><span class='m'>das Handtuch</span></td><td>полотенце</td></tr>
+</table>
+</div>
+
+<span class='r'>ng</span>&emsp;/ <span class='l'>ŋ</span> /<br>
+<div class='clOverflow'><table class='clNoBorder'><tr><td><span class='m'>das Ding</span></td><td>вещь     </td></tr>
+<tr><td><span class='m'>der Ring</span></td><td>кольцо   </td></tr>
+<tr><td><span class='m'>bringen</span> </td><td>приносить</td></tr>
+</table>
+</div>
+
+<span class='r'>nk</span>&emsp;/ <span class='l'>ŋk</span> /<br>
+<div class='clOverflow'><table class='clNoBorder'><tr><td><span class='m'>danke</span>   </td><td>спасибо</td></tr>
+<tr><td><span class='m'>trinken</span> </td><td>пить   </td></tr>
+<tr><td><span class='m'>der Funk</span></td><td>радио  </td></tr>
+</table>
+</div>
+
+<span class='r'>pf</span>&emsp;/ <span class='l'>pf</span> /<br>
+<div class='clOverflow'><table class='clNoBorder'><tr><td><span class='m'>das Pferd</span>  </td><td>лошадь  </td></tr>
+<tr><td><span class='m'>der Pfeffer</span></td><td>перец   </td></tr>
+<tr><td><span class='m'>die Pflanze</span></td><td>растение</td></tr>
+</table>
+</div>
+
+<span class='r'>ph</span>&emsp;/ <span class='l'>f</span> /<br>
+<div class='clOverflow'><table class='clNoBorder'><tr><td><span class='m'>die Phonetik</span>   </td><td>фонетика  </td></tr>
+<tr><td><span class='m'>die Katastrophe</span></td><td>катастрофа</td></tr>
+<tr><td><span class='m'>die Philosophie</span></td><td>философия </td></tr>
+</table>
+</div>
+
+<span class='r'>qu</span>&emsp;/ <span class='l'>kv</span> /<br>
+<div class='clOverflow'><table class='clNoBorder'><tr><td><span class='m'>die Quelle</span>  </td><td>источник</td></tr>
+<tr><td><span class='m'>das Aquarium</span></td><td>аквариум</td></tr>
+<tr><td><span class='m'>bequem</span>      </td><td>удобный </td></tr>
+</table>
+</div>
+
+<span class='r'>rh</span>&emsp;/ <span class='l'>r</span> /<br>
+<div class='clOverflow'><table class='clNoBorder'><tr><td><span class='m'>die Rhetorik</span></td><td>риторика</td></tr>
+<tr><td><span class='m'>der Rhythmus</span></td><td>ритм    </td></tr>
+<tr><td><span class='m'>der Rhein</span>   </td><td>Рейн    </td></tr>
+</table>
+</div>
+
+<span class='r'>sch</span>&emsp;/ <span class='l'>ʃ</span> /<br>
+<div class='clOverflow'><table class='clNoBorder'><tr><td><span class='m'>die Schule</span></td><td>школа</td></tr>
+<tr><td><span class='m'>der Schnee</span></td><td>снег </td></tr>
+<tr><td><span class='m'>der Tisch</span> </td><td>стол </td></tr>
+</table>
+</div>
+
+<span class='r'>sp</span>&emsp;/ <span class='l'>ʃp</span> /<br>
+<div class='clOverflow'><table class='clNoBorder'><tr><td><span class='m'>der Spiegel</span></td><td>зеркало</td></tr>
+<tr><td><span class='m'>das Spiel</span>  </td><td>игра   </td></tr>
+<tr><td><span class='m'>die Spur</span>   </td><td>след   </td></tr>
+</table>
+</div>
+
+<span class='r'>st</span>&emsp;/ <span class='l'>ʃt</span> /<br>
+<div class='clOverflow'><table class='clNoBorder'><tr><td><span class='m'>der Stern</span> </td><td>звезда</td></tr>
+<tr><td><span class='m'>die Straße</span></td><td>улица </td></tr>
+<tr><td><span class='m'>die Stadt</span> </td><td>город </td></tr>
+</table>
+</div>
+
+<span class='r'>th</span>&emsp;/ <span class='l'>t</span> /<br>
+<div class='clOverflow'><table class='clNoBorder'><tr><td><span class='m'>das Thema</span>     </td><td>тема      </td></tr>
+<tr><td><span class='m'>das Theater</span>   </td><td>театр     </td></tr>
+<tr><td><span class='m'>die Mathematik</span></td><td>математика</td></tr>
+</table>
+</div>
+
+<span class='r'>tsch</span>&emsp;/ <span class='l'>ʧ</span> /<br>
+<div class='clOverflow'><table class='clNoBorder'><tr><td><span class='m'>das Deutsch</span></td><td>немецкий язык</td></tr>
+<tr><td><span class='m'>tschüss</span>    </td><td>пока!        </td></tr>
+<tr><td><span class='m'>der Rutsche</span></td><td>горка        </td></tr>
+</table>
+</div>
+
+<span class='r'>tz</span>&emsp;/ <span class='l'>ts</span> /<br>
+<div class='clOverflow'><table class='clNoBorder'><tr><td><span class='m'>der Platz</span></td><td>площадь</td></tr>
+<tr><td><span class='m'>die Katze</span></td><td>кошка  </td></tr>
+<tr><td><span class='m'>setzen</span>   </td><td>сажать </td></tr>
+</table>
+</div>
+
 
 
 </div>
