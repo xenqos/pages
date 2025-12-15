@@ -26,13 +26,13 @@ const conArrWinRates =
 
 /*--------------------------------------------------------------------------------------------------*/
 
-const strRevealedColor           = '#cc0000';
+const strRevealedColor           = '#367b36';
 const strRevealedBackgroundColor = '#ffffff';
 
 const strHiddenColor             = '#e0e0e0';
 const strHiddenBackgroundColor   = '#e0e0e0';
 
-const strImagePrefix = '../../../images/cards/';
+const strImagePrefix = '../../../../images/cards/';
 const strImageSuffix = '.svg';
 
 /*--------------------------------------------------------------------------------------------------*/
@@ -42,26 +42,23 @@ async function fncDealCards()
   objConsoleLog = document.getElementById('idConsoleLog');
   objConsoleLog.innerHTML = '';
 
-  document.getElementById('idWinRate').style.color = strHiddenColor;
-  document.getElementById('idWinRate').style.backgroundColor = strHiddenBackgroundColor;
-
   // Get random key from conArrWinRates
   const keys = Object.keys(conArrWinRates);
   const randomIndex = Math.floor(Math.random() * keys.length);
-  strHoleKey = keys[randomIndex];
-  strHoleValue = conArrWinRates[strHoleKey];  // Save to global variable
+  strHolePair = keys[randomIndex];  // strHoleKey
+  const strHoleValue = conArrWinRates[strHolePair];  // strHoleValue
 
   // Initialize card strings
   conArrCards[0] = '';
   conArrCards[1] = '';
 
-  // Add the first character of strHoleKey to conArrCards[0]
-  conArrCards[0] += strHoleKey.charAt(0);
-  // Add the second character of strHoleKey to conArrCards[1]
-  conArrCards[1] += strHoleKey.charAt(1);
+  // Add the first character of strHolePair to conArrCards[0]
+  conArrCards[0] += strHolePair.charAt(0);
+  // Add the second character of strHolePair to conArrCards[1]
+  conArrCards[1] += strHolePair.charAt(1);
 
   // Get the third character (suit type indicator)
-  const suitType = strHoleKey.charAt(2);
+  const suitType = strHolePair.charAt(2);
 
   // Get a shuffled copy of suits for random selection
   const shuffledSuits = [...conArrSuits].sort(() => Math.random() - 0.5);
@@ -71,30 +68,22 @@ async function fncDealCards()
     const suit = shuffledSuits[0];
     conArrCards[0] += suit;
     conArrCards[1] += suit;
-    document.getElementById('idCount').textContent = '4';
   } else if (suitType === 'o') {
     // 'o' for offsuited - different suits
     conArrCards[0] += shuffledSuits[0];
     conArrCards[1] += shuffledSuits[1];
-    document.getElementById('idCount').textContent = '12';
   } else if (suitType === 'p') {
     // 'p' for pocket pair - different suits (can't have same card)
     conArrCards[0] += shuffledSuits[0];
     conArrCards[1] += shuffledSuits[1];
-    document.getElementById('idCount').textContent = '6';
   }
 
   // Display the cards
-  document.getElementById('idCard0').src = strImagePrefix + conArrCards[0] + strImageSuffix;
-  document.getElementById('idCard1').src = strImagePrefix + conArrCards[1] + strImageSuffix;
-
-  // Display the Win Rate - UPDATED LINE
-  document.getElementById('idWinRate').style.color = strHiddenColor;
-  document.getElementById('idWinRate').style.backgroundColor = strHiddenBackgroundColor;
-  document.getElementById('idWinRate').textContent = strHoleValue;
+  document.getElementById('idCard0').src = '../../../images/cards/' + conArrCards[0] + '.svg';
+  document.getElementById('idCard1').src = '../../../images/cards/' + conArrCards[1] + '.svg';
 
   // Optional: Log the hole pair and win rate for debugging
-  console.log(`Dealt: ${strHoleKey} (Win Rate: ${strHoleValue}%)`);
+  console.log(`Dealt: ${strHolePair} (Win Rate: ${strHoleValue}%)`);
   console.log(`Cards: ${conArrCards[0]}, ${conArrCards[1]}`);
 }
 

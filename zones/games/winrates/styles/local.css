@@ -1,106 +1,53 @@
 /*-----------------------------------------------------------------------------------------------*/
 
-.clIndex
+.clFloor
 {
-  display:              inline-block !important;
+  display:              flex;
+  justify-content:      center;
+}
+
+#idCard0,
+#idCard1
+{
+  margin-left:          0.100rem;
+  margin-right:         0.100rem;
+}
+
+.clWinrate
+{
+  border-radius:        0.200rem;
+  display:              flex;
+  justify-content:      center;
+
   font-family:          monospace;
-  margin:               0.000rem 0.000rem 2.000rem 0.000rem !important;
-  padding:              0.000rem 0.000rem 0.000rem 0.000rem !important;
-  text-align:           left !important;
-}
+  font-size:            2.000rem;
 
-#idContent
-{
-  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
-  padding:              3.000rem 0.000rem 0.000rem 0.000rem;
-  text-align:           center;
-}
-
-h6
-{
-  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
-  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
-}
-
-#idTable
-{
-  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
-  padding:              0.000rem 0.000rem 2.000rem 0.000rem;
-  text-align:           center;
-  display:              flex;
-  flex-direction:       row;
-  justify-content:      center;
-  flex-wrap:            wrap;
-  gap:                  0.400rem;
-}
-
-.clPanel1,
-.clPanel2
-{
-  display:              flex;
-  flex-direction:       column;
-  align-items:          center;
-  justify-content:      center;
   margin:               2.000rem 0.000rem 0.000rem 0.000rem;
   padding:              0.000rem 0.000rem 0.000rem 0.000rem;
 }
 
-.clBoard
-{
-  background-color:     #0d6f3a;
-  border-radius:        0.200rem;
-  box-sizing:           border-box;
-  display:              flex;
-  justify-content:      center;
-  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
-  padding:              0.400rem 0.200rem 0.400rem 0.200rem;
-}
-
-.clCard
-{
-  width:                4.600rem;
-}
-
-#idCard1,
-#idCard2,
-#idCard3,
-#idCard4
+#idWinrate
 {
   margin:               0.000rem 0.000rem 0.000rem 0.000rem;
-  padding:              0.000rem 0.200rem 0.000rem 0.200rem;
-}
-
-#idNameP,
-#idNameS,
-#idNameO
-{
-  color:                #995f46;
-  font-family:          monospace;
-  font-size:            1.600rem;
-  margin:               1.000rem 0.000rem 0.000rem 0.000rem;
-  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
-}
-
-#idWinRateP,
-#idWinRateS,
-#idWinRateO
-{
-  background:           #e0e0e0;
-  border:               1px solid #aaaaaa;
-  border-radius:        0.400rem !important;
-  color:                #e0e0e0;
-  display:              inline-block;
-  font-family:          monospace;
-  font-size:            2.000rem;
-  margin:               1.000rem 0.000rem 1.000rem 0.000rem;
-  padding:              1.000rem 0.000rem 1.000rem 0.000rem;
+  padding:              2.000rem 2.000rem 2.000rem 2.000rem;
   width:                4.000rem !important;
 }
 
 .clCount
 {
-  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
+  display:              flex;
+  justify-content:      center;
+  font-family:          monospace;
+  font-size:            1.000rem;
+  margin:               2.000rem 0.000rem 0.000rem 0.000rem;
   padding:              0.000rem 0.000rem 0.000rem 0.000rem;
 }
+
+.clCard
+{
+  width:                16%;
+}
+
+
 
 /*-----------------------------------------------------------------------------------------------*/
