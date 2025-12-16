@@ -13,7 +13,7 @@
   margin-right:         0.100rem;
 }
 
-.clWinrate
+.clWinRate
 {
   border-radius:        0.200rem;
   display:              flex;
@@ -29,7 +29,7 @@
 #idWinRate
 {
   background-color:     #cccccc;
-  border:               1px solid #00aa00;
+  border:               1px solid #888888;
   border-radius:        0.400rem;
   margin:               0.000rem 0.000rem 0.000rem 0.000rem;
   padding:              0.800rem 0.600rem 1.000rem 0.600rem;
@@ -42,8 +42,8 @@
   display:              flex;
   justify-content:      center;
   font-family:          monospace;
-  font-size:            1.000rem;
-  margin:               2.000rem 0.000rem 0.000rem 0.000rem;
+  font-size:            1.200rem;
+  margin:               1.600rem 0.000rem 0.000rem 0.000rem;
   padding:              0.000rem 0.000rem 0.000rem 0.000rem;
 }
 
