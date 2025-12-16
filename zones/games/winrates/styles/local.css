@@ -28,10 +28,11 @@
 
 #idWinRate
 {
-  background-color:     #cccccc;
+  color:                light-dark(#cc0000, #cc0000);
+  background-color:     light-dark(#ffffff, #e0e0e0);
   border:               1px solid #888888;
   border-radius:        0.400rem;
-  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
+  margin:               0.000rem 0.000rem 2.000rem 0.000rem;
   padding:              0.800rem 0.600rem 1.000rem 0.600rem;
   text-align:           center;
   width:                3.000rem !important;
@@ -39,11 +40,12 @@
 
 .clCount
 {
+  color:                light-dark(#aaaaaa, #555555);
   display:              flex;
   justify-content:      center;
   font-family:          monospace;
-  font-size:            1.200rem;
-  margin:               1.600rem 0.000rem 0.000rem 0.000rem;
+  font-size:            1.000rem;
+  margin:               0.000rem 0.000rem 1.600rem 0.000rem;
   padding:              0.000rem 0.000rem 0.000rem 0.000rem;
 }
 
