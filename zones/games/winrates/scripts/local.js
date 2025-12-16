@@ -42,9 +42,6 @@ async function fncDealCards()
   objConsoleLog = document.getElementById('idConsoleLog');
   objConsoleLog.innerHTML = '';
 
-  document.getElementById('idWinRate').style.color = strHiddenColor;
-  document.getElementById('idWinRate').style.backgroundColor = strHiddenBackgroundColor;
-
   // Get random key from conArrWinRates
   const keys = Object.keys(conArrWinRates);
   const randomIndex = Math.floor(Math.random() * keys.length);
@@ -89,8 +86,8 @@ async function fncDealCards()
   document.getElementById('idCard1').src = strImagePrefix + conArrCards[1] + strImageSuffix;
 
   // Display the Win Rate - UPDATED LINE
-  document.getElementById('idWinRate').style.color = strHiddenColor;
-  document.getElementById('idWinRate').style.backgroundColor = strHiddenBackgroundColor;
+//  document.getElementById('idWinRate').style.color = strHiddenColor;
+//  document.getElementById('idWinRate').style.backgroundColor = strHiddenBackgroundColor;
   document.getElementById('idWinRate').textContent = strHoleValue;
 
   // Optional: Log the hole pair and win rate for debugging

@@ -26,15 +26,11 @@
   padding:              0.000rem 0.000rem 0.000rem 0.000rem;
 }
 
-#idWinRate
+#idWinrate
 {
-  background-color:     #cccccc;
-  border:               1px solid #00aa00;
-  border-radius:        0.400rem;
   margin:               0.000rem 0.000rem 0.000rem 0.000rem;
-  padding:              0.800rem 0.600rem 1.000rem 0.600rem;
-  text-align:           center;
-  width:                3.000rem !important;
+  padding:              2.000rem 2.000rem 2.000rem 2.000rem;
+  width:                4.000rem !important;
 }
 
 .clCount
@@ -51,5 +47,7 @@
 {
   width:                16%;
 }
+
+
 
 /*-----------------------------------------------------------------------------------------------*/
