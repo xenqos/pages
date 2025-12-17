@@ -13,6 +13,25 @@
   margin-right:         0.100rem;
 }
 
+.clRange
+{
+  border-radius:        0.200rem;
+  display:              flex;
+  justify-content:      center;
+
+  margin:               0.000rem 0.000rem 2.000rem 0.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+}
+
+#idRange
+{
+  font-family:          monospace;
+  font-size:            1.000rem;
+
+  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
+  padding:              0.400rem 0.600rem 0.400rem 0.600rem;
+}
+
 .clWinRate
 {
   border-radius:        0.200rem;
@@ -48,6 +67,15 @@
   margin:               0.000rem 0.000rem 1.600rem 0.000rem;
   padding:              0.000rem 0.000rem 0.000rem 0.000rem;
 }
+
+.clChart
+{
+  display:              flex;
+  justify-content:      center;
+  margin:               0.000rem 0.000rem 1.600rem 0.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+}
+
 
 .clCard
 {
