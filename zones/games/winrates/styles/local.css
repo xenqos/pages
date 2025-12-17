@@ -29,7 +29,7 @@
 #idWinRate
 {
   color:                light-dark(#cc0000, #cc0000);
-  background-color:     light-dark(#ffffff, #e0e0e0);
+  background-color:     light-dark(#ffffff, #141414);
   border:               1px solid #888888;
   border-radius:        0.400rem;
   margin:               0.000rem 0.000rem 2.000rem 0.000rem;
@@ -40,7 +40,7 @@
 
 .clCount
 {
-  color:                light-dark(#aaaaaa, #555555);
+  color:                light-dark(#aaaaaa, #aaaaaa);
   display:              flex;
   justify-content:      center;
   font-family:          monospace;

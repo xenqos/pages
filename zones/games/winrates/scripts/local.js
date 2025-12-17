@@ -42,10 +42,33 @@ async function fncDealCards()
   objConsoleLog = document.getElementById('idConsoleLog');
   objConsoleLog.innerHTML = '';
 
-  // Get random key from conArrWinRates
+  // Define subset range (positions 0 to 12 inclusive)
+  // const SUBSET_START = 0;
+  // const SUBSET_END = 12;
+
+  const SUBSET_START = 13;
+  const SUBSET_END = 20;
+
+
+  // Get all keys from conArrWinRates
   const keys = Object.keys(conArrWinRates);
-  const randomIndex = Math.floor(Math.random() * keys.length);
-  strHoleKey = keys[randomIndex];
+
+  // Validate subset range
+  const validStart = Math.max(0, SUBSET_START);
+  const validEnd = Math.min(SUBSET_END, keys.length - 1);
+
+  // Get subset of keys based on the specified range
+  const subsetKeys = keys.slice(validStart, validEnd + 1);
+
+  // Check if subset is not empty
+  if (subsetKeys.length === 0) {
+    console.error('Subset range is empty. Check SUBSET_START and SUBSET_END values.');
+    return;
+  }
+
+  // Get random key from the subset
+  const randomIndex = Math.floor(Math.random() * subsetKeys.length);
+  strHoleKey = subsetKeys[randomIndex];
   strHoleValue = conArrWinRates[strHoleKey];  // Save to global variable
 
   // Initialize card strings
@@ -85,14 +108,13 @@ async function fncDealCards()
   document.getElementById('idCard0').src = strImagePrefix + conArrCards[0] + strImageSuffix;
   document.getElementById('idCard1').src = strImagePrefix + conArrCards[1] + strImageSuffix;
 
-  // Display the Win Rate - UPDATED LINE
-//  document.getElementById('idWinRate').style.color = strHiddenColor;
-//  document.getElementById('idWinRate').style.backgroundColor = strHiddenBackgroundColor;
+  // Display the Win Rate
   document.getElementById('idWinRate').textContent = strHoleValue;
 
   // Optional: Log the hole pair and win rate for debugging
   console.log(`Dealt: ${strHoleKey} (Win Rate: ${strHoleValue}%)`);
   console.log(`Cards: ${conArrCards[0]}, ${conArrCards[1]}`);
+  console.log(`Subset range: ${validStart} to ${validEnd} (${subsetKeys.length} hands)`);
 }
 
 /*--------------------------------------------------------------------------------------------------*/
