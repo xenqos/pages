@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Win Rates</title>
+  <link rel='icon' type='image/x-icon' href='../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='./styles/local.css'>
+  <script type='text/javascript' src='../../../scripts/global.js'></script>
+  <script type='text/javascript' src='./scripts/local.js'></script>
+</head>
+<body onload='fncDealCards();'>
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../index.html'><span class='clNavIndex'></span></a>
+    <span class='clNavQuiz' onclick='event.stopPropagation(); fncDealCards();'></span>
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>Win Rates</h1>
+
+<div class='clRange'>
+  <select id='idRange' onchange='fncSetRange();'>
+    <option value='0'>0</option>
+    <option value='1'>1</option>
+    <option value='2'>2</option>
+    <option value='3'>3</option>
+    <option value='4'>4</option>
+    <option value='5'>5</option>
+    <option value='6'>6</option>
+  </select>
+</div>
+
+<div class='clFloor'>
+  <img id='idCard0' class='clCard' onclick='event.stopPropagation(); fncDealCards();'  src='../../../images/cards/back.svg'>
+  <img id='idCard1' class='clCard' onclick='event.stopPropagation(); fncDealCards();'  src='../../../images/cards/back.svg'>
+</div>
+
+<div class='clWinRate'>
+  <div id='idWinRate' onclick='fncRevealWinRate(this);'></div>
+</div>
+
+<div class='clCount'>
+  <div id='idCount'></div>
+</div>
+
+<div class='clChart'>
+  <a target='_blank' href='./images/pocket-winrates.webp'><img class='clImageThumb' src='./images/pocket-winrates.webp'></a>
+</div>
+
+<code id='idConsoleLog'>
+</code>
+
+<br>
+
+</div>
+</div>
+</body>
+</html>
