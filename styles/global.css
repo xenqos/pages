@@ -650,7 +650,8 @@ dd
 
 p
 {
-  color:                #000000;
+  background-color:     light-dark(#dbdbdb, #111111);
+  color:                light-dark(#000000, #ffffff);
   margin:               0.000rem 0.000rem 1.000rem 0.000rem;
   padding:              0.000rem 0.000rem 0.000rem 0.000rem;
 }
