@@ -4,7 +4,8 @@
 
 /*--------------------------------------------------------------------------------------------------*/
 
-function getFullScreen(objElement) {
+function getFullScreen(objElement)
+{
   if (objElement.requestFullscreen)
   {
     objElement.requestFullscreen();
