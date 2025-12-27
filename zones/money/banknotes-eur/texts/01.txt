@@ -2,10 +2,8 @@
 
 # €5
 
-<img id='myImage' onclick='openFullscreen()' class='clImageFull clImageThumb' src='../images/005/EUR005-2002-2011-1.webp'><br>
-<img id='myImage' onclick='openFullscreen()' class='clImageThumb clImageFull' src='../images/005/Watermark-2002-2011.webp'><br>
-
-
+<img onclick='getFullScreen(this)' class='clImageLarge' src='../images/005/EUR005-2002-2011-1.webp'><br>
+<img onclick='getFullScreen(this)' class='clImageSmall' src='../images/005/Watermark-2002-2011.webp'><br>
 
 ## 2002 - 2011
 ^[005/EUR005-2002-2011-1.webp]

@@ -4,11 +4,10 @@
 
 /*--------------------------------------------------------------------------------------------------*/
 
-function openFullscreen() {
-  const elem = document.getElementById("myImage");
-
-  if (elem.requestFullscreen) {
-    elem.requestFullscreen();
+function getFullScreen(objElement) {
+  if (objElement.requestFullscreen)
+  {
+    objElement.requestFullscreen();
   }
 }
 
