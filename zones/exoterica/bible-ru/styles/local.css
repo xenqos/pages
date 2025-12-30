@@ -19,6 +19,7 @@ h3
 
 .dpb
 {
+  color:                light-dark(#555555, #aaaaaa);
   margin:               0.000rem 0.500rem  0.000rem 0.000rem;
   padding:              0.000rem 0.000rem  0.000rem 0.000rem;
 }
