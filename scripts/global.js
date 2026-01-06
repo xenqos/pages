@@ -231,26 +231,42 @@ function fncRewindTrack(strTrack)
 //   }
 // }
 
-function fncPlayTrack(strTrack) {
+function fncPlayTrack(strTrack)
+{
   var objTrack = document.getElementById(strTrack);
 
-  if (objTrack.paused) {
-    // 1. Get the time only when starting
+  if (objTrack.paused)
+  {
     var savedTime = Number(localStorage.getItem(strURL + '===CT'));
-    if (savedTime > 0) {
+
+    // Only set currentTime if there is a significant difference.
+    // Frequent micro-adjustments to currentTime can 'choke' the Android decoder.
+    if (savedTime > 0 && Math.abs(objTrack.currentTime - savedTime) > 0.5)
+    {
       objTrack.currentTime = savedTime;
     }
 
-    // 2. Play (returns a promise)
-    objTrack.play().catch(() => {});
+    // Fire play immediately to secure the User Gesture token.
+    var playPromise = objTrack.play();
+
+    if (playPromise !== undefined)
+    {
+      playPromise.catch(function(error)
+      {
+        // If Android blocks it, we log it but the app won't crash.
+        console.log("Playback prevented: " + error);
+      });
+    }
   }
-  else {
-    // 3. Save the actual time right before pausing
-    localStorage.setItem(strURL + '===CT', objTrack.currentTime);
+  else
+  {
+    // Pause first so the user hears the audio stop instantly.
     objTrack.pause();
+
+    // Then perform the "heavy" write to disk.
+    localStorage.setItem(strURL + '===CT', objTrack.currentTime);
   }
 }
-
 
 // function fncPlayTrack(strTrack)
 // {
