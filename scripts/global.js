@@ -43,6 +43,7 @@ window.onscroll = () =>
   } else {
     document.getElementById('idTopbar').style.top = '-6.000rem';
   }
+
   prevScrollPos = currentScrollPos;
 };
 
@@ -122,13 +123,24 @@ function fncGetDivState()
 }
 
 /*-----------------------------------------------------------------------------------------------*/
-/* Audio, Play, Rewind                                                                           */
+/* Audio                                                                        */
 /*-----------------------------------------------------------------------------------------------*/
 
 function fncPlayLink(strLink)
 {
   var objAudio = new Audio(strLink);
   objAudio.play();
+}
+
+function fncRewindTrack(strTrack)
+{
+  var objTrack = document.getElementById(strTrack);
+  objTrack.currentTime = 0;
+  localStorage.setItem(strURL + '===CT', objTrack.currentTime);
+  blnPlaying = false;
+  objTrack.pause();
+
+  console.log('Paused');
 }
 
 function fncPlayTrack(strTrack)
@@ -200,16 +212,6 @@ function fncFwrdTrack(strTrack)
     blnPlaying = true;
     objTrack.play();
   }
-}
-
-function fncRewindTrack(strTrack)
-{
-  var objTrack = document.getElementById(strTrack);
-
-  localStorage.setItem(strURL + '===CT', '0');
-  blnPlaying = false;
-
-  objTrack.pause();
 }
 
 /*-----------------------------------------------------------------------------------------------*/
