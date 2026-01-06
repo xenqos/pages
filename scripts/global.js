@@ -233,16 +233,21 @@ function fncRewindTrack(strTrack)
 
 function fncPlayTrack(strTrack) {
   var objTrack = document.getElementById(strTrack);
-  var numCurrentTime = Number(localStorage.getItem(strURL + '===CT'));
 
-  if (objTrack.paused)
-  {
+  if (objTrack.paused) {
+    // 1. Get the time only when starting
+    var savedTime = Number(localStorage.getItem(strURL + '===CT'));
+    if (savedTime > 0) {
+      objTrack.currentTime = savedTime;
+    }
+
+    // 2. Play (returns a promise)
     objTrack.play().catch(() => {});
   }
-  else
-  {
-    objTrack.pause();
+  else {
+    // 3. Save the actual time right before pausing
     localStorage.setItem(strURL + '===CT', objTrack.currentTime);
+    objTrack.pause();
   }
 }
 
