@@ -2,7 +2,7 @@
 
 var blnPlaying = false;
 var strURL = document.URL;
-var numSecondsSeek = 5;
+var numSecondsSeek = 2;
 
 /*-----------------------------------------------------------------------------------------------*/
 /* Reload Page                                                                                   */
@@ -132,16 +132,42 @@ function fncPlayLink(strLink)
   objAudio.play();
 }
 
+// function fncRewindTrack(strTrack)
+// {
+//   var objTrack = document.getElementById(strTrack);
+//   objTrack.currentTime = 0;
+//   localStorage.setItem(strURL + '===CT', objTrack.currentTime);
+//   blnPlaying = false;
+//   objTrack.pause();
+//
+//   console.log('Paused');
+// }
+
 function fncRewindTrack(strTrack)
 {
   var objTrack = document.getElementById(strTrack);
-  objTrack.currentTime = 0;
-  localStorage.setItem(strURL + '===CT', objTrack.currentTime);
-  blnPlaying = false;
-  objTrack.pause();
+  var numCurrentTime = Number(localStorage.getItem(strURL + '===CT'));
+  //  numCurrentTime = Number.isFinite(numCurrentTime) ? Math.max(0, numCurrentTime) : 0;
 
-  console.log('Paused');
+  objTrack.currentTime = Math.max(0, numCurrentTime - numSecondsSeek);
+  localStorage.setItem(strURL + '===CT', objTrack.currentTime);
+
+  console.log(objTrack.currentTime);
+
+  if (blnPlaying === false)
+  {
+    blnPlaying = true;
+    objTrack.play();
+  }
+  else
+  {
+    blnPlaying = false;
+    objTrack.pause();
+    blnPlaying = true;
+    objTrack.play();
+  }
 }
+
 
 function fncPlayTrack(strTrack)
 {
