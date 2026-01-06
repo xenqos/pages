@@ -1,11 +1,12 @@
 /*-----------------------------------------------------------------------------------------------*/
 
-"use strict";
+// "use strict";
 
 /*-----------------------------------------------------------------------------------------------*/
 
 var blnPlaying = false;
 var strURL = document.URL;
+var numSecondsSeek = 10;
 
 /*-----------------------------------------------------------------------------------------------*/
 /* Reload Page                                                                                   */
@@ -14,35 +15,6 @@ var strURL = document.URL;
 function fncReloadPage()
 {
   window.location.reload();
-}
-
-/*-----------------------------------------------------------------------------------------------*/
-/* Open Window No Decorations                                                                    */
-/*-----------------------------------------------------------------------------------------------*/
-
-function openWindowNoDecor(intWidth, intHeight, strUrl)
-{
-  let intLeft = (window.screen.width - intWidth)/2;
-//let intTop  = (window.screen.height - intHeight)/2;
-  let intTop  = 0;
-
-  let strParameters = '';
-  strParameters += 'scrollbars='  + '1'                   + ',';
-  strParameters += 'resizable='   + '1'                   + ',';
-  strParameters += 'status='      + '0'                   + ',';
-  strParameters += 'location='    + '0'                   + ',';
-  strParameters += 'toolbar='     + '0'                   + ',';
-  strParameters += 'titlebar='    + '0'                   + ',';
-  strParameters += 'menubar='     + '0'                   + ',';
-  strParameters += 'directories=' + '0'                   + ',';
-  strParameters += 'width='       + intWidth.toString()   + ',';
-  strParameters += 'height='      + intHeight.toString()  + ',';
-  strParameters += 'left='        + intLeft.toString()    + ',';
-  strParameters += 'top='         + intTop.toString()     + ',';
-
-  // console.log(strParameters);
-
-  window.open(strUrl, '_blank', strParameters);
 }
 
 /*-----------------------------------------------------------------------------------------------*/
@@ -96,14 +68,14 @@ window.onload = function()
 function fncShowHide(strIdDiv)
 {
   var e = document.getElementById(strIdDiv);
-  e.style.display = (e.style.display == 'block') ? 'none' : 'block';
+  e.style.display = (e.style.display === 'block') ? 'none' : 'block';
 }
 
 function fncShowHideWithMemory(strIdDiv)
 {
   var strUrl = document.URL;
   var e = document.getElementById(strIdDiv);
-  var strDisplayState = (e.style.display == 'block') ? 'none' : 'block';
+  var strDisplayState = (e.style.display === 'block') ? 'none' : 'block';
   e.style.display = strDisplayState;
   localStorage.setItem(strUrl + '===' + strIdDiv, strDisplayState);
 }
@@ -128,17 +100,22 @@ function fncGetDivState()
 {
   var strUrl = document.URL;
   var arrMatches = document.querySelectorAll('div[id^="idDiv"]');
+  var numCounter;
+  var strIdDiv;
+  var objElement;
+  var strDisplayState;
 
-  for (var intCounter = 0; intCounter < arrMatches.length; intCounter++)
+  for (numCounter = 0; numCounter < arrMatches.length; numCounter++)
   {
-    var strIdDiv = arrMatches[intCounter].getAttribute('id');
-    var e = document.getElementById(strIdDiv);
-    var strDisplayState = localStorage.getItem( strUrl + '===' + strIdDiv);
+    strIdDiv = arrMatches[numCounter].getAttribute('id');
+    objElement = document.getElementById(strIdDiv);
+    strDisplayState = localStorage.getItem( strUrl + '===' + strIdDiv);
+
     if (strDisplayState === null)
     {
       strDisplayState = 'none';
     }
-    e.style.display = strDisplayState;
+    objElement.style.display = strDisplayState;
 //    console.log(strDisplayState);
   }
 }
@@ -156,14 +133,44 @@ function fncPlayLink(strLink)
 function fncPlayTrack(strTrack)
 {
   var objTrack = document.getElementById(strTrack);
-  var intCurrentTime = localStorage.getItem(strURL + '===CT');
+  var numCurrentTime = Number(localStorage.getItem(strURL + '===CT'));
+  numCurrentTime = isNaN(numCurrentTime) ? 0 : Math.max(0, numCurrentTime);
 
-  if (intCurrentTime == null || intCurrentTime === "" || isNaN(intCurrentTime)) { intCurrentTime = 0; }
+  console.log(numCurrentTime);
 
-  if (blnPlaying == false)
+  if (blnPlaying === false)
   {
     blnPlaying = true;
-    objTrack.currentTime = intCurrentTime;
+    objTrack.currentTime = numCurrentTime;
+    objTrack.play();
+  }
+  else
+  {
+    blnPlaying = false;
+    objTrack.pause();
+    localStorage.setItem(strURL + '===CT', objTrack.currentTime);
+  }
+}
+
+function fncBwrdTrack(strTrack)
+{
+  var objTrack = document.getElementById(strTrack);
+  var numCurrentTime = localStorage.getItem(strURL + '===CT');
+
+}
+
+function fncFwrdTrack(strTrack)
+{
+  var objTrack = document.getElementById(strTrack);
+  var numCurrentTime = Number(localStorage.getItem(strURL + '===CT'));
+  numCurrentTime = isNaN(numCurrentTime) ? 0 : Math.max(0, numCurrentTime);
+
+  console.log(numCurrentTime);
+
+  if (blnPlaying === false)
+  {
+    blnPlaying = true;
+    objTrack.currentTime = numCurrentTime + numSecondsSeek;
     objTrack.play();
   }
   else
