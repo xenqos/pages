@@ -154,18 +154,18 @@ function fncRewindTrack(strTrack)
 
   console.log(objTrack.currentTime);
 
-  if (blnPlaying === false)
-  {
+//  if (blnPlaying === false)
+//  {
     blnPlaying = true;
     objTrack.play();
-  }
-  else
-  {
-    blnPlaying = false;
-    objTrack.pause();
-    blnPlaying = true;
-    objTrack.play();
-  }
+//  }
+//  else
+//  {
+//    blnPlaying = false;
+//    objTrack.pause();
+//    blnPlaying = true;
+//    objTrack.play();
+//  }
 }
 
 
