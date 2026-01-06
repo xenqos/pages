@@ -1,12 +1,8 @@
 /*-----------------------------------------------------------------------------------------------*/
 
-// "use strict";
-
-/*-----------------------------------------------------------------------------------------------*/
-
 var blnPlaying = false;
 var strURL = document.URL;
-var numSecondsSeek = 10;
+var numSecondsSeek = 5;
 
 /*-----------------------------------------------------------------------------------------------*/
 /* Reload Page                                                                                   */
@@ -23,43 +19,48 @@ function fncReloadPage()
 
 var prevScrollPos = window.pageYOffset;
 
-window.onscroll = function()
+// window.onscroll = function()
+// {
+//   var currentScrollPos = window.pageYOffset;
+//
+//   if (prevScrollPos > currentScrollPos)
+//   {
+//     document.getElementById('idTopbar').style.top = '0';
+//   }
+//   else
+//   {
+//     document.getElementById('idTopbar').style.top = '-6.000rem';
+//   }
+//   prevScrollPos = currentScrollPos;
+// }
+
+window.onscroll = () =>
 {
   var currentScrollPos = window.pageYOffset;
 
-  if (prevScrollPos > currentScrollPos)
-  {
+  if (prevScrollPos > currentScrollPos) {
     document.getElementById('idTopbar').style.top = '0';
-  }
-  else
-  {
+  } else {
     document.getElementById('idTopbar').style.top = '-6.000rem';
   }
   prevScrollPos = currentScrollPos;
-}
+};
 
 /*-----------------------------------------------------------------------------------------------*/
 /* Set & Get Scroll Position                                                                     */
 /*-----------------------------------------------------------------------------------------------*/
 
-/* onunload Deprecated */
-/* window.onunload = function() */
+// window.onbeforeunload = function()
+// {
+//   var strUrl = document.URL;
+//   localStorage.setItem(strUrl + '===SP', window.pageYOffset);
+// }
 
-window.onbeforeunload = function()
+window.onbeforeunload = () =>
 {
   var strUrl = document.URL;
   localStorage.setItem(strUrl + '===SP', window.pageYOffset);
-}
-
-/*
-window.onload = function()
-{
-  var strUrl = document.URL;
-  var strScrollPosition = localStorage.getItem( strUrl + '===SP');
-  window.scrollTo(0, strScrollPosition);
-//  console.log(strScrollPosition);
-}
-*/
+};
 
 /*-----------------------------------------------------------------------------------------------*/
 /* Collapse & Expand                                                                             */
@@ -134,9 +135,10 @@ function fncPlayTrack(strTrack)
 {
   var objTrack = document.getElementById(strTrack);
   var numCurrentTime = Number(localStorage.getItem(strURL + '===CT'));
-  numCurrentTime = isNaN(numCurrentTime) ? 0 : Math.max(0, numCurrentTime);
+//  numCurrentTime = Number.isFinite(numCurrentTime) ? Math.max(0, numCurrentTime) : 0;
+//  console.log(numCurrentTime);
 
-  console.log(numCurrentTime);
+  localStorage.setItem(strURL + '===CT', objTrack.currentTime);
 
   if (blnPlaying === false)
   {
@@ -148,36 +150,56 @@ function fncPlayTrack(strTrack)
   {
     blnPlaying = false;
     objTrack.pause();
-    localStorage.setItem(strURL + '===CT', objTrack.currentTime);
   }
 }
 
 function fncBwrdTrack(strTrack)
 {
   var objTrack = document.getElementById(strTrack);
-  var numCurrentTime = localStorage.getItem(strURL + '===CT');
-
-}
-
-function fncFwrdTrack(strTrack)
-{
-  var objTrack = document.getElementById(strTrack);
   var numCurrentTime = Number(localStorage.getItem(strURL + '===CT'));
-  numCurrentTime = isNaN(numCurrentTime) ? 0 : Math.max(0, numCurrentTime);
+//  numCurrentTime = Number.isFinite(numCurrentTime) ? Math.max(0, numCurrentTime) : 0;
 
-  console.log(numCurrentTime);
+  objTrack.currentTime = Math.max(0, numCurrentTime - numSecondsSeek);
+  localStorage.setItem(strURL + '===CT', objTrack.currentTime);
+
+//  console.log(numCurrentTime);
 
   if (blnPlaying === false)
   {
     blnPlaying = true;
-    objTrack.currentTime = numCurrentTime + numSecondsSeek;
     objTrack.play();
   }
   else
   {
     blnPlaying = false;
     objTrack.pause();
-    localStorage.setItem(strURL + '===CT', objTrack.currentTime);
+    blnPlaying = true;
+    objTrack.play();
+  }
+}
+
+function fncFwrdTrack(strTrack)
+{
+  var objTrack = document.getElementById(strTrack);
+  var numCurrentTime = Number(localStorage.getItem(strURL + '===CT'));
+//  numCurrentTime = Number.isFinite(numCurrentTime) ? Math.max(0, numCurrentTime) : 0;
+
+  objTrack.currentTime = Math.max(0, numCurrentTime + numSecondsSeek);
+  localStorage.setItem(strURL + '===CT', objTrack.currentTime);
+
+//  console.log(numCurrentTime);
+
+  if (blnPlaying === false)
+  {
+    blnPlaying = true;
+    objTrack.play();
+  }
+  else
+  {
+    blnPlaying = false;
+    objTrack.pause();
+    blnPlaying = true;
+    objTrack.play();
   }
 }
 
