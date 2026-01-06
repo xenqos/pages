@@ -233,34 +233,15 @@ function fncRewindTrack(strTrack)
 
 function fncPlayTrack(strTrack) {
   var objTrack = document.getElementById(strTrack);
+  var numCurrentTime = Number(localStorage.getItem(strURL + '===CT'));
 
-  // 1. If we are paused, we want to start playing
-  if (objTrack.paused) {
-    // Get the saved time from localStorage
-    var savedTime = Number(localStorage.getItem(strURL + '===CT'));
-
-    // Sync the track to the saved time BEFORE playing
-    if (!isNaN(savedTime) && savedTime > 0) {
-      objTrack.currentTime = savedTime;
-    }
-
-    // Call .play() immediately (no setTimeout) to satisfy Android's security
-    var playPromise = objTrack.play();
-
-    if (playPromise !== undefined) {
-      playPromise.then(() => {
-        blnPlaying = true;
-      }).catch(error => {
-        // This is where Android tells you WHY it failed (usually user gesture)
-        console.error("Playback failed:", error);
-      });
-    }
+  if (objTrack.paused)
+  {
+    objTrack.play().catch(() => {});
   }
-  // 2. If we are already playing, we want to pause
-  else {
+  else
+  {
     objTrack.pause();
-    blnPlaying = false;
-    // Save the exact current position
     localStorage.setItem(strURL + '===CT', objTrack.currentTime);
   }
 }
