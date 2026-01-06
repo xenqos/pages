@@ -136,19 +136,18 @@ function fncPlayTrack(strTrack)
   var objTrack = document.getElementById(strTrack);
   var numCurrentTime = Number(localStorage.getItem(strURL + '===CT'));
 //  numCurrentTime = Number.isFinite(numCurrentTime) ? Math.max(0, numCurrentTime) : 0;
-//  console.log(numCurrentTime);
 
-  localStorage.setItem(strURL + '===CT', objTrack.currentTime);
+  console.log(objTrack.currentTime);
 
   if (blnPlaying === false)
   {
     blnPlaying = true;
-    objTrack.currentTime = numCurrentTime;
     objTrack.play();
   }
   else
   {
     blnPlaying = false;
+    localStorage.setItem(strURL + '===CT', objTrack.currentTime);
     objTrack.pause();
   }
 }
@@ -162,7 +161,7 @@ function fncBwrdTrack(strTrack)
   objTrack.currentTime = Math.max(0, numCurrentTime - numSecondsSeek);
   localStorage.setItem(strURL + '===CT', objTrack.currentTime);
 
-//  console.log(numCurrentTime);
+  console.log(objTrack.currentTime);
 
   if (blnPlaying === false)
   {
@@ -187,7 +186,7 @@ function fncFwrdTrack(strTrack)
   objTrack.currentTime = Math.max(0, numCurrentTime + numSecondsSeek);
   localStorage.setItem(strURL + '===CT', objTrack.currentTime);
 
-//  console.log(numCurrentTime);
+  console.log(objTrack.currentTime);
 
   if (blnPlaying === false)
   {
