@@ -2,7 +2,6 @@
 
 var blnPlaying = false;
 var strURL = document.URL;
-var numSecondsSeek = 2;
 
 /*-----------------------------------------------------------------------------------------------*/
 /* Reload Page                                                                                   */
@@ -132,112 +131,158 @@ function fncPlayLink(strLink)
   objAudio.play();
 }
 
-// function fncRewindTrack(strTrack)
-// {
-//   var objTrack = document.getElementById(strTrack);
-//   objTrack.currentTime = 0;
-//   localStorage.setItem(strURL + '===CT', objTrack.currentTime);
-//   blnPlaying = false;
-//   objTrack.pause();
-//
-//   console.log('Paused');
-// }
+/*-----------------------------------------------------------------------------------------------*/
+
+// // function fncRewindTrack(strTrack)
+// // {
+// //   var objTrack = document.getElementById(strTrack);
+// //   objTrack.currentTime = 0;
+// //   localStorage.setItem(strURL + '===CT', objTrack.currentTime);
+// //   blnPlaying = false;
+// //   objTrack.pause();
+// // }
 
 function fncRewindTrack(strTrack)
 {
+  var numSecondsSeek = 2;
   var objTrack = document.getElementById(strTrack);
   var numCurrentTime = Number(localStorage.getItem(strURL + '===CT'));
-  //  numCurrentTime = Number.isFinite(numCurrentTime) ? Math.max(0, numCurrentTime) : 0;
 
   objTrack.currentTime = Math.max(0, numCurrentTime - numSecondsSeek);
+
   localStorage.setItem(strURL + '===CT', objTrack.currentTime);
 
-  console.log(objTrack.currentTime);
+  if (objTrack.paused)
+  {
+    objTrack.play().catch(() => {})
+  }
+}
 
+
+/*-----------------------------------------------------------------------------------------------*/
+
+
+// function fncRewindTrack(strTrack)
+// {
+//   var objTrack = document.getElementById(strTrack);
+//   var numCurrentTime = Number(localStorage.getItem(strURL + '===CT'));
+//   //  numCurrentTime = Number.isFinite(numCurrentTime) ? Math.max(0, numCurrentTime) : 0;
+//
+//   objTrack.currentTime = Math.max(0, numCurrentTime - numSecondsSeek);
+//   localStorage.setItem(strURL + '===CT', objTrack.currentTime);
+//
+//   console.log(objTrack.currentTime);
+//
+//   // Android-friendly approach
+//   var wasPlaying = !objTrack.paused;
+//
+//   if (wasPlaying) {
+//     objTrack.pause();
+//     // Give Android time to process
+//     setTimeout(() => {
+//       objTrack.currentTime = numCurrentTime - 4;
+//       setTimeout(() => objTrack.play(), 50);
+//     }, 50);
+//   } else {
+//     // Just set the time
+//     objTrack.currentTime = numCurrentTime - 4;
+//   }
+// }
+
+
+//function fncPlayTrack(strTrack)
+//{
+//  var objTrack = document.getElementById(strTrack);
+//  var numCurrentTime = Number(localStorage.getItem(strURL + '===CT'));
+//  //  numCurrentTime = Number.isFinite(numCurrentTime) ? Math.max(0, numCurrentTime) : 0;
+//
+//  console.log(objTrack.currentTime);
+//
 //  if (blnPlaying === false)
 //  {
-    blnPlaying = true;
-    objTrack.play();
-//  }
-//  else
-//  {
-//    blnPlaying = false;
-//    objTrack.pause();
 //    blnPlaying = true;
 //    objTrack.play();
 //  }
-}
+//  else if (blnPlaying === true)
+//  {
+//    blnPlaying = false;
+//    localStorage.setItem(strURL + '===CT', objTrack.currentTime);
+//    objTrack.pause();
+//  }
+//}
 
+// function fncPlayTrack(strTrack)
+// {
+//   var objTrack = document.getElementById(strTrack);
+//   var numCurrentTime = Number(localStorage.getItem(strURL + '===CT'));
+//
+//   console.log(objTrack.currentTime);
+//
+//   if (objTrack.paused)
+//   {
+//     blnPlaying = true;
+//     setTimeout(() => objTrack.play(), 50);
+//   }
+//   else
+//   {
+//     blnPlaying = false;
+//     localStorage.setItem(strURL + '===CT', objTrack.currentTime);
+//     objTrack.pause();
+//   }
+// }
 
-function fncPlayTrack(strTrack)
-{
+function fncPlayTrack(strTrack) {
   var objTrack = document.getElementById(strTrack);
-  var numCurrentTime = Number(localStorage.getItem(strURL + '===CT'));
-//  numCurrentTime = Number.isFinite(numCurrentTime) ? Math.max(0, numCurrentTime) : 0;
 
-  console.log(objTrack.currentTime);
+  // 1. If we are paused, we want to start playing
+  if (objTrack.paused) {
+    // Get the saved time from localStorage
+    var savedTime = Number(localStorage.getItem(strURL + '===CT'));
 
-  if (blnPlaying === false)
-  {
-    blnPlaying = true;
-    objTrack.play();
+    // Sync the track to the saved time BEFORE playing
+    if (!isNaN(savedTime) && savedTime > 0) {
+      objTrack.currentTime = savedTime;
+    }
+
+    // Call .play() immediately (no setTimeout) to satisfy Android's security
+    var playPromise = objTrack.play();
+
+    if (playPromise !== undefined) {
+      playPromise.then(() => {
+        blnPlaying = true;
+      }).catch(error => {
+        // This is where Android tells you WHY it failed (usually user gesture)
+        console.error("Playback failed:", error);
+      });
+    }
   }
-  else
-  {
+  // 2. If we are already playing, we want to pause
+  else {
+    objTrack.pause();
     blnPlaying = false;
+    // Save the exact current position
     localStorage.setItem(strURL + '===CT', objTrack.currentTime);
-    objTrack.pause();
   }
 }
 
-function fncBwrdTrack(strTrack)
-{
-  var objTrack = document.getElementById(strTrack);
-  var numCurrentTime = Number(localStorage.getItem(strURL + '===CT'));
-//  numCurrentTime = Number.isFinite(numCurrentTime) ? Math.max(0, numCurrentTime) : 0;
 
-  objTrack.currentTime = Math.max(0, numCurrentTime - numSecondsSeek);
-  localStorage.setItem(strURL + '===CT', objTrack.currentTime);
-
-  console.log(objTrack.currentTime);
-
-  if (blnPlaying === false)
-  {
-    blnPlaying = true;
-    objTrack.play();
-  }
-  else
-  {
-    blnPlaying = false;
-    objTrack.pause();
-    blnPlaying = true;
-    objTrack.play();
-  }
-}
-
-function fncFwrdTrack(strTrack)
-{
-  var objTrack = document.getElementById(strTrack);
-  var numCurrentTime = Number(localStorage.getItem(strURL + '===CT'));
-//  numCurrentTime = Number.isFinite(numCurrentTime) ? Math.max(0, numCurrentTime) : 0;
-
-  objTrack.currentTime = Math.max(0, numCurrentTime + numSecondsSeek);
-  localStorage.setItem(strURL + '===CT', objTrack.currentTime);
-
-  console.log(objTrack.currentTime);
-
-  if (blnPlaying === false)
-  {
-    blnPlaying = true;
-    objTrack.play();
-  }
-  else
-  {
-    blnPlaying = false;
-    objTrack.pause();
-    blnPlaying = true;
-    objTrack.play();
-  }
-}
+// function fncPlayTrack(strTrack)
+// {
+//   var objTrack = document.getElementById(strTrack);
+//   var numCurrentTime = Number(localStorage.getItem(strURL + '===CT'));
+//   objTrack.currentTime = numCurrentTime;
+//
+//   console.log(objTrack.currentTime);
+//
+//   if (objTrack.paused)
+//   {
+//     setTimeout(() => objTrack.play(), 50);
+//   }
+//   else
+//   {
+//     localStorage.setItem(strURL + '===CT', objTrack.currentTime);
+//     objTrack.pause();
+//   }
+// }
 
 /*-----------------------------------------------------------------------------------------------*/
