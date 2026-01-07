@@ -302,6 +302,13 @@ body
   text-decoration:      none;
 }
 
+/*
+#idTopbar a:active
+{
+  color:                navy;
+}
+*/
+
 #idTopbarInfo
 {
   color:                #000000 !important;
