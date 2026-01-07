@@ -133,16 +133,14 @@ function fncPlayLink(strLink)
 
 /*-----------------------------------------------------------------------------------------------*/
 
-// // function fncRewindTrack(strTrack)
-// // {
-// //   var objTrack = document.getElementById(strTrack);
-// //   objTrack.currentTime = 0;
-// //   localStorage.setItem(strURL + '===CT', objTrack.currentTime);
-// //   blnPlaying = false;
-// //   objTrack.pause();
-// // }
-
 function fncRewindTrack(strTrack)
+{
+  var objTrack = document.getElementById(strTrack);
+  objTrack.currentTime = 0;
+  objTrack.play();
+}
+
+function XfncRewindTrack(strTrack)
 {
   var numSecondsSeek = 2;
   var objTrack = document.getElementById(strTrack);
@@ -271,60 +269,20 @@ function fncRewindTrack(strTrack)
 function fncPlayTrack(strTrack)
 {
   var objTrack = document.getElementById(strTrack);
+//  var numCurrentTime = Number(localStorage.getItem(strURL + '===CT'));
+//  objTrack.currentTime = numCurrentTime;
+
+  console.log(objTrack.currentTime);
 
   if (objTrack.paused)
   {
-    // 1. Capture the play promise immediately.
-    // This 'locks' the user intent across all browser engines.
-    var playPromise = objTrack.play();
-
-    if (playPromise !== undefined)
-    {
-      playPromise.then(function()
-      {
-        // 2. The audio is now physically playing.
-        // Now it is safe to sync the time from storage.
-        var savedTime = Number(localStorage.getItem(strURL + '===CT'));
-
-        if (savedTime > 0 && Math.abs(objTrack.currentTime - savedTime) > 1)
-        {
-          objTrack.currentTime = savedTime;
-        }
-      })
-      .catch(function(error)
-      {
-        // If Firefox blocks it, we know exactly why.
-        console.log("Playback failed: ", error);
-      });
-    }
+    objTrack.play();
   }
   else
   {
-    // 3. Pause is standard across all browsers.
+//    localStorage.setItem(strURL + '===CT', objTrack.currentTime);
     objTrack.pause();
-    localStorage.setItem(strURL + '===CT', objTrack.currentTime);
   }
 }
-
-
-
-// function fncPlayTrack(strTrack)
-// {
-//   var objTrack = document.getElementById(strTrack);
-//   var numCurrentTime = Number(localStorage.getItem(strURL + '===CT'));
-//   objTrack.currentTime = numCurrentTime;
-//
-//   console.log(objTrack.currentTime);
-//
-//   if (objTrack.paused)
-//   {
-//     setTimeout(() => objTrack.play(), 50);
-//   }
-//   else
-//   {
-//     localStorage.setItem(strURL + '===CT', objTrack.currentTime);
-//     objTrack.pause();
-//   }
-// }
 
 /*-----------------------------------------------------------------------------------------------*/
