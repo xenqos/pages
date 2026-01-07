@@ -937,13 +937,13 @@ span[class^=clNav]
   display:              inline-block;
   margin:               0.000rem 0.000rem 0.000rem 0.000rem;
   padding:              0.000rem 0.750rem 0.000rem 0.750rem;
-  height:               1.100rem;
-  width:                1.100rem;
-  min-width:            1.100rem;
-  max-width:            1.100rem;
+  height:               1.200rem;
+  width:                1.200rem;
+  min-width:            1.200rem;
+  max-width:            1.200rem;
   background-position:  center center;
   background-repeat:    no-repeat;
-  background-size:      1.100rem 1.100rem;
+  background-size:      1.200rem 1.200rem;
   position:             relative;
   top:                  0.150rem;
   touch-action:         none;
