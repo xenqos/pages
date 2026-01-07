@@ -1,7 +1,11 @@
 /*-----------------------------------------------------------------------------------------------*/
+/* Global Variables                                                                              */
+/*-----------------------------------------------------------------------------------------------*/
 
-var blnPlaying = false;
-var strURL = document.URL;
+var strUrl = document.URL;
+var numTimeLastTap = 0;
+var numTimeRewind = 10;
+var prevScrollPos = window.pageYOffset;
 
 /*-----------------------------------------------------------------------------------------------*/
 /* Reload Page                                                                                   */
@@ -16,30 +20,16 @@ function fncReloadPage()
 /* Hide Topbar                                                                                   */
 /*-----------------------------------------------------------------------------------------------*/
 
-var prevScrollPos = window.pageYOffset;
-
-// window.onscroll = function()
-// {
-//   var currentScrollPos = window.pageYOffset;
-//
-//   if (prevScrollPos > currentScrollPos)
-//   {
-//     document.getElementById('idTopbar').style.top = '0';
-//   }
-//   else
-//   {
-//     document.getElementById('idTopbar').style.top = '-6.000rem';
-//   }
-//   prevScrollPos = currentScrollPos;
-// }
-
 window.onscroll = () =>
 {
   var currentScrollPos = window.pageYOffset;
 
-  if (prevScrollPos > currentScrollPos) {
+  if (prevScrollPos > currentScrollPos)
+  {
     document.getElementById('idTopbar').style.top = '0';
-  } else {
+  }
+  else
+  {
     document.getElementById('idTopbar').style.top = '-6.000rem';
   }
 
@@ -50,15 +40,8 @@ window.onscroll = () =>
 /* Set & Get Scroll Position                                                                     */
 /*-----------------------------------------------------------------------------------------------*/
 
-// window.onbeforeunload = function()
-// {
-//   var strUrl = document.URL;
-//   localStorage.setItem(strUrl + '===SP', window.pageYOffset);
-// }
-
 window.onbeforeunload = () =>
 {
-  var strUrl = document.URL;
   localStorage.setItem(strUrl + '===SP', window.pageYOffset);
 };
 
@@ -68,16 +51,16 @@ window.onbeforeunload = () =>
 
 function fncShowHide(strIdDiv)
 {
-  var e = document.getElementById(strIdDiv);
-  e.style.display = (e.style.display === 'block') ? 'none' : 'block';
+  var objElement = document.getElementById(strIdDiv);
+  objElement.style.display = (objElement.style.display === 'block') ? 'none' : 'block';
 }
 
 function fncShowHideWithMemory(strIdDiv)
 {
-  var strUrl = document.URL;
-  var e = document.getElementById(strIdDiv);
-  var strDisplayState = (e.style.display === 'block') ? 'none' : 'block';
-  e.style.display = strDisplayState;
+  var objElement = document.getElementById(strIdDiv);
+  var strDisplayState = (objElement.style.display === 'block') ? 'none' : 'block';
+
+  objElement.style.display = strDisplayState;
   localStorage.setItem(strUrl + '===' + strIdDiv, strDisplayState);
 }
 
@@ -87,10 +70,11 @@ function fncShowHideWithMemory(strIdDiv)
 
 function fncGetScrollPosition()
 {
-  var strUrl = document.URL;
-  var strScrollPosition = localStorage.getItem( strUrl + '===SP');
-  window.scrollTo(0, strScrollPosition);
-//  console.log(strScrollPosition);
+  var strScrollPosition = localStorage.getItem(strUrl + '===SP');
+  if (strScrollPosition)
+  {
+    window.scrollTo(0, strScrollPosition);
+  }
 }
 
 /*-----------------------------------------------------------------------------------------------*/
@@ -99,7 +83,6 @@ function fncGetScrollPosition()
 
 function fncGetDivState()
 {
-  var strUrl = document.URL;
   var arrMatches = document.querySelectorAll('div[id^="idDiv"]');
   var numCounter;
   var strIdDiv;
@@ -110,46 +93,52 @@ function fncGetDivState()
   {
     strIdDiv = arrMatches[numCounter].getAttribute('id');
     objElement = document.getElementById(strIdDiv);
-    strDisplayState = localStorage.getItem( strUrl + '===' + strIdDiv);
+    strDisplayState = localStorage.getItem(strUrl + '===' + strIdDiv);
 
     if (strDisplayState === null)
     {
       strDisplayState = 'none';
     }
     objElement.style.display = strDisplayState;
-//    console.log(strDisplayState);
   }
 }
 
 /*-----------------------------------------------------------------------------------------------*/
-/* Audio                                                                        */
+/* Audio                                                                                         */
 /*-----------------------------------------------------------------------------------------------*/
 
 function fncPlayLink(strLink)
 {
   var objAudio = new Audio(strLink);
-  objAudio.play();
+  objAudio.play().catch(function(objError) { });
 }
 
 /*-----------------------------------------------------------------------------------------------*/
 
-function fncRewindTrack(strTrack)
+function fncRewindTrack(strTrack, event)
 {
-  var objTrack = document.getElementById(strTrack);
-  objTrack.currentTime = 0;
-  objTrack.play();
-}
+  if (event)
+  {
+    event.preventDefault();
+  }
 
-function fncBackTrack(strTrack)
-{
+  var numTimeNow = new Date().getTime();
+
+  if (numTimeNow - numTimeLastTap < 250)
+  {
+    return;
+  }
+
+  numTimeLastTap = numTimeNow;
+
   var objTrack = document.getElementById(strTrack);
-//  objTrack.currentTime = 0;
-//  objTrack.play();
+  var numTimeTarget = Math.max(0, objTrack.currentTime - numTimeRewind);
+
+  objTrack.currentTime = numTimeTarget;
+  objTrack.play().catch(function(objError) { });
 }
 
 /*-----------------------------------------------------------------------------------------------*/
-
-var lastTapTime = 0;
 
 function fncPlayTrack(strTrack, event)
 {
@@ -158,22 +147,33 @@ function fncPlayTrack(strTrack, event)
     event.preventDefault();
   }
 
-  // Cooldown logic: prevents 'sporadic' double-firing on sensitive screens
-  var currentTime = new Date().getTime();
-  var tapDelay = currentTime - lastTapTime;
+  var numTimeNow = new Date().getTime();
 
-  if (tapDelay < 200 && tapDelay > 0)
+  if (numTimeNow - numTimeLastTap < 250)
   {
     return;
   }
 
-  lastTapTime = currentTime;
+  numTimeLastTap = numTimeNow;
 
   var objTrack = document.getElementById(strTrack);
 
   if (objTrack.paused)
   {
-    objTrack.play().catch(function() {});
+    if (objTrack.currentTime < 1)
+    {
+      objTrack.currentTime = 0;
+
+      objTrack.onseeked = function()
+      {
+        objTrack.play().catch(function(objError) { });
+        objTrack.onseeked = null;
+      };
+    }
+    else
+    {
+      objTrack.play().catch(function(objError) { });
+    }
   }
   else
   {
