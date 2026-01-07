@@ -307,13 +307,24 @@ function fncPlayTrackXXX(strTrack)
 }
 
 
+var lastTapTime = 0;
+
 function fncPlayTrack(strTrack, event)
 {
-  // Prevent the 'ghost click' from firing later
   if (event)
   {
     event.preventDefault();
   }
+
+  // Cooldown logic: prevents 'sporadic' double-firing on sensitive screens
+  var currentTime = new Date().getTime();
+  var tapDelay = currentTime - lastTapTime;
+
+  if (tapDelay < 200 && tapDelay > 0)
+  {
+    return;
+  }
+  lastTapTime = currentTime;
 
   var objTrack = document.getElementById(strTrack);
 
