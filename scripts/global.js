@@ -140,6 +140,49 @@ function fncRewindTrack(strTrack, event)
 
 /*-----------------------------------------------------------------------------------------------*/
 
+// function fncPlayTrack(strTrack, event)
+// {
+//   if (event)
+//   {
+//     event.preventDefault();
+//   }
+//
+//   var numTimeNow = new Date().getTime();
+//
+//   if (numTimeNow - numTimeLastTap < 250)
+//   {
+//     return;
+//   }
+//
+//   numTimeLastTap = numTimeNow;
+//
+//   var objTrack = document.getElementById(strTrack);
+//
+//   if (objTrack.paused)
+//   {
+//     if (objTrack.currentTime < 1)
+//     {
+//       objTrack.currentTime = 0;
+//
+//       objTrack.onseeked = function()
+//       {
+//         objTrack.play().catch(function(objError) { });
+//         objTrack.onseeked = null;
+//       };
+//     }
+//     else
+//     {
+//       objTrack.play().catch(function(objError) { });
+//     }
+//   }
+//   else
+//   {
+//     objTrack.pause();
+//   }
+// }
+
+/*-----------------------------------------------------------------------------------------------*/
+
 function fncPlayTrack(strTrack, event)
 {
   if (event)
@@ -160,15 +203,21 @@ function fncPlayTrack(strTrack, event)
 
   if (objTrack.paused)
   {
-    if (objTrack.currentTime < 1)
+    if (objTrack.currentTime < 0.1)
     {
-      objTrack.currentTime = 0;
-
-      objTrack.onseeked = function()
+      if (objTrack.currentTime === 0)
       {
         objTrack.play().catch(function(objError) { });
-        objTrack.onseeked = null;
-      };
+      }
+      else
+      {
+        objTrack.currentTime = 0;
+        objTrack.onseeked = function()
+        {
+          objTrack.play().catch(function(objError) { });
+          objTrack.onseeked = null;
+        };
+      }
     }
     else
     {
@@ -180,5 +229,7 @@ function fncPlayTrack(strTrack, event)
     objTrack.pause();
   }
 }
+
+/*-----------------------------------------------------------------------------------------------*/
 
 /*-----------------------------------------------------------------------------------------------*/
