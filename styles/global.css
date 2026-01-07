@@ -242,9 +242,6 @@ body
 
 #idTopbarNavigation
 {
-/*
-  border:               1px solid #eeeeee;
-*/
   background-color:     light-dark(#eeeeee, #222222);
   color:                #000000;
   display:              inline-block;
@@ -299,12 +296,6 @@ body
 #idTopbar a:hover
 {
   color:                #777777;
-  text-decoration:      none;
-}
-
-#idTopbar a:active
-{
-  color:                #ff0000;
   text-decoration:      none;
 }
 
@@ -475,22 +466,12 @@ a:visited.clLinkBlue
 {
   color:                light-dark(#000077, #000077);
   text-decoration:      none;
-/*
-  color:                light-dark(#000000, #000000);
-  text-decoration-line: underline;
-  text-decoration-style: dotted;
-*/
 }
 
 a:hover.clLinkBlue
 {
   color:                light-dark(#dd0000, #dd0000);
   text-decoration:      none;
-/*
-  color:                light-dark(#dd0000, #dd0000);
-  text-decoration-line: underline;
-  text-decoration-style: dotted;
-*/
 }
 
 /*-----------------------------------------------------------------------------------------------*/
@@ -791,23 +772,6 @@ code
     width:              88%;
 }
 
-#idSubmitButton,
-#idSubmitButtonTA
-{
-    background-color:   #cccccc;
-    border:             1px solid #cccccc;
-    color:              #000000;
-    margin:             0.000rem 0.000rem 0.000rem 0.000rem;
-    padding:            0.250rem 0.750rem 0.250rem 0.750rem;
-    text-align:         left;
-    width:              auto;
-}
-
-#idSubmitButtonTA
-{
-    margin-left:        -0.500rem;
-}
-
 #idTextarea
 {
     background-color:   #ffffff;
@@ -856,7 +820,7 @@ h4 + .clOverflow,
 h5 + .clOverflow,
 h6 + .clOverflow
 {
-  margin-top:        -1.000rem;
+  margin-top:          -1.000rem;
 }
 
 .clOverflow + h1,
@@ -866,24 +830,24 @@ h6 + .clOverflow
 .clOverflow + h5,
 .clOverflow + h6
 {
-  margin-top:        -0.250rem;
+  margin-top:          -0.250rem;
 }
 
 .clOverflow + blockquote
 {
-  margin-top:        -0.250rem;
+  margin-top:          -0.250rem;
 }
 
 blockquote + .clOverflow,
 ol + .clOverflow,
 ul + .clOverflow
 {
-  margin-top:        -1.000rem;
+  margin-top:          -1.000rem;
 }
 
 .clOverflow + .clOverflow
 {
-  margin-top:        -1.500rem;
+  margin-top:          -1.500rem;
 }
 
 h1 + pre,
@@ -893,7 +857,7 @@ h4 + pre,
 h5 + pre,
 h6 + pre
 {
-  margin-top:         0.000rem;
+  margin-top:           0.000rem;
 }
 
 pre + h1,
@@ -903,16 +867,16 @@ pre + h4,
 pre + h5,
 pre + h6
 {
-  margin-top:        -0.600rem;
+  margin-top:          -0.600rem;
 }
 
 /*-----------------------------------------------------------------------------------------------*/
 
 :focus
 {
-  outline-color:      transparent;
-  outline-style:      none;
-  outline:            none;
+  outline-color:        transparent;
+  outline-style:        none;
+  outline:              none;
 }
 
 /*-----------------------------------------------------------------------------------------------*/
@@ -936,15 +900,15 @@ pre + h6
 
 span[class^=clIcon]
 {
-  display:            inline-block;
-  margin:             0.000rem 0.750rem 0.000rem 0.000rem;
-  padding:            0.000rem 0.000rem 0.000rem 0.000rem;
-  height:             1.000rem;
-  width:              1.000rem;
-  background-repeat:  no-repeat;
-  background-size:    1.000rem 1.000rem;
-  position:           relative;
-  top:                0.150rem;
+  display:              inline-block;
+  margin:               0.000rem 0.750rem 0.000rem 0.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+  height:               1.000rem;
+  width:                1.000rem;
+  background-repeat:    no-repeat;
+  background-size:      1.000rem 1.000rem;
+  position:             relative;
+  top:                  0.150rem;
 }
 
 .clNavHome    { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath style='fill:%23777777' d='m 23.967461,13.762865 0,14.128817 H 7.9598658 l 0,-14.128817 -3.9695016,0 0,18.237135 H 27.987915 l 0,-18.237135 z' /%3E%3Cpath style='fill:%23777777' d='M 15.995886,0.154062 0.0301947,16.119754 2.8038642,18.893423 15.995882,5.814062 l 13.200254,13.087584 2.773669,-2.77367 z' /%3E%3C/svg%3E%0A"); }
@@ -952,18 +916,15 @@ span[class^=clIcon]
 .clNavLeft    { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23777777' d='M32 14H7.66L18.83 2.83 16 0 0 16l16 16 2.83-2.83L7.66 18H32v-4z' /%3E%3C/svg%3E%0A"); }
 .clNavUp      { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23777777' d='M0 16l2.83 2.83L14 7.66V32h4V7.66l11.17 11.17L32 16 16 0 0 16z' /%3E%3C/svg%3E%0A"); }
 .clNavRight   { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23777777' d='M16 0l-2.83 2.83L24.34 14H0v4h24.34L13.17 29.17 16 32l16-16z' /%3E%3C/svg%3E%0A"); }
-
-
 .clNavPlay    { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23777777' d='M 0.0200155,31.95024 31.979984,16 0.0200155,0.04975994 Z M 4.0150116,25.968901 V 6.0311001 L 23.989992,16 Z' /%3E%3C/svg%3E%0A"); }
+.clNavRewind  { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23777777' d='M 27.350232,4.6825294 C 24.453851,1.7806735 20.455042,-0.02047837 16.025283,-0.02047837 7.1657646,-0.02047837 0.01,7.1441037 0.01,15.989761 0.01,24.835418 7.1657646,32 16.025283,32 23.491732,32 29.745509,26.896736 31.519417,19.992321 h -4.169185 c -1.653643,4.662982 -6.083402,8.005119 -11.324949,8.005119 -6.6446389,0 -12.0264955,-5.373436 -12.0264955,-12.007679 0,-6.6342431 5.3818566,-12.0076796 12.0264955,-12.0076796 3.317308,0 6.293865,1.3808832 8.468657,3.5522718 L 18.029698,13.988481 H 32.060609 V -0.02047837 Z' /%3E%3C/svg%3E%0A"); }
 
 /*
-.clNavPlay    { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath fill='%23777777' d='M 2.5e-7,48 48,24 2.5e-7,-3e-8 Z M 6.0000003,39.000001 V 9.0000001 L 36.000001,24 Z' /%3E%3C/svg%3E%0A"); }
+.clNavBack    { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cg transform='matrix(1.2307692,0,0,1.2307692,-4.9230764,-3.6923072)'%3E%3Cpath fill='%23777777' d='M 18.83,6.83 16,4 4,16 16,28 18.83,25.17 9.66,16 Z' /%3E%3Cpath fill='%23777777' d='M 30,6.83 27.17,4 l -12,12 12,12 L 30,25.17 20.83,16 Z' /%3E%3C/g%3E%3C/svg%3E"); }
 */
 
+.clNavBack    { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cg transform='matrix(1.1384615,0,0,1.1384615,-3.3538455,-2.215384)'%3E%3Cpath fill='%23777777' d='M 18.83,6.83 16,4 4,16 16,28 18.83,25.17 9.66,16 Z' /%3E%3Cpath fill='%23777777' d='M 30,6.83 27.17,4 l -12,12 12,12 L 30,25.17 20.83,16 Z' /%3E%3C/g%3E%3C/svg%3E"); }
 
-.clNavBwrd    { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23777777' d='M 32,26.666547 28.44444,30.222107 14.222293,15.999936 28.44439,1.7778932 31.999924,5.3334032 21.333343,15.999936 Z' /%3E%3Cpath fill='%23777777' d='M 14.222293,30.222107 17.777807,26.666547 7.1112732,15.999936 17.777807,5.3334032 14.222293,1.7778932 2e-7,15.999936 Z' /%3E%3C/svg%3E%0A"); }
-.clNavFwrd    { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23777777' d='M 0,5.3334534 3.55556,1.7778934 17.777707,16.000064 3.55561,30.222107 7.6666667e-5,26.666597 10.666657,16.000064 Z' /%3E%3Cpath fill='%23777777' d='m 17.777707,1.7778934 -3.555514,3.55556 10.666534,10.6666106 -10.666534,10.666533 3.555514,3.55551 L 32,16.000064 Z' /%3E%3C/svg%3E%0A"); }
-.clNavRewind  { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23777777' d='M 27.350232,4.6825294 C 24.453851,1.7806735 20.455042,-0.02047837 16.025283,-0.02047837 7.1657646,-0.02047837 0.01,7.1441037 0.01,15.989761 0.01,24.835418 7.1657646,32 16.025283,32 23.491732,32 29.745509,26.896736 31.519417,19.992321 h -4.169185 c -1.653643,4.662982 -6.083402,8.005119 -11.324949,8.005119 -6.6446389,0 -12.0264955,-5.373436 -12.0264955,-12.007679 0,-6.6342431 5.3818566,-12.0076796 12.0264955,-12.0076796 3.317308,0 6.293865,1.3808832 8.468657,3.5522718 L 18.029698,13.988481 H 32.060609 V -0.02047837 Z' /%3E%3C/svg%3E%0A"); }
 .clNavTop     { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23aaaaaa' d='M8 256C8 119 119 8 256 8s248 111 248 248-111 248-248 248S8 393 8 256zm143.6 28.9l72.4-75.5V392c0 13.3 10.7 24 24 24h16c13.3 0 24-10.7 24-24V209.4l72.4 75.5c9.3 9.7 24.8 9.9 34.3.4l10.9-11c9.4-9.4 9.4-24.6 0-33.9L273 107.7c-9.4-9.4-24.6-9.4-33.9 0L106.3 240.4c-9.4 9.4-9.4 24.6 0 33.9l10.9 11c9.6 9.5 25.1 9.3 34.4-.4z' /%3E%3C/svg%3E%0A"); }
 .clNavContent { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23777777' d='m 32,29.25052 q 0,0.43064 -0.32064,0.7619 l -1.60321,1.65632 Q 29.75551,32 29.33868,32 28.92184,32 28.6012,31.66874 L 16,18.6501 3.3987998,31.66874 Q 3.0781598,32 2.6613198,32 q -0.41683,0 -0.73747,-0.33126 l -1.60321,-1.65632 Q -2e-7,29.68116 -2e-7,29.25052 q 0,-0.43064 0.32064,-0.76191 L 15.26253,13.05176 Q 15.58317,12.7205 16,12.7205 q 0.41683,0 0.73747,0.33126 L 31.67936,28.48861 Q 32,28.81988 32,29.25052 Z m 0,-12.7205 q 0,0.43064 -0.32064,0.76191 l -1.60321,1.65631 q -0.32064,0.33126 -0.73747,0.33126 -0.41684,0 -0.73748,-0.33126 L 16,5.9296103 3.3987998,18.94824 q -0.32064,0.33126 -0.73748,0.33126 -0.41683,0 -0.73747,-0.33126 l -1.60321,-1.65631 Q -2e-7,16.96066 -2e-7,16.53002 q 0,-0.43064 0.32064,-0.7619 L 15.26253,0.33125975 Q 15.58317,-2.5e-7 16,-2.5e-7 q 0.41683,0 0.73747,0.33126 L 31.67936,15.76812 Q 32,16.09938 32,16.53002 Z' /%3E%3C/svg%3E%0A"); }
 .clNavAdd     { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 38 38'%3E%3Cpath fill='%23777777' d='M16 0h6v16h16v6H22v16h-6V22H0v-6h16V0z' /%3E%3C/svg%3E%0A"); }
@@ -981,67 +942,37 @@ span[class^=clNav]
   background-size:      cover;
   cursor:               pointer;
   display:              inline-block;
-  margin:               0.000rem 0.750rem 0.000rem 0.750rem;
-  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
-  height:               1.200rem;
-  width:                1.200rem;
-  min-width:            1.200rem;
-  max-width:            1.200rem;
+  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
+  padding:              0.000rem 0.750rem 0.000rem 0.750rem;
+  height:               1.100rem;
+  width:                1.100rem;
+  min-width:            1.100rem;
+  max-width:            1.100rem;
   background-position:  center center;
   background-repeat:    no-repeat;
-  background-size:      1.200rem 1.200rem;
+  background-size:      1.100rem 1.100rem;
   position:             relative;
   top:                  0.150rem;
   touch-action:         none;
 }
 
-
-/*
-span[class^=clNav]
-{
-  display:             inline-block;
-  cursor:              pointer;
-  position:            relative;
-  top:                 0.150rem;
-
-  height:              1.500rem;
-  width:               1.500rem;
-
-  padding:             0.500rem;
-  margin:              0.000rem 0.250rem;
-
-  background-position: center center;
-  background-repeat:   no-repeat;
-  background-size:     1.000rem 1.000rem;
-
-  touch-action:        none;
-}
-*/
-
 span[class^=clNav]:active
 {
-  transform:           scale(0.85);
-  opacity:             0.7;
+  transform:            scale(0.85);
+  opacity:              0.7;
 }
 
 .clNavTop
 {
-  margin:             0.000rem 0.000rem  0.000rem 0.000rem !important;
-  padding:            0.000rem 0.000rem  0.000rem 0.000rem !important;
-  position:           static !important;
+  margin:               0.000rem 0.000rem  0.000rem 0.000rem !important;
+  padding:              0.000rem 0.000rem  0.000rem 0.000rem !important;
+  position:             static !important;
 }
 
 .clNavTopPtag
 {
-  margin:            -0.250rem 0.000rem -1.500rem 0.000rem;
-  padding:            0.000rem 0.000rem  0.000rem 0.000rem;
-}
-
-.clImageRadio
-{
-  border:             1px solid #555555;
-  margin:             0.250em 0.250em 0.250em 0.250em;
-  padding:            0.000em 0.000em 0.000em 0.000em;
+  margin:              -0.250rem 0.000rem -1.500rem 0.000rem;
+  padding:              0.000rem 0.000rem  0.000rem 0.000rem;
 }
 
 .clNavRightDict
@@ -1054,13 +985,13 @@ span[class^=clNav]:active
 /* Colors                                                                                        */
 /*-----------------------------------------------------------------------------------------------*/
 
-.m /* maroon  */  { color:                light-dark(#aa0000, #ffff80); }
-.e /* emerald */  { color:                light-dark(#008800, #66cc66); }
-.l /* lapis   */  { color:                light-dark(#0F8699, #9bf3ff); }
+.m /* maroon  */  { color:  light-dark(#aa0000, #ffff80); }
+.e /* emerald */  { color:  light-dark(#008800, #66cc66); }
+.l /* lapis   */  { color:  light-dark(#0F8699, #9bf3ff); }
 
-.r /* red     */  { color:                #ff0000; }
-.g /* green   */  { color:                #00ff00; }
-.n /* navy    */  { color:                light-dark(#000080, #80aaff); }
+.r /* red     */  { color:  #ff0000; }
+.g /* green   */  { color:  #00ff00; }
+.n /* navy    */  { color:  light-dark(#000080, #80aaff); }
 
 /*-----------------------------------------------------------------------------------------------*/
 
