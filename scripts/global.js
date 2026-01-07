@@ -266,13 +266,9 @@ function XfncRewindTrack(strTrack)
 //   }
 // }
 
-function fncPlayTrack(strTrack)
+function fncPlayTrackXX(strTrack)
 {
   var objTrack = document.getElementById(strTrack);
-//  var numCurrentTime = Number(localStorage.getItem(strURL + '===CT'));
-//  objTrack.currentTime = numCurrentTime;
-
-  console.log(objTrack.currentTime);
 
   if (objTrack.paused)
   {
@@ -280,7 +276,53 @@ function fncPlayTrack(strTrack)
   }
   else
   {
-//    localStorage.setItem(strURL + '===CT', objTrack.currentTime);
+    objTrack.pause();
+  }
+}
+
+function fncPlayTrackXXX(strTrack)
+{
+  var objTrack = document.getElementById(strTrack);
+
+  if (objTrack.paused)
+  {
+    // On Android Firefox, play() returns a Promise.
+    // We must catch potential rejections (like 'User Guesture' loss).
+    var playPromise = objTrack.play();
+
+    if (playPromise !== undefined)
+    {
+      playPromise.catch(function(error)
+      {
+        // This prevents the 'Sporadic' hang by allowing
+        // the user to try tapping again immediately.
+        console.log("Playback interrupted: " + error);
+      });
+    }
+  }
+  else
+  {
+    objTrack.pause();
+  }
+}
+
+
+function fncPlayTrack(strTrack, event)
+{
+  // Prevent the 'ghost click' from firing later
+  if (event)
+  {
+    event.preventDefault();
+  }
+
+  var objTrack = document.getElementById(strTrack);
+
+  if (objTrack.paused)
+  {
+    objTrack.play().catch(function() {});
+  }
+  else
+  {
     objTrack.pause();
   }
 }

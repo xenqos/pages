@@ -302,12 +302,11 @@ body
   text-decoration:      none;
 }
 
-/*
 #idTopbar a:active
 {
-  color:                navy;
+  color:                #ff0000;
+  text-decoration:      none;
 }
-*/
 
 #idTopbarInfo
 {
@@ -969,6 +968,7 @@ span[class^=clIcon]
 
 /*-----------------------------------------------------------------------------------------------*/
 
+/*
 span[class^=clNav]
 {
   background-size:      cover;
@@ -978,11 +978,48 @@ span[class^=clNav]
   padding:              0.000rem 0.000rem 0.000rem 0.000rem;
   height:               1.000rem;
   width:                1.000rem;
+  min-width:            1.000rem;
+  max-width:            1.000rem;
   background-position:  center center;
   background-repeat:    no-repeat;
   background-size:      1.000rem 1.000rem;
   position:             relative;
   top:                  0.150rem;
+  touch-action:         none;
+}
+*/
+
+span[class^=clNav]
+{
+  display:             inline-block;
+  cursor:              pointer;
+  position:            relative;
+  top:                 0.150rem;
+
+  /* The Icon Size */
+  height:              1.2500rem;
+  width:               1.2500rem;
+
+  /* THE FIX: Increase padding so the 'hit box' is larger for fingers,
+   *      even if the icon looks small. */
+  padding:             0.2500rem;
+  margin:              0.000rem 0.1250rem;
+
+  background-position: center center;
+  background-repeat:   no-repeat;
+  background-size:     1.000rem 1.000rem;
+
+  /* Essential for Firefox Android to prevent gesture conflict */
+  touch-action:        none;
+
+  /* Removes the gray highlight box on Android Chrome/Vivaldi */
+  -webkit-tap-highlight-color: transparent;
+}
+
+span[class^=clNav]:active
+{
+  transform:           scale(0.85);
+  opacity:             0.7;
 }
 
 .clNavTop
