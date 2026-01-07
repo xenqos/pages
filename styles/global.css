@@ -952,7 +952,15 @@ span[class^=clIcon]
 .clNavLeft    { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23777777' d='M32 14H7.66L18.83 2.83 16 0 0 16l16 16 2.83-2.83L7.66 18H32v-4z' /%3E%3C/svg%3E%0A"); }
 .clNavUp      { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23777777' d='M0 16l2.83 2.83L14 7.66V32h4V7.66l11.17 11.17L32 16 16 0 0 16z' /%3E%3C/svg%3E%0A"); }
 .clNavRight   { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23777777' d='M16 0l-2.83 2.83L24.34 14H0v4h24.34L13.17 29.17 16 32l16-16z' /%3E%3C/svg%3E%0A"); }
+
+
 .clNavPlay    { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23777777' d='M 0.0200155,31.95024 31.979984,16 0.0200155,0.04975994 Z M 4.0150116,25.968901 V 6.0311001 L 23.989992,16 Z' /%3E%3C/svg%3E%0A"); }
+
+/*
+.clNavPlay    { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath fill='%23777777' d='M 2.5e-7,48 48,24 2.5e-7,-3e-8 Z M 6.0000003,39.000001 V 9.0000001 L 36.000001,24 Z' /%3E%3C/svg%3E%0A"); }
+*/
+
+
 .clNavBwrd    { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23777777' d='M 32,26.666547 28.44444,30.222107 14.222293,15.999936 28.44439,1.7778932 31.999924,5.3334032 21.333343,15.999936 Z' /%3E%3Cpath fill='%23777777' d='M 14.222293,30.222107 17.777807,26.666547 7.1112732,15.999936 17.777807,5.3334032 14.222293,1.7778932 2e-7,15.999936 Z' /%3E%3C/svg%3E%0A"); }
 .clNavFwrd    { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23777777' d='M 0,5.3334534 3.55556,1.7778934 17.777707,16.000064 3.55561,30.222107 7.6666667e-5,26.666597 10.666657,16.000064 Z' /%3E%3Cpath fill='%23777777' d='m 17.777707,1.7778934 -3.555514,3.55556 10.666534,10.6666106 -10.666534,10.666533 3.555514,3.55551 L 32,16.000064 Z' /%3E%3C/svg%3E%0A"); }
 .clNavRewind  { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23777777' d='M 27.350232,4.6825294 C 24.453851,1.7806735 20.455042,-0.02047837 16.025283,-0.02047837 7.1657646,-0.02047837 0.01,7.1441037 0.01,15.989761 0.01,24.835418 7.1657646,32 16.025283,32 23.491732,32 29.745509,26.896736 31.519417,19.992321 h -4.169185 c -1.653643,4.662982 -6.083402,8.005119 -11.324949,8.005119 -6.6446389,0 -12.0264955,-5.373436 -12.0264955,-12.007679 0,-6.6342431 5.3818566,-12.0076796 12.0264955,-12.0076796 3.317308,0 6.293865,1.3808832 8.468657,3.5522718 L 18.029698,13.988481 H 32.060609 V -0.02047837 Z' /%3E%3C/svg%3E%0A"); }
@@ -968,7 +976,6 @@ span[class^=clIcon]
 
 /*-----------------------------------------------------------------------------------------------*/
 
-/*
 span[class^=clNav]
 {
   background-size:      cover;
@@ -976,19 +983,20 @@ span[class^=clNav]
   display:              inline-block;
   margin:               0.000rem 0.750rem 0.000rem 0.750rem;
   padding:              0.000rem 0.000rem 0.000rem 0.000rem;
-  height:               1.000rem;
-  width:                1.000rem;
-  min-width:            1.000rem;
-  max-width:            1.000rem;
+  height:               1.200rem;
+  width:                1.200rem;
+  min-width:            1.200rem;
+  max-width:            1.200rem;
   background-position:  center center;
   background-repeat:    no-repeat;
-  background-size:      1.000rem 1.000rem;
+  background-size:      1.200rem 1.200rem;
   position:             relative;
   top:                  0.150rem;
   touch-action:         none;
 }
-*/
 
+
+/*
 span[class^=clNav]
 {
   display:             inline-block;
@@ -996,25 +1004,19 @@ span[class^=clNav]
   position:            relative;
   top:                 0.150rem;
 
-  /* The Icon Size */
-  height:              1.2500rem;
-  width:               1.2500rem;
+  height:              1.500rem;
+  width:               1.500rem;
 
-  /* THE FIX: Increase padding so the 'hit box' is larger for fingers,
-   *      even if the icon looks small. */
-  padding:             0.2500rem;
-  margin:              0.000rem 0.1250rem;
+  padding:             0.500rem;
+  margin:              0.000rem 0.250rem;
 
   background-position: center center;
   background-repeat:   no-repeat;
   background-size:     1.000rem 1.000rem;
 
-  /* Essential for Firefox Android to prevent gesture conflict */
   touch-action:        none;
-
-  /* Removes the gray highlight box on Android Chrome/Vivaldi */
-  -webkit-tap-highlight-color: transparent;
 }
+*/
 
 span[class^=clNav]:active
 {
@@ -1128,7 +1130,7 @@ q.s::after, q.h::after, q.c::after, q.d::after, q.g::after, q.b::after, q.x::aft
 
 q.s::after { content: url("../images/suits/spades.svg"); }
 q.h::after { content: url("../images/suits/hearts.svg"); }
-q.c::after { content: url("../images/suits/clubs.svg"); }
+q.c::after { content: url("../images/suits/cl1ubs.svg"); }
 q.d::after { content: url("../images/suits/diamonds.svg"); }
 q.g::after { content: url("../images/suits/clubs-g.svg"); }
 q.b::after { content: url("../images/suits/diamonds-b.svg"); }
