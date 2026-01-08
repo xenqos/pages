@@ -5,7 +5,7 @@
 var strUrl = document.URL;
 var numTimeLastTap = 0;
 var numTimeRewind = 10;
-var prevScrollPos = window.pageYOffset;
+var numPrevScrollPos = window.pageYOffset;
 
 /*-----------------------------------------------------------------------------------------------*/
 /* Reload Page                                                                                   */
@@ -22,9 +22,9 @@ function fncReloadPage()
 
 window.onscroll = () =>
 {
-  var currentScrollPos = window.pageYOffset;
+  var numCurrentScrollPos = window.pageYOffset;
 
-  if (prevScrollPos > currentScrollPos)
+  if (numPrevScrollPos > numCurrentScrollPos)
   {
     document.getElementById('idTopbar').style.top = '0';
   }
@@ -33,7 +33,7 @@ window.onscroll = () =>
     document.getElementById('idTopbar').style.top = '-6.000rem';
   }
 
-  prevScrollPos = currentScrollPos;
+  numPrevScrollPos = numCurrentScrollPos;
 };
 
 /*-----------------------------------------------------------------------------------------------*/
@@ -140,49 +140,6 @@ function fncRewindTrack(strTrack, event)
 
 /*-----------------------------------------------------------------------------------------------*/
 
-// function fncPlayTrack(strTrack, event)
-// {
-//   if (event)
-//   {
-//     event.preventDefault();
-//   }
-//
-//   var numTimeNow = new Date().getTime();
-//
-//   if (numTimeNow - numTimeLastTap < 250)
-//   {
-//     return;
-//   }
-//
-//   numTimeLastTap = numTimeNow;
-//
-//   var objTrack = document.getElementById(strTrack);
-//
-//   if (objTrack.paused)
-//   {
-//     if (objTrack.currentTime < 1)
-//     {
-//       objTrack.currentTime = 0;
-//
-//       objTrack.onseeked = function()
-//       {
-//         objTrack.play().catch(function(objError) { });
-//         objTrack.onseeked = null;
-//       };
-//     }
-//     else
-//     {
-//       objTrack.play().catch(function(objError) { });
-//     }
-//   }
-//   else
-//   {
-//     objTrack.pause();
-//   }
-// }
-
-/*-----------------------------------------------------------------------------------------------*/
-
 function fncPlayTrack(strTrack, event)
 {
   if (event)
@@ -229,7 +186,5 @@ function fncPlayTrack(strTrack, event)
     objTrack.pause();
   }
 }
-
-/*-----------------------------------------------------------------------------------------------*/
 
 /*-----------------------------------------------------------------------------------------------*/
