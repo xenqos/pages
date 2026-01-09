@@ -237,6 +237,7 @@ body
   padding:              0.000rem 0.000rem 0.000rem 0.000rem;
   text-align:           center;
   width:                100.00%;
+  transition:           top 0.3s ease-in-out;
   z-index:              100;
 }
 
@@ -754,7 +755,7 @@ code
 .clHr
 {
   border:               none;
-  background-color:     #cccccc;
+  background-color:     light-dark(#aaaaaa, #555555);
   height:               1px;
   line-height:          1.000rem;
   margin:               1.500rem 0.000rem 1.250rem 0.000rem;
@@ -982,8 +983,8 @@ span[class^=clNav]:active
 .e /* emerald */  { color:  light-dark(#008800, #66cc66); }
 .l /* lapis   */  { color:  light-dark(#0F8699, #9bf3ff); }
 
-.r /* red     */  { color:  #ff0000; }
-.g /* green   */  { color:  #00ff00; }
+.r /* red     */  { color:  light-dark(#ff0000, #ff0000); }
+.g /* green   */  { color:  light-dark(#00ff00, #00ff00); }
 .n /* navy    */  { color:  light-dark(#000080, #80aaff); }
 
 /*-----------------------------------------------------------------------------------------------*/

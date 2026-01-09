@@ -3,9 +3,6 @@
 /*-----------------------------------------------------------------------------------------------*/
 
 var strUrl = document.URL;
-var numTimeLastTap = 0;
-var numTimeRewind = 10;
-var numPrevScrollPos = window.pageYOffset;
 
 /*-----------------------------------------------------------------------------------------------*/
 /* Reload Page                                                                                   */
@@ -20,20 +17,28 @@ function fncReloadPage()
 /* Hide Topbar                                                                                   */
 /*-----------------------------------------------------------------------------------------------*/
 
+let numPrevScrollPos = window.pageYOffset;
+const numScrollThreshold = 10;
+
 window.onscroll = () =>
 {
-  var numCurrentScrollPos = window.pageYOffset;
+  let numCurrentScrollPos = window.pageYOffset;
+  let numScrollDifference = Math.abs(numCurrentScrollPos - numPrevScrollPos);
+  let objTopbarElement = document.getElementById('idTopbar');
 
-  if (numPrevScrollPos > numCurrentScrollPos)
+  if (numScrollDifference > numScrollThreshold)
   {
-    document.getElementById('idTopbar').style.top = '0';
-  }
-  else
-  {
-    document.getElementById('idTopbar').style.top = '-6.000rem';
-  }
+    if (numPrevScrollPos > numCurrentScrollPos)
+    {
+      objTopbarElement.style.top = '0';
+    }
+    else
+    {
+      objTopbarElement.style.top = '-6.000rem';
+    }
 
-  numPrevScrollPos = numCurrentScrollPos;
+    numPrevScrollPos = numCurrentScrollPos;
+  }
 };
 
 /*-----------------------------------------------------------------------------------------------*/
@@ -105,6 +110,11 @@ function fncGetDivState()
 
 /*-----------------------------------------------------------------------------------------------*/
 /* Audio                                                                                         */
+/*-----------------------------------------------------------------------------------------------*/
+
+var numTimeLastTap = 0;
+var numTimeRewind = 10;
+
 /*-----------------------------------------------------------------------------------------------*/
 
 function fncPlayLink(strLink)
