@@ -11,11 +11,16 @@
 |2|-%[l|test]|-%[l|tet]|
 |3|-%[l|te]  |-%[l|ten]|
 |]
+
 [|
-¦¦s.¦p.¦
-|1|%[m|sag]%[l|te]  |%[m|sag]%[l|ten]|
-|2|%[m|sag]%[l|test]|%[m|sag]%[l|tet]|
-|3|%[m|sag]%[l|te]  |%[m|sag]%[l|ten]|
+|ich|%[m|sag]%[l|te]  |
+|du |%[m|sag]%[l|test]|
+|er |%[m|sag]%[l|te]  |
+|]
+[|
+|wir|%[m|sag]%[l|ten]|
+|ihr|%[m|sag]%[l|tet]|
+|sie|%[m|sag]%[l|ten]|
 |]
 
 ## Unregelmäßige
@@ -29,8 +34,12 @@
 |]
 
 [|
-¦¦s.¦p.¦
-|1|%[m|säng]%[l|e]  |%[m|säng]%[l|en]|
-|2|%[m|säng]%[l|est]|%[m|säng]%[l|et]|
-|3|%[m|säng]%[l|e]  |%[m|säng]%[l|en]|
+|ich|%[m|säng]%[l|e]  |
+|du |%[m|säng]%[l|est]|
+|er |%[m|säng]%[l|e]  |
+|]
+[|
+|wir|%[m|säng]%[l|en]|
+|ihr|%[m|säng]%[l|et]|
+|sie|%[m|säng]%[l|en]|
 |]

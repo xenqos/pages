@@ -1,17 +1,24 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-10%" pitch="0%">
+<break time="1000ms"/>
 sagen
 
-sage
-sagst
-sagt
-sagen
-sagt
-sagen
+ich sage
+du  sagst
+er  sagt
+wir sagen
+ihr sagt
+sie sagen
 
 singen
 
-singe
-singst
-singt
-singen
-singt
-singen
+ich singe
+du  singst
+er  singt
+wir singen
+ihr singt
+sie singen
+</prosody>
+</voice>
+</speak>

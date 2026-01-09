@@ -17,7 +17,7 @@
   
 </head>
 <body onload='fncGetDivState(); fncGetScrollPosition();'>
-
+<audio id='idTrack' src='../sounds/41.mp3' preload='auto'></audio>
 <div id='idPanel'>
 <div id='idTopbar'>
   <div id='idTopbarNavigation'>
@@ -26,7 +26,7 @@
     <a href='40.html'><span class='clNavLeft'></span></a>
     <a href='../index.html'><span class='clNavUp'></span></a>
     <a href='42.html'><span class='clNavRight'></span></a>
-
+<span class='clNavRewind' onpointerdown='fncRewindTrack(&quot;idTrack&quot;, event)'></span><span class='clNavPlay' onpointerdown='fncPlayTrack(&quot;idTrack&quot;, event)'></span> 
   </div>
 </div>
 <div id='idContent'>
@@ -51,10 +51,18 @@
 <div class='clOverflow'>
 <table>
 <tr>
-<th></th><th>s.</th><th>p.</th></tr>
-<tr><td>1</td><td><span class='m'>sag</span><span class='l'>te</span>  </td><td><span class='m'>sag</span><span class='l'>ten</span></td></tr>
-<tr><td>2</td><td><span class='m'>sag</span><span class='l'>test</span></td><td><span class='m'>sag</span><span class='l'>tet</span></td></tr>
-<tr><td>3</td><td><span class='m'>sag</span><span class='l'>te</span>  </td><td><span class='m'>sag</span><span class='l'>ten</span></td></tr>
+<td>ich</td><td><span class='m'>sag</span><span class='l'>te</span>  </td></tr>
+<tr><td>du </td><td><span class='m'>sag</span><span class='l'>test</span></td></tr>
+<tr><td>er </td><td><span class='m'>sag</span><span class='l'>te</span>  </td></tr>
+</table>
+</div>
+
+<div class='clOverflow'>
+<table>
+<tr>
+<td>wir</td><td><span class='m'>sag</span><span class='l'>ten</span></td></tr>
+<tr><td>ihr</td><td><span class='m'>sag</span><span class='l'>tet</span></td></tr>
+<tr><td>sie</td><td><span class='m'>sag</span><span class='l'>ten</span></td></tr>
 </table>
 </div>
 
@@ -64,8 +72,7 @@
 <div class='clOverflow'>
 <table>
 <tr>
-<th></th><th>s.</th><th>p.</th></tr>
-<tr><td>1</td><td>-<span class='l'></span> </td><td>-<span class='l'>en</span></td></tr>
+<td>1</td><td>-<span class='l'></span> </td><td>-<span class='l'>en</span></td></tr>
 <tr><td>2</td><td>-<span class='l'>st</span></td><td>-<span class='l'>t</span> </td></tr>
 <tr><td>3</td><td>-<span class='l'></span> </td><td>-<span class='l'>en</span></td></tr>
 </table>
@@ -75,10 +82,18 @@
 <div class='clOverflow'>
 <table>
 <tr>
-<th></th><th>s.</th><th>p.</th></tr>
-<tr><td>1</td><td><span class='m'>sang</span><span class='l'></span>  </td><td><span class='m'>sang</span><span class='l'>en</span></td></tr>
-<tr><td>2</td><td><span class='m'>sang</span><span class='l'>st</span></td><td><span class='m'>sang</span><span class='l'>t</span> </td></tr>
-<tr><td>3</td><td><span class='m'>sang</span><span class='l'></span>  </td><td><span class='m'>sang</span><span class='l'>en</span></td></tr>
+<td>ich</td><td><span class='m'>sang</span><span class='l'></span>  </td></tr>
+<tr><td>du </td><td><span class='m'>sang</span><span class='l'>st</span></td></tr>
+<tr><td>er </td><td><span class='m'>sang</span><span class='l'></span>  </td></tr>
+</table>
+</div>
+
+<div class='clOverflow'>
+<table>
+<tr>
+<td>wir</td><td><span class='m'>sang</span><span class='l'>en</span></td></tr>
+<tr><td>ihr</td><td><span class='m'>sang</span><span class='l'>t</span> </td></tr>
+<tr><td>sie</td><td><span class='m'>sang</span><span class='l'>en</span></td></tr>
 </table>
 </div>
 

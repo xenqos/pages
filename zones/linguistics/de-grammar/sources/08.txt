@@ -1,80 +1,40 @@
-###### Существительные
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-10%" pitch="0%">
+<break time="1000ms"/>
+die Deklination
+der Kasus
+der Fall
 
-# Падежи
+der Nominativ
+wer, was
+der Genitiv
+wessen
+der Dativ
+wem
+der Accusativ
+wen, was
 
-[|
-|%[m|die Deklination]|             |склонение|
-|%[m|der Kasus]      |%[n|der Fall]|падеж    |
-|]
+Die Katze schläft.
+Das Buch ist interessant.
+Mein Bruder spielt Fußball.
+Die Kinder spielen im Park.
 
-[|
-|%[m|der Nominativ]|%[l|ˈnoːminaˌtiːf]|%[m|wer, was]|кто, что  |
-|%[m|der Genitiv]  |%[l|ˈɡeːnitiːf]   |%[m|wessen]  |чей       |
-|%[m|der Dativ]    |%[l|ˈdaːtiːf]     |%[m|wem]     |кому, чему|
-|%[m|der Accusativ]|%[l|ˈakuzaˌtiːf]  |%[m|wen, was]|кого, что |
-|]
+das Haus des Nachbarn.
+das Buch des Lehrers.
+der Klang der Glocke.
+die Farbe des Autos.
 
-## Nominativ
+Ich gebe dem Freund ein Buch.
+Sie zeigt der Lehrerin ihre Hausaufgaben.
+Ich gehe mit meinem Bruder ins Kino.
+Er spricht über das Wetter.
 
-Функция - обозначение подлежащего
+Ich sehe den Hund.
+Sie kauft einen Apfel.
+Ich gehe durch den Park.
+Er stellt das Buch auf den Tisch.
 
-%[m|Die Katze schläft.]
->>> Кошка спит.
-%[m|Das Buch ist interessant.]
->>> Книга интересная.
-%[m|Mein Bruder spielt Fußball.]
->>> Мой брат играет в футбол.
-%[m|Die Kinder spielen im Park.]
->>> Дети играют в парке.
-
-## Genitiv
-
-Функция - обозначение признаков существительного, зависящих от другого существительного.
-
-%[m|das Haus des Nachbarn] m.
->>> дом соседa
-%[m|das Buch des Lehrers] m.
->>> книга учителя
-%[m|der Klang der Glocke] f.
->>> звук колокола
-%[m|die Farbe des Autos.] n.
->>> цвет автомобиля
-
-[!
-Окончание -%[m|es]:
-
-1.если в Nominativ:
->>> -%[m|s], -%[m|ss], -%[m|ß], -%[m|x], -%[m|tz], -%[m|z]
-2.окончания:
->>> -%[m|sch], -%[m|tsch], -%[m|st]
-3.если безударное окончание:
->>> -%[m|el], -%[m|en], -%[m|end], -%[m|em],-%[m|er]
-4.окончания:
->>> -%[m|lein], -%[m|ling], -%[m|ing], -%[m|ig]
-!]
-
-## Dativ
-
-Функция - обозначение получателя того, что дается.
-
-%[m|Ich gebe dem Freund ein Buch.]
->>> Я даю другу книгу.
-%[m|Sie zeigt der Lehrerin ihre Hausaufgaben.]
->>> Она показывает учительнице свои домашние задания.
-%[m|Ich gehe mit meinem Bruder ins Kino.]
->>> Я иду в кино с братом.
-%[m|Er spricht über das Wetter.]
->>> Он говорит о погоде.
-
-## Accusativ
-
-Функция - обозначение прямого дополнения
-
-%[m|Ich sehe den Hund.]
->>> Я вижу собаку.
-%[m|Sie kauft einen Apfel.]
->>> Она покупает яблоко.
-%[m|Ich gehe durch den Park.]
->>> Я иду через парк.
-%[m|Er stellt das Buch auf den Tisch.]
->>> Он ставит книгу на стол.
+</prosody>
+</voice>
+</speak>

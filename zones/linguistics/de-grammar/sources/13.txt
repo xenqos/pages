@@ -1,3 +1,7 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-10%" pitch="0%">
+<break time="1000ms"/>
 die Väter
 der Väter
 den Vätern
@@ -17,3 +21,6 @@ die Parks
 der Parks
 den Parks
 die Parks
+</prosody>
+</voice>
+</speak>

@@ -1,91 +1,59 @@
-###### Существительные
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-10%" pitch="0%">
+<break time="1000ms"/>
+der Knabe
+des Knaben
+dem Knaben
+den Knaben
 
-# Тип II - слабое склонение
+der Mensch
+des Menschen
+dem Menschen
+den Menschen
 
-[|
-|nom.|-%[m|]|
-|gen.|-(%[m|e])%[m|n]|
-|dat.|-(%[m|e])%[m|n]|
-|akk.|-(%[m|e])%[m|n]|
-|]
+der Diplomat
+des Diplomatn
+dem Diplomatn
+den Diplomatn
 
-[|
-|nom.|%[m|der Knabe]      |%[m|der Mensch]       |%[m|der Diplomat]      |
-|gen.|%[m|des Knabe]%[n|n]|%[m|des Mensch]%[n|en]|%[m|des Diplomat]%[n|n]|
-|dat.|%[m|dem Knabe]%[n|n]|%[m|dem Mensch]%[n|en]|%[m|dem Diplomat]%[n|n]|
-|akk.|%[m|den Knabe]%[n|n]|%[m|den Mensch]%[n|en]|%[m|den Diplomat]%[n|n]|
-|]
+der Affe
+der Erbe
+der Falke
+der Hase
+der Knabe
+der Kollege
+der Löwe
+der Neffe
 
-[!
-Склоняются существительные только мужского рода.
-Преимущественно одушевлённые.
-!]
+der Bär
+der Fürst
+der Graf
+der Held
+der Herr
+der Hirt
+der Mensch
+der Narr
+der Ochs
+der Prinz
+der Spatz
+der Tor
+der Zar
 
-[!
-Существительные, оканчивающиеся на -%[n|e]:
-!]
+der Aspirant
+der Fotograf
+der Diplomat
+der Pianist
 
-[|
-|%[m|der Affe]   |обезьяна |
-|%[m|der Erbe]   |наследник|
-|%[m|der Falke]  |сокол    |
-|%[m|der Hase]   |заяц     |
-|%[m|der Knabe]  |мальчик  |
-|%[m|der Kollege]|коллега  |
-|%[m|der Löwe]   |лев      |
-|%[m|der Neffe]  |племянник|
-|]
+der Architekt
+der Kamerad
 
-[!
-Некоторые односложные имена существительные:
-!]
-
-[|
-|%[m|der Bär]   |медведь |
-|%[m|der Fürst] |князь   |
-|%[m|der Graf]  |граф    |
-|%[m|der Held]  |герой   |
-|%[m|der Herr]  |господин|
-|%[m|der Hirt]  |пастух  |
-|%[m|der Mensch]|человек |
-|%[m|der Narr]  |дурак   |
-|%[m|der Ochs]  |бык     |
-|%[m|der Prinz] |принц   |
-|%[m|der Spatz] |воробей |
-|%[m|der Tor]   |дурак   |
-|%[m|der Zar]   |царь    |
-|]
-
-[!
-Существительные с иностранными суффиксами:
-!]
--%[n|ant], -%[n|at], -%[n|ent], -%[n|et], -%[n|graph], -%[n|greif], -%[n|ist], -%[n|it], -%[n|ot]
-
-[|
-|%[m|der Aspirant]|аспирант|
-|%[m|der Fotograf]|фотограф|
-|%[m|der Diplomat]|дипломат|
-|%[m|der Pianist] |пианист |
-|]
-
-[!
-Существительные:
-!]
-
-[|
-|%[m|der Architekt]|архитектор|
-|%[m|der Kamerad]  |товарищ   |
-|]
-
-[!
-Несколько существительных иностранного происхождения:
-!]
-
-[|
-|%[m|der Planet]   |планета  |
-|%[m|der Вrilliant]|бриллиант|
-|%[m|der Komet]    |комета   |
-|%[m|der Diamant]  |алмаз    |
-|%[m|der Automat]  |автомат  |
-|%[m|der Foliant]  |фолиант  |
-|]
+der Planet
+der Вrilliant
+der Komet
+der Diamant
+der Automat
+der Foliant
+</prosody>
+</voice>
+</speak>

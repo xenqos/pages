@@ -12,24 +12,31 @@
 |]
 %[m|sagen] - говорить
 [|
-¦¦s.¦p.¦
-|1|%[m|sag]%[l|te]  |%[m|sag]%[l|ten]|
-|2|%[m|sag]%[l|test]|%[m|sag]%[l|tet]|
-|3|%[m|sag]%[l|te]  |%[m|sag]%[l|ten]|
+|ich|%[m|sag]%[l|te]  |
+|du |%[m|sag]%[l|test]|
+|er |%[m|sag]%[l|te]  |
+|]
+[|
+|wir|%[m|sag]%[l|ten]|
+|ihr|%[m|sag]%[l|tet]|
+|sie|%[m|sag]%[l|ten]|
 |]
 
 ## Unregelmäßige
 
 [|
-¦¦s.¦p.¦
 |1|-%[l|] |-%[l|en]|
 |2|-%[l|st]|-%[l|t] |
 |3|-%[l|] |-%[l|en]|
 |]
 %[m|singen] - петь
 [|
-¦¦s.¦p.¦
-|1|%[m|sang]%[l|]  |%[m|sang]%[l|en]|
-|2|%[m|sang]%[l|st]|%[m|sang]%[l|t] |
-|3|%[m|sang]%[l|]  |%[m|sang]%[l|en]|
+|ich|%[m|sang]%[l|]  |
+|du |%[m|sang]%[l|st]|
+|er |%[m|sang]%[l|]  |
+|]
+[|
+|wir|%[m|sang]%[l|en]|
+|ihr|%[m|sang]%[l|t] |
+|sie|%[m|sang]%[l|en]|
 |]
