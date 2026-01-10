@@ -1,12 +1,13 @@
 #!/bin/bash
 #-------------------------------------------------------------------------------
 
-ext_src='mp3'
+ext_src='flac'
 ext_dst='opus'
 dir_name='sounds'
 bit_rate='32k'
 
-dir_prefix="${HOME}/mnt/data/Temp/Mireille-Mathieu/An-Einem-Sonntag-In-Avignon"
+dir_prefix="${HOME}/mnt/data/Temp/Mireille Mathieu/1978 - Der Rhein und das Lied von der Elbe"
+
 dir_src="${dir_prefix}/${dir_name}"
 dir_dst="${dir_prefix}/${dir_name}-${ext_dst}"
 
