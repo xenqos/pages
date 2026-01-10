@@ -6,7 +6,7 @@ ext_dst='opus'
 dir_name='sounds'
 bit_rate='24k'
 
-dir_prefix="${HOME}/mnt/data/Webpages/zones/linguistics/de-grammar"
+dir_prefix="${HOME}/mnt/data/Webpages/zones/linguistics/bg-conversations"
 dir_src="${dir_prefix}/${dir_name}"
 dir_dst="${dir_prefix}/${dir_name}-${ext_dst}"
 
