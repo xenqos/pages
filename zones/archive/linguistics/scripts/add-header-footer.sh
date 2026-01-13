@@ -1,18 +1,23 @@
 #!/bin/bash
+#-------------------------------------------------------------------------------
+
+dir_name='sources'
+dir_suffix='processed'
+
+dir_prefix="${HOME}/mnt/data/Webpages/zones/linguistics/de-conversations"
+dir_src="${dir_prefix}/${dir_name}"
+dir_dst="${dir_prefix}/${dir_name}-${dir_suffix}"
 
 lang='de'
 
-pwd
+#-------------------------------------------------------------------------------
 
+[[ ! -d "${dir_dst}" ]] && mkdir -p "${dir_dst}"
 
-exit
-
-
-cd ../sources
-
-for file in *; do
-  temp_file=$(mktemp)
-  cat ../archive/header-${lang}.txt "$file" > "$temp_file"
-  cat "$temp_file" ../archive/footer.txt > "$file"
-  rm "$temp_file"
+for file in "${dir_src}"/*; do
+  file_name="${file##*/}"
+  cat "../headers/header-${lang}.txt" "${file}" > "${dir_dst}/${file_name}"
+  cat "../headers/footer.txt" >> "${dir_dst}/${file_name}"
 done
+
+#-------------------------------------------------------------------------------
