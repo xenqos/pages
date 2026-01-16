@@ -1,3 +1,7 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1000ms"/>
 der erste
 der zweite
 der dritte
@@ -8,3 +12,6 @@ der siebte
 der achte
 der neunte
 der zehnte
+</prosody>
+</voice>
+</speak>

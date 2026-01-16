@@ -4,7 +4,7 @@
 dir_name='sources'
 dir_suffix='processed'
 
-dir_prefix="${HOME}/mnt/data/Webpages/zones/linguistics/de-conversations"
+dir_prefix="${HOME}/mnt/data/Webpages/zones/linguistics/de-words"
 dir_src="${dir_prefix}/${dir_name}"
 dir_dst="${dir_prefix}/${dir_name}-${dir_suffix}"
 
