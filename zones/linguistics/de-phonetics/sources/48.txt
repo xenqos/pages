@@ -1,18 +1,15 @@
-<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="de-DE-KatjaNeural">
-<prosody rate="-30%" pitch="0%">
-früh
-blühen
-die Bühne
-
-süß
-über
-lügen
-
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%"><break time="1000ms"/>
+die Güte
+die Tüte
+müde
+die Züge, der Zug
+die Flüge, der Flug
+klüger, klug
 fünf
 die Mütze
 dünn
-
 die Büste
 düster
 hüsteln
@@ -20,7 +17,6 @@ die Rüsche
 die Rüster
 die Wüste
 wüst
-
 gebürtig
 </prosody>
 </voice>

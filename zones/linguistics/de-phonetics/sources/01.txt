@@ -1,26 +1,12 @@
-<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="de-DE-KatjaNeural">
-<prosody rate="-30%" pitch="0%">
-der Kamm
-kam
-die Stelle
-der Käse
-die Mitte
-der Mieter
-stehlen
-bitte
-offen
-der Ofen
-die Hölle
-die Höhle
-die Mutter
-der Mut
-der Müller
-die Mühle
-
-das Haus
-das Heim
-die Eule
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%"><break time="1000ms"/>
+die Silbe
+die Sprechsilbe
+die Sprachsilbe
+die Stammsilbe
+die Vorsilbe
+die Nachsilbe
 </prosody>
 </voice>
 </speak>
