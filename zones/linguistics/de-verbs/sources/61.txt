@@ -1,16 +1,66 @@
-<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="de-DE-KatjaNeural">
-<prosody rate="-30%" pitch="0%">
-herangehen, ging heran, herangegangen
-abzielen, zielte ab, abgezielt
-vergegenwärtigen, vergegenwärtigte, vergegenwärtigt
-angleichen, glich an, angeglichen
-verfeinern, verfeinerte, verfeinert
-beiseitelegen, legte beiseite, beiseitegelegt
-gleichsetzen, setzte gleich, gleichgesetzt
-resümieren, resümierte, resümiert
-wirksamwerden, wurde wirksam, wirksamgeworden
-zuschreiben, schrieb zu, zugeschrieben
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
+herangehen
+ging heran
+herangegangen
+geht heran
+ist herangegangen
+<break time="500ms"/>
+abzielen
+zielte ab
+abgezielt
+zielt ab
+hat abgezielt
+<break time="500ms"/>
+vergegenwärtigen
+vergegenwärtigte
+vergegenwärtigt
+vergegenwärtigt
+hat vergegenwärtigt
+<break time="500ms"/>
+angleichen
+glich an
+angeglichen
+gleicht an
+hat angeglichen
+<break time="500ms"/>
+verfeinern
+verfeinerte
+verfeinert
+verfeinert
+hat verfeinert
+<break time="500ms"/>
+beiseitelegen
+legte beiseite
+beiseitegelegt
+legt beiseite
+hat beiseitegelegt
+<break time="500ms"/>
+gleichsetzen
+setzte gleich
+gleichgesetzt
+setzt gleich
+hat gleichgesetzt
+<break time="500ms"/>
+resümieren
+resümierte
+resümiert
+resümiert
+hat resümiert
+<break time="500ms"/>
+wirksamwerden
+wurde wirksam
+wirksamgeworden
+wird wirksam
+ist wirksamgeworden
+<break time="500ms"/>
+zuschreiben
+schrieb zu
+zugeschrieben
+schreibt zu
+hat zugeschrieben
 </prosody>
 </voice>
 </speak>

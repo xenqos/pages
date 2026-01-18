@@ -1,16 +1,68 @@
-<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="de-DE-KatjaNeural">
-<prosody rate="-30%" pitch="0%">
-prägen, prägte, geprägt
-scheiden, schied, geschieden
-wiegen, wog, gewogen
-zunehmen, nahm zu, zugenommen
-abschaffen, schaffte ab, abgeschafft
-anwenden, wandte an, angewandt
-aufstellen, stellte auf, aufgestellt
-backen, buk, gebacken
-backen, backte, gebacken
-dringen, drang, gedrungen
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
+prägen
+prägte
+geprägt
+prägt
+hat geprägt
+<break time="500ms"/>
+scheiden
+schied
+geschieden
+scheidet
+hat geschieden
+ist geschieden
+<break time="500ms"/>
+wiegen
+wog
+gewogen
+wiegt
+hat gewogen
+<break time="500ms"/>
+zunehmen
+nahm zu
+zugenommen
+nimmt zu
+hat zugenommen
+<break time="500ms"/>
+abschaffen
+schaffte ab
+abgeschafft
+schafft ab
+hat abgeschafft
+<break time="500ms"/>
+anwenden
+wandte an
+angewandt
+wendet an
+hat angewandt
+<break time="500ms"/>
+aufstellen
+stellte auf
+aufgestellt
+stellt auf
+hat aufgestellt
+<break time="500ms"/>
+backen
+buk
+gebacken
+bäckt
+hat gebacken
+<break time="500ms"/>
+backen
+backte
+gebacken
+backt
+hat gebacken
+<break time="500ms"/>
+dringen
+drang
+gedrungen
+dringt
+hat gedrungen
+ist gedrungen
 </prosody>
 </voice>
 </speak>

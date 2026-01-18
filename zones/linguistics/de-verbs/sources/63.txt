@@ -1,16 +1,68 @@
-<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="de-DE-KatjaNeural">
-<prosody rate="-30%" pitch="0%">
-herausstellen, stellte heraus, herausgestellt
-zuteilen, teilte zu, zugeteilt
-erschallen, erscholl, erschollen
-erschallen, erschallte, erschallt
-fechten, focht, gefochten
-flechten, flocht, geflochten
-gären, gor, gegoren
-gebären, gebar, geboren
-gebären, gebar, geboren
-glimmen, glomm, geglommen
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
+herausstellen
+stellte heraus
+herausgestellt
+stellt heraus
+hat herausgestellt
+<break time="500ms"/>
+zuteilen
+teilte zu
+zugeteilt
+teilt zu
+hat zugeteilt
+<break time="500ms"/>
+erschallen
+erscholl
+erschollen
+erschallt
+ist erschollen
+<break time="500ms"/>
+erschallen
+erschallte
+erschallt
+erschallt
+ist erschallt
+<break time="500ms"/>
+fechten
+focht
+gefochten
+ficht
+hat gefochten
+<break time="500ms"/>
+flechten
+flocht
+geflochten
+flicht
+hat geflochten
+<break time="500ms"/>
+gären
+gor
+gegoren
+gärt
+ist gegoren
+<break time="500ms"/>
+gebären
+gebar
+geboren
+gebärt
+hat geboren
+ist geboren
+<break time="500ms"/>
+gebären
+gebar
+geboren
+gebiert
+hat geboren
+ist geboren
+<break time="500ms"/>
+glimmen
+glomm
+geglommen
+glimmt
+hat geglommen
 </prosody>
 </voice>
 </speak>

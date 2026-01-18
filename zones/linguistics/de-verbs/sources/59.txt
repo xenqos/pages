@@ -1,16 +1,67 @@
-<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="de-DE-KatjaNeural">
-<prosody rate="-30%" pitch="0%">
-umgestalten, gestaltete um, umgestaltet
-umschalten, schaltete um, umgeschaltet
-verankern, verankerte, verankert
-verderben, verdarb, verdorben
-verdrießen, verdross, verdrossen
-verinnerlichen, verinnerlichte, verinnerlicht
-verwerten, verwertete, verwertet
-verzehren, verzehrte, verzehrt
-visualisieren, visualisierte, visualisiert
-vornehmen, nahm vor, vorgenommen
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
+umgestalten
+gestaltete um
+umgestaltet
+gestaltet um
+hat umgestaltet
+<break time="500ms"/>
+umschalten
+schaltete um
+umgeschaltet
+schaltet um
+hat umgeschaltet
+<break time="500ms"/>
+verankern
+verankerte
+verankert
+verankert
+hat verankert
+<break time="500ms"/>
+verderben
+verdarb
+verdorben
+verdirbt
+hat verdorben
+ist verdorben
+<break time="500ms"/>
+verdrießen
+verdross
+verdrossen
+verdrießt
+hat verdrossen
+<break time="500ms"/>
+verinnerlichen
+verinnerlichte
+verinnerlicht
+verinnerlicht
+hat verinnerlicht
+<break time="500ms"/>
+verwerten
+verwertete
+verwertet
+verwertet
+hat verwertet
+<break time="500ms"/>
+verzehren
+verzehrte
+verzehrt
+verzehrt
+hat verzehrt
+<break time="500ms"/>
+visualisieren
+visualisierte
+visualisiert
+visualisiert
+hat visualisiert
+<break time="500ms"/>
+vornehmen
+nahm vor
+vorgenommen
+nimmt vor
+hat vorgenommen
 </prosody>
 </voice>
 </speak>

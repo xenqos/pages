@@ -1,16 +1,66 @@
-<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="de-DE-KatjaNeural">
-<prosody rate="-30%" pitch="0%">
-begleiten, begleitete, begleitet
-fließen, floss, geflossen
-laden, lud, geladen
-rufen, rief, gerufen
-verschwinden, verschwand, verschwunden
-wahren, wahrte, gewahrt
-vorlegen, legte vor, vorgelegt
-übergeben, übergab, übergeben
-anbieten, bot an, angeboten
-aufgeben, gab auf, aufgegeben
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
+begleiten
+begleitete
+begleitet
+begleitet
+hat begleitet
+<break time="500ms"/>
+fließen
+floss
+geflossen
+fließt
+ist geflossen
+<break time="500ms"/>
+laden
+lud
+geladen
+lädt
+hat geladen
+<break time="500ms"/>
+rufen
+rief
+gerufen
+ruft
+hat gerufen
+<break time="500ms"/>
+verschwinden
+verschwand
+verschwunden
+verschwindet
+ist verschwunden
+<break time="500ms"/>
+wahren
+wahrte
+gewahrt
+wahrt
+hat gewahrt
+<break time="500ms"/>
+vorlegen
+legte vor
+vorgelegt
+legt vor
+hat vorgelegt
+<break time="500ms"/>
+übergeben
+übergab
+übergeben
+übergibt
+hat übergeben
+<break time="500ms"/>
+anbieten
+bot an
+angeboten
+bietet an
+hat angeboten
+<break time="500ms"/>
+aufgeben
+gab auf
+aufgegeben
+gibt auf
+hat aufgegeben
 </prosody>
 </voice>
 </speak>

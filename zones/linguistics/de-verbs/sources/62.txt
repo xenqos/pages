@@ -1,16 +1,66 @@
-<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="de-DE-KatjaNeural">
-<prosody rate="-30%" pitch="0%">
-weiterbilden, bildete weiter, weitergebildet
-sensibilisieren, sensibilisierte, sensibilisiert
-herausfordern, forderte heraus, herausgefordert
-voraussetzen, setzte voraus, vorausgesetzt
-verüben, verübte, verübt
-überschwemmen, überschwemmte, überschwemmt
-bevollmächtigen, bevollmächtigte, bevollmächtigt
-freistellen, stellte frei, freigestellt
-abschirmen, schirmte ab, abgeschirmt
-zurückfallen, fiel zurück, zurückgefallen
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
+weiterbilden
+bildete weiter
+weitergebildet
+bildet weiter
+hat weitergebildet
+<break time="500ms"/>
+sensibilisieren
+sensibilisierte
+sensibilisiert
+sensibilisiert
+hat sensibilisiert
+<break time="500ms"/>
+herausfordern
+forderte heraus
+herausgefordert
+fordert heraus
+hat herausgefordert
+<break time="500ms"/>
+voraussetzen
+setzte voraus
+vorausgesetzt
+setzt voraus
+hat vorausgesetzt
+<break time="500ms"/>
+verüben
+verübte
+verübt
+verübt
+hat verübt
+<break time="500ms"/>
+überschwemmen
+überschwemmte
+überschwemmt
+überschwemmt
+hat überschwemmt
+<break time="500ms"/>
+bevollmächtigen
+bevollmächtigte
+bevollmächtigt
+bevollmächtigt
+hat bevollmächtigt
+<break time="500ms"/>
+freistellen
+stellte frei
+freigestellt
+stellt frei
+hat freigestellt
+<break time="500ms"/>
+abschirmen
+schirmte ab
+abgeschirmt
+schirmt ab
+hat abgeschirmt
+<break time="500ms"/>
+zurückfallen
+fiel zurück
+zurückgefallen
+fällt zurück
+ist zurückgefallen
 </prosody>
 </voice>
 </speak>

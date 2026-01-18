@@ -1,16 +1,67 @@
-<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="de-DE-KatjaNeural">
-<prosody rate="-30%" pitch="0%">
-gliedern, gliederte, gegliedert
-hinweisen, wies hin, hingewiesen
-qualifizieren, qualifizierte, qualifiziert
-reformieren, reformierte, reformiert
-reiten, ritt, geritten
-rennen, rannte, gerannt
-riechen, roch, gerochen
-riskieren, riskierte, riskiert
-schieben, schob, geschoben
-signalisieren, signalisierte, signalisiert
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
+gliedern
+gliederte
+gegliedert
+gliedert
+hat gegliedert
+<break time="500ms"/>
+hinweisen
+wies hin
+hingewiesen
+weist hin
+hat hingewiesen
+<break time="500ms"/>
+qualifizieren
+qualifizierte
+qualifiziert
+qualifiziert
+hat qualifiziert
+<break time="500ms"/>
+reformieren
+reformierte
+reformiert
+reformiert
+hat reformiert
+<break time="500ms"/>
+reiten
+ritt
+geritten
+reitet
+hat geritten
+ist geritten
+<break time="500ms"/>
+rennen
+rannte
+gerannt
+rennt
+ist gerannt
+<break time="500ms"/>
+riechen
+roch
+gerochen
+riecht
+hat gerochen
+<break time="500ms"/>
+riskieren
+riskierte
+riskiert
+riskiert
+hat riskiert
+<break time="500ms"/>
+schieben
+schob
+geschoben
+schiebt
+hat geschoben
+<break time="500ms"/>
+signalisieren
+signalisierte
+signalisiert
+signalisiert
+hat signalisiert
 </prosody>
 </voice>
 </speak>

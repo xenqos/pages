@@ -1,16 +1,66 @@
-<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="de-DE-KatjaNeural">
-<prosody rate="-30%" pitch="0%">
-erkennen, erkannte, erkannt
-beachten, beachtete, beachtet
-beraten, beriet, beraten
-denken, dachte, gedacht
-ergeben, ergab, ergeben
-lernen, lernte, gelernt
-berichten, berichtete, berichtet
-verbessern, verbesserte, verbessert
-bestätigen, bestätigte, bestätigt
-schließen, schloss, geschlossen
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
+erkennen
+erkannte
+erkannt
+erkennt
+hat erkannt
+<break time="500ms"/>
+beachten
+beachtete
+beachtet
+beachtet
+hat beachtet
+<break time="500ms"/>
+beraten
+beriet
+beraten
+berät
+hat beraten
+<break time="500ms"/>
+denken
+dachte
+gedacht
+denkt
+hat gedacht
+<break time="500ms"/>
+ergeben
+ergab
+ergeben
+ergibt
+hat ergeben
+<break time="500ms"/>
+lernen
+lernte
+gelernt
+lernt
+hat gelernt
+<break time="500ms"/>
+berichten
+berichtete
+berichtet
+berichtet
+hat berichtet
+<break time="500ms"/>
+verbessern
+verbesserte
+verbessert
+verbessert
+hat verbessert
+<break time="500ms"/>
+bestätigen
+bestätigte
+bestätigt
+bestätigt
+hat bestätigt
+<break time="500ms"/>
+schließen
+schloss
+geschlossen
+schließt
+hat geschlossen
 </prosody>
 </voice>
 </speak>

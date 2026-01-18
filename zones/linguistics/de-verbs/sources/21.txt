@@ -1,16 +1,66 @@
-<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="de-DE-KatjaNeural">
-<prosody rate="-30%" pitch="0%">
-variieren, variierte, variiert
-befreien, befreite, befreit
-vereinbaren, vereinbarte, vereinbart
-vermissen, vermisste, vermisst
-wiederholen, wiederholte, wiederholt
-anfangen, fing an, angefangen
-ausbauen, baute aus, ausgebaut
-einrichten, richtete ein, eingerichtet
-festlegen, legte fest, festgelegt
-steigern, steigerte, gesteigert
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
+variieren
+variierte
+variiert
+variiert
+hat variiert
+<break time="500ms"/>
+befreien
+befreite
+befreit
+befreit
+hat befreit
+<break time="500ms"/>
+vereinbaren
+vereinbarte
+vereinbart
+vereinbart
+hat vereinbart
+<break time="500ms"/>
+vermissen
+vermisste
+vermisst
+vermisst
+hat vermisst
+<break time="500ms"/>
+wiederholen
+wiederholte
+wiederholt
+wiederholt
+hat wiederholt
+<break time="500ms"/>
+anfangen
+fing an
+angefangen
+fängt an
+hat angefangen
+<break time="500ms"/>
+ausbauen
+baute aus
+ausgebaut
+baut aus
+hat ausgebaut
+<break time="500ms"/>
+einrichten
+richtete ein
+eingerichtet
+richtet ein
+hat eingerichtet
+<break time="500ms"/>
+festlegen
+legte fest
+festgelegt
+legt fest
+hat festgelegt
+<break time="500ms"/>
+steigern
+steigerte
+gesteigert
+steigert
+hat gesteigert
 </prosody>
 </voice>
 </speak>

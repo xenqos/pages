@@ -1,16 +1,66 @@
-<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="de-DE-KatjaNeural">
-<prosody rate="-30%" pitch="0%">
-auswählen, wählte aus, ausgewählt
-gewährleisten, gewährleistete, gewährleistet
-orientieren, orientierte, orientiert
-regeln, regelte, geregelt
-studieren, studierte, studiert
-beantragen, beantragte, beantragt
-durchsetzen, setzte durch, durchgesetzt
-durchsetzen, setzte durch, durchgesetzt
-entfernen, entfernte, entfernt
-klingen, klang, geklungen
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
+auswählen
+wählte aus
+ausgewählt
+wählt aus
+hat ausgewählt
+<break time="500ms"/>
+gewährleisten
+gewährleistete
+gewährleistet
+gewährleistet
+hat gewährleistet
+<break time="500ms"/>
+orientieren
+orientierte
+orientiert
+orientiert
+hat orientiert
+<break time="500ms"/>
+regeln
+regelte
+geregelt
+regelt
+hat geregelt
+<break time="500ms"/>
+studieren
+studierte
+studiert
+studiert
+hat studiert
+<break time="500ms"/>
+beantragen
+beantragte
+beantragt
+beantragt
+hat beantragt
+<break time="500ms"/>
+durchsetzen
+setzte durch
+durchgesetzt
+setzt durch
+hat durchgesetzt
+<break time="500ms"/>
+durchsetzen
+setzte durch
+durchgesetzt
+setzt durch
+hat durchgesetzt
+<break time="500ms"/>
+entfernen
+entfernte
+entfernt
+entfernt
+hat entfernt
+<break time="500ms"/>
+klingen
+klang
+geklungen
+klingt
+hat geklungen
 </prosody>
 </voice>
 </speak>

@@ -1,16 +1,66 @@
-<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="de-DE-KatjaNeural">
-<prosody rate="-30%" pitch="0%">
-installieren, installierte, installiert
-verabschieden, verabschiedete, verabschiedet
-anpassen, passte an, angepasst
-anpassen, passte an, angepasst
-eingreifen, griff ein, eingegriffen
-heben, hob, gehoben
-unterhalten, unterhielt, unterhalten
-verschieben, verschob, verschoben
-vertrauen, vertraute, vertraut
-bewahren, bewahrte, bewahrt
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
+installieren
+installierte
+installiert
+installiert
+hat installiert
+<break time="500ms"/>
+verabschieden
+verabschiedete
+verabschiedet
+verabschiedet
+hat verabschiedet
+<break time="500ms"/>
+anpassen
+passte an
+angepasst
+passt an
+hat angepasst
+<break time="500ms"/>
+anpassen
+passte an
+angepasst
+passt an
+hat angepasst
+<break time="500ms"/>
+eingreifen
+griff ein
+eingegriffen
+greift ein
+hat eingegriffen
+<break time="500ms"/>
+heben
+hob
+gehoben
+hebt
+hat gehoben
+<break time="500ms"/>
+unterhalten
+unterhielt
+unterhalten
+unterhält
+hat unterhalten
+<break time="500ms"/>
+verschieben
+verschob
+verschoben
+verschiebt
+hat verschoben
+<break time="500ms"/>
+vertrauen
+vertraute
+vertraut
+vertraut
+hat vertraut
+<break time="500ms"/>
+bewahren
+bewahrte
+bewahrt
+bewahrt
+hat bewahrt
 </prosody>
 </voice>
 </speak>

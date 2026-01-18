@@ -1,16 +1,66 @@
-<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="de-DE-KatjaNeural">
-<prosody rate="-30%" pitch="0%">
-pfeifen, pfiff, gepfiffen
-preisen, pries, gepriesen
-reflektieren, reflektierte, reflektiert
-rinnen, rann, geronnen
-saugen, saugte, gesaugt
-saugen, sog, gesogen
-schleichen, schlich, geschlichen
-schleifen, schliff, geschliffen
-sinnen, sann, gesonnen
-spinnen, spann, gesponnen
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
+pfeifen
+pfiff
+gepfiffen
+pfeift
+hat gepfiffen
+<break time="500ms"/>
+preisen
+pries
+gepriesen
+preist
+hat gepriesen
+<break time="500ms"/>
+reflektieren
+reflektierte
+reflektiert
+reflektiert
+hat reflektiert
+<break time="500ms"/>
+rinnen
+rann
+geronnen
+rinnt
+ist geronnen
+<break time="500ms"/>
+saugen
+saugte
+gesaugt
+saugt
+hat gesaugt
+<break time="500ms"/>
+saugen
+sog
+gesogen
+saugt
+hat gesogen
+<break time="500ms"/>
+schleichen
+schlich
+geschlichen
+schleicht
+ist geschlichen
+<break time="500ms"/>
+schleifen
+schliff
+geschliffen
+schleift
+hat geschliffen
+<break time="500ms"/>
+sinnen
+sann
+gesonnen
+sinnt
+hat gesonnen
+<break time="500ms"/>
+spinnen
+spann
+gesponnen
+spinnt
+hat gesponnen
 </prosody>
 </voice>
 </speak>

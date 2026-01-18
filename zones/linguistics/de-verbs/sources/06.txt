@@ -1,16 +1,66 @@
-<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="de-DE-KatjaNeural">
-<prosody rate="-30%" pitch="0%">
-bestehen, bestand, bestanden
-gewinnen, gewann, gewonnen
-wissen, wusste, gewusst
-treffen, traf, getroffen
-bilden, bildete, gebildet
-schaffen, schuf, geschaffen
-unterstützen, unterstützte, unterstützt
-fahren, fuhr, gefahren
-warten, wartete, gewartet
-kennen, kannte, gekannt
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
+bestehen
+bestand
+bestanden
+besteht
+hat bestanden
+<break time="500ms"/>
+gewinnen
+gewann
+gewonnen
+gewinnt
+hat gewonnen
+<break time="500ms"/>
+wissen
+wusste
+gewusst
+weiß
+hat gewusst
+<break time="500ms"/>
+treffen
+traf
+getroffen
+trifft
+hat getroffen
+<break time="500ms"/>
+bilden
+bildete
+gebildet
+bildet
+hat gebildet
+<break time="500ms"/>
+schaffen
+schuf
+geschaffen
+schafft
+hat geschaffen
+<break time="500ms"/>
+unterstützen
+unterstützte
+unterstützt
+unterstützt
+hat unterstützt
+<break time="500ms"/>
+fahren
+fuhr
+gefahren
+fährt
+ist/hat gefahren
+<break time="500ms"/>
+warten
+wartete
+gewartet
+wartet
+hat gewartet
+<break time="500ms"/>
+kennen
+kannte
+gekannt
+kennt
+hat gekannt
 </prosody>
 </voice>
 </speak>

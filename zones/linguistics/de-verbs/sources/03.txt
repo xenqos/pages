@@ -1,16 +1,66 @@
-<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="de-DE-KatjaNeural">
-<prosody rate="-30%" pitch="0%">
-tun, tat, getan
-suchen, suchte, gesucht
-spielen, spielte, gespielt
-halten, hielt, gehalten
-lassen, ließ, gelassen
-arbeiten, arbeitete, gearbeitet
-nehmen, nahm, genommen
-beginnen, begann, begonnen
-führen, führte, geführt
-helfen, half, geholfen
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
+tun
+tat
+getan
+tut
+hat getan
+<break time="500ms"/>
+suchen
+suchte
+gesucht
+sucht
+hat gesucht
+<break time="500ms"/>
+spielen
+spielte
+gespielt
+spielt
+hat gespielt
+<break time="500ms"/>
+halten
+hielt
+gehalten
+hält
+hat gehalten
+<break time="500ms"/>
+lassen
+ließ
+gelassen
+lässt
+hat gelassen
+<break time="500ms"/>
+arbeiten
+arbeitete
+gearbeitet
+arbeitet
+hat gearbeitet
+<break time="500ms"/>
+nehmen
+nahm
+genommen
+nimmt
+hat genommen
+<break time="500ms"/>
+beginnen
+begann
+begonnen
+beginnt
+hat begonnen
+<break time="500ms"/>
+führen
+führte
+geführt
+führt
+hat geführt
+<break time="500ms"/>
+helfen
+half
+geholfen
+hilft
+hat geholfen
 </prosody>
 </voice>
 </speak>

@@ -1,16 +1,66 @@
-<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="de-DE-KatjaNeural">
-<prosody rate="-30%" pitch="0%">
-einleiten, leitete ein, eingeleitet
-empfinden, empfand, empfunden
-entwerfen, entwarf, entworfen
-entziehen, entzog, entzogen
-erfinden, erfand, erfunden
-experimentieren, experimentierte, experimentiert
-festsetzen, setzte fest, festgesetzt
-frieren, fror, gefroren
-graben, grub, gegraben
-kopieren, kopierte, kopiert
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
+einleiten
+leitete ein
+eingeleitet
+leitet ein
+hat eingeleitet
+<break time="500ms"/>
+empfinden
+empfand
+empfunden
+empfindet
+hat empfunden
+<break time="500ms"/>
+entwerfen
+entwarf
+entworfen
+entwirft
+hat entworfen
+<break time="500ms"/>
+entziehen
+entzog
+entzogen
+entzieht
+hat entzogen
+<break time="500ms"/>
+erfinden
+erfand
+erfunden
+erfindet
+hat erfunden
+<break time="500ms"/>
+experimentieren
+experimentierte
+experimentiert
+experimentiert
+hat experimentiert
+<break time="500ms"/>
+festsetzen
+setzte fest
+festgesetzt
+setzt fest
+hat festgesetzt
+<break time="500ms"/>
+frieren
+fror
+gefroren
+friert
+hat gefroren
+<break time="500ms"/>
+graben
+grub
+gegraben
+gräbt
+hat gegraben
+<break time="500ms"/>
+kopieren
+kopierte
+kopiert
+kopiert
+hat kopiert
 </prosody>
 </voice>
 </speak>

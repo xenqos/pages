@@ -1,16 +1,67 @@
-<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="de-DE-KatjaNeural">
-<prosody rate="-30%" pitch="0%">
-eintragen, trug ein, eingetragen
-weichen, wich, gewichen
-brechen, brach, gebrochen
-feststellen, stellte fest, festgestellt
-verfolgen, verfolgte, verfolgt
-beschließen, beschloss, beschlossen
-beschreiben, beschrieb, beschrieben
-klären, klärte, geklärt
-reduzieren, reduzierte, reduziert
-verbinden, verband, verbunden
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
+eintragen
+trug ein
+eingetragen
+trägt ein
+hat eingetragen
+<break time="500ms"/>
+weichen
+wich
+gewichen
+weicht
+ist gewichen
+<break time="500ms"/>
+brechen
+brach
+gebrochen
+bricht
+hat gebrochen
+ist gebrochen
+<break time="500ms"/>
+feststellen
+stellte fest
+festgestellt
+stellt fest
+hat festgestellt
+<break time="500ms"/>
+verfolgen
+verfolgte
+verfolgt
+verfolgt
+hat verfolgt
+<break time="500ms"/>
+beschließen
+beschloss
+beschlossen
+beschließt
+hat beschlossen
+<break time="500ms"/>
+beschreiben
+beschrieb
+beschrieben
+beschreibt
+hat beschrieben
+<break time="500ms"/>
+klären
+klärte
+geklärt
+klärt
+hat geklärt
+<break time="500ms"/>
+reduzieren
+reduzierte
+reduziert
+reduziert
+hat reduziert
+<break time="500ms"/>
+verbinden
+verband
+verbunden
+verbindet
+hat verbunden
 </prosody>
 </voice>
 </speak>

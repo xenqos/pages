@@ -1,16 +1,66 @@
-<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="de-DE-KatjaNeural">
-<prosody rate="-30%" pitch="0%">
-einhalten, hielt ein, eingehalten
-gießen, goss, gegossen
-kennzeichnen, kennzeichnete, gekennzeichnet
-meiden, mied, gemieden
-nachgehen, ging nach, nachgegangen
-optimieren, optimierte, optimiert
-sicherstellen, stellte sicher, sichergestellt
-umstellen, stellte um, umgestellt
-unterbrechen, unterbrach, unterbrochen
-unterstreichen, unterstrich, unterstrichen
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
+einhalten
+hielt ein
+eingehalten
+hält ein
+hat eingehalten
+<break time="500ms"/>
+gießen
+goss
+gegossen
+gießt
+hat gegossen
+<break time="500ms"/>
+kennzeichnen
+kennzeichnete
+gekennzeichnet
+kennzeichnet
+hat gekennzeichnet
+<break time="500ms"/>
+meiden
+mied
+gemieden
+meidet
+hat gemieden
+<break time="500ms"/>
+nachgehen
+ging nach
+nachgegangen
+geht nach
+ist nachgegangen
+<break time="500ms"/>
+optimieren
+optimierte
+optimiert
+optimiert
+hat optimiert
+<break time="500ms"/>
+sicherstellen
+stellte sicher
+sichergestellt
+stellt sicher
+hat sichergestellt
+<break time="500ms"/>
+umstellen
+stellte um
+umgestellt
+stellt um
+hat umgestellt
+<break time="500ms"/>
+unterbrechen
+unterbrach
+unterbrochen
+unterbricht
+hat unterbrochen
+<break time="500ms"/>
+unterstreichen
+unterstrich
+unterstrichen
+unterstreicht
+hat unterstrichen
 </prosody>
 </voice>
 </speak>

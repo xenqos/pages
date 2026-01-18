@@ -1,16 +1,66 @@
-<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="de-DE-KatjaNeural">
-<prosody rate="-30%" pitch="0%">
-bersten, barst, geborsten
-einordnen, ordnete ein, eingeordnet
-entsorgen, entsorgte, entsorgt
-erwägen, erwog, erwogen
-freilassen, ließ frei, freigelassen
-hervorbringen, brachte hervor, hervorgebracht
-kneifen, kniff, gekniffen
-kriechen, kroch, gekrochen
-lügen, log, gelogen
-präzisieren, präzisierte, präzisiert
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
+bersten
+barst
+geborsten
+birst
+ist geborsten
+<break time="500ms"/>
+einordnen
+ordnete ein
+eingeordnet
+ordnet ein
+hat eingeordnet
+<break time="500ms"/>
+entsorgen
+entsorgte
+entsorgt
+entsorgt
+hat entsorgt
+<break time="500ms"/>
+erwägen
+erwog
+erwogen
+erwägt
+hat erwogen
+<break time="500ms"/>
+freilassen
+ließ frei
+freigelassen
+lässt frei
+hat freigelassen
+<break time="500ms"/>
+hervorbringen
+brachte hervor
+hervorgebracht
+bringt hervor
+hat hervorgebracht
+<break time="500ms"/>
+kneifen
+kniff
+gekniffen
+kneift
+hat gekniffen
+<break time="500ms"/>
+kriechen
+kroch
+gekrochen
+kriecht
+ist gekrochen
+<break time="500ms"/>
+lügen
+log
+gelogen
+lügt
+hat gelogen
+<break time="500ms"/>
+präzisieren
+präzisierte
+präzisiert
+präzisiert
+hat präzisiert
 </prosody>
 </voice>
 </speak>

@@ -1,16 +1,66 @@
-<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="de-DE-KatjaNeural">
-<prosody rate="-30%" pitch="0%">
-verlagern, verlagerte, verlagert
-vollziehen, vollzog, vollzogen
-vorsehen, sah vor, vorgesehen
-zuordnen, ordnete zu, zugeordnet
-übergehen, ging über, übergegangen
-abhängen, hing ab, abgehangen
-abmelden, meldete ab, abgemeldet
-abweichen, wich ab, abgewichen
-anheben, hob an, angehoben
-ausstellen, stellte aus, ausgestellt
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
+verlagern
+verlagerte
+verlagert
+verlagert
+hat verlagert
+<break time="500ms"/>
+vollziehen
+vollzog
+vollzogen
+vollzieht
+hat vollzogen
+<break time="500ms"/>
+vorsehen
+sah vor
+vorgesehen
+sieht vor
+hat vorgesehen
+<break time="500ms"/>
+zuordnen
+ordnete zu
+zugeordnet
+ordnet zu
+hat zugeordnet
+<break time="500ms"/>
+übergehen
+ging über
+übergegangen
+geht über
+ist übergegangen
+<break time="500ms"/>
+abhängen
+hing ab
+abgehangen
+hängt ab
+hat abgehangen
+<break time="500ms"/>
+abmelden
+meldete ab
+abgemeldet
+meldet ab
+hat abgemeldet
+<break time="500ms"/>
+abweichen
+wich ab
+abgewichen
+weicht ab
+ist abgewichen
+<break time="500ms"/>
+anheben
+hob an
+angehoben
+hebt an
+hat angehoben
+<break time="500ms"/>
+ausstellen
+stellte aus
+ausgestellt
+stellt aus
+hat ausgestellt
 </prosody>
 </voice>
 </speak>

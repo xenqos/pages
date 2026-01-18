@@ -1,16 +1,66 @@
-<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="de-DE-KatjaNeural">
-<prosody rate="-30%" pitch="0%">
-stellen, stellte, gestellt
-bekommen, bekam, bekommen
-fallen, fiel, gefallen
-erwarten, erwartete, erwartet
-gelten, galt, gegolten
-dürfen, durfte, gedurft
-entstehen, entstand, entstanden
-sprechen, sprach, gesprochen
-zeigen, zeigte, gezeigt
-laufen, lief, gelaufen
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
+stellen
+stellte
+gestellt
+stellt
+hat gestellt
+<break time="500ms"/>
+bekommen
+bekam
+bekommen
+bekommt
+hat bekommen
+<break time="500ms"/>
+fallen
+fiel
+gefallen
+fällt
+ist gefallen
+<break time="500ms"/>
+erwarten
+erwartete
+erwartet
+erwartet
+hat erwartet
+<break time="500ms"/>
+gelten
+galt
+gegolten
+gilt
+hat gegolten
+<break time="500ms"/>
+dürfen
+durfte
+gedurft
+darf
+hat gedurft
+<break time="500ms"/>
+entstehen
+entstand
+entstanden
+entsteht
+ist entstanden
+<break time="500ms"/>
+sprechen
+sprach
+gesprochen
+spricht
+hat gesprochen
+<break time="500ms"/>
+zeigen
+zeigte
+gezeigt
+zeigt
+hat gezeigt
+<break time="500ms"/>
+laufen
+lief
+gelaufen
+läuft
+ist gelaufen
 </prosody>
 </voice>
 </speak>

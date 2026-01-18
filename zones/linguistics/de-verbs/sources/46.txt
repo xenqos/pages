@@ -1,16 +1,66 @@
-<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="de-DE-KatjaNeural">
-<prosody rate="-30%" pitch="0%">
-auswerten, wertete aus, ausgewertet
-beauftragen, beauftragte, beauftragt
-begreifen, begriff, begriffen
-beitreten, trat bei, beigetreten
-braten, briet, gebraten
-einschätzen, schätzte ein, eingeschätzt
-eliminieren, eliminierte, eliminiert
-entgegenkommen, kam entgegen, entgegengekommen
-erforschen, erforschte, erforscht
-erneuern, erneuerte, erneuert
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
+auswerten
+wertete aus
+ausgewertet
+wertet aus
+hat ausgewertet
+<break time="500ms"/>
+beauftragen
+beauftragte
+beauftragt
+beauftragt
+hat beauftragt
+<break time="500ms"/>
+begreifen
+begriff
+begriffen
+begreift
+hat begriffen
+<break time="500ms"/>
+beitreten
+trat bei
+beigetreten
+tritt bei
+ist beigetreten
+<break time="500ms"/>
+braten
+briet
+gebraten
+brät
+hat gebraten
+<break time="500ms"/>
+einschätzen
+schätzte ein
+eingeschätzt
+schätzt ein
+hat eingeschätzt
+<break time="500ms"/>
+eliminieren
+eliminierte
+eliminiert
+eliminiert
+hat eliminiert
+<break time="500ms"/>
+entgegenkommen
+kam entgegen
+entgegengekommen
+kommt entgegen
+ist entgegengekommen
+<break time="500ms"/>
+erforschen
+erforschte
+erforscht
+erforscht
+hat erforscht
+<break time="500ms"/>
+erneuern
+erneuerte
+erneuert
+erneuert
+hat erneuert
 </prosody>
 </voice>
 </speak>

@@ -1,16 +1,66 @@
-<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="de-DE-KatjaNeural">
-<prosody rate="-30%" pitch="0%">
-verknüpfen, verknüpfte, verknüpft
-versäumen, versäumte, versäumt
-vorschlagen, schlug vor, vorgeschlagen
-wiederherstellen, stellte wieder her, wiederhergestellt
-zubereiten, bereitete zu, zubereitet
-zurückgreifen, griff zurück, zurückgegriffen
-überdenken, überdachte, überdacht
-überweisen, überwies, überwiesen
-auftauchen, tauchte auf, aufgetaucht
-aufzeichnen, zeichnete auf, aufgezeichnet
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
+verknüpfen
+verknüpfte
+verknüpft
+verknüpft
+hat verknüpft
+<break time="500ms"/>
+versäumen
+versäumte
+versäumt
+versäumt
+hat versäumt
+<break time="500ms"/>
+vorschlagen
+schlug vor
+vorgeschlagen
+schlägt vor
+hat vorgeschlagen
+<break time="500ms"/>
+wiederherstellen
+stellte wieder her
+wiederhergestellt
+stellt wieder her
+hat wiederhergestellt
+<break time="500ms"/>
+zubereiten
+bereitete zu
+zubereitet
+bereitet zu
+hat zubereitet
+<break time="500ms"/>
+zurückgreifen
+griff zurück
+zurückgegriffen
+greift zurück
+hat zurückgegriffen
+<break time="500ms"/>
+überdenken
+überdachte
+überdacht
+überdenkt
+hat überdacht
+<break time="500ms"/>
+überweisen
+überwies
+überwiesen
+überweist
+hat überwiesen
+<break time="500ms"/>
+auftauchen
+tauchte auf
+aufgetaucht
+taucht auf
+ist aufgetaucht
+<break time="500ms"/>
+aufzeichnen
+zeichnete auf
+aufgezeichnet
+zeichnet auf
+hat aufgezeichnet
 </prosody>
 </voice>
 </speak>

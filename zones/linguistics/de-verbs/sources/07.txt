@@ -1,16 +1,66 @@
-<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="de-DE-KatjaNeural">
-<prosody rate="-30%" pitch="0%">
-ziehen, zog, gezogen
-gleichen, glich, geglichen
-zahlen, zahlte, gezahlt
-verstehen, verstand, verstanden
-vergessen, vergaß, vergessen
-nennen, nannte, genannt
-legen, legte, gelegt
-verlieren, verlor, verloren
-lesen, las, gelesen
-schreiben, schrieb, geschrieben
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
+ziehen
+zog
+gezogen
+zieht
+hat/ist gezogen
+<break time="500ms"/>
+gleichen
+glich
+geglichen
+gleicht
+hat geglichen
+<break time="500ms"/>
+zahlen
+zahlte
+gezahlt
+zahlt
+hat gezahlt
+<break time="500ms"/>
+verstehen
+verstand
+verstanden
+versteht
+hat verstanden
+<break time="500ms"/>
+vergessen
+vergaß
+vergessen
+vergisst
+hat vergessen
+<break time="500ms"/>
+nennen
+nannte
+genannt
+nennt
+hat genannt
+<break time="500ms"/>
+legen
+legte
+gelegt
+legt
+hat gelegt
+<break time="500ms"/>
+verlieren
+verlor
+verloren
+verliert
+hat verloren
+<break time="500ms"/>
+lesen
+las
+gelesen
+liest
+hat gelesen
+<break time="500ms"/>
+schreiben
+schrieb
+geschrieben
+schreibt
+hat geschrieben
 </prosody>
 </voice>
 </speak>

@@ -1,16 +1,67 @@
-<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="de-DE-KatjaNeural">
-<prosody rate="-30%" pitch="0%">
-treten, trat, getreten
-verhindern, verhinderte, verhindert
-sitzen, saß, gesessen
-empfehlen, empfahl, empfohlen
-reden, redete, geredet
-bestimmen, bestimmte, bestimmt
-verwenden, verwendete, verwendet
-wirken, wirkte, gewirkt
-heißen, hieß, geheißen
-entwickeln, entwickelte, entwickelt
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
+treten
+trat
+getreten
+tritt
+hat getreten
+ist getreten
+<break time="500ms"/>
+verhindern
+verhinderte
+verhindert
+verhindert
+hat verhindert
+<break time="500ms"/>
+sitzen
+saß
+gesessen
+sitzt
+hat gesessen
+<break time="500ms"/>
+empfehlen
+empfahl
+empfohlen
+empfiehlt
+hat empfohlen
+<break time="500ms"/>
+reden
+redete
+geredet
+redet
+hat geredet
+<break time="500ms"/>
+bestimmen
+bestimmte
+bestimmt
+bestimmt
+hat bestimmt
+<break time="500ms"/>
+verwenden
+verwendete
+verwendet
+verwendet
+hat verwendet
+<break time="500ms"/>
+wirken
+wirkte
+gewirkt
+wirkt
+hat gewirkt
+<break time="500ms"/>
+heißen
+hieß
+geheißen
+heißt
+hat geheißen
+<break time="500ms"/>
+entwickeln
+entwickelte
+entwickelt
+entwickelt
+hat entwickelt
 </prosody>
 </voice>
 </speak>

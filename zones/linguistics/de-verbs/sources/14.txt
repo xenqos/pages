@@ -1,16 +1,66 @@
-<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="de-DE-KatjaNeural">
-<prosody rate="-30%" pitch="0%">
-warnen, warnte, gewarnt
-wohnen, wohnte, gewohnt
-überprüfen, überprüfte, überprüft
-entnehmen, entnahm, entnommen
-erinnern, erinnerte, erinnert
-fühlen, fühlte, gefühlt
-interessieren, interessierte, interessiert
-schätzen, schätzte, geschätzt
-verhalten, verhielt, verhalten
-auftreten, trat auf, aufgetreten
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
+warnen
+warnte
+gewarnt
+warnt
+hat gewarnt
+<break time="500ms"/>
+wohnen
+wohnte
+gewohnt
+wohnt
+hat gewohnt
+<break time="500ms"/>
+überprüfen
+überprüfte
+überprüft
+überprüft
+hat überprüft
+<break time="500ms"/>
+entnehmen
+entnahm
+entnommen
+entnimmt
+hat entnommen
+<break time="500ms"/>
+erinnern
+erinnerte
+erinnert
+erinnert
+hat erinnert
+<break time="500ms"/>
+fühlen
+fühlte
+gefühlt
+fühlt
+hat gefühlt
+<break time="500ms"/>
+interessieren
+interessierte
+interessiert
+interessiert
+hat interessiert
+<break time="500ms"/>
+schätzen
+schätzte
+geschätzt
+schätzt
+hat geschätzt
+<break time="500ms"/>
+verhalten
+verhielt
+verhalten
+verhält
+hat verhalten
+<break time="500ms"/>
+auftreten
+trat auf
+aufgetreten
+tritt auf
+ist aufgetreten
 </prosody>
 </voice>
 </speak>

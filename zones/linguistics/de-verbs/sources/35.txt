@@ -1,16 +1,66 @@
-<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="de-DE-KatjaNeural">
-<prosody rate="-30%" pitch="0%">
-verlegen, verlegte, verlegt
-widerstehen, widerstand, widerstanden
-überarbeiten, überarbeitete, überarbeitet
-aufklären, klärte auf, aufgeklärt
-ausüben, übte aus, ausgeübt
-beanspruchen, beanspruchte, beansprucht
-begrenzen, begrenzte, begrenzt
-beheben, behob, behoben
-betonen, betonte, betont
-bezeichnen, bezeichnete, bezeichnet
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
+verlegen
+verlegte
+verlegt
+verlegt
+hat verlegt
+<break time="500ms"/>
+widerstehen
+widerstand
+widerstanden
+widersteht
+hat widerstanden
+<break time="500ms"/>
+überarbeiten
+überarbeitete
+überarbeitet
+überarbeitet
+hat überarbeitet
+<break time="500ms"/>
+aufklären
+klärte auf
+aufgeklärt
+klärt auf
+hat aufgeklärt
+<break time="500ms"/>
+ausüben
+übte aus
+ausgeübt
+übt aus
+hat ausgeübt
+<break time="500ms"/>
+beanspruchen
+beanspruchte
+beansprucht
+beansprucht
+hat beansprucht
+<break time="500ms"/>
+begrenzen
+begrenzte
+begrenzt
+begrenzt
+hat begrenzt
+<break time="500ms"/>
+beheben
+behob
+behoben
+behebt
+hat behoben
+<break time="500ms"/>
+betonen
+betonte
+betont
+betont
+hat betont
+<break time="500ms"/>
+bezeichnen
+bezeichnete
+bezeichnet
+bezeichnet
+hat bezeichnet
 </prosody>
 </voice>
 </speak>

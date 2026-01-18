@@ -1,16 +1,66 @@
-<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="de-DE-KatjaNeural">
-<prosody rate="-30%" pitch="0%">
-darlegen, legte dar, dargelegt
-durchführen, führte durch, durchgeführt
-durchführen, führte durch, durchgeführt
-durchstehen, stand durch, durchgestanden
-einfallen, fiel ein, eingefallen
-einfügen, fügte ein, eingefügt
-einschreiten, schritt ein, eingeschritten
-einteilen, teilte ein, eingeteilt
-erhellen, erhellte, erhellt
-erlöschen, erlosch, erloschen
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
+darlegen
+legte dar
+dargelegt
+legt dar
+hat dargelegt
+<break time="500ms"/>
+durchführen
+führte durch
+durchgeführt
+führt durch
+hat durchgeführt
+<break time="500ms"/>
+durchführen
+führte durch
+durchgeführt
+führt durch
+hat durchgeführt
+<break time="500ms"/>
+durchstehen
+stand durch
+durchgestanden
+steht durch
+hat durchgestanden
+<break time="500ms"/>
+einfallen
+fiel ein
+eingefallen
+fällt ein
+ist eingefallen
+<break time="500ms"/>
+einfügen
+fügte ein
+eingefügt
+fügt ein
+hat eingefügt
+<break time="500ms"/>
+einschreiten
+schritt ein
+eingeschritten
+schreitet ein
+ist eingeschritten
+<break time="500ms"/>
+einteilen
+teilte ein
+eingeteilt
+teilt ein
+hat eingeteilt
+<break time="500ms"/>
+erhellen
+erhellte
+erhellt
+erhellt
+hat erhellt
+<break time="500ms"/>
+erlöschen
+erlosch
+erloschen
+erlischt
+ist erloschen
 </prosody>
 </voice>
 </speak>

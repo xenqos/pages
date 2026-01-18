@@ -1,16 +1,66 @@
-<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="de-DE-KatjaNeural">
-<prosody rate="-30%" pitch="0%">
-verzeichnen, verzeichnete, verzeichnet
-verzeichnen, verzeichnete, verzeichnet
-trainieren, trainierte, trainiert
-abwarten, wartete ab, abgewartet
-aufbauen, baute auf, aufgebaut
-einsetzen, setzte ein, eingesetzt
-erweitern, erweiterte, erweitert
-vorstellen, stellte vor, vorgestellt
-werfen, warf, geworfen
-beenden, beendete, beendet
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
+verzeichnen
+verzeichnete
+verzeichnet
+verzeichnet
+hat verzeichnet
+<break time="500ms"/>
+verzeichnen
+verzeichnete
+verzeichnet
+verzeichnet
+hat verzeichnet
+<break time="500ms"/>
+trainieren
+trainierte
+trainiert
+trainiert
+hat trainiert
+<break time="500ms"/>
+abwarten
+wartete ab
+abgewartet
+wartet ab
+hat abgewartet
+<break time="500ms"/>
+aufbauen
+baute auf
+aufgebaut
+baut auf
+hat aufgebaut
+<break time="500ms"/>
+einsetzen
+setzte ein
+eingesetzt
+setzt ein
+hat eingesetzt
+<break time="500ms"/>
+erweitern
+erweiterte
+erweitert
+erweitert
+hat erweitert
+<break time="500ms"/>
+vorstellen
+stellte vor
+vorgestellt
+stellt vor
+hat vorgestellt
+<break time="500ms"/>
+werfen
+warf
+geworfen
+wirft
+hat geworfen
+<break time="500ms"/>
+beenden
+beendete
+beendet
+beendet
+hat beendet
 </prosody>
 </voice>
 </speak>

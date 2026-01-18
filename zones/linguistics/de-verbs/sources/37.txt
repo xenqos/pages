@@ -1,16 +1,66 @@
-<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="de-DE-KatjaNeural">
-<prosody rate="-30%" pitch="0%">
-aufbewahren, bewahrte auf, aufbewahrt
-ausgeben, gab aus, ausgegeben
-entfalten, entfaltete, entfaltet
-erfassen, erfasste, erfasst
-erläutern, erläuterte, erläutert
-gedeihen, gedieh, gediehen
-identifizieren, identifizierte, identifiziert
-plädieren, plädierte, plädiert
-verwalten, verwaltete, verwaltet
-verwirklichen, verwirklichte, verwirklicht
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
+aufbewahren
+bewahrte auf
+aufbewahrt
+bewahrt auf
+hat aufbewahrt
+<break time="500ms"/>
+ausgeben
+gab aus
+ausgegeben
+gibt aus
+hat ausgegeben
+<break time="500ms"/>
+entfalten
+entfaltete
+entfaltet
+entfaltet
+hat entfaltet
+<break time="500ms"/>
+erfassen
+erfasste
+erfasst
+erfasst
+hat erfasst
+<break time="500ms"/>
+erläutern
+erläuterte
+erläutert
+erläutert
+hat erläutert
+<break time="500ms"/>
+gedeihen
+gedieh
+gediehen
+gedeiht
+ist gediehen
+<break time="500ms"/>
+identifizieren
+identifizierte
+identifiziert
+identifiziert
+hat identifiziert
+<break time="500ms"/>
+plädieren
+plädierte
+plädiert
+plädiert
+hat plädiert
+<break time="500ms"/>
+verwalten
+verwaltete
+verwaltet
+verwaltet
+hat verwaltet
+<break time="500ms"/>
+verwirklichen
+verwirklichte
+verwirklicht
+verwirklicht
+hat verwirklicht
 </prosody>
 </voice>
 </speak>

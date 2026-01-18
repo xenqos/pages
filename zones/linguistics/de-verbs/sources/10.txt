@@ -1,16 +1,66 @@
-<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="de-DE-KatjaNeural">
-<prosody rate="-30%" pitch="0%">
-besuchen, besuchte, besucht
-zustimmen, stimmte zu, zugestimmt
-erscheinen, erschien, erschienen
-geschehen, geschah, geschehen
-glauben, glaubte, geglaubt
-wachsen, wuchs, gewachsen
-handeln, handelte, gehandelt
-behalten, behielt, behalten
-vermeiden, vermied, vermieden
-verfügen, verfügte, verfügt
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
+besuchen
+besuchte
+besucht
+besucht
+hat besucht
+<break time="500ms"/>
+zustimmen
+stimmte zu
+zugestimmt
+stimmt zu
+hat zugestimmt
+<break time="500ms"/>
+erscheinen
+erschien
+erschienen
+erscheint
+ist erschienen
+<break time="500ms"/>
+geschehen
+geschah
+geschehen
+geschieht
+ist geschehen
+<break time="500ms"/>
+glauben
+glaubte
+geglaubt
+glaubt
+hat geglaubt
+<break time="500ms"/>
+wachsen
+wuchs
+gewachsen
+wächst
+ist gewachsen
+<break time="500ms"/>
+handeln
+handelte
+gehandelt
+handelt
+hat gehandelt
+<break time="500ms"/>
+behalten
+behielt
+behalten
+behält
+hat behalten
+<break time="500ms"/>
+vermeiden
+vermied
+vermieden
+vermeidet
+hat vermieden
+<break time="500ms"/>
+verfügen
+verfügte
+verfügt
+verfügt
+hat verfügt
 </prosody>
 </voice>
 </speak>

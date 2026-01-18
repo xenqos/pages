@@ -1,16 +1,67 @@
-<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="de-DE-KatjaNeural">
-<prosody rate="-30%" pitch="0%">
-löschen, losch, geloschen
-scheitern, scheiterte, gescheitert
-springen, sprang, gesprungen
-absolvieren, absolvierte, absolviert
-berechnen, berechnete, berechnet
-bewirken, bewirkte, bewirkt
-darstellen, stellte dar, dargestellt
-erarbeiten, erarbeitete, erarbeitet
-schießen, schoss, geschossen
-stoßen, stieß, gestoßen
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
+löschen
+losch
+geloschen
+löscht
+hat geloschen
+<break time="500ms"/>
+scheitern
+scheiterte
+gescheitert
+scheitert
+ist gescheitert
+<break time="500ms"/>
+springen
+sprang
+gesprungen
+springt
+ist gesprungen
+<break time="500ms"/>
+absolvieren
+absolvierte
+absolviert
+absolviert
+hat absolviert
+<break time="500ms"/>
+berechnen
+berechnete
+berechnet
+berechnet
+hat berechnet
+<break time="500ms"/>
+bewirken
+bewirkte
+bewirkt
+bewirkt
+hat bewirkt
+<break time="500ms"/>
+darstellen
+stellte dar
+dargestellt
+stellt dar
+hat dargestellt
+<break time="500ms"/>
+erarbeiten
+erarbeitete
+erarbeitet
+erarbeitet
+hat erarbeitet
+<break time="500ms"/>
+schießen
+schoss
+geschossen
+schießt
+hat geschossen
+<break time="500ms"/>
+stoßen
+stieß
+gestoßen
+stößt
+hat gestoßen
+ist gestoßen
 </prosody>
 </voice>
 </speak>

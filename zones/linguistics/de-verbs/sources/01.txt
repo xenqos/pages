@@ -1,16 +1,66 @@
-<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="de-DE-KatjaNeural">
-<prosody rate="-30%" pitch="0%">
-werden, wurde, geworden
-haben, hatte, gehabt
-können, konnte, gekonnt
-sein, war, gewesen
-müssen, musste, gemusst
-finden, fand, gefunden
-sollen, sollte, gesollt
-kommen, kam, gekommen
-stehen, stand, gestanden
-machen, machte, gemacht
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
+werden
+wurde
+geworden
+wird
+ist geworden
+<break time="500ms"/>
+haben
+hatte
+gehabt
+hat
+hat gehabt
+<break time="500ms"/>
+können
+konnte
+gekonnt
+kann
+hat gekonnt
+<break time="500ms"/>
+sein
+war
+gewesen
+ist
+ist gewesen
+<break time="500ms"/>
+müssen
+musste
+gemusst
+muss
+hat gemusst
+<break time="500ms"/>
+finden
+fand
+gefunden
+findet
+hat gefunden
+<break time="500ms"/>
+sollen
+sollte
+gesollt
+soll
+hat gesollt
+<break time="500ms"/>
+kommen
+kam
+gekommen
+kommt
+ist gekommen
+<break time="500ms"/>
+stehen
+stand
+gestanden
+steht
+hat gestanden
+<break time="500ms"/>
+machen
+machte
+gemacht
+macht
+hat gemacht
 </prosody>
 </voice>
 </speak>

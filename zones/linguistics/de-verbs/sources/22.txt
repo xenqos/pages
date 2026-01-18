@@ -1,16 +1,66 @@
-<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="de-DE-KatjaNeural">
-<prosody rate="-30%" pitch="0%">
-werben, warb, geworben
-betreffen, betraf, betroffen
-erledigen, erledigte, erledigt
-erzeugen, erzeugte, erzeugt
-eröffnen, eröffnete, eröffnet
-fangen, fing, gefangen
-fliehen, floh, geflohen
-investieren, investierte, investiert
-verhandeln, verhandelte, verhandelt
-verweisen, verwies, verwiesen
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
+werben
+warb
+geworben
+wirbt
+hat geworben
+<break time="500ms"/>
+betreffen
+betraf
+betroffen
+betrifft
+hat betroffen
+<break time="500ms"/>
+erledigen
+erledigte
+erledigt
+erledigt
+hat erledigt
+<break time="500ms"/>
+erzeugen
+erzeugte
+erzeugt
+erzeugt
+hat erzeugt
+<break time="500ms"/>
+eröffnen
+eröffnete
+eröffnet
+eröffnet
+hat eröffnet
+<break time="500ms"/>
+fangen
+fing
+gefangen
+fängt
+hat gefangen
+<break time="500ms"/>
+fliehen
+floh
+geflohen
+flieht
+ist geflohen
+<break time="500ms"/>
+investieren
+investierte
+investiert
+investiert
+hat investiert
+<break time="500ms"/>
+verhandeln
+verhandelte
+verhandelt
+verhandelt
+hat verhandelt
+<break time="500ms"/>
+verweisen
+verwies
+verwiesen
+verweist
+hat verwiesen
 </prosody>
 </voice>
 </speak>

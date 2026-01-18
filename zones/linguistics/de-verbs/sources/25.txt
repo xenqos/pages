@@ -1,16 +1,66 @@
-<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="de-DE-KatjaNeural">
-<prosody rate="-30%" pitch="0%">
-trinken, trank, getrunken
-widersprechen, widersprach, widersprochen
-abstimmen, stimmte ab, abgestimmt
-angeben, gab an, angegeben
-entkommen, entkam, entkommen
-erfordern, erforderte, erfordert
-herstellen, stellte her, hergestellt
-streichen, strich, gestrichen
-vorgehen, ging vor, vorgegangen
-überwachen, überwachte, überwacht
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
+trinken
+trank
+getrunken
+trinkt
+hat getrunken
+<break time="500ms"/>
+widersprechen
+widersprach
+widersprochen
+widerspricht
+hat widersprochen
+<break time="500ms"/>
+abstimmen
+stimmte ab
+abgestimmt
+stimmt ab
+hat abgestimmt
+<break time="500ms"/>
+angeben
+gab an
+angegeben
+gibt an
+hat angegeben
+<break time="500ms"/>
+entkommen
+entkam
+entkommen
+entkommt
+ist entkommen
+<break time="500ms"/>
+erfordern
+erforderte
+erfordert
+erfordert
+hat erfordert
+<break time="500ms"/>
+herstellen
+stellte her
+hergestellt
+stellt her
+hat hergestellt
+<break time="500ms"/>
+streichen
+strich
+gestrichen
+streicht
+hat gestrichen
+<break time="500ms"/>
+vorgehen
+ging vor
+vorgegangen
+geht vor
+ist vorgegangen
+<break time="500ms"/>
+überwachen
+überwachte
+überwacht
+überwacht
+hat überwacht
 </prosody>
 </voice>
 </speak>

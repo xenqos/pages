@@ -1,16 +1,66 @@
-<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="de-DE-KatjaNeural">
-<prosody rate="-30%" pitch="0%">
-binden, band, gebunden
-einnehmen, nahm ein, eingenommen
-genehmigen, genehmigte, genehmigt
-motivieren, motivierte, motiviert
-nachweisen, wies nach, nachgewiesen
-schreien, schrie, geschrien
-versichern, versicherte, versichert
-waschen, wusch, gewaschen
-agieren, agierte, agiert
-anschauen, schaute an, angeschaut
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
+binden
+band
+gebunden
+bindet
+hat gebunden
+<break time="500ms"/>
+einnehmen
+nahm ein
+eingenommen
+nimmt ein
+hat eingenommen
+<break time="500ms"/>
+genehmigen
+genehmigte
+genehmigt
+genehmigt
+hat genehmigt
+<break time="500ms"/>
+motivieren
+motivierte
+motiviert
+motiviert
+hat motiviert
+<break time="500ms"/>
+nachweisen
+wies nach
+nachgewiesen
+weist nach
+hat nachgewiesen
+<break time="500ms"/>
+schreien
+schrie
+geschrien
+schreit
+hat geschrien
+<break time="500ms"/>
+versichern
+versicherte
+versichert
+versichert
+hat versichert
+<break time="500ms"/>
+waschen
+wusch
+gewaschen
+wäscht
+hat gewaschen
+<break time="500ms"/>
+agieren
+agierte
+agiert
+agiert
+hat agiert
+<break time="500ms"/>
+anschauen
+schaute an
+angeschaut
+schaut an
+hat angeschaut
 </prosody>
 </voice>
 </speak>

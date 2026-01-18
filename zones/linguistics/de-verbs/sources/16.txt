@@ -1,16 +1,67 @@
-<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="de-DE-KatjaNeural">
-<prosody rate="-30%" pitch="0%">
-beeinflussen, beeinflusste, beeinflusst
-belegen, belegte, belegt
-erklären, erklärte, erklärt
-scheinen, schien, geschienen
-versuchen, versuchte, versucht
-essen, aß, gegessen
-gestalten, gestaltete, gestaltet
-teilnehmen, nahm teil, teilgenommen
-treiben, trieb, getrieben
-diskutieren, diskutierte, diskutiert
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
+beeinflussen
+beeinflusste
+beeinflusst
+beeinflusst
+hat beeinflusst
+<break time="500ms"/>
+belegen
+belegte
+belegt
+belegt
+hat belegt
+<break time="500ms"/>
+erklären
+erklärte
+erklärt
+erklärt
+hat erklärt
+<break time="500ms"/>
+scheinen
+schien
+geschienen
+scheint
+hat geschienen
+<break time="500ms"/>
+versuchen
+versuchte
+versucht
+versucht
+hat versucht
+<break time="500ms"/>
+essen
+aß
+gegessen
+isst
+hat gegessen
+<break time="500ms"/>
+gestalten
+gestaltete
+gestaltet
+gestaltet
+hat gestaltet
+<break time="500ms"/>
+teilnehmen
+nahm teil
+teilgenommen
+nimmt teil
+hat teilgenommen
+<break time="500ms"/>
+treiben
+trieb
+getrieben
+treibt
+hat getrieben
+ist getrieben
+<break time="500ms"/>
+diskutieren
+diskutierte
+diskutiert
+diskutiert
+hat diskutiert
 </prosody>
 </voice>
 </speak>

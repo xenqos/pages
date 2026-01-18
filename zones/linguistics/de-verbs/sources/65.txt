@@ -1,10 +1,32 @@
-<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="de-DE-KatjaNeural">
-<prosody rate="-30%" pitch="0%">
-triefen, troff, getroffen
-triefen, triefte, getrieft
-wägen, wog, gewogen
-weben, wob, gewoben
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
+triefen
+troff
+getroffen
+trieft
+hat getroffen
+ist getroffen
+<break time="500ms"/>
+triefen
+triefte
+getrieft
+trieft
+hat getrieft
+ist getrieft
+<break time="500ms"/>
+wägen
+wog
+gewogen
+wägt
+hat gewogen
+<break time="500ms"/>
+weben
+wob
+gewoben
+webt
+hat gewoben
 </prosody>
 </voice>
 </speak>

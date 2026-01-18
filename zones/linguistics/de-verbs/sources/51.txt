@@ -1,16 +1,67 @@
-<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="de-DE-KatjaNeural">
-<prosody rate="-30%" pitch="0%">
-vorziehen, zog vor, vorgezogen
-widerspiegeln, spiegelte wider, widergespiegelt
-überfordern, überforderte, überfordert
-absehen, sah ab, abgesehen
-annähern, näherte an, angenähert
-aufschieben, schob auf, aufgeschoben
-ausbilden, bildete aus, ausgebildet
-beilegen, legte bei, beigelegt
-bewilligen, bewilligte, bewilligt
-bleichen, blich, geblichen
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
+vorziehen
+zog vor
+vorgezogen
+zieht vor
+hat vorgezogen
+<break time="500ms"/>
+widerspiegeln
+spiegelte wider
+widergespiegelt
+spiegelt wider
+hat widergespiegelt
+<break time="500ms"/>
+überfordern
+überforderte
+überfordert
+überfordert
+hat überfordert
+<break time="500ms"/>
+absehen
+sah ab
+abgesehen
+sieht ab
+hat abgesehen
+<break time="500ms"/>
+annähern
+näherte an
+angenähert
+nähert an
+hat angenähert
+<break time="500ms"/>
+aufschieben
+schob auf
+aufgeschoben
+schiebt auf
+hat aufgeschoben
+<break time="500ms"/>
+ausbilden
+bildete aus
+ausgebildet
+bildet aus
+hat ausgebildet
+<break time="500ms"/>
+beilegen
+legte bei
+beigelegt
+legt bei
+hat beigelegt
+<break time="500ms"/>
+bewilligen
+bewilligte
+bewilligt
+bewilligt
+hat bewilligt
+<break time="500ms"/>
+bleichen
+blich
+geblichen
+bleicht
+hat geblichen
+ist geblichen
 </prosody>
 </voice>
 </speak>

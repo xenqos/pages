@@ -1,16 +1,66 @@
-<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="de-DE-KatjaNeural">
-<prosody rate="-30%" pitch="0%">
-ermöglichen, ermöglichte, ermöglicht
-leiden, litt, gelitten
-erstellen, erstellte, erstellt
-prüfen, prüfte, geprüft
-schlagen, schlug, geschlagen
-schützen, schützte, geschützt
-sterben, starb, gestorben
-verzichten, verzichtete, verzichtet
-fortsetzen, setzte fort, fortgesetzt
-fördern, förderte, gefördert
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
+ermöglichen
+ermöglichte
+ermöglicht
+ermöglicht
+hat ermöglicht
+<break time="500ms"/>
+leiden
+litt
+gelitten
+leidet
+hat gelitten
+<break time="500ms"/>
+erstellen
+erstellte
+erstellt
+erstellt
+hat erstellt
+<break time="500ms"/>
+prüfen
+prüfte
+geprüft
+prüft
+hat geprüft
+<break time="500ms"/>
+schlagen
+schlug
+geschlagen
+schlägt
+hat geschlagen
+<break time="500ms"/>
+schützen
+schützte
+geschützt
+schützt
+hat geschützt
+<break time="500ms"/>
+sterben
+starb
+gestorben
+stirbt
+ist gestorben
+<break time="500ms"/>
+verzichten
+verzichtete
+verzichtet
+verzichtet
+hat verzichtet
+<break time="500ms"/>
+fortsetzen
+setzte fort
+fortgesetzt
+setzt fort
+hat fortgesetzt
+<break time="500ms"/>
+fördern
+förderte
+gefördert
+fördert
+hat gefördert
 </prosody>
 </voice>
 </speak>

@@ -1,16 +1,66 @@
-<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="de-DE-KatjaNeural">
-<prosody rate="-30%" pitch="0%">
-streiten, stritt, gestritten
-untersuchen, untersuchte, untersucht
-üben, übte, geübt
-berücksichtigen, berücksichtigte, berücksichtigt
-hinterlassen, hinterließ, hinterlassen
-schneiden, schnitt, geschnitten
-verstärken, verstärkte, verstärkt
-betreiben, betrieb, betrieben
-bewerten, bewertete, bewertet
-singen, sang, gesungen
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
+streiten
+stritt
+gestritten
+streitet
+hat gestritten
+<break time="500ms"/>
+untersuchen
+untersuchte
+untersucht
+untersucht
+hat untersucht
+<break time="500ms"/>
+üben
+übte
+geübt
+übt
+hat geübt
+<break time="500ms"/>
+berücksichtigen
+berücksichtigte
+berücksichtigt
+berücksichtigt
+hat berücksichtigt
+<break time="500ms"/>
+hinterlassen
+hinterließ
+hinterlassen
+hinterlässt
+hat hinterlassen
+<break time="500ms"/>
+schneiden
+schnitt
+geschnitten
+schneidet
+hat geschnitten
+<break time="500ms"/>
+verstärken
+verstärkte
+verstärkt
+verstärkt
+hat verstärkt
+<break time="500ms"/>
+betreiben
+betrieb
+betrieben
+betreibt
+hat betrieben
+<break time="500ms"/>
+bewerten
+bewertete
+bewertet
+bewertet
+hat bewertet
+<break time="500ms"/>
+singen
+sang
+gesungen
+singt
+hat gesungen
 </prosody>
 </voice>
 </speak>

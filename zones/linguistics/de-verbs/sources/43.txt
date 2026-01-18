@@ -1,16 +1,66 @@
-<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="de-DE-KatjaNeural">
-<prosody rate="-30%" pitch="0%">
-anregen, regte an, angeregt
-anstellen, stellte an, angestellt
-anzeigen, zeigte an, angezeigt
-ausnutzen, nutzte aus, ausgenutzt
-behindern, behinderte, behindert
-beißen, biß, gebissen
-bekräftigen, bekräftigte, bekräftigt
-brennen, brannte, gebrannt
-einschränken, schränkte ein, eingeschränkt
-koordinieren, koordinierte, koordiniert
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
+anregen
+regte an
+angeregt
+regt an
+hat angeregt
+<break time="500ms"/>
+anstellen
+stellte an
+angestellt
+stellt an
+hat angestellt
+<break time="500ms"/>
+anzeigen
+zeigte an
+angezeigt
+zeigt an
+hat angezeigt
+<break time="500ms"/>
+ausnutzen
+nutzte aus
+ausgenutzt
+nutzt aus
+hat ausgenutzt
+<break time="500ms"/>
+behindern
+behinderte
+behindert
+behindert
+hat behindert
+<break time="500ms"/>
+beißen
+biß
+gebissen
+beißt
+hat gebissen
+<break time="500ms"/>
+bekräftigen
+bekräftigte
+bekräftigt
+bekräftigt
+hat bekräftigt
+<break time="500ms"/>
+brennen
+brannte
+gebrannt
+brennt
+hat gebrannt
+<break time="500ms"/>
+einschränken
+schränkte ein
+eingeschränkt
+schränkt ein
+hat eingeschränkt
+<break time="500ms"/>
+koordinieren
+koordinierte
+koordiniert
+koordiniert
+hat koordiniert
 </prosody>
 </voice>
 </speak>

@@ -1,16 +1,66 @@
-<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="de-DE-KatjaNeural">
-<prosody rate="-30%" pitch="0%">
-abschließen, schloss ab, abgeschlossen
-antreten, trat an, angetreten
-gelingen, gelang, gelungen
-mögen, mochte, gemocht
-verstoßen, verstieß, verstoßen
-vorbereiten, bereitete vor, vorbereitet
-auslösen, löste aus, ausgelöst
-bearbeiten, bearbeitete, bearbeitet
-biegen, bog, gebogen
-festhalten, hielt fest, festgehalten
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
+abschließen
+schloss ab
+abgeschlossen
+schließt ab
+hat abgeschlossen
+<break time="500ms"/>
+antreten
+trat an
+angetreten
+tritt an
+ist angetreten
+<break time="500ms"/>
+gelingen
+gelang
+gelungen
+gelingt
+ist gelungen
+<break time="500ms"/>
+mögen
+mochte
+gemocht
+mag
+hat gemocht
+<break time="500ms"/>
+verstoßen
+verstieß
+verstoßen
+verstößt
+hat verstoßen
+<break time="500ms"/>
+vorbereiten
+bereitete vor
+vorbereitet
+bereitet vor
+hat vorbereitet
+<break time="500ms"/>
+auslösen
+löste aus
+ausgelöst
+löst aus
+hat ausgelöst
+<break time="500ms"/>
+bearbeiten
+bearbeitete
+bearbeitet
+bearbeitet
+hat bearbeitet
+<break time="500ms"/>
+biegen
+bog
+gebogen
+biegt
+hat gebogen
+<break time="500ms"/>
+festhalten
+hielt fest
+festgehalten
+hält fest
+hat festgehalten
 </prosody>
 </voice>
 </speak>

@@ -1,16 +1,66 @@
-<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="de-DE-KatjaNeural">
-<prosody rate="-30%" pitch="0%">
-vergrößern, vergrößerte, vergrößert
-zusammenfassen, fasste zusammen, zusammengefasst
-abdecken, deckte ab, abgedeckt
-abhalten, hielt ab, abgehalten
-abwenden, wendete ab, abgewendet
-aufzeigen, zeigte auf, aufgezeigt
-bedauern, bedauerte, bedauert
-durchziehen, zog durch, durchgezogen
-einbeziehen, bezog ein, einbezogen
-einbeziehen, bezog ein, einbezogen
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
+vergrößern
+vergrößerte
+vergrößert
+vergrößert
+hat vergrößert
+<break time="500ms"/>
+zusammenfassen
+fasste zusammen
+zusammengefasst
+fasst zusammen
+hat zusammengefasst
+<break time="500ms"/>
+abdecken
+deckte ab
+abgedeckt
+deckt ab
+hat abgedeckt
+<break time="500ms"/>
+abhalten
+hielt ab
+abgehalten
+hält ab
+hat abgehalten
+<break time="500ms"/>
+abwenden
+wendete ab
+abgewendet
+wendet ab
+hat abgewendet
+<break time="500ms"/>
+aufzeigen
+zeigte auf
+aufgezeigt
+zeigt auf
+hat aufgezeigt
+<break time="500ms"/>
+bedauern
+bedauerte
+bedauert
+bedauert
+hat bedauert
+<break time="500ms"/>
+durchziehen
+zog durch
+durchgezogen
+zieht durch
+hat durchgezogen
+<break time="500ms"/>
+einbeziehen
+bezog ein
+einbezogen
+bezieht ein
+hat einbezogen
+<break time="500ms"/>
+einbeziehen
+bezog ein
+einbezogen
+bezieht ein
+hat einbezogen
 </prosody>
 </voice>
 </speak>

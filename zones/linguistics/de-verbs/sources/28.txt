@@ -1,16 +1,66 @@
-<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="de-DE-KatjaNeural">
-<prosody rate="-30%" pitch="0%">
-einführen, führte ein, eingeführt
-engagieren, engagierte, engagiert
-entlasten, entlastete, entlastet
-ertragen, ertrug, ertragen
-gewähren, gewährte, gewährt
-herrschen, herrschte, geherrscht
-schweigen, schwieg, geschwiegen
-umsetzen, setzte um, umgesetzt
-umsetzen, setzte um, umgesetzt
-verbieten, verbot, verboten
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
+einführen
+führte ein
+eingeführt
+führt ein
+hat eingeführt
+<break time="500ms"/>
+engagieren
+engagierte
+engagiert
+engagiert
+hat engagiert
+<break time="500ms"/>
+entlasten
+entlastete
+entlastet
+entlastet
+hat entlastet
+<break time="500ms"/>
+ertragen
+ertrug
+ertragen
+erträgt
+hat ertragen
+<break time="500ms"/>
+gewähren
+gewährte
+gewährt
+gewährt
+hat gewährt
+<break time="500ms"/>
+herrschen
+herrschte
+geherrscht
+herrscht
+hat geherrscht
+<break time="500ms"/>
+schweigen
+schwieg
+geschwiegen
+schweigt
+hat geschwiegen
+<break time="500ms"/>
+umsetzen
+setzte um
+umgesetzt
+setzt um
+hat umgesetzt
+<break time="500ms"/>
+umsetzen
+setzte um
+umgesetzt
+setzt um
+hat umgesetzt
+<break time="500ms"/>
+verbieten
+verbot
+verboten
+verbietet
+hat verboten
 </prosody>
 </voice>
 </speak>

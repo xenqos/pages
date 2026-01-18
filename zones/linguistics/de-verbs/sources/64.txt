@@ -1,16 +1,66 @@
-<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="de-DE-KatjaNeural">
-<prosody rate="-30%" pitch="0%">
-klimmen, klomm, geklommen
-mißlingen, mißlang, mißlungen
-reiben, rieb, gerieben
-saufen, soff, gesoffen
-schelten, schalt, gescholten
-schlingen, schlang, geschlungen
-schwellen, schwoll, geschwollen
-speien, spie, gespien
-stieben, stob, gestoben
-stinken, stank, gestunken
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
+klimmen
+klomm
+geklommen
+klimmt
+ist geklommen
+<break time="500ms"/>
+mißlingen
+mißlang
+mißlungen
+mißlingt
+ist mißlungen
+<break time="500ms"/>
+reiben
+rieb
+gerieben
+reibt
+hat gerieben
+<break time="500ms"/>
+saufen
+soff
+gesoffen
+säuft
+hat gesoffen
+<break time="500ms"/>
+schelten
+schalt
+gescholten
+schilt
+hat gescholten
+<break time="500ms"/>
+schlingen
+schlang
+geschlungen
+schlingt
+hat geschlungen
+<break time="500ms"/>
+schwellen
+schwoll
+geschwollen
+schwillt
+ist geschwollen
+<break time="500ms"/>
+speien
+spie
+gespien
+speit
+hat gespien
+<break time="500ms"/>
+stieben
+stob
+gestoben
+stiebt
+ist gestoben
+<break time="500ms"/>
+stinken
+stank
+gestunken
+stinkt
+hat gestunken
 </prosody>
 </voice>
 </speak>

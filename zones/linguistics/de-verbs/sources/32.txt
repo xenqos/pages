@@ -1,16 +1,66 @@
-<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="de-DE-KatjaNeural">
-<prosody rate="-30%" pitch="0%">
-unterziehen, unterzog, unterzogen
-verbreiten, verbreitete, verbreitet
-verdeutlichen, verdeutlichte, verdeutlicht
-verschärfen, verschärfte, verschärft
-ausschließen, schloss aus, ausgeschlossen
-austauschen, tauschte aus, ausgetauscht
-bergen, barg, geborgen
-erleiden, erlitt, erlitten
-herausfinden, fand heraus, herausgefunden
-mitteilen, teilte mit, mitgeteilt
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
+unterziehen
+unterzog
+unterzogen
+unterzieht
+hat unterzogen
+<break time="500ms"/>
+verbreiten
+verbreitete
+verbreitet
+verbreitet
+hat verbreitet
+<break time="500ms"/>
+verdeutlichen
+verdeutlichte
+verdeutlicht
+verdeutlicht
+hat verdeutlicht
+<break time="500ms"/>
+verschärfen
+verschärfte
+verschärft
+verschärft
+hat verschärft
+<break time="500ms"/>
+ausschließen
+schloss aus
+ausgeschlossen
+schließt aus
+hat ausgeschlossen
+<break time="500ms"/>
+austauschen
+tauschte aus
+ausgetauscht
+tauscht aus
+hat ausgetauscht
+<break time="500ms"/>
+bergen
+barg
+geborgen
+birgt
+hat geborgen
+<break time="500ms"/>
+erleiden
+erlitt
+erlitten
+erleidet
+hat erlitten
+<break time="500ms"/>
+herausfinden
+fand heraus
+herausgefunden
+findet heraus
+hat herausgefunden
+<break time="500ms"/>
+mitteilen
+teilte mit
+mitgeteilt
+teilt mit
+hat mitgeteilt
 </prosody>
 </voice>
 </speak>

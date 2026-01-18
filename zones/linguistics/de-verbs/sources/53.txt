@@ -1,16 +1,67 @@
-<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="de-DE-KatjaNeural">
-<prosody rate="-30%" pitch="0%">
-erschrecken, erschrak, erschrocken
-fokussieren, fokussierte, fokussiert
-formieren, formierte, formiert
-freigeben, gab frei, freigegeben
-freischalten, schaltete frei, freigeschaltet
-hauen, haute/hieb, gehauen
-heranziehen, zog heran, herangezogen
-herbeiführen, führte herbei, herbeigeführt
-hervorheben, hob hervor, hervorgehoben
-konzipieren, konzipierte, konzipiert
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
+erschrecken
+erschrak
+erschrocken
+erschrickt
+ist erschrocken
+<break time="500ms"/>
+fokussieren
+fokussierte
+fokussiert
+fokussiert
+hat fokussiert
+<break time="500ms"/>
+formieren
+formierte
+formiert
+formiert
+hat formiert
+<break time="500ms"/>
+freigeben
+gab frei
+freigegeben
+gibt frei
+hat freigegeben
+<break time="500ms"/>
+freischalten
+schaltete frei
+freigeschaltet
+schaltet frei
+hat freigeschaltet
+<break time="500ms"/>
+hauen
+haute/hieb
+gehauen
+haut
+hat gehauen
+ist gehauen
+<break time="500ms"/>
+heranziehen
+zog heran
+herangezogen
+zieht heran
+hat herangezogen
+<break time="500ms"/>
+herbeiführen
+führte herbei
+herbeigeführt
+führt herbei
+hat herbeigeführt
+<break time="500ms"/>
+hervorheben
+hob hervor
+hervorgehoben
+hebt hervor
+hat hervorgehoben
+<break time="500ms"/>
+konzipieren
+konzipierte
+konzipiert
+konzipiert
+hat konzipiert
 </prosody>
 </voice>
 </speak>

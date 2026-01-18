@@ -1,16 +1,66 @@
-<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="de-DE-KatjaNeural">
-<prosody rate="-30%" pitch="0%">
-zulassen, ließ zu, zugelassen
-zurücktreten, trat zurück, zurückgetreten
-überlassen, überließ, überlassen
-überwinden, überwand, überwunden
-aufrechterhalten, erhielt aufrecht, aufrechterhalten
-speichern, speicherte, gespeichert
-verarbeiten, verarbeitete, verarbeitet
-verursachen, verursachte, verursacht
-wahrnehmen, nahm wahr, wahrgenommen
-zurückkehren, kehrte zurück, zurückgekehrt
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
+zulassen
+ließ zu
+zugelassen
+lässt zu
+hat zugelassen
+<break time="500ms"/>
+zurücktreten
+trat zurück
+zurückgetreten
+tritt zurück
+ist zurückgetreten
+<break time="500ms"/>
+überlassen
+überließ
+überlassen
+überlässt
+hat überlassen
+<break time="500ms"/>
+überwinden
+überwand
+überwunden
+überwindet
+hat überwunden
+<break time="500ms"/>
+aufrechterhalten
+erhielt aufrecht
+aufrechterhalten
+erhält aufrecht
+hat aufrechterhalten
+<break time="500ms"/>
+speichern
+speicherte
+gespeichert
+speichert
+hat gespeichert
+<break time="500ms"/>
+verarbeiten
+verarbeitete
+verarbeitet
+verarbeitet
+hat verarbeitet
+<break time="500ms"/>
+verursachen
+verursachte
+verursacht
+verursacht
+hat verursacht
+<break time="500ms"/>
+wahrnehmen
+nahm wahr
+wahrgenommen
+nimmt wahr
+hat wahrgenommen
+<break time="500ms"/>
+zurückkehren
+kehrte zurück
+zurückgekehrt
+kehrt zurück
+ist zurückgekehrt
 </prosody>
 </voice>
 </speak>

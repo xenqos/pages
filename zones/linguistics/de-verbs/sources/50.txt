@@ -1,16 +1,66 @@
-<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="de-DE-KatjaNeural">
-<prosody rate="-30%" pitch="0%">
-scheren, schor, geschoren
-schwören, schwor/schwur, geschworen
-stechen, stach, gestochen
-thematisieren, thematisierte, thematisiert
-unterbinden, unterband, unterbunden
-vereinheitlichen, vereinheitlichte, vereinheitlicht
-vermerken, vermerkte, vermerkt
-vermindern, verminderte, vermindert
-verwischen, verwischte, verwischt
-vollbringen, vollbrachte, vollbracht
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
+scheren
+schor
+geschoren
+schiert
+hat geschoren
+<break time="500ms"/>
+schwören
+schwor/schwur
+geschworen
+schwört
+hat geschworen
+<break time="500ms"/>
+stechen
+stach
+gestochen
+sticht
+ist gestochen
+<break time="500ms"/>
+thematisieren
+thematisierte
+thematisiert
+thematisiert
+hat thematisiert
+<break time="500ms"/>
+unterbinden
+unterband
+unterbunden
+unterbindet
+hat unterbunden
+<break time="500ms"/>
+vereinheitlichen
+vereinheitlichte
+vereinheitlicht
+vereinheitlicht
+hat vereinheitlicht
+<break time="500ms"/>
+vermerken
+vermerkte
+vermerkt
+vermerkt
+hat vermerkt
+<break time="500ms"/>
+vermindern
+verminderte
+vermindert
+vermindert
+hat vermindert
+<break time="500ms"/>
+verwischen
+verwischte
+verwischt
+verwischt
+hat verwischt
+<break time="500ms"/>
+vollbringen
+vollbrachte
+vollbracht
+vollbringt
+hat vollbracht
 </prosody>
 </voice>
 </speak>

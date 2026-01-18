@@ -1,16 +1,66 @@
-<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="de-DE-KatjaNeural">
-<prosody rate="-30%" pitch="0%">
-offenbaren, offenbarte, offenbart
-schrecken, schrak, geschrocken
-schwinden, schwand, geschwunden
-stehlen, stahl, gestohlen
-vertiefen, vertiefte, vertieft
-zwingen, zwang, gezwungen
-übersetzen, übersetzte, übersetzt
-ablegen, legte ab, abgelegt
-anfragen, fragte an, angefragt
-anknüpfen, knüpfte an, angeknüpft
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
+offenbaren
+offenbarte
+offenbart
+offenbart
+hat offenbart
+<break time="500ms"/>
+schrecken
+schrak
+geschrocken
+schrickt
+ist geschrocken
+<break time="500ms"/>
+schwinden
+schwand
+geschwunden
+schwindet
+ist geschwunden
+<break time="500ms"/>
+stehlen
+stahl
+gestohlen
+stiehlt
+hat gestohlen
+<break time="500ms"/>
+vertiefen
+vertiefte
+vertieft
+vertieft
+hat vertieft
+<break time="500ms"/>
+zwingen
+zwang
+gezwungen
+zwingt
+hat gezwungen
+<break time="500ms"/>
+übersetzen
+übersetzte
+übersetzt
+übersetzt
+hat übersetzt
+<break time="500ms"/>
+ablegen
+legte ab
+abgelegt
+legt ab
+hat abgelegt
+<break time="500ms"/>
+anfragen
+fragte an
+angefragt
+fragt an
+hat angefragt
+<break time="500ms"/>
+anknüpfen
+knüpfte an
+angeknüpft
+knüpft an
+hat angeknüpft
 </prosody>
 </voice>
 </speak>

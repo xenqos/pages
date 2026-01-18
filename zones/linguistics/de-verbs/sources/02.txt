@@ -1,16 +1,66 @@
-<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="de-DE-KatjaNeural">
-<prosody rate="-30%" pitch="0%">
-wollen, wollte, gewollt
-erhalten, erhielt, erhalten
-sehen, sah, gesehen
-geben, gab, gegeben
-liegen, lag, gelegen
-gehen, ging, gegangen
-bleiben, blieb, geblieben
-gehören, gehörte, gehört
-brauchen, brauchte, gebraucht
-bieten, bot, geboten
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
+wollen
+wollte
+gewollt
+will
+hat gewollt
+<break time="500ms"/>
+erhalten
+erhielt
+erhalten
+erhält
+hat erhalten
+<break time="500ms"/>
+sehen
+sah
+gesehen
+sieht
+hat gesehen
+<break time="500ms"/>
+geben
+gab
+gegeben
+gibt
+hat gegeben
+<break time="500ms"/>
+liegen
+lag
+gelegen
+liegt
+hat gelegen
+<break time="500ms"/>
+gehen
+ging
+gegangen
+geht
+ist gegangen
+<break time="500ms"/>
+bleiben
+blieb
+geblieben
+bleibt
+ist geblieben
+<break time="500ms"/>
+gehören
+gehörte
+gehört
+gehört
+hat gehört
+<break time="500ms"/>
+brauchen
+brauchte
+gebraucht
+braucht
+hat gebraucht
+<break time="500ms"/>
+bieten
+bot
+geboten
+bietet
+hat geboten
 </prosody>
 </voice>
 </speak>

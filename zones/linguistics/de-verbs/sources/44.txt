@@ -1,16 +1,67 @@
-<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="de-DE-KatjaNeural">
-<prosody rate="-30%" pitch="0%">
-lenken, lenkte, gelenkt
-nachfragen, fragte nach, nachgefragt
-reparieren, reparierte, repariert
-revidieren, revidierte, revidiert
-ringen, rang, gerungen
-schmelzen, schmolz, geschmolzen
-umkehren, kehrte um, umgekehrt
-unterbringen, brachte unter, untergebracht
-verbergen, verbarg, verborgen
-vereinen, vereinte, vereint
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
+lenken
+lenkte
+gelenkt
+lenkt
+hat gelenkt
+<break time="500ms"/>
+nachfragen
+fragte nach
+nachgefragt
+fragt nach
+hat nachgefragt
+<break time="500ms"/>
+reparieren
+reparierte
+repariert
+repariert
+hat repariert
+<break time="500ms"/>
+revidieren
+revidierte
+revidiert
+revidiert
+hat revidiert
+<break time="500ms"/>
+ringen
+rang
+gerungen
+ringt
+hat gerungen
+<break time="500ms"/>
+schmelzen
+schmolz
+geschmolzen
+schmilzt
+hat geschmolzen
+ist geschmolzen
+<break time="500ms"/>
+umkehren
+kehrte um
+umgekehrt
+kehrt um
+ist umgekehrt
+<break time="500ms"/>
+unterbringen
+brachte unter
+untergebracht
+bringt unter
+hat untergebracht
+<break time="500ms"/>
+verbergen
+verbarg
+verborgen
+verbirgt
+hat verborgen
+<break time="500ms"/>
+vereinen
+vereinte
+vereint
+vereint
+hat vereint
 </prosody>
 </voice>
 </speak>

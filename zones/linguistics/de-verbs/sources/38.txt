@@ -1,16 +1,66 @@
-<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="de-DE-KatjaNeural">
-<prosody rate="-30%" pitch="0%">
-zugreifen, griff zu, zugegriffen
-abrufen, rief ab, abgerufen
-auflösen, löste auf, aufgelöst
-ausführen, führte aus, ausgeführt
-bemerken, bemerkte, bemerkt
-beschaffen, beschaffte, beschafft
-einbauen, baute ein, eingebaut
-einreichen, reichte ein, eingereicht
-ergreifen, ergriff, ergriffen
-fügen, fügte, gefügt
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
+zugreifen
+griff zu
+zugegriffen
+greift zu
+hat zugegriffen
+<break time="500ms"/>
+abrufen
+rief ab
+abgerufen
+ruft ab
+hat abgerufen
+<break time="500ms"/>
+auflösen
+löste auf
+aufgelöst
+löst auf
+hat aufgelöst
+<break time="500ms"/>
+ausführen
+führte aus
+ausgeführt
+führt aus
+hat ausgeführt
+<break time="500ms"/>
+bemerken
+bemerkte
+bemerkt
+bemerkt
+hat bemerkt
+<break time="500ms"/>
+beschaffen
+beschaffte
+beschafft
+beschafft
+hat beschafft
+<break time="500ms"/>
+einbauen
+baute ein
+eingebaut
+baut ein
+hat eingebaut
+<break time="500ms"/>
+einreichen
+reichte ein
+eingereicht
+reicht ein
+hat eingereicht
+<break time="500ms"/>
+ergreifen
+ergriff
+ergriffen
+ergreift
+hat ergriffen
+<break time="500ms"/>
+fügen
+fügte
+gefügt
+fügt
+hat gefügt
 </prosody>
 </voice>
 </speak>

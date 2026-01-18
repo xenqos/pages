@@ -1,16 +1,67 @@
-<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="de-DE-KatjaNeural">
-<prosody rate="-30%" pitch="0%">
-markieren, markierte, markiert
-rechtfertigen, rechtfertigte, gerechtfertigt
-schwimmen, schwamm, geschwommen
-veranstalten, veranstaltete, veranstaltet
-verzögern, verzögerte, verzögert
-annehmen, nahm an, angenommen
-ansetzen, setzte an, angesetzt
-ausgleichen, glich aus, ausgeglichen
-einladen, lud ein, eingeladen
-reißen, riss, gerissen
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
+markieren
+markierte
+markiert
+markiert
+hat markiert
+<break time="500ms"/>
+rechtfertigen
+rechtfertigte
+gerechtfertigt
+rechtfertigt
+hat gerechtfertigt
+<break time="500ms"/>
+schwimmen
+schwamm
+geschwommen
+schwimmt
+ist geschwommen
+<break time="500ms"/>
+veranstalten
+veranstaltete
+veranstaltet
+veranstaltet
+hat veranstaltet
+<break time="500ms"/>
+verzögern
+verzögerte
+verzögert
+verzögert
+hat verzögert
+<break time="500ms"/>
+annehmen
+nahm an
+angenommen
+nimmt an
+hat angenommen
+<break time="500ms"/>
+ansetzen
+setzte an
+angesetzt
+setzt an
+hat angesetzt
+<break time="500ms"/>
+ausgleichen
+glich aus
+ausgeglichen
+gleicht aus
+hat ausgeglichen
+<break time="500ms"/>
+einladen
+lud ein
+eingeladen
+lädt ein
+hat eingeladen
+<break time="500ms"/>
+reißen
+riss
+gerissen
+reißt
+hat gerissen
+ist gerissen
 </prosody>
 </voice>
 </speak>

@@ -1,16 +1,66 @@
-<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="de-DE-KatjaNeural">
-<prosody rate="-30%" pitch="0%">
-einfühlen, fühlte ein, eingefühlt
-genesen, genas, genesen
-herabsetzen, setzte herab, herabgesetzt
-klarstellen, stellte klar, klargestellt
-koppeln, koppelte, gekoppelt
-leihen, lieh, geliehen
-melken, melkte, gemolken
-melken, melkte, gemelkt
-modifizieren, modifizierte, modifiziert
-offenlegen, legte offen, offengelegt
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
+einfühlen
+fühlte ein
+eingefühlt
+fühlt ein
+hat eingefühlt
+<break time="500ms"/>
+genesen
+genas
+genesen
+genest
+ist genesen
+<break time="500ms"/>
+herabsetzen
+setzte herab
+herabgesetzt
+setzt herab
+hat herabgesetzt
+<break time="500ms"/>
+klarstellen
+stellte klar
+klargestellt
+stellt klar
+hat klargestellt
+<break time="500ms"/>
+koppeln
+koppelte
+gekoppelt
+koppelt
+hat gekoppelt
+<break time="500ms"/>
+leihen
+lieh
+geliehen
+leiht
+hat geliehen
+<break time="500ms"/>
+melken
+melkte
+gemolken
+melkt
+hat gemolken
+<break time="500ms"/>
+melken
+melkte
+gemelkt
+melkt
+hat gemelkt
+<break time="500ms"/>
+modifizieren
+modifizierte
+modifiziert
+modifiziert
+hat modifiziert
+<break time="500ms"/>
+offenlegen
+legte offen
+offengelegt
+legt offen
+hat offengelegt
 </prosody>
 </voice>
 </speak>
