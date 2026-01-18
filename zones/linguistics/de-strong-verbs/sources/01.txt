@@ -1,76 +1,122 @@
-
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
 backen
 buk
 gebacken
-
+bäckt
+hat gebacken
+<break time="1000ms"/>
 backen
 backte
 gebacken
-
+backt
+hat gebacken
+<break time="1000ms"/>
 befehlen
 befahl
 befohlen
-
+befiehlt
+hat befohlen
+<break time="1000ms"/>
 beginnen
 begann
 begonnen
-
+beginnt
+hat begonnen
+<break time="1000ms"/>
 beißen
 biß
 gebissen
-
+beißt
+hat gebissen
+<break time="1000ms"/>
 bergen
 barg
 geborgen
-
+birgt
+hat geborgen
+<break time="1000ms"/>
 bersten
 barst
 geborsten
-
+birst
+ist geborsten
+<break time="1000ms"/>
 bewegen
 bewog
 bewogen
-
+bewegt
+hat bewogen
+<break time="1000ms"/>
 biegen
 bog
 gebogen
-
+biegt
+hat gebogen
+<break time="1000ms"/>
 bieten
 bot
 geboten
-
+bietet
+hat geboten
+<break time="1000ms"/>
 binden
 band
 gebunden
-
+bindet
+hat gebunden
+<break time="1000ms"/>
 bitten
 bat
 gebeten
-
+bittet
+hat gebeten
+<break time="1000ms"/>
 blasen
 blies
 geblasen
-
+bläst
+hat geblasen
+<break time="1000ms"/>
 bleiben
 blieb
 geblieben
-
+bleibt
+ist geblieben
+<break time="1000ms"/>
 bleichen
 blich
 geblichen
-
+bleicht
+hat geblichen
+ist geblichen
+<break time="1000ms"/>
 braten
 briet
 gebraten
-
+brät
+hat gebraten
+<break time="1000ms"/>
 brechen
 brach
 gebrochen
-
+bricht
+hat gebrochen
+ist gebrochen
+<break time="1000ms"/>
 brennen
 brannte
 gebrannt
-
+brennt
+hat gebrannt
+<break time="1000ms"/>
 bringen
 brachte
 gebracht
+bringt
+hat gebracht
+</prosody>
+</voice>
+</speak>

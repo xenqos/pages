@@ -1,36 +1,64 @@
-
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
 tragen
 trug
 getragen
-
+trägt
+hat getragen
+<break time="1000ms"/>
 treffen
 traf
 getroffen
-
+trifft
+hat getroffen
+<break time="1000ms"/>
 treiben
 trieb
 getrieben
-
+treibt
+hat getrieben
+ist getrieben
+<break time="1000ms"/>
 treten
 trat
 getreten
-
+tritt
+hat getreten
+ist getreten
+<break time="1000ms"/>
 triefen
 troff
 getroffen
-
+trieft
+hat getroffen
+ist getroffen
+<break time="1000ms"/>
 triefen
 triefte
 getrieft
-
+trieft
+hat getrieft
+ist getrieft
+<break time="1000ms"/>
 trinken
 trank
 getrunken
-
+trinkt
+hat getrunken
+<break time="1000ms"/>
 trügen
 trog
 getrogen
-
+trügt
+hat getrogen
+<break time="1000ms"/>
 tun
 tat
 getan
+tut
+hat getan
+</prosody>
+</voice>
+</speak>

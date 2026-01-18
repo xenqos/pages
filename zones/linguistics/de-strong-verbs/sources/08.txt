@@ -1,36 +1,60 @@
-
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
 laden
 lud
 geladen
-
+lädt
+hat geladen
+<break time="1000ms"/>
 lassen
 ließ
 gelassen
-
+lässt
+hat gelassen
+<break time="1000ms"/>
 laufen
 lief
 gelaufen
-
+läuft
+ist gelaufen
+<break time="1000ms"/>
 leiden
 litt
 gelitten
-
+leidet
+hat gelitten
+<break time="1000ms"/>
 leihen
 lieh
 geliehen
-
+leiht
+hat geliehen
+<break time="1000ms"/>
 lesen
 las
 gelesen
-
+liest
+hat gelesen
+<break time="1000ms"/>
 liegen
 lag
 gelegen
-
+liegt
+hat gelegen
+<break time="1000ms"/>
 löschen
 losch
 geloschen
-
+löscht
+hat geloschen
+<break time="1000ms"/>
 lügen
 log
 gelogen
+lügt
+hat gelogen
+</prosody>
+</voice>
+</speak>

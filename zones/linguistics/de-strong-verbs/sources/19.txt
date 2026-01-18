@@ -1,60 +1,96 @@
-
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
 wachsen
 wuchs
 gewachsen
-
+wächst
+ist gewachsen
+<break time="1000ms"/>
 wägen
 wog
 gewogen
-
+wägt
+hat gewogen
+<break time="1000ms"/>
 waschen
 wusch
 gewaschen
-
+wäscht
+hat gewaschen
+<break time="1000ms"/>
 weben
 wob
 gewoben
-
+webt
+hat gewoben
+<break time="1000ms"/>
 weichen
 wich
 gewichen
-
+weicht
+ist gewichen
+<break time="1000ms"/>
 weisen
 wies
 gewiesen
-
+weist
+hat gewiesen
+<break time="1000ms"/>
 wenden
 wandte
 gewandt
-
+wendet
+hat gewandt
+<break time="1000ms"/>
 wenden
 wendete
 gewendet
-
+wendet
+hat gewendet
+<break time="1000ms"/>
 werben
 warb
 geworben
-
+wirbt
+hat geworben
+<break time="1000ms"/>
 werden
 wurde
 geworden
-
+wird
+ist geworden
+<break time="1000ms"/>
 werfen
 warf
 geworfen
-
+wirft
+hat geworfen
+<break time="1000ms"/>
 wiegen
 wog
 gewogen
-
+wiegt
+hat gewogen
+<break time="1000ms"/>
 winden
 wand
 gewunden
-
+windet
+hat gewunden
+<break time="1000ms"/>
 wissen
 wusste
 gewusst
-
+weiß
+hat gewusst
+<break time="1000ms"/>
 wollen
 wollte
 gewollt
+will
+hat gewollt
+</prosody>
+</voice>
+</speak>

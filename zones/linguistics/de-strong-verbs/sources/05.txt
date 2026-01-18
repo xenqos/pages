@@ -1,72 +1,116 @@
-
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
 gären
 gor
 gegoren
-
+gärt
+ist gegoren
+<break time="1000ms"/>
 gebären
 gebar
 geboren
-
+gebärt
+hat geboren
+ist geboren
+<break time="1000ms"/>
 gebären
 gebar
 geboren
-
+gebiert
+hat geboren
+ist geboren
+<break time="1000ms"/>
 geben
 gab
 gegeben
-
+gibt
+hat gegeben
+<break time="1000ms"/>
 gedeihen
 gedieh
 gediehen
-
+gedeiht
+ist gediehen
+<break time="1000ms"/>
 gehen
 ging
 gegangen
-
+geht
+ist gegangen
+<break time="1000ms"/>
 gelingen
 gelang
 gelungen
-
+gelingt
+ist gelungen
+<break time="1000ms"/>
 gelten
 galt
 gegolten
-
+gilt
+hat gegolten
+<break time="1000ms"/>
 genesen
 genas
 genesen
-
+genest
+ist genesen
+<break time="1000ms"/>
 genießen
 genoss
 genossen
-
+genießt
+hat genossen
+<break time="1000ms"/>
 geschehen
 geschah
 geschehen
-
+geschieht
+ist geschehen
+<break time="1000ms"/>
 gewinnen
 gewann
 gewonnen
-
+gewinnt
+hat gewonnen
+<break time="1000ms"/>
 gießen
 goss
 gegossen
-
+gießt
+hat gegossen
+<break time="1000ms"/>
 gleichen
 glich
 geglichen
-
+gleicht
+hat geglichen
+<break time="1000ms"/>
 gleiten
 glitt
 geglitten
-
+gleitet
+ist geglitten
+<break time="1000ms"/>
 glimmen
 glomm
 geglommen
-
+glimmt
+hat geglommen
+<break time="1000ms"/>
 graben
 grub
 gegraben
-
+gräbt
+hat gegraben
+<break time="1000ms"/>
 greifen
 griff
 gegriffen
+greift
+hat gegriffen
+</prosody>
+</voice>
+</speak>

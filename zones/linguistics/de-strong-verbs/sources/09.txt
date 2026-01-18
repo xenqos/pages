@@ -1,32 +1,54 @@
-
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
 mahlen
 mahlte
 gemahlen
-
+mahlt
+hat gemahlen
+<break time="1000ms"/>
 meiden
 mied
 gemieden
-
+meidet
+hat gemieden
+<break time="1000ms"/>
 melken
 melkte
 gemolken
-
+melkt
+hat gemolken
+<break time="1000ms"/>
 melken
 melkte
 gemelkt
-
+melkt
+hat gemelkt
+<break time="1000ms"/>
 messen
 maß
 gemessen
-
+misst
+hat gemessen
+<break time="1000ms"/>
 mißlingen
 mißlang
 mißlungen
-
+mißlingt
+ist mißlungen
+<break time="1000ms"/>
 mögen
 mochte
 gemocht
-
+mag
+hat gemocht
+<break time="1000ms"/>
 müssen
 musste
 gemusst
+muss
+hat gemusst
+</prosody>
+</voice>
+</speak>

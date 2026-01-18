@@ -1,44 +1,74 @@
-
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
 fahren
 fuhr
 gefahren
-
+fährt
+hat gefahren
+ist gefahren
+<break time="1000ms"/>
 fallen
 fiel
 gefallen
-
+fällt
+ist gefallen
+<break time="1000ms"/>
 fangen
 fing
 gefangen
-
+fängt
+hat gefangen
+<break time="1000ms"/>
 fechten
 focht
 gefochten
-
+ficht
+hat gefochten
+<break time="1000ms"/>
 finden
 fand
 gefunden
-
+findet
+hat gefunden
+<break time="1000ms"/>
 flechten
 flocht
 geflochten
-
+flicht
+hat geflochten
+<break time="1000ms"/>
 fliegen
 flog
 geflogen
-
+fliegt
+hat geflogen
+ist geflogen
+<break time="1000ms"/>
 fliehen
 floh
 geflohen
-
+flieht
+ist geflohen
+<break time="1000ms"/>
 fließen
 floss
 geflossen
-
+fließt
+ist geflossen
+<break time="1000ms"/>
 fressen
 fraß
 gefressen
-
+frisst
+hat gefressen
+<break time="1000ms"/>
 frieren
 fror
 gefroren
+friert
+hat gefroren
+</prosody>
+</voice>
+</speak>

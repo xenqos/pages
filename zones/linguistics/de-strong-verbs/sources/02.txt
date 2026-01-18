@@ -1,16 +1,31 @@
-
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
 denken
 dachte
 gedacht
-
+denkt
+hat gedacht
+<break time="1000ms"/>
 dreschen
 drosch
 gedroschen
-
+drischt
+hat gedroschen
+<break time="1000ms"/>
 dringen
 drang
 gedrungen
-
+dringt
+hat gedrungen
+ist gedrungen
+<break time="1000ms"/>
 dürfen
 durfte
 gedurft
+darf
+hat gedurft
+</prosody>
+</voice>
+</speak>

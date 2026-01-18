@@ -1,76 +1,121 @@
-
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
 salzen
 salzte
 gesalzen
-
+salzt
+hat gesalzen
+<break time="1000ms"/>
 salzen
 salzte
 gesalzt
-
+salzt
+hat gesalzt
+<break time="1000ms"/>
 saufen
 soff
 gesoffen
-
+säuft
+hat gesoffen
+<break time="1000ms"/>
 saugen
 saugte
 gesaugt
-
+saugt
+hat gesaugt
+<break time="1000ms"/>
 saugen
 sog
 gesogen
-
+saugt
+hat gesogen
+<break time="1000ms"/>
 schaffen
 schuf
 geschaffen
-
+schafft
+hat geschaffen
+<break time="1000ms"/>
 scheiden
 schied
 geschieden
-
+scheidet
+hat geschieden
+ist geschieden
+<break time="1000ms"/>
 scheinen
 schien
 geschienen
-
+scheint
+hat geschienen
+<break time="1000ms"/>
 schelten
 schalt
 gescholten
-
+schilt
+hat gescholten
+<break time="1000ms"/>
 scheren
 schor
 geschoren
-
+schiert
+hat geschoren
+<break time="1000ms"/>
 schieben
 schob
 geschoben
-
+schiebt
+hat geschoben
+<break time="1000ms"/>
 schießen
 schoss
 geschossen
-
+schießt
+hat geschossen
+<break time="1000ms"/>
 schinden
 schund
 geschunden
-
+schindet
+hat geschunden
+<break time="1000ms"/>
 schlafen
 schlief
 geschlafen
-
+schläft
+hat geschlafen
+<break time="1000ms"/>
 schlagen
 schlug
 geschlagen
-
+schlägt
+hat geschlagen
+<break time="1000ms"/>
 schleichen
 schlich
 geschlichen
-
+schleicht
+ist geschlichen
+<break time="1000ms"/>
 schleifen
 schliff
 geschliffen
-
+schleift
+hat geschliffen
+<break time="1000ms"/>
 schließen
 schloss
 geschlossen
-
+schließt
+hat geschlossen
+<break time="1000ms"/>
 schlingen
 schlang
 geschlungen
+schlingt
+hat geschlungen
+</prosody>
+</voice>
+</speak>

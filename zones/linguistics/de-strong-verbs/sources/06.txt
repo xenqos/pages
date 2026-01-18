@@ -1,29 +1,49 @@
-
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
 haben
 hatte
 gehabt
-
+hat
+hat gehabt
+<break time="1000ms"/>
 halten
 hielt
 gehalten
-
+hält
+hat gehalten
+<break time="1000ms"/>
 hängen
 hing
 gehangen
-
+hängt
+hat gehangen
+<break time="1000ms"/>
 hauen
-haute
-hieb
+haute/hieb
 gehauen
-
+haut
+hat gehauen
+ist gehauen
+<break time="1000ms"/>
 heben
 hob
 gehoben
-
+hebt
+hat gehoben
+<break time="1000ms"/>
 heißen
 hieß
 geheißen
-
+heißt
+hat geheißen
+<break time="1000ms"/>
 helfen
 half
 geholfen
+hilft
+hat geholfen
+</prosody>
+</voice>
+</speak>

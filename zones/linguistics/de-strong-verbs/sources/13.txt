@@ -1,36 +1,62 @@
-
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
 raten
 riet
 geraten
-
+rät
+hat geraten
+<break time="1000ms"/>
 reiben
 rieb
 gerieben
-
+reibt
+hat gerieben
+<break time="1000ms"/>
 reißen
 riss
 gerissen
-
+reißt
+hat gerissen
+ist gerissen
+<break time="1000ms"/>
 reiten
 ritt
 geritten
-
+reitet
+hat geritten
+ist geritten
+<break time="1000ms"/>
 rennen
 rannte
 gerannt
-
+rennt
+ist gerannt
+<break time="1000ms"/>
 riechen
 roch
 gerochen
-
+riecht
+hat gerochen
+<break time="1000ms"/>
 ringen
 rang
 gerungen
-
+ringt
+hat gerungen
+<break time="1000ms"/>
 rinnen
 rann
 geronnen
-
+rinnt
+ist geronnen
+<break time="1000ms"/>
 rufen
 rief
 gerufen
+ruft
+hat gerufen
+</prosody>
+</voice>
+</speak>

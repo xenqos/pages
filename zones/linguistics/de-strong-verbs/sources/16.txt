@@ -1,72 +1,116 @@
-
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
 sitzen
 saß
 gesessen
-
+sitzt
+hat gesessen
+<break time="1000ms"/>
 sollen
 sollte
 gesollt
-
+soll
+hat gesollt
+<break time="1000ms"/>
 spalten
 spaltete
 gespalten
-
+spaltet
+hat gespalten
+ist gespalten
+<break time="1000ms"/>
 speien
 spie
 gespien
-
+speit
+hat gespien
+<break time="1000ms"/>
 spinnen
 spann
 gesponnen
-
+spinnt
+hat gesponnen
+<break time="1000ms"/>
 sprechen
 sprach
 gesprochen
-
+spricht
+hat gesprochen
+<break time="1000ms"/>
 sprießen
 spross
 gesprossen
-
+sprießt
+ist gesprossen
+<break time="1000ms"/>
 springen
 sprang
 gesprungen
-
+springt
+ist gesprungen
+<break time="1000ms"/>
 stechen
 stach
 gestochen
-
+sticht
+ist gestochen
+<break time="1000ms"/>
 stehen
 stand
 gestanden
-
+steht
+hat gestanden
+<break time="1000ms"/>
 stehlen
 stahl
 gestohlen
-
+stiehlt
+hat gestohlen
+<break time="1000ms"/>
 steigen
 stieg
 gestiegen
-
+steigt
+ist gestiegen
+<break time="1000ms"/>
 sterben
 starb
 gestorben
-
+stirbt
+ist gestorben
+<break time="1000ms"/>
 stieben
 stob
 gestoben
-
+stiebt
+ist gestoben
+<break time="1000ms"/>
 stinken
 stank
 gestunken
-
+stinkt
+hat gestunken
+<break time="1000ms"/>
 stoßen
 stieß
 gestoßen
-
+stößt
+hat gestoßen
+ist gestoßen
+<break time="1000ms"/>
 streichen
 strich
 gestrichen
-
+streicht
+hat gestrichen
+<break time="1000ms"/>
 streiten
 stritt
 gestritten
+streitet
+hat gestritten
+</prosody>
+</voice>
+</speak>

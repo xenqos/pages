@@ -1,20 +1,37 @@
-
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
 verderben
 verdarb
 verdorben
-
+verdirbt
+hat verdorben
+ist verdorben
+<break time="1000ms"/>
 verdrießen
 verdross
 verdrossen
-
+verdrießt
+hat verdrossen
+<break time="1000ms"/>
 vergessen
 vergaß
 vergessen
-
+vergisst
+hat vergessen
+<break time="1000ms"/>
 verlieren
 verlor
 verloren
-
+verliert
+hat verloren
+<break time="1000ms"/>
 verzeihen
 verzieh
 verziehen
+verzeiht
+hat verziehen
+</prosody>
+</voice>
+</speak>

@@ -1,28 +1,48 @@
-
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural">
+<prosody rate="-20%" pitch="0%">
+<break time="1010ms"/>
 kennen
 kannte
 gekannt
-
+kennt
+hat gekannt
+<break time="1000ms"/>
 klimmen
 klomm
 geklommen
-
+klimmt
+ist geklommen
+<break time="1000ms"/>
 klingen
 klang
 geklungen
-
+klingt
+hat geklungen
+<break time="1000ms"/>
 kneifen
 kniff
 gekniffen
-
+kneift
+hat gekniffen
+<break time="1000ms"/>
 kommen
 kam
 gekommen
-
+kommt
+ist gekommen
+<break time="1000ms"/>
 können
 konnte
 gekonnt
-
+kann
+hat gekonnt
+<break time="1000ms"/>
 kriechen
 kroch
 gekrochen
+kriecht
+ist gekrochen
+</prosody>
+</voice>
+</speak>
