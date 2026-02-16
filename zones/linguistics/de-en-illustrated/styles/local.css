@@ -2,7 +2,7 @@
 
 .clI1
 {
-  color:                #0070E0;
+  color:                #0070E0 !important;
   font-size:            1.800rem;
   vertical-align:       top;
   margin:               0.000rem 0.000rem 0.000rem 0.000rem;
@@ -11,13 +11,15 @@
 
 .clI2
 {
-  color:                #00A32E;
+  color:                #00A32E !important;
   font-size:            1.800rem;
   vertical-align:       top;
   margin:               0.000rem 0.000rem 0.000rem 0.000rem;
   padding:              0.000rem 0.000rem 0.000rem 0.000rem;
 }
 
+
+/*
 .clI1::before
 {
   color:                light-dark(#0070E0, #0070E0);
@@ -29,5 +31,6 @@
   color:                light-dark(#00A32E, #00A32E);
   content:              '🞉';
 }
+*/
 
 /*-----------------------------------------------------------------------------------------------*/
