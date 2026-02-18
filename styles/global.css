@@ -454,12 +454,14 @@ a:hover
 {
   color:                light-dark(#000000, #cccccc);
   text-decoration:      none;
+  line-height:          2.000rem;
 }
 
 .clIndex a:hover
 {
   color:                light-dark(#dd0000, #ff6666);
   text-decoration:      none;
+  line-height:          2.000rem;
 }
 
 a.clLinkBlue,
