@@ -1,0 +1,23 @@
+The characters are organized by vowels followed by consonants grouped by their point of articulation (the "varga" system).
+
+
+Line 1: अ आ इ ई उ ऊ (Primary Vowels)
+Line 2: ऋ ॠ ऌ ॡ (Internal/Vocalic Vowels)
+Line 3: ए ऐ ओ औ (Compound Vowels/Diphthongs)
+
+
+Vowels    स्वराः    Svarāḥ
+Consonants    व्यञ्जनानि    Vyañjanāni
+Vowels (Svaras)
+Line 1: अ (a), आ (ā), इ (i), ई (ī), उ (u), ऊ (ū)
+Line 2: ऋ (ṛ), ॠ (ṝ), ऌ (ḷ), ॡ (ḹ)
+Line 3: ए (e), ऐ (ai), ओ (o), औ (au)
+Consonants (Vyanjanas)
+These are organized by the position of the tongue and throat:
+Line 4 (Gutturals/Velars): क (ka), ख (kha), ग (ga), घ (gha), ङ (ṅa)
+Line 5 (Palatals): च (ca), छ (cha), ज (ja), झ (jha), ञ (ña)
+Line 6 (Retroflex): ट (ṭa), ठ (ṭha), ड (ḍa), ढ (ḍha), ण (ṇa)
+Line 7 (Dentals): त (ta), थ (tha), द (da), ध (dha), न (na)
+Line 8 (Labials): प (pa), फ (pha), ब (ba), भ (bha), म (ma)
+Line 9 (Semi-vowels): य (ya), र (ra), ल (la), व (va)
+Line 10 (Sibilants & Aspirate): श (śa), ष (ṣa), स (sa), ह (ha)
