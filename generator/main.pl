@@ -8,13 +8,14 @@ use warnings;
 
 our @books =
 (
-  '1|jnanamarga/jm-sadhana|Practice'
+  '0|jnanamarga/jm-sadhana|Practice'
+, '1|jnanamarga/jm-samskrta|Sanscrit'
 
-, '1|games/outline|Texas Holdem Outline'
+, '0|games/outline|Texas Holdem Outline'
 , '0|games/mathresources|Resources'
 
 , '0|linguistics/de-phonetics|Фонетика'
-, '1|linguistics/de-grammar|Грамматика'
+, '0|linguistics/de-grammar|Грамматика'
 , '0|linguistics/de-words|Слова'
 , '0|linguistics/de-nouns|Существительные'
 , '0|linguistics/de-adverbs|Наречия'

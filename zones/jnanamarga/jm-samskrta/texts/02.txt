@@ -2,10 +2,79 @@
 
 # Devanagari
 
-[|
-|अ~~a|आ~~ā|इ~~i|ई~~ī|
-|]
+<div class='clBlock'>
+<span>%[clLetter|अ]~~%[clIast|a]</span>
+<span>%[clLetter|आ]~~%[clIast|ā]</span>
+<span>%[clLetter|इ]~~%[clIast|i]</span>
+<span>%[clLetter|ई]~~%[clIast|ī]</span>
+<span>%[clLetter|उ]~~%[clIast|u]</span>
+<span>%[clLetter|ऊ]~~%[clIast|ū]</span>
+</div>
 
+<div class='clBlock'>
+<span>%[clLetter|ऋ]~~%[clIast|ṛ]</span>
+<span>%[clLetter|ॠ]~~%[clIast|ṝ]</span>
+<span>%[clLetter|ऌ]~~%[clIast|ḷ]</span>
+<span>%[clLetter|ॡ]~~%[clIast|ḹ]</span>
+</div>
 
+<div class='clBlock'>
+<span>%[clLetter|ए]~~%[clIast|e]</span>
+<span>%[clLetter|ऐ]~~%[clIast|ai]</span>
+<span>%[clLetter|ओ]~~%[clIast|o]</span>
+<span>%[clLetter|औ]~~%[clIast|au]</span>
+</div>
 
+<div class='clBlock'>
+<span>%[clLetter|क]~~%[clIast|ka]</span>
+<span>%[clLetter|ख]~~%[clIast|kha]</span>
+<span>%[clLetter|ग]~~%[clIast|ga]</span>
+<span>%[clLetter|घ]~~%[clIast|gha]</span>
+<span>%[clLetter|ङ]~~%[clIast|ṅa]</span>
+</div>
 
+<div class='clBlock'>
+<span>%[clLetter|च]~~%[clIast|ca]</span>
+<span>%[clLetter|छ]~~%[clIast|cha]</span>
+<span>%[clLetter|ज]~~%[clIast|ja]</span>
+<span>%[clLetter|झ]~~%[clIast|jha]</span>
+<span>%[clLetter|ञ]~~%[clIast|ña]</span>
+</div>
+
+<div class='clBlock'>
+<span>%[clLetter|ट]~~%[clIast|ṭa]</span>
+<span>%[clLetter|ठ]~~%[clIast|ṭha]</span>
+<span>%[clLetter|ड]~~%[clIast|ḍa]</span>
+<span>%[clLetter|ढ]~~%[clIast|ḍha]</span>
+<span>%[clLetter|ण]~~%[clIast|ṇa]</span>
+</div>
+
+<div class='clBlock'>
+<span>%[clLetter|त]~~%[clIast|ta]</span>
+<span>%[clLetter|थ]~~%[clIast|tha]</span>
+<span>%[clLetter|द]~~%[clIast|da]</span>
+<span>%[clLetter|ध]~~%[clIast|dha]</span>
+<span>%[clLetter|न]~~%[clIast|na]</span>
+</div>
+
+<div class='clBlock'>
+<span>%[clLetter|प]~~%[clIast|pa]</span>
+<span>%[clLetter|फ]~~%[clIast|pha]</span>
+<span>%[clLetter|ब]~~%[clIast|ba]</span>
+<span>%[clLetter|भ]~~%[clIast|bha]</span>
+<span>%[clLetter|म]~~%[clIast|ma]</span>
+</div>
+
+<div class='clBlock'>
+<span>%[clLetter|य]~~%[clIast|ya]</span>
+<span>%[clLetter|र]~~%[clIast|ra]</span>
+<span>%[clLetter|ल]~~%[clIast|la]</span>
+<span>%[clLetter|व]~~%[clIast|va]</span>
+</div>
+
+<div class='clBlock'>
+<span>%[clLetter|श]~~%[clIast|śa]</span>
+<span>%[clLetter|ष]~~%[clIast|ṣa]</span>
+<span>%[clLetter|स]~~%[clIast|sa]</span>
+<span>%[clLetter|ह]~~%[clIast|ha]</span>
+</div>
