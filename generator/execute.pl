@@ -8,7 +8,7 @@ use warnings;
 
 our @books =
 (
-  '1|jnanamarga/jm-sadhana|Practice'
+  '1|jnanamarga/jm-sadhana|Практика'
 , '1|linguistics/sm-devanagari|Devanagari'
 
 , '0|games/outline|Texas Holdem Outline'
