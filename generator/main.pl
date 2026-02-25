@@ -8,11 +8,11 @@ use warnings;
 
 our @books =
 (
-  '1|jnanamarga/jm-sadhana|Практика'
-, '1|linguistics/sm-devanagari|Devanagari'
-
-, '0|games/outline|Texas Holdem Outline'
-, '0|games/mathresources|Resources'
+  '1|exoterica/jm-sadhana|Практика'
+, '0|exoterica/da-daodejing|Дао Дэ Цзин'
+, '0|exoterica/da-stratagems|Стратагемы'
+, '0|exoterica/da-taiji-fuzhongwen|Тай Чи - Fu Zhong Wen'
+, '0|exoterica/da-taiji-moylinshin|Тай Чи - Moy Lin Shin'
 
 , '0|linguistics/de-phonetics|Фонетика'
 , '0|linguistics/de-grammar|Грамматика'
@@ -46,12 +46,11 @@ our @books =
 
 , '0|linguistics/mystic-rhymes|Мистические рифмы'
 
-, '0|jnanamarga/da-daodejing|Дао Дэ Цзин'
-, '0|jnanamarga/da-stratagems|Стратагемы'
-, '0|jnanamarga/da-taiji-fuzhongwen|Тай Чи - Fu Zhong Wen'
-, '0|jnanamarga/da-taiji-moylinshin|Тай Чи - Moy Lin Shin'
-
 , '0|toolbox/mn-banknotes-eur|Banknotes EUR'
+, '0|toolbox/em-electricity|Electricity'
+
+, '0|games/outline|Texas Holdem Outline'
+, '0|games/mathresources|Resources'
 );
 
 #-----------------------------------------------------------
