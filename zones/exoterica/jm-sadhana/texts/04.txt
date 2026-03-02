@@ -2,8 +2,23 @@
 
 # devanāgarī
 
+## гласные
+
+[|
+|%[s|अ]~~%[j|a]~~%[i|ɐ]|%[s|आ]~~%[j|ā]~~%[i|a]|%[s|इ]~~%[j|i]~~%[i|i]|%[s|ई]~~%[j|ī]~~%[i|iː]|%[s|उ]~~%[j|u]~~%[i|u]|%[s|ऊ]~~%[j|ū]~~%[i|uː]|
+|]
+
+<!--
+|%[m|]~~%[b|]~~%[l|]
+वेद, IAST: véda
+-->
+
+
+%[clLetterDevanagari|अ]~~%[clIast|a]~~%[l|a]
+%[clLetterDevanagari|आ]~~%[clIast|ā]~~%[l|aː]
+
 <div class='clBlockDevanagari'>
-<span>%[clLetterDevanagari|अ]~~%[clIast|a]</span>
+<span>%[clLetterDevanagari|अ]~~%[clIast|a]~~%[l|a]</span>
 <span>%[clLetterDevanagari|आ]~~%[clIast|ā]</span>
 <span>%[clLetterDevanagari|इ]~~%[clIast|i]</span>
 <span>%[clLetterDevanagari|ई]~~%[clIast|ī]</span>
