@@ -553,7 +553,6 @@ table.clNoBorder
 /* Ordered Lists                                                                                 */
 /*-----------------------------------------------------------------------------------------------*/
 
-/*
 ol
 {
   counter-reset:        li;
@@ -577,12 +576,10 @@ ol li::before
   color:                #000000;
   content:              counter(li);
   display:              inline-block;
-  font-size:            85%;
-  font-size:            100%;
+  font-size:            82%;
   width:                0.125rem;
   margin-left:          1.000rem;
 }
-*/
 
 /*-----------------------------------------------------------------------------------------------*/
 /* Unordered Lists                                                                               */

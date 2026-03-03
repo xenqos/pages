@@ -1,134 +1,80 @@
-###### Санскрит
+###### Мантры
 
-## Санскрит ##
+## Мантры ##
 
-# IAST
+# praṇava japa
 
-## Гласные
-<div class='clBlockIast'>
-<span class='clLetterIast'>%[clIast|a]~~%[l|ɐ] </span>
-<span class='clLetterIast'>%[clIast|ā]~~%[l|aː]</span>
-<span class='clLetterIast'>%[clIast|i]~~%[l|i] </span>
-<span class='clLetterIast'>%[clIast|ī]~~%[l|iː]</span>
-<span class='clLetterIast'>%[clIast|u]~~%[l|u] </span>
-<span class='clLetterIast'>%[clIast|ū]~~%[l|uː]</span>
-<span class='clLetterIast'>%[clIast|ṛ]~~%[l|ɹ̩] </span>
-<span class='clLetterIast'>%[clIast|ṝ]~~%[l|ɹ̩ː]</span>
-<span class='clLetterIast'>%[clIast|ḷ]~~%[l|l̩] </span>
-<span class='clLetterIast'>%[clIast|ḹ]~~%[l|l̩ː]</span>
-</div>
+%[m|praṇava japa] - повторение AUM ॐ
 
-## Дифтонги
-<div class='clBlockIast'>
-<span class='clLetterIast'>%[clIast|e]~~%[l|e] </span>
-<span class='clLetterIast'>%[clIast|ai]~~%[l|aːi]</span>
-<span class='clLetterIast'>%[clIast|o]~~%[l|oː] </span>
-<span class='clLetterIast'>%[clIast|au]~~%[l|aːu]</span>
-</div>
+%[m|AUM iti evaṁ dhyāyatha ātmānam]
+медитируй (созерцай) на атман как на AUM
+(Мандукья упанишада)
 
-## Анусвара (Носовые)
-[!
-воздух идёт через ротовую полость и через носовую
-!]
+## чётки - %[m|mālā]
+^[rudaraksha-mala.webp]
+[-
+чётки - %[m|mālā]
+нить - %[m|sūtra]
+бусина - %[m|akṣa] (глаз)
+бусины - %[m|rudrākṣa] (зёрна)
+разделительная бусина - %[m|meru] (гора)
+108 счётных бусин
+-]
 
-<div class='clBlockIast'>
-<span class='clLetterIast'>%[clIast|ṃ]~~%[l|ⁿ]</span>
-</div>
+## Левая рука
+^[chin-mudra.webp]
+[-
+выполняет чин-мудру
+указательный палец согнут в кольцо и касается основания большого пальца
+средний, безымянный пальцы и мизинец выпрямлены
+ладонь направлена вверх
+покоится на левом колене
+-]
 
-## Висарга (Глухой глоттальный)
-[!
-воздух идёт через ротовую полость и через носовую
-!]
+## Правая рука
+^[pranava-japa.webp]
+[-
+отсчитывает малу
+мала лежит на среднем пальце
+большой палец перемещает бусины
+рука находится на правом колене
+мала свисает с внутренней стороны ноги
+-]
 
-<div class='clBlockIast'>
-<span class='clLetterIast'>%[clIast|ḥ]~~%[l|h] х</span>
-</div>
+## Поза
+[-
+сидеть на стуле
+сидеть лицом на восток
+спина прямая
+слегка наклониться вперед
+ноги расставлены
+ступни параллельны
+-]
 
-## Заднеязычные согласные
-[!
-образуются поднятием задней части спинки языка к заднему нёбу
-!]
+## Голова
+[-
+на одной линии со спиной
+не наклонять
+-]
 
-<div class='clBlockIast'>
-<span class='clLetterIast'>%[clIast|ka]~~%[l|k] </span>
-<span class='clLetterIast'>%[clIast|kha]~~%[l|kʰ] </span>
-<span class='clLetterIast'>%[clIast|ga]~~%[l|ɟ]</span>
-<span class='clLetterIast'>%[clIast|gha]~~%[l|ɟʰ] </span>
-<span class='clLetterIast'>%[clIast|ṅa]~~%[l|ɲ]</span>
-</div>
+## Глаза
+[-
+глаза закрыты
+глаза скрещены
+глаза смотрят на межбровье или на кончике носа
+-]
 
-## Палатальные согласные
-[!
-средняя часть спинки языка, поднимается и соприкасается с твёрдым нёбом.
-!]
+## Язык
+[-
+Язык прижат к небу
+-]
 
-<div class='clBlockIast'>
-<span class='clLetterIast'>%[clIast|c]~~%[l|ʈ] </span>
-<span class='clLetterIast'>%[clIast|ch]~~%[l|ʈʰ] </span>
-<span class='clLetterIast'>%[clIast|j]~~%[l|ɖ]</span>
-<span class='clLetterIast'>%[clIast|jh]~~%[l|ɖʰ] </span>
-<span class='clLetterIast'>%[clIast|ñ]~~%[l|ɳ]</span>
-</div>
-
-## Ретрофлексные согласные
-[!
-кончик языка поднимается к твёрдому нёбу и немного загибается назад
-!]
-
-<div class='clBlockIast'>
-<span class='clLetterIast'>%[clIast|ṭ]~~%[l|ʈ] </span>
-<span class='clLetterIast'>%[clIast|ṭh]~~%[l|ʈʰ] </span>
-<span class='clLetterIast'>%[clIast|ḍ]~~%[l|ɖ]</span>
-<span class='clLetterIast'>%[clIast|ḍh]~~%[l|ɖʰ] </span>
-<span class='clLetterIast'>%[clIast|ṇ]~~%[l|ɳ]</span>
-</div>
-
-## Зубные согласные
-[!
-кончик языка ксасется верхнего ряда зубов
-!]
-
-<div class='clBlockIast'>
-<span class='clLetterIast'>%[clIast|t]~~%[l|t] </span>
-<span class='clLetterIast'>%[clIast|th]~~%[l|tʰ] </span>
-<span class='clLetterIast'>%[clIast|d]~~%[l|d]</span>
-<span class='clLetterIast'>%[clIast|dh]~~%[l|dʰ] </span>
-<span class='clLetterIast'>%[clIast|n]~~%[l|n]</span>
-</div>
-
-## Губные согласные
-[!
-образуются при участии обеих губ или нижней губой и верхними зубами
-!]
-
-<div class='clBlockIast'>
-<span class='clLetterIast'>%[clIast|p]~~%[l|p] </span>
-<span class='clLetterIast'>%[clIast|ph]~~%[l|pʰ] </span>
-<span class='clLetterIast'>%[clIast|b]~~%[l|b]</span>
-<span class='clLetterIast'>%[clIast|bh]~~%[l|bʰ] </span>
-<span class='clLetterIast'>%[clIast|m]~~%[l|m]</span>
-</div>
-
-## Аппроксиманты
-[!
-артикуляторы подходят близко друг к другу, но не смыкаются полностью
-!]
-
-<div class='clBlockIast'>
-<span class='clLetterIast'>%[clIast|y]~~%[l|j] </span>
-<span class='clLetterIast'>%[clIast|r]~~%[l|r] </span>
-<span class='clLetterIast'>%[clIast|l]~~%[l|l]</span>
-<span class='clLetterIast'>%[clIast|v]~~%[l|ʋ] </span>
-</div>
-
-## Фрикативные согласные
-[!
-артикуляторы создают заметный шум
-!]
-
-<div class='clBlockIast'>
-<span class='clLetterIast'>%[clIast|ś]~~%[l|ʃ] щ</span>
-<span class='clLetterIast'>%[clIast|ṣ]~~%[l|ʂ] ш</span>
-<span class='clLetterIast'>%[clIast|s]~~%[l|s]</span>
-<span class='clLetterIast'>%[clIast|h]~~%[l|ɦ] </span>
-</div>
+## Выполнение
+[-
+указательный палец не касается бусин
+большой палец тянет бусину по направлению к телу
+проговаривается AUM
+проговаривается три раздельных звука A, U, M
+разделительная бусина не пересекается
+после достижения разделительной бусины, развернуть малу
+-]
