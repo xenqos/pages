@@ -13,10 +13,8 @@
   display:              flex;
   flex-wrap:            wrap;
   font-size:            2.000rem;
-/*
   justify-content:      center;
   text-align:           center;
-*/
   margin:               0.000rem 0.000rem 1.000rem 0.000rem;
   padding:              0.000rem 0.000rem 0.000rem 0.000rem;
 }
@@ -25,10 +23,10 @@
 {
   color:                #007800;
   display:              inline-block;
-  font-size:            1.000rem;
-  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
+  font-size:            1.600rem;
+  margin:               0.000rem 0.400rem 0.000rem 0.400rem;
   padding:              0.000rem 0.000rem 0.000rem 0.000rem;
-  width:                1.000rem;
+  width:                2.000rem;
 }
 
 .clLetterIast
@@ -39,39 +37,18 @@
   width:                2.000rem;
 }
 
-.clIast
-{
-  color:                #880000;
-  font-size:            1.200rem;
-}
-
-.s
-{
-  color:                #007800;
-  font-size:            1.200rem;
-  width:                2.000rem;
-}
-
-.j
+.clIast,
+.m
 {
   color:                #880000;
   font-size:            1.000rem;
-  width:                2.000rem;
 }
 
-.i
+.l
 {
-  color:                #017ea1;
   font-size:            1.000rem;
-  width:                2.000rem;
 }
 
-td:has(span.s)
-{
-  text-align:           center;
-  width:                2.000rem;
-
-}
 
 .clBreak
 {

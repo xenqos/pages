@@ -8,7 +8,7 @@ use warnings;
 
 our @books =
 (
-  '1|exoterica/jm-sadhana|Практика'
+  '1|exoterica/sd-veda|Введение'
 , '0|exoterica/da-daodejing|Дао Дэ Цзин'
 , '0|exoterica/da-stratagems|Стратагемы'
 , '0|exoterica/da-taiji-fuzhongwen|Тай Чи - Fu Zhong Wen'
