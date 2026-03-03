@@ -2,133 +2,119 @@
 
 ## Санскрит ##
 
-# IAST
+# Транслитерации
+
+IAST - International Alphabet of Sanskrit Transliteration
 
 ## Гласные
-<div class='clBlockIast'>
-<span class='clLetterIast'>%[clIast|a]~~%[l|ɐ] </span>
-<span class='clLetterIast'>%[clIast|ā]~~%[l|aː]</span>
-<span class='clLetterIast'>%[clIast|i]~~%[l|i] </span>
-<span class='clLetterIast'>%[clIast|ī]~~%[l|iː]</span>
-<span class='clLetterIast'>%[clIast|u]~~%[l|u] </span>
-<span class='clLetterIast'>%[clIast|ū]~~%[l|uː]</span>
-<span class='clLetterIast'>%[clIast|ṛ]~~%[l|ɹ̩] </span>
-<span class='clLetterIast'>%[clIast|ṝ]~~%[l|ɹ̩ː]</span>
-<span class='clLetterIast'>%[clIast|ḷ]~~%[l|l̩] </span>
-<span class='clLetterIast'>%[clIast|ḹ]~~%[l|l̩ː]</span>
-</div>
+
+[|
+|%[clIast|a]|%[clIast|ā]|%[clIast|i]|%[clIast|ī]|%[clIast|u]|%[clIast|ū]|
+|%[l|ɐ]|%[l|aː]|%[l|i]|%[l|iː]|%[l|u]|%[l|uː]|
+|]
+
+[|
+|%[clIast|ṛ]~~%[l|ɹ̩]|%[clIast|ṝ]~~%[l|ɹ̩ː]|%[clIast|ḷ]~~%[l|l̩]|%[clIast|ḹ]~~%[l|l̩ː]|
+|]
+
+[|
+|%[clIast|ṛ]|%[clIast|ṝ]|%[clIast|ḷ]|%[clIast|ḹ]|
+|%[l|ɹ̩]|%[l|ɹ̩ː]|%[l|l̩]|%[l|l̩ː]|
+|]
 
 ## Дифтонги
-<div class='clBlockIast'>
-<span class='clLetterIast'>%[clIast|e]~~%[l|e] </span>
-<span class='clLetterIast'>%[clIast|ai]~~%[l|aːi]</span>
-<span class='clLetterIast'>%[clIast|o]~~%[l|oː] </span>
-<span class='clLetterIast'>%[clIast|au]~~%[l|aːu]</span>
-</div>
+
+[|
+|%[clIast|e]|%[clIast|ai]|%[clIast|o]|%[clIast|au]|
+|%[l|e]|%[l|aːi]|%[l|oː]|%[l|aːu]|
+|]
 
 ## Анусвара (Носовые)
 [!
 воздух идёт через ротовую полость и через носовую
 !]
 
-<div class='clBlockIast'>
-<span class='clLetterIast'>%[clIast|ṃ]~~%[l|ⁿ]</span>
-</div>
+[|
+|%[clIast|ṃ]|
+|%[l|ⁿ]|
+|]
 
 ## Висарга (Глухой глоттальный)
 [!
 воздух идёт через ротовую полость и через носовую
 !]
 
-<div class='clBlockIast'>
-<span class='clLetterIast'>%[clIast|ḥ]~~%[l|h] х</span>
-</div>
+[|
+|%[clIast|ḥ]|
+|%[l|h]|
+|]
 
 ## Заднеязычные согласные
 [!
 образуются поднятием задней части спинки языка к заднему нёбу
 !]
 
-<div class='clBlockIast'>
-<span class='clLetterIast'>%[clIast|ka]~~%[l|k] </span>
-<span class='clLetterIast'>%[clIast|kha]~~%[l|kʰ] </span>
-<span class='clLetterIast'>%[clIast|ga]~~%[l|ɟ]</span>
-<span class='clLetterIast'>%[clIast|gha]~~%[l|ɟʰ] </span>
-<span class='clLetterIast'>%[clIast|ṅa]~~%[l|ɲ]</span>
-</div>
+[|
+|%[clIast|ka]|%[clIast|kha]|%[clIast|ga]|%[clIast|gha]|%[clIast|ṅa]|
+|%[l|k]|%[l|kʰ]|%[l|ɟ]|%[l|ɟʰ]|%[l|ɲ]|
+|]
 
 ## Палатальные согласные
 [!
 средняя часть спинки языка, поднимается и соприкасается с твёрдым нёбом.
 !]
 
-<div class='clBlockIast'>
-<span class='clLetterIast'>%[clIast|c]~~%[l|ʈ] </span>
-<span class='clLetterIast'>%[clIast|ch]~~%[l|ʈʰ] </span>
-<span class='clLetterIast'>%[clIast|j]~~%[l|ɖ]</span>
-<span class='clLetterIast'>%[clIast|jh]~~%[l|ɖʰ] </span>
-<span class='clLetterIast'>%[clIast|ñ]~~%[l|ɳ]</span>
-</div>
+[|
+|%[clIast|c]|%[clIast|ch]|%[clIast|j]|%[clIast|jh]|%[clIast|ñ]|
+|%[l|ʈ]|%[l|ʈʰ]|%[l|ɖ]|%[l|ɖʰ]|%[l|ɳ]|
+|]
 
 ## Ретрофлексные согласные
 [!
 кончик языка поднимается к твёрдому нёбу и немного загибается назад
 !]
 
-<div class='clBlockIast'>
-<span class='clLetterIast'>%[clIast|ṭ]~~%[l|ʈ] </span>
-<span class='clLetterIast'>%[clIast|ṭh]~~%[l|ʈʰ] </span>
-<span class='clLetterIast'>%[clIast|ḍ]~~%[l|ɖ]</span>
-<span class='clLetterIast'>%[clIast|ḍh]~~%[l|ɖʰ] </span>
-<span class='clLetterIast'>%[clIast|ṇ]~~%[l|ɳ]</span>
-</div>
+[|
+|%[clIast|ṭ]|%[clIast|ṭh]|%[clIast|ḍ]|%[clIast|ḍh]|%[clIast|ṇ]|
+|%[l|ʈ]|%[l|ʈʰ]|%[l|ɖ]|%[l|ɖʰ]|%[l|ɳ]|
+|]
 
 ## Зубные согласные
 [!
 кончик языка ксасется верхнего ряда зубов
 !]
 
-<div class='clBlockIast'>
-<span class='clLetterIast'>%[clIast|t]~~%[l|t] </span>
-<span class='clLetterIast'>%[clIast|th]~~%[l|tʰ] </span>
-<span class='clLetterIast'>%[clIast|d]~~%[l|d]</span>
-<span class='clLetterIast'>%[clIast|dh]~~%[l|dʰ] </span>
-<span class='clLetterIast'>%[clIast|n]~~%[l|n]</span>
-</div>
+[|
+|%[clIast|t]|%[clIast|th]|%[clIast|d]|%[clIast|dh]|%[clIast|n]|
+|%[l|t]|%[l|tʰ]|%[l|d]|%[l|dʰ]|%[l|n]|
+|]
 
 ## Губные согласные
 [!
 образуются при участии обеих губ или нижней губой и верхними зубами
 !]
 
-<div class='clBlockIast'>
-<span class='clLetterIast'>%[clIast|p]~~%[l|p] </span>
-<span class='clLetterIast'>%[clIast|ph]~~%[l|pʰ] </span>
-<span class='clLetterIast'>%[clIast|b]~~%[l|b]</span>
-<span class='clLetterIast'>%[clIast|bh]~~%[l|bʰ] </span>
-<span class='clLetterIast'>%[clIast|m]~~%[l|m]</span>
-</div>
+[|
+|%[clIast|p]|%[clIast|ph]|%[clIast|b]|%[clIast|bh]|%[clIast|m]|
+|%[l|p]|%[l|pʰ]|%[l|b]|%[l|bʰ]|%[l|m]|
+|]
 
 ## Аппроксиманты
 [!
 артикуляторы подходят близко друг к другу, но не смыкаются полностью
 !]
 
-<div class='clBlockIast'>
-<span class='clLetterIast'>%[clIast|y]~~%[l|j] </span>
-<span class='clLetterIast'>%[clIast|r]~~%[l|r] </span>
-<span class='clLetterIast'>%[clIast|l]~~%[l|l]</span>
-<span class='clLetterIast'>%[clIast|v]~~%[l|ʋ] </span>
-</div>
+[|
+|%[clIast|y]|%[clIast|r]|%[clIast|l]|%[clIast|v]|
+|%[l|j]|%[l|r]|%[l|l]|%[l|ʋ]|
+|]
 
 ## Фрикативные согласные
 [!
 артикуляторы создают заметный шум
 !]
 
-<div class='clBlockIast'>
-<span class='clLetterIast'>%[clIast|ś]~~%[l|ʃ] щ</span>
-<span class='clLetterIast'>%[clIast|ṣ]~~%[l|ʂ] ш</span>
-<span class='clLetterIast'>%[clIast|s]~~%[l|s]</span>
-<span class='clLetterIast'>%[clIast|h]~~%[l|ɦ] </span>
-</div>
+[|
+|%[clIast|ś]|%[clIast|ṣ]|%[clIast|s]|%[clIast|h]|
+|%[l|ʃ~~щ]|%[l|ʂ~~ш]|%[l|s]|%[l|ɦ]|
+|]

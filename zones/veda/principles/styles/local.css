@@ -49,10 +49,21 @@
   font-size:            1.000rem;
 }
 
-
 .clBreak
 {
   clear:                both;
+}
+
+td:has(span.clIast)
+{
+  text-align:           center;
+  width:                1.000rem;
+}
+
+td:has(span.l)
+{
+  text-align:           center;
+  width:                1.000rem;
 }
 
 /*-----------------------------------------------------------------------------------------------*/

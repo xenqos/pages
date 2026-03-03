@@ -8,7 +8,7 @@ use warnings;
 
 our @books =
 (
-  '1|veda/principles|Принципы'
+  '1|veda/principles|Veda - Принципы'
 , '0|dao/daodejing|Дао Дэ Цзин'
 , '0|dao/stratagems|Стратагемы'
 , '0|dao/taiji-fuzhongwen|Тай Чи - Fu Zhong Wen'
