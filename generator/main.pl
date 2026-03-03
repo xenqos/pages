@@ -8,11 +8,11 @@ use warnings;
 
 our @books =
 (
-  '1|exoterica/sd-veda|Введение'
-, '0|exoterica/da-daodejing|Дао Дэ Цзин'
-, '0|exoterica/da-stratagems|Стратагемы'
-, '0|exoterica/da-taiji-fuzhongwen|Тай Чи - Fu Zhong Wen'
-, '0|exoterica/da-taiji-moylinshin|Тай Чи - Moy Lin Shin'
+  '1|veda/principles|Принципы'
+, '0|dao/daodejing|Дао Дэ Цзин'
+, '0|dao/stratagems|Стратагемы'
+, '0|dao/taiji-fuzhongwen|Тай Чи - Fu Zhong Wen'
+, '0|dao/taiji-moylinshin|Тай Чи - Moy Lin Shin'
 
 , '0|linguistics/de-phonetics|Фонетика'
 , '0|linguistics/de-grammar|Грамматика'
@@ -49,7 +49,7 @@ our @books =
 , '0|toolbox/mn-banknotes-eur|Banknotes EUR'
 , '0|toolbox/em-electricity|Electricity'
 
-, '0|games/outline|Texas Holdem Outline'
+, '0|games/principles|Texas Holdem Principles'
 , '0|games/mathresources|Resources'
 );
 
