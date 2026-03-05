@@ -565,7 +565,7 @@ ol
 ol li
 {
   counter-increment:    li;
-  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
+  margin:               0.000rem 0.000rem 0.600rem 0.000rem;
   padding:              0.000rem 0.000rem 0.000rem 0.000rem;
   list-style-type:      none;
   text-indent:          -1.000rem;
