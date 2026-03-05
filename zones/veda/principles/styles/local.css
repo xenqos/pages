@@ -1,42 +1,5 @@
 /*-----------------------------------------------------------------------------------------------*/
 
-.clBlockIast
-{
-  display:              flex;
-  flex-wrap:            wrap;
-  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
-  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
-}
-
-.clBlockDevanagari
-{
-  display:              flex;
-  flex-wrap:            wrap;
-  font-size:            2.000rem;
-  justify-content:      center;
-  text-align:           center;
-  margin:               0.000rem 0.000rem 1.000rem 0.000rem;
-  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
-}
-
-.clLetterDevanagari
-{
-  color:                #007800;
-  display:              inline-block;
-  font-size:            1.600rem;
-  margin:               0.000rem 0.400rem 0.000rem 0.400rem;
-  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
-  width:                2.000rem;
-}
-
-.clLetterIast
-{
-  display:              inline-block;
-  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
-  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
-  width:                2.000rem;
-}
-
 .clIast,
 .m
 {
@@ -46,6 +9,13 @@
 
 .l
 {
+  color:                #007fbe;
+  font-size:            1.000rem;
+}
+
+.e
+{
+  color:                #367836;
   font-size:            1.000rem;
 }
 
@@ -60,7 +30,9 @@ td:has(span.clIast)
   width:                1.000rem;
 }
 
-td:has(span.l)
+td:has(span.m),
+td:has(span.l),
+td:has(span.e)
 {
   text-align:           center;
   width:                1.000rem;
