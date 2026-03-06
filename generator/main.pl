@@ -11,8 +11,8 @@ our @books =
   '1|dharma/principles|Принципы'
 , '1|dharma/mantra|Мантры'
 , '1|dharma/pranayama|Пранаяма'
-, '1|dharma/samhita|Самхита'
-, '1|dharma/upanishads|Упанишады'
+, '1|dharma/samhita|Самхиты'
+, '1|dharma/upanishad|Упанишады'
 
 , '0|dao/daodejing|Дао Дэ Цзин'
 , '0|dao/stratagems|Стратагемы'
