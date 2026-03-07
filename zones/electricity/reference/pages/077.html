@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Reference</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='076.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='078.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>Gas Discharge Tubes</h1>
+<p>If you&rsquo;ve ever witnessed a lightning storm, you&rsquo;ve seen electrical <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-7/hysteresis/&quot; target=&quot;_blank&quot;>hysteresis</a> in action (and probably didn&rsquo;t realize what you were seeing). The action of strong wind and rain accumulates tremendous <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-7/hysteresis/&quot; target=&quot;_blank&quot;>static electric charges</a> between cloud and earth, and between clouds as well. Electric charge imbalances manifest themselves as high voltages, and when the <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/resistance/&quot; target=&quot;_blank&quot;>electrical resistance</a> of air can no longer hold these high voltages at bay, huge surges of current travel between opposing poles of electrical charge which we call &ldquo;lightning.&rdquo;</p>
+<p>The buildup of high voltages by wind and rain is a fairly continuous process, the rate of charge accumulation increasing under the proper atmospheric conditions. However, lightning bolts are anything but continuous: they exist as relatively brief surges rather than continuous discharges. Why is this? Why don&rsquo;t we see soft, glowing lightning arcs instead of violently brief lightning <em>bolts</em>? The answer lies in the nonlinear (and hysteretic) resistance of air.</p>
+<p>Under ordinary conditions, air has an extremely high amount of resistance. It is so high, in fact, that we typically treat its resistance as infinite and electrical conduction through the air as negligible. The presence of water and dust in air lowers its resistance some, but it is still an insulator for most practical purposes. When enough high voltage is applied across a distance of air, though, its electrical properties change: electrons become &ldquo;stripped&rdquo; from their normal positions around their respective atoms and are liberated to constitute a current. In this state, air is considered to be <em>ionized </em>and is called a plasma rather than a gas. This usage of the word &ldquo;plasma&rdquo; is not to be confused with the medical term (meaning the fluid portion of blood), but is a fourth state of matter, the other three being solid, liquid, and vapor (gas). Plasma is a relatively good <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/conductors-insulators-electron-flow/&quot; target=&quot;_blank&quot;>conductor</a> of electricity, its specific resistance being much lower than that of the same substance in its gaseous state.</p>
+<p>As an electric current moves through the plasma, there is energy dissipated in the plasma in the form of heat, just as current through a solid resistor dissipates energy in the form of heat. In the case of lightning, the temperatures involved are extremely high. High temperatures are also sufficient to convert gaseous air into a plasma or maintain plasma in that state without the presence of high voltage. As the voltage between cloud and earth, or between cloud and cloud, decreases as the charge imbalance is neutralized by the current of the lightning bolt, the heat dissipated by the bolt maintains the air path in a plasma state, keeping its resistance low. The lightning bolt remains a plasma until the voltage decreases to too low a level to sustain enough current to dissipate enough heat. Finally, the air returns to a gaseous state and stops conducting current, thus allowing voltage to build up once more.</p>
+<p>Note how throughout this cycle, the air exhibits hysteresis. When not conducting electricity, it tends to <em>remain an insulator </em>until voltage builds up past a critical threshold point. Then, once it changes state and becomes a plasma, it tends to <em>remain a conductor </em>until voltage falls below a lower critical threshold point. Once &ldquo;turned on&rdquo; it tends to stay &ldquo;on,&rdquo; and once &ldquo;turned off&rdquo; it tends to stay &ldquo;off.&rdquo; This hysteresis, combined with a steady buildup of voltage due to the <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-9/electrostatic-discharge/&quot; target=&quot;_blank&quot;>electrostatic</a> effects of wind and rain, explains the action of lightning as brief bursts.</p>
+<h3>Relaxation Oscillators</h3>
+<p>In electronic terms, what we have here in the action of lightning is a simple <em>relaxation oscillator</em>. <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-9/oscillator-circuits/&quot; target=&quot;_blank&quot;>Oscillators</a> are electronic circuits that produce an oscillating (AC) voltage from a steady supply of DC power. A relaxation oscillator is one that works on the principle of a charging capacitor that is suddenly discharged every time its voltage reaches a critical threshold value. One of the simplest relaxation oscillators in existence is comprised of three components (not counting the DC <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-9/power-supply-circuits/&quot; target=&quot;_blank&quot;>power supply</a>): a resistor, capacitor, and neon lamp in Figure below.</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/simple-relaxation-oscillator.jpg&quot; /></p>
+<p>Neon lamps are nothing more than two metal electrodes inside a sealed glass bulb, separated by the neon gas inside. At room temperatures and with no applied voltage, the lamp has nearly infinite resistance. However, once a certain threshold voltage is exceeded (this voltage depends on the gas pressure and geometry of the lamp), the neon gas will become ionized (turned into a plasma) and its resistance dramatically reduced. In effect, the neon lamp exhibits the same characteristics as air in a lightning storm, complete with the emission of light as a result of the discharge, albeit on a much smaller scale.</p>
+<p>The <a href=&quot;https://www.allaboutcircuits.com/video-lectures/inductors-part-1/&quot; target=&quot;_blank&quot;>capacitor</a> in the relaxation oscillator circuit shown above charges at an inverse exponential rate determined by the size of the resistor. When its voltage reaches the threshold voltage of the lamp, the lamp suddenly &ldquo;turns on&rdquo; and quickly discharges the capacitor to a low voltage value. Once discharged, the lamp &ldquo;turns off&rdquo; and allows the capacitor to build up a charge once more. The result is a series of brief flashes of light from the lamp, the rate of which is dictated by battery voltage, resistor resistance, capacitor capacitance, and lamp threshold voltage.</p>
+<h3>Thyratron Tubes</h3>
+<p>While gas-discharge lamps are more commonly used as sources of illumination, their hysteretic properties were leveraged in slightly more sophisticated variants known as <em>thyratron tubes</em>. Essentially a gas-filled triode tube (a triode being a three-element vacuum electron tube performing much a similar function to the N-channel, D-type IGFET), the thyratron tube could be turned on with a small control voltage applied between grid and cathode, and turned off by reducing the plate-to-cathode voltage.</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/simple-thyratron-control-circuit.jpg&quot; /></p>
+<p><em>Simple thyratron control circuit</em></p>
+<p>In essence, thyratron tubes were <em>controlled </em>versions of neon lamps built specifically for switching current to a load. The dot inside the circle of the schematic symbol indicates a gas fill, as opposed to the hard vacuum normally seen in other electron tube designs. In the circuit shown above, the thyratron tube allows current through the load in one direction (note the polarity across the load resistor) when triggered by the small DC control voltage connected between grid and cathode. Note that the load&rsquo;s power source is AC, which provides a clue about how the thyratron turns off after its been triggered on: since AC voltage periodically passes through a condition of 0 volts between half-cycles, the current through an AC-powered load must also periodically halt. This brief pause of current between half-cycles gives the tube&rsquo;s gas time to cool, letting it return to its normal &ldquo;off&rdquo; state. Conduction may resume only if enough voltage is applied by the AC power source (some other time in the wave&rsquo;s cycle) and if the DC control voltage allows it.</p>
+<p>An oscilloscope display of load voltage in such a circuit would look something like Figure below.</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/thyratron-waveforms.jpg&quot; /></p>
+<p><em>Thyratron waveforms</em></p>
+<p>As the AC supply voltage climbs from zero volts to its first peak, the load voltage remains at zero (no load current) until the threshold voltage is reached. At that point, the tube switches &ldquo;on&rdquo; and begins to conduct, the load voltage now following the AC voltage through the rest of the half cycle. Load voltage exists (and thus load current) even when the AC voltage waveform has dropped below the threshold value of the tube. This is hysteresis at work: the tube stays in its conductive mode past the point where it first turned on, continuing to conduct until there the supply voltage drops off to almost zero volts. Because thyratron tubes are one-way (diode) devices, no voltage develops across the load through the negative half-cycle of AC. In practical thyratron circuits, multiple tubes arranged in some form of full-wave <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-3/rectifier-circuits/&quot; target=&quot;_blank&quot;>rectifier circuit</a> to facilitate full-wave DC power to the load.</p>
+<p>The thyratron tube has been applied to a relaxation oscillator circuit.&nbsp;The frequency is controlled by a small DC voltage between grid and cathode. (See Figure below) This voltage-controlled oscillator is known as a VCO. Relaxation oscillators produce a very non-sinusoidal output, and they exist mostly as demonstration circuits (as is the case here) or in applications where the harmonic rich waveform is desirable.</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/voltage-controlled-thyratron-relaxation-oscillator.jpg&quot; /></p>
+<p><em>Voltage controlled thyratron relaxation oscillator</em></p>
+<p>&nbsp;</p>
+<p>I speak of thyratron tubes in the past tense for good reason: modern semiconductor components have obsoleted thyratron tube technology for all but a few very special applications. It is no coincidence that the word <em>thyristor </em>bears so much similarity to the word <em>thyratron</em>, for this class of semiconductor components does much the same thing: use <em>hysteretic </em>switch current on and off. It is these modern devices that we now turn our attention to.</p>
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li>Electrical <em>hysteresis</em>, the tendency for a component to remain &ldquo;on&rdquo; (conducting) after it begins to conduct and to remain &ldquo;off&rdquo; (nonconducting) after it ceases to conduct, helps to explain why lightning bolts exist as momentary surges of current rather than continuous discharges through the air.</li>
+<li>Simple gas-discharge tubes such as neon lamps exhibit electrical hysteresis.</li>
+<li>More advanced gas-discharge tubes have been made with control elements so that their &ldquo;turn-on&rdquo; voltage could be adjusted by an external signal. The most common of these tubes was called the <em>thyratron</em>.</li>
+<li>Simple oscillator circuits called <em>relaxation oscillators</em> may be created with nothing more than a resistor-capacitor charging network and a hysteretic device connected across the capacitor.</li>
+</ul>
+
+
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Alternating Current</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='68.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='70.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>Practical Power Factor Correction</h1>
+<p>When the need arises to correct for poor power factor in an <a href=&quot;https://www.allaboutcircuits.com/textbook/experiments/chpt-4/introduction-to-ac-circuits/&quot; target=&quot;_blank&quot;>AC power system</a>, you probably won&rsquo;t have the luxury of knowing the load&rsquo;s exact inductance in henrys to use for your calculations.</p>
+<p>You may be fortunate enough to have an instrument called a <em>power factor meter</em> to tell you what the power factor is (a number between 0 and 1), and the apparent power (which can be figured by taking a voltmeter reading in volts and multiplying by an ammeter reading in amps).</p>
+<p>In less favorable circumstances, you may have to use an oscilloscope to compare <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/voltage-current/&quot; target=&quot;_blank&quot;>voltage and current</a> waveforms, measuring <a href=&quot;https://www.allaboutcircuits.com/textbook/alternating-current/chpt-1/ac-phase/&quot; target=&quot;_blank&quot;>phase shift</a> in <em>degrees</em> and calculating power factor by the cosine of that phase shift.</p>
+<p>Most likely, you will have access to a wattmeter for measuring true power, whose reading you can compare against a calculation of apparent power (from multiplying total voltage and total current measurements). From the values of true and apparent power, you can determine reactive power and power factor.</p>
+<h3>Example Problem</h3>
+<p>Let&rsquo;s do an example problem to see how this works: (Figure below)</p>
+<p><img src=&quot;/uploads/articles/wattmeter-true-power.png&quot; /></p>
+<p><em>Wattmeter reads true power; the product of voltmeter and ammeter readings yields apparent power.</em></p>
+<p>&nbsp;</p>
+<h3>How to Calculate the Apparent Power in kVA</h3>
+<p>First, we need to calculate the apparent power in kVA. We can do this by multiplying load voltage by load current:</p>
+<p>&nbsp;</p>
+<p><img src=&quot;/uploads/articles/calculating-apparent-power.png&quot; /></p>
+<p>&nbsp;</p>
+<p>As we can see, 2.308 kVA is a much larger figure than 1.5 kW, which tells us that the power factor in this circuit is rather poor (substantially less than 1). Now, we figure the power factor of this load by dividing the true power by the apparent power:</p>
+<p>&nbsp;</p>
+<p><img src=&quot;/uploads/articles/power-factor-equation.png&quot; /></p>
+<p>&nbsp;</p>
+<p>Using this value for power factor, we can draw a power triangle, and from that determine the reactive power of this load: (Figure below)</p>
+<p><img src=&quot;/uploads/articles/reactive-power-calculated-from-true-and-apparent-power.png&quot; /> <em>Reactive power may be calculated from true power and apparent power.</em></p>
+<p>&nbsp;</p>
+<h3>How to Use the Pythagorean Theorem to Determine Unknown Triangle Quantity</h3>
+<p>To determine the unknown (reactive power) triangle quantity, we use the Pythagorean Theorem &ldquo;backwards,&rdquo; given the length of the hypotenuse (apparent power) and the length of the adjacent side (true power):</p>
+<p>&nbsp;</p>
+<p><img src=&quot;/uploads/articles/determine-unknown-triangle-quantity.png&quot; /></p>
+<p>&nbsp;</p>
+<h3>How to Correct Power Factor with a Capacitor</h3>
+<p>If this load is an electric motor or most any other industrial AC load, it will have a lagging (inductive) power factor, which means that we&rsquo;ll have to correct for it with a <em>capacitor</em> of appropriate size, wired in parallel.</p>
+<p>Now that we know the amount of reactive power (1.754 kVAR), we can calculate the size of the <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-13/practical-considerations-capacitors/&quot; target=&quot;_blank&quot;>capacitor</a> needed to counteract its effects:</p>
+<p>&nbsp;</p>
+<p><img src=&quot;/uploads/articles/correct-power-factor-with-capacitor-equation.png&quot; /></p>
+<p>&nbsp;</p>
+<p>Rounding this answer off to 80 &micro;F, we can place that size of the capacitor in the circuit and calculate the results: (Figure below)</p>
+<p>&nbsp;</p>
+<p><img src=&quot;/uploads/articles/parallel-capacitor-corrects-lagging.png&quot; /></p>
+<p><em>Parallel capacitor corrects lagging (inductive) load.</em></p>
+<p>&nbsp;</p>
+<p>An 80 &micro;F capacitor will have a capacitive reactance of 33.157 &Omega;, giving a current of 7.238 amps, and a corresponding reactive power of 1.737 kVAR (for the capacitor <em>only</em>). Since the capacitor&rsquo;s current is 180<sup>o</sup> out of phase from the load&rsquo;s inductive contribution to current draw, the capacitor&rsquo;s reactive power will directly subtract from the load&rsquo;s reactive power, resulting in:</p>
+<p><img src=&quot;/uploads/articles/capacitor-reactive-power-subtract-from-load-reactive-power.png&quot; /></p>
+<p>This correction, of course, will not change the amount of true power consumed by the load, but it will result in a substantial reduction of apparent power, and of the total current drawn from the 240 Volt source: (Figure below)</p>
+<p>&nbsp;</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/power-triangle-before-and-after-capacitor-correction_3.jpg&quot; /></p>
+<p><em>Power triangle before and after capacitor correction.</em></p>
+<p>&nbsp;</p>
+<p>The new apparent power can be found from the true and new reactive power values, using the standard form of the Pythagorean Theorem:</p>
+<p><img src=&quot;/uploads/articles/standard-form-of-pythagorean-theorem.png&quot; /></p>
+
+
+</div>
+</div>
+</body>
+</html>

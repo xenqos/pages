@@ -1,0 +1,85 @@
+<h1>Decibels</h1>
+<h3>The Bel is Used to Represent Gain</h3>
+<p>In its simplest form, an <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-1/amplifier-gain/" target="_blank">amplifier&rsquo;s <em>gain</em></a> is a ratio of output over input. Like all ratios, this form of gain is unitless. However, there is an actual unit intended to represent gain, and it is called the <em>bel</em>.</p>
+<p>As a unit, the bel was actually devised as a convenient way to represent power <em>loss</em> in telephone system wiring rather than <em>gain</em> in amplifiers. The unit&rsquo;s name is derived from Alexander Graham Bell, the famous Scottish inventor whose work was instrumental in developing telephone systems. Originally, the bel represented the amount of signal power loss due to <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/resistance/" target="_blank">resistance</a> over a standard length of electrical cable. Now, it is defined in terms of the common (base 10) logarithm of a power ratio (output power divided by input power):</p>
+<p><img src="/uploads/articles/logarithm-of-power-ratio-equation.png" /></p>
+<h3>The Bel is Nonlinear</h3>
+<p>Because the bel is a logarithmic unit, it is nonlinear. To give you an idea of how this works, consider the following table of figures, comparing power losses and gains in bels versus simple ratios:</p>
+<p><img src="/uploads/articles/power-losses-and-gains-in-bels-table1.png" /></p>
+<h3>Moving from the Bel to the Decibel</h3>
+<p>It was later decided that the bel was too large of a unit to be used directly, and so it became customary to apply the metric prefix <em>deci</em> (meaning 1/10) to it, making it <em>deci</em>bels, or dB. Now, the expression &ldquo;dB&rdquo; is so common that many people do not realize it is a combination of &ldquo;deci-&rdquo; and &ldquo;-bel,&rdquo; or that there even is such a unit as the &ldquo;bel.&rdquo; To put this into perspective, here is another table contrasting power gain/loss ratios against decibels:</p>
+<p><img src="/uploads/articles/power-losses-and-gains-in-bels-table2.png" /></p>
+<p>As a logarithmic unit, this mode of power gain expression covers a wide range of ratios with a minimal span in figures. It is reasonable to ask, &ldquo;why did anyone feel the need to invent a <em>logarithmic</em> unit for electrical signal power loss in a telephone system?&rdquo; The answer is related to the dynamics of human hearing, the perceptive intensity of which is logarithmic in nature.</p>
+<h3>Human Hearing is Nonlinear</h3>
+<p>Human hearing is highly nonlinear: in order to double the perceived intensity of a sound, the actual sound power must be multiplied by a factor of ten. Relating telephone signal power loss in terms of the logarithmic &ldquo;bel&rdquo; scale makes perfect sense in this context: a power loss of 1 bel translates to a perceived sound loss of 50 percent, or 1/2. A power gain of 1 bel translates to a doubling in the perceived intensity of the sound.</p>
+<h3>Other Logarithmic Scale Examples: Richter Scale and Chemical pH</h3>
+<h4>Richter Scale</h4>
+<p>An almost perfect analogy to the bel scale is the Richter scale used to describe earthquake intensity: a 6.0 Richter earthquake is 10 times more powerful than a 5.0 Richter earthquake; a 7.0 Richter earthquake 100 times more powerful than a 5.0 Richter earthquake; a 4.0 Richter earthquake is 1/10 as powerful as a 5.0 Richter earthquake, and so on.</p>
+<h4>Chemical pH</h4>
+<p>The measurement scale for chemical pH is likewise logarithmic, a difference of 1 on the scale is equivalent to a tenfold difference in hydrogen ion concentration of a chemical solution. An advantage of using a logarithmic measurement scale is the tremendous range of expression afforded by a relatively small span of numerical values, and it is this advantage which secures the use of Richter numbers for earthquakes and pH for hydrogen ion activity.</p>
+<h3>Using the Bel to Express System Gains and Losses</h3>
+<p>Another reason for the adoption of the bel as a unit for gain is for simple expression of system gains and losses. Consider the last system example (figure above) where two amplifiers were connected tandem to amplify a signal. The respective gain for each amplifier was expressed as a ratio, and the overall gain for the system was the product (multiplication) of those two ratios:</p>
+<pre>
+Overall gain = (3)(5) = 15</pre>
+<p>If these figures represented <em>power</em> gains, we could directly apply the unit of bels to the task of representing the gain of each amplifier, and of the system altogether. (Figure below)</p>
+<p><img src="/uploads/articles/the-unit-of-bels.png" /></p>
+<p>Power gain in bels is additive: 0.477 B + 0.699 B = 1.176 B.</p>
+<p>Close inspection of these gain figures in the unit of &ldquo;bel&rdquo; yields a discovery: they&rsquo;re additive. Ratio gain figures are multiplicative for staged amplifiers, but gains expressed in bels <em>add</em> rather than <em>multiply</em> to equal the overall system gain. The first amplifier with its power gain of 0.477 B adds to the second amplifier&rsquo;s power gain of 0.699 B to make a system with an overall power gain of 1.176 B.</p>
+<h4>Gains using Decibels</h4>
+<p>Recalculating for decibels rather than bels, we notice the same phenomenon. (Figure below)</p>
+<p><img src="/uploads/articles/recalculating-for-decibels.png" /></p>
+<p>Gain of amplifier stages in decibels is additive: 4.77 dB + 6.99 dB = 11.76 dB.</p>
+<p>To those already familiar with the arithmetic properties of logarithms, this is no surprise. It is an elementary rule of algebra that the antilogarithm of the sum of two numbers&rsquo; logarithm values equals the product of the two original numbers. In other words, if we take two numbers and determine the logarithm of each, then add those two logarithm figures together, then determine the &ldquo;antilogarithm&rdquo; of that sum (elevate the base number of the logarithm&mdash;in this case, 10&mdash;to the power of that sum), the result will be the same as if we had simply multiplied the two original numbers together.</p>
+<p>This algebraic rule forms the heart of a device called a <em><a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-4/arithmetic-scientific-notation/" target="_blank">slide rule</a></em>, an analog computer which could, among other things, determine the products and quotients of numbers by addition (adding together physical lengths marked on sliding wood, metal, or plastic scales).</p>
+<p>Given a table of logarithm figures, the same mathematical trick could be used to perform otherwise complex multiplications and divisions by only having to do additions and subtractions, respectively. With the advent of high-speed, handheld, digital calculator devices, this elegant calculation technique virtually disappeared from popular use. However, it is still important to understand when working with measurement scales that are logarithmic in nature, such as the bel (decibel) and Richter scales.</p>
+<h3>Conversion of Decibels and Unitless Ratio</h3>
+<p>When converting a power gain from units of bels or decibels to a unitless ratio, the mathematical inverse function of common logarithms is used: powers of 10, or the <em>antilog</em>.</p>
+<p><img src="/uploads/articles/mathematical-inverse-function-of-common-_logarithms.png" /></p>
+<p>Converting decibels into unitless ratios for power gain is much the same, only a division factor of 10 is included in the exponent term:</p>
+<p><img src="/uploads/articles/converting-decibels-into-unitless-ratios-for-power-gain.png" /></p>
+<p><strong>Example: </strong>Power into an amplifier is 1 Watt, the power out is 10 Watts. Find the power gain in dB.</p>
+<pre>
+AP(dB) = 10*log10(PO / PI) = 10*log10(10 /1) = 10*log10(10) = 10*(1) = 10 dB</pre>
+<p><strong>Example: </strong>Find the power gain ratio AP(ratio) = (PO / PI) for a 20 dB Power gain.</p>
+<pre>
+AP(dB) = 20 = 10*log10(AP<sub>ratio</sub>)&#10;20/10 = log10*(AP<sub>ratio</sub>)&#10;10^(20/10) = 10^(log10*(AP<sub>ratio</sub>)) &#10;10^2 = 100 = AP(ratio) = (PO / PI)</pre>
+<h3>Converting Power Gain to Voltage/Current Gain</h3>
+<p>Because the bel is fundamentally a unit of <em>power</em> gain or loss in a system, voltage or current gains and losses don&rsquo;t convert to bels or dB in quite the same way. When using bels or decibels to express a gain other than power, be it <a href="https://www.allaboutcircuits.com/video-lectures/electrical-quantities-a/" target="_blank">voltage or current</a>, we must perform the calculation in terms of how much power gain there would be for that amount of voltage or current gain.</p>
+<p>For a constant load impedance, a voltage or current gain of 2 equates to a power gain of 4 (2<sup>2</sup>); a voltage or current gain of 3 equates to a power gain of 9 (3<sup>2</sup>). If we multiply either voltage or current by a given factor, then the power gain incurred by that multiplication will be the square of that factor. This relates back to the forms of Joule&rsquo;s Law where power was calculated from either voltage or current, and resistance:</p>
+<p><img src="/uploads/articles/joules-law-equation.png" /></p>
+<p>Thus, when translating a voltage or current gain <em>ratio</em> into a respective gain in terms of the bel unit, we must include this exponent in the equation(s):</p>
+<p><img src="/uploads/articles/translating-voltage-or-current-gain-ratio-exponent-equation.png" /></p>
+<p>The same exponent requirement holds true when expressing voltage or current gains in terms of decibels:</p>
+<p><img src="/uploads/articles/expressing-voltage-or-current-gains-in-terms-of-decibels.png" /></p>
+<p>However, thanks to another interesting property of logarithms, we can simplify these equations to eliminate the exponent by including the &ldquo;2&rdquo; as a <em>multiplying factor</em> for the logarithm function. In other words, instead of taking the logarithm of the <em>square</em> of the voltage or current gain, we just multiply the voltage or current gain&rsquo;s logarithm figure by 2 and the final result in bels or decibels will be the same:</p>
+<p><img src="/uploads/articles/the-final-result-in-bels-or-decibels.png" /></p>
+<p>The process of converting voltage or current gains from bels or decibels into unitless ratios is much the same as it is for power gains:</p>
+<p><img src="/uploads/articles/process-of-converting-voltage-or-current-gains.png" /></p>
+<p>Here are the equations used for converting voltage or current gains in decibels into unitless ratios:</p>
+<p><img src="/uploads/articles/equations-used-for-converting-voltage-or-current_gains.png" /></p>
+<p>While the bel is a unit naturally scaled for power, another logarithmic unit has been invented to directly express voltage or current gains/losses, and it is based on the <em>natural</em> logarithm rather than the <em>common</em> logarithm as bels and decibels are. Called the <em>neper</em>, its unit symbol is &ldquo;Np; though, lower-case &ldquo;n&rdquo; may be encountered.</p>
+<p><img src="/uploads/articles/neper-equation.png" /></p>
+<p>For better or for worse, neither the neper nor its attenuated cousin, the <em>decineper</em>, is popularly used as a unit in American engineering applications. <strong>Example: </strong>The voltage into a 600 &Omega; audio line amplifier is 10 mV, the voltage across a 600 &Omega; load is 1 V. Find the power gain in dB.</p>
+<pre>
+A(dB) = 20 log10(VO / VI) = 20 log10 (1 /0.01) = 20 log10 (100) = 20 (2) = 40 dB</pre>
+<p><strong>Example: </strong>Find the voltage gain ratio AV(ratio) = (VO / VI) for a 20 dB gain amplifier having a 50 &Omega; input and out impedance.</p>
+<pre>
+AV(dB) = 20 log10 AV(ratio) 20 = 20 log10 AV(ratio) 20/20 = log10 AP(ratio) 1020/20 = 10log10 (AV(ratio)) 10 = AV(ratio) = (VO / VI)</pre>
+<h3>A Review of the Decibel</h3>
+<ul>
+<li>Gains and losses may be expressed in terms of a unitless ratio, or in the unit of bels (B) or decibels (dB). A decibel is literally a <em>deci</em>-bel: one-tenth of a bel.</li>
+<li>The bel is fundamentally a unit for expressing <em>power</em> gain or loss. To convert a power ratio to either bels or decibels, use one of these equations:</li>
+</ul>
+<p><img src="/uploads/articles/convert-power-ratio-to-either-bels-or-decibels-equation.png" /></p>
+<ul>
+<li>When using the unit of the bel or decibel to express a <em>voltage</em> or <em>current</em> ratio, it must be cast in terms of an equivalent <em>power</em> ratio. Practically, this means the use of different equations, with a multiplication factor of 2 for the logarithm value corresponding to an exponent of 2 for the voltage or current gain ratio:</li>
+</ul>
+<p><img src="/uploads/articles/unit-of-the-bel-or-decibel-to-express-a-voltage-or-current-ratio.png" /></p>
+<ul>
+<li>To convert a decibel gain into a unitless ratio gain, use one of these equations:</li>
+</ul>
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/convert-decibel-gain-equation2.png" /></p>
+<ul>
+<li>A gain (amplification) is expressed as a positive bel or decibel figure. A loss (attenuation) is expressed as a negative bel or decibel figure. Unity gain (no gain or loss; ratio = 1) is expressed as zero bels or zero decibels.</li>
+<li>When calculating overall gain for an amplifier system composed of multiple amplifier stages, individual gain ratios are <em>multiplied</em> to find the overall gain ratio. Bel or decibel figures for each amplifier stage, on the other hand, are <em>added</em> together to determine overall gain.</li>
+</ul>

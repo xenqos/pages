@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Direct Current</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='101.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='103.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>Practical Considerations - Capacitors</h1>
+<p><a href=&quot;https://www.allaboutcircuits.com/video-lectures/capacitors-part-1/&quot; target=&quot;_blank&quot;>Capacitors</a>, like all electrical components, have limitations that must be respected for the sake of reliability and proper circuit operation.</p>
+<h3>Capacitor Working Voltage</h3>
+<p><em>Working voltage</em>: Since capacitors are nothing more than two <a href=&quot;https://www.allaboutcircuits.com/video-lectures/wire-and-cable/&quot; target=&quot;_blank&quot;>conductors</a> separated by an insulator (the dielectric), you must pay attention to the maximum voltage allowed across it. If too much voltage is applied, the &ldquo;breakdown&rdquo; rating of the dielectric material may be exceeded, resulting in the capacitor internally short-circuiting.</p>
+<h3>Capacitor Polarity</h3>
+<p><a name=&quot;Electrolytic capacitor&quot;></a> <a name=&quot;Capacitor, electrolytic&quot;></a> <em>Polarity</em>: Some capacitors are manufactured so they can only tolerate applied voltage in one polarity but not the other. This is due to their construction: the dielectric is a microscopically thin layer of insulation deposited on one of the plates by a DC voltage during manufacture. These are called <strong><em>electrolytic</em> <em>capacitors</em></strong>, and their polarity is clearly marked.</p>
+<p><img src=&quot;/uploads/articles/capacitor-polarity.png&quot; /></p>
+<p>Reversing voltage polarity to an electrolytic capacitor may result in the destruction of that super-thin dielectric layer, thus ruining the device. However, the thinness of that dielectric permits extremely high values of capacitance in relatively small package size. For the same reason, electrolytic capacitors tend to be low in voltage rating as compared with other types of a capacitor construction.</p>
+<h3>Capacitor Equivalent Circuit</h3>
+<p><a name=&quot;Equivalent circuit&quot;></a> <a name=&quot;Circuit, equivalent&quot;></a> <em>Equivalent circuit:</em> Since the plates in a capacitor have some <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/resistance/&quot; target=&quot;_blank&quot;>resistance</a>, and since no dielectric is a perfect insulator, there is no such thing as a &ldquo;perfect&rdquo; capacitor. In real life, a capacitor has both a <a href=&quot;https://www.allaboutcircuits.com/video-lectures/series-circuits-part-1/&quot; target=&quot;_blank&quot;>series resistance</a> and a parallel (leakage) resistance interacting with its purely capacitive characteristics:</p>
+<p><img src=&quot;/uploads/articles/capacitor-equivalent-circuit.png&quot; /></p>
+<p>Fortunately, it is relatively easy to manufacture capacitors with very small series resistances and very high leakage resistances!</p>
+<h3>Capacitor Physical Size</h3>
+<p>For most applications in electronics, the minimum size is the goal for component engineering. The smaller components can be made, the more circuitry can be built into a smaller package, and usually, weight is saved as well. With capacitors, there are two major limiting factors to the minimum size of a unit: <strong>working voltage and capacitance</strong>. And these two factors tend to be in opposition to each other. For any given choice in dielectric materials, the only way to increase the voltage rating of a capacitor is to increase the thickness of the dielectric. However, as we have seen, this has the effect of decreasing capacitance. Capacitance can be brought back up by increasing the plate area. but this makes for a larger unit. This is why you cannot judge a capacitor&rsquo;s rating in Farads simply by size. A capacitor of any given size may be relatively high in capacitance and low in working voltage, vice versa, or some compromise between the two extremes. Take the following two photographs for example:</p>
+<p><img src=&quot;/uploads/articles/high-voltage-oil-capacitor.jpg&quot; /></p>
+<p>This is a fairly large capacitor in physical size, but it has quite a low capacitance value: only 2 &micro;F. However, its working voltage is quite high: 2000 volts! If this capacitor were re-engineered to have a thinner layer of dielectric between its plates, at least a hundredfold increase in capacitance might be achievable, but at a cost of significantly lowering its working voltage. Compare the above photograph with the one below. The capacitor shown in the lower picture is an electrolytic unit, similar in size to the one above, but with <em>very </em>different values of capacitance and working voltage:</p>
+<p><img src=&quot;/uploads/articles/electrolytic-unit-capacitor.jpg&quot; /></p>
+<p>The thinner dielectric layer gives it a much greater capacitance (20,000 &micro;F) and a drastically reduced working voltage (35 volts continuous, 45 volts intermittent).</p>
+<p>Here are some samples of different capacitor types, all smaller than the units shown previously:</p>
+<p><img src=&quot;/uploads/articles/ceramic-type-capacitor.jpg&quot; /></p>
+<p><img src=&quot;/uploads/articles/plastic-film-type-capacitor.jpg&quot; /></p>
+<p><img src=&quot;/uploads/articles/electrolytic-type-capacitor.jpg&quot; /></p>
+<p><img src=&quot;/uploads/articles/tantalum-type-capacitor.jpg&quot; /></p>
+<p><a name=&quot;Capacitors, polarized&quot;></a> <a name=&quot;Polarized&quot;></a> <a name=&quot;Capacitors, nonpolarized&quot;></a> <a name=&quot;Nonpolarized&quot;></a> The electrolytic and tantalum capacitors are <em>polarized</em> (polarity sensitive), and are always labeled as such. The electrolytic units have their negative (-) leads distinguished by arrow symbols on their cases. Some polarized capacitors have their polarity designated by marking the positive terminal. The large, 20,000 &micro;F electrolytic unit shown in the upright position has its positive (+) terminal labeled with a &ldquo;plus&rdquo; mark. Ceramic, mylar, plastic film, and air capacitors do not have polarity markings, because those types are <em>nonpolarized</em> (they are not polarity sensitive).</p>
+<p>Capacitors are very common components in electronic circuits. Take a close look at the following photograph&mdash;every component marked with a &ldquo;C&rdquo; designation on the printed circuit board is a capacitor:</p>
+<p><img src=&quot;/uploads/articles/network-card-with-capacitor.jpg&quot; /></p>
+<p><a name=&quot;Tantalum capacitor&quot;></a> <a name=&quot;Capacitor, tantalum&quot;></a> Some of the capacitors shown on this circuit board are standard electrolytic: C<sub>30</sub> (top of board, center) and C<sub>36</sub> (left side, 1/3 from the top). Some others are a special kind of electrolytic capacitor called <em>tantalum</em>, because this is the type of metal used to make the plates. Tantalum capacitors have relatively high capacitance for their physical size. The following capacitors on the circuit board shown above are tantalum: C<sub>14</sub> (just to the lower-left of C<sub>30</sub>), C<sub>19</sub> (directly below R<sub>10</sub>, which is below C<sub>30</sub>), C<sub>24</sub> (lower-left corner of board), and C<sub>22</sub> (lower-right).</p>
+<p>Examples of even smaller capacitors can be seen in this photograph:</p>
+<p><img src=&quot;/uploads/articles/hard-drive-with-capacitor.jpg&quot; /></p>
+<p>The capacitors on this circuit board are &ldquo;surface mount devices&rdquo; as are all the resistors, for reasons of saving space. Following component labeling convention, the capacitors can be identified by labels beginning with the letter &ldquo;C&rdquo;.</p>
+
+
+</div>
+</div>
+</body>
+</html>

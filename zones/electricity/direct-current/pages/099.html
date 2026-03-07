@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Direct Current</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='098.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='100.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>Capacitors and Calculus</h1>
+<p>Capacitors do not have a stable &ldquo;<a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/resistance/&quot; target=&quot;_blank&quot;>resistance</a>&rdquo; as conductors do. However, there is a definite mathematical relationship between <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/voltage-current-practical-circuit/&quot; target=&quot;_blank&quot;>voltage and current</a> for a capacitor, as follows:</p>
+<p><img src=&quot;/uploads/articles/ohms-law-for-capacitor.png&quot; /></p>
+<p>The lower-case letter &ldquo;i&rdquo; symbolizes <em>instantaneous</em> current, which means the amount of current at a specific point in time. This stands in contrast to constant current or average current (capital letter &ldquo;I&rdquo;) over an unspecified period of time. The expression &ldquo;dv/dt&rdquo; is one borrowed from calculus, meaning the instantaneous rate of voltage change over time, or the rate of change of voltage (volts per second increase or decrease) at a specific point in time, the same specific point in time that the instantaneous current is referenced at. For whatever reason, the letter <em>v</em> is usually used to represent instantaneous voltage rather than the letter <em>e</em>. However, it would not be incorrect to express the instantaneous voltage rate-of-change as &ldquo;de/dt&rdquo; instead.</p>
+<p>In this equation, we see something novel to our experience thus far with electric circuits: the variable of <em>time</em>. When relating the quantities of voltage, current, and resistance to a resistor, it doesn&rsquo;t matter if we&rsquo;re dealing with measurements taken over an unspecified period of time (E=IR; V=IR), or at a specific moment in time (e=ir; v=ir). The same basic formula holds true, because time is irrelevant to voltage, current, and resistance in a component like a <a href=&quot;https://www.allaboutcircuits.com/video-lectures/electronic-components-resistors/&quot; target=&quot;_blank&quot;>resistor</a>.</p>
+<p>In a capacitor, however, time is an essential variable, because the current is related to how <em>rapidly</em> voltage changes over time. To fully understand this, a few illustrations may be necessary. Suppose we were to connect a capacitor to a variable-voltage source, constructed with a potentiometer and a battery:</p>
+<p><img src=&quot;/uploads/articles/ammeter-illustration2.png&quot; /></p>
+<p>If the potentiometer mechanism remains in a single position (wiper is stationary), the voltmeter connected across the capacitor will register a constant (unchanging) voltage, and the ammeter will register 0 amps. In this scenario, the instantaneous rate of voltage change (dv/dt) is equal to zero, because the voltage is unchanging. The equation tells us that with 0 volts per second change for a dv/dt, there must be zero instantaneous currents (i). From a physical perspective, with no change in voltage, there is no need for any electron motion to add or subtract charge from the capacitor&rsquo;s plates, and thus there will be no current.</p>
+<p><img src=&quot;/uploads/articles/capacitor-voltage-current-1.png&quot; /></p>
+<p>Now, if the potentiometer wiper is moved slowly and steadily in the &ldquo;up&rdquo; direction, a greater voltage will gradually be imposed across the capacitor. Thus, the <a href=&quot;https://www.allaboutcircuits.com/textbook/experiments/chpt-2/voltage-usage/&quot; target=&quot;_blank&quot;>voltmeter</a> indication will be increasing at a slow rate:</p>
+<p><img src=&quot;/uploads/articles/Screen_Shot_2020-05-28_at_9.23.49_AM_.png&quot; /></p>
+<p>If we assume that the potentiometer wiper is being moved such that the <em>rate</em> of voltage increase across the capacitor is steady (for example, voltage increasing at a constant rate of 2 volts per second), the dv/dt term of the formula will be a fixed value. According to the equation, this fixed value of dv/dt, multiplied by the capacitor&rsquo;s capacitance in Farads (also fixed), results in a fixed current of some magnitude. From a physical perspective, an increasing voltage across the capacitor demands that there be an increasing charge differential between the plates. Thus, for a slow, steady voltage increase rate, there must be a slow, steady rate of charge building in the capacitor, which equates to a slow, steady flow of current. In this scenario, the capacitor is charging and acting as a <em>load</em>, with current entering the positive plate and exiting from the negative plate as the capacitor accumulates energy in an electric field.</p>
+<p><img src=&quot;/uploads/articles/capacitor-voltage-current-2.png&quot; /></p>
+<p>If the potentiometer is moved in the same direction, but at a faster rate, the rate of voltage change (dv/dt) will be greater and so will be the capacitor&rsquo;s current:</p>
+<p><img src=&quot;/uploads/articles/potentiometer-wiper-moving-in-the-up-direction.png&quot; /></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><img src=&quot;/uploads/articles/capacitor-current-voltage-3.png&quot; /></p>
+<p>When mathematics students first study calculus, they begin by exploring the concept of <em>rates of change</em> for various mathematical functions. The <em>derivative</em>, which is the first and most elementary calculus principle, is an expression of one variable&rsquo;s rate of change in terms of another. Calculus students have to learn this principle while studying abstract equations. You get to learn this principle while studying something you can relate to: electric circuits!</p>
+<p>To put this relationship between voltage and current in a capacitor in calculus terms, the current through a capacitor is the <em>derivative</em> of the voltage across the capacitor with respect to time. Or, stated in simpler terms, a capacitor&rsquo;s current is directly proportional to how quickly the voltage across it is changing. In this circuit where the capacitor voltage is set by the position of a rotary knob on a potentiometer, we can say that the capacitor&rsquo;s current is directly proportional to how quickly we turn the knob.</p>
+<p>If we were to move the potentiometer&rsquo;s wiper in the same direction as before (&ldquo;up&rdquo;), but at varying rates, we would obtain graphs that looked like this:</p>
+<p><img src=&quot;/uploads/articles/capacitor-current-voltage-4.png&quot; /></p>
+<p>Note that at any given point in time, the capacitor&rsquo;s current is proportional to the rate-of-change, or <em>slope</em>, of the capacitor&rsquo;s voltage plot. When the voltage plot line is rising quickly (steep slope), the current will likewise be large. Where the voltage plot has a mild slope, the current is small. At one place in the voltage plot where it levels off (zero slope, representing a period of time when the potentiometer wasn&rsquo;t moving), the current falls to zero.</p>
+<p>If we were to move the potentiometer wiper in the &ldquo;down&rdquo; direction, the capacitor voltage would <em>decrease </em>rather than increase. Again, the capacitor will react to this change of voltage by producing a current, but this time the current will be in the opposite direction. A decreasing capacitor voltage requires that the charge differential between the capacitor&rsquo;s plates be reduced, and the only way that can happen is if the direction of current flow is reversed, with the capacitor discharging rather than charging. In this discharging condition, with current exiting from the positive plate and entering the negative plate, the capacitor will act as a <em>source</em>, like a <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-11/electron-activity-chemical-reactions/&quot; target=&quot;_blank&quot;>battery</a>, releasing its stored energy to the rest of the circuit.</p>
+<p><img src=&quot;/uploads/articles/potentiometer-wiper-moving-in-the-down-direction.png&quot; /></p>
+<p>Again, the amount of current through the capacitor is directly proportional to the rate of voltage change across it. The only difference between the effects of a <em>decreasing</em> voltage and an <em>increasing</em> voltage is the <em>direction</em> of current flow. For the same rate of voltage change over time, either increasing or decreasing, the current magnitude (amps) will be the same. Mathematically, a decreasing voltage rate-of-change is expressed as a <em>negative</em> dv/dt quantity. Following the formula i = C(dv/dt), this will result in a current figure (i) that is likewise negative in sign, indicating a direction of flow corresponding to discharge of the capacitor.</p>
+
+
+</div>
+</div>
+</body>
+</html>

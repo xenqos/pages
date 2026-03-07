@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Direct Current</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='077.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='079.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>Superposition Theorem</h1>
+<img src=&quot;/uploads/thumbnails/Figure_7._Application_of_the_superimposed_voltage_values__1.jpg&quot; />
+<h3 class=&quot;text-lg lg:text-2xl font-bold mb-3&quot;>How to Use the Superposition Theorem to Analyze a Linear Circuit?</h3>
+<p><p>The superposition theorem states that any linear circuit with more than one power source can be analyzed by summing the currents and voltages from each individual power source.&nbsp;</p></p>
+<p>The superposition theorem is one of those strokes of genius that takes a complex subject and simplifies it (in this case, circuits) and breaks it down in a way that makes sense. While a theorem like <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-10/millmans-theorem-revisited/&quot; target=&quot;_blank&quot;>Millman&rsquo;s</a>&nbsp;can also work well, it is not quite obvious why it works as well as it does. Superposition, however, is obvious, which we&rsquo;ll dive into further.</p>
+<p>In this article, we&rsquo;ll go over the step-by-step process for applying the superposition theorem to easily <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-7/analysis-technique/&quot; target=&quot;_blank&quot;>analyze circuits</a> with multiple voltages and/or current sources supplying power.</p>
+<p>&nbsp;</p>
+<h3>What is the Superposition Theorem?</h3>
+<p>The strategy used in the superposition theorem is to eliminate all but one source of power within a network at a time. Then, we use <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/what-are-series-and-parallel-circuits/&quot; target=&quot;_blank&quot;>series and parallel circuit analysis techniques</a> to determine <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/polarity-voltage-drops/&quot; target=&quot;_blank&quot;>voltage drops</a> and currents within the modified network for each power source separately.&nbsp;</p>
+<p>This process is then repeated sequentially by individually evaluating the circuit for every <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/voltage-current/&quot; target=&quot;_blank&quot;>voltage and current</a> source in the system. After each individual analysis has been completed, the voltage and current values are all &ldquo;superimposed&rdquo; on top of each other (added algebraically) to find the actual voltage drops and currents with all sources active.</p>
+<p>&nbsp;</p>
+<h3>Explaining the Superposition Theorem in Circuit Analysis</h3>
+<p>Before getting too far, let&#39;s explain the superposition theorem using the linear circuit example of Figure 1.&nbsp;</p>
+<p>&nbsp;</p>
+<p><img src=&quot;/uploads/thumbnails/Figure_1._Circuit_for_explaining_the_branch_current_method_.jpg&quot; /></p>
+<h5><em><strong>Figure 1. </strong>Circuit schematic for explaining the superposition theorem.</em></h5>
+<p>&nbsp;</p>
+<p>To make it easier to compare various <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-10/what-is-network-analysis/&quot; target=&quot;_blank&quot;>network analysis methods</a>, this is the same circuit we use to discuss:&nbsp;</p>
+<ul>
+<li><a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-10/branch-current-method/&quot; target=&quot;_blank&quot;>Branch current</a></li>
+<li><a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-10/mesh-current-method/&quot; target=&quot;_blank&quot;>Mesh current</a></li>
+<li><a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-10/thevenins-theorem/&quot; target=&quot;_blank&quot;>Thevenin&rsquo;s theorem</a></li>
+<li><a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-10/nortons-theorem/&quot; target=&quot;_blank&quot;>Norton&rsquo;s theorem</a></li>
+<li><a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-10/millmans-theorem/&quot; target=&quot;_blank&quot;>Millman&rsquo;s theorem</a></li>
+</ul>
+
+<p>Since we have two sources of power in this circuit, we will have to calculate two sets of values for voltage drops and/or currents&mdash;one set for the circuit with only the 28 V battery and a second set with only the 7 V battery.</p>
+<p>&nbsp;</p>
+<h4>Step 1: Replace All of the Power Sources Except for One</h4>
+<p>When replacing the power supplies in the circuits, we must follow these two rules:</p>
+<ol>
+<li>Replace all voltage sources with short circuits (wires)</li>
+<li>Replace all current sources with open circuits (breaks)</li>
+</ol>
+
+<p>Since we only have voltage sources (batteries) in our example circuit in Figure 1, we will replace every inactive source during analysis with a short circuit wire. For example, in Figure 2, we have replaced the battery, B<sub>2</sub>, with a short circuit.</p>
+<p>&nbsp;</p>
+<p><img src=&quot;/uploads/thumbnails/Figure_2._Battery_B2_replaced_with_a_short_circuit_.jpg&quot; /></p>
+<h5><em><strong>Figure 2. </strong>Battery B<sub>2</sub> replaced with a short circuit</em></h5>
+<p>&nbsp;</p>
+<p>On the other hand, Figure 3 has a battery, B<sub>1</sub>, that has been replaced with a short circuit.</p>
+<p>&nbsp;</p>
+<p><img src=&quot;/uploads/thumbnails/Figure_3._Battery_B1_replaced_with_a_short_circuit_.jpg&quot; /></p>
+<h5><em><strong>Figure 3.</strong> Battery B<sub>1</sub> was replaced with a short circuit.</em></h5>
+<p>&nbsp;</p>
+<p>Step 2: Calculate the Voltages and Currents Due to Each Individual Source</p>
+<p>Analyzing the circuit of Figure 2 with only the 28 V battery using the <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/solving-series-and-parallel-circuits-with-the-table-method-and-ohms-law/&quot; target=&quot;_blank&quot;>table method</a>, we obtain the values shown in Table 1 for each of the resistor voltage drops and resistor currents.</p>
+<p>&nbsp;</p>
+<h5><em><strong>Table 1.</strong> Voltage and current values were calculated for the circuit with B<sub>2</sub> removed.</em></h5>
+<p><img src=&quot;/uploads/articles/values-for-voltage-and-current.jpg&quot; /></p>
+<p>&nbsp;</p>
+<p>Now, we can add the voltages and currents into the circuit drawing, as shown in Figure 4, paying careful attention to make sure we label the voltage drops with the correct polarity and the currents with the correct direction of flow.&nbsp;</p>
+<p>&nbsp;</p>
+<p><img src=&quot;/uploads/thumbnails/Figure_4._Voltages_and_currents_added_to_the_circuit_powered_only_by_battery_B1_.jpg&quot; /></p>
+<h5><em><strong>Figure 4.</strong> Voltages and currents are added to the circuit powered only by battery B<sub>1</sub>.</em></h5>
+<p>&nbsp;</p>
+<p>This step will be critical when we begin superimposing values later.</p>
+<p>&nbsp;</p>
+<h4>Step 3: Repeat Steps 1 and 2 for Each Power Supply</h4>
+<p>Next, we&rsquo;ll repeat this process for the circuit of Figure 3 with only the 7 V battery. The results are shown in Table 2 and Figure 5.</p>
+<p>&nbsp;</p>
+<h5><em><strong>Table 2. </strong>Voltage and current values were calculated for the circuit with B<sub>1</sub> removed.</em></h5>
+<p><img src=&quot;/uploads/articles/values-for-voltage-and-current-image2.jpg&quot; /></p>
+<p>&nbsp;</p>
+<p><img src=&quot;/uploads/thumbnails/Figure_5._Voltages_and_currents_added_to_the_circuit_powered_only_by_battery_B2_.jpg&quot; /></p>
+<h5><em><strong>Figure 5. </strong>Voltages and currents are added to the circuit powered only by battery B<sub>2</sub>.</em></h5>
+<p>&nbsp;</p>
+<h4>Step 4: Superimpose the Individual Voltages and Currents</h4>
+<p>When superimposing these values of voltage and current, we must be careful to consider the polarity of the voltage drop and the direction of the current flow, as the values have to be added algebraically.</p>
+<p>Figure 6 shows the superposition of the resistor voltage drops.</p>
+<p>&nbsp;</p>
+<p><img src=&quot;/uploads/thumbnails/Figure_6._Superposition_of_the_resistor_voltage_drops_.jpg&quot; /></p>
+<h5><em><strong>Figure 6. </strong>Superposition of the resistor voltage drops.</em></h5>
+<p>&nbsp;</p>
+<p>Meanwhile, Figure 7 shows the circuit after adding the superimposed voltage values.</p>
+<p>&nbsp;</p>
+<p><img src=&quot;/uploads/thumbnails/Figure_7._Application_of_the_superimposed_voltage_values__1.jpg&quot; /></p>
+<h5><em><strong>Figure 7.</strong> Application of the superimposed voltage values.</em></h5>
+<p>&nbsp;</p>
+<p>The resistor currents add up algebraically as well and can either be superimposed using resistor voltage drops or calculated from the final voltage drops and respective resistances (I = V/R). Either way, the answers will be the same.&nbsp;</p>
+<p>Figure 8 demonstrates how the superposition method is applied to the currents.</p>
+<p>&nbsp;</p>
+<p><img src=&quot;/uploads/thumbnails/Figure_8._Superposition_of_the_resistor_voltage_drops_.jpg&quot; /></p>
+<h5><strong>Figure 8. </strong>Superposition of the resistor voltage drops.</h5>
+<p>&nbsp;</p>
+<p>Next, adding these superimposed current values results in the circuit of Figure 9.</p>
+<p>&nbsp;</p>
+<p><img src=&quot;/uploads/thumbnails/Figure_9._Application_of_the_superimposed_current_values_.jpg&quot; /></p>
+<h5><em><strong>Figure 9. </strong>Application of the superimposed current values.</em></h5>
+<p>&nbsp;</p>
+<p>After following all of those steps, it is easy to see how the superposition theorem is quite simple and elegant, don&rsquo;t you think?</p>
+<p>&nbsp;</p>
+<h3>Prerequisites for Using the Superposition Theorem</h3>
+<p>It&rsquo;s important to note that the superposition theorem works only for circuits that are reducible to <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/simple-series-circuits/&quot; target=&quot;_blank&quot;>series</a> and/or <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/simple-parallel-circuits/&quot; target=&quot;_blank&quot;>parallel</a> combinations for each power source evaluated individually. Therefore, for example, it is useless for analyzing an unbalanced bridge circuit.</p>
+<p>Another limitation of the superposition theorem is when it is used with linear circuits where all of the underlying equations do not have any mathematical exponents or roots. This is true for most of the circuits we encounter in electrical engineering. A typical circuit built with standard passive components, such as resistors, inductors, and capacitors, is linear. Most voltage sources, batteries, and current sources are also linear to first order. Other network analysis methods, including <a href=&quot;https://www.allaboutcircuits.com/technical-articles/thevenin-theorem-dependent-source-circuits/&quot; target=&quot;_blank&quot;>Thevenin&rsquo;s theorem</a> and <a href=&quot;https://www.allaboutcircuits.com/technical-articles/learning-to-simplify-thevenin-and-norton-equivalent-circuits/&quot; target=&quot;_blank&quot;>Norton&rsquo;s theorem</a>, are also limited to use with linear circuits.&nbsp;</p>
+<p>Diodes and varistors are examples of non-linear devices because their I-V curves are not linear. At low currents, they can generally be considered linear devices; however, at high currents, a battery may not output a constant voltage, and its function would be non-linear.</p>
+<p>The linearity requirement means that the superposition theorem is only applicable for determining voltage and current, not power. Power dissipation, being a nonlinear function, does not algebraically add up to an accurate total when only one source is considered at a time.&nbsp;</p>
+<p>Another prerequisite for the superposition theorem is that all components must be &ldquo;bilateral,&rdquo; meaning that they behave the same, with current flowing in either direction through them. Resistors have no polarity-specific behavior, thus, the circuits we&rsquo;ve been studying so far all meet this criterion.</p>
+<p>&nbsp;</p>
+<h3>Applications of the Superposition Theorem to AC, DC, and AC/DC Circuits</h3>
+<p>The superposition theorem finds use in the study of <a href=&quot;https://www.allaboutcircuits.com/video-lectures/generation-of-alternating-voltage/&quot; target=&quot;_blank&quot;>alternating current (AC) circuits</a> and <a href=&quot;https://www.allaboutcircuits.com/video-lectures/decibels-amplifier-basics/&quot; target=&quot;_blank&quot;>semiconductor (amplifier) circuits</a>, where sometimes AC is often mixed (superimposed) with DC. Since AC voltages and current equations (<a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/voltage-current-resistance-relate/&quot; target=&quot;_blank&quot;>Ohm&rsquo;s law</a>) are linear, just like DC, we can use superposition to analyze the circuit with just the DC power source. Then, just the AC power source, combine the results to tell what will happen with both AC and DC sources in effect. For now, though, superposition will suffice as a break from having to do simultaneous equations to analyze a circuit.</p>
+<p>&nbsp;</p>
+<h3>Review of the Superposition Theorem</h3>
+<ul>
+<li>The superposition theorem states that a circuit with multiple power sources can be analyzed by evaluating only one power source at a time. Then, the component voltages and currents are added algebraically to determine the circuit response with all power sources in effect.</li>
+<li>Step 1: Replace all of the power sources except one. Replace voltage sources with a short circuit (wire) and current sources with an open circuit (break).</li>
+<li>Step 2: Calculate the voltages and currents due to each individual source.</li>
+<li>Step 3: Repeat steps 1 and 2 for each power supply.</li>
+<li>Step 4: Superimpose the individual voltages and currents. Algebraically add the component voltages and currents; paying particular attention to the direction of the voltage drops and current flows.</li>
+<li>The superposition theorem is limited to use with linear, bilateral circuits.</li>
+<li>The superposition theorem can be applied to DC, AC, and combined AC/DC circuits.</li>
+<li>The superposition theorem cannot be used to add power.</li>
+</ul>
+
+
+
+</div>
+</div>
+</body>
+</html>

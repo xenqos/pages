@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>DYI Projects</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='74.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='76.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>Analog Lab - PWM Power Controller</h1>
+<h3>Project Overview</h3>
+<p>Controlling electrical power through a load by means of quickly switching it on and off, and varying the on-time, is known as <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-11/pulse-width-modulation/&quot; target=&quot;_blank&quot;>pulse-width modulation</a>&nbsp;(PWM). PWM&nbsp;is a very efficient means of controlling electrical power because the controlling element (a power transistor) dissipates comparatively little power in switching on and off, especially if compared to the wasted power dissipated by a <a href=&quot;https://eepower.com/resistor-guide/resistor-types/rheostat/&quot; target=&quot;_blank&quot;>rheostat</a> in a similar situation.</p>
+<p>In this project, you will build the PWM modulation circuit shown in Figure 1.</p>
+<p>&nbsp;</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/PWM-power-controller-schematic-diagram.jpg&quot; /></p>
+<h5><em><strong>Figure 1. </strong>Schematic diagram of the pulse width modulation circuit for controlling lamp power.</em></h5>
+<p>&nbsp;</p>
+<h3>PWM Generator Theory of Operation</h3>
+<p>The PWM signal generator of Figure 1&nbsp;uses a <a href=&quot;https://www.allaboutcircuits.com/textbook/experiments/chpt-8/555-ic/&quot; target=&quot;_blank&quot;>555 timer</a> to generate a sawtooth <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/voltage-current/&quot; target=&quot;_blank&quot;>voltage</a> waveform across a <a href=&quot;https://eepower.com/capacitor-guide/&quot; target=&quot;_blank&quot;>capacitor</a>.&nbsp; It then compares that signal against a variable reference voltage&nbsp;using open-loop <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-8/introduction-operational-amplifiers/&quot; target=&quot;_blank&quot;>operational amplifiers (op amps)</a> operating as&nbsp;<a href=&quot;https://www.allaboutcircuits.com/textbook/experiments/chpt-6/voltage-comparator/&quot; target=&quot;_blank&quot;>comparators</a>. The comparison of these two voltage signals produces a <a href=&quot;https://www.allaboutcircuits.com/textbook/alternating-current/chpt-7/square-wave-signals/&quot; target=&quot;_blank&quot;>square-wave</a> output from the op amp, varying in duty cycle (ratio of high to low) according to the variable reference voltage.</p>
+<p>This variable duty cycle signal then drives the base of a power transistor, switching current on and off through the lamp load. The 555&rsquo;s oscillation frequency is much higher than the lamp filament&rsquo;s ability to thermally cycle (heat and cool), so any variation in duty cycle, or pulse width, has the effect of controlling the total power dissipated by the load over time.&nbsp;When the <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-4/active-mode-operation-bjt/&quot; target=&quot;_blank&quot;>transistor is in cutoff</a> (input low), its power dissipation is zero because there is no current through it.&nbsp;When the transistor is saturated (input high), its dissipation is very low because there is a little <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/polarity-voltage-drops/&quot; target=&quot;_blank&quot;>voltage drop</a> between the collector and emitter while it is conducting current.</p>
+<p>When you examine the schematic, you will notice two op amps&nbsp;<a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/simple-parallel-circuits/&quot; target=&quot;_blank&quot;>connected in parallel</a>. This is done to provide maximum current output to the base terminal of the power transistor. A single op amp (one-half of a 1458 IC) may not be able to provide sufficient output current to drive the transistor into saturation, so two op amps are used in tandem.</p>
+<p>This should only be done if the op amps in question are overload-protected, which the 1458 series of op amps are. Otherwise, it is possible (though unlikely) that one op amp could turn on before the other, and damage results from the two outputs short-circuiting each other (one driving high&nbsp;and the other driving low&nbsp;simultaneously). The inherent short-circuit protection offered by the 1458 op amp allows for direct driving of the power transistor base without needing a current-limiting <a href=&quot;https://eepower.com/resistor-guide/&quot; target=&quot;_blank&quot;>resistor</a>.</p>
+<p>The three <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-3/special-purpose-diodes/&quot; target=&quot;_blank&quot;>diodes</a> <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/simple-series-circuits/&quot; target=&quot;_blank&quot;>in series</a> connecting the op amps&rsquo; outputs to the transistor&rsquo;s base are there to drop voltage and ensure the transistor falls into cutoff when the op amp outputs go low.&nbsp;Since the 1458 op amp cannot swing its output voltage all the way down to <a href=&quot;https://www.allaboutcircuits.com/technical-articles/an-introduction-to-ground/&quot; target=&quot;_blank&quot;>ground</a> potential but only to within about 2 V of ground. A&nbsp;direct connection from the op amp to the transistor would mean the transistor would never fully turn off. Adding three silicon diodes in series drops approximately 2.1 V (0.7 V times 3) to ensure there is a minimal voltage at the transistor&rsquo;s base when the op amp outputs go low.</p>
+<p>&nbsp;</p>
+<h3>Parts and Materials</h3>
+<ul>
+<li>Four 6 V batteries or a 12 V power supply</li>
+<li>One capacitor, 100 &micro;F electrolytic, 35 WVDC&nbsp;</li>
+<li>One capacitor, 0.1 &micro;F, non-polarized&nbsp;</li>
+<li>One 555 timer IC</li>
+<li>Dual operational amplifier, model 1458 recommended</li>
+<li>One NPN power transistor</li>
+<li>Three 1N4001 rectifying diodes</li>
+<li>One 10 k&Omega; <a href=&quot;https://eepower.com/resistor-guide/resistor-types/potentiometer/&quot; target=&quot;_blank&quot;>potentiometer</a>, linear taper</li>
+<li>One 33 k&Omega; resistor</li>
+<li>12 V automotive tail-light lamp</li>
+<li>Optional: audio detector with headphones</li>
+<li>Optional: oscilloscope</li>
+</ul>
+
+<p>&nbsp;</p>
+<h3>Learning Objectives</h3>
+<ul>
+<li>How to use the 555 timer as an astable multivibrator (oscillator)</li>
+<li>How to use an op amp as a comparator</li>
+<li>How to use diodes to drop unwanted DC voltage</li>
+<li>How to control power to a load by PWM</li>
+</ul>
+
+<p>&nbsp;</p>
+<h3>Instructions</h3>
+<p><strong>Step 1:&nbsp;</strong>Build the circuit of Figure 1 and represent it by the breadboard implementation shown in Figure 2.</p>
+<p>&nbsp;</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/PWM-power-controller-circuits.jpg&quot; /></p>
+<h5><em><strong>Figure 2. </strong>Breadboard implementation of the pulse width modulation circuit for controlling lamp power.</em></h5>
+<p>&nbsp;</p>
+<p><strong>Step 2:&nbsp;</strong>If you have an <a href=&quot;https://www.allaboutcircuits.com/technical-articles/basic-waveform-analysis-with-an-oscilloscope/&quot; target=&quot;_blank&quot;>oscilloscope</a>,&nbsp;view the capacitor voltage, potentiometer voltage, and op amp output waveforms to see how they relate to one another and to the load power. In Figure 3, the capacitor voltage waveform (E<sub>C</sub>) is shown in green.&nbsp;</p>
+<p>&nbsp;</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/variable-duty-cycle-signal.jpg&quot; /></p>
+<h5><em><strong>Figure 3. </strong>PWM output as a function of the potentiometer generated control voltage.</em></h5>
+<h5>&nbsp;</h5>
+<p>It does not change as a function of the control voltage output by the potentiometer (shown in black). The output from the op amps is illustrated in red.</p>
+<p>When the capacitor voltage (green) is greater than the control voltage (black), the output (red) is low. By adjusting the level of the control voltage, we can change the percentage of each capacitor voltage cycle in which the capacitor voltage is greater than the control voltage. This percentage (time on divided by time off) is the duty cycle.</p>
+<p><strong>Step 3:&nbsp;</strong>However, most of us have no access to a triple-trace oscilloscope, much less any oscilloscope at all, so an alternative method is to slow the 555 oscillator&nbsp;down enough that the three voltages may be compared with a simple DC <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-8/voltmeter-design/&quot; target=&quot;_blank&quot;>voltmeter</a>.&nbsp;Replace the 0.1 &micro;F capacitor with one that is 100 &micro;F or larger. This will slow the oscillation frequency down by a factor of at least a thousand, enabling you to measure the capacitor voltage <em>slowly</em> rising over time and the op amp output transition from high&nbsp;to low&nbsp;when the capacitor voltage becomes greater than the potentiometer voltage.</p>
+<p>With such a slow oscillation frequency, the load power will not be proportioned as before.&nbsp;Rather, the lamp will turn on and off at regular intervals.</p>
+<p><strong>Step 4:&nbsp;</strong>Feel free to experiment with other capacitor or resistor values to speed up the oscillations enough so the lamp never fully turns on or off but is throttled&nbsp;by the quick on-and-off pulsing of the transistor.</p>
+<p><strong>Step 5: </strong>It is interesting to listen to the op amp output signal through an audio detector as the potentiometer is adjusted through its full range of motion. Adjusting the potentiometer has no effect on signal frequency, but it greatly affects the duty cycle.</p>
+<p>Note the difference in tone quality, or timbre, as the potentiometer varies the duty cycle from 0% to 50% to 100%. Varying the duty cycle has the effect of changing the harmonic content of the waveform, which makes the tone sound different.</p>
+<p>You might notice a particular uniqueness to the sound heard through the detector headphones when the potentiometer is in the center position (50% duty cycle&mdash;50% load power) versus a kind of similarity in sound just above or below 50% duty cycle. This is due to the absence or presence of even-numbered <a href=&quot;https://www.allaboutcircuits.com/textbook/alternating-current/chpt-10/harmonics-polyphase-power-systems/&quot; target=&quot;_blank&quot;>harmonics</a>. Any symmetrical waveform above and below its centerline, such as a square wave with a 50% duty cycle, contains no even-numbered harmonics, only odd-numbered.</p>
+<p>If the duty cycle is below or above 50%, the waveform will not exhibit this symmetry, and there will be even-numbered harmonics. The presence of these even-numbered harmonic frequencies can be detected by the human ear, as some of them correspond to octaves of the fundamental frequency and thus fit&nbsp;more naturally into the tone scheme.</p>
+<p>You can also observe the changes in the harmonics and frequency spectrum if you have an&nbsp;oscilloscope that can display the spectrum of a signal. A spectrum analyzer, as its name suggests, will also provide this information.</p>
+
+
+</div>
+</div>
+</body>
+</html>

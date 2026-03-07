@@ -1,0 +1,104 @@
+<h1>AC Inductor Circuits</h1>
+<h3>Resistors vs. Inductors</h3>
+<p><a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-3/ac-inductor-circuits/" target="_blank">Inductors</a> do not behave the same way as <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/resistors/" target="_blank">resistors</a> do. Whereas resistors simply oppose the flow of current through them (by dropping a voltage directly proportional to the current), inductors oppose <em>changes</em> in current through them, by dropping a voltage directly proportional to the <em>rate of change</em> of current.</p>
+<p>In accordance with <em><a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-15/inductors-and-calculus/" target="_blank">Lenz&rsquo;s Law</a></em>, this induced voltage is always of such a polarity as to try to maintain current at its present value. That is, if the current is increasing in magnitude, the induced voltage will &ldquo;push against&rdquo; the current flow; if the current is decreasing, the polarity will reverse and &ldquo;push with&rdquo; the current to oppose the decrease.</p>
+<p>This opposition to current change is called <em><a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-5/review-of-r-x-and-z/" target="_blank">reactance</a></em>, rather than <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/resistance/" target="_blank">resistance</a>. Expressed mathematically, the relationship between the voltage dropped across the inductor and rate of current change through the inductor is as such:</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/inductor-formula.jpg" /></p>
+<p>&nbsp;</p>
+<h3>Alternating Current in a Simple Inductive Circuit</h3>
+<p>The expression <em>di/dt</em> is one from calculus, meaning the rate of change of instantaneous current (i) over time, in amps per second.</p>
+<p>The inductance (L) is in Henrys, and the instantaneous voltage (e), of course, is in volts. Sometimes you will find the rate of instantaneous voltage expressed as &ldquo;v&rdquo; instead of &ldquo;e&rdquo; (v = L di/dt), but it means the exact same thing.</p>
+<p>To show what happens with alternating current, let&rsquo;s analyze a simple inductor circuit:</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/alternating-current-inductor-circuit.jpg" /></p>
+<p><em>Pure inductive circuit: Inductor current lags inductor voltage by 90&deg;.</em></p>
+<p>&nbsp;</p>
+<p>If we were to plot the current and voltage for this very simple circuit, it would look something like this:</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/current-and-voltage-circuit-plot.jpg" /></p>
+<p><em>Pure inductive circuit, waveforms.</em></p>
+<p>&nbsp;</p>
+<p>Remember, the voltage dropped across an inductor is a reaction against the <em>change</em> in current through it.</p>
+<p>Therefore, the instantaneous voltage is zero whenever the instantaneous current is at a peak (zero change, or level slope, on the current sine wave), and the instantaneous voltage is at a peak wherever the instantaneous current is at maximum change (the points of steepest slope on the current wave, where it crosses the zero line).</p>
+<p>This results in a voltage wave that is 90&deg; out of phase with the current wave. Looking at the graph, the voltage wave seems to have a &ldquo;head start&rdquo; on the current wave; the voltage &ldquo;leads&rdquo; the current and the current &ldquo;lags&rdquo; behind the voltage.</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/pure-inductive-circuit-current-lags.jpg" /></p>
+<p><em>Current lags voltage by 90&deg; in a pure inductive circuit.</em></p>
+<p>&nbsp;</p>
+<p>Things get even more interesting when we plot the power for this circuit:</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/pure-inductive-circuit-plot.jpg" /></p>
+<p><em>In a pure inductive circuit, instantaneous power may be positive or negative.</em></p>
+<p>&nbsp;</p>
+<p>Because instantaneous power is the product of the instantaneous voltage and the instantaneous current (p=ie), the power equals zero whenever the instantaneous current <em>or</em> voltage is zero. Whenever the instantaneous current and voltage are both positive (above the line), the power is positive.</p>
+<p>As with the resistor example, the power is also positive when the instantaneous current and voltage are both negative (below the line).</p>
+<p>However, because the current and voltage waves are 90&deg; out of phase, there are times when one is positive while the other is negative, resulting in equally frequent occurrences of <em>negative instantaneous power</em>.</p>
+<h3>What is Negative Power?</h3>
+<p>But what does <em>negative</em> power mean? It means that the inductor is releasing power back to the circuit, while a positive power means that it is absorbing power from the circuit.</p>
+<p>Since the positive and negative power cycles are equal in magnitude and duration over time, the inductor releases just as much power back to the circuit as it absorbs over the span of a complete cycle.</p>
+<p>What this means in a practical sense is that the reactance of an inductor dissipates net energy of zero, quite unlike the resistance of a resistor, which dissipates energy in the form of heat. Mind you, this is for perfect inductors only, which have no wire resistance.</p>
+<h3>Reactance vs. Resistance</h3>
+<p>An inductor&rsquo;s opposition to change in current translates to an opposition to alternating current in general, which is by definition always changing in instantaneous magnitude and direction.</p>
+<p>This opposition to alternating current is similar to resistance but different in that it always results in a phase shift between current and voltage, and it dissipates zero power. Because of the differences, it has a different name: <em>reactance</em>. <a href="https://www.allaboutcircuits.com/search?q=Reactance" target="_blank">Reactance</a> to AC is expressed in ohms, just like resistance is, except that its mathematical symbol is X instead of R.</p>
+<p>To be specific, reactance associated with an inductor is usually symbolized by the capital letter X with a letter L as a subscript, like this: X<sub>L</sub>.</p>
+<p>Since inductors drop voltage in proportion to the rate of current change, they will drop more voltage for faster-changing currents, and less voltage for slower-changing currents. What this means is that reactance in ohms for any inductor is directly proportional to the frequency of the alternating current. The exact formula for determining reactance is as follows:</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/reactance-formula.jpg" /></p>
+<p>&nbsp;</p>
+<p>If we expose a 10 mH inductor to frequencies of 60, 120, and 2500 Hz, it will manifest the reactances in the table below.</p>
+<h4>Reactance of a 10 mH inductor:</h4>
+<table>
+<tbody>
+<tr>
+<td><strong>Frequency (Hertz)</strong></td>
+<td><strong>Reactance (Ohms)</strong></td>
+</tr>
+<tr>
+<td>60</td>
+<td>3.7699</td>
+</tr>
+<tr>
+<td>120</td>
+<td>7.5398</td>
+</tr>
+<tr>
+<td>2500</td>
+<td>157.0796</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>In the reactance equation, the term &ldquo;2&pi;f&rdquo; (everything on the right-hand side except the L) has a special meaning unto itself. It is the number of radians per second that the alternating current is &ldquo;rotating&rdquo; at, if you imagine one cycle of AC to represent a full circle&rsquo;s rotation.</p>
+<p>A <em>radian</em> is a unit of angular measurement: there are 2&pi; radians in one full circle, just as there are 360&deg; in a full circle. If the alternator producing the AC is a double-pole unit, it will produce one cycle for every full turn of shaft rotation, which is every 2&pi; radians, or 360&deg;.</p>
+<p>If this constant of 2&pi; is multiplied by frequency in Hertz (cycles per second), the result will be a figure in radians per second, known as the <em>angular velocity</em> of the AC system.</p>
+<h3>Angular Velocity in AC Systems</h3>
+<p>Angular velocity may be represented by the expression 2&pi;f, or it may be represented by its own symbol, the lowercase Greek letter omega, which appears similar to our Roman lower-case &ldquo;w&rdquo;: &omega;. Thus, the reactance formula X<sub>L</sub> = 2&pi;fL could also be written as X<sub>L</sub> = &omega;L.</p>
+<p>It must be understood that this &ldquo;angular velocity&rdquo; is an expression of how rapidly the AC waveforms are cycling, a full-cycle being equal to 2&pi; radians. It is not necessarily representative of the actual shaft speed of the alternator producing the AC.</p>
+<p>If the alternator has more than two poles, the angular velocity will be a multiple of the shaft speed. For this reason, &omega; is sometimes expressed in units of <em>electrical</em> radians per second rather than (plain) radians per second, so as to distinguish it from mechanical motion.</p>
+<p>Any way we express the angular velocity of the system, it is apparent that it is directly proportional to reactance in an inductor. As the frequency (or alternator shaft speed) is increased in an AC system, an inductor will offer greater opposition to the passage of current, and vice versa.</p>
+<p>Alternating current in a simple inductive circuit is equal to the voltage (in volts) divided by the inductive reactance (in ohms), just as either alternating or direct current in a simple resistive circuit is equal to the voltage (in volts) divided by the resistance (in ohms). An example circuit is shown here:</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/circuit-example.jpg" /></p>
+<p><em>Inductive reactance</em></p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/inductive-reactance-equation.jpg" /></p>
+<p>&nbsp;</p>
+<h3>Phase Angles</h3>
+<p>However, we need to keep in mind that voltage and current are not in phase here. As was shown earlier, the voltage has a phase shift of +90&deg; with respect to the current. If we represent these phase angles of voltage and current mathematically in the form of complex numbers, we find that an inductor&rsquo;s opposition to current has a phase angle, too:</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/phase-angles-of-voltage-and-current-equation.jpg" /></p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/current-lags-voltage-inductor.jpg" /></p>
+<p><em>Current lags voltage by 90&deg; in an inductor.</em></p>
+<p>&nbsp;</p>
+<p>Mathematically, we say that the phase angle of an inductor&rsquo;s opposition to current is 90&deg;, meaning that an inductor&rsquo;s opposition to current is a positive imaginary quantity. This phase angle of reactive opposition to current becomes critically important in circuit analysis, especially for complex AC circuits where reactance and resistance interact.</p>
+<p>It will prove beneficial to represent <em>any</em> component&rsquo;s opposition to current in terms of complex numbers rather than scalar quantities of resistance and reactance.</p>
+<p>&nbsp;</p>
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li><em>Inductive reactance</em> is the opposition that an inductor offers to alternating current due to its phase-shifted storage and release of energy in its magnetic field. Reactance is symbolized by the capital letter &ldquo;X&rdquo; and is measured in ohms just like resistance (R).</li>
+<li>Inductive reactance can be calculated using this formula: X<sub>L</sub> = 2&pi;fL</li>
+<li>The <em>angular velocity</em> of an AC circuit is another way of expressing its frequency, in units of electrical radians per second instead of cycles per second. It is symbolized by the lowercase Greek letter &ldquo;omega,&rdquo; or &omega;.</li>
+<li>Inductive reactance <em>increases</em> with increasing frequency. In other words, the higher the frequency, the more it opposes the AC flow of electrons.</li>
+</ul>

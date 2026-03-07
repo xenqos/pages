@@ -1,0 +1,47 @@
+<h1>Re-drawing Complex Schematics</h1>
+<p>Typically, <a href="https://www.allaboutcircuits.com/video-lectures/complex-circuits/" target="_blank">complex circuits</a> are not arranged in nice, neat, clean schematic diagrams for us to follow. They are often drawn in such a way that makes it difficult to follow which components are <a href="https://www.allaboutcircuits.com/video-lectures/series-circuits-part-1/" target="_blank">in series</a> and which are <a href="https://www.allaboutcircuits.com/video-lectures/parallel-circuits/" target="_blank">in parallel</a> with each other. The purpose of this section is to show you a method useful for redrawing circuit schematics in a neat and orderly fashion. Like the stage-reduction strategy for solving <a href="https://www.allaboutcircuits.com/video-lectures/series-parallel-circuits/" target="_blank">series-parallel combination</a> circuits, it is a method easier demonstrated than described.</p>
+<h3>Analyzing and Simplifying a Complex Circuit Diagram</h3>
+<p>Let&rsquo;s start with the following (convoluted) circuit diagram. Perhaps this diagram was originally drawn this way by a technician or engineer. Perhaps it was sketched as someone traced the wires and connections of a real circuit. In any case, here it is in all its ugliness:</p>
+<p><img src="/uploads/articles/complex-circuit-diagram1.jpg" /></p>
+<p>With electric circuits and circuit diagrams, the length and routing of wire connecting components in a circuit matters little. (Actually, in some AC circuits it becomes critical, and very long wire lengths can contribute unwanted resistance to both AC and DC circuits, but in most cases wire length is irrelevant.) What this means for us is that we can lengthen, shrink, and/or bend connecting wires without affecting the operation of our circuit.</p>
+<p>The strategy I have found easiest to apply is to start by tracing the current from one terminal of the battery around to the other terminal, following the loop of components closest to the battery and ignoring all other wires and components for the time being. While tracing the path of the loop, mark each <a href="https://www.allaboutcircuits.com/video-lectures/electronic-components-resistors/" target="_blank">resistor</a> with the appropriate polarity for voltage drop.</p>
+<p>In this case, I&rsquo;ll begin my tracing of this circuit at the positive terminal of the battery and finish at the negative terminal, in the same general direction as current would flow. When tracing this direction, I will mark each resistor with positive polarity on the entering side and negative polarity on the exiting side, for that is how the actual polarity will be as current (according to the conventional-flow model) enters and exits a resistor:</p>
+<p><img src="/uploads/articles/polarity-of-voltage-drop.jpg" /></p>
+<p><img src="/uploads/articles/complex-circuit-diagram-short-loop.jpg" /></p>
+<p>Any components encountered along this short loop are drawn vertically in order:</p>
+<p><img src="/uploads/articles/circuit-diagram-two-2.png" /></p>
+<p>Now, proceed to trace any loops of components connected around components that were just traced. In this case, there&rsquo;s a loop around R<sub>1</sub> formed by R<sub>2</sub>, and another loop around R<sub>3</sub> formed by R<sub>4</sub>:</p>
+<p><img src="/uploads/articles/complex-circuit-diagram-loops-around.jpg" /></p>
+<p>Tracing those loops, I draw R<sub>2</sub> and R<sub>4</sub> in parallel with R<sub>1</sub> and R<sub>3</sub> (respectively) on the vertical diagram. Noting the polarity of voltage drops across R<sub>3</sub> and R<sub>1</sub>, I mark R<sub>4</sub> and R<sub>2</sub> likewise:</p>
+<p><img src="/uploads/articles/four-resistor-series-parallel-configuration.jpg" /></p>
+<p>Now we have a circuit that is very easily understood and analyzed. In this case, it is identical to the four-resistor series-parallel configuration we examined earlier in the chapter.</p>
+<h3>Another Example for Simplification of Complex Circuits</h3>
+<p>Let&rsquo;s look at another example, even uglier than the one before:</p>
+<p><img src="/uploads/articles/simplification-of-complex-circuits-image1.jpg" /></p>
+<p>The first loop I&rsquo;ll trace is from the negative (-) side of the battery, through R<sub>6</sub>, through R<sub>1</sub>, and back to the positive (+) end of the battery:</p>
+<p><img src="/uploads/articles/simplification-of-complex-circuits-image2.jpg" /></p>
+<p>Re-drawing vertically and keeping track of voltage drop polarities along the way, our equivalent circuit starts out looking like this:</p>
+<p><img src="/uploads/articles/circuit-diagram-two.jpg" /></p>
+<p>Next, we can proceed to follow the next loop around one of the traced resistors (R<sub>6</sub>), in this case, the loop formed by R<sub>5</sub> and R<sub>7</sub>. As before, we start at the positive end of R<sub>6</sub> and proceed to the negative end of R<sub>6</sub>, marking voltage drop polarities across R<sub>5</sub> and R<sub>7</sub> as we go:</p>
+<p><img src="/uploads/articles/complex-circuit-diagram-resistors-loop-around.jpg" /></p>
+<p>Now we add the R<sub>5</sub>&mdash;R<sub>7</sub> loop to the vertical drawing. Notice how the voltage drop polarities across R<sub>7</sub> and R<sub>5</sub> correspond with that of R<sub>6</sub>, and how this is the same as what we found tracing R<sub>7</sub> and R<sub>5</sub> in the original circuit:</p>
+<p><img src="/uploads/articles/simplified-circuit-diagram-one.jpg" /></p>
+<p>We repeat the process again, identifying and tracing another loop around an already-traced resistor. In this case, the R<sub>3</sub>&mdash;R<sub>4</sub> loop around R<sub>5</sub> looks like a good loop to trace next:</p>
+<p><img src="/uploads/articles/simplification-of-complex-circuits-image3.jpg" /></p>
+<p>Adding the R<sub>3</sub>&mdash;R<sub>4</sub> loop to the vertical drawing, marking the correct polarities as well:</p>
+<p><img src="/uploads/articles/simplified-circuit-diagram-two.jpg" /></p>
+<p>With only one remaining resistor left to trace, then next step is obvious: trace the loop formed by R<sub>2</sub> around R<sub>3</sub>:</p>
+<p><img src="/uploads/articles/complex-circuit-diagram-two.jpg" /></p>
+<p>Adding R<sub>2</sub> to the vertical drawing, and we&rsquo;re finished! The result is a diagram that&rsquo;s very easy to understand compared to the original:</p>
+<p><img src="/uploads/articles/simplified-circuit-diagram-three.jpg" /></p>
+<p>This simplified layout greatly eases the task of determining where to start and how to proceed in reducing the circuit down to a single equivalent (total) resistance. Notice how the circuit has been re-drawn, all we have to do is start from the right-hand side and work our way left, reducing simple-series and simple-parallel resistor combinations one group at a time until we&rsquo;re done.</p>
+<p>In this particular case, we would start with the simple parallel combination of R<sub>2</sub> and R<sub>3</sub>, reducing it to a single resistance. Then, we would take that equivalent resistance (R<sub>2</sub>//R<sub>3</sub>) and the one in series with it (R<sub>4</sub>), reducing them to another equivalent resistance (R<sub>2</sub>//R<sub>3</sub>&mdash;R<sub>4</sub>). Next, we would proceed to calculate the parallel equivalent of that resistance (R<sub>2</sub>//R<sub>3</sub>&mdash;R<sub>4</sub>) with R<sub>5</sub>, then in series with R<sub>7</sub>, then in parallel with R<sub>6</sub>, then in series with R<sub>1</sub> to give us a grand total resistance for the circuit as a whole.</p>
+<p>From there we could calculate total current from total voltage and total resistance (I=E/R), then &ldquo;expand&rdquo; the circuit back into its original form one stage at a time, distributing the appropriate values of voltage and current to the resistances as we go.</p>
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li>Wires in diagrams and in real circuits can be lengthened, shortened, and/or moved without affecting circuit operation.</li>
+<li>To simplify a convoluted circuit schematic, follow these steps:</li>
+<li>Trace current from one side of the battery to the other, following any single path (&ldquo;loop&rdquo;) to the battery. Sometimes it works better to start with the loop containing the most components, but regardless of the path taken the result will be accurate. Mark polarity of voltage drops across each resistor as you trace the loop. Draw those components you encounter along this loop in a vertical schematic.</li>
+<li>Mark traced components in the original diagram and trace remaining loops of components in the circuit. Use polarity marks across traced components as guides for what connects where. Document new components in loops on the vertical re-draw schematic as well.</li>
+<li>Repeat last step as often as needed until all components in original diagram have been traced.</li>
+</ul>

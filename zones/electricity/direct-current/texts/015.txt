@@ -1,0 +1,19 @@
+<h1>Polarity of voltage drops</h1>
+<p>When using conventional current flow, we can trace the direction of the current in the same circuit by starting at the positive (+) terminal and going to the negative (-) terminal of the battery, the only source of voltage in the circuit. From this, we can see that the current is flowing clockwise, from point 1 to 2 to 3 to 4 to 5 to 6 and back to 1 again.</p>
+<p>As the current encounters the 5 &Omega; resistance, voltage is dropped across the <a href="https://www.allaboutcircuits.com/video-lectures/electronic-components-resistors/" target="_blank">resistor</a>&rsquo;s ends. The polarity of this voltage drop is positive (+) at point 3 with respect to point 4.</p>
+<p>We can mark the polarity of the resistor&rsquo;s voltage drop with negative and positive symbols, in accordance with the direction of current; whichever end of the resistor the current is <em>entering</em> is positive with respect to the end of the resistor it is <em>exiting</em>:</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/polarity-of-the-resistors-voltage-drop.jpg" /></p>
+<p>&nbsp;</p>
+<p>We could make our table of voltages a little more complete by marking the polarity of the voltage for each pair of points in this circuit:</p>
+<pre>
+Between points 1 (+) and 4 (-) = 10 volts                     &#10;Between points 2 (+) and 4 (-) = 10 volts  &#10;Between points 3 (+) and 4 (-) = 10 volts &#10;Between points 1 (+) and 5 (-) = 10 volts                        &#10;Between points 2 (+) and 5 (-) = 10 volts                       &#10;Between points 3 (+) and 5 (-) = 10 volts  &#10;Between points 1 (+) and 6 (-) = 10 volts &#10;Between points 2 (+) and 6 (-) = 10 volts                         &#10;Between points 3 (+) and 6 (-) = 10 volts&#10;</pre>
+<p>&nbsp;</p>
+<p>While it might seem a little silly to document polarity of voltage drop in this circuit, it is an important concept to master. It will be critically important in the analysis of more <a href="https://www.allaboutcircuits.com/video-lectures/complex-circuits/" target="_blank">complex circuits</a> involving multiple resistors and/or batteries.</p>
+<h3>Polarity has Nothing to do with Ohm&rsquo;s Law</h3>
+<p>It should be understood that polarity has nothing to do with Ohm&rsquo;s Law: there will never be negative voltages, currents, or resistance entered into any <a href="https://www.allaboutcircuits.com/video-lectures/electrical-quantities-b/" target="_blank">Ohm&rsquo;s Law</a> equations! There are other mathematical principles of electricity that do take polarity into account through the use of signs (+ or -), but not Ohm&rsquo;s Law.</p>
+<p>&nbsp;</p>
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li>The polarity of the voltage drop across any resistive component is determined by the direction of current flow through it: <em>positive</em> entering, and <em>negative</em> exiting.</li>
+</ul>

@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Alternating Current</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='37.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='39.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>Introduction to Mixed-Frequency AC Signals</h1>
+<p>In our study of<a href=&quot;https://www.allaboutcircuits.com/textbook/alternating-current/chpt-1/simple-ac-circuit-calculations/&quot; target=&quot;_blank&quot;> AC circuits</a> thus far, we&rsquo;ve explored circuits powered by a single-frequency sine voltage waveform. In many applications of electronics, though, single-frequency signals are the exception rather than the rule.</p>
+<p>Quite often we may encounter circuits where multiple frequencies of voltage coexist simultaneously. Also, circuit waveforms may be something other than sine-wave shaped, in which case we call them <em>non-sinusoidal</em><a href=&quot;https://www.allaboutcircuits.com/textbook/alternating-current/chpt-1/ac-waveforms/&quot; title=&quot;&quot;><em> </em></a><em><a href=&quot;https://www.allaboutcircuits.com/textbook/alternating-current/chpt-1/ac-waveforms/&quot; target=&quot;_blank&quot;>waveforms</a></em>.</p>
+<p>Additionally, we may encounter situations where DC is mixed with AC: where a waveform is superimposed on a steady (DC) signal.</p>
+<p>The result of such a mix is a signal varying in intensity, but never changing polarity, or changing polarity asymmetrically (spending more time positive than negative, for example).</p>
+<p>Since DC does not alternate as AC does, its &ldquo;frequency&rdquo; is said to be zero, and any signal containing DC along with a signal of varying intensity (AC) may be rightly called a mixed-frequency signal as well.</p>
+<p>In any of these cases where there is a mix of frequencies in the same circuit, analysis is more complex than what we&rsquo;ve seen up to this point.</p>
+<h3>Coupling</h3>
+<p>Sometimes mixed-frequency voltage and current signals are created accidentally. This may be the result of unintended connections between circuits&mdash;called <em>coupling</em>&mdash;made possible by stray capacitance and/or inductance between the<a href=&quot;https://www.allaboutcircuits.com/video-lectures/wire-and-cable/&quot; target=&quot;_blank&quot;> conductors</a> of those circuits.</p>
+<p>A classic example of coupling phenomenon is seen frequently in industry where DC signal wiring is placed in close proximity to AC power wiring. The nearby presence of high AC voltages and currents may cause &ldquo;foreign&rdquo; voltages to be impressed upon the length of the signal wiring.</p>
+<p>Stray capacitance formed by the electrical insulation separating power conductors from signal conductors may cause voltage (with respect to earth ground) from the power conductors to be impressed upon the signal conductors, while stray inductance formed by parallel runs of wire in conduit may cause current from the power conductors to electromagnetically induce voltage along the signal conductors.</p>
+<p>The result is a mix of DC and AC at the signal load. The following schematic shows how an AC &ldquo;noise&rdquo; source may &ldquo;couple&rdquo; to a DC circuit through mutual inductance (Mstray) and capacitance (Cstray) along the length of the conductors. (Figure below)</p>
+<p>&nbsp;</p>
+<p><img src=&quot;/uploads/articles/couple-stray-ac-into-desired-dc-signal.jpg&quot; /></p>
+<p><em>Stray inductance and capacitance couple stray AC into desired DC signal.</em></p>
+<p>&nbsp;</p>
+<p>When stray AC voltages from a &ldquo;noise&rdquo; source mix with DC signals conducted along signal wiring, the results are usually undesirable. For this reason, power wiring and low-level signal wiring should <em>always</em> be routed through separated, dedicated metal conduit, and signals should be conducted via 2-conductor &ldquo;twisted pair&rdquo; cable rather than through a single wire and ground connection: (Figure below)</p>
+<p>&nbsp;</p>
+<p><img src=&quot;/uploads/articles/shielded-twisted-pair-minimized-noise.jpg&quot; /></p>
+<p><em>Shielded twisted pair minimized noise.</em></p>
+<p>&nbsp;</p>
+<p>The grounded cable shield&mdash;a wire braid or metal foil wrapped around the two insulated conductors&mdash;isolates both conductors from electrostatic (capacitive) coupling by blocking any external <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-13/electric-fields-capacitance/&quot; target=&quot;_blank&quot;>electric fields</a>, while the parallel proximity of the two conductors effectively cancels any electromagnetic (mutually inductive) coupling because any induced noise voltage will be approximately equal in magnitude and opposite in phase along both conductors, canceling each other at the receiving end for a net (differential) noise voltage of almost zero.</p>
+<p>Polarity marks placed near each inductive portion of signal conductor length shows how the induced voltages are phased in such a way as to cancel one another.</p>
+<p>Coupling may also occur between two sets of conductors carrying AC signals, in which case both signals may become &ldquo;mixed&rdquo; with each other:</p>
+<p>&nbsp;</p>
+<p><img src=&quot;/uploads/articles/coupling-of-ac-signals-between-parallel-conductors.jpg&quot; /></p>
+<p><em>Coupling of AC signals between parallel conductors.</em></p>
+<p>&nbsp;</p>
+<p>Coupling is but one example of how signals of different frequencies may become mixed. Whether it be AC mixed with DC, or two AC signals mixing with each other, signal coupling via stray inductance and capacitance is usually accidental and undesired.</p>
+<p>In other cases, mixed-frequency signals are the result of intentional design or they may be an intrinsic quality of a signal. It is generally quite easy to create mixed-frequency signal sources. Perhaps the easiest way is to simply connect voltage sources in series: (Figure below)</p>
+<p>&nbsp;</p>
+<p><img src=&quot;/uploads/articles/series-connection-of-voltage-sources-mixes-signals.jpg&quot; /></p>
+<p><em>Series connection of voltage sources mixes signals.</em></p>
+<p>&nbsp;</p>
+<p>Some computer communications networks operate on the principle of superimposing high-frequency voltage signals along 60 Hz power-line conductors, so as to convey computer data along existing lengths of power cabling.</p>
+<p>This technique has been used for years in electric power distribution networks to communicate load data along high-voltage power lines. Certainly these are examples of mixed-frequency AC voltages, under conditions that are deliberately established.</p>
+<p>In some cases, mixed-frequency signals may be produced by a single voltage source. Such is the case with microphones, which convert audio-frequency air pressure waves into corresponding voltage waveforms.</p>
+<p>The particular mix of frequencies in the voltage signal output by the microphone is dependent on the sound being reproduced. If the sound waves consist of a single, pure note or tone, the voltage waveform will likewise be a sine wave at a single frequency.</p>
+<p>If the sound wave is a chord or other harmony of several notes, the resulting voltage waveform produced by the microphone will consist of those frequencies mixed together. Very few natural sounds consist of single, pure sine wave vibrations but rather are a mix of different frequency vibrations at different amplitudes.</p>
+<h3>Fundamental and Harmonic Frequencies</h3>
+<p>Musical <em>chords</em> are produced by blending one frequency with other frequencies of particular fractional multiples of the first.</p>
+<p>However, investigating a little further, we find that even a single piano note (produced by a plucked string) consists of one predominant frequency mixed with several other frequencies, each frequency a whole-number multiple of the first (called <em>harmonics</em>, while the first frequency is called the <em>fundamental</em>).</p>
+<p>An illustration of these terms is shown in Table <a href=&quot;#harmonic.tbl&quot;> below</a> with a fundamental frequency of 1000 Hz (an arbitrary figure chosen for this example).</p>
+<p><em>For a &ldquo;base&rdquo; frequency of 1000 Hz:</em></p>
+<p>&nbsp;</p>
+<table><br>
+<tbody><br>
+<tr><br>
+<th>Frequency</th><br>
+<th>Term</th><br>
+</tr>
+<tr><br>
+<td>1000</td><br>
+<td>1st harmonic, or fundamental</td><br>
+</tr>
+<tr><br>
+<td>2000</td><br>
+<td>2nd harmonic</td><br>
+</tr>
+<tr><br>
+<td>3000</td><br>
+<td>3rd harmonic</td><br>
+</tr>
+<tr><br>
+<td>4000</td><br>
+<td>4th harmonic</td><br>
+</tr>
+<tr><br>
+<td>5000</td><br>
+<td>5th harmonic</td><br>
+</tr>
+<tr><br>
+<td>6000</td><br>
+<td>6th harmonic</td><br>
+</tr>
+<tr><br>
+<td>7000</td><br>
+<td>7th harmonic</td><br>
+</tr>
+</tbody><br>
+</table>
+<h3>&nbsp;</h3>
+<h3>Overtone</h3>
+<p>Sometimes the term &ldquo;overtone&rdquo; is used to describe the a harmonic frequency produced by a musical instrument.</p>
+<p>The &ldquo;first&rdquo; overtone is the first harmonic frequency <em>greater than</em> the fundamental. If we had an instrument producing the entire range of harmonic frequencies shown in the table above, the first overtone would be 2000 Hz (the 2nd harmonic), while the second overtone would be 3000 Hz (the 3rd harmonic), etc.</p>
+<p>However, this application of the term &ldquo;overtone&rdquo; is specific to particular instruments.</p>
+<p>It so happens that certain instruments are incapable of producing certain types of harmonic frequencies.</p>
+<p>For example, an instrument made from a tube that is open on one end and closed on the other (such as a bottle, which produces sound when air is blown across the opening) is incapable of producing even-numbered harmonics.</p>
+<p>Such an instrument set up to produce a fundamental frequency of 1000 Hz would also produce frequencies of 3000 Hz, 5000 Hz, 7000 Hz, etc, but would <em>not</em> produce 2000 Hz, 4000 Hz, 6000 Hz, or any other even-multiple frequencies of the fundamental.</p>
+<p>As such, we would say that the first overtone (the first frequency greater than the fundamental) in such an instrument would be 3000 Hz (the 3rd harmonic), while the second overtone would be 5000 Hz (the 5th harmonic), and so on.</p>
+<p>A pure sine wave (single frequency), being entirely devoid of any harmonics, sounds very &ldquo;flat&rdquo; and &ldquo;featureless&rdquo; to the human ear.</p>
+<p>Most musical instruments are incapable of producing sounds this simple. What gives each instrument its distinctive tone is the same phenomenon that gives each person a distinctive voice: the unique blending of harmonic waveforms with each fundamental note, described by the physics of motion for each unique object producing the sound.</p>
+<p>Brass instruments do not possess the same &ldquo;harmonic content&rdquo; as woodwind instruments, and neither produce the same harmonic content as stringed instruments. A distinctive blend of frequencies is what gives a musical instrument its characteristic tone.</p>
+<p>As anyone who has played guitar can tell you, steel strings have a different sound than nylon strings. Also, the tone produced by a guitar string changes depending on where along its length it is plucked.</p>
+<p>These differences in tone, as well, are a result of different harmonic content produced by differences in the mechanical vibrations of an instrument&rsquo;s parts.</p>
+<p>All these instruments produce harmonic frequencies (whole-number multiples of the fundamental frequency) when a single note is played, but the relative amplitudes of those harmonic frequencies are different for different instruments. In musical terms, the measure of a tone&rsquo;s harmonic content is called <em>timbre</em> or <em>color</em>.</p>
+<p>Musical tones become even more complex when the resonating element of an instrument is a two-dimensional surface rather than a one-dimensional string.</p>
+<p>Instruments based on the vibration of a string (guitar, piano, banjo, lute, dulcimer, etc.) or of a column of air in a tube (trumpet, flute, clarinet, tuba, pipe organ, etc.) tend to produce sounds composed of a single frequency (the &ldquo;fundamental&rdquo;) and a mix of harmonics.</p>
+<p>Instruments based on the vibration of a flat plate (steel drums, and some types of bells), however, produce a much broader range of frequencies, not limited to whole-number multiples of the fundamental. The result is a distinctive tone that some people find acoustically offensive.</p>
+<p>As you can see, music provides a rich field of study for mixed frequencies and their effects. Later sections of this chapter will refer to musical instruments as sources of waveforms for analysis in more detail.</p>
+<p>&nbsp;</p>
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li>A <em>sinusoidal</em> waveform is one shaped exactly like a sine wave.</li>
+<li>A <em>non-sinusoidal</em> waveform can be anything from a distorted sine-wave shape to something completely different like a square wave.</li>
+<li>Mixed-frequency waveforms can be accidentally created, purposely created, or simply exist out of necessity. Most musical tones, for instance, are not composed of a single frequency sine-wave, but are rich blends of different frequencies.</li>
+<li>When multiple sine waveforms are mixed together (as is often the case in music), the lowest frequency sine-wave is called the <em>fundamental</em>, and the other sine-waves whose frequencies are whole-number multiples of the fundamental wave are called <em>harmonics</em>.</li>
+<li>An <em>overtone</em> is a harmonic produced by a particular device. The &ldquo;first&rdquo; overtone is the first frequency greater than the fundamental, while the &ldquo;second&rdquo; overtone is the next greater frequency produced. Successive overtones may or may not correspond to incremental harmonics, depending on the device producing the mixed frequencies. Some devices and systems do not permit the establishment of certain harmonics, and so their overtones would only include some (not all) harmonic frequencies.</li>
+</ul>
+
+
+
+</div>
+</div>
+</body>
+</html>

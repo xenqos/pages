@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Semiconductors</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='117.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='119.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>Tube Parameters</h1>
+<p>For <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-4/bipolar-junction-transistors-bjt/&quot;>bipolar junction transistors</a>, the fundamental measure of amplification is the Beta ratio (&beta;), defined as the ratio of collector current to base current (I<sub>C</sub>/I<sub>B</sub>). Other transistor characteristics such as junction resistance, which in some amplifier circuits may impact performance as much as &beta;, are quantified for the benefit of circuit analysis. Electron tubes are no different, their performance characteristics having been explored and quantified long ago by electrical engineers.</p>
+<p>Before we can speak meaningfully on these characteristics, we must define several mathematical variables used for expressing common <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/voltage-current-resistance-relate/&quot;>voltage, current, and resistance</a> measurements as well as some of the more complex quantities:</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/several-mathematical-variables.jpg&quot; /></p>
+<p>The two most basic measures of an amplifying tube&rsquo;s characteristics are its amplification factor (&micro;) and its mutual conductance (g<sub>m</sub>), also known as <em>transconductance</em>. Transconductance is defined here just the same as it is for field-effect transistors, another category of voltage-controlled devices. Here are the two equations defining each of these performance characteristics:</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/two-equations-defining-the-performance-characteristics.jpg&quot; /></p>
+<p>Another important, though more abstract, measure of tube performance is its <em>plate resistance</em>. This is the measurement of plate voltage change over plate current change for a constant value of grid voltage. In other words, this is an expression of how much the tube acts like a <a href=&quot;https://www.allaboutcircuits.com/textbook/alternating-current/chpt-3/ac-resistor-circuits-inductive/&quot;>resistor</a> for any given amount of grid voltage, analogous to the operation of a JFET in its ohmic mode:</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/plate-resistance-equation.jpg&quot; /></p>
+<p>The astute reader will notice that plate resistance may be determined by dividing the amplification factor by the transconductance:</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/dividing-the-amplification-factor-by-the-transconductance.jpg&quot; /></p>
+<p>These three performance measures of tubes are subject to change from tube to tube (just as &beta; ratios between two &ldquo;identical&rdquo; bipolar transistors are never precisely the same) and between different operating conditions. This variability is due partly to the unavoidable nonlinearities of electron tubes and partly due to how they are defined. Even supposing the existence of a perfectly linear tube, it will be impossible for all three of these measures to be constant over the allowable ranges of operation. Consider a tube that <em>perfectly</em> regulates current at any given amount of grid voltage (like a bipolar transistor with an absolutely constant &beta;): that tube&rsquo;s plate resistance <em>must</em> vary with plate voltage because plate current will not change even though plate voltage does.</p>
+<p>Nevertheless, tubes were (and are) rated by these values at given operating conditions, and may have their characteristic curves published just like transistors.</p>
+
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<h1>Display Tubes</h1>
+<p>In addition to performing tasks of amplification and switching, tubes can be designed to serve as display devices.</p>
+<p>Perhaps the best-known display tube is the <em>cathode ray tube</em>, or <em>CRT</em>. Originally invented as an instrument to study the behavior of &ldquo;cathode rays&rdquo; (electrons) in a vacuum, these tubes developed into instruments useful in detecting voltage, then later as video projection devices with the advent of television. The main difference between CRTs used in <a href="https://www.allaboutcircuits.com/test-measurement/oscilloscopes/">oscilloscopes</a> and CRTs used in televisions is that the oscilloscope variety exclusively uses&nbsp;electrostatic (plate) deflection, while televisions use electromagnetic (coil) deflection. Plates function much better than coils over a wider range of signal frequencies, which is great for oscilloscopes but irrelevant for televisions since a television electron beam sweeps vertically and horizontally at fixed frequencies. Electromagnetic deflection coils are much preferred in television CRT construction because they do not have to penetrate the glass envelope of the tube, thus decreasing the production costs and increasing tube reliability.</p>
+<p>An interesting &ldquo;cousin&rdquo; to the CRT is the <em>Cat-Eye</em> or <em>Magic-Eye</em> indicator tube. Essentially, this tube is a voltage-measuring device with a display resembling a glowing green ring. Electrons emitted by the cathode of this tube impinge on a fluorescent screen, causing the green-colored light to be emitted. The shape of the glow produced by the fluorescent screen varies as the amount of voltage applied to a grid changes:</p>
+<p>&nbsp;</p>
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/Cat-Eye-_indicator-tube-displays.jpg" /></p>
+<h5><em>The output from a cat-eye indicator tube as the grid control voltage changes</em></h5>
+<p>&nbsp;</p>
+<p>The width of the shadow is directly determined by the potential difference between the control electrode and the fluorescent screen. The control electrode is a narrow rod placed between the cathode and the fluorescent screen. If that control electrode (rod) is significantly more negative than the fluorescent screen, it will deflect some electrons away from that area of the screen. The area of the screen &ldquo;shadowed&rdquo; by the control electrode will appear darker when there is a significant voltage difference between the two. When the control electrode and fluorescent screen are at equal potential (zero voltage between them), the shadowing effect will be minimal, and the screen will be equally illuminated.</p>
+<p>The schematic symbol for a &ldquo;cat-eye&rdquo; tube looks something like this:</p>
+<p>&nbsp;</p>
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/Cat-Eye-_or-Magic-Eye-indicator-tube.jpg" /></p>
+<h5><em>Schematic symbol of a cat-eye tube</em></h5>
+<p>&nbsp;</p>
+<p>Here is a photograph of a cat-eye tube, showing the circular display region as well as the glass envelope, socket (black, at far end of tube), and some of its internal structure:</p>
+<p>&nbsp;</p>
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/cat-eye_tube.jpg" /></p>
+<h5><em>Example of a cat-eye tube</em></h5>
+<p>&nbsp;</p>
+<p>Normally, only the end of the tube would protrude from a hole in an instrument panel, so the user could view the circular, fluorescent screen.&nbsp;In its simplest usage, a &ldquo;cat-eye&rdquo; tube could be operated without the use of the amplifier grid. However, in order to make it more sensitive, the amplifier grid <em>is</em> used, and it is used like this:</p>
+<p>&nbsp;</p>
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/Cat-Eye-_indicator-tube-circuit.jpg" /></p>
+<h5><em>Circuit schematic for the cat-eye display tube with an amplifier grid</em></h5>
+<p>&nbsp;</p>
+<p>The cathode, <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-8/introduction-operational-amplifiers/">amplifier</a> grid, and plate act as a triode to create large changes in plate-to-cathode voltage for small changes in grid-to-cathode voltage. Because the control electrode is internally connected to the plate, it is electrically common to it and therefore possesses the same amount of voltage with respect to the cathode that the plate does. Thus, the large voltage changes induced on the plate due to small voltage changes on the amplifier grid end up causing large changes in the width of the shadow seen by whoever is viewing the tube.</p>
+<p>&nbsp;</p>
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/changes-in-plate-to-cathode-voltage-for-small-changes.jpg" /></p>
+<h5><em>Effect of the control voltage on the width of the shadow</em></h5>
+<p>&nbsp;</p>
+<p>&ldquo;Cat-eye&rdquo; tubes were never accurate enough to be equipped with a graduated scale, as is the case with CRTs and electromechanical meter movements.&nbsp;But they served well as null detectors in <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-8/bridge-circuits/">bridge circuits</a>&nbsp;and as signal strength indicators in radio tuning circuits. An unfortunate limitation of the &ldquo;cat-eye&rdquo; tube as a null detector was the fact that it was not directly capable of voltage indication in both polarities.</p>

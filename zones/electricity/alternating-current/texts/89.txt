@@ -1,0 +1,33 @@
+<h1>Circuits and the Speed of Light</h1>
+<p>Suppose we had a simple one-battery, one-lamp circuit controlled by a switch. When the switch is closed, the lamp immediately lights. When the switch is opened, the lamp immediately darkens: (Figure below)</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/lamp-respond-to-switch.png" /></p>
+<p><em>Lamp appears to immediately respond to switch.</em></p>
+<p>&nbsp;</p>
+<p>Actually, an incandescent lamp takes a short time for its filament to warm up and emit light after receiving an <a href="https://www.allaboutcircuits.com/video-lectures/basic-requirements-for-current/" target="_blank">electric current</a> of sufficient magnitude to power it, so the effect is not instant. However, what I&rsquo;d like to focus on is the immediacy of the electric current itself, not the response time of the lamp filament.</p>
+<p>For all practical purposes, the effect of switch action is instant at the lamp&rsquo;s location. Although electric charge carriers move through wires very slowly, the overall effect of electric charge carriers pushing against each other happens at the speed of light (approximately 186,000 miles per <em>second</em>!).</p>
+<p>What would happen, though, if the wires carrying power to the lamp were 186,000 miles long? Since we know an electric signal has a finite speed (albeit very fast), a set of very long wires should introduce a time delay into the circuit, delaying the switch&rsquo;s action on the lamp: (Figure below)</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/speed-of-light-lamp-responds-after-1-second.png" /></p>
+<p><em>At the speed of light, lamp responds after 1 second.</em></p>
+<p>&nbsp;</p>
+<p>Assuming no warm-up time for the lamp filament, and no resistance along the 372,000 mile length of both wires, the lamp would light up approximately one second after the switch closure.</p>
+<p>Although the construction and operation of <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-12/superconductivity/" target="_blank">superconducting</a> wires 372,000 miles in length would pose enormous practical problems, it is theoretically possible, and so this &ldquo;thought experiment&rdquo; is valid. When the switch is opened again, the lamp will continue to receive power for one second of time after the switch opens, then it will de-energize.</p>
+<p>One way of envisioning this is to imagine the electric charge carriers within a <a href="https://www.allaboutcircuits.com/video-lectures/wire-and-cable/" target="_blank">conductor</a> as rail cars in a train: linked together with a small amount of &ldquo;slack&rdquo; or &ldquo;play&rdquo; in the couplings. When one rail car (an electric charge carrier) begins to move, it pushes on the one ahead of it and pulls on the one behind it, but not before the slack is relieved from the couplings.</p>
+<p>Thus, motion is transferred from car to car (from one electric charge carrier to another) at a maximum velocity limited by the coupling slack, resulting in a much faster transfer of motion from the left end of the train (circuit) to the right end than the actual speed of the cars (electric charge carriers): (Figure below)</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/motion-transmitted-from-one-car-to-next.png" /></p>
+<p><em>Motion is transmitted successively from one car to next.</em></p>
+<p>&nbsp;</p>
+<p>Another analogy, perhaps more fitting for the subject of transmission lines, is that of waves in water. Suppose a flat, wall-shaped object is suddenly moved horizontally along the surface of the water, so as to produce a wave ahead of it.</p>
+<p>The wave will travel as water molecules bump into each other, transferring wave motion along the water&rsquo;s surface far faster than the water molecules themselves are actually traveling: (Figure below)</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/wave-motion-in-water.png" /></p>
+<p><em>Wave motion in water.</em></p>
+<p>&nbsp;</p>
+<p>Likewise, the electric charge carriers motion &ldquo;coupling&rdquo; travels approximately at the speed of light, although the electric charge carriers themselves don&rsquo;t move that quickly. In a very long circuit, this &ldquo;coupling&rdquo; speed would become noticeable to a human observer in the form of a short time delay between switch action and lamp action.</p>
+<p>&nbsp;</p>
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li>&nbsp;In an electric circuit, the electric charge carriers motion &ldquo;coupling&rdquo; travels approximately at the speed of light, although the electric charge carriers within the conductors do not travel anywhere near that velocity.</li>
+</ul>

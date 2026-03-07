@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Reference</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='113.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='115.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>The Tetrode</h1>
+<p>As the name suggests, the tetrode tube contains four elements: cathode (with the implicit filament, or &ldquo;heater&rdquo;), grid, plate, and a new element called the screen. Similar in construction to the grid, the screen was a wire mesh or coil positioned between the grid and plate, connected to a source of positive DC potential (with respect to the cathode, as usual) equal to a fraction of the plate voltage. When connected to the ground through an external <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-13/practical-considerations-capacitors/&quot; target=&quot;_blank&quot;>capacitor</a>, the screen had the effect of electrostatically shielding the grid from the plate. Without the screen, the capacitive linking between the plate and the grid could cause significant signal feedback at high frequencies, resulting in unwanted oscillations.</p>
+<p>The screen, being of less surface area and lower positive potential than the plate, didn&rsquo;t attract many of the electrons passing through the grid from the cathode, so the vast majority of electrons in the tube still flew by the screen to be collected by the plate:</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/tetrode-amplifier-circuit.jpg&quot; /></p>
+<p>With a constant DC screen voltage, electron flow from the cathode to plate became almost exclusively dependent upon grid voltage, meaning the plate voltage could vary over a wide range with little effect on plate current. This made for more stable gains in <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-9/amplifier-circuits/&quot; target=&quot;_blank&quot;>amplifier circuits</a>, and better linearity for more accurate reproduction of the input signal waveform.</p>
+<p>Despite the advantages realized by the addition of a screen, there were some disadvantages as well. The most significant disadvantage was related to something known as secondary emission. When electrons from the cathode strike the plate at high velocity, they can cause free electrons to be jarred loose from atoms in the metal of the plate. These electrons knocked off the plate by the impact of the cathode electrons, are said to be &ldquo;secondarily emitted.&rdquo; In a triode tube, secondary emission is not that great a problem, but in a tetrode with a positively-charged screen grid in close proximity, these secondary electrons will be attracted to the screen rather than the plate from which they came, resulting in a loss of plate current. Less plate current means less gain for the amplifier, which is not good.</p>
+<p>Two different strategies were developed to address this problem of the tetrode tube: beam power tubes and pentodes. Both solutions resulted in new tube designs with approximately the same electrical characteristics.</p>
+
+
+</div>
+</div>
+</body>
+</html>

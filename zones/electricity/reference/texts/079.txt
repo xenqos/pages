@@ -1,0 +1,8 @@
+<h1>The DIAC</h1>
+<p>Like all diodes, <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-7/shockley-diode/" target="_blank">Shockley diodes</a> are unidirectional devices; that is, these only conduct current in one direction. If bidirectional (AC) operation is desired, two Shockley diodes may be joined in parallel facing different directions to form a new kind of thyristor, the DIAC: (Figure below)</p>
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/the-diac.jpg" /></p>
+<p><em>The DIAC</em></p>
+<p>A DIAC operated with a DC voltage across it behaves exactly the same as a Shockley diode. With AC, however, the behavior is different from what one might expect. Because alternating current repeatedly reverses direction, DIACs will not stay latched longer than one-half cycle. If a DIAC becomes latched, it will continue to conduct current only as long as voltage is available to push enough current in that direction. When the AC polarity reverses, as it must twice per cycle, the DIAC will drop out due to insufficient current, necessitating another breakover before it conducts again. The result is the current waveform in Figure below.</p>
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/diac-waveforms.jpg" /></p>
+<p><em>DIAC waveforms</em></p>
+<p>DIACs are almost never used alone, but in conjunction with other thyristor devices.</p>

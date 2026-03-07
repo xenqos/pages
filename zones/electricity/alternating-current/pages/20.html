@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Alternating Current</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='19.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='21.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>What Is the Skin Effect?</h1>
+<h3>The Skin Depth of Copper in Electrical Engineering</h3>
+<p>As <a href=&quot;https://www.allaboutcircuits.com/textbook/alternating-current/chpt-3/inductor-quirks/&quot; target=&quot;_blank&quot;>previously mentioned</a>, the skin effect is where alternating current tends to avoid travel through the center of a solid <a href=&quot;https://www.allaboutcircuits.com/video-lectures/wire-and-cable/&quot; target=&quot;_blank&quot;>conductor</a>, limiting itself to conduction near the surface.</p>
+<p>This effectively limits the cross-sectional conductor area available to carry alternating electron flow, increasing the <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/resistance/&quot; target=&quot;_blank&quot;>resistance</a> of that conductor above what it would normally be for direct current:</p>
+<p>&nbsp;</p>
+<p><img src=&quot;/uploads/articles/skin-depth-decreases-with-increasing-frequency.jpg&quot; /></p>
+<p><em>Skin effect: skin depth decreases with increasing frequency.</em></p>
+<p>&nbsp;</p>
+<p>The electrical resistance of the conductor with all its cross-sectional area in use is known as the &ldquo;DC resistance.&rdquo; The &ldquo;AC resistance&rdquo; of the same conductor refers to a higher figure resulting from the skin effect.</p>
+<p>As you can see, at high frequencies the AC current avoids traveling through most of the conductor&rsquo;s cross-sectional area. For the purpose of conducting current, the wire might as well be hollow!</p>
+<h3>Hollow Conductors in RF Applications</h3>
+<p>In some radio applications (antennas, most notably) this effect is exploited. Since radio-frequency (&ldquo;RF&rdquo;) AC currents wouldn&rsquo;t travel through the middle of a conductor anyway, why not just use hollow metal rods instead of <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-12/conductor-size/&quot; target=&quot;_blank&quot;>solid metal wires</a> and save both weight and cost? (See figure below.)</p>
+<p>Most antenna structures and RF power conductors are made of hollow metal tubes for this reason.</p>
+<p>In the following photograph, you can see some large inductors used in a 50 kW radio transmitting circuit. The inductors are hollow copper tubes coated with silver, for excellent conductivity at the &ldquo;skin&rdquo; of the tube:</p>
+<p>&nbsp;</p>
+<p><img src=&quot;/uploads/articles/high-power-inductors.jpg&quot; /></p>
+<p><em>High power inductors formed from hollow tubes.</em></p>
+<p>&nbsp;</p>
+<h3>How Wire Gauge Affects Frequency and Effective Resistance</h3>
+<p>The degree to which frequency affects the effective resistance of a solid wire conductor is impacted by the <a href=&quot;https://www.allaboutcircuits.com/textbook/reference/chpt-3/copper-wire-gage-table/&quot; target=&quot;_blank&quot;>gauge of that wire</a>. As a rule, large-gauge wires exhibit a more pronounced skin effect (change in resistance from DC) than small-gauge wires at any given frequency.</p>
+<p>The equation for approximating skin effect at high frequencies (greater than 1 MHz) is as follows:</p>
+<p>&nbsp;</p>
+<p><img src=&quot;/uploads/articles/skin-effect-equation1.jpg&quot; /></p>
+<p>&nbsp;</p>
+<p>The table below gives approximate values of &ldquo;k&rdquo; factor for various round wire sizes. <em>&ldquo;k&rdquo; factor for various AWG wire sizes.</em></p>
+<p>&nbsp;</p>
+<table><br>
+<tbody><br>
+<tr><br>
+<td><strong>gauge size</strong></td><br>
+<td><strong>k factor</strong></td><br>
+<td><strong>gauge size</strong></td><br>
+<td><strong>k factor</strong></td><br>
+</tr>
+<tr><br>
+<td>4/0</td><br>
+<td>124.5</td><br>
+<td>8</td><br>
+<td>34.8</td><br>
+</tr>
+<tr><br>
+<td>2/0</td><br>
+<td>99.0</td><br>
+<td>10</td><br>
+<td>27.6</td><br>
+</tr>
+<tr><br>
+<td>1/0</td><br>
+<td>88.0</td><br>
+<td>14</td><br>
+<td>17.6</td><br>
+</tr>
+<tr><br>
+<td>2</td><br>
+<td>69.8</td><br>
+<td>18</td><br>
+<td>10.9</td><br>
+</tr>
+<tr><br>
+<td>4</td><br>
+<td>55.5</td><br>
+<td>22</td><br>
+<td>6.86</td><br>
+</tr>
+<tr><br>
+<td>6</td><br>
+<td>47.9</td><br>
+<td>-</td><br>
+<td>-</td><br>
+</tr>
+</tbody><br>
+</table><br>
+<p>&nbsp;</p>
+<p>For example, a length of number 10-gauge wire with a DC end-to-end resistance of 25 &Omega; would have an AC (effective) resistance of 2.182 k&Omega; at a frequency of 10 MHz:</p>
+<p>&nbsp;</p>
+<p><img src=&quot;/uploads/articles/skin-effect-equation2.jpg&quot; /></p>
+
+
+</div>
+</div>
+</body>
+</html>

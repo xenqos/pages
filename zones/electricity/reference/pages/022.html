@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Reference</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='021.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='023.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>Semiconductor Devices in SPICE</h1>
+<p>The&nbsp;<a href=&quot;https://www.allaboutcircuits.com/textbook/reference/chpt-7/introduction-to-spice/&quot; target=&quot;_blank&quot;>SPICE</a> (<strong>S</strong>imulation <strong>P</strong>rogram, <strong>I</strong>ntegrated <strong>C</strong>ircuit <strong>E</strong>mphesis) electronic simulation program provides circuit elements and models for&nbsp;<a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/&quot; target=&quot;_blank&quot;>semiconductors</a>. The SPICE element names begin with d, q, j, or m correspond to diode, BJT, JFET and MOSFET elements, respectively. These elements are accompanied by corresponding &ldquo;models&rdquo; These models have extensive lists of parameters describing the device. Though, we do not list them here. In this section we provide a very brief listing of simple spice models for semiconductors, just enough to get started. For more details on models and an extensive list of model parameters see Kuphaldt.<a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-2/semiconductor-devices-spice/#TRK.bibitem&quot; target=&quot;_blank&quot;>[TRK]</a> This reference also gives instructions on using SPICE.</p>
+<p><strong>Models:</strong></p>
+<h3><strong>Diode</strong></h3>
+<p><strong>Diode:</strong> The diode statement begins with a diode element name which must begin with &ldquo;d&rdquo; plus optional characters. Some example diode element names include: d1, d2, dtest, da, db, d101, etc. Two node numbers specify the connection of the anode and cathode, respectively, to other components. The node numbers are followed by a model name, referring to a &ldquo;.model&rdquo; statement.</p>
+<p>The model statement line begins with &ldquo;.model&rdquo;, followed by the model name matching one or more diode statements. Next is a &ldquo;d&rdquo; indicating that a diode is being modeled. The remainder of the model statement is a list of optional diode parameters of the form ParameterName=ParameterValue. None are shown in the example below. For a list, see reference, &ldquo;diodes&rdquo;.<a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-2/semiconductor-devices-spice/#TRK.bibitem&quot; target=&quot;_blank&quot;>[TRK]</a></p>
+<p>General form: d[name] [anode] [cathode] [model] .model [modelname] d ( [parmtr1=x] [parmtr2=y] . . .) Example: d1 1 2 mod1 .model mod1 d</p>
+<p>Models for specific diode part numbers are often furnished by the semiconductor diode manufacturer. These models include parameters. Otherwise, the parameters default to so called &ldquo;default values&rdquo;, as in the example.</p>
+<h3><strong>Bipolar Junction Transistor (BJT)</strong></h3>
+<p><strong>BJT, bipolar junction transistor:</strong> The&nbsp;<a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-2/bipolar-junction-transistors/&quot; target=&quot;_blank&quot;>BJT</a> element statement begins with an element name which must begin with &ldquo;q&rdquo; with associated circuit symbol designator characters, example: q1, q2, qa, qgood. The BJT node numbers (connections) identify the wiring of the collector, base, emitter respectively. A model name following the node numbers is associated with a model statement.</p>
+<p>General form: q[name] [collector] [base] [emitter] [model] .model [modelname] [npn or pnp] ([parmtr1=x] . . .) Example: q1 2 3 0 mod1 .model mod1 pnp Example: q2 7 8 9 q2n090 .model q2n090 npn ( bf=75 )</p>
+<p>The model statement begins with &ldquo;.model&rdquo;, followed by the model name, followed by one of &ldquo;npn&rdquo; or &ldquo;pnp&rdquo;. The optional list of parameters follows, and may continue for a few lines beginning with line continuation symbol &ldquo;+&rdquo;, plus. Shown above is the forward &beta; parameter set to 75 for the hypothetical q2n090 model. Detailed transistor models are often available from semiconductor manufacturers.</p>
+<h3><strong>Field Effect Transistor (FET)</strong></h3>
+<p><strong>FET, field effect transistor</strong> The&nbsp;<a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-2/insulated-gate-field-effect-transistors-mosfet/&quot; target=&quot;_blank&quot;>field effect transistor</a> element statement begins with an element name beginning with &ldquo;j&rdquo; for JFET associated with some unique characters, example: j101, j2b, jalpha, etc. The node numbers follow for the drain, gate and source terminals, respectively. The node numbers define connectivity to other circuit components. Finally, a model name indicates the JFET model to use.</p>
+<p>General form: j[name] [drain] [gate] [source] [model] .model [modelname] [njf or pjf] ( [parmtr1=x] . . .) Example: j1 2 3 0 mod1 .model mod1 pjf j3 4 5 0 mod2 .model mod2 njf ( vto=-4.0 )</p>
+<p>The &ldquo;.model&rdquo; in the JFET model statement is followed by the model name to identify this model to the JFET element statement(s) using it. Following the model name is either pjf or njf for p-channel or n-channel JFET&rsquo;s respectively. A long list of JFET parameters may follow. We only show how to set Vp, pinch off voltage, to -4.0 V for an n-channel JFET model. Otherwise, this vto parameter defaults to -2.5 V or 2.5V for n-channel or p-channel devices, respectively.</p>
+<h3><strong>Metal Oxide Field Effect Transistor (MOSFET)</strong></h3>
+<p><strong>MOSFET, metal oxide field effect transistor</strong> The <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-2/insulated-gate-field-effect-transistors-mosfet/&quot; target=&quot;_blank&quot;>MOSFET</a>&nbsp;element name must begin with &ldquo;m&rdquo;, and is the first word in the element statement. Following are the four node numbers for the drain, gate, source, and substrate, respectively. Next is the model name. Note that the source and substrate are both connected to the same node &ldquo;0&rdquo; in the example. Discrete MOSFET&rsquo;s are packaged as three terminal devices, the source and substrate are the same physical terminal. Integrated MOSFET&rsquo;s are four terminal devices; the substrate is a fourth terminal. Integrated MOSFET&rsquo;s may have numerous devices sharing the same substrate, separate from the sources. Though, the sources might still be connected to the common substrate.</p>
+<p>General form: m[name] [drain] [gate] [source] [substrate] [model] .model [modelname] [nmos or pmos] ( [parmtr1=x] . . . ) Example: m1 2 3 0 0 mod1 m5 5 6 0 0 mod4 .model mod1 pmos .model mod4 nmos ( vto=1 )</p>
+<p>The MOSFET model statement begins with &ldquo;.model&rdquo; followed by the model name followed by either &ldquo;pmos&rdquo; or &ldquo;nmos&rdquo;. Optional MOSFET model parameters follow. The list of possible parameters is long. See Volume 5, &ldquo;MOSFET&rdquo; for details.<a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-2/semiconductor-devices-spice/#TRK.bibitem&quot; target=&quot;_blank&quot;> [TRK]</a> MOSFET manufacturers provide detailed models. Otherwise, defaults are in effect.</p>
+<p>The bare minimum semiconductor SPICE information is provided in this section. The models shown here allow simulation of basic circuits. In particular, these models do not account for high speed or high-frequency operation. Simulations are shown in the Volume 5 Chapter 7, &ldquo;Using SPICE ...&rdquo;.</p>
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li>Semiconductors may be computer-simulated with SPICE.</li>
+<li>SPICE provides element statements and models for the diode, BJT, JFET, and MOSFET.</li>
+</ul>
+
+
+
+</div>
+</div>
+</body>
+</html>

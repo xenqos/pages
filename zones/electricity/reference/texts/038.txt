@@ -1,0 +1,37 @@
+<h1>The Bipolar Junction Transistor (BJT) as a Switch</h1>
+<p><strong>Bipolar junction transistors</strong> (Also known as BJTs) can be used as an <strong>amplifier, filter, rectifier, oscillator, or even a switch,</strong> which we cover as an example in the first section. The transistor will operate as an amplifier or other linear circuit if the transistor is biased into the linear region. The transistor can be used as a switch if biased in the saturation and cut-off regions. This allows current to flow (or not) in other parts of a circuit.</p>
+<p>Because a <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-4/bipolar-junction-transistors-bjt/" target="_blank">transistor</a>&rsquo;s collector current is proportionally limited by its base current, it can be used as a sort of current-controlled switch. A relatively small flow of electrons sent through the base of the transistor has the ability to exert control over a much larger flow of electrons through the collector.</p>
+<h3>Using a BJT as a Switch: An Example</h3>
+<p>Suppose we have a lamp that we want&nbsp;to turn on and off with a switch. Such a circuit would be extremely simple, as in the figure below (a).</p>
+<p>For the sake of illustration, let&rsquo;s insert a transistor in place of the switch to show how it can control the flow of current through the lamp. Remember that the controlled current through a transistor must go between the collector and the emitter.</p>
+<p>Since it is the current through the lamp that we want to control, we must position the collector and emitter of our transistor where the two contacts of the switch were. We must also make sure that the lamp&rsquo;s current will flow in&nbsp;the direction of the emitter arrow symbol to ensure that the transistor&rsquo;s junction bias will be correct as in the figure below (b) using an NPN transistor.</p>
+<h5><a name="03075.png"></a> <img  src="//sub.allaboutcircuits.com/images/03075.png" /></h5>
+<h5><em>(a) mechanical switch, (b) NPN transistor switch, (c) PNP transistor switch.</em></h5>
+<p>A PNP transistor could also have been chosen for the job. Its application is shown in the figure above (c). Note that the battery terminal voltages have been flipped from (b) to (c) to support the replacement of the NPN transistor with a PNP transistor.</p>
+<p>The choice between NPN and PNP is really arbitrary. All that matters is that the proper current directions are maintained for the sake of correct junction biasing (current flow going <em>with</em>&nbsp;the transistor symbol&rsquo;s arrow).</p>
+<p>In the above figures, the base of either BJT&nbsp; is not connected to a suitable voltage, and no current is flowing through the base. Consequently, the transistor cannot turn on. Perhaps, the simplest thing to do would be to connect a switch between the base and collector wires of the transistor as in figure (a) below.</p>
+<h5><a name="03078.png"></a> <img  src="//sub.allaboutcircuits.com/images/03078.png" /></h5>
+<h5><em>Transistor: (a) cutoff, lamp off; (b) saturated, lamp on.</em></h5>
+<h3>Cutoff vs Saturated Transistors</h3>
+<p>If the switch is open as in figure (a), the base wire of the transistor will be left &ldquo;floating&rdquo; (not connected to anything) and there will be no current through it. In this state, the transistor is said to be in&nbsp;<em><strong>cutoff</strong></em>.</p>
+<p>If the switch is closed as in figure (b), current will be able to flow from the base to the emitter of the transistor through the switch. This base current will enable a much larger current flow from the collector to the emitter, thus lighting up the lamp. In this state of maximum circuit current, the transistor is said to be <em><strong>saturated</strong></em>.</p>
+<p>Of course, it may seem pointless to use a transistor in this capacity to control the lamp. A regular switch can provide&nbsp;the function instead of a transistor.&nbsp;</p>
+<h3>Why Use a Transistor to Control Current?</h3>
+<p>Two points can be made here. First is the fact that when used in this manner, the switch contacts need to only handle what little base current is necessary to turn the transistor on; the transistor itself handles most of the lamp&rsquo;s current. This may be an important advantage if the switch has a low current rating: a small switch may be used to control a relatively high-current load.</p>
+<p>More importantly, the current-controlling behavior of the transistor enables us to use something completely different to turn the lamp on or off. Consider the figure below, where a pair of solar cells provides 1 V to overcome the 0.7 V base-emitter voltage of the transistor to cause base current flow, which in turn controls the lamp.</p>
+<h5><a name="03079.png"></a> <img  src="//sub.allaboutcircuits.com/images/03079.png" /></h5>
+<h5><em>Solar cell serves as a light sensor.</em></h5>
+<p>Or, we could use a thermocouple (many connected in series) to provide the necessary base current to turn the transistor on in the figure below.</p>
+<h5><a name="03080.png"></a> <img  src="//sub.allaboutcircuits.com/images/03080.png" /></h5>
+<h5><em>A single thermocouple provides less than 40 mV. Many in series could produce in excess of the 0.7 V transistor V<sub>BE</sub> to cause base current flow and consequent current flow through the transistor and&nbsp;the lamp.</em></h5>
+<p>Even a microphone (see the figure below) with enough voltage and current (from an amplifier) output could turn the transistor on, provided its output is rectified from AC to DC so that the emitter-base PN junction within the transistor will always be forward-biased:</p>
+<h5><a name="03081.png"></a> <img  src="//sub.allaboutcircuits.com/images/03081.png" /></h5>
+<h5><em>Amplified microphone signal is rectified to DC to bias the base of the transistor providing a larger collector current.</em></h5>
+<p>The point should be quite apparent by now. <strong>Any sufficient source of DC current may be used to turn the transistor on, and that source of current need only be a fraction of the current needed to energize the lamp.</strong></p>
+<p>Here we see the transistor functioning not only as a switch, but as a t<strong>rue amplifier that uses a relatively low-power signal to control a relatively large amount of power.</strong> Please note that the actual power for lighting up the lamp comes from the battery to the right of the schematic. It is not as though the small-signal current from the solar cell, thermocouple, or microphone is being magically transformed into a greater amount of power. Rather, those small power sources are simply controlling the battery&rsquo;s power to light up the lamp.</p>
+<p><strong>The BJT as Switch REVIEW:</strong></p>
+<ul>
+<li>Transistors may be used as switching elements to control DC power to a load. The switched (controlled) current goes between the collector and&nbsp;emitter. The controlling current goes between the base and emitter.</li>
+<li>When a transistor has zero current through it, it is said to be in a state of <em>cutoff</em> (fully nonconducting).</li>
+<li>When a transistor has maximum current through it, it is said to be in a state of <em>saturation</em> (fully conducting).</li>
+</ul>

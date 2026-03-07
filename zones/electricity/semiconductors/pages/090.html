@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Semiconductors</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='089.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='091.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>Divided Feedback</h1>
+<p>If we add a <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-6/voltage-divider-circuits/&quot; target=&quot;_blank&quot;>voltage divider</a> to the negative feedback wiring so that only a fraction of the output voltage is fed back to the inverting input instead of the full amount, the output voltage will be a <em>multiple </em>of the input voltage (please bear in mind that the power supply connections to the op-amp have been omitted once again for simplicity&rsquo;s sake):</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/voltage-divider-circuits-diagram.jpg&quot; /></p>
+<p>If R<sub>1</sub> and R<sub>2</sub> are both equal and V<sub>in</sub> is 6 volts, the op-amp will output whatever voltage is needed to drop 6 volts across R1 (to make the inverting input voltage equal to 6 volts, as well, keeping the voltage difference between the two inputs equal to zero). With the 2:1 voltage divider of R1 and R2, this will take 12 volts at the output of the op-amp to accomplish.</p>
+<p>Another way of analyzing this circuit is to start by calculating the magnitude and direction of current through R<sub>1</sub>, knowing the voltage on either side (and therefore, by subtraction, the voltage across R<sub>1</sub>), and R<sub>1</sub>s resistance. Since the left-hand side of R<sub>1</sub> is connected to ground (0 volts) and the right-hand side is at a potential of 6 volts (due to the negative feedback holding that point equal to V<sub>in</sub>), we can see that we have 6 volts across R<sub>1</sub>. This gives us 6 mA of current through R<sub>1</sub> from right to left. Because we know that both inputs of the op-amp have extremely high impedance, we can safely assume they won&rsquo;t add or subtract any current through the divider. In other words, we can treat R<sub>1</sub> and R<sub>2</sub> as being in series with each other: the current&nbsp; flowing through R<sub>1</sub> must be the same with R<sub>2</sub>. Knowing the current through R<sub>2</sub> and the resistance of R<sub>2</sub>, we can calculate the voltage across R<sub>2</sub> (6 volts), and its polarity. Counting up voltages from ground (0 volts) to the right-hand side of R<sub>2</sub>, we arrive at 12 volts on the output.</p>
+<p>Upon examining the last illustration, one might wonder, &ldquo;where does that 6 mA of current go?&rdquo; Since the output voltage is positive, current flows from the positive side of the DC <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-9/power-supply-circuits/&quot; target=&quot;_blank&quot;>power supply</a>, through the output pin of the op amp, through R<sub>2</sub>, through R<sub>1</sub>, to ground. Using the null detector/potentiometer model of the op-amp, the current path looks like this:</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/null-detector-potentiometer-model-of-the-op-amp.jpg&quot; /></p>
+<p>The 6 volt signal source does not have to supply any current for the circuit: it merely commands the op-amp to balance voltage between the inverting (-) and noninverting (+) input pins, and in so doing produce an output voltage that is twice the input due to the dividing effect of the two 1 k&Omega; resistors.</p>
+<p>We can change the voltage gain of this circuit, overall, just by adjusting the values of R<sub>1</sub> and R<sub>2</sub> (changing the ratio of output voltage that is fed back to the inverting input). Gain can be calculated by the following formula:</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/voltage-gain-formula.jpg&quot; /></p>
+<p>Note that the voltage gain for this design of amplifier circuit can never be less than 1. If we were to lower R<sub>2</sub> to a value of zero ohms, our circuit would be essentially identical to the voltage follower, with the output directly connected to the inverting input. Since the voltage follower has a gain of 1, this sets the lower gain limit of the noninverting amplifier. However, the gain can be increased far beyond 1, by increasing R<sub>2</sub> in proportion to R<sub>1</sub>.</p>
+<p>Also note that the polarity of the output matches that of the input, just as with a voltage follower. A positive input voltage results in a positive output voltage, and vice versa (with respect to ground). For this reason, this circuit is referred to as a <em>noninverting amplifier</em>.</p>
+<h3>Relevance of Differential Gain of an Op-Amp to the Voltages and Currents in the Circuit</h3>
+<p>Just as with the <a href=&quot;https://www.allaboutcircuits.com/textbook/experiments/chpt-5/voltage-follower/&quot; target=&quot;_blank&quot;>voltage follower</a>, we see that the differential gain of the op-amp is irrelevant, so long as its very high. The voltages and currents in this circuit would hardly change at all if the op-amp&rsquo;s voltage gain were 250,000 instead of 200,000. This stands as a stark contrast to single-transistor amplifier circuit designs, where the Beta of the individual transistor greatly influenced the overall gains of the amplifier. With negative feedback, we have a self-correcting system that amplifies voltage according to the ratios set by the feedback resistors, not the gains internal to the op-amp.</p>
+<h3>Resulting Output Voltage and Gain with Input Voltage at the Inverting Input</h3>
+<p>Let&rsquo;s see what happens if we retain <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-8/negative-feedback/&quot; target=&quot;_blank&quot;>negative feedback</a> through a voltage divider, but apply the input voltage at a different location:</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/negative-feedback-through-a-voltage-divider-diagram.jpg&quot; /><br /><br>
+By grounding the noninverting input, the negative feedback from the output seeks to hold the inverting input&rsquo;s voltage at 0 volts, as well. For this reason, the inverting input is referred to in this circuit as a <em>virtual ground</em>, being held at ground potential (0 volts) by the feedback, yet not directly connected to (electrically common with) ground. The input voltage this time is applied to the left-hand end of the voltage divider (R<sub>1</sub> = R<sub>2</sub> = 1 k&Omega; again), so the output voltage must swing to -6 volts in order to balance the middle at ground potential (0 volts). Using the same techniques as with the noninverting amplifier, we can analyze this circuit&rsquo;s operation by determining current magnitudes and directions, starting with R<sub>1</sub>, and continuing on to determining the output voltage.</p>
+<p>We can change the overall voltage gain of this circuit, overall, just by adjusting the values of R<sub>1</sub> and R<sub>2</sub> (changing the ratio of output voltage that is fed back to the inverting input). Gain can be calculated by the following formula:</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/voltage-gain-formula1.jpg&quot; /></p>
+<p>Note that this circuit&rsquo;s voltage gain can be less than 1, depending solely on the ratio of R<sub>2</sub> to R<sub>1</sub>. Also note that the output voltage is always the opposite polarity of the input voltage. A positive input voltage results in a negative output voltage, and vice versa (with respect to ground). For this reason, this circuit is referred to as an <em>inverting amplifier</em>. Sometimes, the gain formula contains a negative sign (before the R<sub>2</sub>/R<sub>1</sub> fraction) to reflect this reversal of polarities.</p>
+<p>These two amplifier circuits we&rsquo;ve just investigated serve the purpose of multiplying or dividing the magnitude of the input voltage signal. This is exactly how the mathematical operations of multiplication and division are typically handled in analog computer circuitry.</p>
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li>By connecting the inverting (-) input of an op-amp directly to the output, we get negative feedback, which gives us a <em>voltage follower</em> circuit. By connecting that negative feedback through a resistive voltage divider (feeding back a <em>fraction</em> of the output voltage to the inverting input), the output voltage becomes a <em>multiple </em>of the input voltage.</li>
+<li>A negative-feedback op-amp circuit with the input signal going to the noninverting (+) input is called a <em>noninverting amplifier</em>. The output voltage will be the same polarity as the input. Voltage gain is given by the following equation: AV = (R<sub>2</sub>/R<sub>1</sub>) + 1</li>
+<li>A negative-feedback op-amp circuit with the input signal going to the &ldquo;bottom&rdquo; of the resistive voltage divider, with the noninverting (+) input grounded, is called an <em>inverting amplifier</em>. Its output voltage will be the opposite polarity of the input. Voltage gain is given by the following equation: A<sub>V</sub> = -R<sub>2</sub>/R<sub>1</sub></li>
+</ul>
+
+
+
+</div>
+</div>
+</body>
+</html>

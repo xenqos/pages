@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Semiconductors</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='030.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='032.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>Inductor Commutating Circuits</h1>
+<p><a name=&quot;Kickback, inductive&quot;></a> A popular use of <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-3/introduction-to-diodes-and-rectifiers/&quot; target=&quot;_blank&quot;>diodes</a> is for the mitigation of inductive &ldquo;kickback:&rdquo; the pulses of high voltage produced when direct current through an inductor is interrupted.</p>
+<h3>Inductive Kickback without Protection</h3>
+<p>Take, for example, this simple circuit in the figure below with no protection against inductive kickback.</p>
+<p><a name=&quot;03271.png&quot;></a><img src=&quot;/uploads/articles/inductive-kickback-without-protection.jpg&quot; /></p>
+<p>Inductive kickback: (a) Switch open. (b) Switch closed, current flows from battery through coil which has polarity matching battery. Magnetic field stores energy. (c) Switch open, Current still flows in coil due to collapsing magnetic field. Note polarity change on coil. (d) Coil voltage vs time.</p>
+<p><a name=&quot;Faraday's Law&quot;></a> When the push button switch is actuated, current goes through the <a href=&quot;https://www.allaboutcircuits.com/textbook/alternating-current/chpt-3/ac-inductor-circuits/&quot; target=&quot;_blank&quot;>inductor</a>, producing a magnetic field around it. When the switch is de-actuated, its contacts open, interrupting current through the inductor, and causing the magnetic field to rapidly collapse. Because the voltage induced in a coil of wire is directly proportional to the <em>rate of change</em> over time of magnetic flux (Faraday&rsquo;s Law: e = Nd&Phi;/dt), this rapid collapse of magnetism around the coil produces a high voltage &ldquo;spike&rdquo;.</p>
+<p>If the inductor in question is an <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-14/electromagnetism/&quot; target=&quot;_blank&quot;>electromagnet</a> coil, such as in a solenoid or relay (constructed for the purpose of creating a physical force via its magnetic field when energized), the effect of inductive &ldquo;kickback&rdquo; serves no useful purpose at all. In fact, it is quite detrimental to the switch, as it causes excessive arcing at the contacts, greatly reducing their service life.</p>
+<h3>Inductive Kickback with Protection</h3>
+<p>Of the practical methods for mitigating the high voltage transient created when the switch is opened, none so simple as the so-called <em>commutating diode</em> in Figure below.</p>
+<p><a name=&quot;03272.png&quot;></a><img src=&quot;/uploads/articles/inductive-kickback-with-protection.jpg&quot; /></p>
+<p>Inductive kickback with protection: (a) Switch open. (b)Switch closed, storing energy in magnetic field. (c) Switch open, inductive kickback is shorted by diode.</p>
+<p>In this circuit, the diode is placed in parallel with the coil, such that it will be reverse-biased when DC voltage is applied to the coil through the switch. Thus, when the coil is energized, the diode conducts no current in the figure above (b).</p>
+<p>However, when the switch is opened, the coil&rsquo;s inductance responds to the decrease in current by inducing a <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/calculating-electric-power/&quot; target=&quot;_blank&quot;>voltage</a> of reverse polarity, in an effort to maintain current at the same magnitude and in the same direction. This sudden reversal of voltage polarity across the coil forward-biases the diode, and the diode provides a current path for the inductor&rsquo;s current, so that its stored energy is dissipated slowly rather than suddenly in the figure above (c).</p>
+<p>As a result, the voltage induced in the coil by its collapsing magnetic field is quite low: merely the forward voltage drop of the diode, rather than hundreds of volts as before. Thus, the switch contacts experience a voltage drop equal to the battery voltage plus about 0.7 volts (if the diode is silicon) during this discharge time.</p>
+<h3>Commutating diode</h3>
+<p><a name=&quot;Commutating diode&quot;></a> <a name=&quot;Commutation&quot;></a> <a name=&quot;Snubber&quot;></a> In electronics parlance, <em>commutation</em> refers to the reversal of voltage polarity or current direction. Thus, the purpose of a <em>commutating diode</em> is to act whenever voltage reverses polarity, for example, on an inductor coil when current through it is interrupted. A less formal term for a commutating diode is <em>snubber</em>, because it &ldquo;snubs&rdquo; or &ldquo;squelches&rdquo; the inductive kickback.</p>
+<p>Disadvantages of a Commutating Diode</p>
+<p>A noteworthy disadvantage of this method is the extra time it imparts to the coil&rsquo;s discharge. Because the induced voltage is clamped to a very low value, its rate of magnetic flux change over time is comparatively slow. Remember that Faraday&rsquo;s Law describes the magnetic flux rate-of-change (d&Phi;/dt) as being proportional to the induced, instantaneous voltage (<em>e</em> or <em>v</em>). If the instantaneous voltage is limited to some low figure, then the rate of change of magnetic flux over time will likewise be limited to a low (slow) figure.</p>
+<p>If an electromagnet coil is &ldquo;snubbed&rdquo; with a commutating diode, the magnetic field will dissipate at a relatively slow rate compared to the original scenario (no diode) where the field disappeared almost instantly upon switch release. The amount of time in question will most likely be less than one second, but it will be measurably slower than without a commutating diode in place. This may be an intolerable consequence if the coil is used to actuate an electromechanical relay, because the relay will possess a natural &ldquo;time delay&rdquo; upon coil de-energization, and an unwanted delay of even a fraction of a second may wreak havoc in some circuits.</p>
+<h3>Ideal operation with a commutating diode</h3>
+<p>Unfortunately, one cannot eliminate the high-voltage transient of inductive kickback <em>and</em> maintain fast de-magnetization of the coil: Faraday&rsquo;s Law will not be violated. However, if slow de-magnetization is unacceptable, a compromise may be struck between transient voltage and time by allowing the coil&rsquo;s voltage to rise to some higher level (but not so high as without a commutating diode in place). The schematic in Figure below shows how this can be done.</p>
+<p><a name=&quot;03275.png&quot;></a><img src=&quot;/uploads/articles/ideal-operation-with-a-commutating-diode.jpg&quot; /></p>
+<p>(a) Commutating diode with series resistor. (b) Voltage waveform. (c) Level with no diode. (d) Level with diode, no resistor. (e) Compromise level with diode and resistor.</p>
+<p>A <a href=&quot;https://www.allaboutcircuits.com/textbook/alternating-current/chpt-4/ac-resistor-circuits-capacitive/&quot; target=&quot;_blank&quot;>resistor</a> placed in series with the commutating diode allows the coil&rsquo;s induced voltage to rise to a level greater than the diode&rsquo;s forward voltage drop, thus hastening the process of demagnetization. This, of course, will place the switch contacts under greater stress, and so the resistor must be sized to limit that <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-16/electrical-transients/&quot; target=&quot;_blank&quot;>transient voltage </a>at an acceptable maximum level</p>
+
+
+</div>
+</div>
+</body>
+</html>

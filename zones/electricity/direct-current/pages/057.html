@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Direct Current</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='056.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='058.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>Ohmmeter Design</h1>
+<p>Though mechanical <a href=&quot;https://www.allaboutcircuits.com/textbook/experiments/chpt-2/ohmmeter-usage/&quot; target=&quot;_blank&quot;>ohmmeter</a> (resistance meter) designs are rarely used today, having largely been superseded by digital instruments, their operation is nonetheless intriguing and worthy of study.</p>
+<h3>Ohmmeter&rsquo;s Purpose</h3>
+<p>The purpose of an ohmmeter, of course, is to measure the resistance placed between its leads. This resistance reading is indicated through a mechanical meter movement which operates on electric current. The ohmmeter must then have an internal source of voltage to create the necessary current to operate the movement, and also have appropriate ranging resistors to allow just the right amount of current through the movement at any given resistance.</p>
+<h3>How Does an Ohmmeter Work?</h3>
+<p>Starting with a simple movement and <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-11/battery-construction/&quot; target=&quot;_blank&quot;>battery</a> circuit, let&rsquo;s see how it would function as an ohmmeter:</p>
+<p><img src=&quot;/uploads/articles/simple-ohmmeter.jpg&quot; /></p>
+<p>When there is infinite resistance (no continuity between test leads), there is zero current through the meter movement, and the needle points toward the far left of the scale. In this regard, the ohmmeter indication is &ldquo;backwards&rdquo; because maximum indication (infinity) is on the left of the scale, while voltage and current meters have zero at the left of their scales.</p>
+<p>If the test leads of this ohmmeter are directly shorted together (measuring zero &Omega;), the meter movement will have a maximum amount of current through it, limited only by the battery voltage and the movement&rsquo;s internal resistance:</p>
+<p><img src=&quot;/uploads/articles/movements-internal-resistance-ohmmeter.jpg&quot; /></p>
+<p>With 9 volts of battery potential and only 500 &Omega; of movement resistance, our circuit current will be 18 mA, which is far beyond the full-scale rating of the movement. Such an excess of current will likely damage the meter.</p>
+<p>Not only that, but having such a condition limits the usefulness of the device. If full left-of-scale on the meter face represents an infinite amount of resistance, then full right-of-scale should represent zero. Currently, our design &ldquo;pegs&rdquo; the meter movement hard to the right when zero resistance is attached between the leads. We need a way to make it so that the movement just registers full-scale when the test leads are shorted together. This is accomplished by adding a series resistance to the meter&rsquo;s circuit:</p>
+<p><img src=&quot;/uploads/articles/meters-circuit-ohmmeter.jpg&quot; /></p>
+<p>To determine the proper value for R, we calculate the total circuit resistance needed to limit current to 1 mA (full-scale deflection on the movement) with 9 volts of potential from the battery, then subtract the movement&rsquo;s internal resistance from that figure:</p>
+<p><img src=&quot;/uploads/articles/movements-internal-resistance-formula.png&quot; /></p>
+<p>Now that the right value for R has been calculated, we&rsquo;re still left with a problem of meter range. On the left side of the scale we have &ldquo;infinity&rdquo; and on the right side we have zero. Besides being &ldquo;backwards&rdquo; from the scales of voltmeters and ammeters, this scale is strange because it goes from nothing to everything, rather than from nothing to a finite value (such as 10 volts, 1 amp, etc.).</p>
+<p>One might pause to wonder, &ldquo;what does middle-of-scale represent? What figure lies exactly between zero and infinity?&rdquo; Infinity is more than just a <em>very big</em> amount: it is an incalculable quantity, larger than any definite number ever could be. If half-scale indication on any other type of meter represents 1/2 of the full-scale range value, then what is half of infinity on an ohmmeter scale?</p>
+<h3>Ohmmeter&rsquo;s Logarithmic Scale</h3>
+<p>The answer to this paradox is a <em>nonlinear scale</em>. Simply put, the scale of an ohmmeter does not smoothly progress from zero to infinity as the needle sweeps from right to left. Rather, the scale starts out &ldquo;expanded&rdquo; at the right-hand side, with the successive resistance values growing closer and closer to each other toward the left side of the scale:</p>
+<p><img src=&quot;/uploads/articles/ohmmeters-logarithmic-scale.jpg&quot; /></p>
+<p>Infinity cannot be approached in a linear (even) fashion, because the scale would <em>never</em> get there! With a nonlinear scale, the amount of resistance spanned for any given distance on the scale increases as the scale progresses toward infinity, making infinity an attainable goal.</p>
+<p>We still have a question of range for our ohmmeter, though. What value of resistance between the test leads will cause exactly 1/2 scale deflection of the needle? If we know that the movement has a full-scale rating of 1 mA, then 0.5 mA (500 &micro;A) must be the value needed for half-scale deflection. Following our design with the 9 volt battery as a source we get:</p>
+<p><img src=&quot;/uploads/articles/9volt-battery-ohmmeter.png&quot; /></p>
+<p>With an internal movement resistance of 500 &Omega; and a series range resistor of 8.5 k&Omega;, this leaves 9 k&Omega; for an external (lead-to-lead) test resistance at 1/2 scale. In other words, the test resistance giving 1/2 scale deflection in an ohmmeter is equal in value to the (internal) series total resistance of the meter circuit.</p>
+<p>Using <a href=&quot;https://www.allaboutcircuits.com/video-lectures/electrical-quantities-b/&quot; target=&quot;_blank&quot;>Ohm&rsquo;s Law</a> a few more times, we can determine the test resistance value for 1/4 and 3/4 scale deflection as well:</p>
+<p>1/4 scale deflection (0.25 mA of meter current):</p>
+<p><img src=&quot;/uploads/articles/test-resistance-ohmmeter.png&quot; /></p>
+<p>3/4 scale deflection (0.75 mA of meter current):</p>
+<p><img src=&quot;/uploads/articles/test-resistance-ohmmeter2.png&quot; /></p>
+<p>So, the scale for this ohmmeter looks something like this:</p>
+<p><img src=&quot;/uploads/articles/ohmmeter-scale.jpg&quot; /></p>
+<p>One major problem with this design is its reliance upon a stable battery voltage for accurate resistance reading. If the battery voltage decreases (as all chemical batteries do with age and use), the ohmmeter scale will lose accuracy. With the series range resistor at a constant value of 8.5 k&Omega; and the battery voltage decreasing, the meter will no longer deflect full-scale to the right when the test leads are shorted together (0 &Omega;). Likewise, a test resistance of 9 k&Omega; will fail to deflect the needle to exactly 1/2 scale with a lesser battery voltage.</p>
+<p>There are design techniques used to compensate for varying battery voltage, but they do not completely take care of the problem and are to be considered approximations at best. For this reason, and for the fact of the nonlinear scale, this type of ohmmeter is never considered to be a precision instrument.</p>
+<p>One final caveat needs to be mentioned with regard to ohmmeters: they only function correctly when measuring resistance that is not being powered by a voltage or current source. In other words, you cannot measure resistance with an ohmmeter on a &ldquo;live&rdquo; circuit! The reason for this is simple: the ohmmeter&rsquo;s accurate indication depends on the only source of voltage being its internal battery. The presence of any voltage across the component to be measured will interfere with the ohmmeter&rsquo;s operation. If the voltage is large enough, it may even damage the ohmmeter.</p>
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li>Ohmmeters contain internal sources of voltage to supply power in taking resistance measurements.</li>
+<li>An analog ohmmeter scale is &ldquo;backwards&rdquo; from that of a voltmeter or ammeter, the movement needle reading zero resistance at full-scale and infinite resistance at rest.</li>
+<li>Analog ohmmeters also have nonlinear scales, &ldquo;expanded&rdquo; at the low end of the scale and &ldquo;compressed&rdquo; at the high end to be able to span from zero to infinite resistance.</li>
+<li>Analog ohmmeters are not precision instruments.</li>
+<li>Ohmmeters should <em>never</em> be connected to an energized circuit (that is, a circuit with its own source of voltage). Any voltage applied to the test leads of an ohmmeter will invalidate its reading.</li>
+</ul>
+
+
+
+</div>
+</div>
+</body>
+</html>

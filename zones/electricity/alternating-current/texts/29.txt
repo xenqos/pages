@@ -1,0 +1,100 @@
+<h1>Series-parallel R, L, and C</h1>
+<p>Now that we&rsquo;ve seen how <a href="https://www.allaboutcircuits.com/video-lectures/series-parallel-circuits/" target="_blank">series and parallel</a> AC circuit analysis is not fundamentally different than DC circuit analysis, it should come as no surprise that series-parallel analysis would be the same as well, just using complex numbers instead of a scalar to represent voltage, current, and impedance. Take this series-parallel circuit for example:</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/example-series-parallel-rlc-circuit.png" /></p>
+<p><em>Example series-parallel R, L, and C circuit.</em></p>
+<p>&nbsp;</p>
+<p>The first order of business, as usual, is to determine values of impedance (Z) for all components based on the frequency of the AC power source. To do this, we need to first determine values of reactance (X) for all <a href="https://www.allaboutcircuits.com/video-lectures/inductors-part-1/" target="_blank">inductors</a> and <a href="https://www.allaboutcircuits.com/video-lectures/capacitors-part-1/" target="_blank">capacitors</a>, then convert reactance (X) and resistance (R) figures into proper impedance (Z) form:</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/determine-values-of-impedance-image1.png" /></p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/equation-for-proper-impedance.png" /></p>
+<p>&nbsp;</p>
+<p>Now we can set up the initial values in our table:</p>
+<p>&nbsp;</p>
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/SPRLC_table1.jpg" /></p>
+<p>&nbsp;</p>
+<p>Being a series-parallel <em>combination</em> circuit, we must reduce it to a total impedance in more than one step. The first step is to combine L and C<sub>2</sub> as a series combination of impedances, by adding their impedances together.</p>
+<p>Then, that impedance will be combined in parallel with the impedance of the <a href="https://www.allaboutcircuits.com/video-lectures/electronic-components-resistors/" target="_blank">resistor</a>, to arrive at another combination of impedances. Finally, that quantity will be added to the impedance of C<sub>1</sub> to arrive at the total impedance.</p>
+<p>In order that our table may follow all these steps, it will be necessary to add additional columns to it so that each step may be represented.</p>
+<p>Adding more columns horizontally to the table shown above would be impractical for formatting reasons, so I will place a new row of columns underneath, each column designated by its respective component combination:</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/initial-values-in-table2.png" /></p>
+<p>&nbsp;</p>
+<p>Calculating these new (combination) impedances will require complex addition for series combinations and the &ldquo;reciprocal&rdquo; formula for complex impedances in parallel. This time, there is no avoidance of the reciprocal formula: the required figures can arrive at no other way!</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/initial-values-in-table3.png" /></p>
+<p>&nbsp;</p>
+<p>Seeing as how our second table contains a column for &ldquo;Total,&rdquo; we can safely discard that column from the first table. This gives us one table with four columns and another table with three columns.</p>
+<p>Now that we know the total impedance (818.34 &Omega; &ang; -58.371&deg;) and the total voltage (120 volts &ang; 0&deg;), we can apply <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/voltage-current-resistance-relate/" target="_blank">Ohm&rsquo;s Law</a> (I=E/Z) vertically in the &ldquo;Total&rdquo; column to arrive at a figure for total current:</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/initial-values-in-table4.png" /></p>
+<p>&nbsp;</p>
+<p>At this point we ask ourselves the question: are there any components or component combinations which share either the total voltage or the total current? In this case, both C<sub>1</sub> and the parallel combination R//(L&mdash;C<sub>2</sub>) share the same (total) current, since the total impedance is composed of the two sets of impedances in series.</p>
+<p>Thus, we can transfer the figure for total current into both columns:</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/initial-values-in-table5.png" /></p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/initial-values-in-table6.png" /></p>
+<p>&nbsp;</p>
+<p>Now, we can calculate voltage drops across C<sub>1</sub> and the series-parallel combination of R//(L&mdash;C<sub>2</sub>) using Ohm&rsquo;s Law (E=IZ) vertically in those table columns:</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/initial-values-in-table7.png" /></p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/initial-values-in-table8.png" /></p>
+<p>&nbsp;</p>
+<p>A quick double-check of our work at this point would be to see whether or not the voltage drops across C<sub>1</sub> and the series-parallel combination of R//(L&mdash;C<sub>2</sub>) indeed add up to the total. According to <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-6/kirchhoffs-voltage-law-kvl/" target="_blank">Kirchhoff&rsquo;s Voltage Law</a>, they should!</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/series-parallel-kirchhoffs-voltage-law.png" /></p>
+<p>&nbsp;</p>
+<p>That last step was merely a precaution. In a problem with as many steps, as this one has, there is much opportunity for error. Occasional cross-checks like that one can save a person a lot of work and unnecessary frustration by identifying problems prior to the final step of the problem.</p>
+<p>Having solved for voltage drops across C<sub>1</sub> and the combination R//(L&mdash;C<sub>2</sub>), we again ask ourselves the question: what other components share the same voltage or current?</p>
+<p>In this case, the resistor (R) and the combination of the inductor and the second capacitor (L&mdash;C<sub>2</sub>) share the same voltage, because those sets of impedances are in parallel with each other. Therefore, we can transfer the voltage figure just solved into the columns for R and L&mdash;C<sub>2</sub>:</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/initial-values-in-table9.png" /></p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/rule-of-series-circuits-table3.png" /></p>
+<p>&nbsp;</p>
+<p>Now we&rsquo;re all set for calculating the current through the resistor and through the series combination L&mdash;C<sub>2</sub>. All we need to do is apply Ohm&rsquo;s Law (I=E/Z) vertically in both of those columns:</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/initial-values-in-table10.png" /></p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/initial-values-in-table11.png" /></p>
+<p>&nbsp;</p>
+<p>Another quick double-check of our work at this point would be to see if the current figures for L&mdash;C<sub>2</sub> and R add up to the total current. According to <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-6/kirchhoffs-current-law-kcl/" target="_blank">Kirchhoff&rsquo;s Current Law</a>, they should:</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/total-current-kirchhoffs-current-law.png" /></p>
+<p>&nbsp;</p>
+<p>Since the L and C<sub>2</sub> are connected in series, and since we know the current through their series combination impedance, we can distribute that current figure to the L and C<sub>2</sub> columns following the rule of series circuits whereby series components share the same current:</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/rule-of-series-circuits-table1.png" /></p>
+<p>&nbsp;</p>
+<p>With one last step (actually, two calculations), we can complete our analysis table for this circuit. With impedance and current figures in place for L and C<sub>2</sub>, all we have to do is apply Ohm&rsquo;s Law (E=IZ) vertically in those two columns to calculate voltage drops.</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/rule-of-series-circuits-table2.png" /></p>
+<p>&nbsp;</p>
+<p>Now, let&rsquo;s turn to SPICE for a computer verification of our work:</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/series-parallel-rlc-spice-circuit.png" /></p>
+<p><em>Example series-parallel R, L, C SPICE circuit.</em></p>
+<p>&nbsp;</p>
+<pre>
+ac series-parallel r-l-c circuit &#10; v1 1 0 ac 120 sin &#10; vit 1 2 ac 0 &#10; vilc 3 4 ac 0 &#10; vir 3 6 ac 0 &#10; c1 2 3 4.7u &#10; l 4 5 650m &#10; c2 5 0 1.5u &#10; r 6 0 470 &#10; .ac lin 1 60 60 &#10; .print ac v(2,3) vp(2,3) i(vit) ip(vit) &#10; .print ac v(4,5) vp(4,5) i(vilc) ip(vilc) &#10; .print ac v(5,0) vp(5,0) i(vilc) ip(vilc) &#10; .print ac v(6,0) vp(6,0) i(vir) ip(vir) &#10; .end&#10;</pre>
+<pre>
+freq          v(2,3)      vp(2,3)     i(vit)      ip(vit)     C1  &#10;6.000E+01     8.276E+01  -3.163E+01   1.466E-01   5.837E+01&#10;</pre>
+<pre>
+freq          v(4,5)      vp(4,5)     i(vilc)     ip(vilc)    L&#10;6.000E+01     1.059E+01  -1.388E+02   4.323E-02   1.312E+02&#10;</pre>
+<pre>
+freq          v(5)        vp(5)       i(vilc)     ip(vilc)    C2&#10;6.000E+01     7.645E+01   4.122E+01   4.323E-02   1.312E+02&#10;</pre>
+<pre>
+freq          v(6)        vp(6)       i(vir)      ip(vir)     R&#10;6.000E+01     6.586E+01   4.122E+01   1.401E-01   4.122E+01&#10;</pre>
+<p>&nbsp;</p>
+<p>Each line of the SPICE output listing gives the voltage, voltage phase angle, current, and current phase angle for C<sub>1</sub>, L, C<sub>2</sub>, and R, in that order. As you can see, these figures do concur with our hand-calculated figures in the circuit analysis table.</p>
+<p>As daunting a task as series-parallel AC circuit analysis may appear, it must be emphasized that there is nothing really new going on here besides the use of complex numbers. Ohm&rsquo;s Law (in its new form of E=IZ) still holds true, as do the voltage and current Laws of Kirchhoff.</p>
+<p>While there is more potential for human error in carrying out the necessary complex number calculations, the basic principles and techniques of series-parallel circuit reduction are exactly the same.</p>
+<p>&nbsp;</p>
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li>Analysis of series-parallel AC circuits is much the same as series-parallel DC circuits. The only substantive difference is that all figures and calculations are in complex (not scalar) form.</li>
+<li>It is important to remember that before series-parallel reduction (simplification) can begin, you must determine the impedance (Z) of every resistor, inductor, and capacitor. That way, all component values will be expressed in common terms (Z) instead of an incompatible mix of resistance (R), inductance (L), and capacitance (C).</li>
+</ul>

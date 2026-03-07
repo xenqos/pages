@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>DYI Projects</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='75.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='77.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>Analog Lab - Class B Audio Amplifier</h1>
+<h3>Project Overview</h3>
+<p>Class B audio amplifiers provide efficient power amplification of <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-9/analog-and-digital-signals/&quot; target=&quot;_blank&quot;>analog signals</a>, but often at the expense of signal distortion. In this project, you will build the Class B (push-pull) audio amplifier, shown in Figure 1.&nbsp;</p>
+<p>&nbsp;</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/crossover-distortion-in-push-pull-amplifier-circuit.jpg&quot; /></p>
+<h5><em><strong>Figure 1.</strong> Class B (push-pull) audio amplifier circuit driving a speaker.</em></h5>
+<p>&nbsp;</p>
+<p>In this project, you will learn about some of the causes of <a href=&quot;https://www.allaboutcircuits.com/technical-articles/what-is-it-about-audio-distortion/&quot; target=&quot;_blank&quot;>audio distortion</a> and how we can modify basic designs to minimize this distortion.</p>
+<p>&nbsp;</p>
+<h3>Parts and Materials</h3>
+<ul>
+<li>Four 6 V batteries&nbsp;</li>
+<li>Dual operational amplifier (op amp), model <a href=&quot;https://www.ti.com/lit/ds/symlink/tl082-n.pdf?ts=1676553679537&amp;ref_url=https%253A%252F%252Fwww.google.com%252F&quot; target=&quot;_blank&quot;>TL082</a> recommended&nbsp;</li>
+<li>One NPN power transistor in a TO-220 package</li>
+<li>One PNP power transistor in a TO-220 package</li>
+<li>One <a href=&quot;https://www.vishay.com/docs/85622/1n914.pdf&quot; target=&quot;_blank&quot;>1N914</a> switching diode</li>
+<li>One <a href=&quot;https://eepower.com/capacitor-guide/&quot; target=&quot;_blank&quot;>capacitor</a>, 47 &micro;F electrolytic, 35 WVDC&nbsp;</li>
+<li>Two capacitors, 0.22 &micro;F, non-polarized</li>
+<li>One 10 k&Omega; <a href=&quot;https://eepower.com/resistor-guide/resistor-types/potentiometer/&quot; target=&quot;_blank&quot;>potentiometer</a>, linear taper&nbsp;</li>
+<li>Audio source</li>
+<li>8&nbsp;&Omega; speaker</li>
+</ul>
+
+<p>Be sure to use an op amp with a high slew rate; avoid the LM741 or LM1458 for this reason.</p>
+<p>The closer matched the two transistors are, the better. If possible, try to obtain <a href=&quot;https://www.mouser.com/datasheet/2/149/TIP41C-890135.pdf&quot; target=&quot;_blank&quot;>TIP41</a> and <a href=&quot;https://www.mouser.com/datasheet/2/68/tip42-1149834.pdf&quot; target=&quot;_blank&quot;>TIP42</a> transistors, which are closely matched <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-4/bipolar-junction-transistors-bjt/&quot; target=&quot;_blank&quot;>NPN and PNP</a> power transistors with dissipation ratings of 65 W each. If you cannot get a TIP41 NPN transistor, the <a href=&quot;https://www.onsemi.com/pdf/datasheet/tip3055-d.pdf&quot; target=&quot;_blank&quot;>TIP3055</a> is a good substitute. Do not use very large (i.e. TO-3 case) power transistors, as the op amp may have trouble driving enough current to their bases for good operation.</p>
+<p>&nbsp;</p>
+<h3>Learning Objectives</h3>
+<ul>
+<li>Learn how to build a push-pull&nbsp;class B amplifier using complementary bipolar transistors</li>
+<li>Illustrate the effects of crossover distortion&nbsp;in a push-pull amplifier circuit</li>
+<li>Illustrate how to use <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-8/negative-feedback/&quot; target=&quot;_blank&quot;>negative feedback</a> via an op amp to correct circuit nonlinearities</li>
+</ul>
+
+<p>&nbsp;</p>
+<h3>Instructions</h3>
+<p><strong>Step 1:&nbsp;</strong>This project is an audio amplifier suitable for amplifying the output signal from a small radio, tape player, CD player, or any other source of audio signals. Build the circuit shown in the circuit schematic of Figure 2 and illustrated above in the <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/building-simple-resistor-circuits/&quot; target=&quot;_blank&quot;>breadboard</a> implementation of Figure 1.</p>
+<p>&nbsp;</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/class-B-audio-amplifier-schematic-diagram.jpg&quot; /></p>
+<h5><em><strong>Figure 2.</strong>&nbsp;Schematic diagram of a Class B (push-pull) audio amplifier circuit driving a speaker.</em></h5>
+<p>&nbsp;</p>
+<p><strong>Step 2:&nbsp;</strong>To obtain an input signal for this amplifier to amplify, connect it to the output of a radio or other audio device, as shown in Figure 3, for a mono audio plug.</p>
+<p>&nbsp;</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/connect-the-output-of-radio-or-other-audio-device.jpg&quot; /></p>
+<h5><em><strong>Figure 3.</strong>&nbsp;Connecting the amplifier circuit to&nbsp;a mono audio plug.</em></h5>
+<p>&nbsp;</p>
+<p><strong>Step 3 (optional):&nbsp;</strong>For stereo operation, two identical amplifiers must be built, one for the left channel and the other for the right channel. A stereo plug will have three signals: <a href=&quot;https://www.allaboutcircuits.com/technical-articles/an-introduction-to-ground/&quot; target=&quot;_blank&quot;>ground</a>, left, and right.&nbsp;</p>
+<p>This amplifier circuit also amplifies line-level&nbsp;audio signals from high-quality, modular stereo components. It provides a surprising amount of sound power when played through a large speaker and can be run&nbsp;without heatsinks on the transistors. However, you should experiment with it a bit before deciding to forego heat sinks, as the power dissipation varies according to the type of speaker used.</p>
+<p>&nbsp;</p>
+<h3>Class B Amplifier Theory of Operation</h3>
+<p>This particular circuit is called a Class B push-pull circuit.&nbsp;Most audio power&nbsp;amplifiers use a class B configuration, where one transistor provides power to the load during one-half of the waveform cycle (it <em>pushes</em>), and a second transistor provides power to the load for the other half of the cycle (it pulls). In this scheme, neither transistor remains on&nbsp;for the entire cycle, giving each one time to rest&nbsp;and cool during the waveform cycle. This makes for a power-efficient amplifier circuit but leads to a distinct type of nonlinearity known as <a href=&quot;https://www.allaboutcircuits.com/technical-articles/addressing-harmonic-distortion-in-audio-amplifiers/&quot; target=&quot;_blank&quot;>crossover distortion</a>.</p>
+<p>Shown in Figure 4 is a <a href=&quot;https://www.allaboutcircuits.com/textbook/alternating-current/chpt-1/ac-waveforms/&quot; target=&quot;_blank&quot;>sine-wave</a> signal, equivalent to a constant audio tone of constant volume.&nbsp;&nbsp;</p>
+<p>&nbsp;</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/sine-wave-shape.jpg&quot; /></p>
+<h5><em><strong>Figure 4.</strong>&nbsp;Sine wave (constant tone) audio signal.</em></h5>
+<p>&nbsp;</p>
+<p>In a push-pull amplifier circuit, the two output transistors take turns amplifying the alternate half-cycles of the waveform, as illustrated in Figure 5.&nbsp;</p>
+<p>&nbsp;</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/half-cycles-waveform.jpg&quot; /></p>
+<h5><em><strong>Figure 5.</strong>&nbsp;Class B amplifier operation demonstrating alternating (push-pull) transistor drive.</em></h5>
+<p>&nbsp;</p>
+<p>The PNP transistor #1 drives the output high, while the NPN transistor #2 drives the output low.</p>
+<p>&nbsp;</p>
+<h3>Distortion in Audio Signals</h3>
+<p>The goal of any amplifier circuit is to reproduce the input waveshape as accurately as possible. Perfect reproduction is impossible, of course, and any differences between the output and input waveshapes are known as distortion. In an audio amplifier, distortion may cause unpleasant tones to be superimposed on the true sound. There are many different configurations of audio amplifier circuitry, each with its own advantages and disadvantages.</p>
+<p>If the hand-off&nbsp;between the two transistors is not precisely synchronized, though, the amplifier&rsquo;s output waveform may look something like the signal shown in Figure 6 instead of a pure sine wave.&nbsp;</p>
+<p>&nbsp;</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/pure-sine-wave.jpg&quot; /></p>
+<h5><em><strong>Figure 6.</strong>&nbsp;Crossover distortion from a Class B amplifier.</em></h5>
+<p>&nbsp;</p>
+<p>Here, distortion results from the fact that there is a delay between the time one transistor turns off and the other transistor turns on. This type of distortion, where the waveform flattens&nbsp;at the crossover point between positive and negative half-cycles, is called crossover distortion.</p>
+<p>One common method of mitigating crossover distortion is to bias the transistors so that their turn-on/turn-off points actually overlap so that both transistors are in a state of conduction for a brief moment during the crossover period (Figure 7).&nbsp;</p>
+<p>&nbsp;</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/crossover-distortion-waveform.jpg&quot; /></p>
+<h5><em><strong>Figure 7.</strong>&nbsp;Class AB amplifier operation to eliminate crossover distortion.</em></h5>
+<p>&nbsp;</p>
+<p>This form of amplification is technically known as class <em>AB</em> rather than class B because each transistor is on&nbsp;for more than 50% of the time during a complete waveform cycle.</p>
+<p>The disadvantage to doing this, though, is increased power consumption of the amplifier circuit.&nbsp;When both transistors are conducting, there is current conducted through the transistors that are&nbsp;not going through the load but are merely being shorted&nbsp;from one power supply rail to the other (from +V&nbsp;to -V).</p>
+<p>Not only is this a waste of energy, but it dissipates more heat energy in the transistors. When transistors increase in temperature, their characteristics change (V<sub>be</sub> forward <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/polarity-voltage-drops/&quot; target=&quot;_blank&quot;>voltage drop</a>, &beta;, junction resistances, etc.), making proper biasing difficult.</p>
+<p>&nbsp;</p>
+<h3>Class B Amplifier Design Explained</h3>
+<p>In this experiment, using the circuit of Figure 2, the transistors operate in pure class B mode. That is, they are never conducted at the same time. This saves energy and decreases heat dissipation but lends itself to crossover distortion. The solution taken in this circuit is to use an op amp with negative feedback to quickly drive the transistors through the dead&nbsp;zone producing crossover distortion and reducing the amount of flattening&nbsp;of the waveform during the crossover.</p>
+<p>The first (leftmost) op amp, shown in the schematic diagram of Figure 2, is nothing more than a buffer (<a href=&quot;https://www.allaboutcircuits.com/textbook/experiments/chpt-6/precision-voltage-follower/&quot; target=&quot;_blank&quot;>voltage follower</a>). A buffer helps to reduce the loading of the input capacitor/resistor network at the audio signal input. The series capacitor&nbsp;filters out any DC bias voltage from&nbsp;the input signal, preventing any DC voltage from becoming amplified by the circuit and sent to the speaker, where it might cause damage.</p>
+<p>Without the buffer op amp, the capacitor/resistor filtering circuit reduces the low-frequency (bass) response of the amplifier and accentuates the high-frequency (treble).</p>
+<p>The second op amp functions as an inverting amplifier with the&nbsp;gain controlled by the 10 k&Omega; potentiometer. This does nothing more than provide volume control for the amplifier. Usually, inverting op amp circuits have their feedback <a href=&quot;https://eepower.com/resistor-guide/&quot; target=&quot;_blank&quot;>resistor(s)</a> connected directly from the op amp output terminal to the inverting input terminal, as illustrated in Figure 8.</p>
+<p>&nbsp;</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/inverting-op-amp-circuits.jpg&quot; /></p>
+<h5><em><strong>Figure 8.</strong>&nbsp;Inverting amplifier circuit.</em></h5>
+<p>&nbsp;</p>
+<p>If we were to use the resulting output signal from this inverting amplifier circuit to drive the base terminals of the push-pull transistor pair, though, we would experience significant crossover distortion. As shown in Figure 9, there would be a dead&nbsp;zone in the transistors&rsquo; operation as the base voltage went from +0.7 V to -0.7 V.&nbsp;</p>
+<p>&nbsp;</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/output-signal-to-drive-the-base-terminals.jpg&quot; /></p>
+<h5><em><strong>Figure 9.</strong>&nbsp;Dead zone crossover distortion if the audio signal drives a simple push-pull transistor pair.</em></h5>
+<p>&nbsp;</p>
+<p><strong>Step 4 (optional):&nbsp;</strong>If you have already constructed the amplifier circuit in its final form, you may simplify it to this form and listen to the difference in sound quality. If you have not yet begun constructing the circuit, the schematic diagram shown above would be a good starting point. It will amplify an audio signal, but it will sound horrible!</p>
+<p>The reason for the crossover distortion is that when the op amp output signal is between +0.7 V and -0.7 V, neither transistor will be conducting.&nbsp;The output voltage to the speaker will be 0 V for the entire 1.4 V span of the base voltage swing. Thus, there is a zone&nbsp;in the input signal range where no change in speaker output voltage will occur.</p>
+<p>Here is where intricate biasing techniques are usually introduced to the circuit to reduce this 1.4 V gap&nbsp;in transistor input signal response. Usually, something like adding two diodes, as illustrated in Figure 10, is done.</p>
+<p>&nbsp;</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/transistor-input-signal-response.jpg&quot; /></p>
+<h5><em><strong>Figure 10.</strong>&nbsp;Two diodes biasing to reduce Class B amplifier dead zone crossover distortion.</em></h5>
+<p>&nbsp;</p>
+<p>The two series-connected diodes will drop approximately 1.4 V, equivalent to the combined V<sub>be</sub> forward voltage drops of the two transistors.&nbsp;With this biasing, each transistor is just on the verge of turning on when the input signal is zero volts. This eliminates&nbsp;the 1.4 V dead&nbsp;signal zone that existed before.</p>
+<p>Unfortunately, though, this solution is not perfect. As the transistors heat up from conducting power to the load, their V<sub>be</sub> forward voltage drops will decrease from 0.7 V to something less, such as 0.6 V or 0.5 V. The diodes, which are not subject to the same heating effect because they do not conduct any substantial current, will not experience the same change in forward voltage drop.</p>
+<p>Thus, the diodes will continue to provide the same 1.4 V bias voltage even though the transistors require less bias voltage due to heating. The result will be that the circuit drifts into class AB operation, where <em>both</em> transistors will be in a state of conduction for part of the time. This, of course, will result in more heat dissipation through the transistors, exacerbating the problem of forward voltage drop change.</p>
+<p>A common solution to this problem is the insertion of temperature-compensation feedback&nbsp;resistors in the emitter legs of the push-pull transistor circuit, as demonstrated in Figure 11.</p>
+<p>&nbsp;</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/insertion-of-temperature-compensation-feedback-resistors.jpg&quot; /></p>
+<h5><em><strong>Figure 11.</strong>&nbsp;Adding temperature-compensation feedback&nbsp;resistors to the push-pull output driver.</em></h5>
+<p>&nbsp;</p>
+<p>This solution doesn&rsquo;t prevent simultaneous turn-on of the two transistors but merely reduces the severity of the problem and prevents thermal runaway. It also has the unfortunate effect of inserting resistance in the load current path, limiting the output current of the amplifier.</p>
+<p>The solution opted for in this experiment is one that capitalizes on the principle of op amp negative feedback to overcome the inherent limitations of the push-pull transistor output circuit. We&#39;ll&nbsp;use one diode to provide a 0.7 V bias voltage for the push-pull pair, as shown in Figure 12.&nbsp;</p>
+<p>&nbsp;</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/eliminate-the-dead-signal-zone.jpg&quot; /></p>
+<h5><em><strong>Figure 12.</strong>&nbsp;Single diode biasing to reduce Class B amplifier dead zone crossover distortion by 50%</em></h5>
+<p>&nbsp;</p>
+<p>This is not enough to eliminate the&nbsp;dead&nbsp;signal zone, but it reduces it by at least 50%.&nbsp;Since the voltage drop of a single diode will always be less than the combined voltage drops of the two transistors&rsquo; base-emitter junctions, the transistors can never turn on simultaneously, thereby preventing class AB operation.</p>
+<p>Next, to help eliminate the remaining crossover distortion, the feedback signal of the op amp is taken from the output terminal of the amplifier (the transistors&rsquo; emitter terminals), as demonstrated in Figure 13.&nbsp;</p>
+<p>&nbsp;</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/transistors-emitter-terminals.jpg&quot; /></p>
+<h5><em><strong>Figure 13.</strong>&nbsp;Using an op amp and negative feedback minimizes dead zone crossover distortion in the Class B amplifier.</em></h5>
+<p>&nbsp;</p>
+<p>The op amp&rsquo;s function is to output whatever voltage signal it has to to keep its two input terminals at the same voltage (0 V differential). By connecting the feedback wire to the emitter terminals of the push-pull transistors, the op amp has the ability to sense any dead&nbsp;zone where neither transistor is conducting and output an appropriate voltage signal to the bases of the transistors to quickly drive them into conduction again to keep up&nbsp;with the input signal waveform.</p>
+<p>This requires an op amp with a high slew rate (the ability to produce a fast-rising or fast-falling output voltage), which is why the TL082<strong> </strong>op amp was specified for this circuit. Slower op amps such as the LM741<strong> </strong>or LM1458 may not be able to keep up with the high <em>dv/dt </em>(voltage rate-of-change over time)&nbsp;necessary for low-distortion operation.</p>
+<p>The final circuit is shown in Figure 14, where a couple of capacitors are added to this circuit to bring it into its final form.&nbsp;</p>
+<p>&nbsp;</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/class-B-audio-amplifier-schematic-diagram.jpg&quot; /></p>
+<h5><em><strong>Figure 14.</strong>&nbsp;Full implementation of Class B (push-pull) audio amplifier with diode biasing, amplifier feedback and capacitors</em></h5>
+<h3>&nbsp;</h3>
+<p>A 47 &micro;F capacitor connected in parallel with the diode helps to keep the 0.7 V bias voltage constant despite large voltage swings in the op amp&rsquo;s output.&nbsp;A 0.22 &micro;F capacitor connected between the base and emitter of the NPN transistor helps reduce crossover distortion at low-volume settings.&nbsp;&nbsp;</p>
+
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<h1>An Analogy for Ohm&#8217;s Law</h1>
+<p><a name="Ohm's Law, water analogy"></a> Ohm&rsquo;s Law also makes intuitive sense if you apply it to the water-and-pipe analogy. If we have a water pump that exerts pressure (voltage) to push water around a &ldquo;circuit&rdquo; (<a href="https://www.allaboutcircuits.com/video-lectures/basic-requirements-for-current/" target="_blank">current</a>) through a restriction (<a href="https://www.allaboutcircuits.com/video-lectures/electronic-components-resistors/" target="_blank">resistance</a>), we can model how the three variables interrelate.</p>
+<p>If the resistance to water flow stays the same and the pump pressure increases, the flow rate must also increase.</p>
+<p>&nbsp;</p>
+<p><img  src="//sub.allaboutcircuits.com/images/10008.png" /></p>
+<p>&nbsp;</p>
+<p>If the pressure stays the same and the resistance increases (making it more difficult for the water to flow), then the flow rate must decrease:</p>
+<p>&nbsp;</p>
+<p><img  src="//sub.allaboutcircuits.com/images/10009.png" /></p>
+<p>&nbsp;</p>
+<p>If the flow rate were to stay the same while the resistance to flow decreased, the required pressure from the pump would necessarily decrease:</p>
+<p>&nbsp;</p>
+<p><img  src="//sub.allaboutcircuits.com/images/10010.png" /></p>
+<p>&nbsp;</p>
+<p>As odd as it may seem, the actual mathematical relationship between pressure, flow, and resistance is actually more complex for fluids like water than it is for electric charge. If you pursue further studies in physics, you will discover this for yourself. Thankfully for the electronics student, the mathematics of Ohm&rsquo;s Law is very straightforward and simple.</p>
+<p>&nbsp;</p>
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li>With resistance steady, current follows voltage (an increase in voltage means an increase in current, and vice versa).</li>
+<li>With voltage steady, changes in current and resistance are opposite (an increase in current means a decrease in resistance, and vice versa).</li>
+<li>With current steady, voltage follows resistance (an increase in resistance means an increase in voltage).</li>
+</ul>

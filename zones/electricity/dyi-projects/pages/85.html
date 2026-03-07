@@ -1,0 +1,255 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>DYI Projects</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='84.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='86.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>Digital Lab - 7-segment LED Display</h1>
+<h3>Project Overview</h3>
+<p>The operating principle for this circuit (Figure 1)&nbsp;is to input a four-bit BCD (binary-coded decimal) value using the switches and energize the proper output lines to form the corresponding decimal digit on the 7-segment <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-3/special-purpose-diodes/&quot; target=&quot;_blank&quot;>light-emitting diode (LED)</a> display.</p>
+<p>&nbsp;</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/7-segment-display-schematic.jpg&quot; /></p>
+<h5><em><strong>Figure 1.</strong> Schematic diagram of the 7-segment LED display circuit.</em></h5>
+<p>&nbsp;</p>
+<h3>Parts and Materials</h3>
+<ul>
+<li>4511 BCD-to-7seg latch/decoder/driver</li>
+<li>Common-cathode 7-segment LED display</li>
+<li>Eight-position DIP switch</li>
+<li>Four 10 k&Omega; <a href=&quot;https://eepower.com/resistor-guide/&quot; target=&quot;_blank&quot;>resistors</a></li>
+<li>Seven 470 &Omega; resistors</li>
+<li>One 6 V battery</li>
+</ul>
+
+<p><strong>Caution!</strong> The 4511 IC is a <a href=&quot;https://www.allaboutcircuits.com/textbook/digital/chpt-3/cmos-gate-circuitry/&quot; target=&quot;_blank&quot;>complementary metal-oxide semiconductor (CMOS)</a>&nbsp;and, therefore, sensitive to <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/static-electricity/&quot; target=&quot;_blank&quot;>static electricity</a>!</p>
+<p>&nbsp;</p>
+<h3>Learning Objectives</h3>
+<ul>
+<li>How to use the 4511 7-segment decoder/display driver IC</li>
+<li>Gain familiarity with the BCD&nbsp;code</li>
+<li>How to use 7-segment LED assemblies to create decimal digit displays</li>
+<li>How to identify and use both active-low&nbsp;and active-high&nbsp;logic inputs</li>
+</ul>
+
+<p>&nbsp;</p>
+<h3>Instructions</h3>
+<p>This experiment is more of an introduction to the 4511 decoder/display driver IC than it is a lesson in how to build&nbsp;a digital function from lower-level components. Since 7-segment displays are&nbsp;common components of digital devices, it is good to be familiar with the driving&nbsp;circuits behind them, and the 4511 is a good example of a typical driver IC.</p>
+<p><strong>Step 1:</strong>&nbsp;Connect the four switches to their pulldown resistors and the ABCD inputs of the 4511 IC, as illustrated on the left side of Figures 1 and 2.</p>
+<p>&nbsp;</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/7-segment-display-illustration.jpg&quot; /></p>
+<h5><em><strong>Figure 2.</strong>&nbsp;Breadboard implementation of the 7-segment LED display circuit.</em></h5>
+<p>&nbsp;</p>
+<p>The BCD&nbsp;inputs are designated A, B, C, and D in order from least significant to most significant. The truth table for mapping these BCD inputs to the seven&nbsp;segment outputs is provided in Table 1.&nbsp;</p>
+<p>&nbsp;</p>
+<h5><em><strong>Table 1.</strong>&nbsp;A truth table for 4511 IC BCD to 7-segment display driver</em></h5>
+<table align=&quot;center&quot; border=&quot;1&quot; cellpadding=&quot;1&quot; cellspacing=&quot;1&quot; summary=&quot;4511 IC Truth Table&quot;><br>
+<thead><br>
+<tr><br>
+<th colspan=&quot;4&quot; rowspan=&quot;1&quot; scope=&quot;col&quot;>BCD Inputs</th><br>
+<th colspan=&quot;7&quot; rowspan=&quot;1&quot; scope=&quot;col&quot;>7-Segment Outputs</th><br>
+<th scope=&quot;col&quot;>LED Display</th><br>
+</tr>
+<tr><br>
+<th scope=&quot;col&quot;>D</th><br>
+<th scope=&quot;col&quot;>C</th><br>
+<th scope=&quot;col&quot;>B</th><br>
+<th scope=&quot;col&quot;>A</th><br>
+<th scope=&quot;col&quot;>a</th><br>
+<th scope=&quot;col&quot;>b</th><br>
+<th scope=&quot;col&quot;>c</th><br>
+<th scope=&quot;col&quot;>d</th><br>
+<th scope=&quot;col&quot;>e</th><br>
+<th scope=&quot;col&quot;>f</th><br>
+<th scope=&quot;col&quot;>g</th><br>
+<th scope=&quot;col&quot;>Digits</th><br>
+</tr>
+</thead><br>
+<tbody><br>
+<tr><br>
+<td>0</td><br>
+<td>0</td><br>
+<td>0</td><br>
+<td>0</td><br>
+<td>1</td><br>
+<td>1</td><br>
+<td>1</td><br>
+<td>1</td><br>
+<td>1</td><br>
+<td>1</td><br>
+<td>0</td><br>
+<td>0</td><br>
+</tr>
+<tr><br>
+<td>0</td><br>
+<td>0</td><br>
+<td>0</td><br>
+<td>1</td><br>
+<td>0</td><br>
+<td>1</td><br>
+<td>1</td><br>
+<td>0</td><br>
+<td>0</td><br>
+<td>0</td><br>
+<td>0</td><br>
+<td>1</td><br>
+</tr>
+<tr><br>
+<td>0</td><br>
+<td>0</td><br>
+<td>1</td><br>
+<td>0</td><br>
+<td>1</td><br>
+<td>1</td><br>
+<td>0</td><br>
+<td>1</td><br>
+<td>1</td><br>
+<td>0</td><br>
+<td>1</td><br>
+<td>2</td><br>
+</tr>
+<tr><br>
+<td>0</td><br>
+<td>0</td><br>
+<td>1</td><br>
+<td>1</td><br>
+<td>1</td><br>
+<td>1</td><br>
+<td>1</td><br>
+<td>1</td><br>
+<td>0</td><br>
+<td>0</td><br>
+<td>1</td><br>
+<td>3</td><br>
+</tr>
+<tr><br>
+<td>0</td><br>
+<td>1</td><br>
+<td>0</td><br>
+<td>0</td><br>
+<td>0</td><br>
+<td>1</td><br>
+<td>1</td><br>
+<td>0</td><br>
+<td>0</td><br>
+<td>1</td><br>
+<td>1</td><br>
+<td>4</td><br>
+</tr>
+<tr><br>
+<td>0</td><br>
+<td>1</td><br>
+<td>0</td><br>
+<td>1</td><br>
+<td>1</td><br>
+<td>0</td><br>
+<td>1</td><br>
+<td>1</td><br>
+<td>0</td><br>
+<td>1</td><br>
+<td>1</td><br>
+<td>5</td><br>
+</tr>
+<tr><br>
+<td>0</td><br>
+<td>1</td><br>
+<td>1</td><br>
+<td>0</td><br>
+<td>0</td><br>
+<td>0</td><br>
+<td>1</td><br>
+<td>1</td><br>
+<td>1</td><br>
+<td>1</td><br>
+<td>1</td><br>
+<td>6</td><br>
+</tr>
+<tr><br>
+<td>0</td><br>
+<td>1</td><br>
+<td>1</td><br>
+<td>1</td><br>
+<td>1</td><br>
+<td>1</td><br>
+<td>1</td><br>
+<td>0</td><br>
+<td>0</td><br>
+<td>0</td><br>
+<td>0</td><br>
+<td>7</td><br>
+</tr>
+<tr><br>
+<td>1</td><br>
+<td>0</td><br>
+<td>0</td><br>
+<td>0</td><br>
+<td>1</td><br>
+<td>1</td><br>
+<td>1</td><br>
+<td>1</td><br>
+<td>1</td><br>
+<td>1</td><br>
+<td>1</td><br>
+<td>8</td><br>
+</tr>
+<tr><br>
+<td>1</td><br>
+<td>0</td><br>
+<td>0</td><br>
+<td>1</td><br>
+<td>1</td><br>
+<td>1</td><br>
+<td>1</td><br>
+<td>0</td><br>
+<td>0</td><br>
+<td>1</td><br>
+<td>1</td><br>
+<td>9</td><br>
+</tr>
+</tbody><br>
+</table><br>
+<p>&nbsp;</p>
+<p><strong>Step 2:&nbsp;</strong>Connect the seven outputs from the 4511 IC to the corresponding inputs on the 7-segment display.&nbsp;Outputs are labeled a, b, c, d, e, f, and g, with each letter corresponding to a standardized segment designation for 7-segment displays. Of course, since each LED segment requires its own dropping resistor, we must use seven 470 &Omega; resistors placed in series between the 4511&rsquo;s output terminals and the corresponding terminals of the display unit.</p>
+<p><strong>Step 3:&nbsp;</strong>All LEDs inside the display unit are made common to each other on one side, either cathode or anode. The 4511 display driver IC requires a common-cathode 7-segment display unit, which is what is used here. So, we must connect the cathode connection to the <a href=&quot;https://www.allaboutcircuits.com/technical-articles/an-introduction-to-ground/&quot; target=&quot;_blank&quot;>ground</a>.</p>
+<p><strong>Step 4:&nbsp;</strong>Complete the remaining connections, illustrated in Figure 1, including power and ground.</p>
+<p><strong>Step 5:&nbsp;</strong>After building the circuit and applying power, operate the four switches in a binary counting sequence (0000 to 1001), noting the 7-segment display. A 0000 input should result in a decimal 0&nbsp;display, a 0001 input should result in a decimal 1&nbsp;display, and so on through 1001 (decimal 9).</p>
+<p><strong>Step 6:&nbsp;</strong>Test to see what happens for the <a href=&quot;https://www.allaboutcircuits.com/textbook/digital/chpt-2/binary-addition/&quot; target=&quot;_blank&quot;>binary numbers</a> 1010 (10) through 1111 (15). Read the <a href=&quot;https://www.ti.com/lit/ds/symlink/cd4511b.pdf&quot; target=&quot;_blank&quot;>datasheet on the 4511 IC</a> and see what the manufacturer specifies for operation above an input value of 9.</p>
+<p>In the BCD code, there is no real meaning for 1010, 1011, 1100, 1101, 1110, or 1111. These are binary values beyond the range of a single decimal digit and so have no function in a BCD system. The 4511 IC is built to recognize this and output (or not output!) accordingly.</p>
+<p><strong>Step 7:&nbsp;</strong>Three inputs on the 4511 chip have been permanently connected to either V<sub>dd</sub> or ground. These input pins are <em>Lamp Test</em>, <em>Blanking Input</em>,&nbsp;and <em>Latch Enable</em>.&nbsp;To learn what these inputs do, remove the short jumpers connecting them to either power supply rail (one at a time), and replace the short jumper with a longer one that can reach the <em>other</em> power supply rail.</p>
+<p>For example, remove the short jumper connecting the <em>Latch Enable</em>&nbsp;input (pin #5) to the ground, and replace it with a long jumper wire that can reach all the way to the V<sub>dd</sub> power supply rail. Experiment with making this input high (1)&nbsp;and low(0),&nbsp;observing the results on the 7-segment display as you alter the BCD code with the four input switches.</p>
+<p>After you&rsquo;ve learned what the input&rsquo;s function is, connect it to the power supply rail enabling normal operation, and proceed to experiment with the next input (either <em>Lamp Test</em>&nbsp;or <em>Blanking Input</em>).</p>
+<p>Once again, the manufacturer&rsquo;s datasheet will inform the purpose of each of these three inputs. Also, note that the <em>Lamp Test</em>&nbsp;(LT) and <em>Blanking Input</em>&nbsp;(BI) input labels are written with boolean complementation bars over the abbreviations.&nbsp;Bar symbols designate these inputs as <em>active-low</em>, meaning that you must make each one low (0)&nbsp;in order to invoke its particular function.</p>
+<p>Making an active-low input high (1)&nbsp;places that particular input into a passive&nbsp;state where its function will not be invoked. Conversely, the <em>Latch Enable</em>&nbsp;(LE) input has no complementation bar written over its abbreviation, and correspondingly it is shown connected to ground low (0) in the schematic of Figure 1&nbsp;so as to not invoke that function.</p>
+<p>The <em>Latch Enable</em>&nbsp;input is an <em>active-high</em> input, which means it must be made high (1)&nbsp;(connected to V<sub>dd</sub>) in order to invoke its function.</p>
+
+
+</div>
+</div>
+</body>
+</html>

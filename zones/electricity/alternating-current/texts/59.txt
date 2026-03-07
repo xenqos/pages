@@ -1,0 +1,111 @@
+<h1>Three-phase Power Systems</h1>
+<h3>What is Split-Phase Power Systems?</h3>
+<p><a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-10/single-phase-power-systems/" target="_blank">Split-phase power systems</a> achieve their high conductor efficiency <em>and</em> low safety risk by splitting up the total voltage into lesser parts and powering multiple loads at those lesser <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/calculating-electric-power/" target="_blank">voltages</a> while drawing currents at levels typical of a full-voltage system.</p>
+<p>This technique, by the way, works just as well for DC power systems as it does for single-phase AC systems. Such systems are usually referred to as <em>three-wire</em> systems rather than <em>split-phase</em> because &ldquo;phase&rdquo; is a concept restricted to AC.</p>
+<p>But we know from our experience with vectors and complex numbers that AC voltages don&rsquo;t always add up as we think they would if they are out of phase with each other.</p>
+<p>This principle, applied to power systems, can be put to use to make power systems with even greater conductor efficiencies and lower shock hazard than with split-phase.</p>
+<h3>Examples</h3>
+<h4>Two 120&deg; Out of Phase Voltage Sources</h4>
+<p>Suppose that we had two sources of AC voltage connected in series just like the split-phase system we saw before, except that each voltage source was 120&deg; out of phase with the other: (Figure below)</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/phase-voltage-sources-example.jpg" /></p>
+<p><em>Pair of 120 Vac sources phased 120&deg;, similar to split-phase.</em></p>
+<p>&nbsp;</p>
+<p>Since each voltage source is 120 volts, and each load resistor is connected directly in parallel with its respective source, the voltage across each load <em>must</em> be 120 volts as well. Given load currents of 83.33 amps, each load must still be dissipating 10 kilowatts of power.</p>
+<p>However, voltage between the two &ldquo;hot&rdquo; wires is not 240 volts (120 &ang; 0&deg; - 120 &ang; 180&deg;) because the phase difference between the two sources is not 180&deg;. Instead, the voltage is:</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/voltage-equation.jpg" /></p>
+<p>&nbsp;</p>
+<p>Nominally, we say that the voltage between &ldquo;hot&rdquo; conductors is 208 volts (rounding up), and thus the power system voltage is designated as 120/208.</p>
+<p>If we calculate the current through the &ldquo;neutral&rdquo; conductor, we find that it is <em>not</em> zero, even with balanced load resistances. <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-6/kirchhoffs-current-law-kcl/" target="_blank">Kirchhoff&rsquo;s Current Law</a> tells us that the currents entering and exiting the node between the two loads must be zero: (Figure below)</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/neutral-wire-carries-current.jpg" /></p>
+<p>&nbsp;</p>
+<p>Neutral wire carries a current in the case of a pair of 120&deg; phased sources.</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/neutral-wire-equation.jpg" /></p>
+<h4>Findings and Conclusions</h4>
+<p>So, we find that the &ldquo;neutral&rdquo; wire is carrying a full 83.33 amps, just like each &ldquo;hot&rdquo; wire.</p>
+<p>Note that we are still conveying 20 kW of total power to the two loads, with each load&rsquo;s &ldquo;hot&rdquo; wire carrying 83.33 amps as before.</p>
+<p>With the same amount of current through each &ldquo;hot&rdquo; wire, we must use the same gauge copper conductors, so we haven&rsquo;t reduced system cost over the split-phase 120/240 system.</p>
+<p>However, we have realized a gain in safety, because the overall voltage between the two &ldquo;hot&rdquo; conductors is 32 volts lower than it was in the split-phase system (208 volts instead of 240 volts).</p>
+<h4>Three 120&deg; Out of Phase Voltage Sources</h4>
+<p>The fact that the neutral wire is carrying 83.33 amps of current raises an interesting possibility: since it&#39;s carrying current anyway, why not use that third wire as another &ldquo;hot&rdquo; conductor, powering another load resistor with a third 120 volt source having a phase angle of 240&deg;?</p>
+<p>That way, we could transmit <em>more</em> power (another 10 kW) without having to add any more conductors. Let&rsquo;s see how this might look: (Figure below)</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/phase-voltage-sources-example1.jpg" /></p>
+<p><em>With a third load phased 120&deg; to the other two, the currents are the same as for two loads.</em></p>
+<p>&nbsp;</p>
+<h4>SPICE Calculations for Three-phase System</h4>
+<p>A full mathematical analysis of all the <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/voltage-current/" target="_blank">voltages and currents</a> in this circuit would necessitate the use of a network theorem, the easiest being the Superposition Theorem.</p>
+<p>I&rsquo;ll spare you the long, drawn-out calculations because you should be able to intuitively understand that the three voltage sources at three different phase angles will deliver 120 volts each to a balanced triad of load resistors.</p>
+<p>For proof of this, we can use SPICE to do the math for us: (Figure below, SPICE listing: 120/208 polyphase power system)</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/spice-circuit1.jpg" /></p>
+<p><em>SPICE circuit: Three 3-&Phi; loads phased at 120&deg;.</em></p>
+<p>&nbsp;</p>
+<pre>
+120/208 polyphase power system v1 1 0 ac 120 0 sin v2 2 0 ac 120 120 sin v3 3 0 ac 120 240 sin r1 1 4 1.44 r2 2 4 1.44 r3 3 4 1.44 .ac lin 1 60 60 .print ac v(1,4) v(2,4) v(3,4) .print ac v(1,2) v(2,3) v(3,1) .print ac i(v1) i(v2) i(v3) .end </pre>
+<pre>
+VOLTAGE ACROSS EACH LOAD freq v(1,4) v(2,4) v(3,4) 6.000E+01 1.200E+02 1.200E+02 1.200E+02 VOLTAGE BETWEEN &ldquo;HOT&rdquo; CONDUCTORS freq v(1,2) v(2,3) v(3,1) 6.000E+01 2.078E+02 2.078E+02 2.078E+02 CURRENT THROUGH EACH VOLTAGE SOURCE freq i(v1) i(v2) i(v3) 6.000E+01 8.333E+01 8.333E+01 8.333E+01</pre>
+<p>&nbsp;</p>
+<p>Sure enough, we get 120 volts across each load resistor, with (approximately) 208 volts between any two &ldquo;hot&rdquo; conductors and conductor currents equal to 83.33 amps. (Figure below)</p>
+<p>At that current and voltage, each load will be dissipating 10 kW of power.</p>
+<p>Notice that this circuit has no &ldquo;neutral&rdquo; conductor to ensure stable voltage to all loads if one should open.</p>
+<p>What we have here is a situation similar to our split-phase power circuit with no &ldquo;neutral&rdquo; conductor: if one load should happen to fail open, the voltage drops across the remaining load(s) will change.</p>
+<p>To ensure load voltage stability in the event of another load opening, we need a neutral wire to connect the source node and load node together:</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/spice-circuit-annotated-with-simulation-results.jpg" /></p>
+<p><em>SPICE circuit annotated with simulation results: Three 3-&Phi; loads phased at 120&deg;.</em></p>
+<p>&nbsp;</p>
+<p>So long as the loads remain balanced (equal resistance, equal currents), the neutral wire will not have to carry any current at all. It is there just in case one or more load resistors should fail open (or be shut off through a disconnecting switch).</p>
+<h4>Polyphase Circuit</h4>
+<p>This circuit we&rsquo;ve been analyzing with three voltage sources is called a <em>polyphase</em> circuit. The prefix &ldquo;poly&rdquo; simply means &ldquo;more than one,&rdquo; as in &ldquo;<em>poly</em>theism&rdquo; (belief in more than one deity), &ldquo;<em>poly</em>gon&rdquo; (a geometrical shape made of multiple line segments: for example, <em>pentagon</em> and <em>hexagon</em>), and &ldquo;<em>poly</em>atomic&rdquo; (a substance composed of multiple types of atoms).</p>
+<p>Since the voltage sources are all at different phase angles (in this case, three different phase angles), this is a &ldquo;<em>poly</em>phase&rdquo; circuit.</p>
+<p>More specifically, it is a <em>three-phase circuit</em>, the kind used predominantly in large power distribution systems.</p>
+<h4>Three-Phase System versus Single-Phase System</h4>
+<h5><strong>Single-Phase System</strong></h5>
+<p>Let&rsquo;s survey the advantages of a three-phase power system over a single-phase system of equivalent load voltage and power capacity. A single-phase system with three loads connected directly in parallel would have a very high total current (83.33 times 3, or 250 amps. (Figure below)</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/single-phase-system-with-three-loads.jpg" /></p>
+<p><em>For comparison, three 10 Kw loads on a 120 Vac system draw 250 A.</em></p>
+<p>&nbsp;</p>
+<p>This would necessitate 3/0 gage copper wire (<em>very</em> large!), at about 510 pounds per thousand feet, and with a considerable price tag attached. If the distance from source to load was 1000 feet, we would need over a half-ton of copper wire to do the job.</p>
+<h5><strong>Split-phase System</strong></h5>
+<p>On the other hand, we could build a split-phase system with two 15 kW, 120 volt loads. (Figure below)</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/split-phase-system.jpg" /></p>
+<p><em>Split phase system draws half the current of 125 A at 240 Vac compared to 120 Vac system.</em></p>
+<p>&nbsp;</p>
+<p>Our current is half of what it was with the simple parallel circuit, which is a great improvement.</p>
+<p>We could get away with using number 2 gauge copper wire at a total mass of about 600 pounds, figuring about 200 pounds per thousand feet with three runs of 1000 feet each between source and loads. However, we also have to consider the increased safety hazard of having 240 volts present in the system, even though each load only receives 120 volts.</p>
+<p>Overall, there is greater potential for a dangerous electric shock to occur.</p>
+<h5><strong>Three-Phase System</strong></h5>
+<p>When we contrast these two examples against our three-phase system (Figure above), the advantages are quite clear.</p>
+<p>First, the conductor currents are quite a bit less (83.33 amps versus 125 or 250 amps), permitting the use of much thinner and lighter wire. We can use number 4 gauge wire at about 125 pounds per thousand feet, which will total 500 pounds (four runs of 1000 feet each) for our example circuit.</p>
+<p>This represents significant cost savings over the split-phase system, with the additional benefit that the maximum voltage in the system is lower (208 versus 240).</p>
+<p>One question remains to be answered: how in the world do we get three AC voltage sources whose phase angles are exactly 120&deg; apart?</p>
+<p>Obviously we can&rsquo;t center-tap a transformer or alternator winding like we did in the split-phase system, since that can only give us voltage waveforms that are either in phase or 180&deg; out of phase.</p>
+<p>Perhaps we could figure out some way to use capacitors and inductors to create phase shifts of 120&deg;, but then those phase shifts would depend on the phase angles of our load impedances as well (substituting a capacitive or inductive load for a resistive load would change everything!).</p>
+<p>The best way to get the phase shifts we&rsquo;re looking for is to generate it at the source: construct the AC generator (alternator) providing the power in such a way that the rotating magnetic field passes by three sets of wire windings, each set spaced 120&deg;&nbsp;apart around the circumference of the machine as in Figure below.</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/single-phase-alternator-and-three-phase-alternator.jpg" /></p>
+<p><em>(a) Single-phase alternator, (b) Three-phase alternator.</em></p>
+<p>&nbsp;</p>
+<p>Together, the six &ldquo;pole&rdquo; windings of a three-phase alternator are connected to comprise three winding pairs, each pair producing <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-1/what-is-alternating-current-ac/" target="_blank">AC voltage</a> with a phase angle 120&deg; shifted from either of the other two winding pairs.</p>
+<p>The interconnections between pairs of windings (as shown for the single-phase alternator: the jumper wire between windings 1a and 1b) have been omitted from the three-phase alternator drawing for simplicity.</p>
+<p>In our example circuit, we showed the three voltage sources connected together in a &ldquo;Y&rdquo; configuration (sometimes called the &ldquo;star&rdquo; configuration), with one lead of each source tied to a common point (the node where we attached the &ldquo;neutral&rdquo; conductor).</p>
+<p>The common way to depict this connection scheme is to draw the windings in the shape of a &ldquo;Y&rdquo; like Figure below.</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/alternator-y-configuration.jpg" /></p>
+<p><em>Alternator &ldquo;Y&rdquo; configuration.</em></p>
+<p>&nbsp;</p>
+<p>The &ldquo;Y&rdquo; configuration is not the only option open to us, but it is probably the easiest to understand at first. More to come on this subject later in the chapter.</p>
+<p>&nbsp;</p>
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li>A <em>single-phase</em> power system is one where there is only one AC voltage source (one source voltage waveform).</li>
+<li>A <em>split-phase</em> power system is one where there are two voltage sources, 180&deg; phase-shifted from each other, powering a two series-connected loads. The advantage of this is the ability to have lower conductor currents while maintaining low load voltages for safety reasons.</li>
+<li>A <em>polyphase</em> power system uses multiple voltage sources at different phase angles from each other (many &ldquo;phases&rdquo; of voltage waveforms at work). A polyphase power system can deliver more power at less voltage with smaller-gage conductors than single- or split-phase systems.</li>
+<li>The phase-shifted voltage sources necessary for a polyphase power system are created in alternators with multiple sets of wire windings. These winding sets are spaced around the circumference of the rotor&rsquo;s rotation at the desired angle(s).</li>
+</ul>

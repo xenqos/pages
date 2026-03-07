@@ -1,0 +1,37 @@
+<h1>AC Lab - Frequency Analysis</h1>
+<h3>Project Overview</h3>
+<p>Oscilloscopes typically provide an additional&nbsp;feature besides the time-domain display, for example,&nbsp;a frequency-domain&nbsp;display, which plots signal&nbsp;amplitude on the vertical axis over frequency on the horizontal axis. An oscilloscope&rsquo;s time-domain&nbsp;display plots amplitude (vertical) over time (horizontal), which is fine for displaying waveshape. However, when it is desirable to see the harmonic constituency of a complex wave, a frequency-domain plot is the best tool.</p>
+<p>This project again&nbsp;uses the keyboard and plug arrangement described in the previous experiment for <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-4/musical-keyboard-signal-generator/" target="_blank">using a musical keyboard as a signal generator</a>&nbsp;to generate input signals to a computer sound card for display on the PC-based oscilloscope, as illustrated in Figure 1.</p>
+<p>&nbsp;</p>
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/waveform-analysis-illustration.jpg" /></p>
+<h5><em><strong>Figure 1.</strong> Using a PC-based oscilloscope to monitor outputs from an electronic keyboard.</em></h5>
+<p>&nbsp;</p>
+<h3>Parts and Materials</h3>
+<ul>
+<li>IBM-compatible personal computer with a sound card running Windows 3.1 or better</li>
+<li>Winscope software, which can be downloaded free from the internet</li>
+<li>Electronic keyboard&nbsp;(musical)</li>
+<li>Mono&nbsp;(not stereo) headphone-type plug for the keyboard</li>
+<li>Mono&nbsp;(not stereo) headphone-type plug for computer sound card microphone input, with wires for connecting to voltage sources</li>
+<li>10 k&Omega; <a href="https://eepower.com/resistor-guide/resistor-types/potentiometer/" target="_blank">potentiometer</a></li>
+</ul>
+<p>The parts and equipment for this experiment are identical to those required for the <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-4/pc-oscilloscope/" target="_blank">PC oscilloscope&nbsp;experiment</a>.</p>
+<p>&nbsp;</p>
+<h3>Learning Objectives</h3>
+<ul>
+<li>To understand the difference between time-domain and frequency-domain plots</li>
+<li>To develop a qualitative sense of <a href="https://www.allaboutcircuits.com/technical-articles/fourier-series-circuit-analysis-an-introduction-to-fourier-series-representation/" target="_blank">Fourier analysis</a></li>
+</ul>
+<p>&nbsp;</p>
+<h3>Instructions</h3>
+<p><strong>Step 1:&nbsp;</strong>Connect the keyboard output to the outer terminals of a 10 k&Omega; potentiometer, as illustrated in Figures 1 and 2.</p>
+<p>&nbsp;</p>
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/waveform-analysis-schematic-diagram.jpg" /></p>
+<h5><em><strong>Figure 2.</strong>&nbsp;The schematic diagram for connecting the keyboard output to the PC sound card input with potentiometer adjustable gain.</em></h5>
+<p>&nbsp;</p>
+<p><strong>Step 2:&nbsp;</strong>If using Winscope, click on the rainbow&nbsp;icon to switch to <a href="https://www.allaboutcircuits.com/textbook/radio-frequency-analysis-design/radio-frequency-modulation/frequency-modulation-theory-time-domain-frequency-domain/" target="_blank">frequency-domain</a> mode.</p>
+<p><strong>Step 3:&nbsp;</strong>Generate a <a href="https://www.allaboutcircuits.com/video-lectures/sine-wave-characteristics/" target="_blank">sine-wave signal</a> using the musical keyboard (panflute or flute voice). You should see a single spike&nbsp;on the display, corresponding to the amplitude of the single-frequency signal. Moving the mouse cursor beneath the peak should result in the frequency being displayed numerically at the bottom of the screen.</p>
+<p><strong>Step 4:&nbsp;</strong>Play two notes simultaneously on the musical keyboard. The frequency plot should show two distinct peaks, each one corresponding to a particular note (frequency).</p>
+<p><strong>Step 5: </strong>Try basic chords (three notes) to produce three spikes on the frequency-domain plot, and so on.</p>
+<p><strong>Step 6:&nbsp;</strong>Contrast the three-note chord frequency response&nbsp;with a normal <a href="https://www.allaboutcircuits.com/worksheets/basic-oscilloscope-operation/" target="_blank">oscilloscope</a> (time-domain) plot by clicking once again on the rainbow&nbsp;icon.&nbsp;A musical chord displayed in time-domain format is a very complex waveform but is quite simple to resolve into constituent notes (frequencies) on a frequency-domain display.</p>
+<p><strong>Step 7:&nbsp;</strong>Experiment with different instrument voices&mdash;instrument types&mdash;on the musical keyboard, correlating the time-domain plot with the frequency-domain plot. Waveforms that are symmetrical above and below their centerlines contain only odd-numbered harmonics (odd-integer multiples of the base or fundamental frequency). While nonsymmetrical waveforms contain even-numbered harmonics as well. Use the cursor to locate the specific frequency of each peak on the plot and a calculator to determine whether each peak is even- or odd-numbered.</p>

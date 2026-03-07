@@ -1,0 +1,71 @@
+<h1>Complex Voltage and Current Calculations</h1>
+<p>There are circumstances when you may need to analyze a DC reactive circuit when the starting values of voltage and current are not respective of a fully &ldquo;discharged&rdquo; state. In other words, the <a href="https://www.allaboutcircuits.com/video-lectures/capacitors-part-1/" target="_blank">capacitor</a> might start at a partially-charged condition instead of starting at zero volts, and an <a href="https://www.allaboutcircuits.com/video-lectures/inductors-part-1/" target="_blank">inductor</a> might start with some amount of current already through it, instead of zero as we have been assuming so far.</p>
+<p>Take this circuit as an example, starting with the switch open and finishing with the switch in the closed position:</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/analyze-dc-reactive-circuit.jpg" /></p>
+<p>&nbsp;</p>
+<p>Since this is an inductive circuit, we&rsquo;ll start our analysis by determining the start and end values for <em>current</em>. This step is vitally important when analyzing inductive circuits, as the starting and ending <em>voltage</em> can only be known after the current has been determined! With the switch open (starting condition), there is a total (<a href="https://www.allaboutcircuits.com/video-lectures/series-circuits-part-1/" target="_blank">series</a>) resistance of 3 &Omega;, which limits the final current in the circuit to 5 amps:</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/analyzing-inductive-circuits-formula1.jpg" /></p>
+<p>&nbsp;</p>
+<p>So, before the switch is even closed, we have a current through the inductor of 5 amps, rather than starting from 0 amps as in the previous inductor example. With the switch closed (the final condition), the 1 &Omega; resistor is shorted across (bypassed), which changes the circuit&rsquo;s total resistance to 2 &Omega;. With the switch closed, the final value for current through the inductor would then be:</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/analyzing-inductive-circuits-formula2.jpg" /></p>
+<p>&nbsp;</p>
+<p>So, the inductor in this circuit has a starting current of 5 amps and an ending current of 7.5 amps. Since the &ldquo;timing&rdquo; will take place during the time that the switch is closed and R<sub>2</sub> is shorted past, we need to calculate our time constant from L<sub>1</sub> and R<sub>1</sub>: 1 Henry divided by 2 &Omega;, or &tau; = 1/2 second. With these values, we can calculate what will happen to the current over time. The voltage across the inductor will be calculated by multiplying the current by 2 (to arrive at the voltage across the 2 &Omega; resistor), then subtracting that from 15 volts to see what&rsquo;s left.</p>
+<p>If you realize that the voltage across the inductor starts at 5 volts (when the switch is first closed) and decays to 0 volts over time, you can also use these figures for starting/ending values in the general formula and derive the same results:</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/calculating-current-and-voltage.jpg" /></p>
+<p>&nbsp;</p>
+<table>
+<tbody>
+<tr>
+<th>Time (seconds)</th>
+<th>Battery Voltage</th>
+<th>Inductor Voltage</th>
+<th>Current</th>
+</tr>
+<tr>
+<td>0</td>
+<td>15 V</td>
+<td>5 V</td>
+<td>5 A</td>
+</tr>
+<tr>
+<td>0.1</td>
+<td>15 V</td>
+<td>4.094 V</td>
+<td>5.453 A</td>
+</tr>
+<tr>
+<td>0.25</td>
+<td>15 V</td>
+<td>3.033 V</td>
+<td>5.984 A</td>
+</tr>
+<tr>
+<td>0.5</td>
+<td>15 V</td>
+<td>1.839 V</td>
+<td>6.580 A</td>
+</tr>
+<tr>
+<td>1</td>
+<td>15 V</td>
+<td>0.677 V</td>
+<td>7.162 A</td>
+</tr>
+<tr>
+<td>2</td>
+<td>15 V</td>
+<td>0.092 V</td>
+<td>7.454 A</td>
+</tr>
+<tr>
+<td>3</td>
+<td>15 V</td>
+<td>0.012 V</td>
+<td>7.494 A</td>
+</tr>
+</tbody>
+</table>

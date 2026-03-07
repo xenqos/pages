@@ -1,0 +1,116 @@
+<h1>Digital Lab - 10-bit Flashing LED Sequencer</h1>
+<h3>Project Overview</h3>
+<p>In this project, you will construct the automated sequencing <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-3/special-purpose-diodes/" target="_blank">light-emitting diode (LED)</a> output circuit, illustrated in Figure 1.&nbsp;</p>
+<p>&nbsp;</p>
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/led-sequencer-illustration.jpg" /></p>
+<h5><em><strong>Figure 1. </strong>Automated&nbsp;10-bit counter with sequencing LED bar graph outputs.</em></h5>
+<p>&nbsp;</p>
+<p>You will also use this circuit to design a frequency divider and a <a href="https://www.allaboutcircuits.com/technical-articles/switch-bounce-how-to-deal-with-it/" target="_blank">switch debouncing circuit</a>. These are fundamental building blocks of many commonly used circuits and electronic systems.</p>
+<p>&nbsp;</p>
+<h3>Parts and Materials</h3>
+<ul>
+<li>4017 decade counter/divider</li>
+<li><a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-8/555-ic/" target="_blank">555 timer IC</a></li>
+<li>Ten-segment bar graph LED</li>
+<li>One <a href="https://www.allaboutcircuits.com/textbook/reference/chpt-9/switches-hand-actuated/" target="_blank">SPST </a>(single-pole, single-throw) switch</li>
+<li>One 6 V battery</li>
+<li>10 k&Omega; <a href="https://eepower.com/resistor-guide/" target="_blank">resistor</a></li>
+<li>1 M&Omega; resistor</li>
+<li>0.1 &micro;F <a href="https://eepower.com/capacitor-guide/" target="_blank">capacitor</a></li>
+<li>Coupling capacitor, 0.047 to 0.001 &micro;F</li>
+<li>Ten 470 &Omega; resistors</li>
+<li><a href="https://www.allaboutcircuits.com/technical-articles/an-introduction-to-oscilloscope-probes/" target="_blank">Oscilloscope</a> or audio detector with headphones</li>
+</ul>
+<p><strong>Caution!</strong> The 4017 IC is a <a href="https://www.allaboutcircuits.com/textbook/digital/chpt-3/cmos-gate-circuitry/" target="_blank">complementary metal-oxide semiconductor (CMOS)</a>&nbsp;and, therefore, sensitive to <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/static-electricity/" target="_blank">static electricity</a>!</p>
+<p>Any <a href="https://control.com/textbook/relay-control-systems/control-relays/" target="_blank">single-pole, single-throw (SPST)&nbsp;switch</a> is adequate. A household light switch will work fine and is readily available at any hardware store.</p>
+<p>To assess the signal frequency, you will need access to an oscilloscope or an audio detector.</p>
+<p>&nbsp;</p>
+<h3>Learning Objectives</h3>
+<ul>
+<li>Use of a 555 timer circuit to produce clock&nbsp;pulses (astable multivibrator)</li>
+<li>Use of a 4017 decade counter/divider circuit to produce a sequence of pulses</li>
+<li>Use of a 4017 decade counter/divider circuit for frequency division</li>
+<li>Using a frequency divider and timepiece (watch) to measure the frequency</li>
+<li>Purpose of a <a href="https://eepower.com/resistor-guide/resistor-applications/pull-up-resistor-pull-down-resistor/" target="_blank">pulldown&nbsp;resistor</a></li>
+<li>Learn the effects of switch contact bounce&nbsp;on digital circuits</li>
+<li>Use of a 555 timer circuit to debounce&nbsp;a mechanical switch (monostable multivibrator)</li>
+</ul>
+<p>&nbsp;</p>
+<h3>Instructions</h3>
+<p><strong>Step 1:&nbsp;</strong>Build the circuit shown in the circuit diagram of Figure 2 and the breadboard illustration in Figure 3.</p>
+<p>&nbsp;</p>
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/led-sequencer-schematic-diagram.jpg" /></p>
+<h5><em><strong>Figure 2. </strong>Schematic diagram of the automated&nbsp;10-bit counter with LED bar graph outputs.</em></h5>
+<p>&nbsp;</p>
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/led-sequencer-illustration.jpg" /></p>
+<h5><em><strong>Figure 3. </strong>Breadboard implementation of the automated&nbsp;10-bit counter with LED bar graph outputs.</em></h5>
+<p>&nbsp;</p>
+<p>The model 4017 integrated circuit is a CMOS counter with ten output terminals. One of these ten terminals will be in a high&nbsp;state at any given time, with all others being low,&nbsp;giving a one-of-ten&nbsp;output sequence. If low-to-high voltage pulses are applied to the CLOCK&nbsp;(Clk) terminal of the 4017, it will increment its count, forcing the next output into a high&nbsp;state.</p>
+<p>With a 555 timer connected as an astable multivibrator (oscillator) of low frequency, the 4017 will automatically cycle through its ten-count sequence, lighting up each LED, one at a time, and cycling&nbsp;back to the first LED. The result is a visually pleasing sequence of flashing lights.&nbsp;</p>
+<p><strong>Step 2:</strong>&nbsp;Experiment with different resistor and capacitor values on the 555 timer to create different flash rates. If you have a potentiometer of similar full-scale value, you can replace the&nbsp;1 M&Omega; resistor of Figure 2 with the potentiometer and dynamically adjust the flash rates.</p>
+<p><strong>Step 3:&nbsp;</strong>Try disconnecting the jumper wire leading from the 4017&rsquo;s CLOCK&nbsp;terminal (pin #14) to the 555&rsquo;s output&nbsp;terminal (pin #3), where it connects to the 555 timer chip, and hold its end in your hand. If there is sufficient 60 Hz power-line noise&nbsp;around you, the 4017 will detect it as a fast clock signal, causing the LEDs to blink very rapidly.</p>
+<p><strong>Step 4:&nbsp;</strong>Experiment with the other control inputs on the 4017. Two terminals on the 4017 chip, RESET&nbsp;and CLOCK INHIBIT, are maintained in a low (0) state by means of a connection to the negative side of the battery (ground). This is necessary if the chip is to count freely. If the RESET terminal is made high (1),&nbsp;the 4017&rsquo;s output will reset to 0 (pin #3 high,&nbsp;all other output pins low). If the CLOCK INHIBIT is made high (1),&nbsp;the chip will stop responding to the clock signal and pause in its counting sequence. Can you confirm this operation?</p>
+<p>&nbsp;</p>
+<h4>Changing the Length of the Count Sequence</h4>
+<p><strong>Step 5:</strong>&nbsp; If the 4017&rsquo;s <em>RESET</em> terminal is connected to one of its ten output terminals, as illustrated in Figure 4, its counting sequence will be cut short or truncated.&nbsp;</p>
+<p>&nbsp;</p>
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/led-sequencer-illustration-two.jpg" /></p>
+<h5><em><strong>Figure 4. </strong>Truncating the&nbsp;count sequence by connecting an output to the RESET input.</em></h5>
+<p>&nbsp;</p>
+<p>You may experiment with this by disconnecting the RESET&nbsp;terminal from the ground, then connecting a long jumper wire to the RESET terminal for easy connection to the outputs at the ten-segment LED bar graph. Notice how many (or how few) LEDs light up with the RESET connected to any one of the outputs:</p>
+<p>&nbsp;</p>
+<h4>Creating a Digital Frequency Divider</h4>
+<p><a href="https://www.allaboutcircuits.com/worksheets/counters/" target="_blank">Counters</a> such as the 4017 may be used as digital frequency dividers to take a clock signal and produce a pulse occurring at some integer factor of the clock frequency. For example, if the clock signal from the 555 timer is 200 Hz, and the 4017 is configured for a full-count sequence (the RESET terminal connected to ground, giving a full, ten-step count), a signal with a period ten times as long (20 Hz) will be present at any of the 4017&rsquo;s output terminals. In other words, each output terminal will cycle once for every ten cycles of the clock signal: a frequency ten times as slow.</p>
+<p><strong>Step 6:&nbsp;</strong>To experiment with this principle, connect your&nbsp;audio detector between output 0 (pin #3) of the 4017 and ground through a very small capacitor (0.047 &micro;F to 0.001 &micro;F), as illustrated in Figure 5.</p>
+<p>&nbsp;</p>
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/led-sequencer-illustration-three.jpg" /></p>
+<h5><em><strong>Figure 5. </strong>Using an audio detector to monitor the clock divider output frequency.</em></h5>
+<p>&nbsp;</p>
+<p>The capacitor is used for coupling&nbsp;AC signals only so that you may audibly detect pulses without placing a DC (resistive) load on the counter chip output. If you have an oscilloscope, you can visually monitor the signal on output 0.&nbsp;</p>
+<p>With the 4017 RESET terminal grounded, you will have a full-count sequence, and you will hear a click&nbsp;in the headphones every time the 0&nbsp;LED lights up, corresponding to 1/10 of the 555&rsquo;s actual output frequency:</p>
+<p><strong>Step 7:&nbsp;</strong>In fact, knowing this mathematical relationship between clicks heard in the headphone and the clock frequency allows us to measure the clock frequency to a fair degree of precision. Using a stopwatch or other timepiece, count the number of clicks heard in one full minute while connected to the 4017&rsquo;s &ldquo;0&rdquo; output. Using a 1 M&Omega; resistor and 0.1 &micro;F <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-4/ac-capacitor-circuits/" target="_blank">capacitor</a> in the 555 timing circuit and a power supply voltage of 13 V (instead of 6 V), I counted 79 clicks in one minute from my circuit.</p>
+<p>Your circuit may produce slightly different results. Multiply the number of pulses counted at the &ldquo;0&rdquo; output by 10 to obtain the number of cycles produced by the 555 timer during that same time (my circuit: 79 x 10 = 790 cycles). Divide this number by 60 to obtain the number of timer cycles elapsed in each second (my circuit: 790/60 = 13.17). This final figure is the clock frequency in Hz.</p>
+<p><strong>Step 8:&nbsp;</strong>Now, leaving one test probe of the audio detector connected to the ground, take the other test probe (the one with the coupling capacitor connected in series) and connect it to pin #3 of the 555 timer, as shown in Figure 6. The buzzing you hear is the undivided clock frequency:</p>
+<p>&nbsp;</p>
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/led-sequencer-illustration-four.jpg" /></p>
+<h5><em><strong>Figure 6. </strong>Using an audio detector to evaluate the 555 timer&nbsp;output frequency.</em></h5>
+<p>&nbsp;</p>
+<p><strong>Step 9:&nbsp;</strong>By connecting the 4017&rsquo;s RESET terminal to one of the output terminals, as in Step 5 above, a truncated sequence will result. If we are using the 4017 as a frequency divider, this means the output frequency will be a different factor of the clock frequency: 1/9, 1/8, 1/7, 1/6, 1/5, 1/4, 1/3, or 1/2, depending on which output terminal we connect the RESET jumper wire to.</p>
+<p>Re-connect the audio detector test probe to output &ldquo;0&rdquo; of the 4017 (pin #3), and connect the RESET terminal jumper to the sixth LED from the left on the bar graph, as demonstrated in Figure 7. This should produce a 1/5 frequency division ratio:</p>
+<p>&nbsp;</p>
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/led-sequencer-illustration-five.jpg" /></p>
+<h5><em><strong>Figure 7. </strong>Using an audio detector to monitor the truncated clock divider output frequency.</em></h5>
+<p>&nbsp;</p>
+<p>Counting the number of clicks heard in one minute again, you should obtain a number approximately twice as large as what was counted with the 4017 configured for a 1/10 ratio because 1/5 is twice as large a ratio as 1/10.</p>
+<p>If you do not obtain a count that is exactly twice what you obtained before, it is because of an error inherent to the method of counting cycles: coordinating your sense of hearing with the display of a stopwatch or other time-keeping device.</p>
+<p><strong>Step 10:</strong>&nbsp;Try replacing the 1 M&Omega; timing resistor in the 555 circuit with a significantly lesser value, such as 10 k&Omega;. This will increase the clock frequency driving the 4017 chip. Use the audio detector to listen to the divided frequency at pin #3 of the 4017, noting the different tones produced as you move the RESET jumper wire to different outputs, creating different frequency division ratios.</p>
+<p><strong>Step 11:&nbsp;</strong>See if you can produce octaves by dividing the original frequency by 2, then by 4, and then by 8 (each descending octave represents one-half the previous frequency). Octaves are readily distinguished from other divided frequencies by their similar pitches to the original tone.</p>
+<p>&nbsp;</p>
+<h4>Investigating Switch Bounce Using the Counter</h4>
+<p>A final lesson that may be learned from this circuit is that of switch contact bounce.&nbsp;For this, you will need a switch to provide clock signals to the 4017 chip instead of the 555 timer.</p>
+<p><strong>Step 12:&nbsp;</strong>Re-connect the RESET jumper wire to ground to enable a full ten-step count sequence, and disconnect the 555&rsquo;s output from the 4017&rsquo;s&nbsp;CLOCK<em>&nbsp;</em>input terminal. Then, connect a switch in series with a 10 k&Omega; <a href="https://eepower.com/resistor-guide/resistor-applications/pull-up-resistor-pull-down-resistor/">pulldown resistor</a>, and connect this assembly to the 4017 CLOCK input, as shown in Figures 8 and 9.</p>
+<p>&nbsp;</p>
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/ten-segment-led-bargraph-4017-clock.jpg" /></p>
+<h5><em><strong>Figure 8. </strong>Schematic diagram of the 10-bit counter connected to a switch with a pulldown resistor.</em></h5>
+<p>&nbsp;</p>
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/led-sequencer-illustration-six.jpg" /></p>
+<h5><em><strong>Figure 9. </strong>Breadboard implementation of the 10-bit counter connected to a switch with a pulldown resistor.</em></h5>
+<p>&nbsp;</p>
+<p>The purpose of a pulldown&nbsp;resistor is to provide a definite low (0)&nbsp;logic state when the switch contact opens. Without this resistor in place, the 4017&rsquo;s CLOCK input wire would be <em>floating</em>&nbsp;. Then, whenever the switch contact was opened,&nbsp;it would be susceptible to interference from stray static voltages or electrical noise that may be&nbsp;capable of making the 4017 count&nbsp;randomly.</p>
+<p>With the pulldown resistor in place, the 4017&rsquo;s CLOCK input will have a definite, albeit resistive, connection to the ground, providing a stable low (0) logic state that precludes any interference from static electricity or noise&nbsp;coupled from nearby AC circuit wiring.</p>
+<p><strong>Step 13:&nbsp;</strong>Actuate the switch on and off, noting the action of the LEDs. With each off-to-on switch transition, the 4017 should increment once in its count. However, you may notice some strange behavior: sometimes, the LED sequence will increment one or even more additional steps with a single switch closure.</p>
+<p>Why is this? It is due to the very rapid, mechanical bouncing&nbsp;of the switch contacts. When two metallic contacts are brought together rapidly, as does happen inside most switches, there will be an elastic collision. This collision results in the contacts making and breaking very rapidly as they bounce&nbsp;off one another.</p>
+<p>Normally, this bouncing&nbsp;is much too rapid for you to see its effects, but in a digital circuit such as this, where the counter chip can respond to very quick clock pulses, these bounces&nbsp;are interpreted as distinct clock signals, and the count incremented accordingly.</p>
+<p>&nbsp;</p>
+<h4>Using a Counter to Debounce a Switch Signal</h4>
+<p>One way to combat this problem is to use a timing circuit to produce a single pulse for any number of input pulse signals received within a short amount of time. The circuit is called a monostable multivibrator, and any technique eliminating the false pulses caused by switch contact bounce&nbsp;is called <a href="https://www.allaboutcircuits.com/textbook/digital/chpt-4/contact-bounce/" target="_blank">debouncing</a>.</p>
+<p><strong>Step 14:&nbsp;</strong>The 555 timer circuit can function as a debouncer if the TRIGGER&nbsp;input is connected to the switch, as illustrated in Figures 10 and 11.&nbsp;</p>
+<p>&nbsp;</p>
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/555-timer-circuit-as-debouncer.jpg" />&nbsp;</p>
+<h5><em><strong>Figure 10. </strong>Schematic diagram&nbsp;of the switch debouncing circuit.</em></h5>
+<p>&nbsp;</p>
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/led-sequencer-illustration-seven.jpg" /></p>
+<h5><em><strong>Figure 11. </strong>Breadboard implementation of the switch debouncing circuit.</em></h5>
+<p>&nbsp;</p>
+<p>Please note that since we are using the 555 once again to provide a clock signal to the 4017, we must re-connect pin #3 of the 555 chip to pin #14 of the 4017 chip! Also, if you have altered the values of the resistor or capacitor in the 555 timer circuit, you should return to the original 1 M&Omega; and 0.1 &micro;F components.</p>
+<p><strong>Step 15:&nbsp;</strong>Actuate the switch again and note the counting behavior of the 4017. There should be no more extra&nbsp;counts as there were before because the 555 timer outputs a single, crisp pulse for every on-to-off actuation (notice the inversion of operation here!) of the switch.&nbsp;It is important that the timing of the 555 circuit be appropriate.&nbsp;The time to charge the capacitor should be longer than the settling&nbsp;period of the switch (the time required for the contacts to stop bouncing) but not so long that the timer would miss&nbsp;a rapid sequence of a switch actuation if they were to occur.</p>

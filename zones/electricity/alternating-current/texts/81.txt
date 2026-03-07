@@ -1,0 +1,65 @@
+<h1>Brushless DC Motor</h1>
+<p>Brushless DC motors were developed from conventional brushed DC motors with the availability of <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-7/hysteresis/" target="_blank">solid-state power semiconductors</a>. So, why do we discuss brushless DC motors in a chapter on AC motors?</p>
+<p>Brushless DC motors are similar to AC synchronous motors. The major difference is that synchronous motors develop a sinusoidal back <em>EMF</em>, as compared to a rectangular, or trapezoidal, back EMF for brushless DC motors.</p>
+<p>Both have stator created rotating magnetic fields producing torque in a magnetic rotor.</p>
+<p>Synchronous motors are usually large multi-kilowatt size, often with electromagnet rotors. True synchronous motors are considered to be single speed, a submultiple of the powerline frequency. Brushless DC motors tend to be small&ndash; a few watts to tens of watts, with permanent magnet rotors.</p>
+<p>The speed of a brushless DC motor is not fixed unless driven by a phased locked loop slaved to a reference frequency. The style of construction is either cylindrical or pancake.</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/cylindrical-construction.jpg" /></p>
+<p><em>Cylindrical construction: (a) outside rotor, (b) inside rotor</em></p>
+<p>&nbsp;</p>
+<p>The most usual construction, cylindrical, can take on two forms (figure above). The most common cylindrical style is with the rotor on the inside, above right. This style of motor is used in hard disk drives. It is also possible to put the rotor on the outside surrounding the stator.</p>
+<p>Such is the case with brushless DC fan motors, without the shaft. This style of construction may be short and stout. However, the direction of the magnetic flux is radial with respect to the rotational axis.</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/pancake-motor-construction.jpg" /></p>
+<p><em>Pancake motor construction: (a) single stator, (b) double stator</em></p>
+<p>&nbsp;</p>
+<p>High torque pancake motors may have stator coils on both sides of the rotor (figure above-b).</p>
+<p>Lower torque applications like floppy disk drive motors suffice with a stator coil on one side of the rotor, (Figure above-a). The direction of the magnetic flux is axial, that is, parallel to the axis of rotation.</p>
+<p>The commutation function may be performed by various shaft position sensors: optical encoder, a magnetic encoder (resolver, synchro, etc), or Hall effect magnetic sensors. Small inexpensive motors use Hall effect sensors.</p>
+<p>A Hall effect sensor is a semiconductor device where the electron flow is affected by a magnetic field perpendicular to the direction of current flow. It looks like a four-terminal variable resistor network. The voltages at the two outputs are complementary.</p>
+<p>Application of a magnetic field to the sensor causes a small voltage change at the output. The Hall output may drive a <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-6/voltage-comparator/" target="_blank">comparator</a> to provide for the more stable drive to the power device. Or, it may drive a compound <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-4/bipolar-junction-transistors-bjt/" target="_blank">transistor</a> stage if properly biased.</p>
+<p>More modern Hall effect sensors may contain an integrated amplifier and digital circuitry. This 3-lead device may directly drive the power transistor feeding a phase winding. The sensor must be mounted close to the permanent magnet rotor to sense its position.</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/hall-effect-sensors-3-φ-brushless-dc-motor.jpg" /></p>
+<p><em>Hall effect sensors commutate 3-&phi; brushless DC motor</em></p>
+<p>&nbsp;</p>
+<p>The simple cylindrical 3-&phi; motor (figure above) is commutated by a Hall effect device for each of the three stator phases. The changing position of the permanent magnet rotor is sensed by the Hall device as the polarity of the passing rotor pole changes.</p>
+<p>This Hall signal is amplified so that the stator coils are driven with the proper current. Not shown here, the Hall signals may be processed by combinatorial logic for more efficient drive waveforms.</p>
+<p>The above cylindrical motor could drive a hard drive if it were equipped with a phased locked loop (PLL) to maintain a constant speed. Similar circuitry could drive the pancake floppy disk drive motor (figure below). Again, it would need a PLL to maintain a constant speed.</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/brushless-pancake-motor.jpg" /></p>
+<p><em>Brushless pancake motor</em></p>
+<p>&nbsp;</p>
+<p>The 3-&phi; pancake motor has 6-stator poles and 8-rotor poles. The rotor is a flat ferrite ring magnetized with eight axially magnetized alternating poles. We do not show that the rotor is capped by a mild steel plate for mounting to the bearing in the middle of the stator.</p>
+<p>The steel plate also helps complete the magnetic circuit. The stator poles are also mounted atop a steel plate, helping to close the magnetic circuit.</p>
+<p>The flat stator coils are trapezoidal to more closely fit the coils, and approximate the rotor poles. The 6-stator coils comprise three winding phases.</p>
+<p>If the three stator phases were successively energized, a rotating magnetic field would be generated.</p>
+<p>The permanent magnet rotor would follow as in the case of a synchronous motor. A two-pole rotor would follow this field at the same rotation rate as the rotating field. However, our 8-pole rotor will rotate at a submultiple of this rate due to the extra poles in the rotor.</p>
+<p><strong>The brushless DC fan motor has these features:</strong></p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/brushless-fan-motor-2-φ.jpg" /></p>
+<p>&nbsp;</p>
+<p><em>Brushless fan motor, 2-&phi;</em></p>
+<ul>
+<li>The stator has 2-phases distributed between 4-poles</li>
+<li>There are 4-salient poles with no windings to eliminate zero torque points.</li>
+<li>The rotor has four main drive poles.</li>
+<li>The rotor has 8-poles superimposed to help eliminate zero torque points.</li>
+<li>The Hall effect sensors are spaced at 45o physical.</li>
+<li>The fan housing is placed atop the rotor, which is placed over the stator.</li>
+</ul>
+<p>The goal of a brushless fan motor is to minimize the cost of manufacture. This is an incentive to move lower performance products from a 3-&phi; to a 2-&phi; configuration. Depending on how it is driven, it may be called a 4-&phi; motor.</p>
+<p>You may recall that conventional DC motors cannot have an even number of armature poles (2, 4, etc.) if they are to be self-starting, 3, 5, 7 being common. Thus, it is possible for a hypothetical 4-pole motor to come to rest at a torque minima, where it cannot be started from rest.</p>
+<p>The addition of the four small salient poles with no windings superimposes a ripple torque upon the torque vs position curve. When this ripple torque is added to normal energized-torque curve, the result is that torque minima are partially removed.</p>
+<p>This makes it possible to start the motor for all possible stopping positions. The addition of eight permanent magnet poles to the normal 4-pole permanent magnet rotor superimposes a small second harmonic ripple torque upon the normal 4-pole ripple torque.</p>
+<p>This further removes the torque minima. As long as the torque minima do not drop to zero, we should be able to start the motor. The more successful we are in removing the torque minima, the easier the motor starting.</p>
+<p>The 2-&phi; stator requires that the Hall sensors be spaced apart by 90<strong>&deg;</strong>electrical. If the rotor was a 2-pole rotor, the Hall sensors would be placed 90<strong>&deg;</strong> physical. Since we have a 4-pole permanent magnet rotor, the sensors must be placed 45<strong>&deg;</strong> physical to achieve the 90<strong>&deg;</strong> electrical spacing. (Note Hall spacing above.)</p>
+<p>The majority of the torque is due to the interaction of the inside stator 2-&phi; coils with the 4-pole section of the rotor. Moreover, the 4-pole section of the rotor must be on the bottom so that the Hall sensors will sense the proper commutation signals.</p>
+<p>The 8-poles rotor section is only for improving motor starting.</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/rushless_DC_motor_2-φ_push-pull-drive.jpg" /></p>
+<p><em>Brushless DC motor 2-&phi; push-pull drive</em></p>
+<p>&nbsp;</p>
+<p>In the figure above, the 2-&phi; push-pull drive (also known as 4-&phi; drive) uses two Hall effect sensors to drive four windings. The sensors are spaced 90<strong>&deg;</strong> electrical apart, which is 90<strong>&deg;</strong> physical for a single pole rotor.</p>
+<p>Since the Hall sensor has two complementary outputs, one sensor provides commutation for two opposing windings.</p>

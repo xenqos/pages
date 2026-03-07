@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Radio Frequencies</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='23.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='25.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>Understanding I/Q Signals and Quadrature Modulation</h1>
+<p>This chapter would not be complete without a page on quadrature demodulation. However, before we explore quadrature <em>de</em>modulation, we need to at least briefly discuss quadrature modulation. And before we discuss quadrature modulation, we need to understand I/Q signals.</p>
+<p>&nbsp;</p>
+<h3>In-Phase and Quadrature</h3>
+<p>The term &ldquo;I/Q&rdquo; is an abbreviation for &ldquo;in-phase&rdquo; and &ldquo;quadrature.&rdquo; Unfortunately, we already have a terminology problem. First of all, &ldquo;in-phase&rdquo; and &ldquo;quadrature&rdquo; have no meaning on their own; phase is relative, and something can only be &ldquo;in phase&rdquo; or &ldquo;out of phase&rdquo; with reference to another signal or an established reference point. Furthermore, we now have the word &ldquo;quadrature&rdquo; applied to both a signal and the modulation/demodulation techniques associated with that signal.</p>
+<p>In any event, &ldquo;in-phase&rdquo; and &ldquo;quadrature&rdquo; refer to two sinusoids that have the same frequency and are 90&deg; out of phase. By convention, the I signal is a cosine waveform, and the Q signal is a sine waveform. As you know, a sine wave (without any additional phase) is shifted by 90&deg; relative to a cosine wave. Another way to express this is that the sine and cosine waves are <em>in quadrature</em>.</p>
+<p>The first thing to understand about I/Q signals is that they are always amplitude-modulated, not frequency- or phase-modulated. However, I/Q amplitude modulation is different from the AM technique discussed in Chapter 4: in an I/Q modulator, the signals that modulate the I/Q sinusoids are not shifted such that they are always positive. In other words, I/Q modulation involves multiplying I/Q waveforms by modulating signals that can have negative voltage values, and consequently the &ldquo;amplitude&rdquo; modulation can result in a 180&deg; phase shift. Later in this page we&rsquo;ll explore this issue in more detail.</p>
+<p>What is so advantageous about amplitude-modulating two sinusoids that are 90&deg; out of phase? Why are I/Q modulation and demodulation so widespread? Read on.</p>
+<p>&nbsp;</p>
+<h3>Summing I and Q</h3>
+<p>I and Q signals on their own are not very interesting. The interesting thing happens when I and Q waveforms are added. It turns out that any form of modulation can be performed simply by varying the amplitude&mdash;only the amplitude&mdash;of I and Q signals, and then adding them together.</p>
+<p>If you take I and Q signals of equal amplitude and add them, the result is a sinusoid with a phase that is exactly between the phase of the I signal and the phase of the Q signal.</p>
+<p>&nbsp;</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/RFT_ch5_pg4_IQsum.JPG&quot; /></p>
+<p>&nbsp;</p>
+<p>In other words, if you consider the I waveform to have a phase of 0&deg; and the Q waveform to have a phase of 90&deg;, the summation signal will have a phase of 45&deg;. If you want to use these I and Q signals to create an amplitude-modulated waveform, you simply amplitude modulate the individual I and Q signals. Obviously a signal will increase or decrease in amplitude if it is created by adding together two signals that are both increasing or both decreasing in amplitude. However, you must ensure that the amplitude modulation applied to the I signal is identical to the amplitude modulation applied to the Q signal, because if they are not identical, <a href=&quot;https://eepower.com/textbook/vol-i-foundations-power-design/chapter-2-analysis-ac-systems/phase-shift-and-phasors&quot; target=&quot;_blank&quot;>you will have </a><a href=&quot;https://eepower.com/textbook/vol-i-foundations-power-design/chapter-2-analysis-ac-systems/phase-shift-and-phasors&quot; target=&quot;_blank&quot;>phase</a><a href=&quot;https://eepower.com/textbook/vol-i-foundations-power-design/chapter-2-analysis-ac-systems/phase-shift-and-phasors&quot; target=&quot;_blank&quot;> shift</a>. And that brings us to the next property of I/Q signaling.</p>
+<h3>From Amplitude to Phase</h3>
+<p>Phase modulation, in the form of phase shift keying, is an important technique in modern RF systems, and phase modulation can be conveniently achieved by varying the <em>amplitude</em> of I/Q signals. Consider the following plots:</p>
+<p>&nbsp;</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/RFT_ch5_pg4_shifttowardI.JPG&quot; /></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/RFT_ch5_pg4_shifttowardQ.JPG&quot; /></p>
+<p>&nbsp;</p>
+<p>As you can see, increasing the amplitude of one of the waveforms relative to the other causes the summation signal to shift toward the higher-amplitude waveform. This makes intuitive sense: if you eliminated the Q waveform, for example, the summation would shift all the way over to the phase of the I waveform, because (obviously) adding the I waveform to zero will result in a summation signal that is identical to the I waveform.</p>
+<p>It would seem from the above discussion that I/Q signaling can only be used to shift a signal 90&deg; (i.e., 45&deg; in each direction): if the Q amplitude is reduced to zero, the summation goes all the way to the I phase; if the I amplitude is reduced to zero, the summation goes all the way to the Q phase. How, then, could we use I/Q signals to create (for example) quadrature phase shift keying (QPSK), which uses phase values covering a range of 270&deg;? We&rsquo;ll discuss this in the next section.</p>
+<h3>Quadrature Modulation</h3>
+<p>The term &ldquo;quadrature modulation&rdquo; refers to modulation that is based on the summation of two signals that are in quadrature. In other words, it is I/Q-signal-based modulation. We&rsquo;ll use QPSK as an example of how quadrature modulation works, and in the process we&rsquo;ll see how amplitude modulation of I/Q signals can produce phase shifts beyond 90&deg;.</p>
+<p>&nbsp;</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/RFT_ch5_pg4_QPSKdiagram.jpg&quot; /></p>
+<p>&nbsp;</p>
+<p>This is a basic block diagram for a QPSK modulator. First, the digital data stream is processed so that two consecutive bits become two parallel bits. Both of these bits will be transmitted simultaneously; in other words, as mentioned in <a href=&quot;https://www.allaboutcircuits.com/textbook/radio-frequency-analysis-design/radio-frequency-modulation/digital-phase-modulation-bpsk-qpsk-dqpsk/&quot; target=&quot;_blank&quot;>this page</a>, QPSK allows one symbol to transfer two bits. The local oscillator generates the carrier sinusoid. The local oscillator signal itself becomes the I carrier, and a 90&deg; phase shift is applied to create the Q carrier. The I and Q carriers are multiplied by the I and Q data streams, and the two signals resulting from these multiplications are summed to produce the QPSK-modulated waveform.</p>
+<p>The I and Q data streams are amplitude-modulating the I and Q carriers, and as explained above, these individual amplitude modulations can be used to produce phase modulation in the final signal. If the I and Q data streams were typical digital signals extending from ground to some positive voltage, we would be applying <a href=&quot;https://www.allaboutcircuits.com/textbook/radio-frequency-analysis-design/radio-frequency-modulation/digital-modulation-amplitude-and-frequency/&quot; target=&quot;_blank&quot;>on-off keying</a> to the I and Q carriers, and our phase shift would be restricted to 45&deg; in either direction. However, if the I and Q data streams are <em>bipolar</em> signals&mdash;i.e., if they swing between a negative voltage and a positive voltage&mdash;our &ldquo;amplitude modulation&rdquo; is actually inverting the carrier whenever the input data is logic low (because the negative input voltage multiplied by the carrier results in inversion). This means that we will have four I/Q states:</p>
+<ul>
+<li>I normal and Q normal</li>
+<li>I normal and Q inverted</li>
+<li>I inverted and Q normal</li>
+<li>I inverted and Q inverted</li>
+</ul>
+
+<p>What will summation produce in each of these cases? (Note that in the following plots the frequency of the waveforms is chosen such that the number of seconds on the x-axis is the same as the phase shift in degrees.)</p>
+<p>&nbsp;</p>
+<p><strong><u>I Normal and Q Normal</u></strong></p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/RFT_ch5_pg4_InormalQnormal.JPG&quot; /></p>
+<p>&nbsp;</p>
+<p><strong><u>I Normal and Q Inverted</u></strong></p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/RFT_ch5_pg4_InormalQinverted.JPG&quot; /></p>
+<p>&nbsp;</p>
+<p><strong><u>I Inverted and Q Normal</u></strong></p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/RFT_ch5_pg4_IinvertedQnormal.JPG&quot; /></p>
+<p>&nbsp;</p>
+<p><strong><u>I Inverted and Q Inverted</u></strong></p>
+<p><strong><u><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/RFT_ch5_pg4_IinvertedQinverted.JPG&quot; /></u></strong></p>
+<p>&nbsp;</p>
+<p>As you can see, summation in these four cases produces exactly what we want to have in a QPSK signal: phase shifts of 45&deg;, 135&deg;, 225&deg;, and 315&deg;.</p>
+<p>&nbsp;</p>
+<h3>Summary</h3>
+<ul>
+<li>I/Q signaling refers to the use of two sinusoids that have the same frequency and a relative phase shift of 90&deg;.</li>
+<li>Amplitude, phase, and frequency modulation can be performed by summing amplitude-modulated I/Q signals.</li>
+<li>Quadrature modulation refers to modulation that involves I/Q signals.</li>
+<li>Quadrature phase shift keying can be accomplished by adding I and Q carriers that have been individually multiplied, in accordance with the incoming digital data, by +1 or &ndash;1.</li>
+</ul>
+
+
+
+</div>
+</div>
+</body>
+</html>

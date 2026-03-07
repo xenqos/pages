@@ -1,0 +1,37 @@
+<h1>Principles of Radio</h1>
+<p>One of the more fascinating applications of electricity is in the generation of invisible ripples of energy called <em>radio waves</em>. The limited scope of this lesson on alternating current does not permit full exploration of the concept, some of the basic principles will be covered.</p>
+<p>With Oersted&rsquo;s accidental discovery of <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-14/electromagnetism/" target="_blank">electromagnetism</a>, it was realized that electricity and magnetism were related to each other.</p>
+<p>When an electric current was passed through a conductor, a magnetic field was generated perpendicular to the axis of flow. Likewise, if a conductor was exposed to a change in magnetic flux perpendicular to the conductor, a voltage was produced along the length of that conductor.</p>
+<p>So far, scientists knew that electricity and magnetism always seemed to affect each other at right angles. However, a major discovery lay hidden just beneath this seemingly simple concept of related perpendicularity, and its unveiling was one of the pivotal moments in modern science.</p>
+<h3>Relationship of Electric and Magnetic Fields</h3>
+<p>This breakthrough in physics is hard to overstate. The man responsible for this conceptual revolution was the Scottish physicist James Clerk Maxwell (1831-1879), who &ldquo;unified&rdquo; the study of electricity and magnetism in four relatively tidy equations.</p>
+<p>In essence, what he discovered was that electric and magnetic <em>fields</em> were intrinsically related to one another, with or without the presence of a conductive path for current to flow. Stated more formally, Maxwell&rsquo;s discovery was this:</p>
+<p><strong>A changing electric field produces a perpendicular magnetic field,</strong> and</p>
+<p><strong>A changing magnetic field produces a perpendicular electric field.</strong></p>
+<p>All of this can take place in open space, the alternating electric and magnetic fields supporting each other as they travel through space at the speed of light. This dynamic structure of electric and magnetic fields propagating through space is better known as an <em>electromagnetic wave</em>.</p>
+<p>There are many kinds of natural radiative energy composed of electromagnetic waves. Even light is electromagnetic in nature. So are X-rays and &ldquo;gamma&rdquo; ray radiation.</p>
+<p>The only difference between these kinds of electromagnetic radiation is the frequency of their oscillation (alternation of the electric and magnetic fields back and forth in polarity). By using a source of<a href="https://www.allaboutcircuits.com/video-lectures/generation-of-alternating-voltage/" target="_blank"> AC voltage</a> and a special device called an <em>antenna</em>, we can create electromagnetic waves (of a much lower frequency than that of light) with ease.</p>
+<h3>Types of Antenna</h3>
+<p>An antenna is nothing more than a device built to produce a dispersing electric or<a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-15/magnetic-fields-and-inductance/" target="_blank"> magnetic field</a>. Two fundamental types of antennae are the <em>dipole</em> and the <em>loop</em>: Figure below</p>
+<p><img src="/uploads/articles/dipole-and-loop-antennas.jpg" /></p>
+<p><em>Dipole and loop antennas.</em></p>
+<p>&nbsp;</p>
+<p>While the dipole looks like nothing more than an open circuit, and the loop a short circuit, these pieces of wire are effective radiators of electromagnetic fields when connected to AC sources of the proper frequency. The two open wires of the dipole act as a sort of capacitor (two conductors separated by a dielectric), with the electric field open to dispersal instead of being concentrated between two closely-spaced plates.</p>
+<p>The closed wire path of the loop antenna acts like an inductor with a large air core, again providing ample opportunity for the field to disperse away from the antenna instead of being concentrated and contained as in a normal inductor.</p>
+<p>As the powered dipole radiates its changing electric field into space, a changing magnetic field is produced at right angles, thus sustaining the electric field further into space, and so on as the wave propagates at the speed of light.</p>
+<p>As the powered loop antenna radiates its changing magnetic field into space, a changing electric field is produced at right angles, with the same end-result of a continuous electromagnetic wave sent away from the antenna. Either antenna achieves the same basic task: the controlled production of an electromagnetic field.</p>
+<h3>Functions of an Antenna</h3>
+<p>When attached to a source of high-frequency AC power, an antenna acts as a <em>transmitting</em> device, converting AC voltage and current into electromagnetic wave energy. Antennas also have the ability to intercept electromagnetic waves and convert their energy into AC voltage and current. In this mode, an antenna acts as a <em>receiving</em> device: Figure below</p>
+<p><img src="/uploads/articles/basic-radio-transmitter-and-receiver.jpg" /></p>
+<p><em>Basic radio transmitter and receiver.</em></p>
+<p>&nbsp;</p>
+<p>While there is <em>much</em> more that may be said about antenna technology, this brief introduction is enough to give you the general idea of what&rsquo;s going on (and perhaps enough information to provoke a few experiments).</p>
+<p>&nbsp;</p>
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li>James Maxwell discovered that changing electric fields produce perpendicular magnetic fields, and vice versa, even in empty space.</li>
+<li>A twin set of electric and magnetic fields, oscillating at right angles to each other and traveling at the speed of light, constitutes an <em>electromagnetic wave</em>.</li>
+<li>An <em>antenna</em> is a device made of wire, designed to radiate a changing electric field or changing magnetic field when powered by a high-frequency AC source, or intercept an electromagnetic field and convert it to an AC voltage or current.</li>
+<li>The <em>dipole</em> antenna consists of two pieces of wire (not touching), primarily generating an electric field when energized, and secondarily producing a magnetic field in space.</li>
+<li>The <em>loop</em> antenna consists of a loop of wire, primarily generating a magnetic field when energized, and secondarily producing an electric field in space.</li>
+</ul>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Reference</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='024.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='026.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>Diode Ratings</h1>
+<p><a name=&quot;Datasheet, component&quot;></a> In addition to forward voltage drop (Vf) and peak inverse voltage (PIV), there are many other ratings of <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-3/introduction-to-diodes-and-rectifiers/&quot; target=&quot;_blank&quot;>diodes</a> important to circuit design and component selection. <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/&quot; target=&quot;_blank&quot;>Semiconductor</a> manufacturers provide detailed specifications on their products&mdash;diodes included&mdash;in publications known as <em>datasheets</em>.</p>
+<h3>Datasheets</h3>
+<p>Datasheets for a wide variety of semiconductor components may be found in reference books and on the internet. I prefer the internet as a source of component specifications because all the data obtained from manufacturer websites are up-to-date.</p>
+<h3>Typical Diode Parameters in a Datasheet</h3>
+<p>A typical diode datasheet will contain figures for the following parameters:</p>
+<p><strong><em>Maximum repetitive reverse voltage</em></strong> = VRRM, the maximum amount of voltage the diode can withstand in reverse-bias mode, in repeated pulses. Ideally, this figure would be infinite.</p>
+<p><strong><em>Maximum DC reverse voltage</em></strong> = VR or VDC, the maximum amount of voltage the diode can withstand in reverse-bias mode on a continual basis. Ideally, this figure would be infinite.</p>
+<p><strong><em>Maximum forward voltage</em></strong> = VF, usually specified at the diode&rsquo;s rated forward current. Ideally, this figure would be zero: the diode providing no opposition whatsoever to forward current. In reality, the forward voltage is described by the &ldquo;diode equation.&rdquo;</p>
+<p><strong><em>Maximum (average) forward current </em></strong>= IF(AV), the maximum average amount of current the diode is able to conduct in forward bias mode. This is fundamentally a thermal limitation: how much heat can the PN junction handle, given that dissipation power is equal to current (I) multiplied by voltage (V or E) and forward voltage is dependent upon both current and junction temperature. Ideally, this figure would be infinite.</p>
+<p><strong><em>Maximum (peak or surge) forward current </em></strong>= IFSM or if(surge), the maximum peak amount of current the diode is able to conduct in forward bias mode. Again, this rating is limited by the diode junction&rsquo;s thermal capacity, and is usually much higher than the average current rating due to thermal inertia (the fact that it takes a finite amount of time for the diode to reach maximum temperature for a given current). Ideally, this figure would be infinite.</p>
+<p><strong><em>Maximum total dissipation</em></strong> = PD, the amount of power (in watts) allowable for the diode to dissipate, given the dissipation (P=IE) of diode current multiplied by diode voltage drop, and also the dissipation (P=I2R) of diode current squared multiplied by bulk resistance. Fundamentally limited by the diode&rsquo;s thermal capacity (ability to tolerate high temperatures).</p>
+<p><strong><em>Operating junction temperature</em></strong> = TJ, the maximum allowable temperature for the diode&rsquo;s PN junction, usually given in degrees Celsius (oC). Heat is the &ldquo;Achilles&rsquo; heel&rdquo; of semiconductor devices: they <em>must</em> be kept cool to function properly and give long service life.</p>
+<p><strong><em>Storage temperature range</em></strong> = TSTG, the range of allowable temperatures for storing a diode (unpowered). Sometimes given in conjunction with operating junction temperature (TJ), because the maximum storage temperature and the maximum operating temperature ratings are often identical. If anything, though, maximum storage temperature rating will be greater than the maximum operating temperature rating.</p>
+<p><strong><em>Thermal resistance</em></strong> = R(&Theta;), the temperature difference between junction and outside air (R(&Theta;)JA) or between junction and leads (R(&Theta;)JL) for a given power dissipation. Expressed in units of degrees Celsius per watt (oC/W). Ideally, this figure would be zero, meaning that the diode package was a perfect thermal conductor and radiator, able to transfer all heat energy from the junction to the outside air (or to the leads) with no difference in temperature across the thickness of the diode package. A high thermal resistance means that the diode will build up excessive temperature at the junction (where its critical) despite best efforts at cooling the outside of the diode, and thus will limit its maximum power dissipation.</p>
+<p><strong><em>Maximum reverse current</em></strong> = IR, the amount of current through the diode in <em>reverse-bias</em> operation, with the maximum rated inverse voltage applied (VDC). Sometimes referred to as <em>leakage current</em>. Ideally, this figure would be zero, as a perfect diode would block all current when reverse-biased. In reality, it is very small compared to the maximum forward current.</p>
+<p><strong><em>Typical junction capacitance</em></strong> = CJ, the typical amount of <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-13/factors-affecting-capacitance/&quot; target=&quot;_blank&quot;>capacitance</a> intrinsic to the junction, due to the depletion region acting as a dielectric separating the anode and cathode connections. This is usually a very small figure, measured in the range of picofarads (pF).</p>
+<p><strong><em>Reverse recovery time</em></strong> = trr, the amount of time it takes for a diode to &ldquo;turn off&rdquo; when the <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/calculating-electric-power/&quot; target=&quot;_blank&quot;>voltage</a> across it alternates from forward-bias to reverse-bias polarity. Ideally, this figure would be zero: the diode halting conduction <em>immediately</em> upon polarity reversal. For a typical rectifier diode, reverse recovery time is in the range of tens of microseconds; for a &ldquo;fast switching&rdquo; diode, it may only be a few nanoseconds.</p>
+<p>Most of these parameters vary with temperature or other operating conditions, and so a single figure fails to fully describe any given rating. Therefore, manufacturers provide graphs of component ratings plotted against other variables (such as temperature), so that the circuit designer has a better idea of what the device is capable of.</p>
+
+
+</div>
+</div>
+</body>
+</html>

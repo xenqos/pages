@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Semiconductors</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='022.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='024.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>Introduction to Diodes And Rectifiers</h1>
+<p><a name=&quot;Diode&quot;></a> <a name=&quot;Rectifier&quot;></a></p>
+<h3>All About Diodes</h3>
+<p>A <em>diode</em> is an electrical device allowing <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/voltage-current/&quot; target=&quot;_blank&quot;>current</a><em> </em>to move through it in one direction with far greater ease than in the other. The most common kind of diode in modern circuit design is the <em><a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/&quot; target=&quot;_blank&quot;>semiconductor</a></em> diode, although other diode technologies exist. Semiconductor diodes are symbolized in schematic diagrams such as the figure below. The term &ldquo;diode&rdquo; is customarily reserved for small signal devices, I &le; 1 A. The term <em>rectifier</em> is used for power devices, I &gt; 1 A.</p>
+<p>&nbsp;</p>
+<p><a name=&quot;03246.png&quot;></a><img src=&quot;/uploads/articles/semiconductor-diode-schematic-symbol.jpg&quot; /></p>
+<p>Semiconductor diode schematic symbol: Arrows indicate the direction of Current flow.</p>
+<p>When placed in a simple battery-lamp circuit, the diode will either allow or prevent current through the lamp, depending on the polarity of the <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-6/kirchhoffs-voltage-law-kvl/&quot; target=&quot;_blank&quot;>applied voltage</a>. (figure below)</p>
+<p><a name=&quot;03247.png&quot;></a><img src=&quot;/uploads/articles/diode-operation.jpg&quot; /></p>
+<p>Diode operation: (a) Current flow is permitted; the diode is forward biased. (b) Current flow is prohibited; the diode is reversed biased.</p>
+<p><a name=&quot;Forward bias&quot;></a> <a name=&quot;Reverse bias&quot;></a> <a name=&quot;Bias, diode&quot;></a> When the polarity of the battery is such that current is allowed to flow through the diode, the diode is said to be <em>forward-biased</em>. Conversely, when the battery is &ldquo;backward&rdquo; and the diode blocks current, the diode is said to be <em>reverse-biased</em>. A diode may be thought of as like a <a href=&quot;https://www.allaboutcircuits.com/textbook/digital/chpt-4/switch-types/&quot; target=&quot;_blank&quot;>switch</a>: &ldquo;closed&rdquo; when forward-biased and &ldquo;open&rdquo; when reverse-biased.</p>
+<p>The direction of the diode symbol&rsquo;s &ldquo;arrowhead&rdquo; points at the direction of the current in <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/conventional-versus-electron-flow/&quot; target=&quot;_blank&quot;>conventional flow</a>. This convention holds true for all semiconductors possessing &ldquo;arrowheads&rdquo; in their schematics. The opposite is true when electron flow is used, where the current direction is against the &ldquo;arrowhead&rdquo;. <a name=&quot;Check valve&quot;></a> <a name=&quot;Valve, “check”&quot;></a></p>
+<h3>Hydraulic Check Valve Analogy</h3>
+<p>Diode behavior is analogous to the behavior of a hydraulic device called a <em>check valve</em>. A check valve allows fluid flow through it in only one direction as in the figure below.</p>
+<p><a name=&quot;03248.png&quot;></a><img src=&quot;/uploads/articles/hydraulic-check-valve-analogy.jpg&quot; /></p>
+<p>Hydraulic check valve analogy: (a) Current flow permitted. (b) Current flow prohibited.</p>
+<p>Check valves are essentially pressure-operated devices: they open and allow flow if the pressure across them is of the correct &ldquo;polarity&rdquo; to open the gate (in the analogy shown, greater fluid pressure on the right than on the left). If the pressure is of the opposite &ldquo;polarity,&rdquo; the pressure difference across the check valve will close and hold the gate so that no flow occurs.</p>
+<p>Like check valves, diodes are essentially &ldquo;pressure&rdquo; operated (voltage-operated) devices. The essential difference between forward-bias and reverse-bias is the polarity of the voltage dropped across the diode. Let&rsquo;s take a closer look at the simple battery-diode-lamp circuit shown earlier, this time investigating voltage drops across the various components in the figure below.</p>
+<p><a name=&quot;03249.png&quot;></a><img src=&quot;/uploads/articles/diode-circuit-voltage-measurements.jpg&quot; /></p>
+<p>Diode circuit voltage measurements: (a) Forward biased. (b) Reverse biased.</p>
+<h3>Forward Bias Diode Configuration</h3>
+<p>A forward-biased diode conducts current and drops a small voltage across it, leaving most of the battery voltage dropped across the lamp. If the battery&rsquo;s polarity is reversed, the diode becomes reverse-biased, and drops <em>all</em> of the battery&rsquo;s voltage leaving none for the lamp. If we consider the diode to be a self-actuating switch (closed in the forward-bias mode and open in the reverse-bias mode), this behavior makes sense. The most substantial difference is that the diode drops a lot more voltage when conducting than the average mechanical switch (0.7 volts versus tens of millivolts).</p>
+<p>This forward-bias voltage drop exhibited by the diode is due to the action of the depletion region formed by the P-N junction under the influence of an applied voltage. If no voltage applied is across a semiconductor diode, a thin depletion region exists around the region of the P-N junction, preventing current flow. (Figure below (a)) The depletion region is almost devoid of available charge carriers, and acts as an insulator:</p>
+<p><a name=&quot;03250.png&quot;></a><img src=&quot;/uploads/articles/diode-representations.jpg&quot; /></p>
+<p>Diode representations: PN-junction model, schematic symbol, physical part.</p>
+<p>The schematic symbol of the diode is shown in the figure above (b) such that the anode (pointing end) corresponds to the P-type semiconductor at (a). The cathode bar, non-pointing end, at (b) corresponds to the N-type material at (a). Also note that the cathode stripe on the physical part (c) corresponds to the cathode on the symbol.</p>
+<h3>Reverse Bias Diode Configuration</h3>
+<p>If a reverse-biasing voltage is applied across the P-N junction, this depletion region expands, further resisting any current through it. (Figure below)</p>
+<p><a name=&quot;03251.png&quot;></a><img src=&quot;/uploads/articles/depletion-region-expands-reverse-bias.jpg&quot; /></p>
+<p>Depletion region expands with reverse bias.</p>
+<p><a name=&quot;Forward voltage, diode&quot;></a> <a name=&quot;Voltage, forward&quot;></a></p>
+<h3>Forward Voltage</h3>
+<p>Conversely, if a forward-biasing voltage is applied across the P-N junction, the depletion region collapses becoming thinner. The diode becomes less resistive to current through it. In order for a sustained current to go through the diode; though, the depletion region must be fully collapsed by the applied voltage. This takes a certain minimum voltage to accomplish, called the <em>forward voltage</em> as illustrated in the figure below.</p>
+<p><a name=&quot;03252.png&quot;></a><img src=&quot;/uploads/articles/increasing-forward-bias-from-a-to-b.jpg&quot; /></p>
+<p>Increasing forward bias from (a) to (b) decreases depletion region thickness.</p>
+<p>For silicon diodes, the typical forward voltage is 0.7 volts, nominal. For germanium diodes, the forward voltage is only 0.3 volts. The chemical constituency of the <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-2/the-p-n-junction/&quot; target=&quot;_blank&quot;>P-N junction</a> comprising the diode accounts for its nominal forward voltage figure, which is why silicon and germanium diodes have such different forward voltages. Forward voltage drop remains approximately constant for a wide range of diode currents, meaning that diode voltage drop is not like that of a resistor or even a normal (closed) switch. For most simplified circuit analysis, the voltage drop across a conducting diode may be considered constant at the nominal figure and not related to the amount of current. <a name=&quot;Diode equation, the&quot;></a> <a name=&quot;Equation, diode&quot;></a> <a name=&quot;DioEqu&quot;></a></p>
+<h3>Diode Equation</h3>
+<p>Actually, forward voltage drop is more complex. An equation describes the exact current through a diode, given the voltage dropped across the junction, the temperature of the junction, and several physical constants. It is commonly known as the <em>diode equation</em>:</p>
+<p><img src=&quot;/uploads/articles/diode-equation.jpg&quot; /></p>
+<p><a name=&quot;Thermal voltage, diode&quot;></a> The term kT/q describes the voltage produced within the P-N junction due to the action of temperature, and is called the <em>thermal voltage</em>, or Vt of the junction. At room temperature, this is about 26 millivolts. Knowing this, and assuming a &ldquo;nonideality&rdquo; coefficient of 1, we may simplify the diode equation and rewrite it as such:</p>
+<p><img src=&quot;/uploads/articles/simplify-diode-equation.jpg&quot; /></p>
+<p>You need not be familiar with the &ldquo;diode equation&rdquo; to analyze simple diode circuits. Just understand that the voltage dropped across a current-conducting diode <em>does</em> change with the amount of current going through it, but that this change is fairly small over a wide range of currents. This is why many textbooks simply say the voltage drop across a conducting, semiconductor diode remains constant at 0.7 volts for silicon and 0.3 volts for germanium.</p>
+<p>However, some circuits intentionally make use of the P-N junction&rsquo;s inherent exponential current/voltage relationship and thus can only be understood in the context of this equation. Also, since temperature is a factor in the diode equation, a forward-biased P-N junction may also be used as a temperature-sensing device, and thus can only be understood if one has a conceptual grasp on this mathematical relationship.</p>
+<h3>Reverse-Biased Operation</h3>
+<p><a name=&quot;Leakage current, diode&quot;></a> <a name=&quot;Breakdown, diode&quot;></a> <a name=&quot;PIV rating, diode&quot;></a> <a name=&quot;Diode PIV rating&quot;></a> <a name=&quot;Reverse voltage rating, diode&quot;></a> A reverse-biased diode prevents current from going through it, due to the expanded depletion region. In actuality, a very small amount of current can and does go through a reverse-biased diode, called the <em>leakage current</em>, but it can be ignored for most purposes.</p>
+<p>The ability of a diode to withstand reverse-bias voltages is limited, as it is for any insulator. If the applied reverse-bias voltage becomes too great, the diode will experience a condition known as <em>breakdown</em> (figure below), which is usually destructive.</p>
+<p>A diode&rsquo;s maximum reverse-bias voltage rating is known as the <em><a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-3/diode-ratings/&quot; target=&quot;_blank&quot;>Peak Inverse Voltage</a></em>, or <em>PIV</em>, and may be obtained from the manufacturer. Like forward voltage, the PIV rating of a diode varies with temperature, except that PIV <em>increases</em> with increased temperature and <em>decreases</em> as the diode becomes cooler&mdash;exactly opposite that of forward voltage.</p>
+<p><a name=&quot;03253.png&quot;></a><img src=&quot;/uploads/articles/diode-curve.jpg&quot; /></p>
+<p>Diode curve: showing knee at 0.7 V forward bias for Si, and reverse breakdown.</p>
+<p>Typically, the PIV rating of a generic &ldquo;rectifier&rdquo; diode is at least 50 volts at room temperature. Diodes with PIV ratings in the many thousands of volts are available for modest prices.</p>
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li>A <em>diode</em> is an electrical component acting as a one-way valve for current.</li>
+<li>When voltage is applied across a diode in such a way that the diode allows current, the diode is said to be <em>forward-biased</em>.</li>
+<li>When voltage is applied across a diode in such a way that the diode prohibits current, the diode is said to be <em>reverse-biased</em>.</li>
+<li>The voltage dropped across a conducting, forward-biased diode is called the <em>forward voltage</em>. Forward voltage for a diode varies only slightly for changes in forward current and temperature, and is fixed by the chemical composition of the P-N junction.</li>
+<li>Silicon diodes have a forward voltage of approximately 0.7 volts.</li>
+<li>Germanium diodes have a forward voltage of approximately 0.3 volts.</li>
+<li>The maximum reverse-bias voltage that a diode can withstand without &ldquo;breaking down&rdquo; is called the <em>Peak Inverse Voltage</em>, or <em>PIV</em> rating.</li>
+</ul>
+
+
+
+</div>
+</div>
+</body>
+</html>

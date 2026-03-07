@@ -1,0 +1,57 @@
+<h1>The Many Frequencies of RF Communication</h1>
+<p>The world of RF is a world of frequencies. This is true within a single system or even a single PCB, considering that one RF design may involve signals in multiple frequency ranges. But at this point we want to look at the broad context in which a particular RF system exists; the name we give to this concept is &ldquo;the electromagnetic spectrum.&rdquo;</p>
+<p>More specifically, we will discuss the portion of the electromagnetic spectrum that is commonly used for RF communication. Light is included in the electromagnetic spectrum, and so are extremely-low-frequency radio waves that have limited use in engineered systems. Light is a useful means of transmitting information, but it behaves very differently from medium-frequency electromagnetic radiation (EMR), and consequently we place it in its own category&mdash;<em>optical</em> communication instead of <em>wireless</em> communication. Low-frequency EMR has specialized uses and is also generated constantly all over the world by the power grid, but it is not a part of mainstream wireless communication.</p>
+<p>&nbsp;</p>
+<h3>Frequencies: Why and How</h3>
+<p>Before we discuss the various frequency categories, let&rsquo;s review two fundamental issues: Why do we use so many different frequencies? And how does a designer decide which frequency is appropriate for a certain application?</p>
+<p>&nbsp;</p>
+<h4>Interference</h4>
+<p>Two or more transmitters operating at the same frequency create interference, i.e., they make it difficult for a receiver device to separate the relevant RF signal from irrelevant RF signals. This problem largely disappears when different frequencies are used. EMR at one frequency does not &ldquo;corrupt&rdquo; EMR at a different frequency, and the irrelevant signals are easily ignored via filtering.</p>
+<p>&nbsp;</p>
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/RFT_ch2_pg1_1.JPG" /></p>
+<h5><em>Adequate separation between frequencies allows an interfering signal to be ignored.</em></h5>
+<p>&nbsp;</p>
+<p>Of course, interference doesn&rsquo;t disappear just because two signals are separated by a fraction of a hertz&mdash;more frequency separation leads to less interference. Nevertheless, the use of different frequencies for different types of RF communication is amazingly effective: every day, all over the world, numerous wireless systems operate simultaneously with no significant loss of functionality.</p>
+<p>&nbsp;</p>
+<h4>Choosing a Frequency</h4>
+<p>The characteristics of EMR vary according to frequency. For example, extremely-low-frequency waves can effectively penetrate water and thus can be helpful when you need to communicate with a submarine. As another example, certain frequencies enable a radio signal to travel very long distances because these frequencies experience atmospheric refraction. The point is, the dominant objectives of a particular RF system heavily influence the process of choosing the operational frequency range.</p>
+<p>&nbsp;</p>
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/RFT_ch2_pg1_2.-CON-452_4.jpg" /></p>
+<h5><em>Ionospheric refraction enables long-range communication.</em></h5>
+<p>&nbsp;</p>
+<p>The previous paragraph mentioned examples in which frequency affects propagation characteristics. Often, though, a more important consideration is bandwidth (in analog systems) or data rate (in digital systems).</p>
+<p>If you want to wirelessly transmit an audio signal that has frequency components as high as 10 kHz, you cannot use a 5 kHz transmitter (i.e., carrier) frequency. Frequency corresponds to the rate at which a signal can transmit information, so you cannot &ldquo;fit&rdquo; 10 kHz of audio information into a 5 kHz carrier. Furthermore, practical considerations require the carrier frequency to be significantly higher than the information (i.e., baseband) frequency. Thus, wider-bandwidth and higher-data-rate systems must occupy higher-frequency portions of the electromagnetic spectrum.</p>
+<h3>Frequencies of Interest</h3>
+<p>The radio spectrum&mdash;i.e., the radio-communication portion of the electromagnetic spectrum&mdash;extends from the VLF (very-low-frequency) band to the EHF (extremely-high-frequency) band, i.e., from about 3 kHz to 300 GHz. The other bands that separate VLF from EHF are</p>
+<ul>
+<li>LF (low frequency),</li>
+<li>MF (medium frequency),</li>
+<li>HF (high frequency),</li>
+<li>VHF (very high frequency),</li>
+<li>UHF (ultra high frequency), and</li>
+<li>SHF (super high frequency).</li>
+</ul>
+<p>&nbsp;</p>
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/RFT_ch2_pg1_3.JPG" /></p>
+<p>&nbsp;</p>
+<p>These divisions are rather arbitrary and there is no dire need to know the exact frequency ranges. It would be better to simply give some examples of wireless-communication categories that are found in different portions of the spectrum, because this will help us gain an intuitive awareness of which frequency ranges are more appropriate for certain types of systems.</p>
+<ul>
+<li>AM radio communication uses the MF band; more specifically, the carrier frequencies vary from 540 to 1600 kHz. We know from experience that AM radio has good range and is resistant to physical interference from buildings, but AM does not have a reputation for excellent audio quality.</li>
+<li>FM radio communication uses the VHF band, with carrier frequencies from 88.1 to 108.1 MHz. The allowable deviation from the carrier is significantly higher in FM than in AM, which means that FM signals can transfer more information per unit time than AM signals. (Keep in mind that in this context &ldquo;AM&rdquo; and &ldquo;FM&rdquo; refer to standardized categories of radio transmission, not to amplitude and frequency modulation in general.)</li>
+<li>Digital communication systems such as Bluetooth and some of the 802.11 protocols operate in the low-gigahertz range, more specifically, at frequencies near 2.4 GHz. These are generally short-range systems, but they offer reliable communication and the high carrier frequency enables high data rates. These protocols can be used by devices that are very small yet provide relatively long battery life.</li>
+<li>Satellites&mdash;obviously representing an application in which long range is important&mdash;tend to operate at very high frequencies. At the lower end of this range (1&ndash;2 GHz) is the L band, which is used by GPS satellites. The C band (4&ndash;8 GHz) is used, for example, by satellite TV networks. The Ku band, which extends to the impressive frequency of 18 GHz, is employed for various satellite applications and is an important part of the communication equipment on the International Space Station.</li>
+</ul>
+<p>&nbsp;</p>
+<h3>From EMR to Light</h3>
+<p>The satellite frequencies mentioned above mostly remain within the SHF section of the radio spectrum. The EHF band serves as the transition between radio waves and optical waves; EHF signals are more seriously obstructed by the gases and moisture in the atmosphere, and this reminds us of optical radiation and its inability to penetrate opaque objects. Signals with frequencies above those of the EHF band are classified as infrared radiation, not as radio waves:</p>
+<p>&nbsp;</p>
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/RFT_ch2_pg1_4_2.jpg" /></p>
+<p>&nbsp;</p>
+<h3>Summary</h3>
+<ul>
+<li>The electromagnetic spectrum refers to the range of EMR frequencies present in the universe. This spectrum is divided and subdivided into different frequency bands.</li>
+<li>The general section that is relevant to RF communication is referred to as the radio spectrum, and the radio spectrum is divided into eight bands.</li>
+<li>Interference among separate radio systems can be avoided by using different carrier frequencies.</li>
+<li>Bandwidth and propagation requirements influence the choice of carrier frequency, and in turn the carrier frequency influences the characteristics of a particular system.</li>
+<li>The highest-frequency band within the radio spectrum represents the transition from signals that behave more like radio waves to signals that behave more like optical waves.</li>
+</ul>

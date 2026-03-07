@@ -1,0 +1,19 @@
+<h1>What is a Filter?</h1>
+<p>It is sometimes desirable to have circuits capable of selectively filtering one frequency or range of frequencies out of a mix of different frequencies in a circuit. A circuit designed to perform this frequency selection is called a <em>filter circuit</em>, or simply a <em>filter</em>.</p>
+<p>A common need for filter circuits is in high-performance stereo systems, where certain ranges of audio frequencies need to be amplified or suppressed for best sound quality and power efficiency.</p>
+<p>You may be familiar with <em>equalizers</em>, which allow the amplitudes of several frequency ranges to be adjusted to suit the listener&rsquo;s taste and acoustic properties of the listening area.</p>
+<p>You may also be familiar with <em>crossover networks</em>, which block certain ranges of frequencies from reaching speakers.</p>
+<p>A tweeter (high-frequency speaker) is inefficient at reproducing low-frequency signals such as drum beats, so a crossover circuit is connected between the tweeter and the stereo&rsquo;s output terminals to block low-frequency signals, only passing high-frequency signals to the speaker&rsquo;s connection terminals.</p>
+<p>This gives better audio system efficiency and thus better performance. Both equalizers and crossover networks are examples of filters, designed to accomplish filtering of certain frequencies.</p>
+<p>Another practical application of filter circuits is in the &ldquo;conditioning&rdquo; of non-sinusoidal voltage&nbsp;<a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-1/ac-waveforms/" target="_blank">waveforms</a> in power circuits.</p>
+<p>Some electronic devices are sensitive to the presence of harmonics in the power supply voltage, and so require power conditioning for proper operation.</p>
+<p>If a distorted sine-wave voltage behaves like a series of harmonic waveforms added to the fundamental frequency, then it should be possible to construct a filter circuit that only allows the fundamental waveform frequency to pass through, blocking all (higher-frequency) harmonics.</p>
+<p>We will be studying the design of several elementary filter circuits in this lesson. To reduce the load of math on the reader, I will make extensive use of <a href="https://www.allaboutcircuits.com/textbook/reference/chpt-7/fundamentals-spice-programming/" target="_blank">SPICE</a> as an analysis tool, displaying Bode plots (amplitude versus frequency) for the various kinds of filters.</p>
+<p>Bear in mind, though, that these circuits can be analyzed over several points of frequency by repeated&nbsp;<a href="https://www.allaboutcircuits.com/video-lectures/series-parallel-circuits/" target="_blank">series-parallel</a> analysis, much like the previous example with two sources (60 and 90 Hz), if the student is willing to invest a lot of time working and re-working circuit calculations for each frequency.</p>
+<p>&nbsp;</p>
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li>A <em>filter</em> is an AC circuit that separates some frequencies from others within mixed-frequency signals.</li>
+<li>Audio <em>equalizers</em> and <em>crossover networks</em> are two well-known applications of filter circuits.</li>
+<li>A <em>Bode plot</em> is a graph plotting waveform amplitude or phase on one axis and frequency on the other.</li>
+</ul>

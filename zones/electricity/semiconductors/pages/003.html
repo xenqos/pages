@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Semiconductors</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='002.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='004.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>Amplifiers</h1>
+<h3>Practical Benefit of Active Devices</h3>
+<p>The practical benefit of <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-1/active-versus-passive-devices/&quot; target=&quot;_blank&quot;>active devices</a> is their <em>amplifying</em> ability. Whether the device in question be voltage-controlled or current-controlled, the amount of power required of the controlling signal is typically far less than the amount of power available in the controlled current. In other words, an active device doesn&rsquo;t just allow electricity to control electricity; it allows a <em>small</em> amount of electricity to control a <em>large</em> amount of electricity.</p>
+<p>Because of this disparity between <em>controlling</em> and <em>controlled</em> powers, active devices may be employed to govern a large amount of power (controlled) by the application of a small amount of power (controlling). This behavior is known as <em>amplification</em>.</p>
+<h3>Law of Conservation of Energy in Machines</h3>
+<p>It is a fundamental rule of physics that energy can neither be created nor destroyed. Stated formally, this rule is known as the Law of Conservation of Energy, and no exceptions to it have been discovered to date. If this Law is true&mdash;and an overwhelming mass of experimental data suggests that it is&mdash;then it is impossible to build a device capable of taking a small amount of energy and magically transforming it into a large amount of energy. All machines, electric and electronic circuits included, have an upper efficiency limit of 100 percent. At best, power out equals power in as in the figure below.</p>
+<p><img src=&quot;/uploads/articles/power-output-of-machine.png&quot; /></p>
+<p>The power output of a machine can approach, but never exceed, the power input for 100% efficiency as an upper limit.</p>
+<p>Usually, machines fail even to meet this limit, losing some of their input energy in the form of heat which is radiated into surrounding space and therefore not part of the output energy stream. (Figure below)</p>
+<p><img src=&quot;/uploads/articles/realistic-machine.png&quot; /></p>
+<p>A realistic machine most often loses some of its input energy as heat in transforming it into the output energy stream.</p>
+<h3>Perpetual Motion Machines</h3>
+<p>Many people have attempted, without success, to design and build machines that output more power than they take in. Not only would such a <em>perpetual motion</em> machine prove that the Law of Conservation of Energy was not a Law after all, but it would usher in a technological revolution such as the world has never seen, for it could power itself in a circular loop and generate excess power for &ldquo;free&rdquo;. (figure below)</p>
+<p><img src=&quot;/uploads/articles/perpetual-motion-machine.png&quot; /></p>
+<p>Hypothetical &ldquo;perpetual motion machine&rdquo; powers itself?</p>
+<p>Despite much effort and many unscrupulous claims of &ldquo;free energy&rdquo; or <em>over-unity</em> machines, not one has ever passed the simple test of powering itself with its own energy output and generating energy to spare.</p>
+<h3>Amplifiers</h3>
+<p>There does exist, however, a class of machines known as <em>amplifiers</em>, which are able to take in small-power signals and output signals of much greater power. The key to understanding how amplifiers can exist without violating the Law of Conservation of Energy lies in the behavior of active devices.</p>
+<p>Because active devices have the ability to <em>control</em> a large amount of <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/power-electric-circuits/&quot; target=&quot;_blank&quot;>electrical power</a> with a small amount of electrical power, they may be arranged in circuit so as to duplicate the form of the input signal power from a larger amount of power supplied by an external <a href=&quot;https://www.allaboutcircuits.com/textbook/reference/chpt-9/power-sources/&quot; target=&quot;_blank&quot;>power source</a>. The result is a device that appears to magically magnify the power of a small electrical signal (usually an AC voltage waveform) into an identically-shaped waveform of larger magnitude.</p>
+<p>The Law of Conservation of Energy is not violated because the additional power is supplied by an external source, usually a DC battery or equivalent. The amplifier neither creates nor destroys energy, but merely reshapes it into the waveform desired as shown in the figure below.</p>
+<p><em><img src=&quot;/uploads/articles/external-power-supply.png&quot; /></em></p>
+<p><em>While an amplifier can scale a small input signal to large output, its energy source is an external power supply.</em></p>
+<p>&nbsp;</p>
+<p>In other words, the current-controlling behavior of active devices is employed to <em>shape</em> DC power from the external power source into the same waveform as the input signal, producing an output signal of like shape but different (greater) power magnitude. The <a href=&quot;https://www.allaboutcircuits.com/video-lectures/bipolar-transistors-intro/&quot; target=&quot;_blank&quot;>transistor</a> or another active device within an amplifier merely forms a larger <em>copy</em> of the input signal waveform out of the &ldquo;raw&rdquo; DC power provided by a <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-11/battery-ratings/&quot; target=&quot;_blank&quot;>battery</a> or other power source.</p>
+<h3>Limitations of Amplifiers</h3>
+<p>Amplifiers, like all machines, are limited in efficiency to a maximum of 100 percent. Usually, electronic amplifiers are far less efficient than that, dissipating considerable amounts of energy in the form of waste heat. Because the efficiency of an amplifier is always 100 percent or less, one can never be made to function as a &ldquo;perpetual motion&rdquo; device.</p>
+<p>The requirement of an external source of power is common to all types of amplifiers, electrical and non-electrical. A common example of a non-electrical amplification system would be power steering in an automobile, amplifying the power of the driver&rsquo;s arms in turning the steering wheel to move the front wheels of the car. The source of power necessary for the amplification comes from the engine. The active device controlling the driver&rsquo;s &ldquo;input signal&rdquo; is a hydraulic valve shuttling fluid power from a pump attached to the engine to a hydraulic piston assisting wheel motion. If the engine stops running, the amplification system fails to amplify the driver&rsquo;s arm power and the car becomes very difficult to turn.</p>
+
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>DYI Projects</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='80.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='82.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>Digital Lab - S-R Flip-flop Using NAND Gates</h1>
+<h3>Project Overview</h3>
+<p>In this project, you will build and test a <a href=&quot;https://www.allaboutcircuits.com/textbook/digital/chpt-3/ttl-nand-and-gates/&quot; target=&quot;_blank&quot;>NAND gate</a> implementation of an&nbsp;S-R flip-flop with switch inputs and <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-3/special-purpose-diodes/&quot; target=&quot;_blank&quot;>light-emitting diode (LED)</a> output indicators, as&nbsp;shown in Figure 1.</p>
+<p>&nbsp;</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/NAND-gate-S-R-flip-flop-illustration.jpg&quot; /></p>
+<h5><em><strong>Figure 1. </strong>S-R flip-flop&nbsp;with switch inputs and LED outputs.</em></h5>
+<p>&nbsp;</p>
+<p>As you will see, a <a href=&quot;https://www.allaboutcircuits.com/textbook/digital/chpt-10/asynchronous-flip-flop-inputs/&quot; target=&quot;_blank&quot;>flip-flop</a> is edge-triggered, while a <a href=&quot;https://www.allaboutcircuits.com/textbook/digital/chpt-10/s-r-latch/&quot; target=&quot;_blank&quot;>latch</a> is level-sensitive.</p>
+<p>&nbsp;</p>
+<h3>Parts and Materials</h3>
+<ul>
+<li>4011 quad 2-input NAND gate IC</li>
+<li>4001 quad 2-input NOR gate IC</li>
+<li>Eight-position <a href=&quot;https://www.allaboutcircuits.com/textbook/digital/chpt-3/dip-gate-packaging/&quot; target=&quot;_blank&quot;>dual inline packaging (DIP)</a> switch&nbsp;</li>
+<li>Two LEDs or a ten-segment bar graph LED</li>
+<li>6 V battery</li>
+<li>Three 10 k&Omega; <a href=&quot;https://eepower.com/resistor-guide/&quot; target=&quot;_blank&quot;>resistors</a></li>
+<li>Two 470 &Omega; resistors</li>
+</ul>
+
+<p><strong>Caution!</strong> The ICs are <a href=&quot;https://www.allaboutcircuits.com/textbook/digital/chpt-3/cmos-gate-circuitry/&quot; target=&quot;_blank&quot;>complementary metal-oxide semiconductors (CMOS)</a> and, therefore, <strong>sensitive to <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/static-electricity/&quot; target=&quot;_blank&quot;>static electricity</a>!</strong></p>
+<p>The illustration of Figure 1 shows two individual LEDs being used for the output indicators. This is due to a lack of room on my <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/building-simple-resistor-circuits/&quot; target=&quot;_blank&quot;>breadboard</a> to mount the switch assembly, two integrated circuits, and the bar graph.&nbsp;If you have room on your breadboard, feel free to use the bar graph LED as called for in the parts list and as shown in <a href=&quot;https://www.allaboutcircuits.com/textbook/experiments/chpt-7/nor-gate-s-r-latch/&quot; target=&quot;_blank&quot;>other latch circuit projects</a>.</p>
+<p>&nbsp;</p>
+<h3>Learning Objectives</h3>
+<ul>
+<li>The difference between a gated latch and a flip-flop</li>
+<li>How to build a <a href=&quot;https://www.allaboutcircuits.com/textbook/digital/chpt-10/edge-triggered-latches-flip-flops/&quot; target=&quot;_blank&quot;>pulse detector&nbsp;circuit</a></li>
+<li>Learn the effects of switch contact bounce&nbsp;on <a href=&quot;https://www.allaboutcircuits.com/textbook/experiments/chpt-7/introduction-to-digital-integrated-circuits/&quot; target=&quot;_blank&quot;>digital circuits</a></li>
+</ul>
+
+<p>&nbsp;</p>
+<h3>Instructions</h3>
+<p><strong>Step 1:&nbsp;</strong>The only difference between a gated (or enabled) latch and a flip-flop is that a flip-flop is enabled only on the rising or falling edge of a clock&nbsp;signal rather than for the entire duration of a high&nbsp;enable signal. So, begin by building&nbsp;the <a href=&quot;https://www.allaboutcircuits.com/textbook/experiments/chpt-7/nand-gate-s-r-enabled-latch/&quot; target=&quot;_blank&quot;>S-R latch with enable</a>&nbsp;that is everything in the <a href=&quot;https://www.allaboutcircuits.com/technical-articles/understanding-schematics/&quot; target=&quot;_blank&quot;>schematic diagram</a> of Figure 2 except for the four NOR gates at the bottom of the figure.</p>
+<p>&nbsp;</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/NAND-gate-S-R-flip-flop-schematic.jpg&quot; /></p>
+<h5><em><strong>Figure 2. </strong>Schematic diagram of the&nbsp;S-R flip-flop with switch inputs and LED output&nbsp;indicators.</em></h5>
+<p>&nbsp;</p>
+<p>Step-by-step&nbsp;instructions for the S-R latch with enable are available <a href=&quot;https://www.allaboutcircuits.com/textbook/experiments/chpt-7/nand-gate-s-r-enabled-latch/&quot; target=&quot;_blank&quot;>here</a>.</p>
+<p><strong>Step 2:&nbsp;</strong>Next, we will convert the enabled latch into a <a href=&quot;https://www.allaboutcircuits.com/technical-articles/conversion-of-flip-flops/&quot; target=&quot;_blank&quot;>flip-flop</a> by adding a pulse detector&nbsp;(or one-shot) circuit that generates a short pulse, as illustrated in Figure 3.&nbsp;</p>
+<p>&nbsp;</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/brief-period-of-time-when-both-inputs-of-the-NOR-gate-are-low.jpg&quot; /></p>
+<h5><em><strong>Figure 3.&nbsp;</strong>Gate logic and timing diagram for a simple pulse detector&nbsp;circuit.</em></h5>
+<p>&nbsp;</p>
+<p>The single NOR gate and three inverter gates create this effect by exploiting the propagation delay time of multiple cascaded gates.</p>
+<p>In this experiment, I use three NOR gates with paralleled inputs to create three inverters, thus using all four <a href=&quot;https://www.allaboutcircuits.com/textbook/digital/chpt-3/ttl-nor-and-or-gates/&quot; target=&quot;_blank&quot;>NOR gates</a> of a 4001 integrated circuit, as shown in Figure 4.</p>
+<p>&nbsp;</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/pulse-detector-circuit-flip-flop.jpg&quot; /></p>
+<h5><em><strong>Figure 4. </strong>Implementation of a pulse detector circuit using four NOR gates.</em></h5>
+<p>&nbsp;</p>
+<p>Normally, when using a NOR gate as an inverter, one input would be <a href=&quot;https://www.allaboutcircuits.com/technical-articles/an-introduction-to-ground/&quot; target=&quot;_blank&quot;>grounded</a> while the other acts as the inverter input to minimize input <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-13/factors-affecting-capacitance/&quot; target=&quot;_blank&quot;>capacitance</a> and increase speed. Here, however, the slow response is desired, so I parallel the NOR inputs to make inverters rather than use the more conventional method.</p>
+<p>Please note that this particular pulse detector circuit produces a high (1)&nbsp;output pulse at every <em>falling edge</em> of the clock (input) signal. This means that the flip-flop circuit should be responsive to the SET and RESET input states only when the middle switch is moved from ON to OFF,&nbsp;not from OFF to ON.</p>
+<p><strong>Step 3:&nbsp;</strong>Connect the pulse detector from the second&nbsp;input switch, which will be our clock input, to the&nbsp;ENABLE&nbsp;input of the S-R Latch.</p>
+<p><strong>Step 4:&nbsp;</strong>First, test the circuit by setting the clock switch high (1) and cycling through different combinations of the SET and RESET inputs. The output should not change since there is no clock edge signal.</p>
+<p><strong>Step 5:&nbsp;</strong>Now, repeat the possible&nbsp;SET and RESET input combinations, and switch the clock switch from high (1) to low (0) after each change. The falling&nbsp;edge of the clock pulse generates a brief high (1)&nbsp;ENABLE pulse, as illustrated in Figure 3. This brief&nbsp;ENABLE&nbsp;period should be sufficient to allow your flip-flop to change states as a function of the&nbsp;SET and RESET inputs.</p>
+<p><strong>Step 6:&nbsp;</strong>Repeat Step 5, but by switching the clock switch from low (0) to (high). Ideally, nothing would happen. However, when you test this circuit,&nbsp;you may discover that the outputs respond to SET and RESET<em>&nbsp;</em>input signals during both transitions of the clock input, not just when it is switched from a high (1) state to a low (0) state.&nbsp;The reason for this is contact <em>bounce,&nbsp;</em>the effect of a mechanical switch rapidly making and breaking when its contacts are first closed due to the elastic collision of the metal contact pads.</p>
+<p>Instead of the clock switch producing a single, clean low-to-high signal transition when closed, there will most likely be several low-high-low cycles&nbsp;as the contact pads bounce&nbsp;upon off-to-on actuation.&nbsp;The first high-to-low transition caused by bouncing will trigger the pulse detector circuit, enabling the S-R latch for that moment in time, making it responsive to the <em>SET</em> and <em>RESET</em> inputs.</p>
+<p>Ideally, of course, switches are perfect and bounce-free. In the real world, though, contact bounce is a very common problem for digital gate circuits operated by switch inputs and must be understood well if it is to be overcome.</p>
+
+
+</div>
+</div>
+</body>
+</html>

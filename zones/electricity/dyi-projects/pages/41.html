@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>DYI Projects</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='40.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='42.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>AC Lab - Phase Shift in a Capacitive Circuit</h1>
+<h3>Project Overview</h3>
+<p>Reactive components like <a href=&quot;https://www.allaboutcircuits.com/textbook/reference/chpt-9/inductors/&quot; target=&quot;_blank&quot;>inductors</a> and <a href=&quot;https://eepower.com/capacitor-guide/&quot; target=&quot;_blank&quot;>capacitors</a> create a frequency-dependent phase shift. The simple AC circuit illustrated in Figure 1 will be used to demonstrate the phase shift.&nbsp;</p>
+<p>&nbsp;</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/phase-shift-illustration.jpg&quot; /></p>
+<h5><em><strong>Figure 1.</strong>&nbsp;Implementation of the AC phase shift circuit using terminal strips.</em></h5>
+<p>&nbsp;</p>
+<h3>Parts and Materials</h3>
+<ul>
+<li><a href=&quot;https://www.allaboutcircuits.com/textbook/experiments/chpt-4/transformer-power-supply/&quot; target=&quot;_blank&quot;>Low-voltage AC power supply</a></li>
+<li>Two capacitors, 0.1 &micro;F each, non-polarized</li>
+<li>Two 27 k&Omega; <a href=&quot;https://eepower.com/resistor-guide/&quot; target=&quot;_blank&quot;>resistors</a></li>
+</ul>
+
+<p>I recommend ceramic disk capacitors because they are insensitive to polarity (non-polarized), inexpensive, and durable. Avoid capacitors with any kind of polarity marking, as these will be destroyed when powered by AC.</p>
+<p>&nbsp;</p>
+<h3>Learning Objectives</h3>
+<ul>
+<li>How out-of-phase AC <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/voltage-current/&quot; target=&quot;_blank&quot;>voltages</a> do not add algebraically, but according to vector (phasor) arithmetic</li>
+</ul>
+
+<p>&nbsp;</p>
+<h3>Instructions</h3>
+<p><strong>Step 1:&nbsp;</strong>Build the circuit illustrated in Figure 1 and represented by the schematic diagram in Figure 2.&nbsp;</p>
+<p>&nbsp;</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/phase-shift-schematic-diagram.jpg&quot; /></p>
+<h5><em><strong>Figure 2.</strong>&nbsp;AC phase shift circuit schematic diagram.</em></h5>
+<p>&nbsp;</p>
+<p><strong>Step 2:</strong> Measure the <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/polarity-voltage-drops/&quot; target=&quot;_blank&quot;>voltage drops</a> across each component with an AC <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-8/voltmeter-design/&quot; target=&quot;_blank&quot;>voltmeter</a>. Add the measured AC voltages together.</p>
+<p><strong>Step 3:&nbsp;</strong>Measure the total (supply) voltage with the same voltmeter. You will discover that the sum of the voltage drops does not&nbsp;equal the supply&nbsp;voltage. This is due to <a href=&quot;https://eepower.com/textbook/vol-i-foundations-power-design/chapter-2-analysis-ac-systems/phase-shift-and-phasors&quot; target=&quot;_blank&quot; title=&quot;phase shifts in the circuit&quot;>phase shifts in the circuit</a>: voltage dropped across the capacitors is out-of-phase with voltage dropped across the resistors, and thus the voltage drop figures do not add up as one might expect. Taking phase angle into consideration, they do add up to equal the total, but a voltmeter doesn&rsquo;t provide phase angle measurements, only amplitude.</p>
+<p><strong>Step 4:&nbsp;</strong>Try measuring the voltage dropped across both resistors at once. This voltage drop will equal the sum of the voltage drops measured across each resistor separately. This tells you that both the resistors&rsquo; voltage drop waveforms are in-phase with each other since they add simply and directly.</p>
+<p><strong>Step 5:&nbsp;</strong>Measure the voltage dropped across both capacitors at once. This voltage drop, like the drop measured across the two resistors, will equal the sum of the voltage drops measured across each capacitor separately. Likewise, this tells you that both the capacitors&rsquo; voltage drop waveforms are in-phase with each other.</p>
+<p><strong>Step 6:&nbsp;</strong>Given that the power supply frequency is 60 Hz (assuming household power frequency in the United States), calculate <a href=&quot;https://www.allaboutcircuits.com/textbook/alternating-current/chpt-5/series-r-l-and-c/&quot; target=&quot;_blank&quot;>impedances</a> for all components and determine all voltage drops using <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/voltage-current-resistance-relate/&quot; target=&quot;_blank&quot;>Ohm&rsquo;s Law</a> and the impedance values for the capacitors:</p>
+<p>&nbsp;</p>
+<p>$$Z_C = \frac{1}{2\pi fC} = \frac{1}{2 \pi \cdot 60 \cdot 0.1E-6} = 26.526 \text{ k}\Omega $$</p>
+<p>&nbsp;</p>
+<p>$$Z_{total} = 27 + 27 + 26.526 + 26.526 = 107.052 \text{ k}\Omega $$</p>
+<p>&nbsp;</p>
+<p>$$I = \frac{V}{Z_{total}} = \frac{12}{107052} = 112.1 \text{ } \mu \text{A}$$</p>
+<p>&nbsp;</p>
+<p>$$V_C = I \cdot Z_C = (\text{112.1E-06})\cdot(26526) = 2.97 \text{ V}$$</p>
+<p>&nbsp;</p>
+<p>$$V_R = I \cdot R = (\text{112.1E-06})\cdot(27000) = 3.03 \text{ V}$$</p>
+<p>&nbsp;</p>
+<p>$$V_{total} = 2 \cdot (V_R + V_C) = 2 \cdot (3.03 + 2.97) = 12.0 \text{ V}$$</p>
+<p>&nbsp;</p>
+<p>The polar magnitudes of these calculated results should closely agree with your voltmeter readings.</p>
+<p>&nbsp;</p>
+<h3>SPICE Simulation of the AC Phase Shift Circuit</h3>
+<p>We can simulate our simple phase shift circuit using the schematic diagram of Figure 3 with node numbers and the following&nbsp;netlist.</p>
+<p>&nbsp;</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/phase-shift-computer-simulation.jpg&quot; /></p>
+<h5><em><strong>Figure 3.&nbsp;</strong>AC phase shift circuit schematic diagram for SPICE simulation.</em></h5>
+<p>&nbsp;</p>
+<p>The two large-value resistors R<sub>bogus1</sub> and R<sub>bogus1</sub> are connected across the capacitors to provide a DC path to the <a href=&quot;https://www.allaboutcircuits.com/technical-articles/an-introduction-to-ground/&quot; target=&quot;_blank&quot;>ground</a> in order that <a href=&quot;https://www.allaboutcircuits.com/textbook/reference/chpt-7/introduction-to-spice/&quot; target=&quot;_blank&quot;>SPICE</a> will work. This is a workaround&nbsp;for one of SPICE&rsquo;s quirks to avoid it from seeing the capacitors as open circuits in its analysis. These two resistors are entirely unnecessary in the real circuit.</p>
+<p>&nbsp;</p>
+<p><ins>Netlist (make a text file containing the following text, verbatim):</ins></p>
+<pre><br>
+Phase shift circuit&#10;v1 1 0 ac 12 sin &#10;r1 1 2 27k &#10;r2 2 3 27k &#10;c1 3 4 0.1u &#10;c2 4 0 0.1u &#10;rbogus1 3 4 1e9 &#10;rbogus2 4 0 1e9 &#10;.ac lin 1 60 60 &#10;* Voltage across each component: &#10;.print ac v(1,2) v(2,3) v(3,4) v(4,0) &#10;* Voltage across pairs of similar components &#10;.print ac v(1,3) v(3,0) &#10;.end </pre>
+
+
+
+</div>
+</div>
+</body>
+</html>

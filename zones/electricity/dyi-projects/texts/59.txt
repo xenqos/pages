@@ -1,0 +1,90 @@
+<h1>Si Lab - BJT Common-emitter Amplifier</h1>
+<h3>Project Overview</h3>
+<p>The <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-4/common-emitter-amplifier/" target="_blank">common-emitter amplifier</a> circuit illustrated in Figure 1 is one of the most important analog transistor circuits.&nbsp;</p>
+<p>&nbsp;</p>
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/common-emitter-amplifier-circuit-schematic-diagram.jpg" /></p>
+<h5><em><strong>Figure 1. </strong>Schematic diagram of a BJT common-emitter amplifier&nbsp;circuit with potentiometer input control.</em></h5>
+<p>&nbsp;</p>
+<p>In this project, learn how to calculate <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-1/amplifier-gain/" target="_blank">amplifier voltage gain</a>, be introduced to the difference between an inverting and a noninverting amplifier, and evaluate two different methods for adding&nbsp;<a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-8/negative-feedback/" target="_blank">negative feedback</a> to this <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-1/amplifiers/" target="_blank">amplifier</a> circuit.</p>
+<p>&nbsp;</p>
+<h3>Parts and Materials</h3>
+<ul>
+<li>One NPN transistor&mdash;model <a href="https://www.farnell.com/datasheets/296640.pdf" target="_blank">2N2222</a> or <a href="https://my.centralsemi.com/datasheets/LSSGP078.PDF" target="_blank">2N3403</a> recommended</li>
+<li>Two 6 V batteries</li>
+<li>One 10 k&Omega; <a href="https://eepower.com/resistor-guide/resistor-types/potentiometer/" target="_blank">potentiometer</a>, single-turn, linear taper</li>
+<li>One 1 M&Omega; <a href="https://eepower.com/resistor-guide/" target="_blank">resistor</a></li>
+<li>One 100 k&Omega; resistor</li>
+<li>One 10 k&Omega; resistor</li>
+<li>One 1.5 k&Omega; resistor</li>
+</ul>
+<p>&nbsp;</p>
+<h3>Learning Objectives</h3>
+<ul>
+<li>Design of a simple <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-4/common-emitter-amplifier/" target="_blank">common-emitter</a> amplifier circuit</li>
+<li>How to measure the amplifier&#39;s voltage gain</li>
+<li>The difference between an inverting and a noninverting amplifier</li>
+<li>Ways to introduce negative feedback in an amplifier circuit</li>
+</ul>
+<p>&nbsp;</p>
+<h3>Instructions</h3>
+<p><strong>Step 1:&nbsp;</strong>Build the common-emitter amplifier&nbsp;circuit shown in the schematic of Figure 1 and illustrated in Figure 2.</p>
+<p>&nbsp;</p>
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/common-emitter-amplifier-circuit-illustration-1.jpg" /></p>
+<h5><em><strong>Figure 2. </strong>Breadboard implementation of a BJT common-emitter amplifier&nbsp;circuit with potentiometer input control.</em></h5>
+<p>&nbsp;</p>
+<p><strong>Step 2: </strong>Measure the output voltage (voltage measured between the transistor&rsquo;s collector terminal and <a href="https://www.allaboutcircuits.com/technical-articles/an-introduction-to-ground/" target="_blank">ground</a>) and the input voltage (voltage measured between the potentiometer&rsquo;s wiper terminal and ground) for several position settings of the potentiometer. I recommend determining the output voltage range as the potentiometer is adjusted through its entire range of motion, then choosing several voltages spanning that output range to take measurements at.</p>
+<p>For example, if full rotation on the potentiometer drives the amplifier circuit&rsquo;s output voltage from 0.1 V (low) to 11.7 V (high), choose several voltage levels between those limits (1, 3, 5, 7, 9, and 11 V). Measuring the output voltage with a meter, adjust the potentiometer to obtain each of these predetermined voltages at the output, noting the exact figure for later reference.</p>
+<p>Then, measure the exact input voltage producing that output voltage, and record that voltage figure as well. In the end, you should have a table of numbers representing several different output voltages along with their corresponding input voltages.</p>
+<p><strong>Step 3:&nbsp;</strong>Calculate the voltage gain using any two pairs of input and output voltages&mdash;divide the difference in output voltages by the difference in input voltages:</p>
+<p>&nbsp;</p>
+<p>$$Gain = \frac{\Delta V_{OUT}}{\Delta V_{IN}} = \frac{V_{OUT2} - V_{OUT1}}{V_{IN2} - V_{IN1}}$$</p>
+<p>&nbsp;</p>
+<p>For example, if an input voltage of 1.5 V gives me an output voltage of 7.0 V and an input voltage of 1.66 V gives me an output voltage of 1.0 V, the amplifier&rsquo;s voltage gain is:</p>
+<p>&nbsp;</p>
+<p>$$Gain = \frac{V_{OUT2} - V_{OUT1}}{V_{IN2} - V_{IN1}} = \frac{7.0 - 1.0}{1.5-1.66} = -37.5$$</p>
+<p>&nbsp;</p>
+<p>You should immediately notice two characteristics while taking these voltage measurements:</p>
+<ol>
+<li>The input-to-output effect is reversed. That is, an increasing input voltage results in a decreasing output voltage. This effect is known as signal inversion, and this kind of amplifier is an inverting amplifier.</li>
+<li>This amplifier exhibits a strong voltage gain. A small change in input voltage results in a large change in output voltage. This should stand in stark contrast to the <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-5/voltage-follower/" target="_blank">voltage follower&nbsp;amplifier circuit</a> discussed earlier, which had a voltage gain of about 1.</li>
+</ol>
+<p>Common-emitter amplifiers are widely used due to their high voltage gain, but they are rarely used in as crude a form as this. Although this amplifier circuit works to demonstrate the basic concept, it is very susceptible to changes in temperature.</p>
+<p><strong>Step 4:&nbsp;</strong>Try leaving the potentiometer in one position and heating the transistor by grasping it firmly with your hand or heating it with some other source of heat, such as an electric hair dryer.&nbsp;<strong>WARNING</strong>: be careful not to get it so hot that your plastic breadboard melts!</p>
+<p><strong>Step 5:&nbsp;</strong>You may also explore temperature effects by cooling the transistor.&nbsp;Touch an ice cube to its surface and note the change in output voltage. When the transistor&rsquo;s temperature changes, its base-emitter <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-3/introduction-to-diodes-and-rectifiers/" target="_blank">diode</a> characteristics change, resulting in different amounts of base current for the same input voltage. This, in turn, alters the controlled current through the collector terminal, thus affecting output voltage.</p>
+<p>&nbsp;</p>
+<h4>Using Feedback in Amplifier Circuits</h4>
+<p>Changes caused by temperature may be minimized through the use of <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-4/feedback/" target="_blank">signal feedback</a>, whereby a portion of the output voltage is fed back&nbsp;to the amplifier&rsquo;s input so as to have a negative, or canceling, effect on voltage gain. The temperature stability is improved at the expense of voltage gain;&nbsp;a compromise solution, but practical nonetheless.</p>
+<p><strong>Step 6:&nbsp;</strong>Perhaps the simplest way to add negative feedback to a common-emitter amplifier is to add some <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/resistance/" target="_blank">resistance</a> between the emitter terminal and ground so that the input voltage becomes divided between the base-emitter <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-2/the-p-n-junction/" target="_blank">PN junction</a> and the voltage drop across the new resistance. Add the 1.5 k&Omega; resistor between the emitter and ground to the circuit, as illustrated in Figures 3 and 4.</p>
+<p>&nbsp;</p>
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/common-emitter-amplifier-circuit-diagram-2.jpg" /></p>
+<h5><em><strong>Figure 3. </strong>Schematic diagram of a BJT common-emitter amplifier&nbsp;with added resistance at the emitter node.</em></h5>
+<p>&nbsp;</p>
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/common-emitter-amplifier-circuit-illustration-2.jpg" /></p>
+<h5><em><strong>Figure 4. </strong>Breadboard implementation of a BJT common-emitter amplifier&nbsp;with added resistance at the emitter node.</em></h5>
+<p>&nbsp;</p>
+<p><strong>Step 7:&nbsp;</strong>Repeat the same voltage measurement and recording exercise with the 1.5 k&Omega; resistor installed.&nbsp;</p>
+<p><strong>Step 8:&nbsp;</strong>Calculate the new (reduced) voltage gain of this circuit.</p>
+<p><strong>Step 9:&nbsp;</strong>Try altering the transistor&rsquo;s temperature again and noting the output voltage for a steady input voltage.&nbsp;Does it change more or less than without the 1.5 k&Omega; resistor?</p>
+<p><strong>Step 10:&nbsp;</strong>Another method of introducing negative feedback to this amplifier circuit is to couple&nbsp;the output to the input through a high-value resistor. Connect a 1 M&Omega; resistor between the transistor&rsquo;s collector and base terminals, as illustrated in Figures 5 and 6.</p>
+<p>&nbsp;</p>
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/common-emitter-amplifier-circuit-diagram-3.jpg" /></p>
+<h5><em><strong>Figure 5. </strong>Schematic diagram of a BJT common-emitter amplifier&nbsp;with collector-base resistive feedback.</em></h5>
+<p>&nbsp;</p>
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/common-emitter-amplifier-circuit-illustration-3.jpg" /></p>
+<h5><em><strong>Figure 6.&nbsp;</strong>Breadboard implementation of a BJT common-emitter amplifier&nbsp;with collector-base resistive feedback.</em></h5>
+<p>&nbsp;</p>
+<p><strong>Step 11: </strong>Calculate the voltage gain of this new circuit and evaluate the temperature response. Although this different method of feedback accomplishes the same goal of increased stability by diminishing gain, the two feedback circuits will not behave identically.</p>
+<p><strong>Step 12:&nbsp;</strong>Measure the range of possible output voltages with each feedback scheme (the low and high voltage values obtained with a full sweep of the input voltage potentiometer) and how this differs between the two circuits.</p>
+<p>&nbsp;</p>
+<h3>SPICE Simulation of a BJT Common-emitter Amplifier</h3>
+<p>To simulate the BJT&nbsp;voltage follower circuit, we can use the circuit shown in Figure 7 and&nbsp;the associated <a href="https://www.allaboutcircuits.com/textbook/reference/chpt-7/introduction-to-spice/" target="_blank">SPICE</a> simulation netlist and input deck that follows.</p>
+<p>&nbsp;</p>
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/common-emitter-amplifier-circuit-schematic-with-spice-node-numbers.jpg" /></p>
+<h5><em><strong>Figure 7.&nbsp;</strong>BJT common-emitter amplifier&nbsp;schematic for SPICE simulation.</em></h5>
+<p>&nbsp;</p>
+<p>Netlist (make a text file containing the following text, verbatim):</p>
+<pre>
+Common-emitter amplifier &#10;vsupply 1 0 dc 12 &#10;vin 3 0 &#10;rc 1 2 10k &#10;rb 3 4 100k &#10;q1 2 4 0 mod1 &#10;.model mod1 npn bf=200 &#10;.dc vin 0 2 0.05 &#10;.plot dc v(2,0) v(3,0) &#10;.end </pre>
+<p>&nbsp;</p>
+<p>This SPICE simulation&nbsp;sets up a circuit with a variable DC voltage source (<tt>vin</tt>) as the input signal and measures the corresponding output voltage between nodes 2 and 0. The input voltage is varied, or swept,&nbsp;from 0 to 2 V in 0.05 V&nbsp;increments.</p>
+<p>The results are shown on a plot, with the input voltage appearing as a straight, increasing&nbsp;line. Due to the high gain of the amplifier, the output voltage will be a step&nbsp;function&mdash;beginning high&nbsp;and ending low, with a steep change in the middle where the transistor is in its active mode of operation.</p>

@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Alternating Current</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='41.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='43.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>Circuit Effects</h1>
+<p>The principle of non-sinusoidal, repeating<a href=&quot;https://www.allaboutcircuits.com/textbook/alternating-current/chpt-1/ac-waveforms/&quot; target=&quot;_blank&quot;> waveforms</a> being equivalent to a series of sine waves at different frequencies is a fundamental property of waves in general and it has great practical import in the study of AC circuits.</p>
+<p>It means that any time we have a waveform that isn&rsquo;t perfectly sine-wave-shaped, the circuit in question will react as though its having an array of different frequency voltages imposed on it at once.</p>
+<p>When an AC circuit is subjected to a source voltage consisting of a mixture of frequencies, the components in that circuit respond to each constituent frequency in a different way. Any reactive component such as a capacitor or an inductor will simultaneously present a unique amount of impedance to each and every frequency present in a circuit.</p>
+<p>Thankfully, the analysis of such circuits is made relatively easy by applying the<a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-10/superposition-theorem/&quot; title=&quot;&quot;> </a><em><a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-10/superposition-theorem/&quot; target=&quot;_blank&quot;>Superposition Theorem</a></em>, regarding the multiple-frequency source as a set of single-frequency<a href=&quot;https://www.allaboutcircuits.com/video-lectures/series-circuits-series-voltage-sources/&quot; target=&quot;_blank&quot;> voltage sources connected in series</a>, and analyzing the circuit for one source at a time, summing the results at the end to determine the aggregate total:</p>
+<p>&nbsp;</p>
+<p><img src=&quot;/uploads/articles/circuit-driven-by-a-combination-of-frequencies.jpg&quot; /></p>
+<p><em>Circuit driven by a combination of frequencies: 60 Hz and 90 Hz</em></p>
+<p>&nbsp;</p>
+<p>Analyzing circuit for 60 Hz source alone:</p>
+<p>&nbsp;</p>
+<p><img src=&quot;/uploads/articles/circuit-for-solving-60hz.jpg&quot; /></p>
+<p><em>Circuit for solving 60 Hz</em></p>
+<p>&nbsp;</p>
+<p><img src=&quot;/uploads/articles/analyzing-the-circuit-for-90hz-source-alone.jpg&quot; /></p>
+<p>&nbsp;</p>
+<p>Analyzing the circuit for 90 Hz source alone:</p>
+<p>&nbsp;</p>
+<p><img src=&quot;/uploads/articles/circuit-of-solving-90hz.jpg&quot; /></p>
+<p><em>Circuit of solving 90 Hz</em></p>
+<p>&nbsp;</p>
+<p><img src=&quot;/uploads/articles/table-for-circuit-solving.jpg&quot; /></p>
+<p>&nbsp;</p>
+<p>Superimposing the voltage drops across R and C, we get:</p>
+<p>&nbsp;</p>
+<p><img src=&quot;/uploads/articles/superimposing-the-voltage-drops.jpg&quot; /></p>
+<p>&nbsp;</p>
+<p>Because the two voltages across each component are at different frequencies, we cannot consolidate them into a single voltage figure as we could if we were adding together two voltages of different amplitude and/or phase angle at the same frequency.</p>
+<p>Complex number notation give us the ability to represent waveform amplitude (polar magnitude) and phase angle (polar angle), but not frequency.</p>
+<p>What we can tell from this application of the superposition theorem is that there will be a greater 60 Hz voltage dropped across the capacitor than a 90 Hz voltage. Just the opposite is true for the <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/polarity-voltage-drops/&quot; target=&quot;_blank&quot;>resistor&rsquo;s voltage drop</a>.</p>
+<p>This is worthy to note, especially in light of the fact that the two source voltages are equal. It is this kind of unequal circuit response to signals of differing frequency that will be our specific focus in the next chapter.</p>
+<p>We can also apply the superposition theorem to the analysis of a circuit powered by a non-sinusoidal voltage, such as a square wave. If we know the Fourier series (multiple sine/cosine wave equivalent) of that wave, we can regard it as originating from a series-connected string of multiple sinusoidal voltage sources at the appropriate amplitudes, frequencies, and phase shifts.</p>
+<p>Needless to say, this can be a laborious task for some waveforms (an accurate square-wave Fourier Series is considered to be expressed out to the ninth harmonic, or five sine waves in all!), but it is possible. I mention this not to scare you, but to inform you of the potential complexity lurking behind seemingly simple waveforms.</p>
+<p>A real-life circuit will respond just the same to being powered by a square wave as being powered by an <em>infinite</em> series of sine waves of odd-multiple frequencies and diminishing amplitudes.</p>
+<p>This has been known to translate into unexpected circuit resonances, transformer and inductor core overheating due to eddy currents, electromagnetic noise over broad ranges of the frequency spectrum, and the like. Technicians and engineers need to be made aware of the potential effects of non-sinusoidal waveforms in reactive circuits.</p>
+<p>Harmonics are known to manifest their effects in the form of electromagnetic radiation as well.</p>
+<p>Studies have been performed on the potential hazards of using portable computers aboard passenger aircraft, citing the fact that computers&rsquo; high frequency square-wave &ldquo;clock&rdquo; voltage signals are capable of generating radio waves that could interfere with the operation of the aircraft&rsquo;s electronic navigation equipment.</p>
+<p>It&rsquo;s bad enough that typical microprocessor clock signal frequencies are within the range of aircraft radio frequency bands, but worse yet is the fact that the harmonic multiples of those fundamental frequencies span an even larger range, due to the fact that clock signal voltages are square-wave in shape and not sine-wave.</p>
+<p>Electromagnetic &ldquo;emissions&rdquo; of this nature can be a problem in industrial applications, too, with harmonics abounding in very large quantities due to (nonlinear) electronic control of motor and electric furnace power.</p>
+<p>The fundamental power line frequency may only be 60 Hz, but those harmonic frequency multiples theoretically extend into infinitely high frequency ranges. Low frequency power line voltage and current doesn&rsquo;t radiate into space very well as electromagnetic energy, but high frequencies do.</p>
+<p>Also, capacitive and inductive &ldquo;coupling&rdquo; caused by close-proximity conductors is usually more severe at high frequencies. Signal wiring nearby power wiring will tend to &ldquo;pick up&rdquo; harmonic interference from the power wiring to a far greater extent than pure sine-wave interference.</p>
+<p>This problem can manifest itself in industry when old motor controls are replaced with new, solid-state electronic motor controls providing greater energy efficiency.</p>
+<p>Suddenly there may be weird electrical noise being impressed upon signal wiring that never used to be there, because the old controls never generated harmonics, and those high-frequency harmonic voltages and currents tend to inductively and capacitively &ldquo;couple&rdquo; better to nearby conductors than any 60 Hz signals from the old controls used to.</p>
+<p>&nbsp;</p>
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li>Any regular (repeating), non-sinusoidal waveform is equivalent to a particular series of sine/cosine waves of different frequencies, phases, and amplitudes, plus a DC offset voltage if necessary. The mathematical process for determining the sinusoidal waveform equivalent for any waveform is called <em>Fourier analysis</em>.</li>
+<li>Multiple-frequency voltage sources can be simulated for analysis by connecting several single-frequency voltage sources in series. Analysis of voltages and currents is accomplished by using the superposition theorem. NOTE: superimposed voltages and currents of different frequencies <em>cannot</em> be added together in complex number form, since complex numbers only account for amplitude and phase shift, not frequency!</li>
+<li>Harmonics can cause problems by impressing unwanted (&ldquo;noise&rdquo;) voltage signals upon nearby circuits. These unwanted signals may come by way of capacitive coupling, inductive coupling, electromagnetic radiation, or a combination thereof.</li>
+</ul>
+
+
+
+</div>
+</div>
+</body>
+</html>

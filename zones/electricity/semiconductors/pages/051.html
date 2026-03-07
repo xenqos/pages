@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Semiconductors</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='050.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='052.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>Transistor Ratings and Packages (BJT)</h1>
+<p>Like all electrical and electronic components, <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-4/bipolar-junction-transistors-bjt/&quot; target=&quot;_blank&quot;>transistors</a> are limited in the amount of voltage and current each one can handle without sustaining damage. Since transistors are more complex than some of the other components you&rsquo;re used to seeing at this point, these tend to have more kinds of ratings. What follows is an itemized description of some typical transistor ratings.</p>
+<h3><strong><em>Power dissipation</em></strong></h3>
+<p>When a transistor conducts current between collector and emitter, it also drops voltage between those two points. At any given time, the power dissipated by a transistor is equal to the product of collector current and collector-emitter voltage. Just like <a href=&quot;https://www.allaboutcircuits.com/video-lectures/electronic-components-resistors/&quot; target=&quot;_blank&quot;>resistors</a>, transistors are rated for how many watts each can safely dissipate without sustaining damage.</p>
+<p>High temperature is the mortal enemy of all semiconductor devices, and bipolar transistors tend to be more susceptible to thermal damage than most. Power ratings are always referenced to the temperature of ambient (surrounding) air. When transistors are to be used in hotter environments &gt;25<sup>o</sup>, their power ratings must be <em>derated</em> to avoid a shortened service life.</p>
+<h3><strong><em>Reverse voltages</em></strong></h3>
+<p>As with <a href=&quot;https://www.allaboutcircuits.com/video-lectures/diode-characteristics-circuits/&quot; target=&quot;_blank&quot;>diodes</a>, bipolar transistors are rated for maximum allowable reverse-bias voltage across their PN junctions. This includes voltage ratings for the emitter-base junction V<sub>EB</sub>, collector-base junction V<sub>CB</sub>, and also from collector to emitter V<sub>CE</sub>.</p>
+<p>V<sub>EB</sub>, the maximum reverse voltage from emitter to base is approximately 7 V for some small-signal transistors. Some circuit designers use discrete BJTs as 7 V <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-3/zener-diodes/&quot; target=&quot;_blank&quot;>Zener diodes</a> with a series current limiting resistor. Transistor inputs to analog integrated circuits also have a V<sub>EB</sub> rating, which if exceeded will cause damage, no zenering of the inputs is allowed.</p>
+<p>The rating for maximum collector-emitter voltage V<sub>CE</sub> can be thought of as the maximum voltage it can withstand while in cutoff mode (no base current). This rating is of particular importance when using a bipolar transistor as a switch. A typical value for a small signal transistor is 60 to 80 V. In power transistors, this could range to 1000 V, for example, a horizontal deflection transistor in a cathode ray tube display.</p>
+<h3><strong><em>Collector current</em></strong></h3>
+<p>The maximum value for the collector current IC will be given by the manufacturer in amperes. Typical values for small signal transistors are 10s to 100s of mA, 10s of A for power transistors. Understand that this maximum figure assumes a saturated state (minimum collector-emitter voltage drop). If the transistor is <em>not</em> saturated and is dropping substantial voltage between collector and emitter, the maximum power dissipation rating will probably be exceeded before the maximum collector current rating. Just something to keep in mind when designing a transistor circuit</p>
+<h3><strong><em>Saturation voltages</em></strong></h3>
+<p>Ideally, a saturated transistor acts as a closed switch contact between collector and emitter, dropping zero voltage at full collector current. In reality, this is <em>never</em> true. Manufacturers will specify the maximum voltage drop of a transistor at saturation, both between the collector and emitter and also between base and emitter (forward voltage drop of that PN junction). Collector-emitter voltage drop at saturation is generally expected to be 0.3 volts or less, but this figure is, of course, dependent on the specific type of transistor. Low voltage transistors, low V<sub>CE</sub>, show lower saturation voltages. The saturation voltage is also lower for a higher base drive current.</p>
+<p>Base-emitter forward voltage drop, V<sub>BE</sub>, is similar to that of an equivalent diode, &cong;0.7 V, which should come as no surprise.</p>
+<h3><strong><em>Beta</em></strong></h3>
+<p>The ratio of collector current to base current, <strong>&beta; is the fundamental parameter characterizing the amplifying ability of a bipolar transistor</strong>. &beta; is usually assumed to be a constant figure in circuit calculations, but unfortunately, this is far from true in practice. As such, manufacturers provide a set of &beta; (or &ldquo;h<sub>fe</sub>&rdquo;) figures for a given transistor over a wide range of operating conditions, usually in the form of maximum/minimum/typical ratings. It may surprise you to see just how widely &beta; can be expected to vary within normal operating limits. One popular small-signal transistor, the 2N3903, is advertised as having a &beta; ranging from 15 to 150 depending on the amount of collector current. Generally, &beta; is highest for medium collector currents, decreasing for very low and very high collector currents. h<sub>fe</sub> is small signal AC gain; hFE s large AC signal gain or DC gain.</p>
+<h3><strong><em>Alpha</em></strong></h3>
+<p>The ratio of collector current to emitter current, &alpha;=I<sub>C</sub>/I<sub>E</sub>. &alpha; may be derived from &beta;, being &alpha;=&beta;/(&beta;+1). Bipolar transistors come in a wide variety of physical packages. Package type is primarily dependent upon the required power dissipation of the transistor, much like resistors: the greater the maximum power dissipation, the larger the device has to be to stay cool. The figure below shows several standardized package types for three-terminal semiconductor devices, any of which may be used to house a bipolar transistor. There are many other semiconductor devices other than bipolar transistors which have three connection points. Note that the pin-outs of plastic transistors can vary within a single package type, e.g. TO-92 in Figure below. It is <em>impossible</em> to positively identify a three-terminal semiconductor device without referencing the part number printed on it, or subjecting it to a set of electrical tests.</p>
+<p><img src=&quot;/uploads/articles/transistor-packages-dimensions-in-mm.jpg&quot; /></p>
+<p>Transistor packages, dimensions in mm.</p>
+<p>Small plastic transistor packages like the TO-92 can dissipate a few hundred milliwatts. The metal cans, TO-18 and TO-39, can dissipate more power, several hundred milliwatts. Plastic power transistor packages like the TO-220 and TO-247 dissipate well over 100 watts, approaching the dissipation of the all metal TO-3. The dissipation ratings listed in the Figure above are the maximum ever encountered by the author for high powered devices. Most power transistors are rated at half or less than the listed wattage. Consult specific device datasheets for actual ratings. The semiconductor die in the TO-220 and TO-247 plastic packages is mounted to a heat conductive metal slug which transfers heat from the back of the package to a metal <em>heatsink</em>, not shown. A thin coating of thermally conductive grease is applied to the metal before mounting the transistor to the heatsink. Since the TO-220 and TO-247 slugs, and the TO-3 case are connected to the collector, it is sometimes necessary to electrically isolate these from a grounded heatsink by an interposed mica or polymer washer. The datasheet ratings for the power packages are only valid when mounted to a heatsink. Without a heatsink, a TO-220 dissipates approximately 1 watt safely in free air.</p>
+<p>Datasheet maximum power dissipation ratings are difficult to achieve in practice. The maximum power dissipation is based on a heatsink maintaining the transistor case at no more than 25&deg;C. This is difficult with an air cooled heatsink. The allowable power dissipation decreases with increasing temperature. This is known as derating. Many power device datasheets include a dissipation versus case temperature graph.</p>
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li><em>Power dissipation</em>: maximum allowable power dissipation on a sustained basis.</li>
+<li><em>Reverse voltages</em>: maximum allowable VCE, V<sub>CB</sub>, V<sub>EB</sub>.</li>
+<li><em>Collector current</em>: the maximum allowable collector current.</li>
+<li><em>Saturation voltage</em> is the V<sub>CE</sub> voltage drop in a saturated (fully conducting) transistor.</li>
+<li><em>Beta</em>: &beta;=I<sub>C</sub>/I<sub>B</sub></li>
+<li><em>Alpha</em>: &alpha;=I<sub>C</sub>/I<sub>E</sub>, &alpha;= &beta;/(&beta;+1)</li>
+<li>Transistor <em>Packages</em> are a major factor in power dissipation. Larger packages dissipate more power.</li>
+</ul>
+
+
+
+</div>
+</div>
+</body>
+</html>

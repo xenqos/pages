@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Radio Frequencies</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='07.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='09.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>RF Transmission: Regulations, Interference, and Power Transfer</h1>
+<p>An important characteristic of RF technology is the following: it is relatively easy for one person to impede, or even thoroughly ruin, another person&rsquo;s wireless communication. Radio waves travel through the air and are available to everyone, including those who&mdash;intentionally or accidentally&mdash;are transmitting signals that could be described as <em>interference</em>.</p>
+<p>First, it&rsquo;s important to understand that you cannot &ldquo;destroy&rdquo; or &ldquo;damage&rdquo; radio signals that have already been transmitted. Nonetheless, the effect of interference can be equivalent to destroying an original signal because it compromises the receiver&rsquo;s ability to extract the important information contained in this signal. In other words, the information is still present, but <em>with respect to a particular receiver</em> it has, in practice, ceased to exist.</p>
+<p>Interference is a constant challenge in RF design, and the proliferation of wireless devices is not making the situation any simpler. There are various ways of making a system resistant to interference, and these will be discussed later in the textbook. Most of this interference is simply due to the fact that non-communicating devices must often utilize similar carrier frequencies.</p>
+<p>However, there is also such a thing as deliberate interference. This is called <em>jamming</em>; the goal is to broadcast a signal that in one way or another prevents other wireless systems from maintaining successful communication. Jamming is an important tactic in modern warfare, and in daily life it&rsquo;s a nuisance (or worse) and is completely illegal.</p>
+<p>&nbsp;</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/RFT_ch2_pg2_1.JPG&quot; /></p>
+<h5><em>This spectrum depicts a strong signal intended to jam a GPS device.</em></h5>
+<p>&nbsp;</p>
+<h3>Regulations</h3>
+<p>It may initially seem strange that the government would regulate wireless transmissions&mdash;can we really impose laws on something as intangible as electromagnetic radiation? But the jamming example makes it clear that the absence of regulations would lead to serious problems. Strict organization is required to ensure that the realm of EMR does not deteriorate into a chaotic horde of interfering signals.</p>
+<p>In the United States, the task of maintaining order in the world of wireless communication falls to the Federal Communications Commission (FCC). Private and public organizations that want to utilize a portion of the electromagnetic spectrum must obtain permission from the FCC; this permission is referred to as a license. There are exceptions for systems that are limited in range and thus unlikely to cause a major disturbance.</p>
+<h3>Max Power</h3>
+<p>If you are interested in (legal) license-free radio transmissions, you need to know your transmit power. Even if the official regulations are presented in terms of effective range or some other metric, you should be able to determine the transmit power that is generally considered acceptable in these situations&mdash;and estimating power is easier than trying to accurately measure the system&rsquo;s range or the field strength at a certain distance from the antenna.</p>
+<p>&nbsp;</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/chp2p2_graph.jpg&quot; /></p>
+<h5><em>This plot gives field-strength limits (for a specific range of frequencies) based on the FCC&rsquo;s &ldquo;</em><a href=&quot;https://www.fcc.gov/media/radio/low-power-radio-general-information#PART15&quot; target=&quot;_blank&quot;><em>Part 15</em></a><em>&rdquo; rules. Image adapted from <a href=&quot;https://www.digikey.com/en/articles/techzone/2011/mar/the-fcc-road-part-15-from-concept-to-approval&quot; target=&quot;_blank&quot;>Digi-Key</a></em></h5>
+<p>&nbsp;</p>
+<p>In RF and all other types of electric circuits, the power dissipated by a component is equal to the voltage across that component multiplied by the current flowing through the component. You may think of an antenna as simply a conductor and therefore as something with very little resistance. It&rsquo;s true that a conductor can have very low resistance at DC, but at higher frequencies an antenna has significant amounts of input impedance. We&rsquo;re interested in the impedance of the antenna at the specific frequencies that we are using to transmit our RF signal; we will need this information to estimate the amount of power delivered to the antenna.</p>
+<p>&nbsp;</p>
+<h3>Voltage Transfer vs. Power Transfer</h3>
+<p>In a typical digital or analog circuit, we wouldn&rsquo;t want a wire or PCB trace to have a resistance of 50 &Omega;. This seems like an awfully high resistance for something described as a conductor. But we have to remember that in low-frequency circuits we are typically interested in voltage transfer, i.e., we want to ensure that the voltage at an input pin is as close as possible to the voltage at the preceding output pin. To achieve good voltage transfer, we need low output impedance, low conductor impedance, and high input impedance.</p>
+<p>However, in the output stage of an RF transmitter (or of an audio amplifier), the goal is power transfer. We don&rsquo;t just want to move voltage from one device to another; we want significant current flowing through the antenna, so that it has plenty of <em>electrical</em> energy that can be converted into radiated <em>electromagnetic</em> energy.</p>
+<p>Maximum power transfer occurs when the magnitude of the load impedance is equal to the magnitude of the source impedance.</p>
+<p>&nbsp;</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/RFT_ch2_pg2_.jpg&quot; /></p>
+<h5><em>As you can see, the load power (P<sub>L</sub>) is maximum when R<sub>L</sub> = R<sub>S</sub>. Notice, though, that efficiency (</em><em>&eta;) continues to increase beyond this point. Maximum power transfer does not correspond to maximum efficiency.</em></h5>
+<p>&nbsp;</p>
+<p>In RF circuitry, the amplifier&rsquo;s output stage (and the transmission line that connects the amplifier to the antenna) will often have impedance of 50 &Omega;, and thus the antenna impedance must also be 50 &Omega; to ensure maximum power transfer. (Another important topic here is &ldquo;matching networks,&rdquo; which are used to improve impedance matching between an amplifier and an antenna; this will be discussed later in the textbook.)</p>
+<p>&nbsp;</p>
+<h3>Estimating Power</h3>
+<p>The preceding discussion explains why we can analyze an RF output stage by connecting the power amplifier to a 50 &Omega; oscilloscope input: most RF systems are built around 50 &Omega; impedances, and thus you will generally need a 50 &Omega; antenna impedance.</p>
+<p>Of course, if you know the relevant voltage and impedance characteristics of your circuit, you can simply calculate the power delivered to the antenna. A SPICE simulator would be another effective approach. But if these techniques are not practical in your circumstances, or if you want empirical verification, you need to use measurement equipment.</p>
+<p>If you have a spectrum analyzer, by all means use it. It is designed to provide exactly this sort of information. If you don&rsquo;t have a spectrum analyzer, you can use an oscilloscope. Look at the <a href=&quot;https://www.allaboutcircuits.com/textbook/alternating-current/chpt-1/measurements-ac-magnitude/&quot; target=&quot;_blank&quot;>RMS</a> voltage of the signal using a 50 &Omega; scope input, and then calculate power as V<sup>2</sup>/R, where R = 50 &Omega;.</p>
+<p>&nbsp;</p>
+<h3>Summary</h3>
+<ul>
+<li>Electromagnetic transmission is carefully regulated to mitigate problems associated with unintentional interference. Intentional interference, known as jamming, is illegal in the context of civilian life.</li>
+<li>In the United States, transmitting devices generally must be licensed by the FCC.</li>
+<li>License-free operation is possible under certain conditions associated with restricted transmit power.</li>
+<li>To achieve maximum transfer of electrical power from an amplifier to an antenna, the magnitude of the amplifier&rsquo;s output impedance must match the magnitude of the antenna&rsquo;s input impedance.</li>
+<li>Transmit power can be determined via mathematical analysis or SPICE simulation. It can also be estimated empirically using a spectrum analyzer or an oscilloscope.</li>
+</ul>
+
+
+
+</div>
+</div>
+</body>
+</html>

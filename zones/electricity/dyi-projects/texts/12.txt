@@ -1,0 +1,30 @@
+<h1>Intro Lab - Electromagnetic Induction</h1>
+<h3>Project Overview</h3>
+<p><a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-14/electromagnetic-induction/" target="_blank">Electromagnetic induction</a> is a complementary phenomenon to <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-14/electromagnetism/" target="_blank">electromagnetism</a>. Instead of producing a <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-15/magnetic-fields-and-inductance/" target="_blank">magnetic field</a> from electricity, we produce electricity from a magnetic field.&nbsp;There is one important difference, though,&nbsp;whereas electromagnetism produces a steady magnetic field from a steady electric current, electromagnetic induction requires motion between the magnet and the coil to produce a <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/voltage-current/" target="_blank">voltage</a>. In this project, you measure <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-14/electromagnetic-induction/" target="_blank">electromagnetic induction</a> using the test setup illustrated in Figure 1.</p>
+<p>&nbsp;</p>
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/electromagnetic-induction.jpg" /></p>
+<h5><em><strong>Figure 1.</strong> Circuit&nbsp;for measuring the induced voltage from the electromagnet.</em></h5>
+<p>&nbsp;</p>
+<h3>Parts and Materials</h3>
+<ul>
+<li>Electromagnet from the previous project:&nbsp;<a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-2/electromagnetism-experiment/" target="_blank">building an electromagnet</a></li>
+<li>Permanent magnet</li>
+</ul>
+<p>&nbsp;</p>
+<h3>Learning Objectives</h3>
+<ul>
+<li>Relationship between magnetic field strength and induced voltage</li>
+</ul>
+<p>&nbsp;</p>
+<h3>Instructions</h3>
+<p><strong>Step 1:&nbsp;</strong>Connect the multimeter to the coil, as illustrated in Figures 1 and 2, and set it to the most sensitive DC voltage range available.&nbsp;</p>
+<p>&nbsp;</p>
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/electromagnetic-induction-schematic-diagram.jpg" /></p>
+<h5><em><strong>Figure 2.</strong>&nbsp;The schematic diagram for measuring the induced voltage from the electromagnet.</em></h5>
+<p>&nbsp;</p>
+<p>If you&nbsp;are using an analog <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-8/multimeters/" target="_blank">multimeter</a>, be sure to use long jumper wires and locate the meter far away from the coil, as the magnetic field from the permanent magnet may affect the meter&rsquo;s operation and produce false readings. Digital meters are unaffected by magnetic fields.</p>
+<p><strong>Step 2:&nbsp;</strong>Measure the voltage output from the electromagnet. Hint: it should be zero!&nbsp;</p>
+<p><strong>Step 3:&nbsp;</strong>Move the <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-14/permanent-magnets/" target="_blank">magnet</a> <em>slowly</em> to and from one end of the electromagnet, noting the polarity and magnitude of the induced voltage.</p>
+<p><strong>Step 4:&nbsp;</strong>Experiment with moving the magnet, and discover for yourself what factor(s) determine the amount of voltage induced. Consider the distance from the electromagnet and&nbsp;speed of movement.</p>
+<p><strong>Step 5:&nbsp;</strong>Repeat the process at&nbsp;the other end of the electromagnet coil and compare results.</p>
+<p><strong>Step 6: </strong>Repeat the process using the other end of the permanent magnet and compare.</p>

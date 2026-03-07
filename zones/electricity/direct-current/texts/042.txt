@@ -1,0 +1,156 @@
+<h1>Building Resistor Circuits Using Breadboards, Perfboards, and Terminal Strips</h1>
+<img src="/uploads/thumbnails/Breadboard-circuit-drawing2.jpg" />
+<h3 class="text-lg lg:text-2xl font-bold mb-3">Introduction to Building Basic Electronics Circuits</h3>
+<p><p>Solderless breadboards, perfboards, terminal strips, and printed circuit boards are all excellent substrates&nbsp;for building simple electronics circuits. They can be used for production prototyping in commercial envinroments, hobbyist or maker&nbsp;circuit development, and in the classroom for electrical circuit education.</p></p>
+<p>Over the course of learning about electricity, you will want to construct your own circuits using resistors and batteries. In this section, we will explore some fabrication techniques that will help you build the circuits shown in this chapter and more advanced circuits.</p>
+<p>&nbsp;</p>
+<h3>Using Alligator Clip Jumper Wires for Circuit Construction</h3>
+<p>If all we wish to construct is a simple single-battery, single-resistor circuit, we may easily use <em>alligator clip </em>jumper wires, as illustrated in Figure 1.</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/single-battery-single-resitor-circuit.jpg" /></p>
+<h5><em><strong>Figure 1. </strong>Constructing a simple circuit using jumper wires and alligator clips.</em></h5>
+<p>&nbsp;</p>
+<p>Jumper wires with &ldquo;alligator&rdquo; style spring clips at each end provide a safe and convenient method of electrically joining the components together.</p>
+<p>On the other hand, if we wanted to build a simple <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/simple-series-circuits/" target="_blank">series circuit</a> with one battery and three resistors, the same &ldquo;point-to-point&rdquo; construction technique using jumper wires could be applied, as shown in Figure 2.</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/single-battery-three-resistors.jpg" /></p>
+<h5><em><strong>Figure 2. </strong>Constructing a three-resistor series circuit using jumper wires and alligator clips.</em></h5>
+<h3>&nbsp;</h3>
+<p>This&nbsp;technique,&nbsp;however, can prove to be&nbsp;impractical for&nbsp;more complex circuits due to the awkwardness of the jumper wires and the physical fragility of their connections.</p>
+<p>&nbsp;</p>
+<h3>Using a Solderless Breadboard for Assembling Electronics Circuits</h3>
+<p>A more common method of temporary construction for the hobbyist employs the <em>solderless breadboard </em>(often called a breadboard)<em>.</em>&nbsp;A breadboard is&nbsp;a device made of plastic with hundreds of spring-loaded connection sockets joining the inserted ends of components and/or 22-gauge solid wire pieces. A photograph of a real breadboard is shown here in Figure 3, with a standard writing pen shown to provide some context for the approximate size. Below that in Figure 4 is an&nbsp;illustration showing how&nbsp;three resistors in a&nbsp;simple series circuit can be constructed on a breadboard.</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/solderless-breadboard.jpg" /></p>
+<h5><em><strong>Figure 3. </strong>A solderless breadboard used for building basic electronics circuits.</em></h5>
+<p>&nbsp;</p>
+<p>Additionally, Figure 4 illustrates how&nbsp;three resistors in a&nbsp;simple series circuit can be constructed on a breadboard.</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/simple-series-circuit-in-solderless-breadboard.jpg" /></p>
+<h5><em><strong>Figure 4. </strong>Breadboard component placement and connections for a three-resistor series circuit.</em></h5>
+<p>&nbsp;</p>
+<p>Underneath each hole in the breadboard&#39;s&nbsp;surface&nbsp;is a metal spring clip designed to grasp any inserted wire or component lead. These metal spring clips are joined underneath the breadboard&#39;s surface, connecting inserted leads. The connection pattern joins every five holes along a vertical column, as shown in Figure 5, with the long axis of the breadboard situated horizontally.&nbsp;</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/breadboard_diagram_1.jpg" /></p>
+<h5><em><strong>Figure 5.</strong> Electrical connections&nbsp;in a breadboard&mdash;each five-hole set is electrically connected.</em></h5>
+<h4>&nbsp;</h4>
+<p>The orange lines in the figure indicate electrical connections between each of the five holes in the set. Each&nbsp;five-hole set is&nbsp;a single electrical node.&nbsp;</p>
+<p>Thus, when a wire or component lead is inserted into a hole on the breadboard, four more holes are in that column, providing potential connection points to other wires and/or component leads. The result is an extremely flexible platform for constructing temporary circuits.</p>
+<p>&nbsp;</p>
+<h4>Building a Series Circuit on a Breadboard</h4>
+<p>For example, the three-resistor series circuit implementation on a breadboard that was demonstrated in Figure 4 could also be assembled using the connections shown below in Figure 6.</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/three-resistor-circuit-in-a-breadboard.jpg" /></p>
+<h5><em><strong>Figure 6. </strong>Breadboard component placement and connections for a three-resistor parallel circuit.</em></h5>
+<h4>&nbsp;</h4>
+<h4>Build a Parallel Circuit on a Breadboard</h4>
+<p>A <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/simple-parallel-circuits/" target="_blank">parallel circuit</a> is also easy to construct on a solderless breadboard. Figure 7 provides one possible construction of a three-resistor parallel circuit on a breadboard.&nbsp;</p>
+<p>&nbsp;</p>
+<h4><img src="/uploads/articles/parallel-circuit-construction-breadboard.jpg" /></h4>
+<h5><em><strong>Figure 7. </strong>Breadboard component placement and connections for a three-resistor parallel circuit.</em></h5>
+<h4>&nbsp;</h4>
+<p>Pay special attention to the placement of the resistors across the center gap that runs the length&nbsp;of the breadboard from left to right in the orientation shown. This allows simple insertion of the resistors in the vertical orientation while keeping the two electrical nodes of the resistors isolated from each other.</p>
+<p>&nbsp;</p>
+<h4>Limitations of Using Breadboards</h4>
+<p>Despite how easy it is to use breadboards, they have&nbsp;limitations. First and foremost, they are intended for <em>temporary </em>construction only. If you pick up a breadboard, turn it upside-down, and shake it, any components plugged into it are sure to loosen and may fall out of their respective holes.</p>
+<p>Secondly, breadboards are limited to fairly low-current (less than 1 amp) circuits. Those spring clips have a small contact area and thus cannot support high currents without excessive heating.</p>
+<h3>&nbsp;</h3>
+<h3>Soldering or Wire-wrapping</h3>
+<p>For greater permanence, one might&nbsp;choose soldering or wire-wrapping, over alligator clips or simple insertion into a solderless breadboard.&nbsp;Soldering and wire-wrapping involve fastening the components and wires to some structure providing a secure mechanical location (such as a phenolic or fiberglass board with holes drilled in it, much like a breadboard without the intrinsic spring-clip connections) and then attaching wires to the secured component leads.</p>
+<p>Soldering is a form of low-temperature welding using a tin/lead or tin/silver alloy that melts and then solidifies to provide a mechanical and electrical bond to the&nbsp;copper on the circuit board&#39;s&nbsp;surface.&nbsp;</p>
+<p>On the other hand, wire wrapping is when a small-gauge wire is tightly wrapped around component leads rather than soldered to leads or copper pads. The tension of the wrapped wire provides a sound mechanical and electrical junction to connect components together.</p>
+<h3>&nbsp;</h3>
+<h3>Printed Circuit Boards (PCBs) or Perfboard</h3>
+<p>An example of a <a href="https://www.allaboutcircuits.com/technical-articles/what-is-a-printed-circuit-board-pcb/" target="_blank">printed circuit board, or PCB</a>, typically intended for hobbyist or maker use is shown in the&nbsp;photograph of Figure 8.</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/pcb.jpg" /></p>
+<h5><em><strong>Figure 8. </strong>PCB perfboard for electronics circuit assembly.</em></h5>
+<p>&nbsp;</p>
+<p>This particular type of PCB is often called a perfboard or perf board. It has holes at regularly spaced intervals, like the solderless breadboard, for easy component placement.</p>
+<p>Figure 8 shows this example perfboard copper-side-up;&nbsp;the side where all the soldering is done. Each hole is ringed with a small layer of copper metal for bonding to the solder. Some perfboards have copper rings on both the top and the bottom so that the soldering can be done on both sides.</p>
+<p>Unlike the solderless breadboards discussed above, in which holes are electrically connected in groups of five, all of the holes on a typical perfboard are independent of each other. However, PCBs with the same 5-hole connection pattern as breadboards can be purchased and used for hobby circuit construction.</p>
+<p>Aside from that, production PCBs have traces of copper laid down on the phenolic or fiberglass substrate material to form pre-engineered connection pathways that function as wires in a circuit. An example of such a board is shown in Figure 9.</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/pre-engineered-connection-pathways-circuit.jpg" /></p>
+<h5><em><strong>Figure 9. </strong>Example of a PCB with components and wires assembled to the board.</em></h5>
+<p>&nbsp;</p>
+<p>Figure 9&nbsp;is an AC-to-DC power converter&nbsp;circuit designed to take 120 V&nbsp;alternating current (AC) power from a household wall socket and transform it into a low-voltage direct current (DC).&nbsp;A resistor appears on this board, the fifth component counting up from the bottom, located in the middle-right area of the board.</p>
+<p>Figure 10 shows this board&rsquo;s underside, revealing the copper traces&nbsp;connecting components together, as well as the silver-colored deposits of solder bonding the component leading to those traces.</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/soldered-wire-wrapped-circuit.jpg" /></p>
+<h5><em><strong>Figure 10. </strong>Example of a PCB showing printed copper traces and component solder connections.</em></h5>
+<p>&nbsp;</p>
+<p>A soldered or wire-wrapped circuit is considered permanent,&nbsp;that is, it is unlikely to fall apart accidentally. However, these construction techniques are sometimes considered too permanent. If anyone wishes to replace a component or change the circuit in any substantial way, they must invest a fair amount of time undoing the connections. Also, both soldering and wire-wrapping require specialized tools which may not be immediately available.</p>
+<h3>&nbsp;</h3>
+<h3>Terminal Strips</h3>
+<p>Another alternative construction technique used throughout the industrial world is that of the terminal strip<em> </em>(Figure 11).</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/terminal-strips.jpg" /></p>
+<h5><em><strong>Figure 11. </strong>Terminal strip with electrical connections held in place with machine screws.&nbsp;</em></h5>
+<p>&nbsp;</p>
+<p>Terminal strips, alternatively called barrier strips or terminal blocks, are comprised of a length of nonconducting material with several small bars of metal embedded within. Each metal bar has at least one machine screw or another fastener under which a wire or component lead may be secured. Multiple wires fastened by one screw are made electrically common to each other, as are wires fastened to multiple screws on the same bar.&nbsp;</p>
+<p>Another type of&nbsp;terminal strip is shown in Figure 12.</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/europian-style.jpg" /></p>
+<h5><em><strong>Figure 12. </strong>Terminal strip with recessed screws for connections.&nbsp;</em></h5>
+<p>&nbsp;</p>
+<p>This technique,&nbsp;referred to as a &ldquo;European&rdquo; style, has recessed screws to help prevent accidental shorting between terminals by a screwdriver or other metal object.</p>
+<p>In the illustration of Figure 13, a single-battery, three-resistor series circuit is shown constructed on a terminal strip.</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/series-circuit-construction-terminal-strip.jpg" /></p>
+<h5><em><strong>Figure 13. </strong>Terminal strip with recessed screws for connections.&nbsp;</em></h5>
+<p>&nbsp;</p>
+<p>If the terminal strip uses machine screws to hold the component and wire end, nothing but a screwdriver is needed to secure new connections or break old connections. Some terminal strips use spring-loaded clips&mdash;similar to a breadboard except for increased ruggedness&mdash;that are engaged and disengaged using a screwdriver as a push tool (no twisting involved). The electrical connections established by a terminal strip are quite robust and are considered suitable for both permanent and temporary construction.</p>
+<h3>&nbsp;</h3>
+<h3>Translating a Schematic Diagram to a Circuit Layout</h3>
+<p>One of the essential skills for anyone interested in electricity and electronics is to be able to &ldquo;translate&rdquo; a schematic diagram to a real circuit layout where the components may not be oriented the same way.&nbsp;Schematic diagrams are usually drawn for maximum readability (except those few noteworthy examples sketched to create maximum confusion), but practical circuit construction often demands a different component orientation. Building simple circuits on terminal strips is one way to develop the spatial-reasoning skill of &ldquo;stretching&rdquo; wires to make the same connection paths.</p>
+<p>&nbsp;</p>
+<h4>Translating a Simple Parallel Circuit Into a Circuit Layout</h4>
+<p>Consider the case of a single-battery, three-resistor parallel circuit constructed on a terminal strip, as shown in Figure 14.</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/single-battery-three-resistors-parallel-circuit-terminal-strip.jpg" /></p>
+<h5><em><strong>Figure 14. </strong>Wiring up a&nbsp;three-resistor parallel circuit using a terminal strip.&nbsp;</em></h5>
+<p>&nbsp;</p>
+<p>Progressing from a nice, neat schematic diagram to the real circuit&mdash;especially when the resistors to be connected are physically arranged in a linear fashion on the terminal strip&mdash;is not obvious to many, so I&rsquo;ll outline the process step-by-step.</p>
+<p>First, start with the clean schematic diagram and all components secured to the terminal strip, with no connecting wires (Figure 15):</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/linear-fashion-terminal-strip.jpg" /></p>
+<h5><em><strong>Figure 15. </strong>Step 1 of wiring up a&nbsp;three-resistor parallel circuit using a terminal strip.&nbsp;</em></h5>
+<p>&nbsp;</p>
+<p>Next, trace the wire connection from one side of the battery to the first component in the schematic, securing a connecting wire between the same two points on the real circuit. It can be helpful to over-draw the schematic&rsquo;s wire with another line to indicate what connections&nbsp;are made in real life, as demonstrated in Figure 16.</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/one-side-battery-first-component-schematic.jpg" /></p>
+<h5><em><strong>Figure 16. </strong>Step 2: Connect the battery&#39;s positive terminal to the first resistor.&nbsp;</em></h5>
+<p>&nbsp;</p>
+<p>Continue this process, wire by wire, until all connections in the schematic diagram have been accounted for. It might be helpful to regard common wires in a SPICE-like fashion;&nbsp;make all connections to a common wire in the circuit as one step, making sure every component with a connection to that wire has a connection to that wire before proceeding to the next.</p>
+<p>For the next step (Figure 17), the top sides of the remaining two resistors are connected together and in&nbsp;common with the wire secured in the previous step.</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/spice-like-fashion-schematic-diagram.jpg" /></p>
+<h5><em><strong>Figure 17.</strong> Step 3: Connect the other two resistors to the positive battery terminal electrical node.&nbsp;</em></h5>
+<p>&nbsp;</p>
+<p>With the top sides of all resistors (as shown in the schematic) connected together and to the battery&rsquo;s positive (+) terminal, all we have to do now is connect the bottom sides together and to the other side of the battery, as illustrated in Figure 18.</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/resistors-connected-together-to-both-battery-terminal.jpg" /></p>
+<h5><em><strong>Figure 18. </strong>Step 4: Connect&nbsp;the negative battery terminal to the opposite sides of the three parallel resistors.</em></h5>
+<p>&nbsp;</p>
+<p>Typically, all wires are labeled with number tags in the electronics industry, and electrically common wires bear the same tag number, just as they do in a <a href="https://www.allaboutcircuits.com/textbook/reference/chpt-7/fundamentals-spice-programming/" target="_blank">SPICE simulation</a>. In this case, we could label wires 1 and 2, as shown in Figure 19.</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/common-wire-numbers-representing-electrically-common-points.jpg" /></p>
+<h5><em><strong>Figure 19. </strong>Node numbering of the terminal strip connections.</em></h5>
+<p>&nbsp;</p>
+<p>Another industrial convention is to modify the schematic diagram slightly to indicate actual wire connection points on the terminal strip. This demands a labeling system for the strip itself, as shown in Figure 20.&nbsp;</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/terminal-strip-bars-labeled-connection-points-referenced.jpg" /></p>
+<h5><em><strong>Figure 20. </strong>Terminal block numbering technique.</em></h5>
+<p>&nbsp;</p>
+<p>A &ldquo;TB&rdquo; number (terminal block number) for the strip has been added, followed by another number representing each metal bar on the strip.</p>
+<p>This way, the schematic may be used as a &ldquo;map&rdquo; to locate points in a real circuit, regardless of how tangled and complex the connecting wiring may appear to the eyes. This may seem excessive for the simple, three-resistor circuit shown here. However,&nbsp;such detail is absolutely necessary for the construction and maintenance of large circuits, especially when those circuits may span a great physical distance and use more than one terminal strip in more than one panel or box.</p>
+<p>&nbsp;</p>
+<h3>Review of Building Electrical Circuits with Breadboards, PCBs, and Terminal Strips</h3>
+<ul>
+<li>A <strong><em>solderless breadboard</em> </strong>is a device used to quickly assemble&nbsp;temporary circuits by plugging wires and components into electrically common spring clips arranged underneath rows of holes in a plastic board.</li>
+<li><strong><em>Soldering</em></strong> is a low-temperature welding process utilizing a lead/tin or tin/silver alloy to bond wires, and component leads together, usually with the components secured to a fiberglass board.</li>
+<li><strong><em>Wire-wrapping</em></strong> is an alternative to soldering, involving small-gauge wire tightly wrapped around component leads rather than a welded joint to connect components together.</li>
+<li><strong><em>Perfboard&nbsp;</em></strong>is a type of printed circuit board (PCB) that can be used for quickly assembling circuits with solder connections.</li>
+<li>A <strong><em>terminal strip</em></strong>, also known as a <em>barrier strip</em> or <em>terminal block,</em> is another device used to mount components and wires to build circuits. Screw terminals or heavy spring clips attached to metal bars provide connection points for the wire ends and component leads. These metal bars are mounted separately to a piece of nonconducting material such as plastic, bakelite, or ceramic.</li>
+</ul>

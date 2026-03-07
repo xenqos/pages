@@ -1,0 +1,61 @@
+<h1>555 Lab - Oscillator With Hysteresis</h1>
+<h3>Project Overview</h3>
+<p>This project introduces the design of&nbsp;one of the most basic <a href="https://www.allaboutcircuits.com/technical-articles/classical-r-c-oscillator-bridged-t-network-wien-oscillator-network/">RC oscillators</a>, an <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-6/555-audio-oscillator/" target="_blank">astable multivibrator</a>, which&nbsp;is simple and predictable. As illustrated in Figure 1, the circuit uses a <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-8/555-ic/" target="_blank">555 timer</a> as its central component and includes red and green <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-3/special-purpose-diodes/" target="_blank">light-emitting diodes (LEDs)</a> for output indicators.&nbsp;</p>
+<p>&nbsp;</p>
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/555-hysteretic-oscillator-illustration-1.jpg" /></p>
+<h5><em><strong>Figure 1.</strong> Breadboard implementation of the&nbsp;555 timer oscillator with hysteresis.</em></h5>
+<p>&nbsp;</p>
+<p>A <a href="https://eepower.com/resistor-guide/resistor-types/potentiometer/" target="_blank">potentiometer</a> allows easy frequency adjustment of the oscillator. The <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-3/sensitive-voltage-detector/" target="_blank">sensitivity detector with headphones</a> is optional.</p>
+<p>Any inverting <a href="https://www.allaboutcircuits.com/industry-articles/an-introduction-to-schmitt-triggers-otto-schmitt/" target="_blank">Schmitt trigger</a> will work in this design, although the frequency will shift somewhat depending on the <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-7/hysteresis/" target="_blank">hysteresis</a> of the gate.</p>
+<p>&nbsp;</p>
+<h3>Parts and Materials</h3>
+<ul>
+<li>One 9 V battery</li>
+<li>Battery clip&nbsp;</li>
+<li>Mini-hook clips, soldered to the battery clip</li>
+<li>U1 - 555 timer IC</li>
+<li>D1 - red light-emitting diode</li>
+<li>D2 - green light-emitting diode</li>
+<li>R1, R2 - 1 k&Omega; 1/4 W <a href="https://eepower.com/resistor-guide/" target="_blank">resistors</a></li>
+<li>R3 - 10 &Omega; 1/4 W resistor</li>
+<li>R4 - 10 k&Omega;, 15-turn potentiometer</li>
+<li>C1 - 1 &micro;F <a href="https://eepower.com/capacitor-guide/" target="_blank">capacitor</a></li>
+<li>C1 - 100 &micro;F capacitor</li>
+</ul>
+<p>&nbsp;</p>
+<h3>Learning Objectives</h3>
+<ul>
+<li>How to use a Schmitt trigger for a simple RC oscillator</li>
+<li>Learn a practical application for an <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-16/complex-circuits/" target="_blank">RC time constant</a></li>
+<li>Learn one of several 555 timer astable multivibrator configurations</li>
+</ul>
+<p>&nbsp;</p>
+<h3>Instructions</h3>
+<p><strong>Step 1:&nbsp;</strong>Build the circuit illustrated in the circuit schematic of Figure 2 and illustrated in the breadboard implementation of Figure 1 above.</p>
+<p>&nbsp;</p>
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/555-hysteretic-oscillator-schematic-diagram.jpg" /></p>
+<h5><em><strong>Figure 2. </strong>Schematic diagram of the 555 timer oscillator with hysteresis.</em></h5>
+<p>&nbsp;</p>
+<p>Figure 3 is an alternative schematic diagram with the 555 timers&nbsp;represented as a modified Schmitt trigger with extra pins required by the 555 timer&nbsp;to implement the Schmitt trigger function.</p>
+<p>&nbsp;</p>
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/555-hysteretic-oscillator-schematic-diagram-1.jpg" /></p>
+<h5><em><strong>Figure 3. </strong>Schematic diagram of the 555 timer oscillator with hysteresis using a Schmitt trigger representation.</em></h5>
+<p>&nbsp;</p>
+<p><strong>Step 2:&nbsp;</strong>This circuit has a lower-end frequency of 0.7 Hz, which means each LED will alternate and be lit for just under a second. Begin with the potentiometer turned to its highest <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/resistance/" target="_blank">resistance</a> value.&nbsp;The 555 does not go rail to rail (it doesn&rsquo;t quite reach the upper supply <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/voltage-current/" target="_blank">voltage</a>) because of its output Darlington transistors, and this causes the <a href="https://www.allaboutcircuits.com/technical-articles/op-amp-and-transistor-analog-square-wave-oscillator-design/" target="_blank">oscillator square wave</a> to be not quite symmetrical. Can you see this by looking at the LEDs?</p>
+<p>The higher the power supply voltage, the less pronounced this asymmetry is, while it gets worse with lower power supply voltages. If the output were true rail to rail, it would be a 50% <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-7/square-wave-signals/" target="_blank">square wave</a>, which can be attained if one uses the <a href="https://www.allaboutcircuits.com/textbook/digital/chpt-3/cmos-gate-circuitry/" target="_blank">complementary metal-oxide semiconductor (CMOS)</a> version of the 555, such as the <a href="https://www.ti.com/lit/ds/symlink/tlc555.pdf?ts=1677052105895&amp;ref_url=https%253A%252F%252Fwww.google.com%252F" target="_blank">TLC555</a>.</p>
+<p><strong>Step 3:&nbsp;</strong>As you turn the potentiometer counterclockwise, the frequency will increase, going well into the high-end audio range. As this frequency gets too high, the LEDs will flash too quickly to observe the changes in frequency. You can verify this with an oscilloscope, an <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-3/sensitive-voltage-detector/" target="_blank">audio detector</a>, or a piezoelectric speaker. If you monitor the frequency with the audio detector or speaker,&nbsp;as you continue to turn the potentiometer, the pitch of the sound will rise.</p>
+<p><strong>Step 4:&nbsp;</strong>You can increase the frequency 100 times by replacing the 100 &micro;F capacitor with the 1 &micro;F capacitor, which will also raise the maximum frequency well into the ultrasonic range, around 70 kHz.</p>
+<p>R3 was added to prevent shorting the IC output through C1, as the capacitor shorts the AC portion of the 555 output to the <a href="https://www.allaboutcircuits.com/technical-articles/an-introduction-to-ground/" target="_blank">ground</a>. On a discharged battery, it is not noticeable, but with a fresh 9 V, the 555 IC will get very hot. If you eliminate the resistor and adjust R4 for the maximum frequency, you can test this;&nbsp;it is not good for the battery or the 555, but they will survive a short test.</p>
+<p>&nbsp;</p>
+<h3>Theory of Operation</h3>
+<p>This is a hysteretic oscillator, which is a type of relaxation oscillator. It is also an astable multivibrator. It is a logical offshoot of the <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-8/555-schmitt-trigger/" target="_blank">555 Schmitt trigger experiment</a> shown earlier.&nbsp;The formula to calculate the frequency with this configuration using a 555 is:</p>
+<p>&nbsp;</p>
+<h4>$$f = \frac{0.7}{RC}$$</h4>
+<p>&nbsp;</p>
+<p>The 555 hysteresis voltage&nbsp;is dependent on the supply voltage, so the frequency of this oscillator would be relatively independent of the supply voltage if it weren&rsquo;t for the lack of rail-to-rail output.&nbsp;The output of a 555 either goes to the ground or is relatively close to the plus voltage. This allows the resistor and capacitor to charge and discharge through the output pin.</p>
+<p>Since this is a digital-type output signal, the LEDs interact very little in its operation. The capacitor charge and discharge curves are shown in Figure 5.&nbsp;</p>
+<p>&nbsp;</p>
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/555-oscillator-waveforms.jpg" /></p>
+<h5><em><strong>Figure 5. </strong>555 oscillator with hysteresis waveforms.</em></h5>
+<p>&nbsp;</p>
+<p>In this figure, you can also see&nbsp;why an asymmetrical square wave output is created.&nbsp;The first pulse generated by the oscillator is a bit longer than the rest as the capacitor&nbsp;charges from the ground.</p>

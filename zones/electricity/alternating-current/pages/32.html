@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Alternating Current</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='31.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='33.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>An Electric Pendulum</h1>
+<p><a href=&quot;https://www.allaboutcircuits.com/video-lectures/capacitors-part-1/&quot; target=&quot;_blank&quot;>Capacitors</a> store energy in the form of an electric field, and electrically manifest that stored energy as a potential: <em>static voltage</em>. <a href=&quot;https://www.allaboutcircuits.com/video-lectures/inductors-part-1/&quot; target=&quot;_blank&quot;>Inductors</a> store energy in the form of a magnetic field, and electrically manifest that stored energy as a kinetic motion of electrons: <em>current</em>.</p>
+<p>Capacitors and inductors are flip-sides of the same reactive coin, storing and releasing energy in complementary modes. When these two types of reactive components are directly connected together, their complementary tendencies to store energy will produce an unusual result.</p>
+<p>If either the capacitor or inductor starts out in a charged state, the two components will exchange energy between them, back and forth, creating their own AC voltage and current cycles.</p>
+<p>If we assume that both components are subjected to a sudden application of voltage (say, from a momentarily connected battery), the capacitor will very quickly charge and the inductor will oppose change in current, leaving the capacitor in the charged state and the inductor in the discharged state.</p>
+<p>&nbsp;</p>
+<p><strong>Initial State:</strong></p>
+<p><img src=&quot;/uploads/articles/capacitor-charged.jpg&quot; /></p>
+<p><em>Capacitor charged: voltage at (+) peak; inductor discharged: zero current.</em></p>
+<p>&nbsp;</p>
+<p>The capacitor will begin to discharge, its voltage decreasing. Meanwhile, the inductor will begin to build up a &ldquo;charge&rdquo; in the form of a magnetic field as current increases in the circuit.</p>
+<p>&nbsp;</p>
+<p><img src=&quot;/uploads/articles/capacitor-discharging.jpg&quot; /></p>
+<p><em>Capacitor discharging: voltage decreasing; inductor charging: current increasing.</em></p>
+<p>&nbsp;</p>
+<p>The inductor, still charging, will keep current flowing in the circuit until the capacitor has been completely discharged, leaving zero voltage across it.</p>
+<p>&nbsp;</p>
+<p><img src=&quot;/uploads/articles/capacitor-fully-discharged.jpg&quot; /></p>
+<p><em>Capacitor fully discharged: zero voltage; inductor fully charged: maximum current.</em></p>
+<p>&nbsp;</p>
+<p>The inductor will maintain current flow even with no voltage applied. In fact, it will generate a voltage (like a battery) in order to keep current in the same direction. The capacitor, being the recipient of this current, will begin to accumulate a charge in the opposite polarity as before.</p>
+<p>&nbsp;</p>
+<p><img src=&quot;/uploads/articles/capacitor-charging.jpg&quot; /></p>
+<p><em>Capacitor charging: voltage increasing (in opposite polarity); inductor discharging: current decreasing.</em></p>
+<p>&nbsp;</p>
+<p>When the inductor is finally depleted of its energy reserve and the electrons come to a halt, the capacitor will have reached full (voltage) charge in the opposite polarity as when it started.</p>
+<p>&nbsp;</p>
+<p><img src=&quot;/uploads/articles/capacitor-fully-charged.jpg&quot; /></p>
+<p><em>Capacitor fully charged: voltage at (-) peak; inductor fully discharged: zero current.</em></p>
+<p>&nbsp;</p>
+<p>Now we&rsquo;re at a condition very similar to where we started: the capacitor at full charge and zero current in the circuit. The capacitor, as before, will begin to discharge through the inductor, causing an increase in current (in the opposite direction as before) and a decrease in voltage as it depletes its own energy reserve.</p>
+<p>&nbsp;</p>
+<p><em><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/AEP_fig6-6.JPG&quot; /></em></p>
+<p><em>Capacitor discharging: voltage decreasing; inductor charging: current increasing.</em></p>
+<p>&nbsp;</p>
+<p>Eventually the capacitor will discharge to zero volts, leaving the inductor fully charged with full current through it.</p>
+<p>&nbsp;</p>
+<p><em><img src=&quot;/uploads/articles/Screen_Shot_2019-04-26_at_1.53.40_PM.png&quot; /></em></p>
+<p><em>Capacitor fully discharged: zero voltage; inductor fully charged: current at (-) peak.</em></p>
+<p>&nbsp;</p>
+<p>The inductor, desiring to maintain current in the same direction, will act like a source again, generating a voltage like a battery to continue the flow. In doing so, the capacitor will begin to charge up and the current will decrease in magnitude.</p>
+<p>&nbsp;</p>
+<p><em><img src=&quot;/uploads/articles/Screen_Shot_2019-04-26_at_1.54.48_PM.png&quot; /></em></p>
+<p><em>Capacitor charging: voltage increasing; inductor discharging: current decreasing.</em></p>
+<p>&nbsp;</p>
+<p>Eventually the capacitor will become fully charged again as the inductor expends all of its energy reserves trying to maintain current. The voltage will once again be at its positive peak and the current at zero. This completes one full cycle of the energy exchange between the capacitor and inductor.</p>
+<p>&nbsp;</p>
+<p><img src=&quot;/uploads/articles/capacitor-fully-charged1.jpg&quot; /></p>
+<p><em>Capacitor fully charged: voltage at (+) peak; inductor fully discharged: zero current.</em></p>
+<p>&nbsp;</p>
+<p>This oscillation will continue with steadily decreasing amplitude due to power losses from stray resistances in the circuit, until the process stops altogether.</p>
+<p>Overall, this behavior is akin to that of a pendulum: as the pendulum mass swings back and forth, there is a transformation of energy taking place from kinetic (motion) to potential (height), in a similar fashion to the way energy is transferred in the capacitor/inductor circuit back and forth in the alternating forms of current (kinetic motion of electrons) and voltage (potential electric energy).</p>
+<p>At the peak height of each swing of a pendulum, the mass briefly stops and switches directions. It is at this point that potential energy (height) is at a maximum and kinetic energy (motion) is at zero.</p>
+<p>As the mass swings back the other way, it passes quickly through a point where the string is pointed straight down. At this point, potential energy (height) is at zero and kinetic energy (motion) is at maximum. Like the circuit, a pendulum&rsquo;s back-and-forth oscillation will continue with a steadily dampened amplitude, the result of air friction (resistance) dissipating energy.</p>
+<p>Also like the circuit, the pendulum&rsquo;s position and velocity measurements trace two sine waves (90 degrees out of phase) over time.</p>
+<p>&nbsp;</p>
+<p><img src=&quot;/uploads/articles/pendulum-transfers-energy-between-kinetic-and-potential-energy.jpg&quot; /></p>
+<p><em>Pendulum transfers energy between kinetic and potential energy as it swings low to high.</em></p>
+<p>&nbsp;</p>
+<p>In physics, this kind of natural sine-wave oscillation for a mechanical system is called <em>Simple Harmonic Motion</em> (often abbreviated as &ldquo;SHM&rdquo;). The same underlying principles govern both the oscillation of a capacitor/inductor circuit and the action of a pendulum, hence the similarity in effect.</p>
+<p>It is an interesting property of any pendulum that its periodic time is governed by the length of the string holding the mass, and not the weight of the mass itself. That is why a pendulum will keep swinging at the same frequency as the oscillations decrease in amplitude. The oscillation rate is independent of the <em>amount</em> of energy stored in it.</p>
+<p>The same is true for the capacitor/inductor circuit. The rate of oscillation is strictly dependent on the sizes of the capacitor and inductor, not on the amount of voltage (or current) at each respective peak in the waves.</p>
+<p>The ability for such a circuit to store energy in the form of oscillating voltage and current has earned it the name <em><a href=&quot;https://www.allaboutcircuits.com/textbook/alternating-current/chpt-6/parallel-tank-circuit-resonance/&quot; target=&quot;_blank&quot;>tank circuit</a></em>. Its property of maintaining a single, natural frequency regardless of how much or little energy is actually being stored in it gives it special significance in electric circuit design.</p>
+<p>However, this tendency to oscillate, or <em>resonate</em>, at a particular frequency is not limited to circuits exclusively designed for that purpose. In fact, nearly any AC circuit with a combination of capacitance and inductance (commonly called an &ldquo;LC circuit&rdquo;) will tend to manifest unusual effects when the AC power source frequency approaches that natural frequency.</p>
+<p>This is true regardless of the circuit&rsquo;s intended purpose.</p>
+<p>If the power supply frequency for a circuit exactly matches the natural frequency of the circuit&rsquo;s LC combination, the circuit is said to be in a state of <em>resonance</em>. The unusual effects will reach maximum in this condition of resonance.</p>
+<p>For this reason, we need to be able to predict what the resonant frequency will be for various combinations of L and C, and be aware of what the effects of resonance are.</p>
+<p>&nbsp;</p>
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li>A capacitor and inductor directly connected together form something called a <em>tank circuit</em>, which oscillates (or <em>resonates</em>) at one particular frequency. At that frequency, energy is alternately shuffled between the capacitor and the inductor in the form of alternating voltage and current 90 degrees out of phase with each other.</li>
+<li>When the power supply frequency for an AC circuit exactly matches that circuit&rsquo;s natural oscillation frequency as set by the L and C components, a condition of <em>resonance</em> will have been reached.</li>
+</ul>
+
+
+
+</div>
+</div>
+</body>
+</html>

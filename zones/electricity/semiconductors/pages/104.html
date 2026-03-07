@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Semiconductors</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='103.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='105.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>Oscillator Circuits</h1>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/phase-shift-oscillator.jpg&quot; /></p>
+<p><em>Phase shift oscillator. R1C1, R2C2, and R3C3 each provide 60&deg; of phase shift.</em></p>
+<p><br /><br>
+&nbsp;</p>
+<p>The phase shift oscillator of the figure above produces a sine wave output in the audio frequency range. Resistive feedback from the collector would be negative feedback due to 180&deg; phasing (base to collector phase inversion). However, the three 60&deg; RC phase shifters ( R1C1, R2C2, and R3C3) provide an additional 180&deg; for a total of 360&deg;. This in-phase feedback constitutes positive feedback. Oscillations result if transistor gain exceeds feedback network losses.</p>
+<h3>Varactor multiplier</h3>
+<p>A varactor or variable capacitance diode with a nonlinear capacitance vs frequency characteristic distorts the applied sinewave f1 in the figure below, generating harmonics, f3.</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/varactor-diode.jpg&quot; /></p>
+<p><em>Varactor diode, having a nonlinear capacitance vs voltage characteristic, serves in frequency multiplier.</em></p>
+<p><br /><br>
+<br /><br>
+The fundamental filter passes f1, blocking the harmonics from returning to the generator. The choke passes DC and blocks radio frequencies (RF) from entering the Vbias supply. The harmonic filter passes the desired harmonic, say the 3rd, to the output, f3. The capacitor at the bottom of the inductor is a large value, low reactance, to block DC but ground the inductor for RF. The varicap diode in parallel with the inductor constitutes a parallel resonant network. It is tuned to the desired harmonic. Note that the reverse bias, Vbias, is fixed. The varicap multiplier is primarily used to generate microwave signals which cannot be directly produced by oscillators. The lumped circuit representation in the figure above is actually stripline or waveguide sections. Frequencies up to hundreds of GHz may be produced by varactor multipliers.</p>
+
+
+</div>
+</div>
+</body>
+</html>

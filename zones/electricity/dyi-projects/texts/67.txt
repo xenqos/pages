@@ -1,0 +1,40 @@
+<h1>Analog Lab - Introduction</h1>
+<h3>Introduction to Analog Circuits</h3>
+<p><a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-9/computational-circuits/" target="_blank">Analog circuits</a>&nbsp;use signals that can&nbsp;vary continuously from zero to full power supply <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/voltage-current/" target="_blank">voltage</a>. This stands in contrast to <a href="https://www.allaboutcircuits.com/textbook/digital/" target="_blank">digital circuits</a>, which almost exclusively employ all-or-nothing <a href="https://www.allaboutcircuits.com/textbook/digital/chpt-3/digital-signals-gates/" target="_blank">binary&nbsp;signals</a> (1 and 0).&nbsp;<a href="https://www.allaboutcircuits.com/textbook/digital/chpt-3/logic-signal-voltage-levels/" target="_blank">Digital signal voltages</a> are restricted to values of zero and full supply voltage, with no valid state in between those extreme limits.</p>
+<p>These&nbsp;analog circuit projects&nbsp;use integrated circuit (IC)&nbsp;components (you might also hear these called "chips"). Such components are actually networks of interconnected components manufactured on a single wafer of semiconducting material. ICs providing many pre-engineered functions are available at very low cost, benefitting students, hobbyists, and professional circuit designers alike. Most integrated circuits provide the same functionality as <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-5/introduction-to-discrete-semiconductor-circuits/" target="_blank">discrete&nbsp;semiconductor circuits</a> at higher levels of reliability and at a fraction of the cost. Usually, the discrete-component circuit construction is favored only when <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-2/power-dissipation/" target="_blank">power dissipation</a> levels are too high for integrated circuits to handle.&nbsp;</p>
+<p>In this chapter, each project will provide step-by-step instructions, a parts list, schematic diagrams, and illustrations similar to that shown in Figure 1.&nbsp;</p>
+<p>&nbsp;</p>
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/crossover-distortion-in-push-pull-amplifier-circuit.jpg" /></p>
+<h5><em><strong>Figure 1.</strong> Breadboard implementation of an analog circuit&mdash;a Class B audio amplifier.</em></h5>
+<p>&nbsp;</p>
+<p>These experiments are designed to be easy for&nbsp;students, hobbyists, or makers to follow along.</p>
+<p>Analog circuits are often referred to as linear circuits to emphasize the valid continuity of signal range forbidden in digital circuits, but this label is unfortunately misleading.&nbsp;Just because a voltage or current signal can vary smoothly between the extremes of zero and full power supply limits does not necessarily mean that all mathematical relationships between these signals are linear in the straight-line&nbsp;or proportional&nbsp;sense of the word. As you will see in this chapter, many so-called linear&nbsp;circuits are quite nonlinear in their behavior, either by the necessity of physics or by design.</p>
+<p>&nbsp;</p>
+<h3>The Operational Amplifier (Op Amp)</h3>
+<p>These projects will introduce you to the <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-5/simple-op-amp/" target="_blank">operational amplifier</a> or <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-8/introduction-operational-amplifiers/" target="_blank">op amp</a>. The op amp is perhaps the most versatile and important analog IC for the student to master. Essentially nothing more than a differential amplifier with a very high voltage gain, op amps are the workhorse of the analog design world. By cleverly applying feedback from the output of an op amp to one or more of its inputs, as illustrated in the example of Figure 2, a wide variety of behaviors may be obtained from this single device.&nbsp;</p>
+<p>&nbsp;</p>
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/non-inverting-amplifier-schematic-diagram.jpg" /></p>
+<h5><em><strong>Figure 2.</strong> Schematic diagram of a non-inverting amplifier circuit using an operational amplifier and negative feedback.</em></h5>
+<p>&nbsp;</p>
+<p>Many different models of op amp are available at low cost, but circuits described in this chapter will incorporate commonly available op amp models.</p>
+<p>In these projects,&nbsp;operational amplifiers will be used in building many circuits, including:</p>
+<ul>
+<li><a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-6/voltage-comparator/" target="_blank">Analog voltage comparator</a></li>
+<li><a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-6/precision-voltage-follower/" target="_blank">Voltage follower with a high-impedance input</a></li>
+<li><a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-6/noninverting-amplifier/" target="_blank">Non-inverting amplifier with controllable gain</a></li>
+<li><a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-6/integrator/" target="_blank">Analog integrator</a></li>
+<li><a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-6/pwm-power-controller/" target="_blank">Pulse-width modulated power controller</a></li>
+<li><a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-6/class-b-audio-amplifier/" target="_blank">Class B audio amplifier</a></li>
+</ul>
+<p>&nbsp;</p>
+<h3>Analog Circuit Concepts</h3>
+<p>In the process of building and testing these analog circuits, you will be introduced to several important concepts:</p>
+<ul>
+<li>Open loop gain</li>
+<li><a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-8/negative-feedback/" target="_blank">Negative feedback</a></li>
+<li>Distortion</li>
+<li>Loading</li>
+<li><a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-8/op-amp-practical-considerations/" target="_blank">Bias current compensation</a></li>
+<li>Oscillators</li>
+<li>And much more!</li>
+</ul>

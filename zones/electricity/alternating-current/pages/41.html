@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Alternating Current</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='40.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='42.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>More on Spectrum Analysis</h1>
+<p>Computerized Fourier analysis, particularly in the form of the <em>FFT</em> algorithm, is a powerful tool for furthering our understanding of<a href=&quot;https://www.allaboutcircuits.com/textbook/alternating-current/chpt-1/ac-waveforms/&quot; target=&quot;_blank&quot;> waveforms</a> and their related spectral components.</p>
+<p>This same mathematical routine programmed into the <a href=&quot;https://www.allaboutcircuits.com/textbook/reference/chpt-7/fundamentals-spice-programming/&quot; target=&quot;_blank&quot;>SPICE</a> simulator as the .fourier option is also programmed into a variety of electronic test instruments to perform real-time Fourier analysis on measured signals.</p>
+<p>This section is devoted to the use of such tools and the analysis of several different waveforms.</p>
+<p>First we have a simple sine wave at a frequency of 523.25 Hz. This particular frequency value is a &ldquo;C&rdquo; pitch on a piano keyboard, one octave above &ldquo;middle C&rdquo;.</p>
+<p>Actually, the signal measured for this demonstration was created by an electronic keyboard set to produce the tone of a pan flute, the closest instrument &ldquo;voice&rdquo; I could find resembling a perfect sine wave. The plot below was taken from an oscilloscope display, showing signal amplitude (voltage) over time:</p>
+<p>&nbsp;</p>
+<p><img src=&quot;/uploads/articles/oscilloscope-display-voltage-vs-time.jpg&quot; /></p>
+<p><em>Oscilloscope display: voltage vs time</em></p>
+<p>&nbsp;</p>
+<p>Viewed with an <a href=&quot;https://www.allaboutcircuits.com/textbook/experiments/chpt-4/pc-oscilloscope/&quot; target=&quot;_blank&quot;>oscilloscope</a>, a sine wave looks like a wavy curve traced horizontally on the screen. The horizontal axis of this oscilloscope display is marked with the word &ldquo;Time&rdquo; and an arrow pointing in the direction of time&rsquo;s progression. The curve itself, of course, represents the cyclic increase and decrease of voltage over time.</p>
+<p>Close observation reveals imperfections in the sine-wave shape. This, unfortunately, is a result of the specific equipment used to analyze the waveform. Characteristics like these due to quirks of the test equipment are technically known as <em>artifacts</em>: phenomena existing solely because of a peculiarity in the equipment used to perform the experiment.</p>
+<p>If we view this same AC voltage on a spectrum analyzer, the result is quite different:</p>
+<p>&nbsp;</p>
+<p><img src=&quot;/uploads/articles/spectrum-analyzer-display.jpg&quot; /></p>
+<p><em>Spectrum analyzer display: voltage vs frequency</em></p>
+<p>&nbsp;</p>
+<p>As you can see, the horizontal axis of the display is marked with the word &ldquo;Frequency,&rdquo; denoting the domain of this measurement. The single peak on the curve represents the predominance of a single frequency within the range of frequencies covered by the width of the display.</p>
+<p>If the scale of this analyzer instrument were marked with numbers, you would see that this peak occurs at 523.25 Hz. The height of the peak represents the signal amplitude (voltage).</p>
+<p>If we mix three different sine-wave tones together on the electronic keyboard (C-E-G, a C-major chord) and measure the result, both the oscilloscope display and the spectrum analyzer display reflect this increased complexity:</p>
+<p>&nbsp;</p>
+<p><img src=&quot;/uploads/articles/oscilloscope-display-three-tones.jpg&quot; /></p>
+<p><em>Oscilloscape display: three tones</em></p>
+<p>&nbsp;</p>
+<p>The oscilloscope display (time-domain) shows a waveform with many more peaks and valleys than before, a direct result of the mixing of these three frequencies. As you will notice, some of these peaks are higher than the peaks of the original single-pitch waveform, while others are lower.</p>
+<p>This is a result of the three different waveforms alternately reinforcing and canceling each other as their respective phase shifts change in time.</p>
+<p>&nbsp;</p>
+<p><img src=&quot;/uploads/articles/spectrum-analyzer-display-three-tones.jpg&quot; /></p>
+<p><em>Spectrum analyzer display: three tones</em></p>
+<p>&nbsp;</p>
+<p>The spectrum display (frequency-domain) is much easier to interpret: each pitch is represented by its own peak on the curve. The difference in height between these three peaks is another artifact of the test equipment: a consequence of limitations within the equipment used to generate and analyze these waveforms, and not a necessary characteristic of the musical chord itself.</p>
+<p>As was stated before, the device used to generate these waveforms is an electronic keyboard: a musical instrument designed to mimic the tones of many different instruments.</p>
+<p>The panflute &ldquo;voice&rdquo; was chosen for the first demonstrations because it most closely resembled a pure sine wave (a single frequency on the spectrum analyzer display). Other musical instrument &ldquo;voices&rdquo; are not as simple as this one, though. In fact, the unique tone produced by <em>any</em> instrument is a function of its waveshape (or spectrum of frequencies).</p>
+<p>For example, let&rsquo;s view the signal for a trumpet tone:</p>
+<p>&nbsp;</p>
+<p><img src=&quot;/uploads/articles/oscilloscope-display-waveshape-of-a-trumpet-tone.jpg&quot; /></p>
+<p><em>Oscilloscope display: waveshape of a trumpet tone</em></p>
+<p>&nbsp;</p>
+<p>The fundamental frequency of this tone is the same as in the first panflute example: 523.25 Hz, one octave above &ldquo;middle C.&rdquo;</p>
+<p>The waveform itself is far from a pure and simple sine-wave form. Knowing that any repeating, non-sinusoidal waveform is equivalent to a series of sinusoidal waveforms at different amplitudes and frequencies, we should expect to see multiple peaks on the spectrum analyzer display:</p>
+<p>&nbsp;</p>
+<p><img src=&quot;/uploads/articles/spectrum-of-a-trumpet-tone.jpg&quot; /></p>
+<p><em>Spectrum of a trumpet tone</em></p>
+<p>&nbsp;</p>
+<p>Indeed we do! The fundamental frequency component of 523.25 Hz is represented by the left-most peak, with each successive harmonic represented as its own peak along the width of the analyzer screen.</p>
+<p>The second harmonic is twice the frequency of the fundamental (1046.5 Hz), the third harmonic three times the fundamental (1569.75 Hz), and so on. This display only shows the first six harmonics, but there are many more comprising this complex tone.</p>
+<p>Trying a different instrument voice (the accordion) on the keyboard, we obtain a similarly complex oscilloscope (time-domain) plot and spectrum analyzer (frequency-domain) display:</p>
+<p>&nbsp;</p>
+<p><img src=&quot;/uploads/articles/oscilloscope-display-waveshape-of-accordion-tone.jpg&quot; /></p>
+<p><em>Oscilloscope display: waveshape of accordion tone</em></p>
+<p>&nbsp;</p>
+<p><img src=&quot;/uploads/articles/spectrum-of-accordion-tone.jpg&quot; /></p>
+<p><em>Spectrum of accordion tone</em></p>
+<p>&nbsp;</p>
+<p>Note the differences in relative harmonic amplitudes (peak heights) on the spectrum displays for trumpet and accordion. Both instrument tones contain harmonics all the way from 1st (fundamental) to 6th (and beyond!), but the proportions aren&rsquo;t the same.</p>
+<p>Each instrument has a unique harmonic &ldquo;signature&rdquo; to its tone. Bear in mind that all this complexity is in reference to <em>a single note</em> played with these two instrument &ldquo;voices.&rdquo; Multiple notes played on an accordion, for example, would create a much more complex mixture of frequencies than what is seen here.</p>
+<p>The analytical power of the oscilloscope and spectrum analyzer permit us to derive general rules about waveforms and their harmonic spectra from real waveform examples. We already know that any deviation from a pure sine-wave results in the equivalent of a mixture of multiple sine-wave waveforms at different amplitudes and frequencies.</p>
+<p>However, close observation allows us to be more specific than this. Note, for example, the time and  frequency-domain plots for a waveform approximating a square wave:</p>
+<p>&nbsp;</p>
+<p><img src=&quot;/uploads/articles/oscilloscope-time-domain-display-of-a-square-wave.jpg&quot; /></p>
+<p><em>Oscilloscope time-domain display of a square wave</em></p>
+<p>&nbsp;</p>
+<p><img src=&quot;/uploads/articles/spectrum-of-a-square-wave.jpg&quot; /></p>
+<p><em>Spectrum (frequency-domain) of a square wave</em></p>
+<p>&nbsp;</p>
+<p>According to the spectrum analysis, this waveform contains <em>no</em> even harmonics, only odd. Although this display doesn&rsquo;t show frequencies past the sixth harmonic, the pattern of odd-only harmonics in descending amplitude continues indefinitely.</p>
+<p>This should come as no surprise, as we&rsquo;ve already seen with SPICE that a square wave is comprised of an infinitude of odd harmonics. The trumpet and accordion tones, however, contained <em>both</em> even and odd harmonics.</p>
+<p>This difference in harmonic content is noteworthy. Let&rsquo;s continue our investigation with an analysis of a triangle wave:</p>
+<p>&nbsp;</p>
+<p><img src=&quot;/uploads/articles/oscilloscope-time-domain-display-of-a-triangle-wave.jpg&quot; /></p>
+<p><em>Oscilloscope time-domain display of a triangle wave</em></p>
+<p>&nbsp;</p>
+<p><img src=&quot;/uploads/articles/spectrum-of-a-triangle-wave.jpg&quot; /></p>
+<p><em>Spectrum of a triangle wave</em></p>
+<p>&nbsp;</p>
+<p>In this waveform there are practically no even harmonics: (Figure above) the only significant frequency peaks on the spectrum analyzer display belong to odd-numbered multiples of the fundamental frequency.</p>
+<p>Tiny peaks can be seen for the second, fourth, and sixth harmonics, but this is due to imperfections in this particular triangle waveshape (once again, artifacts of the test equipment used in this analysis).</p>
+<p>A perfect triangle waveshape produces no even harmonics, just like a perfect square wave. It should be obvious from inspection that the harmonic spectrum of the triangle wave is not identical to the spectrum of the square wave: the respective harmonic peaks are of different heights. However, the two different waveforms are common in their lack of even harmonics.</p>
+<p>Let&rsquo;s examine another waveform, this one very similar to the triangle wave, except that its rise-time is not the same as its fall-time. Known as a <em>sawtooth wave</em>, its oscilloscope plot reveals it to be aptly named:</p>
+<p>&nbsp;</p>
+<p><img src=&quot;/uploads/articles/time-domain-display-of-a-sawtooth-wave.jpg&quot; /></p>
+<p><em>Time-domain display of a sawtooth wave</em></p>
+<p>&nbsp;</p>
+<p>When the spectrum analysis of this waveform is plotted, we see a result that is quite different from that of the regular triangle wave, for this analysis shows the strong presence of even-numbered harmonics (second and fourth):</p>
+<p><img src=&quot;/uploads/articles/frequency-domain-display-of-a-sawtooth-wave.jpg&quot; /></p>
+<p><em>Frequency-domain display of a sawtooth wave</em></p>
+<p>&nbsp;</p>
+<p>The distinction between a waveform having even harmonics versus no even harmonics resides in the difference between a triangle waveshape and a sawtooth waveshape.</p>
+<p>That difference is <em>symmetry</em> above and below the horizontal centerline of the wave. A waveform that is symmetrical above and below its centerline (the shape on both sides mirror each other precisely) will contain <em>no</em> even-numbered harmonics.</p>
+<p>&nbsp;</p>
+<p><img src=&quot;/uploads/articles/waveforms-symmetric.jpg&quot; /></p>
+<p><em>Waveforms symmetric about their x-axis center line contain only odd harmonics</em></p>
+<p>&nbsp;</p>
+<p><a href=&quot;https://www.allaboutcircuits.com/textbook/alternating-current/chpt-7/square-wave-signals/&quot; target=&quot;_blank&quot;>Square waves</a>, triangle waves, and pure sine waves all exhibit this symmetry, and all are devoid of even harmonics. Waveforms like the trumpet tone, the accordion tone, and the sawtooth wave are unsymmetrical around their centerlines and therefore <em>do</em> contain even harmonics.</p>
+<p>&nbsp;</p>
+<p><img src=&quot;/uploads/articles/asymmetric-waveforms-contain-even-harmonics.jpg&quot; /></p>
+<p><em>Asymmetric waveforms contain even harmonics</em></p>
+<p>&nbsp;</p>
+<p>This principle of centerline symmetry should not be confused with symmetry around the <em>zero</em> line. In the examples shown, the horizontal centerline of the waveform happens to be zero volts on the time-domain graph, but this has nothing to do with harmonic content.</p>
+<p>This rule of harmonic content (even harmonics only with unsymmetrical waveforms) applies whether or not the waveform is shifted above or below zero volts with a &ldquo;DC component.&rdquo; For further clarification, I will show the same sets of waveforms, shifted with DC voltage, and note that their harmonic contents are unchanged.</p>
+<p>&nbsp;</p>
+<p><img src=&quot;/uploads/articles/waveforms-of-odd-harmonics.jpg&quot; /></p>
+<p><em>These waveforms are composed exclusively of odd harmonics</em></p>
+<p>&nbsp;</p>
+<p>Again, the amount of DC voltage present in a waveform has nothing to do with that waveform&rsquo;s harmonic frequency content.</p>
+<p>&nbsp;</p>
+<p><img src=&quot;/uploads/articles/waveforms-contain-even-harmonics.jpg&quot; /></p>
+<p><em>These waveforms contain even harmonics</em></p>
+<p>&nbsp;</p>
+<p>Why is this harmonic rule-of-thumb an important rule to know? It can help us comprehend the relationship between harmonics in AC circuits and specific circuit components.</p>
+<p>Since most sources of sine-wave distortion in <a href=&quot;https://www.allaboutcircuits.com/textbook/alternating-current/chpt-11/power-resistive-reactive-ac-circuits/&quot; target=&quot;_blank&quot;>AC power circuits</a> tend to be symmetrical, even-numbered harmonics are rarely seen in those applications.</p>
+<p>This is good to know if you&rsquo;re a power system designer and are planning ahead for harmonic reduction: you only have to concern yourself with mitigating the odd harmonic frequencies, even harmonics being practically nonexistent.</p>
+<p>Also, if you happen to measure even harmonics in an AC circuit with a spectrum analyzer or frequency meter, you know that something in that circuit must be <em>unsymmetrically</em> distorting the sine-wave voltage or current, and that clue may be helpful in locating the source of a problem (look for components or conditions more likely to distort one half-cycle of the AC waveform more than the other).</p>
+<p>Now that we have this rule to guide our interpretation of nonsinusoidal waveforms, it makes more sense that a waveform like that produced by a rectifier circuit should contain such strong even harmonics, there being no symmetry at all above and below center.</p>
+<p>&nbsp;</p>
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li>Waveforms that are symmetrical above and below their horizontal centerlines contain no even-numbered harmonics.</li>
+<li>The amount of DC &ldquo;bias&rdquo; voltage present (a waveform&rsquo;s &ldquo;DC component&rdquo;) has no impact on that wave&rsquo;s harmonic frequency content.</li>
+</ul>
+
+
+
+</div>
+</div>
+</body>
+</html>

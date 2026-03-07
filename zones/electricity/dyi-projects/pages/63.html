@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>DYI Projects</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='62.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='64.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>Si Lab - Differential Amplifier</h1>
+<h3>Project Overview</h3>
+<p>The <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-8/building-a-differential-amplifier/&quot; target=&quot;_blank&quot;>differential amplifier</a> circuit forms the heart of most <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-8/introduction-operational-amplifiers/&quot; target=&quot;_blank&quot;>op amp</a>&nbsp;circuits. As illustrated in Figure 1, the transistor pair, Q<sub>1</sub>&nbsp;and Q<sub>2</sub>, share a common emitter node that is connected to the 1.5 k&Omega; <a href=&quot;https://eepower.com/resistor-guide/&quot; target=&quot;_blank&quot;>resistor</a>.&nbsp;</p>
+<p>&nbsp;</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/differential-amplifier-schematic-diagram.jpg&quot; /></p>
+<h5><strong>Figure 1.</strong> <em>Schematic diagram of a BJT differential amplifier.</em></h5>
+<p>&nbsp;</p>
+<p>The two transistors form a differential pair. In the form shown here, it is a rather crude differential amplifier. The output voltage is quite nonlinear and unsymmetrical with regard to the input voltages.</p>
+<p>&nbsp;</p>
+<h3>Parts and Materials</h3>
+<ul>
+<li>Two 6-volt batteries</li>
+<li>Two NPN transistors&mdash;models <a href=&quot;https://www.onsemi.com/pdf/datasheet/p2n2222a-d.pdf&quot; target=&quot;_blank&quot;>2N2222</a> or <a href=&quot;https://my.centralsemi.com/datasheets/LSSGP078.PDF&quot; target=&quot;_blank&quot;>2N3403</a> recommended</li>
+<li>Two 10 k&Omega; <a href=&quot;https://eepower.com/resistor-guide/resistor-types/potentiometer/&quot; target=&quot;_blank&quot;>potentiometers</a>, single-turn, linear taper&nbsp;</li>
+<li>Two 22 k&Omega; resistors</li>
+<li>Two 10 k&Omega; resistors</li>
+<li>One 100 k&Omega; resistor</li>
+<li>One 1.5 k&Omega; resistor</li>
+</ul>
+
+<p>Resistor values are not especially critical in this experiment but have been chosen to provide high voltage gain for a comparator-like&nbsp;differential amplifier behavior.</p>
+<p>&nbsp;</p>
+<h3>Learning Objectives</h3>
+<ul>
+<li>The basic design of a differential amplifier circuit</li>
+<li>Working definitions of <a href=&quot;https://www.allaboutcircuits.com/technical-articles/the-why-and-how-of-differential-signaling/&quot; target=&quot;_blank&quot;>differential</a> and <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-8/op-amp-practical-considerations/&quot; target=&quot;_blank&quot;>common-mode voltages</a></li>
+</ul>
+
+<p>&nbsp;</p>
+<h3>Instructions</h3>
+<p><strong>Step 1:&nbsp;</strong>Build the differential amplifier shown in the circuit schematic of Figure 1 and the <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/building-simple-resistor-circuits/&quot; target=&quot;_blank&quot;>breadboard</a> implementation of Figure 2.</p>
+<p>&nbsp;</p>
+<p><strong><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/differential-amplifier-illustration.jpg&quot; /></strong></p>
+<h5><strong>Figure 2.</strong> <em>Breadboard implementation&nbsp;of a BJT differential amplifier.</em></h5>
+<p>&nbsp;</p>
+<p><strong>Step 2: </strong>Using the left potentiometer in Figure 1, set the input voltage to the base of transistor Q<sub>1</sub> to 2.5 V.</p>
+<p><strong>Step 3:&nbsp;</strong>Using the right potentiometer, set the initial input voltage to transistor Q<sub>2</sub> to 2.0 V. Measure the output voltage at the collector of Q<sub>2</sub> with respect to the <a href=&quot;https://www.allaboutcircuits.com/technical-articles/an-introduction-to-ground/&quot; target=&quot;_blank&quot;>ground</a>.</p>
+<p><strong>Step 4:&nbsp;</strong>Slowly sweep the input voltage to the transistor, Q<sub>2</sub>, while monitoring&nbsp;the output voltage.&nbsp;With a high voltage gain created by a large collector/emitter resistor ratio (100 k&Omega;/1.5 k&Omega;), though, it acts primarily as a <a href=&quot;https://www.allaboutcircuits.com/textbook/experiments/chpt-6/voltage-comparator/&quot; target=&quot;_blank&quot;>comparator</a>, where&nbsp;the output voltage rapidly changes value as the two input voltage signals approach equality.</p>
+<p><strong>Step 4:&nbsp;</strong>Now, using the right potentiometer in Figure 1, set the input voltage to the base of transistor Q<sub>2</sub> to 2.5 V.</p>
+<p><strong>Step 5:&nbsp;</strong>Using the left potentiometer, set the initial input voltage to transistor Q<sub>1</sub> to 2.0 V. Measure the output voltage at the collector of Q<sub>2</sub> with respect to the ground.</p>
+<p><strong>Step 6:&nbsp;</strong>Slowly sweep the input voltage to transistor Q<sub>1</sub> while monitoring&nbsp;the output voltage.&nbsp;Note how the two potentiometers have different effects on the output voltage.&nbsp;The input to the transistor, Q1 (V<sub>+</sub>), tends to drive the output voltage in the same direction (noninverting), while the input to the transistor, Q2 (V<sub>-</sub>), tends to drive the output voltage in the opposite direction (inverting). This is the essential nature of a differential amplifier&mdash;it amplifies the difference between the two inputs, including the sign:</p>
+<p>&nbsp;</p>
+<p>$$V_{out} = Gain \cdot (V_{+} - V_{-})$$</p>
+<p>&nbsp;</p>
+<p>Ideally, the output voltage of such an amplifier is strictly a function of the difference between the two input signals. This circuit falls considerably short of the ideal, as even a cursory test will reveal.</p>
+<p>&nbsp;</p>
+<h4>Common-mode Voltage</h4>
+<p>An ideal differential amplifier ignores all common-mode voltage, which is whatever level of voltage common to both inputs. For example, if the inverting input is at 3.0 V and the noninverting input is at 2.5 V, the differential voltage will be 0.5 V (3 - 2.5), but the common-mode voltage will be 2.5 V since that is the lowest input signal level.&nbsp;Ideally, this condition should produce the same output signal voltage as if the inputs were set at 3.5 and 3 V, respectively (0.5 V differential, with a 3 V common-mode voltage).</p>
+<p><strong>Step 7: </strong>Repeat steps 2-4 above, but with the input of Q<sub>1</sub> at 3.5 V and Q<sub>2</sub> beginning at 3.0 V. This circuit does not give the same result for the two different input signal scenarios. In other words, its output voltage depends on both the differential voltage <em>and</em> the common-mode voltage.</p>
+<p>As imperfect as this differential amplifier is, its behavior could be worse. Note how the input signal potentiometers have been limited by 22 k&Omega; resistors to an adjustable range of approximately 0 to 4 V, given a power supply voltage of 12 volts.</p>
+<p><strong>Step 8:&nbsp;</strong>If you&rsquo;d like to see how this circuit behaves without any input signal limiting, just bypass the 22 k&Omega; resistors with jumper wires, allowing a full 0 to 12 V adjustment range from each potentiometer. Do not worry about building up excessive heat while adjusting potentiometers in this circuit.&nbsp;Unlike the current mirror circuit, this circuit is protected from thermal runaway by the emitter resistor (1.5 k&Omega;), which doesn&rsquo;t allow enough transistor current to cause any problem.</p>
+
+
+</div>
+</div>
+</body>
+</html>

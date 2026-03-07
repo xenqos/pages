@@ -1,0 +1,40 @@
+<h1>Parallel Resistor-Capacitor Circuits</h1>
+<p>Using the same value components in our series example circuit, we will connect them in parallel and see what happens:</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/parallel-r-c-circuit-diagram.jpg" /></p>
+<p><em>Parallel R-C circuit.</em></p>
+<p>&nbsp;</p>
+<h3>Resistor and Capacitor in Parallel</h3>
+<p>Because the power source has the same frequency as the series example circuit, and the <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/resistors/" target="_blank">resistor</a> and <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-13/practical-considerations-capacitors/" target="_blank">capacitor</a> both have the same values of resistance and capacitance, respectively, they must also have the same values of impedance. So, we can begin our analysis table with the same &ldquo;given&rdquo; values:</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/resistor-and-capacitor-in-parallel-table1.jpg" /></p>
+<p>&nbsp;</p>
+<p>This being a parallel circuit now, we know that voltage is shared equally by all components, so we can place the figure for total voltage (10 volts &ang; 0&deg;) in all the columns:</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/resistor-and-capacitor-in-parallel-table2.jpg" /></p>
+<p>&nbsp;</p>
+<h3>Calculation Using Ohm&rsquo;s Law</h3>
+<p>Now we can apply <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-2/ohms-law/" target="_blank">Ohm&rsquo;s Law</a> (I=E/Z) vertically to two columns in the table, calculating current through the resistor and current through the capacitor:</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/resistor-and-capacitor-in-parallel-table3.jpg" /></p>
+<p>&nbsp;</p>
+<p>Just as with <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-3/introduction-to-dc-circuits/" target="_blank">DC circuits</a>, branch currents in a parallel AC circuit add up to form the total current (Kirchhoff&rsquo;s Current Law again):</p>
+<p>&nbsp;</p>
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/PRCC_table4_2.jpg" /></p>
+<p>&nbsp;</p>
+<p>Finally, total impedance can be calculated by using Ohm&rsquo;s Law (Z=E/I) vertically in the &ldquo;Total&rdquo; column. As we saw in the AC inductance chapter, parallel impedance can also be calculated by using a reciprocal formula identical to that used in calculating parallel resistances.</p>
+<p>It is noteworthy to mention that this parallel impedance rule holds true regardless of the kind of impedances placed in parallel.</p>
+<p>In other words, it doesn&rsquo;t matter if we&rsquo;re calculating a circuit composed of parallel resistors, parallel inductors, parallel capacitors, or some combination thereof: in the form of impedances (Z), all the terms are common and can be applied uniformly to the same formula.</p>
+<p>Once again, the parallel impedance formula looks like this:</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/parallel-impedance-formula.jpg" /></p>
+<p>&nbsp;</p>
+<p>The only drawback to using this equation is the significant amount of work required to work it out, especially without the assistance of a calculator capable of manipulating complex quantities. Regardless of how we calculate total impedance for our parallel circuit (either Ohm&rsquo;s Law or the reciprocal formula), we will arrive at the same figure:</p>
+<p>&nbsp;</p>
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li>Impedances (Z) are managed just like resistances (R) in parallel circuit analysis: parallel impedances diminish to form the total impedance, using the reciprocal formula. Just be sure to perform all calculations in complex (not scalar) form! ZTotal = 1/(1/Z1 + 1/Z2 + . . . 1/Zn)</li>
+<li>Ohm&rsquo;s Law for AC circuits: E = IZ ; I = E/Z ; Z = E/I</li>
+<li>When resistors and capacitors are mixed together in parallel circuits (just as in series circuits), the total impedance will have a phase angle somewhere between 0&deg; and -90&deg;. The circuit current will have a phase angle somewhere between 0&deg; and +90&deg;.</li>
+<li>Parallel AC circuits exhibit the same fundamental properties as parallel DC circuits: voltage is uniform throughout the circuit, branch currents add to form the total current, and impedances diminish (through the reciprocal formula) to form the total impedance.</li>
+</ul>

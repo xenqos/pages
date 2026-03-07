@@ -1,0 +1,34 @@
+<h1>Common Sources of Hazard</h1>
+<p>Of course, there is a danger of electrical shock when directly performing manual work on an electrical power system. However, electric shock hazards exist in many other places, thanks to the widespread use of electric power in our lives.</p>
+<p>As we saw earlier, skin and body resistance has a lot to do with the relative hazard of electric circuits. The higher the body&rsquo;s resistance, the less likely harmful <a href="https://www.allaboutcircuits.com/video-lectures/basic-requirements-for-current/" target="_blank">current</a> will result from any given amount of voltage. Conversely, the lower the body&rsquo;s resistance, the more likely for injury to occur from the application of a voltage.</p>
+<h3>Water Hazards</h3>
+<p>The easiest way to decrease skin resistance is to get it wet. Therefore, touching electrical devices with wet hands, wet feet, or especially in a sweaty condition (salt water is a much better conductor of electricity than fresh water) is dangerous. In the household, the bathroom is one of the more likely places where wet people may contact electrical appliances, and so shock hazard is a definite threat there.</p>
+<p>Good bathroom design will locate power receptacles away from bathtubs, showers, and sinks to discourage the use of appliances nearby. Telephones that plug into a wall socket are also sources of hazardous voltage (the open circuit voltage is 48 volts DC, and the ringing signal is 150 volts AC&mdash;remember that any voltage over 30 is considered potentially dangerous).</p>
+<p>Appliances such as telephones and radios should never be used while sitting in a bathtub. Even battery-powered devices should be avoided. Some battery-operated devices employ voltage-increasing circuit capable of generating lethal potentials. <a name="Ground fault"></a><a name="GFCI"></a><a name="Ground Fault Current Interrupter"></a></p>
+<p>Swimming pools are another source of trouble since people often operate radios and other powered appliances nearby. The National Electrical Code requires that special shock-detecting receptacles called Ground-Fault Current Interrupting (GFI or GFCI) be installed in wet and outdoor areas to help prevent shock incidents (more on these devices on the latter section of this chapter).</p>
+<p>These special devices have no doubt saved many lives, but they can be no substitute for common sense and diligent precaution. As with firearms, the best &ldquo;safety&rdquo; is an informed and conscientious operator.</p>
+<h3>Extension Cord Hazards</h3>
+<p>Extension cords, so commonly used at home and in industry, are also sources of the potential hazard. All cords should be regularly inspected for abrasion or cracking of insulation and repaired immediately.</p>
+<p>One sure method of removing a damaged cord from service is to unplug it from the receptacle, then cut off that plug (the &ldquo;male&rdquo; plug) with a pair of side-cutting pliers to ensure that no one can use it until it is fixed. This is important on job sites, where many people share the same equipment, and not all people there may be aware of the hazards.</p>
+<h3>Power Tool Hazards</h3>
+<p>Any power tool showing evidence of electrical problems should be immediately serviced as well. I&rsquo;ve heard several horror stories of people who continue to work with hand tools that periodically shock them. Remember, <em>electricity can kill</em>, and the death it brings can be gruesome.</p>
+<p>Like extension cords, a bad power tool can be removed from service by unplugging it and cutting off the plug at the end of the cord.</p>
+<h3>Downed Power Line Hazards</h3>
+<p>Downed power lines are an obvious source of electric shock hazard and should be avoided at all costs. The voltages present between power lines or between a power line and earth ground are typically very high (2400 volts being one of the lowest voltages used in residential distribution systems).</p>
+<p>If a power line is broken and the metal conductor falls to the ground, the immediate result will usually be a tremendous amount of arcing (sparks produced), often enough to dislodge chunks of concrete or asphalt from the road surface, and reports rivaling that of a rifle or shotgun. To come into direct contact with a downed power line is almost sure to cause death, but other hazards exist which are not so obvious.</p>
+<p>When a line touches the ground, current travels between that downed <a href="https://www.allaboutcircuits.com/video-lectures/wire-and-cable/" target="_blank">conductor</a> and the nearest <a href="https://www.allaboutcircuits.com/video-lectures/ground-reference-points/" target="_blank">grounding point</a> in the system, thus establishing a circuit:</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/downed-power-line-current-through-earth.jpg" /></p>
+<p>&nbsp;</p>
+<p><a name="Conductivity, earth"></a> The earth, being a conductor (if only a poor one), will conduct current between the downed line and the nearest system ground point, which will be some kind of conductor buried in the ground for good contact. Being that the earth is a much poorer conductor of electricity than the metal cables strung along the power poles, there will be a substantial voltage dropped between the point of cable contact with the ground and the grounding conductor, and a little voltage dropped along the length of the cabling (the following figures are <em>very</em> approximate):</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/substantial-voltage-drop-image1.jpg" /></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>If the distance between the two ground contact points (the downed cable and the system ground) is small, there will be substantial voltage dropped along with short distances between the two points. Therefore, a person standing on the ground between those two points will be in danger of receiving an electric shock by intercepting a voltage between their two feet.</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/deadly-voltage-across-the-body-through-both-legs-image2.jpg" /></p>
+<p>&nbsp;</p>
+<p>Again, these voltage figures are very approximate, but they serve to illustrate a potential hazard; that a person can become a victim of electric shock from a downed power line without even coming into contact with that line.</p>
+<p>One practical precaution a person could take if they see a power line falling towards the ground is to only contact the ground at one point, either by running away (when you run, only one foot contacts the ground at any given time), or if there&rsquo;s nowhere to run, by standing on one foot.</p>
+<p>Obviously, if there&rsquo;s somewhere safer to run, running is the best option. By eliminating two points of contact with the ground, there will be no chance of applying a deadly voltage across the body through both legs.</p>

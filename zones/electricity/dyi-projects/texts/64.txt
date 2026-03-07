@@ -1,0 +1,83 @@
+<h1>Si Lab - Simple Op Amp</h1>
+<h3>Project Overview</h3>
+<p>This circuit design improves on the previous&nbsp;<a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-5/differential-amplifier/" target="_blank">differential amplifier circuit project</a>.&nbsp;As illustrated in Figure 1, there are two primary advantages of this new circuit:</p>
+<ol>
+<li>A <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-4/current-mirrors/" target="_blank">current mirror</a> comprised of NPN transistors, Q<sub>5</sub> and Q<sub>6,</sub>&nbsp;is used to&nbsp;improve&nbsp;the bias current stability to the differential pair, Q<sub>3</sub> and Q<sub>4</sub>. This replaces a simple <a href="https://eepower.com/resistor-guide/" target="_blank">resistor</a>.</li>
+<li>A second current mirror using&nbsp;<a href="https://www.allaboutcircuits.com/technical-articles/pnp-transistor-characteristics-applications/" target="_blank">PNP transistors</a>, Q<sub>1</sub> and Q<sub>2</sub>,&nbsp;replaces&nbsp;the load resistor. The high <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-5/series-r-l-and-c/" target="_blank">impedance</a> of this current mirror increases the voltage gain of the <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-1/amplifiers/" target="_blank">amplifier</a>.</li>
+</ol>
+<p>&nbsp;</p>
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/simple-op-amp-schematic-diagram.jpg" /></p>
+<h5><em><strong>Figure 1.</strong> Schematic diagram of an op amp with differential inputs and current mirror load.</em></h5>
+<p>&nbsp;</p>
+<p>With a higher voltage gain, this circuit is able to function as a working <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-8/introduction-operational-amplifiers/" target="_blank">operational amplifier or op amp</a>. Op amps form the basis of a great many modern analog semiconductor circuits, so understanding the internal workings of an op amp&nbsp;is important. The PNP transistors, Q<sub>1</sub> and Q<sub>2</sub>, form a current mirror that tries to keep the current split equally through the two differential pair transistors, Q<sub>3</sub> and Q<sub>4</sub>. NPN transistors, Q<sub>5</sub> and Q<sub>6</sub>, form another current mirror, setting the total differential pair current at a level predetermined by resistor R<sub>prg</sub>.</p>
+<p>&nbsp;</p>
+<h3>Parts and Materials</h3>
+<ul>
+<li>Two 6 V batteries</li>
+<li>Four NPN transistors&mdash;models <a href="https://www.farnell.com/datasheets/296640.pdf" target="_blank">2N2222</a> or <a href="https://my.centralsemi.com/datasheets/LSSGP078.PDF" target="_blank">2N3403</a> recommended&nbsp;</li>
+<li>Two PNP transistors&mdash;models <a href="https://www.mouser.com/datasheet/2/68/2n2906-49966.pdf" target="_blank">2N2907 or 2N3906</a> recommended&nbsp;</li>
+<li>Two 10 k&Omega; <a href="https://eepower.com/resistor-guide/resistor-types/potentiometer/" target="_blank">potentiometers</a>, single-turn, linear taper</li>
+<li>One 270 k&Omega; resistor</li>
+<li>Three 100 k&Omega; resistors</li>
+<li>One 10 k&Omega; resistor</li>
+</ul>
+<p>&nbsp;</p>
+<h3>Learning Objectives</h3>
+<ul>
+<li>Design of a differential amplifier circuit using current mirrors.</li>
+<li>Effects of <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-8/negative-feedback/" target="_blank">negative feedback</a> on a high-gain differential amplifier.</li>
+</ul>
+<p>&nbsp;</p>
+<h3>Instructions</h3>
+<p><strong>Step 1:</strong>&nbsp;Build the op amp circuit shown in the circuit schematic of Figure 1 and the <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/building-simple-resistor-circuits/" target="_blank">breadboard</a> implementation of Figure 2.</p>
+<p>&nbsp;</p>
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/simple-op-amp-illustration-1.jpg" /></p>
+<h5><em><strong>Figure 2.</strong> Breadboard implementation of an op amp with differential inputs and current mirror load.</em></h5>
+<p>&nbsp;</p>
+<h4>Open-loop Op Amp Functioning as a Comparator</h4>
+<p><strong>Step 2: </strong>Using the left potentiometer in Figure 1, set the input voltage to the base of the transistor, Q<sub>3,</sub> to 2.5 V.</p>
+<p><strong>Step 3:&nbsp;</strong>Using the other potentiometer, set the initial input voltage of the transistor, Q<sub>4,</sub> to 2.0 V. Measure the output voltage at the collector of Q<sub>4</sub> with respect to the <a href="https://www.allaboutcircuits.com/technical-articles/an-introduction-to-ground/" target="_blank">ground</a>.</p>
+<p><strong>Step 4: </strong>Using the right potentiometer, slowly sweep the input voltage to the transistor, Q<sub>4</sub>, while monitoring&nbsp;the output voltage.&nbsp;The high voltage gain of this circuit means the circuit will function effectively&nbsp;as a <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-6/voltage-comparator/" target="_blank">comparator</a>.&nbsp;The output voltage will rapidly change&nbsp;from high to low&nbsp;as the two input voltage signals approach and cross equality.</p>
+<p><strong>Step 5:&nbsp;</strong>Using the right potentiometer in Figure 1, set the input voltage to the base of the transistor, Q<sub>4,</sub> to 2.5 V.</p>
+<p><strong>Step 6:&nbsp;</strong>Using the left potentiometer, set the initial input voltage to the transistor, Q<sub>3</sub>, to 2.0 V. Again, measure the output voltage at the collector of Q<sub>4</sub>.</p>
+<p><strong>Step 7:&nbsp;</strong>Slowly sweep the input voltage to the transistor, Q<sub>3,</sub> while monitoring&nbsp;the output voltage. Notice how the input potentiometers have different effects on the output voltage.&nbsp;The input to the left&nbsp;transistor, Q3 (V<sub>+</sub>),&nbsp;drives the output voltage in the same direction (noninverting), while the input to the right transistor, Q4 (V<sub>-</sub>), drives the output voltage in the opposite direction (inverting). The op amp amplifies the difference between the two inputs.</p>
+<p>&nbsp;</p>
+<h4>Using the Op Amp as a Voltage Follower</h4>
+<p>Once the circuit&rsquo;s differential response has been proven (the output voltage sharply transitions from one extreme level to another when one input is adjusted above and below the other input&rsquo;s voltage level), you are ready to use this op amp in a circuit. The simple op amp circuit of Figure 3 is called a <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-5/voltage-follower/" target="_blank">voltage follower</a>&nbsp;and is a good configuration to try first.&nbsp;</p>
+<p>&nbsp;</p>
+<p><img src="https://www.allaboutcircuits.com/uploads/thumbnails/voltage-follower-op-amp-diagram_redo.jpg" /></p>
+<h5><em><strong>Figure 3.</strong> Op amp connected as a voltage follower using negative feedback.</em></h5>
+<p>&nbsp;</p>
+<p>Note in Figure 3 that the triangular op amp has its inverting and noninverting inputs designated with (-) and (+) symbols, respectively. The op amp output terminal is at the right of the symbol.</p>
+<p><strong>Step 8:&nbsp;</strong>To make a voltage follower circuit, directly connect the output of the amplifier to its inverting input. This means connecting the collector and base terminals of Q<sub>4</sub> together, and removing the right, inverting&nbsp;potentiometer from the circuit, as illustrated in Figures 4 and 5.&nbsp;</p>
+<p>&nbsp;</p>
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/voltage-follower-circuit-diagram.jpg" /></p>
+<h5><em><strong>Figure 4.</strong> Schematic diagram of the op amp connected as a voltage follower.</em></h5>
+<p>&nbsp;</p>
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/simple-op-amp-illustration-2.jpg" /></p>
+<h5><em><strong>Figure 5.</strong> Breadboard implementation of the op amp connected as a voltage follower.</em></h5>
+<p>&nbsp;</p>
+<p>In both figures,&nbsp;the feedback wire connecting the output to inverting input is shown in red.&nbsp;</p>
+<p><strong>Step 9:&nbsp;</strong>As a voltage follower, the output voltage should follow&nbsp;the input voltage closely, deviating no more than a few hundredths of a volt. Measuring the input and output voltages to the op amp as you vary the potentiometer. This is a much more precise follower circuit than that of a single <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-4/common-collector-amplifier/" target="_blank">common-collector transistor</a>, described in an earlier experiment!</p>
+<p>&nbsp;</p>
+<h4>Using the Op Amp in a Noninverting Amplifier Circuit</h4>
+<p>A more complex op amp circuit is called the <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-6/noninverting-amplifier/" target="_blank">noninverting amplifier</a>, and it uses a pair of resistors in the feedback loop to feedback&nbsp;a fraction of the output voltage to the inverting input, causing the amplifier to output a voltage equal to some multiple of the voltage at the non-inverting input.</p>
+<p>&nbsp;</p>
+<h5><img src="https://www.allaboutcircuits.com/uploads/thumbnails/non-inverting-op-amp-diagram_redo.jpg" /></h5>
+<h5><em><strong>Figure 6.</strong> Op amp connected as a noninverting amplifier.</em></h5>
+<p>&nbsp;</p>
+<p><strong>Step 10:&nbsp;</strong>Build the noninverting amplifier circuit illustrated in Figures 7 and 8.&nbsp;</p>
+<p>&nbsp;</p>
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/non-inverting-amplifier-circuit.jpg" /></p>
+<h5><em><strong>Figure 7.</strong> Schematic diagram of the op amp connected as a noninverting amplifier.</em></h5>
+<p>&nbsp;</p>
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/simple-op-amp-illustration-3.jpg" /></p>
+<h5><em><strong>Figure 8.</strong> Breadboard implementation of the op amp connected as a noninverting amplifier.</em></h5>
+<p>&nbsp;</p>
+<p>If we use two equal-value resistors, the feedback voltage will be 1/2 the output voltage, causing the output voltage to become twice the voltage impressed at the noninverting input. Thus, we have a voltage amplifier with a precise gain of two.</p>
+<p><strong>Step 11: </strong>Measure the input and output voltages as you vary the potentiometer. As you test this noninverting amplifier circuit, you may notice slight discrepancies between the output and input voltages.</p>
+<p>According to the feedback resistor values, the voltage gain should be exactly two.&nbsp;However, you may notice deviations in the order of several hundredths of a volt between what the output voltage is and what it should be. These deviations are due to imperfections in the differential amplifier circuit and may be greatly diminished if we add more amplification stages to increase the differential voltage gain.</p>
+<p>&nbsp;</p>
+<h4>Changing the Bias Current of the Differential Input Transistor Pair</h4>
+<p><strong>Step 12:&nbsp;</strong>One way we can maximize the precision of the existing circuit is to change the resistance of R<sub>prg</sub>. This resistor sets the lower current mirror&rsquo;s control point and, in so doing, influences many performance parameters of the op amp.&nbsp;Try substituting difference resistance values, ranging from 10 k&Omega; to 1 M&Omega;. Do not use a resistance less than 10 k&Omega;, or else the current mirror transistors may begin to overheat and thermally run away.</p>
+<p>Some operational amplifiers available in prepackaged units provide a way for the user to similarly program&nbsp;the differential pair&rsquo;s current mirror and are called programmable op amps. Most op amps are not programmable and have their internal current mirror control points fixed by internal resistance, trimmed to precise value at the factory.</p>

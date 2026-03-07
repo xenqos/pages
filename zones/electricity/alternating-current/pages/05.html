@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Alternating Current</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='04.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='06.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>AC Phase</h1>
+<p>Things start to get complicated when we need to relate two or more<a href=&quot;https://www.allaboutcircuits.com/video-lectures/generation-of-alternating-voltage/&quot; target=&quot;_blank&quot;> AC voltages</a> or currents that are out of step with each other. By &ldquo;out of step,&rdquo; I mean that the two waveforms are not synchronized: that their peaks and zero points do not match up at the same points in time. The graph in figure below illustrates an example of this.</p>
+<p><img src=&quot;/uploads/articles/out-of-phase-waveforms.jpg&quot; /></p>
+<p><em>Out of phase waveforms.</em></p>
+<p>&nbsp;</p>
+<p>The two waves shown above (A versus B) are of the same amplitude and frequency, but they are out of step with each other. In technical terms, this is called a<a href=&quot;https://www.allaboutcircuits.com/textbook/experiments/chpt-4/phase-shift/&quot; title=&quot;&quot;> </a><em><a href=&quot;https://www.allaboutcircuits.com/textbook/experiments/chpt-4/phase-shift/&quot; target=&quot;_blank&quot;>phase shift</a></em>. Earlier we saw how we could plot a &ldquo;sine wave&rdquo; by calculating the <a href=&quot;https://www.allaboutcircuits.com/textbook/alternating-current/chpt-1/ac-waveforms/&quot; target=&quot;_blank&quot;>trigonometric sine function</a> for angles ranging from 0 to 360 degrees, a full circle.</p>
+<p>The starting point of a sine wave was zero amplitude at zero degrees, progressing to full positive amplitude at 90 degrees, zero at 180 degrees, full negative at 270 degrees, and back to the starting point of zero at 360 degrees.</p>
+<p>We can use this angle scale along the horizontal axis of our waveform plot to express how far out of step one wave is with another: Figure below</p>
+<p><img src=&quot;/uploads/articles/horizontal-axis-of-waveform.jpg&quot; /></p>
+<p><em>Wave A leads wave B by 45&deg;</em></p>
+<p>&nbsp;</p>
+<p>The shift between these two waveforms is about 45 degrees, the &ldquo;A&rdquo; wave being ahead of the &ldquo;B&rdquo; wave. A sampling of different phase shifts is given in the following graphs to better illustrate this concept: Figure below</p>
+<p><img src=&quot;/uploads/articles/examples-of-phase-shifts.jpg&quot; /></p>
+<p><em>Examples of phase shifts.</em></p>
+<p>&nbsp;</p>
+<p>Because the waveforms in the above examples are at the same frequency, they will be out of step by the same angular amount at every point in time. For this reason, we can express phase shift for two or more waveforms of the same frequency as a constant quantity for the entire wave, and not just an expression of shift between any two particular points along the waves.</p>
+<p>That is, it is safe to say something like, &ldquo;voltage &lsquo;A&rsquo; is 45 degrees out of phase with voltage &lsquo;B&rsquo;.&rdquo; Whichever waveform is ahead in its evolution is said to be <em>leading</em> and the one behind is said to be <em>lagging</em>.</p>
+<p>Phase shift, like voltage, is always a measurement relative between two things. There&rsquo;s really no such thing as a waveform with an <em>absolute</em> phase measurement because there&rsquo;s no known universal reference for phase.</p>
+<p>Typically in the analysis of AC circuits, the voltage waveform of the power supply is used as a reference for phase, that voltage stated as &ldquo;xxx volts at 0 degrees.&rdquo; Any other AC voltage or current in that circuit will have its phase shift expressed in terms relative to that source voltage.</p>
+<p>This is what makes AC circuit calculations more complicated than DC. When applying<a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/voltage-current-resistance-relate/&quot; target=&quot;_blank&quot;> Ohm&rsquo;s Law</a> and<a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-6/kirchhoffs-voltage-law-kvl/&quot; target=&quot;_blank&quot;> Kirchhoff&rsquo;s Laws</a>, quantities of AC voltage and current must reflect phase shift as well as amplitude. Mathematical operations of addition, subtraction, multiplication, and division must operate on these quantities of phase shift as well as amplitude.</p>
+<p>Fortunately, there is a mathematical system of quantities called <em>complex numbers</em> ideally suited for this task of representing amplitude and phase.</p>
+<p>Because the subject of complex numbers is so essential to the understanding of AC circuits, the next chapter will be devoted to that subject alone.</p>
+<p>&nbsp;</p>
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li><em>Phase shift</em> is where two or more waveforms are out of step with each other.</li>
+<li>The amount of phase shift between two waves can be expressed in terms of degrees, as defined by the degree units on the horizontal axis of the waveform graph used in plotting the trigonometric sine function.</li>
+<li>A <em>leading</em> waveform is defined as one waveform that is ahead of another in its evolution. A <em>lagging</em> waveform is one that is behind another. Example:</li>
+</ul>
+
+<p><img src=&quot;/uploads/articles/lagging-waveform.jpg&quot; /></p>
+<ul>
+<li>Calculations for AC circuit analysis must take into consideration both amplitude and phase shift of voltage and current waveforms to be completely accurate. This requires the use of a mathematical system called <em>complex numbers</em>.</li>
+</ul>
+
+
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<h1>Other Specialized Motors</h1>
+<h3>Shaded Pole Induction Motor</h3>
+<p>An easy way to provide starting torque to a single-phase motor is to embed a shorted turn in each pole at 30&deg; to 60&deg; to the main winding. (Figure below) Typically 1/3 of the pole is enclosed by a bare copper strap.</p>
+<p>These shading coils produce a time lagging damped flux spaced 30&deg; to 60&deg; from the main field. This lagging flux with the undamped main component produces a rotating field with a small torque to start the rotor.</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/shaded-pole-induction-motor.jpg" /></p>
+<p><em>Shaded pole induction motor, (a) dual coil design, (b) smaller single-coil version</em></p>
+<p>&nbsp;</p>
+<p>Starting torque is so low that shaded pole motors are only manufactured in smaller sizes, below 50 watts. Low cost and simplicity suit this motor to small fans, air circulators, and other low torque applications. Motor speed can be lowered by switching reactance in series to limit current and torque, or by switching motor coil taps.</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/speed-control-of-shaded-pole-motor.jpg" /></p>
+<p><em>Speed control of shaded pole motor</em></p>
+<p>&nbsp;</p>
+<h3>2-phase Servo Motor</h3>
+<p>A <em>servo motor</em> is typically part of a feedback loop containing electronic, mechanical, and electrical components. The servo loop is a means of controlling the motion of an object via the motor. A requirement of many such systems is a fast response.</p>
+<p>To reduce acceleration robbing inertially, the iron core is removed from the rotor leaving only a shaft-mounted aluminum cup to rotate. The iron core is reinserted within the cup as a static (non-rotating) component to complete the magnetic circuit.</p>
+<p>Otherwise, the construction is typical of a two-phase motor. The low mass rotor can accelerate more rapidly than a squirrel cage rotor.</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/high-acceleration-2-φ-ac-servo-motor.jpg" /></p>
+<p><em>High acceleration 2-&phi; AC servo motor</em></p>
+<p>&nbsp;</p>
+<p>One phase is connected to the single-phase line; the other is driven by an <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-1/amplifiers/" target="_blank">amplifier</a>. One of the windings is driven by a 90<strong>&deg;</strong> phase-shifted waveform. In the above figure, this is accomplished by a series capacitor in the power line winding.</p>
+<p>The other winding is driven by a variable amplitude sine wave to control motor speed. The phase of the waveform may invert (180<strong>&deg; </strong>phase shift) to reverse the direction of the motor. This variable sine wave is the output of an error amplifier.</p>
+<p>See<em> synchro CT section </em>for example. Aircraft control surfaces may be positioned by 400 Hz 2-&phi; servo motors.</p>
+<h3>Hysteresis Motor</h3>
+<p>If the low hysteresis Si-steel laminated rotor of an induction motor is replaced by a slotless windingless cylinder of hardened magnet steel, hysteresis, or lagging behind of rotor magnetization, is greatly accentuated.</p>
+<p>The resulting low torque synchronous motor develops constant torque from stall to synchronous speed. Because of the low torque, the hysteresis motor is only available in very small sizes and is only used for constant speed applications like clock drives, and formerly, phonograph turntables.</p>
+<h3>Eddy Current Clutch</h3>
+<p>If the stator of an <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-13/wound-rotor-induction-motors/" target="_blank">induction motor</a> or a <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-13/synchronous-motors/" target="_blank">synchronous motor</a> is mounted to rotate independently of the rotor, an eddy current clutch results. The coils are excited with DC and attached to the mechanical load.</p>
+<p>The squirrel cage rotor is attached to the driving motor. The drive motor is started with no DC excitation to the clutch. The DC excitation is adjusted from zero to the desired final value providing a continuously and smoothly variable torque.</p>
+<p>The operation of the eddy current clutch is similar to an analog eddy current automotive speedometer.</p>
+<p>&nbsp;</p>
+<p><strong>Summary: Other specialized motors</strong></p>
+<ul>
+<li>&nbsp;The <em>shaded pole induction motor</em>, used in under 50-watt low torque applications, develops a second phase from shorted turns in the stator.</li>
+<li>&nbsp;<em>Hysteresis motors</em> are a small low torque synchronous motor once used in clocks and phonographs.</li>
+<li>&nbsp;The <em>eddy current clutch</em> provides an adjustable torque.</li>
+</ul>

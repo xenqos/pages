@@ -1,0 +1,60 @@
+<h1>Converting Between Thevenin and Norton Equivalent Circuits</h1>
+<img src="/uploads/thumbnails/thevenin_norton_answer_card_thumbnail.jpg" />
+<h3 class="text-lg lg:text-2xl font-bold mb-3">Learn to Convert Between Thevenin and Norton's Equivalent Circuits</h3>
+<p><p>This article provides a simple explanation of how to convert between Thevenin and Norton equivalent circuits.&nbsp;&nbsp;</p></p>
+<p>Since <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-10/thevenins-theorem/" target="_blank">Thevenin&rsquo;s theorem</a> and <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-10/nortons-theorem/" target="_blank">Norton&rsquo;s theorems</a> are two equally valid methods of reducing a complex network down to something simpler to analyze, there must be some way to convert a Thevenin equivalent circuit to a Norton equivalent circuit and vice versa. Thankfully, the procedure is fairly simple.</p>
+<p>Thevenin and Norton&#39;s equivalent circuits are intended to behave the same as the original network in supplying <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/voltage-current/" target="_blank">voltage and current</a> to the load <a href="https://eepower.com/resistor-guide/" target="_blank">resistor</a> (as seen from the perspective of the load connection points). Therefore, these two equivalent circuits should behave identically. We will use this principle to derive our conversions between the two equivalent circuits.</p>
+<p>&nbsp;</p>
+<h3>The Thevenin Resistance is Equal to the Norton Resistance</h3>
+<p>The procedure for calculating the Thevenin equivalent <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/resistance/" target="_blank">resistance</a> is identical to that for calculating the Norton equivalent resistance. Below are the three main steps:&nbsp;</p>
+<ul>
+<li>Step 1: Remove the Load Resistor</li>
+<li>Step 2: Replace the Power Sources</li>
+<li>Step 3: Calculate the Nortan Resistance</li>
+</ul>
+<p>Since the procedures are identical, the Thevenin and Norton resistances for any circuit must be equal. Figure 1 is the example circuit we used when explaining how to calculate the equivalent circuits.</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/thumbnails/Figure_1._Circuit_for_explaining_the_branch_current_method_.jpg" /></p>
+<h5><em><strong>Figure 1.</strong> Circuit schematic for explaining Thevenin&rsquo;s and Norton&rsquo;s theorems.</em></h5>
+<p>&nbsp;</p>
+<p>Figures 2 and 3 are the Thevenin and Norton equivalent circuits, respectively, for the circuit of Figure 1.&nbsp;</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/thumbnails/Figure_9._Replacing_the_value_of_the_load_resistor_into_the_Thevenin_equivalent_circuit_.jpg" /></p>
+<h5><em><strong>Figure 2. </strong>Thevenin equivalent circuit.</em></h5>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/thumbnails/Figure_6._Step_5-_Draw_the_Norton_equivalent_circuit_.jpg" /></p>
+<h5><em><strong>Figure 3.</strong> Norton equivalent circuit.</em></h5>
+<p>&nbsp;</p>
+<p>As shown, the Thevenin and Norton resistances are identical, 0.8 &Omega;. Therefore, we can conclude that the Norton and Thevenin resistances are equivalent:</p>
+<p>&nbsp;</p>
+<p>$$R_{Thevenin} = R_{Norton}$$</p>
+<p>&nbsp;</p>
+<h3>Converting a Norton Current Source to a Thevenin Voltage Source&nbsp;</h3>
+<p>Thevenin and Norton equivalent circuits should produce the same voltage across the load terminals with no load resistor attached. For the Thevenin equivalent, the open-circuited voltage would equal the Thevenin source voltage, which is 11.2 V in our example.&nbsp;</p>
+<p>With the Norton equivalent circuit and no load resistor, all 14 A from the Norton current source would have to flow through the 0.8 &Omega; Norton resistance. The voltage at the load terminals would then also be 11.2 V:</p>
+<p>&nbsp;</p>
+<p>$$V = I \cdot R = (14 \text{ A})\cdot (0.8 \text{ }\Omega) = 11.2 \text{ V}$$</p>
+<p>&nbsp;</p>
+<p>Thus, we can conclude that the Thevenin voltage is equal to the Norton current multiplied by the Norton resistance:</p>
+<p>&nbsp;</p>
+<p>$$V_{Thevenin} = I_{Norton} \cdot R_{Norton}$$</p>
+<p>&nbsp;</p>
+<p>Thus, if we wanted to convert a Norton equivalent circuit to a Thevenin equivalent circuit, we could use the same resistance and calculate the Thevenin voltage using <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/voltage-current-resistance-relate/" target="_blank">Ohm&rsquo;s law</a>.</p>
+<p>&nbsp;</p>
+<h3>Converting a Thevenin Voltage Source to a Norton Current Source</h3>
+<p>Conversely, both Thevenin and Norton equivalent circuits should generate the same amount of current through a short circuit across the load terminals. With the Norton equivalent, the short-circuit current would equal the Norton source current, which is 14 A for our example circuit.&nbsp;</p>
+<p>With the Thevenin equivalent, all 11.2 V would be applied across the 0.8 &Omega; Thevenin resistance. The current through the circuit would then be given by:</p>
+<p>&nbsp;</p>
+<p>$$I = \frac{V}{R} = \frac{11.2 \text{ V}}{0.8 \text{ }\Omega} = 14 \text{ A}$$</p>
+<p>&nbsp;</p>
+<p>Thus, we can say that the Norton current is equal to the Thevenin voltage divided by the Thevenin resistance:</p>
+<p>&nbsp;</p>
+<p>$$I_{Norton} = \frac{V_{Thevenin}}{R_{Thevenin}}$$</p>
+<p>&nbsp;</p>
+<h3>Review of Thevenin and Norton Conversions</h3>
+<ul>
+<li>Thevenin resistance and Norton resistance are equal.</li>
+<li>Thevenin voltage is equal to the Norton current times the Norton resistance.</li>
+<li>Norton current is equal to the Thevenin voltage divided by the Thevenin resistance.</li>
+</ul>

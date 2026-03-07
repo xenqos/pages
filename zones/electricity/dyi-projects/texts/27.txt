@@ -1,0 +1,56 @@
+<h1>DC Lab - An Analog Computer For Averaging</h1>
+<h3>Project Overview</h3>
+<p>Digital computers, such as personal computers (PCs), calculators, and smartphones, perform mathematical operations in a series of discrete steps. Analog computers perform calculations in a continuous fashion, exploiting <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/voltage-current-resistance-relate/" target="_blank">Ohm&rsquo;s</a> and <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-6/kirchhoffs-current-law-kcl/" target="_blank">Kirchhoff&rsquo;s Laws</a> for arithmetic purposes. The answer in an analog computer is&nbsp;computed as fast as <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/voltage-current/" target="_blank">voltage</a> propagates through the circuit&mdash;ideally, at the speed of light!</p>
+<p>In this surprisingly simple project, you will build and test the analog computer, illustrated in Figure 1, to compute the average of three input voltages.&nbsp;</p>
+<p>&nbsp;</p>
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/millmans-theorem-illustration.jpg" /></p>
+<h5><em><strong>Figure 1. </strong>Analog computer for averaging calculation built on a breadboard.</em></h5>
+<p>&nbsp;</p>
+<h3>Parts and Materials</h3>
+<ul>
+<li>Three batteries, each one with a different voltage</li>
+<li>Three equal-value <a href="https://eepower.com/resistor-guide/" target="_blank">resistors</a>, between 10 k&Omega; and 47 k&Omega; each.&nbsp;When selecting the resistors, measure each one with an <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-2/ohmmeter-usage/" target="_blank">ohmmeter</a> and choose three that are the closest in value to each other. Precision is very important for this experiment!</li>
+</ul>
+<p>&nbsp;</p>
+<h3>Learning Objectives</h3>
+<ul>
+<li>Learn&nbsp;how a resistor network can function as a voltage signal averager</li>
+<li>Introduction to analog computing</li>
+<li>Illustrate the application of <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-10/millmans-theorem/" target="_blank">Millman&rsquo;s Theorem</a></li>
+</ul>
+<p>&nbsp;</p>
+<h3>Instructions</h3>
+<p><strong>Step 1:&nbsp;</strong>Build the analog computer averaging circuit, as shown in the schematic diagram&nbsp;of Figure 2.&nbsp;</p>
+<p>&nbsp;</p>
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/voltage-signal-averager-schematic-diagram.jpg" /></p>
+<h5><em><strong>Figure 2. </strong>Circuit schematic of an analog computer averaging circuit</em></h5>
+<p>&nbsp;</p>
+<p>You can construct it using a <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/building-simple-resistor-circuits/" target="_blank">breadboard</a>, as illustrated in Figure 1, or using terminal strips, as illustrated below in Figure 3.&nbsp;</p>
+<p>&nbsp;</p>
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/millmans-theorem-illustration-1.jpg" /></p>
+<h5><em><strong>Figure 3. </strong>Analog computer for averaging calculation built on using terminal strips</em></h5>
+<p>&nbsp;</p>
+<p>Pay careful attention to notice that the&nbsp;battery connected to resistor R<sub>2</sub> is connected backward&nbsp;to the other two&nbsp;with the negative side up.</p>
+<p><strong>Step 2:</strong>&nbsp;Measure all battery voltages with a <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-2/voltage-usage/" target="_blank">voltmeter</a> and record the values.&nbsp;When you measure each battery voltage, keep the black test probe connected to the <a href="https://www.allaboutcircuits.com/technical-articles/an-introduction-to-ground/" target="_blank">ground</a>&nbsp;point (the side of the battery directly joined to the other batteries by jumper wires), and touch the red probe to the other battery terminal. Polarity is important here!&nbsp;The voltage of the second battery&nbsp;connected to resistor R<sub>2</sub> should read as a negative quantity when measured by a properly connected digital meter, the other batteries measuring positive.</p>
+<p><strong>Step 3.&nbsp;</strong>Calculate the average of the three battery voltages:&nbsp;\(&nbsp;(V_1 + V_2 + V_3) / 3 \).</p>
+<p><strong>Step 4:&nbsp;</strong>Connect the&nbsp;voltmeter at the point shown in the schematic and illustrations and measure the voltage. It should register the algebraic average of the three batteries&rsquo; voltages. If the resistor values are chosen to match each other very closely, the output&nbsp;voltage of this circuit should match the calculated average closely as well. This deceptively crude circuit performs the function of mathematically averaging three voltage signals together and so fulfills a specialized computational role. In other words, it is a computer that can only do one mathematical operation: averaging three quantities together.</p>
+<p><strong>Step 5:&nbsp;</strong>Disconnect one battery and remeasure&nbsp;the output voltage. It&nbsp;will equal the average voltage of the two remaining batteries.</p>
+<p><strong>Step 6: </strong>Connect the jumper wires formerly connecting the removed battery to each other to effectively create a 0 V input for that branch of the circuit, as illustrated in Figure 4.&nbsp;</p>
+<p>&nbsp;</p>
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/millmans-theorem-illustration-2.jpg" /></p>
+<h5><em><strong>Figure 4. </strong>Applying 0 V to one branch of the analog computer averaging circuit</em></h5>
+<p>&nbsp;</p>
+<p>The circuit will average the two remaining battery voltages together with 0 V, producing a smaller output signal.</p>
+<p>The sheer simplicity of this circuit deters most people from calling it a computer,&nbsp;but it undeniably performs the mathematical function of averaging. Not only does it perform this function, but it performs it much faster than any modern digital computer can!&nbsp;At one time, analog computers were the ultimate tool for engineering research; however,&nbsp;since then, they&nbsp;have been largely supplanted by digital computer technology. Digital computers enjoy the advantage of performing mathematical operations with much better precision than analog computers, albeit at much slower theoretical speeds.</p>
+<p>With the addition of circuits called <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-1/amplifiers/" target="_blank">amplifiers</a>, voltage signals in analog computer networks may be boosted and re-used in other networks to perform various mathematical functions. Such analog computers excel at performing the calculus operations of numerical differentiation and integration and, as such, may be used to simulate the behavior of complex mechanical, electrical, and even chemical systems.</p>
+<p>&nbsp;</p>
+<h3>SPICE Simulation of an Analog Computer Circuit</h3>
+<p>We can also simulate our analog computer circuit in&nbsp;<a href="https://www.allaboutcircuits.com/textbook/reference/chpt-7/fundamentals-spice-programming/" target="_blank">SPICE</a>. We can force a digital computer to simulate an analog computer, which averages three numbers together. Obviously, we aren&rsquo;t doing this for the practical task of averaging numbers, but rather to learn more about circuits and more about computer simulation of circuits!</p>
+<p>&nbsp;</p>
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/voltage-signal-averager-schematic-diagram-1.jpg" /></p>
+<h5><em><strong>Figure 5. </strong>Adding node numbers to the analog computer circuit for SPICE simulation.</em></h5>
+<p>&nbsp;</p>
+<p>Netlist (make a text file containing the following text, verbatim):</p>
+<p>&nbsp;</p>
+<pre>
+Voltage averager&#10;v1 1 0 &#10;v2 0 2 dc 9 &#10;v3 3 0 dc 1.5 &#10;r1 1 4 10k &#10;r2 2 4 10k &#10;r3 3 4 10k &#10;.dc v1 6 6 1 &#10;.print dc v(4,0) &#10;.end </pre>

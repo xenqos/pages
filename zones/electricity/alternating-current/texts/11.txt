@@ -1,0 +1,57 @@
+<h1>Polar Form and Rectangular Form Notation for Complex Numbers</h1>
+<p>In order to work with <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-2/introduction-to-complex-numbers/" target="_blank" title="complex numbers">complex numbers</a> without <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-2/vectors-and-ac-waveforms/" target="_blank" title="drawing vectors">drawing vectors</a>, we first need some kind of standard mathematical notation. There are two basic forms of complex number notation: <em>polar</em> and <em>rectangular</em>.</p>
+<h3>Polar Form of a Complex Number</h3>
+<p>The polar form is where a complex number is denoted by the <em>length</em> (otherwise known as the <em>magnitude</em>, <em>absolute value</em>, or <em>modulus</em>) and the <em>angle</em> of its vector (usually denoted by an angle symbol that looks like this: &ang;).</p>
+<p>To use the map analogy, the polar notation for the vector from New York City to San Diego would be something like &ldquo;2400 miles, southwest.&rdquo; Here are two examples of vectors and their polar notations:</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/vector-with-polar-notations.png" /></p>
+<p><em>Vectors with polar notations.</em></p>
+<p>&nbsp;</p>
+<p>Standard orientation for vector angles in AC circuit calculations defines 0&deg; as being to the right (horizontal), making 90&deg; straight up, 180&deg; to the left, and 270&deg; straight down. Please note that vectors angled &ldquo;down&rdquo; can have angles represented in polar form as positive numbers in excess of 180, or negative numbers less than 180.</p>
+<p>For example, a vector angled &ang; 270&deg; (straight down) can also be said to have an angle of -90&deg;. (Figure below) The above vector on the right (7.81 &ang; 230.19&deg;) can also be denoted as 7.81 &ang; -129.81&deg;.</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/the-vector-compass.png" /></p>
+<p><em>The vector compass.</em></p>
+<p>&nbsp;</p>
+<h3>Rectangular Form of a Complex Number</h3>
+<p>Rectangular form, on the other hand, is where a complex number is denoted by its respective horizontal and vertical components. In essence, the angled vector is taken to be the hypotenuse of a right triangle, described by the lengths of the adjacent and opposite sides.</p>
+<p>Rather than describing a vector&rsquo;s length and direction by denoting magnitude and angle, it is described in terms of &ldquo;how far left/right&rdquo; and &ldquo;how far up/down.&rdquo;&nbsp;</p>
+<p>These two-dimensional figures (horizontal and vertical) are symbolized by two numerical figures. In order to distinguish the horizontal and vertical dimensions from each other, the vertical is prefixed with a lower-case &ldquo;i&rdquo; (in pure mathematics) or &ldquo;j&rdquo; (in electronics).</p>
+<p>These lower-case letters do not represent a physical variable (such as instantaneous current, also symbolized by a lower-case letter &ldquo;i&rdquo;), but rather are mathematical <em>operators</em> used to distinguish the vector&rsquo;s vertical component from its horizontal component. As a complete complex number, the horizontal and vertical quantities are written as a sum: (Figure below)</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/complete-complex-number.png" /></p>
+<p><em>In &ldquo;rectangular&rdquo; form the vector&rsquo;s length and direction are denoted in terms of its horizontal and vertical span, the first number representing the horizontal (&ldquo;real&rdquo;) and the second number (with the &ldquo;j&rdquo; prefix) representing the vertical (&ldquo;imaginary&rdquo;) dimensions.</em></p>
+<p>&nbsp;</p>
+<p>The horizontal component is referred to as the <em>real</em> component since that dimension is compatible with normal, scalar (&ldquo;real&rdquo;) numbers. The vertical component is referred to as the <em>imaginary</em> component since that dimension lies in a different direction, totally alien to the scale of the real numbers. (Figure below)</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/vector-compass-real-imaginary-axes.png" /></p>
+<p><em>Vector compass showing real and imaginary axes.</em></p>
+<p>&nbsp;</p>
+<p>The &ldquo;real&rdquo; axis of the graph corresponds to the familiar number line we saw earlier: the one with both positive and negative values on it. The &ldquo;imaginary&rdquo; axis of the graph corresponds to another number line situated at 90&deg; to the &ldquo;real&rdquo; one.</p>
+<p>Vectors being two-dimensional things, we must have a two-dimensional &ldquo;map&rdquo; upon which to express them, thus the two number lines perpendicular to each other: (Figure below)</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/vector-compass-with-real-imaginary-number-lines.png" /></p>
+<p><em>Vector compass with real and imaginary (&ldquo;j&rdquo;) number lines.</em></p>
+<p>&nbsp;</p>
+<h3>Converting from Polar Form to Rectangular Form</h3>
+<p>Either method of notation is valid for complex numbers. The primary reason for having two methods of notation is for ease of longhand calculation, rectangular form lending itself to addition and subtraction, and polar form lending itself to multiplication and division.</p>
+<p>Conversion between the two notational forms involves simple trigonometry. To convert from polar to rectangular, find the real component by multiplying the polar magnitude by the cosine of the angle, and the imaginary component by multiplying the polar magnitude by the sine of the angle.</p>
+<p>This may be understood more readily by drawing the quantities as sides of a right triangle, the hypotenuse of the triangle representing the vector itself (its length and angle with respect to the horizontal constituting the polar form), the horizontal and vertical sides representing the &ldquo;real&rdquo; and &ldquo;imaginary&rdquo; rectangular components, respectively: (Figure below)</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/real-and-imaginary-components.png" /></p>
+<p><em>Magnitude vector in terms of real (4) and imaginary (j3) components.</em></p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/magnitude-vector-in-terms-of-real-and-imaginary.png" /></p>
+<p>&nbsp;</p>
+<h3>Converting from Rectangular Form to Polar Form</h3>
+<p>To convert from rectangular to polar, find the polar magnitude through the use of the <a href="https://www.allaboutcircuits.com/textbook/reference/chpt-5/right-triangle-trigonometry/" target="_blank">Pythagorean Theorem</a> (the polar magnitude is the hypotenuse of a right triangle, and the real and imaginary components are the adjacent and opposite sides, respectively), and the angle by taking the arctangent of the imaginary component divided by the real component:</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/converting-rectangular-form-to-polar-form.png" /></p>
+<p>&nbsp;</p>
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li><em>Polar</em> notation denotes a complex number in terms of its vector&rsquo;s length and angular direction from the starting point. Example: fly 45 miles &ang; 203&deg; (West by Southwest).</li>
+<li><em>Rectangular</em> notation denotes a complex number in terms of its horizontal and vertical dimensions. Example: drive 41 miles West, then turn and drive 18 miles South.</li>
+<li>In rectangular notation, the first quantity is the &ldquo;real&rdquo; component (horizontal dimension of the vector) and the second quantity is the &ldquo;imaginary&rdquo; component (vertical dimension of the vector). The imaginary component is preceded by a lower-case &ldquo;j,&rdquo; sometimes called the <em>j operator</em>.</li>
+<li>Both polar and rectangular forms of notation for a complex number can be related graphically in the form of a right triangle, with the hypotenuse representing the vector itself (polar form: hypotenuse length = magnitude; angle with respect to horizontal side = angle), the horizontal side representing the rectangular &ldquo;real&rdquo; component, and the vertical side representing the rectangular &ldquo;imaginary&rdquo; component.</li>
+</ul>

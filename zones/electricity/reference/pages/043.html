@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Reference</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='042.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='044.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>The Common-base Amplifier</h1>
+<p>The final transistor <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-1/amplifiers/&quot; target=&quot;_blank&quot;>amplifier</a> configuration (Figure below) we need to study is the <em>common-base amplifiers</em>. This configuration is more complex than the other two and is less common due to its strange operating characteristics.</p>
+<p><img src=&quot;/uploads/articles/common-base-amplifier.jpg&quot; /></p>
+<p>Common-base amplifier</p>
+<h3>Why is it Called a Common-base Amplifier?</h3>
+<p>It is called the <em>common-base</em> configuration because (DC <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-9/power-supply-circuits/&quot; title=&quot;&quot;>power source</a> aside), the signal source and the load share the base of the transistor as a common connection point shown in Figure below.</p>
+<p><img src=&quot;/uploads/articles/common-base-configuration.jpg&quot; /></p>
+<p>Common-base amplifier: Input between emitter and base, output between collector and base.</p>
+<p>Perhaps the most striking characteristic of this configuration is that the input signal source must carry the full emitter current of the transistor, as indicated by the heavy arrows in the first illustration. As we know, the emitter current is greater than any other current in the transistor, being the sum of base and collector currents. In the last two amplifier configurations, the signal source was connected to the base lead of the transistor, thus handling the <em>least</em> current possible.</p>
+<h3>Attenuation of Current in Common-base Amplifiers</h3>
+<p>Because the input current exceeds all other currents in the circuit, including the output current, the current gain of this amplifier is <em>less than 1</em> (notice how Rload is connected to the collector, thus carrying slightly less current than the signal source). In other words, it <em>attenuates</em> current rather than <em>amplifying</em> it. With <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-4/common-emitter-amplifier/&quot; title=&quot;&quot;>common-emitter</a> and <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-4/common-collector-amplifier/&quot; title=&quot;&quot;>common-collector</a> amplifier configurations, the transistor parameter most closely associated with gain was &beta;. In the common-base circuit, we follow another basic transistor parameter: the ratio between collector current and emitter current, which is always a fraction less than 1. This fractional value for any transistor is called the <em>alpha</em> ratio, or &alpha; ratio.</p>
+<h3>Boosting Signal Voltage in Common-base Amplifiers</h3>
+<p>Since it obviously can&rsquo;t boost signal current, it only seems reasonable to expect it to boost signal voltage. A <a href=&quot;https://www.allaboutcircuits.com/textbook/reference/chpt-7/introduction-to-spice/&quot; target=&quot;_blank&quot;>SPICE</a> simulation of the circuit in the figure below will vindicate that assumption.</p>
+<p><img src=&quot;/uploads/articles/spice-simulation-of-the-circuit.jpg&quot; /></p>
+<p>Common-base circuit for DC SPICE analysis.</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/common-base-circuit-for-dc-spice-analysis.jpg&quot; /></p>
+<pre><br>
+common-base amplifier vin 0 1 r1 1 2 100 q1 4 0 2 mod1 v1 3 0 dc 15 rload 3 4 5k .model mod1 npn .dc vin 0.6 1.2 .02 .plot dc v(3,4) .end </pre>
+
+<p><em>Common-base amplifier DC transfer functio</em><em>n.</em><em> </em></p>
+<p>Notice in the figure above that the output voltage goes from practically nothing (cutoff) to 15.75 volts (saturation) with the input voltage being swept over a range of 0.6 volts to 1.2 volts. The output voltage plot doesn&rsquo;t show a rise until about 0.7 volts at the input and cuts off (flattens) at about 1.12 volts input. This represents a rather large voltage gain with an output voltage span of 15.75 volts and an input voltage span of only 0.42 volts: a gain ratio of 37.5, or 31.48 dB. Notice also how the output voltage (measured across Rload) exceeds the power supply (15 volts) at saturation, due to the series-aiding effect of the input voltage source.</p>
+<p>The second set of SPICE analyses with an AC signal source (and DC bias voltage) tells the same story: a high voltage gain</p>
+<p>Example circuit</p>
+<p><img src=&quot;/uploads/articles/spice-analyses-with-an-ac-signal-source.jpg&quot; /></p>
+<p>Common-base circuit for SPICE AC analysis.</p>
+<p>As you can see, the input and output waveforms in Figure below are in phase with each other. This tells us that the common-base amplifier is non-inverting.</p>
+<p><img src=&quot;/uploads/articles/common-base-amplifier-is-non-inverting.jpg&quot; /></p>
+<pre><br>
+common-base amplifier vin 5 2 sin (0 0.12 2000 0 0) vbias 0 1 dc 0.95 r1 2 1 100 q1 4 0 5 mod1 v1 3 0 dc 15 rload 3 4 5k .model mod1 npn .tran 0.02m 0.78m .plot tran v(5,2) v(4) .end </pre>
+
+<p>The AC SPICE analysis in Table below at a single frequency of 2 kHz provides input and output voltages for gain calculation.</p>
+<p><em>Common-base AC analysis at 2 kHz&ndash; netlist followed by output.</em></p>
+<pre><br>
+common-base amplifier vin 5 2 ac 0.1 sin vbias 0 1 dc 0.95 r1 2 1 100 q1 4 0 5 mod1 v1 3 0 dc 15 rload 3 4 5k .model mod1 npn .ac dec 1 2000 2000 .print ac vm(5,2) vm(4,3) .end frequency mag(v(5,2)) mag(v(4,3))&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;0.000000e+00 1.000000e-01 4.273864e+00</pre>
+
+<p>Voltage figures from the second analysis (Table above) show a voltage gain of 42.74 (4.274 V / 0.1 V), or 32.617 dB:</p>
+<p><img src=&quot;/uploads/articles/voltage-gain-equation.jpg&quot; /></p>
+<p>Here&rsquo;s another view of the circuit in the figure below, summarizing the phase relations and DC offsets of various signals in the circuit just simulated.</p>
+<p><img src=&quot;/uploads/articles/phase-relationships-and-offsets-for-npn-common-base-amplifier.jpg&quot; /></p>
+<p>Phase relationships and offsets for NPN common base amplifier.</p>
+<p>. . . and for a PNP transistor: Figure below.</p>
+<p><img src=&quot;/uploads/articles/phase-relationships-and-offsets-for-npn-transistor.jpg&quot; /></p>
+<p>Phase relationships and offsets for PNP common base amplifier.</p>
+<h3>Predicting Voltage Gain</h3>
+<p>Predicting voltage gain for the common-base amplifier configuration is quite difficult, and involves approximations of transistor behavior that are difficult to measure directly. Unlike the other amplifier configurations, where voltage gain was either set by the ratio of two resistors (common-emitter) or fixed at an unchangeable value (common-collector), the voltage gain of the common-base amplifier depends largely on the amount of DC bias on the input signal. As it turns out, the internal transistor resistance between emitter and base plays a major role in determining voltage gain, and this resistance changes with different levels of current through the emitter.</p>
+<p>While this phenomenon is difficult to explain, it is rather easy to demonstrate through the use of computer simulations. SPICE simulations on a common-base amplifier circuit (Figure previous), changing the DC bias voltage slightly (vbias in Figure below ) while keeping the AC signal amplitude and all other circuit parameters constant. As the voltage gain changes from one simulation to another, different output voltage amplitudes will be noted.</p>
+<p>Although these analyses will all be conducted in the &ldquo;transfer function&rdquo; mode, each was first &ldquo;proved&rdquo; in the transient analysis mode (voltage plotted over time) to ensure that the entire wave was being faithfully reproduced and not &ldquo;clipped&rdquo; due to improper biasing. See &ldquo;*.tran 0.02m 0.78m&rdquo; in Figure below, the &ldquo;commented out&rdquo; transient analysis statement. Gain calculations cannot be based on waveforms that are distorted. SPICE can calculate the small-signal DC gain for us with the &ldquo;.tf v(4) vin&rdquo; statement. The output is <strong>v(4)</strong> and the input as <strong>vin</strong>.</p>
+<pre><br>
+common-base amp vbias=0.85V vin 5 2 sin (0 0.12 2000 0 0) vbias 0 1 dc 0.85 r1 2 1 100 q1 4 0 5 mod1 v1 3 0 dc 15 rload 3 4 5k .model mod1 npn *.tran 0.02m 0.78m .tf v(4) vin .end </pre>
+
+<pre><br>
+common-base amp current gain Iin 55 5 0A vin 55 2 sin (0 0.12 2000 0 0) vbias 0 1 dc 0.8753 r1 2 1 100 q1 4 0 5 mod1 v1 3 0 dc 15 rload 3 4 5k .model mod1 npn *.tran 0.02m 0.78m .tf I(v1) Iin .end Transfer function information: transfer function = 9.900990e-01 iin input impedance = 9.900923e+11 v1 output impedance = 1.000000e+20</pre>
+
+<p><em>SPICE net list: Common-base, transfer function (voltage gain) for various DC bias voltages. SPICE net list: Common-base amp current gain; Note .tf v(4) vin statement. Transfer function for DC current gain I(vin)/Iin; Note .tf I(vin) Iin statement.</em></p>
+<p>At the command line, <strong>spice -b filename.cir</strong> produces a printed output due to the <strong>.tf</strong> statement: transfer_function, output_impedance, and input_impedance. The abbreviated output listing is from runs with <strong>vbias</strong> at 0.85, 0.90, 0.95, 1.00 V as recorded in Table below.</p>
+<p><em>SPICE output: Common-base transfer function.</em></p>
+<pre><br>
+Circuit: common-base amp vbias=0.85V transfer_function = 3.756565e+01 output_impedance_at_v(4) = 5.000000e+03 vin#input_impedance = 1.317825e+02 Circuit: common-base amp vbias=0.8753V Ic=1 mA Transfer function information: transfer_function = 3.942567e+01 output_impedance_at_v(4) = 5.000000e+03 vin#input_impedance = 1.255653e+02 Circuit: common-base amp vbias=0.9V transfer_function = 4.079542e+01 output_impedance_at_v(4) = 5.000000e+03 vin#input_impedance = 1.213493e+02 Circuit: common-base amp vbias=0.95V transfer_function = 4.273864e+01 output_impedance_at_v(4) = 5.000000e+03 vin#input_impedance = 1.158318e+02 Circuit: common-base amp vbias=1.00V transfer_function = 4.401137e+01 output_impedance_at_v(4) = 5.000000e+03 vin#input_impedance = 1.124822e+02</pre>
+
+<p>A trend should be evident in the Table above. With increases in DC bias voltage, voltage gain (transfer_function) increases as well. We can see that the voltage gain is increasing because each subsequent simulation (vbias= 0.85, 0.8753, 0.90, 0.95, 1.00 V) produces greater gain (transfer_function= 37.6, 39.4 40.8, 42.7, 44.0), respectively. The changes are largely due to minuscule variations in bias voltage.</p>
+<p>The last three lines of Table above (right) show the <strong>I(v1)/Iin</strong> current gain of 0.99. (The last two lines look invalid.) This makes sense for &beta;=100; &alpha;= &beta;/(&beta;+1), &alpha;=0.99=100/(100-1). The combination of low current gain (always less than 1) and somewhat unpredictable voltage gain conspire against the common-base design, relegating it to a few practical applications.</p>
+<p>Those few applications include radio frequency amplifiers. The grounded base helps shield the input at the emitter from the collector output, preventing instability in RF amplifiers. The common base configuration is usable at higher frequencies than the common emitter or common collector. See &ldquo;Class C common-base 750 mW RF power amplifier&rdquo; <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-9/radio-circuits/&quot; target=&quot;_blank&quot;>Ch 9</a>. For a more elaborate circuit see &ldquo;Class A common-base small-signal high gain amplifier&rdquo; <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-9/radio-circuits/&quot; target=&quot;_blank&quot;>Ch 9</a>.</p>
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li><em>Common-base</em> transistor amplifiers are so-called because the input and output voltage points share the base lead of the transistor in common with each other, not considering any power supplies.</li>
+<li>The current gain of a common-base amplifier is always less than 1. The voltage gain is a function of input and output resistances, and also the internal resistance of the emitter-base junction, which is subject to change with variations in DC bias voltage. Suffice to say that the voltage gain of a common-base amplifier can be very high.</li>
+<li>The ratio of a transistor&rsquo;s collector current to emitter current is called &alpha;. The &alpha; value for any transistor is always less than unity, or in other words, less than 1.</li>
+</ul>
+
+
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Radio Frequencies</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='08.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='10.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>Low-Power RF Devices and the ISM Bands</h1>
+<p>When considered from a historical perspective, RF systems are closely associated with high-power transmission. We imagine large antennas for AM and FM stations, long-distance military radios, and even exotic applications such as the systems used to communicate with and control spacecraft. These systems are associated with a vague idea that longer range is better, and therefore more power is better.</p>
+<p>High-power RF is by no means unimportant or rare, but in many ways it is increasingly separated from our daily lives. Or at least we can say that it is less <em>noticeable</em> in our daily lives, because so much of our attention is now focused on small, low-power wireless devices.</p>
+<p>&nbsp;</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/RFT_ch2_pg3_1.jpg&quot; /></p>
+<h5><em>Bluetooth products are examples of the battery-powered wireless devices that are increasingly common in modern life.</em></h5>
+<p>&nbsp;</p>
+<p>In systems such as these, extreme design effort is devoted to achieving acceptable performance at the lowest possible power consumption. This means that efficiency may be more important than maximum power transfer, and it also means that there may be no desire to achieve maximum range. The goal is simply to achieve <em>adequate</em> range, i.e., range that allows the device to be used for its intended purpose.</p>
+<p>An interesting example involves hearing aids. It should come as no surprise that the human body&rsquo;s sensory system is designed to work with two ears; the human brain refines our ability to experience and react to sound by combining these two related sensory streams (presumably in rather complex ways). Wearing hearing aids in both ears can help to restore this balanced perception of sound, but modern devices go a step further by actually communicating with the hearing aid in the other ear. In this way, the two hearing aids can &ldquo;work together&rdquo; to fine-tune their response.</p>
+<p>This is a perfect example of an RF system that does not need to maximize range. The designers know almost exactly how much distance will separate the transmitter and receiver, and there is no realistic situation in which it would be beneficial to have longer range.</p>
+<p>&nbsp;</p>
+<h3>Digital vs. Analog</h3>
+<p>An important technique in low-power RF systems is digital modulation. This does not refer to actually transmitting digital (i.e., rectangular) signals; though this is not impossible, it is impractical because a rectangular wave has high harmonic content. The transmitted signal contains large amounts of energy at frequencies quite far away from the carrier frequency, and consequently it would be a source of interference.</p>
+<p>&nbsp;</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/RFT_ch2_pg3_2.jpg&quot; /></p>
+<h5><em>The spectrum of a square wave; there is too much energy at the harmonic frequencies.</em></h5>
+<p>&nbsp;</p>
+<p>As discussed in the previous page, the electromagnetic spectrum must remain organized to ensure that numerous unrelated devices can reliably implement wireless communication. This means that wireless transmissions must be restricted to a specific allocated frequency range, and this is not possible when using rectangular signals.</p>
+<p>&nbsp;</p>
+<h3>Digital Modulation</h3>
+<p>Digital modulation, then, uses sinusoidal waves, just as analog modulation does. The difference is that in a digital system the modulation of the carrier does not represent a continuous representation of the analog baseband signal. Instead, it represents digital data. The changes in the carrier wave occur in discrete sections referred to as symbols, and each symbol represents one or more bits. We will discuss digital modulation in more depth later in this textbook.</p>
+<p>&nbsp;</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/RFT_ch2_pg3_3.jpg&quot; /></p>
+<h5><em>An example of digital modulation&mdash;in this case, amplitude modulation.</em></h5>
+<p>&nbsp;</p>
+<p>Digital modulation provides benefits analogous to those of typical digital communication. Because information is transferred as discrete bits instead of a continuously varying signal, transmit power can be minimized with very little loss of data&mdash;as long as the power is sufficient to enable the receiver to distinguish between a zero and a one, all of the data will be transferred successfully. Also, digital communication allows the receiver to ask the transmitter to resend specific sections of data, if, for example, transient interference caused a brief reduction in signal-to-noise ratio.</p>
+<p>Digital RF systems, often referred to as data links, have the additional advantage of being able to evaluate their own performance in real time. An error-detection algorithm, such as a <a href=&quot;https://www.allaboutcircuits.com/technical-articles/the-cyclic-redundancy-check-crc-findingand-even-correctingerrors-in-digital/&quot; target=&quot;_blank&quot;>cyclic redundancy check</a>, can be used to assess the quality of the connection. If the receiving device notices a significant increase in the frequency of bit errors, it can ask the transmitter to increase its output power. In this way the transmitter&rsquo;s power consumption can be optimized based on the actual performance of the data link.</p>
+<h3>The ISM Bands</h3>
+<p>As discussed in the previous page, any organization that wants to operate an RF transmitter must obtain explicit permission from the proper regulatory agency (such as the FCC in the United States). The most notable exception to this rule is the use of the ISM bands.</p>
+<p>ISM stands for industrial, scientific, and medical. Presumably, this reflects the original intention of the FCC, but the name is no longer relevant. The ISM bands are used by numerous devices from other product categories&mdash;Bluetooth, Wi-Fi, home security systems, radio-frequency identification (RFID), toys, cordless phones. . . .</p>
+<p>&nbsp;</p>
+<h3>Unlicensed vs. Unregulated</h3>
+<p>The ISM bands are <em>unlicensed</em>, but they are emphatically not <em>unregulated</em>. &ldquo;Unlicensed&rdquo; means that it is legal to develop and market an ISM-band device without obtaining explicit permission from a regulatory body. &ldquo;Unregulated&rdquo; would imply that you can transmit anything you want as long as you stay within the ISM frequencies, and this is not the case.</p>
+<p>The most straightforward limitation is that of transmit power: in general, the power delivered to the antenna cannot exceed 1 W (30 dBm). However, the situation becomes more complicated when you get into details such as frequency hopping or spread-spectrum transmission.</p>
+<p>&nbsp;</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/TB_SSRF_2.JPG&quot; /></p>
+<h5><em>Spread-spectrum modulation; this will be discussed later in the textbook.</em></h5>
+<p>&nbsp;</p>
+<p>Also, there are restrictions on out-of-band transmitted energy&mdash;this is relevant because low-order harmonics can result in significant transmitted energy that falls outside the acceptable range of frequencies.</p>
+<p>The most important ISM band is referred to as the 2.4 GHz band, though 2.4 GHz is actually not the center frequency; the band extends from 2.4 to 2.4835 GHz. A major advantage of this band is its worldwide availability&mdash;other ISM bands vary from one region to another, but 2.4 GHz is available for unlicensed operation all over the world.</p>
+<p>&nbsp;</p>
+<h3>Summary</h3>
+<ul>
+<li>Low-power RF devices are increasingly common in our daily lives. Apart from the general interest in conserving energy, low-power operation increases battery life.</li>
+<li>Digital data transfer is an important technique in many RF systems; in low-power systems it allows for a more efficient use of battery power.</li>
+<li>Digital modulation refers to the use of analog waveforms to transfer digital data.</li>
+<li>The ISM bands are the most significant exception to typical RF licensing requirements. Numerous wireless devices utilize ISM frequencies.</li>
+<li>ISM-band devices do not require a license, but they must comply with the regulations that govern these bands.</li>
+</ul>
+
+
+
+</div>
+</div>
+</body>
+</html>

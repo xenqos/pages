@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Direct Current</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='046.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='048.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>What is a Series-Parallel Circuit?</h1>
+<p>With simple <a href=&quot;https://www.allaboutcircuits.com/video-lectures/series-circuits-part-1/&quot; target=&quot;_blank&quot;>series circuits</a>, all components are connected end-to-end to form only one path for the current to flow through the circuit:</p>
+<p><img src=&quot;/uploads/articles/simple-series-circuit-image1.jpg&quot; /></p>
+<p>With simple <a href=&quot;https://www.allaboutcircuits.com/video-lectures/parallel-circuits/&quot; target=&quot;_blank&quot;>parallel circuits</a>, all components are connected between the same two sets of electrically common points, creating multiple paths for the current to flow from one end of the battery to the other:</p>
+<p><img src=&quot;/uploads/articles/simple-parallel-circuit-image1.jpg&quot; /></p>
+<h3>Rules regarding Series and Parallel Circuits</h3>
+<p>With each of these two basic circuit configurations, we have specific sets of rules describing <a href=&quot;https://www.allaboutcircuits.com/video-lectures/electrical-quantities-a/&quot; target=&quot;_blank&quot;>voltage, current, and resistance</a> relationships.</p>
+<p><strong>Series Circuits:</strong></p>
+<ul>
+<li>Voltage drops add to equal total voltage.</li>
+<li>All components share the same (equal) current.</li>
+<li>Resistances add to equal total resistance.</li>
+</ul>
+
+<p><strong>Parallel Circuits:</strong></p>
+<ul>
+<li>All components share the same (equal) voltage.</li>
+<li>Branch currents add to equal total current.</li>
+<li>Resistances diminish to equal total resistance.</li>
+</ul>
+
+<h3>Series - Parallel Circuits</h3>
+<p>However, if circuit components are series-connected in some parts and parallel in others, we won&rsquo;t be able to apply a <em>single</em> set of rules to every part of that circuit. Instead, we will have to identify which parts of that circuit are series and which parts are parallel, then selectively apply series and parallel rules as necessary to determine what is happening. Take the following circuit, for instance:</p>
+<p><img src=&quot;/uploads/articles/series-parallel-combination-circuits.jpg&quot; /></p>
+<p><img src=&quot;/uploads/articles/elements-of-series-and-parallel-circuit.jpg&quot; /></p>
+<p>This circuit is neither simple series nor simple parallel. Rather, it contains elements of both. The current exits the bottom of the battery splits up to travel through R<sub>3</sub> and R<sub>4</sub>, rejoins, then splits up again to travel through R<sub>1</sub> and R<sub>2</sub>, then rejoin again to return to the top of the battery. There exists more than one path for current to travel (not series), yet there are more than two sets of electrically common points in the circuit (not parallel).</p>
+<p>Because the circuit is a combination of both series and parallel, we cannot apply the rules for voltage, current, and resistance &ldquo;across the table&rdquo; to begin analysis like we could when the circuits were one way or the other. For instance, if the above circuit were simple series, we could just add up R<sub>1</sub> through R<sub>4</sub> to arrive at a total resistance, solve for total current, and then solve for all voltage drops. Likewise, if the above circuit were simple parallel, we could just solve for branch currents, add up branch currents to figure the total current, and then calculate total resistance from total voltage and total current. However, this circuit&rsquo;s solution will be more complex.</p>
+<p>The table will still help us manage the different values for series-parallel combination circuits, but we&rsquo;ll have to be careful how and where we apply the different rules for series and parallel. <a href=&quot;https://www.allaboutcircuits.com/video-lectures/electrical-quantities-b/&quot; target=&quot;_blank&quot;>Ohm&rsquo;s Law</a>, of course, still works just the same for determining values within a vertical column in the table.</p>
+<p>If we are able to identify which parts of the circuit are series and which parts are parallel, we can analyze it in stages, approaching each part one at a time, using the appropriate rules to determine the relationships of voltage, current, and resistance. The rest of this chapter will be devoted to showing you techniques for doing this.</p>
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li>The rules of series and parallel circuits must be applied selectively to circuits containing both types of interconnections.</li>
+</ul>
+
+
+
+</div>
+</div>
+</body>
+</html>

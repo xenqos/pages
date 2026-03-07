@@ -1,0 +1,23 @@
+<h1>Vectors and AC Waveforms</h1>
+<p>OK, so how exactly can we represent AC quantities of voltage or current in the form of a vector? The length of the vector represents the magnitude (or amplitude) of the <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-1/ac-waveforms/" target="_blank">waveform</a>, like this: (Figure below)</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/vector-length-represents-ac-voltage-magnitude.png" /></p>
+<p>&nbsp;</p>
+<p>The greater the amplitude of the waveform, the greater the length of its corresponding vector. The angle of the vector, however, represents the phase shift in degrees between the waveform in question and another waveform acting as a &ldquo;reference&rdquo; in time.</p>
+<p>Usually, when the phase of a waveform in a circuit is expressed, it is referenced to the power supply voltage waveform (arbitrarily stated to be &ldquo;at&rdquo; 0&deg;). Remember that phase is always a <em>relative</em> measurement between two waveforms rather than an absolute property. (Figure below)</p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/vector-angle-to-another-waveform.png" /></p>
+<p>&nbsp;</p>
+<p><img src="/uploads/articles/phase-shift-between-waves-and-vector-phase-angle.png" /></p>
+<p>&nbsp;</p>
+<p>The greater the <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-4/phase-shift/" target="_blank">phase shift</a> in degrees between two waveforms, the greater the angle difference between the corresponding vectors. Being a relative measurement, as the voltage, phase shift (vector angle) only has meaning in reference to some standard waveform.</p>
+<p>Generally, this &ldquo;reference&rdquo; waveform is the main AC <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-9/power-supply-circuits/" target="_blank">power supply</a> voltage in the circuit. If there is more than one AC voltage source, then one of those sources is arbitrarily chosen to be the phase reference for all other measurements in the circuit.</p>
+<p>This concept of a reference point is not unlike that of the &ldquo;ground&rdquo; point in a circuit for the benefit of the voltage reference.</p>
+<p>With a clearly defined point in the circuit declared to be &ldquo;ground,&rdquo; it becomes possible to talk about voltage &ldquo;on&rdquo; or &ldquo;at&rdquo; single points in a circuit, being understood that those voltages (always relative between <em>two</em> points) are referenced to &ldquo;ground.&rdquo;</p>
+<p>Correspondingly, with a clearly defined point of reference for phase, it becomes possible to speak of voltages and currents in an AC circuit having definite phase angles.</p>
+<p>For example, if the current in an AC circuit is described as &ldquo;24.3 milliamps at -64 degrees,&rdquo; it means that the current waveform has an amplitude of 24.3 mA, and it lags 64&deg; behind the reference waveform, usually assumed to be the main source voltage waveform.</p>
+<p>&nbsp;</p>
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li>When used to describe an AC quantity, the length of a vector represents the amplitude of the wave while the angle of a vector represents the phase angle of the wave relative to some other (reference) waveform.</li>
+</ul>
