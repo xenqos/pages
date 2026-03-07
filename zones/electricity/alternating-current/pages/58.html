@@ -34,33 +34,26 @@
 <h1>Single-phase Power Systems</h1>
 <p><img src=&quot;/uploads/articles/single-phase-power-system-schematic-diagram.jpg&quot; /></p>
 <p><em>Single phase power system schematic diagram shows little about the wiring of a practical power circuit.</em></p>
-<p>&nbsp;</p>
 <p>Depicted above, is a very simple <a href=&quot;https://www.allaboutcircuits.com/textbook/alternating-current/chpt-1/what-is-alternating-current-ac/&quot; target=&quot;_blank&quot;>AC circuit</a>. If the load resistor&rsquo;s power dissipation were substantial, we might call this a &ldquo;power circuit&rdquo; or &ldquo;power system&rdquo; instead of regarding it as just a regular circuit.</p>
 <p>The distinction between a &ldquo;power circuit&rdquo; and a &ldquo;regular circuit&rdquo; may seem arbitrary, but the practical concerns are definitely not.</p>
-<h3>Practical Circuit Analysis</h3>
+<h2>Practical Circuit Analysis</h2>
 <p>One such concern is the size and cost of wiring necessary to deliver power from the AC source to the load. Normally, we do not give much thought to this type of concern if we&rsquo;re merely analyzing a circuit for the sake of learning about the laws of electricity.</p>
 <p>However, in the real world, it can be a major concern. If we give the source in the above circuit a voltage value and also give power dissipation values to the two load resistors, we can determine the wiring needs for this particular circuit:</p>
-<p>&nbsp;</p>
 <p><img src=&quot;/uploads/articles/single-phase-power-system-schematic-diagram-example.jpg&quot; /></p>
 <p><em>As a practical matter, the wiring for the 20 kW loads at 120 Vac is rather substantial (167 A).</em></p>
-<p>&nbsp;</p>
 <p><img src=&quot;/uploads/articles/load-resistor-total-circuit-current-equation.jpg&quot; /></p>
-<p>&nbsp;</p>
 <p>83.33 amps for each load resistor in the figure above adds up to 166.66 amps total circuit current. This is no small amount of current and would necessitate copper wire conductors of at least 1/0 gauge.</p>
 <p>Such wire is well over 1/4 inch (6 mm) in diameter, weighing over 300 pounds per thousand feet. Bear in mind that copper is not cheap either! It would be in our best interest to find ways to minimize such costs if we were designing a power system with long conductor lengths.</p>
 <p>One way to do this would be to increase the <a href=&quot;https://www.allaboutcircuits.com/worksheets/voltage-current-and-resistance/&quot; target=&quot;_blank&quot;>voltage</a> of the power source and use loads built to dissipate 10 kW each at this higher voltage.</p>
 <p>The loads, of course, would have to have greater resistance values to dissipate the same power as before (10 kW each) at a greater voltage than before.</p>
 <p>The advantage would be less current required, permitting the use of smaller, lighter, and cheaper wire:</p>
-<p>&nbsp;</p>
 <p><img src=&quot;/uploads/articles/single-phase-power-system-schematic-diagram-example1.jpg&quot; /></p>
 <p><em>Same 10 kW loads at 240 Vac requires less substantial wiring than at 120 Vac (83 A).</em></p>
-<p>&nbsp;</p>
 <p><img src=&quot;/uploads/articles/load-resistor-total-circuit-current-equation1.jpg&quot; /></p>
-<p>&nbsp;</p>
 <p>Now our <em>total</em> circuit current is 83.33 amps, half of what it was before.</p>
 <p>We can now use number 4 gauge wire, which weighs less than half of what 1/0 gauge wire does per unit length. This is a considerable reduction in system cost with no degradation in performance.</p>
 <p>This is why power distribution system designers elect to transmit electric power using very high voltages (many thousands of volts): to capitalize on the savings realized by the use of smaller, lighter, cheaper wire.</p>
-<h3>Dangers of Increasing the Source Voltage</h3>
+<h2>Dangers of Increasing the Source Voltage</h2>
 <p>However, this solution is not without disadvantages. Another practical concern with power circuits is the danger of electric shock from high voltages.</p>
 <p>Again, this is not usually the sort of thing we concentrate on while learning about the laws of electricity, but it is a very valid concern in the real world, especially when large amounts of power are being dealt with.</p>
 <p>The gain in efficiency realized by stepping up the circuit voltage presents us with an increased danger of electric shock. Power distribution companies tackle this problem by stringing their power lines along high poles or towers and insulating the lines from the supporting structures with large, porcelain insulators.</p>
@@ -68,33 +61,29 @@
 <p>High voltage gives greater system efficiency by means of reduced conductor current, but it might not always be practical to keep power wiring out of reach at the point of use the way it can be elevated out of reach in distribution systems.</p>
 <p>This tradeoff between efficiency and danger is one that European power system designers have decided to risk, all their households and appliances operating at a nominal voltage of 240 volts instead of 120 volts as it is in North America.</p>
 <p>That is why tourists from America visiting Europe must carry small step-down transformers for their portable appliances, to step the 240 VAC (volts AC) power down to a more suitable 120 VAC.</p>
-<h3>Solutions for Voltage Delivery to Consumers</h3>
-<h4>Step-down Transformers at End-point of Power use</h4>
+<h2>Solutions for Voltage Delivery to Consumers</h2>
+<h3>Step-down Transformers at End-point of Power use</h3>
 <p>Is there any way to realize the advantages of both increased efficiency and reduced safety hazard at the same time?</p>
 <p>One solution would be to install step-down transformers at the end-point of power use, just as the American tourist must do while in Europe.</p>
 <p>However, this would be expensive and inconvenient for anything but very small loads (where the transformers can be built cheaply) or very large loads (where the expense of thick copper wires would exceed the expense of a transformer).</p>
-<h4>Two Lower voltage Loads in Series</h4>
+<h3>Two Lower voltage Loads in Series</h3>
 <p>An alternative solution would be to use a higher voltage supply to provide power to two lower voltage loads in series. This approach combines the efficiency of a high-voltage system with the safety of a low-voltage system:</p>
-<p>&nbsp;</p>
 <p><img src=&quot;/uploads/articles/efficiency-of-high-voltage-system-example.jpg&quot; /></p>
 <p><em>Series connected 120 Vac loads, driven by 240 Vac source at 83.3 A total current.</em></p>
-<p>&nbsp;</p>
 <p>Notice the polarity markings (+ and -) for each voltage shown, as well as the unidirectional arrows for current.</p>
 <p>For the most part, I&rsquo;ve avoided labeling &ldquo;polarities&rdquo; in the AC circuits we&rsquo;ve been analyzing, even though the notation is valid to provide a frame of reference for phase.</p>
 <p>In later sections of this chapter, phase relationships will become very important, so I&rsquo;m introducing this notation early on in the chapter for your familiarity.</p>
 <p>The current through each load is the same as it was in the simple 120-volt circuit, but the currents are not additive because the loads are in series rather than parallel.</p>
 <p>The voltage across each load is only 120 volts, not 240, so the safety factor is better. Mind you, we still have a full 240 volts across the power system wires, but <em>each load</em> is operating at a reduced voltage.</p>
 <p>If anyone is going to get shocked, the odds are that it will be from coming into contact with the conductors of a particular load rather than from contact across the main wires of a power system.</p>
-<h3>Modifications to Two Load Series Design</h3>
+<h2>Modifications to Two Load Series Design</h2>
 <p>There&rsquo;s only one disadvantage to this design: the consequences of one load failing open, or being turned off (assuming each load has a series on/off switch to interrupt current) are not good.</p>
 <p>Being a series circuit, if either load were to open, the current would stop in the other load as well. For this reason, we need to modify the design a bit: (Figure below)</p>
-<p>&nbsp;</p>
 <p><img src=&quot;/uploads/articles/efficiency-of-high-voltage-system-example1.jpg&quot; /></p>
 <p><em>Addition of a neutral conductor allows loads to be individually driven.</em></p>
-<p>&nbsp;</p>
 <p><img src=&quot;/uploads/articles/load-resistor-total-circuit-current-equation2.jpg&quot; /></p>
-<p>&nbsp;</p>
-<h3>Split-phase Power System</h3>
+
+<h2>Split-phase Power System</h2>
 <p>Instead of a single 240-volt power supply, we use two 120 volt supplies (in phase with each other!) in series to produce 240 volts, then run a third wire to the connection point between the loads to handle the eventuality of one load opening.</p>
 <p>This is called a <em>split-phase</em> power system. Three smaller wires are still cheaper than the two wires needed with the simple parallel design, so we&rsquo;re still ahead on efficiency.</p>
 <p>The astute observer will note that the neutral wire only has to carry the <em>difference</em> of current between the two loads back to the source.</p>
@@ -102,28 +91,21 @@
 <p>Notice how the neutral wire is connected to earth ground at the power supply end. This is a common feature in power systems containing &ldquo;neutral&rdquo; wires, since grounding the neutral wire ensures the least possible voltage at any given time between any &ldquo;hot&rdquo; wire and earth ground.</p>
 <p>An essential component of a split-phase power system is the dual AC voltage source. Fortunately, designing and building one is not difficult.</p>
 <p>Since most AC systems receive their power from a step-down transformer anyway (stepping voltage down from high distribution levels to a user-level voltage like 120 or 240), that transformer can be built with a center-tapped secondary winding:&nbsp;</p>
-<p>&nbsp;</p>
 <p><img src=&quot;/uploads/articles/step-down-transformer-with-center-tapped-secondary-winding.jpg&quot; /></p>
 <p><em>American 120/240 Vac power is derived from a center tapped utility transformer.</em></p>
-<p>&nbsp;</p>
 <p>If the AC power comes directly from a generator (alternator), the coils can be similarly center-tapped for the same effect. The extra expense to include a center-tap connection in a transformer or alternator winding is minimal.</p>
 <p>Here is where the (+) and (-) polarity markings really become important. This notation is often used to reference the phasings of <em>multiple</em> AC voltage sources, so it is clear whether they are aiding (&ldquo;boosting&rdquo;) each other or opposing (&ldquo;bucking&rdquo;) each other.</p>
 <p>If not for these polarity markings, phase relations between multiple AC sources might be very confusing. Note that the split-phase sources in the schematic (each one 120 volts &ang; 0&deg;), with polarity marks (+) to (-) just like series-aiding batteries can alternatively be represented as such: (Figure below)</p>
-<p>&nbsp;</p>
 <p><img src=&quot;/uploads/articles/split-phase-sources-in-schematic-diagram.jpg&quot; /></p>
 <p><em>Split phase 120/240 Vac source is equivalent to two series aiding 120 Vac sources.</em></p>
-<p>&nbsp;</p>
 <p>To mathematically calculate voltage between &ldquo;hot&rdquo; wires, we must <em>subtract</em> voltages, because their polarity marks show them to be opposed to each other:</p>
-<p>&nbsp;</p>
 <p><img src=&quot;/uploads/articles/voltage-between-hot-wires-equation.jpg&quot; /></p>
-<p>&nbsp;</p>
 <p>If we mark the two sources&rsquo; common connection point (the neutral wire) with the same polarity mark (-), we must express their relative phase shifts as being 180&deg; apart. Otherwise, we&rsquo;d be denoting two voltage sources in direct opposition with each other, which would give 0 volts between the two &ldquo;hot&rdquo; conductors.</p>
 <p>Why am I taking the time to elaborate on polarity marks and phase angles? It will make more sense in the next section!</p>
 <p>Power systems in American households and light industry are most often of the split-phase variety, providing so-called 120/240 VAC power. The term &ldquo;split-phase&rdquo; merely refers to the split-voltage supply in such a system.</p>
 <p>In a more general sense, this kind of AC power supply is called <em>single phase</em> because both voltage waveforms are in phase, or in step, with each other.</p>
 <p>The term &ldquo;single phase&rdquo; is a counterpoint to another kind of power system called &ldquo;polyphase&rdquo; which we are about to investigate in detail. Apologies for the long introduction leading up to the title-topic of this chapter.</p>
 <p>The advantages of polyphase power systems are more obvious if one first has a good understanding of single-phase systems.</p>
-<p>&nbsp;</p>
 <p><strong>REVIEW:</strong></p>
 <ul>
 <li><em>Single phase</em> power systems are defined by having an AC source with only one voltage waveform.</li>

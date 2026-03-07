@@ -32,15 +32,14 @@
 <div id='idContent'>
 
 <h1>AC Lab - Signal and Noise Coupling</h1>
-<h3>Project Overview</h3>
+<h2>Project Overview</h2>
 <p>When multiple wires carrying AC and time-varying signals are placed in close proximity to each other, unwanted coupling often occurs. This means the signals from one wire are transmitted via the stray capacitance between adjacent wires. Using the circuit illustrated in Figure 1, this project uses a simple DC motor to generate variable noise signals that are coupled from the wires carrying the power to the other, unconnected wires in the cable.&nbsp;</p>
-<p>&nbsp;</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/telephone-cable-schematic-diagram.jpg&quot; /></p>
-<h5><em><strong>Figure 1. </strong>The schematic&nbsp;diagram for powering a motor through a multi-conductor cable.</em></h5>
-<p>&nbsp;</p>
+<h4><em><strong>Figure 1. </strong>The schematic&nbsp;diagram for powering a motor through a multi-conductor cable.</em></h4>
+
 <p>Additionally, this provides an excellent method for both observing unwanted signal coupling and learning how to mitigate its effect.&nbsp;</p>
-<p>&nbsp;</p>
-<h3>Parts and Materials</h3>
+
+<h2>Parts and Materials</h2>
 <ul>
 <li>6 V battery</li>
 <li>One 0.22 &micro;F&nbsp;<a href=&quot;https://eepower.com/capacitor-guide/&quot; target=&quot;_blank&quot;>capacitor</a></li>
@@ -51,66 +50,57 @@
 </ul>
 
 <p>In case you are wondering, telephone cable is typically available from hardware stores. Any unshielded multi-conductor cable will suffice for this experiment. Cables with thin conductors (telephone cable is typically 24-gauge) produce a more pronounced effect.</p>
-<p>&nbsp;</p>
-<h3>Learning Objectives</h3>
+
+<h2>Learning Objectives</h2>
 <ul>
 <li>To learn how to couple&nbsp;AC signals and block DC signals to a measuring instrument</li>
 <li>To learn how stray coupling happens in cables</li>
 <li>To determine techniques to minimize inter-cable coupling</li>
 </ul>
 
-<p>&nbsp;</p>
-<h3>Instructions</h3>
+<h2>Instructions</h2>
 <p><strong>Step 1:&nbsp;</strong>Connect the motor to the battery using two of the telephone cable&rsquo;s four conductors, as illustrated in Figure 2.&nbsp;</p>
-<p>&nbsp;</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/telephone-cable-illustration.jpg&quot; /></p>
-<h5><em><strong>Figure 2.</strong> Powering the motor through the unshielded multi-conductor wire.</em></h5>
-<p>&nbsp;</p>
+<h4><em><strong>Figure 2.</strong> Powering the motor through the unshielded multi-conductor wire.</em></h4>
+
 <p>The motor should run as expected.</p>
 <p><strong>Step 2:&nbsp;</strong>Now, connect the audio signal detector across the motor terminals with the 0.047 &micro;F capacitor&nbsp;in series, as shown in Figure 3.&nbsp;</p>
-<p>&nbsp;</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/telephone-cable-illustration-three.jpg&quot; /></p>
-<h5><em><strong>Figure 3.</strong>&nbsp;Use a capacitor to AC&nbsp;couple the motor signal to the audio detector.</em></h5>
-<p>&nbsp;</p>
+<h4><em><strong>Figure 3.</strong>&nbsp;Use a capacitor to AC&nbsp;couple the motor signal to the audio detector.</em></h4>
+
 <p>You should be able to hear a buzz&nbsp;or whine&nbsp;in the headphones, representing the AC noise voltage produced by the motor as the brushes make and break contact with the rotating commutator bars.</p>
 <p>The purpose of the series capacitor is to act as a <a href=&quot;https://www.allaboutcircuits.com/textbook/alternating-current/chpt-8/high-pass-filters/&quot; target=&quot;_blank&quot;>high-pass filter</a> so that the detector only receives the AC voltage across the motor&rsquo;s terminals, not any DC voltage. This is precisely how <a href=&quot;https://www.allaboutcircuits.com/worksheets/basic-oscilloscope-operation/&quot; target=&quot;_blank&quot;>oscilloscopes</a> provide an AC coupling&nbsp;feature for measuring the AC content of a signal without any DC bias voltage;&nbsp;a capacitor is <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/simple-series-circuits/&quot; target=&quot;_blank&quot;>connected in series</a> with one test probe.</p>
 <p>Ideally, one would expect nothing but pure DC voltage at the motor&rsquo;s terminals because the motor is <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/simple-parallel-circuits/&quot; target=&quot;_blank&quot;>connected directly in parallel</a> with the battery. Since the motor&rsquo;s terminals are electrically common with the respective terminals of the battery, and the battery&rsquo;s nature is to maintain a constant DC voltage, nothing but DC voltage should appear at the motor terminals, right?</p>
 <p>Well, because of resistance internal to the battery and along the conductor lengths, as illustrated in Figure 4, current pulses drawn by the motor produce oscillating voltage dips&nbsp;at the motor terminals, causing the AC noise&nbsp;heard by the detector:</p>
-<p>&nbsp;</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/audio-detector-to-measure-noise-voltage.jpg&quot; /></p>
-<h5><em><strong>Figure 4.</strong>&nbsp;Schematic representation of distributed wire resistance and noise voltage generation.</em></h5>
-<p>&nbsp;</p>
+<h4><em><strong>Figure 4.</strong>&nbsp;Schematic representation of distributed wire resistance and noise voltage generation.</em></h4>
+
 <p><strong>Step 3:&nbsp;</strong>Use the audio detector to measure noise&nbsp;voltage directly across the battery, as shown in Figure 5.</p>
-<p>&nbsp;</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/telephone-cable-illustration-four.jpg&quot; /></p>
-<h5><em><strong>Figure 5.</strong>&nbsp;Monitoring the noise voltage at the battery terminals.</em></h5>
-<p>&nbsp;</p>
+<h4><em><strong>Figure 5.</strong>&nbsp;Monitoring the noise voltage at the battery terminals.</em></h4>
+
 <p>Since the AC noise is produced in this circuit by pulsating voltage drops along stray resistances, by measuring across&nbsp;less <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/resistance/&quot; target=&quot;_blank&quot;>resistance</a>, we should detect less noise.</p>
 <p><strong>Step 4: </strong>As demonstrated in Figure 6, you may also measure the noise voltage dropped along either of the telephone cable conductors supplying power to the motor by connecting the audio detector between both ends of a single cable conductor.&nbsp;</p>
-<p>&nbsp;</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/telephone-cable-illustration-one.jpg&quot; /></p>
-<h5><em><strong>Figure 6.</strong>&nbsp;Monitoring the noise voltage across the length of the multi-conductor cable</em></h5>
-<p>&nbsp;</p>
+<h4><em><strong>Figure 6.</strong>&nbsp;Monitoring the noise voltage across the length of the multi-conductor cable</em></h4>
+
 <p>The noise detected here originates from current pulses through the resistance of the wire.</p>
 <p><strong>Step 5:&nbsp;</strong>Now that we have established how AC noise is created and distributed in this circuit, let&rsquo;s explore how it is coupled to adjacent wires in the cable. Use the audio detector to measure the&nbsp;<a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/voltage-current-practical-circuit/&quot; target=&quot;_blank&quot;>voltage</a> between one of the motor terminals and one of the unused wires in the telephone cable, as illustrated in Figure 7.</p>
-<p>&nbsp;</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/telephone-cable-illustration-two.jpg&quot; /></p>
-<h5><em><strong>Figure 7.</strong>&nbsp;Monitoring the noise voltage coupled to unused conductor wires in the multi-conductor cable</em></h5>
-<p>&nbsp;</p>
+<h4><em><strong>Figure 7.</strong>&nbsp;Monitoring the noise voltage coupled to unused conductor wires in the multi-conductor cable</em></h4>
+
 <p>The 0.047 &micro;F capacitor is not needed in this exercise because there is no DC voltage between these points for the detector to detect anyway.</p>
 <p>The noise voltage detected here is due to stray <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-13/factors-affecting-capacitance/&quot; target=&quot;_blank&quot;>capacitance</a> between adjacent cable conductors creating an AC current path&nbsp;between the wires. Remember that no current actually goes through a capacitance, but the alternate charging and discharging action of a capacitance, whether it be intentional or unintentional, provides the AC&nbsp;a pathway of sorts.</p>
 <p>If we were to try and conduct a voltage signal between one of the unused wires and a point common with the motor, that signal would become tainted with noise voltage from the motor. This could be quite detrimental, depending on how much noise was coupled between the two circuits and how sensitive one circuit was to the other&rsquo;s noise.&nbsp;Since the primary coupling phenomenon in this circuit is capacitive in nature, higher-frequency noise voltages are more strongly coupled than lower-frequency noise voltages.</p>
 <p><strong>Step 6:&nbsp;</strong>If the additional signal was a DC signal, with no AC expected in it, we could mitigate the problem of coupled noise by decoupling&nbsp;the AC noise with a relatively large capacitor connected across the DC signal&rsquo;s conductors. Test this by using the 0.22 &micro;F capacitor for this purpose, as shown in Figure 8.</p>
-<p>&nbsp;</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/telephone-cable-illustration-six.jpg&quot; /></p>
-<h5><em><strong>Figure 8.</strong>&nbsp;Using a decoupling capacitor to minimize noise.</em></h5>
-<p>&nbsp;</p>
+<h4><em><strong>Figure 8.</strong>&nbsp;Using a decoupling capacitor to minimize noise.</em></h4>
+
 <p>The decoupling capacitor acts as a practical short-circuit to any AC noise voltage while not affecting DC voltage signals between those two points at all. So long as the decoupling capacitor value is significantly larger than the stray coupling&nbsp;capacitance between the cable&rsquo;s conductors, the AC noise voltage will be held to a minimum.</p>
 <p><strong>Step 7:&nbsp;</strong>Another way of minimizing coupled noise in a cable is to avoid having two circuits share a common conductor. To illustrate, connect the audio detector between the two unused wires, as shown in Figure 9, and listen for a noise signal.</p>
-<p>&nbsp;</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/telephone-cable-illustration-five.jpg&quot; /></p>
-<h5><em><strong>Figure 9.</strong>&nbsp;Monitoring noise coupling to unconnected conductors.</em></h5>
-<h5>&nbsp;</h5>
+<h4><em><strong>Figure 9.</strong>&nbsp;Monitoring noise coupling to unconnected conductors.</em></h4>
+<h4>&nbsp;</h4>
 <p>There should be far less noise detected between any two of the unused conductors than between one unused conductor and one used in the motor circuit. The reason for this drastic reduction in noise is that stray capacitance&nbsp;between cable conductors tends to couple the same noise voltage to both of the unused conductors in approximately equal proportions.&nbsp;Thus, when measuring the voltage between those two conductors, the detector only sees&nbsp;the difference between two approximately identical noise signals.</p>
 
 

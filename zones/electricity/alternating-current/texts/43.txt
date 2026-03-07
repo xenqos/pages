@@ -1,4 +1,4 @@
-<h1>What is a Filter?</h1>
+# What is a Filter?
 <p>It is sometimes desirable to have circuits capable of selectively filtering one frequency or range of frequencies out of a mix of different frequencies in a circuit. A circuit designed to perform this frequency selection is called a <em>filter circuit</em>, or simply a <em>filter</em>.</p>
 <p>A common need for filter circuits is in high-performance stereo systems, where certain ranges of audio frequencies need to be amplified or suppressed for best sound quality and power efficiency.</p>
 <p>You may be familiar with <em>equalizers</em>, which allow the amplitudes of several frequency ranges to be adjusted to suit the listener&rsquo;s taste and acoustic properties of the listening area.</p>
@@ -10,7 +10,7 @@
 <p>If a distorted sine-wave voltage behaves like a series of harmonic waveforms added to the fundamental frequency, then it should be possible to construct a filter circuit that only allows the fundamental waveform frequency to pass through, blocking all (higher-frequency) harmonics.</p>
 <p>We will be studying the design of several elementary filter circuits in this lesson. To reduce the load of math on the reader, I will make extensive use of <a href="https://www.allaboutcircuits.com/textbook/reference/chpt-7/fundamentals-spice-programming/" target="_blank">SPICE</a> as an analysis tool, displaying Bode plots (amplitude versus frequency) for the various kinds of filters.</p>
 <p>Bear in mind, though, that these circuits can be analyzed over several points of frequency by repeated&nbsp;<a href="https://www.allaboutcircuits.com/video-lectures/series-parallel-circuits/" target="_blank">series-parallel</a> analysis, much like the previous example with two sources (60 and 90 Hz), if the student is willing to invest a lot of time working and re-working circuit calculations for each frequency.</p>
-<p>&nbsp;</p>
+
 <p><strong>REVIEW:</strong></p>
 <ul>
 <li>A <em>filter</em> is an AC circuit that separates some frequencies from others within mixed-frequency signals.</li>

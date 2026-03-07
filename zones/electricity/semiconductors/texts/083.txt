@@ -1,4 +1,4 @@
-<h1>The Unijunction Transistor (UJT)</h1>
+# The Unijunction Transistor (UJT)
 <p><strong>Unijunction transistor:</strong> Although a unijunction transistor is not a thyristor, this device can trigger larger thyristors with a pulse at base B1. A <em>unijunction transistor</em> is composed of a bar of N-type silicon having a P-type connection in the middle. See Figure (a). The connections at the ends of the bar are known as bases B1 and B2; the P-type mid-point is the emitter. With the emitter disconnected, the total resistance R<sub>BBO</sub>, a datasheet item, is the sum of R<sub>B1</sub> and R<sub>B2</sub> as shown in Figure (b). R<sub>BBO</sub> ranges from 4-12k&Omega; for different device types. The intrinsic standoff ratio &eta; is the ratio of R<sub>B1</sub> to R<sub>BBO</sub>. It varies from 0.4 to 0.8 for different devices. The schematic symbol is Figure (c)</p>
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/unijunction-transistor-construction-model-symbol.jpg" /></p>
 <p><em>Unijunction transistor: (a) Construction, (b) Model, (c) Symbol</em></p>
@@ -19,11 +19,11 @@
 <p>The PUT equivalent of the unijunction transistor is shown in Figure below. External PUT resistors R1 and R2 replace unijunction transistor internal resistors R<sub>B1</sub> and R<sub>B2</sub>, respectively. These resistors allow the calculation of the intrinsic standoff ratio &eta;.</p>
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/PUT-equivalent-of-unijunction-transistor.jpg" /></p>
 <p><em>PUT equivalent of unijunction transistor</em></p>
-<p>&nbsp;</p>
+
 <p>Figure below shows the PUT version of the unijunction relaxation oscillator. Resistor R charges the capacitor until the peak point, then heavy conduction moves the operating point down the negative resistance slope to the valley point. A current spike flows through the cathode during capacitor discharge, developing a voltage spike across the cathode resistors. After capacitor discharge, the operating point resets back to the slope up to the peak point.</p>
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/PUT-relaxation-oscillator.jpg" /></p>
 <p><em>PUT relaxation oscillator</em></p>
-<p>&nbsp;</p>
+
 <p><strong>Problem:</strong> What is the range of suitable values for R in Figure above, a relaxation oscillator? The charging resistor must be small enough to supply enough current to raise the anode to V<sub>P</sub> the peak point while charging the capacitor. Once V<sub>P</sub> is reached, anode voltage decreases as current increases (negative resistance), which moves the operating point to the valley. It is the job of the capacitor to supply the valley current I<sub>V</sub>. Once it is discharged, the operating point resets back to the upward slope to the peak point. The resistor must be large enough so that it will never supply the high valley current I<sub>P</sub>. If the charging resistor ever could supply that much current, the resistor would supply the valley current after the capacitor was discharged and the operating point would never reset back to the high resistance condition to the left of the peak point.</p>
 <p>We select the same V<sub>BB</sub>=10V used for the unijunction transistor example. We select values of R1 and R2 so that &eta; is about 2/3. We calculate &eta; and VS. The parallel equivalent of R1, R2 is R<sub>G</sub>, which is only used to make selections from Table below. Along with V<sub>S</sub>=10, the closest value to our 6.3, we find V<sub>T</sub>=0.6V and calculate V<sub>P</sub>.</p>
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/equation-unijunction-transistor-example1.jpg" /></p>

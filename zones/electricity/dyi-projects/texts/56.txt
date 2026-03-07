@@ -1,13 +1,13 @@
-<h1>Si Lab - JFET Switching Circuit and Static Electricity Sensor</h1>
-<h3>Project Overview</h3>
+# Si Lab - JFET Switching Circuit and Static Electricity Sensor
+## Project Overview
 <p>As illustrated in Figure 1, the project is similar to the previous project&nbsp;<a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-5/transistor-as-a-switch/" target="_blank">using a bipolar junction transistor (BJT) as a switching device</a> to control current through an LED.&nbsp;</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/static-electricity-sensor-schematic-diagram.jpg" /></p>
-<h5><em><strong>Figure 1.</strong> Schematic diagram of the JFET switching circuit with LED output indicator.</em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Figure 1.</strong> Schematic diagram of the JFET switching circuit with LED output indicator.</em>
+
 <p>In this experiment, a <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-5/junction-field-effect-transistors-jfet/" target="_blank">JFET</a>&nbsp;is used in place of the <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-4/bipolar-junction-transistors-bjt/" target="_blank">BJT</a>, giving dramatically improved sensitivity.</p>
-<p>&nbsp;</p>
-<h3>Parts and Materials</h3>
+
+## Parts and Materials
 <ul>
 <li>One N-channel FET, models <a href="https://www.mouser.com/datasheet/2/68/2n3819-31474.pdf" target="_blank">2N3819</a> or <a href="https://www.onsemi.com/pdf/datasheet/j309-d.pdf" target="_blank">J309</a>, recommended</li>
 <li>One 6 V battery</li>
@@ -18,19 +18,19 @@
 <p>The particular JFET model used in this experiment is not critical. P-channel JFETs are also okay to use but are not as popular as N-channel transistors.</p>
 <p>Beware that not all transistors share the same terminal designations, or pinouts, even if they share the same physical appearance. This will dictate how you connect the transistors together and to other components, so be sure to check the manufacturer&rsquo;s specifications (component datasheet), easily obtained from the manufacturer&rsquo;s website.</p>
 <p>Beware that it is possible for the transistor&rsquo;s package and even the manufacturer&rsquo;s datasheet to show incorrect terminal identification diagrams.&nbsp;Double-checking pin identities with your multimeter&rsquo;s <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-3/meter-check-of-a-diode/" target="_blank">diode check</a>&nbsp;function is highly recommended.&nbsp;For details on how to identify JEFT terminals using a multimeter, consult the <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-5/meter-check-transistor-jfet/" target="_blank">Meter Check of a Transistor (JFET</a>) textbook page.</p>
-<p>&nbsp;</p>
-<h3>Learning Objectives</h3>
+
+## Learning Objectives
 <ul>
 <li>How the JFET is used as an on/off switch</li>
 <li>How JFET current gain differs from a bipolar transistor</li>
 </ul>
-<p>&nbsp;</p>
-<h3>Instructions</h3>
+
+## Instructions
 <p><strong>Step 1:&nbsp;</strong>Build the circuit of Figures 1 and 2.</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/static-electricity-sensor-illustration.jpg" /></p>
-<h5><em><strong>Figure 2.</strong> Breadboard implementation of the JFET switching circuit with LED output indicator.</em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Figure 2.</strong> Breadboard implementation of the JFET switching circuit with LED output indicator.</em>
+
 <p><strong>Step 2:</strong>&nbsp;Touch the loose wire end, the wire shown in red on the schematic diagram of Figure 1 and in the illustration of Figure 2, connected to the 100 k&Omega; resistor,&nbsp;with your hand. Simply touching this wire will likely have an effect on the LED&rsquo;s status.&nbsp;This circuit makes a fine sensor of static electricity. Try scuffing your feet on a carpet and then touching the wire end if no effect on the light is seen yet.</p>
 <p><strong>Step 3:&nbsp;</strong>For a more controlled test, touch the wire with one hand and alternately touch the positive (+) and negative (-) terminals of the battery with one finger of your other hand. Your body acts as a <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/conductors-insulators-electron-flow/" target="_blank">conductor</a> (albeit a poor one), connecting the gate terminal of the JFET to either terminal of the battery as you touch them.&nbsp;Make a note of which terminal makes the LED turn on and which makes the LED turn off. Try to relate this behavior with what is explained&nbsp;about JFETs in the textbook.</p>
 <p>The fact that a JFET is turned on and off so easily (requiring so little control current), as evidenced by full on-and-off control simply by conduction of a control current through your body, demonstrates how great of a current gain it has. With the BJT switch&nbsp;experiment, a much more solid&nbsp;connection between the transistor&rsquo;s gate terminal and a source of voltage was needed to turn it on.&nbsp;Not so with the JFET. In fact, the mere presence of static electricity can turn it on and off at a distance.</p>

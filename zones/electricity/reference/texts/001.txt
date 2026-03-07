@@ -1,16 +1,16 @@
-<h1>From Electric to Electronic</h1>
-<h3>Introduction</h3>
+# From Electric to Electronic
+## Introduction
 <p>This third volume of the book series <em>Lessons In Electric Circuits</em> makes a departure from the former two in that the transition between <em>electric </em>circuits and <em>electronic</em> circuits is formally crossed. Electric circuits are connections of <a href="https://www.allaboutcircuits.com/video-lectures/wire-and-cable/" target="_blank">conductive wires</a> and other devices whereby the uniform <a href="https://www.allaboutcircuits.com/video-lectures/basic-atomic-theory-semiconductor-technology/" target="_blank">flow of electric charges</a> occurs. Electronic circuits add a new dimension to electric circuits in that some means of <em>control</em> is exerted over the flow of electric charges by another electrical signal, either a voltage or a current.</p>
-<h3>Electronic Circuits</h3>
+## Electronic Circuits
 <p>In and of itself, the control of electric charge flow is nothing new to the student of electric circuits. Switches control the flow of electric charges, as do potentiometers, especially when connected as variable resistors (rheostats). Neither the <a href="https://www.allaboutcircuits.com/textbook/digital/chpt-4/switch-types/" target="_blank">switch</a> nor the potentiometer should be new to your experience by this point in your study. The threshold marking the transition from electric to electronic, then, is defined by <em>how</em> the flow of electric charges is controlled rather than whether or not any form of control exists in a circuit. Switches and rheostats control the flow of electric charges according to the positioning of a mechanical device, which is actuated by some physical force external to the circuit. In electronics, however, we are dealing with special devices able to control the flow of electric charges according to another flow of electric charges, or by the application of a <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/static-electricity/" target="_blank">static voltage</a>. In other words, in an electronic circuit, <em>electricity is able to control electricity</em>.</p>
-<h3>History of the Modern Electronics Era</h3>
-<h4>Thomas Edison</h4>
+## History of the Modern Electronics Era
+### Thomas Edison
 <p>The historic precursor to the modern electronics era was invented by Thomas Edison in 1880 while developing the electric incandescent lamp. Edison found that a small current passed from the heated lamp filament to a metal plate mounted inside the vacuum envelope. (Figure below (a)) Today this is known as the &ldquo;Edison effect&rdquo;. Note that the battery is only necessary to heat the filament. Electrons would still flow if a non-electrical heat source was used.</p>
 <p><img src="/uploads/articles/edison-effect-diagram.png" /></p>
 <p>Edison effect, Fleming valve or vacuum diode, DeForest audion triode vacuum tube amplifier.</p>
-<h4>Vacuum Diode</h4>
+### Vacuum Diode
 <p>By 1904 Marconi Wireless Company adviser John Flemming found that an externally applied current (plate battery) only passed in one direction from filament to plate (Figure above (b)), but not the reverse direction (not shown). This invention was the vacuum <a href="https://www.allaboutcircuits.com/video-lectures/diode-characteristics-circuits/" target="_blank">diode</a>, used to convert <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-1/what-is-alternating-current-ac/" target="_blank">alternating currents</a> to DC. The addition of a third electrode by Lee DeForest (Figure above (c)) allowed a small signal to control the larger electron flow from filament to plate.</p>
-<h4>Audion Tube</h4>
+### Audion Tube
 <p>Historically, the era of electronics began with the invention of the <em>Audion tube</em>, a device controlling the flow of an electron stream through a vacuum by the application of a small voltage between two metal structures within the tube. A more detailed summary of so-called <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-13/introduction-electron-tubes/"><em>electron tube</em> or <em>vacuum tube</em></a> technology is available in the last chapter of this volume for those who are interested.</p>
-<h4>Transistor</h4>
+### Transistor
 <p>Electronics technology experienced a revolution in 1948 with the invention of the <a href="https://www.allaboutcircuits.com/video-lectures/bipolar-transistors-intro/" target="_blank">transistor</a>. This tiny device achieved approximately the same effect as the Audion tube, but in a vastly smaller amount of space and with less material. Transistors control the flow of electric charges through solid semiconductor substances rather than through a vacuum, and so transistor technology is often referred to as solid-state electronics.</p>

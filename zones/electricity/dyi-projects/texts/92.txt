@@ -1,14 +1,14 @@
-<h1>555 Lab - LED Flasher with Inductive Flyback</h1>
-<h3>Project Overview</h3>
+# 555 Lab - LED Flasher with Inductive Flyback
+## Project Overview
 <p>This is the last in the series of <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-3/special-purpose-diodes/" target="_blank">light-emitting diode (LED)</a> flasher projects using the ubiquitous <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-8/555-ic/" target="_blank">555 timer IC</a>. In the&nbsp;"<a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-8/cmos-555-long-duration-blue-led-flasher/" target="_blank">Blue LED Flasher With Voltage Doubler</a>"&nbsp;experiment, we boosted the <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/voltage-current/" target="_blank">voltage</a> of the batteries to allow an LED with more <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/polarity-voltage-drops/" target="_blank">voltage drop</a> than the batteries to be used. This project will also boost the voltage, however, it will use an&nbsp;<a href="https://eepower.com/technical-articles/what-is-an-inductor/" target="_blank">inductor</a> instead of a <a href="https://eepower.com/capacitor-guide/" target="_blank">capacitor</a>.&nbsp;</p>
 <p>As shown in the schematic of Figure 1,&nbsp;this design employs two 555 ICs <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/simple-series-circuits/" target="_blank">in series</a>.&nbsp;</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/CMOS-555-long-duration-flyback-LED-flasher-schematic-diagram.jpg" /></p>
-<h5><em><strong>Figure 1.</strong> Schematic diagram of the 555 timer oscillator circuit with inductive flyback for LED drive.</em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Figure 1.</strong> Schematic diagram of the 555 timer oscillator circuit with inductive flyback for LED drive.</em>
+
 <p>The first&nbsp;set is the oscillation frequency, while the second&nbsp;creates a high-frequency switching signal used for the inductive flyback circuit to drive the LEDs.&nbsp;This particular experiment builds on the <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-5/commutating-diode/" target="_blank">commutating diode experiment</a>&nbsp;and may be helpful to review that page before proceeding.</p>
-<p>&nbsp;</p>
-<h3>Parts and Materials</h3>
+
+## Parts and Materials
 <ul>
 <li>Two AAA batteries</li>
 <li>Battery clip</li>
@@ -36,8 +36,8 @@
 </ul>
 </li>
 </ul>
-<p>&nbsp;</p>
-<h4>Optional Parts and Materials for Building the 200&nbsp;&micro;H inductor</h4>
+
+### Optional Parts and Materials for Building the 200&nbsp;&micro;H inductor
 <ul>
 <li>26 feet (8 meters) of 26 AWG magnet wire&nbsp;</li>
 <li>6/32 x 1.5-inch screw, an M4 x 30 mm screw, or a nail of similar diameter cut down to size. It must be made of&nbsp;steel or iron, but not stainless.</li>
@@ -46,8 +46,8 @@
 <li>Super glue</li>
 <li>Soldering iron and solder</li>
 </ul>
-<p>&nbsp;</p>
-<h3>Learning Objectives</h3>
+
+## Learning Objectives
 <ul>
 <li>Learn another mode of operation for the 555</li>
 <li>How to handle ESD-sensitive parts</li>
@@ -55,52 +55,52 @@
 <li>How inductors can convert power using inductive flyback</li>
 <li>How to make an inductor</li>
 </ul>
-<p>&nbsp;</p>
-<h3>Instructions for&nbsp;Building a 220 &micro;H Inductor (Optional)</h3>
+
+## Instructions for&nbsp;Building a 220 &micro;H Inductor (Optional)
 <p>If you have purchased the&nbsp;220 &micro;H inductors, you can skip this portion of the experiment and go to Step 8.&nbsp;As was mentioned above, this is not a precision part. Inductors, in general, can have a large variance for many applications.&nbsp;The target here is greater than 220 &micro;H, but it can be off on the high side a large amount.</p>
 <p>The term inductor is generic, you can also find this component called a choke or a coil. A solenoid coil would also work since that is also a type of inductor, and so would the <a href="https://www.allaboutcircuits.com/textbook/digital/chpt-5/relay-construction/" target="_blank">coil from a relay</a>. Of all the components I have used, this is probably the least critical I&rsquo;ve come across. Indeed, coils are probably the most practical component you can make yourself.&nbsp;</p>
 <p><strong>Step 1:</strong>&nbsp;If you are using a screw, first wrap&nbsp;one layer of transparent tape over&nbsp;the threads before wrapping them with&nbsp;wire. This is to prevent the threads of the screw from cutting into the wire and shorting the coil out.</p>
 <p><strong>Step 2:&nbsp;</strong>If you are using a lock nut, put it on the screw 1&rdquo; (25 mm) from the head of the screw.</p>
 <p><strong>Step 3:&nbsp;</strong>As shown at the left of Figure 2, starting around 1&rdquo; from one end of the wire, use the glue to tack the wire on the head of the nail or screw as shown, and let the glue set.</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/glue-to-tack-the-wire.jpg" /></p>
-<h5><em><strong>Figure 2.</strong> Use glue to first tack the wire when beginning (left) and then finishing (right) the inductor wire wrap.</em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Figure 2.</strong> Use glue to first tack the wire when beginning (left) and then finishing (right) the inductor wire wrap.</em>
+
 <p><strong>Step 4:&nbsp;</strong>Wind the wire neatly and tightly for 1&rdquo; along the length of the screw, again tacking it in place with super glue, as shown in Figure 2 (right). You can use a variable speed drill to help with this, as long as you are careful. Like all power appliances, it can bite you. Hold the wire tight until the glue sets.</p>
 <p><strong>Step 5:&nbsp;</strong>Then, start winding a second layer over the first. Continue this process until all of the wire except the last 1&rdquo; is used, using the glue to occasionally tack the wire down. Arrange the wire on the last layer so the second inductor lead is on the other end of the screw, away from the first. Tack this down for a final time with the glue. Let dry completely.</p>
 <p><strong>Step 6:&nbsp;</strong>Gently take a sharp blade and scrap the enamel off each end of the two leads.</p>
 <p><strong>Step 7:&nbsp;</strong>Tin the exposed copper with the soldering iron and the solder, and you now have a functional inductor that can be used in this experiment. Figure 3 is a photo of the one I made.&nbsp;</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/measure-the-inductance-connections.jpg" /></p>
-<h5><em><strong>Figure 3.</strong> Photo of a DIY&nbsp;wire wrap inductor.</em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Figure 3.</strong> Photo of a DIY&nbsp;wire wrap inductor.</em>
+
 <p>The connections shown are being used to measure the inductance, which worked out pretty close to 220&micro;H.</p>
-<p>&nbsp;</p>
-<h3>Instructions for Building&nbsp;the Oscillator with Flyback Inductor</h3>
+
+## Instructions for Building&nbsp;the Oscillator with Flyback Inductor
 <p><strong>Step 8:&nbsp;</strong>Build the circuit illustrated in Figures 1 and 4. If you build your own inductor, it will replace&nbsp;inductor L1, shown in Figure 4.</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/note-polarity-of-capacitors-ESD-sensitive-illustration.jpg" /></p>
-<h5><em><strong>Figure 4.</strong> Breadboard implementation of the 555 timer oscillator circuit with inductive flyback for LED drive.</em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Figure 4.</strong> Breadboard implementation of the 555 timer oscillator circuit with inductive flyback for LED drive.</em>
+
 <p>The basic concept is adapted from another invention, the "Joule Thief." A <a href="https://forum.allaboutcircuits.com/threads/whats-the-purpose-of-a-joule-thief.112539/page-2" target="_blank">joule thief</a> is a simple transistor oscillator that also uses inductive kickback to light an white light LED from a 1.5 V&nbsp;battery,&nbsp;and the LED needs at least 3.6 V to start conducting! Like the joule thief, it is possible to use 1.5 V&nbsp;to get this circuit to work. However, since a CMOS 555 is rated for a 2.0 V&nbsp;minimum, 1.5 V is not recommended, so we are using 3.0 V with the two AAA batteries in series.&nbsp;</p>
 <p>This circuit can drive more than 1 or 2 LEDs in series. As the numbers of LEDs go up the ability of the batteries to last a long duration goes down, as the amount of voltage the inductor can generate is somewhat dependent on battery voltage. For the purposes of this experiment, two dissimilar LEDs were used to demonstrate the independence of LED voltage drop. The high intensity of the blue LED may swamp&nbsp;the red LED, but if you look closely, you will find the red LED is at its maximum brightness. With that in mind, you can use pretty much whatever color of LEDs you choose for this experiment.</p>
 <p>Generally, the high voltage created by inductive kickback is something to be eliminated. This circuit uses it, but if you make a mistake with the polarity of the LEDs, the blue LED, which is more ESD-sensitive, will likely die (this has been verified). An uncontrolled pulse from a coil resembles an ESD event. The transistor and the TLC555 can also be at risk.</p>
-<p>&nbsp;</p>
-<h3>Theory of Operation</h3>
+
+## Theory of Operation
 <p>Both capacitors and inductors store energy. <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-13/practical-considerations-capacitors/" target="_blank">Capacitors</a> try to maintain constant voltage, whereas inductors try to maintain constant current. Both resist change in their respective aspect.&nbsp;This is the basis for the flyback transformer, which was a common circuit in old <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-13/display-tubes/" target="_blank">cathode ray tube</a> (CRT) circuits. It also finds&nbsp;other uses where high voltage is needed with minimal fuss.</p>
 <p>When you charge a coil, a magnetic field expands around it.&nbsp;Basically, it is an electromagnet, and the magnetic field is stored energy. When the current stops, this magnetic field collapses, creating electricity as the field crosses the wires in the coil.</p>
 <p>The circuit, as illustrated in Figure 1, uses two astable <a href="https://www.allaboutcircuits.com/textbook/digital/chpt-10/digital-logic-with-feedback/" target="_blank">multivibrators</a>. The first multivibrator controls the second. Both are designed for minimum current, as well as the inverter is made using Q1. Both oscillators are very similar. The first has been covered previously in the <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-8/cmos-555-long-duration-minimum-parts-red-led-flasher/" target="_blank">red LED flasher project</a>.</p>
 <p>The problem is that it stays on, or is high, 97% of the time. On the previous circuits, we used the short low state to light the LED and minimize total current consumption.&nbsp;In this case, the high state is what turns the second multivibrator on. Using a simple transistor inverter designed for an extra low current solves this problem. This is actually a very old logic family, RTL, which is short for resistor transistor logic.</p>
 <p>The second multivibrator oscillates at 68.6 KHz, with a <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-7/square-wave-signals/" target="_blank">square wave</a> of around 50%. This portion of the circuit uses the exact same principles as shown in the basic&nbsp;red<em>&nbsp;</em>LED flasher experiment. Again, the largest practical resistors are used to minimize current, which means a really small capacitor for C2. This high-frequency square wave is used to turn Q2 on and off as a simple switch.</p>
 <p>Figure 5&nbsp;shows what happens when the Q2 is conducting and the coil starts to charge.&nbsp;</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/thumbnails/CMOS-555-long-duration-flyback-LED-flasher-switch_redo.jpg" /></p>
-<h5><em><strong>Figure 5.</strong> Charging of the flyback inductor&nbsp;&nbsp;</em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Figure 5.</strong> Charging of the flyback inductor&nbsp;&nbsp;</em>
+
 <p>If Q2 were to stay on, then an effective short across the batteries would result, but since this is part of an oscillator, this won&rsquo;t happen. Before the coil can reach&nbsp;its maximum current, Q2 switches, and the switch is opened.</p>
 <p>Figure 6&nbsp;shows Q2 when it opens and the coil is charged.&nbsp;</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/thumbnails/blue_flasher_textbook_experiment_redraw.jpg" /></p>
-<h5><em><strong>Figure 6.</strong> Discharging of the flyback inductor.</em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Figure 6.</strong> Discharging of the flyback inductor.</em>
+
 <p>The coil tries to maintain the current.&nbsp;If there were no discharge path for the coil, it would create a high voltage pulse as it&nbsp;seeks to maintain the current that was flowing through it. However, we have a couple of LEDs in the discharge path, so the coil&#39;s&nbsp;voltage pulse quickly exceeds the combined voltage drop of the series&nbsp;LEDs. This turns them on, allowing the coil to&nbsp;dump&nbsp;the rest of its charge as current through the LEDs. As a result, the voltage generated is limited from getting too high.&nbsp;The LEDs are pulsed, and the light curve follows the discharge curve of the coil fairly closely. However, the human eye averages this light output to something we perceive as continuous light.</p>

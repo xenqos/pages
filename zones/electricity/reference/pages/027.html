@@ -33,7 +33,7 @@
 
 <h1>Peak Detector</h1>
 <p><a name=&quot;Peak detector&quot;></a> A&nbsp;<em>peak detector</em> is a series connection of a diode and a <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-13/practical-considerations-capacitors/&quot; target=&quot;_blank&quot;>capacitor</a> outputting a DC voltage equal to the peak value of the applied AC signal.&nbsp;</p>
-<h3>Peak Detector Operation Analysis</h3>
+<h2>Peak Detector Operation Analysis</h2>
 <p>The circuit is shown in the figure below with the corresponding SPICE net list. An <a href=&quot;https://www.allaboutcircuits.com/textbook/alternating-current/chpt-1/what-is-alternating-current-ac/&quot; target=&quot;_blank&quot;>AC voltage</a> source applied to the peak detector, charges the capacitor to the peak of the input.&nbsp;</p>
 <p>The diode conducts positive &ldquo;half cycles,&rdquo; charging the capacitor to the waveform peak. When the input waveform falls below the DC &ldquo;peak&rdquo; stored on the capacitor, the diode is reverse biased, blocking current flow from capacitor back to the source. Thus, the capacitor retains the peak value even as the waveform drops to zero.&nbsp;</p>
 <p>Another view of the peak detector is that it is the same as a <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-3/peak-detector/#half-W-R&quot; target=&quot;_blank&quot;>half-wave rectifier</a> with a filter capacitor added to the output.</p>

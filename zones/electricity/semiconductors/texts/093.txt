@@ -1,4 +1,4 @@
-<h1>Averager and Summer Circuits</h1>
+# Averager and Summer Circuits
 <p>If we take three equal <a href="https://www.allaboutcircuits.com/video-lectures/electronic-components-resistors/" target="_blank">resistors</a> and connect one end of each to a common point, then apply three input voltages (one to each of the resistors&rsquo; free ends), the voltage seen at the common point will be the mathematical <em>average </em>of the three.</p>
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/passive-averager-circuit.jpg" /></p>
 <p>This circuit is really nothing more than a practical application of <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-10/millmans-theorem/" target="_blank">Millman&rsquo;s Theorem</a>:</p>

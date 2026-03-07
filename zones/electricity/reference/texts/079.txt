@@ -1,4 +1,4 @@
-<h1>The DIAC</h1>
+# The DIAC
 <p>Like all diodes, <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-7/shockley-diode/" target="_blank">Shockley diodes</a> are unidirectional devices; that is, these only conduct current in one direction. If bidirectional (AC) operation is desired, two Shockley diodes may be joined in parallel facing different directions to form a new kind of thyristor, the DIAC: (Figure below)</p>
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/the-diac.jpg" /></p>
 <p><em>The DIAC</em></p>

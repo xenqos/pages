@@ -1,13 +1,13 @@
-<h1>Intro Lab - Resistor Power Dissipation</h1>
-<h3>Project Overview</h3>
+# Intro Lab - Resistor Power Dissipation
+## Project Overview
 <p>As you will learn in this project, the <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-11/power-resistive-reactive-ac-circuits/" target="_blank">power in a resistive circuit</a> can be calculated given any two of the three primary parameters in a simple&nbsp;circuit: <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/resistance/" target="_blank">resistance</a>, <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/voltage-current/" target="_blank">voltage, and current</a>. Most of the power dissipated by a <a href="https://eepower.com/resistor-guide/" target="_blank">resistor</a> is given off as heat, so in this project, you will also&nbsp;measure the temperature increase of a resistor under load, as illustrated in Figure 1.&nbsp;</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/resistor-connected-to-battery-using-jumper-wires.jpg" /></p>
-<h5><em><strong>Figure 1.&nbsp;</strong>Measuring the heat of a&nbsp;resistor.</em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Figure 1.&nbsp;</strong>Measuring the heat of a&nbsp;resistor.</em>
+
 <p>You will also get to see what happens when a resistor overheats!</p>
-<p>&nbsp;</p>
-<h3>Parts and Materials</h3>
+
+## Parts and Materials
 <ul>
 <li>6 V battery</li>
 <li>Two 1/4 (0.25) W resistors: 10 &Omega; and 330 &Omega;.</li>
@@ -20,49 +20,49 @@
 <li>330 &Omega; resistor:&nbsp;Orange, Orange, Brown, Gold (330, +/- 5%).</li>
 </ul>
 <p>The thermometer should be as small as possible to facilitate rapid detection of heat produced by the resistor.&nbsp;I recommend a medical thermometer, the type used to take body temperature.</p>
-<p>&nbsp;</p>
-<h3>Learning Objectives</h3>
+
+## Learning Objectives
 <ul>
 <li>Use of <a href="https://www.allaboutcircuits.com/textbook/reference/chpt-1/dc-circuit-equations-laws/" target="_blank">Joule&rsquo;s Law</a></li>
 <li>Importance of component power ratings</li>
 <li>Significance of electrically common points</li>
 </ul>
-<p>&nbsp;</p>
-<h3>Instructions</h3>
+
+## Instructions
 <p><strong>Step 1:&nbsp;</strong>Measure each resistor&rsquo;s resistance with your <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-2/ohmmeter-usage/" target="_blank">ohmmeter</a>, noting the exact values for later reference.</p>
 <p><strong>Step 2:&nbsp;</strong>Connect the 330 &Omega; resistors to the 6 V battery using a pair of jumper wires, as shown in the schematic diagram of Figure 2 and the illustration of Figure 1.</p>
 <p><span><strong>CAUTION:</strong></span>&nbsp;Connect the jumper wires to the resistor terminals before connecting the other ends to the battery.&nbsp;This will ensure your fingers are not touching the resistor when battery power is applied.&nbsp;You might wonder why I advise no bodily contact with the powered resistor. This is because it will become hot when powered by the battery.</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/power-dissipation-schematic-diagram.jpg" /></p>
-<h5><em><strong>Figure 2.&nbsp;</strong>Schematic diagram of battery-powered circuit with a resistor.</em></h5>
-<p>&nbsp;</p>
-<h4>Electrically Common Points in a Circuit</h4>
+#### <em><strong>Figure 2.&nbsp;</strong>Schematic diagram of battery-powered circuit with a resistor.</em>
+
+### Electrically Common Points in a Circuit
 <p><strong>Step 3:&nbsp;</strong>With the 330 &Omega; resistor connected to the battery, measure the voltage with a voltmeter.&nbsp;When measuring voltage, there is more than one way to obtain a proper reading, namely directly across the battery or directly across the resistor.</p>
 <p>Battery voltage is the same as resistor voltage in this circuit since those two components share the same set of electrically common points. As illustrated in Figure 4,&nbsp;one side of the resistor is directly connected to one side of the battery, and the other side of the resistor is directly connected to the other side of the battery.</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/resistor-voltage-connected-to-battery.jpg" /></p>
-<h5><em><strong>Figure 4. </strong>Electrically common points in the battery-powered circuit with the resistor.</em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Figure 4. </strong>Electrically common points in the battery-powered circuit with the resistor.</em>
+
 <p>In Figure 4, all points of contact along the upper wire&nbsp; (colored red) are electrically common to each other.&nbsp;All points of contact along the lower wire (colored black) are likewise electrically common to each other.&nbsp;Voltage measured between any point on the upper wire and any point on the lower wire should be the same.&nbsp;Voltage measured between any two common points, however, should be zero.</p>
 <p><strong>Step 4:&nbsp;</strong>Using an ammeter, measure the current through the circuit. Again, there is no one correct&nbsp;way to measure current, so long as the ammeter is placed within the current flow path through the resistor and not across a voltage source.</p>
 <p>To do this, make a break in the circuit, and place the ammeter within that break.&nbsp;Connect the two test probes to the two wires or terminal ends left open from the break. One viable option is shown in Figure 5.</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/measuring-current-through-the-circuit-through-ammeter.jpg" /></p>
-<h5><em><strong>Figure 5.</strong>&nbsp;Connecting the ammeter in the current path.</em></h5>
-<p>&nbsp;</p>
-<h4>Calculating Power Dissipation</h4>
+#### <em><strong>Figure 5.</strong>&nbsp;Connecting the ammeter in the current path.</em>
+
+### Calculating Power Dissipation
 <p><strong>Step 5:&nbsp;</strong>Now that you&rsquo;ve measured and recorded resistor resistance, circuit voltage, and circuit current, you are ready to calculate power dissipation.&nbsp;Whereas voltage is the measure of electrical push&nbsp;motivating electrons to move through a circuit, and current is the measure of electron flow rate, power is the measure of work rate&nbsp;(how fast work is being done in the circuit).&nbsp;It takes a certain amount of work to push electrons through a resistance, and power describes how rapidly that work is taking place.</p>
 <p>In mathematical equations, power is symbolized by the letter &ldquo;P&rdquo; and measured in the unit of the Watt (W).&nbsp;<a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/calculating-electric-power/" target="_blank">Power</a> may be calculated by any one of three equations&mdash;collectively referred to as Joule&rsquo;s law&mdash;given any two out of three quantities of voltage (V), current (I), and resistance (R):</p>
-<p>&nbsp;</p>
+
 <p>$$P = I \cdot V$$</p>
-<p>&nbsp;</p>
+
 <p>$$P = I^2R$$</p>
-<p>&nbsp;</p>
+
 <p>$$P = \frac{V^2}{R}$$</p>
-<p>&nbsp;</p>
+
 <p>Calculating power in this circuit, using the three measured values of voltage, current, and resistance, and the three equations.&nbsp;However you calculate it, the power dissipation figure should be roughly the same.</p>
-<p>&nbsp;</p>
-<h4>Resistor Power Ratings</h4>
+
+### Resistor Power Ratings
 <p>Assuming a battery with 6.000 volts and a resistor of exactly 330 &Omega;, the power dissipation will be 0.1090909 W, or 109.0909 mW, to use a metric prefix.&nbsp;Since the resistor has a power rating of 1/4 W (0.25 W, or 250 mW), it is more than capable of sustaining this level of power dissipation.</p>
 <p>The power rating of any electrical component does not tell us how much power it will dissipate but simply how much power it <em>may</em> dissipate without sustaining damage.&nbsp;If the actual amount of dissipated power exceeds a component&rsquo;s power rating, that component will increase the temperature to the point of damage.</p>
 <p><strong>Step 6:&nbsp;</strong>Touch the thermometer end to the middle of the resistor and see how warm it gets.&nbsp;Since the actual power level is almost half the rated power, the resistor should become noticeably warm, but it should not overheat.&nbsp;</p>

@@ -1,4 +1,4 @@
-<h1>Amplifier Impedances</h1>
+# Amplifier Impedances
 <p>Input impedance varies considerably with the circuit configuration shown in Figure below. It also varies with biasing. Not considered here, the input impedance is complex and varies with frequency. For the common-emitter and common-collector, it is base resistance times &beta;. The base resistance can be both internal and external to the transistor.&nbsp;</p>
 <p>For the <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-4/common-collector-amplifier/" target="_blank">common-collector</a>:</p>
 <pre>

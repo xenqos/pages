@@ -1,4 +1,4 @@
-<h1>Parallel Circuits and the Application of Ohm&#8217;s Law</h1>
+# Parallel Circuits and the Application of Ohm&#8217;s Law
 <img src="/uploads/thumbnails/Thumbnail-Parallel_Circuit.jpg" />
 <h3 class="text-lg lg:text-2xl font-bold mb-3">What is the Voltage and Total Current in a Parallel Circuit?</h3>
 <p><p>In a parallel circuit, all components share the same electrical nodes. Therefore, the voltage is the same across all parallel components, and the total current is the sum of all the individual branch currents.</p></p>
@@ -9,55 +9,55 @@
 <li><strong>Resistance</strong>: The total resistance of a parallel circuit is <em>less </em>than any of the individual brand resistances.</li>
 </ul>
 <p>We&rsquo;ll study these three principles using the <a href="https://www.allaboutcircuits.com/technical-articles/resistors-in-parallel-circuit-analysis-with-parallel-resistance/" target="_blank">parallel circuit</a> of Figure 1, which contains three <a href="https://www.allaboutcircuits.com/technical-articles/resistors-in-parallel-understanding-current-and-voltage-in-parallel-networks/" target="_blank">resistors connected in a parallel</a> and a single battery.</p>
-<p>&nbsp;</p>
+
 <p><img src="/uploads/thumbnails/Figure_1._Parallel_circuit_with_a_battery_and_three_resistors_.jpg" /></p>
-<h5><em><strong>Figure 1.</strong> Parallel circuit with a battery and three resistors.</em></h5>
-<p>&nbsp;</p>
-<h3>Voltage in a Parallel Circuit</h3>
+#### <em><strong>Figure 1.</strong> Parallel circuit with a battery and three resistors.</em>
+
+## Voltage in a Parallel Circuit
 <p>The first principle to understand about parallel circuits is that the voltage is equal across each parallel component. This is because there are only two sets of electrically common points in a parallel circuit, and the voltage measured between sets of common points must always be the same at any given time.</p>
 <p>With that concept in mind, in the circuit of Figure 1, nodes 1, 2, 3, and 4 are the same electrical node. Likewise, nodes 5, 6, 7, and 8 are the same electrical node. Therefore, the voltage across R<sub>1</sub> is equal to the voltage across R<sub>2</sub>, which is equal to the voltage across R<sub>3</sub>, and&nbsp;is then equal to the voltage across the battery (9 V).</p>
-<h3>&nbsp;</h3>
-<h3>Using Ohm&rsquo;s Law for Parallel Circuits to Determine Current&nbsp;</h3>
+## &nbsp;
+## Using Ohm&rsquo;s Law for Parallel Circuits to Determine Current&nbsp;
 <p>Similarly to <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/simple-series-circuits/" target="_blank">series circuits</a>, the same caveat for <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/voltage-current-resistance-relate/" target="_blank">Ohm&rsquo;s law</a> applies, where: values for voltage, current, and resistance must be in the same context for the calculations to work correctly.</p>
 <p>In the circuit of Figure 1, we can immediately apply Ohm&rsquo;s Law to each <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/resistors/" target="_blank">resistor</a> to find its current because we know the voltage across each resistor (9 V) and its resistance.</p>
-<p>&nbsp;</p>
+
 <p>$$I_{R1} = \frac{V_{R1}}{R_1} = \frac{9 \text{ V}}{10 \text{ k}\Omega} = 0.9 \text{ mA}$$</p>
-<p>&nbsp;</p>
+
 <p>$$I_{R2} = \frac{V_{R2}}{R_2} = \frac{9 \text{ V}}{2 \text{ k}\Omega} = 4.5 \text{ mA}$$</p>
-<p>&nbsp;</p>
+
 <p>$$I_{R3} = \frac{V_{R3}}{R_3} = \frac{9 \text{ V}}{1 \text{ k}\Omega} = 9.0 \text{ mA}$$</p>
-<p>&nbsp;</p>
+
 <p>However, at this point, we still don&rsquo;t know the total current or total resistance for this parallel circuit. Despite that, if we think carefully about what is happening, it should become apparent that the total current must equal the sum of all individual resistor (&ldquo;branch&rdquo;) currents (shown in Figure 2):</p>
-<p>&nbsp;</p>
+
 <p><img src="/uploads/thumbnails/Figure_2._Currents_in_a_parallel_circuit_.jpg" /></p>
-<h5><em><strong>Figure 2.</strong> Currents in a parallel circuit.</em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Figure 2.</strong> Currents in a parallel circuit.</em>
+
 <p>As the total current exits the positive (+) battery terminal at point 1 and travels through the circuit, some of the flow splits off at point 2 to go through R<sub>1</sub>, some more splits off at point 3 to go through R<sub>2</sub>, and the remainder goes through R<sub>3</sub>. Like a river branching into several smaller streams, the combined flow rates of all streams must equal the flow rate of the whole river.</p>
-<p>&nbsp;</p>
+
 <p>The same thing is encountered where the currents through R<sub>1</sub>, R<sub>2</sub>, and R<sub>3</sub> rejoin to flow back to the battery&rsquo;s negative terminal (-) toward point 8. The current flow from point 7 to point 8 must equal the sum of the branch currents through R<sub>1</sub>, R2, and R3.</p>
-<p>&nbsp;</p>
+
 <p>$$I_{total} = I_{R1} + I_{R2} + I_{R3} = 0.9 + 4.5 + 9.0 = 14.4 \text{ mA}$$</p>
-<p>&nbsp;</p>
+
 <p>This is the second principle of parallel circuits: the total parallel circuit current equals the sum of the individual branch currents.</p>
-<p>&nbsp;</p>
-<h3>How to Calculate Total Resistance in a Parallel Circuit</h3>
+
+## How to Calculate Total Resistance in a Parallel Circuit
 <p>By applying Ohm&rsquo;s law to the total circuit with voltage (9 V) and current (14.4 mA), we can calculate the total effective resistance of the parallel circuit.</p>
-<p>&nbsp;</p>
+
 <p>$$R_{total} = \frac{V_{total}}{I_{total}} = \frac{9 \text{ V}}{14.4 \text { mA}} = 625 \Omega $$</p>
-<p>&nbsp;</p>
+
 <p>Please note something very important here. The total circuit resistance is only 625 &Omega;. This is <em>less </em>than any one of the individual resistors.&nbsp;</p>
 <p>In a series circuit, the total resistance is the sum of the individual resistances and is, therefore, always <em>greater </em>than any of the resistors individually.</p>
 <p>However, here in the parallel circuit, the opposite is true. Each parallel resistor added to a circuit reduces the total equivalent resistance. Mathematically, the relationship between total resistance and individual resistance in a parallel circuit looks like this:</p>
-<p>&nbsp;</p>
+
 <p>$$R_{total} = \frac{1}{\frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3}}$$</p>
-<p>&nbsp;</p>
+
 <p>If we think of our parallel circuit in terms of <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/conductance/" target="_blank">conductance</a> rather than resistance, this often makes more sense. The conductance of a parallel circuit is the sum of the individual branch conductances as the circuit gets more conductive as we add more paths for currents to flow:</p>
-<p>&nbsp;</p>
+
 <p>$$G_{total} = G_1 + G_2 + G_3$$</p>
-<p>&nbsp;</p>
+
 <p>With that concept covered, we have now broken down some facts for voltage, current, and resistance in parallel circuits.</p>
-<p>&nbsp;</p>
-<h3>Parallel Circuit Fundamentals Review:</h3>
+
+## Parallel Circuit Fundamentals Review:
 <ul>
 <li>The voltage is the same for all components in a parallel circuit: V<sub>1</sub> = V<sub>2</sub> = . . . V<sub>n</sub></li>
 <li>The total parallel circuit current is the sum of the individual branch currents:&nbsp; I<sub>total</sub> = I<sub>1</sub> + I<sub>2</sub> + . . . I<sub>n</sub></li>

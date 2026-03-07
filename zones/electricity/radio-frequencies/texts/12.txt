@@ -1,37 +1,37 @@
-<h1>Understanding Reflections and Standing Waves in RF Circuit Design</h1>
+# Understanding Reflections and Standing Waves in RF Circuit Design
 <p>We know from our exposure to other branches of science that waves are associated with special types of behavior. Light waves refract when they move from one medium (such as air) into a different medium (such as glass). Water waves diffract when they encounter boats or large rocks. Sound waves interfere, resulting in periodic variations in volume (called &ldquo;beats&rdquo;).</p>
 <p>Electrical waves are also subject to behavior that we usually do not associate with electrical signals. The general lack of familiarity with the wave nature of electricity is not surprising, though, because in numerous circuits these effects are negligible or nonexistent. It is possible for a digital or low-frequency-analog engineer to work for years and design many successful systems without ever acquiring a thorough understanding of the wave effects that become prominent in high-frequency circuits.</p>
 <p>As discussed in the previous page, an interconnect that is subject to special high-frequency signal behavior is called a transmission line. Transmission-line effects are significant only when the length of the interconnect is at least one-fourth of the signal wavelength; thus, we don&rsquo;t have to worry about wave properties unless we are working with high frequencies or very long interconnects.</p>
-<p>&nbsp;</p>
-<h3>Reflection</h3>
+
+## Reflection
 <p>Reflection, refraction, diffraction, interference&mdash;all of these classic wave behaviors apply to electromagnetic radiation. But at this point we&rsquo;re still dealing with electrical signals, i.e., signals that have not yet been converted by the antenna into electromagnetic radiation, and consequently we only have to concern ourselves with two of these: reflection and interference.</p>
 <p>We generally think of an electrical signal as a one-way phenomenon; it travels from the output of one component to the input of another component, or in other words, from a source to a load. In RF design, however, we must always be aware of the fact that signals can travel in both directions: from source to load, certainly, but also&mdash;because of reflections&mdash;from load to source.</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/Keim_RF_textbook_Chp3P3_1.jpg" /></p>
-<h5><em>The wave traveling along the string experiences reflection when it reaches a physical barrier.</em></h5>
-<p>&nbsp;</p>
-<h4>A Water-Wave Analogy</h4>
+#### <em>The wave traveling along the string experiences reflection when it reaches a physical barrier.</em>
+
+### A Water-Wave Analogy
 <p>Reflections occur when a wave encounters a discontinuity. Imagine that a storm has resulted in large water waves propagating through a normally calm harbor. These waves eventually collide with a solid rock wall. We intuitively know that these waves will reflect off the rock wall and propagate back out into the harbor. However, we also intuitively know that water waves breaking onto a beach will rarely result in significant reflection of energy back out into the ocean. Why the difference?</p>
 <p>Waves transfer energy. When water waves are propagating through open water, this energy is simply moving. When the wave reaches a discontinuity, though, the smooth movement of energy is interrupted; in the case of a beach or a rock wall, wave propagation is no longer possible. But what happens to the energy that was being transferred by the wave? It cannot disappear; it must be either absorbed or reflected. The rock wall does not absorb the wave energy, so reflection occurs&mdash;the energy continues propagating in wave form, but in the opposite direction. The beach, however, allows the wave energy to dissipate in a more gradual and natural way. The beach absorbs the wave&rsquo;s energy, and thus minimal reflection occurs.</p>
-<h4>From Water to Electrons</h4>
+### From Water to Electrons
 <p>Electrical circuits also present discontinuities that affect wave propagation; in this context, the critical parameter is impedance. Imagine an electrical wave traveling down a transmission line; this is equivalent to the water wave in the middle of the ocean. The wave and its associated energy are propagating smoothly from source to load. Eventually, though, the electrical wave reaches its destination: an antenna, an amplifier, etc.</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/Keim_RF_textbook_Chp3P3_2.jpg" /></p>
-<p>&nbsp;</p>
+
 <p>We know from a previous page that maximum power transfer occurs when the magnitude of the load impedance is equal to the magnitude of the source impedance. (In this context &ldquo;source impedance&rdquo; can also refer to the characteristic impedance of a transmission line.) With matched impedances, there really is no discontinuity, because the load can absorb all of the wave&rsquo;s energy. But if the impedances are not matched, only some of the energy is absorbed, and the remaining energy is reflected in the form of an electrical wave traveling in the opposite direction.</p>
 <p>The amount of reflected energy is influenced by the seriousness of the mismatch between source and load impedance. The two worst-case scenarios are an open circuit and a short circuit, corresponding to infinite load impedance and zero load impedance, respectively. These two cases represent a complete discontinuity; no energy can be absorbed, and consequently all the energy is reflected.</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/Keim_RF_textbook_Chp3P3_3.jpg" /></p>
-<h3>The Importance of Matching</h3>
+## The Importance of Matching
 <p>If you&rsquo;ve even been involved in RF design or testing, you know that impedance matching is a common topic of discussion. We now understand that impedances must be matched to prevent reflections, but why so much concern about reflections?</p>
 <p>The first problem is simply efficiency. If we have a power amplifier connected to an antenna, we don&rsquo;t want half of the output power to be reflected back to the amplifier. The whole point is to generate electrical power that can be converted into electromagnetic radiation. In general, we want to move power from source to load, and this means that reflections must be minimized.</p>
 <p>The second issue is a bit more subtle. A continuous signal transferred through a transmission line to a mismatched load impedance will result in a continuous reflected signal. These incident and reflected waves pass each other, going in opposite directions. Interference results in a <em>standing wave</em>, i.e., a stationary wave pattern equal to the sum of the incident and reflected waves. This standing wave really does create peak-amplitude variations along the physical length of the cable; certain locations have higher peak amplitude, and other locations have lower peak amplitude.</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/Standing_wave_2.gif" /></p>
-<p>&nbsp;</p>
+
 <p>Standing waves result in voltages that are higher than the original voltage of the transmitted signal, and in some cases the effect is severe enough to cause physical damage to cables or components.</p>
-<p>&nbsp;</p>
-<h3>Summary</h3>
+
+## Summary
 <ul>
 <li>Electrical waves are subject to reflection and interference.</li>
 <li>Water waves reflect when they reach a physical obstruction such as a stone wall. Similarly, electrical reflection occurs when an AC signal encounters an impedance discontinuity.</li>

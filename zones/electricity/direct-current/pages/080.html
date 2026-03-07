@@ -36,8 +36,8 @@
 <h3 class=&quot;text-lg lg:text-2xl font-bold mb-3&quot;>What is Norton's Theorem in Circuit Analysis?</h3>
 <p><p>Norton&rsquo;s theorem states that any linear circuit can be simplified to an equivalent circuit consisting of a single current source and parallel resistance that is connected to a load.&nbsp;</p></p>
 <p>This article explains the step-by-step process for determining the <a href=&quot;https://www.allaboutcircuits.com/technical-articles/learning-to-simplify-thevenin-and-norton-equivalent-circuits/&quot; target=&quot;_blank&quot;>Norton equivalent circuit and Norton&rsquo;s theorem</a>. Norton&rsquo;s theorem is similar to <a href=&quot;https://www.allaboutcircuits.com/technical-articles/thevenin-theorem-dependent-source-circuits/&quot; target=&quot;_blank&quot;>Thevenin&rsquo;s theorem</a> in that it also allows us to simplify any linear circuit to an equivalent circuit. However, instead of using a <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/voltage-current/&quot; target=&quot;_blank&quot;>voltage source</a> and a series resistance, the Norton equivalent circuit consists of a <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-9/current-signal-systems/&quot; target=&quot;_blank&quot;>current source</a> with a parallel resistance. Applying Norton&rsquo;s theorem to simplify a network can make it much easier to evaluate variable loads.&nbsp;</p>
-<p>&nbsp;</p>
-<h3>Applying Norton&rsquo;s Theorem to a Linear Circuit</h3>
+
+<h2>Applying Norton&rsquo;s Theorem to a Linear Circuit</h2>
 <p>Just as for Thevenin&rsquo;s theorem and the superposition theorem, Norton&rsquo;s theorem is limited to use with linear circuits where all the underlying equations do not include exponents or roots. A circuit is linear if it uses only <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-1/active-versus-passive-devices/&quot; target=&quot;_blank&quot;>standard passive components</a> such as <a href=&quot;https://eepower.com/resistor-guide/&quot; target=&quot;_blank&quot;>resistors</a>, <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-15/magnetic-fields-and-inductance/&quot; target=&quot;_blank&quot;>inductors</a>, and <a href=&quot;https://eepower.com/capacitor-guide/&quot; target=&quot;_blank&quot;>capacitors</a>. Furthermore, most voltage sources, batteries, and current sources are also linear.</p>
 <p>Diving in, let&rsquo;s explain Norton&rsquo;s theorem using the same example circuit (Figure 1) we are using to explain many of our other <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-10/what-is-network-analysis/&quot; target=&quot;_blank&quot;>network analysis methods</a>, including:</p>
 <ul>
@@ -49,84 +49,68 @@
 </ul>
 
 <p>This will make it easier for you to compare the various methods.</p>
-<p>&nbsp;</p>
 <p><img src=&quot;/uploads/thumbnails/Figure_1._Circuit_schematic_for_explaining_Norton’s_Theorem_.jpg&quot; /></p>
-<h5><em><strong>Figure 1.</strong> Circuit schematic for explaining Norton&rsquo;s theorem.</em></h5>
-<p>&nbsp;</p>
-<h3>What is a Norton Equivalent Circuit?</h3>
+<h4><em><strong>Figure 1.</strong> Circuit schematic for explaining Norton&rsquo;s theorem.</em></h4>
+
+<h2>What is a Norton Equivalent Circuit?</h2>
 <p>Norton&rsquo;s theorem allows us to temporarily remove the load resistance from the original circuit of Figure 1 and reduce what&rsquo;s left to an equivalent circuit composed of a single current source and a parallel resistance.&nbsp;</p>
 <p>Next, the load resistance can then be re-connected to the Norton equivalent circuit to allow calculations as if the whole network is a simple <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/simple-parallel-circuits/&quot; target=&quot;_blank&quot;>parallel circuit</a>.&nbsp;</p>
 <p>After Norton conversion, our circuit of Figure 1 will be reduced to the Norton equivalent circuit of Figure 2.</p>
-<p>&nbsp;</p>
 <p><img src=&quot;/uploads/thumbnails/Figure_2._Norton_equivalent_circuit_with_load_resistor_.jpg&quot; /></p>
-<h5><em><strong>Figure 2.</strong> Norton equivalent circuit with the load resistor.</em></h5>
-<p>&nbsp;</p>
+<h4><em><strong>Figure 2.</strong> Norton equivalent circuit with the load resistor.</em></h4>
+
 <p>Remember that a current source is a component whose job is to provide a constant amount of current, outputting as much or as little voltage as necessary to maintain that constant current.</p>
-<p>&nbsp;</p>
-<h3>Calculating Norton Equivalent Circuits&mdash;Norton Current and Norton Resistance&nbsp;</h3>
+
+<h2>Calculating Norton Equivalent Circuits&mdash;Norton Current and Norton Resistance&nbsp;</h2>
 <p>As with Thevenin&rsquo;s theorem, everything in the original circuit except the load resistance has been reduced to an equivalent circuit that is simpler to analyze. Like Thevenin&rsquo;s theorem, the steps used in Norton&rsquo;s theorem to calculate the Norton source current (I<sub>Norton</sub>) and Norton resistance (R<sub>Norton</sub>) will be generally similar.</p>
-<p>&nbsp;</p>
-<h4>Step 1: Remove the Load Resistor</h4>
+
+<h3>Step 1: Remove the Load Resistor</h3>
 <p>The first step is to identify the load resistance and remove it from the original circuit, as shown in Figure 3.</p>
-<p>&nbsp;</p>
 <p><img src=&quot;/uploads/thumbnails/Figure_3._Step_1-_Remove_the_load_resistor_.jpg&quot; /></p>
-<h5><em><strong>Figure 3.</strong> Remove the load resistor.</em></h5>
-<p>&nbsp;</p>
-<h4>Step 2: Calculate the Norton Current</h4>
+<h4><em><strong>Figure 3.</strong> Remove the load resistor.</em></h4>
+
+<h3>Step 2: Calculate the Norton Current</h3>
 <p>To find the Norton current (for the current source in the Norton equivalent circuit), place a direct wire (short circuit) connection between the load points and determine the resultant current (Figure 4).&nbsp;</p>
-<p>&nbsp;</p>
 <p><img src=&quot;/uploads/thumbnails/Figure_3._Step_3-_Calculate_the_Norton_current_.jpg&quot; /></p>
-<h5><em><strong>Figure 4.</strong> Calculate the Norton current.</em></h5>
-<p>&nbsp;</p>
+<h4><em><strong>Figure 4.</strong> Calculate the Norton current.</em></h4>
+
 <p>Note that this step is opposite the respective step in Thevenin&rsquo;s theorem, where we replaced the load resistor with a break (open circuit) and calculated the voltage.</p>
 <p>The current calculation is relatively straightforward for the circuit of the figure since the node between R<sub>1</sub> and R<sub>3</sub> is now shorted to the negative terminal of both batteries. Using <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-6/kirchhoffs-current-law-kcl/&quot; target=&quot;_blank&quot;>Kirchhoff&#39;s current law (KCL)</a>, we know that:&nbsp;</p>
-<p>&nbsp;</p>
 <p>$$I_{short} = I_{R1} + I_{R2}$$</p>
-<p>&nbsp;</p>
 <p>Now, applying <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/voltage-current-resistance-relate/&quot; target=&quot;_blank&quot;>Ohm&rsquo;s law</a> to each of the individual branch currents:</p>
-<p>&nbsp;</p>
 <p>$$I_{short} = I_{R1} + I_{R2} = \frac{V_1}{R_1} + \frac{V_2}{R_2}$$</p>
-<p>&nbsp;</p>
 <p>We can solve for the short circuit current:</p>
-<p>&nbsp;</p>
 <p>$$I_{Norton} = I_{short} = \frac{28}{4} + \frac{7}{1} = 7 + 7 = 14 \text{ A}$$</p>
-<p>&nbsp;</p>
-<h4>Step 3: Replace the Power Sources</h4>
+
+<h3>Step 3: Replace the Power Sources</h3>
 <p>To find the Norton resistance for our equivalent circuit, we can now replace the power sources from our circuit in Figure 3, as shown in Figure 5.&nbsp;</p>
-<p>&nbsp;</p>
 <p><img src=&quot;/uploads/thumbnails/Figure_4._Step_3-_Replace_the_power_sources_in_the_circuit_.jpg&quot; /></p>
-<h5><em><strong>Figure 5.</strong> Replace the power sources in the circuit.</em></h5>
-<p>&nbsp;</p>
+<h4><em><strong>Figure 5.</strong> Replace the power sources in the circuit.</em></h4>
+
 <p>The voltage sources are replaced with short circuits, and the current sources are replaced with open circuits. This process of replacing the power supplies is identical to that used for the superposition theorem and Thevenin&rsquo;s theorem.</p>
-<p>&nbsp;</p>
-<h4>Step 4: Calculate the Nortan Resistance</h4>
+
+<h3>Step 4: Calculate the Nortan Resistance</h3>
 <p>After replacing the two voltage sources, the total resistance measured at the location of the removed load is equal to R<sub>1 </sub>and R<sub>3</sub> in parallel, as shown in Figure 6.&nbsp;</p>
-<p>&nbsp;</p>
 <p><img src=&quot;/uploads/thumbnails/Figure_5._Step_4-_Calculate_the_Norton_resistance_.jpg&quot; /></p>
-<h5><em><strong>Figure 6. </strong>Calculate the Norton resistance.</em></h5>
-<p>&nbsp;</p>
+<h4><em><strong>Figure 6. </strong>Calculate the Norton resistance.</em></h4>
+
 <p>The Norton equivalent resistance is calculated as:</p>
-<p>&nbsp;</p>
 <p>$$R_{Norton} = \frac{1}{\frac{1}{R_1} + \frac{1}{R_3}} = \frac{1}{\frac{1}{4} + \frac{1}{1}} = 0.8 \text{ }\Omega$$&nbsp;</p>
-<p>&nbsp;</p>
 <p>This value of 0.8 &Omega; is our Norton resistance (R<sub>Norton</sub>).&nbsp;</p>
-<p>&nbsp;</p>
-<h4>Step 5: Draw the Norton Equivalent Circuit</h4>
+
+<h3>Step 5: Draw the Norton Equivalent Circuit</h3>
 <p>The simplified Norton equivalent circuit, shown in Figure 7, can now be used for calculations for any linear load device connected between the connection points.&nbsp;</p>
-<p>&nbsp;</p>
 <p><img src=&quot;/uploads/thumbnails/Figure_6._Step_5-_Draw_the_Norton_equivalent_circuit_.jpg&quot; /></p>
-<h5><em><strong>Figure 7. </strong>Draw the Norton equivalent circuit.</em></h5>
-<p>&nbsp;</p>
+<h4><em><strong>Figure 7. </strong>Draw the Norton equivalent circuit.</em></h4>
+
 <p>In this figure, we reattached our 2 &Omega; load resistor from the original circuit.</p>
-<p>&nbsp;</p>
-<h3>Using the Norton Equivalent Circuit</h3>
+
+<h2>Using the Norton Equivalent Circuit</h2>
 <p>After following all of those steps, we can next analyze the Norton circuit, shown in Figure 7, to determine the current through the load resistor and the <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/polarity-voltage-drops/&quot; target=&quot;_blank&quot;>voltage drop</a> across it. This is now simply two resistors in parallel, so we can determine the total resistance seen by the Norton current source as follows:</p>
-<p>&nbsp;</p>
 <p>$$R_{Total} = \frac{1}{\frac{1}{R_{Norton}} + \frac{1}{R_{Load}}} = \frac{1}{\frac{1}{0.8} + \frac{1}{2}} = 0.57143 \text{ }\Omega$$&nbsp;</p>
-<p>&nbsp;</p>
 <p>Using the <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/solving-series-and-parallel-circuits-with-the-table-method-and-ohms-law/&quot; target=&quot;_blank&quot;>Table Method</a>, we can plug the value for the total resistance into Table 1&nbsp;and then fill out the rest of the table. The load resistor has a current of 4.0 A and a voltage drop of 8 V.</p>
-<p>&nbsp;</p>
-<h5><em><strong>Table 1. </strong>Calculating the load current and voltage drop.</em></h5>
+
+<h4><em><strong>Table 1. </strong>Calculating the load current and voltage drop.</em></h4>
 <table align=&quot;center&quot; border=&quot;1&quot; cellpadding=&quot;1&quot; cellspacing=&quot;1&quot;><br>
 <thead><br>
 <tr><br>
@@ -161,11 +145,11 @@
 </tr>
 </tbody><br>
 </table><br>
-<p>&nbsp;</p>
+<br>
 <p>As with the Thevenin equivalent circuit, the only useful information from this analysis is the voltage and current values for our load resistor, R2. The rest of the information is irrelevant to the original circuit.&nbsp;</p>
 <p>However, the same advantages seen with Thevenin&rsquo;s theorem apply to Norton&rsquo;s theorem as well. Namely, if we wish to analyze load resistor voltage and current over several different values of load resistance, we can use the Norton equivalent circuit again and again, applying nothing more complex than simple parallel circuit analysis to determine what&rsquo;s happening with each trial load.</p>
-<p>&nbsp;</p>
-<h3>Review of Norton&rsquo;s Theorem and the Norton Equivalent Circuit</h3>
+
+<h2>Review of Norton&rsquo;s Theorem and the Norton Equivalent Circuit</h2>
 <p>Norton&rsquo;s theorem states that all linear circuits can be simplified to an equivalent circuit with a single current source in parallel with a single resistor connected to a load.&nbsp;</p>
 <ul>
 <li>Step 1: Remove the load resistor and replace it with a short circuit.</li>

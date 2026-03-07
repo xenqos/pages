@@ -37,7 +37,7 @@
 <p>At the end of the <a href=&quot;https://www.allaboutcircuits.com/video-lectures/series-circuits-part-1/&quot; target=&quot;_blank&quot;>series</a> and <a href=&quot;https://www.allaboutcircuits.com/video-lectures/parallel-circuits/&quot; target=&quot;_blank&quot;>parallel</a> circuits chapter, we briefly considered how circuits could be analyzed in a <em>qualitative</em> rather than <em>quantitative</em> manner. Building this skill is an important step towards becoming a proficient troubleshooter of electric circuits. Once you have a thorough understanding of how any particular failure will affect a circuit (i.e. you don&rsquo;t have to perform any arithmetic to predict the results), it will be much easier to work the other way around: pinpointing the source of trouble by assessing how a circuit is behaving.</p>
 <p>Also shown at the end of the series and parallel circuits chapter was how the table method works just as well for aiding failure analysis as it does for the analysis of healthy circuits. We may take this technique one step further and adapt it for total qualitative analysis. By <em>&ldquo;qualitative&rdquo;</em> I mean working with symbols representing &ldquo;increase,&rdquo; &ldquo;decrease,&rdquo; and &ldquo;same&rdquo; instead of precise numerical figures.</p>
 <p>We can still use the principles of series and parallel circuits, and the concepts of <a href=&quot;https://www.allaboutcircuits.com/video-lectures/electrical-quantities-b/&quot; target=&quot;_blank&quot;>Ohm&rsquo;s Law</a>. We&rsquo;ll just use symbolic <em>qualities </em>instead of numerical <em>quantities</em>. By doing this, we can gain more of an intuitive &ldquo;feel&rdquo; for how circuits work rather than leaning on abstract equations, attaining Dirac&rsquo;s definition of &ldquo;understanding.&rdquo;</p>
-<h3>Component Failure Analysis on Complex Circuits</h3>
+<h2>Component Failure Analysis on Complex Circuits</h2>
 <p>Enough talk. Let&rsquo;s try this technique on a real circuit example and see how it works:</p>
 <p><img src=&quot;/uploads/articles/complex-circuits-image-one.jpg&quot; /></p>
 <p>This is the first &ldquo;convoluted&rdquo; circuit we straightened out for analysis in the last section. Since you already know how this particular circuit reduces to series and parallel sections, I&rsquo;ll skip the process and go straight to the final form:</p>
@@ -46,7 +46,7 @@
 <p><em>R<sub>Total</sub> = (R<sub>1</sub>//R<sub>2</sub>)&mdash;(R<sub>3</sub>//R<sub>4</sub>)</em></p>
 <p>First, we need to formulate a table with all the necessary rows and columns for this circuit:</p>
 <p><img src=&quot;/uploads/articles/analysis-on-failure-scenario-table1.jpg&quot; /></p>
-<h3>Analysis on Failure Scenario</h3>
+<h2>Analysis on Failure Scenario</h2>
 <p>Next, we need a failure scenario. Let&rsquo;s suppose that resistor R<sub>2</sub> were to fail shorted. We will assume that all other components maintain their original values. Because we&rsquo;ll be analyzing this circuit qualitatively rather than quantitatively, we won&rsquo;t be inserting any real numbers into the table.</p>
 <p>For any quantity unchanged after the component failure, we&rsquo;ll use the word &ldquo;same&rdquo; to represent &ldquo;no change from before.&rdquo; For any quantity that has changed as a result of the failure, we&rsquo;ll use a down arrow for &ldquo;decrease&rdquo; and an up arrow for &ldquo;increase.&rdquo;</p>
 <p>As usual, we start by filling in the spaces of the table for individual resistances and total voltage, our &ldquo;given&rdquo; values:</p>
@@ -59,7 +59,7 @@
 <p>In this case, since R<sub>2</sub> is the only failed component, and its resistance has decreased, the total resistance <em>must </em>decrease:</p>
 <p><img src=&quot;/uploads/articles/analysis-on-failure-scenario-table2.jpg&quot; /></p>
 <p>Now we can apply Ohm&rsquo;s Law (qualitatively) to the Total column in the table. Given the fact that total voltage has remained the same and total resistance has decreased, we can conclude that total current must increase (I=E/R).</p>
-<h3>Using Qualitative Assessment of Ohm&rsquo;s Law in Failure Analysis</h3>
+<h2>Using Qualitative Assessment of Ohm&rsquo;s Law in Failure Analysis</h2>
 <p>In case you&rsquo;re not familiar with the qualitative assessment of an equation, it works like this. First, we write the equation as solved for the unknown quantity. In this case, we&rsquo;re trying to solve for current, given voltage and resistance:</p>
 <p><img src=&quot;/uploads/articles/ohm-law-equation-one.jpg&quot; /></p>
 <p>Now that our equation is in the proper form, we assess what change (if any) will be experienced by &ldquo;I,&rdquo; given the change(s) to &ldquo;E&rdquo; and &ldquo;R&rdquo;:</p>
@@ -74,7 +74,7 @@
 <p>Fundamentally, what we&rsquo;re doing here with a qualitative usage of Ohm&rsquo;s Law and the rules of series and parallel circuits is no different from what we&rsquo;ve done before with numerical figures. In fact, it&rsquo;s a lot easier because you don&rsquo;t have to worry about making an arithmetic or calculator keystroke error in a calculation. Instead, you&rsquo;re just focusing on the <em>principles</em> behind the equations.</p>
 <p>From our table above, we can see that Ohm&rsquo;s Law should be applicable to the R<sub>1</sub>//R<sub>2</sub> and R<sub>3</sub>//R<sub>4</sub> columns. For R<sub>3</sub>//R<sub>4</sub>, we figure what happens to the voltage, given an increase in current and no change in resistance. Intuitively, we can see that this must result in an increase in voltage across the parallel combination of R<sub>3</sub>//R<sub>4</sub>:</p>
 <p><img src=&quot;/uploads/articles/analysis-on-failure-scenario-table8.jpg&quot; /></p>
-<h3>Using the Circuit Analysis Rules on Failure Analysis</h3>
+<h2>Using the Circuit Analysis Rules on Failure Analysis</h2>
 <p>But how do we apply the same Ohm&rsquo;s Law formula (E=IR) to the R<sub>1</sub>//R<sub>2</sub> column, where we have resistance decreasing <em>and</em> current increasing? It&rsquo;s easy to determine if only one variable is changing, as it was with R<sub>3</sub>//R<sub>4</sub>, but with two variables moving around and no definite numbers to work with, Ohm&rsquo;s Law isn&rsquo;t going to be much help.</p>
 <p>However, there is another rule we can apply <em>horizontally</em> to determine what happens to the voltage across R<sub>1</sub>//R<sub>2</sub>: the rule for voltage in series circuits. If the voltages across R<sub>1</sub>//R<sub>2</sub> and R<sub>3</sub>//R<sub>4</sub> add up to equal the total (battery) voltage and we know that the R<sub>3</sub>//R<sub>4</sub> voltage has increased while total voltage has stayed the same, then the voltage across R<sub>1</sub>//R<sub>2</sub> <em>must</em> have decreased with the change of R<sub>2</sub>&lsquo;s resistance value:</p>
 <p><img src=&quot;/uploads/articles/analysis-on-failure-scenario-table4.jpg&quot; /></p>

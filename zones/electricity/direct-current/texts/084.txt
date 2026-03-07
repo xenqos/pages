@@ -1,12 +1,12 @@
-<h1>Δ-Y and Y-Δ Conversions</h1>
+# Δ-Y and Y-Δ Conversions
 <p><a name="Delta-Y conversion"></a> <a name="Y-Delta conversion"></a> In many circuit applications, we encounter components connected together in one of two ways to form a three-terminal network: the &ldquo;Delta,&rdquo; or &Delta; (also known as the &ldquo;Pi,&rdquo; or &pi;) configuration, and the &ldquo;Y&rdquo; (also known as the &ldquo;T&rdquo;) configuration.</p>
 <p><img src="/uploads/articles/three-terminal-network-diagram.jpg" /></p>
 <p><a name="Equivalent circuit"></a> <a name="Circuit, equivalent"></a> It is possible to calculate the proper values of <a href="https://www.allaboutcircuits.com/video-lectures/electronic-components-resistors/" target="_blank">resistors</a> necessary to form one kind of network (&Delta; or Y) that behaves identically to the other kind, as analyzed from the terminal connections alone. That is, if we had two separate resistor networks, one &Delta; and one Y, each with its resistors hidden from view, with nothing but the three terminals (A, B, and C) exposed for testing, the resistors could be sized for the two networks so that there would be no way to electrically determine one network apart from the other. In other words, equivalent &Delta; and Y networks behave identically.</p>
-<h3>&Delta; and Y Conversion Equations</h3>
+## &Delta; and Y Conversion Equations
 <p>There are several equations used to convert one network to the other:</p>
 <p><img src="/uploads/articles/delta-wye-conversion-equations.jpg" /></p>
 <p>&Delta; and Y networks are seen frequently in 3-phase AC power systems (a topic covered in volume II of this book series), but even then they&rsquo;re usually balanced networks (all resistors equal in value) and conversion from one to the other need not involve such complex calculations. When would the average technician ever need to use these equations?</p>
-<h3>Application of &Delta; and Y Conversion</h3>
+## Application of &Delta; and Y Conversion
 <p>A prime application for &Delta;-Y conversion is in the solution of unbalanced bridge circuits, such as the one below:</p>
 <p><img src="/uploads/articles/application-of-delta-and-wye-conversion.jpg" /></p>
 <p>The solution of this circuit with Branch Current or Mesh Current analysis is fairly involved, and neither the Millman nor Superposition Theorems are of any help since there&rsquo;s only one source of power. We could use Thevenin&rsquo;s or Norton&rsquo;s Theorem, treating R<sub>3</sub> as our load, but what fun would that be?</p>
@@ -27,7 +27,7 @@
 <p>Voltage drops across R<sub>4</sub> and R<sub>5</sub>, of course, are exactly the same as they were in the converter circuit.</p>
 <p>At this point, we could take these voltages and determine resistor currents through the repeated use of <a href="https://www.allaboutcircuits.com/video-lectures/electrical-quantities-b/" target="_blank">Ohm&rsquo;s Law</a> (I=E/R):</p>
 <p><img src="/uploads/articles/determine-resistor-currents-through-ohms-law.jpg" /></p>
-<h3>Simulation Using SPICE</h3>
+## Simulation Using SPICE
 <p>A quick simulation with SPICE will serve to verify our work:</p>
 <p><img src="/uploads/articles/quick-simulation-with-spice.jpg" /></p>
 <pre>

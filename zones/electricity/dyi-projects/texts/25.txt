@@ -1,13 +1,13 @@
-<h1>DC Lab - Potentiometric Voltmeter</h1>
-<h3>Project Overview</h3>
+# DC Lab - Potentiometric Voltmeter
+## Project Overview
 <p>In a potentiometric <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-2/voltage-usage/" target="_blank">voltmeter</a> (Figure 1), a null-balance detector is used to compare the unknown <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/voltage-current/" target="_blank">voltage</a> to a reference voltage.&nbsp;</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/potentiometric-voltmeter-circuit.jpg" /></p>
-<h5><em><strong>Figure 1.&nbsp;</strong>Using a potentiometric voltmeter to measure an unknown voltage.</em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Figure 1.&nbsp;</strong>Using a potentiometric voltmeter to measure an unknown voltage.</em>
+
 <p>The reference voltage is adjusted using a calibrated <a href="https://eepower.com/resistor-guide/resistor-types/potentiometer/" target="_blank">potentiometer</a>. As this experiment will demonstrate, the simple act of measuring a circuit voltage can change the voltage we wish to measure. The potentiometric voltmeter can eliminate the effect on the device under test.</p>
-<p>&nbsp;</p>
-<h3>Parts and Materials</h3>
+
+## Parts and Materials
 <ul>
 <li>Two 6 V batteries</li>
 <li>One potentiometer, single turn, 10 k&Omega;, linear taper</li>
@@ -15,24 +15,24 @@
 <li><a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-3/sensitive-voltage-detector/">Sensitive voltage detector</a> (from the previous experiment)</li>
 <li>Analog voltmeter (from the previous experiment)</li>
 </ul>
-<p>&nbsp;</p>
+
 <p>Note that the potentiometer value is not critical; anything from 1 k&Omega; to 100 k&Omega; is acceptable.&nbsp;If you have built the <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-3/precision-potentiometer/" target="_blank">precision potentiometer</a>&nbsp;described in another experiment,&nbsp;it is recommended that you use it in this experiment.</p>
 <p>Likewise, the actual values of the resistors are not critical. In this particular experiment, the greater the value, the better the results. They need not be precisely equal in value, either.</p>
 <p>If you have not yet built the sensitive voltage detector with audio output, it is recommended that you build one before proceeding with this experiment.&nbsp;It is a&nbsp;useful yet simple piece of test equipment that you should not be without. You can use a <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-8/multimeters/" target="_blank">digital multimeter</a> set to the &ldquo;DC millivolt&rdquo; (DC mV) range in lieu of a voltage detector, but the headphone-based voltage detector is more appropriate because it demonstrates how you can make precise <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/voltage-current-practical-circuit/" target="_blank">voltage</a> measurements <em>without</em> using expensive or advanced meter equipment. I recommend using your homemade multimeter for the same reason, although any voltmeter will suffice for this experiment.</p>
-<p>&nbsp;</p>
-<h3>Learning Objectives</h3>
+
+## Learning Objectives
 <ul>
 <li>To describe voltmeter loading,&nbsp;its causes, and its solution</li>
 <li>To illustrate how to use&nbsp;a potentiometer as a source of variable voltage</li>
 <li>To illustrate a potentiometric method of voltage measurement</li>
 </ul>
-<p>&nbsp;</p>
-<h3>Instructions</h3>
+
+## Instructions
 <p><strong>Step 1: </strong>First, build the two-resistor <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-6/voltage-divider-circuits/" target="_blank">voltage divider circuit</a> shown on the left of the schematic diagram in Figure 2.&nbsp;</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/potentiometric-voltmeter-voltage-divider.jpg" /></p>
-<h5><em><strong>Figure 2. </strong>Two-resistor voltage divider.</em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Figure 2. </strong>Two-resistor voltage divider.</em>
+
 <p>If the two high-value <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/resistors/" target="_blank">resistors</a> are of equal value, the battery&rsquo;s voltage should be split in half, with approximately 3 V dropped across each resistor.</p>
 <p><strong>Step 2:&nbsp;</strong>Measure the battery voltage directly with a voltmeter, then measure each resistor&rsquo;s <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/polarity-voltage-drops/" target="_blank">voltage drop</a>.&nbsp;Do you notice anything unusual about the voltmeter&rsquo;s readings? Normally, <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/simple-series-circuits/" target="_blank">series</a> voltage drops add to equal the total applied voltage, but in this case, you will notice a serious discrepancy.</p>
 <p>Is <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-6/kirchhoffs-voltage-law-kvl/" target="_blank">Kirchhoff&rsquo;s voltage law (KVL)</a> untrue? Is this an exception to one of the most fundamental laws of electric circuits?&nbsp;No! What is happening is this: when you connect a voltmeter across either resistor, the voltmeter itself <em>alters</em> the circuit so that the voltage is not the same as with no meter connected.</p>
@@ -44,14 +44,14 @@
 <p>Digital voltmeters typically have greater internal (probe-to-probe) resistance, meaning they draw less current than a comparable analog voltmeter when measuring the same voltage source.&nbsp;An ideal voltmeter would draw zero current from the circuit under test and thus suffer no voltage impact&nbsp;problems.</p>
 <p><strong>Step 6:&nbsp;</strong>If you happen to have two voltmeters, try this: connect one voltmeter across one resistor and the other voltmeter across the other resistor.&nbsp;The voltage readings you get will add up to the total voltage this time, no matter what the resistor values are, even though they&rsquo;re different from the readings obtained from a single meter used twice.&nbsp;Unfortunately,&nbsp;it is unlikely that the voltage readings obtained this way are equal to the true voltage drops with no meters connected, and so it is not a practical solution to the problem.</p>
 <p>Is there any way to make a &ldquo;perfect&rdquo; voltmeter,&nbsp;one that has infinite resistance and draws no current from the circuit under test?&nbsp;Modern laboratory voltmeters approach this goal by using semiconductor <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-1/amplifiers/" target="_blank">amplifier</a>&nbsp;circuits, but this method is too technologically advanced for the student or hobbyist to duplicate.</p>
-<p>&nbsp;</p>
-<h3>Potentiometric (Null-balance) Method for Voltage Measurement</h3>
+
+## Potentiometric (Null-balance) Method for Voltage Measurement
 <p>A much simpler and much older technique for measuring voltage is called the potentiometric or null-balance method.&nbsp;This involves using an adjustable voltage source to balance&nbsp;the measured voltage. When the two voltages are equal, as indicated by a sensitive null detector, the adjustable voltage source is measured with an ordinary voltmeter. Since&nbsp;the two voltage sources are equal to each other, measuring the adjustable source is the same as measuring across the test circuit, except that there is no impact&nbsp;error because the adjustable source provides any current needed by the voltmeter. Consequently, the circuit under test remains unaffected, allowing measurement of its true voltage drop.</p>
 <p>Examine the following schematic of Figure 3 to see how the potentiometric voltmeter method is implemented.</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/potentiometric-voltmeter-schematic-diagram-1.jpg" /></p>
-<h5><em><strong>Figure 3. </strong>Demonstration of the potentiometric, null-balancing method for voltage measurement.</em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Figure 3. </strong>Demonstration of the potentiometric, null-balancing method for voltage measurement.</em>
+
 <p>The circle symbol with the word &ldquo;null&rdquo; written inside represents the null detector.&nbsp;This can be any arbitrarily sensitive meter movement or voltage indicator.&nbsp;Its sole purpose in this circuit is to indicate when there is <em>zero</em> voltage. That is when the adjustable voltage source (potentiometer) is precisely equal to the voltage drop in the circuit under test.&nbsp;The more sensitive this null detector is, the more precisely the adjustable source may be adjusted to equal the voltage under test, and the more precisely that test voltage may be measured.</p>
 <p><strong>Step 7:&nbsp;</strong>Build the circuit shown in the schematic of Figure 3 and illustrated in Figure 1. The headphone-based sensitive voltage detector is optional.&nbsp;</p>
 <p><strong>Step 8:</strong>&nbsp;Test the null-balance&nbsp;operation measuring the voltage drop across one of the high-value resistors in the test circuit.&nbsp;It may be easier to use a regular multimeter as a null detector at first until you become familiar with the process of adjusting the potentiometer for a &ldquo;null&rdquo; indication, then reading the voltmeter connected across the potentiometer.</p>
@@ -59,17 +59,17 @@
 <p>Adjust the potentiometer until no clicking sounds can be heard from the headphones. This indicates a null&nbsp;or balanced&nbsp;condition, and you may read the voltmeter indication to see how much voltage is dropped across the test circuit resistor.&nbsp;Unfortunately, the headphone-based null detector provides no indication of whether the potentiometer voltage is <em>greater than</em>&nbsp;or <em>less than</em> the test circuit voltage. Thus&nbsp;you will have to listen for <em>decreasing</em> click&nbsp;intensity while turning the potentiometer to determine if you need to adjust the voltage higher or lower.</p>
 <p>You may find that a single-turn or 3/4-turn&nbsp;potentiometer is too coarse of an adjustment device to accurately null&nbsp;the measurement circuit.&nbsp;A multi-turn potentiometer may be used instead of the single-turn unit for greater adjustment precision, or the <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-3/precision-potentiometer/" target="_blank">precision potentiometer&nbsp;circuit</a> described in one of the other experiments may be used.</p>
 <p>Prior to the advent of amplified voltmeter technology, the potentiometric method was the only method for making highly accurate voltage measurements.&nbsp;Even now, electrical standards laboratories use this technique and the latest meter technology to minimize meter-induced errors and maximize measurement accuracy.&nbsp;Although the potentiometric method requires more skill to use than simply connecting a modern digital voltmeter across a component and is considered obsolete for all but the most precise measurement applications, it is still a valuable learning process for the new student of electronics. Additionally, this can be a useful technique for hobbyists who may lack expensive instrumentation in their home laboratory.</p>
-<p>&nbsp;</p>
-<h3>SPICE Simulation for Experimental Potentiometric Voltmeter</h3>
+
+## SPICE Simulation for Experimental Potentiometric Voltmeter
 <p>We can also perform a <a href="https://www.allaboutcircuits.com/textbook/reference/chpt-7/fundamentals-spice-programming/" target="_blank">SPICE simulation</a> of the potentiometric voltmeter with the null-balance meter, as illustrated in Figure 4.</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/potentiometric-voltmeter-schematic-diagram-2.jpg" /></p>
-<h5><em><strong>Figure 4. </strong>Adding node numbers to the analog computer circuit for SPICE simulation.</em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Figure 4. </strong>Adding node numbers to the analog computer circuit for SPICE simulation.</em>
+
 <p>Below is the netlist (make a text file containing the following text, verbatim):</p>
-<p>&nbsp;</p>
+
 <pre>
 Potentiometric voltmeter &#10;v1 1 0 dc 6 &#10;v2 3 0 &#10;r1 1 2 1meg &#10;r2 2 0 1meg &#10;rnull 2 3 10k &#10;rmeter 3 0 50k &#10;.dc v2 0 6 0.1 &#10;.print dc v(2,0) v(2,3) v(3,0) &#10;.end </pre>
-<p>&nbsp;</p>
+
 <p>This SPICE simulation shows the actual voltage across R<sub>2</sub> of the test circuit, the null detector&rsquo;s voltage, and the voltage across the adjustable voltage source, as that source is adjusted from 0 to 6 V in 0.1 V steps.&nbsp;In the output of this simulation, you will notice that the voltage across R<sub>2</sub> is impacted significantly when the measurement circuit is unbalanced, returning to its true voltage only when there is practically zero voltage across the null detector.</p>
 <p>At that point, of course, the adjustable voltage source is at a value of 3.000 V,&nbsp;precisely equal to the (unaffected) test circuit voltage drop. What is the lesson to be learned from this simulation? That a potentiometric voltmeter avoids impacting the test circuit only when it is in a condition of perfect balance (null) with the test circuit!</p>

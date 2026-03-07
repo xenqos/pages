@@ -32,32 +32,28 @@
 <div id='idContent'>
 
 <h1>SPICE Simulation of Series and Parallel Circuits</h1>
-<img src=&quot;/uploads/thumbnails/SPICE_series_parallel_circuit_Thumbnail-Card.jpg&quot; />
+<p><img src=&quot;/uploads/thumbnails/SPICE_series_parallel_circuit_Thumbnail-Card.jpg&quot; /></p>
 <h3 class=&quot;text-lg lg:text-2xl font-bold mb-3&quot;>SPICE Simulation of Series and Parallel Circuits</h3>
 <p><p>SPICE circuit simulation will be demonstrated for both series and parallel circuits with an introduction to node naming requirements and using 0 V DC voltage sources to measure branch currents.&nbsp;</p></p>
 <p>Previously, we examined <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/simple-series-circuits/&quot; target=&quot;_blank&quot;>series circuits</a> and <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/simple-parallel-circuits/&quot; target=&quot;_blank&quot;>parallel circuits</a> using direct analytical methods (like <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/voltage-current-resistance-relate/&quot; target=&quot;_blank&quot;>Ohm&#39;s law</a>)&nbsp;to determine <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/voltage-current/&quot; target=&quot;_blank&quot;>voltages, currents,</a> and equivalent <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/resistance/&quot; target=&quot;_blank&quot;>resistance</a>. This article will explain how to use computer analysis with the common <a href=&quot;https://www.allaboutcircuits.com/textbook/reference/chpt-7/fundamentals-spice-programming/&quot; target=&quot;_blank&quot;>SPICE (Simulation Program with Integrated Circuit Emphasis)</a> circuit simulator to evaluate both <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/what-are-series-and-parallel-circuits/&quot; target=&quot;_blank&quot;>series and parallel circuits</a>.&nbsp;</p>
 <p>Though our analysis will focus on SPICE simulators, many open-source and commercially available SPICE-style circuit simulators are available today.</p>
-<p>&nbsp;</p>
-<h3>SPICE Simulation of a Series Circuit&nbsp;</h3>
+
+<h2>SPICE Simulation of a Series Circuit&nbsp;</h2>
 <p>Diving in, let&rsquo;s use SPICE to evaluate the simple series circuit of Figure 1, which consists of a DC voltage source and three resistors connected in series.&nbsp;</p>
-<p>&nbsp;</p>
 <p><img src=&quot;/uploads/thumbnails/Figure_1._Series_circuit_with_a_battery_and_three_resistors__.jpg&quot; /></p>
-<h5><em><strong>Figure 1. </strong>Series circuit with a battery and three resistors.</em></h5>
-<p>&nbsp;</p>
+<h4><em><strong>Figure 1. </strong>Series circuit with a battery and three resistors.</em></h4>
+
 <p>First, we have to describe the circuit to the computer in a format recognizable by the software. SPICE programs require that all electrically unique points in a circuit be numbered, and component placement is understood by which of those numbered points, or &ldquo;nodes,&rdquo; they share.&nbsp;</p>
 <p>For clarity, we numbered the four corners of our example circuit of Figure 1 as 1 through 4. SPICE, however, demands that there be a node zero (0) somewhere in the circuit that is typically considered the ground or reference node. So, let&rsquo;s redraw the circuit, changing the numbering scheme slightly by renumbering the lower-left corner of the circuit from 4 to 0, as shown in Figure 2.</p>
-<p>&nbsp;</p>
 <p><img src=&quot;/uploads/thumbnails/Figure_2._Series_circuit_with_new_0_node_required_for_SPICE_simulation_.jpg&quot; /></p>
-<h5><em><strong>Figure 2. </strong>Series circuit with new 0 nodes required for SPICE simulation.</em></h5>
-<p>&nbsp;</p>
+<h4><em><strong>Figure 2. </strong>Series circuit with new 0 nodes required for SPICE simulation.</em></h4>
+
 <p>From there, we must enter several lines of text into a computer file describing the circuit in terms SPICE will understand. We will also add a couple of extra lines of code directing the program to perform a DC circuit analysis and to print out voltage and current data for our review. This computer file is known as the netlist in SPICE terminology:</p>
-<p>&nbsp;</p>
+
 <pre><br>
 series circuit&#10;v1 1 0&#10;r1 1 2 3k&#10;r2 2 3 10k&#10;r3 3 0 5k&#10;.dc v1 9 9 1&#10;.print dc v(1,2) v(2,3) v(3,0)&#10;.end&#10;</pre>
 
-<p>&nbsp;</p>
 <p>Now, all we have to do is run the SPICE program to process the netlist and output the results:</p>
-<p>&nbsp;</p>
 <table><br>
 <tbody><br>
 <tr><br>
@@ -76,43 +72,38 @@ series circuit&#10;v1 1 0&#10;r1 1 2 3k&#10;r2 2 3 10k&#10;r3 3 0 5k&#10;.dc v1 
 </tr>
 </tbody><br>
 </table><br>
-<p>&nbsp;</p>
+<br>
 <p>This print output from the SPICE program tells us the battery voltage is 9 V, and the <a href=&quot;https://www.allaboutcircuits.com/technical-articles/what-is-a-voltage-drop-in-an-electric-circuit/&quot; target=&quot;_blank&quot;>voltage drops</a> across R<sub>1</sub>, R<sub>2</sub>, and R<sub>3</sub> are 1.5 V, 5.0 V, and 2.5 V, respectively. Voltage drops across any component in SPICE are referenced by the node numbers the component lies between. Thus, v(1,2) references the voltage between nodes 1 and 2 in the circuit, which are the points between R<sub>1</sub>&#39;s location.</p>
 <p>Keep in mind that the order of node numbers is important. When SPICE outputs a value for v(1,2), it regards the polarity the same way as if we were holding a voltmeter with the red test lead on node 1 and the black test lead on node 2. We also have a display showing current (albeit with a negative value) at 0.5 mA or 500 &mu;A. This current matches what we previously calculated using Ohm&rsquo;s Law.</p>
 <p>So our mathematical analysis has been vindicated by the computer. This value appears as a negative number in the SPICE analysis due to how SPICE defines current through a voltage source.</p>
-<p>&nbsp;</p>
-<h3>SPICE Simulation of a Parallel Circuit&nbsp;</h3>
+
+<h2>SPICE Simulation of a Parallel Circuit&nbsp;</h2>
 <p>Just as with the series circuit, we can use computer analysis to analyze the parallel circuit shown in Figure 4.&nbsp;</p>
-<p>&nbsp;</p>
 <p><img src=&quot;/uploads/thumbnails/Figure_1._Parallel_circuit_with_a_battery_and_three_resistors_.jpg&quot; /></p>
-<h5><em><strong>Figure 3. </strong>Parallel circuit with a battery and three resistors.</em></h5>
-<p>&nbsp;</p>
+<h4><em><strong>Figure 3. </strong>Parallel circuit with a battery and three resistors.</em></h4>
+
 <p>First, we must describe our parallel circuit to the computer in terms it can understand. Let&rsquo;s start by changing node 8 to 0, as we did for our series circuit analysis above.</p>
-<p>&nbsp;</p>
 <p><img src=&quot;/uploads/thumbnails/Figure_4._Parallel_circuit_with_new_0_node_required_for_SPICE_simulation_.jpg&quot; /></p>
-<h5><em><strong>Figure 4. </strong>Parallel circuit with new 0 nodes required for SPICE simulation.</em></h5>
-<p>&nbsp;</p>
+<h4><em><strong>Figure 4. </strong>Parallel circuit with new 0 nodes required for SPICE simulation.</em></h4>
+
 <p>In SPICE, all electrically common points must share identical node numbers. In the parallel circuit of Figure 4, we can see that nodes 1, 2, 3, and 4 are electrically common. The same goes&nbsp;for nodes 5, 6, 7, and 0.&nbsp;</p>
 <p>With that in mind, let&rsquo;s consolidate the naming of the bottom electrical node to 0 and the top electrical node to 1. This results in the new circuit diagram of Figure 5.</p>
-<p>&nbsp;</p>
 <p><img src=&quot;/uploads/thumbnails/Figure_5._Parallel_circuit_with_consolidated_electrically_common_nodes_.__.jpg&quot; /></p>
-<h5><em><strong>Figure 5.</strong> Parallel circuit with consolidated electrically common nodes.</em></h5>
-<p>&nbsp;</p>
+<h4><em><strong>Figure 5.</strong> Parallel circuit with consolidated electrically common nodes.</em></h4>
+
 <p>An example like this makes understanding the rationale of node numbers in SPICE fairly clear. By having all components share common sets of numbers, the computer knows they&rsquo;re all connected in parallel with each other.</p>
 <p>To display <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-10/branch-current-method/&quot; target=&quot;_blank&quot;>branch currents</a> in SPICE, we often need to insert zero-voltage sources in series with each resistor and then reference our current measurements to those sources. However, check your SPICE user manual, as many newer versions allow you to display branch currents through other components, including resistors.&nbsp;</p>
 <p>For whatever reason, the original creators of the SPICE program made it so that current could only be calculated through a voltage source. This is a somewhat annoying demand of the SPICE simulation program. With each of these &ldquo;dummy&rdquo; voltage sources added, some new node numbers (2, 3, 4) must also be created to connect them to their respective branch resistors, as illustrated in Figure 6.</p>
-<p>&nbsp;</p>
 <p><img src=&quot;/uploads/thumbnails/Figure_6._Voltage_sources_with_0_V_and_new_node_numbers_added_for_branch_current_evaluation_.jpg&quot; /></p>
-<h5><em><strong>Figure 6. </strong>Voltage sources with 0 V and new node numbers were added for the branch&#39;s current evaluation.</em></h5>
-<p>&nbsp;</p>
+<h4><em><strong>Figure 6. </strong>Voltage sources with 0 V and new node numbers were added for the branch&#39;s current evaluation.</em></h4>
+
 <p>The dummy voltage sources are all set at 0 V and are ideal sources with 0 &Omega; resistance, so they have no impact on the circuit operation.</p>
 <p>The completed SPICE circuit description file, or netlist, looks like this:</p>
-<p>&nbsp;</p>
+
 <pre><br>
 Parallel circuit&#10; v1 1 0&#10; r1 2 0 10k&#10; r2 3 0 2k&#10; r3 4 0 1k&#10; vr1 1 2 dc 0&#10; vr2 1 3 dc 0&#10; vr3 1 4 dc 0&#10; .dc v1 9 9 1&#10; .print dc v(2,0) v(3,0) v(4,0)&#10; .print dc i(vr1) i(vr2) i(vr3)&#10; .end&#10;&#10;</pre>
 
 <p>Running the computer analysis, we get the following results, which have been annotated in the printout with descriptive labels:</p>
-<p>&nbsp;</p>
 <table><br>
 <tbody><br>
 <tr><br>
@@ -158,19 +149,16 @@ Parallel circuit&#10; v1 1 0&#10; r1 2 0 10k&#10; r2 3 0 2k&#10; r3 4 0 1k&#10; 
 </tr>
 </tbody><br>
 </table><br>
-<p>&nbsp;</p>
+<br>
 <p>These results from SPICE do indeed match those <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/simple-parallel-circuits/&quot;>previously calculated</a> using Ohm&rsquo;s Law earlier:</p>
-<p>&nbsp;</p>
 <p>$$I_{R1} = 0.9 \text{ mA}$$</p>
-<p>&nbsp;</p>
 <p>$$I_{R2} = 4.5 \text{ mA}$$</p>
-<p>&nbsp;</p>
 <p>$$I_{R3} = 9.0 \text{ mA}$$</p>
 <p><br /><br>
 &nbsp;</p>
 <p>Being connected in parallel, these resistors all have the same voltage (9 V) dropped across them.</p>
-<p>&nbsp;</p>
-<h3>Series and Parallel Circuit Simulation Using a SPICE Circuit Simulator Review:</h3>
+
+<h2>Series and Parallel Circuit Simulation Using a SPICE Circuit Simulator Review:</h2>
 <ul>
 <li>One node in the SPICE circuit must use the number 0; typically, this is the reference or ground node</li>
 <li>All electrically common nodes must use the same circuit node number</li>

@@ -1,4 +1,4 @@
-<h1>The Silicon-Controlled Switch (SCS)</h1>
+# The Silicon-Controlled Switch (SCS)
 <p>If we take the equivalent circuit of an <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-7/silicon-controlled-rectifier-scr/" target="_blank">SCR</a> and add another external terminal, connected to the base of the top <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-4/bipolar-junction-transistors-bjt/" target="_blank">transistor</a> and the collector of the bottom transistor, we have a device known as a <em>silicon-controlled-switch</em>, or SCS: (Figure below)</p>
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/silicon-controlled-switch-SCS.jpg" /></p>
 <p><em>The Silicon-Controlled Switch(SCS)</em></p>

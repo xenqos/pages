@@ -33,34 +33,29 @@
 
 <h1>Low-pass Filters</h1>
 <p>By definition, a low-pass filter is a circuit offering easy passage to low-frequency signals and difficult passage to high-frequency signals. There are two basic kinds of circuits capable of accomplishing this objective, and many variations of each one: The inductive low-pass filter in (Figure below) and the capacitive low-pass filter in (Figure also below).</p>
-<h3>Inductive Low-Pass Filter</h3>
-<p>&nbsp;</p>
+<h2>Inductive Low-Pass Filter</h2>
+
 <p><img src=&quot;/uploads/articles/inductive-low-pass-filter-circuit.png&quot; /></p>
 <p><em>Inductive low-pass filter</em></p>
-<p>&nbsp;</p>
 <p>The inductor&rsquo;s impedance increases with increasing frequency. This high impedance in series tends to block high-frequency signals from getting to the load. This can be demonstrated with a <a href=&quot;https://www.allaboutcircuits.com/textbook/reference/chpt-7/fundamentals-spice-programming/&quot; target=&quot;_blank&quot;>SPICE</a> analysis: (Figure below)</p>
-<p>&nbsp;</p>
+
 <pre><br>
 inductive lowpass filter &#10; v1 1 0 ac 1 sin l1 1 2 3 &#10; rload 2 0 1k &#10; .ac lin 20 1 200 &#10; .plot ac v(2) &#10; .end&#10;</pre>
 
-<p>&nbsp;</p>
 <p><img src=&quot;/uploads/articles/inductive_low-pass_filter-graph.png&quot; /></p>
 <p><em>The response of an inductive low-pass filter falls off with increasing frequency.</em></p>
-<p>&nbsp;</p>
-<h3>Capacitive Low-Pass Filter</h3>
-<p>&nbsp;</p>
+
+<h2>Capacitive Low-Pass Filter</h2>
+
 <p><em><img src=&quot;/uploads/articles/capacitive-low-pass-filter-circuit.png&quot; /></em></p>
 <p><em><em>Capacitive low-pass filter</em></em></p>
-<p>&nbsp;</p>
 <p>The capacitor&rsquo;s impedance decreases with increasing frequency. This low impedance in parallel with the load&nbsp;<a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/resistance/&quot; target=&quot;_blank&quot;>resistance</a> tends to short out high-frequency signals, dropping most of the voltage across series resistor R<sub>1</sub>. (Figure below)</p>
-<p>&nbsp;</p>
+
 <pre><br>
 capacitive lowpass filter &#10; v1 1 0 ac 1 sin &#10; r1 1 2 500 &#10; c1 2 0 7u &#10; rload 2 0 1k &#10; .ac lin 20 30 150 &#10; .plot ac v(2) &#10; .end &#10;</pre>
 
-<p>&nbsp;</p>
 <p><img src=&quot;/uploads/articles/capacitive-low-pass-filter-graph.png&quot; /></p>
 <p><em>The response of a capacitive low-pass filter falls off with increasing frequency.</em></p>
-<p>&nbsp;</p>
 <p>The inductive low-pass filter is the pinnacle of simplicity, with only one component comprising the filter. The capacitive version of this filter is not that much more complex, with only a&nbsp;<a href=&quot;https://www.allaboutcircuits.com/video-lectures/electronic-components-resistors/&quot; target=&quot;_blank&quot;>resistor</a> and&nbsp;<a href=&quot;https://www.allaboutcircuits.com/video-lectures/capacitors-part-1/&quot; target=&quot;_blank&quot;>capacitor</a> needed for operation.</p>
 <p>However, despite their increased complexity, capacitive filter designs are generally preferred over inductive because capacitors tend to be &ldquo;purer&rdquo; reactive components than inductors and therefore are more predictable in their behavior. By &ldquo;pure&rdquo; I mean that capacitors exhibit little resistive effects than inductors, making them almost 100% reactive.</p>
 <p>Inductors, on the other hand, typically exhibit significant dissipative (resistor-like) effects, both in the long lengths of wire used to make them, and in the magnetic losses of the core material.</p>
@@ -69,42 +64,33 @@ capacitive lowpass filter &#10; v1 1 0 ac 1 sin &#10; r1 1 2 500 &#10; c1 2 0 7u
 <p>The primary reason for this is the requirement of low filter resistance for the output of such a power supply. A capacitive low-pass filter requires an extra&nbsp;<a href=&quot;https://www.allaboutcircuits.com/video-lectures/series-circuits-part-1/&quot; target=&quot;_blank&quot;>resistance in series</a> with the source, whereas the inductive low-pass filter does not.</p>
 <p>In the design of a high-current circuit like a DC power supply where additional series resistance is undesirable, the inductive low-pass filter is the better design choice.</p>
 <p>On the other hand, if low weight and compact size are higher priorities than low internal supply resistance in a power supply design, the capacitive low-pass filter might make more sense.</p>
-<h3>Cutoff Frequency</h3>
+<h2>Cutoff Frequency</h2>
 <p>All low-pass filters are rated at a certain <em><a href=&quot;https://www.allaboutcircuits.com/technical-articles/how-to-select-the-cutoff-frequency-of-your-low-pass-filter/&quot; target=&quot;_blank&quot;>cutoff frequency</a></em>. That is, the frequency above which the output voltage falls below 70.7% of the input voltage. This cutoff percentage of 70.7 is not really arbitrary, all though it may seem so at first glance.</p>
 <p>In a simple capacitive/resistive low-pass filter, it is the frequency at which <a href=&quot;https://www.allaboutcircuits.com/tools/capacitor-impedance-calculator/&quot; target=&quot;_blank&quot;>capacitive reactance</a> in ohms equals resistance in ohms. In a simple capacitive low-pass filter (one resistor, one capacitor), the cutoff frequency is given as:</p>
-<p>&nbsp;</p>
 <p><img src=&quot;/uploads/articles/cutoff-frequency-formula.png&quot; /></p>
-<p>&nbsp;</p>
 <p>Inserting the values of R and C from the last SPICE simulation into this formula, we arrive at a cutoff frequency of 45.473 Hz. However, when we look at the plot generated by the SPICE simulation, we see the load voltage well below 70.7% of the source voltage (1 volt) even at a frequency as low as 30 Hz, below the calculated cutoff point.</p>
 <p>What&rsquo;s wrong? The problem here is that the load resistance of 1 k&Omega; affects the frequency response of the filter, skewing it down from what the formula told us it would be. Without that load resistance in place, SPICE produces a Bode plot whose numbers make more sense: (Figure below)</p>
-<p>&nbsp;</p>
+
 <pre><br>
 capacitive lowpass filter &#10; v1 1 0 ac 1 sin &#10; r1 1 2 500 &#10; c1 2 0 7u&#10; * note: no load resistor! &#10; .ac lin 20 40 50&#10; .plot ac v(2) &#10; .end &#10;</pre>
 
-<p>&nbsp;</p>
 <p><img src=&quot;/uploads/articles/capacitive-low-pass-filter-graph1.png&quot; /></p>
 <p><em>For the capacitive low-pass filter with R = 500 &Omega; and C = 7 &micro;F, the Output should be 70.7% at 45.473 Hz.</em></p>
 <p><em>f<sub>cutoff</sub> = 1/(2&pi;RC) </em> <em> = 1/(2&pi;(500 &Omega;)(7 &micro;F)) = 45.473 Hz</em></p>
-<p>&nbsp;</p>
 <p>When dealing with filter circuits, it is always important to note that the response of the filter depends on the filter&rsquo;s component values <em>and</em> the impedance of the load. If a cutoff frequency equation fails to give consideration to load impedance, it assumes no load and will fail to give accurate results for a real-life filter conducting power to a load.</p>
-<h3>Application of Low-Pass Filter</h3>
+<h2>Application of Low-Pass Filter</h2>
 <p>One frequent application of the capacitive low-pass filter principle is in the design of circuits having components or sections sensitive to electrical &ldquo;noise.&rdquo; As mentioned at the beginning of the last chapter, sometimes AC signals can &ldquo;couple&rdquo; from one circuit to another via capacitance (C<sub>stray</sub>) and/or mutual inductance (M<sub>stray</sub>) between the two sets of conductors.</p>
 <p>A prime example of this is unwanted AC signals (&ldquo;noise&rdquo;) becoming impressed on DC power lines supplying sensitive circuits: (Figure below)</p>
-<p>&nbsp;</p>
 <p><img src=&quot;/uploads/articles/dc-power-lines-supplying-sensitive-circuits.png&quot; /></p>
 <p><em>Noise is coupled by stray capacitance and mutual inductance into &ldquo;clean&rdquo; DC power.</em></p>
-<p>&nbsp;</p>
 <p>The <a href=&quot;https://www.allaboutcircuits.com/technical-articles/basic-waveform-analysis-with-an-oscilloscope/&quot; target=&quot;_blank&quot;>oscilloscope-meter</a> on the left shows the &ldquo;clean&rdquo; power from the DC voltage source. After coupling with the AC noise source via stray&nbsp;<a href=&quot;https://www.allaboutcircuits.com/textbook/alternating-current/chpt-9/mutual-inductance-and-basic-operation/&quot; target=&quot;_blank&quot;>mutual inductance</a> and stray capacitance, though, the voltage as measured at the load terminals is now a mix of AC and DC, the AC being unwanted.</p>
 <p>Normally, one would expect E<sub>load</sub> to be precisely identical to E<sub>source</sub>, because the uninterrupted conductors connecting them should make the two sets of points electrically common. However, power conductor impedance allows the two voltages to differ, which means the noise magnitude can vary at different points in the DC system.</p>
 <p>If we wish to prevent such &ldquo;noise&rdquo; from reaching the DC load, all we need to do is connect a low-pass filter near the load to block any coupled signals. In its simplest form, this is nothing more than a capacitor connected directly across the power terminals of the load, the capacitor behaving as a very low impedance to any AC <a href=&quot;https://www.allaboutcircuits.com/technical-articles/electrical-noise-what-causes-noise-in-electrical-circuits/&quot; target=&quot;_blank&quot;>noise</a>, and shorting it out.</p>
 <p>Such a capacitor is called a <em>decoupling capacitor</em>: (Figure below)</p>
-<p>&nbsp;</p>
 <p><img src=&quot;/uploads/articles/decoupling-capacitor.png&quot; /></p>
 <p><em>Decoupling capacitor, applied to load, filters noise from DC power supply.</em></p>
-<p>&nbsp;</p>
 <p>A cursory glance at a crowded printed-circuit board (PCB) will typically reveal decoupling capacitors scattered throughout, usually located as close as possible to the sensitive DC loads.</p>
 <p>Capacitor size is usually 0.1 &micro;F or more, a minimum amount of capacitance needed to produce a low enough impedance to short out any noise. Greater capacitance will do a better job at filtering noise, but size and economics limit decoupling capacitors to meager values.</p>
-<p>&nbsp;</p>
 <p><strong>REVIEW:</strong></p>
 <ul>
 <li>A low-pass filter allows for easy passage of low-frequency signals from source to load, and difficult passage of high-frequency signals.</li>

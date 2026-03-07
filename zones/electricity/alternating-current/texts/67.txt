@@ -1,67 +1,67 @@
-<h1>True, Reactive, and Apparent Power</h1>
-<h3>Reactive Power</h3>
+# True, Reactive, and Apparent Power
+## Reactive Power
 <p>We know that reactive loads such as <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-15/practical-considerations-inductors/" target="_blank">inductors</a> and <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-13/practical-considerations-capacitors/" target="_blank">capacitors</a> dissipate zero power, yet the fact that they drop <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/voltage-current-practical-circuit/" target="_blank">voltage</a> and draw current gives the deceptive impression that they actually <em>do</em> dissipate power.</p>
 <p>This &ldquo;phantom power&rdquo; is called <em>reactive power</em>, and it is measured in a unit called <em>Volt-Amps-Reactive</em> (VAR), rather than watts.</p>
 <p>The mathematical symbol for reactive power is (unfortunately) the capital letter Q.</p>
-<p>&nbsp;</p>
-<h3>True Power</h3>
+
+## True Power
 <p>The actual amount of power being used, or dissipated, in a circuit is called <em>true power</em>, and it is measured in watts (symbolized by the capital letter P, as always).</p>
-<p>&nbsp;</p>
-<h3>Apparent Power</h3>
+
+## Apparent Power
 <p>The combination of reactive power and true power is called <em>apparent power</em>, and it is the product of a circuit&rsquo;s voltage and current, without reference to phase angle.</p>
 <p>Apparent power is measured in the unit of <em>Volt-Amps</em> (VA) and is symbolized by the capital letter S.</p>
-<p>&nbsp;</p>
-<h3>Calculating for Reactive, True, or Apparent Power</h3>
+
+## Calculating for Reactive, True, or Apparent Power
 <p>As a rule, true power is a function of a circuit&rsquo;s dissipative elements, usually <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/resistance/" target="_blank">resistances</a> (R). Reactive power is a function of a circuit&rsquo;s reactance (X).</p>
 <p>Apparent power is a function of a circuit&rsquo;s total impedance (Z). Since we&rsquo;re dealing with scalar quantities for power calculation, any complex starting quantities such as voltage (V), current (I), and impedance must be represented by their <em>polar magnitudes</em>, not by real or imaginary rectangular components.</p>
 <p>For instance, if I&rsquo;m calculating true power from current and resistance, I must use the polar magnitude for current, and not merely the &ldquo;real&rdquo; or &ldquo;imaginary&rdquo; portion of the current.</p>
 <p>If I&rsquo;m calculating apparent power from voltage and impedance, both of these formerly complex quantities must be reduced to their polar magnitudes for the scalar arithmetic.</p>
-<p>&nbsp;</p>
-<h4>Equations Using Scalar Quantities</h4>
+
+### Equations Using Scalar Quantities
 <p>There are several power equations relating the three types of power to resistance, reactance, and impedance (all using scalar quantities):</p>
 <p>$$\text{True Power in Watts} = P = I^2R = \frac{V^2}{R}$$</p>
 <p>$$\text{Reactive Power in Volt-Amps-Reactive (VAR)} = Q = I^2X = \frac{V^2}{X}$$</p>
 <p>$$\text{Apparent Power in Volt-Amps (VAR)} = S = I^2Z = \frac{V^2}{Z} = IV$$</p>
-<p>&nbsp;</p>
+
 <p>Please note that there are two equations each for the calculation of true and reactive power.&nbsp;There are three equations available for the calculation of apparent power, <em>P</em>=<em>IV</em> being useful <em>only</em> for that purpose.</p>
-<p>&nbsp;</p>
-<h3>Example Power Calculations</h3>
+
+## Example Power Calculations
 <p>Examine the following circuits and see how these three types of power interrelate for: a purely resistive load, a purely reactive load, and a resistive/reactive load.</p>
-<p>&nbsp;</p>
-<h4>Resistive Load Only</h4>
+
+### Resistive Load Only
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/true-reactive-apparent-power-for-a-purely-resistive-load-2.png" /></p>
 <p><em>True power, reactive power, and apparent power for a purely resistive load.</em></p>
-<p>&nbsp;</p>
+
 <p>$$\text{True Power} = P = I^2R = 240 \text{ W}$$</p>
 <p>$$\text{Reactive Power} = Q = I^2X = 0 \text{ VAR}$$</p>
 <p>$$\text{Apparent Power} = S = I^2Z = 240 \text {VA}$$</p>
-<p>&nbsp;</p>
-<h4>Reactive Load Only</h4>
+
+### Reactive Load Only
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/true-reactive-apparent-power-for-a-purely-reactive-load-2.png" /></p>
 <p><em>True power, reactive power, and apparent power for a purely reactive load.</em></p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+
+
 <p>$$\text{True Power} = P = I^2R = 0 \text{ W}$$</p>
 <p>$$\text{Reactive Power} = Q = I^2X = 238.73&nbsp;\text{ VAR}$$</p>
 <p>$$\text{Apparent Power} = S = I^2Z = 238.73 \text {VA}$$</p>
-<p>&nbsp;</p>
-<h4>Resistive/Reactive Load</h4>
+
+### Resistive/Reactive Load
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/true-reactive-apparent-power-for-a-purely-resistive-reactive-load-2.png" /></p>
 <p><em>True power, reactive power, and apparent power for a resistive/reactive load.</em></p>
-<p>&nbsp;</p>
+
 <p>$$\text{True Power} = P = I^2R = 119.365 \text{ W}$$</p>
 <p>$$\text{Reactive Power} = Q = I^2X = 119.998 \text{ VAR}$$</p>
 <p>$$\text{Apparent Power} = S = I^2Z = 169.256 \text {VA}$$</p>
-<p>&nbsp;</p>
-<h3>The Power Triangle</h3>
+
+## The Power Triangle
 <p>These three types of power&mdash;true, reactive, and apparent&mdash;relate to one another in trigonometric form. We call this the <em>power triangle</em>: (Figure below).</p>
-<p>&nbsp;</p>
+
 <p><img src="/uploads/articles/the-power-triangle.png" /></p>
 <p><em>Power triangle relating apparent power to true power and reactive power. </em></p>
-<p>&nbsp;</p>
+
 <p>Using the laws of trigonometry, we can solve for the length of any side (amount of any type of power), given the lengths of the other two sides, or the length of one side and an angle.</p>
-<p>&nbsp;</p>
-<h3>Review</h3>
+
+## Review
 <ul>
 <li>The power dissipated by a load is referred to as <em>true power</em>. True power is symbolized by the letter P and is measured in the unit of Watts (W).</li>
 <li>Power merely absorbed and returned in load due to its reactive properties is referred to as <em>reactive power</em>. Reactive power is symbolized by the letter Q and is measured in the unit of Volt-Amps-Reactive (VAR).</li>

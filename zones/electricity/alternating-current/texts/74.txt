@@ -1,45 +1,45 @@
-<h1>AC Bridge Circuits</h1>
+# AC Bridge Circuits
 <p>As we saw with&nbsp;<a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-8/what-is-a-meter/" target="_blank">DC measurement circuits</a>, the circuit configuration known as a <em><a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-8/bridge-circuits/" target="_blank">bridge</a>&nbsp;</em>can be a very useful way to measure unknown values of&nbsp;<a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/resistance/" target="_blank">resistance</a>.</p>
 <p>This is true with AC as well, and we can apply the very same principle to the accurate measurement of unknown impedances.</p>
-<h3>How Does a Bridge Circuit Work?</h3>
+## How Does a Bridge Circuit Work?
 <p>To review, the&nbsp;<a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-8/bridge-circuits/" target="_blank">bridge circuit</a> works as a pair of two-component&nbsp;<a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-6/voltage-divider-circuits/" target="_blank">voltage dividers</a> connected across the same source voltage, with a <em>null-detector</em> meter movement connected between them to indicate a condition of &ldquo;balance&rdquo; at zero volts:</p>
-<p>&nbsp;</p>
+
 <p><img src="/uploads/articles/balanced-bridge-null-or-minimum.png" /></p>
 <p><em>A balanced bridge shows a &ldquo;null&rdquo;, or minimum reading, on the indicator.</em></p>
-<p>&nbsp;</p>
+
 <p>Anyone of the four resistors in the above bridge can be the resistor of unknown value, and its value can be determined by a ratio of the other three, which are &ldquo;calibrated,&rdquo; or whose resistances are known to a precise degree.</p>
 <p>When the bridge is in a balanced condition (zero voltage as indicated by the null detector), the ratio works out to be this:</p>
 <p><em>In a condition of <strong>balance</strong></em>:</p>
-<p>&nbsp;</p>
+
 <p><img src="/uploads/articles/condition-of-balance-ratio.png" /></p>
-<p>&nbsp;</p>
+
 <p>One of the advantages of using a bridge circuit to measure resistance is that the voltage of the power source is irrelevant.</p>
 <p>Practically speaking, the higher the supply voltage, the easier it is to detect a condition of imbalance between the four resistors with the null detector, and thus the more sensitive it will be.</p>
 <p>A greater supply voltage leads to the possibility of increased measurement precision. However, there will be no fundamental error introduced as a result of a lesser or greater power supply voltage unlike other types of resistance measurement schemes.</p>
-<h4>Impedance Bridge</h4>
+### Impedance Bridge
 <p>Impedance bridges work the same, only the balance equation is with&nbsp;<a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-2/introduction-to-complex-numbers/" target="_blank"><em>complex</em> quantities</a>, as both magnitude and phase across the components of the two dividers must be equal in order for the null detector to indicate &ldquo;zero.&rdquo;</p>
 <p>The null detector, of course, must be a device capable of detecting very small AC voltages. An oscilloscope is often used for this, although very sensitive electromechanical meter movements and even headphones (small speakers) may be used if the source frequency is within audio range.</p>
-<h4>Null Detector for AC</h4>
+### Null Detector for AC
 <p>One way to maximize the effectiveness of audio headphones as a null detector is to connect them to the signal source through an impedance-matching&nbsp;<a href="https://www.allaboutcircuits.com/video-lectures/transformers-part-1/" target="_blank">transformer</a>.</p>
 <p>Headphone speakers are typically low-impedance units (8 &Omega;), requiring substantial current to drive, and so a step-down transformer helps &ldquo;match&rdquo; low-current signals to the impedance of the headphone speakers.</p>
 <p>An audio output transformer works well for this purpose: (Figure below)</p>
-<p>&nbsp;</p>
+
 <p><img src="/uploads/articles/null-detector-for-ac-bridge-made-from-audio-headphones.png" /></p>
 <p><em>&ldquo;Modern&rdquo; low-Ohm headphones require an impedance matching transformer for use as a sensitive null detector.</em></p>
-<p>&nbsp;</p>
+
 <p>Using a pair of headphones that completely surround the ears (the &ldquo;closed-cup&rdquo; type), I&rsquo;ve been able to detect currents of less than 0.1 &micro;A with this simple detector circuit.</p>
 <p>The roughly equal performance was obtained using two different step-down transformers: a small power transformer (120/6 volt ratio), and an audio output transformer (1000:8 ohm impedance ratio).</p>
 <p>With the pushbutton switch in place to interrupt current, this circuit is used for detecting signals from DC to over 2 MHz: even if the frequency is far above or below the audio range, a &ldquo;click&rdquo; will be heard from the headphones each time the switch is pressed and released.</p>
 <p>Connected to a resistive bridge, the whole circuit looks like the figure below.</p>
-<p>&nbsp;</p>
+
 <p><img src="/uploads/articles/bridge-with-sensitive-ac-null-detector.png" /></p>
 <p><em>Bridge with sensitive AC null detector.</em></p>
-<p>&nbsp;</p>
+
 <p>Listening to the headphones as one or more of the resistor &ldquo;arms&rdquo; of the bridge is adjusted, a condition of balance will be realized when the headphones fail to produce &ldquo;clicks&rdquo; (or tones, if the bridge&rsquo;s power source frequency is within audio range) as the switch is actuated.</p>
 <p>When describing general AC bridges, where <em>impedances</em> and not just resistances must be in the proper ratio for balance, it is sometimes helpful to draw the respective bridge legs in the form of box-shaped components, each one with a certain impedance: (Figure below)</p>
 <p><em><img src="/uploads/articles/generalized-ac-impedance-bridge.png" /></em></p>
 <p><em><em>Generalized AC impedance bridge: Z = nonspecific complex impedance.</em></em></p>
-<p>&nbsp;</p>
+
 <p>For this general form of the AC bridge to balance, the impedance ratios of each branch must be equal:</p>
 <p><img src="/uploads/articles/ac-bridge-impedance-ratios.png" /></p>
 <p>Again, it must be stressed that the impedance quantities in the above equation <em>must</em> be complex, accounting for both magnitude and phase angle.</p>
@@ -47,20 +47,20 @@
 <p>Bridge circuits can be constructed to measure just about any device value desired, be it capacitance, inductance, resistance, or even &ldquo;Q.&rdquo;</p>
 <p>As always in bridge measurement circuits, the unknown quantity is always &ldquo;balanced&rdquo; against a known standard, obtained from a high-quality, calibrated component that can be adjusted in value until the null detector device indicates a condition of balance.</p>
 <p>Depending on how the bridge is set up, the unknown component&rsquo;s value may be determined directly from the setting of the calibrated standard or derived from that standard through a mathematical formula.</p>
-<h4>Example of Bridge Circuits</h4>
+### Example of Bridge Circuits
 <p>A couple of simple bridge circuits are shown below, one for inductance (Figure below) and one for capacitance:</p>
-<p>&nbsp;</p>
+
 <p><img src="/uploads/articles/couple-of-simple-bridge-circuits.png" /></p>
 <p><em>Symmetrical bridge measures unknown inductor by comparison to a standard inductor.</em></p>
-<p>&nbsp;</p>
+
 <p><img src="/uploads/articles/comparison-to-standard-capacitor.png" /></p>
 <p><em>Symmetrical bridge measures unknown capacitor by comparison to a standard capacitor.</em></p>
-<p>&nbsp;</p>
+
 <p>Simple &ldquo;symmetrical&rdquo; bridges such as these are so named because they exhibit symmetry (mirror-image similarity) from left to right.</p>
 <p>The two bridge circuits shown above are balanced by adjusting the calibrated reactive component (Ls or Cs).</p>
 <p>They are a bit simplified from their real-life counterparts, as practical symmetrical bridge circuits often have a calibrated, variable resistor in series or parallel with the reactive component to balance out stray resistance in the unknown component.</p>
 <p>But, in the hypothetical world of perfect components, these simple bridge circuits do just fine to illustrate the basic concept.</p>
-<h4>Wien Bridge</h4>
+### Wien Bridge
 <p>An example of a little extra complexity added to compensate for real-world effects can be found in the so-called <em>Wien bridge</em>, which uses a&nbsp;<a href="https://www.allaboutcircuits.com/video-lectures/parallel-rc-circuits/" target="_blank">parallel capacitor-resistor</a> standard impedance to balance out an unknown&nbsp;<a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-4/series-resistor-capacitor-circuits/" target="_blank">series capacitor-resistor</a> combination. (Figure below)</p>
 <p>All capacitors have some amount of internal resistance, be it literal or equivalent (in the form of dielectric heating losses) which tend to spoil their otherwise perfectly reactive natures.</p>
 <p>This internal resistance may be of interest to measure, and so the Wien bridge attempts to do so by providing a balancing impedance that isn&rsquo;t &ldquo;pure&rdquo; either:</p>
@@ -74,11 +74,11 @@
 <p>They are also used as frequency meters because the balance of the bridge is frequency-dependent.</p>
 <p>When used in this fashion, the capacitors are made fixed (and usually of equal value) and the top two resistors are made variable and are adjusted by means of the same knob.</p>
 <p>An interesting variation on this theme is found in the next bridge circuit, used to precisely measure inductances.</p>
-<h4>Maxwell-Wein Bridge</h4>
-<p>&nbsp;</p>
+### Maxwell-Wein Bridge
+
 <p><strong><img src="/uploads/articles/maxwell-wein-bridge-measures-an-inductor.png" /></strong></p>
 <p><em>Maxwell-Wein bridge measures an inductor in terms of a capacitor standard.</em></p>
-<p>&nbsp;</p>
+
 <p>This ingenious bridge circuit is known as the <em>Maxwell-Wien bridge</em> (sometimes known plainly as the <em>Maxwell bridge</em>) and is used to measure unknown inductances in terms of calibrated resistance and capacitance. (Figure above)</p>
 <p>Calibration-grade inductors are more difficult to manufacture than capacitors of similar precision, and so the use of a simple &ldquo;symmetrical&rdquo; inductance bridge is not always practical.</p>
 <p>Because the phase shifts of inductors and capacitors are exactly opposite each other, a capacitive impedance can balance out an inductive impedance if they are located in opposite legs of a bridge, as they are here.</p>
@@ -91,36 +91,36 @@
 <p>There are more variations beyond these designs, but a full discussion is not warranted here. General-purpose impedance bridge circuits are manufactured which can be switched into more than one configuration for maximum flexibility of use.</p>
 <p>A potential problem in sensitive AC bridge circuits is that of stray capacitance between either end of the null detector unit and ground (earth) potential.</p>
 <p>Because capacitances can &ldquo;conduct&rdquo; alternating current by charging and discharging, they form stray current paths to the AC voltage source which may affect bridge balance:</p>
-<p>&nbsp;</p>
+
 <p><em><img src="/uploads/articles/stray-capacitance-to-ground.png" /></em></p>
 <p><em><em>Stray capacitance to the ground may introduce errors into the bridge.</em></em></p>
-<p>&nbsp;</p>
+
 <p>While reed-type meters are imprecise, their operational principle is not. In lieu of mechanical resonance, we may substitute&nbsp;<a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-6/simple-series-resonance/" target="_blank">electrical resonance</a> and design a frequency meter using an inductor and capacitor in the form of a tank circuit (parallel inductor and capacitor).</p>
 <p>One or both components are made adjustable, and a meter is placed in the circuit to indicate the maximum amplitude of the voltage across the two components.</p>
 <p>The adjustment knob(s) are calibrated to show resonant frequency for any given setting, and the frequency is read from them after the device has been adjusted for the maximum indication on the meter.</p>
 <p>Essentially, this is a tunable filter circuit which is adjusted and then read in a manner similar to a bridge circuit (which must be balanced for a &ldquo;null&rdquo; condition and then read).</p>
 <p>The problem is worsened if the AC voltage source is firmly grounded at one end, the total stray impedance for leakage currents made far less and any leakage currents through these stray capacitances made greater as a result:</p>
-<p>&nbsp;</p>
+
 <p><em><img src="/uploads/articles/stray-capacitance-errors.png" /></em></p>
 <p><em><em>Stray capacitance errors are more severe if one side of the AC supply is grounded.</em></em></p>
-<p>&nbsp;</p>
-<h4>Wagner Ground</h4>
+
+### Wagner Ground
 <p>One way of greatly reducing this effect is to keep the null detector at ground potential, so there will be no AC voltage between it and the ground, and thus no current through stray capacitances.</p>
 <p>However, directly connecting the null detector to the ground is not an option, as it would create a <em>direct</em> current path for stray currents, which would be worse than any capacitive path.</p>
 <p>Instead, a special&nbsp;<a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-6/voltage-divider-circuits/" target="_blank">voltage divider circuit</a> called a <em>Wagner ground</em> or <em>Wagner earth</em> may be used to maintain the null detector at ground potential without the need for a direct connection to the null detector. (Figure below)</p>
-<p>&nbsp;</p>
+
 <p><img src="/uploads/articles/wagner-ground-for-ac-supply.png" /></p>
 <p><em>Wagner ground for AC supply minimizes the effects of stray capacitance to the ground on the bridge.</em></p>
-<p>&nbsp;</p>
+
 <p>The Wagner earth circuit is nothing more than a voltage divider, designed to have the voltage ratio and&nbsp;<a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-4/phase-shift/" target="_blank">phase shift</a> as each side of the bridge.</p>
 <p>Because the midpoint of the Wagner divider is directly grounded, any other divider circuit (including either side of the bridge) having the same voltage proportions and phases as the Wagner divider, and powered by the same AC voltage source, will be at ground potential as well.</p>
 <p>Thus, the Wagner earth divider forces the null detector to be at ground potential, without a direct connection between the detector and ground.</p>
 <p>There is often a provision made in the null detector connection to confirm the proper setting of the Wagner earth divider circuit: a two-position switch, (Figure below) so that one end of the null detector may be connected to either the bridge or the Wagner earth.</p>
 <p>When the null detector registers zero signal in both switch positions, the bridge is not only guaranteed to be balanced, but the null detector is also guaranteed to be at zero potential with respect to ground, thus eliminating any errors due to leakage currents through stray detector-to-ground capacitances:</p>
-<p>&nbsp;</p>
+
 <p><em><img src="/uploads/articles/switch-up-position-allows-adjustment-of-wagner-ground.png" /></em></p>
 <p><em><em>The switch-up position allows adjustment of the Wagner ground.</em></em></p>
-<p>&nbsp;</p>
+
 <p><strong>REVIEW:</strong></p>
 <ul>
 <li>AC bridge circuits work on the same basic principle as DC bridge circuits: that a balanced ratio of impedances (rather than resistances) will result in a &ldquo;balanced&rdquo; condition as indicated by the null-detector device.</li>

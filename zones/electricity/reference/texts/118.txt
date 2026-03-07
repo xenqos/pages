@@ -1,4 +1,4 @@
-<h1>Tube Parameters</h1>
+# Tube Parameters
 <p>For <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-4/bipolar-junction-transistors-bjt/">bipolar junction transistors</a>, the fundamental measure of amplification is the Beta ratio (&beta;), defined as the ratio of collector current to base current (I<sub>C</sub>/I<sub>B</sub>). Other transistor characteristics such as junction resistance, which in some amplifier circuits may impact performance as much as &beta;, are quantified for the benefit of circuit analysis. Electron tubes are no different, their performance characteristics having been explored and quantified long ago by electrical engineers.</p>
 <p>Before we can speak meaningfully on these characteristics, we must define several mathematical variables used for expressing common <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/voltage-current-resistance-relate/">voltage, current, and resistance</a> measurements as well as some of the more complex quantities:</p>
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/several-mathematical-variables.jpg" /></p>

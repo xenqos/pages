@@ -1,13 +1,13 @@
-<h1>Digital Lab - Basic 2-Input NAND Gate Circuit</h1>
-<h3>Project Overview</h3>
+# Digital Lab - Basic 2-Input NAND Gate Circuit
+## Project Overview
 <p>In this project, you will build a 2-input digital <a href="https://www.allaboutcircuits.com/textbook/digital/chpt-3/multiple-input-gates/" target="_blank">NAND gate</a> circuit with <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-3/special-purpose-diodes/" target="_blank">light emitting&nbsp;diode (LED)</a> input and output indicators&nbsp;on a <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/building-simple-resistor-circuits/" target="_blank">breadboard</a>, as illustrated in Figure 1.&nbsp;</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/basic-gate-function-illustration-two.jpg" /></p>
-<h5><em><strong>Figure 1.&nbsp;</strong>Circuit project for demonstrating and testing basic digital gate functionality.</em></h5>
-<h3>&nbsp;</h3>
+#### <em><strong>Figure 1.&nbsp;</strong>Circuit project for demonstrating and testing basic digital gate functionality.</em>
+## &nbsp;
 <p>Using this circuit, you will also learn how to test a <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-7/introduction-to-digital-integrated-circuits/" target="_blank">digital circuit</a> and complete a <a href="https://www.allaboutcircuits.com/textbook/digital/chpt-8/karnaugh-maps-truth-tables-boolean-expressions/" target="_blank">logic truth table</a>.&nbsp;Not only will you learn the basics of building and testing circuits for <a href="https://www.allaboutcircuits.com/technical-articles/universal-logic-gates/" target="_blank">digital logic gates</a>, but the completed circuit&nbsp;can easily be adapted to&nbsp;test&nbsp;multiple NAND gates or other logic gate functions. Any gate type may be tested with two switches, two <a href="https://eepower.com/resistor-guide/resistor-applications/pull-up-resistor-pull-down-resistor/#:~:text=What%20Are%20Pull%2Ddown%20Resistors,seen%20in%20the%20following%20figure." target="_blank">pulldown resistors</a>, and an LED to indicate output status.&nbsp;</p>
-<p>&nbsp;</p>
-<h3>Parts and Materials</h3>
+
+## Parts and Materials
 <ul>
 <li>4011 <a href="https://www.allaboutcircuits.com/textbook/digital/chpt-3/cmos-gate-circuitry/" target="_blank">complementary metal-oxide semiconductor (CMOS)</a> quad 2-input NAND gate&nbsp;</li>
 <li>Eight-position <a href="https://www.allaboutcircuits.com/textbook/digital/chpt-3/dip-gate-packaging/" target="_blank">dual inline packaging (DIP)</a>&nbsp;switch</li>
@@ -17,8 +17,8 @@
 <li>Three 470 &Omega; resistors</li>
 </ul>
 <p><strong>Caution!</strong> The 4011 IC is a CMOS&nbsp;and, therefore,&nbsp;<strong>sensitive to <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/static-electricity/" target="_blank">static electricity</a>!</strong></p>
-<h3>&nbsp;</h3>
-<h3>Learning Objectives</h3>
+## &nbsp;
+## Learning Objectives
 <ul>
 <li>How to connect logic gates</li>
 <li>How to power logic gates</li>
@@ -26,24 +26,24 @@
 <li>How to experimentally <a href="https://www.allaboutcircuits.com/technical-articles/boolean-basics/" target="_blank">determine the truth table</a> of a gate</li>
 <li>How to create different logical functions by using NAND gates</li>
 </ul>
-<p>&nbsp;</p>
-<h3>Instructions</h3>
+
+## Instructions
 <p><strong>Step 1:&nbsp;</strong>Review the datasheet for the 4011<strong> </strong>chip when you build your circuit. Shown in Figure 2 is my own rendition of what a <a href="http://www.ti.com/lit/ds/symlink/cd4011b.pdf?ts=1675363933081&amp;ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FCD4011B" target="_blank">typical 4011<strong> </strong>datasheet</a> shows.&nbsp;</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/pinout-diagram-for-4011-quad-NAND-gate.jpg" /></p>
-<h5><em><strong>Figure 2. </strong>Typical pinout diagram for a 4011 CMOS quad 2-input NAND gate IC.</em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Figure 2. </strong>Typical pinout diagram for a 4011 CMOS quad 2-input NAND gate IC.</em>
+
 <p>However, don&rsquo;t just follow this illustration! It is important that you develop the skill of reading datasheets, especially pinout&nbsp;diagrams, when connecting IC terminals to other circuit elements. The datasheet&rsquo;s connection diagram is an essential piece of information to have to insure you are making the right connections.&nbsp;</p>
 <p><strong>Step 2: </strong>Connect a single <a href="https://www.allaboutcircuits.com/textbook/digital/chpt-3/ttl-nand-and-gates/" target="_blank">NAND gate</a> to two input switches and one LED, as shown in the <a href="https://www.allaboutcircuits.com/technical-articles/understanding-schematics/" target="_blank">circuit schematic</a> of&nbsp;Figure 3&nbsp;and in the breadboard implementation illustration of Figure 4.</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/basic-gate-function-schematic-diagram.jpg" /></p>
-<h5><em><strong>Figure 3. </strong>Schematic diagram of a 2-input NAND gate driving and LED.</em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Figure 3. </strong>Schematic diagram of a 2-input NAND gate driving and LED.</em>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/basic-gate-function-illustration.jpg" /></p>
-<h5><em><strong>Figure 4. </strong>Circuit illustration with the two inputs of a NAND gate connected to switches with resistor pull-downs and the output to an LED.</em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Figure 4. </strong>Circuit illustration with the two inputs of a NAND gate connected to switches with resistor pull-downs and the output to an LED.</em>
+
 <p>In the breadboard illustration, I&rsquo;ve shown the circuit built using the lower-left NAND gate: pins #&lsquo;s 1 and 2 are the inputs, and pin #3 is the output. At first, using an 8-position switch and a 10-segment LED bar graph may seem excessive since only two switches, and one LED are needed to show the operation of a single NAND gate. However, the presence of those extra switches and LEDs makes it convenient to expand the circuit and helps make the circuit layout both clean and compact.</p>
-<h4><strong>Step 3: </strong>Connect the power and <a href="https://www.allaboutcircuits.com/technical-articles/an-introduction-to-ground/" target="_blank">ground</a> signals.&nbsp;Pin #&lsquo;s 14 and 7 conduct DC power to all four gate circuits inside the IC chip,&nbsp;V<sub>DD</sub>&nbsp;represents the positive side of the power supply (+V),&nbsp;and&nbsp;GND represents the negative side of the power supply or ground. Sometimes the negative power supply terminal will be labeled &ldquo;V<sub>SS</sub>&rdquo; instead of &ldquo;GND&rdquo; on a datasheet, but it means the same thing.</h4>
+### <strong>Step 3: </strong>Connect the power and <a href="https://www.allaboutcircuits.com/technical-articles/an-introduction-to-ground/" target="_blank">ground</a> signals.&nbsp;Pin #&lsquo;s 14 and 7 conduct DC power to all four gate circuits inside the IC chip,&nbsp;V<sub>DD</sub>&nbsp;represents the positive side of the power supply (+V),&nbsp;and&nbsp;GND represents the negative side of the power supply or ground. Sometimes the negative power supply terminal will be labeled &ldquo;V<sub>SS</sub>&rdquo; instead of &ldquo;GND&rdquo; on a datasheet, but it means the same thing.
 <p>Digital logic circuitry does not use split power supplies as some&nbsp;<a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-8/introduction-operational-amplifiers/" target="_blank">op-amps</a> do. Like op-amp circuits, though, the ground is still the implicit point of reference for all voltage measurements. If I were to speak of a high&nbsp;signal being present on a certain pin of the chip, I would mean that there was full voltage between that pin and the negative side of the power supply (ground).</p>
 <p><strong>Step 4</strong>: Connect all of the unused&nbsp;digital inputs to either&nbsp;V<sub>DD</sub>&nbsp;or ground.&nbsp;Note how in Figure 4, all the inputs of the unused gates inside the 4011<strong> </strong>chip are connected either to V<sub>DD</sub>&nbsp;or ground. This is not a mistake but an act of intentional design. Since the 4011<strong> </strong>is a CMOS IC, and CMOS circuit inputs left unconnected (floating) can assume any voltage level merely from intercepting a static electric charge from a nearby object. Leaving inputs floating means that those unused gates may receive any random combinations of high&nbsp;and low signals.</p>
 <p>Why is this undesirable if we aren&rsquo;t using those gates? Who cares what signals they receive if we are not doing anything with their outputs? The problem is if static voltage signals appear at the gate inputs that are not fully &ldquo;high&rdquo; or fully &ldquo;low,&rdquo; the gates&rsquo; internal transistors may begin to turn on in such a way as to draw excessive current. At worst, this could lead to damage to the chip. At best, it means excessive power consumption.</p>
@@ -53,7 +53,7 @@
 <p>Gate output terminals, by their very nature, generate their own logic levels and never float&nbsp;in the same way that CMOS gate inputs do.</p>
 <p><strong>Step 6: </strong>Add pulldown resistors to the digital inputs.&nbsp;The two 10 k&Omega; resistors shown in Figures 3 and 4 are placed in the circuit to avoid floating input conditions on the NAND gate we are using. When a switch is closed, the respective input will be directly connected to V<sub>DD</sub> and therefore be &ldquo;high&rdquo; with a small current passed through the pulldown resistors. When a switch is open, the 10 k&Omega; pulldown&nbsp;resistor provides a resistive connection to the ground, ensuring a secure &ldquo;low&rdquo; state at the gate&rsquo;s input terminal. This way, the input will not be susceptible to stray static voltages.</p>
 <p><strong>Step 7:&nbsp;</strong>With the NAND gate connected to the two switches at the inputs and one LED at the output, you are now ready to develop a truth table for the NAND gate. Even if you already know what a NAND gate truth table looks like, this is a good exercise in experimentation: discovering a circuit&rsquo;s behavioral principles by induction. Create&nbsp;a 2-input truth table as shown in Table 1.</p>
-<p>&nbsp;</p>
+
 <p><em><strong>Table 1. </strong>A&nbsp;2-input truth table.</em></p>
 <table align="center" border="1" cellpadding="1" cellspacing="1">
 <thead>
@@ -86,11 +86,11 @@
 </tr>
 </tbody>
 </table>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+
+
 <p>The <strong>&ldquo;A&rdquo;</strong> and <strong>&ldquo;B&rdquo;</strong> columns represent the two input switches, respectively. When the switch is on, its state is &ldquo;high&rdquo; or 1. When the switch is off, its state is &ldquo;low,&rdquo; or 0, as ensured by its pulldown resistor. The gate&rsquo;s output, of course, is represented by the LED,&nbsp;whether it is lit (1) or unlit (0). After placing the switches in every possible combination of states and recording the LED&rsquo;s status, compare the resulting truth table with what a NAND gate&rsquo;s truth table should be.</p>
 <p>As you can imagine, this breadboard circuit is not limited to testing NAND gates. Any gate type may be tested with two switches, two pulldown resistors, and an LED to indicate output status. Just be sure to double-check the chip&rsquo;s pinout&nbsp;diagram before substituting it pin-for-pin in place of the 4011. Not all quad-gate&nbsp;chips have the same pin assignments.</p>
 <p><strong>Step 8:&nbsp;</strong>An additional improvement you might want to make to this circuit is to assign a couple of LEDs to indicate input status in addition to the one LED assigned to indicate the output. This makes its operation a little more interesting to observe, It also&nbsp;has the further benefit of indicating if a switch fails to close (or open) by showing the true input signal to the gate rather than forcing you to infer input status from the switch position. The connections for the two input indicator LEDs have been added in the breadboard circuit illustration of Figure 5.</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/basic-gate-function-illustration-two.jpg" /></p>
-<h5><em><strong>Figure 5.&nbsp;</strong>Circuit project for demonstrating and testing basic digital gate functionality.</em></h5>
+#### <em><strong>Figure 5.&nbsp;</strong>Circuit project for demonstrating and testing basic digital gate functionality.</em>

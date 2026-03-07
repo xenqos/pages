@@ -1,4 +1,4 @@
-<h1>R, L and C Summary</h1>
+# R, L and C Summary
 <p>With the notable exception of calculations for power (P), all AC circuit calculations are based on the same general principles as calculations for DC circuits. The only significant difference is that fact that AC calculations use complex quantities while DC calculations use scalar quantities.</p>
 <p><a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/voltage-current-resistance-relate/" target="_blank">Ohm&rsquo;s Law</a>, <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-6/kirchhoffs-voltage-law-kvl/" target="_blank">Kirchhoff&rsquo;s Laws</a>, and even the network theorems learned in DC still hold true for AC when voltage, current, and impedance are all expressed with complex numbers.</p>
 <p>The same troubleshooting strategies applied toward DC circuits also hold for AC, although AC can certainly be more difficult to work with due to phase angles which aren&rsquo;t registered by a handheld <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-8/multimeters/" target="_blank">multimeter</a>.</p>

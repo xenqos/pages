@@ -33,7 +33,7 @@
 
 <h1>The Common-emitter Amplifier</h1>
 <p>At the beginning of this chapter, it illustrates how <a href=&quot;https://www.allaboutcircuits.com/video-lectures/bipolar-transistors-intro/&quot; target=&quot;_blank&quot;>transistors</a> could be used as switches, operating in either their &ldquo;<strong>saturation&rdquo; or &ldquo;cutoff&rdquo; modes</strong>. In the last section, we saw how transistors behave within their <strong>&ldquo;active&rdquo; modes</strong>, between the far limits of saturation and cutoff. Because transistors are able to control current in an analog fashion, they find use as <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-1/amplifiers/&quot; target=&quot;_blank&quot;>amplifiers</a> for analog signals.</p>
-<h3>Transistor as a Simple Switch</h3>
+<h2>Transistor as a Simple Switch</h2>
 <p><strong><em>Common-Emitter </em></strong>One of the simpler transistor amplifier circuits to study previously illustrated the transistor&rsquo;s switching ability.</p>
 <p><img src=&quot;/uploads/articles/npn-transistor-as-simple-switch.jpg&quot; /></p>
 <p>NPN transistor as a simple switch.</p>
@@ -45,13 +45,13 @@
 <p><img src=&quot;/uploads/articles/high-intensity-light-directly-drives-light-meter.jpg&quot; /></p>
 <p>High intensity light directly drives light meter.</p>
 <p>Although this approach might work for moderate light intensity measurements, it would not work as well for low light intensity measurements. Because the solar cell has to supply the meter movement&rsquo;s power needs, the system is necessarily limited in its sensitivity. Supposing that our need here is to measure very low-level light intensities, we are pressed to find another solution.</p>
-<h3>Transistor as an Amplifier</h3>
+<h2>Transistor as an Amplifier</h2>
 <p>Perhaps the most direct solution to this measurement problem is to use a transistor <strong>to </strong><strong><em>amplify</em></strong><strong> </strong>the solar cell&rsquo;s current so that more meter deflection may be obtained for less incident light.</p>
 <p><img src=&quot;/uploads/articles/cell-current-amplified-for-low-intensity-light.jpg&quot; /></p>
 <p>Cell current must be amplified for low intensity light.</p>
 <p>Current through the meter movement in this circuit will be &beta; times the solar cell current. With a transistor &beta; of 100, this represents a substantial increase in measurement sensitivity. It is prudent to point out that the additional power to move the meter needle comes from the battery on the far right of the circuit, not the solar cell itself. All the solar cell&rsquo;s current does is <em>control</em> battery current to the meter to provide a greater meter reading than the solar cell could provide unaided.</p>
 <p>Because the transistor is a current-regulating device, and because meter movement indications are based on the current through the moving coil, meter indication in this circuit should depend only on the current from the solar cell, not on the amount of voltage provided by the battery. This means the accuracy of the circuit will be independent of battery condition, a significant feature! All that is required of the battery is a certain minimum voltage and current output ability to drive the meter full-scale.</p>
-<h3><em>Voltage Output due to Current Through a Load Resistor</em></h3>
+<h2><em>Voltage Output due to Current Through a Load Resistor</em></h2>
 <p>Another way in which the common-emitter configuration may be used is to produce an output <em>voltage </em>derived from the input signal, rather than the specific output <em>current</em>. Let&rsquo;s replace the meter movement with a plain resistor and measure voltage between collector and emitter.<em> </em></p>
 <p><img src=&quot;/uploads/articles/common-emitter-amplifier-develops-voltage-output.jpg&quot; /></p>
 <p>Common emitter amplifier develops voltage output due to the current through the load resistor.</p>
@@ -67,7 +67,7 @@
 <p><img src=&quot;/uploads/articles/collector-voltage-output-vs-base-current-input.jpg&quot; /></p>
 <p>Common emitter: collector voltage output vs base current input.</p>
 <p>At the beginning of the simulation in the figure above where the current source (solar cell) is outputting zero current, the transistor is in cutoff mode and the full 15 volts from the battery is shown at the amplifier output (between nodes 2 and 0). As the solar cell&rsquo;s current begins to increase, the output voltage proportionally decreases, until the transistor reaches saturation at 30 &micro;A of base current (3 mA of collector current). Notice how the output voltage trace on the graph is perfectly linear (1-volt steps from 15 volts to 1 volt) until the point of saturation, where it never quite reaches zero. This is the effect mentioned earlier, where a saturated transistor can never achieve exactly zero voltage drop between collector and emitter due to internal junction effects. What we do see is a sharp output voltage decrease from 1 volt to 0.2261 volts as the input current increases from 28 &micro;A to 30 &micro;A, and then a continuing decrease in output voltage from then on (albeit in progressively smaller steps). The lowest the output voltage ever gets in this simulation is 0.1299 volts, asymptotically approaching zero.</p>
-<h3>Transistor as an AC Amplifier</h3>
+<h2>Transistor as an AC Amplifier</h2>
 <p>So far, we&rsquo;ve seen the transistor used as an amplifier for DC signals. In the solar cell light meter example, we were interested in amplifying the DC output of the solar cell to drive a DC meter movement, or to produce a DC output voltage. However, this is not the only way in which a transistor may be employed as an amplifier. Often an <em>AC</em> amplifier for amplifying <em>alternating</em> current and voltage signals is desired. One common application of this is in audio electronics (radios, televisions, and public-address systems). Earlier, we saw an example of the audio output of a tuning fork activating a transistor switch. Let&rsquo;s see if we can modify that circuit to send power to a speaker rather than to a lamp in the figure below.</p>
 <p><img src=&quot;/uploads/articles/transistor-switch-activated-by-audio.jpg&quot; /></p>
 <p>Transistor switch activated by audio.</p>
@@ -102,7 +102,7 @@ common-emitter amplifier vinput 1 5 sin (0 1.5 2000 0 0) vbias 5 0 dc 2.3 r1 1 2
 <p>The illustration in the figure below is another view of the same circuit, this time with a few oscilloscopes (&ldquo;scopemeters&rdquo;) connected at crucial points to display all the pertinent signals.</p>
 <p><img src=&quot;/uploads/articles/oscilloscopes-connected-at-crucial-points.jpg&quot; /></p>
 <p>Input is biased upward at base. Output is inverted.</p>
-<h3>Biasing</h3>
+<h2>Biasing</h2>
 <p><strong>The need for biasing a transistor amplifier circuit to obtain full-waveform reproduction is an important consideration</strong>. A separate section of this chapter will be devoted entirely to the subject of biasing and biasing techniques. For now, it is enough to understand that biasing may be necessary for proper voltage and current output from the amplifier.</p>
 <p>Now that we have a functioning amplifier circuit, we can investigate its voltage, current, and power gains. The generic transistor used in these SPICE analyses has a &beta; of 100, as indicated by the short transistor statistics printout included in the text output in Table below (these statistics were cut from the last two analyses for brevity&rsquo;s sake).</p>
 <p><em>BJT SPICE model parameters.</em></p>
@@ -111,7 +111,7 @@ type npn is 1.00E-16 bf 100.000 nf 1.000 br 1.000 nr 1.000</pre>
 
 <p><strong>&beta; is listed under the abbreviation &ldquo;bf,&rdquo; which actually stands for &ldquo;beta, forward&rdquo;</strong>. If we wanted to insert our own &beta; ratio for analysis, we could have done so on the .model line of the SPICE netlist.</p>
 <p>Since &beta; is the ratio of collector current to base current, and we have our load connected in series with the collector terminal of the transistor and our source connected in series with the base, the ratio of output current to input current is equal to beta. Thus, our current gain for this example amplifier is 100, or 40 dB.</p>
-<h3><strong><em>Voltage Gain</em></strong></h3>
+<h2><strong><em>Voltage Gain</em></strong></h2>
 <p>Voltage gain is a little more complicated to figure than current gain for this circuit. As always, voltage gain is defined as the ratio of output voltage divided by the input voltage. In order to experimentally determine this, we modify our last SPICE analysis to plot output voltage rather than output current so we have two voltage plots to compare in the figure below.</p>
 <p><img src=&quot;/uploads/articles/smaller-peak-to-peak-amplitude.jpg&quot; /></p>
 <pre><br>

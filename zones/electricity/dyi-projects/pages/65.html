@@ -32,16 +32,15 @@
 <div id='idContent'>
 
 <h1>Si Lab - Astable Multivibrator Audio Oscillator</h1>
-<h3>Project Overview</h3>
+<h2>Project Overview</h2>
 <p>The proper name for the circuit in Figure 1 is an&nbsp;<a href=&quot;https://www.allaboutcircuits.com/textbook/digital/chpt-10/digital-logic-with-feedback/&quot; target=&quot;_blank&quot;>astable multivibrator</a>.&nbsp;</p>
-<p>&nbsp;</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/audio-oscillator-schematic-diagram.jpg&quot; /></p>
-<h5><em><strong>Figure 1.</strong> Schematic diagram of an astable multivibrator audio oscillator.</em></h5>
-<p>&nbsp;</p>
+<h4><em><strong>Figure 1.</strong> Schematic diagram of an astable multivibrator audio oscillator.</em></h4>
+
 <p>It is a simple, free-running <a href=&quot;https://www.allaboutcircuits.com/worksheets/oscillator-circuits/&quot; target=&quot;_blank&quot;>oscillator circuit</a> timed by the values of the <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/resistors/&quot; target=&quot;_blank&quot;>resistors</a>, <a href=&quot;https://www.allaboutcircuits.com/textbook/alternating-current/chpt-4/ac-capacitor-circuits/&quot; target=&quot;_blank&quot;>capacitors</a>, and <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-9/power-supply-circuits/&quot; target=&quot;_blank&quot;>power supply</a> voltage.&nbsp;Unfortunately, its output waveform is distorted, neither sine wave nor <a href=&quot;https://www.allaboutcircuits.com/textbook/alternating-current/chpt-7/square-wave-signals/&quot; target=&quot;_blank&quot;>square wave</a>. However, for the simple purpose of making an audio tone, distortion doesn&rsquo;t matter much.</p>
 <p>The multivibrator itself is just two transistors, two resistors, and two cross-connecting capacitors in the left portion of Figure 1.&nbsp;The capacitors provide <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-8/positive-feedback/&quot; target=&quot;_blank&quot;>positive feedback </a>in the circuit to keep it oscillating. The third transistor, shown at the right in Figure 1, is there to drive an <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-3/special-purpose-diodes/&quot; target=&quot;_blank&quot;>LED (light-emitting diode)</a>&nbsp;as a visual indicator of oscillator action.</p>
-<p>&nbsp;</p>
-<h3>Parts and Materials</h3>
+
+<h2>Parts and Materials</h2>
 <ul>
 <li>Two 6 V batteries</li>
 <li>Three NPN transistors&mdash;models <a href=&quot;https://www.farnell.com/datasheets/296640.pdf&quot; target=&quot;_blank&quot;>2N2222</a> or <a href=&quot;https://my.centralsemi.com/datasheets/LSSGP078.PDF&quot; target=&quot;_blank&quot;>2N3403</a> recommended</li>
@@ -54,26 +53,22 @@
 <li>Audio detector with headphones</li>
 </ul>
 
-<p>&nbsp;</p>
-<h3>Learning Objectives</h3>
+<h2>Learning Objectives</h2>
 <ul>
 <li>How to build an astable multivibrator circuit using discrete transistors</li>
 <li>The effect of component values and supply voltage on the oscillation frequency</li>
 </ul>
 
-<p>&nbsp;</p>
-<h3>Instructions</h3>
+<h2>Instructions</h2>
 <p><strong>Step 1:&nbsp;</strong>Build the circuit illustrated in the schematic of Figure 1 and the <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/building-simple-resistor-circuits/&quot; target=&quot;_blank&quot;>breadboard</a> implementation of Figure 2.&nbsp;</p>
-<p>&nbsp;</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/audio-oscillator-illustration-1.jpg&quot; /></p>
-<h5><em><strong>Figure 2.</strong> Breadboard implementation of an astable multivibrator audio oscillator.</em></h5>
-<p>&nbsp;</p>
+<h4><em><strong>Figure 2.</strong> Breadboard implementation of an astable multivibrator audio oscillator.</em></h4>
+
 <p>With a 12 V supply, 100 k&Omega; resistors, and 0.1 &micro;F capacitors, the oscillation frequency will be in the low audio range.</p>
 <p><strong>Step 2:&nbsp;</strong>You may listen to this signal with the <a href=&quot;https://www.allaboutcircuits.com/textbook/experiments/chpt-3/sensitive-voltage-detector/&quot; target=&quot;_blank&quot;>audio detector</a> connected with one test probe to the <a href=&quot;https://www.allaboutcircuits.com/technical-articles/an-introduction-to-ground/&quot; target=&quot;_blank&quot;>ground</a> and the other to one of the transistor&rsquo;s collector terminals. We&nbsp;recommend placing a 1 M&Omega; resistor <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/simple-series-circuits/&quot; target=&quot;_blank&quot;>in series</a> with the audio detector to minimize both circuit loading effects and headphone volume, as illustrated in Figure 3.</p>
-<p>&nbsp;</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/audio-oscillator-illustration-2.jpg&quot; /></p>
-<h5><em><strong>Figure 3.</strong> Listening to the astable multivibrator output using an audio detector.</em></h5>
-<p>&nbsp;</p>
+<h4><em><strong>Figure 3.</strong> Listening to the astable multivibrator output using an audio detector.</em></h4>
+
 <p>Of course, you could also observe the waveforms and frequency if you have an oscilloscope.</p>
 <p><strong>Step 3:&nbsp;</strong>Use the probe wire connected to the base of this common-emitter amplifier to detect voltage at different parts of the circuit with respect to the ground. Given the low oscillating frequency of this multivibrator circuit, you should be able to see the LED blink rapidly with the probe wire connected to the collector terminal of either multivibrator transistor.</p>
 <p>You may notice that the LED fails to blink with its probe wire touching the base of either multivibrator transistor, yet the audio detector (or oscilloscope) tells you there is an oscillating voltage there. Why is this?</p>

@@ -32,22 +32,21 @@
 <div id='idContent'>
 
 <h1>Si Lab - A Simple BJT Current Mirror Circuit</h1>
-<h3>Project Overview</h3>
+<h2>Project Overview</h2>
 <p>A <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-4/current-mirrors/&quot; target=&quot;_blank&quot;>current mirror</a> is a circuit where a bias <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/voltage-current/&quot; target=&quot;_blank&quot;>current</a> is set and then copied, or mirrored, to drive a load. In this project, you will construct and test the simple current mirror of Figure 1 with an adjustable&nbsp;bias current set using a <a href=&quot;https://eepower.com/resistor-guide/resistor-types/potentiometer/&quot; target=&quot;_blank&quot;>potentiometer</a>.&nbsp;</p>
-<p>&nbsp;</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/current-mirror-circuit-schematic-diagram.jpg&quot; /></p>
-<h5><em><strong>Figure 1.</strong> Schematic diagram of a BJT current mirror with an adjustable current.</em></h5>
-<p>&nbsp;</p>
+<h4><em><strong>Figure 1.</strong> Schematic diagram of a BJT current mirror with an adjustable current.</em></h4>
+
 <p>This basic circuit finds wide use due to its simplicity.&nbsp;In this experiment, we will explore its current-regulating properties and experience some of its practical limitations firsthand.&nbsp;</p>
-<p>&nbsp;</p>
-<h3>Theory of Operation</h3>
+
+<h2>Theory of Operation</h2>
 <p>The potentiometer, R<sub>adjust</sub>, is used to adjust the amount of current through <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-4/bipolar-junction-transistors-bjt/&quot; target=&quot;_blank&quot;>BJT</a> Q<sub>1</sub>. Transistor Q<sub>1</sub> has its collector shorted to its base and&nbsp;is referred to as being diode-connected as it will function as a simple <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-3/introduction-to-diodes-and-rectifiers/&quot; target=&quot;_blank&quot;>diode</a>: just a <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-2/the-p-n-junction/&quot; target=&quot;_blank&quot;>PN junction</a>.</p>
 <p>Now, why use a transistor for Q<sub>1</sub> instead of a regular diode? This is because&nbsp;it is important to match the junction characteristics of transistors Q<sub>1</sub> and Q<sub>2</sub>&nbsp;when using them in a current mirror circuit.&nbsp;The <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/polarity-voltage-drops/&quot; target=&quot;_blank&quot;>voltage dropped</a> across the base-emitter junction of Q<sub>1</sub> is also dropped across the base-emitter junction of the other transistor, Q<sub>2</sub>, causing it to turn on&nbsp;and likewise conduct current.</p>
 <p>Since the voltage across the two transistors&rsquo; base-emitter junctions is the same&mdash;the two junction pairs being connected in parallel with each other&mdash;the current through their base terminals will be identical, assuming identical junction characteristics and identical junction temperatures. Matched transistors should have the same &beta; ratios (<a href=&quot;https://www.allaboutcircuits.com/technical-articles/all-about-bjt-beta-understanding-terminology/&quot; target=&quot;_blank&quot;>current gain</a>), as well, so equal base currents mean that Q<sub>1</sub> and Q<sub>2</sub> should also have equal collector currents.</p>
 <p>The practical result of all this the collector current of Q<sub>2</sub> will match the collector current of Q<sub>1</sub>. In other words, the current through Q<sub>2</sub> <em>mirrors</em> the current through Q<sub>1</sub>. Changes in load <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/resistance/&quot; target=&quot;_blank&quot;>resistance</a> (resistance connecting the collector of Q<sub>2</sub> to the positive side of the battery) have no effect on Q<sub>1</sub>&#39;s current and, consequently, have no effect on the base-emitter voltage or base current of Q<sub>2</sub>.</p>
 <p>With a constant base current and a nearly constant &beta; ratio, Q<sub>2</sub> will drop as much or as little collector-emitter voltage as necessary to hold its collector (load) current constant. Thus, the current mirror circuit acts to regulate current at a value set by the potentiometer without regard to the load resistance.&nbsp;Well, that is how it is supposed to work, anyway,&nbsp;Reality isn&rsquo;t quite so simple as you are about to see.</p>
-<p>&nbsp;</p>
-<h3>Parts and Materials</h3>
+
+<h2>Parts and Materials</h2>
 <ul>
 <li>&nbsp; Two <a href=&quot;https://www.allaboutcircuits.com/technical-articles/pnp-transistor-characteristics-applications/&quot; target=&quot;_blank&quot;>NPN transistors</a>&mdash;models <a href=&quot;https://www.farnell.com/datasheets/2869789.pdf&quot; target=&quot;_blank&quot;>2N2222</a> or <a href=&quot;https://my.centralsemi.com/datasheets/LSSGP078.PDF&quot; target=&quot;_blank&quot;>2N3403</a> recommended</li>
 <li>&nbsp; Two 6 V batteries</li>
@@ -58,8 +57,8 @@
 
 <p>Small signal transistors are recommended so as to be able to experience <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-4/bjt-quirks/&quot; target=&quot;_blank&quot;>thermal runaway</a>&nbsp;in the latter portion of the experiment. Note that larger power&nbsp;transistors may not exhibit the same behavior at these low current levels. However, any pair of identical NPN transistors may be used to build a current mirror.</p>
 <p>Beware that not all transistors share the same terminal designations, or pinouts, even if they share the same physical appearance.&nbsp;This will dictate how you connect the transistors together and to other components, so be sure to check the manufacturer&rsquo;s specifications (component datasheet), which may be obtained from the manufacturer&rsquo;s website. Beware that it is possible for the transistor&rsquo;s package and even the manufacturer&rsquo;s datasheet to show incorrect terminal identification diagrams. Therefore, double-checking transistor pin identities with a multimeter&rsquo;s <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-3/meter-check-of-a-diode/&quot; target=&quot;_blank&quot;>diode check</a>&nbsp;function is highly recommended. This procedure is described in the textbook page, <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-4/meter-check-transistor-bjt/&quot; target=&quot;_blank&quot;>Meter Check of a Transistor (BJT)</a>.</p>
-<p>&nbsp;</p>
-<h3>Learning Objectives</h3>
+
+<h2>Learning Objectives</h2>
 <ul>
 <li>&nbsp; How to build a current mirror circuit</li>
 <li>&nbsp; Current limitations of a current mirror circuit</li>
@@ -67,13 +66,11 @@
 <li>&nbsp; Experience a controlled thermal runaway&nbsp;situation</li>
 </ul>
 
-<p>&nbsp;</p>
-<h3>Instructions</h3>
+<h2>Instructions</h2>
 <p><strong>Step 1:&nbsp;</strong>Build the circuit illustrated by the schematic of Figure 1 and the <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/building-simple-resistor-circuits/&quot; target=&quot;_blank&quot;>breadboard</a> implementation of Figure 2.</p>
-<p>&nbsp;</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/current-mirror-circuit-illustration.jpg&quot; /></p>
-<h5><em><strong>Figure 2.</strong> Breadboard implementation of a BJT current mirror with an adjustable current.</em></h5>
-<h5>&nbsp;</h5>
+<h4><em><strong>Figure 2.</strong> Breadboard implementation of a BJT current mirror with an adjustable current.</em></h4>
+<h4>&nbsp;</h4>
 <p>In the circuit diagrams, the load circuit of Q<sub>2</sub> is completed to the positive side of the battery through an <a href=&quot;https://www.allaboutcircuits.com/textbook/experiments/chpt-2/ammeter-usage/&quot; target=&quot;_blank&quot;>ammeter</a> for easy current measurement. Rather than solidly connect the ammeter&rsquo;s black probe to a definite point in the circuit, I&rsquo;ve marked five test points, TP<sub>1</sub> through TP<sub>5</sub>, for you to touch the black test probe to while measuring current.</p>
 <p>This allows you to quickly and effortlessly change load resistance. Where touching the probe to TP<sub>1</sub> results in practically no load resistance, while touching it to TP<sub>5</sub> results in approximately 14.5 k&Omega; of load resistance.</p>
 <p><strong>Step 2:&nbsp;</strong>To begin the experiment, touch the test probe to TP<sub>4</sub> and adjust the potentiometer through its range of travel.&nbsp;You should see a small, changing current indicated by your ammeter as you move the potentiometer mechanism,&nbsp;no more than a few milliamps. Leave the potentiometer set to a position giving a round number of milliamps. Record the current value.</p>
@@ -81,25 +78,23 @@
 <p><strong>Step 4:&nbsp;</strong>Move the probe to TP<sub>2</sub> and then TP<sub>1</sub>, recording the current values for each.&nbsp;Again, you should see a nearly unchanged amount of current.</p>
 <p><strong>Step 5:&nbsp;</strong>Try adjusting the potentiometer to another position, giving a different current indication, and touch the meter&rsquo;s black probe to test points TP<sub>1</sub> through TP<sub>4</sub>, noting the stability of the current indications as you change load resistance.&nbsp;This demonstrates the current regulating behavior of this circuit.</p>
 <p>You should note that the current regulation isn&rsquo;t perfect.&nbsp;Despite regulating the current at nearly the value for load resistances between 0 and 4.5 k&Omega;, there is some variation over this range. The regulation may be much worse if load resistance is allowed to rise too high.</p>
-<p>&nbsp;</p>
-<h4>Limitations of Current Mirrors</h4>
+
+<h3>Limitations of Current Mirrors</h3>
 <p><strong>Step 6:&nbsp;</strong>Adjust&nbsp;the potentiometer so that maximum current is obtained, as indicated with the ammeter test probe connected to TP<sub>1</sub>.</p>
 <p><strong>Step 7:&nbsp;</strong>Leaving the potentiometer at this position, move the meter probe to TP<sub>2</sub>, then TP<sub>3</sub>, then TP<sub>4</sub>, and finally TP<sub>5</sub>, noting the meter&rsquo;s indication at each connection point.&nbsp;The current should be regulated at a nearly constant value until the meter probe is moved to the last test point, TP<sub>5</sub>. There, the current indication will be substantially lower than at the other test points.</p>
 <p>Why is this? This is due to&nbsp;too much load resistance being inserted into Q<sub>2</sub>&lsquo;s circuit. Simply put, Q<sub>2</sub> cannot &ldquo;turn on&rdquo; any more than it already has, to maintain the same amount of current with this great a load resistance as with lesser load resistances.</p>
 <p>This phenomenon is common to all current-regulator circuits; there is a limited amount of resistance a current regulator can handle before it saturates. This stands to reason, as any current regulator circuit capable of supplying a constant amount of current through any load resistance imaginable would require an unlimited source of voltage to do it.</p>
 <p><a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/voltage-current-resistance-relate/&quot; target=&quot;_blank&quot;>Ohm&rsquo;s law</a> (V = IR) dictates the amount of voltage needed to push a given amount of current through a given amount of resistance, and with only 12 V&nbsp;of power supply voltage at our disposal, a finite limit of load current and load resistance definitely exists for this circuit. For this reason, it may be helpful to think of current regulator circuits as being current limiter circuits, for all they can really do is limit current to some maximum value.</p>
-<p>&nbsp;</p>
-<h4>Temperature Depedence in Current Mirrors</h4>
+
+<h3>Temperature Depedence in Current Mirrors</h3>
 <p>An important caveat for current mirror circuits, in general, is that of equal temperature between the two transistors. The current mirroring&nbsp;taking place between the two transistors&rsquo; collector circuits depends on the base-emitter junctions of those two transistors having the exact same properties.&nbsp;As the <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-3/introduction-to-diodes-and-rectifiers/&quot; target=&quot;_blank&quot;>diode equation</a>&nbsp;describes, the voltage/current relationship for a PN junction strongly depends on junction temperature, T:</p>
-<p>&nbsp;</p>
 <p>$$I_{diode} = I_s ( e^{(\frac{qV_D}{NkT}) }-1)$$</p>
-<p>&nbsp;</p>
 <p>The hotter a PN junction is, the more current it will pass for a given amount of voltage drop.&nbsp;If one transistor should become hotter than the other, it will pass more collector current than the other, and the circuit will no longer mirror&nbsp;current as expected.&nbsp;When building a real current mirror circuit using discrete transistors, the two transistors should be epoxy-glued together (back-to-back) so that they remain at approximately the same temperature.</p>
 <p><strong>Step 8:&nbsp;</strong>To illustrate this dependence on equal temperature, try grasping transistor Q<sub>1</sub> between your fingers to heat it up. What happens to the current through the load resistors as the transistor&rsquo;s temperature increases?</p>
 <p><strong>Step 9:&nbsp;</strong>Now, let go of the transistor and blow on it to cool it down to ambient temperature.</p>
 <p><strong>Step 10:&nbsp;</strong>Grasp transistor Q<sub>2</sub> between your fingers to heat it up.&nbsp;What does the load current do now?</p>
-<p>&nbsp;</p>
-<h4>Thermal Runaway in Bipolar Junction Transistor Circuits</h4>
+
+<h3>Thermal Runaway in Bipolar Junction Transistor Circuits</h3>
 <p>In this next phase of the experiment, we will intentionally allow one of the transistors to overheat and note the effects.&nbsp;To avoid damaging a transistor, this procedure should be conducted no longer than is necessary to observe the load current begin to run away.&nbsp;</p>
 <p><strong>Step 11:&nbsp;</strong>To begin, adjust the potentiometer for minimum current.</p>
 <p><strong>Step 12:&nbsp;</strong>Next, replace the 10 k&Omega; R<sub>limit</sub> resistor with a 1.5 k&Omega; resistor. This will allow a higher current to pass through Q<sub>1</sub>, and consequently through Q<sub>2</sub> as well.</p>
@@ -108,18 +103,16 @@
 <p><strong><span>Warning</span>:</strong> if Q<sub>2</sub>&lsquo;s current has been allowed to run away&nbsp;too far or for too long a time, it may become <strong>very hot</strong>! You can receive a bad burn on your fingertip by touching an overheated semiconductor component, so be careful here!</p>
 <p>What just happened to make Q<sub>2</sub> overheat and lose current control? By connecting the ammeter to TP<sub>1</sub>, all load resistance was removed, so Q<sub>2</sub> had to drop full battery voltage between collector and emitter as it regulated current.&nbsp;Transistor Q<sub>1</sub> at least had the 1.5 k&Omega; resistance of R<sub>limit</sub> in place to drop most of the battery voltage, so its power dissipation was far less than that of Q<sub>2</sub>. This gross imbalance of power dissipation caused Q<sub>2</sub> to heat more than Q<sub>1</sub>.</p>
 <p>As the temperature increased, Q<sub>2</sub> began to pass more current for the same amount of base-emitter voltage drop. This caused it to heat up even faster, as it was passing more collector current while still dropping the full 12 V between collector and emitter.&nbsp;The effect is known as thermal runaway, and it is possible in many BJT circuits, not just current mirrors.</p>
-<p>&nbsp;</p>
-<h3>SPICE Simulation of the BJT Current Mirror Circuit</h3>
+
+<h2>SPICE Simulation of the BJT Current Mirror Circuit</h2>
 <p>To simulate the BJT&nbsp;current mirror, we can use the&nbsp;<a href=&quot;https://www.allaboutcircuits.com/technical-articles/understanding-schematics/&quot; target=&quot;_blank&quot;>schematic</a> diagram of&nbsp;Figure 3 with the added node numbers, and use the <a href=&quot;https://www.allaboutcircuits.com/textbook/reference/chpt-7/introduction-to-spice/&quot; target=&quot;_blank&quot;>SPICE simulation</a> netlist and input deck that follows.</p>
-<p>&nbsp;</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/current-mirror-circuit-schematic-with-spice-node-numbers.jpg&quot; /></p>
-<h5><em><strong>Figure 3.</strong> BJT current mirror for SPICE circuit simulation.</em></h5>
-<p>&nbsp;</p>
+<h4><em><strong>Figure 3.</strong> BJT current mirror for SPICE circuit simulation.</em></h4>
+
 <p>Netlist (make a text file containing the following text, verbatim):</p>
 <pre><br>
 Current Mirror &#10;v1 1 0 &#10;vammeter 1 3 dc 0 &#10;rlimit 1 2 10k &#10;rload 3 4 3k &#10;q1 2 2 0 mod1 &#10;q2 4 2 0 mod1 &#10;.model mod1 npn bf=100 &#10;.dc v1 12 12 1 &#10;.print dc i(vammeter) .end </pre>
 
-<p>&nbsp;</p>
 <p>V<sub>ammeter</sub> is nothing more than a zero-volt DC battery strategically placed in series with the load current. This is nothing more than a trick to measure current in a SPICE simulation, as no dedicated ammeter&nbsp;component exists in the SPICE language.</p>
 <p>It is important to remember that SPICE only recognizes the first eight characters of a component&rsquo;s name. The name &ldquo;V<sub>ammeter</sub>&rdquo; is okay, but if we were to incorporate more than one current-measuring voltage source in the circuit and name them &ldquo;V<sub>ammeter1</sub>&rdquo; and &ldquo;V<sub>ammeter2</sub>&rdquo;, respectively, SPICE would see them as being two instances of the same component. It would recognized only the first 8 characters,&nbsp;V<sub>ammeter</sub>, and halt with an error. This is something to bear in mind when altering the netlist or programming your own SPICE simulation!</p>
 <p>You will have to experiment with different resistance values of R<sub>load</sub> in this simulation to appreciate the current-regulating nature of the circuit.</p>

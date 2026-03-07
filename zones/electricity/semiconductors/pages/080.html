@@ -32,23 +32,23 @@
 <div id='idContent'>
 
 <h1>The Silicon-Controlled Rectifier (SCR)</h1>
-<h3>Shockley Diodes and Silicon Controlled Rectifiers (SCRs)</h3>
+<h2>Shockley Diodes and Silicon Controlled Rectifiers (SCRs)</h2>
 <p>Shockley diodes are curious devices, but rather limited in application. Their usefulness may be expanded, however, by equipping them with another means of latching. In doing so, each becomes true amplifying devices (if only in an on/off mode), and we refer to these as silicon-controlled rectifiers or SCRs.</p>
 <p>The progression from <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-7/shockley-diode/&quot; target=&quot;_blank&quot;>Shockley diode</a> to SCR is achieved with one small addition, actually nothing more than a third wire connection to the existing PNPN structure: (Figure below)</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/silicon-controlled-rectifier-diagram.jpg&quot; /></p>
 <p><em>The Silicon-Controlled Rectifier (SCR)</em></p>
-<p>&nbsp;</p>
-<h3>SCR Conduction</h3>
+
+<h2>SCR Conduction</h2>
 <p>If an SCR&rsquo;s gate is left floating (disconnected), it behaves exactly as a Shockley diode. It may be latched by breakover voltage or by exceeding the critical rate of voltage rise between anode and cathode, just as with the Shockley diode. Dropout is accomplished by reducing current until one or both internal transistors fall into cutoff mode, also like the Shockley diode. However, because the gate terminal connects directly to the base of the lower transistor, it may be used as an alternative means to latch the SCR. By applying a small voltage between gate and cathode, the lower transistor will be forced on by the resulting base current, which will cause the upper transistor to conduct, which then supplies the lower transistor&rsquo;s base with current so that it no longer needs to be activated by a gate voltage. The necessary gate current to initiate latch-up, of course, will be much lower than the current through the SCR from cathode to anode, so the SCR does achieve a measure of amplification.</p>
-<h4>Triggering/Firing</h4>
+<h3>Triggering/Firing</h3>
 <p>This method of securing SCR conduction is called triggering or firing, and it is by far the most common way that SCRs are latched in actual practice. In fact, SCRs are usually chosen so that their breakover voltage is far beyond the greatest voltage expected to be experienced from the power source so that it can be turned on only by an intentional voltage pulse applied to the gate.</p>
-<h4>Reverse Triggering</h4>
+<h3>Reverse Triggering</h3>
 <p>It should be mentioned that SCRs may sometimes be turned off by directly shorting their gate and cathode terminals together, or by &ldquo;reverse-triggering&rdquo; the gate with a negative voltage (in reference to the cathode), so that the lower transistor is forced into cutoff. I say this is &ldquo;sometimes&rdquo; possible because it involves shunting all of the upper transistor&rsquo;s collector current past the lower transistor&rsquo;s base. This current may be substantial, making triggered shut-off of an SCR difficult at best. A variation of the SCR, called a Gate-Turn-Off thyristor, or GTO, makes this task easier. But even with a GTO, the gate current required to turn it off may be as much as 20% of the anode (load) current! The schematic symbol for a GTO is shown in the following illustration: (Figure below)</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/gate-turn-off-thyristor.jpg&quot; /></p>
 <p><em>The Gate Turn-Off thyristor (GTO)</em></p>
-<h4>SCRs vs GTOs</h4>
+<h3>SCRs vs GTOs</h3>
 <p>SCRs and GTOs share the same equivalent schematics (two transistors connected in a positive-feedback fashion), the only differences being details of construction designed to grant the NPN transistor a greater &beta; than the PNP. This allows a smaller gate current (forward or reverse) to exert a greater degree of control over conduction from cathode to anode, with the PNP transistor latched state being more dependent upon the NPN than vice versa. The Gate-Turn-Off thyristor is also known by the name of Gate-Controlled Switch, or GCS.</p>
-<h3>Testing SCR Functionality with an Ohmmeter</h3>
+<h2>Testing SCR Functionality with an Ohmmeter</h2>
 <p>A rudimentary test of SCR function, or at least terminal identification, may be performed with an <a href=&quot;https://www.allaboutcircuits.com/textbook/experiments/chpt-2/ohmmeter-usage/&quot; target=&quot;_blank&quot;>ohmmeter</a>. Because the internal connection between gate and cathode is a single PN junction, a meter should indicate continuity between these terminals with the red test lead on the gate and the black test lead on the cathode like this: (Figure below)</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/rudimentary-test-of-scr.jpg&quot; /></p>
 <p><em>Rudimentary test of SCR</em></p>
@@ -56,20 +56,20 @@
 <p>If you are using a multimeter with a &ldquo;diode check&rdquo; function, the gate-to-cathode junction voltage indication you get may or may not correspond to what&rsquo;s expected of a silicon PN junction (approximately 0.7 volts). In some cases, you will read a much lower junction voltage: mere hundredths of a volt. This is due to an internal resistor connected between the gate and cathode incorporated within some SCRs. This resistor is added to make the SCR less susceptible to false triggering by spurious voltage spikes, from circuit &ldquo;noise&rdquo; or from static electric discharge. In other words, having a resistor connected across the gate-cathode junction requires that a strong triggering signal (substantial current) be applied to latch the SCR. This feature is often found in larger SCRs, not on small SCRs. Bare in mind that an SCR with an internal resistor connected between gate and cathode will indicate continuity in both directions between those two terminals: (Figure below)</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/larger-SCRs-have-gate-to-cathode-resistor.jpg&quot; /></p>
 <p><em>Larger SCRs have gate to cathode resistor.</em></p>
-<h3>Sensitive Gate SCRs</h3>
+<h2>Sensitive Gate SCRs</h2>
 <p>&ldquo;Normal&rdquo; SCRs, lacking this internal resistor, are sometimes referred to as sensitive gate SCRs due to their ability to be triggered by the slightest positive gate signal.</p>
 <p>The test circuit for an SCR is both practical as a diagnostic tool for checking suspected SCRs and also an excellent aid to understanding basic SCR operation. A DC voltage source is used for powering the circuit, and two pushbutton switches are used to latch and unlatch the SCR, respectively: (Figure below)</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/SCR-testing-circuit.jpg&quot; /></p>
 <p><em>SCR testing circuit</em></p>
 <p>Actuating the normally-open &ldquo;on&rdquo; pushbutton switch connects the gate to the anode, allowing current from the positive terminal of the battery, through the load resistor, through the switch, through the cathode-gate PN junction, and back to the battery. This gate current should force the SCR to latch on, allowing current to go directly from anode to cathode without further triggering through the gate. When the &ldquo;on&rdquo; pushbutton is released, the load should remain energized.</p>
 <p>Pushing the normally-closed &ldquo;off&rdquo; pushbutton switch breaks the circuit, forcing current through the SCR to halt, thus forcing it to turn off (low-current dropout).</p>
-<h3>Holding Current</h3>
+<h2>Holding Current</h2>
 <p>If the SCR fails to latch, the problem may be with the load and not the SCR. A certain minimum amount of load current is required to hold the SCR latched in the &ldquo;on&rdquo; state. This minimum current level is called the holding current. A load with too great a resistance value may not draw enough current to keep an SCR latched when gate current ceases, thus giving the false impression of a bad (un-latchable) SCR in the test circuit. Holding current values for different SCRs should be available from the manufacturers. Typical holding current values range from 1 milliamp to 50 milliamps or more for larger units.</p>
 <p>For the test to be fully comprehensive, more than the triggering action needs to be tested. The forward breakover voltage limit of the SCR could be tested by increasing the DC voltage supply (with no pushbutton switch actuated) until the SCR latches all on its own. Beware that a breakover test may require very high voltage: many power SCRs have breakover voltage ratings of 600 volts or more! Also, if a pulse voltage generator is available, the critical rate of voltage rise for the SCR could be tested in the same way: subject it to pulsing supply voltages of different V/time rates with no pushbutton switches actuated and see when it latches.</p>
 <p>In this simple form, the SCR test circuit could suffice as a start/stop control circuit for a DC motor, lamp, or other practical load: (Figure below)</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/DC-motor-startstop-control-circuit.jpg&quot; /></p>
 <p><em>DC motor start/stop control circuit</em></p>
-<h3>The &ldquo;Crowbar&rdquo; Circuit</h3>
+<h2>The &ldquo;Crowbar&rdquo; Circuit</h2>
 <p>Another practical use for the SCR in a DC circuit is as a crowbar device for overvoltage protection. A &ldquo;crowbar&rdquo; circuit consists of an SCR placed in parallel with the output of a DC power supply, for placing a direct short-circuit on the output of that supply to prevent excessive voltage from reaching the load. Damage to the SCR and power supply is prevented by the judicious placement of a fuse or substantial series resistance ahead of the SCR to limit short-circuit current: (Figure below)</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/crowbar-circuit-used-in-DC-power-supply.jpg&quot; /></p>
 <p><em>Crowbar circuit used in DC power supply</em></p>
@@ -85,7 +85,7 @@
 <p>With no triggering to the gate, and the AC source voltage is well below the SCR&rsquo;s breakover voltage rating, the SCR will never turn on. Connecting the SCR gate to the anode through a standard <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-3/rectifier-circuits/&quot; target=&quot;_blank&quot;>rectifying diode</a> (to prevent reverse current through the gate in the event of the SCR containing a built-in gate-cathode resistor), will allow the SCR to be triggered almost immediately at the beginning of every positive half-cycle: (Figure below)</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/gate-connected-directly-to-anode-through-diode.jpg&quot; /></p>
 <p><em>Gate connected directly to anode through a diode; nearly complete half-wave current through load.</em></p>
-<h3>SCR Trigger Delay</h3>
+<h2>SCR Trigger Delay</h2>
 <p>We can delay the triggering of the SCR, however, by inserting some resistance into the gate circuit, thus increasing the amount of voltage drop required before enough gate current triggers the SCR. In other words, if we make it harder for current to flow through the gate by adding a resistance, the AC voltage will have to reach a higher point in its cycle before there will be enough gate current to turn the SCR on. The result is in Figure below.</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/resistance-inserted-in-gate-circuit.jpg&quot; /></p>
 <p><em>Resistance inserted in gate circuit; less than half-wave current through load.</em></p>
@@ -99,13 +99,12 @@
 <p>An ingenious solution to this control dilemma is found in the addition of a phase-shifting capacitor to the circuit: (Figure below)</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/addition-of-a-phase-shifting-capacitor-to-the-circuit.jpg&quot; /></p>
 <p><em>Addition of a phase-shifting capacitor to the circuit</em></p>
-<p>&nbsp;</p>
 <p>The smaller waveform shown on the graph is the voltage across the capacitor. For the sake of illustrating the phase shift, I&rsquo;m assuming a condition of maximum control resistance where the SCR is not triggering at all with no load current, save for what little current goes through the control <a href=&quot;https://www.allaboutcircuits.com/video-lectures/electronic-components-resistors/&quot; target=&quot;_blank&quot;>resistor</a> and <a href=&quot;https://www.allaboutcircuits.com/video-lectures/capacitors-part-1/&quot; target=&quot;_blank&quot;>capacitor</a>. This capacitor voltage will be phase-shifted anywhere from 0o to 90o lagging behind the power source AC waveform. When this <a href=&quot;https://www.allaboutcircuits.com/textbook/alternating-current/chpt-1/ac-phase/&quot; target=&quot;_blank&quot;>phase-shifted</a> voltage reaches a high enough level, the SCR will trigger.</p>
 <p>With enough voltage across the capacitor to periodically trigger the SCR, the resulting load current waveform will look something like Figure below)</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/phase-shifted-signal-triggers-SCR-into-conduction.jpg&quot; /></p>
 <p><em>Phase-shifted signal triggers SCR into conduction.</em></p>
 <p>Because the capacitor waveform is still rising after the main AC power waveform has reached its peak, it becomes possible to trigger the SCR at a threshold level beyond that peak, thus chopping the load current wave further than it was possible with the simpler circuit. In reality, the capacitor voltage waveform is a bit more complex than what is shown here, its sinusoidal shape distorted every time the SCR latches on. However, what I&rsquo;m trying to illustrate here is the delayed triggering action gained with the phase-shifting RC network; thus, a simplified, undistorted waveform serves the purpose well.</p>
-<h3>SCR triggering by Complex Circuits</h3>
+<h2>SCR triggering by Complex Circuits</h2>
 <p>SCRs may also be triggered, or &ldquo;fired,&rdquo; by more complex circuits. While the circuit previously shown is sufficient for a simple application like a lamp control, large industrial motor controls often rely on more sophisticated triggering methods. Sometimes, pulse transformers are used to couple a triggering circuit to the gate and cathode of an SCR to provide electrical isolation between the triggering and power circuits.</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/transformer-coupling-of-trigger-signal-provides-isolation.jpg&quot; /></p>
 <p><em>Transformer coupling of trigger signal provides isolation.</em></p>

@@ -1,15 +1,15 @@
-<h1>AC Lab - PC Oscilloscope</h1>
-<h3>Project Overview</h3>
+# AC Lab - PC Oscilloscope
+## Project Overview
 <p>The oscilloscope&nbsp;is an indispensable test instrument for electronics students and professionals. No serious electronics lab should be without one. Unfortunately, commercial oscilloscopes tend to be expensive, and it is almost impossible to design and build your own without another oscilloscope to troubleshoot it!</p>
 <p>However, the sound card of a personal computer is capable of digitizing&nbsp;low-voltage&nbsp;from a range of a few hundred Hertz to several thousand Hertz with a respectable resolution. Plus, free software is available for displaying these signals in oscilloscope form on the computer screen. Since most people either have a personal computer or can obtain one for less cost than an oscilloscope, this becomes a viable alternative for the experimenter on a budget.</p>
 <p>In this project, you will use&nbsp;the keyboard and plug arrangement described in the previous experiment for <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-4/musical-keyboard-signal-generator/" target="_blank">using a musical keyboard as a signal generator</a>&nbsp;to generate input signals to a computer sound card for display on the PC-based oscilloscope, as illustrated in Figure 1.</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/pc-oscilloscope-illustration.jpg" /></p>
-<h5><em><strong>Figure 1.</strong> Using a PC-based oscilloscope to monitor outputs from an electronic keyboard.</em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Figure 1.</strong> Using a PC-based oscilloscope to monitor outputs from an electronic keyboard.</em>
+
 <p>One word of caution: <strong>you can cause significant hardware damage to your computer if signals of excessive voltage are connected to the sound card&rsquo;s microphone input!</strong> The AC voltages produced by a musical keyboard are too low to cause damage to your computer through the sound card, but other voltage sources might be hazardous to your computer&rsquo;s health. Use this <a href="https://www.allaboutcircuits.com/worksheets/basic-oscilloscope-operation/" target="_blank">oscilloscope</a>&nbsp;at your own risk!</p>
-<p>&nbsp;</p>
-<h3>Parts and Materials</h3>
+
+## Parts and Materials
 <ul>
 <li>IBM-compatible personal computer with a sound card running Windows 3.1 or better</li>
 <li>Winscope software, which can be&nbsp;downloaded free from the internet</li>
@@ -19,19 +19,19 @@
 <li>10 k&Omega; <a href="https://eepower.com/resistor-guide/resistor-types/potentiometer/" target="_blank">potentiometer</a></li>
 </ul>
 <p>The Winscope program I&rsquo;ve used was written by Dr. Constantin Zeldovich for free personal and academic use. It plots waveforms on the computer screen in response to <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-1/what-is-alternating-current-ac/" target="_blank">AC</a>&nbsp;voltage signals interpreted by the sound card microphone input. A similar program, called <em>Oscope</em>, is made for the Linux operating system. If you don&rsquo;t have access to either software, you may use the sound recorder&nbsp;utility that comes stock with most versions of Microsoft Windows to display crude waveshapes.</p>
-<p>&nbsp;</p>
-<h3>Learning Objectives</h3>
+
+## Learning Objectives
 <ul>
 <li>To use a computer program to work as an oscilloscope</li>
 <li>To show the basic function of an oscilloscope</li>
 </ul>
-<p>&nbsp;</p>
-<h3>Instructions</h3>
+
+## Instructions
 <p><strong>Step 1:&nbsp;</strong>Connect the keyboard output to the outer terminals of a 10 k&Omega; potentiometer, as illustrated in Figures 1 and 2.</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/pc-oscilloscope-schematic-diagram.jpg" /></p>
-<h5><em><strong>Figure 2.</strong>&nbsp;The schematic diagram for connecting the keyboard output to the PC sound card input with potentiometer adjustable gain.</em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Figure 2.</strong>&nbsp;The schematic diagram for connecting the keyboard output to the PC sound card input with potentiometer adjustable gain.</em>
+
 <p><strong>Step 2:&nbsp;</strong>Solder two wires to the connection points on the sound card microphone input plug so that you have a set of test leads&nbsp;for the oscilloscope.&nbsp;</p>
 <p><strong>Step 3:&nbsp;</strong>Connect these test leads to the potentiometer between the middle terminal (the wiper) and either of the outer terminals.</p>
 <p><strong>Step 4:&nbsp;</strong>Start the Winscope program and click on the arrow&nbsp;icon in the upper-left corner (it looks like the play&nbsp;arrow seen on a tape player and CD player control buttons).</p>

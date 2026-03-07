@@ -1,10 +1,10 @@
-<h1>A 50-Ohm Cable?</h1>
+# A 50-Ohm Cable?
 <p>Early in my explorations of electricity, I came across a length of <em>coaxial cable</em> with a label of &ldquo;50 ohms&rdquo; printed along its outer sheath (Figure below). Coaxial cable is a two-conductor <a href="https://www.allaboutcircuits.com/video-lectures/wire-and-cable/" target="_blank">cable</a> made of a single conductor surrounded by a braided wire jacket, with a plastic insulating material separating the two.</p>
 <p>As such, the outer (braided) conductor completely surrounds the inner (single wire) conductor, the two conductors insulated from each other for the entire length of the cable. This type of cabling is often used to conduct weak (low-<a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-1/measurements-ac-magnitude/" target="_blank">amplitude</a>) voltage signals, due to its excellent ability to shield such signals from external interference.</p>
-<p>&nbsp;</p>
+
 <p><img src="/uploads/articles/coaxial-cable-construction.png" /></p>
 <p><em>Coaxial cable construction.</em></p>
-<p>&nbsp;</p>
+
 <p>I was mystified by the &ldquo;50 ohms&rdquo; label on this coaxial cable. How could two conductors, insulated from each other by a relatively thick layer of plastic, have 50 ohms of resistance between them?</p>
 <p>Measuring the resistance between the outer and inner conductors with my <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-8/ohmmeter-design/" target="_blank">ohmmeter</a>, I found it to be infinite (open-circuit), just as I would have expected from the two insulated conductors.</p>
 <p>Measuring each of the two conductors&rsquo; resistances from one end of the cable to the other indicated nearly zero ohms of resistance: again, exactly what I would have expected from continuous, unbroken lengths of wire.</p>

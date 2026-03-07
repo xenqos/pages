@@ -1,13 +1,13 @@
-<h1>Analog Lab - Op Amp Integrator</h1>
-<h3>Project Overview</h3>
+# Analog Lab - Op Amp Integrator
+## Project Overview
 <p><a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-8/differentiator-integrator-circuits/" target="_blank">Integrator circuits</a> are one of the fundamental building-block functions of an analog computer. By connecting integrator circuits with <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-1/amplifiers/" target="_blank">amplifiers</a>, summers, and <a href="https://eepower.com/resistor-guide/resistor-types/potentiometer/" target="_blank">potentiometers</a> (dividers), almost any differential equation could be modeled, and solutions obtained by measuring voltages produced at various points in the network of circuits.</p>
 <p>Since differential equations describe so many physical processes, analog computers are often used as physical simulators. Before the advent of modern digital computers, engineers used analog computers to simulate such processes as machinery vibration, rocket trajectory, and control system response. Even though analog computers are largely considered obsolete by modern standards, the integrator circuit can still be used in analog systems.</p>
 <p>In this project, you will build the <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-8/introduction-operational-amplifiers/" target="_blank">operational amplifier (op amp)</a> integrator circuit of Figure 1 that includes a <a href="http://eepower.com/capacitor-guide/" target="_blank">capacitor</a> in the <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-8/negative-feedback/" target="_blank">negative feedback</a> path from the output to the inverting input.</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/limiting-the-span-of-potentiometer-method.jpg" /></p>
-<h5><em><strong>Figure 1.</strong> Schematic diagram of the op amp integrator circuit.</em></h5>
-<p>&nbsp;</p>
-<h3>Parts and Materials</h3>
+#### <em><strong>Figure 1.</strong> Schematic diagram of the op amp integrator circuit.</em>
+
+## Parts and Materials
 <ul>
 <li>Four 6 V batteries or 24 V power supply</li>
 <li>Operational amplifier, model 1458 recommended</li>
@@ -17,20 +17,20 @@
 <li>Three 1 M&Omega; resistors</li>
 </ul>
 <p>Just about any op amp model will work fine for this integrator experiment, but I&rsquo;m specifying the model 1458 over the 353 because the 1458 has much higher input bias currents. Normally, a high input bias current is a bad characteristic for an op amp to have in a precision DC amplifier circuit (and especially an integrator circuit). However, I want the bias current to be high in order that its bad effects may be exaggerated and so that you will learn one method of counteracting its effects.</p>
-<p>&nbsp;</p>
-<h3>Learning Objectives</h3>
+
+## Learning Objectives
 <ul>
 <li>To show a method for limiting the span of a potentiometer</li>
 <li>To determine the purpose of an integrator circuit</li>
 <li>To illustrate how to compensate for op amp bias current</li>
 </ul>
-<p>&nbsp;</p>
-<h3>Instructions</h3>
+
+## Instructions
 <p><strong>Step 1:&nbsp;</strong>Build the circuit&nbsp;shown in the schematic diagram of Figure 1 and illustrated in the <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/building-simple-resistor-circuits/" target="_blank">breadboard</a> implementation of Figure 2.</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/integrator-circuit-illustration.jpg" /></p>
-<h5><em><strong>Figure 2.</strong> Breadboard implementation of the op amp integrator circuit.</em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Figure 2.</strong> Breadboard implementation of the op amp integrator circuit.</em>
+
 <p>As you can see from the schematic diagram, the 10 k&Omega; potentiometer is connected to 100 k&Omega; resistors, one on each end, that are then connected to the rails&nbsp;of the power supply. This is to limit the span of the potentiometer so that full movement produces a fairly small range of input voltages for the op amp to operate on.</p>
 <p>At one extreme of the potentiometer&rsquo;s motion, a voltage of about 0.5 volts (with respect to the <a href="https://www.allaboutcircuits.com/technical-articles/an-introduction-to-ground/" target="_blank">ground</a> point in the middle of the series battery string) will be produced at the potentiometer wiper. At the other extreme of motion, a voltage of about -0.5 volts will be produced. When the potentiometer is positioned dead-center, the wiper voltage should measure zero volts.</p>
 <p><strong>Step 2:&nbsp;</strong>Connect a <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-8/voltmeter-design/" target="_blank">voltmeter</a> between the op amp&rsquo;s output terminal and the circuit ground point. Slowly move the potentiometer control while monitoring the output voltage. The output voltage should change at a rate established by the potentiometer&rsquo;s deviation from the zero (center) position.</p>
@@ -42,35 +42,35 @@
 <p><strong>Step 5:&nbsp;</strong>Connect&nbsp;another 1 M&Omega; resistor in parallel with the input resistor (the resistor connecting the potentiometer wiper to the inverting terminal of the op amp). This will be half the integrator&rsquo;s input resistance. What effect does this have on the circuit&rsquo;s integration rate?</p>
 <p><strong>Step 6:&nbsp;</strong>Move the potentiometer until the op amp&rsquo;s output voltage is as close to zero as you can get it, and move as slowly as you can make it.</p>
 <p><strong>Step 7:&nbsp;</strong>Disconnect the integrator input from the potentiometer wiper terminal and connect it instead to the ground, as illustrated in Figures 3 and 4.&nbsp;</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/limiting-the-span-of-potentiometer-method-1.jpg" /></p>
-<h5><em><strong>Figure 3.</strong> Schematic diagram of the op amp integrator circuit with integrator input grounded.</em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Figure 3.</strong> Schematic diagram of the op amp integrator circuit with integrator input grounded.</em>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/integrator-circuit-illustration-1.jpg" /></p>
-<h5><em><strong>Figure 4.</strong> Breadboard implementation&nbsp;of the op amp integrator circuit with integrator input grounded.</em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Figure 4.</strong> Breadboard implementation&nbsp;of the op amp integrator circuit with integrator input grounded.</em>
+
 <p>Applying exactly zero voltage to the input of an integrator circuit should, ideally, cause the output voltage rate-of-change to be zero. When you make this change to the circuit, you should notice the output voltage remaining at a constant level or changing very slowly.</p>
 <p><strong>Step 8:&nbsp;</strong>With the integrator input still shorted to ground, short past the 1 M&Omega; resistor connecting the op amp&rsquo;s noninverting (+) input to ground, as illustrated in Figures 5 and 6.&nbsp;</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/limiting-the-span-of-potentiometer-method-2.jpg" /></p>
-<h5><em><strong>Figure 5.</strong>&nbsp;Schematic diagram of the op amp integrator circuit after shorting the grounding resistor</em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Figure 5.</strong>&nbsp;Schematic diagram of the op amp integrator circuit after shorting the grounding resistor</em>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/integrator-circuit-illustration-2.jpg" /></p>
-<h5><em><strong>Figure 6.</strong>&nbsp;Breadboard implementation&nbsp;of the op amp integrator circuit after shorting the grounding resistor</em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Figure 6.</strong>&nbsp;Breadboard implementation&nbsp;of the op amp integrator circuit after shorting the grounding resistor</em>
+
 <p>There should be no need for this resistor in an ideal op amp circuit, so by shorting past it, we will see what function it provides in this very real op amp circuit.&nbsp;</p>
 <p><strong>Step 9:&nbsp;</strong>Next. measure the output voltage. As soon as the grounding&nbsp;resistor is shorted with a jumper wire, the op amp&rsquo;s output voltage will start to change or drift. Ideally, this should not happen because the integrator circuit still has an input signal of zero volts. However, real operational amplifiers have a very small amount of current entering each input terminal called the bias current. These bias currents will <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-6/voltage-divider-circuits/" target="_blank">drop voltage</a> across any resistance in their path.</p>
 <p>Since the 1 M&Omega; input resistor conducts some amount of bias current regardless of input signal magnitude, it will drop voltage across its terminals due to bias current, thus offsetting&nbsp;the amount of signal voltage seen at the inverting terminal of the op amp. If the other (non-inverting) input is connected directly to the ground, as we have done here, this offset&nbsp;voltage incurred by voltage drop generated by bias current will cause the integrator circuit to slowly integrate&nbsp;as though it were receiving a very small input signal.</p>
 <p>The grounding&nbsp;resistor is better known as a compensating resistor because it compensates for voltage errors created by the&nbsp;bias&nbsp;current. Since the bias currents through each op amp input terminal are approximately equal to each other, an equal amount of resistance placed in the path of each bias current will produce approximately the same voltage drop. Equal voltage drops seen at the complementary inputs of an op amp cancel each other out, thus nulling the error otherwise induced by a bias current.</p>
 <p><strong>Step 10:&nbsp;</strong>Remove the jumper wire shorting past the compensating resistor and notice how the op amp output returns to a relatively stable state. It may still drift some, most likely due to bias voltage error in the op amp itself, but that is another subject altogether!</p>
-<p>&nbsp;</p>
-<h3>SPICE Simulation of the&nbsp;Op Amp Integrator Circuit</h3>
+
+## SPICE Simulation of the&nbsp;Op Amp Integrator Circuit
 <p>The circuit schematic of Figure 7&nbsp;uses a dependent voltage source (E) to simulate an op amp.&nbsp;</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/compensate-for-op-amp-bias-current-circuit.jpg" /></p>
-<h5><em><strong>Figure 7</strong>. SPICE circuit schematic with node numbers&nbsp;for simulation of the&nbsp;op amp integrator.</em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Figure 7</strong>. SPICE circuit schematic with node numbers&nbsp;for simulation of the&nbsp;op amp integrator.</em>
+
 <p>Netlist (make a text file containing the following text, verbatim):</p>
-<p>&nbsp;</p>
+
 <pre>
 DC integrator &#10;vinput 1 0 dc 0.05 &#10;r1 1 2 1meg &#10;c1 2 3 0.1u ic=0 &#10;e1 3 0 0 2 999k &#10;.tran 1 30 uic &#10;.plot tran v(1,0) v(3,0) &#10;.end </pre>

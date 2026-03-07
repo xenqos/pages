@@ -1,11 +1,11 @@
-<h1>Si Lab - Commutating Diode</h1>
-<h3>Project Overview</h3>
+# Si Lab - Commutating Diode
+## Project Overview
 <p><a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-3/introduction-to-diodes-and-rectifiers/" target="_blank">Diodes</a>&nbsp;are often used to&nbsp;mitigate&nbsp;<a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-3/inductor-commutating-circuits/" target="_blank">inductive kickback</a>&mdash;the high <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/voltage-current/" target="_blank">voltage</a> pulses&nbsp;produced when the direct current through an <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-15/magnetic-fields-and-inductance/" target="_blank">inductor</a> is interrupted.&nbsp;In electronics, <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-3/inductor-commutating-circuits/" target="_blank">commutation</a> refers to the reversal of voltage polarity or current direction. The purpose of a commutating diode is to act whenever the voltage reverses polarity.&nbsp; In this circuit, the voltage across the&nbsp;inductor of Figure 1 will reverse&nbsp;(commutate) when the current through it is interrupted.&nbsp;</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/commutating-diode-schematic-diagram.jpg" /></p>
-<h5><em><strong>Figure 1.</strong> Schematic diagram of the commutating diode experiment.</em></h5>
-<p>&nbsp;</p>
-<h3>Parts and Materials</h3>
+#### <em><strong>Figure 1.</strong> Schematic diagram of the commutating diode experiment.</em>
+
+## Parts and Materials
 <ul>
 <li>6 V battery</li>
 <li>Power <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-9/step-up-and-step-down-transformers/" target="_blank">transformer</a>, 120 VAC step-down to 12 VAC&nbsp;</li>
@@ -14,19 +14,19 @@
 <li>Two SPST (single-pole, single-throw)&nbsp;toggle <a href="https://www.allaboutcircuits.com/textbook/digital/chpt-4/switch-types/" target="_blank">switches</a> - household light switches are recommended for their low cost and durability</li>
 </ul>
 <p>A power transformer is specified, but any iron-core inductor will suffice, even the homemade inductor or transformer from the AC experiments chapter!&nbsp;</p>
-<p>&nbsp;</p>
-<h3>Learning Objectives</h3>
+
+## Learning Objectives
 <ul>
 <li>Review inductive kickback</li>
 <li>Learn how to suppress kickback&nbsp;using a diode</li>
 </ul>
-<p>&nbsp;</p>
-<h3>Instructions</h3>
+
+## Instructions
 <p><strong>Step 1:</strong> Assemble the circuit illustrated in Figures 1 and 2.&nbsp;</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/commutating-diode-illustration.jpg" /></p>
-<h5><em><strong>Figure 2.</strong> Implementation of the commutating diode experiment using terminal strips.</em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Figure 2.</strong> Implementation of the commutating diode experiment using terminal strips.</em>
+
 <p>When assembling the circuit, be careful of the diode&rsquo;s orientation. The cathode end of the <a href="https://www.allaboutcircuits.com/video-lectures/diode-characteristics-circuits/" target="_blank">diode</a> (the end marked with a single band) must face the positive (+) side of the battery. Additionally, the diode should be reverse-biased and nonconducting with switch #1 in the ON&nbsp;position.</p>
 <p>Use the high-voltage (120 V) winding of the transformer for the inductor coil.&nbsp;The primary winding of a step-down transformer has more inductance than the secondary winding and will give a greater lamp-flashing effect.</p>
 <p><strong>Step 2:&nbsp;</strong>Set switch #2 to the OFF&nbsp;position. This disconnects the diode from the circuit so that it has no effect.</p>

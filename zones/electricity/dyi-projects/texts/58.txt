@@ -1,13 +1,13 @@
-<h1>Si Lab - BJT Common-collector Voltage Follower</h1>
-<h3>Project Overview</h3>
+# Si Lab - BJT Common-collector Voltage Follower
+## Project Overview
 <p>In this project, you will construct the <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-5/voltage-follower/" target="_blank">voltage follower</a> circuit using a <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-4/bipolar-junction-transistors-bjt/" target="_blank">bipolar transistor</a>, as illustrated in Figure 1.&nbsp;</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/voltage-follower-schematic-diagram-1.jpg" /></p>
-<h5><em><strong>Figure 1.</strong> Schematic diagram of a BJT emitter-follower circuit with potentiometer input control.</em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Figure 1.</strong> Schematic diagram of a BJT emitter-follower circuit with potentiometer input control.</em>
+
 <p>The voltage follower is the safest and easiest transistor amplifier circuit to build.&nbsp;Its purpose is to provide approximately the same voltage to the load as what is input to the amplifier but at a much greater current. In other words, it has no voltage gain, but it does have a current gain. This configuration is also called a <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-4/common-collector-amplifier/" target="_blank">common-collector amplifier</a> because the collector of the BJT is connected to a power supply.</p>
-<p>&nbsp;</p>
-<h3>Parts and Materials</h3>
+
+## Parts and Materials
 <ul>
 <li>One NPN transistor&mdash;models <a href="https://www.farnell.com/datasheets/296640.pdf" target="_blank">2N2222</a> or <a href="https://my.centralsemi.com/datasheets/LSSGP078.PDF" target="_blank">2N3403</a> recommended</li>
 <li>Two 6 V&nbsp;batteries</li>
@@ -16,8 +16,8 @@
 </ul>
 <p>Beware that not all transistors share the same terminal designations, or pinouts, even if they share the same physical appearance. This will dictate how you connect the transistors together and to other components, so be sure to check the manufacturer&rsquo;s specifications (component datasheet), easily obtained from the manufacturer&rsquo;s website.&nbsp;</p>
 <p>Another thing to keep in mind is that it is possible for the transistor&rsquo;s package and even the manufacturer&rsquo;s datasheet to show incorrect terminal identification diagrams! Double-checking pin identities with your multimeter&rsquo;s <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-3/meter-check-of-a-diode/" target="_blank">diode check</a>&nbsp;function is highly recommended.&nbsp;For details on how to identify bipolar transistor terminals using a <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-8/multimeters/" target="_blank">multimeter</a>, consult the textbook page, <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-4/meter-check-transistor-bjt/" target="_blank">Meter Check of a Transistor (BJT)</a>,</p>
-<p>&nbsp;</p>
-<h3>Learning Objectives</h3>
+
+## Learning Objectives
 <ul>
 <li>Purpose of circuit <a href="https://www.allaboutcircuits.com/technical-articles/an-introduction-to-ground/" target="_blank">ground</a>&nbsp;when there is no actual connection to earth ground</li>
 <li>Using a <a href="https://eepower.com/resistor-guide/resistor-applications/shunt-resistor/" target="_blank">shunt resistor</a> to measure current with a <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-2/voltage-usage/" target="_blank">voltmeter</a></li>
@@ -25,26 +25,26 @@
 <li>Measure amplifier current gain</li>
 <li>Amplifier <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-14/impedance-transformation/" target="_blank">impedance transformation</a></li>
 </ul>
-<p>&nbsp;</p>
-<h3>Instructions</h3>
+
+## Instructions
 <p><strong>Step 1:&nbsp;</strong>Build the circuit shown in the schematic of Figure 1 and illustrated in Figure 2.</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/voltage-follower-illustration.jpg" /></p>
-<h5><em><strong>Figure 2.</strong> Breadboard implementation of a BJT emitter-follower circuit with potentiometer input control.</em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Figure 2.</strong> Breadboard implementation of a BJT emitter-follower circuit with potentiometer input control.</em>
+
 <p>Again, beware that the transistor you select for this experiment may not have the same terminal designations shown here, and so the <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/building-simple-resistor-circuits/" target="_blank">breadboard</a> layout shown in the illustration may not be correct for you. In the illustrations,&nbsp;all TO-92 package transistors have terminals labeled &ldquo;CBE&rdquo; (collector, base, and emitter) from left to right.&nbsp;This is correct for the model 2N2222 transistor and some others, <em>but not for all</em>; not even for all NPN-type transistors.&nbsp;As usual, check with the manufacturer for details on the particular component(s) you choose for a project.</p>
-<p>&nbsp;</p>
-<h4>Understanding Circuit Ground</h4>
+
+### Understanding Circuit Ground
 <p>Note that the negative (-) side of the power supply is shown in the schematic diagram of Figure 1&nbsp;to be connected to the <a href="https://www.allaboutcircuits.com/technical-articles/an-introduction-to-ground/" target="_blank">ground</a>, as indicated by the symbol in the lower-left corner of the diagram. This does not necessarily represent a connection to the actual earth.&nbsp;What it means is that this point in the circuit&mdash;and all points electrically common to it, as shown in Figure 3&mdash;constitutes the default reference point for all voltage measurements in the circuit.</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/voltage-follower-schematic-diagram-2.jpg" /></p>
-<h5><em><strong>Figure 3.</strong> Circuit ground is the default reference node for a circuit.</em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Figure 3.</strong> Circuit ground is the default reference node for a circuit.</em>
+
 <p>Since the&nbsp;<a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/voltage-current-practical-circuit/" target="_blank">voltage</a> is by necessity a quantity relative between two points, a &ldquo;common&rdquo; point of reference designated in a circuit gives us the ability to speak meaningfully of voltage at particular, single points in that circuit.&nbsp;For example, if we&nbsp;were to take the voltage at the base of the transistor (V<sub>B</sub>),&nbsp;it would mean the voltage measured between the transistor&rsquo;s base terminal and the negative side of the power supply (ground). This is demonstrated in Figure 4, with the red probe touching the base terminal and the black probe touching the ground.</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/voltage-follower-schematic-diagram-3.jpg" /></p>
-<h5><em><strong>Figure 4.</strong> Node voltages, like V<sub>B</sub>,&nbsp;are assumed to be referenced to circuit ground.</em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Figure 4.</strong> Node voltages, like V<sub>B</sub>,&nbsp;are assumed to be referenced to circuit ground.</em>
+
 <p>Normally, it is nonsense to speak of voltage <em>at</em> a single point, but having an implicit reference point (ground) for voltage measurements makes such statements meaningful.&nbsp;</p>
 <p><strong>Step 2: </strong>Measure the output voltage versus input voltage for several different potentiometer settings. The output voltage is the voltage across the load resistor voltage (or the emitter voltage&nbsp;between the emitter and circuit ground). The input voltage is the voltage at the potentiometer&rsquo;s wiper (voltage between the wiper and circuit ground).</p>
 <p>You should see a close correlation between these two voltages: one is just a little bit greater than the other (about 0.6 V or so). However,&nbsp;a change in the input voltage gives an almost equal change in the output voltage. The output follows the input, which is why it is called a&nbsp;voltage follower.</p>
@@ -53,16 +53,16 @@
 <p><strong>Step 4:&nbsp;</strong>For best precision, you may measure the resistance of each resistor rather than assume an exact value of 1 k&Omega;, but it really doesn&rsquo;t matter much for the purposes of this experiment. When resistors are used to take current measurements by translating&nbsp;a current into a corresponding voltage, they are often referred to as <em>shunt</em> resistors.</p>
 <p>You should expect to find huge differences between input and output currents for this amplifier circuit. In fact, it is not uncommon to experience current gains well in excess of 200 for a small-signal transistor operating at low current levels.&nbsp;This is the primary purpose of a voltage follower circuit: to boost the current capacity of a weak&nbsp;signal without altering its voltage.</p>
 <p>Another way of thinking of this circuit&rsquo;s function is in terms of <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-5/review-of-r-x-and-z/" target="_blank">impedance</a>.&nbsp;The input side of this amplifier accepts a voltage signal without drawing much current. The output side of this amplifier delivers the same voltage but at a current limited only by load resistance and the current-handling ability of the transistor.&nbsp;Cast in terms of impedance, we could say that this amplifier has a high input impedance (voltage dropped with the little current drawn) and a low output impedance (voltage dropped with almost unlimited current-sourcing capacity).</p>
-<p>&nbsp;</p>
-<h3>SPICE Simulation of the BJT Emitter Follower Circuit</h3>
+
+## SPICE Simulation of the BJT Emitter Follower Circuit
 <p>To simulate the BJT&nbsp;voltage follower circuit, we can add node numbers to the <a href="https://www.allaboutcircuits.com/technical-articles/understanding-schematics/" target="_blank">schematic</a> diagram, as shown in Figure 5, and use the <a href="https://www.allaboutcircuits.com/textbook/reference/chpt-7/introduction-to-spice/" target="_blank">SPICE simulation</a> netlist and input deck that follows.</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/voltage-follower-schematic-with-spice-node-numbers.jpg" /></p>
-<h5><em><strong>Figure 5.</strong>&nbsp;Adding node numbers to the emitter follower amplifier for SPICE simulation.</em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Figure 5.</strong>&nbsp;Adding node numbers to the emitter follower amplifier for SPICE simulation.</em>
+
 <p>Netlist (make a text file containing the following text, verbatim):</p>
 <pre>
 BJT Voltage Follower &#10;v1 1 0 &#10;rpot1 1 2 5k &#10;rpot2 2 0 5k &#10;rbase 2 3 1k &#10;rload 4 0 1k &#10;q1 1 3 4 mod1 &#10;.model mod1 npn bf=200 &#10;.dc v1 12 12 1 &#10;.print dc v(2,0) v(4,0) v(2,3) &#10;.end </pre>
-<p>&nbsp;</p>
+
 <p>When this simulation is run through the SPICE&nbsp;program, it shows an input voltage of 5.937 V and an output voltage of 5.095 V, with an input current of 25.35 &micro;A (2.535E-02 V dropped across the 1 k&Omega; R<sub>base</sub> resistor). Output current is, of course, 5.095 mA, inferred from the output voltage of 5.095 V dropped across a load resistance of exactly 1 k&Omega;.</p>
 <p>You may change the input voltage of&nbsp;this circuit by adjusting the values of R<sub>pot1</sub> and R<sub>pot2</sub>, always keeping their sum at 10 k&Omega;.</p>

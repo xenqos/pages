@@ -1,51 +1,51 @@
-<h1>Simulating JFET Circuits Using LTspice</h1>
+# Simulating JFET Circuits Using LTspice
 <p>The <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-5/junction-field-effect-transistors-jfet/" target="_blank">JFET</a>&nbsp;is less prevalent than the <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-2/insulated-gate-field-effect-transistors-mosfet/" target="_blank">metal&ndash;oxide&ndash;semiconductor field-effect transistor (MOSFET)</a>. However, there are many integrated and discrete applications where JFETs are better suited. For example, JFETs can be ideal for audio applications because of their remarkably low noise. When designing circuits based around JFETs, simulation tools such as LTspice can be used to verify the functionality of the circuit.</p>
 <p>This chapter provides a basic walkthrough of using LTspice for simulating circuits containing JFETs, and, assuming&nbsp;that the reader has a basic familiarity with LTspice, only key concepts related to JFETs will be discussed.</p>
-<p>&nbsp;</p>
-<h3>JFET Equations Overview and the Shockley&nbsp;Equation</h3>
+
+## JFET Equations Overview and the Shockley&nbsp;Equation
 <p>First, depending on the gate-source&nbsp;and drain-source&nbsp;voltages (v<sub>GS</sub> and v<sub>DS</sub>), JFETs can operate in either the triode or saturation region. As an example, the characteristic curves of an n-channel JFET with I<sub>DSS</sub> = 8 mA and V<sub>P&nbsp;</sub>= -4 V are shown in Figure 1.</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/thumbnails/jfet_ltspice_textbook_figure_1.png" /></p>
-<h5><em><strong>Figure 1. </strong>N-channel JFET I-V characteristic curves.</em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Figure 1. </strong>N-channel JFET I-V characteristic curves.</em>
+
 <p>For a given gate-source voltage, when V<sub>DS</sub> is below the threshold value specified by the orange curve, the JFET is in the triode region. The textbook equation for the drain current of an n-channel JFET in the triode region is shown in Equation 1.</p>
-<p>&nbsp;</p>
+
 <p>$$i_D = \frac{I_{DSS}}{V_P^2} \Big ( 2(v_{GS}-V_P)-v_{DS} \Big )v_{DS} \quad when \quad \begin{cases} v_{GS} &gt; V_P \\ v_{DS} \leq v_{GS}-V_P \end{cases}$$</p>
-<h5><em><strong>Equation 1.</strong></em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Equation 1.</strong></em>
+
 <p>For v<sub>DS</sub> values above the orange curve, the transistor enters the saturation region. Neglecting the channel length modulation effect, the drain current of the n-channel JFET in the saturation region is given via Equation 2.</p>
-<p>&nbsp;</p>
+
 <p>$$i_D=I_{DSS} \big ( 1- \frac{v_{GS}}{V_P} \big )^2 \quad when \quad \begin{cases} v_{GS} &gt; V_P \\ v_{DS} \geq v_{GS}-V_P \end{cases}$$</p>
-<h5><em><strong>Equation 2.</strong></em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Equation 2.</strong></em>
+
 <p>Equation 2 is known as Shockley&rsquo;s equation. With the channel length modulation taken into account, the saturation current is modified to become Equation 3.</p>
-<p>&nbsp;</p>
+
 <p>$$i_D=I_{DSS} \big ( 1- \frac{v_{GS}}{V_P} \big )^2 \big ( 1+ \lambda v_{DS} \big )$$</p>
-<h5><em><strong>Equation 3.</strong></em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Equation 3.</strong></em>
+
 <p>In this equation, the channel length modulation term shows how the saturation region current changes with the drain-source voltage, v<sub>DS</sub>. Keep in mind&nbsp;that, under normal operation, the gate-channel junction of the JFET is reverse-biased, and therefore, for an n-channel JFET, v<sub>GS&nbsp;</sub>&le; 0.</p>
-<p>&nbsp;</p>
-<h3>JFET SPICE Models</h3>
+
+## JFET SPICE Models
 <p>The schematic in Figure 2 shows how <a href="https://www.allaboutcircuits.com/textbook/reference/chpt-7/introduction-to-spice/" target="_blank">SPICE</a> models an n-channel JFET.</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/thumbnails/jfet_ltspice_textbook_figure_2.png" /></p>
-<h5><em><strong>Figure 2.</strong> A SPICE schematic representation of an n-channel JFET.</em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Figure 2.</strong> A SPICE schematic representation of an n-channel JFET.</em>
+
 <p>From the basic operation of the JFET, we can expect a current source to appear between the drain and source terminals. Depending on the region of operation, the appropriate equation&mdash;for example, Equation 1 or 3&mdash;gives the value of the drain current, i<sub>D</sub>. Resistors R<sub>D</sub> and R<sub>S</sub> model the ohmic resistances that appear in series with the drain and source terminals of the physical implementation of the device. Additionally, the gate-channel PN junction is modeled by gate-drain and gate-source diodes, D<sub>GD</sub> and D<sub>GS</sub>, while the capacitors in parallel with these diodes&mdash;C<sub>GD</sub> and C<sub>GS</sub>&mdash;model the parasitic capacitances of these junctions. Keep in mind&nbsp;that the capacitance of a reverse-biased PN junction is bias dependent. In the above model, C<sub>GD</sub> and C<sub>GS</sub> correspond to the zero-bias condition.&nbsp;&nbsp;</p>
-<p>&nbsp;</p>
-<h3>Simulating JFET Circuits Using LTspice</h3>
+
+## Simulating JFET Circuits Using LTspice
 <p>To simulate a circuit containing JFETs, different JFET parameters&nbsp;need to be defined. This can be done by a SPICE .model statement. For example, the <a href="https://www.allaboutcircuits.com/technical-articles/basic-circuit-simulation-with-ltspice/" target="_blank">LTspice</a> model of the <a href="https://www.mouser.com/datasheet/2/68/2n3819-31474.pdf" target="_blank">2N3819</a>, an n-channel JFET from Vishay, is given below:&nbsp;</p>
-<p>&nbsp;</p>
+
 <pre>
 .model 2N3819 NJF(Beta=1.304m Betatce=-.5 Rd=1 Rs=1 Lambda=2.25m Vto=-3 Vtotc=-2.5m Is=33.57f Isr=322.4f N=1 Nr=2 Xti=3 Alpha=311.7u Vk=243.6 Cgd=1.6p M=.3622 Pb=1 Fc=.5 Cgs=2.414p Kf=9.882E-18 Af=1 mfg=Vishay)</pre>
-<p>&nbsp;</p>
+
 <p>If you look at the parameters inside the parentheses, you&rsquo;ll recognize some familiar ones, such as C<sub>GD</sub>, C<sub>GS</sub>, R<sub>D</sub>, and R<sub>S</sub>, that use consistent names with those of the schematic in Figure 2. Also, the parameter Lambda accounts for the channel length modulation effect. However, the two most basic parameters of the JFET&mdash;namely I<sub>DSS</sub> and V<sub>P</sub>&mdash;are not included in the list of parameters. The pinch-off voltage is actually defined as VTO (or Vto)&nbsp;in SPICE models, which is -3 V in the above example (Vto&nbsp;= -3). I<sub>DSS</sub> is also defined by the Beta parameter according to Equation 4.</p>
-<p>&nbsp;</p>
+
 <p>&nbsp; $$Beta = \frac{I_{DSS}}{V_P^2}$$</p>
-<h5><em><strong>Equation 4.</strong></em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Equation 4.</strong></em>
+
 <p>From here, SPICE uses the following equations to find the drain current i<sub>D</sub> from v<sub>GS</sub> and v<sub>DS</sub>, which can be broken down into Equation 5.</p>
-<p>&nbsp;</p>
+
 <p>$$i_D=<br />
 \begin{cases}<br />
 <br />
@@ -55,19 +55,19 @@ Beta \Big ( 2(v_{GS}-V_T)v_{DS}-v_{DS}^2 \Big ) \times \big ( 1+ \lambda v_{DS} 
 <br />
 Beta \big ( v_{GS}-V_T \big ) ^2 \times \big ( 1+ \lambda v_{DS} \big ) &amp; v_{GS} &gt; V_T \text{ } and \text{ } v_{DS} \geq v_{GS}-V_T<br />
 \end{cases}$$</p>
-<h5><em><strong>Equation 5.</strong></em></h5>
+#### <em><strong>Equation 5.</strong></em>
 <p><br />
 &nbsp;</p>
 <p>In the above equations, SPICE parameters Vto and Lambda are denoted by V<sub>T</sub> and &lambda; for simplicity. Note that these equations are the same as Equations 1 and 3, except that the triode region equation now includes an additional term to account for the channel length modulation.&nbsp;</p>
-<p>&nbsp;</p>
-<h3>Example&mdash;Using LTspice to Find the DC Operating Point</h3>
+
+## Example&mdash;Using LTspice to Find the DC Operating Point
 <p>In this section, we&#39;ll use LTspice to find the DC operating point of the circuit in Figure 3.</p>
 <ul>
 </ul>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/thumbnails/jfet_ltspice_textbook_figure_3.png" /></p>
-<h5><em><strong>Figure 3.</strong> A simple JFET biasing circuit.</em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Figure 3.</strong> A simple JFET biasing circuit.</em>
+
 <p>In this example, we&#39;ll be using the&nbsp;JFET parameters:</p>
 <ul>
 <li>V<sub>P</sub> = -2 V</li>
@@ -75,66 +75,66 @@ Beta \big ( v_{GS}-V_T \big ) ^2 \times \big ( 1+ \lambda v_{DS} \big ) &amp; v_
 <li>&lambda; = 0.02 V<sup>-1</sup></li>
 </ul>
 <p>Now that we&#39;ve established the basics, next is hand calculations! Under normal operating conditions, the gate-channel junction of the JFET is reverse-biased, and the gate current is negligible. Therefore, the gate voltage is determined by the resistive voltage divider formed by R<sub>1</sub> and R<sub>2</sub>, leading to:</p>
-<p>&nbsp;</p>
+
 <p>$$v_G = \frac{1 M \Omega}{1 M \Omega + 4 M \Omega}\times 20 \text{ }V=4 \text{ }V$$</p>
-<p>&nbsp;</p>
+
 <p>Having v<sub>G</sub>, we can express the gate-source voltage as Equation 6</p>
-<p>&nbsp;</p>
+
 <p>$$v_{GS} = v_{G}-R_4 i_{D}=4- 2.5 i_{D}$$</p>
-<h5><em><strong>Equation 6.</strong></em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Equation 6.</strong></em>
+
 <p>Assuming that the transistor is in the saturation region, i<sub>D</sub>&nbsp;and v<sub>GS</sub> should also satisfy Equation 2; you can neglect channel length modulation for simplicity. Substituting I<sub>DSS&nbsp;</sub>= 8 mA and V<sub>P&nbsp;</sub>= -2 V into this equation produces Equation 7.</p>
-<p>&nbsp;</p>
+
 <p>$$i_D=8 \big ( 1+ \frac{v_{GS}}{2} \big )^2$$</p>
-<h5><em><strong>Equation 7.</strong></em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Equation 7.</strong></em>
+
 <p>The common solutions of Equations 7 and 6 are</p>
-<p>&nbsp;</p>
+
 <p>$$i_{D}=2 \text{ }mA, \text{ } v_{GS}=-1 \text{ }V$$</p>
-<p>&nbsp;</p>
+
 <p>and</p>
-<p>&nbsp;</p>
+
 <p>$$i_{D}=2.88 \text{ }mA, \text{ } v_{GS}=-3.2 \text{ }V$$</p>
-<p>&nbsp;</p>
+
 <p>Note that only the first solution is valid because, with the second one, v<sub>GS</sub> is more negative than the pinch-off voltage,&nbsp;and we know that the transistor is in the cut-off region for v<sub>GS</sub> &le; V<sub>P</sub>. The above analysis is based on the assumption that the transistor is in the saturation region. To verify this, we should ensure that v<sub>DS</sub> &ge; v<sub>GS</sub> - V<sub>P</sub>. By applying <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-6/kirchhoffs-voltage-law-kvl/" target="_blank">Kirchhoff&rsquo;s voltage law</a> to the drain-source brach, we get:</p>
-<p>&nbsp;</p>
+
 <p>$$v_{DS}=V_{dd}-(R_3 + R_4) \times i_{D}=20-(2.5+2.5)\times 2 =10 \text{ }V$$</p>
-<p>&nbsp;</p>
+
 <p>This is greater than the minimum v<sub>DS</sub> for saturation, which is v<sub>GS</sub> - V<sub>P</sub> = -1-(-2) = 1 V. Thus, the analysis is valid.</p>
 <p>Next, we&rsquo;ll use LTspice to find the operating point of the above circuit.&nbsp;</p>
-<p>&nbsp;</p>
-<h3>Adding a JFET to Your Schematic</h3>
+
+## Adding a JFET to Your Schematic
 <p>The LTspice schematic is shown below in Figure 4.</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/thumbnails/jfet_ltspice_textbook_figure_4.png" /></p>
-<h5><em><strong>Figure 4. </strong>LTspice emulation schematic of the JFET biasing circuit.</em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Figure 4. </strong>LTspice emulation schematic of the JFET biasing circuit.</em>
+
 <p>To add the n-channel JFET, click on the &ldquo;Component&rdquo; button in the LTspice window and type &ldquo;njf&rdquo; (Figure 5).</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/thumbnails/jfet_ltspice_textbook_figure_5.png" /></p>
-<h5><em><strong>Figure 5.</strong> LTspice component selection window.</em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Figure 5.</strong> LTspice component selection window.</em>
+
 <p>LTspice includes the model of some common JFET transistors from different vendors. These models are obtained from the device&#39;s&nbsp;datasheet specifications. If you&#39;re using one of these devices, you can simply select the part number you need. To do this, right-click on the JFET symbol, click &ldquo;Pick New JFET,&rdquo;&nbsp;and choose your device from the list (Figure 6).</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/thumbnails/jfet_ltspice_textbook_figure_6.png" /></p>
-<h5><em><strong>Figure 6.</strong> LTspice JFET model selection window.</em></h5>
-<p>&nbsp;</p>
-<h4>Adding Third-party Models</h4>
+#### <em><strong>Figure 6.</strong> LTspice JFET model selection window.</em>
+
+### Adding Third-party Models
 <p>If your device is not included in the list or you simply want to experiment with some arbitrary parameter values, you can use a .model statement to describe your JFET to LTspice. To do this, hold down the control key and right-click on the JFET symbol. The new window allows you to edit the component attributes. Here you can enter an arbitrary name for your model in the &ldquo;Value&rdquo; field of the symbol. In our example, the model name is &ldquo;MyNJFET&rdquo; (Figure 7).</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/thumbnails/jfet_ltspice_textbook_figure_7.png" /></p>
-<h5><em><strong>Figure 7.</strong> LTspice component attribute editor window.</em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Figure 7.</strong> LTspice component attribute editor window.</em>
+
 <p>Lastly, click on the SPICE directive button to add the .model statement. Figure 8 shows the .model statement for our example.</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/thumbnails/jfet_ltspice_textbook_figure_8.png" /></p>
-<h5><em><strong>Figure 8.</strong> Adding a .model statement to an LTspice schematic.</em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Figure 8.</strong> Adding a .model statement to an LTspice schematic.</em>
+
 <p>The parameters Lambda and Vto are straightforward. For Beta, we substitute V<sub>P&nbsp;</sub>= -2 V and I<sub>DSS&nbsp;</sub>= 8 mA into Equation 4, leading to Beta = 2 m. As discussed earlier, there are several other device parameters that can be defined in the .model statement. The parameters that are not specified are assigned some default values by SPICE. Here, we can add other components to the schematic and use the .op SPICE derivative to find the operating point of the circuit. On execution, the following results are produced, shown in Figure 9.</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/thumbnails/jfet_ltspice_textbook_figure_9.png" /></p>
-<h5><em><strong>Figure 9. </strong>Operating point simulation output for the JFET biasing circuit.</em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Figure 9. </strong>Operating point simulation output for the JFET biasing circuit.</em>
+
 <p>As you can&nbsp;see, the drain current and the gate-source voltage are i<sub>D&nbsp;</sub>&cong; 2.03 mA and v<sub>GS</sub> = v<sub>G</sub> - v<sub>S</sub> &cong; -1.08 V. These results should agree well with our hand calculations. The discrepancy between the simulation and calculations can partly be attributed to the fact that our hand calculations didn&rsquo;t account for the channel length modulation effect. In the next sections of this chapter, we&rsquo;ll explore JFET amplifiers and learn about some other useful features of LTspice.</p>
-<p>&nbsp;</p>
+
 <p><em>This textbook page was contributed by <a href="https://www.allaboutcircuits.com/author/dr-steve-arar">Dr. Steve Arar</a></em></p>

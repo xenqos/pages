@@ -1,10 +1,10 @@
-<h1>Digital Lab - Introduction</h1>
-<h3>Overview</h3>
+# Digital Lab - Introduction
+## Overview
 <p>These <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-7/introduction-to-digital-integrated-circuits/" target="_blank">digital circuit</a> projects are designed to be easy to follow, relatively inexpensive to build, educational, and even fun.&nbsp;Each Digital Lab project includes step-by-step instructions, a parts list, schematic diagrams, and&nbsp;illustrations of the completed projects similar to the example of&nbsp;Figure 1.</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/led-sequencer-illustration.jpg" /></p>
-<h5><em><strong>Figure 1. </strong>Example illustration of a completed digital circuit constructed on a breadboard</em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Figure 1. </strong>Example illustration of a completed digital circuit constructed on a breadboard</em>
+
 <p>Digital circuits deal with signals restricted to two states representing the <a href="https://www.allaboutcircuits.com/textbook/digital/chpt-6/digital-logic-functions/" target="_blank">logic</a> values 0 and 1. Typically, logic 0 is the extremely lower limit of the supply voltages (0 V), while the logic 1 value is represented by the upper limit of the supply <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/voltage-current/" target="_blank">voltage</a>&nbsp;(V<sub>DD</sub>).</p>
 <p>This stands in contrast to <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-6/introduction-analog-integrated-circuits/" target="_blank">analog circuits</a>, in which signals are free to vary continuously between the limits imposed by the power supply voltage and circuit <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/resistance/" target="_blank">resistances</a>. Digital circuits find use in <a href="https://www.allaboutcircuits.com/technical-articles/boolean-basics/" target="_blank">true/false&nbsp;logical operations</a> and digital computation in countless applications, including:</p>
 <ul>
@@ -14,23 +14,23 @@
 <li>Automobile control systems</li>
 <li>Wireless communication networks, and so much more!</li>
 </ul>
-<p>&nbsp;</p>
-<h3>Digital Integrated Circuits</h3>
+
+## Digital Integrated Circuits
 <p>The circuits in the DC Lab chapter use IC, or integrated circuit, components that often called "chips". Such components are actually networks of interconnected components manufactured on a single wafer of <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-2/semiconductor-manufacturing-techniques/" target="_blank">semiconducting material</a>.&nbsp;Integrated circuits providing many pre-engineered functions are available at low cost, benefitting students, hobbyists, and professional circuit designers alike. Most ICs provide the same functionality as <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-5/introduction-to-discrete-semiconductor-circuits/" target="_blank">discrete&nbsp;semiconductor circuits</a> at higher levels of reliability and at a fraction of the cost.</p>
-<p>&nbsp;</p>
-<h3>CMOS Circuit Projects</h3>
+
+## CMOS Circuit Projects
 <p>In most of the DC Lab&nbsp;projects, we will primarily use <a href="https://www.allaboutcircuits.com/textbook/digital/chpt-3/cmos-gate-circuitry/" target="_blank">complementary metal-oxide semiconductor (CMOS)</a> technology, as this form of IC design allows for a broad range of power supply voltage while maintaining generally low power consumption levels.&nbsp;Though CMOS circuitry is susceptible to damage from <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/static-electricity/" target="_blank">static electricity</a> (high voltages will puncture the insulating barriers in the <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-2/insulated-gate-field-effect-transistors-mosfet/" target="_blank">MOSFET</a> transistors), modern CMOS ICs are far more tolerant of electrostatic discharge than the CMOS ICs of the past, reducing the risk of chip failure by mishandling.</p>
 <p>Proper handling of CMOS involves using anti-static foam for storage and transport of ICs, and measures to prevent static charge from building up on your body (using a grounding wrist strap or frequently touching a grounded object).</p>
-<p>&nbsp;</p>
-<h3>TTL Circuit Projects</h3>
+
+## TTL Circuit Projects
 <p>Circuits using <a href="https://www.allaboutcircuits.com/textbook/digital/chpt-3/not-gate/" target="_blank">transistor-to-transistor logic TTL technology</a> require a regulated power supply voltage of 5 volts and will not tolerate any substantial deviation from this voltage level. Any TTL circuits in this chapter will be adequately labeled as such, and it will be expected that you realize its unique power supply requirements.</p>
-<p>&nbsp;</p>
-<h3>Using Breadboards for Digital Circuits</h3>
+
+## Using Breadboards for Digital Circuits
 <p>When building digital circuits using IC chips,&nbsp;it is highly recommended that you use a <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/building-simple-resistor-circuits/" target="_blank">breadboard</a> with power supply rail connections along the length of the top and bottom, as illustrated in Figure 1.&nbsp;</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/breadboard-illustration.jpg" /></p>
-<h5><em><strong>Figure 1.</strong> Recommended breadboard power and ground rails for digital circuit projects.</em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Figure 1.</strong> Recommended breadboard power and ground rails for digital circuit projects.</em>
+
 <p>These power rails are sets of holes in the breadboard that are electrically common along the entire length of the board. Connect one rail to the positive terminal of a battery and the other rail to the negative terminal. Then,&nbsp;DC power will be available to any area of the breadboard via connection through short jumper wires.</p>
 <p>Some breadboards will have a pair of power rails at the top and bottom to allow you to easily route both power and ground the full length of each side.&nbsp;With so many of these integrated circuits having &ldquo;reset,&rdquo; &ldquo;enable,&rdquo; and &ldquo;disable&rdquo; terminals needing to be maintained in a &ldquo;high&rdquo; or &ldquo;low&rdquo; state, not to mention the V<sub>DD</sub> (or V<sub>CC</sub>) and ground power terminals which require connection to the power supply, having both terminals of the power supply readily available for connection at any point along the board&rsquo;s length is very useful.</p>
 <p>Most breadboards that I have seen have these power supply rail&nbsp;holes, but some do not. In some of the other electronics projects in this textbook volume, I&rsquo;ve illustrated circuits using a breadboard lacking this feature to show how it isn&rsquo;t absolutely necessary.&nbsp;However, digital circuits seem to require more connections to the power supply than other types of breadboard circuits, making this feature more than just a convenience.</p>

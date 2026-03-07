@@ -1,5 +1,5 @@
-<h1>Analysis Techniques for Series Parallel Resistor Circuits</h1>
-<h3>Guidelines to Series-Parallel Combination Circuit Analysis</h3>
+# Analysis Techniques for Series Parallel Resistor Circuits
+## Guidelines to Series-Parallel Combination Circuit Analysis
 <p>The goal of <a href="https://www.allaboutcircuits.com/video-lectures/series-parallel-circuits/" target="_blank">series-parallel resistor circuit</a> analysis is to be able to determine all voltage drops, currents, and power dissipations in a circuit. The general strategy to accomplish this goal is as follows:</p>
 <ul>
 <li><strong>Step 1:</strong> Assess which resistors in a circuit are connected together in simple series or simple parallel.</li>
@@ -11,11 +11,11 @@
 <li><strong>Step 7:</strong> Repeat steps 5 and 6 until all values for voltage and current are known in the original circuit configuration. Essentially, you will proceed step-by-step from the simplified version of the circuit back into its original, complex form, plugging in values of voltage and current where appropriate until all values of voltage and current are known.</li>
 <li><strong>Step 8:</strong> Calculate power dissipations from known <a href="https://www.allaboutcircuits.com/video-lectures/electrical-quantities-a/" target="_blank">voltage, current, and/or resistance</a> values.</li>
 </ul>
-<h3>Example of Series-Parallel Combination Circuit Analysis</h3>
+## Example of Series-Parallel Combination Circuit Analysis
 <p>This may sound like an intimidating process, but its much easier understood through example than through description.</p>
 <p><img src="/uploads/articles/series-parallel-combination-circuits-image2.jpg" /></p>
 <p><img src="/uploads/articles/elements-of-series-and-parallel-circuit-table1.jpg" /></p>
-<h3>Calculating Parallel Resistances</h3>
+## Calculating Parallel Resistances
 <p>In the example circuit above, R<sub>1</sub> and R<sub>2</sub> are connected in a simple parallel arrangement, as are R<sub>3</sub> and R<sub>4</sub>. Having been identified, these sections need to be converted into equivalent single <a href="https://www.allaboutcircuits.com/video-lectures/electronic-components-resistors/" target="_blank">resistors</a>, and the circuit re-drawn:</p>
 <p><img src="/uploads/articles/calculating-parallel-resitances-image1.jpg" /></p>
 <p>The double slash (//) symbols represent &ldquo;parallel&rdquo; to show that the equivalent resistor values were calculated using the 1/(1/R) formula. The 71.429 &Omega; resistor at the top of the circuit is the equivalent of R<sub>1</sub> and R<sub>2</sub> in parallel with each other. The 127.27 &Omega; resistor at the bottom is the equivalent of R<sub>3</sub> and R<sub>4</sub> in parallel with each other.</p>
@@ -25,7 +25,7 @@
 <p>Now, we can redraw the circuit as a single equivalent resistance and add the total resistance figure to the rightmost column of our table. Note that the &ldquo;Total&rdquo; column has been relabeled (R<sub>1</sub>//R<sub>2</sub>&mdash;R<sub>3</sub>//R<sub>4</sub>) to indicate how it relates electrically to the other columns of figures. The &ldquo;&mdash;&rdquo; symbol is used here to represent &ldquo;series,&rdquo; just as the &ldquo;//&rdquo; symbol is used to represent &ldquo;parallel.&rdquo;</p>
 <p><img src="/uploads/articles/simple-series-configuration.jpg" /></p>
 <p><img src="/uploads/articles/elements-of-series-and-parallel-circuit-table3.jpg" /></p>
-<h3>Calculating for Current and Voltages</h3>
+## Calculating for Current and Voltages
 <p>Now, total circuit current can be determined by applying <a href="https://www.allaboutcircuits.com/video-lectures/electrical-quantities-b/" target="_blank">Ohm&rsquo;s Law</a> (I=E/R) to the &ldquo;Total&rdquo; column in the table:</p>
 <p><img src="/uploads/articles/elements-of-series-and-parallel-circuit-table4.jpg" /></p>
 <p>Back to our equivalent circuit drawing, our total current value of 120.78 milliamps is shown as the only current here:</p>
@@ -42,11 +42,11 @@
 <p><img src="/uploads/articles/elements-of-series-and-parallel-circuit-table5.jpg" /></p>
 <p>Finally, the original section of the table (columns R<sub>1</sub> through R<sub>4</sub>) is complete with enough values to finish. Applying Ohm&rsquo;s Law to the remaining vertical columns (I=E/R), we can determine the currents through R<sub>1</sub>, R<sub>2</sub>, R<sub>3</sub>, and R<sub>4</sub> individually:</p>
 <p><img src="/uploads/articles/elements-of-series-and-parallel-circuit-table7.jpg" /></p>
-<h3>Placing Voltage and Current Values into Diagrams</h3>
+## Placing Voltage and Current Values into Diagrams
 <p>Having found all voltage and current values for this circuit, we can show those values in the schematic diagram as such:</p>
 <p><img src="/uploads/articles/schematic-diagram3.jpg" /></p>
 <p>As a final check of our work, we can see if the calculated current values add up as they should to the total. Since R<sub>1</sub> and R<sub>2</sub> are in parallel, their combined currents should add up to the total of 120.78 mA. Likewise, since R<sub>3</sub> and R<sub>4</sub> are in parallel, their combined currents should also add up to the total of 120.78 mA. You can check for yourself to verify that these figures do add up as expected.</p>
-<h3>Using SPICE to Check Calculated Values</h3>
+## Using SPICE to Check Calculated Values
 <p>A computer simulation can also be used to verify the accuracy of these figures. The following SPICE analysis will show all resistor voltages and currents (note the current-sensing vi1, vi2, . . . &ldquo;dummy&rdquo; voltage sources in series with each resistor in the netlist, necessary for the SPICE computer program to track current through each path). These voltage sources will be set to have values of zero volts each so they will not affect the circuit in any way.</p>
 <p><img src="/uploads/articles/schematic-diagram2.jpg" /></p>
 <pre>

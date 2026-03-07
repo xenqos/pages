@@ -1,15 +1,15 @@
-<h1>High Voltage Ohmmeters</h1>
+# High Voltage Ohmmeters
 <p>Most ohmmeters of the design shown in the previous section utilize a battery of relatively low voltage, usually nine volts or less. This is perfectly adequate for measuring resistances under several mega-ohms (M&Omega;), but when extremely high resistances need to be measured, a 9-volt battery is insufficient for generating enough <a href="https://www.allaboutcircuits.com/video-lectures/basic-requirements-for-current/" target="_blank">current</a> to actuate an electromechanical meter movement.</p>
 <p>Also, as discussed in an earlier chapter, resistance is not always a stable (linear) quantity. This is especially true of non-metals. Recall the graph of current overvoltage for a small air gap (less than an inch):</p>
 <p><img src="/uploads/articles/current-over-voltage-graph.jpg" /></p>
 <p>While this is an extreme example of nonlinear conduction, other substances exhibit similar insulating/conducting properties when exposed to high voltages. Obviously, an ohmmeter using a low-voltage battery as a source of power cannot measure resistance at the ionization potential of a gas, or at the breakdown voltage of an insulator. If such resistance values need to be measured, nothing but a high-voltage ohmmeter will suffice.</p>
-<h3>Simple High-Voltage Ohmmeter</h3>
+## Simple High-Voltage Ohmmeter
 <p>The most direct method of high-voltage resistance measurement involves simply substituting a higher voltage battery in the same basic design of ohmmeter investigated earlier:</p>
 <p><img src="/uploads/articles/simple-high-voltage-ohmmeter.jpg" /></p>
 <p>Knowing, however, that the resistance of some materials tends to change with applied voltage, it would be advantageous to be able to adjust the voltage of this ohmmeter to obtain resistance measurements under different conditions:</p>
 <p><img src="/uploads/articles/resistance-measurements-ohmmeter.jpg" /></p>
 <p>Unfortunately, this would create a calibration problem for the meter. If the meter movement deflects full-scale with a certain amount of current through it, the full-scale range of the meter in ohms would change as the source voltage changed. Imagine connecting a stable resistance across the test leads of this ohmmeter while varying the source voltage: as the voltage is increased, there will be more current through the meter movement, hence a greater amount of deflection. What we really need is a meter movement that will produce a consistent, stable deflection for any stable resistance value measured, regardless of the applied voltage.</p>
-<h3>Megger Meter</h3>
+## Megger Meter
 <p>Accomplishing this design goal requires a special meter movement, one that is peculiar to <em>megohmmeters</em>, or <em>meggers</em>, as these instruments are known.</p>
 <p><img src="/uploads/articles/megger-movement.jpg" /></p>
 <p>The numbered, rectangular blocks in the above illustration are cross-sectional representations of wire coils. These three coils all move with the needle mechanism. There is no spring mechanism to return the needle to a set position. When the movement is unpowered, the needle will randomly &ldquo;float.&rdquo; The coils are electrically connected like this:</p>
@@ -23,7 +23,7 @@
 <p>A simple hand-crank megger is shown in this photograph:</p>
 <p><img src="/uploads/articles/simple-hand-crank-megger.jpg" /></p>
 <p>Some meggers are battery-powered to provide greater precision in output voltage. For safety reasons these meggers are activated by a momentary-contact pushbutton switch, so the switch cannot be left in the &ldquo;on&rdquo; position and pose a significant shock hazard to the meter operator.</p>
-<h3>Real Meggers</h3>
+## Real Meggers
 <p>Real meggers are equipped with three connection terminals, labeled <em>Line</em>, <em>Earth</em>, and <em>Guard</em>. The schematic is quite similar to the simplified version shown earlier:</p>
 <p><img src="/uploads/articles/real-meggers-schematic.jpg" /></p>
 <p><a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/resistance/" target="_blank">Resistance</a> is measured between the Line and Earth terminals, where current will travel through coil 1. The &ldquo;Guard&rdquo; terminal is provided for special testing situations where one resistance must be isolated from another. Take for instance this scenario where the insulation resistance is to be tested in a two-wire cable:</p>
@@ -38,6 +38,6 @@
 <p><img src="/uploads/articles/circuit-schematic-diagram.jpg" /></p>
 <p>Connecting the &ldquo;Guard&rdquo; terminal to the first conductor places the two conductors at almost equal potential. With little or no voltage between them, the insulation resistance is nearly infinite, and thus there will be no current <em>between</em> the two conductors. Consequently, the megger&rsquo;s resistance indication will be based exclusively on the current through the second conductor&rsquo;s insulation, through the cable sheath, and to the wire wrapped around, not the current leaking through the first conductor&rsquo;s insulation.</p>
 <p>Meggers are field instruments: that is, they are designed to be portable and operated by a technician on the job site with as much ease as a regular ohmmeter. They are very useful for checking high-resistance &ldquo;short&rdquo; failures between wires caused by wet or degraded insulation. Because they utilize such high voltages, they are not as affected by stray voltages (voltages less than 1 volt produced by electrochemical reactions between conductors, or &ldquo;induced&rdquo; by neighboring magnetic fields) as ordinary ohmmeters.</p>
-<h3>Hi-Pot Testers</h3>
+## Hi-Pot Testers
 <p>For a more thorough test of wire insulation, another high-voltage ohmmeter commonly called a <em>hi-pot </em>tester is used. These specialized instruments produce voltages in excess of 1 kV, and may be used for testing the insulating effectiveness of oil, ceramic insulators, and even the integrity of other high-voltage instruments. Because they are capable of producing such high voltages, they must be operated with the utmost care, and only by trained personnel.</p>
 <p>It should be noted that hi-pot testers and even meggers (in certain conditions) are capable of <em>damaging </em>wire insulation if incorrectly used. Once an insulating material has been subjected to <em>breakdown</em> by the application of an excessive voltage, its ability to electrically insulate will be compromised. Again, these instruments are to be used only by trained personnel.</p>

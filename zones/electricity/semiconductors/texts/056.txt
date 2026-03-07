@@ -1,7 +1,7 @@
-<h1>Active-mode Operation (JFET)</h1>
+# Active-mode Operation (JFET)
 <p>JFETs, like bipolar transistors, are able to &ldquo;throttle&rdquo; current in a mode between cutoff and saturation called the <em>active</em> mode. To better understand JFET operation, let&rsquo;s set up a <a href="https://www.allaboutcircuits.com/textbook/reference/chpt-7/introduction-to-spice/">SPICE simulation</a> similar to the one used to explore basic bipolar transistor function:</p>
-<p>&nbsp;</p>
-<h3>Spice Simulation of a JFET Operation</h3>
+
+## Spice Simulation of a JFET Operation
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/spice-netlist-j1.jpg" /></p>
 <pre>
 jfet simulation vin 0 1 dc 1 j1 2 1 0 mod1 vammeter 3 2 dc 0 v1 3 0 dc .model mod1 njf .dc v1 0 2 0.05 .plot dc i(vammeter) .end </pre>
@@ -29,7 +29,7 @@ jfet simulation vin 0 1 dc j1 2 1 0 mod1 vammeter 3 2 dc 0 v1 3 0 dc 25 .model m
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/controlling-signal-steady-voltage-graph-five.jpg" /></p>
 <p>This simulation directly reveals an important characteristic of the junction field-effect transistor: the control effect of gate voltage over drain current is nonlinear. Notice how the drain current does not decrease linearly as the gate-source voltage is increased. With the bipolar junction transistor, collector current was directly proportional to base current: output signal proportionately followed input signal. Not so with the JFET! The controlling signal (gate-source voltage) has less and less effect over the drain current as it approaches cutoff. In this simulation, most of the controlling action (75 percent of drain current decrease&mdash;from 400 &micro;A to 100 &micro;A) takes place within the first volt of gate-source voltage (from 0 to 1 volt), while the remaining 25 percent of drain current reduction takes another whole volt worth of input signal. Cutoff occurs at 2 volts input.</p>
 <p>Linearity is generally important for a transistor because it allows it to faithfully amplify a waveform without distorting it. If a transistor is nonlinear in its input/output amplification, the shape of the input waveform will become corrupted in some way, leading to the production of harmonics in the output signal. The only time linearity is not important in a transistor circuit is when it&#39;s being operated at the extreme limits of cutoff and saturation (off and on, respectively, like a switch). <a name="Curve, characteristic"></a> <a name="Characteristic curves, transistor"></a></p>
-<h3>JFET&rsquo;s Characteristic Curve</h3>
+## JFET&rsquo;s Characteristic Curve
 <p>A JFET&rsquo;s characteristic curves display the same current-regulating behavior as for a BJT, and the nonlinearity between gate-to-source voltage and drain current is evident in the disproportionate vertical spacings between the curves:</p>
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/jfet-characteristic-curve.jpg" /></p>
 <p>To better comprehend the current-regulating behavior of the JFET, it might be helpful to draw a model made up of simpler, more common components, just as we did for the BJT:</p>
@@ -43,7 +43,7 @@ jfet simulation vin 0 1 dc j1 2 1 0 mod1 vammeter 3 2 dc 0 v1 3 0 dc 25 .model m
 <p>Here and here alone the rheostat (variable resistor) model of a transistor is accurate. It must be remembered, however, that this model of the transistor holds true only for a narrow range of its operation: when it is extremely saturated (far less voltage applied between drain and source than what is needed to achieve full regulated current through the drain). The amount of resistance (measured in ohms) between drain and source in this mode is controlled by how much reverse-bias voltage is applied between gate and source. The less gate-to-source voltage, the less resistance (steeper line on graph). <a name="Transconductance"></a> <a name="Unit, siemens"></a> <a name="Unit, mho"></a> <a name="Mho"></a> <a name="Siemens"></a></p>
 <p>Because JFETs are <em>voltage</em>-controlled current regulators (at least when they&rsquo;re allowed to operate in their active), their inherent amplification factor cannot be expressed as a unitless ratio as with BJTs. In other words, there is no &beta; ratio for a JFET. This is true for all voltage-controlled active devices, including other types of field-effect transistors and even electron tubes. There is, however, an expression of controlled (drain) current to controlling (gate-source) voltage, and it is called <em>transconductance</em>. Its unit is Siemens, the same unit for conductance (formerly known as the <em>mho</em>).</p>
 <p>Why this choice of units? Because the equation takes on the general form of current (output signal) divided by voltage (input signal).</p>
-<h3>Transconductance Equation</h3>
+## Transconductance Equation
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/transconductance-equation.jpg" /></p>
 <p>Unfortunately, the transconductance value for any JFET is not a stable quantity: it varies significantly with the amount of gate-to-source control voltage applied to the transistor. As we saw in the SPICE simulations, the drain current does not change proportionally with changes in gate-source voltage. To calculate drain current for any given gate-source voltage, there is another equation that may be used. It is obviously nonlinear upon inspection (note the power of 2), reflecting the nonlinear behavior we&rsquo;ve already experienced in simulation:&nbsp;<img src="https://www.allaboutcircuits.com/uploads/articles/drain-current-equation.jpg" /></p>
 <p><strong>REVIEW:</strong></p>

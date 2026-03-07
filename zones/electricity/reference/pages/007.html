@@ -33,7 +33,7 @@
 
 <h1>Attenuators</h1>
 <p><a name=&quot;Attenuator&quot;></a></p>
-<h3>What is Attenuators?</h3>
+<h2>What is Attenuators?</h2>
 <p>Attenuators are <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-1/active-versus-passive-devices/&quot; target=&quot;_blank&quot;>passive devices</a>. It is convenient to discuss them along with decibels. Attenuators weaken or <em>attenuate</em> the high level output of a signal generator, for example, to provide a lower level signal for something like the antenna input of a sensitive radio receiver. (figure below) The attenuator could be built into the signal generator, or be a stand-alone device. It could provide a fixed or adjustable amount of attenuation. An attenuator section can also provide isolation between a source and a troublesome load.</p>
 <p><img src=&quot;/uploads/articles/constant-impedance-attenuator.png&quot; /></p>
 <p>Constant impedance attenuator is matched to source impedance ZI and load impedance ZO. For radio frequency equipment Z is 50 &Omega;.</p>
@@ -41,7 +41,7 @@
 <p><img src=&quot;/uploads/articles/t-section-and-Π-section-attenuators.png&quot; /></p>
 <p>T section and &Pi; section attenuators are common forms.</p>
 <p>Common configurations are the <strong>T</strong> and <strong>&Pi;</strong> networks shown in the figure above. Multiple attenuator sections may be cascaded when even weaker signals are needed as in the figure below.</p>
-<h3>Usage of Decibels for Attenuators</h3>
+<h2>Usage of Decibels for Attenuators</h2>
 <p>Voltage ratios, as used in the design of attenuators are often expressed in terms of decibels. The voltage ratio must be derived from the attenuation in decibels. Power ratios expressed as decibels are additive. For example, a 10 dB attenuator followed by a 6 dB attenuator provides 16dB of attenuation overall.</p>
 <p>10 dB + 6 db = 16 dB</p>
 <p>Changing sound levels are perceptible roughly proportional to the logarithm of the power ratio (PI / PO).</p>
@@ -51,11 +51,11 @@
 <p>dB = 10 log10(PI / PO)</p>
 <p>Assuming that the load RI at PI is the same as the load resistor RO at PO(RI = RO), the decibels may be derived from the voltage ratio (VI / VO) or current ratio (II / IO):</p>
 <p>PO = V O IO = VO2 / R = IO2 R PI = V I II = VI2 / R = II2 R dB = 10 log10(PI / PO) = 10 log10(VI2 / VO2) = 20 log10(VI/VO) dB = 10 log10(PI / PO) = 10 log10(II2 / IO2) = 20 log10(II/IO)</p>
-<h3>Decibel Equations</h3>
+<h2>Decibel Equations</h2>
 <p>The two most often used forms of the decibel equation are:</p>
 <p>dB = 10 log10(PI / PO) or dB = 20 log10(VI / VO)</p>
 <p>We will use the latter form, since we need the voltage ratio. Once again, the voltage ratio form of equation is only applicable where the two corresponding resistors are equal. That is, the source and load resistance need to be equal.</p>
-<h4>Examples using the Decibel Equations</h4>
+<h3>Examples using the Decibel Equations</h3>
 <p><strong>Example: </strong>Power into an attenuator is 10 Watts, the power out is 1 Watt. Find the attenuation in dB.</p>
 <p>dB = 10 log10(PI / PO) = 10 log10 (10 /1) = 10 log10 (10) = 10 (1) = 10 dB</p>
 <p><strong>Example: </strong>Find the voltage attenuation ratio (K= (VI / VO)) for a 10 dB attenuator.</p>
@@ -64,7 +64,7 @@
 <p>dB = 10 log10(PI / PO) = 10 log10 (100 /1) = 10 log10 (100) = 10 (2) = 20 dB</p>
 <p><strong>Example: </strong>Find the voltage attenuation ratio (K= (VI / VO)) for a 20 dB attenuator.</p>
 <p>dB = 20= 20 log10(VI / VO ) 1020/20 = 10 log10(VI / VO ) 10 = (VI / VO ) = K</p>
-<h3>T-section attenuator</h3>
+<h2>T-section attenuator</h2>
 <p>The T and &Pi; attenuators must be connected to a&nbsp;<strong>Z</strong>&nbsp;source and&nbsp;<strong>Z</strong>&nbsp;load impedance. The&nbsp;<strong>Z</strong>-(arrows) pointing away from the attenuator in the figure below indicate this. The&nbsp;<strong>Z</strong>-(arrows) pointing toward the attenuator indicates that the impedance seen looking into the attenuator with a load Z on the opposite end is Z, Z=50 &Omega; for our case. This impedance is a constant (50 &Omega;) with respect to attenuation&ndash; impedance does not change when attenuation is changed.</p>
 <p>The table in the figure below lists resistor values for the <strong>T</strong> and <strong>&Pi;</strong> attenuators to match a 50 &Omega; source/ load, as is the usual requirement in radio frequency work.</p>
 <p>Telephone utility and other audio work often requires matching to 600 &Omega;. Multiply all <strong>R</strong> values by the ratio (600/50) to correct for 600 &Omega; matching. Multiplying by 75/50 would convert table values to match a 75 &Omega; source and load.</p>
@@ -77,7 +77,7 @@
 <p>ZIN = 25.97 + (35.14 <p class='m'>(25.97 + 50)) ZIN = 25.97 + (35.14 || 75.97 ) ZIN = 25.97 + 24.03 = 50</p></p><p class='b1000'><p>This shows us that we see 50 &Omega; looking right into the example attenuator (figure below) with a 50 &Omega; load.</p></p>
 <p>Replacing the source generator, disconnecting load <strong>Z</strong> at <strong>V</strong><strong>O</strong>, and looking in to the left, should give us the same equation as above for the impedance at <strong>V</strong><strong>O</strong>, due to symmetry. Moreover, the three resistors must be values which supply the required attenuation from input to output. This is accomplished by the equations for <strong>R</strong><strong>1</strong> and <strong>R</strong><strong>2</strong> above as applied to the <strong>T</strong>-attenuator below.</p>
 <p><img src=&quot;/uploads/articles/t-attenuator-diagram.png&quot; /></p>
-<h3>PI-section attenuator</h3>
+<h2>PI-section attenuator</h2>
 <p>The table in the figure&nbsp;below&nbsp;lists resistor values for the&nbsp;<strong>&Pi;</strong>&nbsp;attenuator matching a 50 &Omega; source/ load at some common attenuation levels. The resistors corresponding to other attenuation levels may be calculated from the equations.</p>
 <p><img src=&quot;/uploads/articles/Π-section-attenuator-resistors-formula.png&quot; /></p>
 <p>Formulas for &Pi;-section attenuator resistors, given K, the voltage attenuation ratio, and ZI = ZO = 50 &Omega;.</p>
@@ -86,18 +86,18 @@
 <p><img src=&quot;/uploads/articles/Π-attenuator-diagram.png&quot; /></p>
 <p>10 dB &Pi;-section attenuator example for matching a 50 &Omega; source and load.</p>
 <p>The <strong>10 dB</strong> corresponds to a voltage attenuation ratio of <strong>K=3.16</strong> in the next to last line of the above table. Transfer the resistor values in that line to the resistors on the schematic diagram in the figure above.</p>
-<h3>L-section attenuator</h3>
+<h2>L-section attenuator</h2>
 <p>The table in the figure&nbsp;below&nbsp;lists resistor values for the&nbsp;<strong>L</strong>&nbsp;attenuators to match a 50 &Omega; source/ load. The table in the figure&nbsp;below&nbsp;also lists resistor values for an alternate form. Note that the resistor values are not the same.</p>
 <p><img src=&quot;/uploads/articles/l-section-attenuator-table.png&quot; /></p>
 <p>L-section attenuator table for 50 &Omega; source and load impedance.</p>
 <p>The above apply to the <strong>L</strong> attenuator below.</p>
 <p><img src=&quot;/uploads/articles/alternate-form-l-section-attenuator-table.png&quot; /></p>
 <p>Alternate form L-section attenuator table for 50 &Omega; source and load impedance.</p>
-<h3>Bridged T attenuator</h3>
+<h2>Bridged T attenuator</h2>
 <p>The table in the figure&nbsp;below&nbsp;lists resistor values for the bridged&nbsp;<strong>T</strong>&nbsp;attenuators to match a 50 &Omega; source and load. The bridged-T attenuator is not often used. Why not?</p>
 <p><img src=&quot;/uploads/articles/bridged-t-attenuator-formula.png&quot; /></p>
 <p>Formulas and abbreviated table for bridged-T attenuator section, Z = 50 &Omega;.</p>
-<h3>Cascaded sections</h3>
+<h2>Cascaded sections</h2>
 <p>Attenuator sections can be cascaded as in the figure&nbsp;below&nbsp;for more attenuation than may be available from a single section. For example two 10 db attenuators may be cascaded to provide 20 dB of attenuation, the dB values being additive. The voltage attenuation ratio&nbsp;<strong>K</strong>&nbsp;or&nbsp;<strong>V</strong><strong>I</strong><strong>/V</strong><strong>O</strong>&nbsp;for a 10 dB attenuator section is 3.16. The voltage attenuation ratio for the two cascaded sections is the product of the two&nbsp;<strong>K</strong>s or 3.16x3.16=10 for the two cascaded sections.</p>
 <p><img src=&quot;/uploads/articles/cascaded-attenuator-sections.png&quot; /></p>
 <p>Cascaded attenuator sections: dB attenuation is additive.</p>
@@ -105,7 +105,7 @@
 <p><img src=&quot;/uploads/articles/switched-attenuator.png&quot; /></p>
 <p>Switched attenuator: attenuation is variable in discrete steps.</p>
 <p>The typical multi section attenuator has more sections than the above figure shows. The addition of a 3 or 8 dB section above enables the unit to cover to 10 dB and beyond. Lower signal levels are achieved by the addition of 10 dB and 20 dB sections, or a binary multiple 16 dB section.</p>
-<h3>RF attenuators</h3>
+<h2>RF attenuators</h2>
 <p>For radiofrequency (RF) work (&lt;1000 Mhz), the individual sections must be mounted in shielded compartments to thwart capacitive coupling if lower signal levels are to be achieved at the highest frequencies. The individual sections of the switched attenuators in the previous section are mounted in shielded sections. Additional measures may be taken to extend the frequency range to beyond 1000 Mhz. This involves construction from special shaped lead-less resistive elements.</p>
 <p><img src=&quot;/uploads/articles/coaxial-t-section-attenuator.png&quot; /></p>
 <p>A coaxial T-section attenuator consisting of resistive rods and a resistive disk is shown in the figure above. This construction is usable to a few gigahertz. The coaxial &Pi; version would have one resistive rod between two resistive disks in the coaxial line as in the figure below.</p>

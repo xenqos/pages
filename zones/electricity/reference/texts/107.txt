@@ -1,11 +1,11 @@
-<h1>Computational Circuits</h1>
+# Computational Circuits
 <p>When someone mentions the word &ldquo;computer,&rdquo; a digital device is what usually comes to mind. Digital circuits represent numerical quantities in <em>binary</em> format: patterns of 1&rsquo;s and 0&rsquo;s represented by a multitude of transistor circuits operating in saturated or cutoff states. However, analog circuitry may also be used to represent numerical quantities and perform mathematical calculations, by using variable voltage signals instead of discrete on/off states.</p>
 <p>Here is a simple example of binary (digital) representation versus analog representation of the number &ldquo;twenty-five:&rdquo; &nbsp;</p>
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/digital-circuit-representing-the-number-25.jpg" /></p>
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/analog-circuit-representing-the-number-25.jpg" /></p>
 <p>Digital circuits are very different from circuits built on analog principles. Digital computational circuits can be incredibly complex, and calculations must often be performed in sequential &ldquo;steps&rdquo; to obtain a final answer, much as a human being would perform arithmetical calculations in steps with pencil and paper. Analog computational circuits, on the other hand, are quite simple in comparison, and perform their calculations in continuous, real-time fashion. There is a disadvantage to using analog circuitry to represent numbers, though: imprecision. The digital circuit shown above is representing the number twenty-five, precisely. The analog circuit shown above may or may not be exactly calibrated to 25.000 volts, but is subject to &ldquo;drift&rdquo; and error.</p>
 <p>In applications where precision is not critical, analog computational circuits are very practical and elegant. Shown here are a few op-amp circuits for performing analog computation:</p>
-<h4>Computational Op-Amp Circuits</h4>
+### Computational Op-Amp Circuits
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/analog-summer-adder-circuit.jpg" /></p>
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/analog-subtractor-circuit.jpg" /></p>
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/analog-averager-circuit.jpg" /></p>

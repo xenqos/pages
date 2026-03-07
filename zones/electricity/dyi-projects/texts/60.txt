@@ -1,13 +1,13 @@
-<h1>Si Lab - Multi-stage Amplifier</h1>
-<h3>Project Overview</h3>
+# Si Lab - Multi-stage Amplifier
+## Project Overview
 <p>In this project, three <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-4/bipolar-junction-transistors-bjt/" target="_blank">BJT</a> <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-4/common-emitter-amplifier/" target="_blank">common-emitter amplifier</a> stages are cascaded, as illustrated in Figure 1.&nbsp;</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/multi-stage-amplifier-schematic-diagram-1.jpg" /></p>
-<h5><em><strong>Figure 1. </strong>Schematic diagram of a multi-stage BJT common-emitter amplifier</em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Figure 1. </strong>Schematic diagram of a multi-stage BJT common-emitter amplifier</em>
+
 <p>The output of the first <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-1/amplifiers/" target="_blank">amplifier</a> is the input of the second amplifier. Likewise, the output of the second amplifier is the input of the third amplifier. Also, notice how the 1 M&Omega;&nbsp;<a href="https://eepower.com/resistor-guide/" target="_blank">resistor</a> provides <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-8/negative-feedback/" target="_blank">negative feedback</a> from the output of the third stage back to the input of the first stage.</p>
-<p>&nbsp;</p>
-<h3>Parts and Materials</h3>
+
+## Parts and Materials
 <ul>
 <li>Three NPN transistors&mdash;model <a href="https://www.farnell.com/datasheets/296640.pdf" target="_blank">2N2222</a> or <a href="https://my.centralsemi.com/datasheets/LSSGP078.PDF" target="_blank">2N3403</a> recommended&nbsp;</li>
 <li>Two 6 V&nbsp;batteries</li>
@@ -16,23 +16,23 @@
 <li>Three 100 k&Omega; resistors</li>
 <li>Three 10 k&Omega; resistors</li>
 </ul>
-<p>&nbsp;</p>
-<h3>Learning Objectives</h3>
+
+## Learning Objectives
 <ul>
 <li>Design of a multi-stage, direct-coupled common-emitter amplifier circuit</li>
 <li>Effect of negative feedback in an amplifier circuit</li>
 </ul>
-<p>&nbsp;</p>
-<h3>Instructions</h3>
+
+## Instructions
 <p><strong>Step 1:&nbsp;</strong>Connect&nbsp;three common-emitter amplifier circuits together, as illustrated in Figures 1 and 2, <em>without</em> the 1 M&Omega; feedback resistor, to begin with, to see for yourself just how high the unrestricted voltage gain is.</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/multi-stage-amplifier-illustration.jpg" /></p>
-<h5><em><strong>Figure 2. </strong>Breadboard implementation of the three-stage BJT common-emitter amplifier.</em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Figure 2. </strong>Breadboard implementation of the three-stage BJT common-emitter amplifier.</em>
+
 <p>The collector terminal (output) of the previous transistor connects to the base resistor (input) of the next transistor.The voltage gains of each stage multiply together&nbsp;to give a high overall voltage gain:</p>
-<p>&nbsp;</p>
+
 <p>$$G_{total} = G_1 \cdot G_2 \cdot G_3$$</p>
-<p>&nbsp;</p>
+
 <p><strong>Step 2:&nbsp;</strong>Try to adjust the potentiometer to calculate the gain. However, you may find it impossible to adjust the potentiometer for a stable output voltage (that isn&rsquo;t saturated at full supply voltage or zero) because the gain is so high.</p>
 <p><strong>Step 3:&nbsp;</strong>Even if you can&rsquo;t adjust the input voltage fine enough to stabilize the output voltage in the active range of the last transistor, you should be able to validate that the output-to-input relationship is inverting. That is to say, the output tends to drive to a high voltage when the input goes low, and vice versa.&nbsp;Since any one of the common-emitter stages&nbsp;is inverting in itself, an even number of staged common-emitter amplifiers gives a noninverting response, while an odd number of stages gives inverting.</p>
 <p>Test these relationships by measuring the collector-to-ground voltage at each transistor while adjusting the input voltage potentiometer, noting whether or not the output voltage increases or decreases with an increase in input voltage.</p>
@@ -42,19 +42,19 @@
 <p>An advantage of using negative feedback to tame&nbsp;a high-gain amplifier circuit is that the resulting voltage gain becomes more dependent upon the resistor values and less dependent upon the characteristics of the constituent transistors. This is good because it is far easier to manufacture consistent resistors than consistent transistors.&nbsp;Thus, it is easier to design an amplifier with predictable gain by building a staged network of transistors with an arbitrarily high voltage gain, then mitigate that gain precisely through negative feedback. It is this same principle that is used to make <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-8/introduction-operational-amplifiers/" target="_blank">operational amplifier</a>&nbsp;(op amp) circuits behave so predictably.</p>
 <p>This amplifier circuit is a bit simplified from what you will normally encounter in practical multi-stage circuits. Rarely is a pure common-emitter configuration (i.e. with no emitter-to-ground resistor) used. Also, if the amplifier is being used&nbsp;for AC signals, the inter-stage coupling is often <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-13/electric-fields-capacitance/" target="_blank">capacitive</a>, with <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-6/voltage-divider-circuits/" target="_blank">voltage divider</a> networks connected to each transistor base for proper biasing of each stage.</p>
 <p>Radio-frequency (RF) amplifier circuits are often transformer-coupled, with <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-13/practical-considerations-capacitors/" target="_blank">capacitors</a> <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/simple-parallel-circuits/" target="_blank">connected in parallel</a> with the <a href="https://eepower.com/power-electronics-textbook/vol-i-electrical-power-systems-design/chapter-5-impedance-matching-and-power-transfer/understanding-electrical-transformers/" target="_blank">transformer</a> windings for resonant tuning.</p>
-<p>&nbsp;</p>
-<h3>SPICE Simulation of a Multi-stage BJT Common-emitter Amplifier</h3>
+
+## SPICE Simulation of a Multi-stage BJT Common-emitter Amplifier
 <p>Figure 3 is the three-stage BJT&nbsp;common-emitter amplifier circuit with node numbers added for <a href="https://www.allaboutcircuits.com/textbook/reference/chpt-7/introduction-to-spice/" target="_blank">SPICE</a> circuit simulation.&nbsp;&nbsp;</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/multi-stage-amplifier-schematic-with-spice-node-numbers.jpg" /></p>
-<h5><em><strong>Figure 3. </strong>SPICE schematic&nbsp;of the three-stage BJT common-emitter amplifier.</em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Figure 3. </strong>SPICE schematic&nbsp;of the three-stage BJT common-emitter amplifier.</em>
+
 <p>The following netlist and input commands can be used to simulate the multi-stage common-emitter amplifier using SPICE.&nbsp;</p>
-<p>&nbsp;</p>
+
 <p>Netlist (make a text file containing the following text, verbatim):</p>
 <pre>
 Multi-stage Common-emitter Amplifier &#10;vsupply 1 0 dc 12 &#10;vin 2 0 &#10;r1 2 3 100k &#10;r2 1 4 10k &#10;q1 4 3 0 mod1 &#10;r3 4 7 100k &#10;r4 1 5 10k &#10;q2 5 7 0 mod1 &#10;r5 5 8 100k &#10;r6 1 6 10k &#10;q3 6 8 0 mod1 &#10;rf 3 6 1meg &#10;.model mod1 npn bf=200 &#10;.dc vin 0 2.5 0.1 &#10;.plot dc v(6,0) v(2,0) &#10;.end </pre>
-<p>&nbsp;</p>
+
 <p>This simulation plots output voltage against input voltage and allows comparison between those variables in numerical form,&nbsp;a list of voltage figures printed to the left of the plot. You may calculate voltage gain by taking any two analysis points and dividing the difference in output voltages by the difference in input voltages, just like you do for the real circuit.</p>
 <p>Experiment with different feedback resistance values (<tt>rf</tt>) and see the impact on overall voltage gain. Do you notice a pattern?</p>
 <p>Here&rsquo;s a hint: the overall voltage gain may be closely approximated by using the resistance figures of <tt>r1</tt> and <tt>rf</tt>&nbsp;without reference to any other circuit component!</p>

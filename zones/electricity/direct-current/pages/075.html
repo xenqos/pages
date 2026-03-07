@@ -37,136 +37,99 @@
 <p><p>The node voltage method is a DC network analysis technique based on the structured application of Kirchhoff&rsquo;s current law. This method involves converting voltage sources to current sources and replacing resistances with equivalent conductances.</p></p>
 <p>The node voltage method of <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-10/what-is-network-analysis/&quot; target=&quot;_blank&quot;>DC network analysis</a> solves for unknown voltages at circuit nodes in terms of a system of <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-6/kirchhoffs-current-law-kcl/&quot; target=&quot;_blank&quot;>Kirchhoff&rsquo;s current law (KCL)</a> equations. This analysis looks strange because it replaces voltage sources with equivalent current sources. Additionally, resistor values in ohms are replaced by equivalent conductances (G = 1/R) with units of siemens (S). Once understood, the node voltage method can provide a simple technique for quickly solving various complex circuits.&nbsp;</p>
 <p>In this textbook page, we will demonstrate the node voltage method on two circuits, including an unbalanced <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-8/bridge-circuits/&quot; target=&quot;_blank&quot;>Wheatstone bridge</a>.</p>
-<p>&nbsp;</p>
-<h3>Node Voltage Method Steps</h3>
+
+<h2>Node Voltage Method Steps</h2>
 <p>First, let&rsquo;s start with a circuit having conventional voltage sources, as illustrated in Figure 1.&nbsp;</p>
-<p>&nbsp;</p>
-<h4>Step 1: Label All Unique Voltage Nodes</h4>
+
+<h3>Step 1: Label All Unique Voltage Nodes</h3>
 <p>A common node, V<sub>0</sub>, is chosen as a reference point&mdash;this is typically the ground node in the circuit. The other unknown node voltages in our Figure 1 circuit, V<sub>1</sub> and V<sub>2</sub>, will be calculated concerning this point.</p>
-<p>&nbsp;</p>
 <p><img src=&quot;/uploads/thumbnails/Figure_1._Circuit_schematic_for_demonstration_of_the_Node_Voltage_Method_of_circuit_analysis_.jpg&quot; /></p>
-<h5><em><strong>Figure 1. </strong>Circuit schematic for demonstration of the node voltage method of circuit analysis.</em></h5>
-<p>&nbsp;</p>
-<h4>Step 2: Replace All Voltage Sources and Series Resistors With Current Sources and Parallel Resistors</h4>
+<h4><em><strong>Figure 1. </strong>Circuit schematic for demonstration of the node voltage method of circuit analysis.</em></h4>
+
+<h3>Step 2: Replace All Voltage Sources and Series Resistors With Current Sources and Parallel Resistors</h3>
 <p>Next, we need to replace all voltage sources and their associated <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/simple-series-circuits/&quot; target=&quot;_blank&quot;>series resistors</a> with equivalent current sources and <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/simple-parallel-circuits/&quot; target=&quot;_blank&quot;>parallel resistors</a>. The <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-9/current-signal-systems/&quot; target=&quot;_blank&quot;>current source</a> value is calculated as:</p>
-<p>&nbsp;</p>
 <p>$$I_{source} = \frac{V_{source}}{R_{series}}$$</p>
-<p>&nbsp;</p>
 <p>The voltage source, B<sub>1</sub>, in Figure 1 is in series with resistor, R<sub>1</sub>, which has a current source value of 5 A:</p>
-<p>&nbsp;</p>
 <p>$$I_1 = \frac{V_{B1}}{R_1} = \frac{10 \text{ V}}{2 \text{ }\Omega} = 5 \text{ A}$$</p>
-<p>&nbsp;</p>
 <p>The parallel resistance will be the same value as the series resistance. Knowing our current source and <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/resistance/&quot; target=&quot;_blank&quot;>resistance</a> values, we can draw our equivalent parallel circuit, as shown in Figure 2.</p>
-<p>&nbsp;</p>
 <p><img src=&quot;/uploads/thumbnails/Figure_2._Conversion_of_a_voltage_source_.jpg&quot; /></p>
-<h5><em><strong>Figure 2. </strong>Conversion of a voltage source with series resistance to a current source with parallel resistance.</em></h5>
-<p>&nbsp;</p>
+<h4><em><strong>Figure 2. </strong>Conversion of a voltage source with series resistance to a current source with parallel resistance.</em></h4>
+
 <p>We need to perform the same voltage source to current source conversion for battery, B<sub>2</sub>, with a series resistor, R<sub>5</sub>, from our circuit in Figure 1.</p>
-<p>&nbsp;</p>
 <p>$$I_2 = \frac{V_{B2}}{R_5} = \frac{-4 \text{ V}}{1 \text{ }\Omega} = -4 \text{ A}$$</p>
-<p>&nbsp;</p>
 <p>From here, we can now redraw our circuit with two current sources and parallel resistors, as shown in Figure 3.</p>
-<p>&nbsp;</p>
 <p><img src=&quot;/uploads/thumbnails/Figure_3._New_circuit_with_current_sources_and_parallel_resistors_.jpg&quot; /></p>
-<h5><em><strong>Figure 3. </strong>New circuit with current sources and parallel resistors.</em></h5>
-<p>&nbsp;</p>
-<h4>Step 3: Replace Resistor Resistance in Ohms with Conductance in Siemens</h4>
+<h4><em><strong>Figure 3. </strong>New circuit with current sources and parallel resistors.</em></h4>
+
+<h3>Step 3: Replace Resistor Resistance in Ohms with Conductance in Siemens</h3>
 <p>For all <a href=&quot;https://eepower.com/resistor-guide/&quot; target=&quot;_blank&quot;>resistors</a> in our circuit, we must now replace the resistance value in ohms with its reciprocal conductance value in siemens. The siemens is the unit of conductance, having replaced the now obsolete mho (inverse of an ohm) unit.&nbsp;</p>
-<p>&nbsp;</p>
 <p>$$G_1 = \frac{1}{R_1} = \frac{1}{2 \text{ }\Omega} = 0.5 \text{ S}$$</p>
-<p>&nbsp;</p>
 <p>$$G_2 = \frac{1}{R_2} = \frac{1}{4 \text{ }\Omega} = 0.25 \text{ S}$$</p>
-<p>&nbsp;</p>
 <p>$$G_3 = \frac{1}{R_3} = \frac{1}{2.5 \text{ }\Omega} = 0.4 \text{ S}$$</p>
-<p>&nbsp;</p>
 <p>$$G_4 = \frac{1}{R_4} = \frac{1}{5 \text{ }\Omega} = 0.2 \text{ S}$$</p>
-<p>&nbsp;</p>
 <p>$$G_5 = \frac{1}{R_4} = \frac{1}{1 \text{ }\Omega} = 1 \text{ S}$$</p>
-<p>&nbsp;</p>
 <p>We can update our drawing with these calculated conductance values (Figure 4).</p>
-<p>&nbsp;</p>
 <p><img src=&quot;/uploads/thumbnails/Figure_4._All_resistance_values_replaced_by_equivalent_conductance_.jpg&quot; /></p>
-<h5><em><strong>Figure 4. </strong>All resistance values are replaced by equivalent conductance.</em></h5>
-<p>&nbsp;</p>
+<h4><em><strong>Figure 4. </strong>All resistance values are replaced by equivalent conductance.</em></h4>
+
 <p>At this point, we can also simplify the circuit by combining parallel conductors. We do this by simple addition. In our circuit of Figure 4, we have two sets of parallel conductors:</p>
-<p>&nbsp;</p>
 <p>$$G_A = G_1 + G_2 = 0.5 + 0.25 = 0.75 \text{ S}$$</p>
-<p>&nbsp;</p>
 <p>$$G_B = G_4 + G_5 = 0.2 + 1 = 1.2 \text{ S}$$</p>
-<p>&nbsp;</p>
 <p>Our simplified circuit, ready for applying the node voltage method, is shown in Figure 5.</p>
-<p>&nbsp;</p>
 <p><img src=&quot;/uploads/thumbnails/Figure_5._Simplified_circuit_.jpg&quot; /></p>
-<h5><em><strong>Figure 5.</strong> Simplified circuit.</em></h5>
-<p>&nbsp;</p>
-<h4>Step 4: Write KCL Equations for Each Unknown Voltage Node</h4>
+<h4><em><strong>Figure 5.</strong> Simplified circuit.</em></h4>
+
+<h3>Step 4: Write KCL Equations for Each Unknown Voltage Node</h3>
 <p>Following the node voltage method, we now write KCL equations for all unknown voltage nodes. In our example circuit, we have only two unknown node voltages, V<sub>1</sub> and V<sub>2</sub>.&nbsp;</p>
-<p>&nbsp;</p>
 <p>$$I_1 = G_AV_1 + G_3(V_1-V_2)$$</p>
-<h5><strong><em>Equation 1.</em></strong></h5>
-<p>&nbsp;</p>
+<h4><strong><em>Equation 1.</em></strong></h4>
+
 <p>$$I_2 = G_BV_2 + G_3(V_2-V_1)$$</p>
-<h5><em><strong>Equation 2.</strong></em></h5>
-<p>&nbsp;</p>
+<h4><em><strong>Equation 2.</strong></em></h4>
+
 <p>Let&rsquo;s rewrite these two equations to demonstrate a pattern for writing these equations by inspection.</p>
-<p>&nbsp;</p>
 <p>$$I_1 = (G_A + G_3)V_1 - G_3V_2$$</p>
-<h5><strong><em>Equation 1.</em></strong></h5>
-<p>&nbsp;</p>
+<h4><strong><em>Equation 1.</em></strong></h4>
+
 <p>$$I_2 = (G_B + G_3)V_2 - G_3V_1$$</p>
-<h5><em><strong>Equation 2.</strong></em></h5>
-<p>&nbsp;</p>
+<h4><em><strong>Equation 2.</strong></em></h4>
+
 <p>Note the similarity in these two equations. The sum of conductances connected to the first KCL node (G<sub>A</sub> + G<sub>3</sub>) is the positive coefficient of the first voltage (V<sub>1</sub>) at that node in Equation 1. Likewise, in Equation 2, the sum of conductances connected to that KCL node for V<sub>2</sub> is the positive coefficient of the voltage, V<sub>2</sub>, in Equation 2. The other coefficients are negative, representing conductances between other non-common nodes.&nbsp;</p>
 <p>For both equations, the left-hand side is equal to the respective current source connected to the node. This pattern allows us to quickly write the equations by inspection. If you can learn this relatively simple pattern for writing the KCL equations using conductances, the node voltage method can be useful for quickly analyzing many circuits.</p>
-<p>&nbsp;</p>
-<h4>Step 5: Solve the Set of Simultaneous KCL Equations for the Unknown Voltages</h4>
+
+<h3>Step 5: Solve the Set of Simultaneous KCL Equations for the Unknown Voltages</h3>
 <p>From here, we can use the two equations to solve for the two unknown voltages in our circuit. We can substitute our known currents and conductances and rearrange them to order like terms.&nbsp;</p>
-<p>&nbsp;</p>
 <p>$$I_1 = 5 = (0.75 + 0.4)V_1 - 0.4V_2 = 1.15V_1 - 0.4V_2$$</p>
-<p>&nbsp;</p>
 <p>$$I_2 = -4 = (1.2 + 0.4)V_2 - 0.4V_1 = -0.4V_1 + 1.6V_2$$</p>
-<p>&nbsp;</p>
 <p>Solving these simultaneous equations, we get the following results for our node voltages:</p>
-<p>&nbsp;</p>
 <p>$$V_1 = 3.8095 \text{ V}$$</p>
-<p>&nbsp;</p>
 <p>$$V_2 = -1.5476 \text{ V}$$</p>
-<p>&nbsp;</p>
-<h3>Verification of the Node Voltage Method Using SPICE</h3>
+
+<h2>Verification of the Node Voltage Method Using SPICE</h2>
 <p>The solution can then be verified using SPICE based on the original schematic diagram with voltage sources. However, the circuit with the current sources could also have been simulated.</p>
 <pre><br>
 &#10;           * Node Voltage Method circuit simulation&#10;           V1 11 0 DC 10&#10;           V2 22 0 DC -4&#10;           r1 11 1 2&#10;           r2 1 0 4&#10;           r3 1 2 2.5&#10;           r4 2 0 5&#10;           r5 2 22 1&#10;           .DC V1 10 10 1 V2 -4 -4 1 &#10;           .print DC V(1) V(2)&#10;           .end&#10;&#10;                v(1)            v(2)&#10;            3.809524e+00    -1.547619e+00&#10; &#10;</pre>
 
-<h3>The Node Voltage Method Applied to an Unbalanced Wheatstone Bridge</h3>
+<h2>The Node Voltage Method Applied to an Unbalanced Wheatstone Bridge</h2>
 <p>Let&rsquo;s look at another circuit analysis example using the node voltage method. The circuit of Figure 6 is called an unbalanced Wheatstone bridge, and it has three unknown voltage nodes plus the common voltage node, V<sub>0</sub>.&nbsp;</p>
-<p>&nbsp;</p>
 <p><img src=&quot;/uploads/thumbnails/Figure_6._Node_number_labeling_for_SPICE_simulation__1.jpg&quot; /></p>
-<h5><em><strong>Figure 6. </strong>Wheatstone bridge for node voltage method application.</em></h5>
-<p>&nbsp;</p>
+<h4><em><strong>Figure 6. </strong>Wheatstone bridge for node voltage method application.</em></h4>
+
 <p>It&rsquo;s important to note that we do not list the conductances on the schematic diagram. However, G<sub>1</sub> = 1/R<sub>1</sub>, etc.</p>
 <p>There are three nodes (V<sub>1</sub>, V<sub>2</sub>, and V<sub>3</sub>) to write equations for by inspection. Remember, the conductance coefficients are positive for conductors connected to the node we are developing the KCL equation for. All other conductance coefficients are negative.&nbsp;</p>
 <p>Since we are too lazy to calculate the conductances for the resistors on the diagram, the subscripted G&rsquo;s are listed for now as the coefficients.</p>
-<p>&nbsp;</p>
 <p>$$I_1 = 0.136092 = (G_1+G_2)V_1 - G_1V_2 -G_2V_3$$</p>
-<p>&nbsp;</p>
 <p>$$I_2 = 0 = (G_1 + G_3 + G_4)V_2 - G_1V_1 - G_3V_3 $$</p>
-<p>&nbsp;</p>
 <p>$$I_3 = 0 = (G_2 + G_3 + G_5)V_3 - G_2V_1 - G_3V_2 $$</p>
-<p>&nbsp;</p>
 <p>Next, we can reorder to align the unknown voltages to make it easier to solve the simultaneous equations:</p>
-<p>&nbsp;</p>
 <p>$$0.136092 = (G_1+G_2)V_1 - G_1V_2 -G_2V_3$$</p>
-<p>&nbsp;</p>
 <p>$$0 = - G_1V_1 + (G_1 + G_3 + G_4)V_2 - G_3V_3 $$</p>
-<p>&nbsp;</p>
 <p>$$0 = - G_2V_1 - G_3V_2 + (G_2 + G_3 + G_5) $$</p>
-<p>&nbsp;</p>
 <p>Again, we are so lazy that we will solve this using <a href=&quot;https://octave.org/&quot; target=&quot;_blank&quot;>GNU Octave</a> and enter reciprocal resistances and sums of reciprocal resistances into the Octave &ldquo;A&rdquo; matrix, letting Octave compute the matrix of conductances after &ldquo;A =.&rdquo;&nbsp;</p>
 <p>The initial entry line was so long that it was split into three rows. The entered &ldquo;A&rdquo; matrix is delineated by starting and ending square brackets. Column elements are space-separated. Rows are &ldquo;new line&rdquo; separated. Commas and semicolons are not needed as separators. Though, the current vector at &ldquo;b&rdquo; is semicolon-separated to yield a column vector of currents.</p>
 <pre><br>
 &#10;octave:12&gt; A = [1/150+1/50 -1/150 -1/50&#10;           &gt; -1/150 1/150+1/100+1/300 -1/100&#10;           &gt; -1/50 -1/100 1/50+1/100+1/250]&#10;           A =&#10;              0.0266667  -0.0066667  -0.0200000&#10;             -0.0066667   0.0200000  -0.0100000&#10;             -0.0200000  -0.0100000   0.0340000&#10;&#10;           octave:13&gt; b = [0.136092;0;0]&#10;           b =&#10;              0.13609&#10;              0.00000&#10;              0.00000&#10;&#10;           octave:14&gt; x=A\b&#10;           x =&#10;              24.000&#10;              17.655&#10;              19.310&#10;</pre>
 
-<p>&nbsp;</p>
 <p>Note that the diagonal coefficients in the &ldquo;A&rdquo; matrix are positive, while the other coefficients are all negative, as they must be based on our rules for writing the node voltage method equations.</p>
 <p>The voltage vector solution is given in &ldquo;x&rdquo;:&nbsp;</p>
 <ul>
@@ -176,8 +139,8 @@
 </ul>
 
 <p>These three voltages are identical to the results we obtained using the mesh current analysis and SPICE simulation of the unbalanced Wheatstone bridge. This is no coincidence, for the 0.13609 A current source was purposely chosen to yield the 24 V used as a voltage source in that problem.</p>
-<p>&nbsp;</p>
-<h3>Review of the Node Voltage Method</h3>
+
+<h2>Review of the Node Voltage Method</h2>
 <ul>
 <li>The node voltage method is a circuit analysis technique based on the structured application of Kirchhoff&rsquo;s current law after replacing all voltage sources with current sources and replacing resistances with conductances.</li>
 <li>The node voltage method follows a 5-step process:

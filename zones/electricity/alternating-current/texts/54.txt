@@ -1,76 +1,76 @@
-<h1>Winding Configurations</h1>
-<h3>Transformers with Multiple Secondaries</h3>
+# Winding Configurations
+## Transformers with Multiple Secondaries
 <p><a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-9/practical-considerations-transformers/" target="_blank">Transformers</a> are very versatile devices. The basic concept of energy transfer between mutual inductors is useful enough between a single primary and single secondary coil, but transformers don&rsquo;t have to be made with just two sets of windings. Consider this transformer circuit:</p>
-<p>&nbsp;</p>
+
 <p><img src="/uploads/articles/transformers-with-multiple-secondaries.jpg" /></p>
 <p><em>Transformer with multiple secondaries provides multiple output voltages.</em></p>
-<p>&nbsp;</p>
+
 <p>Here, three inductor coils share a common magnetic core, magnetically &ldquo;coupling&rdquo; or &ldquo;linking&rdquo; them together. The relationship of winding turn ratios and voltage ratios seen with a single pair of mutual inductors still holds true here for multiple pairs of coils.</p>
 <p>It is entirely possible to assemble a transformer such as the one above (one primary winding, two secondary windings) in which one secondary winding is a step-down and the other is a step-up.</p>
 <p>In fact, this design of transformer was quite common in vacuum tube power supply circuits, which were required to supply low voltage for the tubes&rsquo; filaments (typically 6 or 12 volts) and high voltage for the tubes&rsquo; plates (several hundred volts) from a nominal primary voltage of 110 volts AC.</p>
 <p>Not only are <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/voltage-current/" target="_blank">voltages and currents</a> of completely different magnitudes possible with such a transformer, but all circuits are electrically isolated from one another.</p>
-<p>&nbsp;</p>
+
 <p><img src="/uploads/articles/multiple-winding-transformer-with-six-windings.jpg" /></p>
 <p><em>Photograph of a multiple-winding transformer with six windings, a primary and five secondaries.</em></p>
-<p>&nbsp;</p>
+
 <p>The transformer in the figure above is intended to provide both high and low voltages necessary in an electronic system using<a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-9/practical-considerations-transformers/" target="_blank"> vacuum tubes</a>. Low voltage is required to power the filaments of vacuum tubes, while high voltage is required to create the potential difference between the plate and cathode elements of each tube.</p>
 <p>One transformer with multiple windings suffices elegantly to provide all the necessary voltage levels from a single 115 V source. The wires for this transformer (15 of them!) are not shown in the photograph, being hidden from view.</p>
 <p>If electrical isolation between secondary circuits is not of great importance, a similar effect can be obtained by &ldquo;tapping&rdquo; a single secondary winding at multiple points along its length, like the figure below.</p>
-<p>&nbsp;</p>
+
 <p><img src="/uploads/articles/single-tapped-secondary-provides-multiple-voltages.jpg" /></p>
 <p><em>A single tapped secondary provides multiple voltages.</em></p>
-<p>&nbsp;</p>
-<h3>Multi-Pole Switch Transformer</h3>
+
+## Multi-Pole Switch Transformer
 <p>A tap is nothing more than a wire connection made at some point on a winding between the very ends. Not surprisingly, the winding turn/voltage magnitude relationship of a normal transformer holds true for all tapped segments of windings. This fact can be exploited to produce a transformer capable of multiple ratios:</p>
-<p>&nbsp;</p>
+
 <p><img src="/uploads/articles/multi-pole-switch-transformer.jpg" /></p>
 <p><em>A tapped secondary using a switch to select one of many possible voltages.</em></p>
-<p>&nbsp;</p>
-<h3>Variable Transformer</h3>
+
+## Variable Transformer
 <p>Carrying the concept of winding taps further, we end up with a &ldquo;variable transformer,&rdquo; where a sliding contact is moved along the length of an exposed secondary winding, able to connect with it at any point along its length. The effect is equivalent to having a winding tap at every turn of the winding, and a switch with poles at every tap position:</p>
-<p>&nbsp;</p>
+
 <p><img src="/uploads/articles/variable-transformer.jpg" /></p>
 <p><em>A sliding contact on the secondary continuously varies the secondary voltage.</em></p>
-<p>&nbsp;</p>
+
 <p>One consumer application of the variable transformer is in speed controls for model train sets, especially the train sets of the 1950s and 1960s. These transformers were essentially step-down units, the highest voltage obtainable from the secondary winding being substantially less than the primary voltage of 110 to 120 volts AC.</p>
 <p>The variable-sweep contact provided a simple means of voltage control with little-wasted power, much more efficient than control using a <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-4/ac-resistor-circuits-capacitive/" target="_blank">variable resistor</a>!</p>
 <p>Moving-slide contacts are too impractical to be used in large industrial power transformer designs, but multi-pole switches and winding taps are common for voltage adjustment. Adjustments need to be made periodically in power systems to accommodate changes in loads over months or years in time, and these switching circuits provide a convenient means.</p>
 <p>Typically, such &ldquo;tap switches&rdquo; are not engineered to handle the full-load current, but must be actuated only when the transformer has been de-energized (no power).</p>
-<h3>Autotransformer</h3>
+## Autotransformer
 <p>Seeing as how we can tap any transformer winding to obtain the equivalent of several windings (albeit with loss of electrical isolation between them), it makes sense that it should be possible to forego electrical isolation altogether and build a transformer from a single winding. Indeed this is possible, and the resulting device is called an <em>autotransformer</em>:</p>
-<p>&nbsp;</p>
+
 <p><img src="/uploads/articles/autotransformer-1.jpg" /></p>
 <p><em>This autotransformer steps the voltage up with a single tapped winding, saving copper, sacrificing isolation.</em></p>
-<p>&nbsp;</p>
+
 <p>The autotransformer depicted above performs a voltage step-up function. A step-down autotransformer would look something like the figure below.</p>
-<p>&nbsp;</p>
+
 <p><img src="/uploads/articles/autotransformer-2.jpg" /></p>
 <p><em>This autotransformer steps the voltage down with a single copper-saving tapped winding.</em></p>
-<p>&nbsp;</p>
+
 <p>Autotransformers find popular use in applications requiring a slight boost or reduction in voltage to a load.</p>
 <p>The alternative with a normal (isolated) transformer would be to either have just the right primary/secondary winding ratio made for the job or use a step-down configuration with the secondary winding connected in series-aiding (&ldquo;boosting&rdquo;) or series-opposing (&ldquo;bucking&rdquo;) fashion.</p>
 <p>Primary, secondary, and load voltages are given to illustrate how this would work.</p>
-<h3>Autotransformer Configurations</h3>
+## Autotransformer Configurations
 <p>First, the &ldquo;boosting&rdquo; configuration. In the figure below the secondary coil&rsquo;s polarity is oriented so that its voltage directly adds to the primary voltage.</p>
-<p>&nbsp;</p>
+
 <p><img src="/uploads/articles/boosting.jpg" /></p>
 <p><em>Ordinary transformer wired as an autotransformer to boost the line voltage.</em></p>
-<p>&nbsp;</p>
+
 <p>Next, the &ldquo;bucking&rdquo; configuration. In the figure below, the secondary coil&rsquo;s polarity is oriented so that its voltage directly subtracts from the primary voltage:</p>
-<p>&nbsp;</p>
+
 <p><img src="/uploads/articles/bucking.jpg" /></p>
 <p><em>Ordinary transformer wired as an autotransformer to buck the line voltage down.</em></p>
-<p>&nbsp;</p>
+
 <p>The prime advantage of an autotransformer is that the same boosting or bucking function is obtained with only a single winding, making it cheaper and lighter to manufacture than a regular (isolating) transformer having both primary and secondary windings.</p>
-<h3>Variac Variable Autotransformer</h3>
+## Variac Variable Autotransformer
 <p>Like regular transformers, autotransformer windings can be tapped to provide variations in ratio. Additionally, they can be made continuously variable with a sliding contact to tap the winding at any point along its length.</p>
 <p>The latter configuration is popular enough to have earned itself its own name: the <em>Variac</em>. (figure below)</p>
-<p>&nbsp;</p>
+
 <p><img src="/uploads/articles/the-variac-variable-autotransformer.jpg" /></p>
 <p><em>A variac is an autotransformer with a sliding tap.</em></p>
-<p>&nbsp;</p>
+
 <p>Small variacs for benchtop use are popular pieces of equipment for the electronics experimenter, being able to step household AC voltage down (or sometimes up as well) with a wide, fine range of control by a simple twist of a knob.</p>
-<p>&nbsp;</p>
+
 <p><strong>REVIEW:</strong></p>
 <ul>
 <li>Transformers can be equipped with more than just a single primary and single secondary winding pair. This allows for multiple step-up and/or step-down ratios in the same device.</li>

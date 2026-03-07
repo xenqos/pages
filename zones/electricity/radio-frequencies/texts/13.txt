@@ -1,54 +1,54 @@
-<h1>The 50 Ω Question: Impedance Matching in RF Design</h1>
+# The 50 Ω Question: Impedance Matching in RF Design
 <p>Matching seems like a trivial exercise when you&rsquo;re dealing with a theoretical circuit composed of an ideal source, a transmission line, and a load.</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/Keim_RF_textbook_Chp3P4_1.jpg" /></p>
-<p>&nbsp;</p>
+
 <p>Let&rsquo;s assume that the load impedance is fixed. All we need to do is include a source impedance (Z<sub>S</sub>) equal to Z<sub>L</sub> and then design the transmission line so that its characteristic impedance (Z<sub>0</sub>) is also equal to Z<sub>L</sub>.</p>
 <p>But let&rsquo;s consider for a moment the difficulty of implementing this scheme throughout a complex RF circuit consisting of numerous passive components and integrated circuits. The RF design process would be seriously unwieldy if engineers had to modify every component and specify the dimensions of every microstrip according to the one impedance chosen as the basis for all the others.</p>
 <p>Also, this assumes that the project has already reached the PCB stage. What if we want to test and characterize a system using discrete modules, with off-the-shelf cables as interconnects? Compensating for mismatched impedances is even more impractical under these circumstances.</p>
 <p>The solution is simple: choose a standardized impedance that can be used in numerous RF systems, and ensure that components and cables are designed accordingly. This impedance has been chosen; the unit is ohms, and the number is 50.</p>
-<p>&nbsp;</p>
-<h3>Fifty Ohms</h3>
+
+## Fifty Ohms
 <p>The first thing to understand is that there is nothing intrinsically special about a 50 &Omega; impedance. This is not a fundamental constant of the universe, though you might get the impression that it is if you spend enough time around RF engineers. It is not even a fundamental constant of electrical engineering&mdash;remember, for example, that simply changing the physical dimensions of a coaxial cable will alter the characteristic impedance.</p>
 <p>Nevertheless, 50 &Omega; impedance is very important, because it is the impedance around which most RF systems are designed. It is difficult to determine exactly why 50 &Omega; became the standardized RF impedance, but it&rsquo;s reasonable to assume that 50 &Omega; was found to be a good compromise in the context of early coaxial cables.</p>
 <p>The important issue, of course, is not the origin of the specific value but rather the benefits of having this standardized impedance. Achieving a well-matched design is vastly simpler because manufacturers of ICs, fixed attenuators, antennas, and so forth can build their parts with this impedance in mind. Also, PCB layout becomes more straightforward because so many engineers have the same goal, namely, to design microstrips and striplines that have a characteristic impedance of 50 &Omega;.</p>
 <p><br />
 <img src="https://www.allaboutcircuits.com/uploads/articles/RFT_ch3_pg2_1_2.jpg" /></p>
-<h5><em>According to </em><a href="http://www.analog.com/media/en/training-seminars/tutorials/MT-094.pdf" target="_blank"><em>this app note</em></a><em> from Analog Devices, you can create a 50 </em><em>&Omega; microstrip as follows: 1-ounce copper, 20-mil-wide trace, 10-mil separation between trace and ground plane (assuming FR-4 dielectric).</em></h5>
-<p>&nbsp;</p>
+#### <em>According to </em><a href="http://www.analog.com/media/en/training-seminars/tutorials/MT-094.pdf" target="_blank"><em>this app note</em></a><em> from Analog Devices, you can create a 50 </em><em>&Omega; microstrip as follows: 1-ounce copper, 20-mil-wide trace, 10-mil separation between trace and ground plane (assuming FR-4 dielectric).</em>
+
 <p>Before we move on, let&rsquo;s be clear that not every high-frequency system or component is designed for 50 &Omega;. Other values could be chosen, and in fact 75 &Omega; impedance is still common. The characteristic impedance of a coaxial cable is proportional to the natural log of the ratio of the outer diameter (D2) to the inner diameter (D1).</p>
 <p><br />
 <img src="https://www.allaboutcircuits.com/uploads/articles/RFT_ch3_pg2_3.jpg" /></p>
-<p>&nbsp;</p>
+
 <p>This means that more separation between the inner conductor and outer conductor corresponds to a higher impedance. Greater separation between the two conductors also leads to lower capacitance. Thus, 75 &Omega; coax has lower capacitance than 50 &Omega; coax, and this makes 75 &Omega; cable more suitable for high-frequency digital signals, which require low capacitance in order to avoid excessive attenuation of the high-frequency content associated with the rapid transitions between logic low and logic high.</p>
-<h3>Reflection Coefficient</h3>
+## Reflection Coefficient
 <p>Considering how important impedance matching is in RF design, we shouldn&rsquo;t be surprised to find that there is a specific parameter used to express the quality of a match. It is called the reflection coefficient; the symbol is &Gamma; (the Greek capital letter gamma). It is the ratio of the complex amplitude of the reflected wave to the complex amplitude of the incident wave. However, the relationship between incident wave and reflected wave is determined by the source (Z<sub>S</sub>) and load (Z<sub>L</sub>) impedances, and thus it is possible to define the reflection coefficient in terms of these impedances:</p>
-<p>&nbsp;</p>
+
 <p>$$\Gamma=\frac{Z_L-Z_S}{Z_L+Z_S}$$</p>
-<p>&nbsp;</p>
+
 <p>If the &ldquo;source&rdquo; in this case is a transmission line, we can change the Z<sub>S</sub> to Z<sub>0</sub>.</p>
-<p>&nbsp;</p>
+
 <p>$$\Gamma=\frac{Z_L-Z_0}{Z_L+Z_0}$$</p>
-<p>&nbsp;</p>
+
 <p>In a typical system, the magnitude of the reflection coefficient is a number between zero and one. Let&rsquo;s look at three mathematically straightforward situations to help us understand how the reflection coefficient corresponds to actual circuit behavior:</p>
 <ul>
 <li>If the match is perfect (Z<sub>L</sub> = Z<sub>0</sub>), the numerator is zero, and thus the reflection coefficient is zero. This makes sense&nbsp;because perfect matching results in no reflection.</li>
 <li>If the load impedance is infinite (i.e., an open circuit), the reflection coefficient becomes infinity divided by infinity, which is one. A reflection coefficient of one corresponds to full reflection, i.e., all of the wave energy is reflected. This makes sense because a transmission line connected to an open circuit corresponds to a complete discontinuity (see the previous page)&mdash;the load cannot absorb any energy, so it must all be reflected.</li>
 <li>If the load impedance is zero (i.e., a short circuit), the magnitude of the reflection coefficient becomes Z<sub>0</sub> divided by Z<sub>0</sub>. Thus we again have |&Gamma;| = 1, which makes sense because a short circuit also corresponds to a complete discontinuity that cannot absorb any of the incident wave energy.</li>
 </ul>
-<h3>VSWR</h3>
+## VSWR
 <p>Another parameter used to describe impedance matching is the voltage standing wave ratio (VSWR). It is defined as follows:</p>
-<p>&nbsp;</p>
+
 <p>$$VSWR=\frac{1+\lvert\Gamma\rvert}{1-\lvert\Gamma\rvert}$$</p>
-<p>&nbsp;</p>
+
 <p>VSWR approaches impedance matching from the perspective of the resulting standing wave. It conveys the ratio of the highest standing-wave amplitude to the lowest standing-wave amplitude. <a href="https://www.youtube.com/watch?v=M1PgCOTDjvI" target="_blank">This video</a> can help you visualize the relationship between impedance mismatch and the amplitude characteristics of the standing wave, and the following diagram conveys standing-wave amplitude characteristics for three different reflection coefficients.</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/RFT_ch3_pg4_4.JPG" /></p>
-<h5><em>More impedance mismatch leads to a greater difference between the highest-amplitude and lowest-amplitude locations along the standing wave.</em>&nbsp;<em>Image used courtesy of&nbsp;the Interferometrist&nbsp;[<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a>]</em></h5>
-<h5>&nbsp;</h5>
+#### <em>More impedance mismatch leads to a greater difference between the highest-amplitude and lowest-amplitude locations along the standing wave.</em>&nbsp;<em>Image used courtesy of&nbsp;the Interferometrist&nbsp;[<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a>]</em>
+#### &nbsp;
 <p>VSWR is commonly expressed as a ratio. A perfect match would be 1:1, meaning that the peak amplitude of the signal is always the same (i.e., there is no standing wave). A ratio of 2:1 indicates that reflections have resulted in a standing wave with a maximum amplitude that is twice as large as its minimum amplitude.</p>
-<p>&nbsp;</p>
-<h3>Summary</h3>
+
+## Summary
 <ul>
 <li>The use of a standardized impedance makes RF design much more practical and efficient.</li>
 <li>Most RF systems are built around 50 &Omega; impedance. Some systems use 75 &Omega;; this latter value is more appropriate for high-speed digital signals.</li>

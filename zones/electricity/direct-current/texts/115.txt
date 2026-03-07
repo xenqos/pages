@@ -1,13 +1,13 @@
-<h1>Capacitor Transient Response</h1>
+# Capacitor Transient Response
 <p>Because capacitors store energy in the form of an <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-13/electric-fields-capacitance/" target="_blank">electric field</a>, they tend to act like small secondary-cell batteries, being able to store and release electrical energy. A fully discharged capacitor maintains zero volts across its terminals, and a <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-3/capacitor-charging-and-discharging/" target="_blank">charged capacitor</a> maintains a steady quantity of voltage across its terminals, just like a battery.</p>
 <p>When capacitors are placed in a circuit with other sources of voltage, they will absorb energy from those sources, just as a secondary-cell battery will become charged as a result of being connected to a generator. A fully discharged capacitor, having a terminal voltage of zero, will initially act as a short-circuit when attached to a source of voltage, drawing maximum <a href="https://www.allaboutcircuits.com/video-lectures/basic-requirements-for-current/" target="_blank">current</a> as it begins to build a charge.</p>
 <p>Over time, the capacitor&rsquo;s terminal voltage rises to meet the applied voltage from the source, and the current through the capacitor decreases correspondingly. Once the capacitor has reached the full voltage of the source, it will stop drawing current from it, and behave essentially as an open-circuit.</p>
-<p>&nbsp;</p>
+
 <p><img src="/uploads/articles/voltage-across-the-capacitor-circuit.jpg" /></p>
-<p>&nbsp;</p>
+
 <p>When the switch is first closed, the voltage across the capacitor (which we were told was fully discharged) is zero volts; thus, it first behaves as though it were a short-circuit. Over time, the capacitor voltage will rise to equal battery voltage, ending in a condition where the capacitor behaves as an open-circuit.</p>
 <p>Current through the circuit is determined by the difference in voltage between the battery and the capacitor, divided by the <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/resistance/" target="_blank">resistance</a> of 10 k&Omega;. As the capacitor voltage approaches the battery voltage, the current approaches zero. Once the capacitor voltage has reached 15 volts, the current will be exactly zero. Let&rsquo;s see how this works using real values:</p>
-<p>&nbsp;</p>
+
 <p><img src="/uploads/articles/capacitor-voltage-graph.jpg" /></p>
 <table>
 <tbody>
@@ -73,15 +73,15 @@
 </tr>
 </tbody>
 </table>
-<p>&nbsp;</p>
+
 <p>The capacitor voltage&rsquo;s approach to 15 volts and the current&rsquo;s approach to zero over time is what a mathematician would describe as <em><a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-16/voltage-current-calculations/" target="_blank">asymptotic</a></em><em>:</em> that is, they both approach their final values, getting closer and closer over time, but never exactly reach their destinations. For all practical purposes, though, we can say that the capacitor voltage will eventually reach 15 volts and that the current will eventually equal zero.</p>
 <p>Using the SPICE circuit analysis program, we can chart this asymptotic buildup of capacitor voltage and decay of capacitor current in a more graphical form (capacitor current is plotted in terms of voltage drop across the resistor, using the resistor as a shunt to <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-2/ammeter-usage/" target="_blank">measure current</a>):</p>
-<p>&nbsp;</p>
+
 <p><img src="/uploads/articles/spice-table-cap-transient-response.png" /></p>
-<p>&nbsp;</p>
+
 <p>As you can see, I have used the <em>.plot</em> command in the netlist instead of the more familiar <em>.printcommand</em>. This generates a pseudo-graphic plot of figures on the computer screen using text characters. SPICE plots graphs in such a way that time is on the vertical axis (going down) and amplitude (voltage/current) is plotted on the horizontal (right=more; left=less).</p>
 <p>Notice how the voltage increases (to the right of the plot) very quickly at first, then tapering off as time goes on. Current also changes very quickly at first then levels off as time goes on, but it is approaching minimum (left of scale) while voltage approaches maximum.</p>
-<p>&nbsp;</p>
+
 <p><strong>REVIEW:</strong></p>
 <ul>
 <li>Capacitors act somewhat like secondary-cell batteries when faced with a sudden change in applied voltage: they initially react by producing a high current which tapers off over time.</li>

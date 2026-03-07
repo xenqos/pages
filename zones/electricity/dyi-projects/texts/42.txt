@@ -1,32 +1,32 @@
-<h1>AC Lab - Noise Cancellation</h1>
-<h3>Project Overview</h3>
+# AC Lab - Noise Cancellation
+## Project Overview
 <p>Using the simple electronics system illustrated in Figure 1, you will get to experience volume&nbsp;reduction through destructive interference, which forms the basis of&nbsp;noise-canceling headphones.&nbsp;</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/sound-cancellation-illustration.jpg" /></p>
-<h5><em><strong>Figure 1.</strong> Noise cancellation project illustration.</em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Figure 1.</strong> Noise cancellation project illustration.</em>
+
 <p>In one operating mode, the sound waves will reinforce one another to increase the&nbsp;volume. In the opposite operating mode, the sound waves will destructively interfere to reduce the&nbsp;volume.</p>
-<p>&nbsp;</p>
-<h3>Project Overview</h3>
+
+## Project Overview
 <ul>
 <li><a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-4/transformer-power-supply/" target="_blank">Low-voltage AC power supply</a></li>
 <li>Two audio speakers</li>
 <li>Two 220 &Omega; <a href="https://eepower.com/resistor-guide/" target="_blank">resistors</a></li>
 </ul>
 <p>Large, low-frequency (woofer) speakers are most appropriate for this experiment. For optimum results, the speakers should be identical and mounted in enclosures.</p>
-<p>&nbsp;</p>
-<h3>Learning Objectives</h3>
+
+## Learning Objectives
 <ul>
 <li>To illustrate how <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-4/phase-shift/" target="_blank">phase shift</a> can cause waves to either reinforce or interfere with each other</li>
 <li>To show the importance of speaker phasing&nbsp;in stereo systems</li>
 </ul>
-<p>&nbsp;</p>
-<h3>Instructions</h3>
+
+## Instructions
 <p><strong>Step 1:&nbsp;</strong>Connect each speaker to the low-voltage AC <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-9/power-supply-circuits/" target="_blank">power supply</a> through a 220 &Omega; resistor, as illustrated in Figures 1 and 2.&nbsp;</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/sound-cancellation-schematic-diagram.jpg" /></p>
-<h5><em><strong>Figure 2.</strong> Schematic diagram of the noise cancellation project</em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Figure 2.</strong> Schematic diagram of the noise cancellation project</em>
+
 <p>The <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/resistors/" target="_blank">resistors</a>&nbsp;limit&nbsp;the amount of power delivered to each speaker by the power supply.</p>
 <p><strong>Step 2:&nbsp;</strong>A low-pitched, 60-Hertz tone should be heard from the speakers. If the tone sounds too loud, use higher-value resistors.</p>
 <p><strong>Step 3:&nbsp;</strong>With both speakers connected and producing sound, position them so that they are only a foot or two away, facing toward each other. Listen to the volume of the 60 Hz tone.</p>

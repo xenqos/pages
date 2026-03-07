@@ -1,4 +1,4 @@
-<h1>SPICE Models</h1>
+# SPICE Models
 <p><a name="SPICE, diode"></a><a name="Diode, SPICE"></a> The SPICE circuit simulation program provides for modeling diodes in circuit simulations. The diode model is based on characterization of individual devices as described in a product data sheet and manufacturing process characteristics not listed. Some information has been extracted from a 1N4004 data sheet in Figure below.</p>
 <p><a name="03467.png"></a> <img  src="//sub.allaboutcircuits.com/images/03467.png" /> <em>Data sheet 1N4004 excerpt, after <a href="#DI4.bibitem">[DI4]</a>.</em></p>
 <p>The diode statement begins with a diode element name which must begin with &ldquo;d&rdquo; plus optional characters. Example diode element names include: d1, d2, dtest, da, db, d101. Two node numbers specify the connection of the anode and cathode, respectively, to other components. The node numbers are followed by a model name, referring to a subsequent &ldquo;.model&rdquo; statement.</p>

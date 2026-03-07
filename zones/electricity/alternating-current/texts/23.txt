@@ -1,70 +1,70 @@
-<h1>Series Resistor-Capacitor Circuits</h1>
+# Series Resistor-Capacitor Circuits
 <p>In the last section, we learned what would happen in simple resistor-only and capacitor-only AC circuits. Now we will combine the two components together in series form and investigate the effects.</p>
-<p>&nbsp;</p>
+
 <p><img src="/uploads/articles/series-capacitor-circuit-diagram.jpg" /></p>
 <p><em>Series capacitor circuit: voltage lags current by 0&deg; to 90&deg;.</em></p>
-<p>&nbsp;</p>
-<h3>Impedance Calculation</h3>
+
+## Impedance Calculation
 <p>The resistor will offer 5 &Omega; of resistance to AC current regardless of frequency, while the capacitor will offer 26.5258 &Omega; of reactance to AC current at 60 Hz.</p>
 <p>Because the resistor&rsquo;s resistance is a real number (5 &Omega; &ang; 0&deg;, or 5 + j0 &Omega;), and the capacitor&rsquo;s reactance is an imaginary number (26.5258 &Omega; &ang; -90&deg;, or 0 - j26.5258 &Omega;), the combined effect of the two components will be an opposition to current equal to the complex sum of the two numbers.</p>
 <p>The term for this complex opposition to current is <em><a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-5/review-of-r-x-and-z/" target="_blank">impedance</a></em>, its symbol is Z, and it is also expressed in the unit of ohms, just like resistance and reactance. In the above example, the total circuit impedance is:</p>
-<p>&nbsp;</p>
+
 <p><img src="/uploads/articles/circuit-impedance-equation1.jpg" /></p>
-<p>&nbsp;</p>
+
 <p>Impedance is related to <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/voltage-current/" target="_blank">voltage and current</a> just as you might expect, in a manner similar to resistance in <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-2/ohms-law/" target="_blank">Ohm&rsquo;s Law</a>:</p>
-<p>&nbsp;</p>
+
 <p><img src="/uploads/articles/ohms-law-for-ac-circuits1.jpg" /></p>
-<p>&nbsp;</p>
+
 <p>In fact, this is a far more comprehensive form of Ohm&rsquo;s Law than what was taught in DC electronics (E=IR), just as impedance is a far more comprehensive expression of opposition to the flow of electrons than simple resistance is. Any resistance and any reactance, separately or in combination (series/parallel), can be and should be represented as a single impedance.</p>
-<h3>Current Calculation</h3>
+## Current Calculation
 <p>To calculate current in the above circuit, we first need to give a phase angle reference for the voltage source, which is generally assumed to be zero. (The phase angles of resistive and capacitive impedance are <em>always</em> 0&deg; and -90&deg;, respectively, regardless of the given phase angles for voltage or current.)</p>
-<p>&nbsp;</p>
+
 <p><img src="/uploads/articles/current-calculation1.jpg" /></p>
-<p>&nbsp;</p>
+
 <p><img src="/uploads/articles/current-calculation2.jpg" /></p>
-<p>&nbsp;</p>
+
 <p>As with the purely capacitive circuit, the current wave is leading the voltage wave (of the source), although this time the difference is 79.325&deg; instead of a full 90&deg;.</p>
-<p>&nbsp;</p>
+
 <p><img src="/uploads/articles/voltage-lags-current-in-series-r-c-circuit.jpg" /></p>
 <p><em>Voltage lags current (current leads voltage)in a series R-C circuit.</em></p>
-<p>&nbsp;</p>
-<h3>Table Method</h3>
+
+## Table Method
 <p>As we learned in the AC inductance chapter, the &ldquo;table&rdquo; method of organizing circuit quantities is a very useful tool for AC analysis just as it is for DC analysis. Let&rsquo;s place out known figures for this series circuit into a table and continue the analysis using this tool:</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/SRCC_table1_2.jpg" /></p>
-<p>&nbsp;</p>
+
 <p>Current in a series circuit is shared equally by all components, so the figures placed in the &ldquo;Total&rdquo; column for current can be distributed to all other columns as well:</p>
 <p>Continuing with our analysis, we can apply Ohm&rsquo;s Law (E=IR) vertically to determine voltage across the resistor and capacitor:</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/SRCC_table2.jpg" /></p>
-<p>&nbsp;</p>
+
 <p>Notice how the voltage across the resistor has the exact same phase angle as the current through it, telling us that E and I are in phase (for the resistor only). The voltage across the capacitor has a phase angle of -10.675&deg;, exactly 90&deg; <em>less</em> than the phase angle of the circuit current. This tells us that the capacitor&rsquo;s voltage and current are still 90&deg; out of phase with each other.</p>
-<h3>Calculations Using SPICE</h3>
+## Calculations Using SPICE
 <p>Let&rsquo;s check our calculations with SPICE:</p>
-<p>&nbsp;</p>
+
 <p><img src="/uploads/articles/spice-circuit.jpg" /></p>
 <p><em>Spice circuit: R-C.</em></p>
-<p>&nbsp;</p>
+
 <pre>
 ac r-c circuit&#10; v1 1 0 ac 10 sin&#10; r1 1 2 5&#10; c1 2 0 100u&#10; .ac lin 1 60 60&#10; .print ac v(1,2) v(2,0) i(v1)&#10; .print ac vp(1,2) vp(2,0) ip(v1)&#10; .end&#10; freq            v(1,2)       v(2)       i(v1)&#10; 6.000E+01       1.852E+00       9.827E+00       3.705E-01&#10; &#10; freq            vp(1,2)       vp(2)       ip(v1)&#10; 6.000E+01       7.933E+01       -1.067E+01      -1.007E+02&#10;</pre>
-<p>&nbsp;</p>
+
 <p><img src="/uploads/articles/interpreted-spice-equation.jpg" /></p>
-<p>&nbsp;</p>
+
 <p>Once again, <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-3/spice-models/" target="_blank">SPICE</a> confusingly prints the current phase angle at a value equal to the real phase angle plus 180&deg; (or minus 180&deg;).</p>
 <p>However, it&rsquo;s a simple matter to correct this figure and check to see if our work is correct. In this case, the -100.7&deg; output by SPICE for current phase angle equates to a positive 79.3&deg;, which does correspond to our previously calculated figure of 79.325&deg;.</p>
 <p>Again, it must be emphasized that the calculated figures corresponding to real-life voltage and current measurements are those in <em>polar</em> form, not rectangular form!</p>
 <p>For example, if we were to actually build this series resistor-capacitor circuit and measure voltage across the resistor, our voltmeter would indicate <strong>1.8523</strong> volts, not 343.11 millivolts (real rectangular) or 1.8203 volts (imaginary rectangular).</p>
 <p>Real instruments connected to real circuits provide indications corresponding to the vector length (magnitude) of the calculated figures. While the rectangular form of complex number notation is useful for performing addition and subtraction, it is a more abstract form of notation than polar, which alone has direct correspondence to true measurements.</p>
 <p>Impedance (Z) of a series R-C circuit may be calculated, given the resistance (R) and the capacitive reactance (X<sub>C</sub>). Since E=IR, E=IX<sub>C</sub>, and E=IZ, resistance, reactance, and impedance are proportional to voltage, respectively. Thus, the voltage phasor diagram can be replaced by a similar impedance diagram.</p>
-<p>&nbsp;</p>
+
 <p><img src="/uploads/articles/r-c-circuit-impedance-phasor-diagram.jpg" /></p>
 <p><em>Series: R-C circuit Impedance phasor diagram.</em></p>
-<p>&nbsp;</p>
+
 <p><strong>Example:</strong> Given: A 40 &Omega; resistor in series with a 88.42 microfarad capacitor. Find the impedance at 60 hertz.</p>
-<p>&nbsp;</p>
+
 <pre>
 XC = 1/(2&pi;fC)&#10; XC = 1/(2&pi;&middot;60&middot;88.42&times;10-6)&#10; XC = 30 &Omega; &#10; Z = R - jXC &#10; Z = 40 - j30 &#10; |Z| = sqrt(402 + (-30)2) = 50 &Omega; &#10; &ang;Z = arctangent(-30/40) = -36.87&deg; &#10; Z = 40 - j30 = 50&ang;-36.87&deg;&#10;</pre>
-<p>&nbsp;</p>
+
 <p><strong>REVIEW:</strong></p>
 <ul>
 <li><em>Impedance</em> is the total measure of opposition to electric current and is the complex (vector) sum of (&ldquo;real&rdquo;) resistance and (&ldquo;imaginary&rdquo;) reactance.</li>

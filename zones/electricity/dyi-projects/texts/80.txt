@@ -1,13 +1,13 @@
-<h1>Digital Lab - S-R Latch With Enable Input using NAND Gates</h1>
-<h3>Project Overview</h3>
+# Digital Lab - S-R Latch With Enable Input using NAND Gates
+## Project Overview
 <p>In this next project in the digital series, you will build and test the circuit shown in Figure 1.</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/NAND-gate-S-R-enabled-latch-illustration.jpg" /></p>
-<h5><em><strong>Figure 1.</strong> S-R enabled latch with switch inputs and LED outputs.</em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Figure 1.</strong> S-R enabled latch with switch inputs and LED outputs.</em>
+
 <p>This circuit has three switch inputs at the left, a quad 2-input <a href="https://www.allaboutcircuits.com/textbook/digital/chpt-3/gate-universality/" target="_blank">NAND gate</a> IC in the middle, and output <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-3/special-purpose-diodes/" target="_blank">light-emitting diode (LED)</a> status indicators at the right. It implements an S-R latch with a third, ENABLE, input added to the two inputs, SET&nbsp;and RESET, of the <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-7/nor-gate-s-r-latch/" target="_blank">basic S-R latch</a>.&nbsp;</p>
-<p>&nbsp;</p>
-<h3>Parts and Materials</h3>
+
+## Parts and Materials
 <ul>
 <li>4011 quad NAND gate</li>
 <li>Eight-position <a href="https://www.allaboutcircuits.com/textbook/digital/chpt-3/dip-gate-packaging/" target="_blank">dual inline package (DIP) </a>switch</li>
@@ -17,34 +17,34 @@
 <li>Two 470 &Omega; resistors</li>
 </ul>
 <p><strong>Caution!</strong> The 4011 IC is a <a href="https://www.allaboutcircuits.com/textbook/digital/chpt-3/cmos-gate-circuitry/" target="_blank">complementary metal-oxide semiconductor (CMOS)</a> and, therefore, <strong>sensitive to <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/static-electricity/" target="_blank">static electricity</a>!</strong></p>
-<p>&nbsp;</p>
-<h3>Learning Objectives</h3>
+
+## Learning Objectives
 <ul>
 <li>Principle and function of a latch circuit with ENABLE</li>
 <li><a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-7/introduction-to-digital-integrated-circuits/" target="_blank">Digital circuit</a> construction and testing</li>
 </ul>
-<p>&nbsp;</p>
-<h3>Instructions</h3>
+
+## Instructions
 <p><strong>Step 1:&nbsp;</strong>Review the pinout diagram in the <a href="https://www.ti.com/lit/ds/symlink/cd4011b.pdf?ts=1675363933081&amp;ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FCD4011B" target="_blank">datasheet for your 4011 CMOS quad NAND gate IC</a>. It will be similar to Figure 1, but some of the pins may be different. Therefore, you may need to change the connections in the breadboard illustrations to match the pinout of your IC.</p>
-<p>&nbsp;</p>
+
 <p><strong><img src="https://www.allaboutcircuits.com/uploads/articles/pinout-diagram-for-4011-quad-NAND-gate.jpg" /></strong></p>
-<h5><em><strong>Figure 2. </strong>Typical pinout diagram for a 4011 CMOS quad 2-input NAND gate IC.</em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Figure 2. </strong>Typical pinout diagram for a 4011 CMOS quad 2-input NAND gate IC.</em>
+
 <p><strong>Step 2:&nbsp;</strong>Make the three switch connections to the 10 k&Omega; <a href="https://eepower.com/resistor-guide/resistor-applications/pull-up-resistor-pull-down-resistor/#:~:text=What%20Are%20Pull%2Ddown%20Resistors,seen%20in%20the%20following%20figure." target="_blank">pull-down resistors</a> at the left side of the <a href="https://www.allaboutcircuits.com/technical-articles/understanding-schematics/" target="_blank">circuit schematic</a> of Figure 3 and the left side of the breadboard illustration of Figure 1.</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/NAND-gate-S-R-enabled-latch-schematic.jpg" /></p>
-<h5><em><strong>Figure 3. </strong>Schematic diagram of an&nbsp;S-R latch built using NOR gates.</em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Figure 3. </strong>Schematic diagram of an&nbsp;S-R latch built using NOR gates.</em>
+
 <p><strong>Step 3:&nbsp;</strong>Wire up the four NAND gates, as illustrated in Figure 3.&nbsp;Although this circuit uses NAND gates instead of NOR gates, its behavior is identical to that of the <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-7/nor-gate-s-r-latch/" target="_blank">NOR gate S-R latch</a>.&nbsp;</p>
 <p><strong>Step 4:&nbsp;</strong>Finish the circuit by connecting the outputs of the two rightmost NAND gates to LEDs.&nbsp;Add 470 &Omega; <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/simple-series-circuits/" target="_blank">resistors in series</a> with the LEDs to limit the currents.&nbsp;If we assign the left switch as the SET&nbsp;input and the right switch as the RESET input,&nbsp;the left LED will be the Q&nbsp;output and the right LED the \[\overline{Q} \] output.&nbsp;</p>
-<p>&nbsp;</p>
+
 <p>$$ \overline{Q} = \neg Q = ~!Q $$&nbsp;</p>
-<p>&nbsp;</p>
+
 <p><strong>Step 5:&nbsp;</strong>Test all of the input combinations of SET,&nbsp;RESET, and&nbsp;ENABLE. In a basic S-R latch, a&nbsp;high (1)&nbsp;SET input drives Q &nbsp;high (1), and a&nbsp;high (1)&nbsp;RESET input drives Q low (0). In this circuit, we must consider&nbsp;the presence of a third input,&nbsp;ENABLE. As its name suggests, the purpose of the ENABLE input is to enable or disable the SET&nbsp;and&nbsp;RESET inputs from having an effect on the circuit&rsquo;s output status.</p>
 <p>The <a href="https://www.allaboutcircuits.com/textbook/digital/chpt-8/karnaugh-maps-truth-tables-boolean-expressions/" target="_blank">truth table</a> for the S-R latch with enable is provided in Figure 4.&nbsp;</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/gated-S-R-latch-circuit-diagram.jpg" /></p>
-<h5><em><strong>Figure 4. </strong>AND-NOR&nbsp;gate implementation (left) and truth table for the S-R latch with enable (right).</em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Figure 4. </strong>AND-NOR&nbsp;gate implementation (left) and truth table for the S-R latch with enable (right).</em>
+
 <p>When the ENABLE input is high (1),&nbsp;the circuit acts just like the NOR gate S-R latch. When the ENABLE input is low (0),&nbsp;the SET and RESET inputs are disabled and have no effect whatsoever on the outputs, leaving the circuit in its latched state. Test all of the possible inputs yourself to verify that you have connected your circuit correctly and that the circuit does indeed provide this functionality.</p>
 <p>This kind of <a href="https://www.allaboutcircuits.com/worksheets/latch-circuits/" target="_blank">latch circuit</a> (also called a <em>gated S-R latch</em>) may be constructed from two NOR gates and two AND gates, as illustrated in Figure 4, but the NAND gate design is easier to build since it makes use of all four gates in a single integrated circuit.</p>

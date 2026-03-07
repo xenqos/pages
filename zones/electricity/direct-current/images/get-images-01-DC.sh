@@ -17,4 +17,4 @@ prefix='https://www.allaboutcircuits.com'
 #sleep 2; echo '002'; wget "https://sub.allaboutcircuits.com/images/10011.png"
 #sleep 2; echo '002'; wget "https://sub.allaboutcircuits.com/images/10012.png"
 #sleep 2; echo '002'; wget "https://sub.allaboutcircuits.com/images/10013.png"
-sleep 2; echo '002'; wget "https://sub.allaboutcircuits.com/images/10014.png"
+#sleep 2; echo '002'; wget "https://sub.allaboutcircuits.com/images/10014.png"

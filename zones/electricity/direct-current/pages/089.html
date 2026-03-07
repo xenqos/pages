@@ -33,15 +33,15 @@
 
 <h1>Practical Considerations - Batteries</h1>
 <p><a name=&quot;Bank, battery&quot;></a> When connecting batteries together to form larger &ldquo;banks&rdquo; (a <em>battery</em> of batteries?), the constituent batteries must be matched to each other so as to not cause problems.</p>
-<h3>Batteries in Series</h3>
+<h2>Batteries in Series</h2>
 <p>First we will consider connecting batteries in series for greater voltage:</p>
 <p><img src=&quot;/uploads/articles/connecting-batteries-in-series.jpg&quot; /></p>
 <p>We know that the current is equal at all points in a <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/simple-series-circuits/&quot; target=&quot;_blank&quot;>series circuit</a>, so whatever amount of current there is in any one of the series-connected batteries must be the same for all the others as well. For this reason, each battery must have the same amp-hour rating, or else some of the batteries will become depleted sooner than others, compromising the capacity of the whole bank. Please note that the total amp-hour capacity of this series battery bank is not affected by the number of batteries.</p>
-<h3>Batteries in Parallel</h3>
+<h2>Batteries in Parallel</h2>
 <p>Next, we will consider connecting batteries in parallel for greater current capacity (lower internal resistance), or greater amp-hour capacity:</p>
 <p><img src=&quot;/uploads/articles/connecting-batteries-in-parallel.jpg&quot; /></p>
 <p>We know that the voltage is equal across all branches of a parallel circuit, so we must be sure that these batteries are of equal voltage. If not, we will have relatively large currents circulating from one battery through another, the higher-voltage batteries overpowering the lower-voltage batteries. This is not good.</p>
-<h3>Overcurrent Protection</h3>
+<h2>Overcurrent Protection</h2>
 <p>On this same theme, we must be sure that any <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-3/safe-practices/&quot; target=&quot;_blank&quot;>overcurrent protection</a> (circuit breakers or fuses) are installed in such a way as to be effective. For our series battery bank, one fuse will suffice to protect the wiring from excessive current, since any break in a series circuit stops current through all parts of the circuit:</p>
 <p><img src=&quot;/uploads/articles/overcurrent-protection.jpg&quot; /></p>
 <p>With a parallel battery bank, one fuse is adequate for protecting the wiring against load overcurrent (between the parallel-connected batteries and the load), but we have other concerns to protect against as well. Batteries have been known to internally short-circuit, due to electrode separator failure, causing a problem, not unlike that where batteries of unequal voltage are connected in parallel: the good batteries will overpower the failed (lower voltage) battery, causing relatively large currents within the batteries&rsquo; connecting wires. To guard against this eventuality, we should protect each and every battery against overcurrent with individual battery fuses, in addition to the load fuse:</p>

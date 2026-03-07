@@ -37,7 +37,7 @@
 <p>And here is that same circuit, re-drawn for the sake of applying Millman&rsquo;s Theorem:</p>
 <p><img src=&quot;/uploads/articles/parallel-network-branches-circuit-two.jpg&quot; /></p>
 <p>By considering the supply voltage within each branch and the resistance within each branch, Millman&rsquo;s Theorem will tell us the voltage across all branches. Please note that I&rsquo;ve labeled the battery in the rightmost branch as &ldquo;B<sub>3</sub>&rdquo; to clearly denote it as being in the third branch, even though there is no &ldquo;B<sub>2</sub>&rdquo; in the circuit!</p>
-<h3>Millman&rsquo;s Theorem Equation</h3>
+<h2>Millman&rsquo;s Theorem Equation</h2>
 <p>Millman&rsquo;s Theorem is nothing more than a long equation, applied to any circuit drawn as a set of parallel-connected branches, each branch with its own voltage source and <a href=&quot;https://www.allaboutcircuits.com/video-lectures/series-circuits-part-1/&quot; target=&quot;_blank&quot;>series resista</a><a href=&quot;https://www.allaboutcircuits.com/video-lectures/series-circuits-part-1/&quot; title=&quot;&quot;>nce</a>:</p>
 <p><img src=&quot;/uploads/articles/millmans-theorem-equation.jpg&quot; /></p>
 <p>Substituting actual voltage and resistance figures from our example circuit for the variable terms of this equation, we get the following expression:</p>
@@ -45,13 +45,13 @@
 <p>The final answer of 8 volts is the voltage seen across all parallel branches, like this:</p>
 <p><img src=&quot;/uploads/articles/voltage-across-parallel-branches.jpg&quot; /></p>
 <p>The polarity of all voltages in Millman&rsquo;s Theorem is referenced to the same point. In the example circuit above, I used the bottom wire of the parallel circuit as my reference point, and so the voltages within each branch (28 for the R1 branch, 0 for the R2 branch, and 7 for the R3 branch) were inserted into the equation as positive numbers. Likewise, when the answer came out to 8 volts (positive), this meant that the top wire of the circuit was positive with respect to the bottom wire (the original point of reference). If both batteries had been connected backward (negative end up and positive ends down), the voltage for branch 1 would have been entered into the equation as -28 volts, the voltage for branch 3 as -7 volts, and the resulting answer of -8 volts would have told us that the top wire was negative with respect to the bottom wire (our initial point of reference).</p>
-<h3>Solving for Resistor Voltage Drops</h3>
+<h2>Solving for Resistor Voltage Drops</h2>
 <p>To solve for resistor voltage drops, the Millman voltage (across the parallel network) must be compared against the voltage source within each branch, using the principle of voltages adding in series to determine the magnitude and polarity of the voltage across each resistor:</p>
 <p><img src=&quot;/uploads/articles/equation-for-resistor-voltage-drops.jpg&quot; /></p>
-<h3>Solving for Branch Currents</h3>
+<h2>Solving for Branch Currents</h2>
 <p>To solve for branch currents, each resistor voltage drop can be divided by its respective resistance (I=E/R):</p>
 <p><img src=&quot;/uploads/articles/solving-for-branch-currents.jpg&quot; /></p>
-<h3>Determining the Direction of Current</h3>
+<h2>Determining the Direction of Current</h2>
 <p>The direction of current through each resistor is determined by the polarity across each resistor, <em>not</em> by the polarity across each battery, as the current can be forced back through a battery, as is the case with B<sub>3</sub> in the example circuit. This is important to keep in mind since Millman&rsquo;s Theorem doesn&rsquo;t provide as direct an indication of &ldquo;wrong&rdquo; current direction as does the Branch Current or Mesh Current methods. You must pay close attention to the polarities of resistor voltage drops as given by Kirchhoff&rsquo;s Voltage Law, determining the direction of currents from that.</p>
 <p><img src=&quot;/uploads/articles/determining-the-direction-of-current.jpg&quot; /></p>
 <p>Millman&rsquo;s Theorem is very convenient for determining the voltage across a set of parallel branches, where there are enough voltage sources present to preclude solution via regular series-parallel reduction method. It also is easy in the sense that it doesn&rsquo;t require the use of simultaneous equations. However, it is limited in that it only applied to circuits which can be re-drawn to fit this form. It cannot be used, for example, to solve an unbalanced bridge circuit. And, even in cases where Millman&rsquo;s Theorem can be applied, the solution of individual resistor voltage drops can be a bit daunting to some, the Millman&rsquo;s Theorem equation only providing a single figure for branch voltage.</p>

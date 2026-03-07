@@ -1,6 +1,6 @@
-<h1>Transistor Biasing Calculations</h1>
+# Transistor Biasing Calculations
 <p>Although transistor switching circuits operate without bias, it is unusual for analog circuits to operate without bias. One of the few examples is &ldquo;TR One, one transistor radio&rdquo; <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-9/radio-circuits/" target="_blank">TR One, Ch 9 </a>with an amplified AM (amplitude modulation) detector. Note the lack of a bias resistor at the base in that circuit. In this section, we look at a few basic bias circuits which can set a selected emitter current IE. Given a desired emitter current IE, what values of bias resistors are required, RB, RE, etc?</p>
-<h3>Base Bias Resistor</h3>
+## Base Bias Resistor
 <p><strong>The simplest biasing applies a </strong><strong><em>base-bias</em></strong><strong> resistor between the base and a base battery V</strong><strong>BB</strong><strong>.</strong> It is convenient to use the existing VCC supply instead of a new bias supply. An example of an audio amplifier stage using base-biasing is &ldquo;Crystal radio with one transistor . . . &rdquo; <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-9/radio-circuits/" target="_blank">crystal radio, Ch 9</a>. Note the resistor from the base to the battery terminal. A similar circuit is shown in the figure below. Write a KVL (Kirchhoff&rsquo;s voltage law) equation about the loop containing the battery, RB, and the VBE diode drop on the transistor in Figure below. Note that we use VBB for the base supply, even though it is actually VCC. If &beta; is large we can make the approximation that IC =IE. For silicon transistors VBE&cong;0.7V.</p>
 <p><img src="/uploads/articles/base-bias.jpg" /></p>
 <p>Base-bias</p>
@@ -13,7 +13,7 @@
 <p>The emitter current is little changed in using the standard value 910k&Omega; resistor. However, with a change in &beta; from 100 to 300, the emitter current has tripled. This is not acceptable in a power amplifier if we expect the collector voltage to swing from near VCC to near ground. However, for low level signals from micro-volts to about a volt, the bias point can be centered for a &beta; of the square root of (100&middot;300)=173. The bias point will still drift by a considerable amount. However, low-level signals will not be clipped.</p>
 <p>Base-bias is not suitable for high emitter currents, as used in power amplifiers. The base-biased emitter current is not temperature stable.</p>
 <p><strong><em>Thermal runaway</em></strong> is the result of high emitter current causing a temperature increase which causes an increase in emitter current, which further increases temperature.</p>
-<h3>Collector-Feedback Bias</h3>
+## Collector-Feedback Bias
 <p>Variations in bias due to temperature and beta may be reduced by moving the VBB end of the base-bias resistor to the collector as in the figure below. If the emitter current were to increase, the voltage drop across RC increases, decreasing VC, decreasing IB fed back to the base. This, in turn, decreases the emitter current, correcting the original increase.</p>
 <p>Write a KVL equation about the loop containing the battery, RC, RB, and the VBE drop. Substitute IC&cong;IE and IB&cong;IE/&beta;. Solving for IE yields the IE CFB-bias equation. Solving for IB yields the IB CFB-bias equation.</p>
 <p><img src="/uploads/articles/collector-feedback-bias.jpg" /></p>
@@ -24,7 +24,7 @@
 <p>The closest standard value to the 460k&Omega; collector feedback bias resistor is 470k&Omega;. Find the emitter current IE with the 470K&Omega; resistor. Recalculate the emitter current for a transistor with &beta;=100 and &beta;=300.</p>
 <p><img src="/uploads/articles/emitter-current-for-a-transistor-calculation.jpg" /></p>
 <p>We see that as beta changes from 100 to 300, the emitter current increases from 0.989mA to 1.48mA. This is an improvement over the previous base-bias circuit which had an increase from 1.02mA to 3.07mA. Collector feedback bias is twice as stable as base-bias with respect to beta variation.</p>
-<h3>Emitter-Bias</h3>
+## Emitter-Bias
 <p>Inserting a resistor RE in the emitter circuit as in figure below causes <strong><em>degeneration</em></strong><strong>, also known as negative feedback</strong>. This opposes a change in emitter current IE due to temperature changes, resistor tolerances, beta variation, or power supply tolerance. Typical tolerances are as follows: resistor&mdash; 5%, beta&mdash; 100-300, power supply&mdash; 5%. Why might the emitter resistor stabilize a change in current? The polarity of the voltage drop across RE is due to the collector battery VCC. The end of the resistor closest to the (-) battery terminal is (-), the end closest to the (+) terminal it (+). Note that the (-) end of RE is connected via VBB battery and RB to the base. Any increase in current flow through RE will increase the magnitude of negative voltage applied to the base circuit, decreasing the base current, decreasing the emitter current. This decreasing emitter current partially compensates the original increase.</p>
 <p><img src="/uploads/articles/emitter-bias.jpg" /></p>
 <p>Emitter-bias</p>
@@ -220,7 +220,7 @@ r<sub>EE</sub> = KT/I<sub>E</sub>m where: K=1.38&times;10<sup>-23</sup> watt-sec
 <p><strong>For radio frequencies Cbpass would be small. For an audio amplifier extending down to 20Hz it will be large. A &ldquo;rule of thumb&rdquo; for the bypass capacitor is that the reactance should be 1/10 of the emitter resistance or less. </strong>The capacitor should be designed to accommodate the lowest frequency being amplified. The capacitor for an audio amplifier covering 20Hz to 20kHz would be:</p>
 <p><img src="/uploads/articles/calculation-of-audio-amplifier.jpg" /></p>
 <p>Note that the internal emitter resistance rEE is not bypassed by the bypass capacitor.</p>
-<h3>Voltage Divider Bias</h3>
+## Voltage Divider Bias
 <p>Stable emitter bias requires a low voltage base bias supply, the figure below. The alternative to a base supply VBB is a voltage divider based on the collector supply VCC.</p>
 <p><img src="/uploads/articles/voltage-divider-bias-replaces-base-battery-with-voltage-divider.jpg" /></p>
 <p>Voltage Divider bias replaces base battery with voltage divider.</p>

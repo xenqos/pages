@@ -1,40 +1,40 @@
-<h1>Parallel R, L, and C</h1>
+# Parallel R, L, and C
 <p>We can take the same components from the <a href="https://www.allaboutcircuits.com/video-lectures/series-circuits-part-1/" target="_blank">series circuit</a> and rearrange them into a <a href="https://www.allaboutcircuits.com/video-lectures/parallel-circuits/" target="_blank">parallel configuration</a> for an easy example circuit:</p>
-<p>&nbsp;</p>
+
 <p><img src="/uploads/articles/example-RLC-parallel-circuit.png" /></p>
 <p><em>Example R, L, and C parallel circuit.</em></p>
-<p>&nbsp;</p>
-<h3>Impedance in Parallel Components</h3>
+
+## Impedance in Parallel Components
 <p>The fact that these components are connected in parallel instead of series now has absolutely no effect on their individual impedances. So long as the power supply is the same frequency as before, the inductive and capacitive reactances will not have changed at all.</p>
-<p>&nbsp;</p>
+
 <p><img src="/uploads/articles/impedance-in-parallel-components.png" /></p>
 <p><em>Example R, L, and C parallel circuit with impedances replacing component values.</em></p>
-<p>&nbsp;</p>
+
 <p>With all component values expressed as impedances (Z), we can set up an analysis table and proceed as in the last example problem, except this time following the rules of parallel circuits instead of series:</p>
-<p>&nbsp;</p>
+
 <p><img src="/uploads/articles/components-values-express-as-impedance-image1.png" /></p>
-<p>&nbsp;</p>
+
 <p>Knowing that voltage is shared equally by all components in a parallel circuit, we can transfer the figure for total voltage to all component columns in the table:</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/components-values-express-as-impedance-image_3.jpg" /></p>
-<p>&nbsp;</p>
+
 <p>Now, we can apply <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/voltage-current-resistance-relate/" target="_blank">Ohm&rsquo;s Law (I=E/Z)</a> vertically in each column to determine the current through each component:</p>
-<p>&nbsp;</p>
+
 <p><img src="/uploads/articles/components-values-express-as-impedance-image3.png" /></p>
-<p>&nbsp;</p>
-<h3>Calculation of Total Current and Total Impedance</h3>
+
+## Calculation of Total Current and Total Impedance
 <p>There are two strategies for calculating the total current and total impedance. First, we could calculate total impedance from all the individual impedances in parallel (Z<sub>Total</sub> = 1/(1/Z<sub>R</sub> + 1/Z<sub>L</sub> + 1/Z<sub>C</sub>), and then calculate total current by dividing source voltage by total impedance (I=E/Z).</p>
 <p>However, working through the parallel impedance equation with complex numbers is no easy task, with all the reciprocations (1/Z).</p>
 <p>This is especially true if you&rsquo;re unfortunate enough not to have a calculator that handles complex numbers and are forced to do it all by hand (reciprocate the individual impedances in polar form, then convert them all to rectangular form for addition, then convert back to polar form for the final inversion, then invert).</p>
 <p>The second way to calculate total current and total impedance is to add up all the branch currents to arrive at total current (total current in a parallel circuit&mdash;AC or DC&mdash;is equal to the sum of the branch currents), then use Ohm&rsquo;s Law to determine total impedance from total voltage and total current (Z=E/I).</p>
-<p>&nbsp;</p>
+
 <p><img src="/uploads/articles/calculation-of-total-current-and-total-impedance.png" /></p>
-<p>&nbsp;</p>
+
 <p>Either method, performed properly, will provide the correct answers. Let&rsquo;s try analyzing this circuit with SPICE and see what happens.</p>
-<p>&nbsp;</p>
+
 <p><img src="/uploads/articles/example-parallel-RLC-spice-circuit.png" /></p>
 <p><em>Example parallel R, L, and C SPICE circuit. Battery symbols are &ldquo;dummy&rdquo; voltage sources for SPICE to use as current measurement points. All are set to 0 volts.</em></p>
-<p>&nbsp;</p>
+
 <pre>
 ac r-l-c circuit &#10;v1 1 0 ac 120 sin      &#10; &#10;vi 1 2 ac 0     &#10;vir 2 3 ac 0    &#10;vil 2 4 ac 0    &#10;rbogus 4 5 1e-12&#10;vic 2 6 ac 0    &#10;r1 3 0 250      &#10;l1 5 0 650m     &#10;c1 6 0 1.5u     &#10;.ac lin 1 60 60 &#10;.print ac i(vi) i(vir) i(vil) i(vic)   &#10; &#10;.print ac ip(vi) ip(vir) ip(vil) ip(vic)&#10;.end&#10;</pre>
 <pre>

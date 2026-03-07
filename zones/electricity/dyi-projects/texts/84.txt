@@ -1,13 +1,13 @@
-<h1>Digital Lab - 3-bit Binary Counter</h1>
-<h3>Project Overview</h3>
+# Digital Lab - 3-bit Binary Counter
+## Project Overview
 <p>In this project, you will build the automatic binary counter with a <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-3/special-purpose-diodes/" target="_blank">light-emitting diode (LED)</a> output display, illustrated in Figure 1.&nbsp;</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/3-bit-binary-counter-illustration.jpg" /></p>
-<h5><em><strong>Figure 1.</strong> Digital 3-bit binary counter with LED output indicators.</em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Figure 1.</strong> Digital 3-bit binary counter with LED output indicators.</em>
+
 <p>A <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-8/555-ic/" target="_blank">555 timer</a> operates as a <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-7/square-wave-signals/" target="_blank">square wave oscillator</a> and one of the counter bits. The output from the timer&nbsp;drives two <a href="https://www.allaboutcircuits.com/textbook/digital/chpt-10/j-k-flip-flop/" target="_blank">J-K flip-flops</a> that complete the counter.</p>
-<p>&nbsp;</p>
-<h3>Parts and Materials</h3>
+
+## Parts and Materials
 <ul>
 <li>555 timer IC</li>
 <li>One 1N914 switching&nbsp;diode</li>
@@ -19,20 +19,20 @@
 <li>One 6 V battery</li>
 </ul>
 <p><strong>Caution!</strong> The 4027 IC is a <a href="https://www.allaboutcircuits.com/textbook/digital/chpt-3/cmos-gate-circuitry/" target="_blank">complementary metal-oxide semiconductor (CMOS)</a> and, therefore, sensitive to <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/static-electricity/" target="_blank">static electricity</a>!</p>
-<p>&nbsp;</p>
-<h3>Learning Objectives</h3>
+
+## Learning Objectives
 <ul>
 <li>How to use the 555 timer as a square-wave oscillator</li>
 <li>How to make an asynchronous counter using J-K flip-flops</li>
 </ul>
-<p>&nbsp;</p>
-<h3>Instructions</h3>
+
+## Instructions
 <p>It is highly recommended, in this experiment, as in all experiments, to build the circuit in stages, namely,&nbsp;identify portions of the circuit with specific functions and build those portions one at a time, testing each one and verifying its performance before building the next.&nbsp;A very common mistake of new electronics students is to build an entire circuit at once without testing sections of it during the construction process and then be faced with the possibility of several problems simultaneously when it comes time to finally apply power to it.</p>
 <p><strong>Step 1:&nbsp;</strong>First, build the 555 timer circuit, illustrated at the left side of the&nbsp;breadboard implementation of Figure 1 and the schematic diagram of Figure 2.&nbsp;</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/3-bit-binary-counter-schematic.jpg" /></p>
-<h5><em><strong>Figure 2.</strong> Schematic diagram of digital 3-bit counter with LED output indicators</em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Figure 2.</strong> Schematic diagram of digital 3-bit counter with LED output indicators</em>
+
 <p>Connect the 555&rsquo;s output (pin #3) to the <a href="https://www.allaboutcircuits.com/textbook/digital/chpt-1/decimal-versus-binary-numeration/" target="_blank">least significant bit (LSB)</a> LED so that you have a visual indication of its status.</p>
 <p>The <a href="https://www.allaboutcircuits.com/tools/555-timer-astable-circuit/" target="_blank">555 timer</a> operates as a slow, square-wave oscillator with a duty cycle of approximately 50 percent. This duty cycle is made possible by using a diode to bypass&nbsp;the lower resistor during the capacitor&rsquo;s charging cycle so that the charging time constant is only RC and not 2RC, as it would be without the diode in place.</p>
 <p>Ensure that the output oscillates in a slow, square-wave pattern (LED is lit&nbsp;for about as long as it is off&nbsp;in a cycle) and that it is a reliable signal (no erratic behavior, no unexplained pauses). If the 555 timer is not working properly, neither will the rest of the counter circuit.</p>

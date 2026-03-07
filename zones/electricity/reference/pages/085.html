@@ -33,13 +33,12 @@
 
 <h1>Field-effect-controlled Thyristors</h1>
 <p>Two relatively recent technologies designed to reduce the &ldquo;driving&rdquo; (gate trigger current) requirements of <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-7/silicon-controlled-rectifier-scr/&quot; target=&quot;_blank&quot;>classic thyristor</a> devices are the MOS-gated thyristor and the MOS Controlled Thyristor, or MCT.</p>
-<h3>MOS-gated Thyristor</h3>
+<h2>MOS-gated Thyristor</h2>
 <p>The MOS-gated thyristor uses a <a href=&quot;https://www.allaboutcircuits.com/video-lectures/mosfets-mos-field-effect-transistors/&quot; target=&quot;_blank&quot;>MOSFET</a> to initiate conduction through the upper (PNP) transistor of a standard thyristor structure, thus triggering the device. Since a MOSFET requires negligible current to &ldquo;drive&rdquo; (cause it to saturate), this makes the thyristor as a whole very easy to trigger: (Figure below)</p>
-<p>&nbsp;</p>
 <p><em><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/MOS-gated-thyristor-equivalent-circuit.jpg&quot; /></em></p>
 <p><em>MOS-gated thyristor equivalent circuit</em></p>
 <p>Given the fact that ordinary <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-7/silicon-controlled-rectifier-scr/&quot; target=&quot;_blank&quot;>SCRs</a> are quite easy to &ldquo;drive&rdquo; as it is, the practical advantage of using an even more sensitive device (a MOSFET) to initiate triggering is debatable. Also, placing a MOSFET at the gate input of the thyristor now makes it <em>impossible </em>to turn it off by a reverse-triggering signal. Only low-current dropout can make this device stop conducting after it has been latched.</p>
-<h3>MOS Controlled Thyristor</h3>
+<h2>MOS Controlled Thyristor</h2>
 <p>A device of arguably greater value would be a fully-controllable thyristor, whereby a small gate signal could both trigger the thyristor and force it to turn off. Such a device does exist, and it is called the <em>MOS Controlled Thyristor</em>, or <em>MCT</em>. It uses a pair of MOSFETs connected to a common gate terminal, one to trigger the thyristor and the other to &ldquo;untrigger&rdquo; it.</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/MOS-controlled-thyristor-MCT-equivalent-circuit.jpg&quot; /></p>
 <p><em>MOS-controlled thyristor (MCT) equivalent circuit</em></p>

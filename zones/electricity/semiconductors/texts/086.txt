@@ -1,5 +1,5 @@
-<h1>Introduction to Operational Amplifiers (Op-amps)</h1>
-<h3>What is an Operational Amplifier (Op-amp)?</h3>
+# Introduction to Operational Amplifiers (Op-amps)
+## What is an Operational Amplifier (Op-amp)?
 <p>Operational Amplifiers, also known as Op-amps, are basically a voltage amplifying device designed to be used with components like capacitors and resistors, between its in/out terminals. They are essentially a core part of analog devices. Feedback components like these are used to determine the operation of the amplifier. The amplifier can perform many different operations (resistive, capacitive, or both), giving it the name Operational Amplifier.</p>
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/op-amp-in-schematics.jpg" /></p>
 <p><em>Example of an Op-amp in schematics.</em></p>

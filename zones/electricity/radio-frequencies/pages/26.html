@@ -33,54 +33,40 @@
 
 <h1>Quadrature Frequency and Phase Demodulation</h1>
 <p>From the previous page we know that quadrature demodulation produces two baseband waveforms that, when taken together, convey the information that was encoded into the carrier of the received signal. More specifically, these I and Q waveforms are equivalent to the real and imaginary parts of a complex number. The baseband waveform contained in the modulated signal corresponds to a magnitude-plus-phase representation of the original data, and quadrature demodulation converts that magnitude-plus-phase representation into I and Q signals that correspond to a Cartesian representation.</p>
-<p>&nbsp;</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/RFT_ch5_pg5_IQReIm.jpg&quot; /></p>
-<p>&nbsp;</p>
 <p>It is perhaps not very surprising that we can use quadrature demodulation to demodulate AM signals, considering that a quadrature demodulator is simply two amplitude demodulators driven by carrier-frequency reference signals that have a 90&deg; phase difference. However, one of the most important characteristics of quadrature demodulation is its universality. It works not only with amplitude modulation but also with frequency and phase modulation.</p>
-<p>&nbsp;</p>
-<h3>Quadrature Frequency Demodulation</h3>
+
+<h2>Quadrature Frequency Demodulation</h2>
 <p>First let&rsquo;s look at the I and Q waveforms that are produced when we apply quadrature demodulation to frequency modulation. The received FM waveform is a 100 kHz carrier modulated by a 100 Hz sinusoid. We&rsquo;re using the same quadrature demodulator that was used in the AM simulation; it has two arbitrary behavioral voltage sources for performing the multiplication, and each voltage source is followed by a two-pole low-pass filter (the cutoff frequency is ~1 kHz). You can refer to the page on&nbsp;<a href=&quot;https://www.allaboutcircuits.com/textbook/radio-frequency-analysis-design/radio-frequency-demodulation/how-to-demodulate-an-fm-waveform/&quot; target=&quot;_blank&quot;>How to Demodulate an FM Waveform</a> for information on how to create an FM signal in LTspice.</p>
-<p>&nbsp;</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/RFT_ch5_pg6_FMIQ.jpg&quot; /></p>
-<p>&nbsp;</p>
 <p>Perhaps the common reaction to this plot would be confusion. What do these odd-looking signals have to do with the constant-frequency sinusoid that should result from the demodulation process? First let&rsquo;s make two observations:</p>
 <ul>
 <li>Clearly, the frequency of the I and Q signals is not constant. You may find this a bit confusing at first, since we know that I/Q modulation involves the <em>amplitude</em> modulation of quadrature carriers. Why is the frequency changing as well? It&rsquo;s essential to remember that these I/Q signals correspond to the <em>modulating</em> signals, not to the quadrature sinusoids that would be added together in a quadrature modulator. The frequency of the <em>modulated</em> quadrature carriers does not change, but the baseband waveforms that serve as the amplitude-modulating signals do not necessarily have constant frequency.</li>
 <li>Though we cannot intuitively interpret the information in this plot, we can see that the signals exhibit periodic variations and that these variations correspond to the period (=10 ms) of the 100 Hz baseband signal.</li>
 </ul>
 
-<h3>Finding the Angle</h3>
+<h2>Finding the Angle</h2>
 <p>Now that we have I/Q signals, we need to somehow process them into a normal demodulated waveform. Let&rsquo;s first try the approach that we used with amplitude modulation: use a bit of math to extract the magnitude data.</p>
-<p>&nbsp;</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/RFT_ch5_pg6_FMIQmag.jpg&quot; /></p>
-<p>&nbsp;</p>
 <p>Clearly this didn&rsquo;t work: the magnitude signal (the red trace) doesn&rsquo;t look like a sinusoid, and the frequency is incorrect (200 Hz instead of 100 Hz). After further consideration, though, this is not surprising. The original data is characterized by magnitude and phase; when we apply the &radic;(I<sup>2</sup> + Q<sup>2</sup>) computation, we are extracting the magnitude. The trouble is, the original data was not encoded in the magnitude of the carrier&mdash;it was encoded in the angle (remember that frequency modulation and phase modulation are two forms of angle modulation).</p>
 <p>So let&rsquo;s try a different computation. Let&rsquo;s extract the angle of the I/Q data rather than the magnitude. As shown in the right-triangle diagram above, we can do this by applying the following equation:</p>
-<p>&nbsp;</p>
 <p>$$\phi=\arctan\left(\frac{Q}{I}\right)$$</p>
-<p>&nbsp;</p>
 <p>Here is the result:</p>
-<p>&nbsp;</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/RFT_ch5_pg6_FMIQangle_2.jpg&quot; /></p>
-<p>&nbsp;</p>
 <p>This doesn&rsquo;t look good, but we are actually getting close. The red trace represents the instantaneous phase of the original data. (Note that the trace seems more erratic than it really is because the angle is jumping from &ndash;90&deg; to +90&deg;, or vice versa). Frequency modulation, though based on phase, does not encode information <em>directly</em> in the phase of the carrier. Rather, it encodes information in the instantaneous frequency of the carrier, and instantaneous frequency is the derivative of instantaneous phase. So what happens if we take the derivative of the red trace?</p>
-<p>&nbsp;</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/RFT_ch5_pg6_FMIQdemodulated.jpg&quot; /></p>
-<p>&nbsp;</p>
 <p>As you can see, we have now recovered a waveform that is sinusoidal and has the same frequency as the original baseband signal.</p>
-<h3>How to Design an Arctangent Circuit</h3>
+<h2>How to Design an Arctangent Circuit</h2>
 <p>At this point you might be wondering why anyone would want to bother with I/Q demodulation. How in the world would anyone design a circuit that generates an output signal corresponding to the derivative of the arctangent of two input signals? Well, to answer the question posed in the title of this section, you digitize the signals and compute the arctangent in firmware or software. And this brings us to an important point: Quadrature demodulation is especially advantageous in the context of software-defined radios.</p>
 <p>A <a href=&quot;https://www.allaboutcircuits.com/technical-articles/introduction-to-software-defined-radio/&quot; target=&quot;_blank&quot;>software-defined radio</a> (SDR) is a wireless communication system in which significant portions of the transmitter and/or receiver functionality are implemented via software. Quadrature demodulation is highly versatile and enables a single receiver to almost instantaneously adapt to different types of modulation. The I/Q output signals, however, are far less straightforward than a normal baseband signal produced by standard demodulator topologies. This is why a quadrature demodulator and a digital signal processor form such a high-performance receiver system: the digital signal processor can readily apply complicated mathematical operations to the I/Q data produced by the demodulator.</p>
-<p>&nbsp;</p>
-<h3>Quadrature Phase Demodulation</h3>
+
+<h2>Quadrature Phase Demodulation</h2>
 <p>The same general considerations that we discussed in the context of quadrature frequency demodulation apply also to quadrature phase demodulation. However, to recover the original data we take the arctangent of (Q/I) rather than the derivative of the arctangent of (Q/I), because the baseband signal is encoded <em>directly</em> in the carrier&rsquo;s phase rather than in the derivative of the phase (i.e., the frequency).</p>
 <p>The following plot was generated by applying quadrature demodulation to a phase-shift-keying waveform consisting of a 100 kHz carrier and a 100 Hz digital baseband signal that causes the carrier&rsquo;s phase to change by 180&deg; according to whether the signal is logic high or logic low. As you can see, the red trace (whose value corresponds to the phase of the received waveform) reproduces the logic transitions in the baseband signal.</p>
-<p>&nbsp;</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/RFT_ch5_pg6_PSKIQ.jpg&quot; /></p>
-<p>&nbsp;</p>
 <p>Notice that the red trace is computed via the &ldquo;atan2&rdquo; function. Standard arctangent is limited to two quadrants (i.e., 180&deg;) of the Cartesian plane. The atan2 function looks at the individual polarities of the input values in order to produce angles covering all four quadrants.</p>
-<p>&nbsp;</p>
-<h3>Summary</h3>
+
+<h2>Summary</h2>
 <ul>
 <li>Quadrature demodulation can extract angle information that is relevant to both frequency modulation and phase modulation.</li>
 <li>Radio systems can use a digital signal processor (in conjunction with an analog-to-digital converter) to apply mathematical analysis to I/Q waveforms.</li>

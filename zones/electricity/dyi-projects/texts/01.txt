@@ -1,27 +1,27 @@
-<h1>DIY EE Lab - Introduction to Electronics Projects</h1>
-<h3>Why Hands-on Electronic Experimentation?</h3>
+# DIY EE Lab - Introduction to Electronics Projects
+## Why Hands-on Electronic Experimentation?
 <p>Electronics is a science, and a very accessible science at that. With other areas of scientific study, expensive equipment is generally required to perform any non-trivial experiments. This is not so with electronics. Many advanced concepts may be explored using parts and equipment totaling under a few hundred US dollars. This is good because hands-on experimentation is vital for gaining scientific knowledge about any subject.</p>
 <p>When I started writing <em>Lessons In Electric Circuits</em>, my intent was to create a textbook suitable for introductory college use. However, being mostly self-taught in electronics myself, I knew the value of a good textbook to hobbyists and experimenters not enrolled in any formal electronics course. Many people selflessly volunteered their time and expertise in helping me learn electronics when I was younger, and my intent is to honor their service and love by giving back to the world what they gave to me.</p>
-<p>&nbsp;</p>
+
 <blockquote>
 <p>In order for someone to teach themselves a science such as electronics, they must engage in hands-on experimentation. Knowledge gleaned from books alone has limited use, especially in scientific endeavors.</p>
 </blockquote>
-<p>&nbsp;</p>
+
 <p>If my contribution to society is to be complete, I must include a guide to experimentation along with the text(s) on theory so that the individual learning on their own has a resource to guide their experimental adventures.</p>
-<p>&nbsp;</p>
-<h3>The Challenges of a Formal Laboratory Course</h3>
+
+## The Challenges of a Formal Laboratory Course
 <p>A formal laboratory course for college electronics study requires an enormous amount of work to prepare and usually must be based on specific parts and equipment. Thus&nbsp;the experiments will be sufficiently detailed, with results sufficiently precise to allow for rigorous comparison between experimental and theoretical data. A process of assessment, articulated through a qualified instructor, is also vital to guarantee that a certain level of learning has taken place. Peer review (comparison of experimental results with the work of others) is another important component of college-level laboratory study and helps to improve the quality of learning.</p>
 <p>Since I cannot meet these criteria through the medium of a book, it is impractical for me to present a complete laboratory course here. In the interest of keeping this experiment guide reasonably low-cost for people to follow and practical for deployment over the internet, I am forced to design the experiments at a lower level than what would be expected for a college lab course.</p>
-<p>&nbsp;</p>
-<h3>Electronics Projects For Beginners and More</h3>
+
+## Electronics Projects For Beginners and More
 <p>The experiments in this volume begin at a level appropriate for someone with no electronics knowledge and progress to higher levels. They stress qualitative knowledge over quantitative knowledge, although they could serve as templates for more rigorous coursework.&nbsp;</p>
 <p>When performing these experiments, feel free to explore by trying different circuit construction and measurement techniques. If something isn&rsquo;t working as the text describes it should, don&rsquo;t give up! It&rsquo;s probably due to a simple problem in construction (loose wire, wrong component value) or test equipment setup. It can be frustrating working through these problems on your own, however.&nbsp;don&#39;t give up!</p>
-<p>&nbsp;</p>
+
 <blockquote>
 <p>The knowledge gained by troubleshooting&nbsp;a circuit yourself is at least as important as the knowledge gained by a properly functioning experiment. This is one of the most important reasons why experimentation is so vital to your scientific education: the real problems you will invariably encounter in experimentation challenge you to develop practical problem-solving skills.</p>
 </blockquote>
-<p>&nbsp;</p>
+
 <p>When this book was originally written, the experiments included&nbsp;part numbers for Radio Shack brand components, which was, at the time,&nbsp;a convenient reference to an electronic supply company well-known in North America. Now, components of better quality and lower prices may be obtained from multiple online distributors (especially since Radio Shack is no longer in business). I strongly recommend that experimenters obtain some of the more expensive components, such as <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-9/step-up-and-step-down-transformers/" target="_blank">transformers</a> (see the <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-1/what-is-alternating-current-ac/" target="_blank">AC chapter</a>), by salvaging them from discarded electrical appliances, both for economic and ecological reasons.</p>
-<p>&nbsp;</p>
-<h3>A Note About Safety</h3>
+
+## A Note About Safety
 <p>All experiments shown in this book are designed with safety in mind. It is nearly impossible to shock or otherwise hurt yourself by battery-powered experiments or other circuits of low voltage. However, hazards <em>do</em> exist when building anything with your own hands. Where there is a greater-than-normal level of danger in an experiment, I try to direct the reader&rsquo;s attention toward it. Furthermore, it is, unfortunately, necessary in this litigious society to disclaim any and all liability for the outcome of any experiment presented here. Neither I nor any contributors bear responsibility for injuries resulting from the construction or use of any of these projects, from the mishandling of electricity by the experimenter, or from any other unsafe practices leading to injury. <strong>Perform these experiments at your own risk!</strong></p>

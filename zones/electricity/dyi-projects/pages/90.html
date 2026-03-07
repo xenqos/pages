@@ -32,15 +32,14 @@
 <div id='idContent'>
 
 <h1>555 Lab - Red LED Flasher</h1>
-<h3>Project Overview</h3>
+<h2>Project Overview</h2>
 <p>This project uses a <a href=&quot;https://www.allaboutcircuits.com/textbook/digital/chpt-3/cmos-gate-circuitry/&quot; target=&quot;_blank&quot;>complementary metal-oxide semiconductor (CMOS)</a> version of the <a href=&quot;https://www.allaboutcircuits.com/textbook/experiments/chpt-8/555-ic/&quot; target=&quot;_blank&quot;>555 timer</a> to build a low-power red <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-3/special-purpose-diodes/&quot; target=&quot;_blank&quot;>light-emitting diode (LED)</a> flasher, as illustrated in Figure 1.&nbsp;</p>
-<p>&nbsp;</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/555-timer-astable-multivibrator-configurations.jpg&quot; /></p>
-<h5><em><strong>Figure 1. </strong>Breadboard implementation of the 555 timer LED flasher.</em></h5>
-<p>&nbsp;</p>
+<h4><em><strong>Figure 1. </strong>Breadboard implementation of the 555 timer LED flasher.</em></h4>
+
 <p>With only two AAA batteries, you can quickly and easily build a flasher circuit that will operate for months.</p>
-<p>&nbsp;</p>
-<h3>Parts and Materials</h3>
+
+<h2>Parts and Materials</h2>
 <ul>
 <li>Two AAA batteries</li>
 <li>Battery clip</li>
@@ -58,8 +57,7 @@
 <li>C2 - 100 &micro;F <a href=&quot;https://eepower.com/capacitor-guide/types/electrolytic-capacitor/&quot; target=&quot;_blank&quot;>electrolytic capacitor</a></li>
 </ul>
 
-<p>&nbsp;</p>
-<h3>Learning Objectives</h3>
+<h2>Learning Objectives</h2>
 <ul>
 <li>Learn a practical application for an <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-16/complex-circuits/&quot; target=&quot;_blank&quot;>RC time constant</a></li>
 <li>Learn one of the 555 timer astable multivibrator configurations</li>
@@ -67,22 +65,20 @@
 <li>Learn how to handle ESD-sensitive parts</li>
 </ul>
 
-<p>&nbsp;</p>
-<h3>Instructions</h3>
+<h2>Instructions</h2>
 <p><strong>Step 1:&nbsp;</strong>Build the circuit illustrated in Figures 1 and 2.</p>
-<p>&nbsp;</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/RC-time-constant-schematic-diagram.jpg&quot; /></p>
-<h5><em><strong>Figure 2. </strong>Schematic diagram of 555 timer LED flasher</em></h5>
-<p>&nbsp;</p>
+<h4><em><strong>Figure 2. </strong>Schematic diagram of 555 timer LED flasher</em></h4>
+
 <p>Do <strong>NOT</strong> include the red jumper wire shown at the upper left of Figure 1. When you complete this circuit, the LED should start flashing. With two AAA batteries, it should be able to operate for several months. If you use larger batteries, such as D cells, this duration will increase dramatically.</p>
 <p><strong>Step 2:&nbsp;</strong>Enter the R1, R2, and C1 values into the All About Circuits&#39;&nbsp;<a href=&quot;https://www.allaboutcircuits.com/tools/555-timer-astable-circuit/&quot; target=&quot;_blank&quot;>555&nbsp;Timer Astable Oscillator Circuit calculator</a> to calculate the period and duty cycle of this circuit. Compare the calculated period with what you measure for the actual circuit.</p>
 <p><strong>Step 3: </strong>To measure the current draw feeding the LED, connect C1+ to V<sub>DD</sub>&nbsp;with a jumper, as shown by the red jumper wire in Figure 1. This will turn the TLC555 on. Measure the <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/voltage-current/&quot; target=&quot;_blank&quot;>current</a> flowing from the battery to the circuit. The target current is approximately 20 mA. In this project, we&nbsp;measured 9 to 24 mA using different CMOS 555 ICs. This isn&rsquo;t critical, though it will affect the battery life.</p>
-<p>&nbsp;</p>
-<h4>Advantages of CMOS 555 ICs</h4>
+
+<h3>Advantages of CMOS 555 ICs</h3>
 <p>The original 555 is not a power hog, but it was a child of the 1970s, created in 1971. It will suck a battery dry in days, if not hours. Fortunately, the design has been reinvented using CMOS technology to replace the older, more power-hungry transistor&ndash;transistor&nbsp;logic (TTL). The new implementation isn&rsquo;t perfect, as it lacks the current drive of the original, but for a CMOS device, the output current is still good.</p>
 <p>The main advantages of the newer CMOS design include a wider supply voltage range and power supply specifications of 2&nbsp;to 18 V, depending on the model.&nbsp;This project uses the TLC555, a Texas Instruments design. There are other CMOS 555&rsquo;s out there, very similar but with some differences. These chips are designed to be drop-in replacements and do very well if the output is not substantially loaded.</p>
-<p>&nbsp;</p>
-<h4>Low Power Design Features of the Flasher Circuit</h4>
+
+<h3>Low Power Design Features of the Flasher Circuit</h3>
 <p>This design turns a deficit into an advantage as the current drive only worsens at lower power supply voltages, its specifications are not more than 3 mA for 2 VDC. This design tries to make the batteries last as absolutely long as possible using several different approaches for reducing power consumption:</p>
 <ol>
 <li>The CMOS IC has an extremely low current.</li>
@@ -94,28 +90,25 @@
 </ol>
 
 <p>The big problem is using the built-in current limitation of this IC, as it is not rated for a specific current, and the LED current can vary a lot between different CMOS ICs.</p>
-<p>&nbsp;</p>
-<h4>Leakage of Electrolytic Capacitors</h4>
+
+<h3>Leakage of Electrolytic Capacitors</h3>
 <p>It is possible to run into problems with electrolytic capacitors when dealing with low currents (2 &micro;A in this case) because the leakage can be excessive, a borderline failure condition. If the leakage of C1 is too high, the capacitor will not charge, and the circuit will not oscillate.</p>
 <p>If your experiment seems to suffer from this problem, you&nbsp;might be able to fix it&nbsp;by charging the capacitor C1 across the battery and then discharging the capacitor using a&nbsp;conductor to ground. Repeat this several times.</p>
-<p>&nbsp;</p>
-<h3>Theory of Operation</h3>
+
+<h2>Theory of Operation</h2>
 <p>This project uses fundamentally the same circuit as the&nbsp;<a href=&quot;https://www.allaboutcircuits.com/textbook/experiments/chpt-6/555-audio-oscillator/&quot; target=&quot;_blank&quot;>Analog Lab - 555 Oscillator (Astable Multivibrator)</a>&nbsp;experiment. Many systems use the same basic designs and concepts in several different ways. This periodic flasher&nbsp;is one such use case.</p>
 <p>A conventional 555 IC would work in this design if the power supply wasn&#39;t so low and a LED current limiting resistor is used. Other than the MOSFET transistors, the block diagram shown in Figure 3&nbsp;is basically the same as a conventional 555.&nbsp;</p>
-<p>&nbsp;</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/thumbnails/TLC555-CMOS555-functional-schematic_redo.jpg&quot; /></p>
-<h5><em><strong>Figure 3. </strong>Functional diagram of a CMOS 555 timer IC.</em></h5>
-<p>&nbsp;</p>
+<h4><em><strong>Figure 3. </strong>Functional diagram of a CMOS 555 timer IC.</em></h4>
+
 <p>This particular oscillator depends on the pin 7 (discharge) transistor, much like the <a href=&quot;https://www.allaboutcircuits.com/textbook/experiments/chpt-8/555-monostable-multivibrator/&quot;>monostable multivibrator (one-shot) timer</a> demonstrated&nbsp;in an earlier experiment. The startup condition is with the capacitor discharged, the output high (LED off), and the pin 7 transistor off. The capacitor starts charging, as shown in Figure 4.</p>
-<p>&nbsp;</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/thumbnails/TLC555-CMOS555-functional-schematic-1_redo.jpg&quot; /></p>
-<h5><em><strong>Figure 4.&nbsp;</strong>555 LED flasher system state as capacitor C1 charges.</em></h5>
-<p>&nbsp;</p>
+<h4><em><strong>Figure 4.&nbsp;</strong>555 LED flasher system state as capacitor C1 charges.</em></h4>
+
 <p>When the voltage across pins 2 and 6 reaches 2/3 of the power supply, the <a href=&quot;https://www.allaboutcircuits.com/textbook/digital/chpt-10/j-k-flip-flop/&quot; target=&quot;_blank&quot;>flip-flop</a> is reset via internal comparator C1. This turns on the pin 7 n-channel metal-oxide semiconductor (NMOS) transistor, which&nbsp;discharges&nbsp;capacitor C1 through R2, as shown in Figure 5.&nbsp;</p>
-<p>&nbsp;</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/thumbnails/TLC555-CMOS555-functional-schematic-2_redo.jpg&quot; /></p>
-<h5><em><strong>Figure 5.&nbsp;</strong>555 LED flasher system state as capacitor C1 discharges through the NMOS transistor of pin 7.</em></h5>
-<p>&nbsp;</p>
+<h4><em><strong>Figure 5.&nbsp;</strong>555 LED flasher system state as capacitor C1 discharges through the NMOS transistor of pin 7.</em></h4>
+
 <p>The output is low, which turns on the red LED.&nbsp;</p>
 <p>When the voltage across pins 2 and 6 reaches 1/3 of the power supply, the flip-flop is set via internal comparator C2. This then turns off the pin 7 transistor, allowing the <a href=&quot;https://www.allaboutcircuits.com/textbook/alternating-current/chpt-4/ac-capacitor-circuits/&quot; target=&quot;_blank&quot;>capacitor</a> to start charging again through R1 and R2, as shown in Figure 2. The output again is driven high, which turns off the red LED.&nbsp;This cycle repeats.</p>
 <p>Capacitor C2 extends the life of the batteries.&nbsp;It will store energy during the 97% of the time the circuit is off&nbsp;and provide energy during the 3% it is on.&nbsp;</p>

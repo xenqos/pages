@@ -1,9 +1,9 @@
-<h1>What is a Series-Parallel Circuit?</h1>
+# What is a Series-Parallel Circuit?
 <p>With simple <a href="https://www.allaboutcircuits.com/video-lectures/series-circuits-part-1/" target="_blank">series circuits</a>, all components are connected end-to-end to form only one path for the current to flow through the circuit:</p>
 <p><img src="/uploads/articles/simple-series-circuit-image1.jpg" /></p>
 <p>With simple <a href="https://www.allaboutcircuits.com/video-lectures/parallel-circuits/" target="_blank">parallel circuits</a>, all components are connected between the same two sets of electrically common points, creating multiple paths for the current to flow from one end of the battery to the other:</p>
 <p><img src="/uploads/articles/simple-parallel-circuit-image1.jpg" /></p>
-<h3>Rules regarding Series and Parallel Circuits</h3>
+## Rules regarding Series and Parallel Circuits
 <p>With each of these two basic circuit configurations, we have specific sets of rules describing <a href="https://www.allaboutcircuits.com/video-lectures/electrical-quantities-a/" target="_blank">voltage, current, and resistance</a> relationships.</p>
 <p><strong>Series Circuits:</strong></p>
 <ul>
@@ -17,7 +17,7 @@
 <li>Branch currents add to equal total current.</li>
 <li>Resistances diminish to equal total resistance.</li>
 </ul>
-<h3>Series - Parallel Circuits</h3>
+## Series - Parallel Circuits
 <p>However, if circuit components are series-connected in some parts and parallel in others, we won&rsquo;t be able to apply a <em>single</em> set of rules to every part of that circuit. Instead, we will have to identify which parts of that circuit are series and which parts are parallel, then selectively apply series and parallel rules as necessary to determine what is happening. Take the following circuit, for instance:</p>
 <p><img src="/uploads/articles/series-parallel-combination-circuits.jpg" /></p>
 <p><img src="/uploads/articles/elements-of-series-and-parallel-circuit.jpg" /></p>

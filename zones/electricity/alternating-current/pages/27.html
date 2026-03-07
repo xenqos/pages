@@ -33,53 +33,36 @@
 
 <h1>Series R, L, and C</h1>
 <p>Let&rsquo;s take the following example circuit and analyze it:</p>
-<p>&nbsp;</p>
 <p><img src=&quot;/uploads/articles/example-series-RLC-circuit.png&quot; /></p>
 <p><em>Example series R, L, and C circuit.</em></p>
-<p>&nbsp;</p>
-<h3>Solving for Reactance</h3>
+
+<h2>Solving for Reactance</h2>
 <p>The first step is to determine the reactance (in ohms) for the <a href=&quot;https://www.allaboutcircuits.com/video-lectures/inductors-part-1/&quot; target=&quot;_blank&quot;>inductor</a> and the <a href=&quot;https://www.allaboutcircuits.com/video-lectures/capacitors-part-1/&quot; target=&quot;_blank&quot;>capacitor</a>.</p>
-<p>&nbsp;</p>
 <p><img src=&quot;/uploads/articles/solving-for-reactance.png&quot; /></p>
-<p>&nbsp;</p>
 <p>The next step is to express all resistances and reactances in a mathematically common form: impedance. (Figure below)</p>
 <p>Remember that an inductive reactance translates into a positive imaginary impedance (or an impedance at +90&deg;), while a capacitive reactance translates into a negative imaginary impedance (impedance at -90&deg;). Resistance, of course, is still regarded as a purely &ldquo;real&rdquo; impedance (polar angle of 0&deg;):</p>
-<p>&nbsp;</p>
 <p><img src=&quot;/uploads/articles/express-all-resistances-and-reactances-in-a-mathematically-form.png&quot; /></p>
-<p>&nbsp;</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/component-values-replaced-by-impedances_1.png&quot; /></p>
 <p><em>Example series R, L, and C circuit with component values replaced by impedances.</em></p>
-<p>&nbsp;</p>
-<h4>Tabulate Results:</h4>
+
+<h3>Tabulate Results:</h3>
 <p>Now, with all quantities of opposition to electric current expressed in a common, complex number format (as impedances, and not as resistances or reactances), they can be handled in the same way as plain resistances in a DC circuit.</p>
 <p>This is an ideal time to draw up an analysis table for this circuit and insert all the &ldquo;given&rdquo; figures (total voltage, and the impedance of the resistor, inductor, and capacitor).</p>
-<p>&nbsp;</p>
 <p><img src=&quot;/uploads/articles/analysis-table-for-circuit.png&quot; /></p>
-<p>&nbsp;</p>
 <p>Unless otherwise specified, the source voltage will be our <a href=&quot;https://eepower.com/textbook/vol-i-foundations-power-design/chapter-2-analysis-ac-systems/phase-shift-and-phasors&quot; target=&quot;_blank&quot; title=&quot;reference for phase shift&quot;>reference for phase shift</a>, and so will be written at an angle of 0&deg;. Remember that there is no such thing as an &ldquo;absolute&rdquo; angle of phase shift for a voltage or current, since its always a quantity relative to another waveform.</p>
 <p>Phase angles for impedance, however (like those of the resistor, inductor, and capacitor), are known absolutely, because the phase relationships between voltage and current at each component are absolutely defined.</p>
 <p>Notice that I&rsquo;m assuming a perfectly reactive inductor and capacitor, with impedance phase angles of exactly +90 and -90&deg;, respectively.</p>
 <p>Although real components won&rsquo;t be perfect in this regard, they should be fairly close. For simplicity, I&rsquo;ll assume perfectly reactive inductors and capacitors from now on in my example calculations except where noted otherwise.</p>
 <p>Since the above example circuit is a series circuit, we know that the total circuit impedance is equal to the sum of the individuals, so:</p>
-<p>&nbsp;</p>
 <p><img src=&quot;/uploads/articles/total-circuit-impedance-is-equal-to-the-sum-of-individuals.png&quot; /></p>
-<p>&nbsp;</p>
 <p>Inserting this figure for total impedance into our table:</p>
-<p>&nbsp;</p>
 <p><img src=&quot;/uploads/articles/total-impedance-table1.png&quot; /></p>
-<p>&nbsp;</p>
 <p>We can now apply <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/voltage-current-resistance-relate/&quot; target=&quot;_blank&quot;>Ohm&rsquo;s Law</a> (I=E/R) vertically in the &ldquo;Total&rdquo; column to find total current for this series circuit:</p>
-<p>&nbsp;</p>
 <p><img src=&quot;/uploads/articles/total-current-for-the-series-circuit-table2.png&quot; /></p>
-<p>&nbsp;</p>
 <p>Being a series circuit, the current must be equal through all components. Thus, we can take the figure obtained for total current and distribute it to each of the other columns:</p>
-<p>&nbsp;</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/obtain-for-total-current-and-distribute-to-each-other-columns_3.jpg&quot; /></p>
-<p>&nbsp;</p>
 <p>Now we&rsquo;re prepared to apply Ohm&rsquo;s Law (E=IZ) to each of the individual component columns in the table, to determine voltage drops:</p>
-<p>&nbsp;</p>
 <p><img src=&quot;/uploads/articles/determine-voltage-drops-table1.png&quot; /></p>
-<p>&nbsp;</p>
 <p>Notice something strange here: although our supply voltage is only 120 volts, the voltage across the capacitor is 137.46 volts! How can this be? The answer lies in the interaction between the inductive and capacitive reactances.</p>
 <p>Expressed as impedances, we can see that the inductor opposes current in a manner precisely opposite that of the capacitor. Expressed in rectangular form, the inductor&rsquo;s impedance has a positive imaginary term and the capacitor has a negative imaginary term.</p>
 <p>When these two contrary impedances are added (in series), they tend to cancel each other out! Although they&rsquo;re still <em>added together</em> to produce a sum, that sum is actually <em>less</em> than either of the individual (capacitive or inductive) impedances alone.</p>
@@ -90,25 +73,19 @@
 <p>With the exception of equations dealing with power (P), equations in AC circuits are the same as those in DC circuits, using impedances (Z) instead of resistances (R). Ohm&rsquo;s Law (E=IZ) still holds true, and so do Kirchhoff&rsquo;s Voltage and Current Laws.</p>
 <p>To demonstrate <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-6/kirchhoffs-voltage-law-kvl/&quot; target=&quot;_blank&quot;>Kirchhoff&rsquo;s Voltage Law</a> in an AC circuit, we can look at the answers we derived for component voltage drops in the last circuit. KVL tells us that the algebraic sum of the voltage drops across the resistor, inductor, and capacitor should equal the applied voltage from the source.</p>
 <p>Even though this may not look like it is true at first sight, a bit of complex number addition proves otherwise:</p>
-<p>&nbsp;</p>
 <p><img src=&quot;/uploads/articles/sum-of-the-voltage-drops.png&quot; /></p>
-<p>&nbsp;</p>
 <p>Aside from a bit of rounding error, the sum of these voltage drops does equal 120 volts. Performed on a calculator (preserving all digits), the answer you will receive should be <em>exactly</em> 120 + j0 volts.</p>
 <p>We can also use SPICE to verify our figures for this circuit:</p>
-<p>&nbsp;</p>
 <p><img src=&quot;/uploads/articles/use-spice-to-verify-figures-for-the-circuit.png&quot; /></p>
 <p><em>Example series R, L, and C SPICE circuit.</em></p>
-<p>&nbsp;</p>
+
 <pre><br>
 r1 1 2 250 &#10; l1 2 3 650m &#10; c1 3 0 1.5u &#10; .ac lin 1 60 60 &#10; .print ac v(1,2) v(2,3) v(3,0) i(v1) &#10; .print ac vp(1,2) vp(2,3) vp(3,0) ip(v1) &#10; .end &#10; freq            v(1,2)          v(2,3)          v(3)            i(v1) &#10; 6.000E+01       1.943E+01       1.905E+01       1.375E+02       7.773E-02&#10; &#10; freq            vp(1,2)         vp(2,3)         vp(3)           ip(v1) &#10; 6.000E+01       8.068E+01       1.707E+02       -9.320E+00       -9.932E+01&#10;</pre>
 
-<p>&nbsp;</p>
 <p><img src=&quot;/uploads/articles/hand-calculated-spice-results.png&quot; /></p>
 <p><em>The SPICE simulation shows our hand-calculated results to be accurate.</em></p>
-<p>&nbsp;</p>
 <p>As you can see, there is little difference between AC circuit analysis and DC circuit analysis, except that all quantities of voltage, current, and resistance (actually, <em>impedance</em>) must be handled in complex rather than scalar form so as to account for phase angle.</p>
 <p>This is good since it means all you&rsquo;ve learned about DC electric circuits applies to what you&rsquo;re learning here. The only exception to this consistency is the calculation of power, which is so unique that it deserves a chapter devoted to that subject alone.</p>
-<p>&nbsp;</p>
 <p><strong>REVIEW:</strong></p>
 <ul>
 <li>Impedances of any kind add in series: Z<sub>Total</sub> = Z<sub>1</sub> + Z<sub>2</sub> + . . . Z<sub>n</sub></li>

@@ -1,11 +1,11 @@
-<h1>Digital Lab - 7-segment LED Display</h1>
-<h3>Project Overview</h3>
+# Digital Lab - 7-segment LED Display
+## Project Overview
 <p>The operating principle for this circuit (Figure 1)&nbsp;is to input a four-bit BCD (binary-coded decimal) value using the switches and energize the proper output lines to form the corresponding decimal digit on the 7-segment <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-3/special-purpose-diodes/" target="_blank">light-emitting diode (LED)</a> display.</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/7-segment-display-schematic.jpg" /></p>
-<h5><em><strong>Figure 1.</strong> Schematic diagram of the 7-segment LED display circuit.</em></h5>
-<p>&nbsp;</p>
-<h3>Parts and Materials</h3>
+#### <em><strong>Figure 1.</strong> Schematic diagram of the 7-segment LED display circuit.</em>
+
+## Parts and Materials
 <ul>
 <li>4511 BCD-to-7seg latch/decoder/driver</li>
 <li>Common-cathode 7-segment LED display</li>
@@ -15,25 +15,25 @@
 <li>One 6 V battery</li>
 </ul>
 <p><strong>Caution!</strong> The 4511 IC is a <a href="https://www.allaboutcircuits.com/textbook/digital/chpt-3/cmos-gate-circuitry/" target="_blank">complementary metal-oxide semiconductor (CMOS)</a>&nbsp;and, therefore, sensitive to <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/static-electricity/" target="_blank">static electricity</a>!</p>
-<p>&nbsp;</p>
-<h3>Learning Objectives</h3>
+
+## Learning Objectives
 <ul>
 <li>How to use the 4511 7-segment decoder/display driver IC</li>
 <li>Gain familiarity with the BCD&nbsp;code</li>
 <li>How to use 7-segment LED assemblies to create decimal digit displays</li>
 <li>How to identify and use both active-low&nbsp;and active-high&nbsp;logic inputs</li>
 </ul>
-<p>&nbsp;</p>
-<h3>Instructions</h3>
+
+## Instructions
 <p>This experiment is more of an introduction to the 4511 decoder/display driver IC than it is a lesson in how to build&nbsp;a digital function from lower-level components. Since 7-segment displays are&nbsp;common components of digital devices, it is good to be familiar with the driving&nbsp;circuits behind them, and the 4511 is a good example of a typical driver IC.</p>
 <p><strong>Step 1:</strong>&nbsp;Connect the four switches to their pulldown resistors and the ABCD inputs of the 4511 IC, as illustrated on the left side of Figures 1 and 2.</p>
-<p>&nbsp;</p>
+
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/7-segment-display-illustration.jpg" /></p>
-<h5><em><strong>Figure 2.</strong>&nbsp;Breadboard implementation of the 7-segment LED display circuit.</em></h5>
-<p>&nbsp;</p>
+#### <em><strong>Figure 2.</strong>&nbsp;Breadboard implementation of the 7-segment LED display circuit.</em>
+
 <p>The BCD&nbsp;inputs are designated A, B, C, and D in order from least significant to most significant. The truth table for mapping these BCD inputs to the seven&nbsp;segment outputs is provided in Table 1.&nbsp;</p>
-<p>&nbsp;</p>
-<h5><em><strong>Table 1.</strong>&nbsp;A truth table for 4511 IC BCD to 7-segment display driver</em></h5>
+
+#### <em><strong>Table 1.</strong>&nbsp;A truth table for 4511 IC BCD to 7-segment display driver</em>
 <table align="center" border="1" cellpadding="1" cellspacing="1" summary="4511 IC Truth Table">
 <thead>
 <tr>
@@ -199,7 +199,7 @@
 </tr>
 </tbody>
 </table>
-<p>&nbsp;</p>
+
 <p><strong>Step 2:&nbsp;</strong>Connect the seven outputs from the 4511 IC to the corresponding inputs on the 7-segment display.&nbsp;Outputs are labeled a, b, c, d, e, f, and g, with each letter corresponding to a standardized segment designation for 7-segment displays. Of course, since each LED segment requires its own dropping resistor, we must use seven 470 &Omega; resistors placed in series between the 4511&rsquo;s output terminals and the corresponding terminals of the display unit.</p>
 <p><strong>Step 3:&nbsp;</strong>All LEDs inside the display unit are made common to each other on one side, either cathode or anode. The 4511 display driver IC requires a common-cathode 7-segment display unit, which is what is used here. So, we must connect the cathode connection to the <a href="https://www.allaboutcircuits.com/technical-articles/an-introduction-to-ground/" target="_blank">ground</a>.</p>
 <p><strong>Step 4:&nbsp;</strong>Complete the remaining connections, illustrated in Figure 1, including power and ground.</p>

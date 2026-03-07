@@ -1,70 +1,70 @@
-<h1>Square Wave Signals</h1>
+# Square Wave Signals
 <p>It has been found that <em>any</em> repeating, non-sinusoidal waveform can be equated to a combination of DC voltage, sine waves, and/or cosine waves (sine waves with a 90 degree phase shift) at various amplitudes and frequencies.</p>
 <p>This is true no matter how strange or convoluted the <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-1/ac-waveforms/" target="_blank">waveform</a> in question may be. So long as it repeats itself regularly over time, it is reducible to this series of sinusoidal waves.</p>
 <p>In particular, it has been found that square waves are mathematically equivalent to the sum of a sine wave at that same frequency, plus an infinite series of odd-multiple frequency sine waves at diminishing amplitude:</p>
-<p>&nbsp;</p>
+
 <p><img src="/uploads/articles/repeating-square-wave-at-50hz.jpg" /></p>
-<p>&nbsp;</p>
+
 <p>This truth about waveforms at first may seem too strange to believe. However, if a square wave is actually an infinite series of sine wave harmonics added together, it stands to reason that we should be able to prove this by adding together several sine wave harmonics to produce a close approximation of a square wave.</p>
 <p>This reasoning is not only sound, but easily demonstrated with SPICE.</p>
 <p>The circuit we&rsquo;ll be simulating is nothing more than several sine wave AC voltage sources of the proper amplitudes and frequencies connected together in series. We&rsquo;ll use SPICE to plot the voltage waveforms across successive additions of voltage sources, like this:</p>
-<p>&nbsp;</p>
+
 <p><img src="/uploads/articles/square-wave-apporiximated-by-sum-of-harmonics.jpg" /></p>
 <p><em>A square wave is approximated by the sum of harmonics.</em></p>
-<p>&nbsp;</p>
+
 <p>In this particular SPICE simulation, I&rsquo;ve summed the 1st, 3rd, 5th, 7th, and 9th harmonic voltage sources in series for a total of five AC voltage sources. The fundamental frequency is 50 Hz and each harmonic is, of course, an integer multiple of that frequency.</p>
 <p>The amplitude (voltage) figures are not random numbers; rather, they have been arrived at through the equations shown in the frequency series (the fraction 4/&pi; multiplied by 1, 1/3, 1/5, 1/7, etc. for each of the increasing odd harmonics).</p>
-<p>&nbsp;</p>
+
 <pre>
 building a squarewave &#10;v1 1 0 sin (0 1.27324 50 0 0)       1st harmonic (50 Hz)&#10;v3 2 1 sin (0 424.413m 150 0 0)     3rd harmonic&#10;v5 3 2 sin (0 254.648m 250 0 0)     5th harmonic&#10;v7 4 3 sin (0 181.891m 350 0 0)     7th harmonic&#10;v9 5 4 sin (0 141.471m 450 0 0)     9th harmonic&#10;r1 5 0 10k      &#10;.tran 1m 20m    &#10;.plot tran v(1,0)    Plot 1st harmonic    &#10;.plot tran v(2,0)    Plot 1st + 3rd harmonics&#10;.plot tran v(3,0)    Plot 1st + 3rd + 5th harmonics&#10;.plot tran v(4,0)    Plot 1st + 3rd + 5th + 7th harmonics&#10;.plot tran v(5,0)    Plot 1st + . . . + 9th harmonics&#10;.end&#10;</pre>
-<p>&nbsp;</p>
+
 <p>I&rsquo;ll narrate the analysis step by step from here, explaining what it is we&rsquo;re looking at. In this first plot, we see the fundamental-frequency sine-wave of 50 Hz by itself. It is nothing but a pure sine shape, with no additional harmonic content. This is the kind of waveform produced by an ideal AC power source:</p>
-<p>&nbsp;</p>
+
 <p><img src="/uploads/articles/pure-50hz-sine-wave.jpg" /></p>
 <p><em>Pure 50 Hz sinewave.</em></p>
-<p>&nbsp;</p>
+
 <p>Next, we see what happens when this clean and simple waveform is combined with the third harmonic (three times 50 Hz, or 150 Hz). Suddenly, it doesn&rsquo;t look like a clean sine wave any more:</p>
-<p>&nbsp;</p>
+
 <p><img src="/uploads/articles/harmonics-approximates-a-50hz-square-wave.jpg" /></p>
 <p><em>Sum of 1st (50 Hz) and 3rd (150 Hz) harmonics approximates a 50 Hz square wave.</em></p>
-<p>&nbsp;</p>
+
 <p>The rise and fall times between positive and negative cycles are much steeper now, and the crests of the wave are closer to becoming flat like a squarewave. Watch what happens as we add the next odd harmonic frequency:</p>
-<p>&nbsp;</p>
+
 <p><img src="/uploads/articles/sum-of-harmonics-approximates-square-wave-diagram1.jpg" /></p>
 <p><em>Sum of 1st, 3rd and 5th harmonics approximates square wave.</em></p>
-<p>&nbsp;</p>
+
 <p>The most noticeable change here is how the crests of the wave have flattened even more. There are more several dips and crests at each end of the wave, but those dips and crests are smaller in amplitude than they were before. Watch again as we add the next odd harmonic waveform to the mix:</p>
-<p>&nbsp;</p>
+
 <p><img src="/uploads/articles/sum-of-harmonics-approximates-square-wave-diagram2.jpg" /></p>
 <p><em>Sum of 1st, 3rd, 5th, and 7th harmonics approximates square wave.</em></p>
-<p>&nbsp;</p>
+
 <p>Here we can see the wave becoming flatter at each peak. Finally, adding the 9th harmonic, the fifth sine wave voltage source in our circuit, we obtain this result:</p>
-<p>&nbsp;</p>
+
 <p><img src="/uploads/articles/sum-of-harmonics-approximates-square-wave-diagram3.jpg" /></p>
 <p><em>Sum of 1st, 3rd, 5th, 7th and 9th harmonics approximates square wave.</em></p>
-<p>&nbsp;</p>
+
 <p>The end result of adding the first five odd harmonic waveforms together (all at the proper amplitudes, of course) is a close approximation of a square wave. The point in doing this is to illustrate how we can build a square wave up from multiple sine waves at different frequencies, to prove that a pure square wave is actually equivalent to a <em>series</em> of sine waves.</p>
 <p>When a square wave AC voltage is applied to a circuit with reactive components (capacitors and inductors), those components react as if they were being exposed to several sine wave voltages of different frequencies, which in fact they are.</p>
 <p>The fact that repeating, non-sinusoidal waves are equivalent to a definite series of additive DC voltage, sine waves, and/or cosine waves is a consequence of how waves work: a fundamental property of all wave-related phenomena, electrical or otherwise.</p>
 <p>The mathematical process of reducing a non-sinusoidal wave into these constituent frequencies is called <em>Fourier analysis</em>, the details of which are well beyond the scope of this text. However, computer algorithms have been created to perform this analysis at high speeds on real waveforms, and its application in AC power quality and signal analysis is widespread.</p>
 <p>SPICE has the ability to sample a waveform and reduce it into its constituent sine wave harmonics by way of a <em>Fourier Transform</em> algorithm, outputting the frequency analysis as a table of numbers. Let&rsquo;s try this on a square wave, which we already know is composed of odd-harmonic sine waves:</p>
-<p>&nbsp;</p>
+
 <pre>
 squarewave analysis netlist&#10; v1 1 0 pulse (-1 1 0 .1m .1m 10m 20m) &#10; r1 1 0 10k &#10; .tran 1m 40m &#10; .plot tran v(1,0) &#10; .four 50 v(1,0) &#10; .end&#10;</pre>
-<p>&nbsp;</p>
+
 <p>The <em>pulse</em> option in the netlist line describing voltage source <tt>v1</tt> instructs SPICE to simulate a square-shaped &ldquo;pulse&rdquo; waveform, in this case one that is symmetrical (equal time for each half-cycle) and has a peak amplitude of 1 volt. First we&rsquo;ll plot the square wave to be analyzed:</p>
-<p>&nbsp;</p>
+
 <p><img src="/uploads/articles/sqaure-wave-for-spice-fourier-analysis.jpg" /></p>
 <p><em>Squarewave for SPICE Fourier analysis</em></p>
-<p>&nbsp;</p>
+
 <p>Next, we&rsquo;ll print the Fourier analysis generated by SPICE for this square wave:</p>
-<p>&nbsp;</p>
+
 <pre>
 fourier components of transient response v(1)    &#10;dc component =  -2.439E-02&#10;harmonic  frequency   fourier     normalized   phase   normalized&#10;no          (hz)     component    component    (deg)   phase (deg)&#10;1         5.000E+01   1.274E+00     1.000000    -2.195       0.000&#10;2         1.000E+02   4.892E-02     0.038415   -94.390     -92.195&#10;3         1.500E+02   4.253E-01     0.333987    -6.585      -4.390&#10;4         2.000E+02   4.936E-02     0.038757   -98.780     -96.585&#10;5         2.500E+02   2.562E-01     0.201179   -10.976      -8.780&#10;6         3.000E+02   5.010E-02     0.039337  -103.171    -100.976&#10;7         3.500E+02   1.841E-01     0.144549   -15.366     -13.171&#10;8         4.000E+02   5.116E-02     0.040175  -107.561    -105.366&#10;9         4.500E+02   1.443E-01     0.113316   -19.756     -17.561&#10;total harmonic distortion =     43.805747  percent&#10;</pre>
-<p>&nbsp;</p>
+
 <p><img src="/uploads/articles/plot-of-fourier-analysis-results.jpg" /></p>
 <p><em>Plot of Fourier analysis results.</em></p>
-<p>&nbsp;</p>
+
 <p>Here, (Figure above) SPICE has broken the waveform down into a spectrum of sinusoidal frequencies up to the ninth harmonic, plus a small DC voltage labelled <tt>DC component</tt>.</p>
 <p>I had to inform SPICE of the fundamental frequency (for a square wave with a 20 millisecond period, this frequency is 50 Hz), so it knew how to classify the harmonics. Note how small the figures are for all the even harmonics (2nd, 4th, 6th, 8th), and how the amplitudes of the odd harmonics diminish (1st is largest, 9th is smallest).</p>
 <p>This same technique of &ldquo;Fourier Transformation&rdquo; is often used in computerized power instrumentation, sampling the AC waveform(s) and determining the harmonic content thereof. A common computer algorithm (sequence of program steps to perform a task) for this is the <em>Fast Fourier Transform</em> or <em>FFT</em> function.</p>
@@ -72,16 +72,16 @@ fourier components of transient response v(1)    &#10;dc component =  -2.439E-02
 <p>This same mathematical technique used in SPICE to analyze the harmonic content of waves can be applied to the technical analysis of music: breaking up any particular sound into its constituent sine-wave frequencies.</p>
 <p>In fact, you may have already seen a device designed to do just that without realizing what it was! A <em>graphic equalizer</em> is a piece of high-fidelity stereo equipment that controls (and sometimes displays) the nature of music&rsquo;s harmonic content.</p>
 <p>Equipped with several knobs or slide levers, the equalizer is able to selectively attenuate (reduce) the amplitude of certain frequencies present in music, to &ldquo;customize&rdquo; the sound for the listener&rsquo;s benefit. Typically, there will be a &ldquo;bar graph&rdquo; display next to each control lever, displaying the amplitude of each particular frequency.</p>
-<p>&nbsp;</p>
+
 <p><img src="/uploads/articles/hi-fi-audio-graphic-equalizer.jpg" /></p>
 <p><em>Hi-Fi audio graphic equalizer.</em></p>
-<p>&nbsp;</p>
+
 <p>A device built strictly to display&mdash;not control&mdash;the amplitudes of each frequency range for a mixed-frequency signal is typically called a <em>spectrum analyzer</em>.</p>
 <p>The design of spectrum analyzers may be as simple as a set of &ldquo;filter&rdquo; circuits (see the next chapter for details) designed to separate the different frequencies from each other, or as complex as a special-purpose digital computer running an FFT algorithm to mathematically split the signal into its harmonic components.</p>
 <p>Spectrum analyzers are often designed to analyze extremely high-frequency signals, such as those produced by radio transmitters and computer network hardware. In that form, they often have an appearance like that of an oscilloscope:</p>
 <p><img src="/uploads/articles/spectrum-analyzer.jpg" /></p>
 <p><em>Spectrum analyzer shows amplitude as a function of frequency.</em></p>
-<p>&nbsp;</p>
+
 <p>Like an oscilloscope, the spectrum analyzer uses a CRT (or a computer display mimicking a CRT) to display a plot of the signal.</p>
 <p>Unlike an oscilloscope, this plot is amplitude over <em>frequency</em> rather than amplitude over <em>time</em>. In essence, a frequency analyzer gives the operator a Bode plot of the signal: something an engineer might call a <em>frequency-domain</em> rather than a <em>time-domain</em> analysis.</p>
 <p>The term &ldquo;domain&rdquo; is mathematical: a sophisticated word to describe the horizontal axis of a graph. Thus, an oscilloscope&rsquo;s plot of amplitude (vertical) over time (horizontal) is a &ldquo;time-domain&rdquo; analysis, whereas a spectrum analyzer&rsquo;s plot of amplitude (vertical) over frequency (horizontal) is a &ldquo;frequency-domain&rdquo; analysis.</p>
@@ -91,15 +91,15 @@ fourier components of transient response v(1)    &#10;dc component =  -2.439E-02
 <p>The fewer times that a wave cycles, the less certain its frequency is. Taking this concept to its logical extreme, a short pulse&mdash;a waveform that doesn&rsquo;t even complete a cycle&mdash;actually <em>has no frequency</em>, but rather acts as an infinite range of frequencies. This principle is common to <em>all</em> wave-based phenomena, not just AC voltages and currents.</p>
 <p>Suffice it to say that the number of cycles and the certainty of a waveform&rsquo;s frequency component(s) are directly related.</p>
 <p>We could improve the precision of our analysis here by letting the wave oscillate on and on for many cycles, and the result would be a spectrum analysis more consistent with the ideal. In the following analysis, I&rsquo;ve omitted the waveform plot for brevity&rsquo;s sake&mdash;its just a really long square wave:</p>
-<p>&nbsp;</p>
+
 <pre>
 square wave &#10;v1 1 0 pulse (-1 1 0 .1m .1m 10m 20m)   &#10;r1 1 0 10k      &#10;.option limpts=1001     &#10;.tran 1m 1      &#10;.plot tran v(1,0)       &#10;.four 50 v(1,0) &#10;.end  &#10;fourier components of transient response v(1)    &#10;dc component =   9.999E-03&#10;harmonic  frequency    fourier    normalized   phase   normalized&#10;no           (hz)     component   component    (deg)   phase (deg)&#10;1         5.000E+01   1.273E+00     1.000000    -1.800       0.000&#10;2         1.000E+02   1.999E-02     0.015704    86.382      88.182&#10;3         1.500E+02   4.238E-01     0.332897    -5.400      -3.600&#10;4         2.000E+02   1.997E-02     0.015688    82.764      84.564&#10;5         2.500E+02   2.536E-01     0.199215    -9.000      -7.200&#10;6         3.000E+02   1.994E-02     0.015663    79.146      80.946&#10;7         3.500E+02   1.804E-01     0.141737   -12.600     -10.800&#10;8         4.000E+02   1.989E-02     0.015627    75.529      77.329&#10;9         4.500E+02   1.396E-01     0.109662   -16.199     -14.399&#10;</pre>
-<p>&nbsp;</p>
+
 <p><img src="/uploads/articles/improved-fourier-analysis.jpg" /></p>
 <p><em>Improved fourier analysis.</em></p>
-<p>&nbsp;</p>
+
 <p>Notice how this analysis (Figure above) shows less of a DC component voltage and lower amplitudes for each of the even harmonic frequency sine waves, all because we let the computer sample more cycles of the wave. Again, the imprecision of the first analysis is not so much a flaw in SPICE as it is a fundamental property of waves and of signal analysis.</p>
-<p>&nbsp;</p>
+
 <p><strong>REVIEW:</strong></p>
 <ul>
 <li>Square waves are equivalent to a sine wave at the same (fundamental) frequency added to an infinite series of odd-multiple sine-wave harmonics at decreasing amplitudes.</li>

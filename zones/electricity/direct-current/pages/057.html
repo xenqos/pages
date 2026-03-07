@@ -33,9 +33,9 @@
 
 <h1>Ohmmeter Design</h1>
 <p>Though mechanical <a href=&quot;https://www.allaboutcircuits.com/textbook/experiments/chpt-2/ohmmeter-usage/&quot; target=&quot;_blank&quot;>ohmmeter</a> (resistance meter) designs are rarely used today, having largely been superseded by digital instruments, their operation is nonetheless intriguing and worthy of study.</p>
-<h3>Ohmmeter&rsquo;s Purpose</h3>
+<h2>Ohmmeter&rsquo;s Purpose</h2>
 <p>The purpose of an ohmmeter, of course, is to measure the resistance placed between its leads. This resistance reading is indicated through a mechanical meter movement which operates on electric current. The ohmmeter must then have an internal source of voltage to create the necessary current to operate the movement, and also have appropriate ranging resistors to allow just the right amount of current through the movement at any given resistance.</p>
-<h3>How Does an Ohmmeter Work?</h3>
+<h2>How Does an Ohmmeter Work?</h2>
 <p>Starting with a simple movement and <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-11/battery-construction/&quot; target=&quot;_blank&quot;>battery</a> circuit, let&rsquo;s see how it would function as an ohmmeter:</p>
 <p><img src=&quot;/uploads/articles/simple-ohmmeter.jpg&quot; /></p>
 <p>When there is infinite resistance (no continuity between test leads), there is zero current through the meter movement, and the needle points toward the far left of the scale. In this regard, the ohmmeter indication is &ldquo;backwards&rdquo; because maximum indication (infinity) is on the left of the scale, while voltage and current meters have zero at the left of their scales.</p>
@@ -48,7 +48,7 @@
 <p><img src=&quot;/uploads/articles/movements-internal-resistance-formula.png&quot; /></p>
 <p>Now that the right value for R has been calculated, we&rsquo;re still left with a problem of meter range. On the left side of the scale we have &ldquo;infinity&rdquo; and on the right side we have zero. Besides being &ldquo;backwards&rdquo; from the scales of voltmeters and ammeters, this scale is strange because it goes from nothing to everything, rather than from nothing to a finite value (such as 10 volts, 1 amp, etc.).</p>
 <p>One might pause to wonder, &ldquo;what does middle-of-scale represent? What figure lies exactly between zero and infinity?&rdquo; Infinity is more than just a <em>very big</em> amount: it is an incalculable quantity, larger than any definite number ever could be. If half-scale indication on any other type of meter represents 1/2 of the full-scale range value, then what is half of infinity on an ohmmeter scale?</p>
-<h3>Ohmmeter&rsquo;s Logarithmic Scale</h3>
+<h2>Ohmmeter&rsquo;s Logarithmic Scale</h2>
 <p>The answer to this paradox is a <em>nonlinear scale</em>. Simply put, the scale of an ohmmeter does not smoothly progress from zero to infinity as the needle sweeps from right to left. Rather, the scale starts out &ldquo;expanded&rdquo; at the right-hand side, with the successive resistance values growing closer and closer to each other toward the left side of the scale:</p>
 <p><img src=&quot;/uploads/articles/ohmmeters-logarithmic-scale.jpg&quot; /></p>
 <p>Infinity cannot be approached in a linear (even) fashion, because the scale would <em>never</em> get there! With a nonlinear scale, the amount of resistance spanned for any given distance on the scale increases as the scale progresses toward infinity, making infinity an attainable goal.</p>

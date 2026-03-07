@@ -1,34 +1,34 @@
-<h1>Band-stop Filters</h1>
-<h3>How to Create a Band-stop Filter?</h3>
+# Band-stop Filters
+## How to Create a Band-stop Filter?
 <p>Also called <em>band-elimination</em>, <em>band-reject</em>, or <em>notch</em> filters, this kind of filter passes all frequencies above and below a particular range set by the component values. Not surprisingly, it can be made out of a&nbsp;<a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-8/low-pass-filters/" target="_blank">low-pass</a> and a&nbsp;<a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-8/high-pass-filters/" target="_blank">high-pass</a> filter, just like the&nbsp;<a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-8/band-pass-filters/" target="_blank">band-pass</a> design, except that this time we connect the two filter sections in parallel with each other instead of in series.</p>
-<p>&nbsp;</p>
+
 <p><img src="/uploads/articles/band-stop-filter-diagram.png" /></p>
 <p><em>System level block diagram of a band-stop filter.</em></p>
-<p>&nbsp;</p>
-<h3>Twin-T Band-stop Filter</h3>
+
+## Twin-T Band-stop Filter
 <p>Constructed using two capacitive filter sections, it looks something like:<strong> </strong></p>
-<p>&nbsp;</p>
+
 <p><img src="/uploads/articles/twin-t-band-stop-filter-circuit.png" /></p>
 <p><em>&ldquo;Twin-T&rdquo; band-stop filter.</em></p>
-<p>&nbsp;</p>
+
 <p>The low-pass filter section is comprised of R<sub>1</sub>, R<sub>2</sub>, and C<sub>1</sub> in a &ldquo;T&rdquo; configuration. The high-pass filter section is comprised of C<sub>2</sub>, C<sub>3</sub>, and R<sub>3</sub> in a &ldquo;T&rdquo; configuration as well. Together, this arrangement is commonly known as a &ldquo;Twin-T&rdquo; filter, giving sharp response when the component values are chosen in the following ratios:</p>
-<p>&nbsp;</p>
+
 <p><img src="/uploads/articles/component-values-twin-t-ratios.png" /></p>
-<p>&nbsp;</p>
-<h3>Notch Frequency</h3>
+
+## Notch Frequency
 <p>Given these component ratios, the frequency of maximum rejection (the &ldquo;notch frequency&rdquo;) can be calculated as follows:<strong> </strong></p>
-<p>&nbsp;</p>
+
 <p><img src="/uploads/articles/frequency-of-maximum-rejectio-equation.png" /></p>
-<p>&nbsp;</p>
+
 <p>The impressive band-stopping ability of this filter is illustrated by the following <a href="https://www.allaboutcircuits.com/textbook/reference/chpt-7/fundamentals-spice-programming/" target="_blank">SPICE</a> analysis:</p>
-<p>&nbsp;</p>
+
 <pre>
 twin-t bandstop filter &#10; v1 1 0 ac 1 sin &#10; r1 1 2 200 &#10; c1 2 0 2u &#10; r2 2 3 200 &#10; c2 1 4 1u &#10; r3 4 0 100 &#10; c3 4 3 1u &#10; rload 3 0 1k &#10; .ac lin 20 200 1.5k &#10; .plot ac v(3) &#10; .end &#10;</pre>
-<p>&nbsp;</p>
+
 <p><img src="/uploads/articles/response-of-twin-t-band-stop-filter-graph1.png" /></p>
 <p><img src="/uploads/articles/response-of-twin-t-band-stop-filter-graph2.png" /></p>
 <p><em>Response of &ldquo;twin-T&rdquo; band-stop filter.</em></p>
-<p>&nbsp;</p>
+
 <p><strong>REVIEW:</strong></p>
 <ul>
 <li>A <em>band-stop</em> filter works to screen out frequencies that are within a certain range, giving easy passage only to frequencies outside of that range. Also known as <em>band-elimination</em>, <em>band-reject</em>, or <em>notch</em> filters.</li>

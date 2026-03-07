@@ -34,48 +34,42 @@
 <h1>Coupling and Leakage in RF Systems</h1>
 <p>RF design is known to be particularly challenging among the various subdisciplines of electrical engineering. One reason for this is the extreme inconsistency between theoretical electrical signals and high-frequency sinusoidal signals.</p>
 <p>At some point we all start to realize that the idealized components and wires and signals found in theoretical circuit analysis are helpful though highly inaccurate approximations of reality. Components have tolerances and temperature dependencies and parasitic elements; wires have resistance, capacitance, and inductance; signals have noise. However, numerous successful circuits are designed and implemented with little if any consideration for these nonidealities.</p>
-<p>&nbsp;</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/RFT_ch1_pg4_1-CON-452_2.jpg&quot; /></p>
-<h5><em>The equivalent circuit model for a real &ldquo;capacitor&rdquo;; at very high frequencies it actually behaves like an inductor.</em></h5>
-<p>&nbsp;</p>
+<h4><em>The equivalent circuit model for a real &ldquo;capacitor&rdquo;; at very high frequencies it actually behaves like an inductor.</em></h4>
+
 <p>This is possible because so many circuits these days involve primarily low-frequency or digital signals. Low-frequency systems are much less subject to nonideal signal and component behavior; consequently, low-frequency circuits tend to diverge much less from the operation that we expect based on theoretical analysis. High-frequency digital systems are more subject to nonidealities, but the effects of these nonidealities are usually not prominent because digital communication is inherently robust. A digital signal may experience significant degradation as a result of nonideal circuit behavior, but as long as the receiver can still correctly distinguish logic high from logic low, the system maintains full functionality.</p>
 <p>In the RF world, of course, signals are neither digital nor of low frequency. Unexpected signal behavior becomes the norm, and every dB of reduced signal-to-noise ratio corresponds to reduced range, or lower audio quality, or increased bit error rate.</p>
-<p>&nbsp;</p>
-<h3>Capacitive Coupling</h3>
+
+<h2>Capacitive Coupling</h2>
 <p>It is essential to understand that RF signals absolutely do not confine themselves to the intended conduction paths. This is particularly true in the context of printed circuit boards, where the various traces and components often have little physical separation.</p>
-<p>&nbsp;</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/RFT_ch3_pg1_2-CON-452_2.jpg&quot; /></p>
-<h5><em>Examples of parasitic capacitance.</em></h5>
-<p>&nbsp;</p>
+<h4><em>Examples of parasitic capacitance.</em></h4>
+
 <p>A typical circuit diagram consists of components, wires, and the empty space in between. The assumption is that signals travel along wires and cannot pass through the empty space. In reality, though, those empty spaces are <a href=&quot;https://eepower.com/textbook/vol-i-foundations-power-design/chapter-2-analysis-ac-systems/capacitors-and-inductors&quot; target=&quot;_blank&quot;>filled with capacitors</a>. Capacitance is formed whenever two conductors are separated by an insulating material, with closer physical proximity corresponding to higher capacitance.</p>
 <p>Capacitors block DC and present high impedance to low-frequency signals. Thus, we can more or less ignore all this unintended capacitance in the context of low-frequency design. But impedance decreases as frequency increases; at very high frequencies, a PCB is filled with relatively low-impedance conduction paths created by parasitic capacitance.</p>
-<p>&nbsp;</p>
-<h3>Radiated Coupling</h3>
+
+<h2>Radiated Coupling</h2>
 <p>In the idealized world, every RF device has one antenna. In reality, every conductor is an antenna in the sense that it is capable of emitting and receiving electromagnetic radiation. Thus, radiated coupling provides another means by which RF signals can pass through the supposedly nonconductive empty spaces between schematic symbols.</p>
 <p>As usual, this problem becomes more serious as frequency increases. An antenna is more effective when its length is a significant fraction of the signal wavelength, and thus PCB traces (which are usually rather short) are more problematic when high frequencies are present.</p>
 <p>The term &ldquo;radiated coupling&rdquo; is more appropriate when referring to far-field effects, i.e., interference caused by electromagnetic radiation that is not in the immediate vicinity of the antenna. When the emitting and receiving conductors are separated by less than approximately one wavelength, the interaction is occurring in the near field. In this situation the magnetic field dominates, and consequently the more accurate term is &ldquo;inductive coupling.&rdquo;</p>
-<h3>Leakage</h3>
+<h2>Leakage</h2>
 <p>An RF signal that is coupling into unwanted portions of a circuit is described as &ldquo;leaking.&rdquo; A classic example of leakage is depicted in the following diagram:</p>
-<p>&nbsp;</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/Keim_TX_IC_AKM_LO_Leakage.jpg&quot; /></p>
-<p>&nbsp;</p>
 <p>The local oscillator (LO) signal is fed directly to the LO input of the mixer; this is the intentional conduction path. At the same time, the signal finds an unintentional conduction path and manages to leak into the mixer&rsquo;s other input port. Mixing two signals of identical frequency and phase results in a DC offset (the magnitude of the offset decreases toward zero as the phase difference approaches 90&deg; or &ndash;90&deg;). This DC offset constitutes a major design challenge with respect to receiver architectures that translate the input signal directly from the radio frequency to the baseband frequency.</p>
 <p>Another leakage path is from a mixer through a low-noise amplifier to the antenna:</p>
-<p>&nbsp;</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/RFT_ch3_pg1_4_2.jpg&quot; /></p>
-<p>&nbsp;</p>
 <p>But it doesn&rsquo;t stop there; the LO signal could be radiated by the antenna, reflected by an external object, and then received by the same antenna. This would again produce self-mixing and the resulting DC offset, but in this case the offset would be highly unpredictable&mdash;the amplitude and polarity of the offset would be affected by the constantly changing magnitude of the reflected signal.</p>
-<p>&nbsp;</p>
-<h3>Transmitters and Receivers</h3>
+
+<h2>Transmitters and Receivers</h2>
 <p>Another situation that leads to leakage problems is when an RF device includes both a receiver and a transmitter. The transmitter portion has a power amplifier that is designed to send a strong signal to the antenna. The receiver portion is designed to amplify and demodulate signals of very small amplitude. So the transmitter provides high power, and the receiver provides high sensitivity.</p>
 <p>You can probably see where this is going. A coupling path could allow the PA output to leak into the receive chain; even a highly attenuated PA signal could cause problems for the sensitive receiver circuitry.</p>
-<p>&nbsp;</p>
-<h3>Simplex, Duplex</h3>
+
+<h2>Simplex, Duplex</h2>
 <p>This PA-to-receiver leakage is only a concern when the circuit must support simultaneous transmission and reception. A system composed of two such devices&mdash;called transceivers, because they can function as <strong>trans</strong>mitters and re<strong>ceivers</strong>&mdash;is referred to as full duplex. A full-duplex system enables simultaneous two-way communication.</p>
 <p>A half-duplex system supports only non-simultaneous two-way communication, though the devices used in a half-duplex system are still transceivers because they can transmit and receive. With half-duplex devices we don&rsquo;t have to worry about leakage from the PA to the receiver because the receive chain is not active during transmissions.</p>
 <p>A one-way RF communication system is referred to as &ldquo;simplex.&rdquo; A very common example is AM or FM broadcasting; the station&rsquo;s antenna transmits, and the car radio receives.</p>
-<p>&nbsp;</p>
-<h3>Summary</h3>
+
+<h2>Summary</h2>
 <ul>
 <li>Real-life electrical signals and components are more difficult to predict and analyze than their idealized counterparts; this is especially true for high-frequency analog signals.</li>
 <li>RF signals readily travel through unintended conduction paths created by capacitive coupling, radiated coupling, and inductive coupling.</li>

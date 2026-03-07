@@ -1,29 +1,29 @@
-<h1>What Is the Skin Effect?</h1>
-<h3>The Skin Depth of Copper in Electrical Engineering</h3>
+# What Is the Skin Effect?
+## The Skin Depth of Copper in Electrical Engineering
 <p>As <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-3/inductor-quirks/" target="_blank">previously mentioned</a>, the skin effect is where alternating current tends to avoid travel through the center of a solid <a href="https://www.allaboutcircuits.com/video-lectures/wire-and-cable/" target="_blank">conductor</a>, limiting itself to conduction near the surface.</p>
 <p>This effectively limits the cross-sectional conductor area available to carry alternating electron flow, increasing the <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/resistance/" target="_blank">resistance</a> of that conductor above what it would normally be for direct current:</p>
-<p>&nbsp;</p>
+
 <p><img src="/uploads/articles/skin-depth-decreases-with-increasing-frequency.jpg" /></p>
 <p><em>Skin effect: skin depth decreases with increasing frequency.</em></p>
-<p>&nbsp;</p>
+
 <p>The electrical resistance of the conductor with all its cross-sectional area in use is known as the &ldquo;DC resistance.&rdquo; The &ldquo;AC resistance&rdquo; of the same conductor refers to a higher figure resulting from the skin effect.</p>
 <p>As you can see, at high frequencies the AC current avoids traveling through most of the conductor&rsquo;s cross-sectional area. For the purpose of conducting current, the wire might as well be hollow!</p>
-<h3>Hollow Conductors in RF Applications</h3>
+## Hollow Conductors in RF Applications
 <p>In some radio applications (antennas, most notably) this effect is exploited. Since radio-frequency (&ldquo;RF&rdquo;) AC currents wouldn&rsquo;t travel through the middle of a conductor anyway, why not just use hollow metal rods instead of <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-12/conductor-size/" target="_blank">solid metal wires</a> and save both weight and cost? (See figure below.)</p>
 <p>Most antenna structures and RF power conductors are made of hollow metal tubes for this reason.</p>
 <p>In the following photograph, you can see some large inductors used in a 50 kW radio transmitting circuit. The inductors are hollow copper tubes coated with silver, for excellent conductivity at the &ldquo;skin&rdquo; of the tube:</p>
-<p>&nbsp;</p>
+
 <p><img src="/uploads/articles/high-power-inductors.jpg" /></p>
 <p><em>High power inductors formed from hollow tubes.</em></p>
-<p>&nbsp;</p>
-<h3>How Wire Gauge Affects Frequency and Effective Resistance</h3>
+
+## How Wire Gauge Affects Frequency and Effective Resistance
 <p>The degree to which frequency affects the effective resistance of a solid wire conductor is impacted by the <a href="https://www.allaboutcircuits.com/textbook/reference/chpt-3/copper-wire-gage-table/" target="_blank">gauge of that wire</a>. As a rule, large-gauge wires exhibit a more pronounced skin effect (change in resistance from DC) than small-gauge wires at any given frequency.</p>
 <p>The equation for approximating skin effect at high frequencies (greater than 1 MHz) is as follows:</p>
-<p>&nbsp;</p>
+
 <p><img src="/uploads/articles/skin-effect-equation1.jpg" /></p>
-<p>&nbsp;</p>
+
 <p>The table below gives approximate values of &ldquo;k&rdquo; factor for various round wire sizes. <em>&ldquo;k&rdquo; factor for various AWG wire sizes.</em></p>
-<p>&nbsp;</p>
+
 <table>
 <tbody>
 <tr>
@@ -70,7 +70,7 @@
 </tr>
 </tbody>
 </table>
-<p>&nbsp;</p>
+
 <p>For example, a length of number 10-gauge wire with a DC end-to-end resistance of 25 &Omega; would have an AC (effective) resistance of 2.182 k&Omega; at a frequency of 10 MHz:</p>
-<p>&nbsp;</p>
+
 <p><img src="/uploads/articles/skin-effect-equation2.jpg" /></p>

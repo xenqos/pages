@@ -36,28 +36,18 @@
 <p>It means that any time we have a waveform that isn&rsquo;t perfectly sine-wave-shaped, the circuit in question will react as though its having an array of different frequency voltages imposed on it at once.</p>
 <p>When an AC circuit is subjected to a source voltage consisting of a mixture of frequencies, the components in that circuit respond to each constituent frequency in a different way. Any reactive component such as a capacitor or an inductor will simultaneously present a unique amount of impedance to each and every frequency present in a circuit.</p>
 <p>Thankfully, the analysis of such circuits is made relatively easy by applying the<a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-10/superposition-theorem/&quot; title=&quot;&quot;> </a><em><a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-10/superposition-theorem/&quot; target=&quot;_blank&quot;>Superposition Theorem</a></em>, regarding the multiple-frequency source as a set of single-frequency<a href=&quot;https://www.allaboutcircuits.com/video-lectures/series-circuits-series-voltage-sources/&quot; target=&quot;_blank&quot;> voltage sources connected in series</a>, and analyzing the circuit for one source at a time, summing the results at the end to determine the aggregate total:</p>
-<p>&nbsp;</p>
 <p><img src=&quot;/uploads/articles/circuit-driven-by-a-combination-of-frequencies.jpg&quot; /></p>
 <p><em>Circuit driven by a combination of frequencies: 60 Hz and 90 Hz</em></p>
-<p>&nbsp;</p>
 <p>Analyzing circuit for 60 Hz source alone:</p>
-<p>&nbsp;</p>
 <p><img src=&quot;/uploads/articles/circuit-for-solving-60hz.jpg&quot; /></p>
 <p><em>Circuit for solving 60 Hz</em></p>
-<p>&nbsp;</p>
 <p><img src=&quot;/uploads/articles/analyzing-the-circuit-for-90hz-source-alone.jpg&quot; /></p>
-<p>&nbsp;</p>
 <p>Analyzing the circuit for 90 Hz source alone:</p>
-<p>&nbsp;</p>
 <p><img src=&quot;/uploads/articles/circuit-of-solving-90hz.jpg&quot; /></p>
 <p><em>Circuit of solving 90 Hz</em></p>
-<p>&nbsp;</p>
 <p><img src=&quot;/uploads/articles/table-for-circuit-solving.jpg&quot; /></p>
-<p>&nbsp;</p>
 <p>Superimposing the voltage drops across R and C, we get:</p>
-<p>&nbsp;</p>
 <p><img src=&quot;/uploads/articles/superimposing-the-voltage-drops.jpg&quot; /></p>
-<p>&nbsp;</p>
 <p>Because the two voltages across each component are at different frequencies, we cannot consolidate them into a single voltage figure as we could if we were adding together two voltages of different amplitude and/or phase angle at the same frequency.</p>
 <p>Complex number notation give us the ability to represent waveform amplitude (polar magnitude) and phase angle (polar angle), but not frequency.</p>
 <p>What we can tell from this application of the superposition theorem is that there will be a greater 60 Hz voltage dropped across the capacitor than a 90 Hz voltage. Just the opposite is true for the <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/polarity-voltage-drops/&quot; target=&quot;_blank&quot;>resistor&rsquo;s voltage drop</a>.</p>
@@ -74,7 +64,6 @@
 <p>Also, capacitive and inductive &ldquo;coupling&rdquo; caused by close-proximity conductors is usually more severe at high frequencies. Signal wiring nearby power wiring will tend to &ldquo;pick up&rdquo; harmonic interference from the power wiring to a far greater extent than pure sine-wave interference.</p>
 <p>This problem can manifest itself in industry when old motor controls are replaced with new, solid-state electronic motor controls providing greater energy efficiency.</p>
 <p>Suddenly there may be weird electrical noise being impressed upon signal wiring that never used to be there, because the old controls never generated harmonics, and those high-frequency harmonic voltages and currents tend to inductively and capacitively &ldquo;couple&rdquo; better to nearby conductors than any 60 Hz signals from the old controls used to.</p>
-<p>&nbsp;</p>
 <p><strong>REVIEW:</strong></p>
 <ul>
 <li>Any regular (repeating), non-sinusoidal waveform is equivalent to a particular series of sine/cosine waves of different frequencies, phases, and amplitudes, plus a DC offset voltage if necessary. The mathematical process for determining the sinusoidal waveform equivalent for any waveform is called <em>Fourier analysis</em>.</li>

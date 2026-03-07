@@ -35,15 +35,13 @@
 <p>In an ideal case, an <a href=&quot;https://www.allaboutcircuits.com/video-lectures/inductors-part-1/&quot; target=&quot;_blank&quot;>inductor</a> acts as a purely reactive device. That is, its opposition to AC current is strictly based on inductive reaction to changes in current, and not electron friction as is the case with resistive components.</p>
 <p>However, inductors are not quite so pure in their reactive behavior. To begin with, they&rsquo;re made of wire, and we know that all wire possesses some measurable amount of resistance (unless it&#39;s superconducting wire).</p>
 <p>This built-in <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/resistance/&quot; target=&quot;_blank&quot;>resistance</a> acts as though it were connected in series with the perfect inductance of the coil, like this:</p>
-<p>&nbsp;</p>
 <p><img src=&quot;/uploads/articles/real-inductor-inductor-equivalent-circuit1.jpg&quot; /></p>
 <p><em>Inductor Equivalent circuit of a real inductor.</em></p>
-<p>&nbsp;</p>
 <p>Consequently, the impedance of any real inductor will always be a complex combination of resistance and inductive reactance.</p>
 <p>Compounding this problem is something called the <em><a href=&quot;https://www.allaboutcircuits.com/textbook/alternating-current/chpt-3/more-on-the-skin-effect/&quot; target=&quot;_blank&quot;>skin effect</a></em>, which is AC&rsquo;s tendency to flow through the outer areas of a conductor&rsquo;s cross-section rather than through the middle. When electrons flow in a single direction (DC), they use the entire cross-sectional area of the conductor to move.</p>
 <p>Electrons switching directions of flow, on the other hand, tend to avoid travel through the very middle of a conductor, limiting the effective cross-sectional area available. The skin effect becomes more pronounced as frequency increases.</p>
 <p>Also, the alternating magnetic field of an inductor energized with AC may radiate off into space as part of an electromagnetic wave, especially if the AC is of high frequency. This radiated energy does not return to the inductor, and so it manifests itself as resistance (power dissipation) in the circuit.</p>
-<h3>Eddy Currents in Inductors</h3>
+<h2>Eddy Currents in Inductors</h2>
 <p>Added to the resistive losses of wire and radiation, there are other effects at work in iron-core inductors which manifest themselves as additional resistance between the leads. When an inductor is energized with AC, the alternating magnetic fields produced tend to induce circulating currents within the iron core known as <em>eddy currents</em>.</p>
 <p>These electric currents in the iron core have to overcome the electrical resistance offered by the iron, which is not as good a <a href=&quot;https://www.allaboutcircuits.com/video-lectures/wire-and-cable/&quot; target=&quot;_blank&quot;>conductor</a> as copper. Eddy current losses are primarily counteracted by dividing the iron core up into many thin sheets (laminations), each one separated from the other by a thin layer of electrically insulating varnish.</p>
 <p>With the cross-section of the core divided up into many electrically isolated sections, current cannot circulate within that cross-sectional area and there will be no (or very little) resistive losses from that effect.</p>
@@ -56,17 +54,13 @@
 <p>Additionally, any magnetic hysteresis that needs to be overcome with every reversal of the inductor&rsquo;s <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-15/magnetic-fields-and-inductance/&quot; target=&quot;_blank&quot;>magnetic field</a> constitutes an expenditure of energy that manifests itself as resistance in the circuit.</p>
 <p>Some core materials (such as ferrite) are particularly notorious for their hysteretic effect. Counteracting this effect is best done by means of proper core material selection and limits on the peak magnetic field intensity generated with each cycle.</p>
 <p>Altogether, the stray resistive properties of a real inductor (wire resistance, radiation losses, eddy currents, and hysteresis losses) are expressed under the single term of &ldquo;effective resistance:&rdquo;</p>
-<p>&nbsp;</p>
 <p><img src=&quot;/uploads/articles/real-inductor-inductor-equivalent-circuit2.jpg&quot; /></p>
 <p><em>Equivalent circuit of a real inductor with skin-effect, radiation, eddy current, and hysteresis losses.</em></p>
-<p>&nbsp;</p>
 <p>It is worthy to note that the skin effect and radiation losses apply just as well to straight lengths of wire in an AC circuit as they do a coiled wire. Usually, their combined effect is too small to notice, but at radio frequencies, they can be quite large.</p>
 <p>A radio transmitter antenna, for example, is designed with the express purpose of dissipating the greatest amount of energy in the form of electromagnetic radiation.</p>
-<h3>Quality Factor (Q Factor)</h3>
+<h2>Quality Factor (Q Factor)</h2>
 <p>Effective resistance in an inductor can be a serious consideration for the AC circuit designer. To help quantify the relative amount of effective resistance in an inductor, another value exists called the <em>Q factor</em>, or &ldquo;quality factor&rdquo; which is calculated as follows:</p>
-<p>&nbsp;</p>
 <p><img src=&quot;/uploads/articles/quality-factor-equation.jpg&quot; /></p>
-<p>&nbsp;</p>
 <p>The symbol &ldquo;Q&rdquo; has nothing to do with an electric charge (coulombs), which tends to be confusing. For some reason, the Powers That Be decided to use the same letter of the alphabet to denote a totally different quantity.</p>
 <p>The higher the value for &ldquo;Q,&rdquo; the &ldquo;purer&rdquo; the inductor is. Because it&rsquo;s so easy to add additional resistance if needed, a high-Q inductor is better than a low-Q inductor for design purposes. An ideal inductor would have a Q of infinity, with zero effective resistance.</p>
 <p>Because inductive reactance (X) varies with frequency, so will Q. However, since the resistive effects of inductors (wire skin effect, radiation losses, eddy current, and hysteresis) also vary with frequency, Q does not vary proportionally with reactance. In order for a Q value to have a precise meaning, it must be specified at a particular test frequency.</p>

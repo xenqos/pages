@@ -1,4 +1,4 @@
-<h1>Summary of Filters</h1>
+# Summary of Filters
 <p>As lengthy as this chapter has been up to this point, it only begins to scratch the surface of&nbsp;<a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-8/what-is-a-filter/" target="_blank">filter design</a>.</p>
 <p>A quick perusal of any advanced filter design textbook is sufficient to prove my point.</p>
 <p>The mathematics involved with component selection and frequency response prediction is daunting to say the least&mdash;well beyond the scope of the beginning electronics student. It has been my intent here to present the basic principles of filter design with as little math as possible, leaning on the power of the <a href="https://www.allaboutcircuits.com/textbook/reference/chpt-7/fundamentals-spice-programming/" target="_blank">SPICE</a> circuit analysis program to explore filter performance.</p>

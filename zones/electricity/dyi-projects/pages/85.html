@@ -32,13 +32,12 @@
 <div id='idContent'>
 
 <h1>Digital Lab - 7-segment LED Display</h1>
-<h3>Project Overview</h3>
+<h2>Project Overview</h2>
 <p>The operating principle for this circuit (Figure 1)&nbsp;is to input a four-bit BCD (binary-coded decimal) value using the switches and energize the proper output lines to form the corresponding decimal digit on the 7-segment <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-3/special-purpose-diodes/&quot; target=&quot;_blank&quot;>light-emitting diode (LED)</a> display.</p>
-<p>&nbsp;</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/7-segment-display-schematic.jpg&quot; /></p>
-<h5><em><strong>Figure 1.</strong> Schematic diagram of the 7-segment LED display circuit.</em></h5>
-<p>&nbsp;</p>
-<h3>Parts and Materials</h3>
+<h4><em><strong>Figure 1.</strong> Schematic diagram of the 7-segment LED display circuit.</em></h4>
+
+<h2>Parts and Materials</h2>
 <ul>
 <li>4511 BCD-to-7seg latch/decoder/driver</li>
 <li>Common-cathode 7-segment LED display</li>
@@ -49,8 +48,8 @@
 </ul>
 
 <p><strong>Caution!</strong> The 4511 IC is a <a href=&quot;https://www.allaboutcircuits.com/textbook/digital/chpt-3/cmos-gate-circuitry/&quot; target=&quot;_blank&quot;>complementary metal-oxide semiconductor (CMOS)</a>&nbsp;and, therefore, sensitive to <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/static-electricity/&quot; target=&quot;_blank&quot;>static electricity</a>!</p>
-<p>&nbsp;</p>
-<h3>Learning Objectives</h3>
+
+<h2>Learning Objectives</h2>
 <ul>
 <li>How to use the 4511 7-segment decoder/display driver IC</li>
 <li>Gain familiarity with the BCD&nbsp;code</li>
@@ -58,17 +57,15 @@
 <li>How to identify and use both active-low&nbsp;and active-high&nbsp;logic inputs</li>
 </ul>
 
-<p>&nbsp;</p>
-<h3>Instructions</h3>
+<h2>Instructions</h2>
 <p>This experiment is more of an introduction to the 4511 decoder/display driver IC than it is a lesson in how to build&nbsp;a digital function from lower-level components. Since 7-segment displays are&nbsp;common components of digital devices, it is good to be familiar with the driving&nbsp;circuits behind them, and the 4511 is a good example of a typical driver IC.</p>
 <p><strong>Step 1:</strong>&nbsp;Connect the four switches to their pulldown resistors and the ABCD inputs of the 4511 IC, as illustrated on the left side of Figures 1 and 2.</p>
-<p>&nbsp;</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/7-segment-display-illustration.jpg&quot; /></p>
-<h5><em><strong>Figure 2.</strong>&nbsp;Breadboard implementation of the 7-segment LED display circuit.</em></h5>
-<p>&nbsp;</p>
+<h4><em><strong>Figure 2.</strong>&nbsp;Breadboard implementation of the 7-segment LED display circuit.</em></h4>
+
 <p>The BCD&nbsp;inputs are designated A, B, C, and D in order from least significant to most significant. The truth table for mapping these BCD inputs to the seven&nbsp;segment outputs is provided in Table 1.&nbsp;</p>
-<p>&nbsp;</p>
-<h5><em><strong>Table 1.</strong>&nbsp;A truth table for 4511 IC BCD to 7-segment display driver</em></h5>
+
+<h4><em><strong>Table 1.</strong>&nbsp;A truth table for 4511 IC BCD to 7-segment display driver</em></h4>
 <table align=&quot;center&quot; border=&quot;1&quot; cellpadding=&quot;1&quot; cellspacing=&quot;1&quot; summary=&quot;4511 IC Truth Table&quot;><br>
 <thead><br>
 <tr><br>
@@ -234,7 +231,7 @@
 </tr>
 </tbody><br>
 </table><br>
-<p>&nbsp;</p>
+<br>
 <p><strong>Step 2:&nbsp;</strong>Connect the seven outputs from the 4511 IC to the corresponding inputs on the 7-segment display.&nbsp;Outputs are labeled a, b, c, d, e, f, and g, with each letter corresponding to a standardized segment designation for 7-segment displays. Of course, since each LED segment requires its own dropping resistor, we must use seven 470 &Omega; resistors placed in series between the 4511&rsquo;s output terminals and the corresponding terminals of the display unit.</p>
 <p><strong>Step 3:&nbsp;</strong>All LEDs inside the display unit are made common to each other on one side, either cathode or anode. The 4511 display driver IC requires a common-cathode 7-segment display unit, which is what is used here. So, we must connect the cathode connection to the <a href=&quot;https://www.allaboutcircuits.com/technical-articles/an-introduction-to-ground/&quot; target=&quot;_blank&quot;>ground</a>.</p>
 <p><strong>Step 4:&nbsp;</strong>Complete the remaining connections, illustrated in Figure 1, including power and ground.</p>
