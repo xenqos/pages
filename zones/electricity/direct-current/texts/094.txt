@@ -16,106 +16,25 @@
 <p>The specific resistances of several conductive materials can be found in the following table. We find copper near the bottom of the table, second only to silver in having low specific resistance (good conductivity):</p>
 
 <em>Specific Resistance at 20 Degrees Celsius</em>
-<table>
-<tbody>
-<tr>
-<th>Material</th>
-<th>Element/Alloy</th>
-<th>(ohm-cmil/ft)</th>
-<th>(microohm-cm)</th>
-</tr>
-<tr>
-<td>Nichrome</td>
-<td>Alloy</td>
-<td>675</td>
-<td>112.2</td>
-</tr>
-<tr>
-<td>Nichrome V</td>
-<td>Alloy</td>
-<td>650</td>
-<td>108.1</td>
-</tr>
-<tr>
-<td>Manganin</td>
-<td>Alloy</td>
-<td>290</td>
-<td>48.21</td>
-</tr>
-<tr>
-<td>Constantan</td>
-<td>Alloy</td>
-<td>272.97</td>
-<td>45.38</td>
-</tr>
-<tr>
-<td>Steel*</td>
-<td>Alloy</td>
-<td>100</td>
-<td>16.62</td>
-</tr>
-<tr>
-<td>Platinum</td>
-<td>Element</td>
-<td>63.16</td>
-<td>10.5</td>
-</tr>
-<tr>
-<td>Iron</td>
-<td>Element</td>
-<td>57.81</td>
-<td>9.61</td>
-</tr>
-<tr>
-<td>Nickel</td>
-<td>Element</td>
-<td>41.69</td>
-<td>6.93</td>
-</tr>
-<tr>
-<td>Zinc</td>
-<td>Element</td>
-<td>35.49</td>
-<td>5.90</td>
-</tr>
-<tr>
-<td>Molybdenum</td>
-<td>Element</td>
-<td>32.12</td>
-<td>5.34</td>
-</tr>
-<tr>
-<td>Tungsten</td>
-<td>Element</td>
-<td>31.76</td>
-<td>5.28</td>
-</tr>
-<tr>
-<td>Aluminum</td>
-<td>Element</td>
-<td>15.94</td>
-<td>2.650</td>
-</tr>
-<tr>
-<td>Gold</td>
-<td>Element</td>
-<td>13.32</td>
-<td>2.214</td>
-</tr>
-<tr>
-<td>Copper</td>
-<td>Element</td>
-<td>10.09</td>
-<td>1.678</td>
-</tr>
-<tr>
-<td>Silver</td>
-<td>Element</td>
-<td>9.546</td>
-<td>1.587</td>
-</tr>
-</tbody>
-</table>
+[|
+¦Material¦Element/Alloy¦(ohm-cmil/ft)¦(microohm-cm)¦
+|Nichrome  |Alloy  |675   |112.2|
+|Nichrome V|Alloy  |650   |108.1|
+|Manganin  |Alloy  |290   |48.21|
+|Constantan|Alloy  |272.97|45.38|
+|Steel*    |Alloy  |100   |16.62|
+|Platinum  |Element|63.16 |10.5 |
+|Iron      |Element|57.81 |9.61 |
+|Nickel    |Element|41.69 |6.93 |
+|Zinc      |Element|35.49 |5.90 |
+|Molybdenum|Element|32.12 |5.34 |
+|Tungsten  |Element|31.76 |5.28 |
+|Aluminum  |Element|15.94 |2.650|
+|Gold      |Element|13.32 |2.214|
+|Copper    |Element|10.09 |1.678|
+|Silver    |Element|9.546 |1.587|
+|]
+
 <p><em>* = Steel alloy at 99.5 percent iron, 0.5 percent carbon</em></p>
 
 <p>Notice that the figures for specific resistance in the above table are given in the very strange unit of &ldquo;ohms-cmil/ft&rdquo; (&Omega;-cmil/ft), This unit indicates what units we are expected to use in the resistance formula (R=&rho;l/A). In this case, these figures for specific resistance are intended to be used when length is measured in feet and cross-sectional area is measured in circular mils.</p>

@@ -104,40 +104,12 @@
 <p>Using the Table Method, we can plug the value for the total resistance into Table 1&nbsp;and then fill out the rest of the table. The load resistor has a current of 4.0 A and a voltage drop of 8 V.</p>
 
 <em><strong>Table 1. </strong>Calculating the load current and voltage drop.</em>
-<table align="center" border="1" cellpadding="1" cellspacing="1">
-<thead>
-<tr>
-<th scope="row">&nbsp;</th>
-<th scope="col">R<sub>Norton</sub></th>
-<th scope="col">R<sub>Load</sub></th>
-<th scope="col">Total</th>
-<th scope="col">Units</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th scope="row">V</th>
-<td>8.0</td>
-<td>8.0</td>
-<td>8.0</td>
-<td>V</td>
-</tr>
-<tr>
-<th scope="row">I</th>
-<td>10.0</td>
-<td>4.0</td>
-<td>14.0</td>
-<td>A</td>
-</tr>
-<tr>
-<th scope="row">R</th>
-<td>0.8</td>
-<td>2.0</td>
-<td>0.57143</td>
-<td>&Omega;</td>
-</tr>
-</tbody>
-</table>
+[|
+¦¦RNorton¦RLoad¦Total¦Units¦
+|V|8.0 |8.0|8.0    |V|
+|I|10.0|4.0|14.0   |A|
+|R|0.8 |2.0|0.57143|Ω|
+|]
 
 <p>As with the Thevenin equivalent circuit, the only useful information from this analysis is the voltage and current values for our load resistor, R2. The rest of the information is irrelevant to the original circuit.&nbsp;</p>
 <p>However, the same advantages seen with Thevenin&rsquo;s theorem apply to Norton&rsquo;s theorem as well. Namely, if we wish to analyze load resistor voltage and current over several different values of load resistance, we can use the Norton equivalent circuit again and again, applying nothing more complex than simple parallel circuit analysis to determine what&rsquo;s happening with each trial load.</p>

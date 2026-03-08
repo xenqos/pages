@@ -18,108 +18,34 @@
 ^[100-03.png]
 
 <p>&ldquo;Relative&rdquo; permittivity means the permittivity of a material, relative to that of a pure vacuum. The greater the number, the greater the permittivity of the material. Glass, for instance, with a relative permittivity of 7, has seven times the permittivity of a pure vacuum, and consequently will allow for the establishment of an electric field flux seven times stronger than that of a vacuum, all other factors being equal. The following is a table listing the relative permittivities (also known as the &ldquo;dielectric constant&rdquo;) of various common substances:</p>
-<table>
-<tbody>
-<tr>
-<th>
-<p>Material</p>
-</th>
-<th>Relative permittivity (dielectric constant)</th>
-</tr>
-<tr>
-<td>Vacuum</td>
-<td>1.0000</td>
-</tr>
-<tr>
-<td>Air</td>
-<td>1.0006</td>
-</tr>
-<tr>
-<td>PTFE, FEP (&ldquo;Teflon&rdquo;)</td>
-<td>2.0</td>
-</tr>
-<tr>
-<td>Polypropylene</td>
-<td>2.20 to 2.28</td>
-</tr>
-<tr>
-<td>ABS resin</td>
-<td>2.4 to 3.2</td>
-</tr>
-<tr>
-<td>Polystyrene</td>
-<td>2.45 to 4.0</td>
-</tr>
-<tr>
-<td>Waxed paper</td>
-<td>2.5</td>
-</tr>
-<tr>
-<td>Transformer oil</td>
-<td>2.5 to 4</td>
-</tr>
-<tr>
-<td>Hard Rubber</td>
-<td>2.5 to 4.80</td>
-</tr>
-<tr>
-<td>Wood (Oak)</td>
-<td>3.3</td>
-</tr>
-<tr>
-<td>Silicones</td>
-<td>3.4 to 4.3</td>
-</tr>
-<tr>
-<td>Bakelite</td>
-<td>3.5 to 6.0</td>
-</tr>
-<tr>
-<td>Quartz, fused</td>
-<td>3.8</td>
-</tr>
-<tr>
-<td>Wood (Maple)</td>
-<td>4.4</td>
-</tr>
-<tr>
-<td>Glass</td>
-<td>4.9 to 7.5</td>
-</tr>
-<tr>
-<td>Castor oil</td>
-<td>5.0</td>
-</tr>
-<tr>
-<td>Wood (Birch)</td>
-<td>5.2</td>
-</tr>
-<tr>
-<td>Mica, muscovite</td>
-<td>5.0 to 8.7</td>
-</tr>
-<tr>
-<td>Glass-bonded mica</td>
-<td>6.3 to 9.3</td>
-</tr>
-<tr>
-<td>Porcelain, Steatite</td>
-<td>6.5</td>
-</tr>
-<tr>
-<td>Alumina</td>
-<td>8.0 to 10.0</td>
-</tr>
-<tr>
-<td>Distilled water</td>
-<td>80.0</td>
-</tr>
-<tr>
-<td>Barium-strontium-titanite</td>
-<td>7500</td>
-</tr>
-</tbody>
-</table>
+
+[|
+¦Material¦Relative~~permittivity~~dielectric~~constant¦
+|Vacuum                   |1.0000      |
+|Air                      |1.0006      |
+|PTFE, FEP (“Teflon”)     |2.0         |
+|Polypropylene            |2.20 to 2.28|
+|ABS resin                |2.4 to 3.2  |
+|Polystyrene              |2.45 to 4.0 |
+|Waxed paper              |2.5         |
+|Transformer oil          |2.5 to 4    |
+|Hard Rubber              |2.5 to 4.80 |
+|Wood (Oak)               |3.3         |
+|Silicones                |3.4 to 4.3  |
+|Bakelite                 |3.5 to 6.0  |
+|Quartz, fused            |3.8         |
+|Wood (Maple)             |4.4         |
+|Glass                    |4.9 to 7.5  |
+|Castor oil               |5.0         |
+|Wood (Birch)             |5.2         |
+|Mica, muscovite          |5.0 to 8.7  |
+|Glass-bonded mica        |6.3 to 9.3  |
+|Porcelain, Steatite      |6.5         |
+|Alumina                  |8.0 to 10.0 |
+|Distilled water          |80.0        |
+|Barium-strontium-titanite|7500        |
+|]
+
 <p>An approximation of capacitance for any pair of separated conductors can be found with this formula:</p>
 
 ^[100-04.png]

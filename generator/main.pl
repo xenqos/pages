@@ -8,11 +8,11 @@ use warnings;
 
 our @books =
 (
-  '1|dharma/principles|Принципы'
-, '1|dharma/mantra|Мантры'
-, '1|dharma/pranayama|Пранаяма'
-, '1|dharma/samhita|Самхиты'
-, '1|dharma/upanishad|Упанишады'
+  '0|dharma/principles|Принципы'
+, '0|dharma/mantra|Мантры'
+, '0|dharma/pranayama|Пранаяма'
+, '0|dharma/samhita|Самхиты'
+, '0|dharma/upanishad|Упанишады'
 
 , '0|dao/daodejing|Дао Дэ Цзин'
 , '0|dao/stratagems|Стратагемы'
@@ -407,7 +407,7 @@ sub get_markup
   # Mathjax
   #---------------------------------------------------------
 
-  $text_content =~ s/\[\$(.*?)\$\]/<div class='clOverflow'>\n\$$1\$\n<\/div>/sg;
+  $text_content =~ s/\[\$(.*?)\$\]/<div class='clOverflow'>\n\$\$$1\$\$\n<\/div>/sg;
   $text_content =~ s/\n\$<br>\n<br>/\n\$\n/sg;
   $text_content =~ s/\n\$<br>/\n\$/sg;
   $text_content =~ s/\n<\/div><br>\n<br>/\n<\/div>\n/sg;
@@ -541,7 +541,8 @@ sub get_pages
 
 #    $math_on = ($text_content =~ /\\begin\{/) ? $& : '';
 #    $math_on = ($text_content =~ /\[\$/) ? $& : '';
-    $math_on = ($text_content =~ /<\!-- math on -->/) ? $& : '';
+#    $math_on = ($text_content =~ /<\!-- math on -->/) ? $& : '';
+    $math_on = ($text_content =~ /\$\$/) ? $& : '';
 
     $page_curr = $file_name_noext;
 

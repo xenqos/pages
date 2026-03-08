@@ -84,56 +84,19 @@
 <pre>
 series-parallel circuit&#10; v1 1 0 &#10; vi1 1 2 dc 0 &#10; vi2 1 3 dc 0 &#10; r1 2 4 100 &#10; r2 3 4 250 &#10; vi3 4 5 dc 0 &#10; vi4 4 6 dc 0 &#10; r3 5 0 350 &#10; r4 6 0 200 &#10; .dc v1 24 24 1 &#10; .print dc v(2,4) v(3,4) v(5,0) v(6,0) &#10; .print dc i(vi1) i(vi2) i(vi3) i(vi4)&#10; .end&#10;</pre>
 <p>I&rsquo;ve annotated SPICE&rsquo;s output figures to make them more readable, denoting which voltage and current figures belong to which resistors.</p>
-<table>
-<tbody>
-<tr>
-<th>v1</th>
-<th>v(2,4)</th>
-<th>v(3,4)</th>
-<th>v(5)</th>
-<th>v(6)</th>
-</tr>
-<tr>
-<td>2.40E+01</td>
-<td>8.63E+00</td>
-<td>8.63E+00</td>
-<td>1.54E+01</td>
-<td>1.54E+01</td>
-</tr>
-<tr>
-<td>Battery voltage</td>
-<td>R1 voltage</td>
-<td>R2 voltage</td>
-<td>R3 voltage</td>
-<td>R4 voltage</td>
-</tr>
-</tbody>
-</table>
-<table>
-<tbody>
-<tr>
-<th>v1</th>
-<th>i(vi1)</th>
-<th>i(vi2)</th>
-<th>i(vi3)</th>
-<th>i(vi4)</th>
-</tr>
-<tr>
-<td>2.40E+01</td>
-<td>8.63E-02</td>
-<td>3.54EE-02</td>
-<td>4.39E-02</td>
-<td>7.69E-02</td>
-</tr>
-<tr>
-<td>Battery voltage</td>
-<td>R1 current</td>
-<td>R2 current</td>
-<td>R3 current</td>
-<td>R4 current</td>
-</tr>
-</tbody>
-</table>
+
+[|
+¦v1¦v(2,4)¦v(3,4)¦v(5)¦v(6)¦
+|2.40E+01       |8.63E+00  |8.63E+00  |1.54E+01  |1.54E+01  |
+|Battery voltage|R1 voltage|R2 voltage|R3 voltage|R4 voltage|
+|]
+
+[|
+¦v1¦i(vi1)¦i(vi2)¦i(vi3)¦i(vi4)¦
+|2.40E+01       |8.63E-02  |3.54EE-02 |4.39E-02  |7.69E-02  |
+|Battery voltage|R1 current|R2 current|R3 current|R4 current|
+|]
+
 <p>As you can see, all the figures do agree with the calculated values.</p>
 <p><strong>REVIEW:</strong></p>
 <ul>

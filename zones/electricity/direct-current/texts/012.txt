@@ -31,7 +31,6 @@
 ## Variable Resistors
 <p>Variable resistors must have some physical means of adjustment, either a rotating shaft or lever that can be moved to vary the amount of electrical resistance. Here is a photograph showing some devices called potentiometers, which can be used as variable resistors:</p>
 
-
 ^[012-06.jpg]
 
 ## Power Rating of Resistors
@@ -89,90 +88,18 @@
 ### Key Performance Indicators (KPIs)
 
 <p>The KPIs for each resistor material can be found below:</p>
-<table>
-<tbody>
-<tr>
-<th>Characteristic</th>
-<th>Metal Film</th>
-<th>Thick Metal Film</th>
-<th>Precision Metal Film</th>
-<th>Carbon Composition</th>
-<th>Carbon Film</th>
-</tr>
-<tr>
-<td>Temp. range</td>
-<td>-55 to +125</td>
-<td>-55 to +130</td>
-<td>-55 to +155</td>
-<td>-40 to +105</td>
-<td>-55 to +155</td>
-</tr>
-<tr>
-<td>Max. temp. coeff.</td>
-<td>100</td>
-<td>100</td>
-<td>15</td>
-<td>1200</td>
-<td>250-1000</td>
-</tr>
-<tr>
-<td>Vmax</td>
-<td>200-350</td>
-<td>250</td>
-<td>200</td>
-<td>350-500</td>
-<td>350-500</td>
-</tr>
-<tr>
-<td>Noise (&mu;V per volt of applied DC)</td>
-<td>0.5</td>
-<td>0.1</td>
-<td>0.1</td>
-<td>4 (100K)</td>
-<td>5 (100K)</td>
-</tr>
-<tr>
-<td>R Insul.</td>
-<td>10000</td>
-<td>10000</td>
-<td>10000</td>
-<td>10000</td>
-<td>10000</td>
-</tr>
-<tr>
-<td>Solder (change % in resistance value)</td>
-<td>0.20%</td>
-<td>0.15%</td>
-<td>0.02%</td>
-<td>2%</td>
-<td>0.50%</td>
-</tr>
-<tr>
-<td>Damp heat (change % in resistance value)</td>
-<td>0.50%</td>
-<td>1%</td>
-<td>0.50%</td>
-<td>15%</td>
-<td>3.50%</td>
-</tr>
-<tr>
-<td>Shelf life (change % in resistance value)</td>
-<td>0.10%</td>
-<td>0.10%</td>
-<td>0.00%</td>
-<td>5%</td>
-<td>2%</td>
-</tr>
-<tr>
-<td>Full rating (2000h at 70degC)</td>
-<td>1%</td>
-<td>1%</td>
-<td>0.03%</td>
-<td>10%</td>
-<td>4%</td>
-</tr>
-</tbody>
-</table>
+[|
+¦Characteristic¦Metal Film¦Thick Metal Film¦Precision Metal Film¦Carbon Composition¦Carbon Film¦
+|Temp. range                              |-55 to +125|-55 to +130|-55 to +155|-40 to +105|-55 to +155|
+|Max. temp. coeff.                        |100        |100        |15         |1200       |250-1000   |
+|Vmax                                     |200-350    |250        |200        |350-500    |350-500    |
+|Noise (μV per volt of applied DC)        |0.5        |0.1        |0.1        |4 (100K)   |5 (100K)   |
+|R Insul.                                 |10000      |10000      |10000      |10000      |10000      |
+|Solder (change % in resistance value)    |0.20%      |0.15%      |0.02%      |2%         |0.50%      |
+|Damp heat (change % in resistance value) |0.50%      |1%         |0.50%      |15%        |3.50%      |
+|Shelf life (change % in resistance value)|0.10%      |0.10%      |0.00%      |5%         |2%         |
+|Full rating (2000h at 70degC)            |1%         |1%         |0.03%      |10%        |4%         |
+|]
 
 <p><strong>REVIEW:</strong></p>
 <ul>

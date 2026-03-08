@@ -14,7 +14,8 @@
   <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
   <script type='text/javascript' src='../../../../scripts/global.js'></script>
   <script type='text/javascript' src='../scripts/local.js'></script>
-  
+  <script>MathJax={tex: {inlineMath: [['$', '$'], ['((', '))']], processEscapes: true}};</script>
+  <script id='MathJax-script' async src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'></script>
 </head>
 <body onload='fncGetDivState(); fncGetScrollPosition();'>
 
@@ -45,106 +46,28 @@
 <p>This formula relates the resistance of a conductor with its specific resistance (the Greek letter &ldquo;rho&rdquo; (&rho;), which looks similar to a lower-case letter &ldquo;p&rdquo;), its length (&ldquo;l&rdquo;), and its cross-sectional area (&ldquo;A&rdquo;). Notice that with the length variable on the top of the fraction, the resistance value increases as the length increases (analogy: it is more difficult to force liquid through a long pipe than a short one), and decreases as cross-sectional area increases (analogy: liquid flows easier through a fat pipe than through a skinny one). Specific resistance is a constant for the type of conductor material being calculated.</p>
 <p>The specific resistances of several conductive materials can be found in the following table. We find copper near the bottom of the table, second only to silver in having low specific resistance (good conductivity):</p>
 <em>Specific Resistance at 20 Degrees Celsius</em><br>
-<table><br>
-<tbody><br>
-<tr><br>
-<th>Material</th><br>
-<th>Element/Alloy</th><br>
-<th>(ohm-cmil/ft)</th><br>
-<th>(microohm-cm)</th><br>
-</tr>
-<tr><br>
-<td>Nichrome</td><br>
-<td>Alloy</td><br>
-<td>675</td><br>
-<td>112.2</td><br>
-</tr>
-<tr><br>
-<td>Nichrome V</td><br>
-<td>Alloy</td><br>
-<td>650</td><br>
-<td>108.1</td><br>
-</tr>
-<tr><br>
-<td>Manganin</td><br>
-<td>Alloy</td><br>
-<td>290</td><br>
-<td>48.21</td><br>
-</tr>
-<tr><br>
-<td>Constantan</td><br>
-<td>Alloy</td><br>
-<td>272.97</td><br>
-<td>45.38</td><br>
-</tr>
-<tr><br>
-<td>Steel*</td><br>
-<td>Alloy</td><br>
-<td>100</td><br>
-<td>16.62</td><br>
-</tr>
-<tr><br>
-<td>Platinum</td><br>
-<td>Element</td><br>
-<td>63.16</td><br>
-<td>10.5</td><br>
-</tr>
-<tr><br>
-<td>Iron</td><br>
-<td>Element</td><br>
-<td>57.81</td><br>
-<td>9.61</td><br>
-</tr>
-<tr><br>
-<td>Nickel</td><br>
-<td>Element</td><br>
-<td>41.69</td><br>
-<td>6.93</td><br>
-</tr>
-<tr><br>
-<td>Zinc</td><br>
-<td>Element</td><br>
-<td>35.49</td><br>
-<td>5.90</td><br>
-</tr>
-<tr><br>
-<td>Molybdenum</td><br>
-<td>Element</td><br>
-<td>32.12</td><br>
-<td>5.34</td><br>
-</tr>
-<tr><br>
-<td>Tungsten</td><br>
-<td>Element</td><br>
-<td>31.76</td><br>
-<td>5.28</td><br>
-</tr>
-<tr><br>
-<td>Aluminum</td><br>
-<td>Element</td><br>
-<td>15.94</td><br>
-<td>2.650</td><br>
-</tr>
-<tr><br>
-<td>Gold</td><br>
-<td>Element</td><br>
-<td>13.32</td><br>
-<td>2.214</td><br>
-</tr>
-<tr><br>
-<td>Copper</td><br>
-<td>Element</td><br>
-<td>10.09</td><br>
-<td>1.678</td><br>
-</tr>
-<tr><br>
-<td>Silver</td><br>
-<td>Element</td><br>
-<td>9.546</td><br>
-<td>1.587</td><br>
-</tr>
-</tbody><br>
-</table><br>
+<div class='clOverflow'>
+<table>
+<tr>
+<th>Material</th><th>Element/Alloy</th><th>(ohm-cmil/ft)</th><th>(microohm-cm)</th></tr>
+<tr><td>Nichrome  </td><td>Alloy  </td><td>675   </td><td>112.2</td></tr>
+<tr><td>Nichrome V</td><td>Alloy  </td><td>650   </td><td>108.1</td></tr>
+<tr><td>Manganin  </td><td>Alloy  </td><td>290   </td><td>48.21</td></tr>
+<tr><td>Constantan</td><td>Alloy  </td><td>272.97</td><td>45.38</td></tr>
+<tr><td>Steel*    </td><td>Alloy  </td><td>100   </td><td>16.62</td></tr>
+<tr><td>Platinum  </td><td>Element</td><td>63.16 </td><td>10.5 </td></tr>
+<tr><td>Iron      </td><td>Element</td><td>57.81 </td><td>9.61 </td></tr>
+<tr><td>Nickel    </td><td>Element</td><td>41.69 </td><td>6.93 </td></tr>
+<tr><td>Zinc      </td><td>Element</td><td>35.49 </td><td>5.90 </td></tr>
+<tr><td>Molybdenum</td><td>Element</td><td>32.12 </td><td>5.34 </td></tr>
+<tr><td>Tungsten  </td><td>Element</td><td>31.76 </td><td>5.28 </td></tr>
+<tr><td>Aluminum  </td><td>Element</td><td>15.94 </td><td>2.650</td></tr>
+<tr><td>Gold      </td><td>Element</td><td>13.32 </td><td>2.214</td></tr>
+<tr><td>Copper    </td><td>Element</td><td>10.09 </td><td>1.678</td></tr>
+<tr><td>Silver    </td><td>Element</td><td>9.546 </td><td>1.587</td></tr>
+</table>
+</div>
+
 <p><em>* = Steel alloy at 99.5 percent iron, 0.5 percent carbon</em></p>
 <p>Notice that the figures for specific resistance in the above table are given in the very strange unit of &ldquo;ohms-cmil/ft&rdquo; (&Omega;-cmil/ft), This unit indicates what units we are expected to use in the resistance formula (R=&rho;l/A). In this case, these figures for specific resistance are intended to be used when length is measured in feet and cross-sectional area is measured in circular mils.</p>
 <p>The metric unit for specific resistance is the ohm-meter (&Omega;-m), or ohm-centimeter (&Omega;-cm), with 1.66243 x 10<sub>-9</sub> &Omega;-meters per &Omega;-cmil/ft (1.66243 x 10<sub>-7</sub> &Omega;-cm per &Omega;-cmil/ft). In the &Omega;-cm column of the table, the figures are actually scaled as &micro;&Omega;-cm due to their very small magnitudes. For example, iron is listed as 9.61 &micro;&Omega;-cm, which could be represented as 9.61 x 10<sub>-6</sub> &Omega;-cm.</p>

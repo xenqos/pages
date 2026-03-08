@@ -19,55 +19,13 @@
 
 ^[119-04.jpg]
 
-<table>
-<tbody>
-<tr>
-<th>Time (seconds)</th>
-<th>Battery Voltage</th>
-<th>Inductor Voltage</th>
-<th>Current</th>
-</tr>
-<tr>
-<td>0</td>
-<td>15 V</td>
-<td>5 V</td>
-<td>5 A</td>
-</tr>
-<tr>
-<td>0.1</td>
-<td>15 V</td>
-<td>4.094 V</td>
-<td>5.453 A</td>
-</tr>
-<tr>
-<td>0.25</td>
-<td>15 V</td>
-<td>3.033 V</td>
-<td>5.984 A</td>
-</tr>
-<tr>
-<td>0.5</td>
-<td>15 V</td>
-<td>1.839 V</td>
-<td>6.580 A</td>
-</tr>
-<tr>
-<td>1</td>
-<td>15 V</td>
-<td>0.677 V</td>
-<td>7.162 A</td>
-</tr>
-<tr>
-<td>2</td>
-<td>15 V</td>
-<td>0.092 V</td>
-<td>7.454 A</td>
-</tr>
-<tr>
-<td>3</td>
-<td>15 V</td>
-<td>0.012 V</td>
-<td>7.494 A</td>
-</tr>
-</tbody>
-</table>
+[|
+¦Time~~(seconds)¦Battery~~Voltage¦Inductor~~Voltage¦Current¦
+|0   |15 V|5 V    |5 A    |
+|0.1 |15 V|4.094 V|5.453 A|
+|0.25|15 V|3.033 V|5.984 A|
+|0.5 |15 V|1.839 V|6.580 A|
+|1   |15 V|0.677 V|7.162 A|
+|2   |15 V|0.092 V|7.454 A|
+|3   |15 V|0.012 V|7.494 A|
+|]

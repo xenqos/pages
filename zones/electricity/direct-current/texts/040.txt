@@ -1,5 +1,5 @@
 ###### 05. Series And Parallel Circuits
-
+<!-- math on -->
 # SPICE Simulation of Series and Parallel Circuits
 
 ^[040-01.jpg]
@@ -30,24 +30,10 @@ series circuit&#10;v1 1 0&#10;r1 1 2 3k&#10;r2 2 3 10k&#10;r3 3 0 5k&#10;.dc v1 
 
 <p>Now, all we have to do is run the SPICE program to process the netlist and output the results:</p>
 
-<table>
-<tbody>
-<tr>
-<th>v1</th>
-<th>v(1,2)</th>
-<th>v(2,3)</th>
-<th>v(3)</th>
-<th>i(v1)</th>
-</tr>
-<tr>
-<td>9.000E+00</td>
-<td>1.500E+00</td>
-<td>5.000E+00</td>
-<td>2.500E+00</td>
-<td>-5.000E-04</td>
-</tr>
-</tbody>
-</table>
+[|
+¦v1¦v(1,2)¦v(2,3)¦v(3)¦i(v1)¦
+|9.000E+00|1.500E+00|5.000E+00|2.500E+00|-5.000E-04|
+|]
 
 <p>This print output from the SPICE program tells us the battery voltage is 9 V, and the voltage drops across R<sub>1</sub>, R<sub>2</sub>, and R<sub>3</sub> are 1.5 V, 5.0 V, and 2.5 V, respectively. Voltage drops across any component in SPICE are referenced by the node numbers the component lies between. Thus, v(1,2) references the voltage between nodes 1 and 2 in the circuit, which are the points between R<sub>1</sub>&#39;s location.</p>
 <p>Keep in mind that the order of node numbers is important. When SPICE outputs a value for v(1,2), it regards the polarity the same way as if we were holding a voltmeter with the red test lead on node 1 and the black test lead on node 2. We also have a display showing current (albeit with a negative value) at 0.5 mA or 500 &mu;A. This current matches what we previously calculated using Ohm&rsquo;s Law.</p>
@@ -88,51 +74,19 @@ series circuit&#10;v1 1 0&#10;r1 1 2 3k&#10;r2 2 3 10k&#10;r3 3 0 5k&#10;.dc v1 
 Parallel circuit&#10; v1 1 0&#10; r1 2 0 10k&#10; r2 3 0 2k&#10; r3 4 0 1k&#10; vr1 1 2 dc 0&#10; vr2 1 3 dc 0&#10; vr3 1 4 dc 0&#10; .dc v1 9 9 1&#10; .print dc v(2,0) v(3,0) v(4,0)&#10; .print dc i(vr1) i(vr2) i(vr3)&#10; .end&#10;&#10;</pre>
 <p>Running the computer analysis, we get the following results, which have been annotated in the printout with descriptive labels:</p>
 
-<table>
-<tbody>
-<tr>
-<th>v1</th>
-<th>v(2)</th>
-<th>v(3)</th>
-<th>v(4)</th>
-</tr>
-<tr>
-<td>9.000E+00</td>
-<td>9.000E+00</td>
-<td>9.000E+00</td>
-<td>9.000E+00</td>
-</tr>
-<tr>
-<td>Battery</td>
-<td>R<sub>1</sub>&nbsp;Voltage</td>
-<td>R<sub>2</sub>&nbsp;Voltage</td>
-<td>R<sub>3</sub>&nbsp;Voltage</td>
-</tr>
-</tbody>
-</table>
+[|
+¦v1¦v(2)¦v(3)¦v(4)¦
+|9.000E+00|9.000E+00 |9.000E+00 |9.000E+00 |
+|Battery  |R1 Voltage|R2 Voltage|R3 Voltage|
+|]
+
 <p>Voltage</p>
-<table>
-<tbody>
-<tr>
-<th>v1</th>
-<th>i(vr1)</th>
-<th>i(vr2)</th>
-<th>i(vr3)</th>
-</tr>
-<tr>
-<td>9.000E+00</td>
-<td>9.000E-04</td>
-<td>4.500E-03</td>
-<td>9.000E-03</td>
-</tr>
-<tr>
-<td>Battery</td>
-<td>R<sub>1</sub>&nbsp;Current</td>
-<td>R<sub>2</sub>&nbsp;Current</td>
-<td>R<sub>3</sub>&nbsp;Current</td>
-</tr>
-</tbody>
-</table>
+
+[|
+¦v1¦i(vr1)¦i(vr2)¦i(vr3)¦
+|9.000E+00|9.000E-04 |4.500E-03 |9.000E-03 |
+|Battery  |R1 Current|R2 Current|R3 Current|
+|]
 
 <p>These results from SPICE do indeed match those previously calculated using Ohm&rsquo;s Law earlier:</p>
 
@@ -141,8 +95,7 @@ Parallel circuit&#10; v1 1 0&#10; r1 2 0 10k&#10; r2 3 0 2k&#10; r3 4 0 1k&#10; 
 <p>$$I_{R2} = 4.5 \text{ mA}$$</p>
 
 <p>$$I_{R3} = 9.0 \text{ mA}$$</p>
-<p><br />
-&nbsp;</p>
+
 <p>Being connected in parallel, these resistors all have the same voltage (9 V) dropped across them.</p>
 
 ## Series and Parallel Circuit Simulation Using a SPICE Circuit Simulator Review:
