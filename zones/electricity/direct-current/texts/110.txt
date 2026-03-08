@@ -1,5 +1,5 @@
 # Inductor Voltage and Current Relationship
-<img src="/uploads/thumbnails/inductor_textbook_page_Card-thumbnail_%281%29.jpg" />
+<p><img src="/uploads/thumbnails/inductor_textbook_page_Card-thumbnail_%281%29.jpg" /></p>
 <h3 class="text-lg lg:text-2xl font-bold mb-3">Inductor Voltage and Current Relationship</h3>
 <p><p>The instantaneous voltage drop across an inductor is directly proportional to the rate of change of the current passing through the inductor. The mathematical relationship is given by v = L (di/dt).&nbsp;</p></p>
 <p><a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-15/magnetic-fields-and-inductance/" target="_blank">Inductors</a> do not have a stable &ldquo;<a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/resistance/" target="_blank">resistance</a>&rdquo; as conductors do. However, there is a definite mathematical relationship between voltage and current for an inductor that you can think of as <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/voltage-current-resistance-relate/">Ohm&#39;s law</a> for an inductor:</p>
