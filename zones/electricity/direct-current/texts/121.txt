@@ -1,14 +1,15 @@
 ###### 16. RC and L/R Time Constants
 
 # Solving for Unknown Time
-<p>Sometimes it is necessary to determine the length of time that a reactive circuit will take to reach a predetermined value. This is especially true in cases where we&rsquo;re designing an <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-4/series-resistor-capacitor-circuits/" target="_blank">RC</a> or <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-3/series-resistor-inductor-circuits/" target="_blank">L/R</a> circuit to perform a precise timing function. To calculate this, we need to modify our &ldquo;Universal time constant formula.&rdquo; The original formula looks like this:</p>
+<p>Sometimes it is necessary to determine the length of time that a reactive circuit will take to reach a predetermined value. This is especially true in cases where we&rsquo;re designing an RC or L/R circuit to perform a precise timing function. To calculate this, we need to modify our &ldquo;Universal time constant formula.&rdquo; The original formula looks like this:</p>
 
 ^[121-01.jpg]
-## &nbsp;
+
 ## Solving for Time using Universal Time Constant
 <p>However, we want to solve for time, not the amount of change. To do this, we algebraically manipulate the formula so that time is all by itself on one side of the equal sign, with all the rest on the other side:</p>
 
 ^[121-02.jpg]
+
 ^[121-03.png]
 
 <p>The <em>ln</em> designation just to the right of the time constant term is the <em>natural logarithm</em> function: the exact reverse of taking the power of <em>e</em>. In fact, the two functions (powers of e and natural logarithms) can be related as such:</p>
@@ -31,6 +32,7 @@
 </ul>
 
 ^[121-06.png]
+
 <ul>
 <li>The mathematical function for reversing an exponent of &ldquo;e&rdquo; is the natural logarithm (ln), provided on any scientific calculator.</li>
 </ul>

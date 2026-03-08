@@ -1,52 +1,52 @@
 # Digital Lab - S-R Latch Using NOR Gates
 ## Project Overview
-<p><a href="https://www.allaboutcircuits.com/textbook/digital/chpt-10/s-r-latch/" target="_blank">S-R latches</a> are a fundamental <a href="https://www.allaboutcircuits.com/textbook/digital/chpt-6/digital-logic-functions/" target="_blank">digital logic</a> circuit that performs a memory function that allows it to store a logical 0 or 1. In this project, you will build and test the S-R latch circuit with switch inputs and <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-3/special-purpose-diodes/" target="_blank">light-emitting diode (LED)</a> outputs shown in Figure 1.</p>
+<p>S-R latches are a fundamental digital logic circuit that performs a memory function that allows it to store a logical 0 or 1. In this project, you will build and test the S-R latch circuit with switch inputs and light-emitting diode (LED) outputs shown in Figure 1.</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/NOR-gate-SR-latch-illustration.jpg" /></p>
-#### <em><strong>Figure 1. </strong>S-R latch with switch inputs and LED outputs.</em>
+<em><strong>Figure 1. </strong>S-R latch with switch inputs and LED outputs.</em>
 
 <p>In the first portion of the project, you will examine the standard operation of the S-R latch. Then, you will use this simple circuit to learn about some unique aspects of digital circuits, including invalid logic states, race conditions, and output loading.</p>
 
 ## Parts and Materials
 <ul>
 <li>4001 quad NOR gate</li>
-<li>Eight-position <a href="https://www.allaboutcircuits.com/textbook/digital/chpt-3/dip-gate-packaging/" target="_blank">dual inline package (DIP)</a>&nbsp;switch</li>
+<li>Eight-position dual inline package (DIP)&nbsp;switch</li>
 <li>Ten-segment bar graph LED</li>
 <li>One 6 V battery</li>
-<li>Two 10 k&Omega; <a href="https://eepower.com/resistor-guide/" target="_blank">resistors</a></li>
+<li>Two 10 k&Omega; resistors</li>
 <li>Two 470 &Omega; resistors</li>
 <li>Two 100 &Omega; resistors</li>
 </ul>
-<p><strong>Caution!</strong> The 4001 IC is a <a href="https://www.allaboutcircuits.com/textbook/digital/chpt-3/cmos-gate-circuitry/" target="_blank">complementary metal-oxide semiconductor (CMOS) </a>and, therefore, <strong>sensitive to <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/static-electricity/" target="_blank">static electricity</a>!</strong></p>
+<p><strong>Caution!</strong> The 4001 IC is a complementary metal-oxide semiconductor (CMOS) and, therefore, <strong>sensitive to static electricity!</strong></p>
 ## <br />
 Learning Objectives
 <ul>
-<li>To learn&nbsp;the&nbsp;effects of <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-8/positive-feedback/" target="_blank">positive feedback</a> in a digital circuit</li>
+<li>To learn&nbsp;the&nbsp;effects of positive feedback in a digital circuit</li>
 <li>What is meant by the invalid&nbsp;state of a latch circuit</li>
 <li>What a race condition is in a digital circuit</li>
 <li>To know&nbsp;the&nbsp;importance of valid high&nbsp;CMOS signal voltage levels</li>
 </ul>
 
 ## Instructions
-<p><strong>Step 1:&nbsp;</strong>Review the pinout diagram of the 4001&nbsp;<a href="https://www.allaboutcircuits.com/textbook/digital/chpt-3/cmos-gate-circuitry/" target="_blank">CMOS </a>quad NOR gate integrated circuit, illustrated in Figure 2.</p>
+<p><strong>Step 1:&nbsp;</strong>Review the pinout diagram of the 4001&nbsp;CMOS quad NOR gate integrated circuit, illustrated in Figure 2.</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/pinout-or-connection-diagram-for-the-4001-quad-NOR-gate.jpg" /></p>
-#### <em><strong>Figure 2. </strong>Pinout package diagram for the 4001 quad NOR gate</em>
+<em><strong>Figure 2. </strong>Pinout package diagram for the 4001 quad NOR gate</em>
 
-<p>It is identical in input, output, and power supply pin assignments to the <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-7/basic-gate-function/" target="_blank">4011 quad NAND gate</a>.</p>
+<p>It is identical in input, output, and power supply pin assignments to the 4011 quad NAND gate.</p>
 
 ### Build the S-R Latch with LED Output Indicators
-<p><strong>Step 2:&nbsp;</strong>Cross-connect two <a href="https://www.allaboutcircuits.com/textbook/digital/chpt-3/ttl-nor-and-or-gates/" target="_blank">NOR gates</a>,&nbsp;as shown in the schematic diagram of Figure 3, on a breadboard as illustrated in Figure 4.&nbsp;</p>
+<p><strong>Step 2:&nbsp;</strong>Cross-connect two NOR gates,&nbsp;as shown in the schematic diagram of Figure 3, on a breadboard as illustrated in Figure 4.&nbsp;</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/NOR-gate-SR-latch-schematic.jpg" /></p>
-#### <em><strong>Figure 3. </strong>Schematic diagram of an&nbsp;S-R latch built using NOR gates</em>
+<em><strong>Figure 3. </strong>Schematic diagram of an&nbsp;S-R latch built using NOR gates</em>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/NOR-gate-SR-latch-illustration.jpg" /></p>
-#### <em><strong>Figure 4. </strong>Breadboard implementation of an S-R latch built using NOR gates</em>
+<em><strong>Figure 4. </strong>Breadboard implementation of an S-R latch built using NOR gates</em>
 
-<p>This cross-connection creates&nbsp;positive feedback from output to input. That is, the output signal tends to maintain the gate in its last output state. Just as in <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-8/introduction-operational-amplifiers/" target="_blank">op-amp</a> circuits, positive feedback creates a&nbsp;<a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-7/hysteresis/" target="_blank">hysteresis</a>.&nbsp;This tendency for the circuit to remain in its last output state gives it a sort of memory.&nbsp;In fact, there are solid-state computer memory technologies based on circuitry like this!</p>
-<p><strong>Step 3:&nbsp;</strong>Connect two of the switches to the remaining NOR gate inputs, and add a 10 k&Omega; <a href="https://eepower.com/resistor-guide/resistor-applications/pull-up-resistor-pull-down-resistor/#:~:text=What%20Are%20Pull%2Ddown%20Resistors,seen%20in%20the%20following%20figure." target="_blank">pulldown resistor</a>&nbsp;to each switch (Figures 3 and 4).&nbsp;</p>
-<p><strong>Step 4:&nbsp;</strong>Connect the outputs of the two NOR gates to LEDs and add 470 &Omega; <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/simple-series-circuits/" target="_blank">resistors in series</a> with the LEDs to limit the currents.&nbsp;If we designate the left switch as the SET&nbsp;input and the right switch as the RESET input,&nbsp;the left LED will be the Q&nbsp;output and the right LED the \(\overline{Q}\)&nbsp;output.&nbsp;\(&nbsp;\overline{Q} \) is the logical inverse of&nbsp;Q&nbsp;and is referred to as&nbsp;"Q-not."</p>
+<p>This cross-connection creates&nbsp;positive feedback from output to input. That is, the output signal tends to maintain the gate in its last output state. Just as in op-amp circuits, positive feedback creates a&nbsp;hysteresis.&nbsp;This tendency for the circuit to remain in its last output state gives it a sort of memory.&nbsp;In fact, there are solid-state computer memory technologies based on circuitry like this!</p>
+<p><strong>Step 3:&nbsp;</strong>Connect two of the switches to the remaining NOR gate inputs, and add a 10 k&Omega; pulldown resistor&nbsp;to each switch (Figures 3 and 4).&nbsp;</p>
+<p><strong>Step 4:&nbsp;</strong>Connect the outputs of the two NOR gates to LEDs and add 470 &Omega; resistors in series with the LEDs to limit the currents.&nbsp;If we designate the left switch as the SET&nbsp;input and the right switch as the RESET input,&nbsp;the left LED will be the Q&nbsp;output and the right LED the \(\overline{Q}\)&nbsp;output.&nbsp;\(&nbsp;\overline{Q} \) is the logical inverse of&nbsp;Q&nbsp;and is referred to as&nbsp;"Q-not."</p>
 
 <p>$$ \overline{Q} = \neg Q = ~!Q $$&nbsp;</p>
 
@@ -59,7 +59,7 @@ Learning Objectives
 <p><strong>Step 9:&nbsp;</strong>Since the latched&nbsp;state is a hysteretic condition whereby the last output states are remembered,&nbsp;one might wonder what will happen if the circuit powers up this way with no previous state to hold. To experiment, place both switches in their off positions, making both SET and RESET inputs low, then disconnect one of the battery wires from the breadboard, as shown in Figure 5.</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/NOR-gate-SR-latch-illustration-two.jpg" /></p>
-#### <em><strong>Figure 5. </strong>Powering on and off the S-R latch built using NOR gates to examine memory effects.</em>
+<em><strong>Figure 5. </strong>Powering on and off the S-R latch built using NOR gates to examine memory effects.</em>
 
 ### Examining Race Conditions in the S-R Latch Circuit
 <p><strong>Step 10:&nbsp;</strong>Quickly make and break contact between that battery wire and its proper connection point on the breadboard, noting the status of the two LEDs as the circuit is powered up repeatedly.&nbsp;When a latch circuit such as this is powered up into its latched&nbsp;state, the gates race against each other for control. Given the low&nbsp;inputs, both gates try to output high&nbsp;signals. If one of the gates reaches its high&nbsp;output state before the other, that high&nbsp;state will be fed back to the other gate&rsquo;s input to force its output low, and the race is won by the faster gate.</p>
@@ -68,9 +68,9 @@ Learning Objectives
 <p>Normal circuit behavior is not supposed to change when a component is replaced, but if race conditions are present, a change of components may very well do just that.&nbsp;Due to the inherent race tendency of an S-R latch, one should not design a circuit with the expectation of a consistent power-up state but rather use external means to force&nbsp;the race so that the desired gate always wins.</p>
 
 ### Examining the Effects of Gate Output Loading
-<p><strong>Step 11:&nbsp;</strong>An interesting modification to try in this circuit is to replace one of the 470 &Omega; LED dropping&nbsp;<a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/resistors/" target="_blank">resistors</a> with a lower-value unit, such as 100 &Omega;. The obvious effect of this alteration will be increased LED brightness, as more current is allowed through.&nbsp;A not-so-obvious effect will also result, and it is this effect that holds great learning value. So, try replacing one of the 470 &Omega; resistors with a 100 &Omega; resistor, and operate the input signal switches through all four possible setting combinations, noting the circuit&#39;s behavior.</p>
+<p><strong>Step 11:&nbsp;</strong>An interesting modification to try in this circuit is to replace one of the 470 &Omega; LED dropping&nbsp;resistors with a lower-value unit, such as 100 &Omega;. The obvious effect of this alteration will be increased LED brightness, as more current is allowed through.&nbsp;A not-so-obvious effect will also result, and it is this effect that holds great learning value. So, try replacing one of the 470 &Omega; resistors with a 100 &Omega; resistor, and operate the input signal switches through all four possible setting combinations, noting the circuit&#39;s behavior.</p>
 <p>You should note that the circuit refuses to latch in one of its states (either SET or RESET) but only in the other state when the input switches are both sets low&nbsp;(the latch&nbsp;mode). Why is this?</p>
-<p><strong>Step 12:&nbsp;</strong>Use a <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-2/voltage-usage/" target="_blank">voltmeter</a> to measure the output voltage of the gate whose output is high&nbsp;when both inputs are low.&nbsp;Note this voltage indication, then set the input switches so that the other state (either RESET or SET) is forced, and measure the output voltage of the other gate when its output is high.&nbsp;Next, note the difference between the two gate output voltage levels, one gate is loaded by an LED with a 470 &Omega; resistor, and the other is loaded by an LED with a 100 &Omega; resistor.</p>
+<p><strong>Step 12:&nbsp;</strong>Use a voltmeter to measure the output voltage of the gate whose output is high&nbsp;when both inputs are low.&nbsp;Note this voltage indication, then set the input switches so that the other state (either RESET or SET) is forced, and measure the output voltage of the other gate when its output is high.&nbsp;Next, note the difference between the two gate output voltage levels, one gate is loaded by an LED with a 470 &Omega; resistor, and the other is loaded by an LED with a 100 &Omega; resistor.</p>
 <p>The one loaded down by the heavier&nbsp;load (100 &Omega; resistors) outputs a lower voltage. So much less voltage that it will not be interpreted by the other NOR gate&rsquo;s input as a high&nbsp;signal at all as it is fed back! All logic gates have permissible high&nbsp;and low&nbsp;input signal voltage ranges, and if the voltage of a digital signal falls outside this permissible range, it might not be properly interpreted by the receiving gate.</p>
 <p>In a latch circuit such as this, which depends on a solid high&nbsp;signal fed back from the output of one gate to the input of the other, a weak&nbsp;signal will not be able to maintain the positive feedback necessary to keep the circuit latched in one of its states.&nbsp;This is why I favor using a voltmeter as a logic probe&nbsp;for determining digital signal levels rather than an actual logic probe with high&nbsp;and low&nbsp;lights. A logic probe may not indicate the presence of a weak&nbsp;signal, whereas a voltmeter definitely will by means of its quantitative indication.</p>
 <p>This type of problem, common in circuits where different families&nbsp;of integrated circuits are mixed (TTL and CMOS, for example), can only be found with test equipment providing quantitative signal level measurements.</p>

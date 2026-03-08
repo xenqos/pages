@@ -33,7 +33,7 @@
 
 <h1>Three-phase Y and Delta Configurations</h1>
 <h2>Three-phase Wye(Y) Connection</h2>
-<p>Initially, we explored the idea of <a href=&quot;https://www.allaboutcircuits.com/textbook/alternating-current/chpt-10/three-phase-power-systems/&quot; target=&quot;_blank&quot;>three-phase power systems</a> by connecting three voltage sources together in what is commonly known as the &ldquo;Y&rdquo; (or &ldquo;star&rdquo;) configuration.</p>
+<p>Initially, we explored the idea of three-phase power systems by connecting three voltage sources together in what is commonly known as the &ldquo;Y&rdquo; (or &ldquo;star&rdquo;) configuration.</p>
 <p>This configuration of voltage sources is characterized by a common connection point joining one side of each source. (Figure below)</p>
 <p><img src=&quot;/uploads/articles/three-phase-y-connection.jpg&quot; /></p>
 <p><em>Three-phase &ldquo;Y&rdquo; connection has three voltage sources connected to a common point.</em></p>
@@ -46,9 +46,9 @@
 <p><em>Three-phase, three-wire &ldquo;Y&rdquo; connection does not use the neutral wire.</em></p>
 
 <h2>Voltage and Current Values in Three-Phase Systems</h2>
-<p>When we measure <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/voltage-current/&quot; target=&quot;_blank&quot;>voltage and current</a> in three-phase systems, we need to be specific as to <em>where</em> we&rsquo;re measuring.</p>
+<p>When we measure voltage and current in three-phase systems, we need to be specific as to <em>where</em> we&rsquo;re measuring.</p>
 <p><em>Line voltage</em> refers to the amount of voltage measured between any two line conductors in a balanced three-phase system. With the above circuit, the line voltage is roughly 208 volts.</p>
-<p><em><a href=&quot;https://www.allaboutcircuits.com/textbook/alternating-current/chpt-9/phasing/&quot; target=&quot;_blank&quot;>Phase voltage</a></em> refers to the voltage measured across any one component (source winding or load <a href=&quot;https://www.allaboutcircuits.com/textbook/alternating-current/chpt-5/series-r-l-and-c/&quot; target=&quot;_blank&quot;>impedance</a>) in a balanced three-phase source or load.</p>
+<p><em>Phase voltage</em> refers to the voltage measured across any one component (source winding or load impedance) in a balanced three-phase source or load.</p>
 <p>For the circuit shown above, the phase voltage is 120 volts. The terms <em>line current</em> and <em>phase current</em> follows the same logic: the former referring to the current through any one line conductor, and the latter to the current through any one component.</p>
 <p>Y-connected sources and loads always have line voltages greater than phase voltages, and line currents equal to phase currents. If the Y-connected source or load is balanced, the line voltage will be equal to the phase voltage times the square root of 3:</p>
 <p><img src=&quot;/uploads/articles/y-circuits-formula.jpg&quot; /></p>
@@ -63,7 +63,7 @@
 <p>One quick check of this is to use Kirchhoff&rsquo;s Voltage Law to see if the three voltages around the loop add up to zero. If they do, then there will be no voltage available to push current around and around that loop, and consequently, there will be no circulating current.</p>
 <p>Starting with the top winding and progressing counter-clockwise, our KVL expression looks something like this:</p>
 <p><img src=&quot;/uploads/articles/kvl-expression1.jpg&quot; /></p>
-<p>Indeed, if we add these three vector quantities together, they do add up to zero. Another way to verify the fact that these three voltage sources can be connected together in a loop without resulting in circulating currents is to open up the loop at one junction point and calculate the <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/calculating-electric-power/&quot; target=&quot;_blank&quot;>voltage</a> across the break: (figure below)</p>
+<p>Indeed, if we add these three vector quantities together, they do add up to zero. Another way to verify the fact that these three voltage sources can be connected together in a loop without resulting in circulating currents is to open up the loop at one junction point and calculate the voltage across the break: (figure below)</p>
 <p><img src=&quot;/uploads/articles/voltage-across-open-delta.jpg&quot; /></p>
 <p><em>The voltage across open &Delta; should be zero.</em></p>
 <p>Starting with the right winding (120 V &ang; 120&deg;) and progressing counter-clockwise, our KVL equation looks like this:</p>
@@ -96,7 +96,7 @@
 <p>The only consequence of a source winding failing open for a &Delta;-connected source is increased phase current in the remaining windings. Compare this fault tolerance with a Y-connected system suffering an open source winding in the figure below.</p>
 <p><img src=&quot;/uploads/articles/delta-connection-example-circuit-analysis2.jpg&quot; /></p>
 <p><em>Open &ldquo;Y&rdquo; source winding halves the voltage on two loads of a &Delta; connected the load.</em></p>
-<p>With a &Delta;-connected load, two of the <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/resistance/&quot; target=&quot;_blank&quot;>resistances</a> suffer reduced voltage while one remains at the original line voltage, 208. A Y-connected load suffers an even worse fate (Figure below) with the same winding failure in a Y-connected source.</p>
+<p>With a &Delta;-connected load, two of the resistances suffer reduced voltage while one remains at the original line voltage, 208. A Y-connected load suffers an even worse fate (Figure below) with the same winding failure in a Y-connected source.</p>
 <p><img src=&quot;/uploads/articles/delta-connection-example-circuit-analysis3.jpg&quot; /></p>
 <p><em>Open source winding of a &ldquo;Y-Y&rdquo; system halves the voltage on two loads and loses one load entirely.</em></p>
 <p>In this case, two load resistances suffer reduced voltage while the third loses supply voltage completely! For this reason, &Delta;-connected sources are preferred for reliability.</p>

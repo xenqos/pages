@@ -1,6 +1,6 @@
 # Band-stop Filters
 ## How to Create a Band-stop Filter?
-<p>Also called <em>band-elimination</em>, <em>band-reject</em>, or <em>notch</em> filters, this kind of filter passes all frequencies above and below a particular range set by the component values. Not surprisingly, it can be made out of a&nbsp;<a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-8/low-pass-filters/" target="_blank">low-pass</a> and a&nbsp;<a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-8/high-pass-filters/" target="_blank">high-pass</a> filter, just like the&nbsp;<a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-8/band-pass-filters/" target="_blank">band-pass</a> design, except that this time we connect the two filter sections in parallel with each other instead of in series.</p>
+<p>Also called <em>band-elimination</em>, <em>band-reject</em>, or <em>notch</em> filters, this kind of filter passes all frequencies above and below a particular range set by the component values. Not surprisingly, it can be made out of a&nbsp;low-pass and a&nbsp;high-pass filter, just like the&nbsp;band-pass design, except that this time we connect the two filter sections in parallel with each other instead of in series.</p>
 
 <p><img src="/uploads/articles/band-stop-filter-diagram.png" /></p>
 <p><em>System level block diagram of a band-stop filter.</em></p>
@@ -20,7 +20,7 @@
 
 <p><img src="/uploads/articles/frequency-of-maximum-rejectio-equation.png" /></p>
 
-<p>The impressive band-stopping ability of this filter is illustrated by the following <a href="https://www.allaboutcircuits.com/textbook/reference/chpt-7/fundamentals-spice-programming/" target="_blank">SPICE</a> analysis:</p>
+<p>The impressive band-stopping ability of this filter is illustrated by the following SPICE analysis:</p>
 
 <pre>
 twin-t bandstop filter &#10; v1 1 0 ac 1 sin &#10; r1 1 2 200 &#10; c1 2 0 2u &#10; r2 2 3 200 &#10; c2 1 4 1u &#10; r3 4 0 100 &#10; c3 4 3 1u &#10; rload 3 0 1k &#10; .ac lin 20 200 1.5k &#10; .plot ac v(3) &#10; .end &#10;</pre>

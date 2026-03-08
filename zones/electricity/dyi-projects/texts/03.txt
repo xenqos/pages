@@ -1,15 +1,15 @@
 # Intro Lab - How to Use a Voltmeter to Measure Voltage
 ## Project Overview
-<p>In this project, you will learn how to use a <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-2/voltage-usage/" target="_blank">voltmeter</a> to measure voltage. Typically, the voltmeter is one of the functions of a&nbsp;<a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-8/multimeters/" target="_blank">multimeter</a>,<em> </em>which is an electrical instrument capable of measuring <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/voltage-current/" target="_blank">voltage, current</a>, and <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/resistance/" target="_blank">resistance</a> (Figure 1).</p>
+<p>In this project, you will learn how to use a voltmeter to measure voltage. Typically, the voltmeter is one of the functions of a&nbsp;multimeter,<em> </em>which is an electrical instrument capable of measuring voltage, current, and resistance (Figure 1).</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/multimeter-digital-analog.jpg" /></p>
-#### <em><strong>Figure 1.&nbsp;</strong>Digital and analog multimeters with test probes connected to measure voltage.</em>
+<em><strong>Figure 1.&nbsp;</strong>Digital and analog multimeters with test probes connected to measure voltage.</em>
 
 ## Parts and Materials
 <ul>
-<li><a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-8/multimeters/" target="_blank">Multimeter</a>, digital and/or analog</li>
+<li>Multimeter, digital and/or analog</li>
 <li>Assorted batteries</li>
-<li>One <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-3/special-purpose-diodes/" target="_blank">light-emitting diode (LED)</a></li>
+<li>One light-emitting diode (LED)</li>
 <li>Small hobby&nbsp;motor, permanent-magnet type</li>
 <li>Two jumper wires with alligator clip&nbsp;ends</li>
 </ul>
@@ -17,7 +17,7 @@
 <p>Below, in Figure 2, you&#39;ll find a representation of the different parts and materials for this project.</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/assorted-batteries.jpg" /></p>
-#### <em><strong>Figure 2. </strong>Suggested parts for use with your&nbsp;voltmeter in this project</em>
+<em><strong>Figure 2. </strong>Suggested parts for use with your&nbsp;voltmeter in this project</em>
 
 ## Learning Objectives
 <ul>
@@ -28,14 +28,14 @@
 
 ## Introduction to Measuring Voltage
 <p>In all of the experiments in this book, you will be using some test equipment to measure aspects of electricity you cannot directly see, feel, hear, taste, or smell.&nbsp;Electricity&mdash;at least in small, safe quantities&mdash;is insensible by our human bodies.</p>
-<p>Your most fundamental &ldquo;eyes&rdquo; in the world of electricity and electronics will be a device called a <em>multimeter</em>.&nbsp;Multimeters indicate the presence of and measure the quantity of electrical properties such as <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/voltage-current-resistance-relate/" target="_blank">voltage, current, and resistance</a>.&nbsp;In this experiment, you will familiarize yourself with the measurement of voltage.</p>
+<p>Your most fundamental &ldquo;eyes&rdquo; in the world of electricity and electronics will be a device called a <em>multimeter</em>.&nbsp;Multimeters indicate the presence of and measure the quantity of electrical properties such as voltage, current, and resistance.&nbsp;In this experiment, you will familiarize yourself with the measurement of voltage.</p>
 <p>Voltage is the measure of electrical &ldquo;push&rdquo; ready to motivate charges to move through a conductor.&nbsp;In scientific terms, it is the specific energy per unit charge, mathematically defined as joules per coulomb.&nbsp;It is analogous to pressure in a fluid system: the force that moves fluid through a pipe and is measured in the unit of the Volt (V).</p>
 
 ## Digital Versus Analog Multimeters
 <p>As illustrated in Figure 3, there are two types of multimeters: digital and analog.&nbsp;</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/multimeter-digital-analog.jpg" /></p>
-#### <em><strong>Figure 3. </strong>Digital and analog multimeters for measuring voltage, current, and resistance</em>
+<em><strong>Figure 3. </strong>Digital and analog multimeters for measuring voltage, current, and resistance</em>
 
 <p>Digital multimeters have numerical displays, like digital clocks, for indicating the quantity of voltage, current, or resistance.&nbsp;Analog multimeters indicate these quantities by means of a moving pointer over a printed scale.&nbsp;Your multimeter should come with some basic instructions.&nbsp;Read them well!</p>
 <p>If your multimeter is digital, it will require a small battery to operate.&nbsp;If it is analog, it does not need a battery to measure voltage.</p>
@@ -58,7 +58,7 @@
 <p><strong>Step 8:&nbsp;</strong>Now switch your multimeter to the lowest DC voltage range available, and touch the meter&rsquo;s test probes to the terminals (wire leads) of the light-emitting diode (LED) as illustrated in Figure 4.&nbsp;&nbsp;A LED is designed to produce light when powered by a small amount of electricity, but LEDs also happen to generate DC voltage when exposed to light, somewhat like a solar cell.&nbsp;Point the LED towards a bright source of light with your multimeter connected to it, and note the meter&rsquo;s indication:</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/light-emitting-diode.jpg" /></p>
-#### <em><strong>Figure 4.&nbsp;</strong>Measuring the voltage induced in a LED when exposed to light.</em>
+<em><strong>Figure 4.&nbsp;</strong>Measuring the voltage induced in a LED when exposed to light.</em>
 
 <p>Batteries develop electrical voltage through chemical reactions. When a battery dies,&nbsp;it has exhausted its original store of chemical fuel.&nbsp;The LED, however, does not rely on an internal fuel&nbsp;to generate voltage; rather, it converts optical energy into electrical energy.&nbsp;So long as there is light to illuminate the LED, it will produce voltage.</p>
 
@@ -66,7 +66,7 @@
 <p><strong>Step 9:&nbsp;</strong>Another source of voltage through energy conversion is an electric&nbsp;generator.&nbsp;Connect your voltmeter (your multimeter, set to the volt&nbsp;function) to the motor&rsquo;s terminals just as you connected it to the LED&rsquo;s terminals, as illustrated in Figure 5.&nbsp;</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/jumper-wires-with-alligator-clip.jpg" /></p>
-#### <em><strong>Figure 5. </strong>Measuring the voltage created by a motor functioning as an electric generator.</em>
+<em><strong>Figure 5. </strong>Measuring the voltage created by a motor functioning as an electric generator.</em>
 
 <p><strong>Step 10:</strong>&nbsp;Spin the shaft with your fingers.&nbsp;The meter should indicate voltage by means of needle deflection (analog) or numerical readout (digital).&nbsp;The small electric motor specified in the &ldquo;Parts and Materials&rdquo; list functions as an electrical generator if its shaft is turned by a mechanical force.</p>
 <p>It may be&nbsp;difficult to maintain both meter test probes in connection with the motor&rsquo;s terminals while simultaneously spinning the shaft with your fingers. That is why Figure 3 uses alligator clip jumper&nbsp;wires.</p>

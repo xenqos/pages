@@ -1,27 +1,32 @@
 ###### 10. DC Network Analysis
 
 # Branch Current Method Analysis
+
 ^[072-01.jpg]
+
 ## What is the Branch Current Method Used in Network Analysis?
 <p><p>The branch current method is a network analysis technique in which branch current directions are assigned arbitrarily, and then Ohm&rsquo;s law and Kirchhoff&rsquo;s current and voltage laws are applied systematically to solve for the unknown currents and voltages.</p></p>
-<p>The most straightforward <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-10/what-is-network-analysis/" target="_blank">DC network analysis</a> technique is the branch current method. In this method, we assume the directions of the <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/voltage-current/">currents</a> in the circuit and then write equations describing their relationships to each other through <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-6/kirchhoffs-current-law-kcl/" target="_blank">Kirchhoff&rsquo;s current law (KCL)</a>, <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-6/kirchhoffs-voltage-law-kvl/">Kirchhoff&rsquo;s voltage law (KVL)</a>, and <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/voltage-current-resistance-relate/">Ohm&rsquo;s law</a>. Once we have one equation for every unknown current, we can solve the simultaneous equations and determine all currents and, therefore, all <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/polarity-voltage-drops/" target="_blank">voltage drops</a> in the network.</p>
+<p>The most straightforward DC network analysis technique is the branch current method. In this method, we assume the directions of the currents in the circuit and then write equations describing their relationships to each other through Kirchhoff&rsquo;s current law (KCL), Kirchhoff&rsquo;s voltage law (KVL), and Ohm&rsquo;s law. Once we have one equation for every unknown current, we can solve the simultaneous equations and determine all currents and, therefore, all voltage drops in the network.</p>
 
 ## Selecting a Circuit Node and Branch Current Assignments
-<p>To begin with, let&rsquo;s use the circuit in Figure 1 to explain the application of the branch current method.&nbsp;We will use this same example circuit to teach other network analysis methods, including <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-10/mesh-current-method/">Mesh Current</a>, <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-10/superposition-theorem/">Superposition Theorem</a>, <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-10/thevenins-theorem/">Thevenin&rsquo;s Theorem</a>, <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-10/nortons-theorem/">Norton&rsquo;s Theorem</a>, and <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-10/millmans-theorem/">Millman&rsquo;s Theorem</a>.</p>
+<p>To begin with, let&rsquo;s use the circuit in Figure 1 to explain the application of the branch current method.&nbsp;We will use this same example circuit to teach other network analysis methods, including Mesh Current, Superposition Theorem, Thevenin&rsquo;s Theorem, Norton&rsquo;s Theorem, and Millman&rsquo;s Theorem.</p>
 
 ^[072-02.jpg]
+
 <em><strong>Figure 1.</strong> Circuit for explaining the branch current method.</em>
 
 ### Select&nbsp;a Circuit Node
 <p>The first step is to choose a node (junction of wires) in the circuit to use as a point of reference for our unknown currents. We&rsquo;ll choose the node joining the right of R<sub>1</sub>, the top of R<sub>2</sub>, and the left of R<sub>3</sub>,&nbsp;as shown in Figure 2.</p>
 
 ^[072-03.jpg]
+
 <em><strong>Figure 2. </strong>Select a circuit node at which you will define the unknown currents.</em>
 
 ### Assign Currents at the Node
 <p>At this node, we will guess which directions the three wire&rsquo;s currents take, labeling the three currents as I<sub>1</sub>, I<sub>2</sub>, and I<sub>3</sub>, respectively, as illustrated in Figure 3.&nbsp;</p>
 
 ^[072-04.jpg]
+
 <em><strong>Figure 3.</strong> Define all the unknown currents at the selected node.</em>
 
 <p>Keep in mind that these directions of current are speculative at this point. Fortunately, if it turns out that any of our guesses were wrong, we will know when we mathematically solve for the currents&mdash;any &ldquo;wrong&rdquo; current directions will show up as negative numbers in our solution.</p>
@@ -36,13 +41,14 @@
 <p>Next, we&rsquo;ll use KVL around the loops in the circuit to develop a set of equations that will allow us to solve for unknown equations.</p>
 
 ### Step 1: Label All Voltage Drops
-<p>Before applying KVL, we will label all of the voltage drop polarities across <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/resistors/" target="_blank">resistors</a> according to the assumed directions of the currents. The polarity is positive where the current enters the resistor and negative where it exits the resistor, as shown in Figure 4.&nbsp;</p>
+<p>Before applying KVL, we will label all of the voltage drop polarities across resistors according to the assumed directions of the currents. The polarity is positive where the current enters the resistor and negative where it exits the resistor, as shown in Figure 4.&nbsp;</p>
 
 ^[072-05.jpg]
-#### <em><strong>Figure 4.</strong> Label the voltage drops across the resistors.</em>
+
+<em><strong>Figure 4.</strong> Label the voltage drops across the resistors.</em>
 
 <p>The polarity or the resistor voltages is consistent with a load that is dropping voltage. The voltage will be higher on the side the current enters the resistor and lower where it exits.</p>
-<p>The <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-3/series-batteries/" target="_blank">battery polarities</a> remain as they were according to their symbology, with the short-end negative and the long-end positive. Since batteries are sources, the voltage is higher on the side the current exits&mdash;just the opposite of the resistive loads.&nbsp;</p>
+<p>The battery polarities remain as they were according to their symbology, with the short-end negative and the long-end positive. Since batteries are sources, the voltage is higher on the side the current exits&mdash;just the opposite of the resistive loads.&nbsp;</p>
 <p>Keep in mind that it is okay if the polarity of a resistor&rsquo;s voltage drop doesn&rsquo;t match with the polarity of the nearest battery, so long as the resistor voltage polarity is correctly based on the assumed direction of the current through it. In some cases, we may discover that current will be forced back through a battery, causing this effect (an example of reverse current flow into a battery is when charging a rechargeable battery).</p>
 <p>The important thing to remember here is to base all your resistor polarities and subsequent calculations on the directions of currents initially assumed. As stated earlier, if your assumption happens to be incorrect, it will be apparent once the equations have been solved. A negative current and resistance simply mean the current flows opposite to the direction of our initial guess. The magnitude of the solution, however, will still be correct.</p>
 
@@ -51,15 +57,19 @@
 <p>First, let&rsquo;s trace the left loop of this circuit first, starting from the upper-left corner and moving counter-clockwise (the choice of starting points and directions is arbitrary). The sequence of voltage measurements is shown below in Figures 5 through 8.&nbsp;</p>
 
 ^[072-06.jpg]
+
 <em><strong>Figure 5. </strong>Measure the voltage across battery B1.</em>
 
 ^[072-07.jpg]
+
 <em><strong>Figure 6. </strong>Measure the voltage across the bottom wire segment.</em>
 
 ^[072-08.jpg]
+
 <em><strong>Figure 7.</strong> Measure the voltage across resistor R<sub>2</sub>.</em>
 
 ^[072-09.jpg]
+
 <em><strong>Figure 8. </strong>Measure the voltage across resistor R<sub>1</sub>.</em>
 
 <p>Having completed our trace of the left loop, we can add these voltages together with a sum of zero as required by KVL:</p>
@@ -89,15 +99,19 @@
 <p>Next, let&rsquo;s apply the same steps to the right loop of the circuit, beginning by recording the voltage drops. We&rsquo;ll arbitrarily start at the originally chosen node and move counter-clockwise around the right loop, as illustrated in Figures 9 through 12.&nbsp;</p>
 
 ^[072-10.jpg]
+
 <em><strong>Figure 9.</strong> Measure the voltage across resistor R<sub>2</sub>.</em>
 
 ^[072-11.jpg]
+
 <em><strong>Figure 10. </strong>Measure the voltage across the bottom wire segment.</em>
 
 ^[072-12.jpg]
+
 <em><strong>Figure 11.</strong> Measure the voltage across battery B<sub>2</sub>.</em>
 
 ^[072-13.jpg]
+
 <em><strong>Figure 12.</strong> Measure the voltage across resistor R<sub>3</sub>.</em>
 
 <p>After that, let&rsquo;s write out the KVL equation for the voltages around the right loop:</p>
@@ -156,6 +170,7 @@ However, what does &ldquo;negative&rdquo; current mean? In this case, it means t
 <p>Going back to our original circuit, we can redraw the current arrow for I<sub>3</sub> in the correct direction and redraw the polarity of the voltage drop across R<sub>3</sub> to match, as shown in Figure 13.&nbsp;</p>
 
 ^[072-14.jpg]
+
 <em><strong>Figure 13.</strong> Solution of our circuit currents and voltage drops.</em>
 
 <p>Notice how current is being pushed backward through the second battery (B<sub>2</sub>) due to the higher voltage of the first battery (B<sub>1</sub>). Even though battery B<sub>2</sub>&lsquo;s polarity is trying to push current towards resistor R<sub>3</sub> in that branch of the circuit, the current is actually being forced back through it due to the superior voltage of battery B<sub>1</sub>.&nbsp;</p>
@@ -172,10 +187,11 @@ However, what does &ldquo;negative&rdquo; current mean? In this case, it means t
 <p>$$V_{R3} = I_3R_3 = \text{(1 A)(1 }\Omega) = 1 \text{ V}$$</p>
 
 ## Network Analysis Using SPICE
-<p>Finally, let us now analyze this same network of Figure 13 using <a href="https://www.allaboutcircuits.com/textbook/reference/chpt-7/fundamentals-spice-programming/" target="_blank">SPICE</a> to verify our voltage results. As a side note, we could also analyze current with SPICE, which requires inserting extra voltage sources into the circuit. Besides, we know that if the voltages are all the same and the resistances are the same, the currents must all be the same. In that case, we will opt for the less complex analysis.&nbsp;</p>
+<p>Finally, let us now analyze this same network of Figure 13 using SPICE to verify our voltage results. As a side note, we could also analyze current with SPICE, which requires inserting extra voltage sources into the circuit. Besides, we know that if the voltages are all the same and the resistances are the same, the currents must all be the same. In that case, we will opt for the less complex analysis.&nbsp;</p>
 <p>Figure 14 is a re-drawing of our circuit, complete with node numbers for SPICE to reference.</p>
 
 ^[072-15.jpg]
+
 <em><strong>Figure 14.</strong> Adding SPICE node numbers to the circuit.&nbsp;</em>
 
 <pre>

@@ -4,7 +4,7 @@
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/RFT_ch1_pg3_1_2.JPG" /></p>
 
-<p>We won&rsquo;t cover the generic details of decibels because they are already available on <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-1/decibels/" target="_blank">this page</a> of the AAC <a href="https://www.allaboutcircuits.com/textbook/" target="_blank">Electric Circuits textbook</a>. Instead, we will focus on practical aspects of the decibel in the specific context of RF systems.</p>
+<p>We won&rsquo;t cover the generic details of decibels because they are already available on this page of the AAC Electric Circuits textbook. Instead, we will focus on practical aspects of the decibel in the specific context of RF systems.</p>
 
 ## Relative, Not Absolute
 <p>It is easy to forget that dB is a <em>relative</em> unit. You cannot say, &ldquo;The output power is 10 dB.&rdquo;</p>
@@ -19,24 +19,24 @@
 <p>Another advantage is something that we&rsquo;re familiar with from our experience with filters. RF systems revolve around frequencies and the various ways in which frequencies are generated, controlled, or affected by components and parasitic circuit elements. The dB scale is convenient in a context such as this because frequency response plots are intuitive and visually informative when the frequency axis uses a logarithmic scale and the amplitude axis uses a dB scale.</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/134053_FIG-2.jpg" /></p>
-#### <em>A Bode plot showing the magnitude response of different band-pass filters. Image courtesy of <a href="http://www.analog.com/en/analog-dialogue/articles/band-pass-response-in-active-filters.html" target="_blank">AnalogDialogue</a>.</em>
+<em>A Bode plot showing the magnitude response of different band-pass filters. Image courtesy of AnalogDialogue.</em>
 ## When dB Is Absolute
 <p>We&rsquo;ve established that dB is a ratio and thus cannot describe the absolute power or amplitude of a signal. However, it would be awkward to be constantly switching back and forth between dB and non-dB values, and perhaps this is why RF engineers developed the dBm unit.</p>
 <p>We can avoid the &ldquo;ratios only&rdquo; problem by simply creating a new unit that always includes a reference value. In the case of dBm, the reference value is 1 mW. Thus, if we have a 5 mW signal and we want to stay within the realm of dB, we can describe this signal as having a power of 7 dBm:</p>
 
 <p>$$10\log_{10}\left(\frac{5\ mW}{1\ mW}\right)=10\log_{10}\left(5\right)\approx7\ dBm$$</p>
 
-<p>You definitely want to familiarize yourself with the concept of dBm. This is a standard unit used in real-life RF system development, and it&rsquo;s very convenient when, for example, you are calculating a <a href="https://www.allaboutcircuits.com/tools/link-budget-calculator/" target="_blank">link budget</a>, because gains and losses expressed in dB can simply be added to or subtracted from the output power expressed in dBm.</p>
+<p>You definitely want to familiarize yourself with the concept of dBm. This is a standard unit used in real-life RF system development, and it&rsquo;s very convenient when, for example, you are calculating a link budget, because gains and losses expressed in dB can simply be added to or subtracted from the output power expressed in dBm.</p>
 <p>There is also a dBW unit; this uses 1 W for the reference value instead of 1 mW. Nowadays most RF engineers are working with relatively low-power systems, and this probably explains why dBm is more common.</p>
 
 ## More dB Variants
 <p>Two other dB-based units are dBc and dBi.</p>
 <p>Instead of a fixed value such as 1 mW, dBc uses the strength of the carrier signal as the reference. For example, phase noise (discussed in page 2 of this chapter) is reported in units of dBc/Hz; the first part of this unit indicates that the phase noise power at a specific frequency is being measured with respect to the power of the carrier (in this case &ldquo;carrier&rdquo; refers to the signal strength at the nominal frequency).</p>
-<p>An idealized point-source <a href="https://www.allaboutcircuits.com/technical-articles/an-introduction-to-antenna-basics/" target="_blank">antenna</a> receives a certain amount of energy from the transmitter circuit and radiates it equally in all directions. These &ldquo;isotropic&rdquo; antennas are considered to have zero gain and zero loss.</p>
+<p>An idealized point-source antenna receives a certain amount of energy from the transmitter circuit and radiates it equally in all directions. These &ldquo;isotropic&rdquo; antennas are considered to have zero gain and zero loss.</p>
 <p>Other antennas, however, can be designed to concentrate radiated energy in certain directions, and in this sense an antenna can have &ldquo;gain.&rdquo; The antenna is not actually adding power to the signal, but it <em>effectively</em> increases the transmitted power by concentrating electromagnetic radiation according to the orientation of the communication system (obviously this is more practical when the antenna designer knows the spatial relationship between the transmitter and receiver).</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/AntRadDiagram.jpg" /></p>
-#### <em>Image from Timothy Truckle (own work) [</em><a href="https://www.gnu.org/copyleft/fdl.html" target="_blank"><em>GFDL</em></a><em>]. Here you can see the unequal distribution of radiated energy that results in gain in the forward direction (i.e., 0</em><em>&deg;).</em>
+<em>Image from Timothy Truckle (own work) [</em><em>GFDL</em><em>]. Here you can see the unequal distribution of radiated energy that results in gain in the forward direction (i.e., 0</em><em>&deg;).</em>
 
 <p>The dBi unit allows antenna manufacturers to specify a &ldquo;gain&rdquo; figure that uses the ever-popular dB scale. As always, we need a ratio when we&rsquo;re working with dB, and in the case of dBi, the antenna gain is given with reference to the gain of an isotropic antenna.</p>
 <p>Some antennas (such as those accompanied by a parabolic dish) have significant amounts of gain, and thus they can make a nontrivial contribution to the range or performance of an RF system.</p>

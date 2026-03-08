@@ -37,7 +37,7 @@
 <p><em>Example series R, L, and C circuit.</em></p>
 
 <h2>Solving for Reactance</h2>
-<p>The first step is to determine the reactance (in ohms) for the <a href=&quot;https://www.allaboutcircuits.com/video-lectures/inductors-part-1/&quot; target=&quot;_blank&quot;>inductor</a> and the <a href=&quot;https://www.allaboutcircuits.com/video-lectures/capacitors-part-1/&quot; target=&quot;_blank&quot;>capacitor</a>.</p>
+<p>The first step is to determine the reactance (in ohms) for the inductor and the capacitor.</p>
 <p><img src=&quot;/uploads/articles/solving-for-reactance.png&quot; /></p>
 <p>The next step is to express all resistances and reactances in a mathematically common form: impedance. (Figure below)</p>
 <p>Remember that an inductive reactance translates into a positive imaginary impedance (or an impedance at +90&deg;), while a capacitive reactance translates into a negative imaginary impedance (impedance at -90&deg;). Resistance, of course, is still regarded as a purely &ldquo;real&rdquo; impedance (polar angle of 0&deg;):</p>
@@ -49,7 +49,7 @@
 <p>Now, with all quantities of opposition to electric current expressed in a common, complex number format (as impedances, and not as resistances or reactances), they can be handled in the same way as plain resistances in a DC circuit.</p>
 <p>This is an ideal time to draw up an analysis table for this circuit and insert all the &ldquo;given&rdquo; figures (total voltage, and the impedance of the resistor, inductor, and capacitor).</p>
 <p><img src=&quot;/uploads/articles/analysis-table-for-circuit.png&quot; /></p>
-<p>Unless otherwise specified, the source voltage will be our <a href=&quot;https://eepower.com/textbook/vol-i-foundations-power-design/chapter-2-analysis-ac-systems/phase-shift-and-phasors&quot; target=&quot;_blank&quot; title=&quot;reference for phase shift&quot;>reference for phase shift</a>, and so will be written at an angle of 0&deg;. Remember that there is no such thing as an &ldquo;absolute&rdquo; angle of phase shift for a voltage or current, since its always a quantity relative to another waveform.</p>
+<p>Unless otherwise specified, the source voltage will be our reference for phase shift, and so will be written at an angle of 0&deg;. Remember that there is no such thing as an &ldquo;absolute&rdquo; angle of phase shift for a voltage or current, since its always a quantity relative to another waveform.</p>
 <p>Phase angles for impedance, however (like those of the resistor, inductor, and capacitor), are known absolutely, because the phase relationships between voltage and current at each component are absolutely defined.</p>
 <p>Notice that I&rsquo;m assuming a perfectly reactive inductor and capacitor, with impedance phase angles of exactly +90 and -90&deg;, respectively.</p>
 <p>Although real components won&rsquo;t be perfect in this regard, they should be fairly close. For simplicity, I&rsquo;ll assume perfectly reactive inductors and capacitors from now on in my example calculations except where noted otherwise.</p>
@@ -57,7 +57,7 @@
 <p><img src=&quot;/uploads/articles/total-circuit-impedance-is-equal-to-the-sum-of-individuals.png&quot; /></p>
 <p>Inserting this figure for total impedance into our table:</p>
 <p><img src=&quot;/uploads/articles/total-impedance-table1.png&quot; /></p>
-<p>We can now apply <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/voltage-current-resistance-relate/&quot; target=&quot;_blank&quot;>Ohm&rsquo;s Law</a> (I=E/R) vertically in the &ldquo;Total&rdquo; column to find total current for this series circuit:</p>
+<p>We can now apply Ohm&rsquo;s Law (I=E/R) vertically in the &ldquo;Total&rdquo; column to find total current for this series circuit:</p>
 <p><img src=&quot;/uploads/articles/total-current-for-the-series-circuit-table2.png&quot; /></p>
 <p>Being a series circuit, the current must be equal through all components. Thus, we can take the figure obtained for total current and distribute it to each of the other columns:</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/obtain-for-total-current-and-distribute-to-each-other-columns_3.jpg&quot; /></p>
@@ -71,7 +71,7 @@
 <p>With this abnormally high current through each of the components, voltages greater than the source voltage may be obtained across some of the individual components! Further consequences of inductors&rsquo; and capacitors&rsquo; opposite reactances in the same circuit will be explored in the next chapter.</p>
 <p>Once you&rsquo;ve mastered the technique of reducing all component values to impedances (Z), analyzing any AC circuit is only about as difficult as analyzing any DC circuit, except that the quantities dealt with are vector instead of a scalar.</p>
 <p>With the exception of equations dealing with power (P), equations in AC circuits are the same as those in DC circuits, using impedances (Z) instead of resistances (R). Ohm&rsquo;s Law (E=IZ) still holds true, and so do Kirchhoff&rsquo;s Voltage and Current Laws.</p>
-<p>To demonstrate <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-6/kirchhoffs-voltage-law-kvl/&quot; target=&quot;_blank&quot;>Kirchhoff&rsquo;s Voltage Law</a> in an AC circuit, we can look at the answers we derived for component voltage drops in the last circuit. KVL tells us that the algebraic sum of the voltage drops across the resistor, inductor, and capacitor should equal the applied voltage from the source.</p>
+<p>To demonstrate Kirchhoff&rsquo;s Voltage Law in an AC circuit, we can look at the answers we derived for component voltage drops in the last circuit. KVL tells us that the algebraic sum of the voltage drops across the resistor, inductor, and capacitor should equal the applied voltage from the source.</p>
 <p>Even though this may not look like it is true at first sight, a bit of complex number addition proves otherwise:</p>
 <p><img src=&quot;/uploads/articles/sum-of-the-voltage-drops.png&quot; /></p>
 <p>Aside from a bit of rounding error, the sum of these voltage drops does equal 120 volts. Performed on a calculator (preserving all digits), the answer you will receive should be <em>exactly</em> 120 + j0 volts.</p>

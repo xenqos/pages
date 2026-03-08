@@ -35,17 +35,17 @@
 <p>RF design is known to be particularly challenging among the various subdisciplines of electrical engineering. One reason for this is the extreme inconsistency between theoretical electrical signals and high-frequency sinusoidal signals.</p>
 <p>At some point we all start to realize that the idealized components and wires and signals found in theoretical circuit analysis are helpful though highly inaccurate approximations of reality. Components have tolerances and temperature dependencies and parasitic elements; wires have resistance, capacitance, and inductance; signals have noise. However, numerous successful circuits are designed and implemented with little if any consideration for these nonidealities.</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/RFT_ch1_pg4_1-CON-452_2.jpg&quot; /></p>
-<h4><em>The equivalent circuit model for a real &ldquo;capacitor&rdquo;; at very high frequencies it actually behaves like an inductor.</em></h4>
-
+<em>The equivalent circuit model for a real &ldquo;capacitor&rdquo;; at very high frequencies it actually behaves like an inductor.</em><br>
+<br>
 <p>This is possible because so many circuits these days involve primarily low-frequency or digital signals. Low-frequency systems are much less subject to nonideal signal and component behavior; consequently, low-frequency circuits tend to diverge much less from the operation that we expect based on theoretical analysis. High-frequency digital systems are more subject to nonidealities, but the effects of these nonidealities are usually not prominent because digital communication is inherently robust. A digital signal may experience significant degradation as a result of nonideal circuit behavior, but as long as the receiver can still correctly distinguish logic high from logic low, the system maintains full functionality.</p>
 <p>In the RF world, of course, signals are neither digital nor of low frequency. Unexpected signal behavior becomes the norm, and every dB of reduced signal-to-noise ratio corresponds to reduced range, or lower audio quality, or increased bit error rate.</p>
 
 <h2>Capacitive Coupling</h2>
 <p>It is essential to understand that RF signals absolutely do not confine themselves to the intended conduction paths. This is particularly true in the context of printed circuit boards, where the various traces and components often have little physical separation.</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/RFT_ch3_pg1_2-CON-452_2.jpg&quot; /></p>
-<h4><em>Examples of parasitic capacitance.</em></h4>
-
-<p>A typical circuit diagram consists of components, wires, and the empty space in between. The assumption is that signals travel along wires and cannot pass through the empty space. In reality, though, those empty spaces are <a href=&quot;https://eepower.com/textbook/vol-i-foundations-power-design/chapter-2-analysis-ac-systems/capacitors-and-inductors&quot; target=&quot;_blank&quot;>filled with capacitors</a>. Capacitance is formed whenever two conductors are separated by an insulating material, with closer physical proximity corresponding to higher capacitance.</p>
+<em>Examples of parasitic capacitance.</em><br>
+<br>
+<p>A typical circuit diagram consists of components, wires, and the empty space in between. The assumption is that signals travel along wires and cannot pass through the empty space. In reality, though, those empty spaces are filled with capacitors. Capacitance is formed whenever two conductors are separated by an insulating material, with closer physical proximity corresponding to higher capacitance.</p>
 <p>Capacitors block DC and present high impedance to low-frequency signals. Thus, we can more or less ignore all this unintended capacitance in the context of low-frequency design. But impedance decreases as frequency increases; at very high frequencies, a PCB is filled with relatively low-impedance conduction paths created by parasitic capacitance.</p>
 
 <h2>Radiated Coupling</h2>

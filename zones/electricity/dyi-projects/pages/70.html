@@ -33,10 +33,10 @@
 
 <h1>Analog Lab - Non-inverting Amplifier</h1>
 <h2>Project Overview</h2>
-<p>The non-inverting <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-1/amplifiers/&quot; target=&quot;_blank&quot;>amplifier</a> with an adjustable gain is one of the most useful circuits you can build with an <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-8/introduction-operational-amplifiers/&quot; target=&quot;_blank&quot;>operational amplifier (op amp)</a>. As illustrated in Figure 1, the op amp uses a <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-6/voltage-divider-circuits/&quot; target=&quot;_blank&quot;>resistor divider</a> (<a href=&quot;https://eepower.com/resistor-guide/resistor-types/potentiometer/&quot; target=&quot;_blank&quot;>potentiometer</a>,&nbsp;R<sub>2</sub>) to provide <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-8/negative-feedback/&quot; target=&quot;_blank&quot;>negative feedback</a>.&nbsp;&nbsp;</p>
+<p>The non-inverting amplifier with an adjustable gain is one of the most useful circuits you can build with an operational amplifier (op amp). As illustrated in Figure 1, the op amp uses a resistor divider (potentiometer,&nbsp;R<sub>2</sub>) to provide negative feedback.&nbsp;&nbsp;</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/non-inverting-amplifier-schematic-diagram.jpg&quot; /></p>
-<h4><em><strong>Figure 1.</strong> Schematic diagram of the op amp non-inverting amplifier&nbsp;circuit.</em></h4>
-
+<em><strong>Figure 1.</strong> Schematic diagram of the op amp non-inverting amplifier&nbsp;circuit.</em><br>
+<br>
 <p>As we will demonstrate, this divided negative feedback is key to the operation of the non-inverting amplifier.</p>
 
 <h2>Parts and Materials</h2>
@@ -54,29 +54,29 @@
 
 <p>&nbsp;&nbsp;</p>
 <h2>Theory of Operation</h2>
-<p>This circuit differs from the <a href=&quot;https://www.allaboutcircuits.com/textbook/experiments/chpt-6/precision-voltage-follower/&quot; target=&quot;_blank&quot;>voltage follower project</a> in only one respect, the output voltage is fed back&nbsp;to the inverting (-) input through a voltage-dividing potentiometer rather than being directly connected. With only a fraction of the output voltage fed back to the inverting input, the op amp will output a corresponding multiple of the voltage sensed at the noninverting (+) input to keep&nbsp;the input differential voltage near zero.</p>
+<p>This circuit differs from the voltage follower project in only one respect, the output voltage is fed back&nbsp;to the inverting (-) input through a voltage-dividing potentiometer rather than being directly connected. With only a fraction of the output voltage fed back to the inverting input, the op amp will output a corresponding multiple of the voltage sensed at the noninverting (+) input to keep&nbsp;the input differential voltage near zero.</p>
 <p>In other words, the op amp will now function as an amplifier with a controllable voltage gain, that gain is established by the position of the feedback potentiometer (R<sub>2</sub>).</p>
 
 <h2>Instructions</h2>
-<p><strong>Step 1:</strong>&nbsp;Build the non-inverting amplifier&nbsp;circuit of Figure 1. A <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/building-simple-resistor-circuits/&quot; target=&quot;_blank&quot;>breadboard</a> implementation of this circuit is illustrated in Figure 2.</p>
+<p><strong>Step 1:</strong>&nbsp;Build the non-inverting amplifier&nbsp;circuit of Figure 1. A breadboard implementation of this circuit is illustrated in Figure 2.</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/non-inverting-amplifier-circuit-illustration.jpg&quot; /></p>
-<h4><em><strong>Figure 2.</strong> Breadboard implementation of the op amp non-inverting amplifier.</em></h4>
-
+<em><strong>Figure 2.</strong> Breadboard implementation of the op amp non-inverting amplifier.</em><br>
+<br>
 <p><strong>Step 2:&nbsp;</strong>Set R<sub>2</sub> to approximately mid-position. This should give a voltage gain of about 2. See the derivation of the non-inverting amplifier gain equation (which is discussed later in this chapter)&nbsp;to understand why this is true.</p>
 <p><strong>Step 3:&nbsp;</strong>Measure both the input&nbsp;and output voltage for several positions of the input potentiometer R<sub>1</sub>.</p>
 <p><strong>Step 4:&nbsp;</strong>Move R<sub>2</sub> to a different position and re-take voltage measurements for several positions of R<sub>1</sub>. For any given R<sub>2</sub> position, the ratio between output and input voltage should be the same.&nbsp;The ability to leverage an op amp in this fashion to create an amplifier with controllable voltage gain makes this circuit an extremely useful one.</p>
-<p>You will also notice that the input and output voltages are always positive with respect to the <a href=&quot;https://www.allaboutcircuits.com/technical-articles/an-introduction-to-ground/&quot; target=&quot;_blank&quot;>ground</a>. Since the output voltage increases in a positive direction for a positive increase of the input voltage, this amplifier is referred to as non-inverting.&nbsp;If the output and input voltages were related to one another in an inverse fashion (i.e. positive increasing input voltage results in positive decreasing or negative increasing output), then the amplifier would be known as an inverting type.</p>
+<p>You will also notice that the input and output voltages are always positive with respect to the ground. Since the output voltage increases in a positive direction for a positive increase of the input voltage, this amplifier is referred to as non-inverting.&nbsp;If the output and input voltages were related to one another in an inverse fashion (i.e. positive increasing input voltage results in positive decreasing or negative increasing output), then the amplifier would be known as an inverting type.</p>
 <p><strong>Step 5:&nbsp;</strong>Try adjusting R<sub>2</sub> for maximum and minimum voltage gain.&nbsp;What is the minimum&nbsp;voltage gain attainable with this amplifier configuration? Why do you think this is?</p>
 
 <h2>Op Amp Non-inverting Amplifier&nbsp;Gain Equation</h2>
 <p>Let&#39;s&nbsp;derive the non-inverting amplifier gain equation using the schematic of Figure 3, which has distinct resistors, R<sub>1</sub> and R<sub>2</sub>, in the negative feedback path.&nbsp;</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/non-inverting-amplifier-schematic-diagram-1.jpg&quot; /></p>
-<h4><em><strong>Figure 3.</strong> SPICE circuit schematic with node numbers&nbsp;for simulation of the&nbsp;op amp non-inverting amplifier</em></h4>
-
+<em><strong>Figure 3.</strong> SPICE circuit schematic with node numbers&nbsp;for simulation of the&nbsp;op amp non-inverting amplifier</em><br>
+<br>
 <p>Beginning from the op amp open-loop gain equation:</p>
 <p>$$V_{out} = A \cdot (V_+ - V_-) = A \cdot (V_{in} - V_-)$$</p>
 <p>Where <em>A</em>&nbsp;is the open-loop gain of the op amp, and we are defining the non-inverting&nbsp;op amp input (V<sub>+</sub>) as the non-inverting amplifier input,&nbsp;V<sub>in</sub>.</p>
-<p>The relationship of&nbsp;V<sub>-</sub>&nbsp;to&nbsp;V<sub>out</sub>&nbsp;is given by the resistive <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-6/voltage-divider-circuits/&quot; target=&quot;_blank&quot;>voltage divider</a> equation:</p>
+<p>The relationship of&nbsp;V<sub>-</sub>&nbsp;to&nbsp;V<sub>out</sub>&nbsp;is given by the resistive voltage divider equation:</p>
 <p>$$V_{-} = \left( \frac{R_1}{R_1+R_2} \right) V_{out}$$</p>
 <p>Substituting, we get:</p>
 <p>$$V_{out} = A\left(V_{in} - \left( \frac{R_1}{R_1+R_2} \right) V_{out} \right)$$</p>

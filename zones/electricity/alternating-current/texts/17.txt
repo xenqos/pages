@@ -1,15 +1,15 @@
 # Series Resistor-Inductor Circuits
-<p>In the previous section, we explored what would happen in simple resistor-only and <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-3/ac-resistor-circuits-inductive/" target="_blank">inductor-only AC circuits</a>. Now we will mix the two components together in series form and investigate the effects.</p>
+<p>In the previous section, we explored what would happen in simple resistor-only and inductor-only AC circuits. Now we will mix the two components together in series form and investigate the effects.</p>
 ## Series Resistor Inductor Circuit Example
 <p>Take this circuit as an example to work with:</p>
 
 <p><img src="/uploads/articles/series-resistor-inductor-circuit.png" /></p>
 <p><em>Series resistor inductor circuit: Current lags applied voltage by 0o to 90o.</em></p>
 
-<p>The <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/resistors/" target="_blank">resistor</a> will offer 5 &Omega; of resistance to AC current regardless of frequency, while the inductor will offer 3.7699 &Omega; of reactance to AC current at 60 Hz.</p>
+<p>The resistor will offer 5 &Omega; of resistance to AC current regardless of frequency, while the inductor will offer 3.7699 &Omega; of reactance to AC current at 60 Hz.</p>
 <p>Because the resistor&rsquo;s resistance is a real number (5 &Omega; &ang; 0&deg;, or 5 + j0 &Omega;), and the inductor&rsquo;s reactance is an imaginary number (3.7699 &Omega; &ang; 90&deg;, or 0 + j3.7699 &Omega;), the combined effect of the two components will be an opposition to current equal to the complex sum of the two numbers.</p>
 <p>This combined opposition will be a vector combination of resistance and reactance. In order to express this opposition succinctly, we need a more comprehensive term for opposition to current than either resistance or reactance alone.</p>
-<p>This term is called <em><a href="https://www.allaboutcircuits.com/worksheets/impedance/" target="_blank">impedance</a></em>, its symbol is Z, and it is also expressed in the unit of ohms, just like resistance and reactance. In the above example, the total circuit impedance is:</p>
+<p>This term is called <em>impedance</em>, its symbol is Z, and it is also expressed in the unit of ohms, just like resistance and reactance. In the above example, the total circuit impedance is:</p>
 
 <p><img src="/uploads/articles/circuit-impedance-equation.jpg" /></p>
 
@@ -18,7 +18,7 @@
 
 <p><img src="/uploads/articles/ohms-law-for-ac-circuits.jpg" /></p>
 
-<p>In fact, this is a far more comprehensive form of <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/voltage-current-resistance-relate/" target="_blank">Ohm&rsquo;s Law</a> than what was taught in DC electronics (E=IR), just as impedance is a far more comprehensive expression of opposition to the flow of current than resistance is. <em>Any</em> resistance and any reactance, separately or in combination (series/parallel), can be and should be represented as a single impedance in an AC circuit.</p>
+<p>In fact, this is a far more comprehensive form of Ohm&rsquo;s Law than what was taught in DC electronics (E=IR), just as impedance is a far more comprehensive expression of opposition to the flow of current than resistance is. <em>Any</em> resistance and any reactance, separately or in combination (series/parallel), can be and should be represented as a single impedance in an AC circuit.</p>
 <p>To calculate current in the above circuit, we first need to give a phase angle reference for the voltage source, which is generally assumed to be zero. (The phase angles of resistive and inductive impedance are <em>always</em> 0&deg; and +90&deg;, respectively, regardless of the given phase angles for voltage or current).</p>
 
 <p><img src="/uploads/articles/phase-angles-for-voltage-or-current-equation.jpg" /></p>
@@ -36,7 +36,7 @@
 
 <p><img src="/uploads/articles/phase-angle-of-current-equation2.jpg" /></p>
 
-<p>The <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/voltage-current/" target="_blank">voltage</a> across the inductor has a phase angle of 52.984&deg;, while the current through the inductor has a phase angle of -37.016&deg;, a difference of exactly 90&deg; between the two. This tells us that E and I are still 90&deg; out of phase (for the inductor only).</p>
+<p>The voltage across the inductor has a phase angle of 52.984&deg;, while the current through the inductor has a phase angle of -37.016&deg;, a difference of exactly 90&deg; between the two. This tells us that E and I are still 90&deg; out of phase (for the inductor only).</p>
 ## Use the Kirchhoff&rsquo;s Voltage Law
 <p>We can also mathematically prove that these complex values add together to make the total voltage, just as Kirchhoff&rsquo;s Voltage Law would predict:</p>
 
@@ -63,7 +63,7 @@ freq            v(1,2)       v(2)       i(v1) &#10; 6.000E+01       7.985E+00   
 
 <p>Although it isn&rsquo;t necessary, I find it helpful to write <em>both</em> the rectangular and polar forms of each quantity in the table. If you are using a calculator that has the ability to perform complex arithmetic without the need for conversion between rectangular and polar forms, then this extra documentation is completely unnecessary.</p>
 <p>However, if you are forced to perform complex arithmetic &ldquo;longhand&rdquo; (addition and subtraction in rectangular form, and multiplication and division in polar form), writing each quantity in both forms will be useful indeed.</p>
-<p>Now that our &ldquo;given&rdquo; figures are inserted into their respective locations in the table, we can proceed just as with DC: determine the total <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-5/review-of-r-x-and-z/" target="_blank">impedance</a> from the individual impedances. Since this is a series circuit, we know that opposition to current flow (resistance <em>or</em> impedance) adds to form the total opposition:</p>
+<p>Now that our &ldquo;given&rdquo; figures are inserted into their respective locations in the table, we can proceed just as with DC: determine the total impedance from the individual impedances. Since this is a series circuit, we know that opposition to current flow (resistance <em>or</em> impedance) adds to form the total opposition:</p>
 
 <p><img src="/uploads/articles/series-resistor-inductor-circuit-table2.jpg" /></p>
 

@@ -32,8 +32,8 @@
 <div id='idContent'>
 
 <h1>Other Waveshapes</h1>
-<p>As strange as it may seem, <em>any</em> repeating, non-sinusoidal <a href=&quot;https://www.allaboutcircuits.com/textbook/alternating-current/chpt-1/ac-waveforms/&quot; target=&quot;_blank&quot;>waveform</a> is actually equivalent to a series of sinusoidal waveforms of different amplitudes and frequencies added together. Square waves are a very common and well-understood case, but not the only one.</p>
-<p>Electronic power control devices such as <a href=&quot;https://www.allaboutcircuits.com/video-lectures/bipolar-transistors-intro/&quot; target=&quot;_blank&quot;>transistors</a> and <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-7/silicon-controlled-rectifier-scr/&quot; target=&quot;_blank&quot;>silicon-controlled rectifiers (<em>SCRs</em>)</a> often produce voltage and current waveforms that are essentially chopped-up versions of the otherwise &ldquo;clean&rdquo; (pure) sine-wave AC from the <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-9/power-supply-circuits/&quot; target=&quot;_blank&quot;>power supply</a>.</p>
+<p>As strange as it may seem, <em>any</em> repeating, non-sinusoidal waveform is actually equivalent to a series of sinusoidal waveforms of different amplitudes and frequencies added together. Square waves are a very common and well-understood case, but not the only one.</p>
+<p>Electronic power control devices such as transistors and silicon-controlled rectifiers (<em>SCRs</em>) often produce voltage and current waveforms that are essentially chopped-up versions of the otherwise &ldquo;clean&rdquo; (pure) sine-wave AC from the power supply.</p>
 <p>These devices have the ability to suddenly <em>change</em> their resistance with the application of a control signal voltage or current, thus &ldquo;turning on&rdquo; or &ldquo;turning off&rdquo; almost instantaneously, producing current waveforms bearing little resemblance to the source voltage waveform powering the circuit.</p>
 <p>These current waveforms then produce changes in the voltage waveform to other circuit components, due to voltage drops created by the non-sinusoidal current through circuit impedances.</p>
 <h2>Nonlinear Components</h2>
@@ -44,9 +44,9 @@
 <p>It is becoming increasingly common in the electric power industry to observe overheating of transformers and motors due to distortions in the sine-wave shape of the AC power line voltage stemming from &ldquo;switching&rdquo; loads such as computers and high-efficiency lights.</p>
 <p>This is no theoretical exercise: it is very real and potentially very troublesome.</p>
 <p>In this section, I will investigate a few of the more common waveshapes and show their harmonic components by way of Fourier analysis using SPICE.</p>
-<p>One very common way harmonics are generated in an AC power system is when AC is converted, or &ldquo;rectified&rdquo; into DC. This is generally done with components called <em><a href=&quot;https://www.allaboutcircuits.com/video-lectures/diode-characteristics-circuits/&quot; target=&quot;_blank&quot;>diodes</a></em>, which only allow the passage of current in one direction.</p>
+<p>One very common way harmonics are generated in an AC power system is when AC is converted, or &ldquo;rectified&rdquo; into DC. This is generally done with components called <em>diodes</em>, which only allow the passage of current in one direction.</p>
 <h2>Half-wave Rectification</h2>
-<p>The simplest type of AC/DC <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-3/rectifier-circuits/&quot; target=&quot;_blank&quot;>rectification</a> is <em>half-wave</em>, where a single diode blocks half of the AC current (over time) from passing through the load. (Figure below)</p>
+<p>The simplest type of AC/DC rectification is <em>half-wave</em>, where a single diode blocks half of the AC current (over time) from passing through the load. (Figure below)</p>
 <p><img src=&quot;/uploads/articles/half-wave-rectitier.jpg&quot; /></p>
 <p><em>Half-wave rectifier</em></p>
 

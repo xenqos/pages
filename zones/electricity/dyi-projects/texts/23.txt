@@ -1,45 +1,45 @@
 # DC Lab - Build Your Own Multimeter
 ## Project Overview
-<p>In this project, you will construct a simple <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-8/multimeters/" target="_blank">analog multimeter</a>. illustrated in Figure 1, which supports both <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/voltage-current/" target="_blank">voltage and current</a> measurements.</p>
+<p>In this project, you will construct a simple analog multimeter. illustrated in Figure 1, which supports both voltage and current measurements.</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/meter-movement-illustration.jpg" /></p>
-#### <em><strong>Figure 1. </strong>Illustration of the analog multimeter built in this project.</em>
+<em><strong>Figure 1. </strong>Illustration of the analog multimeter built in this project.</em>
 
 ## Parts and Materials
 <ul>
 <li>Sensitive meter movement</li>
 <li>Selector switch, single-pole, multi-throw, break-before-make</li>
-<li>Multi-turn <a href="https://eepower.com/resistor-guide/resistor-types/potentiometer/" target="_blank">potentiometers</a>, PCB mount.&nbsp;15-turn, 1 k&Omega;, and 10 k&Omega; trimmer&nbsp;units are recommended</li>
-<li>Assorted <a href="https://eepower.com/resistor-guide/" target="_blank">resistors</a>, preferably high-precision <a href="https://eepower.com/resistor-guide/resistor-materials/metal-film-resistor/" target="_blank">metal film</a> or <a href="https://eepower.com/resistor-guide/resistor-materials/wirewound-resistor/" target="_blank">wire-wound</a> types with +/- 1% tolerance</li>
+<li>Multi-turn potentiometers, PCB mount.&nbsp;15-turn, 1 k&Omega;, and 10 k&Omega; trimmer&nbsp;units are recommended</li>
+<li>Assorted resistors, preferably high-precision metal film or wire-wound types with +/- 1% tolerance</li>
 <li>Three banana&nbsp;jack style binding posts, or other terminal hardware, for connection to potentiometer circuit</li>
 <li>Optional: plastic or metal mounting box</li>
 </ul>
 <p>The most important and expensive component in an analog meter is the movement: the actual needle-and-scale mechanism whose task it is to translate an electrical current into mechanical displacement where it may be visually interpreted.&nbsp;The ideal meter movement is physically large (for ease of viewing) and as sensitive as possible (requires minimal current to produce full-scale deflection of the needle).&nbsp;High-quality meter movements can be expensive, but you can find some that are of acceptable quality and are also reasonably priced. One of the&nbsp;cheapest options might be to purchase an inexpensive analog meter and disassemble it for the meter movement alone.&nbsp;Although the thought of destroying a working multimeter to have parts to make your own may sound counter-productive, the goal here is <em>learning</em>, not meter function.</p>
-<p>Keep in mind that we&nbsp;cannot specify resistor values for this experiment, as these depend on the particular meter movement and measurement ranges chosen.&nbsp;Be sure to use high-precision <a href="https://eepower.com/resistor-guide/resistor-types/fixed-resistor/" target="_blank">fixed-value resistors</a> rather than <a href="https://eepower.com/resistor-guide/resistor-materials/carbon-composition-resistor/" target="_blank">carbon-composition resistors</a>.&nbsp;Even if you happen to find carbon-composition resistors of just the right value(s), those values will change or &ldquo;drift&rdquo; over time due to aging and temperature fluctuations.&nbsp;Of course, if you don&rsquo;t care about the long-term stability of this meter but are building it just for the learning experience, resistor precision matters little.</p>
+<p>Keep in mind that we&nbsp;cannot specify resistor values for this experiment, as these depend on the particular meter movement and measurement ranges chosen.&nbsp;Be sure to use high-precision fixed-value resistors rather than carbon-composition resistors.&nbsp;Even if you happen to find carbon-composition resistors of just the right value(s), those values will change or &ldquo;drift&rdquo; over time due to aging and temperature fluctuations.&nbsp;Of course, if you don&rsquo;t care about the long-term stability of this meter but are building it just for the learning experience, resistor precision matters little.</p>
 
 ## Learning Objectives
 <ul>
-<li><a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-2/voltage-usage/" target="_blank">Voltmeter design and use</a></li>
-<li><a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-2/ammeter-usage/" target="_blank">Ammeter</a> design and use</li>
-<li><a href="https://eepower.com/resistor-guide/resistor-types/rheostat/" target="_blank">Rheostat</a> range limiting</li>
+<li>Voltmeter design and use</li>
+<li>Ammeter design and use</li>
+<li>Rheostat range limiting</li>
 <li>Calibration theory and practice</li>
 </ul>
 
 ## Instructions
-<p>Initially, follow the instructions below to build the multimeter circuit on a <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/building-simple-resistor-circuits/" target="_blank">breadboard</a> first while determining proper range <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/resistance/" target="_blank">resistance</a> values and performing all calibration adjustments there. After you are happy with the performance, you can make it more permanent by building it on a printed circuit board and mounting it into a box.</p>
+<p>Initially, follow the instructions below to build the multimeter circuit on a breadboard first while determining proper range resistance values and performing all calibration adjustments there. After you are happy with the performance, you can make it more permanent by building it on a printed circuit board and mounting it into a box.</p>
 
 ### Characterizing Meter Movement
-<p><strong>Step 1:&nbsp;</strong>First, you need to determine the characteristics of your meter movement. Most important is to know the <strong><em>full-scale deflection</em></strong> in milliamps or microamps.&nbsp;To determine this, connect the meter movement, a potentiometer, battery, and digital ammeter in <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/simple-series-circuits/" target="_blank">series</a>, as illustrated in Figure 2.</p>
+<p><strong>Step 1:&nbsp;</strong>First, you need to determine the characteristics of your meter movement. Most important is to know the <strong><em>full-scale deflection</em></strong> in milliamps or microamps.&nbsp;To determine this, connect the meter movement, a potentiometer, battery, and digital ammeter in series, as illustrated in Figure 2.</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/meter-movement-illustration-1.jpg" /></p>
-#### <em><strong>Figure 2. </strong>Test configuration for characterizing the meter movement and full-scale deflection.</em>
+<em><strong>Figure 2. </strong>Test configuration for characterizing the meter movement and full-scale deflection.</em>
 
-<p><strong>Step 2:</strong>&nbsp;Adjust the potentiometer until the meter movement is deflected exactly to full-scale. Be careful not to apply too much current to the meter movement, as movements are very sensitive devices and are easily damaged by <a href="https://eepower.com/technical-articles/what-are-overcurrent-protection-devices/" target="_blank">overcurrent</a>. Read the ammeter&rsquo;s display to find the full-scale current value.&nbsp;</p>
+<p><strong>Step 2:</strong>&nbsp;Adjust the potentiometer until the meter movement is deflected exactly to full-scale. Be careful not to apply too much current to the meter movement, as movements are very sensitive devices and are easily damaged by overcurrent. Read the ammeter&rsquo;s display to find the full-scale current value.&nbsp;</p>
 <p>Most meter movements have full-scale deflection current ratings of 1 mA or less, so choose a potentiometer value high enough to limit current appropriately and begin testing with the potentiometer turned to maximum resistance. The lower the full-scale current rating of a movement, the more sensitive it is.</p>
-<p><strong>Step 3:&nbsp;</strong>After determining the full-scale current rating of your meter movement, you must accurately measure its internal <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/resistance/" target="_blank">resistance</a>.&nbsp;To do this, disconnect all components from the previous testing circuit and connect your <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-2/ohmmeter-usage/" target="_blank">digital ohmmeter</a> across the meter movement terminals.&nbsp;Record this resistance figure and the full-scale current figure obtained in the last procedure.</p>
+<p><strong>Step 3:&nbsp;</strong>After determining the full-scale current rating of your meter movement, you must accurately measure its internal resistance.&nbsp;To do this, disconnect all components from the previous testing circuit and connect your digital ohmmeter across the meter movement terminals.&nbsp;Record this resistance figure and the full-scale current figure obtained in the last procedure.</p>
 
 ### Determining the Resistor Multiplier&nbsp;Values
-<p>Perhaps the most challenging portion of this project is determining the proper range resistance values and implementing those values in the form of rheostat networks.&nbsp;The calculations are outlined in the section of this textbook covering <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-8/what-is-a-meter/" target="_blank">DC metering circuits</a>; however, an example is given here. For this, you will have to substitute your values if they are different than our example. Thankfully, the calculations are straightforward.</p>
+<p>Perhaps the most challenging portion of this project is determining the proper range resistance values and implementing those values in the form of rheostat networks.&nbsp;The calculations are outlined in the section of this textbook covering DC metering circuits; however, an example is given here. For this, you will have to substitute your values if they are different than our example. Thankfully, the calculations are straightforward.</p>
 <p><strong>Step 4:&nbsp;</strong>Suppose your meter movement had a full-scale rating of 1 mA and internal resistance of 400 &Omega;.&nbsp;If we wanted to determine the necessary range resistance, R<sub>multiplier</sub>,&nbsp;to give this movement a range of 0 to 15 V, we would have to divide 15 V (total applied voltage) by 1 mA (full-scale current) to obtain the total probe-to-probe resistance of the voltmeter (R = V/I).&nbsp;For this example, the total resistance is 15 k&Omega;.&nbsp;&nbsp;</p>
 <p><strong>Step 5:&nbsp;</strong>From this total resistance figure, we subtract the movement&rsquo;s internal resistance, leaving 14.6 k&Omega; for the range resistor value.</p>
 <p><strong>Step 6:&nbsp;</strong>Repeat steps 4&nbsp;and 5&nbsp;for&nbsp;different voltage ranges. For example, we could do a second range&nbsp;from 0 to 5 V and a third range from 0 to 100 V. In this case, the multiplier resistance values would be given by:</p>
@@ -52,19 +52,19 @@
 <p><strong>Step 7:&nbsp;</strong>Figure 3 illustrates a simple rheostat network to produce 14.6 k&Omega; (adjustable) using&nbsp;a 10 k&Omega; potentiometer in parallel with a 10 k&Omega; fixed resistor, all in series with another 10 k&Omega; fixed resistor. Build the rheostat networks for the three voltage ranges and their associated multiplier resistance values calculated above.</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/simple-rheostat-network-circuit.jpg" /></p>
-#### <em><strong>Figure 3. </strong>Rheostat network example.</em>
+<em><strong>Figure 3. </strong>Rheostat network example.</em>
 
 ### Connect the Selector Switch
 <p><strong>Step 8:&nbsp;</strong>Wire up the switch to the rheostat multiplier networks and the meter movement, as illustrated in Figure 4.</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/multimeter-schematic-diagram.jpg" /></p>
-#### <em><strong>Figure 4. </strong>Multimeter schematic diagram including the selector switch, range multipliers, meter movement, and shunt resistor.</em>
+<em><strong>Figure 4. </strong>Multimeter schematic diagram including the selector switch, range multipliers, meter movement, and shunt resistor.</em>
 
 <p>One position of the selector switch directly connects the meter movement between the black common binding post and the red V/mA binding post.&nbsp;In this position, the meter is a sensitive ammeter with a range equal to the full-scale current rating of the meter movement.</p>
 <p>The far clockwise position of the switch disconnects the positive (+) terminal of the movement from either red binding post and shorts it directly to the negative (-) terminal.&nbsp;This protects the meter from electrical damage by isolating it from the red test probe, and it &ldquo;dampens&rdquo; the needle mechanism to further guard against mechanical shock.</p>
 
 ### Shunt Resistor Construction and Calibration
-<p>The <a href="https://eepower.com/resistor-guide/resistor-applications/shunt-resistor/" target="_blank">shunt resistor </a>(R<sub>shunt</sub>) necessary for a high-current ammeter function must be a low-resistance unit with a high power dissipation. This current may be very high, so you will definitely <em>not</em> be using any 1/4-watt resistors for this unless you form a resistance network with several smaller resistors in parallel combination.&nbsp;If you plan on having an ammeter range in excess of 1 amp, it is recommended to use&nbsp;a thick piece of wire or even a skinny piece of sheet metal as the shunt resistor. If you do use this method, keep in mind that it&nbsp;must be&nbsp;suitably filed or notched to provide just the right amount of resistance.</p>
+<p>The shunt resistor (R<sub>shunt</sub>) necessary for a high-current ammeter function must be a low-resistance unit with a high power dissipation. This current may be very high, so you will definitely <em>not</em> be using any 1/4-watt resistors for this unless you form a resistance network with several smaller resistors in parallel combination.&nbsp;If you plan on having an ammeter range in excess of 1 amp, it is recommended to use&nbsp;a thick piece of wire or even a skinny piece of sheet metal as the shunt resistor. If you do use this method, keep in mind that it&nbsp;must be&nbsp;suitably filed or notched to provide just the right amount of resistance.</p>
 <p><strong>Step 9:&nbsp;</strong>To calibrate a homemade shunt resistor, you will need to connect your multimeter assembly to a calibrated source of high current or a high-current source in series with a digital ammeter for reference.&nbsp;Use a small metal file to shave off shunt wire thickness or to notch the sheet metal strip in small, careful amounts.&nbsp;The resistance of your shunt will increase with every stroke of the file, causing the meter movement to deflect more strongly.&nbsp;Remember that you can always approach the exact value in slower and slower steps (file strokes), but you cannot go &ldquo;backward&rdquo; and decrease the shunt resistance!</p>
 
 ### Final Construction for a Permanent Solution

@@ -33,7 +33,7 @@
 
 <h1>Simple Parallel (Tank Circuit) Resonance</h1>
 <h2>Resonance in a Tank Circuit</h2>
-<p>A condition of resonance will be experienced in a tank circuit when the reactance of the <a href=&quot;https://www.allaboutcircuits.com/video-lectures/capacitors-part-1/&quot; target=&quot;_blank&quot;>capacitor</a> and <a href=&quot;https://www.allaboutcircuits.com/video-lectures/inductors-part-1/&quot; target=&quot;_blank&quot;>inductor</a> are equal to each other. Because inductive reactance increases with increasing frequency and capacitive reactance decreases with increasing frequency, there will only be one frequency where these two reactances will be equal. Example:</p>
+<p>A condition of resonance will be experienced in a tank circuit when the reactance of the capacitor and inductor are equal to each other. Because inductive reactance increases with increasing frequency and capacitive reactance decreases with increasing frequency, there will only be one frequency where these two reactances will be equal. Example:</p>
 <p><img src=&quot;/uploads/articles/simple-parallel-resonant-circuit.jpg&quot; /></p>
 <p><em>Simple parallel resonant circuit (tank circuit).</em></p>
 <p>In the above circuit, we have a 10 &micro;F capacitor and a 100 mH inductor. Since we know the equations for determining the reactance of each at a given frequency, and we&rsquo;re looking for that point where the two reactances are equal to each other, we can set the two reactance formula equal to each other and solve for frequency algebraically:</p>
@@ -56,7 +56,7 @@
 <h3>Resonant circuit suitable for SPICE simulation.</h3>
 
 <p><em><img src=&quot;/uploads/articles/Resonant-circuit_suitable-for-SPICE-simulation.png&quot; /></em></p>
-<p>The 1 pico-ohm (1 p&Omega;) resistor is placed in this SPICE analysis to overcome a limitation of SPICE: namely, that it cannot analyze a circuit containing a direct inductor-voltage source loop. (Figure <a href=&quot;https://www.allaboutcircuits.com/textbook/alternating-current/chpt-6/parallel-tank-circuit-resonance/#02097.png&quot; target=&quot;_blank&quot;>below</a>) A very low resistance value was chosen so as to have minimal effect on circuit behavior.</p>
+<p>The 1 pico-ohm (1 p&Omega;) resistor is placed in this SPICE analysis to overcome a limitation of SPICE: namely, that it cannot analyze a circuit containing a direct inductor-voltage source loop. (Figure below) A very low resistance value was chosen so as to have minimal effect on circuit behavior.</p>
 <p>This SPICE simulation plots circuit current over a frequency range of 100 to 200 Hz in twenty even steps (100 and 200 Hz inclusive). Current magnitude on the graph increases from left to right, while frequency increases from top to bottom.</p>
 <p>The current in this circuit takes a sharp dip around the analysis point of 157.9 Hz, which is the closest analysis point to our predicted resonance frequency of 159.155 Hz. It is at this point that total current from the power source falls to zero.</p>
 <h2>The &ldquo;Nutmeg&rdquo; Graphical Post-Processor Plot</h2>

@@ -32,9 +32,9 @@
 <div id='idContent'>
 
 <h1>Practical Power Factor Correction</h1>
-<p>When the need arises to correct for poor power factor in an <a href=&quot;https://www.allaboutcircuits.com/textbook/experiments/chpt-4/introduction-to-ac-circuits/&quot; target=&quot;_blank&quot;>AC power system</a>, you probably won&rsquo;t have the luxury of knowing the load&rsquo;s exact inductance in henrys to use for your calculations.</p>
+<p>When the need arises to correct for poor power factor in an AC power system, you probably won&rsquo;t have the luxury of knowing the load&rsquo;s exact inductance in henrys to use for your calculations.</p>
 <p>You may be fortunate enough to have an instrument called a <em>power factor meter</em> to tell you what the power factor is (a number between 0 and 1), and the apparent power (which can be figured by taking a voltmeter reading in volts and multiplying by an ammeter reading in amps).</p>
-<p>In less favorable circumstances, you may have to use an oscilloscope to compare <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/voltage-current/&quot; target=&quot;_blank&quot;>voltage and current</a> waveforms, measuring <a href=&quot;https://www.allaboutcircuits.com/textbook/alternating-current/chpt-1/ac-phase/&quot; target=&quot;_blank&quot;>phase shift</a> in <em>degrees</em> and calculating power factor by the cosine of that phase shift.</p>
+<p>In less favorable circumstances, you may have to use an oscilloscope to compare voltage and current waveforms, measuring phase shift in <em>degrees</em> and calculating power factor by the cosine of that phase shift.</p>
 <p>Most likely, you will have access to a wattmeter for measuring true power, whose reading you can compare against a calculation of apparent power (from multiplying total voltage and total current measurements). From the values of true and apparent power, you can determine reactive power and power factor.</p>
 <h2>Example Problem</h2>
 <p>Let&rsquo;s do an example problem to see how this works: (Figure below)</p>
@@ -55,7 +55,7 @@
 
 <h2>How to Correct Power Factor with a Capacitor</h2>
 <p>If this load is an electric motor or most any other industrial AC load, it will have a lagging (inductive) power factor, which means that we&rsquo;ll have to correct for it with a <em>capacitor</em> of appropriate size, wired in parallel.</p>
-<p>Now that we know the amount of reactive power (1.754 kVAR), we can calculate the size of the <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-13/practical-considerations-capacitors/&quot; target=&quot;_blank&quot;>capacitor</a> needed to counteract its effects:</p>
+<p>Now that we know the amount of reactive power (1.754 kVAR), we can calculate the size of the capacitor needed to counteract its effects:</p>
 <p><img src=&quot;/uploads/articles/correct-power-factor-with-capacitor-equation.png&quot; /></p>
 <p>Rounding this answer off to 80 &micro;F, we can place that size of the capacitor in the circuit and calculate the results: (Figure below)</p>
 <p><img src=&quot;/uploads/articles/parallel-capacitor-corrects-lagging.png&quot; /></p>

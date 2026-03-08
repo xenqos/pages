@@ -1,14 +1,14 @@
 ###### 14. Magnetism and Electromagnetism
 
 # Mutual Inductance
-<p><a name="Mutual inductance"></a> <a name="Inductance, mutual"></a> If two coils of wire are brought into close proximity with each other so that the magnetic field from one links with the other, a voltage will be generated in the second coil as a result. This is called <em>mutual inductance</em>: when voltage impressed upon one coil induces a voltage in another.</p>
-<p>A device specifically designed to produce the effect of mutual inductance between two or more coils is called a <em><a href="https://www.allaboutcircuits.com/video-lectures/transformers-part-1/" target="_blank">transformer</a></em>.</p>
+<p>  If two coils of wire are brought into close proximity with each other so that the magnetic field from one links with the other, a voltage will be generated in the second coil as a result. This is called <em>mutual inductance</em>: when voltage impressed upon one coil induces a voltage in another.</p>
+<p>A device specifically designed to produce the effect of mutual inductance between two or more coils is called a <em>transformer</em>.</p>
 
 ^[108-01.jpg]
 
 <p>The device shown in the above photograph is a kind of transformer, with two concentric wire coils. It is actually intended as a precision standard unit for mutual inductance, but for the purposes of illustrating what the essence of a transformer is, it will suffice.</p>
 <p>The two wire coils can be distinguished from each other by color: the bulk of the tube&rsquo;s length is wrapped in green-insulated wire (the first coil) while the second coil (wire with bronze-colored insulation) stands in the middle of the tube&rsquo;s length. The wire ends run down to connection terminals at the bottom of the unit. Most transformer units are not built with their wire coils exposed like this.</p>
-<p>Because magnetically-induced voltage only happens when the magnetic field flux is <em>changing</em> in strength relative to the wire, mutual inductance between two coils can only happen with <a href="https://www.allaboutcircuits.com/video-lectures/generation-of-alternating-voltage/" target="_blank">alternating (changing&mdash;AC) voltage</a>, and not with direct (steady&mdash;DC) voltage.</p>
+<p>Because magnetically-induced voltage only happens when the magnetic field flux is <em>changing</em> in strength relative to the wire, mutual inductance between two coils can only happen with alternating (changing&mdash;AC) voltage, and not with direct (steady&mdash;DC) voltage.</p>
 <p>The only applications for mutual inductance in a DC system is where some means is available to switch power on and off to the coil (thus creating a <em>pulsing</em> DC voltage), the induced voltage peaking at every pulse.</p>
 <p>A very useful property of transformers is the ability to transform voltage and current levels according to the ratio of input and output coil turns. If the energized coil of a transformer is energized by an AC voltage, the amount of AC voltage induced in the unpowered coil will be equal to the input voltage multiplied by the ratio of output to input wire turns in the coils. Conversely, the current through the windings of the output coil compared to the input coil will follow the opposite ratio: if the voltage is increased from input coil to output coil, the current will be decreased by the same proportion.</p>
 

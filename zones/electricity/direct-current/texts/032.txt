@@ -3,10 +3,14 @@
 # Scientific Notation in SPICE
 <p>The SPICE circuit simulation computer program uses scientific notation to display its output information and can interpret both scientific notation and metric prefixes in the circuit description files. If you are going to be able to successfully interpret the SPICE analyses throughout this book, you must be able to understand the notation used to express variables of voltage, current, etc. in the program.</p>
 ## A Simple Circuit Simulation with SPICE
-<p>Let&rsquo;s start with a very simple circuit composed of one voltage source (a battery) and one <a href="https://www.allaboutcircuits.com/video-lectures/electronic-components-resistors/" target="_blank">resistor</a>:</p>
+<p>Let&rsquo;s start with a very simple circuit composed of one voltage source (a battery) and one resistor:</p>
+
 ^[032-01.jpg]
+
 <p>To simulate this circuit using SPICE, we first have to designate node numbers for all the distinct points in the circuit, then list the components along with their respective node numbers so the computer knows which component is connected to which, and how. For a circuit of this simplicity, the use of SPICE seems like overkill, but it serves the purpose of demonstrating the practical use of scientific notation:</p>
+
 ^[032-02.jpg]
+
 <p>Typing out a circuit description file, or <em>netlist</em>, for this circuit, we get this:</p>
 
 <pre>
@@ -20,18 +24,20 @@ simple circuit&#10; v1 1 0 dc 24 &#10; r1 1 0 5 &#10; .end&#10;</pre>
 node    voltage&#10; ( 1)    24.0000&#10; voltage source currents&#10; &#10; name    current&#10; v1    -4.800E+00&#10; &#10; total power dissipation    1.15E+02 watts&#10;</pre>
 
 <p>SPICE tells us that the voltage &ldquo;at&rdquo; node number 1 (actually, this means the voltage between nodes 1 and 0, node 0 being the default reference point for all voltage measurements) is equal to 24 volts. The current through battery &ldquo;v1&rdquo; is displayed as -4.800E+00 amps. This is SPICE&rsquo;s method of denoting scientific notation.</p>
-<p>What it&rsquo;s really saying is &ldquo;-4.800 x 10<sup>0</sup> amps,&rdquo; or simply -4.800 amps. The negative value for <a href="https://www.allaboutcircuits.com/video-lectures/basic-requirements-for-current/" target="_blank">current</a> here is due to a quirk in SPICE and does not indicate anything significant about the circuit itself. The &ldquo;total power dissipation&rdquo; is given to us as 1.15E+02 watts, which means &ldquo;1.15 x 10<sup>2</sup> watts,&rdquo; or 115 watts.</p>
-## &nbsp;
+<p>What it&rsquo;s really saying is &ldquo;-4.800 x 10<sup>0</sup> amps,&rdquo; or simply -4.800 amps. The negative value for current here is due to a quirk in SPICE and does not indicate anything significant about the circuit itself. The &ldquo;total power dissipation&rdquo; is given to us as 1.15E+02 watts, which means &ldquo;1.15 x 10<sup>2</sup> watts,&rdquo; or 115 watts.</p>
+
 ## Modifying the Original Example Circuit in SPICE
 
 <p>Let&rsquo;s modify our example circuit so that it has a 5 k&Omega; (5 kilo-ohm, or 5,000 ohm) resistor instead of a 5 &Omega; resistor and see what happens.</p>
+
 ^[032-03.jpg]
+
 <p>Once again is our circuit description file, or &ldquo;netlist:&rdquo;</p>
 
 <pre>
 simple circuit&#10; v1 1 0 dc 24&#10; r1 1 0 5k&#10; .end&#10;</pre>
 
-<p>The letter &ldquo;k&rdquo; following the number 5 on the resistor&rsquo;s line tells SPICE that it is a figure of 5 k&Omega;, not 5 &Omega;. Let&rsquo;s see what result we get when we run this through the <a href="https://www.allaboutcircuits.com/video-lectures/microprocessors-and-computers/" target="_blank">computer</a>:</p>
+<p>The letter &ldquo;k&rdquo; following the number 5 on the resistor&rsquo;s line tells SPICE that it is a figure of 5 k&Omega;, not 5 &Omega;. Let&rsquo;s see what result we get when we run this through the computer:</p>
 
 <pre>
 node    voltage&#10; ( 1)    24.0000&#10; voltage source currents&#10; &#10; name    current&#10; v1    -4.800E-03&#10; &#10; total power dissipation    1.15E-01 watts&#10;</pre>

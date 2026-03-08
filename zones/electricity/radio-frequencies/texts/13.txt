@@ -14,7 +14,7 @@
 <p>The important issue, of course, is not the origin of the specific value but rather the benefits of having this standardized impedance. Achieving a well-matched design is vastly simpler because manufacturers of ICs, fixed attenuators, antennas, and so forth can build their parts with this impedance in mind. Also, PCB layout becomes more straightforward because so many engineers have the same goal, namely, to design microstrips and striplines that have a characteristic impedance of 50 &Omega;.</p>
 <p><br />
 <img src="https://www.allaboutcircuits.com/uploads/articles/RFT_ch3_pg2_1_2.jpg" /></p>
-#### <em>According to </em><a href="http://www.analog.com/media/en/training-seminars/tutorials/MT-094.pdf" target="_blank"><em>this app note</em></a><em> from Analog Devices, you can create a 50 </em><em>&Omega; microstrip as follows: 1-ounce copper, 20-mil-wide trace, 10-mil separation between trace and ground plane (assuming FR-4 dielectric).</em>
+<em>According to </em><em>this app note</em><em> from Analog Devices, you can create a 50 </em><em>&Omega; microstrip as follows: 1-ounce copper, 20-mil-wide trace, 10-mil separation between trace and ground plane (assuming FR-4 dielectric).</em>
 
 <p>Before we move on, let&rsquo;s be clear that not every high-frequency system or component is designed for 50 &Omega;. Other values could be chosen, and in fact 75 &Omega; impedance is still common. The characteristic impedance of a coaxial cable is proportional to the natural log of the ratio of the outer diameter (D2) to the inner diameter (D1).</p>
 <p><br />
@@ -41,11 +41,11 @@
 
 <p>$$VSWR=\frac{1+\lvert\Gamma\rvert}{1-\lvert\Gamma\rvert}$$</p>
 
-<p>VSWR approaches impedance matching from the perspective of the resulting standing wave. It conveys the ratio of the highest standing-wave amplitude to the lowest standing-wave amplitude. <a href="https://www.youtube.com/watch?v=M1PgCOTDjvI" target="_blank">This video</a> can help you visualize the relationship between impedance mismatch and the amplitude characteristics of the standing wave, and the following diagram conveys standing-wave amplitude characteristics for three different reflection coefficients.</p>
+<p>VSWR approaches impedance matching from the perspective of the resulting standing wave. It conveys the ratio of the highest standing-wave amplitude to the lowest standing-wave amplitude. This video can help you visualize the relationship between impedance mismatch and the amplitude characteristics of the standing wave, and the following diagram conveys standing-wave amplitude characteristics for three different reflection coefficients.</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/RFT_ch3_pg4_4.JPG" /></p>
-#### <em>More impedance mismatch leads to a greater difference between the highest-amplitude and lowest-amplitude locations along the standing wave.</em>&nbsp;<em>Image used courtesy of&nbsp;the Interferometrist&nbsp;[<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a>]</em>
-#### &nbsp;
+<em>More impedance mismatch leads to a greater difference between the highest-amplitude and lowest-amplitude locations along the standing wave.</em>&nbsp;<em>Image used courtesy of&nbsp;the Interferometrist&nbsp;[CC BY-SA 4.0]</em>
+
 <p>VSWR is commonly expressed as a ratio. A perfect match would be 1:1, meaning that the peak amplitude of the signal is always the same (i.e., there is no standing wave). A ratio of 2:1 indicates that reflections have resulted in a standing wave with a maximum amplitude that is twice as large as its minimum amplitude.</p>
 
 ## Summary

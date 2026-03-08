@@ -1,30 +1,30 @@
 # Si Lab - Full-wave Bridge Rectifier With Output Filtering
 ## Project Overview
-<p>In this project, we will improve upon the previous&nbsp;<a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-5/full-wave-bridge-rectifier/" target="_blank">full-wave bridge rectifier circuit</a> by adding a <a href="https://eepower.com/capacitor-guide/" target="_blank">capacitor</a> at the output, as shown in Figure 1.</p>
+<p>In this project, we will improve upon the previous&nbsp;full-wave bridge rectifier circuit by adding a capacitor at the output, as shown in Figure 1.</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/rectifier-filter-circuit-schematic-diagram-1.jpg" /></p>
-#### <em><strong>Figure 1.</strong> Schematic diagram of a full-wave bridge rectifier circuit with capacitive filtering.</em>
+<em><strong>Figure 1.</strong> Schematic diagram of a full-wave bridge rectifier circuit with capacitive filtering.</em>
 
-<p>The capacitor will act as a simple <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-8/low-pass-filters/" target="_blank">low-pass filter</a> to smooth the output voltage, as shown in Figure 2.&nbsp;</p>
+<p>The capacitor will act as a simple low-pass filter to smooth the output voltage, as shown in Figure 2.&nbsp;</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/full-wave-rectified-DC-voltage.jpg" /></p>
-#### <em><strong>Figure 2.</strong> The effect of capacitor filtering on the full-wave bridge rectifier output.</em>
+<em><strong>Figure 2.</strong> The effect of capacitor filtering on the full-wave bridge rectifier output.</em>
 
-<p>This experiment involves constructing a <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-3/rectifier-circuits/" target="_blank">rectifier</a> and <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-8/what-is-a-filter/" target="_blank">filter</a> circuit for attachment to the <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-4/transformer-power-supply/" target="_blank">low-voltage AC power supply</a> constructed earlier. With this device, you will have a source of low-voltage DC power suitable as a replacement for a battery in battery-powered experiments.</p>
-<p>If desired, you can&nbsp;make this device its own self-contained 120 VAC/DC power supply. To do this, you would need to add all the componentry of the low-voltage AC supply to the AC input&nbsp;side of this circuit: a <a href="https://eepower.com/power-electronics-textbook/vol-i-electrical-power-systems-design/chapter-5-impedance-matching-and-power-transfer/understanding-electrical-transformers/" target="_blank">transformer</a>, power cord, and plug. Even if you don&rsquo;t choose to do this, I recommend using a metal box larger than necessary to provide room for additional voltage regulation circuitry you might choose to add to this project later.</p>
+<p>This experiment involves constructing a rectifier and filter circuit for attachment to the low-voltage AC power supply constructed earlier. With this device, you will have a source of low-voltage DC power suitable as a replacement for a battery in battery-powered experiments.</p>
+<p>If desired, you can&nbsp;make this device its own self-contained 120 VAC/DC power supply. To do this, you would need to add all the componentry of the low-voltage AC supply to the AC input&nbsp;side of this circuit: a transformer, power cord, and plug. Even if you don&rsquo;t choose to do this, I recommend using a metal box larger than necessary to provide room for additional voltage regulation circuitry you might choose to add to this project later.</p>
 
 ## Parts and Materials
 <ul>
 <li>Low-voltage AC power supply</li>
 <li>Bridge rectifier pack (with a recommended rating of 25 A and 50 V)</li>
-<li><a href="https://eepower.com/capacitor-guide/types/electrolytic-capacitor/" target="_blank">Electrolytic capacitor</a>, 1000 &micro;F, at least 25 VDC</li>
-<li>Four banana&nbsp;jack-style binding posts, or other terminal hardware, for connection to the <a href="https://eepower.com/resistor-guide/resistor-types/potentiometer/" target="_blank">potentiometer</a> circuit</li>
+<li>Electrolytic capacitor, 1000 &micro;F, at least 25 VDC</li>
+<li>Four banana&nbsp;jack-style binding posts, or other terminal hardware, for connection to the potentiometer circuit</li>
 <li>Metal box</li>
 <li>12 V&nbsp;light bulb, 25 W</li>
 <li>Lamp socket</li>
 </ul>
-<p>A bridge rectifier pack&nbsp;is highly recommended over constructing a bridge rectifier circuit from individual <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-3/introduction-to-diodes-and-rectifiers/" target="_blank">diodes</a> because such packs&nbsp;are made to bolt onto a metal heat sink. A metal box is recommended over a plastic box for its ability to function as a heat sink for the rectifier.</p>
-<p>A larger capacitor value is fine to use in this experiment so long as its working voltage is high enough. To be safe, choose a capacitor with a working voltage rating of at least twice the <a href="https://www.allaboutcircuits.com/technical-articles/how-standard-deviations-relates-rms-values/" target="_blank">root-mean-square (RMS)</a> AC voltage output of the low-voltage AC power supply.</p>
+<p>A bridge rectifier pack&nbsp;is highly recommended over constructing a bridge rectifier circuit from individual diodes because such packs&nbsp;are made to bolt onto a metal heat sink. A metal box is recommended over a plastic box for its ability to function as a heat sink for the rectifier.</p>
+<p>A larger capacitor value is fine to use in this experiment so long as its working voltage is high enough. To be safe, choose a capacitor with a working voltage rating of at least twice the root-mean-square (RMS) AC voltage output of the low-voltage AC power supply.</p>
 <p>High-wattage 12 V lamps may be purchased from a recreational vehicle (RV) and boating supply store. Common sizes are 25 and 50 W. This lamp will be used as a heavy&nbsp;load for the power supply.</p>
 
 ## Learning Objectives
@@ -37,7 +37,7 @@
 <p><strong>Step 1:</strong>&nbsp;Make the connections to the bridge rectifier, as illustrated in Figure 3.&nbsp;</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/rectifier-filter-circuit-illustration-1.jpg" /></p>
-#### <em><strong>Figure 3.</strong>&nbsp;Illustration of full-wave bridge rectifier circuit with output capacitor filtering.</em>
+<em><strong>Figure 3.</strong>&nbsp;Illustration of full-wave bridge rectifier circuit with output capacitor filtering.</em>
 
 <p>The bridge rectifier unit should be rated for a current at least as high as the transformer&rsquo;s secondary winding is rated for and for a voltage at least twice as high as the RMS voltage of the transformer&rsquo;s output (this allows for peak voltage, plus an additional safety margin).&nbsp;Rectifier units of this size are often equipped with quick-disconnect&nbsp;terminals. Complimentary quick-disconnect&nbsp;lugs are sold that crimp onto the bare ends of a wire.&nbsp;This is the preferred method of terminal connection.</p>
 <p>You may solder wires directly to the lugs of the rectifier, but I recommend against direct soldering to any semiconductor component for two reasons:</p>
@@ -46,7 +46,7 @@
 <li>Difficulty in replacing the component in the event of failure</li>
 </ul>
 <p>Semiconductor devices are more prone to failure than most of the components covered in these experiments thus far, and so if you have any intention of making a circuit permanent, you should build it to be maintained.</p>
-<p>Maintainable construction&nbsp;involves, among other things, making all delicate components replaceable.&nbsp;It also means making test points&nbsp;accessible to meter probes throughout the circuit so that <a href="https://www.allaboutcircuits.com/textbook/reference/chpt-8/general-troubleshooting-tips/" target="_blank">troubleshooting</a> may be executed with a minimum of inconvenience. Terminal strips inherently provide test points for taking voltage measurements, and they also allow for easy disconnection of wires without sacrificing connection durability.</p>
+<p>Maintainable construction&nbsp;involves, among other things, making all delicate components replaceable.&nbsp;It also means making test points&nbsp;accessible to meter probes throughout the circuit so that troubleshooting may be executed with a minimum of inconvenience. Terminal strips inherently provide test points for taking voltage measurements, and they also allow for easy disconnection of wires without sacrificing connection durability.</p>
 <p><strong>Step 2:&nbsp;</strong>Next, bolt the rectifier unit to the inside of the metal box. The box&rsquo;s surface area will act as a radiator, keeping the rectifier unit cool as it passes high currents.</p>
 <p>Any metal radiator surface designed to lower the operating temperature of an electronic component is called a heat sink. Semiconductor devices, in general, are prone to damage from overheating, so providing a path for heat transfer from the device(s) to the ambient air is important when the circuit in question may handle large amounts of power.</p>
 <p><strong>Step 3:&nbsp;</strong>A capacitor is included in the circuit to act as a filter to reduce ripple voltage. Make sure that you connect the capacitor properly across the DC output terminals of the rectifier so that the polarities match. Electrolytic capacitors are sensitive to damage by polarity reversal. In this circuit especially, where the internal resistance of the transformer and rectifier are low, and the short-circuit current consequently is high, the potential for damage is great.</p>
@@ -54,45 +54,45 @@
 <p><strong>Step 4:&nbsp;</strong>After the rectifier/filter circuit is built, connect it to the low-voltage AC power supply, as illustrated in Figure 4.</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/rectifier-filter-circuit-illustration-2.jpg" /></p>
-#### <em><strong>Figure 4.</strong>&nbsp;Connecting the low-voltage AC supply to the full-wave bridge rectifier circuit with output capacitor filtering.</em>
+<em><strong>Figure 4.</strong>&nbsp;Connecting the low-voltage AC supply to the full-wave bridge rectifier circuit with output capacitor filtering.</em>
 
 ### Testing the Rectifier Operation
-<p><strong>Step 5: </strong>Measure the AC voltage output by the low-voltage power supply. Your meter should indicate approximately 6 V if the circuit is connected as shown.&nbsp;This voltage measurement is the <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-1/measurements-ac-magnitude/" target="_blank">RMS voltage</a> of the AC power supply.</p>
-<p><strong>Step 6:&nbsp;</strong>Now, switch your <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-8/multimeters/" target="_blank">multimeter</a> to the DC voltage function and measure the DC voltage output by the rectifier/filter circuit.&nbsp;It should read substantially higher than the RMS voltage of the AC input measured before. The filtering action of the capacitor provides a DC output voltage equal to the peak AC voltage, thus the greater voltage indication.</p>
+<p><strong>Step 5: </strong>Measure the AC voltage output by the low-voltage power supply. Your meter should indicate approximately 6 V if the circuit is connected as shown.&nbsp;This voltage measurement is the RMS voltage of the AC power supply.</p>
+<p><strong>Step 6:&nbsp;</strong>Now, switch your multimeter to the DC voltage function and measure the DC voltage output by the rectifier/filter circuit.&nbsp;It should read substantially higher than the RMS voltage of the AC input measured before. The filtering action of the capacitor provides a DC output voltage equal to the peak AC voltage, thus the greater voltage indication.</p>
 <p><strong>Step 7:&nbsp;</strong>Measure the AC ripple voltage magnitude on the DC output with a digital voltmeter set to AC volts (or AC millivolts). You should notice a much smaller ripple voltage in this circuit than what was measured in any of the unfiltered rectifier circuits previously built.</p>
 <p><strong>Step 8 (Optional):&nbsp;</strong>Feel free to use your audio detector to listen&nbsp;to the AC ripple voltage output by the rectifier/filter unit. As usual, connect a small coupling&nbsp;capacitor in series with the detector so that it does not respond to the DC voltage but only the AC ripple.&nbsp;Very little sound should be heard.</p>
 <p><strong>Step 9:&nbsp;</strong>After taking the unloaded AC ripple voltage measurements, connect the 25 W light bulb to the output of the rectifier/filter circuit, as shown in Figure 5.</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/rectifier-filter-circuit-illustration-3.jpg" /></p>
-#### <em><strong>Figure 5.</strong>&nbsp;Powering a 25 W light bulb from the DC output of the full-wave bridge rectifier circuit with output capacitor filtering.</em>
+<em><strong>Figure 5.</strong>&nbsp;Powering a 25 W light bulb from the DC output of the full-wave bridge rectifier circuit with output capacitor filtering.</em>
 
 <p><strong>Step 10:&nbsp;</strong>Re-measure the ripple voltage present between the rectifier/filter unit&rsquo;s DC out&nbsp;terminals. With a heavy load, the filter capacitor discharges between rectified voltage peaks, resulting in a greater ripple than before (Figure 6).</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/full-wave-filtered-DC-voltage-under-heavy-load.jpg" /></p>
-#### <em><strong>Figure 6.</strong>&nbsp;Powering a heavy load increases ripple at the DC output.</em>
+<em><strong>Figure 6.</strong>&nbsp;Powering a heavy load increases ripple at the DC output.</em>
 
 ### Reducing Output Ripple
 <p><strong>Step 11 (Optional):&nbsp;</strong>If less ripple is desired under heavy-load conditions, a larger capacitor may be used, or a more complex filter circuit may be built using two capacitors and an inductor, as illustrated in Figure 7.</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/rectifier-filter-circuit-schematic-diagram-2.jpg" /></p>
-#### <em><strong>Figure 7.</strong> Schematic diagram of a full-wave bridge rectifier circuit with an LC output filter.</em>
+<em><strong>Figure 7.</strong> Schematic diagram of a full-wave bridge rectifier circuit with an LC output filter.</em>
 
-<p>If you choose to build such a filter circuit, be sure to use an iron-core inductor for maximum <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-5/review-of-r-x-and-z/" target="_blank">inductance</a> and one with thick enough wire to safely handle the full-rated current of the power supply. <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-15/practical-considerations-inductors/" target="_blank">Inductors</a> used for the purpose of filtering are sometimes referred to as chokes because they &ldquo;choke&rdquo; AC ripple voltage from getting to the load.</p>
+<p>If you choose to build such a filter circuit, be sure to use an iron-core inductor for maximum inductance and one with thick enough wire to safely handle the full-rated current of the power supply. Inductors used for the purpose of filtering are sometimes referred to as chokes because they &ldquo;choke&rdquo; AC ripple voltage from getting to the load.</p>
 <p>If a suitable choke cannot be obtained, the secondary winding of a step-down power transformer, like the type used to step 120 VAC down to 12 or 6 VAC in the low-voltage power supply, may be used. Leave the primary (120 volts) winding open, as illustrated in Figure 8.</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/rectifier-filter-circuit-schematic-diagram-3.jpg" /></p>
-#### <em><strong>Figure 8.</strong> Using the secondary winding of a step-down transformer as an inductor.</em>
+<em><strong>Figure 8.</strong> Using the secondary winding of a step-down transformer as an inductor.</em>
 
 ## SPICE Simulation of a Full-wave Bridge Rectifier With Capacitor Output Filter
 <p>Figure 9 is an illustration of the full-wave bridge rectifier with a capacitor across the output for filtering.&nbsp;</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/rectifier-filter-circuit-schematic-with-spice-node-numbers.jpg" /></p>
-#### <em><strong>Figure 9.</strong>&nbsp;Full-wave bridge rectifier circuit schematic for SPICE simulation.</em>
+<em><strong>Figure 9.</strong>&nbsp;Full-wave bridge rectifier circuit schematic for SPICE simulation.</em>
 
-<p>A load <a href="https://eepower.com/resistor-guide/" target="_blank">resistor</a> and numbered nodes have been added for the simulation.</p>
+<p>A load resistor and numbered nodes have been added for the simulation.</p>
 
 <p>Netlist (make a text file containing the following text, verbatim):</p>
 <pre>
 Fullwave bridge rectifier&#10;v1 1 0 sin(0 8.485 60 0 0) &#10;rload 2 3 10k &#10;c1 2 3 1000u ic=0 &#10;d1 3 1 mod1 &#10;d2 1 2 mod1 &#10;d3 3 0 mod1 &#10;d4 0 2 mod1 &#10;.model mod1 d &#10;.tran .5m 25m &#10;.plot tran v(1,0) v(2,3) &#10;.end </pre>
 
-<p>You may decrease the value of R<sub>load</sub> in the simulation from 10 k&Omega; to some lower value to explore the effects of loading on ripple voltage. With a 10 k&Omega; load resistor, the ripple is undetectable on the waveform plotted by <a href="https://www.allaboutcircuits.com/textbook/reference/chpt-7/introduction-to-spice/" target="_blank">SPICE</a>.</p>
+<p>You may decrease the value of R<sub>load</sub> in the simulation from 10 k&Omega; to some lower value to explore the effects of loading on ripple voltage. With a 10 k&Omega; load resistor, the ripple is undetectable on the waveform plotted by SPICE.</p>

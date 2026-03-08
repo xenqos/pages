@@ -1,5 +1,5 @@
 # Selsyn (Synchro) Motors
-<p>Normally, the rotor windings of a <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-13/wound-rotor-induction-motors/" target="_blank">wound rotor induction motor</a> are shorted out after starting. During starting, <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/resistance/" target="_blank">resistance</a> may be placed in series with the rotor windings to limit starting current. If these windings are connected to a common starting resistance, the two rotors will remain synchronized during starting.</p>
+<p>Normally, the rotor windings of a wound rotor induction motor are shorted out after starting. During starting, resistance may be placed in series with the rotor windings to limit starting current. If these windings are connected to a common starting resistance, the two rotors will remain synchronized during starting.</p>
 <p>This is useful for printing presses and drawbridges, where two motors need to be synchronized during starting. Once started, and the rotors are shorted, the synchronizing torque is absent. The higher the resistance during starting, the higher the synchronizing torque for a pair of motors.</p>
 <p>If the starting resistors are removed, but the rotors still paralleled, there is no starting torque. However, there is a substantial synchronizing torque. This is called a <em>selsyn</em>, which is an abbreviation for &ldquo;self synchronous&rdquo;.</p>
 
@@ -12,7 +12,7 @@
 <p><img src="/uploads/articles/selsyns-without-starting-resistance.jpg" /></p>
 <p><em>Selsyns without starting resistance</em></p>
 
-<p>Instrumentation selsyns have no use for starting <a href="https://www.allaboutcircuits.com/video-lectures/electronic-components-resistors/" target="_blank">resistors</a> (figure above). They are not intended to be self-rotating. Since the rotors are not shorted out nor resistor loaded, no starting torque is developed.</p>
+<p>Instrumentation selsyns have no use for starting resistors (figure above). They are not intended to be self-rotating. Since the rotors are not shorted out nor resistor loaded, no starting torque is developed.</p>
 <p>However, manual rotation of one shaft will produce an unbalance in the rotor currents until the parallel unit&rsquo;s shaft follows. Note that a common source of three-phase power is applied to both stators. Though we show three-phase rotors above, a single-phase powered rotor is sufficient as shown in the figure below.</p>
 ## Transmitter - Receiver
 <p>Small instrumentation selsyns, also known as <em>synchros</em>, uses single-phase parallel, AC energized rotors, retaining the 3-phase paralleled stators, which are not externally energized. Shown below is the synchros function as rotary transformers.</p>
@@ -105,7 +105,7 @@
 <p><img src="/uploads/articles/scott-t-converts-3-φ-to-2-φ-enabling-tx.jpg" /></p>
 <p><em>Scott-T converts 3-&phi; to 2-&phi; enabling TX to perform the resolver function</em></p>
 
-<p>It is possible to derive resolver-like quadrature angular components from a synchro transmitter by using a <em>Scott-T</em> transformer. The three TX outputs, 3-phases, are processed by a <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-9/special-transformers-applications/" target="_blank"><em>Scott-T</em> transformer</a> into a pair of quadrature components. There is also a linear version of the resolver known as an <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-12/ac-instrumentation-transducers/" target="_blank">inductosyn</a>. The rotary version of the <em>inductosyn</em> has a finer resolution than a resolver.</p>
+<p>It is possible to derive resolver-like quadrature angular components from a synchro transmitter by using a <em>Scott-T</em> transformer. The three TX outputs, 3-phases, are processed by a <em>Scott-T</em> transformer into a pair of quadrature components. There is also a linear version of the resolver known as an inductosyn. The rotary version of the <em>inductosyn</em> has a finer resolution than a resolver.</p>
 
 <p><strong>Summary: Selsyn (synchro) motors</strong></p>
 <ul>

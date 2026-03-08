@@ -22,11 +22,12 @@
 <p>In electric circuits, power is a function of both voltage and current. Not surprisingly, this relationship bears a striking resemblance to the &ldquo;proportional&rdquo; horsepower formula above:</p>
 
 ^[010-06.png]
-<p><a name="Watt"></a><a name="Unit, watt"></a><a name="P, symbol for power"></a></p>
+
+<p></p>
 
 <p>In this case, however, power (P) is exactly equal to current (I) multiplied by voltage (E), rather than merely being proportional to IE. When using this formula, the unit of measurement for power is the <em>watt</em>, abbreviated with the letter &ldquo;W.&rdquo;</p>
 <p>It must be understood that neither voltage nor current by themselves constitute power. Rather, power is the combination of both voltage <em>and</em> current in a circuit. Remember that voltage is the specific work (or potential energy) per unit charge, while current is the rate at which electric charges move through a conductor.</p>
-<p>Voltage (specific work) is analogous to the work done in lifting a weight against the pull of gravity. <a href="https://www.allaboutcircuits.com/video-lectures/basic-requirements-for-current/" target="_blank">Current </a>(rate) is analogous to the speed at which that weight is lifted. Together as a product (multiplication), voltage (work) and current (rate) constitute power.</p>
+<p>Voltage (specific work) is analogous to the work done in lifting a weight against the pull of gravity. Current (rate) is analogous to the speed at which that weight is lifted. Together as a product (multiplication), voltage (work) and current (rate) constitute power.</p>
 <p>Just as in the case of the diesel tractor engine and the motorcycle engine, a circuit with high voltage and low current may be dissipating the same amount of power as a circuit with low voltage and high current. Neither the amount of voltage alone nor the amount of current alone indicates the amount of power in an electric circuit.</p>
 ## Power in an Open/Short Circuit
 <p>In an open circuit, where voltage is present between the terminals of the source and there is zero current, there is <em>zero</em> power dissipated, no matter how great that voltage may be. Since P=IE and I=0 and anything multiplied by zero is zero, the power dissipated in any open circuit must be zero.</p>

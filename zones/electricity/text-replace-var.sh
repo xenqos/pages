@@ -43,6 +43,26 @@ ext='*.txt'
 #regex="s~<h4>(.*?)</h4>~### \1~sg"
 #regex="s~<h5>(.*?)</h5>~#### \1~sg"
 
+#regex="s~#### <em>~<em>~sg"
+#regex="s~### <em>~<em>~sg"
+#regex="s~## <em>~<em>~sg"
+#regex="s~# <em>~<em>~sg"
+
+#regex="s~###### &nbsp;~~sg"
+#regex="s~##### &nbsp;~~sg"
+#regex="s~#### &nbsp;~~sg"
+#regex="s~### &nbsp;~~sg"
+#regex="s~## &nbsp;~~sg"
+#regex="s~# &nbsp;~~sg"
+
+#regex="s~</a>~~sg"
+#regex="s~<a(.*?)>~~sg"
+
+#regex="s~\^\[(.*?)\]~\n\n\^\[\1\]\n~sg"
+#regex="s~\n\n\n\^\[(.*?)\]~\n\n\^\[\1\]~sg"
+
+regex="s~\^\[(.*?)\]\n\n\n~\^\[\1\]\n\n~sg"
+
 #-------------------------------------------------------------------------------
 
 # cd ${dir}

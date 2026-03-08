@@ -1,18 +1,18 @@
 ###### 02. Ohm's Law
 
 # Computer Simulation of Electric Circuits
-<p><a href="https://www.allaboutcircuits.com/video-lectures/representative-system-computer-hardware/" target="_blank">Computers</a> can be powerful tools if used properly, especially in the realms of science and engineering. Software exists for the <a href="https://www.allaboutcircuits.com/video-lectures/circuit-simulation/" target="_blank">simulation of electric circuits</a> by computer, and these programs can be very useful in helping circuit designers test ideas before actually building real circuits, saving much time and money.</p>
+<p>Computers can be powerful tools if used properly, especially in the realms of science and engineering. Software exists for the simulation of electric circuits by computer, and these programs can be very useful in helping circuit designers test ideas before actually building real circuits, saving much time and money.</p>
 <p>These same programs can be fantastic aids to the beginning student of electronics, allowing the exploration of ideas quickly and easily with no assembly of real circuits required. Of course, there is no substitute for actually building and testing real circuits, but computer simulations certainly assist in the learning process by allowing the student to experiment with changes and see the effects they have on circuits.</p>
 <p>Throughout this book, I&rsquo;ll be incorporating computer printouts from circuit simulation frequently in order to illustrate important concepts. By observing the results of a computer simulation, a student can gain an intuitive grasp of circuit behavior without the intimidation of abstract mathematical analysis.</p>
 ## Circuit Simulation with SPICE
-<p>To simulate circuits on computer, I make use of a particular program called <a href="https://www.allaboutcircuits.com/textbook/reference/chpt-7/fundamentals-spice-programming/" target="_blank">SPICE</a>, which works by describing a circuit to the computer by means of a listing of text. In essence, this listing is a kind of computer program in itself, and must adhere to the syntactical rules of the SPICE language.</p>
+<p>To simulate circuits on computer, I make use of a particular program called SPICE, which works by describing a circuit to the computer by means of a listing of text. In essence, this listing is a kind of computer program in itself, and must adhere to the syntactical rules of the SPICE language.</p>
 <p>The computer is then used to process, or &ldquo;run,&rdquo; the SPICE program, which interprets the text listing describing the circuit and outputs the results of its detailed mathematical analysis, also in text form. Many details of using SPICE are described in volume 5 (&ldquo;Reference&rdquo;) of this book series for those wanting more information. Here, I&rsquo;ll just introduce the basic concepts and then apply SPICE to the analysis of these simple circuits we&rsquo;ve been reading about.</p>
 <p>First, we need to have SPICE installed on our computer. As a free program, it is commonly available on the internet for download, and in formats appropriate for many different operating systems. In this book, I use one of the earlier versions of SPICE: version 2G6, for its simplicity of use.</p>
 <p>Next, we need a circuit for SPICE to analyze. Let&rsquo;s try one of the circuits illustrated earlier in the chapter. Here is its schematic diagram:</p>
 
 ^[016-01.jpg]
 
-<p>This simple circuit consists of a battery and a <a href="https://www.allaboutcircuits.com/video-lectures/electronic-components-resistors/" target="_blank">resistor</a> connected directly together. We know the voltage of the battery (10 volts) and the resistance of the resistor (5 &Omega;), but nothing else about the circuit. If we describe this circuit to SPICE, it should be able to tell us (at the very least), how much current we have in the circuit by using <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/voltage-current-resistance-relate/" target="_blank">Ohm&rsquo;s Law</a> (I=E/R).</p>
+<p>This simple circuit consists of a battery and a resistor connected directly together. We know the voltage of the battery (10 volts) and the resistance of the resistor (5 &Omega;), but nothing else about the circuit. If we describe this circuit to SPICE, it should be able to tell us (at the very least), how much current we have in the circuit by using Ohm&rsquo;s Law (I=E/R).</p>
 ### SPICE is a Text-Based Program
 <p>SPICE cannot directly understand a schematic diagram or any other form of graphical description. SPICE is a text-based computer program, and demands that a circuit be described in terms of its constituent components and connection points. Each unique connection point in a circuit is described for SPICE by a &ldquo;node&rdquo; number. Points that are electrically common to each other in the circuit to be simulated are designated as such by sharing the same number.</p>
 <p>It might be helpful to think of these numbers as &ldquo;wire&rdquo; numbers rather than &ldquo;node&rdquo; numbers, following the definition given in the previous section. This is how the computer knows what&rsquo;s connected to what: by the sharing of common wire, or node, numbers. In our example circuit, we only have two &ldquo;nodes,&rdquo; the top wire and the bottom wire. SPICE demands there be a node 0 somewhere in the circuit, so we&rsquo;ll label our wires 0 and 1:</p>
@@ -40,7 +40,7 @@
 <p>If we add an .end statement to this collection of SPICE commands to indicate the end of the circuit description, we will have all the information SPICE needs, collected in one file and ready for processing. This circuit description, comprised of lines of text in a computer file, is technically known as a <em>netlist</em>, or <em>deck</em>:</p>
 
 ^[016-06.png]
-### &nbsp;
+
 ### Moving Text Editor Files into SPICE
 <p>Once we have finished typing all the necessary SPICE commands, we need to &ldquo;save&rdquo; them to a file on the computer&rsquo;s hard disk so that SPICE has something to reference to when invoked. Since this is my first SPICE netlist, I&rsquo;ll save it under the filename &ldquo;circuit1.cir&rdquo; (the actual name being arbitrary).</p>
 <p>You may elect to name your first SPICE netlist something completely different, just as long as you don&rsquo;t violate any filename rules for your operating system, such as using no more than 8+3 characters (eight characters in the name, and three characters in the extension: 12345678.123) in DOS.</p>
@@ -87,14 +87,14 @@ my first circuit &#10; v 1 0 dc 10 &#10; r 1 0 5 &#10; .end&#10; node voltage&#1
 <p>This way, we will have <em>both</em> versions of the circuit simulation stored on the hard drive of our computer for future use. The following text listing is the output of SPICE for this modified netlist, formatted as plain text rather than as a graphic image of my computer screen:</p>
 <pre>
 second example circuit &#10; v 1 0 dc 30&#10; r 1 0 5&#10; .end&#10; node voltage&#10; ( 1) 30.0000&#10; voltage source currents&#10; name current&#10; v -6.000E+00&#10; total power dissipation 1.80E+02 watts&#10;</pre>
-<p>Just as we expected, the current tripled with the voltage increase. <a href="https://www.allaboutcircuits.com/video-lectures/basic-requirements-for-current/" target="_blank">Current</a> used to be 2 amps, but now it has increased to 6 amps (-6.000 x 100). Note also how the total power dissipation in the circuit has increased. It was 20 watts before, but now is 180 watts (1.8 x 102).</p>
+<p>Just as we expected, the current tripled with the voltage increase. Current used to be 2 amps, but now it has increased to 6 amps (-6.000 x 100). Note also how the total power dissipation in the circuit has increased. It was 20 watts before, but now is 180 watts (1.8 x 102).</p>
 <p>Recalling that power is related to the square of the voltage (Joule&rsquo;s Law: P=E2/R), this makes sense. If we triple the circuit voltage, the power should increase by a factor of nine (32 = 9). Nine times 20 is indeed 180, so SPICE&rsquo;s output does indeed correlate with what we know about power in electric circuits.</p>
 ### Creating Comments in SPICE
 <p>If we want to see how this simple circuit would respond over a wide range of battery voltages, we can invoke some of the more advanced options within SPICE. Here, I&rsquo;ll use the &ldquo;.dc&rdquo; analysis option to vary the battery voltage from 0 to 100 volts in 5 volt increments, printing out the circuit voltage and current at every step.</p>
 <p>The lines in the SPICE netlist beginning with a star symbol (&rdquo;*&rdquo;) are <em>comments</em>. That is, they don&rsquo;t tell the computer to do anything relating to circuit analysis, but merely serve as notes for any human being reading the netlist text.</p>
 <pre>
 third example circuit&#10; v 1 0&#10; r 1 0 5&#10; *the ".dc" statement tells spice to sweep the "v" supply&#10; *voltage from 0 to 100 volts in 5 volt steps.&#10; .dc v 0 100 5&#10; .print dc v(1) i(v)&#10; .end&#10;</pre>
-### &nbsp;
+
 ### Print and Plot Commands
 <p>The .print command in this SPICE netlist instructs SPICE to print columns of numbers corresponding to each step in the analysis:</p>
 <pre>

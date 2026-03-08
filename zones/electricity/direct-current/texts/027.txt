@@ -6,7 +6,7 @@
 <p>In many disciplines of science and engineering, very large and very small numerical quantities must be managed. Some of these quantities are mind-boggling in their size, either extremely small or extremely large. Take for example the mass of a proton, one of the constituent particles of an atom&rsquo;s nucleus:</p>
 <p><em>Proton mass = 0.00000000000000000000000167 grams</em></p>
 
-<p>Or, consider the number of electrons passing by a point in a circuit every second with a steady <a href="https://www.allaboutcircuits.com/video-lectures/basic-requirements-for-current/" target="_blank">electric current</a> of 1 amp:</p>
+<p>Or, consider the number of electrons passing by a point in a circuit every second with a steady electric current of 1 amp:</p>
 <p><em>1 amp = 6,250,000,000,000,000,000 electrons per second</em></p>
 
 <p>A lot of zeros, isn&rsquo;t it? Obviously, it can get quite confusing to have to handle so many zero digits in numbers such as this, even with the help of calculators and computers.</p>

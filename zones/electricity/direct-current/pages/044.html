@@ -41,14 +41,19 @@
 <h2>Demonstrating Kirchhoff&rsquo;s Voltage Law in a Series Circuit</h2>
 <p>Let&rsquo;s take another look at our example series circuit, this time numbering the points in the circuit for voltage reference:</p>
 <a target='_blank' href='../images/044-01.jpg'><img class='clImageThumb' src='../images/044-01.jpg'></a><br>
+
 <p>If we were to connect a voltmeter between points 2 and 1, red test lead to point 2 and the black test lead to point 1, the meter would register +45 volts. Typically the &ldquo;+&rdquo; sign is not shown but rather implied, for positive readings in digital meter displays. However, for this lesson, the polarity of the voltage reading is very important and so I will show positive numbers explicitly:</p>
 <a target='_blank' href='../images/044-02.png'><img class='clImageThumb' src='../images/044-02.png'></a><br>
+
 <p>When a voltage is specified with a double subscript (the characters &ldquo;2-1&rdquo; in the notation &ldquo;E<sub>2-1</sub>&rdquo;), it means the voltage at the first point (2) as measured in reference to the second point (1). A voltage specified as &ldquo;E<sub>cd</sub>&rdquo; would mean the voltage as indicated by a digital meter with the red test lead on point &ldquo;c&rdquo; and the black test lead on point &ldquo;d&rdquo;: the voltage at &ldquo;c&rdquo; in reference to &ldquo;d&rdquo;.</p>
 <a target='_blank' href='../images/044-03.jpg'><img class='clImageThumb' src='../images/044-03.jpg'></a><br>
-<p>If we were to take that same voltmeter and measure the voltage drop across each <a href=&quot;https://www.allaboutcircuits.com/video-lectures/electronic-components-resistors/&quot; target=&quot;_blank&quot;>resistor</a>, stepping around the circuit in a clockwise direction with the red test lead of our meter on the point ahead and the black test lead on the point behind, we would obtain the following readings:</p>
+
+<p>If we were to take that same voltmeter and measure the voltage drop across each resistor, stepping around the circuit in a clockwise direction with the red test lead of our meter on the point ahead and the black test lead on the point behind, we would obtain the following readings:</p>
 <a target='_blank' href='../images/044-04.png'><img class='clImageThumb' src='../images/044-04.png'></a><br>
+
 <a target='_blank' href='../images/044-05.jpg'><img class='clImageThumb' src='../images/044-05.jpg'></a><br>
-<p>We should already be familiar with the general principle for <a href=&quot;https://www.allaboutcircuits.com/video-lectures/series-circuits-part-1/&quot; target=&quot;_blank&quot;>series circuits</a> stating that individual voltage drops add up to the total applied voltage, but measuring voltage drops in this manner and paying attention to the polarity (mathematical sign) of the readings reveals another facet of this principle: that the voltages measured as such all add up to zero:</p>
+
+<p>We should already be familiar with the general principle for series circuits stating that individual voltage drops add up to the total applied voltage, but measuring voltage drops in this manner and paying attention to the polarity (mathematical sign) of the readings reveals another facet of this principle: that the voltages measured as such all add up to zero:</p>
 <a target='_blank' href='../images/044-06.png'><img class='clImageThumb' src='../images/044-06.png'></a><br>
 
 <p>In the above example, the loop was formed by the following points in this order: 1-2-3-4-1. It doesn&rsquo;t matter which point we start at or which direction we proceed in tracing the loop; the voltage sum will still equal zero. To demonstrate, we can tally up the voltages in loop 3-2-1-4-3 of the same circuit:</p>
@@ -79,12 +84,13 @@
 <h2>The Validity of Kirchhoff&rsquo;s Voltage Law, Regardless of Circuit Topology</h2>
 <p>The fact that this circuit is parallel instead of series has nothing to do with the validity of Kirchhoff&rsquo;s Voltage Law. For that matter, the circuit could be a &ldquo;black box&rdquo;&mdash;its component configuration completely hidden from our view, with only a set of exposed terminals for us to measure the voltage between&mdash;and KVL would still hold true:</p>
 <a target='_blank' href='../images/044-13.jpg'><img class='clImageThumb' src='../images/044-13.jpg'></a><br>
+
 <p>Try any order of steps from any terminal in the above diagram, stepping around back to the original terminal, and you&rsquo;ll find that the algebraic sum of the voltages <em>always</em> equals zero.</p>
 <p>Furthermore, the &ldquo;loop&rdquo; we trace for KVL doesn&rsquo;t even have to be a real current path in the closed-circuit sense of the word. All we have to do to comply with KVL is to begin and end at the same point in the circuit, tallying voltage drops and polarities as we go between the next and the last point. Consider this absurd example, tracing &ldquo;loop&rdquo; 2-3-6-3-2 in the same parallel resistor circuit:</p>
 <a target='_blank' href='../images/044-14.jpg'><img class='clImageThumb' src='../images/044-14.jpg'></a><br>
 
-<a target='_blank' href='../images/044-15.png'><img class='clImageThumb' src='../images/044-15.png'></a>
-<h3>&nbsp;</h3>
+<a target='_blank' href='../images/044-15.png'><img class='clImageThumb' src='../images/044-15.png'></a><br>
+
 <h3>Using Kirchhoff&rsquo;s Voltage Law in a Complex Circuit</h3>
 <p>KVL can be used to determine an unknown voltage in a complex circuit, where all other voltages around a particular &ldquo;loop&rdquo; are known. Take the following complex circuit (actually two series circuits joined by a single wire at the bottom) as an example:</p>
 <a target='_blank' href='../images/044-16.jpg'><img class='clImageThumb' src='../images/044-16.jpg'></a><br>

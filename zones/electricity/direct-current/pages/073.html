@@ -34,44 +34,49 @@
 <h6>10. DC Network Analysis</h6>
 
 <h1>Mesh Current Method (Loop Current Method)</h1>
-<a target='_blank' href='../images/073-01.jpg'><img class='clImageThumb' src='../images/073-01.jpg'></a>
+
+<a target='_blank' href='../images/073-01.jpg'><img class='clImageThumb' src='../images/073-01.jpg'></a><br>
+
 <h3 class=&quot;text-lg lg:text-2xl font-bold mb-3&quot;>What is the Mesh Current Method for Network Analysis?</h3>
 <p><p>The mesh current method is a network analysis technique where mesh (or loop) current directions are assigned arbitrarily, and then Kirchhoff&rsquo;s voltage law (KVL) and Ohm&rsquo;s law are applied systematically to solve for the unknown currents and voltages.</p></p>
-<p>This page provides a step-by-step introduction to using the mesh current method (also known as the loop current method) for analyzing electrical circuits. The mesh current method uses simultaneous equations, <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-6/kirchhoffs-voltage-law-kvl/&quot; target=&quot;_blank&quot;>Kirchhoff&rsquo;s voltage law (KVL)</a>, and <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/voltage-current-resistance-relate/&quot; target=&quot;_blank&quot;>Ohm&rsquo;s law</a> to determine unknown <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/voltage-current/&quot; target=&quot;_blank&quot;>currents</a> in a network.</p>
-<p>The mesh current method is quite similar to the branch current method. However, it does not use <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-6/kirchhoffs-current-law-kcl/&quot; target=&quot;_blank&quot;>Kirchhoff&rsquo;s current law (KCL)</a>, and it is usually able to solve a circuit with fewer unknown variables and fewer simultaneous equations.</p>
+<p>This page provides a step-by-step introduction to using the mesh current method (also known as the loop current method) for analyzing electrical circuits. The mesh current method uses simultaneous equations, Kirchhoff&rsquo;s voltage law (KVL), and Ohm&rsquo;s law to determine unknown currents in a network.</p>
+<p>The mesh current method is quite similar to the branch current method. However, it does not use Kirchhoff&rsquo;s current law (KCL), and it is usually able to solve a circuit with fewer unknown variables and fewer simultaneous equations.</p>
 
 <h2>How to Use the Mesh Current Method</h2>
-<p>Diving into the mesh current method, it&rsquo;s important to note that we&rsquo;ll be using the same example circuit (Figure 1) that we&rsquo;ve been using to introduce other <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-10/what-is-network-analysis/&quot; target=&quot;_blank&quot;>network analysis methods</a>:</p>
+<p>Diving into the mesh current method, it&rsquo;s important to note that we&rsquo;ll be using the same example circuit (Figure 1) that we&rsquo;ve been using to introduce other network analysis methods:</p>
 <ul>
-<li><a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-10/branch-current-method/&quot; target=&quot;_blank&quot;>Branch current</a></li>
-<li><a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-10/superposition-theorem/&quot; target=&quot;_blank&quot;>Superposition theorem</a></li>
-<li><a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-10/thevenins-theorem/&quot; target=&quot;_blank&quot;>Thevenin&rsquo;s theorem</a></li>
-<li><a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-10/nortons-theorem/&quot; target=&quot;_blank&quot;>Norton&rsquo;s theorem</a></li>
-<li><a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-10/millmans-theorem/&quot; target=&quot;_blank&quot;>Millman&rsquo;s theorem</a></li>
+<li>Branch current</li>
+<li>Superposition theorem</li>
+<li>Thevenin&rsquo;s theorem</li>
+<li>Norton&rsquo;s theorem</li>
+<li>Millman&rsquo;s theorem</li>
 </ul>
 
-<a target='_blank' href='../images/073-02.jpg'><img class='clImageThumb' src='../images/073-02.jpg'></a>
-<h4><em><strong>Figure 1.</strong> Circuit schematic for explaining the mesh current method.</em></h4>
+<a target='_blank' href='../images/073-02.jpg'><img class='clImageThumb' src='../images/073-02.jpg'></a><br>
+
+<em><strong>Figure 1.</strong> Circuit schematic for explaining the mesh current method.</em><br>
 
 <h3>Step 1: Identify and Label the Current Loops</h3>
 <p>The first step in the mesh current method is identifying and labeling the current &ldquo;loops&rdquo; within the circuit. To do this, we must find at least one loop current passing through every component in the circuit.&nbsp;</p>
 <p>In our example circuit (Figure 2), the loop formed by B<sub>1</sub>, R<sub>1</sub>, and R<sub>2</sub> will be the first loop, while the loop formed by B<sub>2</sub>, R<sub>2</sub>, and R<sub>3</sub> will be the second.</p>
-<a target='_blank' href='../images/073-03.jpg'><img class='clImageThumb' src='../images/073-03.jpg'></a>
-<h4><em><strong>Figure 2.</strong>&nbsp;Identify and label the current loops.</em></h4>
+<a target='_blank' href='../images/073-03.jpg'><img class='clImageThumb' src='../images/073-03.jpg'></a><br>
 
+<em><strong>Figure 2.</strong>&nbsp;Identify and label the current loops.</em><br>
+<br>
 <p>The strangest part of the mesh current method is envisioning circulating currents in each of the loops. In fact, this method gets its name from the idea of these currents meshing together between loops like sets of spinning gears.</p>
 <p>The choice of each current loop&rsquo;s direction is entirely arbitrary; however, the resulting equations are often easier to solve if the currents are going in the same direction through components with multiple current loops. For example, note how currents I<sub>1</sub> and I<sub>2</sub> both flow &ldquo;down&rdquo; through resistor R<sub>2</sub>, where they &ldquo;mesh&rdquo; or intersect. If the assumed direction of a mesh current is wrong, the answer for that current will have a negative value.</p>
 
 <h3>Step 2: Label the Voltage Drop Polarities</h3>
-<p>The next step is to label all <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/polarity-voltage-drops/&quot; target=&quot;_blank&quot;>voltage drop polarities</a> across resistors according to the assumed directions of the mesh currents, as shown in Figure 3.</p>
-<a target='_blank' href='../images/073-04.jpg'><img class='clImageThumb' src='../images/073-04.jpg'></a>
-<h4><em><strong>Figure 3.</strong> Label the voltage drop polarities.</em></h4>
+<p>The next step is to label all voltage drop polarities across resistors according to the assumed directions of the mesh currents, as shown in Figure 3.</p>
+<a target='_blank' href='../images/073-04.jpg'><img class='clImageThumb' src='../images/073-04.jpg'></a><br>
 
+<em><strong>Figure 3.</strong> Label the voltage drop polarities.</em><br>
+<br>
 <p>Remember that the &ldquo;upstream&rdquo; end of a resistor will always be positive, and the &ldquo;downstream&rdquo; end of a resistor negative. This situation happens because the resistor is a load that drops voltage when current flow through it.&nbsp;</p>
 <p>As a note, battery polarities are dictated by their symbol orientations in the diagram and may or may not &ldquo;agree&rdquo; with the resistor polarities and assumed loop current directions.</p>
 
 <h3>Step 3: Apply Kirchhoff&rsquo;s Voltage Law to Each Loop</h3>
-<p>Using Kirchhoff&rsquo;s voltage law, we can now step around each of these loops, generating equations representative of the component <a href=&quot;https://www.allaboutcircuits.com/technical-articles/what-is-a-voltage-drop-in-an-electric-circuit/&quot; target=&quot;_blank&quot;>voltage drops</a> and polarities. As with the branch current method, we will denote a resistor&rsquo;s voltage drop as the product of the <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/resistance/&quot; target=&quot;_blank&quot;>resistance</a> (in ohms) and its respective mesh current (that quantity being unknown at this point). Where two currents mesh together, we will write that term in the equation, with the resistor current being the sum of the two meshing currents.</p>
+<p>Using Kirchhoff&rsquo;s voltage law, we can now step around each of these loops, generating equations representative of the component voltage drops and polarities. As with the branch current method, we will denote a resistor&rsquo;s voltage drop as the product of the resistance (in ohms) and its respective mesh current (that quantity being unknown at this point). Where two currents mesh together, we will write that term in the equation, with the resistor current being the sum of the two meshing currents.</p>
 <p>The starting point for tracing the voltage drops around each loop is arbitrary, the same as the direction we trace. Beginning with the left loop of the circuit, let&rsquo;s start at the lower-left corner and trace clockwise, counting polarity as if we had a voltmeter in hand, red lead on the point ahead, and black lead on the point behind. For the left loop with current I<sub>1</sub>, we get the following equation:</p>
 <p>$$28 - R_1I_1 - R_2(I_1+I_2) =28 - 4I_1 - 2(I_1+I_2) = 0$$</p>
 <p>Notice that the middle term of the equation uses the sum of mesh currents I<sub>1</sub> and I<sub>2</sub> as the current through resistor R<sub>2</sub>. This is because mesh currents I<sub>1</sub> and I<sub>2</sub> are going in the same direction through R<sub>2</sub>&nbsp;and thus complement each other.&nbsp;</p>
@@ -93,20 +98,23 @@
 
 <h3>Step 5: Redraw the Mesh Currents and Determine the Branch Currents</h3>
 <p>Knowing that these solutions are values for mesh currents, not branch currents, we must go back to our diagram to see how they fit together to give currents through all components (Figure 4).</p>
-<a target='_blank' href='../images/073-05.jpg'><img class='clImageThumb' src='../images/073-05.jpg'></a>
-<h4><em><strong>Figure 4.</strong> Circuit with calculated mesh current values.</em></h4>
+<a target='_blank' href='../images/073-05.jpg'><img class='clImageThumb' src='../images/073-05.jpg'></a><br>
 
+<em><strong>Figure 4.</strong> Circuit with calculated mesh current values.</em><br>
+<br>
 <p>The solution of -1 A for I<sub>2</sub> means that our initially assumed current direction was incorrect. In actuality, I<sub>2</sub> flows in a clockwise direction at a value of +1 A. With this correction, let&rsquo;s redraw our circuit by changing the current flow direction for I<sub>2</sub> and the voltage drop for resistor R<sub>3</sub>, as shown in Figure 5.</p>
-<a target='_blank' href='../images/073-06.jpg'><img class='clImageThumb' src='../images/073-06.jpg'></a>
-<h4><em><strong>Figure 5.</strong> Circuit with corrected mesh current direction for I<sub>2</sub>.</em></h4>
+<a target='_blank' href='../images/073-06.jpg'><img class='clImageThumb' src='../images/073-06.jpg'></a><br>
 
+<em><strong>Figure 5.</strong> Circuit with corrected mesh current direction for I<sub>2</sub>.</em><br>
+<br>
 <p>Now, from these mesh currents, we can determine the branch currents for our circuit. We can easily see that the current through B<sub>1</sub> and R<sub>1</sub> is 5 A since only mesh current I<sub>1</sub> passes through those two circuit components. Similarly, a current of 1 A is flowing through R<sub>3</sub> and into B<sub>2</sub>.</p>
 <p>After that, you might question, what about the R<sub>2</sub>? It has two mesh currents passing through it. Mesh current I<sub>1</sub> is 5 A going &ldquo;down&rdquo; through R<sub>2</sub>, while mesh current I<sub>2</sub> is 1 A going &ldquo;up&rdquo; through R<sub>2</sub>.&nbsp;</p>
 <p>To determine the actual current through R<sub>2</sub>, we must see how the mesh currents I<sub>1</sub> and I<sub>2</sub> interact. In this case, they&rsquo;re in opposition&mdash;flowing in opposite directions. We can algebraically add them to arrive at a final value:</p>
 <p>$$I_{R2} = I_1 - I_2 = 5 - 1 = 4 \text{ A}$$</p>
 <p>The current through R<sub>2</sub> must be a value of 4 A, going &ldquo;down.&rdquo; All of the branch currents are shown in Figure 6.</p>
-<a target='_blank' href='../images/073-07.jpg'><img class='clImageThumb' src='../images/073-07.jpg'></a>
-<h4><em><strong>Figure 6. </strong>Circuit with calculated branch currents.</em></h4>
+<a target='_blank' href='../images/073-07.jpg'><img class='clImageThumb' src='../images/073-07.jpg'></a><br>
+
+<em><strong>Figure 6. </strong>Circuit with calculated branch currents.</em><br>
 
 <h3>Step 6: Calculate the Voltage Drops</h3>
 <p>Now that we know all of the branch currents, we can use Ohm&rsquo;s law to calculate the unknown voltage drops across the resistors in the circuit.</p>
@@ -119,44 +127,47 @@
 
 <h2>Advantages of Mesh Current vs Branch Current Methods</h2>
 <p>The primary advantage of mesh current analysis is that it generally allows for the solution of a large network with fewer unknown values and fewer simultaneous equations. In our example circuit, it requires three equations to solve the branch current method and only two equations using the mesh current method. This advantage can be more pronounced in networks with increased complexity, such as the circuit shown in Figure 7.</p>
-<a target='_blank' href='../images/073-08.jpg'><img class='clImageThumb' src='../images/073-08.jpg'></a>
-<h4><em><strong>Figure 7.</strong> Example circuit with increased complexity.</em></h4>
+<a target='_blank' href='../images/073-08.jpg'><img class='clImageThumb' src='../images/073-08.jpg'></a><br>
 
+<em><strong>Figure 7.</strong> Example circuit with increased complexity.</em><br>
+<br>
 <p>To solve this network using branch currents, we&rsquo;d have to establish five variables to account for each and every unique current in the circuit (I<sub>1</sub> through I<sub>5</sub>), as demonstrated in Figure 8.</p>
-<a target='_blank' href='../images/073-09.jpg'><img class='clImageThumb' src='../images/073-09.jpg'></a>
-<h4><em><strong>Figure 8.</strong> Complex circuit setup for branch current analysis.</em></h4>
+<a target='_blank' href='../images/073-09.jpg'><img class='clImageThumb' src='../images/073-09.jpg'></a><br>
 
+<em><strong>Figure 8.</strong> Complex circuit setup for branch current analysis.</em><br>
+<br>
 <p>This would require five equations for the solution in the form of two KCL equations at the nodes and three KVL equations for the loops:</p>
 <p>For the circuit of Figure 8, our five equations would be:</p>
 <p>$$I_1 - I_2 - I_3 = 0$$</p>
-<h4><em>KCL at node 1</em></h4>
-
+<em>KCL at node 1</em><br>
+<br>
 <p>$$I_3 - I_4 - I_5 = 0$$</p>
-<h4><em>KCL at node 2</em></h4>
-
+<em>KCL at node 2</em><br>
+<br>
 <p>$$V_{B1} - I_1R_1 - I_2R_2 = 0$$</p>
-<h4><em>KVL of the left loop</em></h4>
-
+<em>KVL of the left loop</em><br>
+<br>
 <p>$$I_2R_2 - I_3R_3 - I_4R_4 = 0$$</p>
-<h4><em>KVL of the middle loop</em></h4>
-
+<em>KVL of the middle loop</em><br>
+<br>
 <p>$$I_4R_4 - I_5R_5 - V_{B2} = 0$$</p>
-<h4><em>KVL of the right loop</em></h4>
-
+<em>KVL of the right loop</em><br>
+<br>
 <p>All in all, if you have nothing better to do with your time than to solve for five unknown variables with five equations, you might not mind using the branch current method of analysis for this circuit. However, for those of us who have better things to do with our time, the mesh current method is a whole lot easier, requiring only three unknowns and three equations to solve, as illustrated in Figure 9.</p>
-<a target='_blank' href='../images/073-10.jpg'><img class='clImageThumb' src='../images/073-10.jpg'></a>
-<h4><em><strong>Figure 9. </strong>Complex circuit setup for mesh current analysis.</em></h4>
+<a target='_blank' href='../images/073-10.jpg'><img class='clImageThumb' src='../images/073-10.jpg'></a><br>
 
+<em><strong>Figure 9. </strong>Complex circuit setup for mesh current analysis.</em><br>
+<br>
 <p>Our three KVL equations using the mesh current method are:</p>
 <p>$$V_{B1} - I_1R_1 - (I_1-I_2)R_2 = 0$$</p>
-<h4><em>KVL of the left loop</em></h4>
-
+<em>KVL of the left loop</em><br>
+<br>
 <p>$$(I_2-I_1)R_2 - I_2R_3 - (I_2-I_3)R_4= 0$$</p>
-<h4><em>KVL of the middle loop</em></h4>
-
+<em>KVL of the middle loop</em><br>
+<br>
 <p>$$(I_3-I_2)R_4 - I_3R_5 - V_{B2}= 0$$</p>
-<h4><em>KVL of the right loop</em></h4>
-
+<em>KVL of the right loop</em><br>
+<br>
 <p>With fewer equations to work with, this method has a clear advantage, especially when performing a simultaneous equation solution by hand without a calculator or computer.</p>
 
 <h2>Review of the Mesh Current Method</h2>

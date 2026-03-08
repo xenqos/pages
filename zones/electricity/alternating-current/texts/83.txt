@@ -5,7 +5,7 @@
 <p><img src="/uploads/articles/wound-rotor-induction-motor.jpg" /></p>
 <p><em>Wound rotor induction motor</em></p>
 
-<p><strong>Q:</strong> Why put <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/resistance/" target="_blank">resistance</a> in series with the rotor?</p>
+<p><strong>Q:</strong> Why put resistance in series with the rotor?</p>
 <p><strong>A:</strong> Squirrel cage induction motors draw 500% to over 1000% of full load current (FLC) during starting. While this is not a severe problem for small motors, it is for large (10&rsquo;s of kW) motors.</p>
 <p>Placing resistance in series with the rotor windings not only decreases start current, locked rotor current (LRC) but also increases the starting torque, locked rotor torque (LRT). The figure below shows that by increasing the rotor resistance from R<sub>0</sub> to R<sub>1</sub> to R<sub>2</sub>, the breakdown torque peak is shifted left to zero speed.</p>
 <p>Note that this torque peak is much higher than the starting torque available with no rotor resistance (R<sub>0</sub>) slip is proportional to rotor resistance, and pullout torque is proportional to slip. Thus, high torque is produced while starting.</p>
@@ -26,7 +26,7 @@
 <p><em>Rotor resistance controls the speed of wound rotor induction motor</em></p>
 
 ## Doubly-fed Induction Generator
-<p>We previously described a squirrel cage induction motor acting as a generator if driven faster than the synchronous speed. (See <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-13/wound-rotor-induction-motors/#sfig" target="_blank">Induction motor alternator</a>) This is a <em>singly-fed induction generator</em>, having electrical connections only to the stator windings.</p>
+<p>We previously described a squirrel cage induction motor acting as a generator if driven faster than the synchronous speed. (See Induction motor alternator) This is a <em>singly-fed induction generator</em>, having electrical connections only to the stator windings.</p>
 <p>A wound rotor induction motor may also act as a generator when driven above the synchronous speed. Since there are connections to both the stator and rotor, such a machine is known as a <em>doubly-fed induction generator</em> (DFIG).</p>
 
 <p><img src="/uploads/articles/doubly-fed-induction-generator.jpg" /></p>

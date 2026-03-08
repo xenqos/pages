@@ -1,5 +1,5 @@
 # Polar Form and Rectangular Form Notation for Complex Numbers
-<p>In order to work with <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-2/introduction-to-complex-numbers/" target="_blank" title="complex numbers">complex numbers</a> without <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-2/vectors-and-ac-waveforms/" target="_blank" title="drawing vectors">drawing vectors</a>, we first need some kind of standard mathematical notation. There are two basic forms of complex number notation: <em>polar</em> and <em>rectangular</em>.</p>
+<p>In order to work with complex numbers without drawing vectors, we first need some kind of standard mathematical notation. There are two basic forms of complex number notation: <em>polar</em> and <em>rectangular</em>.</p>
 ## Polar Form of a Complex Number
 <p>The polar form is where a complex number is denoted by the <em>length</em> (otherwise known as the <em>magnitude</em>, <em>absolute value</em>, or <em>modulus</em>) and the <em>angle</em> of its vector (usually denoted by an angle symbol that looks like this: &ang;).</p>
 <p>To use the map analogy, the polar notation for the vector from New York City to San Diego would be something like &ldquo;2400 miles, southwest.&rdquo; Here are two examples of vectors and their polar notations:</p>
@@ -44,7 +44,7 @@
 <p><img src="/uploads/articles/magnitude-vector-in-terms-of-real-and-imaginary.png" /></p>
 
 ## Converting from Rectangular Form to Polar Form
-<p>To convert from rectangular to polar, find the polar magnitude through the use of the <a href="https://www.allaboutcircuits.com/textbook/reference/chpt-5/right-triangle-trigonometry/" target="_blank">Pythagorean Theorem</a> (the polar magnitude is the hypotenuse of a right triangle, and the real and imaginary components are the adjacent and opposite sides, respectively), and the angle by taking the arctangent of the imaginary component divided by the real component:</p>
+<p>To convert from rectangular to polar, find the polar magnitude through the use of the Pythagorean Theorem (the polar magnitude is the hypotenuse of a right triangle, and the real and imaginary components are the adjacent and opposite sides, respectively), and the angle by taking the arctangent of the imaginary component divided by the real component:</p>
 
 <p><img src="/uploads/articles/converting-rectangular-form-to-polar-form.png" /></p>
 

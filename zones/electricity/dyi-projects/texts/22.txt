@@ -1,13 +1,13 @@
 # DC Lab - Thermoelectricity
 ## Project Overview
-<p>A <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-9/thermocouples/" target="_blank">thermocouple</a> is made from&nbsp;two dissimilar <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/conductors-insulators-electron-flow/" target="_blank">conductors</a> connected together at one end (Figure 1).&nbsp;</p>
+<p>A thermocouple is made from&nbsp;two dissimilar conductors connected together at one end (Figure 1).&nbsp;</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/difference-between-the-two-seebeck-voltages.jpg" /></p>
-#### <em><strong>Figure 1. </strong>Applying heat to the thermocouple and measuring the voltage change.</em>
+<em><strong>Figure 1. </strong>Applying heat to the thermocouple and measuring the voltage change.</em>
 
-<p>A thermocouple is an application of the <a href="https://www.allaboutcircuits.com/technical-articles/thermocouple-principles-seebeck-effect-seebeck-voltage-seebeck-coefficients/" target="_blank">Seebeck effect:</a> the production of a small <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/voltage-current/" target="_blank">voltage</a> proportional to a temperature gradient along the length of a wire. This voltage is dependent upon the magnitude of the temperature difference and the type of wire.</p>
-<p>Thermocouples are widely used as <a href="https://www.allaboutcircuits.com/technical-articles/introduction-temperature-sensors-thermistors-thermocouples-thermometer-ic/" target="_blank">temperature-sensing devices</a> because the mathematical relationship between temperature difference and resultant voltage is both repeatable and fairly linear. By measuring voltage, it is possible to infer temperature. Different temperature measurement ranges are possible by selecting different metal pairs to be joined together.</p>
-<p>Please note that directly measuring the <a href="https://www.allaboutcircuits.com/technical-articles/thermocouple-basics-using-the-seebeck-effect-for-temperature-measurement/" target="_blank">Seebeck voltage</a> produced along a length of continuous wire from a temperature gradient is quite difficult and so will not be attempted in this experiment.</p>
+<p>A thermocouple is an application of the Seebeck effect: the production of a small voltage proportional to a temperature gradient along the length of a wire. This voltage is dependent upon the magnitude of the temperature difference and the type of wire.</p>
+<p>Thermocouples are widely used as temperature-sensing devices because the mathematical relationship between temperature difference and resultant voltage is both repeatable and fairly linear. By measuring voltage, it is possible to infer temperature. Different temperature measurement ranges are possible by selecting different metal pairs to be joined together.</p>
+<p>Please note that directly measuring the Seebeck voltage produced along a length of continuous wire from a temperature gradient is quite difficult and so will not be attempted in this experiment.</p>
 
 ## Parts and Materials
 <ul>
@@ -26,10 +26,10 @@
 <p><strong>Step 1:</strong> Twist one end of the iron wire together with one end of the copper wire, as illustrated on the left side of Figure 2.</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/thermoelectricity-illustration.jpg" /></p>
-#### <em><strong>Figure 2. </strong>Measuring thermocouple voltage with a voltmeter.</em>
+<em><strong>Figure 2. </strong>Measuring thermocouple voltage with a voltmeter.</em>
 
-<p><strong>Step 2:&nbsp;</strong>Connect the free ends of the iron and copper wires to respective terminals on a <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/building-simple-resistor-circuits/" target="_blank">terminal strip</a>.&nbsp;</p>
-<p><strong>Step 3:</strong> Set your <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-2/voltage-usage/" target="_blank">voltmeter</a> to its most sensitive range and connect it to the terminals where the wires attach, as shown in Figure 2. The meter should indicate nearly zero voltage.</p>
+<p><strong>Step 2:&nbsp;</strong>Connect the free ends of the iron and copper wires to respective terminals on a terminal strip.&nbsp;</p>
+<p><strong>Step 3:</strong> Set your voltmeter to its most sensitive range and connect it to the terminals where the wires attach, as shown in Figure 2. The meter should indicate nearly zero voltage.</p>
 <p>What you have just constructed is a <em>thermocouple</em>: a device that generates a small voltage proportional to the temperature difference between the tip and the meter connection points. When the tip is at a temperature equal to the terminal strip, there will be no voltage produced, and thus no indication is seen on the voltmeter.</p>
 <p><strong>Step 4:</strong>&nbsp;Next, light a candle and insert the twisted-wire tip into the flame. You should notice an indication on your voltmeter. Note the sign of this voltage and the magnitude. Moving the wire nearer and further to the heat source to see how the voltage changes.</p>
 <p>Thermocouples, being made of two dissimilar metals joined at one end, produce a voltage proportional to the temperature of the junction. The temperature gradient along both wires resulting from a constant temperature at the junction produces different Seebeck voltages along those wires&rsquo; lengths because the wires are made of different metals.&nbsp;The resultant voltage between the two free wire ends is the <em>difference</em> between the two Seebeck voltages.</p>

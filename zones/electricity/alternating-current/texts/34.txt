@@ -6,8 +6,8 @@
 
 <p><img src="/uploads/articles/simple-series-resonant-circuit-equation.jpg" /></p>
 
-<p>With the total <a href="https://www.allaboutcircuits.com/video-lectures/series-circuits-part-1/" target="_blank">series impedance</a> equal to 0 &Omega; at the resonant frequency of 159.155 Hz, the result is a <em>short circuit</em> across the AC power source at resonance. In the circuit drawn above, this would not be good.</p>
-<p>I&rsquo;ll add a small <a href="https://www.allaboutcircuits.com/video-lectures/electronic-components-resistors/" target="_blank">resistor</a> (Figure <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-6/simple-series-resonance/#02099.png" target="_blank">below</a>) in series with the capacitor and the inductor to keep the maximum circuit current somewhat limited, and perform another SPICE analysis over the same range of frequencies.</p>
+<p>With the total series impedance equal to 0 &Omega; at the resonant frequency of 159.155 Hz, the result is a <em>short circuit</em> across the AC power source at resonance. In the circuit drawn above, this would not be good.</p>
+<p>I&rsquo;ll add a small resistor (Figure below) in series with the capacitor and the inductor to keep the maximum circuit current somewhat limited, and perform another SPICE analysis over the same range of frequencies.</p>
 
 <p><img src="/uploads/articles/small-resistor-in-series.jpg" /></p>
 <p><em>Series resonant circuit suitable for SPICE.</em></p>

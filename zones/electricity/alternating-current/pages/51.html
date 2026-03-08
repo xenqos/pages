@@ -32,7 +32,7 @@
 <div id='idContent'>
 
 <h1>Step-up and Step-down Transformers</h1>
-<p>So far, we&rsquo;ve observed simulations of <a href=&quot;https://www.allaboutcircuits.com/textbook/alternating-current/chpt-9/mutual-inductance-and-basic-operation/&quot; target=&quot;_blank&quot;>transformers</a> where the primary and secondary windings were of identical inductance, giving approximately equal voltage and current levels in both circuits. Equality of <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/voltage-current/&quot; target=&quot;_blank&quot;>voltage and current</a> between the primary and secondary sides of a transformer, however, is not the norm for all transformers.</p>
+<p>So far, we&rsquo;ve observed simulations of transformers where the primary and secondary windings were of identical inductance, giving approximately equal voltage and current levels in both circuits. Equality of voltage and current between the primary and secondary sides of a transformer, however, is not the norm for all transformers.</p>
 <p>If the inductances of the two windings are not equal, something interesting happens:</p>
 
 <pre><br>
@@ -76,12 +76,12 @@ freq          v(2)        i(v1)       &#10;6.000E+01     1.000E+01   9.975E-05  
 <p>While both motors and generators are fairly efficient devices, the use of both in this fashion compounds their inefficiencies so that the overall efficiency is in the range of 90% or less. Furthermore, because motor/generator sets obviously require moving parts, mechanical wear and balance are factors influencing both service life and performance.</p>
 <p>Transformers, on the other hand, are able to convert levels of AC voltage and current at very high efficiencies with no moving parts, making possible the widespread distribution and use of electric power we take for granted.</p>
 <p>In all fairness, it should be noted that motor/generator sets have not necessarily been obsoleted by transformers for <em>all</em> applications.</p>
-<p>While transformers are clearly superior over motor/generator sets for <a href=&quot;https://www.allaboutcircuits.com/video-lectures/generation-of-alternating-voltage/&quot; target=&quot;_blank&quot;>AC voltage</a> and current level conversion, they cannot convert one frequency of AC power to another, or (by themselves) convert DC to AC or visa-versa.</p>
+<p>While transformers are clearly superior over motor/generator sets for AC voltage and current level conversion, they cannot convert one frequency of AC power to another, or (by themselves) convert DC to AC or visa-versa.</p>
 <p>Motor/generator sets can do all these things with relative simplicity, albeit with the limitations of efficiency and mechanical factors already described.</p>
 <p>Motor/generator sets also have the unique property of kinetic energy storage: that is, if the motor&rsquo;s power supply is momentarily interrupted for any reason, its angular momentum (the inertia of that rotating mass) will maintain rotation of the generator for a short duration, thus isolating any loads powered by the generator from &ldquo;glitches&rdquo; in the main power system.</p>
 
 <h3>Analysis of Step-up and Step-down Transformer Operation</h3>
-<p>Looking closely at the numbers in the <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-3/spice-models/&quot; target=&quot;_blank&quot;>SPICE</a> analysis, we should see a correspondence between the transformer&rsquo;s ratio and the two inductances. Notice how the primary inductor (l1) has 100 times more inductance than the secondary inductor (10000 H versus 100 H), and that the measured voltage step-down ratio was 10 to 1.</p>
+<p>Looking closely at the numbers in the SPICE analysis, we should see a correspondence between the transformer&rsquo;s ratio and the two inductances. Notice how the primary inductor (l1) has 100 times more inductance than the secondary inductor (10000 H versus 100 H), and that the measured voltage step-down ratio was 10 to 1.</p>
 <p>The winding with more inductance will have a higher voltage and less current than the other.</p>
 <p>Since the two inductors are wound around the same core material in the transformer (for the most efficient magnetic coupling between the two), the parameters affecting inductance for the two coils are equal except for the number of turns in each coil.</p>
 <p>If we take another look at our inductance formula, we see that inductance is proportional to the <em>square</em> of the number of coil turns:</p>

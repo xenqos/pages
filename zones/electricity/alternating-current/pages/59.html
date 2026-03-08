@@ -33,7 +33,7 @@
 
 <h1>Three-phase Power Systems</h1>
 <h2>What is Split-Phase Power Systems?</h2>
-<p><a href=&quot;https://www.allaboutcircuits.com/textbook/alternating-current/chpt-10/single-phase-power-systems/&quot; target=&quot;_blank&quot;>Split-phase power systems</a> achieve their high conductor efficiency <em>and</em> low safety risk by splitting up the total voltage into lesser parts and powering multiple loads at those lesser <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/calculating-electric-power/&quot; target=&quot;_blank&quot;>voltages</a> while drawing currents at levels typical of a full-voltage system.</p>
+<p>Split-phase power systems achieve their high conductor efficiency <em>and</em> low safety risk by splitting up the total voltage into lesser parts and powering multiple loads at those lesser voltages while drawing currents at levels typical of a full-voltage system.</p>
 <p>This technique, by the way, works just as well for DC power systems as it does for single-phase AC systems. Such systems are usually referred to as <em>three-wire</em> systems rather than <em>split-phase</em> because &ldquo;phase&rdquo; is a concept restricted to AC.</p>
 <p>But we know from our experience with vectors and complex numbers that AC voltages don&rsquo;t always add up as we think they would if they are out of phase with each other.</p>
 <p>This principle, applied to power systems, can be put to use to make power systems with even greater conductor efficiencies and lower shock hazard than with split-phase.</p>
@@ -46,7 +46,7 @@
 <p>However, voltage between the two &ldquo;hot&rdquo; wires is not 240 volts (120 &ang; 0&deg; - 120 &ang; 180&deg;) because the phase difference between the two sources is not 180&deg;. Instead, the voltage is:</p>
 <p><img src=&quot;/uploads/articles/voltage-equation.jpg&quot; /></p>
 <p>Nominally, we say that the voltage between &ldquo;hot&rdquo; conductors is 208 volts (rounding up), and thus the power system voltage is designated as 120/208.</p>
-<p>If we calculate the current through the &ldquo;neutral&rdquo; conductor, we find that it is <em>not</em> zero, even with balanced load resistances. <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-6/kirchhoffs-current-law-kcl/&quot; target=&quot;_blank&quot;>Kirchhoff&rsquo;s Current Law</a> tells us that the currents entering and exiting the node between the two loads must be zero: (Figure below)</p>
+<p>If we calculate the current through the &ldquo;neutral&rdquo; conductor, we find that it is <em>not</em> zero, even with balanced load resistances. Kirchhoff&rsquo;s Current Law tells us that the currents entering and exiting the node between the two loads must be zero: (Figure below)</p>
 <p><img src=&quot;/uploads/articles/neutral-wire-carries-current.jpg&quot; /></p>
 <p>Neutral wire carries a current in the case of a pair of 120&deg; phased sources.</p>
 <p><img src=&quot;/uploads/articles/neutral-wire-equation.jpg&quot; /></p>
@@ -62,7 +62,7 @@
 <p><em>With a third load phased 120&deg; to the other two, the currents are the same as for two loads.</em></p>
 
 <h3>SPICE Calculations for Three-phase System</h3>
-<p>A full mathematical analysis of all the <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/voltage-current/&quot; target=&quot;_blank&quot;>voltages and currents</a> in this circuit would necessitate the use of a network theorem, the easiest being the Superposition Theorem.</p>
+<p>A full mathematical analysis of all the voltages and currents in this circuit would necessitate the use of a network theorem, the easiest being the Superposition Theorem.</p>
 <p>I&rsquo;ll spare you the long, drawn-out calculations because you should be able to intuitively understand that the three voltage sources at three different phase angles will deliver 120 volts each to a balanced triad of load resistors.</p>
 <p>For proof of this, we can use SPICE to do the math for us: (Figure below, SPICE listing: 120/208 polyphase power system)</p>
 <p><img src=&quot;/uploads/articles/spice-circuit1.jpg&quot; /></p>
@@ -109,7 +109,7 @@ VOLTAGE ACROSS EACH LOAD freq v(1,4) v(2,4) v(3,4) 6.000E+01 1.200E+02 1.200E+02
 <p>The best way to get the phase shifts we&rsquo;re looking for is to generate it at the source: construct the AC generator (alternator) providing the power in such a way that the rotating magnetic field passes by three sets of wire windings, each set spaced 120&deg;&nbsp;apart around the circumference of the machine as in Figure below.</p>
 <p><img src=&quot;/uploads/articles/single-phase-alternator-and-three-phase-alternator.jpg&quot; /></p>
 <p><em>(a) Single-phase alternator, (b) Three-phase alternator.</em></p>
-<p>Together, the six &ldquo;pole&rdquo; windings of a three-phase alternator are connected to comprise three winding pairs, each pair producing <a href=&quot;https://www.allaboutcircuits.com/textbook/alternating-current/chpt-1/what-is-alternating-current-ac/&quot; target=&quot;_blank&quot;>AC voltage</a> with a phase angle 120&deg; shifted from either of the other two winding pairs.</p>
+<p>Together, the six &ldquo;pole&rdquo; windings of a three-phase alternator are connected to comprise three winding pairs, each pair producing AC voltage with a phase angle 120&deg; shifted from either of the other two winding pairs.</p>
 <p>The interconnections between pairs of windings (as shown for the single-phase alternator: the jumper wire between windings 1a and 1b) have been omitted from the three-phase alternator drawing for simplicity.</p>
 <p>In our example circuit, we showed the three voltage sources connected together in a &ldquo;Y&rdquo; configuration (sometimes called the &ldquo;star&rdquo; configuration), with one lead of each source tied to a common point (the node where we attached the &ldquo;neutral&rdquo; conductor).</p>
 <p>The common way to depict this connection scheme is to draw the windings in the shape of a &ldquo;Y&rdquo; like Figure below.</p>

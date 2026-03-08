@@ -1,6 +1,6 @@
 # More on Spectrum Analysis
-<p>Computerized Fourier analysis, particularly in the form of the <em>FFT</em> algorithm, is a powerful tool for furthering our understanding of<a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-1/ac-waveforms/" target="_blank"> waveforms</a> and their related spectral components.</p>
-<p>This same mathematical routine programmed into the <a href="https://www.allaboutcircuits.com/textbook/reference/chpt-7/fundamentals-spice-programming/" target="_blank">SPICE</a> simulator as the .fourier option is also programmed into a variety of electronic test instruments to perform real-time Fourier analysis on measured signals.</p>
+<p>Computerized Fourier analysis, particularly in the form of the <em>FFT</em> algorithm, is a powerful tool for furthering our understanding of waveforms and their related spectral components.</p>
+<p>This same mathematical routine programmed into the SPICE simulator as the .fourier option is also programmed into a variety of electronic test instruments to perform real-time Fourier analysis on measured signals.</p>
 <p>This section is devoted to the use of such tools and the analysis of several different waveforms.</p>
 <p>First we have a simple sine wave at a frequency of 523.25 Hz. This particular frequency value is a &ldquo;C&rdquo; pitch on a piano keyboard, one octave above &ldquo;middle C&rdquo;.</p>
 <p>Actually, the signal measured for this demonstration was created by an electronic keyboard set to produce the tone of a pan flute, the closest instrument &ldquo;voice&rdquo; I could find resembling a perfect sine wave. The plot below was taken from an oscilloscope display, showing signal amplitude (voltage) over time:</p>
@@ -8,7 +8,7 @@
 <p><img src="/uploads/articles/oscilloscope-display-voltage-vs-time.jpg" /></p>
 <p><em>Oscilloscope display: voltage vs time</em></p>
 
-<p>Viewed with an <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-4/pc-oscilloscope/" target="_blank">oscilloscope</a>, a sine wave looks like a wavy curve traced horizontally on the screen. The horizontal axis of this oscilloscope display is marked with the word &ldquo;Time&rdquo; and an arrow pointing in the direction of time&rsquo;s progression. The curve itself, of course, represents the cyclic increase and decrease of voltage over time.</p>
+<p>Viewed with an oscilloscope, a sine wave looks like a wavy curve traced horizontally on the screen. The horizontal axis of this oscilloscope display is marked with the word &ldquo;Time&rdquo; and an arrow pointing in the direction of time&rsquo;s progression. The curve itself, of course, represents the cyclic increase and decrease of voltage over time.</p>
 <p>Close observation reveals imperfections in the sine-wave shape. This, unfortunately, is a result of the specific equipment used to analyze the waveform. Characteristics like these due to quirks of the test equipment are technically known as <em>artifacts</em>: phenomena existing solely because of a peculiarity in the equipment used to perform the experiment.</p>
 <p>If we view this same AC voltage on a spectrum analyzer, the result is quite different:</p>
 
@@ -91,7 +91,7 @@
 <p><img src="/uploads/articles/waveforms-symmetric.jpg" /></p>
 <p><em>Waveforms symmetric about their x-axis center line contain only odd harmonics</em></p>
 
-<p><a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-7/square-wave-signals/" target="_blank">Square waves</a>, triangle waves, and pure sine waves all exhibit this symmetry, and all are devoid of even harmonics. Waveforms like the trumpet tone, the accordion tone, and the sawtooth wave are unsymmetrical around their centerlines and therefore <em>do</em> contain even harmonics.</p>
+<p>Square waves, triangle waves, and pure sine waves all exhibit this symmetry, and all are devoid of even harmonics. Waveforms like the trumpet tone, the accordion tone, and the sawtooth wave are unsymmetrical around their centerlines and therefore <em>do</em> contain even harmonics.</p>
 
 <p><img src="/uploads/articles/asymmetric-waveforms-contain-even-harmonics.jpg" /></p>
 <p><em>Asymmetric waveforms contain even harmonics</em></p>
@@ -108,7 +108,7 @@
 <p><em>These waveforms contain even harmonics</em></p>
 
 <p>Why is this harmonic rule-of-thumb an important rule to know? It can help us comprehend the relationship between harmonics in AC circuits and specific circuit components.</p>
-<p>Since most sources of sine-wave distortion in <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-11/power-resistive-reactive-ac-circuits/" target="_blank">AC power circuits</a> tend to be symmetrical, even-numbered harmonics are rarely seen in those applications.</p>
+<p>Since most sources of sine-wave distortion in AC power circuits tend to be symmetrical, even-numbered harmonics are rarely seen in those applications.</p>
 <p>This is good to know if you&rsquo;re a power system designer and are planning ahead for harmonic reduction: you only have to concern yourself with mitigating the odd harmonic frequencies, even harmonics being practically nonexistent.</p>
 <p>Also, if you happen to measure even harmonics in an AC circuit with a spectrum analyzer or frequency meter, you know that something in that circuit must be <em>unsymmetrically</em> distorting the sine-wave voltage or current, and that clue may be helpful in locating the source of a problem (look for components or conditions more likely to distort one half-cycle of the AC waveform more than the other).</p>
 <p>Now that we have this rule to guide our interpretation of nonsinusoidal waveforms, it makes more sense that a waveform like that produced by a rectifier circuit should contain such strong even harmonics, there being no symmetry at all above and below center.</p>

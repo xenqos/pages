@@ -1,23 +1,36 @@
 ###### 12. Physics Of Conductors And Insulators
 
 # Conductor Size
-<p>It should be common-sense knowledge that liquids flow through large-diameter pipes easier than they do through small-diameter pipes (if you would like a practical illustration, try drinking a liquid through straws of different diameters). The same general principle holds for the flow of electrons through <a href="https://www.allaboutcircuits.com/video-lectures/wire-and-cable/" target="_blank">conductors</a>: the broader the cross-sectional area (thickness) of the conductor, the more room for electrons to flow, and consequently, the easier it is for flow to occur (less resistance).</p>
+<p>It should be common-sense knowledge that liquids flow through large-diameter pipes easier than they do through small-diameter pipes (if you would like a practical illustration, try drinking a liquid through straws of different diameters). The same general principle holds for the flow of electrons through conductors: the broader the cross-sectional area (thickness) of the conductor, the more room for electrons to flow, and consequently, the easier it is for flow to occur (less resistance).</p>
 ## Two Basic Varieties of Electrical Wire: Solid and Stranded
 <p>Electrical wire is usually round in cross-section (although there are some unique exceptions to this rule), and comes in two basic varieties: <strong><em>solid and stranded</em></strong>. <strong><em>Solid copper wire</em></strong> is just as it sounds: a single, solid strand of copper the whole length of the wire.<strong><em> Stranded wire</em></strong> is composed of smaller strands of solid copper wire twisted together to form a single, larger conductor. The greatest benefit of stranded wire is its mechanical flexibility, being able to withstand repeated bending and twisting much better than solid copper (which tends to fatigue and break after time).</p>
 <p>Wire size can be measured in several ways. We could speak of a wire&rsquo;s diameter, but since its really the cross-sectional <em>area</em> that matters most regarding the flow of electrons, we are better off designating wire size in terms of area.</p>
+
 ^[091-01.png]
+
 <p>The wire cross-section picture shown above is, of course, not drawn to scale. The diameter is shown as being 0.1019 inches. Calculating the area of the cross-section with the formula Area = &pi;r<sub>2</sub>, we get an area of 0.008155 square inches:</p>
+
 ^[091-02.png]
+
 <p>These are fairly small numbers to work with, so wire sizes are often expressed in measures of thousandths-of-an-inch, or <em>mils</em>. For the illustrated example, we would say that the diameter of the wire was 101.9 mils (0.1019 inch times 1000). We could also, if we wanted, express the area of the wire in the unit of square mils, calculating that value with the same circle-area formula, Area = &pi;r<sub>2</sub>:</p>
+
 ^[091-03.png]
+
 ^[091-04.png]
+
 ## Calculating the Circular-mil Area of a Wire
 <p>However, electricians and others frequently concerned with wire size use another unit of area measurement tailored specifically for wire&rsquo;s circular cross-section. This special unit is called the <em>circular mil</em> (sometimes abbreviated <em>cmil</em>). The sole purpose for having this special unit of measurement is to eliminate the need to invoke the factor &pi; (3.1415927 . . .) in the formula for calculating area, plus the need to figure wire <em>radius </em>when you&rsquo;ve been given <em>diameter</em>. The formula for calculating the circular-mil area of a circular wire is very simple:</p>
+
 ^[091-05.png]
+
 <p>Because this is a unit of <em>area</em> measurement, the mathematical power of 2 is still in effect (doubling the width of a circle will <em>always</em> quadruple its area, no matter what units are used, or if the width of that circle is expressed in terms of radius or diameter). To illustrate the difference between measurements in square mils and measurements in circular mils, I will compare a circle with a square, showing the area of each shape in both unit measures:</p>
+
 ^[091-06.png]
+
 <p>And for another size of wire:</p>
+
 ^[091-07.png]
+
 <p>Obviously, the circle of a given diameter has less cross-sectional area than a square of width and height equal to the circle&rsquo;s diameter: both units of area measurement reflect that. However, it should be clear that the unit of &ldquo;square mil&rdquo; is really tailored for the convenient determination of a square&rsquo;s area, while &ldquo;circular mil&rdquo; is tailored for the convenient determination of a circle&rsquo;s area: the respective formula for each is simpler to work with. It must be understood that both units are valid for measuring the area of a shape, no matter what shape that may be. The conversion between circular mils and square mils is a simple ratio: there are &pi; (3.1415927 . . .) square mils to every 4 circular mils.</p>
 ## Measuring Cross-Sectional Wire Area with Gauge
 <p>Another measure of cross-sectional wire area is the <em>gauge</em>. The gauge scale is based on whole numbers rather than fractional or decimal inches. The larger the gauge number, the skinnier the wire; the smaller the gauge number, the fatter the wire. For those acquainted with shotguns, this inversely-proportional measurement scale should sound familiar.</p>

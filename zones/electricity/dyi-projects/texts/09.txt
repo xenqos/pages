@@ -1,11 +1,11 @@
 # Intro Lab - Nonlinear Resistance
 ## Project Overview
-<p>In this project, you will employ the circuit of Figure 1 to learn how the&nbsp;<a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/resistance/" target="_blank">resistance</a> of a device may change as a function of the <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/voltage-current/" target="_blank">voltage or current</a>; that is, the resistance is nonlinear.&nbsp;</p>
+<p>In this project, you will employ the circuit of Figure 1 to learn how the&nbsp;resistance of a device may change as a function of the voltage or current; that is, the resistance is nonlinear.&nbsp;</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/low-voltage-incandescent-lamp.jpg" /></p>
-#### <em><strong>Figure 1. </strong>Nonlinear resistance circuit project setup.</em>
+<em><strong>Figure 1. </strong>Nonlinear resistance circuit project setup.</em>
 
-<p>This project uses the same parts and materials as the <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-2/a-very-simple-circuit/" target="_blank">simple lighting project</a>. It also employs the skills explained&nbsp;earlier in this textbook for using an <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-2/ohmmeter-usage/" target="_blank">ohmmeter</a>, <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-2/voltage-usage/" target="_blank">voltmeter</a>, and <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-2/ammeter-usage/" target="_blank">ammeter</a>.</p>
+<p>This project uses the same parts and materials as the simple lighting project. It also employs the skills explained&nbsp;earlier in this textbook for using an ohmmeter, voltmeter, and ammeter.</p>
 
 ## Parts and Materials
 <ul>
@@ -18,23 +18,23 @@
 <li>Voltmeter use</li>
 <li>Ammeter use</li>
 <li>Ohmmeter use</li>
-<li><a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/correct-use-of-ohms-law/" target="_blank">Use of Ohm&rsquo;s law</a></li>
+<li>Use of Ohm&rsquo;s law</li>
 <li>The realization that some resistances are unstable!</li>
 <li>Scientific method</li>
 </ul>
 
 ## Instructions
-<p><strong>Step 1:</strong> With the lamp unconnected to a circuit,&nbsp;measure the resistance&nbsp;(<em>R<sub>off</sub></em>) of the lamp with your multimeter. This resistance figure is due to the thin metal filament&nbsp;inside the lamp.&nbsp;It has substantially more resistance than a jumper wire but less than any of the <a href="https://eepower.com/resistor-guide/" target="_blank">resistors</a> from&nbsp;<a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-2/ohms-law/" target="_blank">Ohm&#39;s law experiment</a>. Record this resistance value for future use.</p>
+<p><strong>Step 1:</strong> With the lamp unconnected to a circuit,&nbsp;measure the resistance&nbsp;(<em>R<sub>off</sub></em>) of the lamp with your multimeter. This resistance figure is due to the thin metal filament&nbsp;inside the lamp.&nbsp;It has substantially more resistance than a jumper wire but less than any of the resistors from&nbsp;Ohm&#39;s law experiment. Record this resistance value for future use.</p>
 <p><strong>Step 2:&nbsp;</strong>Build the&nbsp;one-battery, one-lamp circuit shown in the circuit schematic of Figure 2.&nbsp;</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/ammeter-for-nonlinear-resistance.jpg" /></p>
-#### <em><strong>Figure 2. </strong>The schematic&nbsp;diagram for the nonlinear resistance circuit project.</em>
+<em><strong>Figure 2. </strong>The schematic&nbsp;diagram for the nonlinear resistance circuit project.</em>
 
-<p>You can build it using terminal strips as&nbsp;illustrated in Figure 1, or use a <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/building-simple-resistor-circuits/" target="_blank">breadboard</a>,</p>
-<p><strong>Step 2:&nbsp;</strong>Set your multimeter to the appropriate voltage range and <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-2/voltage-usage/" target="_blank">measure the voltage</a> across the lamp as it is energized (lit). Record this voltage value (<em>V</em>).</p>
-<p><strong>Step 3:&nbsp;</strong>Set your multimeter to the highest current range available. Break the circuit and connect the ammeter within that break, so it becomes a part of the circuit, <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/simple-series-circuits/" target="_blank">in series</a>, with the battery and lamp.</p>
+<p>You can build it using terminal strips as&nbsp;illustrated in Figure 1, or use a breadboard,</p>
+<p><strong>Step 2:&nbsp;</strong>Set your multimeter to the appropriate voltage range and measure the voltage across the lamp as it is energized (lit). Record this voltage value (<em>V</em>).</p>
+<p><strong>Step 3:&nbsp;</strong>Set your multimeter to the highest current range available. Break the circuit and connect the ammeter within that break, so it becomes a part of the circuit, in series, with the battery and lamp.</p>
 <p><strong>Step 4: </strong>Now, select the best current range,&nbsp;whichever one gives the strongest meter indication without over-ranging the meter. If your multimeter is autoranging, of course, you need not bother with setting ranges.&nbsp;Record this current value (<em>I</em>)&nbsp;along with the resistance and voltage values previously recorded.</p>
-<p><strong>Step 5:&nbsp;</strong>Taking the measured figures for voltage and current, use <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/voltage-current-resistance-relate/" target="_blank">Ohm&rsquo;s law</a> equation to calculate the resistance when the lamp is turned on.</p>
+<p><strong>Step 5:&nbsp;</strong>Taking the measured figures for voltage and current, use Ohm&rsquo;s law equation to calculate the resistance when the lamp is turned on.</p>
 
 <p>$$R_{on}&nbsp;= \frac{V}{I}$$</p>
 

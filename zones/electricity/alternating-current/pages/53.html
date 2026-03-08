@@ -32,14 +32,14 @@
 <div id='idContent'>
 
 <h1>Phasing</h1>
-<p>Since transformers are essentially AC devices, we need to be aware of the phase relationships between the primary and secondary circuits. Using our <a href=&quot;https://www.allaboutcircuits.com/textbook/reference/chpt-7/introduction-to-spice/&quot; target=&quot;_blank&quot;>SPICE</a> example from before, we can plot the waveshapes for the primary and secondary circuits and see the phase relations for ourselves:</p>
+<p>Since transformers are essentially AC devices, we need to be aware of the phase relationships between the primary and secondary circuits. Using our SPICE example from before, we can plot the waveshapes for the primary and secondary circuits and see the phase relations for ourselves:</p>
 
 <pre><br>
 spice transient analysis file for use with nutmeg: &#10; transformer &#10; v1 1 0 sin(0 15 60 0 0) &#10; rbogus1 1 2 1e-12 &#10; v2 5 0 dc 250 &#10; l1 2 0 10000 &#10; l2 3 5 100 &#10; k l1 l2 0.999 &#10; vi1 3 4 ac 0 &#10; rload 4 5 1k &#10; .tran 0.5m 17m &#10; .end &#10; nutmeg commands: &#10; setplot tran1 &#10; plot v(2) v(3,5)&#10;</pre>
 
 <p><img src=&quot;/uploads/articles/waveshapes-for-the-primary-and-secondary-circuits.jpg&quot; /></p>
 <p><em>A secondary voltage V(3,5) is in-phase with primary voltage V(2) and stepped down by a factor of ten.</em></p>
-<p>In going from primary, V(2), to secondary, V(3,5), the <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/voltage-current-practical-circuit/&quot; target=&quot;_blank&quot;>voltage</a> was stepped down by a factor of ten, and the current was stepped up by a factor of 10. Both current and voltage waveforms are in-phase in going from primary to secondary.</p>
+<p>In going from primary, V(2), to secondary, V(3,5), the voltage was stepped down by a factor of ten, and the current was stepped up by a factor of 10. Both current and voltage waveforms are in-phase in going from primary to secondary.</p>
 
 <pre><br>
 nutmeg commands: setplot tran1 plot I(L1#branch) I(L2#branch)&#10;</pre>

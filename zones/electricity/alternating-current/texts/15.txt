@@ -3,15 +3,15 @@
 <p><img src="/uploads/articles/pure-resistive-ac-circuit.jpg" /></p>
 <p><em>Pure resistive AC circuit: resistor voltage and current are in phase.</em></p>
 
-<p>If we were to plot the <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/voltage-current/" target="_blank">current and voltage</a> for a very simple AC circuit consisting of a source and a resistor (figure above), it would look something like this: (figure below)</p>
+<p>If we were to plot the current and voltage for a very simple AC circuit consisting of a source and a resistor (figure above), it would look something like this: (figure below)</p>
 
 <p><img src="/uploads/articles/voltage-and-current-resistive-circuit.jpg" /></p>
 <p><em>Voltage and current &ldquo;in phase&rdquo; for resistive circuit.</em></p>
 
-<p>Because the <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/resistors/" target="_blank">resistor</a> simply and directly resists the flow of current at all periods of time, the waveform for the voltage drop across the resistor is exactly in phase with the waveform for the current through it.</p>
+<p>Because the resistor simply and directly resists the flow of current at all periods of time, the waveform for the voltage drop across the resistor is exactly in phase with the waveform for the current through it.</p>
 <p>We can look at any point in time along the horizontal axis of the plot and compare those values of current and voltage with each other (any &ldquo;snapshot&rdquo; look at the values of a wave are referred to as <em>instantaneous values</em>, meaning the values at that <em>instant</em> in time).</p>
 <p>When the instantaneous value for the current is zero, the instantaneous voltage across the resistor is also zero. Likewise, at the moment in time where the current through the resistor is at its positive peak, the voltage across the resistor is also at its positive peak, and so on.</p>
-<p>At any given point in time along the waves, <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/voltage-current-resistance-relate/" target="_blank">Ohm&rsquo;s Law</a> holds true for the instantaneous values of voltage and current.</p>
+<p>At any given point in time along the waves, Ohm&rsquo;s Law holds true for the instantaneous values of voltage and current.</p>
 <p>We can also calculate the power dissipated by this resistor, and plot those values on the same graph: (figure below)</p>
 
 <p><img src="/uploads/articles/calculate-the-power-dissipated-resistor.jpg" /></p>

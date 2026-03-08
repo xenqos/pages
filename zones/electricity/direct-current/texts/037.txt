@@ -1,11 +1,13 @@
 ###### 05. Series And Parallel Circuits
 
 # What is the Relationship Between Conductance and Resistance?
+
 ^[037-01.jpg]
+
 <h3 class="text-lg lg:text-2xl font-bold mb-3">What is Conductance?</h3>
 <p><p>Conductance measures how easy it is for electric current to flow and is the inverse of resistance. Conductance is symbolized by the letter &ldquo;G&rdquo; and is measured in units of siemens or mhos.</p></p>
-<p>The concept and measurement units of <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/resistance/" target="_blank">resistance</a> are most often used when describing the relationship of <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/voltage-current/" target="_blank">current flow to voltage</a> through <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/voltage-current-resistance-relate/" target="_blank">Ohm&rsquo;s Law</a>. However, it is sometimes helpful to express the ability of a material to conduct current rather than its opposition to that current.&nbsp;</p>
-<p>This ability to conduct current, called &ldquo;<a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-12/introduction-conductance-and-conductors/" target="_blank">conductance</a>,&rdquo; will be described in detail in this article.&nbsp;</p>
+<p>The concept and measurement units of resistance are most often used when describing the relationship of current flow to voltage through Ohm&rsquo;s Law. However, it is sometimes helpful to express the ability of a material to conduct current rather than its opposition to that current.&nbsp;</p>
+<p>This ability to conduct current, called &ldquo;conductance,&rdquo; will be described in detail in this article.&nbsp;</p>
 
 ## Conductance vs Resistance
 <p>Resistance is defined as the measure of friction a component presents to the flow of current through it. Symbolized by the capital letter &ldquo;R,&rdquo; resistance is measured in the unit of &ldquo;ohm,&rdquo; which is represented by the Greek capital letter omega, &Omega;.&nbsp;</p>
@@ -19,18 +21,19 @@
 
 ## Conductance Units&mdash;mho and Siemens
 <p>Carrying this idea further, a symbol and unit were created to represent conductance. The symbol is the capital letter &ldquo;G,&rdquo; and the unit is the mho, which is &ldquo;ohm&rdquo; spelled backward (and you didn&rsquo;t think electronics engineers had any sense of humor!).</p>
-<p>Despite its appropriateness, the unit of the mho was replaced in later years by the unit of Siemens (abbreviated by the capital letter &ldquo;S&rdquo;). This decision to change unit names is reminiscent of the change from the temperature unit of degrees Centigrade to degrees Celsius; or the change from the unit of frequency c.p.s. (cycles per second) to Hertz. If you&rsquo;re looking for a pattern here, Siemens, Celsius, and <a href="https://www.allaboutcircuits.com/news/heinrich-hertz-building-the-foundation-for-modern-rf-understanding/" target="_blank">Hertz</a> are all surnames of famous scientists, the names of which, sadly, tell us less about the nature of the units than the units&rsquo; original designations.</p>
+<p>Despite its appropriateness, the unit of the mho was replaced in later years by the unit of Siemens (abbreviated by the capital letter &ldquo;S&rdquo;). This decision to change unit names is reminiscent of the change from the temperature unit of degrees Centigrade to degrees Celsius; or the change from the unit of frequency c.p.s. (cycles per second) to Hertz. If you&rsquo;re looking for a pattern here, Siemens, Celsius, and Hertz are all surnames of famous scientists, the names of which, sadly, tell us less about the nature of the units than the units&rsquo; original designations.</p>
 <p>As a footnote, the unit of Siemens is never expressed without the last letter &ldquo;s.&rdquo; In other words, there is no such thing as a unit of &ldquo;siemen&rdquo; as there is in the case of the &ldquo;ohm&rdquo; or the &ldquo;mho.&rdquo; The reason for this is the proper spelling of the respective scientists&rsquo; surnames.</p>
 <p>The unit for electrical resistance was named after someone named &ldquo;Ohm,&rdquo; whereas the unit for electrical conductance was named after someone named &ldquo;Siemens&rdquo;, therefore it would be improper to &ldquo;singularize&rdquo; the latter unit as its final &ldquo;s&rdquo; does not denote plurality.</p>
 
 ## Understanding Total Resistance and Total Conductance in a Parallel Circuit
-<p>In the next two sections, we&rsquo;ll cover the total resistance and conductance in <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/simple-parallel-circuits/" target="_blank">parallel circuits</a>.&nbsp;</p>
+<p>In the next two sections, we&rsquo;ll cover the total resistance and conductance in parallel circuits.&nbsp;</p>
 
 ### Total Resistance in a Parallel Circuit
 <p>Examining the parallel resistance circuit of Figure 1, we should be able to see that multiple paths (branches) for current reduce the total resistance for the whole circuit.&nbsp;</p>
 
 ^[037-02.jpg]
-#### <em><strong>Figure 1.</strong> Total parallel resistance is less than individual resistance values.</em>
+
+<em><strong>Figure 1.</strong> Total parallel resistance is less than individual resistance values.</em>
 
 <p>The current can flow more easily through the whole network of multiple branches than through any one of those branch resistances alone. In terms of resistance, additional branches result in a reduced total equivalent resistance because the current has less opposition.</p>
 
@@ -38,7 +41,8 @@
 <p>In terms of conductance, however, additional branches result in greater total conductance because the current flow is increased. Total parallel conductance is greater than any of the individual branch conductances because parallel resistors conduct better together than they would separately (Figure 2)</p>
 
 ^[037-03.jpg]
-#### <em><strong>Figure 2.</strong> Total parallel conductance is the sum of the individual conductance values.</em>
+
+<em><strong>Figure 2.</strong> Total parallel conductance is the sum of the individual conductance values.</em>
 
 <p>To be more precise, the total conductance in a parallel circuit is equal to the sum of the individual conductances:</p>
 

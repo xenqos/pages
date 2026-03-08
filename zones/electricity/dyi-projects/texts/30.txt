@@ -1,40 +1,40 @@
 # DC Lab - Rate-of-change Indicator
 ## Project Overview
-<p>The&nbsp;circuit in Figure 1 will provide&nbsp;a&nbsp;demonstration of using <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-6/introduction-analog-integrated-circuits/" target="_blank">analog circuits</a>&nbsp;to perform mathematical computations.</p>
+<p>The&nbsp;circuit in Figure 1 will provide&nbsp;a&nbsp;demonstration of using analog circuits&nbsp;to perform mathematical computations.</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/rate-of-change-indicator-illustration.jpg" /></p>
-#### <em><strong>Figure 1. </strong>Analog rate-of-change differentiator circuit.</em>
+<em><strong>Figure 1. </strong>Analog rate-of-change differentiator circuit.</em>
 
 <p>We typically only think of digital circuits, like our computers, as methods for mathematical computation. However, as you will see, analog circuits can also be used to perform some complex mathematical operations using surprisingly simple circuitry.</p>
 
 ## Parts and Materials
 <ul>
 <li>Two 6 V batteries or 12 V power supply</li>
-<li><a href="https://eepower.com/capacitor-guide/" target="_blank">Capacitor</a>, 0.1 &micro;F</li>
-<li>1 M&Omega; <a href="https://eepower.com/resistor-guide/" target="_blank">resistor</a></li>
-<li><a href="https://eepower.com/resistor-guide/resistor-types/potentiometer/" target="_blank">Potentiometer</a>, single turn, 5 k&Omega;, linear taper</li>
+<li>Capacitor, 0.1 &micro;F</li>
+<li>1 M&Omega; resistor</li>
+<li>Potentiometer, single turn, 5 k&Omega;, linear taper</li>
 </ul>
 <p>The potentiometer value is not especially critical, although lower-resistance units will, in theory, work better for this experiment than high-resistance units. I&rsquo;ve used a 10 k&Omega; potentiometer for this circuit with excellent results.</p>
 
 ## Learning Objectives
 <ul>
-<li>Learn how to build a <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-8/differentiator-integrator-circuits/" target="_blank">differentiator circuit</a></li>
-<li>To obtain an empirical understanding of the <a href="https://www.allaboutcircuits.com/textbook/reference/chpt-6/derivatives-power-functions-e/" target="_blank">derivative calculus function</a></li>
+<li>Learn how to build a differentiator circuit</li>
+<li>To obtain an empirical understanding of the derivative calculus function</li>
 </ul>
 
 ## Instructions
 <p><strong>Step 1:&nbsp;</strong>Build the circuit illustrated in Figure 1 and represented in schematic form in Figure 2.&nbsp;</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/rate-of-change-indicator-schematic-diagram.jpg" /></p>
-#### <em><strong>Figure 2. </strong>The schematic&nbsp;diagram for the differentiator circuit is illustrated in Figure 1.</em>
+<em><strong>Figure 2. </strong>The schematic&nbsp;diagram for the differentiator circuit is illustrated in Figure 1.</em>
 
-<p><strong>Step 2:&nbsp;</strong>Measure the&nbsp;<a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/voltage-current-practical-circuit/" target="_blank">voltage</a> between the potentiometer&rsquo;s wiper terminal and the <a href="https://www.allaboutcircuits.com/technical-articles/an-introduction-to-ground/" target="_blank">ground</a>&nbsp;point shown in the schematic diagram (the negative terminal of the lower 6 V battery). This is the input voltage for the circuit.</p>
-<p><strong>Step 3:</strong>&nbsp;Adjust the potentiometer and see how it smoothly varies between zero and 12 V as the potentiometer control is turned to full range. Since the potentiometer is used here as a <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-3/potentiometer-voltage-divider/" target="_blank">voltage divider</a>, this behavior should be unsurprising to you.</p>
-<p><strong>Step 4: </strong>Measure the voltage across the 1 M&Omega; resistor.&nbsp;What does the <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-2/voltage-usage/" target="_blank">voltmeter</a> indicate while the potentiometer is <em>not</em> being moved?</p>
+<p><strong>Step 2:&nbsp;</strong>Measure the&nbsp;voltage between the potentiometer&rsquo;s wiper terminal and the ground&nbsp;point shown in the schematic diagram (the negative terminal of the lower 6 V battery). This is the input voltage for the circuit.</p>
+<p><strong>Step 3:</strong>&nbsp;Adjust the potentiometer and see how it smoothly varies between zero and 12 V as the potentiometer control is turned to full range. Since the potentiometer is used here as a voltage divider, this behavior should be unsurprising to you.</p>
+<p><strong>Step 4: </strong>Measure the voltage across the 1 M&Omega; resistor.&nbsp;What does the voltmeter indicate while the potentiometer is <em>not</em> being moved?</p>
 <p><strong>Step 5:&nbsp;</strong>For this and the following steps, a&nbsp;digital voltmeter is highly recommended, and I advise setting it to a very sensitive (millivolt) range to obtain the strongest indications. Turn the potentiometer slowly clockwise and note the voltmeter&rsquo;s reading.</p>
 <p><strong>Step 6:&nbsp;</strong>Turn the potentiometer slowly counter-clockwise and note the voltmeter&rsquo;s indication. What difference in magnitude and sign do you see between the two different directions of potentiometer control motion?</p>
 <p><strong>Step 7:&nbsp;</strong>Try turning the potentiometer at faster rates in both directions. How does the voltmeter&#39;s output change?</p>
 <p><strong>Step 8:&nbsp;</strong>Try moving the potentiometer so that the voltmeter gives a steady, small indication. What kind of potentiometer motion provides the <em>steadiest</em> voltage across the 1 M&Omega; resistor?</p>
-<p>In calculus, a function representing the rate of change of one variable as compared to another is called the <a href="https://www.allaboutcircuits.com/textbook/reference/chpt-6/common-derivatives/" target="_blank"><em>derivative</em></a>. This simple circuit illustrates the concept of the derivative by producing an output voltage proportional to the input voltage&rsquo;s <em>rate of change over time</em>. Since this circuit performs the calculus function of differentiation with respect to time (outputting the time derivative of an incoming signal), it is called a <em>differentiator</em> circuit. The capacitor placed in series blocks DC (constant)&nbsp;voltages while passing AC (changing) voltages.</p>
-<p>Like the <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-3/a-very-simple-computer/" target="_blank">averaging&nbsp;circuit project</a>, the differentiator circuit is a kind of analog computer. Differentiation is a far more complex mathematical function than averaging, especially when implemented in a digital computer. Thus&nbsp;this circuit is an excellent demonstration of the elegance of analog circuitry in performing mathematical computations.</p>
-<p>More accurate differentiator circuits may be built by combining resistor-capacitor networks with electronic amplifier circuits. To learn more about computational circuitry, go to the <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-6/introduction-analog-integrated-circuits/" target="_blank">analog integrated circuits</a>&nbsp;chapter.</p>
+<p>In calculus, a function representing the rate of change of one variable as compared to another is called the <em>derivative</em>. This simple circuit illustrates the concept of the derivative by producing an output voltage proportional to the input voltage&rsquo;s <em>rate of change over time</em>. Since this circuit performs the calculus function of differentiation with respect to time (outputting the time derivative of an incoming signal), it is called a <em>differentiator</em> circuit. The capacitor placed in series blocks DC (constant)&nbsp;voltages while passing AC (changing) voltages.</p>
+<p>Like the averaging&nbsp;circuit project, the differentiator circuit is a kind of analog computer. Differentiation is a far more complex mathematical function than averaging, especially when implemented in a digital computer. Thus&nbsp;this circuit is an excellent demonstration of the elegance of analog circuitry in performing mathematical computations.</p>
+<p>More accurate differentiator circuits may be built by combining resistor-capacitor networks with electronic amplifier circuits. To learn more about computational circuitry, go to the analog integrated circuits&nbsp;chapter.</p>

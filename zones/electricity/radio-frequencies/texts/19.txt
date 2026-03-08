@@ -38,7 +38,7 @@
 <p>Differential QPSK (DQPSK) is a variant that is compatible with noncoherent receivers (i.e., receivers that don&rsquo;t synchronize the demodulation oscillator with the modulation oscillator). Differential QPSK encodes data by producing a certain phase shift <em>relative to the preceding symbol</em>. By using the phase of the preceding symbol in this way, the demodulation circuitry analyzes the phase of a symbol using a reference that is common to the receiver and the transmitter.</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/RFT_ch4_pg6_DQPSK.jpg" /></p>
-## &nbsp;
+
 ## Summary
 <ul>
 <li>Binary phase shift keying is a straightforward modulation scheme that can transfer one bit per symbol.</li>

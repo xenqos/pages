@@ -34,26 +34,37 @@
 <h6>10. DC Network Analysis</h6>
 
 <h1>Millman&#8217;s Theorem Revisited</h1>
-<p><a name=&quot;Millman's Theorem&quot;></a> <a name=&quot;Theorem, Millman's&quot;></a> You may have wondered where we got that strange equation for the determination of &ldquo;Millman Voltage&rdquo; across <a href=&quot;https://www.allaboutcircuits.com/video-lectures/parallel-circuits/&quot; target=&quot;_blank&quot;>parallel branches</a> of a circuit where each branch contains a <a href=&quot;https://www.allaboutcircuits.com/video-lectures/series-circuits-part-1/&quot; target=&quot;_blank&quot;>series resistance</a> and voltage source:</p>
+<p>  You may have wondered where we got that strange equation for the determination of &ldquo;Millman Voltage&rdquo; across parallel branches of a circuit where each branch contains a series resistance and voltage source:</p>
 <a target='_blank' href='../images/082-01.jpg'><img class='clImageThumb' src='../images/082-01.jpg'></a><br>
-<p>Parts of this equation seem familiar to equations we&rsquo;ve seen before. For instance, the denominator of the large fraction looks conspicuously like the denominator of our parallel resistance equation. And, of course, the E/R terms in the numerator of the large fraction should give figures for current, <a href=&quot;https://www.allaboutcircuits.com/video-lectures/electrical-quantities-b/&quot; target=&quot;_blank&quot;>Ohm&rsquo;s Law</a> being what it is (I=E/R).</p>
+
+<p>Parts of this equation seem familiar to equations we&rsquo;ve seen before. For instance, the denominator of the large fraction looks conspicuously like the denominator of our parallel resistance equation. And, of course, the E/R terms in the numerator of the large fraction should give figures for current, Ohm&rsquo;s Law being what it is (I=E/R).</p>
 <p>Now that we&rsquo;ve covered Thevenin and Norton source equivalencies, we have the tools necessary to understand Millman&rsquo;s equation. What Millman&rsquo;s equation is actually doing is treating each branch (with its series voltage source and resistance) as a Thevenin equivalent circuit and then converting each one into equivalent Norton circuits.</p>
 <h2>Thevenin Equivalent Circuit</h2>
+
 <a target='_blank' href='../images/082-02.jpg'><img class='clImageThumb' src='../images/082-02.jpg'></a><br>
+
 <p>Thus, in the circuit above, battery B1 and resistor R1 are seen as a Thevenin source to be converted into a Norton source of 7 amps (28 volts / 4 &Omega;) in parallel with a 4 &Omega; resistor. The rightmost branch will be converted into a 7 amp current source (7 volts / 1 &Omega;) and 1 &Omega; resistor in parallel. The center branch, containing no voltage source at all, will be converted into a Norton source of 0 amps in parallel with a 2 &Omega; resistor:</p>
 <h2>Norton Equivalent Circuit</h2>
+
 <a target='_blank' href='../images/082-03.jpg'><img class='clImageThumb' src='../images/082-03.jpg'></a><br>
+
 <p>Since current sources directly add their respective currents in parallel, the total circuit current will be 7 + 0 + 7, or 14 amps. This addition of Norton source currents is what&rsquo;s being represented in the numerator of the Millman equation:</p>
 <h2>Millman Equation</h2>
+
 <a target='_blank' href='../images/082-04.jpg'><img class='clImageThumb' src='../images/082-04.jpg'></a><br>
+
 <p>All the Norton resistances are in parallel with each other as well in the equivalent circuit, so they diminish to create a total resistance. This diminishing of source resistances is what&rsquo;s being represented in the denominator of the Millman&rsquo;s equation:</p>
 <a target='_blank' href='../images/082-05.jpg'><img class='clImageThumb' src='../images/082-05.jpg'></a><br>
+
 <p>In this case, the resistance total will be equal to 571.43 milliohms (571.43 m&Omega;). We can re-draw our equivalent circuit now as one with a single Norton current source and Norton resistance:</p>
 <a target='_blank' href='../images/082-06.jpg'><img class='clImageThumb' src='../images/082-06.jpg'></a><br>
+
 <p>Ohm&rsquo;s Law can tell us the voltage across these two components now (E=IR):</p>
 <a target='_blank' href='../images/082-07.jpg'><img class='clImageThumb' src='../images/082-07.jpg'></a><br>
+
 <p>Let&rsquo;s summarize what we know about the circuit thus far. We know that the total current in this circuit is given by the sum of all the branch voltages divided by their respective resistances. We also know that the total resistance is found by taking the reciprocal of all the branch resistance reciprocals. Furthermore, we should be well aware of the fact that total voltage across all the branches can be found by multiplying total current by the total resistance (E=IR). All we need to do is put together the two equations we had earlier for total circuit current and total resistance, multiplying them to find total voltage:</p>
 <a target='_blank' href='../images/082-08.jpg'><img class='clImageThumb' src='../images/082-08.jpg'></a><br>
+
 <p>The Millman&rsquo;s equation is nothing more than a Thevenin-to-Norton conversion matched together with the parallel resistance formula to find the total voltage across all the branches of the circuit. So, hopefully, some of the mystery is gone now!</p>
 
 

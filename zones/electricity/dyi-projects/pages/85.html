@@ -33,21 +33,21 @@
 
 <h1>Digital Lab - 7-segment LED Display</h1>
 <h2>Project Overview</h2>
-<p>The operating principle for this circuit (Figure 1)&nbsp;is to input a four-bit BCD (binary-coded decimal) value using the switches and energize the proper output lines to form the corresponding decimal digit on the 7-segment <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-3/special-purpose-diodes/&quot; target=&quot;_blank&quot;>light-emitting diode (LED)</a> display.</p>
+<p>The operating principle for this circuit (Figure 1)&nbsp;is to input a four-bit BCD (binary-coded decimal) value using the switches and energize the proper output lines to form the corresponding decimal digit on the 7-segment light-emitting diode (LED) display.</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/7-segment-display-schematic.jpg&quot; /></p>
-<h4><em><strong>Figure 1.</strong> Schematic diagram of the 7-segment LED display circuit.</em></h4>
+<em><strong>Figure 1.</strong> Schematic diagram of the 7-segment LED display circuit.</em><br>
 
 <h2>Parts and Materials</h2>
 <ul>
 <li>4511 BCD-to-7seg latch/decoder/driver</li>
 <li>Common-cathode 7-segment LED display</li>
 <li>Eight-position DIP switch</li>
-<li>Four 10 k&Omega; <a href=&quot;https://eepower.com/resistor-guide/&quot; target=&quot;_blank&quot;>resistors</a></li>
+<li>Four 10 k&Omega; resistors</li>
 <li>Seven 470 &Omega; resistors</li>
 <li>One 6 V battery</li>
 </ul>
 
-<p><strong>Caution!</strong> The 4511 IC is a <a href=&quot;https://www.allaboutcircuits.com/textbook/digital/chpt-3/cmos-gate-circuitry/&quot; target=&quot;_blank&quot;>complementary metal-oxide semiconductor (CMOS)</a>&nbsp;and, therefore, sensitive to <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/static-electricity/&quot; target=&quot;_blank&quot;>static electricity</a>!</p>
+<p><strong>Caution!</strong> The 4511 IC is a complementary metal-oxide semiconductor (CMOS)&nbsp;and, therefore, sensitive to static electricity!</p>
 
 <h2>Learning Objectives</h2>
 <ul>
@@ -61,11 +61,10 @@
 <p>This experiment is more of an introduction to the 4511 decoder/display driver IC than it is a lesson in how to build&nbsp;a digital function from lower-level components. Since 7-segment displays are&nbsp;common components of digital devices, it is good to be familiar with the driving&nbsp;circuits behind them, and the 4511 is a good example of a typical driver IC.</p>
 <p><strong>Step 1:</strong>&nbsp;Connect the four switches to their pulldown resistors and the ABCD inputs of the 4511 IC, as illustrated on the left side of Figures 1 and 2.</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/7-segment-display-illustration.jpg&quot; /></p>
-<h4><em><strong>Figure 2.</strong>&nbsp;Breadboard implementation of the 7-segment LED display circuit.</em></h4>
-
+<em><strong>Figure 2.</strong>&nbsp;Breadboard implementation of the 7-segment LED display circuit.</em><br>
+<br>
 <p>The BCD&nbsp;inputs are designated A, B, C, and D in order from least significant to most significant. The truth table for mapping these BCD inputs to the seven&nbsp;segment outputs is provided in Table 1.&nbsp;</p>
-
-<h4><em><strong>Table 1.</strong>&nbsp;A truth table for 4511 IC BCD to 7-segment display driver</em></h4>
+<em><strong>Table 1.</strong>&nbsp;A truth table for 4511 IC BCD to 7-segment display driver</em><br>
 <table align=&quot;center&quot; border=&quot;1&quot; cellpadding=&quot;1&quot; cellspacing=&quot;1&quot; summary=&quot;4511 IC Truth Table&quot;><br>
 <thead><br>
 <tr><br>
@@ -233,10 +232,10 @@
 </table><br>
 <br>
 <p><strong>Step 2:&nbsp;</strong>Connect the seven outputs from the 4511 IC to the corresponding inputs on the 7-segment display.&nbsp;Outputs are labeled a, b, c, d, e, f, and g, with each letter corresponding to a standardized segment designation for 7-segment displays. Of course, since each LED segment requires its own dropping resistor, we must use seven 470 &Omega; resistors placed in series between the 4511&rsquo;s output terminals and the corresponding terminals of the display unit.</p>
-<p><strong>Step 3:&nbsp;</strong>All LEDs inside the display unit are made common to each other on one side, either cathode or anode. The 4511 display driver IC requires a common-cathode 7-segment display unit, which is what is used here. So, we must connect the cathode connection to the <a href=&quot;https://www.allaboutcircuits.com/technical-articles/an-introduction-to-ground/&quot; target=&quot;_blank&quot;>ground</a>.</p>
+<p><strong>Step 3:&nbsp;</strong>All LEDs inside the display unit are made common to each other on one side, either cathode or anode. The 4511 display driver IC requires a common-cathode 7-segment display unit, which is what is used here. So, we must connect the cathode connection to the ground.</p>
 <p><strong>Step 4:&nbsp;</strong>Complete the remaining connections, illustrated in Figure 1, including power and ground.</p>
 <p><strong>Step 5:&nbsp;</strong>After building the circuit and applying power, operate the four switches in a binary counting sequence (0000 to 1001), noting the 7-segment display. A 0000 input should result in a decimal 0&nbsp;display, a 0001 input should result in a decimal 1&nbsp;display, and so on through 1001 (decimal 9).</p>
-<p><strong>Step 6:&nbsp;</strong>Test to see what happens for the <a href=&quot;https://www.allaboutcircuits.com/textbook/digital/chpt-2/binary-addition/&quot; target=&quot;_blank&quot;>binary numbers</a> 1010 (10) through 1111 (15). Read the <a href=&quot;https://www.ti.com/lit/ds/symlink/cd4511b.pdf&quot; target=&quot;_blank&quot;>datasheet on the 4511 IC</a> and see what the manufacturer specifies for operation above an input value of 9.</p>
+<p><strong>Step 6:&nbsp;</strong>Test to see what happens for the binary numbers 1010 (10) through 1111 (15). Read the datasheet on the 4511 IC and see what the manufacturer specifies for operation above an input value of 9.</p>
 <p>In the BCD code, there is no real meaning for 1010, 1011, 1100, 1101, 1110, or 1111. These are binary values beyond the range of a single decimal digit and so have no function in a BCD system. The 4511 IC is built to recognize this and output (or not output!) accordingly.</p>
 <p><strong>Step 7:&nbsp;</strong>Three inputs on the 4511 chip have been permanently connected to either V<sub>dd</sub> or ground. These input pins are <em>Lamp Test</em>, <em>Blanking Input</em>,&nbsp;and <em>Latch Enable</em>.&nbsp;To learn what these inputs do, remove the short jumpers connecting them to either power supply rail (one at a time), and replace the short jumper with a longer one that can reach the <em>other</em> power supply rail.</p>
 <p>For example, remove the short jumper connecting the <em>Latch Enable</em>&nbsp;input (pin #5) to the ground, and replace it with a long jumper wire that can reach all the way to the V<sub>dd</sub> power supply rail. Experiment with making this input high (1)&nbsp;and low(0),&nbsp;observing the results on the 7-segment display as you alter the BCD code with the four input switches.</p>

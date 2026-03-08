@@ -1,18 +1,19 @@
 ###### 02. Ohm's Law
 
 # Calculating Electric Power
-<p><a name="Power calculations"></a></p>
+<p></p>
 ## Learn the Power Formula
-<p>We&rsquo;ve seen the <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/power-electric-circuits/" target="_blank">formula for determining the power in an electric circuit:</a> by multiplying the voltage in &ldquo;volts&rdquo; by the current in &ldquo;amps&rdquo; we arrive at an answer in &ldquo;watts.&rdquo; Let&rsquo;s apply this to a circuit example:</p>
+<p>We&rsquo;ve seen the formula for determining the power in an electric circuit: by multiplying the voltage in &ldquo;volts&rdquo; by the current in &ldquo;amps&rdquo; we arrive at an answer in &ldquo;watts.&rdquo; Let&rsquo;s apply this to a circuit example:</p>
 
 ^[011-01.jpg]
-## &nbsp;
+
 ## How to Use Ohm&rsquo;s Law to Determine Current
 <p>In the above circuit, we know we have a battery voltage of 18 volts and a lamp resistance of 3 &Omega;. Using Ohm&rsquo;s Law to determine current, we get:</p>
 
 ^[011-02.png]
 
 <p>Now that we know the current, we can take that value and multiply it by the voltage to determine power:</p>
+
 ^[011-03.png]
 
 <p>This tells us that the lamp is dissipating (releasing) 108 watts of power, most likely in the form of both light and heat.</p>
@@ -22,13 +23,14 @@
 
 ^[011-04.jpg]
 
-<p>Now, the battery&rsquo;s voltage is 36 volts instead of 18 volts. The lamp is still providing 3 &Omega; of electrical <a href="https://www.allaboutcircuits.com/video-lectures/electronic-components-resistors/" target="_blank">resistance</a> to the flow of current. The current is now:</p>
+<p>Now, the battery&rsquo;s voltage is 36 volts instead of 18 volts. The lamp is still providing 3 &Omega; of electrical resistance to the flow of current. The current is now:</p>
 
 ^[011-05.png]
 
 <p>This stands to reason: if I = E/R, and we double E while R stays the same, the current should double. Indeed, it has: we now have 12 amps of current instead of 6. Now, what about power?</p>
+
 ^[011-06.png]
-## &nbsp;
+
 ## What does Increasing a Battery&rsquo;s Voltage do to Power?
 <p>Notice that the power has increased just as we might have suspected, but it increased quite a bit more than the current. Why is this? Because power is a function of voltage multiplied by current, and <em>both </em>voltage and current doubled from their previous values, the power will increase by a factor of 2 x 2, or 4.</p>
 <p>You can check this by dividing 432 watts by 108 watts and seeing that the ratio between them is indeed 4. Using algebra again to manipulate the formula, we can take our original power formula and modify it for applications where we don&rsquo;t know both voltage and current: If we only know voltage (E) and resistance (R):</p>
@@ -38,8 +40,8 @@
 <p>If we only know current (I) and resistance (R):</p>
 
 ^[011-08.png]
-## &nbsp;
-## Joule&rsquo;s Law Vs. Ohm&rsquo;s Law <a name="Joule's Law"></a>
+
+## Joule&rsquo;s Law Vs. Ohm&rsquo;s Law 
 <p>A historical note: it was James Prescott Joule, not Georg Simon Ohm, who first discovered the mathematical relationship between power dissipation and current through a resistance. This discovery, published in 1841, followed the form of the last equation (P = I<sup>2</sup>R), and is properly known as Joule&rsquo;s Law.</p>
 <p>However, these power equations are so commonly associated with the Ohm&rsquo;s Law equations relating voltage, current, and resistance (E=IR ; I=E/R ; and R=E/I) that they are frequently credited to Ohm.</p>
 

@@ -5,7 +5,7 @@
 <p><em>Parallel R-C circuit.</em></p>
 
 ## Resistor and Capacitor in Parallel
-<p>Because the power source has the same frequency as the series example circuit, and the <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/resistors/" target="_blank">resistor</a> and <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-13/practical-considerations-capacitors/" target="_blank">capacitor</a> both have the same values of resistance and capacitance, respectively, they must also have the same values of impedance. So, we can begin our analysis table with the same &ldquo;given&rdquo; values:</p>
+<p>Because the power source has the same frequency as the series example circuit, and the resistor and capacitor both have the same values of resistance and capacitance, respectively, they must also have the same values of impedance. So, we can begin our analysis table with the same &ldquo;given&rdquo; values:</p>
 
 <p><img src="/uploads/articles/resistor-and-capacitor-in-parallel-table1.jpg" /></p>
 
@@ -14,11 +14,11 @@
 <p><img src="/uploads/articles/resistor-and-capacitor-in-parallel-table2.jpg" /></p>
 
 ## Calculation Using Ohm&rsquo;s Law
-<p>Now we can apply <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-2/ohms-law/" target="_blank">Ohm&rsquo;s Law</a> (I=E/Z) vertically to two columns in the table, calculating current through the resistor and current through the capacitor:</p>
+<p>Now we can apply Ohm&rsquo;s Law (I=E/Z) vertically to two columns in the table, calculating current through the resistor and current through the capacitor:</p>
 
 <p><img src="/uploads/articles/resistor-and-capacitor-in-parallel-table3.jpg" /></p>
 
-<p>Just as with <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-3/introduction-to-dc-circuits/" target="_blank">DC circuits</a>, branch currents in a parallel AC circuit add up to form the total current (Kirchhoff&rsquo;s Current Law again):</p>
+<p>Just as with DC circuits, branch currents in a parallel AC circuit add up to form the total current (Kirchhoff&rsquo;s Current Law again):</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/PRCC_table4_2.jpg" /></p>
 

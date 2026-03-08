@@ -18,7 +18,7 @@
 <p><img src="/uploads/articles/ac-output-of-linear-variable-differential-transformer.png" /></p>
 <p><em>AC output of linear variable differential transformer (LVDT) indicates core position.</em></p>
 
-<p>Obviously, this device is a&nbsp;<em><a href="https://www.allaboutcircuits.com/video-lectures/transformers-part-1/" target="_blank">transformer</a></em>: it has a single primary winding powered by an external source of AC voltage, and two secondary windings connected in series-bucking fashion.</p>
+<p>Obviously, this device is a&nbsp;<em>transformer</em>: it has a single primary winding powered by an external source of AC voltage, and two secondary windings connected in series-bucking fashion.</p>
 <p>It is <em>variable</em> because the core is free to move between the windings. It is <em>differential</em> because of the way the two secondary windings are connected. Being arranged to oppose each other (180&deg; out of phase) means that the output of this device will be the <em>difference</em> between the voltage output of the two secondary windings.</p>
 <p>When the core is centered and both windings are outputting the same voltage, the net result at the output terminals will be zero volts. It is called <em>linear</em> because the core&rsquo;s freedom of motion is straight-line.</p>
 <p>The AC voltage output by an LVDT indicates the position of the movable core. Zero volts means that the core is centered.</p>
@@ -32,8 +32,8 @@
 ## Using RVDT
 <p>A variation on the LVDT is the RVDT, or <strong>R</strong>otary <strong>V</strong>ariable <strong>D</strong>ifferential <strong>T</strong>ransformer. This device works on almost the same principle, except that the core revolves on a shaft instead of moving in a straight line. RVDT&rsquo;s can only be constructed for a portion of 360&deg; (full-circle) motion.</p>
 ## Using Synchro or Selsyn
-<p>Continuing with this principle, we have what is known as a <em>Synchro</em> or <em>Selsyn</em>, which is a device constructed a lot like a wound-rotor polyphase&nbsp;<a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-13/introduction-ac-motors/" target="_blank">AC motor</a> or generator.</p>
-<p>The rotor is free to revolve a full 360&deg;, just like a motor. On the rotor is a single winding connected to a source of AC voltage, much like the primary winding of an LVDT. The stator windings are usually in the form of <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-10/three-phase-y-delta-configurations/" target="_blank">a three-phase Y</a>, although synchros with more than three phases have been built. (Figure below)</p>
+<p>Continuing with this principle, we have what is known as a <em>Synchro</em> or <em>Selsyn</em>, which is a device constructed a lot like a wound-rotor polyphase&nbsp;AC motor or generator.</p>
+<p>The rotor is free to revolve a full 360&deg;, just like a motor. On the rotor is a single winding connected to a source of AC voltage, much like the primary winding of an LVDT. The stator windings are usually in the form of a three-phase Y, although synchros with more than three phases have been built. (Figure below)</p>
 <p>A device with a two-phase stator is known as a <em>resolver</em>. A resolver produces sine and cosine outputs which indicate shaft position.</p>
 
 <p><em><img src="/uploads/articles/resolver-two-phase-stator.png" /></em></p>
@@ -57,7 +57,7 @@
 <p><em>AC voltmeter registers voltage if the receiver rotor is not rotated exactly 90 or 270 degrees from the transmitter rotor.</em></p>
 
 <p>This can be thought of almost as a sort of bridge circuit that achieves balance only if the receiver shaft is brought to one of two (matching) positions with the transmitter shaft.</p>
-<p>One rather ingenious application of the synchro is in the creation of a phase-shifting device, provided that the stator is energized by&nbsp;<a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-10/three-phase-power-systems/" target="_blank">three-phase AC</a>:</p>
+<p>One rather ingenious application of the synchro is in the creation of a phase-shifting device, provided that the stator is energized by&nbsp;three-phase AC:</p>
 <p><img src="/uploads/articles/synchro-transmitter-and-receiver3.png" /></p>
 <p><em>Full rotation of the rotor will smoothly shift the phase from 0&deg; all the way to 360&deg; (back to 0&deg;).</em></p>
 
@@ -71,7 +71,7 @@
 <p>The 2-phase windings provide direction information in the phasing of the sine and cosine waves. Movement by one pitch produces a cycle of sine and cosine waves; multiple pitches produce a train of waves.</p>
 
 <p><img src="/uploads/articles/cycle-of-sine-and-cosine-waves.png" /></p>
-<p><em>Inductosyn: (a) Fixed serpentine winding, (b) movable slider 2-phase windings. Adapted from Figure 6.16 [<a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-12/ac-instrumentation-transducers/#WAK.bibitem" target="_blank" title="WAK">WAK</a>]</em></p>
+<p><em>Inductosyn: (a) Fixed serpentine winding, (b) movable slider 2-phase windings. Adapted from Figure 6.16 [WAK]</em></p>
 
 <p>When we say sine and cosine waves are produced as a function of linear movement, we really mean a high frequency carrier is amplitude modulated as the slider moves.</p>
 <p>The two slider AC signals must be measured to determine position within a pitch, the fine position. How many pitches has the slider moved? The sine and cosine signals&rsquo; relationship does not reveal that. However, the number of pitches (number of waves) may be counted from a known starting point yielding coarse position.</p>
@@ -101,7 +101,7 @@
 <p><em>Differential capacitive transducer varies capacitance ratio by changing: (a) area of overlap, (b) distance between plates, (c) dielectric between plates.</em></p>
 
 <p>As you can see, all of the differential devices shown in the above illustration have <em>three</em> wire connections rather than two: one wire for each of the &ldquo;end&rdquo; plates and one for the &ldquo;common&rdquo; plate.</p>
-<p>As the capacitance between one of the &ldquo;end&rdquo; plates and the &ldquo;common&rdquo; plate changes, the capacitance between the other &ldquo;end&rdquo; plate and the &ldquo;common&rdquo; plate is such to change in the opposite direction. This kind of transducer lends itself very well to implementation in a <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-8/bridge-circuits/" target="_blank">bridge circuit</a>:</p>
+<p>As the capacitance between one of the &ldquo;end&rdquo; plates and the &ldquo;common&rdquo; plate changes, the capacitance between the other &ldquo;end&rdquo; plate and the &ldquo;common&rdquo; plate is such to change in the opposite direction. This kind of transducer lends itself very well to implementation in a bridge circuit:</p>
 ### Differential Capacitive Transducer Bridge
 <p><img src="/uploads/articles/differential-capacitive-transducer-bridge-measurement-circuit2.png" /></p>
 <p><em>Differential capacitive transducer bridge measurement circuit.</em></p>

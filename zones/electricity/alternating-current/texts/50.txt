@@ -1,16 +1,16 @@
 # Mutual Inductance and Basic Operation
 ## Behaviors of Inductors wrapped around a Conductive Core
-<p>Suppose we were to wrap a coil of insulated wire around a loop of ferromagnetic material and energize this coil with an <a href="https://www.allaboutcircuits.com/video-lectures/generation-of-alternating-voltage/" target="_blank">AC voltage</a> source: (Figure below (a))</p>
+<p>Suppose we were to wrap a coil of insulated wire around a loop of ferromagnetic material and energize this coil with an AC voltage source: (Figure below (a))</p>
 
 <p><img src="/uploads/articles/insulated-winding-on-ferromagnetic-loop.jpg" /></p>
 <p><em>Insulated winding on the ferromagnetic loop has inductive reactance, limiting AC current </em></p>
 
-<p>As an <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-3/ac-inductor-circuits/" target="_blank">inductor</a>, we would expect this iron-core coil to oppose the applied voltage with its inductive reactance, limiting current through the coil as predicted by the equations:</p>
+<p>As an inductor, we would expect this iron-core coil to oppose the applied voltage with its inductive reactance, limiting current through the coil as predicted by the equations:</p>
 
 <p><em>X<sub>L</sub> = 2&pi;fL and I=E/X (or I=E/Z)</em></p>
 
 <p>For the purposes of this example, though, we need to take a more detailed look at the interactions of voltage, current, and magnetic flux in the device.</p>
-<p><a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-6/kirchhoffs-current-law-kcl/" target="_blank">Kirchhoff&rsquo;s voltage law</a> describes how the algebraic sum of all voltages in a loop must equal zero. In this example, we could apply this fundamental law of electricity to describe the respective voltages of the source and of the inductor coil.</p>
+<p>Kirchhoff&rsquo;s voltage law describes how the algebraic sum of all voltages in a loop must equal zero. In this example, we could apply this fundamental law of electricity to describe the respective voltages of the source and of the inductor coil.</p>
 <p>Here, as in any one-source, one-load circuit, the voltage dropped across the load must equal the voltage supplied by the source, assuming zero voltage dropped along with the resistance of any connecting wires.</p>
 <p>In other words, the load (inductor coil) must produce an opposing voltage equal in magnitude to the source, in order that it may balance against the source voltage and produce an algebraic loop voltage sum of zero.</p>
 <p>From where does this opposing voltage arise? If the load were a resistor (figure above (b)), the voltage drop originates from electrical energy loss, the &ldquo;friction&rdquo; of charge carriers flowing through the resistance.</p>
@@ -88,7 +88,7 @@
 <p><img src="/uploads/articles/transformer.jpg" /></p>
 <p><em>Schematic symbol for a transformer consists of two inductor symbols, separated by lines indicating a ferromagnetic core.</em></p>
 
-<p>The two inductor coils are easily distinguished in the above symbol. The pair of vertical lines represent an iron core common to both inductors. While many <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-9/mutual-inductance-and-basic-operation/" target="_blank">transformers</a> have ferromagnetic core materials, there are some that do not, their constituent inductors being magnetically linked together through the air.</p>
+<p>The two inductor coils are easily distinguished in the above symbol. The pair of vertical lines represent an iron core common to both inductors. While many transformers have ferromagnetic core materials, there are some that do not, their constituent inductors being magnetically linked together through the air.</p>
 <p>The following photograph shows a power transformer of the type used in gas-discharge lighting. Here, the two inductor coils can be clearly seen, wound around an iron core. While most transformer designs enclose the coils and core in a metal frame for protection, this particular transformer is open for viewing and so serves its illustrative purpose well (Figure below):</p>
 
 <p><img src="/uploads/articles/example-of-gas-discharge-lighting-transformer.jpg" /></p>
@@ -105,7 +105,7 @@
 <p><em>Transformer cross-section cut shows core and windings.</em></p>
 
 ## Simple Transformer Action Using SPICE
-<p>It is easy to demonstrate simple transformer action using <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-3/spice-models/" target="_blank">SPICE</a>, setting up the primary and secondary windings of the simulated transformer as a pair of &ldquo;mutual&rdquo; inductors (figure below).</p>
+<p>It is easy to demonstrate simple transformer action using SPICE, setting up the primary and secondary windings of the simulated transformer as a pair of &ldquo;mutual&rdquo; inductors (figure below).</p>
 <p>The coefficient of magnetic field coupling is given at the end of the &ldquo;k&rdquo; line in the SPICE circuit description, this example being set very nearly at perfection (1.000). This coefficient describes how closely &ldquo;linked&rdquo; the two inductors are magnetical. The better these two inductors are magnetically coupled, the more efficient the energy transfer between them should be.</p>
 
 <p><img src="/uploads/articles/spice-circuit-for-coupled-inductors.jpg" /></p>

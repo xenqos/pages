@@ -8,12 +8,12 @@
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/direct-and-alternating-current-ac-dc.png" /></p>
 <p><em>Direct vs alternating current</em></p>
 
-<p>Whereas the familiar battery symbol is used as a generic symbol for any DC voltage source, the circle with the wavy line inside is the generic symbol for any <a href="https://www.allaboutcircuits.com/video-lectures/generation-of-alternating-voltage/" target="_blank">AC voltage</a> source.</p>
+<p>Whereas the familiar battery symbol is used as a generic symbol for any DC voltage source, the circle with the wavy line inside is the generic symbol for any AC voltage source.</p>
 <p>One might wonder why anyone would bother with such a thing as AC. It is true that in some cases AC holds no practical advantage over DC.</p>
 <p>In applications where electricity is used to dissipate energy in the form of heat, the polarity or direction of current is irrelevant, so long as there is enough voltage and current to the load to produce the desired heat (power dissipation). However, with AC it is possible to build electric generators, motors and power distribution systems that are far more efficient than DC, and so we find AC being used predominantly across the world in high power applications.</p>
 <p>To explain the details of why this is so, a bit of background knowledge about AC is necessary.</p>
 ## AC Alternators
-<p>If a machine is constructed to rotate a <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-15/magnetic-fields-and-inductance/" target="_blank">magnetic field</a> around a set of stationary wire coils with the turning of a shaft, AC voltage will be produced across the wire coils as that shaft is rotated, in accordance with Faraday&rsquo;s Law of <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-14/electromagnetic-induction/" target="_blank">electromagnetic induction</a>.</p>
+<p>If a machine is constructed to rotate a magnetic field around a set of stationary wire coils with the turning of a shaft, AC voltage will be produced across the wire coils as that shaft is rotated, in accordance with Faraday&rsquo;s Law of electromagnetic induction.</p>
 <p>This is the basic operating principle of an AC generator, also known as an <em>alternator</em>: Figure below</p>
 
 <p><img src="/uploads/articles/alternator-operation.jpg" /></p>
@@ -37,7 +37,7 @@
 <p>While DC motors require the use of brushes to make electrical contact with moving coils of wire, AC motors do not. In fact, AC and DC motor designs are very similar to their generator counterparts (identical for the sake of this tutorial), the AC motor being dependent upon the reversing magnetic field produced by alternating current through its stationary coils of wire to rotate the rotating magnet around on its shaft, and the DC motor being dependent on the brush contacts making and breaking connections to reverse current through the rotating coil every 1/2 rotation (180 degrees).</p>
 ## Transformers
 <p>So we know that AC generators and AC motors tend to be simpler than DC generators and DC motors. This relative simplicity translates into greater reliability and lower manufacturing cost. But what else is AC good for? Surely there must be more to it than design details of generators and motors! Indeed there is.</p>
-<p>There is an effect of electromagnetism known as <em><a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-9/mutual-inductance-and-basic-operation/" target="_blank">mutual induction</a></em>, whereby two or more coils of wire placed so that the changing magnetic field created by one induces a voltage in the other. If we have two mutually inductive coils and we energize one coil with AC, we will create an AC voltage in the other coil. When used as such, this device is known as a <em><a href="https://www.allaboutcircuits.com/video-lectures/transformers-part-1/" target="_blank">transformer</a></em>:&nbsp;</p>
+<p>There is an effect of electromagnetism known as <em>mutual induction</em>, whereby two or more coils of wire placed so that the changing magnetic field created by one induces a voltage in the other. If we have two mutually inductive coils and we energize one coil with AC, we will create an AC voltage in the other coil. When used as such, this device is known as a <em>transformer</em>:&nbsp;</p>
 
 <p><img src="/uploads/articles/transformer-circuit.jpg" /></p>
 <p><em>Transformer &ldquo;transforms&rdquo; AC voltage and current.</em></p>
@@ -54,13 +54,13 @@
 <p><em>Speed reduction gear train steps torque up and speed down. Step-up transformer steps voltage up and current down.</em></p>
 
 <p>The transformer&rsquo;s ability to step AC voltage up or down with ease gives AC an advantage unmatched by DC in the realm of power distribution in figure below.</p>
-<p>When transmitting <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/power-electric-circuits/" target="_blank">electrical power</a> over long distances, it is far more efficient to do so with stepped-up voltages and stepped-down currents (smaller-diameter wire with less resistive power losses), then step the voltage back down and the current back up for industry, business, or consumer use.</p>
+<p>When transmitting electrical power over long distances, it is far more efficient to do so with stepped-up voltages and stepped-down currents (smaller-diameter wire with less resistive power losses), then step the voltage back down and the current back up for industry, business, or consumer use.</p>
 
 <p><img src="/uploads/articles/high-voltage-transmission.jpg" /></p>
 <p><em>Transformers enable efficient long distance high voltage transmission of electric energy.</em></p>
 
 <p>Transformer technology has made long-range electric power distribution practical. Without the ability to efficiently step voltage up and down, it would be cost-prohibitive to construct power systems for anything but close-range (within a few miles at most) use.</p>
-<p>As useful as transformers are, they only work with AC, not DC. Because the phenomenon of mutual inductance relies on <em>changing</em> <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-15/magnetic-fields-and-inductance/" target="_blank">magnetic fields</a>, and direct current (DC) can only produce steady magnetic fields, transformers simply will not work with direct current.</p>
+<p>As useful as transformers are, they only work with AC, not DC. Because the phenomenon of mutual inductance relies on <em>changing</em> magnetic fields, and direct current (DC) can only produce steady magnetic fields, transformers simply will not work with direct current.</p>
 <p>Of course, direct current may be interrupted (pulsed) through the primary winding of a transformer to create a changing magnetic field (as is done in automotive ignition systems to produce high-voltage spark plug power from a low-voltage DC battery), but pulsed DC is not that different from AC.</p>
 <p>Perhaps more than any other reason, this is why AC finds such widespread application in power systems.</p>
 

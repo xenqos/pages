@@ -32,10 +32,10 @@
 <div id='idContent'>
 
 <h1>AC Bridge Circuits</h1>
-<p>As we saw with&nbsp;<a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-8/what-is-a-meter/&quot; target=&quot;_blank&quot;>DC measurement circuits</a>, the circuit configuration known as a <em><a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-8/bridge-circuits/&quot; target=&quot;_blank&quot;>bridge</a>&nbsp;</em>can be a very useful way to measure unknown values of&nbsp;<a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/resistance/&quot; target=&quot;_blank&quot;>resistance</a>.</p>
+<p>As we saw with&nbsp;DC measurement circuits, the circuit configuration known as a <em>bridge&nbsp;</em>can be a very useful way to measure unknown values of&nbsp;resistance.</p>
 <p>This is true with AC as well, and we can apply the very same principle to the accurate measurement of unknown impedances.</p>
 <h2>How Does a Bridge Circuit Work?</h2>
-<p>To review, the&nbsp;<a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-8/bridge-circuits/&quot; target=&quot;_blank&quot;>bridge circuit</a> works as a pair of two-component&nbsp;<a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-6/voltage-divider-circuits/&quot; target=&quot;_blank&quot;>voltage dividers</a> connected across the same source voltage, with a <em>null-detector</em> meter movement connected between them to indicate a condition of &ldquo;balance&rdquo; at zero volts:</p>
+<p>To review, the&nbsp;bridge circuit works as a pair of two-component&nbsp;voltage dividers connected across the same source voltage, with a <em>null-detector</em> meter movement connected between them to indicate a condition of &ldquo;balance&rdquo; at zero volts:</p>
 <p><img src=&quot;/uploads/articles/balanced-bridge-null-or-minimum.png&quot; /></p>
 <p><em>A balanced bridge shows a &ldquo;null&rdquo;, or minimum reading, on the indicator.</em></p>
 <p>Anyone of the four resistors in the above bridge can be the resistor of unknown value, and its value can be determined by a ratio of the other three, which are &ldquo;calibrated,&rdquo; or whose resistances are known to a precise degree.</p>
@@ -46,10 +46,10 @@
 <p>Practically speaking, the higher the supply voltage, the easier it is to detect a condition of imbalance between the four resistors with the null detector, and thus the more sensitive it will be.</p>
 <p>A greater supply voltage leads to the possibility of increased measurement precision. However, there will be no fundamental error introduced as a result of a lesser or greater power supply voltage unlike other types of resistance measurement schemes.</p>
 <h3>Impedance Bridge</h3>
-<p>Impedance bridges work the same, only the balance equation is with&nbsp;<a href=&quot;https://www.allaboutcircuits.com/textbook/alternating-current/chpt-2/introduction-to-complex-numbers/&quot; target=&quot;_blank&quot;><em>complex</em> quantities</a>, as both magnitude and phase across the components of the two dividers must be equal in order for the null detector to indicate &ldquo;zero.&rdquo;</p>
+<p>Impedance bridges work the same, only the balance equation is with&nbsp;<em>complex</em> quantities, as both magnitude and phase across the components of the two dividers must be equal in order for the null detector to indicate &ldquo;zero.&rdquo;</p>
 <p>The null detector, of course, must be a device capable of detecting very small AC voltages. An oscilloscope is often used for this, although very sensitive electromechanical meter movements and even headphones (small speakers) may be used if the source frequency is within audio range.</p>
 <h3>Null Detector for AC</h3>
-<p>One way to maximize the effectiveness of audio headphones as a null detector is to connect them to the signal source through an impedance-matching&nbsp;<a href=&quot;https://www.allaboutcircuits.com/video-lectures/transformers-part-1/&quot; target=&quot;_blank&quot;>transformer</a>.</p>
+<p>One way to maximize the effectiveness of audio headphones as a null detector is to connect them to the signal source through an impedance-matching&nbsp;transformer.</p>
 <p>Headphone speakers are typically low-impedance units (8 &Omega;), requiring substantial current to drive, and so a step-down transformer helps &ldquo;match&rdquo; low-current signals to the impedance of the headphone speakers.</p>
 <p>An audio output transformer works well for this purpose: (Figure below)</p>
 <p><img src=&quot;/uploads/articles/null-detector-for-ac-bridge-made-from-audio-headphones.png&quot; /></p>
@@ -82,12 +82,12 @@
 <p>They are a bit simplified from their real-life counterparts, as practical symmetrical bridge circuits often have a calibrated, variable resistor in series or parallel with the reactive component to balance out stray resistance in the unknown component.</p>
 <p>But, in the hypothetical world of perfect components, these simple bridge circuits do just fine to illustrate the basic concept.</p>
 <h3>Wien Bridge</h3>
-<p>An example of a little extra complexity added to compensate for real-world effects can be found in the so-called <em>Wien bridge</em>, which uses a&nbsp;<a href=&quot;https://www.allaboutcircuits.com/video-lectures/parallel-rc-circuits/&quot; target=&quot;_blank&quot;>parallel capacitor-resistor</a> standard impedance to balance out an unknown&nbsp;<a href=&quot;https://www.allaboutcircuits.com/textbook/alternating-current/chpt-4/series-resistor-capacitor-circuits/&quot; target=&quot;_blank&quot;>series capacitor-resistor</a> combination. (Figure below)</p>
+<p>An example of a little extra complexity added to compensate for real-world effects can be found in the so-called <em>Wien bridge</em>, which uses a&nbsp;parallel capacitor-resistor standard impedance to balance out an unknown&nbsp;series capacitor-resistor combination. (Figure below)</p>
 <p>All capacitors have some amount of internal resistance, be it literal or equivalent (in the form of dielectric heating losses) which tend to spoil their otherwise perfectly reactive natures.</p>
 <p>This internal resistance may be of interest to measure, and so the Wien bridge attempts to do so by providing a balancing impedance that isn&rsquo;t &ldquo;pure&rdquo; either:</p>
 <p><img src=&quot;/uploads/articles/wein-bridge-real-capacitor.png&quot; /></p>
 <p><em>Wein Bridge measures both capacitive Cx and resistive Rx components of &ldquo;real&rdquo; capacitor.</em></p>
-<p>Being that there are two standard components to be adjusted (a&nbsp;<a href=&quot;https://www.allaboutcircuits.com/video-lectures/electronic-components-resistors/&quot; target=&quot;_blank&quot;>resistor</a> and a&nbsp;<a href=&quot;https://www.allaboutcircuits.com/video-lectures/capacitors-part-1/&quot; target=&quot;_blank&quot;>capacitor</a>) this bridge will take a little more time to balance than the others we&rsquo;ve seen so far.</p>
+<p>Being that there are two standard components to be adjusted (a&nbsp;resistor and a&nbsp;capacitor) this bridge will take a little more time to balance than the others we&rsquo;ve seen so far.</p>
 <p>The combined effect of Rs and Cs is to alter the magnitude and phase angle until the bridge achieves a condition of balance.</p>
 <p>Once that balance is achieved, the settings of Rs and Cs can be read from their calibrated knobs, the parallel impedance of the two determined mathematically, and the unknown capacitance and resistance determined mathematically from the balance equation (Z1/Z2 = Z3/Z4).</p>
 <p>It is assumed in the operation of the Wien bridge that the standard capacitor has negligible internal resistance, or at least that resistance is already known so that it can be factored into the balance equation.</p>
@@ -113,7 +113,7 @@
 <p>Because capacitances can &ldquo;conduct&rdquo; alternating current by charging and discharging, they form stray current paths to the AC voltage source which may affect bridge balance:</p>
 <p><em><img src=&quot;/uploads/articles/stray-capacitance-to-ground.png&quot; /></em></p>
 <p><em><em>Stray capacitance to the ground may introduce errors into the bridge.</em></em></p>
-<p>While reed-type meters are imprecise, their operational principle is not. In lieu of mechanical resonance, we may substitute&nbsp;<a href=&quot;https://www.allaboutcircuits.com/textbook/alternating-current/chpt-6/simple-series-resonance/&quot; target=&quot;_blank&quot;>electrical resonance</a> and design a frequency meter using an inductor and capacitor in the form of a tank circuit (parallel inductor and capacitor).</p>
+<p>While reed-type meters are imprecise, their operational principle is not. In lieu of mechanical resonance, we may substitute&nbsp;electrical resonance and design a frequency meter using an inductor and capacitor in the form of a tank circuit (parallel inductor and capacitor).</p>
 <p>One or both components are made adjustable, and a meter is placed in the circuit to indicate the maximum amplitude of the voltage across the two components.</p>
 <p>The adjustment knob(s) are calibrated to show resonant frequency for any given setting, and the frequency is read from them after the device has been adjusted for the maximum indication on the meter.</p>
 <p>Essentially, this is a tunable filter circuit which is adjusted and then read in a manner similar to a bridge circuit (which must be balanced for a &ldquo;null&rdquo; condition and then read).</p>
@@ -124,10 +124,10 @@
 <h3>Wagner Ground</h3>
 <p>One way of greatly reducing this effect is to keep the null detector at ground potential, so there will be no AC voltage between it and the ground, and thus no current through stray capacitances.</p>
 <p>However, directly connecting the null detector to the ground is not an option, as it would create a <em>direct</em> current path for stray currents, which would be worse than any capacitive path.</p>
-<p>Instead, a special&nbsp;<a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-6/voltage-divider-circuits/&quot; target=&quot;_blank&quot;>voltage divider circuit</a> called a <em>Wagner ground</em> or <em>Wagner earth</em> may be used to maintain the null detector at ground potential without the need for a direct connection to the null detector. (Figure below)</p>
+<p>Instead, a special&nbsp;voltage divider circuit called a <em>Wagner ground</em> or <em>Wagner earth</em> may be used to maintain the null detector at ground potential without the need for a direct connection to the null detector. (Figure below)</p>
 <p><img src=&quot;/uploads/articles/wagner-ground-for-ac-supply.png&quot; /></p>
 <p><em>Wagner ground for AC supply minimizes the effects of stray capacitance to the ground on the bridge.</em></p>
-<p>The Wagner earth circuit is nothing more than a voltage divider, designed to have the voltage ratio and&nbsp;<a href=&quot;https://www.allaboutcircuits.com/textbook/experiments/chpt-4/phase-shift/&quot; target=&quot;_blank&quot;>phase shift</a> as each side of the bridge.</p>
+<p>The Wagner earth circuit is nothing more than a voltage divider, designed to have the voltage ratio and&nbsp;phase shift as each side of the bridge.</p>
 <p>Because the midpoint of the Wagner divider is directly grounded, any other divider circuit (including either side of the bridge) having the same voltage proportions and phases as the Wagner divider, and powered by the same AC voltage source, will be at ground potential as well.</p>
 <p>Thus, the Wagner earth divider forces the null detector to be at ground potential, without a direct connection between the detector and ground.</p>
 <p>There is often a provision made in the null detector connection to confirm the proper setting of the Wagner earth divider circuit: a two-position switch, (Figure below) so that one end of the null detector may be connected to either the bridge or the Wagner earth.</p>

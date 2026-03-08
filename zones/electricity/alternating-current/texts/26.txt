@@ -1,7 +1,7 @@
 # Review of R, X, and Z (Resistance, Reactance and Impedance)
-<p>Before we begin to explore the effects of <a href="https://www.allaboutcircuits.com/video-lectures/electronic-components-resistors/" target="_blank">resistors</a>, <a href="https://www.allaboutcircuits.com/video-lectures/inductors-part-1/" target="_blank">inductors</a>, and <a href="https://www.allaboutcircuits.com/video-lectures/capacitors-part-1/" target="_blank">capacitors</a> connected together in the same AC circuits, let&rsquo;s briefly review some basic terms and facts.</p>
+<p>Before we begin to explore the effects of resistors, inductors, and capacitors connected together in the same AC circuits, let&rsquo;s briefly review some basic terms and facts.</p>
 ## Resistance
-<p>This is essentially <em>friction</em> against the flow of current. It is present in all conductors to some extent (except <em>super</em>conductors!), most notably in resistors. When the alternating current goes through a <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/resistance/" target="_blank">resistance</a>, a voltage drop is produced that is in-phase with the current. Resistance is mathematically symbolized by the letter &ldquo;R&rdquo; and is measured in the unit of ohms (&Omega;).</p>
+<p>This is essentially <em>friction</em> against the flow of current. It is present in all conductors to some extent (except <em>super</em>conductors!), most notably in resistors. When the alternating current goes through a resistance, a voltage drop is produced that is in-phase with the current. Resistance is mathematically symbolized by the letter &ldquo;R&rdquo; and is measured in the unit of ohms (&Omega;).</p>
 ## Reactance
 <p>This is essentially <em>inertia</em> against the flow of current. It is present anywhere electric or magnetic fields are developed in proportion to an applied voltage or current, respectively; but most notably in capacitors and inductors.</p>
 <p>When the alternating current goes through a pure reactance, a voltage drop is produced that is 90&deg; out of phase with the current. Reactance is mathematically symbolized by the letter &ldquo;X&rdquo; and is measured in the unit of ohms (&Omega;).</p>
@@ -15,6 +15,6 @@
 <p>The impedance phase angle for any component is the phase shift between the voltage across that component and current through that component.</p>
 <p>For a perfect resistor, the voltage drop and current are <em>always</em> in phase with each other, and so the impedance angle of a resistor is said to be 0&deg;. For a perfect inductor, voltage drop always leads current by 90&deg;, and so an inductor&rsquo;s impedance phase angle is said to be +90&deg;.</p>
 <p>For a perfect capacitor, voltage drop always lags current by 90&deg;, and so a capacitor&rsquo;s impedance phase angle is said to be -90&deg;.</p>
-<p>Impedances in AC behave analogously to resistances in DC circuits: they add in series, and they diminish in parallel. A revised version of <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/voltage-current-resistance-relate/" target="_blank">Ohm&rsquo;s Law</a>, based on impedance rather than resistance, looks like this:</p>
+<p>Impedances in AC behave analogously to resistances in DC circuits: they add in series, and they diminish in parallel. A revised version of Ohm&rsquo;s Law, based on impedance rather than resistance, looks like this:</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/OhmsLaw_AC.jpg" /></p>

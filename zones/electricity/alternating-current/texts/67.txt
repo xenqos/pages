@@ -1,6 +1,6 @@
 # True, Reactive, and Apparent Power
 ## Reactive Power
-<p>We know that reactive loads such as <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-15/practical-considerations-inductors/" target="_blank">inductors</a> and <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-13/practical-considerations-capacitors/" target="_blank">capacitors</a> dissipate zero power, yet the fact that they drop <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/voltage-current-practical-circuit/" target="_blank">voltage</a> and draw current gives the deceptive impression that they actually <em>do</em> dissipate power.</p>
+<p>We know that reactive loads such as inductors and capacitors dissipate zero power, yet the fact that they drop voltage and draw current gives the deceptive impression that they actually <em>do</em> dissipate power.</p>
 <p>This &ldquo;phantom power&rdquo; is called <em>reactive power</em>, and it is measured in a unit called <em>Volt-Amps-Reactive</em> (VAR), rather than watts.</p>
 <p>The mathematical symbol for reactive power is (unfortunately) the capital letter Q.</p>
 
@@ -12,7 +12,7 @@
 <p>Apparent power is measured in the unit of <em>Volt-Amps</em> (VA) and is symbolized by the capital letter S.</p>
 
 ## Calculating for Reactive, True, or Apparent Power
-<p>As a rule, true power is a function of a circuit&rsquo;s dissipative elements, usually <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/resistance/" target="_blank">resistances</a> (R). Reactive power is a function of a circuit&rsquo;s reactance (X).</p>
+<p>As a rule, true power is a function of a circuit&rsquo;s dissipative elements, usually resistances (R). Reactive power is a function of a circuit&rsquo;s reactance (X).</p>
 <p>Apparent power is a function of a circuit&rsquo;s total impedance (Z). Since we&rsquo;re dealing with scalar quantities for power calculation, any complex starting quantities such as voltage (V), current (I), and impedance must be represented by their <em>polar magnitudes</em>, not by real or imaginary rectangular components.</p>
 <p>For instance, if I&rsquo;m calculating true power from current and resistance, I must use the polar magnitude for current, and not merely the &ldquo;real&rdquo; or &ldquo;imaginary&rdquo; portion of the current.</p>
 <p>If I&rsquo;m calculating apparent power from voltage and impedance, both of these formerly complex quantities must be reduced to their polar magnitudes for the scalar arithmetic.</p>

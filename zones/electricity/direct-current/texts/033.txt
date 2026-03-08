@@ -3,25 +3,29 @@
 ## 05. Series And Parallel Circuits ##
 
 # What is the Difference Between Series and Parallel Circuits?
+
 ^[033-01.jpg]
+
 <h3 class="text-lg lg:text-2xl font-bold mb-3">What are Series and Parallel Circuits?</h3>
 <p><p>In a series circuit, all components are connected end-to-end to form a single path for current flow. In a parallel circuit, all components are connected across each other with exactly two electrically common nodes with the same voltage across each component.</p></p>
-<p>Circuits consisting of just one <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-11/battery-construction/" target="_blank">battery</a> and one load <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/resistance/" target="_blank">resistance</a> are very simple to analyze, but they are not often found in practical applications. Usually, we find circuits where more than two components are connected together.&nbsp;</p>
-<p>There are two fundamental ways in which to connect more than two circuit components: <a href="https://www.allaboutcircuits.com/video-lectures/series-circuits-part-1/" target="_blank">series</a> and <a href="https://www.allaboutcircuits.com/video-lectures/parallel-circuits/" target="_blank">parallel</a>. These two basic connection methods can be combined to create more complex <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-7/what-is-a-series-parallel-circuit/" target="_blank">series-parallel circuits</a>.</p>
+<p>Circuits consisting of just one battery and one load resistance are very simple to analyze, but they are not often found in practical applications. Usually, we find circuits where more than two components are connected together.&nbsp;</p>
+<p>There are two fundamental ways in which to connect more than two circuit components: series and parallel. These two basic connection methods can be combined to create more complex series-parallel circuits.</p>
 
 ## What is a Series Connection?
-<p>The definition of a <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/simple-series-circuits/" target="_blank">series circuit</a> is a circuit where the components are connected end-to-end in a line as illustrated in Figure 1.</p>
+<p>The definition of a series circuit is a circuit where the components are connected end-to-end in a line as illustrated in Figure 1.</p>
 
 ^[033-02.jpg]
-#### <em><strong>Figure 1.</strong> Series connection of resistors</em>
 
-<p>These series <a href="https://www.allaboutcircuits.com/video-lectures/electronic-components-resistors/" target="_blank">resistors</a> form a single path through which current can flow.</p>
+<em><strong>Figure 1.</strong> Series connection of resistors</em>
+
+<p>These series resistors form a single path through which current can flow.</p>
 
 ## Introduction to Series Circuits&mdash;A Series Circuit Example
 <p>Now, let&rsquo;s examine an example of a series circuit as shown in Figure 2:</p>
 
 ^[033-03.jpg]
-#### <em><strong>Figure 2. </strong>An example of a series circuit.</em>
+
+<em><strong>Figure 2. </strong>An example of a series circuit.</em>
 
 <p>Here, we have three resistors (labeled R<sub>1</sub>, R<sub>2</sub>, and R<sub>3</sub>) connected in a long chain from one battery terminal to the other. Each resistor in a series circuit shares one electrical node with its nearest neighbor.</p>
 
@@ -32,10 +36,11 @@
 <p>A series circuit&rsquo;s defining characteristic is that all components in a series circuit have the same current flowing through them. There is only one path for the current to flow. In the circuit from Figure 2, the current (I) flows clockwise to complete a full loop from the positive battery terminal back to the negative terminal and then through the battery following the path 1&ndash;2&ndash;3&ndash;4&ndash;1.</p>
 
 ## What Is a Parallel Connection?
-<p>The definition of a&nbsp;<a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/simple-parallel-circuits/" target="_blank">parallel circuit</a> is a circuit where all components are connected across each other&rsquo;s leads as shown in Figure 3.</p>
+<p>The definition of a&nbsp;parallel circuit is a circuit where all components are connected across each other&rsquo;s leads as shown in Figure 3.</p>
 
 ^[033-04.jpg]
-#### <em><strong>Figure 3.</strong> An example of a parallel connection of resistors.</em>
+
+<em><strong>Figure 3.</strong> An example of a parallel connection of resistors.</em>
 
 <p>In a purely parallel circuit, there are never more than two sets of electrically common points, no matter how many components are connected. There are many paths for current flow, but only one voltage across all components.</p>
 
@@ -43,7 +48,8 @@
 <p>Let&rsquo;s look at an example of a parallel circuit as shown in Figure 4.</p>
 
 ^[033-05.jpg]
-#### <em><strong>Figure 4.&nbsp;</strong>Example of a parallel circuit.</em>
+
+<em><strong>Figure 4.&nbsp;</strong>Example of a parallel circuit.</em>
 
 <p>Again, we have three resistors, but this time there are three loops for the current to flow from the positive battery terminal back to the negative terminal:</p>
 <ol>

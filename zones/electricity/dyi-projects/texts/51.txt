@@ -1,18 +1,18 @@
 # Si Lab - Full-wave Bridge Rectifier
 ## Project Overview
-<p>The circuit of Figure 1 uses four <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-3/introduction-to-diodes-and-rectifiers/" target="_blank">diodes</a> to&nbsp;provide&nbsp;full-wave rectification without the necessity of a center-tapped <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-9/practical-considerations-transformers/" target="_blank">transformer</a>.&nbsp;</p>
+<p>The circuit of Figure 1 uses four diodes to&nbsp;provide&nbsp;full-wave rectification without the necessity of a center-tapped transformer.&nbsp;</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/full-wave-bridge-rectifier-schematic-diagram.jpg" /></p>
-#### <em><strong>Figure 1. </strong>Schematic diagram of the&nbsp;full-wave bridge rectifier circuit driving a motor</em>
+<em><strong>Figure 1. </strong>Schematic diagram of the&nbsp;full-wave bridge rectifier circuit driving a motor</em>
 
-<p>Can you trace the current path from the AC power supply through one diode, through the <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-13/introduction-ac-motors/" target="_blank">motor</a>, through a second diode, and back to the AC power supply for both the positive and negative half-cycles of the AC supply voltage?</p>
-<p>In applications where a <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-5/full-wave-center-tap-rectifier/" target="_blank">center-tapped</a> or <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-10/single-phase-power-systems/" target="_blank">split-phase</a>&nbsp;source is unavailable, this is the only practical method of full-wave rectification. The advantages of the circuit include its simple design and low-cost components.</p>
-<p>However, in addition to requiring more diodes than the center-tap circuit, the full-wave bridge suffers a slight performance disadvantage as well.&nbsp;The additional <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/polarity-voltage-drops/" target="_blank">voltage drop</a>&nbsp;is caused by the current having to go through two <a href="https://www.allaboutcircuits.com/video-lectures/diode-characteristics-circuits/" target="_blank">diodes</a> in each half-cycle rather than through only one.</p>
+<p>Can you trace the current path from the AC power supply through one diode, through the motor, through a second diode, and back to the AC power supply for both the positive and negative half-cycles of the AC supply voltage?</p>
+<p>In applications where a center-tapped or split-phase&nbsp;source is unavailable, this is the only practical method of full-wave rectification. The advantages of the circuit include its simple design and low-cost components.</p>
+<p>However, in addition to requiring more diodes than the center-tap circuit, the full-wave bridge suffers a slight performance disadvantage as well.&nbsp;The additional voltage drop&nbsp;is caused by the current having to go through two diodes in each half-cycle rather than through only one.</p>
 
 ## Parts and Materials
 <ul>
 <li>Low-voltage AC power supply (6 V output)</li>
-<li>Four <a href="https://www.vishay.com/docs/88503/1n4001.pdf" target="_blank">1N4001</a> rectifying diodes</li>
+<li>Four 1N4001 rectifying diodes</li>
 <li>Small hobby&nbsp;motor, permanent-magnet type</li>
 </ul>
 
@@ -26,15 +26,15 @@
 <p><strong>Step 1:&nbsp;</strong>Build the full-wave bridge rectifier circuit using the four silicon diodes, as illustrated in Figures 1 and 2.&nbsp;</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/thumbnails/full-wave_bridge_rectifier_Figure_2.jpg" /></p>
-#### <em><strong>Figure 2.&nbsp;</strong>Terminal strip implementation of the&nbsp;full-wave bridge rectifier circuit driving a motor.</em>
+<em><strong>Figure 2.&nbsp;</strong>Terminal strip implementation of the&nbsp;full-wave bridge rectifier circuit driving a motor.</em>
 
-<p><strong>Step 2:&nbsp;</strong>Measure the DC voltage across the motor.&nbsp;Compare the DC voltage reading across the motor terminals with the reading obtained from the <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-5/half-wave-rectifier/" target="_blank">half-wave rectifier experiment</a>, given the same AC power supply and the same motor.&nbsp;With a low-voltage source such as the one you&rsquo;re using (6 V <a href="https://www.allaboutcircuits.com/technical-articles/how-standard-deviations-relates-rms-values/" target="_blank">RMS or root mean square)</a>, the&nbsp;disadvantage of the two voltage drops for this full-wave bridge rectifier is easily measured.</p>
+<p><strong>Step 2:&nbsp;</strong>Measure the DC voltage across the motor.&nbsp;Compare the DC voltage reading across the motor terminals with the reading obtained from the half-wave rectifier experiment, given the same AC power supply and the same motor.&nbsp;With a low-voltage source such as the one you&rsquo;re using (6 V RMS or root mean square), the&nbsp;disadvantage of the two voltage drops for this full-wave bridge rectifier is easily measured.</p>
 
 ## SPICE Simulation of the Full-wave Bridge Rectifier Circuit
 <p>We can simulate the full-wave bridge rectifier using the circuit with node numbers, as illustrated in Figure 3.</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/full-wave-bridge-rectifier-schematic-with-spice-node-numbers .jpg" /></p>
-#### <em><strong>Figure 3.&nbsp;</strong>SPICE circuit schematic for a full-wave bridge rectifier circuit</em>
+<em><strong>Figure 3.&nbsp;</strong>SPICE circuit schematic for a full-wave bridge rectifier circuit</em>
 
 <p>Netlist (make a text file containing the following text, verbatim):</p>
 <pre>

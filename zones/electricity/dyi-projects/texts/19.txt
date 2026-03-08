@@ -1,9 +1,9 @@
 # DC Lab - Potentiometer as a Rheostat
 ## Project Overview
-<p>A variable <a href="https://eepower.com/resistor-guide/" target="_blank">resistor</a> is known as a <a href="https://eepower.com/resistor-guide/resistor-types/rheostat/" target="_blank">rheostat</a>, but <a href="https://eepower.com/resistor-guide/resistor-types/potentiometer/" target="_blank">potentiometers</a> can be made to function as rheostats quite easily. In this project, you learn how to&nbsp;use a potentiometer to control the speed of a motor, as illustrated in Figure 1.</p>
+<p>A variable resistor is known as a rheostat, but potentiometers can be made to function as rheostats quite easily. In this project, you learn how to&nbsp;use a potentiometer to control the speed of a motor, as illustrated in Figure 1.</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/potentiometer-as-rheostat-wiring-illustration.jpg" /></p>
-#### <em><strong>Figure 1. </strong>Using a potentiometer as a rheostat to control motor speed.</em>
+<em><strong>Figure 1. </strong>Using a potentiometer as a rheostat to control motor speed.</em>
 
 ## Learning Objectives
 <ul>
@@ -11,53 +11,53 @@
 <ul>
 <li>How to use a rheostat</li>
 <li>Wiring a potentiometer as a rheostat</li>
-<li>Simple <a href="https://eepower.com/technical-articles/triac-universal-motor-speed-control-circuit-design-basics/" target="_blank">motor speed control</a></li>
-<li>Understand why to use a <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-2/voltage-usage/" target="_blank">voltmeter</a> instead of an <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-2/ammeter-usage/" target="_blank">ammeter</a> to verify a continuous circuit</li>
+<li>Simple motor speed control</li>
+<li>Understand why to use a voltmeter instead of an ammeter to verify a continuous circuit</li>
 </ul>
-## &nbsp;
+
 ## Parts and Materials
 <ul>
 <li>6 V battery</li>
-<li>Potentiometer, single turn, &le;5 k&Omega;, <a href="https://eepower.com/resistor-guide/resistor-types/potentiometer-taper/" target="_blank">linear taper</a></li>
+<li>Potentiometer, single turn, &le;5 k&Omega;, linear taper</li>
 <li>Small &ldquo;hobby&rdquo; motor, permanent-magnet type</li>
 </ul>
 
 <ul>
 </ul>
 ## Instructions
-<p>In the first section of this experiment, we will review the operation of a potentiometer as a variable <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/resistance/" target="_blank">resistance</a> (rheostat) before using it for motor speed control.</p>
-### &nbsp;
+<p>In the first section of this experiment, we will review the operation of a potentiometer as a variable resistance (rheostat) before using it for motor speed control.</p>
+
 ### Measure the Changing Potentiometer Resistance Across Different Terminals
-<p>Potentiometers find their most sophisticated application as <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-6/voltage-divider-circuits/" target="_blank">voltage dividers</a>, where shaft position determines a specific <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-6/current-divider-circuits/" target="_blank">voltage division ratio</a>.&nbsp;However, there are applications where we don&rsquo;t necessarily need a variable voltage divider but merely a variable resistor: a two-terminal device.&nbsp;Technically, a variable resistor is known as a rheostat.&nbsp;</p>
+<p>Potentiometers find their most sophisticated application as voltage dividers, where shaft position determines a specific voltage division ratio.&nbsp;However, there are applications where we don&rsquo;t necessarily need a variable voltage divider but merely a variable resistor: a two-terminal device.&nbsp;Technically, a variable resistor is known as a rheostat.&nbsp;</p>
 <p><strong>Step 1:&nbsp;</strong>In its simplest configuration, a potentiometer may be used as a rheostat by simply using the wiper terminal and one of the other terminals, as illustrated in Figure 2.</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/less-resistance-and-more-resistance-potentiometer-control.jpg" /></p>
-#### <em><strong>Figure 2.</strong> The changing resistance of a potentiometer as a function of the terminals.</em>
+<em><strong>Figure 2.</strong> The changing resistance of a potentiometer as a function of the terminals.</em>
 
 <p>The third terminal is left unconnected and unused. First, measure the resistance of the potentiometer across the wiper terminal and one of the end terminals, as shown on the left side of Figure 2. Note how the resistance changes as you adjust the potentiometer wiper both clockwise and counter-clockwise. Additionally, you should notice that moving the potentiometer control in the direction that brings the wiper closer to the second terminal in use results in a lower resistance.</p>
 <p><strong>Step 2: </strong>Repeat the process of Step 1, but use the other end terminal in conjunction with the wiper terminal, as illustrated on the right side of Figure 2. The direction of motion required to increase or decrease resistance should be opposite from what you determined in Step 1. Why is that?</p>
 <p><strong>Step 3:&nbsp;</strong>Next, measure the resistance across the two outer terminals. This&nbsp;will result in <em>no change in resistance</em> as the potentiometer shaft is turned, as shown in Figure 3.&nbsp;In other words, it will no longer function as a <em>variable</em> resistance.</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/no-resistance-change-when-wiper-moves.jpg" /></p>
-#### <em><strong>Figure 3.</strong> There is no resistance change across the outer potentiometer terminals as the wiper moves.</em>
+<em><strong>Figure 3.</strong> There is no resistance change across the outer potentiometer terminals as the wiper moves.</em>
 
 ### Controlling Motor Speed With a Potentiometer-based Rheostat
 <p><strong>Step 4:&nbsp;</strong>Build the circuit, as shown in the circuit schematic of&nbsp;Figure 4 and the illustration of Figure 5, using just two terminals on the potentiometer.&nbsp; Keep in mind that one of the terminals must be the wiper.</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/potentiometer-as-rheostat-schematic-diagram-1.jpg" /></p>
-#### <em><strong>Figure 4.</strong>&nbsp;The schematic diagram for building the motor speed control circuit using a potentiometer.</em>
+<em><strong>Figure 4.</strong>&nbsp;The schematic diagram for building the motor speed control circuit using a potentiometer.</em>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/potentiometer-as-rheostat-wiring-illustration-1.jpg" /></p>
-#### <em><strong>Figure 5.</strong>&nbsp;Illustration&nbsp;for building the motor speed control circuit using a potentiometer.</em>
+<em><strong>Figure 5.</strong>&nbsp;Illustration&nbsp;for building the motor speed control circuit using a potentiometer.</em>
 
-<p><strong>Step 5:&nbsp;</strong>Adjust the shaft position of the potentiometer and see how the motor speed may be controlled.&nbsp;If your potentiometer has high resistance (as measured between the two outer terminals), the motor might not move at all until the wiper is brought very close to the connected outer terminal.&nbsp;As you can see from this experiment, the motor speed may be made variable using a <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/simple-series-circuits/" target="_blank">series-connected</a> rheostat to change total circuit resistance and limit total <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/voltage-current/" target="_blank">current</a>.</p>
+<p><strong>Step 5:&nbsp;</strong>Adjust the shaft position of the potentiometer and see how the motor speed may be controlled.&nbsp;If your potentiometer has high resistance (as measured between the two outer terminals), the motor might not move at all until the wiper is brought very close to the connected outer terminal.&nbsp;As you can see from this experiment, the motor speed may be made variable using a series-connected rheostat to change total circuit resistance and limit total current.</p>
 <p><strong>Step 6:&nbsp;</strong>Experiment with different terminal connections on the potentiometer (similar to Step 2 above), noting the changes in motor speed control as a function of the terminal connections.</p>
 
 ### Improving the Safety&nbsp;of the Potentiometer for Motor Speed Control
 <p><strong>Step 7:&nbsp;</strong>When a potentiometer is used as a rheostat, the &ldquo;unused&rdquo; terminal is often connected to the wiper terminal, as illustrated in Figure 6.</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/potentiometer-as-rheostat-wiring-illustration-2.jpg" /></p>
-#### <em><strong>Figure 6. </strong>Adding an additional wiper connection to the potentiometer rheostat.</em>
+<em><strong>Figure 6. </strong>Adding an additional wiper connection to the potentiometer rheostat.</em>
 
 <p>At first, this seems rather pointless, as it has no impact on resistance control. You may verify this fact for yourself by adding the extra wire, as noted in Figure 6, and comparing motor behavior before and after the change.&nbsp;Did it change?&nbsp;If the potentiometer is in good working order, this additional wire should make no difference whatsoever.</p>
 <p><strong>Step 8:&nbsp;</strong>However, if the wiper ever loses contact with the resistive strip inside the potentiometer, this connection ensures the circuit does not completely open. Therefore,&nbsp;there will still be a resistive path for current through the motor.</p>
@@ -65,7 +65,7 @@
 <p>You can simulate a wiper contact &ldquo;failure&rdquo; by disconnecting the potentiometer&rsquo;s middle terminal from the terminal strip, as illustrated in Figure 7.&nbsp;</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/potentiometer-as-rheostat-wiring-illustration-3.jpg" /></p>
-#### <em><strong>Figure 7.</strong>&nbsp;Simulating a potentiometer wiper failure.</em>
+<em><strong>Figure 7.</strong>&nbsp;Simulating a potentiometer wiper failure.</em>
 
 <p>From here, measure&nbsp;the voltage across the motor (also illustrated in Figure 7) to ensure there is still power getting to it, however small.</p>
 
@@ -73,4 +73,4 @@
 <p>It would have been valid to measure the circuit current in Step 8 instead of the motor voltage to verify a completed circuit. However, this is a safer method because it does not involve breaking the circuit to insert an ammeter in series.&nbsp;Whenever an ammeter is used, there is a risk of causing a short circuit by connecting it across a substantial voltage source, possibly resulting in instrument damage or personal injury. Voltmeters lack this inherent safety risk. So, whenever a voltage measurement may be made instead of a current measurement to verify the same thing, it is the wiser choice.</p>
 
 ## Alternative Motor&nbsp;Control Techniques
-<p>This simple method of motor speed control using a rheostat&nbsp;is inefficient, resulting in substantial amounts of power being dissipated (wasted) by the rheostat.&nbsp;A much more efficient means of motor control relies on fast pulsing&nbsp;of power to the motor, using a high-speed switching device such as a transistor. This <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-11/pulse-width-modulation/" target="_blank">pulse width modulated signal</a> is often driven by a&nbsp;<a href="https://www.allaboutcircuits.com/technical-articles/introduction-to-microcontroller-timers-pwm-timers/" target="_blank">dedicated timer in a microcontroller</a>.&nbsp;A similar method of power control is used in household light dimmer&nbsp;switches.&nbsp;Unfortunately, these techniques are much too sophisticated to explore at this point in the experiments.</p>
+<p>This simple method of motor speed control using a rheostat&nbsp;is inefficient, resulting in substantial amounts of power being dissipated (wasted) by the rheostat.&nbsp;A much more efficient means of motor control relies on fast pulsing&nbsp;of power to the motor, using a high-speed switching device such as a transistor. This pulse width modulated signal is often driven by a&nbsp;dedicated timer in a microcontroller.&nbsp;A similar method of power control is used in household light dimmer&nbsp;switches.&nbsp;Unfortunately, these techniques are much too sophisticated to explore at this point in the experiments.</p>

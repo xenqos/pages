@@ -1,7 +1,7 @@
 # Calculating Power Factor
-<p>As was mentioned before, the angle of this &ldquo;<a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-11/true-reactive-and-apparent-power/" target="_blank">power triangle</a>&rdquo; graphically indicates the ratio between the amount of dissipated (or <em>consumed</em>) power and the amount of absorbed/returned power.</p>
-<p>It also happens to be the same angle as that of the circuit&rsquo;s <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-5/review-of-r-x-and-z/" target="_blank">impedance</a> in polar form. When expressed as a fraction, this ratio between true power and apparent power is called the <em>power factor</em> for this circuit.</p>
-<p>Because true power and apparent power form the adjacent and hypotenuse sides of a right triangle, respectively, the power factor ratio is also equal to the cosine of that phase angle. Using values from the last example <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-11/true-reactive-and-apparent-power/#02217.png" target="_blank">circuit</a>:</p>
+<p>As was mentioned before, the angle of this &ldquo;power triangle&rdquo; graphically indicates the ratio between the amount of dissipated (or <em>consumed</em>) power and the amount of absorbed/returned power.</p>
+<p>It also happens to be the same angle as that of the circuit&rsquo;s impedance in polar form. When expressed as a fraction, this ratio between true power and apparent power is called the <em>power factor</em> for this circuit.</p>
+<p>Because true power and apparent power form the adjacent and hypotenuse sides of a right triangle, respectively, the power factor ratio is also equal to the cosine of that phase angle. Using values from the last example circuit:</p>
 
 <p><img src="/uploads/articles/unitless-quantity.png" /></p>
 
@@ -12,12 +12,12 @@
 <p>The same could be said for a purely capacitive circuit. If there are no dissipative (resistive) components in the circuit, then the true power must be equal to zero, making any power in the circuit purely reactive.</p>
 <p>The power triangle for a purely capacitive circuit would again be a vertical line (pointing down instead of up as it was for the purely inductive circuit).</p>
 ## Importance of Power Factor
-<p>Power factor can be an important aspect to consider in an <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-1/what-is-alternating-current-ac/" target="_blank">AC circuit</a> because of any power factor less than 1 means that the circuit&rsquo;s wiring has to carry more current than what would be necessary with zero reactance in the circuit to deliver the same amount of (true) power to the resistive load.</p>
+<p>Power factor can be an important aspect to consider in an AC circuit because of any power factor less than 1 means that the circuit&rsquo;s wiring has to carry more current than what would be necessary with zero reactance in the circuit to deliver the same amount of (true) power to the resistive load.</p>
 <p>If our last example circuit had been purely resistive, we would have been able to deliver a full 169.256 watts to the load with the same 1.410 amps of current, rather than the mere 119.365 watts that it is presently dissipating with that same current quantity.</p>
 <p>The poor power factor makes for an inefficient power delivery system.</p>
 ## Poor Power Factor
 <p>Poor power factor can be corrected, paradoxically, by adding another load to the circuit drawing an equal and opposite amount of reactive power, to cancel out the effects of the load&rsquo;s inductive reactance.</p>
-<p>Inductive reactance can only be canceled by <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-4/ac-capacitor-circuits/" target="_blank">capacitive reactance</a>, so we have to add a <em>capacitor</em> in parallel to our example circuit as the additional load.</p>
+<p>Inductive reactance can only be canceled by capacitive reactance, so we have to add a <em>capacitor</em> in parallel to our example circuit as the additional load.</p>
 <p>The effect of these two opposing reactances in parallel is to bring the circuit&rsquo;s total impedance equal to its total resistance (to make the impedance phase angle equal, or at least closer, to zero).</p>
 <p>Since we know that the (uncorrected) reactive power is 119.998 VAR (inductive), we need to calculate the correct capacitor size to produce the same quantity of (capacitive) reactive power.</p>
 <p>Since this capacitor will be directly in parallel with the source (of known voltage), we&rsquo;ll use the power formula which starts from voltage and reactance:</p>
@@ -43,7 +43,7 @@
 <p>Since the impedance angle is still a positive number, we know that the circuit, overall, is still more inductive than it is capacitive.</p>
 <p>If our power factor correction efforts had been perfectly on-target, we would have arrived at an impedance angle of exactly zero, or purely resistive.</p>
 <p>If we had added too large of a capacitor in parallel, we would have ended up with an impedance angle that was negative, indicating that the circuit was more capacitive than inductive.</p>
-<p>A <a href="https://www.allaboutcircuits.com/textbook/reference/chpt-7/introduction-to-spice/" target="_blank">SPICE simulation</a> of the circuit of (Figure above) shows total voltage and total current are nearly in phase.</p>
+<p>A SPICE simulation of the circuit of (Figure above) shows total voltage and total current are nearly in phase.</p>
 <p>The SPICE circuit file has a zero volt voltage source (V2) in series with the capacitor so that the capacitor current may be measured.</p>
 <p>The start time of 200 msec ( instead of 0) in the transient analysis statement allows the DC conditions to stabilize before collecting data. See SPICE listing &ldquo;pf.cir power factor&rdquo;.</p>
 

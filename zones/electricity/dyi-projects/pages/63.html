@@ -33,7 +33,7 @@
 
 <h1>Si Lab - Differential Amplifier</h1>
 <h2>Project Overview</h2>
-<p>The <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-8/building-a-differential-amplifier/&quot; target=&quot;_blank&quot;>differential amplifier</a> circuit forms the heart of most <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-8/introduction-operational-amplifiers/&quot; target=&quot;_blank&quot;>op amp</a>&nbsp;circuits. As illustrated in Figure 1, the transistor pair, Q<sub>1</sub>&nbsp;and Q<sub>2</sub>, share a common emitter node that is connected to the 1.5 k&Omega; <a href=&quot;https://eepower.com/resistor-guide/&quot; target=&quot;_blank&quot;>resistor</a>.&nbsp;</p>
+<p>The differential amplifier circuit forms the heart of most op amp&nbsp;circuits. As illustrated in Figure 1, the transistor pair, Q<sub>1</sub>&nbsp;and Q<sub>2</sub>, share a common emitter node that is connected to the 1.5 k&Omega; resistor.&nbsp;</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/differential-amplifier-schematic-diagram.jpg&quot; /></p>
 <h4><strong>Figure 1.</strong> <em>Schematic diagram of a BJT differential amplifier.</em></h4>
 
@@ -42,8 +42,8 @@
 <h2>Parts and Materials</h2>
 <ul>
 <li>Two 6-volt batteries</li>
-<li>Two NPN transistors&mdash;models <a href=&quot;https://www.onsemi.com/pdf/datasheet/p2n2222a-d.pdf&quot; target=&quot;_blank&quot;>2N2222</a> or <a href=&quot;https://my.centralsemi.com/datasheets/LSSGP078.PDF&quot; target=&quot;_blank&quot;>2N3403</a> recommended</li>
-<li>Two 10 k&Omega; <a href=&quot;https://eepower.com/resistor-guide/resistor-types/potentiometer/&quot; target=&quot;_blank&quot;>potentiometers</a>, single-turn, linear taper&nbsp;</li>
+<li>Two NPN transistors&mdash;models 2N2222 or 2N3403 recommended</li>
+<li>Two 10 k&Omega; potentiometers, single-turn, linear taper&nbsp;</li>
 <li>Two 22 k&Omega; resistors</li>
 <li>Two 10 k&Omega; resistors</li>
 <li>One 100 k&Omega; resistor</li>
@@ -55,17 +55,17 @@
 <h2>Learning Objectives</h2>
 <ul>
 <li>The basic design of a differential amplifier circuit</li>
-<li>Working definitions of <a href=&quot;https://www.allaboutcircuits.com/technical-articles/the-why-and-how-of-differential-signaling/&quot; target=&quot;_blank&quot;>differential</a> and <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-8/op-amp-practical-considerations/&quot; target=&quot;_blank&quot;>common-mode voltages</a></li>
+<li>Working definitions of differential and common-mode voltages</li>
 </ul>
 
 <h2>Instructions</h2>
-<p><strong>Step 1:&nbsp;</strong>Build the differential amplifier shown in the circuit schematic of Figure 1 and the <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/building-simple-resistor-circuits/&quot; target=&quot;_blank&quot;>breadboard</a> implementation of Figure 2.</p>
+<p><strong>Step 1:&nbsp;</strong>Build the differential amplifier shown in the circuit schematic of Figure 1 and the breadboard implementation of Figure 2.</p>
 <p><strong><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/differential-amplifier-illustration.jpg&quot; /></strong></p>
 <h4><strong>Figure 2.</strong> <em>Breadboard implementation&nbsp;of a BJT differential amplifier.</em></h4>
 
 <p><strong>Step 2: </strong>Using the left potentiometer in Figure 1, set the input voltage to the base of transistor Q<sub>1</sub> to 2.5 V.</p>
-<p><strong>Step 3:&nbsp;</strong>Using the right potentiometer, set the initial input voltage to transistor Q<sub>2</sub> to 2.0 V. Measure the output voltage at the collector of Q<sub>2</sub> with respect to the <a href=&quot;https://www.allaboutcircuits.com/technical-articles/an-introduction-to-ground/&quot; target=&quot;_blank&quot;>ground</a>.</p>
-<p><strong>Step 4:&nbsp;</strong>Slowly sweep the input voltage to the transistor, Q<sub>2</sub>, while monitoring&nbsp;the output voltage.&nbsp;With a high voltage gain created by a large collector/emitter resistor ratio (100 k&Omega;/1.5 k&Omega;), though, it acts primarily as a <a href=&quot;https://www.allaboutcircuits.com/textbook/experiments/chpt-6/voltage-comparator/&quot; target=&quot;_blank&quot;>comparator</a>, where&nbsp;the output voltage rapidly changes value as the two input voltage signals approach equality.</p>
+<p><strong>Step 3:&nbsp;</strong>Using the right potentiometer, set the initial input voltage to transistor Q<sub>2</sub> to 2.0 V. Measure the output voltage at the collector of Q<sub>2</sub> with respect to the ground.</p>
+<p><strong>Step 4:&nbsp;</strong>Slowly sweep the input voltage to the transistor, Q<sub>2</sub>, while monitoring&nbsp;the output voltage.&nbsp;With a high voltage gain created by a large collector/emitter resistor ratio (100 k&Omega;/1.5 k&Omega;), though, it acts primarily as a comparator, where&nbsp;the output voltage rapidly changes value as the two input voltage signals approach equality.</p>
 <p><strong>Step 4:&nbsp;</strong>Now, using the right potentiometer in Figure 1, set the input voltage to the base of transistor Q<sub>2</sub> to 2.5 V.</p>
 <p><strong>Step 5:&nbsp;</strong>Using the left potentiometer, set the initial input voltage to transistor Q<sub>1</sub> to 2.0 V. Measure the output voltage at the collector of Q<sub>2</sub> with respect to the ground.</p>
 <p><strong>Step 6:&nbsp;</strong>Slowly sweep the input voltage to transistor Q<sub>1</sub> while monitoring&nbsp;the output voltage.&nbsp;Note how the two potentiometers have different effects on the output voltage.&nbsp;The input to the transistor, Q1 (V<sub>+</sub>), tends to drive the output voltage in the same direction (noninverting), while the input to the transistor, Q2 (V<sub>-</sub>), tends to drive the output voltage in the opposite direction (inverting). This is the essential nature of a differential amplifier&mdash;it amplifies the difference between the two inputs, including the sign:</p>

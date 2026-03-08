@@ -1,17 +1,20 @@
 ###### 05. Series And Parallel Circuits
 
 # How to Calculate Power in a Series and Parallel Circuit
+
 ^[038-01.jpg]
+
 <h3 class="text-lg lg:text-2xl font-bold mb-3">What is Electrical Power and How Can You Calculate it in Series and Parallel Circuits?</h3>
 <p><p>Electrical power measures the rate of work represented in electrical circuits by the symbol &ldquo;P&rdquo; and the units of Watts (W). The total circuit power is additive for series, parallel, or any combination of series and parallel components.&nbsp;</p></p>
-<p>When calculating the <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-2/power-dissipation/" target="_blank">power dissipation</a> of resistive components, we can use any one of the three <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/voltage-current-resistance-relate/" target="_blank">Ohm&rsquo;s law</a> power equations if given any two of the <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/voltage-current/" target="_blank">voltage (V), current (I)</a>, and <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/resistance/" target="_blank">resistance (R)</a>:</p>
+<p>When calculating the power dissipation of resistive components, we can use any one of the three Ohm&rsquo;s law power equations if given any two of the voltage (V), current (I), and resistance (R):</p>
 
 <p>$$P = IV = I^2R = \frac{V^2}{R}$$</p>
 
 ## Calculating Power Using the Table Method
-<p>These <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/calculating-electric-power/" target="_blank">electric power calculations</a> can be easily managed using the <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/solving-series-and-parallel-circuits-with-the-table-method-and-ohms-law/" target="_blank">table method</a> by adding another row below the voltages, currents, and resistances, as shown in Table 1.</p>
+<p>These electric power calculations can be easily managed using the table method by adding another row below the voltages, currents, and resistances, as shown in Table 1.</p>
 
-#### <em><strong>Table 1.</strong> Table method with power included.</em>
+<em><strong>Table 1.</strong> Table method with power included.</em>
+
 ^[038-02.jpg]
 
 <p>Power for any particular table column can be found using the appropriate Ohm&rsquo;s power law equation.&nbsp;</p>
@@ -21,16 +24,18 @@
 
 #### <br />
 <em><strong>Table 2.</strong> Table method for series circuits&mdash;power is additive.</em>
+
 ^[038-03.jpg]
 
-#### <em><strong>Table 3. </strong>Table method for parallel circuits&mdash;power is additive.</em>
+<em><strong>Table 3. </strong>Table method for parallel circuits&mdash;power is additive.</em>
+
 ^[038-04.jpg]
 
 <p>If you need a refresher or skipped the pages on series circuits and parallel circuits, you can find them here:</p>
 <ul>
-<li><a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/what-are-series-and-parallel-circuits/" target="_blank">What is the Difference Between Series and Parallel Circuits?</a></li>
-<li><a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/simple-series-circuits/" target="_blank">Series Circuits and the Application of Ohm&rsquo;s Law</a></li>
-<li><a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/simple-parallel-circuits/" target="_blank">Parallel Circuits and the Application of Ohm&rsquo;s Law</a></li>
+<li>What is the Difference Between Series and Parallel Circuits?</li>
+<li>Series Circuits and the Application of Ohm&rsquo;s Law</li>
+<li>Parallel Circuits and the Application of Ohm&rsquo;s Law</li>
 </ul>
 
 ## Review of Power for Series and Parallel Circuits:

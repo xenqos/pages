@@ -33,18 +33,18 @@
 
 <h1>DC Lab - Capacitor Charging and Discharging</h1>
 <h2>Project Overview</h2>
-<p>This circuit project will demonstrate to you how the <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/voltage-current/&quot; target=&quot;_blank&quot;>voltage</a> changes exponentially across <a href=&quot;https://eepower.com/capacitor-guide/&quot; target=&quot;_blank&quot;>capacitors</a> in <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/what-are-series-and-parallel-circuits/&quot; target=&quot;_blank&quot;>series and parallel</a> <a href=&quot;https://www.allaboutcircuits.com/textbook/alternating-current/chpt-4/series-resistor-capacitor-circuits/&quot; target=&quot;_blank&quot;>RC (resistor-capacitor)</a>&nbsp;networks. You will also examine how you can increase or decrease the rate of change of the capacitor charging and discharging.&nbsp;</p>
+<p>This circuit project will demonstrate to you how the voltage changes exponentially across capacitors in series and parallel RC (resistor-capacitor)&nbsp;networks. You will also examine how you can increase or decrease the rate of change of the capacitor charging and discharging.&nbsp;</p>
 
 <h2>Parts and Materials</h2>
 <p>To do this experiment, you will need the following:</p>
 <ul>
 <li>6 V battery or power supply</li>
 <li>Two large electrolytic capacitors, 1000 &micro;F minimum</li>
-<li>Two 1 k&Omega; <a href=&quot;https://eepower.com/resistor-guide/&quot; target=&quot;_blank&quot;>resistors</a></li>
+<li>Two 1 k&Omega; resistors</li>
 <li>One toggle switch, SPST (Single-Pole, Single-Throw)&mdash;I recommend a household light switch</li>
 </ul>
 
-<p>Large-value capacitors are required for this experiment to produce time constants slow enough to track with a <a href=&quot;https://www.allaboutcircuits.com/textbook/experiments/chpt-2/voltage-usage/&quot; target=&quot;_blank&quot;>voltmeter</a> and stopwatch.&nbsp;</p>
+<p>Large-value capacitors are required for this experiment to produce time constants slow enough to track with a voltmeter and stopwatch.&nbsp;</p>
 <p><strong>CAUTION:&nbsp;</strong>Be warned that most large capacitors are of the electrolytic&nbsp;type, and they are <em>polarity sensitive</em>! One terminal of each capacitor should be marked with a definite polarity sign (+ or &mdash;).&nbsp;Usually, capacitors of the size specified&nbsp;have a negative (-) marking or series of negative markings pointing toward the negative terminal.&nbsp;Very large capacitors are often polarity-labeled by a positive (+) marking next to one terminal.</p>
 <p>Failure to heed proper polarity will almost surely result in capacitor failure, even with a source voltage as low as 6 V.&nbsp;When electrolytic capacitors fail, they typically <strong>explode</strong>, spewing caustic chemicals and emitting foul odors. Please, try to avoid this!</p>
 
@@ -62,13 +62,13 @@
 <h2>Instructions</h2>
 <p><strong>Step 1:&nbsp;</strong>Build the charging circuit, illustrated&nbsp;in Figure 2 and represented by the top circuit schematic in Figure 3.</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/charging-experiment-illustration.jpg&quot; /></p>
-<h4><em><strong>Figure 2.&nbsp;</strong>Charging circuit with a series connection of a switch, capacitor, and resistor.</em></h4>
-
+<em><strong>Figure 2.&nbsp;</strong>Charging circuit with a series connection of a switch, capacitor, and resistor.</em><br>
+<br>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/charging-and-discharging-circuit-schematic-diagram.jpg&quot; /></p>
-<h4><em><strong>Figure 3.&nbsp;</strong>Circuit schematic diagrams for capacitive charging and discharging circuits.</em></h4>
-
+<em><strong>Figure 3.&nbsp;</strong>Circuit schematic diagrams for capacitive charging and discharging circuits.</em><br>
+<br>
 <p><strong>Step 2:</strong> Measure the&nbsp;voltage across the capacitor over time after&nbsp;the switch is closed.&nbsp;Notice how it increases slowly over time rather than suddenly, as would be the case with a resistor.&nbsp;You can reset&nbsp;the capacitor back to a voltage of zero by shorting across its terminals with a piece of wire.</p>
-<p>The time constant&nbsp;(&tau;) of a resistor-capacitor circuit is calculated by taking the circuit <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/resistance/&quot; target=&quot;_blank&quot;>resistance</a>, R, and multiplying it by the circuit capacitance, C.&nbsp;For a 1 k&Omega; resistor and a 1000 &micro;F capacitor, the time constant is 1 second.</p>
+<p>The time constant&nbsp;(&tau;) of a resistor-capacitor circuit is calculated by taking the circuit resistance, R, and multiplying it by the circuit capacitance, C.&nbsp;For a 1 k&Omega; resistor and a 1000 &micro;F capacitor, the time constant is 1 second.</p>
 <p>$$\tau = RC = 1000 \times 0.001 = 1 \text{ s}$$</p>
 <p>This is the amount of time it takes for the capacitor voltage to increase by approximately 63.2% from its present value to its final value: the battery&#39;s voltage. The 63.2% value is calculated from the following equation describing the&nbsp;voltage across the capacitor as it charges over time:</p>
 <p>$$V_C = V_S &middot; (1 - e^{(\frac{-t}{\tau})})$$&nbsp;</p>
@@ -82,8 +82,8 @@
 
 <p>Next, it is educational to plot the voltage of a charging capacitor over time&nbsp;to see how the inverse exponential curve develops.&nbsp;If you plot the capacitor voltage versus time, it will look as shown in Figure 4.</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/RC-circuit-charging-curve_1.jpg&quot; /></p>
-<h4><em><strong>Figure 4. </strong>A plot&nbsp;of the capacitor voltage over time for the charging circuit.</em></h4>
-
+<em><strong>Figure 4. </strong>A plot&nbsp;of the capacitor voltage over time for the charging circuit.</em><br>
+<br>
 <p>Keep in mind that,&nbsp;in order to plot the action of this circuit,&nbsp;we must find a way of slowing it down. A one-second time constant doesn&rsquo;t provide much time to take voltmeter readings!</p>
 
 <h3>Changing a Circuit&rsquo;s Time Constant</h3>
@@ -94,22 +94,22 @@
 </ol>
 
 <p><strong>Step 3:&nbsp;</strong>Try to increase the time constant of the RC circuit by adding an additional resistor into the charging circuit.&nbsp;You should already know by now how multiple resistors need to be connected to form a greater total resistance.</p>
-<p><strong>Step 4:&nbsp;</strong>Try to change the RC time constant by adding an additional capacitor to the charging circuit. Experiment by adding the second capacitor in both <a href=&quot;https://eepower.com/capacitor-guide/applications/capacitors-in-series/&quot; target=&quot;_blank&quot;>series</a> and <a href=&quot;https://eepower.com/capacitor-guide/applications/capacitors-in-parallel/&quot; target=&quot;_blank&quot;>parallel</a> with the original capacitor. Which connection method increased the time constant, and which caused it to decrease? Just be sure to insert the capacitor(s) in the proper direction&nbsp;with the ends labeled negative (-) electrically closest&nbsp;to the battery&rsquo;s negative terminal.</p>
+<p><strong>Step 4:&nbsp;</strong>Try to change the RC time constant by adding an additional capacitor to the charging circuit. Experiment by adding the second capacitor in both series and parallel with the original capacitor. Which connection method increased the time constant, and which caused it to decrease? Just be sure to insert the capacitor(s) in the proper direction&nbsp;with the ends labeled negative (-) electrically closest&nbsp;to the battery&rsquo;s negative terminal.</p>
 <p><strong>Step 5:&nbsp;</strong>Given a pair of identical resistors and a pair of identical capacitors, experiment with various series and parallel combinations to obtain the slowest charging action.</p>
 
 <h3>Building a Capacitive Discharging Circuit</h3>
 <p><strong>Step 6:&nbsp;</strong>The discharging circuit of Figure 5 and the bottom of Figure 3 provides the same kind of changing capacitor voltage, except this time, the voltage jumps to full battery voltage when the switch closes and slowly falls when the switch is opened.&nbsp;</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/discharging-experiment-illustration.jpg&quot; /></p>
-<h4><em><strong>Figure 5.&nbsp;</strong>Discharging circuit with a parallel connection of a capacitor&nbsp;and resistor</em></h4>
-
+<em><strong>Figure 5.&nbsp;</strong>Discharging circuit with a parallel connection of a capacitor&nbsp;and resistor</em><br>
+<br>
 <p>Build this circuit and monitor the voltage change before and after closing the switch.</p>
 <p><strong>Step 6:&nbsp;</strong>Experiment once again with different combinations of resistors and capacitors to change the RC time constant of the discharging circuit. Always make sure that the capacitor&rsquo;s polarity is correct!</p>
-<h2>&nbsp;</h2>
+
 <h2>Computer SPICE Simulation of the Series RC Charging Circuit</h2>
 <p><strong>Step 7:&nbsp;</strong>You can also simulate the circuit of Figure 6&nbsp;in SPICE and plot the exponential charging of the capacitor voltage. You can then compare this result with your measured values from earlier in this project.</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/resistors-and-capacitors-circuit.jpg&quot; /></p>
-<h4><em><strong>Figure 6. </strong>RC circuit schematic with SPICE node numbers</em></h4>
-
+<em><strong>Figure 6. </strong>RC circuit schematic with SPICE node numbers</em><br>
+<br>
 <p>Below is the netlist (make a text file containing the following text, verbatim):</p>
 
 <pre><br>

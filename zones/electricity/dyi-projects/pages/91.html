@@ -33,25 +33,25 @@
 
 <h1>555 Lab - Blue LED Flasher With Voltage Doubler</h1>
 <h2>Project Overview</h2>
-<p>The circuit of Figure 1 used in this project adds a <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-3/voltage-multipliers/&quot; target=&quot;_blank&quot;>voltage doubler</a> feature to the&nbsp;circuit and concepts from these two experiments:</p>
+<p>The circuit of Figure 1 used in this project adds a voltage doubler feature to the&nbsp;circuit and concepts from these two experiments:</p>
 <ul>
-<li><a href=&quot;https://www.allaboutcircuits.com/textbook/experiments/chpt-8/cmos-555-long-duration-minimum-parts-red-led-flasher/&quot; target=&quot;_blank&quot;>555 Lab - Red LED Flasher</a></li>
-<li><a href=&quot;https://www.allaboutcircuits.com/textbook/experiments/chpt-8/cmos-555-long-duration-red-led-flasher/&quot; target=&quot;_blank&quot;>555 Lab - Advanced Red LED Flasher</a></li>
+<li>555 Lab - Red LED Flasher</li>
+<li>555 Lab - Advanced Red LED Flasher</li>
 </ul>
 
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/practical-application-for-RC-time-constant-circuit.jpg&quot; /></p>
-<h4><em><strong>Figure 1.</strong> Schematic diagram of the 555 timer LED flasher with high voltage LED drive.</em></h4>
-
-<p>Blue and white <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-3/special-purpose-diodes/&quot; target=&quot;_blank&quot;>light-emitting diodes (LEDs)</a> have a higher Vf (<a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-3/introduction-to-diodes-and-rectifiers/&quot; target=&quot;_blank&quot;>forward dropping voltage</a>) than other colors, typically around 3.6 V. Therefore, 3 V batteries can&rsquo;t drive them without help. Thus, the need for extra circuitry will be added to this experiment.&nbsp;</p>
-<p>The <a href=&quot;https://eepower.com/capacitor-guide/&quot; target=&quot;_blank&quot;>capacitor</a>, C3, is used to double the voltage of this pulse across the blue LED, but it can only do this for a short time. Measuring the current through the LED is impractical with this circuit because of the short pulse duration.</p>
+<em><strong>Figure 1.</strong> Schematic diagram of the 555 timer LED flasher with high voltage LED drive.</em><br>
+<br>
+<p>Blue and white light-emitting diodes (LEDs) have a higher Vf (forward dropping voltage) than other colors, typically around 3.6 V. Therefore, 3 V batteries can&rsquo;t drive them without help. Thus, the need for extra circuitry will be added to this experiment.&nbsp;</p>
+<p>The capacitor, C3, is used to double the voltage of this pulse across the blue LED, but it can only do this for a short time. Measuring the current through the LED is impractical with this circuit because of the short pulse duration.</p>
 
 <h2>Parts and Materials</h2>
 <ul>
 <li>Two AAA batteries</li>
 <li>Battery clip</li>
-<li>U1 - <a href=&quot;https://www.allaboutcircuits.com/textbook/digital/chpt-3/cmos-gate-circuitry/&quot; target=&quot;_blank&quot;>complementary metal-oxide semiconductor (CMOS)</a>&nbsp;<a href=&quot;https://www.ti.com/lit/ds/symlink/tlc555.pdf?ts=1677219628656&amp;ref_url=https%253A%252F%252Fwww.google.com%252F&quot; target=&quot;_blank&quot;>TLC555</a> timer IC (or equivalent).&nbsp;
+<li>U1 - complementary metal-oxide semiconductor (CMOS)&nbsp;TLC555 timer IC (or equivalent).&nbsp;
 <ul>
-<li>Note:&nbsp;This is a static-sensitive part.&nbsp;If you do not use protection as described in the&nbsp;<a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-9/electrostatic-discharge/&quot; target=&quot;_blank&quot;>electrostatic discharge (ESD) chapter</a>, you run the risk of destroying it.</li>
+<li>Note:&nbsp;This is a static-sensitive part.&nbsp;If you do not use protection as described in the&nbsp;electrostatic discharge (ESD) chapter, you run the risk of destroying it.</li>
 </ul>
 
 </li>
@@ -59,20 +59,20 @@
 <li>Q2 - 2N2222 NPN transistor&nbsp;or equivalent</li>
 <li>CR1 - 1N914 diode or equivalent</li>
 <li>D1 - Blue LED</li>
-<li>R1 - 1.5 M&Omega; 1/4W 5% <a href=&quot;https://eepower.com/resistor-guide/&quot; target=&quot;_blank&quot;>resistor</a></li>
+<li>R1 - 1.5 M&Omega; 1/4W 5% resistor</li>
 <li>R2 - 47 k&Omega; 1/4W 5% resistor</li>
 <li>R3 - 2.2 k&Omega; 1/4W 5% resistor</li>
 <li>R4 - 620 &Omega; 1/4W 5% resistor</li>
 <li>R5 - 82 &Omega; 1/4W 5% resistor</li>
-<li>C1 - 1 &micro;F <a href=&quot;https://eepower.com/capacitor-guide/types/tantalum-capacitor/&quot; target=&quot;_blank&quot;>tantalum capacitor</a></li>
-<li>C2 - 100 &micro;F <a href=&quot;http://electrolytic capacitor&quot;>electrolytic capacitor</a></li>
+<li>C1 - 1 &micro;F tantalum capacitor</li>
+<li>C2 - 100 &micro;F electrolytic capacitor</li>
 <li>C3 - 470 &micro;F electrolytic capacitor</li>
 </ul>
 
 <h2>Learning Objectives</h2>
 <ul>
-<li>Learn a practical application for an <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-16/complex-circuits/&quot; target=&quot;_blank&quot;>RC time constant</a></li>
-<li>Learn one of several 555 timer <a href=&quot;https://www.allaboutcircuits.com/textbook/experiments/chpt-6/555-audio-oscillator/&quot; target=&quot;_blank&quot;>astable multivibrator</a> configurations</li>
+<li>Learn a practical application for an RC time constant</li>
+<li>Learn one of several 555 timer astable multivibrator configurations</li>
 <li>Working knowledge of duty cycle</li>
 <li>How to handle ESD-sensitive parts</li>
 <li>How to use transistors to improve current gain</li>
@@ -82,22 +82,22 @@
 <h2>Instructions</h2>
 <p><strong>Step 1:&nbsp;</strong>Build the 555 oscillator circuit shown in Figures 1 and 2.&nbsp;</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/555-lab-blue-led-flasher-breadboard.png&quot; /></p>
-<h4><em><strong>Figure 2.</strong> Breadboard implementation of the 555 timer LED flasher with high voltage LED drive.</em></h4>
-
+<em><strong>Figure 2.</strong> Breadboard implementation of the 555 timer LED flasher with high voltage LED drive.</em><br>
+<br>
 <p>The LED should flash approximately every 1 second.&nbsp;As in the previous circuits, the LED is given a 0.03-second (30 ms) pulse.</p>
 <p><strong>Step 2 (optional):&nbsp;</strong>This particular design can also be used with a single 1.5 V battery.&nbsp;If you want to try a 1.5 V battery, change R5 to 10 &Omega; and use a red LED with a better CR1 diode.&nbsp;CR1 is not the best choice for this component, it was selected because it is a common part and it works. Almost any diode will work in this application.</p>
-<p><a href=&quot;https://www.allaboutcircuits.com/technical-articles/fast-ultrafast-soft-standard-schottky-selecting-the-right-rectifier/&quot; target=&quot;_blank&quot;>Schottky</a> and <a href=&quot;https://www.allaboutcircuits.com/technical-articles/characteristics-of-different-photodiode-technologies/&quot; target=&quot;_blank&quot;>germanium diodes</a> drop much less voltage than silicon diodes. A&nbsp;silicon diode drops 0.6-0.7 V, while a Schottky diode drops 0.1-0.2 V, and a germanium diode drops 0.2 V-0.3 V. If Schottky or germanium diodes&nbsp;are used,&nbsp;the reduced <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/polarity-voltage-drops/&quot; target=&quot;_blank&quot;>voltage drop</a> would translate into a higher voltage across the LED and&nbsp;increased intensity, as the circuit&#39;s efficiency is increased.</p>
+<p>Schottky and germanium diodes drop much less voltage than silicon diodes. A&nbsp;silicon diode drops 0.6-0.7 V, while a Schottky diode drops 0.1-0.2 V, and a germanium diode drops 0.2 V-0.3 V. If Schottky or germanium diodes&nbsp;are used,&nbsp;the reduced voltage drop would translate into a higher voltage across the LED and&nbsp;increased intensity, as the circuit&#39;s efficiency is increased.</p>
 
 <h2>Voltage Doubler Theory of Operation</h2>
 <p>In this circuit, Q2 is used as a switch. When Q2 is off, C3 is charged to the battery voltage minus the diode voltage drop of CR1, as shown in Figure 3.&nbsp;</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/thumbnails/practical-application-for-RC-time-constant-circuit-1_redo.jpeg&quot; /></p>
-<h4><em><strong>Figure 3.</strong> When transistor switch Q2 is open, capacitor C3 charges.</em></h4>
-
+<em><strong>Figure 3.</strong> When transistor switch Q2 is open, capacitor C3 charges.</em><br>
+<br>
 <p>Since the forward voltage (Vf)&nbsp;of a blue LED&nbsp;is 3.4&nbsp;to 3.6 V, it is not conducting and is effectively out of the circuit.</p>
 <p>Figure 4&nbsp;illustrates&nbsp;what happens when Q2 turns on.</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/thumbnails/practical-application-for-RC-time-constant-circuit-2_redo.jpeg&quot; /></p>
-<h4><em><strong>Figure 4.</strong> When transistor switch Q2 is closed, the voltage across the diode doubles, turning it on</em></h4>
-
+<em><strong>Figure 4.</strong> When transistor switch Q2 is closed, the voltage across the diode doubles, turning it on</em><br>
+<br>
 <p>The capacitor&nbsp;C3&#39;s positive (+) side is grounded, which moves the negative (-) side to -2.4 V. The diode CR1 is now reverse-biased and is effectively out of the circuit. The -2.4 V is discharged through R5 and D1 to the +3.0 V of the batteries. The total of 5.4 V provides enough voltage to light the blue LED. The 5.4 V value is not quite double the supply voltage because of the loss of diode CR1.&nbsp;Long before C3 is discharged, the circuit switches back, and C3 starts charging again.</p>
 <p>You may notice a dim blue glow in the blue LED even when it is off. This demonstrates the difference between theory and practice, 3 V is enough to cause some leakage through the blue LED, even though it is not fully conducting. If you were to measure this current, it would be very small.</p>
 

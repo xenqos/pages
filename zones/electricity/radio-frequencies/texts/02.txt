@@ -4,17 +4,17 @@
 <p>There are various ways to incorporate &ldquo;wireless&rdquo; functionality into an electrical system. One of these is the use of electromagnetic radiation, which is the basis for RF communication. However, it&rsquo;s important to recognize that electromagnetic radiation is not unique in its ability to extend electrical circuitry into the wireless domain. Anything that can travel through a nonconductive material&mdash;mechanical motion, sound waves, heat&mdash;could be used as a (perhaps crude) means of converting electrical energy into information that does not rely on conductive interconnections.</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/RFT_page1_1.JPG" /></p>
-#### <em>Carefully manipulated sinusoidal voltage (or current) signals are the foundation of the modern wireless age.</em>
+<em>Carefully manipulated sinusoidal voltage (or current) signals are the foundation of the modern wireless age.</em>
 
 <p>With this in mind, we can ask ourselves the more relevant questions: Why is electromagnetic radiation the preferred method? Why are other types of wireless communication of such secondary importance? Before we answer these questions, let&rsquo;s make sure we understand what electromagnetic radiation is.</p>
 
 ## Fields and Waves
 <p>You could spend years studying the details of electromagnetism. Fortunately, you don&rsquo;t need that sort of expertise to successfully design and implement RF circuits. But you do need to have a basic idea of the mysterious energy being emitted from your device&rsquo;s antenna.</p>
 <p>As the name implies, electromagnetic radiation involves both electric fields and magnetic fields. If you have voltage&mdash;such as the voltage across the impedance of an antenna&mdash;you have an electric field (from a mathematical standpoint, electric field is proportional to the spatial rate of change of voltage). If you have electric current&mdash;such as the current passing through the impedance of an antenna&mdash;you have a magnetic field (the strength of the field is proportional to the magnitude of the current).</p>
-<p>The electric and magnetic fields are present even if the magnitude of the voltage or current is constant. However, these fields would not <em>propagate</em>. If we want a wave that will propagate out into the universe, we need <em>changes</em> in <a href="https://eepower.com/textbook/vol-i-foundations-power-design/chapter-1-introduction-power/power-dc-circuits" target="_blank">voltage and current</a>.</p>
+<p>The electric and magnetic fields are present even if the magnitude of the voltage or current is constant. However, these fields would not <em>propagate</em>. If we want a wave that will propagate out into the universe, we need <em>changes</em> in voltage and current.</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/RFT_ch1_page1_2-_CON-452_rs.jpg" /></p>
-#### <em>The electric and magnetic components of an electromagnetic wave are represented as perpendicular sinusoids.</em>
+<em>The electric and magnetic components of an electromagnetic wave are represented as perpendicular sinusoids.</em>
 
 <p>The key to this propagation phenomenon is the self-sustaining relationship between the electric and magnetic components of electromagnetic radiation. A changing electric field generates a magnetic field, and a changing magnetic field generates an electric field. This mutual regeneration is manifested as a distinct entity, namely, an electromagnetic wave. Once generated, this wave will travel outward from its source, careening day after day, at the speed of light, toward the depths of the unknown.</p>
 
@@ -28,7 +28,7 @@
 <p>EMR is a natural extension of the electrical signals used in wired circuits. Time-varying voltages and currents generate EMR whether you want them to or not, and furthermore, that EMR is a precise representation of the AC components of the original signal.</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/RFT_page1_3.JPG" /></p>
-#### <em>Each portion of this intricate </em><a href="https://www.allaboutcircuits.com/technical-articles/quadrature-phase-shift-keying-qpsk-modulation/" target="_blank"><em>QPSK</em></a><em> waveform transfers two bits of digital information.</em>
+<em>Each portion of this intricate </em><em>QPSK</em><em> waveform transfers two bits of digital information.</em>
 
 <p>Let&rsquo;s consider an extreme (and completely impractical) counterexample: a heat-based wireless communication system. Imagine that a room contains two separate devices. The transmitter device heats up the room to a certain temperature based on the message it wants to send, and the receiver device measures and interprets the ambient temperature. This is a sluggish, awkward system because the temperature of the room cannot precisely follow the variations of an intricate electrical signal. EMR, on the other hand, is highly responsive. Transmitted RF signals can faithfully reproduce even the complex, high-frequency waveforms used in state-of-the-art wireless systems.</p>
 
@@ -39,7 +39,7 @@
 <p>The pursuit of wireless communication is closely linked to the pursuit of long-distance communication; if the transmitter and receiver are in close proximity, it is often simpler and more cost-effective to use wires. Though the strength of an RF signal decreases according to the inverse-square law, EMR&mdash;in conjunction with modulation techniques and sophisticated receiver circuitry&mdash;still has a remarkable ability to transfer usable signals over long distances.</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/RFT_page1_4.JPG" /></p>
-#### <em>The intensity of EMR decreases exponentially as the emitted energy propagates outward in all directions.</em>
+<em>The intensity of EMR decreases exponentially as the emitted energy propagates outward in all directions.</em>
 
 ### No Line of Sight Needed
 <p>The only wireless communication medium that can compete with EMR is light; this is perhaps not too surprising, since light is actually very-high-frequency EMR. But the nature of optical transmission highlights what is perhaps the definitive advantage offered by RF communication: a clear line of sight is not required.</p>

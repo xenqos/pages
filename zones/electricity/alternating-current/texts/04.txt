@@ -1,16 +1,16 @@
 # Simple AC Circuit Calculations
 <p>Over the course of the next few chapters, you will learn that AC circuit measurements and calculations can get very complicated due to the complex nature of alternating current in circuits with inductance and capacitance.</p>
-<p>However, with simple circuits (figure below) involving nothing more than an&nbsp;<a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-11/power-resistive-reactive-ac-circuits/" target="_blank">AC power</a> source and&nbsp;<a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/resistance/" target="_blank">resistance</a>, the same laws and rules of DC apply simply and directly.</p>
+<p>However, with simple circuits (figure below) involving nothing more than an&nbsp;AC power source and&nbsp;resistance, the same laws and rules of DC apply simply and directly.</p>
 <p><img src="/uploads/articles/ac-power-source-and-resistance-circuits.jpg" /></p>
 <p><em>AC circuit calculations for resistive circuits are the same as for DC.</em></p>
 
 <p><img src="/uploads/articles/ac-circuit-equation.jpg" /></p>
 
-<p>Series resistances still add, parallel resistances still diminish, and the Laws of&nbsp;<a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-6/kirchhoffs-voltage-law-kvl/" target="_blank">Kirchhoff</a> and&nbsp;<a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/voltage-current-resistance-relate/" target="_blank">Ohm</a> still hold true. Actually, as we will discover later on, these rules and laws <em>always</em> hold true, it&rsquo;s just that we have to express the quantities of voltage, current, and opposition to current in more advanced mathematical forms.</p>
+<p>Series resistances still add, parallel resistances still diminish, and the Laws of&nbsp;Kirchhoff and&nbsp;Ohm still hold true. Actually, as we will discover later on, these rules and laws <em>always</em> hold true, it&rsquo;s just that we have to express the quantities of voltage, current, and opposition to current in more advanced mathematical forms.</p>
 <p>With purely resistive circuits, however, these complexities of AC are of no practical consequence, and so we can treat the numbers as though we were dealing with simple DC quantities.</p>
 <p>Because all these mathematical relationships still hold true, we can make use of our familiar &ldquo;table&rdquo; method of organizing circuit values just as with DC:</p>
 <p><img src="/uploads/articles/circuit-values-table.jpg" /></p>
-<p>One major caveat needs to be given here: all measurements of AC voltage and current must be expressed in the same terms (<a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-1/measurements-ac-magnitude/" target="_blank">peak, peak-to-peak, average, or RMS</a>). If the source voltage is given in peak AC volts, then all currents and voltages subsequently calculated are cast in terms of peak units.</p>
+<p>One major caveat needs to be given here: all measurements of AC voltage and current must be expressed in the same terms (peak, peak-to-peak, average, or RMS). If the source voltage is given in peak AC volts, then all currents and voltages subsequently calculated are cast in terms of peak units.</p>
 <p>If the source voltage is given in AC RMS volts, then all calculated currents and voltages are cast in AC RMS units as well. This holds true for <em>any</em> calculation based on Ohm&rsquo;s Laws, Kirchhoff&rsquo;s Laws, etc. Unless otherwise stated, all values of voltage and current in AC circuits are generally assumed to be RMS rather than peak, average, or peak-to-peak.</p>
 <p>In some areas of electronics, peak measurements are assumed, but in most applications (especially industrial electronics) the assumption is RMS.</p>
 

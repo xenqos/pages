@@ -1,16 +1,16 @@
 # Intro Lab - How to Use an Ammeter to Measure Current
 ## Project Overview
-<p>In this project, you will learn how to use an <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-8/ammeter-design/" target="_blank">ammeter</a> to measure electrical current (the flow of electricity). Typically, the ammeter is one of the functions of a <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-8/multimeters/" target="_blank">multimeter</a>, which is an electrical instrument capable of measuring <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/voltage-current/" target="_blank">voltage, current</a>, and <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/resistance/" target="_blank">resistance</a> (Figure 1).</p>
+<p>In this project, you will learn how to use an ammeter to measure electrical current (the flow of electricity). Typically, the ammeter is one of the functions of a multimeter, which is an electrical instrument capable of measuring voltage, current, and resistance (Figure 1).</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/ammeter-illustration-1.jpg" /></p>
-#### <em><strong>Figure 1.&nbsp;</strong>Ammeter test probe connections for measuring current.</em>
+<em><strong>Figure 1.&nbsp;</strong>Ammeter test probe connections for measuring current.</em>
 
 ## Parts and Materials
 <ul>
 <li>&nbsp; 6 V&nbsp;battery</li>
 <li>&nbsp; 6 V incandescent lamp</li>
 </ul>
-<p>Basic circuit construction components such as <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/building-simple-resistor-circuits/" target="_blank">breadboard, terminal strip,</a> and jumper wires are also assumed to be available from now on, leaving only components and materials unique to the project listed under &ldquo;Parts and Materials.&rdquo;</p>
+<p>Basic circuit construction components such as breadboard, terminal strip, and jumper wires are also assumed to be available from now on, leaving only components and materials unique to the project listed under &ldquo;Parts and Materials.&rdquo;</p>
 
 ## Learning Objectives
 <ul>
@@ -21,26 +21,26 @@
 
 ## Introduction to Measuring Current
 <p>Current is the measure of the rate of electron &ldquo;flow&rdquo; in a circuit. It is measured in the unit of the Ampere, called &ldquo;Amp,&rdquo; (A).&nbsp;The most common way to measure current in a circuit is to break the circuit open and insert an ammeter&nbsp;in series (in-line) with the circuit so that all electrons flowing through the circuit must also go through the meter.&nbsp;Since measuring current in this manner requires the meter to be made part of the circuit, it is a more difficult type of measurement to make than either voltage or resistance.</p>
-<p>Some digital meters, like the unit shown in Figure 1, have a separate A jack to insert the red test lead plug when measuring current.&nbsp;This is different than the connection points for measuring <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-2/voltage-usage/" target="_blank">voltage</a> and <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-2/ohmmeter-usage/" target="_blank">resistance</a>.&nbsp;Other meters, like most inexpensive analog meters, use the same jacks for measuring voltage, resistance, and current.&nbsp;Consult your owner&rsquo;s manual on the particular model of meter you own for details on measuring current.</p>
-<p>When an ammeter is placed <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/simple-series-circuits/" target="_blank">in series</a> with a circuit, it ideally drops no voltage as current goes through it.&nbsp;In other words, it acts very much like a piece of wire, with very little resistance from one test probe to the other.</p>
+<p>Some digital meters, like the unit shown in Figure 1, have a separate A jack to insert the red test lead plug when measuring current.&nbsp;This is different than the connection points for measuring voltage and resistance.&nbsp;Other meters, like most inexpensive analog meters, use the same jacks for measuring voltage, resistance, and current.&nbsp;Consult your owner&rsquo;s manual on the particular model of meter you own for details on measuring current.</p>
+<p>When an ammeter is placed in series with a circuit, it ideally drops no voltage as current goes through it.&nbsp;In other words, it acts very much like a piece of wire, with very little resistance from one test probe to the other.</p>
 
 ### Ammeter Fuses for High Current Protection
-<p>Since an ammeter has very little resistance, it&nbsp;will act as a short circuit if placed <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/simple-parallel-circuits/" target="_blank">in parallel</a> (across the terminals of) a substantial voltage source. If this is done, a surge in current will result, as shown in Figure 2, potentially damaging the meter.</p>
+<p>Since an ammeter has very little resistance, it&nbsp;will act as a short circuit if placed in parallel (across the terminals of) a substantial voltage source. If this is done, a surge in current will result, as shown in Figure 2, potentially damaging the meter.</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/ammeter-illustration-2.jpg" /></p>
-#### <em><strong>Figure 2.&nbsp;</strong>Ammeter short circuit connection resulting in a surge&nbsp;current.</em>
+<em><strong>Figure 2.&nbsp;</strong>Ammeter short circuit connection resulting in a surge&nbsp;current.</em>
 
 <p>Ammeters are generally protected from excessive current by means of a small fuse located inside the meter housing.&nbsp;If the ammeter is accidentally connected across a substantial voltage source, the resultant surge in current will blow&nbsp;the fuse and render the meter incapable of measuring current until the fuse is replaced.&nbsp;<strong>Be very careful to avoid this scenario!</strong></p>
 <p><strong>Step 1:&nbsp;</strong>You may test the condition of a multimeter&rsquo;s fuse by switching it to the resistance mode and measuring continuity through the test leads (and through the fuse).&nbsp;On a meter where different jacks are used for current,&nbsp;insert the test lead plugs, as illustrated in Figure 3, to check the fuse.</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/ammeter-illustration-3.jpg" /></p>
-#### <em><strong>Figure 3.&nbsp;</strong>Testing an ammeter&#39;s fuse.</em>
-## &nbsp;
+<em><strong>Figure 3.&nbsp;</strong>Testing an ammeter&#39;s fuse.</em>
+
 <p>On a meter where the same test lead jacks are used for both resistance and current measurement, leave the test lead plugs where they are and touch the two probes together.&nbsp;</p>
 <p><strong>Step 2: </strong>Build the one-battery, one-lamp circuit using jumper wires to connect the battery to the lamp. You will omit the ammeter from the illustration of Figure 1 and&nbsp;the schematic diagram of Figure 4.&nbsp;</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/ammeter-schematic-diagram.jpg" /></p>
-#### <em><strong>Figure 4. </strong>The schematic&nbsp;diagram for measuring the current of the lamp circuit using an ammeter.</em>
+<em><strong>Figure 4. </strong>The schematic&nbsp;diagram for measuring the current of the lamp circuit using an ammeter.</em>
 
 <p><strong>Step 3: </strong>Verify that the lamp lights up before connecting the ammeter in series with it.</p>
 <p><strong>Step 4: </strong>Break the circuit open, as illustrated in Figures 1 and 3,&nbsp;and connect the ammeter&rsquo;s test probes to the two points of the break to measure current.&nbsp;As usual, if your meter is manually ranged, begin by selecting the highest range for current. Next, move the selector switch to lower range positions until the strongest indication is obtained on the meter display without over-ranging it. If the meter indication is backward (left motion on an analog needle&nbsp;or negative reading on a digital display), then reverse the test probe connections and try again.&nbsp;</p>
@@ -52,7 +52,7 @@
 <p><strong>Step 6:&nbsp;</strong>Re-construct the circuit on a breadboard, as illustrated in Figure 5. Verify that the light turns on.</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/ammeter-to-breadboard-circuit-illustration-1.jpg" /></p>
-#### <em><strong>Figure 5. </strong>Breadboard implementation of the lamp circuit.</em>
+<em><strong>Figure 5. </strong>Breadboard implementation of the lamp circuit.</em>
 
 <p>Students often get confused when connecting an ammeter to a breadboard circuit.&nbsp;How can the meter be connected so as to intercept all the circuit&rsquo;s current and not create a short circuit?</p>
 <p>One easy method that guarantees success is this:</p>
@@ -65,7 +65,7 @@
 <p><strong>Step 7:&nbsp;</strong>Follow the four-step sequence above to insert the ammeter into the breadboard lamp circuit. Your new circuit should look similar to the image in Figure 6.&nbsp;</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/ammeter-to-breadboard-circuit-illustration-2.jpg" /></p>
-#### <em><strong>Figure 6. </strong>Breadboard implementation of the lamp circuit with an ammeter measuring current.</em>
+<em><strong>Figure 6. </strong>Breadboard implementation of the lamp circuit with an ammeter measuring current.</em>
 
 <p>The current figure of 24.70 milliamps (24.70 mA), shown in Figure 6,&nbsp;is an arbitrary quantity but reasonable for a small incandescent lamp.&nbsp;If the current for your circuit is a different value, that is okay, so long as the lamp is functioning when the ammeter is connected.</p>
 <p>If the lamp refuses to light when the ammeter is connected to the circuit, and the ammeter registers a much greater reading, you probably have a short-circuit condition through the ammeter.&nbsp;If your lamp refuses to light when the meter is connected to the circuit, and the meter registers zero current, you&rsquo;ve probably blown the fuse inside the meter. If so, you will need to check the condition of your meter&rsquo;s fuse as described previously in this experiment and replace the fuse if necessary.</p>
@@ -73,4 +73,4 @@
 <p><strong>Step 9:&nbsp;</strong>Build the same lamp circuit on a terminal strip, as illustrated in Figure 7, and measure the current. It&nbsp;should yield similar results.</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/same-circuit-on-a-terminal-strip.jpg" /></p>
-#### <em><strong>Figure 7. </strong>Terminal strip implementation of the lamp circuit with an ammeter measuring current.</em>
+<em><strong>Figure 7. </strong>Terminal strip implementation of the lamp circuit with an ammeter measuring current.</em>

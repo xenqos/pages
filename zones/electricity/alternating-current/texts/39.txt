@@ -1,6 +1,6 @@
 # Square Wave Signals
 <p>It has been found that <em>any</em> repeating, non-sinusoidal waveform can be equated to a combination of DC voltage, sine waves, and/or cosine waves (sine waves with a 90 degree phase shift) at various amplitudes and frequencies.</p>
-<p>This is true no matter how strange or convoluted the <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-1/ac-waveforms/" target="_blank">waveform</a> in question may be. So long as it repeats itself regularly over time, it is reducible to this series of sinusoidal waves.</p>
+<p>This is true no matter how strange or convoluted the waveform in question may be. So long as it repeats itself regularly over time, it is reducible to this series of sinusoidal waves.</p>
 <p>In particular, it has been found that square waves are mathematically equivalent to the sum of a sine wave at that same frequency, plus an infinite series of odd-multiple frequency sine waves at diminishing amplitude:</p>
 
 <p><img src="/uploads/articles/repeating-square-wave-at-50hz.jpg" /></p>

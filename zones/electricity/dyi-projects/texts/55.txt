@@ -1,15 +1,15 @@
 # Si Lab - Bipolar Transistor as a Switch
 ## Project Overview
-<p>Transistors are used as switching devices in digital and analog circuits. In this project, the circuit of Figure 1 will be used to demonstrate how an NPN <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-4/bipolar-junction-transistors-bjt/" target="_blank">bipolar junction transistor (BJT)</a> can be used to <a href="https://www.allaboutcircuits.com/textbook/digital/chpt-4/switch-types/" target="_blank">switch</a> a <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-3/special-purpose-diodes/" target="_blank">light-emitting diode (LED)</a> on and off.</p>
+<p>Transistors are used as switching devices in digital and analog circuits. In this project, the circuit of Figure 1 will be used to demonstrate how an NPN bipolar junction transistor (BJT) can be used to switch a light-emitting diode (LED) on and off.</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/transistor-as-a-switch-schematic-diagram-1.jpg" /></p>
-#### <em><strong>Figure 1. </strong>Schematic diagram of the bipolar transistor switching circuit with LED output indicator.</em>
-## &nbsp;
+<em><strong>Figure 1. </strong>Schematic diagram of the bipolar transistor switching circuit with LED output indicator.</em>
+
 ## Parts and Materials
 <ul>
 <li>Two 6 V batteries</li>
-<li>One NPN transistor&mdash;models <a href="https://www.farnell.com/datasheets/296640.pdf" target="_blank">2N2222</a> or <a href="https://my.centralsemi.com/datasheets/LSSGP078.PDF" target="_blank">2N3403</a> recommended</li>
-<li>One 100 k&Omega; <a href="https://eepower.com/resistor-guide/" target="_blank">resistor</a></li>
+<li>One NPN transistor&mdash;models 2N2222 or 2N3403 recommended</li>
+<li>One 100 k&Omega; resistor</li>
 <li>One 560 &Omega; resistor</li>
 <li>One LED&nbsp;</li>
 </ul>
@@ -25,35 +25,35 @@
 <p><strong>Step 1: </strong>Build the circuit illustrated in Figures 1 and 2.&nbsp;</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/transistor-as-a-switch-illustration-1.jpg" /></p>
-#### <em><strong>Figure 2. </strong>Breadboard implementation of the bipolar transistor switching circuit with LED output indicator.</em>
+<em><strong>Figure 2. </strong>Breadboard implementation of the bipolar transistor switching circuit with LED output indicator.</em>
 
 <p>Pay careful attention to the correct connections for the NPN transistor. The red wire shown in Figure 1&mdash;terminating in an arrowhead and&nbsp;connected to one end of the 100 k&Omega; resistor&mdash;is intended to remain loose so that you may touch it momentarily at other points in the circuit.</p>
 <p><strong>Step 2:&nbsp;</strong>If you touch the end of the loose wire to any point in the circuit more positive than it, such as the positive side of the DC power source, the LED should light up. It takes 20 mA to fully illuminate a standard LED.&nbsp;This behavior should strike you as interesting because the 100 k&Omega; resistor to which the loose wire is attached restricts current through it to a far lesser value than 20 mA.</p>
-<p>At most, a total voltage of 12 V across a 100 k&Omega; <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/resistance/" target="_blank">resistance</a> yields a current of only 0.12 mA or 120 &micro;A. The connection made by your touching the wire to a positive point in the circuit conducts far less current than 1 mA. Yet through its amplifying action,&nbsp;the transistor is able to control a much greater current through the LED.</p>
-<p><strong>Step 2:&nbsp;</strong>Try using an <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-8/ammeter-design/" target="_blank">ammeter</a> to connect the loose wire to the positive side of the power source, as illustrated in Figure 3.&nbsp;</p>
+<p>At most, a total voltage of 12 V across a 100 k&Omega; resistance yields a current of only 0.12 mA or 120 &micro;A. The connection made by your touching the wire to a positive point in the circuit conducts far less current than 1 mA. Yet through its amplifying action,&nbsp;the transistor is able to control a much greater current through the LED.</p>
+<p><strong>Step 2:&nbsp;</strong>Try using an ammeter to connect the loose wire to the positive side of the power source, as illustrated in Figure 3.&nbsp;</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/transistor-as-a-switch-illustration-2.jpg" /></p>
-#### <em><strong>Figure 3. </strong>Measuring the base current of the bipolar transistor.</em>
+<em><strong>Figure 3. </strong>Measuring the base current of the bipolar transistor.</em>
 
 <p>You may have to select the most sensitive current range on the meter to measure this small flow into the base of the NPN transistor.</p>
 <p><strong>Step 3:&nbsp;</strong>After measuring this controlling base&nbsp;current, try measuring the LED&rsquo;s current (the controlled current) and comparing magnitudes.&nbsp;Don&rsquo;t be surprised if you find a ratio in excess of 200 (the controlled current is 200 times as great as the controlling current). As you can see, the transistor is acting as a kind of electrically-controlled switch, switching current on and off to the LED at the command of a much smaller current signal conducted through its base terminal.</p>
 <p><strong>Step 4:&nbsp;</strong>To further illustrate just how minuscule the controlling current is, remove the loose wire from the circuit. From there, try bridging&nbsp;the unconnected end of the 100 k&Omega; resistor to the power source&rsquo;s positive pole with two fingers of one hand, as shown in Figure 4.&nbsp;</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/transistor-as-a-switch-illustration-3.jpg" /></p>
-#### <em><strong>Figure 4. </strong>Using conduction of the human body for the transistor switch control.</em>
+<em><strong>Figure 4. </strong>Using conduction of the human body for the transistor switch control.</em>
 
 <p>You may need to wet the ends of those fingers to maximize conductivity.</p>
-<p><strong>Step 5:&nbsp;</strong>Try varying the contact pressure of your fingers with these two points in the circuit to vary the amount of <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/resistance/" target="_blank">resistance</a> in the controlling current&rsquo;s path. Can you vary the brightness of the LED by doing so? What does this indicate about the transistor&rsquo;s ability to act as more than just a switch; i.e. as a variable <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-1/amplifiers/" target="_blank">amplifier</a>?</p>
+<p><strong>Step 5:&nbsp;</strong>Try varying the contact pressure of your fingers with these two points in the circuit to vary the amount of resistance in the controlling current&rsquo;s path. Can you vary the brightness of the LED by doing so? What does this indicate about the transistor&rsquo;s ability to act as more than just a switch; i.e. as a variable amplifier?</p>
 
 ## SPICE Simulation&mdash;Transistor as a Switch Circuit for Driving an LED
 <p>You can simulate this operation of this bipolar junction transistor circuit using the illustration of Figure 5 and the netlist below.</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/transistor-as-a-switch-schematic-with-spice-node-numbers.jpg" /></p>
-#### <em><strong>Figure 5.&nbsp;</strong>SPICE circuit diagram with node numbers for simulation of the bipolar transistor switching circuit.</em>
+<em><strong>Figure 5.&nbsp;</strong>SPICE circuit diagram with node numbers for simulation of the bipolar transistor switching circuit.</em>
 
 <p>Netlist (make a text file containing the following text, verbatim):</p>
 <pre>
 Transistor as a switch &#10;v1 1 0 &#10;r1 1 2 100k &#10;r2 1 3 560 &#10;d1 3 4 mod2 &#10;q1 4 2 0 mod1 &#10;.model mod1 npn bf=200 &#10;.model mod2 d is=1e-28 &#10;.dc v1 12 12 1 &#10;.print dc v(2,0) v(4,0) v(1,2) v(1,3) v(3,4) &#10;.end </pre>
 
-<p>In this simulation, the <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/polarity-voltage-drops/" target="_blank">voltage drop</a> across the 560 &Omega; resistor <tt>v(1,3)</tt> turns out to be 10.26 V, indicating a LED current of 18.32 mA by <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/voltage-current-resistance-relate/" target="_blank">Ohm&rsquo;s Law</a> (I = V/R). The voltage drop of resistor R<sub>1</sub>&nbsp;ends up being 11.15 V, which across 100 k&Omega;, gives a current of only 111.5 &micro;A. Obviously, a small current is exerting control over a much larger current in this circuit.</p>
+<p>In this simulation, the voltage drop across the 560 &Omega; resistor <tt>v(1,3)</tt> turns out to be 10.26 V, indicating a LED current of 18.32 mA by Ohm&rsquo;s Law (I = V/R). The voltage drop of resistor R<sub>1</sub>&nbsp;ends up being 11.15 V, which across 100 k&Omega;, gives a current of only 111.5 &micro;A. Obviously, a small current is exerting control over a much larger current in this circuit.</p>
 <p>In case you were wondering, the <tt>is=1e-28</tt> parameter in the diode&rsquo;s <tt>.model</tt> line is there to make the diode act more like an LED with a higher forward voltage drop.</p>

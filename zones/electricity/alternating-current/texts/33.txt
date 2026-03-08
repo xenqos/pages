@@ -1,6 +1,6 @@
 # Simple Parallel (Tank Circuit) Resonance
 ## Resonance in a Tank Circuit
-<p>A condition of resonance will be experienced in a tank circuit when the reactance of the <a href="https://www.allaboutcircuits.com/video-lectures/capacitors-part-1/" target="_blank">capacitor</a> and <a href="https://www.allaboutcircuits.com/video-lectures/inductors-part-1/" target="_blank">inductor</a> are equal to each other. Because inductive reactance increases with increasing frequency and capacitive reactance decreases with increasing frequency, there will only be one frequency where these two reactances will be equal. Example:</p>
+<p>A condition of resonance will be experienced in a tank circuit when the reactance of the capacitor and inductor are equal to each other. Because inductive reactance increases with increasing frequency and capacitive reactance decreases with increasing frequency, there will only be one frequency where these two reactances will be equal. Example:</p>
 
 <p><img src="/uploads/articles/simple-parallel-resonant-circuit.jpg" /></p>
 <p><em>Simple parallel resonant circuit (tank circuit).</em></p>
@@ -31,7 +31,7 @@
 ### Resonant circuit suitable for SPICE simulation.
 
 <p><em><img src="/uploads/articles/Resonant-circuit_suitable-for-SPICE-simulation.png" /></em></p>
-<p>The 1 pico-ohm (1 p&Omega;) resistor is placed in this SPICE analysis to overcome a limitation of SPICE: namely, that it cannot analyze a circuit containing a direct inductor-voltage source loop. (Figure <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-6/parallel-tank-circuit-resonance/#02097.png" target="_blank">below</a>) A very low resistance value was chosen so as to have minimal effect on circuit behavior.</p>
+<p>The 1 pico-ohm (1 p&Omega;) resistor is placed in this SPICE analysis to overcome a limitation of SPICE: namely, that it cannot analyze a circuit containing a direct inductor-voltage source loop. (Figure below) A very low resistance value was chosen so as to have minimal effect on circuit behavior.</p>
 <p>This SPICE simulation plots circuit current over a frequency range of 100 to 200 Hz in twenty even steps (100 and 200 Hz inclusive). Current magnitude on the graph increases from left to right, while frequency increases from top to bottom.</p>
 <p>The current in this circuit takes a sharp dip around the analysis point of 157.9 Hz, which is the closest analysis point to our predicted resonance frequency of 159.155 Hz. It is at this point that total current from the power source falls to zero.</p>
 ## The &ldquo;Nutmeg&rdquo; Graphical Post-Processor Plot

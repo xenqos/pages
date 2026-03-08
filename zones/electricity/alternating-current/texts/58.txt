@@ -2,7 +2,7 @@
 <p><img src="/uploads/articles/single-phase-power-system-schematic-diagram.jpg" /></p>
 <p><em>Single phase power system schematic diagram shows little about the wiring of a practical power circuit.</em></p>
 
-<p>Depicted above, is a very simple <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-1/what-is-alternating-current-ac/" target="_blank">AC circuit</a>. If the load resistor&rsquo;s power dissipation were substantial, we might call this a &ldquo;power circuit&rdquo; or &ldquo;power system&rdquo; instead of regarding it as just a regular circuit.</p>
+<p>Depicted above, is a very simple AC circuit. If the load resistor&rsquo;s power dissipation were substantial, we might call this a &ldquo;power circuit&rdquo; or &ldquo;power system&rdquo; instead of regarding it as just a regular circuit.</p>
 <p>The distinction between a &ldquo;power circuit&rdquo; and a &ldquo;regular circuit&rdquo; may seem arbitrary, but the practical concerns are definitely not.</p>
 ## Practical Circuit Analysis
 <p>One such concern is the size and cost of wiring necessary to deliver power from the AC source to the load. Normally, we do not give much thought to this type of concern if we&rsquo;re merely analyzing a circuit for the sake of learning about the laws of electricity.</p>
@@ -15,7 +15,7 @@
 
 <p>83.33 amps for each load resistor in the figure above adds up to 166.66 amps total circuit current. This is no small amount of current and would necessitate copper wire conductors of at least 1/0 gauge.</p>
 <p>Such wire is well over 1/4 inch (6 mm) in diameter, weighing over 300 pounds per thousand feet. Bear in mind that copper is not cheap either! It would be in our best interest to find ways to minimize such costs if we were designing a power system with long conductor lengths.</p>
-<p>One way to do this would be to increase the <a href="https://www.allaboutcircuits.com/worksheets/voltage-current-and-resistance/" target="_blank">voltage</a> of the power source and use loads built to dissipate 10 kW each at this higher voltage.</p>
+<p>One way to do this would be to increase the voltage of the power source and use loads built to dissipate 10 kW each at this higher voltage.</p>
 <p>The loads, of course, would have to have greater resistance values to dissipate the same power as before (10 kW each) at a greater voltage than before.</p>
 <p>The advantage would be less current required, permitting the use of smaller, lighter, and cheaper wire:</p>
 

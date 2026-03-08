@@ -1,10 +1,10 @@
 # Series-parallel R, L, and C
-<p>Now that we&rsquo;ve seen how <a href="https://www.allaboutcircuits.com/video-lectures/series-parallel-circuits/" target="_blank">series and parallel</a> AC circuit analysis is not fundamentally different than DC circuit analysis, it should come as no surprise that series-parallel analysis would be the same as well, just using complex numbers instead of a scalar to represent voltage, current, and impedance. Take this series-parallel circuit for example:</p>
+<p>Now that we&rsquo;ve seen how series and parallel AC circuit analysis is not fundamentally different than DC circuit analysis, it should come as no surprise that series-parallel analysis would be the same as well, just using complex numbers instead of a scalar to represent voltage, current, and impedance. Take this series-parallel circuit for example:</p>
 
 <p><img src="/uploads/articles/example-series-parallel-rlc-circuit.png" /></p>
 <p><em>Example series-parallel R, L, and C circuit.</em></p>
 
-<p>The first order of business, as usual, is to determine values of impedance (Z) for all components based on the frequency of the AC power source. To do this, we need to first determine values of reactance (X) for all <a href="https://www.allaboutcircuits.com/video-lectures/inductors-part-1/" target="_blank">inductors</a> and <a href="https://www.allaboutcircuits.com/video-lectures/capacitors-part-1/" target="_blank">capacitors</a>, then convert reactance (X) and resistance (R) figures into proper impedance (Z) form:</p>
+<p>The first order of business, as usual, is to determine values of impedance (Z) for all components based on the frequency of the AC power source. To do this, we need to first determine values of reactance (X) for all inductors and capacitors, then convert reactance (X) and resistance (R) figures into proper impedance (Z) form:</p>
 
 <p><img src="/uploads/articles/determine-values-of-impedance-image1.png" /></p>
 
@@ -15,7 +15,7 @@
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/SPRLC_table1.jpg" /></p>
 
 <p>Being a series-parallel <em>combination</em> circuit, we must reduce it to a total impedance in more than one step. The first step is to combine L and C<sub>2</sub> as a series combination of impedances, by adding their impedances together.</p>
-<p>Then, that impedance will be combined in parallel with the impedance of the <a href="https://www.allaboutcircuits.com/video-lectures/electronic-components-resistors/" target="_blank">resistor</a>, to arrive at another combination of impedances. Finally, that quantity will be added to the impedance of C<sub>1</sub> to arrive at the total impedance.</p>
+<p>Then, that impedance will be combined in parallel with the impedance of the resistor, to arrive at another combination of impedances. Finally, that quantity will be added to the impedance of C<sub>1</sub> to arrive at the total impedance.</p>
 <p>In order that our table may follow all these steps, it will be necessary to add additional columns to it so that each step may be represented.</p>
 <p>Adding more columns horizontally to the table shown above would be impractical for formatting reasons, so I will place a new row of columns underneath, each column designated by its respective component combination:</p>
 
@@ -26,7 +26,7 @@
 <p><img src="/uploads/articles/initial-values-in-table3.png" /></p>
 
 <p>Seeing as how our second table contains a column for &ldquo;Total,&rdquo; we can safely discard that column from the first table. This gives us one table with four columns and another table with three columns.</p>
-<p>Now that we know the total impedance (818.34 &Omega; &ang; -58.371&deg;) and the total voltage (120 volts &ang; 0&deg;), we can apply <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/voltage-current-resistance-relate/" target="_blank">Ohm&rsquo;s Law</a> (I=E/Z) vertically in the &ldquo;Total&rdquo; column to arrive at a figure for total current:</p>
+<p>Now that we know the total impedance (818.34 &Omega; &ang; -58.371&deg;) and the total voltage (120 volts &ang; 0&deg;), we can apply Ohm&rsquo;s Law (I=E/Z) vertically in the &ldquo;Total&rdquo; column to arrive at a figure for total current:</p>
 
 <p><img src="/uploads/articles/initial-values-in-table4.png" /></p>
 
@@ -43,7 +43,7 @@
 
 <p><img src="/uploads/articles/initial-values-in-table8.png" /></p>
 
-<p>A quick double-check of our work at this point would be to see whether or not the voltage drops across C<sub>1</sub> and the series-parallel combination of R//(L&mdash;C<sub>2</sub>) indeed add up to the total. According to <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-6/kirchhoffs-voltage-law-kvl/" target="_blank">Kirchhoff&rsquo;s Voltage Law</a>, they should!</p>
+<p>A quick double-check of our work at this point would be to see whether or not the voltage drops across C<sub>1</sub> and the series-parallel combination of R//(L&mdash;C<sub>2</sub>) indeed add up to the total. According to Kirchhoff&rsquo;s Voltage Law, they should!</p>
 
 <p><img src="/uploads/articles/series-parallel-kirchhoffs-voltage-law.png" /></p>
 
@@ -61,7 +61,7 @@
 
 <p><img src="/uploads/articles/initial-values-in-table11.png" /></p>
 
-<p>Another quick double-check of our work at this point would be to see if the current figures for L&mdash;C<sub>2</sub> and R add up to the total current. According to <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-6/kirchhoffs-current-law-kcl/" target="_blank">Kirchhoff&rsquo;s Current Law</a>, they should:</p>
+<p>Another quick double-check of our work at this point would be to see if the current figures for L&mdash;C<sub>2</sub> and R add up to the total current. According to Kirchhoff&rsquo;s Current Law, they should:</p>
 
 <p><img src="/uploads/articles/total-current-kirchhoffs-current-law.png" /></p>
 

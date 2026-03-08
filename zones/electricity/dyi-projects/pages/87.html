@@ -33,28 +33,28 @@
 
 <h1>555 Lab - Schmitt Trigger</h1>
 <h2>Project Overview</h2>
-<p>In this project, you will build&nbsp;a <a href=&quot;https://www.allaboutcircuits.com/technical-articles/exactly-how-schmitt-trigger-oscillators-work/&quot; target=&quot;_blank&quot;>Schmitt trigger</a> using a <a href=&quot;https://www.allaboutcircuits.com/textbook/experiments/chpt-8/555-ic/&quot; target=&quot;_blank&quot;>555 timer integrated circuit</a>&nbsp;(IC). A Schmitt trigger is a&nbsp;special <a href=&quot;https://www.allaboutcircuits.com/textbook/experiments/chpt-6/voltage-comparator/&quot; target=&quot;_blank&quot;>analog&nbsp;comparator</a> with <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-7/hysteresis/&quot; target=&quot;_blank&quot;>hysteresis</a>. This means that it has&nbsp;different&nbsp;switching threshold voltages&nbsp;depending upon whether the input is changing from low to high or high to low, as illustrated in Figure 1.&nbsp;</p>
+<p>In this project, you will build&nbsp;a Schmitt trigger using a 555 timer integrated circuit&nbsp;(IC). A Schmitt trigger is a&nbsp;special analog&nbsp;comparator with hysteresis. This means that it has&nbsp;different&nbsp;switching threshold voltages&nbsp;depending upon whether the input is changing from low to high or high to low, as illustrated in Figure 1.&nbsp;</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/hysteresis.jpg&quot; /></p>
-<h4><em><strong>Figure 1.</strong> Input-output voltage relationship for a Schmitt trigger.</em></h4>
-
-<p>The Schmitt trigger uses <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-8/positive-feedback/&quot; target=&quot;_blank&quot;>positive feedback</a> to generate this nonlinear response. The input voltage for the low-to-high transition is called the high threshold voltage (VTH).&nbsp;The high-to-low transition input voltage is called the low threshold voltage (VTL).</p>
+<em><strong>Figure 1.</strong> Input-output voltage relationship for a Schmitt trigger.</em><br>
+<br>
+<p>The Schmitt trigger uses positive feedback to generate this nonlinear response. The input voltage for the low-to-high transition is called the high threshold voltage (VTH).&nbsp;The high-to-low transition input voltage is called the low threshold voltage (VTL).</p>
 <p>The schematic symbol for an inverting Schmitt trigger, shown in Figure 2, is an inverter symbol with a hysteresis curve in the middle.</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/schmitt-trigger-schematic-diagram.jpg&quot; /></p>
-<h4><em><strong>Figure 2.</strong>&nbsp;The schematic symbol for a Schmitt trigger.</em></h4>
-
-<p>The 555 timer is probably one of the more versatile &ldquo;black box&rdquo; chips. In this project, we will use the 555 timer&#39;s 3-resistor <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-6/voltage-divider-circuits/&quot; target=&quot;_blank&quot;>voltage divider</a>, two&nbsp;<a href=&quot;https://www.allaboutcircuits.com/textbook/experiments/chpt-6/voltage-comparator/&quot; target=&quot;_blank&quot;>comparators</a>, and a built-in <a href=&quot;https://www.allaboutcircuits.com/textbook/digital/chpt-10/s-r-latch/&quot; target=&quot;_blank&quot;>set-reset flip-flop</a> to form a Schmitt trigger. It is also easy to build a <a href=&quot;https://www.allaboutcircuits.com/tools/hysteresis-comparator-calculator/&quot; target=&quot;_blank&quot;>Schmitt trigger&nbsp;using an operational amplifier with&nbsp;positive feedback</a>.</p>
+<em><strong>Figure 2.</strong>&nbsp;The schematic symbol for a Schmitt trigger.</em><br>
+<br>
+<p>The 555 timer is probably one of the more versatile &ldquo;black box&rdquo; chips. In this project, we will use the 555 timer&#39;s 3-resistor voltage divider, two&nbsp;comparators, and a built-in set-reset flip-flop to form a Schmitt trigger. It is also easy to build a Schmitt trigger&nbsp;using an operational amplifier with&nbsp;positive feedback.</p>
 
 <h2>Parts and Material</h2>
 <ul>
 <li>One 9 V battery</li>
 <li>Battery clip</li>
 <li>Mini hook clips</li>
-<li>One linear <a href=&quot;https://eepower.com/resistor-guide/resistor-types/potentiometer/&quot; target=&quot;_blank&quot;>potentiometer</a>, 10 k&Omega;, 15-Turn</li>
+<li>One linear potentiometer, 10 k&Omega;, 15-Turn</li>
 <li>One 555 timer IC&nbsp;</li>
-<li>One red <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-3/special-purpose-diodes/&quot; target=&quot;_blank&quot;>light-emitting diode (LED)</a></li>
+<li>One red light-emitting diode (LED)</li>
 <li>One green LED</li>
-<li>Two 1 k&Omega; <a href=&quot;https://eepower.com/resistor-guide/&quot; target=&quot;_blank&quot;>resistors</a></li>
-<li>One DVM (digital <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-8/voltmeter-design/&quot; target=&quot;_blank&quot;>voltmeter</a>) or VOM (Volt Ohm Meter)</li>
+<li>Two 1 k&Omega; resistors</li>
+<li>One DVM (digital voltmeter) or VOM (Volt Ohm Meter)</li>
 </ul>
 
 <h2>Learning Objectives</h2>
@@ -66,17 +66,17 @@
 <h2>Instructions</h2>
 <p>First, let&#39;s&nbsp;build&nbsp;the&nbsp;circuit demonstrated in the schematic diagram of Figure 3.&nbsp;&nbsp;</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/555-schmitt-trigger-schematic-diagram-1.jpg&quot; /></p>
-<h4><em><strong>Figure 3.</strong> Schmitt trigger circuit with potentiometer input and LED output indicators.</em></h4>
-
+<em><strong>Figure 3.</strong> Schmitt trigger circuit with potentiometer input and LED output indicators.</em><br>
+<br>
 <p>In this image, the 555 timer is represented by a modified Schmitt trigger with a few extra pins to help the circuit make sense. The input of the Schmitt trigger is connected to the potentiometer, which will be used to vary the input. When the output is high, it will turn on the green LED. When the output is low, it will turn on the red LED.&nbsp;</p>
-<p><strong>Step 1:&nbsp; </strong>Build the circuit illustrated by the schematic diagram of Figure 4 and the <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/building-simple-resistor-circuits/&quot; target=&quot;_blank&quot;>breadboard</a> implementation of Figure 5.&nbsp;</p>
+<p><strong>Step 1:&nbsp; </strong>Build the circuit illustrated by the schematic diagram of Figure 4 and the breadboard implementation of Figure 5.&nbsp;</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/555-schmitt-trigger-schematic-diagram.jpg&quot; /></p>
-<h4><em><strong>Figure 4.</strong> Schematic diagram of the Schmitt trigger&nbsp;circuit built using a 555 timer.</em></h4>
-
+<em><strong>Figure 4.</strong> Schematic diagram of the Schmitt trigger&nbsp;circuit built using a 555 timer.</em><br>
+<br>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/555-schmitt-trigger-illustration.jpg&quot; /></p>
-<h4><em><strong>Figure 5.</strong> Breadboard implementation of the Schmitt trigger circuit with LED output indicators.</em></h4>
-
-<p>It&rsquo;s interesting to note that this configuration of a Schmitt trigger&nbsp;isn&rsquo;t even close to the <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-8/introduction-operational-amplifiers/&quot; target=&quot;_blank&quot;>operational amplifier (op amp</a>) configuration shown elsewhere, but the end result is identical.</p>
+<em><strong>Figure 5.</strong> Breadboard implementation of the Schmitt trigger circuit with LED output indicators.</em><br>
+<br>
+<p>It&rsquo;s interesting to note that this configuration of a Schmitt trigger&nbsp;isn&rsquo;t even close to the operational amplifier (op amp) configuration shown elsewhere, but the end result is identical.</p>
 <p><strong>Step 2: </strong>Adjust the potentiometer until the lights flip states, then measure the potentiometer output voltage.&nbsp;Compare this voltage to the power supply voltage.</p>
 <p><strong>Step 3:&nbsp;</strong>Adjust the potentiometer in the other direction&nbsp;until the LED&rsquo;s flip states again, and again measure the voltage.&nbsp;How close to the 1/3 and 2/3 marks did you get?</p>
 <p><strong>Step 4:&nbsp;</strong>Try substituting the 9 V battery with a 6 V&nbsp;battery or two 6 V batteries, and see how close the thresholds are to the 1/3 and 2/3 marks.</p>
@@ -84,12 +84,12 @@
 <h2>Theory of Operation</h2>
 <p>Figure 6 provides a functional circuit schematic of the inner workings of the 555 timer IC, which will help to understand how our 555 Schmitt trigger is operating.</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/555-functional-schematic.jpg&quot; /></p>
-<h4><em><strong>Figure 6.</strong> A functional circuit schematic of the 555 timer IC.</em></h4>
-
+<em><strong>Figure 6.</strong> A functional circuit schematic of the 555 timer IC.</em><br>
+<br>
 <p>The defining characteristic of any Schmitt Trigger is its hysteresis. In this case, it is 1/3 and 2/3 of the power supply voltage, defined by the built-in resistor voltage divider on the 555 IC.&nbsp;The built-in comparators, C1 and C2, compare the input voltage to the references provided by the voltage divider. The outputs of C1 and C2 drive the set and reset inputs of the built-in flip-flop, respectively. The output of the flip-flop&nbsp;drives the output driver, another nice feature of the 555.</p>
 <p>The 555 can drive up to 200 mA to either side of the power supply rail (VCC or GND). The output driver creates a very low conduction path to either side of the power supply connections.</p>
 <p>The circuit &quot;shorts&rdquo; each side of the LED circuit, leaving the other side to light up.&nbsp;The 5 k&Omega; resistors are not very accurate. However, it is interesting to note that IC fabrication doesn&rsquo;t generally allow precision resistors, but the resistors compared to each other are extremely close in value, which is critical to the circuit&rsquo;s operation. Thus, the ratio is quite accurate even if the values are not precisely 5&nbsp;k&Omega;.</p>
-<p>Schmitt triggers are a fundamental circuit with several uses. In signal processing, they can pull and extract digital data from some extremely noisy environments. The hysteresis reduces the amount of <a href=&quot;https://www.allaboutcircuits.com/technical-articles/electrical-noise-what-causes-noise-in-electrical-circuits/&quot; target=&quot;_blank&quot;>noise</a> that is passed to the output.&nbsp;Other important uses will be shown in the following projects, such as an extremely <a href=&quot;https://www.allaboutcircuits.com/textbook/experiments/chpt-8/555-hysteretic-oscillator/&quot; target=&quot;_blank&quot;>simple RC oscillator</a>.</p>
+<p>Schmitt triggers are a fundamental circuit with several uses. In signal processing, they can pull and extract digital data from some extremely noisy environments. The hysteresis reduces the amount of noise that is passed to the output.&nbsp;Other important uses will be shown in the following projects, such as an extremely simple RC oscillator.</p>
 
 
 </div>

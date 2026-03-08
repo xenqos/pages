@@ -5,7 +5,7 @@
 <p>However, there is also such a thing as deliberate interference. This is called <em>jamming</em>; the goal is to broadcast a signal that in one way or another prevents other wireless systems from maintaining successful communication. Jamming is an important tactic in modern warfare, and in daily life it&rsquo;s a nuisance (or worse) and is completely illegal.</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/RFT_ch2_pg2_1.JPG" /></p>
-#### <em>This spectrum depicts a strong signal intended to jam a GPS device.</em>
+<em>This spectrum depicts a strong signal intended to jam a GPS device.</em>
 
 ## Regulations
 <p>It may initially seem strange that the government would regulate wireless transmissions&mdash;can we really impose laws on something as intangible as electromagnetic radiation? But the jamming example makes it clear that the absence of regulations would lead to serious problems. Strict organization is required to ensure that the realm of EMR does not deteriorate into a chaotic horde of interfering signals.</p>
@@ -14,7 +14,7 @@
 <p>If you are interested in (legal) license-free radio transmissions, you need to know your transmit power. Even if the official regulations are presented in terms of effective range or some other metric, you should be able to determine the transmit power that is generally considered acceptable in these situations&mdash;and estimating power is easier than trying to accurately measure the system&rsquo;s range or the field strength at a certain distance from the antenna.</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/chp2p2_graph.jpg" /></p>
-#### <em>This plot gives field-strength limits (for a specific range of frequencies) based on the FCC&rsquo;s &ldquo;</em><a href="https://www.fcc.gov/media/radio/low-power-radio-general-information#PART15" target="_blank"><em>Part 15</em></a><em>&rdquo; rules. Image adapted from <a href="https://www.digikey.com/en/articles/techzone/2011/mar/the-fcc-road-part-15-from-concept-to-approval" target="_blank">Digi-Key</a></em>
+<em>This plot gives field-strength limits (for a specific range of frequencies) based on the FCC&rsquo;s &ldquo;</em><em>Part 15</em><em>&rdquo; rules. Image adapted from Digi-Key</em>
 
 <p>In RF and all other types of electric circuits, the power dissipated by a component is equal to the voltage across that component multiplied by the current flowing through the component. You may think of an antenna as simply a conductor and therefore as something with very little resistance. It&rsquo;s true that a conductor can have very low resistance at DC, but at higher frequencies an antenna has significant amounts of input impedance. We&rsquo;re interested in the impedance of the antenna at the specific frequencies that we are using to transmit our RF signal; we will need this information to estimate the amount of power delivered to the antenna.</p>
 
@@ -24,14 +24,14 @@
 <p>Maximum power transfer occurs when the magnitude of the load impedance is equal to the magnitude of the source impedance.</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/RFT_ch2_pg2_.jpg" /></p>
-#### <em>As you can see, the load power (P<sub>L</sub>) is maximum when R<sub>L</sub> = R<sub>S</sub>. Notice, though, that efficiency (</em><em>&eta;) continues to increase beyond this point. Maximum power transfer does not correspond to maximum efficiency.</em>
+<em>As you can see, the load power (P<sub>L</sub>) is maximum when R<sub>L</sub> = R<sub>S</sub>. Notice, though, that efficiency (</em><em>&eta;) continues to increase beyond this point. Maximum power transfer does not correspond to maximum efficiency.</em>
 
 <p>In RF circuitry, the amplifier&rsquo;s output stage (and the transmission line that connects the amplifier to the antenna) will often have impedance of 50 &Omega;, and thus the antenna impedance must also be 50 &Omega; to ensure maximum power transfer. (Another important topic here is &ldquo;matching networks,&rdquo; which are used to improve impedance matching between an amplifier and an antenna; this will be discussed later in the textbook.)</p>
 
 ## Estimating Power
 <p>The preceding discussion explains why we can analyze an RF output stage by connecting the power amplifier to a 50 &Omega; oscilloscope input: most RF systems are built around 50 &Omega; impedances, and thus you will generally need a 50 &Omega; antenna impedance.</p>
 <p>Of course, if you know the relevant voltage and impedance characteristics of your circuit, you can simply calculate the power delivered to the antenna. A SPICE simulator would be another effective approach. But if these techniques are not practical in your circumstances, or if you want empirical verification, you need to use measurement equipment.</p>
-<p>If you have a spectrum analyzer, by all means use it. It is designed to provide exactly this sort of information. If you don&rsquo;t have a spectrum analyzer, you can use an oscilloscope. Look at the <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-1/measurements-ac-magnitude/" target="_blank">RMS</a> voltage of the signal using a 50 &Omega; scope input, and then calculate power as V<sup>2</sup>/R, where R = 50 &Omega;.</p>
+<p>If you have a spectrum analyzer, by all means use it. It is designed to provide exactly this sort of information. If you don&rsquo;t have a spectrum analyzer, you can use an oscilloscope. Look at the RMS voltage of the signal using a 50 &Omega; scope input, and then calculate power as V<sup>2</sup>/R, where R = 50 &Omega;.</p>
 
 ## Summary
 <ul>

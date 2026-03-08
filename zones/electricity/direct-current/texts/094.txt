@@ -2,10 +2,11 @@
 
 # Specific Resistance
 ## Designing Wire Resistance
-<p><a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-12/conductor-ampacity" target="_blank">Conductor ampacity</a> rating is a crude assessment of resistance based on the potential for current to create a fire hazard. However, we may come across situations where the voltage drop created by wire <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/resistance/" target="_blank">resistance</a> in a circuit poses concerns other than fire avoidance. For instance, we may be designing a circuit where voltage across a component is critical, and must not fall below a certain limit. If this is the case, the voltage drops resulting from wire resistance may cause an engineering problem while being well within safe (fire) limits of ampacity:</p>
+<p>Conductor ampacity rating is a crude assessment of resistance based on the potential for current to create a fire hazard. However, we may come across situations where the voltage drop created by wire resistance in a circuit poses concerns other than fire avoidance. For instance, we may be designing a circuit where voltage across a component is critical, and must not fall below a certain limit. If this is the case, the voltage drops resulting from wire resistance may cause an engineering problem while being well within safe (fire) limits of ampacity:</p>
 
 ^[094-01.png]
-<p>If the load in the above circuit will not tolerate less than 220 volts, given a source voltage of 230 volts, then we&rsquo;d better be sure that the wiring doesn&rsquo;t drop more than 10 volts along the way. Counting both the supply and return conductors of this circuit, this leaves a maximum tolerable drop of 5 volts along the length of each wire. Using <a href="https://www.allaboutcircuits.com/video-lectures/electrical-quantities-b/" target="_blank">Ohm&rsquo;s Law</a> (R=V/I), we can determine the maximum allowable resistance for each piece of wire:</p>
+
+<p>If the load in the above circuit will not tolerate less than 220 volts, given a source voltage of 230 volts, then we&rsquo;d better be sure that the wiring doesn&rsquo;t drop more than 10 volts along the way. Counting both the supply and return conductors of this circuit, this leaves a maximum tolerable drop of 5 volts along the length of each wire. Using Ohm&rsquo;s Law (R=V/I), we can determine the maximum allowable resistance for each piece of wire:</p>
 <p>$$R = \frac{V}{I} = \frac{5 \text{ V}}{25 \text{ A}} = 0.2 \text{ }\Omega$$</p>
 
 <p>We know that the wire length is 2300 feet for each piece of wire, but how do we determine the amount of resistance for a specific size and length of wire? To do that, we need another formula:</p>
@@ -14,7 +15,7 @@
 <p>This formula relates the resistance of a conductor with its specific resistance (the Greek letter &ldquo;rho&rdquo; (&rho;), which looks similar to a lower-case letter &ldquo;p&rdquo;), its length (&ldquo;l&rdquo;), and its cross-sectional area (&ldquo;A&rdquo;). Notice that with the length variable on the top of the fraction, the resistance value increases as the length increases (analogy: it is more difficult to force liquid through a long pipe than a short one), and decreases as cross-sectional area increases (analogy: liquid flows easier through a fat pipe than through a skinny one). Specific resistance is a constant for the type of conductor material being calculated.</p>
 <p>The specific resistances of several conductive materials can be found in the following table. We find copper near the bottom of the table, second only to silver in having low specific resistance (good conductivity):</p>
 
-#### <em>Specific Resistance at 20 Degrees Celsius</em>
+<em>Specific Resistance at 20 Degrees Celsius</em>
 <table>
 <tbody>
 <tr>

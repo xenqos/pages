@@ -10,12 +10,12 @@
 
 
 <p>When the voltage between point 1 and the negative side of the battery is equal to the voltage between point 2 and the negative side of the battery, the null detector will indicate zero and the bridge is said to be &ldquo;balanced.&rdquo; The bridge&rsquo;s state of balance is solely dependent on the ratios of R<sub>a</sub>/R<sub>b</sub> and R<sub>1</sub>/R<sub>2</sub>, and is quite independent of the supply voltage (battery).</p>
-<p>To measure resistance with a Wheatstone bridge, an unknown resistance is connected in the place of R<sub>a</sub> or R<sub>b</sub>, while the other three resistors are precision devices of known value. Either of the other three resistors can be replaced or adjusted until the bridge is balanced, and when balance has been reached the unknown <a href="https://www.allaboutcircuits.com/video-lectures/electronic-components-resistors/" target="_blank">resistor</a> value can be determined from the ratios of the known resistances.</p>
+<p>To measure resistance with a Wheatstone bridge, an unknown resistance is connected in the place of R<sub>a</sub> or R<sub>b</sub>, while the other three resistors are precision devices of known value. Either of the other three resistors can be replaced or adjusted until the bridge is balanced, and when balance has been reached the unknown resistor value can be determined from the ratios of the known resistances.</p>
 <p>A requirement for this to be a measurement system is to have a set of variable resistors available whose resistances are precisely known, to serve as reference standards. For example, if we connect a bridge circuit to measure an unknown resistance R<sub>x</sub>, we will have to know the <em>exact</em> values of the other three resistors at balance to determine the value of R<sub>x</sub>:</p>
 
 ^[061-02.jpg]
 
-<p>Each of the four resistances in a bridge circuit are referred to as <em>arms</em>. The resistor in series with the unknown resistance R<sub>x</sub> (this would be R<sub>a</sub> in the above schematic) is commonly called the <em><a href="https://www.allaboutcircuits.com/video-lectures/electronic-components-resistors/" target="_blank">rheostat</a></em> of the bridge, while the other two resistors are called the <em>ratio</em> arms of the bridge.</p>
+<p>Each of the four resistances in a bridge circuit are referred to as <em>arms</em>. The resistor in series with the unknown resistance R<sub>x</sub> (this would be R<sub>a</sub> in the above schematic) is commonly called the <em>rheostat</em> of the bridge, while the other two resistors are called the <em>ratio</em> arms of the bridge.</p>
 <p>Accurate and stable resistance standards, thankfully, are not that difficult to construct. In fact, they were some of the first electrical &ldquo;standard&rdquo; devices made for scientific purposes. Here is a photograph of an antique resistance standard unit:</p>
 
 ^[061-03.jpg]

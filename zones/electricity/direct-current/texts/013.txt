@@ -4,13 +4,13 @@
 <blockquote><em>&ldquo;Advances are made by answering questions. Discoveries are made by questioning answers.&rdquo;</em></blockquote>
 <blockquote><strong>&mdash;Bernhard Haisch, Astrophysicist</strong></blockquote>
 
-<p><a href="https://www.allaboutcircuits.com/video-lectures/electrical-quantities-b/" target="_blank">Ohm&rsquo;s Law</a> is a simple and powerful mathematical tool for helping us analyze electric circuits, but it has limitations, and we must understand these limitations in order to properly apply it to real circuits. For most conductors, resistance is a rather stable property, largely unaffected by voltage or current.</p>
+<p>Ohm&rsquo;s Law is a simple and powerful mathematical tool for helping us analyze electric circuits, but it has limitations, and we must understand these limitations in order to properly apply it to real circuits. For most conductors, resistance is a rather stable property, largely unaffected by voltage or current.</p>
 <p>For this reason, we can regard the resistance of many circuit components as a constant, with voltage and current being directly related to each other.</p>
 <p>For instance, from our previous circuit example with the 3 &Omega; lamp, we calculated the current through the circuit by dividing the voltage by the resistance (I=E/R). With an 18 volt battery, our circuit&rsquo;s current was 6 amps. Doubling the battery&rsquo;s voltage to 36 volts resulted in a doubled current of 12 amps.</p>
 <p>All of this makes sense, of course, as long as the lamp continues to provide exactly the same amount of friction (resistance) to the flow of current through it: 3 &Omega;.</p>
 
 ^[013-01.jpg]
-## &nbsp;
+
 ## The Voltage-Current Relationship Over Changing Resistance
 <p>However, reality is not always this simple. One of the phenomena explored in a later chapter is that of conductor resistance <em>changing</em> with temperature. In an incandescent lamp (the kind employing the principle of electric current heating a thin filament of wire to the point that it glows white-hot), the resistance of the filament wire will increase dramatically as it warms from room temperature to operating temperature.</p>
 <p>If we were to increase the supply voltage in a real lamp circuit, the resulting increase in current would cause the filament to increase temperature, which would, in turn, increase its resistance, thus preventing further increases in the current without further increases in battery voltage.</p>
@@ -27,7 +27,7 @@
 
 <p>The plot is no longer a straight line. It rises sharply on the left, as voltage increases from zero to a low level. As it progresses to the right we see the line flattening out, the circuit requiring greater and greater increases in voltage to achieve equal increases in current.</p>
 <p>If we try to apply Ohm&rsquo;s Law to find the resistance of this lamp circuit with the voltage and current values plotted above, we arrive at several different values. We could say that the resistance here is <em>nonlinear</em>, increasing with increasing current and voltage. The nonlinearity is caused by the effects of high temperature on the metal wire of the lamp filament.</p>
-<p>Another example of nonlinear current conduction is through gases such as air. At standard temperatures and pressures, air is an effective insulator. However, if the voltage between two <a href="https://www.allaboutcircuits.com/video-lectures/wire-and-cable/" target="_blank">conductors</a> separated by an air gap is increased greatly enough, the air molecules between the gap will become &ldquo;ionized,&rdquo; having their electrons stripped off by the force of the high voltage between the wires.</p>
+<p>Another example of nonlinear current conduction is through gases such as air. At standard temperatures and pressures, air is an effective insulator. However, if the voltage between two conductors separated by an air gap is increased greatly enough, the air molecules between the gap will become &ldquo;ionized,&rdquo; having their electrons stripped off by the force of the high voltage between the wires.</p>
 <p>Once ionized, air (and other gases) become good conductors of electricity, allowing electron flow where none could exist prior to ionization. If we were to plot current overvoltage on a graph as we did with the lamp circuit, the effect of ionization would be clearly seen as nonlinear:</p>
 
 ^[013-04.jpg]
@@ -45,11 +45,11 @@
 ^[013-05.jpg]
 
 <p>There are also special gas-filled tubes designed to do much the same thing, exploiting the very same principle at work in the ionization of air by a lightning bolt.</p>
-<p>Other <a href="https://www.allaboutcircuits.com/video-lectures/electronic-components-a/" target="_blank">electrical components</a> exhibit even stranger current/voltage curves than this. Some devices actually experience a <em>decrease</em> in current as the applied voltage <em>increases</em>. Because the slope of the current/voltage for this phenomenon is negative (angling down instead of up as it progresses from left to right), it is known as <em>negative resistance</em>.</p>
+<p>Other electrical components exhibit even stranger current/voltage curves than this. Some devices actually experience a <em>decrease</em> in current as the applied voltage <em>increases</em>. Because the slope of the current/voltage for this phenomenon is negative (angling down instead of up as it progresses from left to right), it is known as <em>negative resistance</em>.</p>
 
 ^[013-06.jpg]
 
-<p>Most notably, high-vacuum electron tubes known as <em>tetrodes</em> and semiconductor diodes known as <em>Esaki </em>or <em>tunnel</em> <a href="https://www.allaboutcircuits.com/video-lectures/diode-characteristics-circuits/" target="_blank">diodes</a> exhibit negative resistance for certain ranges of applied voltage.</p>
+<p>Most notably, high-vacuum electron tubes known as <em>tetrodes</em> and semiconductor diodes known as <em>Esaki </em>or <em>tunnel</em> diodes exhibit negative resistance for certain ranges of applied voltage.</p>
 <p>Ohm&rsquo;s Law is not very useful for analyzing the behavior of components like these where resistance varies with voltage and current. Some have even suggested that &ldquo;Ohm&rsquo;s Law&rdquo; should be demoted from the status of a &ldquo;Law&rdquo; because it is not universal. It might be more accurate to call the equation (R=E/I) a <em>definition of resistance</em>, befitting of a certain class of materials under a narrow range of conditions.</p>
 <p>For the benefit of the student, however, we will assume that resistances specified in example circuits <em>are </em>stable over a wide range of conditions unless otherwise specified. I just wanted to expose you to a little bit of the complexity of the real world, lest I give you the false impression that the whole of electrical phenomena could be summarized in a few simple equations.</p>
 

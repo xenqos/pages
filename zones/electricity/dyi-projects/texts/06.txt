@@ -1,17 +1,17 @@
 # Intro Lab - Ohm&#8217;s Law
 ## Project Overview
-<p>This project employs all of&nbsp;the skills explained&nbsp;earlier in this textbook for using an <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-2/ohmmeter-usage/" target="_blank">ohmmeter</a>, <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-2/voltage-usage/" target="_blank">voltmeter</a>, and <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-2/ammeter-usage/" target="_blank">ammeter</a>. You will build a simple circuit, as illustrated in Figure 1, to experimentally verify <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/voltage-current-resistance-relate/" target="_blank">Ohm&#39;s law</a> which defines the mathematical relationship between <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/resistance/" target="_blank">resistance</a>, <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/voltage-current/" target="_blank">voltage, and current.</a>&nbsp;</p>
+<p>This project employs all of&nbsp;the skills explained&nbsp;earlier in this textbook for using an ohmmeter, voltmeter, and ammeter. You will build a simple circuit, as illustrated in Figure 1, to experimentally verify Ohm&#39;s law which defines the mathematical relationship between resistance, voltage, and current.&nbsp;</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/ammeter-connected-to-voltmeter-terminal-strip.jpg" /></p>
-#### <em><strong>Figure 1. </strong>Test circuit for evaluating Ohm&#39;s law.</em>
+<em><strong>Figure 1. </strong>Test circuit for evaluating Ohm&#39;s law.</em>
 
 ## Parts and Materials
 <ul>
 <li>6 V battery</li>
-<li>Assortment of <a href="https://eepower.com/resistor-guide/" target="_blank">resistors</a> between 1 k&Omega; and 100 k&Omega; in value</li>
+<li>Assortment of resistors between 1 k&Omega; and 100 k&Omega; in value</li>
 </ul>
 <p>For this experiment, I&rsquo;m purposely restricting the resistance values between 1 k&Omega; and 100 k&Omega; for the sake of obtaining accurate voltage and current readings with your meter.&nbsp;</p>
-<p>With very low resistance values, the internal resistance of the <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-8/ammeter-design/" target="_blank">ammeter</a> has a significant impact on measurement accuracy.&nbsp;Very high resistance values can cause problems for voltage measurement since the internal resistance of the <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-2/voltage-usage/" target="_blank">voltmeter</a> substantially changes circuit resistance when it is <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/simple-parallel-circuits/" target="_blank">connected in parallel</a> with a high-value resistor.&nbsp;At the recommended resistance values, there will still be a small amount of measurement error due to the impact&nbsp;of the meter, but not enough to cause serious disagreement with calculated values.</p>
+<p>With very low resistance values, the internal resistance of the ammeter has a significant impact on measurement accuracy.&nbsp;Very high resistance values can cause problems for voltage measurement since the internal resistance of the voltmeter substantially changes circuit resistance when it is connected in parallel with a high-value resistor.&nbsp;At the recommended resistance values, there will still be a small amount of measurement error due to the impact&nbsp;of the meter, but not enough to cause serious disagreement with calculated values.</p>
 
 ## Learning Objectives
 <ul>
@@ -22,18 +22,18 @@
 </ul>
 
 ## Instructions
-<p><strong>Step 1:&nbsp;</strong>Select a resistor from the assortment, and measure its resistance, <em>R</em>, with your <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-8/multimeters/" target="_blank">multimeter</a> set to the appropriate resistance range.&nbsp;Be sure not to hold the resistor terminals when measuring resistance, or else your hand-to-hand body resistance will influence the measurement!&nbsp;Record this resistance value for future use.</p>
+<p><strong>Step 1:&nbsp;</strong>Select a resistor from the assortment, and measure its resistance, <em>R</em>, with your multimeter set to the appropriate resistance range.&nbsp;Be sure not to hold the resistor terminals when measuring resistance, or else your hand-to-hand body resistance will influence the measurement!&nbsp;Record this resistance value for future use.</p>
 <p><strong>Step 2:&nbsp;</strong>Next, build the&nbsp;one-battery, one-resistor circuit, shown in the schematic diagram of Figure 2.</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/ammeter.jpg" /></p>
-#### <em><strong>Figure 2. </strong>Test circuit schematic diagram for evaluating Ohm&#39;s law.</em>
+<em><strong>Figure 2. </strong>Test circuit schematic diagram for evaluating Ohm&#39;s law.</em>
 
 <p>If you have two multimeters, you can construct exactly as shown in Figures 1 and 2 and measure both voltage and current simultaneously. However, in the following descriptions, we will assume you have only one multimeter and will perform the measurements in steps.</p>
-<p>A terminal strip implementation of this circuit is demonstrated in Figure 1, but you can also use a <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/building-simple-resistor-circuits/" target="_blank">breadboard</a> or any other type of circuit construction method.</p>
+<p>A terminal strip implementation of this circuit is demonstrated in Figure 1, but you can also use a breadboard or any other type of circuit construction method.</p>
 <p><strong>Step 3:&nbsp;</strong>Set your multimeter to the appropriate voltage range and measure the voltage, <em>V</em>, across the resistor as it is being powered by the battery.&nbsp;Record this voltage value.</p>
 <p><strong>Step 4:&nbsp;</strong>Set your multimeter to the highest current range available. Break the circuit and connect the ammeter within that break, so it becomes a part of the circuit, in series, with the battery and resistor.</p>
 <p><strong>Step 5:&nbsp;</strong>Select the best current range;&nbsp;whichever one gives the strongest meter indication without over-ranging the meter.&nbsp;If your multimeter is autoranging, of course, you need not bother with setting ranges.&nbsp;Record this current value along with the resistance and voltage values previously recorded.</p>
-<p><strong>Step 6:&nbsp;</strong>Taking the measured figures for voltage and resistance, use <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/correct-use-of-ohms-law/" target="_blank">Ohm&rsquo;s law equation</a> to calculate circuit current.</p>
+<p><strong>Step 6:&nbsp;</strong>Taking the measured figures for voltage and resistance, use Ohm&rsquo;s law equation to calculate circuit current.</p>
 
 <p>$$I = \frac{V}{R}$$</p>
 

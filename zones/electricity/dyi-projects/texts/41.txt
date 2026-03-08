@@ -1,34 +1,34 @@
 # AC Lab - Phase Shift in a Capacitive Circuit
 ## Project Overview
-<p>Reactive components like <a href="https://www.allaboutcircuits.com/textbook/reference/chpt-9/inductors/" target="_blank">inductors</a> and <a href="https://eepower.com/capacitor-guide/" target="_blank">capacitors</a> create a frequency-dependent phase shift. The simple AC circuit illustrated in Figure 1 will be used to demonstrate the phase shift.&nbsp;</p>
+<p>Reactive components like inductors and capacitors create a frequency-dependent phase shift. The simple AC circuit illustrated in Figure 1 will be used to demonstrate the phase shift.&nbsp;</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/phase-shift-illustration.jpg" /></p>
-#### <em><strong>Figure 1.</strong>&nbsp;Implementation of the AC phase shift circuit using terminal strips.</em>
+<em><strong>Figure 1.</strong>&nbsp;Implementation of the AC phase shift circuit using terminal strips.</em>
 
 ## Parts and Materials
 <ul>
-<li><a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-4/transformer-power-supply/" target="_blank">Low-voltage AC power supply</a></li>
+<li>Low-voltage AC power supply</li>
 <li>Two capacitors, 0.1 &micro;F each, non-polarized</li>
-<li>Two 27 k&Omega; <a href="https://eepower.com/resistor-guide/" target="_blank">resistors</a></li>
+<li>Two 27 k&Omega; resistors</li>
 </ul>
 <p>I recommend ceramic disk capacitors because they are insensitive to polarity (non-polarized), inexpensive, and durable. Avoid capacitors with any kind of polarity marking, as these will be destroyed when powered by AC.</p>
 
 ## Learning Objectives
 <ul>
-<li>How out-of-phase AC <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/voltage-current/" target="_blank">voltages</a> do not add algebraically, but according to vector (phasor) arithmetic</li>
+<li>How out-of-phase AC voltages do not add algebraically, but according to vector (phasor) arithmetic</li>
 </ul>
 
 ## Instructions
 <p><strong>Step 1:&nbsp;</strong>Build the circuit illustrated in Figure 1 and represented by the schematic diagram in Figure 2.&nbsp;</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/phase-shift-schematic-diagram.jpg" /></p>
-#### <em><strong>Figure 2.</strong>&nbsp;AC phase shift circuit schematic diagram.</em>
+<em><strong>Figure 2.</strong>&nbsp;AC phase shift circuit schematic diagram.</em>
 
-<p><strong>Step 2:</strong> Measure the <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/polarity-voltage-drops/" target="_blank">voltage drops</a> across each component with an AC <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-8/voltmeter-design/" target="_blank">voltmeter</a>. Add the measured AC voltages together.</p>
-<p><strong>Step 3:&nbsp;</strong>Measure the total (supply) voltage with the same voltmeter. You will discover that the sum of the voltage drops does not&nbsp;equal the supply&nbsp;voltage. This is due to <a href="https://eepower.com/textbook/vol-i-foundations-power-design/chapter-2-analysis-ac-systems/phase-shift-and-phasors" target="_blank" title="phase shifts in the circuit">phase shifts in the circuit</a>: voltage dropped across the capacitors is out-of-phase with voltage dropped across the resistors, and thus the voltage drop figures do not add up as one might expect. Taking phase angle into consideration, they do add up to equal the total, but a voltmeter doesn&rsquo;t provide phase angle measurements, only amplitude.</p>
+<p><strong>Step 2:</strong> Measure the voltage drops across each component with an AC voltmeter. Add the measured AC voltages together.</p>
+<p><strong>Step 3:&nbsp;</strong>Measure the total (supply) voltage with the same voltmeter. You will discover that the sum of the voltage drops does not&nbsp;equal the supply&nbsp;voltage. This is due to phase shifts in the circuit: voltage dropped across the capacitors is out-of-phase with voltage dropped across the resistors, and thus the voltage drop figures do not add up as one might expect. Taking phase angle into consideration, they do add up to equal the total, but a voltmeter doesn&rsquo;t provide phase angle measurements, only amplitude.</p>
 <p><strong>Step 4:&nbsp;</strong>Try measuring the voltage dropped across both resistors at once. This voltage drop will equal the sum of the voltage drops measured across each resistor separately. This tells you that both the resistors&rsquo; voltage drop waveforms are in-phase with each other since they add simply and directly.</p>
 <p><strong>Step 5:&nbsp;</strong>Measure the voltage dropped across both capacitors at once. This voltage drop, like the drop measured across the two resistors, will equal the sum of the voltage drops measured across each capacitor separately. Likewise, this tells you that both the capacitors&rsquo; voltage drop waveforms are in-phase with each other.</p>
-<p><strong>Step 6:&nbsp;</strong>Given that the power supply frequency is 60 Hz (assuming household power frequency in the United States), calculate <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-5/series-r-l-and-c/" target="_blank">impedances</a> for all components and determine all voltage drops using <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/voltage-current-resistance-relate/" target="_blank">Ohm&rsquo;s Law</a> and the impedance values for the capacitors:</p>
+<p><strong>Step 6:&nbsp;</strong>Given that the power supply frequency is 60 Hz (assuming household power frequency in the United States), calculate impedances for all components and determine all voltage drops using Ohm&rsquo;s Law and the impedance values for the capacitors:</p>
 
 <p>$$Z_C = \frac{1}{2\pi fC} = \frac{1}{2 \pi \cdot 60 \cdot 0.1E-6} = 26.526 \text{ k}\Omega $$</p>
 
@@ -48,9 +48,9 @@
 <p>We can simulate our simple phase shift circuit using the schematic diagram of Figure 3 with node numbers and the following&nbsp;netlist.</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/phase-shift-computer-simulation.jpg" /></p>
-#### <em><strong>Figure 3.&nbsp;</strong>AC phase shift circuit schematic diagram for SPICE simulation.</em>
+<em><strong>Figure 3.&nbsp;</strong>AC phase shift circuit schematic diagram for SPICE simulation.</em>
 
-<p>The two large-value resistors R<sub>bogus1</sub> and R<sub>bogus1</sub> are connected across the capacitors to provide a DC path to the <a href="https://www.allaboutcircuits.com/technical-articles/an-introduction-to-ground/" target="_blank">ground</a> in order that <a href="https://www.allaboutcircuits.com/textbook/reference/chpt-7/introduction-to-spice/" target="_blank">SPICE</a> will work. This is a workaround&nbsp;for one of SPICE&rsquo;s quirks to avoid it from seeing the capacitors as open circuits in its analysis. These two resistors are entirely unnecessary in the real circuit.</p>
+<p>The two large-value resistors R<sub>bogus1</sub> and R<sub>bogus1</sub> are connected across the capacitors to provide a DC path to the ground in order that SPICE will work. This is a workaround&nbsp;for one of SPICE&rsquo;s quirks to avoid it from seeing the capacitors as open circuits in its analysis. These two resistors are entirely unnecessary in the real circuit.</p>
 
 <p><ins>Netlist (make a text file containing the following text, verbatim):</ins></p>
 <pre>

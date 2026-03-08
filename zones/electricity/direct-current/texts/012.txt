@@ -1,9 +1,9 @@
 ###### 02. Ohm's Law
 
 # Resistors
-<p><a name="Resistor"></a> Because the relationship between voltage, current, and resistance in any circuit is so regular, we can reliably control any variable in a circuit simply by controlling the other two. Perhaps the easiest variable in any circuit to control is its resistance. This can be done by changing the material, size, and shape of its conductive components (remember how the thin metal filament of a lamp created more electrical resistance than a thick wire?).</p>
+<p> Because the relationship between voltage, current, and resistance in any circuit is so regular, we can reliably control any variable in a circuit simply by controlling the other two. Perhaps the easiest variable in any circuit to control is its resistance. This can be done by changing the material, size, and shape of its conductive components (remember how the thin metal filament of a lamp created more electrical resistance than a thick wire?).</p>
 ## What is a Resistor?
-<p>Special components called <a href="https://www.allaboutcircuits.com/video-lectures/electronic-components-resistors/" target="_blank">resistors</a> are made for the express purpose of creating a precise quantity of resistance for insertion into a circuit. They are typically constructed of metal wire or carbon and engineered to maintain a stable resistance value over a wide range of environmental conditions.</p>
+<p>Special components called resistors are made for the express purpose of creating a precise quantity of resistance for insertion into a circuit. They are typically constructed of metal wire or carbon and engineered to maintain a stable resistance value over a wide range of environmental conditions.</p>
 <p>Unlike lamps, they do not produce light, but they do produce heat as electric power is dissipated by them in a working circuit. Typically, though, the purpose of a resistor is not to produce usable heat, but simply to provide a precise quantity of electrical resistance.</p>
 
 ## Resistor Schematic Symbols and Values
@@ -31,7 +31,7 @@
 ## Variable Resistors
 <p>Variable resistors must have some physical means of adjustment, either a rotating shaft or lever that can be moved to vary the amount of electrical resistance. Here is a photograph showing some devices called potentiometers, which can be used as variable resistors:</p>
 
-## &nbsp;
+
 ^[012-06.jpg]
 
 ## Power Rating of Resistors
@@ -60,7 +60,7 @@
 
 ^[012-09.jpg]
 
-<p>All we&rsquo;ve been given here to start with is the battery voltage (10 volts) and the circuit current (2 amps). We don&rsquo;t know the resistor&rsquo;s resistance in ohms or the power dissipated by it in watts. Surveying our array of<a href="https://www.allaboutcircuits.com/video-lectures/electrical-quantities-b/"> Ohm&rsquo;s Law equations</a>, we find two equations that give us answers from known quantities of voltage and current:</p>
+<p>All we&rsquo;ve been given here to start with is the battery voltage (10 volts) and the circuit current (2 amps). We don&rsquo;t know the resistor&rsquo;s resistance in ohms or the power dissipated by it in watts. Surveying our array of Ohm&rsquo;s Law equations, we find two equations that give us answers from known quantities of voltage and current:</p>
 
 ^[012-10.png]
 

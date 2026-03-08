@@ -35,7 +35,7 @@
 <p>In simple reactive circuits with little or no resistance, the effects of radically altered impedance will manifest at the resonance frequency predicted by the equation given earlier. In a parallel (tank) LC circuit, this means infinite impedance at resonance. In a series LC circuit, it means zero impedance at resonance:</p>
 <p><img src=&quot;/uploads/articles/impedance-resonance-formula.jpg&quot; /></p>
 <p>However, as soon as significant levels of resistance are introduced into most LC circuits, this simple calculation for resonance becomes invalid.</p>
-<p>On this page, we&rsquo;ll take a look at several LC circuits with added <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/resistance/&quot; target=&quot;_blank&quot;>resistance</a>, using the same values for capacitance and inductance as before: 10 &micro;F and 100 mH, respectively.</p>
+<p>On this page, we&rsquo;ll take a look at several LC circuits with added resistance, using the same values for capacitance and inductance as before: 10 &micro;F and 100 mH, respectively.</p>
 <h2>Calculating the Resonant Frequency of a High-Resistance Circuit</h2>
 <p>According to our simple equation above, the resonant frequency should be 159.155 Hz. Watch, though, where current reaches maximum or minimum in the following SPICE analyses:</p>
 <p><img src=&quot;/uploads/articles/parallel-lc-circuit-with-resistance.jpg&quot; /></p>
@@ -53,7 +53,7 @@ Minimum current at 136.8 Hz instead of 159.2 Hz!</pre>
 
 <p><img src=&quot;/uploads/articles/parallel-lc-with-resistance-in-serieis.jpg&quot; /></p>
 <p><em>Parallel LC with resistance in serieis with C.</em></p>
-<p>Here, an extra resistor (Rbogus) is necessary to prevent SPICE from encountering trouble in analysis. SPICE can&rsquo;t handle an inductor connected directly in parallel with any voltage source or any other inductor, so the addition of a <a href=&quot;https://www.allaboutcircuits.com/video-lectures/series-circuits-part-1/&quot; target=&quot;_blank&quot;>series resistor</a> is necessary to &ldquo;break up&rdquo; the voltage source/inductor loop that would otherwise be formed.</p>
+<p>Here, an extra resistor (Rbogus) is necessary to prevent SPICE from encountering trouble in analysis. SPICE can&rsquo;t handle an inductor connected directly in parallel with any voltage source or any other inductor, so the addition of a series resistor is necessary to &ldquo;break up&rdquo; the voltage source/inductor loop that would otherwise be formed.</p>
 <p>This resistor is chosen to be a <em>very</em> low value for minimum impact on the circuit&rsquo;s behavior.</p>
 
 <pre><br>
@@ -67,7 +67,7 @@ Minimum current at roughly 180 Hz instead of 159.2 Hz!</pre>
 <p><em>Resistance in series with C shifts minimum current from calculated 159.2 Hz to roughly 180 Hz.</em></p>
 
 <h2>Series LC Circuits</h2>
-<p>Switching our attention to series LC circuits, we experiment with placing significant <a href=&quot;https://www.allaboutcircuits.com/video-lectures/parallel-circuits/&quot; target=&quot;_blank&quot;>resistances in parallel</a> with either L or C. In the following series circuit examples, a 1 &Omega; resistor (R1) is placed in series with the inductor and capacitor to limit total current at resonance.</p>
+<p>Switching our attention to series LC circuits, we experiment with placing significant resistances in parallel with either L or C. In the following series circuit examples, a 1 &Omega; resistor (R1) is placed in series with the inductor and capacitor to limit total current at resonance.</p>
 <p>The &ldquo;extra&rdquo; resistance inserted to influence resonant frequency effects is the 100 &Omega; resistor, R2. The results are shown in the figure below.</p>
 <p><img src=&quot;/uploads/articles/series-lc-resonant-circuit-with-resistance-in-parallel-with-l.jpg&quot; /></p>
 <p><em>Series LC resonant circuit with resistance in parallel with L.</em></p>
@@ -81,7 +81,7 @@ Maximum current at roughly 178.9 Hz instead of 159.2 Hz!</pre>
 <p><em>Results:</em></p>
 <p><img src=&quot;/uploads/articles/series-lc-resonant-circuit-with-resistance-in-parallel-with-l-results.jpg&quot; /></p>
 <p><em>Series resonant circuit with resistance in parallel with L shifts maximum current from 159.2 Hz to roughly 180 Hz.</em></p>
-<p>And finally, a series LC circuit with the significant resistance in parallel with the <a href=&quot;https://www.allaboutcircuits.com/video-lectures/capacitors-part-1/&quot; target=&quot;_blank&quot;>capacitor</a> The shifted resonance is shown below.</p>
+<p>And finally, a series LC circuit with the significant resistance in parallel with the capacitor The shifted resonance is shown below.</p>
 <p><img src=&quot;/uploads/articles/series-lc-resonant-circuit-with-resistance-in-parallel-with-c.jpg&quot; /></p>
 <p><em>Series LC resonant circuit with resistance in parallel with C.</em></p>
 
@@ -109,7 +109,7 @@ Maximum current at 136.8 Hz instead of 159.2 Hz!</pre>
 <li>R in parallel with C: resonant frequency shifted <em>down</em></li>
 </ul>
 
-<p>Again, this illustrates the complementary nature of capacitors and <a href=&quot;https://www.allaboutcircuits.com/video-lectures/inductors-part-1/&quot; target=&quot;_blank&quot;>inductors</a>: how resistance in series with one creates an antiresonance effect equivalent to resistance in parallel with the other. If you look even closer to the four SPICE examples given, you&rsquo;ll see that the frequencies are shifted by the <em>same amount</em>, and that the shape of the complementary graphs are mirror-images of each other!<em> </em></p>
+<p>Again, this illustrates the complementary nature of capacitors and inductors: how resistance in series with one creates an antiresonance effect equivalent to resistance in parallel with the other. If you look even closer to the four SPICE examples given, you&rsquo;ll see that the frequencies are shifted by the <em>same amount</em>, and that the shape of the complementary graphs are mirror-images of each other!<em> </em></p>
 <p><strong><em>Antiresonance</em></strong> is an effect that resonant circuit designers must be aware of. The equations for determining antiresonance &ldquo;shift&rdquo; are complex, and will not be covered in this brief lesson. It should suffice the beginning student of electronics to understand that the effect exists, and what its general tendencies are.</p>
 <h3>The Skin Effect</h3>
 <p>Added resistance in an LC circuit is no academic matter. While it is possible to manufacture capacitors with negligible unwanted resistances, inductors are typically plagued with substantial amounts of resistance due to the long lengths of wire used in their construction.</p>

@@ -1,9 +1,9 @@
 # Peak Detector
-<p><a name="Peak detector"></a> A&nbsp;<em>peak detector</em> is a series connection of a diode and a <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-13/practical-considerations-capacitors/" target="_blank">capacitor</a> outputting a DC voltage equal to the peak value of the applied AC signal.&nbsp;</p>
+<p> A&nbsp;<em>peak detector</em> is a series connection of a diode and a capacitor outputting a DC voltage equal to the peak value of the applied AC signal.&nbsp;</p>
 ## Peak Detector Operation Analysis
-<p>The circuit is shown in the figure below with the corresponding SPICE net list. An <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-1/what-is-alternating-current-ac/" target="_blank">AC voltage</a> source applied to the peak detector, charges the capacitor to the peak of the input.&nbsp;</p>
+<p>The circuit is shown in the figure below with the corresponding SPICE net list. An AC voltage source applied to the peak detector, charges the capacitor to the peak of the input.&nbsp;</p>
 <p>The diode conducts positive &ldquo;half cycles,&rdquo; charging the capacitor to the waveform peak. When the input waveform falls below the DC &ldquo;peak&rdquo; stored on the capacitor, the diode is reverse biased, blocking current flow from capacitor back to the source. Thus, the capacitor retains the peak value even as the waveform drops to zero.&nbsp;</p>
-<p>Another view of the peak detector is that it is the same as a <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-3/peak-detector/#half-W-R" target="_blank">half-wave rectifier</a> with a filter capacitor added to the output.</p>
+<p>Another view of the peak detector is that it is the same as a half-wave rectifier with a filter capacitor added to the output.</p>
 <table align="center" border="1">
 <tbody>
 <tr>
@@ -17,7 +17,7 @@
 </table>
 <p><em>Peak detector: Diode conducts on positive half cycles charging capacitor to the peak voltage (less diode forward drop).</em></p>
 <p>It takes a few cycles for the capacitor to charge to the peak as in the figure below due to the series resistance (RC &ldquo;time constant&rdquo;). Why does the capacitor not charge all the way to 5 V? It would charge to 5 V if an &ldquo;ideal diode&rdquo; were obtainable. However, the silicon diode has a forward voltage drop of 0.7 V which subtracts from the 5 V peak of the input.</p>
-<p><a name="23027.png"></a><img src="/uploads/articles/peak-detector.jpg" /></p>
+<p><img src="/uploads/articles/peak-detector.jpg" /></p>
 <p>Peak detector: Capacitor charges to peak within a few cycles.</p>
-<p>The circuit in the figure above could represent a DC power supply based on a half-wave rectifier. The <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/resistance/" target="_blank">resistance</a> would be a few <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/voltage-current-resistance-relate/" target="_blank">Ohms</a> instead of 1 k&Omega; due to a transformer secondary winding replacing the voltage source and resistor. A larger &ldquo;filter&rdquo; capacitor would be used. A power supply based on a 60 Hz source with a filter of a few hundred &micro;F could supply up to 100 mA. Half-wave supplies seldom supply more due to the difficulty of filtering a half-wave.</p>
-<p>The peak detector may be combined with other components to build a <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-9/radio-circuits/" target="_blank">crystal radio</a>.</p>
+<p>The circuit in the figure above could represent a DC power supply based on a half-wave rectifier. The resistance would be a few Ohms instead of 1 k&Omega; due to a transformer secondary winding replacing the voltage source and resistor. A larger &ldquo;filter&rdquo; capacitor would be used. A power supply based on a 60 Hz source with a filter of a few hundred &micro;F could supply up to 100 mA. Half-wave supplies seldom supply more due to the difficulty of filtering a half-wave.</p>
+<p>The peak detector may be combined with other components to build a crystal radio.</p>

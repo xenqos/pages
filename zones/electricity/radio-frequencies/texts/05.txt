@@ -7,7 +7,7 @@
 <p>An ideal capacitor would provide exactly the same functionality for a 1 Hz signal and a 1 GHz signal. But components are never ideal, and the nonidealities of a capacitor can be quite significant at high frequencies.</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/RFT_ch1_pg4_1-CON-452_2.jpg" /></p>
-#### <em>A model representing the real electrical behavior of a capacitor.</em>
+<em>A model representing the real electrical behavior of a capacitor.</em>
 
 <p>&ldquo;C&rdquo; corresponds to the ideal capacitor that is buried among so many parasitic elements. We have non-infinite resistance between the plates (R<sub>D</sub>), series resistance (R<sub>S</sub>), series inductance (L<sub>S</sub>), and parallel capacitance (C<sub>P</sub>) between the PCB pads and the ground plane (we&rsquo;re assuming surface-mount components; more on this later).</p>
 <p>The most significant nonideality when we&rsquo;re working with high-frequency signals is the inductance. We expect the impedance of a capacitor to endlessly decrease as frequency increases, but the presence of the parasitic inductance causes the impedance to dip down at the self-resonant frequency and then begin to increase:</p>
@@ -18,7 +18,7 @@
 <p>The following is an equivalent circuit for an inductor:</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/RFT_ch1_pg4_3-CON-452.jpg" /></p>
-#### <em>A model representing the real electrical behavior of an inductor.</em>
+<em>A model representing the real electrical behavior of an inductor.</em>
 
 <p>An ideal inductor would provide impedance that steadily increases as frequency increases, but the parallel capacitor eventually dominates the response, and the result is impedance that decreases as frequency increases. So we can see that both capacitors and inductors must be chosen carefully when they will be used in RF circuits, especially RF circuits with frequencies well above 1 GHz.</p>
 
@@ -32,19 +32,19 @@
 <p>The oscillation frequency of an ordinary crystal is sensitive to temperature variations. The resulting frequency instability creates problems for RF systems, especially systems that will be exposed to large variations in ambient temperature. Thus, a system may require a TCXO, i.e., a temperature-compensated crystal oscillator. These devices incorporate circuitry that compensates for the crystal&rsquo;s frequency variations:</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/RFT_ch1_pg4_2-CON-452.jpg" /></p>
-#### <em>Image adapted from <a href="http://www.crystek.com/documents/appnotes/Understanding_TCXOs.pdf" target="_blank">Crystek</a></em>
+<em>Image adapted from Crystek</em>
 ## Baluns
 <p>One component that is common in RF systems but rare elsewhere is the balun. The name comes from &ldquo;balanced to unbalanced,&rdquo; a phrase which helps us to remember that baluns are used to convert differential (i.e., balanced) signals to single-ended (i.e., unbalanced) signals, or single-ended to differential.</p>
 <p>Baluns fall within the general category of transformers, as you can see from the circuit symbol:</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/RFT_ch1_pg4_5-CON-452.jpg" /></p>
-#### <em>A balun. In this case, the signal connected to the left-hand terminals is differential and the signal connected to the right-hand terminal is single-ended.</em>
+<em>A balun. In this case, the signal connected to the left-hand terminals is differential and the signal connected to the right-hand terminal is single-ended.</em>
 
 <p>In lower-frequency circuits we often use amplifiers to convert between single-ended and differential, whereas in RF baluns are common. Why the difference? Well, the explanation is related to a fact that influences many RF design decisions: simple passive components are often more practical than IC-based equivalents when you&rsquo;re dealing with very high frequencies.</p>
 
 ## Antennas
 <p>An antenna is a passive component that is used to convert an RF electrical signal into electromagnetic radiation (EMR), or vice versa. With other components and conductors we try to minimize the effects of EMR, and with antennas we try to optimize the generation or reception of EMR with respect to the needs of the application.</p>
-<p>Antenna science is by no means simple. Various factors influence the process of choosing or designing an antenna that is optimal for a particular application. AAC has two articles (click <a href="https://www.allaboutcircuits.com/technical-articles/an-introduction-to-antenna-basics/" target="_blank">here</a> and <a href="https://www.allaboutcircuits.com/technical-articles/antenna-basics-field-radiation-patterns-permittivity-directivity-gain/" target="_blank">here</a>) that provide an excellent introduction to antenna concepts.</p>
+<p>Antenna science is by no means simple. Various factors influence the process of choosing or designing an antenna that is optimal for a particular application. AAC has two articles (click here and here) that provide an excellent introduction to antenna concepts.</p>
 <p>Higher frequencies are accompanied by various design challenges, though the antenna portion of the system can actually become less problematic as frequency increases, because higher frequencies allow for the use of shorter antennas. Nowadays it is common to use either a &ldquo;chip antenna,&rdquo; which is soldered to a PCB like typical surface-mount components, or a PCB antenna, which is created by incorporating a specially designed trace into the PCB layout.</p>
 
 ## Surface Mount vs. Through Hole

@@ -1,6 +1,6 @@
 # Resonant Filters
-<p>So far, the filter designs we&rsquo;ve concentrated on have employed <em>either&nbsp;</em><a href="https://www.allaboutcircuits.com/video-lectures/capacitors-part-1/" target="_blank">capacitors</a> <em>or&nbsp;</em><a href="https://www.allaboutcircuits.com/video-lectures/inductors-part-1/" target="_blank">inductors</a>, but never both at the same time. We should know by now that combinations of L and C will tend to resonate, and this property can be exploited in designing&nbsp;<a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-8/band-pass-filters/" target="_blank">band-pass</a> and&nbsp;<a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-8/band-stop-filters/" target="_blank">band-stop</a> filter circuits.</p>
-<p><a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-6/simple-series-resonance/" target="_blank">Series LC</a> circuits give minimum impedance at resonance, while&nbsp;<a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-6/parallel-tank-circuit-resonance/" target="_blank">parallel LC (&ldquo;tank&rdquo;)</a> circuits give maximum impedance at their resonant frequency. Knowing this, we have two basic strategies for designing either band-pass or band-stop filters.</p>
+<p>So far, the filter designs we&rsquo;ve concentrated on have employed <em>either&nbsp;</em>capacitors <em>or&nbsp;</em>inductors, but never both at the same time. We should know by now that combinations of L and C will tend to resonate, and this property can be exploited in designing&nbsp;band-pass and&nbsp;band-stop filter circuits.</p>
+<p>Series LC circuits give minimum impedance at resonance, while&nbsp;parallel LC (&ldquo;tank&rdquo;) circuits give maximum impedance at their resonant frequency. Knowing this, we have two basic strategies for designing either band-pass or band-stop filters.</p>
 <p>For band-pass filters, the two basic resonant strategies are this: series LC to pass a signal, or parallel LC to short a signal. The two schemes will be contrasted and simulated here:</p>
 ## Series Resonant Band-pass Filter
 <p><img src="/uploads/articles/series-resonant-lc-band-pass-filter.png" /></p>
@@ -21,7 +21,7 @@ series resonant bandpass filter &#10; v1 1 0 ac 1 sin &#10; l1 1 2 1 &#10; c1 2 
 <p><img src="/uploads/articles/parallel-resonant-band-pass-filter.png" /></p>
 <p><em>Parallel resonant band-pass filter.</em></p>
 
-<p>The <a href="https://www.allaboutcircuits.com/tools/tank-circuit-resonance-calculator/" target="_blank">tank circuit</a> will have a lot of impedance at resonance, allowing the signal to get to the load with minimal attenuation. Under or over resonant frequency, however, the tank circuit will have a low impedance, shorting out the signal and dropping most of it across series resistor R<sub>1</sub>.</p>
+<p>The tank circuit will have a lot of impedance at resonance, allowing the signal to get to the load with minimal attenuation. Under or over resonant frequency, however, the tank circuit will have a low impedance, shorting out the signal and dropping most of it across series resistor R<sub>1</sub>.</p>
 
 <pre>
 parallel resonant bandpass filter &#10; v1 1 0 ac 1 sin &#10; r1 1 2 500 &#10; l1 2 0 100m &#10; c1 2 0 10u &#10; rload 2 0 1k &#10; .ac lin 20 50 250 &#10; .plot ac v(2) &#10; .end&#10;</pre>
@@ -30,14 +30,14 @@ parallel resonant bandpass filter &#10; v1 1 0 ac 1 sin &#10; r1 1 2 500 &#10; l
 <p><em>Parallel resonant filter: voltage peaks a resonant frequency of 159.15 Hz.</em></p>
 
 <p>Just like the low-pass and high-pass filter designs relying on a series resistance and a parallel &ldquo;shorting&rdquo; component to attenuate unwanted frequencies, this resonant circuit can never provide full input (source) voltage to the load.</p>
-<p>That&nbsp;<a href="https://www.allaboutcircuits.com/video-lectures/series-circuits-part-1/" target="_blank">series resistance</a> will always be dropping some amount of voltage so long as there is a load resistance connected to the output of the filter. It should be noted that this form of band-pass filter circuit is very popular in analog radio tuning circuitry, for selecting a particular radio frequency from the multitudes of frequencies available from the antenna.</p>
+<p>That&nbsp;series resistance will always be dropping some amount of voltage so long as there is a load resistance connected to the output of the filter. It should be noted that this form of band-pass filter circuit is very popular in analog radio tuning circuitry, for selecting a particular radio frequency from the multitudes of frequencies available from the antenna.</p>
 <p>In most analog radio tuner circuits, the rotating dial for station selection moves a variable capacitor in a tank circuit.</p>
 
 <p><img src="/uploads/articles/variable-capacitor-tunes-radio-receiver-tank-circuit.jpg" /></p>
 <p><em>Variable capacitor tunes radio receiver tank circuit to select one out of many broadcast stations.</em></p>
 
-<p>The variable capacitor and air-core inductor shown in Figure<a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-8/resonant-filters/#52004.jpg" title=""> </a>above photograph of a simple radio comprise the main elements in the tank circuit filter used to discriminate one radio station&rsquo;s signal from another.</p>
-<p>Just as we can use series and parallel LC <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-6/resonance-series-parallel-circuits/" target="_blank">resonant circuits</a> to pass only those frequencies within a certain range, we can also use them to block frequencies within a certain range, creating a band-stop filter. Again, we have two major strategies to follow in doing this, to use either series or parallel resonance. First, we&rsquo;ll look at the series variety:</p>
+<p>The variable capacitor and air-core inductor shown in Figure above photograph of a simple radio comprise the main elements in the tank circuit filter used to discriminate one radio station&rsquo;s signal from another.</p>
+<p>Just as we can use series and parallel LC resonant circuits to pass only those frequencies within a certain range, we can also use them to block frequencies within a certain range, creating a band-stop filter. Again, we have two major strategies to follow in doing this, to use either series or parallel resonance. First, we&rsquo;ll look at the series variety:</p>
 ## Series Resonant Band-stop Filter
 <p><img src="/uploads/articles/series-resonant-band-stop-filter.png" /></p>
 <p><em>Series resonant band-stop filter.</em></p>
@@ -65,14 +65,14 @@ parallel resonant bandstop filter &#10; v1 1 0 ac 1 sin &#10; l1 1 2 100m &#10; 
 
 <p>Once again, notice how the absence of a series resistor makes for minimum attenuation for all the desired (passed) signals. The amplitude at the notch frequency, on the other hand, is very low. In other words, this is a very &ldquo;selective&rdquo; filter.</p>
 <p>In all these resonant filter designs, the selectivity depends greatly upon the &ldquo;purity&rdquo; of the inductance and capacitance used. If there is any stray resistance (especially likely in the inductor), this will diminish the filter&rsquo;s ability to finely discriminate frequencies, as well as introduce antiresonant effects that will skew the peak/notch frequency.</p>
-<p>A word of caution to those designing low-pass and high-pass filters is in order at this point. After assessing the standard RC and LR low-pass and high-pass filter designs, it might occur to a student that a better, more effective design of low-pass or high-pass filter might be realized by combining capacitive and inductive elements together like the Figure<a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-8/resonant-filters/#02128.png" title=""> </a>below.</p>
+<p>A word of caution to those designing low-pass and high-pass filters is in order at this point. After assessing the standard RC and LR low-pass and high-pass filter designs, it might occur to a student that a better, more effective design of low-pass or high-pass filter might be realized by combining capacitive and inductive elements together like the Figure below.</p>
 ## Capacitive Inductive Low-pass Filter
 <p><img src="/uploads/articles/capacitive-inductive-low-pass-filter.png" /></p>
 <p><em>Capacitive Inductive low-pass filter.</em></p>
 
 <p>The inductors should block any high frequencies, while the capacitor should short out any high frequencies as well, both working together to allow only low frequency signals to reach the load.</p>
 <p>At first, this seems to be a good strategy, and eliminates the need for a series resistance. However, the more insightful student will recognize that any combination of capacitors and inductors together in a circuit is likely to cause resonant effects to happen at a certain frequency.</p>
-<p>Resonance, as we have seen before, can cause strange things to happen. Let&rsquo;s plot a <a href="https://www.allaboutcircuits.com/textbook/reference/chpt-7/fundamentals-spice-programming/" target="_blank">SPICE</a> analysis and see what happens over a wide frequency range:</p>
+<p>Resonance, as we have seen before, can cause strange things to happen. Let&rsquo;s plot a SPICE analysis and see what happens over a wide frequency range:</p>
 
 <pre>
 lc lowpass filter &#10; v1 1 0 ac 1 sin &#10; l1 1 2 100m &#10; c1 2 0 1u &#10; l2 2 3 100m &#10; rload 3 0 1k &#10; .ac lin 20 100 1k &#10; .plot ac v(3) &#10; .end&#10;</pre>
@@ -110,8 +110,8 @@ LC matched lowpass filter &#10; V1 1 0 ac 1 SIN &#10; Rg 1 4 316 &#10; L1 4 2 10
 <p><img src="/uploads/articles/flat-response-of-the-lc-low-pass-filter-graph1.png" /></p>
 <p><em>The response of impedance matched L-C low-pass filter is nearly flat up to the cut-off frequency.</em></p>
 
-<p>The point to make in comparing the response of the unmatched filter to the matched filter is that variable load on the filter produces a considerable change in voltage. This property is directly applicable to L-C filtered power supplies&ndash; the <em>regulation</em> is poor. The <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-9/power-supply-circuits/" target="_blank">power supply</a> voltage changes with a change in load. This is undesirable.</p>
-<p>This poor load regulation can be mitigated by a <em>swinging choke</em>. This is a <em>choke</em>,&nbsp;<a href="https://www.allaboutcircuits.com/video-lectures/inductors-part-1/" target="_blank">inductor</a>, designed to <em>saturate</em> when a large DC current passes through it.</p>
+<p>The point to make in comparing the response of the unmatched filter to the matched filter is that variable load on the filter produces a considerable change in voltage. This property is directly applicable to L-C filtered power supplies&ndash; the <em>regulation</em> is poor. The power supply voltage changes with a change in load. This is undesirable.</p>
+<p>This poor load regulation can be mitigated by a <em>swinging choke</em>. This is a <em>choke</em>,&nbsp;inductor, designed to <em>saturate</em> when a large DC current passes through it.</p>
 <p>By saturate, we mean that the DC current creates a &ldquo;too&rdquo; high level of flux in the magnetic core, so that the AC component of current cannot vary the flux. Since induction is proportional to d&Phi;/dt, the inductance is decreased by the heavy DC current.</p>
 <p>The decrease in inductance decreases reactance X<sub>L</sub>. Decreasing reactance, reduces the voltage drop across the inductor; thus, increasing the voltage at the filter output. This improves the voltage regulation with respect to variable loads.</p>
 <p>Despite the unintended resonance, low-pass filters made up of capacitors and inductors are frequently used as final stages in AC/DC power supplies to filter the unwanted AC &ldquo;ripple&rdquo; voltage out of the DC converted from AC.</p>
@@ -120,14 +120,14 @@ LC matched lowpass filter &#10; V1 1 0 ac 1 SIN &#10; Rg 1 4 316 &#10; L1 4 2 10
 <p>The filter inductors and capacitors are generally quite large (several Henrys for the inductors and thousands of &micro;F for the capacitors is typical), making the filter&rsquo;s resonant frequency very, very low. DC of course, has a &ldquo;frequency&rdquo; of zero, so there&rsquo;s no way it can make an LC circuit resonate.</p>
 <p>The ripple voltage, on the other hand, is a non-sinusoidal AC voltage consisting of a fundamental frequency at least twice the frequency of the converted AC voltage, with harmonics many times that in addition.</p>
 <p>For plug-in-the-wall power supplies running on 60 Hz AC power (60 Hz United States; 50 Hz in Europe), the lowest frequency the filter will ever see is 120 Hz (100 Hz in Europe), which is well above its resonant point. Therefore, the potentially troublesome resonant point in a such a filter is completely avoided.</p>
-<p>The following SPICE analysis calculates the voltage output (AC and DC) for such a filter, with series DC and AC (120 Hz) voltage sources providing a rough approximation of the <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-7/mixed-frequency-ac-signals/" target="_blank">mixed-frequency</a> output of an AC/DC converter.</p>
+<p>The following SPICE analysis calculates the voltage output (AC and DC) for such a filter, with series DC and AC (120 Hz) voltage sources providing a rough approximation of the mixed-frequency output of an AC/DC converter.</p>
 
 <p><img src="/uploads/articles/ripple-free-ac-dc-power-supply.png" /></p>
 <p><em>AC/DC power supply filter provides &ldquo;ripple free&rdquo; DC power.</em></p>
 
 <pre>
 AC/DC power supply filter provides &ldquo;ripple free&rdquo; DC power&#10;&#10;ac/dc power supply filter  &#10;v1 1 0 ac 1 sin &#10;v2 2 1 dc       &#10;l1 2 3 3&#10;c1 3 0 9500u    &#10;l2 3 4 2&#10;rload 4 0 1k    &#10;.dc v2 12 12 1  &#10;.ac lin 1 120 120       &#10;.print dc v(4)  &#10;.print ac v(4)  &#10;.end&#10;v2            v(4)          &#10;  &#10;1.200E+01     1.200E+01   DC voltage at load = 12 volts&#10; &#10;freq          v(4)            &#10;1.200E+02     3.412E-05   AC voltage at load = 34.12 microvolts&#10;&#10;</pre>
-<p>With a full 12 volts DC at the load and only 34.12 &micro;V of AC left from the 1 volt AC source imposed across the load, this circuit design proves itself to be a very effective&nbsp;<a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-9/power-supply-circuits/" target="_blank">power supply</a> filter.</p>
+<p>With a full 12 volts DC at the load and only 34.12 &micro;V of AC left from the 1 volt AC source imposed across the load, this circuit design proves itself to be a very effective&nbsp;power supply filter.</p>
 <p>The lesson learned here about resonant effects also applies to the design of high-pass filters using both capacitors and inductors. So long as the desired and undesired frequencies are well to either side of the resonant point, the filter will work OK.</p>
 <p>But if any signal of significant magnitude close to the resonant frequency is applied to the input of the filter, strange things will happen!</p>
 

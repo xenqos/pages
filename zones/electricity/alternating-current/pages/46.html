@@ -33,13 +33,13 @@
 
 <h1>Band-pass Filters</h1>
 <h2>How to Create Band-pass Filter</h2>
-<p>There are applications where a particular band, or spread, or frequencies need to be filtered from a wider range of mixed signals.&nbsp;<a href=&quot;https://www.allaboutcircuits.com/textbook/alternating-current/chpt-8/what-is-a-filter/&quot; target=&quot;_blank&quot;>Filter circuits</a> can be designed to accomplish this task by combining the properties of low-pass and high-pass into a single filter. The result is called a <em>band-pass</em> filter.</p>
+<p>There are applications where a particular band, or spread, or frequencies need to be filtered from a wider range of mixed signals.&nbsp;Filter circuits can be designed to accomplish this task by combining the properties of low-pass and high-pass into a single filter. The result is called a <em>band-pass</em> filter.</p>
 <p>Creating a bandpass filter from a low-pass and high-pass filter can be illustrated using block diagrams:</p>
 <p><img src=&quot;/uploads/articles/band-pass-filter-diagram.png&quot; /></p>
 <p><em>System level block diagram of a band-pass filter.</em></p>
 
 <h2>Design a Band-pass Filter Using Capacitors</h2>
-<p>What emerges from the&nbsp;<a href=&quot;https://www.allaboutcircuits.com/video-lectures/series-circuits-part-1/&quot; target=&quot;_blank&quot;>series combination</a> of these two filter circuits is a circuit that will only allow passage of those frequencies that are neither too high nor too low. Using real components, here is what a typical schematic might look like. The response of the band-pass filter is shown in.<strong> </strong></p>
+<p>What emerges from the&nbsp;series combination of these two filter circuits is a circuit that will only allow passage of those frequencies that are neither too high nor too low. Using real components, here is what a typical schematic might look like. The response of the band-pass filter is shown in.<strong> </strong></p>
 <p><img src=&quot;/uploads/articles/capacitive-band-pass-filter-circuit.png&quot; /></p>
 <p><em>Capacitive band-pass filter.</em></p>
 
@@ -50,14 +50,14 @@
 <p><em>The response of a capacitive bandpass filter peaks within a narrow frequency range.</em></p>
 
 <h2>Design a Band-pass Filter Using Inductors</h2>
-<p>Band-pass filters can also be constructed using&nbsp;<a href=&quot;https://www.allaboutcircuits.com/video-lectures/inductors-part-1/&quot; target=&quot;_blank&quot;>inductors</a>, but as mentioned before, the reactive &ldquo;purity&rdquo; of capacitors gives them a design advantage. If we were to design a bandpass filter using inductors, it might look something like:</p>
+<p>Band-pass filters can also be constructed using&nbsp;inductors, but as mentioned before, the reactive &ldquo;purity&rdquo; of capacitors gives them a design advantage. If we were to design a bandpass filter using inductors, it might look something like:</p>
 <p><img src=&quot;/uploads/articles/inductive-band-pass-filter-circuit.png&quot; /></p>
 <p><em>Inductive band-pass filter.</em></p>
 <p>The fact that the high-pass section comes &ldquo;first&rdquo; in this design instead of the low-pass section makes no difference in its overall operation. It will still filter out all frequencies too high or too low.</p>
 <p>While the general idea of combining low-pass and high-pass filters together to make a bandpass filter is sound, it is not without certain limitations.</p>
 <p>Because this type of band-pass filter works by relying on either section to <em>block</em> unwanted frequencies, it can be difficult to design such a filter to allow unhindered passage within the desired frequency range.</p>
 <p>Both the low-pass and high-pass sections will always be blocking signals to some extent, and their combined effort makes for an attenuated (reduced amplitude) signal at best, even at the peak of the &ldquo;pass-band&rdquo; frequency range.</p>
-<p>Notice the curve peak on the previous <a href=&quot;https://www.allaboutcircuits.com/textbook/reference/chpt-7/fundamentals-spice-programming/&quot; target=&quot;_blank&quot;>SPICE</a> analysis: the load voltage of this filter never rises above 0.59 volts, although the source voltage is a full volt. This signal attenuation becomes more pronounced if the filter is designed to be more selective (steeper curve, narrower band of passable frequencies).</p>
+<p>Notice the curve peak on the previous SPICE analysis: the load voltage of this filter never rises above 0.59 volts, although the source voltage is a full volt. This signal attenuation becomes more pronounced if the filter is designed to be more selective (steeper curve, narrower band of passable frequencies).</p>
 <p>There are other methods to achieve band-pass operation without sacrificing signal strength within the pass-band. We will discuss those methods a little later in this chapter.</p>
 <p><strong>REVIEW:</strong></p>
 <ul>

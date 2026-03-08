@@ -1,13 +1,13 @@
 # Power in Resistive and Reactive AC circuits
-<p>Consider a circuit for a single-phase <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-4/introduction-to-ac-circuits/" target="_blank">AC power system</a>, where a 120 volt, 60 Hz AC voltage source is delivering power to a resistive load: (Figure below)</p>
+<p>Consider a circuit for a single-phase AC power system, where a 120 volt, 60 Hz AC voltage source is delivering power to a resistive load: (Figure below)</p>
 
 <p><img src="/uploads/articles/ac-source-drives-a-purely-resistive-load.png" /></p>
 <p><em>Ac source drives a purely resistive load.</em></p>
 
 <p><img src="/uploads/articles/current-load-2-amps.png" /></p>
 
-<p>In this example, the current to the load would be 2 amps, <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-1/measurements-ac-magnitude/" target="_blank">RMS</a>. The power dissipated at the load would be 240 watts.</p>
-<p>Because this load is purely resistive (no reactance), the current is in phase with the <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/voltage-current-resistance-relate/" target="_blank">voltage</a>, and calculations look similar to that in an equivalent DC circuit.</p>
+<p>In this example, the current to the load would be 2 amps, RMS. The power dissipated at the load would be 240 watts.</p>
+<p>Because this load is purely resistive (no reactance), the current is in phase with the voltage, and calculations look similar to that in an equivalent DC circuit.</p>
 <p>If we were to plot the voltage, current, and power waveforms for this circuit, it would look like the figure below.</p>
 
 <p><img src="/uploads/articles/current-in-phase-with-voltage-resistive-circuit.png" /></p>
@@ -42,7 +42,7 @@
 <p><img src="/uploads/articles/ac-circuit-with-resistive-and-purely-reactive-load.png" /></p>
 
 <p>At a frequency of 60 Hz, the 160 millihenrys of inductance give us 60.319 &Omega; of inductive reactance.</p>
-<p>This <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-5/review-of-r-x-and-z/" target="_blank">reactance</a> combines with the 60 &Omega; of resistance to form a total load impedance of 60 + j60.319 &Omega;, or 85.078 &Omega; &ang; 45.152<sup>o</sup>. If we&rsquo;re not concerned with phase angles (which we&rsquo;re not at this point), we may calculate current in the circuit by taking the polar magnitude of the voltage source (120 volts) and dividing it by the polar magnitude of the impedance (85.078 &Omega;).</p>
+<p>This reactance combines with the 60 &Omega; of resistance to form a total load impedance of 60 + j60.319 &Omega;, or 85.078 &Omega; &ang; 45.152<sup>o</sup>. If we&rsquo;re not concerned with phase angles (which we&rsquo;re not at this point), we may calculate current in the circuit by taking the polar magnitude of the voltage source (120 volts) and dividing it by the polar magnitude of the impedance (85.078 &Omega;).</p>
 <p>With a power supply voltage of 120 volts RMS, our load current is 1.410 amps. This is the figure an RMS ammeter would indicate if connected in series with the resistor and inductor.</p>
 <p>We already know that reactive components dissipate zero power, as they equally absorb power from, and return power to, the rest of the circuit.</p>
 <p>Therefore, any inductive reactance in this load will likewise dissipate zero power.</p>

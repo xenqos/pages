@@ -1,7 +1,7 @@
 # Amplifier Gain
-<p><a name="Gain"></a></p>
+<p></p>
 ## The Voltage Gain
-<p>Because <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-1/amplifiers/" target="_blank">amplifiers</a> have the ability to increase the magnitude of an input signal, it is useful to be able to rate an amplifier&rsquo;s amplifying ability in terms of an output/input ratio. The technical term for an amplifier&rsquo;s output/input magnitude ratio is <em>gain</em>. As a ratio of equal units (power out / power in, voltage out / voltage in, or current out / current in), gain is naturally a unitless measurement.</p>
+<p>Because amplifiers have the ability to increase the magnitude of an input signal, it is useful to be able to rate an amplifier&rsquo;s amplifying ability in terms of an output/input ratio. The technical term for an amplifier&rsquo;s output/input magnitude ratio is <em>gain</em>. As a ratio of equal units (power out / power in, voltage out / voltage in, or current out / current in), gain is naturally a unitless measurement.</p>
 <p>Mathematically, gain is symbolized by the capital letter &ldquo;A&rdquo;.</p>
 ## How to Calculate Voltage Gain
 <p>For example, if an amplifier takes in an AC voltage signal measuring 2 volts RMS and outputs an AC voltage of 30 volts RMS, it has an AC voltage gain of 30 divided by 2, or 15:</p>
@@ -12,7 +12,7 @@
 <p>Another way of saying this is that amplifiers often amplify <em>changes</em> or <em>variations</em> in input signal magnitude (AC) at a different ratio than <em>steady </em>input signal magnitudes (DC). The specific reasons for this are too complex to explain at this time, but the fact of the matter is worth mentioning.</p>
 <p>If gain calculations are to be carried out, it must first be understood what type of signals and gains are being dealt with, AC or DC.</p>
 ## Electrical Amplifier Gains: Voltage, Current, and/or Power
-<p>Electrical amplifier gains may be expressed in terms of <a href="https://www.allaboutcircuits.com/video-lectures/electrical-quantities-a/" target="_blank">voltage, current, and/or power</a> in both AC and DC.</p>
+<p>Electrical amplifier gains may be expressed in terms of voltage, current, and/or power in both AC and DC.</p>
 <p>A summary of gain definitions is as follows:</p>
 <p>The triangle-shaped &ldquo;delta&rdquo; symbol (&Delta;) represents <em>change</em> in mathematics, so &ldquo;&Delta;V<sub>output</sub> / &Delta;V<sub>input</sub>&rdquo; means &ldquo;change in output voltage divided by change in input voltage,&rdquo; or more simply, &ldquo;AC output voltage divided by AC input voltage&rdquo;:</p>
 <p><img src="/uploads/articles/summary-of-gain-definitions.png" /></p>

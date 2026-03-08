@@ -19,14 +19,14 @@
 <p><img src="/uploads/articles/high-acceleration-2-φ-ac-servo-motor.jpg" /></p>
 <p><em>High acceleration 2-&phi; AC servo motor</em></p>
 
-<p>One phase is connected to the single-phase line; the other is driven by an <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-1/amplifiers/" target="_blank">amplifier</a>. One of the windings is driven by a 90<strong>&deg;</strong> phase-shifted waveform. In the above figure, this is accomplished by a series capacitor in the power line winding.</p>
+<p>One phase is connected to the single-phase line; the other is driven by an amplifier. One of the windings is driven by a 90<strong>&deg;</strong> phase-shifted waveform. In the above figure, this is accomplished by a series capacitor in the power line winding.</p>
 <p>The other winding is driven by a variable amplitude sine wave to control motor speed. The phase of the waveform may invert (180<strong>&deg; </strong>phase shift) to reverse the direction of the motor. This variable sine wave is the output of an error amplifier.</p>
 <p>See<em> synchro CT section </em>for example. Aircraft control surfaces may be positioned by 400 Hz 2-&phi; servo motors.</p>
 ## Hysteresis Motor
 <p>If the low hysteresis Si-steel laminated rotor of an induction motor is replaced by a slotless windingless cylinder of hardened magnet steel, hysteresis, or lagging behind of rotor magnetization, is greatly accentuated.</p>
 <p>The resulting low torque synchronous motor develops constant torque from stall to synchronous speed. Because of the low torque, the hysteresis motor is only available in very small sizes and is only used for constant speed applications like clock drives, and formerly, phonograph turntables.</p>
 ## Eddy Current Clutch
-<p>If the stator of an <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-13/wound-rotor-induction-motors/" target="_blank">induction motor</a> or a <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-13/synchronous-motors/" target="_blank">synchronous motor</a> is mounted to rotate independently of the rotor, an eddy current clutch results. The coils are excited with DC and attached to the mechanical load.</p>
+<p>If the stator of an induction motor or a synchronous motor is mounted to rotate independently of the rotor, an eddy current clutch results. The coils are excited with DC and attached to the mechanical load.</p>
 <p>The squirrel cage rotor is attached to the driving motor. The drive motor is started with no DC excitation to the clutch. The DC excitation is adjusted from zero to the desired final value providing a continuously and smoothly variable torque.</p>
 <p>The operation of the eddy current clutch is similar to an analog eddy current automotive speedometer.</p>
 

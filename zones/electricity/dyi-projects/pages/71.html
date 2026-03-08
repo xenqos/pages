@@ -33,22 +33,22 @@
 
 <h1>Analog Lab - High-impedance Voltmeter</h1>
 <h2>Project Overview</h2>
-<p>An ideal <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-8/voltmeter-design/&quot; target=&quot;_blank&quot;>voltmeter</a> has infinite input <a href=&quot;https://www.allaboutcircuits.com/textbook/alternating-current/chpt-5/review-of-r-x-and-z/&quot; target=&quot;_blank&quot;>impedance</a>, drawing zero <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/voltage-current/&quot; target=&quot;_blank&quot;>current</a> from the circuit under test. This way, there will be no impact&nbsp;on the circuit as the voltage is being measured.&nbsp;The more current a voltmeter draws from the circuit under test, the more the measured voltage will sag&nbsp;under the loading effect of the meter. This is similar to a tire-pressure gauge releasing air out of the tire being measured: the more air released from the tire, the more the tire&rsquo;s pressure will be impacted by the act of measurement.</p>
-<p>This loading is more pronounced on high-resistance circuits, like the <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-6/voltage-divider-circuits/&quot; target=&quot;_blank&quot;>voltage divider</a> made of 1 M&Omega; <a href=&quot;https://eepower.com/resistor-guide/&quot; target=&quot;_blank&quot;>resistors</a>, shown in Figure 1.</p>
+<p>An ideal voltmeter has infinite input impedance, drawing zero current from the circuit under test. This way, there will be no impact&nbsp;on the circuit as the voltage is being measured.&nbsp;The more current a voltmeter draws from the circuit under test, the more the measured voltage will sag&nbsp;under the loading effect of the meter. This is similar to a tire-pressure gauge releasing air out of the tire being measured: the more air released from the tire, the more the tire&rsquo;s pressure will be impacted by the act of measurement.</p>
+<p>This loading is more pronounced on high-resistance circuits, like the voltage divider made of 1 M&Omega; resistors, shown in Figure 1.</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/high-impedance-voltmeter-schematic-diagram.jpg&quot; /></p>
-<h4><em><strong>Figure 1. </strong>Schematic diagram of the high-impedance voltmeter circuit.</em></h4>
+<em><strong>Figure 1. </strong>Schematic diagram of the high-impedance voltmeter circuit.</em><br>
 
 <h2>Parts and Materials</h2>
 <ul>
-<li>An operational amplifier (op amp), model <a href=&quot;https://www.ti.com/lit/ds/symlink/tl082-n.pdf?ts=1675991805381&amp;ref_url=https%253A%252F%252Fwww.google.com%252F&quot; target=&quot;_blank&quot;>TL082 (datasheet)</a>&nbsp;recommended</li>
-<li>An operational amplifier, model <a href=&quot;https://www.ti.com/lit/ds/symlink/lm1458.pdf&quot; target=&quot;_blank&quot;>LM1458 (datasheet)</a>&nbsp;recommended</li>
+<li>An operational amplifier (op amp), model TL082 (datasheet)&nbsp;recommended</li>
+<li>An operational amplifier, model LM1458 (datasheet)&nbsp;recommended</li>
 <li>Four 6 V or 24 V power supply</li>
 <li>15 VDC, 1mA analog panel meter&nbsp;</li>
 <li>15 k&Omega; precision resistor</li>
 <li>Four 1 M&Omega; resistors</li>
 </ul>
 
-<p>This second main portion of this experiment is based on <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-5/junction-field-effect-transistors-jfet/&quot; target=&quot;_blank&quot;>junction field-effect transistors</a> or JFET-input op amp such as the TL082 and is designed to demonstrate an issue known as latch-up. The other op amp (model 1458) is used in this experiment to demonstrate the absence of latch-up,&nbsp;a problem inherent to the TL082. If you do not have a JFET-input opamp, you can skip the latch-up portion of the experiment.</p>
+<p>This second main portion of this experiment is based on junction field-effect transistors or JFET-input op amp such as the TL082 and is designed to demonstrate an issue known as latch-up. The other op amp (model 1458) is used in this experiment to demonstrate the absence of latch-up,&nbsp;a problem inherent to the TL082. If you do not have a JFET-input opamp, you can skip the latch-up portion of the experiment.</p>
 <p>You don&rsquo;t need the 1 M&Omega; resistors, exactly. Any very high-resistance resistors will suffice.</p>
 
 <h2>Learning Objectives</h2>
@@ -61,14 +61,14 @@
 <h2>Instructions</h2>
 <p><strong>Step 1:&nbsp;</strong>Build a simple 0-15 V range voltmeter by connecting the 1 mA meter movement in series with the 15 k&Omega; precision resistor, as illustrated in Figure 2.</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/high-impedance-voltmeter-schematic-diagram-1.jpg&quot; /></p>
-<h4><em><strong>Figure 2. </strong>A low-impedance voltmeter circuit that demonstrates loading.</em></h4>
-
-<p><strong>Step 2:&nbsp;</strong>Try to use this voltmeter to measure the voltage at TP1, TP2, or TP3 (with respect to <a href=&quot;https://www.allaboutcircuits.com/technical-articles/an-introduction-to-ground/&quot; target=&quot;_blank&quot;>ground</a>). You will&nbsp;encounter severe measurement errors induced by meter impact.&nbsp;Does the meter read falsely high or falsely low? Why do you think this is?</p>
-<p><strong>Step 3: </strong>If we were to increase the meter&rsquo;s input impedance, we would diminish its current draw or load&nbsp;on the circuit under test and consequently improve its measurement accuracy. An op amp with high-impedance inputs (using a JFET transistor input stage rather than a <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-4/bipolar-junction-transistors-bjt/&quot; target=&quot;_blank&quot;>bipolar junction transistor (BJT)</a> input stage) works well for this application.&nbsp;</p>
+<em><strong>Figure 2. </strong>A low-impedance voltmeter circuit that demonstrates loading.</em><br>
+<br>
+<p><strong>Step 2:&nbsp;</strong>Try to use this voltmeter to measure the voltage at TP1, TP2, or TP3 (with respect to ground). You will&nbsp;encounter severe measurement errors induced by meter impact.&nbsp;Does the meter read falsely high or falsely low? Why do you think this is?</p>
+<p><strong>Step 3: </strong>If we were to increase the meter&rsquo;s input impedance, we would diminish its current draw or load&nbsp;on the circuit under test and consequently improve its measurement accuracy. An op amp with high-impedance inputs (using a JFET transistor input stage rather than a bipolar junction transistor (BJT) input stage) works well for this application.&nbsp;</p>
 <p>Build the high-impedance voltmeter defined in the schematic diagram of Figure 1 and&nbsp;illustrated in Figure 3.</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/high-impedance-voltmeter-illustration.jpg&quot; /></p>
-<h4><em><strong>Figure 3. </strong>Breadboard implementation of the high-impedance voltmeter circuit.</em></h4>
-
+<em><strong>Figure 3. </strong>Breadboard implementation of the high-impedance voltmeter circuit.</em><br>
+<br>
 <p>Note that the meter movement is part of the op amp&rsquo;s feedback loop from the output to the inverting input. This circuit drives the meter movement with a current proportional to the voltage impressed at the noninverting (+) input.&nbsp;This&nbsp;current is supplied directly from the batteries through the op amp&rsquo;s power supply pins, not from the circuit under test through the test probe. The meter&rsquo;s range is set by the resistor connecting the inverting (-) input to the ground.</p>
 <p><strong>Step 4:&nbsp;</strong>Re-take voltage measurements at TP1, TP2, and TP3. You should enjoy far better success this time, with the meter movement accurately measuring these voltages (approximately 3, 6, and 9 V, respectively).</p>
 <p>You may witness the extreme sensitivity of this voltmeter by touching the test probe with one hand and the most positive battery terminal with the other. Notice how you can drive the needle upward on the scale simply by measuring battery voltage through your body resistance,&nbsp;an impossible feat with the original, unamplified voltmeter circuit. If you touch the test probe to the ground, the meter should read exactly 0 V.</p>
@@ -77,8 +77,8 @@
 <p>If you do not have the TL082 or similar op amp with JFET op amps, you can skip the rest of this experiment.</p>
 <p><strong>Step 5:&nbsp;</strong>After you&rsquo;ve proven this circuit to work, modify it by changing the power supply from dual rail (&plusmn;12 V) to single-ended (+24 V).&nbsp;This entails removing the center-tap ground connection between the 2nd and 3rd batteries and grounding the far negative battery terminal instead, as shown in Figure 4.&nbsp;</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/high-impedance-voltmeter-schematic-diagram-2.jpg&quot; /></p>
-<h4><em><strong>Figure 4. </strong>High-impedance voltmeter circuit with a single-ended power supply.</em></h4>
-
+<em><strong>Figure 4. </strong>High-impedance voltmeter circuit with a single-ended power supply.</em><br>
+<br>
 <p><strong>Step 6:&nbsp;</strong>Measure the voltages at TP1, TP2, and TP3. This alteration in the power supply increases the voltages at TP1, TP2, and TP3 to 6, 12, and 18 V, respectively. With a 15 k&Omega; range resistor and a 1 mA meter movement, measuring 18 V will gently peg&nbsp;the meter, but you should be able to measure the 6 and 12 V test points just fine.</p>
 <p><strong>Step 7:&nbsp;</strong>Try touching the meter&rsquo;s test probe to the ground. This should drive the meter needle to exactly 0 V, as before, <strong>but it will not!</strong> What is happening here is an op amp phenomenon called latch-up, where the op amp output drives to a positive voltage when the input common-mode voltage exceeds the allowable limit.</p>
 <p>In this case, as with many JFET-input op amps, neither input should be allowed to come close to either power supply rail voltage. With a single supply, the op amp&rsquo;s negative power rail is at ground potential (0 V), so grounding the test probe brings the noninverting (+) input exactly to that rail voltage. This is bad for a JFET op amp, and drives the output strongly positive, even though it doesn&rsquo;t seem like it should, based on how op amps are supposed to function.</p>

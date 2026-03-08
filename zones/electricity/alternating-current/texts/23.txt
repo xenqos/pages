@@ -7,11 +7,11 @@
 ## Impedance Calculation
 <p>The resistor will offer 5 &Omega; of resistance to AC current regardless of frequency, while the capacitor will offer 26.5258 &Omega; of reactance to AC current at 60 Hz.</p>
 <p>Because the resistor&rsquo;s resistance is a real number (5 &Omega; &ang; 0&deg;, or 5 + j0 &Omega;), and the capacitor&rsquo;s reactance is an imaginary number (26.5258 &Omega; &ang; -90&deg;, or 0 - j26.5258 &Omega;), the combined effect of the two components will be an opposition to current equal to the complex sum of the two numbers.</p>
-<p>The term for this complex opposition to current is <em><a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-5/review-of-r-x-and-z/" target="_blank">impedance</a></em>, its symbol is Z, and it is also expressed in the unit of ohms, just like resistance and reactance. In the above example, the total circuit impedance is:</p>
+<p>The term for this complex opposition to current is <em>impedance</em>, its symbol is Z, and it is also expressed in the unit of ohms, just like resistance and reactance. In the above example, the total circuit impedance is:</p>
 
 <p><img src="/uploads/articles/circuit-impedance-equation1.jpg" /></p>
 
-<p>Impedance is related to <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/voltage-current/" target="_blank">voltage and current</a> just as you might expect, in a manner similar to resistance in <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-2/ohms-law/" target="_blank">Ohm&rsquo;s Law</a>:</p>
+<p>Impedance is related to voltage and current just as you might expect, in a manner similar to resistance in Ohm&rsquo;s Law:</p>
 
 <p><img src="/uploads/articles/ohms-law-for-ac-circuits1.jpg" /></p>
 
@@ -50,7 +50,7 @@ ac r-c circuit&#10; v1 1 0 ac 10 sin&#10; r1 1 2 5&#10; c1 2 0 100u&#10; .ac lin
 
 <p><img src="/uploads/articles/interpreted-spice-equation.jpg" /></p>
 
-<p>Once again, <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-3/spice-models/" target="_blank">SPICE</a> confusingly prints the current phase angle at a value equal to the real phase angle plus 180&deg; (or minus 180&deg;).</p>
+<p>Once again, SPICE confusingly prints the current phase angle at a value equal to the real phase angle plus 180&deg; (or minus 180&deg;).</p>
 <p>However, it&rsquo;s a simple matter to correct this figure and check to see if our work is correct. In this case, the -100.7&deg; output by SPICE for current phase angle equates to a positive 79.3&deg;, which does correspond to our previously calculated figure of 79.325&deg;.</p>
 <p>Again, it must be emphasized that the calculated figures corresponding to real-life voltage and current measurements are those in <em>polar</em> form, not rectangular form!</p>
 <p>For example, if we were to actually build this series resistor-capacitor circuit and measure voltage across the resistor, our voltmeter would indicate <strong>1.8523</strong> volts, not 343.11 millivolts (real rectangular) or 1.8203 volts (imaginary rectangular).</p>

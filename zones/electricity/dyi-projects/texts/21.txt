@@ -1,16 +1,16 @@
 # DC Lab - Rheostat Range Limiting
 ## Project Overview
-<p>This experiment explores the different <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/resistance/" target="_blank">resistance</a> ranges obtainable from combining fixed-value <a href="https://eepower.com/resistor-guide/" target="_blank">resistors</a> with a <a href="https://eepower.com/resistor-guide/resistor-types/potentiometer/" target="_blank">potentiometer</a> connected as a <a href="https://eepower.com/resistor-guide/resistor-types/rheostat/" target="_blank">rheostat</a>.&nbsp;&nbsp;Creating a custom resistance range from <a href="https://eepower.com/resistor-guide/resistor-types/fixed-resistor/" target="_blank">fixed-value resistors</a> and a potentiometer (as illustrated in Figure 1) is useful for producing precise resistances required for certain circuits, especially meter circuits.&nbsp;</p>
+<p>This experiment explores the different resistance ranges obtainable from combining fixed-value resistors with a potentiometer connected as a rheostat.&nbsp;&nbsp;Creating a custom resistance range from fixed-value resistors and a potentiometer (as illustrated in Figure 1) is useful for producing precise resistances required for certain circuits, especially meter circuits.&nbsp;</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/rheostat-range-limiting-illustration.jpg" /></p>
-#### <em><strong>Figure 1.</strong> A variable resistance rheostat with zero-calibration and range set using fixed resistors in series and parallel.</em>
+<em><strong>Figure 1.</strong> A variable resistance rheostat with zero-calibration and range set using fixed resistors in series and parallel.</em>
 
-<p>In many electrical instruments&mdash;<a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-8/multimeters/" target="_blank">multimeters</a> especially&mdash;resistance is the determining factor for the instrument&rsquo;s range of measurement. In addition, if an instrument&rsquo;s internal resistance values are not precise, neither will its indications. The rheostat allows the tuning of resistance to a precise value.</p>
+<p>In many electrical instruments&mdash;multimeters especially&mdash;resistance is the determining factor for the instrument&rsquo;s range of measurement. In addition, if an instrument&rsquo;s internal resistance values are not precise, neither will its indications. The rheostat allows the tuning of resistance to a precise value.</p>
 
 ## Parts and Materials
 <ul>
 <li>Several 10 k&Omega; resistors</li>
-<li>One 10 k&Omega; <a href="https://eepower.com/resistor-guide/resistor-types/potentiometer-taper/" target="_blank">potentiometer, linear taper</a></li>
+<li>One 10 k&Omega; potentiometer, linear taper</li>
 </ul>
 
 ## Learning Objectives
@@ -25,33 +25,33 @@
 <p><strong>Step 1:&nbsp;</strong>To begin, connect a 10 k&Omega; potentiometer as a rheostat with no other resistors connected, as shown in Figure 2.</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/rheostat-range-limiting-illustration-1.jpg" /></p>
-#### <em><strong>Figure 2.</strong> Connect the potentiometer as a variable resistance rheostat.</em>
+<em><strong>Figure 2.</strong> Connect the potentiometer as a variable resistance rheostat.</em>
 
-<p><strong>Step 2:&nbsp;</strong>Adjusting&nbsp;the potentiometer through its full range of travel should result in a resistance that varies smoothly from 0 &Omega; to 10,000 &Omega; by measuring with an <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-2/ohmmeter-usage/" target="_blank">ohmmeter</a>, as illustrated above in Figure 2.</p>
+<p><strong>Step 2:&nbsp;</strong>Adjusting&nbsp;the potentiometer through its full range of travel should result in a resistance that varies smoothly from 0 &Omega; to 10,000 &Omega; by measuring with an ohmmeter, as illustrated above in Figure 2.</p>
 
 ### Shifting&nbsp;the Variable Resistance Range Using&nbsp;Zero-calibration
-<p><strong>Step 3:&nbsp;</strong>Suppose we wanted to elevate the lower end of this resistance range so that we had an adjustable range from 10 k&Omega; to 20 k&Omega; with a full sweep of the potentiometer&rsquo;s adjustment. This could be easily accomplished by adding a 10 k&Omega; <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/simple-series-circuits/" target="_blank">resistor in series</a> with the potentiometer.&nbsp;Add a&nbsp;10 k&Omega; resistor to the circuit, as shown in Figure 3, and re-measure total resistance while adjusting the potentiometer.&nbsp;A shift in the low end of an adjustment range is called a <em>zero-calibration</em>&nbsp;in metrological terms.&nbsp;With the addition of a series 10 k&Omega; resistor, the &ldquo;zero point&rdquo; was shifted upward by 10,000 &Omega;.</p>
+<p><strong>Step 3:&nbsp;</strong>Suppose we wanted to elevate the lower end of this resistance range so that we had an adjustable range from 10 k&Omega; to 20 k&Omega; with a full sweep of the potentiometer&rsquo;s adjustment. This could be easily accomplished by adding a 10 k&Omega; resistor in series with the potentiometer.&nbsp;Add a&nbsp;10 k&Omega; resistor to the circuit, as shown in Figure 3, and re-measure total resistance while adjusting the potentiometer.&nbsp;A shift in the low end of an adjustment range is called a <em>zero-calibration</em>&nbsp;in metrological terms.&nbsp;With the addition of a series 10 k&Omega; resistor, the &ldquo;zero point&rdquo; was shifted upward by 10,000 &Omega;.</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/rheostat-range-limiting-illustration-2.jpg" /></p>
-#### <em><strong>Figure 3.</strong> Add a resistor in series with the rheostat to shift the variable resistance range.</em>
+<em><strong>Figure 3.</strong> Add a resistor in series with the rheostat to shift the variable resistance range.</em>
 
 ### Adjusting the Span of the Variable Resistance Range
-<p>The difference between the high and low ends of the adjustable&nbsp;range&mdash;called the span of the circuit&mdash;has not changed, though. A&nbsp;range of 10 k&Omega; to 20 k&Omega; has the same 10,000 &Omega; span as a range of 0 &Omega; to 10 k&Omega;.&nbsp;If we wish to shift the span of this rheostat circuit as well, we must change the range of the potentiometer itself.&nbsp;We could replace the potentiometer with one of another value. We could also simulate a lower-value potentiometer by placing a <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/simple-parallel-circuits/" target="_blank">resistor in parallel</a> with it, diminishing its maximum obtainable resistance. This will decrease the span of the circuit from 10 k&Omega; to something less.&nbsp;</p>
+<p>The difference between the high and low ends of the adjustable&nbsp;range&mdash;called the span of the circuit&mdash;has not changed, though. A&nbsp;range of 10 k&Omega; to 20 k&Omega; has the same 10,000 &Omega; span as a range of 0 &Omega; to 10 k&Omega;.&nbsp;If we wish to shift the span of this rheostat circuit as well, we must change the range of the potentiometer itself.&nbsp;We could replace the potentiometer with one of another value. We could also simulate a lower-value potentiometer by placing a resistor in parallel with it, diminishing its maximum obtainable resistance. This will decrease the span of the circuit from 10 k&Omega; to something less.&nbsp;</p>
 <p><strong>Step 4:&nbsp;</strong>Add a 10 k&Omega; resistor in parallel with the potentiometer, as shown in Figure 4. This will reduce the span to one-half of its former value: from 10 K&Omega; to 5 k&Omega;. Now the calibrated resistance range of this circuit will be 10 k&Omega; to 15 k&Omega;:</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/rheostat-range-limiting-illustration.jpg" /></p>
-#### <em><strong>Figure 4.</strong> Add a resistor parallel to the rheostat to reduce the variable resistance&nbsp;range.</em>
+<em><strong>Figure 4.</strong> Add a resistor parallel to the rheostat to reduce the variable resistance&nbsp;range.</em>
 
 <p>There is nothing we can do to <em>increase</em> the span of this rheostat circuit short of replacing the potentiometer with another of greater total resistance.&nbsp;Adding resistors in parallel can only decrease the span.&nbsp;However, there is no such restriction with calibrating the zero point of this circuit, as it began at 0 &Omega; and may be made as great as we wish by adding resistance in series.</p>
-<p><strong>Step 5:&nbsp;</strong>A multitude of resistance ranges may be obtained using only 10 K&Omega; fixed-value resistors if we are creative with <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-7/what-is-a-series-parallel-circuit/" target="_blank">series-parallel</a> combinations of them.&nbsp;For instance, we can create a range of 7.5 k&Omega; to 10 k&Omega; by building the following circuit in Figure 5.&nbsp;</p>
+<p><strong>Step 5:&nbsp;</strong>A multitude of resistance ranges may be obtained using only 10 K&Omega; fixed-value resistors if we are creative with series-parallel combinations of them.&nbsp;For instance, we can create a range of 7.5 k&Omega; to 10 k&Omega; by building the following circuit in Figure 5.&nbsp;</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/rheostat-range-limiting-illustration-3.jpg" /></p>
-#### <em><strong>Figure 5.</strong>&nbsp;Using series and parallel resistor combinations of only 10 k&Omega; to adjust the rheostat range and span.</em>
+<em><strong>Figure 5.</strong>&nbsp;Using series and parallel resistor combinations of only 10 k&Omega; to adjust the rheostat range and span.</em>
 
 <p>This same circuit is represented as a schematic diagram in Figure 6.</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/multitude-of-resistance-range-circuit.jpg" /></p>
-#### <em><strong>Figure 6.</strong>&nbsp;Schematic representation of the series-parallel combination&nbsp;of 10 k&Omega; resistors illustrated in Figure 4.</em>
+<em><strong>Figure 6.</strong>&nbsp;Schematic representation of the series-parallel combination&nbsp;of 10 k&Omega; resistors illustrated in Figure 4.</em>
 
 <p>From here, you can experiment with different resistor &ldquo;networks&rdquo; and note the effects on the total resistance range.</p>
 <p>Finding a fixed-value resistor of just the right resistance for placement in an instrument circuit design is unlikely, so custom resistance &ldquo;networks&rdquo; may need to be built to provide the desired resistance.&nbsp;Having a potentiometer as part of the resistor network provides a means of correction if the network&rsquo;s resistance should drift&nbsp;from its original value.&nbsp;Designing the network for a minimum span ensures that the potentiometer&rsquo;s effect will be small so that precise adjustment is possible and so that accidental movement of its mechanism will not result in severe calibration errors.</p>

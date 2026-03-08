@@ -33,9 +33,9 @@
 
 <h1>Digital Lab - Digital Combination Lock</h1>
 <h2>Project Overview</h2>
-<p>This project uses DIP switches and <a href=&quot;https://www.allaboutcircuits.com/textbook/digital/chpt-9/combinational-logic-functions/&quot; target=&quot;_blank&quot;>combinational logic circuits</a> to implement a digital combination lock. As illustrated in Figure 1, the circuit has green and red <a href=&quot;https://www.allaboutcircuits.com/textbook/semiconductors/chpt-3/special-purpose-diodes/&quot; target=&quot;_blank&quot;>light-emitting diodes (LEDs)</a> that indicate whether or not the data entry code matches the key code.&nbsp;&nbsp;</p>
+<p>This project uses DIP switches and combinational logic circuits to implement a digital combination lock. As illustrated in Figure 1, the circuit has green and red light-emitting diodes (LEDs) that indicate whether or not the data entry code matches the key code.&nbsp;&nbsp;</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/simple-combination-lock-illustration.jpg&quot; /></p>
-<h4><em><strong>Figure 1.</strong>&nbsp;Breadboard implementation of the digital combination lock with LED output indicators.</em></h4>
+<em><strong>Figure 1.</strong>&nbsp;Breadboard implementation of the digital combination lock with LED output indicators.</em><br>
 
 <h2>Parts and Materials</h2>
 <ul>
@@ -44,13 +44,13 @@
 <li>Two eight-position DIP switches</li>
 <li>Two LEDs</li>
 <li>Four 1N914 switching&nbsp;diodes</li>
-<li>Ten 10 k&Omega; <a href=&quot;https://eepower.com/resistor-guide/&quot; target=&quot;_blank&quot;>resistors</a></li>
+<li>Ten 10 k&Omega; resistors</li>
 <li>Two 470 &Omega; resistors</li>
 <li>Pushbutton switch, normally open</li>
 <li>Two 6 V batteries</li>
 </ul>
 
-<p><strong>Caution!</strong> Both the 4001 and 4070 ICs are <a href=&quot;https://www.allaboutcircuits.com/textbook/digital/chpt-3/cmos-gate-circuitry/&quot; target=&quot;_blank&quot;>complementary metal-oxide semiconductors (CMOS)</a> and, therefore, sensitive to <a href=&quot;https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/static-electricity/&quot; target=&quot;_blank&quot;>static electricity</a>!</p>
+<p><strong>Caution!</strong> Both the 4001 and 4070 ICs are complementary metal-oxide semiconductors (CMOS) and, therefore, sensitive to static electricity!</p>
 <p>This experiment may be built using only one 8-position DIP switch, but the concept is easier to understand if two switch assemblies are used. The idea is that one switch holds the correct code for unlocking the lock while the other switch serves as a data entry point for the person trying to open the lock.</p>
 <p>In real life, of course, the switch assembly with the key&nbsp;code set on it must be hidden from the sight of the person opening the lock, which means it must be physically located <em>elsewhere</em> from where the data entry switch assembly is. This requires two switch assemblies.&nbsp;However, if you understand this concept clearly, you may build a working circuit with only one 8-position switch, using the left four switches for data entry and the right four switches to hold the key&nbsp;code.</p>
 <p>For extra effect, choose different LED colors: green for &quot;Go&quot; and red for &quot;No Go.&quot;</p>
@@ -65,9 +65,9 @@
 <h2>Instructions</h2>
 <p><strong>Step 1: </strong>Build the circuit, as illustrated in Figure 1, with the matching schematic diagram of Figure 2.&nbsp;</p>
 <p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/simple-combination-lock-schematic-diagram.jpg&quot; /></p>
-<h4><em><strong>Figure 2.</strong>&nbsp;Schematic diagram of the digital combination lock with LED output indicators.</em></h4>
-
-<p>This circuit illustrates using <a href=&quot;https://www.allaboutcircuits.com/textbook/digital/chpt-3/multiple-input-gates/&quot; target=&quot;_blank&quot;>XOR (Exclusive-OR)</a> gates as bit <a href=&quot;https://www.allaboutcircuits.com/textbook/experiments/chpt-6/voltage-comparator/&quot; target=&quot;_blank&quot;>comparators</a>.</p>
+<em><strong>Figure 2.</strong>&nbsp;Schematic diagram of the digital combination lock with LED output indicators.</em><br>
+<br>
+<p>This circuit illustrates using XOR (Exclusive-OR) gates as bit comparators.</p>
 <p><strong>Step 2:&nbsp;</strong>Set the key code for the system by&nbsp;configuring the four key code switches.</p>
 <p><strong>Step 3:</strong>&nbsp;Set the data entry switches to match the key code. Then, press the&nbsp;ENTER&nbsp;button. The green &quot;Go&quot;<em>&nbsp;</em>LED should light up while the&nbsp;ENTER&nbsp;button is held down.</p>
 <p><strong>Step 4:</strong>&nbsp;Set the data entry switches to a configuration different from&nbsp;the key code. Then, press the&nbsp;ENTER&nbsp;button. The red &quot;No Go&quot;<em>&nbsp;</em>LED should light up while the&nbsp;ENTER&nbsp;button is held down.</p>
@@ -112,8 +112,8 @@
 </table><br>
 <br>
 <br>
-<p>The four XOR gates&rsquo; output terminals are connected through a diode network which functions logically as a four-input OR gate. If <em>any</em> of the four XOR gates outputs a high (1)&nbsp;signal&mdash;indicating that the entered code and the key code are not identical&mdash;then a high (1)&nbsp;signal will be passed on to the input of the <a href=&quot;https://www.allaboutcircuits.com/textbook/digital/chpt-3/ttl-nor-and-or-gates/&quot; target=&quot;_blank&quot;>NOR gate logic</a>.&nbsp;If the two 4-bit codes are identical, then none of the XOR gate outputs will be high (1),&nbsp;and the <a href=&quot;https://eepower.com/resistor-guide/resistor-applications/pull-up-resistor-pull-down-resistor/&quot; target=&quot;_blank&quot;>pulldown resistor</a> connected to the common sides of the diodes will provide a low (0)&nbsp;signal state to the NOR logic.</p>
-<p>The <a href=&quot;https://www.allaboutcircuits.com/textbook/digital/chpt-3/ttl-nor-and-or-gates/&quot; target=&quot;_blank&quot;>NOR gate</a> logic performs a simple task: prevent either of the LEDs from turning on if the ENTER pushbutton is not pressed. Only when this pushbutton is pressed can either of the LEDs energize.</p>
+<p>The four XOR gates&rsquo; output terminals are connected through a diode network which functions logically as a four-input OR gate. If <em>any</em> of the four XOR gates outputs a high (1)&nbsp;signal&mdash;indicating that the entered code and the key code are not identical&mdash;then a high (1)&nbsp;signal will be passed on to the input of the NOR gate logic.&nbsp;If the two 4-bit codes are identical, then none of the XOR gate outputs will be high (1),&nbsp;and the pulldown resistor connected to the common sides of the diodes will provide a low (0)&nbsp;signal state to the NOR logic.</p>
+<p>The NOR gate logic performs a simple task: prevent either of the LEDs from turning on if the ENTER pushbutton is not pressed. Only when this pushbutton is pressed can either of the LEDs energize.</p>
 <p>If the ENTER switch is pressed and the XOR outputs are all low,&nbsp;the &quot;Go&quot;&nbsp;LED will light up, indicating that the correct code has been entered.&nbsp;If the ENTER switch is pressed and any of the XOR outputs are high (1),&nbsp;the &quot;No Go&quot;&nbsp;LED will light up, indicating that an incorrect code has been entered.</p>
 <p>Again, if this were a real security system, it would be wise to have the &quot;No Go&quot; output do something that deters an unauthorized person from discovering the correct code by trial and error. In other words, there should be some&nbsp;<em>penalty</em> for entering an incorrect code. Let your imagination guide your design of this detail!</p>
 

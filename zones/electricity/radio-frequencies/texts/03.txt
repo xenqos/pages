@@ -6,7 +6,7 @@
 <p>The Fourier transform is the mathematical path that leads to this alternative paradigm, because it provides a precise method of describing a signal according to its <em>frequency content</em>.</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/RFT_ch1_pg2_1.JPG" /></p>
-#### <em>This diagram shows some of the frequency content (red) in a square wave (blue).</em>
+<em>This diagram shows some of the frequency content (red) in a square wave (blue).</em>
 
 <p>In the context of RF, the Fourier transform can take extremely complex signal variations and translate them into frequency-domain components that are far more informative than the original time-domain waveform.</p>
 <p>The details involved in computing the Fourier transform or the discrete Fourier transform (DFT) are not trivial; however, this is not something we have to worry about at this point. You can understand and employ frequency-domain techniques even if you know very little about the underlying mathematical procedures.</p>

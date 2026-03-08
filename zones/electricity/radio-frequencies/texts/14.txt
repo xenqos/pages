@@ -11,7 +11,7 @@
 <p>In RF communication, the situation is very similar. A device modulates electrical waves according to a predefined system called a modulation scheme (or modulation technique). Just as there are many human languages, there are many ways in which a carrier can be modulated.</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/RFT_ch4_pg1_satellite.jpg" /></p>
-#### <em>Sophisticated modulation schemes help modern RF systems to achieve increased range and improved immunity to interference.</em>
+<em>Sophisticated modulation schemes help modern RF systems to achieve increased range and improved immunity to interference.</em>
 
 <p>It is possible that certain human languages are especially effective in conveying certain types of information; to take an example from the ancient world, perhaps Greek was better for philosophy and Latin was better for codifying laws. There is no doubt, however, that reliable communication is possible with any properly developed language, <em>as long as the speaker and the listener both know it</em>. The same is true for RF systems. Each modulation scheme has its advantages and disadvantages, but all can provide excellent wireless communication if the fundamental requirement is fulfilled&mdash;i.e., the receiver must be able to understand what the transmitter is saying.</p>
 ## Amplitude, Frequency, Phase

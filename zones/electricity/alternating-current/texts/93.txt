@@ -1,5 +1,5 @@
 # Standing Waves and Resonance
-<p>Whenever there is a mismatch of impedance between transmission line and load, reflections will occur. If the incident signal is a continuous <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-1/ac-waveforms/" title="">AC waveform</a>, these reflections will mix with more of the oncoming incident waveform to produce stationary waveforms called <em>standing waves</em>.</p>
+<p>Whenever there is a mismatch of impedance between transmission line and load, reflections will occur. If the incident signal is a continuous AC waveform, these reflections will mix with more of the oncoming incident waveform to produce stationary waveforms called <em>standing waves</em>.</p>
 <p>The following illustration shows how a triangle-shaped incident waveform turns into a mirror-image reflection upon reaching the line&rsquo;s unterminated end. The transmission line in this illustrative sequence is shown as a single, thick line rather than a pair of wires, for simplicity&rsquo;s sake.</p>
 <p>The incident wave is shown traveling from left to right, while the reflected wave travels from right to left: (Figure below)</p>
 

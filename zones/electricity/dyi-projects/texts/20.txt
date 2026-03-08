@@ -1,29 +1,29 @@
 # DC Lab - Precision Potentiometer
 ## Project Overview
-<p>This project is useful to those who want a precision <a href="https://eepower.com/resistor-guide/resistor-types/potentiometer/" target="_blank">potentiometer</a> without spending much money. Completing this project will provide you with a handy component to use in your lab.</p>
-<p>Ordinarily, multi-turn potentiometers are used to obtain precise <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-6/current-divider-circuits/" target="_blank">voltage division ratios</a>, but a cheaper alternative exists using multiple, single-turn (sometimes called 3/4-turn) potentiometers connected together in a compound divider network, as illustrated in Figure 1.&nbsp;</p>
+<p>This project is useful to those who want a precision potentiometer without spending much money. Completing this project will provide you with a handy component to use in your lab.</p>
+<p>Ordinarily, multi-turn potentiometers are used to obtain precise voltage division ratios, but a cheaper alternative exists using multiple, single-turn (sometimes called 3/4-turn) potentiometers connected together in a compound divider network, as illustrated in Figure 1.&nbsp;</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/precision-potentiometer-illustration.jpg" /></p>
-#### <em><strong>Figure 1.</strong> A&nbsp;precision potentiometer built from three lower precision potentiometers.</em>
+<em><strong>Figure 1.</strong> A&nbsp;precision potentiometer built from three lower precision potentiometers.</em>
 
 <p>Since&nbsp;this is a useful project, it is&nbsp;recommended to build it permanently using some form of project enclosure.</p>
 
 ## Parts and Materials
 <ul>
-<li>Two single-turn, <a href="https://eepower.com/resistor-guide/resistor-types/potentiometer-taper/" target="_blank">linear-taper potentiometers</a>, 5 k&Omega; each</li>
+<li>Two single-turn, linear-taper potentiometers, 5 k&Omega; each</li>
 <li>One single-turn, linear-taper potentiometer, 50 k&Omega;&nbsp;</li>
 <li>Plastic or metal mounting box</li>
 <li>Three &ldquo;banana&rdquo; jack style binding posts, or other terminal hardware, for connection to potentiometer circuit</li>
 <li>Soldering iron and solder</li>
 </ul>
 <p>Electronics suppliers often offer nice project boxes, but boxes purchased at a general hardware store can be much less expensive, though they may be&nbsp;a bit ugly. However, the ultimate in low cost for a new box is the plastic boxes sold as light switches and receptacle boxes for household electrical wiring.</p>
-<p>&ldquo;Banana&rdquo; jacks allow for the temporary connection of test leads and jumper wires equipped with matching &ldquo;banana&rdquo; plug ends.&nbsp;Most <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-8/multimeters/" target="_blank">multimeter</a> test leads have this style of plug for insertion into the meter jacks.&nbsp;Banana plugs are so named because of their oblong appearance formed by spring steel strips, which maintain firm contact with the jack walls when inserted.</p>
+<p>&ldquo;Banana&rdquo; jacks allow for the temporary connection of test leads and jumper wires equipped with matching &ldquo;banana&rdquo; plug ends.&nbsp;Most multimeter test leads have this style of plug for insertion into the meter jacks.&nbsp;Banana plugs are so named because of their oblong appearance formed by spring steel strips, which maintain firm contact with the jack walls when inserted.</p>
 <p>Some banana jacks are called <em>binding posts</em> because they also allow plain wires to be firmly attached.&nbsp;Binding posts have screw-on sleeves that fit over a metal post. The sleeve is used as a nut to secure a wire wrapped around the post or inserted through a perpendicular hole drilled through the post. A brief inspection of any binding post will clarify this verbal description.</p>
 
 ## Learning Objectives
 <ul>
 <li>Demonstrate potentiometer function and operation</li>
-<li>Practice <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/building-simple-resistor-circuits/" target="_blank">soldering</a></li>
+<li>Practice soldering</li>
 <li>Understand circuit parameter interactions</li>
 </ul>
 
@@ -31,11 +31,11 @@
 <p><strong>Step 1: </strong>Build the precision potentiometer port of the circuit, shown inside the box of&nbsp;Figure 1 and represented by the portion of the schematic diagram of Figure 2, inside the orange dotted lines.</p>
 
 <p><img src="https://www.allaboutcircuits.com/uploads/articles/precision-potentiometer-schematic-diagram.jpg" /></p>
-#### <em><strong>Figure 2.</strong> Schematic diagram of the precision potentiometer circuit.</em>
+<em><strong>Figure 2.</strong> Schematic diagram of the precision potentiometer circuit.</em>
 
 <p>Since the potentiometer&#39;s action is dependent on resistance, the resistance of all wiring connections must be carefully kept to a minimum. Therefore, for this project, it is essential that the connecting wires be soldered to the potentiometer terminals, not twisted or taped.&nbsp;Soldering ensures a condition of low resistance between joined conductors and also provides&nbsp;good mechanical strength for the connections.</p>
 <p><strong>Step 2:&nbsp;</strong>After assembling the circuit, connect a 6 V battery to the outer two binding posts.</p>
-<p><strong>Step 3:&nbsp;</strong>Connect a <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-2/voltage-usage/" target="_blank">voltmeter</a> between the &ldquo;wiper&rdquo; post and the battery&rsquo;s negative (-) terminal. This voltmeter will measure the &ldquo;output&rdquo; of the circuit.</p>
+<p><strong>Step 3:&nbsp;</strong>Connect a voltmeter between the &ldquo;wiper&rdquo; post and the battery&rsquo;s negative (-) terminal. This voltmeter will measure the &ldquo;output&rdquo; of the circuit.</p>
 <p><strong>Step 4:&nbsp;</strong>Operating this potentiometer network is more complex than using a single potentiometer.&nbsp;The circuit works on the principle of compressed range: the voltage output range of this circuit, available by adjusting potentiometer R<sub>3,</sub>&nbsp;is restricted between the limits set by potentiometers R<sub>1</sub> and R<sub>2</sub>.&nbsp;In other words, if R<sub>1</sub> and R<sub>2</sub> were set to output 5 V and 3 V, respectively, from a 6 V battery, the range of output voltages obtainable by adjusting R<sub>3</sub> would be restricted from 3 to 5 V for the full rotation of that potentiometer.</p>
 <p>If only a single potentiometer is used instead of this three-potentiometer circuit, the full rotation would produce an output voltage from 0 V to full battery voltage.&nbsp;The &ldquo;range compression&rdquo; afforded by this circuit allows for more precise voltage adjustment than would be normally obtainable using a single potentiometer.</p>
 <p>To begin, turn the R<sub>3</sub> potentiometer fully clockwise so that its wiper is in the full &ldquo;up&rdquo; position as referenced in the schematic diagram (electrically &ldquo;closest&rdquo; to R<sub>1</sub>&lsquo;s wiper terminal).</p>
