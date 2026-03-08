@@ -1,7 +1,7 @@
 # Complex Circuits
 <p>What do we do if we come across a circuit more complex than the simple <a href="https://www.allaboutcircuits.com/video-lectures/series-circuits-part-1/" target="_blank">series configurations</a> we&rsquo;ve seen so far? Take this circuit as an example:</p>
 
-<p><img src="/uploads/articles/complex-circuits-example1.jpg" /></p>
+^[120-01.jpg]
 
 <p>The simple time constant formula (&tau;=RC) is based on a simple series resistance connected to the capacitor. For that matter, the time constant formula for an inductive circuit (&tau;=L/R) is also based on the assumption of simple series resistance. So, what can we do in a situation like this, where resistors are connected in a series-parallel fashion with the capacitor (or inductor)?</p>
 ## Thevenin&rsquo;s Theorem
@@ -9,24 +9,24 @@
 <p>Then, once we&rsquo;ve determined the Thevenin equivalent circuit values, we&rsquo;ll re-connect the capacitor and solve for values of voltage or current over time as we&rsquo;ve been doing so far.</p>
 <p>After identifying the capacitor as the &ldquo;load,&rdquo; we remove it from the circuit and solve for voltage across the load terminals (assuming, of course, that the switch is closed):</p>
 
-<p><img src="/uploads/articles/thevenins-theorem-figure1.jpg" /></p>
-<p><img src="/uploads/articles/thevenins-theorem-table.jpg" /></p>
+^[120-02.jpg]
+^[120-03.jpg]
 
 <p>This step of the analysis tells us that the voltage across the load terminals (same as that across resistor R<sub>2</sub>) will be 1.8182 volts with no load connected. With a little reflection, it should be clear that this will be our final voltage across the <a href="https://www.allaboutcircuits.com/video-lectures/capacitors-part-1/" target="_blank">capacitor</a>, seeing as how a fully-charged capacitor acts like an open circuit, drawing zero current. We will use this voltage value for our Thevenin equivalent circuit source voltage.</p>
 <p>Now, to solve for our Thevenin resistance, we need to eliminate all power sources in the original circuit and calculate resistance as seen from the load terminals:</p>
 
-<p><img src="/uploads/articles/thevenins-theorem-figure2.jpg" /></p>
+^[120-04.jpg]
 
 <p>Re-drawing our circuit as a Thevenin equivalent, we get this:</p>
 
-<p><img src="/uploads/articles/complex-circuits-example2.jpg" /></p>
+^[120-05.jpg]
 
 <p>Our time constant for this circuit will be equal to the Thevenin resistance times the capacitance (&tau;=RC). With the above values, we calculate:</p>
-<p><img src="/uploads/articles/time-constant-circuit-equation.jpg" /></p>
+^[120-06.jpg]
 
 <p>Now, we can solve for voltage across the capacitor directly with our universal time constant formula. Let&rsquo;s calculate for a value of 60 milliseconds. Because this is a capacitive formula, we&rsquo;ll set our calculations up for voltage:</p>
 
-<p><img src="/uploads/articles/voltage-across-capacitor-calculation.jpg" /></p>
+^[120-07.jpg]
 
 <p>Again, because our starting value for capacitor voltage was assumed to be zero, the actual voltage across the capacitor at 60 milliseconds is equal to the amount of voltage change from zero, or 1.3325 volts.</p>
 <p>We could go a step further and demonstrate the equivalence of the Thevenin RC circuit and the original circuit through computer analysis. I will use the SPICE analysis program to demonstrate this:</p>

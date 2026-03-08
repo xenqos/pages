@@ -33,19 +33,22 @@
 
 <h1>Solving for Unknown Time</h1>
 <p>Sometimes it is necessary to determine the length of time that a reactive circuit will take to reach a predetermined value. This is especially true in cases where we&rsquo;re designing an <a href=&quot;https://www.allaboutcircuits.com/textbook/alternating-current/chpt-4/series-resistor-capacitor-circuits/&quot; target=&quot;_blank&quot;>RC</a> or <a href=&quot;https://www.allaboutcircuits.com/textbook/alternating-current/chpt-3/series-resistor-inductor-circuits/&quot; target=&quot;_blank&quot;>L/R</a> circuit to perform a precise timing function. To calculate this, we need to modify our &ldquo;Universal time constant formula.&rdquo; The original formula looks like this:</p>
-<p><img src=&quot;/uploads/articles/universal-time-constant-formula.jpg&quot; /></p>
+<a target='_blank' href='../images/121-01.jpg'><img class='clImageThumb' src='../images/121-01.jpg'></a>
 <h2>&nbsp;</h2>
 <h2>Solving for Time using Universal Time Constant</h2>
 <p>However, we want to solve for time, not the amount of change. To do this, we algebraically manipulate the formula so that time is all by itself on one side of the equal sign, with all the rest on the other side:</p>
-<p><img src=&quot;/uploads/articles/universal-time-constant-solving1_2.jpg&quot; /></p>
-<p><img src=&quot;/uploads/articles/universal-time-constant-solving2.png&quot; /></p>
+<a target='_blank' href='../images/121-02.jpg'><img class='clImageThumb' src='../images/121-02.jpg'></a><br>
+<a target='_blank' href='../images/121-03.png'><img class='clImageThumb' src='../images/121-03.png'></a><br>
+
 <p>The <em>ln</em> designation just to the right of the time constant term is the <em>natural logarithm</em> function: the exact reverse of taking the power of <em>e</em>. In fact, the two functions (powers of e and natural logarithms) can be related as such:</p>
 <p><em>If e<sup>x</sup> = a, then ln a = x.</em></p>
 <p>If e<sup>x</sup> = a, then the natural logarithm of a will give you x: the power that <em>e</em> must be raised to in order to produce <em>a</em>.</p>
 <p>Let&rsquo;s see how this all works on a real example circuit. Taking the same resistor-capacitor circuit from the beginning of the chapter, we can work &ldquo;backwards&rdquo; from previously determined values of voltage to find how long it took to get there.</p>
-<p><img src=&quot;/uploads/articles/resistor-capacitor-circuit-example.jpg&quot; /></p>
+<a target='_blank' href='../images/121-04.jpg'><img class='clImageThumb' src='../images/121-04.jpg'></a><br>
+
 <p>The time constant is still the same amount: 1 second (10 k&Omega; times 100 &micro;F), and the starting/final values remain unchanged as well (E<sub>C</sub> = 0 volts starting and 15 volts final). According to our chart at the beginning of the chapter, the capacitor would be charged to 12.970 volts at the end of 2 seconds. Let&rsquo;s plug 12.970 volts in as the &ldquo;Change&rdquo; for our new formula and see if we arrive at an answer of 2 seconds:</p>
-<p><img src=&quot;/uploads/articles/universal-time-constant-solving4.jpg&quot; /></p>
+<a target='_blank' href='../images/121-05.jpg'><img class='clImageThumb' src='../images/121-05.jpg'></a><br>
+
 <p>Indeed, we end up with a value of 2 seconds for the time it takes to go from 0 to 12.970 volts across the capacitor. This variation of the universal time constant formula will work for all capacitive and inductive circuits, both &ldquo;charging&rdquo; and &ldquo;discharging,&rdquo; provided the proper values of time constant, Start, Final, and Change are properly determined beforehand.</p>
 <p>Remember, the most important step in solving these problems is the initial set-up. After that, it&rsquo;s just a lot of button-pushing on your calculator!</p>
 <p><strong>REVIEW:</strong></p>
@@ -53,7 +56,7 @@
 <li>To determine the time it takes for an RC or L/R circuit to reach a certain value of voltage or current, you&rsquo;ll have to modify the universal time constant formula to solve for <em>time</em> instead of <em>change</em>.</li>
 </ul>
 
-<p><img src=&quot;/uploads/articles/universal-time-constant-solving3.png&quot; /></p>
+<a target='_blank' href='../images/121-06.png'><img class='clImageThumb' src='../images/121-06.png'></a>
 <ul>
 <li>The mathematical function for reversing an exponent of &ldquo;e&rdquo; is the natural logarithm (ln), provided on any scientific calculator.</li>
 </ul>

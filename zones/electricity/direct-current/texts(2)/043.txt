@@ -1,0 +1,79 @@
+# Voltage Divider Circuits
+<p>Let&rsquo;s analyze a simple <a href="https://www.allaboutcircuits.com/video-lectures/series-circuits-part-1/" target="_blank">series circuit</a> and determine the voltage drops across individual resistors:</p>
+<p><img src="/uploads/articles/series-circuit-diagram.jpg" /></p>
+<p><img src="/uploads/articles/circuit-resistance-table-1.jpg" /></p>
+<p>From the given values of individual resistances, we can determine a total circuit resistance, knowing that resistances add in series:</p>
+## Determine the Total Circuit Resistance
+<p><img src="/uploads/articles/circuit-resistance-table-2.jpg" /></p>
+<p>From here, we can use <a href="https://www.allaboutcircuits.com/video-lectures/electrical-quantities-b/" target="_blank">Ohm&rsquo;s Law</a> (I=E/R) to determine the total current, which we know will be the same as each resistor current, currents being equal in all parts of a series circuit:</p>
+<p><img src="/uploads/articles/circuit-resistance-table-3.jpg" /></p>
+## Use Ohm&rsquo;s Law to Calculate Current
+<p>Now, knowing that the circuit current is 2 mA, we can use Ohm&rsquo;s Law (E=IR) to calculate the voltage across each <a href="https://www.allaboutcircuits.com/video-lectures/electronic-components-resistors/" target="_blank">resistor</a>:</p>
+<p><img src="/uploads/articles/circuit-resistance-table-4.jpg" /></p>
+<p>It should be apparent that the voltage drop across each resistor is proportional to its resistance, given that the current is the same through all resistors. Notice how the voltage across R<sub>2</sub> is double that of the voltage across R<sub>1</sub>, just as the resistance of R<sub>2</sub> is double that of R<sub>1</sub>.</p>
+<p>If we were to change the total voltage, we would find this proportionality of voltage drops remains constant:</p>
+<p><img src="/uploads/articles/circuit-resistance-table-5.jpg" /></p>
+## Solving for Voltage Drop Ratios
+<p>The voltage across R<sub>2</sub> is still exactly twice that of R<sub>1</sub>&lsquo;s drop, despite the fact that the source voltage has changed. The proportionality of voltage drops (ratio of one to another) is strictly a function of resistance values.</p>
+<p>With a little more observation, it becomes apparent that the voltage drop across each resistor is also a fixed proportion of the supply voltage. The voltage across R<sub>1</sub>, for example, was 10 volts when the battery supply was 45 volts. When the battery voltage was increased to 180 volts (4 times as much), the voltage drop across R<sub>1</sub> also increased by a factor of 4 (from 10 to 40 volts). The <em>ratio</em> between R<sub>1</sub>&lsquo;s voltage drop and total voltage, however, did not change:</p>
+<p><img src="/uploads/articles/voltage-drop-ratios-equation-1.png" /></p>
+<p>Likewise, none of the other voltage drop ratios changed with the increased supply voltage either:</p>
+<p><img src="/uploads/articles/voltage-drop-ratios-equation-2.png" /></p>
+## Voltage Divider Formula
+<p>For this reason, a series circuit is often called a <em><a href="https://www.allaboutcircuits.com/video-lectures/series-circuits-voltage-divider-equation/" target="_blank">voltage divider</a></em> for its ability to proportion&mdash;or divide&mdash;the total voltage into fractional portions of constant ratio. With a little bit of algebra, we can derive a formula for determining series resistor voltage drop given nothing more than total voltage, individual resistance, and total resistance:</p>
+<p><img src="/uploads/articles/voltage-divider-formula.png" /></p>
+<p>The ratio of individual resistance to total resistance is the same as the ratio of individual voltage drop to the total supply voltage in a voltage divider circuit. This is known as the <em>voltage divider formula</em>, and it is a short-cut method for determining voltage drop in a series circuit without going through the current calculations of Ohm&rsquo;s Law.</p>
+### Example of Using Voltage Divider Formula
+<p>Using this formula, we can re-analyze the example circuit&rsquo;s voltage drops in fewer steps:</p>
+<p><img src="/uploads/articles/series-circuit-diagram.jpg" /></p>
+<p><img src="/uploads/articles/example-using-voltage-divider-formula.png" /></p>
+### Voltage - Dividing Components
+<p>Voltage dividers find wide application in electric meter circuits, where specific combinations of series resistors are used to &ldquo;divide&rdquo; a voltage into precise proportions as part of a voltage measurement device.</p>
+<p><img src="/uploads/articles/voltage-dividing-components.jpg" /></p>
+### Potentiometers as Voltage-Dividing Components
+<p>One device frequently used as a voltage-dividing component is the <em>potentiometer</em>, which is a resistor with a movable element positioned by a manual knob or lever. The movable element, typically called a <em>wiper</em>, makes contact with a resistive strip of material (commonly called the <em>slidewire</em> if it is made of resistive metal wire) at any point selected by the manual control:</p>
+<p><img src="/uploads/articles/potentiometer.jpg" /></p>
+<p>The wiper contact is the left-facing arrow symbol drawn in the middle of the vertical resistor element. As it is moved up, it contacts the resistive strip closer to terminal 1 and further away from terminal 2, lowering resistance to terminal 1 and raising resistance to terminal 2. As it is moved down, the opposite effect results. The resistance as measured between terminals 1 and 2 is constant for any wiper position.</p>
+<p><img src="/uploads/articles/potentiometer-diagram-2.jpg" /></p>
+## Rotary vs. Linear Potentiometers
+<p>Shown here are internal illustrations of two potentiometer types, rotary and linear.</p>
+### Linear Potentiometers
+<p><img src="/uploads/articles/linear-potentiometer-construction.jpg" /></p>
+<p>Some linear potentiometers are actuated by straight-line motion of a lever or slide button. Others, like the one depicted in the previous illustration, are actuated by a turn-screw for fine adjustment ability. The latter units are sometimes referred to as <em>trimpots</em> because they work well for applications requiring a variable resistance to be &ldquo;trimmed&rdquo; to some precise value.</p>
+<p>It should be noted that not all linear potentiometers have the same terminal assignments as shown in this illustration. With some, the wiper terminal is in the middle, between the two end terminals.</p>
+### Rotary Potentiometer
+<p>The image below shows the body construction of a rotary potentiometer.</p>
+<p><img src="/uploads/articles/rotary-potentiometer.jpg" /></p>
+<p>The following photograph shows a real, rotary potentiometer with exposed wiper and slidewire for easy viewing. The shaft which moves the wiper has been turned almost fully clockwise so that the wiper is nearly touching the left terminal end of the slidewire:</p>
+
+<p><img src="/uploads/articles/rotary-potentiometer-with-exposed-wiper-and-slidewire.jpg" /></p>
+
+<p>Here is the same potentiometer with the wiper shaft moved almost to the fully counterclockwise position so that the wiper is near the other extreme end of travel:</p>
+
+<p><img src="/uploads/articles/potentiometer-with-wiper-shaft-full-counterclockwise.jpg" /></p>
+### &nbsp;
+### Effects of Adjustments in a Potentiometer in a Circuit
+<p>If a constant voltage is applied between the outer terminals (across the length of the slidewire), the wiper position will tap off a fraction of the applied voltage, measurable between the wiper contact and either of the other two terminals. The fractional value depends entirely on the physical position of the wiper:</p>
+
+<p><img src="/uploads/articles/potentiometer-as-variable-voltage-divider.jpg" /></p>
+## &nbsp;
+## The Importance of Potentiometer Application
+<p>Just like the fixed voltage divider, the potentiometer&rsquo;s voltage <em>division ratio</em> is strictly a function of resistance and not of the magnitude of the applied voltage. In other words, if the potentiometer knob or lever is moved to the 50 percent (exact center) position, the voltage dropped between the wiper and either outside terminal would be exactly 1/2 of the applied voltage, no matter what that voltage happens to be, or what the end-to-end resistance of the potentiometer is. In other words, a potentiometer functions as a variable voltage divider where the voltage division ratio is set by wiper position.</p>
+<p>This application of the potentiometer is a very useful means of obtaining a variable voltage from a fixed-voltage source such as a battery. If a circuit you&rsquo;re building requires a certain amount of voltage that is less than the value of an available battery&rsquo;s voltage, you may connect the outer terminals of a potentiometer across that battery and &ldquo;dial-up&rdquo; whatever voltage you need between the potentiometer wiper and one of the outer terminals for use in your circuit:</p>
+<p><img src="/uploads/articles/potentiometer-application.jpg" /></p>
+<p>When used in this manner, the name <em>potentiometer</em> makes perfect sense: they <em>meter</em> (control) the <em>potential</em>(voltage) applied across them by creating a variable voltage-divider ratio. This use of the three-terminal potentiometer as a variable voltage divider is very popular in circuit design.</p>
+### Samples of Small Potentiometers
+<p>Shown here are several small potentiometers of the kind commonly used in consumer electronic equipment and by hobbyists and students in constructing circuits:</p>
+
+<p><img src="/uploads/articles/small-potentiometers-sample.jpg" /></p>
+
+<p>The smaller units on the very left and very right are designed to plug into a solderless breadboard or be soldered into a printed circuit board. The middle units are designed to be mounted on a flat panel with wires soldered to each of the three terminals. Here are three more potentiometers, more specialized than the set just shown:</p>
+
+<p><img src="/uploads/articles/large-helipot.jpg" /></p>
+
+<p>The large &ldquo;Helipot&rdquo; unit is a laboratory potentiometer designed for quick and easy connection to a circuit. The unit in the lower-left corner of the photograph is the same type of potentiometer, just without a case or 10-turn counting dial. Both of these potentiometers are precision units, using multi-turn helical-track resistance strips and wiper mechanisms for making small adjustments. The unit on the lower-right is a panel-mount potentiometer, designed for rough service in industrial applications.</p>
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li>Series circuits proportion, or <em>divide</em>, the total supply voltage among individual voltage drops, the proportions being strictly dependent upon resistances: ERn = ETotal (Rn / RTotal)</li>
+<li>A potentiometer is a variable-resistance component with three connection points, frequently used as an adjustable voltage divider.</li>
+</ul>

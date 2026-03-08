@@ -5,29 +5,29 @@
 <p>Armed with this information, let&rsquo;s now take a look at an example of the law in practice, why it&rsquo;s important, and how it was derived.</p>
 ## Parallel Circuit Review
 <p>Let&rsquo;s take a closer look at that last parallel example circuit:</p>
-<p><img src="/uploads/articles/parallel-circuit-example.jpg" /></p>
+^[046-01.jpg]
 <p>Solving for all values of voltage and current in this circuit:</p>
-<p><img src="/uploads/articles/voltage-current-values.jpg" /></p>
+^[046-02.jpg]
 <p>At this point, we know the value of each branch current and of the total current in the circuit. We know that the total current in a <a href="https://www.allaboutcircuits.com/video-lectures/parallel-circuits/" target="_blank">parallel circuit</a> must equal the sum of the branch currents, but there&rsquo;s more going on in this circuit than just that. Taking a look at the currents at each wire junction point (node) in the circuit, we should be able to see something else:</p>
-<p><img src="/uploads/articles/parallel-circuit-example-2.jpg" /></p>
+^[046-03.jpg]
 
 ## Currents Entering and Exiting a Node
 <p>At each node on the positive &ldquo;rail&rdquo; (wire 1-2-3-4) we have current splitting off the main flow to each successive branch resistor. At each node on the negative &ldquo;rail&rdquo; (wire 8-7-6-5) we have current merging together to form the main flow from each successive branch <a href="https://www.allaboutcircuits.com/video-lectures/electronic-components-resistors/" target="_blank">resistor</a>. This fact should be fairly obvious if you think of the water pipe circuit analogy with every branch node acting as a &ldquo;tee&rdquo; fitting, the water flow splitting or merging with the main piping as it travels from the output of the water pump toward the return reservoir or sump.</p>
 <p>If we were to take a closer look at one particular &ldquo;tee&rdquo; node, such as node 6, we see that the current entering the node is equal in magnitude to the current exiting the node:</p>
-<p><img src="/uploads/articles/tee-node.jpg" /></p>
+^[046-04.jpg]
 <p>From the top and from the right, we have two currents entering the wire connection labeled as node 6. To the left, we have a single current exiting the node equal in magnitude to the sum of the two currents entering. To refer to the plumbing analogy: so long as there are no leaks in the piping, what flow enters the fitting must also exit the fitting. This holds true for any node (&ldquo;fitting&rdquo;), no matter how many flows are entering or exiting. Mathematically, we can express this general relationship as such:</p>
-<p><img src="/uploads/articles/exiting-equals-entering.png" /></p>
+^[046-05.png]
 
 ## Kirchhoff&rsquo;s Current Law
 <p>Mr. Kirchhoff decided to express it in a slightly different form (though mathematically equivalent), calling it <em>Kirchhoff&rsquo;s Current Law</em> (KCL):</p>
 
-<p><img src="/uploads/articles/kirchhoffs-current-law.png" /></p>
+^[046-06.png]
 
 <p>Summarized in a phrase, Kirchhoff&rsquo;s Current Law reads as such:</p>
 <p><strong><em>&ldquo;The algebraic sum of all currents entering and exiting a node must equal zero&rdquo;</em></strong></p>
 <p>That is, if we assign a mathematical sign (polarity) to each current, denoting whether they enter (+) or exit (-) a node, we can add them together to arrive at a total of zero, guaranteed.</p>
 <p>Taking our example node (number 6), we can determine the magnitude of the current exiting from the left by setting up a KCL equation with that current as the unknown value:</p>
-<p><img src="/uploads/articles/algebraic-sum-of-all-currents.png" /></p>
+^[046-07.png]
 
 <p>The negative (-) sign on the value of 5 milliamps tells us that the current is <em>exiting</em> the node, as opposed to the 2 milliamp and 3 milliamp currents, which must both be positive (and therefore <em>entering</em> the node). Whether negative or positive denotes current entering or exiting is entirely arbitrary, so long as they are opposite signs for opposite directions and we stay consistent in our notation, KCL will work.</p>
 <p>Together, Kirchhoff&rsquo;s Voltage and Current Laws are a formidable pair of tools useful in analyzing electric circuits. Their usefulness will become all the more apparent in a later chapter (&ldquo;<a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-10/what-is-network-analysis/" target="_blank">Network Analysis</a>&rdquo;), but suffice it to say that these Laws deserve to be memorized by the electronics student every bit as much as <a href="https://www.allaboutcircuits.com/video-lectures/electrical-quantities-b/" target="_blank">Ohm&rsquo;s Law</a>.</p>

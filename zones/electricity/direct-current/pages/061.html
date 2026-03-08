@@ -36,15 +36,18 @@
 
 <h2>Wheatstone Bridge</h2>
 <p>The standard bridge circuit, often called a <em>Wheatstone bridge</em>, looks something like this:</p>
-<p><img src=&quot;/uploads/articles/wheatstone-bridge.jpg&quot; /></p>
+<a target='_blank' href='../images/061-01.jpg'><img class='clImageThumb' src='../images/061-01.jpg'></a><br>
+
 <br>
 <p>When the voltage between point 1 and the negative side of the battery is equal to the voltage between point 2 and the negative side of the battery, the null detector will indicate zero and the bridge is said to be &ldquo;balanced.&rdquo; The bridge&rsquo;s state of balance is solely dependent on the ratios of R<sub>a</sub>/R<sub>b</sub> and R<sub>1</sub>/R<sub>2</sub>, and is quite independent of the supply voltage (battery).</p>
 <p>To measure resistance with a Wheatstone bridge, an unknown resistance is connected in the place of R<sub>a</sub> or R<sub>b</sub>, while the other three resistors are precision devices of known value. Either of the other three resistors can be replaced or adjusted until the bridge is balanced, and when balance has been reached the unknown <a href=&quot;https://www.allaboutcircuits.com/video-lectures/electronic-components-resistors/&quot; target=&quot;_blank&quot;>resistor</a> value can be determined from the ratios of the known resistances.</p>
 <p>A requirement for this to be a measurement system is to have a set of variable resistors available whose resistances are precisely known, to serve as reference standards. For example, if we connect a bridge circuit to measure an unknown resistance R<sub>x</sub>, we will have to know the <em>exact</em> values of the other three resistors at balance to determine the value of R<sub>x</sub>:</p>
-<p><img src=&quot;/uploads/articles/wheatstone-bridge-example.jpg&quot; /></p>
+<a target='_blank' href='../images/061-02.jpg'><img class='clImageThumb' src='../images/061-02.jpg'></a><br>
+
 <p>Each of the four resistances in a bridge circuit are referred to as <em>arms</em>. The resistor in series with the unknown resistance R<sub>x</sub> (this would be R<sub>a</sub> in the above schematic) is commonly called the <em><a href=&quot;https://www.allaboutcircuits.com/video-lectures/electronic-components-resistors/&quot; target=&quot;_blank&quot;>rheostat</a></em> of the bridge, while the other two resistors are called the <em>ratio</em> arms of the bridge.</p>
 <p>Accurate and stable resistance standards, thankfully, are not that difficult to construct. In fact, they were some of the first electrical &ldquo;standard&rdquo; devices made for scientific purposes. Here is a photograph of an antique resistance standard unit:</p>
-<p><img src=&quot;/uploads/articles/antique-resistance-standard-unit.jpg&quot; /></p>
+<a target='_blank' href='../images/061-03.jpg'><img class='clImageThumb' src='../images/061-03.jpg'></a><br>
+
 <p>This resistance standard shown here is variable in discrete steps: the amount of resistance between the connection terminals could be varied with the number and pattern of removable copper plugs inserted into sockets.</p>
 <p>Wheatstone bridges are considered a superior means of resistance measurement to the series battery-movement-resistor meter circuit discussed in the last section. Unlike that circuit, with all its nonlinearities (nonlinear scale) and associated inaccuracies, the bridge circuit is linear (the mathematics describing its operation are based on simple ratios and proportions) and quite accurate.</p>
 <p>Given standard resistances of sufficient precision and a null detector device of sufficient sensitivity, resistance measurement accuracies of at least +/- 0.05% are attainable with a Wheatstone bridge. It is the preferred method of resistance measurement in calibration laboratories due to its high accuracy.</p>
@@ -52,23 +55,31 @@
 
 <h2>Kelvin Double Bridge</h2>
 <p>An interesting variation of the Wheatstone bridge is the <em>Kelvin Double bridge</em>, used for measuring very low resistances (typically less than 1/10 of an ohm). Its schematic diagram is as such:</p>
-<p><img src=&quot;/uploads/articles/kelvin-double-bridge.jpg&quot; /></p>
+<a target='_blank' href='../images/061-04.jpg'><img class='clImageThumb' src='../images/061-04.jpg'></a><br>
+
 <p>The low-value resistors are represented by thick-line symbols, and the wires connecting them to the voltage source (carrying high current) are likewise drawn thickly in the schematic. This oddly-configured bridge is perhaps best understood by beginning with a standard Wheatstone bridge set up for measuring low resistance, and evolving it step-by-step into its final form in an effort to overcome certain problems encountered in the standard Wheatstone configuration. If we were to use a standard Wheatstone bridge to measure low resistance, it would look something like this:</p>
-<p><img src=&quot;/uploads/articles/wheatstone-bridge-measure-low-resistance.jpg&quot; /></p>
+<a target='_blank' href='../images/061-05.jpg'><img class='clImageThumb' src='../images/061-05.jpg'></a><br>
+
 <p>When the null detector indicates zero voltage, we know that the bridge is balanced and that the ratios R<sub>a</sub>/R<sub>x</sub> and R<sub>M</sub>/R<sub>N</sub> are mathematically equal to each other. Knowing the values of Ra, R<sub>M</sub>, and R<sub>N</sub>&nbsp;provides us with the necessary data to solve for R<sub>x</sub>...almost.</p>
 <p>We have a problem in that the connections and connecting wires between R<sub>a</sub> and R<sub>x</sub> possess resistance as well, and this stray resistance may be substantial compared to the low resistances of R<sub>a</sub> and R<sub>x</sub>. These stray resistances will drop substantial voltage, given the high current through them, and thus will affect the null detector&rsquo;s indication and thus the balance of the bridge:</p>
-<p><img src=&quot;/uploads/articles/wheatstone-bridge-measure-low-resistance-example1.jpg&quot; /></p>
+<a target='_blank' href='../images/061-06.jpg'><img class='clImageThumb' src='../images/061-06.jpg'></a><br>
+
 <p>Since we don&rsquo;t want to measure these stray wire and connection resistances but only measure R<sub>x</sub>, we must find some way to connect the null detector so that it won&rsquo;t be influenced by voltage dropped across them. If we connect the null detector and R<sub>M</sub>/R<sub>N</sub> ratio arms directly across the ends of R<sub>a</sub> and R<sub>x</sub>, this gets us closer to a practical solution:</p>
-<p><img src=&quot;/uploads/articles/wheatstone-bridge-null-detector-example1.jpg&quot; /></p>
+<a target='_blank' href='../images/061-07.jpg'><img class='clImageThumb' src='../images/061-07.jpg'></a><br>
+
 <p>Now the top two E<sub>wire</sub> voltage drops do not affect the null detector and do not influence the accuracy of R<sub>x</sub>&lsquo;s resistance measurement. However, the two remaining E<sub>wire</sub> voltage drops will cause problems, as the wire connecting the lower end of R<sub>a</sub> with the top end of R<sub>x</sub> is now shunting across those two voltage drops, and will conduct substantial current, introducing stray voltage drops along its own length as well.</p>
 <p>Knowing that the left side of the null detector must connect to the two near ends of R<sub>a</sub> and R<sub>x</sub> to avoid introducing those E<sub>wire</sub> voltage drops into the null detector&rsquo;s loop and that any direct wire connecting those ends of R<sub>a</sub> and R<sub>x</sub> will itself carry substantial current and create more stray voltage drops, the only way out of this predicament is to make the connecting path between the lower end of R<sub>a</sub> and the upper end of R<sub>x</sub> substantially resistive:</p>
-<p><img src=&quot;/uploads/articles/wheatstone-bridge-null-detector-example2.jpg&quot; /></p>
+<a target='_blank' href='../images/061-08.jpg'><img class='clImageThumb' src='../images/061-08.jpg'></a><br>
+
 <p>We can manage the stray voltage drops between R<sub>a</sub> and R<sub>x</sub> by sizing the two new resistors so that their upper to lower ratio is the same as the two ratio arms on the other side of the null detector. This is why these resistors were labeled R<sub>m</sub> and R<sub>n</sub> in the original Kelvin Double bridge schematic: to signify their proportionality with R<sub>M</sub> and R<sub>N</sub>.</p>
-<p><img src=&quot;/uploads/articles/kelvin-double-bridge.jpg&quot; /></p>
+<a target='_blank' href='../images/061-09.jpg'><img class='clImageThumb' src='../images/061-09.jpg'></a><br>
+
 <p>With ratio R<sub>m</sub>/R<sub>n</sub> set equal to ratio R<sub>M</sub>/R<sub>N</sub>, rheostat arm resistor R<sub>a</sub> is adjusted until the null detector indicates balance, and then we can say that R<sub>a</sub>/R<sub>x</sub> is equal to R<sub>M</sub>/R<sub>N</sub>, or simply find R<sub>x</sub> by the following equation:</p>
-<p><img src=&quot;/uploads/articles/kelvin-double-bridge-equation.png&quot; /></p>
+<a target='_blank' href='../images/061-10.png'><img class='clImageThumb' src='../images/061-10.png'></a><br>
+
 <p>The actual balance equation of the Kelvin Double bridge is as follows (R<sub>wire</sub> is the resistance of the thick, connecting wire between the low-resistance standard R<sub>a</sub> and the test resistance R<sub>x</sub>):</p>
-<p><img src=&quot;/uploads/articles/kelvin-double-bridge-equation1.png&quot; /></p>
+<a target='_blank' href='../images/061-11.png'><img class='clImageThumb' src='../images/061-11.png'></a><br>
+
 <p>So long as the ratio between R<sub>M</sub> and R<sub>N</sub> is equal to the ratio between Rm and Rn, the balance equation is no more complex than that of a regular Wheatstone bridge, with R<sub>x</sub>/R<sub>a</sub> equal to R<sub>N</sub>/R<sub>M</sub>, because the last term in the equation will be zero, canceling the effects of all resistances except R<sub>x</sub>, R<sub>a</sub>, R<sub>M</sub>, and R<sub>N</sub>.</p>
 <p>In many Kelvin Double bridge circuits, R<sub>M&nbsp;</sub>= R<sub>m</sub> and R<sub>N&nbsp;</sub>=&nbsp;R<sub>n</sub>. However, the lower the resistances of R<sub>m</sub> and R<sub>n</sub>, the more sensitive the null detector will be because there is less resistance in series with it. Increased detector sensitivity is good because it allows smaller imbalances to be detected and thus a finer degree of bridge balance to be attained.</p>
 <p>Therefore, some high-precision Kelvin Double bridges use R<sub>m</sub> and R<sub>n</sub> values as low as 1/100 of their ratio arm counterparts (R<sub>M</sub> and R<sub>N</sub>, respectively). Unfortunately, though, the lower the values of R<sub>m</sub> and R<sub>n</sub>, the more current they will carry, which will increase the effect of any junction resistances present where R<sub>m</sub> and R<sub>n</sub> connect to the ends of R<sub>a</sub> and R<sub>x</sub>. As you can see, high instrument accuracy demands that <em>all</em> error-producing factors be taken into account, and often the best that can be achieved is a compromise minimizing two or more different kinds of errors.</p>

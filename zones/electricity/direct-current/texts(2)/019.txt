@@ -1,0 +1,74 @@
+# Shock Current Path
+<p>As we&rsquo;ve already learned, electricity requires a complete path (circuit) to continuously flow. This is why the shock received from static electricity is only a momentary jolt: the flow of current is necessarily brief when static charges are equalized between two objects. Shocks of self-limited duration like this are rarely hazardous.</p>
+<p>Without two contact points on the body for current to enter and exit, respectively, there is no hazard of shock. This is why birds can safely rest on high-voltage power lines without getting shocked: they make contact with the circuit at only one point.</p>
+
+<p><img src="/uploads/articles/high-voltage-power-without-bird-getting-shocked.jpg" /></p>
+
+<p><a name="Voltage"></a><a name="Electrically common points"></a><a name="Points, electrically common"></a> In order for current to flow through a <a href="https://www.allaboutcircuits.com/video-lectures/wire-and-cable/" target="_blank">conductor</a>, there must be a voltage present to motivate it. Voltage, as you should recall, is <em>always relative between two points</em>. There is no such thing as voltage &ldquo;on&rdquo; or &ldquo;at&rdquo; a single point in the circuit, and so the bird contacting a single point in the above circuit has no voltage applied across its body to establish a current through it.</p>
+<p>Yes, even though they rest on <em>two</em> feet, both feet are touching the same wire, making them <em>electrically common</em>. Electrically speaking, both of the bird&rsquo;s feet touch the same point, hence there is no voltage between them to motivate current through the bird&rsquo;s body.</p>
+<p>This might lead one to believe that it&rsquo;s impossible to be shocked by electricity by only touching a single wire. Like the birds, if we&rsquo;re sure to touch only one wire at a time, we&rsquo;ll be safe, right? Unfortunately, this is not correct. Unlike birds, people are usually standing on the ground when they contact a &ldquo;live&rdquo; wire.</p>
+<p>Many times, one side of a power system will be intentionally connected to <a href="https://www.allaboutcircuits.com/video-lectures/ground-reference-points/" target="_blank">earth ground</a>, and so the person touching a single wire is actually making contact between two points in the circuit (the wire and earth ground):</p>
+
+<p><img src="/uploads/articles/high-voltage-power-with-wire-and-earth-ground.jpg" /></p>
+
+<p>The ground symbol is that set of three horizontal bars of decreasing width located at the lower-left of the circuit shown, and also at the foot of the person being shocked. In real life, the power system ground consists of some kind of metallic conductor buried deep in the ground for making maximum contact with the earth.</p>
+<p>That conductor is electrically connected to an appropriate connection point on the circuit with thick wire. The victim&rsquo;s ground connection is through their feet, which are touching the earth.</p>
+
+<p>A few questions usually arise at this point in the mind of the student:</p>
+<ul>
+<li>If the presence of a ground point in the circuit provides an easy point of contact for someone to get shocked, why have it in the circuit at all? Wouldn&rsquo;t a ground-less circuit be safer?</li>
+<li>The person getting shocked probably isn&rsquo;t bare-footed. If rubber and fabric are insulating materials, then why aren&rsquo;t their shoes protecting them by preventing a circuit from forming?</li>
+<li>How good of a conductor can <em>dirt</em> be? If you can get shocked by the current through the earth, why not use the earth as a conductor in our power circuits?</li>
+</ul>
+
+<p><a name="Ground"></a><a name="Grounding"></a> In answer to the first question, the presence of an intentional &ldquo;grounding&rdquo; point in an electric circuit is intended to ensure that one side of it <em>is</em> safe to come in contact with. Note that if our victim in the above diagram were to touch the bottom side of the resistor, nothing would happen even though their feet would still be contacting ground:</p>
+
+<p><img src="/uploads/articles/high-voltage-power-without-current.jpg" /></p>
+
+<p><a name="Electrically common points"></a><a name="Points, electrically common"></a><a name="Grounding"></a> Because the bottom side of the circuit is firmly connected to ground through the grounding point on the lower-left of the circuit, the lower conductor of the circuit is made <em>electrically common</em> with earth ground. Since there can be no voltage between electrically common points, there will be no voltage applied across the person contacting the lower wire, and they will not receive a shock.</p>
+<p>For the same reason, the wire connecting the circuit to the grounding rod/plates is usually left bare (no insulation), so that any metal object it brushes up against will similarly be electrically common with the earth.</p>
+<p>Circuit grounding ensures that at least one point in the circuit will be safe to touch. But what about leaving a circuit completely ungrounded? Wouldn&rsquo;t that make any person touching just a single wire as safe as the bird sitting on just one? Ideally, yes. Practically, no. Observe what happens with no ground at all:</p>
+
+<p><img src="/uploads/articles/high-voltage-power-without-person-getting-shocked.jpg" /></p>
+
+<p>Despite the fact that the person&rsquo;s feet are still contacting the ground, any single point in the circuit should be safe to touch. Since there is no complete path (circuit) formed through the person&rsquo;s body from the bottom side of the voltage source to the top, there is no way for a current to be established through the person.</p>
+<p>However, this could all change with an accidental ground, such as a tree branch touching a power line and providing the connection to earth ground:</p>
+
+<p><img src="/uploads/articles/high-voltage-power-accidental-ground-path.jpg" /></p>
+
+<p><a name="Ground fault"></a><a name="Fault, ground"></a> Such an accidental connection between a power system conductor and the earth (ground) is called a <em>ground fault</em>.</p>
+## Ground Faults
+<p>Ground faults may be caused by many things, including dirt buildup on power line insulators (creating a dirty-water path for current from the conductor to the pole, and to the ground, when it rains), groundwater infiltration in buried power line conductors, and birds landing on power lines, bridging the line to the pole with their wings.</p>
+<p>Given the many causes of ground faults, they tend to be unpredictable. In the case of trees, no one can guarantee <em>which wire</em> their branches might touch. If a tree were to brush up against the top wire in the circuit, it would make the top wire safe to touch and the bottom one dangerous&mdash;just the opposite of the previous scenario where the tree contacts the bottom wire:</p>
+
+<p><img src="/uploads/articles/high-voltage-circuit-for-shock-current-to-flow-through-the-victim_4.jpg" /></p>
+
+<p>With a tree branch contacting the top wire, that wire becomes the grounded conductor in the circuit, electrically common with earth ground. Therefore, there is no voltage between that wire and ground, but full (high) voltage between the bottom wire and ground.</p>
+<p>As mentioned previously, tree branches are only one potential source of ground faults in a power system. Consider an ungrounded power system with no trees in contact, but this time with <em>two</em> people touching single wires:</p>
+
+<p><img src="/uploads/articles/high-voltage-power-two-persons-getting-shocked.jpg" /></p>
+
+<p><a name="Grounding"></a> With each person standing on the ground, contacting different points in the circuit, a path for shock current is made through one person, through the earth, and through the other person. Even though each person thinks they&rsquo;re safe in only touching a single point in the circuit, their combined actions create a deadly scenario. In effect, one person acts as the ground fault which makes it unsafe for the other person.</p>
+<p>This is exactly why ungrounded power systems are dangerous: the voltage between any point in the circuit and ground (earth) is unpredictable because a ground fault could appear at any point in the circuit at any time. The only character guaranteed to be safe in these scenarios is the bird, who has no connection to earth ground at all!</p>
+<p>By firmly connecting a designated point in the circuit to earth ground (&ldquo;grounding&rdquo; the circuit), at least safety can be assured at that one point. This is more assurance of safety than having no ground connection at all.</p>
+<p>In answer to the second question, rubber-soled shoes <em>do</em> indeed provide some electrical insulation to help protect someone from conducting shock current through their feet. However, most common shoe designs are not intended to be electrically &ldquo;safe,&rdquo; their soles being too thin and not of the right substance.</p>
+<p>Also, any moisture, dirt, or conductive salts from body sweat on the surface of or permeated through the soles of shoes will compromise what little insulating value the shoe had to begin with. There are shoes specifically made for dangerous electrical work, as well as thick rubber mats made to stand on while working on live circuits, but these special pieces of gear must be in the absolutely clean, dry condition in order to be effective.</p>
+<p>Suffice it to say, normal footwear is not enough to guarantee protection against electric shock from a power system.</p>
+<p>Research conducted on contact resistance between parts of the human body and points of contact (such as the ground) shows a wide range of figures (see the end of the chapter for information on the source of this data):</p>
+<ul>
+<li>Hand or foot contact, insulated with rubber: 20 M&Omega; typical.</li>
+<li>Foot contact through leather shoe sole (dry): 100 k&Omega; to 500 k&Omega;</li>
+<li>Foot contact through leather shoe sole (wet): 5 k&Omega; to 20 k&Omega;</li>
+</ul>
+<p>As you can see, not only is rubber a far better insulating material than leather, but the presence of water in a porous substance such as leather <em>greatly</em> reduces electrical resistance.</p>
+<p>In answer to the third question, dirt is not a very good conductor (at least not when it&rsquo;s dry!). It is too poor of a conductor to support continuous current for powering a load. However, as we will see in the next section, it takes very little current to injure or kill a human being, so even the poor conductivity of dirt is enough to provide a path for deadly current when there is sufficient voltage available, as there usually is in power systems.</p>
+<p>Some ground surfaces are better insulators than others. Asphalt, for instance, being oil-based, has a much greater resistance than most forms of dirt or rock. Concrete, on the other hand, tends to have fairly low resistance due to its intrinsic water and electrolyte (conductive chemical) content.</p>
+
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li>Electric shock can only occur when contact is made between two points of a circuit; when voltage is applied across a victim&rsquo;s body.</li>
+<li>Power circuits usually have a designated point that is &ldquo;grounded:&rdquo; firmly connected to metal rods or plates buried in the dirt to ensure that one side of the circuit is always at ground potential (zero voltage between that point and earth ground).</li>
+<li>A <em>ground fault</em> is an accidental connection between a circuit conductor and the earth (ground).</li>
+<li>Special, insulated shoes and mats are made to protect persons from shock via ground conduction, but even these pieces of gear must be in clean, dry condition to be effective. Normal footwear is not good enough to provide protection from shock by insulating its wearer from the earth.</li>
+<li>Though dirt is a poor conductor, it can conduct enough current to injure or kill a human being.</li>
+</ul>

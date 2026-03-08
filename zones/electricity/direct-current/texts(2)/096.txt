@@ -1,0 +1,88 @@
+# Superconductivity
+<p><a name="Superconductor"></a> <a name="Zero, absolute"></a> Conductors lose all of their <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/resistance/" target="_blank">electrical resistance</a> when cooled to super-low temperatures (near absolute zero, about -273&deg; Celsius). It must be understood that superconductivity is not merely an extrapolation of most conductors&rsquo; tendency to gradually lose resistance with decreasing temperature; rather, it is a sudden, quantum leap in resistivity from finite to nothing. <em>A superconducting material has absolutely zero electrical resistance, not just some small amount</em>.</p>
+<p>Superconductivity was first discovered by H. Kamerlingh Onnes at the University of Leiden, Netherlands, in 1911. Just three years earlier, in 1908, Onnes had developed a method of liquefying helium gas, which provided a medium with which to supercool experimental objects to just a few degrees above absolute zero. Deciding to investigate changes in electrical resistance of mercury when cooled to this low of a temperature, he discovered that its resistance dropped to <em>nothing</em> just below the boiling point of helium.</p>
+<p>There is some debate over exactly how and why superconducting materials superconduct. One theory holds that electrons group together and travel in pairs (called <strong><em>Cooper pairs</em></strong>) within a superconductor rather than travel independently, and that has something to do with their frictionless flow. Interestingly enough, another phenomenon of super-cold temperatures, <em>superfluidity</em>, happens with certain liquids (especially liquid helium), resulting in frictionless flow of molecules.</p>
+<p>Superconductivity promises extraordinary capabilities for electric circuits. If conductor resistance could be eliminated entirely, there would be no power losses or inefficiencies in electric power systems due to stray resistances. Electric motors could be made almost perfectly (100%) efficient. Components such as capacitors and inductors, whose ideal characteristics are normally spoiled by inherent wire resistances, could be made ideal in a practical sense. Already, some practical superconducting conductors, motors, and capacitors have been developed, but their use at this present time is limited due to the practical problems intrinsic to maintaining super-cold temperatures.</p>
+<p>The threshold temperature for a superconductor to switch from normal conduction to superconductivity is called the <em>transition temperature</em>. Transition temperatures for &ldquo;classic&rdquo; superconductors are in the cryogenic range (near absolute zero), but much progress has been made in developing &ldquo;high-temperature&rdquo; superconductors which superconduct at warmer temperatures. One type is a ceramic mixture of yttrium, barium, copper, and oxygen which transitions at a relatively balmy -160&deg; Celsius. Ideally, a superconductor should be able to operate within the range of ambient temperatures, or at least within the range of inexpensive refrigeration equipment.</p>
+<p>The critical temperatures for a few common substances are shown here in this table. Temperatures are given in kelvins, which has the same incremental span as degrees Celsius (an increase or decrease of 1 kelvin is the same amount of temperature change as 1&deg; Celsius), only offset so that 0 K is absolute zero. This way, we don&rsquo;t have to deal with a lot of negative figures.</p>
+<table>
+<tbody>
+<tr>
+<th>Material</th>
+<th>Element/Alloy</th>
+<th>Critical temp.(K)</th>
+</tr>
+<tr>
+<td>Aluminum</td>
+<td>Element</td>
+<td>1.20</td>
+</tr>
+<tr>
+<td>Cadmium</td>
+<td>Element</td>
+<td>0.56</td>
+</tr>
+<tr>
+<td>Lead</td>
+<td>Element</td>
+<td>7.2</td>
+</tr>
+<tr>
+<td>Mercury</td>
+<td>Element</td>
+<td>4.16</td>
+</tr>
+<tr>
+<td>Niobium</td>
+<td>Element</td>
+<td>8.70</td>
+</tr>
+<tr>
+<td>Thorium</td>
+<td>Element</td>
+<td>1.37</td>
+</tr>
+<tr>
+<td>Tin</td>
+<td>Element</td>
+<td>3.72</td>
+</tr>
+<tr>
+<td>Titanium</td>
+<td>Element</td>
+<td>0.39</td>
+</tr>
+<tr>
+<td>Uranium</td>
+<td>Element</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>Zinc</td>
+<td>Element</td>
+<td>0.91</td>
+</tr>
+<tr>
+<td>Niobium/Tin</td>
+<td>Alloy</td>
+<td>18.1</td>
+</tr>
+<tr>
+<td>Cupric sulphide</td>
+<td>Compound</td>
+<td>1.6</td>
+</tr>
+</tbody>
+</table>
+<p>Superconducting materials also interact in interesting ways with magnetic fields. While in the superconducting state, a superconducting material will tend to exclude all magnetic fields, a phenomenon known as the <em>Meissner effect</em>. However, if the magnetic field strength intensifies beyond a critical level, the superconducting material will be rendered non-superconductive. In other words, superconducting materials will lose their superconductivity (no matter how cold you make them) if exposed to too strong of a magnetic field. In fact, the presence of <em>any</em> magnetic field tends to lower the critical temperature of any superconducting material: the more magnetic field present, the colder you have to make the material before it will superconduct.</p>
+<p>This is another practical limitation to superconductors in circuit design, since electric current through any conductor produces a <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-15/magnetic-fields-and-inductance/" target="_blank">magnetic field</a>. Even though a superconducting wire would have zero resistance to oppose current, there will still be a <em>limit</em> of how much current could practically go through that wire due to its critical magnetic field limit.</p>
+<p>There are already a few industrial applications of superconductors, especially since the recent (1987) advent of the yttrium-barium-copper-oxygen ceramic, which only requires liquid nitrogen to cool, as opposed to liquid helium. It is even possible to order superconductivity kits from educational suppliers which can be operated in high school labs (liquid nitrogen not included). Typically, these kits exhibit superconductivity by the Meissner effect, suspending a tiny magnet in mid-air over a superconducting disk cooled by a bath of liquid nitrogen.</p>
+<p>The zero resistance offered by superconducting circuits leads to unique consequences. In a superconducting short-circuit, it is possible to maintain large currents indefinitely with zero applied voltage!</p>
+<p><img src="/uploads/articles/rings-of-superconducting-material.png" /></p>
+<p>Rings of superconducting material have been experimentally proven to sustain continuous current for years with no applied voltage. So far as anyone knows, there is no theoretical time limit to how long an unaided current could be sustained in a superconducting circuit. If you&rsquo;re thinking this appears to be a form of <em>perpetual motion</em>, you&rsquo;re correct! Contrary to popular belief, there is no law of physics prohibiting perpetual motion; rather, the prohibition stands against any machine or system generating more energy than it consumes (what would be referred to as an <em>over-unity</em> device). At best, all a perpetual motion machine (like the superconducting ring) would be good for is to <em>store</em> energy, not <em>generate</em> it freely!</p>
+<p>Superconductors also offer some strange possibilities having nothing to do with <a href="https://www.allaboutcircuits.com/video-lectures/electrical-quantities-b/" target="_blank">Ohm&rsquo;s Law</a>. One such possibility is the construction of a device called a <strong><em>Josephson Junction</em></strong>, which acts as a relay of sorts, controlling one current with another current (with no moving parts, of course). The small size and fast switching time of Josephson Junctions may lead to new computer circuit designs: an alternative to using semiconductor transistors.</p>
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li>Superconductors are materials which have absolutely zero electrical resistance.</li>
+<li>All presently known superconductive materials need to be cooled far below ambient temperature to superconduct. The maximum temperature at which they do so is called the <em>transition temperature</em>.</li>
+</ul>

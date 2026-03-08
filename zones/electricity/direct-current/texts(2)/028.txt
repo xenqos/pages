@@ -1,0 +1,47 @@
+# Arithmetic with Scientific Notation
+<p>The benefits of scientific notation do not end with ease of writing and expression of accuracy. Such notation also lends itself well to mathematical problems of multiplication and division. Let&rsquo;s say we wanted to know how many electrons would flow past a point in a circuit carrying 1 amp of <a href="https://www.allaboutcircuits.com/video-lectures/basic-requirements-for-current/" target="_blank">electric current</a> in 25 seconds.</p>
+<p>If we know the number of electrons per second in the circuit (which we do), then all we need to do is multiply that quantity by the number of seconds (25) to arrive at an answer of total electrons:</p>
+
+<p><em>(6,250,000,000,000,000,000 electrons per second) x (25 seconds) = 156,250,000,000,000,000,000 electrons passing by in 25 seconds</em></p>
+
+<p>Using scientific notation, we can write the problem like this:</p>
+
+<p><em>(6.25 x 10<sup>18</sup> electrons per second) x (25 seconds)</em></p>
+
+<p>If we take the &ldquo;6.25&rdquo; and multiply it by 25, we get 156.25. So, the answer could be written as:</p>
+
+<p><em>156.25 x 10<sup>18</sup> electrons</em></p>
+
+<p>However, if we want to hold to standard convention for scientific notation, we must represent the significant digits as a number between 1 and 10. In this case, we&rsquo;d say &ldquo;1.5625&rdquo; multiplied by some power-of-ten. To obtain 1.5625 from 156.25, we have to skip the decimal point two places to the left.</p>
+<p>To compensate for this without changing the value of the number, we have to raise our power by two notches (10 to the 20th power instead of 10 to the 18th):</p>
+
+<p><em>1.5625 x 10<sup>20</sup> electrons</em></p>
+
+<p>What if we wanted to see how many electrons would pass by in 3,600 seconds (1 hour)? To make our job easier, we could put the time in scientific notation as well:</p>
+
+<p><em>(6.25 x 10<sup>18</sup> electrons per second) x (3.6 x 10<sup>3</sup> seconds)</em></p>
+
+<p>To multiply, we must take the two significant sets of digits (6.25 and 3.6) and multiply them together; and we need to take the two powers-of-ten and multiply them together. Taking 6.25 times 3.6, we get 22.5. Taking 10<sup>18</sup> times 10<sup>3</sup>, we get 10<sup>21</sup> (exponents with common base numbers add). So, the answer is:</p>
+
+<p><em>22.5 x 10<sup>21</sup> electrons</em></p>
+<p><em>. . . or more properly . . .</em></p>
+<p><em>2.25 x 10<sup>22</sup> electrons</em></p>
+
+<p>To illustrate how division works with scientific notation, we could figure that last problem &ldquo;backwards&rdquo; to find out how long it would take for that many electrons to pass by at a current of 1 amp:</p>
+
+<p><em>(2.25 x 10<sup>22 </sup>electrons) / (6.25 x 10<sup>18</sup> electrons per second)</em></p>
+
+<p>Just as in multiplication, we can handle the significant digits and powers-of-ten in separate steps (remember that you subtract the exponents of divided powers-of-ten):</p>
+
+<p><em>(2.25 / 6.25) x (10<sup>22</sup> / 10<sup>18</sup>)</em></p>
+
+<p>And the answer is: 0.36 x 10<sup>4</sup>, or 3.6 x 10<sup>3</sup>, seconds. You can see that we arrived at the same quantity of time (3600 seconds). Now, you may be wondering what the point of all this is when we have electronic calculators that can handle the math automatically.</p>
+<p>Well, back in the days of scientists and engineers using &ldquo;slide rule&rdquo; analog <a href="https://www.allaboutcircuits.com/video-lectures/microprocessors-and-computers/" target="_blank">computers</a>, these techniques were indispensable. The &ldquo;hard&rdquo; arithmetic (dealing with the significant digit figures) would be performed with the slide rule while the powers-of-ten could be figured without any help at all, being nothing more than simple addition and subtraction.</p>
+
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li>Significant digits are representative of the real-world accuracy of a number.</li>
+<li>Scientific notation is a &ldquo;shorthand&rdquo; method to represent very large and very small numbers in easily-handled form.</li>
+<li>When multiplying two numbers in scientific notation, you can multiply the two significant digit figures and arrive at a power-of-ten by adding exponents.</li>
+<li>When dividing two numbers in scientific notation, you can divide the two significant digit figures and arrive at a power-of-ten by subtracting exponents.</li>
+</ul>

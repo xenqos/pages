@@ -35,9 +35,9 @@
 <p>The SPICE circuit simulation computer program uses scientific notation to display its output information and can interpret both scientific notation and metric prefixes in the circuit description files. If you are going to be able to successfully interpret the SPICE analyses throughout this book, you must be able to understand the notation used to express variables of voltage, current, etc. in the program.</p>
 <h2>A Simple Circuit Simulation with SPICE</h2>
 <p>Let&rsquo;s start with a very simple circuit composed of one voltage source (a battery) and one <a href=&quot;https://www.allaboutcircuits.com/video-lectures/electronic-components-resistors/&quot; target=&quot;_blank&quot;>resistor</a>:</p>
-<p><img src=&quot;/uploads/articles/simple-circuit-voltage-resistor.jpg&quot; /></p>
+<a target='_blank' href='../images/032-01.jpg'><img class='clImageThumb' src='../images/032-01.jpg'></a><br>
 <p>To simulate this circuit using SPICE, we first have to designate node numbers for all the distinct points in the circuit, then list the components along with their respective node numbers so the computer knows which component is connected to which, and how. For a circuit of this simplicity, the use of SPICE seems like overkill, but it serves the purpose of demonstrating the practical use of scientific notation:</p>
-<p><img src=&quot;/uploads/articles/modifying-circuit-spice.jpg&quot; /></p>
+<a target='_blank' href='../images/032-02.jpg'><img class='clImageThumb' src='../images/032-02.jpg'></a><br>
 <p>Typing out a circuit description file, or <em>netlist</em>, for this circuit, we get this:</p>
 
 <pre><br>
@@ -56,7 +56,7 @@ node    voltage&#10; ( 1)    24.0000&#10; voltage source currents&#10; &#10; nam
 <h2>Modifying the Original Example Circuit in SPICE</h2>
 
 <p>Let&rsquo;s modify our example circuit so that it has a 5 k&Omega; (5 kilo-ohm, or 5,000 ohm) resistor instead of a 5 &Omega; resistor and see what happens.</p>
-<p><img src=&quot;/uploads/articles/modifying-circuit-spice2.jpg&quot; /></p>
+<a target='_blank' href='../images/032-03.jpg'><img class='clImageThumb' src='../images/032-03.jpg'></a><br>
 <p>Once again is our circuit description file, or &ldquo;netlist:&rdquo;</p>
 
 <pre><br>

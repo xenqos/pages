@@ -7,30 +7,30 @@
 ## Resistor Schematic Symbols and Values
 <p>The most common schematic symbol for a resistor is a zig-zag line:</p>
 
-<p><img src="/uploads/articles/resistor-symbol-zig-zag.jpg" /></p>
+^[012-01.jpg]
 
 <p>Resistor values in ohms are usually shown as an adjacent number, and if several resistors are present in a circuit, they will be labeled with a unique identifier number such as R<sub>1</sub>, R<sub>2</sub>, R<sub>3</sub>, etc. As you can see, resistor symbols can be shown either horizontally or vertically:</p>
 
-<p><img src="/uploads/articles/resistor-values-150-25-ohms.jpg" /></p>
+^[012-02.jpg]
 
 <p>Real resistors look nothing like the zig-zag symbol. Instead, they look like small tubes or cylinders with two wires protruding for connection to a circuit. Here is a sampling of different kinds and sizes of resistors:</p>
 
-<p><img src="/uploads/articles/example-sizes-resistors.jpg" /></p>
+^[012-03.jpg]
 
 <p>In keeping more with their physical appearance, an alternative schematic symbol for a resistor looks like a small, rectangular box:</p>
 
-<p><img src="/uploads/articles/rectangular-box-resistor-schematic-symbol.jpg" /></p>
+^[012-04.jpg]
 
 <p>Resistors can also be shown to have varying rather than fixed resistances. This might be to describe an actual physical device designed to provide an adjustable resistance, or it could be to show some component that just happens to have an unstable resistance:</p>
 
-<p><img src="/uploads/articles/variable-resistance-resistors.jpg" /></p>
+^[012-05.jpg]
 
 <p>Any time you see a component symbol drawn with a diagonal arrow through it, that component has a variable rather than a fixed value. This symbol &ldquo;modifier&rdquo; (the diagonal arrow) is a standard electronic symbol convention.</p>
 ## Variable Resistors
 <p>Variable resistors must have some physical means of adjustment, either a rotating shaft or lever that can be moved to vary the amount of electrical resistance. Here is a photograph showing some devices called potentiometers, which can be used as variable resistors:</p>
 
 ## &nbsp;
-<p><img src="/uploads/articles/potentiometer-as-resistor.jpg" /></p>
+^[012-06.jpg]
 
 ## Power Rating of Resistors
 <p>Because resistors dissipate heat energy as the electric currents through them overcome the &ldquo;friction&rdquo; of their resistance, resistors are also rated in terms of how much heat energy they can dissipate without overheating and sustaining damage. Naturally, this power rating is specified in the physical unit of &ldquo;watts.&rdquo; Most resistors found in small electronic devices such as portable radios are rated at 1/4 (0.25) watt or less.</p>
@@ -41,12 +41,12 @@
 <p>For a practical illustration of resistors&rsquo; usefulness, examine the photograph below. It is a picture of a printed circuit board, or PCB: an assembly made of sandwiched layers of insulating phenolic fiber-board and conductive copper strips, into which components may be inserted and secured by a low-temperature welding process called &ldquo;soldering.&rdquo;</p>
 <p>The various components on this circuit board are identified by printed labels. Resistors are denoted by any label beginning with the letter &ldquo;R&rdquo;.</p>
 
-<p><img src="/uploads/articles/pcb-resistor-example.jpg" /></p>
+^[012-07.jpg]
 
 <p>This particular circuit board is a computer accessory called a &ldquo;modem,&rdquo; which allows digital information transfer over telephone lines. There are at least a dozen resistors (all rated at 1/4 watt power dissipation) that can be seen on this modem&rsquo;s board. Every one of the black rectangles (called &ldquo;integrated circuits&rdquo; or &ldquo;chips&rdquo;) contain their own array of resistors for their internal functions, as well. Another circuit board example shows resistors packaged in even smaller units, called &ldquo;surface mount devices.&rdquo;</p>
 <p>This particular circuit board is the underside of a personal computer hard disk drive, and once again the resistors soldered onto it are designated with labels beginning with the letter &ldquo;R&rdquo;:</p>
 
-<p><img src="/uploads/articles/pcb-resistor-example2.jpg" /></p>
+^[012-08.jpg]
 
 <p>There are over one hundred surface-mount resistors on this circuit board, and this count, of course, does not include the number of resistors internal to the black &ldquo;chips.&rdquo; These two photographs should convince anyone that resistors&mdash;devices that &ldquo;merely&rdquo; oppose the flow of electric current&mdash;are very important components in the realm of electronics!</p>
 
@@ -56,15 +56,15 @@
 ## Analyzing Resistor Circuits
 <p>To summarize what we&rsquo;ve learned in this lesson, let&rsquo;s analyze the following circuit, determining all that we can from the information given:</p>
 
-<p><img src="/uploads/articles/analize-resistor-circuits.jpg" /></p>
+^[012-09.jpg]
 
 <p>All we&rsquo;ve been given here to start with is the battery voltage (10 volts) and the circuit current (2 amps). We don&rsquo;t know the resistor&rsquo;s resistance in ohms or the power dissipated by it in watts. Surveying our array of<a href="https://www.allaboutcircuits.com/video-lectures/electrical-quantities-b/"> Ohm&rsquo;s Law equations</a>, we find two equations that give us answers from known quantities of voltage and current:</p>
 
-<p><img src="/uploads/articles/voltage-current-ohms-law-equation.png" /></p>
+^[012-10.png]
 
 <p>Inserting the known quantities of voltage (E) and current (I) into these two equations, we can determine circuit resistance (R) and power dissipation (P):</p>
 
-<p><img src="/uploads/articles/known-quantities-voltage-current.png" /></p>
+^[012-11.png]
 
 <p>For the circuit conditions of 10 volts and 2 amps, the resistor&rsquo;s resistance must be 5 &Omega;. If we were designing a circuit to operate at these values, we would have to specify a resistor with a minimum power rating of 20 watts, or else it would overheat and fail.</p>
 

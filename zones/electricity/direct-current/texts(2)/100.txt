@@ -1,0 +1,120 @@
+# Factors Affecting Capacitance
+<p>There are three basic factors of capacitor construction determining the amount of capacitance created. These factors all dictate capacitance by affecting how much electric field flux (relative difference of electrons between plates) will develop for a given amount of <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-13/electric-fields-capacitance/" target="_blank">electric field</a> force (voltage between the two plates):</p>
+<p><strong>PLATE AREA</strong>:&nbsp; All other factors being equal, greater plate area gives greater capacitance; less plate area gives less capacitance.</p>
+<p><em>Explanation:</em> Larger plate area results in more field flux (charge collected on the plates) for a given field force (voltage across the plates).</p>
+<p><img src="/uploads/articles/less-and-more-capacitance-diagram2.png" /></p>
+<p><strong>PLATE SPACING</strong>: All other factors being equal, further plate spacing gives less capacitance; closer plate spacing gives greater capacitance.</p>
+<p><em>Explanation:</em> Closer spacing results in a greater field force (voltage across the capacitor divided by the distance between the plates), which results in a greater field flux (charge collected on the plates) for any given voltage applied across the plates.</p>
+<p><img src="/uploads/articles/less-and-more-capacitance-diagram1.png" /></p>
+<p><strong>DIELECTRIC MATERIAL</strong>: All other factors being equal, greater permittivity of the dielectric gives greater capacitance; less permittivity of the dielectric gives less capacitance.</p>
+<p><em>Explanation:</em> Although it&#39;s complicated to explain, some materials offer less opposition to field flux for a given amount of field force. Materials with a greater permittivity allow for more field flux (offer less opposition), and thus a greater collected charge, for any given amount of field force (applied voltage).</p>
+<p><img src="/uploads/articles/less-and-more-capacitance-diagram3.png" /></p>
+<p>&ldquo;Relative&rdquo; permittivity means the permittivity of a material, relative to that of a pure vacuum. The greater the number, the greater the permittivity of the material. Glass, for instance, with a relative permittivity of 7, has seven times the permittivity of a pure vacuum, and consequently will allow for the establishment of an electric field flux seven times stronger than that of a vacuum, all other factors being equal. The following is a table listing the relative permittivities (also known as the &ldquo;dielectric constant&rdquo;) of various common substances:</p>
+<table>
+<tbody>
+<tr>
+<th>
+<p>Material</p>
+</th>
+<th>Relative permittivity (dielectric constant)</th>
+</tr>
+<tr>
+<td>Vacuum</td>
+<td>1.0000</td>
+</tr>
+<tr>
+<td>Air</td>
+<td>1.0006</td>
+</tr>
+<tr>
+<td>PTFE, FEP (&ldquo;Teflon&rdquo;)</td>
+<td>2.0</td>
+</tr>
+<tr>
+<td>Polypropylene</td>
+<td>2.20 to 2.28</td>
+</tr>
+<tr>
+<td>ABS resin</td>
+<td>2.4 to 3.2</td>
+</tr>
+<tr>
+<td>Polystyrene</td>
+<td>2.45 to 4.0</td>
+</tr>
+<tr>
+<td>Waxed paper</td>
+<td>2.5</td>
+</tr>
+<tr>
+<td>Transformer oil</td>
+<td>2.5 to 4</td>
+</tr>
+<tr>
+<td>Hard Rubber</td>
+<td>2.5 to 4.80</td>
+</tr>
+<tr>
+<td>Wood (Oak)</td>
+<td>3.3</td>
+</tr>
+<tr>
+<td>Silicones</td>
+<td>3.4 to 4.3</td>
+</tr>
+<tr>
+<td>Bakelite</td>
+<td>3.5 to 6.0</td>
+</tr>
+<tr>
+<td>Quartz, fused</td>
+<td>3.8</td>
+</tr>
+<tr>
+<td>Wood (Maple)</td>
+<td>4.4</td>
+</tr>
+<tr>
+<td>Glass</td>
+<td>4.9 to 7.5</td>
+</tr>
+<tr>
+<td>Castor oil</td>
+<td>5.0</td>
+</tr>
+<tr>
+<td>Wood (Birch)</td>
+<td>5.2</td>
+</tr>
+<tr>
+<td>Mica, muscovite</td>
+<td>5.0 to 8.7</td>
+</tr>
+<tr>
+<td>Glass-bonded mica</td>
+<td>6.3 to 9.3</td>
+</tr>
+<tr>
+<td>Porcelain, Steatite</td>
+<td>6.5</td>
+</tr>
+<tr>
+<td>Alumina</td>
+<td>8.0 to 10.0</td>
+</tr>
+<tr>
+<td>Distilled water</td>
+<td>80.0</td>
+</tr>
+<tr>
+<td>Barium-strontium-titanite</td>
+<td>7500</td>
+</tr>
+</tbody>
+</table>
+<p>An approximation of capacitance for any pair of separated <a href="https://www.allaboutcircuits.com/video-lectures/wire-and-cable/" target="_blank">conductors</a> can be found with this formula:</p>
+<p><img src="/uploads/articles/approximation-of-capacitance-formula.png" /></p>
+<p>A capacitor can be made variable rather than fixed in value by varying any of the physical factors determining capacitance. One relatively easy factor to vary in capacitor construction is that of plate area, or more properly, the amount of plate overlap.</p>
+<p>The following photograph shows an example of a variable capacitor using a set of interleaved metal plates and an air gap as the dielectric material:</p>
+<p><img src="/uploads/articles/variable-capacitor-air-dielectric.jpg" /></p>
+<p>As the shaft is rotated, the degree to which the sets of plates overlap each other will vary, changing the effective area of the plates between which a concentrated electric field can be established. This particular capacitor has a capacitance in the picofarad range and finds use in radio circuitry.</p>

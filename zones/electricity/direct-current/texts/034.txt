@@ -1,5 +1,5 @@
 # Series Circuits and the Application of Ohm&#8217;s Law
-<p><img src="/uploads/thumbnails/CC-AAC-_Thunbnails.jpg" /></p>
+^[034-01.jpg]
 <h3 class="text-lg lg:text-2xl font-bold mb-3">What is the Total Resistance and Voltage of a Series Circuit?</h3>
 <p><p>In a series circuit, all components are connected end-to-end to form a single path for current flow. The total resistance in a series circuit is equal to the sum of the individual resistors, and the total voltage drop is equal to the sum of the individual voltage drops across those resistors.</p></p>
 <p>In this introduction to <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/what-are-series-and-parallel-circuits/" target="_blank">series resistance circuits</a>, we will explain these three key principles you should understand:</p>
@@ -10,7 +10,7 @@
 </ul>
 <p>We&rsquo;ll examine these <a href="https://www.allaboutcircuits.com/textbook/reference/chpt-1/series-circuit-rules/" target="_blank">three principles using the series circuit</a> consisting of three resistors and a single battery, as illustrated in Figure 1.</p>
 
-<p><img src="/uploads/thumbnails/Figure_1._Series_circuit_with_a_battery_and_three_resistors__.jpg" /></p>
+^[034-02.jpg]
 #### <em><strong>Figure 1.</strong> Series circuit with a battery and three resistors.</em>
 
 ## Current in a Series Circuit
@@ -20,7 +20,7 @@
 ### Using Ohm&rsquo;s Law in a Single Resistor Circuit
 <p>For this initial analysis, we will evaluate the current and voltage for the single resistor circuit in Figure 2.</p>
 
-<p><img src="/uploads/thumbnails/Figure_2._Series_circuit_with_a_battery_and_a_single_resistor__.jpg" /></p>
+^[034-03.jpg]
 #### <em><strong>Figure 2. </strong>Series circuit with a battery and a single resistor.&nbsp;</em>
 
 <p>Since points 1 and 2 are connected together with the wire of negligible resistance, as are points 3 and 4, we can say that point 1 is electrically common to point 2 and that point 3 is electrically common to point 4.</p>
@@ -34,7 +34,7 @@
 ### Using Ohm&rsquo;s Law for Series Circuits With Multiple Resistors
 <p>Returning to Figure 1&rsquo;s circuit, we can see that the polarity of the 9 V battery will again result in a current, I, that will flow in a clockwise direction from point 1 to 2 to 3 to 4 and back to 1. This concept is illustrated in Figure 3.</p>
 
-<p><img src="/uploads/thumbnails/Figure_3._Current_in_a_series_circuit_with_a_battery_and_three_resistors__.jpg" /></p>
+^[034-04.jpg]
 #### <em><strong>Figure 3.</strong> Current in a series circuit with a battery and three resistors.</em>
 
 <p>However, we have one source of voltage and three resistances. From there, we might consider how we use Ohm&rsquo;s law here.</p>
@@ -63,7 +63,7 @@
 
 <p>In essence, we&rsquo;ve calculated the total equivalent resistance of R<sub>1</sub>, R<sub>2</sub>, and R<sub>3</sub> combined. Knowing this, we can redraw the circuit (Figure 4) with a single equivalent resistor representing the series combination of R<sub>1</sub>, R<sub>2</sub>, and R<sub>3</sub>:</p>
 
-<p><img src="/uploads/thumbnails/Figure_4._Circuit_showing_total_equivalent_resistance_of_series_resistors__.jpg" /></p>
+^[034-05.jpg]
 #### <em><strong>Figure 4.</strong> Circuit showing total equivalent resistance of series resistors.</em>
 
 ## Using Ohm&rsquo;s Law to Calculate Circuit Current in a Series Circuit
@@ -76,7 +76,7 @@
 ## How to Calculate Voltage Drop in a Series Circuit
 <p>Knowing that current is equal through all components of a series circuit (and we just determined the current through the battery), we can go back to our original circuit schematic of Figure 1 and note the current through each component, shown in Figure 5 as:</p>
 
-<p><img src="/uploads/thumbnails/Figure_5._Calculated_current_for_the_series_circuit__.jpg" /></p>
+^[034-06.jpg]
 #### <em><strong>Figure 5. </strong>Calculated current for the series circuit.</em>
 
 <p>Now that we know the amount of current through each resistor, we can use Ohm&rsquo;s law to determine the voltage drop across each one (applying Ohm&rsquo;s law in its proper context):</p>

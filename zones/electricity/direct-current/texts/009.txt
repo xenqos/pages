@@ -2,15 +2,15 @@
 <p><a name="Ohm's Law, water analogy"></a> Ohm&rsquo;s Law also makes intuitive sense if you apply it to the water-and-pipe analogy. If we have a water pump that exerts pressure (voltage) to push water around a &ldquo;circuit&rdquo; (<a href="https://www.allaboutcircuits.com/video-lectures/basic-requirements-for-current/" target="_blank">current</a>) through a restriction (<a href="https://www.allaboutcircuits.com/video-lectures/electronic-components-resistors/" target="_blank">resistance</a>), we can model how the three variables interrelate.</p>
 <p>If the resistance to water flow stays the same and the pump pressure increases, the flow rate must also increase.</p>
 
-^[10008.png]
+^[010-01.png]
 
 <p>If the pressure stays the same and the resistance increases (making it more difficult for the water to flow), then the flow rate must decrease:</p>
 
-^[10009.png]
+^[010-02.png]
 
 <p>If the flow rate were to stay the same while the resistance to flow decreased, the required pressure from the pump would necessarily decrease:</p>
 
-^[10010.png]
+^[010-03.png]
 
 <p>As odd as it may seem, the actual mathematical relationship between pressure, flow, and resistance is actually more complex for fluids like water than it is for electric charge. If you pursue further studies in physics, you will discover this for yourself. Thankfully for the electronics student, the mathematics of Ohm&rsquo;s Law is very straightforward and simple.</p>
 

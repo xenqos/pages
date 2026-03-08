@@ -1,5 +1,5 @@
 # Converting Between Thevenin and Norton Equivalent Circuits
-<p><img src="/uploads/thumbnails/thevenin_norton_answer_card_thumbnail.jpg" /></p>
+^[081-01.jpg]
 ## Learn to Convert Between Thevenin and Norton's Equivalent Circuits
 <p>This article provides a simple explanation of how to convert between Thevenin and Norton equivalent circuits.&nbsp;&nbsp;</p>
 <p>Since <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-10/thevenins-theorem/" target="_blank">Thevenin&rsquo;s theorem</a> and <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-10/nortons-theorem/" target="_blank">Norton&rsquo;s theorems</a> are two equally valid methods of reducing a complex network down to something simpler to analyze, there must be some way to convert a Thevenin equivalent circuit to a Norton equivalent circuit and vice versa. Thankfully, the procedure is fairly simple.</p>
@@ -14,16 +14,16 @@
 </ul>
 <p>Since the procedures are identical, the Thevenin and Norton resistances for any circuit must be equal. Figure 1 is the example circuit we used when explaining how to calculate the equivalent circuits.</p>
 
-<p><img src="/uploads/thumbnails/Figure_1._Circuit_for_explaining_the_branch_current_method_.jpg" /></p>
+^[081-02.jpg]
 #### <em><strong>Figure 1.</strong> Circuit schematic for explaining Thevenin&rsquo;s and Norton&rsquo;s theorems.</em>
 
 <p>Figures 2 and 3 are the Thevenin and Norton equivalent circuits, respectively, for the circuit of Figure 1.&nbsp;</p>
 
-<p><img src="/uploads/thumbnails/Figure_9._Replacing_the_value_of_the_load_resistor_into_the_Thevenin_equivalent_circuit_.jpg" /></p>
+^[081-03.jpg]
 #### <em><strong>Figure 2. </strong>Thevenin equivalent circuit.</em>
 
 
-<p><img src="/uploads/thumbnails/Figure_6._Step_5-_Draw_the_Norton_equivalent_circuit_.jpg" /></p>
+^[081-04.jpg]
 #### <em><strong>Figure 3.</strong> Norton equivalent circuit.</em>
 
 <p>As shown, the Thevenin and Norton resistances are identical, 0.8 &Omega;. Therefore, we can conclude that the Norton and Thevenin resistances are equivalent:</p>

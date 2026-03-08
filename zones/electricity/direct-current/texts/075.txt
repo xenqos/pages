@@ -1,5 +1,5 @@
 # Node Voltage Method
-<p><img src="/uploads/thumbnails/node_voltage_card_thumbnail_1.jpg" /></p>
+^[075-01.jpg]
 <h3 class="text-lg lg:text-2xl font-bold mb-3">What is the Node Voltage Method for DC Network Analysis?</h3>
 <p><p>The node voltage method is a DC network analysis technique based on the structured application of Kirchhoff&rsquo;s current law. This method involves converting voltage sources to current sources and replacing resistances with equivalent conductances.</p></p>
 <p>The node voltage method of <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-10/what-is-network-analysis/" target="_blank">DC network analysis</a> solves for unknown voltages at circuit nodes in terms of a system of <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-6/kirchhoffs-current-law-kcl/" target="_blank">Kirchhoff&rsquo;s current law (KCL)</a> equations. This analysis looks strange because it replaces voltage sources with equivalent current sources. Additionally, resistor values in ohms are replaced by equivalent conductances (G = 1/R) with units of siemens (S). Once understood, the node voltage method can provide a simple technique for quickly solving various complex circuits.&nbsp;</p>
@@ -11,7 +11,7 @@
 ### Step 1: Label All Unique Voltage Nodes
 <p>A common node, V<sub>0</sub>, is chosen as a reference point&mdash;this is typically the ground node in the circuit. The other unknown node voltages in our Figure 1 circuit, V<sub>1</sub> and V<sub>2</sub>, will be calculated concerning this point.</p>
 
-<p><img src="/uploads/thumbnails/Figure_1._Circuit_schematic_for_demonstration_of_the_Node_Voltage_Method_of_circuit_analysis_.jpg" /></p>
+^[075-02.jpg]
 #### <em><strong>Figure 1. </strong>Circuit schematic for demonstration of the node voltage method of circuit analysis.</em>
 
 ### Step 2: Replace All Voltage Sources and Series Resistors With Current Sources and Parallel Resistors
@@ -25,7 +25,7 @@
 
 <p>The parallel resistance will be the same value as the series resistance. Knowing our current source and <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/resistance/" target="_blank">resistance</a> values, we can draw our equivalent parallel circuit, as shown in Figure 2.</p>
 
-<p><img src="/uploads/thumbnails/Figure_2._Conversion_of_a_voltage_source_.jpg" /></p>
+^[075-03.jpg]
 #### <em><strong>Figure 2. </strong>Conversion of a voltage source with series resistance to a current source with parallel resistance.</em>
 
 <p>We need to perform the same voltage source to current source conversion for battery, B<sub>2</sub>, with a series resistor, R<sub>5</sub>, from our circuit in Figure 1.</p>
@@ -34,7 +34,7 @@
 
 <p>From here, we can now redraw our circuit with two current sources and parallel resistors, as shown in Figure 3.</p>
 
-<p><img src="/uploads/thumbnails/Figure_3._New_circuit_with_current_sources_and_parallel_resistors_.jpg" /></p>
+^[075-04.jpg]
 #### <em><strong>Figure 3. </strong>New circuit with current sources and parallel resistors.</em>
 
 ### Step 3: Replace Resistor Resistance in Ohms with Conductance in Siemens
@@ -52,7 +52,7 @@
 
 <p>We can update our drawing with these calculated conductance values (Figure 4).</p>
 
-<p><img src="/uploads/thumbnails/Figure_4._All_resistance_values_replaced_by_equivalent_conductance_.jpg" /></p>
+^[075-05.jpg]
 #### <em><strong>Figure 4. </strong>All resistance values are replaced by equivalent conductance.</em>
 
 <p>At this point, we can also simplify the circuit by combining parallel conductors. We do this by simple addition. In our circuit of Figure 4, we have two sets of parallel conductors:</p>
@@ -63,7 +63,7 @@
 
 <p>Our simplified circuit, ready for applying the node voltage method, is shown in Figure 5.</p>
 
-<p><img src="/uploads/thumbnails/Figure_5._Simplified_circuit_.jpg" /></p>
+^[075-06.jpg]
 #### <em><strong>Figure 5.</strong> Simplified circuit.</em>
 
 ### Step 4: Write KCL Equations for Each Unknown Voltage Node
@@ -106,7 +106,7 @@
 ## The Node Voltage Method Applied to an Unbalanced Wheatstone Bridge
 <p>Let&rsquo;s look at another circuit analysis example using the node voltage method. The circuit of Figure 6 is called an unbalanced Wheatstone bridge, and it has three unknown voltage nodes plus the common voltage node, V<sub>0</sub>.&nbsp;</p>
 
-<p><img src="/uploads/thumbnails/Figure_6._Node_number_labeling_for_SPICE_simulation__1.jpg" /></p>
+^[075-07.jpg]
 #### <em><strong>Figure 6. </strong>Wheatstone bridge for node voltage method application.</em>
 
 <p>It&rsquo;s important to note that we do not list the conductances on the schematic diagram. However, G<sub>1</sub> = 1/R<sub>1</sub>, etc.</p>
