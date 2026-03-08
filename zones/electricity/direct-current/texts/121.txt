@@ -1,3 +1,5 @@
+###### 16. RC and L/R Time Constants
+
 # Solving for Unknown Time
 <p>Sometimes it is necessary to determine the length of time that a reactive circuit will take to reach a predetermined value. This is especially true in cases where we&rsquo;re designing an <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-4/series-resistor-capacitor-circuits/" target="_blank">RC</a> or <a href="https://www.allaboutcircuits.com/textbook/alternating-current/chpt-3/series-resistor-inductor-circuits/" target="_blank">L/R</a> circuit to perform a precise timing function. To calculate this, we need to modify our &ldquo;Universal time constant formula.&rdquo; The original formula looks like this:</p>
 

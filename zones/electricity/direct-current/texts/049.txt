@@ -1,3 +1,5 @@
+###### 07. Series-parallel Combination Circuits
+
 # Re-drawing Complex Schematics
 <p>Typically, <a href="https://www.allaboutcircuits.com/video-lectures/complex-circuits/" target="_blank">complex circuits</a> are not arranged in nice, neat, clean schematic diagrams for us to follow. They are often drawn in such a way that makes it difficult to follow which components are <a href="https://www.allaboutcircuits.com/video-lectures/series-circuits-part-1/" target="_blank">in series</a> and which are <a href="https://www.allaboutcircuits.com/video-lectures/parallel-circuits/" target="_blank">in parallel</a> with each other. The purpose of this section is to show you a method useful for redrawing circuit schematics in a neat and orderly fashion. Like the stage-reduction strategy for solving <a href="https://www.allaboutcircuits.com/video-lectures/series-parallel-circuits/" target="_blank">series-parallel combination</a> circuits, it is a method easier demonstrated than described.</p>
 ## Analyzing and Simplifying a Complex Circuit Diagram

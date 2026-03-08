@@ -1,3 +1,5 @@
+###### 09. Electrical Instrumentation Signals
+
 # Thermocouples
 ## Seebeck Effect
 <p>An interesting phenomenon applied in the field of instrumentation is the <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-3/thermoelectricity/" target="_blank">Seebeck effect</a>, which is the production of a small voltage across the length of a wire due to a difference in temperature along that wire. This effect is most easily observed and applied with a junction of two dissimilar metals in contact, each metal producing a different Seebeck voltage along its length, which translates to a voltage between the two (unjoined) wire ends. Most any pair of dissimilar metals will produce a measurable voltage when their junction is heated, some combinations of metals producing more voltage per degree of temperature than others:</p>

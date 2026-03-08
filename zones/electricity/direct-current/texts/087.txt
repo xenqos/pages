@@ -1,3 +1,5 @@
+###### 11. Batteries And Power Systems
+
 # Battery Ratings
 <p>Because batteries create current flow in a circuit by exchanging electrons in ionic chemical reactions, and there is a limited number of molecules in any charged battery available to react, there must be a limited amount of total charge that any battery can motivate through a circuit before its energy reserves are exhausted. Battery capacity could be measured in terms of a total number of electrons, but this would be a huge number. We could use the unit of the <em>coulomb</em> (equal to 6.25 x 10<sub>18</sub> electrons, or 6,250,000,000,000,000,000 electrons) to make the quantities more practical to work with, but instead a new unit, the <em>amp-hour</em>, was made for this purpose. Since 1 amp is actually a flow rate of 1 coulomb of electrons per second, and there are 3600 seconds in an hour, we can state a direct proportion between coulombs and amp-hours: 1 amp-hour = 3600 coulombs. Why make up a new unit when an old would have done just fine? To make your lives as students and technicians more difficult, of course!</p>
 ## Amp-Hour Application to Measure the Battery&rsquo;s Capacity

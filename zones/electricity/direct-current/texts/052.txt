@@ -1,3 +1,7 @@
+###### 08. DC Metering Circuits
+
+## 08. DC Metering Circuits ##
+
 # What is a Meter?
 <p>A <em>meter</em> is any device built to accurately detect and display an electrical quantity in a form readable by a human being. Usually, this &ldquo;readable form&rdquo; is visual: motion of a pointer on a scale, a series of lights arranged to form a &ldquo;bar graph,&rdquo; or some sort of display composed of numerical figures. In the analysis and testing of circuits, there are meters designed to accurately measure the basic quantities of voltage, current, and resistance. There are many other types of meters as well, but this chapter primarily covers the design and operation of the basic three.</p>
 <p>Most modern meters are &ldquo;digital&rdquo; in design, meaning that their readable display is in the form of numerical digits. Older designs of meters are mechanical in nature, using some kind of pointer device to show quantity of measurement. In either case, the principles applied in adapting a display unit to the measurement of (relatively) large quantities of <a href="https://www.allaboutcircuits.com/video-lectures/electrical-quantities-a/" target="_blank">voltage, current, or resistance</a> are the same.</p>

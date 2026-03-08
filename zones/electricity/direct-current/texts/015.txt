@@ -1,3 +1,5 @@
+###### 02. Ohm's Law
+
 # Polarity of voltage drops
 <p>When using conventional current flow, we can trace the direction of the current in the same circuit by starting at the positive (+) terminal and going to the negative (-) terminal of the battery, the only source of voltage in the circuit. From this, we can see that the current is flowing clockwise, from point 1 to 2 to 3 to 4 to 5 to 6 and back to 1 again.</p>
 <p>As the current encounters the 5 &Omega; resistance, voltage is dropped across the <a href="https://www.allaboutcircuits.com/video-lectures/electronic-components-resistors/" target="_blank">resistor</a>&rsquo;s ends. The polarity of this voltage drop is positive (+) at point 3 with respect to point 4.</p>

@@ -1,3 +1,5 @@
+###### 08. DC Metering Circuits
+
 # Kelvin (4-wire) Resistance Measurement
 <p>Suppose we wished to measure the resistance of some component located a significant distance away from our <a href="https://www.allaboutcircuits.com/textbook/experiments/chpt-2/ohmmeter-usage/" target="_blank">ohmmeter</a>. Such a scenario would be problematic because an ohmmeter measures <em>all</em> resistance in the circuit loop, which includes the resistance of the wires (R<sub>wire</sub>) connecting the ohmmeter to the component being measured (R<sub>subject</sub>):</p>
 ^[060-01.jpg]

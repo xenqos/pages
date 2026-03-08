@@ -1,3 +1,5 @@
+###### 15. Inductors
+
 # Series and Parallel Inductors
 <p><a name="Inductors, series and parallel"></a> When inductors are connected in series, the total inductance is the sum of the individual inductors&rsquo; inductances. To understand why this is so, consider the following: the definitive measure of inductance is the amount of voltage dropped across an inductor for a given rate of current change through it.</p>
 <p>If inductors are connected together in series (thus sharing the same <a href="https://www.allaboutcircuits.com/video-lectures/basic-requirements-for-current/" target="_blank">current</a>, and seeing the same rate of change in current), then the total voltage dropped as the result of a change in current will be additive with each inductor, creating a greater total voltage than either of the individual inductors alone. Greater voltage for the same rate of change in current means greater inductance.</p>

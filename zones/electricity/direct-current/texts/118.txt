@@ -1,3 +1,5 @@
+###### 16. RC and L/R Time Constants
+
 # Why L/R and not LR?
 ## Learn About L/R Time Constants
 <p>It is often perplexing to new students of electronics why the time-constant calculation for an inductive circuit is different from that of a capacitive circuit. For a resistor-capacitor circuit, the time constant (in seconds) is calculated from the product (multiplication) of resistance in ohms and capacitance in farads: &tau;=RC.</p>

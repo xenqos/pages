@@ -1,3 +1,7 @@
+###### 10. DC Network Analysis
+
+## 10. DC Network Analysis ##
+
 # What is Network Analysis?
 <p>The <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/correct-use-of-ohms-law/" target="_blank">basic application of Ohm&rsquo;s law</a> to combinations of <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/what-are-series-and-parallel-circuits/" target="_blank">series and parallel circuits</a> can solve many network problems. However, this page will introduce examples of circuits with multiple power sources or unique component configurations that defy simplification by <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/simple-series-circuits/" target="_blank">series</a> and <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/simple-parallel-circuits/" target="_blank">parallel</a> analysis techniques. For these, we will need to rely on network analysis methods.&nbsp;</p>
 <p>This page provides an overview of the network analysis methods that are explained in detail on other pages within this chapter.</p>

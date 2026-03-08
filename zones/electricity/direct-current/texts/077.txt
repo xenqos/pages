@@ -1,3 +1,5 @@
+###### 10. DC Network Analysis
+
 # Millman&#8217;s Theorem
 <p><a name="Millman's Theorem"></a> <a name="Theorem, Millman's"></a> In Millman&rsquo;s Theorem, the circuit is re-drawn as a <a href="https://www.allaboutcircuits.com/video-lectures/parallel-circuits/" target="_blank">parallel</a> network of branches, each branch containing a <a href="https://www.allaboutcircuits.com/video-lectures/electronic-components-resistors/" target="_blank">resistor</a> or series battery/resistor combination. Millman&rsquo;s Theorem is applicable only to those circuits which can be redrawn accordingly. Here again, is our example circuit used for the last two analysis methods:</p>
 ^[077-01.jpg]

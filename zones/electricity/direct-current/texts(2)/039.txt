@@ -1,5 +1,5 @@
 # Applying Ohm&#8217;s Law—Rules and Methods for Circuit Analysis
-<p><img src="/uploads/thumbnails/Thumbnail-CC-AAC-Correct_Use_of_Ohms_Law_Textbook_Page.jpg" /></p>
+^[039-01.jpg]
 <h3 class="text-lg lg:text-2xl font-bold mb-3">How to Apply Ohm's Law When Analyzing Series and Parallel Circuits?</h3>
 <p><p>When analyzing complex series and parallel circuits, it is easy to misapply Ohm&rsquo;s law equations. Remember this important rule&mdash;the variables used in Ohm&rsquo;s law equations must be common to the same two points in the circuit under consideration.</p></p>
 <p>When analyzing complex series and <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/simple-parallel-circuits/" target="_blank">parallel circuits</a>, it is easy to misapply <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/voltage-current-resistance-relate/" target="_blank">Ohm&rsquo;s law</a> equations. In this section, we will introduce some helpful guidelines and methods for analyzing circuits with Ohm&rsquo;s law.</p>
@@ -14,7 +14,7 @@
 
 <p>This concept is illustrated in Figure 1.&nbsp;</p>
 
-<p><img src="/uploads/thumbnails/Figure_1._The_circuit_context_for_using_Ohm’s_Law_Equations_.jpg" /></p>
+^[039-02.jpg]
 #### <em><strong>Figure 1.</strong> The circuit context for using Ohm&rsquo;s law equations.</em>
 
 <p>In the above figure, the relationship between the voltage (V), current (I), resistance (R), and <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-2/power-electric-circuits/" target="_blank">power (P)</a> is limited to the same two circuit nodes, 1 and 2.&nbsp;</p>
@@ -32,18 +32,18 @@
 <p>The <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/solving-series-and-parallel-circuits-with-the-table-method-and-ohms-law/" target="_blank">table method</a> is a good way to keep the context of Ohm&rsquo;s law correct for any kind of circuit configuration. As shown in Table 1, you are only allowed to apply Ohm&rsquo;s law equations to the values of a single vertical column at a time:</p>
 
 #### <em><strong>Table 1.</strong> Format of the table method for Ohm&rsquo;s law circuit evaluation.</em>
-<p><img src="/uploads/thumbnails/Table_1._Format_of_the_table_method_for_Ohm’s_law_circuit_evaluation_.__.jpg" /></p>
+^[039-03.jpg]
 
 <p>Using a table like this to list all voltages, currents, and resistances helps clearly define where Ohm&rsquo;s law equations can be used. Deriving values horizontally across columns is allowable under the principles of series and parallel circuits</p>
 
 ### Table Method Rules for Series Circuits
 <p>Applying the table method to the <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/simple-series-circuits/" target="_blank">series circuit</a> of Figure 2, we can use the horizontal row rules, demonstrated in Table 2, to assist in completing the circuit analysis.&nbsp;</p>
 
-<p><img src="/uploads/thumbnails/Figure_2._Example_series_circuit_.jpg" /></p>
+^[039-04.jpg]
 #### <em><strong>Figure 2.</strong> Example series circuit.</em>
 
 #### <em><strong>Table 2.</strong> Table method row rules for series circuits.</em>
-<p><img src="/uploads/thumbnails/Table_2._Table_Method_row_rules_for_series_circuits_.jpg" /></p>
+^[039-05.jpg]
 
 <p>$$V_{total} = V_1 + V_2 + V_3$$</p>
 
@@ -56,11 +56,11 @@
 ### Table Method Rules for Parallel Circuits
 <p>Similarly, for parallel circuits, as illustrated in Figure 3, we can apply a few basic rules for parallel circuits, as shown in Table 3.</p>
 
-<p><img src="/uploads/thumbnails/Figure_3._Example_parallel_circuit_.jpg" /></p>
+^[039-06.jpg]
 #### <em><strong>Figure 3. </strong>Example parallel circuit</em>
 
 #### <em><strong>Table 3.</strong> Table method row rules for parallel circuits.</em>
-<p><img src="/uploads/thumbnails/Table_3._Table_Method_row_rules_for_parallel_circuits_.jpg" /></p>
+^[039-07.jpg]
 
 <p>$$V_{total} = V_1 = V_2 = V_3$$</p>
 

@@ -10,11 +10,11 @@
 <p>Others wrap the wire around a solid core material of some type. Sometimes the core of an inductor will be straight, and other times it will be joined in a loop (square, rectangular, or circular) to fully contain the magnetic flux. These design options all have an effect on the performance and characteristics of inductors.</p>
 <p>The schematic symbol for an inductor, like the capacitor, is quite simple, being little more than a coil symbol representing the coiled wire. Although a simple coil shape is the generic symbol for any inductor, inductors with cores are sometimes distinguished by the addition of parallel lines to the axis of the coil. A newer version of the inductor symbol dispenses with the coil shape in favor of several &ldquo;humps&rdquo; in a row:</p>
 
-<p><img src="/uploads/articles/inductor-symbols-newer-version.png" /></p>
+^[109-01.png]
 
 <p>As the electric current produces a concentrated magnetic field around the coil, this field flux equates to a storage of energy representing the kinetic motion of the electrons through the coil. The more current in the coil, the stronger the magnetic field will be, and the more energy the inductor will store.</p>
 
-<p><img src="/uploads/articles/magnetic-field-around-the-coil.png" /></p>
+^[109-02.png]
 
 <p>Because inductors store the kinetic energy of moving electrons in the form of a magnetic field, they behave quite differently than resistors (which simply dissipate energy in the form of heat) in a circuit. Energy storage in an inductor is a function of the amount of current through it.</p>
 <p>An inductor&rsquo;s ability to store energy as a function of current results in a tendency to try to maintain current at a constant level. In other words, inductors tend to resist <em>changes</em> in current. When current through an inductor is increased or decreased, the inductor &ldquo;resists&rdquo; the <em>change</em> by producing a voltage between its leads in opposing polarity to the <em>change</em>.</p>
@@ -22,16 +22,16 @@
 <p>Conversely, to release energy from an inductor, the current through it must be decreased. This means that the inductor&rsquo;s magnetic field must decrease in strength, and that change in field strength self-induces a voltage drop of just the opposite polarity.</p>
 <p>Hypothetically, an inductor left short-circuited will maintain a constant rate of current through it with no external assistance:</p>
 
-<p><img src="/uploads/articles/short-circuite-constant-rate-of-current.png" /></p>
+^[109-03.png]
 
 <p>Practically speaking, however, the ability for an inductor to self-sustain current is realized only with superconductive wire, as the wire resistance in any normal inductor is enough to cause current to decay very quickly with no external source of power.</p>
 <p>When the current through an inductor is increased, it drops a voltage opposing the direction of current flow, acting as a power load. In this condition, the inductor is said to be <em>charging</em>, because there is an increasing amount of energy being stored in its magnetic field. Note the polarity of the voltage with regard to the direction of current:</p>
 
-<p><img src="/uploads/articles/magnetic-load-inductance.png" /></p>
+^[109-04.png]
 
 <p>Conversely, when the current through the inductor is decreased, it drops a voltage aiding the direction of current flow, acting as a power source. In this condition, the inductor is said to be <em>discharging</em>, because its store of energy is decreasing as it releases energy from its magnetic field to the rest of the circuit. Note the polarity of the voltage with regard to the direction of current.</p>
 
-<p><img src="/uploads/articles/Screen_Shot_2020-05-28_at_9.34.47_AM_.png" /></p>
+^[109-05.png]
 
 <p>If a source of electric power is suddenly applied to an unmagnetized inductor, the inductor will initially resist current flow by dropping the full voltage of the source. As current begins to increase, a stronger and stronger magnetic field will be created, absorbing energy from the source. Eventually the current reaches a maximum level, and stops increasing. At this point, the inductor stops absorbing energy from the source and is dropping minimum voltage across its leads, while the current remains at a maximum level.</p>
 <p>As an inductor stores more energy, its current level increases, while its voltage drop decreases. Note that this is precisely the opposite of capacitor behavior, where the storage of energy results in an increased voltage across the component! Whereas capacitors store their energy charge by maintaining a static voltage, inductors maintain their energy &ldquo;charge&rdquo; by maintaining a steady current through the coil.</p>
