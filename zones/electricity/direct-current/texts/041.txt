@@ -2,7 +2,7 @@
 
 # Troubleshooting Series and Parallel Circuits
 
-^[041-01.jpg]
+^[041-01.webp]
 
 <h3 class="text-lg lg:text-2xl font-bold mb-3">Troubleshooting a Series and Parallel Circuit</h3>
 <p><p>The jobs of electronics engineers and technicians frequently entail troubleshooting malfunctioning circuits to locate and correct a problem. We will explore some of the effects of resistor failures in both series and parallel circuits.</p></p>
@@ -19,7 +19,7 @@
 ## How to Troubleshoot Short a Circuit in a Series Circuit
 <p>Let&rsquo;s start with the simple series circuit (Figure 1), which consists of a 9 V battery and three resistors in series.</p>
 
-^[041-02.jpg]
+^[041-02.webp]
 
 <em><strong>Figure 1. </strong>Series circuit example without failures.</em>
 
@@ -27,12 +27,12 @@
 
 <em><strong>Table 1. </strong>The Ohm&rsquo;s law table method is applied&nbsp;to the series circuit of Figure 1.</em>
 
-^[041-03.jpg]
+^[041-03.webp]
 
 <p>The values in regular font are the terms that can be filled directly from the circuit. The bold values are calculated using Ohm&rsquo;s law and the rules for series circuits.</p>
 <p>Now let us suppose that resistor R<sub>2</sub> fails as a short circuit, as illustrated in Figure 2. A short circuit means that the resistor now acts as a straight piece of wire with little or no resistance. What causes the shorted condition of R<sub>2</sub> does not matter to us in this example; we only care about its effect on the circuit. The circuit will behave as though a jumper wire were connected across R<sub>2</sub>. If you were wondering, a jumper wire is a common term for a temporary wire connection in a circuit.</p>
 
-^[041-04.jpg]
+^[041-04.webp]
 
 <em><strong>Figure 2. </strong>Series circuit with a short circuit of resistor R<sub>2</sub>.</em>
 
@@ -41,7 +41,7 @@
 
 <em><strong>Table 2.</strong> Recalculating the circuit V, I, and R after the shorting of resistor R<sub>2</sub>.</em>
 
-^[041-05.jpg]
+^[041-05.webp]
 
 <p>With the increase of the circuit current from 20 to 60 mA, the voltage drops across R<sub>1</sub> and R<sub>3</sub> (which haven&rsquo;t changed resistances) increase as well, so that the two resistors are dropping the whole 9 V. R<sub>2</sub> is effectively eliminated from the circuit with the resistance from one lead to the other having been reduced to zero. Thus, the voltage drop across R<sub>2</sub>, even with the increased total current, is 0 V.</p>
 <p>Now, let&rsquo;s apply this change in circuit behavior to troubleshooting. If the circuit current is higher than expected, look for a short circuit in one or more of the components. Measuring the voltage across each component can help identify the short&#39;s location. The short-circuited component will have a very low voltage drop across it.</p>
@@ -56,7 +56,7 @@
 ## Troubleshooting Open Circuits in Series Circuits
 <p>Another type of electronics component failure is an open circuit failure where resistance increases to nearly infinite levels. If R<sub>2</sub> were to fail open, it would create wide-reaching effects in the rest of the circuit, as illustrated in Figure 3.</p>
 
-^[041-06.jpg]
+^[041-06.webp]
 
 <em><strong>Figure 3.</strong> Series circuit with open circuit failure of resistor R<sub>2</sub></em>
 
@@ -64,7 +64,7 @@
 
 <em><strong>Table 3. </strong>Recalculating the circuit V, I, and R with an open circuit failure of resistor R2</em>
 
-^[041-07.jpg]
+^[041-07.webp]
 
 <p>With R<sub>2</sub> at infinite resistance, the total series circuit is now also infinite. Therefore, the total current decreases to zero. With zero circuit current, there is no current to produce voltage drops across R<sub>1</sub> or R<sub>3</sub>. R<sub>2</sub>. On the other hand, this will manifest the full supply voltage across its terminals.</p>
 <p>Based on these results, we can apply this lesson to troubleshooting. If we observe a circuit current that is much too low or even zero, we can deduce that there is a short circuit somewhere within the circuit. Using a voltmeter, we could find the component or section of the circuit that has all or most of the voltage dropped across it; this will be the location of the open circuit.</p>
@@ -74,7 +74,7 @@
 <p>We can apply the same before and after analysis techniques to troubleshoot parallel circuits that we used in the previous section.&nbsp;</p>
 <p>First, we will start by determining how the &ldquo;healthy&rdquo; parallel circuit of Figure 4 should behave.</p>
 
-^[041-08.jpg]
+^[041-08.webp]
 
 <em><strong>Figure 4. </strong>Parallel circuit example without failures.</em>
 
@@ -82,11 +82,11 @@
 
 <em><strong>Table 4. </strong>Application of the Ohm&rsquo;s law table method to the parallel circuit of Figure 4.</em>
 
-^[041-09.jpg]
+^[041-09.webp]
 
 <p>In an ideal case (with perfect voltage sources and zero-resistance connecting wire), shorted resistors in a simple parallel circuit will have no effect on what&rsquo;s happening in the other branches of the circuit. In real life, the effect is not quite the same, and we&rsquo;ll see why in the following example circuit of Figure 5.</p>
 
-^[041-10.jpg]
+^[041-10.webp]
 
 <em><strong>Figure 5. </strong>Parallel circuit with a short circuit of resistor R<sub>2</sub>.</em>
 
@@ -94,7 +94,7 @@
 
 <em><strong>Table 5. </strong>Recalculating the circuit V, I, and R with an open circuit failure of resistor R<sub>2</sub>.</em>
 
-^[041-11.jpg]
+^[041-11.webp]
 
 <p>As long as the voltage source holds steady at 9 V while supplying infinite current, the other branch currents, through resistors R<sub>1</sub> and R<sub>3</sub>, will remain unchanged.</p>
 
@@ -102,14 +102,14 @@
 <p>However, the critical assumption in this &ldquo;perfect&rdquo; scheme is that the voltage supply will hold steady at its rated voltage while supplying an infinite amount of current to a short-circuit load. This is simply not realistic. Even if the short has a small amount of resistance (as opposed to absolutely zero resistance), no real voltage source could arbitrarily supply a huge overload current and maintain the steady voltage simultaneously.</p>
 <p>This situation is primarily due to the internal resistance intrinsic to all electrical power sources, stemming from the inescapable physical properties of the materials they&rsquo;re constructed of, as illustrated in Figure 6.</p>
 
-^[041-12.jpg]
+^[041-12.webp]
 
 <em><strong>Figure 6. </strong>The internal&nbsp;resistance of a voltage source.</em>
 
 <p>These internal resistances, small as they may be, turn our simple parallel circuit into a series-parallel combination circuit. Usually, the internal resistances of voltage sources are low enough to be safely ignored, but when high currents resulting from shorted components are encountered, their effects become very noticeable.</p>
 <p>In our more complex circuit of Figure 7, a shorted R<sub>2</sub> would result in almost all the voltage being dropped across the internal resistance of the battery, with almost no voltage left over for resistors R<sub>1</sub>, R<sub>2</sub>, and R<sub>3</sub>.</p>
 
-^[041-13.jpg]
+^[041-13.webp]
 
 <em><strong>Figure 7. </strong>The realistic&nbsp;voltage source in a parallel circuit with a short circuit.</em>
 
@@ -117,7 +117,7 @@
 
 <em><strong>Table 6. </strong>Estimating voltages and currents with a short circuit in a parallel circuit.</em>
 
-^[041-14.jpg]
+^[041-14.webp]
 
 <p>Whereas the normal application of Ohm&rsquo;s law and the rules of series and parallel circuits is performed with numerical quantities (&ldquo;quantitative&rdquo;), this kind of analysis, without precise numerical figures, is something we&rsquo;d like to call &ldquo;qualitative analysis.&rdquo; In other words, we can analyze the qualities of the effects in a circuit rather than the precise quantities. The result, for you, will be a much deeper intuitive understanding of electric circuit operation. It also allows us to proceed with our troubleshooting without having precise numerical values.</p>
 <p>It is sufficient to say intentional direct short circuits across the terminals of any voltage source are a bad idea. Even if the resulting high current (heat, flashes, sparks) causes no harm to people nearby, the voltage source will likely sustain damage unless it has been specifically designed to handle short circuits, which most voltage sources are not.</p>
@@ -125,7 +125,7 @@
 ## Troubleshooting Open Circuits in a Parallel Circuit
 <p>Now, let&rsquo;s examine an open circuit in our parallel circuit of Figure 8.</p>
 
-^[041-15.jpg]
+^[041-15.webp]
 
 <em><strong>Figure 8. </strong>Parallel circuit with open circuit failure of resistor R<sub>2</sub>.</em>
 
@@ -133,7 +133,7 @@
 
 <em><strong>Table 7. </strong>Recalculating the circuit V, I, and R with an open circuit failure of resistor R<sub>2</sub>.</em>
 
-^[041-16.jpg]
+^[041-16.webp]
 
 <p>Notice that in this parallel circuit, an open branch only affects the current through that branch and the circuit&rsquo;s total current. The total voltage of 9 V is shared equally across all components in a parallel circuit and will be the same for all resistors.&nbsp;</p>
 <p>Since the voltage source&rsquo;s tendency is to hold the voltage constant, its voltage will not change. In addition, since the voltage is the only common parameter in a parallel circuit and the other resistors haven&rsquo;t changed resistance value, their respective branch currents remain unchanged.</p>
@@ -141,7 +141,7 @@
 ## Household Lighting Example of a Parallel Circuit
 <p>In household lighting, all of the lights get their operating voltage from power wiring arranged in a parallel fashion, as shown in Figure 9. Turning one lamp off creates an open circuit in that branch of the circuit.</p>
 
-^[041-17.jpg]
+^[041-17.webp]
 
 <em><strong>Figure 9. </strong>Parallel circuit with open circuit failure of resistor R<sub>2</sub>.</em>
 

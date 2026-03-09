@@ -2,7 +2,7 @@
 
 # Branch Current Method Analysis
 
-^[072-01.jpg]
+^[072-01.webp]
 
 ## What is the Branch Current Method Used in Network Analysis?
 <p><p>The branch current method is a network analysis technique in which branch current directions are assigned arbitrarily, and then Ohm&rsquo;s law and Kirchhoff&rsquo;s current and voltage laws are applied systematically to solve for the unknown currents and voltages.</p></p>
@@ -11,21 +11,21 @@
 ## Selecting a Circuit Node and Branch Current Assignments
 <p>To begin with, let&rsquo;s use the circuit in Figure 1 to explain the application of the branch current method.&nbsp;We will use this same example circuit to teach other network analysis methods, including Mesh Current, Superposition Theorem, Thevenin&rsquo;s Theorem, Norton&rsquo;s Theorem, and Millman&rsquo;s Theorem.</p>
 
-^[072-02.jpg]
+^[072-02.webp]
 
 <em><strong>Figure 1.</strong> Circuit for explaining the branch current method.</em>
 
 ### Select&nbsp;a Circuit Node
 <p>The first step is to choose a node (junction of wires) in the circuit to use as a point of reference for our unknown currents. We&rsquo;ll choose the node joining the right of R<sub>1</sub>, the top of R<sub>2</sub>, and the left of R<sub>3</sub>,&nbsp;as shown in Figure 2.</p>
 
-^[072-03.jpg]
+^[072-03.webp]
 
 <em><strong>Figure 2. </strong>Select a circuit node at which you will define the unknown currents.</em>
 
 ### Assign Currents at the Node
 <p>At this node, we will guess which directions the three wire&rsquo;s currents take, labeling the three currents as I<sub>1</sub>, I<sub>2</sub>, and I<sub>3</sub>, respectively, as illustrated in Figure 3.&nbsp;</p>
 
-^[072-04.jpg]
+^[072-04.webp]
 
 <em><strong>Figure 3.</strong> Define all the unknown currents at the selected node.</em>
 
@@ -43,7 +43,7 @@
 ### Step 1: Label All Voltage Drops
 <p>Before applying KVL, we will label all of the voltage drop polarities across resistors according to the assumed directions of the currents. The polarity is positive where the current enters the resistor and negative where it exits the resistor, as shown in Figure 4.&nbsp;</p>
 
-^[072-05.jpg]
+^[072-05.webp]
 
 <em><strong>Figure 4.</strong> Label the voltage drops across the resistors.</em>
 
@@ -56,19 +56,19 @@
 <p>Kirchhoff&rsquo;s voltage law tells us that the algebraic sum of all voltages in a loop must equal zero. We must tally voltage drops in a loop of the circuit as though we measure with a real voltmeter.</p>
 <p>First, let&rsquo;s trace the left loop of this circuit first, starting from the upper-left corner and moving counter-clockwise (the choice of starting points and directions is arbitrary). The sequence of voltage measurements is shown below in Figures 5 through 8.&nbsp;</p>
 
-^[072-06.jpg]
+^[072-06.webp]
 
 <em><strong>Figure 5. </strong>Measure the voltage across battery B1.</em>
 
-^[072-07.jpg]
+^[072-07.webp]
 
 <em><strong>Figure 6. </strong>Measure the voltage across the bottom wire segment.</em>
 
-^[072-08.jpg]
+^[072-08.webp]
 
 <em><strong>Figure 7.</strong> Measure the voltage across resistor R<sub>2</sub>.</em>
 
-^[072-09.jpg]
+^[072-09.webp]
 
 <em><strong>Figure 8. </strong>Measure the voltage across resistor R<sub>1</sub>.</em>
 
@@ -98,19 +98,19 @@
 ### Step 4: Apply&nbsp;Kirchhoff&rsquo;s Voltage Law (KVL) to the Right Circuit Loop
 <p>Next, let&rsquo;s apply the same steps to the right loop of the circuit, beginning by recording the voltage drops. We&rsquo;ll arbitrarily start at the originally chosen node and move counter-clockwise around the right loop, as illustrated in Figures 9 through 12.&nbsp;</p>
 
-^[072-10.jpg]
+^[072-10.webp]
 
 <em><strong>Figure 9.</strong> Measure the voltage across resistor R<sub>2</sub>.</em>
 
-^[072-11.jpg]
+^[072-11.webp]
 
 <em><strong>Figure 10. </strong>Measure the voltage across the bottom wire segment.</em>
 
-^[072-12.jpg]
+^[072-12.webp]
 
 <em><strong>Figure 11.</strong> Measure the voltage across battery B<sub>2</sub>.</em>
 
-^[072-13.jpg]
+^[072-13.webp]
 
 <em><strong>Figure 12.</strong> Measure the voltage across resistor R<sub>3</sub>.</em>
 
@@ -169,7 +169,7 @@ However, what does &ldquo;negative&rdquo; current mean? In this case, it means t
 ## Redraw the Circuit
 <p>Going back to our original circuit, we can redraw the current arrow for I<sub>3</sub> in the correct direction and redraw the polarity of the voltage drop across R<sub>3</sub> to match, as shown in Figure 13.&nbsp;</p>
 
-^[072-14.jpg]
+^[072-14.webp]
 
 <em><strong>Figure 13.</strong> Solution of our circuit currents and voltage drops.</em>
 
@@ -190,7 +190,7 @@ However, what does &ldquo;negative&rdquo; current mean? In this case, it means t
 <p>Finally, let us now analyze this same network of Figure 13 using SPICE to verify our voltage results. As a side note, we could also analyze current with SPICE, which requires inserting extra voltage sources into the circuit. Besides, we know that if the voltages are all the same and the resistances are the same, the currents must all be the same. In that case, we will opt for the less complex analysis.&nbsp;</p>
 <p>Figure 14 is a re-drawing of our circuit, complete with node numbers for SPICE to reference.</p>
 
-^[072-15.jpg]
+^[072-15.webp]
 
 <em><strong>Figure 14.</strong> Adding SPICE node numbers to the circuit.&nbsp;</em>
 

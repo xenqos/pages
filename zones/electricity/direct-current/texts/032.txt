@@ -5,11 +5,11 @@
 ## A Simple Circuit Simulation with SPICE
 <p>Let&rsquo;s start with a very simple circuit composed of one voltage source (a battery) and one resistor:</p>
 
-^[032-01.jpg]
+^[032-01.webp]
 
 <p>To simulate this circuit using SPICE, we first have to designate node numbers for all the distinct points in the circuit, then list the components along with their respective node numbers so the computer knows which component is connected to which, and how. For a circuit of this simplicity, the use of SPICE seems like overkill, but it serves the purpose of demonstrating the practical use of scientific notation:</p>
 
-^[032-02.jpg]
+^[032-02.webp]
 
 <p>Typing out a circuit description file, or <em>netlist</em>, for this circuit, we get this:</p>
 
@@ -30,7 +30,7 @@ node    voltage&#10; ( 1)    24.0000&#10; voltage source currents&#10; &#10; nam
 
 <p>Let&rsquo;s modify our example circuit so that it has a 5 k&Omega; (5 kilo-ohm, or 5,000 ohm) resistor instead of a 5 &Omega; resistor and see what happens.</p>
 
-^[032-03.jpg]
+^[032-03.webp]
 
 <p>Once again is our circuit description file, or &ldquo;netlist:&rdquo;</p>
 

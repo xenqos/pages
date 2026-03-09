@@ -37,11 +37,11 @@
 <p>Because capacitors store energy in the form of an electric field, they tend to act like small secondary-cell batteries, being able to store and release electrical energy. A fully discharged capacitor maintains zero volts across its terminals, and a charged capacitor maintains a steady quantity of voltage across its terminals, just like a battery.</p>
 <p>When capacitors are placed in a circuit with other sources of voltage, they will absorb energy from those sources, just as a secondary-cell battery will become charged as a result of being connected to a generator. A fully discharged capacitor, having a terminal voltage of zero, will initially act as a short-circuit when attached to a source of voltage, drawing maximum current as it begins to build a charge.</p>
 <p>Over time, the capacitor&rsquo;s terminal voltage rises to meet the applied voltage from the source, and the current through the capacitor decreases correspondingly. Once the capacitor has reached the full voltage of the source, it will stop drawing current from it, and behave essentially as an open-circuit.</p>
-<a target='_blank' href='../images/115-01.jpg'><img class='clImageThumb' src='../images/115-01.jpg'></a><br>
+<a target='_blank' href='../images/115-01.webp'><img class='clImageThumb' src='../images/115-01.webp'></a><br>
 
 <p>When the switch is first closed, the voltage across the capacitor (which we were told was fully discharged) is zero volts; thus, it first behaves as though it were a short-circuit. Over time, the capacitor voltage will rise to equal battery voltage, ending in a condition where the capacitor behaves as an open-circuit.</p>
 <p>Current through the circuit is determined by the difference in voltage between the battery and the capacitor, divided by the resistance of 10 k&Omega;. As the capacitor voltage approaches the battery voltage, the current approaches zero. Once the capacitor voltage has reached 15 volts, the current will be exactly zero. Let&rsquo;s see how this works using real values:</p>
-<a target='_blank' href='../images/115-02.jpg'><img class='clImageThumb' src='../images/115-02.jpg'></a><br>
+<a target='_blank' href='../images/115-02.webp'><img class='clImageThumb' src='../images/115-02.webp'></a><br>
 
 <div class='clOverflow'>
 <table>
@@ -61,7 +61,7 @@
 
 <p>The capacitor voltage&rsquo;s approach to 15 volts and the current&rsquo;s approach to zero over time is what a mathematician would describe as <em>asymptotic</em><em>:</em> that is, they both approach their final values, getting closer and closer over time, but never exactly reach their destinations. For all practical purposes, though, we can say that the capacitor voltage will eventually reach 15 volts and that the current will eventually equal zero.</p>
 <p>Using the SPICE circuit analysis program, we can chart this asymptotic buildup of capacitor voltage and decay of capacitor current in a more graphical form (capacitor current is plotted in terms of voltage drop across the resistor, using the resistor as a shunt to measure current):</p>
-<a target='_blank' href='../images/115-03.png'><img class='clImageThumb' src='../images/115-03.png'></a><br>
+<a target='_blank' href='../images/115-03.webp'><img class='clImageThumb' src='../images/115-03.webp'></a><br>
 
 <p>As you can see, I have used the <em>.plot</em> command in the netlist instead of the more familiar <em>.printcommand</em>. This generates a pseudo-graphic plot of figures on the computer screen using text characters. SPICE plots graphs in such a way that time is on the vertical axis (going down) and amplitude (voltage/current) is plotted on the horizontal (right=more; left=less).</p>
 <p>Notice how the voltage increases (to the right of the plot) very quickly at first, then tapering off as time goes on. Current also changes very quickly at first then levels off as time goes on, but it is approaching minimum (left of scale) while voltage approaches maximum.</p>

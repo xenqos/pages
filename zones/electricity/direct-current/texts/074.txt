@@ -2,7 +2,7 @@
 
 # Solving Unbalanced Wheatstone Bridge Circuits Via Mesh Current Method
 
-^[074-01.jpg]
+^[074-01.webp]
 
 <h3 class="text-lg lg:text-2xl font-bold mb-3">Using the Mesh Current Method to Solve Unbalanced Wheatstone Bridge Circuits</h3>
 <p><p>Solving for the currents and voltages in an unbalanced Wheatstone bridge circuit can be challenging. Learn about solving currents and voltages using the mesh current method.</p></p>
@@ -11,7 +11,7 @@
 ## Unbalanced Wheatstone Bridge
 <p>First, let&rsquo;s determine the voltages and currents for the unbalanced Wheatstone bridge circuit of Figure 1.</p>
 
-^[074-02.jpg]
+^[074-02.webp]
 
 <em><strong>Figure 1.</strong> Unbalanced Wheatstone bridge circuit schematic.</em>
 
@@ -30,13 +30,13 @@
 ## Step 1: Identify and Label the Current Loops
 <p>The first step in the mesh current method is to draw just enough mesh currents to account for all components in the circuit. Looking at our bridge circuit, it should be obvious where to place two of these current loops, as shown in Figure 2.</p>
 
-^[074-03.jpg]
+^[074-03.webp]
 
 <em><strong>Figure 2. </strong>Current loops 1 and 2 were added to the Wheatstone bridge circuit.</em>
 
 <p>The directions of these mesh currents, of course, are arbitrary. However, two mesh currents are insufficient in this circuit because neither I<sub>1</sub> nor I<sub>2</sub> go through the battery. Thus, we must add a third mesh current, I<sub>3</sub>, as illustrated in Figure 3.</p>
 
-^[074-04.jpg]
+^[074-04.webp]
 
 <em><strong>Figure 3. </strong>Current loop 3 added to the Wheatstone bridge circuit.</em>
 
@@ -45,7 +45,7 @@
 ## Step 2: Label the Voltage Drop Polarities
 <p>Now, we must label the resistor voltage drop polarities, following each current direction (Figure 4).</p>
 
-^[074-05.jpg]
+^[074-05.webp]
 
 <em><strong>Figure 4. </strong>Label the voltage drop polarities.</em>
 
@@ -110,7 +110,7 @@
 <p>The negative values for currents I<sub>1</sub> and I<sub>3</sub> indicate that our assumed current directions were in the wrong direction. For I<sub>3</sub>, it makes intuitive sense because the current would have to flow out of the only power source in our circuit.</p>
 <p>Thus, the actual loop current directions and the directions resistor are shown in Figure 5.</p>
 
-^[074-06.jpg]
+^[074-06.webp]
 
 <em><strong>Figure 5. </strong>Correcting the loop current directions and determining the branch resistor currents.</em>
 
@@ -142,7 +142,7 @@
 ## Using SPICE to Verify Our Voltage Calculations
 <p>Next, to confirm the accuracy of our voltage calculations, we can use a SPICE simulation using the circuit of Figure 6.</p>
 
-^[074-07.jpg]
+^[074-07.webp]
 
 <em><strong>Figure 6. </strong>Node number labeling for SPICE simulation.</em>
 

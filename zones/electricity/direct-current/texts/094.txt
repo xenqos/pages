@@ -4,7 +4,7 @@
 ## Designing Wire Resistance
 <p>Conductor ampacity rating is a crude assessment of resistance based on the potential for current to create a fire hazard. However, we may come across situations where the voltage drop created by wire resistance in a circuit poses concerns other than fire avoidance. For instance, we may be designing a circuit where voltage across a component is critical, and must not fall below a certain limit. If this is the case, the voltage drops resulting from wire resistance may cause an engineering problem while being well within safe (fire) limits of ampacity:</p>
 
-^[094-01.png]
+^[094-01.webp]
 
 <p>If the load in the above circuit will not tolerate less than 220 volts, given a source voltage of 230 volts, then we&rsquo;d better be sure that the wiring doesn&rsquo;t drop more than 10 volts along the way. Counting both the supply and return conductors of this circuit, this leaves a maximum tolerable drop of 5 volts along the length of each wire. Using Ohm&rsquo;s Law (R=V/I), we can determine the maximum allowable resistance for each piece of wire:</p>
 <p>$$R = \frac{V}{I} = \frac{5 \text{ V}}{25 \text{ A}} = 0.2 \text{ }\Omega$$</p>
@@ -56,7 +56,7 @@
 
 <p>Remember that this is 5.651 &Omega; per 2300 feet of 14-gauge copper wire, and that we have two runs of 2300 feet in the entire circuit, so <em>each</em> wire piece in the circuit has 5.651 &Omega; of resistance:</p>
 
-^[094-02.png]
+^[094-02.webp]
 
 <p>Our total circuit wire resistance is 2 times 5.651, or 11.301 &Omega;. Unfortunately, this is <em>far</em> too much resistance to allow 25 amps of current with a source voltage of 230 volts. Even if our load resistance was 0 &Omega;, our wiring resistance of 11.301 &Omega; would restrict the circuit current to a mere 20.352 amps! As you can see, a &ldquo;small&rdquo; amount of wire resistance can make a big difference in circuit performance, especially in power circuits where the currents are much higher than typically encountered in electronic circuits.</p>
 <p>Let&rsquo;s do an example resistance problem for a piece of custom-cut busbar. Suppose we have a piece of solid aluminum bar, 4 centimeters wide by 3 centimeters tall by 125 centimeters long, and we wish to figure the end-to-end resistance along the long dimension (125 cm). First, we would need to determine the cross-sectional area of the bar:</p>

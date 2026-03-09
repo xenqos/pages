@@ -6,19 +6,19 @@
 ## Maximum Power Transfer Example
 <p>Taking our Thevenin equivalent example circuit, the Maximum Power Transfer Theorem tells us that the load resistance resulting in greatest power dissipation is equal in value to the Thevenin resistance (in this case, 0.8 &Omega;):</p>
 
-^[083-01.jpg]
+^[083-01.webp]
 
 <p>With this value of load resistance, the dissipated power will be 39.2 watts:</p>
 
-^[083-02.jpg]
+^[083-02.webp]
 
 <p>If we were to try a lower value for the load resistance (0.5 &Omega; instead of 0.8 &Omega;, for example), our power dissipated by the load resistance would decrease:</p>
 
-^[083-03.jpg]
+^[083-03.webp]
 
 <p>Power dissipation increased for both the Thevenin resistance and the total circuit, but it decreased for the load resistor. Likewise, if we increase the load resistance (1.1 &Omega; instead of 0.8 &Omega;, for example), power dissipation will also be less than it was at 0.8 &Omega; exactly:</p>
 
-^[083-04.jpg]
+^[083-04.webp]
 
 <p>If you were designing a circuit for maximum power dissipation at the load resistance, this theorem would be very useful. Having reduced a network down to a Thevenin voltage and resistance (or Norton current and resistance), you simply set the load resistance equal to that Thevenin or Norton equivalent (or vice versa) to ensure maximum power dissipation at the load. Practical applications of this might include radio transmitter final amplifier stage design (seeking to maximize the power delivered to the antenna or transmission line), a <em>grid-tied inverter</em> loading a solar array, or electric vehicle design (seeking to maximize the power delivered to drive motor).</p>
 ## Maximum Power Doesn&rsquo;t Mean Maximum Efficiency

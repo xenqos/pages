@@ -5,7 +5,7 @@
 <p>The principle that &ldquo;current kills&rdquo; is essentially correct. It is electric current that burns tissue, freezes muscles, and fibrillates hearts. However, electric current doesn&rsquo;t just occur on its own: there must be voltage available to motivate the current to flow through a victim. A person&rsquo;s body also presents resistance to the current, which must be taken into account.</p>
 <p>Taking Ohm&rsquo;s Law for voltage, current, and resistance, and expressing it in terms of current for a given voltage and resistance, we have this equation:</p>
 
-^[020-01.jpg]
+^[020-01.webp]
 
 <p>The amount of current through a body is equal to the amount of voltage applied between two points on that body, divided by the electrical resistance offered by the body between those two points. Obviously, the more voltage available to cause the current to flow, the easier it will flow through any given amount of resistance.</p>
 <p>Hence, the danger of high voltage that can generate enough current to cause injury or death. Conversely, if a body presents higher resistance, less current will flow for any given amount of voltage. Just how much voltage is dangerous depends on how much total resistance is in the circuit to oppose the flow of electric current.</p>
@@ -21,7 +21,7 @@
 <p>Others can draw large sparks from discharging static electricity and hardly feel it, much less experience a muscle spasm. Despite these differences, approximate guidelines have been developed through tests which indicate very little current being necessary to manifest harmful effects (again, see the end of the chapter for information on the source of this data).</p>
 <p>All current figures given in milliamps (a milliamp is equal to 1/1000 of an amp):</p>
 
-^[020-02.jpg]
+^[020-02.webp]
 
 <p>A table of the effects of electricity on the body</p>
 
@@ -54,11 +54,11 @@
 
 <p>Note the resistance values of the two conditions involving a 1.5-inch metal pipe. The resistance measured with two hands grasping the pipe is exactly one-half the resistance of one hand grasping the pipe.</p>
 
-^[020-03.jpg]
+^[020-03.webp]
 
 <p>With two hands, the bodily contact area is twice as great as with one hand. This is an important lesson to learn: electrical resistance between any contacting objects diminishes with increased contact area, all other factors being equal. With two hands holding the pipe, the current has two, <em>parallel</em> routes through which to flow from the pipe to the body (or vice-versa).</p>
 
-^[020-04.jpg]
+^[020-04.webp]
 
 <p>As we will see in a later chapter, <em>parallel</em> circuit pathways always result in less overall resistance than any single pathway considered alone.</p>
 <p>In industry, 30 volts is generally considered to be a conservative threshold value for dangerous voltage. The cautious person should regard any voltage above 30 volts as threatening, not relying on normal body resistance for protection against shock. That being said, it is still an excellent idea to keep one&rsquo;s hands clean and dry and remove all metal jewelry when working around electricity.</p>
@@ -73,15 +73,15 @@
 <p>For those who are left-handed, this advice may not be the best. If such a person is sufficiently uncoordinated with their right hand, they may be placing themselves in greater danger by using the hand they&rsquo;re least comfortable with, even if shock current through that hand might present more of a hazard to their heart. The relative hazard between shock through one hand or the other is probably less than the hazard of working with less than optimal coordination, so the choice of which hand to work with is best left to the individual.</p>
 <p>The best protection against shock from a live circuit is resistance, and resistance can be added to the body through the use of insulated tools, gloves, boots, and other gear. Current in a circuit is a function of available voltage divided by the <em>total</em> resistance in the path of the flow. As we will investigate in greater detail later in this book, resistances have an additive effect when they&rsquo;re stacked up so that there&rsquo;s only one path for current to flow:</p>
 
-^[020-05.jpg]
+^[020-05.webp]
 
-^[020-06.jpg]
+^[020-06.webp]
 
 <p>Now we&rsquo;ll see an equivalent circuit for a person wearing insulated gloves and boots:</p>
 
-^[020-07.jpg]
+^[020-07.webp]
 
-^[020-08.jpg]
+^[020-08.webp]
 
 <p>Because electric current must pass through the boot <em>and</em> the body <em>and</em> the glove to complete its circuit back to the battery, the combined total (<em>sum</em>) of these resistances opposes the flow of current to a greater degree than any of the resistances considered individually.</p>
 <p>Safety is one of the reasons electrical wires are usually covered with plastic or rubber insulation: to vastly increase the amount of resistance between the conductor and whoever or whatever might contact it.</p>

@@ -2,7 +2,7 @@
 
 # Superposition Theorem
 
-^[078-01.jpg]
+^[078-01.webp]
 
 <h3 class="text-lg lg:text-2xl font-bold mb-3">How to Use the Superposition Theorem to Analyze a Linear Circuit?</h3>
 <p><p>The superposition theorem states that any linear circuit with more than one power source can be analyzed by summing the currents and voltages from each individual power source.&nbsp;</p></p>
@@ -16,7 +16,7 @@
 ## Explaining the Superposition Theorem in Circuit Analysis
 <p>Before getting too far, let&#39;s explain the superposition theorem using the linear circuit example of Figure 1.&nbsp;</p>
 
-^[078-02.jpg]
+^[078-02.webp]
 
 <em><strong>Figure 1. </strong>Circuit schematic for explaining the superposition theorem.</em>
 
@@ -38,13 +38,13 @@
 </ol>
 <p>Since we only have voltage sources (batteries) in our example circuit in Figure 1, we will replace every inactive source during analysis with a short circuit wire. For example, in Figure 2, we have replaced the battery, B<sub>2</sub>, with a short circuit.</p>
 
-^[078-03.jpg]
+^[078-03.webp]
 
 <em><strong>Figure 2. </strong>Battery B<sub>2</sub> replaced with a short circuit</em>
 
 <p>On the other hand, Figure 3 has a battery, B<sub>1</sub>, that has been replaced with a short circuit.</p>
 
-^[078-04.jpg]
+^[078-04.webp]
 
 <em><strong>Figure 3.</strong> Battery B<sub>1</sub> was replaced with a short circuit.</em>
 
@@ -53,11 +53,11 @@
 
 <em><strong>Table 1.</strong> Voltage and current values were calculated for the circuit with B<sub>2</sub> removed.</em>
 
-^[078-05.jpg]
+^[078-05.webp]
 
 <p>Now, we can add the voltages and currents into the circuit drawing, as shown in Figure 4, paying careful attention to make sure we label the voltage drops with the correct polarity and the currents with the correct direction of flow.&nbsp;</p>
 
-^[078-06.jpg]
+^[078-06.webp]
 
 <em><strong>Figure 4.</strong> Voltages and currents are added to the circuit powered only by battery B<sub>1</sub>.</em>
 
@@ -68,9 +68,9 @@
 
 <em><strong>Table 2. </strong>Voltage and current values were calculated for the circuit with B<sub>1</sub> removed.</em>
 
-^[078-07.jpg]
+^[078-07.webp]
 
-^[078-08.jpg]
+^[078-08.webp]
 
 <em><strong>Figure 5. </strong>Voltages and currents are added to the circuit powered only by battery B<sub>2</sub>.</em>
 
@@ -78,26 +78,26 @@
 <p>When superimposing these values of voltage and current, we must be careful to consider the polarity of the voltage drop and the direction of the current flow, as the values have to be added algebraically.</p>
 <p>Figure 6 shows the superposition of the resistor voltage drops.</p>
 
-^[078-09.jpg]
+^[078-09.webp]
 
 <em><strong>Figure 6. </strong>Superposition of the resistor voltage drops.</em>
 
 <p>Meanwhile, Figure 7 shows the circuit after adding the superimposed voltage values.</p>
 
-^[078-10.jpg]
+^[078-10.webp]
 
 <em><strong>Figure 7.</strong> Application of the superimposed voltage values.</em>
 
 <p>The resistor currents add up algebraically as well and can either be superimposed using resistor voltage drops or calculated from the final voltage drops and respective resistances (I = V/R). Either way, the answers will be the same.&nbsp;</p>
 <p>Figure 8 demonstrates how the superposition method is applied to the currents.</p>
 
-^[078-11.jpg]
+^[078-11.webp]
 
 #### <strong>Figure 8. </strong>Superposition of the resistor voltage drops.
 
 <p>Next, adding these superimposed current values results in the circuit of Figure 9.</p>
 
-^[078-12.jpg]
+^[078-12.webp]
 
 <em><strong>Figure 9. </strong>Application of the superimposed current values.</em>
 

@@ -9,7 +9,7 @@
 ## Analyzing a Simple Circuit
 <p>To illustrate how even a simple circuit can defy analysis by breakdown into series and parallel portions, let&rsquo;s start with the series-parallel circuit shown in Figure 1.</p>
 
-^[071-01.jpg]
+^[071-01.webp]
 
 <em><strong>Figure 1.</strong>&nbsp;A simple series-parallel circuit.</em>
 
@@ -25,7 +25,7 @@
 ### Two Battery Circuit
 <p>Adding just one more battery to the circuit of Figure 1, as shown in Figure 2, prevents us from using our basic circuit analysis methods.</p>
 
-^[071-02.jpg]
+^[071-02.webp]
 
 <em><strong>Figure 2. </strong>An example of a two-battery&nbsp;circuit that&nbsp;cannot be solved using series-parallel circuit methods.</em>
 
@@ -36,7 +36,7 @@
 ### Unbalanced Bridge Circuit
 <p>Figure 3 is a bridge circuit. If it were balanced with R<sub>1</sub> equal to R<sub>2</sub> and R<sub>4</sub> equal to R<sub>5</sub>, there would be zero current through R<sub>3</sub>, and it could be approached as a series-parallel circuit (R<sub>1</sub>&mdash;R<sub>4</sub> // R<sub>2</sub>&mdash;R<sub>5</sub>).</p>
 
-^[071-03.jpg]
+^[071-03.webp]
 
 <em><strong>Figure 3.</strong>&nbsp;An example bridge circuit that cannot be solved using series-parallel circuit methods.</em>
 

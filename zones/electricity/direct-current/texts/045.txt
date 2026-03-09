@@ -4,50 +4,50 @@
 <p>A parallel circuit is often called a <em>current divider</em> for its ability to proportion&mdash;or divide&mdash;the total current into fractional parts.</p>
 <p>To understand what this means, let&rsquo;s first analyze a simple parallel circuit, determining the branch currents through individual resistors</p>
 
-^[045-01.jpg]
+^[045-01.webp]
 
 <p>Knowing that voltages across all components in a parallel circuit are the same, we can fill in our voltage/current/resistance table with 6 volts across the top row:</p>
 
-^[045-02.jpg]
+^[045-02.webp]
 
 <p>Using Ohm&rsquo;s Law (I=E/R) we can calculate each branch current:</p>
 
-^[045-03.jpg]
+^[045-03.webp]
 
 <p>Knowing that branch currents add up in parallel circuits to equal the total current, we can arrive at total current by summing 6 mA, 2 mA, and 3 mA:</p>
 
-^[045-04.jpg]
+^[045-04.webp]
 
 <p>The final step, of course, is to figure total resistance. This can be done with Ohm&rsquo;s Law (R=E/I) in the &ldquo;total&rdquo; column, or with the parallel resistance formula from individual resistances. Either way, we&rsquo;ll get the same answer:</p>
 
-^[045-05.jpg]
+^[045-05.webp]
 
 <p>Once again, it should be apparent that the current through each resistor is related to its resistance, given that the voltage across all resistors is the same. Rather than being directly proportional, the relationship here is one of inverse proportion. For example, the current through R<sub>1</sub> is twice as much as the current through R<sub>3</sub>, which has twice the resistance of R<sub>1</sub>.</p>
 <p>If we were to change the supply voltage of this circuit, we find that (surprise!) these proportional ratios do not change:</p>
 
-^[045-06.jpg]
+^[045-06.webp]
 
 ## Calculating Current Ratios
 <p>The current through R<sub>1</sub> is still exactly twice that of R<sub>3</sub>, despite the fact that the source voltage has changed. The proportionality between different branch currents is strictly a function of resistance.</p>
 <p>Also reminiscent of voltage dividers is the fact that branch currents are fixed proportions of the total current. Despite the fourfold increase in supply voltage, the ratio between any branch current and the total current remains unchanged:</p>
 
-^[045-07.png]
+^[045-07.webp]
 
 <p>Now we can see for ourselves the point we made at the beginning of this page: A parallel circuit is often called a <em>current divider</em> for its ability to proportion&mdash;or divide&mdash;the total current into fractional parts.</p>
 ## The Current Divider Formula
 <p>With a little bit of algebra, we can derive a formula for determining parallel resistor current given nothing more than total current, individual resistance, and total resistance:</p>
 
-^[045-08.png]
+^[045-08.webp]
 
 <p>The ratio of total resistance to individual resistance is the same ratio as the individual (branch) current to the total current. This is known as the <em>current divider formula</em>, and it is a short-cut method for determining branch currents in a parallel circuit when the total current is known.</p>
 ### Current Divider Formula Example
 <p>Using the original parallel circuit as an example, we can re-calculate the branch currents using this formula, if we start by knowing the total current and total resistance:</p>
 
-^[045-09.png]
+^[045-09.webp]
 
 <p>If you take the time to compare the two divider formulae, you&rsquo;ll see that they are remarkably similar. Notice, however, that the ratio in the voltage divider formula is R<sub>n</sub> (individual resistance) divided by R<sub>Total</sub>, and how the ratio in the current divider formula is R<sub>Total</sub> divided by R<sub>n</sub>:</p>
 
-^[045-10.png]
+^[045-10.webp]
 
 ## Current Divider Formula vs. Voltage Divider Formula
 <p>It is quite easy to confuse these two equations, getting the resistance ratios backward. One way to help remember the proper form is to keep in mind that both ratios in the voltage and current divider equations must be less than one. After all, these are <em>divider</em> equations, not <em>multiplier</em> equations! If the fraction is upside-down, it will provide a ratio greater than one, which is incorrect.</p>
@@ -55,7 +55,7 @@
 ## Current Divider Circuit Example Application: Electric Meter Circuit
 <p>Current divider circuits also find application in electric meter circuits, where a fraction of measured current is desired to be routed through a sensitive detection device. Using the current divider formula, the proper shunt resistor can be sized to proportion just the right amount of current for the device in any given instance:</p>
 
-^[045-11.jpg]
+^[045-11.webp]
 
 <p><strong>REVIEW:</strong></p>
 <ul>

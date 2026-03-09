@@ -18,17 +18,17 @@
 <p>All properly designed circuits have &ldquo;disconnect&rdquo; switch mechanisms for securing voltage from a circuit. Sometimes these &ldquo;disconnects&rdquo; serve a dual purpose of automatically opening under excessive current conditions, in which case we call them &ldquo;circuit breakers&rdquo;.</p>
 <p>Other times, the disconnecting switches are strictly manually-operated devices with no automatic function. In either case, they are there for your protection and must be used properly. Please note that the disconnect device should be separate from the regular switch used to turn the device on and off. It is a safety switch, to be used only for securing the system in a Zero Energy State:</p>
 
-^[021-01.jpg]
+^[021-01.webp]
 
 <p>With the disconnect switch in the &ldquo;open&rdquo; position as shown (no continuity), the circuit is broken and no current will exist. There will be zero voltage across the load, and the full voltage of the source will be dropped across the open contacts of the disconnect switch.</p>
 <p>Note how there is no need for a disconnect switch in the lower conductor of the circuit. Because that side of the circuit is firmly connected to the earth (ground), it is electrically common with the earth and is best left that way. For maximum safety of personnel working on a load of this circuit, a temporary ground connection could be established on the top side of the load, to ensure that no voltage could ever be dropped across the load:</p>
 
-^[021-02.jpg]
+^[021-02.webp]
 
 <p>With the temporary ground connection in place, both sides of the load wiring are connected to ground, securing a Zero Energy State at the load.</p>
 <p>Since a ground connection made on both sides of the load is electrically equivalent to short-circuiting across the load with a wire, that is another way of accomplishing the same goal of maximum safety:</p>
 
-^[021-03.jpg]
+^[021-03.webp]
 
 <p>Either way, both sides of the load will be electrically common to the earth, allowing for no voltage (potential energy) between either side of the load and the ground people stand on. This technique of temporarily grounding conductors in a de-energized power system is very common in maintenance work performed on high voltage power distribution systems. </p>
 <p>A further benefit of this precaution is protection against the possibility of the disconnect switch being closed (turned &ldquo;on&rdquo; so that circuit continuity is established) while people are still contacting the load.</p>

@@ -16,16 +16,16 @@
 <p>But wait . . . the fun is just beginning! Not only do we have more quantities to keep track of with magnetism than with electricity, but we have several different systems of unit measurement for each of these quantities. As with common quantities of length, weight, volume, and temperature, we have both English and metric systems. However, there is actually more than one metric system of units, and multiple metric systems are used in magnetic field measurements!</p>
 <p>One is called the <em>cgs</em>, which stands for <strong>C</strong>entimeter-<strong>G</strong>ram-<strong>S</strong>econd, denoting the root measures upon which the whole system is based. The other was originally known as the <em>mks</em> system, which stood for <strong>M</strong>eter-<strong>K</strong>ilogram-<strong>S</strong>econd, which was later revised into another system, called <em>rmks</em>, standing for <strong>R</strong>ationalized <strong>M</strong>eter-<strong>K</strong>ilogram-<strong>S</strong>econd. This ended up being adopted as an international standard and renamed <em>SI</em> (<strong>S</strong>ysteme <strong>I</strong>nternational).</p>
 
-^[105-01.jpg]
+^[105-01.webp]
 
 <p>And yes, the &micro; symbol is really the same as the metric prefix &ldquo;micro.&rdquo; I find this especially confusing, using the exact same alphabetical character to symbolize both a specific quantity and a general metric prefix!</p>
 <p>As you might have guessed already, the relationship between field force, field flux, and reluctance is much the same as that between the electrical quantities of electromotive force (E), current (I), and resistance (R). This provides something akin to an Ohm&rsquo;s Law for magnetic circuits:</p>
 
-^[105-02.jpg]
+^[105-02.webp]
 
 <p>And, given that permeability is inversely analogous to specific resistance, the equation for finding the reluctance of a magnetic material is very similar to that for finding the resistance of a conductor:</p>
 
-^[105-03.jpg]
+^[105-03.webp]
 
 <p>In either case, a longer piece of material provides a greater opposition, all other factors being equal. Also, a larger cross-sectional area makes for less opposition, all other factors being equal.</p>
 <p>The major caveat here is that the reluctance of a material to magnetic flux actually <em>changes</em> with the concentration of flux going through it. This makes the &ldquo;Ohm&rsquo;s Law&rdquo; for magnetic circuits nonlinear and far more difficult to work with than the electrical version of Ohm&rsquo;s Law. It would be analogous to having a resistor that changed resistance as the current through it varied (a circuit composed of <strong><em>varistors </em></strong>instead of <em>resistors</em>).</p>

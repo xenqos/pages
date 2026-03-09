@@ -2,7 +2,7 @@
 
 # How to Use Thevenin’s Theorem
 
-^[079-01.jpg]
+^[079-01.webp]
 
 <h3 class="text-lg lg:text-2xl font-bold mb-3">What is Thevenin's Theorem for Circuit Analysis?</h3>
 <p><p>Thevenin&rsquo;s theorem states that any linear circuit, no matter how complex, can be simplified to an equivalent circuit consisting of a single voltage source with a series resistance connected to a load.&nbsp;</p></p>
@@ -14,7 +14,7 @@
 <p>Common nonlinear devices include diodes, certain gas-discharge tubes, and semiconductor components. Basically, their opposition to current changes with voltage and/or current. As such, we call circuits with these types of components nonlinear circuits.</p>
 <p>With that in mind, we will explain Thevenin&rsquo;s theorem using the example circuit of Figure 1.&nbsp;</p>
 
-^[079-02.jpg]
+^[079-02.webp]
 
 <em><strong>Figure 1. </strong>Circuit schematic for explaining Thevenin&rsquo;s theorem.</em>
 
@@ -34,7 +34,7 @@
 <p>The load resistance can then be re-connected to the Thevenin equivalent circuit, and calculations carried out as if the whole network were nothing but a simple series circuit.</p>
 <p>After Thevenin conversion, our circuit in Figure 1 can be reduced to the Thevenin equivalent circuit in Figure 2.</p>
 
-^[079-03.jpg]
+^[079-03.webp]
 
 <em><strong>Figure 2. </strong>Thevenin equivalent circuit with the load resistor.</em>
 
@@ -48,7 +48,7 @@
 ### Step 1: Remove the Load Resistor
 <p>First, the chosen load resistor, R<sub>2</sub>, is removed from the original circuit by breaking the connections at each node of R<sub>2</sub> and replacing R<sub>2</sub> with an open circuit, as illustrated in Figure 3.</p>
 
-^[079-04.jpg]
+^[079-04.webp]
 
 <em><strong>Figure 3.</strong> Remove the load resistor.</em>
 
@@ -59,7 +59,7 @@
 
 <em><strong>Table 1. </strong>Using the table method to calculate the Thevenin voltage.</em>
 
-^[079-05.jpg]
+^[079-05.webp]
 
 <p>Knowing the currents through the resistors, it is easy to now calculate the voltage across our open circuit node. The voltage between the two load connection points can be figured from either of the battery&rsquo;s voltages and the nearest resistor&rsquo;s voltage drop:</p>
 
@@ -69,20 +69,20 @@
 
 <p>The calculated currents and voltages are added to the circuit schematic in Figure 4.&nbsp;</p>
 
-^[079-06.jpg]
+^[079-06.webp]
 
 <em><strong>Figure 4. </strong>Calculate the Thevenin voltage.</em>
 
 <p>Thevenin voltage (V<sub>Thevenin</sub>) in the equivalent circuit is the voltage across the open circuit we created, 11.2 V. We can add this to the Thevenin equivalent circuit in Figure 5.</p>
 
-^[079-07.jpg]
+^[079-07.webp]
 
 <em><strong>Figure 5.</strong> Add the Thevenin voltage to the equivalent circuit schematic.</em>
 
 ### Step 3: Replace the Power Sources
 <p>To find the Thevenin series resistance for our equivalent circuit, we now must remove the power sources from our circuit in Figure 3 and replace them with short circuit wires, as illustrated in Figure 6.&nbsp;</p>
 
-^[079-08.jpg]
+^[079-08.webp]
 
 <em><strong>Figure 6.</strong>&nbsp;Replace the power sources in the circuit.</em>
 
@@ -91,7 +91,7 @@
 ### Step 4: Calculate the Thevenin Resistance
 <p>With the removal of the two batteries, the total resistance measured at the location of the removed load is equal to R<sub>1 </sub>and R<sub>3</sub> in parallel (Figure 7):</p>
 
-^[079-09.jpg]
+^[079-09.webp]
 
 <em><strong>Figure 7. </strong>Calculate the Thevenin resistance.</em>
 
@@ -104,7 +104,7 @@
 ### Step 5: Draw the Thevenin Equivalent Circuit
 <p>The simplified Thevenin equivalent circuit, shown in Figure 8, can now be used for calculations for any linear load device connected between the connection points.</p>
 
-^[079-10.jpg]
+^[079-10.webp]
 
 <em><strong>Figure 8.</strong> Add the Thevenin resistance to the equivalent circuit schematic.</em>
 
@@ -113,7 +113,7 @@
 ## Applying the Thevenin Equivalent Circuit
 <p>After all of those steps are finished, we can apply our completed Thevenin equivalent circuit. With the load resistor (2 &Omega;) attached between the Thevenin circuit connection points, as shown in Figure 9, we can determine the voltage across it and the current through it as though the whole network was nothing more than a simple series circuit.</p>
 
-^[079-11.jpg]
+^[079-11.webp]
 
 <em><strong>Figure 9.</strong> Replacing the value of the load resistor into the Thevenin equivalent circuit.</em>
 
@@ -121,7 +121,7 @@
 
 <em><strong>Table 2.</strong> Calculating the load current and voltage drop.</em>
 
-^[079-12.jpg]
+^[079-12.webp]
 
 <p>The advantage is that you can quickly determine what would happen to that single resistor if it were of a value other than 2 &Omega; without having to go through a lot of analysis again. Just plug in that other load resistor, V, value into the Thevenin equivalent circuit, and a little bit of series circuit calculation will give you the result.</p>
 

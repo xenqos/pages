@@ -10,14 +10,14 @@
 <p>First, we need to have SPICE installed on our computer. As a free program, it is commonly available on the internet for download, and in formats appropriate for many different operating systems. In this book, I use one of the earlier versions of SPICE: version 2G6, for its simplicity of use.</p>
 <p>Next, we need a circuit for SPICE to analyze. Let&rsquo;s try one of the circuits illustrated earlier in the chapter. Here is its schematic diagram:</p>
 
-^[016-01.jpg]
+^[016-01.webp]
 
 <p>This simple circuit consists of a battery and a resistor connected directly together. We know the voltage of the battery (10 volts) and the resistance of the resistor (5 &Omega;), but nothing else about the circuit. If we describe this circuit to SPICE, it should be able to tell us (at the very least), how much current we have in the circuit by using Ohm&rsquo;s Law (I=E/R).</p>
 ### SPICE is a Text-Based Program
 <p>SPICE cannot directly understand a schematic diagram or any other form of graphical description. SPICE is a text-based computer program, and demands that a circuit be described in terms of its constituent components and connection points. Each unique connection point in a circuit is described for SPICE by a &ldquo;node&rdquo; number. Points that are electrically common to each other in the circuit to be simulated are designated as such by sharing the same number.</p>
 <p>It might be helpful to think of these numbers as &ldquo;wire&rdquo; numbers rather than &ldquo;node&rdquo; numbers, following the definition given in the previous section. This is how the computer knows what&rsquo;s connected to what: by the sharing of common wire, or node, numbers. In our example circuit, we only have two &ldquo;nodes,&rdquo; the top wire and the bottom wire. SPICE demands there be a node 0 somewhere in the circuit, so we&rsquo;ll label our wires 0 and 1:</p>
 
-^[016-02.jpg]
+^[016-02.webp]
 
 <p>In the above illustration, I&rsquo;ve shown multiple &ldquo;1&rdquo; and &ldquo;0&rdquo; labels around each respective wire to emphasize the concept of common points sharing common node numbers, but still this is a graphic image, not a text description. SPICE needs to have the component values and node numbers given to it in text form before any analysis may proceed.</p>
 ### Using a Text Editor to Create SPICE Files&lt;
@@ -26,20 +26,20 @@
 <p>Many other text editing programs are available, and some are even free. I happen to use a free text editor called <em>Vim</em>, and run it under both Windows 95 and Linux operating systems. It matters little which editor you use, so don&rsquo;t worry if the screenshots in this section don&rsquo;t look like yours; the important information here is <em>what you type</em>, not <em>which editor</em> you happen to use.</p>
 <p>To describe this simple, two-component circuit to SPICE, I will begin by invoking my text editor program and typing in a &ldquo;title&rdquo; line for the circuit:</p>
 
-^[016-03.png]
+^[016-03.webp]
 
 <p>We can describe the battery to the computer by typing in a line of text starting with the letter &ldquo;v&rdquo; (for &ldquo;Voltage source&rdquo;), identifying which wire each terminal of the battery connects to (the node numbers), and the battery&rsquo;s voltage, like this:</p>
 
-^[016-04.png]
+^[016-04.webp]
 
 <p>This line of text tells SPICE that we have a voltage source connected between nodes 1 and 0, direct current (DC), 10 volts. That&rsquo;s all the computer needs to know regarding the battery. Now we turn to the resistor: SPICE requires that resistors be described with a letter &ldquo;r,&rdquo; the numbers of the two nodes (connection points), and the resistance in ohms. Since this is a computer simulation, there is no need to specify a power rating for the resistor. That&rsquo;s one nice thing about &ldquo;virtual&rdquo; components: they can&rsquo;t be harmed by excessive voltages or currents!</p>
 
-^[016-05.png]
+^[016-05.webp]
 
 <p>Now, SPICE will know there is a resistor connected between nodes 1 and 0 with a value of 5 &Omega;. This very brief line of text tells the computer we have a resistor (&rdquo;r&rdquo;) connected between the same two nodes as the battery (1 and 0), with a resistance value of 5 &Omega;.</p>
 <p>If we add an .end statement to this collection of SPICE commands to indicate the end of the circuit description, we will have all the information SPICE needs, collected in one file and ready for processing. This circuit description, comprised of lines of text in a computer file, is technically known as a <em>netlist</em>, or <em>deck</em>:</p>
 
-^[016-06.png]
+^[016-06.webp]
 
 ### Moving Text Editor Files into SPICE
 <p>Once we have finished typing all the necessary SPICE commands, we need to &ldquo;save&rdquo; them to a file on the computer&rsquo;s hard disk so that SPICE has something to reference to when invoked. Since this is my first SPICE netlist, I&rsquo;ll save it under the filename &ldquo;circuit1.cir&rdquo; (the actual name being arbitrary).</p>
@@ -52,11 +52,11 @@
 spice &lt; circuit1.cir&#10;</pre>
 <p>Here is how this looks on my computer (running the Linux operating system), just before I press the [Enter] key:</p>
 
-^[016-07.png]
+^[016-07.webp]
 
 <p>As soon as you press the [Enter] key to issue this command, text from SPICE&rsquo;s output should scroll by on the computer screen. Here is a screenshot showing what SPICE outputs on my computer (I&rsquo;ve lengthened the &ldquo;terminal&rdquo; window to show you the full text. With a normal-size terminal, the text easily exceeds one page length):</p>
 
-^[016-08.png]
+^[016-08.webp]
 
 <p>SPICE begins with a reiteration of the netlist, complete with title line and .end statement. About halfway through the simulation it displays the voltage at all nodes with reference to node 0. In this example, we only have one node other than node 0, so it displays the voltage there: 10.0000 volts.</p>
 <p>Then it displays the current through each voltage source. Since we only have one voltage source in the entire circuit, it only displays the current through that one. In this case, the source current is 2 amps. Due to a quirk in the way SPICE analyzes current, the value of 2 amps is output as a negative (-) 2 amps.</p>
@@ -65,15 +65,15 @@ spice &lt; circuit1.cir&#10;</pre>
 <p>One of the benefits of using a &ldquo;primitive&rdquo; text-based program such as SPICE is that the text files dealt with are extremely small compared to other file formats, especially graphical formats used in other circuit simulation software.</p>
 <p>Also, the fact that SPICE&rsquo;s output is plain text means you can direct SPICE&rsquo;s output to another text file where it may be further manipulated. To do this, we re-issue a command to the computer&rsquo;s operating system to invoke SPICE, this time redirecting the output to a file I&rsquo;ll call &ldquo;output.txt&rdquo;:</p>
 
-^[016-09.png]
+^[016-09.webp]
 
 <p>SPICE will run &ldquo;silently&rdquo; this time, without the stream of text output to the computer screen as before. A new file, output1.txt, will be created, which you may open and change using a text editor or word processor. For this illustration, I&rsquo;ll use the same text editor (<em>Vim</em>) to open this file:</p>
 
-^[016-10.png]
+^[016-10.webp]
 
 <p>Now, I may freely edit this file, deleting any extraneous text (such as the &ldquo;banners&rdquo; showing date and time), leaving only the text that I feel to be pertinent to my circuit&rsquo;s analysis:</p>
 
-^[016-11.png]
+^[016-11.webp]
 
 <p>Once suitably edited and re-saved under the same filename (output.txt in this example), the text may be pasted into any kind of document, &ldquo;plain text&rdquo; being a universal file format for almost all computer systems. I can even include it directly in the text of this book&mdash;rather than as a &ldquo;screenshot&rdquo; graphic image&mdash;like this:</p>
 <pre>
@@ -109,7 +109,7 @@ Legend: + = v#branch &#10; -----------------------------------------------------
 ## Computer Programs to Interpret and Convert SPICE Data
 <p>There are even some computer programs able to interpret and convert the non-graphical data output by SPICE into a graphical plot. One of these programs is called <em>Nutmeg</em>, and its output looks something like this:</p>
 
-^[016-12.png]
+^[016-12.webp]
 
 <p>Note how Nutmeg plots the resistor voltage v(1) (voltage between node 1 and the implied reference point of node 0) as a line with a positive slope (from lower-left to upper-right). Whether or not you ever become proficient at using SPICE is not relevant to its application in this book.</p>
 <p>All that matters is that you develop an understanding for what the numbers mean in a SPICE-generated report. In the examples to come, I&rsquo;ll do my best to annotate the numerical results of SPICE to eliminate any confusion, and unlock the power of this amazing tool to help you understand the behavior of electric circuits.</p>

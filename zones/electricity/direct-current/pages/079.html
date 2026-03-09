@@ -36,7 +36,7 @@
 
 <h1>How to Use Thevenin’s Theorem</h1>
 
-<a target='_blank' href='../images/079-01.jpg'><img class='clImageThumb' src='../images/079-01.jpg'></a><br>
+<a target='_blank' href='../images/079-01.webp'><img class='clImageThumb' src='../images/079-01.webp'></a><br>
 
 <h3 class=&quot;text-lg lg:text-2xl font-bold mb-3&quot;>What is Thevenin's Theorem for Circuit Analysis?</h3>
 <p><p>Thevenin&rsquo;s theorem states that any linear circuit, no matter how complex, can be simplified to an equivalent circuit consisting of a single voltage source with a series resistance connected to a load.&nbsp;</p></p>
@@ -47,7 +47,7 @@
 <p>The circuit will be linear if it contains only passive components such as resistors, inductors, and capacitors.&nbsp;</p>
 <p>Common nonlinear devices include diodes, certain gas-discharge tubes, and semiconductor components. Basically, their opposition to current changes with voltage and/or current. As such, we call circuits with these types of components nonlinear circuits.</p>
 <p>With that in mind, we will explain Thevenin&rsquo;s theorem using the example circuit of Figure 1.&nbsp;</p>
-<a target='_blank' href='../images/079-02.jpg'><img class='clImageThumb' src='../images/079-02.jpg'></a><br>
+<a target='_blank' href='../images/079-02.webp'><img class='clImageThumb' src='../images/079-02.webp'></a><br>
 
 <em><strong>Figure 1. </strong>Circuit schematic for explaining Thevenin&rsquo;s theorem.</em><br>
 <br>
@@ -67,7 +67,7 @@
 <p>Thevenin&rsquo;s theorem can make this analysis easy by temporarily removing the load resistance from the original circuit and reducing what&rsquo;s left to an equivalent circuit composed of a single voltage source and series resistance.&nbsp;</p>
 <p>The load resistance can then be re-connected to the Thevenin equivalent circuit, and calculations carried out as if the whole network were nothing but a simple series circuit.</p>
 <p>After Thevenin conversion, our circuit in Figure 1 can be reduced to the Thevenin equivalent circuit in Figure 2.</p>
-<a target='_blank' href='../images/079-03.jpg'><img class='clImageThumb' src='../images/079-03.jpg'></a><br>
+<a target='_blank' href='../images/079-03.webp'><img class='clImageThumb' src='../images/079-03.webp'></a><br>
 
 <em><strong>Figure 2. </strong>Thevenin equivalent circuit with the load resistor.</em><br>
 <br>
@@ -80,7 +80,7 @@
 
 <h3>Step 1: Remove the Load Resistor</h3>
 <p>First, the chosen load resistor, R<sub>2</sub>, is removed from the original circuit by breaking the connections at each node of R<sub>2</sub> and replacing R<sub>2</sub> with an open circuit, as illustrated in Figure 3.</p>
-<a target='_blank' href='../images/079-04.jpg'><img class='clImageThumb' src='../images/079-04.jpg'></a><br>
+<a target='_blank' href='../images/079-04.webp'><img class='clImageThumb' src='../images/079-04.webp'></a><br>
 
 <em><strong>Figure 3.</strong> Remove the load resistor.</em><br>
 
@@ -90,24 +90,24 @@
 <p>We&rsquo;ll begin by recognizing that the voltage drop across the two resistors is 28 -&nbsp;7 = 21 V. We can complete our analysis using the table method, as shown in Table 1.</p>
 <em><strong>Table 1. </strong>Using the table method to calculate the Thevenin voltage.</em><br>
 <br>
-<a target='_blank' href='../images/079-05.jpg'><img class='clImageThumb' src='../images/079-05.jpg'></a><br>
+<a target='_blank' href='../images/079-05.webp'><img class='clImageThumb' src='../images/079-05.webp'></a><br>
 
 <p>Knowing the currents through the resistors, it is easy to now calculate the voltage across our open circuit node. The voltage between the two load connection points can be figured from either of the battery&rsquo;s voltages and the nearest resistor&rsquo;s voltage drop:</p>
 <p>$$V_{B1} - I_{R1} \cdot R_1 = 28 - (4.2 \cdot 4) = 28 - 16.8 = 11.2 \text{ V}$$</p>
 <p>$$V_{B2} + I_{R2} \cdot R_2 = 7 + (4.2 \cdot 1) = 7 + 4.2 = 11.2 \text{ V}$$</p>
 <p>The calculated currents and voltages are added to the circuit schematic in Figure 4.&nbsp;</p>
-<a target='_blank' href='../images/079-06.jpg'><img class='clImageThumb' src='../images/079-06.jpg'></a><br>
+<a target='_blank' href='../images/079-06.webp'><img class='clImageThumb' src='../images/079-06.webp'></a><br>
 
 <em><strong>Figure 4. </strong>Calculate the Thevenin voltage.</em><br>
 <br>
 <p>Thevenin voltage (V<sub>Thevenin</sub>) in the equivalent circuit is the voltage across the open circuit we created, 11.2 V. We can add this to the Thevenin equivalent circuit in Figure 5.</p>
-<a target='_blank' href='../images/079-07.jpg'><img class='clImageThumb' src='../images/079-07.jpg'></a><br>
+<a target='_blank' href='../images/079-07.webp'><img class='clImageThumb' src='../images/079-07.webp'></a><br>
 
 <em><strong>Figure 5.</strong> Add the Thevenin voltage to the equivalent circuit schematic.</em><br>
 
 <h3>Step 3: Replace the Power Sources</h3>
 <p>To find the Thevenin series resistance for our equivalent circuit, we now must remove the power sources from our circuit in Figure 3 and replace them with short circuit wires, as illustrated in Figure 6.&nbsp;</p>
-<a target='_blank' href='../images/079-08.jpg'><img class='clImageThumb' src='../images/079-08.jpg'></a><br>
+<a target='_blank' href='../images/079-08.webp'><img class='clImageThumb' src='../images/079-08.webp'></a><br>
 
 <em><strong>Figure 6.</strong>&nbsp;Replace the power sources in the circuit.</em><br>
 <br>
@@ -115,7 +115,7 @@
 
 <h3>Step 4: Calculate the Thevenin Resistance</h3>
 <p>With the removal of the two batteries, the total resistance measured at the location of the removed load is equal to R<sub>1 </sub>and R<sub>3</sub> in parallel (Figure 7):</p>
-<a target='_blank' href='../images/079-09.jpg'><img class='clImageThumb' src='../images/079-09.jpg'></a><br>
+<a target='_blank' href='../images/079-09.webp'><img class='clImageThumb' src='../images/079-09.webp'></a><br>
 
 <em><strong>Figure 7. </strong>Calculate the Thevenin resistance.</em><br>
 <br>
@@ -125,7 +125,7 @@
 
 <h3>Step 5: Draw the Thevenin Equivalent Circuit</h3>
 <p>The simplified Thevenin equivalent circuit, shown in Figure 8, can now be used for calculations for any linear load device connected between the connection points.</p>
-<a target='_blank' href='../images/079-10.jpg'><img class='clImageThumb' src='../images/079-10.jpg'></a><br>
+<a target='_blank' href='../images/079-10.webp'><img class='clImageThumb' src='../images/079-10.webp'></a><br>
 
 <em><strong>Figure 8.</strong> Add the Thevenin resistance to the equivalent circuit schematic.</em><br>
 <br>
@@ -133,14 +133,14 @@
 
 <h2>Applying the Thevenin Equivalent Circuit</h2>
 <p>After all of those steps are finished, we can apply our completed Thevenin equivalent circuit. With the load resistor (2 &Omega;) attached between the Thevenin circuit connection points, as shown in Figure 9, we can determine the voltage across it and the current through it as though the whole network was nothing more than a simple series circuit.</p>
-<a target='_blank' href='../images/079-11.jpg'><img class='clImageThumb' src='../images/079-11.jpg'></a><br>
+<a target='_blank' href='../images/079-11.webp'><img class='clImageThumb' src='../images/079-11.webp'></a><br>
 
 <em><strong>Figure 9.</strong> Replacing the value of the load resistor into the Thevenin equivalent circuit.</em><br>
 <br>
 <p>The voltage and current figures for R<sub>2</sub> (8 V and 4 A) are, naturally, identical to those found using other network analysis methods (Table 2).&nbsp;</p>
 <em><strong>Table 2.</strong> Calculating the load current and voltage drop.</em><br>
 <br>
-<a target='_blank' href='../images/079-12.jpg'><img class='clImageThumb' src='../images/079-12.jpg'></a><br>
+<a target='_blank' href='../images/079-12.webp'><img class='clImageThumb' src='../images/079-12.webp'></a><br>
 
 <p>The advantage is that you can quickly determine what would happen to that single resistor if it were of a value other than 2 &Omega; without having to go through a lot of analysis again. Just plug in that other load resistor, V, value into the Thevenin equivalent circuit, and a little bit of series circuit calculation will give you the result.</p>
 

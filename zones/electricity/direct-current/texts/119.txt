@@ -4,20 +4,20 @@
 <p>There are circumstances when you may need to analyze a DC reactive circuit when the starting values of voltage and current are not respective of a fully &ldquo;discharged&rdquo; state. In other words, the capacitor might start at a partially-charged condition instead of starting at zero volts, and an inductor might start with some amount of current already through it, instead of zero as we have been assuming so far.</p>
 <p>Take this circuit as an example, starting with the switch open and finishing with the switch in the closed position:</p>
 
-^[119-01.jpg]
+^[119-01.webp]
 
 <p>Since this is an inductive circuit, we&rsquo;ll start our analysis by determining the start and end values for <em>current</em>. This step is vitally important when analyzing inductive circuits, as the starting and ending <em>voltage</em> can only be known after the current has been determined! With the switch open (starting condition), there is a total (series) resistance of 3 &Omega;, which limits the final current in the circuit to 5 amps:</p>
 
-^[119-02.jpg]
+^[119-02.webp]
 
 <p>So, before the switch is even closed, we have a current through the inductor of 5 amps, rather than starting from 0 amps as in the previous inductor example. With the switch closed (the final condition), the 1 &Omega; resistor is shorted across (bypassed), which changes the circuit&rsquo;s total resistance to 2 &Omega;. With the switch closed, the final value for current through the inductor would then be:</p>
 
-^[119-03.jpg]
+^[119-03.webp]
 
 <p>So, the inductor in this circuit has a starting current of 5 amps and an ending current of 7.5 amps. Since the &ldquo;timing&rdquo; will take place during the time that the switch is closed and R<sub>2</sub> is shorted past, we need to calculate our time constant from L<sub>1</sub> and R<sub>1</sub>: 1 Henry divided by 2 &Omega;, or &tau; = 1/2 second. With these values, we can calculate what will happen to the current over time. The voltage across the inductor will be calculated by multiplying the current by 2 (to arrive at the voltage across the 2 &Omega; resistor), then subtracting that from 15 volts to see what&rsquo;s left.</p>
 <p>If you realize that the voltage across the inductor starts at 5 volts (when the switch is first closed) and decays to 0 volts over time, you can also use these figures for starting/ending values in the general formula and derive the same results:</p>
 
-^[119-04.jpg]
+^[119-04.webp]
 
 [|
 ¦Time~~(seconds)¦Battery~~Voltage¦Inductor~~Voltage¦Current¦

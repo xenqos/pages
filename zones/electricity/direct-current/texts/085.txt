@@ -6,14 +6,14 @@
 <p>So far in our discussions on electricity and electric circuits, we have not discussed in any detail how batteries function. Rather, we have simply assumed that they produce constant voltage through some sort of mysterious process. Here, we will explore that process to some degree and cover some of the practical considerations involved with real batteries and their use in power systems.</p>
 <p>In the first chapter of this book, the concept of an <em>atom</em> was discussed, as is the basic building block of all material objects. Atoms, in turn, are composed of even smaller pieces of matter called <em>particles</em>. Electrons, protons, and neutrons are the basic types of particles found in atoms. Each of these particle types plays a distinct role in the behavior of an atom. While electrical activity involves the motion of electrons, the chemical identity of an atom (which largely determines how conductive the material will be) is determined by the number of protons in the nucleus (center).</p>
 
-^[085-01.jpg]
+^[085-01.webp]
 
 <p>The protons in an atom&rsquo;s nucleus are extremely difficult to dislodge, and so the chemical identity of an atom is very stable. One of the goals of the ancient alchemists (to turn lead into gold) was foiled by this sub-atomic stability. All efforts to alter this property of an atom by means of heat, light, or friction were met with failure. The electrons of an atom, however, are much more easily dislodged. As we have already seen, friction is one way in which electrons can be transferred from one atom to another (glass and silk, wax and wool), as well as heat (generating voltage by heating a junction of dissimilar metals, as in the case of thermocouples).</p>
 
 ## Types of Chemical Bond
 <p>Electrons can do much more than just move around and between atoms: they can also serve to link different atoms together. This linking of atoms by electrons is called a <em>chemical bond</em>. A crude (and simplified) representation of such a bond between two atoms might look like this:</p>
 
-^[085-02.jpg]
+^[085-02.webp]
 
 <p>There are several types of chemical bonds, the one shown above is representative of a <em>covalent</em> bond, where electrons are shared between atoms. Because chemical bonds are based on links formed by electrons, these bonds are only as strong as the immobility of the electrons forming them. That is to say, chemical bonds can be created or broken by the same forces that force electrons to move: heat, light, friction, etc.</p>
 <p>When atoms are joined by chemical bonds, they form materials with unique properties known as <em>molecules</em>. The dual-atom picture shown above is an example of a simple molecule formed by two atoms of the same type. Most molecules are unions of different types of atoms. Even molecules formed by atoms of the same type can have radically different physical properties. Take the element carbon, for instance: in one form, <em>graphite</em>, carbon atoms link together to form flat &ldquo;plates&rdquo; which slide against one another very easily, giving graphite its natural lubricating properties. In another form, <em>diamond</em>, the same carbon atoms link together in a different configuration, this time in the shapes of interlocking pyramids, forming the material of exceeding hardness. In yet another form, <em>Fullerene,</em> dozens of carbon atoms form each molecule, which looks something like a soccer ball. Fullerene molecules are very fragile and lightweight. The airy soot formed by excessively rich combustion of acetylene gas (as in the initial ignition of an oxy-acetylene welding/cutting torch) contains many Fullerene molecules.</p>
@@ -25,13 +25,13 @@
 ## How does a Voltaic Cell work?
 <p>The formation of ions and ionic bonds from neutral atoms or molecules (or <em>vice versa</em>) involves the transfer of electrons. That transfer of electrons can be harnessed to generate an electric current. A device constructed to do just this is called a <em>voltaic cell</em>, or <em>cell</em> for short, usually consisting of two metal electrodes immersed in a chemical mixture (called an <em>electrolyte</em>) designed to facilitate such an electrochemical (oxidation/reduction) reaction:</p>
 
-^[085-03.jpg]
+^[085-03.webp]
 
 <em>The two electrodes are made of different materials, both of which chemically react with the electrolyte in some form of ionic bonding.</em>
 
 <p>In the common &ldquo;lead-acid&rdquo; cell (the kind commonly used in automobiles), the negative electrode is made of lead (Pb) and the positive is made of lead (IV) dioxide (PbO2), both metallic substances. It is important to note that lead dioxide is metallic and is an electrical conductor, unlike other metal oxides that are usually insulators. (note: Table below) The electrolyte solution is a dilute sulfuric acid (H2SO4 + H2O). If the electrodes of the cell are connected to an external circuit, such that electrons have a place to flow from one to the other, lead(IV) atoms in the positive electrode (PbO2) will gain two electrons each to produce Pb(II)O. The oxygen atoms which are &ldquo;leftover&rdquo; combine with positively charged hydrogen ions (H)+to form water (H2O). This flow of electrons into the lead dioxide (PbO2) electrode gives it a positive electrical charge. Consequently, lead atoms in the negative electrode give up two electrons each to produce lead Pb(II), which combines with sulfate ions (SO4-2) produced from the dissociation of the hydrogen ions (H+) from the sulfuric acid (H2SO4) to form lead sulfate (PbSO4). The flow of electrons out of the lead electrode gives it a negative electrical charge. These reactions are shown diagrammatically below:</p>
 
-^[085-04.jpg]
+^[085-04.webp]
 
 <p><em><ins>Note on lead oxide nomenclature:</ins></em> <em> The nomenclature for lead oxides can be confusing. The term, the lead oxide can refer to either Pb(II)O or Pb(IV)O2, and the correct compound can be determined usually from context. Other synonyms for Pb(IV)O2 are: lead dioxide, lead peroxide, plumbic oxide, lead oxide brown, and lead superoxide. The term, lead peroxide is particularly confusing, as it implies a compound of lead (II) with two oxygen atoms, Pb(II)O2, which apparently does not exist. Unfortunately, the term lead peroxide has persisted in industrial literature. In this section, lead dioxide will be used to refer to Pb(IV)O2, and lead oxide will refer to Pb(II)O. The oxidation states will not be shown usually.</em></p>
 <p>This process of the cell providing electrical energy to supply a load is called <em>discharging</em> since it is depleting its internal chemical reserves. Theoretically, after all of the sulfuric acid has been exhausted, the result will be two electrodes of lead sulfate (PbSO4) and an electrolyte solution of pure water (H2O), leaving no more capacity for additional ionic bonding. In this state, the cell is said to be <em>fully discharged</em>. In a lead-acid cell, the state of charge can be determined by an analysis of acid strength. This is easily accomplished with a device called a <em>hydrometer</em>, which measures the specific gravity (density) of the electrolyte. Sulfuric acid is denser than water, so the greater the charge of a cell, the greater the acid concentration, and thus a denser electrolyte solution.</p>
@@ -40,7 +40,7 @@
 <p>The chemical reactions of some types of cells can be reversed by forcing electric current backward through the cell (<em>in</em> the negative electrode and <em>out</em> the positive electrode). This process is called <em>charging</em>. Any such (rechargeable) cell is called a <em>secondary cell</em>. A cell whose chemistry cannot be reversed by a reverse current is called a <em>primary cell</em>.</p>
 <p>When a lead-acid cell is charged by an external current source, the chemical reactions experienced during discharge are reversed:</p>
 
-^[085-05.jpg]
+^[085-05.webp]
 
 <p><strong>REVIEW: </strong></p>
 <ul>

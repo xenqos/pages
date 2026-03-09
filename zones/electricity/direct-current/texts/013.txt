@@ -9,7 +9,7 @@
 <p>For instance, from our previous circuit example with the 3 &Omega; lamp, we calculated the current through the circuit by dividing the voltage by the resistance (I=E/R). With an 18 volt battery, our circuit&rsquo;s current was 6 amps. Doubling the battery&rsquo;s voltage to 36 volts resulted in a doubled current of 12 amps.</p>
 <p>All of this makes sense, of course, as long as the lamp continues to provide exactly the same amount of friction (resistance) to the flow of current through it: 3 &Omega;.</p>
 
-^[013-01.jpg]
+^[013-01.webp]
 
 ## The Voltage-Current Relationship Over Changing Resistance
 <p>However, reality is not always this simple. One of the phenomena explored in a later chapter is that of conductor resistance <em>changing</em> with temperature. In an incandescent lamp (the kind employing the principle of electric current heating a thin filament of wire to the point that it glows white-hot), the resistance of the filament wire will increase dramatically as it warms from room temperature to operating temperature.</p>
@@ -18,19 +18,19 @@
 <p>The phenomenon of resistance changing with variations in temperature is one shared by almost all metals, of which most wires are made. For most applications, these changes in resistance are small enough to be ignored. In the application of metal lamp filaments, the change happens to be quite large.</p>
 <p>This is just one example of &ldquo;nonlinearity&rdquo; in electric circuits. It is by no means the only example. A &ldquo;linear&rdquo; function in mathematics is one that tracks a straight line when plotted on a graph. The simplified version of the lamp circuit with a constant filament resistance of 3 &Omega; generates a plot like this:</p>
 
-^[013-02.jpg]
+^[013-02.webp]
 
 <p>The straight-line plot of current over voltage indicates that resistance is a stable, unchanging value for a wide range of circuit voltages and currents. In an &ldquo;ideal&rdquo; situation, this is the case. Resistors, which are manufactured to provide a definite, stable value of resistance, behave very much like the plot of values seen above. A mathematician would call their behavior &ldquo;linear.&rdquo;</p>
 <p>A more realistic analysis of a lamp circuit, however, over several different values of battery voltage would generate a plot of this shape:</p>
 
-^[013-03.jpg]
+^[013-03.webp]
 
 <p>The plot is no longer a straight line. It rises sharply on the left, as voltage increases from zero to a low level. As it progresses to the right we see the line flattening out, the circuit requiring greater and greater increases in voltage to achieve equal increases in current.</p>
 <p>If we try to apply Ohm&rsquo;s Law to find the resistance of this lamp circuit with the voltage and current values plotted above, we arrive at several different values. We could say that the resistance here is <em>nonlinear</em>, increasing with increasing current and voltage. The nonlinearity is caused by the effects of high temperature on the metal wire of the lamp filament.</p>
 <p>Another example of nonlinear current conduction is through gases such as air. At standard temperatures and pressures, air is an effective insulator. However, if the voltage between two conductors separated by an air gap is increased greatly enough, the air molecules between the gap will become &ldquo;ionized,&rdquo; having their electrons stripped off by the force of the high voltage between the wires.</p>
 <p>Once ionized, air (and other gases) become good conductors of electricity, allowing electron flow where none could exist prior to ionization. If we were to plot current overvoltage on a graph as we did with the lamp circuit, the effect of ionization would be clearly seen as nonlinear:</p>
 
-^[013-04.jpg]
+^[013-04.webp]
 
 <p>The graph shown is approximate for a small air gap (less than one inch). A larger air gap would yield a higher ionization potential, but the shape of the I/E curve would be very similar: practically no current until the ionization potential was reached, then substantial conduction after that.</p>
 <p>Incidentally, this is the reason lightning bolts exist as momentary surges rather than continuous flows of electrons. The voltage built up between the earth and clouds (or between different sets of clouds) must increase to the point where it overcomes the ionization potential of the air gap before the air ionizes enough to support a substantial flow of electrons.</p>
@@ -42,12 +42,12 @@
 <p>There are circuit components specifically engineered to provide nonlinear resistance curves, one of them being the <em>varistor</em>. Commonly manufactured from compounds such as zinc oxide or silicon carbide, these devices maintain high resistance across their terminals until a certain &ldquo;firing&rdquo; or &ldquo;breakdown&rdquo; voltage (equivalent to the &ldquo;ionization potential&rdquo; of an air gap) is reached, at which point their resistance decreases dramatically.</p>
 <p>Unlike the breakdown of an insulator, varistor breakdown is repeatable: that is, it is designed to withstand repeated breakdowns without failure. A picture of a varistor is shown here:</p>
 
-^[013-05.jpg]
+^[013-05.webp]
 
 <p>There are also special gas-filled tubes designed to do much the same thing, exploiting the very same principle at work in the ionization of air by a lightning bolt.</p>
 <p>Other electrical components exhibit even stranger current/voltage curves than this. Some devices actually experience a <em>decrease</em> in current as the applied voltage <em>increases</em>. Because the slope of the current/voltage for this phenomenon is negative (angling down instead of up as it progresses from left to right), it is known as <em>negative resistance</em>.</p>
 
-^[013-06.jpg]
+^[013-06.webp]
 
 <p>Most notably, high-vacuum electron tubes known as <em>tetrodes</em> and semiconductor diodes known as <em>Esaki </em>or <em>tunnel</em> diodes exhibit negative resistance for certain ranges of applied voltage.</p>
 <p>Ohm&rsquo;s Law is not very useful for analyzing the behavior of components like these where resistance varies with voltage and current. Some have even suggested that &ldquo;Ohm&rsquo;s Law&rdquo; should be demoted from the status of a &ldquo;Law&rdquo; because it is not universal. It might be more accurate to call the equation (R=E/I) a <em>definition of resistance</em>, befitting of a certain class of materials under a narrow range of conditions.</p>

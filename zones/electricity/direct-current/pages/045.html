@@ -36,48 +36,48 @@
 <h1>Current Divider Circuits and the Current Divider Formula</h1>
 <p>A parallel circuit is often called a <em>current divider</em> for its ability to proportion&mdash;or divide&mdash;the total current into fractional parts.</p>
 <p>To understand what this means, let&rsquo;s first analyze a simple parallel circuit, determining the branch currents through individual resistors</p>
-<a target='_blank' href='../images/045-01.jpg'><img class='clImageThumb' src='../images/045-01.jpg'></a><br>
+<a target='_blank' href='../images/045-01.webp'><img class='clImageThumb' src='../images/045-01.webp'></a><br>
 
 <p>Knowing that voltages across all components in a parallel circuit are the same, we can fill in our voltage/current/resistance table with 6 volts across the top row:</p>
-<a target='_blank' href='../images/045-02.jpg'><img class='clImageThumb' src='../images/045-02.jpg'></a><br>
+<a target='_blank' href='../images/045-02.webp'><img class='clImageThumb' src='../images/045-02.webp'></a><br>
 
 <p>Using Ohm&rsquo;s Law (I=E/R) we can calculate each branch current:</p>
-<a target='_blank' href='../images/045-03.jpg'><img class='clImageThumb' src='../images/045-03.jpg'></a><br>
+<a target='_blank' href='../images/045-03.webp'><img class='clImageThumb' src='../images/045-03.webp'></a><br>
 
 <p>Knowing that branch currents add up in parallel circuits to equal the total current, we can arrive at total current by summing 6 mA, 2 mA, and 3 mA:</p>
-<a target='_blank' href='../images/045-04.jpg'><img class='clImageThumb' src='../images/045-04.jpg'></a><br>
+<a target='_blank' href='../images/045-04.webp'><img class='clImageThumb' src='../images/045-04.webp'></a><br>
 
 <p>The final step, of course, is to figure total resistance. This can be done with Ohm&rsquo;s Law (R=E/I) in the &ldquo;total&rdquo; column, or with the parallel resistance formula from individual resistances. Either way, we&rsquo;ll get the same answer:</p>
-<a target='_blank' href='../images/045-05.jpg'><img class='clImageThumb' src='../images/045-05.jpg'></a><br>
+<a target='_blank' href='../images/045-05.webp'><img class='clImageThumb' src='../images/045-05.webp'></a><br>
 
 <p>Once again, it should be apparent that the current through each resistor is related to its resistance, given that the voltage across all resistors is the same. Rather than being directly proportional, the relationship here is one of inverse proportion. For example, the current through R<sub>1</sub> is twice as much as the current through R<sub>3</sub>, which has twice the resistance of R<sub>1</sub>.</p>
 <p>If we were to change the supply voltage of this circuit, we find that (surprise!) these proportional ratios do not change:</p>
-<a target='_blank' href='../images/045-06.jpg'><img class='clImageThumb' src='../images/045-06.jpg'></a><br>
+<a target='_blank' href='../images/045-06.webp'><img class='clImageThumb' src='../images/045-06.webp'></a><br>
 
 <h2>Calculating Current Ratios</h2>
 <p>The current through R<sub>1</sub> is still exactly twice that of R<sub>3</sub>, despite the fact that the source voltage has changed. The proportionality between different branch currents is strictly a function of resistance.</p>
 <p>Also reminiscent of voltage dividers is the fact that branch currents are fixed proportions of the total current. Despite the fourfold increase in supply voltage, the ratio between any branch current and the total current remains unchanged:</p>
-<a target='_blank' href='../images/045-07.png'><img class='clImageThumb' src='../images/045-07.png'></a><br>
+<a target='_blank' href='../images/045-07.webp'><img class='clImageThumb' src='../images/045-07.webp'></a><br>
 
 <p>Now we can see for ourselves the point we made at the beginning of this page: A parallel circuit is often called a <em>current divider</em> for its ability to proportion&mdash;or divide&mdash;the total current into fractional parts.</p>
 <h2>The Current Divider Formula</h2>
 <p>With a little bit of algebra, we can derive a formula for determining parallel resistor current given nothing more than total current, individual resistance, and total resistance:</p>
-<a target='_blank' href='../images/045-08.png'><img class='clImageThumb' src='../images/045-08.png'></a><br>
+<a target='_blank' href='../images/045-08.webp'><img class='clImageThumb' src='../images/045-08.webp'></a><br>
 
 <p>The ratio of total resistance to individual resistance is the same ratio as the individual (branch) current to the total current. This is known as the <em>current divider formula</em>, and it is a short-cut method for determining branch currents in a parallel circuit when the total current is known.</p>
 <h3>Current Divider Formula Example</h3>
 <p>Using the original parallel circuit as an example, we can re-calculate the branch currents using this formula, if we start by knowing the total current and total resistance:</p>
-<a target='_blank' href='../images/045-09.png'><img class='clImageThumb' src='../images/045-09.png'></a><br>
+<a target='_blank' href='../images/045-09.webp'><img class='clImageThumb' src='../images/045-09.webp'></a><br>
 
 <p>If you take the time to compare the two divider formulae, you&rsquo;ll see that they are remarkably similar. Notice, however, that the ratio in the voltage divider formula is R<sub>n</sub> (individual resistance) divided by R<sub>Total</sub>, and how the ratio in the current divider formula is R<sub>Total</sub> divided by R<sub>n</sub>:</p>
-<a target='_blank' href='../images/045-10.png'><img class='clImageThumb' src='../images/045-10.png'></a><br>
+<a target='_blank' href='../images/045-10.webp'><img class='clImageThumb' src='../images/045-10.webp'></a><br>
 
 <h2>Current Divider Formula vs. Voltage Divider Formula</h2>
 <p>It is quite easy to confuse these two equations, getting the resistance ratios backward. One way to help remember the proper form is to keep in mind that both ratios in the voltage and current divider equations must be less than one. After all, these are <em>divider</em> equations, not <em>multiplier</em> equations! If the fraction is upside-down, it will provide a ratio greater than one, which is incorrect.</p>
 <p>Knowing that total resistance in a series (voltage divider) circuit is always greater than any of the individual resistances, we know that the fraction for that formula must be R<sub>n</sub> over R<sub>Total</sub>. Conversely, knowing that total resistance in a parallel (current divider) circuit is always less than any of the individual resistances, we know that the fraction for that formula must be R<sub>Total</sub> over R<sub>n</sub>.</p>
 <h2>Current Divider Circuit Example Application: Electric Meter Circuit</h2>
 <p>Current divider circuits also find application in electric meter circuits, where a fraction of measured current is desired to be routed through a sensitive detection device. Using the current divider formula, the proper shunt resistor can be sized to proportion just the right amount of current for the device in any given instance:</p>
-<a target='_blank' href='../images/045-11.jpg'><img class='clImageThumb' src='../images/045-11.jpg'></a><br>
+<a target='_blank' href='../images/045-11.webp'><img class='clImageThumb' src='../images/045-11.webp'></a><br>
 
 <p><strong>REVIEW:</strong></p>
 <ul>

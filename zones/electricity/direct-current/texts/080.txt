@@ -2,7 +2,7 @@
 
 # What is Norton’s Theorem and the Norton Equivalent Circuit?
 
-^[080-01.jpg]
+^[080-01.webp]
 
 <h3 class="text-lg lg:text-2xl font-bold mb-3">What is Norton's Theorem in Circuit Analysis?</h3>
 <p><p>Norton&rsquo;s theorem states that any linear circuit can be simplified to an equivalent circuit consisting of a single current source and parallel resistance that is connected to a load.&nbsp;</p></p>
@@ -20,7 +20,7 @@
 </ul>
 <p>This will make it easier for you to compare the various methods.</p>
 
-^[080-02.jpg]
+^[080-02.webp]
 
 <em><strong>Figure 1.</strong> Circuit schematic for explaining Norton&rsquo;s theorem.</em>
 
@@ -29,7 +29,7 @@
 <p>Next, the load resistance can then be re-connected to the Norton equivalent circuit to allow calculations as if the whole network is a simple parallel circuit.&nbsp;</p>
 <p>After Norton conversion, our circuit of Figure 1 will be reduced to the Norton equivalent circuit of Figure 2.</p>
 
-^[080-03.jpg]
+^[080-03.webp]
 
 <em><strong>Figure 2.</strong> Norton equivalent circuit with the load resistor.</em>
 
@@ -41,14 +41,14 @@
 ### Step 1: Remove the Load Resistor
 <p>The first step is to identify the load resistance and remove it from the original circuit, as shown in Figure 3.</p>
 
-^[080-04.jpg]
+^[080-04.webp]
 
 <em><strong>Figure 3.</strong> Remove the load resistor.</em>
 
 ### Step 2: Calculate the Norton Current
 <p>To find the Norton current (for the current source in the Norton equivalent circuit), place a direct wire (short circuit) connection between the load points and determine the resultant current (Figure 4).&nbsp;</p>
 
-^[080-05.jpg]
+^[080-05.webp]
 
 <em><strong>Figure 4.</strong> Calculate the Norton current.</em>
 
@@ -68,7 +68,7 @@
 ### Step 3: Replace the Power Sources
 <p>To find the Norton resistance for our equivalent circuit, we can now replace the power sources from our circuit in Figure 3, as shown in Figure 5.&nbsp;</p>
 
-^[080-06.jpg]
+^[080-06.webp]
 
 <em><strong>Figure 5.</strong> Replace the power sources in the circuit.</em>
 
@@ -77,7 +77,7 @@
 ### Step 4: Calculate the Nortan Resistance
 <p>After replacing the two voltage sources, the total resistance measured at the location of the removed load is equal to R<sub>1 </sub>and R<sub>3</sub> in parallel, as shown in Figure 6.&nbsp;</p>
 
-^[080-07.jpg]
+^[080-07.webp]
 
 <em><strong>Figure 6. </strong>Calculate the Norton resistance.</em>
 
@@ -90,7 +90,7 @@
 ### Step 5: Draw the Norton Equivalent Circuit
 <p>The simplified Norton equivalent circuit, shown in Figure 7, can now be used for calculations for any linear load device connected between the connection points.&nbsp;</p>
 
-^[080-08.jpg]
+^[080-08.webp]
 
 <em><strong>Figure 7. </strong>Draw the Norton equivalent circuit.</em>
 

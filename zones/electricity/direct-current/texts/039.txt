@@ -2,7 +2,7 @@
 
 # Applying Ohm&#8217;s Law—Rules and Methods for Circuit Analysis
 
-^[039-01.jpg]
+^[039-01.webp]
 
 <h3 class="text-lg lg:text-2xl font-bold mb-3">How to Apply Ohm's Law When Analyzing Series and Parallel Circuits?</h3>
 <p><p>When analyzing complex series and parallel circuits, it is easy to misapply Ohm&rsquo;s law equations. Remember this important rule&mdash;the variables used in Ohm&rsquo;s law equations must be common to the same two points in the circuit under consideration.</p></p>
@@ -18,7 +18,7 @@
 
 <p>This concept is illustrated in Figure 1.&nbsp;</p>
 
-^[039-02.jpg]
+^[039-02.webp]
 
 <em><strong>Figure 1.</strong> The circuit context for using Ohm&rsquo;s law equations.</em>
 
@@ -38,20 +38,20 @@
 
 <em><strong>Table 1.</strong> Format of the table method for Ohm&rsquo;s law circuit evaluation.</em>
 
-^[039-03.jpg]
+^[039-03.webp]
 
 <p>Using a table like this to list all voltages, currents, and resistances helps clearly define where Ohm&rsquo;s law equations can be used. Deriving values horizontally across columns is allowable under the principles of series and parallel circuits</p>
 
 ### Table Method Rules for Series Circuits
 <p>Applying the table method to the series circuit of Figure 2, we can use the horizontal row rules, demonstrated in Table 2, to assist in completing the circuit analysis.&nbsp;</p>
 
-^[039-04.jpg]
+^[039-04.webp]
 
 <em><strong>Figure 2.</strong> Example series circuit.</em>
 
 <em><strong>Table 2.</strong> Table method row rules for series circuits.</em>
 
-^[039-05.jpg]
+^[039-05.webp]
 
 <p>$$V_{total} = V_1 + V_2 + V_3$$</p>
 
@@ -64,13 +64,13 @@
 ### Table Method Rules for Parallel Circuits
 <p>Similarly, for parallel circuits, as illustrated in Figure 3, we can apply a few basic rules for parallel circuits, as shown in Table 3.</p>
 
-^[039-06.jpg]
+^[039-06.webp]
 
 <em><strong>Figure 3. </strong>Example parallel circuit</em>
 
 <em><strong>Table 3.</strong> Table method row rules for parallel circuits.</em>
 
-^[039-07.jpg]
+^[039-07.webp]
 
 <p>$$V_{total} = V_1 = V_2 = V_3$$</p>
 

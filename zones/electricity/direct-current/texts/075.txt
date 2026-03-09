@@ -2,7 +2,7 @@
 
 # Node Voltage Method
 
-^[075-01.jpg]
+^[075-01.webp]
 
 <h3 class="text-lg lg:text-2xl font-bold mb-3">What is the Node Voltage Method for DC Network Analysis?</h3>
 <p><p>The node voltage method is a DC network analysis technique based on the structured application of Kirchhoff&rsquo;s current law. This method involves converting voltage sources to current sources and replacing resistances with equivalent conductances.</p></p>
@@ -15,7 +15,7 @@
 ### Step 1: Label All Unique Voltage Nodes
 <p>A common node, V<sub>0</sub>, is chosen as a reference point&mdash;this is typically the ground node in the circuit. The other unknown node voltages in our Figure 1 circuit, V<sub>1</sub> and V<sub>2</sub>, will be calculated concerning this point.</p>
 
-^[075-02.jpg]
+^[075-02.webp]
 
 <em><strong>Figure 1. </strong>Circuit schematic for demonstration of the node voltage method of circuit analysis.</em>
 
@@ -30,7 +30,7 @@
 
 <p>The parallel resistance will be the same value as the series resistance. Knowing our current source and resistance values, we can draw our equivalent parallel circuit, as shown in Figure 2.</p>
 
-^[075-03.jpg]
+^[075-03.webp]
 
 <em><strong>Figure 2. </strong>Conversion of a voltage source with series resistance to a current source with parallel resistance.</em>
 
@@ -40,7 +40,7 @@
 
 <p>From here, we can now redraw our circuit with two current sources and parallel resistors, as shown in Figure 3.</p>
 
-^[075-04.jpg]
+^[075-04.webp]
 
 <em><strong>Figure 3. </strong>New circuit with current sources and parallel resistors.</em>
 
@@ -59,7 +59,7 @@
 
 <p>We can update our drawing with these calculated conductance values (Figure 4).</p>
 
-^[075-05.jpg]
+^[075-05.webp]
 
 <em><strong>Figure 4. </strong>All resistance values are replaced by equivalent conductance.</em>
 
@@ -71,7 +71,7 @@
 
 <p>Our simplified circuit, ready for applying the node voltage method, is shown in Figure 5.</p>
 
-^[075-06.jpg]
+^[075-06.webp]
 
 <em><strong>Figure 5.</strong> Simplified circuit.</em>
 
@@ -115,7 +115,7 @@
 ## The Node Voltage Method Applied to an Unbalanced Wheatstone Bridge
 <p>Let&rsquo;s look at another circuit analysis example using the node voltage method. The circuit of Figure 6 is called an unbalanced Wheatstone bridge, and it has three unknown voltage nodes plus the common voltage node, V<sub>0</sub>.&nbsp;</p>
 
-^[075-07.jpg]
+^[075-07.webp]
 
 <em><strong>Figure 6. </strong>Wheatstone bridge for node voltage method application.</em>
 

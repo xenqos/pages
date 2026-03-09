@@ -2,7 +2,7 @@
 
 # Converting Between Thevenin and Norton Equivalent Circuits
 
-^[081-01.jpg]
+^[081-01.webp]
 
 ## Learn to Convert Between Thevenin and Norton's Equivalent Circuits
 <p>This article provides a simple explanation of how to convert between Thevenin and Norton equivalent circuits.&nbsp;&nbsp;</p>
@@ -18,18 +18,18 @@
 </ul>
 <p>Since the procedures are identical, the Thevenin and Norton resistances for any circuit must be equal. Figure 1 is the example circuit we used when explaining how to calculate the equivalent circuits.</p>
 
-^[081-02.jpg]
+^[081-02.webp]
 
 <em><strong>Figure 1.</strong> Circuit schematic for explaining Thevenin&rsquo;s and Norton&rsquo;s theorems.</em>
 
 <p>Figures 2 and 3 are the Thevenin and Norton equivalent circuits, respectively, for the circuit of Figure 1.&nbsp;</p>
 
-^[081-03.jpg]
+^[081-03.webp]
 
 <em><strong>Figure 2. </strong>Thevenin equivalent circuit.</em>
 
 
-^[081-04.jpg]
+^[081-04.webp]
 
 <em><strong>Figure 3.</strong> Norton equivalent circuit.</em>
 

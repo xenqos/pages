@@ -2,7 +2,7 @@
 
 # Solving Series and Parallel Circuits With the Table Method and Ohm&#8217;s Law
 
-^[036-01.jpg]
+^[036-01.webp]
 
 <h3 class="text-lg lg:text-2xl font-bold mb-3">How Can You Use Ohm's Law and the Table Method in Series and Parallel Circuits?</h3>
 <p><p>The application of Ohm&rsquo;s law using the table method is demonstrated for both series and parallel circuits. The table method provides an easy, structured technique for ensuring you arrive at the correct circuit values for current, voltage, and resistance.</p></p>
@@ -10,7 +10,7 @@
 
 <em><strong>Table 1.</strong> Format of the table method for Ohm&rsquo;s law circuit evaluation.</em>
 
-^[036-02.jpg]
+^[036-02.webp]
 
 <p>Using a table to list all voltages, currents, and resistance in the circuit makes it easy to see which of those quantities can be properly related in any Ohm&rsquo;s law equation.</p>
 <p>With that in mind, let&rsquo;s take a look at using this table method for a series circuit.</p>
@@ -18,7 +18,7 @@
 ## Applying the Table Method to a Series Circuit
 <p>In this section, we will use the table method to evaluate the series circuit shown in Figure 1. This is the same circuit used to introduce the three-series circuit principles.&nbsp;</p>
 
-^[036-03.jpg]
+^[036-03.webp]
 
 <em><strong>Figure 1.</strong> Series circuit with a battery and three resistors.</em>
 
@@ -26,7 +26,7 @@
 
 <em><strong>Table 2.</strong> Entering values from the series circuit.</em>
 
-^[036-04.jpg]
+^[036-04.webp]
 
 <p>As you can see from the arrangement of the data, we can&rsquo;t apply the supply voltage (9 V) to any of the resistances (R<sub>1</sub>, R<sub>2</sub>, or R<sub>3</sub>) in any Ohm&rsquo;s law formula because they are in different columns. The 9 V of the battery is not applied directly across R<sub>1</sub>, R<sub>2</sub>, or R<sub>3</sub>.&nbsp;</p>
 
@@ -35,7 +35,7 @@
 
 <em><strong>&nbsp;Table 3.</strong> Summing the series resistance values.</em>
 
-^[036-05.jpg]
+^[036-05.webp]
 
 ## Calculating Current in a Series Circuit
 <p>Now, with a value for total resistance in the Total column, we can apply Ohm&rsquo;s law to calculate the total current:</p>
@@ -46,20 +46,20 @@
 
 <em><strong>Table 4.</strong> Calculation of the total series circuit current.</em>
 
-^[036-06.jpg]
+^[036-06.webp]
 
 <p>Next, by knowing the series circuit rule where the same amount of current flows through each component, we can fill in the currents for each resistor from the current value calculated in Table 4. This can be seen in Table 5.&nbsp;</p>
 
 <em><strong>Table 5. </strong>Copying the series current to all columns.</em>
 
-^[036-07.jpg]
+^[036-07.webp]
 
 ## Individual Voltage Drop Calculation for Series Circuits
 <p>Now that we have found the total resistance and current, we can use Ohm&rsquo;s law to determine the voltage drop across each resistor, one column at a time, shown in Table 6.&nbsp;</p>
 
 <em><strong>Table 6. </strong>Calculating the voltage drop across each series resistor.</em>
 
-^[036-08.jpg]
+^[036-08.webp]
 
 <p>$$V_{R1} = I_{R1} * R_1 = (500 \space \mu \text{A}) \cdot (3 \text{ k}\Omega) = 1.5 \text{ V}$$</p>
 <p>$$V_{R2} = I_{R2} * R_2 = (500 \space \mu \text{A}) \cdot (10 \text{ k}\Omega) = 5.0 \text{ V}$$</p>
@@ -72,7 +72,7 @@
 ## Applying the Table Method to a Parallel Circuit
 <p>In this section, we will apply the table method to the parallel circuit shown in Figure 2. This circuit is employed in our introduction to the three principles of parallel circuits.&nbsp;</p>
 
-^[036-09.jpg]
+^[036-09.webp]
 
 <em><strong>Figure 2.</strong> Parallel circuit with a battery and three resistors.</em>
 
@@ -80,7 +80,7 @@
 
 <em><strong>Table 7.</strong> Entering values from the parallel circuit.</em>
 
-^[036-10.jpg]
+^[036-10.webp]
 
 &nbsp;</p>
 <p>In this parallel circuit, the voltage across R<sub>1</sub> is equal to the voltage across R<sub>2</sub>, which is equal to the voltage across R<sub>3</sub>, and in turn, is equal to the voltage across the battery (9 V).</p>
@@ -90,7 +90,7 @@
 
 <em><strong>Table 8. </strong>Calculating the branch currents in the parallel circuit.</em>
 
-^[036-11.jpg]
+^[036-11.webp]
 
 <p>$$I_{R1} = \frac{9 \text{ V}}{10 \text{ k}\Omega} = 0.9 \text{ mA}$$</p>
 <p>$$I_{R2} = \frac{9 \text{ V}}{2 \text{ k}\Omega} = 4.5 \text{ mA}$$</p>
@@ -100,7 +100,7 @@
 
 <em><strong>Table 9. </strong>Calculating the total parallel circuit current.</em>
 
-^[036-12.jpg]
+^[036-12.webp]
 
 <p>$$I_{total} = I_{R1} + I_{R2} + I_{R3} = 0.9 + 4.5 + 9.0 = 14.4 \text{ mA}$$</p>
 
@@ -109,7 +109,7 @@
 
 <em><strong>Table 10. </strong>Calculating the total effective resistance of the parallel circuit.</em>
 
-^[036-13.jpg]
+^[036-13.webp]
 
 <p>$$R_{total} = \frac{V_{total}}{I_{total}} = \frac{9 \text{ V}}{14.4 \text{ mA}} = 625 \space \Omega$$</p>
 

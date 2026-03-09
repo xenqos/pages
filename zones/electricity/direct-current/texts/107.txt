@@ -5,11 +5,11 @@
 <p>An easy way to create a magnetic field of changing intensity is to move a permanent magnet next to a wire or coil of wire.</p>
 <p><strong>Remember: </strong><em>The magnetic field must increase or decrease in intensity perpendicular to the wire (so that the lines of flux &ldquo;cut across&rdquo; the </em><em>conductor</em><em>), or else no voltage will be induced.</em></p>
 
-^[107-01.jpg]
+^[107-01.webp]
 
 <p>Faraday was able to mathematically relate the rate of change of the magnetic field flux with induced voltage (note the use of a lower-case letter &ldquo;e&rdquo; for voltage. This refers to <em>instantaneous</em> voltage, or voltage at a specific point in time, rather than a steady, stable voltage.):</p>
 
-^[107-02.png]
+^[107-02.webp]
 
 <p>The &ldquo;d&rdquo; terms are standard calculus notation, representing rate-of-change of flux over time. &ldquo;N&rdquo; stands for the number of turns, or wraps, in the wire coil (assuming that the wire is formed in the shape of a coil for maximum electromagnetic efficiency).</p>
 <p>This phenomenon is used in the construction of electrical generators, which use mechanical power to move a magnetic field past coils of wire to generate voltage. However, this is by no means the only practical use for this principle.</p>

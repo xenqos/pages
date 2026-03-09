@@ -2,7 +2,7 @@
 
 # Parallel Circuits and the Application of Ohm&#8217;s Law
 
-^[035-01.jpg]
+^[035-01.webp]
 
 <h3 class="text-lg lg:text-2xl font-bold mb-3">What is the Voltage and Total Current in a Parallel Circuit?</h3>
 <p><p>In a parallel circuit, all components share the same electrical nodes. Therefore, the voltage is the same across all parallel components, and the total current is the sum of all the individual branch currents.</p></p>
@@ -14,7 +14,7 @@
 </ul>
 <p>We&rsquo;ll study these three principles using the parallel circuit of Figure 1, which contains three resistors connected in a parallel and a single battery.</p>
 
-^[035-02.jpg]
+^[035-02.webp]
 
 <em><strong>Figure 1.</strong> Parallel circuit with a battery and three resistors.</em>
 
@@ -34,7 +34,7 @@
 
 <p>However, at this point, we still don&rsquo;t know the total current or total resistance for this parallel circuit. Despite that, if we think carefully about what is happening, it should become apparent that the total current must equal the sum of all individual resistor (&ldquo;branch&rdquo;) currents (shown in Figure 2):</p>
 
-^[035-03.jpg]
+^[035-03.webp]
 
 <em><strong>Figure 2.</strong> Currents in a parallel circuit.</em>
 
