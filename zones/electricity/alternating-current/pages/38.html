@@ -31,6 +31,9 @@
 </div>
 <div id='idContent'>
 
+<h6>07. Mixed-Frequency AC Signals</h6>
+
+
 <h1>Introduction to Mixed-Frequency AC Signals</h1>
 <p>In our study of AC circuits thus far, we&rsquo;ve explored circuits powered by a single-frequency sine voltage waveform. In many applications of electronics, though, single-frequency signals are the exception rather than the rule.</p>
 <p>Quite often we may encounter circuits where multiple frequencies of voltage coexist simultaneously. Also, circuit waveforms may be something other than sine-wave shaped, in which case we call them <em>non-sinusoidal</em><em> </em><em>waveforms</em>.</p>
@@ -43,19 +46,19 @@
 <p>A classic example of coupling phenomenon is seen frequently in industry where DC signal wiring is placed in close proximity to AC power wiring. The nearby presence of high AC voltages and currents may cause &ldquo;foreign&rdquo; voltages to be impressed upon the length of the signal wiring.</p>
 <p>Stray capacitance formed by the electrical insulation separating power conductors from signal conductors may cause voltage (with respect to earth ground) from the power conductors to be impressed upon the signal conductors, while stray inductance formed by parallel runs of wire in conduit may cause current from the power conductors to electromagnetically induce voltage along the signal conductors.</p>
 <p>The result is a mix of DC and AC at the signal load. The following schematic shows how an AC &ldquo;noise&rdquo; source may &ldquo;couple&rdquo; to a DC circuit through mutual inductance (Mstray) and capacitance (Cstray) along the length of the conductors. (Figure below)</p>
-<p><img src=&quot;/uploads/articles/couple-stray-ac-into-desired-dc-signal.jpg&quot; /></p>
+<a target='_blank' href='../images/38-01.jpg'><img class='clImageThumb' src='../images/38-01.jpg'></a><br>
 <p><em>Stray inductance and capacitance couple stray AC into desired DC signal.</em></p>
 <p>When stray AC voltages from a &ldquo;noise&rdquo; source mix with DC signals conducted along signal wiring, the results are usually undesirable. For this reason, power wiring and low-level signal wiring should <em>always</em> be routed through separated, dedicated metal conduit, and signals should be conducted via 2-conductor &ldquo;twisted pair&rdquo; cable rather than through a single wire and ground connection: (Figure below)</p>
-<p><img src=&quot;/uploads/articles/shielded-twisted-pair-minimized-noise.jpg&quot; /></p>
+<a target='_blank' href='../images/38-02.jpg'><img class='clImageThumb' src='../images/38-02.jpg'></a><br>
 <p><em>Shielded twisted pair minimized noise.</em></p>
 <p>The grounded cable shield&mdash;a wire braid or metal foil wrapped around the two insulated conductors&mdash;isolates both conductors from electrostatic (capacitive) coupling by blocking any external electric fields, while the parallel proximity of the two conductors effectively cancels any electromagnetic (mutually inductive) coupling because any induced noise voltage will be approximately equal in magnitude and opposite in phase along both conductors, canceling each other at the receiving end for a net (differential) noise voltage of almost zero.</p>
 <p>Polarity marks placed near each inductive portion of signal conductor length shows how the induced voltages are phased in such a way as to cancel one another.</p>
 <p>Coupling may also occur between two sets of conductors carrying AC signals, in which case both signals may become &ldquo;mixed&rdquo; with each other:</p>
-<p><img src=&quot;/uploads/articles/coupling-of-ac-signals-between-parallel-conductors.jpg&quot; /></p>
+<a target='_blank' href='../images/38-03.jpg'><img class='clImageThumb' src='../images/38-03.jpg'></a><br>
 <p><em>Coupling of AC signals between parallel conductors.</em></p>
 <p>Coupling is but one example of how signals of different frequencies may become mixed. Whether it be AC mixed with DC, or two AC signals mixing with each other, signal coupling via stray inductance and capacitance is usually accidental and undesired.</p>
 <p>In other cases, mixed-frequency signals are the result of intentional design or they may be an intrinsic quality of a signal. It is generally quite easy to create mixed-frequency signal sources. Perhaps the easiest way is to simply connect voltage sources in series: (Figure below)</p>
-<p><img src=&quot;/uploads/articles/series-connection-of-voltage-sources-mixes-signals.jpg&quot; /></p>
+<a target='_blank' href='../images/38-04.jpg'><img class='clImageThumb' src='../images/38-04.jpg'></a><br>
 <p><em>Series connection of voltage sources mixes signals.</em></p>
 <p>Some computer communications networks operate on the principle of superimposing high-frequency voltage signals along 60 Hz power-line conductors, so as to convey computer data along existing lengths of power cabling.</p>
 <p>This technique has been used for years in electric power distribution networks to communicate load data along high-voltage power lines. Certainly these are examples of mixed-frequency AC voltages, under conditions that are deliberately established.</p>

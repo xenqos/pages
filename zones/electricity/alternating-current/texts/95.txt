@@ -1,7 +1,9 @@
+###### 14. Transmission Lines
+
 # Waveguides
 <p>A <em>waveguide</em> is a special form of transmission line consisting of a hollow, metal tube. The tube wall provides distributed inductance, while the empty space between the tube walls provide distributed capacitance.</p>
 
-<p><img src="/uploads/articles/wave-guides-conduct-microwave-energy.png" /></p>
+^[95-01.webp]
 <p><em>Wave guides conduct microwave energy at lower loss than coaxial cables.</em></p>
 
 <p>Waveguides are practical only for signals of extremely high frequency, where the wavelength approaches the cross-sectional dimensions of the waveguide. Below such frequencies, waveguides are useless as electrical transmission lines.</p>
@@ -16,7 +18,7 @@
 <p>All electromagnetic waves consist of electric and magnetic fields propagating in the same direction of travel, but perpendicular to each other. Along the length of a normal transmission line, both electric and magnetic fields are perpendicular (transverse) to the direction of wave travel.</p>
 <p>This is known as the <em>principal mode</em>, or <em>TEM</em> (<strong>T</strong>ransverse <strong>E</strong>lectric and <strong>M</strong>agnetic) mode. This mode of wave propagation can exist only where there are two conductors, and it is the dominant mode of wave propagation where the cross-sectional dimensions of the transmission line are small compared to the wavelength of the signal.</p>
 
-<p><img src="/uploads/articles/twin-lead-transmission-line-propagation.png" /></p>
+^[95-02.webp]
 <p><em>Twin lead transmission line propagation: TEM mode.</em></p>
 
 <p>At <em>microwave</em> signal frequencies (between 100 MHz and 300 GHz), two-conductor transmission lines of any substantial length operating in standard TEM mode become impractical.</p>
@@ -25,7 +27,7 @@
 <p>When an electromagnetic wave propagates down a hollow tube, only one of the fields&mdash;either electric or magnetic&mdash;will actually be transverse to the wave&rsquo;s direction of travel.</p>
 <p>The other field will &ldquo;loop&rdquo; longitudinally to the direction of travel, but still be perpendicular to the other field. Whichever field remains transverse to the direction of travel determines whether the wave propagates in <em>TE</em> mode (<strong>T</strong>ransverse <strong>E</strong>lectric) or <em>TM</em> (<strong>T</strong>ransverse <strong>M</strong>agnetic) mode.</p>
 
-<p><img src="/uploads/articles/waveguide-transverse-electric-and-transverse-magnetic-modes.png" /></p>
+^[95-03.webp]
 <p><em>Waveguide (TE) transverse electric and (TM) transverse magnetic modes.</em></p>
 
 <p>Many variations of each mode exist for a given waveguide, and a full discussion of this subject is well beyond the scope of this book.</p>
@@ -33,12 +35,12 @@
 <p>Signals are typically introduced to and extracted from waveguides by means of small antenna-like coupling devices inserted into the waveguide. Sometimes these coupling elements take the form of a dipole, which is nothing more than two open-ended stub wires of appropriate length.</p>
 <p>Other times, the coupler is a single stub (a half-dipole, similar in principle to a &ldquo;whip&rdquo; antenna, 1/4&lambda; in physical length), or a short loop of wire terminated on the inside surface of the waveguide.</p>
 
-<p><img src="/uploads/articles/stub-and-loop-coupling-to-waveguide.png" /></p>
+^[95-04.webp]
 <p><em>Stub and loop coupling to waveguide.</em></p>
 
 <p>In some cases, such as a class of vacuum tube devices called <em>inductive output tubes</em> (the so-called <em>klystron</em> tube falls into this category), a &ldquo;cavity&rdquo; formed of conductive material may intercept electromagnetic energy from a modulated beam of electrons, having no contact with the beam itself.</p>
 
-<p><img src="/uploads/articles/klystron-inductive-output-tube.png" /></p>
+^[95-05.webp]
 <p><em>Klystron inductive output tube.</em></p>
 
 ## What is a Cavity Resonator?
@@ -49,7 +51,7 @@
 <p>The following photograph shows a home-made waveguide formed from a tin can, used as an antenna for a 2.4 GHz signal in an &ldquo;802.11b&rdquo; computer communication network.</p>
 <p>The coupling element is a quarter-wave stub: nothing more than a piece of solid copper wire about 1-1/4 inches in length extending from the center of a coaxial cable connector penetrating the side of the can.</p>
 
-<p><img src="/uploads/articles/stub-coupling-to-waveguide.jpg" /></p>
+^[95-06.webp]
 <p><em>Can-tenna illustrates stub coupling to waveguide.</em></p>
 
 <p>A few more tin-can antennas may be seen in the background, one of them a &ldquo;Pringles&rdquo; potato chip can. Although this can is of cardboard (paper) construction, its metallic inner lining provides the necessary conductivity to function as a waveguide.</p>

@@ -1,3 +1,5 @@
+###### 13. AC Motors
+
 # AC Commutator Motors
 <p>Charles Proteus Steinmetz&rsquo;s first job after arriving in America was to investigate problems encountered in the design of the alternating current version of the brushed commutator motor. The situation was so bad that motors could not be designed ahead of the actual construction.</p>
 <p>The success or failure of a motor design is not known until it is actually built and tested. He formulated the laws of magnetic <em>hysteresis</em> in finding a solution. Hysteresis is a lagging behind of the magnetic field strength as compared to the magnetizing force. This produces a loss not present in DC magnetics.</p>
@@ -10,14 +12,14 @@
 <p>While starting, armature windings connected to commutator segments shorted by the brushes look like shorted transformer turns to the field. This results in considerable arcing and sparking at the brushes as the armature begins to turn.</p>
 <p>This is less of a problem as speed increases, which shares the arcing and sparking between commutator segments The lagging reactance and arcing brushes are only tolerable in very small uncompensated series AC motors operated at high speed. Series AC motors smaller than hand drills and kitchen mixers may be uncompensated. (Figure below)</p>
 
-<p><img src="/uploads/articles/uncompensated-series-ac-motor.jpg" /></p>
+^[87-01.webp]
 <p><em>Uncompensated series AC motor</em></p>
 
 ## Compensated Series Motor
 <p>The arcing and sparking is mitigated by placing a <em>compensating winding </em>the stator in series with the armature positioned so that its magnetomotive force (mmf) cancels out the armature AC mmf.</p>
 <p>A smaller motor air gap and fewer field turns reduce lagging reactance in series with the armature improving the power factor. All but very small AC commutator motors employ compensating windings. Motors as large as those employed in a kitchen mixer, or larger, use compensated stator windings.</p>
 
-<p><img src="/uploads/articles/compensated-series-ac-motor.jpg" /></p>
+^[87-02.webp]
 <p><em>Compensated series AC motor</em></p>
 
 ## Universal Motor
@@ -29,7 +31,7 @@
 <p>A repulsion motor consists of a field directly connected to the AC line voltage and a pair of shorted brushes offset by 15<strong>&deg;</strong>to 25<strong>&deg;</strong> from the field axis. The field induces a current flow into the shorted armature whose magnetic field opposes that of the field coils.</p>
 <p>Speed can be controlled by rotating the brushes with respect to the field axis. This motor has superior commutation below synchronous speed, inferior commutation above synchronous speed. The low starting current produces high starting torque.</p>
 
-<p><img src="/uploads/articles/repulsion-ac-motor.jpg" /></p>
+^[87-03.webp]
 <p><em>Repulsion AC motor</em></p>
 
 ## Repulsion Start Induction Motor

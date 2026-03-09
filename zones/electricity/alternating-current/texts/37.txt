@@ -1,3 +1,5 @@
+###### 06. Resonance
+
 # Q Factor and Bandwidth of a Resonant Circuit
 <p>  The Q, or quality, factor of a resonant circuit is a measure of the &ldquo;goodness&rdquo; or quality of a resonant circuit. A higher value for this figure of merit corresponds to a more narrow bandwidth, which is desirable in many applications. More formally, Q is the ratio of power stored to power dissipated in the circuit reactance and resistance, respectively:</p>
 
@@ -12,12 +14,12 @@ Q = P<sub>stored</sub>/P<sub>dissipated</sub> = I<sup>2</sup>X/I<sup>2</sup>R Q 
 <p>The impedance is also at a minimum at resonance. Below the resonant frequency, the series resonant circuit looks capacitive since the impedance of the capacitor increases to a value greater than the decreasing inductive reactance, leaving a net capacitive value.</p>
 <p>Above resonance, the inductive reactance increases, capacitive reactance decreases, leaving a net inductive component.</p>
 
-<p><img src="/uploads/articles/series-resonant-circuits-graph1.jpg" /></p>
+^[37-01.webp]
 
 <p><strong><em>NOTE:</em></strong><em> </em></p>
 <p><em>At resonance the series resonant circuit appears purely resistive. Below resonance it looks capacitive. Above resonance it appears inductive.</em> Current is maximum at resonance, impedance at a minimum. Current is set by the value of the resistance. Above or below resonance, impedance increases.</p>
 
-<p><img src="/uploads/articles/series-resonant-circuits-graph2.jpg" /></p>
+^[37-02.webp]
 <p><em>Impedance is at a minimum at resonance in a series resonant circuit.</em></p>
 
 <p>The resonant current peak may be changed by varying the series resistor, which changes the Q. This also affects the broadness of the curve. A low resistance, high Q circuit has a narrow bandwidth, as compared to a high resistance, low Q circuit.</p>
@@ -26,11 +28,11 @@ Q = P<sub>stored</sub>/P<sub>dissipated</sub> = I<sup>2</sup>X/I<sup>2</sup>R Q 
 <pre>
 BW = f<sub>c</sub>/Q Where f<sub>c</sub> = resonant frequency Q = quality factor</pre>
 
-<p><img src="/uploads/articles/series-resonant-circuits-graph3.jpg" /></p>
+^[37-03.webp]
 <p><em>A high Q resonant circuit has a narrow bandwidth as compared to a low Q</em></p>
 
 <p>Bandwidth is measured between the 0.707 current amplitude points. The 0.707 current points correspond to the half power points since P = I<sup>2</sup>R, (0.707)<sup>2</sup> = (0.5).</p>
-<p><img src="/uploads/articles/series-resonant-circuits-graph14.jpg" /></p>
+^[37-04.webp]
 <p><em>Bandwidth, &Delta;f is measured between the 70.7% amplitude points of series resonant circuit.</em></p>
 
 <pre>
@@ -47,22 +49,22 @@ BW = &Delta;f = f<sub>h</sub>-f<sub>l</sub> = 355-291 = 64 f<sub>l</sub> = f<sub
 <p>The impedance of a parallel resonant circuit is maximum at the resonant frequency. Below the resonant frequency, the parallel resonant circuit looks inductive since the impedance of the inductor is lower, drawing the larger proportion of current.</p>
 <p>Above resonance, the capacitive reactance decreases, drawing the larger current, thus, taking on a capacitive characteristic.</p>
 
-<p><img src="/uploads/articles/parallel-resonant-circuit-graph1.jpg" /></p>
+^[37-05.webp]
 <p><em>A parallel resonant circuit is resistive at resonance, inductive below resonance, capacitive above resonance.</em></p>
 
 <p>Impedance is maximum at resonance in a parallel resonant circuit, but decreases above or below resonance. Voltage is at a peak at resonance since voltage is proportional to impedance (E=IZ).</p>
 
-<p><img src="/uploads/articles/parallel-resonant-circuit-graph2.jpg" /></p>
+^[37-06.webp]
 <p><em>Parallel resonant circuit: Impedance peaks at resonance.</em></p>
 
 <p>A low Q due to a high resistance in series with the inductor produces a low peak on a broad response curve for a parallel resonant circuit. A high Q is due to a low resistance in series with the inductor. This produces a higher peak in the narrower response curve. The high Q is achieved by winding the inductor with larger diameter (smaller gauge), lower resistance wire.</p>
 
-<p><img src="/uploads/articles/parallel-resonant-circuit-graph3.jpg" /></p>
+^[37-07.webp]
 <p><em>Parallel resonant response varies with Q.</em></p>
 
 <p>The bandwidth of the parallel resonant response curve is measured between the half power points. This corresponds to the 70.7% voltage points since power is proportional to E<sup>2</sup>. ((0.707)<sup>2</sup>=0.50) Since voltage is proportional to impedance, we may use the impedance curve.</p>
 
-<p><em><img src="/uploads/articles/bandwidth-impedence-parallel-resonant-circuit.png" /></em></p>
+^[37-08.webp]
 <p><em>Bandwidth, &Delta;f is measured between the 70.7% impedance points of a parallel resonant circuit.</em></p>
 
 <p>In the figure above, the 100% impedance point is 500 &Omega;. The 70.7% level is 0707(500)=354 &Omega;. The upper and lower band edges read from the curve are 281 Hz for fl and 343 Hz for fh. The bandwidth is 62 Hz, and the half power points are &plusmn; 31 Hz of the center resonant frequency:</p>

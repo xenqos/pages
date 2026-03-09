@@ -1,10 +1,14 @@
+###### 04. Reactance and Impedance—Capacitive
+
+## 04. Reactance and Impedance—Capacitive ##
+
 # AC Resistor Circuits (Capacitive)
-<p><img src="/uploads/articles/pure-resistive-ac-circuit1.jpg" /></p>
+^[21-01.webp]
 <p><em>Pure resistive AC circuit: voltage and current are in phase.</em></p>
 
 <p>If we were to plot the current and voltage for a very simple AC circuit consisting of a source and a resistor, (figure above) it would look something like this: (figure below)</p>
 
-<p><img src="/uploads/articles/voltage-and-current-in-phase-for-resistive-circuit.jpg" /></p>
+^[21-02.webp]
 <p><em>Voltage and current &ldquo;in phase&rdquo; for resistive circuit.</em></p>
 
 <p>Because the resistor allows an amount of current directly proportional to the voltage across it at all periods of time, the waveform for the current is exactly in phase with the waveform for the voltage.</p>
@@ -13,5 +17,5 @@
 <p>At any given point in time along the waves, Ohm&rsquo;s Law holds true for the instantaneous values of voltage and current.</p>
 <p>We can also calculate the power dissipated by this resistor, and plot those values on the same graph: (figure below)</p>
 
-<p><img src="/uploads/articles/instantaneous-ac-power-in-a-resistive-circuit.jpg" /></p>
+^[21-03.webp]
 <p><em>Instantaneous AC power in a resistive circuit is always positive.</em></p>

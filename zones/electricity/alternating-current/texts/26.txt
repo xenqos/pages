@@ -1,3 +1,7 @@
+###### 05. Reactance and Impedance—R, L, And C
+
+## 05. Reactance and Impedance—R, L, And C ##
+
 # Review of R, X, and Z (Resistance, Reactance and Impedance)
 <p>Before we begin to explore the effects of resistors, inductors, and capacitors connected together in the same AC circuits, let&rsquo;s briefly review some basic terms and facts.</p>
 ## Resistance
@@ -10,11 +14,12 @@
 <p>When the alternating current goes through an impedance, a voltage drop is produced that is somewhere between 0&deg; and 90&deg; out of phase with the current. Impedance is mathematically symbolized by the letter &ldquo;Z&rdquo; and is measured in the unit of ohms (&Omega;), in complex form.</p>
 <p>Perfect resistors possess resistance, but not reactance. Perfect inductors and perfect capacitors possess reactance but no resistance. All components possess impedance, and because of this universal quality, it makes sense to translate all component values (resistance, inductance, capacitance) into common terms of impedance as the first step in analyzing an AC circuit.</p>
 
-<p><img src="https://www.allaboutcircuits.com/uploads/articles/R-X-Z-2.png" /><em>Perfect resistor, inductor, and capacitor.</em></p>
+^[26-01.webp]
+<p><em>Perfect resistor, inductor, and capacitor.</em></p>
 
 <p>The impedance phase angle for any component is the phase shift between the voltage across that component and current through that component.</p>
 <p>For a perfect resistor, the voltage drop and current are <em>always</em> in phase with each other, and so the impedance angle of a resistor is said to be 0&deg;. For a perfect inductor, voltage drop always leads current by 90&deg;, and so an inductor&rsquo;s impedance phase angle is said to be +90&deg;.</p>
 <p>For a perfect capacitor, voltage drop always lags current by 90&deg;, and so a capacitor&rsquo;s impedance phase angle is said to be -90&deg;.</p>
 <p>Impedances in AC behave analogously to resistances in DC circuits: they add in series, and they diminish in parallel. A revised version of Ohm&rsquo;s Law, based on impedance rather than resistance, looks like this:</p>
 
-<p><img src="https://www.allaboutcircuits.com/uploads/articles/OhmsLaw_AC.jpg" /></p>
+^[26-02.webp]

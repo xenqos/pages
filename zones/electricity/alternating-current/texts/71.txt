@@ -1,3 +1,5 @@
+###### 12. AC Metering Circuits
+
 # Frequency and Phase Measurement
 <p>An important electrical quantity with no equivalent in DC circuits is <em>frequency</em>.</p>
 <p>Frequency measurement is very important in many applications of alternating current, especially in&nbsp;AC power systems designed to run efficiently at one frequency and one frequency only.</p>
@@ -11,12 +13,12 @@
 <p>Whichever tuning fork is closest in resonant frequency to the frequency of that vibration will tend to shake the most (or the loudest). If the forks&rsquo; tines were flimsy enough, we could see the relative motion of each by the length of the blur we would see as we inspected each one from an end-view perspective.</p>
 <p>Well, make a collection of &ldquo;tuning forks&rdquo; out of a strip of sheet metal cut in a pattern akin to a rake, and you have the <em>vibrating reed</em> frequency meter:</p>
 
-<p><img src="/uploads/articles/vibrating-reed-frequency-meter-diagram.png" /></p>
+^[71-01.webp]
 <p><em>Vibrating reed frequency meter diagram.</em></p>
 
 <p>The user of this meter views the ends of all those unequal length reeds as they are collectively shaken at the frequency of the applied AC voltage to the coil. The one closest in resonant frequency to the applied AC will vibrate the most, looking something like:</p>
 
-<p><img src="/uploads/articles/vibrating-reed-frequency-meter-front-panel.png" /></p>
+^[71-02.webp]
 <p><em>Vibrating reed frequency meter front panel.</em></p>
 
 <p>Vibrating reed meters, obviously, are not precision instruments, but they are very simple and therefore easy to manufacture to be rugged. They are often found on small engine-driven generator sets for the purpose of setting engine speed so that the frequency is somewhat close to 60 (50 in Europe) Hertz.</p>
@@ -26,7 +28,7 @@
 <p>The adjustment knob(s) are calibrated to show resonant frequency for any given setting, and the frequency is read from them after the device has been adjusted for the maximum indication on the meter.</p>
 <p>Essentially, this is a tunable filter circuit which is adjusted and then read in a manner similar to a bridge circuit (which must be balanced for a &ldquo;null&rdquo; condition and then read).</p>
 
-<p><img src="/uploads/articles/resonant-frequency-meter-peaks.png" /></p>
+^[71-03.webp]
 <p><em>Resonant frequency meter &ldquo;peaks&rdquo; as L-C resonant frequency is tuned to test frequency.</em></p>
 
 <p>This technique is a popular one for amateur radio operators (or at least it was before the advent of inexpensive digital frequency instruments called <em>counters</em>), especially because it doesn&rsquo;t require direct connection to the circuit.</p>
@@ -43,11 +45,11 @@
 <p>Chips of quartz rock can be precisely cut for desired resonant frequencies, and that chip mounted securely inside a protective shell with wires extending for connection to an external electric circuit.</p>
 <p>When packaged as such, the resulting device is simply called a <em>crystal</em> (or sometimes &ldquo;<em>xtal</em>&rdquo;). The schematic symbol is shown in the figure below.</p>
 
-<p><img src="/uploads/articles/crystal-schematic-symbol.png" /></p>
+^[71-04.webp]
 <p><em>Crystal (frequency determining element) schematic symbol.</em></p>
 
 <p>Electrically, that quartz chip is equivalent to a series LC resonant circuit. (Figure below) The dielectric properties of quartz contribute an additional capacitive element to the equivalent circuit.</p>
-<p><img src="/uploads/articles/quartz-crystal-equivalent-circuit.png" /></p>
+^[71-05.webp]
 <p><em>Quartz crystal equivalent circuit.</em></p>
 
 <p>The &ldquo;capacitance&rdquo; and &ldquo;inductance&rdquo; shown in series are merely electrical equivalents of the quartz&rsquo;s mechanical resonance properties: they do not exist as discrete components within the crystal. The capacitance shown in parallel due to the wire connections across the dielectric (insulating) quartz body is real, and it has an effect on the resonant response of the whole system.</p>
@@ -62,7 +64,7 @@
 <p>One way is to use a CRT as a frequency-comparison device. Cathode Ray Tubes typically have means of deflecting the electron beam in the horizontal as well as the vertical axis.</p>
 <p>If metal plates are used to electrostatically deflect the electrons, there will be a pair of plates to the left and right of the beam as well as a pair of plates above and below the beam as in the figure below.</p>
 
-<p><img src="/uploads/articles/cathode-ray-tube-with-vertical-and-horizontal-deflection-plates.png" /></p>
+^[71-06.webp]
 <p><em>Cathode ray tube (CRT) with vertical and horizontal deflection plates.</em></p>
 
 <p>If we allow one AC signal to deflect the beam up and down (connect that AC voltage source to the &ldquo;vertical&rdquo; deflection plates) and another AC signal to deflect the beam left and right (using the other pair of deflection plates), patterns will be produced on the screen of the CRT indicative of the <em>ratio</em> of these two AC frequencies.</p>
@@ -70,32 +72,32 @@
 <p>If the two frequencies are the same, we will obtain a simple figure on the screen of the CRT, the shape of that figure being dependent upon the phase shift between the two AC signals. Here is a sampling of Lissajous figures for two sine-wave signals of equal frequency, shown as they would appear on the face of an oscilloscope (an AC voltage-measuring instrument using a CRT as its &ldquo;movement&rdquo;).</p>
 <p>The first picture is of the Lissajous figure formed by two AC voltages perfectly in phase with each other:</p>
 
-<p><img src="/uploads/articles/lissajous-figure1.png" /></p>
+^[71-07.webp]
 <p><em>Lissajous figure: same frequency, zero degrees phase shift.</em></p>
 
 <p>If the two AC voltages are not in phase with each other, a straight line will not be formed. Rather, the Lissajous figure will take on the appearance of an oval, becoming perfectly circular if the phase shift is exactly 90&deg; between the two signals, and if their amplitudes are equal:</p>
 
-<p><img src="/uploads/articles/lissajous-figure2.png" /></p>
+^[71-08.webp]
 <p><em>Lissajous figure: same frequency, 90 or 270 degrees phase shift.</em></p>
 
 <p>Finally, if the two AC signals are directly opposing one another in phase (180&deg; shift), we will end up with a line again, only this time it will be oriented in the opposite direction:</p>
 
-<p><img src="/uploads/articles/lissajous-figure3.png" /></p>
+^[71-09.webp]
 <p><em>Lissajous figure: same frequency, 180 degrees phase shift.</em></p>
 
 <p>When we are faced with signal frequencies that are not the same, Lissajous figures get quite a bit more complex. Consider the following examples and they&rsquo;re given vertical/horizontal frequency ratios:</p>
 
-<p><img src="/uploads/articles/lissajous-figure4.png" /></p>
+^[71-10.webp]
 <p><em>Lissajous figure: Horizontal frequency is twice that of vertical.</em></p>
 
 <p>The more complex the ratio between horizontal and vertical frequencies, the more complex the Lissajous figure. Consider the following illustration of a 3:1 frequency ratio between horizontal and vertical:</p>
 
-<p><img src="/uploads/articles/lissajous-figure5.png" /></p>
+^[71-11.webp]
 <p><em>Lissajous figure: Horizontal frequency is three times that of vertical.</em></p>
 
 <p>. . . and a 3:2 frequency ratio (horizontal = 3, vertical = 2) in the figure below.</p>
 
-<p><img src="/uploads/articles/lissajous-figure6.png" /></p>
+^[71-12.webp]
 <p><em>Lissajous figure: Horizontal/vertical frequency ratio is 3:2.</em></p>
 
 <p>In cases where the frequencies of the two AC signals are not exactly a simple ratio of each other (but close), the Lissajous figure will appear to &ldquo;move,&rdquo; slowly changing orientation as the phase angle between the two waveforms rolls between 0&deg; and 180&deg;.</p>

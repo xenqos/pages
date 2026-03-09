@@ -1,3 +1,5 @@
+###### 09. Transformers
+
 # Practical Considerations - Transformers
 ## Power Capacity
 <p>As has already been observed, transformers must be well designed in order to achieve acceptable power coupling, tight voltage regulation, and low exciting current distortion. Also, transformers must be designed to carry the expected values of primary and secondary winding current without any trouble.</p>
@@ -11,7 +13,7 @@
 <p>Respecting these limitations, transformers are rated for certain levels of primary and secondary winding voltage and current, though the current rating is usually derived from a volt-amp (VA) rating assigned to the transformer.</p>
 <p>For example, take a step-down transformer with a primary voltage rating of 120 volts, a secondary voltage rating of 48 volts, and a VA rating of 1 kVA (1000 VA). The maximum winding currents can be determined as such:kVA (1000 VA). The maximum winding currents can be determined as such:</p>
 
-<p><img src="/uploads/articles/maximum-winding-currents-formula.jpg" /></p>
+^[57-01.webp]
 
 <p>Sometimes windings will bear current ratings in amps, but this is typically seen on small transformers. Large transformers are almost always rated in terms of winding voltage and VA or kVA.</p>
 ## Energy Losses
@@ -30,13 +32,13 @@
 <p>Loops of wire covered by high-temperature insulation encircle the pipe&rsquo;s circumference, inducing eddy currents within the pipe wall by electromagnetic induction. In order to maximize the eddy current effect, high-frequency alternating current is used rather than power line frequency (60 Hz).</p>
 <p>The box units at the right of the picture produce the high-frequency AC and control the amount of current in the wires to stabilize the pipe temperature at a pre-determined &ldquo;set-point.&rdquo;</p>
 
-<p><img src="/uploads/articles/primary-insulated-winding-induces-current.jpg" /></p>
+^[57-02.webp]
 <p><em>Induction heating: Primary insulated winding induces current into the lossy iron pipe (secondary).</em></p>
 
 ### Mitigating Eddy Currents
 <p>The main strategy in mitigating these wasteful eddy currents in transformer cores is to form the iron core in sheets, each sheet covered with an insulating varnish so that the core is divided up into thin slices. The result is very little width in the core for eddy currents to circulate in:</p>
 
-<p><img src="/uploads/articles/dividing-the-iron-core.jpg" /></p>
+^[57-03.webp]
 <p><em>Dividing the iron core into thin insulated laminations minimizes eddy current loss.</em></p>
 
 <p><em>Laminated</em> cores like the one shown here are standard in almost all low-frequency transformers. Recall from the photograph of the transformer cut in half that the iron core was composed of many thin sheets rather than one solid piece.</p>
@@ -75,14 +77,14 @@
 <p>Special transformers known as <em>peaking transformers</em> exploit this principle to produce brief voltage pulses near the peaks of the source voltage waveform. The core is designed to saturate quickly and sharply, at voltage levels well below peak.</p>
 <p>This results in a severely cropped sine-wave flux waveform, and secondary voltage pulses only when the flux is changing (below saturation levels):</p>
 
-<p><img src="/uploads/articles/voltage-and-flux-waveforms-for-a-peaking-transformer.jpg" /></p>
+^[57-04.webp]
 <p><em>Voltage and flux waveforms for a peaking transformer.</em></p>
 
 ### Operation at Frequencies Lower than Normal
 <p>Another cause of abnormal transformer core saturation is operation at frequencies lower than normal. For example, if a power transformer designed to operate at 60 Hz is forced to operate at 50 Hz instead, the flux must reach greater peak levels than before in order to produce the same opposing voltage needed to balance against the source voltage.</p>
 <p>This is true even if the source voltage is the same as before.</p>
 
-<p><img src="/uploads/articles/magnetic-flux-is-higher-in-transformer-core.jpg" /></p>
+^[57-05.webp]
 <p><em>Magnetic flux is higher in a transformer core driven by 50 Hz as compared to 60 Hz for the same voltage.</em></p>
 
 <p>Since instantaneous winding voltage is proportional to the instantaneous magnetic flux&rsquo;s <em>rate of change</em> in a transformer, a voltage waveform reaching the same peak value, but taking a longer amount of time to complete each half-cycle, demands that the flux maintain the same rate of change as before, but for longer periods of time.</p>
@@ -91,12 +93,12 @@
 <p>If we take the opposite perspective, though, and relate the original waveform to its derivative, we may call the original waveform the <em>integral</em> of the derivative waveform. In this case, the voltage waveform is the derivative of the flux waveform, and the flux waveform is the integral of the voltage waveform.</p>
 <p>The integral of any mathematical function is proportional to the area accumulated underneath the curve of that function. Since each half-cycle of the 50 Hz waveform accumulates more area between it and the zero line of the graph than the 60 Hz waveform will&mdash;and we know that the magnetic flux is the integral of the voltage&mdash;the flux will attain higher values in the Figure below.</p>
 
-<p><img src="/uploads/articles/flux-changing-at-the-same-rate-rises-to-higher-level.jpg" /></p>
+^[57-06.webp]
 <p><em>Flux changing at the same rate rises to a higher level at 50 Hz than at 60 Hz.</em></p>
 
 <p>Yet another cause of transformer saturation is the presence of DC current in the primary winding. Any amount of DC voltage dropped across the primary winding of a transformer will cause an additional magnetic flux in the core. This additional flux &ldquo;bias&rdquo; or &ldquo;offset&rdquo; will push the alternating flux waveform closer to saturation in one half-cycle than the other.</p>
 
-<p><img src="/uploads/articles/alternating-flux-waveform-closer-to-saturation.jpg" /></p>
+^[57-07.webp]
 <p><em>DC in primary shifts the waveform peaks toward the upper saturation limit.</em></p>
 
 <p>For most transformers, core saturation is a very undesirable effect, and it is avoided through good design: engineering the windings and core so that magnetic flux densities remain well below the saturation levels.</p>
@@ -107,13 +109,13 @@
 <p>We know that the rate of change of instantaneous flux in a transformer core is proportional to the instantaneous voltage drop across the primary winding. Or, as stated before, the voltage waveform is the derivative of the flux waveform, and the flux waveform is the integral of the voltage waveform.</p>
 <p>In a continuously-operating transformer, these two waveforms are phase-shifted by 90&deg;. Since flux (&Phi;) is proportional to the magnetomotive force (mmf) in the core, and the mmf is proportional to winding current, the current waveform will be in-phase with the flux waveform, and both will be lagging the voltage waveform by 90&deg;:</p>
 
-<p><img src="/uploads/articles/continuous-steady-state-operation.jpg" /></p>
+^[57-08.webp]
 <p><em>Continuous steady-state operation: Magnetic flux, like current, lags applied voltage by 90&deg;.</em></p>
 
 <p>Let us suppose that the primary winding of a transformer is suddenly connected to an AC voltage source at the exact moment in time when the instantaneous voltage is at its positive peak value.</p>
 <p>In order for the transformer to create an opposing voltage drop to balance against this applied source voltage, a magnetic flux of rapidly increasing value must be generated. The result is that winding current increases rapidly, but actually no more rapidly than under normal conditions:</p>
 
-<p><img src="/uploads/articles/connecting-transformer-to-line-at-ac-volt-peak.jpg" /></p>
+^[57-09.webp]
 <p><em>Connecting the transformer to the line at AC volt peak: Flux increases rapidly from zero, same as steady-state operation.</em></p>
 
 <p>Both core flux and coil current start from zero and build up to the same peak values experienced during continuous operation. Thus, there is no &ldquo;surge&rdquo; or &ldquo;inrush&rdquo; or current in this scenario.</p>
@@ -121,21 +123,21 @@
 <p>During continuous operation (when the transformer has been powered for quite some time), this is the point in time where both flux and winding current are at their negative peaks, experiencing zero rate-of-change (d&Phi;/dt = 0 and di/dt = 0).</p>
 <p>As the voltage builds to its positive peak, the flux and current waveforms build to their maximum positive rates-of-change, and on upward to their positive peaks as the voltage descends to a level of zero:</p>
 
-<p><img src="/uploads/articles/flux-and-current-waveforms-build.jpg" /></p>
+^[57-10.webp]
 <p><em>Starting at e=0 V is not the same as running continuously in Figure above. These expected waveforms are incorrect&ndash; &Phi; and I should start at zero.</em></p>
 
 <p>A significant difference exists, however, between continuous-mode operation and the sudden starting condition assumed in this scenario: during continuous operation, the flux and current levels were at their negative peaks when voltage was at its zero points; in a transformer that has been sitting idle, however, both magnetic flux and winding current should start at <em>zero</em>.</p>
 <p>When the magnetic flux increases in response to a rising voltage, it will increase from zero upward, not from a previously negative (magnetized) condition as we would normally have in a transformer that&rsquo;s been powered for a while.</p>
 <p>Thus, in a transformer that&rsquo;s just &ldquo;starting,&rdquo; the flux will reach approximately twice its normal peak magnitude as it &ldquo;integrates&rdquo; the area under the voltage waveform&rsquo;s first half-cycle:</p>
 
-<p><img src="/uploads/articles/voltage-waveforms-first-half-cycle.jpg" /></p>
+^[57-11.webp]
 <p><em>Starting at e=0 V, &Phi; starts at initial condition &Phi;=0, increasing to twice the normal value, assuming it doesn&rsquo;t saturate the core.</em></p>
 
 <p>In an ideal transformer, the magnetizing current would rise to approximately twice its normal peak value as well, generating the necessary mmf to create this higher-than-normal flux.</p>
 <p>However, most transformers aren&rsquo;t designed with enough of a margin between normal flux peaks and the saturation limits to avoid saturating in a condition like this, and so the core will almost certainly saturate during this first half-cycle of voltage.</p>
 <p>During saturation, disproportionate amounts of mmf are needed to generate magnetic flux. This means that winding current, which creates the mmf to cause a flux in the core, will disproportionately rise to a value <em>easily exceeding</em> twice its normal peak:</p>
 
-<p><img src="/uploads/articles/creates-the-mmf-to-cause-flux-in-the-core.jpg" /></p>
+^[57-12.webp]
 <p><em>Starting at e=0 V, Current also increases to twice the normal value for an unsaturated core, or considerably higher in the (designed for) case of saturation.</em></p>
 
 <p>This is the mechanism causing inrush current in a transformer&rsquo;s primary winding when connected to an AC voltage source. As you can see, the magnitude of the inrush current strongly depends on the exact time that electrical connection to the source is made.</p>
@@ -146,7 +148,7 @@
 <p>Large power transformers have their core and windings submerged in an oil bath to transfer heat and muffle noise, and also to displace moisture which would otherwise compromise the integrity of the winding insulation.</p>
 <p>Heat-dissipating &ldquo;radiator&rdquo; tubes on the outside of the transformer case provide a convective oil flow path to transfer heat from the transformer&rsquo;s core to ambient air:</p>
 
-<p><img src="/uploads/articles/large-power-transformers.jpg" /></p>
+^[57-13.webp]
 <p><em>Large power transformers are submerged in heat dissipating insulating oil.</em></p>
 
 <p>Oil-less, or &ldquo;dry,&rdquo; transformers are often rated in terms of maximum operating temperature &ldquo;rise&rdquo; (temperature increase beyond ambient) according to a letter-class system: A, B, F, or H. These letter codes are arranged in order of lowest heat tolerance to highest:</p>

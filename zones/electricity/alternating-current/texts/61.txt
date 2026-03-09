@@ -1,15 +1,18 @@
+###### 10. Polyphase AC Circuits
+
 # Polyphase Motor Design
+
 ## AC Motors
 <p>Perhaps the most important benefit of polyphase AC power over single-phase is the design and operation of AC motors.</p>
 <p>As we studied in the first chapter of this book, some types of AC motors are virtually identical in construction to their alternator (generator) counterparts, consisting of stationary wire windings and a rotating magnet assembly. (Other AC motor designs are not quite this simple, but we will leave those details to another lesson).</p>
 
-<p><img src="/uploads/articles/clockwise-ac-motor-operation.jpg" /></p>
+^[61-01.webp]
 <p><em>Clockwise AC motor operation.</em></p>
 
 <p>If the rotating magnet is able to keep up with the frequency of the alternating current energizing the electromagnet windings (coils), it will continue to be pulled around clockwise. (Figure above)</p>
 <p>However, clockwise is not the only valid direction for this motor&rsquo;s shaft to spin. It could just as easily be powered in a counter-clockwise direction by the same AC voltage waveform an in the figure below.</p>
 
-<p><img src="/uploads/articles/counterclockwise-ac-motor-operation.jpg" /></p>
+^[61-02.webp]
 <p><em>Counterclockwise AC motor operation.</em></p>
 
 ## Starting AC Motors
@@ -19,12 +22,12 @@
 <p>Where that &ldquo;help&rdquo; comes from for a single-phase AC motor to get going in one direction can vary.</p>
 <p>Usually, it comes from an additional set of windings positioned differently from the main set and energized with an AC voltage that is out of phase with the main power. (Figure below)</p>
 
-<p><img src="/uploads/articles/unidirectional-starting-ac-two-phase-motor.jpg" /></p>
+^[61-03.webp]
 <p><em>Unidirectional-starting AC two-phase motor.</em></p>
 
 <p>These supplementary coils are typically connected in series with a capacitor to introduce a phase shift in current between the two sets of windings. (Figure below)</p>
 
-<p><img src="/uploads/articles/capacitor-phase-shift-adds-second-phase.jpg" /></p>
+^[61-04.webp]
 <p><em>Capacitor phase shift adds the second phase.</em></p>
 
 <p>That phase shift creates magnetic fields from coils 2a and 2b that are equally out of step with the fields from coils 1a and 1b.</p>
@@ -39,7 +42,7 @@
 <p>Answer: phase shift!</p>
 <p>Examine a string of lights where every other bulb is lit at any given time as in (Figure below)</p>
 
-<p><img src="/uploads/articles/linear-string-lights-analogy.jpg" /></p>
+^[61-05.webp]
 <p><em>Phase sequence 1-2-1-2: lamps appear to move.</em></p>
 
 <p>When all of the &ldquo;1&rdquo; bulbs are lit, the &ldquo;2&rdquo; bulbs are dark, and vice versa. With this blinking sequence, there is no definite &ldquo;motion&rdquo; to the bulbs&rsquo; light.</p>
@@ -47,14 +50,14 @@
 <p>This is analogous to the single-phase AC motor, which can run just as easily in either direction, but which cannot start on its own because its magnetic field alternation lacks a definite &ldquo;rotation.&rdquo;</p>
 <p>Now let&rsquo;s examine a string of lights where there are three sets of bulbs to be sequenced instead of just two, and these three sets are equally out of phase with each other in the figure below.</p>
 
-<p><img src="/uploads/articles/linear-string-lights-analogy1.jpg" /></p>
+^[61-06.webp]
 <p><em>Phase sequence: 1-2-3: bulbs appear to move left to right.</em></p>
 
 <p>If the lighting sequence is 1-2-3 (the sequence is shown in (Figure above)), the bulbs will appear to &ldquo;move&rdquo; from left to right.</p>
 ## Circular String Lights Analogy
 <p>Now imagine this blinking string of bulbs arranged into a circle as in the figure below.</p>
 
-<p><img src="/uploads/articles/circuilar-string-lights-analogy.jpg" /></p>
+^[61-07.webp]
 <p><em>Circular arrangement; bulbs appear to rotate clockwise.</em></p>
 
 <p>Now the lights in the figure above appear to be &ldquo;moving&rdquo; in a clockwise direction because they have arranged around a circle instead of a straight line.</p>
@@ -62,7 +65,7 @@
 <p>The blinking pattern will either appear to move clockwise or counterclockwise depending on the phase sequence.</p>
 <p>This is analogous to a three-phase AC motor with three sets of windings energized by voltage sources of three different phase shifts in the figure below.</p>
 
-<p><img src="/uploads/articles/three-phase-ac-motor.jpg" /></p>
+^[61-08.webp]
 <p><em>Three-phase AC motor: A phase sequence of 1-2-3 spins the magnet clockwise, 3-2-1 spins the magnet counterclockwise.</em></p>
 
 <p>With phase shifts of less than 180&deg;, we get a true rotation of the magnetic field. With single-phase motors, the rotating magnetic field necessary for self-starting must be created by way of capacitive phase shift. With polyphase motors, the necessary phase shifts are there already.</p>

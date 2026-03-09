@@ -1,3 +1,5 @@
+###### 13. AC Motors
+
 # Tesla Polyphase Induction Motors
 <p>Most AC motors are induction motors. Induction motors are favored due to their ruggedness and simplicity. In fact, 90% of industrial motors are induction motors.</p>
 <p>Nikola Tesla conceived the basic principles of the polyphase induction motor in 1883 and had a half horsepower (400 watts) model by 1888. Tesla sold the manufacturing rights to George Westinghouse for $65,000.</p>
@@ -7,7 +9,7 @@
 ## AC Induction Motor Construction
 <p>An induction motor is composed of a rotor, known as an armature, and a stator containing windings connected to a polyphase energy source as shown in the figure below. The simple 2-phase induction motor below is similar to the 1/2 horsepower motor which Nikola Tesla introduced in 1888.</p>
 
-<p><img src="/uploads/articles/tesla-polyphase-induction-motor.jpg" /></p>
+^[82-01.webp]
 <p><em>Tesla polyphase induction motor</em></p>
 
 <p>The stator in the figure above is wound with pairs of coils corresponding to the phases of electrical energy available. The 2-phase induction motor stator above has 2-pairs of coils, one pair for each of the two phases of AC.</p>
@@ -15,12 +17,12 @@
 <p>This pair of coils is connected to AC shifted in time by 90&deg; in the case of a 2-phase motor. In Tesla&rsquo;s time, the source of the two phases of AC was a 2-phase alternator.</p>
 <p>The stator in the figure above has <em>salient</em>, obvious protruding poles, as used on Tesla&rsquo;s early induction motor. This design is used to this day for sub-fractional horsepower motors (&lt;50 watts). However, for larger motors, less torque pulsation and higher efficiency results if the coils are embedded into slots cut into the stator laminations (figure below).</p>
 
-<p><img src="/uploads/articles/stator-frame-showing-slots-for-windings.jpg" /></p>
+^[82-02.webp]
 <p><em>Stator frame showing slots for windings</em></p>
 
 <p>The stator laminations are thin insulated rings with slots punched from sheets of electrical grade steel. A stack of these is secured by end screws, which may also hold the end housings.</p>
 
-<p><img src="/uploads/articles/stator-with-2-golden-ratio-3-golden-ratio-windings.jpg" /></p>
+^[82-03.webp]
 <p><em>Stator with (a) 2-&phi; and (b) 3-&phi; windings</em></p>
 
 <p>In the figure above, the windings for both a two-phase motor and a three-phase motor have been installed in the stator slots. The coils are wound on an external fixture, then worked into the slots. Insulation wedged between the coil periphery and the slot protects against abrasion.</p>
@@ -28,12 +30,12 @@
 <p>This group is called a <em>phase belt </em>(see the figure below). The distributed coils of the phase belt cancel some of the odd harmonics, producing a more sinusoidal magnetic field distribution across the pole. This is shown in the synchronous motor section.</p>
 <p>The slots at the edge of the pole may have fewer turns than the other slots. Edge slots may contain windings from two phases. That is, the phase belts overlap.</p>
 
-<p><img src="/uploads/articles/synchronous-motor-section.jpg" /></p>
+^[82-04.webp]
 
 <p>The key to the popularity of the AC induction motor is its simplicity as evidenced by the simple rotor (figure below). The rotor consists of a shaft, a steel laminated rotor, and an embedded copper or aluminum <em>squirrel cage</em>, shown at (b) removed from the rotor.</p>
 <p>As compared to a DC motor armature, there is no commutator. This eliminates the brushes, arcing, sparking, graphite dust, brush adjustment and replacement, and re-machining of the commutator.</p>
 
-<p><img src="/uploads/articles/laminated-rotor.jpg" /></p>
+^[82-05.webp]
 <p><em>Laminated rotor with (a) embedded squirrel cage, (b) conductive cage removed from the rotor</em></p>
 
 <p>The squirrel cage conductors may be skewed, twisted, with respect to the shaft. The misalignment with the stator slots reduces torque pulsations.</p>
@@ -44,7 +46,7 @@
 <p>The lines of flux cutting the conductor will induce a voltage, and consequent current flow, in the conductive disk. This current flow creates an electromagnet whose polarity opposes the motion of the permanent magnet&ndash; <em>Lenz&rsquo;s Law</em>.</p>
 <p>The polarity of the electromagnet is such that it pulls against the permanent magnet. The disk follows with a little less speed than the permanent magnet.</p>
 
-<p><img src="/uploads/articles/rotating-magnetic-field.jpg" /></p>
+^[82-06.webp]
 <p><em>Rotating magnetic field produces torque in conductive disk</em></p>
 
 <p>The torque developed by the disk is proportional to the number of flux lines cutting the disk and the rate at which it cuts the disk. If the disk were to spin at the same rate as the permanent magnet, there would be no flux cutting the disk, no induced current flow, no electromagnet field, no torque.</p>
@@ -53,25 +55,25 @@
 <p>An analog automotive eddy-current speedometer is based on the principle illustrated above. With the disk restrained by a spring, disk and needle deflection is proportional to the magnet rotation rate.</p>
 <p>A rotating magnetic field is created by two coils placed at right angles to each other, driven by currents which are 90&deg; out of phase. This should not be surprising if you are familiar with oscilloscope Lissajous patterns.</p>
 
-<p><img src="/uploads/articles/oscilloscope-lissajous-pattern.jpg" /></p>
+^[82-07.webp]
 <p><em>Out of phase (90&deg;), sine waves produce circular Lissajous pattern</em></p>
 
 <p>In the figure above, a circular Lissajous is produced by driving the horizontal and vertical oscilloscope inputs with 90&deg; out of phase sine waves. Starting at (a) with maximum &ldquo;X&rdquo; and minimum &ldquo;Y&rdquo; deflection, the trace moves up and left toward (b).</p>
 <p>Between (a) and (b) the two waveforms are equal to 0.707 Vpk at 45&deg;. This point (0.707, 0.707) falls on the radius of the circle between (a) and (b) The trace moves to (b) with minimum &ldquo;X&rdquo; and maximum &ldquo;Y&rdquo; deflection. With maximum negative &ldquo;X&rdquo; and minimum &ldquo;Y&rdquo; deflection, the trace moves to (c).</p>
 <p>Then with minimum &ldquo;X&rdquo; and maximum negative &ldquo;Y&rdquo;, it moves to (d), and on back to (a), completing one cycle.</p>
 
-<p><img src="/uploads/articles/x-axis-sine-and-y-axis-cosine-trace-circle.jpg" /></p>
+^[82-08.webp]
 <p><em>X-axis sine and Y-axis cosine trace circle</em></p>
 
 <p>The figure shows the two 90&deg; phase-shifted sine waves applied to oscilloscope deflection plates which are at right angles in space. The combination of 90&deg; phased sine waves and right angle deflection, results in a two-dimensional pattern&ndash; a circle. This circle is traced out by a counterclockwise-rotating electron beam.</p>
 <p>For reference, the figure below shows why in-phase sine waves will not produce a circular pattern. Equal &ldquo;X&rdquo; and &ldquo;Y&rdquo; deflection moves the illuminated spot from the origin at (a) up to the right (1,1) at (b), back down left to origin at (c), down left to (-1.-1) at (d), and back upright to the origin. The line is produced by equal deflections along both axes; y=x is a straight line.</p>
 
-<p><img src="/uploads/articles/no-circular-motion-from-in-phase-waveforms.jpg" /></p>
+^[82-09.webp]
 <p><em>No circular motion from in-phase waveforms</em></p>
 
 <p>If a pair of 90&deg; out of phase sine waves produces a circular Lissajous, a similar pair of currents should be able to produce a circular rotating magnetic field. Such is the case for a 2-phase motor. By analogy three windings placed 120&deg; apart in space, and fed with corresponding 120&deg; phased currents will also produce a rotating magnetic field.</p>
 
-<p><img src="/uploads/articles/rotating-magnetic-field-from-90-degree-phased-sine-waves.jpg" /></p>
+^[82-10.webp]
 <p><em>Rotating magnetic field from 90&deg; phased sine waves</em></p>
 
 <p>As the 90&deg; phased sine waves, the figure above, progress from points (a) through (d), the magnetic field rotates counterclockwise (figures a-d) as follows:</p>
@@ -87,7 +89,7 @@
 <p>The magnetic field will rotate once per sine wave cycle. In the case of 60 Hz power, the field rotates at 60 times per second or 3600 revolutions per minute (rpm). For 50 Hz power, it rotates at 50 rotations per second or 3000 rpm. The 3600 and 3000 rpm, are the <em>synchronous speed</em> of the motor.</p>
 <p>Though the rotor of an induction motor never achieves this speed, it certainly is an upper limit. If we double the number of motor poles, the synchronous speed is cut in half because the magnetic field rotates 180&deg; in space for 360&deg; of the electrical sine wave.</p>
 
-<p><img src="/uploads/articles/doubling-the-stator-poles-halves-the-synchronous-speed.jpg" /></p>
+^[82-11.webp]
 <p><em>Doubling the stator poles halves the synchronous speed</em></p>
 
 <p>The synchronous speed is given by:</p>
@@ -117,7 +119,7 @@ f<sub>r</sub> = s&middot;f where: s = slip, f = stator power line frequency</pre
 <p>Slip at 100% torque is typically 5% or less in induction motors. Thus for f = 50 Hz line frequency, the frequency of the induced current in the rotor fr= 0.05&middot;50 = 2.5 Hz. Why is it so low? The stator magnetic field rotates at 50 Hz. The rotor speed is 5% less.</p>
 <p>The rotating magnetic field is only cutting the rotor at 2.5 Hz. The 2.5 Hz is the difference between the synchronous speed and the actual rotor speed. If the rotor spins a little faster, at the synchronous speed, no flux will cut the rotor at all, f<sub>r</sub> = 0.</p>
 
-<p><img src="/uploads/articles/locked-rotor-torque.jpg" /></p>
+^[82-12.webp]
 <p><em>Torque and speed vs %Slip. %N<sub>s</sub>=%Synchronous Speed</em></p>
 
 <p>The figure above graph shows that starting torque known as <em>locked rotor torque</em> (LRT) is higher than 100% of the <em>full load torque</em> (FLT), the safe continuous torque rating. The locked rotor torque is about 175% of FLT for the example motor graphed above.</p>
@@ -132,7 +134,7 @@ f<sub>r</sub> = s&middot;f where: s = slip, f = stator power line frequency</pre
 <p>Various standard classes (or designs) for motors, corresponding to the torque curves (figure below) have been developed to better drive various type loads. The National Electrical Manufacturers Association (NEMA) has specified motor classes A, B, C, and D to meet these drive requirements.</p>
 <p>Similar International Electrotechnical Commission (IEC) classes N and H correspond to NEMA B and C designs respectively.<em> </em></p>
 
-<p><img src="/uploads/articles/nema-and-iec-motor-classes.jpg" /></p>
+^[82-13.webp]
 <p><em>Characteristics for NEMA designs</em></p>
 
 <p>All motors, except class D, operate at 5% slip or less at full load.</p>
@@ -150,7 +152,7 @@ f<sub>r</sub> = s&middot;f where: s = slip, f = stator power line frequency</pre
 <p>Power factor (PF) varies considerably with the motor mechanical load (figure below). An unloaded motor is analogous to a transformer with no resistive load on the secondary. Little resistance is reflected from the secondary (rotor) to the primary (stator).</p>
 <p>Thus the power line sees a reactive load, as low as 10% PF. As the rotor is loaded an increasing resistive component is reflected from the rotor to stator, increasing the power factor.</p>
 
-<p><img src="/uploads/articles/induction-motor-power-factor-and-efficiency.jpg" /></p>
+^[82-14.webp]
 <p><em>Induction motor power factor and efficiency</em></p>
 
 ## Efficiency in Induction Motors
@@ -169,7 +171,7 @@ f<sub>r</sub> = s&middot;f where: s = slip, f = stator power line frequency</pre
 <p>An induction motor may function as an alternator if it is driven by a torque at greater than 100% of the synchronous speed (figure below). This corresponds to a few % of &ldquo;negative&rdquo; slip, say -1% slip.</p>
 <p>This means that as we are rotating the motor faster than the synchronous speed, the rotor is advancing 1% faster than the stator rotating magnetic field. It normally lags by 1% in a motor. Since the rotor is cutting the stator magnetic field in the opposite direction (leading), the rotor induces a voltage into the stator feeding electrical energy back into the power line.</p>
 
-<p><img src="/uploads/articles/negative-torque-makes-induction-motor-into-generator.jpg" /></p>
+^[82-15.webp]
 <p><em>Negative torque makes induction motor into a generator</em></p>
 
 <p>Such an <em>induction generator</em> must be excited by a &ldquo;live&rdquo; source of 50 or 60 Hz power. No power can be generated in the event of a power company power failure. This type of alternator appears to be unsuited as a standby power source.</p>
@@ -187,7 +189,7 @@ f<sub>r</sub> = s&middot;f where: s = slip, f = stator power line frequency</pre
 <p>Some induction motors can draw over 1000% of full load current during starting; though, a few hundred percents is more common. Small motors of a few kilowatts or smaller can be started by direct connection to the power line.</p>
 <p>Starting large motors can cause line voltage sag, affecting other loads. Motor-start rated circuit breakers (analogous to slow blow fuses) should replace standard circuit breakers for starting motors of a few kilowatts. This breaker accepts high overcurrent for the duration of starting.</p>
 
-<p><img src="/uploads/articles/autotransformer-induction-motor-starter.jpg" /></p>
+^[82-16.webp]
 <p><em>Autotransformer induction motor starter</em></p>
 
 <p>Motors over 50 kW use motor starters to reduce line current from several hundred to a few hundred percents of full load current. An intermittent duty autotransformer may reduce the stator voltage for a fraction of a minute during the start interval, followed by application of full line voltage as in the figure above.</p>
@@ -197,26 +199,26 @@ f<sub>r</sub> = s&middot;f where: s = slip, f = stator power line frequency</pre
 <p>The power rating needs to be 50% larger than for a comparable single phase motor to make up for one unused winding. Single-phase is applied to a pair of windings simultaneous with a start capacitor in series with the third winding.</p>
 <p>The start switch is opened in the figure below upon motor start. Sometimes a smaller capacitor than the start capacitor is retained while running.</p>
 
-<p><img src="/uploads/articles/starting-a-three-phase-motor-on-single-phase.jpg" /></p>
+^[82-17.webp]
 <p><em>Starting a three-phase motor on single phase</em></p>
 
 <p>The circuit in the figure above for running a three-phase motor on single phase is known as a <em>static phase converter</em> if the motor shaft is not loaded. Moreover, the motor acts as a 3-phase generator.</p>
 <p>Three-phase power may be tapped off from the three stator windings for powering other 3-phase equipment. The capacitor supplies a <em>synthetic</em> phase approximately midway &ang;90&deg; between the &ang;180&deg; single-phase power source terminals for starting.</p>
 <p>While running, the motor generates approximately standard 3-&phi;, as shown above. Matt Isserstedt shows a complete design for powering a home machine shop.</p>
 
-<p><img src="/uploads/articles/self-starting-static-phase-converter.jpg" /></p>
+^[82-18.webp]
 <p><em>Self-starting static phase converter. Run capacitor = 25-30&micro;F per HP. Adapted from Figure 7, Hanrahan</em></p>
 
 <p>Since a static phase converter has no torque load, it may be started with a capacitor considerably smaller than a normal start capacitor. If it is small enough, it may be left in the circuit as a run-capacitor (See the figure above).</p>
 <p>However, smaller run-capacitors result in better 3-phase power output. Moreover, adjustment of these capacitors to equalize the currents as measured in the three phases results in the most efficient machine. However, a large start capacitor is required for about a second to quickly start the converter. Hanrahan provides construction details.</p>
 
-<p><img src="/uploads/articles/efficient-static-phase-converter.jpg" /></p>
+^[82-19.webp]
 <p><em>More efficient static phase converter. Start capacitor = 50-100&micro;F/HP. Run capacitors = 12-16&micro;F/HP. Adapted from Figure 1, Hanrahan</em></p>
 
 ## Induction Motors with Multiple Fields
 <p>Induction motors may contain multiple field windings, for example, a 4-pole and an 8-pole winding corresponding to 1800 and 900 rpm synchronous speeds. Energizing one field or the other is less complex than rewiring the stator coils.</p>
 
-<p><img src="/uploads/articles/induction-motors-with-multiple-fields.jpg" /></p>
+^[82-20.webp]
 <p><em>Multiple fields allow speed change</em></p>
 
 <p>If the field is segmented with leads brought out, it may be rewired (or switched) from 4-pole to 2-pole as shown above for a 2-phase motor. The 22.5&deg; segments are switchable to 45&deg; segments. Only the wiring for one phase is shown above for clarity.</p>
@@ -229,14 +231,14 @@ N<sub>s</sub> = 120f/P = 120*50/4 = 1500 rpm (4-pole) N<sub>s</sub> = 3000 rpm (
 ## Induction Motors with Variable Voltage
 <p>The speed of small squirrel cage induction motors for applications such as driving fans may be changed by reducing the line voltage. This reduces the torque available to the load which reduces the speed (see figure below).</p>
 
-<p><img src="/uploads/articles/induction-motors-with-variable-voltage.jpg" /></p>
+^[82-21.webp]
 <p><em>Variable voltage controls induction motor speed</em></p>
 
 ## Electronic Speed Control in Induction Motors
 <p>Modern solid-state electronics increase the options for speed control. By changing the 50 or 60 Hz line frequency to higher or lower values, the synchronous speed of the motor may be changed. However, decreasing the frequency of the current fed to the motor also decreases reactance X<sub>L</sub> which increases the stator current.</p>
 <p>This may cause the stator magnetic circuit to saturate with disastrous results. In practice, the voltage to the motor needs to be decreased when the frequency is decreased.</p>
 
-<p><img src="/uploads/articles/electronic-variable-speed-drive.jpg" /></p>
+^[82-22.webp]
 <p><em>Electronic variable speed drive</em></p>
 
 <p>Conversely, the drive frequency may be increased to increase the synchronous speed of the motor. However, the voltage needs to be increased to overcome increasing reactance to keep current up to a normal value and maintain torque.</p>

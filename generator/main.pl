@@ -59,7 +59,7 @@ our @books =
 , '1|electricity/radio-frequencies|Radio Frequencies'
 , '1|electricity/dyi-projects|DYI Projects'
 
-, '0|games/principles|Texas Holdem Principles'
+, '1|games/principles|Texas Holdem Principles'
 , '0|games/mathresources|Resources'
 );
 
@@ -349,6 +349,16 @@ sub get_markup
   $text_content =~ s/^\|(.*?)\/(.*?)\/(\s*)\|(.*?)\|(.*?)$/<p class='m'>$1 <span class='f'>$2<\/span><\/p><p class='g0500'>$4<\/p><p class='b1000'>$5<\/p>\n/mg;
 
   #---------------------------------------------------------
+  # Mathjax
+  #---------------------------------------------------------
+
+  $text_content =~ s/\[\$(.*?)\$\]/<div class='clOverflow'>\n\$\$$1\$\$\n<\/div>/sg;
+  $text_content =~ s/\n\$<br>\n<br>/\n\$\n/sg;
+  $text_content =~ s/\n\$<br>/\n\$/sg;
+  $text_content =~ s/\n<\/div><br>\n<br>/\n<\/div>\n/sg;
+  $text_content =~ s/\n<\/div><br>/\n<\/div>\n/sg;
+
+  #---------------------------------------------------------
   # Cleaning
   #---------------------------------------------------------
 
@@ -402,16 +412,8 @@ sub get_markup
 #  $text_content =~ s/<br>\n<br>/<br>\n/g;
   $text_content =~ s/--><br>/-->/g;
   $text_content =~ s/-->\n<br>/-->/g;
-
-  #---------------------------------------------------------
-  # Mathjax
-  #---------------------------------------------------------
-
-  $text_content =~ s/\[\$(.*?)\$\]/<div class='clOverflow'>\n\$\$$1\$\$\n<\/div>/sg;
-  $text_content =~ s/\n\$<br>\n<br>/\n\$\n/sg;
-  $text_content =~ s/\n\$<br>/\n\$/sg;
-  $text_content =~ s/\n<\/div><br>\n<br>/\n<\/div>\n/sg;
-  $text_content =~ s/\n<\/div><br>/\n<\/div>\n/sg;
+  $text_content =~ s/\$\$<br>/\$\$/g;
+  $text_content =~ s/<div class='clOverflow'><br>/<div class='clOverflow'>/g;
 
   #---------------------------------------------------------
   # Remove Index Break
@@ -539,10 +541,7 @@ sub get_pages
       }
     }
 
-#    $math_on = ($text_content =~ /\\begin\{/) ? $& : '';
-#    $math_on = ($text_content =~ /\[\$/) ? $& : '';
-#    $math_on = ($text_content =~ /<\!-- math on -->/) ? $& : '';
-    $math_on = ($text_content =~ /\$\$/) ? $& : '';
+    $math_on = ($text_content =~ /\[\$|\$\$/) ? $& : '';
 
     $page_curr = $file_name_noext;
 

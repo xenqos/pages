@@ -31,6 +31,8 @@
 </div>
 <div id='idContent'>
 
+<h6>01. Basic AC Theory</h6>
+
 <h1>Measurements of AC Magnitude</h1>
 <p>So far we know that AC voltage alternates in polarity and AC current alternates in direction. We also know that AC can alternate in various ways, and by tracing the alternation over time, we can plot it as a &ldquo;waveform.&rdquo;</p>
 <p>We can measure the rate of alternation by measuring the time it takes for a wave to evolve before it repeats itself (the &ldquo;period&rdquo;) and express this as cycles per unit time, or &ldquo;frequency.&rdquo; In music, frequency is the same as <em>pitch</em>, which is the essential property distinguishing one note from another.</p>
@@ -39,26 +41,26 @@
 
 <h2>Ways of Expressing the Magnitude of an AC Waveform</h2>
 <p>One way to express the intensity, or magnitude (also called the <em>amplitude</em>), of an AC quantity, is to measure its peak height on a waveform graph. This is known as the <em>peak</em> or <em>crest</em> value of an AC waveform: Figure below</p>
-<p><img src=&quot;/uploads/articles/peak-voltage-of-a-waveform-graph.jpg&quot; /></p>
+<a target='_blank' href='../images/03-01.jpg'><img class='clImageThumb' src='../images/03-01.jpg'></a><br>
 <em><strong>Figure 1.</strong> The peak voltage of a waveform.</em><br>
 <br>
 <p>Another way is to measure the total height between opposite peaks. This is known as the <em>peak-to-peak</em> (P-P) value of an AC waveform: Figure below</p>
-<p><img src=&quot;/uploads/articles/peak-to-peak-voltage-of-a-waveform-graph.jpg&quot; /></p>
+<a target='_blank' href='../images/03-02.jpg'><img class='clImageThumb' src='../images/03-02.jpg'></a><br>
 <em><strong>Figure 2. </strong>Peak-to-peak voltage of a waveform.</em><br>
 <br>
 <p>Unfortunately, either one of these expressions of waveform amplitude can be misleading when comparing two different types of waves. For example, a square wave peaking at 10 volts is obviously a greater amount of voltage for a greater amount of time than a triangle wave peaking at 10 volts.</p>
 <p>The effects of these two AC voltages powering a load would be quite different: Figure below</p>
-<p><img src=&quot;/uploads/articles/effects-of-two-ac-voltages-power.jpg&quot; /></p>
+<a target='_blank' href='../images/03-03.jpg'><img class='clImageThumb' src='../images/03-03.jpg'></a><br>
 <em><strong>Figure 3. </strong>A square wave produces a greater heating effect than the same peak voltage triangle wave.</em><br>
 <br>
 <p>One way of expressing the amplitude of different wave shapes in a more equivalent fashion is to mathematically average the values of all the points on a waveform&rsquo;s graph to a single, aggregate number. This amplitude measurement is known simply as the <em>average</em> value of the waveform.</p>
 <p>If we average all the points on the waveform algebraically (that is, to consider their <em>sign</em>, either positive or negative), the average value for most waveforms is technically zero, because all the positive points cancel out all the negative points over a full cycle: Figure below</p>
-<p><img src=&quot;/uploads/articles/zero-average-value-of-sine-wave.jpg&quot; /></p>
+<a target='_blank' href='../images/03-04.jpg'><img class='clImageThumb' src='../images/03-04.jpg'></a><br>
 <em><strong>Figure 4. </strong>The average value of a sine wave is zero.</em><br>
 <br>
 <p>This, of course, will be true for any waveform having equal-area portions above and below the &ldquo;zero&rdquo; line of a plot. However, as a <em>practical</em> measure of a waveform&rsquo;s aggregate value, &ldquo;average&rdquo; is usually defined as the mathematical mean of all the points&rsquo; <em>absolute values</em> over a cycle.</p>
 <p>In other words, we calculate the practical average value of the waveform by considering all points on the wave as positive quantities, as if the waveform looked like this: Figure below</p>
-<p><img src=&quot;/uploads/articles/waveform-ac-average-responding-meter.jpg&quot; /></p>
+<a target='_blank' href='../images/03-05.jpg'><img class='clImageThumb' src='../images/03-05.jpg'></a><br>
 <em><strong>Figure 5.&nbsp;</strong>Waveform seen by AC &ldquo;average responding&rdquo; meter.</em><br>
 <br>
 <p>Polarity-insensitive mechanical meter movements (meters designed to respond equally to the positive and negative half-cycles of an alternating voltage or current) register in proportion to the waveform&rsquo;s (practical) average value, because the inertia of the pointer against the tension of the spring naturally averages the force produced by the varying voltage/current values over time.</p>
@@ -67,14 +69,14 @@
 <p>Rather, power is proportional to the <em>square</em> of the voltage or current applied to a resistance (P = E<sup>2</sup>/R, and P = I<sup>2</sup>R). Although the mathematics of such an amplitude measurement might not be straightforward, the utility of it is.</p>
 <p>Consider a bandsaw and a jigsaw, two pieces of modern woodworking equipment. Both types of saws cut with a thin, toothed, motor-powered metal blade to cut wood. But while the bandsaw uses a continuous motion of the blade to cut, the jigsaw uses a back-and-forth motion.</p>
 <p>The comparison of alternating current (AC) to direct current (DC) may be likened to the comparison of these two saw types: Figure below</p>
-<p><img src=&quot;/uploads/articles/bandsaw-jigsaw-analogy-of-dc-vs-ac.jpg&quot; /></p>
+<a target='_blank' href='../images/03-06.jpg'><img class='clImageThumb' src='../images/03-06.jpg'></a><br>
 <em><strong>Figure 6.&nbsp;</strong>Bandsaw-jigsaw analogy of DC vs AC.</em><br>
 <br>
 <p>The problem of trying to describe the changing quantities of AC voltage or current in a single, aggregate measurement is also present in this saw analogy: how might we express the speed of a jigsaw blade? A bandsaw blade moves with a constant speed, similar to the way DC voltage pushes or DC current moves with a constant magnitude. A jigsaw blade, on the other hand, moves back and forth, its blade speed constantly changing. What is more, the back-and-forth motion of any two jigsaws may not be of the same type, depending on the mechanical design of the saws.</p>
 <p>One jigsaw might move its blade with a sine-wave motion, while another with a triangle-wave motion. To rate a jigsaw based on its <em>peak</em> blade speed would be quite misleading when comparing one jigsaw to another (or a jigsaw with a bandsaw!). Despite the fact that these different saws move their blades in different manners, they are equal in one respect: they all cut wood, and a quantitative comparison of this common function can serve as a common basis for which to rate blade speed.</p>
 <p>Picture a jigsaw and bandsaw side-by-side, equipped with identical blades (same tooth pitch, angle, etc.), equally capable of cutting the same thickness of the same type of wood at the same rate. We might say that the two saws were equivalent or equal in their cutting capacity. Might this comparison be used to assign a &ldquo;bandsaw equivalent&rdquo; blade speed to the jigsaw&rsquo;s back-and-forth blade motion; to relate the wood-cutting effectiveness of one to the other?</p>
 <p>This is the general idea used to assign a &ldquo;DC equivalent&rdquo; measurement to any AC voltage or current: whatever magnitude of DC voltage or current would produce the same amount of heat energy dissipation through an equal resistance: Figure below</p>
-<p><img src=&quot;/uploads/articles/rms-voltage-produces-the-heating-effect.jpg&quot; /></p>
+<a target='_blank' href='../images/03-07.jpg'><img class='clImageThumb' src='../images/03-07.jpg'></a><br>
 <em><strong>Figure 7.&nbsp;</strong>An RMS voltage produces the same heating effect as the same DC voltage</em><br>
 
 <h2>How is Root Mean Square (RMS) Relevant to AC?</h2>
@@ -94,13 +96,13 @@
 
 <h2>Relationship of Peak, Peak-to-Peak, Average, and RMS</h2>
 <p>For &ldquo;pure&rdquo; waveforms, simple conversion coefficients exist for equating Peak, Peak-to-Peak, Average (practical, not algebraic), and RMS measurements to one another:&nbsp;</p>
-<p><img src=&quot;/uploads/articles/common-waveforms-conversion-factors.jpg&quot; /></p>
+<a target='_blank' href='../images/03-08.jpg'><img class='clImageThumb' src='../images/03-08.jpg'></a><br>
 <p><em><strong>Figure 8. </strong>Conversion factors for common waveforms.</em></p>
 <p>In addition to RMS, average, peak (crest), and peak-to-peak measures of an AC waveform, there are ratios expressing the proportionality between some of these fundamental measurements. The <em>crest factor</em> of an AC waveform, for instance, is the ratio of its peak (crest) value divided by its RMS value.</p>
 <p>The <em>form factor</em> of an AC waveform is the ratio of its RMS value divided by its average value. Square-shaped waveforms always have crest and form factors equal to 1, since the peak is the same as the RMS and average values. Sinusoidal waveforms have an RMS value of 0.707 (the reciprocal of the square root of 2) and a form factor of 1.11 (0.707/0.636).</p>
 <p>Triangle- and sawtooth-shaped waveforms have RMS values of 0.577 (the reciprocal of square root of 3) and form factors of 1.15 (0.577/0.5).</p>
 <p>Bear in mind that the conversion constants shown here for peak, RMS, and average amplitudes of sine waves, square waves, and triangle waves hold true only for <em>pure</em> forms of these waveshapes. The RMS and average values of distorted waveshapes are not related by the same ratios: Figure below</p>
-<p><img src=&quot;/uploads/articles/arbitrary-waveforms.jpg&quot; /></p>
+<a target='_blank' href='../images/03-09.jpg'><img class='clImageThumb' src='../images/03-09.jpg'></a><br>
 <p><em><strong>Figure 9. </strong>Arbitrary waveforms have no simple conversions.</em></p>
 <p>This is a very important concept to understand when using an analog D&rsquo;Arsonval meter movement to measure AC voltage or current. An analog D&rsquo;Arsonval movement, calibrated to indicate sine-wave RMS amplitude, will only be accurate when measuring pure sine waves.</p>
 <p>If the waveform of the voltage or current being measured is anything but a pure sine wave, the indication given by the meter will not be the true RMS value of the waveform, because the degree of needle deflection in an analog D&rsquo;Arsonval meter movement is proportional to the <em>average</em> value of the waveform, not the RMS.</p>

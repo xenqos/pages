@@ -1,3 +1,5 @@
+###### 12. AC Metering Circuits
+
 # Power Measurement
 <p>Power measurement in AC circuits can be quite a bit more complex than with DC circuits for the simple reason that phase shift complicates the matter beyond multiplying the voltage by current figures obtained with meters.</p>
 <p>What is needed is an instrument able to determine the product (multiplication) of <em>instantaneous</em> voltage and current. Fortunately, the common electrodynamometer movement with its stationary and moving coil does a fine job of this.</p>
@@ -6,7 +8,7 @@
 <p>An ingenious method of deriving an electronic power meter (one that generates an electric signal representing power in the system rather than merely moves a pointer) is based on the Hall effect.</p>
 <p>The Hall effect is an unusual effect first noticed by E. H. Hall in 1879, whereby a voltage is generated along the width of a&nbsp;current-carrying conductor exposed to a perpendicular&nbsp;magnetic field:</p>
 
-<p><img src="/uploads/articles/hall-effect.png" /></p>
+^[72-01.webp]
 <p><em>Hall effect: Voltage is proportional to current and strength of the perpendicular magnetic field.</em></p>
 
 <p>The voltage generated across the width of the flat, rectangular conductor is directly proportional to both the magnitude of the current through it and the strength of the magnetic field.</p>
@@ -15,7 +17,7 @@
 <p>It makes sense then that if we were to build a device using a Hall-effect sensor where the current through the conductor was pushed by AC voltage from an external circuit and the magnetic field was set up by a pair of wire coils energized by the current of the&nbsp;AC power circuit, the Hall voltage would be in direct proportion to the multiple of circuit current and voltage.</p>
 <p>Having no mass to move (unlike an electromechanical movement), this device is able to provide <em>instantaneous</em> power measurement:</p>
 
-<p><img src="/uploads/articles/hall-effect-power-sensor.jpg" /></p>
+^[72-02.webp]
 <p><em>Hall effect power sensor measures instantaneous power.</em></p>
 
 <p>Not only will the output voltage of the Hall effect device be the representation of instantaneous power at any point in time, but it will also be a DC signal! This is because the Hall voltage polarity is dependent upon <em>both</em> the polarity of the magnetic field and the direction of current through the conductor.</p>

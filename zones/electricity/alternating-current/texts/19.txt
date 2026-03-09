@@ -1,9 +1,11 @@
+###### 03. Reactance and Impedance—Inductive
+
 # Inductor Quirks
 <p>In an ideal case, an inductor acts as a purely reactive device. That is, its opposition to AC current is strictly based on inductive reaction to changes in current, and not electron friction as is the case with resistive components.</p>
 <p>However, inductors are not quite so pure in their reactive behavior. To begin with, they&rsquo;re made of wire, and we know that all wire possesses some measurable amount of resistance (unless it&#39;s superconducting wire).</p>
 <p>This built-in resistance acts as though it were connected in series with the perfect inductance of the coil, like this:</p>
 
-<p><img src="/uploads/articles/real-inductor-inductor-equivalent-circuit1.jpg" /></p>
+^[19-01.webp]
 <p><em>Inductor Equivalent circuit of a real inductor.</em></p>
 
 <p>Consequently, the impedance of any real inductor will always be a complex combination of resistance and inductive reactance.</p>
@@ -24,7 +26,7 @@
 <p>Some core materials (such as ferrite) are particularly notorious for their hysteretic effect. Counteracting this effect is best done by means of proper core material selection and limits on the peak magnetic field intensity generated with each cycle.</p>
 <p>Altogether, the stray resistive properties of a real inductor (wire resistance, radiation losses, eddy currents, and hysteresis losses) are expressed under the single term of &ldquo;effective resistance:&rdquo;</p>
 
-<p><img src="/uploads/articles/real-inductor-inductor-equivalent-circuit2.jpg" /></p>
+^[19-02.webp]
 <p><em>Equivalent circuit of a real inductor with skin-effect, radiation, eddy current, and hysteresis losses.</em></p>
 
 <p>It is worthy to note that the skin effect and radiation losses apply just as well to straight lengths of wire in an AC circuit as they do a coiled wire. Usually, their combined effect is too small to notice, but at radio frequencies, they can be quite large.</p>
@@ -32,7 +34,7 @@
 ## Quality Factor (Q Factor)
 <p>Effective resistance in an inductor can be a serious consideration for the AC circuit designer. To help quantify the relative amount of effective resistance in an inductor, another value exists called the <em>Q factor</em>, or &ldquo;quality factor&rdquo; which is calculated as follows:</p>
 
-<p><img src="/uploads/articles/quality-factor-equation.jpg" /></p>
+^[19-03.webp]
 
 <p>The symbol &ldquo;Q&rdquo; has nothing to do with an electric charge (coulombs), which tends to be confusing. For some reason, the Powers That Be decided to use the same letter of the alphabet to denote a totally different quantity.</p>
 <p>The higher the value for &ldquo;Q,&rdquo; the &ldquo;purer&rdquo; the inductor is. Because it&rsquo;s so easy to add additional resistance if needed, a high-Q inductor is better than a low-Q inductor for design purposes. An ideal inductor would have a Q of infinity, with zero effective resistance.</p>

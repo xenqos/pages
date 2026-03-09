@@ -1,13 +1,15 @@
+###### 02. Complex Numbers
+
 # Complex Vector Addition
 <p>If vectors with uncommon angles are added, their magnitudes (lengths) add up quite differently than that of scalar magnitudes: (Figure below)</p>
 
-<p><img src="/uploads/articles/complex-vector-addition.png" /></p>
+^[10-01.webp]
 <p><em>Vector magnitudes do not directly add for unequal angles.</em></p>
 
 <p>If two AC voltages&mdash;90&deg; out of phase&mdash;are added together by being connected in series, their voltage magnitudes do not directly add or subtract as with scalar voltages in DC.</p>
 <p>Instead, these voltage quantities are complex quantities, and just like the above vectors, which add up in a trigonometric fashion, a 6-volt source at 0&deg; added to an 8-volt source at 90&deg; results in 10 volts at a phase angle of 53.13&deg;: (Figure below)</p>
 
-<p><img src="/uploads/articles/complex-vector-with-trigonometry.png" /></p>
+^[10-02.webp]
 <p><em>The 6V and 8V sources add to 10V with the help of trigonometry.</em></p>
 
 <p>Compared to DC circuit analysis, this is very strange indeed. Note that it is possible to obtain voltmeter indications of 6 and 8 volts, respectively, across the two AC voltage sources, yet only read 10 volts for a total voltage!</p>

@@ -1,8 +1,10 @@
+###### 12. AC Metering Circuits
+
 # AC Instrumentation Transducers
 <p>Just as devices have been made to measure certain physical quantities and repeat that information in the form of DC electrical signals (thermocouples, strain gauges, pH probes, etc.), special devices have been made that do the same with AC.</p>
 <p>It is often necessary to be able to detect and transmit the physical position of mechanical parts via electrical signals. This is especially true in the fields of automated machine tool control and robotics. A simple and easy way to do this is with a potentiometer:</p>
 ## Using Potentiometer
-<p><strong><img src="/uploads/articles/potentiometer-tap-voltage-indicates-position-new.png" /></strong></p>
+^[75-01.webp]
 <p><em>Potentiometer tap voltage indicates position of an object slaved to the shaft.</em></p>
 
 <p>However, potentiometers have their own unique problems. For one, they rely on physical contact between the &ldquo;wiper&rdquo; and the resistance strip, which means they suffer the effects of physical wear over time.</p>
@@ -15,7 +17,7 @@
 <p>Using AC instead of DC, we are able to completely avoid sliding contact between parts if we use a <em>variable transformer</em> instead of a potentiometer.</p>
 <p>Devices made for this purpose are called LVDT&rsquo;s, which stands for <strong>L</strong>inear <strong>V</strong>ariable <strong>D</strong>ifferential <strong>T</strong>ransformers. The design of an LVDT looks like this:</p>
 
-<p><img src="/uploads/articles/ac-output-of-linear-variable-differential-transformer.png" /></p>
+^[75-02.webp]
 <p><em>AC output of linear variable differential transformer (LVDT) indicates core position.</em></p>
 
 <p>Obviously, this device is a&nbsp;<em>transformer</em>: it has a single primary winding powered by an external source of AC voltage, and two secondary windings connected in series-bucking fashion.</p>
@@ -36,7 +38,7 @@
 <p>The rotor is free to revolve a full 360&deg;, just like a motor. On the rotor is a single winding connected to a source of AC voltage, much like the primary winding of an LVDT. The stator windings are usually in the form of a three-phase Y, although synchros with more than three phases have been built. (Figure below)</p>
 <p>A device with a two-phase stator is known as a <em>resolver</em>. A resolver produces sine and cosine outputs which indicate shaft position.</p>
 
-<p><em><img src="/uploads/articles/resolver-two-phase-stator.png" /></em></p>
+^[75-03.webp]
 <p><em><em>A synchro is wound with a three-phase stator winding, and a rotating field. A resolver has a two-phase stator.</em></em></p>
 
 <p>Voltages induced in the stator windings from the rotor&rsquo;s AC excitation are <em>not</em> phase-shifted by 120&deg; as in a real three-phase generator. If the rotor were energized with DC current rather than AC and the shaft spun continuously, then the voltages would be true three-phase.</p>
@@ -45,7 +47,7 @@
 <p>As the rotor is slowly turned, each winding in turn will line up directly with the rotor, producing full voltage, while the other windings will produce something less than full voltage.</p>
 <p>Synchros are often used in pairs. With their rotors connected in parallel and energized by the same AC voltage source, their shafts will match position to a high degree of accuracy:</p>
 
-<p><img src="/uploads/articles/synchro-transmitter-and-receiver1.png" /></p>
+^[75-04.webp]
 <p><em>Synchro shafts are slaved to each other. Rotating one moves the other.</em></p>
 
 <p>Such &ldquo;transmitter/receiver&rdquo; pairs have been used on ships to relay rudder position, or to relay navigational gyro position over fairly long distances.</p>
@@ -53,12 +55,12 @@
 <p>If the receiver&rsquo;s rotor is left unpowered, it will act as a position-error detector, generating an AC voltage at the rotor if the shaft is anything other than 90o or 270o shifted from the shaft position of the transmitter.</p>
 <p>The receiver rotor will no longer generate any torque and consequently will no longer automatically match position with the transmitter&rsquo;s:</p>
 
-<p><img src="/uploads/articles/synchro-transmitter-and-receiver2.png" /></p>
+^[75-05.webp]
 <p><em>AC voltmeter registers voltage if the receiver rotor is not rotated exactly 90 or 270 degrees from the transmitter rotor.</em></p>
 
 <p>This can be thought of almost as a sort of bridge circuit that achieves balance only if the receiver shaft is brought to one of two (matching) positions with the transmitter shaft.</p>
 <p>One rather ingenious application of the synchro is in the creation of a phase-shifting device, provided that the stator is energized by&nbsp;three-phase AC:</p>
-<p><img src="/uploads/articles/synchro-transmitter-and-receiver3.png" /></p>
+^[75-06.webp]
 <p><em>Full rotation of the rotor will smoothly shift the phase from 0&deg; all the way to 360&deg; (back to 0&deg;).</em></p>
 
 <p>As the synchro&rsquo;s rotor is turned, the rotor coil will progressively align with each stator coil, their respective magnetic fields being 120&deg; phase-shifted from one another.</p>
@@ -70,7 +72,7 @@
 <p>One slider winding is adequate for counting pulses, but provides no direction information.</p>
 <p>The 2-phase windings provide direction information in the phasing of the sine and cosine waves. Movement by one pitch produces a cycle of sine and cosine waves; multiple pitches produce a train of waves.</p>
 
-<p><img src="/uploads/articles/cycle-of-sine-and-cosine-waves.png" /></p>
+^[75-07.webp]
 <p><em>Inductosyn: (a) Fixed serpentine winding, (b) movable slider 2-phase windings. Adapted from Figure 6.16 [WAK]</em></p>
 
 <p>When we say sine and cosine waves are produced as a function of linear movement, we really mean a high frequency carrier is amplitude modulated as the slider moves.</p>
@@ -92,18 +94,18 @@
 <p>Like inductive transducers, capacitive transducers can also be made to be self-contained units, unlike the direct physiological examples described above.</p>
 <p>Some transducers work by making one of the capacitor plates movable, either in such a way as to vary the overlapping area or the distance between the plates. Other transducers work by moving a dielectric material in and out between two fixed plates:</p>
 
-<p><img src="/uploads/articles/variable-capacitive-transducer-varies.png" /></p>
+^[75-08.webp]
 <p><em>Variable capacitive transducer varies; (a) area of overlap, (b) distance between plates, (c) amount of dielectric between plates.</em></p>
 
 <p>Transducers with greater sensitivity and immunity to changes in other variables can be obtained by way of differential design, much like the concept behind the LVDT (Linear Variable <em>Differential</em> Transformer). Here are a few examples of differential capacitive transducers:</p>
 
-<p><img src="/uploads/articles/differential-capacitive-transducer-varies-capacitance-ratio-by-changing.png" /></p>
+^[75-09.webp]
 <p><em>Differential capacitive transducer varies capacitance ratio by changing: (a) area of overlap, (b) distance between plates, (c) dielectric between plates.</em></p>
 
 <p>As you can see, all of the differential devices shown in the above illustration have <em>three</em> wire connections rather than two: one wire for each of the &ldquo;end&rdquo; plates and one for the &ldquo;common&rdquo; plate.</p>
 <p>As the capacitance between one of the &ldquo;end&rdquo; plates and the &ldquo;common&rdquo; plate changes, the capacitance between the other &ldquo;end&rdquo; plate and the &ldquo;common&rdquo; plate is such to change in the opposite direction. This kind of transducer lends itself very well to implementation in a bridge circuit:</p>
 ### Differential Capacitive Transducer Bridge
-<p><img src="/uploads/articles/differential-capacitive-transducer-bridge-measurement-circuit2.png" /></p>
+^[75-10.webp]
 <p><em>Differential capacitive transducer bridge measurement circuit.</em></p>
 
 <p>Capacitive transducers provide relatively small capacitances for a measurement circuit to operate with, typically in the <em>pico</em>farad range. Because of this, high power supply frequencies (in the megahertz range!) are usually required to reduce these capacitive reactances to reasonable levels.</p>
@@ -113,12 +115,12 @@
 ### Differential Capacitive Transducer &ldquo;Twin-T&rdquo;
 <p>An interesting alternative to the bridge circuit for interpreting differential capacitance is the <em>twin-T</em>. It requires the use of diodes, those &ldquo;one-way valves&rdquo; for electric current mentioned earlier in the chapter:</p>
 
-<p><img src="/uploads/articles/differential-capacitive-transducer-twin-t-measurement-circuit.png" /></p>
+^[75-11.webp]
 <p><em>Differential capacitive transducer &ldquo;Twin-T&rdquo; measurement circuit.</em></p>
 
 <p>This circuit might be better understood if re-drawn to resemble more of a bridge configuration:</p>
 
-<p><img src="/uploads/articles/differential-capacitive-transducer-twin-t-measurement-circuit-redrawn.png" /></p>
+^[75-12.webp]
 <p><em>Differential capacitor transducer &ldquo;Twin-T&rdquo; measurement circuit redrawn as a bridge.Output is across R<sub>load</sub>.</em></p>
 
 <p>Capacitor C<sub>1</sub> is charged by the AC voltage source during every positive half-cycle (positive as measured in reference to the ground point), while C<sub>2</sub> is charged during every negative half-cycle.</p>
@@ -130,7 +132,7 @@
 <p>Thus, differential capacitance is translated into a DC voltage across the load resistor.</p>
 <p>Across the load resistor, there is both AC and DC voltage present, with only the DC voltage being significant to the difference in capacitance. If desired, a low-pass filter may be added to the output of this circuit to block the AC, leaving only a DC signal to be interpreted by measurement circuitry:</p>
 
-<p><em><img src="/uploads/articles/addition-of-low-pass-filter-to-twin-t.png" /></em></p>
+^[75-13.webp]
 <p><em><em>Addition of low-pass filter to &ldquo;twin-T&rdquo; feeds pure DC to measurement indicator.</em></em></p>
 
 <p>As a measurement circuit for differential capacitive sensors, the twin-T configuration enjoys many advantages over the standard bridge configuration.</p>

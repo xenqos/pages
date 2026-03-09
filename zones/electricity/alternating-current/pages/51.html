@@ -31,6 +31,8 @@
 </div>
 <div id='idContent'>
 
+<h6>09. Transformers</h6>
+
 <h1>Step-up and Step-down Transformers</h1>
 <p>So far, we&rsquo;ve observed simulations of transformers where the primary and secondary windings were of identical inductance, giving approximately equal voltage and current levels in both circuits. Equality of voltage and current between the primary and secondary sides of a transformer, however, is not the norm for all transformers.</p>
 <p>If the inductances of the two windings are not equal, something interesting happens:</p>
@@ -43,7 +45,7 @@ freq          v(2)        i(v1)       &#10;6.000E+01     1.000E+01   9.975E-05  
 
 <p>Notice how the secondary voltage is approximately ten times less than the primary voltage (0.9962 volts compared to 10 volts), while the secondary current is approximately ten times greater (0.9962 mA compared to 0.09975 mA).</p>
 <p>What we have here is a device that steps the voltage <em>down</em> by a factor of ten and current <em>up</em> by a factor of ten:</p>
-<p><img src=&quot;/uploads/articles/primary-secondary-winding.jpg&quot; /></p>
+<a target='_blank' href='../images/51-01.jpg'><img class='clImageThumb' src='../images/51-01.jpg'></a><br>
 <p><em>Turns ratio of 10:1 yields 10:1 primary: secondary voltage ratio and 1:10 primary: secondary current ratio.</em></p>
 
 <h3>What are&nbsp;Step-up and Step-down Transformers?</h3>
@@ -52,7 +54,7 @@ freq          v(2)        i(v1)       &#10;6.000E+01     1.000E+01   9.975E-05  
 <p>A transformer that increases the voltage from primary to secondary (more secondary winding turns than primary winding turns) is called a <em>step-up</em> transformer.</p>
 <p>Conversely, a transformer designed to do just the opposite is called a <em>step-down</em> transformer.</p>
 <p>Let&rsquo;s re-examine a photograph shown in the previous section:</p>
-<p><img src=&quot;/uploads/articles/laminated-iron-core.jpg&quot; /></p>
+<a target='_blank' href='../images/51-02.jpg'><img class='clImageThumb' src='../images/51-02.jpg'></a><br>
 <p><em>Transformer cross-section showing primary and secondary windings is a few inches tall (approximately 10 cm).</em></p>
 <p>This is a step-down transformer, as evidenced by the high turn count of the primary winding and the low turn count of the secondary. As a step-down unit, this transformer converts high-voltage, low-current power into low-voltage, high-current power.</p>
 <p>The larger-gauge wire used in the secondary winding is necessary due to the increase in current. The primary winding, which doesn&rsquo;t have to conduct as much current, may be made of smaller-gauge wire.</p>
@@ -70,7 +72,7 @@ freq          v(2)        i(v1)       &#10;6.000E+01     1.000E+01   9.975E-05  
 <p>Any device that could output more power than it took in would violate the <em>Law of Energy Conservation</em> in physics, namely that energy cannot be created or destroyed, only converted. As with the first transformer example we looked at, power transfer efficiency is very good from the primary to the secondary sides of the device.</p>
 <p>The practical significance of this is made more apparent when an alternative is considered: before the advent of efficient transformers, voltage/current level conversion could only be achieved through the use of motor/generator sets.</p>
 <p>A drawing of a motor/generator set reveals the basic principle involved: (Figure below)</p>
-<p><img src=&quot;/uploads/articles/a-motor-generator-set.jpg&quot; />=</p>
+<a target='_blank' href='../images/51-03.jpg'><img class='clImageThumb' src='../images/51-03.jpg'></a><br>
 <p><em>Motor generator illustrates the basic principle of the transformer.</em></p>
 <p>In such a machine, a motor is mechanically coupled to a generator, the generator designed to produce the desired levels of voltage and current at the rotating speed of the motor.</p>
 <p>While both motors and generators are fairly efficient devices, the use of both in this fashion compounds their inefficiencies so that the overall efficiency is in the range of 90% or less. Furthermore, because motor/generator sets obviously require moving parts, mechanical wear and balance are factors influencing both service life and performance.</p>
@@ -85,29 +87,30 @@ freq          v(2)        i(v1)       &#10;6.000E+01     1.000E+01   9.975E-05  
 <p>The winding with more inductance will have a higher voltage and less current than the other.</p>
 <p>Since the two inductors are wound around the same core material in the transformer (for the most efficient magnetic coupling between the two), the parameters affecting inductance for the two coils are equal except for the number of turns in each coil.</p>
 <p>If we take another look at our inductance formula, we see that inductance is proportional to the <em>square</em> of the number of coil turns:</p>
-<p><img src=&quot;/uploads/articles/inductance-formula.jpg&quot; /></p>
+<a target='_blank' href='../images/51-04.jpg'><img class='clImageThumb' src='../images/51-04.jpg'></a><br>
+
 <p>So, it should be apparent that our two inductors in the last SPICE transformer example circuit&mdash;with inductance ratios of 100:1&mdash;should have coil turn ratios of 10:1, because of 10 squared equals 100.</p>
 <p>This works out to be the same ratio we found between primary and secondary voltages and currents (10:1), so we can say as a rule that the voltage and current transformation ratio is equal to the ratio of winding turns between primary and secondary.</p>
-<p><img src=&quot;/uploads/articles/step-down-transformer.jpg&quot; /></p>
+<a target='_blank' href='../images/51-05.jpg'><img class='clImageThumb' src='../images/51-05.jpg'></a><br>
 <p><em>Step-down transformer: (many turns :few turns).</em></p>
 <p>The step-up/step-down effect of coil turn ratios in a transformer is analogous to gear tooth ratios in mechanical gear systems, transforming values of speed and torque in much the same way:</p>
-<p><img src=&quot;/uploads/articles/torque-reducing-gear-train-steps-torque-down.jpg&quot; /></p>
+<a target='_blank' href='../images/51-06.jpg'><img class='clImageThumb' src='../images/51-06.jpg'></a><br>
 <p><em>Torque reducing gear train steps torque down, while stepping speed up.</em></p>
 <p>Step-up and step-down transformers for power distribution purposes can be gigantic in proportion to the power transformers previously shown, some units standing as tall as a home. The following photograph shows a substation transformer standing about twelve feet tall:</p>
-<p><img src=&quot;/uploads/articles/substation-transformer.jpg&quot; /></p>
+<a target='_blank' href='../images/51-07.jpg'><img class='clImageThumb' src='../images/51-07.jpg'></a><br>
 <p><em>Substation transformer.</em></p>
 <p><strong>REVIEW:</strong></p>
 <ul>
 <li>Transformers &ldquo;step up&rdquo; or &ldquo;step down&rdquo; voltage according to the ratios of primary to secondary wire turns.</li>
 </ul>
 
-<p><img src=&quot;/uploads/articles/voltage-transformation-ratio-formula-1.jpg&quot; /></p>
+<a target='_blank' href='../images/51-08.jpg'><img class='clImageThumb' src='../images/51-08.jpg'></a>
 <ul>
 <li>A transformer designed to increase the voltage from primary to secondary is called a <em>step-up</em> transformer. A transformer designed to reduce the voltage from primary to secondary is called a <em>step-down</em> transformer.</li>
 <li>The transformation ratio of a transformer will be equal to the square root of its primary to secondary inductance (L) ratio.</li>
 </ul>
 
-<p><img src=&quot;/uploads/articles/voltage-transformation-ratio-formula.jpg&quot; /></p>
+<a target='_blank' href='../images/51-09.jpg'><img class='clImageThumb' src='../images/51-09.jpg'></a><br>
 
 
 </div>

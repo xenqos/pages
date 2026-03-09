@@ -1,3 +1,7 @@
+###### 02. Complex Numbers
+
+## 02. Complex Numbers ##
+
 # Introduction to Complex Numbers
 <p>If I needed to describe the distance between two cities, I could provide an answer consisting of a single number in miles, kilometers, or some other unit of linear measurement.</p>
 <p>However, if I were to describe how to travel from one city to another, I would have to provide more information than just the distance between those two cities; I would also have to provide information about the <em>direction</em> to travel, as well.</p>
@@ -12,23 +16,23 @@
 ## Graphical Representation of Complex Numbers
 <p>Complex numbers are easier to grasp when they&rsquo;re represented graphically. If I draw a line with a certain length (magnitude) and angle (direction), I have a graphic representation of a complex number which is commonly known in physics as a <em>vector</em>: (Figure below)</p>
 
-<p><img src="/uploads/articles/graphical-representation-of-complex-numbers.png" /></p>
+^[07-01.webp]
 
 <p>As distances and directions on a map, there must be some common frame of reference for angle figures to have any meaning. In this case, directly right is considered to be 0<sup>o</sup>, and angles are counted in a positive direction going counter-clockwise: (Figure below)</p>
 
-<p><img src="/uploads/articles/vector-compass.png" /></p>
+^[07-02.webp]
 
 <p>The idea of representing a number in graphical form is nothing new. We all learned this in grade school with the &ldquo;number line:&rdquo; (Figure below)</p>
 
-<p><img src="/uploads/articles/number-line-image1.png" /></p>
+^[07-03.webp]
 
 <p>We even learned how addition and subtraction works by seeing how lengths (magnitudes) stacked up to give a final answer: (Figure below)</p>
 
-<p><img src="/uploads/articles/number-line-image2.png" /></p>
+^[07-04.webp]
 
 <p>Later, we learned that there were ways to designate the values <em>between</em> the whole numbers marked on the line. These were fractional or decimal quantities: (Figure below)</p>
 
-<p><img src="/uploads/articles/number-line-image3.png" /></p>
+^[07-05.webp]
 
 <p>These fields of numbers (whole, integer, rational, irrational, real, etc.) learned in grade school share a common trait: they&rsquo;re all <em>one-dimensional</em>. The straightness of the number line illustrates this graphically.</p>
 <p>You can move up or down the number line, but all &ldquo;motion&rdquo; along that line is restricted to a single axis (horizontal).</p>

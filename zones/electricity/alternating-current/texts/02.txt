@@ -1,6 +1,8 @@
+###### 01. Basic AC Theory
+
 # AC Waveforms
 <p>When an alternator produces AC voltage, the voltage switches polarity over time, but does so in a very particular manner. When graphed over time, the &ldquo;wave&rdquo; traced by this voltage of alternating polarity from an alternator takes on a distinct shape, known as a <em>sine wave</em>: Figure below <em> </em></p>
-<p><em><img src="/uploads/articles/the-sine-wave-graph.jpg" /></em></p>
+^[02-01.webp]
 <p><em>Graph of AC voltage over time (the sine wave).</em></p>
 
 <p>In the voltage plot from an electromechanical alternator, the change from one polarity to the other is a smooth one, the voltage level changing most rapidly at the zero (&ldquo;crossover&rdquo;) point and most slowly at its peak. If we were to graph the trigonometric function of &ldquo;sine&rdquo; over a horizontal range of 0 to 360 degrees, we would find the exact same pattern as in the Table below.</p>
@@ -129,7 +131,7 @@
 
 ## Period vs Frequency
 <p>If we were to follow the changing voltage produced by a coil in an alternator from any point on the sine wave graph to that point when the wave shape begins to repeat itself, we would have marked exactly one <em>cycle</em> of that wave. This is most easily shown by spanning the distance between identical peaks, but may be measured between any corresponding points on the graph. The degree marks on the horizontal axis of the graph represent the domain of the trigonometric sine function, and also the angular position of our simple two-pole alternator shaft as it rotates: Figure below</p>
-<p><img src="/uploads/articles/alternator-voltage-graph.jpg" /></p>
+^[02-02.webp]
 <p><em>Alternator voltage as function of shaft position (time).</em></p>
 
 <p>Since the horizontal axis of this graph can mark the passage of time as well as shaft position in degrees, the dimension marked for one cycle is often measured in a unit of time, most often seconds or fractions of a second. When expressed as a measurement, this is often called the <em>period</em> of a wave.</p>
@@ -141,13 +143,13 @@
 <p>A similar change occurred when the unit of &ldquo;Celsius&rdquo; replaced that of &ldquo;Centigrade&rdquo; for metric temperature measurement. The name Centigrade was based on a 100-count (&ldquo;Centi-&rdquo;) scale (&ldquo;-grade&rdquo;) representing the melting and boiling points of H<sub>2</sub>O, respectively.</p>
 <p>The name Celsius, on the other hand, gives no hint as to the unit&rsquo;s origin or meaning.</p>
 <p>Period and frequency are mathematical reciprocals of one another. That is to say, if a wave has a period of 10 seconds, its frequency will be 0.1 Hz, or 1/10 of a cycle per second:</p>
-<p><img src="/uploads/articles/period-and-frequency-equation.jpg" /></p>
+^[02-03.webp]
 
 ## Usage of an Oscilloscope
 <p>An instrument called an <em>oscilloscope</em>, Figure below, is used to display a changing voltage over time on a graphical screen. You may be familiar with the appearance of an <em>ECG</em> or <em>EKG</em> (electrocardiograph) machine, used by physicians to graph the oscillations of a patient&rsquo;s heart over time.</p>
 <p>The ECG is a special-purpose oscilloscope expressly designed for medical use. General-purpose oscilloscopes have the ability to display voltage from virtually any voltage source, plotted as a graph with time as the independent variable.</p>
 <p>The relationship between period and frequency is very useful to know when displaying an AC voltage or current waveform on an oscilloscope screen. By measuring the period of the wave on the horizontal axis of the oscilloscope screen and reciprocating that time value (in seconds), you can determine the frequency in Hertz.</p>
-<p><img src="/uploads/articles/time-period-of-sine-wave-oscilloscope.jpg" /></p>
+^[02-04.webp]
 <p><em>Time period of sine wave is shown on oscilloscope.</em></p>
 
 ## How is the Concept of AC Related to Sound?
@@ -250,14 +252,14 @@
 <p>Audibly, two notes whose frequencies are exactly double each other sound remarkably similar. This similarity in sound is musically recognized, the shortest span on a musical scale separating such note pairs being called an <em>octave</em>. Following this rule, the next highest &ldquo;A&rdquo; note (one octave above 440 Hz) will be 880 Hz, the next lowest &ldquo;A&rdquo; (one octave below 220 Hz) will be 110 Hz.</p>
 <p>A view of a piano keyboard helps to put this scale into perspective: Figure below</p>
 
-<p><img src="/uploads/articles/octave-view-of-piano-keyboard.jpg" /></p>
+^[02-05.webp]
 <p><em>An octave is shown on a musical keyboard.</em></p>
 
 <p>As you can see, one octave is equal to <em>seven</em> white keys&rsquo; worth of distance on a piano keyboard. The familiar musical mnemonic (doe-ray-mee-fah-so-lah-tee)&mdash;yes, the same pattern immortalized in the whimsical Rodgers and Hammerstein song sung in The Sound of Music&mdash;covers one octave from C to C.</p>
 
 ## Other Forms of Alternating Waves
 <p>While electromechanical alternators and many other physical phenomena naturally produce sine waves, this is not the only kind of alternating wave in existence. Other &ldquo;waveforms&rdquo; of AC are commonly produced within electronic circuitry. Here are but a few sample waveforms and their common designations in the figure below.</p>
-<p><img src="/uploads/articles/waveforms-and-their-common-designations.jpg" /></p>
+^[02-06.webp]
 <p><em>Some common waveshapes (waveforms).</em></p>
 
 <p>These waveforms are by no means the only kinds of waveforms in existence. They&rsquo;re simply a few that are common enough to have been given distinct names. Even in circuits that are supposed to manifest &ldquo;pure&rdquo; sine, square, triangle, or sawtooth voltage/current waveforms, the real-life result is often a distorted version of the intended waveshape.</p>

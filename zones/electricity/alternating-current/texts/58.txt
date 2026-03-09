@@ -1,5 +1,9 @@
+###### 10. Polyphase AC Circuits
+
+## 10. Polyphase AC Circuits ##
+
 # Single-phase Power Systems
-<p><img src="/uploads/articles/single-phase-power-system-schematic-diagram.jpg" /></p>
+^[58-01.webp]
 <p><em>Single phase power system schematic diagram shows little about the wiring of a practical power circuit.</em></p>
 
 <p>Depicted above, is a very simple AC circuit. If the load resistor&rsquo;s power dissipation were substantial, we might call this a &ldquo;power circuit&rdquo; or &ldquo;power system&rdquo; instead of regarding it as just a regular circuit.</p>
@@ -8,10 +12,10 @@
 <p>One such concern is the size and cost of wiring necessary to deliver power from the AC source to the load. Normally, we do not give much thought to this type of concern if we&rsquo;re merely analyzing a circuit for the sake of learning about the laws of electricity.</p>
 <p>However, in the real world, it can be a major concern. If we give the source in the above circuit a voltage value and also give power dissipation values to the two load resistors, we can determine the wiring needs for this particular circuit:</p>
 
-<p><img src="/uploads/articles/single-phase-power-system-schematic-diagram-example.jpg" /></p>
+^[58-02.webp]
 <p><em>As a practical matter, the wiring for the 20 kW loads at 120 Vac is rather substantial (167 A).</em></p>
 
-<p><img src="/uploads/articles/load-resistor-total-circuit-current-equation.jpg" /></p>
+^[58-03.webp]
 
 <p>83.33 amps for each load resistor in the figure above adds up to 166.66 amps total circuit current. This is no small amount of current and would necessitate copper wire conductors of at least 1/0 gauge.</p>
 <p>Such wire is well over 1/4 inch (6 mm) in diameter, weighing over 300 pounds per thousand feet. Bear in mind that copper is not cheap either! It would be in our best interest to find ways to minimize such costs if we were designing a power system with long conductor lengths.</p>
@@ -19,10 +23,10 @@
 <p>The loads, of course, would have to have greater resistance values to dissipate the same power as before (10 kW each) at a greater voltage than before.</p>
 <p>The advantage would be less current required, permitting the use of smaller, lighter, and cheaper wire:</p>
 
-<p><img src="/uploads/articles/single-phase-power-system-schematic-diagram-example1.jpg" /></p>
+^[58-04.webp]
 <p><em>Same 10 kW loads at 240 Vac requires less substantial wiring than at 120 Vac (83 A).</em></p>
 
-<p><img src="/uploads/articles/load-resistor-total-circuit-current-equation1.jpg" /></p>
+^[58-05.webp]
 
 <p>Now our <em>total</em> circuit current is 83.33 amps, half of what it was before.</p>
 <p>We can now use number 4 gauge wire, which weighs less than half of what 1/0 gauge wire does per unit length. This is a considerable reduction in system cost with no degradation in performance.</p>
@@ -43,7 +47,7 @@
 ### Two Lower voltage Loads in Series
 <p>An alternative solution would be to use a higher voltage supply to provide power to two lower voltage loads in series. This approach combines the efficiency of a high-voltage system with the safety of a low-voltage system:</p>
 
-<p><img src="/uploads/articles/efficiency-of-high-voltage-system-example.jpg" /></p>
+^[58-06.webp]
 <p><em>Series connected 120 Vac loads, driven by 240 Vac source at 83.3 A total current.</em></p>
 
 <p>Notice the polarity markings (+ and -) for each voltage shown, as well as the unidirectional arrows for current.</p>
@@ -56,10 +60,10 @@
 <p>There&rsquo;s only one disadvantage to this design: the consequences of one load failing open, or being turned off (assuming each load has a series on/off switch to interrupt current) are not good.</p>
 <p>Being a series circuit, if either load were to open, the current would stop in the other load as well. For this reason, we need to modify the design a bit: (Figure below)</p>
 
-<p><img src="/uploads/articles/efficiency-of-high-voltage-system-example1.jpg" /></p>
+^[58-07.webp]
 <p><em>Addition of a neutral conductor allows loads to be individually driven.</em></p>
 
-<p><img src="/uploads/articles/load-resistor-total-circuit-current-equation2.jpg" /></p>
+^[58-08.webp]
 
 ## Split-phase Power System
 <p>Instead of a single 240-volt power supply, we use two 120 volt supplies (in phase with each other!) in series to produce 240 volts, then run a third wire to the connection point between the loads to handle the eventuality of one load opening.</p>
@@ -70,19 +74,19 @@
 <p>An essential component of a split-phase power system is the dual AC voltage source. Fortunately, designing and building one is not difficult.</p>
 <p>Since most AC systems receive their power from a step-down transformer anyway (stepping voltage down from high distribution levels to a user-level voltage like 120 or 240), that transformer can be built with a center-tapped secondary winding:&nbsp;</p>
 
-<p><img src="/uploads/articles/step-down-transformer-with-center-tapped-secondary-winding.jpg" /></p>
+^[58-09.webp]
 <p><em>American 120/240 Vac power is derived from a center tapped utility transformer.</em></p>
 
 <p>If the AC power comes directly from a generator (alternator), the coils can be similarly center-tapped for the same effect. The extra expense to include a center-tap connection in a transformer or alternator winding is minimal.</p>
 <p>Here is where the (+) and (-) polarity markings really become important. This notation is often used to reference the phasings of <em>multiple</em> AC voltage sources, so it is clear whether they are aiding (&ldquo;boosting&rdquo;) each other or opposing (&ldquo;bucking&rdquo;) each other.</p>
 <p>If not for these polarity markings, phase relations between multiple AC sources might be very confusing. Note that the split-phase sources in the schematic (each one 120 volts &ang; 0&deg;), with polarity marks (+) to (-) just like series-aiding batteries can alternatively be represented as such: (Figure below)</p>
 
-<p><img src="/uploads/articles/split-phase-sources-in-schematic-diagram.jpg" /></p>
+^[58-10.webp]
 <p><em>Split phase 120/240 Vac source is equivalent to two series aiding 120 Vac sources.</em></p>
 
 <p>To mathematically calculate voltage between &ldquo;hot&rdquo; wires, we must <em>subtract</em> voltages, because their polarity marks show them to be opposed to each other:</p>
 
-<p><img src="/uploads/articles/voltage-between-hot-wires-equation.jpg" /></p>
+^[58-11.webp]
 
 <p>If we mark the two sources&rsquo; common connection point (the neutral wire) with the same polarity mark (-), we must express their relative phase shifts as being 180&deg; apart. Otherwise, we&rsquo;d be denoting two voltage sources in direct opposition with each other, which would give 0 volts between the two &ldquo;hot&rdquo; conductors.</p>
 <p>Why am I taking the time to elaborate on polarity marks and phase angles? It will make more sense in the next section!</p>

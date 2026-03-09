@@ -1,11 +1,15 @@
+###### 03. Reactance and Impedance—Inductive
+
+## 03. Reactance and Impedance—Inductive ##
+
 # AC Resistor Circuits (Inductive)
 ## Instantaneous Values in AC Circuits
-<p><img src="/uploads/articles/pure-resistive-ac-circuit.jpg" /></p>
+^[15-01.webp]
 <p><em>Pure resistive AC circuit: resistor voltage and current are in phase.</em></p>
 
 <p>If we were to plot the current and voltage for a very simple AC circuit consisting of a source and a resistor (figure above), it would look something like this: (figure below)</p>
 
-<p><img src="/uploads/articles/voltage-and-current-resistive-circuit.jpg" /></p>
+^[15-02.webp]
 <p><em>Voltage and current &ldquo;in phase&rdquo; for resistive circuit.</em></p>
 
 <p>Because the resistor simply and directly resists the flow of current at all periods of time, the waveform for the voltage drop across the resistor is exactly in phase with the waveform for the current through it.</p>
@@ -14,5 +18,5 @@
 <p>At any given point in time along the waves, Ohm&rsquo;s Law holds true for the instantaneous values of voltage and current.</p>
 <p>We can also calculate the power dissipated by this resistor, and plot those values on the same graph: (figure below)</p>
 
-<p><img src="/uploads/articles/calculate-the-power-dissipated-resistor.jpg" /></p>
+^[15-03.webp]
 <p><em>Instantaneous AC power in a pure resistive circuit is always positive.</em></p>

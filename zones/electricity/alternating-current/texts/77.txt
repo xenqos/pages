@@ -1,3 +1,5 @@
+###### 13. AC Motors
+
 # Synchronous Motors
 ## Single Phase Synchronous Motors
 <p>Single-phase synchronous motors are available in small sizes for applications requiring precise timing such as timekeeping, (clocks) and tape players. Though battery-powered quartz regulated clocks are widely available, the AC line operated variety has better long term accuracy&mdash;over a period of months.</p>
@@ -9,7 +11,7 @@
 <p>The point is that in either case the rotors must run at the same nominal frequency, and be in phase with each other. That is, they must be <em>synchronized</em>. The procedure for synchronizing two alternators is to (1) open the switch, (2) drive both alternators at the same rotational rate, (3) advance or retard the phase of one unit until both AC outputs are in phase, (4) close the switch before they drift out of phase.</p>
 <p>Once synchronized, the alternators will be locked to each other, requiring considerable torque to break one unit loose (out of synchronization) from the other.</p>
 
-<p><img src="/uploads/articles/synchronous-motor-running-in-step-with-alternator.jpg" /></p>
+^[77-01.webp]
 <p><em>Synchronous motor running in step with the alternator</em></p>
 
 ## Accounting for Torque with Synchronous Motors
@@ -20,7 +22,7 @@
 <p>In the case of a small synchronous motor in place of the alternator, it is not necessary to go through the elaborate synchronization procedure for alternators. However, the synchronous motor is not self-starting and must still be brought up to the approximate alternator electrical speed before it will lock (synchronize) to the generator rotational rate.</p>
 <p>Once up to speed, the synchronous motor will maintain synchronism with the AC power source and develop torque.</p>
 
-<p><img src="https://www.allaboutcircuits.com/uploads/articles/Sinewave_drives_synchronous_motor.png" /></p>
+^[77-02.webp]
 <p><em>Sinewave drives synchronous motor</em></p>
 
 <p>Assuming that the motor is up to synchronous speed, as the sine wave changes to positive in Figure above (1), the lower north coil pushes the north rotor pole, while the upper south coil attracts that rotor north pole. In a similar manner, the rotor south pole is repelled by the upper south coil and attracted to the lower north coil.</p>
@@ -30,27 +32,27 @@
 <p>Synchronization and torque are lost beyond this angle. The current in the coils of a single-phase synchronous motor pulsates while alternating polarity.&nbsp;</p>
 <p>If the permanent magnet rotor speed is close to the frequency of this alternation, it synchronizes to this alternation. Since the coil field pulsates and does not rotate, it is necessary to bring the permanent magnet rotor up to speed with an auxiliary motor. This is a small induction motor similar to those in the next section.</p>
 
-<p><img src="/uploads/articles/addition-of-field-poles-decreases-speed.jpg" /></p>
+^[77-03.webp]
 <p><em>Addition of field poles decreases the speed</em></p>
 
 <p>A 2-pole (pair of N-S poles) alternator will generate a 60 Hz sine wave when rotated at 3600 rpm (revolutions per minute). The 3600 rpm corresponds to 60 revolutions per second. A similar 2-pole permanent magnet synchronous motor will also rotate at 3600 rpm.</p>
 <p>A lower speed motor may be constructed by adding more pole pairs. A 4-pole motor would rotate at 1800 rpm, a 12-pole motor at 600 rpm. The style of construction shown (Figure above) is for illustration. Higher efficiency higher torque multi-pole stator synchronous motors actually have multiple poles in the rotor.</p>
 
-<p><img src="/uploads/articles/one-winding-12-pole-synchronous-motor.jpg" /></p>
+^[77-04.webp]
 <p><em>One-winding 12-pole synchronous motor</em></p>
 
 <p>Rather than wind 12-coils for a 12-pole motor, wind a single coil with twelve interdigitated steel poles pieces as shown in Figure above. Though the polarity of the coil alternates due to the applied AC, assume that the top is temporarily north, the bottom south.</p>
 <p>Pole pieces route the south flux from the bottom and outside of the coil to the top. These 6-souths are interleaved with 6-north tabs bent up from the top of the steel pole piece of the coil. Thus, a permanent magnet rotor bar will encounter 6-pole pairs corresponding to 6-cycles of AC in one physical rotation of the bar magnet.</p>
 <p>The rotation speed will be 1/6 of the electrical speed of the AC. Rotor speed will be 1/6 of that experienced with a 2-pole synchronous motor. Example: 60 Hz would rotate a 2-pole motor at 3600 rpm, or 600 rpm for a 12-pole motor.</p>
 
-<p><img src="/uploads/articles/westclox-synchronous-clock-motor-photograph1.jpg" /></p>
+^[77-05.webp]
 <p><em>Reprinted by permission of Westclox History at www.clockHistory.com</em></p>
 
 <p>The stator (Figure above) shows a 12-pole Westclox synchronous clock motor. Construction is similar to the previous figure with a single coil. The one coil style of construction is economical for low torque motors. This 600 rpm motor drives reduction gears moving clock hands.</p>
 <p><strong>Q:</strong> If the Westclox motor were to run at 600 rpm from a 50 Hz power source, how many poles would be required?</p>
 <p><strong>A:</strong> A 10-pole motor would have 5-pairs of N-S poles. It would rotate at 50/5 = 10 rotations per second or 600 rpm (10 s-1 x 60 s/minute).</p>
 
-<p><img src="/uploads/articles/westclox-synchronous-clock-motor-photograph2.jpg" /></p>
+^[77-06.webp]
 <p><em>Reprinted by permission of Westclox History at www.clockHistory.com</em></p>
 
 <p>The rotor (Figure above) consists of a permanent magnet bar and a steel induction motor cup. The synchronous motor bar rotating within the pole tabs keeps accurate time. The induction motor cup outside of the bar magnet fits outside and over the tabs for self-starting. At one time non-self-starting motors without the induction motor cup were manufactured.</p>
@@ -67,40 +69,40 @@ S = f120/n where: S = rotor speed in rpm f = AC line frequency n = number of pol
 <p>The rotor with multiple magnet poles (below right) is used in any efficient motor driving a substantial load. These will be slip ring fed electromagnets in large industrial motors. Large industrial synchronous motors are self-started by embedded squirrel cage conductors in the armature, acting as an induction motor.</p>
 <p>The electromagnetic armature is only energized after the rotor is brought up to near synchronous speed.</p>
 
-<p><img src="/uploads/articles/three-phase-4-pole-synchronous-motor.jpg" /></p>
+^[77-07.webp]
 <p><em>Three-phase, 4-pole synchronous motor</em></p>
 
 ## Small Multi-Phase Synchronous Motors
 <p>Small multi-phase synchronous motors may be started by ramping the drive frequency from zero to the final running frequency. The multi-phase drive signals are generated by electronic circuits and will be square waves in all but the most demanding applications.</p>
 <p>Such motors are known as brushless DC motors. True synchronous motors are driven by sine waveforms. Two or three-phase drive may be used by supplying the appropriate number of windings in the stator. Only 3-phase is shown above.</p>
 
-<p><img src="/uploads/articles/electronic-synchronous-motor.jpg" /></p>
+^[77-08.webp]
 <p><em>Electronic synchronous motor</em></p>
 
 <p>The block diagram shows the drive electronics associated with a low voltage (12 V DC) synchronous motor. These motors have a <em>position sensor</em> integrated within the motor, which provides a low-level signal with a frequency proportional to the speed of rotation of the motor.</p>
 <p>The position sensor could be as simple as solid-state magnetic field sensors such as <em>Hall effect</em> devices providing commutation (armature current direction) timing to the drive electronics. The position sensor could be a high-resolution angular sensor such as a&nbsp;resolver, an inductosyn (magnetic encoder), or an optical encoder.</p>
 <p>If the constant and accurate speed of rotation is required, (as for a disk drive) a <em>tachometer</em> and <em>phase-locked loop</em> may be included (figure below). This tachometer signal, a pulse train proportional to motor speed, is fed back to a phase-locked loop, which compares the tachometer frequency and phase to a stable reference frequency source such as a crystal oscillator.</p>
 
-<p><img src="/uploads/articles/phase-locked-loop-controls-synchronous-motor-speed.jpg" /></p>
+^[77-09.webp]
 <p><em>Phase-locked loop controls synchronous motor speed</em></p>
 
 ## Brushless DC Motor
 <p>A motor driven by square waves of current, as provided by simple hall effect sensors, is known as a <em>brushless DC motor</em>. This type of motor has higher <em>ripple torque</em> variation through a shaft revolution than a sine wave is driven motor. This is not a problem for many applications. Though, we are primarily interested in synchronous motors in this section.</p>
 
-<p><img src="/uploads/articles/motor-ripple-torque-and-mechanical-analog.jpg" /></p>
+^[77-10.webp]
 <p><em>Motor ripple torque and mechanical analog</em></p>
 
 <p>Ripple torque, or cogging, is caused by the magnetic attraction of the rotor poles to the stator pole pieces. (Figure above) Note that there are no stator coils. The PM rotor may be rotated by hand but will encounter attraction to the pole pieces when near them.</p>
 <p>This is analogous to the mechanical situation. Would ripple torque be a problem for a motor used in a tape player? Yes, we do not want the motor to alternately speed and slow as it moves audiotape past a tape playback head. Would ripple torque be a problem for a fan motor? No.</p>
 
-<p><img src="/uploads/articles/windings-distributed-in-a-belt-produce-sinusoidal-field.jpg" /></p>
+^[77-11.webp]
 <p><em>Windings distributed in a belt produce a more sinusoidal field</em></p>
 
 <p>If a motor is driven by sine waves of current synchronous with the motor back emf, it is classified as a synchronous AC motor, regardless of whether the drive waveforms are generated by electronic means. A synchronous motor will generate a sinusoidal back <em>emf</em> if the stator magnetic field has a sinusoidal distribution.</p>
 <p>It will be more sinusoidal if pole windings are distributed in a belt across many slots instead of concentrated on one large pole (as drawn in most of our simplified illustrations). This arrangement cancels many of the stator field odd harmonics.</p>
 <p>Slots having fewer windings at the edge of the phase winding may share the space with other phases. Winding belts may take on an alternate concentric form as shown in Figure below.</p>
 
-<p><img src="/uploads/articles/concentric-belts.jpg" /></p>
+^[77-12.webp]
 <p><em>Concentric belts</em></p>
 
 <p>For a 2-phase motor, driven by a sine wave, the torque is constant throughout a revolution by the trigonometric identity:</p>
@@ -112,7 +114,7 @@ sin2&theta; + cos2&theta; = 1</pre>
 <p>A resolver provides analog angular position signals in the form of signals proportional to the sine and cosine of shaft angle. Encoders provide a digital angular position indication in either serial or parallel format.</p>
 <p>The sine wave drive may actually be from a PWM, <em>Pulse Width Modulator</em>, a high-efficiency method of approximating a sine wave with a digital waveform. Each phase requires drive electronics for this waveform phase-shifted by the appropriate amount per phase.</p>
 
-<p><img src="/uploads/articles/pwm-approximates-a-sine-wave.jpg" /></p>
+^[77-13.webp]
 <p><em>PWM approximates a sine wave</em></p>
 
 ## Benefits of Synchronous Motor

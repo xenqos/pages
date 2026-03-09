@@ -31,38 +31,40 @@
 </div>
 <div id='idContent'>
 
+<h6>09. Transformers</h6>
+
 <h1>Phasing</h1>
 <p>Since transformers are essentially AC devices, we need to be aware of the phase relationships between the primary and secondary circuits. Using our SPICE example from before, we can plot the waveshapes for the primary and secondary circuits and see the phase relations for ourselves:</p>
 
 <pre><br>
 spice transient analysis file for use with nutmeg: &#10; transformer &#10; v1 1 0 sin(0 15 60 0 0) &#10; rbogus1 1 2 1e-12 &#10; v2 5 0 dc 250 &#10; l1 2 0 10000 &#10; l2 3 5 100 &#10; k l1 l2 0.999 &#10; vi1 3 4 ac 0 &#10; rload 4 5 1k &#10; .tran 0.5m 17m &#10; .end &#10; nutmeg commands: &#10; setplot tran1 &#10; plot v(2) v(3,5)&#10;</pre>
 
-<p><img src=&quot;/uploads/articles/waveshapes-for-the-primary-and-secondary-circuits.jpg&quot; /></p>
+<a target='_blank' href='../images/53-01.jpg'><img class='clImageThumb' src='../images/53-01.jpg'></a><br>
 <p><em>A secondary voltage V(3,5) is in-phase with primary voltage V(2) and stepped down by a factor of ten.</em></p>
 <p>In going from primary, V(2), to secondary, V(3,5), the voltage was stepped down by a factor of ten, and the current was stepped up by a factor of 10. Both current and voltage waveforms are in-phase in going from primary to secondary.</p>
 
 <pre><br>
 nutmeg commands: setplot tran1 plot I(L1#branch) I(L2#branch)&#10;</pre>
 
-<p><img src=&quot;/uploads/articles/primary-and-secondary-currents-in-phase-graph.jpg&quot; /></p>
+<a target='_blank' href='../images/53-02.jpg'><img class='clImageThumb' src='../images/53-02.jpg'></a><br>
 <p><em>Primary and secondary currents are in-phase. Secondary current is stepped up by a factor of ten.</em></p>
 
 <h2>Transformer Conventions</h2>
 <p>It would appear that both voltage and current for the two transformer windings are in-phase with each other, at least for our resistive load. This is simple enough, but it would be nice to know <em>which way</em> we should connect a transformer in order to ensure the proper phase relationships be kept.</p>
 <p>After all, a transformer is nothing more than a set of magnetically-linked inductors, and inductors don&rsquo;t usually come with polarity markings of any kind. If we were to look at an unmarked transformer, we would have no way of knowing which way to hook it up to a circuit to get in-phase (or 180&deg; out-of-phase) voltage and current:</p>
-<p><img src=&quot;/uploads/articles/transformer-conventions.jpg&quot; /></p>
+<a target='_blank' href='../images/53-03.jpg'><img class='clImageThumb' src='../images/53-03.jpg'></a><br>
 <p><em>As a practical matter, the polarity of a transformer can be ambiguous.</em></p>
 <p>Since this is a practical concern, transformer manufacturers have come up with a sort of polarity marking standard to denote phase relationships. It is called the <em>dot convention</em>, and is nothing more than a dot placed next to each corresponding leg of a transformer winding:</p>
-<p><img src=&quot;/uploads/articles/pair-of-dots-indicates-like-polarity.jpg&quot; /></p>
+<a target='_blank' href='../images/53-04.jpg'><img class='clImageThumb' src='../images/53-04.jpg'></a><br>
 <p><em>A pair of dots indicates polarity.</em></p>
 <p>Typically, the transformer will come with some kind of schematic diagram labeling the wire leads for primary and secondary windings. On the diagram will be a pair of dots similar to what is seen above.</p>
 <p>Sometimes dots will be omitted, but when &ldquo;H&rdquo; and &ldquo;X&rdquo; labels are used to label transformer winding wires, the subscript numbers are supposed to represent winding polarity. The &ldquo;1&rdquo; wires (H<sub>1</sub> and X<sub>1</sub>) represent where the polarity-marking dots would normally be placed.</p>
 <p>The similar placement of these dots next to the top ends of the primary and secondary windings tells us that whatever instantaneous voltage polarity is seen across the primary winding will be the same as that across the secondary winding. In other words, the phase shift from primary to secondary will be zero degrees.</p>
 <p>On the other hand, if the dots on each winding of the transformer do <em>not </em>match up, the phase shift will be 180&deg; between primary and secondary, like this:</p>
-<p><img src=&quot;/uploads/articles/out-of-phase-diagram.jpg&quot; /></p>
+<a target='_blank' href='../images/53-05.jpg'><img class='clImageThumb' src='../images/53-05.jpg'></a><br>
 <p><em>Out of phase: primary red to dot, secondary black to dot.</em></p>
 <p>Of course, the dot convention only tells you which end of each winding is which, relative to the other winding(s). If you want to reverse the phase relationship yourself, all you have to do is swap the winding connections like this:</p>
-<p><img src=&quot;/uploads/articles/in-phase-diagram.jpg&quot; /></p>
+<a target='_blank' href='../images/53-06.jpg'><img class='clImageThumb' src='../images/53-06.jpg'></a><br>
 <p><em>In phase: primary red to dot, secondary red to dot.</em></p>
 <p><strong>REVIEW:</strong></p>
 <ul>

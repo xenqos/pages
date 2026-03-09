@@ -31,25 +31,29 @@
 </div>
 <div id='idContent'>
 
+<h6>02. Complex Numbers</h6>
+
 <h1>Some Examples with AC Circuits</h1>
 <p>Let&rsquo;s connect three AC voltage sources in series and use complex numbers to determine additive voltages.</p>
 <p>All the rules and laws learned in the study of DC circuits apply to AC circuits as well (Ohm&rsquo;s Law, Kirchhoff&rsquo;s Laws, network analysis methods), with the exception of power calculations (Joule&rsquo;s Law).</p>
 <p>The only qualification is that all variables <em>must</em> be expressed in complex form, taking into account phase as well as magnitude, and all voltages and currents must be of the same frequency (in order that their phase relationships remain constant). (Figure below)</p>
-<p><img src=&quot;/uploads/articles/addition-of-complex-voltages.png&quot; /></p>
+<a target='_blank' href='../images/14-01.png'><img class='clImageThumb' src='../images/14-01.png'></a><br>
 <p><em>KVL allows the addition of complex voltages.</em></p>
 <p>The polarity marks for all three voltage sources are oriented in such a way that their stated voltages should add to make the total voltage across the load resistor.</p>
 <p>Notice that although magnitude and phase angle is given for each AC voltage source, no frequency value is specified. If this is the case, it is assumed that all frequencies are equal, thus meeting our qualifications for applying DC rules to an AC circuit (all figures given in the complex form, all of the same frequency).</p>
 <p>The setup of our equation to find total voltage appears as such:</p>
-<p><img src=&quot;/uploads/articles/setup-for-equation-to-find-total-voltage.png&quot; /></p>
+<a target='_blank' href='../images/14-02.png'><img class='clImageThumb' src='../images/14-02.png'></a><br>
+
 <p>Graphically, the vectors add up as shown in Figure below.</p>
-<p><img src=&quot;/uploads/articles/graphic-addition-of-vector-voltages.png&quot; /></p>
+<a target='_blank' href='../images/14-03.png'><img class='clImageThumb' src='../images/14-03.png'></a><br>
 <p><em>Graphic addition of vector voltages.</em></p>
 <p>The sum of these vectors will be a resultant vector originating at the starting point for the 22-volt vector (the dot at upper-left of the diagram) and terminating at the ending point for the 15-volt vector (arrow tip at the middle-right of the diagram): (Figure below)</p>
-<p><img src=&quot;/uploads/articles/resultant-vector.png&quot; /></p>
+<a target='_blank' href='../images/14-04.png'><img class='clImageThumb' src='../images/14-04.png'></a><br>
 <p><em>Resultant is equivalent to the vector sum of the three original voltages.</em></p>
 <p>In order to determine what the resultant vector&rsquo;s magnitude and angle are without resorting to graphical images, we can convert each one of these polar-form complex numbers into rectangular form and add.</p>
 <p>Remember, we&rsquo;re <em>adding</em> these figures together because the polarity marks for the three voltage sources are oriented in an additive manner:</p>
-<p><img src=&quot;/uploads/articles/convert-polar-form-complex-numbers-into-rectangular-form.png&quot; /></p>
+<a target='_blank' href='../images/14-05.png'><img class='clImageThumb' src='../images/14-05.png'></a><br>
+
 <p>In polar form, this equates to 36.8052 volts &ang; -20.5018&deg;. What this means in real terms is that the voltage measured across these three voltage sources will be 36.8052 volts, lagging the 15 volts (0&deg; phase reference) by 20.5018&deg;.</p>
 <p>A voltmeter connected across these points in a real circuit would only indicate the polar magnitude of the voltage (36.8052 volts), not the angle. An oscilloscope could be used to display two voltage waveforms and thus provide a phase shift measurement, but not a voltmeter.</p>
 <p>The same principle holds true for AC ammeters: they indicate the polar magnitude of the current, not the phase angle.</p>
@@ -58,7 +62,7 @@
 <p>Rectangular figures must be converted to polar figures (specifically polar <em>magnitude</em>) before they can be related to actual circuit measurements.</p>
 <p>We can use SPICE to verify the accuracy of our results. In this test circuit, the 10 k&Omega; resistor value is quite arbitrary. It&rsquo;s there so that SPICE does not declare an open-circuit error and abort analysis.</p>
 <p>Also, the choice of frequencies for the simulation (60 Hz) is quite arbitrary, because resistors respond uniformly for all frequencies of AC voltage and current. There are other components (notably capacitors and inductors) which do not respond uniformly to different frequencies, but that is another subject! (Figure below)</p>
-<p><img src=&quot;/uploads/articles/spice-circuit-schematic.png&quot; /></p>
+<a target='_blank' href='../images/14-06.png'><img class='clImageThumb' src='../images/14-06.png'></a><br>
 <p><em>Spice circuit schematic.</em></p>
 
 <pre><br>
@@ -68,18 +72,20 @@ v1 1 0 ac 15 0 sin&#10; v2 2 1 ac 12 35 sin&#10; v3 3 2 ac 22 -64 sin&#10; r1 3 
 <p>At first glance, this is counter-intuitive. How is it possible to obtain a total voltage of just over 36 volts with 15 volt, 12 volts, and 22-volt supplies connected in series? With DC, this would be impossible, as voltage figures will either directly add or subtract, depending on polarity.</p>
 <p>But with AC, our &ldquo;polarity&rdquo; (phase shift) can vary anywhere in between full-aiding and full-opposing, and this allows for such paradoxical summing.</p>
 <p>What if we took the same circuit and reversed one of the supply&rsquo;s connections? Its contribution to the total voltage would then be the opposite of what it was before: (Figure below)</p>
-<p><img src=&quot;/uploads/articles/polarity-of-e2-is-reversed.png&quot; /></p>
+<a target='_blank' href='../images/14-07.png'><img class='clImageThumb' src='../images/14-07.png'></a><br>
 <p><em>The polarity of E<sub>2</sub> (12V) is reversed.</em></p>
 <p>Note how the 12 volt supply&rsquo;s phase angle is still referred to as 35&deg;, even though the leads have been reversed. Remember that the phase angle of any voltage drop is stated in reference to its noted polarity. Even though the angle is still written as 35&deg;, the vector will be drawn 180&deg; opposite of what it was before: (Figure below)</p>
-<p><img src=&quot;/uploads/articles/direction-of-e2-is-reversed.png&quot; /></p>
+<a target='_blank' href='../images/14-08.png'><img class='clImageThumb' src='../images/14-08.png'></a><br>
 <p><em>The direction of E<sub>2</sub> is reversed.</em></p>
 <p>The resultant (sum) vector should begin at the upper-left point (origin of the 22-volt vector) and terminate at the right arrow tip of the 15-volt vector: (Figure below)</p>
-<p><img src=&quot;/uploads/articles/resultant-is-vector-sum-of-voltage-sources.png&quot; /></p>
+<a target='_blank' href='../images/14-09.png'><img class='clImageThumb' src='../images/14-09.png'></a><br>
 <p><em>Resultant is vector sum of voltage sources. </em></p>
 <p>The connection reversal on the 12 volt supply can be represented in two different ways in polar form: by addition of 180&deg; to its vector angle (making it 12 volts &ang; 215&deg;), or a reversal of sign on the magnitude (making it -12 volts &ang; 35&deg;). Either way, conversion to rectangular form yields the same result:</p>
-<p><img src=&quot;/uploads/articles/conversion-to-rectangular-form.png&quot; /></p>
+<a target='_blank' href='../images/14-10.png'><img class='clImageThumb' src='../images/14-10.png'></a><br>
+
 <p>The resulting addition of voltages in rectangular form, then:</p>
-<p><img src=&quot;/uploads/articles/addition-of-voltages-in-rectangular-form.png&quot; /></p>
+<a target='_blank' href='../images/14-11.png'><img class='clImageThumb' src='../images/14-11.png'></a><br>
+
 <p>In polar form, this equates to 30.4964 V &ang; -60.9368&deg;. Once again, we will use SPICE to verify the results of our calculations:</p>
 
 <pre><br>

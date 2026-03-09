@@ -1,7 +1,10 @@
+###### 10. Polyphase AC Circuits
+
 # Phase Rotation
+
 ## Three-Phase Alternator
 <p>Let&rsquo;s take the three-phase alternator design laid out earlier and watch what happens as the magnet rotates.</p>
-<p><img src="/uploads/articles/three-phase-alternator.jpg" /></p>
+^[60-01.webp]
 <p><em>Three-phase alternator</em></p>
 
 <p>The phase angle shift of 120&deg; is a function of the actual rotational angle shift of the three pairs of windings.</p>
@@ -11,12 +14,12 @@
 ## Phase Sequence
 <p>This sequence of phase shifts has a definite order. For clockwise rotation of the shaft, the order is 1-2-3 (winding 1 peak first, them winding 2, then winding 3). This order keeps repeating itself as long as we continue to rotate the alternator&rsquo;s shaft.</p>
 
-<p><img src="/uploads/articles/clockwise-rotation-phase.jpg" /></p>
+^[60-02.webp]
 <p><em>Clockwise rotation phase sequence: 1-2-3.</em></p>
 
 <p>However, if we <em>reverse</em> the rotation of the alternator&rsquo;s shaft (turn it counter-clockwise), the magnet will pass by the pole pairs in the opposite sequence. Instead of 1-2-3, we&rsquo;ll have 3-2-1. Now, winding 2&rsquo;s waveform will be <em>leading</em> 120&deg; ahead of 1 instead of lagging, and 3 will be another 120&deg; ahead of 2. (Figure below)</p>
 
-<p><img src="/uploads/articles/counterclockwise-rotation-phase.jpg" /></p>
+^[60-03.webp]
 <p><em>Counterclockwise rotation phase sequence: 3-2-1.</em></p>
 
 <p>The order of voltage waveform sequences in a polyphase system is called <em>phase rotation</em> or <em>phase sequence</em>. If we&rsquo;re using a polyphase voltage source to power resistive loads, phase rotation will make no difference at all. Whether 1-2-3 or 3-2-1, the voltage and current magnitudes will all be the same.</p>
@@ -25,7 +28,7 @@
 <p>Since voltmeters and ammeters would be useless in telling us what the phase rotation of an operating power system is, we need to have some other kind of instrument capable of doing the job.</p>
 <p>One ingenious circuit design uses a capacitor to introduce a phase shift between voltage and current, which is then used to detect the sequence by way of comparison between the brightness of two indicator lamps in the figure below.</p>
 
-<p><img src="/uploads/articles/phase-sequence-detector.jpg" /></p>
+^[60-04.webp]
 <p><em>Phase sequence detector compares the brightness of two lamps.</em></p>
 
 <p>The two lamps are of equal filament resistance and wattage. The capacitor is sized to have approximately the same amount of reactance at system frequency as each lamp&rsquo;s resistance.</p>
@@ -34,7 +37,7 @@
 ## SPICE Analysis for Phase Sequence Detectors
 <p>The following SPICE analysis, &ldquo;phase rotation detector&mdash;sequence = v1-v2-v3,&rdquo; demonstrates what will happen: (Figure below)</p>
 
-<p><img src="/uploads/articles/spice-circuit-for-phase-sequence-detector.jpg" /></p>
+^[60-05.webp]
 <p><em>SPICE circuit for phase sequence detector.</em></p>
 
 <pre>
@@ -59,7 +62,7 @@ phase rotation detector -- sequence = v3-v2-v1 &#10;v1 1 0 ac 120 240 sin   &#10
 <p>What is commonly designated as a &ldquo;1-2-3&rdquo; phase rotation could just as well be called &ldquo;2-3-1&rdquo; or &ldquo;3-1-2,&rdquo; going from left to right in the number string above? Likewise, the opposite rotation (3-2-1) could just as easily be called &ldquo;2-1-3&rdquo; or &ldquo;1-3-2.&rdquo;</p>
 <p>Starting out with a phase rotation of 3-2-1, we can try all the possibilities for swapping any two of the wires at a time and see what happens to the resulting sequence in the figure below.</p>
 
-<p><img src="/uploads/articles/swapping-any-two-wires.jpg" /></p>
+^[60-06.webp]
 <p><em>All possibilities of swapping any two wires.</em></p>
 
 <p>No matter which pair of &ldquo;hot&rdquo; wires out of the three we choose to swap, the phase rotation ends up being reversed (1-2-3 gets changed to 2-1-3, 1-3-2 or 3-2-1, all equivalent).</p>

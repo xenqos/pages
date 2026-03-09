@@ -31,6 +31,8 @@
 </div>
 <div id='idContent'>
 
+<h6>10. Polyphase AC Circuits</h6>
+
 <h1>Harmonics in Polyphase Power Systems</h1>
 <p>In the chapter on mixed-frequency signals, we explored the concept of <em>harmonics</em> in AC systems: frequencies that are integer multiples of the fundamental source frequency.</p>
 <p>With AC power systems where the source voltage waveform coming from an AC generator (alternator) is supposed to be a single-frequency sine wave, undistorted, there should be no harmonic content . . . ideally.</p>
@@ -41,10 +43,10 @@
 <p>As we learned in the mixed-frequency chapter, <em>any </em>distortion of an otherwise sine-wave shaped waveform constitutes the presence of harmonic frequencies.</p>
 <p>When the nonsinusoidal waveform in question is symmetrical above and below its average centerline, the harmonic frequencies will be odd integer multiples of the fundamental source frequency only, with no even integer multiples.</p>
 <p>Most nonlinear loads produce current waveforms like this, and so even-numbered harmonics (2nd, 4th, 6th, 8th, 10th, 12th, etc.) are absent or only minimally present in most AC power systems.</p>
-<p><img src=&quot;/uploads/articles/symmetrical-waveforms-example.jpg&quot; /></p>
+<a target='_blank' href='../images/64-01.jpg'><img class='clImageThumb' src='../images/64-01.jpg'></a><br>
 <p><em>Examples of symmetrical waveforms&mdash;odd harmonics only.</em></p>
 <p>Examples of nonsymmetrical waveforms with even harmonics present are shown for reference in the figure below.</p>
-<p><img src=&quot;/uploads/articles/nonsymmetrical-waveforms-example.jpg&quot; /></p>
+<a target='_blank' href='../images/64-02.jpg'><img class='clImageThumb' src='../images/64-02.jpg'></a><br>
 <p><em>Examples of nonsymmetrical waveforms&mdash;even harmonics present.</em></p>
 <p>Even though half of the possible harmonic frequencies are eliminated by the typically symmetrical distortion of nonlinear loads, the odd harmonics can still cause problems. Some of these problems are general to all power systems, single-phase or otherwise.</p>
 <p>Transformer overheating due to eddy current losses, for example, can occur in <em>any</em> AC power system where there is significant harmonic content.</p>
@@ -53,7 +55,7 @@
 <p>It is helpful to be able to simulate nonlinear loads in SPICE so as to avoid a lot of complex mathematics and obtain a more intuitive understanding of harmonic effects.</p>
 <h3>Linear AC System Simulation</h3>
 <p>First, we&rsquo;ll begin our simulation with a very simple AC circuit: a single sine-wave voltage source with a purely linear load and all associated resistances:&nbsp;</p>
-<p><img src=&quot;/uploads/articles/spice-circuit-with-single-sine-wave-source.jpg&quot; /></p>
+<a target='_blank' href='../images/64-03.jpg'><img class='clImageThumb' src='../images/64-03.jpg'></a><br>
 <p><em>SPICE circuit with a single sine-wave source.</em></p>
 <p>The R<sub>source</sub> and R<sub>line</sub> resistances in this circuit do more than just mimic the real world: they also provide convenient shunt resistances for measuring currents in the SPICE simulation: by reading voltage across a 1 &Omega; resistance, you obtain a direct indication of current through it, since E = IR.</p>
 <p>A SPICE simulation of this circuit (SPICE listing: &ldquo;linear load simulation&rdquo;) with Fourier analysis on the voltage measured across R<sub>line</sub> should show us the harmonic content of this circuit&rsquo;s line current. Being completely linear in nature, we should expect no harmonics other than the 1st (fundamental) of 60 Hz, assuming a 60 Hz source.</p>
@@ -65,7 +67,7 @@ linear load simulation &#10; vsource 1 0 sin(0 120 60 0 0) &#10; rsource 1 2 1 &
 <pre><br>
 &#10;Fourier components of transient response v(2,3)  &#10;dc component =   4.028E-12&#10;harmonic frequency   Fourier    normalized    phase    normalized&#10;no         (hz)     component    component    (deg)    phase (deg)&#10;1      6.000E+01   1.198E-01     1.000000   -72.000       0.000&#10;2      1.200E+02   5.793E-12     0.000000    51.122     123.122&#10;3      1.800E+02   7.407E-12     0.000000   -34.624      37.376&#10;4      2.400E+02   9.056E-12     0.000000     4.267      76.267&#10;5      3.000E+02   1.651E-11     0.000000   -83.461     -11.461&#10;6      3.600E+02   3.931E-11     0.000000    36.399     108.399&#10;7      4.200E+02   2.338E-11     0.000000   -41.343      30.657&#10;8      4.800E+02   4.716E-11     0.000000    53.324     125.324&#10;9      5.400E+02   3.453E-11     0.000000    21.691      93.691&#10;total harmonic distortion =      0.000000  percent&#10;</pre>
 
-<p><img src=&quot;/uploads/articles/linear-load-simulation.jpg&quot; /></p>
+<a target='_blank' href='../images/64-04.jpg'><img class='clImageThumb' src='../images/64-04.jpg'></a><br>
 <p><em>Frequency domain plot of single frequency component. See SPICE listing: &ldquo;linear load simulation&rdquo;.</em></p>
 <p>A .plot command appears in the SPICE netlist, and normally this would result in a sine-wave graph output. In this case, however, I&rsquo;ve purposely omitted the waveform display for brevity&rsquo;s sake&mdash;the .plot command is in the netlist simply to satisfy a quirk of SPICE&rsquo;s Fourier transform function.</p>
 <p>No discrete Fourier transform is perfect, and so we see very small harmonic currents indicated (in the pico-amp range!) for all frequencies up to the 9th harmonic (in the table ), which is as far as SPICE goes in performing Fourier analysis.</p>
@@ -74,27 +76,27 @@ linear load simulation &#10; vsource 1 0 sin(0 120 60 0 0) &#10; rsource 1 2 1 &
 <p>Next, I&rsquo;d like to simulate a nonlinear load so as to generate harmonic currents. This can be done in two fundamentally different ways. One way is to design a load using nonlinear components such as diodes or other semiconductor devices which are easy to simulate with SPICE. Another is to add some AC current sources in parallel with the load resistor.</p>
 <p>The latter method is often preferred by engineers for simulating harmonics since current sources of known value lend themselves better to mathematical network analysis than components with highly complex response characteristics.</p>
 <p>Since we&rsquo;re letting SPICE do all the math work, the complexity of a semiconductor component would cause no trouble for us, but since current sources can be fine-tuned to produce any arbitrary amount of current (a convenient feature), I&rsquo;ll choose the latter approach shown in the figure below, and in the SPICE listing &ldquo;Nonlinear load simulation&rdquo;.</p>
-<p><img src=&quot;/uploads/articles/spice-listing-nonlinear-load-simulation.jpg&quot; /></p>
+<a target='_blank' href='../images/64-05.jpg'><img class='clImageThumb' src='../images/64-05.jpg'></a><br>
 <p><em>SPICE circuit: 60 Hz source with 3rd harmonic added.</em></p>
 <pre><br>
 &#10;&#10;Nonlinear load simulation  vsource 1 0 sin(0 120 60 0 0) &#10; rsource 1 2 1 &#10; rline 2 3 1 &#10; rload 3 0 1k &#10; i3har 3 0 sin(0 50m 180 0 0) &#10; .options itl5=0 &#10; .tran 0.5m 30m 0 1u &#10; .plot tran v(2,3) &#10; .four 60 v(2,3) &#10; .end&#10;</pre>
 
 <p>In this circuit, we have a current source of 50 mA magnitude and a frequency of 180 Hz, which is three times the source frequency of 60 Hz. Connected in parallel with the 1 k&Omega; load resistor, its current will add with the resistor&rsquo;s to make a nonsinusoidal total line current.</p>
 <p>I&rsquo;ll show the waveform plot in the figure below just so you can see the effects of this 3rd-harmonic current on the total current, which would ordinarily be a plain sine wave.</p>
-<p><img src=&quot;/uploads/articles/spice-time-domain-graph.jpg&quot; /></p>
+<a target='_blank' href='../images/64-06.jpg'><img class='clImageThumb' src='../images/64-06.jpg'></a><br>
 <p><em>SPICE time-domain plot showing the sum of 60 Hz source and 3rd harmonic of 180 Hz.</em></p>
 
 <pre><br>
 Fourier components of transient response v(2,3)  &#10;dc component =   1.349E-11&#10;harmonic  frequency  Fourier    normalized    phase    normalized&#10;no         (hz)     component    component    (deg)    phase (deg)&#10;1      6.000E+01   1.198E-01     1.000000   -72.000       0.000&#10;2      1.200E+02   1.609E-11     0.000000    67.570     139.570&#10;3      1.800E+02   4.990E-02     0.416667   144.000     216.000&#10;4      2.400E+02   1.074E-10     0.000000  -169.546     -97.546&#10;5      3.000E+02   3.871E-11     0.000000   169.582     241.582&#10;6      3.600E+02   5.736E-11     0.000000   140.845     212.845&#10;7      4.200E+02   8.407E-11     0.000000   177.071     249.071&#10;8      4.800E+02   1.329E-10     0.000000   156.772     228.772&#10;9      5.400E+02   2.619E-10     0.000000   160.498     232.498&#10;total harmonic distortion =     41.666663  percent &#10;</pre>
 
-<p><img src=&quot;/uploads/articles/spice-fourier-graph.jpg&quot; /></p>
+<a target='_blank' href='../images/64-07.jpg'><img class='clImageThumb' src='../images/64-07.jpg'></a><br>
 <p><em>SPICE Fourier plot showing 60 Hz source and 3rd harmonic of 180 Hz.</em></p>
 <p>In the Fourier analysis, (See the figure above and &ldquo;Fourier components of transient response v(2,3)&rdquo;) the mixed frequencies are unmixed and presented separately.</p>
 <p>Here we see the same 0.1198 amps of 60 Hz (fundamental) current as we did in the first simulation, but appearing in the 3rd harmonic row we see 49.9 mA: our 50 mA, 180 Hz current source at work. Why don&rsquo;t we see the entire 50 mA through the line?</p>
 <p>Because that current source is connected across the 1 k&Omega; load resistor, so some of its currents is shunted through the load and never goes through the line back to the source. It&rsquo;s an inevitable consequence of this type of simulation, where one part of the load is &ldquo;normal&rdquo; (a resistor) and the other part is imitated by a current source.</p>
 <h3>Nonlinear Single-Phase AC System Simulation with Multiple Current Sources</h3>
 <p>If we were to add more current sources to the &ldquo;load,&rdquo; we would see a further distortion of the line current waveform from the ideal sine-wave shape, and each of those harmonic currents would appear in the Fourier analysis breakdown. See the figure below and the SPICE listing: &ldquo;Nonlinear load simulation&rdquo;.</p>
-<p><img src=&quot;/uploads/articles/nonlinear-load-simulation.jpg&quot; /></p>
+<a target='_blank' href='../images/64-08.jpg'><img class='clImageThumb' src='../images/64-08.jpg'></a><br>
 <p><em>Nonlinear load: 1st, 3rd, 5th, 7th, and 9th harmonics present.</em></p>
 
 <pre><br>
@@ -103,13 +105,13 @@ Nonlinear load simulation &#10; vsource 1 0 sin(0 120 60 0 0) &#10; rsource 1 2 
 <pre><br>
 Fourier components of transient response v(2,3)  &#10;dc component =   6.299E-11&#10;harmonic  frequency  Fourier    normalized    phase    normalized&#10;no         (hz)     component    component    (deg)    phase (deg)&#10;1      6.000E+01   1.198E-01     1.000000   -72.000       0.000&#10;2      1.200E+02   1.900E-09     0.000000   -93.908     -21.908&#10;3      1.800E+02   4.990E-02     0.416667   144.000     216.000&#10;4      2.400E+02   5.469E-09     0.000000  -116.873     -44.873&#10;5      3.000E+02   4.990E-02     0.416667     0.000      72.000&#10;6      3.600E+02   6.271E-09     0.000000    85.062     157.062&#10;7      4.200E+02   4.990E-02     0.416666  -144.000     -72.000&#10;8      4.800E+02   2.742E-09     0.000000   -38.781      33.219&#10;9      5.400E+02   4.990E-02     0.416666    72.000     144.000&#10;total harmonic distortion =     83.333296  percent &#10;</pre>
 
-<p><img src=&quot;/uploads/articles/fourier-analysis-graph.jpg&quot; /></p>
+<a target='_blank' href='../images/64-09.jpg'><img class='clImageThumb' src='../images/64-09.jpg'></a><br>
 <p><em>Fourier analysis: &ldquo;Fourier components of transient response v(2,3)&rdquo;.</em></p>
 <p>As you can see from the Fourier analysis (Figure above), every harmonic current source is equally represented in the line current, at 49.9 mA each. So far, this is just a single-phase power system simulation.</p>
 <h3>Three-phase AC System Simulation</h3>
 <p>Things get more interesting when we make it a three-phase simulation. Two Fourier analyses will be performed: one for the voltage across a line resistor, and one for the voltage across the neutral resistor.</p>
 <p>As before, reading voltages across fixed resistances of 1 &Omega; each gives direct indications of current through those resistors. See the figure below and the SPICE listing &ldquo;Y-Y source/load 4-wire system with harmonics&rdquo;.</p>
-<p><img src=&quot;/uploads/articles/analysis-of-line-current-and-neutral-current.jpg&quot; /></p>
+<a target='_blank' href='../images/64-10.jpg'><img class='clImageThumb' src='../images/64-10.jpg'></a><br>
 <p><em>SPICE circuit: analysis of &ldquo;line current&rdquo; and &ldquo;neutral current&rdquo;, Y-Y source/load 4-wire system with harmonics.</em></p>
 
 <pre><br>
@@ -120,14 +122,14 @@ Y-Y source/load 4-wire system with harmonics &#10; * &#10; * phase1 voltage sour
 <pre><br>
 Fourier components of transient response v(2,8)  &#10;dc component =  -6.404E-12&#10;harmonic  frequency  Fourier    normalized    phase    normalized&#10;no         (hz)     component    component    (deg)    phase (deg)&#10;1      6.000E+01   1.198E-01     1.000000     0.000       0.000&#10;2      1.200E+02   2.218E-10     0.000000   172.985     172.985&#10;3      1.800E+02   4.975E-02     0.415423     0.000       0.000&#10;4      2.400E+02   4.236E-10     0.000000   166.990     166.990&#10;5      3.000E+02   4.990E-02     0.416667     0.000       0.000&#10;6      3.600E+02   1.877E-10     0.000000  -147.146    -147.146&#10;7      4.200E+02   4.990E-02     0.416666     0.000       0.000&#10;8      4.800E+02   2.784E-10     0.000000  -148.811    -148.811&#10;9      5.400E+02   4.975E-02     0.415422     0.000       0.000&#10;total harmonic distortion =     83.209009  percent &#10;</pre>
 
-<p><img src=&quot;/uploads/articles/fourier-analysis-of-line-current.jpg&quot; /></p>
+<a target='_blank' href='../images/64-11.jpg'><img class='clImageThumb' src='../images/64-11.jpg'></a><br>
 <p><em>Fourier analysis of line current in balanced Y-Y system.</em></p>
 
 <h3>Fourier analysis of neutral current:</h3>
 <pre><br>
 Fourier components of transient response v(0,7)  &#10;dc component =   1.819E-10&#10;harmonic  frequency  Fourier    normalized    phase    normalized&#10;no         (hz)     component    component    (deg)    phase (deg)&#10;1      6.000E+01   4.337E-07     1.000000    60.018       0.000&#10;2      1.200E+02   1.869E-10     0.000431    91.206      31.188&#10;3      1.800E+02   1.493E-01  344147.7638  -180.000    -240.018&#10;4      2.400E+02   1.257E-09     0.002898   -21.103     -81.121&#10;5      3.000E+02   9.023E-07     2.080596   119.981      59.963&#10;6      3.600E+02   3.396E-10     0.000783    15.882     -44.136&#10;7      4.200E+02   1.264E-06     2.913955    59.993      -0.025&#10;8      4.800E+02   5.975E-10     0.001378    35.584     -24.434&#10;9      5.400E+02   1.493E-01  344147.4889  -179.999    -240.017 &#10;</pre>
 
-<p><img src=&quot;/uploads/articles/fourier-analysis-of-neutral-current.jpg&quot; /></p>
+<a target='_blank' href='../images/64-12.jpg'><img class='clImageThumb' src='../images/64-12.jpg'></a><br>
 <p><em>Fourier analysis of neutral current shows other than no harmonics! Compare to line current in Figure above.</em></p>
 <p>This is a balanced Y-Y power system, each phase identical to the single-phase AC system simulated earlier. Consequently, it should come as no surprise that the Fourier analysis for line current in one phase of the 3-phase system is nearly identical to the Fourier analysis for line current in the single-phase system: a fundamental (60 Hz) line current of 0.1198 amps and odd harmonic currents of approximately 50 mA each.</p>
 <p>See the figure above and the Fourier analysis: &ldquo;Fourier components of transient response v(2,8)&rdquo;</p>
@@ -142,15 +144,15 @@ Fourier components of transient response v(0,7)  &#10;dc component =   1.819E-10
 <h2>Time-domain Graph Analysis</h2>
 <p>This is exactly what&rsquo;s happening, though it might not be apparent why this is so.</p>
 <p>The key to understanding this is made clear in a time-domain graph of phase currents. Examine this plot of balanced phase currents over time, with a phase sequence of 1-2-3. (Figure below)</p>
-<p><img src=&quot;/uploads/articles/phase-sequence-of-1-2-3.jpg&quot; /></p>
+<a target='_blank' href='../images/64-13.jpg'><img class='clImageThumb' src='../images/64-13.jpg'></a><br>
 <p><em>Phase sequence 1-2-3-1-2-3-1-2-3 of equally spaced waves.</em></p>
 <p>With the three fundamental waveforms equally shifted across the time axis of the graph, it is easy to see how they would cancel each other to give a resultant current of zero in the neutral conductor. Let&rsquo;s consider, though, what a 3rd harmonic waveform for phase 1 would look like superimposed on the graph in the figure below.</p>
-<p><img src=&quot;/uploads/articles/three-phase-fundamental-waveforms.jpg&quot; /></p>
+<a target='_blank' href='../images/64-14.jpg'><img class='clImageThumb' src='../images/64-14.jpg'></a><br>
 <p><em>The third harmonic waveform for phase-1 superimposed on three-phase fundamental waveforms.</em></p>
 <p>Observe how this harmonic waveform has the same phase relationship to the 2nd and 3rd fundamental waveforms as it does with the 1st: in each positive half-cycle of <em>any</em> of the fundamental waveforms, you will find exactly two positive half-cycles and one negative half-cycle of the harmonic waveform.</p>
 <p>What this means is that the 3rd-harmonic waveforms of three 120&deg; phase-shifted fundamental-frequency waveforms are actually <em>in phase</em> with each other. The phase shift figure of 120&deg; generally assumed in three-phase AC systems applies only to the fundamental frequencies, not to their harmonic multiples!</p>
 <p>If we were to plot all three 3rd-harmonic waveforms on the same graph, we would see them precisely overlap and appear as a single, unified waveform (shown in bold in (Figure below)</p>
-<p><img src=&quot;/uploads/articles/fundamental-three-phase-waveforms.jpg&quot; /></p>
+<a target='_blank' href='../images/64-15.jpg'><img class='clImageThumb' src='../images/64-15.jpg'></a><br>
 <p><em>Third harmonics for phases 1, 2, 3 all coincide when superimposed on the fundamental three-phase waveforms.</em></p>
 
 <h3>Mathematical Analysis of the Time-domain Graph</h3>
@@ -158,7 +160,8 @@ Fourier components of transient response v(0,7)  &#10;dc component =   1.819E-10
 <p>The phase shift between <strong>A&rsquo;</strong> and <strong>B&rsquo;</strong> is not 120&deg; (that is the phase shift between <strong>A</strong> and <strong>B</strong>), but 3 times that, because the <strong>A&rsquo;</strong> and <strong>B&rsquo; </strong>waveforms alternate three times as fast as <strong>A</strong> and <strong>B</strong>. The shift between waveforms is only accurately expressed in terms of <em>phase angle</em> when the same angular velocity is assumed.</p>
 <p>When relating waveforms of different frequency, the most accurate way to represent phase shift is in terms of <em>time</em>; and the <em>time-shift</em> between <strong>A&rsquo;</strong> and <strong>B&rsquo;</strong> is equivalent to 120&deg; at a frequency three times lower, or 360&deg; at the frequency of <strong>A&rsquo;</strong> and <strong>B&rsquo;</strong>. A phase shift of 360&deg; is the same as a phase shift of 0&deg;, which is to say no phase shift at all.</p>
 <p>Thus, <strong>A&rsquo;</strong> and <strong>B&rsquo;</strong> must be in phase with each other:</p>
-<p><img src=&quot;/uploads/articles/phase-sequence-a-b-c.jpg&quot; /></p>
+<a target='_blank' href='../images/64-16.jpg'><img class='clImageThumb' src='../images/64-16.jpg'></a><br>
+
 <p>This characteristic of the 3rd harmonic in a three-phase system also holds true for any integer multiples of the 3rd harmonic.</p>
 <p>So, not only are the 3rd harmonic waveforms of each fundamental waveform in phase with each other, but so are the 6th harmonics, the 9th harmonics, the 12th harmonics, the 15th harmonics, the 18th harmonics, the 21st harmonics, and so on.</p>
 <p>Since only odd harmonics appear in systems where waveform distortion is symmetrical about the centerline&mdash;and most nonlinear loads create symmetrical distortion&mdash;even-numbered multiples of the 3rd harmonic (6th, 12th, 18th, etc.) are generally not significant, leaving only the odd-numbered multiples (3rd, 9th, 15th, 21st, etc.) to significantly contribute to neutral currents.</p>
@@ -169,7 +172,7 @@ Fourier components of transient response v(0,7)  &#10;dc component =   1.819E-10
 <p>This is very problematic, as other safety concerns prohibit neutral conductors from having overcurrent protection, and thus there is no provision for automatic interruption of these high currents.</p>
 <h3>Analysis of the Effects of Triplen Harmonics in a Y-Y Circuit</h3>
 <p>The following illustration shows how triplen harmonic currents created at the load add within the neutral conductor. The symbol &ldquo;&omega;&rdquo; is used to represent angular velocity and is mathematically equivalent to 2&pi;f. So, &ldquo;&omega;&rdquo; represents the fundamental frequency, &ldquo;3&omega; &rdquo; represents the 3rd harmonic, &ldquo;5&omega;&rdquo; represents the 5th harmonic, and so on: (Figure below)</p>
-<p><img src=&quot;/uploads/articles/harmonic-currents-add-in-neutral-conductor.jpg&quot; /></p>
+<a target='_blank' href='../images/64-17.jpg'><img class='clImageThumb' src='../images/64-17.jpg'></a><br>
 <p><em>&ldquo;Y-Y&rdquo;Triplen source/load: Harmonic currents add in neutral conductor.</em></p>
 <p>In an effort to mitigate these additive triplen currents, one might be tempted to remove the neutral wire entirely. If there is no neutral wire in which triplen currents can flow together, then they won&rsquo;t, right?</p>
 <p>Unfortunately, doing so just causes a different problem: the load&rsquo;s &ldquo;Y&rdquo; center-point will no longer be at the same potential as the source&rsquo;s, meaning that each phase of the load will receive a different voltage than what is produced by the source.</p>
@@ -198,14 +201,14 @@ Fourier components of transient response v(8,7)  &#10;dc component =   6.070E-08
 <p>Second, we see that there is a substantial harmonic voltage between the two &ldquo;Y&rdquo; center-points, between which the neutral conductor used to connect. According to SPICE, there are 50 volts of both 3rd and 9th harmonic frequency between these two points, which is definitely not normal in a linear (no harmonics), balanced Y system.</p>
 <p>Finally, the voltage as measured across one of the load&rsquo;s phases (between nodes 8 and 7 in the SPICE analysis) likewise shows strong triplen harmonic voltages of 50 volts each.</p>
 <p>The figure below is a graphical summary of the aforementioned effects.</p>
-<p><img src=&quot;/uploads/articles/graphical-summary-of-the-aforementioned-effects.jpg&quot; /></p>
+<a target='_blank' href='../images/64-18.jpg'><img class='clImageThumb' src='../images/64-18.jpg'></a><br>
 <p><em>Three-wire &ldquo;Y-Y&rdquo; (no neutral) system: Triplen voltages appear between &ldquo;Y&rdquo; centers. Triplen voltages appear across load phases. Non-triplen currents appear in line conductors.</em></p>
 <p>In summary, removal of the neutral conductor leads to a &ldquo;hot&rdquo; center-point on the load &ldquo;Y&rdquo;, and also to harmonic load phase voltages of equal magnitude, all comprised of triplen frequencies.</p>
 <p>In the previous simulation where we had a 4-wire, Y-connected system, the undesirable effect from harmonics was excessive neutral <em>current</em>, but at least each phase of the load received voltage nearly free of harmonics.</p>
 <h3>Analysis of the Effects of Triplen Harmonics in a Delta-Wye(Y) Circuit</h3>
 <p>Since removing the neutral wire didn&rsquo;t seem to work in eliminating the problems caused by harmonics, perhaps switching to a &Delta; configuration will. Let&rsquo;s try a &Delta; source instead of a Y, keeping the load in its present Y configuration, and see what happens.</p>
 <p>The measured parameters will be line current (voltage across R<sub>line</sub>, nodes 0 and 8), load phase voltage (nodes 8 and 7), and source phase current (voltage across R<sub>source</sub>, nodes 1 and 2). (Figure below)</p>
-<p><img src=&quot;/uploads/articles/delta-y-sourceload-with-harmonics.jpg&quot; /></p>
+<a target='_blank' href='../images/64-19.jpg'><img class='clImageThumb' src='../images/64-19.jpg'></a><br>
 <p><em>Delta-Y source/load with harmonics</em></p>
 
 <pre><br>
@@ -235,14 +238,14 @@ Fourier components of transient response v(8,7)  &#10;dc component =   1.259E-08
 <pre><br>
 Fourier components of transient response v(1,2)  &#10;dc component =   3.564E-11&#10;harmonic  frequency  Fourier    normalized    phase    normalized&#10;no         (hz)     component    component    (deg)    phase (deg)&#10;1      6.000E+01   6.906E-02     1.000000    -0.181       0.000&#10;2      1.200E+02   1.525E-11     0.000000  -156.674    -156.493&#10;3      1.800E+02   1.422E-06     0.000021  -179.996    -179.815&#10;4      2.400E+02   2.949E-11     0.000000  -110.570    -110.390&#10;5      3.000E+02   2.883E-02     0.417440  -179.996    -179.815&#10;6      3.600E+02   2.324E-11     0.000000   -91.926     -91.745&#10;7      4.200E+02   2.883E-02     0.417398  -179.994    -179.813&#10;8      4.800E+02   4.140E-11     0.000000   -39.875     -39.694&#10;9      5.400E+02   4.267E-06     0.000062     0.006       0.186&#10;total harmonic distortion =     59.031969  percent &#10;</pre>
 
-<p><img src=&quot;/uploads/articles/source_phase_windings-for-triplen-and-non-triplen-voltage.jpg&quot; /></p>
+<a target='_blank' href='../images/64-20.jpg'><img class='clImageThumb' src='../images/64-20.jpg'></a><br>
 <p><em>&ldquo;&Delta;-Y&rdquo; source/load: Triplen voltages appear across load phases. Non-triplen currents appear in line conductors and in source phase windings.</em></p>
 <p>Really, the only advantage of the &Delta;-Y configuration from the standpoint of harmonics is that there is no longer a center-point at the load posing a shock hazard. Otherwise, the load components receive the same harmonically-rich voltages and the lines see the same currents as in a three-wire Y system.</p>
 <h3>Analysis of the Effects of Triplen Harmonics in a Delta - Delta Circuit</h3>
 <p>If we were to reconfigure the system into a &Delta;-&Delta; arrangement, (Figure below) that should guarantee that each load component receives non-harmonic voltage, since each load phase would be directly connected in parallel with each source phase.</p>
 <p>The complete lack of any neutral wires or &ldquo;center points&rdquo; in a &Delta;-&Delta; system prevents strange voltages or additive currents from occurring.</p>
 <p>It would seem to be the ideal solution. Let&rsquo;s simulate and observe, analyzing line current, load phase voltage, and source phase current. See SPICE listing: &ldquo;Delta-Delta source/load with harmonics&rdquo;, &ldquo;Fourier analysis: Fourier components of transient response v(0,6)&rdquo;, and &ldquo;Fourier components of transient response v(2,1)&rdquo;.</p>
-<p><img src=&quot;/uploads/articles/delta-delta-source-load-with-harmonics.jpg&quot; /></p>
+<a target='_blank' href='../images/64-21.jpg'><img class='clImageThumb' src='../images/64-21.jpg'></a><br>
 <p><em>Delta-Delta source/load with harmonics.</em></p>
 
 <pre><br>
@@ -270,7 +273,7 @@ Fourier components of transient response v(2,1)  &#10;dc component =  -1.923E-12
 <p>Note the directions that the arrows of the current sources within the load phases are pointing, and think about what would happen if the 3rd and 9th harmonic sources were DC sources instead.</p>
 <p>What we would have is currently <em>circulating within the loop formed by the &Delta;-connected phases</em>. This is where the triplen harmonic currents have gone: they stay within the &Delta; of the load, never reaching the line conductors or the windings of the source.</p>
 <p>These results may be graphically summarized as such in the figure below.</p>
-<p><img src=&quot;/uploads/articles/load-phases-receive-undistorted-sine-wave-voltages.jpg&quot; /></p>
+<a target='_blank' href='../images/64-22.jpg'><img class='clImageThumb' src='../images/64-22.jpg'></a><br>
 <p><em>&Delta;-&Delta; source/load: Load phases receive undistorted sine wave voltages. Triplen currents are confined to circulate within load phases. Non-triplen currents appear in line conductors and in source phase windings.</em></p>
 <p>This is a major benefit of the &Delta;-&Delta; system configuration: triplen harmonic currents remain confined in whatever set of components create them and do not &ldquo;spread&rdquo; to other parts of the system.</p>
 <p><strong>REVIEW:</strong></p>

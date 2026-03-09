@@ -1,3 +1,5 @@
+###### 10. Polyphase AC Circuits
+
 # Three-phase Transformer Circuits
 <p>Since three-phase is used so often for power distribution systems, it makes sense that we would need three-phase transformers to be able to step voltages up or down.</p>
 <p>This is only partially true, as regular single-phase transformers can be ganged together to transform power between two three-phase systems in a variety of configurations, eliminating the requirement for a special three-phase transformer.</p>
@@ -5,7 +7,7 @@
 ## Three-Phase Transformer Windings and Connections
 <p>A three-phase transformer is made of three sets of primary and secondary windings, each set wound around one leg of an iron core assembly. Essentially it looks like three single-phase transformers sharing a joined core as in Figure below.</p>
 
-<p><img src="/uploads/articles/three-phase-transformer-core.jpg" /></p>
+^[63-01.webp]
 <p><em>Three phase transformer core has three sets of windings.</em></p>
 
 <p>Those sets of primary and secondary windings will be connected in either &Delta; or Y configurations to form a complete unit. The various combinations of ways that these windings can be connected together it will be the focus of this section.</p>
@@ -23,18 +25,18 @@
 <p>Probably the most important aspect of connecting three sets of primary and secondary windings together to form a three-phase transformer bank is paying attention to proper winding phasing (the dots used to denote &ldquo;polarity&rdquo; of windings).</p>
 <p>Remember the proper phase relationships between the phase windings of &Delta; and Y: (Figure below)</p>
 
-<p><img src="/uploads/articles/phase-windings-relationship.jpg" /></p>
+^[63-02.webp]
 <p><em>(Y) The center point of the &ldquo;Y&rdquo; must tie either all the &ldquo;-&rdquo; or all the &ldquo;+&rdquo; winding points together. (&Delta;) The winding polarities must stack together in a complementary manner ( + to -).</em></p>
 
 <p>Getting this phasing correct when the windings aren&rsquo;t shown in regular Y or &Delta; configuration can be tricky. Let me illustrate, starting with the figure below.</p>
 
-<p><img src="/uploads/articles/phase-wiring-for-transformer-example-1.png" /></p>
+^[63-03.webp]
 <p><em>Inputs A<sub>1</sub>, B<sub>1</sub>, C<sub>1</sub> may be wired either &ldquo;&Delta;&rdquo; or &ldquo;Y&rdquo;, as may outputs A<sub>2</sub>, B<sub>2</sub>, C<sub>2</sub>.</em></p>
 
 ### Phase Wiring for &ldquo;Y-Y&rdquo; Transformer
 <p>Three individual transformers are to be connected together to transform power from one three-phase system to another. First, I&rsquo;ll show the wiring connections for a Y-Y configuration:</p>
 
-<p><img src="/uploads/articles/phase-wiring-for-transformer-example2.jpg" /></p>
+^[63-04.webp]
 <p><em>Phase wiring for &ldquo;Y-Y&rdquo; transformer.</em></p>
 
 <p>Note in Figure above how all the winding ends marked with dots are connected to their respective phases A, B, and C, while the non-dot ends are connected together to form the centers of each &ldquo;Y&rdquo;.</p>
@@ -42,7 +44,7 @@
 ### Phase Wiring for &ldquo;Y-&Delta;&rdquo; Transformer
 <p>Now, we&rsquo;ll take a look at a Y-&Delta; configuration:</p>
 
-<p><img src="/uploads/articles/phase-wiring-for-transformer-example3.jpg" /></p>
+^[63-05.webp]
 <p><em>Phase wiring for &ldquo;Y-&Delta;&rdquo; transformer.</em></p>
 
 <p>Note how the secondary windings (bottom set, Figure above) are connected in a chain, the &ldquo;dot&rdquo; side of one winding connected to the &ldquo;non-dot&rdquo; side of the next, forming the &Delta; loop.</p>
@@ -50,21 +52,21 @@
 ### Phase Wiring for &ldquo;&Delta;-Y&rdquo; Transformer
 <p>Now, let&rsquo;s examine a &Delta;-Y system in the figure below.</p>
 
-<p><img src="/uploads/articles/phase-wiring-for-transformer-example4.jpg" /></p>
+^[63-06.webp]
 <p><em>Phase wiring for &ldquo;&Delta;-Y&rdquo; transformer.</em></p>
 
 <p>Such a configuration (Figure above) would allow for the provision of multiple voltages (line-to-line or line-to-neutral) in the second power system, from a source power system having no neutral.</p>
 ### Phase Wiring for &ldquo;&Delta;-&Delta;&rdquo; Transformer
 <p>And finally, we turn to the &Delta;-&Delta; configuration:</p>
 
-<p><img src="/uploads/articles/phase-wiring-for-transformer-example5.jpg" /></p>
+^[63-07.webp]
 <p><em>Phase wiring for &ldquo;&Delta;-&Delta;&rdquo; transformer.</em></p>
 
 <p>When there is no need for a neutral conductor in the secondary power system, &Delta;-&Delta; connection schemes (Figure above) are preferred because of the inherent reliability of the &Delta; configuration.</p>
 ### Phase Wiring for &ldquo;V&rdquo; or &ldquo;open-&Delta;&rdquo; Transformer
 <p>Considering that a &Delta; configuration can operate satisfactorily missing one winding, some power system designers choose to create a three-phase transformer bank with only two transformers, representing a &Delta;-&Delta; configuration with a missing winding in both the primary and secondary sides:</p>
 
-<p><img src="/uploads/articles/phase-wiring-for-transformer-example6.jpg" /></p>
+^[63-08.webp]
 <p><em>&ldquo;V&rdquo; or &ldquo;open-&Delta;&rdquo; provides 2-&phi; power with only two transformers.</em></p>
 
 <p>This configuration is called &ldquo;V&rdquo; or &ldquo;Open-&Delta;.&rdquo; Of course, each of the two transformers has to be oversized to handle the same amount of power as three in a standard &Delta; configuration, but the overall size, weight, and cost advantages are often worth it.</p>
@@ -76,4 +78,4 @@
 <p>This suggests the other side of each transformer&rsquo;s secondary winding is at or near ground potential, which could only be true in a Y system.</p>
 <p>The building to the left is the powerhouse, where the generators and turbines are housed. On the right, the sloping concrete wall is the downstream face of the dam:</p>
 
-<p><img src="/uploads/articles/grand-coulee-hydroelectric-dam.jpg" /></p>
+^[63-09.webp]

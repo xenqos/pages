@@ -1,3 +1,5 @@
+###### 14. Transmission Lines
+
 # &#8220;Long&#8217;&#8217; and &#8220;Short&#8217;&#8217; Transmission Lines
 <p>In DC and low-frequency AC circuits, the characteristic impedance of parallel wires is usually ignored. This includes the use of coaxial cables in instrument circuits, often employed to protect weak voltage signals from being corrupted by induced &ldquo;noise&rdquo; caused by stray electric and magnetic fields.</p>
 <p>This is due to the relatively short timespans in which reflections take place in the line, as compared to the period of the waveforms or pulses of the significant signals in the circuit.</p>
@@ -15,7 +17,7 @@
 <p>But even if we used the coaxial cable&rsquo;s velocity factor from the last example (0.66), the distance is still a very long 2046 miles! Whatever distance we calculate for a given frequency is called the <em>wavelength</em> of the signal.</p>
 <p>A simple formula for calculating wavelength is as follows:</p>
 
-<p><img src="/uploads/articles/formula-for-calculating-wavelength.png" /></p>
+^[92-01.webp]
 
 <p>The lowercase Greek letter &ldquo;lambda&rdquo; (&lambda;) represents wavelength, in whatever unit of length used in the velocity figure (if miles per second, then wavelength in miles; if meters per second, then wavelength in meters).</p>
 <p>Velocity of propagation is usually the speed of light when calculating signal wavelength in open air or in a vacuum, but will be less if the transmission line has a velocity factor less than 1.</p>

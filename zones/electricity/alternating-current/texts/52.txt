@@ -1,9 +1,11 @@
+###### 09. Transformers
+
 # Electrical Isolation
 ## SPICE analysis of Electrical Isolation
 <p>Aside from the ability to easily convert between different levels of voltage and current in AC and DC circuits, transformers also provide an extremely useful feature called <em>isolation</em>, which is the ability to couple one circuit to another without the use of direct wire connections.</p>
 <p>We can demonstrate an application of this effect with another SPICE simulation: this time showing &ldquo;ground&rdquo; connections for the two circuits, imposing a high DC voltage between one circuit and ground through the use of an additional voltage source:</p>
 
-<p><img src="/uploads/articles/spice-simulation.jpg" /></p>
+^[52-01.webp]
 <p><em>Transformer isolates 10 Vac at V1 from 250 VDC at V2.</em></p>
 
 <pre>
@@ -16,7 +18,7 @@ DC voltages referenced to ground (node 0):&#10;(1)    0.0000    (2)    0.0000   
 <p>For the record, it does not matter that the common-mode voltage is DC, either. It could be AC, even at a different frequency, and the transformer would isolate it from the primary circuit all the same.</p>
 <p>There are applications where electrical isolation is needed between two AC circuit without any transformation of voltage or current levels. In these instances, Transformers called <em>isolation transformers</em> having 1:1 transformation ratios are used. A benchtop isolation transformer is shown in the Figure below.</p>
 
-<p><img src="/uploads/articles/isolation-transformer.jpg" /></p>
+^[52-02.webp]
 <p><em>Isolation transformer isolates power out from the power line.</em></p>
 
 <p><strong>REVIEW:</strong></p>

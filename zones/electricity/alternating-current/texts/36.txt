@@ -1,14 +1,16 @@
+###### 06. Resonance
+
 # Resonance in Series-Parallel Circuits
 <p>In simple reactive circuits with little or no resistance, the effects of radically altered impedance will manifest at the resonance frequency predicted by the equation given earlier. In a parallel (tank) LC circuit, this means infinite impedance at resonance. In a series LC circuit, it means zero impedance at resonance:</p>
 
-<p><img src="/uploads/articles/impedance-resonance-formula.jpg" /></p>
+^[36-01.webp]
 
 <p>However, as soon as significant levels of resistance are introduced into most LC circuits, this simple calculation for resonance becomes invalid.</p>
 <p>On this page, we&rsquo;ll take a look at several LC circuits with added resistance, using the same values for capacitance and inductance as before: 10 &micro;F and 100 mH, respectively.</p>
 ## Calculating the Resonant Frequency of a High-Resistance Circuit
 <p>According to our simple equation above, the resonant frequency should be 159.155 Hz. Watch, though, where current reaches maximum or minimum in the following SPICE analyses:</p>
 
-<p><img src="/uploads/articles/parallel-lc-circuit-with-resistance.jpg" /></p>
+^[36-02.webp]
 <p><em>Parallel LC circuit with resistance in series with L.</em></p>
 
 <pre>
@@ -16,13 +18,13 @@ resonant circuit &#10; v1 1 0 ac 1 sin &#10; c1 1 0 10u &#10; r1 1 2 100 &#10; l
 
 <p><em>Results:</em></p>
 
-<p><img src="/uploads/articles/parallel-lc-circuit-with-resistance-result.jpg" /></p>
+^[36-03.webp]
 <p><em>Resistance in series with L produces minimum current at 136.8 Hz instead of calculated 159.2 Hz</em></p>
 
 <pre>
 Minimum current at 136.8 Hz instead of 159.2 Hz!</pre>
 
-<p><img src="/uploads/articles/parallel-lc-with-resistance-in-serieis.jpg" /></p>
+^[36-04.webp]
 <p><em>Parallel LC with resistance in serieis with C.</em></p>
 
 <p>Here, an extra resistor (Rbogus) is necessary to prevent SPICE from encountering trouble in analysis. SPICE can&rsquo;t handle an inductor connected directly in parallel with any voltage source or any other inductor, so the addition of a series resistor is necessary to &ldquo;break up&rdquo; the voltage source/inductor loop that would otherwise be formed.</p>
@@ -35,14 +37,14 @@ Minimum current at roughly 180 Hz instead of 159.2 Hz!</pre>
 
 <p><em>Results:</em></p>
 
-<p><img src="/uploads/articles/resistance-in-series-with-c-shifts.jpg" /></p>
+^[36-05.webp]
 <p><em>Resistance in series with C shifts minimum current from calculated 159.2 Hz to roughly 180 Hz.</em></p>
 
 ## Series LC Circuits
 <p>Switching our attention to series LC circuits, we experiment with placing significant resistances in parallel with either L or C. In the following series circuit examples, a 1 &Omega; resistor (R1) is placed in series with the inductor and capacitor to limit total current at resonance.</p>
 <p>The &ldquo;extra&rdquo; resistance inserted to influence resonant frequency effects is the 100 &Omega; resistor, R2. The results are shown in the figure below.</p>
 
-<p><img src="/uploads/articles/series-lc-resonant-circuit-with-resistance-in-parallel-with-l.jpg" /></p>
+^[36-06.webp]
 <p><em>Series LC resonant circuit with resistance in parallel with L.</em></p>
 
 <pre>
@@ -52,12 +54,12 @@ Maximum current at roughly 178.9 Hz instead of 159.2 Hz!</pre>
 
 <p><em>Results:</em></p>
 
-<p><img src="/uploads/articles/series-lc-resonant-circuit-with-resistance-in-parallel-with-l-results.jpg" /></p>
+^[36-07.webp]
 <p><em>Series resonant circuit with resistance in parallel with L shifts maximum current from 159.2 Hz to roughly 180 Hz.</em></p>
 
 <p>And finally, a series LC circuit with the significant resistance in parallel with the capacitor The shifted resonance is shown below.</p>
 
-<p><img src="/uploads/articles/series-lc-resonant-circuit-with-resistance-in-parallel-with-c.jpg" /></p>
+^[36-08.webp]
 <p><em>Series LC resonant circuit with resistance in parallel with C.</em></p>
 
 <pre>
@@ -67,7 +69,7 @@ Maximum current at 136.8 Hz instead of 159.2 Hz!</pre>
 
 <p><em>Results:</em></p>
 
-<p><img src="/uploads/articles/series-lc-resonant-circuit-with-resistance-in-parallel-with-c-results.jpg" /></p>
+^[36-09.webp]
 <p><em>Resistance in parallel with C in series resonant circuit shifts current maximum from calculated 159.2 Hz to about 136.8 Hz.</em></p>
 
 ## Antiresonance in LC Circuits
@@ -95,7 +97,7 @@ Maximum current at 136.8 Hz instead of 159.2 Hz!</pre>
 ### RLC Circuits
 <p>One notable exception to the rule of circuit resistance causing a resonant frequency shift is the case of series resistor-inductor-capacitor (&ldquo;RLC&rdquo;) circuits. So long as <em>all</em> components are connected in series with each other, the resonant frequency of the circuit will be unaffected by the resistance. The resulting plot is shown below.</p>
 
-<p><img src="/uploads/articles/series-lc-with-resistance-in-series.jpg" /></p>
+^[36-10.webp]
 <p><em>Series LC with resistance in series.</em></p>
 
 <pre>
@@ -105,7 +107,7 @@ Maximum current at 159.2 Hz once again!</pre>
 
 <p><em>Results:</em></p>
 
-<p><img src="/uploads/articles/series-lc-with-resistance-in-series-result.jpg" /></p>
+^[36-11.webp]
 <p><em>Resistance in series resonant circuit leaves current maximum at calculated 159.2 Hz, broadening the curve.</em></p>
 
 <p>Note that the peak of the current graph has not changed from the earlier series LC circuit (the one with the 1 &Omega; token resistance in it), even though the resistance is now 100 times greater. The only thing that has changed is the &ldquo;sharpness&rdquo; of the curve.</p>
@@ -116,13 +118,13 @@ Maximum current at 159.2 Hz once again!</pre>
 <p>Energy lost through resistance (or inductor core losses or radiated electromagnetic waves or . . .) in a tank circuit will cause the oscillations to decay in amplitude until they are no more. If enough energy losses are present in a tank circuit, it will fail to resonate at all.</p>
 <p>Antiresonance&rsquo;s dampening effect is more than just a curiosity: it can be used quite effectively to eliminate <em>unwanted</em> oscillations in circuits containing stray inductances and/or capacitances, as almost all circuits do. Take note of the following L/R time delay circuit: (Figure below)</p>
 
-<p><img src="/uploads/articles/lr-time-delay-circuit.jpg" /></p>
+^[36-12.webp]
 <p><em>L/R time delay circuit</em></p>
 
 <p>The idea of this circuit is simple: to &ldquo;charge&rdquo; the inductor when the switch is closed. The rate of inductor charging will be set by the ratio L/R, which is the time constant of the circuit in seconds.</p>
 <p>However, if you were to build such a circuit, you might find unexpected oscillations (AC) of voltage across the inductor when the switch is closed. (Figure below) Why is this? There&rsquo;s no capacitor in the circuit, so how can we have resonant oscillation with just an inductor, resistor, and battery?</p>
 
-<p><img src="/uploads/articles/inductor-ringing-due-to-resonance.jpg" /></p>
+^[36-13.webp]
 <p><em>Inductor ringing due to resonance with stray capacitance.</em></p>
 
 <p>All inductors contain a certain amount of stray capacitance due to turn-to-turn and turn-to-core insulation gaps. Also, the placement of circuit conductors may create stray capacitance. While clean circuit layout is important in eliminating much of this stray capacitance, there will always be some that you cannot eliminate.</p>

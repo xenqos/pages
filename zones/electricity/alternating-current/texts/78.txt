@@ -1,3 +1,5 @@
+###### 13. AC Motors
+
 # Synchronous Condenser
 <p>Synchronous motors load the power line with a leading power factor. This is often useful in canceling out the more commonly encountered lagging power factor caused by induction motors and other inductive loads.</p>
 <p>Originally, large industrial synchronous motors came into wide use because of this ability to correct the lagging power factor of induction motors.</p>
@@ -13,6 +15,6 @@
 <p>The ability of synchronous condensers to absorb or produce reactive power on a transient basis stabilizes the power grid against short circuits and other transient fault conditions. Transient sags and dips of milliseconds duration are stabilized.</p>
 <p>This supplements longer response times of quick-acting voltage regulation and excitation of generating equipment. The synchronous condenser aids voltage regulation by drawing leading current when the line voltage sags, which increases generator excitation thereby restoring line voltage. A capacitor bank does not have this ability.</p>
 
-<p><img src="/uploads/articles/synchronous-condenser-improves-power-line-voltage-regulation.jpg" /></p>
+^[78-01.webp]
 <p><em>Synchronous condenser improves power line voltage regulation</em></p>
 

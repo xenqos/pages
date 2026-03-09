@@ -1,9 +1,11 @@
+###### 03. Reactance and Impedance—Inductive
+
 # What Is the Skin Effect?
 ## The Skin Depth of Copper in Electrical Engineering
 <p>As previously mentioned, the skin effect is where alternating current tends to avoid travel through the center of a solid conductor, limiting itself to conduction near the surface.</p>
 <p>This effectively limits the cross-sectional conductor area available to carry alternating electron flow, increasing the resistance of that conductor above what it would normally be for direct current:</p>
 
-<p><img src="/uploads/articles/skin-depth-decreases-with-increasing-frequency.jpg" /></p>
+^[20-01.webp]
 <p><em>Skin effect: skin depth decreases with increasing frequency.</em></p>
 
 <p>The electrical resistance of the conductor with all its cross-sectional area in use is known as the &ldquo;DC resistance.&rdquo; The &ldquo;AC resistance&rdquo; of the same conductor refers to a higher figure resulting from the skin effect.</p>
@@ -13,14 +15,14 @@
 <p>Most antenna structures and RF power conductors are made of hollow metal tubes for this reason.</p>
 <p>In the following photograph, you can see some large inductors used in a 50 kW radio transmitting circuit. The inductors are hollow copper tubes coated with silver, for excellent conductivity at the &ldquo;skin&rdquo; of the tube:</p>
 
-<p><img src="/uploads/articles/high-power-inductors.jpg" /></p>
+^[20-02.webp]
 <p><em>High power inductors formed from hollow tubes.</em></p>
 
 ## How Wire Gauge Affects Frequency and Effective Resistance
 <p>The degree to which frequency affects the effective resistance of a solid wire conductor is impacted by the gauge of that wire. As a rule, large-gauge wires exhibit a more pronounced skin effect (change in resistance from DC) than small-gauge wires at any given frequency.</p>
 <p>The equation for approximating skin effect at high frequencies (greater than 1 MHz) is as follows:</p>
 
-<p><img src="/uploads/articles/skin-effect-equation1.jpg" /></p>
+^[20-03.webp]
 
 <p>The table below gives approximate values of &ldquo;k&rdquo; factor for various round wire sizes. <em>&ldquo;k&rdquo; factor for various AWG wire sizes.</em></p>
 
@@ -73,4 +75,4 @@
 
 <p>For example, a length of number 10-gauge wire with a DC end-to-end resistance of 25 &Omega; would have an AC (effective) resistance of 2.182 k&Omega; at a frequency of 10 MHz:</p>
 
-<p><img src="/uploads/articles/skin-effect-equation2.jpg" /></p>
+^[20-04.webp]

@@ -1,4 +1,7 @@
+###### 11. Power Factor
+
 # True, Reactive, and Apparent Power
+
 ## Reactive Power
 <p>We know that reactive loads such as inductors and capacitors dissipate zero power, yet the fact that they drop voltage and draw current gives the deceptive impression that they actually <em>do</em> dissipate power.</p>
 <p>This &ldquo;phantom power&rdquo; is called <em>reactive power</em>, and it is measured in a unit called <em>Volt-Amps-Reactive</em> (VAR), rather than watts.</p>
@@ -29,7 +32,7 @@
 <p>Examine the following circuits and see how these three types of power interrelate for: a purely resistive load, a purely reactive load, and a resistive/reactive load.</p>
 
 ### Resistive Load Only
-<p><img src="https://www.allaboutcircuits.com/uploads/articles/true-reactive-apparent-power-for-a-purely-resistive-load-2.png" /></p>
+^[67-01.webp]
 <p><em>True power, reactive power, and apparent power for a purely resistive load.</em></p>
 
 <p>$$\text{True Power} = P = I^2R = 240 \text{ W}$$</p>
@@ -37,7 +40,7 @@
 <p>$$\text{Apparent Power} = S = I^2Z = 240 \text {VA}$$</p>
 
 ### Reactive Load Only
-<p><img src="https://www.allaboutcircuits.com/uploads/articles/true-reactive-apparent-power-for-a-purely-reactive-load-2.png" /></p>
+^[67-02.webp]
 <p><em>True power, reactive power, and apparent power for a purely reactive load.</em></p>
 
 
@@ -46,7 +49,7 @@
 <p>$$\text{Apparent Power} = S = I^2Z = 238.73 \text {VA}$$</p>
 
 ### Resistive/Reactive Load
-<p><img src="https://www.allaboutcircuits.com/uploads/articles/true-reactive-apparent-power-for-a-purely-resistive-reactive-load-2.png" /></p>
+^[67-03.webp]
 <p><em>True power, reactive power, and apparent power for a resistive/reactive load.</em></p>
 
 <p>$$\text{True Power} = P = I^2R = 119.365 \text{ W}$$</p>
@@ -56,7 +59,7 @@
 ## The Power Triangle
 <p>These three types of power&mdash;true, reactive, and apparent&mdash;relate to one another in trigonometric form. We call this the <em>power triangle</em>: (Figure below).</p>
 
-<p><img src="/uploads/articles/the-power-triangle.png" /></p>
+^[67-04.webp]
 <p><em>Power triangle relating apparent power to true power and reactive power. </em></p>
 
 <p>Using the laws of trigonometry, we can solve for the length of any side (amount of any type of power), given the lengths of the other two sides, or the length of one side and an angle.</p>

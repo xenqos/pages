@@ -31,27 +31,29 @@
 </div>
 <div id='idContent'>
 
+<h6>08. Filters</h6>
+
 <h1>Band-pass Filters</h1>
 <h2>How to Create Band-pass Filter</h2>
 <p>There are applications where a particular band, or spread, or frequencies need to be filtered from a wider range of mixed signals.&nbsp;Filter circuits can be designed to accomplish this task by combining the properties of low-pass and high-pass into a single filter. The result is called a <em>band-pass</em> filter.</p>
 <p>Creating a bandpass filter from a low-pass and high-pass filter can be illustrated using block diagrams:</p>
-<p><img src=&quot;/uploads/articles/band-pass-filter-diagram.png&quot; /></p>
+<a target='_blank' href='../images/46-01.png'><img class='clImageThumb' src='../images/46-01.png'></a><br>
 <p><em>System level block diagram of a band-pass filter.</em></p>
 
 <h2>Design a Band-pass Filter Using Capacitors</h2>
 <p>What emerges from the&nbsp;series combination of these two filter circuits is a circuit that will only allow passage of those frequencies that are neither too high nor too low. Using real components, here is what a typical schematic might look like. The response of the band-pass filter is shown in.<strong> </strong></p>
-<p><img src=&quot;/uploads/articles/capacitive-band-pass-filter-circuit.png&quot; /></p>
+<a target='_blank' href='../images/46-02.png'><img class='clImageThumb' src='../images/46-02.png'></a><br>
 <p><em>Capacitive band-pass filter.</em></p>
 
 <pre><br>
 &#10;capacitive bandpass filter &#10; v1 1 0 ac 1 sin &#10; r1 1 2 200 &#10; c1 2 0 2.5u &#10; c2 2 3 1u &#10; rload 3 0 1k &#10; .ac lin 20 100 500 &#10; .plot ac v(3) &#10; .end &#10;</pre>
 
-<p><img src=&quot;/uploads/articles/capacitive-bandpass-filter-peaks-graph.png&quot; /></p>
+<a target='_blank' href='../images/46-03.png'><img class='clImageThumb' src='../images/46-03.png'></a><br>
 <p><em>The response of a capacitive bandpass filter peaks within a narrow frequency range.</em></p>
 
 <h2>Design a Band-pass Filter Using Inductors</h2>
 <p>Band-pass filters can also be constructed using&nbsp;inductors, but as mentioned before, the reactive &ldquo;purity&rdquo; of capacitors gives them a design advantage. If we were to design a bandpass filter using inductors, it might look something like:</p>
-<p><img src=&quot;/uploads/articles/inductive-band-pass-filter-circuit.png&quot; /></p>
+<a target='_blank' href='../images/46-04.png'><img class='clImageThumb' src='../images/46-04.png'></a><br>
 <p><em>Inductive band-pass filter.</em></p>
 <p>The fact that the high-pass section comes &ldquo;first&rdquo; in this design instead of the low-pass section makes no difference in its overall operation. It will still filter out all frequencies too high or too low.</p>
 <p>While the general idea of combining low-pass and high-pass filters together to make a bandpass filter is sound, it is not without certain limitations.</p>

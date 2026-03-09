@@ -1,3 +1,5 @@
+###### 13. AC Motors
+
 # Stepper Motors
 ## Stepper Motor vs Servo Motor
 <p>A <em>stepper motor</em> is a &ldquo;digital&rdquo; version of the electric motor. The rotor moves in discrete steps as commanded, rather than rotating continuously like a conventional motor. When stopped but energized, a <em>stepper</em> (short for stepper motor) holds its load steady with a <em>holding torque</em>.</p>
@@ -5,7 +7,7 @@
 <p>Application-wise, the predecessor of the stepper motor was the servo motor. Today this is a higher cost solution to high-performance motion control applications. The expense and complexity of a servomotor are due to the additional system components: position sensor and error amplifier) It is still the way to position heavy loads beyond the grasp of lower power steppers.</p>
 <p>High acceleration or unusually high accuracy still requires a servo motor. Otherwise, the default is the stepper due to simple drive electronics, good accuracy, good torque, moderate speed, and low cost.</p>
 
-<p><img src="/uploads/articles/stepper-motor-vs-servo-motor.jpg" /></p>
+^[80-01.webp]
 <p><em>Stepper motor vs servo motor</em></p>
 
 <p>A stepper motor positions the read-write heads in a floppy drive. They were once used for the same purpose in hard drives. However, the high speed and accuracy required of modern hard drive head positioning requires the use of a linear servomotor (voice coil).</p>
@@ -14,7 +16,7 @@
 <p>Drive waveforms of <em>bipolar</em> (&plusmn;) square waves of 2-24V are more common these days. The bipolar magnetic fields may also be generated from <em>unipolar</em> (one polarity) voltages applied to alternate ends of a center-tapped winding (figure below).</p>
 <p>In other words, DC can be switched to the motor so that it sees AC. As the windings are energized in sequence, the rotor synchronizes with the consequent stator magnetic field. Thus, we treat stepper motors as a class of AC synchronous motor.</p>
 
-<p><img src="/uploads/articles/class-of-ac-synchronous-motor.jpg" /></p>
+^[80-02.webp]
 <p><em>A unipolar drive of a center-tapped coil at (b), emulates AC current in single-coil at (a)</em></p>
 
 ## Characteristics
@@ -26,7 +28,7 @@
 <p>The torque available is a function of motor speed, load inertia, load torque, and drive electronics as illustrated on the <em>speed vs torque curve</em> below. An energized, holding stepper has a relatively high <em>holding torque</em> rating. There is less torque available for a running motor, decreasing to zero at some high speed.</p>
 <p>This speed is frequently not attainable due to the mechanical resonance of the motor load combination.</p>
 
-<p><img src="/uploads/articles/stepper-speed-characteristics.jpg" /></p>
+^[80-03.webp]
 <p><em>Stepper speed characteristics</em></p>
 
 <p>Stepper motors move one step at a time, the <em>step angle</em> when the drive waveforms are changed. The step angle is related to motor construction details: number of coils, number of poles, number of teeth. It can be from 90<strong>&deg;</strong> to 0.75<strong>&deg;</strong>, corresponding to 4 to 500 steps per revolution.</p>
@@ -41,7 +43,7 @@
 <p>A <em>variable reluctance stepper motor</em> relies upon magnetic flux seeking the lowest reluctance path through a magnetic circuit. This means that an irregularly shaped soft magnetic rotor will move to complete a magnetic circuit, minimizing the length of any high reluctance air gap.</p>
 <p>The stator typically has three windings distributed between pole pairs, the rotor four salient poles, yielding a 30<strong>&deg;</strong> step angle. A de-energized stepper with no detent torque when hand rotated is identifiable as a variable reluctance type stepper.</p>
 
-<p><img src="/uploads/articles/three-phase-and-four-phase-variable-reluctance-stepper-motors.jpg" /></p>
+^[80-04.webp]
 <p><em>Three-phase and four-phase variable reluctance stepper motors</em></p>
 
 <p>The drive waveforms for the 3-&phi; stepper can be seen in the &ldquo;Reluctance motor&rdquo; section. The drive for a 4-&phi; stepper is shown in Figure below. Sequentially switching the stator phases produces a rotating magnetic field which the rotor follows.</p>
@@ -50,7 +52,7 @@
 <pre>
 &Theta;S = 360o/NS &Theta;R = 360o/NR &Theta;ST = &Theta;R - &Theta;S where: &Theta;S = stator angle, &Theta;R = Rotor angle, &Theta;ST = step angle NS = number stator poles, NP = number rotor poles </pre>
 
-<p><img src="/uploads/articles/stepping-sequence-for-variable-reluctance-stepper.jpg" /></p>
+^[80-05.webp]
 <p><em>Stepping sequence for variable reluctance stepper</em></p>
 
 <p>In the figure above, moving from &phi;1 to &phi;2, etc., the stator magnetic field rotates clockwise. The rotor moves counterclockwise (CCW). Note what does not happen! The dotted rotor tooth does not move to the next stator tooth. Instead, the &phi;2 stator field attracts a different tooth in moving the rotor CCW, which is a smaller angle (15<strong>&deg;</strong>) than the stator angle of 30<strong>&deg;</strong>.</p>
@@ -61,12 +63,12 @@
 <p>The controller could be a microprocessor or a specialized integrated circuit. The driver is not a linear amplifier, but a simple on-off switch capable of high enough current to energize the stepper. In principle, the driver could be a relay or even a toggle switch for each phase. In practice, the driver is either discrete transistor switches or an integrated circuit.</p>
 <p>Both driver and controller may be combined into a single integrated circuit accepting a direct command and step pulse. It outputs current to the proper phases in sequence.</p>
 
-<p><img src="/uploads/articles/variable-reluctance-stepper-motor.jpg" /></p>
+^[80-06.webp]
 <p><em>Variable reluctance stepper motor</em></p>
 
 <p>You can disassemble a reluctance stepper to view the internal components. The internal construction of a variable reluctance stepper motor is shown in the figure above. The rotor has protruding poles so that they may be attracted to the rotating stator field as it is switched. An actual motor is much longer than our simplified illustration.</p>
 
-<p><img src="/uploads/articles/variable-reluctance-stepper-drives-lead-screw.jpg" /></p>
+^[80-07.webp]
 <p><em>Variable reluctance stepper drives lead screw</em></p>
 
 <p>The shaft is frequently fitted with a drive screw (figure above). This may move the heads of a floppy drive upon command by the floppy drive controller.</p>
@@ -89,24 +91,24 @@
 <p>The<em> bipolar</em> drive is square waves alternating between (+) and (-) polarities, say, +2.5 V to -2.5 V. <em>Unipolar</em> drive supplies a (+) and (-) alternating magnetic flux to the coils developed from a pair of positive square waves applied to opposite ends of a center-tapped coil. The timing of the bipolar or unipolar wave is wave drive, full step, or half step.</p>
 ### Wave Drive
 
-<p><img src="/uploads/articles/pm-wave-drive-sequence.jpg" /></p>
+^[80-08.webp]
 <p><em>PM wave drive sequence (a) &phi;1+ , (b) &phi;2+ , (c) &phi;1- , (d) &phi;2-</em></p>
 
 <p>Conceptually, the simplest drive is <em>wave drive</em>. The rotation sequence left to right is positive &phi;-1 points rotor north pole up, (+) &phi;-2 points rotor north right, negative &phi;-1 attracts rotor north down, (-) &phi;-2 points rotor left. The wave drive waveforms below show that only one coil is energized at a time. While simple, this does not produce as much torque as other drive techniques.</p>
 
-<p><img src="/uploads/articles/bipolar-wave-drive.jpg" /></p>
+^[80-09.webp]
 <p><em>Waveforms: bipolar wave drive</em></p>
 
 <p>The waveforms (figure above) are bipolar because both polarities, (+) and (-) drive the stepper. The coil magnetic field reverses because the polarity of the drive current reverses.</p>
 
-<p><img src="/uploads/articles/unipolar-wave-drive.jpg" /></p>
+^[80-10.webp]
 <p><em>Waveforms: unipolar wave drive</em></p>
 
 <p>The waveforms (figure above) are unipolar because only one polarity is required. This simplifies the drive electronics but requires twice as many drivers. There are twice as many waveforms because a pair of (+) waves is required to produce an alternating magnetic field by application to opposite ends of a center-tapped coil.</p>
 <p>The motor requires alternating magnetic fields. These may be produced by either unipolar or bipolar waves. However, motor coils must have center taps for the unipolar drive.</p>
 <p>Permanent magnet stepper motors are manufactured with various lead-wire configurations.</p>
 
-<p><img src="/uploads/articles/stepper-motor-wiring-diagrams.jpg" /></p>
+^[80-11.webp]
 <p><em>Stepper motor wiring diagrams</em></p>
 
 <ul>
@@ -120,7 +122,7 @@
 ### Full Step Drive
 <p><em>Full step</em> drive provides more torque than wave drive because both coils are energized at the same time. This attracts the rotor poles midway between the two field poles. (Figure below)</p>
 
-<p><img src="/uploads/articles/full-step-bipolar-drive.jpg" /></p>
+^[80-12.webp]
 <p><em>Full step, bipolar drive</em></p>
 
 <p>Full step bipolar drive, as shown above, has the same step angle as wave drive. Unipolar drive (not shown) would require a pair of unipolar waveforms for each of the above bipolar waveforms applied to the ends of a center-tapped winding. The unipolar drive uses a less complex, less expensive driver circuit. The additional cost of the bipolar drive is justified when more torque is required.</p>
@@ -129,7 +131,7 @@
 <p>The step angle for a given stepper motor geometry is cut in half with <em>half step</em> drive. This corresponds to twice as many step pulses per revolution. (Figure below) Half stepping provides greater resolution in the positioning of the motor shaft.</p>
 <p>For example, half-stepping the motor moving the print head across the paper of an inkjet printer would double the dot density.</p>
 
-<p><img src="/uploads/articles/half-step-bipolar-drive.jpg" /></p>
+^[80-13.webp]
 <p><em>Half step, bipolar drive</em></p>
 
 <p>Half step drive is a combination of wave drive and full step drive with one winding energized, followed by both windings energized, yielding twice as many steps. The unipolar waveforms for half step drive are shown above. The rotor aligns with the field poles as for wave drive and between the poles as for full step drive.</p>
@@ -139,7 +141,7 @@
 ### Construction
 <p>The construction of a permanent magnet stepper motor is considerably different from the drawings above. It is desirable to increase the number of poles beyond that illustrated to produce a smaller step angle. It is also desirable to reduce the number of windings, or at least not increase the number of windings for ease of manufacture.</p>
 
-<p><img src="/uploads/articles/permanent-magnet-stepper-motor.jpg" /></p>
+^[80-14.webp]
 <p><em>Permanent magnet stepper motor, 24-pole can-stack construction</em></p>
 
 <p>The permanent magnet stepper only has two windings, yet has 24-poles in each of two phases. This style of construction is known as <em>can stack</em>. A phase winding is wrapped with a mild steel shell, with fingers brought to the center.</p>
@@ -148,7 +150,7 @@
 <p>Application of any of the above waveforms will rotate the permanent magnet rotor.</p>
 <p>Note that the rotor is a gray ferrite ceramic cylinder magnetized in the 24-pole pattern shown. This can be viewed with magnet viewer film or iron filings applied to a paper wrapping. Though, the colors will be green for both north and south poles with the film.</p>
 
-<p><img src="/uploads/articles/stack-permanent-magnet-stepper.jpg" /></p>
+^[80-15.webp]
 <p><em>(a) External view of can stack, (b) field offset detail</em></p>
 
 <p>Can-stack style construction of a PM stepper is distinctive and easy to identify by the stacked &ldquo;cans&rdquo; (figure above). Note the rotational offset between the two-phase sections. This is key to making the rotor follow the switching of the fields between the two phases.</p>
@@ -166,7 +168,7 @@
 <p>The stator coils are wound on alternating poles with corresponding teeth. There are typically two winding phases distributed between pole pairs. This winding may be center tapped for a unipolar drive. The center tap is achieved by a <em>bifilar winding</em>, a pair of wires wound physically in parallel but wired in series.</p>
 <p>The north-south poles of a phase swap polarity when the phase drive current is reversed. The bipolar drive is required for un-tapped windings.</p>
 
-<p><img src="/uploads/articles/hybrid-stepper-motor.jpg" /></p>
+^[80-16.webp]
 <p><em>Hybrid stepper motor</em></p>
 
 <p>Note that the 48-teeth on one rotor section are offset by half a pitch from the other. (See rotor pole detail above. This rotor tooth offset is also shown below.) Due to this offset, the rotor effectively has 96 interleaved poles of opposite polarity.</p>
@@ -178,7 +180,7 @@
 <p>The above drawing is representative of an actual hybrid stepper motor. However, we provide a simplified pictorial and schematic representation to illustrate details not obvious above. Note the reduced number of coils and teeth in rotor and stator for simplicity.</p>
 <p>In the next two figures, we attempt to illustrate the quarter tooth rotation produced by the two stator phases offset by a quarter tooth, and the rotor half tooth offset. The quarter tooth stator offset in conjunction with drive current timing also defines the direction of rotation.</p>
 
-<p><img src="/uploads/articles/hybrid-stepper-motor-schematic-diagram.jpg" /></p>
+^[80-17.webp]
 <p><em>Hybrid stepper motor schematic diagram</em></p>
 
 ### Features of Hybrid Stepper Schematic
@@ -193,7 +195,7 @@
 <li>The &phi;-2 stator teeth are not aligned with the rotor teeth when &phi;-1 is energized. In fact, the &phi;-2 stator teeth are offset by one-quarter tooth. This will allow for rotation by that amount if &phi;-1 is de-energized and &phi;-2 energized. The polarity of &phi;-1 and drive determine the direction of rotation.</li>
 <li>&nbsp;</li>
 </ul>
-<p><img src="/uploads/articles/hybrid-stepper-motor-rotation-sequence.jpg" /></p>
+^[80-18.webp]
 <p><em>Hybrid stepper motor rotation sequence</em></p>
 
 ### Hybrid Stepper Motor Rotation
