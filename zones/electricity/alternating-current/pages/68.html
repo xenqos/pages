@@ -37,7 +37,7 @@
 <p>As was mentioned before, the angle of this &ldquo;power triangle&rdquo; graphically indicates the ratio between the amount of dissipated (or <em>consumed</em>) power and the amount of absorbed/returned power.</p>
 <p>It also happens to be the same angle as that of the circuit&rsquo;s impedance in polar form. When expressed as a fraction, this ratio between true power and apparent power is called the <em>power factor</em> for this circuit.</p>
 <p>Because true power and apparent power form the adjacent and hypotenuse sides of a right triangle, respectively, the power factor ratio is also equal to the cosine of that phase angle. Using values from the last example circuit:</p>
-<a target='_blank' href='../images/68-01.png'><img class='clImageThumb' src='../images/68-01.png'></a><br>
+<a target='_blank' href='../images/68-01.webp'><img class='clImageThumb' src='../images/68-01.webp'></a><br>
 
 <p>It should be noted that power factor, like all ratio measurements, is a <em>unitless</em> quantity.</p>
 <h2>Power Factor Values</h2>
@@ -55,20 +55,20 @@
 <p>The effect of these two opposing reactances in parallel is to bring the circuit&rsquo;s total impedance equal to its total resistance (to make the impedance phase angle equal, or at least closer, to zero).</p>
 <p>Since we know that the (uncorrected) reactive power is 119.998 VAR (inductive), we need to calculate the correct capacitor size to produce the same quantity of (capacitive) reactive power.</p>
 <p>Since this capacitor will be directly in parallel with the source (of known voltage), we&rsquo;ll use the power formula which starts from voltage and reactance:</p>
-<a target='_blank' href='../images/68-02.png'><img class='clImageThumb' src='../images/68-02.png'></a><br>
+<a target='_blank' href='../images/68-02.webp'><img class='clImageThumb' src='../images/68-02.webp'></a><br>
 
 <p>Let&rsquo;s use a rounded capacitor value of 22 &micro;F and see what happens to our circuit: (Figure below)</p>
-<a target='_blank' href='../images/68-03.png'><img class='clImageThumb' src='../images/68-03.png'></a><br>
+<a target='_blank' href='../images/68-03.webp'><img class='clImageThumb' src='../images/68-03.webp'></a><br>
 
-<a target='_blank' href='../images/68-04.png'><img class='clImageThumb' src='../images/68-04.png'></a><br>
+<a target='_blank' href='../images/68-04.webp'><img class='clImageThumb' src='../images/68-04.webp'></a><br>
 <p><em>Parallel capacitor corrects lagging power factor of inductive load. V2 and node numbers: 0, 1, 2, and 3 are SPICE related, and maybe ignored for the moment.</em></p>
 <br>
-<a target='_blank' href='../images/68-05.png'><img class='clImageThumb' src='../images/68-05.png'></a><br>
+<a target='_blank' href='../images/68-05.webp'><img class='clImageThumb' src='../images/68-05.webp'></a><br>
 
 <p>The power factor for the circuit, overall, has been substantially improved. The main current has been decreased from 1.41 amps to 994.7 milliamps, while the power dissipated at the load resistor remains unchanged at 119.365 watts. The power factor is much closer to being 1:</p>
-<a target='_blank' href='../images/68-06.png'><img class='clImageThumb' src='../images/68-06.png'></a><br>
+<a target='_blank' href='../images/68-06.webp'><img class='clImageThumb' src='../images/68-06.webp'></a><br>
 
-<a target='_blank' href='../images/68-07.png'><img class='clImageThumb' src='../images/68-07.png'></a><br>
+<a target='_blank' href='../images/68-07.webp'><img class='clImageThumb' src='../images/68-07.webp'></a><br>
 
 <p>Since the impedance angle is still a positive number, we know that the circuit, overall, is still more inductive than it is capacitive.</p>
 <p>If our power factor correction efforts had been perfectly on-target, we would have arrived at an impedance angle of exactly zero, or purely resistive.</p>
@@ -83,7 +83,7 @@ Pf&#10;.cir &#10;power factor V1 1 0 sin(0 170 60) &#10;C1 1 3 22uF v2 3 0 0 &#1
 <p>The Nutmeg plot of the various currents with respect to the applied voltage V<sub>total</sub> is shown in (Figure below). The reference is V<sub>total</sub>, to which all other measurements are compared.</p>
 <p>This is because the applied voltage, V<sub>total</sub>, appears across the parallel branches of the circuit. There is no single current common to all components.</p>
 <p>We can compare those currents to V<sub>total</sub>.</p>
-<a target='_blank' href='../images/68-08.png'><img class='clImageThumb' src='../images/68-08.png'></a><br>
+<a target='_blank' href='../images/68-08.webp'><img class='clImageThumb' src='../images/68-08.webp'></a><br>
 <p><em>Zero phase angle due to in-phase V<sub>total</sub> and I<sub>total</sub> . The lagging I<sub>L</sub> with respect to V<sub>total</sub> is corrected by a leading I<sub>C</sub> .</em></p>
 <p>Note that the total current (I<sub>total</sub>) is in phase with the applied voltage (V<sub>total</sub>), indicating a phase angle of near zero. This is no coincidence.</p>
 <p>Note that the lagging current, I<sub>L</sub> of the inductor would have caused the total current to have a lagging phase somewhere between (I<sub>total</sub>) and I<sub>L</sub>. However, the leading capacitor current, I<sub>C</sub>, compensates for the lagging inductor current.</p>

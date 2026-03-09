@@ -49,20 +49,20 @@
 <p>One very common way harmonics are generated in an AC power system is when AC is converted, or &ldquo;rectified&rdquo; into DC. This is generally done with components called <em>diodes</em>, which only allow the passage of current in one direction.</p>
 <h2>Half-wave Rectification</h2>
 <p>The simplest type of AC/DC rectification is <em>half-wave</em>, where a single diode blocks half of the AC current (over time) from passing through the load. (Figure below)</p>
-<a target='_blank' href='../images/40-01.jpg'><img class='clImageThumb' src='../images/40-01.jpg'></a><br>
+<a target='_blank' href='../images/40-01.webp'><img class='clImageThumb' src='../images/40-01.webp'></a><br>
 <p><em>Half-wave rectifier</em></p>
 
 <pre><br>
 halfwave rectifier &#10;v1 1 0 sin(0 15 60 0 0) &#10;rload 2 0 10k &#10;d1 1 2 mod1 &#10;.model mod1 d &#10;.tran .5m 17m &#10;.plot tran v(1,0) v(2,0) &#10;.four 60 v(1,0) v(2,0) &#10;.end&#10;</pre>
 
-<a target='_blank' href='../images/40-02.jpg'><img class='clImageThumb' src='../images/40-02.jpg'></a><br>
+<a target='_blank' href='../images/40-02.webp'><img class='clImageThumb' src='../images/40-02.webp'></a><br>
 <p><em>Half-wave rectifier waveforms. V(1)+0.4 shifts the sine wave input V(1) up for clarity. This is not part of the simulation.</em></p>
 <p>First, we&rsquo;ll see how SPICE analyzes the source waveform, a pure sine wave voltage: (Figure below)</p>
 
 <pre><br>
 fourier components of transient response v(1)   &#10; &#10;dc component =   8.016E-04&#10;harmonic   frequency  fourier    normalized   phase   normalized&#10;no         (hz)      component   component    (deg)   phase (deg)&#10;1        6.000E+01   1.482E+01     1.000000    -0.005       0.000&#10;2        1.200E+02   2.492E-03     0.000168  -104.347    -104.342&#10;3        1.800E+02   6.465E-04     0.000044   -86.663     -86.658&#10;4        2.400E+02   1.132E-03     0.000076   -61.324     -61.319&#10;5        3.000E+02   1.185E-03     0.000080   -70.091     -70.086&#10;6        3.600E+02   1.092E-03     0.000074   -63.607     -63.602&#10;7        4.200E+02   1.220E-03     0.000082   -56.288     -56.283&#10;8        4.800E+02   1.354E-03     0.000091   -54.669     -54.664&#10;9        5.400E+02   1.467E-03     0.000099   -52.660     -52.655&#10;</pre>
 
-<a target='_blank' href='../images/40-03.jpg'><img class='clImageThumb' src='../images/40-03.jpg'></a><br>
+<a target='_blank' href='../images/40-03.webp'><img class='clImageThumb' src='../images/40-03.webp'></a><br>
 <p><em>Fourier analysis of the sine wave input</em></p>
 <p>Notice the extremely small harmonic and DC components of this sinusoidal waveform in the table above, though, too small to show on the harmonic plot above.</p>
 <p>Ideally, there would be nothing but the fundamental frequency showing (being a perfect sine wave), but our Fourier analysis figures aren&rsquo;t perfect because SPICE doesn&rsquo;t have the luxury of sampling a waveform of infinite duration. Next, we&rsquo;ll compare this with the Fourier analysis of the half-wave &ldquo;rectified&rdquo; voltage across the load resistor: (Figure below)</p>
@@ -70,26 +70,26 @@ fourier components of transient response v(1)   &#10; &#10;dc component =   8.01
 <pre><br>
 fourier components of transient response v(2)    &#10;dc component =   4.456E+00&#10;harmonic  frequency   fourier    normalized   phase    normalized&#10;no         (hz)      component   component    (deg)    phase (deg)&#10;1        6.000E+01   7.000E+00     1.000000    -0.195       0.000&#10;2        1.200E+02   3.016E+00     0.430849   -89.765     -89.570&#10;3        1.800E+02   1.206E-01     0.017223  -168.005    -167.810&#10;4        2.400E+02   5.149E-01     0.073556   -87.295     -87.100&#10;5        3.000E+02   6.382E-02     0.009117  -152.790    -152.595&#10;6        3.600E+02   1.727E-01     0.024676   -79.362     -79.167&#10;7        4.200E+02   4.492E-02     0.006417  -132.420    -132.224&#10;8        4.800E+02   7.493E-02     0.010703   -61.479     -61.284&#10;9        5.400E+02   4.051E-02     0.005787  -115.085    -114.889&#10;</pre>
 
-<a target='_blank' href='../images/40-04.jpg'><img class='clImageThumb' src='../images/40-04.jpg'></a><br>
+<a target='_blank' href='../images/40-04.webp'><img class='clImageThumb' src='../images/40-04.webp'></a><br>
 <p><em>Fourier analysis half-wave output</em></p>
 <p>Notice the relatively large even-multiple harmonics in this analysis. By cutting out half of our AC wave, we&rsquo;ve introduced the equivalent of several higher-frequency sinusoidal (actually, cosine) waveforms into our circuit from the original, pure sine-wave.</p>
 <p>Also take note of the large DC component: 4.456 volts. Because our AC voltage waveform has been &ldquo;rectified&rdquo; (only allowed to push in one direction across the load rather than back-and-forth), it behaves a lot more like DC.</p>
 <h2>Full-wave Rectification</h2>
 <p>Another method of AC/DC conversion is called <em>full-wave</em> (Figure below), which as you may have guessed utilizes the full cycle of AC power from the source, reversing the polarity of half the AC cycle to get electrons to flow through the load the same direction all the time.</p>
 <p>I won&rsquo;t bore you with details of exactly how this is done, but we can examine the waveform (Figure below) and its harmonic analysis through SPICE:</p>
-<a target='_blank' href='../images/40-05.jpg'><img class='clImageThumb' src='../images/40-05.jpg'></a><br>
+<a target='_blank' href='../images/40-05.webp'><img class='clImageThumb' src='../images/40-05.webp'></a><br>
 <p><em>Full-wave rectifier circuit</em></p>
 
 <pre><br>
 fullwave bridge rectifier   &#10;v1 1 0 sin(0 15 60 0 0) &#10;rload 2 3 10k   &#10;d1 1 2 mod1     &#10;d2 0 2 mod1     &#10;d3 3 1 mod1     &#10;d4 3 0 mod1     &#10;.model mod1 d   &#10;.tran .5m 17m   &#10;.plot tran v(1,0) v(2,3)&#10;.four 60 v(2,3)  &#10;.end&#10;</pre>
 
-<a target='_blank' href='../images/40-06.jpg'><img class='clImageThumb' src='../images/40-06.jpg'></a><br>
+<a target='_blank' href='../images/40-06.webp'><img class='clImageThumb' src='../images/40-06.webp'></a><br>
 <p><em>Waveforms for full-wave rectifier</em></p>
 
 <pre><br>
 fourier components of transient response v(2,3)  &#10;dc component =   8.273E+00&#10;harmonic   frequency  fourier    normalized   phase   normalized&#10;no         (hz)      component   component    (deg)   phase (deg)&#10;1        6.000E+01   7.000E-02     1.000000   -93.519       0.000&#10;2        1.200E+02   5.997E+00    85.669415   -90.230       3.289&#10;3        1.800E+02   7.241E-02     1.034465   -93.787      -0.267&#10;4        2.400E+02   1.013E+00    14.465161   -92.492       1.027&#10;5        3.000E+02   7.364E-02     1.052023   -95.026      -1.507&#10;6        3.600E+02   3.337E-01     4.767350  -100.271      -6.752&#10;7        4.200E+02   7.496E-02     1.070827   -94.023      -0.504&#10;8        4.800E+02   1.404E-01     2.006043  -118.839     -25.319&#10;9        5.400E+02   7.457E-02     1.065240   -90.907       2.612&#10;</pre>
 
-<a target='_blank' href='../images/40-07.jpg'><img class='clImageThumb' src='../images/40-07.jpg'></a><br>
+<a target='_blank' href='../images/40-07.webp'><img class='clImageThumb' src='../images/40-07.webp'></a><br>
 <p><em>Fourier analysis of full-wave rectifier output</em></p>
 <p>What a difference! According to SPICE&rsquo;s Fourier transform, we have a 2nd harmonic component to this waveform that&rsquo;s over 85 times the amplitude of the original AC source frequency!</p>
 <p>The DC component of this wave shows up as being 8.273 volts (almost twice what is was for the half-wave rectifier circuit) while the second harmonic is almost 6 volts in amplitude. Notice all the other harmonics further on down the table.</p>

@@ -40,10 +40,10 @@
 <p>Voltage is an inherently <em>relative</em> quantity. When we measure a voltage, we have a choice in how we connect a voltmeter or other voltage-measuring instrument to the source of voltage, as there are two points between which the voltage exists, and two test leads on the instrument with which to make the connection.</p>
 <p>In DC circuits, we denote the polarity of voltage sources and voltage drops explicitly, using &ldquo;+&rdquo; and &ldquo;-&rdquo; symbols, and use color-coded meter test leads (red and black). If a digital voltmeter indicates a negative DC voltage, we know that its test leads are connected &ldquo;backward&rdquo; to the voltage (red lead connected to the &ldquo;-&rdquo; and black lead to the &ldquo;+&rdquo;).</p>
 <p>Batteries have their polarity designated by way of intrinsic symbology: the short-line side of a battery is always the negative (-) side and the long-line side always the positive (+): (Figure below)</p>
-<a target='_blank' href='../images/13-01.jpg'><img class='clImageThumb' src='../images/13-01.jpg'></a><br>
+<a target='_blank' href='../images/13-01.webp'><img class='clImageThumb' src='../images/13-01.webp'></a><br>
 <p><em>Conventional battery polarity.</em></p>
 <p>Although it would be mathematically correct to represent a battery&rsquo;s voltage as a negative figure with reversed polarity markings, it would be decidedly unconventional: (Figure below)</p>
-<a target='_blank' href='../images/13-02.png'><img class='clImageThumb' src='../images/13-02.png'></a><br>
+<a target='_blank' href='../images/13-02.webp'><img class='clImageThumb' src='../images/13-02.webp'></a><br>
 <p><em>Decidedly unconventional polarity marking.</em></p>
 <p>Interpreting such notation might be easier if the &ldquo;+&rdquo; and &ldquo;-&rdquo; polarity markings were viewed as reference points for voltmeter test leads, the &ldquo;+&rdquo; meaning &ldquo;red&rdquo; and the &ldquo;-&rdquo; meaning &ldquo;black.&rdquo; A voltmeter connected to the above battery with red lead to the bottom terminal and black lead to the top terminal would indeed indicate a negative voltage (-6 volts).</p>
 <p>Actually, this form of notation and interpretation is not as unusual as you might think: it is commonly encountered in problems of DC network analysis where &ldquo;+&rdquo; and &ldquo;-&rdquo; polarity marks are initially drawn according to educated guess, and later interpreted as correct or &ldquo;backward&rdquo; according to the mathematical sign of the figure calculated.</p>
@@ -53,24 +53,24 @@
 <p>Likewise, the phase angle of an AC voltage has meaning only in the context of knowing which of the two points is considered the &ldquo;reference&rdquo; point. Because of this fact, &ldquo;+&rdquo; and &ldquo;-&rdquo; polarity marks are often placed by the terminals of an AC voltage in schematic diagrams to give the stated phase angle a frame of reference.</p>
 <h2>Voltmeter Reading per Test Lead Connection</h2>
 <p>Let&rsquo;s review these principles with some graphical aids. First, the principle of relating test lead connections to the mathematical sign of a DC voltmeter indication: (Figure below)</p>
-<a target='_blank' href='../images/13-03.png'><img class='clImageThumb' src='../images/13-03.png'></a><br>
+<a target='_blank' href='../images/13-03.webp'><img class='clImageThumb' src='../images/13-03.webp'></a><br>
 <p><em>Test lead colors provide a frame of reference for interpreting the sign (+ or -) of the meter&rsquo;s indication.</em></p>
 <p>The mathematical sign of a digital DC voltmeter&rsquo;s display has meaning only in the context of its test lead connections. Consider the use of a DC voltmeter in determining whether or not two DC voltage sources are aiding or opposing each other, assuming that both sources are unlabeled as to their polarities.</p>
 <p>Using the voltmeter to measure across the first source: (Figure below)</p>
-<a target='_blank' href='../images/13-04.png'><img class='clImageThumb' src='../images/13-04.png'></a><br>
+<a target='_blank' href='../images/13-04.webp'><img class='clImageThumb' src='../images/13-04.webp'></a><br>
 <p><em>(+) The reading indicates black is (-), red is (+).</em></p>
 <p>This first measurement of +24 across the left-hand voltage source tells us that the black lead of the meter really is touching the negative side of voltage source #1, and the red lead of the meter really is touching the positive. Thus, we know source #1 is a battery facing in this orientation: (Figure below).</p>
-<a target='_blank' href='../images/13-05.png'><img class='clImageThumb' src='../images/13-05.png'></a><br>
+<a target='_blank' href='../images/13-05.webp'><img class='clImageThumb' src='../images/13-05.webp'></a><br>
 <p><em>The 24V source is polarized (-) to (+).</em></p>
 <p>Measuring the other unknown voltage source: (Figure below)</p>
-<a target='_blank' href='../images/13-06.png'><img class='clImageThumb' src='../images/13-06.png'></a><br>
+<a target='_blank' href='../images/13-06.webp'><img class='clImageThumb' src='../images/13-06.webp'></a><br>
 <p><em>(-) Reading indicates black is (+), red is (-).</em></p>
 <p>This second voltmeter reading, however, is a <em>negative</em> (-) 17 volts, which tells us that the black test lead is actually touching the positive side of voltage source #2, while the red test lead is actually touching the negative. Thus, we know that source #2 is a battery facing in the <em>opposite</em> direction: (Figure below)</p>
-<a target='_blank' href='../images/13-07.png'><img class='clImageThumb' src='../images/13-07.png'></a><br>
+<a target='_blank' href='../images/13-07.webp'><img class='clImageThumb' src='../images/13-07.webp'></a><br>
 <p><em>17V source is polarized (+) to (-)</em></p>
 <p>It should be obvious to any experienced student of DC electricity that these two batteries are opposing one another. By definition, opposing voltages <em>subtract</em> from one another, so we subtract 17 volts from 24 volts to obtain the total voltage across the two: 7 volts.</p>
 <p>We could, however, draw the two sources as nondescript boxes, labeled with the exact voltage figures obtained by the voltmeter, the polarity marks indicating voltmeter test lead placement: (Figure below)</p>
-<a target='_blank' href='../images/13-08.png'><img class='clImageThumb' src='../images/13-08.png'></a><br>
+<a target='_blank' href='../images/13-08.webp'><img class='clImageThumb' src='../images/13-08.webp'></a><br>
 <p><em>Voltmeter readings as read from meters.</em></p>
 
 <h2>Significance of Polarity Markings</h2>
@@ -79,14 +79,14 @@
 <p>Again, the polarity markings serve as <em>frames of reference</em> to place the voltage figures&rsquo; mathematical signs in the proper context.</p>
 <p>The same is true for AC voltages, except that <em>phase angle</em> substitutes for the mathematical <em>sign</em>. In order to relate multiple AC voltages at different phase angles to each other, we need polarity markings to provide frames of reference for those voltages&rsquo; phase angles. (Figure below)</p>
 <p>Take for example the following circuit:</p>
-<a target='_blank' href='../images/13-09.png'><img class='clImageThumb' src='../images/13-09.png'></a><br>
+<a target='_blank' href='../images/13-09.webp'><img class='clImageThumb' src='../images/13-09.webp'></a><br>
 <p><em>Phase angle substitutes for &plusmn; sign.</em></p>
 <p>The polarity markings show these two voltage sources aiding each other, so to determine the total voltage across the resistor we must <em>add</em> the voltage figures of 10 V &ang; 0&deg; and 6 V &ang; 45&deg; together to obtain 14.861 V &ang; 16.59&deg;.</p>
 <p>However, it would be perfectly acceptable to represent the 6-volt source as 6 V &ang; 225&deg;, with a reversed set of polarity markings, and still arrive at the same total voltage: (Figure below)</p>
-<a target='_blank' href='../images/13-10.png'><img class='clImageThumb' src='../images/13-10.png'></a><br>
+<a target='_blank' href='../images/13-10.webp'><img class='clImageThumb' src='../images/13-10.webp'></a><br>
 <p><em>Reversing the voltmeter leads on the 6V source changes the phase angle by 180&deg;.</em></p>
 <p>6 V &ang; 45&deg; with negative on the left and positive on the right is exactly the same as 6 V &ang; 225&deg; with positive on the left and negative on the right: the reversal of polarity markings perfectly complements the addition of 180&deg; to the phase angle designation: (Figure below)</p>
-<a target='_blank' href='../images/13-11.png'><img class='clImageThumb' src='../images/13-11.png'></a><br>
+<a target='_blank' href='../images/13-11.webp'><img class='clImageThumb' src='../images/13-11.webp'></a><br>
 <p><em>Reversing polarity adds 180&deg; to phase angle</em></p>
 <p>Unlike DC voltage sources, whose symbols intrinsically define polarity by means of short and long lines, AC voltage symbols have no intrinsic polarity marking. Therefore, any polarity marks must be included as additional symbols on the diagram, and there is no one &ldquo;correct&rdquo; way in which to place them.</p>
 <p>They must, however, correlate with the given phase angle to represent the true phase relationship of that voltage with other voltages in the circuit.</p>

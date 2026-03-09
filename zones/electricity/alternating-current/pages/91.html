@@ -42,7 +42,7 @@
 <p>This abrupt cessation of current at the line&rsquo;s end causes a &ldquo;pile-up&rdquo; to occur along the length of the transmission line, as the electric charge carriers successively find no place to go.</p>
 <p>Imagine a train traveling down the track with slack between the railcar couplings: if the lead car suddenly crashes into an immovable barricade, it will come to a stop, causing the one behind it to come to a stop as soon as the first coupling slack is taken up, which causes the next rail car to stop as soon as the next coupling&rsquo;s slack is taken up, and so on until the last rail car stops.</p>
 <p>The train does not come to a halt together, but rather in sequence from first car to last: (Figure below)</p>
-<a target='_blank' href='../images/91-01.png'><img class='clImageThumb' src='../images/91-01.png'></a><br>
+<a target='_blank' href='../images/91-01.webp'><img class='clImageThumb' src='../images/91-01.webp'></a><br>
 <p>A signal propagating from the source-end of a transmission line to the load-end is called an <em>incident wave</em>. The propagation of a signal from load-end to source-end (such as what happened in this example with current encountering the end of an open-circuited transmission line) is called a <em>reflected wave</em>.</p>
 <p>When this electric charge carrier &ldquo;pile-up&rdquo; propagates back to the battery, current at the battery ceases, and the line acts as a simple open circuit.</p>
 <p>All this happens very quickly for transmission lines of reasonable length, and so an ohmmeter measurement of the line never reveals the brief time period where the line actually behaves as a resistor.</p>
@@ -54,10 +54,10 @@
 <p>A similar phenomenon takes place if the end of a transmission line is short-circuited: when the voltage wave-front reaches the end of the line, it is reflected back to the source, because voltage cannot exist between two electrically common points.</p>
 <p>When this reflected wave reaches the source, the source sees the entire transmission line as a short-circuit. Again, this happens as quickly as the signal can propagate round-trip down and up the transmission line at whatever velocity allowed by the dielectric material between the line&rsquo;s conductors.</p>
 <p>A simple experiment illustrates the phenomenon of wave reflection in transmission lines. Take a length of rope by one end and &ldquo;whip&rdquo; it with a rapid up-and-down motion of the wrist. A wave may be seen traveling down the rope&rsquo;s length until it dissipates entirely due to friction: (Figure below)</p>
-<a target='_blank' href='../images/91-02.jpg'><img class='clImageThumb' src='../images/91-02.jpg'></a><br>
+<a target='_blank' href='../images/91-02.webp'><img class='clImageThumb' src='../images/91-02.webp'></a><br>
 <p><em>Lossy transmission line.</em></p>
 <p>This is analogous to a long transmission line with internal loss: the signal steadily grows weaker as it propagates down the line&rsquo;s length, never reflecting back to the source. However, if the far end of the rope is secured to a solid object at a point prior to the incident wave&rsquo;s total dissipation, a second wave will be reflected back to your hand: (Figure below)</p>
-<a target='_blank' href='../images/91-03.jpg'><img class='clImageThumb' src='../images/91-03.jpg'></a><br>
+<a target='_blank' href='../images/91-03.webp'><img class='clImageThumb' src='../images/91-03.webp'></a><br>
 <p><em>Reflected wave.</em></p>
 <p>Usually, the purpose of a transmission line is to convey electrical energy from one point to another.</p>
 <p>Even if the signals are intended for information only, and not to power some significant load device, the ideal situation would be for all of the original signal energy to travel from the source to the load, and then be completely absorbed or dissipated by the load for maximum signal-to-noise ratio.</p>
@@ -68,13 +68,13 @@
 <p>This makes perfect sense if we return to our hypothetical, infinite-length transmission line example. A transmission line of 50 &Omega; characteristic impedance and infinite length behaves exactly like a 50 &Omega; resistance as measured from one end. (Figure below)</p>
 <p>If we cut this line to some finite length, it will behave like a 50 &Omega; resistor to a constant source of DC voltage for a brief time, but then behave like an open- or a short-circuit, depending on what condition we leave the cut end of the line: open or shorted. (Figure below)</p>
 <p>However, if we <em>terminate</em> the line with a 50 &Omega; resistor, the line will once again behave as a 50 &Omega; resistor, indefinitely: the same as if it were of an infinite length again: (Figure below)</p>
-<a target='_blank' href='../images/91-04.png'><img class='clImageThumb' src='../images/91-04.png'></a><br>
+<a target='_blank' href='../images/91-04.webp'><img class='clImageThumb' src='../images/91-04.webp'></a><br>
 <p><em>Infinite transmission line looks like resistor.</em></p>
-<a target='_blank' href='../images/91-05.png'><img class='clImageThumb' src='../images/91-05.png'></a><br>
+<a target='_blank' href='../images/91-05.webp'><img class='clImageThumb' src='../images/91-05.webp'></a><br>
 <p><em>One mile transmission.</em></p>
-<a target='_blank' href='../images/91-06.png'><img class='clImageThumb' src='../images/91-06.png'></a><br>
+<a target='_blank' href='../images/91-06.webp'><img class='clImageThumb' src='../images/91-06.webp'></a><br>
 <p><em>Shorted transmission line.</em></p>
-<a target='_blank' href='../images/91-07.png'><img class='clImageThumb' src='../images/91-07.png'></a><br>
+<a target='_blank' href='../images/91-07.webp'><img class='clImageThumb' src='../images/91-07.webp'></a><br>
 <p><em>Line terminated in characteristic impedance.</em></p>
 <p>In essence, a terminating resistor matching the natural impedance of the transmission line makes the line &ldquo;appear&rdquo; infinitely long from the perspective of the source, because a resistor has the ability to eternally dissipate energy in the same way a transmission line of infinite length is able to eternally absorb energy.</p>
 <p>Reflected waves will also manifest if the terminating resistance isn&rsquo;t precisely equal to the characteristic impedance of the transmission line, not just if the line is left unconnected (open) or jumpered (shorted).</p>

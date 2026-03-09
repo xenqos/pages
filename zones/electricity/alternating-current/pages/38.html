@@ -46,19 +46,19 @@
 <p>A classic example of coupling phenomenon is seen frequently in industry where DC signal wiring is placed in close proximity to AC power wiring. The nearby presence of high AC voltages and currents may cause &ldquo;foreign&rdquo; voltages to be impressed upon the length of the signal wiring.</p>
 <p>Stray capacitance formed by the electrical insulation separating power conductors from signal conductors may cause voltage (with respect to earth ground) from the power conductors to be impressed upon the signal conductors, while stray inductance formed by parallel runs of wire in conduit may cause current from the power conductors to electromagnetically induce voltage along the signal conductors.</p>
 <p>The result is a mix of DC and AC at the signal load. The following schematic shows how an AC &ldquo;noise&rdquo; source may &ldquo;couple&rdquo; to a DC circuit through mutual inductance (Mstray) and capacitance (Cstray) along the length of the conductors. (Figure below)</p>
-<a target='_blank' href='../images/38-01.jpg'><img class='clImageThumb' src='../images/38-01.jpg'></a><br>
+<a target='_blank' href='../images/38-01.webp'><img class='clImageThumb' src='../images/38-01.webp'></a><br>
 <p><em>Stray inductance and capacitance couple stray AC into desired DC signal.</em></p>
 <p>When stray AC voltages from a &ldquo;noise&rdquo; source mix with DC signals conducted along signal wiring, the results are usually undesirable. For this reason, power wiring and low-level signal wiring should <em>always</em> be routed through separated, dedicated metal conduit, and signals should be conducted via 2-conductor &ldquo;twisted pair&rdquo; cable rather than through a single wire and ground connection: (Figure below)</p>
-<a target='_blank' href='../images/38-02.jpg'><img class='clImageThumb' src='../images/38-02.jpg'></a><br>
+<a target='_blank' href='../images/38-02.webp'><img class='clImageThumb' src='../images/38-02.webp'></a><br>
 <p><em>Shielded twisted pair minimized noise.</em></p>
 <p>The grounded cable shield&mdash;a wire braid or metal foil wrapped around the two insulated conductors&mdash;isolates both conductors from electrostatic (capacitive) coupling by blocking any external electric fields, while the parallel proximity of the two conductors effectively cancels any electromagnetic (mutually inductive) coupling because any induced noise voltage will be approximately equal in magnitude and opposite in phase along both conductors, canceling each other at the receiving end for a net (differential) noise voltage of almost zero.</p>
 <p>Polarity marks placed near each inductive portion of signal conductor length shows how the induced voltages are phased in such a way as to cancel one another.</p>
 <p>Coupling may also occur between two sets of conductors carrying AC signals, in which case both signals may become &ldquo;mixed&rdquo; with each other:</p>
-<a target='_blank' href='../images/38-03.jpg'><img class='clImageThumb' src='../images/38-03.jpg'></a><br>
+<a target='_blank' href='../images/38-03.webp'><img class='clImageThumb' src='../images/38-03.webp'></a><br>
 <p><em>Coupling of AC signals between parallel conductors.</em></p>
 <p>Coupling is but one example of how signals of different frequencies may become mixed. Whether it be AC mixed with DC, or two AC signals mixing with each other, signal coupling via stray inductance and capacitance is usually accidental and undesired.</p>
 <p>In other cases, mixed-frequency signals are the result of intentional design or they may be an intrinsic quality of a signal. It is generally quite easy to create mixed-frequency signal sources. Perhaps the easiest way is to simply connect voltage sources in series: (Figure below)</p>
-<a target='_blank' href='../images/38-04.jpg'><img class='clImageThumb' src='../images/38-04.jpg'></a><br>
+<a target='_blank' href='../images/38-04.webp'><img class='clImageThumb' src='../images/38-04.webp'></a><br>
 <p><em>Series connection of voltage sources mixes signals.</em></p>
 <p>Some computer communications networks operate on the principle of superimposing high-frequency voltage signals along 60 Hz power-line conductors, so as to convey computer data along existing lengths of power cabling.</p>
 <p>This technique has been used for years in electric power distribution networks to communicate load data along high-voltage power lines. Certainly these are examples of mixed-frequency AC voltages, under conditions that are deliberately established.</p>
@@ -70,42 +70,20 @@
 <p>However, investigating a little further, we find that even a single piano note (produced by a plucked string) consists of one predominant frequency mixed with several other frequencies, each frequency a whole-number multiple of the first (called <em>harmonics</em>, while the first frequency is called the <em>fundamental</em>).</p>
 <p>An illustration of these terms is shown in Table  below with a fundamental frequency of 1000 Hz (an arbitrary figure chosen for this example).</p>
 <p><em>For a &ldquo;base&rdquo; frequency of 1000 Hz:</em></p>
-<table><br>
-<tbody><br>
-<tr><br>
-<th>Frequency</th><br>
-<th>Term</th><br>
-</tr>
-<tr><br>
-<td>1000</td><br>
-<td>1st harmonic, or fundamental</td><br>
-</tr>
-<tr><br>
-<td>2000</td><br>
-<td>2nd harmonic</td><br>
-</tr>
-<tr><br>
-<td>3000</td><br>
-<td>3rd harmonic</td><br>
-</tr>
-<tr><br>
-<td>4000</td><br>
-<td>4th harmonic</td><br>
-</tr>
-<tr><br>
-<td>5000</td><br>
-<td>5th harmonic</td><br>
-</tr>
-<tr><br>
-<td>6000</td><br>
-<td>6th harmonic</td><br>
-</tr>
-<tr><br>
-<td>7000</td><br>
-<td>7th harmonic</td><br>
-</tr>
-</tbody><br>
-</table><br>
+<div class='clOverflow'>
+<table>
+<tr>
+<th>Frequency</th><th>Term</th></tr>
+<tr><td>1000</td><td>1st harmonic,<br>or fundamental</td></tr>
+<tr><td>2000</td><td>2nd harmonic</td></tr>
+<tr><td>3000</td><td>3rd harmonic</td></tr>
+<tr><td>4000</td><td>4th harmonic</td></tr>
+<tr><td>5000</td><td>5th harmonic</td></tr>
+<tr><td>6000</td><td>6th harmonic</td></tr>
+<tr><td>7000</td><td>7th harmonic</td></tr>
+</table>
+</div>
+
 
 <h2>Overtone</h2>
 <p>Sometimes the term &ldquo;overtone&rdquo; is used to describe the a harmonic frequency produced by a musical instrument.</p>

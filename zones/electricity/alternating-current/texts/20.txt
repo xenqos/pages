@@ -25,53 +25,15 @@
 ^[20-03.webp]
 
 <p>The table below gives approximate values of &ldquo;k&rdquo; factor for various round wire sizes. <em>&ldquo;k&rdquo; factor for various AWG wire sizes.</em></p>
-
-<table>
-<tbody>
-<tr>
-<td><strong>gauge size</strong></td>
-<td><strong>k factor</strong></td>
-<td><strong>gauge size</strong></td>
-<td><strong>k factor</strong></td>
-</tr>
-<tr>
-<td>4/0</td>
-<td>124.5</td>
-<td>8</td>
-<td>34.8</td>
-</tr>
-<tr>
-<td>2/0</td>
-<td>99.0</td>
-<td>10</td>
-<td>27.6</td>
-</tr>
-<tr>
-<td>1/0</td>
-<td>88.0</td>
-<td>14</td>
-<td>17.6</td>
-</tr>
-<tr>
-<td>2</td>
-<td>69.8</td>
-<td>18</td>
-<td>10.9</td>
-</tr>
-<tr>
-<td>4</td>
-<td>55.5</td>
-<td>22</td>
-<td>6.86</td>
-</tr>
-<tr>
-<td>6</td>
-<td>47.9</td>
-<td>-</td>
-<td>-</td>
-</tr>
-</tbody>
-</table>
+[|
+¦gauge size¦k factor¦gauge size¦k factor¦
+|4/0|124.5| 8|34.8|
+|2/0|99.0 |10|27.6|
+|1/0|88.0 |14|17.6|
+|2  |69.8 |18|10.9|
+|4  |55.5 |22|6.86|
+|6  |47.9 |- |-   |
+|]
 
 <p>For example, a length of number 10-gauge wire with a DC end-to-end resistance of 25 &Omega; would have an AC (effective) resistance of 2.182 k&Omega; at a frequency of 10 MHz:</p>
 

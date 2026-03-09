@@ -47,42 +47,16 @@
 <p>An illustration of these terms is shown in Table  below with a fundamental frequency of 1000 Hz (an arbitrary figure chosen for this example).</p>
 <p><em>For a &ldquo;base&rdquo; frequency of 1000 Hz:</em></p>
 
-<table>
-<tbody>
-<tr>
-<th>Frequency</th>
-<th>Term</th>
-</tr>
-<tr>
-<td>1000</td>
-<td>1st harmonic, or fundamental</td>
-</tr>
-<tr>
-<td>2000</td>
-<td>2nd harmonic</td>
-</tr>
-<tr>
-<td>3000</td>
-<td>3rd harmonic</td>
-</tr>
-<tr>
-<td>4000</td>
-<td>4th harmonic</td>
-</tr>
-<tr>
-<td>5000</td>
-<td>5th harmonic</td>
-</tr>
-<tr>
-<td>6000</td>
-<td>6th harmonic</td>
-</tr>
-<tr>
-<td>7000</td>
-<td>7th harmonic</td>
-</tr>
-</tbody>
-</table>
+[|
+¦Frequency¦Term¦
+|1000|1st harmonic,~~or fundamental|
+|2000|2nd harmonic|
+|3000|3rd harmonic|
+|4000|4th harmonic|
+|5000|5th harmonic|
+|6000|6th harmonic|
+|7000|7th harmonic|
+|]
 
 ## Overtone
 <p>Sometimes the term &ldquo;overtone&rdquo; is used to describe the a harmonic frequency produced by a musical instrument.</p>

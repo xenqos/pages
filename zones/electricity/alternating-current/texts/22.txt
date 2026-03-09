@@ -45,26 +45,13 @@
 ^[22-06.webp]
 
 ### Reactance of a 100 uF capacitor:
-<table>
-<tbody>
-<tr>
-<td><strong>Frequency (Hertz)</strong></td>
-<td><strong>Reactance (Ohms)</strong></td>
-</tr>
-<tr>
-<td>60</td>
-<td>26.5258</td>
-</tr>
-<tr>
-<td>120</td>
-<td>13.2629</td>
-</tr>
-<tr>
-<td>2500</td>
-<td>0.6366</td>
-</tr>
-</tbody>
-</table>
+
+[|
+¦Frequency (Hertz)¦Reactance (Ohms)¦
+|60  |26.5258|
+|120 |13.2629|
+|2500|0.6366 |
+|]
 
 <p>Please note that the relationship of capacitive reactance to frequency is exactly opposite from that of inductive reactance.</p>
 <p>Capacitive reactance (in ohms) decreases with increasing AC frequency. Conversely, inductive reactance (in ohms) increases with increasing AC frequency. Inductors oppose faster changing currents by producing greater voltage drops; capacitors oppose faster changing voltage drops by allowing greater currents.</p>

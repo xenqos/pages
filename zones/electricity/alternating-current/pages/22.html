@@ -41,22 +41,22 @@
 
 <h2>Capacitor Circuit Characteristics</h2>
 <p>Expressed mathematically, the relationship between the current &ldquo;through&rdquo; the capacitor and rate of voltage change across the capacitor is as such:</p>
-<a target='_blank' href='../images/22-01.jpg'><img class='clImageThumb' src='../images/22-01.jpg'></a><br>
+<a target='_blank' href='../images/22-01.webp'><img class='clImageThumb' src='../images/22-01.webp'></a><br>
 
 <p>The expression <em>de/dt</em> is one from calculus, meaning the rate of change of instantaneous voltage (e) over time, in volts per second. The capacitance (C) is in Farads, and the instantaneous current (i), of course, is in amps.</p>
 <p>Sometimes you will find the rate of instantaneous voltage change over time expressed as dv/dt instead of de/dt: using the lower-case letter &ldquo;v&rdquo; instead or &ldquo;e&rdquo; to represent voltage, but it means the exact same thing. To show what happens with alternating current, let&rsquo;s analyze a simple capacitor circuit:</p>
-<a target='_blank' href='../images/22-02.jpg'><img class='clImageThumb' src='../images/22-02.jpg'></a><br>
+<a target='_blank' href='../images/22-02.webp'><img class='clImageThumb' src='../images/22-02.webp'></a><br>
 <p><em>Pure capacitive circuit: capacitor voltage lags capacitor current by 90&deg;</em></p>
 <p>If we were to plot the current and voltage for this very simple circuit, it would look something like this:</p>
-<a target='_blank' href='../images/22-03.jpg'><img class='clImageThumb' src='../images/22-03.jpg'></a><br>
+<a target='_blank' href='../images/22-03.webp'><img class='clImageThumb' src='../images/22-03.webp'></a><br>
 <p><em>Pure capacitive circuit waveforms.</em></p>
 <p>Remember, the current through a capacitor is a reaction against the <em>change</em> in voltage across it.</p>
 <p>Therefore, the instantaneous current is zero whenever the instantaneous voltage is at a peak (zero change, or level slope, on the voltage sine wave), and the instantaneous current is at a peak wherever the instantaneous voltage is at maximum change (the points of steepest slope on the voltage wave, where it crosses the zero line).</p>
 <p>This results in a voltage wave that is -90&deg; out of phase with the current wave. Looking at the graph, the current wave seems to have a &ldquo;head start&rdquo; on the voltage wave; the current &ldquo;leads&rdquo; the voltage, and the voltage &ldquo;lags&rdquo; behind the current.</p>
-<a target='_blank' href='../images/22-04.jpg'><img class='clImageThumb' src='../images/22-04.jpg'></a><br>
+<a target='_blank' href='../images/22-04.webp'><img class='clImageThumb' src='../images/22-04.webp'></a><br>
 <p><em>Voltage lags current by 90&deg; in a pure capacitive circuit.</em></p>
 <p>As you might have guessed, the same unusual power wave that we saw with the simple inductor circuit is present in the simple capacitor circuit, too:</p>
-<a target='_blank' href='../images/22-05.jpg'><img class='clImageThumb' src='../images/22-05.jpg'></a><br>
+<a target='_blank' href='../images/22-05.webp'><img class='clImageThumb' src='../images/22-05.webp'></a><br>
 <p><em>In a pure capacitive circuit, the instantaneous power may be positive or negative.</em></p>
 <p>As with the simple inductor circuit, the 90-degree phase shift between voltage and current results in a power wave that alternates equally between positive and negative. This means that a capacitor does not dissipate power as it reacts against changes in voltage; it merely absorbs and releases power, alternately.</p>
 <h2>A Capacitor&rsquo;s Reactance</h2>
@@ -66,43 +66,33 @@
 <p>As with inductors, the reactance of a capacitor is expressed in ohms and symbolized by the letter X (or XC to be more specific).</p>
 <p>Since capacitors &ldquo;conduct&rdquo; current in proportion to the rate of voltage change, they will pass more current for faster-changing voltages (as they charge and discharge to the same voltage peaks in less time), and less current for slower-changing voltages.</p>
 <p>What this means is that reactance in ohms for any capacitor is <em>inversely</em> proportional to the frequency of the alternating current.</p>
-<a target='_blank' href='../images/22-06.jpg'><img class='clImageThumb' src='../images/22-06.jpg'></a><br>
+<a target='_blank' href='../images/22-06.webp'><img class='clImageThumb' src='../images/22-06.webp'></a><br>
 
 <h3>Reactance of a 100 uF capacitor:</h3>
-<table><br>
-<tbody><br>
-<tr><br>
-<td><strong>Frequency (Hertz)</strong></td><br>
-<td><strong>Reactance (Ohms)</strong></td><br>
-</tr>
-<tr><br>
-<td>60</td><br>
-<td>26.5258</td><br>
-</tr>
-<tr><br>
-<td>120</td><br>
-<td>13.2629</td><br>
-</tr>
-<tr><br>
-<td>2500</td><br>
-<td>0.6366</td><br>
-</tr>
-</tbody><br>
-</table><br>
-<br>
+
+<div class='clOverflow'>
+<table>
+<tr>
+<th>Frequency (Hertz)</th><th>Reactance (Ohms)</th></tr>
+<tr><td>60  </td><td>26.5258</td></tr>
+<tr><td>120 </td><td>13.2629</td></tr>
+<tr><td>2500</td><td>0.6366 </td></tr>
+</table>
+</div>
+
 <p>Please note that the relationship of capacitive reactance to frequency is exactly opposite from that of inductive reactance.</p>
 <p>Capacitive reactance (in ohms) decreases with increasing AC frequency. Conversely, inductive reactance (in ohms) increases with increasing AC frequency. Inductors oppose faster changing currents by producing greater voltage drops; capacitors oppose faster changing voltage drops by allowing greater currents.</p>
 <p>As with inductors, the reactance equation&rsquo;s 2&pi;f term may be replaced by the lowercase Greek letter Omega (&omega;), which is referred to as the <em>angular velocity</em> of the AC circuit. Thus, the equation XC = 1/(2&pi;fC) could also be written as XC = 1/(&omega;C), with &omega; cast in units of <em>radians per second</em>.</p>
 <p>Alternating current in a simple capacitive circuit is equal to the voltage (in volts) divided by the capacitive reactance (in ohms), just as either alternating or direct current in a simple resistive circuit is equal to the voltage (in volts) divided by the resistance (in ohms). The following circuit illustrates this mathematical relationship by example:</p>
-<a target='_blank' href='../images/22-07.jpg'><img class='clImageThumb' src='../images/22-07.jpg'></a><br>
+<a target='_blank' href='../images/22-07.webp'><img class='clImageThumb' src='../images/22-07.webp'></a><br>
 
 <p>Capacitive reactance.</p>
-<a target='_blank' href='../images/22-08.jpg'><img class='clImageThumb' src='../images/22-08.jpg'></a><br>
+<a target='_blank' href='../images/22-08.webp'><img class='clImageThumb' src='../images/22-08.webp'></a><br>
 
 <p>However, we need to keep in mind that voltage and current are not in phase here. As was shown earlier, the current has a phase shift of +90&deg; with respect to the voltage. If we represent these phase angles of voltage and current mathematically, we can calculate the phase angle of the capacitor&rsquo;s reactive opposition to current.</p>
-<a target='_blank' href='../images/22-09.jpg'><img class='clImageThumb' src='../images/22-09.jpg'></a><br>
+<a target='_blank' href='../images/22-09.webp'><img class='clImageThumb' src='../images/22-09.webp'></a><br>
 
-<a target='_blank' href='../images/22-10.jpg'><img class='clImageThumb' src='../images/22-10.jpg'></a><br>
+<a target='_blank' href='../images/22-10.webp'><img class='clImageThumb' src='../images/22-10.webp'></a><br>
 <p><em>Voltage lags current by 90&deg; in a capacitor.</em></p>
 <p>Mathematically, we say that the phase angle of a capacitor&rsquo;s opposition to current is -90&deg;, meaning that a capacitor&rsquo;s opposition to current is a negative imaginary quantity. (See figure above.) This phase angle of reactive opposition to current becomes critically important in circuit analysis, especially for complex AC circuits where reactance and resistance interact.</p>
 <p>It will prove beneficial to represent <em>any</em> component&rsquo;s opposition to current in terms of complex numbers, and not just scalar quantities of resistance and reactance.</p>

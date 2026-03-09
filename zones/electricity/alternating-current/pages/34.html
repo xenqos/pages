@@ -35,23 +35,23 @@
 
 <h1>Simple Series Resonance</h1>
 <p>A similar effect happens in series inductive/capacitive circuits. When a state of resonance is reached (capacitive and inductive reactances equal), the two impedances cancel each other out and the total impedance drops to zero! <em>Example:</em></p>
-<a target='_blank' href='../images/34-01.jpg'><img class='clImageThumb' src='../images/34-01.jpg'></a><br>
+<a target='_blank' href='../images/34-01.webp'><img class='clImageThumb' src='../images/34-01.webp'></a><br>
 <p><em>Simple series resonant circuit.</em></p>
-<a target='_blank' href='../images/34-02.jpg'><img class='clImageThumb' src='../images/34-02.jpg'></a><br>
+<a target='_blank' href='../images/34-02.webp'><img class='clImageThumb' src='../images/34-02.webp'></a><br>
 
 <p>With the total series impedance equal to 0 &Omega; at the resonant frequency of 159.155 Hz, the result is a <em>short circuit</em> across the AC power source at resonance. In the circuit drawn above, this would not be good.</p>
 <p>I&rsquo;ll add a small resistor (Figure below) in series with the capacitor and the inductor to keep the maximum circuit current somewhat limited, and perform another SPICE analysis over the same range of frequencies.</p>
-<a target='_blank' href='../images/34-03.jpg'><img class='clImageThumb' src='../images/34-03.jpg'></a><br>
+<a target='_blank' href='../images/34-03.webp'><img class='clImageThumb' src='../images/34-03.webp'></a><br>
 <p><em>Series resonant circuit suitable for SPICE.</em></p>
 
 <pre><br>
 series lc circuit &#10; v1 1 0 ac 1 sin &#10; r1 1 2 1 &#10; c1 2 3 10u &#10; l1 3 0 100m &#10; .ac lin 20 100 200 &#10; .plot ac i(v1) &#10; .end &#10;</pre>
 
-<a target='_blank' href='../images/34-04.jpg'><img class='clImageThumb' src='../images/34-04.jpg'></a><br>
+<a target='_blank' href='../images/34-04.webp'><img class='clImageThumb' src='../images/34-04.webp'></a><br>
 <p><em>Series resonant circuit plot of current I(v1).</em></p>
 <p>As before, circuit current amplitude increases from bottom to top, while frequency increases from left to right. The peak is still seen to be at the plotted frequency point of 157.9 Hz, the closest analyzed point to our predicted resonance point of 159.155 Hz.</p>
 <p>This would suggest that our resonant frequency formula holds as true for simple series LC circuits as it does for simple parallel LC circuits, which is the case:</p>
-<a target='_blank' href='../images/34-05.jpg'><img class='clImageThumb' src='../images/34-05.jpg'></a><br>
+<a target='_blank' href='../images/34-05.webp'><img class='clImageThumb' src='../images/34-05.webp'></a><br>
 
 <p>A word of caution is in order with series LC resonant circuits: because of the high currents which may be present in a series LC circuit at resonance, it is possible to produce dangerously high voltage drops across the capacitor and the inductor, as each component possesses significant impedance.</p>
 <p>We can edit the SPICE netlist in the above example to include a plot of voltage across the capacitor and inductor to demonstrate what happens.</p>
@@ -59,7 +59,7 @@ series lc circuit &#10; v1 1 0 ac 1 sin &#10; r1 1 2 1 &#10; c1 2 3 10u &#10; l1
 <pre><br>
 series lc circuit &#10; v1 1 0 ac 1 sin &#10; r1 1 2 1 &#10; c1 2 3 10u &#10; l1 3 0 100m &#10; .ac lin 20 100 200 &#10; .plot ac i(v1) v(2,3) v(3) &#10; .end &#10;</pre>
 
-<a target='_blank' href='../images/34-06.jpg'><img class='clImageThumb' src='../images/34-06.jpg'></a><br>
+<a target='_blank' href='../images/34-06.webp'><img class='clImageThumb' src='../images/34-06.webp'></a><br>
 <p><em>Plot of Vc=V(2,3) 70 V peak, VL=v(3) 70 V peak, I=I(V1#branch) 0.532 A peak.</em></p>
 <p>According to SPICE, the voltage across the capacitor and inductor reaches a peak somewhere around 70 volts!</p>
 <p>This is quite impressive for a power supply that only generates 1 volt. Needless to say, caution is in order when experimenting with circuits such as this. The SPICE voltage is lower than the expected value due to the small (20) number of steps in the AC analysis statement (.ac lin 20 100 200). What is the expected value?</p>

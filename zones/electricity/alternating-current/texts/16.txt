@@ -50,26 +50,13 @@
 
 <p>If we expose a 10 mH inductor to frequencies of 60, 120, and 2500 Hz, it will manifest the reactances in the table below.</p>
 ### Reactance of a 10 mH inductor:
-<table>
-<tbody>
-<tr>
-<td><strong>Frequency (Hertz)</strong></td>
-<td><strong>Reactance (Ohms)</strong></td>
-</tr>
-<tr>
-<td>60</td>
-<td>3.7699</td>
-</tr>
-<tr>
-<td>120</td>
-<td>7.5398</td>
-</tr>
-<tr>
-<td>2500</td>
-<td>157.0796</td>
-</tr>
-</tbody>
-</table>
+
+[|
+¦Frequency~~(Hertz)¦Reactance~~(Ohms)¦
+|60  |3.7699  |
+|120 |7.5398  |
+|2500|157.0796|
+|]
 
 <p>In the reactance equation, the term &ldquo;2&pi;f&rdquo; (everything on the right-hand side except the L) has a special meaning unto itself. It is the number of radians per second that the alternating current is &ldquo;rotating&rdquo; at, if you imagine one cycle of AC to represent a full circle&rsquo;s rotation.</p>
 <p>A <em>radian</em> is a unit of angular measurement: there are 2&pi; radians in one full circle, just as there are 360&deg; in a full circle. If the alternator producing the AC is a double-pole unit, it will produce one cycle for every full turn of shaft rotation, which is every 2&pi; radians, or 360&deg;.</p>

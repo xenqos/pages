@@ -36,14 +36,14 @@
 
 <h1>Power in Resistive and Reactive AC circuits</h1>
 <p>Consider a circuit for a single-phase AC power system, where a 120 volt, 60 Hz AC voltage source is delivering power to a resistive load: (Figure below)</p>
-<a target='_blank' href='../images/66-01.png'><img class='clImageThumb' src='../images/66-01.png'></a><br>
+<a target='_blank' href='../images/66-01.webp'><img class='clImageThumb' src='../images/66-01.webp'></a><br>
 <p><em>Ac source drives a purely resistive load.</em></p>
-<a target='_blank' href='../images/66-02.png'><img class='clImageThumb' src='../images/66-02.png'></a><br>
+<a target='_blank' href='../images/66-02.webp'><img class='clImageThumb' src='../images/66-02.webp'></a><br>
 
 <p>In this example, the current to the load would be 2 amps, RMS. The power dissipated at the load would be 240 watts.</p>
 <p>Because this load is purely resistive (no reactance), the current is in phase with the voltage, and calculations look similar to that in an equivalent DC circuit.</p>
 <p>If we were to plot the voltage, current, and power waveforms for this circuit, it would look like the figure below.</p>
-<a target='_blank' href='../images/66-03.png'><img class='clImageThumb' src='../images/66-03.png'></a><br>
+<a target='_blank' href='../images/66-03.webp'><img class='clImageThumb' src='../images/66-03.webp'></a><br>
 <p><em>Current is in phase with voltage in a resistive circuit.</em></p>
 <p>Note that the waveform for power is always positive, never negative for this resistive circuit.</p>
 <p>This means that power is always being dissipated by the resistive load, and never returned to the source as it is with reactive loads. If the source were a mechanical generator, it would take 240 watts worth of mechanical energy (about 1/3 horsepower) to turn the shaft.</p>
@@ -53,20 +53,20 @@
 <p>As strange as it may seem, the best way to proceed with AC power calculations is to use <em>scalar</em> notation and to handle any relevant phase relationships with trigonometry.</p>
 <h2>AC circuit with a Purely Reactive load</h2>
 <p>For comparison, let&rsquo;s consider a simple AC circuit with a purely reactive load in the figure below.</p>
-<a target='_blank' href='../images/66-04.png'><img class='clImageThumb' src='../images/66-04.png'></a><br>
+<a target='_blank' href='../images/66-04.webp'><img class='clImageThumb' src='../images/66-04.webp'></a><br>
 <p><em>AC circuit with a purely reactive (inductive) load.</em></p>
-<a target='_blank' href='../images/66-05.png'><img class='clImageThumb' src='../images/66-05.png'></a><br>
+<a target='_blank' href='../images/66-05.webp'><img class='clImageThumb' src='../images/66-05.webp'></a><br>
 
-<a target='_blank' href='../images/66-06.png'><img class='clImageThumb' src='../images/66-06.png'></a><br>
+<a target='_blank' href='../images/66-06.webp'><img class='clImageThumb' src='../images/66-06.webp'></a><br>
 <p><em>Power is not dissipated in a purely reactive load. Though it is alternately absorbed from and returned to the source.</em></p>
 <p>Note that the power alternates equally between cycles of positive and negative. (Figure above) This means that power is being alternately absorbed from and returned to the source.</p>
 <p>If the source were a mechanical generator, it would take (practically) no net mechanical energy to turn the shaft, because no power would be used by the load.</p>
 <p>The generator shaft would be easy to spin, and the inductor would not become warm as a resistor would.</p>
 <h2>AC circuit with a Resistive and Purely Reactive load</h2>
 <p>Now, let&rsquo;s consider an AC circuit with a load consisting of both inductance and resistance in the figure below.</p>
-<a target='_blank' href='../images/66-07.png'><img class='clImageThumb' src='../images/66-07.png'></a><br>
+<a target='_blank' href='../images/66-07.webp'><img class='clImageThumb' src='../images/66-07.webp'></a><br>
 <p><em>AC circuit with both reactance and resistance.</em></p>
-<a target='_blank' href='../images/66-08.png'><img class='clImageThumb' src='../images/66-08.png'></a><br>
+<a target='_blank' href='../images/66-08.webp'><img class='clImageThumb' src='../images/66-08.webp'></a><br>
 
 <p>At a frequency of 60 Hz, the 160 millihenrys of inductance give us 60.319 &Omega; of inductive reactance.</p>
 <p>This reactance combines with the 60 &Omega; of resistance to form a total load impedance of 60 + j60.319 &Omega;, or 85.078 &Omega; &ang; 45.152<sup>o</sup>. If we&rsquo;re not concerned with phase angles (which we&rsquo;re not at this point), we may calculate current in the circuit by taking the polar magnitude of the voltage source (120 volts) and dividing it by the polar magnitude of the impedance (85.078 &Omega;).</p>
@@ -74,7 +74,7 @@
 <p>We already know that reactive components dissipate zero power, as they equally absorb power from, and return power to, the rest of the circuit.</p>
 <p>Therefore, any inductive reactance in this load will likewise dissipate zero power.</p>
 <p>The only thing left to dissipate power here is the resistive portion of the load impedance. If we look at the waveform plot of voltage, current, and total power for this circuit, we see how this combination works in the figure below.</p>
-<a target='_blank' href='../images/66-09.png'><img class='clImageThumb' src='../images/66-09.png'></a><br>
+<a target='_blank' href='../images/66-09.webp'><img class='clImageThumb' src='../images/66-09.webp'></a><br>
 <p><em>A combined resistive/reactive circuit dissipates more power than it returns to the source. The reactance dissipates no power; though, the resistor does.</em></p>
 <p>As with any reactive circuit, the power alternates between positive and negative instantaneous values over time.</p>
 <p>In a purely reactive circuit that alternation between positive and negative power is equally divided, resulting in net power dissipation of zero. However, in circuits with mixed resistance and reactance like this one, the power waveform will still alternate between positive and negative, but the amount of positive power will exceed the amount of negative power.</p>

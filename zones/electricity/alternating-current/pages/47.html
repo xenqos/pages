@@ -36,27 +36,27 @@
 <h1>Band-stop Filters</h1>
 <h2>How to Create a Band-stop Filter?</h2>
 <p>Also called <em>band-elimination</em>, <em>band-reject</em>, or <em>notch</em> filters, this kind of filter passes all frequencies above and below a particular range set by the component values. Not surprisingly, it can be made out of a&nbsp;low-pass and a&nbsp;high-pass filter, just like the&nbsp;band-pass design, except that this time we connect the two filter sections in parallel with each other instead of in series.</p>
-<a target='_blank' href='../images/47-01.png'><img class='clImageThumb' src='../images/47-01.png'></a><br>
+<a target='_blank' href='../images/47-01.webp'><img class='clImageThumb' src='../images/47-01.webp'></a><br>
 <p><em>System level block diagram of a band-stop filter.</em></p>
 
 <h2>Twin-T Band-stop Filter</h2>
 <p>Constructed using two capacitive filter sections, it looks something like:<strong> </strong></p>
-<a target='_blank' href='../images/47-02.png'><img class='clImageThumb' src='../images/47-02.png'></a><br>
+<a target='_blank' href='../images/47-02.webp'><img class='clImageThumb' src='../images/47-02.webp'></a><br>
 <p><em>&ldquo;Twin-T&rdquo; band-stop filter.</em></p>
 <p>The low-pass filter section is comprised of R<sub>1</sub>, R<sub>2</sub>, and C<sub>1</sub> in a &ldquo;T&rdquo; configuration. The high-pass filter section is comprised of C<sub>2</sub>, C<sub>3</sub>, and R<sub>3</sub> in a &ldquo;T&rdquo; configuration as well. Together, this arrangement is commonly known as a &ldquo;Twin-T&rdquo; filter, giving sharp response when the component values are chosen in the following ratios:</p>
-<a target='_blank' href='../images/47-03.png'><img class='clImageThumb' src='../images/47-03.png'></a><br>
+<a target='_blank' href='../images/47-03.webp'><img class='clImageThumb' src='../images/47-03.webp'></a><br>
 
 <h2>Notch Frequency</h2>
 <p>Given these component ratios, the frequency of maximum rejection (the &ldquo;notch frequency&rdquo;) can be calculated as follows:<strong> </strong></p>
-<a target='_blank' href='../images/47-04.png'><img class='clImageThumb' src='../images/47-04.png'></a><br>
+<a target='_blank' href='../images/47-04.webp'><img class='clImageThumb' src='../images/47-04.webp'></a><br>
 
 <p>The impressive band-stopping ability of this filter is illustrated by the following SPICE analysis:</p>
 
 <pre><br>
 twin-t bandstop filter &#10; v1 1 0 ac 1 sin &#10; r1 1 2 200 &#10; c1 2 0 2u &#10; r2 2 3 200 &#10; c2 1 4 1u &#10; r3 4 0 100 &#10; c3 4 3 1u &#10; rload 3 0 1k &#10; .ac lin 20 200 1.5k &#10; .plot ac v(3) &#10; .end &#10;</pre>
 
-<a target='_blank' href='../images/47-05.png'><img class='clImageThumb' src='../images/47-05.png'></a><br>
-<a target='_blank' href='../images/47-06.png'><img class='clImageThumb' src='../images/47-06.png'></a><br>
+<a target='_blank' href='../images/47-05.webp'><img class='clImageThumb' src='../images/47-05.webp'></a><br>
+<a target='_blank' href='../images/47-06.webp'><img class='clImageThumb' src='../images/47-06.webp'></a><br>
 <p><em>Response of &ldquo;twin-T&rdquo; band-stop filter.</em></p>
 <p><strong>REVIEW:</strong></p>
 <ul>

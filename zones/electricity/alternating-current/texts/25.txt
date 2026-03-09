@@ -12,58 +12,21 @@
 <p>This effect is undesirable for capacitors where we expect the component to behave as a purely <em>reactive circuit</em> element. One of the ways to mitigate the effect of dielectric &ldquo;loss&rdquo; is to choose a dielectric material less susceptible to the effect. Not all dielectric materials are equally &ldquo;lossy.&rdquo; A relative scale of dielectric loss from least to greatest is given in the table below</p>
 
 ### Dielectric loss
-<table>
-<tbody>
-<tr>
-<td><strong>Material</strong></td>
-<td><strong>Loss</strong></td>
-</tr>
-<tr>
-<td>Vacuum</td>
-<td>Low</td>
-</tr>
-<tr>
-<td>Air</td>
-<td>-</td>
-</tr>
-<tr>
-<td>Polystyrene</td>
-<td>-</td>
-</tr>
-<tr>
-<td>Mica</td>
-<td>-</td>
-</tr>
-<tr>
-<td>Glass</td>
-<td>-</td>
-</tr>
-<tr>
-<td>Low-K ceramic</td>
-<td>-</td>
-</tr>
-<tr>
-<td>Plastic film (Mylar)</td>
-<td>-</td>
-</tr>
-<tr>
-<td>Paper</td>
-<td>-</td>
-</tr>
-<tr>
-<td>High-K ceramic</td>
-<td>-</td>
-</tr>
-<tr>
-<td>Aluminum oxide</td>
-<td>-</td>
-</tr>
-<tr>
-<td>Tantalum pentoxide</td>
-<td>high</td>
-</tr>
-</tbody>
-</table>
+
+[|
+¦Material¦Loss¦
+|Vacuum              |Low |
+|Air                 |-   |
+|Polystyrene         |-   |
+|Mica                |-   |
+|Glass               |-   |
+|Low-K ceramic       |-   |
+|Plastic film (Mylar)|-   |
+|Paper               |-   |
+|High-K ceramic      |-   |
+|Aluminum oxide      |-   |
+|Tantalum pentoxide  |high|
+|]
 
 <p>Dielectric resistivity manifests itself both as a series and a parallel resistance with the pure capacitance:</p>
 
