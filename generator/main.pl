@@ -52,14 +52,14 @@ our @books =
 , '0|linguistics/mystic-rhymes|Мистические рифмы'
 
 , '0|toolbox/mn-banknotes-eur|Banknotes EUR'
-, '1|electricity/direct-current|Direct Current'
-, '1|electricity/alternating-current|Alternating Current'
+, '0|electricity/direct-current|Direct Current'
+, '0|electricity/alternating-current|Alternating Current'
 , '1|electricity/semiconductors|Semiconductors'
 , '1|electricity/reference|Reference'
 , '1|electricity/radio-frequencies|Radio Frequencies'
 , '1|electricity/dyi-projects|DYI Projects'
 
-, '1|games/principles|Texas Holdem Principles'
+, '0|games/principles|Texas Holdem Principles'
 , '0|games/mathresources|Resources'
 );
 
