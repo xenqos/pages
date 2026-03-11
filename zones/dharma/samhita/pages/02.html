@@ -17,7 +17,7 @@
   
 </head>
 <body onload='fncGetDivState(); fncGetScrollPosition();'>
-
+<audio id='idTrack' src='../sounds/02.opus' preload='auto'></audio>
 <div id='idPanel'>
 <div id='idTopbar'>
   <div id='idTopbarNavigation'>
@@ -26,7 +26,7 @@
     <a href='01.html'><span class='clNavLeft'></span></a>
     <a href='../index.html'><span class='clNavUp'></span></a>
     <a href='03.html'><span class='clNavRight'></span></a>
-
+<span class='clNavRewind' onpointerdown='fncRewindTrack(&quot;idTrack&quot;, event)'></span><span class='clNavPlay' onpointerdown='fncPlayTrack(&quot;idTrack&quot;, event)'></span> 
   </div>
 </div>
 <div id='idContent'>
@@ -36,6 +36,104 @@
 <h1>púruṣa sū́kta (RV 10.90)</h1>
 
 <b> «Космогоническая жертва Первочеловека» </b><br>
+<br>
+<details><summary>Санскрит</summary>
+<h3>1</h3>
+sahasraśīrṣā púruṣaḥ<br>
+sahasrākṣáḥ sahasrapāt<br>
+sá bhū́miṃ viśváto vṛtvā́<br>
+átyatiṣṭhaddaśāṅgulám<br>
+
+<h3>2</h3>
+púruṣa evédáṃ sárvaṃ<br>
+yádbhūtáṃ yácca bhávyam<br>
+utā́mṛtatvásyéśāno<br>
+yádánnenātiróhati<br>
+
+<h3>3</h3>
+etā́vān-asya mahimā́<br>
+áto jyā́yāṃśca pū́ruṣaḥ<br>
+pā́do’syaviśvā bhūtā́ni<br>
+tripā́dasyāmṛtáṃ diví<br>
+
+<h3>4</h3>
+tripā́dūrdhvá údait-púruṣaḥ<br>
+pā́do’syéhā́bhavatpúnaḥ<br>
+táto víṣvaṅ vyákrāmat<br>
+sāśanānaśané abhí<br>
+
+<h3>5</h3>
+tásmādviraā́ḷ-ajāyata<br>
+virā́jo ádhi pū́ruṣaḥ<br>
+sá jātó átyaricyata<br>
+paścā́dbhū́mím-átho puráḥ<br>
+
+<h3>6</h3>
+yát-púruṣeṇa havíṣā<br>
+dēvā́ yajñám-átanvata<br>
+vasantó asyāsīdā́jyaṃ<br>
+grīṣmá idhmáḥ śarád-dhivíḥ<br>
+
+<h3>7</h3>
+táṃ yajñáṃ barhíṣi praúkṣan<br>
+púruṣaṃ jātám-agratáḥ<br>
+téna dēvā́ ayajanta<br>
+sādhyā́ ṛṣáyaśca yē<br>
+
+<h3>8</h3>
+tásmādyajñā́t-sarvahútaḥ<br>
+sambhṛtáṃ pṛṣadājyám<br>
+paśū́n-tāṃścakrē vāyavyā́n<br>
+āraṇyā́n-grāmyā́śca yē<br>
+
+<h3>9</h3>
+tásmādyajñā́t-sarvahúta<br>
+ṛ́caḥ sā́māni jajñirē<br>
+chándāṃsi jajñirē tásmāt<br>
+yájus-tásmād-ajāyata<br>
+
+<h3>10</h3>
+tásmādaśvā ajāyanta<br>
+yē kē cóbhayādataḥ<br>
+gā́vō ha jajñirē tásmāt<br>
+tásmājjātā́ ajāvayáḥ<br>
+
+<h3>11</h3>
+yát-púruṣaṃ vyádhadhuḥ<br>
+katidhā́ vyákalpayan<br>
+mukháṃ kím-asya kaú bāhū́<br>
+kā́ ūrvū́ pādā́ ucyētē<br>
+
+<h3>12</h3>
+brāhmaṇó’sya múkham-āsīd<br>
+bāhū́ rājanyáḥ kṛtáḥ<br>
+ūrū́ tadasya yadvaiśyáḥ<br>
+padbhyā́ṃ śūdró ajāyata<br>
+
+<h3>13</h3>
+candrámā mánasō jātáś<br>
+cakṣōḥ sū́ryō ajāyata<br>
+mukhā́d-indraścāgníśca<br>
+prāṇā́d-vāyúr-ajāyata<br>
+
+<h3>14</h3>
+nābhyā́ āsīd-antaríkṣaṃ<br>
+śīrṣṇó dyáuḥ samávartata<br>
+padbhyā́ṃ bhūmír-diśáḥ śrōtrāt<br>
+tathā́ lōkā́n-akalpayan<br>
+
+<h3>15</h3>
+saptā́syāsan paridhyás<br>
+triḥ sápta samídhaḥ kṛtā́ḥ<br>
+dēvā́ yadjajñáṃ tanvānā́<br>
+ábadhnan púruṣaṃ paśúm<br>
+
+<h3>16</h3>
+vyajñéna yajñám-ayajanta dēvā́<br>
+stāní dhármāṇi prathamā́nyāsan<br>
+tē ha nā́káṃ mahimā́naḥ sacanta<br>
+yátra pū́rvē sādhyā́ḥ sánti dēvā́ḥ</details>
+
 <br>
 <details><summary>Кочергинa В.А.</summary>
 <h3>1</h3>
@@ -233,6 +331,32 @@
 Эти же могущества последовали на небо,<br>
 Где находятся прежние боги — садхья.</details>
 
+<br>
+<!-- https://www.youtube.com/watch?v=Snyk7C1CVTw -->
+<!--<br>
+<br>
+Нет, это не ошибка, а особенность текста. Разница, которую вы заметили, объясняется тем, что видео содержит версию гимна из Кришна Яджур-веды (Тайттирия-араньяка), в то время как классическая нумерация (где этот стих 15-й) относится к Риг-веде (10-й мандала, 90-й гимн).<br>
+Почему так произошло?<br>
+<br>
+Гимн Пуруше (Purusha Suktam) — один из самых священных текстов, и он встречается в нескольких Ведах с небольшими отличиями в порядке стихов и их количестве:<br>
+<br>
+    В Риг-веде (RV 10.90): Стих, начинающийся со слов saptāsyāsan paridhayas... («Семь было у него поленьев ограды...»), является 15-м.<br>
+<br>
+    В Яджур-веде (как на видео): Порядок стихов изменен. В традиции исполнения Яджур-веды (Veda Ghosha), которую вы слушаете, этот стих традиционно идет 7-м.<br>
+<br>
+Сравнение по тексту Кочергиной:<br>
+<br>
+Если мы возьмем перевод В. А. Кочергиной, который ориентирован на Риг-веду, этот стих звучит так:<br>
+<br>
+    [Стих 15 в Риг-веде / Стих 7 в Яджур-веде]: > «Семь было у него поленьев ограды, трижды семь были сделаны как дрова для костра, когда боги, совершая жертву, привязали Пурушу как (жертвенное) животное».<br>
+<br>
+Особенности видео:<br>
+<br>
+На [03:00] в видео вы можете услышать начало этого стиха. В данной традиции Яджур-веды логика изложения иная: сначала описывается общая подготовка жертвенного костра (стих об «ограде»), а уже затем — само расчленение Пуруши и возникновение из него частей мира (касты, светила, боги).<br>
+<br>
+Итог: Это абсолютно корректное исполнение для школы Яджур-веды. Ошибки нет, есть лишь разница в канонических версиях между разными Ведами.<br>
+<br>
+-->
 
 
 </div>
