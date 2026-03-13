@@ -9,8 +9,8 @@ use warnings;
 our @books =
 (
   '1|dharma/principles|Принципы'
-, '0|dharma/mantra|Мантры'
-, '0|dharma/pranayama|Пранаяма'
+, '1|dharma/kriya|Крия'
+, '1|dharma/mantra|Мантры'
 , '1|dharma/samhita|Самхиты'
 , '0|dharma/upanishad|Упанишады'
 
