@@ -123,14 +123,14 @@ sub get_markup
   # Unordered List
   #---------------------------------------------------------
 
-  my $callback_01 = sub
+  sub callback_01
   {
     my ($matched) = @_;
     $matched =~ s/^(.*?)$/<li>$1<\/li>/mg;
     my $callback_return = "<ul>\n${matched}\n</ul>";
     return $callback_return;
-  };
-  $text_content =~ s/\[\-\n(.*?)\n\-\]/$callback_01->($1)/esg;
+  }
+  $text_content =~ s/\[\-\n(.*?)\n\-\]/callback_01($1)/esg;
 
   #---------------------------------------------------------
   # Ordered List
