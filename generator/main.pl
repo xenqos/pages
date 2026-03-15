@@ -136,64 +136,64 @@ sub get_markup
   # Ordered List
   #---------------------------------------------------------
 
-  sub callback_02
+  my $callback_02 = sub
   {
     my ($matched) = @_;
     $matched =~ s/^(.*?)$/<li>$1<\/li>/mg;
     my $callback_return = "<ol>\n${matched}\n</ol>";
     return $callback_return;
-  }
-  $text_content =~ s/\[\+\n(.*?)\n\+\]/callback_02($1)/esg;
+  };
+  $text_content =~ s/\[\+\n(.*?)\n\+\]/$callback_02->($1)/esg;
 
   #---------------------------------------------------------
   # Pre
   #---------------------------------------------------------
 
-  sub callback_03
+  my $callback_03 = sub
   {
     my ($matched) = @_;
     $matched =~ s/\n/REMOVE_PRECODE\n/sg;
     my $callback_return = "<pre>${matched}</pre>";
     return $callback_return;
-  }
-  $text_content =~ s/\[\*\n(.*?)\n\*\]/callback_03($1)/esg;
+  };
+  $text_content =~ s/\[\*\n(.*?)\n\*\]/$callback_03->($1)/esg;
 
   #---------------------------------------------------------
   # Pre Code
   #---------------------------------------------------------
 
-  sub callback_04
+  my $callback_04 = sub
   {
     my ($matched) = @_;
     $matched =~ s/\n/REMOVE_PRECODE\n/sg;
     my $callback_return = "<pre><code>${matched}</code></pre>";
     return $callback_return;
-  }
-  $text_content =~ s/\[\?\n(.*?)\n\?\]/callback_04($1)/esg;
+  };
+  $text_content =~ s/\[\?\n(.*?)\n\?\]/$callback_04->($1)/esg;
 
   #---------------------------------------------------------
   # Blockquote
   #---------------------------------------------------------
 
-  sub callback_05
+  my $callback_05 = sub
   {
     my ($matched) = @_;
     my $callback_return = "<blockquote>\n${matched}\n</blockquote>";
     return $callback_return;
-  }
-  $text_content =~ s/\[\!\n(.*?)\n\!\]/callback_05($1)/esg;
+  };
+  $text_content =~ s/\[\!\n(.*?)\n\!\]/$callback_05->($1)/esg;
 
   #---------------------------------------------------------
   # Details
   #---------------------------------------------------------
 
-  sub callback_06
+  my $callback_06 = sub
   {
     my ($matched_1, $matched_2) = @_;
     my $callback_return = "<details><summary>${matched_1}</summary>${matched_2}</details>";
     return $callback_return;
-  }
-  $text_content =~ s/\[\@ \((.*?)\)\n(.*?)\n\@\]/callback_06($1, $2)/esg;
+  };
+  $text_content =~ s/\[\@ \((.*?)\)\n(.*?)\n\@\]/$callback_06->($1, $2)/esg;
 
   #---------------------------------------------------------
   # Styles
@@ -221,67 +221,57 @@ sub get_markup
   # Audio
   #---------------------------------------------------------
 
-  sub callback_07
+  my $callback_07 = sub
   {
     my ($matched) = @_;
     my $callback_return = "<audio id='${matched}' src='../sounds/${matched}' preload='auto'></audio>\n";
     $callback_return .= "<span class='clAudio'><span class='clNavRewind' onclick='fncRewindTrack(&quot;${matched}&quot;)'></span><span class='clNavPlay' onclick='fncPlayTrack(&quot;${matched}&quot;)'></span></span>";
     return $callback_return;
-  }
-  $text_content =~ s/\*\[(.*?)\]/callback_07($1)/esg;
+  };
+  $text_content =~ s/\*\[(.*?)\]/$callback_07->($1)/esg;
 
   #---------------------------------------------------------
   # Video
   #---------------------------------------------------------
 
-  sub callback_08
+  my $callback_08 = sub
   {
     my ($matched_1, $matched_2) = @_;
     my $callback_return = "<video id='${matched_1}' src='../videos/${matched_1}' poster='../images/${matched_2}' loop preload='auto'></video>\n";
     $callback_return .= "<div class='clVideo'><span class='clNavRewind' onclick='fncRewindTrack(&quot;${matched_1}&quot;)'></span><span class='clNavPlay' onclick='fncPlayTrack(&quot;${matched_1}&quot;)'></span></div>";
     return $callback_return;
-  }
-  $text_content =~ s/=\[(.*?),(.*?)\]/callback_08($1, $2)/esg;
+  };
+  $text_content =~ s/=\[(.*?),(.*?)\]/$callback_08->($1, $2)/esg;
 
   #---------------------------------------------------------
   # Table ¦ U00A6
   #---------------------------------------------------------
 
-  sub callback_09
+  my $callback_09 = sub
   {
     my ($matched) = @_;
-
-#    $matched =~ s/^\^(.*?)\^$/<tr><th>$1<\/th><\/tr>/mg;
-#    $matched =~ s/^\|>(.*?)\|$/<tr><td class='tar'>$1<\/td><\/tr>/mg;
-#    $matched =~ s/^\|(.*?)\|$/<tr><td>$1<\/td><\/tr>/mg;
-#    $matched =~ s/\^/<\/th><th>/sg;
-#    $matched =~ s/\|/<\/td><td>/sg;
-
     $matched =~ s/^\¦(.*?)\¦$/<tr><th>$1<\/th><\/tr>/mg;
     $matched =~ s/^\|>(.*?)\|$/<tr><td class='tar'>$1<\/td><\/tr>/mg;
     $matched =~ s/^\|(.*?)\|$/<tr><td>$1<\/td><\/tr>/mg;
     $matched =~ s/\¦/<\/th><th>/sg;
     $matched =~ s/\|/<\/td><td>/sg;
-
     my $callback_return = "<div class='clOverflow'><table>${matched}</table></div>";
     return $callback_return;
-  }
-  $text_content =~ s/\[\|\n(.*?)\n\|\]/callback_09($1)/esg;
+  };
+  $text_content =~ s/\[\|\n(.*?)\n\|\]/$callback_09->($1)/esg;
 
-  sub callback_10
+  my $callback_10 = sub
   {
     my ($matched) = @_;
-
     $matched =~ s/^\^(.*?)\^$/<tr><th>$1<\/th><\/tr>/mg;
     $matched =~ s/^\|>(.*?)\|$/<tr><td class='tar'>$1<\/td><\/tr>/mg;
     $matched =~ s/^\|(.*?)\|$/<tr><td>$1<\/td><\/tr>/mg;
     $matched =~ s/\^/<\/th><th>/sg;
     $matched =~ s/\|/<\/td><td>/sg;
-
     my $callback_return = "<div class='clOverflow'><table class='clNoBorder'>${matched}</table></div>";
     return $callback_return;
-  }
-  $text_content =~ s/\[\|\-\n(.*?)\n\|\]/callback_10($1)/esg;
+  };
+  $text_content =~ s/\[\|\-\n(.*?)\n\|\]/$callback_10->($1)/esg;
 
   #---------------------------------------------------------
   # If Then Elsif Else
