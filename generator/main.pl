@@ -3,10 +3,11 @@
 
 use strict;
 use warnings;
+use feature 'state';
 
 #-----------------------------------------------------------
 
-our @books =
+my @books =
 (
   '1|dharma/principles|Принципы'
 , '1|dharma/kriya|Крия'
@@ -58,25 +59,29 @@ our @books =
 
 #-----------------------------------------------------------
 
-our $dir_prefix       = '../zones';
-our $dir_templates    = './templates';
-our $dir_name_pages   = 'pages';
-our $dir_name_texts   = 'texts';
-our $dir_name_sounds  = 'sounds';
-our $file_name_index  = 'index.html';
-our $file_name_page   = 'page.html';
+my $dir_prefix       = '../zones';
+my $dir_templates    = './templates';
+my $dir_name_pages   = 'pages';
+my $dir_name_texts   = 'texts';
+my $dir_name_sounds  = 'sounds';
+my $file_name_index  = 'index.html';
+my $file_name_page   = 'page.html';
 
-our $ext_html         = 'html';
-our $ext_text         = 'txt';
-our $ext_sound        = '';
-our @ext_codecs       = ('opus', 'aac', 'm4a', 'mp3');
-our $ext_image        = 'jpg';
+my $ext_html         = 'html';
+my $ext_text         = 'txt';
+my $ext_sound        = '';
+my @ext_codecs       = ('opus', 'aac', 'm4a', 'mp3');
+my $ext_image        = 'jpg';
 
 #-----------------------------------------------------------
 
 sub get_template
 {
   my ($template_name) = @_;
+
+  state %cache;
+
+  return $cache{$template_name} if exists $cache{$template_name};
 
   my $file_name = "${dir_templates}/${template_name}";
   open my $file_handle, '<', $file_name or die ">>> No File '$file_name' $!";
@@ -85,6 +90,7 @@ sub get_template
 
   $file_content =~ s/"/'/g;
 
+  $cache{$template_name} = $file_content;
   return $file_content;
 }
 
@@ -501,7 +507,6 @@ sub get_pages
     my $audio_on      = '';
     my $audio_tag     = '';
     my $button_audio  = '';
-    my $ext_sound     = '';
     my $number_format = '';
     my $content       = '';
 
@@ -513,7 +518,6 @@ sub get_pages
     close($file_handle_text);
 
     my $dir_sounds = "${dir_prefix}/${book}/${dir_name_sounds}";
-#    $audio_on = -e "${dir_sounds}/${file_name_noext}.${ext_sound}" ? 1 : 0;
 
     foreach my $ext (@ext_codecs)
     {
@@ -525,12 +529,10 @@ sub get_pages
       }
     }
 
-##    $math_on = ($text_content =~ /\[\$|\$\$/) ? $& : '';
-
     ($math_on) = ($text_content =~ /(\[\$|\$\$)/);
     $math_on //= '';
 
-    $page_curr = $file_name_noext;
+    $page_curr = int($file_name_noext);
 
     if    ($page_curr == 1)             { $page_prev = $files_count;      $page_next = $page_curr + 1;  }
     elsif ($page_curr == $files_count)  { $page_prev = $files_count - 1;  $page_next = 1;               }
@@ -539,7 +541,6 @@ sub get_pages
     if    ($files_count > 999) { $number_format = '04'; }
     elsif ($files_count > 99)  { $number_format = '03'; }
     elsif ($files_count > 9)   { $number_format = '02'; }
-    else                       { $number_format = '02'; }
 
     $page_curr = sprintf("%${number_format}d", $page_curr);
     $page_prev = sprintf("%${number_format}d", $page_prev);
