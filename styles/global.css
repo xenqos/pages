@@ -427,10 +427,10 @@ h1, h2, h3, h4, h5, h6
 
 h1 { color: light-dark(#995f46, #e65c5c); font-size: 1.400rem; font-weight: 600; }
 h2 { color: light-dark(#367b36, #59b359); font-size: 1.200rem; font-weight: 600; }
-h3 { color: light-dark(#4d6db0, #80A9FF); font-size: 1.120rem; font-weight: 600; }
-h4 { color: light-dark(#905b90, #CC7ACC); font-size: 1.040rem; font-weight: 600; }
-h5 { color: light-dark(#777425, #CCC866); font-size: 1.040rem; font-weight: 600; }
-h6 { color: light-dark(#427777, #66CCCC); font-size: 1.040rem; font-weight: 600; }
+h3 { color: light-dark(#4d6db0, #6d92f0); font-size: 1.120rem; font-weight: 600; }
+h4 { color: light-dark(#7a4f8c, #CC7ACC); font-size: 1.040rem; font-weight: 600; }
+h5 { color: light-dark(#9e7a1a, #CCC866); font-size: 1.040rem; font-weight: 600; }
+h6 { color: light-dark(#2e7a72, #66CCCC); font-size: 1.040rem; font-weight: 600; }
 
 /*-----------------------------------------------------------------------------------------------*/
 /* Links                                                                                         */
