@@ -1,0 +1,227 @@
+MARKUP RULES
+============================================================
+
+
+HEADERS
+-------
+
+Headers surrounded by matching # on both sides are index-only.
+They appear in the index but not in the page content.
+
+    # Title #           index only, h1
+    ## Title ##         index only, h2
+    ### Title ###       index only, h3
+    #### Title ####     index only, h4
+    ##### Title #####   index only, h5
+    ###### Title ###### index only, h6
+
+Headers with # on the left side only appear in the page content.
+
+    # Title             h1
+    ## Title            h2
+    ### Title           h3
+    #### Title          h4
+    ##### Title         h5
+    ###### Title        h6
+
+
+TEXT FORMATTING
+---------------
+
+    **text**            bold
+    __text__            italic
+    s[text]             small
+
+
+HORIZONTAL LINE
+---------------
+
+Three or more dashes on their own line produce a horizontal rule.
+
+    ---
+
+
+PADDING (INDENTATION)
+---------------------
+
+    > text              1x indent
+    >> text             2x indent
+    >>> text            3x indent
+
+
+LINE BREAKS
+-----------
+
+    ~~                  hard break
+    #~~#                index break — separator in the index, removed from page content
+
+
+LINKS AND IMAGES
+----------------
+
+    ![label|url]        external link, opens in new tab
+    ^[file]             image thumbnail with link to full size, from ../images/
+    @[file]             inline image, from ../images/
+
+
+AUDIO
+-----
+
+    *[file]             inline audio player with rewind and play buttons, from ../sounds/
+
+
+VIDEO
+-----
+
+    =[file,poster]      inline video player with rewind and play buttons
+                        file   — from ../videos/
+                        poster — from ../images/
+
+
+LISTS
+-----
+
+Unordered list:
+
+    [-
+    item one
+    item two
+    item three
+    -]
+
+Ordered list:
+
+    [+
+    item one
+    item two
+    item three
+    +]
+
+
+PREFORMATTED TEXT
+-----------------
+
+Pre block:
+
+    [*
+    text
+    *]
+
+Pre and code block:
+
+    [?
+    code
+    ?]
+
+
+BLOCKQUOTE
+----------
+
+    [!
+    text
+    !]
+
+
+DETAILS / SUMMARY (COLLAPSIBLE)
+--------------------------------
+
+    [@ (Summary title)
+    content
+    @]
+
+
+TABLE WITH BORDERS
+------------------
+
+Column separator for header rows is the broken bar character (U+00A6).
+Column separator for data rows is the pipe character |.
+Right-aligned cells use |> as the row opener.
+
+    [|
+    ¦header one¦header two¦
+    |cell one|cell two|
+    |>right-aligned|normal cell|
+    |]
+
+
+TABLE WITHOUT BORDERS
+---------------------
+
+Column separator for header rows is ^.
+Column separator for data rows is the pipe character |.
+Right-aligned cells use |> as the row opener.
+
+    [|-
+    ^header one^header two^
+    |cell one|cell two|
+    |>right-aligned|normal cell|
+    |]
+
+
+INLINE STYLES
+-------------
+
+    &[classname|text]   q element with the given CSS class
+    %[classname|text]   span element with the given CSS class
+
+
+LINGUISTICS
+-----------
+
+Three-column entry (word / translation / example):
+
+    |word|translation|example|
+
+Same, alternate syntax:
+
+    ||word|translation|example|
+
+Two-line entry (word / translation):
+
+    ||word
+    translation
+
+Entry with inline phonetics:
+
+    |word/phonetics/|translation|example|
+
+
+MATHJAX
+-------
+
+Block math:
+
+    [$
+    LaTeX formula
+    $]
+
+Inline math uses standard $...$ notation directly in the text.
+
+
+PSEUDO ANKI (FLASHCARD)
+-----------------------
+
+    # Question text
+    a[Answer text]
+
+The answer is hidden and revealed on click.
+
+
+IF / THEN / ELSE BLOCK
+----------------------
+
+    if
+    condition text
+    then
+    result text
+    elseif
+    condition text
+    else
+    fallback text
+    endif
+
+
+QUOTES
+------
+
+Double quote characters " are automatically escaped to &quot;.
