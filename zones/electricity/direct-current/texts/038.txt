@@ -1,0 +1,48 @@
+###### 05. Series And Parallel Circuits
+
+# How to Calculate Power in a Series and Parallel Circuit
+
+^[038-01.webp]
+
+<h3 class="text-lg lg:text-2xl font-bold mb-3">What is Electrical Power and How Can You Calculate it in Series and Parallel Circuits?</h3>
+<p><p>Electrical power measures the rate of work represented in electrical circuits by the symbol &ldquo;P&rdquo; and the units of Watts (W). The total circuit power is additive for series, parallel, or any combination of series and parallel components.&nbsp;</p></p>
+<p>When calculating the power dissipation of resistive components, we can use any one of the three Ohm&rsquo;s law power equations if given any two of the voltage (V), current (I), and resistance (R):</p>
+
+<p>$$P = IV = I^2R = \frac{V^2}{R}$$</p>
+
+## Calculating Power Using the Table Method
+<p>These electric power calculations can be easily managed using the table method by adding another row below the voltages, currents, and resistances, as shown in Table 1.</p>
+
+<em><strong>Table 1.</strong> Table method with power included.</em>
+
+^[038-02.webp]
+
+<p>Power for any particular table column can be found using the appropriate Ohm&rsquo;s power law equation.&nbsp;</p>
+
+## Power in Series and Parallel Circuits
+<p>Power is a measure of the rate of work. Per the physics law of conservation of energy, the power dissipated in the circuit must equal the total power applied by the source(s). Therefore, an interesting rule for total circuit power versus individual component power is that it is additive for any circuit configuration: series (Table 2), parallel (Table 3), or any combination of series and parallel.&nbsp;</p>
+
+#### <br />
+<em><strong>Table 2.</strong> Table method for series circuits&mdash;power is additive.</em>
+
+^[038-03.webp]
+
+<em><strong>Table 3. </strong>Table method for parallel circuits&mdash;power is additive.</em>
+
+^[038-04.webp]
+
+<p>If you need a refresher or skipped the pages on series circuits and parallel circuits, you can find them here:</p>
+<ul>
+<li>What is the Difference Between Series and Parallel Circuits?</li>
+<li>Series Circuits and the Application of Ohm&rsquo;s Law</li>
+<li>Parallel Circuits and the Application of Ohm&rsquo;s Law</li>
+</ul>
+
+## Review of Power for Series and Parallel Circuits:
+<ul>
+<li>Electrical power is the measure of work</li>
+<li>Power is represented by the symbol &ldquo;P&rdquo;&nbsp;</li>
+<li>The unit of power is the Watt (W)</li>
+<li>Power is additive in any configuration of a resistive circuit&mdash;series, parallel, or series-parallel</li>
+<li>P<sub>total </sub>= P<sub>1</sub> + P<sub>2</sub> + . . . P<sub>n</sub></li>
+</ul>

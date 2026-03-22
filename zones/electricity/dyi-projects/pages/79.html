@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>DYI Projects</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  <script>MathJax={tex: {inlineMath: [['$', '$'], ['((', '))']], processEscapes: true}};</script>
+  <script id='MathJax-script' async src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'></script>
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='78.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='80.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>Digital Lab - S-R Latch Using NOR Gates</h1>
+<h2>Project Overview</h2>
+<p>S-R latches are a fundamental digital logic circuit that performs a memory function that allows it to store a logical 0 or 1. In this project, you will build and test the S-R latch circuit with switch inputs and light-emitting diode (LED) outputs shown in Figure 1.</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/NOR-gate-SR-latch-illustration.jpg&quot; /></p>
+<em><strong>Figure 1. </strong>S-R latch with switch inputs and LED outputs.</em><br>
+<br>
+<p>In the first portion of the project, you will examine the standard operation of the S-R latch. Then, you will use this simple circuit to learn about some unique aspects of digital circuits, including invalid logic states, race conditions, and output loading.</p>
+
+<h2>Parts and Materials</h2>
+<ul>
+<li>4001 quad NOR gate</li>
+<li>Eight-position dual inline package (DIP)&nbsp;switch</li>
+<li>Ten-segment bar graph LED</li>
+<li>One 6 V battery</li>
+<li>Two 10 k&Omega; resistors</li>
+<li>Two 470 &Omega; resistors</li>
+<li>Two 100 &Omega; resistors</li>
+</ul>
+
+<p><strong>Caution!</strong> The 4001 IC is a complementary metal-oxide semiconductor (CMOS) and, therefore, <strong>sensitive to static electricity!</strong></p>
+<h2><br /></h2>
+Learning Objectives
+<ul>
+<li>To learn&nbsp;the&nbsp;effects of positive feedback in a digital circuit</li>
+<li>What is meant by the invalid&nbsp;state of a latch circuit</li>
+<li>What a race condition is in a digital circuit</li>
+<li>To know&nbsp;the&nbsp;importance of valid high&nbsp;CMOS signal voltage levels</li>
+</ul>
+
+<h2>Instructions</h2>
+<p><strong>Step 1:&nbsp;</strong>Review the pinout diagram of the 4001&nbsp;CMOS quad NOR gate integrated circuit, illustrated in Figure 2.</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/pinout-or-connection-diagram-for-the-4001-quad-NOR-gate.jpg&quot; /></p>
+<em><strong>Figure 2. </strong>Pinout package diagram for the 4001 quad NOR gate</em><br>
+<br>
+<p>It is identical in input, output, and power supply pin assignments to the 4011 quad NAND gate.</p>
+
+<h3>Build the S-R Latch with LED Output Indicators</h3>
+<p><strong>Step 2:&nbsp;</strong>Cross-connect two NOR gates,&nbsp;as shown in the schematic diagram of Figure 3, on a breadboard as illustrated in Figure 4.&nbsp;</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/NOR-gate-SR-latch-schematic.jpg&quot; /></p>
+<em><strong>Figure 3. </strong>Schematic diagram of an&nbsp;S-R latch built using NOR gates</em><br>
+<br>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/NOR-gate-SR-latch-illustration.jpg&quot; /></p>
+<em><strong>Figure 4. </strong>Breadboard implementation of an S-R latch built using NOR gates</em><br>
+<br>
+<p>This cross-connection creates&nbsp;positive feedback from output to input. That is, the output signal tends to maintain the gate in its last output state. Just as in op-amp circuits, positive feedback creates a&nbsp;hysteresis.&nbsp;This tendency for the circuit to remain in its last output state gives it a sort of memory.&nbsp;In fact, there are solid-state computer memory technologies based on circuitry like this!</p>
+<p><strong>Step 3:&nbsp;</strong>Connect two of the switches to the remaining NOR gate inputs, and add a 10 k&Omega; pulldown resistor&nbsp;to each switch (Figures 3 and 4).&nbsp;</p>
+<p><strong>Step 4:&nbsp;</strong>Connect the outputs of the two NOR gates to LEDs and add 470 &Omega; resistors in series with the LEDs to limit the currents.&nbsp;If we designate the left switch as the SET&nbsp;input and the right switch as the RESET input,&nbsp;the left LED will be the Q&nbsp;output and the right LED the \(\overline{Q}\)&nbsp;output.&nbsp;\(&nbsp;\overline{Q} \) is the logical inverse of&nbsp;Q&nbsp;and is referred to as&nbsp;&quot;Q-not.&quot;</p>
+<p>$$ \overline{Q} = \neg Q = ~!Q $$&nbsp;</p>
+
+<h3>Test the S-R Latch Operation</h3>
+<p><strong>Step 5:&nbsp;</strong>Now, switch the SET input high&nbsp;(switch on for&nbsp;logic 1) and the RESET&nbsp;input low&nbsp;(switch off for logic 0). Q will go high (1)&nbsp;and turn on its LED, while \(&nbsp;\overline{Q} \) will go low (0) to turn off its LED.&nbsp;This is known as the set state of the S-R latch.</p>
+<p><strong>Step 6:&nbsp;</strong>Making the RESET&nbsp;input high (1) and the SET input low (0)&nbsp;reverses the latch circuit&rsquo;s output state: Q low (0) and \(&nbsp;\overline{Q} \) high (1). This is known as the reset state of the circuit.</p>
+<p><strong>Step 7:&nbsp;</strong>Place&nbsp;both inputs into the low (0) state. The circuit&rsquo;s Q and \(&nbsp;\overline{Q} \) outputs will remain in their last states, remembering&nbsp;their prior settings. This is known as the latched state of the circuit.</p>
+<p><strong>Step 8:&nbsp;</strong>Since the outputs have been designated Q&nbsp;and \(&nbsp;\overline{Q} \), it is implied that their states will always be complementary (opposite). Thus, if something were to happen that forced both outputs to the same state, we would be inclined to call that mode of the circuit invalid.&nbsp;This is exactly what will happen if we make both SET and RESET inputs high:&nbsp;both Q and \(&nbsp;\overline{Q} \) outputs will be forced to the same low (0) logic state.</p>
+<p>Give it a try. This is known as the invalid or illegal state of the circuit, not because something has gone wrong but because the outputs have failed to meet the expectations established by their labels.</p>
+<p><strong>Step 9:&nbsp;</strong>Since the latched&nbsp;state is a hysteretic condition whereby the last output states are remembered,&nbsp;one might wonder what will happen if the circuit powers up this way with no previous state to hold. To experiment, place both switches in their off positions, making both SET and RESET inputs low, then disconnect one of the battery wires from the breadboard, as shown in Figure 5.</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/NOR-gate-SR-latch-illustration-two.jpg&quot; /></p>
+<em><strong>Figure 5. </strong>Powering on and off the S-R latch built using NOR gates to examine memory effects.</em><br>
+
+<h3>Examining Race Conditions in the S-R Latch Circuit</h3>
+<p><strong>Step 10:&nbsp;</strong>Quickly make and break contact between that battery wire and its proper connection point on the breadboard, noting the status of the two LEDs as the circuit is powered up repeatedly.&nbsp;When a latch circuit such as this is powered up into its latched&nbsp;state, the gates race against each other for control. Given the low&nbsp;inputs, both gates try to output high&nbsp;signals. If one of the gates reaches its high&nbsp;output state before the other, that high&nbsp;state will be fed back to the other gate&rsquo;s input to force its output low, and the race is won by the faster gate.</p>
+<p>Invariably, one gate wins the race due to internal variations between gates in the chip and/or external resistances and capacitances that act to delay one gate more than the other. What this usually means is that the circuit tends to power up in the same mode over and over again. However, if you are persistent in your powering/un-powering cycles, you should see at least a few times where the latch circuit powers up latched in the <em>opposite</em> state from normal.</p>
+<p>Race conditions are generally undesirable in any system, leading to unpredictable operations. They can be particularly troublesome to locate, as this experiment shows, because of the unpredictability they create. Imagine a scenario, for instance, where one of the two NOR gates was exceptionally slow-acting due to a defect in the chip.&nbsp;This handicap would cause the other gate to win the power-up race every time. In other words, the circuit will be predictable on power-up with both inputs low.&nbsp;However, suppose that the unusual chip was to be replaced by one with more evenly matched gates or by a chip where the other NOR gate was consistently slower.</p>
+<p>Normal circuit behavior is not supposed to change when a component is replaced, but if race conditions are present, a change of components may very well do just that.&nbsp;Due to the inherent race tendency of an S-R latch, one should not design a circuit with the expectation of a consistent power-up state but rather use external means to force&nbsp;the race so that the desired gate always wins.</p>
+
+<h3>Examining the Effects of Gate Output Loading</h3>
+<p><strong>Step 11:&nbsp;</strong>An interesting modification to try in this circuit is to replace one of the 470 &Omega; LED dropping&nbsp;resistors with a lower-value unit, such as 100 &Omega;. The obvious effect of this alteration will be increased LED brightness, as more current is allowed through.&nbsp;A not-so-obvious effect will also result, and it is this effect that holds great learning value. So, try replacing one of the 470 &Omega; resistors with a 100 &Omega; resistor, and operate the input signal switches through all four possible setting combinations, noting the circuit&#39;s behavior.</p>
+<p>You should note that the circuit refuses to latch in one of its states (either SET or RESET) but only in the other state when the input switches are both sets low&nbsp;(the latch&nbsp;mode). Why is this?</p>
+<p><strong>Step 12:&nbsp;</strong>Use a voltmeter to measure the output voltage of the gate whose output is high&nbsp;when both inputs are low.&nbsp;Note this voltage indication, then set the input switches so that the other state (either RESET or SET) is forced, and measure the output voltage of the other gate when its output is high.&nbsp;Next, note the difference between the two gate output voltage levels, one gate is loaded by an LED with a 470 &Omega; resistor, and the other is loaded by an LED with a 100 &Omega; resistor.</p>
+<p>The one loaded down by the heavier&nbsp;load (100 &Omega; resistors) outputs a lower voltage. So much less voltage that it will not be interpreted by the other NOR gate&rsquo;s input as a high&nbsp;signal at all as it is fed back! All logic gates have permissible high&nbsp;and low&nbsp;input signal voltage ranges, and if the voltage of a digital signal falls outside this permissible range, it might not be properly interpreted by the receiving gate.</p>
+<p>In a latch circuit such as this, which depends on a solid high&nbsp;signal fed back from the output of one gate to the input of the other, a weak&nbsp;signal will not be able to maintain the positive feedback necessary to keep the circuit latched in one of its states.&nbsp;This is why I favor using a voltmeter as a logic probe&nbsp;for determining digital signal levels rather than an actual logic probe with high&nbsp;and low&nbsp;lights. A logic probe may not indicate the presence of a weak&nbsp;signal, whereas a voltmeter definitely will by means of its quantitative indication.</p>
+<p>This type of problem, common in circuits where different families&nbsp;of integrated circuits are mixed (TTL and CMOS, for example), can only be found with test equipment providing quantitative signal level measurements.</p>
+
+
+</div>
+</div>
+</body>
+</html>

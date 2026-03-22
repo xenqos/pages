@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Semiconductors</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='053.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='055.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>The Junction Field-effect Transistor (JFET) as a Switch</h1>
+<p>Like its bipolar cousin, the field-effect transistor may be used as an on/off switch controlling electrical power to a load. Let&rsquo;s begin our investigation of the JFET as a switch with our familiar switch/lamp circuit:</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/switch-lamp-circuit.jpg&quot; /></p>
+<p>Remembering that the controlled current in a JFET flows between source and drain, we substitute the source and drain connections of a JFET for the two ends of the switch in the above circuit:</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/jfet-identical-symbol.jpg&quot; /></p>
+<p>If you haven&rsquo;t noticed by now, the source and drain connections on a JFET look identical on the schematic symbol. Unlike the bipolar junction transistor where the emitter is clearly distinguished from the collector by the arrowhead, a JFET&rsquo;s source and drain lines both run perpendicular into the bar representing the semiconductor channel. This is no accident, as the source and drain lines of a JFET are often interchangeable in practice! In other words, JFETs are usually able to handle channel current in either direction, from source to drain or from drain to source.</p>
+<h2>JFET as an Opened Switch</h2>
+<p>Now, all we need in the circuit is a way to control the JFET&rsquo;s conduction. With zero applied voltage between gate and source, the JFET&rsquo;s channel will be &ldquo;open,&rdquo; allowing full current to the lamp. In order to turn the lamp off, we will need to connect another source of DC voltage between the gate and source connections of the JFET like this:</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/jfet-opened-switch.jpg&quot; /></p>
+<h2>JFET as a&nbsp;Closed Switch</h2>
+<p>Closing this switch will &ldquo;pinch off&rdquo; the JFET&rsquo;s channel, thus forcing it into cutoff and turning the lamp off:</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/jfet-closed-switch.jpg&quot; /></p>
+<p>Note that there is no current going through the gate. As a reverse-biased PN junction, it firmly opposes the flow of current through it. As a voltage-controlled device, the JFET requires negligible input current. This is an advantageous trait of the JFET over the bipolar transistor: there is virtually zero power required of the controlling signal.</p>
+<p>Opening the control switch again should disconnect the reverse-biasing DC voltage from the gate, thus allowing the transistor to turn back on. Ideally, anyway, this is how it works. In practice this may not work at all:</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/no-lamp-current-after-switch-open.jpg&quot; /></p>
+<p>Why is this? Why doesn&rsquo;t the JFET&rsquo;s channel open up again and allow lamp current through like it did before with no voltage applied between gate and source? The answer lies in the operation of the reverse-biased gate-source junction. The depletion region within that junction acts as an insulating barrier separating gate from source. As such, it possesses a certain amount of <em>capacitance</em> capable of storing an electric charge potential. After this junction has been forcibly reverse-biased by the application of an external voltage, it will tend to hold that reverse-biasing voltage as a stored charge even after the source of that voltage has been disconnected. What is needed to turn the JFET on again is to bleed off that stored charge between the gate and source through a resistor:</p>
+<h2>Bleeding Resistor</h2>
+<p>&nbsp;<img src=&quot;https://www.allaboutcircuits.com/uploads/articles/bleeding-resistor.jpg&quot; /></p>
+<p>This resistor&rsquo;s value is not very important. The capacitance of the JFET&rsquo;s gate-source junction is very small, and so even a rather high-value bleed resistor creates a fast RC time constant, allowing the transistor to resume conduction with little delay once the switch is opened.  </p>
+<p>Like the bipolar transistor, it matters little where or what the controlling voltage comes from. We could use a solar cell, thermocouple, or any other sort of voltage-generating device to supply the voltage controlling the JFET&rsquo;s conduction. All that is required of a voltage source for JFET switch operation is <em>sufficient</em> voltage to achieve pinch-off of the JFET channel. This level is usually in the realm of a few volts DC, and is termed the <em>pinch-off</em> or <em>cutoff</em> voltage. The exact pinch-off voltage for any given JFET is a function of its unique design, and is not a universal figure like 0.7 volts is for a silicon BJT&rsquo;s base-emitter junction voltage.</p>
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li>Field-effect transistors control the current between source and drain connections by a voltage applied between the gate and source. In a <em>junction</em> field-effect transistor (JFET), there is a PN junction between the gate and source which is normally reverse-biased for control of source-drain current.</li>
+<li>JFETs are normally-on (normally-saturated) devices. The application of a reverse-biasing voltage between gate and source causes the depletion region of that junction to expand, thereby &ldquo;pinching off&rdquo; the channel between source and drain through which the controlled current travels.</li>
+<li>It may be necessary to attach a &ldquo;bleed-off&rdquo; resistor between gate and source to discharge the stored charge built up across the junction&rsquo;s natural capacitance when the controlling voltage is removed. Otherwise, a charge may remain to keep the JFET in cutoff mode even after the voltage source has been disconnected.</li>
+</ul>
+
+
+
+</div>
+</div>
+</body>
+</html>

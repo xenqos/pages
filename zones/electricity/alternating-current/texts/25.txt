@@ -1,0 +1,36 @@
+###### 04. Reactance and Impedance—Capacitive
+
+# Capacitor Quirks
+<p>As with inductors, the ideal capacitor is a purely reactive device, containing absolutely zero resistive (power dissipative) effects. In the real world, of course, nothing is so perfect. However, capacitors have the virtue of generally being <em>purer</em> reactive components than inductors.</p>
+<p>It is a lot easier to design and construct a capacitor with low internal series resistance than it is to do the same with an inductor. The practical result of this is that real capacitors typically have impedance phase angles more closely approaching 90&deg; (actually, -90&deg;) than inductors.</p>
+<p>Consequently, they will tend to dissipate less power than an equivalent inductor.</p>
+<p>Capacitors also tend to be smaller and lighter weight than their equivalent inductor counterparts, and since their electric fields are almost totally contained between their plates (unlike inductors, whose magnetic fields naturally tend to extend beyond the dimensions of the core), they are less prone to transmitting or receiving electromagnetic &ldquo;noise&rdquo; to/from other components.</p>
+<p>For these reasons, circuit designers tend to favor capacitors over inductors wherever a design permits either alternative.</p>
+<p>Capacitors with significant resistive effects are said to be <em>lossy</em>, in reference to their tendency to dissipate (&ldquo;lose&rdquo;) power like a resistor. The source of capacitor loss is usually the dielectric material rather than any wire resistance, as wire length in a capacitor is very minimal.</p>
+<p>Dielectric materials tend to react to changing electric fields by producing heat. This heating effect represents a loss in power and is equivalent to resistance in the circuit. The effect is more pronounced at higher frequencies and in fact can be so extreme that it is sometimes exploited in manufacturing processes to heat insulating materials like plastic!</p>
+<p>The plastic object to be heated is placed between two metal plates, connected to a source of high-frequency AC voltage. Temperature is controlled by varying the voltage or frequency of the source, and the plates never have to contact the object being heated.</p>
+<p>This effect is undesirable for capacitors where we expect the component to behave as a purely <em>reactive circuit</em> element. One of the ways to mitigate the effect of dielectric &ldquo;loss&rdquo; is to choose a dielectric material less susceptible to the effect. Not all dielectric materials are equally &ldquo;lossy.&rdquo; A relative scale of dielectric loss from least to greatest is given in the table below</p>
+
+### Dielectric loss
+
+[|
+¦Material¦Loss¦
+|Vacuum              |Low |
+|Air                 |-   |
+|Polystyrene         |-   |
+|Mica                |-   |
+|Glass               |-   |
+|Low-K ceramic       |-   |
+|Plastic film (Mylar)|-   |
+|Paper               |-   |
+|High-K ceramic      |-   |
+|Aluminum oxide      |-   |
+|Tantalum pentoxide  |high|
+|]
+
+<p>Dielectric resistivity manifests itself both as a series and a parallel resistance with the pure capacitance:</p>
+
+^[25-01.webp]
+<p><em>Real capacitor has both series and parallel resistance.</em></p>
+
+<p>Fortunately, these stray resistances are usually of modest impact (low series resistance and high parallel resistance), much less significant than the stray resistances present in an average inductor.</p>

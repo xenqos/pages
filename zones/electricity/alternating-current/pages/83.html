@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Alternating Current</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='82.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='84.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h6>13. AC Motors</h6>
+
+<h1>Wound Rotor Induction Motors</h1>
+<p>A <em>wound rotor</em> induction motor has a stator like a squirrel cage induction motor, but a rotor with insulated windings brought out via slip rings and brushes.</p>
+<p>However, no power is applied to the slip rings. Their sole purpose is to allow resistance to be placed in series with the rotor windings while starting (figure below). This resistance is shorted out once the motor is started to make the rotor look electrically like the squirrel cage counterpart.</p>
+<a target='_blank' href='../images/83-01.webp'><img class='clImageThumb' src='../images/83-01.webp'></a><br>
+<p><em>Wound rotor induction motor</em></p>
+<p><strong>Q:</strong> Why put resistance in series with the rotor?</p>
+<p><strong>A:</strong> Squirrel cage induction motors draw 500% to over 1000% of full load current (FLC) during starting. While this is not a severe problem for small motors, it is for large (10&rsquo;s of kW) motors.</p>
+<p>Placing resistance in series with the rotor windings not only decreases start current, locked rotor current (LRC) but also increases the starting torque, locked rotor torque (LRT). The figure below shows that by increasing the rotor resistance from R<sub>0</sub> to R<sub>1</sub> to R<sub>2</sub>, the breakdown torque peak is shifted left to zero speed.</p>
+<p>Note that this torque peak is much higher than the starting torque available with no rotor resistance (R<sub>0</sub>) slip is proportional to rotor resistance, and pullout torque is proportional to slip. Thus, high torque is produced while starting.</p>
+<a target='_blank' href='../images/83-02.webp'><img class='clImageThumb' src='../images/83-02.webp'></a><br>
+<p><em>Breakdown torque peak is shifted to zero speed by increasing rotor resistance</em></p>
+<p>The resistance decreases the torque available at full running speed. But that resistance is shorted out by the time the rotor is started. A shorted rotor operates like a squirrel cage rotor. The heat generated during starting is mostly dissipated external to the motor in the starting resistance.</p>
+<p>The complication and maintenance associated with brushes and slip rings is a disadvantage of the wound rotor as compared to the simple squirrel cage rotor.</p>
+<p>This motor is suited for starting highly inertial loads. A high starting resistance makes the high pull out torque available at zero speed. For comparison, a squirrel cage rotor only exhibits pull out (peak) torque at 80% of its synchronous speed.</p>
+<h2>Speed Control</h2>
+<p>Motor speed may be varied by putting variable resistance back into the rotor circuit. This reduces the rotor current and speed. The high starting torque available at zero speed, the downshifted break down torque, is not available at high speed.</p>
+<p>See R<sub>2</sub> curve at 90% Ns, the figure below. Resistors R<sub>0</sub>, R<sub>1</sub>, R<sub>2</sub>, R<sub>3</sub> increase in value from zero.</p>
+<p>A higher resistance at R<sub>3</sub> reduces the speed further. The speed regulation is poor with respect to changing torque loads. This speed control technique is only useful over a range of 50% to 100% of full speed.</p>
+<p>Speed control works well with variable speed loads like elevators and printing presses.</p>
+<a target='_blank' href='../images/83-03.webp'><img class='clImageThumb' src='../images/83-03.webp'></a><br>
+<p><em>Rotor resistance controls the speed of wound rotor induction motor</em></p>
+
+<h2>Doubly-fed Induction Generator</h2>
+<p>We previously described a squirrel cage induction motor acting as a generator if driven faster than the synchronous speed. (See Induction motor alternator) This is a <em>singly-fed induction generator</em>, having electrical connections only to the stator windings.</p>
+<p>A wound rotor induction motor may also act as a generator when driven above the synchronous speed. Since there are connections to both the stator and rotor, such a machine is known as a <em>doubly-fed induction generator</em> (DFIG).</p>
+<a target='_blank' href='../images/83-04.webp'><img class='clImageThumb' src='../images/83-04.webp'></a><br>
+<p><em>Rotor resistance allows over-speed of doubly-fed induction generator</em></p>
+<p>The singly-fed induction generator only had a usable slip range of 1% when driven by troublesome wind torque. Since the speed of a wound rotor induction motor may be controlled over a range of 50-100% by inserting resistance in the rotor, we may expect the same of the doubly-fed induction generator.</p>
+<p>Not only can we slow the rotor by 50%, but we can also over speed it by 50%. That is, we can vary the speed of a doubly-fed induction generator by &plusmn;50% from the synchronous speed. In actual practice, &plusmn;30% is more practical.</p>
+<p>If the generator over-speeds, resistance placed in the rotor circuit will absorb excess energy while the stator feeds constant 60 Hz to the power line (figure above). In the case of under-speed, negative resistance inserted into the rotor circuit can make up the energy deficit, still allowing the stator to feed the power line with 60 Hz power.</p>
+<a target='_blank' href='../images/83-05.webp'><img class='clImageThumb' src='../images/83-05.webp'></a><br>
+<p><em>Converter recovers energy from the rotor of the doubly-fed induction generator</em></p>
+<p>In actual practice, the rotor resistance may be replaced by a converter absorbing power from the rotor, and feeding power into the power line instead of dissipating it. This improves the efficiency of the generator.</p>
+<a target='_blank' href='../images/83-06.webp'><img class='clImageThumb' src='../images/83-06.webp'></a><br>
+<p><em>Converter borrows energy from the power line for the rotor of the doubly-fed induction generator, allowing it to function well under the synchronous speed</em></p>
+<p>The converter may &ldquo;borrow&rdquo; power from the line for the under-speed rotor, which passes it on to the stator. The borrowed power, along with the larger shaft energy, passes to the stator which is connected to the power line.</p>
+<p>The stator appears to be supplying 130% of power to the line. Keep in mind that the rotor &ldquo;borrows&rdquo; 30%, leaving the line with 100% for the theoretical lossless DFIG.</p>
+<h3>Wound Rotor Induction Motor Qualities</h3>
+<ul>
+<li>Excellent starting torque for high inertia loads.</li>
+<li>Low starting current compared to squirrel cage induction motor.</li>
+<li>Speed is the resistance variable over 50% to 100% full speed.</li>
+<li>Higher maintenance of brushes and slip rings compared to squirrel cage motor.</li>
+<li>The generator version of the wound rotor machine is known as a <em>doubly-fed induction generator</em>, a variable speed machine.</li>
+</ul>
+
+
+
+</div>
+</div>
+</body>
+</html>

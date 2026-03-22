@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Direct Current</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  <script>MathJax={tex: {inlineMath: [['$', '$'], ['((', '))']], processEscapes: true}};</script>
+  <script id='MathJax-script' async src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'></script>
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='036.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='038.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h6>05. Series And Parallel Circuits</h6>
+
+<h1>What is the Relationship Between Conductance and Resistance?</h1>
+
+<a target='_blank' href='../images/037-01.webp'><img class='clImageThumb' src='../images/037-01.webp'></a><br>
+
+<h3 class=&quot;text-lg lg:text-2xl font-bold mb-3&quot;>What is Conductance?</h3>
+<p><p>Conductance measures how easy it is for electric current to flow and is the inverse of resistance. Conductance is symbolized by the letter &ldquo;G&rdquo; and is measured in units of siemens or mhos.</p></p>
+<p>The concept and measurement units of resistance are most often used when describing the relationship of current flow to voltage through Ohm&rsquo;s Law. However, it is sometimes helpful to express the ability of a material to conduct current rather than its opposition to that current.&nbsp;</p>
+<p>This ability to conduct current, called &ldquo;conductance,&rdquo; will be described in detail in this article.&nbsp;</p>
+
+<h2>Conductance vs Resistance</h2>
+<p>Resistance is defined as the measure of friction a component presents to the flow of current through it. Symbolized by the capital letter &ldquo;R,&rdquo; resistance is measured in the unit of &ldquo;ohm,&rdquo; which is represented by the Greek capital letter omega, &Omega;.&nbsp;</p>
+<p>With that in mind, we can also think of this electrical property in terms of its inverse&mdash;how easy it is for the current to flow through a component rather than how difficult.</p>
+<p>If resistance is the word we use to symbolize the measure of how difficult it is for the current to flow, then a good word to express how easy it is for the current to flow would be conductance. Mathematically, conductance is the reciprocal, or inverse, of resistance:</p>
+<p>$$Conductance \space \text{(S)}= \frac{1}{Resistance \space (\Omega)}$$</p>
+<p>The greater the resistance, the less the conductance&mdash;and vice versa. This should make intuitive sense because resistance and conductance are opposite ways to denote the same essential electrical property.</p>
+<p>If two components&rsquo; resistances are compared, and it is found that component &ldquo;A&rdquo; has one-half the resistance of component &ldquo;B,&rdquo; then we could alternatively express this relationship by saying that component &ldquo;A&rdquo; is twice as conductive as component &ldquo;B.&rdquo; If component &ldquo;A&rdquo; has one-third the resistance of component &ldquo;B,&rdquo; then we could say it is three times more conductive than component &ldquo;B,&rdquo; and so on.</p>
+
+<h2>Conductance Units&mdash;mho and Siemens</h2>
+<p>Carrying this idea further, a symbol and unit were created to represent conductance. The symbol is the capital letter &ldquo;G,&rdquo; and the unit is the mho, which is &ldquo;ohm&rdquo; spelled backward (and you didn&rsquo;t think electronics engineers had any sense of humor!).</p>
+<p>Despite its appropriateness, the unit of the mho was replaced in later years by the unit of Siemens (abbreviated by the capital letter &ldquo;S&rdquo;). This decision to change unit names is reminiscent of the change from the temperature unit of degrees Centigrade to degrees Celsius; or the change from the unit of frequency c.p.s. (cycles per second) to Hertz. If you&rsquo;re looking for a pattern here, Siemens, Celsius, and Hertz are all surnames of famous scientists, the names of which, sadly, tell us less about the nature of the units than the units&rsquo; original designations.</p>
+<p>As a footnote, the unit of Siemens is never expressed without the last letter &ldquo;s.&rdquo; In other words, there is no such thing as a unit of &ldquo;siemen&rdquo; as there is in the case of the &ldquo;ohm&rdquo; or the &ldquo;mho.&rdquo; The reason for this is the proper spelling of the respective scientists&rsquo; surnames.</p>
+<p>The unit for electrical resistance was named after someone named &ldquo;Ohm,&rdquo; whereas the unit for electrical conductance was named after someone named &ldquo;Siemens&rdquo;, therefore it would be improper to &ldquo;singularize&rdquo; the latter unit as its final &ldquo;s&rdquo; does not denote plurality.</p>
+
+<h2>Understanding Total Resistance and Total Conductance in a Parallel Circuit</h2>
+<p>In the next two sections, we&rsquo;ll cover the total resistance and conductance in parallel circuits.&nbsp;</p>
+
+<h3>Total Resistance in a Parallel Circuit</h3>
+<p>Examining the parallel resistance circuit of Figure 1, we should be able to see that multiple paths (branches) for current reduce the total resistance for the whole circuit.&nbsp;</p>
+<a target='_blank' href='../images/037-02.webp'><img class='clImageThumb' src='../images/037-02.webp'></a><br>
+
+<em><strong>Figure 1.</strong> Total parallel resistance is less than individual resistance values.</em><br>
+<br>
+<p>The current can flow more easily through the whole network of multiple branches than through any one of those branch resistances alone. In terms of resistance, additional branches result in a reduced total equivalent resistance because the current has less opposition.</p>
+
+<h3>Total Conductance in a Parallel Circuit</h3>
+<p>In terms of conductance, however, additional branches result in greater total conductance because the current flow is increased. Total parallel conductance is greater than any of the individual branch conductances because parallel resistors conduct better together than they would separately (Figure 2)</p>
+<a target='_blank' href='../images/037-03.webp'><img class='clImageThumb' src='../images/037-03.webp'></a><br>
+
+<em><strong>Figure 2.</strong> Total parallel conductance is the sum of the individual conductance values.</em><br>
+<br>
+<p>To be more precise, the total conductance in a parallel circuit is equal to the sum of the individual conductances:</p>
+<p>$$G_{total} = G_1 + G_2 + G_3 + G_4$$</p>
+<p>If we know that conductance is nothing more than the mathematical reciprocal (1/x) of resistance, we can translate each term of the total conductance formula into resistance by substituting the reciprocal of each respective conductance:</p>
+<p>$$\frac{1}{R_{total}} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} + \frac{1}{R_4}$$</p>
+<p>Solving the above equation for total resistance (instead of the reciprocal of total resistance), we can invert (reciprocate) both sides of the equation:</p>
+<p>$$R_{total} = \frac{1}{\frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} + \frac{1}{R_4}}$$</p>
+<p>So, we arrive at our cryptic parallel equivalent resistance formula at last! Conductance (G) is seldom used as a practical measurement, so the formula above is common in the analysis of parallel circuits.</p>
+
+<h2>Review of Conductance</h2>
+<ul>
+<li>Conductance is the measure of how easy it is for electric current to flow through something</li>
+<li>Conductance is symbolized by the letter &ldquo;G&rdquo;&nbsp;</li>
+<li>Conductance is the inverse of resistance: G = 1/R</li>
+<li>Conductance is measured in units of Siemens or mhos</li>
+</ul>
+
+
+
+</div>
+</div>
+</body>
+</html>

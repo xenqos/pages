@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Alternating Current</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='17.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='19.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h6>03. Reactance and Impedance—Inductive</h6>
+
+<h1>Parallel Resistor-Inductor Circuits</h1>
+<p>Let&rsquo;s take the same components for our series example circuit and connect them in parallel:</p>
+<a target='_blank' href='../images/18-01.webp'><img class='clImageThumb' src='../images/18-01.webp'></a><br>
+<p><em>Parallel R-L circuit.</em></p>
+<p>Because the power source has the same frequency as the series example circuit, and the resistor and inductor both have the same values of resistance and inductance, respectively, they must also have the same values of impedance. So, we can begin our analysis table with the same &ldquo;given&rdquo; values:</p>
+<a target='_blank' href='../images/18-02.webp'><img class='clImageThumb' src='../images/18-02.webp'></a><br>
+
+<p>The only difference in our analysis technique this time is that we will apply the rules of parallel circuits instead of the rules for series circuits. The approach is fundamentally the same as for DC. We know that voltage is shared uniformly by all components in a parallel circuit, so we can transfer the figure of total voltage (10 volts &ang; 0&deg;) to all component columns:</p>
+<a target='_blank' href='../images/18-03.webp'><img class='clImageThumb' src='../images/18-03.webp'></a><br>
+
+<p>Now we can apply Ohm&rsquo;s Law (I=E/Z) vertically to two columns of the table, calculating current through the resistor and current through the inductor:</p>
+<a target='_blank' href='../images/18-04.webp'><img class='clImageThumb' src='../images/18-04.webp'></a><br>
+
+<p>Just as with DC circuits, branch currents in a parallel AC circuit add to form the total current (Kirchhoff&rsquo;s Current Law still holds true for AC as it did for DC):</p>
+<a target='_blank' href='../images/18-05.webp'><img class='clImageThumb' src='../images/18-05.webp'></a><br>
+
+<p>Finally, total impedance can be calculated by using Ohm&rsquo;s Law (Z=E/I) vertically in the &ldquo;Total&rdquo; column. Incidentally, parallel impedance can also be calculated by using a reciprocal formula identical to that used in calculating parallel resistances.</p>
+<a target='_blank' href='../images/18-06.webp'><img class='clImageThumb' src='../images/18-06.webp'></a><br>
+
+<p>The only problem with using this formula is that it typically involves a lot of calculator keystrokes to carry out.</p>
+<p>And if you&rsquo;re determined to run through a formula like this &ldquo;longhand,&rdquo; be prepared for a very large amount of work! But, just as with DC circuits, we often have multiple options in calculating the quantities in our analysis tables, and this example is no different.</p>
+<p>No matter which way you calculate total impedance (Ohm&rsquo;s Law or the reciprocal formula), you will arrive at the same figure:</p>
+<a target='_blank' href='../images/18-07.webp'><img class='clImageThumb' src='../images/18-07.webp'></a><br>
+
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li>Impedances (Z) are managed just like resistances (R) in parallel circuit analysis: parallel impedances diminish to form the total impedance, using the reciprocal formula. Just be sure to perform all calculations in complex (not scalar) form! ZTotal = 1/(1/Z1 + 1/Z2 + . . . 1/Zn)</li>
+<li>Ohm&rsquo;s Law for AC circuits: E = IZ ; I = E/Z ; Z = E/I</li>
+<li>When resistors and inductors are mixed together in parallel circuits (just as in series circuits), the total impedance will have a phase angle somewhere between 0&deg; and +90&deg;. The circuit current will have a phase angle somewhere between 0&deg; and -90&deg;.</li>
+<li>Parallel AC circuits exhibit the same fundamental properties as parallel DC circuits: voltage is uniform throughout the circuit, branch currents add to form the total current, and impedances diminish (through the reciprocal formula) to form the total impedance.</li>
+</ul>
+
+
+
+</div>
+</div>
+</body>
+</html>

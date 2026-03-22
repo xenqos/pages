@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>DYI Projects</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='51.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='53.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>Si Lab - Full-wave Center-tap Rectifier</h1>
+<h2>Project Overview</h2>
+<p>The&nbsp;rectifier circuit&nbsp;in Figure 1 is called full-wave because it makes use of both the positive and negative half-cycles of the sinusoidal AC source voltage wave in powering a DC load.&nbsp;</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/full-wave-center-tap-rectifier-schematic-diagram.jpg&quot; /></p>
+<em><strong>Figure 1. </strong>Schematic diagram of a&nbsp;full-wave center-tap&nbsp;rectifier circuit driving a DC motor.</em><br>
+<br>
+<p>As a result, there is less ripple&nbsp;voltage seen at the load than in a half-wave rectifier. It relies on the center-tapped transformer and two diodes to always provide a positive voltage to the load.</p>
+
+<h2>Parts and Materials</h2>
+<ul>
+<li>Low-voltage AC power supply (6 V&nbsp;output) with a center tap</li>
+<li>Two 1N4001 rectifying diodes&nbsp;or any of the 1N400X series of rectifying diodes&nbsp;</li>
+<li>Small hobby&nbsp;motor, permanent-magnet type</li>
+<li>Optional: Audio detector with headphones</li>
+<li>Optional: 0.1 &micro;F capacitor</li>
+<li>One toggle switch, SPST (single-pole, single-throw)</li>
+</ul>
+
+<p>It is essential for this experiment that the low-voltage AC power supply is equipped with a center tap. A transformer with a non-tapped secondary winding simply will not work for this circuit.</p>
+
+<h2>Learning Objectives</h2>
+<ul>
+<li>Design of a full-wave center-tap rectifier circuit</li>
+<li>How to measure ripple&nbsp;voltage with a voltmeter</li>
+</ul>
+
+<h2>Instructions</h2>
+<p><strong>Step 1: </strong>First, build the circuit illustrated in Figure 2.&nbsp;</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/thumbnails/full-wave_center-tap_rectifier_figure_2.jpg&quot; /></p>
+<em><strong>Figure 2. </strong>Full-wave center-tap&nbsp;rectifier circuit driving a DC motor.</em><br>
+<br>
+<p>Note that our low-voltage AC power supply contains inside it the center-tapped step-down transformer that was shown in the schematic diagram of Figure 1. This transformer converts the 120 VAC wall voltage down to the 12 VAC (&plusmn; 6 VAC)&nbsp;output by our supply.</p>
+<p><strong>Step 2:&nbsp;</strong>Use a voltmeter to measure both the DC and AC voltage delivered to the motor.&nbsp;The RMS (root-mean-square) value of this full-wave rectifier&rsquo;s output is also greater for this circuit than for the half-wave rectifier.</p>
+<p>You should notice the advantages of the full-wave rectifier immediately by the greater DC output voltage&nbsp;and lower, undesirable&nbsp;AC voltage fluctuations, as compared to the half-wave rectifier experiment. In addition, this full-wave rectifier design has only a single-diode voltage drop in the conduction path. This is better than the two-diode voltage drops of the full-wave bridge rectifier.</p>
+<p><strong>Step 3:&nbsp;</strong>An experimental advantage of this circuit is the ease with which it may be converted&nbsp;to a half-wave rectifier.&nbsp;Simply disconnect the short jumper wire connecting the two diodes&rsquo; cathode ends together on the terminal strip (Figure 2).&nbsp;Better yet, for a quick comparison between half and full-wave rectification, you can add a switch in the circuit to open and close this connection at will using the circuit of Figures 3 and 4.&nbsp;</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/full-wave-center-tap-rectifier-schematic-diagram-2.jpg&quot; /></p>
+<em><strong>Figure 3. </strong>Schematic diagram with a switch to select between&nbsp;full-wave and half-wave rectifier operation.</em><br>
+<br>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/thumbnails/full-wave_center-tapped_rectifier_figure_4.jpg&quot; /></p>
+<em><strong>Figure 4. </strong>Illustration of the circuit with a switch to select between&nbsp;full-wave and half-wave rectifier operation.</em><br>
+<br>
+<p>With the ability to quickly switch between half- and full-wave rectification, you may easily perform qualitative comparisons between the two different operating modes.</p>
+<p><strong>Step 4 (Optional):&nbsp;</strong>You can use the audio signal detector to listen&nbsp;to the ripple voltage present between the motor terminals for half-wave and full-wave rectification modes, noting both the intensity and the quality of the tone.&nbsp;Remember to use a coupling capacitor in series with the detector, as illustrated in Figure 5, so that it only receives the AC ripple&nbsp;voltage and not the DC voltage.</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/full-wave-center-tap-rectifier-illustration-3.jpg&quot; /></p>
+<em><strong>Figure 5. </strong>Configuration of the audio detector for evaluating the rectifier outputs.</em><br>
+
+<h2>SPICE Simulation of the Full-wave Center-tap&nbsp;Rectifier Circuit</h2>
+<p>We can simulate the full-wave center-tap&nbsp;rectifier, as illustrated in Figure 6, using SPICE.</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/full-wave-center-tap-rectifier-schematic-with-spice-node-numbers-1.jpg&quot; /></p>
+<em><strong>Figure 6.</strong>&nbsp;SPICE circuit schematic for a full-wave center-tap&nbsp;rectifier circuit.</em><br>
+<br>
+<p><ins>Netlist (make a text file containing the following text, verbatim):</ins></p>
+<pre><br>
+Fullwave center-tap rectifier &#10;v1 1 0 sin(0 8.485 60 0 0) &#10;v2 0 3 sin(0 8.485 60 0 0) &#10;rload 2 0 10k &#10;d1 1 2 mod1 &#10;d2 3 2 mod1 &#10;.model mod1 d &#10;.tran .5m 25m &#10;.plot tran v(1,0) v(2,0) &#10;.end </pre>
+
+
+
+</div>
+</div>
+</body>
+</html>

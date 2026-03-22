@@ -1,0 +1,9 @@
+# Optothyristors
+<p>Like bipolar transistors, SCRs and TRIACs are also manufactured as light-sensitive devices, the action of impinging light replacing the function of triggering voltage.</p>
+<p>Optically-controlled SCRs are often known by the acronym <em>LASCR</em>, or <strong>L</strong>ight <strong>A</strong>ctivated <strong>SCR</strong>. Its symbol, not surprisingly, looks like Figure below.</p>
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/light-activated-SCR.jpg" /></p>
+<p><em>Light activated SCR</em></p>
+<p>Optically-controlled TRIACs don&rsquo;t receive the honor of having their own acronym, but instead are humbly known as opto-TRIACs. Their schematic symbol is shown in Figure below.</p>
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/opto-TRIAC.jpg" /></p>
+<p><em>Opto-TRIAC</em></p>
+<p>Optothyristors (a general term for either the LASCR or the opto-TRIAC) are commonly found inside sealed &ldquo;optoisolator&rdquo; modules.</p>

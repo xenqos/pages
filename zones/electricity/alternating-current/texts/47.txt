@@ -1,0 +1,39 @@
+###### 08. Filters
+
+# Band-stop Filters
+## How to Create a Band-stop Filter?
+<p>Also called <em>band-elimination</em>, <em>band-reject</em>, or <em>notch</em> filters, this kind of filter passes all frequencies above and below a particular range set by the component values. Not surprisingly, it can be made out of a&nbsp;low-pass and a&nbsp;high-pass filter, just like the&nbsp;band-pass design, except that this time we connect the two filter sections in parallel with each other instead of in series.</p>
+
+^[47-01.webp]
+<p><em>System level block diagram of a band-stop filter.</em></p>
+
+## Twin-T Band-stop Filter
+<p>Constructed using two capacitive filter sections, it looks something like:<strong> </strong></p>
+
+^[47-02.webp]
+<p><em>&ldquo;Twin-T&rdquo; band-stop filter.</em></p>
+
+<p>The low-pass filter section is comprised of R<sub>1</sub>, R<sub>2</sub>, and C<sub>1</sub> in a &ldquo;T&rdquo; configuration. The high-pass filter section is comprised of C<sub>2</sub>, C<sub>3</sub>, and R<sub>3</sub> in a &ldquo;T&rdquo; configuration as well. Together, this arrangement is commonly known as a &ldquo;Twin-T&rdquo; filter, giving sharp response when the component values are chosen in the following ratios:</p>
+
+^[47-03.webp]
+
+## Notch Frequency
+<p>Given these component ratios, the frequency of maximum rejection (the &ldquo;notch frequency&rdquo;) can be calculated as follows:<strong> </strong></p>
+
+^[47-04.webp]
+
+<p>The impressive band-stopping ability of this filter is illustrated by the following SPICE analysis:</p>
+
+<pre>
+twin-t bandstop filter &#10; v1 1 0 ac 1 sin &#10; r1 1 2 200 &#10; c1 2 0 2u &#10; r2 2 3 200 &#10; c2 1 4 1u &#10; r3 4 0 100 &#10; c3 4 3 1u &#10; rload 3 0 1k &#10; .ac lin 20 200 1.5k &#10; .plot ac v(3) &#10; .end &#10;</pre>
+
+^[47-05.webp]
+^[47-06.webp]
+<p><em>Response of &ldquo;twin-T&rdquo; band-stop filter.</em></p>
+
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li>A <em>band-stop</em> filter works to screen out frequencies that are within a certain range, giving easy passage only to frequencies outside of that range. Also known as <em>band-elimination</em>, <em>band-reject</em>, or <em>notch</em> filters.</li>
+<li>Band-stop filters can be made by placing a low-pass filter in parallel with a high-pass filter. Commonly, both the low-pass and high-pass filter sections are of the &ldquo;T&rdquo; configuration, giving the name &ldquo;Twin-T&rdquo; to the band-stop combination.</li>
+<li>The frequency of maximum attenuation is called the <em>notch</em> frequency.</li>
+</ul>

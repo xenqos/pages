@@ -1,0 +1,129 @@
+# Tube Lab - Vacuum Tube Audio Amplifier
+## Project Overview
+<p>Welcome to the world of vacuum tube electronics! While not exactly an application of semiconductor technology (power supply rectifier excepted), the audio&nbsp;circuit, illustrated in Figure 1, is used as an introduction to vacuum tube technology&nbsp;and is an interesting application for impedance-matching transformers.&nbsp;</p>
+
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/vacuum-tube-audio-amplifier-illustration.jpg" /></p>
+<em><strong>Figure 1.</strong> Vacuum tube audio amplifier circuit.</em>
+
+<p>You may be pleasantly surprised at the quality and depth of tone from this little amplifier circuit, especially given its low power output,&nbsp;less than 1 W of audio power.&nbsp;Of course, the circuit is quite crude and sacrifices quality for simplicity and parts availability, but it serves to demonstrate the basic principle of vacuum tube amplification.</p>
+<p>It should be noted that building and operating this circuit involves work with <strong>lethal voltages</strong>!<strong>&nbsp;</strong>You must exhibit the utmost care while working with this circuit, as 170 V DC is capable of <strong>electrocuting you</strong>! It is recommended that beginners <strong>seek qualified assistance</strong> (experienced electricians, electronics technicians, or engineers) if attempting to build this amplifier.</p>
+
+## Parts and Materials
+<ul>
+<li>One 12AX7 dual triode vacuum tube</li>
+<li>Two power transformers, 120 VAC step-down to 12 VAC</li>
+<li>Bridge rectifier module</li>
+<li>Electrolytic capacitor, at least 47 &micro;F, with a working voltage of at least 200 VDC.</li>
+<li>Automotive ignition coil</li>
+<li>Audio speaker, 8 &Omega; impedance</li>
+<li>Two 100 k&Omega; resistors</li>
+<li>One 0.1 &micro;F capacitor, 250 WVDC</li>
+<li>Low-voltage AC power supply, as shown in the&nbsp;AC Lab experiments chapter</li>
+<li>One toggle switch, SPST (single-pole, single-throw)</li>
+<li>Radio,&nbsp;musical keyboard, or another source of an&nbsp;audio voltage signal</li>
+</ul>
+<p>The 12AX7 vacuum tube was quite popular in old equipment and as a guitar preamplifier. With that in mind, you may be able to salvage an old vacuum tube for this project, but I strongly suggest buying a new vacuum tube new rather than taking chances with tubes salvaged from antique equipment.</p>
+<p>An automotive ignition coil is a special-purpose high-voltage transformer used in car engines to produce tens of thousands of volts to fire&nbsp;the spark plugs. In this experiment, it is used (very unconventionally, I might add) as an impedance-matching transformer between the vacuum tube and an 8 &Omega; audio speaker.&nbsp;The specific choice of the coil&nbsp;is not critical so long as it is in good operating condition. Figure 3 is a photograph of the coil I used for this experiment.</p>
+
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/automotive-ignition-coil.jpg" /></p>
+<em><strong>Figure 3.</strong>&nbsp;Example of an automotive ignition coil that may be used in this experiment.</em>
+
+<p>The audio speaker does not need to be extravagant; I&rsquo;ve used small bookshelf&nbsp;speakers, automotive (6"x9&rdquo;) speakers, as well as a large (100 W) 3-way stereo speaker for this experiment, and they all work fine.</p>
+<p><strong><span>WARNING: </span>Do NOT use a set of headphones</strong> under any circumstances, as the ignition coil does not provide electrical isolation between the 170 V DC of the plate&nbsp;power supply and the speaker, thus elevating the speaker connections to that voltage with respect to the&nbsp;ground. Since obviously placing wires on your head with high voltage to the ground would be hazardous, please do not use headphones!</p>
+<p>You will need some source of audio-frequency AC as an input signal to this amplifier circuit. I recommend a small battery-powered radio or musical keyboard, with an appropriate cable plugged into the headphone&nbsp;or audio out&nbsp;jack to convey the signal to your amplifier.</p>
+
+### High-voltage Capacitor
+<p>It is important to select an electrolytic capacitor with sufficient working voltage (WVDC) to withstand the output of this amplifier&rsquo;s power supply circuit (about 170 V). I strongly recommend choosing a capacitor with a voltage rating well in excess of the expected operating voltage so as to handle unexpected voltage surges or any other event that may tax the capacitor.</p>
+<p>I purchased an electrolytic capacitor assortment that happened to contain two 47 &micro;F, 250 WVDC capacitors. If you are not as fortunate, you may build the circuit shown in Figure 2 using five capacitors, each rated at 50 WVDC, to substitute for one 250 WVDC unit.</p>
+
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/radio-shack-electrolytic-capacitor-assortment.jpg" /></p>
+<em><strong>Figure 2.</strong> How to construct a 250 VDC capacitor using five 50 VDC capacitors connected in series.</em>
+
+<p>Bear in mind that the total capacitance for this five-capacitor network will be 1/5, or 20%, of each capacitor&rsquo;s value. Also, to ensure even charging of capacitors in the network, be sure all capacitor values (in &micro;F) and all resistor values are identical.</p>
+
+## Learning Objectives
+<ul>
+<li>Using a vacuum tube (triode) as an audio amplifier</li>
+<li>Using transformers in both step-down and step-up operations</li>
+<li>How to build a high-voltage DC power supply</li>
+<li>Using a transformer to match impedances</li>
+</ul>
+
+## Instructions
+<p><strong><span>WARNING:</span> Do not touch any wires or terminals while the amplifier circuit is energized!</strong> If you must make contact with the circuit at any point, turn off the plate&nbsp;power supply switch and wait for the filter capacitor to discharge below 30 V before touching any part of the circuit. If testing circuit voltages with the power on, use only one hand if possible to avoid the possibility of an arm-to-arm electric shock.</p>
+
+### Building the High-voltage Power Supply
+<p><strong>Step 1: </strong>Build&nbsp;the high-voltage power supply illustrated in Figure 4.&nbsp;</p>
+
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/high-voltage-plate-DC-power-supply.jpg" /></p>
+<em><strong>Figure 4.</strong>&nbsp;High-voltage DC power supply schematic diagram.</em>
+
+<p>Vacuum tubes require fairly high DC voltage applied between plate and cathode terminals to function efficiently. Although it is possible to operate the amplifier circuit described in this experiment at as low as 24 V DC, the power output will be minuscule, and the sound quality poor.</p>
+<p>The 12AX7 triode is rated at a maximum plate voltage&nbsp;(voltage applied between plate and cathode terminals) of 330 V, so our power supply of 170 V DC specified here is well within that maximum limit. I&rsquo;ve operated this amplifier on as high as 235 V DC and discovered that both sound quality and intensity improved slightly, but not enough in my estimation to warrant the additional hazard to experimenters.</p>
+<p>The power supply of Figure 4 actually has two different power outputs,&nbsp;the B+&nbsp;DC output for plate power and the filament&nbsp;power, which is only 12 V AC. Vacuum tubes require power applied to a small filament (sometimes called a heater) in order to function, as the cathode must be hot enough to thermally emit electrons, and that doesn&rsquo;t happen at room temperature.</p>
+<p>Using one power transformer to step household 120 V AC power down to 12 V AC provides low-voltage for the filaments, and another transformer connected in step-up fashion brings the voltage back up to 120 V. You might be wondering, why step the voltage back up to 120 V with another transformer? Why not just tap off the wall socket plug to obtain 120 V AC power directly and then rectify that into 170 V DC?</p>
+<p>The answer to this is twofold:</p>
+<ol>
+<li>Running power through two transformers inherently limits the amount of current that may be sent into an accidental short-circuit on the plate side of the amplifier circuit.</li>
+<li>It electrically isolates the plate circuit from the wiring system of your house. If we were to rectify wall-socket power with a diode bridge, it would make both DC terminals (+ and -) elevated in voltage from the safety ground connection of your house&rsquo;s electrical system, thereby increasing the shock hazard.</li>
+</ol>
+<p>Note the toggle switch connected between the 12 V windings of the two transformers, labeled &ldquo;plate supply switch.&rdquo; This switch controls power to the step-up transformer, thereby controlling plate voltage to the amplifier circuit. Why not just use the main power switch connected to the 120 V&nbsp;plug? Why has a second switch shut off the DC high voltage when shutting off one main switch would accomplish the same thing?</p>
+<p>The answer lies in proper vacuum tube operation,&nbsp;like incandescent light bulbs, vacuum tubes wear&nbsp;when their filaments are powered up and down repeatedly, so having this additional switch in the circuit allows you to shut off the DC high voltage (for safety when modifying or adjusting the circuit) without having to shut off the filament. Also, it is a good habit to wait for the tube to reach full operating temperature before applying plate voltage. This second switch allows you to delay the application of plate voltage until the tube has had time to reach operating temperature.</p>
+<p><strong>Step 2:&nbsp;</strong>During operation, you should have a voltmeter connected to the B+&nbsp;output of the power supply (between the B+ terminal and ground), continuously providing an indication of the power supply voltage. This meter will show you when the filter capacitor has discharged below the shock-hazard limit (30 V) when you turn off the plate supply switch&nbsp;to service the amplifier circuit.</p>
+<p>The ground&nbsp;terminal shown on the DC output of the power supply circuit need not connect to earth ground. Rather, it is merely a symbol showing a common connection with a corresponding ground terminal symbol in the amplifier circuit. In the circuit you build, there will be a piece of wire connecting these two ground&nbsp;points together. As always, the designation of certain common points in a circuit by means of a shared symbol is standard practice in electronic schematics.</p>
+<p>You will note that the schematic diagram of Figure 4 shows a 100 k&Omega; resistor in parallel with the filter capacitor. This resistor is quite necessary, as it provides the capacitor a path for discharge when the AC power is turned off. Without this bleeder&nbsp;resistor in the circuit, the capacitor would likely retain a dangerous charge for a long time after power-down,&nbsp;posing an additional shock hazard to you.</p>
+<p>In the circuit I built&mdash;with a 47 &micro;F capacitor and a 100 k&Omega; bleeder resistor&mdash;the time constant of this RC circuit was a brief 4.7 seconds. If you happen to find a larger filter capacitor value (good for minimizing unwanted power supply hum&nbsp;in the speaker), you will need to use a correspondingly smaller value of bleeder resistor or wait longer for the voltage to bleed off each time you turn the Plate supply&nbsp;switch off.</p>
+<p><strong>Step 3:&nbsp;</strong>Be sure you have the power supply safely constructed and working reliably before attempting to power the amplifier circuit with it. This is a good circuit-building practice, in general, to first&nbsp;build and troubleshoot the power supply,&nbsp;then build the circuit you intend to power with it. If the power supply does not function as it should, then neither will the powered circuit, no matter how well it may be designed and built.</p>
+
+### Building the Amplifier
+<p><strong>Step 4 (Optional):&nbsp;</strong>&nbsp;If you can find a socket for your vacuum tube, you can skip this step.&nbsp;One of the problems with building vacuum tube circuits in the 21st century is that sockets for these components can be difficult to find. Given the limited lifetime of most receiver&nbsp;tubes (a few years), most tubed&nbsp;electronic devices used sockets for mounting the tubes so that they could be easily removed and replaced.&nbsp;Though tubes may still be obtained&nbsp;with relative ease, the sockets they plug into are considerably scarcer.&nbsp;How, then, do we build circuits with tubes if we might not be able to obtain sockets for them to plug into?</p>
+<p>For small tubes, this problem may be circumvented by directly soldering short lengths of 22-gauge solid copper wire to the pins of the tube, thus enabling you to plug&nbsp;the tube into a solderless breadboard. Figure 5&nbsp;is a photograph of my tube amplifier, showing the 12AX7 in an inverted position (pin-side-up).&nbsp;</p>
+
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/vacuum-tube-audio-amplifier-breadboard.jpg" /></p>
+<em><strong>Figure 5.</strong>&nbsp;Vacuum tube amplifier circuit showing soldered connections to the pins.</em>
+
+<p>Please disregard the 10-segment LED bar graph to the left and the 8-position DIP switch assembly to the right in the photograph, as these are leftover components from a digital circuit experiment assembled&nbsp;previously on my breadboard.</p>
+<p>One benefit of mounting the tube in this position is the ease of pin identification since most pin connection diagrams&nbsp;for tubes are shown from a bottom view, as illustrated in Figure 6.&nbsp;</p>
+
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/12AX7-dual-triode-tube.jpg" /></p>
+<em><strong>Figure 6.</strong>&nbsp;12AX7 dual triode vacuum&nbsp;tube pin diagram.</em>
+
+<p><strong>Step 5:&nbsp;</strong>You will notice on the amplifier schematic of Figure 7 that both triode elements inside the 12AX7&rsquo;s glass envelope are being used in parallel, a plate connected to the plate, a grid connected to the grid, and a&nbsp;cathode connected to the cathode.&nbsp;</p>
+
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/class-a-single-ended-tube-audio-amplifier.jpg" /></p>
+<em><strong>Figure 7.</strong>&nbsp;Vacuum tube audio amplifier schematic diagram.</em>
+
+<p>This is done to maximize power output from the tube, but it is not necessary for demonstrating basic operation. You may use just one of the triodes&nbsp;for simplicity if you wish.</p>
+<p>The 0.1 &micro;F capacitor shown on the schematic couples&nbsp;the audio signal source (radio, musical keyboard, etc.) to the tube&rsquo;s grid(s), allowing AC to pass but blocking DC. The 100 k&Omega; resistor ensures that the average DC voltage between the grid and cathode is zero and cannot float&nbsp;to some high level. Typically, bias circuits are used to keep the grid slightly negative with respect to ground, but for this purpose, a bias circuit would introduce more complexity than its worth.</p>
+<p><strong>Step 6:&nbsp;</strong>When I tested my amplifier circuit, I used the output of a radio receiver and, later, the output of a compact disk (CD) player as the audio signal source. As illustrated in Figure 8, you can use a mono-to-phono&nbsp;connector extension cord plugged into the headphone jack of the receiver/CD player. and alligator clip jumper wires connecting the mono&nbsp;tip of the cord to the input terminals of the tube amplifier.</p>
+
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/mono-to-phono-connector-extension-cord-to-tube-amplifier.jpg" /></p>
+<em><strong>Figure 8.</strong>&nbsp;Connecting an audio signal to the vacuum tube amplifier circuit.</em>
+
+<p>I was able to easily send the amplifier audio signals of varying amplitude to test its performance over a wide range of conditions.&nbsp;</p>
+<p>A transformer is essential at the output of the amplifier circuit for matching&nbsp;the impedances of the vacuum tube and speaker. Since the vacuum tube is a high-voltage, low-current device, and most speakers are low-voltage, high-current devices, the mismatch between them would result in audio low power output if they were directly connected.</p>
+<p>To successfully match the high-voltage, low-current source to the low-voltage, high-current load, we must use a step-down transformer. Since the vacuum tube circuit&rsquo;s Thevenin resistance ranges in the tens of thousands of ohms, and the speaker only has about 8 ohms impedance, we will need a transformer with an impedance ratio of about 10,000:1.&nbsp;Since the impedance ratio of a transformer is the square of its turns ratio (or voltage ratio), we&rsquo;re looking for a transformer with a turns ratio of about 100:1. A typical automotive ignition coil has approximately this turns ratio, and it is also rated for extremely high voltage on the high-voltage winding, making it well suited for this application.</p>
+<p>The only bad aspect of using an ignition coil is that it provides no electrical isolation between primary and secondary windings since the device is actually an autotransformer, with each winding sharing a common terminal at one end. This means that the speaker wires will be at a high DC voltage with respect to the circuit ground.&nbsp;So long as we know this and avoid touching those wires during operation, there will be no problem. Ideally, though, the transformer would provide complete isolation as well as impedance matching, and the speaker wires would be perfectly safe to touch during use.</p>
+<p>Remember, make all connections in the circuit with the power turned off!</p>
+<p><strong>Step 7:&nbsp;</strong>After checking connections visually and with an ohmmeter to ensure that the circuit is built as per the schematic diagram, apply power to the filaments of the tube and wait about 30 seconds for it to reach operating temperature. Both filaments should emit a soft, orange glow, visible from both the top and bottom views of the tube.</p>
+<p><strong>Step 8:&nbsp;</strong>Turn the volume control of your radio/CD player/musical keyboard signal source to a minimum, then turn on the plate supply switch.&nbsp;The voltmeter you have connected between the power supply&rsquo;s B+ output terminal and ground&nbsp;should register full voltage (about 170 V).</p>
+<p><strong>Step 9:&nbsp;</strong>Now, increase the volume control on the signal source and listen to the speaker. If all is well, you should hear the correct sounds clearly through the speaker.</p>
+
+### Troubleshooting the Vacuum Tube Audio Amplifier Circuit
+<p>If you do not have an oscilloscope or voltmeter, troubleshooting is best&nbsp;done with the sensitive audio detector described in the DC and AC chapters of this experiment&#39;s volume.</p>
+<p>As illustrated in Figure 9, connect a 0.1 &micro;F capacitor in series with each test lead to block the&nbsp;DC from the detector.&nbsp;</p>
+
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/using-sensitive-audio-detector-as-troubleshooting-instrument-for-the-amplifier.jpg" /></p>
+<em><strong>Figure 8.</strong>&nbsp;Using the sensitive audio detector circuit to troubleshoot the vacuum tube audio amplifier.</em>
+
+<p>Then connect one of the test leads to the ground while using the other test lead to check for audio signals at various points in the circuit. Use capacitors with a high voltage rating, like the one used on the input of the amplifier circuit.</p>
+<p>Using two coupling capacitors instead of just one adds an additional degree of safety in helping to isolate the unit from any (high) DC voltage. Even without the extra capacitor, though, the detector&rsquo;s internal transformer should provide sufficient electrical isolation for your safety in using it to test for signals in a high-voltage circuit like this, especially if you built your detector using a 120 V power transformer (rather than an audio output&nbsp;transformer) as suggested.</p>
+<p>Use the audio detector to test for a good signal at the input, then at the grid pin(s) of the tube, then at the plate of the tube, etc., until the problem is found. Being capacitively coupled, the detector is also able to test for excessive power supply hum:&nbsp;touch the free test lead to the supply&rsquo;s B+ terminal and listen for a loud 60 Hz humming noise.&nbsp;The noise should be very soft, not loud. If it is loud, the power supply is not filtered adequately enough and may need additional filter capacitance.</p>
+<p>After testing a point in the amplifier circuit with a large DC voltage to ground, the coupling capacitors on the detector may build up substantial voltage.&nbsp;To discharge this voltage, briefly touch the free test lead to the grounded test lead. A pop&nbsp;sound should be heard in the headphones as the coupling capacitors discharge.</p>
+<p>If you would rather use a voltmeter to test for the presence of an audio signal, you may do so by setting it to a sensitive AC voltage range. The indication you get from a voltmeter, though, doesn&rsquo;t tell you anything about the quality of the signal, just its mere presence.&nbsp;Bear in mind that most AC voltmeters will register a transient voltage when initially connected across a source of DC voltage. So, don&rsquo;t be surprised to see a spike&nbsp;(a strong, momentary voltage indication) at the very moment contact is made with the meter&rsquo;s probes to the circuit, rapidly decreasing to the true AC signal value.</p>
+
+### Advanced Vacuum Tube Circuit Ideas to Explore
+<p>Advanced hobbyists and students may wish to experiment with biasing networks, negative feedback, different output transformers, different power supply voltages, and even different tubes to obtain more power and/or better sound quality. Figure 9&nbsp;is a photo of a very similar amplifier circuit, built by the husband-and-wife team of Terry and Cheryl Goetz, illustrating what can be done when care and craftsmanship are applied to a project like this.</p>
+
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/amplifier-circuit.jpg" /></p>
+<em><strong>Figure 9. </strong>Photo of a vacuum tube amplifier circuit.</em>

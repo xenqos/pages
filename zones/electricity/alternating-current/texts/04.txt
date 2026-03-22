@@ -1,0 +1,23 @@
+###### 01. Basic AC Theory
+
+# Simple AC Circuit Calculations
+<p>Over the course of the next few chapters, you will learn that AC circuit measurements and calculations can get very complicated due to the complex nature of alternating current in circuits with inductance and capacitance.</p>
+<p>However, with simple circuits (figure below) involving nothing more than an&nbsp;AC power source and&nbsp;resistance, the same laws and rules of DC apply simply and directly.</p>
+^[04-01.webp]
+<p><em>AC circuit calculations for resistive circuits are the same as for DC.</em></p>
+
+^[04-02.webp]
+
+<p>Series resistances still add, parallel resistances still diminish, and the Laws of&nbsp;Kirchhoff and&nbsp;Ohm still hold true. Actually, as we will discover later on, these rules and laws <em>always</em> hold true, it&rsquo;s just that we have to express the quantities of voltage, current, and opposition to current in more advanced mathematical forms.</p>
+<p>With purely resistive circuits, however, these complexities of AC are of no practical consequence, and so we can treat the numbers as though we were dealing with simple DC quantities.</p>
+<p>Because all these mathematical relationships still hold true, we can make use of our familiar &ldquo;table&rdquo; method of organizing circuit values just as with DC:</p>
+^[04-03.webp]
+<p>One major caveat needs to be given here: all measurements of AC voltage and current must be expressed in the same terms (peak, peak-to-peak, average, or RMS). If the source voltage is given in peak AC volts, then all currents and voltages subsequently calculated are cast in terms of peak units.</p>
+<p>If the source voltage is given in AC RMS volts, then all calculated currents and voltages are cast in AC RMS units as well. This holds true for <em>any</em> calculation based on Ohm&rsquo;s Laws, Kirchhoff&rsquo;s Laws, etc. Unless otherwise stated, all values of voltage and current in AC circuits are generally assumed to be RMS rather than peak, average, or peak-to-peak.</p>
+<p>In some areas of electronics, peak measurements are assumed, but in most applications (especially industrial electronics) the assumption is RMS.</p>
+
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li>All the old rules and laws of DC (Kirchhoff&rsquo;s Voltage and Current Laws, Ohm&rsquo;s Law) still hold true for AC. However, with more complex circuits, we may need to represent the AC quantities in more complex form. More on this later, I promise!</li>
+<li>The &ldquo;table&rdquo; method of organizing circuit values is still a valid analysis tool for AC circuits.</li>
+</ul>

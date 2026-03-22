@@ -1,0 +1,32 @@
+# Intro Lab - Circuit With a Switch
+## Project Overview
+<p>As illustrated in Figure 1, in this project, you will build a circuit with a switch placed in series with light to enable control of the current flow.</p>
+
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/household-light-switch.jpg" /></p>
+<em><strong>Figure 1.</strong> Light circuit with a switch.</em>
+
+## Parts and Materials
+<ul>
+<li>6 V battery</li>
+<li>Low-voltage incandescent lamp</li>
+<li>Long lengths of wire, 22-gauge or larger</li>
+<li>Household light switch (these are readily available at any hardware store)</li>
+</ul>
+<p>Household light switches are a bargain for students of basic electricity since they are readily available, very inexpensive, and almost impossible to damage with battery power.<strong> Note:</strong> Do not get dimmer&nbsp;switches, just the simple on-off toggle&nbsp;variety used for ordinary household wall-mounted light controls.</p>
+
+## Learning Objectives
+<ul>
+<li>Switch behavior</li>
+<li>Using an ohmmeter to check the switch action</li>
+</ul>
+
+## Instructions
+<p><strong>Step 1:&nbsp;</strong>Build a one-battery, one-switch, one-lamp circuit, as shown in&nbsp;the illustration of Figure 1 and the schematic diagram of Figure 2.&nbsp;</p>
+
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/circuit-with-a-switch-schematic-diagram.jpg" /></p>
+<em><strong>Figure 2.</strong>&nbsp;Schematic diagram of a light circuit with a switch.</em>
+
+<p>This circuit is most impressive when the wires are long, as it shows how the switch is able to control circuit current no matter how physically large the circuit may be.</p>
+<p><strong>Step 2:&nbsp;</strong>Measure voltage across the battery, across the switch (measure from one screw terminal to another with the voltmeter), and across the lamp with the switch closed and the light on.</p>
+<p><strong>Step 3:&nbsp;</strong>Measure voltage across the battery, across the switch (measure from one screw terminal to another with the voltmeter), and across the lamp with the switch open and the light off.&nbsp;When the switch is turned off, it is said to be open, and the lamp will go out just the same as if a wire were pulled loose from a terminal.</p>
+<p>As before, any break in the circuit at any location causes the lamp to immediately de-energize (darken).</p>

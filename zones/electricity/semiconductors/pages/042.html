@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Semiconductors</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='041.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='043.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>The Common-collector Amplifier</h1>
+<p>Our next transistor configuration to study is a bit simpler for gain calculations. Called the common-collector configuration, its schematic diagram is shown in the figure below.</p>
+<p><img src=&quot;/uploads/articles/common-collector-configuration-schematic-diagram.jpg&quot; /></p>
+<p>Common collector amplifier has collector common to both input and output.</p>
+<p>It is called the common-collector configuration because (ignoring the power supply battery) both the signal source and the load share the collector lead as a common connection point as in the figure below.</p>
+<p><img src=&quot;/uploads/articles/common-collector-input-output.jpg&quot; /></p>
+<p>Common collector: Input is applied to base and collector. Output is from emitter-collector circuit.</p>
+<p>It should be apparent that the load resistor in the common-collector amplifier circuit receives both the base and collector currents, being placed in series with the emitter. Since the emitter lead of a transistor is the one handling the most current (the sum of base and collector currents, since base and collector currents always mesh together to form the emitter current), it would be reasonable to presume that this amplifier will have a very large current gain. This presumption is indeed correct: <strong>the current gain for a common-collector amplifier is quite large, larger than any other transistor amplifier configuration</strong>. However, this is not necessarily what sets it apart from other amplifier designs.</p>
+<h2><strong><em>Example SPICE model</em></strong></h2>
+<p>Let&rsquo;s proceed immediately to a SPICE analysis of this amplifier circuit, and you will be able to immediately see what is unique about this amplifier. The netlist is in the figure below.</p>
+<p><img src=&quot;/uploads/articles/spice-analysis-of-amplifier-circuit.jpg&quot; /></p>
+<p>Common collector amplifier for SPICE.</p>
+<p><img src=&quot;/uploads/articles/common-collector-graph.jpg&quot; /></p>
+<pre><br>
+common-collector amplifier &#10;vin 1 0 &#10;q1 2 1 3 mod1   &#10;v1 2 0 dc 15    &#10;rload 3 0 5k    &#10;.model mod1 npn &#10;.dc vin 0 5 0.2 &#10;.plot dc v(3,0) &#10;.end&#10;</pre>
+
+<p><em>Common collector: Output equals input less a 0.7 V V</em><em>BE</em><em> drop.</em></p>
+<p>Unlike the common-emitter amplifier from the previous section, the common-collector produces an output voltage <em>direct</em> rather than <em>inverse</em> proportion to the rising input voltage.</p>
+<p>As the input voltage increases, so do the output voltage. Moreover, a close examination reveals that the output voltage is nearly <em>identical</em> to the input voltage, lagging behind by about 0.7 volts.</p>
+<p><strong>This is the unique quality of the common-collector amplifier: an output voltage that is nearly equal to the input voltage</strong>. Examined from the perspective of output voltage <em>change</em> for a given amount of input voltage <em>change</em>, this amplifier has a voltage gain of almost unity (1), or 0 dB. This holds true for transistors of any &beta; value, and for load resistors of any resistance value.</p>
+<h2><strong><em>Diode Current Source Transistor Model</em></strong></h2>
+<p>It is simple to understand why the output voltage of a common-collector amplifier is always nearly equal to the input voltage. Referring to the diode current source transistor model in figure below, we see that the base current must go through the base-emitter PN junction, which is equivalent to a normal rectifying diode.</p>
+<p>If this junction is forward-biased (the transistor conducting current in either its active or saturated modes), it will have a voltage drop of approximately 0.7 volts, assuming silicon construction. This 0.7volt drop is largely irrespective of the actual magnitude of base current; thus, we can regard it as being constant:</p>
+<p><img src=&quot;/uploads/articles/emitter-voltage-follows-base-voltage.jpg&quot; /></p>
+<p>Emitter follower: Emitter voltage follows base voltage (minus a 0.7 V VBE drop.)</p>
+<p>Given the voltage polarities across the base-emitter PN junction and the load resistor, we see that these <em>must</em> add together to equal the input voltage, following Kirchhoff&rsquo;s Voltage Law.</p>
+<p>In other words, the load voltage will always be about 0.7 volts less than the input voltage for all conditions where the transistor is conducting. Cutoff occurs at input voltages below 0.7 volts, and saturation at input voltages over battery (supply) voltage plus 0.7 volts.</p>
+<p><strong>Because of this behavior, the common-collector amplifier circuit is also known as the </strong><strong><em>voltage-follower</em></strong><strong> or </strong><strong><em>emitter-follower</em></strong><strong> amplifier, because the emitter load voltage follows the input so closely.</strong></p>
+<p>Applying the common-collector circuit to the amplification of AC signals requires the same input &ldquo;biasing&rdquo; used in the common-emitter circuit: a DC voltage must be added to the AC input signal to keep the transistor in its active mode during the entire cycle. When this is done, the result is the non-inverting amplifier in the figure below.</p>
+<p><img src=&quot;/uploads/articles/common-collector-emitter-follower-amplifier.jpg&quot; /></p>
+<pre><br>
+common-collector amplifier&#10;vin 1 4 sin(0 1.5 2000 0 0)&#10;vbias 4 0 dc 2.3&#10;q1 2 1 3 mod1&#10;v1 2 0 dc 15&#10;rload 3 0 5k&#10;.model mod1 npn&#10;.tran .02m .78m&#10;.plot tran v(1,0) v(3,0)&#10;.end&#10;</pre>
+
+<p><em>Common collector (emitter-follower) amplifier.</em></p>
+<p>The results of the SPICE simulation in Figure below shows that the output follows the input. The output is the same peak-to-peak amplitude as the input. Though, the DC level is shifted downward by one VBE diode drop.</p>
+<p><img src=&quot;/uploads/articles/common-collector-emitter-follower-output-input.jpg&quot; /></p>
+<p>Common collector (emitter-follower): Output V(3) follows input V(1) minus a 0.7 V VBE drop.</p>
+<p>Here&rsquo;s another view of the circuit (Figure below) with oscilloscopes connected to several points of interest.</p>
+<p><img src=&quot;/uploads/articles/common-collector-non-inverting-voltage-gain.jpg&quot; /></p>
+<p>Common collector non-inverting voltage gain is very close to 1.</p>
+<p>Since this amplifier configuration doesn&rsquo;t provide any voltage gain (in fact, in practice it has a voltage gain of slightly <em>less</em> than 1), it&rsquo;s only amplifying factor is current. The common-emitter amplifier configuration examined in the previous section had a current gain equal to the &beta; of the transistor, is that the input current went through the base and the output (load) current went through the collector, and &beta; by definition is the ratio between the collector and base currents. In the common-collector configuration, though, the load is situated in series with the emitter, and thus its current is equal to the emitter current. With the emitter carrying collector current <em>and</em> base current, the load in this type of amplifier has all the current of the collector running through it <em>plus</em> the input current of the base. This yields a current gain of &beta; plus 1:</p>
+<p><img src=&quot;/uploads/articles/current-gain-of-β-plus-1-equation.jpg&quot; /></p>
+<p>Once again, PNP transistors are just as valid to use in the common-collector configuration as NPN transistors. The gain calculations are all the same, as is the non-inverting of the amplified signal. The only difference is in voltage polarities and current directions shown in the figure below.</p>
+<p><img src=&quot;/uploads/articles/pnp-version-of-the-common-collector-amplifier.jpg&quot; /></p>
+<p>PNP version of the common-collector amplifier.</p>
+<p>A popular application of the common-collector amplifier is for regulated DC power supplies, where an unregulated (varying) source of DC voltage is clipped at a specified level to supply regulated (steady) voltage to a load. Of course, Zener diodes already provide this function of voltage regulation shown in the figure below.</p>
+<p><img src=&quot;/uploads/articles/zener-diode-voltage-regulator.jpg&quot; /></p>
+<p>Zener diode voltage regulator.</p>
+<p>However, when used in this direct fashion, the amount of current that may be supplied to the load is usually quite limited. In essence, this circuit regulates the voltage across the load by keeping current through the series resistor at a high enough level to drop all the excess power source voltage across it, the Zener diode drawing more or less current as necessary to keep the voltage across itself steady.</p>
+<p>One popular way to increase the current-handling ability of a regulator circuit like this is to use a common-collector transistor to amplify current to the load so that the Zener diode circuit only has to handle the amount of current necessary to drive the base of the transistor.</p>
+<p><img src=&quot;/uploads/articles/common-collector-application-voltage-regulator.jpg&quot; /></p>
+<p>Common collector application: voltage regulator.</p>
+<p>There&rsquo;s only one caveat to this approach: the load voltage will be approximately 0.7 volts less than the Zener diode voltage, due to the transistor&rsquo;s 0.7-volt base-emitter drop. Since this 0.7-volt difference is fairly constant over a wide range of load currents, a Zener diode with a 0.7 volt higher rating can be chosen for the application.</p>
+<p>Sometimes the high current gain of a single-transistor, common-collector configuration isn&rsquo;t enough for a particular application. If this is the case, multiple transistors may be staged together in a popular configuration known as a <strong><em>Darlington pair</em></strong><strong>,</strong> just an extension of the common-collector concept shown in the figure below.</p>
+<p><img src=&quot;/uploads/articles/npn-darlington-pair.jpg&quot; /></p>
+<p>A NPN Darlington pair.</p>
+<p>Darlington pairs essentially place one transistor as the common-collector load for another transistor, thus multiplying their current gains. The base current through the upper-left transistor is amplified through that transistor&rsquo;s emitter, which is directly connected to the base of the lower-right transistor, where the current is again amplified. The overall current gain is as follows:</p>
+<p><img src=&quot;/uploads/articles/darlington-pair-current-gain.jpg&quot; /></p>
+<p>Voltage gain is still nearly equal to 1 if the entire assembly is connected to a load in common-collector fashion, although the load voltage will be a full 1.4 volts less than the input voltage shown in the figure below.</p>
+<p><img src=&quot;/uploads/articles/darlington-pair-based-common-collector-amplifier.jpg&quot; /></p>
+<p>Darlington pair based common-collector amplifier loses two VBE diode drops.</p>
+<p>Darlington pairs may be purchased as discrete units (two transistors in the same package) or may be built up from a pair of individual transistors. Of course, if an even more current gain is desired than what may be obtained with a pair, Darlington triplet or quadruplet assemblies may be constructed.</p>
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li><em>Common-collector</em> transistor amplifiers are so-called because the input and output voltage points share the collector lead of the transistor in common with each other, not considering any power supplies.</li>
+<li>The common-collector amplifier is also known as an emitter-follower.</li>
+<li>The output voltage on a common-collector amplifier will be in phase with the input voltage, making the common-collector a <em>non-inverting</em> amplifier circuit.</li>
+<li>The current gain of a common-collector amplifier is equal to &beta; plus 1. The voltage gain is approximately equal to 1 (in practice, just a little bit less).</li>
+<li>A <em>Darlington pair</em> is a pair of transistors &ldquo;piggybacked&rdquo; on one another so that the emitter of one feeds current to the base of the other in common-collector form. The result is an overall current gain equal to the product (multiplication) of their individual common -collector current gains (&beta; plus 1).</li>
+</ul>
+
+
+
+</div>
+</div>
+</body>
+</html>

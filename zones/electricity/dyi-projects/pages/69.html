@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>DYI Projects</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  <script>MathJax={tex: {inlineMath: [['$', '$'], ['((', '))']], processEscapes: true}};</script>
+  <script id='MathJax-script' async src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'></script>
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='68.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='70.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>Analog Lab - Precision Voltage Follower Using an Op Amp</h1>
+<h2>Project Overview</h2>
+<p>The voltage follower&nbsp;is a simple but essential building block of many analog systems. As illustrated in Figure 1, an operational amplifier (op amp) with its output connected to its negative input is used to construct the voltage follower.&nbsp;</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/precision-voltage-schematic-diagram.jpg&quot; /></p>
+<em><strong>Figure 1.</strong> Schematic diagram of the op amp voltage follower circuit.</em><br>
+
+<h2>Parts and Materials</h2>
+<ul>
+<li>Op amp, model 1458 or 353, recommended</li>
+<li>Three 6 V batteries or an 18 V power supply</li>
+<li>One 10 k&Omega; potentiometer, linear taper</li>
+</ul>
+
+<h2>Learning Objectives</h2>
+<ul>
+<li>How to use an op amp as a voltage follower</li>
+<li>The purpose of negative feedback</li>
+<li>Illustrate some circuit troubleshooting strategy</li>
+</ul>
+
+<h2>Negative Feedback</h2>
+<p>In the voltage comparator&nbsp;experiment, the amplifier was used in open-loop&nbsp;mode, that is, without any feedback from output to input. As such, the full voltage gain of the op amp was available. This resulted in the output voltage saturating for virtually any amount of differential voltage applied between the two input terminals. This is good if we desire comparator operation, but if we want the op amp to behave as a true amplifier, we need it to exhibit a manageable voltage gain.</p>
+<p>Since we do not have the luxury of disassembling the integrated circuitry of the op amp and changing resistor values to reduce the voltage gain, we are limited to external connections and componentry. Fortunately, this is not a disadvantage, as one might think! The combination of extremely high open-loop voltage gain coupled with feedback allows us to use the op amp for a much wider variety of purposes. Additionally, we can make system changes much&nbsp;easier than if we were to exercise the option of modifying its internal circuitry.</p>
+<p>In the circuit of Figure 1, the output of the op amp is connected to its inverting (-) input. This is called negative feedback. With feedback, the op amp is now operating in a closed-loop mode.</p>
+
+<h2>Op Amp Voltage Follower Theory of Operation</h2>
+<p>To understand the operation, imagine if the voltage&nbsp;input on the non-inverting (+) input increases above the inverting (-) input. The high gain of the op amp will increase the output. This increased output is fed back to the inverting (-) input.&nbsp;&nbsp;</p>
+<p>The output voltage will seek whatever level is necessary to balance the inverting (-) input&rsquo;s voltage with that applied to the noninverting (+) input. If this feedback connection is direct, as in a straight piece of wire, the output voltage will precisely follow&nbsp;the noninverting input&rsquo;s voltage.</p>
+
+<h2>Instructions</h2>
+<p><strong>Step 1:&nbsp;</strong>Build the voltage follower circuit of Figure 1. A breadboard implementation of this circuit is illustrated in Figure 2.</p>
+<p><strong><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/precision-voltage-illustration.jpg&quot; /></strong></p>
+<em><strong>Figure 2.</strong> Breadboard implementation of the op amp voltage follower.</em><br>
+<br>
+<p><strong>Step 2:&nbsp;</strong>Measure the input voltage of this circuit with a voltmeter connected between the op amp&rsquo;s noninverting (+) input terminal and circuit ground (the negative side of the power supply).</p>
+<p><strong>Step 3:</strong>&nbsp;Measure&nbsp;the output voltage between the op amp&rsquo;s output terminal and circuit ground. Is the output voltage the same as the input voltage?</p>
+<p><strong>Step 4:&nbsp;</strong>Watch the op amp&rsquo;s output voltage follow the input voltage as you adjust the potentiometer through its range.&nbsp;You may directly measure the difference, or error, between output and input voltages by connecting the voltmeter between the op amp&rsquo;s two input terminals. Throughout most of the potentiometer&rsquo;s range, this error voltage should be almost zero.</p>
+<p><strong>Step 5:&nbsp;</strong>Try moving the potentiometer to one of its extreme positions, far clockwise or far counterclockwise. Measure the error voltage, or compare the output voltage against the input voltage. Do you notice anything unusual?</p>
+<p>If you are using model 1458 or model 353 op amp for this experiment, you should measure a substantial error voltage or difference between output and input.&nbsp;Many op amps, the specified models included, cannot swing their output voltage exactly to full power supply (rail) voltage levels. In this case, the rail&nbsp;voltages are +18 volts and 0 volts, respectively.</p>
+<p>Due to limitations in the 1458&rsquo;s internal circuitry, its output voltage cannot exactly reach these high and low limits. You may find that it can only go within a volt or two of the power supply rails.&nbsp;This is a very important limitation to understand when designing circuits using operational amplifiers. If full rail-to-rail&nbsp;output voltage swing is required in a circuit design, other op amp models may be selected which offer this capability. The model 3130 is one such op amp.</p>
+
+<h2>Applications of Voltage Followers</h2>
+<p>Precision voltage follower circuits are useful if the voltage signal to be amplified cannot tolerate loading; that is if it has a high source impedance. Since a voltage follower, by definition, has a voltage gain of 1, its purpose has nothing to do with amplifying voltage but rather with amplifying a signal&rsquo;s capacity to deliver current to a load.</p>
+<p>Voltage follower circuits have another important use for circuit builders: they allow for simple linear testing of an op amp. One of the troubleshooting techniques I recommend is simplifying and rebuilding. Suppose that you are building a circuit using one or more op amps to perform some advanced function.&nbsp;If one of those op amps seems to be causing a problem and you suspect it may be faulty, try re-connecting it as a simple voltage follower and see if it functions in that capacity. An op amp that fails to work as a voltage follower certainly won&rsquo;t work as anything more complex.&nbsp;</p>
+
+<h2>Op Amp Voltage Follower Equations</h2>
+<p>Let&#39;s walk through the derivation of the voltage follower gain equation, beginning from the op amp open-loop gain equation:</p>
+<p>$$V_{out} = A \cdot (V_+ - V_-)$$</p>
+<p>Where <em>A</em>&nbsp;is the open-loop gain of the op amp.</p>
+<p>Since <em>V<sub>out</sub></em> is directly connected to&nbsp;<em>V<sub>-</sub></em>, we can substitute <em>V<sub>out</sub></em> for <em>V<sub>-</sub><sub>&nbsp;</sub></em>and solve for <em>V<sub>out</sub></em> in terms of <em>V<sub>+</sub></em>:</p>
+<p>$$V_{out} = A \cdot (V_+ - V_{out})$$</p>
+<p>$$V_{out} = AV_+ - AV_{out}$$</p>
+<p>$$V_{out} +AV_{out}= AV_+$$</p>
+<p>$$(1+A)V_{out}= AV_+$$</p>
+<p>$$V_{out} = \left( \frac{A}{1+A} \right) V_+ $$</p>
+<p>The op amp open-loop gain,&nbsp;<em>A</em>, is typically a very large number, at least 10,000, and often much more. Let&#39;s plug 10,000 into our equation:</p>
+<p>$$V_{out} = \left( \frac{10,000}{1+10,000} \right) V_+ = 0.9999V_+$$</p>
+<p>Therefore, the output error for the voltage follower is only 0.01% for an op amp with a gain of 10,000. Thus, we can call this a precision voltage follower.&nbsp;Unlike the voltage follower circuit made from a single transistor, which approximated the input voltage to within several tenths of a volt, this voltage follower circuit will output a voltage accurate to within mere microvolts of the input voltage.</p>
+
+<h2>SPICE Simulation of the Op Amp Voltage Follower</h2>
+<p>The circuit schematic of Figure 3 uses a dependent voltage source (E<sub>1</sub>) to simulate an op amp.&nbsp;</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/voltage-follower-schematic-SPICE-node.jpg&quot; /></p>
+<em><strong>Figure 3.</strong> SPICE circuit schematic with node numbers&nbsp;for simulation of the&nbsp;op amp voltage follower circuit.</em><br>
+<br>
+<p>Netlist (make a text file containing the following text, verbatim):</p>
+
+<pre><br>
+Voltage follower &#10;vinput 1 0 &#10;rbogus 1 0 1meg &#10;e1 2 0 1 2 999meg &#10;rload 2 0 10k &#10;.dc vinput 5 5 1 &#10;.print dc v(1,0) v(2,0) v(1,2) &#10;.end </pre>
+
+<p>An ideal operational amplifier may be simulated in SPICE using a <em>dependent voltage source</em> (<tt>e1</tt> in the netlist). The output nodes are specified first (<tt>2 0</tt>) and then the two input nodes, with the&nbsp;non-inverting input first (<tt>1 2</tt>). The open-loop gain is specified last (<tt>999meg</tt>) in the dependent voltage source line.</p>
+<p>Since SPICE views the input impedance of a dependent source as infinite, some finite amount of resistance must be included to avoid an analysis error. This is the purpose of R<sub>bogus</sub>: to provide a DC path to the ground for the V<sub>input</sub> voltage source. Such &ldquo;bogus&rdquo; resistances should be arbitrarily large. In this simulation, I chose 1 M&Omega; for a R<sub>bogus</sub> value.</p>
+<p>A load resistor is included in the circuit for much the same reason: to provide a DC path for current at the output of the dependent voltage source. As you can see, SPICE doesn&rsquo;t like open circuits!</p>
+
+
+</div>
+</div>
+</body>
+</html>

@@ -1,24 +1,17 @@
-###### Существительные
+###### Die Nomen
 
-## Существительные ##
+## Die Nomen ##
 
-# Термины
-
-[|
-|%[m|das Nomen     ]|существительное|
-|%[m|das Konkretum] |вещественное   |
-|%[m|das Abstraktum]|абстрактное    |
-|]
+# Terminologie
 
 [!
 %[m|das Nomen] - %[n|das Substantiv]
 !]
 
 [|
-|%[m|das Genus] |род    |
-|%[m|masculinum]|мужской|
-|%[m|femininum] |женский|
-|%[m|neutrum]   |средний|
+|%[m|das Nomen]     |существительное|
+|%[m|das Konkretum] |вещественное   |
+|%[m|das Abstraktum]|абстрактное    |
 |]
 
 [!
@@ -26,9 +19,16 @@
 !]
 
 [|
-|%[m|masculinum]|%[n|masculin]|%[n|männlich]|
-|%[m|femininum] |%[n|feminin ]|%[n|weiblich]|
-|%[m|neutrum]   |%[n|neutral ]|%[n|sächlich]|
+|%[m|das Genus]     |род    |
+|%[m|das Masculinum]|мужской|
+|%[m|das Femininum] |женский|
+|%[m|das Neutrum]   |средний|
+|]
+
+[|
+|%[n|maskulin]|%[n|männlich]|
+|%[n|feminin ]|%[n|weiblich]|
+|%[n|neutral ]|%[n|sächlich]|
 |]
 
 [|
@@ -36,3 +36,16 @@
 |%[m|der Singular]|%[n|die Einzahl] |единствнное  |
 |%[m|der Plural]  |%[n|die Mehrzahl]|множественное|
 |]
+
+[!
+%[m|der Kasus] - %[n|der Fall]
+!]
+
+[|
+|%[m|der Kasus]    |падеж       |
+|%[m|der Nominativ]|именительный|
+|%[m|der Genitiv]  |родительный |
+|%[m|der Dativ]    |дательный   |
+|%[m|der Akkusativ]|винительный |
+|]
+

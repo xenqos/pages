@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Reference</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='026.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='028.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>Peak Detector</h1>
+<p> A&nbsp;<em>peak detector</em> is a series connection of a diode and a capacitor outputting a DC voltage equal to the peak value of the applied AC signal.&nbsp;</p>
+<h2>Peak Detector Operation Analysis</h2>
+<p>The circuit is shown in the figure below with the corresponding SPICE net list. An AC voltage source applied to the peak detector, charges the capacitor to the peak of the input.&nbsp;</p>
+<p>The diode conducts positive &ldquo;half cycles,&rdquo; charging the capacitor to the waveform peak. When the input waveform falls below the DC &ldquo;peak&rdquo; stored on the capacitor, the diode is reverse biased, blocking current flow from capacitor back to the source. Thus, the capacitor retains the peak value even as the waveform drops to zero.&nbsp;</p>
+<p>Another view of the peak detector is that it is the same as a half-wave rectifier with a filter capacitor added to the output.</p>
+<table align=&quot;center&quot; border=&quot;1&quot;><br>
+<tbody><br>
+<tr><br>
+<td><img  src=&quot;//sub.allaboutcircuits.com/images/03441.png&quot; /></td><br>
+<td>
+<pre><br>
+*SPICE 03441.eps C1 2 0 0.1u R1 1 3 1.0k V1 1 0 SIN(0 5 1k) D1 3 2 diode .model diode d .tran 0.01m 50mm .end </pre>
+
+</td><br>
+</tr>
+</tbody><br>
+</table><br>
+<p><em>Peak detector: Diode conducts on positive half cycles charging capacitor to the peak voltage (less diode forward drop).</em></p>
+<p>It takes a few cycles for the capacitor to charge to the peak as in the figure below due to the series resistance (RC &ldquo;time constant&rdquo;). Why does the capacitor not charge all the way to 5 V? It would charge to 5 V if an &ldquo;ideal diode&rdquo; were obtainable. However, the silicon diode has a forward voltage drop of 0.7 V which subtracts from the 5 V peak of the input.</p>
+<p><img src=&quot;/uploads/articles/peak-detector.jpg&quot; /></p>
+<p>Peak detector: Capacitor charges to peak within a few cycles.</p>
+<p>The circuit in the figure above could represent a DC power supply based on a half-wave rectifier. The resistance would be a few Ohms instead of 1 k&Omega; due to a transformer secondary winding replacing the voltage source and resistor. A larger &ldquo;filter&rdquo; capacitor would be used. A power supply based on a 60 Hz source with a filter of a few hundred &micro;F could supply up to 100 mA. Half-wave supplies seldom supply more due to the difficulty of filtering a half-wave.</p>
+<p>The peak detector may be combined with other components to build a crystal radio.</p>
+
+
+</div>
+</div>
+</body>
+</html>

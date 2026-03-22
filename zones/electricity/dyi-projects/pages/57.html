@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>DYI Projects</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='56.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='58.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>Si Lab - Light Sensor (LED Photodetector)</h1>
+<h2>Project Overview</h2>
+<p>We typically use light-emitted diodes (LEDs) to generate light. However, in this project, we will see LEDs can also be used as crude light sensors. The LED is connected to the base of a&nbsp;bipolar junction transistor (BJT), as illustrated in Figure 1.</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/pulsed-light-sensor-schematic-diagram.jpg&quot; /></p>
+<em><strong>Figure 1. </strong>Schematic diagram of an LED photodetector with amplifier and audio output.</em><br>
+<br>
+<p>The emitter of the BJT is grounded in&nbsp;a common emitter configuration. Any fluctuations in the base current will be amplified by the BJT as collector current. The inductance of the transformer then converts these changes in current to a voltage that is passed to the headphones.</p>
+
+<h2>Parts and Materials</h2>
+<ul>
+<li>Two 6 V batteries</li>
+<li>One NPN transistor&mdash;models 2N2222 or 2N3403 recommended</li>
+<li>One LED</li>
+<li>Audio detector with headphones</li>
+</ul>
+
+<h2>Learning Objectives</h2>
+<ul>
+<li>How to use a transistor as a crude common-emitter amplifier</li>
+<li>How to use an LED as a light sensor</li>
+</ul>
+
+<h2>Instructions</h2>
+<p><strong>Step 1:&nbsp;</strong>If you don&rsquo;t have an audio detector already constructed, you can use a nice set of audio headphones (a closed-cup style that completely covers&nbsp;your ears) and a 120 V/6 V step-down transformer,&nbsp;as illustrated in Figure 1 to build a sensitive audio detector without volume control or overvoltage protection, just for this experiment. Connect&nbsp;the headphone stereo plug to the transformer&rsquo;s secondary (6 V) winding, as illustrated in Figure 2.&nbsp;</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/transformers-speakers-in-series-parallel.jpg&quot; /></p>
+<em><strong>Figure 2. </strong>Series and parallel speaker connection options for a stereo headphone plug.</em><br>
+<br>
+<p>Try both the series and the parallel connection schemes for the loudest sound.</p>
+<p>If you haven&rsquo;t made a variable sensitivity audio detector as outlined in both the DC and AC experiments chapters, you really should&mdash;it is a valuable piece of test equipment for your collection.</p>
+<p><strong>Step 2:&nbsp;</strong>Build the circuit shown in the schematic diagram of&nbsp;Figure&nbsp;1. A breadboard implementation is illustrated in Figure 3, with the variable sensitivity audio detector shown in place of the fixed transformer of Figure 1.</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/pulsed-light-sensor-illustration.jpg&quot; /></p>
+<em><strong>Figure 3. </strong>Breadboard implementation of an LED photodetector with amplifier and audio output.</em><br>
+<br>
+<p><strong>Step 3:&nbsp;</strong>Place the circuit near a strong, variable light source and listen through the headphones. Sources of light suitable for this experiment include fluorescent and neon lamps, which blink rapidly with the 60 Hz AC power energizing them. You may also try using bright sunlight for a steady light source, then waving your fingers in front of the LED.</p>
+<p>This circuit detects pulses of light striking the LED and converts them into relatively strong audio signals to be heard through the headphones. LEDs have the ability to produce current when exposed to light, in a manner not unlike a semiconductor solar cell.&nbsp;By itself, the LED does not produce enough electrical power to drive the audio detector circuit, so a transistor is used to amplify the LED&rsquo;s signals. If the LED is exposed to a pulsing source of light, a tone will be heard in the headphones.</p>
+<p>The rapidly passing shadows will cause the LED to generate pulses of voltage, creating a brief buzzing&nbsp;sound in the headphones. LEDs serving as photo-detectors are narrow-band devices, responding to a narrow band of wavelengths close, but not identical, to that normally emitted.&nbsp;Infrared remote controls are a good illumination source for near-infrared LEDs employed as photo-sensors, producing a receiver sound.</p>
+<p>With a little imagination, it is not difficult to grasp the concept of transmitting audio information&mdash;such as music or speech&mdash;over a beam of pulsing light. Given a suitable transmitter&nbsp;circuit to pulse an LED on and off with the positive and negative crests of an audio waveform from a microphone, the receiver&nbsp;circuit shown here would convert those light pulses back into audio signals.</p>
+
+
+</div>
+</div>
+</body>
+</html>

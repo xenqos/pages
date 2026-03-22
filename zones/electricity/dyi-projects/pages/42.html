@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>DYI Projects</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='41.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='43.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>AC Lab - Noise Cancellation</h1>
+<h2>Project Overview</h2>
+<p>Using the simple electronics system illustrated in Figure 1, you will get to experience volume&nbsp;reduction through destructive interference, which forms the basis of&nbsp;noise-canceling headphones.&nbsp;</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/sound-cancellation-illustration.jpg&quot; /></p>
+<em><strong>Figure 1.</strong> Noise cancellation project illustration.</em><br>
+<br>
+<p>In one operating mode, the sound waves will reinforce one another to increase the&nbsp;volume. In the opposite operating mode, the sound waves will destructively interfere to reduce the&nbsp;volume.</p>
+
+<h2>Project Overview</h2>
+<ul>
+<li>Low-voltage AC power supply</li>
+<li>Two audio speakers</li>
+<li>Two 220 &Omega; resistors</li>
+</ul>
+
+<p>Large, low-frequency (woofer) speakers are most appropriate for this experiment. For optimum results, the speakers should be identical and mounted in enclosures.</p>
+
+<h2>Learning Objectives</h2>
+<ul>
+<li>To illustrate how phase shift can cause waves to either reinforce or interfere with each other</li>
+<li>To show the importance of speaker phasing&nbsp;in stereo systems</li>
+</ul>
+
+<h2>Instructions</h2>
+<p><strong>Step 1:&nbsp;</strong>Connect each speaker to the low-voltage AC power supply through a 220 &Omega; resistor, as illustrated in Figures 1 and 2.&nbsp;</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/sound-cancellation-schematic-diagram.jpg&quot; /></p>
+<em><strong>Figure 2.</strong> Schematic diagram of the noise cancellation project</em><br>
+<br>
+<p>The resistors&nbsp;limit&nbsp;the amount of power delivered to each speaker by the power supply.</p>
+<p><strong>Step 2:&nbsp;</strong>A low-pitched, 60-Hertz tone should be heard from the speakers. If the tone sounds too loud, use higher-value resistors.</p>
+<p><strong>Step 3:&nbsp;</strong>With both speakers connected and producing sound, position them so that they are only a foot or two away, facing toward each other. Listen to the volume of the 60 Hz tone.</p>
+<p><strong>Step 4:&nbsp;</strong>Now, reverse the connections (the polarity) of just one of the speakers and note the volume again.</p>
+<p><strong>Step 5:&nbsp;</strong>Try switching the polarity of one speaker back and forth from original to reversed, comparing volume levels each way. What do you notice?</p>
+<p>By reversing wire connections to one speaker, you are reversing the phase of that speaker&rsquo;s sound wave in reference to the other speaker. In one mode, the sound waves will reinforce one another for a strong volume. In the other mode, the sound waves will destructively interfere, resulting in diminished volume. This phenomenon is common to all wave events: sound waves, electrical signals (voltage waves), waves in water, and even light waves!</p>
+<p>Multiple speakers in a stereo sound system must be properly phased&nbsp;so that their respective sound waves don&rsquo;t cancel each other, leaving less total sound level for the listeners&nbsp;to hear. So, even in an AC system where there really is no such thing as constant polarity,&nbsp;the sequence of wire connections may make a significant difference in system performance.</p>
+<p>This principle of volume reduction by destructive interference may be exploited for noise cancellation.&nbsp;Such systems sample the waveform of the ambient noise, then produce an identical sound signal 180<sup>o</sup> out of phase with the noise. When the two sound signals meet, they cancel each other out, ideally eliminating all the noise.</p>
+<p>As one might guess, this is much easier accomplished with noise sources of steady frequency and amplitude than in this experiment. Cancellation of random, broad-spectrum noise is difficult, as some sort of signal-processing circuit must sample the noise and generate precisely the right amount of cancellation sound at just the right time in order to be effective.</p>
+
+
+</div>
+</div>
+</body>
+</html>

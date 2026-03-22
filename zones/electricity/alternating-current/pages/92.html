@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Alternating Current</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='91.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='93.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h6>14. Transmission Lines</h6>
+
+<h1>&#8220;Long&#8217;&#8217; and &#8220;Short&#8217;&#8217; Transmission Lines</h1>
+<p>In DC and low-frequency AC circuits, the characteristic impedance of parallel wires is usually ignored. This includes the use of coaxial cables in instrument circuits, often employed to protect weak voltage signals from being corrupted by induced &ldquo;noise&rdquo; caused by stray electric and magnetic fields.</p>
+<p>This is due to the relatively short timespans in which reflections take place in the line, as compared to the period of the waveforms or pulses of the significant signals in the circuit.</p>
+<p>As we saw in the last section, if a transmission line is connected to a DC voltage source, it will behave as a resistor equal in value to the line&rsquo;s characteristic impedance only for as long as it takes the incident pulse to reach the end of the line and return as a reflected pulse, back to the source.</p>
+<p>After that time (a brief 16.292 &micro;s for the mile-long coaxial cable of the last example), the source &ldquo;sees&rdquo; only the terminating impedance, whatever that may be.</p>
+<p>If the circuit in question handles low-frequency AC power, such short time delays introduced by a transmission line between when the AC source outputs a voltage peak and when the source &ldquo;sees&rdquo; that peak loaded by the terminating impedance (round-trip time for the incident wave to reach the line&rsquo;s end and reflect back to the source) are of little consequence.</p>
+<p>Even though we know that signal magnitudes along the line&rsquo;s length are not equal at any given time due to signal propagation at (nearly) the speed of light, the actual phase difference between start-of-line and end-of-line signals is negligible, because line-length propagations occur within a very small fraction of the AC waveform&rsquo;s period.</p>
+<p>For all practical purposes, we can say that voltage along all respective points on a low-frequency, two-conductor line are equal and in-phase with each other at any given point in time.</p>
+<p>In these cases, we can say that the transmission lines in question are <em>electrically short</em>, because their propagation effects are much quicker than the periods of the conducted signals.</p>
+<p>By contrast, an <em>electrically long</em> line is one where the propagation time is a large fraction or even a multiple of the signal period. A &ldquo;long&rdquo; line is generally considered to be one where the source&rsquo;s signal waveform completes at least a quarter-cycle (90&deg;&nbsp;of &ldquo;rotation&rdquo;) before the incident signal reaches line&rsquo;s end.</p>
+<p>Up until this chapter in the <em>Lessons In Electric Circuits</em> book series, all connecting lines were assumed to be electrically short.</p>
+<h2>How to Calculate the Wavelength?</h2>
+<p>To put this into perspective, we need to express the distance traveled by a voltage or current signal along a transmission line in relation to its source frequency. An AC waveform with a frequency of 60 Hz completes one cycle in 16.66 ms.</p>
+<p>At light speed (186,000 mile/s), this equates to a distance of 3100 miles that a voltage or current signal will propagate in that time. If the velocity factor of the transmission line is less than 1, the propagation velocity will be less than 186,000 miles per second, and the distance less by the same factor.</p>
+<p>But even if we used the coaxial cable&rsquo;s velocity factor from the last example (0.66), the distance is still a very long 2046 miles! Whatever distance we calculate for a given frequency is called the <em>wavelength</em> of the signal.</p>
+<p>A simple formula for calculating wavelength is as follows:</p>
+<a target='_blank' href='../images/92-01.webp'><img class='clImageThumb' src='../images/92-01.webp'></a><br>
+
+<p>The lowercase Greek letter &ldquo;lambda&rdquo; (&lambda;) represents wavelength, in whatever unit of length used in the velocity figure (if miles per second, then wavelength in miles; if meters per second, then wavelength in meters).</p>
+<p>Velocity of propagation is usually the speed of light when calculating signal wavelength in open air or in a vacuum, but will be less if the transmission line has a velocity factor less than 1.</p>
+<p>If a &ldquo;long&rdquo; line is considered to be one at least 1/4 wavelength in length, you can see why all connecting lines in the circuits discussed thus far have been assumed &ldquo;short.&rdquo;</p>
+<p>For a 60 Hz AC power system, power lines would have to exceed 775 miles in length before the effects of propagation time became significant. Cables connecting an audio amplifier to speakers would have to be over 4.65 miles in length before line reflections would significantly impact a 10 kHz audio signal!</p>
+<p>When dealing with radio-frequency systems, though, transmission line length is far from trivial. Consider a 100 MHz radio signal: its wavelength is a mere 9.8202 feet, even at the full propagation velocity of light (186,000 mile/s).</p>
+<p>A transmission line carrying this signal would not have to be more than about 2-1/2 feet in length to be considered &ldquo;long!&rdquo; With a cable velocity factor of 0.66, this critical length shrinks to 1.62 feet.</p>
+<h2>What Happens if the Transmission Line is &ldquo;Short&rdquo;?</h2>
+<p>When an electrical source is connected to a load via a &ldquo;short&rdquo; transmission line, the load&rsquo;s impedance dominates the circuit. This is to say, when the line is short, its own characteristic impedance is of little consequence to the circuit&rsquo;s behavior.</p>
+<p>We see this when testing a coaxial cable with an ohmmeter: the cable reads &ldquo;open&rdquo; from center conductor to outer conductor if the cable end is left unterminated.</p>
+<p>Though the line acts as a resistor for a very brief period of time after the meter is connected (about 50 &Omega; for an RG-58/U cable), it immediately thereafter behaves as a simple &ldquo;open circuit:&rdquo; the impedance of the line&rsquo;s open end.</p>
+<p>Since the combined response time of an ohmmeter and the human being using it <em>greatly exceeds</em> the round-trip propagation time up and down the cable, it is &ldquo;electrically short&rdquo; for this application, and we only register the terminating (load) impedance.</p>
+<p>It is the extreme speed of the propagated signal that makes us unable to detect the cable&rsquo;s 50 &Omega; transient impedance with an ohmmeter.</p>
+<p>If we use a coaxial cable to conduct a DC voltage or current to a load, and no component in the circuit is capable of measuring or responding quickly enough to &ldquo;notice&rdquo; a reflected wave, the cable is considered &ldquo;electrically short&rdquo; and its impedance is irrelevant to circuit function.</p>
+<p>Note how the electrical &ldquo;shortness&rdquo; of a cable is relative to the application: in a DC circuit where voltage and current values change slowly, nearly any physical length of cable would be considered &ldquo;short&rdquo; from the standpoint of characteristic impedance and reflected waves.</p>
+<p>Taking the same length of cable, though, and using it to conduct a high-frequency AC signal could result in a vastly different assessment of that cable&rsquo;s &ldquo;shortness!&rdquo;</p>
+<h2>What Happens When the Transmission Line is Electrically &ldquo;Long&rdquo;?</h2>
+<p>When a source is connected to a load via a &ldquo;long&rdquo; transmission line, the line&rsquo;s own characteristic impedance dominates over load impedance in determining circuit behavior. In other words, an electrically &ldquo;long&rdquo; line acts as the principal component in the circuit, its own characteristics overshadowing the load&rsquo;s.</p>
+<p>With a source connected to one end of the cable and a load to the other, current drawn from the source is a function primarily of the line and not the load. This is increasingly true the longer the transmission line is.</p>
+<p>Consider our hypothetical 50 &Omega; cable of infinite length, surely the ultimate example of a &ldquo;long&rdquo; transmission line: no matter what kind of load we connect to one end of this line, the source (connected to the other end) will only see 50 &Omega; of impedance, because the line&rsquo;s infinite length prevents the signal from <em>ever reaching</em> the end where the load is connected.</p>
+<p>In this scenario, line impedance exclusively defines circuit behavior, rendering the load completely irrelevant.</p>
+<h2>How to Minimize the Impact of Transmission Line Length on a Circuit?</h2>
+<p>The most effective way to minimize the impact of transmission line length on circuit behavior is to match the line&rsquo;s characteristic impedance to the load impedance.</p>
+<p>If the load impedance is equal to the line impedance, then <em>any</em> signal source connected to the other end of the line will &ldquo;see&rdquo; the exact same impedance, and will have the exact same amount of current drawn from it, regardless of line length.</p>
+<p>In this condition of perfect impedance matching, line length only affects the amount of time delay from signal departure at the source to signal arrival at the load. However, perfect matching of line and load impedances is not always practical or possible.</p>
+<p>The next section discusses the effects of &ldquo;long&rdquo; transmission lines, especially when line length happens to match specific fractions or multiples of signal wavelength.</p>
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li>&nbsp;Coaxial cabling is sometimes used in DC and low-frequency AC circuits as well as in high-frequency circuits, for the excellent immunity to induced &ldquo;noise&rdquo; that it provides for signals.</li>
+<li>&nbsp;When the period of a transmitted voltage or current signal greatly exceeds the propagation time for a transmission line, the line is considered <em>electrically short</em>. Conversely, when the propagation time is a large fraction or multiple of the signal&rsquo;s period, the line is considered <em>electrically long</em>.</li>
+<li>&nbsp;A signal&rsquo;s <em>wavelength</em> is the physical distance it will propagate in the timespan of one period. Wavelength is calculated by the formula &lambda;=v/f, where &ldquo;&lambda;&rdquo; is the wavelength, &ldquo;v&rdquo; is the propagation velocity, and &ldquo;f&rdquo; is the signal frequency.</li>
+<li>&nbsp;A rule-of-thumb for transmission line &ldquo;shortness&rdquo; is that the line must be at least 1/4 wavelength before it is considered &ldquo;long.&rdquo;</li>
+<li>&nbsp;In a circuit with a &ldquo;short&rdquo; line, the terminating (load) impedance dominates circuit behavior. The source effectively sees nothing but the load&rsquo;s impedance, barring any resistive losses in the transmission line.</li>
+<li>&nbsp;In a circuit with a &ldquo;long&rdquo; line, the line&rsquo;s own characteristic impedance dominates circuit behavior. The ultimate example of this is a transmission line of infinite length: since the signal will <em>never</em> reach the load impedance, the source only &ldquo;sees&rdquo; the cable&rsquo;s characteristic impedance.</li>
+<li>&nbsp;When a transmission line is terminated by a load precisely matching its impedance, there are no reflected waves and thus no problems with line length.</li>
+</ul>
+
+
+
+</div>
+</div>
+</body>
+</html>

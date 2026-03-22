@@ -1,0 +1,48 @@
+###### 13. AC Motors
+
+# AC Commutator Motors
+<p>Charles Proteus Steinmetz&rsquo;s first job after arriving in America was to investigate problems encountered in the design of the alternating current version of the brushed commutator motor. The situation was so bad that motors could not be designed ahead of the actual construction.</p>
+<p>The success or failure of a motor design is not known until it is actually built and tested. He formulated the laws of magnetic <em>hysteresis</em> in finding a solution. Hysteresis is a lagging behind of the magnetic field strength as compared to the magnetizing force. This produces a loss not present in DC magnetics.</p>
+<p>Low hysteresis alloys and breaking the alloy into thin insulated <em>laminations</em> made it possible to accurately design AC commutator motors before building.</p>
+<p>AC commutator motors, like comparable DC motors, have higher starting torque and higher speed than AC induction motors.</p>
+<p>The series motor operates well above the synchronous speed of a conventional AC motor. AC commutator motors may be either single-phase or poly-phase. The single-phase AC version suffers a double line frequency torque pulsation, not present in the polyphase motor.</p>
+<p>Since a commutator motor can operate at a much higher speed than an induction motor, it can output more power than a similar size induction motor. However, commutator motors are not as maintenance-free as induction motors, due to brush and commutator wear.</p>
+## Single Phase Series Motor
+<p>If a DC series motor equipped with a laminated field is connected to AC, the lagging reactance of the field coil will considerably reduce the field current. While such a motor will rotate, the operation is marginal.</p>
+<p>While starting, armature windings connected to commutator segments shorted by the brushes look like shorted transformer turns to the field. This results in considerable arcing and sparking at the brushes as the armature begins to turn.</p>
+<p>This is less of a problem as speed increases, which shares the arcing and sparking between commutator segments The lagging reactance and arcing brushes are only tolerable in very small uncompensated series AC motors operated at high speed. Series AC motors smaller than hand drills and kitchen mixers may be uncompensated. (Figure below)</p>
+
+^[87-01.webp]
+<p><em>Uncompensated series AC motor</em></p>
+
+## Compensated Series Motor
+<p>The arcing and sparking is mitigated by placing a <em>compensating winding </em>the stator in series with the armature positioned so that its magnetomotive force (mmf) cancels out the armature AC mmf.</p>
+<p>A smaller motor air gap and fewer field turns reduce lagging reactance in series with the armature improving the power factor. All but very small AC commutator motors employ compensating windings. Motors as large as those employed in a kitchen mixer, or larger, use compensated stator windings.</p>
+
+^[87-02.webp]
+<p><em>Compensated series AC motor</em></p>
+
+## Universal Motor
+<p>It is possible to design small (under 300 watts) <em>universal motors</em> which run from either DC or AC. Very small universal motors may be uncompensated. Larger higher speed universal motors use a compensating winding.</p>
+<p>A motor will run slower on AC than DC due to the reactance encountered with AC. However, the peaks of the sine waves saturate the magnetic path reducing total flux below the DC value, increasing the speed of the &ldquo;series&rdquo; motor.</p>
+<p>Thus, the offsetting effects result in a nearly constant speed from DC to 60 Hz. The small line operated appliances, such as drills, vacuum cleaners, and mixers, requiring 3000 to 10,000 rpm use universal motors.</p>
+<p>Though, the development of solid-state rectifiers and inexpensive permanent magnets is making the DC permanent magnet motor a viable alternative.</p>
+## Repulsion Motor
+<p>A repulsion motor consists of a field directly connected to the AC line voltage and a pair of shorted brushes offset by 15<strong>&deg;</strong>to 25<strong>&deg;</strong> from the field axis. The field induces a current flow into the shorted armature whose magnetic field opposes that of the field coils.</p>
+<p>Speed can be controlled by rotating the brushes with respect to the field axis. This motor has superior commutation below synchronous speed, inferior commutation above synchronous speed. The low starting current produces high starting torque.</p>
+
+^[87-03.webp]
+<p><em>Repulsion AC motor</em></p>
+
+## Repulsion Start Induction Motor
+<p>When an induction motor drives a hard starting load like a compressor, the high starting torque of the repulsion motor may be put to use. The induction motor rotor windings are brought out to commutator segments for starting by a pair of shorted brushes.</p>
+<p>At near running speed, a centrifugal switch shorts out all commutator segments, giving the effect of a squirrel cage rotor. The brushes may also be lifted to prolong brush life. Starting torque is 300% to 600% of the full speed value as compared to under 200% for a pure induction motor.</p>
+
+<p><strong>Summary: AC commutator motors</strong></p>
+<ul>
+<li>&nbsp;The <em>single-phase series motor</em> is an attempt to build a motor like a DC commutator motor. The resulting motor is only practical in the smallest sizes.</li>
+<li>&nbsp;The addition of a compensating winding yields the <em>compensated series motor</em>, overcoming excessive commutator sparking. Most AC commutator motors are this type. At high speed, this motor provides more power than a same-size induction motor but is not maintenance-free.</li>
+<li>It is possible to produce small appliance motors powered by either AC or DC. This is known as a <em>universal motor</em>.</li>
+<li>The AC line is directly connected to the stator of a <em>repulsion motor </em>with the commutator shorted by the brushes.</li>
+<li>&nbsp;Retractable shorted brushes may start a wound rotor induction motor. This is known as a <em>repulsion start induction motor.</em></li>
+</ul>

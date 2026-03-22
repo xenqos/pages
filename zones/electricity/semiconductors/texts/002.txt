@@ -1,0 +1,10 @@
+# Active Versus Passive Devices
+## Passive Devices
+<p>Components incapable of controlling current by means of another electrical signal are called <em>passive</em> devices. Resistors, capacitors, inductors, transformers, and even diodes are all considered passive devices.</p>
+## Active Devices
+<p>An <em>active</em> device is any type of circuit component with the ability to electrically control electric charge flow (electricity controlling electricity). In order for a circuit to be properly called <em>electronic</em>, it must contain at least one active device. Active devices include, but are not limited to, vacuum tubes, transistors, silicon-controlled rectifiers (SCRs), and TRIACs.</p>
+<p>A case might be made for the saturable reactor to be defined as an active device, since it is able to control an AC current with a DC current, but I&rsquo;ve never heard it referred to as such. The operation of each of these active devices will be explored in later chapters of this volume.</p>
+## Functions of Active Devices
+<p>All active devices control the flow of electric charges through them. Some active devices allow a voltage to control this current while other active devices allow another current to do the job. Devices utilizing a static voltage as the controlling signal are, not surprisingly, called <em>voltage-controlled</em> devices.</p>
+<p>Devices working on the principle of one current controlling another current are known as <em>current-controlled</em> devices.</p>
+<p>For the record, vacuum tubes are voltage-controlled devices while transistors are made as either voltage-controlled or current controlled types. The first type of transistor successfully demonstrated was a current-controlled device. </p>

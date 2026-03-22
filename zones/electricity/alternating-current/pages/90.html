@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Alternating Current</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='89.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='91.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h6>14. Transmission Lines</h6>
+
+<h1>Characteristic Impedance</h1>
+
+<h2>The Parallel Wires of Infinite Length</h2>
+<p>Suppose, though, that we had a set of parallel wires of <em>infinite</em> length, with no lamp at the end. What would happen when we close the switch? Being that there is no longer a load at the end of the wires, this circuit is open. Would there be no current at all? (Figure below)</p>
+<a target='_blank' href='../images/90-01.webp'><img class='clImageThumb' src='../images/90-01.webp'></a><br>
+<p><em>Driving an infinite transmission line.</em></p>
+<p>Despite being able to avoid wire resistance through the use of superconductors in this &ldquo;thought experiment,&rdquo; we cannot eliminate capacitance along the wires&rsquo; lengths. <em>Any</em> pair of conductors separated by an insulating medium creates capacitance between those conductors: (Figure below)</p>
+<a target='_blank' href='../images/90-02.webp'><img class='clImageThumb' src='../images/90-02.webp'></a><br>
+<p><em>Equivalent circuit showing stray capacitance between conductors.</em></p>
+<p>Voltage applied between two conductors creates an electric field between those conductors. Energy is stored in this electric field, and this storage of energy results in an opposition to change in voltage. The reaction of a capacitance against changes in voltage is described by the equation i = C(de/dt), which tells us that current will be drawn proportional to the voltage&rsquo;s rate of change over time. Thus, when the switch is closed, the capacitance between the conductors will react against the sudden voltage increase by charging up and drawing current from the source. According to the equation, an instant rise in applied voltage (as produced by perfect switch closure) gives rise to an infinite charging current.</p>
+
+<h2>Capacitance and Inductance</h2>
+<p>However, the current drawn by a pair of parallel wires will not be infinite, because there exists a series of impedance along the wires due to inductance. (Figure below) Remember that current through <em>any</em> conductor develops a magnetic field of proportional magnitude. Energy is stored in this magnetic field, (Figure below) and this storage of energy results in an opposition to change in current. Each wire develops a magnetic field as it carries charging current for the capacitance between the wires, and in so doing drops voltage according to the inductance equation e = L(di/dt). This voltage drop limits the voltage rate-of-change across the distributed capacitance, preventing the current from ever reaching an infinite magnitude:</p>
+<a target='_blank' href='../images/90-03.webp'><img class='clImageThumb' src='../images/90-03.webp'></a><br>
+<p><em>Equivalent circuit showing stray capacitance and inductance.</em></p>
+<a target='_blank' href='../images/90-04.webp'><img class='clImageThumb' src='../images/90-04.webp'></a><br>
+<p><em>Voltage charges capacitance, current charges inductance.</em></p>
+<p>Because the electric charge carriers in the two wires transfer motion to and from each other at nearly the speed of light, the &ldquo;wave front&rdquo; of voltage and current change will propagate down the length of the wires at that same velocity, resulting in the distributed capacitance and inductance progressively charging to full voltage and current, respectively, like this:</p>
+<a target='_blank' href='../images/90-05.webp'><img class='clImageThumb' src='../images/90-05.webp'></a><br>
+<p><em>Uncharged transmission line.</em></p>
+<a target='_blank' href='../images/90-06.webp'><img class='clImageThumb' src='../images/90-06.webp'></a><br>
+<p><em>Begin wave propagation.</em></p>
+<a target='_blank' href='../images/90-07.webp'><img class='clImageThumb' src='../images/90-07.webp'></a><br>
+<p><em>Continue wave propagation.</em></p>
+<a target='_blank' href='../images/90-08.webp'><img class='clImageThumb' src='../images/90-08.webp'></a><br>
+<p><em>Propagate at speed of light.</em></p>
+
+<h2>The Transmission Line</h2>
+<p>The end result of these interactions is a constant current of limited magnitude through the battery source. Since the wires are infinitely long, their distributed capacitance will never fully charge to the source voltage, and their distributed inductance will never allow unlimited charging current. In other words, this pair of wires will draw current from the source so long as the switch is closed, behaving as a constant load. No longer are the wires merely conductors of electrical current and carriers of voltage, but now constitute a circuit component in themselves, with unique characteristics. No longer are the two wires merely <em>a pair of conductors</em>, but rather a <em>transmission line</em>.</p>
+<p>As a constant load, the transmission line&rsquo;s response to the applied voltage is resistive rather than reactive, despite being comprised purely of inductance and capacitance (assuming superconducting wires with zero resistance). We can say this because there is no difference from the battery&rsquo;s perspective between a resistor eternally dissipating energy and an infinite transmission line eternally absorbing energy. The impedance (resistance) of this line in ohms is called the <em>characteristic impedance</em>, and it is fixed by the geometry of the two conductors. For a parallel-wire line with air insulation, the characteristic impedance may be calculated as such:</p>
+<a target='_blank' href='../images/90-09.webp'><img class='clImageThumb' src='../images/90-09.webp'></a><br>
+<p>If the transmission line is coaxial in construction, the characteristic impedance follows a different equation:</p>
+<a target='_blank' href='../images/90-10.webp'><img class='clImageThumb' src='../images/90-10.webp'></a><br>
+<p>In both equations, identical units of measurement must be used in both terms of the fraction. If the insulating material is other than air (or a vacuum), both the characteristic impedance and the propagation velocity will be affected. The ratio of a transmission line&rsquo;s true propagation velocity and the speed of light in a vacuum is called the <em>velocity factor</em> of that line.</p>
+<p>Velocity factor is purely a factor of the insulating material&rsquo;s relative permittivity (otherwise known as its <em>dielectric constant</em>), defined as the ratio of a material&rsquo;s electric field permittivity to that of a pure vacuum. The velocity factor of any cable type&mdash;coaxial or otherwise&mdash;may be calculated quite simply by the following formula:</p>
+<a target='_blank' href='../images/90-11.webp'><img class='clImageThumb' src='../images/90-11.webp'></a>
+<h2>The Natural Impedance</h2>
+<p>Characteristic impedance is also known as <em>natural impedance</em>, and it refers to the equivalent resistance of a transmission line if it were infinitely long, owing to distributed capacitance and inductance as the voltage and current &ldquo;waves&rdquo; propagate along its length at a propagation velocity equal to some large fraction of light speed.</p>
+<p>It can be seen in either of the first two equations that a transmission line&rsquo;s characteristic impedance (Z<sub>0</sub>) increases as the conductor spacing increases. If the conductors are moved away from each other, the distributed capacitance will decrease (greater spacing between capacitor &ldquo;plates&rdquo;), and the distributed inductance will increase (less cancellation of the two opposing magnetic fields). Less parallel capacitance and more series inductance result in a smaller current drawn by the line for any given amount of applied voltage, which by definition is a greater impedance. Conversely, bringing the two conductors closer together increases the parallel capacitance and decreases the series inductance. Both changes result in a larger current drawn for a given applied voltage, equating to a lesser impedance.</p>
+<p>Barring any dissipative effects such as dielectric &ldquo;leakage&rdquo; and conductor resistance, the characteristic impedance of a transmission line is equal to the square root of the ratio of the line&rsquo;s inductance per unit length divided by the line&rsquo;s capacitance per unit length:</p>
+<a target='_blank' href='../images/90-12.webp'><img class='clImageThumb' src='../images/90-12.webp'></a><br>
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li>&nbsp;A <em>transmission line</em> is a pair of parallel conductors exhibiting certain characteristics due to distributed capacitance and inductance along its length.</li>
+<li>&nbsp;When a voltage is suddenly applied to one end of a transmission line, both a voltage &ldquo;wave&rdquo; and a current &ldquo;wave&rdquo; propagate along the line at nearly light speed.</li>
+<li>&nbsp;If a DC voltage is applied to one end of an infinitely long transmission line, the line will draw current from the DC source as though it were a constant resistance.</li>
+<li>&nbsp;The <em>characteristic impedance</em> (Z<sub>0</sub>) of a transmission line is the resistance it would exhibit if it were infinite in length. This is entirely different from leakage resistance of the dielectric separating the two conductors, and the metallic resistance of the wires themselves. Characteristic impedance is purely a function of the capacitance and inductance distributed along the line&rsquo;s length and would exist even if the dielectric were perfect (infinite parallel resistance) and the wires superconducting (zero series resistance).</li>
+<li>&nbsp;<em>Velocity factor</em> is a fractional value relating to a transmission line&rsquo;s propagation speed to the speed of light in a vacuum. Values range between 0.66 and 0.80 for typical two-wire lines and coaxial cables. For any cable type, it is equal to the reciprocal (1/x) of the square root of the relative permittivity of the cable&rsquo;s insulation.</li>
+</ul>
+
+
+
+</div>
+</div>
+</body>
+</html>

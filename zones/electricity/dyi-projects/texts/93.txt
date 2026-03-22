@@ -1,0 +1,75 @@
+# 555 Lab - Advanced Red LED Flasher
+## Project Overview
+<p>The circuit shown in the previous experiment, 555 Lab - Red LED Flasher, has one big drawback,&nbsp;a lack of light-emitting diode (LED) current control. This experiment begins with&nbsp;the same basic 555 circuit&nbsp;and then adds transistors to drive the LED and a resistor to limit the current (Figure 1).</p>
+
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/CMOS-555-long-duration-red-LED-flasher-illustration.jpg" /></p>
+<em><strong>Figure 1. </strong>Breadboard implementation of the 555 timer LED flasher with transistor current drive.</em>
+
+## Parts and Materials
+<ul>
+<li>Two AAA batteries</li>
+<li>Battery clip&nbsp;</li>
+<li>A digital voltmeter (DVM) or volt-ohmmeter (VOM)</li>
+<li>U1 - CMOS TLC555 timer IC.&nbsp;
+<ul>
+<li>Note:&nbsp;This is a static-sensitive part.&nbsp;If you do not use protection as described in the&nbsp;electrostatic discharge&nbsp;(ESD) chapter, you run the risk of destroying it.</li>
+</ul>
+</li>
+<li>Q1 - 2N3906 PNP transistor or equivalent</li>
+<li>Q2 - 2N2222 NPN transistor&nbsp;or equivalent</li>
+<li>D1 - Red LED</li>
+<li>R1 - 1.5 M&Omega; 1/4W 5% resistor</li>
+<li>R2 - 47 k&Omega; 1/4W 5% resistor</li>
+<li>R3 - 2.2 k&Omega; 1/4W 5% resistor</li>
+<li>R4 - 27 &Omega; 1/4W 5% resistor</li>
+<li>C1 - 1 &micro;F tantalum capacitor</li>
+<li>C2 - 100 &micro;F electrolytic capacitor</li>
+</ul>
+
+## Learning Objectives
+<ul>
+<li>Learn a practical application for an RC time constant</li>
+<li>Learn one of several 555 timer astable multivibrator configurations</li>
+<li>Working knowledge of duty cycle</li>
+<li>How to handle ESD-sensitive parts</li>
+<li>How to use transistors to improve current gain</li>
+<li>How to calculate the correct resistor to limit LED current</li>
+</ul>
+
+## Instructions
+<p><strong>Step 1:&nbsp;</strong>Build the 555 oscillator circuit shown in Figures 1 and 2.&nbsp;</p>
+
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/CMOS-555-long-duration-red-LED-flasher-schematic-diagram.jpg" /></p>
+<em><strong>Figure 2. </strong>Schematic diagram of the 555 timer LED flasher with transistor current drive.</em>
+
+<p>Omit the red jumper wire shown at the upper left of Figure 1. The LED&nbsp;should start flashing roughly every 1 second.</p>
+<p><strong>Step 2:&nbsp;</strong>Measure the forward voltage of the LED, V<sub>F</sub>, by adding the jumper shown in red in Figure 1. Adding this jumper&nbsp;will turn the LED on full-time. Use a voltmeter to measure the voltage drop&nbsp;across the LED while it is turned on.</p>
+<p><strong>Step 3:&nbsp;</strong>Calculate the approximate current through the LED using the following equation:</p>
+
+<p>$$I_{LED} \approx \frac{( V_{DD} - V_F)}{R4}$$</p>
+
+<p>LEDs can have a lot of variation in the forward voltage. Using that equation with our supply voltage of 3.0 V and an R4 of 27 &Omega;:</p>
+<ul>
+<li>If V<sub>F</sub> = 2.5 V, the LED current would be 18.5 mA</li>
+<li>If V<sub>F</sub>&nbsp;= 2.1 V, the LED current would be 33.3 mA</li>
+<li>If V<sub>F</sub>&nbsp;= 1.5 V, the LED current would be 55.6 mA</li>
+</ul>
+
+<p>A forward current of 55.6 mA might cause the LED to burn out. Not to mention it would negatively impact the battery life of the system. If we want to target an LED forward current of 20 mA (a typical value), we can calculate values for R4 using this equation:</p>
+
+<p>$$R4 = \frac{( V_{DD} - V_F)}{I_{LED}} = \frac{( 3.0 - V_F)}{0.02}$$</p>
+
+<p>Using that equation, we can calculate the following resistance values for R4:</p>
+<ul>
+<li>If V<sub>F</sub> = 2.5 V, use a 25&nbsp;&Omega; resistor&nbsp;</li>
+<li>If V<sub>F</sub> = 2.1 V, use a 45&nbsp;&Omega; resistor&nbsp;</li>
+<li>If V<sub>F&nbsp;</sub>= 1.5 V, use a 75&nbsp;&Omega; resistor&nbsp;</li>
+</ul>
+
+<p><strong>Step 4:&nbsp;</strong>It was mentioned in the previous experiment that capacitor, C2, extended the life of the batteries. Try removing this capacitor&nbsp;and see what happens. After a time, you&nbsp;will begin to notice a dimming of the LED. After a week or two, the circuit will die without the capacitor. Now, place the capacitor back into the circuit. The circuit will resume working in a couple of seconds. The capacitor provides the surge current required when the LED turns on.&nbsp;This flasher will work for 3 months using fresh alkaline AAA batteries.</p>
+
+## Theory of Operation
+<p>The complimentary metal-oxide semiconductor (CMOS)&nbsp;555 oscillator was explained fully in the previous 555 Lab - Red LED Flasher experiment, so the transistor driver will be the focus of this explanation.&nbsp;The transistors, Q1 and Q2, used to drive the LED&nbsp;are non critical. They&nbsp;are&nbsp;designed to minimize the load on the TLC555 IC, while still turning&nbsp;Q2 on fully. This is important because&nbsp;as the battery voltage approaches 2 V, the drive from the TLC555 is reduced to its minimum value and might otherwise not be able directly drive an LED. Bipolar transistors&nbsp;make excellent switches in thes types of applications.</p>
+<p>The transistor driver combines elements of a common collector configuration on Q1, along with the common emitter configuration of Q2. This allows for very high input resistance while allowing Q2 to turn on fully.</p>
+<p>The input resistance of a transistor is the &beta; (gain) of the transistor times the emitter resistor. If Q1 has a gain of 50 (a minimum value) then the driver loads the TLC555 with more than 100 K&Omega;. This provides a high impedance load to the 555 output, so it does not need to drive much current. Transistors can have large variations in gain, even within the same family.</p>
+<p>When Q1 turns on, 1 mA is passed to Q2. This is more than enough to turn Q2 fully on, which is referred to as saturation. Q2 is used as a simple switch for the LED.</p>

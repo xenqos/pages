@@ -1,0 +1,89 @@
+# 555 Lab - Monostable Multivibrator (One-shot)
+## Project Overview
+<p>The monostable multivibrator, or one-shot, is one of the most basic 555 circuits. This circuit (Figure 1)&nbsp;is part of the typical 555 datasheets, complete with the math needed to design to specification, and is one of the reasons a 555 is referred to as a timer.</p>
+
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/555-monostable-multivibrator-schematic-diagram.jpg" /></p>
+<em><strong>Figure 1. </strong>Schematic diagram of the 555 one-shot timer&nbsp;with LED output indicators.</em>
+
+<p>As illustrated in Figure 2, at the falling edge of the trigger, the output goes high. It will stay high for the full time period, T.</p>
+
+<p><img src="https://www.allaboutcircuits.com/uploads/thumbnails/555-monostable-calculator-1-a.png" /></p>
+<em><strong>Figure 2. </strong>Trigger and output waveforms for a one-shot timer&nbsp;(monostable multivibrator).</em>
+
+## Parts and Materials
+<ul>
+<li>One 9 V battery</li>
+<li>Battery clip&nbsp;</li>
+<li>Mini-hook clips&nbsp;</li>
+<li>A watch with a second hand/display or a stopwatch</li>
+<li>A wire, 11/2&rdquo; to 2&rdquo; (3.8 mm to 5 mm) long, folded in half (shown as red wire in the illustration)</li>
+<li>U1 - 555 timer IC</li>
+<li>D1 - Red light-emitting diode (LED)</li>
+<li>D2 - Green LED</li>
+<li>R1, R2 - 1 k&Omega; 1/4 W resistors</li>
+<li>R<sub>t</sub> - 27 k&Omega; 1/4W resistor</li>
+<li>R<sub>t </sub>- 270 k&Omega; 1/4W resistor</li>
+<li>C1, C2 - 0.1 &micro;F capacitor</li>
+<li>C<sub>t</sub> - 10 &micro;F capacitor</li>
+<li>C<sub>t</sub> - 100 &micro;F capacitor</li>
+</ul>
+
+## Learning Objectives
+<ul>
+<li>Learn how a monostable multivibrator works</li>
+<li>Learn a practical application for an RC time constant</li>
+<li>How to use the 555 timer as a monostable multivibrator</li>
+</ul>
+
+## Instructions
+<p><strong>Step 1:&nbsp;</strong>Build the circuit illustrated in the schematic diagram of Figure 1 and the breadboard implementation of Figure 3.</p>
+
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/555-monostable-multivibrator-illustration.jpg" /></p>
+<em><strong>Figure 3. </strong>Breadboard implementation of the 555 one-shot timer&nbsp;with LED output indicators.</em>
+
+<p><strong>Step 2:</strong>&nbsp;Verify that the green LED&nbsp;lights are when the 555 output is high (i.e., switched to V<sub>CC</sub>) and the red LED lights when the 555 output is low (switched to ground).</p>
+<p>This particular monostable multivibrator (also known as a one-shot&nbsp;timer) is not a re-triggerable type.&nbsp;This means that once triggered, it will ignore further inputs during a timing cycle, with one exception, which will be discussed below.</p>
+<p><strong>Step 3:&nbsp;</strong>The timer starts when the input goes low or switches to the ground level and the output goes high.&nbsp;You can prove this by connecting the red wire shown in Figure 1 between the ground and point B, disconnecting it, and reconnecting it.</p>
+<p><strong>Step 4:&nbsp;</strong>It is an illegal condition for the input to stay low for this design past timeout.&nbsp;For this reason, R3 and C1 were added to create a signal conditioner, which will allow edge-only triggering and prevent illegal input.&nbsp;You can prove this by connecting the red wire between the ground and point A.&nbsp;The timer will start when the wire is inserted into the protoboard between these two points and ignore further contacts.</p>
+<p><strong>Step 5:&nbsp;</strong>If you force the timer input to stay low past timeout, the output will stay high even though the timer has finished. As soon as this ground is removed, the timer will go low.</p>
+<p><strong>Step 6:&nbsp;</strong>R<sub>t</sub> and C<sub>t</sub> were selected for 3 seconds timing duration. You can verify this with a watch, 3 seconds is long enough that we slow humans can actually measure it.&nbsp;The resistor and capacitor are probably 5% and 20% tolerance, respectively, so the calculated times you measure can vary as much as 25%, though it will usually be much closer.</p>
+<p><strong>Step 7:&nbsp;</strong>Try changing&nbsp;R<sub>t</sub> from a 270 k&Omega; to a 27 k&Omega; resistor&nbsp;and C<sub>t</sub> from a 10&nbsp;&micro;F to a 100 &micro;F capacitor. Since the RC time constant&nbsp;is the same, there should be no difference in how it operates.</p>
+<p><strong>Step 8:&nbsp;</strong>Next, try replacing R<sub>t</sub> with the 270 k&Omega; resistor.&nbsp;Since the RC time constant is now 10 times greater, you should get close to 30 seconds.</p>
+<p>Another nice feature of the 555 is its immunity from the power supply voltage.&nbsp;If you were to swap the 9V battery with a 6V or 12 battery, you should get identical results, though the LED light intensity will change.</p>
+<p>C2 isn&rsquo;t actually necessary. The 555 IC has this option in case the timer is being used in an environment where the power supply line is noisy.</p>
+<p>You can remove it and not notice a difference. The 555 itself is a source of noise since there is a very brief period of time that the transistors on both sides of the output are both conducting, creating a power surge (measured in nanoseconds) from the power supply.</p>
+
+## Theory of Operation
+<p>Figure 4&nbsp;is the starting and ending point for this circuit, where the output is low and it is waiting for a trigger to start a timing cycle. Looking at the functional schematic shown in Figure 4, you can see that pin 7 (d<em>ischarge</em>) is connected to a transistor going to the ground.&nbsp;</p>
+
+<p><img src="https://www.allaboutcircuits.com/uploads/thumbnails/555-functional-schematic-circuit_redo.jpg" /></p>
+<em><strong>Figure 4.</strong>&nbsp;The stable state of the 555 timer one-shot waiting for a trigger input.</em>
+
+<p>This transistor is simply a switch.&nbsp;When the flip-flop output&nbsp;Q<em>&nbsp;</em>is high, as indicated by the red lines in the figure, the transistor is on and connects the capacitor C<sub>t</sub> to the ground. Figure 5&nbsp;shows what happens when the 555 receives a trigger, starting the sequence.&nbsp;</p>
+
+<p><img src="https://www.allaboutcircuits.com/uploads/thumbnails/555-functional-schematic-circuit-1_redo_1.jpg" /></p>
+<em><strong>Figure 5.</strong> Triggering the 555 timer one-shot by grounding pin 2 (trigger).</em>
+
+<p>Pin 2 (<em>trigger</em>) is forced low, which causes comparator C2 output to go high. This resets the flip-flop output&nbsp;Q&nbsp;low, which turns off the transistor connected to pin 7 and the capacitor C<sub>t</sub>.</p>
+<p>The capacitor C<sub>t</sub> now begins charging through resistor R<sub>t</sub> as illustrated in Figure 6.&nbsp;</p>
+
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/555-timing-cycle.jpg" /></p>
+<em><strong>Figure 6.</strong>&nbsp;Capacitor voltage during a 555 one-shot timing sequence.</em>
+
+<p>The red line represents the power supply voltage, V<sub>CC</sub>, and the green line represents the ground (0 volts).&nbsp;The capacitor C<sub>t</sub> charges up from the ground towards V<sub>CC</sub> following an RC exponential charging curve. Note: it will not reach V<sub>CC</sub> due to the operation of the circuit.&nbsp;</p>
+<p>Figure 7&nbsp;shows the state of the circuit while the capacitor is charging.&nbsp;</p>
+
+<p><img src="https://www.allaboutcircuits.com/uploads/thumbnails/555-functional-schematic-circuit-2_redo.jpg" /></p>
+<em><strong>Figure 7.</strong> State of the 555 timer one-shot while the capacitor is charging.</em>
+
+<p>During this time, the circuit is in a stable configuration, and the output is high.</p>
+<p>Figure 8&nbsp;shows the circuit in the middle of switching off when it hits timeout.&nbsp;</p>
+
+<p><img src="https://www.allaboutcircuits.com/uploads/thumbnails/555-functional-schematic-circuit-3_redo.jpg" /></p>
+<em><strong>Figure 8.</strong> When the capacitor voltage reaches 2/3 V<sub>CC</sub> and sets the flip-flop.</em>
+
+<p>Capacitor C<sub>t</sub> has charged to 2/3 V<sub>CC</sub>. This forces comparator C1 to switch high and set the flip-flop. The flip-flop output&nbsp;Q<em>&nbsp;</em>goes high, which will turn on the discharge transistor at pin 7. This also resets the output low.</p>
+<p>At this point, the pin 7 transistor is on, keeping the capacitor C<sub>t</sub> discharged. The circuit is now in the state illustrated in Figure 9, which is identical to the starting state of Figure 4.&nbsp;</p>
+
+<p><img src="https://www.allaboutcircuits.com/uploads/thumbnails/555-functional-schematic-circuit-4_redo.jpg" /></p>
+<em><strong>Figure 9.</strong>&nbsp;Return to the stable state of the 555 timer one-shot.</em>

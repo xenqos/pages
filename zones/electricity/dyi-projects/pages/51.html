@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>DYI Projects</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='50.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='52.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>Si Lab - Full-wave Bridge Rectifier</h1>
+<h2>Project Overview</h2>
+<p>The circuit of Figure 1 uses four diodes to&nbsp;provide&nbsp;full-wave rectification without the necessity of a center-tapped transformer.&nbsp;</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/full-wave-bridge-rectifier-schematic-diagram.jpg&quot; /></p>
+<em><strong>Figure 1. </strong>Schematic diagram of the&nbsp;full-wave bridge rectifier circuit driving a motor</em><br>
+<br>
+<p>Can you trace the current path from the AC power supply through one diode, through the motor, through a second diode, and back to the AC power supply for both the positive and negative half-cycles of the AC supply voltage?</p>
+<p>In applications where a center-tapped or split-phase&nbsp;source is unavailable, this is the only practical method of full-wave rectification. The advantages of the circuit include its simple design and low-cost components.</p>
+<p>However, in addition to requiring more diodes than the center-tap circuit, the full-wave bridge suffers a slight performance disadvantage as well.&nbsp;The additional voltage drop&nbsp;is caused by the current having to go through two diodes in each half-cycle rather than through only one.</p>
+
+<h2>Parts and Materials</h2>
+<ul>
+<li>Low-voltage AC power supply (6 V output)</li>
+<li>Four 1N4001 rectifying diodes</li>
+<li>Small hobby&nbsp;motor, permanent-magnet type</li>
+</ul>
+
+<h2>Learning Objectives</h2>
+<ul>
+<li>Design of a bridge rectifier circuit</li>
+<li>Advantages and disadvantages of the bridge rectifier circuit, compared to the center-tap circuit</li>
+</ul>
+
+<h2>Instructions</h2>
+<p><strong>Step 1:&nbsp;</strong>Build the full-wave bridge rectifier circuit using the four silicon diodes, as illustrated in Figures 1 and 2.&nbsp;</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/thumbnails/full-wave_bridge_rectifier_Figure_2.jpg&quot; /></p>
+<em><strong>Figure 2.&nbsp;</strong>Terminal strip implementation of the&nbsp;full-wave bridge rectifier circuit driving a motor.</em><br>
+<br>
+<p><strong>Step 2:&nbsp;</strong>Measure the DC voltage across the motor.&nbsp;Compare the DC voltage reading across the motor terminals with the reading obtained from the half-wave rectifier experiment, given the same AC power supply and the same motor.&nbsp;With a low-voltage source such as the one you&rsquo;re using (6 V RMS or root mean square), the&nbsp;disadvantage of the two voltage drops for this full-wave bridge rectifier is easily measured.</p>
+
+<h2>SPICE Simulation of the Full-wave Bridge Rectifier Circuit</h2>
+<p>We can simulate the full-wave bridge rectifier using the circuit with node numbers, as illustrated in Figure 3.</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/full-wave-bridge-rectifier-schematic-with-spice-node-numbers .jpg&quot; /></p>
+<em><strong>Figure 3.&nbsp;</strong>SPICE circuit schematic for a full-wave bridge rectifier circuit</em><br>
+<br>
+<p>Netlist (make a text file containing the following text, verbatim):</p>
+<pre><br>
+Fullwave bridge rectifier &#10;v1 1 0 sin(0 8.485 60 0 0) &#10;rload 2 3 10k &#10;d1 3 1 mod1 &#10;d2 1 2 mod1 &#10;d3 3 0 mod1 &#10;d4 0 2 mod1 &#10;.model mod1 d &#10;.tran .5m 25m &#10;.plot tran v(1,0) v(2,3) &#10;.end </pre>
+
+<p>This simulation plots the input voltage as a sine wave that oscillates both positively and negatively. The output voltage is a series of positive humps&nbsp;corresponding to both the positive and negative half-cycles of the AC source voltage.&nbsp;The AC source is set to an 8.485 V peak corresponding to a 6 V RMS sine-wave voltage.&nbsp;</p>
+
+
+</div>
+</div>
+</body>
+</html>

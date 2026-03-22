@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Alternating Current</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='06.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='08.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h6>02. Complex Numbers</h6>
+
+
+<h1>Introduction to Complex Numbers</h1>
+<p>If I needed to describe the distance between two cities, I could provide an answer consisting of a single number in miles, kilometers, or some other unit of linear measurement.</p>
+<p>However, if I were to describe how to travel from one city to another, I would have to provide more information than just the distance between those two cities; I would also have to provide information about the <em>direction</em> to travel, as well.</p>
+<p>The kind of information that expresses a single dimension, such as linear distance, is called a <em>scalar</em> quantity in mathematics. Scalar numbers are the kind of numbers you&rsquo;ve used in most all of your mathematical applications so far.</p>
+<p>The voltage produced by a battery, for example, is a scalar quantity. So is the resistance of a piece of wire (ohms), or the current through it (amps).</p>
+<p>However, when we begin to analyze AC circuits, we find that quantity of voltage, current, and even resistance (called <em>impedance</em> in AC) are not the familiar one-dimensional quantities we&rsquo;re used to measuring in DC circuits.</p>
+<p>Rather, these quantities, because they&rsquo;re dynamic (alternating in direction and amplitude), possess other dimensions that must be taken into account. Frequency and phase shift are two of these dimensions that come into play.</p>
+<p>Even with relatively simple AC circuits, where we&rsquo;re only dealing with a single frequency, we still have the dimension of phase shift to contend with in addition to the amplitude.</p>
+<p>In order to successfully analyze AC circuits, we need to work with mathematical objects and techniques capable of representing these multi-dimensional quantities.</p>
+<p>Here is where we need to abandon scalar numbers for something better suited: <em>complex numbers</em>. Just like the example of giving directions from one city to another, AC quantities in a single-frequency circuit have both amplitude (analogy: distance) and phase shift (analogy: direction).</p>
+<p>A complex number is a single mathematical quantity able to express these two dimensions of amplitude and phase shift at once.</p>
+<h2>Graphical Representation of Complex Numbers</h2>
+<p>Complex numbers are easier to grasp when they&rsquo;re represented graphically. If I draw a line with a certain length (magnitude) and angle (direction), I have a graphic representation of a complex number which is commonly known in physics as a <em>vector</em>: (Figure below)</p>
+<a target='_blank' href='../images/07-01.webp'><img class='clImageThumb' src='../images/07-01.webp'></a><br>
+
+<p>As distances and directions on a map, there must be some common frame of reference for angle figures to have any meaning. In this case, directly right is considered to be 0<sup>o</sup>, and angles are counted in a positive direction going counter-clockwise: (Figure below)</p>
+<a target='_blank' href='../images/07-02.webp'><img class='clImageThumb' src='../images/07-02.webp'></a><br>
+
+<p>The idea of representing a number in graphical form is nothing new. We all learned this in grade school with the &ldquo;number line:&rdquo; (Figure below)</p>
+<a target='_blank' href='../images/07-03.webp'><img class='clImageThumb' src='../images/07-03.webp'></a><br>
+
+<p>We even learned how addition and subtraction works by seeing how lengths (magnitudes) stacked up to give a final answer: (Figure below)</p>
+<a target='_blank' href='../images/07-04.webp'><img class='clImageThumb' src='../images/07-04.webp'></a><br>
+
+<p>Later, we learned that there were ways to designate the values <em>between</em> the whole numbers marked on the line. These were fractional or decimal quantities: (Figure below)</p>
+<a target='_blank' href='../images/07-05.webp'><img class='clImageThumb' src='../images/07-05.webp'></a><br>
+
+<p>These fields of numbers (whole, integer, rational, irrational, real, etc.) learned in grade school share a common trait: they&rsquo;re all <em>one-dimensional</em>. The straightness of the number line illustrates this graphically.</p>
+<p>You can move up or down the number line, but all &ldquo;motion&rdquo; along that line is restricted to a single axis (horizontal).</p>
+<p>One-dimensional, scalar numbers are perfectly adequate for counting beads, representing weight, or measuring DC battery voltage, but they fall short of being able to represent something more complex like the distance <em>and</em> direction between two cities, or the amplitude <em>and</em> phase of an AC waveform.</p>
+<p>To represent these kinds of quantities, we need multidimensional representations. In other words, we need a number line that can point in different directions, and that&rsquo;s exactly what a vector is.</p>
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li>A <em>scalar</em> number is the type of mathematical object that people are used to using in everyday life: a one-dimensional quantity like temperature, length, weight, etc.</li>
+<li>A <em>complex number</em> is a mathematical quantity representing two dimensions of magnitude and direction.</li>
+<li>A <em>vector</em> is a graphical representation of a complex number. It looks like an arrow, with a starting point, a tip, a definite length, and a definite direction. Sometimes the word <em>phasor</em> is used in electrical applications where the angle of the vector represents the phase shift between waveforms.</li>
+</ul>
+
+
+
+</div>
+</div>
+</body>
+</html>

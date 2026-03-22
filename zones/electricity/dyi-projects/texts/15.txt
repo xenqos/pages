@@ -1,0 +1,46 @@
+# DC Lab - Parallel Batteries
+## Project Overview
+<p>This experiment aims to explore the effect of connecting multiple batteries in parallel to increase the current and light intensity of a lamp. Connecting identical&nbsp;batteries in parallel, as shown in Figure 1, means connecting them so that all of the negative terminals are connected together, and all of the positive terminals are connected together.&nbsp;</p>
+
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/parallel-battery-illustration.jpg" /></p>
+<em><strong>Figure 1. </strong>Connecting four batteries in parallel to power a light.</em>
+
+<p>When&nbsp;you connect batteries in parallel, you will find that the system&nbsp;voltage is the same as the individual battery voltages, but the total current that can be supplied to a load, like the light shown in this figure, increased. A circuit schematic representation of the four batteries connected in parallel to power a light source&nbsp;is illustrated in Figure 2.</p>
+
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/parallel-battery-schematic-diagram.jpg" /></p>
+<em><strong>Figure 2. </strong>Circuit schematic showing four batteries connected in parallel to power a light.</em>
+
+## Parts and Materials
+<ul>
+<li>Four 6 V batteries</li>
+<li>12 V light bulb, 25 or 50 W</li>
+<li>Light&nbsp;socket</li>
+</ul>
+<p>High-wattage 12 V lamps may be purchased from recreational vehicles (RVs) and boating supply stores. They are becoming increasingly difficult to find as lighting changes from incandescent to LEDs. Common sizes are 25 W and 50 W. This lamp will be used as a &ldquo;heavy&rdquo; load for your batteries, where a heavy load is defined as one that draws substantial current.&nbsp;A regular household (120 V) lamp socket will work just fine for these low-voltage RV&nbsp;lamps.</p>
+
+## Instructions
+<p><strong>Step 1:</strong> The initial step is to connect a 6 V battery to the light, which is designed to operate on 12 volts, as shown in Figure 3.&nbsp;The lamp should glow dimly when powered by the 6 V&nbsp;battery since the insufficient voltage is being applied. &nbsp;</p>
+
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/use-voltmeter-to-read-voltage-across-the-lamp.jpg" /></p>
+<em><strong>Figure 3. </strong>Measuring the lamp voltage.</em>
+
+<p><strong>Step 2:</strong>&nbsp;Next, measure the voltage&nbsp;across the lamp with a voltmeter. It may be lower than 6 V. This is because the high-power lamp draws a large current, causing the voltage at the battery terminals to drop or "sag" due to the internal resistance of the battery.</p>
+<p><strong>Step 3:</strong> To overcome this problem, we will add more batteries in parallel so that each battery only has to supply a fraction of the total current required by the lamp.&nbsp;To make a parallel connection, the positive terminals of all the batteries are connected together, and the negative terminals are connected together, as shown in Figure 4.&nbsp;Add one battery at a time, and then note the intensity of the&nbsp;lamp and measure the voltage at the lamp. The light intensity should increase as the voltage sag is reduced.</p>
+
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/use-voltmeter-to-read-voltage-across-the-lamp-1.jpg" /></p>
+<em><strong>Figure 4.&nbsp;</strong>Using a voltmeter to measure the lamp voltage with parallel battery sources.</em>
+
+<p><strong>Step 4:</strong> To measure the current of a single battery,&nbsp;the circuit for one battery is broken, and an ammeter is inserted within that break to measure the current of that one battery (Figure 5).</p>
+
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/use-voltmeter-to-read-voltage-across-the-lamp-2.jpg" /></p>
+<em><strong>Figure 5.</strong>&nbsp;Using an ammeter to measure the current from a single battery.</em>
+
+<p><strong>Step 5:</strong> Measuring the total current involves a similar procedure by breaking the circuit and inserting the ammeter, as shown in Figure 6. The difference in current between the single battery and total measurements should be noted.</p>
+
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/use-voltmeter-to-read-voltage-across-the-lamp-3.jpg" /></p>
+<em><strong>Figure 6. </strong>Using an ammeter to measure the total current from four batteries in parallel.</em>
+
+<p><strong>Step 6:&nbsp;</strong>Finally, to achieve the maximum brightness from the light bulb, connect four 6 V batteries in a series-parallel connection. As we demonstrated in the series battery experiment, connecting two 6 V batteries in series will provide 12 V. Now, connecting two of these series-connected battery pairs in parallel, as shown in Figure 7, improves their current-sourcing ability and minimizes voltage sag.</p>
+
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/use-voltmeter-to-read-voltage-across-the-lamp-4.jpg" /></p>
+<em><strong>Figure 7.&nbsp;</strong>Connecting four batteries in a series-parallel combination to increase voltage and current.</em>

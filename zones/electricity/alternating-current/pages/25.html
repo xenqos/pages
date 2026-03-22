@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Alternating Current</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='24.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='26.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h6>04. Reactance and Impedance—Capacitive</h6>
+
+<h1>Capacitor Quirks</h1>
+<p>As with inductors, the ideal capacitor is a purely reactive device, containing absolutely zero resistive (power dissipative) effects. In the real world, of course, nothing is so perfect. However, capacitors have the virtue of generally being <em>purer</em> reactive components than inductors.</p>
+<p>It is a lot easier to design and construct a capacitor with low internal series resistance than it is to do the same with an inductor. The practical result of this is that real capacitors typically have impedance phase angles more closely approaching 90&deg; (actually, -90&deg;) than inductors.</p>
+<p>Consequently, they will tend to dissipate less power than an equivalent inductor.</p>
+<p>Capacitors also tend to be smaller and lighter weight than their equivalent inductor counterparts, and since their electric fields are almost totally contained between their plates (unlike inductors, whose magnetic fields naturally tend to extend beyond the dimensions of the core), they are less prone to transmitting or receiving electromagnetic &ldquo;noise&rdquo; to/from other components.</p>
+<p>For these reasons, circuit designers tend to favor capacitors over inductors wherever a design permits either alternative.</p>
+<p>Capacitors with significant resistive effects are said to be <em>lossy</em>, in reference to their tendency to dissipate (&ldquo;lose&rdquo;) power like a resistor. The source of capacitor loss is usually the dielectric material rather than any wire resistance, as wire length in a capacitor is very minimal.</p>
+<p>Dielectric materials tend to react to changing electric fields by producing heat. This heating effect represents a loss in power and is equivalent to resistance in the circuit. The effect is more pronounced at higher frequencies and in fact can be so extreme that it is sometimes exploited in manufacturing processes to heat insulating materials like plastic!</p>
+<p>The plastic object to be heated is placed between two metal plates, connected to a source of high-frequency AC voltage. Temperature is controlled by varying the voltage or frequency of the source, and the plates never have to contact the object being heated.</p>
+<p>This effect is undesirable for capacitors where we expect the component to behave as a purely <em>reactive circuit</em> element. One of the ways to mitigate the effect of dielectric &ldquo;loss&rdquo; is to choose a dielectric material less susceptible to the effect. Not all dielectric materials are equally &ldquo;lossy.&rdquo; A relative scale of dielectric loss from least to greatest is given in the table below</p>
+
+<h3>Dielectric loss</h3>
+
+<div class='clOverflow'>
+<table>
+<tr>
+<th>Material</th><th>Loss</th></tr>
+<tr><td>Vacuum              </td><td>Low </td></tr>
+<tr><td>Air                 </td><td>-   </td></tr>
+<tr><td>Polystyrene         </td><td>-   </td></tr>
+<tr><td>Mica                </td><td>-   </td></tr>
+<tr><td>Glass               </td><td>-   </td></tr>
+<tr><td>Low-K ceramic       </td><td>-   </td></tr>
+<tr><td>Plastic film (Mylar)</td><td>-   </td></tr>
+<tr><td>Paper               </td><td>-   </td></tr>
+<tr><td>High-K ceramic      </td><td>-   </td></tr>
+<tr><td>Aluminum oxide      </td><td>-   </td></tr>
+<tr><td>Tantalum pentoxide  </td><td>high</td></tr>
+</table>
+</div>
+
+<p>Dielectric resistivity manifests itself both as a series and a parallel resistance with the pure capacitance:</p>
+<a target='_blank' href='../images/25-01.webp'><img class='clImageThumb' src='../images/25-01.webp'></a><br>
+<p><em>Real capacitor has both series and parallel resistance.</em></p>
+<p>Fortunately, these stray resistances are usually of modest impact (low series resistance and high parallel resistance), much less significant than the stray resistances present in an average inductor.</p>
+
+
+</div>
+</div>
+</body>
+</html>

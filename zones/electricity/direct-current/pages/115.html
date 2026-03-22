@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Direct Current</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='114.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='116.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h6>16. RC and L/R Time Constants</h6>
+
+<h1>Capacitor Transient Response</h1>
+<p>Because capacitors store energy in the form of an electric field, they tend to act like small secondary-cell batteries, being able to store and release electrical energy. A fully discharged capacitor maintains zero volts across its terminals, and a charged capacitor maintains a steady quantity of voltage across its terminals, just like a battery.</p>
+<p>When capacitors are placed in a circuit with other sources of voltage, they will absorb energy from those sources, just as a secondary-cell battery will become charged as a result of being connected to a generator. A fully discharged capacitor, having a terminal voltage of zero, will initially act as a short-circuit when attached to a source of voltage, drawing maximum current as it begins to build a charge.</p>
+<p>Over time, the capacitor&rsquo;s terminal voltage rises to meet the applied voltage from the source, and the current through the capacitor decreases correspondingly. Once the capacitor has reached the full voltage of the source, it will stop drawing current from it, and behave essentially as an open-circuit.</p>
+<a target='_blank' href='../images/115-01.webp'><img class='clImageThumb' src='../images/115-01.webp'></a><br>
+
+<p>When the switch is first closed, the voltage across the capacitor (which we were told was fully discharged) is zero volts; thus, it first behaves as though it were a short-circuit. Over time, the capacitor voltage will rise to equal battery voltage, ending in a condition where the capacitor behaves as an open-circuit.</p>
+<p>Current through the circuit is determined by the difference in voltage between the battery and the capacitor, divided by the resistance of 10 k&Omega;. As the capacitor voltage approaches the battery voltage, the current approaches zero. Once the capacitor voltage has reached 15 volts, the current will be exactly zero. Let&rsquo;s see how this works using real values:</p>
+<a target='_blank' href='../images/115-02.webp'><img class='clImageThumb' src='../images/115-02.webp'></a><br>
+
+<div class='clOverflow'>
+<table>
+<tr>
+<th>Time<br>(seconds)</th><th>Battery<br>Voltage</th><th>Capacitor<br>Voltage</th><th>Current</th></tr>
+<tr><td>0  </td><td>15 V</td><td>0 V     </td><td>1500 uA </td></tr>
+<tr><td>0.5</td><td>15 V</td><td>5.902 V </td><td>909.8 uA</td></tr>
+<tr><td>1  </td><td>15 V</td><td>9.482 V </td><td>551.8 uA</td></tr>
+<tr><td>2  </td><td>15 V</td><td>12.970 V</td><td>203.0 uA</td></tr>
+<tr><td>3  </td><td>15 V</td><td>14.253 V</td><td>74.68 uA</td></tr>
+<tr><td>4  </td><td>15 V</td><td>14.725 V</td><td>27.47 uA</td></tr>
+<tr><td>5  </td><td>15 V</td><td>14.899 V</td><td>10.11 uA</td></tr>
+<tr><td>6  </td><td>15 V</td><td>14.963 V</td><td>3.718 uA</td></tr>
+<tr><td>10 </td><td>15 V</td><td>14.999 V</td><td>0.068 uA</td></tr>
+</table>
+</div>
+
+<p>The capacitor voltage&rsquo;s approach to 15 volts and the current&rsquo;s approach to zero over time is what a mathematician would describe as <em>asymptotic</em><em>:</em> that is, they both approach their final values, getting closer and closer over time, but never exactly reach their destinations. For all practical purposes, though, we can say that the capacitor voltage will eventually reach 15 volts and that the current will eventually equal zero.</p>
+<p>Using the SPICE circuit analysis program, we can chart this asymptotic buildup of capacitor voltage and decay of capacitor current in a more graphical form (capacitor current is plotted in terms of voltage drop across the resistor, using the resistor as a shunt to measure current):</p>
+<a target='_blank' href='../images/115-03.webp'><img class='clImageThumb' src='../images/115-03.webp'></a><br>
+
+<p>As you can see, I have used the <em>.plot</em> command in the netlist instead of the more familiar <em>.printcommand</em>. This generates a pseudo-graphic plot of figures on the computer screen using text characters. SPICE plots graphs in such a way that time is on the vertical axis (going down) and amplitude (voltage/current) is plotted on the horizontal (right=more; left=less).</p>
+<p>Notice how the voltage increases (to the right of the plot) very quickly at first, then tapering off as time goes on. Current also changes very quickly at first then levels off as time goes on, but it is approaching minimum (left of scale) while voltage approaches maximum.</p>
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li>Capacitors act somewhat like secondary-cell batteries when faced with a sudden change in applied voltage: they initially react by producing a high current which tapers off over time.</li>
+<li>A fully discharged capacitor initially acts as a short circuit (current with no voltage drop) when faced with the sudden application of voltage. After charging fully to that level of voltage, it acts as an open circuit (voltage drop with no current).</li>
+<li>In a resistor-capacitor charging circuit, capacitor voltage goes from nothing to full source voltage while current goes from maximum to zero, both variables changing most rapidly at first, approaching their final values slower and slower as time goes on.</li>
+</ul>
+
+
+
+</div>
+</div>
+</body>
+</html>

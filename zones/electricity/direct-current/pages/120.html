@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Direct Current</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='119.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='121.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h6>16. RC and L/R Time Constants</h6>
+
+<h1>Complex Circuits</h1>
+<p>What do we do if we come across a circuit more complex than the simple series configurations we&rsquo;ve seen so far? Take this circuit as an example:</p>
+<a target='_blank' href='../images/120-01.webp'><img class='clImageThumb' src='../images/120-01.webp'></a><br>
+
+<p>The simple time constant formula (&tau;=RC) is based on a simple series resistance connected to the capacitor. For that matter, the time constant formula for an inductive circuit (&tau;=L/R) is also based on the assumption of simple series resistance. So, what can we do in a situation like this, where resistors are connected in a series-parallel fashion with the capacitor (or inductor)?</p>
+<h2>Thevenin&rsquo;s Theorem</h2>
+<p>The answer comes from our studies in network analysis. Thevenin&rsquo;s Theorem tells us that we can reduce <em>any</em> linear circuit to an equivalent of one voltage source, one series resistance, and a load component through a couple of simple steps. To apply Thevenin&rsquo;s Theorem to our scenario here, we&rsquo;ll regard the reactive component (in the above example circuit, the capacitor) as the load and remove it temporarily from the circuit to find the Thevenin voltage and Thevenin resistance.</p>
+<p>Then, once we&rsquo;ve determined the Thevenin equivalent circuit values, we&rsquo;ll re-connect the capacitor and solve for values of voltage or current over time as we&rsquo;ve been doing so far.</p>
+<p>After identifying the capacitor as the &ldquo;load,&rdquo; we remove it from the circuit and solve for voltage across the load terminals (assuming, of course, that the switch is closed):</p>
+<a target='_blank' href='../images/120-02.webp'><img class='clImageThumb' src='../images/120-02.webp'></a><br>
+
+<a target='_blank' href='../images/120-03.webp'><img class='clImageThumb' src='../images/120-03.webp'></a><br>
+
+<p>This step of the analysis tells us that the voltage across the load terminals (same as that across resistor R<sub>2</sub>) will be 1.8182 volts with no load connected. With a little reflection, it should be clear that this will be our final voltage across the capacitor, seeing as how a fully-charged capacitor acts like an open circuit, drawing zero current. We will use this voltage value for our Thevenin equivalent circuit source voltage.</p>
+<p>Now, to solve for our Thevenin resistance, we need to eliminate all power sources in the original circuit and calculate resistance as seen from the load terminals:</p>
+<a target='_blank' href='../images/120-04.webp'><img class='clImageThumb' src='../images/120-04.webp'></a><br>
+
+<p>Re-drawing our circuit as a Thevenin equivalent, we get this:</p>
+<a target='_blank' href='../images/120-05.webp'><img class='clImageThumb' src='../images/120-05.webp'></a><br>
+
+<p>Our time constant for this circuit will be equal to the Thevenin resistance times the capacitance (&tau;=RC). With the above values, we calculate:</p>
+<a target='_blank' href='../images/120-06.webp'><img class='clImageThumb' src='../images/120-06.webp'></a><br>
+
+<p>Now, we can solve for voltage across the capacitor directly with our universal time constant formula. Let&rsquo;s calculate for a value of 60 milliseconds. Because this is a capacitive formula, we&rsquo;ll set our calculations up for voltage:</p>
+<a target='_blank' href='../images/120-07.webp'><img class='clImageThumb' src='../images/120-07.webp'></a><br>
+
+<p>Again, because our starting value for capacitor voltage was assumed to be zero, the actual voltage across the capacitor at 60 milliseconds is equal to the amount of voltage change from zero, or 1.3325 volts.</p>
+<p>We could go a step further and demonstrate the equivalence of the Thevenin RC circuit and the original circuit through computer analysis. I will use the SPICE analysis program to demonstrate this:</p>
+<pre><br>
+Comparison RC analysis&#10;* first, the netlist for the original circuit:  &#10;v1 1 0 dc 20    &#10;r1 1 2 2k     &#10;  &#10;r2 2 3 500      &#10;r3 3 0 3k     &#10;  &#10;c1 2 3 100u ic=0&#10;* then, the netlist for the thevenin equivalent:&#10;v2 4 0 dc 1.818182      &#10;r4 4 5 454.545  &#10;c2 5 0 100u ic=0&#10;* now, we analyze for a transient, sampling every .005 seconds  &#10;* over a time period of .37 seconds total, printing a list of   &#10;* values for voltage across the capacitor in the original       &#10;* circuit (between modes 2 and 3) and across the capacitor in &#10;* the thevenin equivalent circuit (between nodes 5 and 0)    &#10;  &#10;.tran .005 0.37 uic     &#10;.print tran v(2,3) v(5,0)      &#10; &#10;.end   &#10;</pre>
+
+<p>Which prints out as:</p>
+<div class='clOverflow'>
+<table>
+<tr>
+<th>time</th><th>v(2,3)</th><th>v(5)</th></tr>
+<tr><td>0.000E+00</td><td>4.803E-06</td><td>4.803E-06</td></tr>
+<tr><td>5.000E-03</td><td>1.890E-01</td><td>1.890E-01</td></tr>
+<tr><td>1.000E-02</td><td>3.580E-01</td><td>3.580E-01</td></tr>
+<tr><td>1.500E-02</td><td>5.082E-01</td><td>5.082E-01</td></tr>
+<tr><td>2.000E-02</td><td>6.442E-01</td><td>6.442E-01</td></tr>
+<tr><td>2.500E-02</td><td>7.689E-01</td><td>7.689E-01</td></tr>
+<tr><td>3.000E-02</td><td>8.772E-01</td><td>8.772E-01</td></tr>
+<tr><td>3.500E-02</td><td>9.747E-01</td><td>9.747E-01</td></tr>
+<tr><td>4.000E-02</td><td>1.064E+00</td><td>1.064E+00</td></tr>
+<tr><td>4.500E-02</td><td>1.142E+00</td><td>1.142E+00</td></tr>
+<tr><td>5.000E-02</td><td>1.212E+00</td><td>1.212E+00</td></tr>
+<tr><td>5.500E-02</td><td>1.276E+00</td><td>1.276E+00</td></tr>
+<tr><td>6.000E-02</td><td>1.333E+00</td><td>1.333E+00</td></tr>
+<tr><td>6.500E-02</td><td>1.383E+00</td><td>1.383E+00</td></tr>
+<tr><td>7.000E-02</td><td>1.429E+00</td><td>1.429E+00</td></tr>
+<tr><td>7.500E-02</td><td>1.470E+00</td><td>1.470E+00</td></tr>
+<tr><td>8.000E-02</td><td>1.505E+00</td><td>1.505E+00</td></tr>
+<tr><td>8.500E-02</td><td>1.538E+00</td><td>1.538E+00</td></tr>
+<tr><td>9.000E-02</td><td>1.568E+00</td><td>1.568E+00</td></tr>
+<tr><td>9.500E-02</td><td>1.594E+00</td><td>1.594E+00</td></tr>
+<tr><td>1.000E-01</td><td>1.617E+00</td><td>1.617E+00</td></tr>
+<tr><td>1.050E-01</td><td>1.638E+00</td><td>1.638E+00</td></tr>
+<tr><td>1.100E-01</td><td>1.657E+00</td><td>1.657E+00</td></tr>
+<tr><td>1.150E-01</td><td>1.674E+00</td><td>1.674E+00</td></tr>
+<tr><td>1.200E-01</td><td>1.689E+00</td><td>1.689E+00</td></tr>
+<tr><td>1.250E-01</td><td>1.702E+00</td><td>1.702E+00</td></tr>
+<tr><td>1.300E-01</td><td>1.714E+00</td><td>1.714E+00</td></tr>
+<tr><td>1.350E-01</td><td>1.725E+00</td><td>1.725E+00</td></tr>
+<tr><td>1.400E-01</td><td>1.735E+00</td><td>1.735E+00</td></tr>
+<tr><td>1.450E-01</td><td>1.744E+00</td><td>1.744E+00</td></tr>
+<tr><td>1.500E-01</td><td>1.752E+00</td><td>1.752E+00</td></tr>
+<tr><td>1.550E-01</td><td>1.758E+00</td><td>1.758E+00</td></tr>
+<tr><td>1.600E-01</td><td>1.765E+00</td><td>1.765E+00</td></tr>
+<tr><td>1.650E-01</td><td>1.770E+00</td><td>1.770E+00</td></tr>
+<tr><td>1.700E-01</td><td>1.775E+00</td><td>1.775E+00</td></tr>
+<tr><td>1.750E-01</td><td>1.780E+00</td><td>1.780E+00</td></tr>
+<tr><td>1.800E-01</td><td>1.784E+00</td><td>1.784E+00</td></tr>
+<tr><td>1.850E-01</td><td>1.787E+00</td><td>1.787E+00</td></tr>
+<tr><td>1.900E-01</td><td>1.791E+00</td><td>1.791E+00</td></tr>
+<tr><td>1.950E-01</td><td>1.793E+00</td><td>1.793E+00</td></tr>
+<tr><td>2.000E-01</td><td>1.796E+00</td><td>1.796E+00</td></tr>
+<tr><td>2.050E-01</td><td>1.798E+00</td><td>1.798E+00</td></tr>
+<tr><td>2.100E-01</td><td>1.800E+00</td><td>1.800E+00</td></tr>
+<tr><td>2.150E-01</td><td>1.802E+00</td><td>1.802E+00</td></tr>
+<tr><td>2.200E-01</td><td>1.804E+00</td><td>1.804E+00</td></tr>
+<tr><td>2.250E-01</td><td>1.805E+00</td><td>1.805E+00</td></tr>
+<tr><td>2.300E-01</td><td>1.807E+00</td><td>1.807E+00</td></tr>
+<tr><td>2.350E-01</td><td>1.808E+00</td><td>1.808E+00</td></tr>
+<tr><td>2.400E-01</td><td>1.809E+00</td><td>1.809E+00</td></tr>
+<tr><td>2.450E-01</td><td>1.810E+00</td><td>1.810E+00</td></tr>
+<tr><td>2.500E-01</td><td>1.811E+00</td><td>1.811E+00</td></tr>
+<tr><td>2.550E-01</td><td>1.812E+00</td><td>1.812E+00</td></tr>
+<tr><td>2.600E-01</td><td>1.812E+00</td><td>1.812E+00</td></tr>
+<tr><td>2.650E-01</td><td>1.813E+00</td><td>1.813E+00</td></tr>
+<tr><td>2.700E-01</td><td>1.813E+00</td><td>1.813E+00</td></tr>
+<tr><td>2.750E-01</td><td>1.814E+00</td><td>1.814E+00</td></tr>
+<tr><td>2.800E-01</td><td>1.814E+00</td><td>1.814E+00</td></tr>
+<tr><td>2.850E-01</td><td>1.815E+00</td><td>1.815E+00</td></tr>
+<tr><td>2.900E-01</td><td>1.815E+00</td><td>1.815E+00</td></tr>
+<tr><td>2.950E-01</td><td>1.815E+00</td><td>1.815E+00</td></tr>
+<tr><td>3.000E-01</td><td>1.816E+00</td><td>1.816E+00</td></tr>
+<tr><td>3.050E-01</td><td>1.816E+00</td><td>1.816E+00</td></tr>
+<tr><td>3.100E-01</td><td>1.816E+00</td><td>1.816E+00</td></tr>
+<tr><td>3.150E-01</td><td>1.816E+00</td><td>1.816E+00</td></tr>
+<tr><td>3.200E-01</td><td>1.817E+00</td><td>1.817E+00</td></tr>
+<tr><td>3.250E-01</td><td>1.817E+00</td><td>1.817E+00</td></tr>
+<tr><td>3.300E-01</td><td>1.817E+00</td><td>1.817E+00</td></tr>
+<tr><td>3.350E-01</td><td>1.817E+00</td><td>1.817E+00</td></tr>
+<tr><td>3.400E-01</td><td>1.817E+00</td><td>1.817E+00</td></tr>
+<tr><td>3.450E-01</td><td>1.817E+00</td><td>1.817E+00</td></tr>
+<tr><td>3.500E-01</td><td>1.817E+00</td><td>1.817E+00</td></tr>
+<tr><td>3.500E-01</td><td>3.550E-01</td><td>3.550E-01</td></tr>
+<tr><td>3.600E-01</td><td>1.818E+00</td><td>1.818E+00</td></tr>
+<tr><td>3.650E-01</td><td>1.818E+00</td><td>1.818E+00</td></tr>
+<tr><td>3.700E-01</td><td>1.818E+00</td><td>1.818E+00</td></tr>
+</table>
+</div>
+
+<p>At every step along the way of the analysis, the capacitors in the two circuits (original circuit versus Thevenin equivalent circuit) are at equal voltage, thus demonstrating the equivalence of the two circuits.</p>
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li>To analyze an RC or L/R circuit more complex than simple series, convert the circuit into a Thevenin equivalent by treating the reactive component (capacitor or inductor) as the &ldquo;load&rdquo; and reducing everything else to an equivalent circuit of one voltage source and one series resistor. Then, analyze what happens over time with the universal time constant formula.</li>
+</ul>
+
+
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+# The Instrumentation Amplifier
+## What Is an Instrumentation Amplifier?
+<p>An instrumentation amplifier allows an engineer to adjust the gain of an amplifier circuit without having to change more than one resistor value. Compare this to the differential amplifier, which we covered previously, which requires the adjustment of multiple resistor values.</p>
+<p>The so-called <em>instrumentation </em>amplifier builds on the last version of the differential amplifier to give us that capability:</p>
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/instrumentation-amplifier-circuits.jpg" /></p>
+## Understanding the Instrumentation Amplifier Circuit
+<p>This intimidating circuit is constructed from a buffered differential amplifier stage with three new resistors linking the two buffer circuits together. Consider all resistors to be of equal value except for R<sub>gain</sub>.</p>
+<p>The negative feedback of the upper-left op-amp causes the voltage at point 1 (top of R<sub>gain</sub>) to be equal to V<sub>1</sub>. Likewise, the voltage at point 2 (bottom of R<sub>gain</sub>) is held to a value equal to V<sub>2</sub>. This establishes a voltage drop across R<sub>gain</sub> equal to the voltage difference between V<sub>1</sub> and V<sub>2</sub>. That voltage drop causes a current through R<sub>gain</sub>, and since the feedback loops of the two input op-amps draw no current, that same amount of current through R<sub>gain</sub> must be going through the two &ldquo;R&rdquo; resistors above and below it.</p>
+<p>This produces a voltage drop between points 3 and 4 equal to:</p>
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/negative-feedback-formula.jpg" /></p>
+<p>The regular differential amplifier on the right-hand side of the circuit then takes this voltage drop between points 3 and 4 and amplifies it by a gain of 1 (assuming again that all &ldquo;R&rdquo; resistors are of equal value).</p>
+## Advantages of the Instrumentation Amplifier
+<p>Though this looks like a cumbersome way to build a differential amplifier, it has the distinct advantages of possessing extremely high input impedances on the V<sub>1</sub> and V<sub>2</sub> inputs (because they connect straight into the noninverting inputs of their respective op-amps), and adjustable gain that can be set by a single resistor.</p>
+<p>Manipulating the above formula a bit, we have a general expression for overall voltage gain in the instrumentation amplifier:</p>
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/instrumentation-amplifier-formula.jpg" /></p>
+<p>Though it may not be obvious by looking at the schematic, we can change the differential gain of the instrumentation amplifier simply by changing the value of one resistor: R<sub>gain</sub>.</p>
+<p>Yes, we could still change the overall gain by changing the values of some of the other resistors, but this would necessitate <em>balanced </em>resistor value changes for the circuit to remain symmetrical. Please note that the lowest gain possible with the above circuit is obtained with R<sub>gain</sub> completely open (infinite resistance), and that gain value is 1.</p>
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li>An <em>instrumentation amplifier</em> is a differential op-amp circuit providing high input impedances with ease of gain adjustment through the variation of a single resistor.</li>
+</ul>

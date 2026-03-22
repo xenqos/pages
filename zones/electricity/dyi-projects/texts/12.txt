@@ -1,0 +1,30 @@
+# Intro Lab - Electromagnetic Induction
+## Project Overview
+<p>Electromagnetic induction is a complementary phenomenon to electromagnetism. Instead of producing a magnetic field from electricity, we produce electricity from a magnetic field.&nbsp;There is one important difference, though,&nbsp;whereas electromagnetism produces a steady magnetic field from a steady electric current, electromagnetic induction requires motion between the magnet and the coil to produce a voltage. In this project, you measure electromagnetic induction using the test setup illustrated in Figure 1.</p>
+
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/electromagnetic-induction.jpg" /></p>
+<em><strong>Figure 1.</strong> Circuit&nbsp;for measuring the induced voltage from the electromagnet.</em>
+
+## Parts and Materials
+<ul>
+<li>Electromagnet from the previous project:&nbsp;building an electromagnet</li>
+<li>Permanent magnet</li>
+</ul>
+
+## Learning Objectives
+<ul>
+<li>Relationship between magnetic field strength and induced voltage</li>
+</ul>
+
+## Instructions
+<p><strong>Step 1:&nbsp;</strong>Connect the multimeter to the coil, as illustrated in Figures 1 and 2, and set it to the most sensitive DC voltage range available.&nbsp;</p>
+
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/electromagnetic-induction-schematic-diagram.jpg" /></p>
+<em><strong>Figure 2.</strong>&nbsp;The schematic diagram for measuring the induced voltage from the electromagnet.</em>
+
+<p>If you&nbsp;are using an analog multimeter, be sure to use long jumper wires and locate the meter far away from the coil, as the magnetic field from the permanent magnet may affect the meter&rsquo;s operation and produce false readings. Digital meters are unaffected by magnetic fields.</p>
+<p><strong>Step 2:&nbsp;</strong>Measure the voltage output from the electromagnet. Hint: it should be zero!&nbsp;</p>
+<p><strong>Step 3:&nbsp;</strong>Move the magnet <em>slowly</em> to and from one end of the electromagnet, noting the polarity and magnitude of the induced voltage.</p>
+<p><strong>Step 4:&nbsp;</strong>Experiment with moving the magnet, and discover for yourself what factor(s) determine the amount of voltage induced. Consider the distance from the electromagnet and&nbsp;speed of movement.</p>
+<p><strong>Step 5:&nbsp;</strong>Repeat the process at&nbsp;the other end of the electromagnet coil and compare results.</p>
+<p><strong>Step 6: </strong>Repeat the process using the other end of the permanent magnet and compare.</p>

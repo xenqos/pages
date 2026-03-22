@@ -1,0 +1,153 @@
+###### 10. DC Network Analysis
+
+# Solving Unbalanced Wheatstone Bridge Circuits Via Mesh Current Method
+
+^[074-01.webp]
+
+<h3 class="text-lg lg:text-2xl font-bold mb-3">Using the Mesh Current Method to Solve Unbalanced Wheatstone Bridge Circuits</h3>
+<p><p>Solving for the currents and voltages in an unbalanced Wheatstone bridge circuit can be challenging. Learn about solving currents and voltages using the mesh current method.</p></p>
+<p>An unbalanced Wheatstone bridge cannot be solved using simple series and parallel circuit analysis because the resistors are connected in a complex configuration. This section provides a step-by-step walkthrough demonstrating how to solve an unbalanced Wheatstone bridge using the mesh current method (also known as the loop current method).&nbsp;</p>
+
+## Unbalanced Wheatstone Bridge
+<p>First, let&rsquo;s determine the voltages and currents for the unbalanced Wheatstone bridge circuit of Figure 1.</p>
+
+^[074-02.webp]
+
+<em><strong>Figure 1.</strong> Unbalanced Wheatstone bridge circuit schematic.</em>
+
+<p>Since the ratios of R<sub>1&nbsp;</sub>/ R<sub>4</sub> and R<sub>2&nbsp;</sub>/ R<sub>5</sub> are not equal, there will be a voltage across the resistor, R<sub>3</sub>, and some amount of current through it. As discussed at the beginning of this chapter on network analysis theorems, this type of circuit is irreducible by normal series-parallel analysis and may only be analyzed by some other method.</p>
+<p>We could apply the branch current method to this circuit, but it would require six currents (I<sub>1</sub> through I<sub>6</sub>), leading to a large set of simultaneous equations to solve. On the other hand, using the mesh current method, we may solve for all currents and voltages with fewer variables.</p>
+<p>Below are the six steps of the mesh current method:</p>
+<ol>
+<li>Identify and label the current loops</li>
+<li>Label the voltage drop polarities</li>
+<li>Apply Kirchhoff&rsquo;s voltage law (KVL) to each loop</li>
+<li>Solve the simultaneous equations for the unknown currents</li>
+<li>Redraw the mesh currents and determine the branch currents</li>
+<li>Calculate the voltage drops using Ohm&rsquo;s law</li>
+</ol>
+
+## Step 1: Identify and Label the Current Loops
+<p>The first step in the mesh current method is to draw just enough mesh currents to account for all components in the circuit. Looking at our bridge circuit, it should be obvious where to place two of these current loops, as shown in Figure 2.</p>
+
+^[074-03.webp]
+
+<em><strong>Figure 2. </strong>Current loops 1 and 2 were added to the Wheatstone bridge circuit.</em>
+
+<p>The directions of these mesh currents, of course, are arbitrary. However, two mesh currents are insufficient in this circuit because neither I<sub>1</sub> nor I<sub>2</sub> go through the battery. Thus, we must add a third mesh current, I<sub>3</sub>, as illustrated in Figure 3.</p>
+
+^[074-04.webp]
+
+<em><strong>Figure 3. </strong>Current loop 3 added to the Wheatstone bridge circuit.</em>
+
+<p>Here, we&rsquo;ve chosen I<sub>3</sub> to loop from the negative terminal of the battery, through R<sub>4</sub> through R<sub>1</sub>, and back to the positive terminal of the battery. This is one of many paths that could have been chosen for I<sub>3</sub>, but this example seems the simplest.</p>
+
+## Step 2: Label the Voltage Drop Polarities
+<p>Now, we must label the resistor voltage drop polarities, following each current direction (Figure 4).</p>
+
+^[074-05.webp]
+
+<em><strong>Figure 4. </strong>Label the voltage drop polarities.</em>
+
+## Step 3: Apply Kirchhoff&rsquo;s Voltage Law to Each Loop
+<p>Next, let&rsquo;s generate a KVL equation for the top loop of the bridge, starting from the top node and tracing it in a clockwise direction. This results in the following equations:</p>
+
+<p>$$R_2I_1 + R_3(I_1 + I_2) + R_1(I_1 - I_3) = = 0 \text{ V}$$</p>
+
+<p>$$50I_1 +100(I_1 + I_2) + 150(I_1 - I_3) = 0 \text{ V}$$</p>
+
+<p>In this equation, we represent the current through each resistor as the algebraic sum of the loop currents. For example, resistor R<sub>3</sub> has its voltage represented in the above KVL equation by the expression 100(I<sub>1</sub> + I<sub>2</sub>) since both currents, I<sub>1</sub> and I<sub>2</sub>, go through R<sub>3</sub> in the same direction. The voltage across resistor R<sub>1</sub> is expressed as 150(I<sub>1</sub> - I<sub>3</sub>) since loop currents I<sub>1</sub> and I<sub>3</sub> oppose each other.&nbsp;</p>
+<p>Combining like terms, we can simplify this to:</p>
+
+<p>$$300I_1 +100I_2 - 150I_3 = 0 \text{ V}$$</p>
+
+<p>Now, we can repeat that same process to generate a KVL equation for the bottom loop of the Wheatstone bridge. Let&rsquo;s start at the bottom and move counterclockwise.&nbsp;</p>
+
+<p>$$R_5I_2 + R_3(I_2+I_1) + R_4(I_2+I_3) = = 0 \text{ V}$$</p>
+
+<p>$$250I_2 + 100(I_2+I_1) + 300(I_2+I_3) =0 \text{ V}$$</p>
+
+<p>After combining like terms, we get the following equation:</p>
+
+<p>$$100I_1 + 650I_2 + 300I_3 =0 \text{ V}$$</p>
+
+<p>Note how the second term in the equation&rsquo;s original form has resistor R<sub>3</sub>&lsquo;s value of 100 &Omega; multiplied by the sum of I<sub>2</sub> and I<sub>1</sub> (I<sub>2</sub> + I<sub>1</sub>) because those currents flow in the same direction through R<sub>3</sub>. The same applies to currents I<sub>2</sub> and I<sub>3</sub> passing through resistor R<sub>4</sub>.</p>
+<p>With that done, we&rsquo;ve now taken care of two equations; however, we still need a third equation to complete the simultaneous equation set of three variables and three equations. This third equation must also include the battery&rsquo;s voltage, which up to this point, does not appear in either two of the previous KVL equations.&nbsp;</p>
+<p>To generate this equation, we will trace a loop again with our imaginary voltmeter starting from the battery&rsquo;s bottom (negative) terminal, stepping clockwise. Again, the direction in which we step is arbitrary and does not need to be the same as the direction of the mesh current in that loop.</p>
+
+<p>$$24 + R_1(I_3 - I_1) + R_4(I_3 + I_2) = = 0 \text{ V}$$</p>
+
+<p>$$24 + 150(I_3 - I_1) + 300(I_3 + I_2) = 0 \text{ V}$$</p>
+
+<p>Again, combining like terms and simplifying the equation, we get:</p>
+
+<p>$$-150I_1 + 300I_2 + 450I_3 = 24 \text{ V}$$</p>
+
+## Step 4: Solve the Simultaneous Equations for Unknown Currents
+<p>Now we have three simultaneous equations that we can solve using any method we prefer:</p>
+
+<p>$$300I_1 +100I_2 - 150I_3 = 0 \text{ V}$$</p>
+#### <strong><em>KVL of Loop 1</em></strong>
+
+<p>$$100I_1 + 650I_2 + 300I_3 =0 \text{ V}$$</p>
+#### <strong><em>KVL of Loop 2</em></strong>
+
+<p>$$-150I_1 + 300I_2 + 450I_3 = 24 \text{ V}$$</p>
+#### <strong><em>KVL of Loop 3</em></strong>
+
+<p>First off, we will use GNU Octave, an open-source Matlab clone, to solve these equations. We can enter the resistor coefficients into a matrix, A, between square brackets with column elements separated by commas and rows separated by semicolons.&nbsp;</p>
+<p>Next, we can enter the voltages into a column vector, b. The unknown currents: I<sub>1</sub>, I<sub>2</sub>, and I<sub>3</sub> are calculated by the command: x = A \ b. These currents are contained within the resulting x-column vector.</p>
+<pre>
+&#10;octave:1&gt;A = [300,100,150;100,650,-300;-150,300,-450]&#10;        A =&#10;          300  100  150&#10;          100  650  -300&#10;          -150 300  -450&#10; &#10;        octave:2&gt; b = [0;0;-24]&#10;        b =&#10;          0&#10;          0&#10;          -24&#10;               &#10;        octave:3&gt; x = A\b&#10;        x =&#10;          -0.093793&#10;           0.077241&#10;           0.136092&#10; </pre>
+<p>Therefore the values of our loop currents are:</p>
+<ul>
+<li>I<sub>1</sub> = -93.793 mA</li>
+<li>I<sub>2</sub> = 77.241 mA</li>
+<li>I<sub>3</sub> = -136.092 mA</li>
+</ul>
+
+## Step 5: Redraw the Mesh Currents and Determine the Branch Currents
+<p>The negative values for currents I<sub>1</sub> and I<sub>3</sub> indicate that our assumed current directions were in the wrong direction. For I<sub>3</sub>, it makes intuitive sense because the current would have to flow out of the only power source in our circuit.</p>
+<p>Thus, the actual loop current directions and the directions resistor are shown in Figure 5.</p>
+
+^[074-06.webp]
+
+<em><strong>Figure 5. </strong>Correcting the loop current directions and determining the branch resistor currents.</em>
+
+<p>From here, we can calculate the branch resistor current values:</p>
+
+<p>$$I_{R1} = I_3 - I_1 = 136.092 - 93.793 = 42.299 \text{ mA}$$</p>
+
+<p>$$I_{R2} = I_1 = 93.793 \text{ mA}$$</p>
+
+<p>$$I_{R3} = I_1 - I_2 = 93.793 - 77.241 = 16.552 \text{ mA}$$</p>
+
+<p>$$I_{R4} = I_3 - I_2 = 136.092 - 77.241 = 58.851 \text{ mA}$$</p>
+
+<p>$$I_{R5} = I_2 = 77.241 \text{ mA}$$</p>
+
+## Step 6: Calculate the Voltage Drops
+<p>Finally, we can calculate the voltage drops across each resistor:</p>
+
+<p>$$V_{R1} = I_{R1}R_1 = (0.042299) \cdot (150) = 6.3448 \text{ V}$$</p>
+
+<p>$$V_{R2} = I_{R2}R_5 = (0.093793) \cdot (50) = 4.6897 \text{ V}$$</p>
+
+<p>$$V_{R3} = I_{R3}R_5 = (0.016552) \cdot (100) = 1.6552 \text{ V}$$</p>
+
+<p>$$V_{R4} = I_{R4}R_5 = (0.058851) \cdot (300) = 17.6553 \text{ V}$$</p>
+
+<p>$$V_{R5} = I_{R5}R_5 = (0.077241) \cdot (250) = 19.3103 \text{ V}$$</p>
+
+## Using SPICE to Verify Our Voltage Calculations
+<p>Next, to confirm the accuracy of our voltage calculations, we can use a SPICE simulation using the circuit of Figure 6.</p>
+
+^[074-07.webp]
+
+<em><strong>Figure 6. </strong>Node number labeling for SPICE simulation.</em>
+
+<pre>
+unbalanced wheatstone bridge &nbsp;&#10;v1 1 0&nbsp;&#10;r1 1 2 150&nbsp; &nbsp; &nbsp;&#10;r2 1 3 50 &nbsp; &nbsp; &nbsp;&#10;r3 2 3 100&nbsp; &nbsp; &nbsp;&#10;r4 2 0 300&nbsp; &nbsp; &nbsp;&#10;r5 3 0 250&nbsp; &nbsp; &nbsp;&#10;.dc v1 24 24 1&nbsp;&#10;.print dc v(1,2) v(1,3) v(3,2) v(2,0) v(3,0)&nbsp; &nbsp;&#10;.end&#10;v1&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; v(1,2)     v(1,3)&nbsp; &nbsp; &nbsp; v(3,2)     v(2)       v(3)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&#10;2.400E+01 &nbsp; 6.345E+00  4.690E+00 &nbsp; 1.655E+00  1.766E+01  1.931E+01&#10;</pre>
+
+## Mesh Current Method for an Unbalanced Wheatstone Bridge Review
+<p>Using the mesh current method, we were able to solve for the currents and voltages in an unbalanced Wheatstone bridge. The three simultaneous KVL equations with three unknown loop currents were solved using GNU Octave. We then validated our results using SPICE circuit simulation software.</p>

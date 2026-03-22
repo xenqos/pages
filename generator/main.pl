@@ -41,7 +41,7 @@ my @books =
 , '0|linguistics/en-verbs-phrasal|Phrasal Verbs'
 
 , '0|linguistics/de-phonetics|Фонетика'
-, '0|linguistics/de-grammar|Грамматика'
+, '1|linguistics/de-grammar|Грамматика'
 , '0|linguistics/de-words|Слова'
 , '0|linguistics/de-nouns|Существительные'
 , '0|linguistics/de-adverbs|Наречия'

@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Radio Frequencies</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='19.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='21.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>Comparing and Contrasting Amplitude, Frequency, and Phase Modulation</h1>
+<p>It&rsquo;s important to understand the salient characteristics of the three types of RF modulation. But this information doesn&rsquo;t exist in isolation&mdash;the goal is to design real systems that effectively and efficiently meet the performance objectives. Thus, we need to have a general idea of which modulation scheme is appropriate for a particular application.</p>
+
+<h2>Amplitude Modulation</h2>
+<p>Amplitude modulation is straightforward in terms of implementation and analysis. Also, AM waveforms are fairly easy to demodulate. Overall, then, AM can be viewed as a simple, low-cost modulation scheme. As usual, though, simplicity and low cost are accompanied by performance compromises&mdash;we never expect the easier, cheaper solution to be the best one.</p>
+<p>It may not be accurate to describe AM systems as &ldquo;rare,&rdquo; since countless vehicles all over the world include AM receivers. However, the applications of analog amplitude modulation are currently quite limited, because AM has two significant disadvantages.</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/RFT_ch4_pg7_airplane.jpg&quot; /></p>
+<em>In addition to AM radio broadcasting, analog amplitude modulation is used in civil aviation.</em><br>
+
+<h3>Amplitude Noise</h3>
+<p>Noise is a perpetual difficulty in wireless communication systems. In a certain sense, the quality of an RF design can be summarized by the signal-to-noise ratio of the demodulated signal: less noise in the received signal means higher quality output (for analog systems) or fewer bit errors (for digital systems). Noise is always present, and we always have to recognize it as a fundamental threat to the overall performance of the system.</p>
+<p>Noise&mdash;random electrical noise, interference, electrical and mechanical transients&mdash;operates on the magnitude of a signal. In other words, noise can create amplitude modulation. This is a problem, since the random amplitude modulation resulting from noise cannot be distinguished from the intentional amplitude modulation performed by the transmitter. Noise is a problem for any RF signal, but AM systems are particularly susceptible.</p>
+
+<h3>Amplifier Linearity</h3>
+<p>One of the primary challenges in the design of RF power amplifiers is linearity. (More specifically, it is difficult to achieve both high efficiency and high linearity.) A linear amplifier applies a certain fixed gain to the input signal; in graphical terms, the transfer function of a linear amplifier is simply a straight line, with the slope corresponding to the gain.</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/Linear_amplifier.jpg&quot; /></p>
+<em>A straight line represents the response of a perfectly linear amplifier: the output voltage is always the input voltage multiplied by a fixed gain.</em><br>
+<br>
+<p>Real-life amplifiers always have some degree of nonlinearity, meaning that the gain applied to the input signal is affected by the characteristics of the input signal. The result of nonlinear amplification is distortion, i.e., the creation of spectral energy at harmonic frequencies.</p>
+<p>We can also say that nonlinear amplification is a form of amplitude modulation. If the gain of an amplifier varies according to the frequency of the input signal, or according to external factors such as temperature or power-supply conditions, the transmitted signal is experiencing unintended (and undesirable) amplitude modulation. This is a problem in AM systems because the spurious amplitude modulation interferes with the intentional amplitude modulation.</p>
+<p>Any modulation scheme that incorporates amplitude variations is more susceptible to the effects of nonlinearity. This includes both ordinary analog amplitude modulation and the widely used digital schemes known collectively as quadrature amplitude modulation (QAM).</p>
+<h2>Angle Modulation</h2>
+<p>Frequency and phase modulation encode information in the temporal characteristics of the transmitted signal, and consequently they are robust against amplitude noise and amplifier nonlinearity. The frequency of a signal cannot be changed by noise or distortion. Additional frequency content may be added, but the original frequency will still be present. Noise does, of course, have negative effects on FM and PM systems, but the noise is not directly corrupting the signal characteristics that were used to encode the baseband data.</p>
+<p>As mentioned above, power-amplifier design involves a trade-off between efficiency and linearity. Angle modulation is compatible with low-linearity amplifiers, and these low-linearity amplifiers are more efficient in terms of power consumption. Thus, angle modulation is a good choice for low-power RF systems.</p>
+
+<h3>Bandwidth</h3>
+<p>The frequency-domain effects of amplitude modulation are more straightforward than those of frequency and phase modulation. This can be considered an advantage of AM: it&rsquo;s important to be able to predict the bandwidth occupied by the modulated signal.</p>
+<p>However, the difficulty of predicting the spectral characteristics of FM and PM is more relevant to the theoretical portion of the design. If we focus on practical considerations, angle modulation could be considered advantageous because it can translate a given baseband bandwidth to a somewhat smaller (compared to AM) transmission bandwidth.</p>
+
+<h2>Frequency vs. Phase</h2>
+<p>Frequency modulation and phase modulation are closely related; nevertheless, there are situations in which one is a better choice than the other. The differences between the two are more pronounced with digital modulation.</p>
+
+<h3>Analog Frequency and Phase Modulation</h3>
+<p>As we saw in the page on phase modulation, when the baseband signal is a sinusoid, a PM waveform is simply a shifted version of a corresponding FM waveform. It&rsquo;s not surprising, then, that there are no major FM vs. PM pros and cons related to spectral characteristics or noise susceptibility.</p>
+<p>However, analog FM is much more common than analog PM, and the reason is that FM modulation and demodulation circuitry is more straightforward. For example, frequency modulation can be accomplished with something as simple as an oscillator built around an inductor and a voltage-controlled capacitor (i.e., a capacitor that experiences capacitance variations in response to the voltage of a baseband signal).</p>
+
+<h3>Digital Frequency and Phase Modulation</h3>
+<p>The differences between PM and FM become quite significant when we enter the realm of digital modulation. The first consideration is bit error rate. Obviously the bit error rate of any system will depend on various factors, but if we mathematically compare a binary PSK system to an equivalent binary FSK system, we find that binary FSK needs significantly more transmit energy to achieve the same bit error rate. This is an advantage of digital phase modulation.</p>
+<p>But ordinary digital PM also has two significant disadvantages.</p>
+<ul>
+<li>As discussed in the digital phase modulation&nbsp;page, ordinary (i.e., non-differential) PSK is not compatible with noncoherent receivers. FSK, in contrast, does not require coherent detection.</li>
+<li>Ordinary PSK schemes, especially QPSK, involve abrupt phase changes that result in high-slope signal variations, and high-slope sections of the waveform decrease in amplitude when the signal is processed by a low-pass filter. These amplitude variations combined with nonlinear amplification lead to a problem called spectral regrowth. To mitigate spectral regrowth we can either use a more linear (and thus less efficient) power amplifier or implement a specialized version of PSK. Or we can switch to FSK, which doesn&rsquo;t require abrupt phase changes.</li>
+</ul>
+
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/RFT_ch4_pg7_PSKfiltered.jpg&quot; /></p>
+<em>Here you can see amplitude variations caused by low-pass filtering a PSK signal.</em>
+<h2>Summary</h2>
+<ul>
+<li>Amplitude modulation is simple, but it is susceptible to noise and requires a high-linearity power amplifier.</li>
+<li>Frequency modulation is less susceptible to amplitude noise and can be used with higher-efficiency, lower-linearity amplifiers.</li>
+<li>Digital phase modulation offers better theoretical performance in terms of bit error rate than digital frequency modulation, but digital FM is advantageous in low-power systems because it does not require a high-linearity amplifier.</li>
+</ul>
+
+
+
+</div>
+</div>
+</body>
+</html>
