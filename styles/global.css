@@ -990,7 +990,7 @@ span[class^=clNav]:active
 /* Colors                                                                                        */
 /*-----------------------------------------------------------------------------------------------*/
 
-.m /* maroon  */  { color:  light-dark(#aa0000, #ffff80); }
+.m /* maroon  */  { color:  light-dark(#770000, #ffff80); }
 .e /* emerald */  { color:  light-dark(#008800, #66cc66); }
 .l /* lapis   */  { color:  light-dark(#0a5964, #9bf3ff); }
 
