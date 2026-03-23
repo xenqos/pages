@@ -990,13 +990,13 @@ span[class^=clNav]:active
 /* Colors                                                                                        */
 /*-----------------------------------------------------------------------------------------------*/
 
-.m /* maroon  */  { color:  light-dark(#aa0000, #ffff80); }
-.e /* emerald */  { color:  light-dark(#008800, #66cc66); }
-.l /* lapis   */  { color:  light-dark(#0a5964, #9bf3ff); }
+.m /* maroon  */  { color:  light-dark(#aa0000, #c80000); }
+.e /* emerald */  { color:  light-dark(#008800, #00a000); }
+.l /* lapis   */  { color:  light-dark(#0a5964, #108fa0); }
 
 .r /* red     */  { color:  light-dark(#ff0000, #ff0000); }
 .g /* green   */  { color:  light-dark(#00ff00, #00ff00); }
-.n /* navy    */  { color:  light-dark(#000080, #80aaff); }
+.n /* navy    */  { color:  light-dark(#000080, #0000a0); }
 
 /*-----------------------------------------------------------------------------------------------*/
 
