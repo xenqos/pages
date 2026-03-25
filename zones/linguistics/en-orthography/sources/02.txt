@@ -1,50 +1,18 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="en-CA-ClaraNeural">
-<prosody rate="-30%" volume="0.0dB">
-encyclopaedia
-paediatrician
-receding
-detail
-gene
-metre
-secret
-be
-she
-simile
-catastrophe
-neon
-beach
-eating
-please
-bee
-feed
-deceive
-ceiling
-conceit
-field
-series
-siege
-amoeba
-phoenix
+<prosody rate="0%" volume="0.0dB">
+Dearest creature in creation,
+Study English pronunciation.
 
-<break time="800ms"/>
+I will teach you in my verse
+Sounds like corpse, corps, horse, and worse.
 
-lethal
-axes
-legally
-evil
-recipe
-seize
-key
-geyser
-people
+I will keep you, Suzy, busy,
+Make your head with heat grow dizzy.
 
-<break time="800ms"/>
+Tear in eye, your dress will tear.
+So shall I! Oh hear my prayer.
 
-quay
-machine
-ski
-skiing
 </prosody>
 </voice>
 </speak>
