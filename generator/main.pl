@@ -40,8 +40,8 @@ my @books =
 , '0|linguistics/en-verbs-irregular|Irregular Verbs'
 , '0|linguistics/en-verbs-phrasal|Phrasal Verbs'
 
-, '0|linguistics/de-phonetics|Die Phonetik'
-, '1|linguistics/de-grammar|Die Grammatik'
+, '1|linguistics/de-phonetics|Phonetik'
+, '1|linguistics/de-grammar|Grammatik'
 , '0|linguistics/de-words|Слова'
 , '0|linguistics/de-nouns|Существительные'
 , '0|linguistics/de-adverbs|Наречия'
