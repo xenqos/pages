@@ -1,0 +1,112 @@
+/*-----------------------------------------------------------------------------------------------*/
+
+.clBlockIast
+{
+  display:              flex;
+  flex-wrap:            wrap;
+  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+}
+/*-----------------------------------------------------------------------------------------------*/
+
+.clBlockIast
+{
+  display:              flex;
+  flex-wrap:            wrap;
+  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+}
+
+.clBlockDevanagari
+{
+  display:              flex;
+  flex-wrap:            wrap;
+  font-size:            2.000rem;
+  justify-content:      center;
+  text-align:           center;
+  margin:               0.000rem 0.000rem 1.000rem 0.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+}
+
+.clLetterDevanagari
+{
+  color:                #007800;
+  display:              inline-block;
+  font-size:            2.000rem;
+  margin:               0.000rem 0.400rem 0.000rem 0.400rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+  width:                2.000rem;
+}
+
+.clLetterIast
+{
+  display:              inline-block;
+  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+  width:                2.000rem;
+}
+
+.clIast
+{
+  color:                #880000;
+  font-size:            1.200rem;
+}
+
+.l
+{
+  font-size:            1.200rem;
+}
+
+
+.clBreak
+{
+  clear:                both;
+}
+
+.clBlockDevanagari
+{
+  display:              flex;
+  flex-wrap:            wrap;
+  font-size:            2.000rem;
+  justify-content:      center;
+  text-align:           center;
+  margin:               0.000rem 0.000rem 1.000rem 0.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+}
+
+.clLetterDevanagari
+{
+  color:                #007800;
+  display:              inline-block;
+  font-size:            2.000rem;
+  margin:               0.000rem 0.400rem 0.000rem 0.400rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+  width:                2.000rem;
+}
+
+.clLetterIast
+{
+  display:              inline-block;
+  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+  width:                2.000rem;
+}
+
+.clIast
+{
+  color:                #880000;
+  font-size:            1.200rem;
+}
+
+.l
+{
+  font-size:            1.000rem;
+}
+
+
+.clBreak
+{
+  clear:                both;
+}
+
+/*-----------------------------------------------------------------------------------------------*/
