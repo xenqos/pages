@@ -10,7 +10,9 @@ use feature 'state';
 my @books =
 (
   '1|dharma/principles|Принципы'
+, '1|dharma/questions|Вопросы'
 , '1|dharma/kriya|Крия'
+, '1|dharma/yoga|Йога-сутры'
 , '1|dharma/mantra|Мантры'
 , '1|dharma/samhita|Самхиты'
 , '0|dharma/upanishad|Упанишады'
@@ -40,8 +42,8 @@ my @books =
 , '0|linguistics/en-verbs-irregular|Irregular Verbs'
 , '0|linguistics/en-verbs-phrasal|Phrasal Verbs'
 
-, '1|linguistics/de-phonetics|Phonetik'
-, '1|linguistics/de-grammar|Grammatik'
+, '0|linguistics/de-phonetics|Phonetik'
+, '0|linguistics/de-grammar|Grammatik'
 , '0|linguistics/de-words|Слова'
 , '0|linguistics/de-nouns|Существительные'
 , '0|linguistics/de-adverbs|Наречия'
@@ -49,7 +51,7 @@ my @books =
 , '0|linguistics/de-strong-verbs|Сильные глаголы'
 , '0|linguistics/de-conversations|Разговоры'
 
-, '1|linguistics/sa-outline|Outline'
+, '0|linguistics/sa-outline|Outline'
 
 , '0|linguistics/mystic-rhymes|Мистические рифмы'
 
