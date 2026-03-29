@@ -3,36 +3,36 @@
 # Place
 
 [|
-|%[m|here      ]|здесь         |
-|%[m|there     ]|там           |
-|%[m|around    ]|вокруг        |
-|%[m|forward   ]|дальше        |
-|%[m|close     ]|близко        |
-|%[m|far       ]|далеко        |
-|%[m|back      ]|назад         |
-|%[m|forth     ]|вперед        |
-|%[m|deeply    ]|глубоко       |
-|%[m|ahead     ]|впереди       |
-|%[m|somewhere ]|где-то        |
-|%[m|anywhere  ]|в любом месте |
-|%[m|nowhere   ]|нигде         |
-|%[m|elsewhere ]|в другом месте|
-|%[m|everywhere]|везде         |
-|%[m|away      ]|вдали=        |
-|%[m|along     ]|вдоль         |
-|%[m|above     ]|над           |
-|%[m|below     ]|ниже          |
-|%[m|apart     ]|отдельно      |
-|%[m|widely    ]|широко        |
-|%[m|inside    ]|внутри        |
-|%[m|outside   ]|снаружи       |
-|%[m|aside     ]|в сторону     |
-|%[m|closely   ]|близко        |
-|%[m|northward ]|на север      |
+|%[r|here      ]|здесь         |
+|%[r|there     ]|там           |
+|%[r|around    ]|вокруг        |
+|%[r|forward   ]|дальше        |
+|%[r|close     ]|близко        |
+|%[r|far       ]|далеко        |
+|%[r|back      ]|назад         |
+|%[r|forth     ]|вперед        |
+|%[r|deeply    ]|глубоко       |
+|%[r|ahead     ]|впереди       |
+|%[r|somewhere ]|где-то        |
+|%[r|anywhere  ]|в любом месте |
+|%[r|nowhere   ]|нигде         |
+|%[r|elsewhere ]|в другом месте|
+|%[r|everywhere]|везде         |
+|%[r|away      ]|вдали=        |
+|%[r|along     ]|вдоль         |
+|%[r|above     ]|над           |
+|%[r|below     ]|ниже          |
+|%[r|apart     ]|отдельно      |
+|%[r|widely    ]|широко        |
+|%[r|inside    ]|внутри        |
+|%[r|outside   ]|снаружи       |
+|%[r|aside     ]|в сторону     |
+|%[r|closely   ]|близко        |
+|%[r|northward ]|на север      |
 |]
 
 [!
-%[m|somewhere] - утверждение
-%[m|anywhere] - отрицание, вопрос
-%[m|nowhere] - краткий ответ
+%[r|somewhere] - утверждение
+%[r|anywhere] - отрицание, вопрос
+%[r|nowhere] - краткий ответ
 !]

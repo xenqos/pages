@@ -5,17 +5,17 @@
 ## Starke
 
 [|
-|nom.|-%[m|]|
-|gen.|-(%[m|e])%[m|s]|
-|dat.|-(%[m|e])|
-|akk.|-%[m|]|
+|nom.|-%[r|]|
+|gen.|-(%[r|e])%[r|s]|
+|dat.|-(%[r|e])|
+|akk.|-%[r|]|
 |]
 
 [|
-|nom.|%[m|das Fenster]      |%[m|der Löffel]      |
-|gen.|%[m|des Fenster]%[n|s]|%[m|des Löffel]%[n|s]|
-|dat.|%[m|dem Fenster]      |%[m|dem Löffel]      |
-|akk.|%[m|das Fenster]      |%[m|den Löffel]      |
+|nom.|%[r|das Fenster]      |%[r|der Löffel]      |
+|gen.|%[r|des Fenster]%[b|s]|%[r|des Löffel]%[b|s]|
+|dat.|%[r|dem Fenster]      |%[r|dem Löffel]      |
+|akk.|%[r|das Fenster]      |%[r|den Löffel]      |
 |]
 
 [!
@@ -24,10 +24,10 @@
 !]
 
 [|
-|%[m|der Vater]  |отец   |
-|%[m|der Mann]   |человек|
-|%[m|das Volk]   |народ  |
-|%[m|das Fenster]|окно   |
+|%[r|der Vater]  |отец   |
+|%[r|der Mann]   |человек|
+|%[r|das Volk]   |народ  |
+|%[r|das Fenster]|окно   |
 |]
 
 [!
@@ -35,10 +35,10 @@
 !]
 
 [|
-|nom.|%[m|der Kaktus]|%[m|der Realismus]|
-|gen.|%[m|des Kaktus]|%[m|des Realismus]|
-|dat.|%[m|dem Kaktus]|%[m|dem Realismus]|
-|akk.|%[m|den Kaktus]|%[m|den Realismus]|
+|nom.|%[r|der Kaktus]|%[r|der Realismus]|
+|gen.|%[r|des Kaktus]|%[r|des Realismus]|
+|dat.|%[r|dem Kaktus]|%[r|dem Realismus]|
+|akk.|%[r|den Kaktus]|%[r|den Realismus]|
 |]
 __кактус, реализм__
 
@@ -47,10 +47,10 @@ __кактус, реализм__
 !]
 
 [|
-|nom.|%[m|der Garten] |%[m|der Kaufmann] |%[m|das Messer] |
-|gen.|%[m|des Gartens]|%[m|des Kaufmanns]|%[m|des Messers]|
-|dat.|%[m|dem Garten] |%[m|dem Kaufmann] |%[m|dem Messer] |
-|akk.|%[m|den Garten] |%[m|den Kaufmann] |%[m|das Messer] |
+|nom.|%[r|der Garten] |%[r|der Kaufmann] |%[r|das Messer] |
+|gen.|%[r|des Gartens]|%[r|des Kaufmanns]|%[r|des Messers]|
+|dat.|%[r|dem Garten] |%[r|dem Kaufmann] |%[r|dem Messer] |
+|akk.|%[r|den Garten] |%[r|den Kaufmann] |%[r|das Messer] |
 |]
 __сад, торговец, нож__
 
@@ -59,35 +59,35 @@ __сад, торговец, нож__
 !]
 
 [|
-|nom.|%[m|der Hund]  |%[m|der Rat]  |%[m|das Buch]  |
-|gen.|%[m|des Hundes]|%[m|des Rates]|%[m|des Buches]|
-|dat.|%[m|dem Hund]  |%[m|dem Rat]  |%[m|dem Buch]  |
-|akk.|%[m|den Hund]  |%[m|den Rat]  |%[m|das Buch]  |
+|nom.|%[r|der Hund]  |%[r|der Rat]  |%[r|das Buch]  |
+|gen.|%[r|des Hundes]|%[r|des Rates]|%[r|des Buches]|
+|dat.|%[r|dem Hund]  |%[r|dem Rat]  |%[r|dem Buch]  |
+|akk.|%[r|den Hund]  |%[r|den Rat]  |%[r|das Buch]  |
 |]
 __собака, совет, книга__
 
 [!
-Окончание -es получают существительные на -%[l|s], -%[l|ß], -%[l|x], -%[l|z], -%[l|tz]:
+Окончание -es получают существительные на -%[b|s], -%[b|ß], -%[b|x], -%[b|z], -%[b|tz]:
 !]
 
 [|
-|nom.|%[m|das Glas]  |%[m|der Schmerz]  |%[m|das Gefäß]  |
-|gen.|%[m|des Glases]|%[m|des Schmerzes]|%[m|des Gefäßes]|
-|dat.|%[m|dem Glas]  |%[m|dem Schmerz]  |%[m|dem Gefäß]  |
-|akk.|%[m|das Glas]  |%[m|den Schmerz]  |%[m|das Gefäß]  |
+|nom.|%[r|das Glas]  |%[r|der Schmerz]  |%[r|das Gefäß]  |
+|gen.|%[r|des Glases]|%[r|des Schmerzes]|%[r|des Gefäßes]|
+|dat.|%[r|dem Glas]  |%[r|dem Schmerz]  |%[r|dem Gefäß]  |
+|akk.|%[r|das Glas]  |%[r|den Schmerz]  |%[r|das Gefäß]  |
 |]
 
 __стекло, боль, сосуд__
 
 [!
-Некоторые односложные существительные сохраняют окончание дательного падежа -%[l|е]:
+Некоторые односложные существительные сохраняют окончание дательного падежа -%[b|е]:
 !]
 
 [|
-|nom.|%[m|das Haus]       |%[m|der Wald]       |
-|gen.|%[m|des Haus]%[n|es]|%[m|des Wald]%[n|es]|
-|dat.|%[m|dem Haus]%[n|e] |%[m|dem Wald]%[n|e] |
-|akk.|%[m|das Haus]       |%[m|den Wald]       |
+|nom.|%[r|das Haus]       |%[r|der Wald]       |
+|gen.|%[r|des Haus]%[b|es]|%[r|des Wald]%[b|es]|
+|dat.|%[r|dem Haus]%[b|e] |%[r|dem Wald]%[b|e] |
+|akk.|%[r|das Haus]       |%[r|den Wald]       |
 |]
 
 __дом, лес__

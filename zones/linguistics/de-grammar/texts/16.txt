@@ -4,40 +4,40 @@
 
 [|
 ¦¦m.¦f.¦n.¦p.¦
-|nom.|%[m|der   ]|%[m|die  ]|%[m|das   ]|%[m|die  ]|
-|gen.|%[m|dessen]|%[m|deren]|%[m|dessen]|%[m|deren], %[m|derer]|
-|dat.|%[m|dem   ]|%[m|der  ]|%[m|dem   ]|%[m|denen]|
-|akk.|%[m|den   ]|%[m|die  ]|%[m|das   ]|%[m|die  ]|
+|nom.|%[r|der   ]|%[r|die  ]|%[r|das   ]|%[r|die  ]|
+|gen.|%[r|dessen]|%[r|deren]|%[r|dessen]|%[r|deren], %[r|derer]|
+|dat.|%[r|dem   ]|%[r|der  ]|%[r|dem   ]|%[r|denen]|
+|akk.|%[r|den   ]|%[r|die  ]|%[r|das   ]|%[r|die  ]|
 |]
 
 [|
 ¦¦m.¦f.¦n.¦p.¦
-|nom.|%[m|dieser]|%[m|diese ]|%[m|dieses], %[m|dies]|%[m|diese ]|
-|gen.|%[m|dieses]|%[m|dieser]|%[m|dieses]|%[m|dieser]|
-|dat.|%[m|diesem]|%[m|dieser]|%[m|diesem]|%[m|diesen]|
-|akk.|%[m|diesen]|%[m|diese ]|%[m|dieses], %[m|dies]|%[m|diese ]|
+|nom.|%[r|dieser]|%[r|diese ]|%[r|dieses], %[r|dies]|%[r|diese ]|
+|gen.|%[r|dieses]|%[r|dieser]|%[r|dieses]|%[r|dieser]|
+|dat.|%[r|diesem]|%[r|dieser]|%[r|diesem]|%[r|diesen]|
+|akk.|%[r|diesen]|%[r|diese ]|%[r|dieses], %[r|dies]|%[r|diese ]|
 |]
 
 [|
 ¦¦m.¦f.¦n.¦p.¦
-|nom.|%[m|jener]|%[m|jene ]|%[m|jenes]|%[m|jene ]|
-|gen.|%[m|jenes]|%[m|jener]|%[m|jenes]|%[m|jener]|
-|dat.|%[m|jenem]|%[m|jener]|%[m|jenem]|%[m|jenen]|
-|akk.|%[m|jenen]|%[m|jene ]|%[m|jenes]|%[m|jene ]|
+|nom.|%[r|jener]|%[r|jene ]|%[r|jenes]|%[r|jene ]|
+|gen.|%[r|jenes]|%[r|jener]|%[r|jenes]|%[r|jener]|
+|dat.|%[r|jenem]|%[r|jener]|%[r|jenem]|%[r|jenen]|
+|akk.|%[r|jenen]|%[r|jene ]|%[r|jenes]|%[r|jene ]|
 |]
 
 [|
 ¦¦m.¦f.¦n.¦p.¦
-|nom.|%[m|derselbe ]|%[m|dieselbe ]|%[m|dasselbe ]|%[m|dieselben]|
-|gen.|%[m|desselben]|%[m|derselben]|%[m|desselben]|%[m|derselben]|
-|dat.|%[m|demselben]|%[m|derselben]|%[m|demselben]|%[m|denselben]|
-|akk.|%[m|denselben]|%[m|dieselbe ]|%[m|dasselbe ]|%[m|dieselben]|
+|nom.|%[r|derselbe ]|%[r|dieselbe ]|%[r|dasselbe ]|%[r|dieselben]|
+|gen.|%[r|desselben]|%[r|derselben]|%[r|desselben]|%[r|derselben]|
+|dat.|%[r|demselben]|%[r|derselben]|%[r|demselben]|%[r|denselben]|
+|akk.|%[r|denselben]|%[r|dieselbe ]|%[r|dasselbe ]|%[r|dieselben]|
 |]
 
 [|
 ¦¦m.¦f.¦n.¦p.¦
-|nom.|%[m|derjenige ]|%[m|diejenige ]|%[m|dasjenige ]|%[m|diejenigen]|
-|gen.|%[m|desjenigen]|%[m|derjenigen]|%[m|desjenigen]|%[m|derjenigen]|
-|dat.|%[m|demjenigen]|%[m|derjenigen]|%[m|demjenigen]|%[m|denjenigen]|
-|akk.|%[m|denjenigen]|%[m|diejenige ]|%[m|dasjenige ]|%[m|diejenigen]|
+|nom.|%[r|derjenige ]|%[r|diejenige ]|%[r|dasjenige ]|%[r|diejenigen]|
+|gen.|%[r|desjenigen]|%[r|derjenigen]|%[r|desjenigen]|%[r|derjenigen]|
+|dat.|%[r|demjenigen]|%[r|derjenigen]|%[r|demjenigen]|%[r|denjenigen]|
+|akk.|%[r|denjenigen]|%[r|diejenige ]|%[r|dasjenige ]|%[r|diejenigen]|
 |]

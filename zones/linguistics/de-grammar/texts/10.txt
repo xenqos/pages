@@ -5,17 +5,17 @@
 ## Schwache
 
 [|
-|nom.|-%[m|]|
-|gen.|-(%[m|e])%[m|n]|
-|dat.|-(%[m|e])%[m|n]|
-|akk.|-(%[m|e])%[m|n]|
+|nom.|-%[r|]|
+|gen.|-(%[r|e])%[r|n]|
+|dat.|-(%[r|e])%[r|n]|
+|akk.|-(%[r|e])%[r|n]|
 |]
 
 [|
-|nom.|%[m|der Knabe]      |%[m|der Mensch]       |%[m|der Diplomat]      |
-|gen.|%[m|des Knabe]%[n|n]|%[m|des Mensch]%[n|en]|%[m|des Diplomat]%[n|n]|
-|dat.|%[m|dem Knabe]%[n|n]|%[m|dem Mensch]%[n|en]|%[m|dem Diplomat]%[n|n]|
-|akk.|%[m|den Knabe]%[n|n]|%[m|den Mensch]%[n|en]|%[m|den Diplomat]%[n|n]|
+|nom.|%[r|der Knabe]      |%[r|der Mensch]       |%[r|der Diplomat]      |
+|gen.|%[r|des Knabe]%[b|n]|%[r|des Mensch]%[b|en]|%[r|des Diplomat]%[b|n]|
+|dat.|%[r|dem Knabe]%[b|n]|%[r|dem Mensch]%[b|en]|%[r|dem Diplomat]%[b|n]|
+|akk.|%[r|den Knabe]%[b|n]|%[r|den Mensch]%[b|en]|%[r|den Diplomat]%[b|n]|
 |]
 
 [!
@@ -24,18 +24,18 @@
 !]
 
 [!
-Существительные, оканчивающиеся на -%[n|e]:
+Существительные, оканчивающиеся на -%[b|e]:
 !]
 
 [|
-|%[m|der Affe]   |обезьяна |
-|%[m|der Erbe]   |наследник|
-|%[m|der Falke]  |сокол    |
-|%[m|der Hase]   |заяц     |
-|%[m|der Knabe]  |мальчик  |
-|%[m|der Kollege]|коллега  |
-|%[m|der Löwe]   |лев      |
-|%[m|der Neffe]  |племянник|
+|%[r|der Affe]   |обезьяна |
+|%[r|der Erbe]   |наследник|
+|%[r|der Falke]  |сокол    |
+|%[r|der Hase]   |заяц     |
+|%[r|der Knabe]  |мальчик  |
+|%[r|der Kollege]|коллега  |
+|%[r|der Löwe]   |лев      |
+|%[r|der Neffe]  |племянник|
 |]
 
 [!
@@ -43,31 +43,31 @@
 !]
 
 [|
-|%[m|der Bär]   |медведь |
-|%[m|der Fürst] |князь   |
-|%[m|der Graf]  |граф    |
-|%[m|der Held]  |герой   |
-|%[m|der Herr]  |господин|
-|%[m|der Hirt]  |пастух  |
-|%[m|der Mensch]|человек |
-|%[m|der Narr]  |дурак   |
-|%[m|der Ochs]  |бык     |
-|%[m|der Prinz] |принц   |
-|%[m|der Spatz] |воробей |
-|%[m|der Tor]   |дурак   |
-|%[m|der Zar]   |царь    |
+|%[r|der Bär]   |медведь |
+|%[r|der Fürst] |князь   |
+|%[r|der Graf]  |граф    |
+|%[r|der Held]  |герой   |
+|%[r|der Herr]  |господин|
+|%[r|der Hirt]  |пастух  |
+|%[r|der Mensch]|человек |
+|%[r|der Narr]  |дурак   |
+|%[r|der Ochs]  |бык     |
+|%[r|der Prinz] |принц   |
+|%[r|der Spatz] |воробей |
+|%[r|der Tor]   |дурак   |
+|%[r|der Zar]   |царь    |
 |]
 
 [!
 Существительные с иностранными суффиксами:
 !]
--%[n|ant], -%[n|at], -%[n|ent], -%[n|et], -%[n|graph], -%[n|greif], -%[n|ist], -%[n|it], -%[n|ot]
+-%[b|ant], -%[b|at], -%[b|ent], -%[b|et], -%[b|graph], -%[b|greif], -%[b|ist], -%[b|it], -%[b|ot]
 
 [|
-|%[m|der Aspirant]|аспирант|
-|%[m|der Fotograf]|фотограф|
-|%[m|der Diplomat]|дипломат|
-|%[m|der Pianist] |пианист |
+|%[r|der Aspirant]|аспирант|
+|%[r|der Fotograf]|фотограф|
+|%[r|der Diplomat]|дипломат|
+|%[r|der Pianist] |пианист |
 |]
 
 [!
@@ -75,8 +75,8 @@
 !]
 
 [|
-|%[m|der Architekt]|архитектор|
-|%[m|der Kamerad]  |товарищ   |
+|%[r|der Architekt]|архитектор|
+|%[r|der Kamerad]  |товарищ   |
 |]
 
 [!
@@ -84,10 +84,10 @@
 !]
 
 [|
-|%[m|der Planet]   |планета  |
-|%[m|der Вrilliant]|бриллиант|
-|%[m|der Komet]    |комета   |
-|%[m|der Diamant]  |алмаз    |
-|%[m|der Automat]  |автомат  |
-|%[m|der Foliant]  |фолиант  |
+|%[r|der Planet]   |планета  |
+|%[r|der Вrilliant]|бриллиант|
+|%[r|der Komet]    |комета   |
+|%[r|der Diamant]  |алмаз    |
+|%[r|der Automat]  |автомат  |
+|%[r|der Foliant]  |фолиант  |
 |]

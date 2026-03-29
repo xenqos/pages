@@ -5,30 +5,30 @@
 ## Gemischte
 
 [|
-|nom.|-%[m|]|
-|gen.|-%[m|ns]|
-|dat.|-%[m|n]|
-|akk.|-%[m|n]|
+|nom.|-%[r|]|
+|gen.|-%[r|ns]|
+|dat.|-%[r|n]|
+|akk.|-%[r|n]|
 |]
 
 [|
-|nom.|%[m|der Name]       |%[m|das Herz]        |
-|gen.|%[m|des Name]%[n|ns]|%[m|des Herz]%[n|ens]|
-|dat.|%[m|dem Name]%[n|n] |%[m|dem Herz]%[n|en] |
-|akk.|%[m|den Name]%[n|n] |%[m|das Herz]        |
+|nom.|%[r|der Name]       |%[r|das Herz]        |
+|gen.|%[r|des Name]%[b|ns]|%[r|des Herz]%[b|ens]|
+|dat.|%[r|dem Name]%[b|n] |%[r|dem Herz]%[b|en] |
+|akk.|%[r|den Name]%[b|n] |%[r|das Herz]        |
 |]
 
 Склоняются существительные:
 
 [|
-|%[m|der Buchstabe]|буква |
-|%[m|der Fels]     |скала |
-|%[m|der Friede]   |мир   |
-|%[m|der Fumke]    |искра |
-|%[m|der Gedanke]  |мысль |
-|%[m|der Glaube]   |вера  |
-|%[m|der Name]     |имя   |
-|%[m|der Same]     |семя  |
-|%[m|der Wille]    |воля  |
-|%[m|das Herz]     |сердце|
+|%[r|der Buchstabe]|буква |
+|%[r|der Fels]     |скала |
+|%[r|der Friede]   |мир   |
+|%[r|der Fumke]    |искра |
+|%[r|der Gedanke]  |мысль |
+|%[r|der Glaube]   |вера  |
+|%[r|der Name]     |имя   |
+|%[r|der Same]     |семя  |
+|%[r|der Wille]    |воля  |
+|%[r|das Herz]     |сердце|
 |]

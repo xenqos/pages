@@ -7,15 +7,15 @@ __ Handlungsrichtung __
 |das Aktiv ||täterzugewandt
 |das Passiv||täterabgewandt
 
-|%[m|das Aktiv]         ||Активный
-|%[m|das Vorgangspassiv]||Пассив действия
-|%[m|das Zustandspassiv]||Пассив состояния
+|%[r|das Aktiv]         ||Активный
+|%[r|das Vorgangspassiv]||Пассив действия
+|%[r|das Zustandspassiv]||Пассив состояния
 
 
 ## Das Vorgangspassiv (Пассив процесса)
 Акцентирует внимание на самом действии.
-%[m|werden] + %[m|Partizip]
+%[r|werden] + %[r|Partizip]
 
 ## Das Zustandspassiv (Пассив состояния)
 Описывает результат уже завершенного действия.
-%[m|sein] + %[m|Partizip]
+%[r|sein] + %[r|Partizip]

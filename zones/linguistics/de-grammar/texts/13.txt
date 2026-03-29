@@ -3,17 +3,17 @@
 # Deklination im Plural
 
 [|
-|nom.|-%[m|]|
-|gen.|-%[m|]|
-|dat.|-%[m|n]|
-|akk.|-%[m|]|
+|nom.|-%[r|]|
+|gen.|-%[r|]|
+|dat.|-%[r|n]|
+|akk.|-%[r|]|
 |]
 
 [|
-|nom.|%[m|die Väter] |%[m|die Bücher] |%[m|die Menschen]|%[m|die Parks]|
-|gen.|%[m|der Väter] |%[m|der Bücher] |%[m|der Menschen]|%[m|der Parks]|
-|dat.|%[m|den Vätern]|%[m|den Büchern]|%[m|den Menschen]|%[m|den Parks]|
-|akk.|%[m|die Väter] |%[m|die Bücher] |%[m|die Menschen]|%[m|die Parks]|
+|nom.|%[r|die Väter] |%[r|die Bücher] |%[r|die Menschen]|%[r|die Parks]|
+|gen.|%[r|der Väter] |%[r|der Bücher] |%[r|der Menschen]|%[r|der Parks]|
+|dat.|%[r|den Vätern]|%[r|den Büchern]|%[r|den Menschen]|%[r|den Parks]|
+|akk.|%[r|die Väter] |%[r|die Bücher] |%[r|die Menschen]|%[r|die Parks]|
 |]
 
 [!

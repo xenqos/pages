@@ -4,145 +4,145 @@
 
 # e
 
-/ %[l|eː] /
+/ %[b|eː] /
 
 [!
 в открытом ударном слоге
 !]
 [|-
-|%[m|das Leben]|жизнь|
-|%[m|der Regen]|дождь|
+|%[r|das Leben]|жизнь|
+|%[r|der Regen]|дождь|
 |]
 
 [!
 в условно-открытом слоге
 !]
 [|-
-|%[m|der Weg]|дорога, путь|
-|%[m|schwer] |дождь       |
+|%[r|der Weg]|дорога, путь|
+|%[r|schwer] |дождь       |
 |]
 
 [!
-в односложных на -%[m|m], -%[m|n], -%[m|r]
+в односложных на -%[r|m], -%[r|n], -%[r|r]
 !]
 [|-
-|%[m|dem]|тому|
-|%[m|wen]|кого|
+|%[r|dem]|тому|
+|%[r|wen]|кого|
 |]
 
-/ %[l|ɛ] /
+/ %[b|ɛ] /
 
 [!
 в закрытом слоге
 !]
 [|-
-|%[m|der Kern]|ядро               |
-|%[m|das Fest]|праздник, торжество|
+|%[r|der Kern]|ядро               |
+|%[r|das Fest]|праздник, торжество|
 |]
 
 [!
-в префиксах %[m|emp]-, %[m|ent]-, %[m|er]-, %[m|ver]-, %[m|zer]-
+в префиксах %[r|emp]-, %[r|ent]-, %[r|er]-, %[r|ver]-, %[r|zer]-
 !]
 [|-
-|%[m|empfangen]|принимать, получать   |
-|%[m|entdecken]|обнаруживать, находить|
+|%[r|empfangen]|принимать, получать   |
+|%[r|entdecken]|обнаруживать, находить|
 |]
 
 [!
-в безударном греческом суффиксе -%[m|es]
+в безударном греческом суффиксе -%[r|es]
 !]
 [|-
-|%[m|Aristoteles]|Аристотель|
-|%[m|Achilles]   |Ахилл     |
+|%[r|Aristoteles]|Аристотель|
+|%[r|Achilles]   |Ахилл     |
 |]
 
-/ %[l|ə] /
+/ %[b|ə] /
 
 [!
-в префиксах %[m|be]-, %[m|ge]-
+в префиксах %[r|be]-, %[r|ge]-
 !]
 [|-
-|%[m|besuchen]|посещать|
-|%[m|gerade]  |прямой  |
-|]
-
-[!
-в суффиксе -%[m|chen]
-!]
-[|-
-|%[m|das Mädchen] |посещать|
-|%[m|das Veilchen]|фиалка  |
+|%[r|besuchen]|посещать|
+|%[r|gerade]  |прямой  |
 |]
 
 [!
-в суффиксах -%[m|e], -%[m|el], -%[m|er], -%[m|ler], -%[m|ner]
+в суффиксе -%[r|chen]
 !]
 [|-
-|%[m|die Hilfe] |помощь         |
-|%[m|der Riegel]|задвижка, засов|
+|%[r|das Mädchen] |посещать|
+|%[r|das Veilchen]|фиалка  |
 |]
 
 [!
-в суффиксах -%[m|em], -%[m|et], -%[m|tet], -%[m|test]
+в суффиксах -%[r|e], -%[r|el], -%[r|er], -%[r|ler], -%[r|ner]
 !]
 [|-
-|%[m|diesem]  |этому   |
-|%[m|arbeitet]|работает|
+|%[r|die Hilfe] |помощь         |
+|%[r|der Riegel]|задвижка, засов|
 |]
 
-## Редуцирование / %[l|ə] /
+[!
+в суффиксах -%[r|em], -%[r|et], -%[r|tet], -%[r|test]
+!]
+[|-
+|%[r|diesem]  |этому   |
+|%[r|arbeitet]|работает|
+|]
 
-&ensp;&bullet;&ensp;в окончании -en после щелевых звуков и аффрикат [p̮f], [t̮s]: %[m|die Möwen], %[m|heißen], %[m|waschen], %[m|kämpfen], %[m|tanzen], %[m|die Garagen];
+## Редуцирование / %[b|ə] /
 
-&ensp;&bullet;&ensp;в окончании -en после смычно-взрывных звуков: %[m|leben], %[m|die Mappen], %[m|leiden], %[m|reiten], %[m|wegen], %[m|packen];
+&ensp;&bullet;&ensp;в окончании -en после щелевых звуков и аффрикат [p̮f], [t̮s]: %[r|die Möwen], %[r|heißen], %[r|waschen], %[r|kämpfen], %[r|tanzen], %[r|die Garagen];
 
-&ensp;&bullet;&ensp;в окончании -el после смычно-проходных, смычно-щелевых, щелевых, смычно-взрывных звуков: %[m|ähneln], %[m|der Gipfel], %[m|die Tafel], %[m|vermitteln];
+&ensp;&bullet;&ensp;в окончании -en после смычно-взрывных звуков: %[r|leben], %[r|die Mappen], %[r|leiden], %[r|reiten], %[r|wegen], %[r|packen];
 
-## Исключения / %[l|eː] /
+&ensp;&bullet;&ensp;в окончании -el после смычно-проходных, смычно-щелевых, щелевых, смычно-взрывных звуков: %[r|ähneln], %[r|der Gipfel], %[r|die Tafel], %[r|vermitteln];
+
+## Исключения / %[b|eː] /
 
 [|
-|%[m|die Beschwerde] |трудность       |
-|%[m|Dresden]        |Дрезден         |
-|%[m|die Erde]       |Земля           |
-|%[m|erst]           |сначала, вначале|
-|%[m|das Erz]        |руда            |
-|%[m|der Este]       |эстонец         |
-|%[m|der Estland]    |Эстония         |
-|%[m|estnisch]       |эстонский       |
-|%[m|Gerhard]        |Герхард         |
-|%[m|die Geste]      |жест            |
-|%[m|Hedwig]         |Хедвиг          |
-|%[m|her]            |сюда            |
-|%[m|der Herd]       |плита           |
-|%[m|die Herde]      |стадо           |
-|%[m|der Keks]       |печенье         |
-|%[m|der Krebs]      |рак             |
-|%[m|der Kreml]      |кремль          |
-|%[m|das Mecklenburg]|Мекленбург      |
-|%[m|nebst]          |вместе          |
-|%[m|das Pferd]      |лошадь          |
-|%[m|das Schleswig]  |Шлезвиг         |
-|%[m|das Schwert]    |меч             |
-|%[m|das Schwedt]    |Шведт           |
-|%[m|stets]          |всегда          |
-|%[m|das Teplitz]    |Теплиц          |
-|%[m|werden]         |становиться     |
-|%[m|der Wert]       |цена            |
-|%[m|das Zebra]      |зебра           |
+|%[r|die Beschwerde] |трудность       |
+|%[r|Dresden]        |Дрезден         |
+|%[r|die Erde]       |Земля           |
+|%[r|erst]           |сначала, вначале|
+|%[r|das Erz]        |руда            |
+|%[r|der Este]       |эстонец         |
+|%[r|der Estland]    |Эстония         |
+|%[r|estnisch]       |эстонский       |
+|%[r|Gerhard]        |Герхард         |
+|%[r|die Geste]      |жест            |
+|%[r|Hedwig]         |Хедвиг          |
+|%[r|her]            |сюда            |
+|%[r|der Herd]       |плита           |
+|%[r|die Herde]      |стадо           |
+|%[r|der Keks]       |печенье         |
+|%[r|der Krebs]      |рак             |
+|%[r|der Kreml]      |кремль          |
+|%[r|das Mecklenburg]|Мекленбург      |
+|%[r|nebst]          |вместе          |
+|%[r|das Pferd]      |лошадь          |
+|%[r|das Schleswig]  |Шлезвиг         |
+|%[r|das Schwert]    |меч             |
+|%[r|das Schwedt]    |Шведт           |
+|%[r|stets]          |всегда          |
+|%[r|das Teplitz]    |Теплиц          |
+|%[r|werden]         |становиться     |
+|%[r|der Wert]       |цена            |
+|%[r|das Zebra]      |зебра           |
 |]
 
-## Исключения / %[l|ɛ] /
+## Исключения / %[b|ɛ] /
 
 [|
-|%[m|das Billett] |билет         |
-|%[m|der Chef]    |шеф           |
-|%[m|die Herberge]|постоялый двор|
-|%[m|der Herzog]  |герцог        |
-|%[m|das Hotel]   |отель         |
-|%[m|das Rebhuhn] |куропатка     |
-|%[m|das Relief]  |рельеф        |
-|%[m|das Requiem] |реквием       |
-|%[m|Stephan]     |Стефан        |
-|%[m|der Tibet]   |Тибет         |
-|%[m|der Weg]     |дорога        |
+|%[r|das Billett] |билет         |
+|%[r|der Chef]    |шеф           |
+|%[r|die Herberge]|постоялый двор|
+|%[r|der Herzog]  |герцог        |
+|%[r|das Hotel]   |отель         |
+|%[r|das Rebhuhn] |куропатка     |
+|%[r|das Relief]  |рельеф        |
+|%[r|das Requiem] |реквием       |
+|%[r|Stephan]     |Стефан        |
+|%[r|der Tibet]   |Тибет         |
+|%[r|der Weg]     |дорога        |
 |]

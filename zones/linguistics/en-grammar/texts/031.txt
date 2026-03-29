@@ -5,65 +5,65 @@
 **Количественные числительные** обозначают число предметов (отвечают на вопрос «сколько?»):
 
 [!
-0 – %[m|zero], %[m|nought]
-1 – %[m|one]
-2 – %[m|two]
-3 – %[m|three]
-4 – %[m|four]
-5 – %[m|five]
-6 – %[m|six]
-7 – %[m|seven]
-8 – %[m|eight]
-9 – %[m|nine]
-10 – %[m|ten]
-11 – %[m|eleven]
-12 – %[m|twelve]
+0 – %[r|zero], %[r|nought]
+1 – %[r|one]
+2 – %[r|two]
+3 – %[r|three]
+4 – %[r|four]
+5 – %[r|five]
+6 – %[r|six]
+7 – %[r|seven]
+8 – %[r|eight]
+9 – %[r|nine]
+10 – %[r|ten]
+11 – %[r|eleven]
+12 – %[r|twelve]
 !]
 
 Числительные от 13 до 19 образуются при помощи добавления суффикса **-teen**, сходного «-надцать»:
 
 [!
-13 – %[m|thirteen]
-14 – %[m|fourteen]
-15 – %[m|fifteen]
-16 – %[m|sixteen]
-17 – %[m|seventeen]
-18 – %[m|eighteen]
-19 – %[m|nineteen]
+13 – %[r|thirteen]
+14 – %[r|fourteen]
+15 – %[r|fifteen]
+16 – %[r|sixteen]
+17 – %[r|seventeen]
+18 – %[r|eighteen]
+19 – %[r|nineteen]
 !]
 
 Числительные-десятки образуются при помощи суффикса **-ty**:
 
 [!
-60 – %[m|sixty]
-80 – %[m|eighty]
+60 – %[r|sixty]
+80 – %[r|eighty]
 !]
 
 Если количественное числительное состоит из десятков и единиц, то эти два слова разделяются дефисом:
 
 [!
-21 – %[m|twenty-one]
-73 – %[m|seventy-three]
+21 – %[r|twenty-one]
+73 – %[r|seventy-three]
 !]
 
 Если оно состоит из сотен и тысяч, то слова, обозначающие десятки и единицы, могут быть присоединены к ним при помощи союза **and**:
 
 [!
-101 – %[m|one hundred and one]
-386 – %[m|three hundred and eighty-six]
-4034 – %[m|four thousand and thirty-four]
-6739 – %[m|six thousand seven hundred and thirty-nine]
+101 – %[r|one hundred and one]
+386 – %[r|three hundred and eighty-six]
+4034 – %[r|four thousand and thirty-four]
+6739 – %[r|six thousand seven hundred and thirty-nine]
 !]
 
 Телефонные номера, номера кредитных карт и т. п. читаются по цифрам:
 
 [!
-89 568 90786 – %[m|eight nine, five six eight, nine oh seven eight six]
+89 568 90786 – %[r|eight nine, five six eight, nine oh seven eight six]
 !]
 
 В больших числах разряды отделяются друг от друга запятой (в отличие от русского языка, где в таком случае может использоваться пробел):
 
 [!
-%[m|1,467]
-%[m|345,845,234]
+%[r|1,467]
+%[r|345,845,234]
 !]

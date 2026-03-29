@@ -78,19 +78,19 @@ E - Example
 number of combinations between elements
 !]
 
-%[m|Set]
+%[r|Set]
 >>> set of elements
 
-%[m|Selection]
+%[r|Selection]
 >>> extracts elements from set
 
-%[m|Addition]
+%[r|Addition]
 >>> 13&[s|] + 13&[h|] + 13&[c|] + 13&[d|] = 52
 
-%[m|Multiplication]
+%[r|Multiplication]
 >>> 13&[x|] * 4 = 52
 
-%[m|Factorial]
+%[r|Factorial]
 >>> number of ways to order elements
 >>> 3! = 3 × 2 × 1 = 6
 

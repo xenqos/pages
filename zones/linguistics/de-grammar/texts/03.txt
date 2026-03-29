@@ -3,31 +3,31 @@
 # Satzzeichen
 
 [|
-|.  |%[m|der Punkt                  ]|
-|,  |%[m|das Komma                  ]|
-|;  |%[m|das Semikolon              ]|
-|:  |%[m|der Doppelpunkt            ]|
-|…  |%[m|die Auslassungspunkte      ]|
-|?  |%[m|das Fragezeichen           ]|
-|!  |%[m|das Ausrufezeichen         ]|
-|"  |%[m|das Anführungzeichen       ]|
-|'  |%[m|der Apostroph              ]|
-|   |%[m|das Leerzeichen            ]|
-|() |%[m|die runde Klammern         ]|
-|(  |%[m|die linke Klammern         ]|
-|)  |%[m|die rechte Klammern        ]|
-|[ ]|%[m|die eckigen Klammern       ]|
-|< >|%[m|die spitzen Klammern       ]|
-|{ }|%[m|die geschweiften Klammern  ]|
-|/  |%[m|der Schrägstrich           ]|
-|\  |%[m|der umgekehrte Schrägstrich]|
-|&verbar;|%[m|der senkrechte Strich ]|
-|_  |%[m|der Unterstrich            ]|
-|-  |%[m|der Viertelgeviertstrich   ]|
-|@  |%[m|das At-Zeichen             ]|
-|#  |%[m|das Rautenzeichen          ]|
-|&  |%[m|das Kaufmannsund           ]|
-|~  |%[m|die Tilde                  ]|
-|*  |%[m|das Sternchen              ]|
-|´  |%[m|der Akut                   ]|
+|.  |%[r|der Punkt                  ]|
+|,  |%[r|das Komma                  ]|
+|;  |%[r|das Semikolon              ]|
+|:  |%[r|der Doppelpunkt            ]|
+|…  |%[r|die Auslassungspunkte      ]|
+|?  |%[r|das Fragezeichen           ]|
+|!  |%[r|das Ausrufezeichen         ]|
+|"  |%[r|das Anführungzeichen       ]|
+|'  |%[r|der Apostroph              ]|
+|   |%[r|das Leerzeichen            ]|
+|() |%[r|die runde Klammern         ]|
+|(  |%[r|die linke Klammern         ]|
+|)  |%[r|die rechte Klammern        ]|
+|[ ]|%[r|die eckigen Klammern       ]|
+|< >|%[r|die spitzen Klammern       ]|
+|{ }|%[r|die geschweiften Klammern  ]|
+|/  |%[r|der Schrägstrich           ]|
+|\  |%[r|der umgekehrte Schrägstrich]|
+|&verbar;|%[r|der senkrechte Strich ]|
+|_  |%[r|der Unterstrich            ]|
+|-  |%[r|der Viertelgeviertstrich   ]|
+|@  |%[r|das At-Zeichen             ]|
+|#  |%[r|das Rautenzeichen          ]|
+|&  |%[r|das Kaufmannsund           ]|
+|~  |%[r|die Tilde                  ]|
+|*  |%[r|das Sternchen              ]|
+|´  |%[r|der Akut                   ]|
 |]

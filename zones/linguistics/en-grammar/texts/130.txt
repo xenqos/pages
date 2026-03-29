@@ -10,12 +10,12 @@
 речи пишется с большой буквы. В конце прямой речи точка или другой знак препинания ставится внутри кавычек:
 
 [!
-%[m|He said, “I need my glasses.”]
+%[r|He said, “I need my glasses.”]
 Он сказал: «Мне нужны мои очки».
 !]
 
 [!
-%[m|She told me, “It’s snowing.”]
+%[r|She told me, “It’s snowing.”]
 Она сказала мне: «Идет снег».
 !]
 
@@ -25,24 +25,24 @@
 быть и опущен:
 
 [!
-%[m|I said, “It is June.”]
+%[r|I said, “It is June.”]
 Я сказал: «Сейчас июнь».
 !]
 
 [!
-%[m|I said that it was June.] (I said it was June.)
+%[r|I said that it was June.] (I said it was June.)
 !]
 Я сказал, что стоял июнь.
 
 Все личные и притяжательные местоимения должны быть изменены в зависимости от лица, от которого ведется повествование:
 
 [!
-%[m|Tom and Bob told me, “**We** need **your** dictionary.”]
+%[r|Tom and Bob told me, “**We** need **your** dictionary.”]
 Том и Боб сказали: «Нам нужен твой словарь».
 !]
 
 [!
-%[m|Tom and Bob told me that **they** need **my** dictionary.]
+%[r|Tom and Bob told me that **they** need **my** dictionary.]
 Том и Боб сказали, что им нужен мой словарь.
 !]
 
@@ -89,12 +89,12 @@ here —&gt; there
 !]
 
 [!
-%[m|She told me, “I will come to see you **tomorrow**.”]
+%[r|She told me, “I will come to see you **tomorrow**.”]
 Она сказала мне: «Завтра я приду тебя проведать».
 !]
 
 [!
-%[m|She told me she would come to see me **the next day**.]
+%[r|She told me she would come to see me **the next day**.]
 Она сказала, что на следующий день придет меня проведать.
 !]
 
@@ -104,36 +104,36 @@ here —&gt; there
 **Общие вопросы** вводятся союзами **if** и **whether**:
 
 [!
-%[m|I asked, “Have you seen my pen?”]
+%[r|I asked, “Have you seen my pen?”]
 Я спросил: «Ты видел мою ручку?»
 !]
 
 [!
-%[m|I asked him **if** he had seen my pen.] (I asked him **whether** he had seen my pen.)
+%[r|I asked him **if** he had seen my pen.] (I asked him **whether** he had seen my pen.)
 !]
 Я спросил, видел ли он мою ручку.
 
 **Специальные вопросы** вводятся вопросительными словами:
 
 [!
-%[m|He wondered: “Who on earth will buy this junk?”]
+%[r|He wondered: “Who on earth will buy this junk?”]
 Он удивился: «Ну кто станет покупать эту рухлядь?»
 !]
 
 [!
-%[m|He wondered who on earth would buy that junk.]
+%[r|He wondered who on earth would buy that junk.]
 Он удивился, кто станет покупать эту рухлядь.
 !]
 
 Краткий ответ на вопрос косвенной речи вводится союзом **that** без слов **yes** / **no**:
 
 [!
-%[m|She answered, “Yes, I do.”]
+%[r|She answered, “Yes, I do.”]
 Она ответила: «Да».
 !]
 
 [!
-%[m|She answered that she did.]
+%[r|She answered that she did.]
 Она ответила утвердительно.
 !]
 
@@ -142,21 +142,21 @@ here —&gt; there
 Такие предложения используются со словами **to say**, **to tell**, **to order**,&nbsp; **to ask**, **to beg**, а глагол в повелительном наклонении изменяется в форму инфинитива:
 
 [!
-%[m|Mom told me, “Clear your room.”]
+%[r|Mom told me, “Clear your room.”]
 Мама сказала мне: «Прибери свою комнату».
 !]
 
 [!
-%[m|Mom told me to clear my room.]
+%[r|Mom told me to clear my room.]
 Мама сказала мне прибрать свою комнату.
 !]
 
 [!
-%[m|He said, “Don’t run in the corridor.”]
+%[r|He said, “Don’t run in the corridor.”]
 Он сказал: «Не бегайте в коридоре».
 !]
 
 [!
-%[m|He said not to run in the corridor.]
+%[r|He said not to run in the corridor.]
 Он сказал не бегать в коридоре.
 !]

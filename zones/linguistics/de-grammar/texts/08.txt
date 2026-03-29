@@ -3,78 +3,78 @@
 # Kasus
 
 [|
-|%[m|die Deklination]|             |склонение|
-|%[m|der Kasus]      |%[n|der Fall]|падеж    |
+|%[r|die Deklination]|             |склонение|
+|%[r|der Kasus]      |%[b|der Fall]|падеж    |
 |]
 
 [|
-|%[m|der Nominativ]|%[l|ˈnoːminaˌtiːf]|%[m|wer, was]|кто, что  |
-|%[m|der Genitiv]  |%[l|ˈɡeːnitiːf]   |%[m|wessen]  |чей       |
-|%[m|der Dativ]    |%[l|ˈdaːtiːf]     |%[m|wem]     |кому, чему|
-|%[m|der Accusativ]|%[l|ˈakuzaˌtiːf]  |%[m|wen, was]|кого, что |
+|%[r|der Nominativ]|%[b|ˈnoːminaˌtiːf]|%[r|wer, was]|кто, что  |
+|%[r|der Genitiv]  |%[b|ˈɡeːnitiːf]   |%[r|wessen]  |чей       |
+|%[r|der Dativ]    |%[b|ˈdaːtiːf]     |%[r|wem]     |кому, чему|
+|%[r|der Accusativ]|%[b|ˈakuzaˌtiːf]  |%[r|wen, was]|кого, что |
 |]
 
 ## Nominativ
 
 Функция - обозначение подлежащего
 
-%[m|Die Katze schläft.]
+%[r|Die Katze schläft.]
 >>> Кошка спит.
-%[m|Das Buch ist interessant.]
+%[r|Das Buch ist interessant.]
 >>> Книга интересная.
-%[m|Mein Bruder spielt Fußball.]
+%[r|Mein Bruder spielt Fußball.]
 >>> Мой брат играет в футбол.
-%[m|Die Kinder spielen im Park.]
+%[r|Die Kinder spielen im Park.]
 >>> Дети играют в парке.
 
 ## Genitiv
 
 Функция - обозначение признаков существительного, зависящих от другого существительного.
 
-%[m|das Haus des Nachbarn] m.
+%[r|das Haus des Nachbarn] m.
 >>> дом соседa
-%[m|das Buch des Lehrers] m.
+%[r|das Buch des Lehrers] m.
 >>> книга учителя
-%[m|der Klang der Glocke] f.
+%[r|der Klang der Glocke] f.
 >>> звук колокола
-%[m|die Farbe des Autos.] n.
+%[r|die Farbe des Autos.] n.
 >>> цвет автомобиля
 
 [!
-Окончание -%[m|es]:
+Окончание -%[r|es]:
 
 1.если в Nominativ:
->>> -%[m|s], -%[m|ss], -%[m|ß], -%[m|x], -%[m|tz], -%[m|z]
+>>> -%[r|s], -%[r|ss], -%[r|ß], -%[r|x], -%[r|tz], -%[r|z]
 2.окончания:
->>> -%[m|sch], -%[m|tsch], -%[m|st]
+>>> -%[r|sch], -%[r|tsch], -%[r|st]
 3.если безударное окончание:
->>> -%[m|el], -%[m|en], -%[m|end], -%[m|em],-%[m|er]
+>>> -%[r|el], -%[r|en], -%[r|end], -%[r|em],-%[r|er]
 4.окончания:
->>> -%[m|lein], -%[m|ling], -%[m|ing], -%[m|ig]
+>>> -%[r|lein], -%[r|ling], -%[r|ing], -%[r|ig]
 !]
 
 ## Dativ
 
 Функция - обозначение получателя того, что дается.
 
-%[m|Ich gebe dem Freund ein Buch.]
+%[r|Ich gebe dem Freund ein Buch.]
 >>> Я даю другу книгу.
-%[m|Sie zeigt der Lehrerin ihre Hausaufgaben.]
+%[r|Sie zeigt der Lehrerin ihre Hausaufgaben.]
 >>> Она показывает учительнице свои домашние задания.
-%[m|Ich gehe mit meinem Bruder ins Kino.]
+%[r|Ich gehe mit meinem Bruder ins Kino.]
 >>> Я иду в кино с братом.
-%[m|Er spricht über das Wetter.]
+%[r|Er spricht über das Wetter.]
 >>> Он говорит о погоде.
 
 ## Accusativ
 
 Функция - обозначение прямого дополнения
 
-%[m|Ich sehe den Hund.]
+%[r|Ich sehe den Hund.]
 >>> Я вижу собаку.
-%[m|Sie kauft einen Apfel.]
+%[r|Sie kauft einen Apfel.]
 >>> Она покупает яблоко.
-%[m|Ich gehe durch den Park.]
+%[r|Ich gehe durch den Park.]
 >>> Я иду через парк.
-%[m|Er stellt das Buch auf den Tisch.]
+%[r|Er stellt das Buch auf den Tisch.]
 >>> Он ставит книгу на стол.

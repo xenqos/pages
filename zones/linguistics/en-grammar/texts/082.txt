@@ -5,38 +5,38 @@
 К наречиям места принадлежат:
 
 [!
-%[m|here] – здесь, тут
-%[m|there] – там
-%[m|where] – где? куда?
-%[m|inside] – внутри
-%[m|outside] – снаружи, извне
-%[m|above] – наверху, вверху
-%[m|below] – внизу, ниже
-%[m|somewhere] – где-то, куда-нибудь
-%[m|anywhere] – везде, где угодно
-%[m|nowhere] – нигде, никуда
-%[m|elsewhere] – где-то в другом месте
-%[m|far] – вдали, далеко
-%[m|northward] – к северу, на север
-%[m|forth] – вперёд, далее
+%[r|here] – здесь, тут
+%[r|there] – там
+%[r|where] – где? куда?
+%[r|inside] – внутри
+%[r|outside] – снаружи, извне
+%[r|above] – наверху, вверху
+%[r|below] – внизу, ниже
+%[r|somewhere] – где-то, куда-нибудь
+%[r|anywhere] – везде, где угодно
+%[r|nowhere] – нигде, никуда
+%[r|elsewhere] – где-то в другом месте
+%[r|far] – вдали, далеко
+%[r|northward] – к северу, на север
+%[r|forth] – вперёд, далее
 !]
 
 **Наречия места** характеризуют глагол и обозначают место действия:
 
 [!
-%[m|The children are playing **outside**.]
+%[r|The children are playing **outside**.]
 Дети играют снаружи.
 !]
 
 или его направление:
 
 [!
-%[m|Come **here** please.]
+%[r|Come **here** please.]
 Пожалуйста, подойдите сюда.
 !]
 
 [!
-%[m|The expedition is moving **eastward** at the moment.]
+%[r|The expedition is moving **eastward** at the moment.]
 В данный момент экспедиция движется на восток.
 !]
 
@@ -44,37 +44,37 @@
 **Somewhere** употребляется в утвердительных предложениях:
 
 [!
-%[m|I’ve lost my keys **somewhere**.]
+%[r|I’ve lost my keys **somewhere**.]
 Я где-то потерял свои ключи.
 !]
 
 **Anywhere** – в вопросительных и отрицательных:
 
 [!
-%[m|Did you see Johnny **anywhere**?]
+%[r|Did you see Johnny **anywhere**?]
 Ты где-нибудь видела Джонни?
 !]
 
 [!
-%[m|It’s so cold outside I did **not** go **anywhere**.]
+%[r|It’s so cold outside I did **not** go **anywhere**.]
 На улице так холодно, что я никуда не ходил.
 !]
 
 Глагол с наречием **nowhere** в основном используется только в кратких ответах типа:
 
 [!
-%[m|- Where did you travel on your vacations?]
+%[r|- Where did you travel on your vacations?]
 - Куда ты ездил в отпуск?
 !]
 
 [!
-%[m|- **Nowhere**.]
+%[r|- **Nowhere**.]
 - Никуда.
 !]
 
 В иных случаях используется конструкция **not … anywhere**:
 
 [!
-%[m|I cannot find Mary **anywhere**.]
+%[r|I cannot find Mary **anywhere**.]
 Я нигде не могу найти Мэри.
 !]

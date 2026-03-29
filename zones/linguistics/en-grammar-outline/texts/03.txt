@@ -3,38 +3,38 @@
 # Keyboard Symbol Names
 
 [|
-|.|%[m|period, full stop, dot]|
-|,|%[m|comma]|
-|:|%[m|colon] %[l|\ ˈkəulɔn \]|
-|;|%[m|semicolon] %[l|\ ˌsemɪˈkəulən \]|
-|!|%[m|exclamation mark, bang]|
-|?|%[m|question mark]|
-|*|%[m|star, asterisk] %[l|\ ˈæstərɪsk \]|
-|-|%[m|minus sign, dash, hyphen] %[l|\ ˈhaɪfən  \]|
-|+|%[m|plus sign]|
-|=|%[m|equal sign]|
-|_|%[m|underscore] %[l|\ ˌʌndəˈskɔː \]|
-|`|%[m|back quote, backtick]|
-|&apos;|%[m|single quote, apostrophe] %[l|\ əˈpɔstrəfɪ \]|
-|&quot;|%[m|double quote, quotation mark]|
-|~|%[m|tilde] %[l|\ ˈtildə \]|
-|@|%[m|at sign]|
-|#|%[m|number sign, hash, pound, sharp]|
-|$|%[m|dollar sign]|
-|%|%[m|percentage sign]|
-|&Hat;|%[m|power sign, caret] %[l|\ ˈkærət \]|
-|&|%[m|ampersand] %[l|\ ˈæmpəsænd \]|
-|&bsol;|%[m|back slash]|
-|/|%[m|forward slash]|
-|&verbar;|%[m|vertical bar, pipe]|
-|( )|%[m|round brackets, parentheses] %[l|\ pəˈrenθəsiːz \]|
-|&lsqb; &rsqb;|%[m|square brackets]|
-|&lbrace; &rbrace;|%[m|braces, curly brackets]|
-|< >|%[m|angle brackets, less/greater than]|
-|« »|%[m|angle quotes]|
+|.|%[r|period, full stop, dot]|
+|,|%[r|comma]|
+|:|%[r|colon] %[b|\ ˈkəulɔn \]|
+|;|%[r|semicolon] %[b|\ ˌsemɪˈkəulən \]|
+|!|%[r|exclamation mark, bang]|
+|?|%[r|question mark]|
+|*|%[r|star, asterisk] %[b|\ ˈæstərɪsk \]|
+|-|%[r|minus sign, dash, hyphen] %[b|\ ˈhaɪfən  \]|
+|+|%[r|plus sign]|
+|=|%[r|equal sign]|
+|_|%[r|underscore] %[b|\ ˌʌndəˈskɔː \]|
+|`|%[r|back quote, backtick]|
+|&apos;|%[r|single quote, apostrophe] %[b|\ əˈpɔstrəfɪ \]|
+|&quot;|%[r|double quote, quotation mark]|
+|~|%[r|tilde] %[b|\ ˈtildə \]|
+|@|%[r|at sign]|
+|#|%[r|number sign, hash, pound, sharp]|
+|$|%[r|dollar sign]|
+|%|%[r|percentage sign]|
+|&Hat;|%[r|power sign, caret] %[b|\ ˈkærət \]|
+|&|%[r|ampersand] %[b|\ ˈæmpəsænd \]|
+|&bsol;|%[r|back slash]|
+|/|%[r|forward slash]|
+|&verbar;|%[r|vertical bar, pipe]|
+|( )|%[r|round brackets, parentheses] %[b|\ pəˈrenθəsiːz \]|
+|&lsqb; &rsqb;|%[r|square brackets]|
+|&lbrace; &rbrace;|%[r|braces, curly brackets]|
+|< >|%[r|angle brackets, less/greater than]|
+|« »|%[r|angle quotes]|
 |]
 
 Brackets:
 
-%[m|left] - %[m|right]
-%[m|open] - %[m|closed]
+%[r|left] - %[r|right]
+%[r|open] - %[r|closed]

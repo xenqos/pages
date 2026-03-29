@@ -971,24 +971,18 @@ span[class^=clNav]:active
 /* Colors                                                                                        */
 /*-----------------------------------------------------------------------------------------------*/
 
-.m /* maroon  */  { color:  light-dark(#aa0000, #ffeb53); }
-.e /* emerald */  { color:  light-dark(#008800, #34a034); }
-.l /* lapis   */  { color:  light-dark(#0a5964, #3493a0); }
+.r /* red   */  { color:  light-dark(#aa0000, #d4bc5e); }
+.g /* green */  { color:  light-dark(#006100, #9accc3); }
+.b /* blue  */  { color:  light-dark(#4040c0, #c6a8d4 ); }
 
-.r /* red     */  { color:  light-dark(#ff0000, #ff0000); }
-.g /* green   */  { color:  light-dark(#00ff00, #00ff00); }
-.n /* navy    */  { color:  light-dark(#000080, #0000a0); }
-
-/*-----------------------------------------------------------------------------------------------*/
-
-.g0500
+.x
 {
   color:                light-dark(#0c6a78, #999999);
   margin:              -1.000rem 0.000rem 0.000rem 0.000rem;
   padding:              0.000rem 0.000rem 0.000rem 0.500rem;
 }
 
-.b1000
+.y
 {
   color:                light-dark(#000000, #cccccc);
   margin:               0.000rem 0.000rem 1.000rem 1.000rem;

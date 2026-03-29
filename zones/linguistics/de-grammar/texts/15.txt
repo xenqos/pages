@@ -4,9 +4,9 @@
 ---
 [|
 ¦¦s.¦p.¦
-|1|%[m|mein]                     |%[m|unser]|
-|2|%[m|dein ]                    |%[m|euer]|
-|3|%[m|sein], %[m|ihr], %[m|sein]|%[m|ihr]|
+|1|%[r|mein]                     |%[r|unser]|
+|2|%[r|dein ]                    |%[r|euer]|
+|3|%[r|sein], %[r|ihr], %[r|sein]|%[r|ihr]|
 |]
 ---
 ## mein
@@ -15,10 +15,10 @@
 !]
 [|
 ¦    ¦m.         ¦f.         ¦n.         ¦p.         ¦
-|nom.|%[m|mein  ]|%[m|meine ]|%[m|mein ] |%[m|meine ]|
-|gen.|%[m|meines]|%[m|meiner]|%[m|meines]|%[m|meiner]|
-|dat.|%[m|meinem]|%[m|meiner]|%[m|meinem]|%[m|meinen]|
-|akk.|%[m|meinen]|%[m|meine ]|%[m|mein  ]|%[m|meine ]|
+|nom.|%[r|mein  ]|%[r|meine ]|%[r|mein ] |%[r|meine ]|
+|gen.|%[r|meines]|%[r|meiner]|%[r|meines]|%[r|meiner]|
+|dat.|%[r|meinem]|%[r|meiner]|%[r|meinem]|%[r|meinen]|
+|akk.|%[r|meinen]|%[r|meine ]|%[r|mein  ]|%[r|meine ]|
 |]
 ---
 ## dein
@@ -27,10 +27,10 @@
 !]
 [|
 ¦    ¦m.         ¦f.         ¦n.         ¦p.         ¦
-|nom.|%[m|dein  ]|%[m|deine ]|%[m|dein ] |%[m|deine ]|
-|gen.|%[m|deines]|%[m|deiner]|%[m|deines]|%[m|deiner]|
-|dat.|%[m|deinem]|%[m|deiner]|%[m|deinem]|%[m|deinen]|
-|akk.|%[m|deinen]|%[m|deine ]|%[m|dein  ]|%[m|deine ]|
+|nom.|%[r|dein  ]|%[r|deine ]|%[r|dein ] |%[r|deine ]|
+|gen.|%[r|deines]|%[r|deiner]|%[r|deines]|%[r|deiner]|
+|dat.|%[r|deinem]|%[r|deiner]|%[r|deinem]|%[r|deinen]|
+|akk.|%[r|deinen]|%[r|deine ]|%[r|dein  ]|%[r|deine ]|
 |]
 ---
 ## sein %[dm|]
@@ -39,10 +39,10 @@
 !]
 [|
 ¦    ¦m.         ¦f.         ¦n.         ¦p.         ¦
-|nom.|%[m|sein  ]|%[m|seine ]|%[m|sein ] |%[m|seine ]|
-|gen.|%[m|seines]|%[m|seiner]|%[m|seines]|%[m|seiner]|
-|dat.|%[m|seinem]|%[m|seiner]|%[m|seinem]|%[m|seinen]|
-|akk.|%[m|seinen]|%[m|seine ]|%[m|sein  ]|%[m|seine ]|
+|nom.|%[r|sein  ]|%[r|seine ]|%[r|sein ] |%[r|seine ]|
+|gen.|%[r|seines]|%[r|seiner]|%[r|seines]|%[r|seiner]|
+|dat.|%[r|seinem]|%[r|seiner]|%[r|seinem]|%[r|seinen]|
+|akk.|%[r|seinen]|%[r|seine ]|%[r|sein  ]|%[r|seine ]|
 |]
 ---
 ## ihr %[df|]
@@ -51,10 +51,10 @@
 !]
 [|
 ¦    ¦m.        ¦f.        ¦n.        ¦p.        ¦
-|nom.|%[m|ihr  ]|%[m|ihre ]|%[m|ihr  ]|%[m|ihre ]|
-|gen.|%[m|ihres]|%[m|ihrer]|%[m|ihres]|%[m|ihrer]|
-|dat.|%[m|ihrem]|%[m|ihrer]|%[m|ihrem]|%[m|ihren]|
-|akk.|%[m|ihren]|%[m|ihre ]|%[m|ihr  ]|%[m|ihre ]|
+|nom.|%[r|ihr  ]|%[r|ihre ]|%[r|ihr  ]|%[r|ihre ]|
+|gen.|%[r|ihres]|%[r|ihrer]|%[r|ihres]|%[r|ihrer]|
+|dat.|%[r|ihrem]|%[r|ihrer]|%[r|ihrem]|%[r|ihren]|
+|akk.|%[r|ihren]|%[r|ihre ]|%[r|ihr  ]|%[r|ihre ]|
 |]
 ---
 ## sein %[dn|]
@@ -63,10 +63,10 @@
 !]
 [|
 ¦    ¦m.         ¦f.         ¦n.         ¦p.         ¦
-|nom.|%[m|sein  ]|%[m|seine] |%[m|sein  ]|%[m|seine ]|
-|akk.|%[m|seines]|%[m|seiner]|%[m|seines]|%[m|seiner]|
-|dat.|%[m|seinem]|%[m|seiner]|%[m|seinem]|%[m|seinen]|
-|gen.|%[m|seinen]|%[m|seine] |%[m|sein  ]|%[m|seine ]|
+|nom.|%[r|sein  ]|%[r|seine] |%[r|sein  ]|%[r|seine ]|
+|akk.|%[r|seines]|%[r|seiner]|%[r|seines]|%[r|seiner]|
+|dat.|%[r|seinem]|%[r|seiner]|%[r|seinem]|%[r|seinen]|
+|gen.|%[r|seinen]|%[r|seine] |%[r|sein  ]|%[r|seine ]|
 |]
 ---
 ## unser
@@ -75,10 +75,10 @@
 !]
 [|
 ¦    ¦m.            ¦f.            ¦n.            ¦p.            ¦
-|nom.|%[m|unser    ]|%[m|uns(e)re ]|%[m|unser    ]|%[m|uns(e)re ]|
-|gen.|%[m|uns(e)res]|%[m|uns(e)rer]|%[m|uns(e)res]|%[m|uns(e)rer]|
-|dat.|%[m|uns(e)rem]|%[m|uns(e)rer]|%[m|uns(e)rem]|%[m|uns(e)ren]|
-|akk.|%[m|uns(e)ren]|%[m|uns(e)re ]|%[m|unser    ]|%[m|uns(e)re ]|
+|nom.|%[r|unser    ]|%[r|uns(e)re ]|%[r|unser    ]|%[r|uns(e)re ]|
+|gen.|%[r|uns(e)res]|%[r|uns(e)rer]|%[r|uns(e)res]|%[r|uns(e)rer]|
+|dat.|%[r|uns(e)rem]|%[r|uns(e)rer]|%[r|uns(e)rem]|%[r|uns(e)ren]|
+|akk.|%[r|uns(e)ren]|%[r|uns(e)re ]|%[r|unser    ]|%[r|uns(e)re ]|
 |]
 ---
 ## euer
@@ -87,10 +87,10 @@
 !]
 [|
 ¦    ¦m.           ¦f.           ¦n.           ¦p.           ¦
-|nom.|%[m|euer    ]|%[m|eu(e)re ]|%[m|euer    ]|%[m|eu(e)re ]|
-|gen.|%[m|eu(e)res]|%[m|eu(e)rer]|%[m|eu(e)res]|%[m|eu(e)rer]|
-|dat.|%[m|eu(e)rem]|%[m|eu(e)rer]|%[m|eu(e)rem]|%[m|eu(e)ren]|
-|akk.|%[m|eu(e)ren]|%[m|eu(e)re ]|%[m|euer    ]|%[m|eu(e)re ]|
+|nom.|%[r|euer    ]|%[r|eu(e)re ]|%[r|euer    ]|%[r|eu(e)re ]|
+|gen.|%[r|eu(e)res]|%[r|eu(e)rer]|%[r|eu(e)res]|%[r|eu(e)rer]|
+|dat.|%[r|eu(e)rem]|%[r|eu(e)rer]|%[r|eu(e)rem]|%[r|eu(e)ren]|
+|akk.|%[r|eu(e)ren]|%[r|eu(e)re ]|%[r|euer    ]|%[r|eu(e)re ]|
 |]
 ---
 ## ihr
@@ -99,9 +99,9 @@
 !]
 [|
 ¦    ¦m.        ¦f.        ¦n.        ¦p.        ¦
-|nom.|%[m|ihr  ]|%[m|ihre ]|%[m|ihr  ]|%[m|ihre ]|
-|gen.|%[m|ihres]|%[m|ihrer]|%[m|ihres]|%[m|ihrer]|
-|dat.|%[m|ihrem]|%[m|ihrer]|%[m|ihrem]|%[m|ihren]|
-|akk.|%[m|ihren]|%[m|ihre ]|%[m|ihr  ]|%[m|ihre ]|
+|nom.|%[r|ihr  ]|%[r|ihre ]|%[r|ihr  ]|%[r|ihre ]|
+|gen.|%[r|ihres]|%[r|ihrer]|%[r|ihres]|%[r|ihrer]|
+|dat.|%[r|ihrem]|%[r|ihrer]|%[r|ihrem]|%[r|ihren]|
+|akk.|%[r|ihren]|%[r|ihre ]|%[r|ihr  ]|%[r|ihre ]|
 |]
 ---

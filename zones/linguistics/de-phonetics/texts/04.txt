@@ -5,76 +5,76 @@
 ## гласный в закрытом слоге
 
 [|
-|%[m|und]   |и       |
-|%[m|finden]|находить|
-|%[m|kalt]  |холодный|
+|%[r|und]   |и       |
+|%[r|finden]|находить|
+|%[r|kalt]  |холодный|
 |]
 
 ## перед двумя и более согласными
 
 [|
-|%[m|die Puppe]|кукла    |
-|%[m|schnell]  |быстрый  |
-|%[m|hoffen]   |надеяться|
+|%[r|die Puppe]|кукла    |
+|%[r|schnell]  |быстрый  |
+|%[r|hoffen]   |надеяться|
 |]
 
-## в ударных суффиксах -%[m|ur], -%[m|ot]
+## в ударных суффиксах -%[r|ur], -%[r|ot]
 
 [|
-|%[m|die Kultur]|культура|
-|%[m|der Pilot] | пилот  |
+|%[r|die Kultur]|культура|
+|%[r|der Pilot] | пилот  |
 |]
 
-## перед буквосочетаниями типа -%[m|ch]-, -%[m|sch]-, -%[m|ck]-
+## перед буквосочетаниями типа -%[r|ch]-, -%[r|sch]-, -%[r|ck]-
 
-## перед буквой %[m|x]
+## перед буквой %[r|x]
 
 [|
-|%[m|die Hexe]|ведьма|
-|%[m|die Axt] |топор |
+|%[r|die Hexe]|ведьма|
+|%[r|die Axt] |топор |
 |]
 
-## в префиксах %[m|ent]-, %[m|emp]-, %[m|miss]-
+## в префиксах %[r|ent]-, %[r|emp]-, %[r|miss]-
 
 [|
-|%[m|entfernen]    |удалять   |
-|%[m|empfangen]    |принимать |
-|%[m|missverstehen]|непонимать|
+|%[r|entfernen]    |удалять   |
+|%[r|empfangen]    |принимать |
+|%[r|missverstehen]|непонимать|
 |]
 
-## в суффиксах -%[m|in], -%[m|nis], -%[m|ismus], -%[m|lich], -%[m|ik], -%[m|ig], -%[m|um], -%[m|isch]
+## в суффиксах -%[r|in], -%[r|nis], -%[r|ismus], -%[r|lich], -%[r|ik], -%[r|ig], -%[r|um], -%[r|isch]
 
 [|
-|%[m|die Lehrerin] |учительница|
-|%[m|das Geheimnis]|тайна      |
-|%[m|der Tourismus]|туризм     |
-|%[m|freundlich]   |дружелюбный|
-|%[m|dir Musik]    |музыка     |
-|%[m|wichtig]      |важный     |
-|%[m|das Zentrum]  |центр      |
-|%[m|typisch]      |типичный   |
+|%[r|die Lehrerin] |учительница|
+|%[r|das Geheimnis]|тайна      |
+|%[r|der Tourismus]|туризм     |
+|%[r|freundlich]   |дружелюбный|
+|%[r|dir Musik]    |музыка     |
+|%[r|wichtig]      |важный     |
+|%[r|das Zentrum]  |центр      |
+|%[r|typisch]      |типичный   |
 |]
 
-## перед буквосочетаниями -%[m|pf], -%[m|tz], -%[m|nk], -%[m|ck], -%[m|ch], -%[m|sch]
+## перед буквосочетаниями -%[r|pf], -%[r|tz], -%[r|nk], -%[r|ck], -%[r|ch], -%[r|sch]
 
 [|
-|%[m|der Kopf]  |голова|
-|%[m|die Katze] |кошка |
-|%[m|trank]     |выпить|
-|%[m|der Zucker]|сахар |
-|%[m|das Buch]  |книга |
-|%[m|der Fisch] |рыба  |
+|%[r|der Kopf]  |голова|
+|%[r|die Katze] |кошка |
+|%[r|trank]     |выпить|
+|%[r|der Zucker]|сахар |
+|%[r|das Buch]  |книга |
+|%[r|der Fisch] |рыба  |
 |]
 
 __ck = kk__
 __tz = ttz__
 
-## %[m|i], %[m|e], %[m|ä], %[m|ö], %[m|eu] перед -%[m|ch]
+## %[r|i], %[r|e], %[r|ä], %[r|ö], %[r|eu] перед -%[r|ch]
 
 [|
-|%[m|das Licht]  |свет     |
-|%[m|echt]       |настоящий|
-|%[m|der Wächter]|охранник |
-|%[m|möchte]     |я хотел  |
-|%[m|leuchten]   |светить  |
+|%[r|das Licht]  |свет     |
+|%[r|echt]       |настоящий|
+|%[r|der Wächter]|охранник |
+|%[r|möchte]     |я хотел  |
+|%[r|leuchten]   |светить  |
 |]

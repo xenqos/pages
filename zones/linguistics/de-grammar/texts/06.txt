@@ -5,47 +5,47 @@
 # Terminologie
 
 [!
-%[m|das Nomen] - %[n|das Substantiv]
+%[r|das Nomen] - %[b|das Substantiv]
 !]
 
 [|
-|%[m|das Nomen]     |существительное|
-|%[m|das Konkretum] |вещественное   |
-|%[m|das Abstraktum]|абстрактное    |
+|%[r|das Nomen]     |существительное|
+|%[r|das Konkretum] |вещественное   |
+|%[r|das Abstraktum]|абстрактное    |
 |]
 
 [!
-%[m|das Genus] - %[n|das Geschlecht]
+%[r|das Genus] - %[b|das Geschlecht]
 !]
 
 [|
-|%[m|das Genus]     |род    |
-|%[m|das Masculinum]|мужской|
-|%[m|das Femininum] |женский|
-|%[m|das Neutrum]   |средний|
+|%[r|das Genus]     |род    |
+|%[r|das Masculinum]|мужской|
+|%[r|das Femininum] |женский|
+|%[r|das Neutrum]   |средний|
 |]
 
 [|
-|%[n|maskulin]|%[n|männlich]|
-|%[n|feminin ]|%[n|weiblich]|
-|%[n|neutral ]|%[n|sächlich]|
+|%[b|maskulin]|%[b|männlich]|
+|%[b|feminin ]|%[b|weiblich]|
+|%[b|neutral ]|%[b|sächlich]|
 |]
 
 [|
-|%[m|der Numerus] |%[n|die Zahl]    |число        |
-|%[m|der Singular]|%[n|die Einzahl] |единствнное  |
-|%[m|der Plural]  |%[n|die Mehrzahl]|множественное|
+|%[r|der Numerus] |%[b|die Zahl]    |число        |
+|%[r|der Singular]|%[b|die Einzahl] |единствнное  |
+|%[r|der Plural]  |%[b|die Mehrzahl]|множественное|
 |]
 
 [!
-%[m|der Kasus] - %[n|der Fall]
+%[r|der Kasus] - %[b|der Fall]
 !]
 
 [|
-|%[m|der Kasus]    |падеж       |
-|%[m|der Nominativ]|именительный|
-|%[m|der Genitiv]  |родительный |
-|%[m|der Dativ]    |дательный   |
-|%[m|der Akkusativ]|винительный |
+|%[r|der Kasus]    |падеж       |
+|%[r|der Nominativ]|именительный|
+|%[r|der Genitiv]  |родительный |
+|%[r|der Dativ]    |дательный   |
+|%[r|der Akkusativ]|винительный |
 |]
 

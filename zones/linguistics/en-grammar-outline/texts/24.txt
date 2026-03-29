@@ -6,15 +6,15 @@
 
 [|
 ¦Type ¦Example ¦
-|%[m|quantity]|three    |
-|%[m|quality ]|beautiful|
-|%[m|size    ]|little   |
-|%[m|age     ]|old      |
-|%[m|shape   ]|round    |
-|%[m|color   ]|red      |
-|%[m|origin  ]|Italian  |
-|%[m|material]|metal    |
-|%[m|purpose ]|sleeping |
+|%[r|quantity]|three    |
+|%[r|quality ]|beautiful|
+|%[r|size    ]|little   |
+|%[r|age     ]|old      |
+|%[r|shape   ]|round    |
+|%[r|color   ]|red      |
+|%[r|origin  ]|Italian  |
+|%[r|material]|metal    |
+|%[r|purpose ]|sleeping |
 |]
 
 [!

@@ -22,7 +22,7 @@ my @books =
 , '0|dao/taiji-fuzhongwen|Тай Чи - Fu Zhong Wen'
 , '0|dao/taiji-moylinshin|Тай Чи - Moy Lin Shin'
 
-, '0|linguistics/bg-grammar|Граматика'
+, '1|linguistics/bg-grammar|Граматика'
 , '0|linguistics/bg-words|Думи'
 , '0|linguistics/bg-phrases|Фрази'
 , '0|linguistics/bg-verbs|Глаголи'
@@ -287,11 +287,11 @@ sub get_markup
   # If Then Elsif Else
   #---------------------------------------------------------
 
-  $text_content =~ s/^if\n(.*?)\n/<span class='l'>IF<\/span>\n<div class='if-then-else'>$1<\/div>\n/mg;
-  $text_content =~ s/^then\n(.*?)\n/<span class='l'>THEN<\/span>\n<div class='if-then-else'>$1<\/div>\n/mg;
-  $text_content =~ s/^elseif\n(.*?)\n/<span class='l'>ELSE IF<\/span>\n<div class='if-then-else'>$1<\/div>\n/mg;
-  $text_content =~ s/^else\n(.*?)\n/<span class='l'>ELSE<\/span>\n<div class='if-then-else'>$1<\/div>\n/mg;
-  $text_content =~ s/^endif\n/<div class='l'>ENDIF<\/div>\n\n\n/mg;
+  $text_content =~ s/^if\n(.*?)\n/<span class='b'>IF<\/span>\n<div class='if-then-else'>$1<\/div>\n/mg;
+  $text_content =~ s/^then\n(.*?)\n/<span class='b'>THEN<\/span>\n<div class='if-then-else'>$1<\/div>\n/mg;
+  $text_content =~ s/^elseif\n(.*?)\n/<span class='b'>ELSE IF<\/span>\n<div class='if-then-else'>$1<\/div>\n/mg;
+  $text_content =~ s/^else\n(.*?)\n/<span class='b'>ELSE<\/span>\n<div class='if-then-else'>$1<\/div>\n/mg;
+  $text_content =~ s/^endif\n/<div class='b'>ENDIF<\/div>\n\n\n/mg;
 
   #---------------------------------------------------------
   # Bold and Italic
@@ -336,10 +336,10 @@ sub get_markup
   # Linguistics Styles
   #---------------------------------------------------------
 
-  $text_content =~ s/^\|(.*?)\|(.*?)\|(.*?)$/<p class='m'>$1<\/p><p class='g0500'>$2<\/p><p class='b1000'>$3<\/p>\n/mg;
-  $text_content =~ s/^\|\|(.*?)\|(.*?)\|(.*?)$/<p class='m'>$1<\/p><p class='g0500'>$2<\/p><p class='b1000'>$3<\/p>\n/mg;
-  $text_content =~ s/\|\|(.*?)\n(.*?)\n/<p class='m'>$1<\/p><p class='b1000'>$2<\/p>\n/mg;
-  $text_content =~ s/^\|(.*?)\/(.*?)\/(\s*)\|(.*?)\|(.*?)$/<p class='m'>$1 <span class='f'>$2<\/span><\/p><p class='g0500'>$4<\/p><p class='b1000'>$5<\/p>\n/mg;
+  $text_content =~ s/^\|(.*?)\|(.*?)\|(.*?)$/<p class='r'>$1<\/p><p class='x'>$2<\/p><p class='y'>$3<\/p>\n/mg;
+  $text_content =~ s/^\|\|(.*?)\|(.*?)\|(.*?)$/<p class='r'>$1<\/p><p class='x'>$2<\/p><p class='y'>$3<\/p>\n/mg;
+  $text_content =~ s/\|\|(.*?)\n(.*?)\n/<p class='r'>$1<\/p><p class='y'>$2<\/p>\n/mg;
+  $text_content =~ s/^\|(.*?)\/(.*?)\/(\s*)\|(.*?)\|(.*?)$/<p class='r'>$1 <span class='f'>$2<\/span><\/p><p class='x'>$4<\/p><p class='y'>$5<\/p>\n/mg;
 
   #---------------------------------------------------------
   # Mathjax

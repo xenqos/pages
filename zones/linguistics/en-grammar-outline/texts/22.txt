@@ -5,9 +5,9 @@
 ### Simple
 
 [|
-|%[m|numerator   ]|числитель  |
-|%[m|denominator ]|знаменатель|
-|%[m|fraction bar]|черта      |
+|%[r|numerator   ]|числитель  |
+|%[r|denominator ]|знаменатель|
+|%[r|fraction bar]|черта      |
 |]
 
 [!
@@ -16,19 +16,19 @@
 !]
 
 [|
-|1/2  |%[m|one half              ]|
-|1/3  |%[m|one third             ]|
-|2/3  |%[m|two thirds            ]|
-|3/8  |%[m|three eights          ]|
-|1/12 |%[m|one-twelfth           ]|
-|1/7  |%[m|one-seventh           ]|
-|5/6  |%[m|five-sixths           ]|
-|8/10 |%[m|eight-tenths          ]|
-|15/16|%[m|fifteen sixteenths    ]|
-|1 1/2|%[m|one and a half        ]|
-|5 1/3|%[m|five and one third    ]|
-|6 1/4|%[m|six and a quarter     ]|
-|7 5/8|%[m|seven and five eighths]|
+|1/2  |%[r|one half              ]|
+|1/3  |%[r|one third             ]|
+|2/3  |%[r|two thirds            ]|
+|3/8  |%[r|three eights          ]|
+|1/12 |%[r|one-twelfth           ]|
+|1/7  |%[r|one-seventh           ]|
+|5/6  |%[r|five-sixths           ]|
+|8/10 |%[r|eight-tenths          ]|
+|15/16|%[r|fifteen sixteenths    ]|
+|1 1/2|%[r|one and a half        ]|
+|5 1/3|%[r|five and one third    ]|
+|6 1/4|%[r|six and a quarter     ]|
+|7 5/8|%[r|seven and five eighths]|
 |]
 
 [!
@@ -37,18 +37,18 @@
 !]
 
 [|
-|1/4 mile    |%[m|one quarter of a mile     ]|
-|5 1/8 pounds|%[m|five and one eighth pounds]|
+|1/4 mile    |%[r|one quarter of a mile     ]|
+|5 1/8 pounds|%[r|five and one eighth pounds]|
 |]
 
 ### Decimal
 
 [|
-|0.1   |%[m|one tenth                   ]|
-|0.2   |%[m|two tenths                  ]|
-|0.6   |%[m|nought point six            ]|
-|8.2   |%[m|eight point two             ]|
-|0.75  |%[m|point seventy five          ]|
-|0.002 |%[m|point oh oh two             ]|
-|3.1416|%[m|three point one four one six]|
+|0.1   |%[r|one tenth                   ]|
+|0.2   |%[r|two tenths                  ]|
+|0.6   |%[r|nought point six            ]|
+|8.2   |%[r|eight point two             ]|
+|0.75  |%[r|point seventy five          ]|
+|0.002 |%[r|point oh oh two             ]|
+|3.1416|%[r|three point one four one six]|
 |]

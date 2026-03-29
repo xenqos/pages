@@ -8,72 +8,72 @@
 десятки и единицы разделяются дефисом
 !]
 
-%[m|twenty-one]
-%[m|seventy-three]
+%[r|twenty-one]
+%[r|seventy-three]
 
 [!
 тысячи, сотни и десятки, единицы разделяются and
 !]
 
-%[m|one hundred and one]
-%[m|three hundred and eighty-six]
-%[m|four thousand and thirty-four]
-%[m|six thousand seven hundred and thirty-nine]
+%[r|one hundred and one]
+%[r|three hundred and eighty-six]
+%[r|four thousand and thirty-four]
+%[r|six thousand seven hundred and thirty-nine]
 
 [!
 сотни, тысячи итд. в единственом числе
 !]
 
 [|
-|200  |%[m|two hundred]   |
-|3,000|%[m|three thousand]|
-|4,000|%[m|four million]  |
+|200  |%[r|two hundred]   |
+|3,000|%[r|three thousand]|
+|4,000|%[r|four million]  |
 |]
 
 [!
 целая и дробная части разделяются точкой
 !]
 
-%[m|67.14]
-%[m|48.32]
+%[r|67.14]
+%[r|48.32]
 
 [!
 разряды разделяются запятой
 !]
 
-%[m|1,467]
-%[m|345,845,234]
+%[r|1,467]
+%[r|345,845,234]
 
 [!
 между 1,000 и 2,000 числа произносятся сотнями
 !]
 
 [|
-|1,103|%[m|eleven hundred three]        |
-|1,225|%[m|twelve hundred twenty-five]  |
-|1,637|%[m|sixteen hundred thirty-seven]|
-|1,892|%[m|eighteen hundred ninety-two] |
+|1,103|%[r|eleven hundred three]        |
+|1,225|%[r|twelve hundred twenty-five]  |
+|1,637|%[r|sixteen hundred thirty-seven]|
+|1,892|%[r|eighteen hundred ninety-two] |
 |]
 
 [!
 телефонные номера, номера кредитных карт и пр. читаются по цифрам
 !]
 
-89 568 90786 &ensp; %[m|eight nine five six eight nine oh seven eight six]
+89 568 90786 &ensp; %[r|eight nine five six eight nine oh seven eight six]
 
 [!
 произношение чисел в случае labels
 !]
 
 [|
-|101|%[m|a hundred and one            ]|%[m|one-oh-one     ]|
-|109|%[m|a hundred and nine           ]|%[m|one-oh-nine    ]|
-|110|%[m|a hundred and ten            ]|%[m|one-one-oh     ]|
-|117|%[m|a hundred and seventeen      ]|%[m|one-one-seven  ]|
-|120|%[m|a hundred and twenty         ]|%[m|one-two-zero   ]|
-|152|%[m|a hundred and fifty-two      ]|%[m|one-five-two   ]|
-|208|%[m|two hundred and eight        ]|%[m|two-oh-eight   ]|
-|394|%[m|three hundred and ninety-four]|%[m|three-nine-four]|
+|101|%[r|a hundred and one            ]|%[r|one-oh-one     ]|
+|109|%[r|a hundred and nine           ]|%[r|one-oh-nine    ]|
+|110|%[r|a hundred and ten            ]|%[r|one-one-oh     ]|
+|117|%[r|a hundred and seventeen      ]|%[r|one-one-seven  ]|
+|120|%[r|a hundred and twenty         ]|%[r|one-two-zero   ]|
+|152|%[r|a hundred and fifty-two      ]|%[r|one-five-two   ]|
+|208|%[r|two hundred and eight        ]|%[r|two-oh-eight   ]|
+|394|%[r|three hundred and ninety-four]|%[r|three-nine-four]|
 |]
 
 [!
@@ -81,10 +81,10 @@
 !]
 
 [|
-|1,200,000    |%[m|1.2 million]|%[m|one point two million    ]|
-|3,000,000    |%[m|3 million  ]|%[m|three million            ]|
-|250,000,000  |%[m|250 million]|%[m|two hundred fifty million]|
-|6,400,000,000|%[m|6.4 billion]|%[m|six point four billion   ]|
+|1,200,000    |%[r|1.2 million]|%[r|one point two million    ]|
+|3,000,000    |%[r|3 million  ]|%[r|three million            ]|
+|250,000,000  |%[r|250 million]|%[r|two hundred fifty million]|
+|6,400,000,000|%[r|6.4 billion]|%[r|six point four billion   ]|
 |]
 
 [!
@@ -92,9 +92,9 @@
 !]
 
 [|
-|%[m|one time   ]|%[m|once  ]|
-|%[m|two times  ]|%[m|twice ]|
-|%[m|three times]|%[m|thrice]|
+|%[r|one time   ]|%[r|once  ]|
+|%[r|two times  ]|%[r|twice ]|
+|%[r|three times]|%[r|thrice]|
 |]
 
 [!
@@ -102,31 +102,31 @@
 !]
 
 [|
-|×1  |%[m|singular   ]|%[m|solitary ]|%[m|one-off   ]|
-|×2  |%[m|twofold    ]|%[m|double   ]|%[m|duplicate ]|
-|×3  |%[m|threefold  ]|%[m|triple   ]|%[m|triplicate]|
-|×4  |%[m|fourfold   ]|%[m|quadruple]|               |
-|×5  |%[m|fivefold   ]|              |               |
-|×6  |%[m|sixfold    ]|              |               |
-|×7  |%[m|sevenfold  ]|              |               |
-|×8  |%[m|eightfold  ]|              |               |
-|×9  |%[m|ninefold   ]|              |               |
-|×10 |%[m|tenfold    ]|              |               |
-|×100|%[m|hundredfold]|              |               |
+|×1  |%[r|singular   ]|%[r|solitary ]|%[r|one-off   ]|
+|×2  |%[r|twofold    ]|%[r|double   ]|%[r|duplicate ]|
+|×3  |%[r|threefold  ]|%[r|triple   ]|%[r|triplicate]|
+|×4  |%[r|fourfold   ]|%[r|quadruple]|               |
+|×5  |%[r|fivefold   ]|              |               |
+|×6  |%[r|sixfold    ]|              |               |
+|×7  |%[r|sevenfold  ]|              |               |
+|×8  |%[r|eightfold  ]|              |               |
+|×9  |%[r|ninefold   ]|              |               |
+|×10 |%[r|tenfold    ]|              |               |
+|×100|%[r|hundredfold]|              |               |
 |]
 
 [!
 Cardinal Numerals - без артикля; существительное первое, числительное второе.
 !]
 
-%[m|chapter one ]
-%[m|part two    ]
-%[m|lesson three]
+%[r|chapter one ]
+%[r|part two    ]
+%[r|lesson three]
 
 [!
 Ordinal Numerals - с артиклем; числительное первое, существительное второе.
 !]
 
-%[m|the first chapter]
-%[m|the second part]
-%[m|the third lesson]
+%[r|the first chapter]
+%[r|the second part]
+%[r|the third lesson]

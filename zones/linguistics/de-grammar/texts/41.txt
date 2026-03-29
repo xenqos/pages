@@ -6,37 +6,37 @@
 
 [|
 ¦¦s.¦p.¦
-|1|-%[l|te]  |-%[l|ten]|
-|2|-%[l|test]|-%[l|tet]|
-|3|-%[l|te]  |-%[l|ten]|
+|1|-%[b|te]  |-%[b|ten]|
+|2|-%[b|test]|-%[b|tet]|
+|3|-%[b|te]  |-%[b|ten]|
 |]
-%[m|sagen] - говорить
+%[r|sagen] - говорить
 [|
-|ich|%[m|sag]%[l|te]  |
-|du |%[m|sag]%[l|test]|
-|er |%[m|sag]%[l|te]  |
+|ich|%[r|sag]%[b|te]  |
+|du |%[r|sag]%[b|test]|
+|er |%[r|sag]%[b|te]  |
 |]
 [|
-|wir|%[m|sag]%[l|ten]|
-|ihr|%[m|sag]%[l|tet]|
-|sie|%[m|sag]%[l|ten]|
+|wir|%[r|sag]%[b|ten]|
+|ihr|%[r|sag]%[b|tet]|
+|sie|%[r|sag]%[b|ten]|
 |]
 
 ## Unregelmäßige
 
 [|
-|1|-%[l|] |-%[l|en]|
-|2|-%[l|st]|-%[l|t] |
-|3|-%[l|] |-%[l|en]|
+|1|-%[b|] |-%[b|en]|
+|2|-%[b|st]|-%[b|t] |
+|3|-%[b|] |-%[b|en]|
 |]
-%[m|singen] - петь
+%[r|singen] - петь
 [|
-|ich|%[m|sang]%[l|]  |
-|du |%[m|sang]%[l|st]|
-|er |%[m|sang]%[l|]  |
+|ich|%[r|sang]%[b|]  |
+|du |%[r|sang]%[b|st]|
+|er |%[r|sang]%[b|]  |
 |]
 [|
-|wir|%[m|sang]%[l|en]|
-|ihr|%[m|sang]%[l|t] |
-|sie|%[m|sang]%[l|en]|
+|wir|%[r|sang]%[b|en]|
+|ihr|%[r|sang]%[b|t] |
+|sie|%[r|sang]%[b|en]|
 |]

@@ -3,83 +3,83 @@
 # Cardinal
 
 [|
-|0 |%[m|nought]|
+|0 |%[r|nought]|
 |]
 
 [|
-|0 |%[m|zero ]|
-|1 |%[m|one  ]|
-|2 |%[m|two  ]|
-|3 |%[m|three]|
-|4 |%[m|four ]|
-|5 |%[m|five ]|
-|6 |%[m|six  ]|
-|7 |%[m|seven]|
-|8 |%[m|eight]|
-|9 |%[m|nine ]|
-|10|%[m|ten  ]|
+|0 |%[r|zero ]|
+|1 |%[r|one  ]|
+|2 |%[r|two  ]|
+|3 |%[r|three]|
+|4 |%[r|four ]|
+|5 |%[r|five ]|
+|6 |%[r|six  ]|
+|7 |%[r|seven]|
+|8 |%[r|eight]|
+|9 |%[r|nine ]|
+|10|%[r|ten  ]|
 |]
 
 [|
-|11|%[m|eleven   ]|
-|12|%[m|twelve   ]|
-|13|%[m|thirteen ]|
-|14|%[m|fourteen ]|
-|15|%[m|fifteen  ]|
-|16|%[m|sixteen  ]|
-|17|%[m|seventeen]|
-|18|%[m|eighteen ]|
-|19|%[m|nineteen ]|
+|11|%[r|eleven   ]|
+|12|%[r|twelve   ]|
+|13|%[r|thirteen ]|
+|14|%[r|fourteen ]|
+|15|%[r|fifteen  ]|
+|16|%[r|sixteen  ]|
+|17|%[r|seventeen]|
+|18|%[r|eighteen ]|
+|19|%[r|nineteen ]|
 |]
 
 [|
-|21|%[m|twenty-one  ]|
-|22|%[m|twenty-two  ]|
-|23|%[m|twenty-three]|
-|24|%[m|twenty-four ]|
-|25|%[m|twenty-five ]|
-|26|%[m|twenty-six  ]|
-|27|%[m|twenty-seven]|
-|28|%[m|twenty-eight]|
-|29|%[m|twenty-nine ]|
+|21|%[r|twenty-one  ]|
+|22|%[r|twenty-two  ]|
+|23|%[r|twenty-three]|
+|24|%[r|twenty-four ]|
+|25|%[r|twenty-five ]|
+|26|%[r|twenty-six  ]|
+|27|%[r|twenty-seven]|
+|28|%[r|twenty-eight]|
+|29|%[r|twenty-nine ]|
 |]
 
 [|
-|20|%[m|twenty ]|
-|30|%[m|thirty ]|
-|40|%[m|fourty ]|
-|50|%[m|fifty  ]|
-|60|%[m|sixty  ]|
-|70|%[m|seventy]|
-|80|%[m|eighty ]|
-|90|%[m|ninty  ]|
+|20|%[r|twenty ]|
+|30|%[r|thirty ]|
+|40|%[r|fourty ]|
+|50|%[r|fifty  ]|
+|60|%[r|sixty  ]|
+|70|%[r|seventy]|
+|80|%[r|eighty ]|
+|90|%[r|ninty  ]|
 |]
 
 [|
-|100|%[m|one hundred  ]|
-|200|%[m|two hundred  ]|
-|300|%[m|three hundred]|
-|400|%[m|four hundred ]|
-|500|%[m|five hundred ]|
-|600|%[m|six hundred  ]|
-|700|%[m|seven hundred]|
-|800|%[m|eight hundred]|
-|900|%[m|nine hundred ]|
+|100|%[r|one hundred  ]|
+|200|%[r|two hundred  ]|
+|300|%[r|three hundred]|
+|400|%[r|four hundred ]|
+|500|%[r|five hundred ]|
+|600|%[r|six hundred  ]|
+|700|%[r|seven hundred]|
+|800|%[r|eight hundred]|
+|900|%[r|nine hundred ]|
 |]
 
 [|
-|1,000|%[m|one thousand  ]|
-|2,000|%[m|two thousand  ]|
-|3,000|%[m|three thousand]|
-|4,000|%[m|four thousand ]|
-|5,000|%[m|five thousand ]|
-|6,000|%[m|six thousand  ]|
-|7,000|%[m|seven thousand]|
-|8,000|%[m|eight thousand]|
-|9,000|%[m|nine thousand ]|
+|1,000|%[r|one thousand  ]|
+|2,000|%[r|two thousand  ]|
+|3,000|%[r|three thousand]|
+|4,000|%[r|four thousand ]|
+|5,000|%[r|five thousand ]|
+|6,000|%[r|six thousand  ]|
+|7,000|%[r|seven thousand]|
+|8,000|%[r|eight thousand]|
+|9,000|%[r|nine thousand ]|
 |]
 
 [|
-|1,000,000    |%[m|one million]|
-|1,000,000,000|%[m|one billion]|
+|1,000,000    |%[r|one million]|
+|1,000,000,000|%[r|one billion]|
 |]

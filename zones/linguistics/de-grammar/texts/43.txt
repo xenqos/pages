@@ -4,30 +4,30 @@
 
 ## Haben + Partizip
 
-%[m|sagen] - говорить
+%[r|sagen] - говорить
 [|
-|ich|%[m|hatte]  |%[m|gesagt]|
-|du |%[m|hattest]|%[m|gesagt]|
-|er |%[m|hatte]  |%[m|gesagt]|
+|ich|%[r|hatte]  |%[r|gesagt]|
+|du |%[r|hattest]|%[r|gesagt]|
+|er |%[r|hatte]  |%[r|gesagt]|
 |]
 [|
-|wir|%[m|hatten] |%[m|gesagt]|
-|ihr|%[m|hattet] |%[m|gesagt]|
-|sie|%[m|hatten] |%[m|gesagt]|
+|wir|%[r|hatten] |%[r|gesagt]|
+|ihr|%[r|hattet] |%[r|gesagt]|
+|sie|%[r|hatten] |%[r|gesagt]|
 |]
 
 ## Sein + Partizip
 
-%[m|rennen] - бежать
+%[r|rennen] - бежать
 [|
-|ich|%[m|war]  |%[m|gerannt]|
-|du |%[m|warst]|%[m|gerannt]|
-|er |%[m|war]  |%[m|gerannt]|
+|ich|%[r|war]  |%[r|gerannt]|
+|du |%[r|warst]|%[r|gerannt]|
+|er |%[r|war]  |%[r|gerannt]|
 |]
 [|
-|wir|%[m|waren]|%[m|gerannt]|
-|ihr|%[m|wart] |%[m|gerannt]|
-|sie|%[m|waren]|%[m|gerannt]|
+|wir|%[r|waren]|%[r|gerannt]|
+|ihr|%[r|wart] |%[r|gerannt]|
+|sie|%[r|waren]|%[r|gerannt]|
 |]
 
 <!--
@@ -38,27 +38,27 @@
 #### Haben + Partizip
 
 [|
-|ich|%[m|hätte]  |%[m|gesagt]|
-|du |%[m|hättest]|%[m|gesagt]|
-|er |%[m|hätte]  |%[m|gesagt]|
+|ich|%[r|hätte]  |%[r|gesagt]|
+|du |%[r|hättest]|%[r|gesagt]|
+|er |%[r|hätte]  |%[r|gesagt]|
 |]
 [|
-|wir|%[m|hätten] |%[m|gesagt]|
-|ihr|%[m|hättet] |%[m|gesagt]|
-|sie|%[m|hätten] |%[m|gesagt]|
+|wir|%[r|hätten] |%[r|gesagt]|
+|ihr|%[r|hättet] |%[r|gesagt]|
+|sie|%[r|hätten] |%[r|gesagt]|
 |]
 
 #### Sein + Partizip
 
 [|
-|ich|%[m|wäre]  |%[m|gerannt]|
-|du |%[m|wär](%[m|e])%[m|st]|%[m|gerannt]|
-|er |%[m|wäre]  |%[m|gerannt]|
+|ich|%[r|wäre]  |%[r|gerannt]|
+|du |%[r|wär](%[r|e])%[r|st]|%[r|gerannt]|
+|er |%[r|wäre]  |%[r|gerannt]|
 |]
 [|
-|wir|%[m|wären]|%[m|gerannt]|
-|ihr|%[m|wär](%[m|e])%[m|t] |%[m|gerannt]|
-|sie|%[m|wären]|%[m|gerannt]|
+|wir|%[r|wären]|%[r|gerannt]|
+|ihr|%[r|wär](%[r|e])%[r|t] |%[r|gerannt]|
+|sie|%[r|wären]|%[r|gerannt]|
 |]
 
 ## Imperativ
@@ -66,30 +66,30 @@
 ### Präsens
 
 [|
-|%[m|sei  ]|du |
-|%[m|seien]|wir|
-|%[m|seid ]|ihr|
-|%[m|seien]|Sie|
+|%[r|sei  ]|du |
+|%[r|seien]|wir|
+|%[r|seid ]|ihr|
+|%[r|seien]|Sie|
 |]
 
 ## Partizip
 
 ### Präsens
 
-%[m|seiend]
+%[r|seiend]
 
 ### Perfekt
 
-%[m|gewesen]
+%[r|gewesen]
 
 
 ## Infinitiv
 
 ### Präsens
 
-%[m|sein]
+%[r|sein]
 
 ### Perfekt
 
-%[m|gewesen sein]
+%[r|gewesen sein]
 -->

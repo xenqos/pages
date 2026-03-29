@@ -3,63 +3,63 @@
 # Time
 
 [|
-|%[m|now            ]|сейчас              |
-|%[m|then           ]|затем               |
-|%[m|ever           ]|постоянно           |
-|%[m|never          ]|никогда             |
-|%[m|forever        ]|навсегда            |
-|%[m|always         ]|всегда              |
-|%[m|again          ]|снова               |
-|%[m|today          ]|сегодня             |
-|%[m|yesterday      ]|вчера               |
-|%[m|tomorrow       ]|завтра              |
-|%[m|long           ]|долго               |
-|%[m|soon           ]|скоро               |
-|%[m|late           ]|поздно              |
-|%[m|sooner         ]|раньше              |
-|%[m|later          ]|позже               |
-|%[m|ago            ]|назад               |
-|%[m|early          ]|рано                |
-|%[m|lately         ]|в последнее время   |
-|%[m|recently       ]|недавно             |
-|%[m|before         ]|до                  |
-|%[m|after          ]|после               |
-|%[m|tonight        ]|этой ночью          |
-|%[m|frequently     ]|часто               |
-|%[m|rarely         ]|редко               |
-|%[m|currently      ]|в настоящее время   |
-|%[m|already        ]|уже                 |
-|%[m|yet            ]|ещё                 |
-|%[m|previously     ]|ранее, в прошлый раз|
-|%[m|whenever       ]|всякий раз, когда   |
-|%[m|just           ]|только что          |
-|%[m|seldom         ]|редко               |
-|%[m|usually        ]|обычно              |
-|%[m|sometimes      ]|иногда              |
-|%[m|finally        ]|наконец             |
-|%[m|quickly        ]|быстро              |
-|%[m|suddenly       ]|вдруг               |
-|%[m|immediately    ]|немедленно          |
-|%[m|meanwhile      ]|тем временем        |
-|%[m|occasionally   ]|иногда              |
-|%[m|initially      ]|изначально          |
-|%[m|shortly        ]|коротко, вскоре     |
-|%[m|gradually      ]|постепенно          |
-|%[m|ultimately     ]|в конечном счете    |
-|%[m|regularly      ]|регулярно           |
-|%[m|eventually     ]|в конечном итоге    |
-|%[m|rapidly        ]|быстро              |
-|%[m|newly          ]|вновь, только что   |
-|%[m|primarily      ]|в первую очередь    |
-|%[m|constantly     ]|постоянно           |
-|%[m|originally     ]|изначально          |
-|%[m|often          ]|часто               |
-|%[m|still          ]|всё ещё             |
-|%[m|since          ]|с тех пор           |
-|%[m|once           ]|один раз            |
-|%[m|twice          ]|два раза            |
+|%[r|now            ]|сейчас              |
+|%[r|then           ]|затем               |
+|%[r|ever           ]|постоянно           |
+|%[r|never          ]|никогда             |
+|%[r|forever        ]|навсегда            |
+|%[r|always         ]|всегда              |
+|%[r|again          ]|снова               |
+|%[r|today          ]|сегодня             |
+|%[r|yesterday      ]|вчера               |
+|%[r|tomorrow       ]|завтра              |
+|%[r|long           ]|долго               |
+|%[r|soon           ]|скоро               |
+|%[r|late           ]|поздно              |
+|%[r|sooner         ]|раньше              |
+|%[r|later          ]|позже               |
+|%[r|ago            ]|назад               |
+|%[r|early          ]|рано                |
+|%[r|lately         ]|в последнее время   |
+|%[r|recently       ]|недавно             |
+|%[r|before         ]|до                  |
+|%[r|after          ]|после               |
+|%[r|tonight        ]|этой ночью          |
+|%[r|frequently     ]|часто               |
+|%[r|rarely         ]|редко               |
+|%[r|currently      ]|в настоящее время   |
+|%[r|already        ]|уже                 |
+|%[r|yet            ]|ещё                 |
+|%[r|previously     ]|ранее, в прошлый раз|
+|%[r|whenever       ]|всякий раз, когда   |
+|%[r|just           ]|только что          |
+|%[r|seldom         ]|редко               |
+|%[r|usually        ]|обычно              |
+|%[r|sometimes      ]|иногда              |
+|%[r|finally        ]|наконец             |
+|%[r|quickly        ]|быстро              |
+|%[r|suddenly       ]|вдруг               |
+|%[r|immediately    ]|немедленно          |
+|%[r|meanwhile      ]|тем временем        |
+|%[r|occasionally   ]|иногда              |
+|%[r|initially      ]|изначально          |
+|%[r|shortly        ]|коротко, вскоре     |
+|%[r|gradually      ]|постепенно          |
+|%[r|ultimately     ]|в конечном счете    |
+|%[r|regularly      ]|регулярно           |
+|%[r|eventually     ]|в конечном итоге    |
+|%[r|rapidly        ]|быстро              |
+|%[r|newly          ]|вновь, только что   |
+|%[r|primarily      ]|в первую очередь    |
+|%[r|constantly     ]|постоянно           |
+|%[r|originally     ]|изначально          |
+|%[r|often          ]|часто               |
+|%[r|still          ]|всё ещё             |
+|%[r|since          ]|с тех пор           |
+|%[r|once           ]|один раз            |
+|%[r|twice          ]|два раза            |
 |]
 
 [!
-%[m|already] - удивление
+%[r|already] - удивление
 !]

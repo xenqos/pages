@@ -5,21 +5,21 @@
 #### вопросительные
 
 [|
-|%[m|who      ]|кто (subject) |
-|%[m|whom     ]|кто (object)  |
-|%[m|what     ]|что           |
-|%[m|which    ]|который       |
-|%[m|whose    ]|чей           |
-|%[m|whoever  ]|кто угодно    |
-|%[m|whatever ]|что угодно    |
-|%[m|whichever]|который угодно|
+|%[r|who      ]|кто (subject) |
+|%[r|whom     ]|кто (object)  |
+|%[r|what     ]|что           |
+|%[r|which    ]|который       |
+|%[r|whose    ]|чей           |
+|%[r|whoever  ]|кто угодно    |
+|%[r|whatever ]|что угодно    |
+|%[r|whichever]|который угодно|
 |]
 
 [|
-|%[m|which]|объекты известны   |
-|%[m|what ]|объекты не известны|
+|%[r|which]|объекты известны   |
+|%[r|what ]|объекты не известны|
 |]
 
 [!
-%[m|whoever], %[m|whichever], %[m|whatever] - изумление, негодование
+%[r|whoever], %[r|whichever], %[r|whatever] - изумление, негодование
 !]

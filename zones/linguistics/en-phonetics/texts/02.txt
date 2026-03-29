@@ -6,22 +6,22 @@
 
 ### high
 [|
-|%[m|feet]|%[m|fit]|%[m|food]|%[m|foot]|
-|%[l|fiːt]|%[l|fɪt]|%[l|fuːd]|%[l|fʊt] |
+|%[r|feet]|%[r|fit]|%[r|food]|%[r|foot]|
+|%[b|fiːt]|%[b|fɪt]|%[b|fuːd]|%[b|fʊt] |
 |]
 *[vowels-01.mp3]
 
 ### mid
 [|
-|%[m|fed]|%[m|fur]|%[m|the]|%[m|for]|
-|%[l|fed]|%[l|fɜː]|%[l|ðə ]|%[l|fɔː]|
+|%[r|fed]|%[r|fur]|%[r|the]|%[r|for]|
+|%[b|fed]|%[b|fɜː]|%[b|ðə ]|%[b|fɔː]|
 |]
 *[vowels-02.mp3]
 
 ### low
 [|
-|%[m|cat]|%[m|cut]|%[m|cart]|%[m|cot]|
-|%[l|kæt]|%[l|kət]|%[l|kɑːt]|%[l|kɔt]|
+|%[r|cat]|%[r|cut]|%[r|cart]|%[r|cot]|
+|%[b|kæt]|%[b|kət]|%[b|kɑːt]|%[b|kɔt]|
 |]
 *[vowels-03.mp3]
 
@@ -40,8 +40,8 @@ Vowel length is not relevant.
 !]
 
 [|
-|Long  before|%[l|b]|%[l|d]|%[l|g]|%[l|v]|%[l|z]|%[l|ʒ]|%[l|ʤ]|%[l|ð]|
-|Short before|%[l|p]|%[l|t]|%[l|k]|%[l|f]|%[l|s]|%[l|ʃ]|%[l|ʧ]|%[l|θ]|
+|Long  before|%[b|b]|%[b|d]|%[b|g]|%[b|v]|%[b|z]|%[b|ʒ]|%[b|ʤ]|%[b|ð]|
+|Short before|%[b|p]|%[b|t]|%[b|k]|%[b|f]|%[b|s]|%[b|ʃ]|%[b|ʧ]|%[b|θ]|
 |]
 
 ## Labialization
@@ -49,22 +49,22 @@ Vowel length is not relevant.
 @[labialization.jpg]
 
 [|
-|%[l|iː]|Unrounded, stretched         |
-|%[l|ɪ ]|Unrounded, slightly stretched|
-|%[l|e ]|Unrounded, not stretched     |
-|%[l|æ ]|Unrounded, open wide         |
+|%[b|iː]|Unrounded, stretched         |
+|%[b|ɪ ]|Unrounded, slightly stretched|
+|%[b|e ]|Unrounded, not stretched     |
+|%[b|æ ]|Unrounded, open wide         |
 |]
 
 [|
-|%[l|ɜː]|Slightly rounded             |
-|%[l|ə ]|Unrounded, neutral, relaxed  |
+|%[b|ɜː]|Slightly rounded             |
+|%[b|ə ]|Unrounded, neutral, relaxed  |
 |]
 
 [|
-|%[l|uː]|Very rounded                 |
-|%[l|ʊ ]|Moderately rounded           |
-|%[l|ɔː]|Rounded                      |
-|%[l|ɑː]|Unrounded, open wide         |
+|%[b|uː]|Very rounded                 |
+|%[b|ʊ ]|Moderately rounded           |
+|%[b|ɔː]|Rounded                      |
+|%[b|ɑː]|Unrounded, open wide         |
 |]
 
 ## Diphthongs
@@ -74,8 +74,8 @@ Vowel length is not relevant.
 ## Consonants
 
 [|
-|voiced   |%[l|b]|%[l|d]|%[l|g]|%[l|v]|%[l|z]|%[l|ʒ]|%[l|ʤ]|%[l|ð]|
-|voiceless|%[l|p]|%[l|t]|%[l|k]|%[l|f]|%[l|s]|%[l|ʃ]|%[l|ʧ]|%[l|θ]|
+|voiced   |%[b|b]|%[b|d]|%[b|g]|%[b|v]|%[b|z]|%[b|ʒ]|%[b|ʤ]|%[b|ð]|
+|voiceless|%[b|p]|%[b|t]|%[b|k]|%[b|f]|%[b|s]|%[b|ʃ]|%[b|ʧ]|%[b|θ]|
 |]
 
 [|
@@ -85,11 +85,11 @@ Vowel length is not relevant.
 
 [|
 |     |Labial  |Dental  |Alveolar|Post<br>alveolar|Palatal |Velar  |Glottal |
-|Stop|%[l|b p]||%[l|d t]|||%[l|g k]||
-|Fricative|%[l|v f]|%[l|ʧ θ]|%[l|z s]|%[l|ʒ ʃ]|||%[l|h]|
-|Affricate||||%[l|ʤ ʧ]||||
-|Nasal|%[l|m]||%[l|n]|||%[l|ŋ]||
-|Approximant|||%[l|l]|%[l|r]|%[l|j]|%[l|w]||
+|Stop|%[b|b p]||%[b|d t]|||%[b|g k]||
+|Fricative|%[b|v f]|%[b|ʧ θ]|%[b|z s]|%[b|ʒ ʃ]|||%[b|h]|
+|Affricate||||%[b|ʤ ʧ]||||
+|Nasal|%[b|m]||%[b|n]|||%[b|ŋ]||
+|Approximant|||%[b|l]|%[b|r]|%[b|j]|%[b|w]||
 |]
 
 ## Labiograms
