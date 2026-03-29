@@ -955,15 +955,18 @@ span[class^=clNav]
   background-size:      cover;
   cursor:               pointer;
   display:              inline-block;
-  margin:               0.000rem 0.750rem 0.000rem 0.750rem;
-  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
-  height:               1.000rem;
-  width:                1.000rem;
+  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
+  padding:              0.000rem 0.750rem 0.000rem 0.750rem;
+  height:               1.100rem;
+  width:                1.100rem;
+  min-width:            1.100rem;
+  max-width:            1.100rem;
   background-position:  center center;
   background-repeat:    no-repeat;
-  background-size:      1.000rem 1.000rem;
+  background-size:      1.100rem 1.100rem;
   position:             relative;
   top:                  0.150rem;
+  touch-action:         none;
 }
 
 span[class^=clNav]:active
