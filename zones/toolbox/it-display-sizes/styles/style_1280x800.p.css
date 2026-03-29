@@ -19,7 +19,7 @@ body
 
 .clTest1
 {
-  font:        normal 52px Calibri, sans-serif;
+  font:        normal 52px Calibri;
   margin:        00px 00px 00px 00px;
   padding:      00px 00px 00px 00px;
   text-align:      right;
@@ -27,7 +27,7 @@ body
 
 .clTest2
 {
-  font:        normal 22px Calibri, sans-serif;
+  font:        normal 22px Calibri;
   margin:        00px 00px 00px 00px;
   padding:      00px 00px 00px 00px;
   text-align:      left;

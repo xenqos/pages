@@ -10,8 +10,7 @@
   font-weight:          100;
   font-style:           normal;
   font-display:         swap;
-  src:                  local('Roboto'),
-                        url('./fonts/Roboto-100.woff2') format('woff2');
+  src:                  url('./fonts/Roboto-100.woff2') format('woff2');
 }
 
 @font-face
@@ -20,8 +19,7 @@
   font-weight:          100;
   font-style:           italic;
   font-display:         swap;
-  src:                  local('Roboto'),
-                        url('./fonts/Roboto-100i.woff2') format('woff2');
+  src:                  url('./fonts/Roboto-100i.woff2') format('woff2');
 }
 
 @font-face
@@ -30,8 +28,7 @@
   font-weight:          200;
   font-style:           normal;
   font-display:         swap;
-  src:                  local('Roboto'),
-                        url('./fonts/Roboto-200.woff2') format('woff2');
+  src:                  url('./fonts/Roboto-200.woff2') format('woff2');
 }
 
 @font-face
@@ -40,8 +37,7 @@
   font-weight:          200;
   font-style:           italic;
   font-display:         swap;
-  src:                  local('Roboto'),
-                        url('./fonts/Roboto-200i.woff2') format('woff2');
+  src:                  url('./fonts/Roboto-200i.woff2') format('woff2');
 }
 
 @font-face
@@ -50,8 +46,7 @@
   font-weight:          300;
   font-style:           normal;
   font-display:         swap;
-  src:                  local('Roboto'),
-                        url('./fonts/Roboto-300.woff2') format('woff2');
+  src:                  url('./fonts/Roboto-300.woff2') format('woff2');
 }
 
 @font-face
@@ -60,8 +55,7 @@
   font-weight:          300;
   font-style:           italic;
   font-display:         swap;
-  src:                  local('Roboto'),
-                        url('./fonts/Roboto-300i.woff2') format('woff2');
+  src:                  url('./fonts/Roboto-300i.woff2') format('woff2');
 }
 
 @font-face
@@ -70,8 +64,7 @@
   font-weight:          400;
   font-style:           normal;
   font-display:         swap;
-  src:                  local('Roboto'),
-                        url('./fonts/Roboto-400.woff2') format('woff2');
+  src:                  url('./fonts/Roboto-400.woff2') format('woff2');
 }
 
 @font-face
@@ -80,8 +73,7 @@
   font-weight:          400;
   font-style:           italic;
   font-display:         swap;
-  src:                  local('Roboto'),
-                        url('./fonts/Roboto-400i.woff2') format('woff2');
+  src:                  url('./fonts/Roboto-400i.woff2') format('woff2');
 }
 
 @font-face
@@ -90,8 +82,7 @@
   font-weight:          500;
   font-style:           normal;
   font-display:         swap;
-  src:                  local('Roboto'),
-                        url('./fonts/Roboto-500.woff2') format('woff2');
+  src:                  url('./fonts/Roboto-500.woff2') format('woff2');
 }
 
 @font-face
@@ -100,8 +91,7 @@
   font-weight:          500;
   font-style:           italic;
   font-display:         swap;
-  src:                  local('Roboto'),
-                        url('./fonts/Roboto-500i.woff2') format('woff2');
+  src:                  url('./fonts/Roboto-500i.woff2') format('woff2');
 }
 
 @font-face
@@ -110,8 +100,7 @@
   font-weight:          600;
   font-style:           normal;
   font-display:         swap;
-  src:                  local('Roboto'),
-                        url('./fonts/Roboto-600.woff2') format('woff2');
+  src:                  url('./fonts/Roboto-600.woff2') format('woff2');
 }
 
 @font-face
@@ -120,8 +109,7 @@
   font-weight:          600;
   font-style:           italic;
   font-display:         swap;
-  src:                  local('Roboto'),
-                        url('./fonts/Roboto-600i.woff2') format('woff2');
+  src:                  url('./fonts/Roboto-600i.woff2') format('woff2');
 }
 
 @font-face
@@ -130,8 +118,7 @@
   font-weight:          700;
   font-style:           normal;
   font-display:         swap;
-  src:                  local('Roboto'),
-                        url('./fonts/Roboto-700.woff2') format('woff2');
+  src:                  url('./fonts/Roboto-700.woff2') format('woff2');
 }
 
 @font-face
@@ -140,8 +127,7 @@
   font-weight:          700;
   font-style:           italic;
   font-display:         swap;
-  src:                  local('Roboto'),
-                        url('./fonts/Roboto-700i.woff2') format('woff2');
+  src:                  url('./fonts/Roboto-700i.woff2') format('woff2');
 }
 
 @font-face
@@ -150,8 +136,7 @@
   font-weight:          800;
   font-style:           normal;
   font-display:         swap;
-  src:                  local('Roboto'),
-                        url('./fonts/Roboto-800.woff2') format('woff2');
+  src:                  url('./fonts/Roboto-800.woff2') format('woff2');
 }
 
 @font-face
@@ -160,8 +145,7 @@
   font-weight:          800;
   font-style:           italic;
   font-display:         swap;
-  src:                  local('Roboto'),
-                        url('./fonts/Roboto-800i.woff2') format('woff2');
+  src:                  url('./fonts/Roboto-800i.woff2') format('woff2');
 }
 
 @font-face
@@ -170,8 +154,7 @@
   font-weight:          900;
   font-style:           normal;
   font-display:         swap;
-  src:                  local('Roboto'),
-                        url('./fonts/Roboto-900.woff2') format('woff2');
+  src:                  url('./fonts/Roboto-900.woff2') format('woff2');
 }
 
 @font-face
@@ -180,8 +163,7 @@
   font-weight:          900;
   font-style:           italic;
   font-display:         swap;
-  src:                  local('Roboto'),
-                        url('./fonts/Roboto-900i.woff2') format('woff2');
+  src:                  url('./fonts/Roboto-900i.woff2') format('woff2');
 }
 
 /*-----------------------------------------------------------------------------------------------*/
@@ -202,7 +184,7 @@ body
 {
   background-color:     light-dark(#dbdbdb, #111111);
   color:                light-dark(#000000, #ffffff);
-  font-family:          'Roboto', sans-serif !important;
+  font-family:          'Roboto';
   font-style:           normal;
   font-size:            100%;
   font-weight:          normal;
@@ -647,15 +629,14 @@ p
 
 b
 {
-  font-family:          sans-serif;
-  font-weight:          700;
+  font-weight:          500;
 }
 
 i
 {
-  font-family:          sans-serif;
   font-style:           italic;
 }
+
 
 br
 {

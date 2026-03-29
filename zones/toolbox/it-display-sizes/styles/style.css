@@ -6,7 +6,7 @@ body
   background:      #ffffff;
   color:        #000000;
 
-  font-family:    Calibri, sans-serif;
+  font-family:    Calibri;
   font-size:      135%;
   font-style:      normal;
   font-weight:    normal;
@@ -28,7 +28,7 @@ body
   .clTest1
   {
     color:      #000000;
-    font-family:  'Droid Sans', sans-serif;
+    font-family:  'Droid Sans';
 /*    font-size:    1em; */
     font-size:    20px;
   }
@@ -56,9 +56,9 @@ body
 .clTest2
 {
   font-size:      1em;
-  font-family:    Calibri, sans-serif;
+  font-family:    Calibri;
 
-/*  font:        normal 20px Calibri, sans-serif; */
+/*  font:        normal 20px Calibri; */
   margin:        00px 00px 00px 00px;
   padding:      00px 00px 00px 00px;
   text-align:      left;
