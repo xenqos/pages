@@ -407,12 +407,21 @@ h1, h2, h3, h4, h5, h6
   padding:              0.000rem 0.000rem 0.000rem 0.000rem;
 }
 
-h1 { color: light-dark(#995f46, #e65c5c); font-size: 1.400rem; font-weight: 600; }
+/*
+h1 { color: light-dark(#995f46, #e8a07a); font-size: 1.400rem; font-weight: 600; }
 h2 { color: light-dark(#367b36, #59b359); font-size: 1.200rem; font-weight: 600; }
 h3 { color: light-dark(#4d6db0, #6d92f0); font-size: 1.120rem; font-weight: 600; }
 h4 { color: light-dark(#7a4f8c, #CC7ACC); font-size: 1.040rem; font-weight: 600; }
 h5 { color: light-dark(#9e7a1a, #CCC866); font-size: 1.040rem; font-weight: 600; }
 h6 { color: light-dark(#2e7a72, #66CCCC); font-size: 1.040rem; font-weight: 600; }
+*/
+
+h1 { color: light-dark(#995f46, #e65c5c); font-size: 1.400rem; font-weight: 600; }
+h2 { color: light-dark(#367b36, #6ed96e); font-size: 1.200rem; font-weight: 600; }
+h3 { color: light-dark(#4d6db0, #8eb0ff); font-size: 1.120rem; font-weight: 600; }
+h4 { color: light-dark(#7a4f8c, #c49eff); font-size: 1.040rem; font-weight: 600; }
+h5 { color: light-dark(#9e7a1a, #f4c96b); font-size: 1.040rem; font-weight: 600; }
+h6 { color: light-dark(#2e7a72, #5ed9cc); font-size: 1.040rem; font-weight: 600; }
 
 /*-----------------------------------------------------------------------------------------------*/
 /* Links                                                                                         */
@@ -998,9 +1007,9 @@ span[class^=clNav]:active
 /* Colors                                                                                        */
 /*-----------------------------------------------------------------------------------------------*/
 
-.r /* red   */  { color:  light-dark(#aa0000, #d4bc5e); }
-.g /* green */  { color:  light-dark(#006100, #9accc3); }
-.b /* blue  */  { color:  light-dark(#4040c0, #c6a8d4); }
+.r /* red   */  { color:  light-dark(#aa0000, #f05d5d); }
+.g /* green */  { color:  light-dark(#006100, #4caf50); }
+.b /* blue  */  { color:  light-dark(#4040c0, #6a6aff); }
 
 .x
 {
