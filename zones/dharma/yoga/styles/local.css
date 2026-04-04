@@ -2,7 +2,7 @@
 
 .dh
 {
-  color:                #214778;
+  color:                light-dark(#214778, #9bc8ff);
   display:              inline-block;
   font-size:            2.000rem;
   line-height:          3.000rem;
@@ -13,7 +13,7 @@
 
 .d
 {
-  color:                #214778;
+  color:                light-dark(#214778, #9bc8ff);
   font-size:            1.200rem;
   margin:               0.600rem 0.000rem 0.000rem 0.000rem;
   padding:              0.000rem 0.000rem 0.000rem 0.000rem;
