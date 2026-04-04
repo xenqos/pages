@@ -6,7 +6,7 @@
   color:                light-dark(#007800, #89c889);
 */
   display:              inline-block;
-  font-size:            1.200rem;
+  font-size:            1.300rem;
   margin:               1.000rem 0.000rem 0.000rem 0.000rem;
   padding:              0.000rem 0.000rem 0.000rem 0.000rem;
   word-wrap:            break-word !important;
@@ -17,9 +17,14 @@
 /*
   color:                light-dark(#007800, #89c889);
 */
-  font-size:            1.200rem;
+  font-size:            1.300rem;
   margin:               0.600rem 0.000rem 0.000rem 0.000rem;
   padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+}
+
+.r
+{
+  color:                light-dark(#000000, #ffffff);
 }
 
 h2
