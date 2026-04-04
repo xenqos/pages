@@ -10,11 +10,11 @@ use feature 'state';
 my @books =
 (
   '1|dharma/principles|Принципы'
-, '1|dharma/questions|Вопросы'
-, '1|dharma/kriya|Крия'
+, '0|dharma/questions|Вопросы'
+, '0|dharma/kriya|Крия'
 , '1|dharma/yoga|Йога-сутры'
-, '1|dharma/mantra|Мантры'
-, '1|dharma/samhita|Самхиты'
+, '0|dharma/mantra|Мантры'
+, '0|dharma/samhita|Самхиты'
 , '0|dharma/upanishad|Упанишады'
 
 , '0|dao/daodejing|Дао Дэ Цзин'
@@ -22,7 +22,7 @@ my @books =
 , '0|dao/taiji-fuzhongwen|Тай Чи - Fu Zhong Wen'
 , '0|dao/taiji-moylinshin|Тай Чи - Moy Lin Shin'
 
-, '1|linguistics/bg-grammar|Граматика'
+, '0|linguistics/bg-grammar|Граматика'
 , '0|linguistics/bg-words|Думи'
 , '0|linguistics/bg-phrases|Фрази'
 , '0|linguistics/bg-verbs|Глаголи'
