@@ -2,9 +2,9 @@
 
 .clChapterName
 {
-  color:                light-dark(#4d6db0, #8eb0ff);
+  color:                light-dark(#000000, #ffffff);
   font-size:            1.120rem; font-weight: 600;
-  margin:               0.000rem 0.000rem 0.000rem 2.000rem;
+  margin:               0.000rem 0.000rem 1.600rem 2.000rem;
   padding:              0.000rem 0.000rem 0.000rem 0.000rem;
 }
 
