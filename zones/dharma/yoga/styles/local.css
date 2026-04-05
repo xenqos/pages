@@ -1,10 +1,15 @@
 /*-----------------------------------------------------------------------------------------------*/
 
-.dh
+.clChapterName
 {
-/*
-  color:                light-dark(#007800, #89c889);
-*/
+  color:                light-dark(#4d6db0, #8eb0ff);
+  font-size:            1.120rem; font-weight: 600;
+  margin:               0.000rem 0.000rem 0.000rem 2.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+}
+
+.h
+{
   display:              inline-block;
   font-size:            1.300rem;
   margin:               1.000rem 0.000rem 0.000rem 0.000rem;
@@ -14,9 +19,6 @@
 
 .d
 {
-/*
-  color:                light-dark(#007800, #89c889);
-*/
   font-size:            1.300rem;
   margin:               0.600rem 0.000rem 0.000rem 0.000rem;
   padding:              0.000rem 0.000rem 0.000rem 0.000rem;
@@ -25,11 +27,6 @@
 .r
 {
   color:                light-dark(#000000, #ffffff);
-}
-
-h2
-{
-  margin-top:           2.800rem;
 }
 
 /*-----------------------------------------------------------------------------------------------*/
