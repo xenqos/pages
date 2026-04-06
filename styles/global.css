@@ -399,22 +399,14 @@ div[id^='idDivArticle']
 /* Headers                                                                                       */
 /*-----------------------------------------------------------------------------------------------*/
 
-h1, h2, h3, h4, h5, h6
-{
-  color:                light-dark(#777777, #777777);
-  font-weight:          500;
-  margin:               1.500rem 0.000rem 1.000rem 0.000rem;
-  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
-}
 
+/*
 h1 { color: light-dark(#995f46, #c49480); font-size: 1.400rem; font-weight: 600; }
 h2 { color: light-dark(#367b36, #5eb85e); font-size: 1.200rem; font-weight: 600; }
 h3 { color: light-dark(#4d6db0, #93a6cf); font-size: 1.120rem; font-weight: 600; }
 h4 { color: light-dark(#7a4f8c, #ab86ba); font-size: 1.040rem; font-weight: 600; }
-h5 { color: light-dark(#9e7a1a, #dfb33e); font-size: 1.040rem; font-weight: 600; }
-h6 { color: light-dark(#2e7a72, #50bdb1); font-size: 1.040rem; font-weight: 600; }
+*/
 
-/*
 h1
 {
   color:                light-dark(#000000, #ffffff);
@@ -458,7 +450,15 @@ h4
   letter-spacing:       0.062rem;
   text-transform:       none;
 }
-*/
+
+h5 { color: light-dark(#9e7a1a, #dfb33e); font-size: 1.040rem; font-weight: 600; }
+h6 { color: light-dark(#2e7a72, #50bdb1); font-size: 1.040rem; font-weight: 600; }
+
+h5, h6
+{
+  margin:               1.500rem 0.000rem 1.000rem 0.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+}
 
 /*-----------------------------------------------------------------------------------------------*/
 /* Links                                                                                         */
