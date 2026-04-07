@@ -1,0 +1,32 @@
+/*-----------------------------------------------------------------------------------------------*/
+
+.clChapterName
+{
+  color:                light-dark(#000000, #ffffff);
+  font-size:            1.120rem; font-weight: 600;
+  margin:               0.000rem 0.000rem 1.600rem 2.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+}
+
+.h
+{
+  display:              inline-block;
+  font-size:            1.300rem;
+  margin:               1.000rem 0.000rem 0.000rem 0.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+  word-wrap:            break-word !important;
+}
+
+.d
+{
+  font-size:            1.300rem;
+  margin:               0.600rem 0.000rem 0.000rem 0.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+}
+
+.r
+{
+  color:                light-dark(#000000, #ffffff);
+}
+
+/*-----------------------------------------------------------------------------------------------*/
