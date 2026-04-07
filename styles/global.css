@@ -1058,6 +1058,8 @@ span[class^=clNav]:active
 .x
 {
   color:                light-dark(#0c6a78, #999999);
+  color:                light-dark(#000000, #ffffff);
+  font-weight:          300;
   margin:              -1.000rem 0.000rem 0.000rem 0.000rem;
   padding:              0.000rem 0.000rem 0.000rem 0.500rem;
 }
