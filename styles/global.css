@@ -1048,6 +1048,13 @@ span[class^=clNav]:active
 .g /* green */  { color:  light-dark(#006100, #c3ffc3); }
 .b /* blue  */  { color:  light-dark(#4040c0, #c3c3ff); }
 
+
+.r /* red   */
+{
+  color:                light-dark(#000000, #ffffff);
+  font-weight:          500;
+}
+
 .x
 {
   color:                light-dark(#0c6a78, #999999);
