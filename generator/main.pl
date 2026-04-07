@@ -13,7 +13,7 @@ my @books =
 , '0|dharma/questions|Вопросы'
 , '0|dharma/kriya|Крия'
 , '1|dharma/yoga|Йога-сутры'
-, '1|dharma/sankhya|Санкхья-карика'
+, '0|dharma/sankhya|Санкхья-карика'
 , '0|dharma/mantra|Мантры'
 , '0|dharma/samhita|Самхиты'
 , '0|dharma/upanishad|Упанишады'
