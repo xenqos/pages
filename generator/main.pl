@@ -12,10 +12,10 @@ my @books =
   '1|dharma/principles|Принципы'
 , '0|dharma/questions|Вопросы'
 , '0|dharma/kriya|Крия'
-, '1|dharma/yoga|Йога-сутры'
+, '0|dharma/yoga|Йога-сутры'
 , '0|dharma/sankhya|Санкхья-карика'
 , '0|dharma/mantra|Мантры'
-, '0|dharma/samhita|Самхиты'
+, '1|dharma/samhita|Самхиты'
 , '0|dharma/upanishad|Упанишады'
 
 , '0|dao/daodejing|Дао Дэ Цзин'
@@ -546,6 +546,7 @@ sub get_pages
     if    ($files_count > 999) { $number_format = '04'; }
     elsif ($files_count > 99)  { $number_format = '03'; }
     elsif ($files_count > 9)   { $number_format = '02'; }
+    elsif ($files_count <= 9)  { $number_format = '1';  }
 
     $page_curr = sprintf("%${number_format}d", $page_curr);
     $page_prev = sprintf("%${number_format}d", $page_prev);
