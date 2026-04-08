@@ -475,10 +475,20 @@ a:visited
   text-decoration:      none;
 }
 
-a:hover
+a:hover:not([href*="javascript:"]):not(#idTopbarNavigation a)::after
 {
   color:                light-dark(#dd0000, #dd0000);
   text-decoration:      none;
+}
+
+a:not([href*="javascript:"]):not(#idTopbarNavigation a)::after,
+a:visited:not([href*="javascript:"]):not(#idTopbarNavigation a)::after
+{
+  color:                light-dark(#aaaaaa, #aaaaaa);
+  content:              '🢂';
+  font-size:            0.800em;
+  font-weight:          700;
+  margin-left:          0.400em;
 }
 
 .clIndex a,
