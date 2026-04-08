@@ -57,6 +57,7 @@ my @books =
 , '0|linguistics/mystic-rhymes|Мистические рифмы'
 
 , '0|toolbox/mn-banknotes-eur|Banknotes EUR'
+, '1|toolbox/eu-standards|EU Standards'
 
 , '0|games/principles|Texas Holdem Principles'
 , '0|games/mathresources|Resources'
