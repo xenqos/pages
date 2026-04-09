@@ -21,7 +21,6 @@
 {
   display:              flex;
   flex-wrap:            wrap;
-  font-size:            2.000rem;
   justify-content:      center;
   text-align:           center;
   margin:               0.000rem 0.000rem 1.000rem 0.000rem;
@@ -32,7 +31,6 @@
 {
   color:                #007800;
   display:              inline-block;
-  font-size:            2.000rem;
   margin:               0.000rem 0.400rem 0.000rem 0.400rem;
   padding:              0.000rem 0.000rem 0.000rem 0.000rem;
   width:                2.000rem;
@@ -51,58 +49,6 @@
   color:                #880000;
   font-size:            1.200rem;
 }
-
-.l
-{
-  font-size:            1.200rem;
-}
-
-
-.clBreak
-{
-  clear:                both;
-}
-
-.clBlockDevanagari
-{
-  display:              flex;
-  flex-wrap:            wrap;
-  font-size:            2.000rem;
-  justify-content:      center;
-  text-align:           center;
-  margin:               0.000rem 0.000rem 1.000rem 0.000rem;
-  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
-}
-
-.clLetterDevanagari
-{
-  color:                #007800;
-  display:              inline-block;
-  font-size:            2.000rem;
-  margin:               0.000rem 0.400rem 0.000rem 0.400rem;
-  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
-  width:                2.000rem;
-}
-
-.clLetterIast
-{
-  display:              inline-block;
-  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
-  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
-  width:                2.000rem;
-}
-
-.clIast
-{
-  color:                #880000;
-  font-size:            1.200rem;
-}
-
-.l
-{
-  font-size:            1.000rem;
-}
-
 
 .clBreak
 {
@@ -115,9 +61,17 @@
 {
   color:                light-dark(#000000, #ffffff);
   display:              inline-block;
-  font-size:            1.200rem;
+  font-size:            1.400rem;
   font-weight:          400;
-  margin:               0.600rem 0.000rem 0.600rem 0.000rem;
+  margin:               0.000rem 0.600rem 0.000rem 0.600rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+}
+
+.r
+{
+  font-size:            1.000rem !important;
+  font-weight:          400 !important;
+  margin:               0.000rem 1.000rem 0.000rem 1.000rem;
   padding:              0.000rem 0.000rem 0.000rem 0.000rem;
 }
 
