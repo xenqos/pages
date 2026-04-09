@@ -7,23 +7,23 @@ IAST - International Alphabet of Sanskrit Transliteration
 ## Гласные
 
 [|
+|%[g1|अ]|%[g1|आ]|%[g1|इ]|%[g1|ई]|%[g1|उ]|%[g1|ऊ]|
 |%[r|a]|%[r|ā]|%[r|i]|%[r|ī]|%[r|u]|%[r|ū]|
 |%[b|ɐ]|%[b|aː]|%[b|i]|%[b|iː]|%[b|u]|%[b|uː]|
-|%[g|अ]|%[g|आ]|%[g|इ]|%[g|ई]|%[g|उ]|%[g|ऊ]|
 |]
 
 [|
+|%[g1|ऋ]|%[g1|ॠ]|%[g1|ऌ]|%[g1|ॡ]|
 |%[r|ṛ]|%[r|ṝ]|%[r|ḷ]|%[r|ḹ]|
 |%[b|ɹ̩]|%[b|ɹ̩ː]|%[b|l̩]|%[b|l̩ː]|
-|%[g|ऋ]|%[g|ॠ]|%[g|ऌ]|%[g|ॡ]|
 |]
 
 ## Дифтонги
 
 [|
+|%[g1|ए]|%[g1|ऐ]|%[g1|ओ]|%[g1|औ]|
 |%[r|e]|%[r|ai]|%[r|o]|%[r|au]|
 |%[b|e]|%[b|aːi]|%[b|oː]|%[b|aːu]|
-|%[g|ए]|%[g|ऐ]|%[g|ओ]|%[g|औ]|
 |]
 
 ## Анусвара (Носовые)
@@ -34,7 +34,7 @@ IAST - International Alphabet of Sanskrit Transliteration
 [|
 |%[r|ṃ]|
 |%[b|ⁿ]|
-|%[g|अं]|
+|%[g1|अं]|
 |]
 
 ## Висарга (Глухой глоттальный)
@@ -43,9 +43,9 @@ IAST - International Alphabet of Sanskrit Transliteration
 !]
 
 [|
+|%[g1|अः]|
 |%[r|ḥ]|
 |%[b|h]|
-|%[g|अः]|
 |]
 
 ## Заднеязычные согласные
@@ -54,9 +54,9 @@ IAST - International Alphabet of Sanskrit Transliteration
 !]
 
 [|
+|%[g1|क]|%[g1|ख]|%[g1|ग]|%[g1|घ]|%[g1|ङ]|
 |%[r|ka]|%[r|kha]|%[r|ga]|%[r|gha]|%[r|ṅa]|
 |%[b|k]|%[b|kʰ]|%[b|ɟ]|%[b|ɟʰ]|%[b|ɲ]|
-|%[g|क]|%[g|ख]|%[g|ग]|%[g|घ]|%[g|ङ]|
 |]
 
 ## Палатальные согласные
@@ -65,9 +65,9 @@ IAST - International Alphabet of Sanskrit Transliteration
 !]
 
 [|
+|%[g1|च]|%[g1|छ]|%[g1|ज]|%[g1|झ]|%[g1|ञ]|
 |%[r|c]|%[r|ch]|%[r|j]|%[r|jh]|%[r|ñ]|
 |%[b|ʈ]|%[b|ʈʰ]|%[b|ɖ]|%[b|ɖʰ]|%[b|ɳ]|
-|%[g|च]|%[g|छ]|%[g|ज]|%[g|झ]|%[g|ञ]|
 |]
 
 ## Ретрофлексные согласные
@@ -76,9 +76,9 @@ IAST - International Alphabet of Sanskrit Transliteration
 !]
 
 [|
+|%[g1|ट]|%[g1|ठ]|%[g1|ड]|%[g1|ढ]|%[g1|ण]|
 |%[r|ṭ]|%[r|ṭh]|%[r|ḍ]|%[r|ḍh]|%[r|ṇ]|
 |%[b|ʈ]|%[b|ʈʰ]|%[b|ɖ]|%[b|ɖʰ]|%[b|ɳ]|
-|%[g|ट]|%[g|ठ]|%[g|ड]|%[g|ढ]|%[g|ण]|
 |]
 
 ## Зубные согласные
@@ -87,9 +87,9 @@ IAST - International Alphabet of Sanskrit Transliteration
 !]
 
 [|
+|%[g1|त]|%[g1|थ]|%[g1|द]|%[g1|ध]|%[g1|न]|
 |%[r|t]|%[r|th]|%[r|d]|%[r|dh]|%[r|n]|
 |%[b|t]|%[b|tʰ]|%[b|d]|%[b|dʰ]|%[b|n]|
-|%[g|त]|%[g|थ]|%[g|द]|%[g|ध]|%[g|न]|
 |]
 
 ## Губные согласные
@@ -98,9 +98,9 @@ IAST - International Alphabet of Sanskrit Transliteration
 !]
 
 [|
+|%[g1|प]|%[g1|फ]|%[g1|ब]|%[g1|भ]|%[g1|म]|
 |%[r|p]|%[r|ph]|%[r|b]|%[r|bh]|%[r|m]|
 |%[b|p]|%[b|pʰ]|%[b|b]|%[b|bʰ]|%[b|m]|
-|%[g|प]|%[g|फ]|%[g|ब]|%[g|भ]|%[g|म]|
 |]
 
 ## Аппроксиманты
@@ -109,9 +109,9 @@ IAST - International Alphabet of Sanskrit Transliteration
 !]
 
 [|
+|%[g1|य]|%[g1|र]|%[g1|ल]|%[g1|व]|
 |%[r|y]|%[r|r]|%[r|l]|%[r|v]|
 |%[b|j]|%[b|r]|%[b|l]|%[b|ʋ]|
-|%[g|य]|%[g|र]|%[g|ल]|%[g|व]|
 |]
 
 ## Фрикативные согласные
@@ -120,7 +120,7 @@ IAST - International Alphabet of Sanskrit Transliteration
 !]
 
 [|
+|%[g1|श]|%[g1|ष]|%[g1|स]|%[g1|ह]|
 |%[r|ś]|%[r|ṣ]|%[r|s]|%[r|h]|
 |%[b|ʃ щ]|%[b|ʂ ш]|%[b|s]|%[b|ɦ]|
-|%[g|श]|%[g|ष]|%[g|स]|%[g|ह]|
 |]

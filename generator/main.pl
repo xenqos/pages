@@ -52,7 +52,7 @@ my @books =
 , '0|linguistics/de-strong-verbs|Сильные глаголы'
 , '0|linguistics/de-conversations|Разговоры'
 
-, '0|linguistics/sa-outline|Outline'
+, '1|linguistics/sa-outline|Outline'
 
 , '0|linguistics/mystic-rhymes|Мистические рифмы'
 
