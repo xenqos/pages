@@ -58,6 +58,7 @@ my @books =
 
 , '0|toolbox/mn-banknotes-eur|Banknotes EUR'
 , '1|toolbox/eu-standards|EU Standards'
+, '1|toolbox/em-electricity|Electricity'
 
 , '0|games/principles|Texas Holdem Principles'
 , '0|games/mathresources|Resources'
@@ -535,7 +536,7 @@ sub get_pages
       }
     }
 
-    ($math_on) = ($text_content =~ /(\[\$|\$\$)/);
+    ($math_on) = ($text_content =~ /(\[\$|\$\$|\$)/);
     $math_on //= '';
 
     $page_curr = int($file_name_noext);
