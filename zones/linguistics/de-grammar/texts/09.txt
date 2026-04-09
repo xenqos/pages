@@ -12,10 +12,10 @@
 |]
 
 [|
-|nom.|%[r|das Fenster]      |%[r|der Löffel]      |
-|gen.|%[r|des Fenster]%[b|s]|%[r|des Löffel]%[b|s]|
-|dat.|%[r|dem Fenster]      |%[r|dem Löffel]      |
-|akk.|%[r|das Fenster]      |%[r|den Löffel]      |
+|nom.|%[r|das Fenster] |%[r|der Löffel] |
+|gen.|%[r|des Fensters]|%[r|des Löffels]|
+|dat.|%[r|dem Fenster] |%[r|dem Löffel] |
+|akk.|%[r|das Fenster] |%[r|den Löffel] |
 |]
 
 [!
@@ -85,8 +85,8 @@ __стекло, боль, сосуд__
 
 [|
 |nom.|%[r|das Haus]       |%[r|der Wald]       |
-|gen.|%[r|des Haus]%[b|es]|%[r|des Wald]%[b|es]|
-|dat.|%[r|dem Haus]%[b|e] |%[r|dem Wald]%[b|e] |
+|gen.|%[r|des Hauses]|%[r|des Waldes]|
+|dat.|%[r|dem Hause] |%[r|dem Walde] |
 |akk.|%[r|das Haus]       |%[r|den Wald]       |
 |]
 

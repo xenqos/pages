@@ -71,6 +71,7 @@
 .clChart
 {
   display:              flex;
+  display:              none;
   justify-content:      center;
   margin:               0.000rem 0.000rem 1.600rem 0.000rem;
   padding:              0.000rem 0.000rem 0.000rem 0.000rem;
