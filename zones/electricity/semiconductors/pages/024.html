@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Semiconductors</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='023.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='025.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>Meter Check of a Diode</h1>
+<h2>The Functionality of Diode Polarity</h2>
+<p>Being able to determine the polarity (cathode versus anode) and basic functionality of a diode is a very important skill for the electronics hobbyist or technician to have. Since we know that a diode is essentially nothing more than a one-way valve for electricity, it makes sense we should be able to verify its one-way nature using a DC (battery-powered) ohmmeter as in the figure below. Connected one way across the diode, the meter should show a very low resistance at (a). Connected the other way across the diode, it should show a very high resistance at (b) (&ldquo;OL&rdquo; on some digital meter models).</p>
+<p><img src=&quot;/uploads/articles/determination-of-diode-polarity.jpg&quot; /></p>
+<p>Determination of diode polarity: (a) Low resistance indicates forward bias, black lead is cathode and red lead anode (for most meters) (b) Reversing leads shows high resistance indicating reverse bias.</p>
+<h2>Determining&nbsp;Diode Polarity?</h2>
+<h3><strong>Using a Multimeter</strong></h3>
+<p>Of course, to determine which end of the diode is the cathode and which is the anode, you must know with certainty which test lead of the meter is positive (+) and which is negative (-) when set to the &ldquo;resistance&rdquo; or &ldquo;&Omega;&rdquo; function. With most digital multimeters I&rsquo;ve seen, the red lead becomes positive and the black lead negative when set to measure resistance, in accordance with standard electronics color-code convention. However, this is not guaranteed for all meters. Many analog multimeters, for example, actually make their black leads positive (+) and their red leads negative (-) when switched to the &ldquo;resistance&rdquo; function because it is easier to manufacture it that way!</p>
+<p><strong>Problems of Testing Diodes using an Ohm</strong><strong>meter</strong></p>
+<p>One problem with using an ohmmeter to check a diode is that the readings obtained only have qualitative value, not quantitative. In other words, an ohmmeter only tells you which way the diode conducts; the low-value resistance indication obtained while conducting is useless.</p>
+<p>If an ohmmeter shows a value of &ldquo;1.73 ohms&rdquo; while forward-biasing a diode, that figure of 1.73 &Omega; doesn&rsquo;t represent any real-world quantity useful to us as technicians or circuit designers. It neither represents the forward voltage drop nor any &ldquo;bulk&rdquo; resistance in the semiconductor material of the diode itself, but rather is a figure dependent upon both quantities and will vary substantially with the particular ohmmeter used to take the reading. </p>
+<p><strong>Diode Check in Digital Multimeter</strong><strong>s</strong></p>
+<p>For this reason, some digital multimeter manufacturers equip their meters with a special &ldquo;diode check&rdquo; function which displays the actual forward voltage drop of the diode in volts, rather than a &ldquo;resistance&rdquo; figure in ohms. These meters work by forcing a small current through the diode and measuring the voltage dropped between the two test leads. (figure below)</p>
+<p><img src=&quot;/uploads/articles/meter-with-a-diode-check.jpg&quot; /></p>
+<p>Meter with a &ldquo;Diode check&rdquo; function displays the forward voltage drop of 0.548 volts instead of a low resistance.</p>
+<p><strong>Diode Forward Voltage</strong><strong>s</strong> The forward voltage reading obtained with such a meter will typically be less than the &ldquo;normal&rdquo; drop of 0.7 volts for silicon and 0.3 volts for germanium because the current provided by the meter is of trivial proportions.</p>
+<p><strong>Alternatives to Diode-check Function</strong> If a multimeter with diode-check function isn&rsquo;t available, or you would like to measure a diode&rsquo;s forward voltage drop at some non-trivial current, the circuit of the figure below may be constructed using a battery, resistor, and voltmeter.</p>
+<p><img src=&quot;/uploads/articles/measuring-forward-voltage-of-a-diode-without-diode-check.jpg&quot; /></p>
+<p>Measuring forward voltage of a diode without&ldquo;diode check&rdquo; meter function: (a) Schematic diagram. (b) Pictorial diagram.</p>
+<p>Connecting the diode backwards to this testing circuit will simply result in the voltmeter indicating the full voltage of the battery.</p>
+<p>If this circuit were designed to provide a constant or nearly constant current through the diode despite changes in forward voltage drop, it could be used as the basis of a temperature-measurement instrument, the voltage measured across the diode is inversely proportional to diode junction temperature. Of course, diode current should be kept to a minimum to avoid self-heating (the diode dissipating substantial amounts of heat energy), which would interfere with temperature measurement.</p>
+<p><strong>Considerations in Multimet</strong><strong>ers</strong></p>
+<p>Beware that some digital multimeters equipped with a &ldquo;diode check&rdquo; function may output a very low test voltage (less than 0.3 volts) when set to the regular &ldquo;resistance&rdquo; (&Omega;) function: too low to fully collapse the depletion region of a PN junction.</p>
+<p>The philosophy here is that the &ldquo;diode check&rdquo; function is to be used for testing semiconductor devices, and the &ldquo;resistance&rdquo; function for anything else. By using a very low test voltage to measure resistance, it is easier for a technician to measure the resistance of non-semiconductor components connected to semiconductor components since the semiconductor component junctions will not become forward-biased with such low voltages.  </p>
+<p><strong>Testing Exampl</strong><strong>e</strong></p>
+<p>Consider the example of a resistor and diode connected in parallel, soldered in place on a printed circuit board (PCB). Normally, one would have to unsolder the resistor from the circuit (disconnect it from all other components) before measuring its resistance, otherwise, any parallel-connected components would affect the reading obtained. When using a multimeter which outputs a very low test voltage to the probes in the &ldquo;resistance&rdquo; function mode, the diode&rsquo;s PN junction will not have enough voltage impressed across it to become forward-biased, and will only pass negligible current. Consequently, the meter &ldquo;sees&rdquo; the diode as an open (no continuity), and only registers the resistor&rsquo;s resistance. (Figure below)</p>
+<p><img src=&quot;/uploads/articles/ohmmeter-equipped-with-a-low-test-voltage.jpg&quot; /></p>
+<p>Ohmmeter equipped with a low test voltage (&lt;0.7 V) does not see diodes allowing it to measure parallel resistors.</p>
+<p>If such an ohmmeter were used to test a diode, it would indicate a very high resistance (many mega-ohms) even if connected to the diode in the &ldquo;correct&rdquo; (forward-biased) direction. (Figure below)</p>
+<p><img src=&quot;/uploads/articles/ohmmeter-equipped-with-a-low-test-voltage-too-low-to-forward-bias-diodes.jpg&quot; /></p>
+<p>Ohmmeter equipped with a low test voltage, too low to forward bias diodes, does not see diodes.</p>
+<p>Reverse voltage strength of a diode is not as easily tested because exceeding a normal diode&rsquo;s PIV usually results in destruction of the diode. Special types of diodes, though, which are designed to &ldquo;break down&rdquo; in reverse-bias mode without damage (called <em>zener diodes</em>), which are tested with the same voltage source / resistor / voltmeter circuit, provided that the voltage source is of high enough value to force the diode into its breakdown region. More on this subject in a later section of this chapter.</p>
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li>An ohmmeter may be used to qualitatively check diode function. There should be low resistance measured one way and very high resistance measured the other way. When using an ohmmeter for this purpose, be sure you know which test lead is positive and which is negative! The actual polarity may not follow the colors of the leads as you might expect, depending on the particular design of meter.</li>
+<li>Some multimeters provide a &ldquo;diode check&rdquo; function that displays the actual forward voltage of the diode when its conducting current. Such meters typically indicate a slightly lower forward voltage than what is &ldquo;nominal&rdquo; for a diode, due to the very small amount of current used during the check.</li>
+</ul>
+
+
+
+</div>
+</div>
+</body>
+</html>

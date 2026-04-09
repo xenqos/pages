@@ -1,0 +1,36 @@
+# Si Lab - Commutating Diode
+## Project Overview
+<p>Diodes&nbsp;are often used to&nbsp;mitigate&nbsp;inductive kickback&mdash;the high voltage pulses&nbsp;produced when the direct current through an inductor is interrupted.&nbsp;In electronics, commutation refers to the reversal of voltage polarity or current direction. The purpose of a commutating diode is to act whenever the voltage reverses polarity.&nbsp; In this circuit, the voltage across the&nbsp;inductor of Figure 1 will reverse&nbsp;(commutate) when the current through it is interrupted.&nbsp;</p>
+
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/commutating-diode-schematic-diagram.jpg" /></p>
+<em><strong>Figure 1.</strong> Schematic diagram of the commutating diode experiment.</em>
+
+## Parts and Materials
+<ul>
+<li>6 V battery</li>
+<li>Power transformer, 120 VAC step-down to 12 VAC&nbsp;</li>
+<li>1N4001 rectifying diode or any of the 1N400X series of rectifying diodes&nbsp;</li>
+<li>Neon lamp</li>
+<li>Two SPST (single-pole, single-throw)&nbsp;toggle switches - household light switches are recommended for their low cost and durability</li>
+</ul>
+<p>A power transformer is specified, but any iron-core inductor will suffice, even the homemade inductor or transformer from the AC experiments chapter!&nbsp;</p>
+
+## Learning Objectives
+<ul>
+<li>Review inductive kickback</li>
+<li>Learn how to suppress kickback&nbsp;using a diode</li>
+</ul>
+
+## Instructions
+<p><strong>Step 1:</strong> Assemble the circuit illustrated in Figures 1 and 2.&nbsp;</p>
+
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/commutating-diode-illustration.jpg" /></p>
+<em><strong>Figure 2.</strong> Implementation of the commutating diode experiment using terminal strips.</em>
+
+<p>When assembling the circuit, be careful of the diode&rsquo;s orientation. The cathode end of the diode (the end marked with a single band) must face the positive (+) side of the battery. Additionally, the diode should be reverse-biased and nonconducting with switch #1 in the ON&nbsp;position.</p>
+<p>Use the high-voltage (120 V) winding of the transformer for the inductor coil.&nbsp;The primary winding of a step-down transformer has more inductance than the secondary winding and will give a greater lamp-flashing effect.</p>
+<p><strong>Step 2:&nbsp;</strong>Set switch #2 to the OFF&nbsp;position. This disconnects the diode from the circuit so that it has no effect.</p>
+<p><strong>Step 3:&nbsp;</strong>Quickly close and open (turn ON&nbsp;and then OFF) switch #1. When that switch is opened, the neon bulb will flash from the effect of inductive kickback.&nbsp;The rapid current decrease caused by the switch&rsquo;s opening causes the inductor to create a large voltage drop as it attempts to keep the current at the same magnitude and going in the same direction.</p>
+<p>Inductive kickback is detrimental to switch contacts, as it causes excessive arcing whenever they are opened. In this circuit, the neon lamp actually diminishes the effect by providing an alternate current path for the inductor&rsquo;s current when the switch&nbsp;opens, dissipating the inductor&rsquo;s stored energy harmlessly in the form of light and heat. However, there is still a fairly high voltage&nbsp;dropped across the opening contacts of switch #1, causing undue arcing and shortened switch life.</p>
+<p><strong>Step 4:&nbsp;</strong>Set switch #2 to the ON position. The diode will now be a part of the circuit.&nbsp;Quickly close and open switch #1 again, noting the difference in circuit behavior. This time, the neon lamp does not flash. The reverse-biased diode will conduct when the voltage gets high enough, thereby preventing the lamp from turning on.&nbsp;</p>
+<p><strong>Step 5:&nbsp;</strong>Connect a voltmeter across the inductor to verify that the inductor is still receiving full battery voltage with switch #1 closed. If the voltmeter registers only a small voltage with switch #1 ON,&nbsp;the diode is probably connected backward, creating a short circuit.</p>

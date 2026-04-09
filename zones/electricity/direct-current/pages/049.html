@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Direct Current</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='048.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='050.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h6>07. Series-parallel Combination Circuits</h6>
+
+<h1>Re-drawing Complex Schematics</h1>
+<p>Typically, complex circuits are not arranged in nice, neat, clean schematic diagrams for us to follow. They are often drawn in such a way that makes it difficult to follow which components are in series and which are in parallel with each other. The purpose of this section is to show you a method useful for redrawing circuit schematics in a neat and orderly fashion. Like the stage-reduction strategy for solving series-parallel combination circuits, it is a method easier demonstrated than described.</p>
+<h2>Analyzing and Simplifying a Complex Circuit Diagram</h2>
+<p>Let&rsquo;s start with the following (convoluted) circuit diagram. Perhaps this diagram was originally drawn this way by a technician or engineer. Perhaps it was sketched as someone traced the wires and connections of a real circuit. In any case, here it is in all its ugliness:</p>
+<a target='_blank' href='../images/049-01.jpg'><img class='clImageThumb' src='../images/049-01.jpg'></a><br>
+
+<p>With electric circuits and circuit diagrams, the length and routing of wire connecting components in a circuit matters little. (Actually, in some AC circuits it becomes critical, and very long wire lengths can contribute unwanted resistance to both AC and DC circuits, but in most cases wire length is irrelevant.) What this means for us is that we can lengthen, shrink, and/or bend connecting wires without affecting the operation of our circuit.</p>
+<p>The strategy I have found easiest to apply is to start by tracing the current from one terminal of the battery around to the other terminal, following the loop of components closest to the battery and ignoring all other wires and components for the time being. While tracing the path of the loop, mark each resistor with the appropriate polarity for voltage drop.</p>
+<p>In this case, I&rsquo;ll begin my tracing of this circuit at the positive terminal of the battery and finish at the negative terminal, in the same general direction as current would flow. When tracing this direction, I will mark each resistor with positive polarity on the entering side and negative polarity on the exiting side, for that is how the actual polarity will be as current (according to the conventional-flow model) enters and exits a resistor:</p>
+<a target='_blank' href='../images/049-02.jpg'><img class='clImageThumb' src='../images/049-02.jpg'></a><br>
+
+<a target='_blank' href='../images/049-03.jpg'><img class='clImageThumb' src='../images/049-03.jpg'></a><br>
+
+<p>Any components encountered along this short loop are drawn vertically in order:</p>
+<a target='_blank' href='../images/049-04.png'><img class='clImageThumb' src='../images/049-04.png'></a><br>
+
+<p>Now, proceed to trace any loops of components connected around components that were just traced. In this case, there&rsquo;s a loop around R<sub>1</sub> formed by R<sub>2</sub>, and another loop around R<sub>3</sub> formed by R<sub>4</sub>:</p>
+<a target='_blank' href='../images/049-05.jpg'><img class='clImageThumb' src='../images/049-05.jpg'></a><br>
+
+<p>Tracing those loops, I draw R<sub>2</sub> and R<sub>4</sub> in parallel with R<sub>1</sub> and R<sub>3</sub> (respectively) on the vertical diagram. Noting the polarity of voltage drops across R<sub>3</sub> and R<sub>1</sub>, I mark R<sub>4</sub> and R<sub>2</sub> likewise:</p>
+<a target='_blank' href='../images/049-06.jpg'><img class='clImageThumb' src='../images/049-06.jpg'></a><br>
+
+<p>Now we have a circuit that is very easily understood and analyzed. In this case, it is identical to the four-resistor series-parallel configuration we examined earlier in the chapter.</p>
+<h2>Another Example for Simplification of Complex Circuits</h2>
+<p>Let&rsquo;s look at another example, even uglier than the one before:</p>
+<a target='_blank' href='../images/049-07.jpg'><img class='clImageThumb' src='../images/049-07.jpg'></a><br>
+
+<p>The first loop I&rsquo;ll trace is from the negative (-) side of the battery, through R<sub>6</sub>, through R<sub>1</sub>, and back to the positive (+) end of the battery:</p>
+<a target='_blank' href='../images/049-08.jpg'><img class='clImageThumb' src='../images/049-08.jpg'></a><br>
+
+<p>Re-drawing vertically and keeping track of voltage drop polarities along the way, our equivalent circuit starts out looking like this:</p>
+<a target='_blank' href='../images/049-09.jpg'><img class='clImageThumb' src='../images/049-09.jpg'></a><br>
+
+<p>Next, we can proceed to follow the next loop around one of the traced resistors (R<sub>6</sub>), in this case, the loop formed by R<sub>5</sub> and R<sub>7</sub>. As before, we start at the positive end of R<sub>6</sub> and proceed to the negative end of R<sub>6</sub>, marking voltage drop polarities across R<sub>5</sub> and R<sub>7</sub> as we go:</p>
+<a target='_blank' href='../images/049-10.jpg'><img class='clImageThumb' src='../images/049-10.jpg'></a><br>
+
+<p>Now we add the R<sub>5</sub>&mdash;R<sub>7</sub> loop to the vertical drawing. Notice how the voltage drop polarities across R<sub>7</sub> and R<sub>5</sub> correspond with that of R<sub>6</sub>, and how this is the same as what we found tracing R<sub>7</sub> and R<sub>5</sub> in the original circuit:</p>
+<a target='_blank' href='../images/049-11.jpg'><img class='clImageThumb' src='../images/049-11.jpg'></a><br>
+
+<p>We repeat the process again, identifying and tracing another loop around an already-traced resistor. In this case, the R<sub>3</sub>&mdash;R<sub>4</sub> loop around R<sub>5</sub> looks like a good loop to trace next:</p>
+<a target='_blank' href='../images/049-12.jpg'><img class='clImageThumb' src='../images/049-12.jpg'></a><br>
+
+<p>Adding the R<sub>3</sub>&mdash;R<sub>4</sub> loop to the vertical drawing, marking the correct polarities as well:</p>
+<a target='_blank' href='../images/049-13.jpg'><img class='clImageThumb' src='../images/049-13.jpg'></a><br>
+
+<p>With only one remaining resistor left to trace, then next step is obvious: trace the loop formed by R<sub>2</sub> around R<sub>3</sub>:</p>
+<a target='_blank' href='../images/049-14.jpg'><img class='clImageThumb' src='../images/049-14.jpg'></a><br>
+
+<p>Adding R<sub>2</sub> to the vertical drawing, and we&rsquo;re finished! The result is a diagram that&rsquo;s very easy to understand compared to the original:</p>
+<a target='_blank' href='../images/049-15.jpg'><img class='clImageThumb' src='../images/049-15.jpg'></a><br>
+
+<p>This simplified layout greatly eases the task of determining where to start and how to proceed in reducing the circuit down to a single equivalent (total) resistance. Notice how the circuit has been re-drawn, all we have to do is start from the right-hand side and work our way left, reducing simple-series and simple-parallel resistor combinations one group at a time until we&rsquo;re done.</p>
+<p>In this particular case, we would start with the simple parallel combination of R<sub>2</sub> and R<sub>3</sub>, reducing it to a single resistance. Then, we would take that equivalent resistance (R<sub>2</sub>//R<sub>3</sub>) and the one in series with it (R<sub>4</sub>), reducing them to another equivalent resistance (R<sub>2</sub>//R<sub>3</sub>&mdash;R<sub>4</sub>). Next, we would proceed to calculate the parallel equivalent of that resistance (R<sub>2</sub>//R<sub>3</sub>&mdash;R<sub>4</sub>) with R<sub>5</sub>, then in series with R<sub>7</sub>, then in parallel with R<sub>6</sub>, then in series with R<sub>1</sub> to give us a grand total resistance for the circuit as a whole.</p>
+<p>From there we could calculate total current from total voltage and total resistance (I=E/R), then &ldquo;expand&rdquo; the circuit back into its original form one stage at a time, distributing the appropriate values of voltage and current to the resistances as we go.</p>
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li>Wires in diagrams and in real circuits can be lengthened, shortened, and/or moved without affecting circuit operation.</li>
+<li>To simplify a convoluted circuit schematic, follow these steps:</li>
+<li>Trace current from one side of the battery to the other, following any single path (&ldquo;loop&rdquo;) to the battery. Sometimes it works better to start with the loop containing the most components, but regardless of the path taken the result will be accurate. Mark polarity of voltage drops across each resistor as you trace the loop. Draw those components you encounter along this loop in a vertical schematic.</li>
+<li>Mark traced components in the original diagram and trace remaining loops of components in the circuit. Use polarity marks across traced components as guides for what connects where. Document new components in loops on the vertical re-draw schematic as well.</li>
+<li>Repeat last step as often as needed until all components in original diagram have been traced.</li>
+</ul>
+
+
+
+</div>
+</div>
+</body>
+</html>

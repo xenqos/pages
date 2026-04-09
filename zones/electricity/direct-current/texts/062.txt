@@ -1,0 +1,18 @@
+###### 08. DC Metering Circuits
+
+# Wattmeter Design
+<p>Power in an electric circuit is the product (multiplication) of voltage <em>and</em> current, so any meter designed to measure power must account for <em>both</em> of these variables.</p>
+## Electrodynamometer Movement
+<p>A special meter movement designed especially for power measurement is called the <em>dynamometer </em>movement, and is similar to a D&rsquo;Arsonval or Weston movement in that a lightweight coil of wire is attached to the pointer mechanism. However, unlike the D&rsquo;Arsonval or Weston movement, another (stationary) coil is used instead of a permanent magnet to provide the magnetic field for the moving coil to react against. The moving coil is generally energized by the voltage in the circuit, while the stationary coil is generally energized by the current in the circuit. A dynamometer movement connected in a circuit looks something like this:</p>
+
+^[062-01.jpg]
+
+<p>The top (horizontal) coil of wire measures load current while the bottom (vertical) coil measures load voltage. Just like the lightweight moving coils of voltmeter movements, the (moving) voltage coil of a dynamometer is typically connected in series with a range resistor so that full load voltage is not applied to it. Likewise, the (stationary) current coil of a dynamometer may have precision shunt resistors to divide the load current around it.</p>
+<p>With custom-built dynamometer movements, shunt resistors are less likely to be needed because the stationary coil can be constructed with as heavy of wire as needed without impacting meter response, unlike the moving coil which must be constructed of lightweight wire for minimum inertia.</p>
+
+^[062-02.jpg]
+
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li>Wattmeters are often designed around dynamometer meter movements, which employ both voltage and current coils to move a needle.</li>
+</ul>

@@ -1,0 +1,59 @@
+# AC Lab - Sensitive Voltage Detector with Audio Output
+## Project Overview
+<p>In this project,&nbsp;you will learn to build a voltage detector with audio output to headphones and adjustable gain sensitivity, as illustrated in Figure 1.&nbsp;</p>
+
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/voltage-divider-to-the-front-of-the-circuit-illustration-1.jpg" /></p>
+<em><strong>Figure 1. </strong>Completed voltage detector with adjustable sensitivity and audio output.</em>
+
+<p>Voltage detectors are intended to be used for balancing bridge measurement circuits, potentiometric (null-balance) voltmeter circuits, and detecting extremely low-amplitude AC (alternating current) signals in the audio frequency range. A voltage detector is a&nbsp;valuable piece of test equipment, especially for the low-budget experimenter without an oscilloscope. It is also valuable in that it allows you to use a different bodily sense (hearing) in interpreting the behavior of a circuit. One&nbsp;recommendation is to&nbsp;build&nbsp;this detector in a permanent fashion (mount all components inside of a box and provide nice test lead wires) so it may be easily used in the future.</p>
+
+## Parts and Materials
+<ul>
+<li>High-quality closed-cup&nbsp;audio headphones</li>
+<li>Headphone jack&nbsp;female receptacle for headphone plug&nbsp;</li>
+<li>Small step-down power transformer&nbsp;(using the 6 V&nbsp;secondary winding tap)</li>
+<li>Two 1N4001 rectifying diodes</li>
+<li>1 k&Omega; resistor</li>
+<li>100 k&Omega; potentiometer</li>
+<li>Two banana&nbsp;jack-style binding posts&nbsp;or other terminal hardware&nbsp;for connection to the potentiometer circuit</li>
+<li>Plastic or metal mounting box</li>
+</ul>
+<p>Regarding the headphones, the higher the sensitivity&nbsp;rating in decibels (dB), the better, but listening is believing. If&nbsp;you&rsquo;re serious about building a detector with maximum sensitivity for small electrical signals, you should try a few different headphone models at a high-quality audio store and listen to which ones produce an audible sound for the lowest volume setting. Beware, as you could spend hundreds of dollars on a pair of headphones to get the absolute best sensitivity.&nbsp;Take heart, though,&nbsp;I&rsquo;ve used an <em>old</em> pair of Radio Shack Realistic&nbsp;brand headphones with perfectly adequate results, so you don&rsquo;t need to buy the best.</p>
+<p>A transformer is a device normally used with AC circuits&nbsp;to convert high-voltage AC power into low-voltage AC power and for many other purposes.&nbsp;It is not important that you understand its intended function in this experiment other than it makes the headphones become more sensitive to low-current electrical signals.&nbsp;Normally, the transformer used in this type of application (audio speaker impedance matching) is called an audio transformer,&nbsp;with its primary and secondary windings represented by impedance values (1000 &Omega;: 8 &Omega;) instead of voltages.&nbsp;An audio transformer will work, but I&rsquo;ve found small step-down power transformers of 120/6 V ratio to be perfectly adequate for the task, cheaper (especially when taken from an old thrift-store alarm clock radio), and far more rugged.</p>
+<p>The tolerance (precision) rating for the 1 k&Omega; resistor is irrelevant. The 100 k&Omega; potentiometer is a recommended option for incorporation into this project, as it gives the user control over the loudness of any given signal.</p>
+<p>Even though an audio-taper potentiometer would be appropriate for this application, it is not necessary. A linear-taper potentiometer works quite well.</p>
+
+## Learning Objectives
+<ul>
+<li>To show how to detect&nbsp;extremely small electrical signals</li>
+<li>Learn how to use a potentiometer as a voltage divider/signal attenuator</li>
+<li>Learn how to use diodes to clip&nbsp;voltage at some maximum level</li>
+<li>Practice soldering</li>
+</ul>
+
+## Instructions
+<p><strong>Step 1: </strong>First, solder wires to the headphone jack.&nbsp;The headphones will most likely have a three-contact plug with a common input and separate left and right speaker inputs for stereo sound.&nbsp;You may either connect the two stereo speakers in series or in parallel, as demonstrated in Figure 2.</p>
+
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/speakers-in-series-and-speakers-in-parallel.jpg" /></p>
+<em><strong>Figure 2. </strong>Series and parallel speaker connection options for a stereo headphone plug.</em>
+
+<p>I&rsquo;ve found the series connection to work best, that is, to produce the most sound from a small signal. Remember that you will connect&nbsp;only two of those three contact points to the transformer. If you only have a mono&nbsp;headphone set with a two-contact plug, connect to those two plug contact points.</p>
+<p><strong>Step 2:&nbsp;</strong>Solder all remaining wire connections to complete the circuits illustrated in Figures 3 and 4.&nbsp;</p>
+
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/voltage-divider-to-the-front-of-the-circuit-schematic-diagram.jpg" /></p>
+<em><strong>Figure 3. </strong>Schematic diagram of the voltage detector with adjustable sensitivity.</em>
+
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/voltage-divider-to-the-front-of-the-circuit-illustration.jpg" /></p>
+<em><strong>Figure 4.</strong> Illustration of the voltage detector circuit with a potentiometer for sensitivity adjustment.</em>
+
+<p>This detector system is extremely sensitive, so any loose wire connections in the circuit will add unwanted noise to the sounds produced by the measured voltage signal.&nbsp;For connection across any non-trivial source of voltage (1 V and greater), the detector&rsquo;s extremely high sensitivity should be attenuated.&nbsp;This is accomplished using the potentiometer voltage divider, which provides adjustable&nbsp;attenuation.</p>
+<p>The two diodes (the arrow-like component symbols of Figure 3) connected in parallel with the transformer&rsquo;s primary winding work together with the series-connected 1 k&Omega; resistor to prevent more than about 0.7 V from being dropped across the primary coil of the transformer.&nbsp;This does one thing and one thing only: limit the amount of sound the headphones can produce. The system will work without the diodes and resistor in place, but there will be no limit to sound volume in the circuit, and the resulting sound caused by accidentally connecting the test leads across a substantial voltage source (like a battery) can be deafening!</p>
+<p>The binding posts, illustrated at the far left of Figure 4, provide connection points for a pair of test probes with banana-style plugs once the detector components are mounted inside a box.&nbsp;You may use ordinary multimeter probes or make your own probes with alligator clips at the ends for a secure connection to a circuit.</p>
+<p><strong>Step 3: </strong>Next, adjust the 100 k&Omega; voltage divider potentiometer to about mid-range when initially sensing a voltage signal of unknown magnitude.&nbsp;If the sound is too loud, turn the potentiometer down and try again. If too soft, turn it up and try again.</p>
+<p>The detector produces a click&nbsp;sound whenever the test leads make or break contact with the voltage source under test. With my cheap headphones, I&rsquo;ve detected currents of less than 0.1 &micro;A.</p>
+<p><strong>Step 4:&nbsp;</strong>Next, touch both tests leads to the end of your tongue with the sensitivity adjustment set to maximum. This is a&nbsp;good demonstration of the detector&rsquo;s sensitivity.&nbsp;The voltage produced by metal-to-electrolyte contact (called galvanic voltage) is small but enough to produce soft clicking&nbsp;sounds every time the leads make and break contact on the wet skin of your tongue.</p>
+<p><strong>Step 5:&nbsp;</strong>Try unplugging the headphone plug from the jack (receptacle) and similarly touching it to the end of your tongue.&nbsp;You should still hear soft clicking sounds, but they will be much smaller in amplitude.&nbsp;Headphone speakers are low-impedance&nbsp;devices. They require low voltage and high&nbsp;current to deliver substantial sound power.</p>
+<p>Impedance is a measure of opposition to any and all forms of electric current, including AC. Resistance, by comparison, is a strict measure of opposition to direct current (DC).&nbsp;Like resistance, impedance is measured in the unit of the Ohm (&Omega;), but it is symbolized in equations by the capital letter &ldquo;Z&rdquo; rather than the capital letter &ldquo;R.&rdquo;&nbsp;We use the term impedance to describe the headphone&rsquo;s opposition to current because it is primarily AC signals that headphones are normally subjected to, not DC.</p>
+<p>Since most small signal sources have high internal impedances, some are much higher than the nominal 8 &Omega; of the headphone speakers.&nbsp;This is a technical way of saying that they cannot supply substantial amounts of current.</p>
+<p>As the maximum power transfer theorem predicts, maximum sound power will be delivered by the headphone speakers when their impedance is matched&nbsp;to the impedance of the voltage source.</p>
+<p>The transformer does this. The transformer also helps detect small DC signals by producing inductive kickback&nbsp;every time the test lead circuit is broken, thus amplifying&nbsp;the signal by magnetically storing up electrical energy and suddenly releasing it to the headphone speakers.</p>

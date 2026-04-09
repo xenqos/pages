@@ -1,0 +1,99 @@
+###### 16. RC and L/R Time Constants
+
+# Voltage and Current Calculations
+<p>There&rsquo;s a sure way to calculate any of the values in a reactive DC circuit over time.</p>
+## Calculating Values in a Reactive DC Circuit
+<p>The first step is to identify the starting and final values for whatever quantity the capacitor or inductor opposes the change in; that is, whatever quantity the reactive component is trying to hold constant. For capacitors, this quantity is <em>voltage</em>; for inductors, this quantity is <em>current</em>. When the switch in a circuit is closed (or opened), the reactive component will attempt to maintain that quantity at the same level as it was before the switch transition, so that value is to be used for the &ldquo;starting&rdquo; value.</p>
+<p>The final value for this quantity is whatever that quantity will be after an infinite amount of time. This can be determined by analyzing a capacitive circuit as though the capacitor was an open-circuit, and an inductive circuit as though the inductor was a short-circuit because that is what these components behave as when they&rsquo;ve reached &ldquo;full charge,&rdquo; after an infinite amount of time.</p>
+<p>The next step is to calculate the <em>time constant</em> of the circuit: the amount of time it takes for voltage or current values to change approximately 63 percent from their starting values to their final values in a transient situation.</p>
+<p>In a series RC circuit, the time constant is equal to the total resistance in ohms multiplied by the total capacitance in farads. For a series L/R circuit, it is the total inductance in henrys divided by the total resistance in ohms. In either case, the time constant is expressed in units of <em>seconds </em>and symbolized by the Greek letter &ldquo;tau&rdquo; (&tau;):</p>
+
+^[117-01.jpg]
+
+<p>The rise and fall of circuit values such as voltage and current in response to a transient are, as was mentioned before, <em>asymptotic</em>. Being so, the values begin to rapidly change soon after the transient and settle down over time. If plotted on a graph, the approach to the final values of voltage and current form exponential curves.</p>
+<p>As was stated before, one time constant is the amount of time it takes for any of these values to change about 63 percent from their starting values to their (ultimate) final values. For every time constant, these values move (approximately) 63 percent closer to their eventual goal. The mathematical formula for determining the precise percentage is quite simple:</p>
+
+^[117-02.png]
+
+<p>The letter <em>e</em> stands for Euler&rsquo;s constant, which is approximately 2.7182818. It is derived from calculus techniques, after mathematically analyzing the asymptotic approach of the circuit values. After one time constant&rsquo;s worth of time, the percentage of change from starting value to final value is:</p>
+
+^[117-03.jpg]
+
+<p>After two time constants&rsquo; worth of time, the percentage of change from starting value to final value is:</p>
+
+^[117-04.jpg]
+
+<p>After ten time constant&rsquo;s worth of time, the percentage is:</p>
+
+^[117-05.jpg]
+
+<p>The more time that passes since the transient application of voltage from the battery, the larger the value of the denominator in the fraction, which makes for a smaller value for the whole fraction, which makes for a grand total (1 minus the fraction) approaching 1, or 100 percent.</p>
+### Universal Time Constant Formula
+<p>We can make a more universal formula out of this one for the determination of voltage and current values in transient circuits, by multiplying this quantity by the difference between the final and starting circuit values:</p>
+
+^[117-06.png]
+
+<p>Let&rsquo;s analyze the voltage rise on the series resistor-capacitor circuit shown at the beginning of the chapter.</p>
+
+^[117-07.jpg]
+
+<p>Note that we&rsquo;re choosing to analyze voltage because that is the quantity capacitors tend to hold constant. Although the formula works quite well for current, the starting and final values for current are actually derived from the capacitor&rsquo;s voltage, so the calculating voltage is a more direct method. The resistance is 10 k&Omega;, and the capacitance is 100 &micro;F (microfarads). Since the time constant (&tau;) for an RC circuit is the product of resistance and capacitance, we obtain a value of 1 second:</p>
+
+^[117-08.jpg]
+
+<p>If the capacitor starts in a totally discharged state (0 volts), then we can use that value of voltage for a &ldquo;starting&rdquo; value. The final value, of course, will be the battery voltage (15 volts). Our universal formula for capacitor voltage in this circuit looks like this:</p>
+
+^[117-09.jpg]
+
+<p>So, after 7.25 seconds of applying a voltage through the closed switch, our capacitor voltage will have increased by:</p>
+
+^[117-10.jpg]
+
+<p>Since we started at a capacitor voltage of 0 volts, this increase of 14.989 volts means that we have 14.989 volts after 7.25 seconds.</p>
+<p>The same formula will work for determining the current in that circuit, too. Since we know that a discharged capacitor initially acts like a short-circuit, the starting current will be the maximum amount possible: 15 volts (from the battery) divided by 10 k&Omega; (the only opposition to current in the circuit at the beginning):</p>
+
+^[117-11.jpg]
+
+<p>We also know that the final current will be zero, since the capacitor will eventually behave as an open-circuit, meaning that eventually, no electrons will flow in the circuit. Now that we know both the starting and final current values, we can use our universal formula to determine the current after 7.25 seconds of switch closure in the same RC circuit:</p>
+
+^[117-12.jpg]
+
+<p>Note that the figure obtained for change is negative, not positive! This tells us that the current has <em>decreased </em>rather than increased with the passage of time. Since we started at a current of 1.5 mA, this decrease (-1.4989 mA) means that we have 0.001065 mA (1.065 &micro;A) after 7.25 seconds.</p>
+<p>We could have also determined the circuit current at time=7.25 seconds by subtracting the capacitor&rsquo;s voltage (14.989 volts) from the battery&rsquo;s voltage (15 volts) to obtain the voltage drop across the 10 k&Omega; resistor, then figuring current through the resistor (and the whole series circuit) with Ohm&rsquo;s Law (I=E/R). Either way, we should obtain the same answer:</p>
+
+^[117-13.jpg]
+
+## Using the Universal Time Constant Formula for Analyzing Inductive Circuits
+<p>The universal time constant formula also works well for analyzing inductive circuits. Let&rsquo;s apply it to our example L/R circuit at the beginning of the chapter:</p>
+
+^[117-14.jpg]
+
+<p>With an inductance of 1 henry and a series resistance of 1 &Omega;, our time constant is equal to 1 second:</p>
+
+^[117-15.jpg]
+
+<p>Because this is an inductive circuit, and we know that inductors oppose the change in current, we&rsquo;ll set up our time constant formula for starting and final values of current. If we start with the switch in the open position, the current will be equal to zero, so zero is our starting current value.</p>
+<p>After the switch has been left closed for a long time, the current will settle out to its final value, equal to the source voltage divided by the total circuit resistance (I=E/R), or 15 amps in the case of this circuit.</p>
+<p>If we desired to determine the value of current at 3.5 seconds, we would apply the universal time constant formula as such:</p>
+
+^[117-16.jpg]
+
+<p>Given the fact that our starting current was zero, this leaves us at a circuit current of 14.547 amps at 3.5 seconds&rsquo; time.</p>
+<p>Determining voltage in an inductive circuit is best accomplished by first figuring circuit current and then calculating voltage drops across resistances to find what&rsquo;s left to drop across the inductor. With only one resistor in our example circuit (having a value of 1 &Omega;), this is rather easy:</p>
+
+^[117-17.jpg]
+
+<p>Subtracted from our battery voltage of 15 volts, this leaves 0.453 volts across the inductor at time=3.5 seconds.</p>
+
+^[117-18.png]
+
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li>Universal Time Constant Formula:</li>
+<li>To analyze an RC or L/R circuit, follow these steps:</li>
+<li>(1): Determine the time constant for the circuit (RC or L/R).</li>
+<li>(2): Identify the quantity to be calculated (whatever quantity whose change is directly opposed by the reactive component. For capacitors this is voltage; for inductors this is current).</li>
+<li>(3): Determine the starting and final values for that quantity.</li>
+<li>(4): Plug all these values (Final, Start, time, time constant) into the universal time constant formula and solve for <em>change</em> in quantity.</li>
+<li>(5): If the starting value was zero, then the actual value at the specified time is equal to the calculated change given by the universal formula. If not, add the change to the starting value to find out where you&rsquo;re at.</li>
+</ul>

@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Direct Current</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='082.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='084.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h6>10. DC Network Analysis</h6>
+
+<h1>Maximum Power Transfer Theorem</h1>
+<p>  The Maximum Power Transfer Theorem is not so much a means of analysis as it is an aid to system design. Simply stated, the maximum amount of power will be dissipated by a load resistance when that load resistance is equal to the Thevenin/Norton resistance of the network supplying the power. If the load resistance is lower or higher than the Thevenin/Norton resistance of the source network, its dissipated power will be less than the maximum.</p>
+<p>This is essentially what is aimed for in radio transmitter design, where the antenna or transmission line &ldquo;impedance&rdquo; is matched to final power amplifier &ldquo;impedance&rdquo; for maximum radio frequency power output. Impedance, the overall opposition to AC and DC current, is very similar to resistance and must be equal between source and load for the greatest amount of power to be transferred to the load. A load impedance that is too high will result in low power output. A load impedance that is too low will not only result in low power output but possibly overheating of the amplifier due to the power dissipated in its internal (Thevenin or Norton) impedance.</p>
+<h2>Maximum Power Transfer Example</h2>
+<p>Taking our Thevenin equivalent example circuit, the Maximum Power Transfer Theorem tells us that the load resistance resulting in greatest power dissipation is equal in value to the Thevenin resistance (in this case, 0.8 &Omega;):</p>
+<a target='_blank' href='../images/083-01.jpg'><img class='clImageThumb' src='../images/083-01.jpg'></a><br>
+
+<p>With this value of load resistance, the dissipated power will be 39.2 watts:</p>
+<a target='_blank' href='../images/083-02.jpg'><img class='clImageThumb' src='../images/083-02.jpg'></a><br>
+
+<p>If we were to try a lower value for the load resistance (0.5 &Omega; instead of 0.8 &Omega;, for example), our power dissipated by the load resistance would decrease:</p>
+<a target='_blank' href='../images/083-03.jpg'><img class='clImageThumb' src='../images/083-03.jpg'></a><br>
+
+<p>Power dissipation increased for both the Thevenin resistance and the total circuit, but it decreased for the load resistor. Likewise, if we increase the load resistance (1.1 &Omega; instead of 0.8 &Omega;, for example), power dissipation will also be less than it was at 0.8 &Omega; exactly:</p>
+<a target='_blank' href='../images/083-04.jpg'><img class='clImageThumb' src='../images/083-04.jpg'></a><br>
+
+<p>If you were designing a circuit for maximum power dissipation at the load resistance, this theorem would be very useful. Having reduced a network down to a Thevenin voltage and resistance (or Norton current and resistance), you simply set the load resistance equal to that Thevenin or Norton equivalent (or vice versa) to ensure maximum power dissipation at the load. Practical applications of this might include radio transmitter final amplifier stage design (seeking to maximize the power delivered to the antenna or transmission line), a <em>grid-tied inverter</em> loading a solar array, or electric vehicle design (seeking to maximize the power delivered to drive motor).</p>
+<h2>Maximum Power Doesn&rsquo;t Mean Maximum Efficiency</h2>
+<p><strong>The Maximum Power Transfer Theorem does not:</strong> Maximum power transfer does not coincide with maximum efficiency. Application of The Maximum Power Transfer theorem to AC power distribution will not result in maximum or even high efficiency. The goal of high efficiency is more important for AC power distribution, which dictates a relatively low generator impedance compared to the load impedance.</p>
+<p>Similar to AC power distribution, high fidelity audio amplifiers are designed for a relatively low output impedance and a relatively high speaker load impedance. As a ratio, &ldquo;output impedance&rdquo;: &ldquo;load impedance&rdquo; is known as <em>damping factor</em>, typically in the range of 100 to 1000.</p>
+<p>Maximum power transfer does not coincide with the goal of the lowest noise. For example, the low-level radio frequency amplifier between the antenna and a radio receiver is often designed for the lowest possible noise. This often requires a mismatch of the amplifier input impedance to the antenna as compared with that dictated by the maximum power transfer theorem.</p>
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li>The <em>Maximum Power Transfer Theorem</em> states that the maximum amount of power will be dissipated by a load resistance if it is equal to the Thevenin or Norton resistance of the network supplying power.</li>
+<li>The Maximum Power Transfer Theorem does <strong>not</strong> satisfy the goal of maximum efficiency.</li>
+</ul>
+
+
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,179 @@
+# Practical Considerations - Transformers
+## Power Capacity
+<p>As has already been observed, transformers must be well designed in order to achieve acceptable power coupling, tight voltage regulation, and low exciting current distortion. Also, transformers must be designed to carry the expected values of primary and secondary winding current without any trouble.</p>
+<p>This means the winding conductors must be made of the proper gauge wire to avoid any heating problems.</p>
+### Ideal Transformer
+<p>An ideal transformer would have perfect coupling (no leakage inductance), perfect voltage regulation, perfectly sinusoidal exciting current, no hysteresis or eddy current losses, and wire thick enough to handle any amount of current. Unfortunately, the ideal transformer would have to be infinitely large and heavy to meet these design goals.</p>
+<p>Thus, in the business of <em>practical </em>transformer design, compromises must be made.</p>
+<p>Additionally, winding conductor insulation is a concern where high voltages are encountered, as they often are in step-up and step-down power distribution transformers.</p>
+<p>Not only do the windings have to be well insulated from the iron core, but each winding has to be sufficiently insulated from the other in order to maintain electrical isolation between windings.</p>
+### Transformer Ratings
+<p>Respecting these limitations, transformers are rated for certain levels of primary and secondary winding voltage and current, though the current rating is usually derived from a volt-amp (VA) rating assigned to the transformer.</p>
+<p>For example, take a step-down transformer with a primary voltage rating of 120 volts, a secondary voltage rating of 48 volts, and a VA rating of 1 kVA (1000 VA). The maximum winding currents can be determined as such:kVA (1000 VA). The maximum winding currents can be determined as such:</p>
+
+<p><img src="/uploads/articles/maximum-winding-currents-formula.jpg" /></p>
+
+<p>Sometimes windings will bear current ratings in amps, but this is typically seen on small transformers. Large transformers are almost always rated in terms of winding voltage and VA or kVA.</p>
+## Energy Losses
+<p>When transformers transfer power, they do so with a minimum of loss. As it was stated earlier, modern power transformer designs typically exceed 95% efficiency. It is good to know where some of this lost power goes, however, and what causes it to be lost.</p>
+<p>There is, of course, power loss due to the resistance of the wire windings. Unless superconducting wires are used, there will always be power dissipated in the form of heat through the resistance of current-carrying conductors. Because transformers require such long lengths of wire, this loss can be a significant factor.</p>
+<p>Increasing the gauge of the winding wire is one way to minimize this loss, but only with substantial increases in cost, size, and weight.</p>
+### Eddy-Current Loss
+<p>Resistive losses aside, the bulk of transformer power loss is due to magnetic effects in the core. Perhaps the most significant of these &ldquo;core losses&rdquo; is an <em>eddy-current loss</em>, which is resistive power dissipation due to the passage of induced currents through the iron of the core.</p>
+<p>Because iron is a conductor of electricity as well as being an excellent &ldquo;conductor&rdquo; of magnetic flux, there will be currents induced in the iron just as there are currents induced in the secondary windings from the alternating magnetic field.</p>
+<p>These induced currents&mdash;as described by the perpendicularity clause of Faraday&rsquo;s Law &mdash;tend to circulate through the cross-section of the core perpendicularly to the primary winding turns.</p>
+<p>Their circular motion gives them their unusual name: like eddies in a stream of water that circulate rather than move in straight lines.</p>
+<p>Iron is a fair conductor of electricity, but not as good as the copper or aluminum from which wire windings are typically made. Consequently, these &ldquo;eddy currents&rdquo; must overcome significant electrical resistance as they circulate through the core.</p>
+<p>In overcoming the resistance offered by the iron, they dissipate power in the form of heat. Hence, we have a source of inefficiency in the transformer that is difficult to eliminate.</p>
+### Induction Heating
+<p>This phenomenon is so pronounced that it is often exploited as a means of heating ferrous (iron-containing) materials. The photograph below shows an &ldquo;induction heating&rdquo; unit raising the temperature of a large pipe section.</p>
+<p>Loops of wire covered by high-temperature insulation encircle the pipe&rsquo;s circumference, inducing eddy currents within the pipe wall by electromagnetic induction. In order to maximize the eddy current effect, high-frequency alternating current is used rather than power line frequency (60 Hz).</p>
+<p>The box units at the right of the picture produce the high-frequency AC and control the amount of current in the wires to stabilize the pipe temperature at a pre-determined &ldquo;set-point.&rdquo;</p>
+
+<p><img src="/uploads/articles/primary-insulated-winding-induces-current.jpg" /></p>
+<p><em>Induction heating: Primary insulated winding induces current into the lossy iron pipe (secondary).</em></p>
+
+### Mitigating Eddy Currents
+<p>The main strategy in mitigating these wasteful eddy currents in transformer cores is to form the iron core in sheets, each sheet covered with an insulating varnish so that the core is divided up into thin slices. The result is very little width in the core for eddy currents to circulate in:</p>
+
+<p><img src="/uploads/articles/dividing-the-iron-core.jpg" /></p>
+<p><em>Dividing the iron core into thin insulated laminations minimizes eddy current loss.</em></p>
+
+<p><em>Laminated</em> cores like the one shown here are standard in almost all low-frequency transformers. Recall from the photograph of the transformer cut in half that the iron core was composed of many thin sheets rather than one solid piece.</p>
+<p>Eddy current losses increase with frequency, so transformers designed to run on higher-frequency power (such as 400 Hz, used in many military and aircraft applications) must use thinner laminations to keep the losses down to a respectable minimum.</p>
+<p>This has the undesirable effect of increasing the manufacturing cost of the transformer.</p>
+<p>Another, similar technique for minimizing eddy current losses which work better for high-frequency applications is to make the core out of iron powder instead of thin iron sheets.</p>
+<p>Like the lamination sheets, these granules of iron are individually coated in an electrically insulating material, which makes the core nonconductive except for within the width of each granule. Powdered iron cores are often found in transformers handling radio-frequency currents.</p>
+### Magnetic Hysteresis
+<p>Another &ldquo;core loss&rdquo; is that of magnetic <em>hysteresis</em>. All ferromagnetic materials tend to retain some degree of magnetization after exposure to an external magnetic field.</p>
+<p>This tendency to stay magnetized is called &ldquo;hysteresis,&rdquo; and it takes a certain investment in energy to overcome this opposition to change every time the magnetic field produced by the primary winding changes polarity (twice per AC cycle).</p>
+<p>This type of loss can be mitigated through good core material selection (choosing a core alloy with low hysteresis, as evidenced by a &ldquo;thin&rdquo; B/H hysteresis curve), and designing the core for minimum flux density (large cross-sectional area).</p>
+### Skin Effect at High Frequencies
+<p>Transformer energy losses tend to worsen with increasing frequency. The skin effect within winding conductors reduces the available cross-sectional area for electric charge flow, thereby increasing effective resistance as the frequency goes up and creating more power lost through resistive dissipation.</p>
+<p>Magnetic core losses are also exaggerated with higher frequencies, eddy currents, and hysteresis effects becoming more severe. For this reason, transformers of significant size are designed to operate efficiently in a limited range of frequencies.</p>
+<p>In most power distribution systems where the line frequency is very stable, one would think excessive frequency would never pose a problem. Unfortunately, it does, in the form of harmonics created by nonlinear loads.</p>
+<p>As we&rsquo;ve seen in earlier chapters, nonsinusoidal waveforms are equivalent to additive series of multiple sinusoidal waveforms at different amplitudes and frequencies. In power systems, these other frequencies are whole-number multiples of the fundamental (line) frequency, meaning that they will always be higher, not lower, than the design frequency of the transformer.</p>
+<p>In significant measure, they can cause severe transformer overheating. Power transformers can be engineered to handle certain levels of power system harmonics, and this capability is sometimes denoted with a &ldquo;K factor&rdquo; rating.</p>
+## Stray Capacitance and Inductance
+<p>Aside from power ratings and power losses, transformers often harbor other undesirable limitations that circuit designers must be made aware of. Like their simpler counterparts&mdash;inductors&mdash;transformers exhibit capacitance due to the insulation dielectric between conductors: from winding to winding, turn to turn (in a single winding), and winding to the core.</p>
+### Transformer Resonance Frequency
+<p>Usually, this capacitance is of no concern in a power application, but small signal applications (especially those of high frequency) may not tolerate this quirk well.</p>
+<p>Also, the effect of having capacitance along with the windings&rsquo; designed inductance gives transformers the ability to <em>resonate</em> at a particular frequency, definitely a design concern in signal applications where the applied frequency may reach this point (usually the resonant frequency of a power transformer is well beyond the frequency of the AC power it was designed to operate on).</p>
+### Flux Containment
+<p>Flux containment (making sure a transformer&rsquo;s magnetic flux doesn&rsquo;t escape so as to interfere with another device, and making sure other devices&rsquo; magnetic flux is shielded from the transformer core) is another concern shared both by inductors and transformers.</p>
+### Leakage Inductance
+<p>Closely related to the issue of flux containment is leakage inductance. We&rsquo;ve already seen the detrimental effects of leakage inductance on voltage regulation with SPICE simulations early in this chapter. Because leakage inductance is equivalent to an inductance connected in series with the transformer&rsquo;s winding, it manifests itself as a series impedance with the load.</p>
+<p>Thus, the more current drawn by the load, the less voltage available at the secondary winding terminals. Usually, good voltage regulation is desired in transformer design, but there are exceptional applications.</p>
+<p>As was stated before, discharge lighting circuits require a step-up transformer with &ldquo;loose&rdquo; (poor) voltage regulation to ensure reduced voltage after the establishment of an arc through the lamp. One way to meet this design criterion is to engineer the transformer with flux leakage paths for magnetic flux to bypass the secondary winding(s).</p>
+<p>The resulting leakage flux will produce leakage inductance, which will, in turn, produce the poor regulation needed for discharge lighting.</p>
+## Core Saturation
+<p>Transformers are also constrained in their performance by the magnetic flux limitations of the core. For ferromagnetic core transformers, we must be mindful of the saturation limits of the core.</p>
+<p>Remember that ferromagnetic materials cannot support infinite magnetic flux densities: they tend to &ldquo;saturate&rdquo; at a certain level (dictated by the material and core dimensions), meaning that further increases in magnetic field force (mmf) do not result in proportional increases in magnetic field flux (&Phi;).</p>
+<p>When a transformer&rsquo;s primary winding is overloaded from excessive applied voltage, the core flux may reach saturation levels during peak moments of the AC sine wave cycle. If this happens, the voltage induced in the secondary winding will no longer match the wave-shape as the voltage powering the primary coil.</p>
+<p>In other words, the overloaded transformer will <em>distort</em> the waveshape from primary to secondary windings, creating harmonics in the secondary winding&rsquo;s output. As we discussed before, harmonic content in AC power systems typically causes problems.</p>
+### Peaking Transformers
+<p>Special transformers known as <em>peaking transformers</em> exploit this principle to produce brief voltage pulses near the peaks of the source voltage waveform. The core is designed to saturate quickly and sharply, at voltage levels well below peak.</p>
+<p>This results in a severely cropped sine-wave flux waveform, and secondary voltage pulses only when the flux is changing (below saturation levels):</p>
+
+<p><img src="/uploads/articles/voltage-and-flux-waveforms-for-a-peaking-transformer.jpg" /></p>
+<p><em>Voltage and flux waveforms for a peaking transformer.</em></p>
+
+### Operation at Frequencies Lower than Normal
+<p>Another cause of abnormal transformer core saturation is operation at frequencies lower than normal. For example, if a power transformer designed to operate at 60 Hz is forced to operate at 50 Hz instead, the flux must reach greater peak levels than before in order to produce the same opposing voltage needed to balance against the source voltage.</p>
+<p>This is true even if the source voltage is the same as before.</p>
+
+<p><img src="/uploads/articles/magnetic-flux-is-higher-in-transformer-core.jpg" /></p>
+<p><em>Magnetic flux is higher in a transformer core driven by 50 Hz as compared to 60 Hz for the same voltage.</em></p>
+
+<p>Since instantaneous winding voltage is proportional to the instantaneous magnetic flux&rsquo;s <em>rate of change</em> in a transformer, a voltage waveform reaching the same peak value, but taking a longer amount of time to complete each half-cycle, demands that the flux maintain the same rate of change as before, but for longer periods of time.</p>
+<p>Thus, if the flux has to climb at the same rate as before, but for longer periods of time, it will climb to a greater peak value.</p>
+<p>Mathematically, this is another example of calculus in action. Because the voltage is proportional to the flux&rsquo;s rate-of-change, we say that the voltage waveform is the <em>derivative</em> of the flux waveform, &ldquo;derivative&rdquo; being that calculus operation defining one mathematical function (waveform) in terms of the rate-of-change of another.</p>
+<p>If we take the opposite perspective, though, and relate the original waveform to its derivative, we may call the original waveform the <em>integral</em> of the derivative waveform. In this case, the voltage waveform is the derivative of the flux waveform, and the flux waveform is the integral of the voltage waveform.</p>
+<p>The integral of any mathematical function is proportional to the area accumulated underneath the curve of that function. Since each half-cycle of the 50 Hz waveform accumulates more area between it and the zero line of the graph than the 60 Hz waveform will&mdash;and we know that the magnetic flux is the integral of the voltage&mdash;the flux will attain higher values in the Figure below.</p>
+
+<p><img src="/uploads/articles/flux-changing-at-the-same-rate-rises-to-higher-level.jpg" /></p>
+<p><em>Flux changing at the same rate rises to a higher level at 50 Hz than at 60 Hz.</em></p>
+
+<p>Yet another cause of transformer saturation is the presence of DC current in the primary winding. Any amount of DC voltage dropped across the primary winding of a transformer will cause an additional magnetic flux in the core. This additional flux &ldquo;bias&rdquo; or &ldquo;offset&rdquo; will push the alternating flux waveform closer to saturation in one half-cycle than the other.</p>
+
+<p><img src="/uploads/articles/alternating-flux-waveform-closer-to-saturation.jpg" /></p>
+<p><em>DC in primary shifts the waveform peaks toward the upper saturation limit.</em></p>
+
+<p>For most transformers, core saturation is a very undesirable effect, and it is avoided through good design: engineering the windings and core so that magnetic flux densities remain well below the saturation levels.</p>
+<p>This ensures that the relationship between mmf and &Phi; is more linear throughout the flux cycle, which is good because it makes for less distortion in the magnetization current waveform.</p>
+<p>Also, engineering the core for low flux densities provides a safe margin between the normal flux peaks and the core saturation limits to accommodate occasional, abnormal conditions such as frequency variation and DC offset.</p>
+## Inrush Current
+<p>When a transformer is initially connected to a source of AC voltage, there may be a substantial surge of current through the primary winding called <em>inrush current</em>. This is analogous to the inrush current exhibited by an electric motor that is started up by sudden connection to a power source, although transformer inrush is caused by a different phenomenon.</p>
+<p>We know that the rate of change of instantaneous flux in a transformer core is proportional to the instantaneous voltage drop across the primary winding. Or, as stated before, the voltage waveform is the derivative of the flux waveform, and the flux waveform is the integral of the voltage waveform.</p>
+<p>In a continuously-operating transformer, these two waveforms are phase-shifted by 90&deg;. Since flux (&Phi;) is proportional to the magnetomotive force (mmf) in the core, and the mmf is proportional to winding current, the current waveform will be in-phase with the flux waveform, and both will be lagging the voltage waveform by 90&deg;:</p>
+
+<p><img src="/uploads/articles/continuous-steady-state-operation.jpg" /></p>
+<p><em>Continuous steady-state operation: Magnetic flux, like current, lags applied voltage by 90&deg;.</em></p>
+
+<p>Let us suppose that the primary winding of a transformer is suddenly connected to an AC voltage source at the exact moment in time when the instantaneous voltage is at its positive peak value.</p>
+<p>In order for the transformer to create an opposing voltage drop to balance against this applied source voltage, a magnetic flux of rapidly increasing value must be generated. The result is that winding current increases rapidly, but actually no more rapidly than under normal conditions:</p>
+
+<p><img src="/uploads/articles/connecting-transformer-to-line-at-ac-volt-peak.jpg" /></p>
+<p><em>Connecting the transformer to the line at AC volt peak: Flux increases rapidly from zero, same as steady-state operation.</em></p>
+
+<p>Both core flux and coil current start from zero and build up to the same peak values experienced during continuous operation. Thus, there is no &ldquo;surge&rdquo; or &ldquo;inrush&rdquo; or current in this scenario.</p>
+<p>Alternatively, let us consider what happens if the transformer&rsquo;s connection to the AC voltage source occurs at the exact moment in time when the instantaneous voltage is at zero.</p>
+<p>During continuous operation (when the transformer has been powered for quite some time), this is the point in time where both flux and winding current are at their negative peaks, experiencing zero rate-of-change (d&Phi;/dt = 0 and di/dt = 0).</p>
+<p>As the voltage builds to its positive peak, the flux and current waveforms build to their maximum positive rates-of-change, and on upward to their positive peaks as the voltage descends to a level of zero:</p>
+
+<p><img src="/uploads/articles/flux-and-current-waveforms-build.jpg" /></p>
+<p><em>Starting at e=0 V is not the same as running continuously in Figure above. These expected waveforms are incorrect&ndash; &Phi; and I should start at zero.</em></p>
+
+<p>A significant difference exists, however, between continuous-mode operation and the sudden starting condition assumed in this scenario: during continuous operation, the flux and current levels were at their negative peaks when voltage was at its zero points; in a transformer that has been sitting idle, however, both magnetic flux and winding current should start at <em>zero</em>.</p>
+<p>When the magnetic flux increases in response to a rising voltage, it will increase from zero upward, not from a previously negative (magnetized) condition as we would normally have in a transformer that&rsquo;s been powered for a while.</p>
+<p>Thus, in a transformer that&rsquo;s just &ldquo;starting,&rdquo; the flux will reach approximately twice its normal peak magnitude as it &ldquo;integrates&rdquo; the area under the voltage waveform&rsquo;s first half-cycle:</p>
+
+<p><img src="/uploads/articles/voltage-waveforms-first-half-cycle.jpg" /></p>
+<p><em>Starting at e=0 V, &Phi; starts at initial condition &Phi;=0, increasing to twice the normal value, assuming it doesn&rsquo;t saturate the core.</em></p>
+
+<p>In an ideal transformer, the magnetizing current would rise to approximately twice its normal peak value as well, generating the necessary mmf to create this higher-than-normal flux.</p>
+<p>However, most transformers aren&rsquo;t designed with enough of a margin between normal flux peaks and the saturation limits to avoid saturating in a condition like this, and so the core will almost certainly saturate during this first half-cycle of voltage.</p>
+<p>During saturation, disproportionate amounts of mmf are needed to generate magnetic flux. This means that winding current, which creates the mmf to cause a flux in the core, will disproportionately rise to a value <em>easily exceeding</em> twice its normal peak:</p>
+
+<p><img src="/uploads/articles/creates-the-mmf-to-cause-flux-in-the-core.jpg" /></p>
+<p><em>Starting at e=0 V, Current also increases to twice the normal value for an unsaturated core, or considerably higher in the (designed for) case of saturation.</em></p>
+
+<p>This is the mechanism causing inrush current in a transformer&rsquo;s primary winding when connected to an AC voltage source. As you can see, the magnitude of the inrush current strongly depends on the exact time that electrical connection to the source is made.</p>
+<p>If the transformer happens to have some residual magnetism in its core at the moment of connection to the source, the inrush could be even more severe. Because of this, transformer overcurrent protection devices are usually of the &ldquo;slow-acting&rdquo; variety, so as to tolerate current surges such as this without opening the circuit.</p>
+## Heat and Noise
+<p>In addition to unwanted electrical effects, transformers may also exhibit undesirable physical effects, the most notable being the production of heat and noise. Noise is primarily a nuisance effect, but heat is a potentially serious problem because winding insulation will be damaged if allowed to overheat.</p>
+<p>Heating may be minimized by good design, ensuring that the core does not approach saturation levels, that eddy currents are minimized, and that the windings are not overloaded or operated too close to maximum ampacity.</p>
+<p>Large power transformers have their core and windings submerged in an oil bath to transfer heat and muffle noise, and also to displace moisture which would otherwise compromise the integrity of the winding insulation.</p>
+<p>Heat-dissipating &ldquo;radiator&rdquo; tubes on the outside of the transformer case provide a convective oil flow path to transfer heat from the transformer&rsquo;s core to ambient air:</p>
+
+<p><img src="/uploads/articles/large-power-transformers.jpg" /></p>
+<p><em>Large power transformers are submerged in heat dissipating insulating oil.</em></p>
+
+<p>Oil-less, or &ldquo;dry,&rdquo; transformers are often rated in terms of maximum operating temperature &ldquo;rise&rdquo; (temperature increase beyond ambient) according to a letter-class system: A, B, F, or H. These letter codes are arranged in order of lowest heat tolerance to highest:</p>
+<ul>
+<li><strong>Class A:</strong> No more than 55&deg; Celsius winding temperature rise, at 40&deg; Celsius (maximum) ambient air temperature.</li>
+<li><strong>Class B:</strong> No more than 80&deg; Celsius winding temperature rise, at 40&deg; Celsius (maximum)ambient air temperature.</li>
+<li><strong>Class F:</strong> No more than 115&deg; Celsius winding temperature rise, at 40&deg; Celsius (maximum)ambient air temperature.</li>
+<li><strong>Class H:</strong> No more than 150&deg; Celsius winding temperature rise, at 40&deg; Celsius (maximum)ambient air temperature.</li>
+</ul>
+<p>Audible noise is an effect primarily originating from the phenomenon of <em>magnetostriction</em>: the slight change of length exhibited by a ferromagnetic object when magnetized.</p>
+<p>The familiar &ldquo;hum&rdquo; heard around large power transformers is the sound of the iron core expanding and contracting at 120 Hz (twice the system frequency, which is 60 Hz in the United States)&mdash;one cycle of core contraction and expansion for every peak of the magnetic flux waveform&mdash;plus noise created by mechanical forces between primary and secondary windings.</p>
+<p>Again, maintaining low magnetic flux levels in the core is the key to minimizing this effect, which explains why ferroresonant transformers&mdash;which must operate in saturation for a large portion of the current waveform&mdash;operate both hot and noisy.</p>
+### Losses due to Winding Magnetic Forces
+<p>Another noise-producing phenomenon in power transformers is the physical reaction force between primary and secondary windings when heavily loaded.</p>
+<p>If the secondary winding is open-circuited, there will be no current through it, and consequently, no magneto-motive force (mmf) produced by it. However, when the secondary is &ldquo;loaded&rdquo; (currently supplied to a load), the winding generates an mmf, which becomes counteracted by a &ldquo;reflected&rdquo; mmf in the primary winding to prevent core flux levels from changing.</p>
+<p>These opposing mmf&rsquo;s generated between primary and secondary windings as a result of secondary (load) current produce a repulsive, physical force between the windings which will tend to make them vibrate.</p>
+<p>Transformer designers have to consider these physical forces in the construction of the winding coils, to ensure there is adequate mechanical support to handle the stresses. Under heavy load (high current) conditions, though, these stresses may be great enough to cause audible noise to emanate from the transformer.</p>
+
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li>Power transformers are limited in the amount of power they can transfer from primary to secondary winding(s). Large units are typically rated in VA (volt-amps) or kVA (kilo volt-amps).</li>
+<li>Resistance in transformer windings contributes to inefficiency, as current will dissipate heat, wasting energy.</li>
+<li>Magnetic effects in a transformer&rsquo;s iron core also contribute to inefficiency. Among the effects are <em>eddy currents</em> (circulating induction currents in the iron core) and <em>hysteresis</em> (power lost due to overcoming the tendency of iron to magnetize in a particular direction).</li>
+<li>Increased frequency results in increased power losses within a power transformer. The presence of harmonics in a power system is a source of frequencies significantly higher than normal, which may cause overheating in large transformers.</li>
+<li>Both transformers and inductors harbor certain unavoidable amounts of capacitance due to wire insulation (dielectric) separating winding turns from the iron core and from each other. This capacitance can be significant enough to give the transformer a natural <em>resonant frequency</em>, which can be problematic in signal applications.</li>
+<li><em>Leakage inductance</em> is caused by magnetic flux not being 100% coupled between windings in a transformer. Any flux not involved with <em>transferring</em> energy from one winding to another will store and release energy, which is how (self-) inductance works. Leakage inductance tends to worsen a transformer&rsquo;s voltage regulation (secondary voltage &ldquo;sags&rdquo; more for a given amount of load current).</li>
+<li>Magnetic <em>saturation</em> of a transformer core may be caused by excessive primary voltage, operation at too low of a frequency, and/or by the presence of a DC current in any of the windings. Saturation may be minimized or avoided by conservative design, which provides an adequate margin of safety between peak magnetic flux density values and the saturation limits of the core.</li>
+<li>Transformers often experience significant <em>inrush currents</em> when initially connected to an AC voltage source. Inrush current is most severe when the connection to the AC source is made at the moment instantaneous source voltage is zero.</li>
+<li>Noise is a common phenomenon exhibited by transformers&mdash;especially power transformers&mdash;and is primarily caused by <em>magnetostriction</em> of the core. Physical forces causing winding vibration may also generate noise under conditions of heavy (high current) secondary winding load.</li>
+</ul>

@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Reference</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='025.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='027.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>Rectifier Circuits</h1>
+<p>  </p>
+<h2>What is Rectification?</h2>
+<p>Now we come to the most popular application of the diode: <em>rectification</em>. Simply defined, rectification is the conversion of alternating current (AC) to direct current (DC). This involves a device that only allows one-way flow of electric charge. As we have seen, this is exactly what a semiconductor diode does. The simplest kind of rectifier circuit is the <em>half-wave</em> rectifier. It only allows one half of an AC waveform to pass through to the load. (Figure below)</p>
+<p><img src=&quot;/uploads/articles/half-wave-rectifier-circuit.jpg&quot; /></p>
+<p>Half-wave rectifier circuit.</p>
+<h2>Half-Wave Rectification</h2>
+<p>For most power applications, half-wave rectification is insufficient for the task. The harmonic content of the rectifier&rsquo;s output waveform is very large and consequently difficult to filter. Furthermore, the AC power source only supplies power to the load one half every full cycle, meaning that half of its capacity is unused. Half-wave rectification is, however, a very simple way to reduce power to a resistive load. Some two-position lamp dimmer switches apply full AC power to the lamp filament for &ldquo;full&rdquo; brightness and then half-wave rectify it for a lesser light output. (figure below)</p>
+<p><img src=&quot;/uploads/articles/half-wave-rectifier-application.jpg&quot; /></p>
+<p>Half-wave rectifier application: Two level lamp dimmer.</p>
+<p>In the &ldquo;Dim&rdquo; switch position, the incandescent lamp receives approximately one-half the power it would normally receive operating on full-wave AC. Because the half-wave rectified power pulses far more rapidly than the filament has time to heat up and cool down, the lamp does not blink. Instead, its filament merely operates at a lesser temperature than normal, providing less light output.</p>
+<p>This principle of &ldquo;pulsing&rdquo; power rapidly to a slow-responding load device to control the electrical power sent to it is common in the world of industrial electronics. Since the controlling device (the diode, in this case) is either fully conducting or fully nonconducting at any given time, it dissipates little heat energy while controlling load power, making this method of power control very energy-efficient. This circuit is perhaps the crudest possible method of pulsing power to a load, but it suffices as a proof-of-concept application.   </p>
+<h2>Full-Wave Rectifiers</h2>
+<p>If we need to rectify AC power to obtain the full use of <em>both</em> half-cycles of the sine wave, a different rectifier circuit configuration must be used. Such a circuit is called a <em>full-wave</em> rectifier. One kind of full-wave rectifier, called the <em>center-tap</em> design, uses a transformer with a center-tapped secondary winding and two diodes, as in the figure below.</p>
+<p><img src=&quot;/uploads/articles/full-waive-rectifier-center-tapped-design.jpg&quot; /></p>
+<p>Full-wave rectifier, center-tapped design.</p>
+<h2>Positive Half-Cycle</h2>
+<p>This circuit&rsquo;s operation is easily understood one half-cycle at a time. Consider the first half-cycle, when the source voltage polarity is positive (+) on top and negative (-) on bottom. At this time, only the top diode is conducting; the bottom diode is blocking current, and the load &ldquo;sees&rdquo; the first half of the sine wave, positive on top and negative on bottom. Only the top half of the transformer&rsquo;s secondary winding carries current during this half-cycle as in the figure below.</p>
+<p><img src=&quot;/uploads/articles/full-wave-center-tap-rectifier-positive-half-cycle.jpg&quot; /></p>
+<p>Full-wave center-tap rectifier: Top half of secondary winding conducts during positive half-cycle of input, delivering positive half-cycle to load.</p>
+<h2>Negative Half-Cycle</h2>
+<p>During the next half-cycle, the AC polarity reverses. Now, the other diode and the other half of the transformer&rsquo;s secondary winding carry current while the portions of the circuit formerly carrying current during the last half-cycle sit idle. The load still &ldquo;sees&rdquo; half of a sine wave, of the same polarity as before: positive on top and negative on bottom. (Figure below)</p>
+<p><img src=&quot;/uploads/articles/full-wave-center-tap-rectifier-negative-half-cycle.jpg&quot; /></p>
+<p>Full-wave center-tap rectifier: During negative input half-cycle, bottom half of secondary winding conducts, delivering a positive half-cycle to the load.</p>
+<h2>Disadvantages of Full-wave rectifier Design</h2>
+<p>One disadvantage of this full-wave rectifier design is the necessity of a transformer with a center-tapped secondary winding. If the circuit in question is one of high power, the size and expense of a suitable transformer is significant. Consequently, the center-tap rectifier design is only seen in low-power applications.</p>
+<h2>Other Configurations</h2>
+<p>The full-wave center-tapped rectifier polarity at the load may be reversed by changing the direction of the diodes. Furthermore, the reversed diodes can be paralleled with an existing positive-output rectifier. The result is dual-polarity full-wave center-tapped rectifier in the figure below. Note that the connectivity of the diodes themselves is the same configuration as a bridge.</p>
+<p><img src=&quot;/uploads/articles/dual-polarity-full-wave-center-tap-rectifier.jpg&quot; /></p>
+<p>Dual polarity full-wave center tap rectifier</p>
+<p>  </p>
+<h2>Full-Wave Bridge Rectifiers</h2>
+<p>Another, more popular full-wave rectifier design exists, and it is built around a four-diode bridge configuration. For obvious reasons, this design is called a <em>full-wave bridge</em>. (Figure below)</p>
+<p><img src=&quot;/uploads/articles/full-wave-bridge-rectifier.jpg&quot; /></p>
+<p>Full-wave bridge rectifier.</p>
+<p>Current directions for the full-wave bridge rectifier circuit are as shown in the figure below for positive half-cycle and the figure below for negative half-cycles of the AC source waveform. Note that regardless of the polarity of the input, the current flows in the same direction through the load. That is, the negative half-cycle of source is a positive half-cycle at the load.</p>
+<p>The current flow is through two diodes in series for both polarities. Thus, two diode drops of the source voltage are lost (0.7&middot;2=1.4 V for Si) in the diodes. This is a disadvantage compared with a full-wave center-tap design. This disadvantage is only a problem in very low voltage power supplies.</p>
+<p><img src=&quot;/uploads/articles/full-wave-bridge-rectifier-current-flow-for-positive-half-cycles.jpg&quot; /></p>
+<p>Full-wave bridge rectifier: Current flow for positive half-cycles.</p>
+<p><img src=&quot;/uploads/articles/full-wave-bridge-rectifier-current-flow-for-negative-half-cycles.jpg&quot; /></p>
+<p>Full-wave bridge rectifier: Current flow for negative half-cycles.</p>
+<h2>Alternative Full-wave Bridge Rectifier Circuit Diagram</h2>
+<p>Remembering the proper layout of diodes in a full-wave bridge rectifier circuit can often be frustrating to the new student of electronics. I&rsquo;ve found that an alternative representation of this circuit is easier both to remember and to comprehend. It&rsquo;s the exact same circuit, except all diodes are drawn in a horizontal attitude, all &ldquo;pointing&rdquo; the same direction. (Figure below)</p>
+<p><img src=&quot;/uploads/articles/alternative-layout-style-for-full-wave-bridge-rectifier.jpg&quot; /></p>
+<p>Alternative layout style for Full-wave bridge rectifier.</p>
+<p>  </p>
+<h2>Polyphase Version using Alternative Layout</h2>
+<p>One advantage of remembering this layout for a bridge rectifier circuit is that it expands easily into a polyphase version in Figure below.</p>
+<p></p>
+<p><img src=&quot;/uploads/articles/three-phase-full-wave-bridge-rectifier-circuit.jpg&quot; /></p>
+<p><em>Three-phase full-wave bridge rectifier circuit.</em></p>
+<p>Each three-phase line connects between a pair of diodes: one to route power to the positive (+) side of the load, and the other to route power to the negative (-) side of the load.</p>
+<p>Polyphase systems with more than three phases are easily accommodated into a bridge rectifier scheme. Take for instance the six-phase bridge rectifier circuit in the figure below.</p>
+<p><img src=&quot;/uploads/articles/six-phase-full-waive-bridge-rectifier-circuit.jpg&quot; /></p>
+<p>Six-phase full-wave bridge rectifier circuit.</p>
+<p>When polyphase AC is rectified, the phase-shifted pulses overlap each other to produce a DC output that is much &ldquo;smoother&rdquo; (has less AC content) than that produced by the rectification of single-phase AC. This is a decided advantage in high-power rectifier circuits, where the sheer physical size of filtering components would be prohibitive but low-noise DC power must be obtained. The diagram in the figure below shows the full-wave rectification of three-phase AC.</p>
+<p></p>
+<p><img src=&quot;/uploads/articles/three-phase-ac-and-three-phase-full-wave-rectifier-output.jpg&quot; /></p>
+<p><em>Three-phase AC and 3-phase full-wave rectifier output.</em></p>
+<p> </p>
+<h2>Ripple Voltage</h2>
+<p>In any case of rectification&mdash;single-phase or polyphase&mdash;the amount of AC voltage mixed with the rectifier&rsquo;s DC output is called <em>ripple voltage</em>. In most cases, since &ldquo;pure&rdquo; DC is the desired goal, ripple voltage is undesirable. If the power levels are not too great, filtering networks may be employed to reduce the amount of ripple in the output voltage.</p>
+<h2>1-Pulse, 2-Pulse, and 6-Pulse Units</h2>
+<p>Sometimes, the method of rectification is referred to by counting the number of DC &ldquo;pulses&rdquo; output for every 360<sup>o</sup> of electrical &ldquo;rotation.&rdquo; A single-phase, half-wave rectifier circuit, then, would be called a <em>1-pulse</em> rectifier, because it produces a single pulse during the time of one complete cycle (360<sup>o</sup>) of the AC waveform. A single-phase, full-wave rectifier (regardless of design, center-tap or bridge) would be called a <em>2-pulse</em> rectifier because it outputs two pulses of DC during one AC cycle&rsquo;s worth of time. A three-phase full-wave rectifier would be called a <em>6-pulse</em> unit.</p>
+<h2>Rectifier Circuit Phases</h2>
+<p>Modern electrical engineering convention further describes the function of a rectifier circuit by using a three-field notation of <em>phases</em>, <em>ways</em>, and number of <em>pulses</em>. A single-phase, half-wave rectifier circuit is given the somewhat cryptic designation of 1Ph1W1P (1 phase, 1 way, 1 pulse), meaning that the AC supply voltage is single-phase, that current on each phase of the AC supply lines moves in only one direction (way), and that there is a single pulse of DC produced for every 360<sup>o</sup> of electrical rotation.</p>
+<p>A single-phase, full-wave, center-tap rectifier circuit would be designated as 1Ph1W2P in this notational system: 1 phase, 1 way or direction of current in each winding half, and 2 pulses or output voltage per cycle.</p>
+<p>A single-phase, full-wave, bridge rectifier would be designated as 1Ph2W2P: the same as for the center-tap design, except current, can go <em>both</em> ways through the AC lines instead of just one way.</p>
+<p>The three-phase bridge rectifier circuit shown earlier would be called a 3Ph2W6P rectifier.</p>
+<h2>Is it Possible to Obtain More Pulses Than Twice the Number of Phases in a Rectifier Circuit?</h2>
+<p>The answer to this question is yes:, especially in polyphase circuits. Through the creative use of transformers, sets of full-wave rectifiers may be paralleled in such a way that more than six pulses of DC are produced for three phases of AC. A 30<sup>o</sup> phase shift is introduced from primary to secondary of a three-phase transformer when the winding configurations are not of the same type.</p>
+<p>In other words, a transformer connected either Y-&Delta; or &Delta;-Y will exhibit this 30<sup>o</sup> phase shift, while a transformer connected Y-Y or &Delta;-&Delta; will not. This phenomenon may be exploited by having one transformer connected Y-Y feed a bridge rectifier, and have another transformer connected Y-&Delta; feed a second bridge rectifier, then parallel the DC outputs of both rectifiers. (Figure below)</p>
+<p>Since the ripple voltage waveforms of the two rectifiers&rsquo; outputs are phase-shifted 30<sup>o</sup> from one another, their superposition results in less ripple than either rectifier output considered separately: 12 pulses per 360<sup>o</sup> instead of just six: </p>
+<p><img src=&quot;/uploads/articles/polyphase-rectifier-circuit.jpg&quot; /></p>
+<p>Polyphase rectifier circuit: 3-phase 2-way 12-pulse (3Ph2W12P)</p>
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li><em>Rectification</em> is the conversion of alternating current (AC) to direct current (DC).</li>
+<li>A <em>half-wave</em> rectifier is a circuit that allows only one half-cycle of the AC voltage waveform to be applied to the load, resulting in one non-alternating polarity across it. The resulting DC delivered to the load &ldquo;pulsates&rdquo; significantly.</li>
+<li>A <em>full-wave</em> rectifier is a circuit that converts both half-cycles of the AC voltage waveform to an unbroken series of voltage pulses of the same polarity. The resulting DC delivered to the load doesn&rsquo;t &ldquo;pulsate&rdquo; as much.</li>
+<li>Polyphase alternating current, when rectified, gives a much &ldquo;smoother&rdquo; DC waveform (less <em>ripple</em> voltage) than rectified single-phase AC.</li>
+</ul>
+
+
+
+</div>
+</div>
+</body>
+</html>

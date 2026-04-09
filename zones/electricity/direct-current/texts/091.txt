@@ -1,0 +1,108 @@
+###### 12. Physics Of Conductors And Insulators
+
+# Conductor Size
+<p>It should be common-sense knowledge that liquids flow through large-diameter pipes easier than they do through small-diameter pipes (if you would like a practical illustration, try drinking a liquid through straws of different diameters). The same general principle holds for the flow of electrons through conductors: the broader the cross-sectional area (thickness) of the conductor, the more room for electrons to flow, and consequently, the easier it is for flow to occur (less resistance).</p>
+## Two Basic Varieties of Electrical Wire: Solid and Stranded
+<p>Electrical wire is usually round in cross-section (although there are some unique exceptions to this rule), and comes in two basic varieties: <strong><em>solid and stranded</em></strong>. <strong><em>Solid copper wire</em></strong> is just as it sounds: a single, solid strand of copper the whole length of the wire.<strong><em> Stranded wire</em></strong> is composed of smaller strands of solid copper wire twisted together to form a single, larger conductor. The greatest benefit of stranded wire is its mechanical flexibility, being able to withstand repeated bending and twisting much better than solid copper (which tends to fatigue and break after time).</p>
+<p>Wire size can be measured in several ways. We could speak of a wire&rsquo;s diameter, but since its really the cross-sectional <em>area</em> that matters most regarding the flow of electrons, we are better off designating wire size in terms of area.</p>
+
+^[091-01.png]
+
+<p>The wire cross-section picture shown above is, of course, not drawn to scale. The diameter is shown as being 0.1019 inches. Calculating the area of the cross-section with the formula Area = &pi;r<sub>2</sub>, we get an area of 0.008155 square inches:</p>
+
+^[091-02.png]
+
+<p>These are fairly small numbers to work with, so wire sizes are often expressed in measures of thousandths-of-an-inch, or <em>mils</em>. For the illustrated example, we would say that the diameter of the wire was 101.9 mils (0.1019 inch times 1000). We could also, if we wanted, express the area of the wire in the unit of square mils, calculating that value with the same circle-area formula, Area = &pi;r<sub>2</sub>:</p>
+
+^[091-03.png]
+
+^[091-04.png]
+
+## Calculating the Circular-mil Area of a Wire
+<p>However, electricians and others frequently concerned with wire size use another unit of area measurement tailored specifically for wire&rsquo;s circular cross-section. This special unit is called the <em>circular mil</em> (sometimes abbreviated <em>cmil</em>). The sole purpose for having this special unit of measurement is to eliminate the need to invoke the factor &pi; (3.1415927 . . .) in the formula for calculating area, plus the need to figure wire <em>radius </em>when you&rsquo;ve been given <em>diameter</em>. The formula for calculating the circular-mil area of a circular wire is very simple:</p>
+
+^[091-05.png]
+
+<p>Because this is a unit of <em>area</em> measurement, the mathematical power of 2 is still in effect (doubling the width of a circle will <em>always</em> quadruple its area, no matter what units are used, or if the width of that circle is expressed in terms of radius or diameter). To illustrate the difference between measurements in square mils and measurements in circular mils, I will compare a circle with a square, showing the area of each shape in both unit measures:</p>
+
+^[091-06.png]
+
+<p>And for another size of wire:</p>
+
+^[091-07.png]
+
+<p>Obviously, the circle of a given diameter has less cross-sectional area than a square of width and height equal to the circle&rsquo;s diameter: both units of area measurement reflect that. However, it should be clear that the unit of &ldquo;square mil&rdquo; is really tailored for the convenient determination of a square&rsquo;s area, while &ldquo;circular mil&rdquo; is tailored for the convenient determination of a circle&rsquo;s area: the respective formula for each is simpler to work with. It must be understood that both units are valid for measuring the area of a shape, no matter what shape that may be. The conversion between circular mils and square mils is a simple ratio: there are &pi; (3.1415927 . . .) square mils to every 4 circular mils.</p>
+## Measuring Cross-Sectional Wire Area with Gauge
+<p>Another measure of cross-sectional wire area is the <em>gauge</em>. The gauge scale is based on whole numbers rather than fractional or decimal inches. The larger the gauge number, the skinnier the wire; the smaller the gauge number, the fatter the wire. For those acquainted with shotguns, this inversely-proportional measurement scale should sound familiar.</p>
+<p>The table at the end of this section equates gauge with inch diameter, circular mils, and square inches for solid wire. The larger sizes of wire reach an end of the common gauge scale (which naturally tops out at a value of 1), and are represented by a series of zeros. &ldquo;3/0&rdquo; is another way to represent &ldquo;000,&rdquo; and is pronounced &ldquo;triple-ought.&rdquo; Again, those acquainted with shotguns should recognize the terminology, strange as it may sound. To make matters even more confusing, there is more than one gauge &ldquo;standard&rdquo; in use around the world. For electrical conductor sizing, the <em>American Wire Gauge</em> (AWG), also known as the <em>Brown and Sharpe</em> (B&amp;S) gauge, is the measurement system of choice. In Canada and Great Britain, the <em>British Standard Wire Gauge</em> (SWG) is the legal measurement system for electrical conductors. Other wire gauge systems exist in the world for classifying wire diameter, such as the <em>Stubs</em> steel wire gauge and the <em>Steel Music Wire Gauge</em> (MWG), but these measurement systems apply to non-electrical wire use.</p>
+<p>The American Wire Gauge (AWG) measurement system, despite its oddities, was designed with a purpose: for every three steps in the gauge scale, wire area (and weight per unit length) approximately doubles. This is a handy rule to remember when making rough wire size estimations!</p>
+<p>For <em>very</em> large wire sizes (fatter than 4/0), the wire gauge system is typically abandoned for cross-sectional area measurement in thousands of circular mils (MCM), borrowing the old Roman numeral &ldquo;M&rdquo; to denote a multiple of &ldquo;thousand&rdquo; in front of &ldquo;CM&rdquo; for &ldquo;circular mils.&rdquo; The following table of wire sizes does not show any sizes bigger than 4/0 gauge, because <em>solid</em> copper wire becomes impractical to handle at those sizes. Stranded wire construction is favored, instead.</p>
+### Wire Table For Solid, Round Copper Conductors
+
+[|
+¦Size¦Diameter¦Cross-sectional~~area¦Weight    ¦          ¦
+¦AWG ¦Inches  ¦cir. mils            ¦sq. inches¦lb/1000 ft¦
+|4/0|0.4600  |211,600|0.1662     |640.5  |
+|3/0|0.4096  |167,800|0.1318     |507.9  |
+|2/0|0.3648  |133,100|0.1045     |402.8  |
+|1/0|0.3249  |105,500|0.08289    |319.5  |
+|1  |0.2893  |83,690 |0.06573    |253.5  |
+|2  |0.2576  |66,370 |0.05213    |200.9  |
+|3  |0.2294  |52,630 |0.04134    |159.3  |
+|4  |0.2043  |41,740 |0.03278    |126.4  |
+|5  |0.1819  |33,100 |0.02600    |100.2  |
+|6  |0.1620  |26,250 |0.02062    |79.46  |
+|7  |0.1443  |20,820 |0.01635    |63.02  |
+|8  |0.1285  |16,510 |0.01297    |49.97  |
+|9  |0.1144  |13,090 |0.01028    |39.63  |
+|10 |0.1019  |10,380 |0.008155   |31.43  |
+|11 |0.09074 |8,234  |0.006467   |24.92  |
+|12 |0.08081 |6,530  |0.005129   |19.77  |
+|13 |0.07196 |5,178  |0.004067   |15.68  |
+|14 |0.06408 |4,107  |0.003225   |12.43  |
+|15 |0.05707 |3,257  |0.002558   |9.858  |
+|16 |0.05082 |2,583  |0.002028   |7.818  |
+|17 |0.04526 |2,048  |0.001609   |6.200  |
+|18 |0.04030 |1,624  |0.001276   |4.917  |
+|19 |0.03589 |1,288  |0.001012   |3.899  |
+|20 |0.03196 |1,022  |0.0008023  |3.092  |
+|21 |0.02846 |810.1  |0.0006363  |2.452  |
+|22 |0.02535 |642.5  |0.0005046  |1.945  |
+|23 |0.02257 |509.5  |0.0004001  |1.542  |
+|24 |0.02010 |404.0  |0.0003173  |1.233  |
+|25 |0.01790 |320.4  |0.0002517  |0.9699 |
+|26 |0.01594 |254.1  |0.0001996  |0.7692 |
+|27 |0.01420 |201.5  |0.0001583  |0.6100 |
+|28 |0.01264 |159.8  |0.0001255  |0.4837 |
+|29 |0.01126 |126.7  |0.00009954 |0.3836 |
+|30 |0.01003 |100.5  |0.00007894 |0.3042 |
+|31 |0.008928|79.70  |0.00006260 |0.2413 |
+|32 |0.007950|63.21  |0.00004964 |0.1913 |
+|33 |0.007080|50.13  |0.00003937 |0.1517 |
+|34 |0.006305|39.75  |0.00003122 |0.1203 |
+|35 |0.005615|31.52  |0.00002476 |0.09542|
+|36 |0.005000|25.00  |0.00001963 |0.07567|
+|37 |0.004453|19.83  |0.00001557 |0.06001|
+|38 |0.003965|15.72  |0.00001235 |0.04759|
+|39 |0.003531|12.47  |0.000009793|0.03774|
+|40 |0.003145|9.888  |0.000007766|0.02993|
+|41 |0.002800|7.842  |0.000006159|0.02374|
+|42 |0.002494|6.219  |0.000004884|0.01882|
+|43 |0.002221|4.932  |0.000003873|0.01493|
+|]
+
+<p>For some high-current applications, conductor sizes beyond the practical size limit of round wire are required. In these instances, thick bars of solid metal called <em>busbars</em> are used as conductors. Busbars are usually made of copper or aluminum, and are most often uninsulated. They are physically supported away from whatever framework or structure is holding them by insulator standoff mounts. Although a square or rectangular cross-section is very common for busbar shape, other shapes are used as well. Cross-sectional area for busbars is typically rated in terms of circular mils (even for square and rectangular bars!), most likely for the convenience of being able to directly equate busbar size with round wire.</p>
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li>Current flows through large-diameter wires easier than small-diameter wires, due to the greater cross-sectional area they have in which to move.</li>
+<li>Rather than measure small wire sizes in inches, the unit of &ldquo;mil&rdquo; (1/1000 of an inch) is often employed.</li>
+<li>The cross-sectional area of a wire can be expressed in terms of square units (square inches or square mils), circular mils, or &ldquo;gauge&rdquo; scale.</li>
+<li>Calculating square-unit wire area for a circular wire involves the circle area formula:</li>
+<li>A = &pi;r<sup>2</sup> (square units)</li>
+<li>Calculating circular-mil wire area for a circular wire is much simpler, due to the fact that the unit of &ldquo;circular mil&rdquo; was sized just for this purpose: to eliminate the &ldquo;pi&rdquo; and the d/2 (radius) factors in the formula.</li>
+<li>A = d<sup>2</sup> (circular units)</li>
+<li>There are &pi; (3.1416) square mils for every 4 circular mils.</li>
+<li>The <em>gauge</em> system of wire sizing is based on whole numbers, larger numbers representing smaller-area wires and vice versa. Wires thicker than 1 gauge are represented by zeros: 0, 00, 000, and 0000 (spoken &ldquo;single-ought,&rdquo; &ldquo;double-ought,&rdquo; &ldquo;triple-ought,&rdquo; and &ldquo;quadruple-ought.&rdquo;</li>
+<li>Very large wire sizes are rated in thousands of circular mils (MCM&rsquo;s), typical for busbars and wire sizes beyond 4/0.</li>
+<li><em>Busbars</em> are solid bars of copper or aluminum used in high-current circuit construction. Connections made to busbars are usually welded or bolted, and the busbars are often bare (uninsulated), supported away from metal frames through the use of insulating standoffs.</li>
+</ul>

@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Alternating Current</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='33.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='35.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>Simple Series Resonance</h1>
+<p>A similar effect happens in series inductive/capacitive circuits. When a state of resonance is reached (capacitive and inductive reactances equal), the two impedances cancel each other out and the total impedance drops to zero! <em>Example:</em></p>
+<p><img src=&quot;/uploads/articles/simple-series-resonant-circuit.jpg&quot; /></p>
+<p><em>Simple series resonant circuit.</em></p>
+<p><img src=&quot;/uploads/articles/simple-series-resonant-circuit-equation.jpg&quot; /></p>
+<p>With the total series impedance equal to 0 &Omega; at the resonant frequency of 159.155 Hz, the result is a <em>short circuit</em> across the AC power source at resonance. In the circuit drawn above, this would not be good.</p>
+<p>I&rsquo;ll add a small resistor (Figure below) in series with the capacitor and the inductor to keep the maximum circuit current somewhat limited, and perform another SPICE analysis over the same range of frequencies.</p>
+<p><img src=&quot;/uploads/articles/small-resistor-in-series.jpg&quot; /></p>
+<p><em>Series resonant circuit suitable for SPICE.</em></p>
+
+<pre><br>
+series lc circuit &#10; v1 1 0 ac 1 sin &#10; r1 1 2 1 &#10; c1 2 3 10u &#10; l1 3 0 100m &#10; .ac lin 20 100 200 &#10; .plot ac i(v1) &#10; .end &#10;</pre>
+
+<p><img src=&quot;/uploads/articles/series-resonant-circuit-plot-of-current.jpg&quot; /></p>
+<p><em>Series resonant circuit plot of current I(v1).</em></p>
+<p>As before, circuit current amplitude increases from bottom to top, while frequency increases from left to right. The peak is still seen to be at the plotted frequency point of 157.9 Hz, the closest analyzed point to our predicted resonance point of 159.155 Hz.</p>
+<p>This would suggest that our resonant frequency formula holds as true for simple series LC circuits as it does for simple parallel LC circuits, which is the case:</p>
+<p><img src=&quot;/uploads/articles/resonant-frequency-formula1.jpg&quot; /></p>
+<p>A word of caution is in order with series LC resonant circuits: because of the high currents which may be present in a series LC circuit at resonance, it is possible to produce dangerously high voltage drops across the capacitor and the inductor, as each component possesses significant impedance.</p>
+<p>We can edit the SPICE netlist in the above example to include a plot of voltage across the capacitor and inductor to demonstrate what happens.</p>
+
+<pre><br>
+series lc circuit &#10; v1 1 0 ac 1 sin &#10; r1 1 2 1 &#10; c1 2 3 10u &#10; l1 3 0 100m &#10; .ac lin 20 100 200 &#10; .plot ac i(v1) v(2,3) v(3) &#10; .end &#10;</pre>
+
+<p><img src=&quot;/uploads/articles/series-resonant-circuit-plot-of-current-example.jpg&quot; /></p>
+<p><em>Plot of Vc=V(2,3) 70 V peak, VL=v(3) 70 V peak, I=I(V1#branch) 0.532 A peak.</em></p>
+<p>According to SPICE, the voltage across the capacitor and inductor reaches a peak somewhere around 70 volts!</p>
+<p>This is quite impressive for a power supply that only generates 1 volt. Needless to say, caution is in order when experimenting with circuits such as this. The SPICE voltage is lower than the expected value due to the small (20) number of steps in the AC analysis statement (.ac lin 20 100 200). What is the expected value?</p>
+
+<pre><br>
+Given: fr = 159.155 Hz, L = 100mH, R = 1 &#10; XL = 2&pi;fL = 2&pi;(159.155)(100mH)=j100&Omega;&#10; XC = 1/(2&pi;fC) = 1/(2&pi;(159.155)(10&micro;F)) = -j100&Omega;&#10; Z = 1 +j100 -j100 = 1 &Omega;&#10; I = V/Z = (1 V)/(1 &Omega;) = 1 A &#10; VL = IZ = (1 A)(j100) = j100 V&#10; VC = IZ = (1 A)(-j100) = -j100 V&#10; VR = IR = (1 A)(1)= 1 V &#10; Vtotal = VL + VC + VR&#10; Vtotal = j100 -j100 +1 = 1 V &#10;</pre>
+
+<p>The expected values for capacitor and inductor voltage are 100 V. This voltage will stress these components to that level and they must be rated accordingly. However, these voltages are out of phase and cancel, yielding a total voltage across all three components of only 1 V, the applied voltage. The ratio of the capacitor (or inductor) voltage to the applied voltage is the &ldquo;Q&rdquo; factor.</p>
+
+<pre><br>
+Q = VL/VR = VC/VR</pre>
+
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li>The total impedance of a series LC circuit approaches zero as the power supply frequency approaches resonance.</li>
+<li>The same formula for determining resonant frequency in a simple tank circuit applies to simple series circuits as well.</li>
+<li>Extremely high voltages can be formed across the individual components of series LC circuits at resonance, due to high current flows and substantial individual component impedances.</li>
+</ul>
+
+
+
+</div>
+</div>
+</body>
+</html>

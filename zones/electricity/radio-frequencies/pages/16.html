@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Radio Frequencies</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  <script>MathJax={tex: {inlineMath: [['$', '$'], ['((', '))']], processEscapes: true}};</script>
+  <script id='MathJax-script' async src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'></script>
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='15.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='17.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>Frequency Modulation: Theory, Time Domain, Frequency Domain</h1>
+<p>We are all at least vaguely familiar with frequency modulation&mdash;it&rsquo;s the origin of the term &ldquo;<strong>FM</strong> radio.&rdquo; If we think of frequency as something that has an instantaneous value, rather than as something that consists of several cycles divided by a corresponding period of time, we can continuously vary frequency in accordance with the instantaneous value of a baseband signal.</p>
+
+<h2>The Math</h2>
+<p>In the first page of this chapter, we discussed the paradoxical quantity referred to as instantaneous frequency. If you find this term unfamiliar or confusing, go back to that page and read through the &ldquo;Frequency Modulation (FM) and Phase Modulation (PM)&rdquo; section. You may still be a bit unsure, though, and that&rsquo;s understandable&mdash;the idea of an instantaneous frequency violates the basic principle according to which &ldquo;frequency&rdquo; indicates <em>how frequently</em> a signal completes a full cycle: ten times per second, a million times per second, or whatever it may be.</p>
+<p>We won&rsquo;t attempt any sort of thorough or comprehensive treatment of instantaneous frequency as a mathematical concept. (If you&rsquo;re determined to explore this issue in depth, here is an academic paper that should help.) In the context of FM, the important thing is to realize that instantaneous frequency follows naturally from the fact that the frequency of the carrier varies <em>continuously</em> in response to the modulating wave (i.e., the baseband signal). The instantaneous value of the baseband signal influences the frequency at a particular moment, not the frequency of one or more complete cycles.</p>
+<p>Actually, though, this is true only of analog FM; with digital FM, one bit corresponds to a discrete number of cycles. This leads to the interesting situation in which the older technology (analog FM) is less intuitive than the newer technology (digital FM, also called frequency shift keying, or FSK).</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/RFT_ch4_pg3_FSK.jpg&quot; /></p>
+<em>You don&rsquo;t need to ponder instantaneous frequency in order to understand digital frequency modulation.</em><br>
+<br>
+<p>As in the previous page, we will write the carrier as sin(&omega;<sub>C</sub>t). It already has a frequency (namely, &omega;<sub>C</sub>), so we will use the term <em>excess frequency</em> to refer to the frequency component contributed by the modulation procedure. This term is slightly misleading, though, because &ldquo;excess&rdquo; implies a higher frequency, whereas modulation can result in a carrier frequency that is higher or lower than the nominal carrier frequency. In fact, this is why frequency modulation (in contrast to amplitude modulation) does not require a shifted baseband signal: Positive baseband values increase the carrier frequency and negative baseband values decrease the carrier frequency. Under these conditions demodulation is not a problem, because all baseband values map to a unique frequency.</p>
+<p>Anyways, back to our carrier signal: sin(&omega;<sub>C</sub>t). If we add the baseband signal (x<sub>BB</sub>) to the quantity inside the parentheses, we are making the excess <em>phase</em> linearly proportional to the baseband signal. But we&rsquo;re looking for frequency modulation, not phase modulation, so we want the excess <em>frequency</em> to be linearly proportional to the baseband signal. We know from the first page of this chapter&nbsp;that we can obtain frequency by taking the derivative, with respect to time, of phase. Thus, if we want the frequency to be proportional to x<sub>BB</sub>, we have to add not the baseband signal itself but rather the integral of the baseband signal (because taking the derivative cancels out the integral, and we are left with x<sub>BB</sub> as the excess frequency).</p>
+<p>$$x_{FM}(t)=\sin(\omega_Ct+\int_{-\infty}^{t} x_{BB}(t)dt)$$</p>
+<p>The only thing we need to add here is the modulation index, m. In the previous page we saw that the modulation index can be used to make the carrier&rsquo;s amplitude variations more or less sensitive to the baseband-value variations. It&rsquo;s function in FM is equivalent: the modulation index allows us to fine-tune the intensity of the change in frequency that is produced by a change in the baseband value.</p>
+<p>$$x_{FM}(t)=\sin(\omega_Ct+m\int_{-\infty}^{t} x_{BB}(t)dt)$$</p>
+<h2>The Time Domain</h2>
+<p>Let&rsquo;s look at some waveforms. Here is our 10 MHz carrier:</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/RFT_ch4_pg1_carrier.JPG&quot; /></p>
+<p>The baseband signal will be a 1 MHz sine wave, as follows:</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/RFT_ch4_pg1_baseband.JPG&quot; /></p>
+<p>The FM waveform is generated by applying the formula given above. The integral of sin(x) is &ndash;cos(x) + C. The constant C is not relevant here, so we can use the following equation to compute the FM signal:</p>
+<p>$$x_{FM}(t)=\sin((10\times10^6\times2\pi t)-\cos(1\times10^6\times2\pi t))$$</p>
+<p>Here is the result (the baseband signal is shown in red):</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/RFT_ch4_pg3_FMm1.jpg&quot; /></p>
+<p>It almost seems that the carrier hasn&rsquo;t changed, but if you look closely, the peaks are slightly closer together when the baseband signal is near its maximum value. So we do have frequency modulation here; the problem is that the baseband variations are not producing enough carrier-frequency variation. We can easily remedy this situation by increasing the modulation index. Let&rsquo;s use m = 4:</p>
+<p>$$x_{FM}(t)=\sin((10\times10^6\times2\pi t)-4\cos(1\times10^6\times2\pi t))$$</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/RFT_ch4_pg3_FMm4.jpg&quot; /></p>
+<p>Now we can see more clearly how the frequency of the modulated carrier continuously tracks the instantaneous baseband value.&nbsp;</p>
+<h2>The Frequency Domain</h2>
+<p>AM and FM time-domain waveforms for the same baseband and carrier signals look very different. It is interesting, then, to find that AM and <em>narrowband</em> FM produce similar changes in the frequency domain. (Narrowband FM involves a limited modulating bandwidth and allows for easier analysis.) In both cases a low-frequency spectrum (including the negative frequencies) is translated to a band that extends above and below the carrier frequency. With AM, the baseband spectrum itself is shifted upwards. With FM, it is the spectrum of the <em>integral</em> of the baseband signal that appears in the band surrounding the carrier frequency.</p>
+<p>For the single-baseband-frequency, m-equals-1 modulation shown above, we have the following:</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/RFT_ch4_pg3_FMm1spectrum.jpg&quot; /></p>
+<p>The next spectrum is with m = 4:</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/RFT_ch4_pg3_FMm4spectrum.jpg&quot; /></p>
+<p>This demonstrates very clearly that the modulation index influences the frequency content of the modulated waveform. Spectral analysis with frequency modulation is more complicated than it is with amplitude modulation; it is difficult to predict the bandwidth of frequency-modulated signals.</p>
+
+<h2>Summary</h2>
+<ul>
+<li>The mathematical representation of frequency modulation consists of a sinusoidal expression with the integral of the baseband signal added to the argument of the sine or cosine function.</li>
+<li>The modulation index can be used to make the frequency deviation more sensitive or less sensitive to variations in the baseband value.</li>
+<li>Narrowband frequency modulation results in a translation of the spectrum of the integral of the baseband signal to a band surrounding the carrier frequency.</li>
+<li>An FM spectrum is influenced by the modulation index as well as by the ratio of the amplitude of the modulating signal to the frequency of the modulating signal.&nbsp;</li>
+</ul>
+
+
+
+</div>
+</div>
+</body>
+</html>

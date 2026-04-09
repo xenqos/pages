@@ -1,0 +1,120 @@
+# The Common-emitter Amplifier
+<p>At the beginning of this chapter, it illustrates how transistors could be used as switches, operating in either their &ldquo;<strong>saturation&rdquo; or &ldquo;cutoff&rdquo; modes</strong>. In the last section, we saw how transistors behave within their <strong>&ldquo;active&rdquo; modes</strong>, between the far limits of saturation and cutoff. Because transistors are able to control current in an analog fashion, they find use as amplifiers for analog signals.</p>
+## Transistor as a Simple Switch
+<p><strong><em>Common-Emitter </em></strong>One of the simpler transistor amplifier circuits to study previously illustrated the transistor&rsquo;s switching ability.</p>
+<p><img src="/uploads/articles/npn-transistor-as-simple-switch.jpg" /></p>
+<p>NPN transistor as a simple switch.</p>
+<p>It is called the <em>common-emitter</em> configuration because (ignoring the power supply battery) both the signal source and the load share the emitter lead as a common connection point shown in the figure below. This is not the only way in which a transistor may be used as an amplifier, as we will see in later sections of this chapter.</p>
+<p><img src="/uploads/articles/common-emitter-amplifier.jpg" /></p>
+<p>Common-emitter amplifier: The input and output signals both share a connection to the emitter.</p>
+<p>Before, a small solar cell current saturated a transistor, illuminating a lamp. Knowing now that transistors can <strong>&ldquo;throttle&rdquo; their collector currents according to the amount of base current supplied by an input signal source, we should see that the brightness of the lamp in this circuit is controllable by the solar cell&rsquo;s light exposure</strong>. When there is just a little light shone on the solar cell, the lamp will glow dimly. The lamp&rsquo;s brightness will steadily increase as more light falls on the solar cell.</p>
+<p>Suppose that we were interested in using the solar cell as a light intensity instrument. We want to measure the intensity of incident light with the solar cell by using its output current to drive a meter movement. It is possible to directly connect a meter movement to a solar cell for this purpose. The simplest light-exposure meters for photography work are designed like this.</p>
+<p><img src="/uploads/articles/high-intensity-light-directly-drives-light-meter.jpg" /></p>
+<p>High intensity light directly drives light meter.</p>
+<p>Although this approach might work for moderate light intensity measurements, it would not work as well for low light intensity measurements. Because the solar cell has to supply the meter movement&rsquo;s power needs, the system is necessarily limited in its sensitivity. Supposing that our need here is to measure very low-level light intensities, we are pressed to find another solution.</p>
+## Transistor as an Amplifier
+<p>Perhaps the most direct solution to this measurement problem is to use a transistor <strong>to </strong><strong><em>amplify</em></strong><strong> </strong>the solar cell&rsquo;s current so that more meter deflection may be obtained for less incident light.</p>
+<p><img src="/uploads/articles/cell-current-amplified-for-low-intensity-light.jpg" /></p>
+<p>Cell current must be amplified for low intensity light.</p>
+<p>Current through the meter movement in this circuit will be &beta; times the solar cell current. With a transistor &beta; of 100, this represents a substantial increase in measurement sensitivity. It is prudent to point out that the additional power to move the meter needle comes from the battery on the far right of the circuit, not the solar cell itself. All the solar cell&rsquo;s current does is <em>control</em> battery current to the meter to provide a greater meter reading than the solar cell could provide unaided.</p>
+<p>Because the transistor is a current-regulating device, and because meter movement indications are based on the current through the moving coil, meter indication in this circuit should depend only on the current from the solar cell, not on the amount of voltage provided by the battery. This means the accuracy of the circuit will be independent of battery condition, a significant feature! All that is required of the battery is a certain minimum voltage and current output ability to drive the meter full-scale.</p>
+<em>Voltage Output due to Current Through a Load Resistor</em>
+<p>Another way in which the common-emitter configuration may be used is to produce an output <em>voltage </em>derived from the input signal, rather than the specific output <em>current</em>. Let&rsquo;s replace the meter movement with a plain resistor and measure voltage between collector and emitter.<em> </em></p>
+<p><img src="/uploads/articles/common-emitter-amplifier-develops-voltage-output.jpg" /></p>
+<p>Common emitter amplifier develops voltage output due to the current through the load resistor.</p>
+<p>With the solar cell darkened (no current), the transistor will be in cutoff mode and behave as an open switch between collector and emitter. This will produce a maximum voltage drop between collector and emitter for maximum V<sub>output</sub>, equal to the full voltage of the battery.</p>
+<p>At full power (maximum light exposure), the solar cell will drive the transistor into saturation mode, making it behave like a closed switch between collector and emitter. The result will be a minimum voltage drop between collector and emitter, or almost zero output voltage. In actuality, a saturated transistor can never achieve zero voltage drop between collector and emitter because of the two PN junctions through which collector current must travel. However, this &ldquo;collector-emitter saturation voltage&rdquo; will be fairly low, around several tenths of a volt, depending on the specific transistor used.</p>
+<p>For light exposure levels somewhere between zero and maximum solar cell output, the transistor will be in its active mode, and the output voltage will be somewhere between zero and full battery voltage. An important quality to note here about the common-emitter configuration is that the output voltage is <em>inverted</em> with respect to the input signal. That is, the output voltage decreases as the input signal increases. For this reason, the common-emitter amplifier configuration is referred to as an <strong><em>inverting </em></strong><strong>amplifier.</strong></p>
+<p>A quick SPICE simulation (figure below) of the circuit in the figure below will verify our qualitative conclusions about this amplifier circuit.</p>
+<p><img src="/uploads/articles/quick-SPICE-simulation.jpg" /></p>
+<pre>
+*common-emitter amplifier i1 0 1 dc q1 2 1 0 mod1 r 3 2 5000 v1 3 0 dc 15 .model mod1 npn .dc i1 0 50u 2u .plot dc v(2,0) .end </pre>
+<p><em>Common emitter schematic with node numbers and corresponding SPICE netlist.</em></p>
+<p><img src="/uploads/articles/collector-voltage-output-vs-base-current-input.jpg" /></p>
+<p>Common emitter: collector voltage output vs base current input.</p>
+<p>At the beginning of the simulation in the figure above where the current source (solar cell) is outputting zero current, the transistor is in cutoff mode and the full 15 volts from the battery is shown at the amplifier output (between nodes 2 and 0). As the solar cell&rsquo;s current begins to increase, the output voltage proportionally decreases, until the transistor reaches saturation at 30 &micro;A of base current (3 mA of collector current). Notice how the output voltage trace on the graph is perfectly linear (1-volt steps from 15 volts to 1 volt) until the point of saturation, where it never quite reaches zero. This is the effect mentioned earlier, where a saturated transistor can never achieve exactly zero voltage drop between collector and emitter due to internal junction effects. What we do see is a sharp output voltage decrease from 1 volt to 0.2261 volts as the input current increases from 28 &micro;A to 30 &micro;A, and then a continuing decrease in output voltage from then on (albeit in progressively smaller steps). The lowest the output voltage ever gets in this simulation is 0.1299 volts, asymptotically approaching zero.</p>
+## Transistor as an AC Amplifier
+<p>So far, we&rsquo;ve seen the transistor used as an amplifier for DC signals. In the solar cell light meter example, we were interested in amplifying the DC output of the solar cell to drive a DC meter movement, or to produce a DC output voltage. However, this is not the only way in which a transistor may be employed as an amplifier. Often an <em>AC</em> amplifier for amplifying <em>alternating</em> current and voltage signals is desired. One common application of this is in audio electronics (radios, televisions, and public-address systems). Earlier, we saw an example of the audio output of a tuning fork activating a transistor switch. Let&rsquo;s see if we can modify that circuit to send power to a speaker rather than to a lamp in the figure below.</p>
+<p><img src="/uploads/articles/transistor-switch-activated-by-audio.jpg" /></p>
+<p>Transistor switch activated by audio.</p>
+<p>In the original circuit, a full-wave bridge rectifier was used to convert the microphone&rsquo;s AC output signal into a DC voltage to drive the input of the transistor. All we cared about here was turning the lamp on with a sound signal from the microphone, and this arrangement sufficed for that purpose. But now we want to reproduce the AC signal and drive a speaker. This means we cannot rectify the microphone&rsquo;s output anymore, because we need an undistorted AC signal to drive the transistor, remove the bridge rectifier and replace the lamp with a speaker:</p>
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/common-emitter-amplifier-drives-speaker-with-audio-frequency-signal.jpg" /></p>
+<p>Common emitter amplifier drives speaker with audio frequency signal.</p>
+<p>Since the microphone may produce voltages exceeding the forward voltage drop of the base-emitter PN (diode) junction, a resistor must be placed in series with the microphone. Simulate the circuit with SPICE. The netlist is included in (Figure below)</p>
+<p><img src="/uploads/articles/spice-version-of-common-emitter-audio-amplifier.jpg" /></p>
+<p>SPICE version of common emitter audio amplifier.</p>
+<pre>
+&#10;&nbsp;</pre>
+<p><img src="/uploads/articles/signal-clipped-at-collector.jpg" /></p>
+<pre>
+common-emitter amplifier vinput 1 0 sin (0 1.5 2000 0 0) r1 1 2 1k q1 3 2 0 mod1 rspkr 3 4 8 v1 4 0 dc 15 .model mod1 npn .tran 0.02m 0.74m .plot tran v(1,0) i(v1) .end  </pre>
+<p><em>Signal clipped at collector due to lack of DC base bias.</em></p>
+<p>The simulation plots both the input voltage (an AC signal of 1.5-volt peak amplitude and 2000 Hz frequency) and the current through the 15-volt battery, which is the same as the current through the speaker. What we see here is a full AC sine wave alternating in both positive and negative directions and a half-wave output current waveform that only pulses in one direction. If we were driving a speaker with this waveform, the sound produced would be distorted.</p>
+<p>What&rsquo;s wrong with the circuit? Why won&rsquo;t it faithfully reproduce the entire AC waveform from the microphone? The answer to this question is found by close inspection of the transistor diode current source model in the figure below.</p>
+<p><img src="/uploads/articles/current-flows-in-one-direction.jpg" /></p>
+<p>The model shows that base current flows in one direction.</p>
+<p>Collector current is controlled or regulated, through the constant-current mechanism according to the pace set by the current through the base-emitter diode. Note that both current paths through the transistor are monodirectional: <em>one way only!</em> Despite our intent to use the transistor to amplify an <em>AC</em> signal, it is essentially a <em>DC</em> device, capable of handling currents in a single direction. We may apply an AC voltage input signal between the base and emitter, but current cannot flow in that circuit during the part of the cycle that reverse-biases the base-emitter diode junction. Therefore, the transistor will remain in cutoff mode throughout that portion of the cycle. It will &ldquo;turn on&rdquo; in its active mode only when the input voltage is of the correct polarity to forward-bias the base-emitter diode, and only when that voltage is sufficiently high to overcome the diode&rsquo;s forward voltage drop. Remember that bipolar transistors are <em>current-controlled devices</em>: they regulate collector current based on the existence of a base-to-emitter <em>current</em>, not base-to-emitter <em>voltage</em>.</p>
+<p>The only way we can get the transistor to reproduce the entire waveform as the current through the speaker is to keep the transistor in its active mode the entire time. This means we must maintain current through the base during the entire input waveform cycle. Consequently, the base-emitter diode junction must be kept forward-biased at all times. Fortunately, this can be accomplished with a DC <em>bias voltage</em> added to the input signal. By connecting a sufficient DC voltage in series with the AC signal source, forward-bias can be maintained at all points throughout the wave cycle. (Figure below)</p>
+<p><img src="/uploads/articles/transistor-in-the-active-region.jpg" /></p>
+<p>Vbias keeps transistor in the active region.</p>
+<p><em><img src="/uploads/articles/undistorted-output-current.jpg" /></em></p>
+<pre>
+common-emitter amplifier vinput 1 5 sin (0 1.5 2000 0 0) vbias 5 0 dc 2.3 r1 1 2 1k q1 3 2 0 mod1 rspkr 3 4 8 v1 4 0 dc 15 .model mod1 npn .tran 0.02m 0.78m .plot tran v(1,0) i(v1) .end </pre>
+<p><em>Undistorted output current I(v(1) due to Vbias</em></p>
+<p>With the bias voltage source of 2.3 volts in place, the transistor remains in its active mode throughout the entire cycle of the wave, faithfully reproducing the waveform at the speaker. Notice that the input voltage (measured between nodes 1 and 0) fluctuates between about 0.8 volts and 3.8 volts, a peak-to-peak voltage of 3 volts just as expected (source voltage = 1.5 volts peak). The output (speaker) current varies between zero and almost 300 mA, 180&deg; out of phase with the input (microphone) signal.</p>
+<p>The illustration in the figure below is another view of the same circuit, this time with a few oscilloscopes (&ldquo;scopemeters&rdquo;) connected at crucial points to display all the pertinent signals.</p>
+<p><img src="/uploads/articles/oscilloscopes-connected-at-crucial-points.jpg" /></p>
+<p>Input is biased upward at base. Output is inverted.</p>
+## Biasing
+<p><strong>The need for biasing a transistor amplifier circuit to obtain full-waveform reproduction is an important consideration</strong>. A separate section of this chapter will be devoted entirely to the subject of biasing and biasing techniques. For now, it is enough to understand that biasing may be necessary for proper voltage and current output from the amplifier.</p>
+<p>Now that we have a functioning amplifier circuit, we can investigate its voltage, current, and power gains. The generic transistor used in these SPICE analyses has a &beta; of 100, as indicated by the short transistor statistics printout included in the text output in Table below (these statistics were cut from the last two analyses for brevity&rsquo;s sake).</p>
+<p><em>BJT SPICE model parameters.</em></p>
+<pre>
+type npn is 1.00E-16 bf 100.000 nf 1.000 br 1.000 nr 1.000</pre>
+<p><strong>&beta; is listed under the abbreviation &ldquo;bf,&rdquo; which actually stands for &ldquo;beta, forward&rdquo;</strong>. If we wanted to insert our own &beta; ratio for analysis, we could have done so on the .model line of the SPICE netlist.</p>
+<p>Since &beta; is the ratio of collector current to base current, and we have our load connected in series with the collector terminal of the transistor and our source connected in series with the base, the ratio of output current to input current is equal to beta. Thus, our current gain for this example amplifier is 100, or 40 dB.</p>
+## <strong><em>Voltage Gain</em></strong>
+<p>Voltage gain is a little more complicated to figure than current gain for this circuit. As always, voltage gain is defined as the ratio of output voltage divided by the input voltage. In order to experimentally determine this, we modify our last SPICE analysis to plot output voltage rather than output current so we have two voltage plots to compare in the figure below.</p>
+<p><img src="/uploads/articles/smaller-peak-to-peak-amplitude.jpg" /></p>
+<pre>
+common-emitter amplifier vinput 1 5 sin (0 1.5 2000 0 0) vbias 5 0 dc 2.3 r1 1 2 1k q1 3 2 0 mod1 rspkr 3 4 8 v1 4 0 dc 15 .model mod1 npn .tran 0.02m 0.78m .plot tran v(1,0) v(3) .end </pre>
+<p><em>V(3), the output voltage across r</em><em>spkr</em><em>, compared to the input.</em><em> </em></p>
+<p>Plotted on the same scale (from 0 to 4 volts), we see that the output waveform in Figure above has a smaller peak-to-peak amplitude than the input waveform, in addition to being at a lower bias voltage, not elevated up from 0 volts like the input. Since voltage gain for an AC amplifier is defined by the ratio of AC amplitudes, we can ignore any DC bias separating the two waveforms. Even so, the input waveform is still larger than the output, which tells us that the voltage gain is less than 1 (a negative dB figure).</p>
+<p>Low voltage gain is not characteristic of <em>all</em> common-emitter amplifiers. It is a consequence of the great disparity between the input and load resistances. Input resistance (R1) here is 1000 &Omega;, while the load (speaker) is only 8 &Omega;. Because the current gain of this amplifier is determined solely by the &beta; of the transistor, and because that &beta; figure is fixed, the current gain for this amplifier won&rsquo;t change with variations in either of these resistances. However, voltage gain <em>is</em> dependent on these resistances. If we alter the load resistance, making it a larger value, it will drop a proportionately greater voltage for its range of load currents, resulting in a larger output waveform. Try another simulation, only this time with a 30 &Omega; in the figure below load instead of an 8 &Omega; load.</p>
+<p><img src="/uploads/articles/output-voltage-waveform.jpg" /></p>
+<pre>
+common-emitter amplifier vinput 1 5 sin (0 1.5 2000 0 0) vbias 5 0 dc 2.3 r1 1 2 1k q1 3 2 0 mod1 rspkr 3 4 30 v1 4 0 dc 15 .model mod1 npn .tran 0.02m 0.78m .plot tran v(1,0) v(3) .end </pre>
+<p><em>Increasing r<sub>spkr</sub> to 30 &Omega; increases the output voltag</em></p>
+<p>This time the output voltage waveform in the figure above is significantly greater in amplitude than the input waveform. Looking closely, we can see that the output waveform crests between 0 and about 9 volts: approximately 3 times the amplitude of the input voltage.</p>
+<p>We can do another computer analysis of this circuit, this time instructing SPICE to analyze it from an AC point of view, giving us peak voltage figures for input and output instead of a time-based plot of the waveforms. (Table below)</p>
+<p><em>SPICE netlist for printing AC input and output voltages.</em></p>
+<pre>
+common-emitter amplifier vinput 1 5 ac 1.5 vbias 5 0 dc 2.3 r1 1 2 1k q1 3 2 0 mod1 rspkr 3 4 30 v1 4 0 dc 15 .model mod1 npn .ac lin 1 2000 2000 .print ac v(1,0) v(4,3) .end freq v(1) v(4,3) 2.000E+03 1.500E+00 4.418E+00</pre>
+<p>Peak voltage measurements of input and output show an input of 1.5 volts and an output of 4.418 volts. This gives us a voltage gain ratio of 2.9453 (4.418 V / 1.5 V), or 9.3827 dB.</p>
+<p><em>Solving for the voltage gain:</em></p>
+<p><em><img src="/uploads/articles/voltage-gain-equation1.jpg" /></em></p>
+<p>Because the current gain of the common-emitter amplifier is fixed by &beta;, and since the input and output voltages will be equal to the input and output currents multiplied by their respective resistors, we can derive an equation for approximate voltage gain:</p>
+<p><img src="/uploads/articles/voltage-gain-equation2.jpg" /></p>
+<p>As you can see, the predicted results for voltage gain are quite close to the simulated results. With perfectly linear transistor behavior, the two sets of figures would exactly match. SPICE does a reasonable job of accounting for the many &ldquo;quirks&rdquo; of bipolar transistor function in its analysis, hence the slight mismatch in voltage gain based on SPICE&rsquo;s output.</p>
+<p>These voltage gains remain the same regardless of where we measure output voltage in the circuit: across collector and emitter, or the series load resistor as we did in the last analysis. The amount of output voltage <em>change</em> for any given amount of input voltage will remain the same. Consider the two following SPICE analyses as proof of this. The first simulation in the figure below is time-based, to provide a plot of input and output voltages. You will notice that the two signals are 180o out of phase with each other. The second simulation in Table below is an AC analysis, to provide simple, peak voltage readings for input and output.</p>
+<p><img src="/uploads/articles/AC-analysis.jpg" /></p>
+<pre>
+common-emitter amplifier vinput 1 5 sin (0 1.5 2000 0 0) vbias 5 0 dc 2.3 r1 1 2 1k q1 3 2 0 mod1 rspkr 3 4 30 v1 4 0 dc 15 .model mod1 npn .tran 0.02m 0.74m .plot tran v(1,0) v(3,0) .end </pre>
+<p><em>Common-emitter amplifier shows a voltage gain with R<sub>spkr</sub>=30&Omega;</em> <em>SPICE netlist for AC analysis</em></p>
+<pre>
+common-emitter amplifier vinput 1 5 ac 1.5 vbias 5 0 dc 2.3 r1 1 2 1k q1 3 2 0 mod1 rspkr 3 4 30 v1 4 0 dc 15 .model mod1 npn .ac lin 1 2000 2000 .print ac v(1,0) v(3,0) .end freq v(1) v(3) 2.000E+03 1.500E+00 4.418E+00</pre>
+<p>We still have a peak output voltage of 4.418 volts with a peak input voltage of 1.5 volts.</p>
+<p>So far, the example circuits shown in this section have all used NPN transistors. PNP transistors are just as valid to use as NPN in <em>any</em> amplifier configuration, as long as the proper polarity and current directions are maintained, and the common-emitter amplifier is no exception. The output inversion and gain of a PNP transistor amplifier are the same as its NPN counterpart, just the battery polarities are different.</p>
+<p><img src="/uploads/articles/pnp-version-of-common-emitter-amplifier.jpg" /></p>
+<p>PNP version of common emitter amplifier.</p>
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li><em>Common-emitter</em> transistor amplifiers are so-called because the input and output voltage points share the emitter lead of the transistor in common with each other, not considering any power supplies.</li>
+<li>Transistors are essentially DC devices: they cannot directly handle voltages or currents that reverse direction. To make them work for amplifying AC signals, the input signal must be offset with a DC voltage to keep the transistor in its active mode throughout the entire cycle of the wave. This is called <em>biasing</em>.</li>
+<li>If the output voltage is measured between emitter and collector on a common-emitter amplifier, it will be 180&deg; out of phase with the input voltage waveform. Thus, the common-emitter amplifier is called an <em>inverting</em> amplifier circuit.</li>
+<li>The current gain of a common-emitter transistor amplifier with the load connected in series with the collector is equal to &beta;. The voltage gain of a common-emitter transistor amplifier is approximately given here:</li>
+</ul>
+<p><img src="/uploads/articles/voltage-gain-common-emitter-transistor-amplifier-formula.jpg" /></p>
+<ul>
+<li>Where &ldquo;Rout&rdquo; is the resistor connected in series with the collector and &ldquo;Rin&rdquo; is the resistor connected in series with the base.</li>
+</ul>

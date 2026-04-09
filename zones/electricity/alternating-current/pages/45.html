@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Alternating Current</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='44.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='46.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>High-pass Filters</h1>
+<p>A high-pass filter&rsquo;s task is just the opposite of a low-pass filter: to offer easy passage of a high-frequency signal and difficult passage to a low-frequency signal. As one might expect, the inductive (Figure below) and capacitive (Figure below) versions of the high-pass filter are just the opposite of their respective low-pass filter designs:</p>
+<p><img src=&quot;/uploads/articles/capacitive-high-pass-filter-circuit.png&quot; /></p>
+<p><em>Capacitive high-pass filter.</em></p>
+
+<h2>The Capacitor&rsquo;s Impedance</h2>
+<p>The capacitor&rsquo;s impedance (Figure above) increases with decreasing frequency. (Figure below) This high impedance in series tends to block low-frequency signals from getting to load.</p>
+
+<pre><br>
+capacitive highpass filter &#10; v1 1 0 ac 1 sin &#10; c1 1 2 0.5u &#10; rload 2 0 1k &#10; .ac lin 20 1 200&#10; .plot ac v(2) &#10; .end &#10;</pre>
+
+<p><img src=&quot;/uploads/articles/capacitive-high-pass-filter-graph.png&quot; /></p>
+<p><em>The response of the capacitive high-pass filter increases with frequency.</em></p>
+<p><img src=&quot;/uploads/articles/inductive-high-pass-filter-circuit.png&quot; /></p>
+<p><em>Inductive high-pass filter.</em></p>
+
+<h2>The Inductor&rsquo;s Impedance</h2>
+<p>The inductor&rsquo;s impedance (Figure above) decreases with decreasing frequency. (Figure below) This low impedance&nbsp;in parallel tends to short out low-frequency signals from getting to the load resistor. As a consequence, most of the voltage gets dropped across series resistor R1.<strong> </strong></p>
+
+<pre><br>
+inductive highpass filter &#10; v1 1 0 ac 1 sin &#10; r1 1 2 200 &#10; l1 2 0 100m &#10; rload 2 0 1k &#10; .ac lin 20 1 200&#10; .plot ac v(2) &#10; .end&#10;</pre>
+
+<p><img src=&quot;/uploads/articles/inductive_high-pass_filter-graph.png&quot; /></p>
+<p><em>The response of the inductive high-pass filter increases with frequency.</em></p>
+<p>This time, the capacitive design is the simplest, requiring only one component above and beyond the load. And, again, the reactive purity of&nbsp;capacitors over&nbsp;inductors tends to favor their use in filter design, especially with high-pass filters where high frequencies commonly cause inductors to behave strangely due to the skin effect and electromagnetic core losses.</p>
+<h2>Cutoff Frequency</h2>
+<p>As with low-pass filters, high-pass filters have a rated <em>cutoff frequency</em>, above which the output voltage increases above 70.7% of the input voltage. Just as in the case of the capacitive low-pass filter circuit, the capacitive high-pass filter&rsquo;s cutoff frequency can be found with the same formula:<strong> </strong></p>
+<p><img src=&quot;/uploads/articles/capacitive-high-pass-filters-cutoff-frequency-formula.png&quot; /></p>
+<p>In the example circuit, there is no resistance other than the load&nbsp;resistor, so that is the value for R in the formula.</p>
+<h2>Application of High-Pass Filter</h2>
+<p>Using a stereo system as a practical example, a capacitor connected in series with the tweeter (treble) speaker will serve as a high-pass filter, imposing a high impedance to low-frequency bass signals, thereby preventing that power from being wasted on a speaker inefficient for reproducing such sounds.</p>
+<p>In like fashion, an inductor connected in series with the woofer (bass) speaker will serve as a low-pass filter for the low frequencies that particular speaker is designed to reproduce.</p>
+<p>In this simple example circuit, the midrange speaker is subjected to the full spectrum of frequencies from the stereo&rsquo;s output. More elaborate filter networks are sometimes used, but this should give you the general idea.</p>
+<p>Also bear in mind that I&rsquo;m only showing you one channel (either left or right) on this stereo system. A real stereo would have six speakers: 2 woofers, 2 midranges, and 2 tweeters.<strong> </strong></p>
+<p><img src=&quot;/uploads/articles/high-pass-filter-routes-high-frequencies.png&quot; /></p>
+<p><em>High-pass filter routes high frequencies to tweeter, while low-pass filter routes lows to woofer.</em></p>
+<p>For better performance yet, we might like to have some kind of filter circuit capable of passing frequencies that are between low (bass) and high (treble) to the midrange speaker so that none of the low- or high-frequency signal power is wasted on a speaker incapable of efficiently reproducing those sounds.</p>
+<p>What we would be looking for is called a <em>band-pass</em> filter, which is the topic of the next section.</p>
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li>A high-pass filter allows for easy passage of high-frequency signals from source to load, and difficult passage of low-frequency signals.</li>
+<li>Capacitive high-pass filters insert a capacitor in series with the load; inductive high-pass filters insert a resistor in series and an inductor in parallel with the load. The former filter design tries to &ldquo;block&rdquo; the unwanted frequency signal while the latter tries to short it out.</li>
+<li>The <em>cutoff frequency</em> for a high-pass filter is that frequency at which the output (load) voltage equals 70.7% of the input (source) voltage. Above the cutoff frequency, the output voltage is greater than 70.7% of the input, and vice versa.</li>
+</ul>
+
+
+
+</div>
+</div>
+</body>
+</html>

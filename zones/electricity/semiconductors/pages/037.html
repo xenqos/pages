@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Semiconductors</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='036.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='038.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>Introduction to Bipolar Junction Transistors (BJT)</h1>
+<p>The invention of the bipolar transistor in 1948 ushered in a revolution in electronics. Technical feats previously requiring relatively large, mechanically fragile, power-hungry vacuum tubes were suddenly achievable with tiny, mechanically rugged, power-thrifty specks of crystalline silicon. This revolution made possible the design and manufacture of lightweight, inexpensive electronic devices that we now take for granted. Understanding how transistors function is of paramount importance to anyone interested in understanding modern electronics.&nbsp;</p>
+
+<h2>The Function and Applications for Bipolar Junction Transistors</h2>
+<p>My intent here is to focus as exclusively as possible on the practical function and application of bipolar transistors, rather than to explore the quantum world of semiconductor theory. Discussions of holes and electrons are better left to another chapter in my opinion. Here I want to explore how to <em>use</em> these components, not analyze their intimate internal details. I don&rsquo;t mean to downplay the importance of understanding semiconductor physics, but sometimes an intense focus on solid-state physics detracts from understanding these devices&rsquo; functions on a component level. In taking this approach, however, I assume that the reader possesses a certain minimum knowledge of semiconductors: the difference between &ldquo;P&rdquo; and &ldquo;N&rdquo; doped semiconductors, the functional characteristics of a PN (diode) junction, and the meanings of the terms &ldquo;reverse biased&rdquo; and &ldquo;forward biased.&rdquo; If these concepts are unclear to you, it is best to refer to earlier chapters in this book before proceeding with this one.</p>
+
+<h2>BJT Layers</h2>
+<p>A bipolar transistor consists of a three-layer &ldquo;sandwich&rdquo; of doped (extrinsic) semiconductor materials, (a and c) either P-N-P or N-P-N (b and c ). Each layer forming the transistor has a specific name, and each layer is provided with a wire contact for connection to a circuit. The schematic symbols are shown in the figure (a) and (c).</p>
+<p><img src=&quot;/uploads/articles/bjt-transistor-schematic-symbol.jpg&quot; /></p>
+<em><strong>Figure 1.</strong> BJT transistor: (a) PNP schematic symbol, (b) layout, (c) NPN schematic symbol, and (d) layout.</em><br>
+<br>
+<p>The functional difference between a PNP transistor and an NPN transistor is the proper biasing (polarity) of the junctions when operating.&nbsp;</p>
+<p>Bipolar transistors work as current-controlled current <em>regulators</em>. In other words, transistors restrict the amount of current passed according to a smaller, controlling current. The main current that is <em>controlled </em>goes from collector to emitter, or from emitter to collector, depending on the type of transistor it is (NPN or PNP, respectively). The small current that <em>controls</em> the main current goes from base to emitter or from emitter to base, once again depending on the kind of transistor it is (NPN or PNP, respectively). According to the standards of semiconductor symbology, the arrow always points in the direction of the current flow.</p>
+<p><img src=&quot;/uploads/articles/direction-of-the-small-and-large-controlled-current-for-pnp-and-npn-transistor.jpg&quot; /></p>
+<em><strong>Figure 2. </strong>The direction of the small, controlling current and the large controlled current for (a) a PNP and (b) an NPN transistor.</em><br>
+
+<h2>Bipolar Transistors Contain Two Types of Semiconductor Material</h2>
+<p>Bipolar transistors are called <em>bi</em>polar because the main flow of current through them takes place in <em>two </em>types of semiconductor material: P and N, as the main current goes from emitter to collector (or vice versa). In other words, two types of charge carriers&mdash;electrons and holes&mdash;comprise this main current through the transistor.</p>
+<p>As you can see, the <em>controlling</em> current and the <em>controlled</em> current always mesh together through the emitter wire, and their currents flow in the direction of the transistor&rsquo;s arrow. This is the first and foremost rule in the use of transistors: all currents must be going in the proper directions for the device to work as a current regulator. The small, controlling current is usually referred to simply as the <em>base current</em> because it is the only current that goes through the base wire of the transistor. Conversely, the large, controlled current is referred to as the <em>collector current</em> because it is the only current that goes through the collector wire. The emitter current is the sum of the base and collector currents, in compliance with Kirchhoff&rsquo;s Current Law.</p>
+<p>No current through the base of the transistor shuts the transistor off like an open switch and prevents current through the collector. A base current turns the transistor on like a closed switch and allows a proportional amount of current through the collector. The collector current is primarily limited by the base current, regardless of the amount of voltage available to push it. The next section will explore in more detail the use of bipolar transistors as switching elements. &nbsp;</p>
+
+<h2>Review on Bipolar Transistors</h2>
+<ul>
+<li>Bipolar transistors are so named because the controlled current must go through <em>two</em> types of semiconductor material: P and N. The current consists of both electron and hole flow in different parts of the transistor.</li>
+<li>Bipolar transistors consist of either a P-N-P or an N-P-N semiconductor &ldquo;sandwich&rdquo; structure.</li>
+<li>The three leads of a bipolar transistor are called the <em>Emitter</em>, <em>Base</em>, and <em>Collector</em>.</li>
+<li>Transistors function as current regulators by allowing a small current to <em>control</em> a larger current. The amount of current allowed between the collector and emitter is primarily determined by the amount of current moving between the base and emitter.</li>
+<li>In order for a transistor to properly function as a current regulator, the controlling (base) current and the controlled (collector) currents must be going in the proper directions: meshing additively at the emitter and going in the direction of the emitter arrow symbol.</li>
+</ul>
+
+
+
+</div>
+</div>
+</body>
+</html>

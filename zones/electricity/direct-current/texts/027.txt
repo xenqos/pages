@@ -1,0 +1,39 @@
+###### 04. Scientific Notation And Metric Prefixes
+
+## 04. Scientific Notation And Metric Prefixes ##
+
+# Scientific Notation
+<p>In many disciplines of science and engineering, very large and very small numerical quantities must be managed. Some of these quantities are mind-boggling in their size, either extremely small or extremely large. Take for example the mass of a proton, one of the constituent particles of an atom&rsquo;s nucleus:</p>
+<p><em>Proton mass = 0.00000000000000000000000167 grams</em></p>
+
+<p>Or, consider the number of electrons passing by a point in a circuit every second with a steady electric current of 1 amp:</p>
+<p><em>1 amp = 6,250,000,000,000,000,000 electrons per second</em></p>
+
+<p>A lot of zeros, isn&rsquo;t it? Obviously, it can get quite confusing to have to handle so many zero digits in numbers such as this, even with the help of calculators and computers.</p>
+<p>Take note of those two numbers and of the relative sparsity of non-zero digits in them. For the mass of the proton, all we have is a &ldquo;167&rdquo; preceded by 23 zeros before the decimal point. For the number of electrons per second in 1 amp, we have &ldquo;625&rdquo; followed by 16 zeros.</p>
+<p>We call the span of non-zero digits (from first to last), plus any zero digits <em>not</em> merely used as placeholders, the &ldquo;significant digits&rdquo; of any number.</p>
+<p>The significant digits in a real-world measurement are typically reflective of the accuracy of that measurement. For example, if we were to say that a car weighs 3,000 pounds, we probably don&rsquo;t mean that the car in question weighs <em>exactly</em> 3,000 pounds, but that we&rsquo;ve rounded its weight to a value more convenient to say and remember.</p>
+<p>That rounded figure of 3,000 has only one significant digit: the &ldquo;3&rdquo; in front&mdash;the zeros merely serve as placeholders. However, if we were to say that the car weighed 3,005 pounds, the fact that the weight is not rounded to the nearest thousand pounds tells us that the two zeros in the middle aren&rsquo;t just placeholders, but that all four digits of the number &ldquo;3,005&rdquo; are significant to its representative accuracy. Thus, the number &ldquo;3,005&rdquo; is said to have <em>four</em> significant figures.</p>
+<p>In like manner, numbers with many zero digits are not necessarily representative of a real-world quantity all the way to the decimal point. When this is known to be the case, such a number can be written in a kind of mathematical &ldquo;shorthand&rdquo; to make it easier to deal with. This &ldquo;shorthand&rdquo; is called <em>scientific notation</em>.</p>
+<p>With scientific notation, a number is written by representing its significant digits as a quantity between 1 and 10 (or -1 and -10, for negative numbers), and the &ldquo;placeholder&rdquo; zeros are accounted for by a power-of-ten multiplier. For example:</p>
+<p><em>1 amp = 6,250,000,000,000,000,000 electrons per second</em></p>
+<p><em>. . . can be expressed as . . .</em></p>
+<p><em>1 amp = 6.25 x 10<sup>18</sup> electrons per second</em></p>
+
+<p>10 to the 18th power (10<sup>18</sup>) means 10 multiplied by itself 18 times, or a &ldquo;1&rdquo; followed by 18 zeros. Multiplied by 6.25, it looks like &ldquo;625&rdquo; followed by 16 zeros (take 6.25 and skip the decimal point 18 places to the right). The advantages of scientific notation are obvious: the number isn&rsquo;t as unwieldy when written on paper, and the significant digits are plain to identify.</p>
+<p>But what about very small numbers, like the mass of the proton in grams? We can still use scientific notation, except with a negative power-of-ten instead of a positive one, to shift the decimal point to the left instead of to the right:</p>
+<p><em>Proton mass = 0.00000000000000000000000167 grams</em></p>
+<p><em>. . . can be expressed as . . . </em></p>
+<p><em>Proton mass = 1.67 x 10<sup>-24</sup> grams</em></p>
+
+<p>10 to the -24th power (10<sup>-24</sup>) means the inverse (1/x) of 10 multiplied by itself 24 times, or a &ldquo;1&rdquo; preceded by a decimal point and 23 zeros. Multiplied by 1.67, it looks like &ldquo;167&rdquo; preceded by a decimal point and 23 zeros. Just as in the case with a very large number, it is a lot easier for a human being to deal with this &ldquo;shorthand&rdquo; notation. As with the prior case, the significant digits in this quantity are clearly expressed.</p>
+<p>Because the significant digits are represented &ldquo;on their own&rdquo;, away from the power-of-ten multiplier, it is easy to show a level of precision even when the number looks round. Taking our 3,000 pound car example, we could express the rounded number of 3,000 in scientific notation as such:</p>
+<p><em>car weight = 3 x 10<sup>3</sup> pounds</em></p>
+
+<p>If the car actually weighed 3,005 pounds (accurate to the nearest pound) and we wanted to be able to express that full accuracy of measurement, the scientific notation figure could be written like this:</p>
+<p><em>car weight = 3.005 x 10<sup>3</sup> pounds</em></p>
+
+<p>However, what if the car actually did weigh 3,000 pounds, exactly (to the nearest pound)? If we were to write its weight in &ldquo;normal&rdquo; form (3,000 lbs), it wouldn&rsquo;t necessarily be clear that this number was indeed accurate to the nearest pound and not just rounded to the nearest thousand pounds, or to the nearest hundred pounds, or to the nearest ten pounds. Scientific notation, on the other hand, allows us to show that all four digits are significant with no misunderstanding:</p>
+<p><em>car weight = 3.000 x 10<sup>3</sup> pounds</em></p>
+
+<p>Since there would be no point in adding extra zeros to the right of the decimal point (as the extra placeholder zeros are unnecessary with scientific notation), we know those zeros must be significant to the precision of the figure.</p>

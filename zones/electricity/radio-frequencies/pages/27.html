@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Radio Frequencies</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  <script>MathJax={tex: {inlineMath: [['$', '$'], ['((', '))']], processEscapes: true}};</script>
+  <script id='MathJax-script' async src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'></script>
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='26.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='28.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>The Benefits of an Intermediate Frequency in RF Systems</h1>
+<p>Thus far, we have discussed RF signals in terms of two frequency bands: the baseband and the RF band. This approach provides a straightforward conceptual framework in which RF circuits are fundamentally a means of transforming a lower-frequency information signal into a higher-frequency transmitted signal, or a higher-frequency received signal into a lower-frequency information signal. This model is not incorrect, and the lessons learned so far are completely relevant to systems that have an &ldquo;intermediate frequency&rdquo; signal in addition to baseband and RF signals.</p>
+
+<h2>What Is IF?</h2>
+<p>The abbreviation &ldquo;IF&rdquo; refers to an intermediate frequency itself or, more generally, to intermediate-frequency-based techniques. As the name implies, an intermediate frequency is somewhere between the baseband frequency and the carrier frequency. IF circuitry can be incorporated into both transmitters and receivers, though the benefits of IF techniques are more relevant to receivers. We&rsquo;ll discuss IF in the context of RF receiver design, but as you&rsquo;re reading keep in mind that these beneficial characteristics could apply to transmitters as well.</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/RFT_ch6_pg1_IF.jpg&quot; /></p>
+<p>Perhaps you have heard the word &ldquo;heterodyne&rdquo; or &ldquo;superheterodyne.&rdquo; These terms refer to an RF receiver that incorporates an intermediate frequency. IF techniques were developed during the first half of the twentieth century, and nowadays IF-based systems are very common.</p>
+
+<h2>Many Carriers, One IF</h2>
+<p>One of the more intuitive advantages of an IF is the ability to design a receiver in which more of the circuitry can be designed for one unchanging frequency band. Thus far we have assumed that the receiver can be designed for one unchanging transmitter frequency, but anyone who has used a car radio should understand that this is far from realistic. In fact, one of the most familiar characteristics of an RF receiver is that it can convey to the user information from only one station (for radio) or only one channel (for television)&mdash;in other words, it can be tuned for different carrier frequencies, and this tuning process allows it to select one of the transmitted signals and ignore all the others.</p>
+<p>If a tunable receiver does not use an intermediate frequency, all of the high-frequency circuitry must be compatible with the full range of possible carrier frequencies; this is undesirable, because it is easier to design RF components and circuits that are optimized for a small range of signal frequencies. Also, tuning would require several knobs, because multiple subcircuits would need to be adjusted according to the selected frequency. A heterodyne receiver first shifts the received spectrum down to a band centered on the intermediate frequency, and then the remaining circuitry is optimized for this frequency range.</p>
+<h2>Minimizing High-Frequency Processing</h2>
+<p>Another intuitive advantage of an IF-based receiver architecture is the reduced number of components that must operate at the high&mdash;sometimes very high&mdash;frequency of the received signal. Everything becomes more difficult as frequencies climb into the gigahertz range: transistors have less gain, passive components become increasingly different from their idealized low-frequency models, transmission-line effects become more prominent.</p>
+<p>Of course, we will always have at least a few components that are compatible with the received carrier frequency: we need a mixer that performs the conversion from RF to IF, and the mixer might be preceded by a low-noise amplifier and an image-reject filter (the image-rejection issue is discussed in the next page). But the IF approach allows us to perform only the most necessary processing in the RF band.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<h2>Lower Q</h2>
+<p>Filtering is a common requirement in all types of RF systems, but some situations place especially high demands on filter circuits. Consider the following scenario: A receiver must extract the information from a narrowband RF signal that is accompanied by strong interfering signals with frequency close to the edges of the spectrum of the desired signal.</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/RFT_ch6_pg1_interferers.jpg&quot; /></p>
+<em>A band-pass filter with insufficient Q may fail to suppress interfering signals.</em><br>
+<br>
+<p>A band-pass filter is used to suppress these interfering signals so that they don&rsquo;t corrupt the demodulated data; however, designing an effective band-pass filter under these circumstances is not easy.</p>
+<p>The issue is the Q factor, which corresponds to how selective the band-pass filter is. For example:</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/RFT_ch6_pg1_Qfactor.jpg&quot; /></p>
+<p>A combination of high-frequency operation and narrow bandwidth requires a very high Q, and eventually we reach a point at which it is simply not feasible to design a band-pass filter with sufficient selectivity. The Q factor of a band-pass filter is defined as follows:</p>
+<p>$$Q=\frac{center\ frequency}{bandwidth}$$</p>
+<p>Thus, we can see that a straightforward way to decrease the required Q is to lower the center frequency, and IF techniques allow us to do exactly that. The width of the signal&rsquo;s spectrum does not change, but the center frequency is shifted down to the intermediate frequency.</p>
+
+<h2>Simpler Quadrature Demodulation</h2>
+<p>We know from the previous chapter that quadrature demodulation is an important technique in modern RF systems. The mathematical relationships that govern quadrature demodulation and I/Q signal processing always assume a perfect 90&deg; phase shift. But perfection is not so easily achieved in real life, and quadrature circuitry is no exception. Deviations from the idealized 90&deg; phase difference, as well as amplitude mismatches between the I and Q channels, lead to errors in the demodulated data.</p>
+<p>This may seem like an issue with quadrature modulation in general; what is the connection to IF receivers? It turns out that these error sources are more prominent in non-IF architectures, because the I/Q separation occurs at higher frequencies and because more post-separation amplification and filtering components are required.</p>
+<h2>Why Not Convert Directly to Baseband?</h2>
+<p>If an IF receiver must include high-frequency circuitry for performing the frequency translation from RF to IF, why not simply use the baseband frequency instead of an intermediate frequency?</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/RFT_ch6_pg1_directconv.jpg&quot; /></p>
+<p>A receiver that shifts the signal down to the baseband instead of the IF is referred to as a direct-conversion (or homodyne, or zero-IF) architecture. Are the traditional benefits of an intermediate frequency still&mdash;i.e., in the context of modern RF systems&mdash;sufficient reason for choosing IF over a direct-conversion approach? The answer to this question is somewhat complex, and it goes beyond the topics presented in this page. In the next page we&rsquo;ll explore more details regarding IF receivers, and we&rsquo;ll also discuss the heterodyne vs. direct-conversion issue.</p>
+
+<h2>Summary</h2>
+<ul>
+<li>Many RF systems incorporate an intermediate frequency (IF) that is lower than the carrier frequency and higher than the baseband frequency. An IF-based receiver is known as a heterodyne receiver.</li>
+<li>The use of an IF simplifies the design of tunable receivers and reduces the number of components that must be compatible with high frequencies.</li>
+<li>IF architectures simplify the design of bandpass filters because the reduced center frequency results in a lower Q-factor requirement.</li>
+<li>An IF-based system allows for a more robust implementation of quadrature demodulation.</li>
+</ul>
+
+
+
+</div>
+</div>
+</body>
+</html>

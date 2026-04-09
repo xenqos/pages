@@ -1,0 +1,52 @@
+# Intro Lab - Build an Electromagnet
+## Project Overview
+<p>In this project, you will build and test the electromagnet circuit illustrated in Figure 1.&nbsp;Electromagnetism has many applications, including:</p>
+<ul>
+<li>Relays</li>
+<li>Electric motors</li>
+<li>Solenoids</li>
+<li>Doorbells</li>
+<li>Buzzers</li>
+<li>Computer printer mechanisms</li>
+<li>Magnetic media write&nbsp;heads (tape recorders and&nbsp;disk drives)</li>
+</ul>
+
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/electromagnet-connected-to-a-battery.jpg" /></p>
+<em><strong>Figure 1.</strong> Electromagnet circuit for generating a magnetic field from an electric current.</em>
+
+## Parts and Materials
+<ul>
+<li>6 V battery</li>
+<li>Magnetic compass</li>
+<li>Small permanent magnet</li>
+<li>Spool of 28-gauge magnet wire</li>
+<li>Large bolt, nail, or steel rod</li>
+<li>Electrical tape</li>
+</ul>
+<p>Magnet wire is a term for thin-gauge copper wire with enamel insulation instead of rubber or plastic insulation. Its small size and very thin insulation allow for many turns&nbsp;to be wound in a compact coil. Keep in mind that you will need enough magnet wire to wrap hundreds of turns around the bolt, nail, or other rod-shaped steel forms.</p>
+<p>Another thing, make sure to select a bolt, nail, or rod that is magnetic. Stainless steel, for example, is non-magnetic and will not function for the purpose of an electromagnet coil!&nbsp;The ideal material for this experiment is soft iron, but any commonly available steel will suffice.</p>
+
+## Learning Objectives
+<ul>
+<li>Application of the left-hand rule</li>
+<li>Electromagnet construction</li>
+</ul>
+
+## Instructions
+<p><strong>Step 1:&nbsp;</strong>Wrap a single layer of electrical tape around the steel bar (or bolt or mail) to protect the wire from abrasion.</p>
+<p><strong>Step 2:&nbsp;</strong>Proceed to wrap several hundred turns of wire around the steel bar, making the coil as even as possible.&nbsp;It is okay to overlap wire, and it is okay to wrap in the same style that a fishing reel wraps the line around the spool.&nbsp;The only rule you <em>must</em> follow is that all turns must be wrapped around the bar in the same direction (no reversing from clockwise to counter-clockwise!).</p>
+<p>I find that a drill press works as a great tool for coil winding: clamp the rod in the drill&rsquo;s chuck as if it were a drill bit, then turn the drill motor on at a slow speed and let it do the wrapping!&nbsp;This allows you to feed wire onto the rod in a very steady, even manner.</p>
+<p><strong>Step 3:&nbsp;</strong>After you&rsquo;ve wrapped several hundred turns of wire around the rod, wrap a layer or two of electrical tape over the wire coil to secure the wire in place.</p>
+<p><strong>Step 4:&nbsp;</strong>Scrape the enamel insulation off the ends of the coil wires to expose the wire for connection to jumper leads</p>
+<p><strong>Step 5: </strong>Connect the coil to a battery, as illustrated in Figure 1 and defined in the circuit schematic of Figure 2.</p>
+
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/schematic-diagram-electromagnetism.jpg" /></p>
+<em><strong>Figure 2.</strong>&nbsp;Schematic diagram of the electromagnet circuit.</em>
+
+<p><strong>Step 6:&nbsp;</strong>When the electric current goes through the coil, it will produce a strong magnetic field with one pole&nbsp;at each end of the rod.&nbsp;This phenomenon is known as electromagnetism. With the electromagnet energized (connected to the battery), use the magnetic compass to identify the north&nbsp;and south&nbsp;poles of the electromagnet.&nbsp;</p>
+<p><strong>Step 7:</strong> Place a permanent magnet near one pole and note whether there is an attractive or repulsive force.</p>
+<p><strong>Step 8:&nbsp;</strong>Reverse the orientation of the permanent magnet and repeat steps 7 and 8.&nbsp;Note the difference in force caused by changing the polarity of the applied voltage and the direction of the current flow.&nbsp;</p>
+
+## Inductive Kickback
+<p>You might notice a significant spark whenever the battery is disconnected from the electromagnet coil, much greater than the spark produced if the battery is short-circuited. This spark results from a high-voltage surge created whenever current is suddenly interrupted through the coil.</p>
+<p>The effect is called inductive kickback&nbsp;and can deliver a small but harmless electric shock.&nbsp;To avoid receiving this shock, do not place your body across the break in the circuit when de-energizing.&nbsp;Use one hand at a time when un-powering the coil, and you&rsquo;ll be perfectly safe.</p>

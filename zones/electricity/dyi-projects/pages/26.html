@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>DYI Projects</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  <script>MathJax={tex: {inlineMath: [['$', '$'], ['((', '))']], processEscapes: true}};</script>
+  <script id='MathJax-script' async src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'></script>
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='25.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='27.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>DC Lab - 4-wire Resistance Measurement</h1>
+<h2>Project Overview</h2>
+<p>Most ohmmeters operate on the principle of applying a small voltage across an unknown resistance (R<sub>unknown</sub>) and inferring resistance from the amount of current drawn by it. As illustrated in Figure 1, this presents a problem for measuring low resistances, as a low-resistance specimen may be a much smaller resistance value than the meter circuitry itself.</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/4-wire-resistance-measurement-illustration-1.jpg&quot; /></p>
+<em><strong>Figure 1.</strong> The challenge of measuring low resistance values.</em><br>
+<br>
+<p>Being part of the measurement circuit, the test leads may contain more resistance than the resistance of the test specimen, incurring significant measurement errors by their presence.</p>
+<p>In the example of Figure 1, the reported resistance of 2.0&nbsp;&Omega; is too large by 0.5&nbsp;&Omega;. This is 33% larger than the 1.5&nbsp;&Omega; of the device under test. For smaller resistances, the percentage error becomes even larger.&nbsp;&nbsp;One of the many sources of error in measuring small resistances with an ordinary ohmmeter is the resistance of the ohmmeter&rsquo;s own test leads.</p>
+<p>Imagine trying to measure the diameter of a cotton thread with a yardstick or measuring the weight of a coin with a scale built for weighing freight trucks, and you will appreciate the problem at hand.</p>
+
+<h2>Parts and Materials</h2>
+<ul>
+<li>6-volt battery or power supply</li>
+<li>A low-value resistor (&lt; 1 &Omega;), a large spool of wire, or the&nbsp;electromagnet constructed&nbsp;in a previous experiment</li>
+<li>It would be ideal in this experiment to have two meters: one voltmeter and one ammeter.&nbsp;For experimenters on a budget, this may not be possible.</li>
+</ul>
+
+<p>In this experiment, a&nbsp;6 V lantern&nbsp;battery will essentially be short-circuited by a long piece of wire. This may produce currents of several amps in&nbsp;magnitude.&nbsp;Whatever ammeter is used should be capable of measuring at least 5 A. Keep in mind that your ammeter needs to be capable of measuring this current without blowing a fuse or sustaining other damage.</p>
+
+<h2>Learning Objectives</h2>
+<ul>
+<li>The operating principle of Kelvin (4-wire) resistance measurements</li>
+<li>How to measure low resistances with common test equipment</li>
+</ul>
+
+<h2>The&nbsp;Kelvin, or 4-wire,&nbsp;Resistance Measurement Method</h2>
+<p>The Kelvin resistance measurement method involves using an ammeter and voltmeter, as illustrated in the circuit schematic of Figure 2.&nbsp;</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/4-wire-resistance-measurement-schematic-diagram.jpg&quot; /></p>
+<em><strong>Figure 2. </strong>Schematic diagram of a 4-wire Kelvin resistance measurement.</em><br>
+<br>
+<p>This method is also called&nbsp;a 4-wire resistance measurement because four wires are connected to the unknown resistance&mdash;two at each end.&nbsp;A current is passed through the ammeter and the unknown resistance.&nbsp;The voltage dropped across the resistance is measured by the voltmeter, and resistance is calculated using Ohm&rsquo;s Law (R = V/I)</p>
+<p>Since only the voltage dropped by the unknown resistance is factored into the calculation&mdash;not the voltage dropped across the ammeter&rsquo;s test leads or any other connecting wires carrying the main current&mdash;errors otherwise caused by these stray resistances are completely eliminated.&nbsp;Very small resistances may be measured easily by using large current as this generates a larger, more easily measured, voltage drop from which to infer resistance than if a small current were used.&nbsp;</p>
+
+<h2>Instructions</h2>
+<p>This experiment is best performed with two meters (one ammeter and one voltmeter), as illustrated in the circuit schematic of Figure 2. This is how production 4-wire resistance is performed. However, as we will demonstrate below, one multimeter is sufficient.</p>
+<p><strong>Step 1:&nbsp;</strong>Select a suitably low-resistance specimen to use in this experiment. One suggestion is to use the electromagnet coil specified in a previous experiment or a spool of wire where both ends may be accessed.</p>
+<p><strong>Step 2: </strong>Measure the resistance directly using the ohmmeter function. We will compare this 2-wire measurement value with the value we determine from our 4-wire measurement.</p>
+<p><strong>Step 3:</strong>&nbsp;Connect a 6 V battery to this specimen, with an ammeter connected in series, as illustrated in Figure 3.&nbsp;<strong>WARNING:&nbsp;The ammeter should be capable of measuring at least 5 A of current so that it will not be damaged by the (possibly) high current generated in this near-short circuit condition.</strong></p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/4-wire-resistance-measurement-illustration.jpg&quot; /></p>
+<em><strong>Figure 3. </strong>Using the 4-wire Kelvin&nbsp;resistance measurement technique to measure a low resistance value.</em><br>
+<br>
+<p>Next, if you have a second meter, proceed to Step 4. If you have only a single multimeter, skip Step 4 and move to Step 5.</p>
+<p><strong>Step 4:</strong> With the second meter, use it to measure the voltage across the resistance specimen&rsquo;s connection points, as shown in Figure 3, and record both the current and voltage reported. Proceed to Step 6.</p>
+<p><strong>Step 5A:</strong>&nbsp;If you have only one meter, use it to measure current first, recording its indication as quickly as possible, then immediately opening (breaking) the circuit.&nbsp;You don&rsquo;t want to leave the battery connected to the specimen for any longer than necessary for obtaining meter measurements, as it will begin to rapidly discharge due to the high circuit current. This discharge could compromise the measurement accuracy when the meter is re-configured and the circuit closed once more for the next measurement.&nbsp;When two meters are used, this is not as significant an issue because the current and voltage indications may be recorded simultaneously.</p>
+<p><strong>Step 5B:</strong>&nbsp;Next, switch the meter to its voltage mode, connect it across the specimen&rsquo;s connection points, and re-connect the battery, quickly noting the voltage indication.&nbsp;</p>
+<p><strong>Step 6:&nbsp;</strong>Take the voltage measurement and divide it by the current measurement to calculate the specimen&rsquo;s resistance in ohms from our 4-wire Kelvin measurement:</p>
+<p>$$R&nbsp;= \frac{V}{I}$$</p>
+<p><strong>Step 7:</strong>&nbsp;Compare this 4-wire resistance value with the earlier 2-wire resistance measurement. Are they different? Why?&nbsp;</p>
+
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+# Simple Vector Addition
+<p>Remember that vectors are mathematical objects just like numbers on a number line: they can be added, subtracted, multiplied, and divided. Addition is perhaps the easiest vector operation to visualize, so we&rsquo;ll begin with that. If vectors with common angles are added, their magnitudes (lengths) add up just like regular scalar quantities: (Figure below)</p>
+
+<p><img src="/uploads/articles/vector-magnitudes-add-like-scalars-for-common-angle.png" /></p>
+
+<p>Similarly, if AC voltage sources with the same phase angle are connected together in series, their voltages add just as you might expect with DC batteries: (Figure below)</p>
+
+<p><img src="/uploads/articles/ac-voltages-add-like-dc-battery-voltages.png" /></p>
+
+<p>Please note the (+) and (-) polarity marks next to the leads of the two AC sources. Even though we know AC doesn&rsquo;t have &ldquo;polarity&rdquo; in the same sense that DC does, these marks are essential to know how to reference the given phase angles of the voltages. This will become more apparent in the next example.</p>
+<p>If vectors directly opposing each other (180<strong>&deg;</strong> out of phase) are added together, their magnitudes (lengths) subtract just like positive and negative scalar quantities subtract when added: (Figure below)</p>
+
+<p><img src="/uploads/articles/direct-opposing-vector-magnitudes-subtract.png" /></p>
+
+<p>Similarly, if opposing AC voltage sources are connected in series, their voltages subtract as you might expect with DC batteries connected in an opposing fashion: (Figure below)</p>
+
+<p><img src="/uploads/articles/opposing-ac-voltages-subtract-opposing-battery-voltages.png" /></p>
+
+<p>Determining whether or not these voltage sources are opposing each other requires an examination of their polarity markings <em>and</em> their phase angles. Notice how the polarity markings in the above diagram seem to indicate additive voltages (from left to right, we see - and + on the 6 volt source, - and + on the 8 volt source).</p>
+<p>Even though these polarity markings would normally indicate an <em>additive</em> effect in a DC circuit (the two voltages working together to produce a greater total voltage), in this AC circuit they&rsquo;re actually pushing in opposite directions because one of those voltages has a phase angle of 0<strong>&deg;</strong> and the other a phase angle of 180<strong>&deg;</strong>.</p>
+<p>The result, of course, is a total voltage of 2 volts.</p>
+<p>We could have just as well shown the opposing voltages subtracting in series like this: (Figure below)</p>
+
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/opposing-ac-voltages-subtract-opposing-battery-voltages-R2.jpg" /></p>
+
+<p>Note how the polarities appear to be opposed to each other now, due to the reversal of wire connections on the 8 volt source.</p>
+<p>Since both sources are described as having equal phase angles (0<strong>&deg;</strong>), they truly are opposed to one another, and the overall effect is the same as the former scenario with &ldquo;additive&rdquo; polarities and differing phase angles: a total voltage of only 2 volts. (Figure below)</p>
+
+<p><img src="/uploads/articles/two-ways-to-express-phase-sources-and-resultant-their-sum.png" /></p>
+<p><em>Just as there are two ways to express the phase of the sources, there are two ways to express the resultant their sum.</em></p>
+
+<p>The resultant voltage can be expressed in two different ways: 2 volts at 180&deg; with the (-) symbol on the left and the (+) symbol on the right, or 2 volts at 0&deg; with the (+) symbol on the left and the (-) symbol on the right. A reversal of wires from an AC voltage source is the same as phase-shifting that source by 180&deg;. (Figure below)</p>
+<p><img src="/uploads/articles/equivalent-voltage-sources.png" /></p>
+<p><em>Example of equivalent voltage sources.</em></p>

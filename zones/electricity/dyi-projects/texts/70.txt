@@ -1,0 +1,83 @@
+# Analog Lab - Non-inverting Amplifier
+## Project Overview
+<p>The non-inverting amplifier with an adjustable gain is one of the most useful circuits you can build with an operational amplifier (op amp). As illustrated in Figure 1, the op amp uses a resistor divider (potentiometer,&nbsp;R<sub>2</sub>) to provide negative feedback.&nbsp;&nbsp;</p>
+
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/non-inverting-amplifier-schematic-diagram.jpg" /></p>
+<em><strong>Figure 1.</strong> Schematic diagram of the op amp non-inverting amplifier&nbsp;circuit.</em>
+
+<p>As we will demonstrate, this divided negative feedback is key to the operation of the non-inverting amplifier.</p>
+
+## Parts and Materials
+<ul>
+<li>Op amp, model 1458 or 353, recommended</li>
+<li>Three 6 V batteries or an 18 V power supply</li>
+<li>Two 10 k&Omega; potentiometers, linear taper</li>
+</ul>
+
+## Learning Objectives
+<ul>
+<li>How to use an op amp as a single-ended amplifier</li>
+<li>How to use divided negative feedback</li>
+</ul>
+<p>&nbsp;&nbsp;</p>
+## Theory of Operation
+<p>This circuit differs from the voltage follower project in only one respect, the output voltage is fed back&nbsp;to the inverting (-) input through a voltage-dividing potentiometer rather than being directly connected. With only a fraction of the output voltage fed back to the inverting input, the op amp will output a corresponding multiple of the voltage sensed at the noninverting (+) input to keep&nbsp;the input differential voltage near zero.</p>
+<p>In other words, the op amp will now function as an amplifier with a controllable voltage gain, that gain is established by the position of the feedback potentiometer (R<sub>2</sub>).</p>
+
+## Instructions
+<p><strong>Step 1:</strong>&nbsp;Build the non-inverting amplifier&nbsp;circuit of Figure 1. A breadboard implementation of this circuit is illustrated in Figure 2.</p>
+
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/non-inverting-amplifier-circuit-illustration.jpg" /></p>
+<em><strong>Figure 2.</strong> Breadboard implementation of the op amp non-inverting amplifier.</em>
+
+<p><strong>Step 2:&nbsp;</strong>Set R<sub>2</sub> to approximately mid-position. This should give a voltage gain of about 2. See the derivation of the non-inverting amplifier gain equation (which is discussed later in this chapter)&nbsp;to understand why this is true.</p>
+<p><strong>Step 3:&nbsp;</strong>Measure both the input&nbsp;and output voltage for several positions of the input potentiometer R<sub>1</sub>.</p>
+<p><strong>Step 4:&nbsp;</strong>Move R<sub>2</sub> to a different position and re-take voltage measurements for several positions of R<sub>1</sub>. For any given R<sub>2</sub> position, the ratio between output and input voltage should be the same.&nbsp;The ability to leverage an op amp in this fashion to create an amplifier with controllable voltage gain makes this circuit an extremely useful one.</p>
+<p>You will also notice that the input and output voltages are always positive with respect to the ground. Since the output voltage increases in a positive direction for a positive increase of the input voltage, this amplifier is referred to as non-inverting.&nbsp;If the output and input voltages were related to one another in an inverse fashion (i.e. positive increasing input voltage results in positive decreasing or negative increasing output), then the amplifier would be known as an inverting type.</p>
+<p><strong>Step 5:&nbsp;</strong>Try adjusting R<sub>2</sub> for maximum and minimum voltage gain.&nbsp;What is the minimum&nbsp;voltage gain attainable with this amplifier configuration? Why do you think this is?</p>
+
+## Op Amp Non-inverting Amplifier&nbsp;Gain Equation
+<p>Let&#39;s&nbsp;derive the non-inverting amplifier gain equation using the schematic of Figure 3, which has distinct resistors, R<sub>1</sub> and R<sub>2</sub>, in the negative feedback path.&nbsp;</p>
+
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/non-inverting-amplifier-schematic-diagram-1.jpg" /></p>
+<em><strong>Figure 3.</strong> SPICE circuit schematic with node numbers&nbsp;for simulation of the&nbsp;op amp non-inverting amplifier</em>
+
+<p>Beginning from the op amp open-loop gain equation:</p>
+
+<p>$$V_{out} = A \cdot (V_+ - V_-) = A \cdot (V_{in} - V_-)$$</p>
+
+<p>Where <em>A</em>&nbsp;is the open-loop gain of the op amp, and we are defining the non-inverting&nbsp;op amp input (V<sub>+</sub>) as the non-inverting amplifier input,&nbsp;V<sub>in</sub>.</p>
+<p>The relationship of&nbsp;V<sub>-</sub>&nbsp;to&nbsp;V<sub>out</sub>&nbsp;is given by the resistive voltage divider equation:</p>
+
+<p>$$V_{-} = \left( \frac{R_1}{R_1+R_2} \right) V_{out}$$</p>
+
+<p>Substituting, we get:</p>
+
+<p>$$V_{out} = A\left(V_{in} - \left( \frac{R_1}{R_1+R_2} \right) V_{out} \right)$$</p>
+
+<p>$$V_{out} + A\left( \frac{R_1}{R_1+R_2} \right) V_{out} = AV_{in}$$</p>
+
+<p>Dividing both sides of the equation by the open-loop op amp gain,&nbsp;A, results in:</p>
+
+<p>$$V_{out} \left( 1 + A\left( \frac{R_1}{R_1+R_2} \right) \right) = AV_{in}$$</p>
+
+<p>Now, we will make an approximation to simplify the remaining analysis.&nbsp;The op amp open-loop gain,&nbsp;A, is typically a very large number, at least 10,000, and often much more. So, we will make the following approximation:</p>
+
+<p>$$\frac{1}{A} \approx 0$$</p>
+
+<p>This reduces our equation to:</p>
+
+<p>$$V_{out} \left( \frac{R_1}{R_1+R_2}\right) = V_{in}$$</p>
+
+<p>With some simple rearranging of terms, we arrive at our non-inverting amplifier gain, G:</p>
+
+<p>$$G = \frac{V_{out}}{V_{in}} = 1 + \frac{R_2}{R_1}$$</p>
+
+## SPICE Simulation of the Non-inverting Amplifier
+<p>The circuit schematic of Figure 3 uses a dependent voltage source (E<sub>1</sub>) to simulate an op amp.&nbsp;</p>
+<p>Netlist (make a text file containing the following text, verbatim):</p>
+
+<pre>
+Noninverting amplifier &#10;vinput 1 0 &#10;r2 3 2 5k &#10;r1 2 0 5k &#10;rbogus 1 0 1meg &#10;e1 3 0 1 2 999meg &#10;rload 3 0 10k &#10;.dc vinput 5 5 1 &#10;.print dc v(1,0) v(3,0) &#10;.end </pre>
+
+<p>With R<sub>1</sub> and R<sub>2</sub> set equally to 5 k&Omega; in the simulation, it mimics the feedback potentiometer of the real circuit at mid-position (50%). To simulate the potentiometer at the 75% position, set R<sub>2</sub> to 7.5 k&Omega; and R<sub>1</sub> to 2.5 k&Omega;.</p>

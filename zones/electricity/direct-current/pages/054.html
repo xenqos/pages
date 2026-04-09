@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Direct Current</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='053.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='055.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h6>08. DC Metering Circuits</h6>
+
+<h1>Voltmeter Impact on Measured Circuit</h1>
+<p>Every meter impacts the circuit it is measuring to some extent, just as any tire-pressure gauge changes the measured tire pressure slightly as some air is let out to operate the gauge. While some impact is inevitable, it can be minimized through good meter design.</p>
+
+<h2>Voltage Divider Circuit</h2>
+<p>Since voltmeters are always connected in parallel with the component or components under test, any current through the voltmeter will contribute to the overall current in the tested circuit, potentially affecting the voltage being measured. A perfect voltmeter has infinite resistance so that it draws no current from the circuit under test. However, perfect voltmeters only exist in the pages of textbooks, not in real life! Take the following voltage divider circuit in Figure 1 as an extreme example of how a realistic voltmeter might impact the circuit its measuring.</p>
+<a target='_blank' href='../images/054-01.jpg'><img class='clImageThumb' src='../images/054-01.jpg'></a><br>
+
+<em><strong>Figure 1.</strong> A voltage divider circuit diagram.</em><br>
+<br>
+<p>With no voltmeter connected to the circuit, there should be exactly 12 V across each 250 M&Omega; resistor in the series circuit, the two equal-value resistors dividing the total voltage (24 V) exactly in half. However, if the voltmeter in question has a lead-to-lead resistance of 10 M&Omega; (a common amount for a modern digital voltmeter), its resistance will create a parallel subcircuit with the lower resistor of the divider when connected, shown in Figure 2.</p>
+<a target='_blank' href='../images/054-02.jpg'><img class='clImageThumb' src='../images/054-02.jpg'></a><br>
+
+<em><strong>Figure 2. </strong>Example voltmeter with a lead-to-lead resistance of 10&nbsp;M&Omega;, creating a parallel subcircuit with a lower resistor of the divider.</em><br>
+<br>
+<p>This effectively reduces the lower resistance from 250 M&Omega; to 9.615 M&Omega; (250 M&Omega; and 10 M&Omega; in parallel), drastically altering voltage drops in the circuit. The lower resistor will now have far less voltage across it than before, and the upper resistor far more (Figure 3).</p>
+<a target='_blank' href='../images/054-03.jpg'><img class='clImageThumb' src='../images/054-03.jpg'></a><br>
+
+<em><strong>Figure 3.</strong> Diagram showing the lower resister having less voltage than before.</em><br>
+
+<h2>Measured Voltage Divider</h2>
+<p>A voltage divider with resistance values of 250 M&Omega; and 9.615 M&Omega; will divide 24 V&nbsp;into portions of 23.1111 V and 0.8889 V, respectively. Since the voltmeter is part of that 9.615 M&Omega; resistance, that is what it will indicate: 0.8889 V.</p>
+<p>Now, the voltmeter can only indicate the voltage it is connected across. It has no way of &ldquo;knowing&rdquo; there was a potential of 12 V dropped across the lower 250 M&Omega; resistor <em>before</em> it was connected across it. The very act of connecting the voltmeter to the circuit makes it part of the circuit, and the voltmeter&rsquo;s own resistance alters the resistance ratio of the voltage divider circuit, consequently affecting the voltage being measured.</p>
+
+<h2>How Does a Voltmeter Work?</h2>
+<p>Imagine using a tire pressure gauge that took so great a volume of air to operate that it would deflate any tire it was connected to. The amount of air consumed by the pressure gauge in the act of measurement is analogous to the current taken by the voltmeter movement to move the needle. The less air a pressure gauge requires to operate, the less it will deflate the tire under test. The less current drawn by a voltmeter to actuate the needle, the less it will burden the circuit under test.</p>
+<p>This effect is called <em>loading</em>, and it is present to some degree in every instance of voltmeter usage. The scenario shown here is worst-case, with a voltmeter resistance substantially lower than the resistances of the divider resistors. But there always will be some degree of loading, causing the meter to indicate less than the true voltage with no meter connected. Obviously, the higher the voltmeter resistance, the less loading of the circuit under test, and that is why an ideal voltmeter has infinite internal resistance.</p>
+<p>Voltmeters with electromechanical movements are typically given ratings in &ldquo;ohms per volt&rdquo; of range to designate the amount of circuit impact created by the current draw of the movement. Because such meters rely on different values of multiplier resistors to give different measurement ranges, their lead-to-lead resistances will change depending on what range they&rsquo;re set to. Digital voltmeters, on the other hand, often exhibit a constant resistance across their test leads regardless of range setting (but not always!), and as such, are usually rated simply in ohms of input resistance rather than &ldquo;ohms per volt&rdquo; sensitivity.</p>
+<p>What &ldquo;ohms per volt&rdquo; means is how many ohms of lead-to-lead resistance for every volt of <em>range setting </em>on the selector switch. Let&rsquo;s take our example voltmeter from the last section as an example shown in Figure 4.</p>
+<a target='_blank' href='../images/054-04.jpg'><img class='clImageThumb' src='../images/054-04.jpg'></a><br>
+
+<em><strong>Figure 4. </strong>Another voltmeter example.</em><br>
+<br>
+<p>On the 1000-volt scale, the total resistance is 1 M&Omega; (999.5 k&Omega; + 500 &Omega;), giving 1,000,000 &Omega; per 1000 V of range, or 1000 ohms per V (1 k&Omega;/V). This ohms-per-volt &ldquo;sensitivity&rdquo; rating remains constant for any range of this meter. This can be seen using the equations in Figure 5.</p>
+<a target='_blank' href='../images/054-05.png'><img class='clImageThumb' src='../images/054-05.png'></a><br>
+
+<h4><strong>Figure 5.</strong> Ohms-per-volt sensitivity rating equations.</h4>
+
+<p>The astute observer will notice that the ohms-per-volt rating of any meter is determined by a single factor: the full-scale current of the movement, in this case, 1 mA. &ldquo;Ohms per volt&rdquo; is the mathematical reciprocal of &ldquo;volts per ohm,&rdquo; which is defined by Ohm&rsquo;s Law as current (I=E/R). Consequently, the full-scale <em>current</em> of the movement dictates the &Omega;/volt sensitivity of the meter, regardless of what ranges the designer equips it with through multiplier resistors. In this case, the meter movement&rsquo;s full-scale current rating of 1 mA gives it a voltmeter sensitivity of 1000 &Omega;/V regardless of how we range it with multiplier resistors.</p>
+<p>To minimize the loading of a voltmeter on any circuit, the designer must seek to minimize the current draw of its movement. This can be accomplished by re-designing the movement itself for maximum sensitivity (less current is required for full-scale deflection), but the tradeoff here is typically ruggedness: a more sensitive movement tends to be more fragile.</p>
+<p>Another approach is to electronically boost the current sent to the movement so that very little current needs to be drawn from the circuit under test. This special electronic circuit is known as an <em>amplifier</em>, and the voltmeter thus constructed is an <em>amplified voltmeter </em>(Figure 6).</p>
+<a target='_blank' href='../images/054-06.jpg'><img class='clImageThumb' src='../images/054-06.jpg'></a><br>
+
+<em><strong>Figure 6.</strong> Diagram of an amplified voltmeter.</em><br>
+<br>
+<p>The internal workings of an amplifier are too complex to be discussed at this point but suffice it to say that the circuit allows the measured voltage to <em>control</em> how much battery current is sent to the meter movement. Thus, the movement&rsquo;s current needs are supplied by a battery internal to the voltmeter and not by the circuit under test. The amplifier still loads the circuit under test to some degree, but generally hundreds or thousands of times less than the meter movement would by itself.</p>
+
+<h2>Vacuum-tube Voltmeters (VTVMs)</h2>
+<p>Before the advent of semiconductors known as &ldquo;field-effect transistors,&rdquo; vacuum tubes were used as amplifying devices to perform this boosting. Such <em>vacuum-tube voltmeters</em>, or <em>(VTVMs)</em> were once very popular instruments for electronic tests and measurements. Figure 7&nbsp;shows&nbsp;a photograph of a very old VTVM with the vacuum tube exposed!</p>
+<a target='_blank' href='../images/054-07.jpg'><img class='clImageThumb' src='../images/054-07.jpg'></a><br>
+
+<em><strong>Figure 7.</strong> A photo of an old VTVM with the vacuum tube exposed.</em><br>
+<br>
+<p>Now, solid-state transistor amplifier circuits accomplish the same task in digital meter designs. While this approach (using an amplifier to boost the measured signal current) works well, it vastly complicates the design of the meter, making it nearly impossible for the beginning electronics student to comprehend its internal workings.</p>
+<p>A final and ingenious solution to the problem of voltmeter loading is that of the <em>potentiometric</em> or <em>null-balance</em> instrument. It requires no advanced (electronic) circuitry or sensitive devices like transistors or vacuum tubes, but it does require greater technician involvement and skill. In a potentiometric instrument, a precision adjustable voltage source is compared against the measured voltage, and a sensitive device called a <em>null detector</em> is used to indicate when the two voltages are equal.</p>
+<p>In some circuit designs, a precision <em>potentiometer</em> is used to provide the adjustable voltage, thus the label <em>potentiometric</em>. When the voltages are equal, there will be zero current drawn from the circuit under test, and thus the measured voltage should be unaffected. It is easy to show how this works with our last example, the high-resistance voltage divider circuit (Figure 8).</p>
+<a target='_blank' href='../images/054-08.jpg'><img class='clImageThumb' src='../images/054-08.jpg'></a><br>
+
+<em><strong>Figure 8. </strong>A potentiometric voltage measurement diagram.</em><br>
+
+<h2>Null Detector</h2>
+<p>The &ldquo;null detector&rdquo; is a sensitive device capable of indicating the presence of very small voltages. If an electromechanical meter movement is used as the null detector, it will have a spring-centered needle that can deflect in either direction so as to be useful for indicating a voltage of either polarity. As the purpose of a null detector is to accurately indicate a condition of <em>zero</em> voltage rather than to indicate any specific (nonzero) quantity as a normal voltmeter would, the scale of the instrument used is irrelevant. Null detectors are typically designed to be as sensitive as possible in order to more precisely indicate a &ldquo;null&rdquo; or &ldquo;balance&rdquo; (zero voltage) condition.</p>
+<p>An extremely simple type of null detector is a set of audio headphones, the speakers within acting as a kind of meter movement. When a DC voltage is initially applied to a speaker, the resulting current through it will move the speaker cone and produce an audible &ldquo;click.&rdquo; Another &ldquo;click&rdquo; sound will be heard when the DC source is disconnected. Building on this principle, a sensitive null detector may be made from nothing more than wired headphones and a momentary contact switch. Figure 9 shows an example of this.</p>
+<a target='_blank' href='../images/054-09.jpg'><img class='clImageThumb' src='../images/054-09.jpg'></a><br>
+
+<em><strong>Figure 9. </strong>Example diagram of a sensitive null detector using wired headphones and a momentary contact switch.</em><br>
+<br>
+<p>If a set of &ldquo;8 ohm&rdquo; headphones are used for this purpose, its sensitivity may be greatly increased by connecting it to a device called a <em>transformer</em>. The transformer exploits principles of electromagnetism to &ldquo;transform&rdquo; the voltage and current levels of electrical energy pulses. In this case, the type of transformer used is a <em>step-down</em> transformer, and it converts low-current pulses (created by closing and opening the pushbutton switch while connected to a small voltage source) into higher-current pulses to more efficiently drive the speaker cones inside the headphones.</p>
+<p>An &ldquo;audio output&rdquo; transformer with an impedance ratio of 1000:8 is ideal for this purpose. The transformer also increases detector sensitivity by accumulating the energy of a low-current signal in a magnetic field for sudden release into the headphone speakers when the switch is opened (Figure 10). Thus, it will produce louder &ldquo;clicks&rdquo; for detecting smaller signals.</p>
+<a target='_blank' href='../images/054-10.jpg'><img class='clImageThumb' src='../images/054-10.jpg'></a><br>
+
+<em><strong>Figure 10. </strong>Diagram showing the sensitive null detector combined with an audio output transformer.</em><br>
+<br>
+<p>Connected to the potentiometric circuit as a null detector, the switch/transformer/headphone arrangement is used as such in Figure 11.</p>
+<a target='_blank' href='../images/054-11.jpg'><img class='clImageThumb' src='../images/054-11.jpg'></a><br>
+
+<em><strong>Figure 11.</strong> A diagram of a null detector connected to the switch/transformer/headphone arrangement.</em><br>
+<br>
+<p>The purpose of any null detector is to act like a laboratory balance scale, indicating when the two voltages are equal (absence of voltage between points 1 and 2) and nothing more. The laboratory scale balance beam doesn&rsquo;t actually weigh anything; rather, it simply indicates <em>equality</em> between the unknown mass and the pile of standard (calibrated) masses (Figure 12).</p>
+<a target='_blank' href='../images/054-12.jpg'><img class='clImageThumb' src='../images/054-12.jpg'></a><br>
+
+<em><strong>Figure 12.</strong> A high-lelvel laboratory scale balance beam example.</em><br>
+<br>
+<p>Likewise, the null detector simply indicates when the voltage between points 1 and 2 are equal, which (according to Kirchhoff&rsquo;s Voltage Law) will be when the adjustable voltage source (the battery symbol with a diagonal arrow going through it) is precisely equal in voltage to the drop across R<sub>2</sub>.</p>
+<p>To operate this instrument, the technician would manually adjust the output of the precision voltage source until the null detector indicated exactly zero. If using audio headphones as the null detector, the technician would repeatedly press and release the pushbutton switch, listening for silence to indicate that the circuit was &ldquo;balanced. Then they would note the source voltage as indicated by a voltmeter connected across the precision voltage source, that indication being representative of the voltage across the lower 250 M&Omega; resistor (Figure 13).</p>
+<a target='_blank' href='../images/054-13.jpg'><img class='clImageThumb' src='../images/054-13.jpg'></a><br>
+
+<em><strong>Figure 13. </strong>Diagram of a voltmeter connected across the precision voltage source.</em><br>
+<br>
+<p>The voltmeter used to directly measure the precision source need not have an extremely high &Omega;/V sensitivity because the source will supply all the current it needs to operate. So long as there is zero voltage across the null detector, there will be zero current between points 1 and 2, equating to no loading of the divider circuit under test.</p>
+<p>It is worth reiterating the fact that this method, properly executed, places <em>almost zero loads</em> upon the measured circuit. Ideally, it places absolutely no load on the tested circuit, but to achieve this ideal goal, the null detector would have to have <em>absolutely zero voltage across it</em>, which would require an infinitely sensitive null meter and a perfect balance of voltage from the adjustable voltage source.</p>
+<p>However, despite its practical inability to achieve absolute zero loading, a potentiometric circuit is still an excellent technique for measuring voltage in high-resistance circuits. And unlike the electronic amplifier solution, which solves the problem with advanced technology, the potentiometric method achieves a hypothetically perfect solution by exploiting a fundamental law of electricity, Kirchhoff&#39;s voltage law&nbsp;(KVL).</p>
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li>An ideal voltmeter has infinite resistance.</li>
+<li>Too low of internal resistance in a voltmeter will adversely affect the circuit being measured.</li>
+<li>Vacuum tube voltmeters (VTVMs), transistor voltmeters, and potentiometric circuits are all means of minimizing the load placed on a measured circuit. Of these methods, the potentiometric (&ldquo;null-balance&rdquo;) technique is the only one capable of placing <em>zero</em> loads on the circuit.</li>
+<li>A <em>null detector</em> is a device built for maximum sensitivity to small voltages or currents. It is used in potentiometric voltmeter circuits to indicate the <em>absence</em> of voltage between two points, thus indicating a condition of balance between an adjustable voltage source and the voltage being measured.</li>
+</ul>
+
+
+
+</div>
+</div>
+</body>
+</html>

@@ -10,6 +10,8 @@ A capacitor functions primarily as a **charge storage** device, accumulating ele
 
 **Timing:** When paired with a resistor (RC circuit), the time it takes to charge or discharge defines specific intervals for oscillators and clock signals.
 
+## Charging and Discharging of Capacitor
+
 ^[capacitor-01.webp]
 
 Essentially, the capacitor acts as a **temporary reservoir**, stabilizing voltage and managing frequency-dependent signals.

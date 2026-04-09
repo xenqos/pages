@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Alternating Current</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='54.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='56.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>Voltage Regulation</h1>
+<p>As we saw in a few SPICE analyses earlier in this chapter, the output voltage of a transformer varies some with varying load resistances, even with a constant voltage input.</p>
+<p>The degree of variance is affected by the primary and secondary winding inductances, among other factors, not the least of which includes winding resistance and the degree of mutual inductance (magnetic coupling) between the primary and secondary windings.</p>
+<p>For power transformer applications, where the transformer is seen by the load (ideally) as a constant source of voltage, it is good to have the secondary voltage vary as little as possible for wide variances in load current.</p>
+<h2>Voltage Regulation Formula</h2>
+<p>The measure of how well a power transformer maintains constant secondary voltage over a range of load currents is called the transformer&rsquo;s <em>voltage regulation</em>. It can be calculated from the following formula:</p>
+<p><img src=&quot;/uploads/articles/voltage-regulation-formula.jpg&quot; /></p>
+
+<h2>What is &ldquo;Full Load&rdquo;?</h2>
+<p>&ldquo;Full-load&rdquo; means the point at which the transformer is operating at maximum permissible secondary current. This operating point will be determined primarily by the winding wire size (ampacity) and the method of transformer cooling.</p>
+<p>Taking our first SPICE transformer simulation as an example, let&rsquo;s compare the output voltage with a 1 k&Omega; load versus a 200 &Omega; load (assuming that the 200 &Omega; load will be our &ldquo;full load&rdquo; condition). Recall if you will that our constant primary voltage was 10.00 volts AC:</p>
+
+<pre><br>
+freq          v(3,5)      i(vi1)      &#10;6.000E+01     9.962E+00   9.962E-03    Output with 1k ohm load&#10;&#10;freq          v(3,5)      i(vi1)      &#10;6.000E+01     9.348E+00   4.674E-02    Output with 200 ohm load&#10;</pre>
+
+<p>Notice how the output voltage decreases as the load gets heavier (more current). Now let&rsquo;s take that same transformer circuit and place a load resistance of extremely high magnitude across the secondary winding to simulate a &ldquo;no-load&rdquo; condition: (See &ldquo;transformer&rdquo; spice list&rdquo;)</p>
+
+<pre><br>
+transformer    &#10;v1 1 0 ac 10 sin&#10;rbogus1 1 2 1e-12    &#10;   &#10;rbogus2 5 0 9e12&#10;l1 2 0 100      &#10;l2 3 5 100      &#10;k l1 l2 0.999   &#10;vi1 3 4 ac 0    &#10;rload 4 5 9e12  &#10;.ac lin 1 60 60 &#10;.print ac v(2,0) i(v1)  &#10;.print ac v(3,5) i(vi1) &#10;.end&#10;</pre>
+
+<pre><br>
+freq          v(2)        i(v1)       &#10;6.000E+01     1.000E+01   2.653E-04&#10;&#10;freq          v(3,5)      i(vi1)      &#10;6.000E+01     9.990E+00   1.110E-12   Output with (almost) no load&#10;</pre>
+
+<p>So, we see that our output (secondary) voltage spans a range of 9.990 volts at (virtually) no load and 9.348 volts at the point we decided to call &ldquo;full load.&rdquo; Calculating voltage regulation with these figures, we get:</p>
+<p><img src=&quot;/uploads/articles/full-load-formula-example.jpg&quot; /></p>
+<p>Incidentally, this would be considered rather poor (or &ldquo;loose&rdquo;) regulation for a power transformer. Powering a simple resistive load like this, a good power transformer should exhibit a regulation percentage of less than 3%.</p>
+<p>Inductive loads tend to create a condition of worse voltage regulation, so this analysis with purely resistive loads was a &ldquo;best-case&rdquo; condition.</p>
+<h3>Applications requiring &ldquo;Poor&rdquo; Regulation</h3>
+<p>There are some applications, however, where poor regulation is actually desired. One such case is in discharge lighting, where a step-up transformer is required to initially generate a high voltage (necessary to &ldquo;ignite&rdquo; the lamps), then the voltage is expected to drop off once the lamp begins to draw current.</p>
+<p>This is because discharge lamps&rsquo; voltage requirements tend to be much lower after a current has been established through the arc path. In this case, a step-up transformer with poor voltage regulation suffices nicely for the task of conditioning power to the lamp.</p>
+<p>Another application is in current control for AC arc welders, which are nothing more than step-down transformers supplying low-voltage, high-current power for the welding process.</p>
+<p>A high voltage is desired to assist in &ldquo;striking&rdquo; the arc (getting it started), but like the discharge lamp, an arc doesn&rsquo;t require as much voltage to sustain itself once the air has been heated to the point of ionization. Thus, a decrease of secondary voltage under high load current would be a good thing.</p>
+<p>Some arc welder designs provide arc current adjustment by means of a movable iron core in the transformer, cranked in or out of the winding assembly by the operator.</p>
+<p>Moving the iron slug away from the windings reduces the strength of magnetic coupling between the windings, which diminishes no-load secondary voltage <em>and</em> makes for poorer voltage regulation.</p>
+<h3>Ferroresonant Transformer</h3>
+<p>No exposition on transformer regulation could be called complete without mention of an unusual device called a <em>ferroresonant transformer</em>.</p>
+<p>&ldquo;Ferroresonance&rdquo; is a phenomenon associated with the behavior of iron cores while operating near a point of magnetic saturation (where the core is so strongly magnetized that further increases in winding current results in little or no increase in magnetic flux).</p>
+<p>While being somewhat difficult to describe without going deep into electromagnetic theory, the ferroresonant transformer is a power transformer engineered to operate in a condition of persistent core saturation.</p>
+<p>That is, its iron core is &ldquo;stuffed full&rdquo; of magnetic lines of flux for a large portion of the AC cycle so that variations in supply voltage (primary winding current) have little effect on the core&rsquo;s magnetic flux density, which means the secondary winding outputs a nearly constant voltage despite significant variations in supply (primary winding) voltage.</p>
+<h3>Resonance Circuits in Ferroresonant Transformers</h3>
+<p>Normally, core saturation in a transformer results in distortion of the sine wave shape, and the ferroresonant transformer is no exception. To combat this side effect, ferroresonant transformers have an auxiliary secondary winding paralleled with one or more capacitors, forming a resonant circuit tuned to the power supply frequency.</p>
+<p>This &ldquo;tank circuit&rdquo; serves as a filter to reject harmonics created by the core saturation, and provides the added benefit of storing energy in the form of AC oscillations, which is available for sustaining output winding voltage for brief periods of input voltage loss (milliseconds&rsquo; worth of time, but certainly better than nothing).</p>
+<p><img src=&quot;/uploads/articles/ferroresonant-transformer.jpg&quot; /></p>
+<p><em>Ferroresonant transformer provides voltage regulation of the output.</em></p>
+<p>In addition to blocking harmonics created by the saturated core, this resonant circuit also &ldquo;filters out&rdquo; harmonic frequencies generated by nonlinear (switching) loads in the secondary winding circuit and any harmonics present in the source voltage, providing &ldquo;clean&rdquo; power to the load.</p>
+<p>Ferroresonant transformers offer several features useful in AC power conditioning: constant output voltage given substantial variations in input voltage, harmonic filtering between the power source and the load, and the ability to &ldquo;ride through&rdquo; brief losses in power by keeping a reserve of energy in its resonant tank circuit.</p>
+<p>These transformers are also highly tolerant of excessive loading and transient (momentary) voltage surges. They are so tolerant, in fact, that some may be briefly paralleled with unsynchronized AC power sources, allowing a load to be switched from one source of power to another in a &ldquo;make-before-break&rdquo; fashion with no interruption of power on the secondary side!</p>
+<h2>Known Disadvantages of Ferroresonant Transformers</h2>
+<p>Unfortunately, these devices have equally noteworthy disadvantages: they waste a lot of energy (due to hysteresis losses in the saturated core), generating <em>significant</em> heat in the process, and are intolerant of frequency variations, which means they don&rsquo;t work very well when powered by small engine-driven generators having poor speed regulation.</p>
+<p>Voltages produced in the resonant winding/capacitor circuit tend to be very high, necessitating expensive capacitors and presenting the service technician with very dangerous working voltages. Some applications, though, may prioritize the ferroresonant transformer&rsquo;s advantages over its disadvantages.</p>
+<p>Semiconductor circuits exist to &ldquo;condition&rdquo; AC power as an alternative to ferroresonant devices, but none can compete with this transformer in terms of sheer simplicity.</p>
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li><em>Voltage regulation</em> is the measure of how well a power transformer can maintain constant secondary voltage given a constant primary voltage and wide variance in load current. The lower the percentage (closer to zero), the more stable the secondary voltage and the better the regulation it will provide.</li>
+<li>A <em>ferroresonant</em> transformer is a special transformer designed to regulate voltage at a stable level despite wide variation in input voltage.</li>
+</ul>
+
+
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Reference</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='017.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='019.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>Thyristors</h1>
+<p><em>Thyristors</em> are a broad classification of bipolar-conducting semiconductor devices with four (or more) alternating N-P-N-P layers. Thyristors include:&nbsp;</p>
+<ul>
+<li>Silicon-controlled rectifier (SCR)</li>
+<li>TRIAC</li>
+<li>Gate turn off switch (GTO)</li>
+<li>Silicon controlled switch (SCS)</li>
+<li>AC diode (DIAC)</li>
+<li>Unijunction transistor (UJT)</li>
+<li>Programmable unijunction transistor (PUT).</li>
+</ul>
+
+<p>Only the SCR is examined in this section, though the GTO is mentioned.</p>
+<p>Shockley proposed the four-layer diode thyristor in 1950. It was not realized until years later at General Electric. SCR&rsquo;s are now available to handle power levels spanning watts to megawatts. The smallest devices, packaged like small-signal transistors, switch 100&rsquo;s of milliamps at near 100 VAC. The largest packaged devices are 172 mm in diameter, switching 5600 Amps at 10,000 VAC. The highest power SCR&rsquo;s may consist of a whole semiconductor wafer several inches in diameter (100&rsquo;s of mm).</p>
+
+<h2><strong>Silicon Controlled Rectifier (SCR)</strong></h2>
+<p><em><img src=&quot;/uploads/articles/silicon-controlled-rectifier.jpg&quot; /></em></p>
+<em>Silicon controlled rectifier (SCR): (a) doping profile, (b) BJT equivalent circuit.</em><br>
+<br>
+<p>The silicon controlled rectifier is a four layer&nbsp;diode with a gate connection as in Figure above (a). When turned on, it conducts like a diode, for one polarity of current. If not triggered on, it is nonconducting. Operation is explained in terms of the compound connected transistor equivalent in Figure above (b). A positive trigger signal is applied between the gate and cathode terminals. This causes the NPN equivalent transistor to conduct. The collector of the conducting NPN transistor pulls low, moving the PNP base towards its collector voltage, which causes the PNP to conduct. The collector of the conducting PNP pulls high, moving the NPN base in the direction of its collector. This positive feedback (regeneration) reinforces the NPN&rsquo;s already conducting state. Moreover, the NPN will now conduct even in the absence of a gate signal. Once an SCR conducts, it continues for as long as a positive anode voltage is present. For the DC battery shown, this is forever. However, SCR&rsquo;s are most often used with an alternating current or pulsating DC supply. Conduction ceases with the expiration of the positive half of the sinewave at the anode. Moreover, most practical SCR circuits depend on the AC cycle going to zero to cutoff or <em>commutate</em> the SCR.</p>
+<p>Figure below (a) shows the doping profile of an SCR. Note that the cathode, which corresponds to an equivalent emitter of an NPN transistor is heavily doped as N+ indicates. The anode is also heavily doped (P+). It is the equivalent emitter of a PNP transistor. The two middle layers, corresponding to base and collector regions of the equivalent transistors, are less heavily doped: N- and P. This profile in high power SCR&rsquo;s may be spread across a whole semiconductor wafer of substantial diameter.</p>
+<p><img src=&quot;/uploads/articles/doping-profile-of-an-scr.jpg&quot; /></p>
+<em>Thyristors: (a) Cross-section, (b) silicon controlled rectifier (SCR) symbol, (c) gate turn-off thyristor (GTO) symbol.</em><br>
+<br>
+<p>The schematic symbols for an SCR and GTO are shown in Figures above (b &amp; c). The basic diode symbol indicates that cathode to anode conduction is unidirectional like a diode. The addition of a gate lead indicates control of diode conduction. The gate turn off switch (GTO) has bidirectional arrows about the gate lead, indicating that the conduction can be disabled by a negative pulse, as well as initiated by a positive pulse.</p>
+<p>In addition to the ubiquitous silicon based SCR&rsquo;s, experimental silicon carbide devices have been produced. Silicon carbide (SiC) operates at higher temperatures, and is more conductive of heat than any metal, second to diamond. This should allow for either physically smaller or higher power capable devices.</p>
+<p><strong>REVIEW</strong></p>
+<ul>
+<li>SCR&rsquo;s are the most prevalent member of the thyristor four layer diode family.</li>
+<li>A positive pulse applied to the gate of an SCR triggers it into conduction. Conduction continues even if the gate pulse is removed. Conduction only ceases when the anode to cathode voltage drops to zero.</li>
+<li>SCR&rsquo;s are most often used with an AC supply (or pulsating DC) because of the continuous conduction.</li>
+<li>A gate turn off switch (GTO) may be turned off by application of a negative pulse to the gate.</li>
+<li>SCR&rsquo;s switch megawatts of power, up to 5600 A and 10,000 V.</li>
+</ul>
+
+
+
+</div>
+</div>
+</body>
+</html>

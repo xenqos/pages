@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Semiconductors</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='077.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='079.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>The Shockley Diode</h1>
+<p>Our exploration of thyristors begins with a device called the four-layer diode, also known as a PNPN diode, or a Shockley diode after its inventor, William Shockley. This is not to be confused with a Schottky diode, that two-layer metal-semiconductor device known for its high switching speed. A crude illustration of the Shockley diode, often seen in textbooks, is a four-layer sandwich of P-N-P-N semiconductor material, Figure below.</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/shockley-or-4-layer-diode.jpg&quot; /></p>
+<p>Unfortunately, this simple illustration does nothing to enlighten the viewer on how it works or why. Consider an alternative rendering of the device&rsquo;s construction in Figure below.</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/transistor-equivalent-of-shockley-diode.jpg&quot; /></p>
+<p>Shown like this, it appears to be a set of interconnected bipolar transistors, one PNP and the other NPN. Drawn using standard schematic symbols, and respecting the layer doping concentrations not shown in the last image, the Shockley diode looks like this (Figure below)</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/shockley-diode-diagrams.jpg&quot; /></p>
+<p>Let&rsquo;s connect one of these devices to a source of variable voltage and see what happens.</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/powered-shockley-diode-equivalent-circuit.jpg&quot; /></p>
+<p>With no voltage applied, of course there will be no current. As voltage is initially increased, there will still be no current because neither transistor is able to turn on: both will be in cutoff mode. To understand why this is, consider what it takes to turn a bipolar junction transistor on: current through the base-emitter junction. As you can see in the diagram, base current through the lower transistor is controlled by the upper transistor, and the base current through the upper transistor is controlled by the lower transistor. In other words, neither transistor can turn on until the other transistor turns on. What we have here, in vernacular terms, is known as a Catch-22.</p>
+<h2>Turning the Shockley Diode On and Off</h2>
+<p>So how can a Shockley diode ever conduct current, if its constituent transistors stubbornly maintain themselves in a state of cutoff? The answer lies in the behavior of real transistors as opposed to ideal transistors. An ideal bipolar transistor will never conduct collector current if no base current flows, no matter how much or little voltage we apply between collector and emitter. Real transistors, on the other hand, have definite limits to how much collector-emitter voltage each can withstand before one breaks down and conduct. If two real transistors are connected in this fashion to form a Shockley diode, each one will conduct if sufficient voltage is applied by the battery between anode and cathode to cause one of them to break down. Once one transistor breaks down and begins to conduct, it will allow base current through the other transistor, causing it to turn on in a normal fashion, which then allows base current through the first transistor. The end result is that both transistors will be saturated, now keeping each other turned on instead of off.</p>
+<p>So, we can force a Shockley diode to turn on by applying sufficient voltage between anode and cathode. As we have seen, this will inevitably cause one of the transistors to turn on, which then turns the other transistor on, ultimately &ldquo;latching&rdquo; both transistors on where each will tend to remain. But how do we now get the two transistors to turn off again? Even if the applied voltage is reduced to a point well below what it took to get the Shockley diode conducting, it will remain conducting because both transistors now have base current to maintain regular, controlled conduction. The answer to this is to reduce the applied voltage to a much lower point where too little current flows to maintain transistor bias, at which point one of the transistors will cutoff, which then halts base current through the other transistor, sealing both transistors in the &ldquo;off&rdquo; state as each one was before any voltage was applied at all.</p>
+<h2>Voltage vs Current Plot in a Shockley Diode&rsquo;s Circuit</h2>
+<p>If we graph this sequence of events and plot the results on an I/V graph, the hysteresis is evident. First, we will observe the circuit as the DC voltage source (battery) is set to zero voltage: (Figure below)</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/zero-applied-voltage.jpg&quot; /></p>
+<p>Next, we will steadily increase the DC voltage. Current through the circuit is at or nearly at zero, as the breakdown limit has not been reached for either transistor.</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/some-applied-voltage.jpg&quot; /></p>
+<p>When the voltage breakdown limit of one transistor is reached, it will begin to conduct collector current even though no base current has gone through it yet. Normally, this sort of treatment would destroy a bipolar junction transistor, but the PNP junctions comprising a Shockley diode are engineered to take this kind of abuse, similar to the way a Zener diode is built to handle reverse breakdown without sustaining damage. For the sake of illustration I&rsquo;ll assume the lower transistor breaks down first, sending current through the base of the upper transistor: (Figure below)</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/lower-transistor-breaks-down.jpg&quot; /></p>
+<p>As the upper transistor receives base current, it turns on as expected. This action allows the lower transistor to conduct normally, the two transistors &ldquo;sealing&rdquo; themselves in the &ldquo;on&rdquo; state. Full current is quickly seen in the circuit: (Figure below)</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/transistors-are-now-fully-conducting.jpg&quot; /></p>
+<p>The positive feedback mentioned earlier in this chapter is clearly evident here. When one transistor breaks down, it allows current through the device structure. This current may be viewed as the &ldquo;output&rdquo; signal of the device. Once an output current is established, it works to hold both transistors in saturation, thus ensuring the continuation of a substantial output current. In other words, an output current &ldquo;feeds back&rdquo; positively to the input (transistor base current) to keep both transistors in the &ldquo;on&rdquo; state, thus reinforcing (or regenerating) itself.</p>
+<p>With both transistors maintained in a state of saturation with the presence of ample base current, each will continue to conduct even if the applied voltage is greatly reduced from the breakdown level. The effect of positive feedback is to keep both transistors in a state of saturation despite the loss of input stimulus (the original, high voltage needed to break down one transistor and cause a base current through the other transistor): (Figure below)</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/current-maintained-even-when-voltage-is-reduced.jpg&quot; /></p>
+<p>If the DC voltage source is turned down too far, though, the circuit will eventually reach a point where there isn&rsquo;t enough current to sustain both transistors in saturation. As one transistor passes less and less collector current, it reduces the base current for the other transistor, thus reducing base current for the first transistor. The vicious cycle continues rapidly until both transistors fall into cutoff: (Figure below)</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/transistors-shut-off.jpg&quot; /></p>
+<p>Here, positive feedback is again at work: the fact that the cause/effect cycle between both transistors is &ldquo;vicious&rdquo; (a decrease in current through one works to decrease current through the other, further decreasing current through the first transistor) indicates a positive relationship between output (controlled current) and input (controlling current through the transistors&rsquo; bases).</p>
+<p>The resulting curve on the graph is classically hysteretic: as the input signal (voltage) is increased and decreased, the output (current) does not follow the same path going down as it did going up: (Figure below)</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/hysteretic-curve.jpg&quot; /></p>
+<p>Put in simple terms, the Shockley diode tends to stay on once its turned on, and stay off once its turned off. No &ldquo;in-between&rdquo; or &ldquo;active&rdquo; mode in its operation: it is a purely on or off device, as are all thyristors.</p>
+<h2>Special Terms to Note</h2>
+<p>A few special terms apply to Shockley diodes and all other thyristor devices built upon the Shockley diode foundation. First is the term used to describe its &ldquo;on&rdquo; state: latched. The word &ldquo;latch&rdquo; is reminiscent of a door lock mechanism, which tends to keep the door closed once it has been pushed shut. The term firing refers to the initiation of a latched state. To get a Shockley diode to latch, the applied voltage must be increased until breakover is attained. Though this action is best described as transistor breakdown, the term breakover is used instead because the result is a pair of transistors in mutual saturation rather than destruction of the transistor. A latched Shockley diode is re-set back into its nonconducting state by reducing current through it until low-current dropout occurs.</p>
+<p>Note that Shockley diodes may be fired in a way other than breakover: excessive voltage rise, or dv/dt. If the applied voltage across the diode increases at a high rate of change, it may trigger. This is able to cause latching (turning on) of the diode due to inherent junction capacitances within the transistors. Capacitors, as you may recall, oppose changes in voltage by drawing or supplying current. If the applied voltage across a Shockley diode rises at too fast a rate, those tiny capacitances will draw enough current during that time to activate the transistor pair, turning them both on. Usually, this form of latching is undesirable, and can be minimized by filtering high-frequency (fast voltage rises) from the diode with series inductors and parallel resistor-capacitor networks called snubbers: (Figure below)</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/series-inductor-and-parallel-resistor-capacitor-snubber-circuit.jpg&quot; /></p>
+<p>The voltage rise limit of a Shockley diode is referred to as the critical rate of voltage rise. Manufacturers usually provide this specification for the devices they sell.</p>
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li>Shockley diodes are four-layer PNPN semiconductor devices. These behave as a pair of interconnected PNP and NPN transistors.</li>
+<li>Like all thyristors, Shockley diodes tend to stay on once turned on (latched), and stay off once turned off.</li>
+<li>To latch a Shockley diode exceed the anode-to-cathode breakover voltage, or exceed the anode-to-cathode critical rate of voltage rise.</li>
+<li>To cause a Shockley diode to stop conducting, reduce the current going through it to a level below its low-current dropout threshold.</li>
+</ul>
+
+
+
+</div>
+</div>
+</body>
+</html>

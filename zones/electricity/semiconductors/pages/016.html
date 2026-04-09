@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Semiconductors</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='015.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='017.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>Junction Field-effect Transistors</h1>
+<p>The field effect transistor was proposed by Julius Lilienfeld in US patents in 1926 and 1933 (1,900,018). Moreover, Shockley, Brattain, and Bardeen were investigating the field effect transistor in 1947. Though, the extreme difficulties sidetracked them into inventing the bipolar transistor instead. Shockley&rsquo;s field effect transistor theory was published in 1952. However, the materials processing technology was not mature enough until 1960 when John Atalla produced a working device.</p>
+<p>A <em>field effect transistor</em> (FET) is a <em>unipolar</em> device, conducting a current using only one kind of charge carrier. If based on an N-type slab of semiconductor, the carriers are electrons. Conversely, a P-type based device uses only holes.</p>
+<h2><strong>FET Operation</strong></h2>
+<p>At the circuit level, field effect transistor operation is simple. A voltage applied to the <em>gate</em>, input element, controls the resistance of the <em>channel</em>, the unipolar region between the gate regions. (Figure below) In an N-channel device, this is a lightly doped N-type slab of silicon with terminals at the ends. The <em>source</em> and <em>drain</em> terminals are analogous to the emitter and collector, respectively, of a BJT. In an N-channel device, a heavy P-type region on both sides of the center of the slab serves as a control electrode, the gate. The gate is analogous to the base of a BJT.</p>
+<p>&ldquo;Cleanliness is next to godliness&rdquo; applies to the manufacture of field effect transistors. Though it is possible to make bipolar transistors outside of a <em>clean room</em>, it is a necessity for field effect transistors. Even in such an environment, manufacture is tricky because of contamination control issues. The unipolar field effect transistor is conceptually simple, but difficult to manufacture. Most transistors today are a metal oxide semiconductor variety (later section) of the field effect transistor contained within integrated circuits. However, discrete JFET devices are available.</p>
+<p><img src=&quot;/uploads/articles/junction-field-effect-transistor-cross-section.jpg&quot; /></p>
+<p>Junction field effect transistor cross-section.</p>
+<p>A properly biased N-channel junction field effect transistor (JFET) is shown in Figure above. The gate constitutes a diode junction to the source to drain semiconductor slab. The gate is reverse biased. If a voltage (or an ohmmeter) were applied between the source and drain, the N-type bar would conduct in either direction because of the doping. Neither gate nor gate bias is required for conduction. If a gate junction is formed as shown, conduction can be controlled by the degree of reverse bias.</p>
+<p>Figure below&nbsp;(a) shows the depletion region at the gate junction. This is due to diffusion of holes from the P-type gate region into the N-type channel, giving the charge separation about the junction, with a non-conductive depletion region at the junction. The depletion region extends more deeply into the channel side due to the heavy gate doping and light channel doping.</p>
+<p><img src=&quot;/uploads/articles/n-channel-jfet.jpg&quot; /></p>
+<p>N-channel JFET: (a) Depletion at gate diode. (b) Reverse biased gate diode increases depletion region. (c) Increasing reverse bias enlarges depletion region. (d) Increasing reverse bias pinches-off the S-D channel.</p>
+<p>The thickness of the depletion region can be increased Figure above&nbsp;(b) by applying moderate reverse bias. This increases the resistance of the source to drain channel by narrowing the channel. Increasing the reverse bias at (c) increases the depletion region, decreases the channel width, and increases the channel resistance. Increasing the reverse bias VGS at (d) will <em>pinch-off</em> the channel current. The channel resistance will be very high. This VGS at which pinch-off occurs is VP, the pinch-off voltage. It is typically a few volts. In summation, the channel resistance can be controlled by the degree of reverse biasing on the gate.</p>
+<p>The source and drain are interchangeable, and the source to drain current may flow in either direction for low level drain battery voltage (&lt; 0.6 V). That is, the drain battery may be replaced by a low voltage AC source. For a high drain power supply voltage, to 10&rsquo;s of volts for small signal devices, the polarity must be as indicated in Figure below (a). This drain power supply, not shown in previous figures, distorts the depletion region, enlarging it on the drain side of the gate. This is a more correct representation for common DC drain supply voltages, from a few to tens of volts. As drain voltage VDS increased,the gate depletion region expands toward the drain. This increases the length of the narrow channel, increasing its resistance a little. We say &ldquo;a little&rdquo; because large resistance changes are due to changing gate bias. Figure below (b) shows the schematic symbol for an N-channel field effect transistor compared to the silicon cross-section at (a). The gate arrow points in the same direction as a junction diode.</p>
+<p>The &ldquo;pointing&rdquo; arrow and &ldquo;non-pointing&rdquo; bar correspond to P and N-type semiconductors, respectively.</p>
+<p><img src=&quot;/uploads/articles/n-channel-jfet-current-flow.jpg&quot; /></p>
+<p>N-channel JFET current flow from drain to source in (a) cross-section, (b) schematic symbol.</p>
+<p>Figure above shows a large current flow from (+) battery terminal, to FET drain, out the source, returning to the (-) battery terminal. This current flow may be controlled by varying the gate voltage. A load in series with the battery sees an amplified version of the changing gate voltage.</p>
+<p>P-channel field effect transistors are also available. The channel is made of P-type material. The gate is a heavily doped N-type region. All the voltage sources are reversed in the P-channel circuit (Figure below) as compared with the more popular N-channel device. Also note, the arrow points out of the gate of the schematic symbol (b) of the P-channel field effect transistor.</p>
+<p><img src=&quot;/uploads/articles/p-channel-jfet.jpg&quot; /></p>
+<p>P-channel JFET: (a) N-type gate, P-type channel, reversed voltage sources compared with N-channel device. (b) Note reversed gate arrow and voltage sources on schematic.</p>
+<p>As the positive gate bias voltage is increased, the resistance of the P-channel increases, decreasing the current flow in the drain circuit.</p>
+<p>Discrete devices are manufactured with the cross-section shown in Figure below. The cross-section, oriented so that it corresponds to the schematic symbol, is upside down with respect to a semiconductor wafer. That is, the gate connections are on the top of the wafer. The gate is heavily doped, P+, to diffuse holes well into the channel for a large depletion region. The source and drain connections in this N-channel device are heavily doped, N+ to lower connection resistance. However, the channel surrounding the gate is lightly doped to allow holes from the gate to diffuse deeply into the channel. That is the N- region.</p>
+<p><img src=&quot;/uploads/articles/junction-field-effect-transistor.jpg&quot; /></p>
+<p>Junction field effect transistor: (a) Discrete device cross-section, (b) schematic symbol, (c) integrated circuit device cross-section.</p>
+<p>All three FET terminals are available on the top of the die for the integrated circuit version so that a metalization layer (not shown) can interconnect multiple components. (Figure above(c) ) Integrated circuit FET&rsquo;s are used in analog circuits for the high gate input resistance. The N-channel region under the gate must be very thin so that the intrinsic region about the gate can control and pinch-off the channel. Thus, gate regions on both sides of the channel are not necessary.</p>
+<h2><strong>SIT</strong></h2>
+<p><strong><img src=&quot;/uploads/articles/junction-field-effect-transistor-static-induction-type.jpg&quot; /></strong></p>
+<p>Junction field effect transistor (static induction type): (a) Cross-section, (b) schematic symbol.</p>
+<p>The static induction field effect transistor (SIT) is a short channel device with a buried gate. (Figure above) It is a power device, as opposed to a small signal device. The low gate resistance and low gate to source capacitance make for a fast switching device. The SIT is capable of hundreds of amps and thousands of volts. And, is said to be capable of an incredible frequency of 10 gHz.</p>
+<p><img src=&quot;/uploads/articles/metal-semiconductor-field-effect-transistor.jpg&quot; /></p>
+<p>Metal semiconductor field effect transistor (MESFET): (a) schematic symbol, (b) cross-section.</p>
+<h2>MESFET</h2>
+<p>The <em>Metal semiconductor field effect transistor (MESFET)</em> is similar to a JFET except the gate is a schottky diode instead of a junction diode. A <em>schottky diode</em> is a metal rectifying contact to a semiconductor compared with a more common ohmic contact. In Figure above the source and drain are heavily doped (N+). The channel is lightly doped (N-). MESFET&rsquo;s are higher speed than JFET&rsquo;s. The MESFET is a depletion mode device, normally on, like a JFET. They are used as microwave power amplifiers to 30 gHz. MESFET&rsquo;s can be fabricated from silicon, gallium arsenide, indium phosphide, silicon carbide, and the diamond allotrope of carbon.</p>
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li>The unipolar junction field effect transistor (FET or JFET) is so called because conduction in the channel is due to one type of carrier</li>
+<li>The JFET source, gate, and drain correspond to the BJT&rsquo;s emitter, base, and collector, respectively.</li>
+<li>Application of reverse bias to the gate varies the channel resistance by expanding the gate diode depletion region.</li>
+</ul>
+
+
+
+</div>
+</div>
+</body>
+</html>

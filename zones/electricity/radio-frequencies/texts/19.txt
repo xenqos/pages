@@ -1,0 +1,48 @@
+# Digital Phase Modulation: BPSK, QPSK, DQPSK
+<p>In the previous page, we saw that we can use discrete variations in a carrier&rsquo;s amplitude or frequency as a way of representing ones and zeros. It should come as no surprise that we can also represent digital data using phase; this technique is called phase shift keying (PSK).</p>
+
+## Binary Phase Shift Keying
+<p>The most straightforward type of PSK is called binary phase shift keying (BPSK), where &ldquo;binary&rdquo; refers to the use of two phase offsets (one for logic high, one for logic low).</p>
+<p>We can intuitively recognize that the system will be more robust if there is greater separation between these two phases&mdash;of course it would be difficult for a receiver to distinguish between a symbol with a phase offset of 90&deg; and a symbol with a phase offset of 91&deg;. We only have 360&deg; of phase to work with, so the maximum difference between the logic-high and logic-low phases is 180&deg;. But we know that shifting a sinusoid by 180&deg; is the same as inverting it; thus, we can think of BPSK as simply inverting the carrier in response to one logic state and leaving it alone in response to the other logic state.</p>
+<p>To take this a step further, we know that multiplying a sinusoid by negative one is the same as inverting it. This leads to the possibility of implementing BPSK using the following basic hardware configuration:</p>
+
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/BPSK_hardware_v1_clean.jpg" /></p>
+
+<p>However, this scheme could easily result in high-slope transitions in the carrier waveform: if the transition between logic states occurs when the carrier is at its maximum value, the carrier voltage has to rapidly move to the minimum voltage.</p>
+
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/RFT_ch4_pg6_180phasejump.jpg" /></p>
+
+<p>High-slope events such as these are undesirable because they generate higher-frequency energy that could interfere with other RF signals. Also, amplifiers have limited ability to produce high-slope changes in output voltage.</p>
+<p>If we refine the above implementation with two additional features, we can ensure smooth transitions between symbols. First, we need to ensure that the digital bit period is equal to one or more complete carrier cycles. Second, we need to synchronize the digital transitions with the carrier waveform. With these improvements, we could design the system such that the 180&deg; phase change occurs when the carrier signal is at (or very near) the zero-crossing.</p>
+
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/RFT_ch4_pg6_nophasejump.jpg" /></p>
+## QPSK
+<p>BPSK transfers one bit per symbol, which is what we&rsquo;re accustomed to so far. Everything we&rsquo;ve discussed with regard to digital modulation has assumed that the carrier signal is modified according to whether a digital voltage is logic low or logic high, and the receiver constructs digital data by interpreting each symbol as either a 0 or a 1.</p>
+<p>Before we discuss quadrature phase shift keying (QPSK), we need to introduce the following important concept: There is no reason why one symbol can transfer only one bit. It&rsquo;s true that the world of digital electronics is built around circuitry in which the voltage is at one extreme or the other, such that the voltage always represents one digital bit. But RF is not digital; rather, we&rsquo;re using <em>analog</em> waveforms to transfer <em>digital</em> data, and it is perfectly acceptable to design a system in which the analog waveforms are encoded and interpreted in a way that allows one symbol to represent two (or more) bits.</p>
+<p>QPSK is a modulation scheme that allows one symbol to transfer two bits of data. There are four possible two-bit numbers (00, 01, 10, 11), and consequently we need four phase offsets. Again, we want maximum separation between the phase options, which in this case is 90&deg;.</p>
+
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/RFT_ch4_pg6_QPSK_3.jpg" /></p>
+
+<p>The advantage is higher data rate: if we maintain the same symbol period, we can double the rate at which data is moved from transmitter to receiver. The downside is system complexity. (You might think that QPSK is also significantly more susceptible to bit errors than BPSK, since there is less separation between the possible phase values. This is a reasonable assumption, but if you go through the math it turns out that the error probabilities are actually very similar.)</p>
+## Variants
+<p>QPSK is, overall, an effective modulation scheme. But it can be improved.</p>
+
+### Phase Jumps
+<p>Standard QPSK guarantees that high-slope symbol-to-symbol transitions will occur; because the phase jumps can be &plusmn;90&deg;, we can&rsquo;t use the approach described for the 180&deg; phase jumps produced by BPSK modulation.</p>
+<p>This problem can be mitigated by using one of two QPSK variants. Offset QPSK, which involves adding a delay to one of two digital data streams used in the modulation process, reduces the maximum phase jump to 90&deg;. Another option is &pi;/4-QPSK, which reduces the maximum phase jump to 135&deg;. Offset QPSK is thus superior with respect to reducing phase discontinuities, but &pi;/4-QPSK is advantageous because it is compatible with differential encoding (discussed in the next subsection).</p>
+<p>Another way to deal with symbol-to-symbol discontinuities is to implement additional signal processing that creates smoother transitions between symbols. This approach is incorporated into a modulation scheme called minimum shift keying (MSK), and there is also an improvement on MSK known as Gaussian MSK.</p>
+
+### Differential Encoding
+<p>Another difficulty is that demodulation with PSK waveforms is more difficult than with FSK waveforms. Frequency is &ldquo;absolute&rdquo; in the sense that frequency changes can always be interpreted by analyzing the signal variations with respect to time. Phase, however, is relative in the sense that it has no universal reference&mdash;the transmitter generates the phase variations with reference to a point in time, and the receiver might interpret the phase variations with reference to a separate point in time.</p>
+<p>The practical manifestation of this is the following: If there are differences between the phase (or frequency) of the oscillators used for modulation and demodulation, PSK becomes unreliable. And we have to assume that there will be phase differences (unless the receiver incorporates carrier-recovery circuitry).</p>
+<p>Differential QPSK (DQPSK) is a variant that is compatible with noncoherent receivers (i.e., receivers that don&rsquo;t synchronize the demodulation oscillator with the modulation oscillator). Differential QPSK encodes data by producing a certain phase shift <em>relative to the preceding symbol</em>. By using the phase of the preceding symbol in this way, the demodulation circuitry analyzes the phase of a symbol using a reference that is common to the receiver and the transmitter.</p>
+
+<p><img src="https://www.allaboutcircuits.com/uploads/articles/RFT_ch4_pg6_DQPSK.jpg" /></p>
+
+## Summary
+<ul>
+<li>Binary phase shift keying is a straightforward modulation scheme that can transfer one bit per symbol.</li>
+<li>Quadrature phase shift keying is more complex but doubles the data rate (or achieves the same data rate with half the bandwidth).</li>
+<li>Offset QPSK, &pi;/4-QPSK, and minimum shift keying are modulation schemes that mitigate the effects of high-slope symbol-to-symbol voltage changes.</li>
+<li>Differential QPSK uses the phase difference between adjacent symbols to avoid problems associated with a lack of phase synchronization between the transmitter and receiver.</li>
+</ul>

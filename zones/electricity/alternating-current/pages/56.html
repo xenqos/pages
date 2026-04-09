@@ -1,0 +1,221 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Alternating Current</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='55.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='57.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>Special Transformers and Applications</h1>
+<h2>Impedance Matching</h2>
+<p>Because transformers can step voltage and current to different levels, and because power is transferred equivalently between primary and secondary windings, they can be used to &ldquo;convert&rdquo; the impedance of a load to a different level. That last phrase deserves some explanation, so let&rsquo;s investigate what it means.</p>
+<p>The purpose of a load (usually) is to do something productive with the power it dissipates. In the case of a resistive heating element, the practical purpose for the power dissipated is to heat something up.</p>
+<p>Loads are engineered to safely dissipate a certain maximum amount of power, but two loads of equal power ratings are not necessarily identical. Consider these two 1000 watt resistive heating elements:</p>
+<p><img src=&quot;/uploads/articles/two-1000-watt-resistive-heating-elements.jpg&quot; /></p>
+<p><em>Heating elements dissipate 1000 watts, at different voltage and current ratings.</em></p>
+<p>Both heaters dissipate exactly 1000 watts of power, but they do so at different voltage and current levels (either 250 volts and 4 amps, or 125 volts and 8 amps). Using Ohm&rsquo;s Law to determine the necessary resistance of these heating elements (R=E/I), we arrive at figures of 62.5 &Omega; and 15.625 &Omega;, respectively.</p>
+<p>If these are AC loads, we might refer to their opposition to current in terms of impedance rather than plain resistance, although in this case, that&rsquo;s all they&rsquo;re composed of (no reactance). The 250-volt heater would be said to be a higher impedance load than the 125-volt heater.</p>
+<p>If we desire&nbsp;to operate the 250-volt heater element directly on a 125-volt power system, we would end up being disappointed. With 62.5 &Omega; of impedance (resistance), the current would only be 2 amps (I=E/R; 125/62.5), and the power dissipation would only be 250 watts (P=IE; 125 x 2), or one-quarter of its rated power.</p>
+<p>The impedance of the heater and the voltage of our source would be mismatched, and we couldn&rsquo;t obtain the full rated power dissipation from the heater.</p>
+<p>All hope is not lost, though. With a step-up transformer, we could operate the 250 volt heater element on the 125 volt power system like the Figure below.</p>
+<p><img src=&quot;/uploads/articles/heater-element-on-the-125-volt-power-system.jpg&quot; /></p>
+<p><em>Step-up transformer operates 1000 watt 250 V heater from 125 V power source.</em></p>
+
+<h2>Impedance, Current and Voltage Transformation Ratios</h2>
+<p>The ratio of the transformer&rsquo;s windings provides the voltage step-up <em>and </em>current step-down we need for the otherwise mismatched load to operate properly on this system. Take a close look at the primary circuit figures: 125 volts at 8 amps. As far as the power supply &ldquo;knows,&rdquo; its powering a 15.625 &Omega; (R=E/I) load at 125 volts, not a 62.5 &Omega; load!</p>
+<p>The voltage and current figures for the primary winding are indicative of 15.625 &Omega; load impedance, not the actual 62.5 &Omega; of the load itself. In other words, not only has our step-up transformer transformed voltage and current, but it has transformed <em>impedance</em> as well.</p>
+<p>The transformation ratio of impedance is the square of the voltage/current transformation ratio, the same as the winding inductance ratio:</p>
+<p><img src=&quot;/uploads/articles/transformation-ratio-of-impedance-equation.jpg&quot; /></p>
+<p>This concurs with our example of the 2:1 step-up transformer and the impedance ratio of 62.5 &Omega; to 15.625 &Omega; (a 4:1 ratio, which is 2:1 squared). Impedance transformation is a highly useful ability of transformers, for it allows a load to dissipate its full rated power even if the power system is not at the proper voltage to directly do so.</p>
+<h2>Application of Maximum Power Transfer Theorem to Transformers</h2>
+<p>Recall from our study of network analysis the <em>Maximum Power Transfer Theorem</em>, which states that the maximum amount of power will be dissipated by a load resistance when that load resistance is equal to the Thevenin/Norton resistance of the network supplying the power. Substitute the word &ldquo;impedance&rdquo; for &ldquo;resistance&rdquo; in that definition and you have the AC version of that Theorem.</p>
+<p>If we&rsquo;re trying to obtain theoretical maximum power dissipation from a load, we must be able to properly match the load impedance and source (Thevenin/Norton) impedance together. This is generally more of a concern in specialized electric circuits such as radio transmitter/antenna and audio amplifier/speaker systems.</p>
+<p>Let&rsquo;s take an audio amplifier system and see how it works: (Figure below)</p>
+<p><img src=&quot;/uploads/articles/audio-amplifier-system.jpg&quot; /></p>
+<p><em>Amplifier with impedance of 500 &Omega; drives 8 &Omega; at much less than maximum power.</em></p>
+<p>With an internal impedance of 500 &Omega;, the amplifier can only deliver full power to a load (speaker) also having 500 &Omega; of impedance. Such a load would drop higher voltage and draw less current than an 8 &Omega; speaker dissipating the same amount of power.</p>
+<p>If an 8 &Omega; speaker were connected directly to the 500 &Omega; amplifier as shown, the <em>impedance mismatch</em> would result in very poor (low peak power) performance. Additionally, the amplifier would tend to dissipate more than its fair share of power in the form of heat trying to drive the low impedance speaker.</p>
+<p>To make this system work better, we can use a transformer to match these mismatched impedances. Since we&rsquo;re going from a high impedance (high voltage, low current) supply to a low impedance (low voltage, high current) load, we&rsquo;ll need to use a step-down transformer:</p>
+<p><img src=&quot;/uploads/articles/impedance-matching-transformer.jpg&quot; /></p>
+<p><em>Impedance matching transformer matches 500 &Omega; amplifier to 8 &Omega; speaker for maximum efficiency.</em></p>
+
+<h2>Description of Impedance Matching</h2>
+<p>To obtain an impedance transformation ratio of 500:8, we would need a winding ratio equal to the square root of 500:8 (the square root of 62.5:1, or 7.906:1).</p>
+<p>With such a transformer in place, the speaker will load the amplifier to just the right degree, drawing power at the correct voltage and current levels to satisfy the Maximum Power Transfer Theorem and make for the most efficient power delivery to the load. The use of a transformer in this capacity is called <em>impedance matching</em>.</p>
+<p>Anyone who has ridden a multi-speed bicycle can intuitively understand the principle of impedance matching. A human&rsquo;s legs will produce maximum power when spinning the bicycle crank at a particular speed (about 60 to 90 revolutions per minute).</p>
+<p>Above or below that rotational speed, human leg muscles are less efficient at generating power. The purpose of the bicycle&rsquo;s &ldquo;gears&rdquo; is to impedance-match the rider&rsquo;s legs to the riding conditions so that they always spin the crank at the optimum speed.</p>
+<p>If the rider attempts to start moving while the bicycle is shifted into its &ldquo;top&rdquo; gear, he or she will find it very difficult to get moving. Is it because the rider is weak?</p>
+<p>No, its because the high step-up ratio of the bicycle&rsquo;s chain and sprockets in that top gear presents a mismatch between the conditions (lots of inertia to overcome) and their legs (needing to spin at 60-90 RPM for maximum power output).</p>
+<p>On the other hand, selecting a gear that is too low will enable the rider to get moving immediately, but limit the top speed they will be able to attain. Again, is the lack of speed an indication of weakness in the bicyclist&rsquo;s legs?</p>
+<p>No, its because the lower speed ratio of the selected gear creates another type of mismatch between the conditions (low load) and the rider&rsquo;s legs (losing power if spinning faster than 90 RPM). It is much the same with electric power sources and loads: there must be an impedance match for maximum system efficiency.</p>
+<p>In AC circuits, transformers perform the same matching function as the sprockets and chain (&ldquo;gears&rdquo;) on a bicycle to match otherwise mismatched sources and loads.</p>
+<h2>Impedance Matching Transformers</h2>
+<p>Impedance matching transformers are not fundamentally different from any other type of transformer in construction or appearance. A small impedance-matching transformer (about two centimeters in width) for audio-frequency applications is shown in the following photograph:</p>
+<p><img src=&quot;/uploads/articles/audio-frequency-impedance-matching-transformer.jpg&quot; /></p>
+<p><em>Audio frequency impedance matching transformer.</em></p>
+<p>Another impedance-matching transformer can be seen on this printed circuit board, in the upper right corner, to the immediate left of resistors R<sub>2</sub>and R<sub>1</sub>. It is labeled &ldquo;T1&rdquo;:</p>
+<p><img src=&quot;/uploads/articles/printed-circuit-board-mounted-audio-impedance.jpg&quot; /></p>
+<p><em>Printed circuit board mounted audio impedance matching transformer, top right.</em></p>
+
+<h2>Potential Transformers</h2>
+<p>Transformers can also be used in electrical instrumentation systems. Due to transformers&rsquo; ability to step up or step down voltage and current, and the electrical isolation they provide, they can serve as a way of connecting electrical instrumentation to high-voltage, high current power systems.</p>
+<p>Suppose we wanted to accurately measure the voltage of a 13.8 kV power system (a very common power distribution voltage in American industry):</p>
+<p><img src=&quot;/uploads/articles/direct-measurement-of-high-voltage.jpg&quot; /></p>
+<p><em>Direct measurement of high voltage by a voltmeter is a potential safety hazard.</em></p>
+<p>Designing, installing, and maintaining a voltmeter capable of directly measuring 13,800 volts AC would be no easy task. The safety hazard alone of bringing 13.8 kV conductors into an instrument panel would be severe, not to mention the design of the voltmeter itself.</p>
+<p>However, by using a precision step-down transformer, we can reduce the 13.8 kV down to a safe level of voltage at a constant ratio, and isolate it from the instrument connections, adding an additional level of safety to the metering system:</p>
+<p><img src=&quot;/uploads/articles/safe-value-applicable-to-conventional-voltmeter.jpg&quot; /></p>
+<p><em>Instrumentation application:&ldquo;Potential transformer&rdquo; precisely scales dangerous high voltage to a safe value applicable to a conventional voltmeter.</em></p>
+<p>Now the voltmeter reads a precise fraction, or ratio, of the actual system voltage, its scale set to read as though it were measuring the voltage directly.</p>
+<p>The transformer keeps the instrument voltage at a safe level and electrically isolates it from the power system, so there is no direct connection between the power lines and the instrument or instrument wiring. When used in this capacity, the transformer is called a <em>Potential Transformer</em>, or simply <em>PT</em>.</p>
+<p>Potential transformers are designed to provide as accurate a voltage step-down ratio as possible. To aid in precise voltage regulation, loading is kept to a minimum: the voltmeter is made to have high input impedance so as to draw as little current from the PT as possible.</p>
+<p>As you can see, a fuse has been connected in series with the PTs primary winding, for safety and ease of disconnecting the PT from the circuit.</p>
+<p>A standard secondary voltage for a PT is 120 volts AC, for full-rated power line voltage. The standard voltmeter range to accompany a PT is 150 volts, full-scale.</p>
+<p>PTs with custom winding ratios can be manufactured to suit any application. This lends itself well to industry standardization of the actual voltmeter instruments themselves, since the PT will be sized to step the system voltage down to this standard instrument level.</p>
+<h2>Current Transformers</h2>
+<p>Following the same line of thinking, we can use a transformer to step down current through a power line so that we are able to safely and easily measure high system currents with inexpensive ammeters. Of course, such a transformer would be connected in series with the power line.</p>
+<p><img src=&quot;/uploads/articles/instrumentation-application-current-transformer.jpg&quot; /></p>
+<p><em>Instrumentation application: &ldquo;Current transformer&rdquo; steps high current down to a value applicable to a conventional ammeter.</em></p>
+<p>Note that while the PT is a step-down device, the <em>Current Transformer</em> (or <em>CT</em>) is a step-up device (with respect to voltage), which is what is needed to step <em>down</em> the power line current. Quite often, CTs are built as donut-shaped devices through which the power line conductor is run, the power line itself acting as a single-turn primary winding:</p>
+<p><img src=&quot;/uploads/articles/single-turn-primary-winding.jpg&quot; /></p>
+<p><em>Current conductor to be measured is threaded through the opening. Scaled down current is available on wire leads.</em></p>
+<p>Some CTs are made to hinge open, allowing insertion around a power conductor without disturbing the conductor at all. The industry standard secondary current for a CT is a range of 0 to 5 amps AC. Like PTs, CTs can be made with custom winding ratios to fit almost any application.</p>
+<p>Because their &ldquo;full load&rdquo; secondary current is 5 amps, CT ratios are usually described in terms of full-load primary amps to 5 amps, like this:</p>
+<p><img src=&quot;/uploads/articles/ct-ratios.jpg&quot; /></p>
+<p>The &ldquo;donut&rdquo; CT shown in the photograph has a ratio of 50:5. That is, when the conductor through the center of the torus is carrying 50 amps of current (AC), there will be 5 amps of current induced in the CT&rsquo;s winding.</p>
+<p>Because CTs are designed to be powering ammeters, which are low-impedance loads, and they are wound as voltage step-up transformers, they should never, <em>ever</em> be operated with an open-circuited secondary winding.</p>
+<p>Failure to heed this warning will result in the CT producing extremely high secondary voltages, dangerous to equipment and personnel alike. To facilitate maintenance of ammeter instrumentation, short-circuiting switches are often installed in parallel with the CT&rsquo;s secondary winding, to be closed whenever the ammeter is removed for service:</p>
+<p><img src=&quot;/uploads/articles/active-current-transformer-circuit.jpg&quot; /></p>
+<p><em>Short-circuit switch allows ammeter to be removed from an active current transformer circuit.</em></p>
+<p>Though it may seem strange to <em>intentionally</em> short-circuit a power system component, it is perfectly proper and quite necessary when working with current transformers.</p>
+<h2>Air Core Transformers</h2>
+<p>Another kind of special transformer, seen often in radio-frequency circuits, is the <em>air core</em> transformer. True to its name, an air core transformer has its windings wrapped around a nonmagnetic form, usually a hollow tube of some material.</p>
+<p>The degree of coupling (mutual inductance) between windings in such a transformer is many times less than that of an equivalent iron-core transformer, but the undesirable characteristics of a ferromagnetic core (eddy current losses, hysteresis, saturation, etc.) are completely eliminated.</p>
+<p>It is in high-frequency applications that these effects of iron cores are most problematic.</p>
+<p><img src=&quot;/uploads/articles/effects-of-iron-cores-are-most-problematic.jpg&quot; /></p>
+<p><em>Air core transformers may be wound on cylindrical (a) or toroidal (b) forms. Center tapped primary with secondary (a). Bifilar winding on toroidal form (b).</em></p>
+<p>The inside tapped solenoid winding, without the over winding, could match unequal impedances when DC isolation is not required. When isolation is required the over winding is added over one end of the main winding. Air core transformers are used at radio frequencies when iron core losses are too high.</p>
+<p>Frequently air core transformers are paralleled with a capacitor to tune it to resonance. The over winding is connected between a radio antenna and ground for one such application. The secondary is tuned to resonance with a variable capacitor.</p>
+<p>The output may be taken from the tap point for amplification or detection. Small millimeter size air core transformers are used in radio receivers. The largest radio transmitters may use meter sized coils. Unshielded air core solenoid transformers are mounted at right angles to each other to prevent stray coupling.</p>
+<p>Stray coupling is minimized when the transformer is wound on a toroid form. Toroidal air core transformers also show a higher degree of coupling, particularly for <em>bifilar</em> windings. Bifilar windings are wound from a slightly twisted pair of wires.</p>
+<p>This implies a 1:1 turns ratio. Three or four wires may be grouped for 1:2 and other integral ratios. Windings do not have to be bifilar. This allows arbitrary turns ratios. However, the degree of coupling suffers. Toroidal air core transformers are rare except for VHF (Very High Frequency) work.</p>
+<p>Core materials other than air such as powdered iron or ferrite are preferred for lower radio frequencies.</p>
+<h2>Tesla Coil</h2>
+<p>One notable example of an air-core transformer is the <em>Tesla Coil</em>, named after the Serbian electrical genius Nikola Tesla, who was also the inventor of the rotating magnetic field AC motor, polyphase AC power systems, and many elements of radio technology.</p>
+<p>The Tesla Coil is a resonant, high-frequency step-up transformer used to produce extremely high voltages.</p>
+<p>One of Tesla&rsquo;s dreams was to employ his coil technology to distribute electric power without the need for wires, simply broadcasting it in the form of radio waves which could be received and conducted to loads by means of antennas.</p>
+<p>The basic schematic for a Tesla Coil is shown in the Figure below.</p>
+<p><img src=&quot;/uploads/articles/basic-schematic-for-a-tesla-coil.jpg&quot; /></p>
+<p><em>Tesla Coil: A few heavy primary turns, many secondary turns.</em></p>
+<p>The capacitor, in conjunction with the transformer&rsquo;s primary winding, forms a tank circuit. The secondary winding is wound in close proximity to the primary, usually around the same nonmagnetic form. Several options exist for &ldquo;exciting&rdquo; the primary circuit, the simplest being a high-voltage, low-frequency AC source and spark gap:</p>
+<p><img src=&quot;/uploads/articles/system-level-diagram-of-tesla-coil.jpg&quot; /></p>
+<p><em>System level diagram of Tesla coil with spark gap drive.</em></p>
+<p>The purpose of the high-voltage, low-frequency AC power source is to &ldquo;charge&rdquo; the primary tank circuit. When the spark gap fires, its low impedance acts to complete the capacitor/primary coil tank circuit, allowing it to oscillate at its resonant frequency.</p>
+<p>The &ldquo;RFC&rdquo; inductors are &ldquo;Radio Frequency Chokes,&rdquo; which act as high impedances to prevent the AC source from interfering with the oscillating tank circuit.</p>
+<p>The secondary side of the Tesla coil transformer is also a tank circuit, relying on the parasitic (stray) capacitance existing between the discharge terminal and earth ground to complement the secondary winding&rsquo;s inductance.</p>
+<p>For optimum operation, this secondary tank circuit is tuned to the same resonant frequency as the primary circuit, with energy exchanged not only between capacitors and inductors during resonant oscillation, but also back-and-forth between primary and secondary windings. The visual results are spectacular:</p>
+<p><img src=&quot;/uploads/articles/high-voltage-high-frequency-discharge-from-tesla-coil.jpg&quot; /></p>
+<p><em>High voltage high frequency discharge from Tesla coil.</em></p>
+<p>Tesla Coils find application primarily as novelty devices, showing up in high school science fairs, basement workshops, and the occasional low budget science-fiction movie.</p>
+<p>It should be noted that Tesla coils can be extremely dangerous devices. Burns caused by radio-frequency (&ldquo;RF&rdquo;) current, like all electrical burns, can be very deep, unlike skin burns caused by contact with hot objects or flames.</p>
+<p>Although the high-frequency discharge of a Tesla coil has the curious property of being beyond the &ldquo;shock perception&rdquo; frequency of the human nervous system, this does not mean Tesla coils cannot hurt or even kill you! I strongly advise seeking the assistance of an experienced Tesla coil experimenter if you would embark on building one yourself.</p>
+<h2>Saturable Reactors</h2>
+<p>So far, we&rsquo;ve explored the transformer as a device for converting different levels of voltage, current, and even impedance from one circuit to another. Now we&rsquo;ll take a look at it as a completely different kind of device: one that allows a small electrical signal to exert <em>control</em> over a much larger quantity of electrical power. In this mode, a transformer acts as an <em>amplifier</em>.</p>
+<p>The device I&rsquo;m referring to is called a <em>saturable-core reactor</em>, or simply <em>saturable reactor</em>. Actually, it is not really a transformer at all, but rather a special kind of inductor whose inductance can be varied by the application of a DC current through a second winding wound around the same iron core.</p>
+<p>Like the ferroresonant transformer, the saturable reactor relies on the principle of magnetic saturation. When a material such as iron is completely saturated (that is, all its magnetic domains are lined up with the applied magnetizing force), additional increases in current through the magnetizing winding will not result in further increases of magnetic flux.</p>
+<h2>Review on Inductance</h2>
+<p>Now, inductance is the measure of how well an inductor opposes changes in current by developing a voltage in an opposing direction. The ability of an inductor to generate this opposing voltage is directly connected with the change in magnetic flux inside the inductor resulting from the change in current, and the number of winding turns in the inductor.</p>
+<p>If an inductor has a saturated core, no further magnetic flux will result from further increases in current, and so there will be no voltage induced in opposition to the change in current. In other words, an inductor loses its inductance (ability to oppose changes in current) when its core becomes magnetically saturated.</p>
+<p>If an inductor&rsquo;s inductance changes, then its reactance (and impedance) to AC current changes as well. In a circuit with a constant voltage source, this will result in a change in current:</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/inductance-diagram.jpg&quot; /></p>
+<p><em>If L changes in inductance, Z<sub>L</sub> will correspondingly change, thus changing the circuit current.</em></p>
+
+<h2>Saturable Reactor Operation</h2>
+<p>A saturable reactor capitalizes on this effect by forcing the core into a state of saturation with a strong magnetic field generated by current through another winding. The reactor&rsquo;s &ldquo;power&rdquo; winding is the one carrying the AC load current, and the &ldquo;control&rdquo; winding is one carrying a DC current strong enough to drive the core into saturation:</p>
+<p><img src=&quot;/uploads/articles/reactors-power-winding.jpg&quot; /></p>
+<p><em>DC, via the control winding, saturates the core. Thus, modulating the power winding inductance, impedance, and current.</em></p>
+<p>The strange-looking transformer symbol shown in the above schematic represents a saturable-core reactor, the upper winding being the DC control winding and the lower being the &ldquo;power&rdquo; winding through which the controlled AC current goes.</p>
+<p>Increased DC control current produces more magnetic flux in the reactor core, driving it closer to a condition of saturation, thus decreasing the power winding&rsquo;s inductance, decreasing its impedance, and increasing current to the load. Thus, the DC control current is able to exert <em>control</em> over the AC current delivered to the load.</p>
+<p>The circuit shown would work, but it would not work very well. The first problem is the natural transformer action of the saturable reactor: AC current through the power winding will induce a voltage in the control winding, which may cause trouble for the DC power source.</p>
+<p>Also, saturable reactors tend to regulate AC power only in one direction: in one half of the AC cycle, the mmf&rsquo;s from both windings add; in the other half, they subtract. Thus, the core will have more flux in it during one half of the AC cycle than the other and will saturate first in that cycle half, passing load current more easily in one direction than the other.</p>
+<p>Fortunately, both problems can be overcome with a little ingenuity:</p>
+<p><img src=&quot;/uploads/articles/out-of-phase-dc-control-windings.jpg&quot; /></p>
+<p><em>Out of phase DC control windings allow symmetrical control of AC.</em></p>
+<p>Notice the placement of the phasing dots on the two reactors: the power windings are &ldquo;in phase&rdquo; while the control windings are &ldquo;out of phase.&rdquo; If both reactors are identical, any voltage induced in the control windings by load current through the power windings will cancel out to zero at the battery terminals, thus eliminating the first problem mentioned.</p>
+<p>Furthermore, since the DC control current through both reactors produces magnetic fluxes in different directions through the reactor cores, one reactor will saturate more in one cycle of the AC power while the other reactor will saturate more in the other, thus equalizing the control action through each half-cycle so that the AC power is &ldquo;throttled&rdquo; symmetrically.</p>
+<p>This phasing of control windings can be accomplished with two separate reactors as shown, or in a single reactor design with intelligent layout of the windings and core.</p>
+<p>Saturable reactor technology has even been miniaturized to the circuit-board level in compact packages more generally known as <em>magnetic amplifiers</em>.</p>
+<p>I personally find this to be fascinating: the effect of amplification (one electrical signal controlling another), normally requiring the use of physically fragile vacuum tubes or electrically &ldquo;fragile&rdquo; semiconductor devices, can be realized in a device both physically and electrically rugged.</p>
+<p>Magnetic amplifiers do have disadvantages over their more fragile counterparts, namely size, weight, nonlinearity, and bandwidth (frequency response), but their utter simplicity still commands a certain degree of appreciation, if not practical application.</p>
+<p>Saturable-core reactors are less commonly known as &ldquo;saturable-core inductors&rdquo; or <em>transductors</em>.</p>
+<h2>Scott-T Transformer</h2>
+<p>Nikola Tesla&rsquo;s original polyphase power system was based on simple to build 2-phase components. However, as transmission distances increased, the more transmission line efficient 3-phase system became more prominent. Both 2-&phi; and 3-&phi; components coexisted for a number of years.</p>
+<p>The Scott-T transformer connection allowed 2-&phi; and 3-&phi; components like motors and alternators to be interconnected. Yamamoto and Yamaguchi:</p>
+<p><strong><em>In 1896, General Electric built a 35.5 km (22 mi) three-phase transmission line operated at 11 kV to transmit power to Buffalo, New York, from the Niagara Falls Project. The two-phase generated power was changed to three-phase by the use of Scott-T transformations.</em></strong></p>
+<p><em><strong><img src=&quot;/uploads/articles/scott-t-transformer1.jpg&quot; /></strong></em></p>
+<p><em><em>Scott-T transformer converts 2-&phi; to 3-&phi;, or vice versa.</em></em></p>
+<p>The Scott-T transformer set, Figure above, consists of a center tapped transformer T1 and an 86.6% tapped transformer T2 on the 3-&phi; side of the circuit. The primaries of both transformers are connected to the 2-&phi; voltages.</p>
+<p>One end of the T2 86.6% secondary winding is a 3-&phi; output, the other end is connected to the T1 secondary center tap. Both ends of the T1 secondary are the other two 3-&phi; connections.</p>
+<p>Application of 2-&phi; Niagara generator power produced a 3-&phi; output for the more efficient 3-&phi; transmission line. More common these days is the application of 3-&phi; power to produce a 2-&phi; output for driving an old 2-&phi; motor.</p>
+<p>In the Figure below, we use vectors in both polar and complex notation to prove that the Scott-T converts a pair of 2-&phi; voltages to 3-&phi;. First, one of the 3-&phi; voltages is identical to a 2-&phi; voltage due to the 1:1 transformer T1 ratio, V<sub>P12</sub>= V<sub>2P1</sub>.</p>
+<p>The T1 center tapped secondary produces opposite polarities of 0.5V<sub>2P1</sub> on the secondary ends.</p>
+<p>This &ang;0&deg; is vectorially subtracted from T2 secondary voltage due to the KVL equations V<sub>31</sub>, V<sub>23</sub>.</p>
+<p>The T2 secondary voltage is 0.866V<sub>2P2</sub> due to the 86.6% tap. Keep in mind that this 2nd phase of the 2-&phi; is &ang;90&deg;. This 0.866V<sub>2P2</sub> is added at V<sub>31</sub>, subtracted at V<sub>23</sub> in the KVL equations.</p>
+<p><img src=&quot;/uploads/articles/scott-t-transformer2.jpg&quot; /></p>
+<p><em>Scott-T transformer 2-&phi; to 3-&phi; conversion equations.</em></p>
+<p>We show &ldquo;DC&rdquo; polarities all over this AC only circuit, to keep track of the Kirchhoff voltage loop polarities. Subtracting &ang;0&deg; is equivalent to adding &ang;180&deg;. The bottom line is when we add 86.6% of &ang;90&deg; to 50% of &ang;180&deg;we get &ang;120&deg;. Subtracting 86.6% of &ang;90&deg; from 50% of &ang;180&deg; yields &ang;-120&deg; or &ang;240&deg;.</p>
+<p><img src=&quot;/uploads/articles/graphical-explanation-of-equations.jpg&quot; /></p>
+<p><em>Graphical explanation of equations in Figure previous.</em></p>
+<p>In Figure above we graphically show the 2-&phi; vectors at (a). At (b) the vectors are scaled by transformers T1 and T2 to 0.5 and 0.866 respectively. At (c) 1&ang;120&deg; = -0.5&ang;0&deg; + 0.866&ang;90&deg;, and 1&ang;240&deg; = -0.5&ang;0&deg; - 0.866&ang;90&deg;. The three output phases are 1&ang;120&deg; and 1&ang;240&deg; from (c), along with input 1&ang;0&deg; (a).</p>
+<h2>Linear Variable Differential Transformer</h2>
+<p>A <em>linear variable differential transformer</em> (LVDT) has an AC driven primary wound between two secondaries on a cylindrical air core form (figure below). A movable ferromagnetic slug converts the displacement to a variable voltage by changing the coupling between the driven primary and secondary windings.</p>
+<p>The LVDT is a displacement or distance measuring transducer. Units are available for measuring displacement over a distance of a fraction of a millimeter to a half a meter. LVDT&rsquo;s are rugged and dirt resistant compared to linear optical encoders.</p>
+<p><img src=&quot;/uploads/articles/linear-variable-differential-transformer.jpg&quot; /></p>
+<p><em>LVDT: linear variable differential transformer.</em></p>
+<p>The excitation voltage is in the range of 0.5 to 10 VAC at a frequency of 1 to 200 Khz. A ferrite core is suitable at these frequencies. It is extended outside the body by an non-magnetic rod. As the core is moved toward the top winding, the voltage across this coil increases due to increased coupling, while the voltage on the bottom coil decreases.</p>
+<p>If the core is moved toward the bottom winding, the voltage on this coil increases as the voltage decreases across the top coil. Theoretically, a centered slug yields equal voltages across both coils. In practice leakage inductance prevents the null from dropping all the way to 0 V.</p>
+<p>With a centered slug, the series-opposing wired secondaries cancel yielding V<sub>13</sub> = 0. Moving the slug up increases V<sub>13</sub>. Note that it is in-phase with with V<sub>1</sub>, the top winding, and 180&deg; out of phase with V<sub>3</sub>, bottom winding.</p>
+<p>Moving the slug down from the center position increases V<sub>13</sub>. However, it is 180&deg; out of phase with with V<sub>1</sub>, the top winding, and in-phase with V<sub>3</sub>, bottom winding. Moving the slug from top to bottom shows a minimum at the center point, with a 180&deg; phase reversal in passing the center.</p>
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li>Transformers can be used to transform impedance as well as voltage and current. When this is done to improve power transfer to a load, it is called <em>impedance matching</em>.</li>
+<li>A <em>Potential Transformer</em> (PT) is a special instrument transformer designed to provide a precise voltage step-down ratio for voltmeters measuring high power system voltages.</li>
+<li>A <em>Current Transformer</em> (CT) is another special instrument transformer designed to step down the current through a power line to a safe level for an ammeter to measure.</li>
+<li>An <em>air-core</em> transformer is one lacking a ferromagnetic core.</li>
+<li>A <em>Tesla Coil</em> is a resonant, air-core, step-up transformer designed to produce very high AC voltages at high frequency.</li>
+<li>A <em>saturable reactor</em> is a special type of inductor, the inductance of which can be controlled by the DC current through a second winding around the same core. With enough DC current, the magnetic core can be saturated, decreasing the inductance of the power winding in a controlled fashion.</li>
+<li>A <em>Scott-T transformer</em> converts 3-&phi; power to 2-&phi; power and vice versa.</li>
+<li>A <em>linear variable differential transformer</em>, also known as an LVDT, is a distance measuring device. It has a movable ferromagnetic core to vary the coupling between the excited primary and a pair of secondaries.</li>
+</ul>
+
+
+
+</div>
+</div>
+</body>
+</html>

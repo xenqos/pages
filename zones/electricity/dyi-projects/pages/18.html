@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>DYI Projects</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='17.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='19.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>DC Lab - Potentiometer Voltage Divider</h1>
+<h2>Project Overview</h2>
+<p>A potentiometer is an&nbsp;adjustable, variable resistor with three terminals. Two end terminals are connected to the ends of a resistive element, while a&nbsp;third central terminal&nbsp;is connected to an adjustable wiper that sets the resistive divider ratio. If a voltage is applied to the two ends, as illustrated in Figure 1, the central terminal output is an adjustable voltage.&nbsp;</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/voltmeter-measuring-output-of-potentiometer.jpg&quot; /></p>
+<em><strong>Figure 1. </strong>Using a potentiometer as a variable voltage divider.</em><br>
+
+<h2>Parts and Materials</h2>
+<ul>
+<li>Two 6 V batteries or power supply</li>
+<li>Carbon pencil lead&nbsp;for a mechanical-style pencil</li>
+<li>Potentiometer, single turn, 5 k&Omega; to 50 k&Omega;, linear taper</li>
+<li>Potentiometer, multi-turn, 1 k&Omega; to 20 k&Omega;</li>
+</ul>
+
+<p>Potentiometers are&nbsp;manufactured in panel-mount and breadboard-mount&nbsp;versions.&nbsp;Any potentiometer style will suffice for this experiment; however, we highly recommend a linear potentiometer for this experiment (and for most experiments in general). This is because a linear potentiometer exhibits a direct (linear) correlation between shaft position and voltage division ratio.</p>
+<p>As a side note, keep in mind that If you salvage a potentiometer from an old radio or another audio device, you will likely get what is called an audio taper potentiometer.&nbsp;These potentiometers exhibit a logarithmic relationship between the division ratio and shaft position.</p>
+
+<h2>Learning Objectives</h2>
+<ul>
+<li>How to connect and use potentiometers</li>
+<li>Understand voltage divider design and its function</li>
+<li>How to use a voltmeter&nbsp;</li>
+<li>How to use an ohmmeter</li>
+</ul>
+
+<h2>Instructions</h2>
+<p><strong>Step 1:</strong>&nbsp;Begin this experiment with the pencil &ldquo;lead&rdquo; circuit of Figure 2 by applying a voltage across the graphite pencil lead.&nbsp;</p>
+<p><strong><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/potentiometer-pencil-lead.jpg&quot; /></strong></p>
+<em><strong>Figure 2. </strong>Observing the voltage divider function of a graphite pencil lead.</em><br>
+<br>
+<p>Pencils use a rod made of a graphite-clay mixture, not lead (the metal), to make black marks on paper.&nbsp;Graphite, being a mediocre electrical conductor, acts as a resistor connected across the battery by the two alligator-clip jumper wires.</p>
+<p><strong>Step 2:&nbsp;</strong>Connect the voltmeter&nbsp;like that shown in Figure 2, and touch the red test probe to the graphite rod. Move the red probe along the length of the rod and notice the voltmeter&rsquo;s indication change.&nbsp;What probe position gives the greatest voltage value?</p>
+<p>Let&#39;s take a look at Figure 3, which is the schematic diagram&nbsp;for the circuit of Figure 2.&nbsp;</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/potentiometer-schematic-diagram.jpg&quot; /></p>
+<em><strong>Figure 3. </strong>Schematic design illustrating a potentiometer symbol and how to measure the adjustable output voltage.</em><br>
+<br>
+<p>In Figure 3, the graphite rod pencil lead is a variable resistor, and the red probe from the voltmeter functions directly as the potentiometer wiper as you move it up and down the length of the rod. Essentially, the rod acts as a <em>pair</em> of resistors, with&nbsp;the ratio between the two resistances established by the position of the red test probe along the rod&rsquo;s length. You can see an example of this in Figure 4.</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/potentiometer-probe-position.jpg&quot; /></p>
+<em><strong>Figure 4. </strong>Two-resistor equivalent circuit for the pencil lead potentiometer.</em><br>
+<br>
+<p><strong>Step 3:&nbsp;</strong>Next, change the voltmeter connection to the circuit to measure the voltage across the &ldquo;upper resistor&rdquo; of the pencil lead, as shown in Figure 5.&nbsp;</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/potentiometer-upper-resistor.jpg&quot; /></p>
+<em><strong>Figure 5. </strong>Measuring the voltage drop across the top portion of the graphite rod pencil lead.</em><br>
+<br>
+<p>Move the black test probe position along the length of the rod, noting the voltmeter indication.&nbsp;Which position gives the greatest voltage drop for the meter to measure? Does this differ from the previous arrangement? Why?</p>
+<p><strong>Step 4: </strong>Then, set up a circuit using a manufactured potentiometer, not the &ldquo;home-made&rdquo; one made from a pencil lead. Figures 6 and 7 provide examples of how this can be done&nbsp;with either terminal strips or a breadboard, respectively.</p>
+<p><strong><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/potentiometer-illustration.jpg&quot; /></strong></p>
+<em><strong>Figure 6. </strong>Connecting a potentiometer to a terminal strip and measuring the voltage output.</em><br>
+<br>
+<p><strong><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/potentiometer-illustration-1.jpg&quot; /></strong>&nbsp;</p>
+<em><strong>Figure 7.</strong>&nbsp;Connecting a potentiometer to a breadboard and measuring the voltage output.</em><br>
+
+<h3>Rotary and Linear Potentiometer Construction</h3>
+<p>Manufactured potentiometers enclose a resistive strip inside a metal or plastic housing and provide a mechanism for moving a wiper&nbsp;across the length of that resistive strip. Figure 8&nbsp;is an illustration of a rotary potentiometer&rsquo;s construction.</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/rotary-potentiometers-construction.jpg&quot; /></p>
+<em><strong>Figure 8.</strong>&nbsp;The construction of a rotary potentiometer.</em><br>
+<br>
+<p>Some rotary potentiometers have a spiral resistive strip and a wiper that moves axially as it rotates to require multiple shaft turns to drive the wiper from one end of the potentiometer&rsquo;s range to the other. Multi-turn potentiometers are used in applications where the precise setting is important.</p>
+<p>Linear potentiometers also contain a resistive strip, the only difference being the wiper&rsquo;s direction of travel.&nbsp;Some linear potentiometers use a slide mechanism to move the wiper. Others use a screw mechanism to facilitate multiple-turn operation, as shown in Figure 9.&nbsp;</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/linear-potentiometer-construction-1.jpg&quot; /></p>
+<em><strong>Figure 9.</strong>&nbsp;The construction of a&nbsp;screw-type linear potentiometer</em><br>
+<br>
+<p>It should be noted that not all linear potentiometers have the same pin assignments. On some, the middle pin is the wiper.</p>
+<p>Next, for steps 5 through 10&nbsp;of this experiment, you may use any form of potentiometer construction that is convenient.</p>
+<p><strong>Step 5:&nbsp;</strong>Measure the battery voltage while powering the potentiometer&nbsp;and record&nbsp;this voltage figure.</p>
+<p><strong>Step 6:&nbsp;</strong>Measure the voltage between the wiper and the potentiometer end connected to the negative (-) side of the battery.</p>
+<p><strong>Step 7:&nbsp;</strong>Adjust the potentiometer mechanism until the voltmeter registers exactly 1/3 of the total voltage. For a 6 V battery, this will be approximately 2 V.</p>
+<p><strong>Step 8:&nbsp;</strong>Now, connect two batteries in a series-aiding configuration to provide approximately 12 V across the potentiometer, as shown in Figure 10.</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/voltmeter-measuring-output-of-potentiometer.jpg&quot; /></p>
+<em><strong>Figure 10. </strong>Connecting two batteries in series to double the applied voltage and measure the potentiometer output voltage.</em><br>
+<br>
+<p><strong>Step 9:&nbsp;</strong>Measure the total battery voltage, and then measure the voltage between the same two points on the potentiometer (wiper and negative side).</p>
+<p><strong>Step 10:&nbsp;</strong>Divide the potentiometer&rsquo;s measured output voltage by the measured total voltage. The quotient should be 1/3, the same voltage division ratio set in Step 8.</p>
+
+
+</div>
+</div>
+</body>
+</html>

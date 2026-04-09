@@ -1,0 +1,57 @@
+# Waveguides
+<p>A <em>waveguide</em> is a special form of transmission line consisting of a hollow, metal tube. The tube wall provides distributed inductance, while the empty space between the tube walls provide distributed capacitance.</p>
+
+<p><img src="/uploads/articles/wave-guides-conduct-microwave-energy.png" /></p>
+<p><em>Wave guides conduct microwave energy at lower loss than coaxial cables.</em></p>
+
+<p>Waveguides are practical only for signals of extremely high frequency, where the wavelength approaches the cross-sectional dimensions of the waveguide. Below such frequencies, waveguides are useless as electrical transmission lines.</p>
+## Usage of Waveguides as a Transmission Line
+<p>When functioning as transmission lines, though, waveguides are considerably simpler than two-conductor cables&mdash;especially coaxial cables&mdash;in their manufacture and maintenance.</p>
+<p>With only a single conductor (the waveguide&rsquo;s &ldquo;shell&rdquo;), there are no concerns with proper conductor-to-conductor spacing, or of the consistency of the dielectric material, since the only dielectric in a waveguide is air.</p>
+<p>Moisture is not as severe a problem in waveguides as it is within coaxial cables, either, and so waveguides are often spared the necessity of gas &ldquo;filling.&rdquo;</p>
+<p>Waveguides may be thought of as conduits for electromagnetic energy, the waveguide itself acting as nothing more than a &ldquo;director&rdquo; of the energy rather than as a signal conductor in the normal sense of the word.</p>
+<p>In a sense, all transmission lines function as conduits of electromagnetic energy when transporting pulses or high-frequency waves, directing the waves as the banks of a river direct a tidal wave.</p>
+<p>However, because waveguides are single-conductor elements, the propagation of electrical energy down a waveguide is of a very different nature than the propagation of electrical energy down a two-conductor transmission line.</p>
+## What is Transverse Electric and Magnetic (TEM) Wave Propagation?
+<p>All electromagnetic waves consist of electric and magnetic fields propagating in the same direction of travel, but perpendicular to each other. Along the length of a normal transmission line, both electric and magnetic fields are perpendicular (transverse) to the direction of wave travel.</p>
+<p>This is known as the <em>principal mode</em>, or <em>TEM</em> (<strong>T</strong>ransverse <strong>E</strong>lectric and <strong>M</strong>agnetic) mode. This mode of wave propagation can exist only where there are two conductors, and it is the dominant mode of wave propagation where the cross-sectional dimensions of the transmission line are small compared to the wavelength of the signal.</p>
+
+<p><img src="/uploads/articles/twin-lead-transmission-line-propagation.png" /></p>
+<p><em>Twin lead transmission line propagation: TEM mode.</em></p>
+
+<p>At <em>microwave</em> signal frequencies (between 100 MHz and 300 GHz), two-conductor transmission lines of any substantial length operating in standard TEM mode become impractical.</p>
+<p>Lines small enough in cross-sectional dimension to maintain TEM mode signal propagation for microwave signals tend to have low voltage ratings, and suffer from large, parasitic power losses due to conductor &ldquo;skin&rdquo; and dielectric effects.</p>
+<p>Fortunately, though, at these short wavelengths there exist other modes of propagation that are not as &ldquo;lossy,&rdquo; if a conductive tube is used rather than two parallel conductors. It is at these high frequencies that waveguides become practical.</p>
+<p>When an electromagnetic wave propagates down a hollow tube, only one of the fields&mdash;either electric or magnetic&mdash;will actually be transverse to the wave&rsquo;s direction of travel.</p>
+<p>The other field will &ldquo;loop&rdquo; longitudinally to the direction of travel, but still be perpendicular to the other field. Whichever field remains transverse to the direction of travel determines whether the wave propagates in <em>TE</em> mode (<strong>T</strong>ransverse <strong>E</strong>lectric) or <em>TM</em> (<strong>T</strong>ransverse <strong>M</strong>agnetic) mode.</p>
+
+<p><img src="/uploads/articles/waveguide-transverse-electric-and-transverse-magnetic-modes.png" /></p>
+<p><em>Waveguide (TE) transverse electric and (TM) transverse magnetic modes.</em></p>
+
+<p>Many variations of each mode exist for a given waveguide, and a full discussion of this subject is well beyond the scope of this book.</p>
+## How Are Signals Introduced to and Extracted from Waveguides?
+<p>Signals are typically introduced to and extracted from waveguides by means of small antenna-like coupling devices inserted into the waveguide. Sometimes these coupling elements take the form of a dipole, which is nothing more than two open-ended stub wires of appropriate length.</p>
+<p>Other times, the coupler is a single stub (a half-dipole, similar in principle to a &ldquo;whip&rdquo; antenna, 1/4&lambda; in physical length), or a short loop of wire terminated on the inside surface of the waveguide.</p>
+
+<p><img src="/uploads/articles/stub-and-loop-coupling-to-waveguide.png" /></p>
+<p><em>Stub and loop coupling to waveguide.</em></p>
+
+<p>In some cases, such as a class of vacuum tube devices called <em>inductive output tubes</em> (the so-called <em>klystron</em> tube falls into this category), a &ldquo;cavity&rdquo; formed of conductive material may intercept electromagnetic energy from a modulated beam of electrons, having no contact with the beam itself.</p>
+
+<p><img src="/uploads/articles/klystron-inductive-output-tube.png" /></p>
+<p><em>Klystron inductive output tube.</em></p>
+
+## What is a Cavity Resonator?
+<p>Just as transmission lines are able to function as resonant elements in a circuit, especially when terminated by a short-circuit or an open-circuit, a dead-ended waveguide may also resonate at particular frequencies.</p>
+<p>When used as such, the device is called a <em>cavity resonator</em>. Inductive output tubes use toroid-shaped cavity resonators to maximize the power transfer efficiency between the electron beam and the output cable.</p>
+<p>A cavity resonant frequency may be altered by changing its physical dimensions. To this end, cavities with movable plates, screws, and other mechanical elements for tuning are manufactured to provide coarse resonant frequency adjustment.</p>
+<p>If a resonant cavity is made open on one end, it functions as a unidirectional antenna.</p>
+<p>The following photograph shows a home-made waveguide formed from a tin can, used as an antenna for a 2.4 GHz signal in an &ldquo;802.11b&rdquo; computer communication network.</p>
+<p>The coupling element is a quarter-wave stub: nothing more than a piece of solid copper wire about 1-1/4 inches in length extending from the center of a coaxial cable connector penetrating the side of the can.</p>
+
+<p><img src="/uploads/articles/stub-coupling-to-waveguide.jpg" /></p>
+<p><em>Can-tenna illustrates stub coupling to waveguide.</em></p>
+
+<p>A few more tin-can antennas may be seen in the background, one of them a &ldquo;Pringles&rdquo; potato chip can. Although this can is of cardboard (paper) construction, its metallic inner lining provides the necessary conductivity to function as a waveguide.</p>
+<p>Some of the cans in the background still have their plastic lids in place. The plastic, being nonconductive, does not interfere with the RF signal, but functions as a physical barrier to prevent rain, snow, dust, and other physical contaminants from entering the waveguide.</p>
+<p>&ldquo;Real&rdquo; waveguide antennas use similar barriers to physically enclose the tube, yet allow electromagnetic energy to pass unimpeded.</p>

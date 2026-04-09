@@ -1,0 +1,39 @@
+###### 16. RC and L/R Time Constants
+
+# Inductor Transient Response
+<p>Inductors have the exact opposite characteristics of capacitors. Whereas capacitors store energy in an <em>electric</em> field (produced by the voltage between two plates), inductors store energy in a <em>magnetic</em> field&nbsp;(produced by the current through wire). Thus, while the stored energy in a capacitor tries to maintain a constant voltage across its terminals, the stored energy in an inductor tries to maintain a constant current through its windings.</p>
+<p>Because of this, inductors oppose changes in current and act precisely the opposite of capacitors, which oppose changes in voltage. A fully discharged inductor (no magnetic field), having zero current through it, will initially act as an open-circuit when attached to a source of voltage (as it tries to maintain zero current), dropping maximum voltage across its leads.</p>
+<p>Over time, the inductor&rsquo;s current rises to the maximum value allowed by the circuit, and the terminal voltage decreases correspondingly. Once the inductor&rsquo;s terminal voltage has decreased to a minimum (zero for a &ldquo;perfect&rdquo; inductor), the current will stay at a maximum level, and it will behave essentially as a short-circuit.</p>
+
+^[116-01.jpg]
+
+<p>When the switch is first closed, the voltage across the inductor will immediately jump to battery voltage (acting as though it were an open-circuit) and decay down to zero over time (eventually acting as though it were a short-circuit). The voltage across the inductor is determined by calculating how much voltage is being dropped across R, given the current through the inductor, and subtracting that voltage value from the battery to see what&rsquo;s left.</p>
+<p>When the switch is first closed, the current is zero, then it increases over time until it is equal to the battery voltage divided by the series resistance of 1 &Omega;. This behavior is precisely opposite that of the series resistor-capacitor circuit, where current started at a maximum and capacitor voltage at zero. Let&rsquo;s see how this works using real values:</p>
+
+^[116-02.jpg]
+
+[|
+¦Time (seconds)¦Battery Voltage¦Inductor Voltage¦Current¦
+|0  |15 V|15 V     |0      |
+|0.5|15 V|9.098 V  |5.902 A|
+|1  |15 V|5.518 V  |9.482 A|
+|2  |15 V|2.030 V  |12.97 A|
+|3  |15 V|0.747 V  |14.25 A|
+|4  |15 V|0.275 V  |14.73 A|
+|5  |15 V|0.101 V  |14.90 A|
+|6  |15 V|37.181 mV|14.96 A|
+|10 |15 V|0.681 mV |14.99 A|
+|]
+
+<p>Just as with the RC circuit, the inductor voltage&rsquo;s approach to 0 volts and the current&rsquo;s approach to 15 amps over time is <em>asymptotic</em>. For all practical purposes, though, we can say that the inductor voltage will eventually reach 0 volts and that the current will eventually equal the maximum of 15 amps.</p>
+<p>Again, we can use the SPICE circuit analysis program to chart this asymptotic decay of inductor voltage and buildup of the inductor current in a more graphical form (inductor current is plotted in terms of the voltage drop across the resistor, using the resistor as a shunt to measure current):</p>
+
+^[116-03.png]
+
+<p>Notice how the voltage decreases (to the left of the plot) very quickly at first, then tapering off as time goes on. Current also changes very quickly at first then levels off as time goes on, but it is approaching maximum (right of scale) while voltage approaches minimum.</p>
+
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li>A fully &ldquo;discharged&rdquo; inductor (no current through it) initially acts as an open circuit (voltage drop with no current) when faced with the sudden application of voltage. After &ldquo;charging&rdquo; fully to the final level of current, it acts as a short circuit (current with no voltage drop).</li>
+<li>In a resistor-inductor &ldquo;charging&rdquo; circuit, inductor current goes from nothing to full value while voltage goes from maximum to zero, both variables changing most rapidly at first, approaching their final values slower and slower as time goes on.</li>
+</ul>

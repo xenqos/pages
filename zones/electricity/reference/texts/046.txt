@@ -1,0 +1,256 @@
+# Transistor Biasing Calculations
+<p>Although transistor switching circuits operate without bias, it is unusual for analog circuits to operate without bias. One of the few examples is &ldquo;TR One, one transistor radio&rdquo; TR One, Ch 9 with an amplified AM (amplitude modulation) detector. Note the lack of a bias resistor at the base in that circuit. In this section, we look at a few basic bias circuits which can set a selected emitter current IE. Given a desired emitter current IE, what values of bias resistors are required, RB, RE, etc?</p>
+## Base Bias Resistor
+<p><strong>The simplest biasing applies a </strong><strong><em>base-bias</em></strong><strong> resistor between the base and a base battery V</strong><strong>BB</strong><strong>.</strong> It is convenient to use the existing VCC supply instead of a new bias supply. An example of an audio amplifier stage using base-biasing is &ldquo;Crystal radio with one transistor . . . &rdquo; crystal radio, Ch 9. Note the resistor from the base to the battery terminal. A similar circuit is shown in the figure below. Write a KVL (Kirchhoff&rsquo;s voltage law) equation about the loop containing the battery, RB, and the VBE diode drop on the transistor in Figure below. Note that we use VBB for the base supply, even though it is actually VCC. If &beta; is large we can make the approximation that IC =IE. For silicon transistors VBE&cong;0.7V.</p>
+<p><img src="/uploads/articles/base-bias.jpg" /></p>
+<p>Base-bias</p>
+<p>Silicon small signal transistors typically have a &beta; in the range of 100-300.</p>
+<p><strong>Example Calculations:</strong></p>
+<p>Assuming that we have a &beta;=100 transistor, what value of the base-bias resistor is required to yield an emitter current of 1mA? Solving the IE base-bias equation for RB and substituting &beta;, VBB, VBE, and IE yield 930k&Omega;. The closest standard value is 910k&Omega;.</p>
+<p><img src="/uploads/articles/solving-the-IE-base-bias-equation.jpg" /></p>
+<p>What is the emitter current with a 910k&Omega; resistor? What is the emitter current if we randomly get a &beta;=300 transistor?</p>
+<p><img src="/uploads/articles/emitter-current-calculations.jpg" /></p>
+<p>The emitter current is little changed in using the standard value 910k&Omega; resistor. However, with a change in &beta; from 100 to 300, the emitter current has tripled. This is not acceptable in a power amplifier if we expect the collector voltage to swing from near VCC to near ground. However, for low level signals from micro-volts to about a volt, the bias point can be centered for a &beta; of the square root of (100&middot;300)=173. The bias point will still drift by a considerable amount. However, low-level signals will not be clipped.</p>
+<p>Base-bias is not suitable for high emitter currents, as used in power amplifiers. The base-biased emitter current is not temperature stable.</p>
+<p><strong><em>Thermal runaway</em></strong> is the result of high emitter current causing a temperature increase which causes an increase in emitter current, which further increases temperature.</p>
+## Collector-Feedback Bias
+<p>Variations in bias due to temperature and beta may be reduced by moving the VBB end of the base-bias resistor to the collector as in the figure below. If the emitter current were to increase, the voltage drop across RC increases, decreasing VC, decreasing IB fed back to the base. This, in turn, decreases the emitter current, correcting the original increase.</p>
+<p>Write a KVL equation about the loop containing the battery, RC, RB, and the VBE drop. Substitute IC&cong;IE and IB&cong;IE/&beta;. Solving for IE yields the IE CFB-bias equation. Solving for IB yields the IB CFB-bias equation.</p>
+<p><img src="/uploads/articles/collector-feedback-bias.jpg" /></p>
+<p>Collector-feedback bias.</p>
+<p><strong>Example Calculations:</strong></p>
+<p>Find the required collector feedback bias resistor for an emitter current of 1 mA, a 4.7K collector load resistor, and a transistor with &beta;=100. Find the collector voltage VC. It should be approximately midway between VCC and ground.</p>
+<p><img src="/uploads/articles/required-collector-feedback-bias-resistor-calculation.jpg" /></p>
+<p>The closest standard value to the 460k&Omega; collector feedback bias resistor is 470k&Omega;. Find the emitter current IE with the 470K&Omega; resistor. Recalculate the emitter current for a transistor with &beta;=100 and &beta;=300.</p>
+<p><img src="/uploads/articles/emitter-current-for-a-transistor-calculation.jpg" /></p>
+<p>We see that as beta changes from 100 to 300, the emitter current increases from 0.989mA to 1.48mA. This is an improvement over the previous base-bias circuit which had an increase from 1.02mA to 3.07mA. Collector feedback bias is twice as stable as base-bias with respect to beta variation.</p>
+## Emitter-Bias
+<p>Inserting a resistor RE in the emitter circuit as in figure below causes <strong><em>degeneration</em></strong><strong>, also known as negative feedback</strong>. This opposes a change in emitter current IE due to temperature changes, resistor tolerances, beta variation, or power supply tolerance. Typical tolerances are as follows: resistor&mdash; 5%, beta&mdash; 100-300, power supply&mdash; 5%. Why might the emitter resistor stabilize a change in current? The polarity of the voltage drop across RE is due to the collector battery VCC. The end of the resistor closest to the (-) battery terminal is (-), the end closest to the (+) terminal it (+). Note that the (-) end of RE is connected via VBB battery and RB to the base. Any increase in current flow through RE will increase the magnitude of negative voltage applied to the base circuit, decreasing the base current, decreasing the emitter current. This decreasing emitter current partially compensates the original increase.</p>
+<p><img src="/uploads/articles/emitter-bias.jpg" /></p>
+<p>Emitter-bias</p>
+<p>Note that base-bias battery VBB is used instead of VCC to bias the base in the figure above. Later we will show that the emitter-bias is more effective with a lower base bias battery. Meanwhile, we write a KVL equation for the loop through the base-emitter circuit, paying attention to the polarity on the components. We substitute IB&cong;IE/&beta; and solve for emitter current IE. This equation can be solved for RB, equation: RB emitter-bias, Figure above.</p>
+<p>Before applying the equations: RB emitter-bias and IE emitter-bias, the figure above, we need to choose values for RC and RE. RC is related to the collector supply VCC and the desired collector current IC which we assume is approximately the emitter current IE.</p>
+<p>Normally the bias point for VC is set to half of VCC. Though, it could be set higher to compensate for the voltage drop across the emitter resistor RE. The collector current is whatever we require or choose. It could range from micro-Amps to Amps depending on the application and transistor rating. We choose IC = 1mA, typical of a small-signal transistor circuit.</p>
+<p><strong>Example Calculations:</strong></p>
+<p>We calculate a value for RC and choose a close standard value. An emitter resistor which is 10-50% of the collector load resistor usually works well.</p>
+<p><img src="/uploads/articles/stabilization-of-the-current-to-prior-bias-circuits.jpg" /></p>
+<p>An 883k resistor was calculated for RB, an 870k chosen. At &beta;=100, IE is 1.01mA.</p>
+<p><img src="/uploads/articles/determine-the-required-value-of-base-bias-resistor-calculation2.jpg" /></p>
+<p>For &beta;=300 the emitter currents are shown in Table below.</p>
+<p><em>Emitter current comparison for &beta;=100, &beta;=300.</em></p>
+<table align="center" border="1">
+<tbody>
+<tr>
+<th>Bias circuit</th>
+<th>IC &beta;=100</th>
+<th>IC &beta;=300</th>
+</tr>
+<tr>
+<td>base-bias</td>
+<td>1.02mA</td>
+<td>3.07mA</td>
+</tr>
+<tr>
+<td>collector feedback bias</td>
+<td>0.989mA</td>
+<td>1.48mA</td>
+</tr>
+<tr>
+<td>emitter-bias, V<sub>BB</sub>=10V</td>
+<td>1.01mA</td>
+<td>2.76mA</td>
+</tr>
+</tbody>
+</table>
+<p>The table above shows that for VBB = 10V, emitter-bias does not do a very good job of stabilizing the emitter current. The emitter-bias example is better than the previous base-bias example, but not by much. The key to effective emitter bias is lowering the base supply VBB nearer to the amount of emitter bias.</p>
+<p>Rounding that is emitter current times emitter resistor: IERE = (1mA)(470) = 0.47V. In addition, we need to overcome the VBE = 0.7V. Thus, we need a VBB &gt;(0.47 + 0.7)V or &gt;1.17V. If emitter current deviates, this number will change compared with the fixed base supply VBB,causing a correction to base current IB and emitter current IE. A good value for VB &gt;1.17V is 2V.</p>
+<p><img src="/uploads/articles/emitter-current-times-emitter-resistor.jpg" /></p>
+<p>The calculated base resistor of 83k is much lower than the previous 883k. We choose 82k from the list of standard values. The emitter currents with the 82k RB for &beta;=100 and &beta;=300 are:</p>
+<p><img src="/uploads/articles/calculated-base-resistor-lower-than-previous.jpg" /></p>
+<p>Comparing the emitter currents for emitter-bias with VBB = 2V at &beta;=100 and &beta;=300 to the previous bias circuit examples in the table below, we see considerable improvement at 1.75mA, though, not as good as the 1.48mA of collector feedback.</p>
+<p><em>Emitter current comparison for &beta;=100, &beta;=300.</em></p>
+<table align="center" border="1">
+<tbody>
+<tr>
+<th>Bias circuit</th>
+<th>IC &beta;=100</th>
+<th>IC &beta;=300</th>
+</tr>
+<tr>
+<td>base-bias</td>
+<td>1.02mA</td>
+<td>3.07mA</td>
+</tr>
+<tr>
+<td>collector feedback bias</td>
+<td>0.989mA</td>
+<td>1.48mA</td>
+</tr>
+<tr>
+<td>emitter-bias, V<sub>BB</sub>=10V</td>
+<td>1.01mA</td>
+<td>2.76mA</td>
+</tr>
+<tr>
+<td>emitter-bias, V<sub>BB</sub>=2V</td>
+<td>1.01mA</td>
+<td>1.75mA</td>
+</tr>
+</tbody>
+</table>
+<p>To improve performance of emitter-bias, either increase the emitter resistor RE or decrease the base-bias supply VBB or both.</p>
+<p>As an example, we double the emitter resistor to the nearest standard value of 910&Omega;.</p>
+<p><img src="/uploads/articles/double-the-emitter-resistor-calculation.jpg" /></p>
+<p>The calculated RB = 39k is a standard value resistor. No need to recalculate IE for &beta; = 100. For &beta; = 300, it is:</p>
+<p><img src="/uploads/articles/double-the-emitter-resistor-calculation2.jpg" /></p>
+<p>The performance of the emitter-bias circuit with a 910 emitter resistor is much improved. See Table below.</p>
+<p><em>Emitter current comparison for &beta;=100, &beta;=300. </em></p>
+<table align="center" border="1">
+<tbody>
+<tr>
+<th>Bias circuit</th>
+<th>IC &beta;=100</th>
+<th>IC &beta;=300</th>
+</tr>
+<tr>
+<td>base-bias</td>
+<td>1.02mA</td>
+<td>3.07mA</td>
+</tr>
+<tr>
+<td>collector feedback bias</td>
+<td>0.989mA</td>
+<td>1.48mA</td>
+</tr>
+<tr>
+<td>emitter-bias, V<sub>BB</sub>=10V</td>
+<td>1.01mA</td>
+<td>2.76mA</td>
+</tr>
+<tr>
+<td>emitter-bias, V<sub>BB</sub>=2V, R<sub>E</sub>=470</td>
+<td>1.01mA</td>
+<td>1.75mA</td>
+</tr>
+<tr>
+<td>emitter-bias, V<sub>BB</sub>=2V, R<sub>E</sub>=910</td>
+<td>1.00mA</td>
+<td>1.25mA</td>
+</tr>
+</tbody>
+</table>
+<p>As an exercise, rework the emitter-bias example with the emitter resistor reverted back to 470&Omega;, and the base-bias supply reduced to 1.5V.</p>
+<p><img src="/uploads/articles/determine-the-required-value-of-base-bias-resistor.jpg" /></p>
+<p>The 33k base resistor is a standard value, emitter current at &beta; = 100 is OK. The emitter current at &beta; = 300 is:</p>
+<p><img src="/uploads/articles/base-resistor-standard-value-calculation.jpg" /></p>
+<p>The table below compares the exercise results 1mA and 1.38mA to the previous examples.</p>
+<p><em>Emitter current comparison for &beta;=100, &beta;=300. </em></p>
+<table align="center" border="1">
+<tbody>
+<tr>
+<th>Bias circuit</th>
+<th>IC &beta;=100</th>
+<th>IC &beta;=300</th>
+</tr>
+<tr>
+<td>base-bias</td>
+<td>1.02mA</td>
+<td>3.07mA</td>
+</tr>
+<tr>
+<td>collector feedback bias</td>
+<td>0.989mA</td>
+<td>1.48mA</td>
+</tr>
+<tr>
+<td>emitter-bias, V<sub>BB</sub>=10V</td>
+<td>1.01mA</td>
+<td>2.76mA</td>
+</tr>
+<tr>
+<td>emitter-bias, V<sub>BB</sub>=2V, R<sub>B</sub>=470</td>
+<td>1.01mA</td>
+<td>1.75mA</td>
+</tr>
+<tr>
+<td>emitter-bias, V<sub>BB</sub>=2V, R<sub>B</sub>=910</td>
+<td>1.00mA</td>
+<td>1.25mA</td>
+</tr>
+<tr>
+<td>emitter-bias, V<sub>BB</sub>=1.5V, R<sub>B</sub>=470</td>
+<td>1.00mA</td>
+<td>1.38mA</td>
+</tr>
+</tbody>
+</table>
+<p>The emitter-bias equations have been repeated in the figure below with the internal emitter resistance included for better accuracy. The internal emitter resistance is the resistance in the emitter circuit contained within the transistor package. This internal resistance rEE is significant when the (external) emitter resistor RE is small, or even zero. The value of internal resistance REE is a function of emitter current IE, Table below.</p>
+<p><em>Derivation of r<sub>EE</sub></em></p>
+<pre>
+r<sub>EE</sub> = KT/I<sub>E</sub>m where: K=1.38&times;10<sup>-23</sup> watt-sec/<sup>o</sup>C, Boltzman&#39;s constant T= temperature in Kelvins &cong;300. I<sub>E</sub> = emitter current m = varies from 1 to 2 for Silicon r<sub>EE</sub> &cong; 0.026V/I<sub>E</sub> = 26mV/I<sub>E</sub> </pre>
+<p>For reference the 26mV approximation is listed as equation rEE in Figure below.</p>
+<p><img src="/uploads/articles/emitter-bias-equations-with-internal-emitter-resistance.jpg" /></p>
+<p>Emitter-bias equations with internal emitter resistance rEE included.</p>
+<p>The more accurate emitter-bias equations in the figure above may be derived by writing a KVL equation. Alternatively, start with equations IE emitter-bias and RB emitter-bias in Figure previous, substituting RE with rEE+RE. The result is equations IE EB and RB EB, respectively in Figure above.</p>
+<p>Redo the RB calculation in the previous example emitter-bias with the inclusion of rEE and compare the results.</p>
+<p><img src="/uploads/articles/calculation-of-emitter-bias.jpg" /></p>
+<p>The inclusion of rEE in the calculation results in a lower value of the base resistor RB as shown in Table below. It falls below the standard value 82k resistor instead of above it.</p>
+<p><em>Effect of inclusion of rEE on calculated RB </em></p>
+<table align="center" border="1">
+<tbody>
+<tr>
+<th>r<sub>EE</sub>?</th>
+<th>r<sub>EE</sub> Value</th>
+</tr>
+<tr>
+<td>Without r<sub>EE</sub></td>
+<td>83k</td>
+</tr>
+<tr>
+<td>With r<sub>EE</sub></td>
+<td>80.4k</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Bypass Capacitor for RE</strong></p>
+<p>One problem with emitter bias is that a considerable part of the output signal is dropped across the emitter resistor RE (figure below). This voltage drop across the emitter resistor is in series with the base and of opposite polarity compared with the input signal. (This is similar to a common collector configuration having &lt;1 gain.) This degeneration severely reduces the gain from base to collector. The solution for AC signal amplifiers is to bypass the emitter resistor with a capacitor. This restores the AC gain since the capacitor is short for AC signals. The DC emitter current still experiences degeneration in the emitter resistor, thus, stabilizing the DC current.</p>
+<p><img src="/uploads/articles/cbypass-is-required-to-prevent-ac-gain-reduction.jpg" /></p>
+<p>Cbypass is required to prevent AC gain reduction.</p>
+<p>The value of the bypass capacitor depends on the lowest frequency to be amplified.<strong> </strong></p>
+<p><strong>For radio frequencies Cbpass would be small. For an audio amplifier extending down to 20Hz it will be large. A &ldquo;rule of thumb&rdquo; for the bypass capacitor is that the reactance should be 1/10 of the emitter resistance or less. </strong>The capacitor should be designed to accommodate the lowest frequency being amplified. The capacitor for an audio amplifier covering 20Hz to 20kHz would be:</p>
+<p><img src="/uploads/articles/calculation-of-audio-amplifier.jpg" /></p>
+<p>Note that the internal emitter resistance rEE is not bypassed by the bypass capacitor.</p>
+## Voltage Divider Bias
+<p>Stable emitter bias requires a low voltage base bias supply, the figure below. The alternative to a base supply VBB is a voltage divider based on the collector supply VCC.</p>
+<p><img src="/uploads/articles/voltage-divider-bias-replaces-base-battery-with-voltage-divider.jpg" /></p>
+<p>Voltage Divider bias replaces base battery with voltage divider.</p>
+<p>The design technique is to first work out an emitter-bias design, Then convert it to the voltage divider bias configuration by using Thevenin&rsquo;s Theorem. [TK1] The steps are shown graphically in the figure below. Draw the voltage divider without assigning values. Break the divider loose from the base. (The base of the transistor is the load.) Apply Thevenin&rsquo;s Theorem to yield a single Thevenin equivalent resistance Rth and voltage source Vth.</p>
+<p><img src="/uploads/articles/thevenins-theorem-converts-voltage-divider-to-single-supply.jpg" /></p>
+<p>Thevenin&rsquo;s Theorem converts voltage divider to single supply Vth and resistance Rth.</p>
+<p>The Thevenin equivalent resistance is the resistance from load point (arrow) with the battery (VCC) reduced to 0 (ground). In other words, R1||R2. The Thevenin equivalent voltage is the open-circuit voltage (load removed). This calculation is by the voltage divider ratio method. R1 is obtained by eliminating R2 from the pair of equations for Rth and Vth. The equation of R1 is in terms of known quantities Rth, Vth, Vcc. Note that Rth is RB, the bias resistor from the emitter-bias design. The equation for R2 is in terms of R1 and Rth.</p>
+<p><img src="/uploads/articles/convertion-of-emitter-bias-to-voltage-divider-bias.jpg" /></p>
+<p>Convert this previous emitter-bias example to voltage divider bias.</p>
+<p><img src="/uploads/articles/emitter-bias-example-converted-to-voltage-divider-bias.jpg" /></p>
+<p>Emitter-bias example converted to voltage divider bias.</p>
+<p>These values were previously selected or calculated for an emitter-bias example</p>
+<p><img src="/uploads/articles/values-selected-for-an-emitter-bias.jpg" /></p>
+<p>Substituting VCC , VBB , RB yields R1 and R2 for the voltage divider bias configuration.</p>
+<p><img src="/uploads/articles/voltage-divider-bias-configuration.jpg" /></p>
+<p>R1 is a standard value of 220K. The closest standard value for R2 corresponding to 38.8k is 39k. This does not change IE enough for us to calculate it. <strong>Example Problems</strong> 1. Calculate the bias resistors for the cascode amplifier in the figure below. VB2 is the bias voltage for the common-emitter stage. VB1 is a fairly high voltage at 11.5 because we want the common-base stage to hold the emitter at 11.5-0.7=10.8V, about 11V. (It will be 10V after accounting for the voltage drop across RB1 .) That is, the common-base stage is the load, substitute for a resistor, for the common-emitter stage&rsquo;s collector. We desire a 1mA emitter current.</p>
+<p><img src="/uploads/articles/bias-for-a-cascode-amplifier.jpg" /></p>
+<p>Bias for a cascode amplifier.</p>
+<p>2. Convert the base bias resistors for the cascode amplifier to voltage divider bias resistors driven by the VCC of 20V.</p>
+<p><img src="/uploads/articles/convert-base-bias-resistors-for-cascode-amplifier.jpg" /></p>
+<p>The final circuit diagram is shown in the &ldquo;Practical Analog Circuits&rdquo; chapter, &ldquo;Class A cascode amplifier . . . &rdquo; cascode, Ch 9 .&nbsp;</p>
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li>See Figure below.</li>
+<li>Select bias circuit configuration</li>
+<li>Select RC and IE for the intended application. The values for RC and IE should normally set collector voltage VC to 1/2 of VCC.</li>
+<li>Calculate base resistor RB to achieve desired emitter current.</li>
+<li>Recalculate emitter current IE for standard value resistors if necessary.</li>
+<li>For voltage divider bias, perform emitter-bias calculations first, then determine R1 and R2.</li>
+<li>For AC amplifiers, a bypass capacitor in parallel with RE improves AC gain. Set XC&le;0.10RE for lowest frequency.</li>
+</ul>
+<p><img src="/uploads/articles/biasing-equations-summary.jpg" /></p>
+<p>Biasing equations summary.</p>

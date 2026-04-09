@@ -1,0 +1,28 @@
+# Amplifier Impedances
+<p>Input impedance varies considerably with the circuit configuration shown in Figure below. It also varies with biasing. Not considered here, the input impedance is complex and varies with frequency. For the common-emitter and common-collector, it is base resistance times &beta;. The base resistance can be both internal and external to the transistor.&nbsp;</p>
+<p>For the common-collector:</p>
+<pre>
+R<sub>in</sub> = &beta;R<sub>E</sub> </pre>
+<p>It is a bit more complicated for the common-emitter circuit. We need to know the internal emitter resistance r<sub>EE</sub>.</p>
+<p>This is given by:</p>
+<pre>
+r<sub>EE</sub> = KT/I<sub>E</sub>m where: K=1.38&times;10<sup>-23</sup> watt-sec/<sup>o</sup>C, Boltzman&#39;s constant T= temperature in Kelvins &cong;300. I<sub>E</sub> = emitter current m = varies from 1 to 2 for Silicon R<sub>E</sub> &cong; 0.026V/I<sub>E</sub> = 26mV/I<sub>E</sub> </pre>
+<p>Thus, for the common-emitter circuit Rin is</p>
+<pre>
+Rin = &beta;r<sub>EE</sub> </pre>
+<p>As an example the input resistance of a, &beta; = 100, CE configuration biased at 1 mA is:</p>
+<pre>
+<strong>r<sub>EE</sub> = 26mV/1mA = 26 &Omega;</strong> Rin = &beta;r<sub>EE</sub> = 100(26) = 2600 &Omega; </pre>
+<p>Moreover, a more accurate Rin for the common-collector should have included Re&rsquo;</p>
+<pre>
+Rin = &beta;(R<sub>E</sub> + r<sub>EE</sub>) </pre>
+<p>The above equation is also applicable to a common-emitter configuration with an emitter resistor.</p>
+<p>Input impedance for the common-base configuration is <strong>Rin = r<sub>EE</sub></strong>.</p>
+<p>The high input impedance of the common-collector configuration matches high impedance sources. A crystal or ceramic microphone is one such high impedance source. The common-base arrangement is sometimes used in RF (radio frequency) circuits to match a low impedance source, for example, a 50 &Omega; coaxial cable feed. For moderate impedance sources, the common-emitter is a good match. An example is a dynamic microphone.</p>
+<p>The output impedances of the three basic configurations are listed in the Figure below. The moderate output impedance of the common-emitter configuration helps make it a popular choice for general use. The Low output impedance of the common-collector is put to good use in impedance matching, for example, transformerless matching to a 4 Ohm speaker. There do not appear to be any simple formulas for the output impedances. However, R. Victor Jones develops expressions for output resistance. [RVJ]</p>
+<p><img src="/uploads/articles/amplifier-characteristics-adapted-from-GE-transistor-manual.jpg" /></p>
+<p>Amplifier characteristics, adapted from GE Transistor Manual, Figure 1.21.</p>
+<p><strong>REVIEW:</strong><strong> </strong></p>
+<ul>
+<li>See Figure above.</li>
+</ul>

@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Alternating Current</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='46.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='48.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>Band-stop Filters</h1>
+<h2>How to Create a Band-stop Filter?</h2>
+<p>Also called <em>band-elimination</em>, <em>band-reject</em>, or <em>notch</em> filters, this kind of filter passes all frequencies above and below a particular range set by the component values. Not surprisingly, it can be made out of a&nbsp;low-pass and a&nbsp;high-pass filter, just like the&nbsp;band-pass design, except that this time we connect the two filter sections in parallel with each other instead of in series.</p>
+<p><img src=&quot;/uploads/articles/band-stop-filter-diagram.png&quot; /></p>
+<p><em>System level block diagram of a band-stop filter.</em></p>
+
+<h2>Twin-T Band-stop Filter</h2>
+<p>Constructed using two capacitive filter sections, it looks something like:<strong> </strong></p>
+<p><img src=&quot;/uploads/articles/twin-t-band-stop-filter-circuit.png&quot; /></p>
+<p><em>&ldquo;Twin-T&rdquo; band-stop filter.</em></p>
+<p>The low-pass filter section is comprised of R<sub>1</sub>, R<sub>2</sub>, and C<sub>1</sub> in a &ldquo;T&rdquo; configuration. The high-pass filter section is comprised of C<sub>2</sub>, C<sub>3</sub>, and R<sub>3</sub> in a &ldquo;T&rdquo; configuration as well. Together, this arrangement is commonly known as a &ldquo;Twin-T&rdquo; filter, giving sharp response when the component values are chosen in the following ratios:</p>
+<p><img src=&quot;/uploads/articles/component-values-twin-t-ratios.png&quot; /></p>
+
+<h2>Notch Frequency</h2>
+<p>Given these component ratios, the frequency of maximum rejection (the &ldquo;notch frequency&rdquo;) can be calculated as follows:<strong> </strong></p>
+<p><img src=&quot;/uploads/articles/frequency-of-maximum-rejectio-equation.png&quot; /></p>
+<p>The impressive band-stopping ability of this filter is illustrated by the following SPICE analysis:</p>
+
+<pre><br>
+twin-t bandstop filter &#10; v1 1 0 ac 1 sin &#10; r1 1 2 200 &#10; c1 2 0 2u &#10; r2 2 3 200 &#10; c2 1 4 1u &#10; r3 4 0 100 &#10; c3 4 3 1u &#10; rload 3 0 1k &#10; .ac lin 20 200 1.5k &#10; .plot ac v(3) &#10; .end &#10;</pre>
+
+<p><img src=&quot;/uploads/articles/response-of-twin-t-band-stop-filter-graph1.png&quot; /></p>
+<p><img src=&quot;/uploads/articles/response-of-twin-t-band-stop-filter-graph2.png&quot; /></p>
+<p><em>Response of &ldquo;twin-T&rdquo; band-stop filter.</em></p>
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li>A <em>band-stop</em> filter works to screen out frequencies that are within a certain range, giving easy passage only to frequencies outside of that range. Also known as <em>band-elimination</em>, <em>band-reject</em>, or <em>notch</em> filters.</li>
+<li>Band-stop filters can be made by placing a low-pass filter in parallel with a high-pass filter. Commonly, both the low-pass and high-pass filter sections are of the &ldquo;T&rdquo; configuration, giving the name &ldquo;Twin-T&rdquo; to the band-stop combination.</li>
+<li>The frequency of maximum attenuation is called the <em>notch</em> frequency.</li>
+</ul>
+
+
+
+</div>
+</div>
+</body>
+</html>

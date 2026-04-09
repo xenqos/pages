@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Direct Current</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='063.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='065.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h6>09. Electrical Instrumentation Signals</h6>
+
+
+<h1>Analog and Digital Signals</h1>
+<p>Instrumentation is a field of study and work centering on measurement and control of physical processes. These physical processes include pressure, temperature, flow rate, and chemical consistency. An instrument is a device that measures and/or acts to control any kind of physical process. Due to the fact that electrical quantities of voltage and current are easy to measure, manipulate, and transmit over long distances, they are widely used to represent such physical variables and transmit the information to remote locations.</p>
+<p>A <em>signal</em> is any kind of physical quantity that conveys information. Audible speech is certainly a kind of signal, as it conveys the thoughts (information) of one person to another through the physical medium of sound. Hand gestures are signals, too, conveying information by means of light.</p>
+<p>This text is another kind of signal, interpreted by your English-trained mind as information about electric circuits. In this chapter, the word <em>signal</em> will be used primarily in reference to an electrical quantity of voltage or current that is used to <em>represent</em> or <em>signify</em> some other physical quantity.</p>
+<h2>Analog vs. Digital</h2>
+<p>An <em>analog</em> signal is a kind of signal that is continuously variable, as opposed to having a limited number of steps along its range (called <em>digital</em>). A well-known example of analog vs. digital is that of clocks: analog being the type with pointers that slowly rotate around a circular scale, and digital being the type with decimal number displays or a &ldquo;second-hand&rdquo; that jerks rather than smoothly rotates.</p>
+<p>The analog clock has no physical limit to how finely it can display the time, as its &ldquo;hands&rdquo; move in a smooth, pauseless fashion. The digital clock, on the other hand, cannot convey any unit of time smaller than what its display will allow for. The type of clock with a &ldquo;second-hand&rdquo; that jerks in 1-second intervals are a digital device with a minimum <em>resolution</em> of one second.</p>
+<p>Both analog and digital signals find application in modern electronics, and the distinctions between these two basic forms of information are something to be covered in much greater detail later in this book. For now, I will limit the scope of this discussion to analog signals, since the systems using them tend to be of simpler design.</p>
+<p>For the most&nbsp;basic overview of this subject, see this video tutorial on analog and digital electronics.</p>
+<p>With many physical quantities, especially electrical, analog variability is easy to come by. If such a physical quantity is used as a signal medium, it will be able to represent variations of information with almost unlimited resolution.</p>
+<h2>Industrial Instrumentation System</h2>
+<p>In the early days of industrial instrumentation, compressed air was used as a signaling medium to convey information from measuring instruments to indicating and controlling devices located remotely. The amount of air pressure corresponded to the magnitude of whatever variable was being measured. Clean, dry air at approximately 20 pounds per square inch (PSI) was supplied from an air compressor through tubing to the measuring instrument and was then regulated by that instrument according to the quantity being measured to produce a corresponding output signal.</p>
+<p>For example, a pneumatic (air signal) level &ldquo;transmitter&rdquo; device set up to measure height of water (the &ldquo;process variable&rdquo;) in a storage tank would output a low air pressure when the tank was empty, a medium pressure when the tank was partially full, and a high pressure when the tank was completely full.</p>
+<a target='_blank' href='../images/064-01.jpg'><img class='clImageThumb' src='../images/064-01.jpg'></a><br>
+
+<p>The &ldquo;water level indicator&rdquo; (LI) is nothing more than a pressure gauge measuring the air pressure in the pneumatic signal line. This air pressure, being a <em>signal</em>, is, in turn, a representation of the water level in the tank. Any variation of level in the tank can be represented by an appropriate variation in the pressure of the pneumatic signal.</p>
+<p>Aside from certain practical limits imposed by the mechanics of air pressure devices, this pneumatic signal is infinitely variable, able to represent any degree of change in the water&rsquo;s level and is, therefore, <em>analog</em> in the truest sense of the word.</p>
+<p>Crude as it may appear, this kind of pneumatic signaling system formed the backbone of many industrial measurement and control systems around the world, and still sees use today due to its simplicity, safety, and reliability. Air pressure signals are easily transmitted through inexpensive tubes, easily measured (with mechanical pressure gauges), and are easily manipulated by mechanical devices using bellows, diaphragms, valves, and other pneumatic devices. Air pressure signals are not only useful for <em>measuring </em>physical processes, but for <em>controlling</em> them as well.</p>
+<p>With a large enough piston or diaphragm, a small air pressure signal can be used to generate a large mechanical force, which can be used to move a valve or other controlling device. Complete automatic control systems have been made using air pressure as the signal medium. They are simple, reliable, and relatively easy to understand. However, the practical limits for air pressure signal accuracy can be too limiting in some cases, especially when the compressed air is not clean and dry, and when the possibility for tubing leaks exist.</p>
+<p>With the advent of solid-state electronic amplifiers and other technological advances, electrical quantities of voltage and current became practical for use as analog instrument signaling media. Instead of using pneumatic pressure signals to relay information about the fullness of a water storage tank, electrical signals could relay that same information over thin wires (instead of tubing) and not require the support of such expensive equipment like air compressors to operate:</p>
+<a target='_blank' href='../images/064-02.jpg'><img class='clImageThumb' src='../images/064-02.jpg'></a><br>
+
+<p>Analog electronic signals are still the primary kinds of signals used in the instrumentation world today (January of 2001), but it is giving way to digital modes of communication in many applications (more on that subject later). Despite changes in technology, it is always good to have a thorough understanding of fundamental principles, so the following information will never really become obsolete.</p>
+<h2>Live Zero</h2>
+<p>One important concept applied in many analog instrumentation signal systems is that of &ldquo;live zero,&rdquo; a standard way of scaling a signal so that an indication of 0 percent can be discriminated from the status of a &ldquo;dead&rdquo; system. Take the pneumatic signal system as an example: if the signal pressure range for transmitter and indicator was designed to be 0 to 12 PSI, with 0 PSI representing 0 percent of process measurement and 12 PSI representing 100 percent, a received signal of 0 percent could be a legitimate reading of 0 percent measurement <em>or</em> it could mean that the system was malfunctioning (air compressor stopped, tubing broken, transmitter malfunctioning, etc.). With the 0 percent point represented by 0 PSI, there would be no easy way to distinguish one from the other.</p>
+<p>If, however, we were to scale the instruments (transmitter and indicator) to use a scale of 3 to 15 PSI, with 3 PSI representing 0 percent and 15 PSI representing 100 percent, any kind of a malfunction resulting in zero air pressure at the indicator would generate a reading of -25 percent (0 PSI), which is clearly a faulty value. The person looking at the indicator would then be able to immediately tell that something was wrong.</p>
+<p>Not all signal standards have been set up with live zero baselines, but the more robust signals standards (3-15 PSI, 4-20 mA) have, and for good reason.</p>
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li>A <em>signal</em> is any kind of detectable quantity used to communicate information.</li>
+<li>An <em>analog</em> signal is a signal that can be continuously, or infinitely, varied to represent any small amount of change.</li>
+<li><em>Pneumatic</em>, or air pressure, signals were once common in industrial instrumentation signal systems. These have been largely superseded by analog electrical signals such as voltage and current.</li>
+<li>A <em>live zero</em> refers to an analog signal scale using a non-zero quantity to represent 0 percent of real-world measurement so that any system malfunction resulting in a natural &ldquo;rest&rdquo; state of zero signal pressure, voltage, or current can be immediately recognized.</li>
+</ul>
+
+
+
+</div>
+</div>
+</body>
+</html>

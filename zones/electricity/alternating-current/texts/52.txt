@@ -1,0 +1,26 @@
+# Electrical Isolation
+## SPICE analysis of Electrical Isolation
+<p>Aside from the ability to easily convert between different levels of voltage and current in AC and DC circuits, transformers also provide an extremely useful feature called <em>isolation</em>, which is the ability to couple one circuit to another without the use of direct wire connections.</p>
+<p>We can demonstrate an application of this effect with another SPICE simulation: this time showing &ldquo;ground&rdquo; connections for the two circuits, imposing a high DC voltage between one circuit and ground through the use of an additional voltage source:</p>
+
+<p><img src="/uploads/articles/spice-simulation.jpg" /></p>
+<p><em>Transformer isolates 10 Vac at V1 from 250 VDC at V2.</em></p>
+
+<pre>
+v1 1 0 ac 10 sin &#10; rbogus1 1 2 1e-12 &#10; v2 5 0 dc 250 &#10; l1 2 0 10000 &#10; l2 3 5 100 &#10; k l1 l2 0.999 &#10; vi1 3 4 ac 0 &#10; rload 4 5 1k &#10; .ac lin 1 60 60 &#10; .print ac v(2,0) i(v1) &#10; .print ac v(3,5) i(vi1) &#10; .end&#10;</pre>
+<pre>
+DC voltages referenced to ground (node 0):&#10;(1)    0.0000    (2)    0.0000    (3)  250.0000    &#10;(4)  250.0000    (5)  250.0000&#10;&#10;AC voltages:&#10;freq          v(2)        i(v1)      &#10; &#10;6.000E+01     1.000E+01   9.975E-05    Primary winding&#10;&#10;freq          v(3,5)      i(vi1)      &#10;6.000E+01     9.962E-01   9.962E-04    Secondary winding&#10;</pre>
+
+<p>SPICE shows the 250 volts DC being impressed upon the secondary circuit elements with respect to ground, but as you can see there is no effect on the primary circuit (zero DC voltage) at nodes 1 and 2, and the transformation of AC power from primary to secondary circuits remains the same as before.</p>
+<p>The impressed voltage in this example is often called a <em>common-mode</em> voltage because it is seen at more than one point in the circuit with reference to the common point of the ground. The transformer isolates the common-mode voltage so that it is not impressed upon the primary circuit at all, but rather isolated to the secondary side.</p>
+<p>For the record, it does not matter that the common-mode voltage is DC, either. It could be AC, even at a different frequency, and the transformer would isolate it from the primary circuit all the same.</p>
+<p>There are applications where electrical isolation is needed between two AC circuit without any transformation of voltage or current levels. In these instances, Transformers called <em>isolation transformers</em> having 1:1 transformation ratios are used. A benchtop isolation transformer is shown in the Figure below.</p>
+
+<p><img src="/uploads/articles/isolation-transformer.jpg" /></p>
+<p><em>Isolation transformer isolates power out from the power line.</em></p>
+
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li>By being able to transfer power from one circuit to another without the use of interconnecting conductors between the two circuits, transformers provide the useful feature of <em>electrical isolation</em>.</li>
+<li>Transformers designed to provide electrical isolation without stepping voltage and current either up or down are called <em>isolation transformers</em>.</li>
+</ul>

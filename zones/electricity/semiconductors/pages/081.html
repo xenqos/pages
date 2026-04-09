@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Semiconductors</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='080.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='082.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>The TRIAC</h1>
+<p>SCRs are unidirectional (one-way) current devices, making them useful for controlling DC only. If two SCRs are joined in back-to-back parallel fashion just like two Shockley diodes were joined together to form a DIAC, we have a new device known as the TRIAC: (Figure below)</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/TRIAC-SCR-equivalent-and-TRIAC-schematic-symbol.jpg&quot; /></p>
+<p><em>The TRIAC SCR equivalent and, TRIAC schematic symbol.</em></p>
+<p>Because individual SCRs are more flexible to use in advanced control systems, these are more commonly seen in circuits like motor drives; TRIACs are usually seen in simple, low-power applications like household dimmer switches. A simple lamp dimmer circuit is shown in Figure below, complete with the phase-shifting resistor-capacitor network necessary for after-peak firing.</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/TRIAC-phase-control-of-power.jpg&quot; /></p>
+<p><em>TRIAC phase-control of power</em></p>
+<p>TRIACs are notorious for not firing symmetrically. This means these usually won&rsquo;t trigger at the exact same gate voltage level for one polarity as for the other. Generally speaking, this is undesirable, because asymmetrical firing results in a current waveform with a greater variety of harmonic frequencies. Waveforms that are symmetrical above and below their average centerlines are comprised of only odd-numbered harmonics. Asymmetrical waveforms, on the other hand, contain even-numbered harmonics (which may or may not be accompanied by odd-numbered harmonics as well).</p>
+<p>In the interest of reducing total harmonic content in power systems, the fewer and less diverse the harmonics, the better&mdash;one more reason individual SCRs are favored over TRIACs for complex, high-power control circuits. One way to make the TRIAC&rsquo;s current waveform more symmetrical is to use a device external to the TRIAC to time the triggering pulse. A DIAC placed in series with the gate does a fair job of this: (Figure below)</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/DIAC-improves-symmetry-of-control.jpg&quot; /></p>
+<p><em>DIAC improves symmetry of control</em></p>
+<p>DIAC breakover voltages tend to be much more symmetrical (the same in one polarity as the other) than TRIAC triggering voltage thresholds. Since the DIAC prevents any gate current until the triggering voltage has reached a certain, repeatable level in either direction, the firing point of the TRIAC from one half-cycle to the next tends to be more consistent, and the waveform more symmetrical above and below its centerline.</p>
+<p>Practically all the characteristics and ratings of SCRs apply equally to TRIACs, except that TRIACs of course are bidirectional (can handle current in both directions). Not much more needs to be said about this device except for an important caveat concerning its terminal designations.</p>
+<p>From the equivalent circuit diagram shown earlier, one might think that main terminals 1 and 2 were interchangeable. These are not! Although it is helpful to imagine the TRIAC as being composed of two SCRs joined together, it in fact is constructed from a single piece of semiconducting material, appropriately doped and layered. The actual operating characteristics may differ slightly from that of the equivalent model.</p>
+<p>This is made most evident by contrasting two simple circuit designs, one that works and one that doesn&rsquo;t. The following two circuits are a variation of the lamp dimmer circuit shown earlier, the phase-shifting capacitor and DIAC removed for simplicity&rsquo;s sake. Although the resulting circuit lacks the fine control ability of the more complex version (with capacitor and DIAC), it does function: (Figure below)</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/gate-to-MT2.jpg&quot; /></p>
+<p><em>This circuit with the gate to MT2 does function.</em></p>
+<p>Suppose we were to swap the two main terminals of the TRIAC around. According to the equivalent circuit diagram shown earlier in this section, the swap should make no difference. The circuit ought to work: (Figure below)</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/gate-swapped-to-MT1.jpg&quot; /></p>
+<p><em>With the gate swapped to MT1, this circuit does not function.</em></p>
+<p>However, if this circuit is built, it will be found that it does not work! The load will receive no power, the TRIAC refusing to fire at all, no matter how low or high a resistance value the control resistor is set to. The key to successfully triggering a TRIAC is to make sure the gate receives its triggering current from the main terminal 2 side of the circuit (the main terminal on the opposite side of the TRIAC symbol from the gate terminal). Identification of the MT1 and MT2 terminals must be done via the TRIAC&rsquo;s part number with reference to a data sheet or book.</p>
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li>A TRIAC acts much like two SCRs connected back-to-back for bidirectional (AC) operation.</li>
+<li>TRIAC controls are more often seen in simple, low-power circuits than complex, high-power circuits. In large power control circuits, multiple SCRs tend to be favored.</li>
+<li>When used to control AC power to a load, TRIACs are often accompanied by DIACs connected in series with their gate terminals. The DIAC helps the TRIAC fire more symmetrically (more consistently from one polarity to another).</li>
+<li>Main terminals 1 and 2 on a TRIAC are not interchangeable.</li>
+<li>To successfully trigger a TRIAC, gate current must come from the main terminal 2 (MT2) side of the circuit!</li>
+</ul>
+
+
+
+</div>
+</div>
+</body>
+</html>

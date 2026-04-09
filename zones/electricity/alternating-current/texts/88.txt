@@ -1,0 +1,17 @@
+# A 50-Ohm Cable?
+<p>Early in my explorations of electricity, I came across a length of <em>coaxial cable</em> with a label of &ldquo;50 ohms&rdquo; printed along its outer sheath (Figure below). Coaxial cable is a two-conductor cable made of a single conductor surrounded by a braided wire jacket, with a plastic insulating material separating the two.</p>
+<p>As such, the outer (braided) conductor completely surrounds the inner (single wire) conductor, the two conductors insulated from each other for the entire length of the cable. This type of cabling is often used to conduct weak (low-amplitude) voltage signals, due to its excellent ability to shield such signals from external interference.</p>
+
+<p><img src="/uploads/articles/coaxial-cable-construction.png" /></p>
+<p><em>Coaxial cable construction.</em></p>
+
+<p>I was mystified by the &ldquo;50 ohms&rdquo; label on this coaxial cable. How could two conductors, insulated from each other by a relatively thick layer of plastic, have 50 ohms of resistance between them?</p>
+<p>Measuring the resistance between the outer and inner conductors with my ohmmeter, I found it to be infinite (open-circuit), just as I would have expected from the two insulated conductors.</p>
+<p>Measuring each of the two conductors&rsquo; resistances from one end of the cable to the other indicated nearly zero ohms of resistance: again, exactly what I would have expected from continuous, unbroken lengths of wire.</p>
+<p>Nowhere was I able to measure 50 &Omega; of resistance on this cable, regardless of which points I connected my ohmmeter in between.</p>
+<p>What I didn&rsquo;t understand at that time was the cable&rsquo;s response to high-frequency AC signals and pulses that exhibit fast rise/fall time. Continuous direct current (DC)&mdash;such as that used by my ohmmeter to check the cable&rsquo;s resistance&mdash;shows the two conductors to be completely insulated from each other, with nearly infinite resistance between the two.</p>
+<p>However, due to the effects of capacitance and inductance distributed along the length of the cable, the cable&rsquo;s response to rapidly-changing voltages is such that it acts as a <em>finite</em> impedance, drawing current proportional to the applied voltage.</p>
+<p>What we would normally dismiss as being just a pair of wires becomes an important circuit element in the presence of rapidly-changing transients and high-frequency AC signals, with characteristic properties all its own. When expressing such properties, we refer to the wire pair as a <em>transmission line</em>.</p>
+<p>This chapter explores the transmission line behavior. Many transmission line effects do not appear in significant measure in AC circuits of powerline frequency (50 or 60 Hz), or in continuous DC circuits, and so we haven&rsquo;t had to concern ourselves with them in our study of electric circuits thus far.</p>
+<p>However, in circuits involving high frequencies and/or extremely long cable lengths, the effects are very significant.</p>
+<p>Practical applications of transmission line effects abound in radio-frequency (&ldquo;RF&rdquo;) communication circuitry, including computer networks, and in low-frequency circuits subject to rapidly-changing voltage transients (&ldquo;surges&rdquo;) such as lightning strikes on power lines.</p>

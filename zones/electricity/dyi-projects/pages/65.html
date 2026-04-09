@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>DYI Projects</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='64.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='66.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>Si Lab - Astable Multivibrator Audio Oscillator</h1>
+<h2>Project Overview</h2>
+<p>The proper name for the circuit in Figure 1 is an&nbsp;astable multivibrator.&nbsp;</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/audio-oscillator-schematic-diagram.jpg&quot; /></p>
+<em><strong>Figure 1.</strong> Schematic diagram of an astable multivibrator audio oscillator.</em><br>
+<br>
+<p>It is a simple, free-running oscillator circuit timed by the values of the resistors, capacitors, and power supply voltage.&nbsp;Unfortunately, its output waveform is distorted, neither sine wave nor square wave. However, for the simple purpose of making an audio tone, distortion doesn&rsquo;t matter much.</p>
+<p>The multivibrator itself is just two transistors, two resistors, and two cross-connecting capacitors in the left portion of Figure 1.&nbsp;The capacitors provide positive feedback in the circuit to keep it oscillating. The third transistor, shown at the right in Figure 1, is there to drive an LED (light-emitting diode)&nbsp;as a visual indicator of oscillator action.</p>
+
+<h2>Parts and Materials</h2>
+<ul>
+<li>Two 6 V batteries</li>
+<li>Three NPN transistors&mdash;models 2N2222 or 2N3403 recommended</li>
+<li>Two 0.1 &micro;F capacitors</li>
+<li>One 1 M&Omega; resistor</li>
+<li>Two 100 k&Omega; resistors</li>
+<li>One 1 k&Omega; resistor</li>
+<li>Assortment of resistor pairs, less than 100 k&Omega; (ex: two 10 k&Omega;, two 5 k&Omega;, two 1 k&Omega;)</li>
+<li>One LED</li>
+<li>Audio detector with headphones</li>
+</ul>
+
+<h2>Learning Objectives</h2>
+<ul>
+<li>How to build an astable multivibrator circuit using discrete transistors</li>
+<li>The effect of component values and supply voltage on the oscillation frequency</li>
+</ul>
+
+<h2>Instructions</h2>
+<p><strong>Step 1:&nbsp;</strong>Build the circuit illustrated in the schematic of Figure 1 and the breadboard implementation of Figure 2.&nbsp;</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/audio-oscillator-illustration-1.jpg&quot; /></p>
+<em><strong>Figure 2.</strong> Breadboard implementation of an astable multivibrator audio oscillator.</em><br>
+<br>
+<p>With a 12 V supply, 100 k&Omega; resistors, and 0.1 &micro;F capacitors, the oscillation frequency will be in the low audio range.</p>
+<p><strong>Step 2:&nbsp;</strong>You may listen to this signal with the audio detector connected with one test probe to the ground and the other to one of the transistor&rsquo;s collector terminals. We&nbsp;recommend placing a 1 M&Omega; resistor in series with the audio detector to minimize both circuit loading effects and headphone volume, as illustrated in Figure 3.</p>
+<p><img src=&quot;https://www.allaboutcircuits.com/uploads/articles/audio-oscillator-illustration-2.jpg&quot; /></p>
+<em><strong>Figure 3.</strong> Listening to the astable multivibrator output using an audio detector.</em><br>
+<br>
+<p>Of course, you could also observe the waveforms and frequency if you have an oscilloscope.</p>
+<p><strong>Step 3:&nbsp;</strong>Use the probe wire connected to the base of this common-emitter amplifier to detect voltage at different parts of the circuit with respect to the ground. Given the low oscillating frequency of this multivibrator circuit, you should be able to see the LED blink rapidly with the probe wire connected to the collector terminal of either multivibrator transistor.</p>
+<p>You may notice that the LED fails to blink with its probe wire touching the base of either multivibrator transistor, yet the audio detector (or oscilloscope) tells you there is an oscillating voltage there. Why is this?</p>
+<p>The LED&rsquo;s common-collector transistor amplifier is a voltage follower, meaning that it doesn&rsquo;t amplify voltage.&nbsp;Thus, if the voltage under test is less than the minimum required by the LED to light up, it will not glow.&nbsp;Since the forward-biased base-emitter junction of an active transistor drops only about 0.7 V, there is an&nbsp;insufficient voltage at either transistor base to energize the LED.&nbsp;The audio detector, being extraordinarily sensitive, though, detects this low voltage signal easily.</p>
+<p><strong>Step 4:&nbsp;</strong>Substitute lower-value resistors in place of the two 100 k&Omega; units shown. What happens to the oscillation frequency when you do so? We&nbsp;recommend using resistors at least 1 k&Omega; in size to prevent excessive transistor current.</p>
+<p><strong>Step 5:&nbsp;</strong>One shortcoming of many oscillator circuits is their dependence on a minimum amount of power supply voltage. Too little voltage, and the circuit ceases to oscillate.&nbsp;This circuit is no exception. Experiment with lower supply voltages and determine the minimum voltage necessary for oscillation, as well as experience the effect supply voltage change has on the oscillation frequency.</p>
+<p>One shortcoming specific to this circuit is the dependence on mismatched components for successful starting. For the circuit to begin oscillating, one transistor must turn on before the other one.&nbsp;Usually, there is enough mismatch in the various component values to enable this to happen, but it is possible for the circuit to freeze at a stable operating point&nbsp;and fail to oscillate at power-up. If this happens, try different components (same values, but different units) in the circuit.</p>
+
+
+</div>
+</div>
+</body>
+</html>

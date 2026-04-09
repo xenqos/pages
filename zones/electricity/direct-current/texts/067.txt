@@ -1,0 +1,10 @@
+###### 09. Electrical Instrumentation Signals
+
+# Tachogenerators
+<p>An electromechanical generator is a device capable of producing electrical power from mechanical energy, usually the turning of a shaft. When not connected to a load resistance, generators will generate voltage roughly proportional to shaft speed. With precise construction and design, generators can be built to produce very precise voltages for certain ranges of shaft speeds, thus making them well-suited as measurement devices for shaft speed in mechanical equipment. A generator specially designed and constructed for this use is called a <em>tachometer</em> or <em>tachogenerator</em>. Often, the word &ldquo;tach&rdquo; (pronounced &ldquo;tack&rdquo;) is used rather than the whole world.</p>
+
+^[067-01.jpg]
+
+<p>By measuring the voltage produced by a tachogenerator, you can easily determine the rotational speed of whatever it&#39;s mechanically attached to. One of the more common voltage signal ranges used with tachogenerators is 0 to 10 volts. Obviously, since a tachogenerator cannot produce a voltage when it&rsquo;s not turning, the zero cannot be &ldquo;live&rdquo; in this signal standard. Tachogenerators can be purchased with different &ldquo;full-scale&rdquo; (10 volts) speeds for different applications. Although a voltage divider could theoretically be used with a tachogenerator to extend the measurable speed range in the 0-10 volt scale, it is not advisable to significantly overspeed a precision instrument like this, or its life will be shortened.</p>
+<p>Tachogenerators can also indicate the direction of rotation by the polarity of the output voltage. When a permanent-magnet style DC generator&rsquo;s rotational direction is reversed, the polarity of its output voltage will switch. In measurement and control systems where the directional indication is needed, tachogenerators provide an easy way to determine that.</p>
+<p>Tachogenerators are frequently used to measure the speeds of electric motors, engines, and the equipment they power: conveyor belts, machine tools, mixers, fans, etc.</p>

@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>Alternating Current</title>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/local.css'>
+  <script type='text/javascript' src='../../../../scripts/global.js'></script>
+  <script type='text/javascript' src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='45.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='47.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>Band-pass Filters</h1>
+<h2>How to Create Band-pass Filter</h2>
+<p>There are applications where a particular band, or spread, or frequencies need to be filtered from a wider range of mixed signals.&nbsp;Filter circuits can be designed to accomplish this task by combining the properties of low-pass and high-pass into a single filter. The result is called a <em>band-pass</em> filter.</p>
+<p>Creating a bandpass filter from a low-pass and high-pass filter can be illustrated using block diagrams:</p>
+<p><img src=&quot;/uploads/articles/band-pass-filter-diagram.png&quot; /></p>
+<p><em>System level block diagram of a band-pass filter.</em></p>
+
+<h2>Design a Band-pass Filter Using Capacitors</h2>
+<p>What emerges from the&nbsp;series combination of these two filter circuits is a circuit that will only allow passage of those frequencies that are neither too high nor too low. Using real components, here is what a typical schematic might look like. The response of the band-pass filter is shown in.<strong> </strong></p>
+<p><img src=&quot;/uploads/articles/capacitive-band-pass-filter-circuit.png&quot; /></p>
+<p><em>Capacitive band-pass filter.</em></p>
+
+<pre><br>
+&#10;capacitive bandpass filter &#10; v1 1 0 ac 1 sin &#10; r1 1 2 200 &#10; c1 2 0 2.5u &#10; c2 2 3 1u &#10; rload 3 0 1k &#10; .ac lin 20 100 500 &#10; .plot ac v(3) &#10; .end &#10;</pre>
+
+<p><img src=&quot;/uploads/articles/capacitive-bandpass-filter-peaks-graph.png&quot; /></p>
+<p><em>The response of a capacitive bandpass filter peaks within a narrow frequency range.</em></p>
+
+<h2>Design a Band-pass Filter Using Inductors</h2>
+<p>Band-pass filters can also be constructed using&nbsp;inductors, but as mentioned before, the reactive &ldquo;purity&rdquo; of capacitors gives them a design advantage. If we were to design a bandpass filter using inductors, it might look something like:</p>
+<p><img src=&quot;/uploads/articles/inductive-band-pass-filter-circuit.png&quot; /></p>
+<p><em>Inductive band-pass filter.</em></p>
+<p>The fact that the high-pass section comes &ldquo;first&rdquo; in this design instead of the low-pass section makes no difference in its overall operation. It will still filter out all frequencies too high or too low.</p>
+<p>While the general idea of combining low-pass and high-pass filters together to make a bandpass filter is sound, it is not without certain limitations.</p>
+<p>Because this type of band-pass filter works by relying on either section to <em>block</em> unwanted frequencies, it can be difficult to design such a filter to allow unhindered passage within the desired frequency range.</p>
+<p>Both the low-pass and high-pass sections will always be blocking signals to some extent, and their combined effort makes for an attenuated (reduced amplitude) signal at best, even at the peak of the &ldquo;pass-band&rdquo; frequency range.</p>
+<p>Notice the curve peak on the previous SPICE analysis: the load voltage of this filter never rises above 0.59 volts, although the source voltage is a full volt. This signal attenuation becomes more pronounced if the filter is designed to be more selective (steeper curve, narrower band of passable frequencies).</p>
+<p>There are other methods to achieve band-pass operation without sacrificing signal strength within the pass-band. We will discuss those methods a little later in this chapter.</p>
+<p><strong>REVIEW:</strong></p>
+<ul>
+<li>A <em>band-pass</em> filter works to screen out frequencies that are too low or too high, giving easy passage only to frequencies within a certain range.</li>
+<li>Band-pass filters can be made by stacking a low-pass filter on the end of a high-pass filter, or vice versa.</li>
+<li>&ldquo;Attenuate&rdquo; means to reduce or diminish in amplitude. When you turn down the volume control on your stereo, you are &ldquo;attenuating&rdquo; the signal being sent to the speakers.</li>
+</ul>
+
+
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+###### 10. DC Network Analysis
+
+# Introduction to Network Theorems for Circuit Analysis
+
+^[076-01.png]
+
+<h3 class="text-lg lg:text-2xl font-bold mb-3">How do Network Theorems Make Circuit Analysis Easier?</h3>
+<p><p>While Ohm&rsquo;s law and Kirchhoff&rsquo;s voltage and current laws can be used to solve any electrical circuit, there are some helpful network theorems that we will introduce to make the analysis easier.&nbsp;&nbsp;</p></p>
+<p>Anyone who&rsquo;s studied geometry should be familiar with the concept of a theorem: a relatively simple rule used to solve a problem derived from a more intensive analysis using fundamental rules of mathematics.&nbsp;</p>
+<p>At least hypothetically, any problem in math can be solved by using the simple rules of arithmetic. In fact, this is how modern digital computers carry out the most complex mathematical calculations&mdash;by repeating many cycles of addition and subtraction. However, human beings aren&rsquo;t as consistent or as fast as digital computers. We need shortcut methods to avoid procedural errors.</p>
+<p>In electric network analysis, the fundamental rules are Ohm&rsquo;s law, Kirchhoff&rsquo;s voltage law (KVL), and Kirchhoff&rsquo;s current law (KCL). These basic laws may be applied to analyze just about any circuit configuration.&nbsp;</p>
+<p>However, as we have seen with our use of the branch current method and the mesh current method, we typically must resort to complex algebra to handle multiple unknown values. As with any theorem of geometry or algebra, these network theorems are derived from the fundamental circuit laws.&nbsp;</p>
+
+## Network Theorems to Simplify Circuit Analysis
+<p>In this chapter, we&rsquo;ll introduce these six network theorems that you will find helpful in analyzing electrical circuits:</p>
+<ul>
+<li>Superposition Theorem</li>
+<li>Thevenin&rsquo;s Theorem</li>
+<li>Norton&rsquo;s Theorem</li>
+<li>Millman&rsquo;s Theorem&nbsp;</li>
+<li>Maximum Power Transfer Theorem</li>
+<li>&Delta;-Y and Y-&Delta; Conversions</li>
+</ul>
+<p>It&rsquo;s important to note that we will not delve into the formal proofs of any of these theorems. If you doubt their validity, you can always empirically test them by setting up example circuits and calculating values using the simultaneous equation methods versus the &ldquo;new&rdquo; theorems to see if the answers coincide.</p>
