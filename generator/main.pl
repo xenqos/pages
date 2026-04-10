@@ -12,7 +12,7 @@ my @books =
   '1|dharma/principles|Принципы'
 , '0|dharma/questions|Вопросы'
 , '0|dharma/kriya|Крия'
-, '1|dharma/yoga|Йога-сутры'
+, '0|dharma/yoga|Йога-сутры'
 , '0|dharma/sankhya|Санкхья-карика'
 , '0|dharma/mantra|Мантры'
 , '1|dharma/samhita|Самхиты'
@@ -44,7 +44,7 @@ my @books =
 , '0|linguistics/en-verbs-phrasal|Phrasal Verbs'
 
 , '0|linguistics/de-phonetics|Phonetik'
-, '1|linguistics/de-grammar|Grammatik'
+, '0|linguistics/de-grammar|Grammatik'
 , '0|linguistics/de-words|Слова'
 , '0|linguistics/de-nouns|Существительные'
 , '0|linguistics/de-adverbs|Наречия'
@@ -52,13 +52,12 @@ my @books =
 , '0|linguistics/de-strong-verbs|Сильные глаголы'
 , '0|linguistics/de-conversations|Разговоры'
 
-, '1|linguistics/sa-outline|Outline'
+, '0|linguistics/sa-outline|Outline'
 
 , '0|linguistics/mystic-rhymes|Мистические рифмы'
 
 , '0|toolbox/mn-banknotes-eur|Banknotes EUR'
-, '1|toolbox/eu-standards|EU Standards'
-, '1|toolbox/em-electricity|Electricity'
+, '0|toolbox/eu-standards|EU Standards'
 
 , '0|games/principles|Texas Holdem Principles'
 , '0|games/mathresources|Resources'
