@@ -3,6 +3,7 @@
 .t01
 {
   color:                light-dark(#000000, #ffffff);
+  color:                light-dark(#006100, #c3ffc3);
   display:              inline-block;
   font-size:            1.200rem;
   font-weight:          400;
@@ -13,9 +14,10 @@
 .t02
 {
   color:                light-dark(#000000, #ffffff);
-  display:              inline-block;
+  color:                light-dark(#aa0000, #ffc3c3);
+  display:              inlin5e-block;
   font-size:            1.000rem;
-  font-weight:          500;
+  font-weight:          400;
   margin:               0.000rem 0.000rem 0.600rem 0.000rem;
   padding:              0.000rem 0.000rem 0.000rem 0.000rem;
 }
@@ -23,6 +25,7 @@
 .t11
 {
   color:                light-dark(#000000, #ffffff);
+  color:                light-dark(#006100, #c3ffc3);
   display:              inline-block;
   font-size:            1.200rem;
   font-weight:          400;
@@ -33,9 +36,10 @@
 .t12
 {
   color:                light-dark(#000000, #ffffff);
+  color:                light-dark(#aa0000, #ffc3c3);
   display:              inline-block;
   font-size:            1.000rem;
-  font-weight:          500;
+  font-weight:          400;
   margin:               0.000rem 0.000rem 0.600rem 0.000rem;
   padding:              0.000rem 0.000rem 0.000rem 0.000rem;
 }
@@ -53,6 +57,7 @@
 .t21
 {
   color:                light-dark(#000000, #ffffff);
+  color:                light-dark(#006100, #c3ffc3);
   display:              inline-block;
   font-size:            1.200rem;
   font-weight:          400;
@@ -63,9 +68,10 @@
 .t22
 {
   color:                light-dark(#000000, #ffffff);
+  color:                light-dark(#aa0000, #ffc3c3);
   display:              inline-block;
   font-size:            1.000rem;
-  font-weight:          500;
+  font-weight:          400;
   margin:               0.000rem 0.000rem 0.000rem 0.000rem;
   padding:              0.000rem 0.000rem 0.000rem 0.000rem;
 }
