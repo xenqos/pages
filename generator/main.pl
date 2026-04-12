@@ -54,7 +54,7 @@ my @books =
 
 , '0|linguistics/sa-outline|Outline'
 
-, '0|linguistics/mystic-rhymes|Мистические рифмы'
+, '1|linguistics/mystic-rhymes|Мистические рифмы'
 
 , '0|toolbox/mn-banknotes-eur|Banknotes EUR'
 , '0|toolbox/eu-standards|EU Standards'
