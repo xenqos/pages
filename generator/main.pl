@@ -9,14 +9,15 @@ use feature 'state';
 
 my @books =
 (
-  '1|dharma/principles|Принципы'
+  '0|dharma/principles|Принципы'
 , '0|dharma/questions|Вопросы'
 , '0|dharma/kriya|Крия'
-, '1|dharma/yoga|Йога-сутры'
+, '0|dharma/yoga|Йога-сутры'
 , '0|dharma/sankhya|Санкхья-карика'
 , '0|dharma/mantra|Мантры'
-, '1|dharma/samhita|Самхиты'
+, '0|dharma/samhita|Самхиты'
 , '0|dharma/upanishad|Упанишады'
+, '1|dharma/bhagavatgita|Бхагавад-гита'
 
 , '0|dao/daodejing|Дао Дэ Цзин'
 , '0|dao/stratagems|Стратагемы'
@@ -54,7 +55,7 @@ my @books =
 
 , '0|linguistics/sa-outline|Outline'
 
-, '1|linguistics/mystic-rhymes|Мистические рифмы'
+, '0|linguistics/mystic-rhymes|Мистические рифмы'
 
 , '0|toolbox/mn-banknotes-eur|Banknotes EUR'
 , '0|toolbox/eu-standards|EU Standards'
