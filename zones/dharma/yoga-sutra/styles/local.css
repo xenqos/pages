@@ -1,0 +1,84 @@
+/*-----------------------------------------------------------------------------------------------*/
+
+.t01
+{
+  color:                light-dark(#007800, #00b400);
+  display:              inline-block;
+  font-size:            1.200rem;
+  font-weight:          500;
+  margin:               0.600rem 0.000rem 0.600rem 0.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+}
+
+.t02
+{
+  color:                light-dark(#aa0000, #dc2f2f);
+  display:              inline-block;
+  font-size:            1.000rem;
+  font-weight:          400;
+  margin:               0.000rem 0.000rem 0.600rem 0.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+}
+
+.t11
+{
+  color:                light-dark(#007800, #00b400);
+  display:              inline-block;
+  font-size:            1.200rem;
+  font-weight:          500;
+  margin:               0.600rem 0.000rem 0.600rem 0.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+}
+
+.t12
+{
+  color:                light-dark(#aa0000, #dc2f2f);
+  display:              inline-block;
+  font-size:            1.000rem;
+  font-weight:          400;
+  margin:               0.000rem 0.000rem 0.600rem 0.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+}
+
+.t13
+{
+  color:                light-dark(#000000, #ffffff);
+  display:              inline-block;
+  font-size:            1.000rem;
+  font-weight:          400;
+  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+}
+
+.t21
+{
+  color:                light-dark(#007800, #00b400);
+  display:              inline-block;
+  font-size:            1.200rem;
+  font-weight:          500;
+  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+}
+
+.t22
+{
+  color:                light-dark(#aa0000, #dc2f2f);
+  display:              inline-block;
+  font-size:            1.000rem;
+  font-weight:          400;
+  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+}
+
+.t23
+{
+  color:                light-dark(#000000, #ffffff);
+  display:              inline-block;
+  font-size:            1.000rem;
+  font-weight:          400;
+  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+}
+
+
+/*-----------------------------------------------------------------------------------------------*/
