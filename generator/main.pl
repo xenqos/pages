@@ -12,7 +12,7 @@ my @books =
   '1|dharma/principles|Принципы'
 , '0|dharma/questions|Вопросы'
 , '0|dharma/kriya|Крия'
-, '0|dharma/yoga|Йога-сутры'
+, '1|dharma/yoga|Йога-сутры'
 , '0|dharma/sankhya|Санкхья-карика'
 , '0|dharma/mantra|Мантры'
 , '1|dharma/samhita|Самхиты'
@@ -212,7 +212,6 @@ sub get_markup
   #---------------------------------------------------------
 
   $text_content =~ s/&\[(.*?)\|(.*?)\]/<q class='$1'>$2<\/q>/g;
-# DONE
   $text_content =~ s/%\[(.*?)\|(.*?)\]/<span class='$1'>$2<\/span>/g;
   $text_content =~ s/s\[(.*?)\]/<small>$1<\/small>/g;
 
@@ -226,7 +225,6 @@ sub get_markup
   # Links
   #---------------------------------------------------------
 
-# DONE
   $text_content =~ s/\!\[(.*?)\|(.*?)\]/<a target='_blank' rel='noreferrer' class='clLinkBlue' href='$2'>$1<\/a>/g;
 
   #---------------------------------------------------------
