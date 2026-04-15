@@ -212,6 +212,7 @@ sub get_markup
   #---------------------------------------------------------
 
   $text_content =~ s/&\[(.*?)\|(.*?)\]/<q class='$1'>$2<\/q>/g;
+# DONE
   $text_content =~ s/%\[(.*?)\|(.*?)\]/<span class='$1'>$2<\/span>/g;
   $text_content =~ s/s\[(.*?)\]/<small>$1<\/small>/g;
 
@@ -222,10 +223,16 @@ sub get_markup
   $text_content =~ s/\# (.*?)\na\[(.*?)\]\n/<div id='idQuestion'>$1<\/div>\n<div id='idAnswer' onclick='fncRevealAnswer();'>$2<\/div>\n<script>fncHideHeading();<\/script>/g;
 
   #---------------------------------------------------------
+  # Links
+  #---------------------------------------------------------
+
+# DONE
+  $text_content =~ s/\!\[(.*?)\|(.*?)\]/<a target='_blank' rel='noreferrer' class='clLinkBlue' href='$2'>$1<\/a>/g;
+
+  #---------------------------------------------------------
   # Images
   #---------------------------------------------------------
 
-  $text_content =~ s/\!\[(.*?)\|(.*?)\]/<a target='_blank' rel='noreferrer' class='clLinkBlue' href='$2'>$1<\/a>/g;
   $text_content =~ s/\^\[(.*?)\]/<a target='_blank' href='\.\.\/images\/$1'><img class='clImageThumb' src='\.\.\/images\/$1'><\/a>/g;
   $text_content =~ s/\@\[(.*?)\]/<img src='\.\.\/images\/$1'>/g;
 
