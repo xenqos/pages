@@ -13,11 +13,11 @@ my @books =
 , '0|dharma/questions|Вопросы'
 , '0|dharma/kriya|Крия'
 , '1|dharma/yoga-sutra|Йога-сутры'
-, '0|dharma/sankhya-karika|Санкхья-карика'
+, '1|dharma/sankhya-karika|Санкхья-карика'
 , '0|dharma/mantra|Мантры'
 , '0|dharma/samhita|Самхиты'
 , '0|dharma/upanishad|Упанишады'
-, '1|dharma/bhagavad-gita|Бхагавад-гита'
+, '0|dharma/bhagavad-gita|Бхагавад-гита'
 
 , '0|dao/daodejing|Дао Дэ Цзин'
 , '0|dao/stratagems|Стратагемы'
@@ -54,7 +54,7 @@ my @books =
 , '0|linguistics/de-conversations|Разговоры'
 
 , '0|linguistics/sa-outline|Очерк'
-, '1|linguistics/sa-yoga-sutra|Йога-сутры'
+, '0|linguistics/sa-yoga-sutra|Йога-сутры'
 
 , '0|linguistics/mystic-rhymes|Мистические рифмы'
 
