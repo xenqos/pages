@@ -985,9 +985,19 @@ span[class^=clNav]:active
 
 /* red green blue */
 
+/*
 .r { color:             light-dark(#aa0000, #cc4444); }
 .g { color:             light-dark(#006600, #00cc00); }
 .b { color:             light-dark(#1a4dcc, #4d6dd4); }
+
+.r { color:             light-dark(#880000, #dc7474); }
+.g { color:             light-dark(#006600, #62a162); }
+.b { color:             light-dark(#1a3db8, #7e91cf); }
+*/
+
+.r { color:             light-dark(#880000, #e69c9c); }
+.g { color:             light-dark(#006600, #81b481); }
+.b { color:             light-dark(#1a3db8, #a3b0dc); }
 
 .x
 {
