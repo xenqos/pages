@@ -1076,7 +1076,6 @@ span[class^=clNav]:active
   font-weight:          300;
 }
 
-
 .x
 {
   color:                light-dark(#000000, #ffffff);
@@ -1090,6 +1089,17 @@ span[class^=clNav]:active
   color:                light-dark(#000000, #cccccc);
   margin:               0.000rem 0.000rem 1.000rem 1.000rem;
   padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+}
+
+/* Devanagari */
+.d
+{
+  color:                light-dark(#000000, #ffffff);
+  display:              inline-block;
+  font-size:            1.200rem;
+  font-weight:          500;
+  margin:               0.000rem 0.000rem 1.000rem 0.000rem !important;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem !important;
 }
 
 /*-----------------------------------------------------------------------------------------------*/
