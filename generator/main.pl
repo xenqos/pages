@@ -12,10 +12,10 @@ my @books =
   '0|dharma/principles|Принципы'
 , '0|dharma/questions|Вопросы'
 , '0|dharma/kriya|Крия'
-, '1|dharma/yoga-sutra|Йога-сутры'
-, '1|dharma/sankhya-karika|Санкхья-карика'
+, '0|dharma/yoga-sutra|Йога-сутры'
+, '0|dharma/sankhya-karika|Санкхья-карика'
 , '0|dharma/mantra|Мантры'
-, '0|dharma/samhita|Самхиты'
+, '1|dharma/samhita|Самхиты'
 , '0|dharma/upanishad|Упанишады'
 , '0|dharma/bhagavad-gita|Бхагавад-гита'
 
@@ -56,7 +56,7 @@ my @books =
 , '0|linguistics/sa-outline|Очерк'
 , '0|linguistics/sa-yoga-sutra|Йога-сутры'
 
-, '0|linguistics/mystic-rhymes|Мистические рифмы'
+, '1|linguistics/ru-rhymes|Мистические рифмы'
 
 , '0|toolbox/mn-banknotes-eur|Banknotes EUR'
 , '0|toolbox/eu-standards|EU Standards'
