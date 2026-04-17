@@ -3,6 +3,7 @@
 .t1
 {
   color:                light-dark(#007800, #00b400);
+  color:                light-dark(#000000, #ffffff);
   display:              inline-block;
   font-size:            1.200rem;
   font-weight:          500;
@@ -13,6 +14,7 @@
 .t2
 {
   color:                light-dark(#aa0000, #dc2f2f);
+  color:                light-dark(#000000, #ffffff);
   display:              inline-block;
   font-size:            1.000rem;
   font-weight:          400;

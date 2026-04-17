@@ -3,6 +3,7 @@
 .t01
 {
   color:                light-dark(#007800, #00b400);
+  color:                light-dark(#000000, #ffffff);
   display:              inline-block;
   font-size:            1.200rem;
   font-weight:          500;
@@ -13,6 +14,7 @@
 .t02
 {
   color:                light-dark(#aa0000, #dc2f2f);
+  color:                light-dark(#000000, #ffffff);
   display:              inline-block;
   font-size:            1.000rem;
   font-weight:          400;
@@ -23,6 +25,7 @@
 .t11
 {
   color:                light-dark(#007800, #00b400);
+  color:                light-dark(#000000, #ffffff);
   display:              inline-block;
   font-size:            1.200rem;
   font-weight:          500;
@@ -33,6 +36,7 @@
 .t12
 {
   color:                light-dark(#aa0000, #dc2f2f);
+  color:                light-dark(#000000, #ffffff);
   display:              inline-block;
   font-size:            1.000rem;
   font-weight:          400;
@@ -53,6 +57,7 @@
 .t21
 {
   color:                light-dark(#007800, #00b400);
+  color:                light-dark(#000000, #ffffff);
   display:              inline-block;
   font-size:            1.200rem;
   font-weight:          500;
@@ -63,6 +68,7 @@
 .t22
 {
   color:                light-dark(#aa0000, #dc2f2f);
+  color:                light-dark(#000000, #ffffff);
   display:              inline-block;
   font-size:            1.000rem;
   font-weight:          400;
