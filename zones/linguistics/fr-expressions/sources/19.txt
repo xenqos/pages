@@ -1,0 +1,29 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
+quel temps fait-il ?
+il fait bon
+il fait mauvais
+il fait frais
+il fait froid
+il fait chaud
+il fait nuageux
+il fait beau
+il fait doux
+il fait orageux
+il fait soleil
+il fait humide
+il fait lourd
+il fait du vent
+il fait du brouillard
+il neige
+il pleut
+il gèle
+il grêle
+il fait ____ degrés.
+il pleut des cordes
+il caille
+ça caille
+</prosody>
+</voice>
+</speak>

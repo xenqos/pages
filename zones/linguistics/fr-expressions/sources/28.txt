@@ -1,0 +1,14 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
+Je voudrais prendre du fromage, mais pas de fruit.
+Il prend de la viande.
+Nous prenons du riz et des brocolis.
+Il y a trop de lait dans la tasse.
+Je voudrais un morceau de tarte.
+Est-ce que je peux prendre un verre de vin ?
+Je prends du vin.
+Je ne prends pas de vin.
+</prosody>
+</voice>
+</speak>

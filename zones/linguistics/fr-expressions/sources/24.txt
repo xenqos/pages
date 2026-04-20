@@ -1,0 +1,19 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
+Allô, est-ce que je pourrais parler à... ?
+C'est de la part de qui ?
+Qui est à l'appareil ?
+Un instant, s'il vous plaît.
+Ne quittez pas.
+Je vous la passe.
+Il ne répond pas.
+Il n'est pas là.
+Est-ce que vous voulez laisser un message ?
+Pouvez-vous rappeler plus tard ?
+La ligne est occupée.
+Vous vous êtes trompé(e)(s) de numéro.
+Je me suis trompé(e) de numéro.
+</prosody>
+</voice>
+</speak>

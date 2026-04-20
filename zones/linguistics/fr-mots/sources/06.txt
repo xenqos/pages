@@ -1,0 +1,32 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-30%" pitch="low" volume="medium">
+rouge
+orange
+jaune
+vert
+bleu
+violet
+
+noir
+blanc
+blanche
+gris
+
+rose
+pourpre
+brun
+
+roux
+rousse
+
+d'or
+doré
+argent
+argenté
+
+clair
+foncé
+</prosody>
+</voice>
+</speak>
