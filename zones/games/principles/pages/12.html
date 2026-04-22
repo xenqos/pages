@@ -15,7 +15,8 @@
   <link rel='stylesheet' media='screen' href='../styles/local.css'>
   <script defer src='../../../../scripts/global.js'></script>
   <script defer src='../scripts/local.js'></script>
-  
+  <script>MathJax={tex: {inlineMath: [['$', '$'], ['((', '))']], processEscapes: true}};</script>
+  <script id='MathJax-script' async src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'></script>
 </head>
 <body onload='fncGetDivState(); fncGetScrollPosition();'>
 <audio id='idTrack' src='../sounds/12.mp3' preload='auto'></audio>
@@ -32,6 +33,89 @@
 </div>
 <div id='idContent'>
 
+<h6>Game</h6>
+
+<h1>Betting Rounds</h1>
+
+<h2>Pre-Flop</h2>
+<blockquote>
+'Big Blind' is 'Live Blind'<br>
+'Small Blind' places small blind<br>
+'Big Blind' places big blind<br>
+'Dealer' deal 'Hole Cards' starting from left<br>
+Each player clockwise places: 'Fold' / 'Call' / 'Raise'<br>
+If no raise has been made, 'Big Blind' may 'Check' when action returns to them<br>
+If a raise has been made, 'Big Blind' may 'Fold' / 'Call' / 'Raise'<br>
+</blockquote>
+
+<ul>
+<li>'Big Blind' = 2 x 'Small Blind'</li>
+<li>'Call' = 'Big Blind'</li>
+<li>Minimum opening raise = 2 x 'Big Blind'</li>
+<li>Any subsequent raise must be at least the size of the previous raise</li>
+</ul>
+
+<h2>Flop</h2>
+<blockquote>
+'Dealer' burns top card<br>
+'Dealer' deals 'Flop Community Cards' (3 cards)<br>
+'Small Blind' acts first: 'Fold' / 'Check' / 'Bet'<br>
+Each player clockwise: 'Fold' / 'Check' / 'Bet' / 'Call' / 'Raise'<br>
+'Check-Raise' is allowed<br>
+</blockquote>
+
+<h2>Turn</h2>
+<blockquote>
+'Dealer' burns top card<br>
+'Dealer' deals 'Turn Community Card' - 'Fourth Street' (1 card)<br>
+'Small Blind' acts first: 'Fold' / 'Check' / 'Bet'<br>
+Each player clockwise: 'Fold' / 'Check' / 'Bet' / 'Call' / 'Raise'<br>
+'Check-Raise' is allowed<br>
+</blockquote>
+
+<h2>River</h2>
+<blockquote>
+'Dealer' burns top card<br>
+'Dealer' deals 'River Community Card' - 'Fifth Street' (1 card)<br>
+'Small Blind' acts first: 'Fold' / 'Check' / 'Bet'<br>
+Each player clockwise: 'Fold' / 'Check' / 'Bet' / 'Call' / 'Raise'<br>
+'Check-Raise' is allowed<br>
+</blockquote>
+
+<h2>Showdown</h2>
+<blockquote>
+All players still in hand reveal 'Hole Cards'<br>
+The best five-card 'Hand' using any combination of hole cards and community cards wins<br>
+If all remaining players fold except one, no showdown occurs<br>
+</blockquote>
+
+<h3>Raise & Re-raise</h3>
+
+<blockquote>
+Minimum raise = size of the last bet or raise<br>
+Example: Bet $10 → minimum raise = $20 total ($10 more)<br>
+</blockquote>
+
+<span class='b'>IF</span><br>
+<div class='if-then-else'>  'Player' raises / re-raises</div>
+<span class='b'>THEN</span><br>
+<div class='if-then-else'>  All 'Players' starting from his left clockwise must match 'Raise' / 'Re-raise' or fold</div>
+  Betting stops when action returns to the player who made the last raise and all others have folded or called<br>
+<div class='b'>ENDIF</div>
+
+<br>
+<span class='b'>IF</span><br>
+<div class='if-then-else'>  'Players' >= 3 in 'Hand'</div>
+<span class='b'>THEN</span><br>
+<div class='if-then-else'>  3-4 'Raise' / 'Re-raise' maximum (casino dependent)</div>
+<span class='b'>ELSE IF</span><br>
+<div class='if-then-else'>  'Players' = 2 in 'Hand'</div>
+<span class='b'>THEN</span><br>
+<div class='if-then-else'>  'Raise' / 'Re-raise' unlimited (most casinos)</div>
+<div class='b'>ENDIF</div>
+
+<br>
+<!--
 <h6>Game</h6>
 
 <h1>Betting Rounds</h1>
@@ -106,6 +190,7 @@ The best 'Hand' wins<br>
 <div class='if-then-else'>  'Raise' / 'Re-raise' - not limited</div>
 <div class='b'>ENDIF</div>
 
+-->
 
 
 </div>

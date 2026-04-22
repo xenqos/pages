@@ -9,6 +9,87 @@
 'Big Blind' places big blind
 'Dealer' deal 'Hole Cards' starting from left
 Each player clockwise places: 'Fold' / 'Call' / 'Raise'
+If no raise has been made, 'Big Blind' may 'Check' when action returns to them
+If a raise has been made, 'Big Blind' may 'Fold' / 'Call' / 'Raise'
+!]
+
+[-
+'Big Blind' = 2 x 'Small Blind'
+'Call' = 'Big Blind'
+Minimum opening raise = 2 x 'Big Blind'
+Any subsequent raise must be at least the size of the previous raise
+-]
+
+## Flop
+[!
+'Dealer' burns top card
+'Dealer' deals 'Flop Community Cards' (3 cards)
+'Small Blind' acts first: 'Fold' / 'Check' / 'Bet'
+Each player clockwise: 'Fold' / 'Check' / 'Bet' / 'Call' / 'Raise'
+'Check-Raise' is allowed
+!]
+
+## Turn
+[!
+'Dealer' burns top card
+'Dealer' deals 'Turn Community Card' - 'Fourth Street' (1 card)
+'Small Blind' acts first: 'Fold' / 'Check' / 'Bet'
+Each player clockwise: 'Fold' / 'Check' / 'Bet' / 'Call' / 'Raise'
+'Check-Raise' is allowed
+!]
+
+## River
+[!
+'Dealer' burns top card
+'Dealer' deals 'River Community Card' - 'Fifth Street' (1 card)
+'Small Blind' acts first: 'Fold' / 'Check' / 'Bet'
+Each player clockwise: 'Fold' / 'Check' / 'Bet' / 'Call' / 'Raise'
+'Check-Raise' is allowed
+!]
+
+## Showdown
+[!
+All players still in hand reveal 'Hole Cards'
+The best five-card 'Hand' using any combination of hole cards and community cards wins
+If all remaining players fold except one, no showdown occurs
+!]
+
+### Raise & Re-raise
+
+[!
+Minimum raise = size of the last bet or raise
+Example: Bet $10 → minimum raise = $20 total ($10 more)
+!]
+
+if
+  'Player' raises / re-raises
+then
+  All 'Players' starting from his left clockwise must match 'Raise' / 'Re-raise' or fold
+  Betting stops when action returns to the player who made the last raise and all others have folded or called
+endif
+
+if
+  'Players' >= 3 in 'Hand'
+then
+  3-4 'Raise' / 'Re-raise' maximum (casino dependent)
+elseif
+  'Players' = 2 in 'Hand'
+then
+  'Raise' / 'Re-raise' unlimited (most casinos)
+endif
+
+<!--
+###### Game
+
+# Betting Rounds
+
+## Pre-Flop
+[!
+'Big Blind' is 'Live Blind'
+'Small Blind' places small blind
+'Big Blind' places big blind
+'Dealer' deal 'Hole Cards' starting from left
+Each player clockwise places: 'Fold' / 'Call' / 'Raise'
 At 'Big Blind' 'Dealer' asks 'Option?'
 'Big Blind' may 'Check' (if nobody Raised)
 'Big Blind' may 'Call'  (if somebody Raised)
@@ -70,3 +151,4 @@ elseif
 else
   'Raise' / 'Re-raise' - not limited
 endif
+-->

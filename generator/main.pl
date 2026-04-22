@@ -15,7 +15,7 @@ my @books =
 , '0|dharma/yoga-sutra|Йога-сутры'
 , '0|dharma/sankhya-karika|Санкхья-карика'
 , '0|dharma/mantra|Мантры'
-, '1|dharma/samhita|Самхиты'
+, '0|dharma/samhita|Самхиты'
 , '0|dharma/upanishad|Упанишады'
 , '0|dharma/bhagavad-gita|Бхагавад-гита'
 
@@ -61,7 +61,7 @@ my @books =
 , '0|toolbox/mn-banknotes-eur|Banknotes EUR'
 , '0|toolbox/eu-standards|EU Standards'
 
-, '0|games/principles|Texas Holdem Principles'
+, '1|games/principles|Texas Holdem Principles'
 , '0|games/mathresources|Resources'
 );
 
