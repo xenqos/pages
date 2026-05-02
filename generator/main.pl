@@ -70,13 +70,13 @@ my @books =
 my $dir_prefix       = '../zones';
 my $dir_templates    = './templates';
 my $dir_name_pages   = 'pages';
-my $dir_name_texts   = 'texts';
+my $dir_name_sources = 'sources';
 my $dir_name_sounds  = 'sounds';
 my $file_name_index  = 'index.html';
 my $file_name_page   = 'page.html';
 
 my $ext_html         = 'html';
-my $ext_text         = 'txt';
+my $ext_markdown     = 'md';
 my $ext_sound        = '';
 my @ext_codecs       = ('opus', 'aac', 'm4a', 'mp3');
 my $ext_image        = 'jpg';
@@ -106,7 +106,7 @@ sub get_template
 
 sub get_markup
 {
-  my ($text_content) = @_;
+  my ($source_content) = @_;
 
   #---------------------------------------------------------
   # Debugging
@@ -114,7 +114,7 @@ sub get_markup
 
   # my $file_debug = "/home/lux/mnt/data/Temp/debug.txt";
   # open(my $file_handle_debug, '>', $file_debug) or die ">>> No File '$file_debug': $!";
-  # print $file_handle_debug $text_content;
+  # print $file_handle_debug $source_content;
   # close($file_handle_debug);
 
   #---------------------------------------------------------
@@ -123,15 +123,15 @@ sub get_markup
   # Add LF at ^ and $
   #---------------------------------------------------------
 
-  $text_content = "\n${text_content}\n";
+  $source_content = "\n${source_content}\n";
 
   #---------------------------------------------------------
   # Quotes
   #---------------------------------------------------------
 
-  $text_content =~ s/"/&quot;/g;
-#  $text_content =~ s/'/&apos;/g;
-#  $text_content =~ s/`/&grave;/g;
+  $source_content =~ s/"/&quot;/g;
+#  $source_content =~ s/'/&apos;/g;
+#  $source_content =~ s/`/&grave;/g;
 
   #---------------------------------------------------------
   # Unordered List
@@ -144,7 +144,7 @@ sub get_markup
     my $callback_return = "<ul>\n${matched}\n</ul>";
     return $callback_return;
   };
-  $text_content =~ s/\[\-\n(.*?)\n\-\]/$callback_01->($1)/esg;
+  $source_content =~ s/\[\-\n(.*?)\n\-\]/$callback_01->($1)/esg;
 
   #---------------------------------------------------------
   # Ordered List
@@ -157,7 +157,7 @@ sub get_markup
     my $callback_return = "<ol>\n${matched}\n</ol>";
     return $callback_return;
   };
-  $text_content =~ s/\[\+\n(.*?)\n\+\]/$callback_02->($1)/esg;
+  $source_content =~ s/\[\+\n(.*?)\n\+\]/$callback_02->($1)/esg;
 
   #---------------------------------------------------------
   # Pre
@@ -170,7 +170,7 @@ sub get_markup
     my $callback_return = "<pre>${matched}</pre>";
     return $callback_return;
   };
-  $text_content =~ s/\[\*\n(.*?)\n\*\]/$callback_03->($1)/esg;
+  $source_content =~ s/\[\*\n(.*?)\n\*\]/$callback_03->($1)/esg;
 
   #---------------------------------------------------------
   # Pre Code
@@ -183,7 +183,7 @@ sub get_markup
     my $callback_return = "<pre><code>${matched}</code></pre>";
     return $callback_return;
   };
-  $text_content =~ s/\[\?\n(.*?)\n\?\]/$callback_04->($1)/esg;
+  $source_content =~ s/\[\?\n(.*?)\n\?\]/$callback_04->($1)/esg;
 
   #---------------------------------------------------------
   # Blockquote
@@ -195,7 +195,7 @@ sub get_markup
     my $callback_return = "<blockquote>\n${matched}\n</blockquote>";
     return $callback_return;
   };
-  $text_content =~ s/\[\!\n(.*?)\n\!\]/$callback_05->($1)/esg;
+  $source_content =~ s/\[\!\n(.*?)\n\!\]/$callback_05->($1)/esg;
 
   #---------------------------------------------------------
   # Details
@@ -207,34 +207,34 @@ sub get_markup
     my $callback_return = "<details><summary>${matched_1}</summary>${matched_2}</details>";
     return $callback_return;
   };
-  $text_content =~ s/\[\@ \((.*?)\)\n(.*?)\n\@\]/$callback_06->($1, $2)/esg;
+  $source_content =~ s/\[\@ \((.*?)\)\n(.*?)\n\@\]/$callback_06->($1, $2)/esg;
 
   #---------------------------------------------------------
   # Styles
   #---------------------------------------------------------
 
-  $text_content =~ s/&\[(.*?)\|(.*?)\]/<q class='$1'>$2<\/q>/g;
-  $text_content =~ s/%\[(.*?)\|(.*?)\]/<span class='$1'>$2<\/span>/g;
-  $text_content =~ s/s\[(.*?)\]/<small>$1<\/small>/g;
+  $source_content =~ s/&\[(.*?)\|(.*?)\]/<q class='$1'>$2<\/q>/g;
+  $source_content =~ s/%\[(.*?)\|(.*?)\]/<span class='$1'>$2<\/span>/g;
+  $source_content =~ s/s\[(.*?)\]/<small>$1<\/small>/g;
 
   #---------------------------------------------------------
   # Pseudo Anki
   #---------------------------------------------------------
 
-  $text_content =~ s/\# (.*?)\na\[(.*?)\]\n/<div id='idQuestion'>$1<\/div>\n<div id='idAnswer' onclick='fncRevealAnswer();'>$2<\/div>\n<script>fncHideHeading();<\/script>/g;
+  $source_content =~ s/\# (.*?)\na\[(.*?)\]\n/<div id='idQuestion'>$1<\/div>\n<div id='idAnswer' onclick='fncRevealAnswer();'>$2<\/div>\n<script>fncHideHeading();<\/script>/g;
 
   #---------------------------------------------------------
   # Links
   #---------------------------------------------------------
 
-  $text_content =~ s/\!\[(.*?)\|(.*?)\]/<a target='_blank' rel='noreferrer' class='clLinkBlue' href='$2'>$1<\/a>/g;
+  $source_content =~ s/\!\[(.*?)\|(.*?)\]/<a target='_blank' rel='noreferrer' class='clLinkBlue' href='$2'>$1<\/a>/g;
 
   #---------------------------------------------------------
   # Images
   #---------------------------------------------------------
 
-  $text_content =~ s/\^\[(.*?)\]/<a target='_blank' href='\.\.\/images\/$1'><img class='clImageThumb' src='\.\.\/images\/$1'><\/a>/g;
-  $text_content =~ s/\@\[(.*?)\]/<img src='\.\.\/images\/$1'>/g;
+  $source_content =~ s/\^\[(.*?)\]/<a target='_blank' href='\.\.\/images\/$1'><img class='clImageThumb' src='\.\.\/images\/$1'><\/a>/g;
+  $source_content =~ s/\@\[(.*?)\]/<img src='\.\.\/images\/$1'>/g;
 
   #---------------------------------------------------------
   # Audio
@@ -247,7 +247,7 @@ sub get_markup
     $callback_return .= "<span class='clAudio'><span class='clNavRewind' onclick='fncRewindTrack(&quot;${matched}&quot;)'></span><span class='clNavPlay' onclick='fncPlayTrack(&quot;${matched}&quot;)'></span></span>";
     return $callback_return;
   };
-  $text_content =~ s/\*\[(.*?)\]/$callback_07->($1)/esg;
+  $source_content =~ s/\*\[(.*?)\]/$callback_07->($1)/esg;
 
   #---------------------------------------------------------
   # Video
@@ -260,7 +260,7 @@ sub get_markup
     $callback_return .= "<div class='clVideo'><span class='clNavRewind' onclick='fncRewindTrack(&quot;${matched_1}&quot;)'></span><span class='clNavPlay' onclick='fncPlayTrack(&quot;${matched_1}&quot;)'></span></div>";
     return $callback_return;
   };
-  $text_content =~ s/=\[(.*?),(.*?)\]/$callback_08->($1, $2)/esg;
+  $source_content =~ s/=\[(.*?),(.*?)\]/$callback_08->($1, $2)/esg;
 
   #---------------------------------------------------------
   # Table ¦ U00A6
@@ -277,7 +277,7 @@ sub get_markup
     my $callback_return = "<div class='clOverflow'><table>${matched}</table></div>";
     return $callback_return;
   };
-  $text_content =~ s/\[\|\n(.*?)\n\|\]/$callback_09->($1)/esg;
+  $source_content =~ s/\[\|\n(.*?)\n\|\]/$callback_09->($1)/esg;
 
   my $callback_10 = sub
   {
@@ -290,148 +290,148 @@ sub get_markup
     my $callback_return = "<div class='clOverflow'><table class='clNoBorder'>${matched}</table></div>";
     return $callback_return;
   };
-  $text_content =~ s/\[\|\-\n(.*?)\n\|\]/$callback_10->($1)/esg;
+  $source_content =~ s/\[\|\-\n(.*?)\n\|\]/$callback_10->($1)/esg;
 
   #---------------------------------------------------------
   # If Then Elsif Else
   #---------------------------------------------------------
 
-  $text_content =~ s/^if\n(.*?)\n/<span class='b'>IF<\/span>\n<div class='if-then-else'>$1<\/div>\n/mg;
-  $text_content =~ s/^then\n(.*?)\n/<span class='b'>THEN<\/span>\n<div class='if-then-else'>$1<\/div>\n/mg;
-  $text_content =~ s/^elseif\n(.*?)\n/<span class='b'>ELSE IF<\/span>\n<div class='if-then-else'>$1<\/div>\n/mg;
-  $text_content =~ s/^else\n(.*?)\n/<span class='b'>ELSE<\/span>\n<div class='if-then-else'>$1<\/div>\n/mg;
-  $text_content =~ s/^endif\n/<div class='b'>ENDIF<\/div>\n\n\n/mg;
+  $source_content =~ s/^if\n(.*?)\n/<span class='b'>IF<\/span>\n<div class='if-then-else'>$1<\/div>\n/mg;
+  $source_content =~ s/^then\n(.*?)\n/<span class='b'>THEN<\/span>\n<div class='if-then-else'>$1<\/div>\n/mg;
+  $source_content =~ s/^elseif\n(.*?)\n/<span class='b'>ELSE IF<\/span>\n<div class='if-then-else'>$1<\/div>\n/mg;
+  $source_content =~ s/^else\n(.*?)\n/<span class='b'>ELSE<\/span>\n<div class='if-then-else'>$1<\/div>\n/mg;
+  $source_content =~ s/^endif\n/<div class='b'>ENDIF<\/div>\n\n\n/mg;
 
   #---------------------------------------------------------
   # Bold and Italic
   #---------------------------------------------------------
 
-  $text_content =~ s/\*{2}(.*?)\*{2}/<b>$1<\/b>/g;
-  $text_content =~ s/\_{2}(.*?)\_{2}/<i>$1<\/i>/g;
+  $source_content =~ s/\*{2}(.*?)\*{2}/<b>$1<\/b>/g;
+  $source_content =~ s/\_{2}(.*?)\_{2}/<i>$1<\/i>/g;
 
   #---------------------------------------------------------
   # Horizontal Line
   #---------------------------------------------------------
 
-  $text_content =~ s/\n-{3,}?\n/\n<hr class='clHr'>\n/g;
+  $source_content =~ s/\n-{3,}?\n/\n<hr class='clHr'>\n/g;
 
   #---------------------------------------------------------
   # Headers
   #---------------------------------------------------------
 
-  $text_content =~ s/^###### (.*?) ######\n//mg;
-  $text_content =~ s/^##### (.*?) #####\n//mg;
-  $text_content =~ s/^#### (.*?) ####\n//mg;
-  $text_content =~ s/^### (.*?) ###\n//mg;
-  $text_content =~ s/^## (.*?) ##\n//mg;
-  $text_content =~ s/^# (.*?) #\n//mg;
+  $source_content =~ s/^###### (.*?) ######\n//mg;
+  $source_content =~ s/^##### (.*?) #####\n//mg;
+  $source_content =~ s/^#### (.*?) ####\n//mg;
+  $source_content =~ s/^### (.*?) ###\n//mg;
+  $source_content =~ s/^## (.*?) ##\n//mg;
+  $source_content =~ s/^# (.*?) #\n//mg;
 
-  $text_content =~ s/^###### (.*?)$/<h6>$1<\/h6>/mg;
-  $text_content =~ s/^##### (.*?)$/<h5>$1<\/h5>/mg;
-  $text_content =~ s/^#### (.*?)$/<h4>$1<\/h4>/mg;
-  $text_content =~ s/^### (.*?)$/<h3>$1<\/h3>/mg;
-  $text_content =~ s/^## (.*?)$/<h2>$1<\/h2>/mg;
-  $text_content =~ s/^# (.*?)$/<h1>$1<\/h1>/mg;
+  $source_content =~ s/^###### (.*?)$/<h6>$1<\/h6>/mg;
+  $source_content =~ s/^##### (.*?)$/<h5>$1<\/h5>/mg;
+  $source_content =~ s/^#### (.*?)$/<h4>$1<\/h4>/mg;
+  $source_content =~ s/^### (.*?)$/<h3>$1<\/h3>/mg;
+  $source_content =~ s/^## (.*?)$/<h2>$1<\/h2>/mg;
+  $source_content =~ s/^# (.*?)$/<h1>$1<\/h1>/mg;
 
   #---------------------------------------------------------
   # Padding
   #---------------------------------------------------------
 
-  $text_content =~ s/^>>> (.*)$/&ensp;&ensp;&ensp;$1/mg;
-  $text_content =~ s/^>> (.*)$/&ensp;&ensp;$1/mg;
-  $text_content =~ s/^> (.*)$/&ensp;$1/mg;
+  $source_content =~ s/^>>> (.*)$/&ensp;&ensp;&ensp;$1/mg;
+  $source_content =~ s/^>> (.*)$/&ensp;&ensp;$1/mg;
+  $source_content =~ s/^> (.*)$/&ensp;$1/mg;
 
   #---------------------------------------------------------
   # Linguistics Styles
   #---------------------------------------------------------
 
-  $text_content =~ s/^\|(.*?)\|(.*?)\|(.*?)$/<p class='r'>$1<\/p><p class='x'>$2<\/p><p class='y'>$3<\/p>\n/mg;
-  $text_content =~ s/^\|\|(.*?)\|(.*?)\|(.*?)$/<p class='r'>$1<\/p><p class='x'>$2<\/p><p class='y'>$3<\/p>\n/mg;
-  $text_content =~ s/\|\|(.*?)\n(.*?)\n/<p class='r'>$1<\/p><p class='y'>$2<\/p>\n/mg;
-  $text_content =~ s/^\|(.*?)\/(.*?)\/(\s*)\|(.*?)\|(.*?)$/<p class='r'>$1 <span class='f'>$2<\/span><\/p><p class='x'>$4<\/p><p class='y'>$5<\/p>\n/mg;
+  $source_content =~ s/^\|(.*?)\|(.*?)\|(.*?)$/<p class='r'>$1<\/p><p class='x'>$2<\/p><p class='y'>$3<\/p>\n/mg;
+  $source_content =~ s/^\|\|(.*?)\|(.*?)\|(.*?)$/<p class='r'>$1<\/p><p class='x'>$2<\/p><p class='y'>$3<\/p>\n/mg;
+  $source_content =~ s/\|\|(.*?)\n(.*?)\n/<p class='r'>$1<\/p><p class='y'>$2<\/p>\n/mg;
+  $source_content =~ s/^\|(.*?)\/(.*?)\/(\s*)\|(.*?)\|(.*?)$/<p class='r'>$1 <span class='f'>$2<\/span><\/p><p class='x'>$4<\/p><p class='y'>$5<\/p>\n/mg;
 
   #---------------------------------------------------------
   # Mathjax
   #---------------------------------------------------------
 
-  $text_content =~ s/\[\$(.*?)\$\]/<div class='clOverflow'>\n\$\$$1\$\$\n<\/div>/sg;
-  $text_content =~ s/\n\$<br>\n<br>/\n\$\n/sg;
-  $text_content =~ s/\n\$<br>/\n\$/sg;
-  $text_content =~ s/\n<\/div><br>\n<br>/\n<\/div>\n/sg;
-  $text_content =~ s/\n<\/div><br>/\n<\/div>\n/sg;
+  $source_content =~ s/\[\$(.*?)\$\]/<div class='clOverflow'>\n\$\$$1\$\$\n<\/div>/sg;
+  $source_content =~ s/\n\$<br>\n<br>/\n\$\n/sg;
+  $source_content =~ s/\n\$<br>/\n\$/sg;
+  $source_content =~ s/\n<\/div><br>\n<br>/\n<\/div>\n/sg;
+  $source_content =~ s/\n<\/div><br>/\n<\/div>\n/sg;
 
   #---------------------------------------------------------
   # Cleaning
   #---------------------------------------------------------
 
-  $text_content =~ s/^\n(.*?)\n$/$1/s;
-  $text_content =~ s/\n/<br>\n/g;
+  $source_content =~ s/^\n(.*?)\n$/$1/s;
+  $source_content =~ s/\n/<br>\n/g;
 
-  $text_content =~ s/<br>\n<ul>/\n<ul>/sg;
-  $text_content =~ s/<br>\n<ol>/\n<ol>/sg;
+  $source_content =~ s/<br>\n<ul>/\n<ul>/sg;
+  $source_content =~ s/<br>\n<ol>/\n<ol>/sg;
 
-  $text_content =~ s/<ul><br>/<ul>/sg;
-  $text_content =~ s/<ol><br>/<ol>/sg;
+  $source_content =~ s/<ul><br>/<ul>/sg;
+  $source_content =~ s/<ol><br>/<ol>/sg;
 
-  $text_content =~ s/<\/li><br>/<\/li>/sg;
+  $source_content =~ s/<\/li><br>/<\/li>/sg;
 
-  $text_content =~ s/<\/ul><br>\n<br>/<\/ul>\n/g;
-  $text_content =~ s/<\/ul><br>/<\/ul>\n/g;
-  $text_content =~ s/<\/ol><br>\n<br>/<\/ol>\n/g;
-  $text_content =~ s/<\/ol><br>/<\/ol>\n/g;
+  $source_content =~ s/<\/ul><br>\n<br>/<\/ul>\n/g;
+  $source_content =~ s/<\/ul><br>/<\/ul>\n/g;
+  $source_content =~ s/<\/ol><br>\n<br>/<\/ol>\n/g;
+  $source_content =~ s/<\/ol><br>/<\/ol>\n/g;
 
-  $text_content =~ s/<\/pre><br>/<\/pre>\n/g;
+  $source_content =~ s/<\/pre><br>/<\/pre>\n/g;
 
-  $text_content =~ s/<br>\n<div class=\'clOver/<br>\n<div class=\'clOver/g;
-  $text_content =~ s/<\/tr><br>/<\/tr>/g;
-  $text_content =~ s/<table><tr>/\n<table>\n<tr>\n/g;
-  $text_content =~ s/<\/table><\/div><br>/\n<\/table>\n<\/div>\n/g;
+  $source_content =~ s/<br>\n<div class=\'clOver/<br>\n<div class=\'clOver/g;
+  $source_content =~ s/<\/tr><br>/<\/tr>/g;
+  $source_content =~ s/<table><tr>/\n<table>\n<tr>\n/g;
+  $source_content =~ s/<\/table><\/div><br>/\n<\/table>\n<\/div>\n/g;
 
-  $text_content =~ s/<br>\n<h/\n<h/g;
-  $text_content =~ s/([1-6])><br>\n<br>/$1>\n/g;
-  $text_content =~ s/([1-6])><br>/$1>/g;
+  $source_content =~ s/<br>\n<h/\n<h/g;
+  $source_content =~ s/([1-6])><br>\n<br>/$1>\n/g;
+  $source_content =~ s/([1-6])><br>/$1>/g;
 
-  $text_content =~ s/clHr\'>(\n+)<br>/clHr'>\n/g;
-  $text_content =~ s/clHr\'><br>/clHr'>\n/g;
+  $source_content =~ s/clHr\'>(\n+)<br>/clHr'>\n/g;
+  $source_content =~ s/clHr\'><br>/clHr'>\n/g;
 
-  $text_content =~ s/REMOVE_PRECODE<br>//g;
-  $text_content =~ s/REMOVE_BR<br>//g;
+  $source_content =~ s/REMOVE_PRECODE<br>//g;
+  $source_content =~ s/REMOVE_BR<br>//g;
 
-  $text_content =~ s/<\/details><br>/<\/details>\n/g;
+  $source_content =~ s/<\/details><br>/<\/details>\n/g;
 
-  $text_content =~ s/<\/div><br>\n<br>/<\/div>\n/g;
-  $text_content =~ s/<\/div>\n\n<br>/<\/div>\n/g;
-  $text_content =~ s/<\/div><br>\n/<\/div>\n/g;
-  $text_content =~ s/<\/blockquote><br>\n<br>/<\/blockquote>\n/g;
-  $text_content =~ s/<\/blockquote><br>/<\/blockquote>/g;
-  $text_content =~ s/<br>\n<blockquote>/\n<blockquote>/g;
-  $text_content =~ s/<blockquote><br>/<blockquote>/g;
-  $text_content =~ s/<br>\n<pre>/\n<pre>/g;
-  $text_content =~ s/<\/pre>\n\n<br>/<\/pre>\n/g;
-  $text_content =~ s/<\/p><br>\n<br>/<\/p>/g;
-  $text_content =~ s/<\/p><br>/<\/p>/g;
-  $text_content =~ s/<\/a><br>\n<br>/<\/a><br>\n/g;
-#  $text_content =~ s/<br>\n<br>/<br>\n/g;
-  $text_content =~ s/--><br>/-->/g;
-  $text_content =~ s/-->\n<br>/-->/g;
-  $text_content =~ s/\$\$<br>/\$\$/g;
-  $text_content =~ s/<div class='clOverflow'><br>/<div class='clOverflow'>/g;
+  $source_content =~ s/<\/div><br>\n<br>/<\/div>\n/g;
+  $source_content =~ s/<\/div>\n\n<br>/<\/div>\n/g;
+  $source_content =~ s/<\/div><br>\n/<\/div>\n/g;
+  $source_content =~ s/<\/blockquote><br>\n<br>/<\/blockquote>\n/g;
+  $source_content =~ s/<\/blockquote><br>/<\/blockquote>/g;
+  $source_content =~ s/<br>\n<blockquote>/\n<blockquote>/g;
+  $source_content =~ s/<blockquote><br>/<blockquote>/g;
+  $source_content =~ s/<br>\n<pre>/\n<pre>/g;
+  $source_content =~ s/<\/pre>\n\n<br>/<\/pre>\n/g;
+  $source_content =~ s/<\/p><br>\n<br>/<\/p>/g;
+  $source_content =~ s/<\/p><br>/<\/p>/g;
+  $source_content =~ s/<\/a><br>\n<br>/<\/a><br>\n/g;
+#  $source_content =~ s/<br>\n<br>/<br>\n/g;
+  $source_content =~ s/--><br>/-->/g;
+  $source_content =~ s/-->\n<br>/-->/g;
+  $source_content =~ s/\$\$<br>/\$\$/g;
+  $source_content =~ s/<div class='clOverflow'><br>/<div class='clOverflow'>/g;
 
   #---------------------------------------------------------
   # Remove Index Break
   #---------------------------------------------------------
 
-  $text_content =~ s/#~~#<br>//sg;
+  $source_content =~ s/#~~#<br>//sg;
 
   #---------------------------------------------------------
   # Hard Break
   #---------------------------------------------------------
 
-  $text_content =~ s/~~/<br>/sg;
+  $source_content =~ s/~~/<br>/sg;
 
   #---------------------------------------------------------
 
-  return $text_content;
+  return $source_content;
 }
 
 #-----------------------------------------------------------
@@ -443,9 +443,9 @@ sub get_index
 
   return if -e $file_index and system("grep -q '<!DOCTYPE html>' '$file_index'") == 0;
 
-  my $dir_texts = "${dir_prefix}/${book}/${dir_name_texts}";
+  my $dir_sources = "${dir_prefix}/${book}/${dir_name_sources}";
 
-  opendir(my $dir_handle, $dir_texts) or die ">>> No Directory '$dir_texts': $!";
+  opendir(my $dir_handle, $dir_sources) or die ">>> No Directory '$dir_sources': $!";
   my @files = readdir($dir_handle);
   @files = grep { $_ !~ /^\.+$/ } @files;
   closedir($dir_handle);
@@ -455,7 +455,7 @@ sub get_index
 
   foreach my $file (@files)
   {
-    my $file_name = "${dir_texts}/${file}";
+    my $file_name = "${dir_sources}/${file}";
     open my $file_handle, '<', $file_name or die ">>> No File '$file_name': $!";
     my $file_content = "\n" . do { local $/; <$file_handle> } . "\n";
     close $file_handle;
@@ -498,8 +498,8 @@ sub get_pages
 {
   my ($book, $title) = @_;
 
-  my $dir_texts = "${dir_prefix}/${book}/${dir_name_texts}";
-  opendir(my $dir_handle, $dir_texts) or die ">>> No Directory '$dir_texts': $!";
+  my $dir_sources = "${dir_prefix}/${book}/${dir_name_sources}";
+  opendir(my $dir_handle, $dir_sources) or die ">>> No Directory '$dir_sources': $!";
   my @files = readdir($dir_handle);
   closedir($dir_handle);
   @files = grep { $_ !~ /^\.+$/ } @files;
@@ -525,9 +525,9 @@ sub get_pages
 
     my $file_name_noext = ($file =~ s/\.[^.]+$//r);
 
-    my $file_text = "${dir_texts}/${file}";
+    my $file_text = "${dir_sources}/${file}";
     open my $file_handle_text, '<', $file_text or die ">>> No File '$file_text' $!";
-    my $text_content = do { local $/; <$file_handle_text> };
+    my $source_content = do { local $/; <$file_handle_text> };
     close($file_handle_text);
 
     my $dir_sounds = "${dir_prefix}/${book}/${dir_name_sounds}";
@@ -542,7 +542,7 @@ sub get_pages
       }
     }
 
-    ($math_on) = ($text_content =~ /(\[\$|\$\$|\$)/);
+    ($math_on) = ($source_content =~ /(\[\$|\$\$|\$)/);
     $math_on //= '';
 
     $page_curr = int($file_name_noext);
@@ -572,8 +572,8 @@ sub get_pages
       $button_audio = "<span class='clNavRewind' onpointerdown='fncRewindTrack(&quot;idTrack&quot;, event)'></span><span class='clNavPlay' onpointerdown='fncPlayTrack(&quot;idTrack&quot;, event)'></span> ";
     }
 
-    $text_content = get_markup $text_content;
-    $content .= $text_content;
+    $source_content = get_markup $source_content;
+    $content .= $source_content;
 
     my $text = get_template($file_name_page);
     my %variables = (
