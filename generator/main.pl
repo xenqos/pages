@@ -76,10 +76,9 @@ my $file_name_index  = 'index.html';
 my $file_name_page   = 'page.html';
 
 my $ext_html         = 'html';
-my $ext_markdown     = 'md';
 my $ext_sound        = '';
 my @ext_codecs       = ('opus', 'aac', 'm4a', 'mp3');
-my $ext_image        = 'jpg';
+
 
 #-----------------------------------------------------------
 
@@ -104,7 +103,7 @@ sub get_template
 
 #-----------------------------------------------------------
 
-sub get_markup
+sub get_markdown
 {
   my ($source_content) = @_;
 
@@ -478,17 +477,17 @@ sub get_index
 
   $content .= "</span>\n";
 
-  my $text = get_template($file_name_index);
+  my $page = get_template($file_name_index);
 
   my %variables = (
       title   => $title
     , content => $content
   );
 
-  $text =~ s/\$\{(\w+)\}/exists $variables{$1} ? $variables{$1} : ''/ge;
+  $page =~ s/\$\{(\w+)\}/exists $variables{$1} ? $variables{$1} : ''/ge;
 
   open(my $file_handle, '>', $file_index) or die ">>> No File '$file_index': $!";
-  print $file_handle $text;
+  print $file_handle $page;
   close($file_handle);
 }
 
@@ -572,10 +571,10 @@ sub get_pages
       $button_audio = "<span class='clNavRewind' onpointerdown='fncRewindTrack(&quot;idTrack&quot;, event)'></span><span class='clNavPlay' onpointerdown='fncPlayTrack(&quot;idTrack&quot;, event)'></span> ";
     }
 
-    $source_content = get_markup $source_content;
+    $source_content = get_markdown $source_content;
     $content .= $source_content;
 
-    my $text = get_template($file_name_page);
+    my $page = get_template($file_name_page);
     my %variables = (
         title         => $title
       , content       => $content
@@ -587,11 +586,11 @@ sub get_pages
       , ext_html      => $ext_html
 
     );
-    $text =~ s/\$\{(\w+)\}/exists $variables{$1} ? $variables{$1} : ''/ge;
+    $page =~ s/\$\{(\w+)\}/exists $variables{$1} ? $variables{$1} : ''/ge;
 
     my $file_page = "${dir_pages}/${file_name_noext}.${ext_html}";
     open(my $file_handle_page, '>', $file_page) or die ">>> No File '$file_page': $!";
-    print $file_handle_page $text;
+    print $file_handle_page $page;
     close($file_handle_page);
   }
 }
