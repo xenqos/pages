@@ -1060,9 +1060,9 @@ span[class^=clNav]:active
 
 /* red green blue */
 
-.r { color:             light-dark(#880000, #e69c9c); }
-.g { color:             light-dark(#006600, #81b481); }
-.b { color:             light-dark(#1a3db8, #a3b0dc); }
+.r { color:             light-dark(#880000, #e05252); }
+.g { color:             light-dark(#006600, #669966); }
+.b { color:             light-dark(#1a3db8, #7082c2); }
 
 /*
 .r
@@ -1112,7 +1112,7 @@ span[class^=clNav]:active
 /* Devanagari */
 .d
 {
-  color:                light-dark(#007800, #00b400);
+  color:                light-dark(#006600, #669966);
   display:              inline-block;
   font-size:            1.200rem;
   font-weight:          400;
