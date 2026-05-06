@@ -413,9 +413,6 @@ div[id^='idDivArticle']
 
 h1, h2, h3, h4, h5, h6
 {
-/*
-  color:                light-dark(#000000, #ffffff);
-*/
   margin:               1.500rem 0.000rem 1.000rem 0.000rem;
   padding:              0.000rem 0.000rem 0.000rem 0.000rem;
 }
@@ -426,80 +423,6 @@ h3 { color: light-dark(#367b36, #65b865); font-size: 1.120rem; font-weight: 600;
 h4 { color: light-dark(#7a4f8c, #ab86ba); font-size: 1.040rem; font-weight: 600; }
 h5 { color: light-dark(#2e7a72, #50bdb1); font-size: 1.040rem; font-weight: 600; }
 h6 { color: light-dark(#9e7a1a, #dfb33e); font-size: 1.040rem; font-weight: 600; }
-
-/*
-h1
-{
-  color:                light-dark(#000000, #ffffff);
-  font-family:          'Roboto';
-  font-size:            1.400rem;
-  font-style:           normal;
-  font-weight:          700;
-  font-variant-caps:    none;
-  letter-spacing:       normal;
-  text-transform:       none;
-}
-
-h2
-{
-  color:                light-dark(#000000, #ffffff);
-  font-family:          'Roboto';
-  font-size:            1.300rem;
-  font-style:           normal;
-  font-weight:          600;
-  font-variant-caps:    none;
-  letter-spacing:       normal;
-  text-transform:       none;
-}
-
-h3
-{
-  color:                light-dark(#000000, #ffffff);
-  font-family:          'Roboto';
-  font-size:            1.200rem;
-  font-style:           normal;
-  font-weight:          600;
-  font-variant-caps:    none;
-  letter-spacing:       normal;
-  text-transform:       none;
-}
-
-h4
-{
-  color:                light-dark(#000000, #ffffff);
-  font-family:          'Roboto';
-  font-size:            1.100rem;
-  font-style:           normal;
-  font-weight:          700;
-  font-variant-caps:    none;
-  letter-spacing:       normal;
-  text-transform:       none;
-}
-
-h5
-{
-  color:                light-dark(#000000, #ffffff);
-  font-family:          'Roboto';
-  font-size:            1.040rem;
-  font-style:           normal;
-  font-weight:          600;
-  font-variant-caps:    all-small-caps;
-  margin:               1.500rem 0.000rem 1.000rem 0.000rem;
-  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
-}
-
-h6
-{
-  color:                light-dark(#000000, #ffffff);
-  font-family:          'Roboto';
-  font-size:            1.000rem;
-  font-style:           normal;
-  font-weight:          500;
-  font-variant-caps:    all-small-caps;
-  margin:               1.500rem 0.000rem 1.000rem 0.000rem;
-  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
-}
-*/
 
 /*-----------------------------------------------------------------------------------------------*/
 /* Links                                                                                         */
@@ -763,7 +686,7 @@ blockquote
 summary,
 summary::marker
 {
-  color:                light-dark(#c84900, #c84900);
+  color:                light-dark(#2e7a72, #50bdb1);
 }
 
 /*-----------------------------------------------------------------------------------------------*/
