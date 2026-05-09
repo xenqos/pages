@@ -15,6 +15,7 @@ de-DE-KillianNeural rate="-20%" volume="0.0dB" ( 6db = 2times )
 de-DE-ChristophNeural rate="-20%" volume="0.0dB" ( 6db = 2times )
 en-CA-ClaraNeural  rate="-20%" volume="medium"
 bg-BG-KalinaNeural rate="100%" volume="medium"
+fr-CH-ArianeNeural rate="-20%" pitch="medium" volume="medium"
 
 https://ru.wikipedia.org/wiki/%D0%A4%D0%BE%D0%BD%D0%B5%D1%82%D0%B8%D0%BA%D0%B0_%D0%BD%D0%B5%D0%BC%D0%B5%D1%86%D0%BA%D0%BE%D0%B3%D0%BE_%D1%8F%D0%B7%D1%8B%D0%BA%D0%B0
 https://en.wikipedia.org/wiki/Standard_German_phonology

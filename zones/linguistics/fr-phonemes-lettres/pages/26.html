@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>De phonèmes à lettres</title>
+  <link rel='preload' href='./styles/fonts/Roboto-400.woff2' as='font' type='font/woff2' crossorigin>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' media='screen' href='../styles/local.css'>
+  <script defer src='../../../../scripts/global.js'></script>
+  <script defer src='../scripts/local.js'></script>
+  
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+<audio id='idTrack' src='../sounds/26.mp3' preload='auto'></audio>
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='25.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='27.html'><span class='clNavRight'></span></a>
+<span class='clNavRewind' onpointerdown='fncRewindTrack(&quot;idTrack&quot;, event)'></span><span class='clNavPlay' onpointerdown='fncPlayTrack(&quot;idTrack&quot;, event)'></span> 
+  </div>
+</div>
+<div id='idContent'>
+
+<h1><span class='b'>t</span></h1>
+
+<p class='r'><span class='r'>t</span></p><p class='x'>в любой позиции</p><p class='y'><span class='r'>tulipe, statue, résultat</span><br><span class='b0500'>тюльпан, статуя, результат</span></p>
+<p class='r'><span class='r'>tt</span></p><p class='x'>в любой позиции</p><p class='y'><span class='r'>cette, lutte, battu</span><br><span class='b0500'>это, борьба, побитый</span></p>
+<p class='r'><span class='r'>t</span></p><p class='x'>в конце слов</p><p class='y'><span class='r'>dot, août, brut, mat, net</span><br><span class='b0500'>приданое, август, сырой, мат, чистый</span></p>
+<p class='r'><span class='r'>th</span></p><p class='x'>в любой позиции ¹</p><p class='y'><span class='r'>thé, cathode, thermique</span><br><span class='b0500'>чай, катод, тепловой</span></p>
+<p class='r'><span class='r'>th</span></p><p class='x'>в конце слов</p><p class='y'><span class='r'>goth, math, vermouth, mammouth</span><br><span class='b0500'>гот, математический, вермут, мамонт</span></p>
+<br>
+<br>
+¹ Не произносится:<br>
+<div class='clOverflow'>
+<table>
+<tr>
+<td><span class='r'>wisigoth </span></td><td>/<span class='b'>wizigo</span> /</td><td>вестгот</td></tr>
+<tr><td><span class='r'>ostrogoth</span></td><td>/<span class='b'>ostʁogo</span>/</td><td>остгот </td></tr>
+</table>
+</div>
+
+
+
+</div>
+</div>
+</body>
+</html>

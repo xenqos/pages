@@ -1,0 +1,33 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-30%" pitch="low" volume="medium">
+le chien
+la chienne
+le chat
+la chatte
+le chiot
+le chaton
+le cochon
+le coq
+le lapin
+la vache
+le cheval
+le canard
+la chèvre
+l'oiseau
+le poulet
+l'oie
+le mouton
+l'agneau
+l'âne
+la souris
+le cabot
+le clébard
+le minou
+l'abeille
+le taureau
+le papillon
+le veau
+</prosody>
+</voice>
+</speak>

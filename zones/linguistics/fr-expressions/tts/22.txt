@@ -1,0 +1,21 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
+J'ai mal à la tête.
+J'ai mal à l'estomac.
+Elle a mal au bras.
+Tu as mal au genou?
+Il a mal aux orteils.
+Tu me fais mal.
+Ne lui faites pas mal.
+Elle a les cheveux roux.
+Elle est rousse.
+Il a les yeux marron.
+Combien mésures-tu ?
+Combien fais-tu ?
+Combien pèses-tu ?
+Je fais 1m60.
+Je pèse 50 kilos.
+</prosody>
+</voice>
+</speak>

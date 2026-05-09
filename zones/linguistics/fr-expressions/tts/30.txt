@@ -1,0 +1,19 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-30%" pitch="0%">
+Joyeux Noël
+Bonne Année
+Joyeux Thanksgiving
+Bonne Action de grâces
+Joyeuses Pâques
+Bonne fête d'Halloween
+Joyeuse Saint-Valentin
+Bon Anniversaire
+Joyeux Anniversaire
+Bonne Fête
+Joyeuses Fêtes
+le Réveillon
+la Saint-Sylvestre
+</prosody>
+</voice>
+</speak>
