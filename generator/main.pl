@@ -69,7 +69,7 @@ my @books =
 , '0|linguistics/sa-outline|Очерк'
 , '0|linguistics/sa-yoga-sutra|Йога-сутры'
 
-, '0|linguistics/ru-rhymes|Мистические рифмы'
+, '1|linguistics/ru-rhymes|Мистические рифмы'
 
 , '0|toolbox/mn-banknotes-eur|Banknotes EUR'
 , '0|toolbox/eu-standards|EU Standards'
