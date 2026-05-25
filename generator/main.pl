@@ -12,10 +12,10 @@ my @books =
   '0|dharma/principles|Принципы'
 , '0|dharma/questions|Вопросы'
 , '0|dharma/kriya|Крия'
-, '1|dharma/yoga-sutra|Йога-сутры'
+, '0|dharma/yoga-sutra|Йога-сутры'
 , '0|dharma/sankhya-karika|Санкхья-карика'
 , '0|dharma/mantra|Мантры'
-, '1|dharma/samhita|Самхиты'
+, '0|dharma/samhita|Самхиты'
 , '0|dharma/upanishad|Упанишады'
 , '0|dharma/bhagavad-gita|Бхагавад-гита'
 
@@ -50,11 +50,11 @@ my @books =
 , '0|linguistics/fr-haspire|H aspiré'
 , '0|linguistics/fr-grammaire|Grammaire'
 , '0|linguistics/fr-verbs|Verbs'
-, '1|linguistics/fr-mots|Mots'
+, '0|linguistics/fr-mots|Mots'
 , '0|linguistics/fr-mots-frequents|Mots fréquents'
 , '0|linguistics/fr-expressions|Expressions'
-, '0|linguistics/fr-phrases-cliches|Phrases cliches'
-, '1|linguistics/fr-conversations|Conversations'
+, '1|linguistics/fr-phrases-cliches|Phrases cliches'
+, '0|linguistics/fr-conversations|Conversations'
 , '0|linguistics/fr-dialogues|Dialogues'
 
 , '0|linguistics/de-phonetics|Phonetik'
@@ -69,7 +69,7 @@ my @books =
 , '0|linguistics/sa-outline|Очерк'
 , '0|linguistics/sa-yoga-sutra|Йога-сутры'
 
-, '1|linguistics/ru-rhymes|Мистические рифмы'
+, '0|linguistics/ru-rhymes|Мистические рифмы'
 
 , '0|toolbox/mn-banknotes-eur|Banknotes EUR'
 , '0|toolbox/eu-standards|EU Standards'

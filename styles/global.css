@@ -417,12 +417,12 @@ h1, h2, h3, h4, h5, h6
   padding:              0.000rem 0.000rem 0.000rem 0.000rem;
 }
 
-h1 { color: light-dark(#4d6db0, #93a6cf); font-size: 1.400rem; font-weight: 600; }
-h2 { color: light-dark(#367b36, #5eb85e); font-size: 1.300rem; font-weight: 600; }
-h3 { color: light-dark(#008080, #2e7a72); font-size: 1.200rem; font-weight: 600; }
-h4 { color: light-dark(#684478, #ab86ba); font-size: 1.100rem; font-weight: 600; }
-h5 { color: light-dark(#3c3c3c, #c49480); font-size: 1.100rem; font-weight: 600; }
-h6 { color: light-dark(#787878, #dfb33e); font-size: 1.060rem; font-weight: 600; }
+h1 { color: light-dark(#425e96, #8ab4f8); font-size: 1.400rem; font-weight: 600; }
+h2 { color: light-dark(#306e30, #7ec87e); font-size: 1.300rem; font-weight: 600; }
+h3 { color: light-dark(#6c4082, #c49ee0); font-size: 1.200rem; font-weight: 600; }
+h4 { color: light-dark(#006b6b, #4ecece); font-size: 1.100rem; font-weight: 600; }
+h5 { color: light-dark(#000000, #ffffff); font-size: 1.100rem; font-weight: 600; }
+h6 { color: light-dark(#ffffff, #000000); font-size: 1.060rem; font-weight: 600; }
 
 h5, h6
 {
