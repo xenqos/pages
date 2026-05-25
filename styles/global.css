@@ -1,4 +1,4 @@
-  /*-----------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------*/
 
 @charset "utf-8";
 
@@ -417,10 +417,10 @@ h1, h2, h3, h4, h5, h6
   padding:              0.000rem 0.000rem 0.000rem 0.000rem;
 }
 
-h1 { color: light-dark(#425e96, #8ab4f8); font-size: 1.400rem; font-weight: 600; }
-h2 { color: light-dark(#306e30, #7ec87e); font-size: 1.300rem; font-weight: 600; }
-h3 { color: light-dark(#6c4082, #c49ee0); font-size: 1.200rem; font-weight: 600; }
-h4 { color: light-dark(#006b6b, #4ecece); font-size: 1.100rem; font-weight: 600; }
+h1 { color: light-dark(#4d6db0, #93a6cf); font-size: 1.400rem; font-weight: 600; }
+h2 { color: light-dark(#367b36, #5eb85e); font-size: 1.300rem; font-weight: 600; }
+h3 { color: light-dark(#008080, #2e7a72); font-size: 1.200rem; font-weight: 600; }
+h4 { color: light-dark(#684478, #ab86ba); font-size: 1.100rem; font-weight: 600; }
 h5 { color: light-dark(#3c3c3c, #c49480); font-size: 1.100rem; font-weight: 600; }
 h6 { color: light-dark(#787878, #dfb33e); font-size: 1.060rem; font-weight: 600; }
 
@@ -436,13 +436,13 @@ h5, h6
 a,
 a:visited
 {
-  color:                light-dark(#000000, #cccccc);
+  color:                light-dark(#003399, #6699ff);
   text-decoration:      none;
 }
 
 a:hover
 {
-  color:                light-dark(#dd0000, #ff6b6b);
+  color:                light-dark(#dd0000, #dd0000);
   text-decoration:      none;
 }
 
@@ -456,7 +456,7 @@ a:hover
 
 .clIndex a:hover
 {
-  color:                light-dark(#dd0000, #ff6b6b);
+  color:                light-dark(#dd0000, #ff6666);
   text-decoration:      none;
   line-height:          2.000rem;
 }
@@ -464,13 +464,13 @@ a:hover
 a.clLinkBlue,
 a:visited.clLinkBlue
 {
-  color:                light-dark(#000077, #9b9bff);
+  color:                light-dark(#000077, #000077);
   text-decoration:      none;
 }
 
 a:hover.clLinkBlue
 {
-  color:                light-dark(#dd0000, #ff6b6b);
+  color:                light-dark(#dd0000, #dd0000);
   text-decoration:      none;
 }
 
@@ -691,7 +691,7 @@ blockquote
 summary,
 summary::marker
 {
-  color:                light-dark(#2e7a72, #5ecec4);
+  color:                light-dark(#2e7a72, #50bdb1);
 }
 
 /*-----------------------------------------------------------------------------------------------*/
@@ -988,9 +988,9 @@ span[class^=clNav]:active
 
 /* red green blue */
 
-.r { color:             color: light-dark(#640000, #f49494); }
-.g { color:             color: light-dark(#006600, #6dcc6d); }
-.b { color:             color: light-dark(#1a3db8, #7fa8f8); }
+.r { color:             light-dark(#880000, #e05252); }
+.g { color:             light-dark(#006600, #669966); }
+.b { color:             light-dark(#1a3db8, #7082c2); }
 
 /*
 .r
@@ -1040,7 +1040,7 @@ span[class^=clNav]:active
 /* Devanagari */
 .d
 {
-  color:                light-dark(#006400, #6acc6a);
+  color:                light-dark(#006600, #669966);
   display:              inline-block;
   font-size:            1.200rem;
   font-weight:          400;
