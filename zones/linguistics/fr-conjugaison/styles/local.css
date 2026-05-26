@@ -57,11 +57,11 @@ table, th, td
   width:                45.000rem;
 }
 
-/*--------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------/mnt/data/Pages--------------------------------------------*/
 
 .clOverflow
 {
-  margin:              -2.000rem 0.000rem 0.000rem 0.000rem;
+  margin:               1.000rem 0.000rem 0.000rem 0.000rem;
 }
 
 /*--------------------------------------------------------------------------------------------------*/
@@ -108,7 +108,7 @@ table, th, td
 }
 
 /*--------------------------------------------------------------------------------------------------*/
-
+/mnt/data/Pages
 .clTabGroup
 {
   width:                100%;
@@ -165,7 +165,7 @@ table, th, td
 
 .clFormConj
 {
-  color:                #aa0000;
+  color:                light-dark(#dd0000, #f09292);
   font-size:            1.000rem;
   line-height:          0.700rem;
 }
@@ -202,13 +202,13 @@ td.clIndexList
 .clTableIndex a,
 .clTableIndex a:visited
 {
-  color:                #aa0000 !important;
+  color:                light-dark(#dd0000, #ff6b6b);
   text-decoration:      none;
 }
 
 .clTableIndex a:hover
 {
-  color:                #ff0000 !important;
+  color:                light-dark(#dd0000, #ff6b6b);
   text-decoration:      none;
 }
 
@@ -265,7 +265,7 @@ td.clIndexList
 
 h3
 {
-  color:                #880000;
+  color:                light-dark(#880000, #b42727);
   font-size:            1.250rem;
   font-variant:         small-caps;
   margin:               0.000rem 0.000rem 0.000rem 0.000rem;
