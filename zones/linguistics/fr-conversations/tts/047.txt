@@ -1,0 +1,24 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+tu dois faire notre valise !
+tu ne dois rien oublier !
+tu as besoin d’une grande valise !
+n’oublie pas ton passeport !
+n’oublie pas ton billet d’avion !
+n’oublie pas tes chèques de voyage !
+amène la crème solaire.
+amène les lunettes de soleil.
+amène le chapeau de soleil.
+veux-tu amener une carte routière ?
+veux-tu amener un guide de voyage ?
+veux-tu amener un parapluie ?
+pense aux pantalons, aux chemises et aux chaussettes.
+pense aux cravates, aux ceintures et aux vestons.
+pense aux pyjamas, aux chemises de nuit et aux t-shirts.
+tu as besoin de chaussures, de sandales et de bottes.
+tu as besoin de mouchoirs, de savon et d’un coupe-ongles.
+tu as besoin d’un peigne, d’une brosse à dents et du dentifrice.
+</prosody>
+</voice>
+</speak>

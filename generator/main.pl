@@ -9,10 +9,12 @@ use feature 'state';
 
 my @books =
 (
+# Poker
   '0|poker/principles|Texas Holdem Principles'
 , '0|poker/mathresources|Resources'
+# Dharma
 
-, '0|dharma/principles|Принципы'
+, '1|dharma/principles|Принципы'
 , '0|dharma/questions|Вопросы'
 , '0|dharma/kriya|Крия'
 , '0|dharma/yoga-sutra|Йога-сутры'
@@ -33,7 +35,7 @@ my @books =
 , '0|linguistics/bg-verbs|Глаголи'
 , '0|linguistics/bg-frequent-words|Честотен речник'
 , '0|linguistics/bg-berlitz|Berlitz'
-, '1|linguistics/bg-conversations|Разговори'
+, '0|linguistics/bg-conversations|Разговори'
 
 , '0|linguistics/en-phonetics|Phonetics'
 , '0|linguistics/en-orthography|Orthography'

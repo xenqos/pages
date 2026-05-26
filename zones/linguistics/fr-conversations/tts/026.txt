@@ -1,0 +1,24 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+vois-tu la tour ?
+vois-tu la montagne ?
+vois-tu le village ?
+vois-tu la rivière ?
+vois-tu le pont ?
+vois-tu le lac ?
+cet oiseau me plaît.
+cet arbre me plaît.
+cette pierre me plaît.
+ce parc me plaît.
+ce jardin me plaît.
+cette fleur me plaît.
+je trouve ça joli.
+je trouve ça intéressant.
+je trouve ça magnifique.
+je trouve ça laid.
+je trouve ça ennuyeux.
+je trouve ça affreux.
+</prosody>
+</voice>
+</speak>

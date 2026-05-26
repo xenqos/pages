@@ -1,0 +1,24 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+le chat de mon amie
+le chien de mon ami
+les jouets de mes enfants
+c’est le manteau de mon collègue.
+c’est la voiture de ma collègue.
+c’est le travail de mes collègues.
+le bouton de la chemise est parti.
+la clef du garage n’est pas là.
+l’ordinateur du chef est cassé.
+qui sont les parents de la jeune fille ?
+comment est-ce que j’arrive à la maison de ses parents ?
+la maison est située au bout de la rue.
+comment s’appelle la capitale de la suisse ?
+quel est le titre de ce livre ?
+comment s’appellent les enfants des voisins ?
+a quelle date sont les vacances des enfants ?
+quelles sont les heures de consultation du médecin ?
+quelles sont les heures d’ouverture du musée ?
+</prosody>
+</voice>
+</speak>

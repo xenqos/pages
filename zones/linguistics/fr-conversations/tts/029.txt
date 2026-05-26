@@ -1,0 +1,24 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+est-ce que cette table est libre ?
+je désirerais la carte.
+qu’est ce que vous nous recommandez ?
+j’aimerais une bière.
+j’aimerais une eau minérale.
+j’aimerais un jus d’orange.
+j’aimerais un café.
+j’aimerais un café au lait.
+avec du sucre, s’il vous plaît.
+je désirerais un thé.
+je désirerais un thé au citron.
+je désirerais un thé au lait.
+avez-vous des cigarettes ?
+avez-vous un cendrier ?
+avez-vous du feu ?
+je n’ai pas de fourchette.
+je n’ai pas de couteau.
+je n’ai pas de cuillère.
+</prosody>
+</voice>
+</speak>

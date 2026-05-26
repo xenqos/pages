@@ -1,0 +1,24 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+pourquoi ne mangez-vous pas la tarte ?
+je dois maigrir.
+je ne la mange pas parce que je dois maigrir.
+pourquoi ne buvez-vous pas la bière ?
+je dois encore conduire.
+je ne la bois pas parce que je dois encore conduire.
+pourquoi ne bois-tu pas le café ?
+il est froid.
+je ne le bois pas parce qu’il est froid.
+pourquoi ne bois-tu pas le thé ?
+je n’ai pas de sucre.
+je ne le bois pas parce que je n’ai pas de sucre.
+pourquoi ne mangez-vous pas la soupe ?
+je ne l’ai pas commandée.
+je ne la mange pas parce que je ne l’ai pas commandée.
+pourquoi ne mangez-vous pas la viande ?
+je suis végétarien, végétarienne.
+je ne la mange pas parce que je suis végétarien, végétarienne.
+</prosody>
+</voice>
+</speak>

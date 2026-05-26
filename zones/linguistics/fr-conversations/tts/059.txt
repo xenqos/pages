@@ -1,0 +1,24 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+où est le bureau de poste le plus proche ?
+quelle est la distance jusqu’au bureau de poste le plus proche ?
+où est la boîte aux lettres la plus proche ?
+j’ai besoin de quelques timbres.
+pour une carte postale et une lettre.
+à combien s’élève l’affranchissement pour l’amérique ?
+combien pèse ce paquet ?
+est-ce que je peux l’envoyer par avion ?
+combien de temps faut-il compter jusqu’à ce qu’il arrive ?
+où puis-je téléphoner ?
+où est la cabine téléphonique la plus proche ?
+avez-vous des télécartes ?
+avez-vous un annuaire téléphonique ?
+connaissez-vous l’indicatif pour l’autriche ?
+un instant, je vais voir.
+la ligne est toujours occupée.
+quel numéro avez-vous composé ?
+vous devez d’abord composer le zéro !
+</prosody>
+</voice>
+</speak>

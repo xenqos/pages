@@ -1,0 +1,24 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+nous cherchons un magasin d’articles sportifs.
+nous cherchons une boucherie.
+nous cherchons une pharmacie.
+c’est que nous voudrions acheter un ballon de football.
+c’est que nous voudrions acheter du salami.
+c’est que nous voudrions acheter des médicaments.
+nous cherchons un magasin d’articles de sport pour acheter un ballon de football.
+nous cherchons une boucherie pour acheter du salami.
+nous cherchons une pharmacie pour acheter des médicaments.
+je cherche un bijoutier.
+je cherche un magasin d’articles photographiques.
+je cherche une pâtisserie.
+c’est que j’ai l’intention d’acheter une bague.
+c’est que j’ai l’intention d’acheter une pellicule.
+c’est que j’ai l’intention d’acheter une tarte.
+je cherche un bijoutier pour acheter une bague.
+je cherche un photographe pour acheter une pellicule.
+je cherche une pâtisserie pour acheter une tarte.
+</prosody>
+</voice>
+</speak>

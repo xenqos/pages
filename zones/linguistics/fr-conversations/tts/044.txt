@@ -1,0 +1,24 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+où y a-t-il une discothèque ?
+où y a-t-il une boîte de nuit ?
+où y a-t-il un bistrot ?
+qu’est-ce qu’il y a ce soir au théâtre ?
+qu’est ce qu’il y a ce soir au cinéma ?
+qu’est-ce qu’il y a ce soir à la télévision ?
+est-ce qu’il y a encore des places pour le théâtre ?
+est-ce qu’il y a encore des places pour le cinéma ?
+est-ce qu’il y a encore des places pour le match de football ?
+je voudrais une place tout au fond.
+je voudrais une place au milieu.
+je voudrais une place tout devant.
+pouvez-vous me recommander quelque chose ?
+quand commence la présentation ?
+pouvez-vous me procurer un billet ?
+est-ce qu’il y a un terrain de golf à proximité ?
+est- ce qu’il y a un court de tennis à proximité ?
+est-ce qu’il y a une piscine couverte à proximité ?
+</prosody>
+</voice>
+</speak>

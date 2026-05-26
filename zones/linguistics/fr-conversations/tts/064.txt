@@ -1,0 +1,24 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+je ne comprends pas le mot.
+je ne comprends pas la phrase.
+je ne comprends pas le sens.
+l’instituteur
+comprenez-vous l’instituteur ?
+oui, je le comprends bien.
+l’institutrice
+est-ce que vous comprenez l’institutrice ?
+oui, je la comprends bien.
+les gens
+est-ce que vous comprenez les gens ?
+non, je ne les comprends pas très bien.
+l’amie
+avez-vous une amie ?
+oui, j’en ai.
+la fille
+avez-vous une fille ?
+non, je n’en ai pas.
+</prosody>
+</voice>
+</speak>

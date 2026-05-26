@@ -1,0 +1,24 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+tu devais appeler une ambulance ?
+tu devais appeler le médecin ?
+tu devais appeler la police ?
+avez-vous le numéro de téléphone ? je l’avais à l’instant.
+avez-vous l’adresse ? je l’avais à l’instant.
+avez-vous le plan de la ville ? je l’avais à l’instant.
+venait-il à l’heure ? il ne pouvait pas venir à l’heure.
+trouvait-il le chemin ? il ne pouvait pas trouver le chemin.
+te comprenait-il ? il ne pouvait pas me comprendre.
+pourquoi ne pouvais-tu pas venir à l’heure ?
+pourquoi ne pouvais-tu pas trouver le chemin ?
+pourquoi ne pouvais-tu pas le comprendre ?
+je ne pouvais pas être à l’heure parce qu’aucun bus ne circulait.
+je ne pouvais pas trouver le chemin, parce que je n’avais pas de plan de ville.
+je ne pouvais pas le comprendre parce que la musique était trop forte.
+je devais prendre un taxi.
+je devais acheter un plan de ville.
+je devais éteindre la radio.
+</prosody>
+</voice>
+</speak>

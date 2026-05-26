@@ -1,0 +1,24 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+veuillez m’excuser !
+quelle heure est-il, s’il vous plaît ?
+merci beaucoup.
+il est une heure.
+il est deux heures.
+il est trois heures.
+il est quatre heures.
+il est cinq heures.
+il est six heures.
+il est sept heures.
+il est huit heures.
+il est neuf heures.
+il est dix heures.
+il est onze heures.
+il est douze heures.
+une minute a soixante secondes.
+une heure a soixante minutes.
+un jour a vingt-quatre heures.
+</prosody>
+</voice>
+</speak>

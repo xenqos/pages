@@ -1,0 +1,24 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+si nous allions dans le grand magasin ?
+je dois faire des courses.
+je veux acheter beaucoup de chose.
+où sont les articles de bureau ?
+j’ai besoin d’enveloppes et de papier à lettre.
+j’ai besoin de stylos et de feutres.
+où sont les meubles ?
+j’ai besoin d’une armoire et d’une commode.
+j’ai besoin d’un bureau et d’une étagère.
+où sont les jouets ?
+j’ai besoin d’une poupée et d’un ours en peluche.
+j’ai besoin d’un ballon de foot et d’un jeu d’échec.
+où sont les outils ?
+j’ai besoin d’un marteau et d’une pince.
+j’ai besoin d’une perceuse et d’un tournevis.
+où sont les bijoux ?
+j’ai besoin d’une chaîne et d’un bracelet.
+j’ai besoin d’une bague et de boucles d’oreilles.
+</prosody>
+</voice>
+</speak>

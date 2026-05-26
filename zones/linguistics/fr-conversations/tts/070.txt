@@ -1,0 +1,24 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+désirez-vous fumer ?
+désirez-vous danser ?
+désirez-vous vous promener ?
+je voudrais fumer.
+veux-tu une cigarette ?
+il voudrait du feu.
+je voudrais boire quelque chose.
+je voudrais manger quelque chose.
+je voudrais me reposer.
+je voudrais vous demander quelque chose.
+je voudrais vous demander quelque chose.
+je voudrais vous inviter à quelque chose.
+que désirez-vous, s’il vous plaît ?
+désirez-vous un café ?
+ou préférez-vous un thé ?
+nous voudrions aller à la maison.
+désirez-vous prendre un taxi ?
+ils voudraient téléphoner.
+</prosody>
+</voice>
+</speak>

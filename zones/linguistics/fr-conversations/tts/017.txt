@@ -1,0 +1,24 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+voici notre maison.
+le toit est en haut.
+la cave est en bas.
+il y a un jardin derrière la maison.
+aucune rue ne passe devant la maison.
+il y a des arbres à côté de la maison.
+voici mon appartement.
+voici la cuisine et la salle de bain.
+voilà la salle de séjour et la chambre à coucher.
+la porte d’entrée est fermée.
+mais les fenêtres sont ouvertes.
+il fait chaud aujourd’hui.
+nous allons dans la salle de séjour.
+il y a un sofa et un fauteuil.
+asseyez-vous !
+mon ordinateur est là-bas.
+ma chaîne stéréo est là-bas.
+la télévision est toute neuve.
+</prosody>
+</voice>
+</speak>

@@ -1,0 +1,24 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+jean est de londres.
+londres est situé en grande-bretagne.
+il parle anglais.
+marie est de madrid.
+madrid est situé en espagne.
+elle parle espagnol.
+pierre et marthe sont de berlin.
+berlin est situé en allemagne.
+parlez-vous tous les deux allemand ?
+londres est une capitale.
+madrid et berlin sont aussi des capitales.
+les capitales sont grandes et bruyantes.
+la france est située en europe.
+l’égypte est située en afrique.
+le japon est situé en asie.
+le canada est situé en amérique du nord.
+panama est situé en amérique centrale.
+le brésil est situé en amérique du sud.
+</prosody>
+</voice>
+</speak>

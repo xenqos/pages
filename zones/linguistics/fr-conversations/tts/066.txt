@@ -1,0 +1,24 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+je – ma, mon
+je ne trouve pas ma clef.
+je ne trouve pas mon billet.
+tu – ta, ton
+as-tu trouvé ta clef ?
+as-tu trouvé ton billet ?
+il – sa, son
+sais-tu où est sa clef ?
+sais-tu où est son billet ?
+elle – sa, son
+son argent a disparu.
+sa carte de crédit a aussi disparu.
+nous – notre
+notre grand-père est malade.
+notre grand-mère est en bonne santé.
+vous – votre
+les enfants, où est votre papa ?
+les enfants, où est votre maman ?
+</prosody>
+</voice>
+</speak>

@@ -1,0 +1,24 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+attends que la pluie cesse.
+attends que je termine.
+attends qu’il revienne.
+j’attends que mes cheveux sèchent.
+j’attends que le film soit fini.
+j’attends que les feux soient au vert.
+quand pars-tu en congé ?
+avant les vacances d’été ?
+oui, avant que les vacances d’été ne commencent.
+répare le toit avant que l’hiver ne commence.
+lave tes mains avant de t’asseoir à table.
+ferme la fenêtre avant de sortir.
+quand viens-tu à la maison ?
+après le cours ?
+oui, après que le cours est terminé.
+après avoir eu un accident, il ne pouvait plus travailler.
+après avoir perdu son travail, il est allé en amérique.
+après être allé en amérique, il est devenu riche.
+</prosody>
+</voice>
+</speak>

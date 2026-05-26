@@ -1,0 +1,24 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+il s’est endormi quoique la télévision ait été allumée.
+il est encore resté quoiqu’il était déjà tard.
+il n’est pas venu quoique nous nous soyons donné rendez-vous.
+la télévision était allumée. malgré tout, il s’est endormi.
+il était déjà tard. malgré tout, il est encore resté.
+nous nous étions donné rendez-vous. malgré tout, il n’est pas venu.
+quoiqu’il n’ait pas de permis de conduire, il va en voiture.
+quoique la route soit verglacée, il roule vite.
+quoiqu’il soit ivre, il fait de la bicyclette.
+il n’a pas de permis de conduire. malgré tout, il va en voiture.
+la route est verglacée. malgré tout, il roule vite.
+il est ivre. malgré tout il fait de la bicyclette.
+elle ne trouve aucun emploi quoiqu’elle ait fait des études.
+elle ne va pas chez le médecin quoiqu’elle souffre.
+elle achète une voiture quoiqu’elle n’ait pas d’argent.
+elle a fait des études. malgré tout, elle n’a pas trouvé d’emploi.
+elle souffre. malgré tout, elle ne va pas chez le médecin.
+elle n’a pas d’argent. malgré tout, elle achète une voiture.
+</prosody>
+</voice>
+</speak>

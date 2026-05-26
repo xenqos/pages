@@ -1,0 +1,24 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+la neige est blanche.
+le soleil est jaune.
+l’orange est orange.
+la cerise est rouge.
+le ciel est bleu.
+l’herbe est verte.
+la terre est brune.
+le nuage est gris.
+les pneus sont noirs.
+quelle est la couleur de la neige ? blanche.
+quelle est la couleur du soleil ? jaune.
+quelle est la couleur d’une orange ? orange.
+quelle est la couleur d’une cerise ? rouge.
+quelle est la couleur du ciel ? bleu.
+quelle est la couleur de l’herbe ? verte.
+quelle est la couleur de la terre ? brune.
+quelle est la couleur du nuage ? gris.
+quelle est la couleur des pneus ? noir.
+</prosody>
+</voice>
+</speak>
