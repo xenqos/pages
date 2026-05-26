@@ -423,13 +423,15 @@ h1 { color: light-dark(#82513c, #d4956a); font-size: 1.300rem; font-weight: 500;
 h2 { color: light-dark(#425e96, #8ab4f8); font-size: 1.200rem; font-weight: 500; }
 h3 { color: light-dark(#306e30, #7ec87e); font-size: 1.100rem; font-weight: 500; }
 h4 { color: light-dark(#6c4082, #c49ee0); font-size: 1.062rem; font-weight: 500; }
-h5 { color: light-dark(#006b6b, #4ecece); font-size: 1.062rem; font-weight: 500; }
-h6 { color: light-dark(#000000, #ffffff); font-size: 1.062rem; font-weight: 500; }
+h5 { color: light-dark(#546416, #ffffff); font-size: 1.062rem; font-weight: 500; }
+h6 { color: light-dark(#006b6b, #4ecece); font-size: 1.062rem; font-weight: 500; }
 
+/*
 h5, h6
 {
   font-variant-caps:    all-small-caps;
 }
+*/
 
 /*-----------------------------------------------------------------------------------------------*/
 /* Links                                                                                         */
@@ -702,8 +704,8 @@ summary::marker
 
 pre
 {
-  background-color:     #eeeeee;
-  background-color:     #f6f6f6;
+  background-color:     #f2f2f2;
+  background-color:     #a0a0a0;
   display:              block;
   font-family:          inherit;
   font-style:           inherit;
@@ -993,37 +995,6 @@ span[class^=clNav]:active
 .r { color:             light-dark(#880000, #e05252); }
 .g { color:             light-dark(#006600, #669966); }
 .b { color:             light-dark(#1a3db8, #7082c2); }
-
-/*
-.r
-{
-  color:                light-dark(#000000, #ffffff);
-  font-weight:          500;
-}
-
-.b
-{
-  color:                light-dark(#000000, #ffffff);
-  font-weight:          300;
-}
-*/
-
-/*
-.x
-{
-  color:                light-dark(#000000, #ffffff);
-  font-weight:          300;
-  margin:              -1.000rem 0.000rem 0.000rem 0.000rem;
-  padding:              0.000rem 0.000rem 0.000rem 0.500rem;
-}
-
-.y
-{
-  color:                light-dark(#000000, #cccccc);
-  margin:               0.000rem 0.000rem 1.000rem 1.000rem;
-  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
-}
-*/
 
 .x
 {

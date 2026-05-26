@@ -9,10 +9,8 @@ use feature 'state';
 
 my @books =
 (
-# Poker
   '0|poker/principles|Texas Holdem Principles'
 , '0|poker/mathresources|Resources'
-# Dharma
 
 , '1|dharma/principles|Принципы'
 , '0|dharma/questions|Вопросы'
