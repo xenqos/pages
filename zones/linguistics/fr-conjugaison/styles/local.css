@@ -6,6 +6,7 @@ table, th, td
 }
 
 
+/*
 #idTopbar
 {
   width:                100.00%;
@@ -16,6 +17,7 @@ table, th, td
 {
   width:                100.00% !important;
 }
+*/
 
 #idPanelConj
 {
@@ -57,7 +59,7 @@ table, th, td
   width:                45.000rem;
 }
 
-/*------------------------------------------------------/mnt/data/Pages--------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
 
 .clOverflow
 {
@@ -108,7 +110,7 @@ table, th, td
 }
 
 /*--------------------------------------------------------------------------------------------------*/
-/mnt/data/Pages
+
 .clTabGroup
 {
   width:                100%;
@@ -197,19 +199,6 @@ td.clIndexList
   padding:              0.000rem 0.625em 0.000rem 0.625em;
   text-align:           center;
   vertical-align:       top;
-}
-
-.clTableIndex a,
-.clTableIndex a:visited
-{
-  color:                light-dark(#dd0000, #ff6b6b);
-  text-decoration:      none;
-}
-
-.clTableIndex a:hover
-{
-  color:                light-dark(#dd0000, #ff6b6b);
-  text-decoration:      none;
 }
 
 /*--------------------------------------------------------------------------------------------------*/
