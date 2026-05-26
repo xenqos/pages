@@ -9,7 +9,10 @@ use feature 'state';
 
 my @books =
 (
-  '0|dharma/principles|Принципы'
+  '0|poker/principles|Texas Holdem Principles'
+, '0|poker/mathresources|Resources'
+
+, '0|dharma/principles|Принципы'
 , '0|dharma/questions|Вопросы'
 , '0|dharma/kriya|Крия'
 , '0|dharma/yoga-sutra|Йога-сутры'
@@ -30,7 +33,7 @@ my @books =
 , '0|linguistics/bg-verbs|Глаголи'
 , '0|linguistics/bg-frequent-words|Честотен речник'
 , '0|linguistics/bg-berlitz|Berlitz'
-, '0|linguistics/bg-conversations|Разговори'
+, '1|linguistics/bg-conversations|Разговори'
 
 , '0|linguistics/en-phonetics|Phonetics'
 , '0|linguistics/en-orthography|Orthography'
@@ -48,12 +51,12 @@ my @books =
 , '0|linguistics/fr-phonemes-lettres|De phonèmes à lettres'
 , '0|linguistics/fr-prononciation|Prononciation'
 , '0|linguistics/fr-haspire|H aspiré'
-, '0|linguistics/fr-grammaire|Grammaire'
+, '1|linguistics/fr-grammaire|Grammaire'
 , '0|linguistics/fr-verbs|Verbs'
 , '0|linguistics/fr-mots|Mots'
 , '0|linguistics/fr-mots-frequents|Mots fréquents'
 , '0|linguistics/fr-expressions|Expressions'
-, '1|linguistics/fr-phrases-cliches|Phrases cliches'
+, '0|linguistics/fr-phrases-cliches|Phrases cliches'
 , '0|linguistics/fr-conversations|Conversations'
 , '0|linguistics/fr-dialogues|Dialogues'
 
@@ -74,8 +77,6 @@ my @books =
 , '0|toolbox/mn-banknotes-eur|Banknotes EUR'
 , '0|toolbox/eu-standards|EU Standards'
 
-, '1|games/principles|Texas Holdem Principles'
-, '0|games/mathresources|Resources'
 );
 
 #-----------------------------------------------------------
