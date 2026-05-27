@@ -5,19 +5,12 @@ table, th, td
   border:               none;
 }
 
-
-/*
-#idTopbar
+#idPanel
 {
-  width:                100.00%;
-}
-
-#idPanel,
-#idTopbarNavigation
-{
+  margin:              -2.000rem 0.000rem 0.000rem 0.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
   width:                100.00% !important;
 }
-*/
 
 #idPanelConj
 {
@@ -63,7 +56,7 @@ table, th, td
 
 .clOverflow
 {
-  margin:               1.000rem 0.000rem 0.000rem 0.000rem;
+  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
 }
 
 /*--------------------------------------------------------------------------------------------------*/
@@ -78,15 +71,15 @@ table, th, td
 .clPanelTop
 {
   border:               0.000rem solid #555555;
-  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
+  margin:              -3.000rem 0.000rem 0.000rem 0.000rem;
   padding:              0.000rem 0.000rem 0.000rem 0.000rem;
   width:                100%;
 }
 
 .clPanelBottom
 {
-  margin:              -2.500rem -0.250rem 0.000rem -0.250rem;
-  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+  margin:              -6.400rem -0.250rem 0.000rem -0.250rem;
+  padding:              0.000rem  0.000rem 0.000rem  0.000rem;
   width:                100%;
 }
 
@@ -140,9 +133,8 @@ table, th, td
   background-color:     #ffffff;
   font-size:            1.000rem;
   font-style:           oblique;
-
-  margin-top:           0.250rem;
-  margin-left:          2.000rem;
+  margin:               0.400rem 0.000rem 0.600rem 2.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
   text-align:           left;
   text-transform:       lowercase;
 }
