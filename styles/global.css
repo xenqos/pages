@@ -992,9 +992,9 @@ span[class^=clNav]:active
 
 /* red green blue */
 
-.r { color:             light-dark(#880000, #e05252); }
-.g { color:             light-dark(#006600, #669966); }
-.b { color:             light-dark(#1a3db8, #7082c2); }
+.r { color:             light-dark(#880000, #ffb9b9); }
+.g { color:             light-dark(#006600, #b9d1b9); }
+.b { color:             light-dark(#1a3db8, #95a9e6); }
 
 .x
 {
