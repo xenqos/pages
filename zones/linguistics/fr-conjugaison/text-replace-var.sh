@@ -19,7 +19,6 @@ ext='*.html'
 #-------------------------------------------------------------------------------
 
 #regex="s~<head>(.*?)<title>~<head>\n  <meta charset='UTF-8'>\n  <meta name='viewport' content='width=device-width, initial-scale=1.0'>\n  <title>~sg"
-
 #regex="s~<\/title>(.*?)<\/head>~</title>\n  <link rel='preload' href='./styles/fonts/Roboto-400.woff2' as='font' type='font/woff2' crossorigin>\n  </head>~sg"
 #regex="s~  <\/head>~  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>\n</head>~sg"
 #regex="s~<\/head>~  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>\n</head>~sg"
@@ -31,6 +30,9 @@ ext='*.html'
 #regex="s~<\/head>~  <link rel='stylesheet' media='screen' href='../styles/local.css'>\n</head>~sg"
 #regex="s~<\/head>~  <script defer src='../../../../scripts/global.js'></script>\n</head>~sg"
 #regex="s~<\/head>~  <script defer src='../scripts/local.js'></script>\n</head>~sg"
+
+#regex="s~<div id='idTopbarNavigation'>(.*?)</div>~~sg"
+regex="s~<div id='idTopbar'>(.*?)</div>~~sg"
 
 #-------------------------------------------------------------------------------
 
