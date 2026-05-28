@@ -1,9 +1,9 @@
 <!doctype html>
-<html>
+<html lang='en'>
 <head>
   <meta charset='UTF-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-  <title>aimer</title>
+  <title>Verbs</title>
   <link rel='preload' href='./styles/fonts/Roboto-400.woff2' as='font' type='font/woff2' crossorigin>
   <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
   <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
@@ -16,13 +16,18 @@
   <script defer src='../../../../scripts/global.js'></script>
   <script defer src='../scripts/local.js'></script>
 </head>
-<body onload='fncGetScrollPosition();'>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
 <div id='idPanel'>
-
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='../index.html'><span class='clNavUp'><span></a>
+  </div>
+</div>
 <div id='idContent'>
-<div id='idText' class='clTableIndex'>
 
-<h3>o <span style='font-size: small;'>(92)</span></h3>
+<h1>o <span style='font-size: small;'>(92)</span></h1>
 
 <a href='obeir.html'>obéir</a><br>
 <a href='oberer.html'>obérer</a><br>
@@ -121,7 +126,6 @@
 <a href='oxygener.html'>oxygéner</a><br>
 <a href='ozoniser.html'>ozoniser</a><br>
 
-</div>
 </div>
 </div>
 </body>

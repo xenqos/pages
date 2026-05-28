@@ -1,11 +1,6 @@
 /*--------------------------------------------------------------------------------------------------*/
 
-table, th, td
-{
-  border:               none;
-}
-
-#idPanel
+#idPanelMain
 {
   margin:              -2.000rem 0.000rem 0.000rem 0.000rem;
   padding:              0.000rem 0.000rem 0.000rem 0.000rem;
@@ -57,6 +52,13 @@ table, th, td
 .clOverflow
 {
   margin:               0.000rem 0.000rem 0.000rem 0.000rem;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+table, th, td
+{
+  border:               none;
 }
 
 /*--------------------------------------------------------------------------------------------------*/
@@ -159,7 +161,7 @@ table, th, td
 
 .clFormConj
 {
-  color:                light-dark(#dd0000, #f09292);
+  color:                light-dark(#880000, #f09292);
   font-size:            1.000rem;
   line-height:          0.700rem;
 }
@@ -246,7 +248,7 @@ td.clIndexList
 
 h3
 {
-  color:                light-dark(#880000, #b42727);
+  color:                light-dark(#880000, #f09292);
   font-size:            1.250rem;
   font-variant:         small-caps;
   margin:               0.000rem 0.000rem 0.000rem 0.000rem;
