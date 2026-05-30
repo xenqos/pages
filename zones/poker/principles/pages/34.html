@@ -3,7 +3,7 @@
 <head>
   <meta charset='UTF-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-  <title>Texas Holdem Principles</title>
+  <title>Principles</title>
   <link rel='preload' href='./styles/fonts/Roboto-400.woff2' as='font' type='font/woff2' crossorigin>
   <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
   <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
@@ -56,19 +56,17 @@ Break-Even-% = 100% / Pot odds added together)
 
 <h2>PostFlop Action</h2>
 
-<span class='b'>IF</span><br>
-<div class='if-then-else'>  Outs-Probability > Pot-Odds-Break-Even-%</div>
-<span class='b'>THEN</span><br>
-<div class='if-then-else'>  Call</div>
-<div class='b'>ENDIF</div>
-
+<b>if</b><br>
+&ensp;  Outs-Probability > Pot-Odds-Break-Even-%<br>
+<b>then</b><br>
+&ensp;  Call<br>
+<b>endif</b><br>
 <br>
-<span class='b'>IF</span><br>
-<div class='if-then-else'>  Outs-Probability < Pot-Odds-Break-Even-%</div>
-<span class='b'>THEN</span><br>
-<div class='if-then-else'>  Fold</div>
-<div class='b'>ENDIF</div>
-
+<b>if</b><br>
+&ensp;  Outs-Probability < Pot-Odds-Break-Even-%<br>
+<b>then</b><br>
+&ensp;  Fold<br>
+<b>endif</b><br>
 
 
 </div>

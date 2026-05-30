@@ -9,10 +9,10 @@ use feature 'state';
 
 my @books =
 (
-  '0|poker/principles|Texas Holdem Principles'
+  '1|poker/principles|Principles'
 , '0|poker/mathresources|Resources'
 
-, '0|dharma/principles|Принципы'
+, '1|dharma/principles|Принципы'
 , '0|dharma/questions|Вопросы'
 , '0|dharma/kriya|Крия'
 , '0|dharma/yoga-sutra|Йога-сутры'
@@ -51,7 +51,7 @@ my @books =
 , '0|linguistics/fr-phonemes-lettres|De phonèmes à lettres'
 , '0|linguistics/fr-prononciation|Prononciation'
 , '0|linguistics/fr-haspire|H aspiré'
-, '0|linguistics/fr-grammaire|Grammaire'
+, '1|linguistics/fr-grammaire|Grammaire'
 , '0|linguistics/fr-verbs|Verbs'
 , '1|linguistics/fr-mots|Mots'
 , '0|linguistics/fr-mots-frequents|Mots fréquents'
@@ -309,11 +309,11 @@ sub get_markdown
   # If Then Elsif Else
   #---------------------------------------------------------
 
-  $source_content =~ s/^if\n(.*?)\n/<span class='b'>IF<\/span>\n<div class='if-then-else'>$1<\/div>\n/mg;
-  $source_content =~ s/^then\n(.*?)\n/<span class='b'>THEN<\/span>\n<div class='if-then-else'>$1<\/div>\n/mg;
-  $source_content =~ s/^elseif\n(.*?)\n/<span class='b'>ELSE IF<\/span>\n<div class='if-then-else'>$1<\/div>\n/mg;
-  $source_content =~ s/^else\n(.*?)\n/<span class='b'>ELSE<\/span>\n<div class='if-then-else'>$1<\/div>\n/mg;
-  $source_content =~ s/^endif\n/<div class='b'>ENDIF<\/div>\n\n\n/mg;
+  $source_content =~ s/^if\n(.*?)\n/<b>if<\/b>\n&ensp;$1\n/mg;
+  $source_content =~ s/^then\n(.*?)\n/<b>then<\/b>\n&ensp;$1\n/mg;
+  $source_content =~ s/^elseif\n(.*?)\n/<b>else if<\/b>\n&ensp;$1\n/mg;
+  $source_content =~ s/^else\n(.*?)\n/<b>else<\/b>\n&ensp;$1\n/mg;
+  $source_content =~ s/^endif\n/<b>endif<\/b>\n/mg;
 
   #---------------------------------------------------------
   # Bold and Italic
