@@ -417,21 +417,22 @@ h1, h2, h3, h4, h5, h6
   padding:              0.000rem 0.000rem 0.000rem 0.000rem;
 }
 
-
-
+/*
 h1 { color: light-dark(#82513c, #d4956a); font-size: 1.300rem; font-weight: 500; }
 h2 { color: light-dark(#425e96, #8ab4f8); font-size: 1.200rem; font-weight: 500; }
 h3 { color: light-dark(#306e30, #7ec87e); font-size: 1.100rem; font-weight: 500; }
 h4 { color: light-dark(#6c4082, #c49ee0); font-size: 1.062rem; font-weight: 500; }
 h5 { color: light-dark(#546416, #ffffff); font-size: 1.062rem; font-weight: 500; }
 h6 { color: light-dark(#006b6b, #4ecece); font-size: 1.062rem; font-weight: 500; }
-
-/*
-h5, h6
-{
-  font-variant-caps:    all-small-caps;
-}
 */
+
+h1 { color: light-dark(#963e18, #d4956a); font-size: 1.300rem; font-weight: 500; }
+h2 { color: light-dark(#2b56aa, #8ab4f8); font-size: 1.200rem; font-weight: 500; }
+h3 { color: light-dark(#006400, #7ec87e); font-size: 1.100rem; font-weight: 500; }
+h4 { color: light-dark(#7a4096, #c49ee0); font-size: 1.062rem; font-weight: 500; }
+h5 { color: light-dark(#607800, #ffffff); font-size: 1.062rem; font-weight: 500; }
+h6 { color: light-dark(#007f7f, #4ecece); font-size: 1.062rem; font-weight: 500; }
+
 
 /*-----------------------------------------------------------------------------------------------*/
 /* Links                                                                                         */
@@ -991,7 +992,7 @@ span[class^=clNav]:active
 
 /* red green blue */
 
-.r { color:             light-dark(#640000, #ffb9b9); }
+.r { color:             light-dark(#880000, #ffb9b9); }
 .g { color:             light-dark(#006600, #b9d1b9); }
 .b { color:             light-dark(#1a3db8, #95a9e6); }
 
