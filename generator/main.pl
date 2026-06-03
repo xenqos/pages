@@ -43,6 +43,7 @@ my @books =
 , '0|linguistics/en-ielts-words|IELTS Words'
 , '0|linguistics/en-phrases|Phrases'
 , '0|linguistics/en-words|Words'
+, '1|linguistics/en-idioms|Idioms'
 , '0|linguistics/en-conversations|Conversations'
 , '0|linguistics/en-verbs-irregular|Irregular Verbs'
 , '0|linguistics/en-verbs-phrasal|Phrasal Verbs'
@@ -73,6 +74,7 @@ my @books =
 , '0|linguistics/sa-yoga-sutra|Йога-сутры'
 
 , '0|linguistics/ru-rhymes|Мистические рифмы'
+, '1|linguistics/sa-devanagari|Деванагари'
 
 , '0|toolbox/mn-banknotes-eur|Banknotes EUR'
 , '0|toolbox/eu-standards|EU Standards'
