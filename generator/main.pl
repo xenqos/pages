@@ -48,7 +48,7 @@ my @books =
 , '0|linguistics/en-verbs-phrasal|Phrasal Verbs'
 
 , '0|linguistics/fr-phonetique|Phonétique tables'
-, '1|linguistics/fr-phonemes-lettres|De phonèmes à lettres'
+, '0|linguistics/fr-phonemes-lettres|De phonèmes à lettres'
 , '0|linguistics/fr-prononciation|Prononciation'
 , '0|linguistics/fr-haspire|H aspiré'
 , '1|linguistics/fr-grammaire|Grammaire'

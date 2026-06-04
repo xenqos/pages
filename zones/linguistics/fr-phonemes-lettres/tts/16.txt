@@ -1,28 +1,16 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="fr-CH-ArianeNeural">
 <prosody rate="-20%" pitch="medium">
-<!-- 16 -->
-chambre
-lampe
-champ
-tant
-blanc
-plan
-temps
-emporter
-trembler
-centre
-gens
-souvent
-emmener
-emmagasiner
-ennui
-enivrer
-Jean
-Caen
-faon
-taon
-paon
+<!-- 15 -->
+bombe
+tomber
+nom
+bon
+long
+pardon
+lumbago
+columbarium
+rhumb
 </prosody>
 </voice>
 </speak>
