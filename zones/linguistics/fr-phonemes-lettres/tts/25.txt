@@ -1,5 +1,14 @@
-# %[b|d]
-
-|%[r|d]|в любой позиции|%[r|donne, modestie, discuter]~~%[b0500|вручение, скромность, обсуждать]
-|%[r|d]|в слове|%[r|sud]~~%[b0500|юг]
-|%[r|dd]|в любой позиции|%[r|addition, bouddhisme, addenda]~~%[b0500|дополнение, буддизм, приложение]
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 25 -->
+donne
+modestie
+discuter
+sud
+addition
+bouddhisme
+addenda
+</prosody>
+</voice>
+</speak>

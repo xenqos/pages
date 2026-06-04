@@ -1,21 +1,36 @@
-# %[b|ʃ]
-
-|%[r|ch]|в любой позиции|%[r|chose, chercher, reproche]~~%[b0500|вещь, искать, упрек]
-|%[r|sch]|в греческих словах|%[r|schéma, schisme, schiste]~~%[b0500|схема, раскол, сланец]
-|%[r|sc]|в итальянских словах|%[r|fasciste, fascisme]~~%[b0500|фашист, фашизм]
-
-__Исключения:__
-
-Произносится /k/ в словах:
-
-|psychologue, écho, choriste||психология, эхо, хорист
-|psychiatre, chœur, choléra||психиатр, хор, холера
-|archéologie, chorégraphie, orchidée||археология, хореография, орхидея
-|orchestre, archaïque, chaos||оркестр, архаичный, хаос
-|manichéen, machiavélique, Bacchus||манихейский, макиавеллевский, Вакх
-
-ch произносится /k/ перед согласными:
-
-|chrétien, cochlée||христианский, улитка (внутреннего уха)
-|chlore, chrome||хлор, хром
-|drachme, autochtone||драхма, туземный
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 32 -->
+chose
+chercher
+reproche
+schéma
+schisme
+schiste
+fasciste
+fascisme
+psychologue
+écho
+choriste
+psychiatre
+chœur
+choléra
+archéologie
+chorégraphie
+orchidée
+orchestre
+archaïque
+chaos
+manichéen
+machiavélique
+Bacchus
+chrétien
+cochlée
+chlore
+chrome
+drachme
+autochtone
+</prosody>
+</voice>
+</speak>

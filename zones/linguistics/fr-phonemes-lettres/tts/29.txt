@@ -1,16 +1,36 @@
-# %[b|s]
-
-|%[r|s]|в начале слов и после согласной|%[r|sable, penser, sucre]~~%[b0500|песок, думать, сахар]
-|%[r|ss]|между гласными и в конце слова|%[r|fissure, express, strass]~~%[b0500|трещина, скорый, страз]
-|%[r|sc]|перед гласными e, i|%[r|descendre, conscience, scier]~~%[b0500|спускаться, совесть, пила]
-|%[r|c]|перед гласными e, i, y|%[r|ceci, ciel, cynique]~~%[b0500|этот, небеса, циничный]
-|%[r|ç]|перед гласными a, o, u|%[r|façade, leçon, gerçure]~~%[b0500|фасад, урок, трещина (на коже)]
-|%[r|ti+гласная]|читается как [si]|%[r|diplomatie, patient, martial]~~%[b0500| дипломатия, пациент, военный]
-|%[r|sti+гласная]|читается как [sti]|%[r|vestiaire, veste]~~%[b0500|гардероб, куртка]
-|%[r|x]|читается как [s] в словах|%[r|six, dix, coccyx, soixante]~~%[b0500|шесть, десять, копчик, шестьдесят]
-|%[r|x]|читается как [ks]|%[r|vexer, syntaxe, lynx]~~%[b0500|раздражать, синтаксис, рысь]
-
-[|
-|%[r|Bruxelles]|/%[b|bʀysɛl] /|Бельгия|
-|%[r|Bruxelles]|/%[b|bʀyksɛl]/|Франция|
-|]
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 29 -->
+sable
+penser
+sucre
+fissure
+express
+strass
+descendre
+conscience
+scier
+ceci
+ciel
+cynique
+façade
+leçon
+gerçure
+diplomatie
+patient
+martial
+vestiaire
+veste
+six
+dix
+coccyx
+soixante
+vexer
+syntaxe
+lynx
+Bruxelles
+Bruksxelles
+</prosody>
+</voice>
+</speak>

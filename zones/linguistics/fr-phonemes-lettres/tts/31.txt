@@ -1,5 +1,16 @@
-# %[b|ʒ]
-
-|%[r|g]|перед гласными i, e, y|%[r|giraffe, général, gypse]~~%[b0500|жираф, генеральный, гипс]
-|%[r|gе]|перед гласными a, o, u|%[r|mangeons, bourgeois, plongeur]~~%[b0500|едим (мы), буржуа, водолаз]
-|%[r|j]|в любой позиции|%[r|jamais, rejoindre, jaune]~~%[b0500|никогда, соединять, желтый]
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 31 -->
+giraffe
+général
+gypse
+mangeons
+bourgeois
+plongeur
+jamais
+rejoindre
+jaune
+</prosody>
+</voice>
+</speak>

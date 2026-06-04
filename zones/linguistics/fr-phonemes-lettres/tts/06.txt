@@ -1,14 +1,24 @@
-# %[b|ø]
-
-|%[r|eu]|в открытом слоге|%[r|mieux, vieux, jeudi]~~%[b0500|лучше, старый, четверг]
-|%[r|eu]|перед [z]|%[r|heureuse, sérieuse, creuse]~~%[b0500|счастливый, серьезный, пустой,]
-|%[r|œu]|в словах|%[r|vœu, nœud]~~%[b0500|пожелание, узел]
-|%[r|œu]|в словах|%[r|œufs, bœufs]~~%[b0500|яйца, быки]
-|%[r|eutre]|в словах|%[r|neutre, feutre, pleutre]~~%[b0500|нейтральный, фетровый, трус]
-
-[|
-|%[r|œuf  ]|/%[b|œf] /|
-|%[r|œufs ]|/%[b|ø]  /|
-|%[r|bœuf ]|/%[b|bœf]/|
-|%[r|bœufs]|/%[b|bø] /|
-|]
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 06 -->
+mieux
+vieux
+jeudi
+heureuse
+sérieuse
+creuse
+vœu
+nœud
+œufs
+bœufs
+neutre
+feutre
+pleutre
+œuf
+œufs
+bœuf
+bœufs
+</prosody>
+</voice>
+</speak>

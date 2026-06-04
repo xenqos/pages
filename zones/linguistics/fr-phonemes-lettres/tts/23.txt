@@ -1,4 +1,12 @@
-# %[b|v]
-
-|%[r|v]|в любой позиции|%[r|vivant, devenir, vieux]~~%[b0500|живой, стать, старый]
-|%[r|v]|в сочетаниях|%[r|neuf heures, neuf ans]~~%[b0500|девять часов, девять лет]
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 23 -->
+vivant
+devenir
+vieux
+neuf heures
+neuf ans
+</prosody>
+</voice>
+</speak>

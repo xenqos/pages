@@ -1,10 +1,17 @@
-# %[b|u]
-
-|%[r|ou ¹]|в любой позиции|%[r|amour, toujour, vous]~~%[b0500|любовь, toujour, вы]
-|%[r|où]|в любой позиции|%[r|où]~~%[b0500|где]
-|%[r|oû]|в любой позиции|%[r|voûte, coûter, goûter]~~%[b0500|свод, стоить, вкус]
-|%[r|aoû]|в словах|%[r|août, saoul]~~%[b0500|август, пьяный]
-
-[!
-¹ /ɔ/ в слове aujourd’hui /oʒɔʁdɥi/ сегодня
-!]
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 09 -->
+amour
+toujour
+vous
+où
+voûte
+coûter
+goûter
+août
+saoul
+aujourd’hui
+</prosody>
+</voice>
+</speak>

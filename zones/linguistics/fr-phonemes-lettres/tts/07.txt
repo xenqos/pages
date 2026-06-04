@@ -1,13 +1,20 @@
-# %[b|œ]
-
-|%[r|eu]|в закрытом слоге|%[r|neuf, seul, heure]~~%[b0500| девять, единственный, час]
-|%[r|œu]|в словах|%[r|sœur, cœur, œuvre]~~%[b0500|сестра, сердце, произведение]
-|%[r|œu]|в словах|%[r|œuf, bœuf]~~%[b0500|яйцо, бык]
-|%[r|œi]|в слове|%[r|œil]~~%[b0500|глаз]
-
-[|
-|%[r|œuf  ]|/%[b|œf] /|
-|%[r|œufs ]|/%[b|ø]  /|
-|%[r|bœuf ]|/%[b|bœf]/|
-|%[r|bœufs]|/%[b|bø] /|
-|]
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 07 -->
+neuf
+seul
+heure
+sœur
+cœur
+œuvre
+œuf
+bœuf
+œil
+œuf
+œufs
+bœuf
+bœufs
+</prosody>
+</voice>
+</speak>

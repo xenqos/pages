@@ -1,12 +1,24 @@
-# %[b|ʁ]
-|%[r|r]|в любой позиции ¹|%[r|trois, ruelle, derrière]~~%[b0500|три, аллея, сзади]
-|%[r|rh]|в любой позиции|%[r|rhume, rhétorique, diarrhée]~~%[b0500|насморк, риторика, диарея]
-|%[r|er]|в конце слов|%[r|fer, mer, cher, fier, hier, amer, hiver, enfer]~~%[b0500|железо, море, дорогой, гордиться, вчера, горький, зима, ад]
-
-¹ Не произносится:
-
-[|
-|%[r|monsieur ]|/%[b|məsjø]/|господин|
-|%[r|messieurs]|/%[b|mesjø]/|господа |
-|%[r|gars     ]|/%[b|ga]   /|парень  |
-|]
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 36 -->
+trois
+ruelle
+derrière
+rhume
+rhétorique
+diarrhée
+fer
+mer
+cher
+fier
+hier
+amer
+hiver
+enfer
+monsieur
+messieurs
+gars
+</prosody>
+</voice>
+</speak>

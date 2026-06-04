@@ -1,9 +1,29 @@
-# %[b|ɑ]
-
-|%[r|â]|в любой позиции|%[r|tâche, grâce, âme]~~%[b0500|задача, благодать, душа]
-|%[r|a]|перед звуком [z]|%[r|vase, phrase, base]~~%[b0500|ваза, фраза, база]
-|%[r|a]|в окончаниях –as, –asse|%[r|pas, gras, tasse]~~%[b0500|не, жир, чашка]
-|%[r|a]|в словах|%[r|diable, fable, sable]~~%[b0500|дьявол, басня, песок]
-|%[r|a]|в словах|%[r|paille, rail, rare, gars]~~%[b0500|солома, рельс, редкий, парень]
-|%[r|a]|в словах|%[r|cadre, flamme, miracle]~~%[b0500|рама, пламя, чудо]
-|%[r|oi]|в любой позиции|%[r|bois, roi, croix]~~%[b0500|дерево, король, крест]
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 12 -->
+tâche
+grâce
+âme
+vase
+phrase
+base
+pas
+gras
+tasse
+diable
+fable
+sable
+paille
+rail
+rare
+gars
+cadre
+flamme
+miracle
+bois
+roi
+croix
+</prosody>
+</voice>
+</speak>

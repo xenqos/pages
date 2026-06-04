@@ -1,7 +1,24 @@
-# %[b|w]
-
-|%[r|ou]|перед любым гласным звуком|%[r|oui, inouï, ouate]~~%[b0500|да, невероятный, вата]
-|%[r|oi]|произносится как [wa]|%[r|moi, fois, mémoire, maladroit]~~%[b0500|мне, время, память, неловкий]
-|%[r|oy]|в любой позиции|%[r|croyable, ployer, foyer]~~%[b0500|вероятный, гнуть, очаг]
-|%[r|oe]|в словах|%[r|poêle, moelle, moelleux, moellon]~~%[b0500|балдахин/печка, сердцевина,  нежный, щебень]
-|%[r|qua]|в научных словах|%[r|adéquat, aquatique, jaguar]~~%[b0500|адекватный, водный, ягуар]
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 19 -->
+oui
+inouï
+ouate
+moi
+fois
+mémoire
+maladroit
+croyable
+ployer
+foyer
+poêle
+moelle
+moelleux
+moellon
+adéquat
+aquatique
+jaguar
+</prosody>
+</voice>
+</speak>

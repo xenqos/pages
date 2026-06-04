@@ -1,28 +1,21 @@
-# %[b|ɲ]
-
-|%[r|gn]|в любой позиции|%[r|signe, montagne, ligne]~~%[b0500|знак, гора, линия]
-|%[r|ni]|перед гласной|%[r|panier, meunier]~~%[b0500|корзина, мельник]
-
-¹ __Исключения:__
-
-[|
-|%[r|gnose ]|/%[b|gnoz]/|гносис|
-|%[r|gnome ]|/%[b|gnom]/|гном  |
-|%[r|gneiss]|/%[b|gnɛs]/|гнейс |
-|%[r|gnou  ]|/%[b|gnu] /|гну   |
-|]
-
-В корне gno произносится /gno/:
-
-[|
-|%[r|diagnostic]|/%[b|diagnostik]/|диагноз       |
-|%[r|agnostique]|/%[b|agnostik]  /|агностик      |
-|%[r|prognathe ]|/%[b|pʁognat]   /|прогнатический|
-|]
-
-В латинских словах произносится /gn/:
-
-[|
-|%[r|stagner ]|/%[b|stagne]/  |застаиваться|
-|%[r|cognitif]|/%[b|kɔgnitif]/|когнитивный |
-|]
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 33 -->
+signe
+montagne
+ligne
+panier
+meunier
+gnose
+gnome
+gneiss
+gnou
+diagnostic
+agnostique
+prognathe
+stagner
+cognitif
+</prosody>
+</voice>
+</speak>

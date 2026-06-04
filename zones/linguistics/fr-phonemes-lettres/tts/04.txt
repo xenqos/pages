@@ -1,10 +1,29 @@
-# %[b|a]
-
-|%[r|a]|в любой позиции|%[r|gare, carte, place]~~%[b0500|вокзал, карта, место]
-|%[r|à]|в любой позиции|%[r|à, là, voilà]~~%[b0500|к, там, вот]
-|%[r|e]|в наречиях на emment|%[r|prudemment, intelligemment, patiemment]~~%[b0500|осторожно, умно, терпеливо]
-|%[r|e]|в словах|%[r|femme, solennel, couenne]~~%[b0500|женщина, торжественный, свиная кожа]
-|%[r|oe]|в любой позиции|%[r|moelle, moelleux, moellon]~~%[b0500|сердцевина,  нежный, щебень]
-|%[r|oê]|в любой позиции|%[r|poêle]~~%[b0500|балдахин, печка]
-|%[r|oi]|в любой позиции|%[r|pois, trois, foi]~~%[b0500|горох, три, вера]
-|%[r|oy]|в любой позиции|%[r|croyable, employer, foyer]~~%[b0500|правдоподобно, использование, очаг]
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 04 -->
+gare
+carte
+place
+à
+là
+voilà
+prudemment
+intelligemment
+patiemment
+femme
+solennel
+couenne
+moelle
+moelleux
+moellon
+poêle
+pois
+trois
+foi
+croyable
+employer
+foyer
+</prosody>
+</voice>
+</speak>

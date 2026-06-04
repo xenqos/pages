@@ -1,12 +1,22 @@
-# %[b|i]
-
-|%[r|i]|в любой позиции|%[r|ici, merci, difficile]~~%[b0500|здесь, спасибо, трудно]
-|%[r|î]|в любой позиции ¹|%[r|île, dîner, gîte]~~%[b0500|остров, ужин, жильё]
-|%[r|î]|в любой позиции ²|%[r|fîmes, vîtes, prétendît]~~%[b0500|сделали, увидели, потребовали]
-|%[r|ï]|в любой позиции|%[r|haïr, inouï, laïque]~~%[b0500|ненавидеть, невероятный, светский]
-|%[r|y]|в любой позиции|%[r|hymne, synonyme, bicyclette]~~%[b0500|гимн, синоним, велосипед]
-
-[!
-¹ до реформы 1990 года
-² после реформы 1990 года только в passé simple и imparfait du subjonctif
-!]
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 01 -->
+ici
+merci
+difficile
+île
+dîner
+gîte
+fîmes
+vîtes
+prétendît
+haïr
+inouï
+laïque
+hymne
+synonyme
+bicyclette
+</prosody>
+</voice>
+</speak>

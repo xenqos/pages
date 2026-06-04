@@ -1,21 +1,20 @@
-# %[b|ɔ]
-
-|%[r|o]|в закрытом слоге|%[r|alors, votre, pomme]~~%[b0500|тогда, ваше, яблоко]
-|%[r|aur]|в конце слова|%[r|restaure, centaure, dinosaure]~~%[b0500|восстановления, кентавр, динозавр]
-|%[r|u]|в латинских слова|%[r|forum, radium, césium]~~%[b0500|форум, радий, цезий]
-
-__Исключения:__
-
-греческие слова:
-
-[|
-|cosmos|/%[b|kosmos]/|космос|
-|éros  |/%[b|eʁos  ]/|эрос  |
-|]
-
-слова на %[r|os]:
-
-[|
-|nullos  |/%[b|nylos  ]/|нет           |
-|craignos|/%[b|kʁɛnjos]/|подозрительный|
-|]
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 11 -->
+alors
+votre
+pomme
+restaure
+centaure
+dinosaure
+forum
+radium
+césium
+cosmos
+éros
+nullos
+craignos
+</prosody>
+</voice>
+</speak>

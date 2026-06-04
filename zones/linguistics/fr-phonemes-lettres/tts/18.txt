@@ -1,5 +1,16 @@
-# %[b|ɥ]
-
-|%[r|u]|перед гласным|%[r|nuit, ruelle, suivre]~~%[b0500|ночь, аллея, следовать]
-|%[r|gu]|в научных словах|%[r|linguiste, aiguille, ambigüité]~~%[b0500|лингвист, игла, двусмысленность]
-|%[r|qu]|в научных словах|%[r|équilatéral, requiem, ubiquité]~~%[b0500|равносторонний, реквием, повсеместность]
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 18 -->
+nuit
+ruelle
+suivre
+linguiste
+aiguille
+ambigüité
+équilatéral
+requiem
+ubiquité
+</prosody>
+</voice>
+</speak>
