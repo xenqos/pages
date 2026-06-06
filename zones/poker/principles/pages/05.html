@@ -18,7 +18,7 @@
   
 </head>
 <body onload='fncGetDivState(); fncGetScrollPosition();'>
-<audio id='idTrack' src='../sounds/05.opus' preload='auto'></audio>
+
 <div id='idPanel'>
 <div id='idTopbar'>
   <div id='idTopbarNavigation'>
@@ -27,179 +27,78 @@
     <a href='04.html'><span class='clNavLeft'></span></a>
     <a href='../index.html'><span class='clNavUp'></span></a>
     <a href='06.html'><span class='clNavRight'></span></a>
-<span class='clNavRewind' onpointerdown='fncRewindTrack(&quot;idTrack&quot;, event)'></span><span class='clNavPlay' onpointerdown='fncPlayTrack(&quot;idTrack&quot;, event)'></span> 
+
   </div>
 </div>
 <div id='idContent'>
 
-<h6>Table</h6>
+<h6>Cards</h6>
 
+<h1>Hand Announcements </h1>
 
-<h1>Formats</h1>
+<h2>High Card</h2>
+<q class='s'>3</q><q class='s'>4</q><q class='c'>8</q><q class='h'>J</q><q class='s'>A</q><br>
+&ensp;Ace High<br>
 
-Standard Table Sizes<br>
+<h2>Two Pair</h2>
+<q class='c'>A</q><q class='d'>A</q><q class='h'>8</q><q class='d'>8</q><q class='d'>5</q><br>
+&ensp;Aces up<br>
+&ensp;Aces over Eights<br>
+<br>
+<q class='s'>J</q><q class='d'>J</q><q class='c'>T</q><q class='c'>T</q><q class='h'>2</q><br>
+&ensp;Jacks and Tens<br>
 
-<ul>
-<li>10 players: Full Ring</li>
-<li>&ensp;9 players: Full Ring</li>
-<li>&ensp;6 players: Short-Handed</li>
-<li>&ensp;2 players: Heads-Up</li>
-</ul>
+<blockquote>
+State higher pair first<br>
+Name pairs descending<br>
+</blockquote>
 
-<a target='_blank' href='../images/table-positions.webp'><img class='clImageThumb' src='../images/table-positions.webp'></a><br>
+<h2>Three of a Kind</h2>
+<q class='d'>9</q><q class='s'>9</q><q class='s'>9</q><br>
+&ensp;A Set<br>
+<br>
+<q class='h'>5</q><q class='d'>K</q><q class='s'>K</q><br>
+&ensp;Trips<br>
 
-<h2>10 Players</h2>
+<h2>Straight</h2>
 
-<a target='_blank' href='../images/table-positions-10.webp'><img class='clImageThumb' src='../images/table-positions-10.webp'></a><br>
+<q class='c'>A</q><q class='h'>2</q><q class='h'>3</q><q class='s'>4</q><q class='d'>5</q><br>
+&ensp;The Wheel<br>
 
-<div class='clOverflow'>
-<table>
-<tr>
-<td>01</td><td>Small Blind      </td><td>SB   </td><td>Early </td></tr>
-<tr><td>02</td><td>Big Blind        </td><td>BB   </td><td>Early </td></tr>
-<tr><td>03</td><td>Under the Gun    </td><td>UTG  </td><td>Early </td></tr>
-<tr><td>04</td><td>Under the Gun + 1</td><td>UTG+1</td><td>Early </td></tr>
-<tr><td>05</td><td>Under the Gun + 2</td><td>UTG+2</td><td>Middle</td></tr>
-<tr><td>06</td><td>Under the Gun + 3</td><td>UTG+3</td><td>Middle</td></tr>
-<tr><td>07</td><td>Lojack           </td><td>LJ   </td><td>Middle</td></tr>
-<tr><td>08</td><td>Hijack           </td><td>HJ   </td><td>Late  </td></tr>
-<tr><td>09</td><td>Cutoff           </td><td>CO   </td><td>Late  </td></tr>
-<tr><td>10</td><td>Button           </td><td>BTN  </td><td>Late  </td></tr>
-</table>
-</div>
+<blockquote>
+Lowest Straight<br>
+</blockquote>
 
+<q class='s'>T</q><q class='h'>J</q><q class='c'>Q</q><q class='s'>K</q><q class='h'>A</q><br>
+&ensp;Broadway<br>
 
-<h2>9 Players</h2>
+<blockquote>
+Highest Straight<br>
+</blockquote>
 
-<a target='_blank' href='../images/table-positions-09.webp'><img class='clImageThumb' src='../images/table-positions-09.webp'></a><br>
+<h2>Flush</h2>
 
-<div class='clOverflow'>
-<table>
-<tr>
-<td>01</td><td>Small Blind      </td><td>SB   </td><td>Early </td></tr>
-<tr><td>02</td><td>Big Blind        </td><td>BB   </td><td>Early </td></tr>
-<tr><td>03</td><td>Under the Gun    </td><td>UTG  </td><td>Early </td></tr>
-<tr><td>04</td><td>Under the Gun + 1</td><td>UTG+1</td><td>Early </td></tr>
-<tr><td>05</td><td>Under the Gun + 2</td><td>UTG+2</td><td>Middle</td></tr>
-<tr><td>06</td><td>Lojack           </td><td>LJ   </td><td>Middle</td></tr>
-<tr><td>07</td><td>Hijack           </td><td>HJ   </td><td>Late  </td></tr>
-<tr><td>08</td><td>Cutoff           </td><td>CO   </td><td>Late  </td></tr>
-<tr><td>09</td><td>Button           </td><td>BTN  </td><td>Late  </td></tr>
-</table>
-</div>
+<q class='d'>T</q><q class='d'>J</q><q class='d'>Q</q><q class='d'>K</q><q class='d'>A</q><br>
+&ensp;Nut Flush<br>
 
+<blockquote>
+Highest Flush<br>
+Nut, Nuts - best possible hand<br>
+</blockquote>
 
-<h2>8 Players</h2>
+<h2>Full House</h2>
 
-<a target='_blank' href='../images/table-positions-08.webp'><img class='clImageThumb' src='../images/table-positions-08.webp'></a><br>
-
-<div class='clOverflow'>
-<table>
-<tr>
-<td>01</td><td>Small Blind      </td><td>SB   </td><td>Early </td></tr>
-<tr><td>02</td><td>Big Blind        </td><td>BB   </td><td>Early </td></tr>
-<tr><td>03</td><td>Under the Gun    </td><td>UTG  </td><td>Early </td></tr>
-<tr><td>04</td><td>Under the Gun + 1</td><td>UTG+1</td><td>Early </td></tr>
-<tr><td>05</td><td>Lojack           </td><td>LJ   </td><td>Middle</td></tr>
-<tr><td>06</td><td>Hijack           </td><td>HJ   </td><td>Late  </td></tr>
-<tr><td>07</td><td>Cutoff           </td><td>CO   </td><td>Late  </td></tr>
-<tr><td>08</td><td>Button           </td><td>BTN  </td><td>Late  </td></tr>
-</table>
-</div>
-
-
-<h2>7 Players</h2>
-
-<a target='_blank' href='../images/table-positions-07.webp'><img class='clImageThumb' src='../images/table-positions-07.webp'></a><br>
-
-<div class='clOverflow'>
-<table>
-<tr>
-<td>01</td><td>Small Blind  </td><td>SB </td><td>Early </td></tr>
-<tr><td>02</td><td>Big Blind    </td><td>BB </td><td>Early </td></tr>
-<tr><td>03</td><td>Under the Gun</td><td>UTG</td><td>Early </td></tr>
-<tr><td>04</td><td>Lojack       </td><td>LJ </td><td>Middle</td></tr>
-<tr><td>05</td><td>Hijack       </td><td>HJ </td><td>Late  </td></tr>
-<tr><td>06</td><td>Cutoff       </td><td>CO </td><td>Late  </td></tr>
-<tr><td>07</td><td>Button       </td><td>BTN</td><td>Late  </td></tr>
-</table>
-</div>
-
-
-<h2>6 Players</h2>
-
-<a target='_blank' href='../images/table-positions-06.webp'><img class='clImageThumb' src='../images/table-positions-06.webp'></a><br>
-
-<div class='clOverflow'>
-<table>
-<tr>
-<td>01</td><td>Small Blind  </td><td>SB   </td><td>Early </td></tr>
-<tr><td>02</td><td>Big Blind    </td><td>BB   </td><td>Early </td></tr>
-<tr><td>03</td><td>Under the Gun</td><td>UTG  </td><td>Early </td></tr>
-<tr><td>04</td><td>Hijack       </td><td>HJ   </td><td>Late  </td></tr>
-<tr><td>05</td><td>Cutoff       </td><td>CO   </td><td>Late  </td></tr>
-<tr><td>06</td><td>Button       </td><td>BTN  </td><td>Late  </td></tr>
-</table>
-</div>
-
-
-<h2>5 Players</h2>
-
-<a target='_blank' href='../images/table-positions-05.webp'><img class='clImageThumb' src='../images/table-positions-05.webp'></a><br>
-
-<div class='clOverflow'>
-<table>
-<tr>
-<td>01</td><td>Small Blind  </td><td>SB   </td><td>Early </td></tr>
-<tr><td>02</td><td>Big Blind    </td><td>BB   </td><td>Early </td></tr>
-<tr><td>03</td><td>Under the Gun</td><td>UTG  </td><td>Early </td></tr>
-<tr><td>04</td><td>Cutoff       </td><td>CO   </td><td>Late  </td></tr>
-<tr><td>05</td><td>Button       </td><td>BTN  </td><td>Late  </td></tr>
-</table>
-</div>
-
-
-<h2>4 Players</h2>
-
-<a target='_blank' href='../images/table-positions-04.webp'><img class='clImageThumb' src='../images/table-positions-04.webp'></a><br>
-
-<div class='clOverflow'>
-<table>
-<tr>
-<td>01</td><td>Small Blind  </td><td>SB   </td><td>Early </td></tr>
-<tr><td>02</td><td>Big Blind    </td><td>BB   </td><td>Early </td></tr>
-<tr><td>03</td><td>Under the Gun</td><td>UTG  </td><td>Early </td></tr>
-<tr><td>04</td><td>Button       </td><td>BTN  </td><td>Late  </td></tr>
-</table>
-</div>
-
-
-<h2>3 Players</h2>
-
-<a target='_blank' href='../images/table-positions-03.webp'><img class='clImageThumb' src='../images/table-positions-03.webp'></a><br>
-
-<div class='clOverflow'>
-<table>
-<tr>
-<td>01</td><td>Small Blind</td><td>SB </td></tr>
-<tr><td>02</td><td>Big Blind  </td><td>BB </td></tr>
-<tr><td>04</td><td>Button     </td><td>BTN</td></tr>
-</table>
-</div>
-
-
-<h2>2 Players (Heads-Up)</h2>
-
-<a target='_blank' href='../images/table-positions-02.webp'><img class='clImageThumb' src='../images/table-positions-02.webp'></a><br>
-
-<div class='clOverflow'>
-<table>
-<tr>
-<td>01</td><td>Small Blind       </td><td>SB      </td></tr>
-<tr><td>02</td><td>Big Blind / Button</td><td>BB / BTN</td></tr>
-</table>
-</div>
-
+<q class='h'>Q</q><q class='d'>Q</q><q class='c'>Q</q><q class='h'>7</q><q class='c'>7</q><br>
+&ensp;Queens full of Sevens<br>
+&ensp;Queens over Sevens<br>
+<br>
+<br>
+<br>
+<!--<br>
+In a Full House, the three-of-a-kind determines the strength of the hand first.<br>
+For example, Q Q Q 7 7 beats 7 7 7 Q Q because Queens are higher than Sevens.<br>
+Leading with the phrase &quot;Queens full...&quot; instantly tells the other players exactly how strong the hand is.<br>
+-->
 
 
 </div>

@@ -18,7 +18,7 @@
   
 </head>
 <body onload='fncGetDivState(); fncGetScrollPosition();'>
-<audio id='idTrack' src='../sounds/04.opus' preload='auto'></audio>
+
 <div id='idPanel'>
 <div id='idTopbar'>
   <div id='idTopbarNavigation'>
@@ -27,38 +27,28 @@
     <a href='03.html'><span class='clNavLeft'></span></a>
     <a href='../index.html'><span class='clNavUp'></span></a>
     <a href='05.html'><span class='clNavRight'></span></a>
-<span class='clNavRewind' onpointerdown='fncRewindTrack(&quot;idTrack&quot;, event)'></span><span class='clNavPlay' onpointerdown='fncPlayTrack(&quot;idTrack&quot;, event)'></span> 
+
   </div>
 </div>
 <div id='idContent'>
 
 <h6>Cards</h6>
 
-<h1>Combinations Categories</h1>
+<h1>Number of Combinations</h1>
 
-<blockquote>
-suited<br>
-offsuit<br>
-</blockquote>
+<pre><code>Royal Flush               4 &nbsp;
+Straight Flush           36 &nbsp;
+Four of a Kind          624 &nbsp;
+Full House            3,744 &nbsp;
+Flush                 5,108 &nbsp;</code></pre>
 
-<blockquote>
-connected<br>
-gapped<br>
-</blockquote>
 
-<blockquote>
-Pairs<br>
-Connected Cards<br>
-Gapped Cards<br>
-Suited Connectors<br>
-Suited Gappers<br>
-</blockquote>
+<pre><code>Straight             10,200 &nbsp;
+Three of a Kind      54,912 &nbsp;
+Two Pair            123,552 &nbsp;
+One Pair          1,098,240 &nbsp;
+High Card         1,302,540 &nbsp;</code></pre>
 
-<h2>Top 5 Suited Connectors</h2>
-<q class='z'>A</q><q class='z'>K</q>s &nbsp; <q class='z'>A</q><q class='z'>2</q>s &nbsp; <q class='z'>K</q><q class='z'>Q</q>s &nbsp; <q class='z'>Q</q><q class='z'>J</q>s &nbsp; <q class='z'>J</q><q class='z'>T</q>s<br>
-
-<h2>Top 5 Suited Gappers</h2>
-<q class='z'>A</q><q class='z'>Q</q>s &nbsp; <q class='z'>K</q><q class='z'>J</q>s &nbsp; <q class='z'>Q</q><q class='z'>T</q>s &nbsp; <q class='z'>J</q><q class='z'>9</q>s &nbsp; <q class='z'>T</q><q class='z'>8</q>s<br>
 
 
 </div>

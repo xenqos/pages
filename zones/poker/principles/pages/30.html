@@ -15,8 +15,7 @@
   <link rel='stylesheet' media='screen' href='../styles/local.css'>
   <script defer src='../../../../scripts/global.js'></script>
   <script defer src='../scripts/local.js'></script>
-  <script>MathJax={tex: {inlineMath: [['$', '$'], ['((', '))']], processEscapes: true}};</script>
-  <script id='MathJax-script' async src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'></script>
+  
 </head>
 <body onload='fncGetDivState(); fncGetScrollPosition();'>
 
@@ -35,72 +34,15 @@
 
 <h6>Odds & Probability</h6>
 
-<h1>Outs Probability</h1>
+<h1>Odds Types</h1>
 
-<blockquote>
-47 cards after Flop<br>
-46 cards after Turn<br>
-</blockquote>
+<ul>
+<li>Pot Odds</li>
+<li>Implied Odds</li>
+<li>Equity</li>
+<li>Pot odds in relation to equity</li>
+</ul>
 
-<h6>Probability of Hitting on Turn (%)</h6>
-<div class='clOverflow'>
-$$
-\begin{array}{l}<br>
-\Large {Outs \over {47 \times 100}} \\<br>
-\\<br>
-\end{array}<br>
-$$
-</div>
-
-<h6>Probability of Not Hitting on Turn (%)</h6>
-<div class='clOverflow'>
-$$
-\begin{array}{l}<br>
-\Large {(47 - Outs) \over {47 \times 100}} \\<br>
-\\<br>
-\end{array}<br>
-$$
-</div>
-
-<h6>Probability of Hitting on River (%)</h6>
-<div class='clOverflow'>
-$$
-\begin{array}{l}<br>
-\Large {Outs \over {46 \times 100}} \\<br>
-\\<br>
-\end{array}<br>
-$$
-</div>
-
-<h6>Probability of Not Hitting on River (%)</h6>
-<div class='clOverflow'>
-$$
-\begin{array}{l}<br>
-\Large {(46 - Outs) \over {46 \times 100}} \\<br>
-\\<br>
-\end{array}<br>
-$$
-</div>
-
-<h6>Combined Probability of Hitting (%)</h6>
-<div class='clOverflow'>
-$$
-\begin{array}{l}<br>
-\Large {(} \large {1} - \Large {(47 - Outs) \over 47} \times {(46 - Outs) \over 46}) \large {\times 100} \\<br>
-\\<br>
-\end{array}<br>
-$$
-</div>
-
-<h6>Combined Probability of Not Hitting (%)</h6>
-<div class='clOverflow'>
-$$
-\begin{array}{l}<br>
-\Large {(47 - Outs) \over 47} \times {(46 - Outs) \over 46} \large {\times 100} \\<br>
-\\<br>
-\end{array}<br>
-$$
-</div>
 
 
 </div>

@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Principles</title>
+  <link rel='preload' href='./styles/fonts/Roboto-400.woff2' as='font' type='font/woff2' crossorigin>
+  <link rel='icon' type='image/x-icon' href='../../../../favicon.ico'>
+  <link rel='icon' type='image/png' sizes='32x32'   href='../../../../images/favicons/favicon-032.png'>
+  <link rel='icon' type='image/png' sizes='128x128' href='../../../../images/favicons/favicon-128.png'>
+  <link rel='icon' type='image/png' sizes='180x180' href='../../../../images/favicons/favicon-180.png'>
+  <link rel='icon' type='image/png' sizes='192x192' href='../../../../images/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='512x512' href='../../../../images/favicons/favicon-512.png'>
+  <link rel='stylesheet' media='screen' href='../../../../styles/global.css'>
+  <link rel='stylesheet' media='screen' href='../styles/local.css'>
+  <script defer src='../../../../scripts/global.js'></script>
+  <script defer src='../scripts/local.js'></script>
+  <script>MathJax={tex: {inlineMath: [['$', '$'], ['((', '))']], processEscapes: true}};</script>
+  <script id='MathJax-script' async src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'></script>
+</head>
+<body onload='fncGetDivState(); fncGetScrollPosition();'>
+
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../../../../index.html'><span class='clNavHome'></span></a>
+    <a href='../../index.html'><span class='clNavIndex'></span></a>
+    <a href='39.html'><span class='clNavLeft'></span></a>
+    <a href='../index.html'><span class='clNavUp'></span></a>
+    <a href='41.html'><span class='clNavRight'></span></a>
+
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>Explain Pot Odds.md</h1>
+
+Topic: Poker No Limit Texas Hold&#39;em.<br>
+Explain Pot Odds. Do not refer to Actual Odds -- I know their relationship, it&#39;s just I want to understand Pot Odds first.<br>
+
+<h3>What Pot Odds Are</h3>
+Pot odds are a standalone mathematical ratio or percentage that measures the <b>risk vs. reward</b> of a single call decision. They compare the amount of money you must put into the pot to the total amount of money that will be in the pot after you call. Pot odds do not describe your hand, your chances of winning, or future betting. They strictly quantify the payoff the pot is offering you right now for staying in the hand.<br>
+
+<hr class='clHr'>
+
+
+<h3>How to Calculate Pot Odds</h3>
+
+You can express pot odds in two interchangeable formats: <b>ratio</b> and <b>percentage</b>.<br>
+
+<h4>1. Ratio Format</h4>
+`Pot Odds = (Total Pot Before Your Call) : (Amount You Must Call)`<br>
+<br>
+*Note: &quot;Total Pot Before Your Call&quot; includes all dead money, previous streets' bets, and your opponent's current bet.*<br>
+<br>
+<b>Example:</b><br>
+- Current pot on the table: `$80`<br>
+- Opponent bets: `$40`<br>
+- Total pot before you act: `$120`<br>
+- Amount to call: `$40`<br>
+- Pot odds: `120 : 40` → simplifies to `3:1`<br>
+<br>
+This means for every `$1` you risk, the pot is offering `$3` in return.<br>
+
+<h4>2. Percentage Format</h4>
+$Pot Odds \% = (Amount to Call) ÷ (Total Pot After Your Call) × 100$  <br>
+<br>
+<b>Same Example:</b><br>
+- Amount to call: `$40`<br>
+- Total pot after your call: `$120 (existing) + $40 (your call) = $160`<br>
+- Calculation: `$40 ÷ $160 = 0.25` → `25%`<br>
+<br>
+This means you are putting in 25% of the final pot to claim 100% of it.<br>
+
+<hr class='clHr'>
+
+
+<h3>What the Numbers Represent in Isolation</h3>
+- <b>A higher ratio/lower percentage</b> (e.g., `5:1` or `16.7%`) means the pot is offering a large reward relative to your risk. The payoff is generous.<br>
+- <b>A lower ratio/higher percentage</b> (e.g., `1.5:1` or `40%`) means the pot is offering a smaller reward relative to your risk. The payoff is tighter.<br>
+- The numbers are <b>purely financial</b>. They answer: *&quot;If I put this much money in, how much money am I competing for?&quot;* Nothing more, nothing less.<br>
+
+<hr class='clHr'>
+
+
+<h3>How Pot Odds Behave in No-Limit Texas Hold'em</h3>
+- <b>They change with every bet or raise.</b> A small bet leaves the pot odds wide. A large bet or overbet shrinks them dramatically.<br>
+- <b>They are street-specific.</b> The calculation only uses money already in the center and the current bet. Money from previous streets is already &quot;dead&quot; and counts toward the pot total.<br>
+- <b>They reset after your action.</b> Once you call, fold, or raise, a new decision point (with new pot odds) will be created on the next street or after opponent action.<br>
+- <b>In NLHE, pot odds can vary wildly.</b> Because players can bet any amount up to their stack, pot odds can range from extremely favorable (tiny bets into large pots) to highly unfavorable (massive overbets).<br>
+
+<hr class='clHr'>
+
+
+<h3>What Pot Odds Do *Not* Include</h3>
+To keep the concept clean and isolated:<br>
+- They do not account for your hand strength.<br>
+- They do not factor in future betting rounds.<br>
+- They do not adjust for multiple opponents, table dynamics, or player tendencies.<br>
+- They are a snapshot of the immediate financial structure of the pot, not a predictive tool.<br>
+
+<hr class='clHr'>
+
+
+<h3>Quick Summary</h3>
+Pot odds are a risk/reward metric calculated as `(Total Pot) : (Call Amount)` or `(Call Amount) ÷ (Final Pot)`. They tell you exactly how much money you must risk to win the money currently in play. In NLHE, they shift with every bet and provide a clear, static financial baseline for evaluating the immediate payoff of a call. Once you're comfortable calculating and interpreting them in isolation, you can layer additional decision-making concepts on top.<br>
+
+
+</div>
+</div>
+</body>
+</html>

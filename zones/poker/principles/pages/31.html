@@ -34,19 +34,56 @@
 
 <h6>Odds & Probability</h6>
 
-<h1>Hand Ranking O & P</h1>
+<h1>Outs Calculation</h1>
 
-<pre><code>Royal Flush       1:649,739.000    0.000154% &nbsp;
-Straight Flush    1:72,192.000     0.001390% &nbsp;
-Four Of A Kind    1:4,165.000      0.024000% &nbsp;
-Full House        1:693.170        0.144100% &nbsp;
-Flush             1:508.800        0.196500% &nbsp;
-Straight          1:253.800        0.392500% &nbsp;
-Three Of A Kind   1:46.330         2.112800% &nbsp;
-Two Pair          1:20.000         4.753900% &nbsp;
-One Pair          1:1.366         42.256900% &nbsp;
-High Card         1:0.995         50.117700% &nbsp;</code></pre>
+<blockquote>
+Out - One Card that can improve Hand<br>
+Count Card as Out once<br>
+</blockquote>
 
+<div class='clOverflow'>
+<table>
+<tr>
+<th>Type of Draw</th><th>Outs</th></tr>
+<tr><td>Set to Four of a Kind                <br><q class='s'>9</q><q class='c'>9</q><q class='d'>9</q>               </td><td> 1</td></tr>
+<tr><td>Pair to Set                          <br><q class='h'>8</q><q class='d'>8</q>                     </td><td> 2</td></tr>
+<tr><td>One Overcard (*) to Pair             <br><q class='s'>J</q>                           </td><td> 3</td></tr>
+<tr><td>Inside Straight Draw                </td><td> 4</td></tr>
+<tr><td>Two Pair to Full House              </td><td> 4</td></tr>
+<tr><td>One Pair to Two Pair                </td><td> 5</td></tr>
+<tr><td>One Pair to Set                     </td><td> 5</td></tr>
+<tr><td>No Pair to Pair                     </td><td> 6</td></tr>
+<tr><td>Trips to Full House                 </td><td> 6</td></tr>
+<tr><td>Two Overcards to Over Pair          </td><td> 6</td></tr>
+<tr><td>Set to Full House                   </td><td> 7</td></tr>
+<tr><td>Open-Ended Straight Draw            </td><td> 8</td></tr>
+<tr><td>Flush Draw                          </td><td> 9</td></tr>
+<tr><td>Inside Straight Draw & Two Overcards</td><td>10</td></tr>
+<tr><td>Inside Straight Draw & Flush Draw   </td><td>12</td></tr>
+<tr><td>Open-Ended Straight & Flush Draw    </td><td>15</td></tr>
+</table>
+</div>
+
+<blockquote>
+* Overcard - card in hand higher than the highest card on board<br>
+</blockquote>
+
+<h2>Blocker Example</h2>
+
+<blockquote>
+Blocker - One Card that prevents having combinations<br>
+</blockquote>
+
+<h3>Example</h3>
+
+Pocket<br>
+<q class='s'>K</q><br>
+<br>
+Flop<br>
+<q class='s'>T</q><q class='s'>J</q><q class='s'>Q</q><br>
+<br>
+Result<br>
+Blocker to Flush, Blocker to Straight<br>
 
 
 </div>

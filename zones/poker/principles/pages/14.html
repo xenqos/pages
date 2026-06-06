@@ -35,64 +35,158 @@
 
 <h6>Game</h6>
 
-<h1>Chips</h1>
+<h1>Betting Rounds</h1>
 
-<h2>Home</h2>
-<a target='_blank' href='../images/chip-values-01.webp'><img class='clImageThumb' src='../images/chip-values-01.webp'></a><br>
+<h2>Pre-Flop</h2>
+<blockquote>
+'Big Blind' is 'Live Blind'<br>
+'Small Blind' places small blind<br>
+'Big Blind' places big blind<br>
+'Dealer' deal 'Hole Cards' starting from left<br>
+Each player clockwise places: 'Fold' / 'Call' / 'Raise'<br>
+If no raise has been made, 'Big Blind' may 'Check' when action returns to them<br>
+If a raise has been made, 'Big Blind' may 'Fold' / 'Call' / 'Raise'<br>
+</blockquote>
 
-<div class='clOverflow'>
-<table>
-<tr>
-<th>Color</th><th>Value</th></tr>
-<tr><td>White</td><td>$1  </td></tr>
-<tr><td>Red  </td><td>$5  </td></tr>
-<tr><td>Blue </td><td>$10 </td></tr>
-<tr><td>Green</td><td>$25 </td></tr>
-<tr><td>Black</td><td>$100</td></tr>
-</table>
-</div>
+<ul>
+<li>'Big Blind' = 2 x 'Small Blind'</li>
+<li>'Call' = 'Big Blind'</li>
+<li>Minimum opening raise = 2 x 'Big Blind'</li>
+<li>Any subsequent raise must be at least the size of the previous raise</li>
+</ul>
 
+<h2>Flop</h2>
+<blockquote>
+'Dealer' burns top card<br>
+'Dealer' deals 'Flop Community Cards' (3 cards)<br>
+'Small Blind' acts first: 'Fold' / 'Check' / 'Bet'<br>
+Each player clockwise: 'Fold' / 'Check' / 'Bet' / 'Call' / 'Raise'<br>
+'Check-Raise' is allowed<br>
+</blockquote>
 
-<h2>Standard</h2>
-<a target='_blank' href='../images/chip-values-02.webp'><img class='clImageThumb' src='../images/chip-values-02.webp'></a><br>
+<h2>Turn</h2>
+<blockquote>
+'Dealer' burns top card<br>
+'Dealer' deals 'Turn Community Card' - 'Fourth Street' (1 card)<br>
+'Small Blind' acts first: 'Fold' / 'Check' / 'Bet'<br>
+Each player clockwise: 'Fold' / 'Check' / 'Bet' / 'Call' / 'Raise'<br>
+'Check-Raise' is allowed<br>
+</blockquote>
 
-<div class='clOverflow'>
-<table>
-<tr>
-<th>Color</th><th>Value</th></tr>
-<tr><td>White </td><td>$1    </td></tr>
-<tr><td>Red   </td><td>$5    </td></tr>
-<tr><td>Orange</td><td>$10   </td></tr>
-<tr><td>Yellow</td><td>$20   </td></tr>
-<tr><td>Green </td><td>$25   </td></tr>
-<tr><td>Black </td><td>$100  </td></tr>
-<tr><td>Purple</td><td>$500  </td></tr>
-<tr><td>Maroon</td><td>$1,000</td></tr>
-</table>
-</div>
+<h2>River</h2>
+<blockquote>
+'Dealer' burns top card<br>
+'Dealer' deals 'River Community Card' - 'Fifth Street' (1 card)<br>
+'Small Blind' acts first: 'Fold' / 'Check' / 'Bet'<br>
+Each player clockwise: 'Fold' / 'Check' / 'Bet' / 'Call' / 'Raise'<br>
+'Check-Raise' is allowed<br>
+</blockquote>
 
+<h2>Showdown</h2>
+<blockquote>
+All players still in hand reveal 'Hole Cards'<br>
+The best five-card 'Hand' using any combination of hole cards and community cards wins<br>
+If all remaining players fold except one, no showdown occurs<br>
+</blockquote>
 
-<h2>Tournament</h2>
-<a target='_blank' href='../images/chip-values-03.webp'><img class='clImageThumb' src='../images/chip-values-03.webp'></a><br>
+<h3>Raise & Re-raise</h3>
 
-<div class='clOverflow'>
-<table>
-<tr>
-<th>Color</th><th>Value</th></tr>
-<tr><td>Green             </td><td>$25       </td></tr>
-<tr><td>Black             </td><td>$100      </td></tr>
-<tr><td>Light Blue        </td><td>$500      </td></tr>
-<tr><td>Yellow            </td><td>$1000     </td></tr>
-<tr><td>Orange            </td><td>$5000     </td></tr>
-<tr><td>Dark Green        </td><td>$25,000   </td></tr>
-<tr><td>Lavender          </td><td>$100,000  </td></tr>
-<tr><td>Beige             </td><td>$250,000  </td></tr>
-<tr><td>Red (Oversized)   </td><td>$500,000  </td></tr>
-<tr><td>Yellow (Oversized)</td><td>$1,000,000</td></tr>
-<tr><td>Purple Oversized  </td><td>$5,000,000</td></tr>
-</table>
-</div>
+<blockquote>
+Minimum raise = size of the last bet or raise<br>
+Example: Bet $10 → minimum raise = $20 total ($10 more)<br>
+</blockquote>
 
+<b>if</b><br>
+&ensp;  'Player' raises / re-raises<br>
+<b>then</b><br>
+&ensp;  All 'Players' starting from his left clockwise must match 'Raise' / 'Re-raise' or fold<br>
+  Betting stops when action returns to the player who made the last raise and all others have folded or called<br>
+<b>endif</b><br>
+<br>
+<b>if</b><br>
+&ensp;  'Players' >= 3 in 'Hand'<br>
+<b>then</b><br>
+&ensp;  3-4 'Raise' / 'Re-raise' maximum (casino dependent)<br>
+<b>else if</b><br>
+&ensp;  'Players' = 2 in 'Hand'<br>
+<b>then</b><br>
+&ensp;  'Raise' / 'Re-raise' unlimited (most casinos)<br>
+<b>endif</b><br>
+<br>
+<!--
+<h6>Game</h6>
+
+<h1>Betting Rounds</h1>
+
+<h2>Pre-Flop</h2>
+<blockquote>
+'Big Blind' is 'Live Blind'<br>
+'Small Blind' places small blind<br>
+'Big Blind' places big blind<br>
+'Dealer' deal 'Hole Cards' starting from left<br>
+Each player clockwise places: 'Fold' / 'Call' / 'Raise'<br>
+At 'Big Blind' 'Dealer' asks 'Option?'<br>
+'Big Blind' may 'Check' (if nobody Raised)<br>
+'Big Blind' may 'Call'  (if somebody Raised)<br>
+'Big Blind' may 'Raise' (if somebody Raised)<br>
+</blockquote>
+
+<ul>
+<li>'Big Blind' = 2 x 'Small Blind'</li>
+<li>'Call' = 'Big Blind'</li>
+</ul>
+
+<h2>Flop</h2>
+<blockquote>
+71.4% of potential cards<br>
+'Dealer' burns top card<br>
+'Dealer' deal 'Flop Community Cards'<br>
+'Small Blind' places: 'Fold' / 'Check' / 'Bet'<br>
+Each player clockwise places: 'Fold' / 'Check' / 'Bet' / 'Call' / 'Raise'<br>
+</blockquote>
+
+<h2>Turn</h2>
+<blockquote>
+14.3% of potential cards<br>
+'Dealer' burns top card<br>
+'Dealer' deal 'Turn Community Card' - 'Fourth Street'<br>
+'Small Blind' places: 'Fold' / 'Check' / 'Bet'<br>
+Each player clockwise places: 'Fold' / 'Check' / 'Bet' / 'Call' / 'Raise'<br>
+</blockquote>
+
+<h2>River</h2>
+<blockquote>
+14.3% of potential cards<br>
+'Dealer' burns top card<br>
+'Dealer' deal 'River Community Card' - 'Fifth Street'<br>
+'Small Blind' places: 'Fold' / 'Check' / 'Bet'<br>
+Each player clockwise places: 'Fold' / 'Check' / 'Bet' / 'Call' / 'Raise'<br>
+</blockquote>
+
+<h2>Showdown</h2>
+<blockquote>
+Show 'Hole Cards'<br>
+The best 'Hand' wins<br>
+</blockquote>
+
+<h3>Raise & Re-raise</h3>
+
+<b>if</b><br>
+&ensp;  'Player' raises / re-raises<br>
+<b>then</b><br>
+&ensp;  All 'Players' starting from his left clockwise must match 'Raise' / 'Re-raise'. <br> Thus the betting stops at 'Player' to the right of the one who made 'Raise' / 'Re-raise'<br>
+<b>endif</b><br>
+<br>
+<b>if</b><br>
+&ensp;  'Players' >= 3 in 'Hand' ('Game')<br>
+<b>then</b><br>
+&ensp;  3-4 'Raise' / 'Re-raise' - allowed<br>
+<b>else if</b><br>
+&ensp;  'Players' = 2 are in 'Hand' ('Game')<br>
+<b>else</b><br>
+&ensp;  'Raise' / 'Re-raise' - not limited<br>
+<b>endif</b><br>
+-->
 
 
 </div>

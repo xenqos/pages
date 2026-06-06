@@ -3,82 +3,8 @@
 
 use strict;
 use warnings;
+use utf8;
 use feature 'state';
-
-#-----------------------------------------------------------
-
-my @books =
-(
-  '1|poker/principles|Principles'
-, '0|poker/mathresources|Resources'
-
-, '1|dharma/principles|Принципы'
-, '0|dharma/questions|Вопросы'
-, '0|dharma/kriya|Крия'
-, '0|dharma/yoga-sutra|Йога-сутры'
-, '0|dharma/sankhya-karika|Санкхья-карика'
-, '0|dharma/mantra|Мантры'
-, '0|dharma/samhita|Самхиты'
-, '0|dharma/upanishad|Упанишады'
-, '0|dharma/bhagavad-gita|Бхагавад-гита'
-
-, '0|dao/daodejing|Дао Дэ Цзин'
-, '0|dao/stratagems|Стратагемы'
-, '0|dao/taiji-fuzhongwen|Тай Чи - Fu Zhong Wen'
-, '0|dao/taiji-moylinshin|Тай Чи - Moy Lin Shin'
-
-, '0|linguistics/bg-grammar|Граматика'
-, '0|linguistics/bg-words|Думи'
-, '0|linguistics/bg-phrases|Фрази'
-, '0|linguistics/bg-verbs|Глаголи'
-, '0|linguistics/bg-frequent-words|Честотен речник'
-, '0|linguistics/bg-berlitz|Berlitz'
-, '0|linguistics/bg-conversations|Разговори'
-
-, '0|linguistics/en-phonetics|Phonetics'
-, '0|linguistics/en-orthography|Orthography'
-, '0|linguistics/en-grammar|Grammar'
-, '0|linguistics/en-grammar-outline|Grammar Outline'
-, '0|linguistics/en-frequent-words|Frequent Words'
-, '0|linguistics/en-ielts-words|IELTS Words'
-, '0|linguistics/en-phrases|Phrases'
-, '0|linguistics/en-words|Words'
-, '0|linguistics/en-conversations|Conversations'
-, '0|linguistics/en-verbs-irregular|Irregular Verbs'
-, '0|linguistics/en-verbs-phrasal|Phrasal Verbs'
-
-, '0|linguistics/fr-phonetique|Phonétique tables'
-, '0|linguistics/fr-phonemes-lettres|De phonèmes à lettres'
-, '0|linguistics/fr-prononciation|Prononciation'
-, '0|linguistics/fr-haspire|H aspiré'
-, '1|linguistics/fr-grammaire|Grammaire'
-, '0|linguistics/fr-verbs|Verbs'
-, '0|linguistics/fr-mots|Mots'
-, '0|linguistics/fr-mots-frequents|Mots fréquents'
-, '0|linguistics/fr-expressions|Expressions'
-, '0|linguistics/fr-phrases-cliches|Phrases cliches'
-, '0|linguistics/fr-conversations|Conversations'
-, '0|linguistics/fr-dialogues|Dialogues'
-
-, '0|linguistics/de-phonetics|Phonetik'
-, '0|linguistics/de-grammar|Grammatik'
-, '0|linguistics/de-words|Слова'
-, '0|linguistics/de-nouns|Существительные'
-, '0|linguistics/de-adverbs|Наречия'
-, '0|linguistics/de-verbs|Глаголы'
-, '0|linguistics/de-strong-verbs|Сильные глаголы'
-, '0|linguistics/de-conversations|Разговоры'
-
-, '0|linguistics/sa-outline|Очерк'
-, '0|linguistics/sa-yoga-sutra|Йога-сутры'
-
-, '0|linguistics/ru-rhymes|Мистические рифмы'
-, '0|linguistics/sa-devanagari|Деванагари'
-
-, '0|toolbox/mn-banknotes-eur|Banknotes EUR'
-, '0|toolbox/eu-standards|EU Standards'
-
-);
 
 #-----------------------------------------------------------
 
@@ -90,10 +16,11 @@ my $dir_name_sounds  = 'sounds';
 my $file_name_index  = 'index.html';
 my $file_name_page   = 'page.html';
 
+my $file_books_index = './books.txt';
+
 my $ext_html         = 'html';
 my $ext_sound        = '';
 my @ext_codecs       = ('opus', 'aac', 'm4a', 'mp3');
-
 
 #-----------------------------------------------------------
 
@@ -106,7 +33,7 @@ sub get_template
   return $cache{$template_name} if exists $cache{$template_name};
 
   my $file_name = "${dir_templates}/${template_name}";
-  open my $file_handle, '<', $file_name or die ">>> No File '$file_name' $!";
+  open(my $file_handle, '<:utf8', $file_name) or die ">>> No File '$file_name' $!";
   my $file_content = do { local $/; <$file_handle> };
   close $file_handle;
 
@@ -127,7 +54,7 @@ sub get_markdown
   #---------------------------------------------------------
 
   # my $file_debug = "/home/lux/mnt/data/Temp/debug.txt";
-  # open(my $file_handle_debug, '>', $file_debug) or die ">>> No File '$file_debug': $!";
+  # open(my $file_handle_debug, '>:utf8', $file_debug) or die ">>> No File '$file_debug': $!";
   # print $file_handle_debug $source_content;
   # close($file_handle_debug);
 
@@ -470,7 +397,7 @@ sub get_index
   foreach my $file (@files)
   {
     my $file_name = "${dir_sources}/${file}";
-    open my $file_handle, '<', $file_name or die ">>> No File '$file_name': $!";
+    open(my $file_handle, '<:utf8', $file_name) or die ">>> No File '$file_name': $!";
     my $file_content = "\n" . do { local $/; <$file_handle> } . "\n";
     close $file_handle;
 
@@ -501,7 +428,7 @@ sub get_index
 
   $page =~ s/\$\{(\w+)\}/exists $variables{$1} ? $variables{$1} : ''/ge;
 
-  open(my $file_handle, '>', $file_index) or die ">>> No File '$file_index': $!";
+  open(my $file_handle, '>:utf8', $file_index) or die ">>> No File '$file_index': $!";
   print $file_handle $page;
   close($file_handle);
 }
@@ -540,7 +467,7 @@ sub get_pages
     my $file_name_noext = ($file =~ s/\.[^.]+$//r);
 
     my $file_text = "${dir_sources}/${file}";
-    open my $file_handle_text, '<', $file_text or die ">>> No File '$file_text' $!";
+    open(my $file_handle_text, '<:utf8', $file_text) or die ">>> No File '$file_text' $!";
     my $source_content = do { local $/; <$file_handle_text> };
     close($file_handle_text);
 
@@ -604,7 +531,7 @@ sub get_pages
     $page =~ s/\$\{(\w+)\}/exists $variables{$1} ? $variables{$1} : ''/ge;
 
     my $file_page = "${dir_pages}/${file_name_noext}.${ext_html}";
-    open(my $file_handle_page, '>', $file_page) or die ">>> No File '$file_page': $!";
+    open(my $file_handle_page, '>:utf8', $file_page) or die ">>> No File '$file_page': $!";
     print $file_handle_page $page;
     close($file_handle_page);
   }
@@ -614,13 +541,19 @@ sub get_pages
 
 sub main
 {
-  foreach my $item (@books)
+  open(my $file_handle, '<:utf8', $file_books_index) or die $!;
+  my @books = map  { chomp; my @f = split /;/; s/^\s+|\s+$//g for @f; \@f } grep { /\S/ && !/^\s*#+/ } <$file_handle>;
+
+  binmode STDOUT, ':utf8';
+
+  foreach my $book (@books)
   {
-    my ($status, $book, $title) = split(m/\|/, $item);
+    my ($path, $status, $title) = @$book;
+    unless (defined $status && defined $path && defined $title) { next; }
     next if $status eq "0";
-    print "${book} - ${title}\n";
-    get_index $book, $title;
-    get_pages $book, $title;
+    print "$path - $title\n";
+    get_index $path, $title;
+    get_pages $path, $title;
   }
 }
 

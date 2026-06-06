@@ -15,8 +15,7 @@
   <link rel='stylesheet' media='screen' href='../styles/local.css'>
   <script defer src='../../../../scripts/global.js'></script>
   <script defer src='../scripts/local.js'></script>
-  <script>MathJax={tex: {inlineMath: [['$', '$'], ['((', '))']], processEscapes: true}};</script>
-  <script id='MathJax-script' async src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'></script>
+  
 </head>
 <body onload='fncGetDivState(); fncGetScrollPosition();'>
 
@@ -33,77 +32,45 @@
 </div>
 <div id='idContent'>
 
-<h1>Explain Pot Odds.md</h1>
+<h6>Miscellanea</h6>
 
-Topic: Poker No Limit Texas Hold&#39;em.<br>
-Explain Pot Odds. Do not refer to Actual Odds -- I know their relationship, it&#39;s just I want to understand Pot Odds first.<br>
+<h1>Books</h1>
 
-<h3>What Pot Odds Are</h3>
-Pot odds are a standalone mathematical ratio or percentage that measures the <b>risk vs. reward</b> of a single call decision. They compare the amount of money you must put into the pot to the total amount of money that will be in the pot after you call. Pot odds do not describe your hand, your chances of winning, or future betting. They strictly quantify the payoff the pot is offering you right now for staying in the hand.<br>
+<div class='clOverflow'>
+<table>
+<tr>
+<td>  </td><td>Sklansky  </td><td>David   </td><td>1994</td><td>The Theory of Poker                                     </td></tr>
+<tr><td>  </td><td>Sklansky  </td><td>David   </td><td>1976</td><td>Hold’em Poker                                           </td></tr>
+<tr><td>x </td><td>Brunson   </td><td>Doyle   </td><td>1978</td><td>Super/System 2: A Course in Power Poker                 </td></tr>
+<tr><td>x </td><td>Brunson   </td><td>Doyle   </td><td>    </td><td>Super System                                            </td></tr>
+<tr><td>x </td><td>Harrington</td><td>Dan     </td><td>    </td><td>Harrington on Cash Games: Volume I                      </td></tr>
+<tr><td>x </td><td>Harrington</td><td>Dan     </td><td>    </td><td>Harrington on Cash Games: Volume II                     </td></tr>
+<tr><td>  </td><td>Jones     </td><td>Lee     </td><td>1994</td><td>Winning Low Limit Hold’em                               </td></tr>
+<tr><td>  </td><td>Malmuth   </td><td>Mason   </td><td>1993</td><td>Hold’em Poker for Advanced Players                      </td></tr>
+<tr><td>  </td><td>Malmuth   </td><td>Mason   </td><td>1996</td><td>Poker Essays                                            </td></tr>
+<tr><td>  </td><td>Caro      </td><td>Mike    </td><td>1994</td><td>The Body Language of Poker (a.k.a. The Book of Tells)   </td></tr>
+<tr><td>  </td><td>Hansen    </td><td>Gus     </td><td>2008</td><td>Every Hand Revealed                                     </td></tr>
+<tr><td>  </td><td>Gaines    </td><td>Owen    </td><td>    </td><td>Poker Math That Matters                                 </td></tr>
+<tr><td>  </td><td>Little    </td><td>Jonathan</td><td>    </td><td>Strategies for Beating Small Stakes Poker Cash Games    </td></tr>
+<tr><td>  </td><td>Sklansky  </td><td>David   </td><td>    </td><td>Small Stakes Hold ’em: Winning Big with Expert Play     </td></tr>
+<tr><td>  </td><td>Hardin    </td><td>Alton   </td><td>    </td><td>Essential Poker Math                                    </td></tr>
+<tr><td>  </td><td>Janda     </td><td>Matthew </td><td>    </td><td>Applications of No-Limit Hold’em                        </td></tr>
+<tr><td>  </td><td>Tendler   </td><td>Jared   </td><td>    </td><td>The Mental Game of Poker                                </td></tr>
+<tr><td>  </td><td>Tendler   </td><td>Jared   </td><td>    </td><td>The Mental Game of Poker 2                              </td></tr>
+<tr><td>  </td><td>Taylor    </td><td>Ian     </td><td>    </td><td>The Poker Mindset: Essential Attitudes for Poker Success</td></tr>
+<tr><td>  </td><td>Brunson   </td><td>Doyle   </td><td>    </td><td>The Godfather of Poker                                  </td></tr>
+<tr><td>  </td><td>Sexton    </td><td>Mike    </td><td>    </td><td>Life’s A Gamble                                         </td></tr>
+<tr><td>  </td><td>Elwood    </td><td>Zachary </td><td>    </td><td>Reading Poker Tells                                     </td></tr>
+<tr><td>  </td><td>Elwood    </td><td>Zachary </td><td>    </td><td>Verbal Poker                                            </td></tr>
+<tr><td>  </td><td>Paymar    </td><td>Dan     </td><td>2022</td><td>The Professional Poker Dealer's Handbook                </td></tr>
+</table>
+</div>
 
-<hr class='clHr'>
-
-
-<h3>How to Calculate Pot Odds</h3>
-
-You can express pot odds in two interchangeable formats: <b>ratio</b> and <b>percentage</b>.<br>
-
-<h4>1. Ratio Format</h4>
-`Pot Odds = (Total Pot Before Your Call) : (Amount You Must Call)`<br>
-<br>
-*Note: &quot;Total Pot Before Your Call&quot; includes all dead money, previous streets' bets, and your opponent's current bet.*<br>
-<br>
-<b>Example:</b><br>
-- Current pot on the table: `$80`<br>
-- Opponent bets: `$40`<br>
-- Total pot before you act: `$120`<br>
-- Amount to call: `$40`<br>
-- Pot odds: `120 : 40` → simplifies to `3:1`<br>
-<br>
-This means for every `$1` you risk, the pot is offering `$3` in return.<br>
-
-<h4>2. Percentage Format</h4>
-$Pot Odds \% = (Amount to Call) ÷ (Total Pot After Your Call) × 100$  <br>
-<br>
-<b>Same Example:</b><br>
-- Amount to call: `$40`<br>
-- Total pot after your call: `$120 (existing) + $40 (your call) = $160`<br>
-- Calculation: `$40 ÷ $160 = 0.25` → `25%`<br>
-<br>
-This means you are putting in 25% of the final pot to claim 100% of it.<br>
-
-<hr class='clHr'>
-
-
-<h3>What the Numbers Represent in Isolation</h3>
-- <b>A higher ratio/lower percentage</b> (e.g., `5:1` or `16.7%`) means the pot is offering a large reward relative to your risk. The payoff is generous.<br>
-- <b>A lower ratio/higher percentage</b> (e.g., `1.5:1` or `40%`) means the pot is offering a smaller reward relative to your risk. The payoff is tighter.<br>
-- The numbers are <b>purely financial</b>. They answer: *&quot;If I put this much money in, how much money am I competing for?&quot;* Nothing more, nothing less.<br>
-
-<hr class='clHr'>
-
-
-<h3>How Pot Odds Behave in No-Limit Texas Hold'em</h3>
-- <b>They change with every bet or raise.</b> A small bet leaves the pot odds wide. A large bet or overbet shrinks them dramatically.<br>
-- <b>They are street-specific.</b> The calculation only uses money already in the center and the current bet. Money from previous streets is already &quot;dead&quot; and counts toward the pot total.<br>
-- <b>They reset after your action.</b> Once you call, fold, or raise, a new decision point (with new pot odds) will be created on the next street or after opponent action.<br>
-- <b>In NLHE, pot odds can vary wildly.</b> Because players can bet any amount up to their stack, pot odds can range from extremely favorable (tiny bets into large pots) to highly unfavorable (massive overbets).<br>
-
-<hr class='clHr'>
-
-
-<h3>What Pot Odds Do *Not* Include</h3>
-To keep the concept clean and isolated:<br>
-- They do not account for your hand strength.<br>
-- They do not factor in future betting rounds.<br>
-- They do not adjust for multiple opponents, table dynamics, or player tendencies.<br>
-- They are a snapshot of the immediate financial structure of the pot, not a predictive tool.<br>
-
-<hr class='clHr'>
-
-
-<h3>Quick Summary</h3>
-Pot odds are a risk/reward metric calculated as `(Total Pot) : (Call Amount)` or `(Call Amount) ÷ (Final Pot)`. They tell you exactly how much money you must risk to win the money currently in play. In NLHE, they shift with every bet and provide a clear, static financial baseline for evaluating the immediate payoff of a call. Once you're comfortable calculating and interpreting them in isolation, you can layer additional decision-making concepts on top.<br>
+<!--<br>
+Dan Paymar, Donna Harris, Mason Malmuth<br>
+The Professional Poker Dealer's Handbook: Expanded Edition – 26 Dec 2022<br>
+https://books.google.bg/books?id=WuftlaUeX2gC&pg=PP3&hl=bg&source=gbs_selected_pages&cad=1#v=onepage&q&f=false<br>
+-->
 
 
 </div>

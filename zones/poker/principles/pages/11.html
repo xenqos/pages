@@ -34,30 +34,44 @@
 
 <h6>Game</h6>
 
-<h1>Action Lines</h1>
+<h1>Player Styles</h1>
 
-<h2>Limp/Fold&emsp;L/F</h2>
-&ensp;&ensp;Enter the pot by limping (calling the big blind) and then folds to a raise.<br>
+<h2>Loose</h2>
+&ensp;&ensp;Play many hands<br>
+&ensp;&ensp;Play weak hands<br>
 
-<h2>Limp/Raise&emsp;L/R</h2>
-&ensp;&ensp;Enter the pot by limping and then re-raises after someone else raises.<br>
+<h2>Tight</h2>
+&ensp;&ensp;Play strong hands<br>
+&ensp;&ensp;Fold weak hands<br>
 
-<h2>Check/Fold&emsp;X/F</h2>
-&ensp;&ensp;Check and then fold to an opponent’s bet.<br>
+<h2>Passive</h2>
+&ensp;&ensp;Call frequently<br>
+&ensp;&ensp;Raise rarely<br>
 
-<h2>Check/Call&emsp;X/C</h2>
-&ensp;&ensp;Check and then call an opponent’s bet.<br>
+<h2>Aggressive</h2>
+&ensp;&ensp;Bet frequently<br>
+&ensp;&ensp;Raise frequently<br>
+&ensp;&ensp;Call rarely<br>
 
-<h2>Check/Raise&emsp;X/R</h2>
-&ensp;&ensp;Check and then raise an opponent’s bet.<br>
+<h2>LAG</h2>
+&ensp;&ensp;Loose Aggressive<br>
 
-<h2>Bet/Bet&emsp;B/B</h2>
-&ensp;&ensp;Betting the turn after the opponent called or X/C the flop.<br>
-&ensp;&ensp;a.k.a. double-barreling or two-barreling.<br>
+<h2>TAG</h2>
+&ensp;&ensp;Tight Aggressive<br>
 
-<h2>Bet/Bet/Bet&emsp;B/B/B</h2>
-&ensp;&ensp;Betting the flop, turn, and river after the opponent called or X/C flop and turn.<br>
-&ensp;&ensp;a.k.a. triple-barreling.<br>
+<h3>Guidelines</h3>
+
+<b>if</b><br>
+&ensp;  Table - Loose / Aggressive<br>
+<b>then</b><br>
+&ensp;  Play Tighter<br>
+<b>endif</b><br>
+<br>
+<b>if</b><br>
+&ensp;  Table - Tight / Passive<br>
+<b>then</b><br>
+&ensp;  Play Looser<br>
+<b>endif</b><br>
 
 
 </div>

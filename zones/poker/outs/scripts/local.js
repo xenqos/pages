@@ -437,7 +437,166 @@ async function fncCountOuts()
       numComboOesdFlush = 15;
     }
 
-    // === 8. Total outs ===
+    // === 8. Exclusion filters (dead / tainted outs) ===
+    // Applies the 8 criteria for discounting outs that improve the hand
+    // but are still likely to lose at showdown against a realistic opponent range.
+
+    // Identify board-only cards (indices 2..numCards-1) and their ranks
+    const arrBoardCards = arrStageCards.slice(2);
+    const arrBoardRanks = arrBoardCards.map(fncGetRank);
+
+    // Is the board paired / has trips / has quads (from our earlier counters)?
+    const blnBoardPaired  = numPairs >= 1;
+    const blnBoardTrips   = numTrips >= 1;
+    const blnBoardTwoPair = numPairs >= 2;
+
+    // --- Criterion 1 & 2: Pairing a weak hole card into a dominated / easily
+    //     counterfeited two pair.
+    //     A two-pair out for hole card X is discounted when:
+    //       (a) X is ranked 6 or lower  (weak kicker, very likely dominated), OR
+    //       (b) X is lower than the highest unpaired board card (dominated kicker), OR
+    //       (c) the board already has a pair that can be counterfeited later
+    //           (on the flop only — on the turn there is no later street to counterfeit).
+    if (objOuts.numOnePairToTwoPair > 0 && !blnIsPocketPair)
+    {
+      // Highest unpaired board rank (singleton on the board)
+      let numHighestUnpairedBoard = 0;
+      arrBoardRanks.forEach(numR => {
+        if (arrRankCount[numR] === 1 && numR > numHighestUnpairedBoard)
+          numHighestUnpairedBoard = numR;
+      });
+
+      // Evaluate each hole card's two-pair out individually (3 outs each)
+      const fncHoleCardTwoPairExcluded = (numHoleRank) => {
+        if (numHoleRank === numPairedRank) return true; // already pairs the board pair — not a two-pair out
+
+        // Criterion 1: rank 6 or lower is a weak kicker
+        if (numHoleRank <= 6) return true;
+
+        // Criterion 2a: hole card is lower than highest unpaired board card → dominated kicker
+        if (numHighestUnpairedBoard > 0 && numHoleRank < numHighestUnpairedBoard) return true;
+
+        // Criterion 2b: flop only — board is already paired, two pair is
+        //               trivially counterfeited by any river board pair
+        if (blnIsFlop && blnBoardPaired) return true;
+
+        return false;
+      };
+
+      let numFiltered = 0;
+      if (fncHoleCardTwoPairExcluded(numHole1Rank)) numFiltered += 3;
+      if (fncHoleCardTwoPairExcluded(numHole2Rank)) numFiltered += 3;
+      objOuts.numOnePairToTwoPair = Math.max(0, objOuts.numOnePairToTwoPair - numFiltered);
+    }
+
+    // --- Criterion 3: Improving into a hand still behind the board texture.
+    //     (a) Making a pair when the board already has trips → you still lose to quads/FH.
+    //     (b) No-pair-to-pair when board has trips (already handled structurally, but
+    //         guard against any residual value when our pair is lower than trip rank).
+    if (blnBoardTrips)
+    {
+      // Any simple pair draw is meaningless against board trips
+      objOuts.numNoPairToPair = 0;
+      // Overcard outs are also irrelevant — a high pair still loses to trips
+      objOuts.numOvercardOuts   = 0;
+      objOuts.numTwoOvercardsOuts = 0;
+    }
+
+    // --- Criterion 4 & 7 & 8: Straight / flush outs tainted by board pairing.
+    //     When the completing card pairs the board (i.e. its rank already appears on
+    //     the board), anyone holding that rank now has trips/full house.
+    //     We filter straight outs by re-running the straight window check and removing
+    //     any completion rank that is already present on the board.
+    //     For flush draws, if the board is paired we reduce by 1 tainted out per
+    //     board-paired suit card that is in the flush suit (conservative estimate: -1).
+    if (objOuts.numGutshot > 0)
+    {
+      // Re-derive gutshot completion ranks to check for board-pairing taint
+      const arrGutshotTainted = [];
+      for (let numLow = 2; numLow <= 10; numLow++)
+      {
+        const arrWindow = [numLow, numLow+1, numLow+2, numLow+3, numLow+4];
+        let numHave = 0; let arrMissing = [];
+        arrWindow.forEach(numR => { if (arrPresentRanks[numR]) numHave++; else arrMissing.push(numR); });
+        if (numHave === 4)
+        {
+          const numMissing = arrMissing[0];
+          const blnIsGutshot = (numMissing !== numLow && numMissing !== numLow + 4);
+          if (blnIsGutshot && arrBoardRanks.includes(numMissing))
+          {
+            if (!arrGutshotTainted.includes(numMissing)) arrGutshotTainted.push(numMissing);
+          }
+        }
+      }
+      // Each tainted rank removes 4 outs (all 4 suits of that rank)
+      objOuts.numGutshot = Math.max(0, objOuts.numGutshot - arrGutshotTainted.length * 4);
+    }
+
+    if (objOuts.numOesd > 0)
+    {
+      const arrOesdTainted = [];
+      for (let numLow = 2; numLow <= 10; numLow++)
+      {
+        const arrWindow = [numLow, numLow+1, numLow+2, numLow+3, numLow+4];
+        let numHave = 0; let arrMissing = [];
+        arrWindow.forEach(numR => { if (arrPresentRanks[numR]) numHave++; else arrMissing.push(numR); });
+        if (numHave === 4)
+        {
+          const numMissing = arrMissing[0];
+          const blnIsOesd = (numMissing === numLow || numMissing === numLow + 4);
+          if (blnIsOesd && arrBoardRanks.includes(numMissing))
+          {
+            if (!arrOesdTainted.includes(numMissing)) arrOesdTainted.push(numMissing);
+          }
+        }
+      }
+      objOuts.numOesd = Math.max(0, objOuts.numOesd - arrOesdTainted.length * 4);
+    }
+
+    // Criterion 7: Flush completing into a paired board (someone may have a full house).
+    // Conservatively remove 1 out per board-paired rank that shares the flush suit.
+    if (objOuts.numFlushDraw > 0 && blnBoardPaired)
+    {
+      let numTaintedFlushOuts = 0;
+      arrBoardCards.forEach(strCard => {
+        const numR = fncGetRank(strCard);
+        const numS = fncGetSuit(strCard);
+        if (arrRankCount[numR] >= 2 && numS === numMaxSuitIndex) numTaintedFlushOuts++;
+      });
+      objOuts.numFlushDraw = Math.max(0, objOuts.numFlushDraw - numTaintedFlushOuts);
+    }
+
+    // --- Criterion 5: Dominated overcard outs.
+    //     If a hole card is an Ace or King and the board is unpaired, overcards are
+    //     generally valid. But if both hole cards are overcards yet one is ≤ 9
+    //     (e.g. Q and 4 both over a 2-3 board), the lower overcard is dominated
+    //     against any realistic broadway-holding opponent. Remove 3 outs for any
+    //     overcard ranked 9 or lower when the other hole card is already an overcard.
+    if (objOuts.numOvercardOuts > 0)
+    {
+      const blnH1Over = numHole1Rank > numHighestBoardRank;
+      const blnH2Over = numHole2Rank > numHighestBoardRank;
+      if (blnH1Over && blnH2Over)
+      {
+        // Both are overcards — discard the weaker one if it is ≤ 9
+        if (numHole1Rank <= 9) objOuts.numOvercardOuts = Math.max(0, objOuts.numOvercardOuts - 3);
+        if (numHole2Rank <= 9) objOuts.numOvercardOuts = Math.max(0, objOuts.numOvercardOuts - 3);
+        // Recompute twoOvercards if one was removed
+        if (objOuts.numOvercardOuts < 6) objOuts.numTwoOvercardsOuts = 0;
+      }
+    }
+
+    // --- Criterion 6: Runner-runner / backdoor draws.
+    //     These are never counted as outs in this calculator (they would only appear
+    //     as combo entries, which already require an explicit flush or straight draw
+    //     to be present — so backdoor-only hands correctly produce 0 outs already).
+    //     No additional code needed; this criterion is satisfied by the existing logic.
+
+    // Recompute combo draws after filtering (criteria 4/7/8 may have zeroed the draws)
+    if (objOuts.numGutshot === 0 || objOuts.numFlushDraw === 0) numComboGutshotFlush = 0;
+    if (objOuts.numOesd    === 0 || objOuts.numFlushDraw === 0) numComboOesdFlush    = 0;
+
+    // === 9. Total outs ===
     let numTotalOuts = 0;
 
     // Add combo draws first (they replace individual draws)
@@ -455,7 +614,7 @@ async function fncCountOuts()
                     objOuts.numTwoPairToFH + objOuts.numSetToFH + objOuts.numTripsToFH +
                     objOuts.numSetToQuads + objOuts.numOvercardOuts + objOuts.numOnePairToTwoPair;
 
-    // === 9. Prepare display array ===
+    // === 10. Prepare display array ===
     // FIXED: Removed duplicate entry for "Four of a Kind" (index 11)
     const arrOutDisplay = [
       objOuts.numPairToSet,
@@ -476,7 +635,7 @@ async function fncCountOuts()
       numComboOesdFlush
     ];
 
-    // === 10. Render table ===
+    // === 11. Render table ===
     strOutsTable += `<tr><td colspan=2 class='m'><b>${strStageName}</b></td></tr>`;
 
     for (let numI = 0; numI < arrOutsNames.length; numI++)

@@ -15,7 +15,8 @@
   <link rel='stylesheet' media='screen' href='../styles/local.css'>
   <script defer src='../../../../scripts/global.js'></script>
   <script defer src='../scripts/local.js'></script>
-  
+  <script>MathJax={tex: {inlineMath: [['$', '$'], ['((', '))']], processEscapes: true}};</script>
+  <script id='MathJax-script' async src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'></script>
 </head>
 <body onload='fncGetDivState(); fncGetScrollPosition();'>
 
@@ -34,55 +35,222 @@
 
 <h6>Odds & Probability</h6>
 
-<h1>Outs Calculation</h1>
 
-<blockquote>
-Out - One Card that can improve Hand<br>
-Count Card as Out once<br>
-</blockquote>
+<h1>Definitions</h1>
+
+<h2>Odds</h2>
 
 <div class='clOverflow'>
-<table>
-<tr>
-<th>Type of Draw</th><th>Outs</th></tr>
-<tr><td>Pair to Set                         </td><td> 2</td></tr>
-<tr><td>One Overcard to Pair                </td><td> 3</td></tr>
-<tr><td>Inside Straight Draw                </td><td> 4</td></tr>
-<tr><td>Two Pair to Full House              </td><td> 4</td></tr>
-<tr><td>One Pair to Two Pair                </td><td> 5</td></tr>
-<tr><td>One Pair to Set                     </td><td> 5</td></tr>
-<tr><td>No Pair to Pair                     </td><td> 6</td></tr>
-<tr><td>Set to Full House                   </td><td> 6</td></tr>
-<tr><td>Trips to Full House                 </td><td> 6</td></tr>
-<tr><td>Two Overcards to Over Pair          </td><td> 6</td></tr>
-<tr><td>Set to Full House                   </td><td> 7</td></tr>
-<tr><td>Set to Full Quads                   </td><td> 7</td></tr>
-<tr><td>Set to Four of a Kind               </td><td> 7</td></tr>
-<tr><td>Open-Ended Straight Draw            </td><td> 8</td></tr>
-<tr><td>Flush Draw                          </td><td> 9</td></tr>
-<tr><td>Inside Straight Draw & Two Overcards</td><td>10</td></tr>
-<tr><td>Inside Straight Draw & Flush        </td><td>12</td></tr>
-<tr><td>Open Straight Draw & Flush Draw     </td><td>15</td></tr>
-</table>
+$$
+\begin{array}{l}<br>
+OD = {FO : UO} \\<br>
+\\<br>
+\small {OD - Odds} \\<br>
+\small {FO - Favorable\;Outcome} \\<br>
+\small {UO - Unfavorable\;Outcome} \\<br>
+\end{array}<br>
+$$
 </div>
 
+<a target='_blank' href='../images/probability-odds-outcomes.webp'><img class='clImageThumb' src='../images/probability-odds-outcomes.webp'></a><br>
 
-<h2>Blocker Example</h2>
-
-<blockquote>
-Blocker - One Card that prevents having combinations<br>
-</blockquote>
-
-<h3>Example</h3>
-
-Pocket<br>
-<q class='s'>K</q><br>
+<b>2:4</b> - two to four<br>
+<b>1:2</b> - one to two<br>
 <br>
-Flop<br>
-<q class='s'>T</q><q class='s'>J</q><q class='s'>Q</q><br>
+<b>1:2</b> - Odds in Favor of Winning<br>
+<b>2:1</b> - Odds against Winning<br>
+
+<h2>Probability</h2>
+<div class='clOverflow'>
+$$
+\begin{array}{l}<br>
+PR = \large {FO \over TO} \\<br>
+\\<br>
+\small {PR - Probability} \\<br>
+\small {FO - Favorable\;Outcome} \\<br>
+\small {TO - Total\;Outcomes}<br>
+\end{array}<br>
+$$
+</div>
+
+Chance that a given Outcome will happen<br>
+Expressed in fraction 0.0 - 1.0<br>
+Expressed in percentage 0% - 100%<br>
+0.0 / 0% - Outcome will never happen<br>
+1.0 / 100% - Outcome will always happen<br>
+
+<h2>Odds to Probability</h2>
+
+<h3>Odds</h3>
+<div class='clOverflow'>
+$$
+\begin{array}{l}<br>
+OD = {FO : UO} \\<br>
+\small {OD =  1 : 2} \\<br>
+\\<br>
+\small {OD - Odds} \\<br>
+\small {FO - Favorable\;Outcomes} \\<br>
+\small {UO - Unfavorable\;Outcomes}<br>
+\end{array}<br>
+$$
+</div>
+
+<h3>Total Outcomes</h3>
+<div class='clOverflow'>
+$$
+\begin{array}{l}<br>
+TO = {FO + UO} \\<br>
+\small {1 + 2 = 3} \\<br>
+\\<br>
+\small {TO - Total\;Outcomes} \\<br>
+\small {FO - Favorable\;Outcomes} \\<br>
+\small {UO - Unfavorable\;Outcomes}<br>
+\end{array}<br>
+$$
+</div>
+
+<h3>Probability of One Outcome</h3>
+<div class='clOverflow'>
+$$
+\begin{array}{l}<br>
+POO = \large {TP \over TO} \\<br>
+\small {33\% ≈ {100\% \over 3}} \\<br>
+\\<br>
+\small {TO - Total\;Probability = 100\%} \\<br>
+\small {TP - Total\;Probability} \\<br>
+\small {TO - Total\;Outcomes}<br>
+\end{array}<br>
+$$
+</div>
+
+<h3>Probability of Winning</h3>
+<div class='clOverflow'>
+$$
+\begin{array}{l}<br>
+PW = {POO * FO} \\<br>
+\small {33\% ≈ {33\% * 1}} \\<br>
+\\<br>
+\small {PW - Probability\;of\;Winning} \\<br>
+\small {POO - Probability\;of\;One\;Outcome} \\<br>
+\small {FO - Favorable\;Outcomes}<br>
+\end{array}<br>
+$$
+</div>
+
+<h3>Probability of Winning</h3>
+<div class='clOverflow'>
+$$
+\begin{array}{l}<br>
+PW = \large {FO \over TO} \\<br>
+\large {1 \over 3} \\<br>
+\\<br>
+\small {PW - Probability\;of\;Winning} \\<br>
+\small {FO - Favorable\;Outcomes} \\<br>
+\small {TO - Total\;Outcomes}<br>
+\end{array}<br>
+$$
+</div>
+
+<pre><code>Probability-Of-Loosing =
+  Probability-Of-One-Outcome
+  *
+  Unfavorable-Outcomes
+
+Probability-Of-Loosing =
+  33% * 2 = 66%
+
+Probability-Of-Winning =
+  Unfavorable-Outcomes
+  /
+  Total-Outcomes
+
+Probability-Of-Winning =
+  2 / 3</code></pre>
+
+
+<h2>Probability to Odds</h2>
+<div class='clOverflow'>
+$$
+\begin{array}{l}<br>
+OD = \large {TO \over PoW} - 1 \\<br>
+\\<br>
+\small {OD - Odds} \\<br>
+\small {TO - Total\;Probability = 100\%} \\<br>
+\small {PoW - Probability\;of\;Winning} \\<br>
+\end{array}<br>
+$$
+</div>
+
+<pre><code>Probability-Of-Winning = 25%
+Odds = 100% / 25% = 4; 4 – 1 = 3; 1:3
+
+Probability-Of-Winning = 20%
+Odds = 100% / 20% = 5; 5 – 4 = 3; 1:4</code></pre>
+
 <br>
-Result<br>
-Blocker to Flush, Blocker to Straight<br>
+<!--<br>
+
+<h2>Odds to Probability</h2>
+
+<pre><code>Odds =
+  Favorable-Outcomes
+  :
+  Unfavorable-Outcomes
+
+Odds =
+  1:2
+
+Total-Outcomes =
+  Favorable-Outcomes
+  +
+  Unfavorable-Outcomes
+
+Total-Outcomes =
+  1 + 2 = 3
+
+Total-Probability = 100%
+
+Probability-Of-One-Outcome =
+  Total-Probability
+  /
+  Total-Outcomes
+
+Probability-Of-One-Outcome =
+  100% / 3 ≈ 33%
+
+Probability-Of-Winning =
+  Probability-Of-One-Outcome
+  *
+  Favorable-Outcomes
+
+Probability-Of-Winning =
+  33% * 1 = 33%
+
+Probability-Of-Winning =
+  Favorable-Outcomes
+  /
+  Total-Outcomes
+
+Probability-Of-Winning =
+  1 / 3
+
+Probability-Of-Loosing =
+  Probability-Of-One-Outcome
+  *
+  Unfavorable-Outcomes
+
+Probability-Of-Loosing =
+  33% * 2 = 66%
+
+Probability-Of-Winning =
+  Unfavorable-Outcomes
+  /
+  Total-Outcomes
+
+Probability-Of-Winning =
+  2 / 3</code></pre>
+
+-->
 
 
 </div>
