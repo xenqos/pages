@@ -1,83 +1,73 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="fr-FR-DeniseNeural">
-<prosody rate="-10%" pitch="0%">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 40 -->
+adorer
+j' adore
+tu adores
+il adore
+nous adorons
+vous adorez
+ils adorent
 
-aimer
+<break time="600ms"/>
+j' adorais
+tu adorais
+il adorait
+nous adorions
+vous adoriez
+ils adoraient
 
-.
+<break time="600ms"/>
+j' adorai
+tu adoras
+il adora
+nous adorâmes
+vous adorâtes
+ils adorèrent
 
-j'aime
-tu aimes
-il aime
-nous aimons
-vous aimez
-ilzaiment
+<break time="600ms"/>
+j' adorerai
+tu adoreras
+il adorera
+nous adorerons
+vous adorerez
+ils adoreront
 
-.
+<break time="600ms"/>
+j' adorerais
+tu adorerais
+il adorerait
+nous adorerions
+vous adoreriez
+ils adoreraient
 
-j'aimais
-tu aimais
-il aimait
-nous aimions
-vous aimiez
-ilzaimaient
+<break time="600ms"/>
+que j' adore
+que tu adores
+qu' il adore
+que nous adorions
+que vous adoriez
+qu' ils adorent
 
-.
+<break time="600ms"/>
+que j' adorasse
+que tu adorasses
+qu' il adorât
+que nous adorassions
+que vous adorassiez
+qu' ils adorassent
 
-j'aimai
-tu aimas
-il aima
-nous aimâmes
-vous aimâtes
-ilzaimèrent
+<break time="600ms"/>
+adore
+adorons
+adorez
 
-.
+<break time="600ms"/>
+adorant
 
-j'aimerai
-tu aimeras
-il aimera
-nous aimerons
-vous aimerez
-ilzaimeront
-
-.
-
-j'aimerais
-tu aimerais
-il aimerait
-nous aimerions
-vous aimeriez
-ilzaimeraient
-
-.
-
-que j'aime
-que tu aimes
-qu'il aime
-que nous aimions
-que vous aimiez
-qu'ilzaiment
-
-.
-
-que j'aimasse
-que tu aimasses
-qu'il aimât
-que nous aimassions
-que vous aimassiez
-qu'ilzaimassent
-
-.
-
-aime
-aimons
-aimez
-
-.
-
-aimant
-
-aimé
+<break time="600ms"/>
+adoré
 </prosody>
 </voice>
 </speak>

@@ -1,84 +1,75 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="fr-FR-DeniseNeural">
-<prosody rate="-10%" pitch="0%">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 04 -->
+aller
 
-venir
+<break time="600ms"/>
+je  vais
+tu vas
+il va
+nous allons
+vous allez
+ils vont
 
-.
+<break time="600ms"/>
+j' allais
+tu allais
+il allait
+nous allions
+vous alliez
+ils allaient
 
-je viens
-tu viens
-il vient
-nous venons
-vous venez
-ils viennent
+<break time="600ms"/>
+j' allai
+tu allas
+il alla
+nous allâmes
+vous allâtes
+ils allèrent
 
-.
+<break time="600ms"/>
+j' irai
+tu iras
+il ira
+nous irons
+vous irez
+ils iront
 
-je venais
-tu venais
-il venait
-nous venions
-vous veniez
-ils venaient
+<break time="600ms"/>
+j' irais
+tu irais
+il irait
+nous irions
+vous iriez
+ils iraient
 
-.
+<break time="600ms"/>
+que j' aille
+que tu ailles
+qu' il aille
+que nous allions
+que vous alliez
+qu' ils aillent
 
-je vins
-tu vins
-il vint
-nous vînmes
-vous vîntes
-ils vinrent
+<break time="600ms"/>
+que j' allasse
+que tu allasses
+qu' il allât
+que nous allassions
+que vous allassiez
+qu' ils allassent
 
-.
+<break time="600ms"/>
+va
+allons
+allez
 
-je viendrai
-tu viendras
-il viendra
-nous viendrons
-vous viendrez
-ils viendront
+<break time="600ms"/>
+allant
 
-.
-
-je viendrais
-tu viendrais
-il viendrait
-nous viendrions
-vous viendriez
-ils viendraient
-
-.
-
-que je vienne
-que tu viennes
-qu'il vienne
-que nous venions
-que vous veniez
-qu'ils viennent
-
-.
-
-que je vinsse
-que tu vinsses
-qu'il vînt
-que nous vinssions
-que vous vinssiez
-qu'ils vinssent
-
-.
-
-
-viens
-venons
-venez
-
-.
-
-venant
-
-venu
+<break time="600ms"/>
+allé
 </prosody>
 </voice>
 </speak>

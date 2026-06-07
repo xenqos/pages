@@ -1,83 +1,73 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="fr-FR-DeniseNeural">
-<prosody rate="-10%" pitch="0%">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 19 -->
+écouter
+j' écoute
+tu écoutes
+il écoute
+nous écoutons
+vous écoutez
+ils écoutent
 
-raconter
+<break time="600ms"/>
+j' écoutais
+tu écoutais
+il écoutait
+nous écoutions
+vous écoutiez
+ils écoutaient
 
-.
+<break time="600ms"/>
+j' écoutai
+tu écoutas
+il écouta
+nous écoutâmes
+vous écoutâtes
+ils écoutèrent
 
-je raconte
-tu racontes
-il raconte
-nous racontons
-vous racontez
-ils racontent
+<break time="600ms"/>
+j' écouterai
+tu écouteras
+il écoutera
+nous écouterons
+vous écouterez
+ils écouteront
 
-.
+<break time="600ms"/>
+j' écouterais
+tu écouterais
+il écouterait
+nous écouterions
+vous écouteriez
+ils écouteraient
 
-je racontais
-tu racontais
-il racontait
-nous racontions
-vous racontiez
-ils racontaient
+<break time="600ms"/>
+que j' écoute
+que tu écoutes
+qu' il écoute
+que nous écoutions
+que vous écoutiez
+qu' ils écoutent
 
-.
+<break time="600ms"/>
+que j' écoutasse
+que tu écoutasses
+qu' il écoutât
+que nous écoutassions
+que vous écoutassiez
+qu' ils écoutassent
 
-je racontai
-tu racontas
-il raconta
-nous racontâmes
-vous racontâtes
-ils racontèrent
+<break time="600ms"/>
+écoute
+écoutons
+écoutez
 
-.
+<break time="600ms"/>
+écoutant
 
-je raconterai
-tu raconteras
-il racontera
-nous raconterons
-vous raconterez
-ils raconteront
-
-.
-
-je raconterais
-tu raconterais
-il raconterait
-nous raconterions
-vous raconteriez
-ils raconteraient
-
-.
-
-que je raconte
-que tu racontes
-qu'il raconte
-que nous racontions
-que vous racontiez
-qu'ils racontent
-
-.
-
-que je racontasse
-que tu racontasses
-qu'il racontât
-que nous racontassions
-que vous racontassiez
-qu'ils racontassent
-
-.
-
-raconte
-racontons
-racontez
-
-.
-
-racontant
-
-raconté
+<break time="600ms"/>
+écouté
 </prosody>
 </voice>
 </speak>

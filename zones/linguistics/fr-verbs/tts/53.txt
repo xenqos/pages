@@ -1,83 +1,75 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="fr-FR-DeniseNeural">
-<prosody rate="-10%" pitch="0%">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 53 -->
+lever
 
-tourner
+<break time="600ms"/>
+je lève
+tu lèves
+il lève
+nous levons
+vous levez
+ils lèvent
 
-.
+<break time="600ms"/>
+je levais
+tu levais
+il levait
+nous levions
+vous leviez
+ils levaient
 
-je tourne
-tu tournes
-il tourne
-nous tournons
-vous tournez
-ils tournent
+<break time="600ms"/>
+je levai
+tu levas
+il leva
+nous levâmes
+vous levâtes
+ils levèrent
 
-.
+<break time="600ms"/>
+je lèverai
+tu lèveras
+il lèvera
+nous lèverons
+vous lèverez
+ils lèveront
 
-je tournais
-tu tournais
-il tournait
-nous tournions
-vous tourniez
-ils tournaient
+<break time="600ms"/>
+je lèverais
+tu lèverais
+il lèverait
+nous lèverions
+vous lèveriez
+ils lèveraient
 
-.
+<break time="600ms"/>
+que je lève
+que tu lèves
+qu' il lève
+que nous levions
+que vous leviez
+qu' ils lèvent
 
-je tournai
-tu tournas
-il tourna
-nous tournâmes
-vous tournâtes
-ils tournèrent
+<break time="600ms"/>
+que je levasse
+que tu levasses
+qu' il levât
+que nous levassions
+que vous levassiez
+qu' ils levassent
 
-.
+<break time="600ms"/>
+lève
+levons
+levez
 
-je tournerai
-tu tourneras
-il tournera
-nous tournerons
-vous tournerez
-ils tourneront
+<break time="600ms"/>
+levant
 
-.
-
-je tournerais
-tu tournerais
-il tournerait
-nous tournerions
-vous tourneriez
-ils tourneraient
-
-.
-
-que je tourne
-que tu tournes
-qu'il tourne
-que nous tournions
-que vous tourniez
-qu'ils tournent
-
-.
-
-que je tournasse
-que tu tournasses
-qu'il tournât
-que nous tournassions
-que vous tournassiez
-qu'ils tournassent
-
-.
-
-tourne
-tournons
-tournez
-
-.
-
-tournant
-
-tourné
+<break time="600ms"/>
+levé
 </prosody>
 </voice>
 </speak>

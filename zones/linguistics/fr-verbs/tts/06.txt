@@ -1,83 +1,76 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="fr-FR-DeniseNeural">
-<prosody rate="-10%" pitch="0%">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 06 -->
+venir
 
-pouvoir
+<break time="600ms"/>
+je viens
+tu viens
+il vient
+nous venons
+vous venez
+ils viennent
 
-.
+<break time="600ms"/>
+je venais
+tu venais
+il venait
+nous venions
+vous veniez
+ils venaient
 
-je peux
-tu peux
-il peut
-nous pouvons
-vous pouvez
-ils peuvent
+<break time="600ms"/>
+je vins
+tu vins
+il vint
+nous vînmes
+vous vîntes
+ils vinrent
 
-.
+<break time="600ms"/>
+je viendrai
+tu viendras
+il viendra
+nous viendrons
+vous viendrez
+ils viendront
 
-je pouvais
-tu pouvais
-il pouvait
-nous pouvions
-vous pouviez
-ils pouvaient
+<break time="600ms"/>
+je viendrais
+tu viendrais
+il viendrait
+nous viendrions
+vous viendriez
+ils viendraient
 
-.
+<break time="600ms"/>
+que je vienne
+que tu viennes
+qu' il vienne
+que nous venions
+que vous veniez
+qu' ils viennent
 
-je pus
-tu pus
-il put
-nous pûmes
-vous pûtes
-ils purent
+<break time="600ms"/>
+que je vinsse
+que tu vinsses
+qu' il vînt
+que nous vinssions
+que vous vinssiez
+qu' ils vinssent
 
-.
+<break time="600ms"/>
 
-je pourrai
-tu pourras
-il pourra
-nous pourrons
-vous pourrez
-ils pourront
+viens
+venons
+venez
 
-.
+<break time="600ms"/>
+venant
 
-je pourrais
-tu pourrais
-il pourrait
-nous pourrions
-vous pourriez
-ils pourraient
-
-.
-
-que je puisse
-que tu puisses
-qu'il puisse
-que nous puissions
-que vous puissiez
-qu'ils puissent
-
-.
-
-que je pusse
-que tu pusses
-qu'il pût
-que nous pussions
-que vous pussiez
-qu'ils pussent
-
-.
-
-
-
-
-
-.
-
-pouvant
-
-pu
+<break time="600ms"/>
+venu
 </prosody>
 </voice>
 </speak>

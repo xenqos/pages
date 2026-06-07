@@ -1,82 +1,75 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="fr-FR-DeniseNeural">
-<prosody rate="-10%" pitch="0%">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 73 -->
+jouer
 
-travailler
+<break time="600ms"/>
+je joue
+tu joues
+il joue
+nous jouons
+vous jouez
+ils jouent
 
-.
+<break time="600ms"/>
+je jouais
+tu jouais
+il jouait
+nous jouions
+vous jouiez
+ils jouaient
 
-je travaille
-tu travailles
-il travaille
-nous travaillons
-vous travaillez
-ils travaillent
+<break time="600ms"/>
+je jouai
+tu jouas
+il joua
+nous jouâmes
+vous jouâtes
+ils jouèrent
 
-.
+<break time="600ms"/>
+je jouerai
+tu joueras
+il jouera
+nous jouerons
+vous jouerez
+ils joueront
 
-je travaillais
-tu travaillais
-il travaillait
-nous travaillions
-vous travailliez
-ils travaillaient
+<break time="600ms"/>
+je jouerais
+tu jouerais
+il jouerait
+nous jouerions
+vous joueriez
+ils joueraient
 
-.
+<break time="600ms"/>
+que je joue
+que tu joues
+qu' il joue
+que nous jouions
+que vous jouiez
+qu' ils jouent
 
-je travaillai
-tu travaillas
-il travailla
-nous travaillâmes
-vous travaillâtes
-ils travaillèrent
+<break time="600ms"/>
+que je jouasse
+que tu jouasses
+qu' il jouât
+que nous jouassions
+que vous jouassiez
+qu' ils jouassent
 
-.
+<break time="600ms"/>
+joue
+jouons
+jouez
 
-je travaillerai
-tu travailleras
-il travaillera
-nous travaillerons
-vous travaillerez
-ils travailleront
+<break time="600ms"/>
+jouant
 
-.
-
-je travaillerais
-tu travaillerais
-il travaillerait
-nous travaillerions
-vous travailleriez
-ils travailleraient
-
-.
-
-que je travaille
-que tu travailles
-qu'il travaille
-que nous travaillions
-que vous travailliez
-qu'ils travaillent
-
-.
-
-que je travaillasse
-que tu travaillasses
-qu'il travaillât
-que nous travaillassions
-que vous travaillassiez
-qu'ils travaillassent
-
-.
-
-travaille
-travaillons
-travaillez
-
-.
-
-travaillant
-travaillé
+<break time="600ms"/>
+joué
 </prosody>
 </voice>
 </speak>

@@ -1,83 +1,75 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="fr-FR-DeniseNeural">
-<prosody rate="-10%" pitch="0%">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 49 -->
+sortir
 
-rester
+<break time="600ms"/>
+je sors
+tu sors
+il sort
+nous sortons
+vous sortez
+ils sortent
 
-.
+<break time="600ms"/>
+je sortais
+tu sortais
+il sortait
+nous sortions
+vous sortiez
+ils sortaient
 
-je reste
-tu restes
-il reste
-nous restons
-vous restez
-ils restent
+<break time="600ms"/>
+je sortis
+tu sortis
+il sortit
+nous sortîmes
+vous sortîtes
+ils sortirent
 
-.
+<break time="600ms"/>
+je sortirai
+tu sortiras
+il sortira
+nous sortirons
+vous sortirez
+ils sortiront
 
-je restais
-tu restais
-il restait
-nous restions
-vous restiez
-ils restaient
+<break time="600ms"/>
+je sortirais
+tu sortirais
+il sortirait
+nous sortirions
+vous sortiriez
+ils sortiraient
 
-.
+<break time="600ms"/>
+que je sorte
+que tu sortes
+qu' il sorte
+que nous sortions
+que vous sortiez
+qu' ils sortent
 
-je restai
-tu restas
-il resta
-nous restâmes
-vous restâtes
-ils restèrent
+<break time="600ms"/>
+que je sortisse
+que tu sortisses
+qu' il sortît
+que nous sortissions
+que vous sortissiez
+qu' ils sortissent
 
-.
+<break time="600ms"/>
+sors
+sortons
+sortez
 
-je resterai
-tu resteras
-il restera
-nous resterons
-vous resterez
-ils resteront
+<break time="600ms"/>
+sortant
 
-.
-
-je resterais
-tu resterais
-il resterait
-nous resterions
-vous resteriez
-ils resteraient
-
-.
-
-que je reste
-que tu restes
-qu'il reste
-que nous restions
-que vous restiez
-qu'ils restent
-
-.
-
-que je restasse
-que tu restasses
-qu'il restât
-que nous restassions
-que vous restassiez
-qu'ils restassent
-
-.
-
-reste
-restons
-restez
-
-.
-
-restant
-
-resté
+<break time="600ms"/>
+sorti
 </prosody>
 </voice>
 </speak>

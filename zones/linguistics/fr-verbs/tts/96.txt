@@ -1,82 +1,75 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="fr-FR-DeniseNeural">
-<prosody rate="-10%" pitch="0%">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 96 -->
+poser
 
-servir
+<break time="600ms"/>
+je pose
+tu poses
+il pose
+nous posons
+vous posez
+ils posent
 
-.
+<break time="600ms"/>
+je posais
+tu posais
+il posait
+nous posions
+vous posiez
+ils posaient
 
-je sers
-tu sers
-il sert
-nous servons
-vous servez
-ils servent
+<break time="600ms"/>
+je posai
+tu posas
+il posa
+nous posâmes
+vous posâtes
+ils posèrent
 
-.
+<break time="600ms"/>
+je poserai
+tu poseras
+il posera
+nous poserons
+vous poserez
+ils poseront
 
-je servais
-tu servais
-il servait
-nous servions
-vous serviez
-ils servaient
+<break time="600ms"/>
+je poserais
+tu poserais
+il poserait
+nous poserions
+vous poseriez
+ils poseraient
 
-.
+<break time="600ms"/>
+que je pose
+que tu poses
+qu' il pose
+que nous posions
+que vous posiez
+qu' ils posent
 
-je servis
-tu servis
-il servit
-nous servîmes
-vous servîtes
-ils servirent
+<break time="600ms"/>
+que je posasse
+que tu posasses
+qu' il posât
+que nous posassions
+que vous posassiez
+qu' ils posassent
 
-.
+<break time="600ms"/>
+pose
+posons
+posez
 
-je servirai
-tu serviras
-il servira
-nous servirons
-vous servirez
-ils serviront
+<break time="600ms"/>
+posant
 
-.
-
-je servirais
-tu servirais
-il servirait
-nous servirions
-vous serviriez
-ils serviraient
-
-.
-
-que je serve
-que tu serves
-qu'il serve
-que nous servions
-que vous serviez
-qu'ils servent
-
-.
-
-que je servisse
-que tu servisses
-qu'il servît
-que nous servissions
-que vous servissiez
-qu'ils servissent
-
-.
-
-sers
-servons
-servez
-
-.
-
-servant
-servi
+<break time="600ms"/>
+posé
 </prosody>
 </voice>
 </speak>

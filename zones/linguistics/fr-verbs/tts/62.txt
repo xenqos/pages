@@ -1,83 +1,75 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="fr-FR-DeniseNeural">
-<prosody rate="-10%" pitch="0%">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 62 -->
+devenir
 
-ouvrir
+<break time="600ms"/>
+je deviens
+tu deviens
+il devient
+nous devenons
+vous devenez
+ils deviennent
 
-.
+<break time="600ms"/>
+je devenais
+tu devenais
+il devenait
+nous devenions
+vous deveniez
+ils devenaient
 
-j'ouvre
-tu ouvres
-il ouvre
-nous ouvrons
-vous ouvrez
-ils ouvrent
+<break time="600ms"/>
+je devins
+tu devins
+il devint
+nous devînmes
+vous devîntes
+ils devinrent
 
-.
+<break time="600ms"/>
+je deviendrai
+tu deviendras
+il deviendra
+nous deviendrons
+vous deviendrez
+ils deviendront
 
-j'ouvrais
-tu ouvrais
-il ouvrait
-nous ouvrions
-vous ouvriez
-ils ouvraient
+<break time="600ms"/>
+je deviendrais
+tu deviendrais
+il deviendrait
+nous deviendrions
+vous deviendriez
+ils deviendraient
 
-.
+<break time="600ms"/>
+que je devienne
+que tu deviennes
+qu' il devienne
+que nous devenions
+que vous deveniez
+qu' ils deviennent
 
-j'ouvris
-tu ouvris
-il ouvrit
-nous ouvrîmes
-vous ouvrîtes
-ils ouvrirent
+<break time="600ms"/>
+que je devinsse
+que tu devinsses
+qu' il devînt
+que nous devinssions
+que vous devinssiez
+qu' ils devinssent
 
-.
+<break time="600ms"/>
+deviens
+devenons
+devenez
 
-j'ouvrirai
-tu ouvriras
-il ouvrira
-nous ouvrirons
-vous ouvrirez
-ils ouvriront
+<break time="600ms"/>
+devenant
 
-.
-
-j'ouvrirais
-tu ouvrirais
-il ouvrirait
-nous ouvririons
-vous ouvririez
-ils ouvriraient
-
-.
-
-que j'ouvre
-que tu ouvres
-qu'il ouvre
-que nous ouvrions
-que vous ouvriez
-qu'ils ouvrent
-
-.
-
-que j'ouvrisse
-que tu ouvrisses
-qu'il ouvrît
-que nous ouvrissions
-que vous ouvrissiez
-qu'ils ouvrissent
-
-.
-
-ouvre
-ouvrons
-ouvrez
-
-.
-
-ouvrant
-
-ouvert
+<break time="600ms"/>
+devenu
 </prosody>
 </voice>
 </speak>

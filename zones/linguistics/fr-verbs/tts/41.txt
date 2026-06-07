@@ -1,83 +1,75 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="fr-FR-DeniseNeural">
-<prosody rate="-10%" pitch="0%">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 41 -->
+haïr
 
-adorer
+<break time="600ms"/>
+je hais
+tu hais
+il hait
+nous haïssons
+vous haïssez
+ils haïssent
 
-.
+<break time="600ms"/>
+je haïssais
+tu haïssais
+il haïssait
+nous haïssions
+vous haïssiez
+ils haïssaient
 
-j'adore
-tu adores
-il adore
-nous adorons
-vous adorez
-ilzadorent
+<break time="600ms"/>
+je haïs
+tu haïs
+il haït
+nous haïmes
+vous haïtes
+ils haïrent
 
-.
+<break time="600ms"/>
+je haïrai
+tu haïras
+il haïra
+nous haïrons
+vous haïrez
+ils haïront
 
-j'adorais
-tu adorais
-il adorait
-nous adorions
-vous adoriez
-ilzadoraient
+<break time="600ms"/>
+je haïrais
+tu haïrais
+il harait
+nous haïrions
+vous haïriez
+ils haïraient
 
-.
+<break time="600ms"/>
+que je haïsse
+que tu haïsses
+qu' il haïsse
+que nous haïssions
+que vous haïssiez
+qu' ils haïssent
 
-j'adorai
-tu adoras
-il adora
-nous adorâmes
-vous adorâtes
-ilzadorèrent
+<break time="600ms"/>
+que je haïsse
+que tu haïsses
+qu' il haït
+que nous haïssions
+que vous haïssiez
+qu' ils haïssent
 
-.
+<break time="600ms"/>
+hais
+haïssons
+haïssez
 
-j'adorerai
-tu adoreras
-il adorera
-nous adorerons
-vous adorerez
-ilzadoreront
+<break time="600ms"/>
+haïssant
 
-.
-
-j'adorerais
-tu adorerais
-il adorerait
-nous adorerions
-vous adoreriez
-ilzadoreraient
-
-.
-
-que j'adore
-que tu adores
-qu'il adore
-que nous adorions
-que vous adoriez
-qu'ilzadorent
-
-.
-
-que j'adorasse
-que tu adorasses
-qu'il adorât
-que nous adorassions
-que vous adorassiez
-qu'ilzadorassent
-
-.
-
-adore
-adorons
-adorez
-
-.
-
-adorant
-
-adoré
+<break time="600ms"/>
+haï
 </prosody>
 </voice>
 </speak>

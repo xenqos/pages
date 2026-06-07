@@ -1,82 +1,73 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="fr-FR-DeniseNeural">
-<prosody rate="-10%" pitch="0%">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 97 -->
+habiter
+j' habite
+tu habites
+il habite
+nous habitons
+vous habitez
+ils habitent
 
-poser
+<break time="600ms"/>
+j' habitais
+tu habitais
+il habitait
+nous habitions
+vous habitiez
+ils habitaient
 
-.
+<break time="600ms"/>
+j' habitai
+tu habitas
+il habita
+nous habitâmes
+vous habitâtes
+ils habitèrent
 
-je pose
-tu poses
-il pose
-nous posons
-vous posez
-ils posent
+<break time="600ms"/>
+j' habiterai
+tu habiteras
+il habitera
+nous habiterons
+vous habiterez
+ils habiteront
 
-.
+<break time="600ms"/>
+j' habiterais
+tu habiterais
+il habiterait
+nous habiterions
+vous habiteriez
+ils habiteraient
 
-je posais
-tu posais
-il posait
-nous posions
-vous posiez
-ils posaient
+<break time="600ms"/>
+que j' habite
+que tu habites
+qu' il habite
+que nous habitions
+que vous habitiez
+qu' ils habitent
 
-.
+<break time="600ms"/>
+que j' habitasse
+que tu habitasses
+qu' il habitât
+que nous habitassions
+que vous habitassiez
+qu' ils habitassent
 
-je posai
-tu posas
-il posa
-nous posâmes
-vous posâtes
-ils posèrent
+<break time="600ms"/>
+habite
+habitons
+habitez
 
-.
+<break time="600ms"/>
+habitant
 
-je poserai
-tu poseras
-il posera
-nous poserons
-vous poserez
-ils poseront
-
-.
-
-je poserais
-tu poserais
-il poserait
-nous poserions
-vous poseriez
-ils poseraient
-
-.
-
-que je pose
-que tu poses
-qu'il pose
-que nous posions
-que vous posiez
-qu'ils posent
-
-.
-
-que je posasse
-que tu posasses
-qu'il posât
-que nous posassions
-que vous posassiez
-qu'ils posassent
-
-.
-
-pose
-posons
-posez
-
-.
-
-posant
-posé
+<break time="600ms"/>
+habité
 </prosody>
 </voice>
 </speak>

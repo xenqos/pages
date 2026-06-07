@@ -1,83 +1,75 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="fr-FR-DeniseNeural">
-<prosody rate="-10%" pitch="0%">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 30 -->
+croire
 
-sentir
+<break time="600ms"/>
+je crois
+tu crois
+il croit
+nous croyons
+vous croyez
+ils croient
 
-.
+<break time="600ms"/>
+je croyais
+tu croyais
+il croyait
+nous croyions
+vous croyiez
+ils croyaient
 
-je sens
-tu sens
-il sent
-nous sentons
-vous sentez
-ils sentent
+<break time="600ms"/>
+je crus
+tu crus
+il crut
+nous crûmes
+vous crûtes
+ils crurent
 
-.
+<break time="600ms"/>
+je croirai
+tu croiras
+il croira
+nous croirons
+vous croirez
+ils croiront
 
-je sentais
-tu sentais
-il sentait
-nous sentions
-vous sentiez
-ils sentaient
+<break time="600ms"/>
+je croirais
+tu croirais
+il croirait
+nous croirions
+vous croiriez
+ils croiraient
 
-.
+<break time="600ms"/>
+que je croie
+que tu croies
+qu' il croie
+que nous croyions
+que vous croyiez
+qu' ils croient
 
-je sentis
-tu sentis
-il sentit
-nous sentîmes
-vous sentîtes
-ils sentirent
+<break time="600ms"/>
+que je crusse
+que tu crusses
+qu' il crût
+que nous crussions
+que vous crussiez
+qu' ils crussent
 
-.
+<break time="600ms"/>
+crois
+croyons
+croyez
 
-je sentirai
-tu sentiras
-il sentira
-nous sentirons
-vous sentirez
-ils sentiront
+<break time="600ms"/>
+croyant
 
-.
-
-je sentirais
-tu sentirais
-il sentirait
-nous sentirions
-vous sentiriez
-ils sentiraient
-
-.
-
-que je sente
-que tu sentes
-qu'il sente
-que nous sentions
-que vous sentiez
-qu'ils sentent
-
-.
-
-que je sentisse
-que tu sentisses
-qu'il sentît
-que nous sentissions
-que vous sentissiez
-qu'ils sentissent
-
-.
-
-sens
-sentons
-sentez
-
-.
-
-sentant
-
-senti
+<break time="600ms"/>
+cru
 </prosody>
 </voice>
 </speak>

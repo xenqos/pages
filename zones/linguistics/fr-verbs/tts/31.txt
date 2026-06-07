@@ -1,83 +1,75 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="fr-FR-DeniseNeural">
-<prosody rate="-10%" pitch="0%">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 31 -->
+sentir
 
-prendre
+<break time="600ms"/>
+je sens
+tu sens
+il sent
+nous sentons
+vous sentez
+ils sentent
 
-.
+<break time="600ms"/>
+je sentais
+tu sentais
+il sentait
+nous sentions
+vous sentiez
+ils sentaient
 
-je prends
-tu prends
-il prend
-nous prenons
-vous prenez
-ils prennent
+<break time="600ms"/>
+je sentis
+tu sentis
+il sentit
+nous sentîmes
+vous sentîtes
+ils sentirent
 
-.
+<break time="600ms"/>
+je sentirai
+tu sentiras
+il sentira
+nous sentirons
+vous sentirez
+ils sentiront
 
-je prenais
-tu prenais
-il prenait
-nous prenions
-vous preniez
-ils prenaient
+<break time="600ms"/>
+je sentirais
+tu sentirais
+il sentirait
+nous sentirions
+vous sentiriez
+ils sentiraient
 
-.
+<break time="600ms"/>
+que je sente
+que tu sentes
+qu' il sente
+que nous sentions
+que vous sentiez
+qu' ils sentent
 
-je pris
-tu pris
-il prit
-nous prîmes
-vous prîtes
-ils prirent
+<break time="600ms"/>
+que je sentisse
+que tu sentisses
+qu' il sentît
+que nous sentissions
+que vous sentissiez
+qu' ils sentissent
 
-.
+<break time="600ms"/>
+sens
+sentons
+sentez
 
-je prendrai
-tu prendras
-il prendra
-nous prendrons
-vous prendrez
-ils prendront
+<break time="600ms"/>
+sentant
 
-.
-
-je prendrais
-tu prendrais
-il prendrait
-nous prendrions
-vous prendriez
-ils prendraient
-
-.
-
-que je prenne
-que tu prennes
-qu'il prenne
-que nous prenions
-que vous preniez
-qu'ils prennent
-
-.
-
-que je prisse
-que tu prisses
-qu'il prît
-que nous prissions
-que vous prissiez
-qu'ils prissent
-
-.
-
-prends
-prenons
-prenez
-
-.
-
-prenant
-
-pris
+<break time="600ms"/>
+senti
 </prosody>
 </voice>
 </speak>

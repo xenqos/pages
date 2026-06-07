@@ -1,83 +1,75 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="fr-FR-DeniseNeural">
-<prosody rate="-10%" pitch="0%">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 57 -->
+tenir
 
-asseoir
+<break time="600ms"/>
+je tiens
+tu tiens
+il tient
+nous tenons
+vous tenez
+ils tiennent
 
-.
+<break time="600ms"/>
+je tenais
+tu tenais
+il tenait
+nous tenions
+vous teniez
+ils tenaient
 
-j'assieds
-tu assieds
-il assied
-nous asseyons
-vous asseyez
-ilzasseyent
+<break time="600ms"/>
+je tins
+tu tins
+il tint
+nous tînmes
+vous tîntes
+ils tinrent
 
-.
+<break time="600ms"/>
+je tiendrai
+tu tiendras
+il tiendra
+nous tiendrons
+vous tiendrez
+ils tiendront
 
-j'asseyais
-tu asseyais
-il asseyait
-nous asseyions
-vous asseyiez
-ilzasseyaient
+<break time="600ms"/>
+je tiendrais
+tu tiendrais
+il tiendrait
+nous tiendrions
+vous tiendriez
+ils tiendraient
 
-.
+<break time="600ms"/>
+que je tienne
+que tu tiennes
+qu' il tienne
+que nous tenions
+que vous teniez
+qu' ils tiennent
 
-j'assis
-tu assis
-il assit
-nous assîmes
-vous assîtes
-ilzassirent
+<break time="600ms"/>
+que je tinsse
+que tu tinsses
+qu' il tînt
+que nous tinssions
+que vous tinssiez
+qu' ils tinssent
 
-.
+<break time="600ms"/>
+tiens
+tenons
+tenez
 
-j'assiérai
-tu assiéras
-il assiéra
-nous assiérons
-vous assiérez
-ilzassiéront
+<break time="600ms"/>
+tenant
 
-.
-
-j'assiérais
-tu assiérais
-il assiérait
-nous assiérions
-vous assiériez
-ilzassiéraient
-
-.
-
-que j'asseye
-que tu asseyes
-qu'il asseye
-que nous asseyions
-que vous asseyiez
-qu'ilzasseyent
-
-.
-
-que j'assisse
-que tu assisses
-qu'il assît
-que nous assissions
-que vous assissiez
-qu'ilzassissent
-
-.
-
-assieds
-asseyons
-asseyez
-
-.
-
-asseyant
-
-assis
+<break time="600ms"/>
+tenu
 </prosody>
 </voice>
 </speak>

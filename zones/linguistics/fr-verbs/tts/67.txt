@@ -1,11 +1,10 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="fr-FR-DeniseNeural">
-<prosody rate="-10%" pitch="0%">
-
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 67 -->
 finir
 
-.
-
+<break time="600ms"/>
 je finis
 tu finis
 il finit
@@ -13,8 +12,7 @@ nous finissons
 vous finissez
 ils finissent
 
-.
-
+<break time="600ms"/>
 je finissais
 tu finissais
 il finissait
@@ -22,8 +20,7 @@ nous finissions
 vous finissiez
 ils finissaient
 
-.
-
+<break time="600ms"/>
 je finis
 tu finis
 il finit
@@ -31,8 +28,7 @@ nous finîmes
 vous finîtes
 ils finirent
 
-.
-
+<break time="600ms"/>
 je finirai
 tu finiras
 il finira
@@ -40,8 +36,7 @@ nous finirons
 vous finirez
 ils finiront
 
-.
-
+<break time="600ms"/>
 je finirais
 tu finirais
 il finirait
@@ -49,34 +44,31 @@ nous finirions
 vous finiriez
 ils finiraient
 
-.
-
+<break time="600ms"/>
 que je finisse
 que tu finisses
-qu'il finisse
+qu' il finisse
 que nous finissions
 que vous finissiez
-qu'ils finissent
+qu' ils finissent
 
-.
-
+<break time="600ms"/>
 que je finisse
 que tu finisses
-qu'il finît
+qu' il finît
 que nous finissions
 que vous finissiez
-qu'ils finissent
+qu' ils finissent
 
-.
-
+<break time="600ms"/>
 finis
 finissons
 finissez
 
-.
-
+<break time="600ms"/>
 finissant
 
+<break time="600ms"/>
 fini
 </prosody>
 </voice>

@@ -1,83 +1,75 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="fr-FR-DeniseNeural">
-<prosody rate="-10%" pitch="0%">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 03 -->
+faire
 
-aller
+<break time="600ms"/>
+je fais
+tu fais
+il fait
+nous faisons
+vous faites
+ils font
 
-.
+<break time="600ms"/>
+je faisais
+tu faisais
+il faisait
+nous faisions
+vous faisiez
+ils faisaient
 
-je  vais
-tu vas
-il va
-nous allons
-vous allez
-ils vont
+<break time="600ms"/>
+je fis
+tu fis
+il fit
+nous fîmes
+vous fîtes
+ils firent
 
-.
+<break time="600ms"/>
+je ferai
+tu feras
+il fera
+nous ferons
+vous ferez
+ils feront
 
-j'allais
-tu allais
-il allait
-nous allions
-vous alliez
-ilzallaient
+<break time="600ms"/>
+je ferais
+tu ferais
+il ferait
+nous ferions
+vous feriez
+ils feraient
 
-.
+<break time="600ms"/>
+que je fasse
+que tu fasses
+qu' il fasse
+que nous fassions
+que vous fassiez
+qu' ils fassent
 
-j'allai
-tu allas
-il alla
-nous allâmes
-vous allâtes
-ilzallèrent
+<break time="600ms"/>
+que je fisse
+que tu fisses
+qu' il fît
+que nous fissions
+que vous fissiez
+qu' ils fissent
 
-.
+<break time="600ms"/>
+fais
+faisons
+faites
 
-j'irai
-tu iras
-il ira
-nous irons
-vous irez
-ils iront
+<break time="600ms"/>
+faisant
 
-.
-
-j'irais
-tu irais
-il irait
-nous irions
-vous iriez
-ils iraient
-
-.
-
-que j'aille
-que tu ailles
-qu'il aille
-que nous allions
-que vous alliez
-qu'ilzaillent
-
-.
-
-que j'allasse
-que tu allasses
-qu'il allât
-que nous allassions
-que vous allassiez
-qu'ilzallassent
-
-.
-
-va
-allons
-allez
-
-.
-
-allant
-
-allé
+<break time="600ms"/>
+fait
 </prosody>
 </voice>
 </speak>

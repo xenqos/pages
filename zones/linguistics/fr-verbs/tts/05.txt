@@ -1,83 +1,75 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="fr-FR-DeniseNeural">
-<prosody rate="-10%" pitch="0%">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 05 -->
+partir
 
-faire
+<break time="600ms"/>
+je pars
+tu pars
+il part
+nous partons
+vous partez
+ils partent
 
-.
+<break time="600ms"/>
+je partais
+tu partais
+il partait
+nous partions
+vous partiez
+ils partaient
 
-je fais
-tu fais
-il fait
-nous faisons
-vous faites
-ils font
+<break time="600ms"/>
+je partis
+tu partis
+il partit
+nous partîmes
+vous partîtes
+ils partirent
 
-.
+<break time="600ms"/>
+je partirai
+tu partiras
+il partira
+nous partirons
+vous partirez
+ils partiront
 
-je faisais
-tu faisais
-il faisait
-nous faisions
-vous faisiez
-ils faisaient
+<break time="600ms"/>
+je partirais
+tu partirais
+il partirait
+nous partirions
+vous partiriez
+ils partiraient
 
-.
+<break time="600ms"/>
+que je parte
+que tu partes
+qu' il parte
+que nous partions
+que vous partiez
+qu' ils partent
 
-je fis
-tu fis
-il fit
-nous fîmes
-vous fîtes
-ils firent
+<break time="600ms"/>
+que je partisse
+que tu partisses
+qu' il partît
+que nous partissions
+que vous partissiez
+qu' ils partissent
 
-.
+<break time="600ms"/>
+pars
+partons
+partez
 
-je ferai
-tu feras
-il fera
-nous ferons
-vous ferez
-ils feront
+<break time="600ms"/>
+partant
 
-.
-
-je ferais
-tu ferais
-il ferait
-nous ferions
-vous feriez
-ils feraient
-
-.
-
-que je fasse
-que tu fasses
-qu'il fasse
-que nous fassions
-que vous fassiez
-qu'ils fassent
-
-.
-
-que je fisse
-que tu fisses
-qu'il fît
-que nous fissions
-que vous fissiez
-qu'ils fissent
-
-.
-
-fais
-faisons
-faites
-
-.
-
-faisant
-
-fait
+<break time="600ms"/>
+parti
 </prosody>
 </voice>
 </speak>

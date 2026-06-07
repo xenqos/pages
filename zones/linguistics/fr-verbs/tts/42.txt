@@ -1,82 +1,72 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="fr-FR-DeniseNeural">
-<prosody rate="-10%" pitch="0%">
-
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 42 -->
 amuser
-
-.
-
-j'amuse
+j' amuse
 tu amuses
 il amuse
 nous amusons
 vous amusez
-ilzamusent
+ils amusent
 
-.
-
-j'amusais
+<break time="600ms"/>
+j' amusais
 tu amusais
 il amusait
 nous amusions
 vous amusiez
-ilzamusaient
+ils amusaient
 
-.
-
-j'amusai
+<break time="600ms"/>
+j' amusai
 tu amusas
 il amusa
 nous amusâmes
 vous amusâtes
-ilzamusèrent
+ils amusèrent
 
-.
-
-j'amuserai
+<break time="600ms"/>
+j' amuserai
 tu amuseras
 il amusera
 nous amuserons
 vous amuserez
-ilzamuseront
+ils amuseront
 
-.
-
-j'amuserais
+<break time="600ms"/>
+j' amuserais
 tu amuserais
 il amuserait
 nous amuserions
 vous amuseriez
-ilzamuseraient
+ils amuseraient
 
-.
-
-que j'amuse
+<break time="600ms"/>
+que j' amuse
 que tu amuses
-qu'il amuse
+qu' il amuse
 que nous amusions
 que vous amusiez
-qu'ilzamusent
+qu' ils amusent
 
-.
-
-que j'amusasse
+<break time="600ms"/>
+que j' amusasse
 que tu amusasses
-qu'il amusât
+qu' il amusât
 que nous amusassions
 que vous amusassiez
-qu'ilzamusassent
+qu' ils amusassent
 
-.
-
+<break time="600ms"/>
 amuse
 amusons
 amusez
 
-.
-
+<break time="600ms"/>
 amusant
 
+<break time="600ms"/>
 amusé
 </prosody>
 </voice>

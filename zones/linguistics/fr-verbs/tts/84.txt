@@ -1,82 +1,75 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="fr-FR-DeniseNeural">
-<prosody rate="-10%" pitch="0%">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 84 -->
+défendre
 
-battre
+<break time="600ms"/>
+je défends
+tu défends
+il défend
+nous défendons
+vous défendez
+ils défendent
 
-.
+<break time="600ms"/>
+je défendais
+tu défendais
+il défendait
+nous défendions
+vous défendiez
+ils défendaient
 
-je bats
-tu bats
-il bat
-nous battons
-vous battez
-ils battent
+<break time="600ms"/>
+je défendis
+tu défendis
+il défendit
+nous défendîmes
+vous défendîtes
+ils défendirent
 
-.
+<break time="600ms"/>
+je défendrai
+tu défendras
+il défendra
+nous défendrons
+vous défendrez
+ils défendront
 
-je battais
-tu battais
-il battait
-nous battions
-vous battiez
-ils battaient
+<break time="600ms"/>
+je défendrais
+tu défendrais
+il défendrait
+nous défendrions
+vous défendriez
+ils défendraient
 
-.
+<break time="600ms"/>
+que je défende
+que tu défendes
+qu' il défende
+que nous défendions
+que vous défendiez
+qu' ils défendent
 
-je battis
-tu battis
-il battit
-nous battîmes
-vous battîtes
-ils battirent
+<break time="600ms"/>
+que je défendisse
+que tu défendisses
+qu' il défendît
+que nous défendissions
+que vous défendissiez
+qu' ils défendissent
 
-.
+<break time="600ms"/>
+défends
+défendons
+défendez
 
-je battrai
-tu battras
-il battra
-nous battrons
-vous battrez
-ils battront
+<break time="600ms"/>
+défendant
 
-.
-
-je battrais
-tu battrais
-il battrait
-nous battrions
-vous battriez
-ils battraient
-
-.
-
-que je batte
-que tu battes
-qu'il batte
-que nous battions
-que vous battiez
-qu'ils battent
-
-.
-
-que je battisse
-que tu battisses
-qu'il battît
-que nous battissions
-que vous battissiez
-qu'ils battissent
-
-.
-
-bats
-battons
-battez
-
-.
-
-battant
-battu
+<break time="600ms"/>
+défendu
 </prosody>
 </voice>
 </speak>

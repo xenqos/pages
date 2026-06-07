@@ -1,82 +1,75 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="fr-FR-DeniseNeural">
-<prosody rate="-10%" pitch="0%">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 89 -->
+sauter
 
-couvrir
+<break time="600ms"/>
+je saute
+tu sautes
+il saute
+nous sautons
+vous sautez
+ils sautent
 
-.
+<break time="600ms"/>
+je sautais
+tu sautais
+il sautait
+nous sautions
+vous sautiez
+ils sautaient
 
-je couvre
-tu couvres
-il couvre
-nous couvrons
-vous couvrez
-ils couvrent
+<break time="600ms"/>
+je sautai
+tu sautas
+il sauta
+nous sautâmes
+vous sautâtes
+ils sautèrent
 
-.
+<break time="600ms"/>
+je sauterai
+tu sauteras
+il sautera
+nous sauterons
+vous sauterez
+ils sauteront
 
-je couvrais
-tu couvrais
-il couvrait
-nous couvrions
-vous couvriez
-ils couvraient
+<break time="600ms"/>
+je sauterais
+tu sauterais
+il sauterait
+nous sauterions
+vous sauteriez
+ils sauteraient
 
-.
+<break time="600ms"/>
+que je saute
+que tu sautes
+qu' il saute
+que nous sautions
+que vous sautiez
+qu' ils sautent
 
-je couvris
-tu couvris
-il couvrit
-nous couvrîmes
-vous couvrîtes
-ils couvrirent
+<break time="600ms"/>
+que je sautasse
+que tu sautasses
+qu' il sautât
+que nous sautassions
+que vous sautassiez
+qu' ils sautassent
 
-.
+<break time="600ms"/>
+saute
+sautons
+sautez
 
-je couvrirai
-tu couvriras
-il couvrira
-nous couvrirons
-vous couvrirez
-ils couvriront
+<break time="600ms"/>
+sautant
 
-.
-
-je couvrirais
-tu couvrirais
-il couvrirait
-nous couvririons
-vous couvririez
-ils couvriraient
-
-.
-
-que je couvre
-que tu couvres
-qu'il couvre
-que nous couvrions
-que vous couvriez
-qu'ils couvrent
-
-.
-
-que je couvrisse
-que tu couvrisses
-qu'il couvrît
-que nous couvrissions
-que vous couvrissiez
-qu'ils couvrissent
-
-.
-
-couvre
-couvrons
-couvrez
-
-.
-
-couvrant
-couvert
+<break time="600ms"/>
+sauté
 </prosody>
 </voice>
 </speak>

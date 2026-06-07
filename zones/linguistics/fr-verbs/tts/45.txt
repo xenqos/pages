@@ -1,83 +1,75 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="fr-FR-DeniseNeural">
-<prosody rate="-10%" pitch="0%">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 45 -->
+passer
 
-attendre
+<break time="600ms"/>
+je passe
+tu passes
+il passe
+nous passons
+vous passez
+ils passent
 
-.
+<break time="600ms"/>
+je passais
+tu passais
+il passait
+nous passions
+vous passiez
+ils passaient
 
-j'attends
-tu attends
-il attend
-nous attendons
-vous attendez
-ilzattendent
+<break time="600ms"/>
+je passai
+tu passas
+il passa
+nous passâmes
+vous passâtes
+ils passèrent
 
-.
+<break time="600ms"/>
+je passerai
+tu passeras
+il passera
+nous passerons
+vous passerez
+ils passeront
 
-j'attendais
-tu attendais
-il attendait
-nous attendions
-vous attendiez
-ilzattendaient
+<break time="600ms"/>
+je passerais
+tu passerais
+il passerait
+nous passerions
+vous passeriez
+ils passeraient
 
-.
+<break time="600ms"/>
+que je passe
+que tu passes
+qu' il passe
+que nous passions
+que vous passiez
+qu' ils passent
 
-j'attendis
-tu attendis
-il attendit
-nous attendîmes
-vous attendîtes
-ilzattendirent
+<break time="600ms"/>
+que je passasse
+que tu passasses
+qu' il passât
+que nous passassions
+que vous passassiez
+qu' ils passassent
 
-.
+<break time="600ms"/>
+passe
+passons
+passez
 
-j'attendrai
-tu attendras
-il attendra
-nous attendrons
-vous attendrez
-ilzattendront
+<break time="600ms"/>
+passant
 
-.
-
-j'attendrais
-tu attendrais
-il attendrait
-nous attendrions
-vous attendriez
-ilzattendraient
-
-.
-
-que j'attende
-que tu attendes
-qu'il attende
-que nous attendions
-que vous attendiez
-qu'ilzattendent
-
-.
-
-que j'attendisse
-que tu attendisses
-qu'il attendît
-que nous attendissions
-que vous attendissiez
-qu'ilzattendissent
-
-.
-
-attends
-attendons
-attendez
-
-.
-
-attendant
-
-attendu
+<break time="600ms"/>
+passé
 </prosody>
 </voice>
 </speak>

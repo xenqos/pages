@@ -1,83 +1,75 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="fr-FR-DeniseNeural">
-<prosody rate="-10%" pitch="0%">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 32 -->
+laisser
 
-mettre
+<break time="600ms"/>
+je laisse
+tu laisses
+il laisse
+nous laissons
+vous laissez
+ils laissent
 
-.
+<break time="600ms"/>
+je laissais
+tu laissais
+il laissait
+nous laissions
+vous laissiez
+ils laissaient
 
-je mets
-tu mets
-il met
-nous mettons
-vous mettez
-ils mettent
+<break time="600ms"/>
+je laissai
+tu laissas
+il laissa
+nous laissâmes
+vous laissâtes
+ils laissèrent
 
-.
+<break time="600ms"/>
+je laisserai
+tu laisseras
+il laissera
+nous laisserons
+vous laisserez
+ils laisseront
 
-je mettais
-tu mettais
-il mettait
-nous mettions
-vous mettiez
-ils mettaient
+<break time="600ms"/>
+je laisserais
+tu laisserais
+il laisserait
+nous laisserions
+vous laisseriez
+ils laisseraient
 
-.
+<break time="600ms"/>
+que je laisse
+que tu laisses
+qu' il laisse
+que nous laissions
+que vous laissiez
+qu' ils laissent
 
-je mis
-tu mis
-il mit
-nous mîmes
-vous mîtes
-ils mirent
+<break time="600ms"/>
+que je laissasse
+que tu laissasses
+qu' il laissât
+que nous laissassions
+que vous laissassiez
+qu' ils laissassent
 
-.
+<break time="600ms"/>
+laisse
+laissons
+laissez
 
-je mettrai
-tu mettras
-il mettra
-nous mettrons
-vous mettrez
-ils mettront
+<break time="600ms"/>
+laissant
 
-.
-
-je mettrais
-tu mettrais
-il mettrait
-nous mettrions
-vous mettriez
-ils mettraient
-
-.
-
-que je mette
-que tu mettes
-qu'il mette
-que nous mettions
-que vous mettiez
-qu'ils mettent
-
-.
-
-que je misse
-que tu misses
-qu'il mît
-que nous missions
-que vous missiez
-qu'ils missent
-
-.
-
-mets
-mettons
-mettez
-
-.
-
-mettant
-
-mis
+<break time="600ms"/>
+laissé
 </prosody>
 </voice>
 </speak>

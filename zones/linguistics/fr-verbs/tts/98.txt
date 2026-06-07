@@ -1,82 +1,75 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="fr-FR-DeniseNeural">
-<prosody rate="-10%" pitch="0%">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 98 -->
+raconter
 
-habiter
+<break time="600ms"/>
+je raconte
+tu racontes
+il raconte
+nous racontons
+vous racontez
+ils racontent
 
-.
+<break time="600ms"/>
+je racontais
+tu racontais
+il racontait
+nous racontions
+vous racontiez
+ils racontaient
 
-j'habite
-tu habites
-il habite
-nous habitons
-vous habitez
-ils habitent
+<break time="600ms"/>
+je racontai
+tu racontas
+il raconta
+nous racontâmes
+vous racontâtes
+ils racontèrent
 
-.
+<break time="600ms"/>
+je raconterai
+tu raconteras
+il racontera
+nous raconterons
+vous raconterez
+ils raconteront
 
-j'habitais
-tu habitais
-il habitait
-nous habitions
-vous habitiez
-ils habitaient
+<break time="600ms"/>
+je raconterais
+tu raconterais
+il raconterait
+nous raconterions
+vous raconteriez
+ils raconteraient
 
-.
+<break time="600ms"/>
+que je raconte
+que tu racontes
+qu' il raconte
+que nous racontions
+que vous racontiez
+qu' ils racontent
 
-j'habitai
-tu habitas
-il habita
-nous habitâmes
-vous habitâtes
-ils habitèrent
+<break time="600ms"/>
+que je racontasse
+que tu racontasses
+qu' il racontât
+que nous racontassions
+que vous racontassiez
+qu' ils racontassent
 
-.
+<break time="600ms"/>
+raconte
+racontons
+racontez
 
-j'habiterai
-tu habiteras
-il habitera
-nous habiterons
-vous habiterez
-ils habiteront
+<break time="600ms"/>
+racontant
 
-.
-
-j'habiterais
-tu habiterais
-il habiterait
-nous habiterions
-vous habiteriez
-ils habiteraient
-
-.
-
-que j'habite
-que tu habites
-qu'il habite
-que nous habitions
-que vous habitiez
-qu'ils habitent
-
-.
-
-que j'habitasse
-que tu habitasses
-qu'il habitât
-que nous habitassions
-que vous habitassiez
-qu'ils habitassent
-
-.
-
-habite
-habitons
-habitez
-
-.
-
-habitant
-habité
+<break time="600ms"/>
+raconté
 </prosody>
 </voice>
 </speak>

@@ -1,83 +1,75 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="fr-FR-DeniseNeural">
-<prosody rate="-10%" pitch="0%">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 18 -->
+regarder
 
-répondre
+<break time="600ms"/>
+je regarde
+tu regardes
+il regarde
+nous regardons
+vous regardez
+ils regardent
 
-.
+<break time="600ms"/>
+je regardais
+tu regardais
+il regardait
+nous regardions
+vous regardiez
+ils regardaient
 
-je réponds
-tu réponds
-il répond
-nous répondons
-vous répondez
-ils répondent
+<break time="600ms"/>
+je regardai
+tu regardas
+il regarda
+nous regardâmes
+vous regardâtes
+ils regardèrent
 
-.
+<break time="600ms"/>
+je regarderai
+tu regarderas
+il regardera
+nous regarderons
+vous regarderez
+ils regarderont
 
-je répondais
-tu répondais
-il répondait
-nous répondions
-vous répondiez
-ils répondaient
+<break time="600ms"/>
+je regarderais
+tu regarderais
+il regarderait
+nous regarderions
+vous regarderiez
+ils regarderaient
 
-.
+<break time="600ms"/>
+que je regarde
+que tu regardes
+qu' il regarde
+que nous regardions
+que vous regardiez
+qu' ils regardent
 
-je répondis
-tu répondis
-il répondit
-nous répondîmes
-vous répondîtes
-ils répondirent
+<break time="600ms"/>
+que je regardasse
+que tu regardasses
+qu' il regardât
+que nous regardassions
+que vous regardassiez
+qu' ils regardassent
 
-.
+<break time="600ms"/>
+regarde
+regardons
+regardez
 
-je répondrai
-tu répondras
-il répondra
-nous répondrons
-vous répondrez
-ils répondront
+<break time="600ms"/>
+regardant
 
-.
-
-je répondrais
-tu répondrais
-il répondrait
-nous répondrions
-vous répondriez
-ils répondraient
-
-.
-
-que je réponde
-que tu répondes
-qu'il réponde
-que nous répondions
-que vous répondiez
-qu'ils répondent
-
-.
-
-que je répondisse
-que tu répondisses
-qu'il répondît
-que nous répondissions
-que vous répondissiez
-qu'ils répondissent
-
-.
-
-réponds
-répondons
-répondez
-
-.
-
-répondant
-
-répondu
+<break time="600ms"/>
+regardé
 </prosody>
 </voice>
 </speak>

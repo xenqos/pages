@@ -1,83 +1,73 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="fr-FR-DeniseNeural">
-<prosody rate="-10%" pitch="0%">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 68 -->
+ouvrir
+j' ouvre
+tu ouvres
+il ouvre
+nous ouvrons
+vous ouvrez
+ils ouvrent
 
-naître
+<break time="600ms"/>
+j' ouvrais
+tu ouvrais
+il ouvrait
+nous ouvrions
+vous ouvriez
+ils ouvraient
 
-.
+<break time="600ms"/>
+j' ouvris
+tu ouvris
+il ouvrit
+nous ouvrîmes
+vous ouvrîtes
+ils ouvrirent
 
-je nais
-tu nais
-il naît
-nous naissons
-vous naissez
-ils naissent
+<break time="600ms"/>
+j' ouvrirai
+tu ouvriras
+il ouvrira
+nous ouvrirons
+vous ouvrirez
+ils ouvriront
 
-.
+<break time="600ms"/>
+j' ouvrirais
+tu ouvrirais
+il ouvrirait
+nous ouvririons
+vous ouvririez
+ils ouvriraient
 
-je naissais
-tu naissais
-il naissait
-nous naissions
-vous naissiez
-ils naissaient
+<break time="600ms"/>
+que j' ouvre
+que tu ouvres
+qu' il ouvre
+que nous ouvrions
+que vous ouvriez
+qu' ils ouvrent
 
-.
+<break time="600ms"/>
+que j' ouvrisse
+que tu ouvrisses
+qu' il ouvrît
+que nous ouvrissions
+que vous ouvrissiez
+qu' ils ouvrissent
 
-je naquis
-tu naquis
-il naquit
-nous naquîmes
-vous naquîtes
-ils naquirent
+<break time="600ms"/>
+ouvre
+ouvrons
+ouvrez
 
-.
+<break time="600ms"/>
+ouvrant
 
-je naîtrai
-tu naîtras
-il naîtra
-nous naîtrons
-vous naîtrez
-ils naîtront
-
-.
-
-je naîtrais
-tu naîtrais
-il naîtrait
-nous naîtrions
-vous naîtriez
-ils naîtraient
-
-.
-
-que je naisse
-que tu naisses
-qu'il naisse
-que nous naissions
-que vous naissiez
-qu'ils naissent
-
-.
-
-que je naquisse
-que tu naquisses
-qu'il naquît
-que nous naquissions
-que vous naquissiez
-qu'ils naquissent
-
-.
-
-nais
-naissons
-naissez
-
-.
-
-naissant
-
-né
+<break time="600ms"/>
+ouvert
 </prosody>
 </voice>
 </speak>

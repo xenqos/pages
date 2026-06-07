@@ -1,83 +1,75 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="fr-FR-DeniseNeural">
-<prosody rate="-10%" pitch="0%">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 61 -->
+vivre
 
-obtenir
+<break time="600ms"/>
+je vis
+tu vis
+il vit
+nous vivons
+vous vivez
+ils vivent
 
-.
+<break time="600ms"/>
+je vivais
+tu vivais
+il vivait
+nous vivions
+vous viviez
+ils vivaient
 
-j'obtiens
-tu obtiens
-il obtient
-nous obtenons
-vous obtenez
-ils obtiennent
+<break time="600ms"/>
+je vécus
+tu vécus
+il vécut
+nous vécûmes
+vous vécûtes
+ils vécurent
 
-.
+<break time="600ms"/>
+je vivrai
+tu vivras
+il vivra
+nous vivrons
+vous vivrez
+ils vivront
 
-j'obtenais
-tu obtenais
-il obtenait
-nous obtenions
-vous obteniez
-ils obtenaient
+<break time="600ms"/>
+je vivrais
+tu vivrais
+il vivrait
+nous vivrions
+vous vivriez
+ils vivraient
 
-.
+<break time="600ms"/>
+que je vive
+que tu vives
+qu' il vive
+que nous vivions
+que vous viviez
+qu' ils vivent
 
-j'obtins
-tu obtins
-il obtint
-nous obtînmes
-vous obtîntes
-ils obtinrent
+<break time="600ms"/>
+que je vécusse
+que tu vécusses
+qu' il vécût
+que nous vécussions
+que vous vécussiez
+qu' ils vécussent
 
-.
+<break time="600ms"/>
+vis
+vivons
+vivez
 
-j'obtiendrai
-tu obtiendras
-il obtiendra
-nous obtiendrons
-vous obtiendrez
-ils obtiendront
+<break time="600ms"/>
+vivant
 
-.
-
-j'obtiendrais
-tu obtiendrais
-il obtiendrait
-nous obtiendrions
-vous obtiendriez
-ils obtiendraient
-
-.
-
-que j'obtienne
-que tu obtiennes
-qu'il obtienne
-que nous obtenions
-que vous obteniez
-qu'ils obtiennent
-
-.
-
-que j'obtinsse
-que tu obtinsses
-qu'il obtînt
-que nous obtinssions
-que vous obtinssiez
-qu'ils obtinssent
-
-.
-
-obtiens
-obtenons
-obtenez
-
-.
-
-obtenant
-
-obtenu
+<break time="600ms"/>
+vécu
 </prosody>
 </voice>
 </speak>

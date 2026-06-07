@@ -1,83 +1,75 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="fr-FR-DeniseNeural">
-<prosody rate="-10%" pitch="0%">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 25 -->
+sonner
 
-souvenir
+<break time="600ms"/>
+je sonne
+tu sonnes
+il sonne
+nous sonnons
+vous sonnez
+ils sonnent
 
-.
+<break time="600ms"/>
+je sonnais
+tu sonnais
+il sonnait
+nous sonnions
+vous sonniez
+ils sonnaient
 
-je souviens
-tu souviens
-il souvient
-nous souvenons
-vous souvenez
-ils souviennent
+<break time="600ms"/>
+je sonnai
+tu sonnas
+il sonna
+nous sonnâmes
+vous sonnâtes
+ils sonnèrent
 
-.
+<break time="600ms"/>
+je sonnerai
+tu sonneras
+il sonnera
+nous sonnerons
+vous sonnerez
+ils sonneront
 
-je souvenais
-tu souvenais
-il souvenait
-nous souvenions
-vous souveniez
-ils souvenaient
+<break time="600ms"/>
+je sonnerais
+tu sonnerais
+il sonnerait
+nous sonnerions
+vous sonneriez
+ils sonneraient
 
-.
+<break time="600ms"/>
+que je sonne
+que tu sonnes
+qu' il sonne
+que nous sonnions
+que vous sonniez
+qu' ils sonnent
 
-je souvins
-tu souvins
-il souvint
-nous souvînmes
-vous souvîntes
-ils souvinrent
+<break time="600ms"/>
+que je sonnasse
+que tu sonnasses
+qu' il sonnât
+que nous sonnassions
+que vous sonnassiez
+qu' ils sonnassent
 
-.
+<break time="600ms"/>
+sonne
+sonnons
+sonnez
 
-je souviendrai
-tu souviendras
-il souviendra
-nous souviendrons
-vous souviendrez
-ils souviendront
+<break time="600ms"/>
+sonnant
 
-.
-
-je souviendrais
-tu souviendrais
-il souviendrait
-nous souviendrions
-vous souviendriez
-ils souviendraient
-
-.
-
-que je souvienne
-que tu souviennes
-qu'il souvienne
-que nous souvenions
-que vous souveniez
-qu'ils souviennent
-
-.
-
-que je souvinsse
-que tu souvinsses
-qu'il souvînt
-que nous souvinssions
-que vous souvinssiez
-qu'ils souvinssent
-
-.
-
-souviens
-souvenons
-souvenez
-
-.
-
-souvenant
-
-souvenu
+<break time="600ms"/>
+sonné
 </prosody>
 </voice>
 </speak>

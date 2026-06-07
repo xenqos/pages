@@ -1,83 +1,73 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="fr-FR-DeniseNeural">
-<prosody rate="-10%" pitch="0%">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 44 -->
+arriver
+j' arrive
+tu arrives
+il arrive
+nous arrivons
+vous arrivez
+ils arrivent
 
-rire
+<break time="600ms"/>
+j' arrivais
+tu arrivais
+il arrivait
+nous arrivions
+vous arriviez
+ils arrivaient
 
-.
+<break time="600ms"/>
+j' arrivai
+tu arrivas
+il arriva
+nous arrivâmes
+vous arrivâtes
+ils arrivèrent
 
-je ris
-tu ris
-il rit
-nous rions
-vous riez
-ils rient
+<break time="600ms"/>
+j' arriverai
+tu arriveras
+il arrivera
+nous arriverons
+vous arriverez
+ils arriveront
 
-.
+<break time="600ms"/>
+j' arriverais
+tu arriverais
+il arriverait
+nous arriverions
+vous arriveriez
+ils arriveraient
 
-je riais
-tu riais
-il riait
-nous riions
-vous riiez
-ils riaient
+<break time="600ms"/>
+que j' arrive
+que tu arrives
+qu' il arrive
+que nous arrivions
+que vous arriviez
+qu' ils arrivent
 
-.
+<break time="600ms"/>
+que j' arrivasse
+que tu arrivasses
+qu' il arrivât
+que nous arrivassions
+que vous arrivassiez
+qu' ils arrivassent
 
-je ris
-tu ris
-il rit
-nous rîmes
-vous rîtes
-ils rirent
+<break time="600ms"/>
+arrive
+arrivons
+arrivez
 
-.
+<break time="600ms"/>
+arrivant
 
-je rirai
-tu riras
-il rira
-nous rirons
-vous rirez
-ils riront
-
-.
-
-je rirais
-tu rirais
-il rirait
-nous ririons
-vous ririez
-ils riraient
-
-.
-
-que je rie
-que tu ries
-qu'il rie
-que nous riions
-que vous riiez
-qu'ils rient
-
-.
-
-que je risse
-que tu risses
-qu'il rît
-que nous rissions
-que vous rissiez
-qu'ils rissent
-
-.
-
-ris
-rions
-riez
-
-.
-
-riant
-
-ri
+<break time="600ms"/>
+arrivé
 </prosody>
 </voice>
 </speak>

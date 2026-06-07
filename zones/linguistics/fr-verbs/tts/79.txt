@@ -1,82 +1,75 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="fr-FR-DeniseNeural">
-<prosody rate="-10%" pitch="0%">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 79 -->
+lire
 
-apprendre
+<break time="600ms"/>
+je lis
+tu lis
+il lit
+nous lisons
+vous lisez
+ils lisent
 
-.
+<break time="600ms"/>
+je lisais
+tu lisais
+il lisait
+nous lisions
+vous lisiez
+ils lisaient
 
-j'apprends
-tu apprends
-il apprend
-nous apprenons
-vous apprenez
-ilzapprennent
+<break time="600ms"/>
+je lus
+tu lus
+il lut
+nous lûmes
+vous lûtes
+ils lurent
 
-.
+<break time="600ms"/>
+je lirai
+tu liras
+il lira
+nous lirons
+vous lirez
+ils liront
 
-j'apprenais
-tu apprenais
-il apprenait
-nous apprenions
-vous appreniez
-ilzapprenaient
+<break time="600ms"/>
+je lirais
+tu lirais
+il lirait
+nous lirions
+vous liriez
+ils liraient
 
-.
+<break time="600ms"/>
+que je lise
+que tu lises
+qu' il lise
+que nous lisions
+que vous lisiez
+qu' ils lisent
 
-j'appris
-tu appris
-il apprit
-nous apprîmes
-vous apprîtes
-ilzapprirent
+<break time="600ms"/>
+que je lusse
+que tu lusses
+qu' il lût
+que nous lussions
+que vous lussiez
+qu' ils lussent
 
-.
+<break time="600ms"/>
+lis
+lisons
+lisez
 
-j'apprendrai
-tu apprendras
-il apprendra
-nous apprendrons
-vous apprendrez
-ilzapprendront
+<break time="600ms"/>
+lisant
 
-.
-
-j'apprendrais
-tu apprendrais
-il apprendrait
-nous apprendrions
-vous apprendriez
-ilzapprendraient
-
-.
-
-que j'apprenne
-que tu apprennes
-qu'il apprenne
-que nous apprenions
-que vous appreniez
-qu'ilzapprennent
-
-.
-
-que j'apprisse
-que tu apprisses
-qu'il apprît
-que nous apprissions
-que vous apprissiez
-qu'ilzapprissent
-
-.
-
-apprends
-apprenons
-apprenez
-
-.
-
-apprenant
-appris
+<break time="600ms"/>
+lu
 </prosody>
 </voice>
 </speak>

@@ -1,83 +1,75 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="fr-FR-DeniseNeural">
-<prosody rate="-10%" pitch="0%">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 13 -->
+mettre
 
-regarder
+<break time="600ms"/>
+je mets
+tu mets
+il met
+nous mettons
+vous mettez
+ils mettent
 
-.
+<break time="600ms"/>
+je mettais
+tu mettais
+il mettait
+nous mettions
+vous mettiez
+ils mettaient
 
-je regarde
-tu regardes
-il regarde
-nous regardons
-vous regardez
-ils regardent
+<break time="600ms"/>
+je mis
+tu mis
+il mit
+nous mîmes
+vous mîtes
+ils mirent
 
-.
+<break time="600ms"/>
+je mettrai
+tu mettras
+il mettra
+nous mettrons
+vous mettrez
+ils mettront
 
-je regardais
-tu regardais
-il regardait
-nous regardions
-vous regardiez
-ils regardaient
+<break time="600ms"/>
+je mettrais
+tu mettrais
+il mettrait
+nous mettrions
+vous mettriez
+ils mettraient
 
-.
+<break time="600ms"/>
+que je mette
+que tu mettes
+qu' il mette
+que nous mettions
+que vous mettiez
+qu' ils mettent
 
-je regardai
-tu regardas
-il regarda
-nous regardâmes
-vous regardâtes
-ils regardèrent
+<break time="600ms"/>
+que je misse
+que tu misses
+qu' il mît
+que nous missions
+que vous missiez
+qu' ils missent
 
-.
+<break time="600ms"/>
+mets
+mettons
+mettez
 
-je regarderai
-tu regarderas
-il regardera
-nous regarderons
-vous regarderez
-ils regarderont
+<break time="600ms"/>
+mettant
 
-.
-
-je regarderais
-tu regarderais
-il regarderait
-nous regarderions
-vous regarderiez
-ils regarderaient
-
-.
-
-que je regarde
-que tu regardes
-qu'il regarde
-que nous regardions
-que vous regardiez
-qu'ils regardent
-
-.
-
-que je regardasse
-que tu regardasses
-qu'il regardât
-que nous regardassions
-que vous regardassiez
-qu'ils regardassent
-
-.
-
-regarde
-regardons
-regardez
-
-.
-
-regardant
-
-regardé
+<break time="600ms"/>
+mis
 </prosody>
 </voice>
 </speak>

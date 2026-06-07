@@ -1,11 +1,10 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="fr-FR-DeniseNeural">
-<prosody rate="-10%" pitch="0%">
-
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 99 -->
 plaire
 
-.
-
+<break time="600ms"/>
 je plais
 tu plais
 il plaît
@@ -13,8 +12,7 @@ nous plaisons
 vous plaisez
 ils plaisent
 
-.
-
+<break time="600ms"/>
 je plaisais
 tu plaisais
 il plaisait
@@ -22,8 +20,7 @@ nous plaisions
 vous plaisiez
 ils plaisaient
 
-.
-
+<break time="600ms"/>
 je plus
 tu plus
 il plut
@@ -31,8 +28,7 @@ nous plûmes
 vous plûtes
 ils plurent
 
-.
-
+<break time="600ms"/>
 je plairai
 tu plairas
 il plaira
@@ -40,8 +36,7 @@ nous plairons
 vous plairez
 ils plairont
 
-.
-
+<break time="600ms"/>
 je plairais
 tu plairais
 il plairait
@@ -49,33 +44,31 @@ nous plairions
 vous plairiez
 ils plairaient
 
-.
-
+<break time="600ms"/>
 que je plaise
 que tu plaises
-qu'il plaise
+qu' il plaise
 que nous plaisions
 que vous plaisiez
-qu'ils plaisent
+qu' ils plaisent
 
-.
-
+<break time="600ms"/>
 que je plusse
 que tu plusses
-qu'il plût
+qu' il plût
 que nous plussions
 que vous plussiez
-qu'ils plussent
+qu' ils plussent
 
-.
-
+<break time="600ms"/>
 plais
 plaisons
 plaisez
 
-.
-
+<break time="600ms"/>
 plaisant
+
+<break time="600ms"/>
 plu
 </prosody>
 </voice>

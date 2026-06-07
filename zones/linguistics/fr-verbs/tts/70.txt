@@ -1,83 +1,73 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="fr-FR-DeniseNeural">
-<prosody rate="-10%" pitch="0%">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 70 -->
+acheter
+j' achète
+tu achètes
+il achète
+nous achetons
+vous achetez
+ils achètent
 
-devenir
+<break time="600ms"/>
+j' achetais
+tu achetais
+il achetait
+nous achetions
+vous achetiez
+ils achetaient
 
-.
+<break time="600ms"/>
+j' achetai
+tu achetas
+il acheta
+nous achetâmes
+vous achetâtes
+ils achetèrent
 
-je deviens
-tu deviens
-il devient
-nous devenons
-vous devenez
-ils deviennent
+<break time="600ms"/>
+j' achèterai
+tu achèteras
+il achètera
+nous achèterons
+vous achèterez
+ils achèteront
 
-.
+<break time="600ms"/>
+j' achèterais
+tu achèterais
+il achèterait
+nous achèterions
+vous achèteriez
+ils achèteraient
 
-je devenais
-tu devenais
-il devenait
-nous devenions
-vous deveniez
-ils devenaient
+<break time="600ms"/>
+que j' achète
+que tu achètes
+qu' il achète
+que nous achetions
+que vous achetiez
+qu' ils achètent
 
-.
+<break time="600ms"/>
+que j' achetasse
+que tu achetasses
+qu' il achetât
+que nous achetassions
+que vous achetassiez
+qu' ils achetassent
 
-je devins
-tu devins
-il devint
-nous devînmes
-vous devîntes
-ils devinrent
+<break time="600ms"/>
+achète
+achetons
+achetez
 
-.
+<break time="600ms"/>
+achetant
 
-je deviendrai
-tu deviendras
-il deviendra
-nous deviendrons
-vous deviendrez
-ils deviendront
-
-.
-
-je deviendrais
-tu deviendrais
-il deviendrait
-nous deviendrions
-vous deviendriez
-ils deviendraient
-
-.
-
-que je devienne
-que tu deviennes
-qu'il devienne
-que nous devenions
-que vous deveniez
-qu'ils deviennent
-
-.
-
-que je devinsse
-que tu devinsses
-qu'il devînt
-que nous devinssions
-que vous devinssiez
-qu'ils devinssent
-
-.
-
-deviens
-devenons
-devenez
-
-.
-
-devenant
-
-devenu
+<break time="600ms"/>
+acheté
 </prosody>
 </voice>
 </speak>

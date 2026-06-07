@@ -1,83 +1,73 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="fr-FR-DeniseNeural">
-<prosody rate="-10%" pitch="0%">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 23 -->
+appeler
+j' appelle
+tu appelles
+il appelle
+nous appelons
+vous appelez
+ils appellent
 
-penser
+<break time="600ms"/>
+j' appelais
+tu appelais
+il appelait
+nous appelions
+vous appeliez
+ils appelaient
 
-.
+<break time="600ms"/>
+j' appelai
+tu appelas
+il appela
+nous appelâmes
+vous appelâtes
+ils appelèrent
 
-je pense
-tu penses
-il pense
-nous pensons
-vous pensez
-ils pensent
+<break time="600ms"/>
+j' appellerai
+tu appelleras
+il appellera
+nous appellerons
+vous appellerez
+ils appelleront
 
-.
+<break time="600ms"/>
+j' appellerais
+tu appellerais
+il appellerait
+nous appellerions
+vous appelleriez
+ils appelleraient
 
-je pensais
-tu pensais
-il pensait
-nous pensions
-vous pensiez
-ils pensaient
+<break time="600ms"/>
+que j' appelle
+que tu appelles
+qu' il appelle
+que nous appelions
+que vous appeliez
+qu' ils appellent
 
-.
+<break time="600ms"/>
+que j' appelasse
+que tu appelasses
+qu' il appelât
+que nous appelassions
+que vous appelassiez
+qu' ils appelassent
 
-je pensai
-tu pensas
-il pensa
-nous pensâmes
-vous pensâtes
-ils pensèrent
+<break time="600ms"/>
+appelle
+appelons
+appelez
 
-.
+<break time="600ms"/>
+appelant
 
-je penserai
-tu penseras
-il pensera
-nous penserons
-vous penserez
-ils penseront
-
-.
-
-je penserais
-tu penserais
-il penserait
-nous penserions
-vous penseriez
-ils penseraient
-
-.
-
-que je pense
-que tu penses
-qu'il pense
-que nous pensions
-que vous pensiez
-qu'ils pensent
-
-.
-
-que je pensasse
-que tu pensasses
-qu'il pensât
-que nous pensassions
-que vous pensassiez
-qu'ils pensassent
-
-.
-
-pense
-pensons
-pensez
-
-.
-
-pensant
-
-pensé
+<break time="600ms"/>
+appelé
 </prosody>
 </voice>
 </speak>

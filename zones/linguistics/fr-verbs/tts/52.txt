@@ -1,83 +1,75 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="fr-FR-DeniseNeural">
-<prosody rate="-10%" pitch="0%">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 52 -->
+monter
 
-sortir
+<break time="600ms"/>
+je monte
+tu montes
+il monte
+nous montons
+vous montez
+ils montent
 
-.
+<break time="600ms"/>
+je montais
+tu montais
+il montait
+nous montions
+vous montiez
+ils montaient
 
-je sors
-tu sors
-il sort
-nous sortons
-vous sortez
-ils sortent
+<break time="600ms"/>
+je montai
+tu montas
+il monta
+nous montâmes
+vous montâtes
+ils montèrent
 
-.
+<break time="600ms"/>
+je monterai
+tu monteras
+il montera
+nous monterons
+vous monterez
+ils monteront
 
-je sortais
-tu sortais
-il sortait
-nous sortions
-vous sortiez
-ils sortaient
+<break time="600ms"/>
+je monterais
+tu monterais
+il monterait
+nous monterions
+vous monteriez
+ils monteraient
 
-.
+<break time="600ms"/>
+que je monte
+que tu montes
+qu' il monte
+que nous montions
+que vous montiez
+qu' ils montent
 
-je sortis
-tu sortis
-il sortit
-nous sortîmes
-vous sortîtes
-ils sortirent
+<break time="600ms"/>
+que je montasse
+que tu montasses
+qu' il montât
+que nous montassions
+que vous montassiez
+qu' ils montassent
 
-.
+<break time="600ms"/>
+monte
+montons
+montez
 
-je sortirai
-tu sortiras
-il sortira
-nous sortirons
-vous sortirez
-ils sortiront
+<break time="600ms"/>
+montant
 
-.
-
-je sortirais
-tu sortirais
-il sortirait
-nous sortirions
-vous sortiriez
-ils sortiraient
-
-.
-
-que je sorte
-que tu sortes
-qu'il sorte
-que nous sortions
-que vous sortiez
-qu'ils sortent
-
-.
-
-que je sortisse
-que tu sortisses
-qu'il sortît
-que nous sortissions
-que vous sortissiez
-qu'ils sortissent
-
-.
-
-sors
-sortons
-sortez
-
-.
-
-sortant
-
-sorti
+<break time="600ms"/>
+monté
 </prosody>
 </voice>
 </speak>

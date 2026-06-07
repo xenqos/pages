@@ -1,83 +1,32 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="fr-FR-DeniseNeural">
-<prosody rate="-10%" pitch="0%">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 11 -->
+falloir
 
-laisser
+<break time="600ms"/>
+il faut
 
-.
+<break time="600ms"/>
+il fallait
 
-je laisse
-tu laisses
-il laisse
-nous laissons
-vous laissez
-ils laissent
+<break time="600ms"/>
+il fallut
 
-.
+<break time="600ms"/>
+il faudra
 
-je laissais
-tu laissais
-il laissait
-nous laissions
-vous laissiez
-ils laissaient
+<break time="600ms"/>
+il faudrait
 
-.
+<break time="600ms"/>
+qu' il faille
 
-je laissai
-tu laissas
-il laissa
-nous laissâmes
-vous laissâtes
-ils laissèrent
+<break time="600ms"/>
+qu' il fallût
 
-.
-
-je laisserai
-tu laisseras
-il laissera
-nous laisserons
-vous laisserez
-ils laisseront
-
-.
-
-je laisserais
-tu laisserais
-il laisserait
-nous laisserions
-vous laisseriez
-ils laisseraient
-
-.
-
-que je laisse
-que tu laisses
-qu'il laisse
-que nous laissions
-que vous laissiez
-qu'ils laissent
-
-.
-
-que je laissasse
-que tu laissasses
-qu'il laissât
-que nous laissassions
-que vous laissassiez
-qu'ils laissassent
-
-.
-
-laisse
-laissons
-laissez
-
-.
-
-laissant
-
-laissé
+<break time="600ms"/>
+fallu
 </prosody>
 </voice>
 </speak>

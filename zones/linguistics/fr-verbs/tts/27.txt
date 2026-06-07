@@ -1,83 +1,75 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="fr-FR-DeniseNeural">
-<prosody rate="-10%" pitch="0%">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 27 -->
+comprendre
 
-écrire
+<break time="600ms"/>
+je comprends
+tu comprends
+il comprend
+nous comprenons
+vous comprenez
+ils comprennent
 
-.
+<break time="600ms"/>
+je comprenais
+tu comprenais
+il comprenait
+nous comprenions
+vous compreniez
+ils comprenaient
 
-j'écris
-tu écris
-il écrit
-nous écrivons
-vous écrivez
-ilzécrivent
+<break time="600ms"/>
+je compris
+tu compris
+il comprit
+nous comprîmes
+vous comprîtes
+ils comprirent
 
-.
+<break time="600ms"/>
+je comprendrai
+tu comprendras
+il comprendra
+nous comprendrons
+vous comprendrez
+ils comprendront
 
-j'écrivais
-tu écrivais
-il écrivait
-nous écrivions
-vous écriviez
-ilzécrivaient
+<break time="600ms"/>
+je comprendrais
+tu comprendrais
+il comprendrait
+nous comprendrions
+vous comprendriez
+ils comprendraient
 
-.
+<break time="600ms"/>
+que je comprenne
+que tu comprennes
+qu' il comprenne
+que nous comprenions
+que vous compreniez
+qu' ils comprennent
 
-j'écrivis
-tu écrivis
-il écrivit
-nous écrivîmes
-vous écrivîtes
-ilzécrivirent
+<break time="600ms"/>
+que je comprisse
+que tu comprisses
+qu' il comprît
+que nous comprissions
+que vous comprissiez
+qu' ils comprissent
 
-.
+<break time="600ms"/>
+comprends
+comprenons
+comprenez
 
-j'écrirai
-tu écriras
-il écrira
-nous écrirons
-vous écrirez
-ilzécriront
+<break time="600ms"/>
+comprenant
 
-.
-
-j'écrirais
-tu écrirais
-il écrirait
-nous écririons
-vous écririez
-ilzécriraient
-
-.
-
-que j'écrive
-que tu écrives
-qu'il écrive
-que nous écrivions
-que vous écriviez
-qu'ilzécrivent
-
-.
-
-que j'écrivisse
-que tu écrivisses
-qu'il écrivît
-que nous écrivissions
-que vous écrivissiez
-qu'ilzécrivissent
-
-.
-
-écris
-écrivons
-écrivez
-
-.
-
-écrivant
-
-écrit
+<break time="600ms"/>
+compris
 </prosody>
 </voice>
 </speak>

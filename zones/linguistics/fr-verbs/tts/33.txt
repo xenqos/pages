@@ -1,83 +1,75 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="fr-FR-DeniseNeural">
-<prosody rate="-10%" pitch="0%">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 33 -->
+chercher
 
-donner
+<break time="600ms"/>
+je cherche
+tu cherches
+il cherche
+nous cherchons
+vous cherchez
+ils cherchent
 
-.
+<break time="600ms"/>
+je cherchais
+tu cherchais
+il cherchait
+nous cherchions
+vous cherchiez
+ils cherchaient
 
-je donne
-tu donnes
-il donne
-nous donnons
-vous donnez
-ils donnent
+<break time="600ms"/>
+je cherchai
+tu cherchas
+il chercha
+nous cherchâmes
+vous cherchâtes
+ils cherchèrent
 
-.
+<break time="600ms"/>
+je chercherai
+tu chercheras
+il cherchera
+nous chercherons
+vous chercherez
+ils chercheront
 
-je donnais
-tu donnais
-il donnait
-nous donnions
-vous donniez
-ils donnaient
+<break time="600ms"/>
+je chercherais
+tu chercherais
+il chercherait
+nous chercherions
+vous chercheriez
+ils chercheraient
 
-.
+<break time="600ms"/>
+que je cherche
+que tu cherches
+qu' il cherche
+que nous cherchions
+que vous cherchiez
+qu' ils cherchent
 
-je donnai
-tu donnas
-il donna
-nous donnâmes
-vous donnâtes
-ils donnèrent
+<break time="600ms"/>
+que je cherchasse
+que tu cherchasses
+qu' il cherchât
+que nous cherchassions
+que vous cherchassiez
+qu' ils cherchassent
 
-.
+<break time="600ms"/>
+cherche
+cherchons
+cherchez
 
-je donnerai
-tu donneras
-il donnera
-nous donnerons
-vous donnerez
-ils donneront
+<break time="600ms"/>
+cherchant
 
-.
-
-je donnerais
-tu donnerais
-il donnerait
-nous donnerions
-vous donneriez
-ils donneraient
-
-.
-
-que je donne
-que tu donnes
-qu'il donne
-que nous donnions
-que vous donniez
-qu'ils donnent
-
-.
-
-que je donnasse
-que tu donnasses
-qu'il donnât
-que nous donnassions
-que vous donnassiez
-qu'ils donnassent
-
-.
-
-donne
-donnons
-donnez
-
-.
-
-donnant
-
-donné
+<break time="600ms"/>
+cherché
 </prosody>
 </voice>
 </speak>

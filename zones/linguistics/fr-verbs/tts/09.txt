@@ -1,83 +1,75 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="fr-FR-DeniseNeural">
-<prosody rate="-10%" pitch="0%">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 09 -->
+devoir
 
-savoir
+<break time="600ms"/>
+je dois
+tu dois
+il doit
+nous devons
+vous devez
+ils doivent
 
-.
+<break time="600ms"/>
+je devais
+tu devais
+il devait
+nous devions
+vous deviez
+ils devaient
 
-je sais
-tu sais
-il sait
-nous savons
-vous savez
-ils savent
+<break time="600ms"/>
+je dus
+tu dus
+il dut
+nous dûmes
+vous dûtes
+ils durent
 
-.
+<break time="600ms"/>
+je devrai
+tu devras
+il devra
+nous devrons
+vous devrez
+ils devront
 
-je savais
-tu savais
-il savait
-nous savions
-vous saviez
-ils savaient
+<break time="600ms"/>
+je devrais
+tu devrais
+il devrait
+nous devrions
+vous devriez
+ils devraient
 
-.
+<break time="600ms"/>
+que je doive
+que tu doives
+qu' il doive
+que nous devions
+que vous deviez
+qu' ils doivent
 
-je sus
-tu sus
-il sut
-nous sûmes
-vous sûtes
-ils surent
+<break time="600ms"/>
+que je dusse
+que tu dusses
+qu' il dût
+que nous dussions
+que vous dussiez
+qu' ils dussent
 
-.
+<break time="600ms"/>
+dois
+devons
+devez
 
-je saurai
-tu sauras
-il saura
-nous saurons
-vous saurez
-ils sauront
+<break time="600ms"/>
+devant
 
-.
-
-je saurais
-tu saurais
-il saurait
-nous saurions
-vous sauriez
-ils sauraient
-
-.
-
-que je sache
-que tu saches
-qu'il sache
-que nous sachions
-que vous sachiez
-qu'ils sachent
-
-.
-
-que je susse
-que tu susses
-qu'il sût
-que nous sussions
-que vous sussiez
-qu'ils sussent
-
-.
-
-sache
-sachons
-sachez
-
-.
-
-sachant
-
-su
+<break time="600ms"/>
+dû
 </prosody>
 </voice>
 </speak>

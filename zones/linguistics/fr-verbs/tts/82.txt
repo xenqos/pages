@@ -1,82 +1,75 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="fr-FR-DeniseNeural">
-<prosody rate="-10%" pitch="0%">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 82 -->
+gagner
 
-conduire
+<break time="600ms"/>
+je gagne
+tu gagnes
+il gagne
+nous gagnons
+vous gagnez
+ils gagnent
 
-.
+<break time="600ms"/>
+je gagnais
+tu gagnais
+il gagnait
+nous gagnions
+vous gagniez
+ils gagnaient
 
-je conduis
-tu conduis
-il conduit
-nous conduisons
-vous conduisez
-ils conduisent
+<break time="600ms"/>
+je gagnai
+tu gagnas
+il gagna
+nous gagnâmes
+vous gagnâtes
+ils gagnèrent
 
-.
+<break time="600ms"/>
+je gagnerai
+tu gagneras
+il gagnera
+nous gagnerons
+vous gagnerez
+ils gagneront
 
-je conduisais
-tu conduisais
-il conduisait
-nous conduisions
-vous conduisiez
-ils conduisaient
+<break time="600ms"/>
+je gagnerais
+tu gagnerais
+il gagnerait
+nous gagnerions
+vous gagneriez
+ils gagneraient
 
-.
+<break time="600ms"/>
+que je gagne
+que tu gagnes
+qu' il gagne
+que nous gagnions
+que vous gagniez
+qu' ils gagnent
 
-je conduisis
-tu conduisis
-il conduisit
-nous conduisîmes
-vous conduisîtes
-ils conduisirent
+<break time="600ms"/>
+que je gagnasse
+que tu gagnasses
+qu' il gagnât
+que nous gagnassions
+que vous gagnassiez
+qu' ils gagnassent
 
-.
+<break time="600ms"/>
+gagne
+gagnons
+gagnez
 
-je conduirai
-tu conduiras
-il conduira
-nous conduirons
-vous conduirez
-ils conduiront
+<break time="600ms"/>
+gagnant
 
-.
-
-je conduirais
-tu conduirais
-il conduirait
-nous conduirions
-vous conduiriez
-ils conduiraient
-
-.
-
-que je conduise
-que tu conduises
-qu'il conduise
-que nous conduisions
-que vous conduisiez
-qu'ils conduisent
-
-.
-
-que je conduisisse
-que tu conduisisses
-qu'il conduisît
-que nous conduisissions
-que vous conduisissiez
-qu'ils conduisissent
-
-.
-
-conduis
-conduisons
-conduisez
-
-.
-
-conduisant
-conduit
+<break time="600ms"/>
+gagné
 </prosody>
 </voice>
 </speak>

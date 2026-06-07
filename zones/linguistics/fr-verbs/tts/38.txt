@@ -1,83 +1,75 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="fr-FR-DeniseNeural">
-<prosody rate="-10%" pitch="0%">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 38 -->
+décider
 
-choisir
+<break time="600ms"/>
+je décide
+tu décides
+il décide
+nous décidons
+vous décidez
+ils décident
 
-.
+<break time="600ms"/>
+je décidais
+tu décidais
+il décidait
+nous décidions
+vous décidiez
+ils décidaient
 
-je choisis
-tu choisis
-il choisit
-nous choisissons
-vous choisissez
-ils choisissent
+<break time="600ms"/>
+je décidai
+tu décidas
+il décida
+nous décidâmes
+vous décidâtes
+ils décidèrent
 
-.
+<break time="600ms"/>
+je déciderai
+tu décideras
+il décidera
+nous déciderons
+vous déciderez
+ils décideront
 
-je choisissais
-tu choisissais
-il choisissait
-nous choisissions
-vous choisissiez
-ils choisissaient
+<break time="600ms"/>
+je déciderais
+tu déciderais
+il déciderait
+nous déciderions
+vous décideriez
+ils décideraient
 
-.
+<break time="600ms"/>
+que je décide
+que tu décides
+qu' il décide
+que nous décidions
+que vous décidiez
+qu' ils décident
 
-je choisis
-tu choisis
-il choisit
-nous choisîmes
-vous choisîtes
-ils choisirent
+<break time="600ms"/>
+que je décidasse
+que tu décidasses
+qu' il décidât
+que nous décidassions
+que vous décidassiez
+qu' ils décidassent
 
-.
+<break time="600ms"/>
+décide
+décidons
+décidez
 
-je choisirai
-tu choisiras
-il choisira
-nous choisirons
-vous choisirez
-ils choisiront
+<break time="600ms"/>
+décidant
 
-.
-
-je choisirais
-tu choisirais
-il choisirait
-nous choisirions
-vous choisiriez
-ils choisiraient
-
-.
-
-que je choisisse
-que tu choisisses
-qu'il choisisse
-que nous choisissions
-que vous choisissiez
-qu'ils choisissent
-
-.
-
-que je choisisse
-que tu choisisses
-qu'il choisît
-que nous choisissions
-que vous choisissiez
-qu'ils choisissent
-
-.
-
-choisis
-choisissons
-choisissez
-
-.
-
-choisissant
-
-choisi
+<break time="600ms"/>
+décidé
 </prosody>
 </voice>
 </speak>

@@ -1,82 +1,75 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="fr-FR-DeniseNeural">
-<prosody rate="-10%" pitch="0%">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 75 -->
+danser
 
-chanter
+<break time="600ms"/>
+je danse
+tu danses
+il danse
+nous dansons
+vous dansez
+ils dansent
 
-.
+<break time="600ms"/>
+je dansais
+tu dansais
+il dansait
+nous dansions
+vous dansiez
+ils dansaient
 
-je chante
-tu chantes
-il chante
-nous chantons
-vous chantez
-ils chantent
+<break time="600ms"/>
+je dansai
+tu dansas
+il dansa
+nous dansâmes
+vous dansâtes
+ils dansèrent
 
-.
+<break time="600ms"/>
+je danserai
+tu danseras
+il dansera
+nous danserons
+vous danserez
+ils danseront
 
-je chantais
-tu chantais
-il chantait
-nous chantions
-vous chantiez
-ils chantaient
+<break time="600ms"/>
+je danserais
+tu danserais
+il danserait
+nous danserions
+vous danseriez
+ils danseraient
 
-.
+<break time="600ms"/>
+que je danse
+que tu danses
+qu' il danse
+que nous dansions
+que vous dansiez
+qu' ils dansent
 
-je chantai
-tu chantas
-il chanta
-nous chantâmes
-vous chantâtes
-ils chantèrent
+<break time="600ms"/>
+que je dansasse
+que tu dansasses
+qu' il dansât
+que nous dansassions
+que vous dansassiez
+qu' ils dansassent
 
-.
+<break time="600ms"/>
+danse
+dansons
+dansez
 
-je chanterai
-tu chanteras
-il chantera
-nous chanterons
-vous chanterez
-ils chanteront
+<break time="600ms"/>
+dansant
 
-.
-
-je chanterais
-tu chanterais
-il chanterait
-nous chanterions
-vous chanteriez
-ils chanteraient
-
-.
-
-que je chante
-que tu chantes
-qu'il chante
-que nous chantions
-que vous chantiez
-qu'ils chantent
-
-.
-
-que je chantasse
-que tu chantasses
-qu'il chantât
-que nous chantassions
-que vous chantassiez
-qu'ils chantassent
-
-.
-
-chante
-chantons
-chantez
-
-.
-
-chantant
-chanté
+<break time="600ms"/>
+dansé
 </prosody>
 </voice>
 </speak>

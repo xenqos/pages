@@ -1,82 +1,75 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="fr-FR-DeniseNeural">
-<prosody rate="-10%" pitch="0%">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 92 -->
+toucher
 
-lancer
+<break time="600ms"/>
+je touche
+tu touches
+il touche
+nous touchons
+vous touchez
+ils touchent
 
-.
+<break time="600ms"/>
+je touchais
+tu touchais
+il touchait
+nous touchions
+vous touchiez
+ils touchaient
 
-je lance
-tu lances
-il lance
-nous lançons
-vous lancez
-ils lancent
+<break time="600ms"/>
+je touchai
+tu touchas
+il toucha
+nous touchâmes
+vous touchâtes
+ils touchèrent
 
-.
+<break time="600ms"/>
+je toucherai
+tu toucheras
+il touchera
+nous toucherons
+vous toucherez
+ils toucheront
 
-je lançais
-tu lançais
-il lançait
-nous lancions
-vous lanciez
-ils lançaient
+<break time="600ms"/>
+je toucherais
+tu toucherais
+il toucherait
+nous toucherions
+vous toucheriez
+ils toucheraient
 
-.
+<break time="600ms"/>
+que je touche
+que tu touches
+qu' il touche
+que nous touchions
+que vous touchiez
+qu' ils touchent
 
-je lançai
-tu lanças
-il lança
-nous lançâmes
-vous lançâtes
-ils lancèrent
+<break time="600ms"/>
+que je touchasse
+que tu touchasses
+qu' il touchât
+que nous touchassions
+que vous touchassiez
+qu' ils touchassent
 
-.
+<break time="600ms"/>
+touche
+touchons
+touchez
 
-je lancerai
-tu lanceras
-il lancera
-nous lancerons
-vous lancerez
-ils lanceront
+<break time="600ms"/>
+touchant
 
-.
-
-je lancerais
-tu lancerais
-il lancerait
-nous lancerions
-vous lanceriez
-ils lanceraient
-
-.
-
-que je lance
-que tu lances
-qu'il lance
-que nous lancions
-que vous lanciez
-qu'ils lancent
-
-.
-
-que je lançasse
-que tu lançasses
-qu'il lançât
-que nous lançassions
-que vous lançassiez
-qu'ils lançassent
-
-.
-
-lance
-lançons
-lancez
-
-.
-
-lançant
-lancé
+<break time="600ms"/>
+touché
 </prosody>
 </voice>
 </speak>

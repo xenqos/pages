@@ -1,83 +1,75 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="fr-FR-DeniseNeural">
-<prosody rate="-10%" pitch="0%">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 24 -->
+craindre
 
-comprendre
+<break time="600ms"/>
+je crains
+tu crains
+il craint
+nous craignons
+vous craignez
+ils craignent
 
-.
+<break time="600ms"/>
+je craignais
+tu craignais
+il craignait
+nous craignions
+vous craigniez
+ils craignaient
 
-je comprends
-tu comprends
-il comprend
-nous comprenons
-vous comprenez
-ils comprennent
+<break time="600ms"/>
+je craignis
+tu craignis
+il craignit
+nous craignîmes
+vous craignîtes
+ils craignirent
 
-.
+<break time="600ms"/>
+je craindrai
+tu craindras
+il craindra
+nous craindrons
+vous craindrez
+ils craindront
 
-je comprenais
-tu comprenais
-il comprenait
-nous comprenions
-vous compreniez
-ils comprenaient
+<break time="600ms"/>
+je craindrais
+tu craindrais
+il craindrait
+nous craindrions
+vous craindriez
+ils craindraient
 
-.
+<break time="600ms"/>
+que je craigne
+que tu craignes
+qu' il craigne
+que nous craignions
+que vous craigniez
+qu' ils craignent
 
-je compris
-tu compris
-il comprit
-nous comprîmes
-vous comprîtes
-ils comprirent
+<break time="600ms"/>
+que je craignisse
+que tu craignisses
+qu' il craignît
+que nous craignissions
+que vous craignissiez
+qu' ils craignissent
 
-.
+<break time="600ms"/>
+crains
+craignons
+craignez
 
-je comprendrai
-tu comprendras
-il comprendra
-nous comprendrons
-vous comprendrez
-ils comprendront
+<break time="600ms"/>
+craignant
 
-.
-
-je comprendrais
-tu comprendrais
-il comprendrait
-nous comprendrions
-vous comprendriez
-ils comprendraient
-
-.
-
-que je comprenne
-que tu comprennes
-qu'il comprenne
-que nous comprenions
-que vous compreniez
-qu'ils comprennent
-
-.
-
-que je comprisse
-que tu comprisses
-qu'il comprît
-que nous comprissions
-que vous comprissiez
-qu'ils comprissent
-
-.
-
-comprends
-comprenons
-comprenez
-
-.
-
-comprenant
-
-compris
+<break time="600ms"/>
+craint
 </prosody>
 </voice>
 </speak>

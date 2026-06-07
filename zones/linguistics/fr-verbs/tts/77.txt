@@ -1,82 +1,73 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="fr-FR-DeniseNeural">
-<prosody rate="-10%" pitch="0%">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 77 -->
+apprendre
+j' apprends
+tu apprends
+il apprend
+nous apprenons
+vous apprenez
+ils apprennent
 
-manger
+<break time="600ms"/>
+j' apprenais
+tu apprenais
+il apprenait
+nous apprenions
+vous appreniez
+ils apprenaient
 
-.
+<break time="600ms"/>
+j' appris
+tu appris
+il apprit
+nous apprîmes
+vous apprîtes
+ils apprirent
 
-je mange
-tu manges
-il mange
-nous mangeons
-vous mangez
-ils mangent
+<break time="600ms"/>
+j' apprendrai
+tu apprendras
+il apprendra
+nous apprendrons
+vous apprendrez
+ils apprendront
 
-.
+<break time="600ms"/>
+j' apprendrais
+tu apprendrais
+il apprendrait
+nous apprendrions
+vous apprendriez
+ils apprendraient
 
-je mangeais
-tu mangeais
-il mangeait
-nous mangions
-vous mangiez
-ils mangeaient
+<break time="600ms"/>
+que j' apprenne
+que tu apprennes
+qu' il apprenne
+que nous apprenions
+que vous appreniez
+qu' ils apprennent
 
-.
+<break time="600ms"/>
+que j' apprisse
+que tu apprisses
+qu' il apprît
+que nous apprissions
+que vous apprissiez
+qu' ils apprissent
 
-je mangeai
-tu mangeas
-il mangea
-nous mangeâmes
-vous mangeâtes
-ils mangèrent
+<break time="600ms"/>
+apprends
+apprenons
+apprenez
 
-.
+<break time="600ms"/>
+apprenant
 
-je mangerai
-tu mangeras
-il mangera
-nous mangerons
-vous mangerez
-ils mangeront
-
-.
-
-je mangerais
-tu mangerais
-il mangerait
-nous mangerions
-vous mangeriez
-ils mangeraient
-
-.
-
-que je mange
-que tu manges
-qu'il mange
-que nous mangions
-que vous mangiez
-qu'ils mangent
-
-.
-
-que je mangeasse
-que tu mangeasses
-qu'il mangeât
-que nous mangeassions
-que vous mangeassiez
-qu'ils mangeassent
-
-.
-
-mange
-mangeons
-mangez
-
-.
-
-mangeant
-mangé
+<break time="600ms"/>
+appris
 </prosody>
 </voice>
 </speak>

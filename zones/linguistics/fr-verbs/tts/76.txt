@@ -1,82 +1,73 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="fr-FR-DeniseNeural">
-<prosody rate="-10%" pitch="0%">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 76 -->
+aider
+j' aide
+tu aides
+il aide
+nous aidons
+vous aidez
+ils aident
 
-danser
+<break time="600ms"/>
+j' aidais
+tu aidais
+il aidait
+nous aidions
+vous aidiez
+ils aidaient
 
-.
+<break time="600ms"/>
+j' aidai
+tu aidas
+il aida
+nous aidâmes
+vous aidâtes
+ils aidèrent
 
-je danse
-tu danses
-il danse
-nous dansons
-vous dansez
-ils dansent
+<break time="600ms"/>
+j' aiderai
+tu aideras
+il aidera
+nous aiderons
+vous aiderez
+ils aideront
 
-.
+<break time="600ms"/>
+j' aiderais
+tu aiderais
+il aiderait
+nous aiderions
+vous aideriez
+ils aideraient
 
-je dansais
-tu dansais
-il dansait
-nous dansions
-vous dansiez
-ils dansaient
+<break time="600ms"/>
+que j' aide
+que tu aides
+qu' il aide
+que nous aidions
+que vous aidiez
+qu' ils aident
 
-.
+<break time="600ms"/>
+que j' aidasse
+que tu aidasses
+qu' il aidât
+que nous aidassions
+que vous aidassiez
+qu' ils aidassent
 
-je dansai
-tu dansas
-il dansa
-nous dansâmes
-vous dansâtes
-ils dansèrent
+<break time="600ms"/>
+aide
+aidons
+aidez
 
-.
+<break time="600ms"/>
+aidant
 
-je danserai
-tu danseras
-il dansera
-nous danserons
-vous danserez
-ils danseront
-
-.
-
-je danserais
-tu danserais
-il danserait
-nous danserions
-vous danseriez
-ils danseraient
-
-.
-
-que je danse
-que tu danses
-qu'il danse
-que nous dansions
-que vous dansiez
-qu'ils dansent
-
-.
-
-que je dansasse
-que tu dansasses
-qu'il dansât
-que nous dansassions
-que vous dansassiez
-qu'ils dansassent
-
-.
-
-danse
-dansons
-dansez
-
-.
-
-dansant
-dansé
+<break time="600ms"/>
+aidé
 </prosody>
 </voice>
 </speak>

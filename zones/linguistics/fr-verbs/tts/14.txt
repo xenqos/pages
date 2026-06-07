@@ -1,83 +1,75 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="fr-FR-DeniseNeural">
-<prosody rate="-10%" pitch="0%">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 14 -->
+donner
 
-dire
+<break time="600ms"/>
+je donne
+tu donnes
+il donne
+nous donnons
+vous donnez
+ils donnent
 
-.
+<break time="600ms"/>
+je donnais
+tu donnais
+il donnait
+nous donnions
+vous donniez
+ils donnaient
 
-je dis
-tu dis
-il dit
-nous disons
-vous dites
-ils disent
+<break time="600ms"/>
+je donnai
+tu donnas
+il donna
+nous donnâmes
+vous donnâtes
+ils donnèrent
 
-.
+<break time="600ms"/>
+je donnerai
+tu donneras
+il donnera
+nous donnerons
+vous donnerez
+ils donneront
 
-je disais
-tu disais
-il disait
-nous disions
-vous disiez
-ils disaient
+<break time="600ms"/>
+je donnerais
+tu donnerais
+il donnerait
+nous donnerions
+vous donneriez
+ils donneraient
 
-.
+<break time="600ms"/>
+que je donne
+que tu donnes
+qu' il donne
+que nous donnions
+que vous donniez
+qu' ils donnent
 
-je dis
-tu dis
-il dit
-nous dîmes
-vous dîtes
-ils dirent
+<break time="600ms"/>
+que je donnasse
+que tu donnasses
+qu' il donnât
+que nous donnassions
+que vous donnassiez
+qu' ils donnassent
 
-.
+<break time="600ms"/>
+donne
+donnons
+donnez
 
-je dirai
-tu diras
-il dira
-nous dirons
-vous direz
-ils diront
+<break time="600ms"/>
+donnant
 
-.
-
-je dirais
-tu dirais
-il dirait
-nous dirions
-vous diriez
-ils diraient
-
-.
-
-que je dise
-que tu dises
-qu'il dise
-que nous disions
-que vous disiez
-qu'ils disent
-
-.
-
-que je disse
-que tu disses
-qu'il dît
-que nous dissions
-que vous dissiez
-qu'ils dissent
-
-.
-
-dis
-disons
-dites
-
-.
-
-disant
-
-dit
+<break time="600ms"/>
+donné
 </prosody>
 </voice>
 </speak>

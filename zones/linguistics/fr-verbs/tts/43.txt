@@ -1,83 +1,75 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="fr-FR-DeniseNeural">
-<prosody rate="-10%" pitch="0%">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 43 -->
+rire
 
-haïr
+<break time="600ms"/>
+je ris
+tu ris
+il rit
+nous rions
+vous riez
+ils rient
 
-.
+<break time="600ms"/>
+je riais
+tu riais
+il riait
+nous riions
+vous riiez
+ils riaient
 
-je hais
-tu hais
-il hait
-nous haïssons
-vous haïssez
-ils haïssent
+<break time="600ms"/>
+je ris
+tu ris
+il rit
+nous rîmes
+vous rîtes
+ils rirent
 
-.
+<break time="600ms"/>
+je rirai
+tu riras
+il rira
+nous rirons
+vous rirez
+ils riront
 
-je haïssais
-tu haïssais
-il haïssait
-nous haïssions
-vous haïssiez
-ils haïssaient
+<break time="600ms"/>
+je rirais
+tu rirais
+il rirait
+nous ririons
+vous ririez
+ils riraient
 
-.
+<break time="600ms"/>
+que je rie
+que tu ries
+qu' il rie
+que nous riions
+que vous riiez
+qu' ils rient
 
-je haïs
-tu haïs
-il haït
-nous haïmes
-vous haïtes
-ils haïrent
+<break time="600ms"/>
+que je risse
+que tu risses
+qu' il rît
+que nous rissions
+que vous rissiez
+qu' ils rissent
 
-.
+<break time="600ms"/>
+ris
+rions
+riez
 
-je haïrai
-tu haïras
-il haïra
-nous haïrons
-vous haïrez
-ils haïront
+<break time="600ms"/>
+riant
 
-.
-
-je haïrais
-tu haïrais
-il harait
-nous haïrions
-vous haïriez
-ils haïraient
-
-.
-
-que je haïsse
-que tu haïsses
-qu'il haïsse
-que nous haïssions
-que vous haïssiez
-qu'ils haïssent
-
-.
-
-que je haïsse
-que tu haïsses
-qu'il haït
-que nous haïssions
-que vous haïssiez
-qu'ils haïssent
-
-.
-
-hais
-haïssons
-haïssez
-
-.
-
-haïssant
-
-haï
+<break time="600ms"/>
+ri
 </prosody>
 </voice>
 </speak>

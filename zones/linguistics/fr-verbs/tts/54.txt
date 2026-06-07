@@ -1,83 +1,75 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="fr-FR-DeniseNeural">
-<prosody rate="-10%" pitch="0%">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 54 -->
+tourner
 
-monter
+<break time="600ms"/>
+je tourne
+tu tournes
+il tourne
+nous tournons
+vous tournez
+ils tournent
 
-.
+<break time="600ms"/>
+je tournais
+tu tournais
+il tournait
+nous tournions
+vous tourniez
+ils tournaient
 
-je monte
-tu montes
-il monte
-nous montons
-vous montez
-ils montent
+<break time="600ms"/>
+je tournai
+tu tournas
+il tourna
+nous tournâmes
+vous tournâtes
+ils tournèrent
 
-.
+<break time="600ms"/>
+je tournerai
+tu tourneras
+il tournera
+nous tournerons
+vous tournerez
+ils tourneront
 
-je montais
-tu montais
-il montait
-nous montions
-vous montiez
-ils montaient
+<break time="600ms"/>
+je tournerais
+tu tournerais
+il tournerait
+nous tournerions
+vous tourneriez
+ils tourneraient
 
-.
+<break time="600ms"/>
+que je tourne
+que tu tournes
+qu' il tourne
+que nous tournions
+que vous tourniez
+qu' ils tournent
 
-je montai
-tu montas
-il monta
-nous montâmes
-vous montâtes
-ils montèrent
+<break time="600ms"/>
+que je tournasse
+que tu tournasses
+qu' il tournât
+que nous tournassions
+que vous tournassiez
+qu' ils tournassent
 
-.
+<break time="600ms"/>
+tourne
+tournons
+tournez
 
-je monterai
-tu monteras
-il montera
-nous monterons
-vous monterez
-ils monteront
+<break time="600ms"/>
+tournant
 
-.
-
-je monterais
-tu monterais
-il monterait
-nous monterions
-vous monteriez
-ils monteraient
-
-.
-
-que je monte
-que tu montes
-qu'il monte
-que nous montions
-que vous montiez
-qu'ils montent
-
-.
-
-que je montasse
-que tu montasses
-qu'il montât
-que nous montassions
-que vous montassiez
-qu'ils montassent
-
-.
-
-monte
-montons
-montez
-
-.
-
-montant
-
-monté
+<break time="600ms"/>
+tourné
 </prosody>
 </voice>
 </speak>

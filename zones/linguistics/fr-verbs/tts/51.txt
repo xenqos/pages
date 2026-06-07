@@ -1,83 +1,75 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
-<voice name="fr-FR-DeniseNeural">
-<prosody rate="-10%" pitch="0%">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 51 -->
+marcher
 
-suivre
+<break time="600ms"/>
+je marche
+tu marches
+il marche
+nous marchons
+vous marchez
+ils marchent
 
-.
+<break time="600ms"/>
+je marchais
+tu marchais
+il marchait
+nous marchions
+vous marchiez
+ils marchaient
 
-je suis
-tu suis
-il suit
-nous suivons
-vous suivez
-ils suivent
+<break time="600ms"/>
+je marchai
+tu marchas
+il marcha
+nous marchâmes
+vous marchâtes
+ils marchèrent
 
-.
+<break time="600ms"/>
+je marcherai
+tu marcheras
+il marchera
+nous marcherons
+vous marcherez
+ils marcheront
 
-je suivais
-tu suivais
-il suivait
-nous suivions
-vous suiviez
-ils suivaient
+<break time="600ms"/>
+je marcherais
+tu marcherais
+il marcherait
+nous marcherions
+vous marcheriez
+ils marcheraient
 
-.
+<break time="600ms"/>
+que je marche
+que tu marches
+qu' il marche
+que nous marchions
+que vous marchiez
+qu' ils marchent
 
-je suivis
-tu suivis
-il suivit
-nous suivîmes
-vous suivîtes
-ils suivirent
+<break time="600ms"/>
+que je marchasse
+que tu marchasses
+qu' il marchât
+que nous marchassions
+que vous marchassiez
+qu' ils marchassent
 
-.
+<break time="600ms"/>
+marche
+marchons
+marchez
 
-je suivrai
-tu suivras
-il suivra
-nous suivrons
-vous suivrez
-ils suivront
+<break time="600ms"/>
+marchant
 
-.
-
-je suivrais
-tu suivrais
-il suivrait
-nous suivrions
-vous suivriez
-ils suivraient
-
-.
-
-que je suive
-que tu suives
-qu'il suive
-que nous suivions
-que vous suiviez
-qu'ils suivent
-
-.
-
-que je suivisse
-que tu suivisses
-qu'il suivît
-que nous suivissions
-que vous suivissiez
-qu'ils suivissent
-
-.
-
-suis
-suivons
-suivez
-
-.
-
-suivant
-
-suivi
+<break time="600ms"/>
+marché
 </prosody>
 </voice>
 </speak>
