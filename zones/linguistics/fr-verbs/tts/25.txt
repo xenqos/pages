@@ -1,0 +1,83 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-10%" pitch="0%">
+
+souvenir
+
+.
+
+je souviens
+tu souviens
+il souvient
+nous souvenons
+vous souvenez
+ils souviennent
+
+.
+
+je souvenais
+tu souvenais
+il souvenait
+nous souvenions
+vous souveniez
+ils souvenaient
+
+.
+
+je souvins
+tu souvins
+il souvint
+nous souvînmes
+vous souvîntes
+ils souvinrent
+
+.
+
+je souviendrai
+tu souviendras
+il souviendra
+nous souviendrons
+vous souviendrez
+ils souviendront
+
+.
+
+je souviendrais
+tu souviendrais
+il souviendrait
+nous souviendrions
+vous souviendriez
+ils souviendraient
+
+.
+
+que je souvienne
+que tu souviennes
+qu'il souvienne
+que nous souvenions
+que vous souveniez
+qu'ils souviennent
+
+.
+
+que je souvinsse
+que tu souvinsses
+qu'il souvînt
+que nous souvinssions
+que vous souvinssiez
+qu'ils souvinssent
+
+.
+
+souviens
+souvenons
+souvenez
+
+.
+
+souvenant
+
+souvenu
+</prosody>
+</voice>
+</speak>

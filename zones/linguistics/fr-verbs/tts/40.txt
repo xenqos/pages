@@ -1,0 +1,83 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-10%" pitch="0%">
+
+aimer
+
+.
+
+j'aime
+tu aimes
+il aime
+nous aimons
+vous aimez
+ilzaiment
+
+.
+
+j'aimais
+tu aimais
+il aimait
+nous aimions
+vous aimiez
+ilzaimaient
+
+.
+
+j'aimai
+tu aimas
+il aima
+nous aimâmes
+vous aimâtes
+ilzaimèrent
+
+.
+
+j'aimerai
+tu aimeras
+il aimera
+nous aimerons
+vous aimerez
+ilzaimeront
+
+.
+
+j'aimerais
+tu aimerais
+il aimerait
+nous aimerions
+vous aimeriez
+ilzaimeraient
+
+.
+
+que j'aime
+que tu aimes
+qu'il aime
+que nous aimions
+que vous aimiez
+qu'ilzaiment
+
+.
+
+que j'aimasse
+que tu aimasses
+qu'il aimât
+que nous aimassions
+que vous aimassiez
+qu'ilzaimassent
+
+.
+
+aime
+aimons
+aimez
+
+.
+
+aimant
+
+aimé
+</prosody>
+</voice>
+</speak>

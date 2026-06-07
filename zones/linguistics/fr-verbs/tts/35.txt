@@ -1,0 +1,83 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-FR-DeniseNeural">
+<prosody rate="-10%" pitch="0%">
+
+chercher
+
+.
+
+je cherche
+tu cherches
+il cherche
+nous cherchons
+vous cherchez
+ils cherchent
+
+.
+
+je cherchais
+tu cherchais
+il cherchait
+nous cherchions
+vous cherchiez
+ils cherchaient
+
+.
+
+je cherchai
+tu cherchas
+il chercha
+nous cherchâmes
+vous cherchâtes
+ils cherchèrent
+
+.
+
+je chercherai
+tu chercheras
+il cherchera
+nous chercherons
+vous chercherez
+ils chercheront
+
+.
+
+je chercherais
+tu chercherais
+il chercherait
+nous chercherions
+vous chercheriez
+ils chercheraient
+
+.
+
+que je cherche
+que tu cherches
+qu'il cherche
+que nous cherchions
+que vous cherchiez
+qu'ils cherchent
+
+.
+
+que je cherchasse
+que tu cherchasses
+qu'il cherchât
+que nous cherchassions
+que vous cherchassiez
+qu'ils cherchassent
+
+.
+
+cherche
+cherchons
+cherchez
+
+.
+
+cherchant
+
+cherché
+</prosody>
+</voice>
+</speak>
