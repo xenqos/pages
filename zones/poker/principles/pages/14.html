@@ -96,22 +96,22 @@ Minimum raise = size of the last bet or raise<br>
 Example: Bet $10 → minimum raise = $20 total ($10 more)<br>
 </blockquote>
 
-<b>if</b><br>
+<b>IF</b><br>
 &ensp;  'Player' raises / re-raises<br>
-<b>then</b><br>
+<b>THEN</b><br>
 &ensp;  All 'Players' starting from his left clockwise must match 'Raise' / 'Re-raise' or fold<br>
   Betting stops when action returns to the player who made the last raise and all others have folded or called<br>
-<b>endif</b><br>
+<b>ENDIF</b><br>
 <br>
-<b>if</b><br>
+<b>IF</b><br>
 &ensp;  'Players' >= 3 in 'Hand'<br>
-<b>then</b><br>
+<b>THEN</b><br>
 &ensp;  3-4 'Raise' / 'Re-raise' maximum (casino dependent)<br>
-<b>else if</b><br>
+<b>ELSEIF</b><br>
 &ensp;  'Players' = 2 in 'Hand'<br>
-<b>then</b><br>
+<b>THEN</b><br>
 &ensp;  'Raise' / 'Re-raise' unlimited (most casinos)<br>
-<b>endif</b><br>
+<b>ENDIF</b><br>
 <br>
 <!--
 <h6>Game</h6>
@@ -171,21 +171,21 @@ The best 'Hand' wins<br>
 
 <h3>Raise & Re-raise</h3>
 
-<b>if</b><br>
+<b>IF</b><br>
 &ensp;  'Player' raises / re-raises<br>
-<b>then</b><br>
+<b>THEN</b><br>
 &ensp;  All 'Players' starting from his left clockwise must match 'Raise' / 'Re-raise'. <br> Thus the betting stops at 'Player' to the right of the one who made 'Raise' / 'Re-raise'<br>
-<b>endif</b><br>
+<b>ENDIF</b><br>
 <br>
-<b>if</b><br>
+<b>IF</b><br>
 &ensp;  'Players' >= 3 in 'Hand' ('Game')<br>
-<b>then</b><br>
+<b>THEN</b><br>
 &ensp;  3-4 'Raise' / 'Re-raise' - allowed<br>
-<b>else if</b><br>
+<b>ELSEIF</b><br>
 &ensp;  'Players' = 2 are in 'Hand' ('Game')<br>
-<b>else</b><br>
+<b>ELSE</b><br>
 &ensp;  'Raise' / 'Re-raise' - not limited<br>
-<b>endif</b><br>
+<b>ENDIF</b><br>
 -->
 
 

@@ -237,11 +237,11 @@ sub get_markdown
   # If Then Elsif Else
   #---------------------------------------------------------
 
-  $source_content =~ s/^if\n(.*?)\n/<b>if<\/b>\n&ensp;$1\n/mg;
-  $source_content =~ s/^then\n(.*?)\n/<b>then<\/b>\n&ensp;$1\n/mg;
-  $source_content =~ s/^elseif\n(.*?)\n/<b>else if<\/b>\n&ensp;$1\n/mg;
-  $source_content =~ s/^else\n(.*?)\n/<b>else<\/b>\n&ensp;$1\n/mg;
-  $source_content =~ s/^endif\n/<b>endif<\/b>\n/mg;
+  $source_content =~ s/^if\n(.*?)\n/<b>IF<\/b>\n&ensp;$1\n/mg;
+  $source_content =~ s/^then\n(.*?)\n/<b>THEN<\/b>\n&ensp;$1\n/mg;
+  $source_content =~ s/^elseif\n(.*?)\n/<b>ELSEIF<\/b>\n&ensp;$1\n/mg;
+  $source_content =~ s/^else\n(.*?)\n/<b>ELSE<\/b>\n&ensp;$1\n/mg;
+  $source_content =~ s/^endif\n/<b>ENDIF<\/b>\n/mg;
 
   #---------------------------------------------------------
   # Bold and Italic
