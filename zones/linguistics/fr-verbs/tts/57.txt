@@ -1,10 +1,10 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="fr-CH-ArianeNeural">
-<prosody rate="-20%" pitch="medium">
+<prosody rate="0%" pitch="medium">
 <!-- 57 -->
 tenir
 
-<break time="600ms"/>
+<break time="300ms"/>
 je tiens
 tu tiens
 il tient
@@ -12,7 +12,7 @@ nous tenons
 vous tenez
 ils tiennent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je tenais
 tu tenais
 il tenait
@@ -20,7 +20,7 @@ nous tenions
 vous teniez
 ils tenaient
 
-<break time="600ms"/>
+<break time="300ms"/>
 je tins
 tu tins
 il tint
@@ -28,7 +28,7 @@ nous tînmes
 vous tîntes
 ils tinrent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je tiendrai
 tu tiendras
 il tiendra
@@ -36,7 +36,7 @@ nous tiendrons
 vous tiendrez
 ils tiendront
 
-<break time="600ms"/>
+<break time="300ms"/>
 je tiendrais
 tu tiendrais
 il tiendrait
@@ -44,7 +44,7 @@ nous tiendrions
 vous tiendriez
 ils tiendraient
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je tienne
 que tu tiennes
 qu' il tienne
@@ -52,7 +52,7 @@ que nous tenions
 que vous teniez
 qu' ils tiennent
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je tinsse
 que tu tinsses
 qu' il tînt
@@ -60,15 +60,15 @@ que nous tinssions
 que vous tinssiez
 qu' ils tinssent
 
-<break time="600ms"/>
+<break time="300ms"/>
 tiens
 tenons
 tenez
 
-<break time="600ms"/>
+<break time="300ms"/>
 tenant
 
-<break time="600ms"/>
+<break time="300ms"/>
 tenu
 </prosody>
 </voice>

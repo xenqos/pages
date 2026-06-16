@@ -1,10 +1,10 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="fr-CH-ArianeNeural">
-<prosody rate="-20%" pitch="medium">
+<prosody rate="0%" pitch="medium">
 <!-- 37 -->
 choisir
 
-<break time="600ms"/>
+<break time="300ms"/>
 je choisis
 tu choisis
 il choisit
@@ -12,7 +12,7 @@ nous choisissons
 vous choisissez
 ils choisissent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je choisissais
 tu choisissais
 il choisissait
@@ -20,7 +20,7 @@ nous choisissions
 vous choisissiez
 ils choisissaient
 
-<break time="600ms"/>
+<break time="300ms"/>
 je choisis
 tu choisis
 il choisit
@@ -28,7 +28,7 @@ nous choisîmes
 vous choisîtes
 ils choisirent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je choisirai
 tu choisiras
 il choisira
@@ -36,7 +36,7 @@ nous choisirons
 vous choisirez
 ils choisiront
 
-<break time="600ms"/>
+<break time="300ms"/>
 je choisirais
 tu choisirais
 il choisirait
@@ -44,7 +44,7 @@ nous choisirions
 vous choisiriez
 ils choisiraient
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je choisisse
 que tu choisisses
 qu' il choisisse
@@ -52,7 +52,7 @@ que nous choisissions
 que vous choisissiez
 qu' ils choisissent
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je choisisse
 que tu choisisses
 qu' il choisît
@@ -60,15 +60,15 @@ que nous choisissions
 que vous choisissiez
 qu' ils choisissent
 
-<break time="600ms"/>
+<break time="300ms"/>
 choisis
 choisissons
 choisissez
 
-<break time="600ms"/>
+<break time="300ms"/>
 choisissant
 
-<break time="600ms"/>
+<break time="300ms"/>
 choisi
 </prosody>
 </voice>

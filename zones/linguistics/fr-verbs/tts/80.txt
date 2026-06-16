@@ -1,10 +1,10 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="fr-CH-ArianeNeural">
-<prosody rate="-20%" pitch="medium">
+<prosody rate="0%" pitch="medium">
 <!-- 80 -->
 tomber
 
-<break time="600ms"/>
+<break time="300ms"/>
 je tombe
 tu tombes
 il tombe
@@ -12,7 +12,7 @@ nous tombons
 vous tombez
 ils tombent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je tombais
 tu tombais
 il tombait
@@ -20,7 +20,7 @@ nous tombions
 vous tombiez
 ils tombaient
 
-<break time="600ms"/>
+<break time="300ms"/>
 je tombai
 tu tombas
 il tomba
@@ -28,7 +28,7 @@ nous tombâmes
 vous tombâtes
 ils tombèrent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je tomberai
 tu tomberas
 il tombera
@@ -36,7 +36,7 @@ nous tomberons
 vous tomberez
 ils tomberont
 
-<break time="600ms"/>
+<break time="300ms"/>
 je tomberais
 tu tomberais
 il tomberait
@@ -44,7 +44,7 @@ nous tomberions
 vous tomberiez
 ils tomberaient
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je tombe
 que tu tombes
 qu' il tombe
@@ -52,7 +52,7 @@ que nous tombions
 que vous tombiez
 qu' ils tombent
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je tombasse
 que tu tombasses
 qu' il tombât
@@ -60,15 +60,15 @@ que nous tombassions
 que vous tombassiez
 qu' ils tombassent
 
-<break time="600ms"/>
+<break time="300ms"/>
 tombe
 tombons
 tombez
 
-<break time="600ms"/>
+<break time="300ms"/>
 tombant
 
-<break time="600ms"/>
+<break time="300ms"/>
 tombé
 </prosody>
 </voice>

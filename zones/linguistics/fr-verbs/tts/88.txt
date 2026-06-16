@@ -1,10 +1,10 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="fr-CH-ArianeNeural">
-<prosody rate="-20%" pitch="medium">
+<prosody rate="0%" pitch="medium">
 <!-- 88 -->
 tirer
 
-<break time="600ms"/>
+<break time="300ms"/>
 je tire
 tu tires
 il tire
@@ -12,7 +12,7 @@ nous tirons
 vous tirez
 ils tirent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je tirais
 tu tirais
 il tirait
@@ -20,7 +20,7 @@ nous tirions
 vous tiriez
 ils tiraient
 
-<break time="600ms"/>
+<break time="300ms"/>
 je tirai
 tu tiras
 il tira
@@ -28,7 +28,7 @@ nous tirâmes
 vous tirâtes
 ils tirèrent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je tirerai
 tu tireras
 il tirera
@@ -36,7 +36,7 @@ nous tirerons
 vous tirerez
 ils tireront
 
-<break time="600ms"/>
+<break time="300ms"/>
 je tirerais
 tu tirerais
 il tirerait
@@ -44,7 +44,7 @@ nous tirerions
 vous tireriez
 ils tireraient
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je tire
 que tu tires
 qu' il tire
@@ -52,7 +52,7 @@ que nous tirions
 que vous tiriez
 qu' ils tirent
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je tirasse
 que tu tirasses
 qu' il tirât
@@ -60,15 +60,15 @@ que nous tirassions
 que vous tirassiez
 qu' ils tirassent
 
-<break time="600ms"/>
+<break time="300ms"/>
 tire
 tirons
 tirez
 
-<break time="600ms"/>
+<break time="300ms"/>
 tirant
 
-<break time="600ms"/>
+<break time="300ms"/>
 tiré
 </prosody>
 </voice>

@@ -1,10 +1,10 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="fr-CH-ArianeNeural">
-<prosody rate="-20%" pitch="medium">
+<prosody rate="0%" pitch="medium">
 <!-- 17 -->
 voir
 
-<break time="600ms"/>
+<break time="300ms"/>
 je vois
 tu vois
 il voit
@@ -12,7 +12,7 @@ nous voyons
 vous voyez
 ils voient
 
-<break time="600ms"/>
+<break time="300ms"/>
 je voyais
 tu voyais
 il voyait
@@ -20,7 +20,7 @@ nous voyions
 vous voyiez
 ils voyaient
 
-<break time="600ms"/>
+<break time="300ms"/>
 je vis
 tu vis
 il vit
@@ -28,7 +28,7 @@ nous vîmes
 vous vîtes
 ils virent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je verrai
 tu verras
 il verra
@@ -36,7 +36,7 @@ nous verrons
 vous verrez
 ils verront
 
-<break time="600ms"/>
+<break time="300ms"/>
 je verrais
 tu verrais
 il verrait
@@ -44,7 +44,7 @@ nous verrions
 vous verriez
 ils verraient
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je voie
 que tu voies
 qu' il voie
@@ -52,7 +52,7 @@ que nous voyions
 que vous voyiez
 qu' ils voient
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je visse
 que tu visses
 qu' il vît
@@ -60,15 +60,15 @@ que nous vissions
 que vous vissiez
 qu' ils vissent
 
-<break time="600ms"/>
+<break time="300ms"/>
 vois
 voyons
 voyez
 
-<break time="600ms"/>
+<break time="300ms"/>
 voyant
 
-<break time="600ms"/>
+<break time="300ms"/>
 vu
 </prosody>
 </voice>

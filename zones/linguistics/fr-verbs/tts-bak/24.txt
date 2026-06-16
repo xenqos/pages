@@ -1,0 +1,75 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 24 -->
+craindre
+
+<break time="600ms"/>
+je crains
+tu crains
+il craint
+nous craignons
+vous craignez
+ils craignent
+
+<break time="600ms"/>
+je craignais
+tu craignais
+il craignait
+nous craignions
+vous craigniez
+ils craignaient
+
+<break time="600ms"/>
+je craignis
+tu craignis
+il craignit
+nous craignîmes
+vous craignîtes
+ils craignirent
+
+<break time="600ms"/>
+je craindrai
+tu craindras
+il craindra
+nous craindrons
+vous craindrez
+ils craindront
+
+<break time="600ms"/>
+je craindrais
+tu craindrais
+il craindrait
+nous craindrions
+vous craindriez
+ils craindraient
+
+<break time="600ms"/>
+que je craigne
+que tu craignes
+qu' il craigne
+que nous craignions
+que vous craigniez
+qu' ils craignent
+
+<break time="600ms"/>
+que je craignisse
+que tu craignisses
+qu' il craignît
+que nous craignissions
+que vous craignissiez
+qu' ils craignissent
+
+<break time="600ms"/>
+crains
+craignons
+craignez
+
+<break time="600ms"/>
+craignant
+
+<break time="600ms"/>
+craint
+</prosody>
+</voice>
+</speak>

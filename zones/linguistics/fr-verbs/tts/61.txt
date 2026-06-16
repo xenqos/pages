@@ -1,10 +1,10 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="fr-CH-ArianeNeural">
-<prosody rate="-20%" pitch="medium">
+<prosody rate="0%" pitch="medium">
 <!-- 61 -->
 vivre
 
-<break time="600ms"/>
+<break time="300ms"/>
 je vis
 tu vis
 il vit
@@ -12,7 +12,7 @@ nous vivons
 vous vivez
 ils vivent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je vivais
 tu vivais
 il vivait
@@ -20,7 +20,7 @@ nous vivions
 vous viviez
 ils vivaient
 
-<break time="600ms"/>
+<break time="300ms"/>
 je vécus
 tu vécus
 il vécut
@@ -28,7 +28,7 @@ nous vécûmes
 vous vécûtes
 ils vécurent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je vivrai
 tu vivras
 il vivra
@@ -36,7 +36,7 @@ nous vivrons
 vous vivrez
 ils vivront
 
-<break time="600ms"/>
+<break time="300ms"/>
 je vivrais
 tu vivrais
 il vivrait
@@ -44,7 +44,7 @@ nous vivrions
 vous vivriez
 ils vivraient
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je vive
 que tu vives
 qu' il vive
@@ -52,7 +52,7 @@ que nous vivions
 que vous viviez
 qu' ils vivent
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je vécusse
 que tu vécusses
 qu' il vécût
@@ -60,15 +60,15 @@ que nous vécussions
 que vous vécussiez
 qu' ils vécussent
 
-<break time="600ms"/>
+<break time="300ms"/>
 vis
 vivons
 vivez
 
-<break time="600ms"/>
+<break time="300ms"/>
 vivant
 
-<break time="600ms"/>
+<break time="300ms"/>
 vécu
 </prosody>
 </voice>

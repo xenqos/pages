@@ -1,10 +1,10 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="fr-CH-ArianeNeural">
-<prosody rate="-20%" pitch="medium">
+<prosody rate="0%" pitch="medium">
 <!-- 91 -->
 jeter
 
-<break time="600ms"/>
+<break time="300ms"/>
 je jette
 tu jettes
 il jette
@@ -12,7 +12,7 @@ nous jetons
 vous jetez
 ils jettent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je jetais
 tu jetais
 il jetait
@@ -20,7 +20,7 @@ nous jetions
 vous jetiez
 ils jetaient
 
-<break time="600ms"/>
+<break time="300ms"/>
 je jetai
 tu jetas
 il jeta
@@ -28,7 +28,7 @@ nous jetâmes
 vous jetâtes
 ils jetèrent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je jetterai
 tu jetteras
 il jettera
@@ -36,7 +36,7 @@ nous jetterons
 vous jetterez
 ils jetteront
 
-<break time="600ms"/>
+<break time="300ms"/>
 je jetterais
 tu jetterais
 il jetterait
@@ -44,7 +44,7 @@ nous jetterions
 vous jetteriez
 ils jetteraient
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je jette
 que tu jettes
 qu' il jette
@@ -52,7 +52,7 @@ que nous jetions
 que vous jetiez
 qu' ils jettent
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je jetasse
 que tu jetasses
 qu' il jetât
@@ -60,15 +60,15 @@ que nous jetassions
 que vous jetassiez
 qu' ils jetassent
 
-<break time="600ms"/>
+<break time="300ms"/>
 jette
 jetons
 jetez
 
-<break time="600ms"/>
+<break time="300ms"/>
 jetant
 
-<break time="600ms"/>
+<break time="300ms"/>
 jeté
 </prosody>
 </voice>

@@ -1,10 +1,10 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="fr-CH-ArianeNeural">
-<prosody rate="-20%" pitch="medium">
+<prosody rate="0%" pitch="medium">
 <!-- 87 -->
 tendre
 
-<break time="600ms"/>
+<break time="300ms"/>
 je tends
 tu tends
 il tend
@@ -12,7 +12,7 @@ nous tendons
 vous tendez
 ils tendent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je tendais
 tu tendais
 il tendait
@@ -20,7 +20,7 @@ nous tendions
 vous tendiez
 ils tendaient
 
-<break time="600ms"/>
+<break time="300ms"/>
 je tendis
 tu tendis
 il tendit
@@ -28,7 +28,7 @@ nous tendîmes
 vous tendîtes
 ils tendirent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je tendrai
 tu tendras
 il tendra
@@ -36,7 +36,7 @@ nous tendrons
 vous tendrez
 ils tendront
 
-<break time="600ms"/>
+<break time="300ms"/>
 je tendrais
 tu tendrais
 il tendrait
@@ -44,7 +44,7 @@ nous tendrions
 vous tendriez
 ils tendraient
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je tende
 que tu tendes
 qu' il tende
@@ -52,7 +52,7 @@ que nous tendions
 que vous tendiez
 qu' ils tendent
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je tendisse
 que tu tendisses
 qu' il tendît
@@ -60,15 +60,15 @@ que nous tendissions
 que vous tendissiez
 qu' ils tendissent
 
-<break time="600ms"/>
+<break time="300ms"/>
 tends
 tendons
 tendez
 
-<break time="600ms"/>
+<break time="300ms"/>
 tendant
 
-<break time="600ms"/>
+<break time="300ms"/>
 tendu
 </prosody>
 </voice>

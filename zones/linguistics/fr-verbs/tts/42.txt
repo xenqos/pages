@@ -1,6 +1,6 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="fr-CH-ArianeNeural">
-<prosody rate="-20%" pitch="medium">
+<prosody rate="0%" pitch="medium">
 <!-- 42 -->
 amuser
 j' amuse
@@ -8,65 +8,65 @@ tu amuses
 il amuse
 nous amusons
 vous amusez
-ils amusent
+ils zamusent
 
-<break time="600ms"/>
+<break time="300ms"/>
 j' amusais
 tu amusais
 il amusait
 nous amusions
 vous amusiez
-ils amusaient
+ils zamusaient
 
-<break time="600ms"/>
+<break time="300ms"/>
 j' amusai
 tu amusas
 il amusa
 nous amusâmes
 vous amusâtes
-ils amusèrent
+ils zamusèrent
 
-<break time="600ms"/>
+<break time="300ms"/>
 j' amuserai
 tu amuseras
 il amusera
 nous amuserons
 vous amuserez
-ils amuseront
+ils zamuseront
 
-<break time="600ms"/>
+<break time="300ms"/>
 j' amuserais
 tu amuserais
 il amuserait
 nous amuserions
 vous amuseriez
-ils amuseraient
+ils zamuseraient
 
-<break time="600ms"/>
+<break time="300ms"/>
 que j' amuse
 que tu amuses
 qu' il amuse
 que nous amusions
 que vous amusiez
-qu' ils amusent
+qu' ils zamusent
 
-<break time="600ms"/>
+<break time="300ms"/>
 que j' amusasse
 que tu amusasses
 qu' il amusât
 que nous amusassions
 que vous amusassiez
-qu' ils amusassent
+qu' ils zamusassent
 
-<break time="600ms"/>
+<break time="300ms"/>
 amuse
 amusons
 amusez
 
-<break time="600ms"/>
+<break time="300ms"/>
 amusant
 
-<break time="600ms"/>
+<break time="300ms"/>
 amusé
 </prosody>
 </voice>

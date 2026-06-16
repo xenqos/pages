@@ -1,10 +1,10 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="fr-CH-ArianeNeural">
-<prosody rate="-20%" pitch="medium">
+<prosody rate="0%" pitch="medium">
 <!-- 65 -->
 travailler
 
-<break time="600ms"/>
+<break time="300ms"/>
 je travaille
 tu travailles
 il travaille
@@ -12,7 +12,7 @@ nous travaillons
 vous travaillez
 ils travaillent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je travaillais
 tu travaillais
 il travaillait
@@ -20,7 +20,7 @@ nous travaillions
 vous travailliez
 ils travaillaient
 
-<break time="600ms"/>
+<break time="300ms"/>
 je travaillai
 tu travaillas
 il travailla
@@ -28,7 +28,7 @@ nous travaillâmes
 vous travaillâtes
 ils travaillèrent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je travaillerai
 tu travailleras
 il travaillera
@@ -36,7 +36,7 @@ nous travaillerons
 vous travaillerez
 ils travailleront
 
-<break time="600ms"/>
+<break time="300ms"/>
 je travaillerais
 tu travaillerais
 il travaillerait
@@ -44,7 +44,7 @@ nous travaillerions
 vous travailleriez
 ils travailleraient
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je travaille
 que tu travailles
 qu' il travaille
@@ -52,7 +52,7 @@ que nous travaillions
 que vous travailliez
 qu' ils travaillent
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je travaillasse
 que tu travaillasses
 qu' il travaillât
@@ -60,15 +60,15 @@ que nous travaillassions
 que vous travaillassiez
 qu' ils travaillassent
 
-<break time="600ms"/>
+<break time="300ms"/>
 travaille
 travaillons
 travaillez
 
-<break time="600ms"/>
+<break time="300ms"/>
 travaillant
 
-<break time="600ms"/>
+<break time="300ms"/>
 travaillé
 </prosody>
 </voice>

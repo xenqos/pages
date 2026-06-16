@@ -1,10 +1,10 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="fr-CH-ArianeNeural">
-<prosody rate="-20%" pitch="medium">
+<prosody rate="0%" pitch="medium">
 <!-- 33 -->
 chercher
 
-<break time="600ms"/>
+<break time="300ms"/>
 je cherche
 tu cherches
 il cherche
@@ -12,7 +12,7 @@ nous cherchons
 vous cherchez
 ils cherchent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je cherchais
 tu cherchais
 il cherchait
@@ -20,7 +20,7 @@ nous cherchions
 vous cherchiez
 ils cherchaient
 
-<break time="600ms"/>
+<break time="300ms"/>
 je cherchai
 tu cherchas
 il chercha
@@ -28,7 +28,7 @@ nous cherchâmes
 vous cherchâtes
 ils cherchèrent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je chercherai
 tu chercheras
 il cherchera
@@ -36,7 +36,7 @@ nous chercherons
 vous chercherez
 ils chercheront
 
-<break time="600ms"/>
+<break time="300ms"/>
 je chercherais
 tu chercherais
 il chercherait
@@ -44,7 +44,7 @@ nous chercherions
 vous chercheriez
 ils chercheraient
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je cherche
 que tu cherches
 qu' il cherche
@@ -52,7 +52,7 @@ que nous cherchions
 que vous cherchiez
 qu' ils cherchent
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je cherchasse
 que tu cherchasses
 qu' il cherchât
@@ -60,15 +60,15 @@ que nous cherchassions
 que vous cherchassiez
 qu' ils cherchassent
 
-<break time="600ms"/>
+<break time="300ms"/>
 cherche
 cherchons
 cherchez
 
-<break time="600ms"/>
+<break time="300ms"/>
 cherchant
 
-<break time="600ms"/>
+<break time="300ms"/>
 cherché
 </prosody>
 </voice>

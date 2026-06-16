@@ -1,0 +1,75 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 81 -->
+conduire
+
+<break time="600ms"/>
+je conduis
+tu conduis
+il conduit
+nous conduisons
+vous conduisez
+ils conduisent
+
+<break time="600ms"/>
+je conduisais
+tu conduisais
+il conduisait
+nous conduisions
+vous conduisiez
+ils conduisaient
+
+<break time="600ms"/>
+je conduisis
+tu conduisis
+il conduisit
+nous conduisîmes
+vous conduisîtes
+ils conduisirent
+
+<break time="600ms"/>
+je conduirai
+tu conduiras
+il conduira
+nous conduirons
+vous conduirez
+ils conduiront
+
+<break time="600ms"/>
+je conduirais
+tu conduirais
+il conduirait
+nous conduirions
+vous conduiriez
+ils conduiraient
+
+<break time="600ms"/>
+que je conduise
+que tu conduises
+qu' il conduise
+que nous conduisions
+que vous conduisiez
+qu' ils conduisent
+
+<break time="600ms"/>
+que je conduisisse
+que tu conduisisses
+qu' il conduisît
+que nous conduisissions
+que vous conduisissiez
+qu' ils conduisissent
+
+<break time="600ms"/>
+conduis
+conduisons
+conduisez
+
+<break time="600ms"/>
+conduisant
+
+<break time="600ms"/>
+conduit
+</prosody>
+</voice>
+</speak>

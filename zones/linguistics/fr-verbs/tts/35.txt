@@ -1,10 +1,10 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="fr-CH-ArianeNeural">
-<prosody rate="-20%" pitch="medium">
+<prosody rate="0%" pitch="medium">
 <!-- 35 -->
 perdre
 
-<break time="600ms"/>
+<break time="300ms"/>
 je perds
 tu perds
 il perd
@@ -12,7 +12,7 @@ nous perdons
 vous perdez
 ils perdent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je perdais
 tu perdais
 il perdait
@@ -20,7 +20,7 @@ nous perdions
 vous perdiez
 ils perdaient
 
-<break time="600ms"/>
+<break time="300ms"/>
 je perdis
 tu perdis
 il perdit
@@ -28,7 +28,7 @@ nous perdîmes
 vous perdîtes
 ils perdirent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je perdrai
 tu perdras
 il perdra
@@ -36,7 +36,7 @@ nous perdrons
 vous perdrez
 ils perdront
 
-<break time="600ms"/>
+<break time="300ms"/>
 je perdrais
 tu perdrais
 il perdrait
@@ -44,7 +44,7 @@ nous perdrions
 vous perdriez
 ils perdraient
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je perde
 que tu perdes
 qu' il perde
@@ -52,7 +52,7 @@ que nous perdions
 que vous perdiez
 qu' ils perdent
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je perdisse
 que tu perdisses
 qu' il perdît
@@ -60,15 +60,15 @@ que nous perdissions
 que vous perdissiez
 qu' ils perdissent
 
-<break time="600ms"/>
+<break time="300ms"/>
 perds
 perdons
 perdez
 
-<break time="600ms"/>
+<break time="300ms"/>
 perdant
 
-<break time="600ms"/>
+<break time="300ms"/>
 perdu
 </prosody>
 </voice>

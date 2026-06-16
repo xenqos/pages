@@ -1,10 +1,10 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="fr-CH-ArianeNeural">
-<prosody rate="-20%" pitch="medium">
+<prosody rate="0%" pitch="medium">
 <!-- 03 -->
 faire
 
-<break time="600ms"/>
+<break time="300ms"/>
 je fais
 tu fais
 il fait
@@ -12,7 +12,7 @@ nous faisons
 vous faites
 ils font
 
-<break time="600ms"/>
+<break time="300ms"/>
 je faisais
 tu faisais
 il faisait
@@ -20,7 +20,7 @@ nous faisions
 vous faisiez
 ils faisaient
 
-<break time="600ms"/>
+<break time="300ms"/>
 je fis
 tu fis
 il fit
@@ -28,7 +28,7 @@ nous fîmes
 vous fîtes
 ils firent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je ferai
 tu feras
 il fera
@@ -36,7 +36,7 @@ nous ferons
 vous ferez
 ils feront
 
-<break time="600ms"/>
+<break time="300ms"/>
 je ferais
 tu ferais
 il ferait
@@ -44,7 +44,7 @@ nous ferions
 vous feriez
 ils feraient
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je fasse
 que tu fasses
 qu' il fasse
@@ -52,7 +52,7 @@ que nous fassions
 que vous fassiez
 qu' ils fassent
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je fisse
 que tu fisses
 qu' il fît
@@ -60,15 +60,15 @@ que nous fissions
 que vous fissiez
 qu' ils fissent
 
-<break time="600ms"/>
+<break time="300ms"/>
 fais
 faisons
 faites
 
-<break time="600ms"/>
+<break time="300ms"/>
 faisant
 
-<break time="600ms"/>
+<break time="300ms"/>
 fait
 </prosody>
 </voice>

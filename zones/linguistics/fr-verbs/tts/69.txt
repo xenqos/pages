@@ -1,10 +1,10 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="fr-CH-ArianeNeural">
-<prosody rate="-20%" pitch="medium">
+<prosody rate="0%" pitch="medium">
 <!-- 69 -->
 fermer
 
-<break time="600ms"/>
+<break time="300ms"/>
 je ferme
 tu fermes
 il ferme
@@ -12,7 +12,7 @@ nous fermons
 vous fermez
 ils ferment
 
-<break time="600ms"/>
+<break time="300ms"/>
 je fermais
 tu fermais
 il fermait
@@ -20,7 +20,7 @@ nous fermions
 vous fermiez
 ils fermaient
 
-<break time="600ms"/>
+<break time="300ms"/>
 je fermai
 tu fermas
 il ferma
@@ -28,7 +28,7 @@ nous fermâmes
 vous fermâtes
 ils fermèrent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je fermerai
 tu fermeras
 il fermera
@@ -36,7 +36,7 @@ nous fermerons
 vous fermerez
 ils fermeront
 
-<break time="600ms"/>
+<break time="300ms"/>
 je fermerais
 tu fermerais
 il fermerait
@@ -44,7 +44,7 @@ nous fermerions
 vous fermeriez
 ils fermeraient
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je ferme
 que tu fermes
 qu' il ferme
@@ -52,7 +52,7 @@ que nous fermions
 que vous fermiez
 qu' ils ferment
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je fermasse
 que tu fermasses
 qu' il fermât
@@ -60,15 +60,15 @@ que nous fermassions
 que vous fermassiez
 qu' ils fermassent
 
-<break time="600ms"/>
+<break time="300ms"/>
 ferme
 fermons
 fermez
 
-<break time="600ms"/>
+<break time="300ms"/>
 fermant
 
-<break time="600ms"/>
+<break time="300ms"/>
 fermé
 </prosody>
 </voice>

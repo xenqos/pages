@@ -1,10 +1,10 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="fr-CH-ArianeNeural">
-<prosody rate="-20%" pitch="medium">
+<prosody rate="0%" pitch="medium">
 <!-- 32 -->
 laisser
 
-<break time="600ms"/>
+<break time="300ms"/>
 je laisse
 tu laisses
 il laisse
@@ -12,7 +12,7 @@ nous laissons
 vous laissez
 ils laissent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je laissais
 tu laissais
 il laissait
@@ -20,7 +20,7 @@ nous laissions
 vous laissiez
 ils laissaient
 
-<break time="600ms"/>
+<break time="300ms"/>
 je laissai
 tu laissas
 il laissa
@@ -28,7 +28,7 @@ nous laissâmes
 vous laissâtes
 ils laissèrent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je laisserai
 tu laisseras
 il laissera
@@ -36,7 +36,7 @@ nous laisserons
 vous laisserez
 ils laisseront
 
-<break time="600ms"/>
+<break time="300ms"/>
 je laisserais
 tu laisserais
 il laisserait
@@ -44,7 +44,7 @@ nous laisserions
 vous laisseriez
 ils laisseraient
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je laisse
 que tu laisses
 qu' il laisse
@@ -52,7 +52,7 @@ que nous laissions
 que vous laissiez
 qu' ils laissent
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je laissasse
 que tu laissasses
 qu' il laissât
@@ -60,15 +60,15 @@ que nous laissassions
 que vous laissassiez
 qu' ils laissassent
 
-<break time="600ms"/>
+<break time="300ms"/>
 laisse
 laissons
 laissez
 
-<break time="600ms"/>
+<break time="300ms"/>
 laissant
 
-<break time="600ms"/>
+<break time="300ms"/>
 laissé
 </prosody>
 </voice>

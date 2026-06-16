@@ -1,10 +1,10 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="fr-CH-ArianeNeural">
-<prosody rate="-20%" pitch="medium">
+<prosody rate="0%" pitch="medium">
 <!-- 53 -->
 lever
 
-<break time="600ms"/>
+<break time="300ms"/>
 je lève
 tu lèves
 il lève
@@ -12,7 +12,7 @@ nous levons
 vous levez
 ils lèvent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je levais
 tu levais
 il levait
@@ -20,7 +20,7 @@ nous levions
 vous leviez
 ils levaient
 
-<break time="600ms"/>
+<break time="300ms"/>
 je levai
 tu levas
 il leva
@@ -28,7 +28,7 @@ nous levâmes
 vous levâtes
 ils levèrent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je lèverai
 tu lèveras
 il lèvera
@@ -36,7 +36,7 @@ nous lèverons
 vous lèverez
 ils lèveront
 
-<break time="600ms"/>
+<break time="300ms"/>
 je lèverais
 tu lèverais
 il lèverait
@@ -44,7 +44,7 @@ nous lèverions
 vous lèveriez
 ils lèveraient
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je lève
 que tu lèves
 qu' il lève
@@ -52,7 +52,7 @@ que nous levions
 que vous leviez
 qu' ils lèvent
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je levasse
 que tu levasses
 qu' il levât
@@ -60,15 +60,15 @@ que nous levassions
 que vous levassiez
 qu' ils levassent
 
-<break time="600ms"/>
+<break time="300ms"/>
 lève
 levons
 levez
 
-<break time="600ms"/>
+<break time="300ms"/>
 levant
 
-<break time="600ms"/>
+<break time="300ms"/>
 levé
 </prosody>
 </voice>

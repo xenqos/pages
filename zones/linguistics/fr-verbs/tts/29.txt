@@ -1,10 +1,10 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="fr-CH-ArianeNeural">
-<prosody rate="-20%" pitch="medium">
+<prosody rate="0%" pitch="medium">
 <!-- 29 -->
 se souvenir
 
-<break time="600ms"/>
+<break time="300ms"/>
 je me souviens
 tu te souviens
 il se souvient
@@ -12,7 +12,7 @@ nous nous souvenons
 vous vous souvenez
 ils se souviennent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je me souvenais
 tu te souvenais
 il se souvenait
@@ -20,7 +20,7 @@ nous nous souvenions
 vous vous souveniez
 ils se souvenaient
 
-<break time="600ms"/>
+<break time="300ms"/>
 je me souvins
 tu te souvins
 il se souvint
@@ -28,7 +28,7 @@ nous nous souvînmes
 vous vous souvîntes
 ils se souvinrent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je me souviendrai
 tu te souviendras
 il se souviendra
@@ -36,7 +36,7 @@ nous nous souviendrons
 vous vous souviendrez
 ils se souviendront
 
-<break time="600ms"/>
+<break time="300ms"/>
 je me souviendrais
 tu te souviendrais
 il se souviendrait
@@ -44,7 +44,7 @@ nous nous souviendrions
 vous vous souviendriez
 ils se souviendraient
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je me souvienne
 que tu te souviennes
 qu' il se souvienne
@@ -52,7 +52,7 @@ que nous nous souvenions
 que vous vous souveniez
 qu' ils se souviennent
 
-<break time="600ms"/>
+<break time="300ms"/>
 que me je souvinsse
 que te tu souvinsses
 qu' se il souvînt
@@ -60,15 +60,15 @@ que nous nous souvinssions
 que vous vous souvinssiez
 qu' ils se souvinssent
 
-<break time="600ms"/>
+<break time="300ms"/>
 souviens-toi
 souvenons-nous
 souvenez-vous
 
-<break time="600ms"/>
+<break time="300ms"/>
 se souvenant
 
-<break time="600ms"/>
+<break time="300ms"/>
 s'étant souvenu
 </prosody>
 </voice>

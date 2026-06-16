@@ -1,10 +1,10 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="fr-CH-ArianeNeural">
-<prosody rate="-20%" pitch="medium">
+<prosody rate="0%" pitch="medium">
 <!-- 31 -->
 sentir
 
-<break time="600ms"/>
+<break time="300ms"/>
 je sens
 tu sens
 il sent
@@ -12,7 +12,7 @@ nous sentons
 vous sentez
 ils sentent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je sentais
 tu sentais
 il sentait
@@ -20,7 +20,7 @@ nous sentions
 vous sentiez
 ils sentaient
 
-<break time="600ms"/>
+<break time="300ms"/>
 je sentis
 tu sentis
 il sentit
@@ -28,7 +28,7 @@ nous sentîmes
 vous sentîtes
 ils sentirent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je sentirai
 tu sentiras
 il sentira
@@ -36,7 +36,7 @@ nous sentirons
 vous sentirez
 ils sentiront
 
-<break time="600ms"/>
+<break time="300ms"/>
 je sentirais
 tu sentirais
 il sentirait
@@ -44,7 +44,7 @@ nous sentirions
 vous sentiriez
 ils sentiraient
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je sente
 que tu sentes
 qu' il sente
@@ -52,7 +52,7 @@ que nous sentions
 que vous sentiez
 qu' ils sentent
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je sentisse
 que tu sentisses
 qu' il sentît
@@ -60,15 +60,15 @@ que nous sentissions
 que vous sentissiez
 qu' ils sentissent
 
-<break time="600ms"/>
+<break time="300ms"/>
 sens
 sentons
 sentez
 
-<break time="600ms"/>
+<break time="300ms"/>
 sentant
 
-<break time="600ms"/>
+<break time="300ms"/>
 senti
 </prosody>
 </voice>

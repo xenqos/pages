@@ -1,10 +1,10 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="fr-CH-ArianeNeural">
-<prosody rate="-20%" pitch="medium">
+<prosody rate="0%" pitch="medium">
 <!-- 47 -->
 rester
 
-<break time="600ms"/>
+<break time="300ms"/>
 je reste
 tu restes
 il reste
@@ -12,7 +12,7 @@ nous restons
 vous restez
 ils restent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je restais
 tu restais
 il restait
@@ -20,7 +20,7 @@ nous restions
 vous restiez
 ils restaient
 
-<break time="600ms"/>
+<break time="300ms"/>
 je restai
 tu restas
 il resta
@@ -28,7 +28,7 @@ nous restâmes
 vous restâtes
 ils restèrent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je resterai
 tu resteras
 il restera
@@ -36,7 +36,7 @@ nous resterons
 vous resterez
 ils resteront
 
-<break time="600ms"/>
+<break time="300ms"/>
 je resterais
 tu resterais
 il resterait
@@ -44,7 +44,7 @@ nous resterions
 vous resteriez
 ils resteraient
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je reste
 que tu restes
 qu' il reste
@@ -52,7 +52,7 @@ que nous restions
 que vous restiez
 qu' ils restent
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je restasse
 que tu restasses
 qu' il restât
@@ -60,15 +60,15 @@ que nous restassions
 que vous restassiez
 qu' ils restassent
 
-<break time="600ms"/>
+<break time="300ms"/>
 reste
 restons
 restez
 
-<break time="600ms"/>
+<break time="300ms"/>
 restant
 
-<break time="600ms"/>
+<break time="300ms"/>
 resté
 </prosody>
 </voice>

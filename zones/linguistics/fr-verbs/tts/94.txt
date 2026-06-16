@@ -1,6 +1,6 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="fr-CH-ArianeNeural">
-<prosody rate="-20%" pitch="medium">
+<prosody rate="0%" pitch="medium">
 <!-- 94 -->
 offrir
 j' offre
@@ -8,65 +8,65 @@ tu offres
 il offre
 nous offrons
 vous offrez
-ils offrent
+ils zoffrent
 
-<break time="600ms"/>
+<break time="300ms"/>
 j' offrais
 tu offrais
 il offrait
 nous offrions
 vous offriez
-ils offraient
+ils zoffraient
 
-<break time="600ms"/>
+<break time="300ms"/>
 j' offris
 tu offris
 il offrit
 nous offrîmes
 vous offrîtes
-ils offrirent
+ils zoffrirent
 
-<break time="600ms"/>
+<break time="300ms"/>
 j' offrirai
 tu offriras
 il offrira
 nous offrirons
 vous offrirez
-ils offriront
+ils zoffriront
 
-<break time="600ms"/>
+<break time="300ms"/>
 j' offrirais
 tu offrirais
 il offrirait
 nous offririons
 vous offririez
-ils offriraient
+ils zoffriraient
 
-<break time="600ms"/>
+<break time="300ms"/>
 que j' offre
 que tu offres
 qu' il offre
 que nous offrions
 que vous offriez
-qu' ils offrent
+qu' ils zoffrent
 
-<break time="600ms"/>
+<break time="300ms"/>
 que j' offrisse
 que tu offrisses
 qu' il offrît
 que nous offrissions
 que vous offrissiez
-qu' ils offrissent
+qu' ils zoffrissent
 
-<break time="600ms"/>
+<break time="300ms"/>
 offre
 offrons
 offrez
 
-<break time="600ms"/>
+<break time="300ms"/>
 offrant
 
-<break time="600ms"/>
+<break time="300ms"/>
 offert
 </prosody>
 </voice>

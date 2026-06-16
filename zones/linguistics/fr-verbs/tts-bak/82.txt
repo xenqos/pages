@@ -1,0 +1,75 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 82 -->
+gagner
+
+<break time="600ms"/>
+je gagne
+tu gagnes
+il gagne
+nous gagnons
+vous gagnez
+ils gagnent
+
+<break time="600ms"/>
+je gagnais
+tu gagnais
+il gagnait
+nous gagnions
+vous gagniez
+ils gagnaient
+
+<break time="600ms"/>
+je gagnai
+tu gagnas
+il gagna
+nous gagnâmes
+vous gagnâtes
+ils gagnèrent
+
+<break time="600ms"/>
+je gagnerai
+tu gagneras
+il gagnera
+nous gagnerons
+vous gagnerez
+ils gagneront
+
+<break time="600ms"/>
+je gagnerais
+tu gagnerais
+il gagnerait
+nous gagnerions
+vous gagneriez
+ils gagneraient
+
+<break time="600ms"/>
+que je gagne
+que tu gagnes
+qu' il gagne
+que nous gagnions
+que vous gagniez
+qu' ils gagnent
+
+<break time="600ms"/>
+que je gagnasse
+que tu gagnasses
+qu' il gagnât
+que nous gagnassions
+que vous gagnassiez
+qu' ils gagnassent
+
+<break time="600ms"/>
+gagne
+gagnons
+gagnez
+
+<break time="600ms"/>
+gagnant
+
+<break time="600ms"/>
+gagné
+</prosody>
+</voice>
+</speak>

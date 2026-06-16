@@ -1,0 +1,73 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 76 -->
+aider
+j' aide
+tu aides
+il aide
+nous aidons
+vous aidez
+ils aident
+
+<break time="600ms"/>
+j' aidais
+tu aidais
+il aidait
+nous aidions
+vous aidiez
+ils aidaient
+
+<break time="600ms"/>
+j' aidai
+tu aidas
+il aida
+nous aidâmes
+vous aidâtes
+ils aidèrent
+
+<break time="600ms"/>
+j' aiderai
+tu aideras
+il aidera
+nous aiderons
+vous aiderez
+ils aideront
+
+<break time="600ms"/>
+j' aiderais
+tu aiderais
+il aiderait
+nous aiderions
+vous aideriez
+ils aideraient
+
+<break time="600ms"/>
+que j' aide
+que tu aides
+qu' il aide
+que nous aidions
+que vous aidiez
+qu' ils aident
+
+<break time="600ms"/>
+que j' aidasse
+que tu aidasses
+qu' il aidât
+que nous aidassions
+que vous aidassiez
+qu' ils aidassent
+
+<break time="600ms"/>
+aide
+aidons
+aidez
+
+<break time="600ms"/>
+aidant
+
+<break time="600ms"/>
+aidé
+</prosody>
+</voice>
+</speak>

@@ -1,10 +1,10 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="fr-CH-ArianeNeural">
-<prosody rate="-20%" pitch="medium">
+<prosody rate="0%" pitch="medium">
 <!-- 98 -->
 raconter
 
-<break time="600ms"/>
+<break time="300ms"/>
 je raconte
 tu racontes
 il raconte
@@ -12,7 +12,7 @@ nous racontons
 vous racontez
 ils racontent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je racontais
 tu racontais
 il racontait
@@ -20,7 +20,7 @@ nous racontions
 vous racontiez
 ils racontaient
 
-<break time="600ms"/>
+<break time="300ms"/>
 je racontai
 tu racontas
 il raconta
@@ -28,7 +28,7 @@ nous racontâmes
 vous racontâtes
 ils racontèrent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je raconterai
 tu raconteras
 il racontera
@@ -36,7 +36,7 @@ nous raconterons
 vous raconterez
 ils raconteront
 
-<break time="600ms"/>
+<break time="300ms"/>
 je raconterais
 tu raconterais
 il raconterait
@@ -44,7 +44,7 @@ nous raconterions
 vous raconteriez
 ils raconteraient
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je raconte
 que tu racontes
 qu' il raconte
@@ -52,7 +52,7 @@ que nous racontions
 que vous racontiez
 qu' ils racontent
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je racontasse
 que tu racontasses
 qu' il racontât
@@ -60,15 +60,15 @@ que nous racontassions
 que vous racontassiez
 qu' ils racontassent
 
-<break time="600ms"/>
+<break time="300ms"/>
 raconte
 racontons
 racontez
 
-<break time="600ms"/>
+<break time="300ms"/>
 racontant
 
-<break time="600ms"/>
+<break time="300ms"/>
 raconté
 </prosody>
 </voice>

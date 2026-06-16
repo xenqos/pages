@@ -1,0 +1,75 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 62 -->
+devenir
+
+<break time="600ms"/>
+je deviens
+tu deviens
+il devient
+nous devenons
+vous devenez
+ils deviennent
+
+<break time="600ms"/>
+je devenais
+tu devenais
+il devenait
+nous devenions
+vous deveniez
+ils devenaient
+
+<break time="600ms"/>
+je devins
+tu devins
+il devint
+nous devînmes
+vous devîntes
+ils devinrent
+
+<break time="600ms"/>
+je deviendrai
+tu deviendras
+il deviendra
+nous deviendrons
+vous deviendrez
+ils deviendront
+
+<break time="600ms"/>
+je deviendrais
+tu deviendrais
+il deviendrait
+nous deviendrions
+vous deviendriez
+ils deviendraient
+
+<break time="600ms"/>
+que je devienne
+que tu deviennes
+qu' il devienne
+que nous devenions
+que vous deveniez
+qu' ils deviennent
+
+<break time="600ms"/>
+que je devinsse
+que tu devinsses
+qu' il devînt
+que nous devinssions
+que vous devinssiez
+qu' ils devinssent
+
+<break time="600ms"/>
+deviens
+devenons
+devenez
+
+<break time="600ms"/>
+devenant
+
+<break time="600ms"/>
+devenu
+</prosody>
+</voice>
+</speak>

@@ -1,10 +1,10 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="fr-CH-ArianeNeural">
-<prosody rate="-20%" pitch="medium">
+<prosody rate="0%" pitch="medium">
 <!-- 38 -->
 décider
 
-<break time="600ms"/>
+<break time="300ms"/>
 je décide
 tu décides
 il décide
@@ -12,7 +12,7 @@ nous décidons
 vous décidez
 ils décident
 
-<break time="600ms"/>
+<break time="300ms"/>
 je décidais
 tu décidais
 il décidait
@@ -20,7 +20,7 @@ nous décidions
 vous décidiez
 ils décidaient
 
-<break time="600ms"/>
+<break time="300ms"/>
 je décidai
 tu décidas
 il décida
@@ -28,7 +28,7 @@ nous décidâmes
 vous décidâtes
 ils décidèrent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je déciderai
 tu décideras
 il décidera
@@ -36,7 +36,7 @@ nous déciderons
 vous déciderez
 ils décideront
 
-<break time="600ms"/>
+<break time="300ms"/>
 je déciderais
 tu déciderais
 il déciderait
@@ -44,7 +44,7 @@ nous déciderions
 vous décideriez
 ils décideraient
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je décide
 que tu décides
 qu' il décide
@@ -52,7 +52,7 @@ que nous décidions
 que vous décidiez
 qu' ils décident
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je décidasse
 que tu décidasses
 qu' il décidât
@@ -60,15 +60,15 @@ que nous décidassions
 que vous décidassiez
 qu' ils décidassent
 
-<break time="600ms"/>
+<break time="300ms"/>
 décide
 décidons
 décidez
 
-<break time="600ms"/>
+<break time="300ms"/>
 décidant
 
-<break time="600ms"/>
+<break time="300ms"/>
 décidé
 </prosody>
 </voice>

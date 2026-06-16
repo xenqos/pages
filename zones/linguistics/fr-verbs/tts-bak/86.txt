@@ -1,0 +1,75 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 86 -->
+rendre
+
+<break time="600ms"/>
+je rends
+tu rends
+il rend
+nous rendons
+vous rendez
+ils rendent
+
+<break time="600ms"/>
+je rendais
+tu rendais
+il rendait
+nous rendions
+vous rendiez
+ils rendaient
+
+<break time="600ms"/>
+je rendis
+tu rendis
+il rendit
+nous rendîmes
+vous rendîtes
+ils rendirent
+
+<break time="600ms"/>
+je rendrai
+tu rendras
+il rendra
+nous rendrons
+vous rendrez
+ils rendront
+
+<break time="600ms"/>
+je rendrais
+tu rendrais
+il rendrait
+nous rendrions
+vous rendriez
+ils rendraient
+
+<break time="600ms"/>
+que je rende
+que tu rendes
+qu' il rende
+que nous rendions
+que vous rendiez
+qu' ils rendent
+
+<break time="600ms"/>
+que je rendisse
+que tu rendisses
+qu' il rendît
+que nous rendissions
+que vous rendissiez
+qu' ils rendissent
+
+<break time="600ms"/>
+rends
+rendons
+rendez
+
+<break time="600ms"/>
+rendant
+
+<break time="600ms"/>
+rendu
+</prosody>
+</voice>
+</speak>

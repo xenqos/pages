@@ -1,6 +1,6 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="fr-CH-ArianeNeural">
-<prosody rate="-20%" pitch="medium">
+<prosody rate="0%" pitch="medium">
 <!-- 22 -->
 entendre
 j' entends
@@ -8,65 +8,65 @@ tu entends
 il entend
 nous entendons
 vous entendez
-ils entendent
+ils zentendent
 
-<break time="600ms"/>
+<break time="300ms"/>
 j' entendais
 tu entendais
 il entendait
 nous entendions
 vous entendiez
-ils entendaient
+ils zentendaient
 
-<break time="600ms"/>
+<break time="300ms"/>
 j' entendis
 tu entendis
 il entendit
 nous entendîmes
 vous entendîtes
-ils entendirent
+ils zentendirent
 
-<break time="600ms"/>
+<break time="300ms"/>
 j' entendrai
 tu entendras
 il entendra
 nous entendrons
 vous entendrez
-ils entendront
+ils zentendront
 
-<break time="600ms"/>
+<break time="300ms"/>
 j' entendrais
 tu entendrais
 il entendrait
 nous entendrions
 vous entendriez
-ils entendraient
+ils zentendraient
 
-<break time="600ms"/>
+<break time="300ms"/>
 que j' entende
 que tu entendes
 qu' il entende
 que nous entendions
 que vous entendiez
-qu' ils entendent
+qu' ils zentendent
 
-<break time="600ms"/>
+<break time="300ms"/>
 que j' entendisse
 que tu entendisses
 qu' il entendît
 que nous entendissions
 que vous entendissiez
-qu' ils entendissent
+qu' ils zentendissent
 
-<break time="600ms"/>
+<break time="300ms"/>
 entends
 entendons
 entendez
 
-<break time="600ms"/>
+<break time="300ms"/>
 entendant
 
-<break time="600ms"/>
+<break time="300ms"/>
 entendu
 </prosody>
 </voice>

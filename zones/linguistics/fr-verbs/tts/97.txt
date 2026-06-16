@@ -1,6 +1,6 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="fr-CH-ArianeNeural">
-<prosody rate="-20%" pitch="medium">
+<prosody rate="0%" pitch="medium">
 <!-- 97 -->
 habiter
 j' habite
@@ -10,7 +10,7 @@ nous habitons
 vous habitez
 ils habitent
 
-<break time="600ms"/>
+<break time="300ms"/>
 j' habitais
 tu habitais
 il habitait
@@ -18,7 +18,7 @@ nous habitions
 vous habitiez
 ils habitaient
 
-<break time="600ms"/>
+<break time="300ms"/>
 j' habitai
 tu habitas
 il habita
@@ -26,7 +26,7 @@ nous habitâmes
 vous habitâtes
 ils habitèrent
 
-<break time="600ms"/>
+<break time="300ms"/>
 j' habiterai
 tu habiteras
 il habitera
@@ -34,7 +34,7 @@ nous habiterons
 vous habiterez
 ils habiteront
 
-<break time="600ms"/>
+<break time="300ms"/>
 j' habiterais
 tu habiterais
 il habiterait
@@ -42,7 +42,7 @@ nous habiterions
 vous habiteriez
 ils habiteraient
 
-<break time="600ms"/>
+<break time="300ms"/>
 que j' habite
 que tu habites
 qu' il habite
@@ -50,7 +50,7 @@ que nous habitions
 que vous habitiez
 qu' ils habitent
 
-<break time="600ms"/>
+<break time="300ms"/>
 que j' habitasse
 que tu habitasses
 qu' il habitât
@@ -58,15 +58,15 @@ que nous habitassions
 que vous habitassiez
 qu' ils habitassent
 
-<break time="600ms"/>
+<break time="300ms"/>
 habite
 habitons
 habitez
 
-<break time="600ms"/>
+<break time="300ms"/>
 habitant
 
-<break time="600ms"/>
+<break time="300ms"/>
 habité
 </prosody>
 </voice>

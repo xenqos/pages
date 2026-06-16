@@ -1,10 +1,10 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="fr-CH-ArianeNeural">
-<prosody rate="-20%" pitch="medium">
+<prosody rate="0%" pitch="medium">
 <!-- 18 -->
 regarder
 
-<break time="600ms"/>
+<break time="300ms"/>
 je regarde
 tu regardes
 il regarde
@@ -12,7 +12,7 @@ nous regardons
 vous regardez
 ils regardent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je regardais
 tu regardais
 il regardait
@@ -20,7 +20,7 @@ nous regardions
 vous regardiez
 ils regardaient
 
-<break time="600ms"/>
+<break time="300ms"/>
 je regardai
 tu regardas
 il regarda
@@ -28,7 +28,7 @@ nous regardâmes
 vous regardâtes
 ils regardèrent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je regarderai
 tu regarderas
 il regardera
@@ -36,7 +36,7 @@ nous regarderons
 vous regarderez
 ils regarderont
 
-<break time="600ms"/>
+<break time="300ms"/>
 je regarderais
 tu regarderais
 il regarderait
@@ -44,7 +44,7 @@ nous regarderions
 vous regarderiez
 ils regarderaient
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je regarde
 que tu regardes
 qu' il regarde
@@ -52,7 +52,7 @@ que nous regardions
 que vous regardiez
 qu' ils regardent
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je regardasse
 que tu regardasses
 qu' il regardât
@@ -60,15 +60,15 @@ que nous regardassions
 que vous regardassiez
 qu' ils regardassent
 
-<break time="600ms"/>
+<break time="300ms"/>
 regarde
 regardons
 regardez
 
-<break time="600ms"/>
+<break time="300ms"/>
 regardant
 
-<break time="600ms"/>
+<break time="300ms"/>
 regardé
 </prosody>
 </voice>

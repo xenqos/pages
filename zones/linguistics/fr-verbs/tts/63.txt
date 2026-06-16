@@ -1,10 +1,10 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="fr-CH-ArianeNeural">
-<prosody rate="-20%" pitch="medium">
+<prosody rate="0%" pitch="medium">
 <!-- 63 -->
 mourir
 
-<break time="600ms"/>
+<break time="300ms"/>
 je meurs
 tu meurs
 il meurt
@@ -12,7 +12,7 @@ nous mourons
 vous mourez
 ils meurent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je mourais
 tu mourais
 il mourait
@@ -20,7 +20,7 @@ nous mourions
 vous mouriez
 ils mouraient
 
-<break time="600ms"/>
+<break time="300ms"/>
 je mourus
 tu mourus
 il mourut
@@ -28,7 +28,7 @@ nous mourûmes
 vous mourûtes
 ils moururent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je mourrai
 tu mourras
 il mourra
@@ -36,7 +36,7 @@ nous mourrons
 vous mourrez
 ils mourront
 
-<break time="600ms"/>
+<break time="300ms"/>
 je mourrais
 tu mourrais
 il mourrait
@@ -44,7 +44,7 @@ nous mourrions
 vous mourriez
 ils mourraient
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je meure
 que tu meures
 qu' il meure
@@ -52,7 +52,7 @@ que nous mourions
 que vous mouriez
 qu' ils meurent
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je mourusse
 que tu mourusses
 qu' il mourût
@@ -60,15 +60,15 @@ que nous mourussions
 que vous mourussiez
 qu' ils mourussent
 
-<break time="600ms"/>
+<break time="300ms"/>
 meurs
 mourons
 mourez
 
-<break time="600ms"/>
+<break time="300ms"/>
 mourant
 
-<break time="600ms"/>
+<break time="300ms"/>
 mort
 </prosody>
 </voice>

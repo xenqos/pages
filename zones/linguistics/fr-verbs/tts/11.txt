@@ -1,31 +1,31 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="fr-CH-ArianeNeural">
-<prosody rate="-20%" pitch="medium">
+<prosody rate="0%" pitch="medium">
 <!-- 11 -->
 falloir
 
-<break time="600ms"/>
+<break time="300ms"/>
 il faut
 
-<break time="600ms"/>
+<break time="300ms"/>
 il fallait
 
-<break time="600ms"/>
+<break time="300ms"/>
 il fallut
 
-<break time="600ms"/>
+<break time="300ms"/>
 il faudra
 
-<break time="600ms"/>
+<break time="300ms"/>
 il faudrait
 
-<break time="600ms"/>
+<break time="300ms"/>
 qu' il faille
 
-<break time="600ms"/>
+<break time="300ms"/>
 qu' il fallût
 
-<break time="600ms"/>
+<break time="300ms"/>
 fallu
 </prosody>
 </voice>

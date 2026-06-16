@@ -1,10 +1,10 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="fr-CH-ArianeNeural">
-<prosody rate="-20%" pitch="medium">
+<prosody rate="0%" pitch="medium">
 <!-- 49 -->
 sortir
 
-<break time="600ms"/>
+<break time="300ms"/>
 je sors
 tu sors
 il sort
@@ -12,7 +12,7 @@ nous sortons
 vous sortez
 ils sortent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je sortais
 tu sortais
 il sortait
@@ -20,7 +20,7 @@ nous sortions
 vous sortiez
 ils sortaient
 
-<break time="600ms"/>
+<break time="300ms"/>
 je sortis
 tu sortis
 il sortit
@@ -28,7 +28,7 @@ nous sortîmes
 vous sortîtes
 ils sortirent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je sortirai
 tu sortiras
 il sortira
@@ -36,7 +36,7 @@ nous sortirons
 vous sortirez
 ils sortiront
 
-<break time="600ms"/>
+<break time="300ms"/>
 je sortirais
 tu sortirais
 il sortirait
@@ -44,7 +44,7 @@ nous sortirions
 vous sortiriez
 ils sortiraient
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je sorte
 que tu sortes
 qu' il sorte
@@ -52,7 +52,7 @@ que nous sortions
 que vous sortiez
 qu' ils sortent
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je sortisse
 que tu sortisses
 qu' il sortît
@@ -60,15 +60,15 @@ que nous sortissions
 que vous sortissiez
 qu' ils sortissent
 
-<break time="600ms"/>
+<break time="300ms"/>
 sors
 sortons
 sortez
 
-<break time="600ms"/>
+<break time="300ms"/>
 sortant
 
-<break time="600ms"/>
+<break time="300ms"/>
 sorti
 </prosody>
 </voice>

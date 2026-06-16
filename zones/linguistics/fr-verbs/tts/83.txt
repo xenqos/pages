@@ -1,10 +1,10 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="fr-CH-ArianeNeural">
-<prosody rate="-20%" pitch="medium">
+<prosody rate="0%" pitch="medium">
 <!-- 83 -->
 battre
 
-<break time="600ms"/>
+<break time="300ms"/>
 je bats
 tu bats
 il bat
@@ -12,7 +12,7 @@ nous battons
 vous battez
 ils battent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je battais
 tu battais
 il battait
@@ -20,7 +20,7 @@ nous battions
 vous battiez
 ils battaient
 
-<break time="600ms"/>
+<break time="300ms"/>
 je battis
 tu battis
 il battit
@@ -28,7 +28,7 @@ nous battîmes
 vous battîtes
 ils battirent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je battrai
 tu battras
 il battra
@@ -36,7 +36,7 @@ nous battrons
 vous battrez
 ils battront
 
-<break time="600ms"/>
+<break time="300ms"/>
 je battrais
 tu battrais
 il battrait
@@ -44,7 +44,7 @@ nous battrions
 vous battriez
 ils battraient
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je batte
 que tu battes
 qu' il batte
@@ -52,7 +52,7 @@ que nous battions
 que vous battiez
 qu' ils battent
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je battisse
 que tu battisses
 qu' il battît
@@ -60,15 +60,15 @@ que nous battissions
 que vous battissiez
 qu' ils battissent
 
-<break time="600ms"/>
+<break time="300ms"/>
 bats
 battons
 battez
 
-<break time="600ms"/>
+<break time="300ms"/>
 battant
 
-<break time="600ms"/>
+<break time="300ms"/>
 battu
 </prosody>
 </voice>

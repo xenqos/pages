@@ -1,10 +1,10 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="fr-CH-ArianeNeural">
-<prosody rate="-20%" pitch="medium">
+<prosody rate="0%" pitch="medium">
 <!-- 95 -->
 servir
 
-<break time="600ms"/>
+<break time="300ms"/>
 je sers
 tu sers
 il sert
@@ -12,7 +12,7 @@ nous servons
 vous servez
 ils servent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je servais
 tu servais
 il servait
@@ -20,7 +20,7 @@ nous servions
 vous serviez
 ils servaient
 
-<break time="600ms"/>
+<break time="300ms"/>
 je servis
 tu servis
 il servit
@@ -28,7 +28,7 @@ nous servîmes
 vous servîtes
 ils servirent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je servirai
 tu serviras
 il servira
@@ -36,7 +36,7 @@ nous servirons
 vous servirez
 ils serviront
 
-<break time="600ms"/>
+<break time="300ms"/>
 je servirais
 tu servirais
 il servirait
@@ -44,7 +44,7 @@ nous servirions
 vous serviriez
 ils serviraient
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je serve
 que tu serves
 qu' il serve
@@ -52,7 +52,7 @@ que nous servions
 que vous serviez
 qu' ils servent
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je servisse
 que tu servisses
 qu' il servît
@@ -60,15 +60,15 @@ que nous servissions
 que vous servissiez
 qu' ils servissent
 
-<break time="600ms"/>
+<break time="300ms"/>
 sers
 servons
 servez
 
-<break time="600ms"/>
+<break time="300ms"/>
 servant
 
-<break time="600ms"/>
+<break time="300ms"/>
 servi
 </prosody>
 </voice>

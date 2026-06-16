@@ -1,6 +1,6 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="fr-CH-ArianeNeural">
-<prosody rate="-20%" pitch="medium">
+<prosody rate="0%" pitch="medium">
 <!-- 76 -->
 aider
 j' aide
@@ -8,65 +8,65 @@ tu aides
 il aide
 nous aidons
 vous aidez
-ils aident
+ils zaident
 
-<break time="600ms"/>
+<break time="300ms"/>
 j' aidais
 tu aidais
 il aidait
 nous aidions
 vous aidiez
-ils aidaient
+ils zaidaient
 
-<break time="600ms"/>
+<break time="300ms"/>
 j' aidai
 tu aidas
 il aida
 nous aidâmes
 vous aidâtes
-ils aidèrent
+ils zaidèrent
 
-<break time="600ms"/>
+<break time="300ms"/>
 j' aiderai
 tu aideras
 il aidera
 nous aiderons
 vous aiderez
-ils aideront
+ils zaideront
 
-<break time="600ms"/>
+<break time="300ms"/>
 j' aiderais
 tu aiderais
 il aiderait
 nous aiderions
 vous aideriez
-ils aideraient
+ils zaideraient
 
-<break time="600ms"/>
+<break time="300ms"/>
 que j' aide
 que tu aides
 qu' il aide
 que nous aidions
 que vous aidiez
-qu' ils aident
+qu' ils zaident
 
-<break time="600ms"/>
+<break time="300ms"/>
 que j' aidasse
 que tu aidasses
 qu' il aidât
 que nous aidassions
 que vous aidassiez
-qu' ils aidassent
+qu' ils zaidassent
 
-<break time="600ms"/>
+<break time="300ms"/>
 aide
 aidons
 aidez
 
-<break time="600ms"/>
+<break time="300ms"/>
 aidant
 
-<break time="600ms"/>
+<break time="300ms"/>
 aidé
 </prosody>
 </voice>

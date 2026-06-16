@@ -1,10 +1,10 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="fr-CH-ArianeNeural">
-<prosody rate="-20%" pitch="medium">
+<prosody rate="0%" pitch="medium">
 <!-- 50 -->
 courir
 
-<break time="600ms"/>
+<break time="300ms"/>
 je cours
 tu cours
 il court
@@ -12,7 +12,7 @@ nous courons
 vous courez
 ils courent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je courais
 tu courais
 il courait
@@ -20,7 +20,7 @@ nous courions
 vous couriez
 ils couraient
 
-<break time="600ms"/>
+<break time="300ms"/>
 je courus
 tu courus
 il courut
@@ -28,7 +28,7 @@ nous courûmes
 vous courûtes
 ils coururent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je courrai
 tu courras
 il courra
@@ -36,7 +36,7 @@ nous courrons
 vous courrez
 ils courront
 
-<break time="600ms"/>
+<break time="300ms"/>
 je courrais
 tu courrais
 il courrait
@@ -44,7 +44,7 @@ nous courrions
 vous courriez
 ils courraient
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je coure
 que tu coures
 qu' il coure
@@ -52,7 +52,7 @@ que nous courions
 que vous couriez
 qu' ils courent
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je courusse
 que tu courusses
 qu' il courût
@@ -60,15 +60,15 @@ que nous courussions
 que vous courussiez
 qu' ils courussent
 
-<break time="600ms"/>
+<break time="300ms"/>
 cours
 courons
 courez
 
-<break time="600ms"/>
+<break time="300ms"/>
 courant
 
-<break time="600ms"/>
+<break time="300ms"/>
 couru
 </prosody>
 </voice>

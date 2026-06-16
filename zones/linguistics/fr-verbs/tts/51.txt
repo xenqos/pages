@@ -1,10 +1,10 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="fr-CH-ArianeNeural">
-<prosody rate="-20%" pitch="medium">
+<prosody rate="0%" pitch="medium">
 <!-- 51 -->
 marcher
 
-<break time="600ms"/>
+<break time="300ms"/>
 je marche
 tu marches
 il marche
@@ -12,7 +12,7 @@ nous marchons
 vous marchez
 ils marchent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je marchais
 tu marchais
 il marchait
@@ -20,7 +20,7 @@ nous marchions
 vous marchiez
 ils marchaient
 
-<break time="600ms"/>
+<break time="300ms"/>
 je marchai
 tu marchas
 il marcha
@@ -28,7 +28,7 @@ nous marchâmes
 vous marchâtes
 ils marchèrent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je marcherai
 tu marcheras
 il marchera
@@ -36,7 +36,7 @@ nous marcherons
 vous marcherez
 ils marcheront
 
-<break time="600ms"/>
+<break time="300ms"/>
 je marcherais
 tu marcherais
 il marcherait
@@ -44,7 +44,7 @@ nous marcherions
 vous marcheriez
 ils marcheraient
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je marche
 que tu marches
 qu' il marche
@@ -52,7 +52,7 @@ que nous marchions
 que vous marchiez
 qu' ils marchent
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je marchasse
 que tu marchasses
 qu' il marchât
@@ -60,15 +60,15 @@ que nous marchassions
 que vous marchassiez
 qu' ils marchassent
 
-<break time="600ms"/>
+<break time="300ms"/>
 marche
 marchons
 marchez
 
-<break time="600ms"/>
+<break time="300ms"/>
 marchant
 
-<break time="600ms"/>
+<break time="300ms"/>
 marché
 </prosody>
 </voice>

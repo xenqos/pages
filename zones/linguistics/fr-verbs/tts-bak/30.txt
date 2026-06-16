@@ -1,0 +1,75 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 30 -->
+croire
+
+<break time="600ms"/>
+je crois
+tu crois
+il croit
+nous croyons
+vous croyez
+ils croient
+
+<break time="600ms"/>
+je croyais
+tu croyais
+il croyait
+nous croyions
+vous croyiez
+ils croyaient
+
+<break time="600ms"/>
+je crus
+tu crus
+il crut
+nous crûmes
+vous crûtes
+ils crurent
+
+<break time="600ms"/>
+je croirai
+tu croiras
+il croira
+nous croirons
+vous croirez
+ils croiront
+
+<break time="600ms"/>
+je croirais
+tu croirais
+il croirait
+nous croirions
+vous croiriez
+ils croiraient
+
+<break time="600ms"/>
+que je croie
+que tu croies
+qu' il croie
+que nous croyions
+que vous croyiez
+qu' ils croient
+
+<break time="600ms"/>
+que je crusse
+que tu crusses
+qu' il crût
+que nous crussions
+que vous crussiez
+qu' ils crussent
+
+<break time="600ms"/>
+crois
+croyons
+croyez
+
+<break time="600ms"/>
+croyant
+
+<break time="600ms"/>
+cru
+</prosody>
+</voice>
+</speak>

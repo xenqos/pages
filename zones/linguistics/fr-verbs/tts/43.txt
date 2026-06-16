@@ -1,10 +1,10 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="fr-CH-ArianeNeural">
-<prosody rate="-20%" pitch="medium">
+<prosody rate="0%" pitch="medium">
 <!-- 43 -->
 rire
 
-<break time="600ms"/>
+<break time="300ms"/>
 je ris
 tu ris
 il rit
@@ -12,7 +12,7 @@ nous rions
 vous riez
 ils rient
 
-<break time="600ms"/>
+<break time="300ms"/>
 je riais
 tu riais
 il riait
@@ -20,7 +20,7 @@ nous riions
 vous riiez
 ils riaient
 
-<break time="600ms"/>
+<break time="300ms"/>
 je ris
 tu ris
 il rit
@@ -28,7 +28,7 @@ nous rîmes
 vous rîtes
 ils rirent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je rirai
 tu riras
 il rira
@@ -36,7 +36,7 @@ nous rirons
 vous rirez
 ils riront
 
-<break time="600ms"/>
+<break time="300ms"/>
 je rirais
 tu rirais
 il rirait
@@ -44,7 +44,7 @@ nous ririons
 vous ririez
 ils riraient
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je rie
 que tu ries
 qu' il rie
@@ -52,7 +52,7 @@ que nous riions
 que vous riiez
 qu' ils rient
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je risse
 que tu risses
 qu' il rît
@@ -60,15 +60,15 @@ que nous rissions
 que vous rissiez
 qu' ils rissent
 
-<break time="600ms"/>
+<break time="300ms"/>
 ris
 rions
 riez
 
-<break time="600ms"/>
+<break time="300ms"/>
 riant
 
-<break time="600ms"/>
+<break time="300ms"/>
 ri
 </prosody>
 </voice>

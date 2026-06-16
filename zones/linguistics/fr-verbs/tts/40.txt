@@ -1,6 +1,6 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="fr-CH-ArianeNeural">
-<prosody rate="-20%" pitch="medium">
+<prosody rate="0%" pitch="medium">
 <!-- 40 -->
 adorer
 j' adore
@@ -8,65 +8,65 @@ tu adores
 il adore
 nous adorons
 vous adorez
-ils adorent
+ils zadorent
 
-<break time="600ms"/>
+<break time="300ms"/>
 j' adorais
 tu adorais
 il adorait
 nous adorions
 vous adoriez
-ils adoraient
+ils zadoraient
 
-<break time="600ms"/>
+<break time="300ms"/>
 j' adorai
 tu adoras
 il adora
 nous adorâmes
 vous adorâtes
-ils adorèrent
+ils zadorèrent
 
-<break time="600ms"/>
+<break time="300ms"/>
 j' adorerai
 tu adoreras
 il adorera
 nous adorerons
 vous adorerez
-ils adoreront
+ils zadoreront
 
-<break time="600ms"/>
+<break time="300ms"/>
 j' adorerais
 tu adorerais
 il adorerait
 nous adorerions
 vous adoreriez
-ils adoreraient
+ils zadoreraient
 
-<break time="600ms"/>
+<break time="300ms"/>
 que j' adore
 que tu adores
 qu' il adore
 que nous adorions
 que vous adoriez
-qu' ils adorent
+qu' ils zadorent
 
-<break time="600ms"/>
+<break time="300ms"/>
 que j' adorasse
 que tu adorasses
 qu' il adorât
 que nous adorassions
 que vous adorassiez
-qu' ils adorassent
+qu' ils zadorassent
 
-<break time="600ms"/>
+<break time="300ms"/>
 adore
 adorons
 adorez
 
-<break time="600ms"/>
+<break time="300ms"/>
 adorant
 
-<break time="600ms"/>
+<break time="300ms"/>
 adoré
 </prosody>
 </voice>

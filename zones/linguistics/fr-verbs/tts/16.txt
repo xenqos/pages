@@ -1,10 +1,10 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="fr-CH-ArianeNeural">
-<prosody rate="-20%" pitch="medium">
+<prosody rate="0%" pitch="medium">
 <!-- 16 -->
 parler
 
-<break time="600ms"/>
+<break time="300ms"/>
 je parle
 tu parles
 il parle
@@ -12,7 +12,7 @@ nous parlons
 vous parlez
 ils parlent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je parlais
 tu parlais
 il parlait
@@ -20,7 +20,7 @@ nous parlions
 vous parliez
 ils parlaient
 
-<break time="600ms"/>
+<break time="300ms"/>
 je parlai
 tu parlas
 il parla
@@ -28,7 +28,7 @@ nous parlâmes
 vous parlâtes
 ils parlèrent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je parlerai
 tu parleras
 il parlera
@@ -36,7 +36,7 @@ nous parlerons
 vous parlerez
 ils parleront
 
-<break time="600ms"/>
+<break time="300ms"/>
 je parlerais
 tu parlerais
 il parlerait
@@ -44,7 +44,7 @@ nous parlerions
 vous parleriez
 ils parleraient
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je parle
 que tu parles
 qu' il parle
@@ -52,7 +52,7 @@ que nous parlions
 que vous parliez
 qu' ils parlent
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je parlasse
 que tu parlasses
 qu' il parlât
@@ -60,15 +60,15 @@ que nous parlassions
 que vous parlassiez
 qu' ils parlassent
 
-<break time="600ms"/>
+<break time="300ms"/>
 parle
 parlons
 parlez
 
-<break time="600ms"/>
+<break time="300ms"/>
 parlant
 
-<break time="600ms"/>
+<break time="300ms"/>
 parlé
 </prosody>
 </voice>

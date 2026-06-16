@@ -1,0 +1,75 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 12 -->
+prendre
+
+<break time="600ms"/>
+je prends
+tu prends
+il prend
+nous prenons
+vous prenez
+ils prennent
+
+<break time="600ms"/>
+je prenais
+tu prenais
+il prenait
+nous prenions
+vous preniez
+ils prenaient
+
+<break time="600ms"/>
+je pris
+tu pris
+il prit
+nous prîmes
+vous prîtes
+ils prirent
+
+<break time="600ms"/>
+je prendrai
+tu prendras
+il prendra
+nous prendrons
+vous prendrez
+ils prendront
+
+<break time="600ms"/>
+je prendrais
+tu prendrais
+il prendrait
+nous prendrions
+vous prendriez
+ils prendraient
+
+<break time="600ms"/>
+que je prenne
+que tu prennes
+qu' il prenne
+que nous prenions
+que vous preniez
+qu' ils prennent
+
+<break time="600ms"/>
+que je prisse
+que tu prisses
+qu' il prît
+que nous prissions
+que vous prissiez
+qu' ils prissent
+
+<break time="600ms"/>
+prends
+prenons
+prenez
+
+<break time="600ms"/>
+prenant
+
+<break time="600ms"/>
+pris
+</prosody>
+</voice>
+</speak>

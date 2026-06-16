@@ -1,10 +1,10 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="fr-CH-ArianeNeural">
-<prosody rate="-20%" pitch="medium">
+<prosody rate="0%" pitch="medium">
 <!-- 74 -->
 chanter
 
-<break time="600ms"/>
+<break time="300ms"/>
 je chante
 tu chantes
 il chante
@@ -12,7 +12,7 @@ nous chantons
 vous chantez
 ils chantent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je chantais
 tu chantais
 il chantait
@@ -20,7 +20,7 @@ nous chantions
 vous chantiez
 ils chantaient
 
-<break time="600ms"/>
+<break time="300ms"/>
 je chantai
 tu chantas
 il chanta
@@ -28,7 +28,7 @@ nous chantâmes
 vous chantâtes
 ils chantèrent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je chanterai
 tu chanteras
 il chantera
@@ -36,7 +36,7 @@ nous chanterons
 vous chanterez
 ils chanteront
 
-<break time="600ms"/>
+<break time="300ms"/>
 je chanterais
 tu chanterais
 il chanterait
@@ -44,7 +44,7 @@ nous chanterions
 vous chanteriez
 ils chanteraient
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je chante
 que tu chantes
 qu' il chante
@@ -52,7 +52,7 @@ que nous chantions
 que vous chantiez
 qu' ils chantent
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je chantasse
 que tu chantasses
 qu' il chantât
@@ -60,15 +60,15 @@ que nous chantassions
 que vous chantassiez
 qu' ils chantassent
 
-<break time="600ms"/>
+<break time="300ms"/>
 chante
 chantons
 chantez
 
-<break time="600ms"/>
+<break time="300ms"/>
 chantant
 
-<break time="600ms"/>
+<break time="300ms"/>
 chanté
 </prosody>
 </voice>

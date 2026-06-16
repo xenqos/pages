@@ -1,10 +1,10 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="fr-CH-ArianeNeural">
-<prosody rate="-20%" pitch="medium">
+<prosody rate="0%" pitch="medium">
 <!-- 36 -->
 changer
 
-<break time="600ms"/>
+<break time="300ms"/>
 je change
 tu changes
 il change
@@ -12,7 +12,7 @@ nous changeons
 vous changez
 ils changent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je changeais
 tu changeais
 il changeait
@@ -20,7 +20,7 @@ nous changions
 vous changiez
 ils changeaient
 
-<break time="600ms"/>
+<break time="300ms"/>
 je changeai
 tu changeas
 il changea
@@ -28,7 +28,7 @@ nous changeâmes
 vous changeâtes
 ils changèrent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je changerai
 tu changeras
 il changera
@@ -36,7 +36,7 @@ nous changerons
 vous changerez
 ils changeront
 
-<break time="600ms"/>
+<break time="300ms"/>
 je changerais
 tu changerais
 il changerait
@@ -44,7 +44,7 @@ nous changerions
 vous changeriez
 ils changeraient
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je change
 que tu changes
 qu' il change
@@ -52,7 +52,7 @@ que nous changions
 que vous changiez
 qu' ils changent
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je changeasse
 que tu changeasses
 qu' il changeât
@@ -60,15 +60,15 @@ que nous changeassions
 que vous changeassiez
 qu' ils changeassent
 
-<break time="600ms"/>
+<break time="300ms"/>
 change
 changeons
 changez
 
-<break time="600ms"/>
+<break time="300ms"/>
 changeant
 
-<break time="600ms"/>
+<break time="300ms"/>
 changé
 </prosody>
 </voice>

@@ -1,6 +1,6 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="fr-CH-ArianeNeural">
-<prosody rate="-20%" pitch="medium">
+<prosody rate="0%" pitch="medium">
 <!-- 85 -->
 essayer
 j' essaye
@@ -8,65 +8,65 @@ tu essayes
 il essaye
 nous essayons
 vous essayez
-ils essayent
+ils zessayent
 
-<break time="600ms"/>
+<break time="300ms"/>
 j' essayais
 tu essayais
 il essayait
 nous essayions
 vous essayiez
-ils essayaient
+ils zessayaient
 
-<break time="600ms"/>
+<break time="300ms"/>
 j' essayai
 tu essayas
 il essaya
 nous essayâmes
 vous essayâtes
-ils essayèrent
+ils zessayèrent
 
-<break time="600ms"/>
+<break time="300ms"/>
 j' essayerai
 tu essayeras
 il essayera
 nous essayerons
 vous essayerez
-ils essayeront
+ils zessayeront
 
-<break time="600ms"/>
+<break time="300ms"/>
 j' essayerais
 tu essayerais
 il essayerait
 nous essayerions
 vous essayeriez
-ils essayeraient
+ils zessayeraient
 
-<break time="600ms"/>
+<break time="300ms"/>
 que j' essaye
 que tu essayes
 qu' il essaye
 que nous essayions
 que vous essayiez
-qu' ils essayent
+qu' ils zessayent
 
-<break time="600ms"/>
+<break time="300ms"/>
 que j' essayasse
 que tu essayasses
 qu' il essayât
 que nous essayassions
 que vous essayassiez
-qu' ils essayassent
+qu' ils zessayassent
 
-<break time="600ms"/>
+<break time="300ms"/>
 essaye
 essayons
 essayez
 
-<break time="600ms"/>
+<break time="300ms"/>
 essayant
 
-<break time="600ms"/>
+<break time="300ms"/>
 essayé
 </prosody>
 </voice>

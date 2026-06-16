@@ -1,6 +1,6 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="fr-CH-ArianeNeural">
-<prosody rate="-20%" pitch="medium">
+<prosody rate="0%" pitch="medium">
 <!-- 39 -->
 aimer
 j' aime
@@ -8,65 +8,65 @@ tu aimes
 il aime
 nous aimons
 vous aimez
-ils aiment
+ils zaiment
 
-<break time="600ms"/>
+<break time="300ms"/>
 j' aimais
 tu aimais
 il aimait
 nous aimions
 vous aimiez
-ils aimaient
+ils zaimaient
 
-<break time="600ms"/>
+<break time="300ms"/>
 j' aimai
 tu aimas
 il aima
 nous aimâmes
 vous aimâtes
-ils aimèrent
+ils zaimèrent
 
-<break time="600ms"/>
+<break time="300ms"/>
 j' aimerai
 tu aimeras
 il aimera
 nous aimerons
 vous aimerez
-ils aimeront
+ils zaimeront
 
-<break time="600ms"/>
+<break time="300ms"/>
 j' aimerais
 tu aimerais
 il aimerait
 nous aimerions
 vous aimeriez
-ils aimeraient
+ils zaimeraient
 
-<break time="600ms"/>
+<break time="300ms"/>
 que j' aime
 que tu aimes
 qu' il aime
 que nous aimions
 que vous aimiez
-qu' ils aiment
+qu' ils zaiment
 
-<break time="600ms"/>
+<break time="300ms"/>
 que j' aimasse
 que tu aimasses
 qu' il aimât
 que nous aimassions
 que vous aimassiez
-qu' ils aimassent
+qu' ils zaimassent
 
-<break time="600ms"/>
+<break time="300ms"/>
 aime
 aimons
 aimez
 
-<break time="600ms"/>
+<break time="300ms"/>
 aimant
 
-<break time="600ms"/>
+<break time="300ms"/>
 aimé
 </prosody>
 </voice>

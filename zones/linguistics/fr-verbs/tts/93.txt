@@ -1,10 +1,10 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="fr-CH-ArianeNeural">
-<prosody rate="-20%" pitch="medium">
+<prosody rate="0%" pitch="medium">
 <!-- 93 -->
 couvrir
 
-<break time="600ms"/>
+<break time="300ms"/>
 je couvre
 tu couvres
 il couvre
@@ -12,7 +12,7 @@ nous couvrons
 vous couvrez
 ils couvrent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je couvrais
 tu couvrais
 il couvrait
@@ -20,7 +20,7 @@ nous couvrions
 vous couvriez
 ils couvraient
 
-<break time="600ms"/>
+<break time="300ms"/>
 je couvris
 tu couvris
 il couvrit
@@ -28,7 +28,7 @@ nous couvrîmes
 vous couvrîtes
 ils couvrirent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je couvrirai
 tu couvriras
 il couvrira
@@ -36,7 +36,7 @@ nous couvrirons
 vous couvrirez
 ils couvriront
 
-<break time="600ms"/>
+<break time="300ms"/>
 je couvrirais
 tu couvrirais
 il couvrirait
@@ -44,7 +44,7 @@ nous couvririons
 vous couvririez
 ils couvriraient
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je couvre
 que tu couvres
 qu' il couvre
@@ -52,7 +52,7 @@ que nous couvrions
 que vous couvriez
 qu' ils couvrent
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je couvrisse
 que tu couvrisses
 qu' il couvrît
@@ -60,15 +60,15 @@ que nous couvrissions
 que vous couvrissiez
 qu' ils couvrissent
 
-<break time="600ms"/>
+<break time="300ms"/>
 couvre
 couvrons
 couvrez
 
-<break time="600ms"/>
+<break time="300ms"/>
 couvrant
 
-<break time="600ms"/>
+<break time="300ms"/>
 couvert
 </prosody>
 </voice>

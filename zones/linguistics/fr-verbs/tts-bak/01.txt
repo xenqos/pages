@@ -1,0 +1,75 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 01 -->
+avoir
+
+<break time="600ms"/>
+j'ai
+tu as
+il a
+nous avons
+vous avez
+ils ont
+
+<break time="600ms"/>
+j'avais
+tu avais
+il avait
+nous avions
+vous aviez
+ils avaient
+
+<break time="600ms"/>
+j'eus
+tu eus
+il eut
+nous eûmes
+vous eûtes
+ils eurent
+
+<break time="600ms"/>
+j'aurai
+tu auras
+il aura
+nous aurons
+vous aurez
+ils auront
+
+<break time="600ms"/>
+j'aurais
+tu aurais
+il aurait
+nous aurions
+vous auriez
+ils auraient
+
+<break time="600ms"/>
+que j'aie
+que tu aies
+qu'il ait
+que nous ayons
+que vous ayez
+qu'ils aient
+
+<break time="600ms"/>
+que j'eusse
+que tu eusses
+qu'il eût
+que nous eussions
+que vous eussiez
+qu'ils eussent
+
+<break time="600ms"/>
+aie
+ayons
+ayez
+
+<break time="600ms"/>
+ayant
+
+<break time="600ms"/>
+eu
+</prosody>
+</voice>
+</speak>

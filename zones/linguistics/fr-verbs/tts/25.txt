@@ -1,10 +1,10 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="fr-CH-ArianeNeural">
-<prosody rate="-20%" pitch="medium">
+<prosody rate="0%" pitch="medium">
 <!-- 25 -->
 sonner
 
-<break time="600ms"/>
+<break time="300ms"/>
 je sonne
 tu sonnes
 il sonne
@@ -12,7 +12,7 @@ nous sonnons
 vous sonnez
 ils sonnent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je sonnais
 tu sonnais
 il sonnait
@@ -20,7 +20,7 @@ nous sonnions
 vous sonniez
 ils sonnaient
 
-<break time="600ms"/>
+<break time="300ms"/>
 je sonnai
 tu sonnas
 il sonna
@@ -28,7 +28,7 @@ nous sonnâmes
 vous sonnâtes
 ils sonnèrent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je sonnerai
 tu sonneras
 il sonnera
@@ -36,7 +36,7 @@ nous sonnerons
 vous sonnerez
 ils sonneront
 
-<break time="600ms"/>
+<break time="300ms"/>
 je sonnerais
 tu sonnerais
 il sonnerait
@@ -44,7 +44,7 @@ nous sonnerions
 vous sonneriez
 ils sonneraient
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je sonne
 que tu sonnes
 qu' il sonne
@@ -52,7 +52,7 @@ que nous sonnions
 que vous sonniez
 qu' ils sonnent
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je sonnasse
 que tu sonnasses
 qu' il sonnât
@@ -60,15 +60,15 @@ que nous sonnassions
 que vous sonnassiez
 qu' ils sonnassent
 
-<break time="600ms"/>
+<break time="300ms"/>
 sonne
 sonnons
 sonnez
 
-<break time="600ms"/>
+<break time="300ms"/>
 sonnant
 
-<break time="600ms"/>
+<break time="300ms"/>
 sonné
 </prosody>
 </voice>

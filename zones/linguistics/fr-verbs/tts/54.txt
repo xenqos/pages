@@ -1,10 +1,10 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="fr-CH-ArianeNeural">
-<prosody rate="-20%" pitch="medium">
+<prosody rate="0%" pitch="medium">
 <!-- 54 -->
 tourner
 
-<break time="600ms"/>
+<break time="300ms"/>
 je tourne
 tu tournes
 il tourne
@@ -12,7 +12,7 @@ nous tournons
 vous tournez
 ils tournent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je tournais
 tu tournais
 il tournait
@@ -20,7 +20,7 @@ nous tournions
 vous tourniez
 ils tournaient
 
-<break time="600ms"/>
+<break time="300ms"/>
 je tournai
 tu tournas
 il tourna
@@ -28,7 +28,7 @@ nous tournâmes
 vous tournâtes
 ils tournèrent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je tournerai
 tu tourneras
 il tournera
@@ -36,7 +36,7 @@ nous tournerons
 vous tournerez
 ils tourneront
 
-<break time="600ms"/>
+<break time="300ms"/>
 je tournerais
 tu tournerais
 il tournerait
@@ -44,7 +44,7 @@ nous tournerions
 vous tourneriez
 ils tourneraient
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je tourne
 que tu tournes
 qu' il tourne
@@ -52,7 +52,7 @@ que nous tournions
 que vous tourniez
 qu' ils tournent
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je tournasse
 que tu tournasses
 qu' il tournât
@@ -60,15 +60,15 @@ que nous tournassions
 que vous tournassiez
 qu' ils tournassent
 
-<break time="600ms"/>
+<break time="300ms"/>
 tourne
 tournons
 tournez
 
-<break time="600ms"/>
+<break time="300ms"/>
 tournant
 
-<break time="600ms"/>
+<break time="300ms"/>
 tourné
 </prosody>
 </voice>

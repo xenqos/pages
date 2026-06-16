@@ -1,10 +1,10 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="fr-CH-ArianeNeural">
-<prosody rate="-20%" pitch="medium">
+<prosody rate="0%" pitch="medium">
 <!-- 73 -->
 jouer
 
-<break time="600ms"/>
+<break time="300ms"/>
 je joue
 tu joues
 il joue
@@ -12,7 +12,7 @@ nous jouons
 vous jouez
 ils jouent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je jouais
 tu jouais
 il jouait
@@ -20,7 +20,7 @@ nous jouions
 vous jouiez
 ils jouaient
 
-<break time="600ms"/>
+<break time="300ms"/>
 je jouai
 tu jouas
 il joua
@@ -28,7 +28,7 @@ nous jouâmes
 vous jouâtes
 ils jouèrent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je jouerai
 tu joueras
 il jouera
@@ -36,7 +36,7 @@ nous jouerons
 vous jouerez
 ils joueront
 
-<break time="600ms"/>
+<break time="300ms"/>
 je jouerais
 tu jouerais
 il jouerait
@@ -44,7 +44,7 @@ nous jouerions
 vous joueriez
 ils joueraient
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je joue
 que tu joues
 qu' il joue
@@ -52,7 +52,7 @@ que nous jouions
 que vous jouiez
 qu' ils jouent
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je jouasse
 que tu jouasses
 qu' il jouât
@@ -60,15 +60,15 @@ que nous jouassions
 que vous jouassiez
 qu' ils jouassent
 
-<break time="600ms"/>
+<break time="300ms"/>
 joue
 jouons
 jouez
 
-<break time="600ms"/>
+<break time="300ms"/>
 jouant
 
-<break time="600ms"/>
+<break time="300ms"/>
 joué
 </prosody>
 </voice>

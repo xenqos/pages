@@ -1,0 +1,75 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 96 -->
+poser
+
+<break time="600ms"/>
+je pose
+tu poses
+il pose
+nous posons
+vous posez
+ils posent
+
+<break time="600ms"/>
+je posais
+tu posais
+il posait
+nous posions
+vous posiez
+ils posaient
+
+<break time="600ms"/>
+je posai
+tu posas
+il posa
+nous posâmes
+vous posâtes
+ils posèrent
+
+<break time="600ms"/>
+je poserai
+tu poseras
+il posera
+nous poserons
+vous poserez
+ils poseront
+
+<break time="600ms"/>
+je poserais
+tu poserais
+il poserait
+nous poserions
+vous poseriez
+ils poseraient
+
+<break time="600ms"/>
+que je pose
+que tu poses
+qu' il pose
+que nous posions
+que vous posiez
+qu' ils posent
+
+<break time="600ms"/>
+que je posasse
+que tu posasses
+qu' il posât
+que nous posassions
+que vous posassiez
+qu' ils posassent
+
+<break time="600ms"/>
+pose
+posons
+posez
+
+<break time="600ms"/>
+posant
+
+<break time="600ms"/>
+posé
+</prosody>
+</voice>
+</speak>

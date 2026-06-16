@@ -1,0 +1,75 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 56 -->
+voyager
+
+<break time="600ms"/>
+je voyage
+tu voyages
+il voyage
+nous voyageons
+vous voyagez
+ils voyagent
+
+<break time="600ms"/>
+je voyageais
+tu voyageais
+il voyageait
+nous voyagions
+vous voyagiez
+ils voyageaient
+
+<break time="600ms"/>
+je voyageai
+tu voyageas
+il voyagea
+nous voyageâmes
+vous voyageâtes
+ils voyagèrent
+
+<break time="600ms"/>
+je voyagerai
+tu voyageras
+il voyagera
+nous voyagerons
+vous voyagerez
+ils voyageront
+
+<break time="600ms"/>
+je voyagerais
+tu voyagerais
+il voyagerait
+nous voyagerions
+vous voyageriez
+ils voyageraient
+
+<break time="600ms"/>
+que je voyage
+que tu voyages
+qu' il voyage
+que nous voyagions
+que vous voyagiez
+qu' ils voyagent
+
+<break time="600ms"/>
+que je voyageasse
+que tu voyageasses
+qu' il voyageât
+que nous voyageassions
+que vous voyageassiez
+qu' ils voyageassent
+
+<break time="600ms"/>
+voyage
+voyageons
+voyagez
+
+<break time="600ms"/>
+voyageant
+
+<break time="600ms"/>
+voyagé
+</prosody>
+</voice>
+</speak>

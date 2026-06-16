@@ -1,10 +1,10 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="fr-CH-ArianeNeural">
-<prosody rate="-20%" pitch="medium">
+<prosody rate="0%" pitch="medium">
 <!-- 79 -->
 lire
 
-<break time="600ms"/>
+<break time="300ms"/>
 je lis
 tu lis
 il lit
@@ -12,7 +12,7 @@ nous lisons
 vous lisez
 ils lisent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je lisais
 tu lisais
 il lisait
@@ -20,7 +20,7 @@ nous lisions
 vous lisiez
 ils lisaient
 
-<break time="600ms"/>
+<break time="300ms"/>
 je lus
 tu lus
 il lut
@@ -28,7 +28,7 @@ nous lûmes
 vous lûtes
 ils lurent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je lirai
 tu liras
 il lira
@@ -36,7 +36,7 @@ nous lirons
 vous lirez
 ils liront
 
-<break time="600ms"/>
+<break time="300ms"/>
 je lirais
 tu lirais
 il lirait
@@ -44,7 +44,7 @@ nous lirions
 vous liriez
 ils liraient
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je lise
 que tu lises
 qu' il lise
@@ -52,7 +52,7 @@ que nous lisions
 que vous lisiez
 qu' ils lisent
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je lusse
 que tu lusses
 qu' il lût
@@ -60,15 +60,15 @@ que nous lussions
 que vous lussiez
 qu' ils lussent
 
-<break time="600ms"/>
+<break time="300ms"/>
 lis
 lisons
 lisez
 
-<break time="600ms"/>
+<break time="300ms"/>
 lisant
 
-<break time="600ms"/>
+<break time="300ms"/>
 lu
 </prosody>
 </voice>

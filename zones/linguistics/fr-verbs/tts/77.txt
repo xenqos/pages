@@ -1,6 +1,6 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="fr-CH-ArianeNeural">
-<prosody rate="-20%" pitch="medium">
+<prosody rate="0%" pitch="medium">
 <!-- 77 -->
 apprendre
 j' apprends
@@ -8,65 +8,65 @@ tu apprends
 il apprend
 nous apprenons
 vous apprenez
-ils apprennent
+ils zapprennent
 
-<break time="600ms"/>
+<break time="300ms"/>
 j' apprenais
 tu apprenais
 il apprenait
 nous apprenions
 vous appreniez
-ils apprenaient
+ils zapprenaient
 
-<break time="600ms"/>
+<break time="300ms"/>
 j' appris
 tu appris
 il apprit
 nous apprîmes
 vous apprîtes
-ils apprirent
+ils zapprirent
 
-<break time="600ms"/>
+<break time="300ms"/>
 j' apprendrai
 tu apprendras
 il apprendra
 nous apprendrons
 vous apprendrez
-ils apprendront
+ils zapprendront
 
-<break time="600ms"/>
+<break time="300ms"/>
 j' apprendrais
 tu apprendrais
 il apprendrait
 nous apprendrions
 vous apprendriez
-ils apprendraient
+ils zapprendraient
 
-<break time="600ms"/>
+<break time="300ms"/>
 que j' apprenne
 que tu apprennes
 qu' il apprenne
 que nous apprenions
 que vous appreniez
-qu' ils apprennent
+qu' ils zapprennent
 
-<break time="600ms"/>
+<break time="300ms"/>
 que j' apprisse
 que tu apprisses
 qu' il apprît
 que nous apprissions
 que vous apprissiez
-qu' ils apprissent
+qu' ils zapprissent
 
-<break time="600ms"/>
+<break time="300ms"/>
 apprends
 apprenons
 apprenez
 
-<break time="600ms"/>
+<break time="300ms"/>
 apprenant
 
-<break time="600ms"/>
+<break time="300ms"/>
 appris
 </prosody>
 </voice>

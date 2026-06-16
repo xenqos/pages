@@ -1,0 +1,75 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+<!-- 72 -->
+manger
+
+<break time="600ms"/>
+je mange
+tu manges
+il mange
+nous mangeons
+vous mangez
+ils mangent
+
+<break time="600ms"/>
+je mangeais
+tu mangeais
+il mangeait
+nous mangions
+vous mangiez
+ils mangeaient
+
+<break time="600ms"/>
+je mangeai
+tu mangeas
+il mangea
+nous mangeâmes
+vous mangeâtes
+ils mangèrent
+
+<break time="600ms"/>
+je mangerai
+tu mangeras
+il mangera
+nous mangerons
+vous mangerez
+ils mangeront
+
+<break time="600ms"/>
+je mangerais
+tu mangerais
+il mangerait
+nous mangerions
+vous mangeriez
+ils mangeraient
+
+<break time="600ms"/>
+que je mange
+que tu manges
+qu' il mange
+que nous mangions
+que vous mangiez
+qu' ils mangent
+
+<break time="600ms"/>
+que je mangeasse
+que tu mangeasses
+qu' il mangeât
+que nous mangeassions
+que vous mangeassiez
+qu' ils mangeassent
+
+<break time="600ms"/>
+mange
+mangeons
+mangez
+
+<break time="600ms"/>
+mangeant
+
+<break time="600ms"/>
+mangé
+</prosody>
+</voice>
+</speak>

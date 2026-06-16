@@ -1,10 +1,10 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="fr-CH-ArianeNeural">
-<prosody rate="-20%" pitch="medium">
+<prosody rate="0%" pitch="medium">
 <!-- 05 -->
 partir
 
-<break time="600ms"/>
+<break time="300ms"/>
 je pars
 tu pars
 il part
@@ -12,7 +12,7 @@ nous partons
 vous partez
 ils partent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je partais
 tu partais
 il partait
@@ -20,7 +20,7 @@ nous partions
 vous partiez
 ils partaient
 
-<break time="600ms"/>
+<break time="300ms"/>
 je partis
 tu partis
 il partit
@@ -28,7 +28,7 @@ nous partîmes
 vous partîtes
 ils partirent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je partirai
 tu partiras
 il partira
@@ -36,7 +36,7 @@ nous partirons
 vous partirez
 ils partiront
 
-<break time="600ms"/>
+<break time="300ms"/>
 je partirais
 tu partirais
 il partirait
@@ -44,7 +44,7 @@ nous partirions
 vous partiriez
 ils partiraient
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je parte
 que tu partes
 qu' il parte
@@ -52,7 +52,7 @@ que nous partions
 que vous partiez
 qu' ils partent
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je partisse
 que tu partisses
 qu' il partît
@@ -60,15 +60,15 @@ que nous partissions
 que vous partissiez
 qu' ils partissent
 
-<break time="600ms"/>
+<break time="300ms"/>
 pars
 partons
 partez
 
-<break time="600ms"/>
+<break time="300ms"/>
 partant
 
-<break time="600ms"/>
+<break time="300ms"/>
 parti
 </prosody>
 </voice>

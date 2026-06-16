@@ -1,10 +1,10 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="fr-CH-ArianeNeural">
-<prosody rate="-20%" pitch="medium">
+<prosody rate="0%" pitch="medium">
 <!-- 08 -->
 vouloir
 
-<break time="600ms"/>
+<break time="300ms"/>
 je veux
 tu veux
 il veut
@@ -12,7 +12,7 @@ nous voulons
 vous voulez
 ils veulent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je voulais
 tu voulais
 il voulait
@@ -20,7 +20,7 @@ nous voulions
 vous vouliez
 ils voulaient
 
-<break time="600ms"/>
+<break time="300ms"/>
 je voulus
 tu voulus
 il voulut
@@ -28,7 +28,7 @@ nous voulûmes
 vous voulûtes
 ils voulurent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je voudrai
 tu voudras
 il voudra
@@ -36,7 +36,7 @@ nous voudrons
 vous voudrez
 ils voudront
 
-<break time="600ms"/>
+<break time="300ms"/>
 je voudrais
 tu voudrais
 il voudrait
@@ -44,7 +44,7 @@ nous voudrions
 vous voudriez
 ils voudraient
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je veuille
 que tu veuilles
 qu' il veuille
@@ -52,7 +52,7 @@ que nous voulions
 que vous vouliez
 qu' ils veuillent
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je voulusse
 que tu voulusses
 qu' il voulût
@@ -60,15 +60,15 @@ que nous voulussions
 que vous voulussiez
 qu' ils voulussent
 
-<break time="600ms"/>
+<break time="300ms"/>
 veux/veuille
 voulons
 voulez/veuillez
 
-<break time="600ms"/>
+<break time="300ms"/>
 voulant
 
-<break time="600ms"/>
+<break time="300ms"/>
 voulu
 </prosody>
 </voice>

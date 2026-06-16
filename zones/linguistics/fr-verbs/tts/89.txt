@@ -1,10 +1,10 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="fr-CH-ArianeNeural">
-<prosody rate="-20%" pitch="medium">
+<prosody rate="0%" pitch="medium">
 <!-- 89 -->
 sauter
 
-<break time="600ms"/>
+<break time="300ms"/>
 je saute
 tu sautes
 il saute
@@ -12,7 +12,7 @@ nous sautons
 vous sautez
 ils sautent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je sautais
 tu sautais
 il sautait
@@ -20,7 +20,7 @@ nous sautions
 vous sautiez
 ils sautaient
 
-<break time="600ms"/>
+<break time="300ms"/>
 je sautai
 tu sautas
 il sauta
@@ -28,7 +28,7 @@ nous sautâmes
 vous sautâtes
 ils sautèrent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je sauterai
 tu sauteras
 il sautera
@@ -36,7 +36,7 @@ nous sauterons
 vous sauterez
 ils sauteront
 
-<break time="600ms"/>
+<break time="300ms"/>
 je sauterais
 tu sauterais
 il sauterait
@@ -44,7 +44,7 @@ nous sauterions
 vous sauteriez
 ils sauteraient
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je saute
 que tu sautes
 qu' il saute
@@ -52,7 +52,7 @@ que nous sautions
 que vous sautiez
 qu' ils sautent
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je sautasse
 que tu sautasses
 qu' il sautât
@@ -60,15 +60,15 @@ que nous sautassions
 que vous sautassiez
 qu' ils sautassent
 
-<break time="600ms"/>
+<break time="300ms"/>
 saute
 sautons
 sautez
 
-<break time="600ms"/>
+<break time="300ms"/>
 sautant
 
-<break time="600ms"/>
+<break time="300ms"/>
 sauté
 </prosody>
 </voice>

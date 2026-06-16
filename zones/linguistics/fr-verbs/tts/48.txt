@@ -1,10 +1,10 @@
 <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
 <voice name="fr-CH-ArianeNeural">
-<prosody rate="-20%" pitch="medium">
+<prosody rate="0%" pitch="medium">
 <!-- 48 -->
 suivre
 
-<break time="600ms"/>
+<break time="300ms"/>
 je suis
 tu suis
 il suit
@@ -12,7 +12,7 @@ nous suivons
 vous suivez
 ils suivent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je suivais
 tu suivais
 il suivait
@@ -20,7 +20,7 @@ nous suivions
 vous suiviez
 ils suivaient
 
-<break time="600ms"/>
+<break time="300ms"/>
 je suivis
 tu suivis
 il suivit
@@ -28,7 +28,7 @@ nous suivîmes
 vous suivîtes
 ils suivirent
 
-<break time="600ms"/>
+<break time="300ms"/>
 je suivrai
 tu suivras
 il suivra
@@ -36,7 +36,7 @@ nous suivrons
 vous suivrez
 ils suivront
 
-<break time="600ms"/>
+<break time="300ms"/>
 je suivrais
 tu suivrais
 il suivrait
@@ -44,7 +44,7 @@ nous suivrions
 vous suivriez
 ils suivraient
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je suive
 que tu suives
 qu' il suive
@@ -52,7 +52,7 @@ que nous suivions
 que vous suiviez
 qu' ils suivent
 
-<break time="600ms"/>
+<break time="300ms"/>
 que je suivisse
 que tu suivisses
 qu' il suivît
@@ -60,15 +60,15 @@ que nous suivissions
 que vous suivissiez
 qu' ils suivissent
 
-<break time="600ms"/>
+<break time="300ms"/>
 suis
 suivons
 suivez
 
-<break time="600ms"/>
+<break time="300ms"/>
 suivant
 
-<break time="600ms"/>
+<break time="300ms"/>
 suivi
 </prosody>
 </voice>
