@@ -1,0 +1,23 @@
+Samhita (संहिता) - Dharmawiki
+https://dharmawiki.org/index.php/Samhita_(%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE)
+
+Asyavamiya Suktam of Rishi Deerghatamas, from Rigveda
+https://www.youtube.com/watch?v=r86l_TF9XWc&list=RDr86l_TF9XWc&start_radio=1
+
+Библиотека всемирной литературы. Серия первая. Том 1 'Поэзия и проза Древнего Востока'
+http://izbakurnog.historic.ru/books/item/f00/s00/z0000008/index.shtml
+
+Упанишады
+https://vedatext.com/upanishady
+
+Мандукья упанишада
+https://samskrtam.ru/parallel-corpus/
+
+PSYLIB® – УПАНИШАДЫ в переводе А. Сыркина
+https://www.psylib.org.ua/books/upani01/txt11.htm
+
+Rig Veda (translation and commentary)
+https://www.wisdomlib.org/hinduism/book/rig-veda-english-translation/d/doc830745.html
+
+2 Brahmans
+https://www.youtube.com/watch?v=Snyk7C1CVTw&list=RDSnyk7C1CVTw&start_radio=1
