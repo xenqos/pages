@@ -36,43 +36,36 @@
 
 <h1>Outs Calculation</h1>
 
-<blockquote>
 Out - One Card that can improve Hand<br>
 Count Card as Out once<br>
-</blockquote>
-
 <div class='clOverflow'>
 <table>
 <tr>
 <th>Type of Draw</th><th>Outs</th></tr>
-<tr><td>Set to Four of a Kind                <br><q class='s'>9</q><q class='c'>9</q><q class='d'>9</q>                    </td><td> 1</td></tr>
-<tr><td>One Pair to Set                      <br><q class='h'>8</q><q class='d'>8</q>                          </td><td> 2</td></tr>
-<tr><td>One Overcard (*) to Pair             <br><q class='s'>J</q>                                </td><td> 3</td></tr>
-<tr><td>Trips to Full House n°1              <br><q class='c'>Q</q><q class='s'>2</q><q class='d'>2</q><q class='h'>2</q><q class='s'>7</q>        </td><td> 3</td></tr>
-<tr><td>Trips to Full House n°2              <br><q class='c'>Q</q><q class='s'>2</q><q class='d'>2</q><q class='h'>2</q><q class='s'>7</q><q class='c'>5</q>  </td><td> 4</td></tr>
-<tr><td>Inside Straight Draw                 <br><q class='c'>5</q><q class='h'>6</q><q class='d'>7</q><q class='s'>9</q>              </td><td> 4</td></tr>
-<tr><td>Two Pair to Full House               <br><q class='d'>J</q><q class='c'>J</q><q class='s'>K</q><q class='h'>K</q>              </td><td> 4</td></tr>
-</td><td>One Pair to Two Pair                 <br><q class='d'>A</q><q class='s'>Q</q>                          </td><td> 6</td><td> <br>
-<tr><td>No Pair to Pair                      <br><q class='h'>2</q><q class='d'>5</q>                          </td><td> 6</td></tr>
-<tr><td>Two Overcards to Over Pair          </td><td> 6</td></tr>
-<tr><td>Set to Full House                   </td><td> 7</td></tr>
-<tr><td>Open-Ended Straight Draw            </td><td> 8</td></tr>
-<tr><td>Flush Draw                          </td><td> 9</td></tr>
-<tr><td>Inside Straight Draw & Two Overcards</td><td>10</td></tr>
-<tr><td>Inside Straight Draw & Flush Draw   </td><td>12</td></tr>
-<tr><td>Open-Ended Straight & Flush Draw    </td><td>15</td></tr>
+<tr><td>Set to Four of a Kind                <br>&emsp;<q class='s'>9</q><q class='c'>9</q><q class='d'>9</q>                    </td><td> 1</td></tr>
+<tr><td>One Pair to Set                      <br>&emsp;<q class='h'>8</q><q class='d'>8</q>                          </td><td> 2</td></tr>
+<tr><td>One Overcard (*) to Pair             <br>&emsp;<q class='s'>J</q>                                </td><td> 3</td></tr>
+<tr><td>Trips to Full House n°1              <br>&emsp;<q class='c'>Q</q><q class='s'>2</q><q class='d'>2</q><q class='h'>2</q><q class='s'>7</q>        </td><td> 3</td></tr>
+<tr><td>Trips to Full House n°2              <br>&emsp;<q class='c'>Q</q><q class='s'>2</q><q class='d'>2</q><q class='h'>2</q><q class='s'>7</q><q class='c'>5</q>  </td><td> 4</td></tr>
+<tr><td>Inside Straight Draw                 <br>&emsp;<q class='c'>5</q><q class='h'>6</q><q class='d'>7</q><q class='s'>9</q>              </td><td> 4</td></tr>
+<tr><td>Two Pair to Full House               <br>&emsp;<q class='d'>J</q><q class='c'>J</q><q class='s'>K</q><q class='h'>K</q>              </td><td> 4</td></tr>
+<tr><td>One Pair to Two Pair                 <br>&emsp;<q class='d'>A</q><q class='s'>Q</q>                          </td><td> 6</td></tr>
+<tr><td>No Pair to Pair                      <br>&emsp;<q class='h'>2</q><q class='d'>5</q>                          </td><td> 6</td></tr>
+<tr><td>Two Overcards to Over Pair           <br>&emsp;<q class='s'>K</q><q class='d'>Q</q><q class='h'>8</q><q class='c'>5</q><q class='s'>2</q>        </td><td> 6</td></tr>
+<tr><td>Set to Full House                    <br>&emsp;<q class='s'>7</q><q class='h'>7</q><q class='c'>7</q><q class='d'>J</q><q class='s'>2</q>        </td><td> 7</td></tr>
+<tr><td>Open-Ended Straight Draw             <br>&emsp;<q class='h'>6</q><q class='d'>7</q><q class='c'>8</q><q class='s'>9</q>              </td><td> 8</td></tr>
+<tr><td>Flush Draw                           <br>&emsp;<q class='h'>A</q><q class='h'>K</q><q class='h'>J</q><q class='h'>4</q>              </td><td> 9</td></tr>
+<tr><td>Inside Straight Draw & Two Overcards <br>&emsp;<q class='s'>A</q><q class='h'>K</q><q class='d'>Q</q><q class='c'>T</q><q class='s'>3</q>        </td><td>10</td></tr>
+<tr><td>Inside Straight Draw & Flush Draw    <br>&emsp;<q class='h'>4</q><q class='h'>5</q><q class='h'>7</q><q class='h'>8</q>              </td><td>12</td></tr>
+<tr><td>Open-Ended Straight & Flush Draw     <br>&emsp;<q class='s'>6</q><q class='s'>7</q><q class='s'>8</q><q class='s'>9</q>              </td><td>15</td></tr>
 </table>
 </div>
 
-<blockquote>
 * Overcard - card in hand higher than the highest card on board<br>
-</blockquote>
 
 <h2>Blocker Example</h2>
 
-<blockquote>
 Blocker - One Card that prevents having combinations<br>
-</blockquote>
 
 <h3>Example</h3>
 

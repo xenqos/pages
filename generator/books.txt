@@ -1,4 +1,16 @@
 #-------------------------------------------------------------------------------
+#  Dharma
+#-------------------------------------------------------------------------------
+dharma/principles                ;  0  ;  Принципы
+dharma/questions                 ;  0  ;  Вопросы
+dharma/kriya                     ;  0  ;  Крия
+dharma/yoga-sutra                ;  0  ;  Йога-сутры
+dharma/sankhya-karika            ;  0  ;  Санкхья-карика
+dharma/mantra                    ;  0  ;  Мантры
+dharma/samhita                   ;  0  ;  Самхиты
+dharma/upanishad                 ;  0  ;  Упанишады
+dharma/bhagavad-gita             ;  0  ;  Бхагавад-гита
+#-------------------------------------------------------------------------------
 #  Dao
 #-------------------------------------------------------------------------------
 dao/daodejing                    ;  0  ;  Дао Дэ Цзин
@@ -12,7 +24,6 @@ exoterica/bible-en               ;  0  ;  King James Bible
 exoterica/bible-ru               ;  0  ;  Библия (Синодальный перевод)
 exoterica/bible-fr               ;  0  ;  a Bible du Port-Royal (de Sacy)
 exoterica/bhagavad-gita          ;  0  ;  Бхагавад-гита
-exoterica/ru-rhymes              ;  0  ;  Мистические рифмы
 #-------------------------------------------------------------------------------
 #  Linguistics - Български
 #-------------------------------------------------------------------------------
@@ -52,8 +63,12 @@ linguistics/fr-expressions       ;  0  ;  Expressions
 linguistics/fr-phrases-cliches   ;  0  ;  Phrases cliches
 linguistics/fr-conversations     ;  0  ;  Conversations
 #-------------------------------------------------------------------------------
+#  Linguistics - Russe
+#-------------------------------------------------------------------------------
+linguistics/ru-rimes             ;  0  ;  Les Rimes mystiques
+#-------------------------------------------------------------------------------
 #  Poker
 #-------------------------------------------------------------------------------
-poker/principles                 ;  0  ;  Principles
+poker/principles                 ;  1  ;  Principles
 poker/mathematics                ;  0  ;  Mathematics
 #-------------------------------------------------------------------------------

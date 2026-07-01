@@ -15,7 +15,8 @@
   <link rel='stylesheet' media='screen' href='../styles/local.css'>
   <script defer src='../../../../scripts/global.js'></script>
   <script defer src='../scripts/local.js'></script>
-  
+  <script>MathJax={tex: {inlineMath: [['$', '$'], ['((', '))']], processEscapes: true}};</script>
+  <script id='MathJax-script' async src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'></script>
 </head>
 <body onload='fncGetDivState(); fncGetScrollPosition();'>
 
@@ -34,38 +35,44 @@
 
 <h6>Orthographe</h6>
 
-
-<h1>Alphabet</h1>
+<h1>Signe de ponctuation</h1>
 
 <div class='clOverflow'>
 <table>
 <tr>
-<td><span class='r'>A</span></td><td><span class='r'>a</span></td><td><span class='b'>ɑ      </span></td></tr>
-<tr><td><span class='r'>B</span></td><td><span class='r'>b</span></td><td><span class='b'>be     </span></td></tr>
-<tr><td><span class='r'>C</span></td><td><span class='r'>c</span></td><td><span class='b'>se     </span></td></tr>
-<tr><td><span class='r'>D</span></td><td><span class='r'>d</span></td><td><span class='b'>de     </span></td></tr>
-<tr><td><span class='r'>E</span></td><td><span class='r'>e</span></td><td><span class='b'>ø      </span></td></tr>
-<tr><td><span class='r'>F</span></td><td><span class='r'>f</span></td><td><span class='b'>ɛf     </span></td></tr>
-<tr><td><span class='r'>G</span></td><td><span class='r'>g</span></td><td><span class='b'>ʒe     </span></td></tr>
-<tr><td><span class='r'>H</span></td><td><span class='r'>h</span></td><td><span class='b'>aʃ     </span></td></tr>
-<tr><td><span class='r'>I</span></td><td><span class='r'>i</span></td><td><span class='b'>i      </span></td></tr>
-<tr><td><span class='r'>J</span></td><td><span class='r'>j</span></td><td><span class='b'>ʒi     </span></td></tr>
-<tr><td><span class='r'>K</span></td><td><span class='r'>k</span></td><td><span class='b'>ka     </span></td></tr>
-<tr><td><span class='r'>L</span></td><td><span class='r'>l</span></td><td><span class='b'>ɛl     </span></td></tr>
-<tr><td><span class='r'>M</span></td><td><span class='r'>m</span></td><td><span class='b'>ɛm     </span></td></tr>
-<tr><td><span class='r'>N</span></td><td><span class='r'>n</span></td><td><span class='b'>ɛn     </span></td></tr>
-<tr><td><span class='r'>O</span></td><td><span class='r'>o</span></td><td><span class='b'>o      </span></td></tr>
-<tr><td><span class='r'>P</span></td><td><span class='r'>p</span></td><td><span class='b'>pe     </span></td></tr>
-<tr><td><span class='r'>Q</span></td><td><span class='r'>q</span></td><td><span class='b'>ky     </span></td></tr>
-<tr><td><span class='r'>R</span></td><td><span class='r'>r</span></td><td><span class='b'>ɛʁ     </span></td></tr>
-<tr><td><span class='r'>S</span></td><td><span class='r'>s</span></td><td><span class='b'>ɛs     </span></td></tr>
-<tr><td><span class='r'>T</span></td><td><span class='r'>t</span></td><td><span class='b'>te     </span></td></tr>
-<tr><td><span class='r'>U</span></td><td><span class='r'>u</span></td><td><span class='b'>y      </span></td></tr>
-<tr><td><span class='r'>V</span></td><td><span class='r'>v</span></td><td><span class='b'>ve     </span></td></tr>
-<tr><td><span class='r'>W</span></td><td><span class='r'>w</span></td><td><span class='b'>dubləve</span></td></tr>
-<tr><td><span class='r'>X</span></td><td><span class='r'>x</span></td><td><span class='b'>iks    </span></td></tr>
-<tr><td><span class='r'>Y</span></td><td><span class='r'>y</span></td><td><span class='b'>iɡʁɛk  </span></td></tr>
-<tr><td><span class='r'>Z</span></td><td><span class='r'>z</span></td><td><span class='b'>zɛd    </span></td></tr>
+<td><span class='r'>la barre espace</span>           </td><td>&nbsp;</td></tr>
+<tr><td><span class='r'>le point</span>                  </td><td>.</td></tr>
+<tr><td><span class='r'>la virgule</span>                </td><td>,</td></tr>
+<tr><td><span class='r'>le deux-points</span>            </td><td>:</td></tr>
+<tr><td><span class='r'>le point virgule</span>          </td><td>;</td></tr>
+<tr><td><span class='r'>le point d'exclamation</span>    </td><td>!</td></tr>
+<tr><td><span class='r'>le point d'interrogation</span>  </td><td>?</td></tr>
+<tr><td><span class='r'>l'étoile</span> (f)              </td><td>*</td></tr>
+<tr><td><span class='r'>le signe moins</span>            </td><td>-</td></tr>
+<tr><td><span class='r'>le signe plus</span>             </td><td>+</td></tr>
+<tr><td><span class='r'>le signe égal</span>             </td><td>=</td></tr>
+<tr><td><span class='r'>le tiret bas</span>              </td><td>_</td></tr>
+<tr><td><span class='r'>l'accent grave</span> (m)        </td><td>`</td></tr>
+<tr><td><span class='r'>l'apostrophe</span> (f)          </td><td>&apos;</td></tr>
+<tr><td><span class='r'>les guillemets doubles</span> (m)</td><td>&quot;</td></tr>
+<tr><td><span class='r'>le tilde</span>                  </td><td>~</td></tr>
+<tr><td><span class='r'>l'arobase</span> (f)             </td><td>@</td></tr>
+<tr><td><span class='r'>le carré, le dièse</span>        </td><td>#</td></tr>
+<tr><td><span class='r'>le symbole dollar</span>         </td><td>$</td></tr>
+<tr><td><span class='r'>le symbole pourcentage</span>    </td><td>%</td></tr>
+<tr><td><span class='r'>l'accent circonflexe</span> (m)  </td><td>&Hat;</td></tr>
+<tr><td><span class='r'>l'esperluette</span> (f)         </td><td>&</td></tr>
+<tr><td><span class='r'>la barre oblique inversée</span> </td><td>&bsol;</td></tr>
+<tr><td><span class='r'>la barre oblique</span>          </td><td>/</td></tr>
+<tr><td><span class='r'>la barre verticale</span>        </td><td>&verbar;</td></tr>
+<tr><td><span class='r'>le point de suspension</span>    </td><td>…</td></tr>
+<tr><td><span class='r'>les parenthèses</span> (f)       </td><td>( )</td></tr>
+<tr><td><span class='r'>le crochet</span> (f)            </td><td>&lsqb; &rsqb;</td></tr>
+<tr><td><span class='r'>les accolades</span>             </td><td>&lbrace; &rbrace;</td></tr>
+<tr><td><span class='r'>le signe inférieur à</span>      </td><td><</td></tr>
+<tr><td><span class='r'>le signe supérieur à</span>      </td><td>></td></tr>
+<tr><td><span class='r'>le guillemet ouvrante</span> (m) </td><td>«</td></tr>
+<tr><td><span class='r'>le guillemet fermante</span> (m) </td><td>»</td></tr>
 </table>
 </div>
 
