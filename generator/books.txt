@@ -21,9 +21,10 @@ dao/taiji-moylinshin             ;  0  ;  Тай Чи - Moy Lin Shin
 #  Exoterica
 #-------------------------------------------------------------------------------
 exoterica/bible-en               ;  0  ;  King James Bible
+exoterica/bible-fr               ;  0  ;  La Bible du Port-Royal (de Sacy)
 exoterica/bible-ru               ;  0  ;  Библия (Синодальный перевод)
-exoterica/bible-fr               ;  0  ;  a Bible du Port-Royal (de Sacy)
-exoterica/bhagavad-gita          ;  0  ;  Бхагавад-гита
+exoterica/tarot-crowley-harris   ;  1  ;  Tarot Crowley Harris
+exoterica/tarot-waite-smith      ;  0  ;  Tarot Waite Smith
 #-------------------------------------------------------------------------------
 #  Linguistics - Български
 #-------------------------------------------------------------------------------
