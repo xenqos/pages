@@ -15,8 +15,7 @@
   <link rel='stylesheet' media='screen' href='../styles/local.css'>
   <script defer src='../../../../scripts/global.js'></script>
   <script defer src='../scripts/local.js'></script>
-  <script>MathJax={tex: {inlineMath: [['$', '$'], ['((', '))']], processEscapes: true}};</script>
-  <script id='MathJax-script' async src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'></script>
+  
 </head>
 <body onload='fncGetDivState(); fncGetScrollPosition();'>
 
@@ -46,9 +45,10 @@ Initial 'Buy-In' = 20 - 200 of 'Big Blind'<br>
 e.g.:<br>
 <br>
 <b>IF</b><br>
-&ensp;  ( 'Blinds' = $0.25 / $0.50 )<br>
+&ensp;&ensp;( 'Blinds' = &dollar;0.25 / &dollar;0.50 )<br>
 <b>THEN</b><br>
-&ensp;  'Buy-In' = <br> 20 x $0.25 = $10 <br>  200 x $0.50 = $100<br>
+&ensp;&ensp;Minimum 'Buy-In' (20 bb)  = 20 x &dollar;0.50 = &dollar;10<br>
+&ensp;&ensp;Maximum 'Buy-In' (200 bb) = 200 x &dollar;0.50 = &dollar;100<br>
 <b>ENDIF</b><br>
 
 <h2>Stack Size</h2>
@@ -56,10 +56,10 @@ e.g.:<br>
 <div class='clOverflow'>
 <table>
 <tr>
-<td>Short-stacked </td><td>< 25 bb    </td></tr>
+<td>Short-stacked </td><td><= 25 bb   </td></tr>
 <tr><td>Medium-stacked</td><td>26 – 50 bb </td></tr>
 <tr><td>Big-stacked   </td><td>51 – 100 bb</td></tr>
-<tr><td>Deep-stacked  </td><td>> 101 bb   </td></tr>
+<tr><td>Deep-stacked  </td><td>>= 101 bb  </td></tr>
 </table>
 </div>
 

@@ -22,7 +22,6 @@ dao/taiji-moylinshin             ;  0  ;  Тай Чи - Moy Lin Shin
 #-------------------------------------------------------------------------------
 exoterica/tarot-crowley-harris   ;  0  ;  Tarot Crowley Harris
 exoterica/tarot-waite-smith      ;  0  ;  Tarot Waite Smith
-exoterica/rimes-mystiques        ;  1  ;  Les Rimes mystiques
 exoterica/bible-en               ;  0  ;  King James Bible
 exoterica/bible-fr               ;  0  ;  La Bible du Port-Royal (de Sacy)
 #-------------------------------------------------------------------------------
@@ -64,14 +63,12 @@ linguistics/fr-expressions       ;  0  ;  Expressions
 linguistics/fr-phrases-cliches   ;  0  ;  Phrases cliches
 linguistics/fr-conversations     ;  0  ;  Conversations
 #-------------------------------------------------------------------------------
-#  Linguistics - Українська
+#  Linguistics - Russe
 #-------------------------------------------------------------------------------
-linguistics/uk-grammar           ;  0  ;  Граматика
-linguistics/uk-words             ;  0  ;  Слова
-linguistics/uk-conversations     ;  1  ;  Розмови
+linguistics/ru-rimes-mystiques   ;  0  ;  Les Rimes mystiques
 #-------------------------------------------------------------------------------
 #  Poker
 #-------------------------------------------------------------------------------
-poker/principles                 ;  0  ;  Principles
+poker/principles                 ;  1  ;  Principles
 poker/mathematics                ;  0  ;  Mathematics
 #-------------------------------------------------------------------------------

@@ -44,7 +44,7 @@
 'Big Blind' places big blind<br>
 'Dealer' deal 'Hole Cards' starting from left<br>
 Each player clockwise places: 'Fold' / 'Call' / 'Raise'<br>
-If no raise has been made, 'Big Blind' may 'Check' when action returns to them<br>
+If no raise has been made, 'Dealer' asks 'Big Blind' for their 'Option'. 'Big Blind' may then 'Check' or 'Raise' when action returns to them<br>
 If a raise has been made, 'Big Blind' may 'Fold' / 'Call' / 'Raise'<br>
 </blockquote>
 
@@ -57,6 +57,7 @@ If a raise has been made, 'Big Blind' may 'Fold' / 'Call' / 'Raise'<br>
 
 <h2>Flop</h2>
 <blockquote>
+71.4% of potential cards (3/7)<br>
 'Dealer' burns top card<br>
 'Dealer' deals 'Flop Community Cards' (3 cards)<br>
 'Small Blind' acts first: 'Fold' / 'Check' / 'Bet'<br>
@@ -66,6 +67,7 @@ Each player clockwise: 'Fold' / 'Check' / 'Bet' / 'Call' / 'Raise'<br>
 
 <h2>Turn</h2>
 <blockquote>
+14.3% of potential cards (1/7)<br>
 'Dealer' burns top card<br>
 'Dealer' deals 'Turn Community Card' - 'Fourth Street' (1 card)<br>
 'Small Blind' acts first: 'Fold' / 'Check' / 'Bet'<br>
@@ -75,6 +77,7 @@ Each player clockwise: 'Fold' / 'Check' / 'Bet' / 'Call' / 'Raise'<br>
 
 <h2>River</h2>
 <blockquote>
+14.3% of potential cards (1/7)<br>
 'Dealer' burns top card<br>
 'Dealer' deals 'River Community Card' - 'Fifth Street' (1 card)<br>
 'Small Blind' acts first: 'Fold' / 'Check' / 'Bet'<br>
@@ -104,89 +107,14 @@ Example: Bet $10 → minimum raise = $20 total ($10 more)<br>
 <b>ENDIF</b><br>
 <br>
 <b>IF</b><br>
-&ensp;  'Players' >= 3 in 'Hand'<br>
+&ensp;  'Betting Variation' = 'No Limit' or 'Pot Limit'<br>
+<b>THEN</b><br>
+&ensp;  'Raise' / 'Re-raise' unlimited<br>
+<b>ELSEIF</b><br>
+&ensp;  'Betting Variation' = 'Fixed Limit'<br>
 <b>THEN</b><br>
 &ensp;  3-4 'Raise' / 'Re-raise' maximum (casino dependent)<br>
-<b>ELSEIF</b><br>
-&ensp;  'Players' = 2 in 'Hand'<br>
-<b>THEN</b><br>
-&ensp;  'Raise' / 'Re-raise' unlimited (most casinos)<br>
 <b>ENDIF</b><br>
-<br>
-<!--
-<h6>Game</h6>
-
-<h1>Betting Rounds</h1>
-
-<h2>Pre-Flop</h2>
-<blockquote>
-'Big Blind' is 'Live Blind'<br>
-'Small Blind' places small blind<br>
-'Big Blind' places big blind<br>
-'Dealer' deal 'Hole Cards' starting from left<br>
-Each player clockwise places: 'Fold' / 'Call' / 'Raise'<br>
-At 'Big Blind' 'Dealer' asks 'Option?'<br>
-'Big Blind' may 'Check' (if nobody Raised)<br>
-'Big Blind' may 'Call'  (if somebody Raised)<br>
-'Big Blind' may 'Raise' (if somebody Raised)<br>
-</blockquote>
-
-<ul>
-<li>'Big Blind' = 2 x 'Small Blind'</li>
-<li>'Call' = 'Big Blind'</li>
-</ul>
-
-<h2>Flop</h2>
-<blockquote>
-71.4% of potential cards<br>
-'Dealer' burns top card<br>
-'Dealer' deal 'Flop Community Cards'<br>
-'Small Blind' places: 'Fold' / 'Check' / 'Bet'<br>
-Each player clockwise places: 'Fold' / 'Check' / 'Bet' / 'Call' / 'Raise'<br>
-</blockquote>
-
-<h2>Turn</h2>
-<blockquote>
-14.3% of potential cards<br>
-'Dealer' burns top card<br>
-'Dealer' deal 'Turn Community Card' - 'Fourth Street'<br>
-'Small Blind' places: 'Fold' / 'Check' / 'Bet'<br>
-Each player clockwise places: 'Fold' / 'Check' / 'Bet' / 'Call' / 'Raise'<br>
-</blockquote>
-
-<h2>River</h2>
-<blockquote>
-14.3% of potential cards<br>
-'Dealer' burns top card<br>
-'Dealer' deal 'River Community Card' - 'Fifth Street'<br>
-'Small Blind' places: 'Fold' / 'Check' / 'Bet'<br>
-Each player clockwise places: 'Fold' / 'Check' / 'Bet' / 'Call' / 'Raise'<br>
-</blockquote>
-
-<h2>Showdown</h2>
-<blockquote>
-Show 'Hole Cards'<br>
-The best 'Hand' wins<br>
-</blockquote>
-
-<h3>Raise & Re-raise</h3>
-
-<b>IF</b><br>
-&ensp;  'Player' raises / re-raises<br>
-<b>THEN</b><br>
-&ensp;  All 'Players' starting from his left clockwise must match 'Raise' / 'Re-raise'. <br> Thus the betting stops at 'Player' to the right of the one who made 'Raise' / 'Re-raise'<br>
-<b>ENDIF</b><br>
-<br>
-<b>IF</b><br>
-&ensp;  'Players' >= 3 in 'Hand' ('Game')<br>
-<b>THEN</b><br>
-&ensp;  3-4 'Raise' / 'Re-raise' - allowed<br>
-<b>ELSEIF</b><br>
-&ensp;  'Players' = 2 are in 'Hand' ('Game')<br>
-<b>ELSE</b><br>
-&ensp;  'Raise' / 'Re-raise' - not limited<br>
-<b>ENDIF</b><br>
--->
 
 
 </div>
