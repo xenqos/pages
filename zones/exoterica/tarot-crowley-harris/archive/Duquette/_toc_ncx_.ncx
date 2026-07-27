@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN" "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd"><ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+  <head>
+    <meta name="dtb:uid" content="isbn:9781578632763" />
+    <meta name="dtb:depth" content="1" />
+    <meta name="dtb:totalPageCount" content="356" />
+    <meta name="dtb:maxPageNumber" content="0" />
+  </head>
+  <docTitle>
+    <text>Understanding Aleister Crowley&apos;s Thoth Tarot</text>
+  </docTitle>
+  <docAuthor>
+    <text>Lon Milo Duquette</text>
+  </docAuthor>
+  <navMap>
+    <navPoint id="navpoint1" playOrder="1">
+      <navLabel>
+        <text>Cover Page</text>
+      </navLabel>
+      <content src="cover.xhtml" />
+    </navPoint>
+    <navPoint id="navpoint2" playOrder="2">
+      <navLabel>
+        <text>Title Page</text>
+      </navLabel>
+      <content src="title.xhtml" />
+    </navPoint>
+    <navPoint id="navpoint3" playOrder="3">
+      <navLabel>
+        <text>Copyright Page</text>
+      </navLabel>
+      <content src="copy.xhtml" />
+    </navPoint>
+    <navPoint id="navpoint4" playOrder="4">
+      <navLabel>
+        <text>Dedication Page</text>
+      </navLabel>
+      <content src="ded.xhtml" />
+    </navPoint>
+    <navPoint id="navpoint5" playOrder="5">
+      <navLabel>
+        <text>Contents</text>
+      </navLabel>
+      <content src="toc.xhtml" />
+    </navPoint>
+    <navPoint id="navpoint6" playOrder="6">
+      <navLabel>
+        <text>List of Figures</text>
+      </navLabel>
+      <content src="lof.xhtml" />
+    </navPoint>
+    <navPoint id="navpoint7" playOrder="7">
+      <navLabel>
+        <text>List of Tables</text>
+      </navLabel>
+      <content src="lot.xhtml" />
+    </navPoint>
+    <navPoint id="navpoint8" playOrder="8">
+      <navLabel>
+        <text>Acknowledgments</text>
+      </navLabel>
+      <content src="ack.xhtml" />
+    </navPoint>
+    <navPoint id="navpoint9" playOrder="9">
+      <navLabel>
+        <text>Part One - Little Bits of Things you should Know Before Beginning to Study Aleister Crowley&apos;s Thoth Tarot I</text>
+      </navLabel>
+      <content src="part1.xhtml" />
+      <navPoint id="navpoint10" playOrder="10">
+        <navLabel>
+          <text>Chapter 0 - Introduction: The Book of Thoth—A Magick Book?</text>
+        </navLabel>
+        <content src="chap0.xhtml" />
+      </navPoint>
+      <navPoint id="navpoint11" playOrder="11">
+        <navLabel>
+          <text>Chapter 1 - Little Bits of Things you should Know</text>
+        </navLabel>
+        <content src="chap1.xhtml" />
+      </navPoint>
+      <navPoint id="navpoint12" playOrder="12">
+        <navLabel>
+          <text>Chapter 2 - Aleister Crowley and the Golden Dawn II</text>
+        </navLabel>
+        <content src="chap2.xhtml" />
+      </navPoint>
+      <navPoint id="navpoint13" playOrder="13">
+        <navLabel>
+          <text>Chapter 3 - The Lady and the Beast</text>
+        </navLabel>
+        <content src="chap3.xhtml" />
+      </navPoint>
+      <navPoint id="navpoint14" playOrder="14">
+        <navLabel>
+          <text>Chapter 4 - The Art</text>
+        </navLabel>
+        <content src="chap4.xhtml" />
+      </navPoint>
+      <navPoint id="navpoint15" playOrder="15">
+        <navLabel>
+          <text>Chapter 5 - The Prophet and the Book of the Law</text>
+        </navLabel>
+        <content src="chap5.xhtml" />
+      </navPoint>
+      <navPoint id="navpoint16" playOrder="16">
+        <navLabel>
+          <text>Chapter 6 - The Aeon of Horus</text>
+        </navLabel>
+        <content src="chap6.xhtml" />
+      </navPoint>
+      <navPoint id="navpoint17" playOrder="17">
+        <navLabel>
+          <text>Chapter 7 - The Vision and the Voice</text>
+        </navLabel>
+        <content src="chap7.xhtml" />
+      </navPoint>
+      <navPoint id="navpoint18" playOrder="18">
+        <navLabel>
+          <text>Chapter 8 - Secrets of the Rose Cross Back</text>
+        </navLabel>
+        <content src="chap8.xhtml" />
+      </navPoint>
+      <navPoint id="navpoint19" playOrder="19">
+        <navLabel>
+          <text>Chapter 9 - Secrets of the Tree of Life</text>
+        </navLabel>
+        <content src="chap9.xhtml" />
+      </navPoint>
+      <navPoint id="navpoint20" playOrder="20">
+        <navLabel>
+          <text>Chapter 10 - Worlds of Color</text>
+        </navLabel>
+        <content src="chap10.xhtml" />
+      </navPoint>
+      <navPoint id="navpoint21" playOrder="21">
+        <navLabel>
+          <text>Chapter 11 - The Holy Guardian Angel</text>
+        </navLabel>
+        <content src="chap11.xhtml" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="navpoint22" playOrder="22">
+      <navLabel>
+        <text>Part Two - The Cards</text>
+      </navLabel>
+      <content src="part2.xhtml" />
+      <navPoint id="navpoint23" playOrder="23">
+        <navLabel>
+          <text>Chapter 12 - Introduction to the Cards</text>
+        </navLabel>
+        <content src="chap12.xhtml" />
+      </navPoint>
+      <navPoint id="navpoint24" playOrder="24">
+        <navLabel>
+          <text>Chapter 13 - Introduction to the Major Arcana</text>
+        </navLabel>
+        <content src="chap13.xhtml" />
+      </navPoint>
+      <navPoint id="navpoint25" playOrder="25">
+        <navLabel>
+          <text>Chapter 14 - Atu of Tahuti—The Major Arcana Trumps</text>
+        </navLabel>
+        <content src="chap14.xhtml" />
+        <navPoint id="navpoint26" playOrder="26">
+          <navLabel>
+            <text>Atu 0—The Fool</text>
+          </navLabel>
+          <content src="chap14.xhtml#chap14_sub0" />
+        </navPoint>
+        <navPoint id="navpoint27" playOrder="27">
+          <navLabel>
+            <text>Atu I—The Magus</text>
+          </navLabel>
+          <content src="chap14.xhtml#chap14_sub1" />
+        </navPoint>
+        <navPoint id="navpoint28" playOrder="28">
+          <navLabel>
+            <text>Atu II—The High Priestess</text>
+          </navLabel>
+          <content src="chap14.xhtml#chap14_sub2" />
+        </navPoint>
+        <navPoint id="navpoint29" playOrder="29">
+          <navLabel>
+            <text>Atu III—The Empress</text>
+          </navLabel>
+          <content src="chap14.xhtml#chap14_sub3" />
+        </navPoint>
+        <navPoint id="navpoint30" playOrder="30">
+          <navLabel>
+            <text>Atu IV—The Emperor</text>
+          </navLabel>
+          <content src="chap14.xhtml#chap14_sub4" />
+        </navPoint>
+        <navPoint id="navpoint31" playOrder="31">
+          <navLabel>
+            <text>Atu V—The Hierophant</text>
+          </navLabel>
+          <content src="chap14.xhtml#chap14_sub5" />
+        </navPoint>
+        <navPoint id="navpoint32" playOrder="32">
+          <navLabel>
+            <text>Atu VI—The Lovers</text>
+          </navLabel>
+          <content src="chap14.xhtml#chap14_sub6" />
+        </navPoint>
+        <navPoint id="navpoint33" playOrder="33">
+          <navLabel>
+            <text>Atu VII—The Chariot</text>
+          </navLabel>
+          <content src="chap14.xhtml#chap14_sub7" />
+        </navPoint>
+        <navPoint id="navpoint34" playOrder="34">
+          <navLabel>
+            <text>Atu VIII—Adjustment</text>
+          </navLabel>
+          <content src="chap14.xhtml#chap14_sub8" />
+        </navPoint>
+        <navPoint id="navpoint35" playOrder="35">
+          <navLabel>
+            <text>Atu IX—The Hermit</text>
+          </navLabel>
+          <content src="chap14.xhtml#chap14_sub9" />
+        </navPoint>
+        <navPoint id="navpoint36" playOrder="36">
+          <navLabel>
+            <text>Atu X—Fortune</text>
+          </navLabel>
+          <content src="chap14.xhtml#chap14_sub10" />
+        </navPoint>
+        <navPoint id="navpoint37" playOrder="37">
+          <navLabel>
+            <text>Atu XI—Lust</text>
+          </navLabel>
+          <content src="chap14.xhtml#chap14_sub11" />
+        </navPoint>
+        <navPoint id="navpoint38" playOrder="38">
+          <navLabel>
+            <text>Atu XII—The Hanged Man</text>
+          </navLabel>
+          <content src="chap14.xhtml#chap14_sub12" />
+        </navPoint>
+        <navPoint id="navpoint39" playOrder="39">
+          <navLabel>
+            <text>Atu XIII—Death</text>
+          </navLabel>
+          <content src="chap14.xhtml#chap14_sub13" />
+        </navPoint>
+        <navPoint id="navpoint40" playOrder="40">
+          <navLabel>
+            <text>Atu XIV—Art</text>
+          </navLabel>
+          <content src="chap14.xhtml#chap14_sub14" />
+        </navPoint>
+        <navPoint id="navpoint41" playOrder="41">
+          <navLabel>
+            <text>Atu XV—The Devil</text>
+          </navLabel>
+          <content src="chap14.xhtml#chap14_sub15" />
+        </navPoint>
+        <navPoint id="navpoint42" playOrder="42">
+          <navLabel>
+            <text>Atu XVI—The Tower</text>
+          </navLabel>
+          <content src="chap14.xhtml#chap14_sub16" />
+        </navPoint>
+        <navPoint id="navpoint43" playOrder="43">
+          <navLabel>
+            <text>Atu XVII—The Star</text>
+          </navLabel>
+          <content src="chap14.xhtml#chap14_sub17" />
+        </navPoint>
+        <navPoint id="navpoint44" playOrder="44">
+          <navLabel>
+            <text>Atu XVIII—The Moon</text>
+          </navLabel>
+          <content src="chap14.xhtml#chap14_sub18" />
+        </navPoint>
+        <navPoint id="navpoint45" playOrder="45">
+          <navLabel>
+            <text>Atu XIX—The Sun</text>
+          </navLabel>
+          <content src="chap14.xhtml#chap14_sub19" />
+        </navPoint>
+        <navPoint id="navpoint46" playOrder="46">
+          <navLabel>
+            <text>Atu XX—Aeon</text>
+          </navLabel>
+          <content src="chap14.xhtml#chap14_sub20" />
+        </navPoint>
+        <navPoint id="navpoint47" playOrder="47">
+          <navLabel>
+            <text>Atu XXI—The Universe</text>
+          </navLabel>
+          <content src="chap14.xhtml#chap14_sub21" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navpoint48" playOrder="48">
+        <navLabel>
+          <text>Chapter 15 - The Minor Arcana</text>
+        </navLabel>
+        <content src="chap15.xhtml" />
+      </navPoint>
+      <navPoint id="navpoint49" playOrder="49">
+        <navLabel>
+          <text>Chapter 16 - The Spirit of the Aces</text>
+        </navLabel>
+        <content src="chap16.xhtml" />
+      </navPoint>
+      <navPoint id="navpoint50" playOrder="50">
+        <navLabel>
+          <text>Chapter 17 - The Four Aces</text>
+        </navLabel>
+        <content src="chap17.xhtml" />
+        <navPoint id="navpoint51" playOrder="51">
+          <navLabel>
+            <text>Ace of Wand</text>
+          </navLabel>
+          <content src="chap17.xhtml#chap17_sub1" />
+        </navPoint>
+        <navPoint id="navpoint52" playOrder="52">
+          <navLabel>
+            <text>Ace of Cups</text>
+          </navLabel>
+          <content src="chap17.xhtml#chap17_sub2" />
+        </navPoint>
+        <navPoint id="navpoint53" playOrder="53">
+          <navLabel>
+            <text>Ace of Sword</text>
+          </navLabel>
+          <content src="chap17.xhtml#chap17_sub3" />
+        </navPoint>
+        <navPoint id="navpoint54" playOrder="54">
+          <navLabel>
+            <text>Ace of Disks</text>
+          </navLabel>
+          <content src="chap17.xhtml#chap17_sub4" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navpoint55" playOrder="55">
+        <navLabel>
+          <text>Chapter 18 - The Crazy Mixed-Up World of Court Cards</text>
+        </navLabel>
+        <content src="chap18.xhtml" />
+        <navPoint id="navpoint56" playOrder="56">
+          <navLabel>
+            <text>Knight of Wand</text>
+          </navLabel>
+          <content src="chap18.xhtml#chap18_sub1" />
+        </navPoint>
+        <navPoint id="navpoint57" playOrder="57">
+          <navLabel>
+            <text>Queen of Wand</text>
+          </navLabel>
+          <content src="chap18.xhtml#chap18_sub2" />
+        </navPoint>
+        <navPoint id="navpoint58" playOrder="58">
+          <navLabel>
+            <text>Prince of Wand</text>
+          </navLabel>
+          <content src="chap18.xhtml#chap18_sub3" />
+        </navPoint>
+        <navPoint id="navpoint59" playOrder="59">
+          <navLabel>
+            <text>Princes of Wand</text>
+          </navLabel>
+          <content src="chap18.xhtml#chap18_sub4" />
+        </navPoint>
+        <navPoint id="navpoint60" playOrder="60">
+          <navLabel>
+            <text>Knight of Cups</text>
+          </navLabel>
+          <content src="chap18.xhtml#chap18_sub5" />
+        </navPoint>
+        <navPoint id="navpoint61" playOrder="61">
+          <navLabel>
+            <text>Queen of Cups</text>
+          </navLabel>
+          <content src="chap18.xhtml#chap18_sub6" />
+        </navPoint>
+        <navPoint id="navpoint62" playOrder="62">
+          <navLabel>
+            <text>Prince of Cups</text>
+          </navLabel>
+          <content src="chap18.xhtml#chap18_sub7" />
+        </navPoint>
+        <navPoint id="navpoint63" playOrder="63">
+          <navLabel>
+            <text>Princes of Cups</text>
+          </navLabel>
+          <content src="chap18.xhtml#chap18_sub8" />
+        </navPoint>
+        <navPoint id="navpoint64" playOrder="64">
+          <navLabel>
+            <text>Knight of Sword</text>
+          </navLabel>
+          <content src="chap18.xhtml#chap18_sub9" />
+        </navPoint>
+        <navPoint id="navpoint65" playOrder="65">
+          <navLabel>
+            <text>Queen of Sword</text>
+          </navLabel>
+          <content src="chap18.xhtml#chap18_sub10" />
+        </navPoint>
+        <navPoint id="navpoint66" playOrder="66">
+          <navLabel>
+            <text>Prince of Sword</text>
+          </navLabel>
+          <content src="chap18.xhtml#chap18_sub11" />
+        </navPoint>
+        <navPoint id="navpoint67" playOrder="67">
+          <navLabel>
+            <text>Princes of Swords</text>
+          </navLabel>
+          <content src="chap18.xhtml#chap18_sub12" />
+        </navPoint>
+        <navPoint id="navpoint68" playOrder="68">
+          <navLabel>
+            <text>Knight of Disks</text>
+          </navLabel>
+          <content src="chap18.xhtml#chap18_sub13" />
+        </navPoint>
+        <navPoint id="navpoint69" playOrder="69">
+          <navLabel>
+            <text>Queen of Disks</text>
+          </navLabel>
+          <content src="chap18.xhtml#chap18_sub14" />
+        </navPoint>
+        <navPoint id="navpoint70" playOrder="70">
+          <navLabel>
+            <text>Prince of Disks</text>
+          </navLabel>
+          <content src="chap18.xhtml#chap18_sub15" />
+        </navPoint>
+        <navPoint id="navpoint71" playOrder="71">
+          <navLabel>
+            <text>Princes of Disks</text>
+          </navLabel>
+          <content src="chap18.xhtml#chap18_sub16" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navpoint72" playOrder="72">
+        <navLabel>
+          <text>Chapter 19 - The Small Cards</text>
+        </navLabel>
+        <content src="chap19.xhtml" />
+        <navPoint id="navpoint73" playOrder="73">
+          <navLabel>
+            <text>Wand</text>
+          </navLabel>
+          <content src="chap19.xhtml#chap19_sub1" />
+        </navPoint>
+        <navPoint id="navpoint74" playOrder="74">
+          <navLabel>
+            <text>Cups</text>
+          </navLabel>
+          <content src="chap19.xhtml#chap19_sub2" />
+        </navPoint>
+        <navPoint id="navpoint75" playOrder="75">
+          <navLabel>
+            <text>Sword</text>
+          </navLabel>
+          <content src="chap19.xhtml#chap19_sub3" />
+        </navPoint>
+        <navPoint id="navpoint76" playOrder="76">
+          <navLabel>
+            <text>Disks</text>
+          </navLabel>
+          <content src="chap19.xhtml#chap19_sub4" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navpoint77" playOrder="77">
+        <navLabel>
+          <text>Chapter 20 - Method of Divination and the Meanings of the Cards</text>
+        </navLabel>
+        <content src="chap20.xhtml" />
+      </navPoint>
+      <navPoint id="navpoint78" playOrder="78">
+        <navLabel>
+          <text>Chapter 21 - Glossary of Thelemic and Tarot Terms</text>
+        </navLabel>
+        <content src="chap21.xhtml" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="navpoint79" playOrder="79">
+      <navLabel>
+        <text>Notes</text>
+      </navLabel>
+      <content src="notes.xhtml" />
+    </navPoint>
+    <navPoint id="navpoint80" playOrder="80">
+      <navLabel>
+        <text>Bibliography</text>
+      </navLabel>
+      <content src="bib.xhtml" />
+    </navPoint>
+    <navPoint id="navpoint81" playOrder="81">
+      <navLabel>
+        <text>Permissions</text>
+      </navLabel>
+      <content src="permission.xhtml" />
+    </navPoint>
+    <navPoint id="navpoint82" playOrder="82">
+      <navLabel>
+        <text>Back Cover</text>
+      </navLabel>
+      <content src="bcover.xhtml" />
+    </navPoint>
+  </navMap>
+</ncx>

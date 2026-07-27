@@ -14,8 +14,6 @@
 
     Предлоги (Prépositions): Употребление предлогов места (à, en, au, aux с странами и городами; dans, sur, sous, chez), предлогов времени (depuis, pendant, pour, en, dans).
 
-    Союзы и коннекторы (Conjonctions / Connecteurs logiques): Базовые связки логики речи (car, parce que, donc, mais, ou, et, comme, bien que).
-
 3. Синтаксис и отрицание (Syntaxe & Négation)
 
     Структура отрицания: Дополнение к простым формам — сложные отрицательные конструкции (ne... jamais, ne... plus, ne... rien, ne... personne, ne... que).
