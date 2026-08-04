@@ -1,8 +1,6 @@
 #-------------------------------------------------------------------------------
 #  Exoterica
 #-------------------------------------------------------------------------------
-exoterica/tarot-crowley-harris   ;  0  ;  Tarot Crowley Harris
-exoterica/tarot-waite-smith      ;  0  ;  Tarot Waite Smith
 exoterica/bible-en               ;  0  ;  King James Bible
 exoterica/bible-fr               ;  0  ;  La Bible du Port-Royal (de Sacy)
 exoterica/bhagavad-gita          ;  0  ;  Бхагавад-гита
@@ -10,7 +8,7 @@ exoterica/daodejing              ;  0  ;  Дао Дэ Цзин
 exoterica/stratagems             ;  0  ;  Стратагемы
 exoterica/taiji-fuzhongwen       ;  0  ;  Тай Чи - Fu Zhong Wen
 exoterica/taiji-moylinshin       ;  0  ;  Тай Чи - Moy Lin Shin
-exoterica/rimes-mystiques   ;  0  ;  Les Rimes mystiques
+exoterica/rimes-mystiques        ;  1  ;  Les Rimes mystiques
 #-------------------------------------------------------------------------------
 #  Linguistics - Български
 #-------------------------------------------------------------------------------
