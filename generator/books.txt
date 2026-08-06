@@ -1,16 +1,27 @@
 #-------------------------------------------------------------------------------
+#  Dharma
+#-------------------------------------------------------------------------------
+dharma/principles                ;  0  ;  Принципы
+dharma/questions                 ;  0  ;  Вопросы
+dharma/kriya                     ;  0  ;  Крия
+dharma/yoga-sutra                ;  0  ;  Йога-сутры
+dharma/sankhya-karika            ;  0  ;  Санкхья-карика
+dharma/mantra                    ;  0  ;  Мантры
+dharma/samhita                   ;  0  ;  Самхиты
+dharma/upanishad                 ;  0  ;  Упанишады
+dharma/bhagavad-gita             ;  0  ;  Бхагавад-гита
+#-------------------------------------------------------------------------------
+#  Dao
+#-------------------------------------------------------------------------------
+dao/daodejing                    ;  0  ;  Дао Дэ Цзин
+dao/stratagems                   ;  0  ;  Стратагемы
+dao/taiji-fuzhongwen             ;  0  ;  Тай Чи - Fu Zhong Wen
+dao/taiji-moylinshin             ;  0  ;  Тай Чи - Moy Lin Shin
+#-------------------------------------------------------------------------------
 #  Exoterica
 #-------------------------------------------------------------------------------
-exoterica/tarot-crowley-harris   ;  0  ;  Tarot Crowley Harris
-exoterica/tarot-waite-smith      ;  0  ;  Tarot Waite Smith
 exoterica/bible-en               ;  0  ;  King James Bible
 exoterica/bible-fr               ;  0  ;  La Bible du Port-Royal (de Sacy)
-exoterica/bhagavad-gita          ;  0  ;  Бхагавад-гита
-exoterica/daodejing              ;  0  ;  Дао Дэ Цзин
-exoterica/stratagems             ;  0  ;  Стратагемы
-exoterica/taiji-fuzhongwen       ;  0  ;  Тай Чи - Fu Zhong Wen
-exoterica/taiji-moylinshin       ;  0  ;  Тай Чи - Moy Lin Shin
-exoterica/rimes-mystiques        ;  1  ;  Les Rimes mystiques
 #-------------------------------------------------------------------------------
 #  Linguistics - Български
 #-------------------------------------------------------------------------------
@@ -49,6 +60,7 @@ linguistics/fr-mots-frequents    ;  0  ;  Mots fréquents
 linguistics/fr-expressions       ;  0  ;  Expressions
 linguistics/fr-phrases-cliches   ;  0  ;  Phrases cliches
 linguistics/fr-conversations     ;  0  ;  Conversations
+linguistics/rimes-mystiques      ;  1  ;  Les Rimes mystiques
 #-------------------------------------------------------------------------------
 #  Poker
 #-------------------------------------------------------------------------------
