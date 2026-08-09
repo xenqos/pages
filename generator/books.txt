@@ -1,15 +1,14 @@
 #-------------------------------------------------------------------------------
-#  Dharma
+#  Yoga
 #-------------------------------------------------------------------------------
-dharma/principles                ;  0  ;  Принципы
-dharma/questions                 ;  0  ;  Вопросы
-dharma/kriya                     ;  0  ;  Крия
-dharma/yoga-sutra                ;  0  ;  Йога-сутры
-dharma/sankhya-karika            ;  0  ;  Санкхья-карика
-dharma/mantra                    ;  0  ;  Мантры
-dharma/samhita                   ;  0  ;  Самхиты
-dharma/upanishad                 ;  0  ;  Упанишады
-dharma/bhagavad-gita             ;  0  ;  Бхагавад-гита
+yoga/yoga-sutra                  ;  1  ;  Йога-сутры
+yoga/sankhya-karika              ;  1  ;  Санкхья-карика
+yoga/principles                  ;  0  ;  Принципы
+yoga/questions                   ;  0  ;  Вопросы
+yoga/kriya                       ;  0  ;  Крия
+yoga/mantra                      ;  0  ;  Мантры
+yoga/samhita                     ;  0  ;  Самхиты
+yoga/upanishad                   ;  0  ;  Упанишады
 #-------------------------------------------------------------------------------
 #  Dao
 #-------------------------------------------------------------------------------
@@ -60,7 +59,7 @@ linguistics/fr-mots-frequents    ;  0  ;  Mots fréquents
 linguistics/fr-expressions       ;  0  ;  Expressions
 linguistics/fr-phrases-cliches   ;  0  ;  Phrases cliches
 linguistics/fr-conversations     ;  0  ;  Conversations
-linguistics/rimes-mystiques      ;  1  ;  Les Rimes mystiques
+linguistics/rimes-mystiques      ;  0  ;  Les Rimes mystiques
 #-------------------------------------------------------------------------------
 #  Poker
 #-------------------------------------------------------------------------------
