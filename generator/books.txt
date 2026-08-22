@@ -5,6 +5,13 @@ yoga/yoga-sutra                  ;  1  ;  Йога-сутры
 yoga/sankhya-karika              ;  0  ;  Санкхья-карика
 yoga/kriya                       ;  0  ;  Крия
 #-------------------------------------------------------------------------------
+#  Exoterica
+#-------------------------------------------------------------------------------
+exoterica/tarot-crowley-harris   ;  0  ;  Tarot Crowley Harris
+exoterica/tarot-waite-smith      ;  0  ;  Tarot Waite Smith
+exoterica/bible-en               ;  0  ;  King James Bible
+exoterica/bible-fr               ;  0  ;  La Bible du Port-Royal (de Sacy)
+#-------------------------------------------------------------------------------
 #  Dao
 #-------------------------------------------------------------------------------
 dao/daodejing                    ;  0  ;  Дао Дэ Цзин

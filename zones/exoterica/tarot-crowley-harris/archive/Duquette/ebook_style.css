@@ -1,0 +1,515 @@
+body {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: justify;
+  background-color: #ffffff;
+}
+.body-text {
+  margin: 0px 0px 0px 0px;
+  text-indent: 0px;
+}
+.body-text1 {
+  margin: 15px 0px 0px 0px;
+  text-indent: 0px;
+}
+.indent {
+  margin: 0px 0px 0px 0px;
+  text-indent: 30px;
+}
+.indent1 {
+  margin: 20px 0px 0px 0px;
+  text-indent: 30px;
+}
+.chnum {
+  margin: 0px 0px 0px 0px;
+  text-align: center;
+  text-indent: 0px;
+  font-size: 150%;
+}
+.chtitle {
+  margin: 10px 0px 60px 0px;
+  text-align: center;
+  text-indent: 0px;
+  font-weight: bold;
+  font-size: 140%;
+}
+.author {
+  margin: 10px 0px 60px 0px;
+  text-align: left;
+  text-indent: 0px;
+  font-weight: bold;
+  font-size: 110%;
+}
+.subhead {
+  margin: 30px 0px 5px 0px;
+  text-indent: 0px;
+  font-size: 130%;
+  font-weight: bold;
+}
+.subhead1 {
+  margin: 15px 0px 15px 0px;
+  text-indent: 0px;
+  text-align: left;
+  font-size: 110%;
+}
+.img {
+  margin: 20px 0px 20px 0px;
+  text-align: center;
+  text-indent: 0px;
+}
+.center {
+  margin: 0px 0px 0px 0px;
+  text-align: center;
+  text-indent: 0px;
+}
+.epi {
+  margin: 0px 0px 0px 30px;
+  font-size: 85%;
+  text-indent: 0px;
+}
+.epi1 {
+  margin: 0px 0px 20px 30px;
+  text-indent: 20px;
+  font-size: 85%;
+}
+.epi2 {
+  margin: 0px 0px 20px 0px;
+  text-indent: 0px;
+  font-size: 85%;
+  text-align: right;
+}
+.epiv {
+  margin: 0px 0px 0px 0px;
+  text-indent: 0px;
+  text-align: right;
+}
+.tcaptionv {
+  margin: 15px 0px 0px 0px;
+  text-indent: 0px;
+  text-align: center;
+}
+.fcaptionv {
+  margin: 5px 0px 20px 0px;
+  text-indent: 0px;
+  font-size: 85%;
+  text-align: center;
+}
+.blockquote {
+  margin: 20px 0px 20px 30px;
+  text-indent: 0px;
+}
+.blockquote-ind {
+  margin: -20px 0px 20px 30px;
+  text-indent: 20px;
+}
+.blockquote-indv {
+  margin: -20px 30px 20px 30px;
+  text-indent: 20px;
+}
+.subv {
+  margin: -20px 0px 0px 0px;
+  text-indent: 0px;
+  text-align: center;
+  font-size: 130%;
+  font-weight: bold;
+}
+.subv1 {
+  margin: 0px 0px 0px 0px;
+  text-indent: 0px;
+  text-align: center;
+}
+.blockv {
+  margin: 0px 30px 20px 30px;
+  text-indent: 0px;
+}
+.notsv {
+  margin: 0px 0px 0px 0px;
+  text-indent: 0px;
+  font-size: 85%;
+}
+.subhead2 {
+  margin: 15px 0px 5px 0px;
+  text-indent: 0px;
+  text-align: left;
+  font-size: 130%;
+  font-weight: bold;
+}
+.copy {
+  margin: 20px 0px 0px 0px;
+  text-indent: 0px;
+  font-size: 85%;
+}
+.copy1 {
+  margin: 0px 0px 0px 0px;
+  text-indent: 20px;
+  font-size: 85%;
+}
+.copy2 {
+  margin: 0px 0px 0px 40px;
+  text-indent: 0px;
+  font-size: 85%;
+}
+.copy3 {
+  margin: 0px 0px 0px 40px;
+  text-indent: 0px;
+  font-size: 85%;
+  text-align: right;
+}
+.copy4 {
+  margin: 0px 0px 0px 20px;
+  text-indent: 0px;
+  font-size: 85%;
+}
+.body-texth {
+  margin: 100px 0px 0px 0px;
+  text-indent: 0px;
+}
+.chtitleh {
+  margin: 10px 0px 0px 0px;
+  text-align: center;
+  text-indent: 0px;
+  font-size: 150%;
+}
+.ded {
+  margin: 120px 0px 0px 0px;
+  text-indent: 0px;
+  text-align: center;
+  font-size: 90%;
+}
+.imgh {
+  margin: 10px 0px 90px 0px;
+  text-align: center;
+  text-indent: 0px;
+}
+.figure {
+  margin: 0px 0px 0px 70px;
+  text-indent: -70px;
+  padding-left: 10px;
+}
+.figure1 {
+  margin: 0px 0px 0px 86px;
+  text-indent: -86px;
+}
+.tab {
+  margin: 0px 0px 0px 70px;
+  text-indent: -70px;
+  padding-left: 10px;
+}
+.tab1 {
+  margin: 0px 0px 0px 85px;
+  text-indent: -85px;
+}
+.subheadh {
+  margin: 50px 0px 5px 0px;
+  text-indent: 0px;
+  font-size: 130%;
+  font-weight: bold;
+}
+.note {
+  margin: 0px 0px 0px 20px;
+  text-indent: -20px;
+  font-size: 85%;
+  padding-left: 15px;
+}
+.note1 {
+  margin: 0px 0px 0px 30px;
+  text-indent: -30px;
+  font-size: 85%;
+  padding-left: 10px;
+}
+.note2 {
+  margin: 0px 0px 0px 38px;
+  text-indent: -38px;
+  font-size: 85%;
+  padding-left: 5px;
+}
+.part {
+  margin: 60px 80px 10px 80px;
+  text-indent: 0px;
+  text-align: center;
+  border-bottom: 1px solid;
+  padding: 0px 0px 10px 0px;
+  font-size: 160%;
+}
+.part1 {
+  margin: 30px 0px 0px 0px;
+  text-indent: 0px;
+  text-align: center;
+  font-size: 170%;
+}
+.pre {
+  margin: 20px 0px 0px 0px;
+  text-indent: 0px;
+  font-size: 85%;
+}
+.bib {
+  margin: 0px 0px 0px 20px;
+  text-indent: -20px;
+  font-size: 85%;
+}
+.toc {
+  margin: 20px 0px 0px 0px;
+  text-indent: 0px;
+  text-align: center;
+}
+.toc1 {
+  margin: 40px 0px 0px 0px;
+  text-indent: 0px;
+  text-align: center;
+}
+.toc2 {
+  margin: 0px 50px 10px 50px;
+  text-indent: 0px;
+  border-bottom: 1px solid;
+  padding: 0px 0px 10px 0px;
+}
+.toc3 {
+  margin: 20px 0px 0px 90px;
+  text-indent: -90px;
+  padding-left: 5px;
+}
+.toc4 {
+  margin: 20px 0px 0px 95px;
+  text-indent: -95px;
+}
+.toc5 {
+  margin: 40px 50px 10px 50px;
+  text-indent: 0px;
+  border-bottom: 1px solid;
+  padding: 0px 0px 10px 0px;
+  text-align: center;
+}
+.toc6 {
+  margin: 20px 0px 0px 0px;
+  text-indent: 0px;
+  padding-left: 110px;
+}
+.toc7 {
+  margin: 0px 0px 0px 0px;
+  text-indent: 0px;
+  padding-left: 110px;
+}
+.epia {
+  margin: 20px 0px 0px 30px;
+  text-indent: 0px;
+}
+.body-texth1 {
+  margin: 10px 0px 0px 0px;
+  text-indent: 0px;
+}
+.indenth {
+  margin: 0px 0px 0px 30px;
+  text-indent: -30px;
+  padding-left: 30px;
+}
+.list {
+  margin: 10px 0px 10px -10px;
+  text-indent: 0px;
+}
+.epi1a {
+  margin: 0px 0px 0px 30px;
+  text-indent: 20px;
+  font-size: 85%;
+}
+.listh {
+  margin: 10px 0px 10px 25px;
+  text-indent: -25px;
+}
+.centerch {
+  margin: 10px 0px 0px 0px;
+  text-indent: 0px;
+  text-align: center;
+}
+.dropcapch {
+  border-bottom: 1px solid;
+}
+.tcaptionch1 {
+  margin: 0px 0px 0px 0px;
+  text-indent: 0px;
+  text-align: center;
+  font-size: 85%;
+}
+.body-textch {
+  margin: 10px 0px 0px 0px;
+  text-indent: 0px;
+}
+.blockquotech {
+  margin: 20px 30px 0px 30px;
+  text-indent: 0px;
+}
+.rightch {
+  margin: -20px 0px 0px 0px;
+  text-indent: 0px;
+  text-align: right;
+}
+.indentch {
+  margin: 20px 0px 0px 0px;
+  text-indent: -0px;
+  padding-left: 30px;
+}
+.epik {
+  margin: 10px 0px 20px 0px;
+  font-size: 85%;
+}
+.epik1 {
+  margin: 10px 0px 0px 0px;
+  font-size: 85%;
+}
+.subheadk {
+  margin: 20px 40px -10px 30px;
+  text-indent: 0px;
+  font-size: 120%;
+}
+.blockquotek {
+  margin: 20px 0px 0px 30px;
+  text-indent: 0px;
+}
+.list1 {
+  margin: 10px 0px 0px 20px;
+  text-indent: -20px;
+}
+.list2 {
+  margin: 0px 0px 0px 20px;
+  text-indent: -20px;
+}
+.list3 {
+  margin: 0px 0px 20px 20px;
+  text-indent: -20px;
+}
+.body-textk {
+  margin: 20px 0px 0px 0px;
+  text-indent: 0px;
+}
+.subheads {
+  margin: 20px 0px 10px 0px;
+  text-indent: 0px;
+  text-align: center;
+  font-size: 100%;
+}
+.epir {
+  margin: 10px 0px 10px 20px;
+  font-size: 85%;
+  text-indent: 0px;
+  text-align: center;
+}
+.blockquote-indr {
+  margin: -20px 0px 20px 30px;
+  text-indent: 20px;
+}
+.tcaptionr {
+  margin: 15px 0px 0px 0px;
+  text-indent: 0px;
+  text-align: center;
+}
+.fcaptionr {
+  margin: 5px 0px 20px 0px;
+  text-indent: 0px;
+  text-align: center;
+}
+.title {
+  margin: 0px 0px 0px 0px;
+  text-align: center;
+  text-indent: 0px;
+  font-size: 160%;
+}
+.title1 {
+  margin: 0px 0px 50px 0px;
+  text-align: center;
+  text-indent: 0px;
+  font-size: 360%;
+}
+.title3 {
+  margin: 0px 0px 100px 0px;
+  text-align: center;
+  text-indent: 0px;
+  font-size: 160%;
+}
+.liv {
+  margin: 0px 0px 0px -10px;
+  text-indent: 0px;
+}
+.sbv {
+  margin: 20px 0px 0px 0px;
+  text-align: center;
+  text-indent: 0px;
+}
+.bq-indbv {
+  margin: 20px 0px 20px 30px;
+  text-indent: 45px;
+}
+.bqbv1 {
+  margin: 0px 20px 20px 30px;
+  text-indent: 0px;
+}
+.imgt {
+  text-align: center;
+  margin: 170px 0px 0px 0px;
+}
+.toc0 {
+  margin: 20px 0px 0px 120px;
+  text-indent: -120px;
+}
+.imgs {
+  margin: -50px 0px 120px 0px;
+  text-align: center;
+  text-indent: 0px;
+}
+.fcaptions {
+  margin: 5px 0px 20px 0px;
+  text-indent: 0px;
+  font-size: 85%;
+  text-align: center;
+}
+.subheadm {
+  margin: 15px 0px 15px 0px;
+  text-indent: 0px;
+  text-align: center;
+  font-size: 110%;
+}
+.listsv {
+  margin: 0px 0px 0px 15px;
+  text-indent: 0px;
+}
+.listsv1 {
+  margin: 0px 0px 0px -15px;
+  text-indent: 0px;
+  padding-left: 5px;
+}
+.body-textsv {
+  margin: 0px 0px 0px -20px;
+  text-indent: 0px;
+}
+.subheadsv {
+  margin: 10px 0px 15px 0px;
+  text-indent: 0px;
+  text-align: center;
+  font-size: 110%;
+}
+.indentsv {
+  margin: 0px 0px 0px 0px;
+  text-indent: 0px;
+  padding-left: 30px;
+}
+.tcaptionm {
+  margin: 15px 0px 0px 0px;
+  text-indent: 0px;
+  text-align: center;
+  font-size: 85%;
+}
+.indent2 {
+  margin: 0px 0px 0px 0px;
+  text-indent: 50px;
+}
+.epi21 {
+  margin: -20px 0px 20px 0px;
+  text-indent: 0px;
+  text-align: right;
+}
+.fcaption {
+  margin: 5px 0px 20px 0px;
+  text-indent: 0px;
+  font-size: 85%;
+  text-align: center;
+}
