@@ -1,0 +1,30 @@
+# 75. Loss By Greediness
+
+[|-
+||%[t1|七]%[t2|十]%[t3|五]%[t1|章]|qī shí wǔ zhāng|
+||%[t1|貪]%[t3|損]|tān sǔn|
+||||
+|%[zin|01]|%[t2|民]%[t1|之]%[t1|飢]|mín zhī jī|
+|%[zin|02]|%[t3|以]%[t2|其]%[t3|上]%[t2|食]%[t4|稅]%[t1|之]%[t1|多]|yǐ qí shǎng shí shuì zhī duō|
+|%[zin|03]|%[t4|是]%[t3|以]%[t1|飢]|shì yǐ jī|
+|%[zin|04]|%[t2|民]%[t1|之]%[t2|難]%[t4|治]|mín zhī nán zhì|
+|%[zin|05]|%[t3|以]%[t2|其]%[t3|上]%[t1|之]%[t3|有]%[t2|為]|yǐ qí shǎng zhī yǒu wéi|
+|%[zin|06]|%[t4|是]%[t3|以]%[t2|難]%[t4|治]|shì yǐ nán zhì|
+|%[zin|07]|%[t2|民]%[t1|之]%[t1|輕]%[t3|死]|mín zhī qīng sǐ|
+|%[zin|08]|%[t3|以]%[t2|其]%[t2|求]%[t1|生]%[t1|之]%[t4|厚]|yǐ qí qiú shēng zhī hòu|
+|%[zin|09]|%[t4|是]%[t3|以]%[t1|輕]%[t3|死]|shì yǐ qīng sǐ|
+|%[zin|10]|%[t1|夫]%[t2|唯]%[t2|無]%[t3|以]%[t1|生]%[t2|為]%[t3|者]|fū wéi wú yǐ shēng wéi zhě|
+|%[zin|11]|%[t4|是]%[t2|賢]%[t2|於]%[t4|貴]%[t1|生]|shì xián yú guì shēng|
+|]
+
+The people's hunger
+Is due to the excess of their ruler's taxation
+So they starve
+The people's difficulty in being governed
+Is due to the meddling of their ruler
+So they are difficult to govern
+The people's disregard for death
+Is due to the glut in their ruler's pursuit of life
+So they disregard death
+Therefore those who do not strive for living
+Are better than those who value living
