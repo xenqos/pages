@@ -278,9 +278,13 @@ sub get_markdown
   # Indentation
   #---------------------------------------------------------
 
-  $source_content =~ s/^=\+\+\+ (.*)$/&ensp;&ensp;&ensp;$1/mg;
-  $source_content =~ s/^=\+\+ (.*)$/&ensp;&ensp;$1/mg;
-  $source_content =~ s/^=\+ (.*)$/&ensp;$1/mg;
+#  $source_content =~ s/^=\+\+\+ (.*)$/&ensp;&ensp;&ensp;$1/mg;
+#  $source_content =~ s/^=\+\+ (.*)$/&ensp;&ensp;$1/mg;
+#  $source_content =~ s/^=\+ (.*)$/&ensp;$1/mg;
+
+  $source_content =~ s/^>>> (.*)$/&ensp;&ensp;&ensp;$1/mg;
+  $source_content =~ s/^>> (.*)$/&ensp;&ensp;$1/mg;
+  $source_content =~ s/^> (.*)$/&ensp;$1/mg;
 
   #---------------------------------------------------------
   # Linguistics Styles
