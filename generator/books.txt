@@ -4,16 +4,17 @@
 
 buddhism/teaching                ;  1  ; Учение
 buddhism/texts                   ;  1  ; Тексты
+buddhism/kriya                   ;  1  ; Крия
 
 #-------------------------------------------------------------------------------
 #  Daoism
 #-------------------------------------------------------------------------------
 
-# daoism/dao-de-jing             ;  0  ;  Дао Дэ Цзин
+daoism/dao-de-jing               ;  0  ;  Дао Дэ Цзин
 daoism/yi-jing                   ;  0  ;  И Цзин
-# daoism/stratagems              ;  0  ;  Стратагемы
-# daoism/tai-ji-fuzhongwen       ;  0  ;  Тай Чи - Fu Zhong Wen
-# daoism/tai-ji-moylinshin       ;  0  ;  Тай Чи - Moy Lin Shin
+daoism/stratagems                ;  0  ;  Стратагемы
+daoism/tai-ji-fuzhongwen         ;  0  ;  Тай Чи - Fu Zhong Wen
+daoism/tai-ji-moylinshin         ;  0  ;  Тай Чи - Moy Lin Shin
 
 #-------------------------------------------------------------------------------
 #  Linguistics - Български
@@ -58,6 +59,12 @@ linguistics/fr-mots-frequents    ;  0  ;  Mots fréquents
 linguistics/fr-expressions       ;  0  ;  Expressions
 linguistics/fr-phrases-cliches   ;  0  ;  Phrases cliches
 linguistics/fr-conversations     ;  0  ;  Conversations
+linguistics/rimes-mystiques      ;  0  ;  Les Rimes mystiques
+
+#-------------------------------------------------------------------------------
+#  Linguistics - Графомания
+#-------------------------------------------------------------------------------
+
 linguistics/rimes-mystiques      ;  0  ;  Les Rimes mystiques
 
 #-------------------------------------------------------------------------------
