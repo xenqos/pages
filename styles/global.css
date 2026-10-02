@@ -277,6 +277,7 @@ body
   text-align:           left;
 }
 
+/*
 #idTopbarNumber
 {
   color:                #555555;
@@ -289,6 +290,7 @@ body
   text-align:           left;
   width:                10.000rem;
 }
+*/
 
 #idTopbarName
 {
@@ -962,6 +964,7 @@ span[class^=clIcon]
 
 /*-----------------------------------------------------------------------------------------------*/
 
+/*
 span[class^=clNav]
 {
   background-size:      cover;
@@ -976,6 +979,26 @@ span[class^=clNav]
   background-position:  center center;
   background-repeat:    no-repeat;
   background-size:      1.100rem 1.100rem;
+  position:             relative;
+  top:                  0.150rem;
+  touch-action:         none;
+}
+*/
+
+span[class^=clNav]
+{
+  background-size:      cover;
+  cursor:               pointer;
+  display:              inline-block;
+  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
+  padding:              0.000rem 0.700rem 0.000rem 0.700rem;
+  height:               1.000rem;
+  width:                1.000rem;
+  min-width:            1.000rem;
+  max-width:            1.000rem;
+  background-position:  center center;
+  background-repeat:    no-repeat;
+  background-size:      1.000rem 1.000rem;
   position:             relative;
   top:                  0.150rem;
   touch-action:         none;
