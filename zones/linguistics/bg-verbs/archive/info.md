@@ -1,9 +1,0 @@
-https://www.fromtexttospeech.com/
-
-https://new.text-to-speech.online/
-https://speechsynthesis.online/
-
-en-CA-ClaraNeural rate="-30%" volume="0.0dB"
-de-DE-KatjaNeural rate="-30%" volume="0.0dB" ( 6db = 2times )
-fr-FR-DeniseNeural rate="-10%" volume="0.0dB"
-bg-BG-KalinaNeural rate="100%" volume="0.0dB"
