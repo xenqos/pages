@@ -5,7 +5,7 @@
 /*--------------------------------------------------------------------------------------------------*/
 
 var strHiddenColor             = '#e0e0e0';
-var strHiddenBackgroundColor   = '#e0e0e0';
+var strHiddenBackgroundColor   = 'z';
 var strRevealedColor           = '#000000';
 var strRevealedBackgroundColor = '#ffffff';
 
@@ -111,9 +111,9 @@ function fncSubtraction_02()
 
 function fncMultiplication_01()
 {
-  const spanElementX = document.getElementById('id-М01-X');
-  const spanElementY = document.getElementById('id-М01-Y');
-  const spanElementZ = document.getElementById('id-М01-Z');
+  const spanElementX = document.getElementById('id-M01-X');
+  const spanElementY = document.getElementById('id-M01-Y');
+  const spanElementZ = document.getElementById('id-M01-Z');
 
   spanElementZ.style.color           = strHiddenColor;
   spanElementZ.style.backgroundColor = strHiddenBackgroundColor;
