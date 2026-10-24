@@ -1,0 +1,29 @@
+#idStroke
+{
+  text-align:           center;
+}
+
+img
+{
+  margin:              -2.000em 0.000em 0.000em 0.000em;
+  padding:              0.000em 0.000em 0.000em 0.000em;
+}
+
+.t1, .t2, .t3, .t4, .t5
+{
+  font-size:            2.000em !important;
+  margin:               0.000em 0.000em 0.000em 0.000em !important;
+  padding:              0.000em 0.000em 0.000em 0.000em !important;
+}
+
+a
+{
+  margin:               0.000em 0.000em 4.000em 0.000em !important;
+  padding:              0.000em 0.000em 0.000em 0.000em !important;
+}
+
+h3
+{
+  margin:               0.500em 0.000em 1.750em 0.000em !important;
+  padding:              0.000em 0.000em 0.000em 0.000em !important;
+}

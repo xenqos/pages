@@ -1,0 +1,21 @@
+# Stroke Order
+Top to bottom:
+>> %[zhm|二 三]
+Left to right:
+>> %[zhm|巛 川]
+Horizontal before vertical:
+>> %[zhm|十士]
+Character-spanning strokes last:
+>> %[zhm|聿 弗]
+Diagonals right-to-left before diagonals left-to-right:
+>> %[zhm|人 八 文]
+Center before outside in vertically symmetrical characters:
+>> %[zhm|水 兜 承]
+Enclosures before contents:
+>> %[zhm|日 口 同 月&emsp;]
+Left vertical before enclosing:
+>> %[zhm|日 口&emsp;]
+Bottom enclosures last:
+>> %[zhm|道 建 凶]
+Dots and minor strokes last:
+>> %[zhm|玉 求 朮]

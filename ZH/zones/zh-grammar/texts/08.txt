@@ -1,0 +1,36 @@
+# Syllable Structure
+
+## Syllable consists of:
+
+[-
+initial - a consonant at the beginning of the syllable
+final - a monophthong / diphthong / triphthong at the end of the syllable
+-]
+
+Initial is optional.
+Final is mandatory.
+
+### Finals:
+
+[-
+Simple
+Compound
+-]
+
+#### Simple Final:
+
+[-
+Vowels - <span class='clXaa0000'>a, o, e, i, u, ü</span>
+Diphthongs - <span class='clXaa0000'>ai, ei, ао, ou</span>
+Triphthongs -  <span class='clXaa0000'>iao, uai, ...</span>
+-]
+
+#### Compound Final:
+
+[-
+medial (Semivowel) + Simple Final (<span class='clXaa0000'>ia, ie, iu, ua, uo, ui, üa, üe, iao, uai, …</span>)
+-]
+
+If initial is absent and final is - <span class='clXaa0000'>i</span>, then <span class='clXaa0000'>y</span> (semivowel) is added before <span class='clXaa0000'>i</span>.<br>&emsp;<span class='clXaa0000'>yi</span> is pronounced - [i].</p>
+
+If initial is absent and final is - <span class='clXaa0000'>u</span>, then <span class='clXaa0000'>w</span> (semivowel) is added before <span class='clXaa0000'>u</span>.<br>&emsp;<span class='clXaa0000'>wu</span> is pronounced - [u].</p>

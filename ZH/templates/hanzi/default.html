@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, user-scalable=no'>
+  <title>{$title}</title>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/commons.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/{$unit}.css'>
+  <script type='text/javascript' src='../scripts/commons.js'></script>
+  <script type='text/javascript' src='../scripts/{$unit}.js'></script>
+  <script type='text/javascript' src='../scripts/jquery-1.11.1.min.js'></script>
+</head>
+<body>
+<audio id='idTrack' src='' preload='auto'></audio>
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../index.html'><span class='clNavHome'></span></a>
+    <a href='../{$dir_zones}/{$app_area}/index.html'><span class='clNavIndex'></span></a>
+    <a href='javascript:history.back()'><span class='clNavUp'></span></a>
+    <span id='idHanziSound' class='clNavSound'></span>
+    <span id='idHanziPlay' class='clNavPlay'></span>
+    <span id='idHanziQuiz' class='clNavQuiz'></span>
+    <span id='idSearchBox'>
+      <form method='get' action="../../hypers/{$app_name}.php">
+        <input id='idHanzi' type='text' name='varHanziId' value='{$hanzi_id}' size='1'>
+        <input id='idSearchSubmit' type='submit' value=''>
+      </form>
+    </span>
+  </div>
+</div>
+<div id='idContent'>
+
+<div id='idGridTargetWrapper'>
+<svg xmlns='http://www.w3.org/2000/svg' width='{$grid_s1}' height='{$grid_s1}' id='idGridTarget'>
+  <line x1='000'        y1='000'        x2='{$grid_s1}' y2='000'        stroke='{$grid_c1}'></line>
+  <line x1='{$grid_s1}' y1='000'        x2='{$grid_s1}' y2='{$grid_s1}' stroke='{$grid_c1}'></line>
+  <line x1='{$grid_s1}' y1='{$grid_s1}' x2='000'        y2='{$grid_s1}' stroke='{$grid_c1}'></line>
+  <line x1='000'        y1='{$grid_s1}' x2='000'        y2='000'        stroke='{$grid_c1}'></line>
+
+  <line x1='000'        y1='000'        x2='{$grid_s1}' y2='{$grid_s1}' stroke='{$grid_c2}'></line>
+  <line x1='{$grid_s1}' y1='000'        x2='000'        y2='{$grid_s1}' stroke='{$grid_c2}'></line>
+  <line x1='{$grid_s2}' y1='000'        x2='{$grid_s2}' y2='{$grid_s1}' stroke='{$grid_c2}'></line>
+  <line x1='000'        y1='{$grid_s2}' x2='{$grid_s1}' y2='{$grid_s2}' stroke='{$grid_c2}'></line>
+</svg>
+</div>
+
+<div class='clHanziInfoHeader'>pinyin:</div>
+<div class='clHanziInfoText'>{$hanzi_pinyin}</div>
+<div class='clHanziInfoHeader'>definition:</div>
+<div class='clHanziInfoText'>{$hanzi_definition}</div>
+<div class='clHanziInfoHeader'>radical:</div>
+<div class='clHanziInfoText zh'>{$hanzi_radical}</div>
+<div class='clHanziInfoHeader'>decomposition:</div>
+<div class='clHanziInfoText zh'>{$hanzi_decomposition}</div>
+<div class='clHanziInfoHeader'>character:</div>
+<div class='clHanziInfoText zh'><a href='../../hypers/hanyu-dictionary.php?varEntryId={$hanzi_character}'>{$hanzi_character}</a></div>
+<div class='clHanziInfoHeader'>type:</div>
+<div class='clHanziInfoText'>{$hanzi_etymology_type}</div>
+<div class='clHanziInfoHeader'>hint:</div>
+<div class='clHanziInfoText'>{$hanzi_etymology_hint}</div>
+{$hanzi_pictophonetic}
+<br>
+
+<script>
+
+// https://hanziwriter.org/docs.html#api-link
+// https://github.com/chanind/hanzi-writer
+// https://github.com/skishore/makemeahanzi
+
+var objStrokes = HanziWriter.create('idGridTarget', '{$hanzi_id}', {
+  width:                {$grid_s1},
+  height:               {$grid_s1},
+  padding:              0,
+
+  highlightOnComplete:  false,
+  delayBetweenStrokes:  {$delay_between_strokes},
+  delayBetweenLoops:    {$delay_between_loops},
+  strokeColor:          '{$stroke_color}',
+  radicalColor:         '{$radical_color}',
+  outlineColor:         '{$outline_color}',
+
+  charDataLoader: function(char, onComplete) {
+    $.getJSON('{$server_root}/{$app_dir}/strokes/' + '{$hanzi_id}' + '.json', function(charData) {
+      onComplete(charData);
+    });
+  }
+});
+
+document.getElementById('idHanziSound').addEventListener('click', function() {
+  fncPlaySoundZh('{$hanzi_sound}');
+});
+
+document.getElementById('idHanziPlay').addEventListener('click', function() {
+  objStrokes.animateCharacter();
+});
+
+document.getElementById('idHanziQuiz').addEventListener('click', function() {
+  objStrokes.quiz();
+});
+
+</script>
+
+
+
+</div>
+</div>
+</body>
+</html>

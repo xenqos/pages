@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>{$page_title}</title>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/commons.css'>
+  <script type='text/javascript' src='../scripts/commons.js'></script>
+</head>
+<body>
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../index.html'><span class='clNavHome'></span></a>
+    <a href='../{$dir_zones}/{$app_area}/index.html'><span class='clNavIndex'></span></a>
+    <a href='javascript:history.back()'><span class='clNavUp'></span></a>
+    <span id='idSearchBox'>
+      <form method='get' action="../../hypers/{$app_name}.php">
+        <input id='idEntry' type='text' name='varEntryId' value='{$entry_id}' size='4'>
+        <input id='idSearchSubmit' type='submit' value=''>
+      </form>
+    </span>
+  </div>
+</div>
+<div id='idContent'>
+
+{$page_content}
+
+</div>
+</div>
+</body>
+</html>

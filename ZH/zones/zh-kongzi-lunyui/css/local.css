@@ -1,0 +1,123 @@
+/*--------------------------------------------------------------------------------------------------*/
+/*
+.cn
+{
+	margin:				0.000em 0.000em 1.000em 0.000em;
+	padding:			0.000em 0.000em 0.000em 0.000em;
+}
+
+.zh
+{
+	font-family:		'Adobe Kaiti Std', 'Adobe Kaiti Std R';
+	font-size:			1.700em;
+	line-height:		1.9em;
+	margin:				0.000em 0.125em 5.000em 0.000em;
+	padding:			0.000em 0.000em 0.000em 0.000em;
+	position:			relative;
+	text-align:			center;
+}
+
+.py
+{
+	font-family:		'Calibri', sans-serif;
+	font-size:			0.500em;
+	line-height:		1.500em;
+	letter-spacing:		-0.050em;
+	margin:				0.000em 0.000em 0.000em 0.000em;
+	padding:			0.000em 0.000em 0.000em 0.000em;
+	position:			absolute;
+	left:				0.500em;
+	top:				2.500em;
+	text-align:			left;
+}
+
+.ru
+{
+	color:				#000000;
+	margin:				0.000em 0.000em 1.250em 0.000em;
+	padding:			0.000em 0.000em 0.000em 0.000em;
+	text-align:			left;
+}
+*/
+/*------------------------------------------------------------------------------------------------*/
+/*
+h1, h2, h3, h4, h5, h6
+{
+	color:				#000000;
+	font-family:		'Adobe Kaiti Std', 'Adobe Kaiti Std R';
+	font-size:			1.700em;
+	font-weight:		normal;
+	margin:				1.00em 0.000em 1.000em 0.000em;
+	padding:			0.000em 0.000em 0.000em 0.000em;
+}
+
+h2
+{
+	font-size:			1.700em;
+	margin:				1.00em 0.000em 0.500em 0.000em;
+	padding:			0.000em 0.000em 0.000em 0.000em;
+}
+*/
+/*------------------------------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------------------------------*/
+
+.zh
+{
+	font-family:		'Adobe Kaiti Std', 'Adobe Kaiti Std R';
+	font-size:			1.500em;
+	line-height:		1.000em;
+	margin:				0.000em 0.000em 0.750em 0.000em;
+	padding:			0.000em 0.000em 0.000em 0.000em;
+	text-align:			left;
+}
+
+.py
+{
+	font-family:		'Calibri', sans-serif;
+	font-size:			100%;
+	font-style:			normal;
+	font-weight:		normal;
+	line-height:		1.500em;
+	margin:				0.000em 0.000em 0.000em 0.000em;
+	padding:			0.000em 0.000em 0.000em 0.000em;
+	text-align:			left;
+}
+
+.ru, .fr
+{
+	font-family:		'Calibri', sans-serif;
+	font-size:			100%;
+	font-style:			normal;
+	font-weight:		normal;
+	margin:				0.000em 0.000em 1.250em 0.000em;
+	padding:			0.000em 0.000em 0.000em 0.000em;
+	text-align:			left;
+}
+
+/*------------------------------------------------------------------------------------------------*/
+
+h1.zh, h2.zh, h3.zh, h4.zh, h5.zh, h6.zh
+{
+	color:				#000000;
+	font-family:		'Adobe Kaiti Std', 'Adobe Kaiti Std R';
+	font-weight:		normal;
+	margin:				1.00em 0.000em 1.000em 0.000em;
+	padding:			0.000em 0.000em 0.000em 0.000em;
+}
+
+h2.zh
+{
+	font-size:			2.000em;
+	margin:				1.00em 0.000em 0.500em 0.000em;
+	padding:			0.000em 0.000em 0.000em 0.000em;
+}
+
+h3.zh
+{
+	font-size:			1.500em;
+	margin:				1.00em 0.000em 0.500em 0.000em;
+	padding:			0.000em 0.000em 0.000em 0.000em;
+}
+
+/*------------------------------------------------------------------------------------------------*/
