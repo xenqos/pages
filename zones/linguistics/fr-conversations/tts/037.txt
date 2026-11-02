@@ -1,0 +1,24 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+il va en moto.
+il va à bicyclette.
+il va à pied.
+il va en bateau.
+il va en barque.
+il nage.
+est-ce que c’est dangereux ici ?
+est-ce que c’est dangereux de faire seul de l’auto-stop ?
+est-ce que c’est dangereux de se promener la nuit ?
+nous nous sommes trompés de chemin.
+nous sommes sur le mauvais chemin.
+nous devons faire demi-tour.
+où peut-on se garer ?
+y a-t-il un parking ici ?
+combien de temps peut-on se garer ici ?
+faites-vous du ski ?
+est-ce que tu montes avec le téléski ?
+est-ce qu’on peut louer des skis ici ?
+</prosody>
+</voice>
+</speak>

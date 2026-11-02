@@ -1,0 +1,24 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+une vieille femme
+une grosse femme
+une femme curieuse
+une nouvelle voiture
+une voiture rapide
+une voiture confortable
+un vêtement bleu
+un vêtement rouge
+un vêtement vert
+un sac noir
+un sac brun
+un sac blanc
+des gens sympathiques
+des gens polis
+des gens intéressants
+des enfants affectueux
+des enfants effrontés
+des enfants sages
+</prosody>
+</voice>
+</speak>

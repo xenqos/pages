@@ -1,0 +1,24 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+depuis quand ne travaille-t-elle plus ?
+depuis son mariage ?
+oui, elle ne travaille plus depuis qu’elle s’est mariée.
+depuis qu’elle s’est mariée, elle ne travaille plus.
+depuis qu’ils se connaissent, ils sont heureux.
+depuis qu’ils ont des enfants, ils sortent rarement.
+quand téléphone-t-elle ?
+pendant le trajet ?
+oui, en conduisant.
+elle téléphone en conduisant.
+elle regarde la télévision en repassant.
+elle écoute de la musique en faisant ses devoirs.
+je ne vois rien lorsque je n’ai pas de lunettes.
+je ne comprends rien quand la musique est trop forte.
+je ne sens rien lorsque j’ai un rhume.
+nous prendrons un taxi s’il pleut.
+nous ferons le tour du monde si nous gagnons à la loterie.
+nous commencerons le repas s’il n’arrive pas bientôt.
+</prosody>
+</voice>
+</speak>

@@ -1,0 +1,87 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="en-CA-ClaraNeural">
+<prosody rate="-30%" volume="0.0dB">
+Monday
+Tuesday
+Wednesday
+Thursday
+Friday
+Saturday
+Sunday
+
+<break time="800ms"/>
+
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+
+<break time="800ms"/>
+
+Friday, March 1st, 2019
+Monday, October 2nd, 1995
+Thursday, July 31st, 2008
+
+<break time="800ms"/>
+
+Anno Domini
+Before Christ
+Common Era
+Before Common Era
+Ante Meridiem
+Post Meridiem
+
+<break time="800ms"/>
+
+thirteen twenty-three
+one ten
+seven oh six
+twenty-three oh five
+one forty-seven a.m.
+nine thirty AM
+one oh five p.m.
+nine thirty PM
+
+<break time="800ms"/>
+
+six o’clock
+at one o’clock
+on the hour
+around seven o’clock
+at midnight
+at midday
+at noon
+
+<break time="800ms"/>
+
+twenty-three minutes past one
+ten past one
+five minutes past eleven
+a quarter past ten
+half past three
+
+<break time="800ms"/>
+
+fifteen to eight
+a quarter to ten
+twenty to six
+two minutes to twelve
+twenty-five minutes to five
+
+<break time="800ms"/>
+
+a quarter past three in the morning
+twenty-five minutes to seven in the evening
+seven minutes past four in the afternoon
+half past eight in the evening
+</prosody>
+</voice>
+</speak>

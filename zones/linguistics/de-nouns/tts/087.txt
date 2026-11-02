@@ -1,0 +1,16 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+der Griff, des Griffs, die Griffe
+die Diskussion, der Diskussion, die Diskussionen
+der Kontext, des Kontexts, die Kontexte
+die Ähnlichkeit, der Ähnlichkeit, die Ähnlichkeiten
+die Bemerkung, der Bemerkung, die Bemerkungen
+das Klima, des Klimas, die Klimata
+der Konflikt, des Konflikts, die Konflikte
+die Umfrage, der Umfrage, die Umfragen
+die Politik, der Politik, die Politiken
+die Begegnung, der Begegnung, die Begegnungen
+</prosody>
+</voice>
+</speak>

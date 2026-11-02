@@ -1,0 +1,24 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+je voudrais réserver une place sur le vol pour athènes.
+est-ce que c’est un vol direct ?
+une place près du hublot non fumeur, s’il vous plaît.
+je voudrais confirmer ma réservation.
+je voudrais annuler ma réservation.
+je voudrais modifier ma réservation.
+quand part le prochain avion pour rome ?
+y a-t-il encore deux places de libre ?
+non, nous n’avons plus qu’une place de libre.
+quand est-ce que nous atterrissons ?
+quand serons-nous là-bas ?
+quand est-ce qu’un bus part pour le centre-ville ?
+c’est votre valise ?
+c’est votre sac ?
+ce sont vos bagages ?
+combien de bagages puis-je emporter ?
+vingt kilos.
+quoi, seulement vingt kilos ?
+</prosody>
+</voice>
+</speak>

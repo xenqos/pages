@@ -1,0 +1,24 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+je veux aller à la bibliothèque.
+je veux aller à la librairie.
+je veux aller au kiosque.
+je veux emprunter un livre.
+je veux acheter un livre.
+je veux acheter un journal.
+je veux aller à la bibliothèque pour emprunter un livre.
+je veux aller à la librairie pour acheter un livre.
+je veux aller au kiosque pour acheter un journal.
+je veux aller chez l’opticien.
+je veux aller au supermarché.
+je veux aller chez le boulanger.
+je veux acheter une paire de lunettes.
+je veux acheter des fruits et des légumes.
+je veux acheter des petits pains et du pain.
+je veux aller chez l’opticien pour acheter une paire de lunettes.
+je veux aller au supermarché pour acheter des fruits et des légumes.
+je veux aller chez le boulanger pour acheter des petits pains et du pain.
+</prosody>
+</voice>
+</speak>

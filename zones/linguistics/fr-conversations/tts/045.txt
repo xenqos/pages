@@ -1,0 +1,24 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+nous voulons aller au cinéma.
+aujourd’hui il y a un bon film.
+le film est tout nouveau.
+où est la caisse ?
+y-a-t-il encore des places de libre ?
+combien coûtent les billets d’entrée ?
+quand commence la séance ?
+combien de temps dure le film ?
+peut-on réserver des billets d’entrée ?
+je voudrais une place à l’arrière.
+je voudrais une place à l’avant.
+je voudrais une place au milieu.
+le film était captivant.
+le film n’était pas ennuyeux.
+mais le livre était mieux que le film.
+comment était la musique ?
+comment étaient les acteurs ?
+y-avait-il des sous-titres en anglais ?
+</prosody>
+</voice>
+</speak>

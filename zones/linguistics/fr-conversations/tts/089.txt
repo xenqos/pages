@@ -1,0 +1,24 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+tu es trop paresseux – ne sois pas si paresseux !
+tu dors trop longtemps – ne dors pas si longtemps !
+tu viens trop tard – ne viens pas si tard !
+tu ris trop fort – ne ris pas si fort !
+tu parles trop doucement – ne parle pas si doucement !
+tu bois trop – ne bois donc pas autant !
+tu fumes trop – ne fume donc pas autant !
+tu travailles trop – ne travaille donc pas autant !
+tu conduis trop vite – ne conduis donc pas si vite !
+levez-vous, monsieur muller !
+asseyez-vous, monsieur muller !
+restez assis, monsieur muller !
+ayez de la patience !
+prenez votre temps !
+attendez un moment !
+soyez prudent !
+soyez à l’heure !
+ne soyez pas bête !
+</prosody>
+</voice>
+</speak>

@@ -1,0 +1,24 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+salut !
+bonjour !
+comment ça va ?
+venez-vous d’europe ?
+venez-vous d’amérique ?
+venez-vous d’asie ?
+dans quel hôtel séjournez-vous ?
+depuis quand êtes-vous ici ?
+jusqu’à quand restez-vous ?
+est-ce que vous vous plaisez ici ?
+êtes-vous en vacances ici ?
+n’hésitez pas à venir me voir !
+voici mon adresse.
+pourrions-nous nous voir demain ?
+je suis désolé(e), mais j’ai déjà quelque chose de prévu.
+salut !
+au revoir !
+a bientôt !
+</prosody>
+</voice>
+</speak>

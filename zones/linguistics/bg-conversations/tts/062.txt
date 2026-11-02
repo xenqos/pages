@@ -1,0 +1,24 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="bg-BG-KalinaNeural">
+<prosody rate="0%" pitch="0%">
+уча
+учениците учат ли много?
+не, те учат малко.
+питам
+често ли питате учителя?
+не, аз не го питам често.
+отговарям
+отговорете, моля.
+аз отговарям.
+работя
+той работи ли сега?
+да, той работи сега.
+идвам
+идвате ли?
+да, веднага идваме.
+живея
+в берлин ли живеете?
+да, аз живея в берлин.
+</prosody>
+</voice>
+</speak>

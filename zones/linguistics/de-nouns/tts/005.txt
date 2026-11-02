@@ -1,0 +1,16 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+das Waschbecken, des Waschbeckens, die Waschbecken
+das Ziel, des Zieles, die Ziele
+das Kleid, des Kleides, die Kleider
+der Verlag, des Verlages, die Verlage
+das Spiel, des Spieles, die Spiele
+die Kerze, der Kerze, die Kerzen
+die Heizung, der Heizung, die Heizungen
+die Geschichte, der Geschichte, die Geschichten
+der Leser, des Lesers, die Leser
+der Bildschirm, des Bildschirms, die Bildschirme
+</prosody>
+</voice>
+</speak>

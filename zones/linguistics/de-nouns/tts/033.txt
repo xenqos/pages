@@ -1,0 +1,16 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+der Durst, des Durstes, die Durste
+das Benzin, des Benzins, die Benzine
+das Lächeln, des Lächelns, die Lächeln
+die Kette, der Kette, die Ketten
+die Hilfe, der Hilfe, die Hilfen
+der Film, des Filmes, die Filme
+die Cousine, der Cousine, die Cousinen
+das Interesse, des Interesses, die Interessen
+der Thriller, des Thrillers, die Thriller
+der Kasten, des Kastens, die Kästen
+</prosody>
+</voice>
+</speak>

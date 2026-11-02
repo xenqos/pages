@@ -1,0 +1,24 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+déjà – pas encore
+avez-vous déjà été à berlin ?
+non, pas encore.
+quelqu’un – personne
+connaissez-vous quelqu’un ici ?
+non, je ne connais personne ici.
+encore – ne ... plus
+restez-vous encore longtemps ici ?
+non, je ne reste plus longtemps ici.
+encore quelque chose – plus rien
+voulez-vous encore boire quelque chose ?
+non, je ne désire plus rien.
+déjà quelque chose – encore rien
+avez-vous déjà mangé quelque chose ?
+non, je n’ai encore rien mangé.
+encore quelqu’un – plus personne
+est-ce que quelqu’un voudrait encore un café ?
+non, plus personne.
+</prosody>
+</voice>
+</speak>

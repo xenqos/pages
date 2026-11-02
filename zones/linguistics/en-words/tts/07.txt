@@ -1,0 +1,44 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="en-CA-ClaraNeural">
+<prosody rate="-30%" volume="0.0dB">
+knock, knocking.
+thud, thudding.
+creak, creaking.
+squeak, squeaking.
+screech, screeching.
+squeal, squealing.
+
+<break time="800ms"/>
+
+blar, blaring.
+wail, wailing.
+beep, beeping.
+hum, humming.
+whir, whirring.
+
+<break time="800ms"/>
+
+sizzle, sizzling.
+rustle, rustling.
+patter, pattering.
+rumble, rumbling.
+rattle, rattling.
+clatter, clattering.
+
+<break time="800ms"/>
+
+clang, clanging.
+clank, clanking.
+clink, clinking.
+ding, dinging.
+shatter, shattering.
+
+<break time="800ms"/>
+
+pound, pounding.
+clapp, clapping.
+bang, banging.
+roar, roaring.
+</prosody>
+</voice>
+</speak>

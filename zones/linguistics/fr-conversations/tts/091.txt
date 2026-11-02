@@ -1,0 +1,24 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+le temps sera probablement meilleur demain.
+d’où le savez-vous ?
+j’espère qu’il sera meilleur.
+il viendra certainement.
+est-ce que c’est sur ?
+je sais qu’il viendra.
+il appellera certainement.
+vraiment ?
+je crois qu’il appellera.
+le vin est probablement vieux.
+en êtes-vous certain ?
+je suppose qu’il est vieux.
+notre chef est beau.
+vous trouvez ?
+je trouve même qu’il est très beau.
+le chef a certainement une amie.
+le croyez-vous vraiment ?
+c’est bien possible qu’il ait une amie.
+</prosody>
+</voice>
+</speak>

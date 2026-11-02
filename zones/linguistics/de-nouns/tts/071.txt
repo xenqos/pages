@@ -1,0 +1,16 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+der Raum, des Raumes, die Räume
+das Gebäude, des Gebäudes, die Gebäude
+der Anteil, des Anteils, die Anteile
+das Recht, des Rechtes, die Rechte
+der Dozent, des Dozenten, die Dozenten
+der Antrag, des Antrags, die Anträge
+das Eigentum, des Eigentums, die Eigentümer
+der Rabatt, des Rabattes, die Rabatte
+die Aprikose, der Aprikose, die Aprikosen
+die Backe, der Backe, die Backen
+</prosody>
+</voice>
+</speak>
