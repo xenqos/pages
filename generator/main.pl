@@ -175,7 +175,7 @@ sub get_markdown
   #---------------------------------------------------------
 
   $source_content =~ s/\^\[(.*?)\]/<a target='_blank' href='\.\.\/images\/$1'><img class='clImageThumb' src='\.\.\/images\/$1'><\/a>/g;
-  $source_content =~ s/\@\[(.*?)\|(.*?)\]/<img alt='$1' src='\.\.\/images\/$1\/$2'>/g;
+  $source_content =~ s/\@\[(.*?)\|(.*?)\]/<img class='clImageThumb' alt='$1' src='\.\.\/images\/$1\/$2'>/g;
   $source_content =~ s/\@\[(.*?)\]/<img src='\.\.\/images\/$1'>/g;
 
   #---------------------------------------------------------
@@ -198,8 +198,8 @@ sub get_markdown
   my $callback_08 = sub
   {
     my ($matched_1, $matched_2) = @_;
-    my $callback_return = "<video id='${matched_1}' src='../videos/${matched_1}' poster='../images/${matched_2}' loop preload='auto'></video>\n";
-    $callback_return .= "<div class='clVideo'><span class='clNavRewind' onclick='fncRewindTrack(&quot;${matched_1}&quot;)'></span><span class='clNavPlay' onclick='fncPlayTrack(&quot;${matched_1}&quot;)'></span></div>";
+    my $callback_return = "<video id='${matched_1}' src='../videos/${matched_1}' poster='../images/${matched_2}' controls loop preload='auto'></video>\n";
+    # $callback_return .= "<div class='clVideo'><span class='clNavRewind' onclick='fncRewindTrack(&quot;${matched_1}&quot;)'></span><span class='clNavPlay' onclick='fncPlayTrack(&quot;${matched_1}&quot;)'></span></div>";
     return $callback_return;
   };
   $source_content =~ s/=\[(.*?),(.*?)\]/$callback_08->($1, $2)/esg;
@@ -279,13 +279,16 @@ sub get_markdown
   # Indentation
   #---------------------------------------------------------
 
-#  $source_content =~ s/^=\+\+\+ (.*)$/&ensp;&ensp;&ensp;$1/mg;
-#  $source_content =~ s/^=\+\+ (.*)$/&ensp;&ensp;$1/mg;
-#  $source_content =~ s/^=\+ (.*)$/&ensp;$1/mg;
-
   $source_content =~ s/^>>> (.*)$/&ensp;&ensp;&ensp;$1/mg;
   $source_content =~ s/^>> (.*)$/&ensp;&ensp;$1/mg;
   $source_content =~ s/^> (.*)$/&ensp;$1/mg;
+
+  #---------------------------------------------------------
+  # Whitespace
+  #---------------------------------------------------------
+
+  $source_content =~ s/‡/&emsp;/mg;
+  $source_content =~ s/†/&ensp;/mg;
 
   #---------------------------------------------------------
   # Linguistics Styles

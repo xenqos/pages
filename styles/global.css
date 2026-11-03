@@ -16,8 +16,8 @@ html
   color-scheme:         light dark;
 }
 
-@media (prefers-color-scheme: light) { img[alt~="scheme-dark"]  { display: none; } }
-@media (prefers-color-scheme: dark)  { img[alt~="scheme-light"] { display: none; } }
+@media (prefers-color-scheme: light) { img[alt~='scheme-dark']  { display: none; } }
+@media (prefers-color-scheme: dark)  { img[alt~='scheme-light'] { display: none; } }
 
 /*--------------------------------------------------------------------------*/
 
@@ -30,8 +30,7 @@ body
   --color-darkblue:      light-dark(#1a3db8, #7fa8f8);
   --color-darkcyan:      light-dark(#237878, #34b4b4);
 
-
-  --hanzi-standard-size:    1.500rem;
+  --hanzi-standard-size: 1.500rem;
 }
 
 /*--------------------------------------------------------------------------*/
