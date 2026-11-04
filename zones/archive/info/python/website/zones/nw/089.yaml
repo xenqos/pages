@@ -1,0 +1,74 @@
+config_enabled  : "true"
+config_type     : "link"
+
+media_name      : "The Spectator - Culture"
+media_url       : "https://www.spectator.co.uk/the-critics"
+media_encode    : "false"
+media_encoding  : ""
+
+module_body     : "section[class^=entry-container]"
+module_article  : "article"
+module_headline : "h3 a"
+
+article_body    : "body"
+article_title   : "h1"
+article_date    : "time"
+article_author  : "span[class=writers-link__text]"
+
+clean_module:
+  - ['<script(.*?)script>', '']
+  - ['<noscript(.*?)noscript>', '']
+  - ['<img(.*?)>', '']
+  - ['<a class=\"article__author(.*?)>(.*?)</a>', '']
+  - ['<a class=\"article__image-link(.*?)>(.*?)</a>', '']
+
+clean_article_pre:
+  - ['<script(.*?)script>', '']
+  - ['<noscript(.*?)noscript>', '']
+
+clean_article_post:
+  - ['<meta(.*?)>', '']
+  - ['form(.*?)form>', '']
+  - ['<filter(.*?)filter>', '']
+  - ['<!--(.*?)-->', '']
+  - ['<svg(.*?)svg>', '']
+  - ['<button(.*?)button>', '']
+  - ['<label(.*?)label>', '']
+  - ['<input(.*?)>', '']
+  - ['<ul id=\"secondary-nav\"(.*?)>(.*?)</ul>', '']
+  - ['<ul id=\"primary-nav\"(.*?)>(.*?)</ul>', '']
+  - ['<li>(\s+)</li>', '']
+  - ['<header class=\"header-primary\"(.*?)>(.*?)</header>', '']
+  - ['<header id=\"js-header-secondary\"(.*?)>(.*?)</header>', '']
+  - ['<ul class=\"social-links share-overlay__social-links\"(.*?)>(.*?)</ul>', '']
+  - ['<ul class=\"tooltip-settings__list\"(.*?)>(.*?)</ul>', '']
+  - ['<ul class=\"social-links\"(.*?)>(.*?)</ul>', '']
+  - ['<div class=\"copy-to-clipboard__button-container\">(.*?)</div>', '']
+  - ['<figure(.*?)>(.*?)</figure>', '']
+  - ['<footer class=\"entry-footer(.*)$', '']
+  - ['^(.*?)<div class=\"share-overlay__article-thumbnail\">/s", "<div class=\"article-thumbnail\">"]
+  - ['<div class=\"tooltip__content\">(.*?)</div>', '']
+  - ['<div class=\"copy-to-clipboard\">(.*?)</div>', '']
+  - ['<div class=\"tooltip__overlay(.*?)>(.*?)</div>', '']
+  - ['<div class=\"insert__content(.*?)>(.*?)</div>', '']
+  - ['<div id=\"most-popular(.*?)>(.*?)</div>', '']
+  - ['<div style=\"(.*?)>(.*?)</div>', '']
+  - ['<div class=\"ad-wrapper(.*?)>(.*?)</div>', '']
+  - ['<div class=\"ad-slot(.*?)>(.*?)</div>', '']
+  - ['</div>', '']
+  - ['<div(.*?)>', '']
+  - ['</li>/s", "<br>"]
+  - ['</ul>', '']
+  - ['<a(.*?)>(.*?)</a>/s", "$2"]
+  - ['<img(.*?)src=\"(.*?)\"(.*?)>/s", "<a target='_blank' href='$2'><img class='clImageThumb' src='$2'></a>"]
+  - ['<ul class=\"related-books\"(.*?)>', '']
+  - ['<li class=\"related-books__item\">', '']
+  - ['<h3 class=\"related-books__title\">(.*?)</h3>', '']
+  - ['<p class=\"related-books__description\">(.*?)</p>', '']
+  - ['<section(.*?)>(.*?)</section>', '']
+  - ['<p>\n<br>/s", "<p>"]
+#                    - ['\t/s", " "]
+#                    - ['(\s+)/s", " "]
+#                    - [' \n/s", "\n"]
+#                    - ['</a>(\s*)\n<br>(\s*)\n<br>(\s*)\n<br>/s", "</a><br>"]
+#                    - ['<br> \n<br> \n<br>/s", "<br>"]

@@ -1,0 +1,40 @@
+media_type        : 'link'
+media_name        : 'Chronicle.bg - Истории Page 3'
+media_url         : 'https://www.chr.bg/istorii/page/3/'
+
+module_body       : 'main[role=main]'
+module_article    : 'div[id*=post-]'
+module_headline   : 'h3 a'
+
+article_body      : 'div[id*=post-]'
+article_title     : 'h1 a'
+article_date      : 'time'
+article_author    : ''
+
+clean_module      : [
+                    ['', ''],
+                    ]
+
+clean_article_pre : [
+                    ['', ''],
+                    ]
+
+clean_article_post: [
+                    ['', ''],
+                    ['<div id="div-inconent">(.*?)</div>', ''],
+                    ['<div class="mobile-in-middle">(.*?)</div>', ''],
+                    ['<div class="image-author-base">(.*?)</div>', ''],
+                    ['<!-- post title -->(.*?)<!-- /post title -->', ''],
+                    ['<div class="addthis_sharing_toolbox"(.*?)</div>', ''],
+                    ['<div class="col-xs-12 col-sm-3 p-0">(.*?)</div>', ''],
+                    ['<div class="post-details">(.*?)</div>', ''],
+                    ['<!-- post details -->(.*?)<!-- /post details -->', ''],
+                    ['<div class="col-xs-12 col-sm-9 p-0">(.*?)</div>', ''],
+                    ['<div class="clearfix">(.*?)</div>', ''],
+                    ['<div class="col-sm-6">(.*?)</div>', ''],
+                    ['<div class="row">(.*?)</div>', ''],
+                    ['<div class="related-container pull-right">(.*?)</div>', ''],
+                    ['<div class="has-content-area"(.*?)>(.*?)</div>(.*)', '\2'],
+                    ['<div class="chronicle_gallery"(.*?)>(.*?)</div>', '\2'],
+                    ['<img(.*?)src="(.*?)"(.*?)>', '<a target=''_blank'' class=''clLink'' href=''\2''><img class=''clImageThumb'' src=''\2''></a>'],
+                    ]

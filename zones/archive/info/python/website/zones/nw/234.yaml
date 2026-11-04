@@ -1,0 +1,69 @@
+config_enabled  : "true"
+config_type     : "link"
+
+media_name      : "Капитал - Свят"
+media_url       : "https://www.capital.bg/politika_i_ikonomika/sviat/"
+media_encode    : "false"
+media_encoding  : ""
+
+module_body     : "div[class=col-lg-7 list]"
+module_article  : "div[class=media-body d-flex flex-column]"
+module_headline : "h2"
+
+article_body    : "article"
+article_title   : "h1"
+article_date    : "time"
+article_author  : "h5 a span"
+
+clean_module:
+  - ['<script(.*?)script>', '']
+  - ['<button(.*?)button>', '']
+  - ['<nav(.*?)nav>', '']
+  - [' title=\"(.*?)\"', '']
+  - [' class=\"flex-grow-1 gtag-feed-statia1\"', '']
+  - ['<h2(.*?)>(\s*)<a(.*?)>(.*?)</a>(\s*)</h2>/s", "<h2>$4</h2><a$3></a>"]
+
+clean_article_pre:
+  - ['', '']
+
+clean_article_post:
+  - ['<script(.*?)script>', '']
+  - ['<form(.*?)form>', '']
+  - ['<header(.*?)header>', '']
+  - ['<footer(.*?)footer>', '']
+  - ['<article(.*?)article>', '']
+  - ['<section(.*?)section>', '']
+  - ['<button(.*?)button>', '']
+  - ['<aside(.*?)aside>', '']
+  - ['<path(.*?)path>', '']
+  - ['<svg(.*?)svg>', '']
+  - ['<p class=\"descr\">(.*?)</p>', '']
+  - ['<hr(.*?)>', '']
+  - ['<h1(.*?)h1>', '']
+  - ['</h2>(\s*)<br>/s", "</h2>"]
+  - ['<h2(.*?)>(.*?)</h2>/s", "<i>$2</i><br>"]
+  - ['<h3(.*?)>(.*?)</h3>/s", "<h2>$2</h2>"]
+  - ['<h1(.*?)h1>', '']
+  - ['<strong(.*?)>(.*?)</strong>/s", "$2"]
+  - ['<\!--(.*?)-->', '']
+  - ['<a class=\"banner-label\"(.*?)</a>', '']
+  - ['<ul>(.*?)</ul>', '']
+  - ['<div class=\"main\">(.*?)</div>', '']
+  - ['<div class=\"paywall paywall-story\">(.*?)</div>', '']
+  - ['<div class=\"col-12 col-lg-7\">(.*?)</div>', '']
+  - ['<div class=\"shareBtns(.*?)>(.*?)</div>', '']
+  - ['<div class=\"col-12 col-lg-8 offset-lg-1 order-lg-1\">(.*?)</div>', '']
+  - ['<div class=\"share--title col-12 order-lg-2 d-none d-lg-block\">(.*?)</div>', '']
+  - ['<div class=\"storyOverview__heading\">(.*?)</div>', '']
+  - ['<div class=\"storyOverview\">(.*?)</div>', '']
+  - ['<picture class=\"img--title landscape\">(.*?)</picture>', '']
+  - ['<picture(.*?)>', '']
+  - ['</picture>', '']
+  - ['<div class=\"img--caption(.*?)>(.*?)</div>/s", "<!--<br>$2<br>-->"]
+  - ['<div id=\"story-incognito-paywall\"(.*?)<div id=\"story-incognito-content/s", "<div id=\"story-incognito-content"]
+  - ['<span(.*?)>', '']
+  - ['</span>', '']
+  - ['<div(.*?)>', '']
+  - ['</div>', '']
+  - ['<a(.*?)>(.*?)</a>/s", "$2"]
+  - ['<img(.*?)src=\"(.*?)\"(.*?)>/s", "<a target='_blank' href='$2'><img class='clImageThumb' src='$2'></a><br>"]

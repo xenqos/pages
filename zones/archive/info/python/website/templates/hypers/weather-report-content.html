@@ -1,0 +1,46 @@
+<!-- <h1>{$page_title}</h1> -->
+
+<div id='idTime'>
+<span class='clTodayDate'>{$today_date}</span>
+<span class='clTime'>&ensp;{$time_local}<!-- &ensp;{$time_utc} --></span>
+</div>
+
+<div id='idNow'>
+<span class='clNowTemperature'>{$now_temp_c}&deg;C</span>
+<span><img class='clNowImage' src='{$now_image}'></span>
+<span class='clNowTemperature'>{$now_temp_f}&deg;F</span>
+</div>
+
+<div id='idCondition'>
+<div class='clConditionNow'>{$now_condition}</div>
+</div>
+
+<div id='idTodayRangeTemp'>
+<span class='clTodayRangeTemp'>{$now_range_min_c}&deg;C&nbsp;&ndash;&nbsp;{$now_range_max_c}&deg;C</span>
+<span><img class='clTodayImage' src='{$today_image}'></span>
+<span class='clTodayRangeTemp'>{$now_range_min_f}&deg;F&nbsp;&ndash;&nbsp;{$now_range_max_f}&deg;F</span>
+</div>
+
+<div id='idCondition'>
+<div class='clConditionDay'>{$today_condition}</div>
+</div>
+
+<div id='idTodayData'>
+<div class='clTodayData'>
+<table>
+<tr><td>Валежи</td><td class='clRed'>{$now_precipitation}</td></tr>
+<tr><td>Количество</td><td class='clRed'>{$now_quantity}</td></tr>
+<tr><td>Влажност</td><td class='clRed'>{$now_humidity}</td></tr>
+<tr><td>Облачност</td><td class='clRed'>{$now_cloudiness}</td></tr>
+<tr><td>UV индекс</td><td class='clRed'>{$now_uv}</td></tr>
+<tr><td>Налягане</td><td class='clRed'>{$now_pressure}</td></tr>
+<tr><td>Вятър</td><td class='clRed'>{$now_wind}</td></tr>
+<tr><td>Видимост</td><td class='clRed'>{$now_visibility}</td></tr>
+<tr><td>Ден</td><td class='clRed'>{$now_duration}</td></tr>
+<tr><td>Изгрев</td><td class='clRed'>{$now_sunrise}</td></tr>
+<tr><td>Залез</td><td class='clRed'>{$now_sunset}</td></tr>
+</table>
+</div>
+</div>
+
+

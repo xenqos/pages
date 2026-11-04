@@ -1,0 +1,57 @@
+config_enabled  : "true"
+config_type     : "link"
+
+media_name      : "Webcafé - Анализ"
+media_url       : "https://webcafe.bg/analiz"
+media_encode    : "false"
+media_encoding  : ""
+
+module_body     : "div[class=skeleton-left]"
+module_article  : "div[class=article]"
+module_headline : "h2 a"
+
+article_body    : "div[class=global-inside-article]"
+article_title   : "h1"
+article_date    : "time"
+article_author  : ""
+
+clean_module:
+  - ['<source(.*?)>', '']
+  - ['<picture>(.*?)</picture>', '']
+  - ['<h1>(.*?)></h1>/s", "<h2>$1</h2>"]
+  - ['class=\"global-leading-article-left\"/s", "class=\"article\'']
+  - ['<div class=\"image\">(.*?)</div>', '']
+  - ['<div class=\"category\">(.*?)</div>', '']
+  - ['\"article(.*?)\"/s", "\"article\'']
+  - ['<script(.*?)script>', '']
+  - ['<a(.*?)a>/s", "<h2><a$1a></h2>"]
+
+clean_article_pre:
+  - ['', '']
+
+clean_article_post:
+  - ['^(.*?)time>', '']
+  - ['<source(.*?)>', '']
+  - ['^(.*?)</span>', '']
+  - ['^(.*?)</div>', '']
+  - ['^(.*?)</div>', '']
+  - ['<meta(.*?)>', '']
+  - ['<script(.*?)script>', '']
+  - [' (alt|title|width|height|itemprop|itemscope|itemtype)=\"(.*?)\"', '']
+  - ['<strong(.*?)>(.*?)</strong>/s", "$2"]
+  - ['<b>(.*?)</b>/s", "$2"]
+  - ['<div id=\"gpt-banner-incontent\" >(.*?)</div>', '']
+  - ['<span class=\"copyright\">(.*?)</span>', '']
+  - ['<span class=\"description\"(.*?)>(.*?)</span>/s", "$2<br><br>"]
+  - ['<picture>(.*?)</picture>/s", "$1"]
+  - ['<div class=\"image\">(.*?)</div>/s", "$1"]
+  - ['<div class=\"photo\"   >(.*?)</div>/s", "$1"]
+  - ['<div(.*?)>', '']
+  - ['</div>', '']
+  - [' (alt|title|width|height|itemprop)=\"(.*?)\"', '']
+  - ['class=\"(.*?)\"', '']
+  - ['<video(.*?)video>', '']
+  - ['<a(.*?)>(.*?)<img(.*?)>(.*?)</a>/s", "<img$3>"]
+  - ['<a(.*?)>(.*?)</a>/s", "$2"]
+  - ['<img(.*?)src=\"(.*?)\"(.*?)>/s", "<br><a target='_blank' href='$2'><img class='clImageThumb' src='$2'></a><br>"]
+  - ['^(\s*?)<br>', '']

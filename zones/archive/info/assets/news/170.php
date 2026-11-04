@@ -1,0 +1,52 @@
+<?php
+$config_enabled  = "true";
+$config_type     = "link";
+
+$media_name      = "Valeurs Actuelles - Histoire";
+$media_url       = "https://www.valeursactuelles.com/histoire";
+$media_encode    = "false";
+$media_encoding  = "";
+
+$module_body     = "body";
+$module_article  = "article";
+$module_headline = "h2 a";
+
+$article_body    = "main";
+$article_title   = "h1";
+$article_date    = "time";
+$article_author  = "author";
+
+$clean_module    =
+[
+  ["", ""]
+];
+
+$clean_article_pre  =
+[
+  ["<div class=\"post__author\">(.*?)<a(.*?)>(.*?)</a>", "<author>Par $3</author>"]
+, ["<span>Mis à jour(.*?)span>", ""]
+];
+
+$clean_article_post =
+[
+  ["\t", " "]
+, ["^(.*)<article class=\"post\">", ""]
+, ["^(.*)<div class=\"post__excerpt gutenberg\">", ""]
+, ["<div class=\"post__metas\">(.*?)</div>", ""]
+, ["<div class=\"post__sharing\">(.*?)</div>", ""]
+, ["<time(.*?)time>", ""]
+, ["</body>(.*)$", ""]
+, ["<div class=\"qiota\">(.*)$", ""]
+, ["<!--(.*?)-->", ""]
+, ["</div>", ""]
+, ["<div(.*?)>", ""]
+, ["<small><i>(.*?)</i></small>", ""]
+, ["<(\!DOCTYPE|\?xml|html|body)(.*?)>", ""]
+, ["<h3(.*?)>A&nbsp;LIRE&nbsp;</h3>", ""]
+, ["<span class=\"h3(.*?)span>", ""]
+, ["<a(.*?)></a>", ""]
+, [" src=\"(.*?)\"", ""]
+, [" data-src=", " src="]
+, ["<img(.*?)src=\"(.*?)\"(.*?)>", "<br><a target='_blank' href='$2'><img class='clImageThumb' src='$2'></a><br>"]
+];
+?>

@@ -1,0 +1,42 @@
+media_type        : 'link'
+media_name        : 'Investor.bg - Forex'
+media_url         : 'https://www.investor.bg/news/news/last/8/'
+
+module_body       : 'section[class=full]'
+module_article    : 'li'
+module_headline   : 'h3 a'
+
+article_body      : 'div[id=article_text]'
+article_title     : 'div[class=
+article_title] h1'
+article_date      : 'div[class=f_article_date]'
+article_author    : ''
+
+clean_module      : [
+                    ['', ''],
+                    ]
+
+clean_article_pre : [
+                    ['', ''],
+                    ]
+
+clean_article_post: [
+                    ['\t', '  '],
+                    ['(alt|title|width|height|itemprop)="(.*?)"', ''],
+                    ['<table(.*?)<img(.*?)>(.*?)</table>', '<img\2>'],
+                    ['<script(.*?)script>', ''],
+                    ['<div class="ttl s2">(.*?)</div>', ''],
+                    ['<div class="b3">(.*?)</div>', ''],
+                    ['<div class="dots">(.*?)</div>', ''],
+                    ['<div class="pad2">(.*?)</div>', ''],
+                    ['<div class="c">(.*?)</div>', ''],
+                    ['<div class="h3">(.*?)</div>', ''],
+                    ['<div class="article_related(.*?)">(.*?)</div>', ''],
+                    ['<div id=''div-gpt(.*?)''>(.*?)</div>', ''],
+                    ['<div class="pagination">(.*?)</div>', '\1'],
+                    ['<div class="article_pagination">(.*?)</div>', '\1'],
+                    ['href="\?page=', 'href="./tc_news_article_app.php?varId={$strId}&varName={$strNameEncoded}&varUrl={$strUrlEncoded}?page='],
+                    ['/\?page', '?page'],
+                    ['\%3Fpage\%3D\d+', ''],
+                    ['<img(.*?)src="(.*?)"(.*?)>', '<a target=''_blank'' class=''clLink'' href=''\2''><img class=''clImageThumb'' src=''\2''></a>'],
+                    ]

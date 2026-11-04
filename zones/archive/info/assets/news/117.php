@@ -1,0 +1,80 @@
+<?php
+$config_enabled  = "true";
+$config_type     = "link";
+
+$media_name      = "20minutes.fr - Insolite";
+$media_url       = "https://www.20minutes.fr/insolite/";
+$media_encode    = "false";
+$media_encoding  = "";
+
+$module_body     = "div[id=page-content]";
+$module_article  = "article";
+$module_headline = "h2";
+
+$article_body    = "article";
+$article_title   = "h1";
+$article_date    = "time";
+$article_author  = "span[class=author-name]";
+
+$clean_module    =
+[
+  ["<script(.*?)script>", ""]
+, ["<svg(.*?)svg>", ""]
+, ["", ""]
+];
+
+$clean_article_pre  =
+[
+  ["", ""]
+, ["<svg(.*?)svg>", ""]
+];
+
+$clean_article_post =
+[
+  ["<aside(.*)$", ""]
+, ["<header(.*?)header>", ""]
+, ["<script(.*?)script>", ""]
+, ["<svg(.*?)svg>", ""]
+, ["<nav(.*?)nav>", ""]
+, ["<button(.*?)button>", ""]
+, ["<div class=\"sharebar\">(.*?)</div>", ""]
+, ["(alt|title|width|height|itemprop)=\"(.*?)\"", ""]
+, ["<figcaption(.*?)>(.*?)</figcaption>", "$2<br/><br/>"]
+, ["<figure(.*?)>(.*?)</figure>", "$2"]
+, ["<a(.*?)>Politique de gestion des cookies</a>", ""]
+, ["<div class=\"correlatedLink-headline\"(.*?)>(.*?)</div>", ""]
+, ["<div class=\"correlatedLink-label\"(.*?)>(.*?)</div>", ""]
+, ["<a class=\"correlatedLink\"(.*?)>(.*?)</a>", ""]
+, ["<a(.*?)>(.*?)</a>", "$2"]
+, ["<em class=\"credit\">(.*?)</em>", ""]
+, ["<ul class=\"tags(.*?)ul>", ""]
+, ["<div class=\"block-footer\">(.*)$", ""]
+, ["<div class=\"lt-endor-body content\">", ""]
+, ["<div class=\"media-wrap\">", ""]
+, ["<div class=\"teaser\">(.*?)</div>", ""]
+, ["<div class=\"box box-borderless color-entertainment mb1\">(.*?)</div>", ""]
+, ["<div class=\"embedPlaceholder(.*?)>(.*?)</div>", ""]
+, ["<p class=\"embedPlaceholder-choice(.*?)>(.*?)</p>", ""]
+, ["<strong>A VOIR</strong>", ""]
+, ["<strong>A LIRE AUSSI</strong>", ""]
+, ["<strong>(.*?)</strong>", "$1"]
+, ["</div>", ""]
+, ["<div(.*?)>", ""]
+, ["<ul(.*?)>(.*?)</ul>", "$2"]
+, ["<li(.*?)>(.*?)</li>", "$2<br><br>"]
+, [" style=\"(.*?)\"", ""]
+, ["Plus d’informations sur la page", ""]
+, [" class=\"(.*?)\"", ""]
+, ["<p>(\s*+)</p>", ""]
+, ["<br(\s*+)>", "<br>"]
+, ["<p>(\s*+)<br>(\s*+)</p>", ""]
+, ["<br>(\s*+)<br>", "<br>"]
+, ["<br><br>", "<br>"]
+, ["<p>(\s*+)</p>", ""]
+, ["</p>(\s*+)<br>", "</p>"]
+, ["<br>(\s*+)\.(\s*+)</p>", "</p>"]
+, ["\n(\s*+)\.(\s*+)\n", ""]
+, ["<img(.*?)src=\"(.*?)\"(.*?)>", "<a target='_blank' href='$2'><img class='clImageThumb' src='$2'></a><br>"]
+, ["310x190", "960x614"]
+];
+?>

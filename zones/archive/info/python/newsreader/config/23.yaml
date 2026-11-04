@@ -1,0 +1,45 @@
+media_type        : 'link'
+media_name        : 'Real Investment Advice - Newsletter'
+media_url         : 'https://realinvestmentadvice.com/the-bullish-test-comes-as-earnings-season-begins-07-03-20/'
+
+module_body       : 'ul[class=jaw_widget]'
+module_article    : 'li[class*=jaw_posts]'
+module_headline   : 'a'
+
+article_body      : 'div[class=pf-content]'
+article_title     : 'h1 a'
+article_date      : 'span[class=date]'
+article_author    : ''
+
+clean_module      : [
+                    ['', ''],
+                    ]
+
+clean_article_pre : [
+                    ['', ''],
+                    ]
+
+clean_article_post: [
+                    ['<div class="printfriendly pf-alignleft">(.*?)</div>', ''],
+                    ['<iframe(.*?)iframe>', ''],
+                    ['(alt|title|width|height|itemprop|srcset|sizes|style|class|target|rel|data-preserver-spaces)="(.*?)"', ''],
+                    ['<img(.*?)src="(.*?)"(.*?)>', '<img src="\2">'],
+                    ['<a(.*?)>(.*?)</a>', '\2'],
+                    ['<h2>The MacroView(.*)', ''],
+                    ['<img src="https://realinvestmentadvice\.com/wp-content/uploads/2019/01/Newsletter-Banner\.png">', ''],
+                    ['<img src="https://realinvestmentadvice\.com/wp-content/uploads/2019/01/RIA-Banner-Blog-Post-500k-or-More\.png">', ''],
+                    ['<img src="https://realinvestmentadvice\.com/wp-content/uploads/2019/08/Subscribe-YOUTUBE\.jpg">', ''],
+                    ['<img src="https://realinvestmentadvice\.com/wp-content/uploads/2019/08/RIAPRO-Insights-Banner\.jpg">', ''],
+                    ['<img src="https://realinvestmentadvice\.com/wp-content/uploads/2019/01/The-Next-Bear-Market-Is-Coming\.png">', ''],
+                    ['<img src="https://realinvestmentadvice\.com/wp-content/uploads/2019/08/RIAPRO-Dont-Invest-Alone-Banner\.jpg">', ''],
+                    ['<img src="https://realinvestmentadvice\.com/wp-content/uploads/2020/07/2020-Coffee-Workship-4\.jpg">', ''],
+                    ['<img src="https://realinvestmentadvice\.com/wp-content/uploads/2019/01/Have-The-RIA-Team-Manage-Your-Wealth-2\.png">', ''],
+                    ['<img src="https://realinvestmentadvice\.com/wp-content/uploads/2018/11/RIA-Banner-Blog-Post-500k-or-More-1\.png">', ''],
+                    ['<img src="https://realinvestmentadvice\.com/wp-content/uploads/2020/06/2020-Coffee-Workship-4\.jpg">', ''],
+                    ['<img src="https://realinvestmentadvice\.com/wp-content/uploads/2020/06/2020-Coffee-Workship-4\.jpg">', ''],
+                    ['<img src="https://realinvestmentadvice\.com/wp-content/uploads/2020/07/2-12\.png">', ''],
+                    ['<img src="https://realinvestmentadvice\.com/wp-content/uploads/2020/07/1-8\.png">', ''],
+                    ['<img src="https://realinvestmentadvice\.com/wp-content/uploads/2020/07/1\.png">', ''],
+                    ['<img src="https://realinvestmentadvice\.com/wp-content/uploads/2020/06/1-44\.png">', ''],
+                    ['<img(.*?)src="(.*?)"(.*?)>', '<a target=''_blank'' class=''clLink'' href=''\2''><img class=''clImageThumb'' src=''\2''></a>'],
+                    ]

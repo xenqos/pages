@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>{$file_noext}</title>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/commons.css'>
+  <script type='text/javascript' src='../scripts/commons.js'></script>
+</head>
+<body>
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../index.html'><span class='clNavHome'></span></a>
+    {$nav_index}
+    {$nav_up}
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>{$file_noext}</h1>
+
+<form id='idMain' name='varMain' method='post' action='./notes-keeper.php'>
+  <textarea autofocus rows='25' cols='100' id='idTextarea' name='varTextarea'>{$page_content}</textarea>
+  <br>
+  <input id='idSubmitButtonTA'  type='submit' value='Submit'>
+  <input name='varFuncId'       type='hidden' value="edit_post">
+  <input name='varDirCurrent'   type="hidden" value="{$dir_current}">
+</form>
+
+</div>
+</div>
+</body>
+</html>

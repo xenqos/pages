@@ -1,0 +1,196 @@
+/*----------------------------------------------------------------------------------------------------*/
+
+#idLogo > img
+{
+  margin:              2.000rem 0.000rem 0.000rem 1.000rem;
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+
+#idContent
+{
+  min-height:           80vh;
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+
+#idMenuEntries
+{
+  color:                #000000;
+  background-color:     #eeeeee;
+  display:              inline-block;
+  font-size:            1.000rem;
+  font-style:           normal;
+  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
+  padding:              0.500rem 0.500rem 0.500rem 0.500rem;
+  text-align:           left;
+  width:                60.000rem;
+}
+
+#idMenuEntries a,
+#idMenuEntries a:visited,
+#idMenuEntries a:hover
+{
+  color:                #555555;
+  background-color:     #eeeeee;
+  text-decoration:      none;
+}
+
+.clMenuEntriesColumn
+{
+  display:              inline-block;
+  border-right:         1px solid #888888;
+  margin:               0.000rem 0.200rem 0.000rem 0.600rem;
+  padding:              0.000rem 1.200rem 0.800rem 0.000rem;
+}
+
+.clMenuEntry
+{
+  font-weight:          900;
+  line-height:          1.800em;
+  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
+  padding:              0.000rem 0.000rem 0.500rem 0.500rem;
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+
+.clUserName
+{
+  color:                #555555 !important;
+  font-size:            1.000rem;
+  font-weight:          900;
+  margin:               0.000rem 0.000rem 0.000rem 0.400rem;
+  padding:              0.000rem 0.600rem 0.000rem 0.400rem;
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+
+h2,
+h3
+{
+  margin-bottom:        1.000rem;
+}
+
+.clRight
+{
+  text-align:           right;
+}
+
+.clSell
+{
+  color:                #ffffff;
+  background-color:     #aa0000;
+  font-weight:          600;
+  text-align:           center;
+}
+
+.clBuy
+{
+  color:                #ffffff;
+  background-color:     #008800;
+  font-weight:          600;
+  text-align:           center;
+}
+
+.clNoBorderK
+{
+  border:               0px solid #ffffff !important;
+}
+
+.clNavIndex
+{
+  cursor:               pointer;
+}
+
+.clClear
+{
+  clear:                both;
+  margin:               0.000em 0.000em 0.000em 0.000em;
+  padding:              0.000em 0.000em 0.000em 0.000em;
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+
+#idSubmit
+{
+  margin:               2.000em 0.000em 0.000em 0.000em;
+  padding:              0.000em 0.000em 0.000em 0.000em;
+}
+
+input[type='button'],
+input[type='submit'],
+input[type='reset'],
+button
+{
+  border:               1px solid #999999;
+  border:               none;
+  background:           #dddddd;
+  color:                #444444;
+  cursor:               pointer;
+  margin:               0.000em 0.500em 0.000em 0.000em;
+  padding:              0.250em 0.250em 0.250em 0.250em;
+  text-align:           left;
+}
+
+select
+{
+  border:               1px solid #999999;
+  background:           #ffffff;
+  color:                #010101;
+  font-family:          'Noto Sans', sans-serif !important;
+  font-style:           normal;
+  font-size:            100%;
+  font-weight:          normal;
+  line-height:          1.500em;
+  margin:               0.000em 0.000em 0.000em 0.125em;
+  padding:              0.125em 0.000em 0.125em 0.000em;
+  text-align:           left;
+}
+
+input[type='checkbox']
+{
+  border:               none;
+  margin:               0.000em 0.500em 0.000em 0.500em;
+  padding:              0.000em 0.000em 0.000em 0.000em;
+  vertical-align:       middle;
+}
+
+input[type='file']
+{
+  border:               1px solid #dddddd;
+  border:               none;
+  color:                #010101;
+  margin:               0.000em 0.000em 0.000em 0.000em;
+  padding:              0.000em 0.000em 0.000em 0.000em;
+  width:                95.00%;
+}
+
+input[type='text'],
+textarea
+{
+  width:                95.00%;
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+
+#idPanel
+{
+  width:                60.000rem;
+}
+
+#idTopbarNavigation
+{
+  width:                60.000rem;
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+
+sup
+{
+  color:                #800000;
+  margin:               0.000em 0.600em 0.000em 0.600em;
+  padding:              0.000em 0.000em 0.000em 0.000em;
+  vertical-align:       top;
+}
+
+/*----------------------------------------------------------------------------------------------------*/

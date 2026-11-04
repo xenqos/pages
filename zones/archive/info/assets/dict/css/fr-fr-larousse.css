@@ -1,0 +1,80 @@
+/* --------------------------------------------------------------------------------------------- */
+
+ul li
+{
+  display:              block !important;
+  text-indent:          none;
+}
+
+ul li::before
+{
+  content:              none;
+}
+
+#idSound
+{
+  margin:               0.500rem 0.000rem 0.500rem 0.500rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+}
+
+/* --------------------------------------------------------------------------------------------- */
+
+/*
+li
+{
+  display:              block !important;
+  margin:               0.000rem 0.000rem 0.000rem 0.000rem !important;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem !important;
+
+p,
+.numDef
+*/
+
+.DivisionDefinition
+{
+  margin:               0.000rem 0.000rem 1.000rem 0.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+}
+
+
+.OrigineDefinition
+{
+  color:                #2F6614;
+  margin:               1.000rem 0.000rem 1.000rem 0.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+}
+
+.LibelleSynonyme
+{
+  color:                #cc4400;
+  font-size:            1.000rem;
+  margin:               0.500rem 0.000rem 0.500rem 1.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+}
+
+.Synonymes
+{
+  color:                #0F0F99;
+  display:              inline-block;
+  font-size:            1.000rem;
+  margin:               0.000rem 0.000rem 0.500rem 1.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+}
+
+.RubriqueDefinition
+{
+  color:                #ad1f7e;
+  font-size:            1.000rem;
+  margin:               0.500rem 0.000rem 0.500rem 0.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+}
+
+.CatgramDefinition
+{
+  color:                #0F8699;;
+  font-style:           italic;
+  margin:               1.000rem 0.000rem 0.000rem 0.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+}
+
+/* --------------------------------------------------------------------------------------------- */

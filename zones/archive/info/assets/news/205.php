@@ -1,0 +1,44 @@
+<?php
+$config_enabled  = "true";
+$config_type     = "link";
+
+$media_name      = "StockCharts";
+$media_url       = "https://stockcharts.com/articles/index.html";
+$media_encode    = "false";
+$media_encoding  = "";
+
+$module_body     = "div[id=blog-rl]";
+$module_article  = "div[class^=large-article-post]";
+$module_headline = "h1 a";
+
+$article_body    = "div[id=pagecontents]";
+$article_title   = "h1";
+$article_date    = "time";
+$article_author  = "span[class=by-author] a";
+
+$clean_module    =
+[
+  ["<script(.*?)script>", ""]
+, ["class=\"large-article-post market-message-article-post\"", ""]
+, ["class=\"large-article-post members-only-article-post\"", ""]
+, ["<p class=\"blog-name-colored-box(.*?)\">(.*?)</p>", ""]
+];
+
+$clean_article_pre  =
+[
+  ["<script(.*?)script>", ""]
+];
+
+$clean_article_post =
+[
+  ["^(.*?)<article(.*?)>", ""]
+, ["</article>(.*)$", ""]
+, ["<strong>(.*?)</strong>", "$1"]
+, ["<u>here(\s*)</u>", ""]
+, ["<div(.*?)>", ""]
+, ["</div>", ""]
+, ["<hr>(.*)$", ""]
+, ["<a(.*?)>(.*?)</a>", "$2"]
+, ["<img(.*?)src=\"(.*?)\"(.*?)>", "<a target='_blank' href='$2'><img class='clImageThumb' src='$2'></a><br>"]
+];
+?>

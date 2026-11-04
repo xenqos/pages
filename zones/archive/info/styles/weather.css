@@ -1,0 +1,118 @@
+/* ------------------------------------------------------------------------------------------ */
+
+#idContent
+{
+  padding-bottom:       2.000rem;
+}
+
+#idTime
+{
+  margin:               1.000rem 0.000rem 0.000rem 0.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+  text-align:           center;
+}
+
+.clTodayDate
+{
+  font-size:            1.125rem;
+  font-weight:          normal;
+  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+}
+
+.clTime
+{
+  font-size:            1.125rem;
+  font-weight:          normal;
+  margin:               1.000rem 0.000rem 0.000rem 0.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+}
+
+#idNow
+{
+  margin:               2.500rem 0.000rem 0.000rem 0.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+  text-align:           center;
+}
+
+.clNowTemperature
+{
+  font-size:            2.500rem;
+  font-weight:          bold;
+  margin:               1.500rem 0.000rem 1.000rem 0.000rem;
+  padding:              1.000rem 0.000rem 0.000rem 0.000rem;
+  vertical-align:       top;
+}
+
+.clNowImage
+{
+  margin:              -1.000rem 0.500rem 0.000rem 1.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+}
+
+#idTodayRangeTemp
+{
+  margin:               0.000rem 0.000rem 1.500rem -0.7500rem;
+  padding:              0.000rem 0.000rem 0.000rem  0.000rem;
+  text-align:           center;
+}
+
+.clTodayRangeTemp
+{
+  font-size:            1.125rem;
+  font-weight:          normal;
+  margin:               0.000rem 0.500rem 0.000rem 1.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+  vertical-align:       top;
+}
+
+.clTodayImage
+{
+  margin:              -0.500rem 0.250rem 0.000rem 0.750rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+}
+
+#idCondition
+{
+  margin:              -1.000rem 0.000rem 1.500rem 0.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+  text-align:           center;
+}
+
+.clConditionNow
+{
+  font-size:            1.250rem;
+  font-weight:          normal;
+}
+
+.clConditionDay
+{
+  font-size:            1.125rem;
+  font-weight:          normal;
+  margin:               1.000rem 0.000rem 0.000rem 0.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+}
+
+#idTodayData
+{
+  display:              flex;
+  justify-content:      center;
+}
+
+.clTodayData
+{
+  display: inline-block;
+  font-size:            1.000rem;
+  font-weight:          normal;
+  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+  text-align:           left;
+}
+
+.clRed
+{
+  color:                #aa0000;
+}
+
+
+/* ------------------------------------------------------------------------------------------ */

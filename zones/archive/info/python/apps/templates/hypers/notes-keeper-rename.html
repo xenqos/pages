@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0'>
+  <title>{$file_noext}</title>
+  <link rel='stylesheet' type='text/css' media='screen' href='../styles/commons.css'>
+  <script type='text/javascript' src='../scripts/commons.js'></script>
+</head>
+<body>
+<div id='idPanel'>
+<div id='idTopbar'>
+  <div id='idTopbarNavigation'>
+    <a href='../index.html'><span class='clNavHome'></span></a>
+    {$nav_index}
+    {$nav_up}
+  </div>
+</div>
+<div id='idContent'>
+
+<h1>Rename {$file_noext}</h1>
+
+<form id='idMain' name='varMain' method='post' action='./notes-keeper.php'>
+  <input id='idNodeName' name='varNodeName' type='text' placeholder='' value="{$file_noext}" maxlength='128' size='80'>
+  <br>
+  <br>
+  <input id='idSubmitButton'    type='submit' value='Rename'>
+  <input name='varFuncId'       type='hidden' value="rename_post">
+  <input name='varDirCurrent'   type="hidden" value="{$dir_current}">
+  <input name='varNodeType'     type="hidden" value="{$node_type}">
+</form>
+
+</div>
+</div>
+</body>
+</html>

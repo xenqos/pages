@@ -1,0 +1,39 @@
+media_type        : 'link'
+media_name        : 'Reuters - Technology'
+media_url         : 'https://www.reuters.com/news/technology'
+
+module_body       : 'div[class*="column1 col col-10"]'
+module_article    : 'article'
+module_headline   : 'h3'
+
+article_body      : 'div[class=StandardArticleBody_body]'
+article_title     : 'h1[class=ArticleHeader_headline]'
+article_date      : 'div[class=ArticleHeader_date]'
+article_author    : ''
+
+clean_module      : [
+                    ['', ''],
+                    ]
+
+clean_article_pre : [
+                    ['', ''],
+                    ]
+
+clean_article_post: [
+#                    ['<span id(.*?)span>', ''],
+#                    ['<span class(.*?)span>', ''],
+                    ['aria-label="(.*?)"', ''],
+                    ['<figcaption>(.*?)</figcaption>', ''],
+                    ['<svg(.*?)svg>', ''],
+                    ['<div class="Image_expand-button"(.*?)>(.*?)</div>', ''],
+                    ['<figure(.*?)>(.*?)</figure>', '\2'],
+                    ['<div class="LazyImage_container LazyImage_dark" style="background-image:none">(.*?)</div>', '\1'],
+                    ['<div class="Image_container" tabindex="-1">(.*?)</div>', '\1'],
+                    ['<div class="PrimaryAsset_container">(.*?)</div>', '\1'],
+                    ['<div class="LazyImage_image LazyImage_fallback"(.*?)>(.*?)</div>', ''],
+                    ['<div class="Image_container"(.*?)>(.*?)</div>', ''],
+                    ['src="//(.*?)w=20"', 'src="https://\1w=1200"'],
+                    ['<img(.*?)src="(.*?)"(.*?)>', '<a target=''_blank'' class=''clLink'' href=''\2''><img class=''clImageThumb'' src=''\2''></a>'],
+                    ['<a href="(.*?)jpg">here</a>', '<br><a target=''_blank'' class=''clLink'' href=''\1jpg''><img class=''clImageThumb'' src=''\1jpg''></a>'],
+                    ['<a href="(.*?)png">here</a>', '<br><a target=''_blank'' class=''clLink'' href=''\1png''><img class=''clImageThumb'' src=''\1png''></a>'],
+                    ]

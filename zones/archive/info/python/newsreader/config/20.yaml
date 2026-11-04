@@ -1,0 +1,35 @@
+media_type        : 'link'
+media_name        : 'Investing.ru - Аналитика Выбор'
+media_url         : 'https://ru.investing.com/analysis/editors-picks'
+
+module_body       : 'div[class*=largeTitle]'
+module_article    : 'article[class^="js-article-item articleItem"]'
+module_headline   : 'div a'
+
+article_body      : 'div[class*=articlePage]'
+article_title     : 'h1'
+article_date      : 'div[class=contentSectionDetails] span'
+article_author    : 'div[class=contentSectionDetails] i a'
+
+clean_module      : [
+                    ['', ''],
+                    ]
+
+clean_article_pre : [
+#                    ['<span class(.*?)span>', ''],
+#                    ['<span id(.*?)span>', ''],
+#                    ['<span style(.*?)span>', ''],
+                    ]
+
+clean_article_post: [
+                    ['<aside(.*?)aside>', ''],
+                    ['<video(.*?)video>', ''],
+                    ['<div class="align_center">(.*?)</div>', '\1'],
+                    ['<div class="contentMediaBoxBottom(.*?)">(.*?)</div>', ''],
+                    ['<div class="contentMediaBox(.*?)"(.*?)>(.*?)</div>', '\3'],
+                    ['<h(.*?)>(.*?)</h(.*?)>', '<em>\2</em>'],
+                    ['<p data-id="(.*?)"(.*?)>(.*?)</p>', ''],
+                    [' dir="ltr"', ''],
+                    ['<div id="imgCarousel"(.*?)>(.*?)</div>', '\2'],
+                    ['<img(.*?)src="(.*?)"(.*?)>', '<a target=''_blank'' class=''clLink'' href=''\2''><img class=''clImageThumb'' src=''\2''></a>'],
+                    ]

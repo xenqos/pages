@@ -1,0 +1,58 @@
+config_enabled  : "false"
+config_type     : "link"
+
+media_name      : "Capital.fr"
+media_url       : "https://www.capital.fr/"
+media_encode    : "false"
+
+module_body     : "main"
+module_article  : "article"
+module_headline : "a[class=bi-title-link]"
+
+article_body    : "article"
+article_title   : "h1"
+article_date    : "time"
+article_author  : "span[class=page-article-author] a"
+
+clean_module:
+  - ['', '']
+
+clean_article_pre:
+  - ['', '']
+
+clean_article_post:
+  - ['<h1(.*?)h1>', '']
+  - ['<button(.*?)button>', '']
+  - ['<template(.*?)template>', '']
+  - ['<svg(.*?)svg>', '']
+  - ['<div class=\"ads-core-placer\"(.*?)>(.*?)</div>', '']
+  - ['<div class=\"page-article-share\">(.*?)</div>', '']
+  - ['<div class=\"page-article-meta\">(.*?)</div>', '']
+  - ['<span class=\"page-article-media-copyright\">(.*?)</span>', '']
+  - ['<span class=\"page-article-media-legend\">(.*?)</span>/s", "<p><i>$1</i></p>"]
+  - ['<span class=\"credit\">(.*?)</span>', '']
+  - ['<source(.*?)>', '']
+  - ['<picture(.*?)>(.*?)</picture>/s", "$2"]
+  - ['<figcaption(.*?)>(.*?)</figcaption>/s", "$2"]
+  - ['<figure(.*?)>(.*?)</figure>/s", "$2"]
+  - ['<div(\s+)class=\"logora_synthese\"(.*?)>(.*?)</div>', '']
+  - ['<div(\s+)data-pmc-insert(.*?)>(.*?)</div>', '']
+  - ['<div class=\"tagList\">(.*?)</div>', '']
+  - ['<em>&Agrave; lire aussi(.*?)</em>', '']
+  - ['<strong>&Agrave; lire aussi(.*?)</strong>', '']
+  - ['<p>Version originale(.*?)</p>', '']
+  - ['<header(.*?)>(.*?)</header>/s", "$2"]
+  - ['<iframe(.*?)iframe>', '']
+  - ['<script(.*?)script>', '']
+  - ['<div(.*?)>', '']
+  - ['</div>', '']
+  - ['<a(.*?)>(.*?)</a>/s", "$2"]
+  - ['<img(.*?)src=\"(.*?)\"(.*?)>/s", "<a target='_blank' href='$2'><img class='clImageThumb' src='$2'></a><br>"]
+  - ['<h2(.*?)>(.*?)</h2>/s", "<p><b>$2</b></p>"]
+  - ['<em><strong>(.*?)</strong></em>', '']
+  - ['<strong><em>(.*?)</em></strong>', '']
+  - ['<video(.*?)>(.*?)</video>', '']
+  - ['</cite>/s", "</cite><br>"]
+  - ['<ul class=\"bookmark-tag\">(.*?)</ul>', '']
+  - ['<strong>(.*?)</strong>/s", "$1"]
+  - ['<b>(.*?)</b>/s", "$1"]

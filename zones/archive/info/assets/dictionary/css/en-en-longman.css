@@ -1,0 +1,146 @@
+#idSound
+{
+  margin:               0.500rem 0.000rem 0.500rem 0.500rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+}
+
+.Head
+{
+  color:                #aa0000;
+  display:              block;
+  font-weight:          bold;
+}
+
+.clSup
+{
+  font-size:            0.700rem;
+}
+
+.PronCodes
+{
+  color:                #000000;
+  font-weight:          normal;
+}
+
+.POS
+{
+  color:                #008800;
+  font-weight:          500;
+}
+
+
+.COLLOINEXA
+{
+  color:                #000000;
+  font-weight:          500;
+}
+
+span.EXAMPLE::before
+{
+  content:              "\A";
+  white-space:          pre;
+}
+
+.SIGNPOST
+{
+  background-color:     #f18500;
+  color:                #ffffff;
+  font-size:            70%;
+  font-weight:          500;
+  margin:               0.000rem 0.250rem 0.000rem 0.250rem;
+  padding:              0.000rem 0.250rem 0.000rem 0.250rem;
+  text-transform:       uppercase;
+}
+
+.sensenum
+{
+  font-weight:          700;
+}
+
+.sensenum::before
+{
+  content:              "\A";
+  white-space:          pre;
+}
+
+.synopp
+{
+  background-color:     #f1d600;
+  color:                #000000;
+  font-size:            70%;
+  font-weight:          500;
+  margin:               0.000rem 0.250rem 0.000rem 0.250rem;
+  padding:              0.000rem 0.250rem 0.000rem 0.250rem;
+  text-transform:       uppercase;
+}
+
+.SYN,
+.OPP
+{
+  background-color:     #ffffff;
+  color:                #000000;
+  font-size:            100%;
+  font-weight:          400;
+  text-transform:       none;
+}
+
+.GRAM
+{
+  color:                #008800;
+  font-weight:          500;
+}
+
+.neutral
+{
+  color:                #000000;
+  font-weight:          500;
+}
+
+.FIELDXX
+{
+  background-color:     #B8E6E6;
+  color:                #000000;
+  font-size:            70%;
+  font-weight:          500;
+  margin:               0.000rem 0.250rem 0.000rem 0.250rem;
+  padding:              0.000rem 0.250rem 0.000rem 0.250rem;
+}
+
+.topics_container,
+.ColloBox,
+.ThesBox,
+.Thesref,
+span[id^="ad_contentslot"],
+span[class^="asset"]
+{
+  display:              none;
+}
+
+.sensenum::before
+{
+  content:              "\A";
+  white-space:          pre;
+}
+
+.Tail::before
+{
+  content:              "\A";
+  white-space:          pre;
+}
+
+span[class="sensenum span"]::after
+{
+  content:              "  ";
+  white-space:          pre;
+}
+
+.PROPFORM,
+.PROPFORMPREP
+{
+  background-color:     #E5E5E5;
+  background-color:     #E3F0D7;
+  color:                #000000;
+  font-size:            100%;
+  margin:               0.000rem 0.000rem 0.000rem 1.000rem;
+  padding:              0.000rem 0.500rem 0.000rem 0.500rem;
+}

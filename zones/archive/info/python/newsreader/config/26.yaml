@@ -1,0 +1,36 @@
+media_type        : 'link'
+media_name        : 'БTA - Page 2'
+media_url         : 'http://www.bta.bg/bg/page/214?page=2'
+
+module_body       : 'div[class=top-stories]'
+module_article    : 'li'
+module_headline   : 'h4 a'
+
+article_body      : 'article'
+article_title     : 'div[class=page-title] h1'
+article_date      : 'time'
+article_author    : ''
+
+clean_module      : [
+                    ['', ''],
+                    ]
+
+clean_article_pre : [
+                    ['', ''],
+                    ]
+
+clean_article_post: [
+                    ['\t', ''],
+                    ['<script(.*?)script>', ''],
+                    ['<address(.*?)address>', ''],
+                    ['<g\:plus(.*?)g\:plus>', ''],
+                    ['<div class="share-btn" style="(.*?)">(.*?)</div>', ''],
+                    ['<div class="fb-like"(.*?)>(.*?)</div>', ''],
+                    ['<div class="share-btn">(.*?)</div>', ''],
+                    ['<div class="social">(.*?)</div>', ''],
+                    ['<div class="page-title"> (.*?)</div>', ''],
+                    ['<div class="news-content"> (.*?)</div>', '\1'],
+                    ['(alt|itemprop)="(.*?)"', ''],
+                    ['src="', 'src="http://www.bta.bg'],
+                    ['<img(.*?)src="(.*?)"(.*?)>', '<a target=''_blank'' class=''clLink'' href=''\2''><img class=''clImageThumb'' src=''\2''></a>'],
+                    ]

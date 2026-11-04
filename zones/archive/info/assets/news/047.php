@@ -1,0 +1,56 @@
+<?php
+$config_enabled  = "true";
+$config_type     = "link";
+
+$media_name      = "Lifestyle.bg - Page 2";
+$media_url       = "https://lifestyle.bg/latest?page=2";
+$media_encode    = "false";
+$media_encoding  = "";
+
+$module_body     = "div[class=inner-page]";
+$module_article  = "div[class=topic]";
+$module_headline = "div[class=topic-information] h2 a";
+
+$article_body    = "article";
+$article_title   = "h1";
+$article_date    = "p[class=time]";
+$article_author  = "";
+
+$clean_module    =
+[
+  ["<div class=\"main-news\">", "<div class=\"topic\">"]
+, ["<div class=\"news-info\">(.*?)<h2>(.*?)</h2>(.*?)</div>", "<div class=\"topic-information\"><h2>$2</h2></div>"]
+];
+
+$clean_article_pre  =
+[
+  ["", ""]
+];
+
+$clean_article_post =
+[
+  ["(.*)/header>", ""]
+, ["<meta(.*?)>", ""]
+, ["(alt|itemprop)=\"(.*?)\"", ""]
+, ["class=\"(thumb|title)\"", ""]
+, ["<div class=\"source-ribbon\">(.*?)</div>", ""]
+, ["<div class=\"btn\">(.*?)</div>", ""]
+, ["<div class=\"btn rate\"(.*?)>(.*?)</div>", ""]
+, ["<strong>(.*?)</strong>", "$1"]
+, ["<div id=\"gpt-banner-1-tablet\">(.*?)</div>", ""]
+, ["<div class=\"banner-1\">(.*?)</div>", ""]
+, ["<div class=\"banners tablet-banners\">(.*?)</div>", ""]
+, ["<div class=\"social-links\">(.*?)</div>", ""]
+, ["<div id=\"gpt-banner-11\">(.*?)</div>", ""]
+, ["<div class=\"img\"(.*?)>(.*?)</div>", "$2"]
+, ["<div class=\"img-wrapper\">(.*?)</div>", "$1"]
+, ["<div class=\"img-or-video img-gallery\">(.*?)</div>", "$1"]
+, ["<div class=\"small-ribbon\">(.*?)</div>", ""]
+, ["<div class=\"md-thumb\">(.*?)</div>", ""]
+, ["<div class=\"reference-article\">(.*?)</div>", ""]
+, ["<div class=\"editors-choice\"(.*)", ""]
+, ["<ul class=\"tags\"(.*?)> (.*)", ""]
+, [" (alt|style)=\"(.*?)\"", ""]
+, ["<img(.*?)src=\"(.*?)\"(.*?)>", "<a target='_blank' href='$2'><img class='clImageThumb' src='$2'></a><br>"]
+];
+?>
