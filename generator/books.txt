@@ -1,100 +1,65 @@
 #-----------------------------------------------------------------------------
-#  Philosophy
+#  Dao
 #-----------------------------------------------------------------------------
 
-philosophy/dao-de-jing-ru        ;  0  ;  dao de jing (ru)
-philosophy/dao-de-jing-zh        ;  0  ;  dao de jing (zh)
-philosophy/stratagems            ;  0  ;  stratagems
-philosophy/tai-ji-fu-zhong-wen   ;  0  ;  tai ji - fu zhong wen
-philosophy/tai-ji-moy-lin-shin   ;  0  ;  tai ji - moy lin shin
-philosophy/yi-jing               ;  0  ;  yi jing
+dao/dao-de-jing-ru                ;  0  ;  dao de jing (ru)
+dao/dao-de-jing-zh                ;  0  ;  dao de jing (zh)
+dao/stratagems                    ;  0  ;  stratagems
+dao/tai-ji-fu-zhong-wen           ;  0  ;  tai ji - fu zhong wen
+dao/tai-ji-moy-lin-shin           ;  0  ;  tai ji - moy lin shin
+dao/yi-jing                       ;  0  ;  yi jing
+
+# Buddhism
+# buddhism/teaching               ;  0  ; Учение
+# buddhism/texts                  ;  0  ; Тексты
+# buddhism/kriya                  ;  0  ; Крия
 
 #-----------------------------------------------------------------------------
-#  Linguistics - Chinese
+#  Lingvo - Chinese
 #-----------------------------------------------------------------------------
 
-linguistics/zh-conversations     ;  0  ;  Conversations
-linguistics/zh-words             ;  0  ;  Words
-linguistics/zh-groups            ;  0  ;  Groups
-linguistics/zh-writing           ;  1  ;  Writing
+lingvo/zh-conversations           ;  0  ;  Conversations
+lingvo/zh-grammar                 ;  1  ;  Grammar
+lingvo/zh-words                   ;  0  ;  Words
+lingvo/zh-groups                  ;  0  ;  Groups
+lingvo/zh-writing                 ;  0  ;  Writing
 
 #-----------------------------------------------------------------------------
-#  Buddhism
+#  Lingvo - Български
 #-----------------------------------------------------------------------------
 
-buddhism/teaching                ;  0  ; Учение
-buddhism/texts                   ;  0  ; Тексты
-buddhism/kriya                   ;  0  ; Крия
+lingvo/bg-grammar                 ;  0  ;  Граматика
+lingvo/bg-words                   ;  0  ;  Думи
+lingvo/bg-phrases                 ;  0  ;  Фрази
+lingvo/bg-verbs                   ;  0  ;  Глаголи
+lingvo/bg-berlitz                 ;  0  ;  Berlitz
+lingvo/bg-conversations           ;  0  ;  Разговори
 
 #-----------------------------------------------------------------------------
-#  Linguistics - Български
+#  Lingvo - English
 #-----------------------------------------------------------------------------
 
-linguistics/bg-grammar           ;  0  ;  Граматика
-linguistics/bg-words             ;  0  ;  Думи
-linguistics/bg-phrases           ;  0  ;  Фрази
-linguistics/bg-verbs             ;  0  ;  Глаголи
-linguistics/bg-frequent-words    ;  0  ;  Честотен речник
-linguistics/bg-berlitz           ;  0  ;  Berlitz
-linguistics/bg-conversations     ;  0  ;  Разговори
+lingvo/en-phonetics               ;  0  ;  Phonetics
+lingvo/en-orthography             ;  0  ;  Orthography
+lingvo/en-grammar                 ;  0  ;  Grammar
+lingvo/en-grammar-outline         ;  0  ;  Grammar Outline
+lingvo/en-phrases                 ;  0  ;  Phrases
+lingvo/en-words                   ;  0  ;  Words
+lingvo/en-conversations           ;  0  ;  Conversations
+lingvo/en-verbs-irregular         ;  0  ;  Irregular Verbs
+lingvo/en-verbs-phrasal           ;  0  ;  Phrasal Verbs
 
 #-----------------------------------------------------------------------------
-#  Linguistics - English
+#  Lingvo - Russisch
 #-----------------------------------------------------------------------------
 
-linguistics/en-phonetics         ;  0  ;  Phonetics
-linguistics/en-orthography       ;  0  ;  Orthography
-linguistics/en-grammar           ;  0  ;  Grammar
-linguistics/en-grammar-outline   ;  0  ;  Grammar Outline
-linguistics/en-frequent-words    ;  0  ;  Frequent Words
-linguistics/en-ielts-words       ;  0  ;  IELTS Words
-linguistics/en-phrases           ;  0  ;  Phrases
-linguistics/en-words             ;  0  ;  Words
-linguistics/en-conversations     ;  0  ;  Conversations
-linguistics/en-verbs-irregular   ;  0  ;  Irregular Verbs
-linguistics/en-verbs-phrasal     ;  0  ;  Phrasal Verbs
-
-#-----------------------------------------------------------------------------
-#  Linguistics - Français
-#-----------------------------------------------------------------------------
-
-linguistics/fr-phonetique        ;  0  ;  Phonétique tables
-linguistics/fr-phonemes-lettres  ;  0  ;  De phonèmes à lettres
-linguistics/fr-prononciation     ;  0  ;  Prononciation
-linguistics/fr-haspire           ;  0  ;  H aspiré
-linguistics/fr-grammaire         ;  0  ;  Grammaire
-linguistics/fr-verbs             ;  0  ;  Verbs
-linguistics/fr-mots              ;  0  ;  Mots
-linguistics/fr-mots-frequents    ;  0  ;  Mots fréquents
-linguistics/fr-expressions       ;  0  ;  Expressions
-linguistics/fr-phrases-cliches   ;  0  ;  Phrases cliches
-linguistics/fr-conversations     ;  0  ;  Conversations
-linguistics/rimes-mystiques      ;  0  ;  Les Rimes mystiques
-
-#-----------------------------------------------------------------------------
-#  Linguistics - Deutsch
-#-----------------------------------------------------------------------------
-
-linguistics/de-phonetics         ;  0  ;  Phonetik
-linguistics/de-grammar           ;  0  ;  Grammatik
-linguistics/de-words             ;  0  ;  Слова
-linguistics/de-nouns             ;  0  ;  Существительные
-linguistics/de-adverbs           ;  0  ;  Наречия
-linguistics/de-verbs             ;  0  ;  Глаголы
-linguistics/de-strong-verbs      ;  0  ;  Сильные глаголы
-linguistics/de-conversations     ;  0  ;  Разговоры
-
-#-----------------------------------------------------------------------------
-#  Linguistics - Russisch
-#-----------------------------------------------------------------------------
-
-linguistics/ru-graphomania       ;  0  ;  Graphomania
+lingvo/ru-graphomania             ;  0  ;  Graphomania
 
 #-----------------------------------------------------------------------------
 #  Poker
 #-----------------------------------------------------------------------------
 
-poker/principles                 ;  0  ;  Principles
-poker/mathematics                ;  0  ;  Mathematics
+poker/principles                  ;  0  ;  Principles
+poker/mathematics                 ;  0  ;  Mathematics
 
 #-----------------------------------------------------------------------------
