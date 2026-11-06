@@ -174,8 +174,8 @@ sub get_markdown
   # Images
   #---------------------------------------------------------
 
+  $source_content =~ s/\^\[(.*?)\|(.*?)\]/<a target='_blank' href='\.\.\/images\/$1\/$2'><img class='clImageThumb' alt='$1' src='\.\.\/images\/$1\/$2'><\/a>/g;
   $source_content =~ s/\^\[(.*?)\]/<a target='_blank' href='\.\.\/images\/$1'><img class='clImageThumb' src='\.\.\/images\/$1'><\/a>/g;
-  $source_content =~ s/\@\[(.*?)\|(.*?)\]/<img class='clImageThumb' alt='$1' src='\.\.\/images\/$1\/$2'>/g;
   $source_content =~ s/\@\[(.*?)\]/<img src='\.\.\/images\/$1'>/g;
 
   #---------------------------------------------------------

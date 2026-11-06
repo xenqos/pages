@@ -18,11 +18,11 @@ dao/yi-jing                       ;  0  ;  yi jing
 #  Lingvo - Chinese
 #-----------------------------------------------------------------------------
 
-lingvo/zh-conversations           ;  0  ;  Conversations
 lingvo/zh-grammar                 ;  1  ;  Grammar
+lingvo/zh-strokes                 ;  1  ;  Strokes
 lingvo/zh-words                   ;  0  ;  Words
 lingvo/zh-groups                  ;  0  ;  Groups
-lingvo/zh-writing                 ;  0  ;  Writing
+lingvo/zh-conversations           ;  0  ;  Conversations
 
 #-----------------------------------------------------------------------------
 #  Lingvo - Български
