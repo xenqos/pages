@@ -191,24 +191,33 @@ sub get_markdown
   };
   $source_content =~ s/\*\[(.*?)\]/$callback_07->($1)/esg;
 
+  my $callback_08 = sub
+  {
+    my ($matched) = @_;
+    my $callback_return = "<audio id='${matched}' src='../sounds/${matched}' preload='auto'></audio>\n";
+    $callback_return .= "<span class='clAudio'><span class='clNavRewind' onclick='fncRewindTrack(&quot;${matched}&quot;)'></span><span class='clNavPlay' onclick='fncPlayTrack(&quot;${matched}&quot;)'></span></span>";
+    return $callback_return;
+  };
+  $source_content =~ s/\*\[(.*?)\]/$callback_08->($1)/esg;
+
   #---------------------------------------------------------
   # Video
   #---------------------------------------------------------
 
-  my $callback_08 = sub
+  my $callback_09 = sub
   {
     my ($matched_1, $matched_2) = @_;
     my $callback_return = "<video id='${matched_1}' src='../videos/${matched_1}' poster='../images/${matched_2}' controls loop preload='auto'></video>\n";
     # $callback_return .= "<div class='clVideo'><span class='clNavRewind' onclick='fncRewindTrack(&quot;${matched_1}&quot;)'></span><span class='clNavPlay' onclick='fncPlayTrack(&quot;${matched_1}&quot;)'></span></div>";
     return $callback_return;
   };
-  $source_content =~ s/=\[(.*?),(.*?)\]/$callback_08->($1, $2)/esg;
+  $source_content =~ s/=\[(.*?),(.*?)\]/$callback_09->($1, $2)/esg;
 
   #---------------------------------------------------------
   # Table ¦ U00A6
   #---------------------------------------------------------
 
-  my $callback_09 = sub
+  my $callback_10 = sub
   {
     my ($matched) = @_;
     $matched =~ s/^\¦(.*?)\¦$/<tr><th>$1<\/th><\/tr>/mg;
@@ -219,9 +228,9 @@ sub get_markdown
     my $callback_return = "<div class='clOverflow'><table>${matched}</table></div>";
     return $callback_return;
   };
-  $source_content =~ s/\[\|\n(.*?)\n\|\]/$callback_09->($1)/esg;
+  $source_content =~ s/\[\|\n(.*?)\n\|\]/$callback_10->($1)/esg;
 
-  my $callback_10 = sub
+  my $callback_11 = sub
   {
     my ($matched) = @_;
     $matched =~ s/^\^(.*?)\^$/<tr><th>$1<\/th><\/tr>/mg;
@@ -232,7 +241,7 @@ sub get_markdown
     my $callback_return = "<div class='clOverflow'><table class='clNoBorder'>${matched}</table></div>";
     return $callback_return;
   };
-  $source_content =~ s/\[\|\-\n(.*?)\n\|\]/$callback_10->($1)/esg;
+  $source_content =~ s/\[\|\-\n(.*?)\n\|\]/$callback_11->($1)/esg;
 
   #---------------------------------------------------------
   # If Then Elsif Else
