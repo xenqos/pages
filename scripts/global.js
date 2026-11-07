@@ -197,6 +197,34 @@ function fncPlayTrack(strTrack, event)
   }
 }
 
+/*--------------------------------------------------------------------------*/
+
+var strHanziSoundsDir = '../../zh-resources/sounds/';
+var strSoundType = 'opus';
+
+var objAudio = new Audio();
+
+function fncPlayHanzi(strHanziSound)
+{
+  var strSound = strHanziSoundsDir + strHanziSound + '.' + strSoundType;
+
+  objAudio.src = strSound;
+  objAudio.play().catch(function (err)
+  {
+    console.error('Cannot play:', strSound, err);
+  });
+}
+
+document.addEventListener('click', function (e)
+{
+  var objLink = e.target.closest('a[data-hanzi-sound]');
+  if (!objLink) return;
+  e.preventDefault();
+  fncPlayHanzi(objLink.dataset.hanziSound);
+});
+
+/*--------------------------------------------------------------------------*/
+
 /*-----------------------------------------------------------------------------------------------*/
 /* Images                                                                                        */
 /*-----------------------------------------------------------------------------------------------*/

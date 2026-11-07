@@ -185,11 +185,11 @@ sub get_markdown
   my $callback_07 = sub
   {
     my ($matched) = @_;
-    my $callback_return = "<audio id='${matched}' src='../sounds/${matched}' preload='auto'></audio>\n";
-    $callback_return .= "<span class='clAudio'><span class='clNavRewind' onclick='fncRewindTrack(&quot;${matched}&quot;)'></span><span class='clNavPlay' onclick='fncPlayTrack(&quot;${matched}&quot;)'></span></span>";
+    my $callback_return = "";
+    $callback_return .= "<span class='clHanziSound'><a href='#' data-hanzi-sound='${matched}'>${matched}</a></span>";
     return $callback_return;
   };
-  $source_content =~ s/\*\[(.*?)\]/$callback_07->($1)/esg;
+  $source_content =~ s/¢\[(.*?)\]/$callback_07->($1)/esg;
 
   my $callback_08 = sub
   {

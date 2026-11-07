@@ -972,6 +972,19 @@ q.x::after { content: url("../images/suits/nosuit.svg"); }
 .zhm { color: #aa0000 !important; font-size: var(--hanzi-standard-size) !important; }
 .zh  { color: var(--color-black-white) !important; font-size: var(--hanzi-standard-size) !important; }
 
+.clHanziSound a,
+.clHanziSounda:visited
+{
+  color:                var(--color-darkblue);
+  text-decoration:      none;
+}
+
+.clHanziSounda:hover
+{
+  color:                light-dark(#dd0000, #ff6b6b);
+  text-decoration:      none;
+}
+
 /*--------------------------------------------------------------------------*/
 
 @media screen and (width:  800px) { html { font-size: 1.000rem; } }
