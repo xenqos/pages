@@ -22,6 +22,12 @@
     <span id='idHanziSound' class='clNavSound'></span>
     <span id='idHanziPlay' class='clNavPlay'></span>
     <span id='idHanziQuiz' class='clNavQuiz'></span>
+    <span id='idSearchBox'>
+      <form onsubmit="fncOnLoad(this.elements.varHanziId); return false;">
+        <input id='idHanziInput' type='text' name='varHanziId' size='1'>
+        <input id='idSearchSubmit' type='submit' value=''>
+      </form>
+    </span>
   </div>
 </div>
 <div id='idContent'>

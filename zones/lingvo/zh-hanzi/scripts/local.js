@@ -13,7 +13,11 @@ function fncGetHanzi()
 
 function fncOnLoad(objParameter)
 {
-  window.location.href = './hanzi.html?hanzi=' + encodeURIComponent(objParameter.textContent);
+  const strText = (objParameter.value !== undefined) ? objParameter.value : objParameter.textContent;
+  const strHanzi = strText.trim();
+  if (!strHanzi) return;
+
+  window.location.href = './hanzi.html?hanzi=' + encodeURIComponent(strHanzi);
 }
 
 /*--------------------------------------------------------------------------*/
@@ -37,6 +41,36 @@ async function fncProcessHanzi()
   if (!objElement) return;
 
   //  objElement.textContent = strHanzi;
+
+  var objStrokes = HanziWriter.create('idGridTarget', strHanzi,
+  {
+    width:                320,
+    height:               320,
+    padding:              0,
+
+    highlightOnComplete:  false,
+    delayBetweenStrokes:  500,
+    delayBetweenLoops:    1000,
+    strokeColor:          '#000000',
+    radicalColor:         '#000000',
+    outlineColor:         '#eeeeee',
+
+    charDataLoader: function(char, onComplete) {
+      $.getJSON('../../zh-resources/strokes/' + strHanzi + '.json', function(charData) {
+        onComplete(charData);
+      });
+    }
+  });
+
+  document.getElementById('idHanziPlay').addEventListener('click', function()
+  {
+    objStrokes.animateCharacter();
+  });
+
+  document.getElementById('idHanziQuiz').addEventListener('click', function()
+  {
+    objStrokes.quiz();
+  });
 
   try
   {
