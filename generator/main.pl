@@ -9,7 +9,7 @@ use feature 'state';
 #-----------------------------------------------------------
 
 my $dir_prefix       = '../zones';
-my $dir_templates    = './templates';
+my $dir_templates    = '../templates';
 my $dir_name_pages   = 'pages';
 my $dir_name_sources = 'sources';
 my $dir_name_sounds  = 'sounds';
