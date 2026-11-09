@@ -4,11 +4,19 @@
 
 /*--------------------------------------------------------------------------*/
 
+function fncGetHanzi()
+{
+  return new URLSearchParams(window.location.search).get('hanzi');
+}
+
+/*--------------------------------------------------------------------------*/
 
 function fncOnLoad(objParameter)
 {
   window.location.href = './hanzi.html?hanzi=' + encodeURIComponent(objParameter.textContent);
 }
+
+/*--------------------------------------------------------------------------*/
 
 function fncSetText(strId, strValue)
 {
@@ -18,13 +26,15 @@ function fncSetText(strId, strValue)
   if (objElement) objElement.textContent = strValue;
 }
 
+/*--------------------------------------------------------------------------*/
+
 async function fncProcessHanzi()
 {
+  const strHanzi = fncGetHanzi();
+  if (!strHanzi) return;
+
   const objElement = document.getElementById('idHanzi');
   if (!objElement) return;
-
-  const strHanzi = new URLSearchParams(window.location.search).get('hanzi');
-  if (!strHanzi) return;
 
   //  objElement.textContent = strHanzi;
 
@@ -45,12 +55,25 @@ async function fncProcessHanzi()
     fncSetText('idHanziEtymologySemantic',  objData.etymology && objData.etymology.semantic);
     fncSetText('idHanziEtymologyPhonetic',  objData.etymology && objData.etymology.phonetic);
     fncSetText('idHanziEtymologyHint',      objData.etymology && objData.etymology.hint);
+
+    const strPinyin = objData.pinyin && objData.pinyin[0];
+    const objSound  = document.getElementById('idHanziSound');
+
+    if (strPinyin && objSound)
+    {
+      objSound.addEventListener('click', function()
+      {
+        fncPlayHanzi(strPinyin);
+      });
+    }
   }
   catch (objError)
   {
     console.error('Failed to load hanzi data:', objError);
   }
 }
+
+/*--------------------------------------------------------------------------*/
 
 document.addEventListener('DOMContentLoaded', fncProcessHanzi);
 
