@@ -2,12 +2,15 @@
 
 'use strict';
 
-function fncHanziShow(objParameter)
+/* ------------------------------------------------------------------------ */
+
+
+function fncOnLoad(objParameter)
 {
   window.location.href = './template.html?hanzi=' + encodeURIComponent(objParameter.textContent);
 }
 
-function fncHanziLoad()
+function fncProcessHanzi()
 {
   const objElement = document.getElementById('idHanzi');
   if (!objElement) return;
@@ -16,6 +19,6 @@ function fncHanziLoad()
   if (strHanzi) objElement.textContent = strHanzi;
 }
 
-document.addEventListener('DOMContentLoaded', fncHanziLoad);
+document.addEventListener('DOMContentLoaded', fncProcessHanzi);
 
 /* ------------------------------------------------------------------------ */
