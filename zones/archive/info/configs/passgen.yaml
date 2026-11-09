@@ -1,8 +1,0 @@
-title : Password Generator
-zone  : tc
-
-file_adjectives : list_adjectives.txt
-file_nouns      : list_nouns.txt
-
-password : ''
-entropy : ''
