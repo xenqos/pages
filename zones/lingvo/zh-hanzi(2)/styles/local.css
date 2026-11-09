@@ -1,0 +1,77 @@
+/*--------------------------------------------------------------------------*/
+/* Hanzi Strokes                                                            */
+/*--------------------------------------------------------------------------*/
+
+/*
+#idGridTargetWrapper
+{
+  text-align:           center;
+  margin:               1.250rem 0.000rem 0.250rem 0.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+}
+*/
+
+.clHanziInfoHeader
+{
+  color:                #888888;
+  margin:               0.000rem 0.000rem 0.000rem 1.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+}
+
+.clHanziInfoText
+{
+  margin:               0.000rem 0.000rem 0.500rem 2.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+}
+
+/*--------------------------------------------------------------------------*/
+/* Hanyu Dictionary                                                         */
+/*--------------------------------------------------------------------------*/
+
+.clHanyuHanzi
+{
+  margin:               1.250rem 0.000rem 0.000rem 0.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+}
+
+.clHanyuPinyin
+{
+  color:                #555555;
+  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+}
+
+.clHanyuDescription
+{
+  border-bottom:        1px solid #999999;
+  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
+  padding:              0.000rem 0.000rem 1.000rem 0.000rem;
+}
+
+#idHanyuWrapperDiv01,
+#idHanyuWrapperDiv02,
+#idHanyuWrapperDiv03
+{
+  margin:               1.000rem 0.000rem 1.000rem 0.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+}
+
+#idHanyuWrapperDiv01 a,
+#idHanyuWrapperDiv02 a,
+#idHanyuWrapperDiv03 a
+{
+  /*
+   f ont-size:            200%;                                                                      *
+   font-weight:           bold;
+   */
+}
+
+#idHanyuDiv01,
+#idHanyuDiv02,
+#idHanyuDiv03
+{
+  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+}
+
+/*--------------------------------------------------------------------------*/
