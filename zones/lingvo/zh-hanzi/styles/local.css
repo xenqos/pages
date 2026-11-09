@@ -158,7 +158,7 @@
   background-size:      cover;
   border:               none;
   cursor:               pointer;
-  margin:               0.000rem 0.000rem 0.000rem 1.000rem;
+  margin:               0.000rem 0.000rem 0.000rem 0.400rem;
   padding:              0.000rem 0.000rem 0.000rem 0.000rem;
   height:               1.000rem;
   width:                1.000rem;
@@ -198,6 +198,26 @@ input
   font-size:            90%;
   margin:               0.000rem 0.000rem 0.000rem 0.000rem;
   padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+}
+
+/*--------------------------------------------------------------------------*/
+
+span[class^=clNav]
+{
+  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
+  padding:              0.000rem 0.500rem 0.000rem 0.500rem;
+}
+
+#idSearchBox
+{
+  margin:              -0.300rem 0.000rem 0.000rem 0.500rem !important;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem !important;
+}
+
+#idSearchSubmit
+{
+  margin:               0.000rem 0.000rem 0.000rem 0.500rem !important;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem !important;
 }
 
 /*--------------------------------------------------------------------------*/

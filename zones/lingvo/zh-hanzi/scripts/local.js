@@ -44,8 +44,8 @@ async function fncProcessHanzi()
 
   var objStrokes = HanziWriter.create('idGridTarget', strHanzi,
   {
-    width:                320,
-    height:               320,
+    width:                280,
+    height:               280,
     padding:              0,
 
     highlightOnComplete:  false,
