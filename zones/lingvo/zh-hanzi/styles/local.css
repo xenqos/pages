@@ -2,23 +2,25 @@
 /* Hanzi Strokes                                                            */
 /*--------------------------------------------------------------------------*/
 
+/*
 #idGridTargetWrapper
 {
   text-align:           center;
   margin:               1.250rem 0.000rem 0.250rem 0.000rem;
   padding:              0.000rem 0.000rem 0.000rem 0.000rem;
 }
+*/
 
 .clHanziInfoHeader
 {
   color:                #888888;
-  margin:               0.000rem 0.000rem 0.000rem 0.000rem;
+  margin:               0.000rem 0.000rem 0.000rem 1.000rem;
   padding:              0.000rem 0.000rem 0.000rem 0.000rem;
 }
 
 .clHanziInfoText
 {
-  margin:               0.000rem 0.000rem 0.500rem 1.000rem;
+  margin:               0.000rem 0.000rem 0.500rem 2.000rem;
   padding:              0.000rem 0.000rem 0.000rem 0.000rem;
 }
 
