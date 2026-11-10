@@ -3,7 +3,7 @@
 #-----------------------------------------------------------------------------
 
 dao/dao-de-jing-ru                ;  0  ;  dao de jing (ru)
-dao/dao-de-jing-zh                ;  0  ;  dao de jing (zh)
+dao/dao-de-jing-zh                ;  1  ;  dao de jing (zh)
 dao/stratagems                    ;  0  ;  stratagems
 dao/tai-ji-fu-zhong-wen           ;  0  ;  tai ji - fu zhong wen
 dao/tai-ji-moy-lin-shin           ;  0  ;  tai ji - moy lin shin
@@ -22,7 +22,7 @@ lingvo/zh-grammar                 ;  1  ;  Grammar
 lingvo/zh-strokes                 ;  0  ;  Strokes
 lingvo/zh-words                   ;  0  ;  Words
 lingvo/zh-groups                  ;  0  ;  Groups
-lingvo/zh-conversations           ;  1  ;  Conversations
+lingvo/zh-conversations           ;  0  ;  Conversations
 
 #-----------------------------------------------------------------------------
 #  Lingvo - Български
