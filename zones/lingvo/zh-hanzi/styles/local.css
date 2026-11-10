@@ -1,5 +1,5 @@
 /*--------------------------------------------------------------------------*/
-/* Hanzi Strokes                                                            */
+/* Hanzi Grid                                                              */
 /*--------------------------------------------------------------------------*/
 
 #idGridTargetWrapper
@@ -8,6 +8,21 @@
   margin:               1.250rem 0.000rem 0.250rem 0.000rem;
   padding:              0.000rem 0.000rem 0.000rem 0.000rem;
 }
+
+.clGridOuter
+{
+  stroke:               light-dark(#aaaaaa, #555555);
+}
+
+.clGridInner
+{
+  stroke:               light-dark(#dddddd, #333333);
+}
+
+/*--------------------------------------------------------------------------*/
+/* Hanzi Strokes                                                            */
+/*--------------------------------------------------------------------------*/
+
 
 .clHanziInfoHeader
 {
@@ -127,8 +142,10 @@
 #idSearchBox #idHanzi,
 #idSearchBox #idEntry
 {
+/*
   background-color:     #eeeeee;
-  border:               none;
+*/
+  border:               none !important;
   border-bottom:        1px solid #999999;
   color:                #000000;
   display:              inline-block;
@@ -150,7 +167,9 @@
 
 #idSearchBox #idSearchSubmit
 {
+/*
   background-color:     #eeeeee !important;
+*/
   background-image:     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23777777' d='M 27.802694,0.00105272 27.795379,14.052935 6.4505263,14 12.488421,6.83 10.105263,4 0,16 10.105263,28 12.488421,25.17 6.4505263,18 H 32 L 31.99294,0.00623437 Z' /%3E%3C/svg%3E ") !important;
   background-position:  center center;
   background-repeat:    no-repeat;
@@ -218,6 +237,12 @@ span[class^=clNav]
 {
   margin:               0.000rem 0.000rem 0.000rem 0.500rem !important;
   padding:              0.000rem 0.000rem 0.000rem 0.000rem !important;
+}
+
+#idHanziInput
+{
+  border:               none !important;
+  border-bottom:        1px solid #999999 !important;
 }
 
 /*--------------------------------------------------------------------------*/

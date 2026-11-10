@@ -32,6 +32,19 @@ function fncSetText(strId, strValue)
 
 /*--------------------------------------------------------------------------*/
 
+function fncGetColors()
+{
+  const blnDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+  return {
+    stroke:  blnDark ? '#dbdbdb' : '#000000',
+    radical: blnDark ? '#dbdbdb' : '#000000',
+    outline: blnDark ? '#333333' : '#eeeeee'
+  };
+}
+
+/*--------------------------------------------------------------------------*/
+
 async function fncProcessHanzi()
 {
   const strHanzi = fncGetHanzi();
@@ -42,6 +55,8 @@ async function fncProcessHanzi()
 
   //  objElement.textContent = strHanzi;
 
+  const objColors = fncGetColors();
+
   var objStrokes = HanziWriter.create('idGridTarget', strHanzi,
   {
     width:                280,
@@ -51,9 +66,14 @@ async function fncProcessHanzi()
     highlightOnComplete:  false,
     delayBetweenStrokes:  500,
     delayBetweenLoops:    1000,
-    strokeColor:          '#000000',
-    radicalColor:         '#000000',
-    outlineColor:         '#eeeeee',
+
+    strokeColor:          objColors.stroke,
+    radicalColor:         objColors.radical,
+    outlineColor:         objColors.outline,
+
+//    strokeColor:          '#000000',
+//    radicalColor:         '#000000',
+//    outlineColor:         '#eeeeee',
 
     charDataLoader: function(char, onComplete) {
       $.getJSON('../../zh-resources/strokes/' + strHanzi + '.json', function(charData) {
