@@ -99,7 +99,19 @@ async function fncProcessHanzi()
 
     const objData = await objResponse.json();
 
-    fncSetText('idHanziCharacter',          objData.character);
+    const objCharacter = document.getElementById('idHanziCharacter');
+
+    if (objCharacter && objData.tone !== undefined && objData.tone !== null)
+    {
+      const objSpan = document.createElement('span');
+      objSpan.className   = 'clTone' + objData.tone;
+      objSpan.textContent = strHanzi;
+
+      objCharacter.textContent = '';
+      objCharacter.appendChild(objSpan);
+    }
+
+//    fncSetText('idHanziCharacter',          objData.character);
     fncSetText('idHanziDefinition',         objData.definition);
     fncSetText('idHanziTone',               objData.tone);
     fncSetText('idHanziPinyin',             objData.pinyin && objData.pinyin[0]);
