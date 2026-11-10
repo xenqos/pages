@@ -151,6 +151,13 @@ sub get_markdown
   $source_content =~ s/\[\@ \((.*?)\)\n(.*?)\n\@\]/$callback_06->($1, $2)/esg;
 
   #---------------------------------------------------------
+  # Links
+  #---------------------------------------------------------
+
+  $source_content =~ s/£\[(.*?)\]/<a onclick='fncOnLoad(this);'>$1<\/a>/g;
+  $source_content =~ s/\!\[(.*?)\|(.*?)\]/<a target='_blank' rel='noreferrer' class='clLinkBlue' href='$2'>$1<\/a>/g;
+
+  #---------------------------------------------------------
   # Styles
   #---------------------------------------------------------
 
@@ -163,12 +170,6 @@ sub get_markdown
   #---------------------------------------------------------
 
   $source_content =~ s/\# (.*?)\na\[(.*?)\]\n/<div id='idQuestion'>$1<\/div>\n<div id='idAnswer' onclick='fncRevealAnswer();'>$2<\/div>\n<script>fncHideHeading();<\/script>/g;
-
-  #---------------------------------------------------------
-  # Links
-  #---------------------------------------------------------
-
-  $source_content =~ s/\!\[(.*?)\|(.*?)\]/<a target='_blank' rel='noreferrer' class='clLinkBlue' href='$2'>$1<\/a>/g;
 
   #---------------------------------------------------------
   # Images

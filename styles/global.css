@@ -972,6 +972,19 @@ q.x::after { content: url("../images/suits/nosuit.svg"); }
 .zhm { color: #aa0000 !important; font-size: var(--hanzi-standard-size) !important; }
 .zh  { color: var(--color-black-white) !important; font-size: var(--hanzi-standard-size) !important; }
 
+/*--------------------------------------------------------------------------*/
+
+  .t1 a         , .t2 a         , .t3 a         , .t4 a         , .t5 a
+, .t1 a:link    , .t2 a:link    , .t3 a:link    , .t4 a:link    , .t5 a:link
+, .t1 a:visited , .t2 a:visited , .t3 a:visited , .t4 a:visited , .t5 a:visited
+, .t1 a:active  , .t2 a:active  , .t3 a:active  , .t4 a:active  , .t5 a:active
+{
+  color:                inherit;
+  cursor:               pointer;
+}
+
+/*--------------------------------------------------------------------------*/
+
 .clHanziSound a,
 .clHanziSounda:visited
 {
