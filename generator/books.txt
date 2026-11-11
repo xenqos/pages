@@ -2,6 +2,7 @@
 #  Dao
 #-----------------------------------------------------------------------------
 
+dao/buddhism                      ;  1  ;  buddhism
 dao/dao-de-jing-ru                ;  0  ;  dao de jing (ru)
 dao/dao-de-jing-zh                ;  0  ;  dao de jing (zh)
 dao/stratagems                    ;  0  ;  stratagems
@@ -18,9 +19,9 @@ dao/yi-jing                       ;  0  ;  yi jing
 #  Lingvo - Chinese
 #-----------------------------------------------------------------------------
 
-lingvo/zh-grammar                 ;  1  ;  Grammar
+lingvo/zh-concepts                ;  0  ;  Concepts
+lingvo/zh-grammar                 ;  0  ;  Grammar
 lingvo/zh-strokes                 ;  0  ;  Strokes
-lingvo/zh-words                   ;  0  ;  Words
 lingvo/zh-groups                  ;  0  ;  Groups
 lingvo/zh-conversations           ;  0  ;  Conversations
 
