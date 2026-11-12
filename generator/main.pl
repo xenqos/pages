@@ -154,8 +154,9 @@ sub get_markdown
   # Links
   #---------------------------------------------------------
 
-  $source_content =~ s/£\[(.*?)\|(.*?)\]/<span class='$1'><a onclick='fncOnLoad(this);'>$2<\/a><\/span>/g;
+  $source_content =~ s/£([1-5])\[(.*?)\]/<span class='t$1'><a onclick='fncOnLoad(this);'>$2<\/a><\/span>/g;
 
+#  $source_content =~ s/£\[(.*?)\|(.*?)\]/<span class='t$1'><a onclick='fncOnLoad(this);'>$2<\/a><\/span>/g;
 #  $source_content =~ s/£\[(.*?)\]/<a onclick='fncOnLoad(this);'>$1<\/a>/g;
 
   $source_content =~ s/\!\[(.*?)\|(.*?)\]/<a target='_blank' rel='noreferrer' class='clLinkBlue' href='$2'>$1<\/a>/g;
