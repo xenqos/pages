@@ -267,6 +267,25 @@ function fncSetText(strId, strValue)
 
 /*--------------------------------------------------------------------------*/
 
+function fncSetLink(strId, strUrl, strLabel)
+{
+  if (!strUrl) return;
+
+  const objElement = document.getElementById(strId);
+  if (!objElement) return;
+
+  const objLink = document.createElement('a');
+  objLink.href        = strUrl;
+  objLink.textContent = strLabel || strUrl;
+  objLink.target      = '_blank';
+  objLink.rel         = 'noopener';
+
+  objElement.textContent = '';
+  objElement.appendChild(objLink);
+}
+
+/*--------------------------------------------------------------------------*/
+
 function fncGetColors()
 {
   const blnDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -291,6 +310,8 @@ async function fncProcessHanzi()
   //  objElement.textContent = strHanzi;
 
   const objColors = fncGetColors();
+
+  fncSetLink('idHanziBKRS', 'https://bkrs.info/slovo.php?ch=' + encodeURIComponent(strHanzi), '🔗');
 
   var objStrokes = HanziWriter.create('idGridTarget', strHanzi,
   {
