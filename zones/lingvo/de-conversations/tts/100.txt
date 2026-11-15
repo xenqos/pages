@@ -1,0 +1,41 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%"><break time="1010ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Adverbien<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Adverbien<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">schon einmal – noch nie<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">schon einmal – noch nie<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Sind Sie schon einmal in Berlin gewesen?<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Sind Sie schon einmal in Berlin gewesen?<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Nein, noch nie.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Nein, noch nie.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">jemand – niemand<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">jemand – niemand<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Kennen Sie hier jemand(en)?<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Kennen Sie hier jemand(en)?<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Nein, ich kenne hier niemand(en).<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Nein, ich kenne hier niemand(en).<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">noch – nicht mehr<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">noch – nicht mehr<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Bleiben Sie noch lange hier?<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Bleiben Sie noch lange hier?<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Nein, ich bleibe nicht mehr lange hier.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Nein, ich bleibe nicht mehr lange hier.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">noch etwas – nichts mehr<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">noch etwas – nichts mehr<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Möchten Sie noch etwas trinken?<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Möchten Sie noch etwas trinken?<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Nein, ich möchte nichts mehr.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Nein, ich möchte nichts mehr.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">schon etwas – noch nichts<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">schon etwas – noch nichts<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Haben Sie schon etwas gegessen?<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Haben Sie schon etwas gegessen?<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Nein, ich habe noch nichts gegessen.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Nein, ich habe noch nichts gegessen.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">noch jemand – niemand mehr<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">noch jemand – niemand mehr<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Möchte noch jemand einen Kaffee?<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Möchte noch jemand einen Kaffee?<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Nein, niemand mehr.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Nein, niemand mehr.<break time="1500ms"/></prosody></voice>
+</speak>

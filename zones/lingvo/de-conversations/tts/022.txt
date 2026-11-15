@@ -1,0 +1,41 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%"><break time="1010ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Small Talk 3<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Small Talk 3<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Rauchen Sie?<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Rauchen Sie?<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Früher ja.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Früher ja.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Aber jetzt rauche ich nicht mehr.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Aber jetzt rauche ich nicht mehr.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Stört es Sie, wenn ich rauche?<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Stört es Sie, wenn ich rauche?<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Nein, absolut nicht.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Nein, absolut nicht.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Das stört mich nicht.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Das stört mich nicht.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Trinken Sie etwas?<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Trinken Sie etwas?<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Einen Cognac?<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Einen Cognac?<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Nein, lieber ein Bier.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Nein, lieber ein Bier.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Reisen Sie viel?<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Reisen Sie viel?<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Ja, meistens sind das Geschäftsreisen.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Ja, meistens sind das Geschäftsreisen.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Aber jetzt machen wir hier Urlaub.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Aber jetzt machen wir hier Urlaub.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Was für eine Hitze!<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Was für eine Hitze!<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Ja, heute ist es wirklich heiß.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Ja, heute ist es wirklich heiß.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Gehen wir auf den Balkon.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Gehen wir auf den Balkon.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Morgen gibt es hier eine Party.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Morgen gibt es hier eine Party.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Kommen Sie auch?<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Kommen Sie auch?<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Ja, wir sind auch eingeladen.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Ja, wir sind auch eingeladen.<break time="1500ms"/></prosody></voice>
+</speak>

@@ -1,0 +1,41 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%"><break time="1010ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Lesen und schreiben<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Lesen und schreiben<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Ich lese.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Ich lese.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Ich lese einen Buchstaben.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Ich lese einen Buchstaben.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Ich lese ein Wort.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Ich lese ein Wort.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Ich lese einen Satz.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Ich lese einen Satz.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Ich lese einen Brief.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Ich lese einen Brief.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Ich lese ein Buch.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Ich lese ein Buch.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Ich lese.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Ich lese.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Du liest.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Du liest.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Er liest.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Er liest.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Ich schreibe.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Ich schreibe.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Ich schreibe einen Buchstaben.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Ich schreibe einen Buchstaben.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Ich schreibe ein Wort.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Ich schreibe ein Wort.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Ich schreibe einen Satz.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Ich schreibe einen Satz.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Ich schreibe einen Brief.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Ich schreibe einen Brief.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Ich schreibe ein Buch.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Ich schreibe ein Buch.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Ich schreibe.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Ich schreibe.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Du schreibst.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Du schreibst.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Er schreibt.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Er schreibt.<break time="1500ms"/></prosody></voice>
+</speak>

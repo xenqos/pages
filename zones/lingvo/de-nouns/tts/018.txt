@@ -1,0 +1,16 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+die Tastatur, der Tastatur, die Tastaturen
+das Ende, des Endes, die Enden
+die Wohnung, der Wohnung, die Wohnungen
+der Drucker, des Druckers, die Drucker
+die Schule, der Schule, die Schulen
+das Boot, des Bootes, die Boote
+der Tee, des Tees, die Tees
+die Linie, der Linie, die Linien
+der Park, des Parks, die Parks
+der Laptop, des Laptops, die Laptops
+</prosody>
+</voice>
+</speak>

@@ -1,0 +1,41 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%"><break time="1010ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Im Restaurant 4<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Im Restaurant 4<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Einmal Pommes frites mit Ketchup.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Einmal Pommes frites mit Ketchup.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Und zweimal mit Mayonnaise.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Und zweimal mit Mayonnaise.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Und dreimal Bratwurst mit Senf.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Und dreimal Bratwurst mit Senf.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Was für Gemüse haben Sie?<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Was für Gemüse haben Sie?<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Haben Sie Bohnen?<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Haben Sie Bohnen?<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Haben Sie Blumenkohl?<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Haben Sie Blumenkohl?<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Ich esse gern Mais.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Ich esse gern Mais.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Ich esse gern Gurken.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Ich esse gern Gurken.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Ich esse gern Tomaten.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Ich esse gern Tomaten.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Essen Sie auch gern Lauch?<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Essen Sie auch gern Lauch?<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Essen Sie auch gern Sauerkraut?<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Essen Sie auch gern Sauerkraut?<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Essen Sie auch gern Linsen?<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Essen Sie auch gern Linsen?<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Isst du auch gern Karotten?<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Isst du auch gern Karotten?<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Isst du auch gern Brokkoli?<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Isst du auch gern Brokkoli?<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Isst du auch gern Paprika?<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Isst du auch gern Paprika?<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Ich mag keine Zwiebeln.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Ich mag keine Zwiebeln.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Ich mag keine Oliven.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Ich mag keine Oliven.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Ich mag keine Pilze.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Ich mag keine Pilze.<break time="1500ms"/></prosody></voice>
+</speak>

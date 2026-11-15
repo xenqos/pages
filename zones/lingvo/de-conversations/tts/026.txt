@@ -1,0 +1,41 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%"><break time="1010ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">In der Natur<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">In der Natur<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Siehst du dort den Turm?<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Siehst du dort den Turm?<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Siehst du dort den Berg?<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Siehst du dort den Berg?<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Siehst du dort das Dorf?<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Siehst du dort das Dorf?<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Siehst du dort den Fluss?<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Siehst du dort den Fluss?<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Siehst du dort die Brücke?<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Siehst du dort die Brücke?<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Siehst du dort den See?<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Siehst du dort den See?<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Der Vogel da gefällt mir.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Der Vogel da gefällt mir.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Der Baum da gefällt mir.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Der Baum da gefällt mir.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Der Stein hier gefällt mir.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Der Stein hier gefällt mir.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Der Park da gefällt mir.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Der Park da gefällt mir.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Der Garten da gefällt mir.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Der Garten da gefällt mir.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Die Blume hier gefällt mir.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Die Blume hier gefällt mir.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Ich finde das hübsch.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Ich finde das hübsch.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Ich finde das interessant.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Ich finde das interessant.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Ich finde das wunderschön.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Ich finde das wunderschön.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Ich finde das hässlich.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Ich finde das hässlich.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Ich finde das langweilig.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Ich finde das langweilig.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Ich finde das furchtbar.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Ich finde das furchtbar.<break time="1500ms"/></prosody></voice>
+</speak>

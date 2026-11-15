@@ -1,0 +1,16 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+die Introspektion, der Introspektion, die Introspektionen
+die Exaktheit, der Exaktheit, die Exaktheiten
+die Auswahlmöglichkeit, der Auswahlmöglichkeit, die Auswahlmöglichkeiten
+die Bevorzugung, der Bevorzugung, die Bevorzugungen
+die Genesung, der Genesung, die Genesungen
+die Absonderung, der Absonderung, die Absonderungen
+die Beilegung, der Beilegung, die Beilegungen
+die Problemlösung, der Problemlösung, die Problemlösungen
+die Auflösung, der Auflösung, die Auflösungen
+die Erleichterung, der Erleichterung, die Erleichterungen
+</prosody>
+</voice>
+</speak>

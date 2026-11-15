@@ -2,34 +2,33 @@
 #  Dao
 #-----------------------------------------------------------------------------
 
-dao/buddhism                      ;  1  ;  buddhism
-dao/dao-de-jing-ru                ;  0  ;  dao de jing (ru)
-dao/dao-de-jing-zh                ;  0  ;  dao de jing (zh)
-dao/stratagems                    ;  0  ;  stratagems
-dao/tai-ji-fu-zhong-wen           ;  0  ;  tai ji - fu zhong wen
-dao/tai-ji-moy-lin-shin           ;  0  ;  tai ji - moy lin shin
-dao/yi-jing                       ;  0  ;  yi jing
+dao/buddhism                      ;  0  ;  Buddhism
+dao/dao-de-jing-ru                ;  0  ;  Dao De Jing (ru)
+dao/dao-de-jing-zh                ;  0  ;  Dao De Jing (zh)
+dao/stratagems                    ;  0  ;  Stratagems
+dao/tai-ji-fu-zhong-wen           ;  0  ;  Tai Ji - Fu Zhong Wen
+dao/tai-ji-moy-lin-shin           ;  0  ;  Tai Ji - Moy Lin Shin
+dao/yi-jing                       ;  0  ;  Yi Jing
+
+dao/zh-lexicon                    ;  0  ;  Lexicon
+dao/zh-grammar                    ;  0  ;  Grammar
+dao/zh-strokes                    ;  0  ;  Strokes
+dao/zh-groups                     ;  0  ;  Groups
+dao/zh-conversations              ;  0  ;  Conversations
 
 #-----------------------------------------------------------------------------
-#  Lingvo - Chinese
+#  Lingvo - Deutsch
 #-----------------------------------------------------------------------------
 
-lingvo/zh-lexicon                 ;  1  ;  Lexicon
-lingvo/zh-grammar                 ;  0  ;  Grammar
-lingvo/zh-strokes                 ;  0  ;  Strokes
-lingvo/zh-groups                  ;  0  ;  Groups
-lingvo/zh-conversations           ;  0  ;  Conversations
-
-#-----------------------------------------------------------------------------
-#  Lingvo - Български
-#-----------------------------------------------------------------------------
-
-lingvo/bg-grammar                 ;  0  ;  Граматика
-lingvo/bg-words                   ;  0  ;  Думи
-lingvo/bg-phrases                 ;  0  ;  Фрази
-lingvo/bg-verbs                   ;  0  ;  Глаголи
-lingvo/bg-berlitz                 ;  0  ;  Berlitz
-lingvo/bg-conversations           ;  0  ;  Разговори
+lingvo/de-words                   ;  0  ;  Wörter
+lingvo/de-adverbs                 ;  0  ;  Adverbien
+lingvo/de-conversations           ;  0  ;  Gespräche
+lingvo/de-lieder                  ;  0  ;  Lieder
+lingvo/de-nouns                   ;  0  ;  Nomina
+lingvo/de-verbs                   ;  0  ;  Verben
+lingvo/de-strong-verbs            ;  0  ;  Starke Verben
+lingvo/de-grammar                 ;  0  ;  Grammatik
+lingvo/de-phonetics               ;  0  ;  Phonetik
 
 #-----------------------------------------------------------------------------
 #  Lingvo - English
@@ -44,6 +43,17 @@ lingvo/en-words                   ;  0  ;  Words
 lingvo/en-conversations           ;  0  ;  Conversations
 lingvo/en-verbs-irregular         ;  0  ;  Irregular Verbs
 lingvo/en-verbs-phrasal           ;  0  ;  Phrasal Verbs
+
+#-----------------------------------------------------------------------------
+#  Lingvo - Български
+#-----------------------------------------------------------------------------
+
+lingvo/bg-grammar                 ;  0  ;  Граматика
+lingvo/bg-words                   ;  0  ;  Думи
+lingvo/bg-phrases                 ;  0  ;  Фрази
+lingvo/bg-verbs                   ;  0  ;  Глаголи
+lingvo/bg-berlitz                 ;  0  ;  Berlitz
+lingvo/bg-conversations           ;  0  ;  Разговори
 
 #-----------------------------------------------------------------------------
 #  Lingvo - Graphomania

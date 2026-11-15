@@ -1,0 +1,41 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="de-DE">
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%"><break time="1010ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Konjunktionen 4<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Konjunktionen 4<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Er ist eingeschlafen, obwohl der Fernseher an war.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Er ist eingeschlafen, obwohl der Fernseher an war.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Er ist noch geblieben, obwohl es schon spät war.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Er ist noch geblieben, obwohl es schon spät war.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Er ist nicht gekommen, obwohl wir uns verabredet hatten.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Er ist nicht gekommen, obwohl wir uns verabredet hatten.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Der Fernseher war an. Trotzdem ist er eingeschlafen.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Der Fernseher war an. Trotzdem ist er eingeschlafen.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Es war schon spät. Trotzdem ist er noch geblieben.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Es war schon spät. Trotzdem ist er noch geblieben.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Wir hatten uns verabredet. Trotzdem ist er nicht gekommen.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Wir hatten uns verabredet. Trotzdem ist er nicht gekommen.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Obwohl er keinen Führerschein hat, fährt er Auto.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Obwohl er keinen Führerschein hat, fährt er Auto.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Obwohl die Straße glatt ist, fährt er schnell.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Obwohl die Straße glatt ist, fährt er schnell.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Obwohl er betrunken ist, fährt er mit dem Rad.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Obwohl er betrunken ist, fährt er mit dem Rad.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Er hat keinen Führerschein. Trotzdem fährt er Auto.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Er hat keinen Führerschein. Trotzdem fährt er Auto.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Die Straße ist glatt. Trotzdem fährt er so schnell.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Die Straße ist glatt. Trotzdem fährt er so schnell.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Er ist betrunken. Trotzdem fährt er mit dem Rad.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Er ist betrunken. Trotzdem fährt er mit dem Rad.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Sie findet keine Stelle, obwohl sie studiert hat.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Sie findet keine Stelle, obwohl sie studiert hat.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Sie geht nicht zum Arzt, obwohl sie Schmerzen hat.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Sie geht nicht zum Arzt, obwohl sie Schmerzen hat.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Sie kauft ein Auto, obwohl sie kein Geld hat.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Sie kauft ein Auto, obwohl sie kein Geld hat.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Sie hat studiert. Trotzdem findet sie keine Stelle.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Sie hat studiert. Trotzdem findet sie keine Stelle.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Sie hat Schmerzen. Trotzdem geht sie nicht zum Arzt.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Sie hat Schmerzen. Trotzdem geht sie nicht zum Arzt.<break time="1500ms"/></prosody></voice>
+<voice name="de-DE-KlarissaNeural"><prosody rate="-20%">Sie hat kein Geld. Trotzdem kauft sie ein Auto.<break time="1000ms"/></prosody></voice>
+<voice name="de-DE-KillianNeural"><prosody rate="-20%">Sie hat kein Geld. Trotzdem kauft sie ein Auto.<break time="1500ms"/></prosody></voice>
+</speak>

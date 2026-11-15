@@ -1,0 +1,16 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+der Klang, des Klanges, die Klänge
+das Brett, des Brettes, die Bretter
+der Abstand, des Abstands, die Abstände
+die Flasche, der Flasche, die Flaschen
+die Lust, der Lust, die Lüste
+die Natur, der Natur, die Naturen
+das Glied, des Gliedes, die Glieder
+der Platz, des Platzes, die Plätze
+die Antwort, der Antwort, die Antworten
+der Braten, des Bratens, die Braten
+</prosody>
+</voice>
+</speak>

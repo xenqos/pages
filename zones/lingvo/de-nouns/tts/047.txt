@@ -1,0 +1,16 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+das Lebensmittel, des Lebensmittels, die Lebensmittel
+die Lebensmittel, der Lebensmittel, die Lebensmittel
+das Lieblingsfach, des Lieblingsfaches, die Lieblingsfächer
+die Lüge, der Lüge, die Lügen
+der Mai, des Mais, die Maie
+die Abbildung, der Abbildung, die Abbildungen
+die Abfahrt, der Abfahrt, die Abfahrten
+der Abfall, des Abfalls, die Abfälle
+das Abgas, des Abgases, die Abgase
+die Abteilung, der Abteilung, die Abteilungen
+</prosody>
+</voice>
+</speak>

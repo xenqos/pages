@@ -1,0 +1,16 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+der Tisch, des Tisches, die Tische
+die Bahn, der Bahn, die Bahnen
+der Zucker, des Zuckers, die Zucker
+das Fieber, des Fiebers, die Fieber
+das Brot, des Brotes, die Brote
+die Liebe, der Liebe, die Lieben
+das Papier, des Papieres, die Papiere
+die Band, der Band, die Bands
+der Helfer, des Helfers, die Helfer
+der Vogel, des Vogels, die Vögel
+</prosody>
+</voice>
+</speak>

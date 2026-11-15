@@ -1,0 +1,16 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+das Museum, des Museums, die Museen
+der Dampf, des Dampfes, die Dämpfe
+der Ordner, des Ordners, die Ordner
+der Garten, des Gartens, die Gärten
+das Mädchen, des Mädchens, die Mädchen
+der Job, des Jobs, die Jobs
+die Blume, der Blume, die Blumen
+das Fleisch, des Fleisches, die Fleisch
+die Toilette, der Toilette, die Toiletten
+das Glück, des Glückes, die Glücke
+</prosody>
+</voice>
+</speak>

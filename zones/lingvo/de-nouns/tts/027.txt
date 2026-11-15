@@ -1,0 +1,16 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="de-DE-KatjaNeural">
+<prosody rate="-30%" pitch="0%">
+die Datei, der Datei, die Dateien
+der Stern, des Sternes, die Sterne
+die Freundin, der Freundin, die Freundinnen
+der Hallenschuh, des Hallenschuhes, die Hallenschuhe
+die Marmelade, der Marmelade, die Marmeladen
+die Farbe, der Farbe, die Farben
+das Sachbuch, des Sachbuches, die Sachbücher
+die Note, der Note, die Noten
+das Rad, des Rades, die Räder
+die Tasche, der Tasche, die Taschen
+</prosody>
+</voice>
+</speak>
