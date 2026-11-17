@@ -1,65 +1,55 @@
 #-----------------------------------------------------------------------------
-#  Dao
+#  Philosophy
 #-----------------------------------------------------------------------------
 
-dao/buddhism                      ;  0  ;  Buddhism
-dao/dao-de-jing-ru                ;  0  ;  Dao De Jing (ru)
-dao/dao-de-jing-zh                ;  0  ;  Dao De Jing (zh)
-dao/stratagems                    ;  0  ;  Stratagems
-dao/tai-ji-fu-zhong-wen           ;  0  ;  Tai Ji - Fu Zhong Wen
-dao/tai-ji-moy-lin-shin           ;  0  ;  Tai Ji - Moy Lin Shin
-dao/yi-jing                       ;  0  ;  Yi Jing
-
-dao/zh-lexicon                    ;  0  ;  Lexicon
-dao/zh-grammar                    ;  0  ;  Grammar
-dao/zh-strokes                    ;  0  ;  Strokes
-dao/zh-groups                     ;  0  ;  Groups
-dao/zh-conversations              ;  0  ;  Conversations
+philosophy/buddhism               ;  0  ;  Buddhism
+philosophy/dao-de-jing-ru         ;  0  ;  Dao De Jing (ru)
+philosophy/dao-de-jing-zh         ;  0  ;  Dao De Jing (zh)
+philosophy/stratagems             ;  0  ;  Stratagems
+philosophy/tai-ji-fu-zhong-wen    ;  0  ;  Tai Ji - Fu Zhong Wen
+philosophy/tai-ji-moy-lin-shin    ;  0  ;  Tai Ji - Moy Lin Shin
+philosophy/yi-jing                ;  1  ;  Yi Jing
 
 #-----------------------------------------------------------------------------
-#  Lingvo - Deutsch
+#  Linguistics - Chinese
 #-----------------------------------------------------------------------------
 
-lingvo/de-words                   ;  0  ;  Wörter
-lingvo/de-adverbs                 ;  0  ;  Adverbien
-lingvo/de-conversations           ;  0  ;  Gespräche
-lingvo/de-lieder                  ;  0  ;  Lieder
-lingvo/de-nouns                   ;  0  ;  Nomina
-lingvo/de-verbs                   ;  0  ;  Verben
-lingvo/de-strong-verbs            ;  0  ;  Starke Verben
-lingvo/de-grammar                 ;  0  ;  Grammatik
-lingvo/de-phonetics               ;  0  ;  Phonetik
+linguistics/zh-lexicon            ;  0  ;  Lexicon
+linguistics/zh-grammar            ;  0  ;  Grammar
+linguistics/zh-strokes            ;  0  ;  Strokes
+linguistics/zh-groups             ;  0  ;  Groups
+linguistics/zh-conversations      ;  0  ;  Conversations
 
 #-----------------------------------------------------------------------------
-#  Lingvo - English
+#  Linguistics - English
 #-----------------------------------------------------------------------------
 
-lingvo/en-phonetics               ;  0  ;  Phonetics
-lingvo/en-orthography             ;  0  ;  Orthography
-lingvo/en-grammar                 ;  0  ;  Grammar
-lingvo/en-grammar-outline         ;  0  ;  Grammar Outline
-lingvo/en-phrases                 ;  0  ;  Phrases
-lingvo/en-words                   ;  0  ;  Words
-lingvo/en-conversations           ;  0  ;  Conversations
-lingvo/en-verbs-irregular         ;  0  ;  Irregular Verbs
-lingvo/en-verbs-phrasal           ;  0  ;  Phrasal Verbs
+linguistics/en-phonetics          ;  0  ;  Phonetics
+linguistics/en-orthography        ;  0  ;  Orthography
+linguistics/en-grammar            ;  0  ;  Grammar
+linguistics/en-grammar-outline    ;  0  ;  Grammar Outline
+linguistics/en-phrases            ;  0  ;  Phrases
+linguistics/en-words              ;  0  ;  Words
+linguistics/en-conversations      ;  0  ;  Conversations
+linguistics/en-verbs-irregular    ;  0  ;  Irregular Verbs
+linguistics/en-verbs-phrasal      ;  0  ;  Phrasal Verbs
 
 #-----------------------------------------------------------------------------
-#  Lingvo - Български
+#  Linguistics - Български
 #-----------------------------------------------------------------------------
 
-lingvo/bg-grammar                 ;  0  ;  Граматика
-lingvo/bg-words                   ;  0  ;  Думи
-lingvo/bg-phrases                 ;  0  ;  Фрази
-lingvo/bg-verbs                   ;  0  ;  Глаголи
-lingvo/bg-berlitz                 ;  0  ;  Berlitz
-lingvo/bg-conversations           ;  0  ;  Разговори
+linguistics/bg-grammar            ;  0  ;  Граматика
+linguistics/bg-words              ;  0  ;  Думи
+linguistics/bg-phrases            ;  0  ;  Фрази
+linguistics/bg-verbs              ;  0  ;  Глаголи
+linguistics/bg-berlitz            ;  0  ;  Berlitz
+linguistics/bg-conversations      ;  0  ;  Разговори
 
 #-----------------------------------------------------------------------------
-#  Lingvo - Graphomania
+#  Linguistics - Graphomania
 #-----------------------------------------------------------------------------
 
-lingvo/gr-poems                   ;  0  ;  Poems
+linguistics/gr-poems              ;  0  ;  Poems
 
 #-----------------------------------------------------------------------------
 #  Poker

@@ -252,7 +252,7 @@ function fncOnLoad(objParameter)
   const strHanzi = strText.trim();
   if (!strHanzi) return;
 
-  window.location.href = '/zones/lingvo/zh-hanzi/pages/hanzi.html?hanzi=' + encodeURIComponent(strHanzi);
+  window.location.href = '/zones/linguistics/zh-hanzi/pages/hanzi.html?hanzi=' + encodeURIComponent(strHanzi);
 }
 
 /*--------------------------------------------------------------------------*/

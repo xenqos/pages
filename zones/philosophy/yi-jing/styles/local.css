@@ -1,0 +1,21 @@
+.clHexagram
+{
+  font-family:          sans-serif;
+  font-size:            28.000rem;
+  line-height:          0.4;
+  display:              block;
+
+/*
+  display:              inline-block;
+*/
+  margin:               0.000rem 0.000rem 0.000rem -2.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+  transform:            scaleY(0.42);
+}
+
+.clPinYin
+{
+  display:              block;
+  margin:               0.000rem 0.000rem 0.100rem 0.000rem;
+  padding:              0.000rem 0.000rem 0.000rem 0.000rem;
+}
