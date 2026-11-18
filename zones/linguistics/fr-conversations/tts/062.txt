@@ -1,0 +1,24 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+apprendre
+les élèves apprennent-ils beaucoup ?
+non, ils apprennent peu.
+demander
+posez-vous souvent des questions à votre instituteur ?
+non, je ne le demande pas souvent.
+répondre
+répondez, s’il vous plaît.
+je réponds.
+travailler
+travaille-t-il en ce moment ?
+oui, il travaille en ce moment.
+venir
+venez-vous ?
+oui, nous arrivons tout de suite.
+habiter
+habitez-vous à berlin ?
+oui, j’habite à berlin.
+</prosody>
+</voice>
+</speak>

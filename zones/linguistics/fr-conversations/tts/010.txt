@@ -1,0 +1,24 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+hier, c’était samedi.
+hier, je suis allé au cinéma.
+le film était intéressant.
+aujourd’hui, c’est dimanche.
+aujourd’hui, je ne travaille pas.
+je reste à la maison.
+demain, c’est lundi.
+demain, je recommence à travailler.
+je travaille au bureau.
+qui est-ce ?
+c’est pierre.
+pierre est étudiant.
+qui est-ce ?
+c’est marthe.
+marthe est secrétaire.
+pierre et marthe sont amis.
+pierre est l’ami de marthe.
+marthe est l’amie de pierre.
+</prosody>
+</voice>
+</speak>

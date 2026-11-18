@@ -35,6 +35,22 @@ linguistics/en-verbs-irregular    ;  0  ;  Irregular Verbs
 linguistics/en-verbs-phrasal      ;  0  ;  Phrasal Verbs
 
 #-----------------------------------------------------------------------------
+#  Linguistics - Français
+#-----------------------------------------------------------------------------
+
+linguistics/fr-phonetique        ;  0  ;  Phonétique tables
+linguistics/fr-phonemes-lettres  ;  0  ;  De phonèmes à lettres
+linguistics/fr-prononciation     ;  0  ;  Prononciation
+linguistics/fr-haspire           ;  0  ;  H aspiré
+linguistics/fr-grammaire         ;  0  ;  Grammaire
+linguistics/fr-verbs             ;  0  ;  Verbs
+linguistics/fr-mots              ;  0  ;  Mots
+linguistics/fr-mots-frequents    ;  0  ;  Mots fréquents
+linguistics/fr-expressions       ;  0  ;  Expressions
+linguistics/fr-phrases-cliches   ;  0  ;  Phrases cliches
+linguistics/fr-conversations     ;  0  ;  Conversations
+
+#-----------------------------------------------------------------------------
 #  Linguistics - Български
 #-----------------------------------------------------------------------------
 

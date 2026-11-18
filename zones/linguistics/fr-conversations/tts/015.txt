@@ -1,0 +1,24 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+j’ai une fraise.
+j’ai un kiwi et un melon.
+j’ai une orange et un pamplemousse.
+j’ai une pomme et une mangue.
+j’ai une banane et un ananas.
+je fais une salade de fruits.
+je mange un toast.
+je mange un toast avec du beurre.
+je mange un toast avec du beurre et de la confiture.
+je mange un sandwich.
+je mange un sandwich à la margarine.
+je mange un sandwich à la margarine et aux tomates.
+nous avons besoin de pain et de riz.
+nous avons besoin de poissons et de steaks.
+nous avons besoin de pizza et de spaghetti.
+avons-nous besoin d’autre chose ?
+nous avons besoin de carottes et de tomates pour la soupe.
+où est le supermarché ?
+</prosody>
+</voice>
+</speak>

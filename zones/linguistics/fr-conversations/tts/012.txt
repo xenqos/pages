@@ -1,0 +1,24 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+je bois du thé.
+je bois du café.
+je bois de l’eau minérale.
+bois-tu du thé au citron ?
+bois-tu du café avec du sucre ?
+veux-tu de l’eau avec des glaçons ?
+il y a une fête ici.
+les gens boivent du champagne.
+les gens boivent du vin et de la bière.
+bois-tu de l’alcool ?
+bois-tu du whisky ?
+bois-tu du coca avec du rhum ?
+je n’aime pas le champagne.
+je n’aime pas le vin.
+je n’aime pas la bière.
+le bébé aime le lait.
+l’enfant aime le cacao et le jus de pomme.
+la femme aime le jus d’orange et le jus de pamplemousse.
+</prosody>
+</voice>
+</speak>

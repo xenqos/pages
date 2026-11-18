@@ -1,0 +1,24 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+est-ce que la plage est propre ?
+est-ce qu’on peut se baigner là ?
+est-ce que c’est dangereux de se baigner là ?
+est-ce qu’on peut louer un parasol ici ?
+est-ce qu’on peut louer une chaise longue ici ?
+est-ce qu’on peut louer un bateau ici ?
+je voudrais faire du surf.
+je voudrais faire de la plongée.
+je voudrais faire du ski nautique.
+est-ce qu’on peut louer une planche de surf ?
+est-ce qu’on peut louer un équipement de plongée ?
+est-ce qu’on peut louer des skis nautiques ?
+je suis seulement un(e) débutant(e).
+je suis moyenne.
+je m’y connais déjà bien.
+où est le téléski ?
+as-tu amené les skis ?
+as-tu amené les chaussures de ski ?
+</prosody>
+</voice>
+</speak>

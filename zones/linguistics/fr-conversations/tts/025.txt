@@ -1,0 +1,24 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+je voudrais aller à la gare.
+je voudrais aller à l’aéroport.
+je voudrais aller dans le centre-ville.
+comment vais-je à la gare ?
+comment vais-je à l’aéroport ?
+comment vais-je dans le centre-ville ?
+j’ai besoin d’un taxi.
+j’ai besoin d’un plan de la ville.
+j’ai besoin d’un hôtel.
+je voudrais louer une voiture.
+voici ma carte de crédit.
+voici mon permis de conduire.
+que faut-il visiter dans la ville ?
+allez dans la vieille ville.
+faites une visite guidée.
+allez au port.
+faites un tour du port.
+quelles autres attractions touristiques y-a-t-il encore ?
+</prosody>
+</voice>
+</speak>
