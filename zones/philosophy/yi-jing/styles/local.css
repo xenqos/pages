@@ -13,6 +13,12 @@
   transform:            scaleY(0.42);
 }
 
+.clHexagram {
+  width: 28rem;
+  height: auto;
+  display: block;
+}
+
 .clPinYin
 {
   display:              block;
