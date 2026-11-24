@@ -1,0 +1,24 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+un jus de pomme, s’il vous plaît.
+une limonade, s’il vous plaît.
+un jus de tomate, s’il vous plaît.
+j’aimerais un verre de vin rouge.
+j’aimerai un verre de vin blanc.
+j’aimerais une bouteille de champagne.
+aimes-tu le poisson ?
+aimes-tu le bœuf ?
+aimes-tu le porc ?
+je désirerais un plat sans viande.
+je désirerais un plat de légumes.
+je désirerais quelque chose qui ne prend pas longtemps.
+voulez-vous du riz en accompagnement ?
+voulez-vous des nouilles en accompagnement ?
+voulez-vous des pommes de terre en accompagnement ?
+ça ne me plaît pas.
+la nourriture est froide.
+ce n’est pas ce que j’ai commandé.
+</prosody>
+</voice>
+</speak>

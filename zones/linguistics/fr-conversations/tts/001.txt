@@ -1,0 +1,24 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+moi, je
+moi et toi
+nous deux
+lui, il
+lui et elle
+eux deux
+l’homme
+la femme
+l’enfant
+une famille
+ma famille
+ma famille est ici.
+je suis ici.
+tu es ici.
+il est ici et elle est ici.
+nous sommes ici.
+vous êtes ici.
+ils sont tous ici.
+</prosody>
+</voice>
+</speak>

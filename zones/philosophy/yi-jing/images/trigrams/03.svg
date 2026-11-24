@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 19" width="23" height="19" xmlns:c2pa="http://c2pa.org/manifest">
+  <style>
+    :root { --c: #000000; }
+    @media (prefers-color-scheme: dark) {
+      :root { --c: #ffffff; }
+    }
+    rect, path { fill: var(--c); }
+    path { fill: none; stroke: var(--c); }
+  </style>
+  <rect x="1"  y="2"  width="21" height="3"/>
+  <rect x="13" y="8"  width="9"  height="3"/>
+  <rect x="1"  y="8"  width="9"  height="3"/>
+  <rect x="1"  y="14" width="21" height="3"/>
+</svg>

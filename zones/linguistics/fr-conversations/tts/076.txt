@@ -1,0 +1,24 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+pourquoi n’es-tu pas venu ?
+j’étais malade.
+je ne suis pas venu parce que j’étais malade.
+pourquoi n’est-elle pas venue ?
+elle était fatiguée.
+elle n’est pas venue parce qu’elle était fatiguée.
+pourquoi n’est-il pas venu ?
+il n’avait pas envie.
+il n’est pas venu parce qu’il n’avait pas envie.
+pourquoi n’êtes-vous pas venus ?
+notre voiture était en panne.
+nous ne sommes pas venus parce que notre voiture était en panne.
+pourquoi les gens ne sont-ils pas venus ?
+ils ont manqué le train.
+ils ne sont pas venus parce qu’ils ont manqué le train.
+pourquoi n’es-tu pas venu ?
+je ne le pouvais pas.
+je ne suis pas venu parce que je ne le pouvais pas.
+</prosody>
+</voice>
+</speak>

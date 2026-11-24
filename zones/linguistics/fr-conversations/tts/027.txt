@@ -1,0 +1,24 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+avez-vous une chambre libre ?
+j’ai réservé une chambre.
+mon nom est muller.
+j’ai besoin d’une chambre simple.
+j’ai besoin d’une chambre double.
+combien coûte la chambre pour la nuit ?
+je voudrais une chambre avec bain.
+je voudrais une chambre avec douche.
+puis-je voir la chambre ?
+y a-t-il un garage ici ?
+y a-t-il un coffre-fort ici ?
+y a-t-il un fax ici ?
+bon, je prends la chambre.
+voici les clefs.
+voici mes bagages.
+a quelle heure est servi le petit déjeuner ?
+a quelle heure est servi le déjeuner ?
+a quelle heure est servi le dîner ?
+</prosody>
+</voice>
+</speak>

@@ -1,0 +1,24 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+est-ce que le marché est ouvert le dimanche ?
+est-ce que la foire est ouverte le lundi ?
+est-ce que l’exposition est ouverte le mardi ?
+le zoo ouvre-t-il le mercredi ?
+le musée ouvre-t-il le jeudi ?
+la galerie ouvre-t-elle le vendredi ?
+peut-on photographier ?
+l’entrée est-elle payante ?
+combien coûte l’entrée ?
+y a-t-il une réduction pour les groupes ?
+y a-t-il une réduction pour les enfants ?
+y a-t-il une réduction pour les étudiants ?
+quel est ce bâtiment ?
+de quand date ce bâtiment ?
+qui a construit ce bâtiment ?
+je m’intéresse à l’architecture.
+je m’intéresse à l’art.
+je m’intéresse à la peinture.
+</prosody>
+</voice>
+</speak>

@@ -1,0 +1,24 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+la douche ne fonctionne pas.
+il n’y a pas d’eau chaude.
+pouvez-vous réparer ça ?
+il n’y a pas de téléphone dans la chambre.
+il n’y a pas de télévision dans la chambre.
+la chambre n’a pas de balcon.
+la chambre est trop bruyante.
+la chambre est trop petite.
+la chambre est trop sombre.
+le chauffage ne fonctionne pas.
+la climatisation ne fonctionne pas.
+la télévision est cassée.
+ça ne me plaît pas.
+c’est trop cher pour moi.
+avez-vous quelque chose de moins cher ?
+est-ce qu’il y a une auberge de jeunesse dans les environs ?
+est-ce qu’il y a une pension de famille dans les environs ?
+est-ce qu’il y a un restaurant dans les environs ?
+</prosody>
+</voice>
+</speak>

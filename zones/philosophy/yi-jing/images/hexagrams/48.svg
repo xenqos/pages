@@ -9,6 +9,14 @@
    width="70"
    height="70"
    version="1.0" >
+  <style>
+    :root { --c: #000000; }
+    @media (prefers-color-scheme: dark) {
+    :root { --c: #ffffff; }
+    }
+    rect, path { fill: var(--c); }
+    path { fill: none; stroke: var(--c); }
+  </style>
   <metadata
      id="md-hexagram">
     <rdf:RDF>
@@ -52,12 +60,12 @@
          id="r-line1-yinleft"
          width="28" height="6"
          x="2" y="62"
-         style="fill:#000000;fill-opacity:1;stroke:none" />
+         style="" />
       <rect
          id="r-line1-yinright"
          width="28" height="6"
          x="40" y="62"
-         style="fill:#000000;fill-opacity:1;stroke:none" />
+         style="" />
     </g>
     <g
        id="g-line2"
@@ -66,7 +74,7 @@
          id="r-line2-yang"
          width="66" height="6"
          x="2" y="62"
-         style="fill:#000000;fill-opacity:1;stroke:none" />
+         style="" />
     </g>
     <g
        id="g-line3"
@@ -75,7 +83,7 @@
          id="r-line3-yang"
          width="66" height="6"
          x="2" y="62"
-         style="fill:#000000;fill-opacity:1;stroke:none" />
+         style="" />
     </g>
     <g
        id="g-line4"
@@ -84,12 +92,12 @@
          id="r-line4-yinleft"
          width="28" height="6"
          x="2" y="62"
-         style="fill:#000000;fill-opacity:1;stroke:none" />
+         style="" />
       <rect
          id="r-line4-yinright"
          width="28" height="6"
          x="40" y="62"
-         style="fill:#000000;fill-opacity:1;stroke:none" />
+         style="" />
     </g>
     <g
        id="g-line5"
@@ -98,7 +106,7 @@
          id="r-line5-yang"
          width="66" height="6"
          x="2" y="62"
-         style="fill:#000000;fill-opacity:1;stroke:none" />
+         style="" />
     </g>
     <g
        id="g-line6"
@@ -107,12 +115,13 @@
          id="r-line6-yinleft"
          width="28" height="6"
          x="2" y="62"
-         style="fill:#000000;fill-opacity:1;stroke:none" />
+         style="" />
       <rect
          id="r-line6-yinright"
          width="28" height="6"
          x="40" y="62"
-         style="fill:#000000;fill-opacity:1;stroke:none" />
+         style="" />
     </g>
   </g>
+<style> :root { --c: #000000; }  @media (prefers-color-scheme: dark) { :root { --c: #ffffff; } } path { stroke: var(--c); } </style>
 </svg>

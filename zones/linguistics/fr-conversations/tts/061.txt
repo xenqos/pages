@@ -1,0 +1,24 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+le premier mois est janvier.
+le deuxième mois est février.
+le troisième mois est mars.
+le quatrième mois est avril.
+le cinquième mois est mai.
+le sixième mois est juin.
+il y a six mois dans une demi-année.
+janvier, février, mars,
+avril, mai, juin.
+le septième mois est juillet.
+le huitième mois est août.
+le neuvième mois est septembre.
+le dixième mois est octobre.
+le onzième mois est novembre.
+le douzième mois est décembre.
+il y a douze mois dans une année.
+juillet, août, septembre,
+octobre, novembre et décembre.
+</prosody>
+</voice>
+</speak>

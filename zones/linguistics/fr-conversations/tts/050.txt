@@ -1,0 +1,24 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">
+<voice name="fr-CH-ArianeNeural">
+<prosody rate="-20%" pitch="medium">
+il fait chaud aujourd’hui.
+si nous allions à la piscine ?
+as-tu envie d’aller nager ?
+as-tu une serviette de bain ?
+as-tu une culotte de bain ?
+as-tu un maillot de bain ?
+sais-tu nager ?
+sais-tu plonger ?
+peux-tu sauter dans l’eau ?
+où est la douche ?
+où est la cabine pour se changer ?
+où sont les lunettes de plongée ?
+est-ce que l’eau est profonde ?
+est-ce que l’eau est propre ?
+est-ce que l’eau est chaude ?
+je caille.
+l’eau est trop froide.
+je sors maintenant de l’eau.
+</prosody>
+</voice>
+</speak>

@@ -1,4 +1,12 @@
 <?xml version="1.0" standalone="no"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70">
 <path stroke-width="66" stroke="#000" stroke-dasharray="6" d="m35,2v66"/>
+<style>
+  :root { --c: #000000; }
+  @media (prefers-color-scheme: dark) {
+  :root { --c: #ffffff; }
+  }
+  rect, path { fill: var(--c); }
+  path { fill: none; stroke: var(--c); }
+  </style>
 </svg>
