@@ -60,12 +60,12 @@
          id="r-line1-yinleft"
          width="28" height="6"
          x="2" y="62"
-
+         style="" />
       <rect
          id="r-line1-yinright"
          width="28" height="6"
          x="40" y="62"
-
+         style="" />
     </g>
     <g
        id="g-line2"
@@ -74,12 +74,12 @@
          id="r-line2-yinleft"
          width="28" height="6"
          x="2" y="62"
-
+         style="" />
       <rect
          id="r-line2-yinright"
          width="28" height="6"
          x="40" y="62"
-
+         style="" />
     </g>
     <g
        id="g-line3"
@@ -88,12 +88,12 @@
          id="r-line3-yinleft"
          width="28" height="6"
          x="2" y="62"
-
+         style="" />
       <rect
          id="r-line3-yinright"
          width="28" height="6"
          x="40" y="62"
-
+         style="" />
     </g>
     <g
        id="g-line4"
@@ -102,12 +102,12 @@
          id="r-line4-yinleft"
          width="28" height="6"
          x="2" y="62"
-
+         style="" />
       <rect
          id="r-line4-yinright"
          width="28" height="6"
          x="40" y="62"
-
+         style="" />
     </g>
     <g
        id="g-line5"
@@ -116,7 +116,7 @@
          id="r-line5-yang"
          width="66" height="6"
          x="2" y="62"
-
+         style="" />
     </g>
     <g
        id="g-line6"
@@ -125,7 +125,7 @@
          id="r-line6-yang"
          width="66" height="6"
          x="2" y="62"
-
+         style="" />
     </g>
   </g>
 <style> :root { --c: #000000; }  @media (prefers-color-scheme: dark) { :root { --c: #ffffff; } } path { stroke: var(--c); } </style>
